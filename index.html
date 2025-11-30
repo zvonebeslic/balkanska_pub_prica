@@ -86,6 +86,17 @@ body {
         0 0 12px rgba(245, 193, 91, 0.7),
         0 0 30px rgba(245, 193, 91, 0.2);
     font-size: 1.5rem;
+    position: relative;
+}
+
+/* štreberske naočale preko krigle */
+.logo-icon::before {
+    content: "🤓";
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    font-size: 1.1rem;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.6));
 }
 
 .logo-text {
@@ -109,6 +120,8 @@ body {
 .top-nav {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .nav-btn {
@@ -132,6 +145,10 @@ body {
     font-weight: 600;
 }
 
+.nav-btn--secondary {
+    border-color: rgba(245, 193, 91, 0.6);
+}
+
 .nav-btn:hover {
     transform: translateY(-1px);
     background: rgba(255, 255, 255, 0.04);
@@ -139,6 +156,10 @@ body {
 
 .nav-btn--primary:hover {
     background: radial-gradient(circle at 30% 20%, #fff0c4, #e19122);
+}
+
+.nav-btn--secondary:hover {
+    background: rgba(245, 193, 91, 0.08);
 }
 
 /* Layout */
@@ -431,16 +452,16 @@ body {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.9);
 }
 
-/* Modal */
+/* Modal – sada ispod karte, ne preko cijelog ekrana */
 
 .modal-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+    position: static;
+    background: transparent;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    z-index: 50;
+    z-index: auto;
+    margin: 0.8rem 1.2rem 0.2rem;
 }
 
 .modal {
@@ -548,6 +569,10 @@ body {
         width: 100%;
         justify-content: flex-start;
     }
+
+    .modal-backdrop {
+        margin: 0.6rem 0.7rem 0.2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -582,13 +607,14 @@ body {
         <div class="logo-wrap">
             <div class="logo-icon">🍺</div>
             <div class="logo-text">
-                <span class="logo-main">Balkan Pub Quiz</span>
-                <span class="logo-sub">Karta kvizova po kafanama</span>
+                <span class="logo-main">Balkanska Kviz Priča</span>
+                <span class="logo-sub">Mapa pub kvizova po Balkanu</span>
             </div>
         </div>
         <nav class="top-nav">
             <button class="nav-btn nav-btn--primary" id="find-quizzes-btn">Pronađi kviz</button>
             <button class="nav-btn" id="add-quiz-open">Dodaj kviz</button>
+            <button class="nav-btn nav-btn--secondary" id="test-knowledge-btn">Testirajte svoje znanje</button>
         </nav>
     </header>
 
@@ -647,7 +673,7 @@ body {
         </section>
     </main>
 
-    <!-- Modal za dodavanje kviza -->
+    <!-- Modal za dodavanje kviza – sada ispod karte -->
     <div class="modal-backdrop hidden" id="add-quiz-modal">
         <div class="modal">
             <header class="modal-header">
@@ -802,6 +828,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initLocationSearch();
   initAddQuizModal();
   initFindQuizzesButton();
+  initTestKnowledgeButton();
   renderQuizzes();
 });
 
@@ -885,6 +912,15 @@ function initFindQuizzesButton() {
     } else {
       focusOnBalkan();
     }
+  });
+}
+
+/* Novi gumb "Testirajte svoje znanje" */
+function initTestKnowledgeButton() {
+  const btn = document.getElementById("test-knowledge-btn");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    alert("Uskoro: podstranica s pitanjima za testiranje znanja! 🎯");
   });
 }
 
@@ -1211,10 +1247,9 @@ function initAddQuizModal() {
   const openModal = () => {
     modal.classList.remove("hidden");
     isAddQuizMode = true;
-    if (map) {
-      setTimeout(() => {
-        map.invalidateSize();
-      }, 200);
+    const mapSection = document.querySelector(".map-section");
+    if (mapSection) {
+      mapSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
