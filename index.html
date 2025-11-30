@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Balkan Pub Quiz Mapa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pronađi pub kvizove po cijelom Balkanu – po vrsti kviza i udaljenosti od tvoje lokacije.">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <div class="logo-icon">🍺</div>
+            <div class="logo-text">
+                <span class="logo-main">Balkan Pub Quiz</span>
+                <span class="logo-sub">Karta kvizova po kafanama</span>
+            </div>
+        </div>
+        <nav class="top-nav">
+            <button class="nav-btn nav-btn--primary" id="find-quizzes-btn">Pronađi kviz</button>
+            <button class="nav-btn" id="add-quiz-open">Dodaj kviz</button>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <aside class="sidebar">
+            <section class="card">
+                <h2>Pronađi kviz u blizini</h2>
+                <p class="small-text">
+                    Uključi lokaciju da ti pokažemo najbliže kvizove u idućih 30 dana.
+                </p>
+                <button id="use-location-btn" class="btn btn--accent">Uključi moju lokaciju</button>
+                <label class="radius-label" for="radius-select">Radijus pretrage:</label>
+                <select id="radius-select">
+                    <option value="10">10 km</option>
+                    <option value="25" selected>25 km</option>
+                    <option value="50">50 km</option>
+                    <option value="100">100 km</option>
+                </select>
+                <p id="location-status" class="status-text"></p>
+            </section>
+
+            <section class="card">
+                <h2>Vrsta kviza</h2>
+                <div class="filter-group">
+                    <label><input type="checkbox" class="quiz-type-filter" value="opce" checked> Kviz općeg znanja</label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="kafanski" checked> Kafanski kviz</label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="nogometni" checked> Nogometni kviz</label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="sportski" checked> Sportski kviz</label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="beskorisno" checked> Kviz beskorisnog znanja</label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="ostalo" checked> Ostalo</label>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Kvizovi (idućih 30 dana)</h2>
+                <ul id="quiz-list" class="quiz-list">
+                    <!-- JS popunjava -->
+                </ul>
+                <p id="quiz-empty-message" class="status-text status-text--muted hidden">
+                    Trenutno nema kvizova za odabrane filtere.
+                </p>
+            </section>
+        </aside>
+
+        <section class="map-section">
+            <div id="map"></div>
+            <div class="map-hint">
+                <span>Legenda boja:</span>
+                <span class="legend-dot legend-dot--green"></span> do 7 dana
+                <span class="legend-dot legend-dot--yellow"></span> 8–14 dana
+                <span class="legend-dot legend-dot--red"></span> 15–30 dana
+            </div>
+            <button class="floating-btn" id="add-quiz-floating">
+                ➕ Dodaj kviz
+            </button>
+        </section>
+    </main>
+
+    <!-- Modal za dodavanje kviza -->
+    <div class="modal-backdrop hidden" id="add-quiz-modal">
+        <div class="modal">
+            <header class="modal-header">
+                <h2>Dodaj novi kviz</h2>
+                <button class="modal-close" id="add-quiz-close">&times;</button>
+            </header>
+            <div class="modal-body">
+                <p class="small-text">
+                    Klikni na kartu da postaviš lokaciju kviza (pribadača će se pojaviti). 
+                    Nakon toga ispuni detalje.
+                </p>
+                <form id="add-quiz-form">
+                    <label>
+                        Naziv kviza
+                        <input type="text" id="quiz-title" required placeholder="Npr. Pub Quiz – Balkan Edition">
+                    </label>
+                    <label>
+                        Vrsta kviza
+                        <select id="quiz-type" required>
+                            <option value="opce">Kviz općeg znanja</option>
+                            <option value="kafanski">Kafanski kviz</option>
+                            <option value="nogometni">Nogometni kviz</option>
+                            <option value="sportski">Sportski kviz</option>
+                            <option value="beskorisno">Kviz beskorisnog znanja</option>
+                            <option value="ostalo">Ostalo</option>
+                        </select>
+                    </label>
+                    <label>
+                        Datum i vrijeme
+                        <input type="datetime-local" id="quiz-datetime" required>
+                    </label>
+                    <label>
+                        Naziv lokala / adresa (za prikaz)
+                        <input type="text" id="quiz-venue" required placeholder="Ime pub-a / adresa">
+                    </label>
+
+                    <div class="coords-row">
+                        <div>
+                            <label>
+                                Lat
+                                <input type="text" id="quiz-lat" readonly required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Lng
+                                <input type="text" id="quiz-lng" readonly required>
+                            </label>
+                        </div>
+                    </div>
+
+                    <p class="small-text small-text--warning">
+                        Napomena: u ovoj demo verziji plaćanje 10 KM nije još spojeno. 
+                        U produkciji bi ovdje išao korak plaćanja (Stripe/PayPal), a kviz bi se objavio tek nakon uspješne uplate.
+                    </p>
+
+                    <button type="submit" class="btn btn--accent btn--full">
+                        Spremi kviz (demo)
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Balkan Pub Quiz – projekt u izradi.</p>
+        <p class="footer-small">
+            Ideja: mapa pub kvizova po Balkanu. Dodavanje kviza: 10 KM po objavi (integracija plaćanja dolazi kasnije).
+        </p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
