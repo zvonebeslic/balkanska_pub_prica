@@ -461,7 +461,10 @@ body {
     align-items: flex-start;
     justify-content: center;
     z-index: auto;
-    margin: 0.8rem 1.2rem 0.2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0.8rem auto 0.2rem;
+    padding: 0 1.2rem;
 }
 
 .modal {
@@ -571,7 +574,8 @@ body {
     }
 
     .modal-backdrop {
-        margin: 0.6rem 0.7rem 0.2rem;
+        margin: 0.6rem auto 0.2rem;
+        padding: 0 0.7rem;
     }
 }
 
@@ -628,8 +632,9 @@ body {
                 <button id="use-location-btn" class="btn btn--accent">Uključi moju lokaciju</button>
                 <label class="radius-label" for="radius-select">Radijus pretrage:</label>
                 <select id="radius-select">
+                    <option value="all" selected>Prikaži sve</option>
                     <option value="10">10 km</option>
-                    <option value="25" selected>25 km</option>
+                    <option value="25">25 km</option>
                     <option value="50">50 km</option>
                     <option value="100">100 km</option>
                 </select>
@@ -682,7 +687,8 @@ body {
             </header>
             <div class="modal-body">
                 <p class="small-text" id="quiz-location-hint">
-                    Klikni na kartu da postaviš lokaciju kviza (pribadača će se pojaviti). 
+                    Klikni na kartu <strong>ili</strong> otvori Google karte iz polja ispod,
+                    zalijepi Google Maps link u polje "Naziv lokala / adresa" – koordinate će se automatski preuzeti.
                     Nakon toga ispuni detalje i nastavi na plaćanje.
                 </p>
                 <form id="add-quiz-form">
@@ -706,8 +712,8 @@ body {
                         <input type="datetime-local" id="quiz-datetime" required>
                     </label>
                     <label>
-                        Naziv lokala / adresa (za prikaz)
-                        <input type="text" id="quiz-venue" required placeholder="Ime pub-a / adresa">
+                        Naziv lokala / adresa (Google Maps link)
+                        <input type="text" id="quiz-venue" required placeholder="Ime pub-a ili zalijepi Google Maps link">
                     </label>
 
                     <!-- Koordinate NE prikazujemo, ali ih spremamo skriveno -->
@@ -820,6 +826,7 @@ let allQuizzes = [...demoQuizzes];
 let userLocation = null;
 let isAddQuizMode = false;
 let addQuizMarker = null;
+let userLocationMarker = null;
 
 document.addEventListener("DOMContentLoaded", () => {
   initYear();
@@ -906,9 +913,19 @@ function initFindQuizzesButton() {
     if (mapSection) {
       mapSection.scrollIntoView({ behavior: "smooth" });
     }
-    if (userLocation) {
-      const radiusKm = parseFloat(document.getElementById("radius-select")?.value) || 25;
-      focusOnNearby(radiusKm);
+    const radiusSelect = document.getElementById("radius-select");
+    if (userLocation && radiusSelect) {
+      const value = radiusSelect.value;
+      if (value === "all") {
+        // prikaz svih, ali centriraj oko korisnika i Balkana
+        showUserLocationMarker();
+        renderQuizzes();
+        refreshMarkers();
+        focusOnNearby(25); // default 25 km, ali marker usera ostaje
+      } else {
+        const radiusKm = parseFloat(value) || 25;
+        focusOnNearby(radiusKm);
+      }
     } else {
       focusOnBalkan();
     }
@@ -993,6 +1010,46 @@ function createColoredIcon(color) {
   });
 }
 
+/* SIVO-CRNA IKONA ZA KORISNIKOVU LOKACIJU */
+
+function createUserLocationIcon() {
+  const svg = `
+    <svg width="32" height="42" viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="userShadow">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.6)" />
+        </filter>
+      </defs>
+      <path filter="url(#userShadow)"
+        d="M16 0C9 0 3.6 5.37 3.6 12.4C3.6 20.49 13.04 31.73 15.32 34.33C15.69 34.77 16.31 34.77 16.68 34.33C18.96 31.73 28.4 20.49 28.4 12.4C28.4 5.37 23 0 16 0Z"
+        fill="#2b2b2b" stroke="#f0f0f0" stroke-width="1.2"/>
+      <circle cx="16" cy="13" r="5.2" fill="#000000" stroke="rgba(255,255,255,0.7)" stroke-width="1"/>
+    </svg>
+  `;
+
+  return L.divIcon({
+    className: "user-location-icon",
+    html: svg,
+    iconSize: [32, 42],
+    iconAnchor: [16, 36],
+    popupAnchor: [0, -32]
+  });
+}
+
+function showUserLocationMarker() {
+  if (!map || !userLocation) return;
+
+  const latlng = [userLocation.lat, userLocation.lng];
+
+  if (userLocationMarker) {
+    userLocationMarker.setLatLng(latlng);
+  } else {
+    userLocationMarker = L.marker(latlng, {
+      icon: createUserLocationIcon()
+    }).addTo(map);
+  }
+}
+
 function getMarkerColor(datetimeStr) {
   const now = new Date();
   const eventDate = new Date(datetimeStr);
@@ -1037,7 +1094,16 @@ function initLocationSearch() {
         userLocation = { lat: latitude, lng: longitude };
         statusEl.textContent = "Lokacija spremna! Filtriram kvizove u blizini.";
 
-        const radiusKm = parseFloat(radiusSelect.value) || 25;
+        // prikaži marker korisnika
+        showUserLocationMarker();
+
+        // ako je trenutno "Prikaži sve", prebaci na 25 km za fokus u blizini
+        let radiusValue = radiusSelect.value;
+        if (radiusValue === "all") {
+          radiusValue = "25";
+          radiusSelect.value = "25";
+        }
+        const radiusKm = parseFloat(radiusValue) || 25;
         focusOnNearby(radiusKm);
       },
       (err) => {
@@ -1053,8 +1119,22 @@ function initLocationSearch() {
   });
 
   radiusSelect.addEventListener("change", () => {
+    const value = radiusSelect.value;
+
+    if (value === "all") {
+      // prikaži sve kvizove i fokusiraj Balkan, zadrži marker korisnika ako postoji
+      renderQuizzes();
+      refreshMarkers();
+      if (userLocation) {
+        showUserLocationMarker();
+      }
+      focusOnBalkan();
+      return;
+    }
+
     if (!userLocation) return;
-    const radiusKm = parseFloat(radiusSelect.value) || 25;
+
+    const radiusKm = parseFloat(value) || 25;
     focusOnNearby(radiusKm);
   });
 }
@@ -1096,7 +1176,10 @@ function focusOnNearby(radiusKm) {
     map.setView([userLocation.lat, userLocation.lng], 11);
   }
 
-  // Re-render list with distance info
+  // prikaži marker korisnika
+  showUserLocationMarker();
+
+  // Re-render lista (filtrirana po radijusu) + globalni markeri
   renderQuizzes(inRadius);
   refreshMarkers();
 }
@@ -1233,6 +1316,42 @@ function formatDateTime(dateStr) {
   return `${day}.${month}.${year}. ${hours}:${mins}h`;
 }
 
+/* ---- PARSIRANJE GOOGLE MAPS LINKA ---- */
+
+function tryExtractCoordsFromGoogleMapsUrl(value) {
+  if (!value) return null;
+  const url = value.trim();
+
+  // 1) Najčešći oblik: .../@45.8150,15.9819,17z/...
+  let match = url.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
+  if (match) {
+    return {
+      lat: parseFloat(match[1]),
+      lng: parseFloat(match[2])
+    };
+  }
+
+  // 2) query=lat,lng ili q=lat,lng
+  match = url.match(/[?&](?:q|query)=(-?\d+\.\d+),(-?\d+\.\d+)/);
+  if (match) {
+    return {
+      lat: parseFloat(match[1]),
+      lng: parseFloat(match[2])
+    };
+  }
+
+  // 3) fallback: bilo koji "lat,lng" u stringu
+  match = url.match(/(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)/);
+  if (match) {
+    return {
+      lat: parseFloat(match[1]),
+      lng: parseFloat(match[2])
+    };
+  }
+
+  return null;
+}
+
 /* ---- MODAL & DODAVANJE KVIZA + PAYMENT FLOW ---- */
 
 function initAddQuizModal() {
@@ -1241,24 +1360,37 @@ function initAddQuizModal() {
   const floatingBtn = document.getElementById("add-quiz-floating");
   const closeBtn = document.getElementById("add-quiz-close");
   const form = document.getElementById("add-quiz-form");
+  const venueInput = document.getElementById("quiz-venue");
+  const latInput = document.getElementById("quiz-lat");
+  const lngInput = document.getElementById("quiz-lng");
+  const hint = document.getElementById("quiz-location-hint");
 
   if (!modal || !openBtn || !floatingBtn || !closeBtn || !form) return;
 
   const openModal = () => {
     modal.classList.remove("hidden");
     isAddQuizMode = true;
+
+    // skrolaj tako da se karta + modal vide jedan ispod drugog
     const mapSection = document.querySelector(".map-section");
     if (mapSection) {
-      mapSection.scrollIntoView({ behavior: "smooth" });
+      mapSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+
+    // mali delay pa skrol direktno na modal (jer je ispod karte)
+    setTimeout(() => {
+      modal.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 400);
   };
 
   const closeModal = () => {
     modal.classList.add("hidden");
     isAddQuizMode = false;
-    const hint = document.getElementById("quiz-location-hint");
-    if (hint) {
-      hint.textContent = "Klikni na kartu da postaviš lokaciju kviza (pribadača će se pojaviti). Nakon toga ispuni detalje i nastavi na plaćanje.";
+    const hintEl = document.getElementById("quiz-location-hint");
+    if (hintEl) {
+      hintEl.textContent = "Klikni na kartu ili otvori Google karte iz polja ispod, " +
+        "zalijepi Google Maps link u polje \"Naziv lokala / adresa\" – koordinate će se automatski preuzeti. " +
+        "Nakon toga ispuni detalje i nastavi na plaćanje.";
     }
   };
 
@@ -1272,6 +1404,37 @@ function initAddQuizModal() {
     }
   });
 
+  // Klik na polje -> otvori Google Maps
+  if (venueInput) {
+    venueInput.addEventListener("click", () => {
+      // otvori Google Maps u novom tabu – korisnik tamo pronađe lokal i kopira link
+      window.open("https://www.google.com/maps", "_blank");
+
+      if (hint) {
+        hint.textContent = "Otvorili smo Google karte u novom tabu. " +
+          "Pronađi lokal, kopiraj link i zalijepi ga u ovo polje. " +
+          "Koordinate ćemo preuzeti automatski.";
+      }
+    });
+
+    // Kada korisnik zalijepi link / piše u polje
+    venueInput.addEventListener("input", () => {
+      const coords = tryExtractCoordsFromGoogleMapsUrl(venueInput.value);
+      if (coords && latInput && lngInput) {
+        latInput.value = coords.lat.toFixed(6);
+        lngInput.value = coords.lng.toFixed(6);
+
+        // postavi marker na karti
+        setAddQuizMarker(coords.lat, coords.lng);
+
+        if (hint) {
+          hint.textContent = "Koordinate su preuzete iz Google Maps linka. " +
+            "Možeš dovršiti unos i nastaviti na plaćanje (demo).";
+        }
+      }
+    });
+  }
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -1283,7 +1446,7 @@ function initAddQuizModal() {
     const lngStr = document.getElementById("quiz-lng").value.trim();
 
     if (!title || !type || !datetime || !venue || !latStr || !lngStr) {
-      alert("Molim klikni na kartu za lokaciju i ispuni sva polja.");
+      alert("Molim postavi lokaciju (karte ili link), te ispuni sva polja.");
       return;
     }
 
