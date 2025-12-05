@@ -443,12 +443,11 @@ body {
     background: #1a1815;
 }
 
-/* Map hint / legend */
+/* Map hint / legend – sada ispod karte */
 
 .map-hint {
-    position: absolute;
-    left: 0.9rem;
-    bottom: 0.9rem;
+    position: static;
+    margin: 0.45rem 0.9rem 0.6rem;
     padding: 0.3rem 0.55rem;
     border-radius: 999px;
     background: rgba(10, 5, 2, 0.95);
@@ -694,8 +693,7 @@ body {
     }
 
     .map-hint {
-        left: 0.7rem;
-        bottom: 0.7rem;
+        margin: 0.4rem 0.7rem 0.4rem;
         font-size: 0.7rem;
     }
 }
@@ -732,8 +730,9 @@ body {
                 <button id="use-location-btn" class="btn btn--accent" data-i18n="btnUseLocation">
                     Uključi moju lokaciju
                 </button>
-                <label class="radius-label" for="radius-select" data-i18n="radiusLabel">Radijus pretrage:</label>
-                <select id="radius-select">
+                <!-- radius je skriven dok se ne uključi lokacija -->
+                <label class="radius-label hidden" for="radius-select" data-i18n="radiusLabel">Radijus pretrage:</label>
+                <select id="radius-select" class="hidden">
                     <option value="all" data-i18n="radiusAll" selected>Prikaži sve</option>
                     <option value="10">10 km</option>
                     <option value="25">25 km</option>
@@ -766,6 +765,7 @@ body {
 
         <section class="map-section">
             <div id="map"></div>
+            <!-- legenda ispod karte -->
             <div class="map-hint">
                 <span data-i18n="legendTitle">Legenda boja:</span>
                 <span class="legend-dot legend-dot--green"></span> <span data-i18n="legendGreen">do 7 dana</span>
@@ -1069,7 +1069,6 @@ let addQuizMarker = null;
 document.addEventListener("DOMContentLoaded", () => {
   initYear();
   initLanguageToggle();
-  loadInitialQuizzes();
   initMap();
   initFilters();
   initLocationSearch();
@@ -1077,7 +1076,12 @@ document.addEventListener("DOMContentLoaded", () => {
   initFindQuizzesButton();
   initTestKnowledgeButton();
   applyTranslations();
-  renderQuizzes();
+
+  // Učitaj sve kvizove, pa tek onda crtaj listu + markere
+  loadInitialQuizzes().then(() => {
+    renderQuizzes();
+    refreshMarkers();
+  });
 });
 
 /* ----------------- GODINA ----------------- */
@@ -1105,7 +1109,6 @@ function initLanguageToggle() {
 }
 
 /* ----------------- PERSISTENCIJA ----------------- */
-/* Trenutno localStorage; kasnije se ovdje može zamijeniti backend pozivima. */
 
 function loadUserQuizzesFromLocal() {
   try {
@@ -1131,13 +1134,11 @@ function saveUserQuizToLocal(quiz) {
 
 /* Ovo ćemo kasnije zamijeniti backendom (Supabase / Firebase / vlastiti API) */
 async function loadQuizzesFromBackend() {
-  // TODO: zamijeni sa fetch pozivom na API (GET /quizzes)
   const userQuizzes = loadUserQuizzesFromLocal();
   return [...demoQuizzes, ...userQuizzes];
 }
 
 async function saveQuizToBackend(quiz) {
-  // TODO: zamijeni sa fetch POST /quizzes
   saveUserQuizToLocal(quiz);
 }
 
@@ -1159,7 +1160,7 @@ function initMap() {
   }).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
-  refreshMarkers();
+  // refreshMarkers će se ponovno pozvati nakon loadInitialQuizzes
 }
 
 function focusOnBalkan() {
@@ -1212,7 +1213,7 @@ function initFindQuizzesButton() {
     if (mapSection) mapSection.scrollIntoView({ behavior: "smooth" });
 
     const radiusSelect = document.getElementById("radius-select");
-    if (userLocation && radiusSelect) {
+    if (userLocation && radiusSelect && !radiusSelect.classList.contains("hidden")) {
       const value = radiusSelect.value;
       if (value === "all") {
         showUserLocationMarker();
@@ -1394,6 +1395,7 @@ function initLocationSearch() {
   const useLocationBtn = document.getElementById("use-location-btn");
   const radiusSelect = document.getElementById("radius-select");
   const statusEl = document.getElementById("location-status");
+  const radiusLabel = document.querySelector(".radius-label");
 
   if (!useLocationBtn || !radiusSelect || !statusEl) return;
 
@@ -1420,6 +1422,10 @@ function initLocationSearch() {
           currentLang === "hr"
             ? "Lokacija spremna! Filtriram kvizove u blizini."
             : "Location ready! Showing nearby quizzes.";
+
+        // tek sada prikaži radius label + select
+        if (radiusLabel) radiusLabel.classList.remove("hidden");
+        radiusSelect.classList.remove("hidden");
 
         showUserLocationMarker();
 
