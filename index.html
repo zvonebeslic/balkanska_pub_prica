@@ -217,6 +217,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    align-items: flex-start; /* bitno da se mapa ne rasteže do dna */
 }
 
 /* Sidebar */
@@ -254,10 +255,18 @@ body {
     margin-top: 0.4rem;
 }
 
+.radius-wrapper {
+    display: none;              /* skriveno dok se ne uključi lokacija */
+    margin-top: 0.7rem;
+}
+
+.radius-wrapper.visible {
+    display: block;
+}
+
 .radius-label {
     display: block;
     font-size: 0.8rem;
-    margin-top: 0.7rem;
     margin-bottom: 0.2rem;
 }
 
@@ -435,48 +444,12 @@ body {
 
 #map {
     width: 100%;
-    height: 100%;
+    height: auto;       /* više nije 100% visine */
     min-height: 420px;
 }
 
 .leaflet-container {
     background: #1a1815;
-}
-
-/* Map hint / legend – sada ispod karte */
-
-.map-hint {
-    position: static;
-    margin: 0.45rem 0.9rem 0.6rem;
-    padding: 0.3rem 0.55rem;
-    border-radius: 999px;
-    background: rgba(10, 5, 2, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    backdrop-filter: blur(10px);
-}
-
-.legend-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.legend-dot--green {
-    background: var(--accent-green);
-}
-
-.legend-dot--yellow {
-    background: #ffd45b;
-}
-
-.legend-dot--red {
-    background: var(--accent-red);
 }
 
 /* Buttons */
@@ -538,6 +511,52 @@ body {
     background: rgba(0, 0, 0, 0.94);
     transform: translateY(-1px);
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.9);
+}
+
+/* Legend section (poseban section ispod karte) */
+
+.legend-section {
+    max-width: 1200px;
+    margin: 0.4rem auto 0.8rem;
+    padding: 0 1.2rem;
+}
+
+.legend-inner {
+    background: rgba(10, 5, 2, 0.95);
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.35rem 0.65rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-soft);
+}
+
+.map-hint-label {
+    margin-right: 0.3rem;
+    font-weight: 500;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-dot--green {
+    background: var(--accent-green);
+}
+
+.legend-dot--yellow {
+    background: #ffd45b;
+}
+
+.legend-dot--red {
+    background: var(--accent-red);
 }
 
 /* Modal */
@@ -639,6 +658,8 @@ body {
     .layout {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
+        padding: 0.7rem;
+        gap: 0.7rem;
     }
 
     .sidebar {
@@ -647,7 +668,6 @@ body {
 
     .map-section {
         order: 1;
-        min-height: 340px;
     }
 
     #map {
@@ -658,6 +678,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.45rem;
+        padding: 0.7rem 0.7rem;
     }
 
     .top-nav {
@@ -671,18 +692,13 @@ body {
         margin: 0.6rem auto 0.2rem;
         padding: 0 0.7rem;
     }
+
+    .legend-section {
+        padding: 0 0.7rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .site-header {
-        padding: 0.7rem 0.7rem;
-    }
-
-    .layout {
-        padding: 0.7rem;
-        gap: 0.7rem;
-    }
-
     .card {
         padding: 0.7rem 0.7rem 0.6rem;
     }
@@ -690,11 +706,6 @@ body {
     .floating-btn {
         bottom: 0.7rem;
         right: 0.7rem;
-    }
-
-    .map-hint {
-        margin: 0.4rem 0.7rem 0.4rem;
-        font-size: 0.7rem;
     }
 }
     </style>
@@ -730,15 +741,19 @@ body {
                 <button id="use-location-btn" class="btn btn--accent" data-i18n="btnUseLocation">
                     Uključi moju lokaciju
                 </button>
-                <!-- radius je skriven dok se ne uključi lokacija -->
-                <label class="radius-label hidden" for="radius-select" data-i18n="radiusLabel">Radijus pretrage:</label>
-                <select id="radius-select" class="hidden">
-                    <option value="all" data-i18n="radiusAll" selected>Prikaži sve</option>
-                    <option value="10">10 km</option>
-                    <option value="25">25 km</option>
-                    <option value="50">50 km</option>
-                    <option value="100">100 km</option>
-                </select>
+
+                <!-- Radijus se pokazuje tek nakon uspješne lokacije -->
+                <div id="radius-wrapper" class="radius-wrapper">
+                    <label class="radius-label" for="radius-select" data-i18n="radiusLabel">Radijus pretrage:</label>
+                    <select id="radius-select">
+                        <option value="all" data-i18n="radiusAll" selected>Prikaži sve</option>
+                        <option value="10">10 km</option>
+                        <option value="25">25 km</option>
+                        <option value="50">50 km</option>
+                        <option value="100">100 km</option>
+                    </select>
+                </div>
+
                 <p id="location-status" class="status-text"></p>
             </section>
 
@@ -765,18 +780,21 @@ body {
 
         <section class="map-section">
             <div id="map"></div>
-            <!-- legenda ispod karte -->
-            <div class="map-hint">
-                <span data-i18n="legendTitle">Legenda boja:</span>
-                <span class="legend-dot legend-dot--green"></span> <span data-i18n="legendGreen">do 7 dana</span>
-                <span class="legend-dot legend-dot--yellow"></span> <span data-i18n="legendYellow">8–14 dana</span>
-                <span class="legend-dot legend-dot--red"></span> <span data-i18n="legendRed">15–30 dana</span>
-            </div>
             <button class="floating-btn" id="add-quiz-floating">
                 ➕ <span data-i18n="btnAdd">Dodaj kviz</span>
             </button>
         </section>
     </main>
+
+    <!-- POSEBAN SECTION – legenda ispod karte -->
+    <section class="legend-section">
+        <div class="legend-inner">
+            <span class="map-hint-label" data-i18n="legendTitle">Legenda boja:</span>
+            <span class="legend-dot legend-dot--green"></span> <span data-i18n="legendGreen">do 7 dana</span>
+            <span class="legend-dot legend-dot--yellow"></span> <span data-i18n="legendYellow">8–14 dana</span>
+            <span class="legend-dot legend-dot--red"></span> <span data-i18n="legendRed">15–30 dana</span>
+        </div>
+    </section>
 
     <!-- Modal za dodavanje kviza -->
     <div class="modal-backdrop hidden" id="add-quiz-modal">
@@ -1066,9 +1084,10 @@ let addQuizMarker = null;
 
 /* ----------------- INIT ----------------- */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   initYear();
   initLanguageToggle();
+  await loadInitialQuizzes();  // prvo učitamo kvizove
   initMap();
   initFilters();
   initLocationSearch();
@@ -1076,12 +1095,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initFindQuizzesButton();
   initTestKnowledgeButton();
   applyTranslations();
-
-  // Učitaj sve kvizove, pa tek onda crtaj listu + markere
-  loadInitialQuizzes().then(() => {
-    renderQuizzes();
-    refreshMarkers();
-  });
+  renderQuizzes();             // odmah prikaži listu
+  refreshMarkers();            // i odmah markere
 });
 
 /* ----------------- GODINA ----------------- */
@@ -1160,7 +1175,7 @@ function initMap() {
   }).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
-  // refreshMarkers će se ponovno pozvati nakon loadInitialQuizzes
+  refreshMarkers();
 }
 
 function focusOnBalkan() {
@@ -1213,7 +1228,7 @@ function initFindQuizzesButton() {
     if (mapSection) mapSection.scrollIntoView({ behavior: "smooth" });
 
     const radiusSelect = document.getElementById("radius-select");
-    if (userLocation && radiusSelect && !radiusSelect.classList.contains("hidden")) {
+    if (userLocation && radiusSelect) {
       const value = radiusSelect.value;
       if (value === "all") {
         showUserLocationMarker();
@@ -1328,7 +1343,7 @@ function createColoredIcon(color) {
         fill="${bg}" stroke="#ffffff" stroke-width="1.2"/>
       <circle cx="16" cy="13" r="5.2" fill="rgba(0,0,0,0.45)" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
     </svg>
-  `;
+ `;
 
   return L.divIcon({
     className: "",
@@ -1395,9 +1410,9 @@ function initLocationSearch() {
   const useLocationBtn = document.getElementById("use-location-btn");
   const radiusSelect = document.getElementById("radius-select");
   const statusEl = document.getElementById("location-status");
-  const radiusLabel = document.querySelector(".radius-label");
+  const radiusWrapper = document.getElementById("radius-wrapper");
 
-  if (!useLocationBtn || !radiusSelect || !statusEl) return;
+  if (!useLocationBtn || !radiusSelect || !statusEl || !radiusWrapper) return;
 
   useLocationBtn.addEventListener("click", () => {
     if (!navigator.geolocation) {
@@ -1423,11 +1438,10 @@ function initLocationSearch() {
             ? "Lokacija spremna! Filtriram kvizove u blizini."
             : "Location ready! Showing nearby quizzes.";
 
-        // tek sada prikaži radius label + select
-        if (radiusLabel) radiusLabel.classList.remove("hidden");
-        radiusSelect.classList.remove("hidden");
-
         showUserLocationMarker();
+
+        // Sada pokaži radijus filter
+        radiusWrapper.classList.add("visible");
 
         let radiusValue = radiusSelect.value;
         if (radiusValue === "all") {
