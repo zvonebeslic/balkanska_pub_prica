@@ -431,7 +431,7 @@ body {
     color: var(--status-finished);
 }
 
-/* Map */
+/* Mapa + legenda */
 
 .map-section {
     position: relative;
@@ -440,16 +440,65 @@ body {
     box-shadow: var(--shadow-soft);
     border: 1px solid var(--border-soft);
     background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
 }
 
 #map {
     width: 100%;
-    height: auto;       /* više nije 100% visine */
+    height: auto;
     min-height: 420px;
 }
 
 .leaflet-container {
     background: #1a1815;
+}
+
+/* legenda je sada dio map-section – odmah ispod karte */
+
+.legend-section {
+    width: 100%;
+    padding: 0.4rem 0.8rem 0.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.legend-inner {
+    background: rgba(10, 5, 2, 0.95);
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.35rem 0.65rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-soft);
+}
+
+.map-hint-label {
+    margin-right: 0.3rem;
+    font-weight: 500;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-dot--green {
+    background: var(--accent-green);
+}
+
+.legend-dot--yellow {
+    background: #ffd45b;
+}
+
+.legend-dot--red {
+    background: var(--accent-red);
 }
 
 /* Buttons */
@@ -511,52 +560,6 @@ body {
     background: rgba(0, 0, 0, 0.94);
     transform: translateY(-1px);
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.9);
-}
-
-/* Legend section (poseban section ispod karte) */
-
-.legend-section {
-    max-width: 1200px;
-    margin: 0.4rem auto 0.8rem;
-    padding: 0 1.2rem;
-}
-
-.legend-inner {
-    background: rgba(10, 5, 2, 0.95);
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 0.35rem 0.65rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-soft);
-}
-
-.map-hint-label {
-    margin-right: 0.3rem;
-    font-weight: 500;
-}
-
-.legend-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.legend-dot--green {
-    background: var(--accent-green);
-}
-
-.legend-dot--yellow {
-    background: #ffd45b;
-}
-
-.legend-dot--red {
-    background: var(--accent-red);
 }
 
 /* Modal */
@@ -652,6 +655,30 @@ body {
     background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
 }
 
+.footer-small {
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+}
+
+.footer-links {
+    margin-top: 0.35rem;
+    font-size: 0.78rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -690,10 +717,6 @@ body {
 
     .modal-backdrop {
         margin: 0.6rem auto 0.2rem;
-        padding: 0 0.7rem;
-    }
-
-    .legend-section {
         padding: 0 0.7rem;
     }
 }
@@ -780,21 +803,22 @@ body {
 
         <section class="map-section">
             <div id="map"></div>
+
+            <!-- LEGENDA – sada odmah ispod karte -->
+            <section class="legend-section">
+                <div class="legend-inner">
+                    <span class="map-hint-label" data-i18n="legendTitle">Legenda boja:</span>
+                    <span class="legend-dot legend-dot--green"></span> <span data-i18n="legendGreen">do 7 dana</span>
+                    <span class="legend-dot legend-dot--yellow"></span> <span data-i18n="legendYellow">8–14 dana</span>
+                    <span class="legend-dot legend-dot--red"></span> <span data-i18n="legendRed">15–30 dana</span>
+                </div>
+            </section>
+
             <button class="floating-btn" id="add-quiz-floating">
                 ➕ <span data-i18n="btnAdd">Dodaj kviz</span>
             </button>
         </section>
     </main>
-
-    <!-- POSEBAN SECTION – legenda ispod karte -->
-    <section class="legend-section">
-        <div class="legend-inner">
-            <span class="map-hint-label" data-i18n="legendTitle">Legenda boja:</span>
-            <span class="legend-dot legend-dot--green"></span> <span data-i18n="legendGreen">do 7 dana</span>
-            <span class="legend-dot legend-dot--yellow"></span> <span data-i18n="legendYellow">8–14 dana</span>
-            <span class="legend-dot legend-dot--red"></span> <span data-i18n="legendRed">15–30 dana</span>
-        </div>
-    </section>
 
     <!-- Modal za dodavanje kviza -->
     <div class="modal-backdrop hidden" id="add-quiz-modal">
@@ -884,6 +908,11 @@ body {
         <p class="footer-small" data-i18n="footerSub">
             Dodavanje kviza: 10 KM po objavi (plaćanje online, kviz se prikazuje nakon uplate).
         </p>
+        <p class="footer-links">
+            <a href="#faq" data-i18n="footerFaq">FAQ</a>
+            <span>·</span>
+            <a href="#support" data-i18n="footerContact">Kontakt &amp; podrška</a>
+        </p>
     </footer>
 
     <!-- Leaflet JS -->
@@ -949,6 +978,8 @@ const i18n = {
     btnPay: "Nastavi na plaćanje",
     footerMain: "Balkan Pub Quiz – svi pub kvizovi na jednom mjestu.",
     footerSub: "Dodavanje kviza: 10 KM po objavi (plaćanje online, kviz se prikazuje nakon uplate).",
+    footerFaq: "FAQ",
+    footerContact: "Kontakt & podrška",
     statusLive: "LIVE",
     statusFinished: "Završeno",
     prizesLabel: "Nagrade"
@@ -992,6 +1023,8 @@ const i18n = {
     btnPay: "Proceed to payment",
     footerMain: "Balkan Pub Quiz – all pub quizzes in one place.",
     footerSub: "Add a quiz: 10 BAM per listing (online payment, visible after payment is completed).",
+    footerFaq: "FAQ",
+    footerContact: "Contact & support",
     statusLive: "LIVE",
     statusFinished: "Finished",
     prizesLabel: "Prizes"
@@ -1147,7 +1180,7 @@ function saveUserQuizToLocal(quiz) {
   }
 }
 
-/* Ovo ćemo kasnije zamijeniti backendom (Supabase / Firebase / vlastiti API) */
+/* Ovo ćemo kasnije zamijeniti backendom */
 async function loadQuizzesFromBackend() {
   const userQuizzes = loadUserQuizzesFromLocal();
   return [...demoQuizzes, ...userQuizzes];
