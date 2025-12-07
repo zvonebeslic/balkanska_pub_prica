@@ -830,7 +830,7 @@ body {
             </section>
         </aside>
 
-        <section class="map-section">
+        <section class="map-section" id="map-section">
             <div id="map"></div>
 
             <!-- LEGENDA – odmah ispod karte -->
@@ -908,7 +908,7 @@ body {
                         <input type="datetime-local" id="quiz-datetime" required>
                     </label>
 
-                    <!-- Google Maps link (koristi se samo za koordinate) -->
+                    <!-- Google Maps link ili koordinate -->
                     <label>
                         <span data-i18n="fieldMapsLink">Google Maps link lokala</span>
                         <div style="display:flex; gap:0.4rem; align-items:center;">
@@ -916,7 +916,7 @@ body {
                                 type="text"
                                 id="quiz-maps-link"
                                 required
-                                placeholder="Npr. 45.815769,15.976665"
+                                placeholder="Npr. 45.815769,15.976665 ili Maps link"
                                 style="flex:1;"
                             >
                             <button type="button" id="open-maps-btn" class="btn" style="white-space:nowrap;" data-i18n="btnOpenMaps">
@@ -977,7 +977,6 @@ body {
         <div class="footer-icons">
             <!-- zamijeni link stvarnim IG profilom -->
             <a href="https://instagram.com/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
-                <!-- jednostavna IG ikona -->
                 <span>IG</span>
             </a>
             <!-- zamijeni email adresu svojom -->
@@ -1026,8 +1025,7 @@ const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* --- PAYPAL LINK --- */
 /**
- * OVDJE zalijepiš svoj stvarni PayPal.Me ili checkout link za uplatu 10 KM.
- * Primjer: "https://www.paypal.com/paypalme/tvojusername/10"
+ * OVDJE zalijepiš svoj stvarni PayPal.Me ili checkout link za uplatu.
  */
 const PAYPAL_CHECKOUT_URL = "PUT_YOUR_PAYPAL_LINK_HERE";
 
@@ -1082,7 +1080,10 @@ const i18n = {
     footerLegal: "Legalno",
     statusLive: "LIVE",
     statusFinished: "Završeno",
-    prizesLabel: "Nagrade"
+    prizesLabel: "Nagrade",
+    locEnabled: "Lokacija uključena – filtriramo kvizove po tvojoj poziciji.",
+    locError: "Lokaciju nije moguće dobiti. Provjeri dozvole u pregledniku.",
+    locRequesting: "Tražimo tvoju lokaciju..."
   },
   en: {
     logoMain: "Balkan Pub Quiz Story",
@@ -1130,7 +1131,10 @@ const i18n = {
     footerLegal: "Legal",
     statusLive: "LIVE",
     statusFinished: "Finished",
-    prizesLabel: "Prizes"
+    prizesLabel: "Prizes",
+    locEnabled: "Location enabled – filtering quizzes by your position.",
+    locError: "Could not get your location. Please check browser permissions.",
+    locRequesting: "Requesting your location..."
   }
 };
 
@@ -1140,7 +1144,9 @@ function applyTranslations() {
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key]) el.textContent = dict[key];
+    if (!key || !dict[key]) return;
+    const value = dict[key];
+    el.textContent = value;
   });
 }
 
@@ -1161,7 +1167,7 @@ function offsetDays(days, hours, minutes) {
 
 const demoQuizzes = [
   {
-    id: 1,
+    id: "demo-1",
     title: "Pub Quiz – Sarajevo Classic",
     type: "opce",
     datetime: offsetDays(3, 20, 0),
@@ -1172,43 +1178,48 @@ const demoQuizzes = [
     prize2: "2. mjesto – pića za ekipu",
     prize3: "",
     prizeExtra: "",
-    phone: "+387 62 000 000"
+    phone: "+387 62 000 000",
+    source: "demo"
   },
   {
-    id: 2,
+    id: "demo-2",
     title: "Kafanski kviz – Mostar Night",
     type: "kafanski",
     datetime: offsetDays(8, 21, 0),
     venue: "Stari Grad Pub, Mostar",
     lat: 43.3438,
-    lng: 17.8078
+    lng: 17.8078,
+    source: "demo"
   },
   {
-    id: 3,
+    id: "demo-3",
     title: "Nogometni kviz – Balkan Derbi",
     type: "nogometni",
     datetime: offsetDays(12, 19, 30),
     venue: "Sports Bar, Zagreb",
     lat: 45.815,
-    lng: 15.9819
+    lng: 15.9819,
+    source: "demo"
   },
   {
-    id: 4,
+    id: "demo-4",
     title: "Kviz beskorisnog znanja",
     type: "beskorisno",
     datetime: offsetDays(20, 20, 30),
     venue: "Pub Lavirint, Beograd",
     lat: 44.7866,
-    lng: 20.4489
+    lng: 20.4489,
+    source: "demo"
   },
   {
-    id: 5,
+    id: "demo-5",
     title: "Sportski kviz – Planine & Sport",
     type: "sportski",
     datetime: offsetDays(5, 18, 0),
     venue: "Planinski bar, Podgorica",
     lat: 42.4304,
-    lng: 19.2594
+    lng: 19.2594,
+    source: "demo"
   }
 ];
 
@@ -1224,7 +1235,7 @@ let addQuizMarker = null;
 document.addEventListener("DOMContentLoaded", async () => {
   initYear();
   initLanguageToggle();
-  await loadInitialQuizzes();  // učitava demo + Supabase + localStorage
+  await loadInitialQuizzes();  // demo + Supabase + localStorage
   initMap();
   initFilters();
   initLocationSearch();
@@ -1256,6 +1267,7 @@ function initLanguageToggle() {
       buttons.forEach((b) => b.classList.toggle("active", b === btn));
       applyTranslations();
       renderQuizzes(); // refresha tekst statusa / labela
+      updateLocationStatusText(); // da i poruka za lokaciju prati jezik
     });
   });
 }
@@ -1307,13 +1319,13 @@ async function loadQuizzesFromSupabase() {
     if (!Array.isArray(data)) return [];
 
     return data.map((row) => ({
-      id: row.id,
-      title: row.title || "",
-      type: row.type || "ostalo",
+      id: `supabase-${row.id}`,
+      title: row.title,
+      type: row.type,
       datetime: row.datetime,
-      venue: row.venue || "",
-      lat: row.lat != null ? Number(row.lat) : null,
-      lng: row.lng != null ? Number(row.lng) : null,
+      venue: row.venue,
+      lat: row.lat,
+      lng: row.lng,
       prize1: row.prize1 || "",
       prize2: row.prize2 || "",
       prize3: row.prize3 || "",
@@ -1330,131 +1342,129 @@ async function loadQuizzesFromSupabase() {
 /* ----------------- UČITAVANJE SVIH KVIZOVA ----------------- */
 
 async function loadInitialQuizzes() {
-  // demo kvizovi (lokalno u JS)
-  const demo = demoQuizzes.map((q) => ({
-    ...q,
-    source: "demo"
-  }));
+  const userQuizzes = loadUserQuizzesFromLocal();
+  const supabaseQuizzes = await loadQuizzesFromSupabase();
 
-  // Supabase
-  const fromSupabase = await loadQuizzesFromSupabase();
+  const now = Date.now();
 
-  // localStorage (kvizovi koje je ovaj browser dodao)
-  const fromLocal = loadUserQuizzesFromLocal().map((q) => ({
-    ...q,
-    source: "local"
-  }));
+  const withinWindow = (quiz) => {
+    const t = new Date(quiz.datetime).getTime();
+    if (Number.isNaN(t)) return false;
+    const diff = t - now;
+    // dopuštamo evente od prije max 2 dana do +30 dana
+    return diff >= -FINISHED_VISIBLE_MS && diff <= UPCOMING_WINDOW_MS;
+  };
 
-  allQuizzes = [...demo, ...fromSupabase, ...fromLocal];
+  allQuizzes = [...demoQuizzes, ...supabaseQuizzes, ...userQuizzes].filter(withinWindow);
 }
 
 /* ----------------- MAPA ----------------- */
 
 function initMap() {
   map = L.map("map", {
-    zoomControl: true,
-    attributionControl: false
-  }).fitBounds(BALKAN_BOUNDS);
+    zoomControl: true
+  });
+
+  const center = BALKAN_BOUNDS.getCenter();
+  map.setView(center, 6);
+  map.fitBounds(BALKAN_BOUNDS);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 18
+    maxZoom: 18,
+    minZoom: 4,
+    attribution: "&copy; OpenStreetMap"
   }).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
-
-  refreshMarkers();
 }
 
-/**
- * Određuje boju markera ovisno o datumu kviza.
- *  - zelena: danas–7 dana
- *  - žuta: 8–14 dana
- *  - crvena: 15–30 dana
- *  - siva: završeni (do 2 dana)
- */
-function getMarkerColor(quizDate) {
+function getMarkerColor(quiz) {
   const now = Date.now();
-  const t = new Date(quizDate).getTime();
-  const diffMs = t - now;
+  const t = new Date(quiz.datetime).getTime();
+  if (Number.isNaN(t)) return "gray";
 
-  // zavrseni ali jos vidljivi
-  if (t < now && now - t <= FINISHED_VISIBLE_MS) {
-    return "#888888"; // sivo
-  }
+  const diff = t - now;
 
-  if (diffMs < 0 || diffMs > UPCOMING_WINDOW_MS) {
-    return null; // izvan prozora
-  }
+  // finished but još vidljiv
+  if (diff < 0 && diff >= -FINISHED_VISIBLE_MS) return "gray";
 
-  const diffDays = diffMs / 86400000;
-
-  if (diffDays <= 7) return "#7fd95b";      // zelena
-  if (diffDays <= 14) return "#ffd45b";     // žuta
-  return "#ff6b6b";                         // crvena
+  const dayMs = 86400000;
+  const daysAhead = diff / dayMs;
+  if (daysAhead <= 7) return "green";
+  if (daysAhead <= 14) return "orange";
+  if (daysAhead <= 30) return "red";
+  return "gray";
 }
 
 function refreshMarkers() {
   if (!map || !markersLayer) return;
+
   markersLayer.clearLayers();
 
-  const quizzes = getFilteredQuizzes();
+  const filtered = getFilteredQuizzes();
 
-  quizzes.forEach((quiz) => {
-    if (quiz.lat == null || quiz.lng == null) return;
+  filtered.forEach((quiz) => {
+    if (typeof quiz.lat !== "number" || typeof quiz.lng !== "number") return;
 
-    const color = getMarkerColor(quiz.datetime);
-    if (!color) return;
-
+    const color = getMarkerColor(quiz);
     const marker = L.circleMarker([quiz.lat, quiz.lng], {
-      radius: 8,
-      color: "#000000",
-      weight: 1,
-      fillColor: color,
+      radius: 7,
+      weight: 2,
+      color: "#000",
+      fillColor:
+        color === "green"
+          ? "#7fd95b"
+          : color === "orange"
+          ? "#ffd45b"
+          : color === "red"
+          ? "#ff6b6b"
+          : "#666",
       fillOpacity: 0.9
     });
 
-    const date = new Date(quiz.datetime);
-    const dateStr = date.toLocaleString(currentLang === "hr" ? "hr-HR" : "en-GB", {
-      weekday: "short",
+    const dt = new Date(quiz.datetime);
+    const dateStr = dt.toLocaleString(currentLang === "en" ? "en-GB" : "hr-HR", {
       day: "2-digit",
       month: "2-digit",
+      year: "numeric",
       hour: "2-digit",
       minute: "2-digit"
     });
 
-    let popupHtml = `<strong>${quiz.title}</strong><br>${quiz.venue || ""}<br>${dateStr}`;
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${quiz.lat},${quiz.lng}`;
 
-    if (quiz.phone) {
-      popupHtml += `<br><small>📞 ${quiz.phone}</small>`;
-    }
+    marker.bindPopup(`
+      <strong>${quiz.title}</strong><br>
+      ${quiz.venue || ""}<br>
+      ${dateStr}<br>
+      <a href="${mapsUrl}" target="_blank" rel="noopener">Google Maps</a>
+    `);
 
-    if (typeof quiz.distanceKm === "number") {
-      popupHtml += `<br><small>${quiz.distanceKm.toFixed(1)} km</small>`;
-    }
-
-    marker.bindPopup(popupHtml);
-    markersLayer.addLayer(marker);
+    marker.addTo(markersLayer);
   });
 
-  // marker za korisnikovu lokaciju
+  // korisnička lokacija
   if (userLocation) {
     if (userLocationMarker) {
-      markersLayer.removeLayer(userLocationMarker);
+      userLocationMarker.setLatLng(userLocation);
+    } else {
+      userLocationMarker = L.circleMarker(userLocation, {
+        radius: 8,
+        weight: 2,
+        color: "#fff",
+        fillColor: "#050608",
+        fillOpacity: 1
+      }).addTo(markersLayer);
     }
+  }
 
-    userLocationMarker = L.circleMarker([userLocation.lat, userLocation.lng], {
-      radius: 9,
-      color: "#ffffff",
-      weight: 2,
-      fillColor: "#050608",
-      fillOpacity: 1
-    }).bindPopup(currentLang === "hr" ? "Tvoja lokacija" : "Your location");
-
-    markersLayer.addLayer(userLocationMarker);
+  // marker za novi kviz (preview)
+  if (addQuizMarker) {
+    addQuizMarker.addTo(markersLayer);
   }
 }
 
-/* ----------------- FILTRI & LISTA ----------------- */
+/* ----------------- FILTERI & RENDER LISTE ----------------- */
 
 function getActiveTypes() {
   const checkboxes = document.querySelectorAll(".quiz-type-filter");
@@ -1465,109 +1475,91 @@ function getActiveTypes() {
   return active;
 }
 
-function getRadiusKm() {
-  const radiusSelect = document.getElementById("radius-select");
-  if (!radiusSelect) return null;
-  const val = radiusSelect.value;
-  if (val === "all") return null;
-  const km = Number(val);
-  return Number.isFinite(km) ? km : null;
-}
-
-function computeDistanceKm(lat1, lng1, lat2, lng2) {
+function getDistanceKm(lat1, lon1, lat2, lon2) {
   const R = 6371; // km
-  const toRad = (x) => (x * Math.PI) / 180;
+  const toRad = (deg) => (deg * Math.PI) / 180;
+
   const dLat = toRad(lat2 - lat1);
-  const dLng = toRad(lng2 - lng1);
+  const dLon = toRad(lon2 - lon1);
   const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos(toRad(lat1)) *
       Math.cos(toRad(lat2)) *
-      Math.sin(dLng / 2) *
-      Math.sin(dLng / 2);
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return R * c;
 }
 
-/**
- * Vraća kvizove filtrirane po:
- *  - vremenu (±30 dana / plus zavrseni 2 dana)
- *  - tipu kviza
- *  - radijusu (ako korisnik ima lokaciju)
- */
 function getFilteredQuizzes() {
+  const types = getActiveTypes();
+  const radiusSelect = document.getElementById("radius-select");
+  const radiusVal = radiusSelect ? radiusSelect.value : "all";
+  const radiusKm = radiusVal === "all" ? null : Number(radiusVal);
+
   const now = Date.now();
-  const activeTypes = getActiveTypes();
-  const radiusKm = getRadiusKm();
 
-  let quizzes = allQuizzes
-    .map((q) => ({ ...q })) // plitka kopija
-    .filter((q) => {
-      if (!activeTypes.includes(q.type)) return false;
+  return allQuizzes
+    .map((quiz) => {
+      const t = new Date(quiz.datetime).getTime();
+      if (Number.isNaN(t)) return null;
 
-      const t = new Date(q.datetime).getTime();
-      const diff = t - now;
-
-      // zavrseni ali jos 2 dana vidljivi
-      if (t < now) {
-        if (now - t > FINISHED_VISIBLE_MS) return false;
-      } else {
-        if (diff > UPCOMING_WINDOW_MS) return false;
+      // distance
+      let distanceKm = null;
+      if (userLocation && radiusKm !== null && typeof quiz.lat === "number" && typeof quiz.lng === "number") {
+        distanceKm = getDistanceKm(
+          userLocation.lat,
+          userLocation.lng,
+          quiz.lat,
+          quiz.lng
+        );
       }
 
-      return true;
-    });
-
-  // distanca
-  if (userLocation && radiusKm != null) {
-    quizzes.forEach((q) => {
-      if (q.lat != null && q.lng != null) {
-        q.distanceKm = computeDistanceKm(userLocation.lat, userLocation.lng, q.lat, q.lng);
-      } else {
-        q.distanceKm = null;
+      return { ...quiz, _timeMs: t, _distanceKm: distanceKm };
+    })
+    .filter((quiz) => quiz !== null)
+    .filter((quiz) => {
+      if (!types.includes(quiz.type)) return false;
+      if (userLocation && radiusKm !== null && quiz._distanceKm != null) {
+        if (quiz._distanceKm > radiusKm) return false;
       }
-    });
+      // već smo u loadInitialQuizzes filtrirali vremenski prozor, ali zadržimo
+      const diff = quiz._timeMs - now;
+      return diff >= -FINISHED_VISIBLE_MS && diff <= UPCOMING_WINDOW_MS;
+    })
+    .sort((a, b) => a._timeMs - b._timeMs);
+}
 
-    quizzes = quizzes.filter(
-      (q) =>
-        q.distanceKm == null || // ako nemamo koordinate, ostavi (da se ne izgube kvizovi bez mape)
-        q.distanceKm <= radiusKm
-    );
+function formatDateTime(dtStr) {
+  const dt = new Date(dtStr);
+  if (Number.isNaN(dt.getTime())) return dtStr;
 
-    // sortiraj po distanci pa po datumu
-    quizzes.sort((a, b) => {
-      if (a.distanceKm != null && b.distanceKm != null) {
-        if (a.distanceKm !== b.distanceKm) return a.distanceKm - b.distanceKm;
-      }
-      return new Date(a.datetime) - new Date(b.datetime);
-    });
-  } else {
-    // samo po datumu
-    quizzes.sort((a, b) => new Date(a.datetime) - new Date(b.datetime));
-  }
-
-  return quizzes;
+  return dt.toLocaleString(currentLang === "en" ? "en-GB" : "hr-HR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
 }
 
 function renderQuizzes() {
-  const list = document.getElementById("quiz-list");
-  const emptyMsg = document.getElementById("quiz-empty-message");
-  if (!list) return;
+  const listEl = document.getElementById("quiz-list");
+  const emptyEl = document.getElementById("quiz-empty-message");
+  if (!listEl) return;
 
-  list.innerHTML = "";
+  listEl.innerHTML = "";
 
-  const quizzes = getFilteredQuizzes();
-
-  if (quizzes.length === 0) {
-    if (emptyMsg) emptyMsg.classList.remove("hidden");
-    return;
-  } else if (emptyMsg) {
-    emptyMsg.classList.add("hidden");
-  }
-
+  const filtered = getFilteredQuizzes();
   const dict = i18n[currentLang] || i18n.hr;
 
-  quizzes.forEach((quiz) => {
+  if (!filtered.length) {
+    if (emptyEl) emptyEl.classList.remove("hidden");
+    return;
+  }
+  if (emptyEl) emptyEl.classList.add("hidden");
+
+  filtered.forEach((quiz) => {
     const li = document.createElement("li");
     li.className = "quiz-item";
 
@@ -1578,31 +1570,37 @@ function renderQuizzes() {
     titleSpan.className = "quiz-title";
     titleSpan.textContent = quiz.title;
 
-    // status
     const statusSpan = document.createElement("span");
-    statusSpan.className = "quiz-status";
-    const t = new Date(quiz.datetime).getTime();
     const now = Date.now();
-    if (t >= now) {
-      statusSpan.classList.add("quiz-status--live");
-      statusSpan.textContent = dict.statusLive || "LIVE";
-    } else {
-      statusSpan.classList.add("quiz-status--finished");
-      statusSpan.textContent = dict.statusFinished || "Finished";
+    const diff = quiz._timeMs - now;
+
+    let statusClass = "";
+    let statusText = "";
+
+    if (Math.abs(diff) <= THREE_HOURS_MS) {
+      statusClass = "quiz-status quiz-status--live";
+      statusText = dict.statusLive;
+    } else if (diff < -THREE_HOURS_MS) {
+      statusClass = "quiz-status quiz-status--finished";
+      statusText = dict.statusFinished;
+    }
+
+    if (statusText) {
+      statusSpan.className = statusClass;
+      statusSpan.textContent = statusText;
     }
 
     header.appendChild(titleSpan);
-    header.appendChild(statusSpan);
+    if (statusText) header.appendChild(statusSpan);
 
-    // venue & phone
-    const venueP = document.createElement("p");
-    venueP.className = "quiz-venue";
-    venueP.textContent = quiz.venue || "";
+    const venue = document.createElement("div");
+    venue.className = "quiz-venue";
+    venue.textContent = quiz.venue || "";
 
-    const phoneP = document.createElement("p");
-    phoneP.className = "quiz-phone";
+    const phone = document.createElement("div");
+    phone.className = "quiz-phone";
     if (quiz.phone) {
-      phoneP.textContent = quiz.phone;
+      phone.textContent = quiz.phone;
     }
 
     const meta = document.createElement("div");
@@ -1611,117 +1609,126 @@ function renderQuizzes() {
     const metaLeft = document.createElement("div");
     metaLeft.className = "quiz-meta-left";
 
-    const tagSpan = document.createElement("span");
-    tagSpan.className = "quiz-tag";
-    tagSpan.textContent = mapTypeLabel(quiz.type, dict);
+    const tag = document.createElement("span");
+    tag.className = "quiz-tag";
 
-    const dateSpan = document.createElement("span");
-    dateSpan.className = "quiz-date";
-    const d = new Date(quiz.datetime);
-    dateSpan.textContent = d.toLocaleString(
-      currentLang === "hr" ? "hr-HR" : "en-GB",
-      {
-        weekday: "short",
-        day: "2-digit",
-        month: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit"
-      }
-    );
+    const typeLabel =
+      quiz.type === "opce"
+        ? dict.typeGeneral
+        : quiz.type === "kafanski"
+        ? dict.typeKafanski
+        : quiz.type === "nogometni"
+        ? dict.typeFootball
+        : quiz.type === "sportski"
+        ? dict.typeSports
+        : quiz.type === "beskorisno"
+        ? dict.typeUseless
+        : dict.typeOther;
 
-    metaLeft.appendChild(tagSpan);
-    metaLeft.appendChild(dateSpan);
+    tag.textContent = typeLabel;
 
-    const metaRight = document.createElement("div");
-    if (typeof quiz.distanceKm === "number") {
-      const distSpan = document.createElement("span");
-      distSpan.className = "quiz-distance";
-      distSpan.textContent = `${quiz.distanceKm.toFixed(1)} km`;
-      metaRight.appendChild(distSpan);
+    const dateEl = document.createElement("span");
+    dateEl.className = "quiz-date";
+    dateEl.textContent = formatDateTime(quiz.datetime);
+
+    metaLeft.appendChild(tag);
+    metaLeft.appendChild(dateEl);
+
+    const distanceEl = document.createElement("span");
+    distanceEl.className = "quiz-distance";
+    if (quiz._distanceKm != null && !Number.isNaN(quiz._distanceKm)) {
+      distanceEl.textContent =
+        quiz._distanceKm < 1
+          ? `${quiz._distanceKm.toFixed(1)} km`
+          : `${quiz._distanceKm.toFixed(1)} km`;
     }
 
     meta.appendChild(metaLeft);
-    meta.appendChild(metaRight);
+    if (distanceEl.textContent) meta.appendChild(distanceEl);
 
     li.appendChild(header);
-    li.appendChild(venueP);
-    if (quiz.phone) li.appendChild(phoneP);
+    li.appendChild(venue);
+    if (quiz.phone) li.appendChild(phone);
     li.appendChild(meta);
+
+    // Google Maps link
+    if (typeof quiz.lat === "number" && typeof quiz.lng === "number") {
+      const mapsLink = document.createElement("a");
+      mapsLink.className = "quiz-maps-link";
+      mapsLink.href = `https://www.google.com/maps/search/?api=1&query=${quiz.lat},${quiz.lng}`;
+      mapsLink.target = "_blank";
+      mapsLink.rel = "noopener";
+      mapsLink.textContent =
+        currentLang === "en" ? "Open in Google Maps" : "Otvori u Google Mapsu";
+      li.appendChild(mapsLink);
+    }
 
     // nagrade
     if (quiz.prize1 || quiz.prize2 || quiz.prize3 || quiz.prizeExtra) {
-      const prizesP = document.createElement("p");
-      prizesP.className = "quiz-prizes";
+      const prizes = document.createElement("div");
+      prizes.className = "quiz-prizes";
 
-      let html = `<strong>${dict.prizesLabel || "Nagrade"}:</strong> `;
+      const label = document.createElement("strong");
+      label.textContent = (dict.prizesLabel || "Nagrade") + ": ";
+      prizes.appendChild(label);
+
       const parts = [];
       if (quiz.prize1) parts.push(quiz.prize1);
       if (quiz.prize2) parts.push(quiz.prize2);
       if (quiz.prize3) parts.push(quiz.prize3);
       if (quiz.prizeExtra) parts.push(quiz.prizeExtra);
-      html += parts.join(" | ");
-      prizesP.innerHTML = html;
-      li.appendChild(prizesP);
+
+      prizes.appendChild(document.createTextNode(parts.join(" | ")));
+      li.appendChild(prizes);
     }
 
-    // gmaps link
-    if (quiz.lat != null && quiz.lng != null) {
-      const mapsLink = document.createElement("a");
-      mapsLink.href = `https://www.google.com/maps?q=${quiz.lat},${quiz.lng}`;
-      mapsLink.target = "_blank";
-      mapsLink.rel = "noopener";
-      mapsLink.className = "quiz-maps-link";
-      mapsLink.textContent =
-        currentLang === "hr" ? "Otvori lokaciju u Mapsu" : "Open location in Maps";
-      li.appendChild(mapsLink);
-    }
-
-    list.appendChild(li);
+    listEl.appendChild(li);
   });
 }
 
-function mapTypeLabel(type, dict) {
-  switch (type) {
-    case "opce":
-      return dict.typeGeneral;
-    case "kafanski":
-      return dict.typeKafanski;
-    case "nogometni":
-      return dict.typeFootball;
-    case "sportski":
-      return dict.typeSports;
-    case "beskorisno":
-      return dict.typeUseless;
-    default:
-      return dict.typeOther || "Other";
+/* ----------------- FILTER EVENTI ----------------- */
+
+function initFilters() {
+  const typeInputs = document.querySelectorAll(".quiz-type-filter");
+  typeInputs.forEach((cb) => {
+    cb.addEventListener("change", () => {
+      renderQuizzes();
+      refreshMarkers();
+    });
+  });
+
+  const radiusSelect = document.getElementById("radius-select");
+  if (radiusSelect) {
+    radiusSelect.addEventListener("change", () => {
+      renderQuizzes();
+      refreshMarkers();
+    });
   }
 }
 
 /* ----------------- GEOLOKACIJA ----------------- */
 
+function updateLocationStatusText(messageKeyOverride) {
+  const statusEl = document.getElementById("location-status");
+  if (!statusEl) return;
+
+  const dict = i18n[currentLang] || i18n.hr;
+  if (messageKeyOverride && dict[messageKeyOverride]) {
+    statusEl.textContent = dict[messageKeyOverride];
+  }
+}
+
 function initLocationSearch() {
   const btn = document.getElementById("use-location-btn");
-  const radiusWrapper = document.getElementById("radius-wrapper");
-  const radiusSelect = document.getElementById("radius-select");
   if (!btn) return;
 
   btn.addEventListener("click", () => {
     if (!navigator.geolocation) {
-      setLocationStatus(
-        currentLang === "hr"
-          ? "Tvoj preglednik ne podržava geolokaciju."
-          : "Your browser does not support geolocation.",
-        true
-      );
+      updateLocationStatusText("locError");
       return;
     }
 
-    setLocationStatus(
-      currentLang === "hr"
-        ? "Tražimo tvoju lokaciju..."
-        : "Getting your location...",
-      false
-    );
+    updateLocationStatusText("locRequesting");
 
     navigator.geolocation.getCurrentPosition(
       (pos) => {
@@ -1730,83 +1737,96 @@ function initLocationSearch() {
           lng: pos.coords.longitude
         };
 
-        if (radiusWrapper) {
-          radiusWrapper.classList.add("visible");
-        }
+        const radiusWrapper = document.getElementById("radius-wrapper");
+        if (radiusWrapper) radiusWrapper.classList.add("visible");
 
-        setLocationStatus(
-          currentLang === "hr"
-            ? "Lokacija pronađena – filtriramo kvizove prema udaljenosti."
-            : "Location found – filtering quizzes by distance.",
-          false
-        );
-
-        // centriraj mapu
-        if (map) {
-          map.setView([userLocation.lat, userLocation.lng], 7);
-        }
-
+        updateLocationStatusText("locEnabled");
         renderQuizzes();
         refreshMarkers();
+
+        if (map && userLocation) {
+          map.setView(userLocation, 9);
+        }
       },
-      (err) => {
-        console.error(err);
-        setLocationStatus(
-          currentLang === "hr"
-            ? "Nismo mogli dobiti tvoju lokaciju. Provjeri dozvole za lokaciju."
-            : "Could not get your location. Please check location permissions.",
-          true
-        );
+      () => {
+        updateLocationStatusText("locError");
       },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+      {
+        enableHighAccuracy: true,
+        timeout: 10000
+      }
     );
   });
+}
 
-  if (radiusSelect) {
-    radiusSelect.addEventListener("change", () => {
-      renderQuizzes();
-      refreshMarkers();
-    });
+/* ----------------- MODAL ZA DODAVANJE KVIZA ----------------- */
+
+function parseLatLngFromInput(value) {
+  if (!value) return null;
+  const text = value.trim();
+
+  // 1) direktne koordinate "lat,lng"
+  let m = text.match(/(-?\d{1,3}\.\d+)\s*,\s*(-?\d{1,3}\.\d+)/);
+  if (m) {
+    return {
+      lat: parseFloat(m[1]),
+      lng: parseFloat(m[2])
+    };
   }
 
-  // promjena filtera tipa kviza
-  document.querySelectorAll(".quiz-type-filter").forEach((cb) => {
-    cb.addEventListener("change", () => {
-      renderQuizzes();
-      refreshMarkers();
-    });
-  });
-}
+  // 2) Maps link s @lat,lng
+  m = text.match(/@(-?\d{1,3}\.\d+),(-?\d{1,3}\.\d+)/);
+  if (m) {
+    return {
+      lat: parseFloat(m[1]),
+      lng: parseFloat(m[2])
+    };
+  }
 
-function setLocationStatus(text, isError) {
-  const el = document.getElementById("location-status");
-  if (!el) return;
-  el.textContent = text;
-  el.style.color = isError ? "#ff6b6b" : "var(--accent)";
-}
+  // 3) q=lat,lng
+  m = text.match(/[?&]q=(-?\d{1,3}\.\d+),(-?\d{1,3}\.\d+)/);
+  if (m) {
+    return {
+      lat: parseFloat(m[1]),
+      lng: parseFloat(m[2])
+    };
+  }
 
-/* ----------------- DODAVANJE KVIZA (MODAL) ----------------- */
+  return null;
+}
 
 function initAddQuizModal() {
   const openBtn = document.getElementById("add-quiz-open");
+  const modal = document.getElementById("add-quiz-modal");
   const closeBtn = document.getElementById("add-quiz-close");
-  const modalBackdrop = document.getElementById("add-quiz-modal");
   const form = document.getElementById("add-quiz-form");
+  const mapsInput = document.getElementById("quiz-maps-link");
+  const latInput = document.getElementById("quiz-lat");
+  const lngInput = document.getElementById("quiz-lng");
   const openMapsBtn = document.getElementById("open-maps-btn");
 
-  if (!openBtn || !modalBackdrop || !form) return;
+  if (!openBtn || !modal || !closeBtn || !form) return;
 
-  openBtn.addEventListener("click", () => {
-    modalBackdrop.classList.remove("hidden");
-    // scroll na modal da korisnik odmah vidi formular
-    modalBackdrop.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-
-  if (closeBtn) {
-    closeBtn.addEventListener("click", () => {
-      modalBackdrop.classList.add("hidden");
-    });
+  function openModal() {
+    modal.classList.remove("hidden");
+    modal.scrollIntoView({ behavior: "smooth", block: "start" });
   }
+
+  function closeModal() {
+    modal.classList.add("hidden");
+    if (addQuizMarker && markersLayer) {
+      markersLayer.removeLayer(addQuizMarker);
+      addQuizMarker = null;
+    }
+    form.reset();
+    if (latInput) latInput.value = "";
+    if (lngInput) lngInput.value = "";
+  }
+
+  openBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+
+  // klik van modala – ne trebamo jer je backdrop statičan u layoutu
 
   if (openMapsBtn) {
     openMapsBtn.addEventListener("click", () => {
@@ -1814,153 +1834,134 @@ function initAddQuizModal() {
     });
   }
 
+  if (mapsInput) {
+    const handleCoordsChange = () => {
+      const coords = parseLatLngFromInput(mapsInput.value);
+      if (!coords) return;
+
+      if (latInput) latInput.value = String(coords.lat);
+      if (lngInput) lngInput.value = String(coords.lng);
+
+      // marker preview
+      if (map && markersLayer) {
+        if (!addQuizMarker) {
+          addQuizMarker = L.circleMarker([coords.lat, coords.lng], {
+            radius: 9,
+            weight: 2,
+            color: "#fff",
+            fillColor: "#f5c15b",
+            fillOpacity: 0.9
+          });
+        } else {
+          addQuizMarker.setLatLng([coords.lat, coords.lng]);
+        }
+        refreshMarkers();
+        map.setView([coords.lat, coords.lng], 14);
+      }
+    };
+
+    mapsInput.addEventListener("change", handleCoordsChange);
+    mapsInput.addEventListener("blur", handleCoordsChange);
+  }
+
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const title = document.getElementById("quiz-title").value.trim();
-    const venue = document.getElementById("quiz-venue-name").value.trim();
-    const type = document.getElementById("quiz-type").value;
-    const datetime = document.getElementById("quiz-datetime").value;
-    const mapsInput = document.getElementById("quiz-maps-link").value.trim();
-    const phone = document.getElementById("quiz-phone").value.trim();
-    const prize1 = document.getElementById("prize-1").value.trim();
-    const prize2 = document.getElementById("prize-2").value.trim();
-    const prize3 = document.getElementById("prize-3").value.trim();
-    const prizeExtra = document.getElementById("prize-extra").value.trim();
+    const titleEl = document.getElementById("quiz-title");
+    const venueEl = document.getElementById("quiz-venue-name");
+    const typeEl = document.getElementById("quiz-type");
+    const dtEl = document.getElementById("quiz-datetime");
+    const phoneEl = document.getElementById("quiz-phone");
+    const prize1El = document.getElementById("prize-1");
+    const prize2El = document.getElementById("prize-2");
+    const prize3El = document.getElementById("prize-3");
+    const prizeExtraEl = document.getElementById("prize-extra");
 
-    if (!title || !venue || !type || !datetime || !mapsInput) {
-      alert(
-        currentLang === "hr"
-          ? "Molimo ispuni sva obavezna polja."
-          : "Please fill in all required fields."
-      );
+    if (!titleEl || !venueEl || !typeEl || !dtEl || !mapsInput || !latInput || !lngInput) {
       return;
     }
 
-    const coords = parseCoordinatesFromInput(mapsInput);
-    if (!coords) {
+    const coords =
+      latInput.value && lngInput.value
+        ? {
+            lat: parseFloat(latInput.value),
+            lng: parseFloat(lngInput.value)
+          }
+        : parseLatLngFromInput(mapsInput.value);
+
+    if (!coords || Number.isNaN(coords.lat) || Number.isNaN(coords.lng)) {
       alert(
-        currentLang === "hr"
-          ? "Nismo uspjeli pročitati koordinate iz linka. Pokušaj unijeti 'lat,lng' ili puni Google Maps link."
-          : "Could not read coordinates from the link. Try entering 'lat,lng' or a full Google Maps URL."
+        currentLang === "en"
+          ? "Please provide valid coordinates or a valid Google Maps link."
+          : "Molimo unesi ispravne koordinate ili valjan Google Maps link."
       );
       return;
     }
-
-    const isoDate = new Date(datetime).toISOString();
 
     const newQuiz = {
-      id: Date.now(), // privremeni ID (Supabase ima svoj)
-      title,
-      type,
-      datetime: isoDate,
-      venue,
+      id: `user-${Date.now()}`,
+      title: titleEl.value.trim(),
+      type: typeEl.value,
+      datetime: new Date(dtEl.value).toISOString(),
+      venue: venueEl.value.trim(),
       lat: coords.lat,
       lng: coords.lng,
-      prize1,
-      prize2,
-      prize3,
-      prizeExtra,
-      phone,
-      source: "local"
+      phone: phoneEl && phoneEl.value ? phoneEl.value.trim() : "",
+      prize1: prize1El && prize1El.value ? prize1El.value.trim() : "",
+      prize2: prize2El && prize2El.value ? prize2El.value.trim() : "",
+      prize3: prize3El && prize3El.value ? prize3El.value.trim() : "",
+      prizeExtra: prizeExtraEl && prizeExtraEl.value ? prizeExtraEl.value.trim() : "",
+      source: "user"
     };
 
-    // spremi lokalno
+    // localStorage
     saveUserQuizToLocal(newQuiz);
 
-    // pokušaj poslati u Supabase (best effort)
+    // pokušaj spremiti i u Supabase (nije kritično ako ne uspije)
     try {
-      if (supabaseClient) {
-        const { error } = await supabaseClient.from("Quizzes").insert({
-          title,
-          type,
-          datetime: isoDate,
-          venue,
-          lat: coords.lat,
-          lng: coords.lng,
-          prize1,
-          prize2,
-          prize3,
-          prize_extra: prizeExtra,
-          phone
-        });
-        if (error) {
-          console.error("Supabase insert error:", error);
-        }
+      const { error } = await supabaseClient.from("Quizzes").insert({
+        title: newQuiz.title,
+        type: newQuiz.type,
+        datetime: newQuiz.datetime,
+        venue: newQuiz.venue,
+        lat: newQuiz.lat,
+        lng: newQuiz.lng,
+        prize1: newQuiz.prize1,
+        prize2: newQuiz.prize2,
+        prize3: newQuiz.prize3,
+        prize_extra: newQuiz.prizeExtra,
+        phone: newQuiz.phone
+      });
+      if (error) {
+        console.error("Supabase insert error:", error);
       }
     } catch (err) {
-      console.error("Supabase exception:", err);
+      console.error("Supabase insert exception:", err);
     }
 
-    // dodaj u runtime listu
     allQuizzes.push(newQuiz);
     renderQuizzes();
     refreshMarkers();
+    closeModal();
 
-    // preusmjeravanje na plaćanje
-    if (!PAYPAL_CHECKOUT_URL || PAYPAL_CHECKOUT_URL === "PUT_YOUR_PAYPAL_LINK_HERE") {
-      alert(
-        currentLang === "hr"
-          ? "Kviz je spremljen lokalno, ali PayPal link još nije postavljen. Molimo vlasnika stranice da doda PAYPAL_CHECKOUT_URL u kod."
-          : "Quiz saved locally, but PayPal link is not configured yet. Please add PAYPAL_CHECKOUT_URL in the code."
-      );
-    } else {
+    // redirect na PayPal
+    if (PAYPAL_CHECKOUT_URL && PAYPAL_CHECKOUT_URL !== "PUT_YOUR_PAYPAL_LINK_HERE") {
       window.open(PAYPAL_CHECKOUT_URL, "_blank", "noopener");
+    } else {
+      alert(
+        currentLang === "en"
+          ? "Quiz saved locally. Payment link is not yet configured."
+          : "Kviz je spremljen lokalno. PayPal link još nije podešen."
+      );
     }
-
-    // zatvori modal
-    modalBackdrop.classList.add("hidden");
-    form.reset();
   });
 }
 
-/**
- * Podržava:
- *  - "lat,lng"
- *  - bilo koji Google Maps URL koji sadrži "@" ili "q=" s koordinatama
- */
-function parseCoordinatesFromInput(input) {
-  if (!input) return null;
-
-  // 1) direktno "lat,lng"
-  const directMatch = input
-    .trim()
-    .match(/^(-?\d+(\.\d+)?)\s*,\s*(-?\d+(\.\d+)?)$/);
-  if (directMatch) {
-    const lat = parseFloat(directMatch[1]);
-    const lng = parseFloat(directMatch[3]);
-    if (Number.isFinite(lat) && Number.isFinite(lng)) {
-      return { lat, lng };
-    }
-  }
-
-  // 2) Google Maps link – probaj '@lat,lng' ili 'q=lat,lng'
-  const atMatch = input.match(/@(-?\d+(\.\d+)?),(-?\d+(\.\d+)?)/);
-  if (atMatch) {
-    const lat = parseFloat(atMatch[1]);
-    const lng = parseFloat(atMatch[3]);
-    if (Number.isFinite(lat) && Number.isFinite(lng)) {
-      return { lat, lng };
-    }
-  }
-
-  const qMatch = input.match(/q=(-?\d+(\.\d+)?),(-?\d+(\.\d+)?)/);
-  if (qMatch) {
-    const lat = parseFloat(qMatch[1]);
-    const lng = parseFloat(qMatch[3]);
-    if (Number.isFinite(lat) && Number.isFinite(lng)) {
-      return { lat, lng };
-    }
-  }
-
-  return null;
-}
-
-/* ----------------- GUMBI U HEADERU ----------------- */
+/* ----------------- GUMB 'PRONAĐI KVIZ' & TEST ZNANJA ----------------- */
 
 function initFindQuizzesButton() {
   const btn = document.getElementById("find-quizzes-btn");
-  const mapSection = document.querySelector(".map-section");
+  const mapSection = document.getElementById("map-section");
   if (!btn || !mapSection) return;
 
   btn.addEventListener("click", () => {
@@ -1973,11 +1974,10 @@ function initTestKnowledgeButton() {
   if (!btn) return;
 
   btn.addEventListener("click", () => {
-    // Placeholder – kasnije možeš staviti link na posebnu kviz stranicu
     alert(
-      currentLang === "hr"
-        ? "Sekcija 'Testirajte svoje znanje' stiže uskoro. 🙂"
-        : "'Test your knowledge' section is coming soon. 🙂"
+      currentLang === "en"
+        ? "Mini quiz feature is coming soon!"
+        : "Mini kviz za testiranje znanja stiže uskoro!"
     );
   });
 }
