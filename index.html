@@ -803,7 +803,7 @@ body {
                     <div class="legend-row-group">
                         <div class="legend-row">
                             <span class="legend-dot legend-dot--green"></span>
-                            <span data-i18n="legendGreen">do 7 dana</span>
+                            <span data-i18n="legendGreen">danas - 7 dana</span>
                         </div>
                         <div class="legend-row">
                             <span class="legend-dot legend-dot--yellow"></span>
@@ -891,13 +891,13 @@ body {
                     <!-- Telefon za rezervacije (opcionalno) -->
                     <label>
                         <span data-i18n="fieldPhone">Broj za rezervacije (opcionalno)</span>
-                        <input type="text" id="quiz-phone" placeholder="+387 62 000 000">
+                        <input type="text" id="quiz-phone" placeholder="+387 62 xxx xxx">
                     </label>
 
                     <!-- Nagrade -->
                     <label>
                         <span data-i18n="fieldPrize1">Nagrada za 1. mjesto</span>
-                        <input type="text" id="prize-1" placeholder="Npr. 1. mjesto – voucher 50 KM">
+                        <input type="text" id="prize-1" placeholder="Npr. 1. mjesto – voucher 100 KM">
                     </label>
                     <label>
                         <span data-i18n="fieldPrize2">Nagrada za 2. mjesto</span>
@@ -909,7 +909,7 @@ body {
                     </label>
                     <label>
                         <span data-i18n="fieldPrizeExtra">Dodatne nagrade (opcionalno)</span>
-                        <textarea id="prize-extra" placeholder="Happy hour, bonus nagrade, tombola…"></textarea>
+                        <textarea id="prize-extra" placeholder="Npr. Tura pića za predzadnje mjesto"></textarea>
                     </label>
 
                     <!-- Koordinate -->
@@ -922,7 +922,7 @@ body {
                     </p>
 
                     <button type="submit" class="btn btn--accent btn--full" data-i18n="btnPay">
-                        Nastavi na plaćanje
+                        Nastavi za objavu
                     </button>
                 </form>
             </div>
@@ -930,10 +930,8 @@ body {
     </div>
 
     <footer class="site-footer">
-        <p>© <span id="year"></span> <span data-i18n="footerMain">Balkan Pub Quiz – svi pub kvizovi na jednom mjestu.</span></p>
-        <p class="footer-small" data-i18n="footerSub">
-            Dodavanje kviza: 10 KM po objavi (plaćanje online, kviz se prikazuje nakon uplate).
-        </p>
+        <p>© <span id="year"></span> <span data-i18n="footerMain">Balkanska Kviz Priča – svi pub kvizovi na jednom mjestu.</span></p>
+    
         <p class="footer-links">
             <a href="#faq" data-i18n="footerFaq">FAQ</a>
             <span>·</span>
@@ -1025,8 +1023,7 @@ const i18n = {
     fieldPrizeExtra: "Dodatne nagrade (opcionalno)",
     paymentInfo: "Objava kviza naplaćuje se 10 KM po objavi. Nakon klika na gumb prelaziš na plaćanje, a kviz se objavljuje nakon uspješne uplate.",
     btnPay: "Nastavi na plaćanje",
-    footerMain: "Balkan Pub Quiz – svi pub kvizovi na jednom mjestu.",
-    footerSub: "Dodavanje kviza: 10 KM po objavi (plaćanje online, kviz se prikazuje nakon uplate).",
+    footerMain: "Balkanska Kviz Priča– svi pub kvizovi na jednom mjestu.",
     footerFaq: "FAQ",
     footerContact: "Kontakt & podrška",
     statusLive: "LIVE",
@@ -1074,8 +1071,7 @@ const i18n = {
     fieldPrizeExtra: "Additional prizes (optional)",
     paymentInfo: "Publishing a quiz costs 10 BAM per listing. After clicking the button you proceed to payment and the quiz is published once the payment is confirmed.",
     btnPay: "Proceed to payment",
-    footerMain: "Balkan Pub Quiz – all pub quizzes in one place.",
-    footerSub: "Add a quiz: 10 BAM per listing (online payment, visible after payment is completed).",
+    footerMain: "Balkan Quizz Story – all pub quizzes in one place.",
     footerFaq: "FAQ",
     footerContact: "Contact & support",
     statusLive: "LIVE",
