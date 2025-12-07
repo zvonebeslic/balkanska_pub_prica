@@ -392,7 +392,7 @@ body {
     text-decoration: underline;
 }
 
-/* Nagrade i telefon */
+/* Nagrade */
 
 .quiz-prizes {
     margin-top: 0.3rem;
@@ -402,12 +402,6 @@ body {
 
 .quiz-prizes strong {
     color: #ffe6ad;
-}
-
-.quiz-phone {
-    margin-top: 0.25rem;
-    font-size: 0.74rem;
-    color: var(--text-muted);
 }
 
 /* Status badge */
@@ -473,12 +467,11 @@ body {
     padding: 0.35rem 0.9rem;
     display: inline-flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.45rem;
     font-size: 0.78rem;
     color: var(--text-muted);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-soft);
-    flex-wrap: wrap;
 }
 
 .map-hint-label {
@@ -486,18 +479,12 @@ body {
     font-weight: 500;
 }
 
-.legend-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    white-space: nowrap;
-}
-
 .legend-dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     display: inline-block;
+    border: 1px solid rgba(0,0,0,0.6);
 }
 
 .legend-dot--green {
@@ -514,10 +501,12 @@ body {
 
 .legend-dot--grey {
     background: #55585f;
+    border-color: #222;
 }
 
 .legend-dot--black {
     background: #050608;
+    border-color: #eee;
 }
 
 /* Buttons */
@@ -795,31 +784,11 @@ body {
             <section class="legend-section">
                 <div class="legend-inner">
                     <span class="map-hint-label" data-i18n="legendTitle">Legenda boja:</span>
-
-                    <span class="legend-item">
-                        <span class="legend-dot legend-dot--green"></span>
-                        <span data-i18n="legendGreen">do 7 dana</span>
-                    </span>
-
-                    <span class="legend-item">
-                        <span class="legend-dot legend-dot--yellow"></span>
-                        <span data-i18n="legendYellow">8–14 dana</span>
-                    </span>
-
-                    <span class="legend-item">
-                        <span class="legend-dot legend-dot--red"></span>
-                        <span data-i18n="legendRed">15–30 dana</span>
-                    </span>
-
-                    <span class="legend-item">
-                        <span class="legend-dot legend-dot--grey"></span>
-                        <span data-i18n="legendGrey">nedavno završeni (do 2 dana)</span>
-                    </span>
-
-                    <span class="legend-item">
-                        <span class="legend-dot legend-dot--black"></span>
-                        <span data-i18n="legendBlack">tvoja lokacija</span>
-                    </span>
+                    <span class="legend-dot legend-dot--green"></span> <span data-i18n="legendGreen">do 7 dana</span>
+                    <span class="legend-dot legend-dot--yellow"></span> <span data-i18n="legendYellow">8–14 dana</span>
+                    <span class="legend-dot legend-dot--red"></span> <span data-i18n="legendRed">15–30 dana</span>
+                    <span class="legend-dot legend-dot--grey"></span> <span data-i18n="legendGrey">nedavno završeni (do 2 dana)</span>
+                    <span class="legend-dot legend-dot--black"></span> <span data-i18n="legendBlack">tvoja lokacija</span>
                 </div>
             </section>
         </section>
@@ -871,12 +840,6 @@ body {
                                 Otvori Maps
                             </button>
                         </div>
-                    </label>
-
-                    <!-- Broj za rezervacije (opcionalno) -->
-                    <label>
-                        <span data-i18n="fieldPhone">Broj za rezervacije (opcionalno)</span>
-                        <input type="tel" id="quiz-phone" placeholder="+387 62 123 456">
                     </label>
 
                     <!-- Nagrade -->
@@ -933,22 +896,10 @@ body {
       crossorigin=""
     ></script>
 
-    <!-- Supabase JS (UMD) -->
-    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <!-- Supabase JS (v2) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
     <script>
-/* ----------------- SUPABASE INIT ----------------- */
-
-/**
- * PAZI:
- *  - SUPABASE_URL kopiraš iz Settings → API → Project URL
- *  - SUPABASE_KEY je tvoj publishable key (siguran za frontend)
- */
-const SUPABASE_URL = "https://hssfjguysejbosvhqlqu.supabase.co"; // <-- provjeri u svom projektu
-const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
-
-const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-
 /* ----------------- KONFIG ----------------- */
 
 const BALKAN_BOUNDS = L.latLngBounds(
@@ -956,10 +907,18 @@ const BALKAN_BOUNDS = L.latLngBounds(
   [47.5, 26.0]
 );
 
+const STORAGE_KEY = "bpq_user_quizzes_v1";
+
 // vremenski prozori
 const THREE_HOURS_MS = 3 * 60 * 60 * 1000;
 const UPCOMING_WINDOW_MS = 30 * 86400000;      // ±30 dana
 const FINISHED_VISIBLE_MS = 2 * 86400000;      // završeni vidljivi još 2 dana
+
+/* --- SUPABASE KONFIG --- */
+
+const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
+const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* --- jednostavna i18n mapa --- */
 
@@ -998,7 +957,6 @@ const i18n = {
     fieldType: "Vrsta kviza",
     fieldDateTime: "Datum i vrijeme",
     fieldMapsLink: "Google Maps link lokala",
-    fieldPhone: "Broj za rezervacije (opcionalno)",
     btnOpenMaps: "Otvori Maps",
     fieldPrize1: "Nagrada za 1. mjesto",
     fieldPrize2: "Nagrada za 2. mjesto",
@@ -1012,8 +970,7 @@ const i18n = {
     footerContact: "Kontakt & podrška",
     statusLive: "LIVE",
     statusFinished: "Završeno",
-    prizesLabel: "Nagrade",
-    phoneLabel: "Broj za rezervacije"
+    prizesLabel: "Nagrade"
   },
   en: {
     logoMain: "Balkan Pub Quiz Story",
@@ -1047,7 +1004,6 @@ const i18n = {
     fieldType: "Quiz type",
     fieldDateTime: "Date and time",
     fieldMapsLink: "Google Maps link",
-    fieldPhone: "Reservation phone (optional)",
     btnOpenMaps: "Open Maps",
     fieldPrize1: "Prize for 1st place",
     fieldPrize2: "Prize for 2nd place",
@@ -1061,8 +1017,7 @@ const i18n = {
     footerContact: "Contact & support",
     statusLive: "LIVE",
     statusFinished: "Finished",
-    prizesLabel: "Prizes",
-    phoneLabel: "Reservation phone"
+    prizesLabel: "Prizes"
   }
 };
 
@@ -1076,7 +1031,7 @@ function applyTranslations() {
   });
 }
 
-/* ----------------- DEMO KVIZOVI (fallback) ----------------- */
+/* ----------------- DEMO KVIZOVI ----------------- */
 
 function offsetDays(days, hours, minutes) {
   const now = new Date();
@@ -1103,8 +1058,7 @@ const demoQuizzes = [
     prize1: "1. mjesto – pića & poklon paket",
     prize2: "2. mjesto – pića za ekipu",
     prize3: "",
-    prizeExtra: "",
-    phone: ""
+    prizeExtra: ""
   },
   {
     id: 2,
@@ -1113,8 +1067,7 @@ const demoQuizzes = [
     datetime: offsetDays(8, 21, 0),
     venue: "Stari Grad Pub, Mostar",
     lat: 43.3438,
-    lng: 17.8078,
-    phone: ""
+    lng: 17.8078
   },
   {
     id: 3,
@@ -1123,8 +1076,7 @@ const demoQuizzes = [
     datetime: offsetDays(12, 19, 30),
     venue: "Sports Bar, Zagreb",
     lat: 45.8150,
-    lng: 15.9819,
-    phone: ""
+    lng: 15.9819
   },
   {
     id: 4,
@@ -1133,8 +1085,7 @@ const demoQuizzes = [
     datetime: offsetDays(20, 20, 30),
     venue: "Pub Lavirint, Beograd",
     lat: 44.7866,
-    lng: 20.4489,
-    phone: ""
+    lng: 20.4489
   },
   {
     id: 5,
@@ -1143,8 +1094,7 @@ const demoQuizzes = [
     datetime: offsetDays(5, 18, 0),
     venue: "Planinski bar, Podgorica",
     lat: 42.4304,
-    lng: 19.2594,
-    phone: ""
+    lng: 19.2594
   }
 ];
 
@@ -1160,7 +1110,7 @@ let addQuizMarker = null;
 document.addEventListener("DOMContentLoaded", async () => {
   initYear();
   initLanguageToggle();
-  await loadInitialQuizzes();  // demo + Supabase
+  await loadInitialQuizzes();  // učitava demo + Supabase + localStorage
   initMap();
   initFilters();
   initLocationSearch();
@@ -1196,75 +1146,112 @@ function initLanguageToggle() {
   });
 }
 
+/* ----------------- PERSISTENCIJA LOCALSTORAGE ----------------- */
+
+function loadUserQuizzesFromLocal() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (e) {
+    console.error("Greška pri čitanju localStorage:", e);
+    return [];
+  }
+}
+
+function saveUserQuizToLocal(quiz) {
+  try {
+    const current = loadUserQuizzesFromLocal();
+    current.push(quiz);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+  } catch (e) {
+    console.error("Greška pri spremanju u localStorage:", e);
+  }
+}
+
 /* ----------------- SUPABASE BACKEND ----------------- */
 
 /**
- * Učitavanje kvizova iz Supabase tablice "quizzes".
- * Pretvaramo prize_extra -> prizeExtra, phone ostaje phone.
+ * Čitanje kvizova iz Supabase tablice "Quizzes".
+ * Očekuje stupce:
+ *  id, title, type, datetime, venue, lat, lng, prize1, prize2, prize3, prizeExtra
  */
-async function loadQuizzesFromBackend() {
-  let backendQuizzes = [];
-
+async function loadQuizzesFromSupabase() {
+  if (!supabaseClient) return [];
   try {
     const { data, error } = await supabaseClient
-      .from("quizzes")
+      .from("Quizzes")
       .select("*")
       .order("datetime", { ascending: true });
 
-    if (error) throw error;
+    if (error) {
+      console.error("Supabase read error:", error);
+      return [];
+    }
 
-    backendQuizzes = (data || []).map((row) => ({
+    if (!Array.isArray(data)) return [];
+
+    return data.map((row) => ({
       id: row.id,
       title: row.title,
       type: row.type,
       datetime: row.datetime,
       venue: row.venue,
-      lat: row.lat,
-      lng: row.lng,
+      lat: typeof row.lat === "number" ? row.lat : parseFloat(row.lat),
+      lng: typeof row.lng === "number" ? row.lng : parseFloat(row.lng),
       prize1: row.prize1 || "",
       prize2: row.prize2 || "",
       prize3: row.prize3 || "",
-      prizeExtra: row.prize_extra || "",
-      phone: row.phone || ""
+      prizeExtra: row.prizeExtra || ""
     }));
   } catch (e) {
-    console.error("Greška pri učitavanju kvizova iz Supabase:", e);
+    console.error("Supabase read exception:", e);
+    return [];
   }
-
-  return backendQuizzes;
 }
 
 /**
- * Spremanje novog kviza u Supabase.
+ * Spremanje u Supabase + localStorage
  */
 async function saveQuizToBackend(quiz) {
-  try {
-    const { error } = await supabaseClient.from("quizzes").insert({
-      title: quiz.title,
-      type: quiz.type,
-      datetime: quiz.datetime,
-      venue: quiz.venue,
-      lat: quiz.lat,
-      lng: quiz.lng,
-      prize1: quiz.prize1 || null,
-      prize2: quiz.prize2 || null,
-      prize3: quiz.prize3 || null,
-      prize_extra: quiz.prizeExtra || null,
-      phone: quiz.phone || null
-    });
+  saveUserQuizToLocal(quiz);
 
-    if (error) throw error;
+  if (!supabaseClient) return;
+
+  try {
+    const { error } = await supabaseClient.from("Quizzes").insert([
+      {
+        id: quiz.id,           // koristiš svoj id (Date.now)
+        title: quiz.title,
+        type: quiz.type,
+        datetime: quiz.datetime,
+        venue: quiz.venue,
+        lat: quiz.lat,
+        lng: quiz.lng,
+        prize1: quiz.prize1,
+        prize2: quiz.prize2,
+        prize3: quiz.prize3,
+        prizeExtra: quiz.prizeExtra
+      }
+    ]);
+
+    if (error) {
+      console.error("Supabase insert error:", error);
+    }
   } catch (e) {
-    console.error("Greška pri spremanju kviza u Supabase:", e);
+    console.error("Supabase insert exception:", e);
   }
 }
 
 /* ----------------- INIT KVIZOVI ----------------- */
 
 async function loadInitialQuizzes() {
-  const backendQuizzes = await loadQuizzesFromBackend();
-  // demo kvizovi + oni iz baze
-  allQuizzes = [...demoQuizzes, ...backendQuizzes];
+  const userLocal = loadUserQuizzesFromLocal();
+  const supabaseQuizzes = await loadQuizzesFromSupabase();
+
+  // demo + Supabase + localStorage
+  allQuizzes = [...demoQuizzes, ...supabaseQuizzes, ...userLocal];
 }
 
 /* ----------------- MAPA ----------------- */
@@ -1307,12 +1294,7 @@ function getActiveTypeFilters() {
 }
 
 /* ----------------- STATUS KVIZA ----------------- */
-/**
- * upcoming  – još nije počeo
- * live      – u tijeku (3h trajanja)
- * finished  – prošao, ali ne stariji od 2 dana
- * archive   – stariji od 2 dana (držimo ga u JSON-u, ne prikazujemo na mapi)
- */
+
 function getQuizStatus(datetimeStr) {
   const now = new Date();
   const start = new Date(datetimeStr);
@@ -1422,13 +1404,6 @@ function refreshMarkers() {
       if (quiz.prizeExtra) prizesHtml += `<span style="font-size:0.75rem;">${quiz.prizeExtra}</span>`;
     }
 
-    let phoneHtml = "";
-    if (quiz.phone) {
-      phoneHtml =
-        `<br><strong style="font-size:0.75rem;">${dict.phoneLabel}:</strong><br>` +
-        `<span style="font-size:0.75rem;">${quiz.phone}</span>`;
-    }
-
     marker.bindPopup(
       `<strong>${quiz.title}</strong><br>` +
       `${quiz.venue}<br>` +
@@ -1436,8 +1411,7 @@ function refreshMarkers() {
       `<span style="font-size: 0.8rem;">${formattedDate}</span><br>` +
       `<span style="font-size: 0.75rem; opacity: 0.8;">${typeLabel}</span><br>` +
       `<a href="${mapsUrl}" target="_blank" rel="noopener" style="font-size:0.75rem;color:#f5c15b;text-decoration:none;">Google Maps</a>` +
-      prizesHtml +
-      phoneHtml
+      prizesHtml
     );
 
     markersLayer.addLayer(marker);
@@ -1778,13 +1752,6 @@ function renderQuizzes(filteredList = null) {
       li.appendChild(mapsLink);
     }
 
-    if (quiz.phone) {
-      const phoneEl = document.createElement("div");
-      phoneEl.className = "quiz-phone";
-      phoneEl.textContent = `${dict.phoneLabel}: ${quiz.phone}`;
-      li.appendChild(phoneEl);
-    }
-
     if (quiz.prize1 || quiz.prize2 || quiz.prize3 || quiz.prizeExtra) {
       const prizesEl = document.createElement("div");
       prizesEl.className = "quiz-prizes";
@@ -1929,7 +1896,6 @@ function initAddQuizModal() {
     const type = document.getElementById("quiz-type").value;
     const datetime = document.getElementById("quiz-datetime").value;
     const venue = document.getElementById("quiz-venue").value.trim();
-    const phone = document.getElementById("quiz-phone").value.trim();
 
     let latStr = document.getElementById("quiz-lat").value.trim();
     let lngStr = document.getElementById("quiz-lng").value.trim();
@@ -1993,8 +1959,7 @@ function initAddQuizModal() {
       prize1,
       prize2,
       prize3,
-      prizeExtra,
-      phone
+      prizeExtra
     };
 
     startPaymentFlow(newQuiz, async () => {
