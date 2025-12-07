@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Balkan Pub Quiz Map | Balkanska Kviz Priča</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO osnovno -->
+    <meta name="description" content="Mapa pub kvizova po cijelom Balkanu – pronađi kviz u blizini, po vrsti kviza i datumu. Dodaj svoj pub kviz i prikaži ga na karti.">
+    <meta name="keywords" content="pub quiz, pub kviz, Balkan, mapa, kvizovi, quiz map, bar quiz, Sarajevo, Zagreb, Beograd">
+    <link rel="canonical" href="https://zvonebeslic.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Balkan Pub Quiz Map">
+    <meta property="og:description" content="Find pub quizzes across the Balkans – search by quiz type and distance, or add your own quiz to the map.">
+    <meta property="og:url" content="https://zvonebeslic.github.io/">
+    <meta property="og:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Balkan Pub Quiz Map">
+    <meta name="twitter:description" content="Find and add pub quizzes across the Balkans.">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <style>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-main: #120b07;
+    --bg-wood: #3b2414;
+    --bg-card: rgba(20, 10, 5, 0.9);
+    --accent: #f5c15b;
+    --accent-soft: #c07a2b;
+    --accent-red: #ff6b6b;
+    --accent-green: #7fd95b;
+    --status-live: #48e27a;
+    --status-finished: #999999;
+    --text-main: #f9efe0;
+    --text-muted: #c7b7a3;
+    --border-soft: rgba(250, 245, 230, 0.15);
+    --shadow-soft: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(255, 250, 220, 0.08), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(255, 200, 150, 0.08), transparent 60%),
+        url("https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover fixed,
+        var(--bg-main);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1.2rem;
+    background: linear-gradient(135deg, #1d1209, #381f12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 20%, #ffe8a3, #e59f33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 0 12px rgba(245, 193, 91, 0.7),
+        0 0 30px rgba(245, 193, 91, 0.2);
+    overflow: hidden;
+}
+
+/* logo slika */
+.logo-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.logo-sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.top-nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-btn {
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    color: var(--text-main);
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: background 0.15s ease, transform 0.1s ease, border-color 0.15s ease;
+}
+
+.nav-btn--primary {
+    background: radial-gradient(circle at 30% 20%, #ffe8a3, var(--accent-soft));
+    color: #2b1608;
+    border-color: rgba(255, 220, 160, 0.7);
+    font-weight: 600;
+}
+
+.nav-btn--secondary {
+    border-color: rgba(245, 193, 91, 0.6);
+}
+
+.nav-btn:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.nav-btn--primary:hover {
+    background: radial-gradient(circle at 30% 20%, #fff0c4, #e19122);
+}
+
+.nav-btn--secondary:hover {
+    background: rgba(245, 193, 91, 0.08);
+}
+
+/* language toggle */
+
+.lang-toggle {
+    display: inline-flex;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.2);
+    overflow: hidden;
+    font-size: 0.75rem;
+}
+
+.lang-btn {
+    padding: 0.25rem 0.55rem;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.lang-btn.active {
+    background: rgba(0,0,0,0.6);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Layout */
+
+.layout {
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+    gap: 1.2rem;
+    padding: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: flex-start;
+}
+
+/* Sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.card {
+    background: var(--bg-card);
+    border-radius: 18px;
+    padding: 0.9rem 0.9rem 0.8rem;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+    backdrop-filter: blur(10px);
+}
+
+.card h2 {
+    font-size: 0.95rem;
+    margin-bottom: 0.45rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.small-text {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.small-text--warning {
+    color: #f9ce8a;
+    margin-top: 0.4rem;
+}
+
+.radius-wrapper {
+    display: none;
+    margin-top: 0.7rem;
+}
+
+.radius-wrapper.visible {
+    display: block;
+}
+
+.radius-label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+#radius-select {
+    width: 100%;
+    padding: 0.35rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--text-main);
+    font-size: 0.8rem;
+}
+
+.status-text {
+    margin-top: 0.45rem;
+    font-size: 0.75rem;
+    color: var(--accent);
+}
+
+.status-text--muted {
+    color: var(--text-muted);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Filters */
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+    accent-color: var(--accent-soft);
+}
+
+/* Quiz list */
+
+.quiz-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    max-height: 320px;
+    overflow: auto;
+    padding-right: 0.2rem;
+}
+
+.quiz-item {
+    padding: 0.45rem 0.5rem;
+    border-radius: 12px;
+    background: rgba(10, 5, 2, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.1rem;
+    font-size: 0.8rem;
+}
+
+.quiz-item-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.quiz-title {
+    font-weight: 600;
+}
+
+.quiz-venue,
+.quiz-phone {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.quiz-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-top: 0.2rem;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+.quiz-meta-left {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.quiz-tag {
+    padding: 0.08rem 0.35rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.quiz-date {
+    font-size: 0.76rem;
+}
+
+.quiz-distance {
+    font-size: 0.76rem;
+}
+
+.quiz-maps-link {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.quiz-maps-link:hover {
+    text-decoration: underline;
+}
+
+/* Nagrade */
+
+.quiz-prizes {
+    margin-top: 0.3rem;
+    font-size: 0.74rem;
+    color: var(--text-muted);
+}
+
+.quiz-prizes strong {
+    color: #ffe6ad;
+}
+
+/* Status badge */
+
+.quiz-status {
+    padding: 0.08rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.quiz-status--live {
+    background: rgba(72, 226, 122, 0.2);
+    border-color: rgba(72, 226, 122, 0.7);
+    color: var(--status-live);
+    font-weight: 600;
+}
+
+.quiz-status--finished {
+    background: rgba(150, 150, 150, 0.18);
+    border-color: rgba(180, 180, 180, 0.6);
+    color: var(--status-finished);
+}
+
+/* Mapa + legenda */
+
+.map-section {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--border-soft);
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+}
+
+.leaflet-container {
+    background: #1a1815;
+}
+
+/* MAP PINS (pribadače) */
+
+.map-pin {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background: #ff6b6b;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    border: 2px solid #1a1815;
+}
+
+.map-pin::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* varijante boja za pinove */
+
+.map-pin--green {
+    background: var(--accent-green);
+}
+
+.map-pin--yellow {
+    background: #ffd45b;
+}
+
+.map-pin--red {
+    background: var(--accent-red);
+}
+
+.map-pin--grey {
+    background: #55585f;
+    border-color: #222;
+}
+
+.map-pin--black {
+    background: #050608;
+    border-color: #ffffff;
+}
+
+/* legenda – fiksno odmah ispod karte (dio iste kartice) */
+
+.legend-section {
+    width: 100%;
+    padding: 0.4rem 0.8rem 0.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.legend-inner {
+    background: rgba(10, 5, 2, 0.95);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.45rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-soft);
+    gap: 0.3rem;
+}
+
+.map-hint-label {
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+}
+
+.legend-row-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+}
+
+.legend-row {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.6);
+}
+
+.legend-dot--green {
+    background: var(--accent-green);
+}
+
+.legend-dot--yellow {
+    background: #ffd45b;
+}
+
+.legend-dot--red {
+    background: var(--accent-red);
+}
+
+.legend-dot--grey {
+    background: #55585f;
+    border-color: #222;
+}
+
+.legend-dot--black {
+    background: #050608;
+    border-color: #eee;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--text-main);
+    transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.btn--accent {
+    background: radial-gradient(circle at 20% 0, #ffe8a3, var(--accent-soft));
+    border-color: rgba(255, 222, 180, 0.9);
+    color: #2b1608;
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(245, 193, 91, 0.6);
+}
+
+.btn--accent:hover {
+    background: radial-gradient(circle at 20% 0, #fff2c6, #e18b1d);
+    transform: translateY(-1px);
+    box-shadow: 0 0 18px rgba(245, 193, 91, 0.8);
+}
+
+.btn--full {
+    width: 100%;
+}
+
+/* Modal */
+
+.modal-backdrop {
+    position: static;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0.8rem auto 0.2rem;
+    padding: 0 1.2rem;
+}
+
+.modal {
+    background: radial-gradient(circle at top, rgba(255, 240, 210, 0.08), rgba(0, 0, 0, 0.96));
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0.8rem 0.9rem 0.9rem;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: var(--shadow-soft);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.modal-header h2 {
+    font-size: 0.95rem;
+}
+
+.modal-close {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.modal-body {
+    font-size: 0.8rem;
+}
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-top: 0.4rem;
+}
+
+.modal-body label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.modal-body input,
+.modal-body select,
+.modal-body textarea {
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.35rem 0.6rem;
+    color: var(--text-main);
+    font-size: 0.8rem;
+}
+
+.modal-body textarea {
+    border-radius: 14px;
+    resize: vertical;
+    min-height: 48px;
+}
+
+.modal-body input::placeholder,
+.modal-body textarea::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* Footer */
+
+.site-footer {
+    text-align: center;
+    padding: 0.9rem 0.9rem 1rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.85));
+    margin-top: 0.4rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+}
+
+.footer-links a {
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.25rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(245, 193, 91, 0.45);
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.footer-links a:hover {
+    background: radial-gradient(circle at 20% 0, #ffe8a3, var(--accent-soft));
+    color: #2b1608;
+    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(245, 193, 91, 0.5);
+}
+
+.footer-icons {
+    margin-top: 0.55rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.footer-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.65);
+    color: var(--accent);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.footer-icon:hover {
+    background: radial-gradient(circle at 20% 0, #ffe8a3, var(--accent-soft));
+    color: #2b1608;
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(245, 193, 91, 0.6);
+}
+
+.footer-copy {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 0.7rem;
+        gap: 0.7rem;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .map-section {
+        order: 1;
+    }
+
+    #map {
+        min-height: 340px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.45rem;
+        padding: 0.7rem 0.7rem;
+    }
+
+    .top-nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 0.35rem;
+    }
+
+    .modal-backdrop {
+        margin: 0.6rem auto 0.2rem;
+        padding: 0 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 0.7rem 0.7rem 0.6rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-wrap">
+            <div class="logo-icon">
+                <!-- ubaci sliku u /images/pub_kviz_logo.jpg -->
+                <img src="images/pub_kviz_logo.jpg" alt="Balkan Pub Quiz logo">
+            </div>
+            <div class="logo-text">
+                <span class="logo-main" data-i18n="logoMain">Balkanska Kviz Priča</span>
+                <span class="logo-sub" data-i18n="logoSub">Mapa kvizova po Balkanu</span>
+            </div>
+        </div>
+        <nav class="top-nav">
+            <button class="nav-btn nav-btn--primary" id="find-quizzes-btn" data-i18n="btnFind">Pronađi kviz</button>
+            <button class="nav-btn" id="add-quiz-open" data-i18n="btnAdd">Dodaj kviz</button>
+            <button class="nav-btn nav-btn--secondary" id="test-knowledge-btn" data-i18n="btnTest">Testirajte svoje znanje</button>
+
+            <div class="lang-toggle" aria-label="Language">
+                <button class="lang-btn active" data-lang="hr">HR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <aside class="sidebar">
+            <section class="card">
+                <h2 data-i18n="cardFindTitle">Pronađi kviz u blizini</h2>
+                <p class="small-text" data-i18n="cardFindText">
+                    Uključi lokaciju da ti pokažemo najbliže kvizove u idućih 30 dana.
+                </p>
+                <button id="use-location-btn" class="btn btn--accent" data-i18n="btnUseLocation">
+                    Uključi moju lokaciju
+                </button>
+
+                <!-- Radijus se pokazuje tek nakon uspješne lokacije, a zatim ostaje vidljiv -->
+                <div id="radius-wrapper" class="radius-wrapper">
+                    <label class="radius-label" for="radius-select" data-i18n="radiusLabel">Radijus pretrage:</label>
+                    <select id="radius-select">
+                        <option value="all" data-i18n="radiusAll" selected>Prikaži sve</option>
+                        <option value="10">10 km</option>
+                        <option value="25">25 km</option>
+                        <option value="50">50 km</option>
+                        <option value="100">100 km</option>
+                    </select>
+                </div>
+
+                <p id="location-status" class="status-text"></p>
+            </section>
+
+            <section class="card">
+                <h2 data-i18n="cardTypeTitle">Vrsta kviza</h2>
+                <div class="filter-group">
+                    <label><input type="checkbox" class="quiz-type-filter" value="opce" checked> <span data-i18n="typeGeneral">Kviz općeg znanja</span></label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="kafanski" checked> <span data-i18n="typeKafanski">Kafanski kviz</span></label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="nogometni" checked> <span data-i18n="typeFootball">Nogometni kviz</span></label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="sportski" checked> <span data-i18n="typeSports">Sportski kviz</span></label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="beskorisno" checked> <span data-i18n="typeUseless">Kviz beskorisnog znanja</span></label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="ostalo" checked> <span data-i18n="typeOther">Ostalo</span></label>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 data-i18n="cardListTitle">Kvizovi (±30 dana)</h2>
+                <ul id="quiz-list" class="quiz-list"></ul>
+                <p id="quiz-empty-message" class="status-text status-text--muted hidden" data-i18n="noQuizzes">
+                    Trenutno nema kvizova za odabrane filtere.
+                </p>
+            </section>
+        </aside>
+
+        <section class="map-section" id="map-section">
+            <div id="map"></div>
+
+            <!-- LEGENDA – odmah ispod karte -->
+            <section class="legend-section">
+                <div class="legend-inner">
+                    <span class="map-hint-label" data-i18n="legendTitle">Legenda boja:</span>
+                    <div class="legend-row-group">
+                        <div class="legend-row">
+                            <span class="legend-dot legend-dot--green"></span>
+                            <span data-i18n="legendGreen">danas - 7 dana</span>
+                        </div>
+                        <div class="legend-row">
+                            <span class="legend-dot legend-dot--yellow"></span>
+                            <span data-i18n="legendYellow">8–14 dana</span>
+                        </div>
+                        <div class="legend-row">
+                            <span class="legend-dot legend-dot--red"></span>
+                            <span data-i18n="legendRed">15–30 dana</span>
+                        </div>
+                        <div class="legend-row">
+                            <span class="legend-dot legend-dot--grey"></span>
+                            <span data-i18n="legendGrey">nedavno završeni (do 2 dana)</span>
+                        </div>
+                        <div class="legend-row">
+                            <span class="legend-dot legend-dot--black"></span>
+                            <span data-i18n="legendBlack">tvoja lokacija</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Modal za dodavanje kviza -->
+    <div class="modal-backdrop hidden" id="add-quiz-modal">
+        <div class="modal">
+            <header class="modal-header">
+                <h2 data-i18n="modalTitle">Dodaj novi kviz</h2>
+                <button class="modal-close" id="add-quiz-close">&times;</button>
+            </header>
+            <div class="modal-body">
+                <p class="small-text" id="quiz-location-hint" data-i18n="locationHint">
+                    1) Klikni na "Otvori Maps". 2) Pronađi lokal i kopiraj Google Maps link (s koordinatama). 3) Zalijepi link u polje – marker će se pojaviti na karti.
+                </p>
+                <form id="add-quiz-form">
+                    <label>
+                        <span data-i18n="fieldTitle">Naziv kviza</span>
+                        <input type="text" id="quiz-title" required placeholder="Npr. Pub Quiz – Balkan Edition">
+                    </label>
+
+                    <!-- Naziv lokala / bara -->
+                    <label>
+                      <span data-i18n="fieldVenueName">Naziv lokala / bara</span>
+                      <input
+                        type="text"
+                        id="quiz-venue-name"
+                        required
+                        placeholder="Npr. Craft Beer Pub, Sarajevo"
+                      >
+                    </label>
+
+                    <label>
+                        <span data-i18n="fieldType">Vrsta kviza</span>
+                        <select id="quiz-type" required>
+                            <option value="opce" data-i18n="typeGeneral">Kviz općeg znanja</option>
+                            <option value="kafanski" data-i18n="typeKafanski">Kafanski kviz</option>
+                            <option value="nogometni" data-i18n="typeFootball">Nogometni kviz</option>
+                            <option value="sportski" data-i18n="typeSports">Sportski kviz</option>
+                            <option value="beskorisno" data-i18n="typeUseless">Kviz beskorisnog znanja</option>
+                            <option value="ostalo" data-i18n="typeOther">Ostalo</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span data-i18n="fieldDateTime">Datum i vrijeme</span>
+                        <input type="datetime-local" id="quiz-datetime" required>
+                    </label>
+
+                    <!-- Google Maps link ili koordinate -->
+                    <label>
+                        <span data-i18n="fieldMapsLink">Google Maps link lokala</span>
+                        <div style="display:flex; gap:0.4rem; align-items:center;">
+                            <input
+                                type="text"
+                                id="quiz-maps-link"
+                                required
+                                placeholder="Npr. 45.815769,15.976665"
+                                style="flex:1;"
+                            >
+                            <button type="button" id="open-maps-btn" class="btn" style="white-space:nowrap;" data-i18n="btnOpenMaps">
+                                Otvori Maps
+                            </button>
+                        </div>
+                    </label>
+
+                    <!-- Telefon za rezervacije (opcionalno) -->
+                    <label>
+                        <span data-i18n="fieldPhone">Broj za rezervacije (opcionalno)</span>
+                        <input type="text" id="quiz-phone" placeholder="+387 62 xxx xxx">
+                    </label>
+
+                    <!-- Nagrade -->
+                    <label>
+                        <span data-i18n="fieldPrize1">Nagrada za 1. mjesto</span>
+                        <input type="text" id="prize-1" placeholder="Npr. 1. mjesto – voucher 100 KM">
+                    </label>
+                    <label>
+                        <span data-i18n="fieldPrize2">Nagrada za 2. mjesto</span>
+                        <input type="text" id="prize-2" placeholder="Npr. 2. mjesto – piće za ekipu">
+                    </label>
+                    <label>
+                        <span data-i18n="fieldPrize3">Nagrada za 3. mjesto</span>
+                        <input type="text" id="prize-3" placeholder="Npr. 3. mjesto – simbolične nagrade">
+                    </label>
+                    <label>
+                        <span data-i18n="fieldPrizeExtra">Dodatne nagrade (opcionalno)</span>
+                        <textarea id="prize-extra" placeholder="Npr. Tura pića za predzadnje mjesto"></textarea>
+                    </label>
+
+                    <!-- Koordinate -->
+                    <input type="hidden" id="quiz-lat">
+                    <input type="hidden" id="quiz-lng">
+
+                    <p class="small-text small-text--warning" data-i18n="paymentInfo">
+                        Objava kviza naplaćuje se 6EUR po objavi. Nakon klika na gumb prelaziš na plaćanje,
+                        a kviz se objavljuje nakon uspješne uplate.
+                    </p>
+
+                    <button type="submit" class="btn btn--accent btn--full" data-i18n="btnPay">
+                        Nastavi na plaćanje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <!-- 1) Gumbi na vrhu -->
+        <div class="footer-links">
+            <a href="podrska.html" data-i18n="footerSupport">Podrška</a>
+            <a href="legalno.html" data-i18n="footerLegal">Legalno</a>
+        </div>
+
+        <!-- 2) Ikone IG + email -->
+        <div class="footer-icons">
+            <!-- zamijeni link stvarnim IG profilom -->
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
+                <span>IG</span>
+            </a>
+            <!-- zamijeni email adresu svojom -->
+            <a href="mailto:info@balkanskakvizprica.com" class="footer-icon" aria-label="Email">
+                ✉
+            </a>
+        </div>
+
+        <!-- 3) Copyright -->
+        <p class="footer-copy">
+            © <span id="year"></span>
+            <span data-i18n="footerMain">Balkanska Kviz Priča – Svi kvizovi na jednom mjestu.</span>
+        </p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <!-- Supabase JS (v2) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+/* ----------------- KONFIG ----------------- */
+
+const BALKAN_BOUNDS = L.latLngBounds(
+  [39.0, 13.0],
+  [47.5, 26.0]
+);
+
+const STORAGE_KEY = "bpq_user_quizzes_v1";
+const LOCATION_STORAGE_KEY = "bpq_user_location_v1";
+
+// vremenski prozori
+const THREE_HOURS_MS = 3 * 60 * 60 * 1000;
+const UPCOMING_WINDOW_MS = 30 * 86400000;      // ±30 dana
+const FINISHED_VISIBLE_MS = 2 * 86400000;      // završeni vidljivi još 2 dana
+
+/* --- SUPABASE KONFIG --- */
+
+const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
+const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+/* --- PAYPAL LINK --- */
+/**
+ * OVDJE zalijepiš svoj stvarni PayPal.Me ili checkout link za uplatu.
+ */
+const PAYPAL_CHECKOUT_URL = "PUT_YOUR_PAYPAL_LINK_HERE";
+
+/* --- jednostavna i18n mapa --- */
+
+let currentLang = "hr";
+
+const i18n = {
+  hr: {
+    logoMain: "Balkanska Kviz Priča",
+    logoSub: "Mapa kvizova po Balkanu",
+    btnFind: "Pronađi kviz",
+    btnAdd: "Dodaj kviz",
+    btnTest: "Testirajte svoje znanje",
+    cardFindTitle: "Pronađi kviz u blizini",
+    cardFindText: "Uključi lokaciju da ti pokažemo najbliže kvizove u idućih 30 dana.",
+    btnUseLocation: "Uključi moju lokaciju",
+    radiusLabel: "Radijus pretrage:",
+    radiusAll: "Prikaži sve",
+    cardTypeTitle: "Vrsta kviza",
+    typeGeneral: "Kviz općeg znanja",
+    typeKafanski: "Kafanski kviz",
+    typeFootball: "Nogometni kviz",
+    typeSports: "Sportski kviz",
+    typeUseless: "Kviz beskorisnog znanja",
+    typeOther: "Ostalo",
+    cardListTitle: "Kvizovi (±30 dana)",
+    noQuizzes: "Trenutno nema kvizova za odabrane filtere.",
+    legendTitle: "Legenda boja:",
+    legendGreen: "danas - 7 dana",
+    legendYellow: "8–14 dana",
+    legendRed: "15–30 dana",
+    legendGrey: "nedavno završeni (do 2 dana)",
+    legendBlack: "tvoja lokacija",
+    modalTitle: "Dodaj novi kviz",
+    locationHint: "1) Klikni na \"Otvori Maps\". 2) Pronađi lokal i kopiraj Google Maps link (s koordinatama). 3) Zalijepi link u polje – marker će se pojaviti na karti.",
+    fieldTitle: "Naziv kviza",
+    fieldVenueName: "Naziv lokala / bara",
+    fieldType: "Vrsta kviza",
+    fieldDateTime: "Datum i vrijeme",
+    fieldMapsLink: "Google Maps link lokala",
+    fieldPhone: "Broj za rezervacije (opcionalno)",
+    btnOpenMaps: "Otvori Maps",
+    fieldPrize1: "Nagrada za 1. mjesto",
+    fieldPrize2: "Nagrada za 2. mjesto",
+    fieldPrize3: "Nagrada za 3. mjesto",
+    fieldPrizeExtra: "Dodatne nagrade (opcionalno)",
+    paymentInfo: "Objava kviza naplaćuje se 6EUR po objavi. Nakon klika na gumb prelaziš na plaćanje, a kviz se objavljuje nakon uspješne uplate.",
+    btnPay: "Nastavi na plaćanje",
+    footerMain: "Balkanska Kviz Priča – Svi kvizovi na jednom mjestu.",
+    footerSupport: "Podrška",
+    footerLegal: "Legalno",
+    statusLive: "LIVE",
+    statusFinished: "Završeno",
+    prizesLabel: "Nagrade",
+    locEnabled: "Lokacija uključena – filtriramo kvizove po tvojoj poziciji.",
+    locError: "Lokaciju nije moguće dobiti. Provjeri dozvole u pregledniku.",
+    locRequesting: "Tražimo tvoju lokaciju..."
+  },
+  en: {
+    logoMain: "Balkan Pub Quiz Story",
+    logoSub: "Quiz map across the Balkans",
+    btnFind: "Find a quiz",
+    btnAdd: "Add quiz",
+    btnTest: "Test your knowledge",
+    cardFindTitle: "Find a quiz nearby",
+    cardFindText: "Enable location to see the closest quizzes in the next 30 days.",
+    btnUseLocation: "Use my location",
+    radiusLabel: "Search radius:",
+    radiusAll: "Show all",
+    cardTypeTitle: "Quiz type",
+    typeGeneral: "General knowledge quiz",
+    typeKafanski: "Pub / bar quiz",
+    typeFootball: "Football quiz",
+    typeSports: "Sports quiz",
+    typeUseless: "Useless knowledge quiz",
+    typeOther: "Other",
+    cardListTitle: "Quizzes (±30 days)",
+    noQuizzes: "There are no quizzes for the selected filters.",
+    legendTitle: "Legend:",
+    legendGreen: "within 7 days",
+    legendYellow: "8–14 days",
+    legendRed: "15–30 days",
+    legendGrey: "recently finished (up to 2 days)",
+    legendBlack: "your location",
+    modalTitle: "Add a new quiz",
+    locationHint: "1) Click \"Open Maps\". 2) Find the venue and copy the Google Maps URL (with coordinates). 3) Paste the link here – the marker will appear on the map.",
+    fieldTitle: "Quiz title",
+    fieldVenueName: "Venue name (bar/pub)",
+    fieldType: "Quiz type",
+    fieldDateTime: "Date and time",
+    fieldMapsLink: "Google Maps link",
+    fieldPhone: "Reservation phone (optional)",
+    btnOpenMaps: "Open Maps",
+    fieldPrize1: "Prize for 1st place",
+    fieldPrize2: "Prize for 2nd place",
+    fieldPrize3: "Prize for 3rd place",
+    fieldPrizeExtra: "Additional prizes (optional)",
+    paymentInfo: "Publishing a quiz costs 6EUR per listing. After clicking the button you proceed to payment and the quiz is published once the payment is confirmed.",
+    btnPay: "Proceed to payment",
+    footerMain: "Balkan Quiz Story – All quizzes in one place.",
+    footerSupport: "Support",
+    footerLegal: "Legal",
+    statusLive: "LIVE",
+    statusFinished: "Finished",
+    prizesLabel: "Prizes",
+    locEnabled: "Location enabled – filtering quizzes by your position.",
+    locError: "Could not get your location. Please check browser permissions.",
+    locRequesting: "Requesting your location..."
+  }
+};
+
+function applyTranslations() {
+  const dict = i18n[currentLang] || i18n.hr;
+  document.documentElement.lang = currentLang;
+
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (!key || !dict[key]) return;
+    const value = dict[key];
+    el.textContent = value;
+  });
+}
+
+/* ----------------- DEMO KVIZOVI ----------------- */
+
+function offsetDays(days, hours, minutes) {
+  const now = new Date();
+  const target = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + days,
+    hours,
+    minutes,
+    0
+  );
+  return target.toISOString();
+}
+
+const demoQuizzes = [
+  {
+    id: "demo-1",
+    title: "Pub Quiz – Sarajevo Classic",
+    type: "opce",
+    datetime: offsetDays(3, 20, 0),
+    venue: "Craft Beer Pub, Sarajevo",
+    lat: 43.8563,
+    lng: 18.4131,
+    prize1: "1. mjesto – pića & poklon paket",
+    prize2: "2. mjesto – pića za ekipu",
+    prize3: "",
+    prizeExtra: "",
+    phone: "+387 62 000 000",
+    source: "demo"
+  },
+  {
+    id: "demo-2",
+    title: "Kafanski kviz – Mostar Night",
+    type: "kafanski",
+    datetime: offsetDays(8, 21, 0),
+    venue: "Stari Grad Pub, Mostar",
+    lat: 43.3438,
+    lng: 17.8078,
+    source: "demo"
+  },
+  {
+    id: "demo-3",
+    title: "Nogometni kviz – Balkan Derbi",
+    type: "nogometni",
+    datetime: offsetDays(12, 19, 30),
+    venue: "Sports Bar, Zagreb",
+    lat: 45.815,
+    lng: 15.9819,
+    source: "demo"
+  },
+  {
+    id: "demo-4",
+    title: "Kviz beskorisnog znanja",
+    type: "beskorisno",
+    datetime: offsetDays(20, 20, 30),
+    venue: "Pub Lavirint, Beograd",
+    lat: 44.7866,
+    lng: 20.4489,
+    source: "demo"
+  },
+  {
+    id: "demo-5",
+    title: "Sportski kviz – Planine & Sport",
+    type: "sportski",
+    datetime: offsetDays(5, 18, 0),
+    venue: "Planinski bar, Podgorica",
+    lat: 42.4304,
+    lng: 19.2594,
+    source: "demo"
+  }
+];
+
+let map;
+let markersLayer;
+let allQuizzes = [];
+let userLocation = null;
+let userLocationMarker = null;
+let addQuizMarker = null;
+
+/* ----------------- INIT ----------------- */
+
+document.addEventListener("DOMContentLoaded", async () => {
+  initYear();
+  initLanguageToggle();
+  await loadInitialQuizzes();  // demo + Supabase + localStorage
+
+  initMap();
+  initFilters();
+  initLocationSearch();
+  initAddQuizModal();
+  initFindQuizzesButton();
+  initTestKnowledgeButton();
+
+  // ako smo već prije uključili lokaciju, vrati je i pokaži radijus
+  restoreLocationFromLocal();
+
+  applyTranslations();
+  renderQuizzes();
+  refreshMarkers();
+});
+
+/* ----------------- GODINA ----------------- */
+
+function initYear() {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+}
+
+/* ----------------- LANGUAGE TOGGLE ----------------- */
+
+function initLanguageToggle() {
+  const buttons = document.querySelectorAll(".lang-btn");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const lang = btn.getAttribute("data-lang");
+      if (!lang || lang === currentLang) return;
+      currentLang = lang;
+
+      buttons.forEach((b) => b.classList.toggle("active", b === btn));
+      applyTranslations();
+      renderQuizzes(); // refresha tekst statusa / labela
+      updateLocationStatusText(); // da i poruka za lokaciju prati jezik
+    });
+  });
+}
+
+/* ----------------- PERSISTENCIJA LOCALSTORAGE ----------------- */
+
+function loadUserQuizzesFromLocal() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (e) {
+    console.error("Greška pri čitanju localStorage:", e);
+    return [];
+  }
+}
+
+function saveUserQuizToLocal(quiz) {
+  try {
+    const current = loadUserQuizzesFromLocal();
+    current.push(quiz);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+  } catch (e) {
+    console.error("Greška pri spremanju u localStorage:", e);
+  }
+}
+
+/* --- PERSISTENCIJA LOKACIJE --- */
+
+function saveUserLocationToLocal(loc) {
+  try {
+    if (!loc || typeof loc.lat !== "number" || typeof loc.lng !== "number") return;
+    localStorage.setItem(
+      LOCATION_STORAGE_KEY,
+      JSON.stringify({ lat: loc.lat, lng: loc.lng })
+    );
+  } catch (e) {
+    console.error("Greška pri spremanju lokacije:", e);
+  }
+}
+
+function loadUserLocationFromLocal() {
+  try {
+    const raw = localStorage.getItem(LOCATION_STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (
+      parsed &&
+      typeof parsed.lat === "number" &&
+      typeof parsed.lng === "number"
+    ) {
+      return { lat: parsed.lat, lng: parsed.lng };
+    }
+    return null;
+  } catch (e) {
+    console.error("Greška pri čitanju lokacije:", e);
+    return null;
+  }
+}
+
+function ensureRadiusVisible() {
+  const radiusWrapper = document.getElementById("radius-wrapper");
+  if (!radiusWrapper) return;
+  radiusWrapper.classList.add("visible");
+}
+
+function restoreLocationFromLocal() {
+  const stored = loadUserLocationFromLocal();
+  if (!stored) return;
+
+  userLocation = stored;
+  ensureRadiusVisible();
+  updateLocationStatusText("locEnabled");
+  renderQuizzes();
+  refreshMarkers();
+  updateMapViewToCurrentRadius();
+}
+
+/* ----------------- SUPABASE BACKEND ----------------- */
+
+/**
+ * Čitanje kvizova iz Supabase tablice "Quizzes".
+ * Očekuje stupce:
+ *  id, title, type, datetime, venue, lat, lng, prize1, prize2, prize3, prize_extra, phone
+ */
+async function loadQuizzesFromSupabase() {
+  if (!supabaseClient) return [];
+  try {
+    const { data, error } = await supabaseClient
+      .from("Quizzes")
+      .select("*")
+      .order("datetime", { ascending: true });
+
+    if (error) {
+      console.error("Supabase read error:", error);
+      return [];
+    }
+
+    if (!Array.isArray(data)) return [];
+
+    return data.map((row) => ({
+      id: `supabase-${row.id}`,
+      title: row.title,
+      type: row.type,
+      datetime: row.datetime,
+      venue: row.venue,
+      lat: row.lat,
+      lng: row.lng,
+      prize1: row.prize1 || "",
+      prize2: row.prize2 || "",
+      prize3: row.prize3 || "",
+      prizeExtra: row.prize_extra || "",
+      phone: row.phone || "",
+      source: "supabase"
+    }));
+  } catch (e) {
+    console.error("Supabase exception:", e);
+    return [];
+  }
+}
+
+/* ----------------- UČITAVANJE SVIH KVIZOVA ----------------- */
+
+async function loadInitialQuizzes() {
+  const userQuizzes = loadUserQuizzesFromLocal();
+  const supabaseQuizzes = await loadQuizzesFromSupabase();
+
+  const now = Date.now();
+
+  const withinWindow = (quiz) => {
+    const t = new Date(quiz.datetime).getTime();
+    if (Number.isNaN(t)) return false;
+    const diff = t - now;
+    // dopuštamo evente od prije max 2 dana do +30 dana
+    return diff >= -FINISHED_VISIBLE_MS && diff <= UPCOMING_WINDOW_MS;
+  };
+
+  allQuizzes = [...demoQuizzes, ...supabaseQuizzes, ...userQuizzes].filter(withinWindow);
+}
+
+/* ----------------- MAPA ----------------- */
+
+function initMap() {
+  map = L.map("map", {
+    zoomControl: true
+  });
+
+  const center = BALKAN_BOUNDS.getCenter();
+  map.setView(center, 6);
+  map.fitBounds(BALKAN_BOUNDS);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    minZoom: 4,
+    attribution: "&copy; OpenStreetMap"
+  }).addTo(map);
+
+  markersLayer = L.layerGroup().addTo(map);
+}
+
+/* helper za custom pin ikone */
+
+function createMarkerIcon(colorName) {
+  return L.divIcon({
+    className: "",
+    html: `<div class="map-pin map-pin--${colorName}"></div>`,
+    iconSize: [24, 32],
+    iconAnchor: [12, 32],
+    popupAnchor: [0, -32]
+  });
+}
+
+function getMarkerColor(quiz) {
+  const now = Date.now();
+  const t = new Date(quiz.datetime).getTime();
+  if (Number.isNaN(t)) return "grey";
+
+  const diff = t - now;
+
+  // finished but još vidljiv
+  if (diff < 0 && diff >= -FINISHED_VISIBLE_MS) return "grey";
+
+  const dayMs = 86400000;
+  const daysAhead = diff / dayMs;
+  if (daysAhead <= 7) return "green";
+  if (daysAhead <= 14) return "yellow";
+  if (daysAhead <= 30) return "red";
+  return "grey";
+}
+
+/* zoom prema radijusu */
+
+function updateMapViewToCurrentRadius() {
+  if (!map) return;
+  const radiusSelect = document.getElementById("radius-select");
+  const radiusVal = radiusSelect ? radiusSelect.value : "all";
+
+  // ako nema lokacije ili "Prikaži sve" -> cijeli Balkan
+  if (!userLocation || radiusVal === "all") {
+    map.fitBounds(BALKAN_BOUNDS, { padding: [20, 20] });
+    return;
+  }
+
+  const r = Number(radiusVal);
+  let zoom;
+  if (r <= 10) zoom = 13;
+  else if (r <= 25) zoom = 11;
+  else if (r <= 50) zoom = 9;
+  else zoom = 8;
+
+  map.setView(userLocation, zoom);
+}
+
+function refreshMarkers() {
+  if (!map || !markersLayer) return;
+
+  markersLayer.clearLayers();
+
+  const filtered = getFilteredQuizzes();
+
+  filtered.forEach((quiz) => {
+    if (typeof quiz.lat !== "number" || typeof quiz.lng !== "number") return;
+
+    const color = getMarkerColor(quiz);
+    const marker = L.marker([quiz.lat, quiz.lng], {
+      icon: createMarkerIcon(color)
+    });
+
+    const dt = new Date(quiz.datetime);
+    const dateStr = dt.toLocaleString(currentLang === "en" ? "en-GB" : "hr-HR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${quiz.lat},${quiz.lng}`;
+
+    marker.bindPopup(`
+      <strong>${quiz.title}</strong><br>
+      ${quiz.venue || ""}<br>
+      ${dateStr}<br>
+      <a href="${mapsUrl}" target="_blank" rel="noopener">Google Maps</a>
+    `);
+
+    marker.addTo(markersLayer);
+  });
+
+  // korisnička lokacija
+  if (userLocation) {
+    if (userLocationMarker) {
+      userLocationMarker.setLatLng(userLocation);
+    } else {
+      userLocationMarker = L.marker(userLocation, {
+        icon: createMarkerIcon("black")
+      }).addTo(markersLayer);
+    }
+  }
+
+  // marker za novi kviz (preview)
+  if (addQuizMarker) {
+    addQuizMarker.addTo(markersLayer);
+  }
+}
+
+/* ----------------- FILTERI & RENDER LISTE ----------------- */
+
+function getActiveTypes() {
+  const checkboxes = document.querySelectorAll(".quiz-type-filter");
+  const active = [];
+  checkboxes.forEach((cb) => {
+    if (cb.checked) active.push(cb.value);
+  });
+  return active;
+}
+
+function getDistanceKm(lat1, lon1, lat2, lon2) {
+  const R = 6371; // km
+  const toRad = (deg) => (deg * Math.PI) / 180;
+
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(toRad(lat1)) *
+      Math.cos(toRad(lat2)) *
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+function getFilteredQuizzes() {
+  const types = getActiveTypes();
+  const radiusSelect = document.getElementById("radius-select");
+  const radiusVal = radiusSelect ? radiusSelect.value : "all";
+  const radiusKm = radiusVal === "all" ? null : Number(radiusVal);
+
+  const now = Date.now();
+
+  return allQuizzes
+    .map((quiz) => {
+      const t = new Date(quiz.datetime).getTime();
+      if (Number.isNaN(t)) return null;
+
+      // distance
+      let distanceKm = null;
+      if (userLocation && radiusKm !== null && typeof quiz.lat === "number" && typeof quiz.lng === "number") {
+        distanceKm = getDistanceKm(
+          userLocation.lat,
+          userLocation.lng,
+          quiz.lat,
+          quiz.lng
+        );
+      }
+
+      return { ...quiz, _timeMs: t, _distanceKm: distanceKm };
+    })
+    .filter((quiz) => quiz !== null)
+    .filter((quiz) => {
+      if (!types.includes(quiz.type)) return false;
+      if (userLocation && radiusKm !== null && quiz._distanceKm != null) {
+        if (quiz._distanceKm > radiusKm) return false;
+      }
+      // vremenski prozor
+      const diff = quiz._timeMs - now;
+      return diff >= -FINISHED_VISIBLE_MS && diff <= UPCOMING_WINDOW_MS;
+    })
+    .sort((a, b) => a._timeMs - b._timeMs);
+}
+
+function formatDateTime(dtStr) {
+  const dt = new Date(dtStr);
+  if (Number.isNaN(dt.getTime())) return dtStr;
+
+  return dt.toLocaleString(currentLang === "en" ? "en-GB" : "hr-HR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
+}
+
+function renderQuizzes() {
+  const listEl = document.getElementById("quiz-list");
+  const emptyEl = document.getElementById("quiz-empty-message");
+  if (!listEl) return;
+
+  listEl.innerHTML = "";
+
+  const filtered = getFilteredQuizzes();
+  const dict = i18n[currentLang] || i18n.hr;
+
+  if (!filtered.length) {
+    if (emptyEl) emptyEl.classList.remove("hidden");
+    return;
+  }
+  if (emptyEl) emptyEl.classList.add("hidden");
+
+  filtered.forEach((quiz) => {
+    const li = document.createElement("li");
+    li.className = "quiz-item";
+
+    const header = document.createElement("div");
+    header.className = "quiz-item-header";
+
+    const titleSpan = document.createElement("span");
+    titleSpan.className = "quiz-title";
+    titleSpan.textContent = quiz.title;
+
+    const statusSpan = document.createElement("span");
+    const now = Date.now();
+    const diff = quiz._timeMs - now;
+
+    let statusClass = "";
+    let statusText = "";
+
+    if (Math.abs(diff) <= THREE_HOURS_MS) {
+      statusClass = "quiz-status quiz-status--live";
+      statusText = dict.statusLive;
+    } else if (diff < -THREE_HOURS_MS) {
+      statusClass = "quiz-status quiz-status--finished";
+      statusText = dict.statusFinished;
+    }
+
+    if (statusText) {
+      statusSpan.className = statusClass;
+      statusSpan.textContent = statusText;
+    }
+
+    header.appendChild(titleSpan);
+    if (statusText) header.appendChild(statusSpan);
+
+    const venue = document.createElement("div");
+    venue.className = "quiz-venue";
+    venue.textContent = quiz.venue || "";
+
+    const phone = document.createElement("div");
+    phone.className = "quiz-phone";
+    if (quiz.phone) {
+      phone.textContent = quiz.phone;
+    }
+
+    const meta = document.createElement("div");
+    meta.className = "quiz-meta";
+
+    const metaLeft = document.createElement("div");
+    metaLeft.className = "quiz-meta-left";
+
+    const tag = document.createElement("span");
+    tag.className = "quiz-tag";
+
+    const typeLabel =
+      quiz.type === "opce"
+        ? dict.typeGeneral
+        : quiz.type === "kafanski"
+        ? dict.typeKafanski
+        : quiz.type === "nogometni"
+        ? dict.typeFootball
+        : quiz.type === "sportski"
+        ? dict.typeSports
+        : quiz.type === "beskorisno"
+        ? dict.typeUseless
+        : dict.typeOther;
+
+    tag.textContent = typeLabel;
+
+    const dateEl = document.createElement("span");
+    dateEl.className = "quiz-date";
+    dateEl.textContent = formatDateTime(quiz.datetime);
+
+    metaLeft.appendChild(tag);
+    metaLeft.appendChild(dateEl);
+
+    const distanceEl = document.createElement("span");
+    distanceEl.className = "quiz-distance";
+    if (quiz._distanceKm != null && !Number.isNaN(quiz._distanceKm)) {
+      distanceEl.textContent =
+        quiz._distanceKm < 1
+          ? `${quiz._distanceKm.toFixed(1)} km`
+          : `${quiz._distanceKm.toFixed(1)} km`;
+    }
+
+    meta.appendChild(metaLeft);
+    if (distanceEl.textContent) meta.appendChild(distanceEl);
+
+    li.appendChild(header);
+    li.appendChild(venue);
+    if (quiz.phone) li.appendChild(phone);
+    li.appendChild(meta);
+
+    // Google Maps link
+    if (typeof quiz.lat === "number" && typeof quiz.lng === "number") {
+      const mapsLink = document.createElement("a");
+      mapsLink.className = "quiz-maps-link";
+      mapsLink.href = `https://www.google.com/maps/search/?api=1&query=${quiz.lat},${quiz.lng}`;
+      mapsLink.target = "_blank";
+      mapsLink.rel = "noopener";
+      mapsLink.textContent =
+        currentLang === "en" ? "Open in Google Maps" : "Otvori u Google Mapsu";
+      li.appendChild(mapsLink);
+    }
+
+    // nagrade
+    if (quiz.prize1 || quiz.prize2 || quiz.prize3 || quiz.prizeExtra) {
+      const prizes = document.createElement("div");
+      prizes.className = "quiz-prizes";
+
+      const label = document.createElement("strong");
+      label.textContent = (dict.prizesLabel || "Nagrade") + ": ";
+      prizes.appendChild(label);
+
+      const parts = [];
+      if (quiz.prize1) parts.push(quiz.prize1);
+      if (quiz.prize2) parts.push(quiz.prize2);
+      if (quiz.prize3) parts.push(quiz.prize3);
+      if (quiz.prizeExtra) parts.push(quiz.prizeExtra);
+
+      prizes.appendChild(document.createTextNode(parts.join(" | ")));
+      li.appendChild(prizes);
+    }
+
+    listEl.appendChild(li);
+  });
+}
+
+/* ----------------- FILTER EVENTI ----------------- */
+
+function initFilters() {
+  const typeInputs = document.querySelectorAll(".quiz-type-filter");
+  typeInputs.forEach((cb) => {
+    cb.addEventListener("change", () => {
+      renderQuizzes();
+      refreshMarkers();
+    });
+  });
+
+  const radiusSelect = document.getElementById("radius-select");
+  if (radiusSelect) {
+    radiusSelect.addEventListener("change", () => {
+      renderQuizzes();
+      refreshMarkers();
+      updateMapViewToCurrentRadius();
+    });
+  }
+}
+
+/* ----------------- GEOLOKACIJA ----------------- */
+
+function updateLocationStatusText(messageKeyOverride) {
+  const statusEl = document.getElementById("location-status");
+  if (!statusEl) return;
+
+  const dict = i18n[currentLang] || i18n.hr;
+  if (messageKeyOverride && dict[messageKeyOverride]) {
+    statusEl.textContent = dict[messageKeyOverride];
+  } else {
+    statusEl.textContent = "";
+  }
+}
+
+function initLocationSearch() {
+  const btn = document.getElementById("use-location-btn");
+  if (!btn) return;
+
+  btn.addEventListener("click", () => {
+    if (!navigator.geolocation) {
+      updateLocationStatusText("locError");
+      return;
+    }
+
+    updateLocationStatusText("locRequesting");
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        userLocation = {
+          lat: pos.coords.latitude,
+          lng: pos.coords.longitude
+        };
+
+        // spremi lokaciju da ostane "stalna" za ovaj browser
+        saveUserLocationToLocal(userLocation);
+
+        // pobrini se da radijus uvijek ostane vidljiv kad jednom imamo lokaciju
+        ensureRadiusVisible();
+
+        updateLocationStatusText("locEnabled");
+        renderQuizzes();
+        refreshMarkers();
+        updateMapViewToCurrentRadius();
+      },
+      () => {
+        updateLocationStatusText("locError");
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000
+      }
+    );
+  });
+}
+
+/* ----------------- MODAL ZA DODAVANJE KVIZA ----------------- */
+
+function parseLatLngFromInput(value) {
+  if (!value) return null;
+  const text = value.trim();
+
+  // 1) direktne koordinate "lat,lng"
+  let m = text.match(/(-?\d{1,3}\.\d+)\s*,\s*(-?\d{1,3}\.\d+)/);
+  if (m) {
+    return {
+      lat: parseFloat(m[1]),
+      lng: parseFloat(m[2])
+    };
+  }
+
+  // 2) Maps link s @lat,lng
+  m = text.match(/@(-?\d{1,3}\.\d+),(-?\d{1,3}\.\d+)/);
+  if (m) {
+    return {
+      lat: parseFloat(m[1]),
+      lng: parseFloat(m[2])
+    };
+  }
+
+  // 3) q=lat,lng
+  m = text.match(/[?&]q=(-?\d{1,3}\.\d+),(-?\d{1,3}\.\d+)/);
+  if (m) {
+    return {
+      lat: parseFloat(m[1]),
+      lng: parseFloat(m[2])
+    };
+  }
+
+  return null;
+}
+
+function initAddQuizModal() {
+  const openBtn = document.getElementById("add-quiz-open");
+  const modal = document.getElementById("add-quiz-modal");
+  const closeBtn = document.getElementById("add-quiz-close");
+  const form = document.getElementById("add-quiz-form");
+  const mapsInput = document.getElementById("quiz-maps-link");
+  const latInput = document.getElementById("quiz-lat");
+  const lngInput = document.getElementById("quiz-lng");
+  const openMapsBtn = document.getElementById("open-maps-btn");
+
+  if (!openBtn || !modal || !closeBtn || !form) return;
+
+  function openModal() {
+    modal.classList.remove("hidden");
+    modal.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function closeModal() {
+    modal.classList.add("hidden");
+    if (addQuizMarker && markersLayer) {
+      markersLayer.removeLayer(addQuizMarker);
+      addQuizMarker = null;
+    }
+    form.reset();
+    if (latInput) latInput.value = "";
+    if (lngInput) lngInput.value = "";
+  }
+
+  openBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+
+  if (openMapsBtn) {
+    openMapsBtn.addEventListener("click", () => {
+      window.open("https://maps.google.com", "_blank", "noopener");
+    });
+  }
+
+  if (mapsInput) {
+    const handleCoordsChange = () => {
+      const coords = parseLatLngFromInput(mapsInput.value);
+      if (!coords) return;
+
+      if (latInput) latInput.value = String(coords.lat);
+      if (lngInput) lngInput.value = String(coords.lng);
+
+      // marker preview
+      if (map && markersLayer) {
+        if (!addQuizMarker) {
+          addQuizMarker = L.marker([coords.lat, coords.lng], {
+            icon: createMarkerIcon("yellow")
+          });
+        } else {
+          addQuizMarker.setLatLng([coords.lat, coords.lng]);
+        }
+        refreshMarkers();
+        map.setView([coords.lat, coords.lng], 14);
+      }
+    };
+
+    mapsInput.addEventListener("change", handleCoordsChange);
+    mapsInput.addEventListener("blur", handleCoordsChange);
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const titleEl = document.getElementById("quiz-title");
+    const venueEl = document.getElementById("quiz-venue-name");
+    const typeEl = document.getElementById("quiz-type");
+    const dtEl = document.getElementById("quiz-datetime");
+    const phoneEl = document.getElementById("quiz-phone");
+    const prize1El = document.getElementById("prize-1");
+    const prize2El = document.getElementById("prize-2");
+    const prize3El = document.getElementById("prize-3");
+    const prizeExtraEl = document.getElementById("prize-extra");
+
+    if (!titleEl || !venueEl || !typeEl || !dtEl || !mapsInput || !latInput || !lngInput) {
+      return;
+    }
+
+    const coords =
+      latInput.value && lngInput.value
+        ? {
+            lat: parseFloat(latInput.value),
+            lng: parseFloat(lngInput.value)
+          }
+        : parseLatLngFromInput(mapsInput.value);
+
+    if (!coords || Number.isNaN(coords.lat) || Number.isNaN(coords.lng)) {
+      alert(
+        currentLang === "en"
+          ? "Please provide valid coordinates or a valid Google Maps link."
+          : "Molimo unesi ispravne koordinate ili valjan Google Maps link."
+      );
+      return;
+    }
+
+    const newQuiz = {
+      id: `user-${Date.now()}`,
+      title: titleEl.value.trim(),
+      type: typeEl.value,
+      datetime: new Date(dtEl.value).toISOString(),
+      venue: venueEl.value.trim(),
+      lat: coords.lat,
+      lng: coords.lng,
+      phone: phoneEl && phoneEl.value ? phoneEl.value.trim() : "",
+      prize1: prize1El && prize1El.value ? prize1El.value.trim() : "",
+      prize2: prize2El && prize2El.value ? prize2El.value.trim() : "",
+      prize3: prize3El && prize3El.value ? prize3El.value.trim() : "",
+      prizeExtra: prizeExtraEl && prizeExtraEl.value ? prizeExtraEl.value.trim() : "",
+      source: "user"
+    };
+
+    // localStorage
+    saveUserQuizToLocal(newQuiz);
+
+    // pokušaj spremiti i u Supabase (nije kritično ako ne uspije)
+    try {
+      const { error } = await supabaseClient.from("Quizzes").insert({
+        title: newQuiz.title,
+        type: newQuiz.type,
+        datetime: newQuiz.datetime,
+        venue: newQuiz.venue,
+        lat: newQuiz.lat,
+        lng: newQuiz.lng,
+        prize1: newQuiz.prize1,
+        prize2: newQuiz.prize2,
+        prize3: newQuiz.prize3,
+        prize_extra: newQuiz.prizeExtra,
+        phone: newQuiz.phone
+      });
+      if (error) {
+        console.error("Supabase insert error:", error);
+      }
+    } catch (err) {
+      console.error("Supabase insert exception:", err);
+    }
+
+    allQuizzes.push(newQuiz);
+    renderQuizzes();
+    refreshMarkers();
+    closeModal();
+
+    // redirect na PayPal
+    if (PAYPAL_CHECKOUT_URL && PAYPAL_CHECKOUT_URL !== "PUT_YOUR_PAYPAL_LINK_HERE") {
+      window.open(PAYPAL_CHECKOUT_URL, "_blank", "noopener");
+    } else {
+      alert(
+        currentLang === "en"
+          ? "Quiz saved locally. Payment link is not yet configured."
+          : "Kviz je spremljen lokalno. PayPal link još nije podešen."
+      );
+    }
+  });
+}
+
+/* ----------------- GUMB 'PRONAĐI KVIZ' & TEST ZNANJA ----------------- */
+
+function initFindQuizzesButton() {
+  const btn = document.getElementById("find-quizzes-btn");
+  const mapSection = document.getElementById("map-section");
+  if (!btn || !mapSection) return;
+
+  btn.addEventListener("click", () => {
+    mapSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function initTestKnowledgeButton() {
+  const btn = document.getElementById("test-knowledge-btn");
+  if (!btn) return;
+
+  btn.addEventListener("click", () => {
+    alert(
+      currentLang === "en"
+        ? "Mini quiz feature is coming soon!"
+        : "Mini kviz za testiranje znanja stiže uskoro!"
+    );
+  });
+}
+    </script>
+</body>
+</html>
