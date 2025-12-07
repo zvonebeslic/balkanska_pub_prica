@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Podrška | Balkan Pub Quiz Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Podrška za Balkan Pub Quiz Map – upute za dodavanje kviza, plaćanje, kontakt i česta pitanja.">
+  <link rel="canonical" href="https://zvonebeslic.github.io/podrska.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Podrška | Balkan Pub Quiz Map">
+  <meta property="og:description" content="Kako dodati kviz, kako funkcionira plaćanje i kako nas kontaktirati.">
+  <meta property="og:url" content="https://zvonebeslic.github.io/podrska.html">
+  <meta property="og:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Podrška | Balkan Pub Quiz Map">
+  <meta name="twitter:description" content="Support page for Balkan Pub Quiz Map.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-main: #120b07;
+      --bg-wood: #3b2414;
+      --bg-card: rgba(20, 10, 5, 0.9);
+      --accent: #f5c15b;
+      --accent-soft: #c07a2b;
+      --text-main: #f9efe0;
+      --text-muted: #c7b7a3;
+      --border-soft: rgba(250, 245, 230, 0.15);
+      --shadow-soft: 0 15px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255, 250, 220, 0.08), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(255, 200, 150, 0.08), transparent 60%),
+        url("https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover fixed,
+        var(--bg-main);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 1.2rem;
+      background: linear-gradient(135deg, #1d1209, #381f12);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 20%, #ffe8a3, #e59f33);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow:
+        0 0 12px rgba(245, 193, 91, 0.7),
+        0 0 30px rgba(245, 193, 91, 0.2);
+      overflow: hidden;
+    }
+
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-main {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    .logo-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .nav-btn {
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: transparent;
+      color: var(--text-main);
+      font-size: 0.8rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: background 0.15s ease, transform 0.1s ease, border-color 0.15s ease;
+      text-decoration: none;
+    }
+
+    .nav-btn--primary {
+      background: radial-gradient(circle at 30% 20%, #ffe8a3, var(--accent-soft));
+      color: #2b1608;
+      border-color: rgba(255, 220, 160, 0.7);
+      font-weight: 600;
+    }
+
+    .nav-btn:hover {
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .nav-btn--primary:hover {
+      background: radial-gradient(circle at 30% 20%, #fff0c4, #e19122);
+    }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: inline-flex;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      overflow: hidden;
+      font-size: 0.75rem;
+    }
+
+    .lang-btn {
+      padding: 0.25rem 0.55rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: rgba(0,0,0,0.6);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Main layout */
+    .page-wrapper {
+      flex: 1;
+      max-width: 900px;
+      width: 100%;
+      margin: 1.5rem auto 0;
+      padding: 0 1.2rem 1rem;
+    }
+
+    .page-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(10px);
+      padding: 1.3rem 1.4rem 1.2rem;
+    }
+
+    .page-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+    }
+
+    .section-block {
+      margin-bottom: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: var(--accent);
+    }
+
+    .section-text {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .section-text + .section-text {
+      margin-top: 0.45rem;
+    }
+
+    ul.section-list {
+      margin-top: 0.35rem;
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    ul.section-list li + li {
+      margin-top: 0.25rem;
+    }
+
+    .highlight-box {
+      margin-top: 0.6rem;
+      padding: 0.7rem 0.8rem;
+      border-radius: 14px;
+      border: 1px dashed rgba(245, 193, 91, 0.6);
+      background: rgba(0,0,0,0.35);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .contact-email a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-email a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      padding: 0.9rem 0.9rem 1rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.85));
+      margin-top: 0.4rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+    }
+
+    .footer-links a {
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.25rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(245, 193, 91, 0.45);
+      background: rgba(0, 0, 0, 0.5);
+      transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      background: radial-gradient(circle at 20% 0, #ffe8a3, var(--accent-soft));
+      color: #2b1608;
+      transform: translateY(-1px);
+      box-shadow: 0 0 12px rgba(245, 193, 91, 0.5);
+    }
+
+    .footer-icons {
+      margin-top: 0.55rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+
+    .footer-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.65);
+      color: var(--accent);
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+    }
+
+    .footer-icon:hover {
+      background: radial-gradient(circle at 20% 0, #ffe8a3, var(--accent-soft));
+      color: #2b1608;
+      transform: translateY(-1px);
+      box-shadow: 0 0 10px rgba(245, 193, 91, 0.6);
+    }
+
+    .footer-copy {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+    }
+
+    @media (max-width: 768px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.45rem;
+        padding: 0.7rem 0.7rem;
+      }
+
+      .top-nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 0.35rem;
+      }
+
+      .page-wrapper {
+        margin-top: 1rem;
+        padding: 0 0.7rem 0.9rem;
+      }
+
+      .page-card {
+        padding: 1rem 0.9rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="logo-wrap">
+    <div class="logo-icon">
+      <!-- ista slika kao na indexu -->
+      <img src="images/pub_kviz_logo.jpg" alt="Balkan Pub Quiz logo">
+    </div>
+    <div class="logo-text">
+      <span class="logo-main" data-i18n="logoMain">Balkanska Kviz Priča</span>
+      <span class="logo-sub" data-i18n="logoSub">Mapa kvizova po Balkanu</span>
+    </div>
+  </div>
+  <nav class="top-nav">
+    <!-- link natrag na početnu mapu -->
+    <a href="index.html" class="nav-btn nav-btn--primary" data-i18n="btnHome">Natrag na mapu</a>
+
+    <div class="lang-toggle" aria-label="Language">
+      <button class="lang-btn active" data-lang="hr">HR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </nav>
+</header>
+
+<main class="page-wrapper">
+  <article class="page-card">
+    <h1 class="page-title" data-i18n="supportTitle">Podrška za Balkan Pub Quiz Map</h1>
+    <p class="page-subtitle" data-i18n="supportSubtitle">
+      Ovdje možeš pronaći odgovore na najčešća pitanja, upute za dodavanje kviza i načine kako nas kontaktirati.
+    </p>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secHowAddTitle">Kako dodati kviz na mapu?</h2>
+      <p class="section-text" data-i18n="secHowAddP1">
+        Dodavanje kviza radi se direktno preko početne stranice (gumb “Dodaj kviz”). Postupak ide ovim redoslijedom:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secHowAddLi1">Klikni na gumb <strong>“Dodaj kviz”</strong> na naslovnici.</li>
+        <li data-i18n="secHowAddLi2">Unesi naziv kviza, lokaciju, datum i vrijeme održavanja.</li>
+        <li data-i18n="secHowAddLi3">U polje za lokaciju zalijepi Google Maps link ili koordinate (lat, lng).</li>
+        <li data-i18n="secHowAddLi4">Po želji upiši broj telefona za rezervacije i nagrade za najbolja mjesta.</li>
+        <li data-i18n="secHowAddLi5">Klikom na gumb za plaćanje završavaš proces i nakon potvrde uplate kviz se objavljuje.</li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secPaymentTitle">Plaćanje i potvrda objave</h2>
+      <p class="section-text" data-i18n="secPaymentP1">
+        Objavljivanje jednog kviza naplaćuje se <strong>6 EUR po objavi</strong>. Plaćanje se trenutno obavlja putem online servisa za plaćanje (npr. PayPal / kartično plaćanje preko treće strane).
+      </p>
+      <p class="section-text" data-i18n="secPaymentP2">
+        Nakon što uplata bude uspješno evidentirana, kviz se u pravilu prikazuje na mapi u roku od kratkog vremena. U iznimnim slučajevima može doći do kašnjenja (npr. ručna provjera ili tehnički problemi).
+      </p>
+      <div class="highlight-box">
+        <p data-i18n="secPaymentNote">
+          Napomena: dok sustav ne dobije potvrdu o uplati od pružatelja usluge plaćanja, kviz se neće pojaviti javno na karti. Ako si uplatio, a kviz još nije vidljiv dulje vrijeme, javi nam se putem kontakta ispod.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secRefundsTitle">Pogrešni unosi i povrat novca</h2>
+      <p class="section-text" data-i18n="secRefundsP1">
+        Ako si slučajno unio pogrešne podatke (datum, lokaciju ili naziv kviza), javi nam se što prije s točnim informacijama. U većini slučajeva možemo ručno ispraviti podatke bez dodatne naplate.
+      </p>
+      <p class="section-text" data-i18n="secRefundsP2">
+        U slučaju tehničke greške na našoj strani, koja onemogućava prikaz kviza unatoč urednoj uplati, nastojimo ili:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secRefundsLi1">produžiti vidljivost tog kviza, ili</li>
+        <li data-i18n="secRefundsLi2">dogovoriti povrat sredstava, ovisno o situaciji i kanalu plaćanja.</li>
+      </ul>
+      <p class="section-text" data-i18n="secRefundsP3">
+        Povrati se uvijek rješavaju individualno, u skladu s pravilima platnog servisa koji je korišten.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secFaqTitle">Česta pitanja (FAQ)</h2>
+      <p class="section-text" data-i18n="secFaqP1">
+        <strong>Pitanje:</strong> Koliko dugo kviz ostaje na mapi?<br>
+        <strong>Odgovor:</strong> Kviz je vidljiv u razdoblju oko datuma događaja, s naglaskom na ±30 dana oko datuma održavanja, uz kratko razdoblje nakon završetka za pregled arhive.
+      </p>
+      <p class="section-text" data-i18n="secFaqP2">
+        <strong>Pitanje:</strong> Naplaćuje li se uređivanje kviza nakon objave?<br>
+        <strong>Odgovor:</strong> Manje izmjene (npr. broj telefona, naziv ekipe, sitne korekcije teksta) u pravilu se ne naplaćuju, dok veće promjene datuma / lokacije možemo tretirati kao novi oglas.
+      </p>
+      <p class="section-text" data-i18n="secFaqP3">
+        <strong>Pitanje:</strong> Mogu li otkazati kviz?<br>
+        <strong>Odgovor:</strong> Da. Ako se kviz otkazuje, zamolit ćemo te da nas obavijestiš, kako bismo ažurirali status na mapi (npr. “otkazano” ili uklonjeno).
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secContactTitle">Kontakt i prijava problema</h2>
+      <p class="section-text contact-email" data-i18n="secContactP1">
+        Za sva pitanja vezana uz plaćanje, prikaz kviza ili tehničke poteškoće, možeš nam se javiti na:
+        <br>
+        Email: <a href="mailto:info@balkanskakvizprica.com">info@balkanskakvizprica.com</a>
+      </p>
+      <p class="section-text" data-i18n="secContactP2">
+        U poruci nam svakako pošalji:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secContactLi1">naziv kviza i grad u kojem se održava,</li>
+        <li data-i18n="secContactLi2">datum i vrijeme kviza,</li>
+        <li data-i18n="secContactLi3">ako je moguće, potvrdu uplate (screenshot ili ID transakcije).</li>
+      </ul>
+    </section>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="podrska.html" data-i18n="footerSupport">Podrška</a>
+    <a href="legalno.html" data-i18n="footerLegal">Legalno</a>
+  </div>
+
+  <div class="footer-icons">
+    <a href="https://instagram.com/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
+      <span>IG</span>
+    </a>
+    <a href="mailto:info@balkanskakvizprica.com" class="footer-icon" aria-label="Email">
+      ✉
+    </a>
+  </div>
+
+  <p class="footer-copy">
+    © <span id="year"></span>
+    <span data-i18n="footerMain">Balkanska Kviz Priča – svi kvizovi na jednom mjestu.</span>
+  </p>
+</footer>
+
+<script>
+  let currentLang = "hr";
+
+  const i18n = {
+    hr: {
+      logoMain: "Balkanska Kviz Priča",
+      logoSub: "Mapa kvizova po Balkanu",
+      btnHome: "Natrag na mapu",
+      supportTitle: "Podrška za Balkan Pub Quiz Map",
+      supportSubtitle: "Ovdje možeš pronaći odgovore na najčešća pitanja, upute za dodavanje kviza i načine kako nas kontaktirati.",
+      secHowAddTitle: "Kako dodati kviz na mapu?",
+      secHowAddP1: "Dodavanje kviza radi se direktno preko početne stranice (gumb “Dodaj kviz”). Postupak ide ovim redoslijedom:",
+      secHowAddLi1: "Klikni na gumb “Dodaj kviz” na naslovnici.",
+      secHowAddLi2: "Unesi naziv kviza, lokaciju, datum i vrijeme održavanja.",
+      secHowAddLi3: "U polje za lokaciju zalijepi Google Maps link ili koordinate (lat, lng).",
+      secHowAddLi4: "Po želji upiši broj telefona za rezervacije i nagrade za najbolja mjesta.",
+      secHowAddLi5: "Klikom na gumb za plaćanje završavaš proces i nakon potvrde uplate kviz se objavljuje.",
+      secPaymentTitle: "Plaćanje i potvrda objave",
+      secPaymentP1: "Objavljivanje jednog kviza naplaćuje se 6 EUR po objavi. Plaćanje se trenutno obavlja putem online servisa za plaćanje (npr. PayPal / kartično plaćanje preko treće strane).",
+      secPaymentP2: "Nakon što uplata bude uspješno evidentirana, kviz se u pravilu prikazuje na mapi u roku od kratkog vremena. U iznimnim slučajevima može doći do kašnjenja (npr. ručna provjera ili tehnički problemi).",
+      secPaymentNote: "Napomena: dok sustav ne dobije potvrdu o uplati od pružatelja usluge plaćanja, kviz se neće pojaviti javno na karti. Ako si uplatio, a kviz još nije vidljiv dulje vrijeme, javi nam se putem kontakta ispod.",
+      secRefundsTitle: "Pogrešni unosi i povrat novca",
+      secRefundsP1: "Ako si slučajno unio pogrešne podatke (datum, lokaciju ili naziv kviza), javi nam se što prije s točnim informacijama. U većini slučajeva možemo ručno ispraviti podatke bez dodatne naplate.",
+      secRefundsP2: "U slučaju tehničke greške na našoj strani, koja onemogućava prikaz kviza unatoč urednoj uplati, nastojimo ili:",
+      secRefundsLi1: "produžiti vidljivost tog kviza, ili",
+      secRefundsLi2: "dogovoriti povrat sredstava, ovisno o situaciji i kanalu plaćanja.",
+      secRefundsP3: "Povrati se uvijek rješavaju individualno, u skladu s pravilima platnog servisa koji je korišten.",
+      secFaqTitle: "Česta pitanja (FAQ)",
+      secFaqP1: "Pitanje: Koliko dugo kviz ostaje na mapi?\nOdgovor: Kviz je vidljiv u razdoblju oko datuma događaja, s naglaskom na ±30 dana oko datuma održavanja, uz kratko razdoblje nakon završetka za pregled arhive.",
+      secFaqP2: "Pitanje: Naplaćuje li se uređivanje kviza nakon objave?\nOdgovor: Manje izmjene (npr. broj telefona, naziv ekipe, sitne korekcije teksta) u pravilu se ne naplaćuju, dok veće promjene datuma / lokacije možemo tretirati kao novi oglas.",
+      secFaqP3: "Pitanje: Mogu li otkazati kviz?\nOdgovor: Da. Ako se kviz otkazuje, zamolit ćemo te da nas obavijestiš, kako bismo ažurirali status na mapi (npr. “otkazano” ili uklonjeno).",
+      secContactTitle: "Kontakt i prijava problema",
+      secContactP1: "Za sva pitanja vezana uz plaćanje, prikaz kviza ili tehničke poteškoće, možeš nam se javiti na:\nEmail: info@balkanskakvizprica.com",
+      secContactP2: "U poruci nam svakako pošalji:",
+      secContactLi1: "naziv kviza i grad u kojem se održava,",
+      secContactLi2: "datum i vrijeme kviza,",
+      secContactLi3: "ako je moguće, potvrdu uplate (screenshot ili ID transakcije).",
+      footerMain: "Balkanska Kviz Priča – svi kvizovi na jednom mjestu.",
+      footerSupport: "Podrška",
+      footerLegal: "Legalno"
+    },
+    en: {
+      logoMain: "Balkan Pub Quiz Story",
+      logoSub: "Quiz map across the Balkans",
+      btnHome: "Back to map",
+      supportTitle: "Support for Balkan Pub Quiz Map",
+      supportSubtitle: "Here you can find answers to common questions, instructions for adding a quiz and ways to contact us.",
+      secHowAddTitle: "How do I add a quiz to the map?",
+      secHowAddP1: "You can add a quiz directly from the homepage (the “Add quiz” button). The process is:",
+      secHowAddLi1: "Click on the “Add quiz” button on the homepage.",
+      secHowAddLi2: "Enter the quiz name, venue, date and time.",
+      secHowAddLi3: "Paste the Google Maps link or coordinates (lat, lng) into the location field.",
+      secHowAddLi4: "Optionally add a reservation phone number and prize details.",
+      secHowAddLi5: "After clicking the payment button and confirming payment, the quiz is published.",
+      secPaymentTitle: "Payment and confirmation",
+      secPaymentP1: "Publishing a single quiz currently costs 6 EUR per listing. Payment is processed via an online payment provider (e.g. PayPal / card via third-party service).",
+      secPaymentP2: "Once your payment is confirmed, the quiz will usually appear on the map shortly after. In rare cases there may be delays (manual review or technical issues).",
+      secPaymentNote: "Note: until we receive confirmation from the payment provider, your quiz will not be publicly visible on the map. If you have paid and the quiz is still not visible for a longer period, please contact us.",
+      secRefundsTitle: "Incorrect details and refunds",
+      secRefundsP1: "If you entered incorrect details (date, venue or quiz title), please contact us as soon as possible with the correct information. In most cases we can adjust the details manually without extra charge.",
+      secRefundsP2: "In case of a technical error on our side that prevents your quiz from being shown despite a valid payment, we will try to either:",
+      secRefundsLi1: "extend the visibility of the quiz, or",
+      secRefundsLi2: "discuss a refund, depending on the situation and payment channel.",
+      secRefundsP3: "Refunds are always resolved individually, in line with the payment provider’s rules.",
+      secFaqTitle: "Frequently Asked Questions (FAQ)",
+      secFaqP1: "Question: How long does a quiz stay on the map?\nAnswer: A quiz is shown around the event date, with a focus on ±30 days around the quiz date, plus a short period afterwards as archive.",
+      secFaqP2: "Question: Is editing a quiz after publishing charged?\nAnswer: Minor edits (phone number, small text corrections) are usually free, while major changes of date/venue may be treated as a new listing.",
+      secFaqP3: "Question: Can I cancel a quiz?\nAnswer: Yes. If a quiz is cancelled, please let us know so we can update its status on the map (e.g. “cancelled” or removed).",
+      secContactTitle: "Contact and issue reporting",
+      secContactP1: "For any questions about payments, quiz display or technical issues, you can contact us at:\nEmail: info@balkanskakvizprica.com",
+      secContactP2: "When you contact us, please include:",
+      secContactLi1: "the quiz name and the city where it takes place,",
+      secContactLi2: "the quiz date and time,",
+      secContactLi3: "if possible, a payment confirmation (screenshot or transaction ID).",
+      footerMain: "Balkan Quiz Story – all quizzes in one place.",
+      footerSupport: "Support",
+      footerLegal: "Legal"
+    }
+  };
+
+  function applyTranslations() {
+    const dict = i18n[currentLang] || i18n.hr;
+    document.documentElement.lang = currentLang;
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (!key || !dict[key]) return;
+      // ako je tekst s \n, zamijeni za <br>
+      const value = dict[key];
+      if (value.includes("\\n") || value.includes("\n")) {
+        el.innerHTML = value.replace(/\\n/g, "<br>").replace(/\n/g, "<br>");
+      } else {
+        el.textContent = value;
+      }
+    });
+  }
+
+  function initLangToggle() {
+    const buttons = document.querySelectorAll(".lang-btn");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const lang = btn.getAttribute("data-lang");
+        if (!lang || lang === currentLang) return;
+        currentLang = lang;
+        buttons.forEach((b) => b.classList.toggle("active", b === btn));
+        applyTranslations();
+      });
+    });
+  }
+
+  function initYear() {
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initYear();
+    initLangToggle();
+    applyTranslations();
+  });
+</script>
+</body>
+</html>
