@@ -1946,16 +1946,30 @@ function getTypeLabel(type) {
       if (!openBtn || !backdrop || !closeBtn || !form) return;
 
       openBtn.addEventListener("click", () => {
-        backdrop.classList.remove("hidden");
-        // reset forme
-        form.reset();
-        if (latInput) latInput.value = "";
-        if (lngInput) lngInput.value = "";
-        if (addQuizMarker && map) {
-          map.removeLayer(addQuizMarker);
-          addQuizMarker = null;
-        }
-      });
+  backdrop.classList.remove("hidden");
+  // reset forme
+  form.reset();
+  if (latInput) latInput.value = "";
+  if (lngInput) lngInput.value = "";
+  if (addQuizMarker && map) {
+    map.removeLayer(addQuizMarker);
+    addQuizMarker = null;
+  }
+
+  // skrolaj do modala kad se otvori
+  if (backdrop.scrollIntoView) {
+    backdrop.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  }
+
+  // opcionalno: fokusiraj prvi input
+  const titleEl = document.getElementById("quiz-title");
+  if (titleEl) {
+    setTimeout(() => titleEl.focus(), 400);
+  }
+});
 
       closeBtn.addEventListener("click", () => {
         backdrop.classList.add("hidden");
