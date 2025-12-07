@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Legalno | Balkan Pub Quiz Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Pravne informacije, uvjeti korištenja, privatnost i kolačići za Balkan Pub Quiz Map.">
+  <link rel="canonical" href="https://zvonebeslic.github.io/legalno.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Legalno | Balkan Pub Quiz Map">
+  <meta property="og:description" content="Uvjeti korištenja, odgovornost organizatora kvizova, obrada podataka i kolačići.">
+  <meta property="og:url" content="https://zvonebeslic.github.io/legalno.html">
+  <meta property="og:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Legalno | Balkan Pub Quiz Map">
+  <meta name="twitter:description" content="Legal information for Balkan Pub Quiz Map.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-main: #120b07;
+      --bg-wood: #3b2414;
+      --bg-card: rgba(20, 10, 5, 0.9);
+      --accent: #f5c15b;
+      --accent-soft: #c07a2b;
+      --text-main: #f9efe0;
+      --text-muted: #c7b7a3;
+      --border-soft: rgba(250, 245, 230, 0.15);
+      --shadow-soft: 0 15px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255, 250, 220, 0.08), transparent 60%),
+        radial-gradient(circle at bottom right, rgba(255, 200, 150, 0.08), transparent 60%),
+        url("https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover fixed,
+        var(--bg-main);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 1.2rem;
+      background: linear-gradient(135deg, #1d1209, #381f12);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 20%, #ffe8a3, #e59f33);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow:
+        0 0 12px rgba(245, 193, 91, 0.7),
+        0 0 30px rgba(245, 193, 91, 0.2);
+      overflow: hidden;
+    }
+
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-main {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    .logo-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .nav-btn {
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: transparent;
+      color: var(--text-main);
+      font-size: 0.8rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: background 0.15s ease, transform 0.1s ease, border-color 0.15s ease;
+      text-decoration: none;
+    }
+
+    .nav-btn--primary {
+      background: radial-gradient(circle at 30% 20%, #ffe8a3, var(--accent-soft));
+      color: #2b1608;
+      border-color: rgba(255, 220, 160, 0.7);
+      font-weight: 600;
+    }
+
+    .nav-btn:hover {
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .nav-btn--primary:hover {
+      background: radial-gradient(circle at 30% 20%, #fff0c4, #e19122);
+    }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: inline-flex;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      overflow: hidden;
+      font-size: 0.75rem;
+    }
+
+    .lang-btn {
+      padding: 0.25rem 0.55rem;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: rgba(0,0,0,0.6);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Main layout */
+    .page-wrapper {
+      flex: 1;
+      max-width: 900px;
+      width: 100%;
+      margin: 1.5rem auto 0;
+      padding: 0 1.2rem 1rem;
+    }
+
+    .page-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(10px);
+      padding: 1.3rem 1.4rem 1.2rem;
+    }
+
+    .page-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .page-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+    }
+
+    .section-block {
+      margin-bottom: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: var(--accent);
+    }
+
+    .section-text {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    .section-text + .section-text {
+      margin-top: 0.45rem;
+    }
+
+    ul.section-list {
+      margin-top: 0.35rem;
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    ul.section-list li + li {
+      margin-top: 0.25rem;
+    }
+
+    .highlight-box {
+      margin-top: 0.6rem;
+      padding: 0.7rem 0.8rem;
+      border-radius: 14px;
+      border: 1px dashed rgba(245, 193, 91, 0.6);
+      background: rgba(0,0,0,0.35);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    .site-footer {
+      text-align: center;
+      padding: 0.9rem 0.9rem 1rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.85));
+      margin-top: 0.4rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+    }
+
+    .footer-links a {
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.25rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(245, 193, 91, 0.45);
+      background: rgba(0, 0, 0, 0.5);
+      transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      background: radial-gradient(circle at 20% 0, #ffe8a3, var(--accent-soft));
+      color: #2b1608;
+      transform: translateY(-1px);
+      box-shadow: 0 0 12px rgba(245, 193, 91, 0.5);
+    }
+
+    .footer-icons {
+      margin-top: 0.55rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+
+    .footer-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.65);
+      color: var(--accent);
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+    }
+
+    .footer-icon:hover {
+      background: radial-gradient(circle at 20% 0, #ffe8a3, var(--accent-soft));
+      color: #2b1608;
+      transform: translateY(-1px);
+      box-shadow: 0 0 10px rgba(245, 193, 91, 0.6);
+    }
+
+    .footer-copy {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+    }
+
+    @media (max-width: 768px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.45rem;
+        padding: 0.7rem 0.7rem;
+      }
+
+      .top-nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 0.35rem;
+      }
+
+      .page-wrapper {
+        margin-top: 1rem;
+        padding: 0 0.7rem 0.9rem;
+      }
+
+      .page-card {
+        padding: 1rem 0.9rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="logo-wrap">
+    <div class="logo-icon">
+      <img src="images/pub_kviz_logo.jpg" alt="Balkan Pub Quiz logo">
+    </div>
+    <div class="logo-text">
+      <span class="logo-main" data-i18n="logoMain">Balkanska Kviz Priča</span>
+      <span class="logo-sub" data-i18n="logoSub">Mapa kvizova po Balkanu</span>
+    </div>
+  </div>
+  <nav class="top-nav">
+    <a href="index.html" class="nav-btn nav-btn--primary" data-i18n="btnHome">Natrag na mapu</a>
+
+    <div class="lang-toggle" aria-label="Language">
+      <button class="lang-btn active" data-lang="hr">HR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </nav>
+</header>
+
+<main class="page-wrapper">
+  <article class="page-card">
+    <h1 class="page-title" data-i18n="legalTitle">Pravne informacije i uvjeti korištenja</h1>
+    <p class="page-subtitle" data-i18n="legalSubtitle">
+      Ova stranica služi kao sažeti pregled pravila korištenja platforme Balkan Pub Quiz Map, kao i načina na koji postupamo s podacima koje unose organizatori kvizova.
+    </p>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secUseTitle">1. Uvjeti korištenja platforme</h2>
+      <p class="section-text" data-i18n="secUseP1">
+        Platforma Balkan Pub Quiz Map služi kao informativna karta pub kvizova na području Balkana. Svi korisnici koji objavljuju kvizove (“organizatori”) odgovorni su za točnost podataka koje unose (naziv, lokacija, datum, vrijeme, kontakt, nagrade i sl.).
+      </p>
+      <p class="section-text" data-i18n="secUseP2">
+        Korištenjem stranice prihvaćaš da:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secUseLi1">nećeš unositi uvredljiv, nezakonit ili obmanjujući sadržaj,</li>
+        <li data-i18n="secUseLi2">nećeš objavljivati kvizove koji potiču mržnju, diskriminaciju ili nasilje,</li>
+        <li data-i18n="secUseLi3">ćeš po potrebi ažurirati ili otkazati kviz ako dođe do promjene.</li>
+      </ul>
+      <p class="section-text" data-i18n="secUseP3">
+        U slučaju sumnje na zlouporabu, zadržavamo pravo ukloniti pojedine kvizove ili privremeno/onemogućiti pristup objavljivanju.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secLiabilityTitle">2. Odgovornost za sadržaj kvizova</h2>
+      <p class="section-text" data-i18n="secLiabilityP1">
+        Platforma djeluje kao posrednik za prikaz informacija. Ne organiziramo sami kvizove i nismo odgovorni za:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secLiabilityLi1">eventualne promjene termina, otkazivanja ili kašnjenja kviza,</li>
+        <li data-i18n="secLiabilityLi2">stvarnu kvalitetu kviza, nagrada ili usluge u lokalu,</li>
+        <li data-i18n="secLiabilityLi3">bilo kakvu štetu nastalu sudjelovanjem na događaju.</li>
+      </ul>
+      <p class="section-text" data-i18n="secLiabilityP2">
+        Sve informacije o kvizovima (uključujući nagrade, pravila sudjelovanja i dodatne uvjete) pod punom su odgovornošću organizatora koji kviz objavljuje.
+      </p>
+    </section>
+
+     <section class="section-block">
+      <h2 class="section-title" data-i18n="secPrivacyTitle">3. Podaci i privatnost</h2>
+      <p class="section-text" data-i18n="secPrivacyP1">
+        Pri objavi kviza prikupljamo osnovne podatke koje sam unosiš: naziv kviza, naziv lokala, lokaciju, datum i vrijeme, eventualni kontakt telefon i opis nagrada. Ti podaci služe isključivo za prikaz na mapi i lakše informiranje potencijalnih sudionika.
+      </p>
+      <p class="section-text" data-i18n="secPrivacyP2">
+        Ne prikupljamo osjetljive osobne podatke sudionika kviza. Kontakt email za podršku služi za komunikaciju s organizatorima i upite vezane uz objave.
+      </p>
+      <p class="section-text" data-i18n="secPrivacyP3">
+        U slučaju da koristiš usluge trećih strana za plaćanje (npr. PayPal), podaci o kartici/računu obrađuju se isključivo kod tih pružatelja, u skladu s njihovim pravilima privatnosti. Platforma Balkan Pub Quiz Map nema uvid u brojeve kartica ili lozinke.
+      </p>
+      <div class="highlight-box">
+        <p data-i18n="secPrivacyNote">
+          Savjet: za detaljno pravno tumačenje vezano uz zaštitu podataka i GDPR u svojoj državi, preporučujemo da se obratiš stručnjaku za pravo ili nadležnom tijelu za zaštitu podataka. Ovaj tekst nije pravni savjet, već informativni sažetak.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secCookiesTitle">4. Kolačići i analitika</h2>
+      <p class="section-text" data-i18n="secCookiesP1">
+        Stranica može koristiti osnovne kolačiće i/ili jednostavnu analitiku (npr. broj posjeta, pregled uređaja, osnovna statistika posjećenosti). Cilj je razumjeti kako se stranica koristi i poboljšati korisničko iskustvo.
+      </p>
+      <p class="section-text" data-i18n="secCookiesP2">
+        Ne koristimo kolačiće za agresivno praćenje ili prodaju osobnih podataka trećim stranama. Ako se u budućnosti uvedu dodatni alati (npr. napredna analitika), korisnici će biti jasno informirani.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secIPTitle">5. Intelektualno vlasništvo</h2>
+      <p class="section-text" data-i18n="secIPP1">
+        Sadržaj platforme – dizajn, vizualni elementi, tekstovi opisani kao dio brenda “Balkanska Kviz Priča” ili “Balkan Pub Quiz Map” – zaštićeni su autorskim pravima organizatora stranice, osim gdje je drugačije naznačeno.
+      </p>
+      <p class="section-text" data-i18n="secIPP2">
+        Korištenje logotipa, naziva i dizajna brenda bez prethodnog odobrenja nije dopušteno. Organizatori kvizova zadržavaju prava na vlastite nazive kvizova, logo svojih lokala i druge brend elemente koje unose, pod uvjetom da imaju pravo koristiti ih.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secChangesTitle">6. Izmjene pravila</h2>
+      <p class="section-text" data-i18n="secChangesP1">
+        Pravila korištenja i ovi sažeti uvjeti mogu se povremeno ažurirati, primjerice pri uvođenju novih funkcija (npr. napredne statistike, dodatnih mogućnosti za organizatore) ili promjena u načinu plaćanja.
+      </p>
+      <p class="section-text" data-i18n="secChangesP2">
+        Nastavkom korištenja stranice nakon izmjena smatra se da prihvaćaš nova pravila. Preporučujemo povremenu provjeru ove stranice kako bi bio u tijeku s mogućim promjenama.
+      </p>
+    </section>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="podrska.html" data-i18n="footerSupport">Podrška</a>
+    <a href="legalno.html" data-i18n="footerLegal">Legalno</a>
+  </div>
+
+  <div class="footer-icons">
+    <a href="https://instagram.com/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
+      <span>IG</span>
+    </a>
+    <a href="mailto:info@balkanskakvizprica.com" class="footer-icon" aria-label="Email">
+      ✉
+    </a>
+  </div>
+
+  <p class="footer-copy">
+    © <span id="year"></span>
+    <span data-i18n="footerMain">Balkanska Kviz Priča – svi kvizovi na jednom mjestu.</span>
+  </p>
+</footer>
+
+<script>
+  let currentLang = "hr";
+
+  const i18n = {
+    hr: {
+      logoMain: "Balkanska Kviz Priča",
+      logoSub: "Mapa kvizova po Balkanu",
+      btnHome: "Natrag na mapu",
+      legalTitle: "Pravne informacije i uvjeti korištenja",
+      legalSubtitle: "Ova stranica služi kao sažeti pregled pravila korištenja platforme Balkan Pub Quiz Map, kao i načina na koji postupamo s podacima koje unose organizatori kvizova.",
+      secUseTitle: "1. Uvjeti korištenja platforme",
+      secUseP1: "Platforma Balkan Pub Quiz Map služi kao informativna karta pub kvizova na području Balkana. Svi korisnici koji objavljuju kvizove (“organizatori”) odgovorni su za točnost podataka koje unose (naziv, lokacija, datum, vrijeme, kontakt, nagrade i sl.).",
+      secUseP2: "Korištenjem stranice prihvaćaš da:",
+      secUseLi1: "nećeš unositi uvredljiv, nezakonit ili obmanjujući sadržaj,",
+      secUseLi2: "nećeš objavljivati kvizove koji potiču mržnju, diskriminaciju ili nasilje,",
+      secUseLi3: "ćeš po potrebi ažurirati ili otkazati kviz ako dođe do promjene.",
+      secUseP3: "U slučaju sumnje na zlouporabu, zadržavamo pravo ukloniti pojedine kvizove ili privremeno/onemogućiti pristup objavljivanju.",
+      secLiabilityTitle: "2. Odgovornost za sadržaj kvizova",
+      secLiabilityP1: "Platforma djeluje kao posrednik za prikaz informacija. Ne organiziramo sami kvizove i nismo odgovorni za:",
+      secLiabilityLi1: "eventualne promjene termina, otkazivanja ili kašnjenja kviza,",
+      secLiabilityLi2: "stvarnu kvalitetu kviza, nagrada ili usluge u lokalu,",
+      secLiabilityLi3: "bilo kakvu štetu nastalu sudjelovanjem na događaju.",
+      secLiabilityP2: "Sve informacije o kvizovima (uključujući nagrade, pravila sudjelovanja i dodatne uvjete) pod punom su odgovornošću organizatora koji kviz objavljuje.",
+      secPrivacyTitle: "3. Podaci i privatnost",
+      secPrivacyP1: "Pri objavi kviza prikupljamo osnovne podatke koje sam unosiš: naziv kviza, naziv lokala, lokaciju, datum i vrijeme, eventualni kontakt telefon i opis nagrada. Ti podaci služe isključivo za prikaz na mapi i lakše informiranje potencijalnih sudionika.",
+      secPrivacyP2: "Ne prikupljamo osjetljive osobne podatke sudionika kviza. Kontakt email za podršku služi za komunikaciju s organizatorima i upite vezane uz objave.",
+      secPrivacyP3: "U slučaju da koristiš usluge trećih strana za plaćanje (npr. PayPal), podaci o kartici/računu obrađuju se isključivo kod tih pružatelja, u skladu s njihovim pravilima privatnosti. Platforma Balkan Pub Quiz Map nema uvid u brojeve kartica ili lozinke.",
+      secPrivacyNote: "Savjet: za detaljno pravno tumačenje vezano uz zaštitu podataka i GDPR u svojoj državi, preporučujemo da se obratiš stručnjaku za pravo ili nadležnom tijelu za zaštitu podataka. Ovaj tekst nije pravni savjet, već informativni sažetak.",
+      secCookiesTitle: "4. Kolačići i analitika",
+      secCookiesP1: "Stranica može koristiti osnovne kolačiće i/ili jednostavnu analitiku (npr. broj posjeta, pregled uređaja, osnovna statistika posjećenosti). Cilj je razumjeti kako se stranica koristi i poboljšati korisničko iskustvo.",
+      secCookiesP2: "Ne koristimo kolačiće za agresivno praćenje ili prodaju osobnih podataka trećim stranama. Ako se u budućnosti uvedu dodatni alati (npr. napredna analitika), korisnici će biti jasno informirani.",
+      secIPTitle: "5. Intelektualno vlasništvo",
+      secIPP1: "Sadržaj platforme – dizajn, vizualni elementi, tekstovi opisani kao dio brenda “Balkanska Kviz Priča” ili “Balkan Pub Quiz Map” – zaštićeni su autorskim pravima organizatora stranice, osim gdje je drugačije naznačeno.",
+      secIPP2: "Korištenje logotipa, naziva i dizajna brenda bez prethodnog odobrenja nije dopušteno. Organizatori kvizova zadržavaju prava na vlastite nazive kvizova, logo svojih lokala i druge brend elemente koje unose, pod uvjetom da imaju pravo koristiti ih.",
+      secChangesTitle: "6. Izmjene pravila",
+      secChangesP1: "Pravila korištenja i ovi sažeti uvjeti mogu se povremeno ažurirati, primjerice pri uvođenju novih funkcija (npr. napredne statistike, dodatnih mogućnosti za organizatore) ili promjena u načinu plaćanja.",
+      secChangesP2: "Nastavkom korištenja stranice nakon izmjena smatra se da prihvaćaš nova pravila. Preporučujemo povremenu provjeru ove stranice kako bi bio u tijeku s mogućim promjenama.",
+      footerMain: "Balkanska Kviz Priča – svi kvizovi na jednom mjestu.",
+      footerSupport: "Podrška",
+      footerLegal: "Legalno"
+    },
+    en: {
+      logoMain: "Balkan Pub Quiz Story",
+      logoSub: "Quiz map across the Balkans",
+      btnHome: "Back to map",
+      legalTitle: "Legal information and terms of use",
+      legalSubtitle: "This page summarises the basic rules for using the Balkan Pub Quiz Map platform, and how we handle the data entered by quiz organisers.",
+      secUseTitle: "1. Platform terms of use",
+      secUseP1: "Balkan Pub Quiz Map is an informational map of pub quizzes in the Balkans. All users who publish quizzes (“organisers”) are responsible for the accuracy of the data they submit (title, location, date, time, contact, prizes, etc.).",
+      secUseP2: "By using this website you agree that you will:",
+      secUseLi1: "not submit offensive, illegal or misleading content,",
+      secUseLi2: "not publish quizzes that promote hatred, discrimination or violence,",
+      secUseLi3: "update or cancel your quiz where necessary if details change.",
+      secUseP3: "If misuse is suspected, we reserve the right to remove certain quizzes or limit publishing access.",
+      secLiabilityTitle: "2. Liability for quiz content",
+      secLiabilityP1: "The platform acts as an information intermediary. We do not organise the quizzes ourselves and we are not responsible for:",
+      secLiabilityLi1: "any changes of time, cancellations or delays of the quiz,",
+      secLiabilityLi2: "the actual quality of the quiz, prizes or venue service,",
+      secLiabilityLi3: "any damage arising from participation in the event.",
+      secLiabilityP2: "All information about the quizzes (including prizes, participation rules and additional terms) is the sole responsibility of the organiser who publishes the quiz.",
+      secPrivacyTitle: "3. Data and privacy",
+      secPrivacyP1: "When publishing a quiz we collect the basic details you enter: quiz title, venue name, location, date and time, optional contact phone and prize description. This data is used solely to display the quiz on the map and inform potential participants.",
+      secPrivacyP2: "We do not collect sensitive personal data of quiz participants. The support email is used for communication with organisers and questions related to listings.",
+      secPrivacyP3: "If you use third-party payment services (e.g. PayPal), your card/account details are processed exclusively by those providers, according to their privacy policies. The Balkan Pub Quiz Map platform has no access to card numbers or passwords.",
+      secPrivacyNote: "Note: for detailed legal guidance about data protection and GDPR in your country, please consult a qualified legal professional or the competent data protection authority. This text is not legal advice, but an informational summary.",
+      secCookiesTitle: "4. Cookies and analytics",
+      secCookiesP1: "The website may use basic cookies and/or simple analytics (e.g. number of visits, device overview, basic usage statistics). The goal is to understand how the site is used and improve the user experience.",
+      secCookiesP2: "We do not use cookies for aggressive tracking or selling personal data to third parties. If more advanced tools (e.g. extended analytics) are introduced in the future, users will be clearly informed.",
+      secIPTitle: "5. Intellectual property",
+      secIPP1: "The platform content – design, visual elements, texts branded as “Balkanska Kviz Priča” or “Balkan Pub Quiz Map” – is protected by the organiser’s copyright, unless stated otherwise.",
+      secIPP2: "Use of the logo, name and brand design without prior permission is not allowed. Quiz organisers retain rights to their own quiz names, venue logos and other brand elements they submit, provided they have the right to use them.",
+      secChangesTitle: "6. Changes to the rules",
+      secChangesP1: "The terms of use and this summary may be updated from time to time, for example when introducing new features (such as advanced stats or new tools for organisers) or changes in payment methods.",
+      secChangesP2: "By continuing to use the site after such changes you are deemed to accept the updated rules. We recommend revisiting this page occasionally to stay informed.",
+      footerMain: "Balkan Quiz Story – all quizzes in one place.",
+      footerSupport: "Support",
+      footerLegal: "Legal"
+    }
+  };
+
+  function applyTranslations() {
+    const dict = i18n[currentLang] || i18n.hr;
+    document.documentElement.lang = currentLang;
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (!key || !dict[key]) return;
+      const value = dict[key];
+      if (value.includes("\\n") || value.includes("\n")) {
+        el.innerHTML = value.replace(/\\n/g, "<br>").replace(/\n/g, "<br>");
+      } else {
+        el.textContent = value;
+      }
+    });
+  }
+
+  function initLangToggle() {
+    const buttons = document.querySelectorAll(".lang-btn");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const lang = btn.getAttribute("data-lang");
+        if (!lang || lang === currentLang) return;
+        currentLang = lang;
+        buttons.forEach((b) => b.classList.toggle("active", b === btn));
+        applyTranslations();
+      });
+    });
+  }
+
+  function initYear() {
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initYear();
+    initLangToggle();
+    applyTranslations();
+  });
+</script>
+</body>
+</html>
