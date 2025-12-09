@@ -402,6 +402,14 @@ body {
     color: #ffe6ad;
 }
 
+/* Max team size */
+
+.quiz-team {
+    margin-top: 0.2rem;
+    font-size: 0.74rem;
+    color: var(--text-muted);
+}
+
 /* Status badge */
 
 .quiz-status {
@@ -843,7 +851,7 @@ body {
                     Uključi moju lokaciju
                 </button>
 
-                <!-- Radijus se pokazuje tek nakon uspješne lokacije, a zatim ostaje vidljiv -->
+                <!-- Radijus se pokazuje tek nakon uspješne lokacije, a zatim ostaje vidljiv dok je lokacija aktivna -->
                 <div id="radius-wrapper" class="radius-wrapper">
                     <label class="radius-label" for="radius-select" data-i18n="radiusLabel">Radijus pretrage:</label>
                     <select id="radius-select">
@@ -856,6 +864,14 @@ body {
                 </div>
 
                 <p id="location-status" class="status-text"></p>
+                <button
+                  id="clear-location-btn"
+                  class="btn"
+                  data-i18n="btnClearLocation"
+                  style="margin-top:0.3rem; font-size:0.72rem; padding:0.25rem 0.6rem; display:none;"
+                >
+                  Ukloni lokaciju
+                </button>
             </section>
 
             <section class="card">
@@ -955,6 +971,18 @@ body {
                     <label>
                         <span data-i18n="fieldDateTime">Datum i vrijeme</span>
                         <input type="datetime-local" id="quiz-datetime" required>
+                    </label>
+
+                    <!-- Max team size -->
+                    <label>
+                        <span data-i18n="fieldTeamSize">Maksimalan broj ljudi u ekipi</span>
+                        <input
+                          type="number"
+                          id="team-size"
+                          min="1"
+                          max="20"
+                          placeholder="Npr. 5"
+                        >
                     </label>
 
                     <!-- Google Maps link ili koordinate -->
@@ -1074,9 +1102,6 @@ const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 /* --- PAYPAL LINK --- */
-/**
- * OVDJE zalijepiš svoj stvarni PayPal.Me ili checkout link za uplatu.
- */
 const PAYPAL_CHECKOUT_URL = "PUT_YOUR_PAYPAL_LINK_HERE";
 
 /* --- jednostavna i18n mapa --- */
@@ -1093,6 +1118,7 @@ const i18n = {
     cardFindTitle: "Pronađi kviz u blizini",
     cardFindText: "Uključi lokaciju da ti pokažemo najbliže kvizove u idućih 30 dana.",
     btnUseLocation: "Uključi moju lokaciju",
+    btnClearLocation: "Ukloni lokaciju",
     radiusLabel: "Radijus pretrage:",
     radiusAll: "Prikaži sve",
     cardTypeTitle: "Vrsta kviza",
@@ -1116,6 +1142,7 @@ const i18n = {
     fieldVenueName: "Naziv lokala / bara",
     fieldType: "Vrsta kviza",
     fieldDateTime: "Datum i vrijeme",
+    fieldTeamSize: "Maksimalan broj ljudi u ekipi",
     fieldMapsLink: "Google Maps link lokala",
     fieldPhone: "Broj za rezervacije (opcionalno)",
     btnOpenMaps: "Otvori Maps",
@@ -1133,7 +1160,8 @@ const i18n = {
     prizesLabel: "Nagrade",
     locEnabled: "Lokacija uključena – filtriramo kvizove po tvojoj poziciji.",
     locError: "Lokaciju nije moguće dobiti. Provjeri dozvole u pregledniku.",
-    locRequesting: "Tražimo tvoju lokaciju..."
+    locRequesting: "Tražimo tvoju lokaciju...",
+    locCleared: "Lokacija je uklonjena. Prikazujemo sve kvizove."
   },
   en: {
     logoMain: "Balkan Pub Quiz Story",
@@ -1144,6 +1172,7 @@ const i18n = {
     cardFindTitle: "Find a quiz nearby",
     cardFindText: "Enable location to see the closest quizzes in the next 30 days.",
     btnUseLocation: "Use my location",
+    btnClearLocation: "Remove location",
     radiusLabel: "Search radius:",
     radiusAll: "Show all",
     cardTypeTitle: "Quiz type",
@@ -1167,6 +1196,7 @@ const i18n = {
     fieldVenueName: "Venue name (bar/pub)",
     fieldType: "Quiz type",
     fieldDateTime: "Date and time",
+    fieldTeamSize: "Max team size",
     fieldMapsLink: "Google Maps link",
     fieldPhone: "Reservation phone (optional)",
     btnOpenMaps: "Open Maps",
@@ -1184,7 +1214,8 @@ const i18n = {
     prizesLabel: "Prizes",
     locEnabled: "Location enabled – filtering quizzes by your position.",
     locError: "Could not get your location. Please check browser permissions.",
-    locRequesting: "Requesting your location..."
+    locRequesting: "Requesting your location...",
+    locCleared: "Location cleared. Showing all quizzes."
   }
 };
 
@@ -1229,6 +1260,7 @@ const demoQuizzes = [
     prize3: "",
     prizeExtra: "",
     phone: "+387 62 000 000",
+    teamSize: 5,
     source: "demo"
   },
   {
@@ -1239,6 +1271,7 @@ const demoQuizzes = [
     venue: "Stari Grad Pub, Mostar",
     lat: 43.3438,
     lng: 17.8078,
+    teamSize: 4,
     source: "demo"
   },
   {
@@ -1249,6 +1282,7 @@ const demoQuizzes = [
     venue: "Sports Bar, Zagreb",
     lat: 45.815,
     lng: 15.9819,
+    teamSize: 5,
     source: "demo"
   },
   {
@@ -1259,6 +1293,7 @@ const demoQuizzes = [
     venue: "Pub Lavirint, Beograd",
     lat: 44.7866,
     lng: 20.4489,
+    teamSize: 4,
     source: "demo"
   },
   {
@@ -1269,6 +1304,7 @@ const demoQuizzes = [
     venue: "Planinski bar, Podgorica",
     lat: 42.4304,
     lng: 19.2594,
+    teamSize: 6,
     source: "demo"
   }
 ];
@@ -1390,6 +1426,12 @@ function ensureRadiusVisible() {
   radiusWrapper.classList.add("visible");
 }
 
+function hideRadiusWrapper() {
+  const radiusWrapper = document.getElementById("radius-wrapper");
+  if (!radiusWrapper) return;
+  radiusWrapper.classList.remove("visible");
+}
+
 function restoreLocationFromLocal() {
   const stored = loadUserLocationFromLocal();
   if (!stored) return;
@@ -1404,11 +1446,6 @@ function restoreLocationFromLocal() {
 
 /* ----------------- SUPABASE BACKEND ----------------- */
 
-/**
- * Čitanje kvizova iz Supabase tablice "Quizzes".
- * Očekuje stupce:
- *  id, title, type, datetime, venue, lat, lng, prize1, prize2, prize3, prize_extra, phone
- */
 async function loadQuizzesFromSupabase() {
   if (!supabaseClient) return [];
   try {
@@ -1437,6 +1474,7 @@ async function loadQuizzesFromSupabase() {
       prize3: row.prize3 || "",
       prizeExtra: row.prize_extra || "",
       phone: row.phone || "",
+      teamSize: row.team_size || null,
       source: "supabase"
     }));
   } catch (e) {
@@ -1563,23 +1601,33 @@ function refreshMarkers() {
 
     const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${quiz.lat},${quiz.lng}`;
 
+    const teamText =
+      quiz.teamSize && !Number.isNaN(quiz.teamSize)
+        ? `<br>${currentLang === "en" ? "Max team: " : "Max ljudi u ekipi: "}${quiz.teamSize}`
+        : "";
+
     marker.bindPopup(`
       <strong>${quiz.title}</strong><br>
       ${quiz.venue || ""}<br>
-      ${dateStr}<br>
+      ${dateStr}${teamText}<br>
       <a href="${mapsUrl}" target="_blank" rel="noopener">Google Maps</a>
     `);
 
     marker.addTo(markersLayer);
   });
 
-  // korisnička lokacija
+  // korisnička lokacija – poseban marker (circleMarker, jasno vidljiv)
   if (userLocation) {
     if (userLocationMarker) {
       userLocationMarker.setLatLng(userLocation);
+      userLocationMarker.addTo(markersLayer);
     } else {
-      userLocationMarker = L.marker(userLocation, {
-        icon: createMarkerIcon("black")
+      userLocationMarker = L.circleMarker(userLocation, {
+        radius: 8,
+        fillColor: "#050608",
+        color: "#ffffff",
+        weight: 2,
+        fillOpacity: 1
       }).addTo(markersLayer);
     }
   }
@@ -1777,6 +1825,17 @@ function renderQuizzes() {
     if (quiz.phone) li.appendChild(phone);
     li.appendChild(meta);
 
+    // max team size
+    if (quiz.teamSize && !Number.isNaN(quiz.teamSize)) {
+      const teamEl = document.createElement("div");
+      teamEl.className = "quiz-team";
+      teamEl.textContent =
+        currentLang === "en"
+          ? `Max team size: ${quiz.teamSize}`
+          : `Max ljudi u ekipi: ${quiz.teamSize}`;
+      li.appendChild(teamEl);
+    }
+
     // Google Maps link
     if (typeof quiz.lat === "number" && typeof quiz.lng === "number") {
       const mapsLink = document.createElement("a");
@@ -1845,10 +1904,16 @@ function updateLocationStatusText(messageKeyOverride) {
   } else {
     statusEl.textContent = "";
   }
+
+  const clearBtn = document.getElementById("clear-location-btn");
+  if (clearBtn) {
+    clearBtn.style.display = userLocation ? "inline-flex" : "none";
+  }
 }
 
 function initLocationSearch() {
   const btn = document.getElementById("use-location-btn");
+  const clearBtn = document.getElementById("clear-location-btn");
   if (!btn) return;
 
   btn.addEventListener("click", () => {
@@ -1886,6 +1951,24 @@ function initLocationSearch() {
       }
     );
   });
+
+  if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+      userLocation = null;
+      localStorage.removeItem(LOCATION_STORAGE_KEY);
+      hideRadiusWrapper();
+      updateLocationStatusText("locCleared");
+      if (markersLayer && userLocationMarker) {
+        markersLayer.removeLayer(userLocationMarker);
+      }
+      userLocationMarker = null;
+      renderQuizzes();
+      refreshMarkers();
+      if (map) {
+        map.fitBounds(BALKAN_BOUNDS, { padding: [20, 20] });
+      }
+    });
+  }
 }
 
 /* ----------------- MODAL ZA DODAVANJE KVIZA ----------------- */
@@ -1999,6 +2082,7 @@ function initAddQuizModal() {
     const prize2El = document.getElementById("prize-2");
     const prize3El = document.getElementById("prize-3");
     const prizeExtraEl = document.getElementById("prize-extra");
+    const teamSizeEl = document.getElementById("team-size");
 
     if (!titleEl || !venueEl || !typeEl || !dtEl || !mapsInput || !latInput || !lngInput) {
       return;
@@ -2021,6 +2105,11 @@ function initAddQuizModal() {
       return;
     }
 
+    const teamSizeValue =
+      teamSizeEl && teamSizeEl.value
+        ? parseInt(teamSizeEl.value, 10)
+        : null;
+
     const newQuiz = {
       id: `user-${Date.now()}`,
       title: titleEl.value.trim(),
@@ -2034,6 +2123,7 @@ function initAddQuizModal() {
       prize2: prize2El && prize2El.value ? prize2El.value.trim() : "",
       prize3: prize3El && prize3El.value ? prize3El.value.trim() : "",
       prizeExtra: prizeExtraEl && prizeExtraEl.value ? prizeExtraEl.value.trim() : "",
+      teamSize: !Number.isNaN(teamSizeValue) && teamSizeValue > 0 ? teamSizeValue : null,
       source: "user"
     };
 
@@ -2053,7 +2143,8 @@ function initAddQuizModal() {
         prize2: newQuiz.prize2,
         prize3: newQuiz.prize3,
         prize_extra: newQuiz.prizeExtra,
-        phone: newQuiz.phone
+        phone: newQuiz.phone,
+        team_size: newQuiz.teamSize
       });
       if (error) {
         console.error("Supabase insert error:", error);
