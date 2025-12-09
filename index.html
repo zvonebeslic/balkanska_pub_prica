@@ -2188,13 +2188,10 @@ function initTestKnowledgeButton() {
   if (!btn) return;
 
   btn.addEventListener("click", () => {
-    alert(
-      currentLang === "en"
-        ? "Mini quiz feature is coming soon!"
-        : "Mini kviz za testiranje znanja stiže uskoro!"
-    );
+    window.location.href = "testiraj.html";
   });
 }
+        
     </script>
 </body>
 </html>
