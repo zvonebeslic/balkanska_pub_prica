@@ -1,1 +1,1602 @@
-
+[
+  {
+    "id": 1,
+    "type": "story",
+    "difficulty": 2,
+    "question": "Godine 1969. svijet je pratio prijenos prvog slijetanja čovjeka na Mjesec. Misija Apollo 11 spustila je lunarni modul Eagle na površinu našeg prirodnog satelita. Kako se zvao astronaut koji je prvi zakoračio na Mjesec?",
+    "answers": ["Neil Armstrong", "Armstrong"],
+    "image": null
+  },
+  {
+    "id": 2,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U ljeto 1914. atentat u Sarajevu pokrenuo je lanac događaja koji će dovesti do Prvog svjetskog rata. Mladić koji je pucao na Franju Ferdinanda bio je član organizacije Mlada Bosna. Kako se zvao taj atentator?",
+    "answers": ["Gavrilo Princip", "Princip"],
+    "image": null
+  },
+  {
+    "id": 3,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Krajem 15. stoljeća moreplovac u službi španjolske krune krenuo je na zapad tražeći morski put do Indije i slučajno stigao do Novog svijeta. Njegovo prvo pristajanje bilo je na otocima današnjih Kariba. Kako se zvao taj moreplovac?",
+    "answers": ["Kristofor Kolumbo", "Kristofor Kolumb", "Christopher Columbus", "Kolumbo", "Columbus"],
+    "image": null
+  },
+  {
+    "id": 4,
+    "type": "story",
+    "difficulty": 2,
+    "question": "U grčkoj mitologiji, bog mora prikazivan je s trozupcem u ruci, kao vladar oceana i potresa. Bio je brat Zeusa i Hada. Kako se zove taj bog?",
+    "answers": ["Posejdon", "Poseidon"],
+    "image": null
+  },
+  {
+    "id": 5,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Tijekom Drugog svjetskog rata savezničke snage izvele su veliku amfibijsku invaziju na obalu Normandije 6. lipnja 1944. Ova operacija smatra se početkom kraja nacističke Njemačke na zapadnom frontu. Kako se zvala ta operacija kodnog imena?",
+    "answers": ["Operacija Overlord", "Overlord"],
+    "image": null
+  },
+  {
+    "id": 6,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U starom Egiptu ovaj se faraon proslavio gradnjom velike piramide u Gizi, jedne od sedam svjetskih čuda antičkog svijeta. Njegovo ime često se navodi uz samu piramidu. Kako se zvao taj faraon?",
+    "answers": ["Keops", "Khufu", "Kufu"],
+    "image": null
+  },
+  {
+    "id": 7,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U 19. stoljeću jedan je engleski prirodoslovac na putovanju brodom Beagle promatrao vrste na Galapagosu i kasnije objavio djelo O podrijetlu vrsta. Njegova teorija evolucije promijenila je znanost. Kako se zvao taj znanstvenik?",
+    "answers": ["Charles Darwin", "Darwin"],
+    "image": null
+  },
+  {
+    "id": 8,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U američkoj povijesti 16. predsjednik države vodio je zemlju kroz Građanski rat i potpisao Proglas o emancipaciji robova. Ubijen je u kazalištu 1865. u Washingtonu. Kako se zvao taj predsjednik?",
+    "answers": ["Abraham Lincoln", "Lincoln"],
+    "image": null
+  },
+  {
+    "id": 9,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U antičkom svijetu ovaj je grad bio središte moćnog carstva u Mezopotamiji i dom legendarnih Visećih vrtova, jednog od sedam čuda antičkog svijeta. Nalazio se na području današnjeg Iraka. Kako se zvao taj grad?",
+    "answers": ["Babilon", "Babylon"],
+    "image": null
+  },
+  {
+    "id": 10,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ova slavna renesansna slika prikazuje ženu tajanstvenog osmijeha, a čuva se u muzeju Louvre u Parizu. Autor je talijanski umjetnik Leonardo da Vinci. Kako se zove ta slika?",
+    "answers": ["Mona Lisa"],
+    "image": null
+  },
+  {
+    "id": 11,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj engleski pjesnik i dramatičar s kraja 16. i početka 17. stoljeća autor je tragedija Hamlet, Macbeth i Kralj Lear. Smatra se jednim od najvećih pisaca u povijesti. Kako se zove?",
+    "answers": ["William Shakespeare", "Shakespeare"],
+    "image": null
+  },
+  {
+    "id": 12,
+    "type": "story",
+    "difficulty": 2,
+    "question": "U našem Sunčevom sustavu postoji planet prepoznatljiv po svojim upečatljivim prstenovima, sastavljenim od leda i kamenja. Ovo je drugi najveći planet nakon Jupitera. Kako se zove taj planet?",
+    "answers": ["Saturn"],
+    "image": null
+  },
+  {
+    "id": 13,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Slavni talijanski istraživač iz 13. stoljeća putovao je Putem svile do Kine i svoj boravak na dvoru Kublaj-kana kasnije opisao u putopisima. Njegovo ime povezano je s legendom o putovanju na Istok. Kako se zvao?",
+    "answers": ["Marko Polo", "Marco Polo"],
+    "image": null
+  },
+  {
+    "id": 14,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U 20. stoljeću jedan je znanstvenik postavio teoriju relativnosti i promijenio način na koji razumijemo prostor i vrijeme. Njegovo prezime gotovo je postalo sinonim za genijalnost. Kako se zove taj fizičar?",
+    "answers": ["Albert Einstein", "Einstein"],
+    "image": null
+  },
+  {
+    "id": 15,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj poznati moreplovac bio je prvi koji je pod vodstvom portugalske krune oplovio Rt dobre nade i otvorio morski put prema Indiji. Time je započelo novo doba trgovine i kolonijalizma. Kako se zvao taj moreplovac?",
+    "answers": ["Vasco da Gama", "Da Gama"],
+    "image": null
+  },
+  {
+    "id": 16,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U grčkoj mitologiji junak je krenuo u Trojanski rat kako bi vratio Helenu, ženu spartanskog kralja Menelaja. Postao je poznat po svojoj snazi, ali i tragičnoj sudbini pete. Kako se zove taj junak?",
+    "answers": ["Ahilej", "Ahil", "Achilles"],
+    "image": null
+  },
+  {
+    "id": 17,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U Bibliji, ova se barka spominje kao veliko plovilo koje je, prema priči, izgrađeno kako bi spasilo životinje i ljude od globalnog potopa. Kako se zvala barka ili čiji je to bio kovčeg?",
+    "answers": ["Noina arka", "Noa", "Noina lađa"],
+    "image": null
+  },
+  {
+    "id": 18,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ova država nastala je kao federacija trinaest britanskih kolonija koje su 1776. potpisale Deklaraciju o nezavisnosti. Danas je jedna od najutjecajnijih sila svijeta. Kako se zove ta država?",
+    "answers": ["Sjedinjene Američke Države", "SAD", "Sjedinjene Države", "United States", "USA"],
+    "image": null
+  },
+  {
+    "id": 19,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U Drugom svjetskom ratu britanski premijer poznat po svojim govorima o borbi do kraja i rečenici da nikada neće kapitulirati pred neprijateljem postao je simbol otpora protiv nacizma. Kako se zvao taj premijer?",
+    "answers": ["Winston Churchill", "Churchill"],
+    "image": null
+  },
+  {
+    "id": 20,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj talijanski grad bio je središte moćne pomorske republike i ostavio je snažan trag u arhitekturi i umjetnosti. Poznat je po kanalima, gondolama i karnevalu. Kako se zove taj grad?",
+    "answers": ["Venecija", "Venezia", "Venice"],
+    "image": null
+  },
+  {
+    "id": 21,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Krajem 18. stoljeća u Parizu je srušena Bastilja, a narod je podigao revoluciju protiv apsolutističke vlasti. Ovaj važan događaj smatra se početkom Francuske revolucije. Kojeg se datuma 1789. godine to zbilo?",
+    "answers": ["14. srpnja 1789", "14. juli 1789", "14.7.1789", "14.07.1789"],
+    "image": null
+  },
+  {
+    "id": 22,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U antičkom Rimu titula za vrhovnog vladara nakon propasti Republike postala je sinonim za cara. Počinje s imenom prvog vladara koji je nosio tu titulu, i kasnije je postala opći naziv. Koja je to titula?",
+    "answers": ["Cezar", "Caesar"],
+    "image": null
+  },
+  {
+    "id": 23,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj ruski pisac napisao je epski roman Rat i mir, koji se bavi Napoleonskim ratovima i životom ruskog plemstva. Djelo se smatra jednim od najvažnijih romana svjetske književnosti. Kako se zvao autor?",
+    "answers": ["Lav Tolstoj", "Leo Tolstoy", "Tolstoj"],
+    "image": null
+  },
+  {
+    "id": 24,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U mitologiji nordijskih naroda, bog groma nosio je čekić Mjolnir i bio zaštitnik ljudi i bogova. Njegovo ime danas se često spominje u stripovima i filmovima. Kako se zove taj bog?",
+    "answers": ["Thor", "Tor"],
+    "image": null
+  },
+  {
+    "id": 25,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj je talijanski grad bio kolijevka renesanse i dom obitelji Medici. U njemu su stvarali umjetnici poput Michelangela i Botticellija, a na obali rijeke Arno prolazi poznati most Ponte Vecchio. Kako se zove grad?",
+    "answers": ["Firenca", "Firenze", "Florence"],
+    "image": null
+  },
+  {
+    "id": 26,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Matematička konstanta koja se približno iznosi 3,14159 često se koristi pri računanju opsega i površine kruga. Označava se grčkim slovom i beskonačan je, neperiodičan decimalni broj. Kako se zove ta konstanta?",
+    "answers": ["Pi"],
+    "image": null
+  },
+  {
+    "id": 27,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U kemiji, ova plemenita plinovita tvar sa simbolom He drugi je najzastupljeniji element u svemiru nakon vodika. Često se koristi za punjenje balona. Kako se zove taj element?",
+    "answers": ["Helij", "Helium"],
+    "image": null
+  },
+  {
+    "id": 28,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj slavni skladatelj klasične glazbe rođen u Salzburgu kao čudo od djeteta, komponirao je simfonije, opere i komorne skladbe. Umro je relativno mlad u Beču. Kako se zvao?",
+    "answers": ["Wolfgang Amadeus Mozart", "Mozart"],
+    "image": null
+  },
+  {
+    "id": 29,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti Balkana, bitka na Kosovu polju 1389. godine postala je važan simbol otpora protiv Osmanskog Carstva. Srpska vojska suprotstavila se sultanu Muratu Prvom. Kako se zvao srpski knez koji je predvodio vojsku?",
+    "answers": ["Knez Lazar", "Lazar Hrebeljanović", "Lazar"],
+    "image": null
+  },
+  {
+    "id": 30,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj psiholog i neurolog rođen u Beču poznat je kao utemeljitelj psihoanalize. Bavio se interpretacijom snova i podsvijesti, a njegov rad snažno je utjecao na 20. stoljeće. Kako se zove?",
+    "answers": ["Sigmund Freud", "Freud"],
+    "image": null
+  },
+  {
+    "id": 31,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Fizička veličina koja opisuje količinu tvari u nekom tijelu mjeri se u kilogramima u SI sustavu. Često se brka s težinom, ali je zapravo različit pojam. Kako se zove ta veličina?",
+    "answers": ["Masa"],
+    "image": null
+  },
+  {
+    "id": 32,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti znanosti, poljski astronom uveo je heliocentrični sustav prema kojem se Zemlja okreće oko Sunca, a ne obrnuto. Njegovo je djelo De revolutionibus orbium coelestium promijenilo sliku svijeta. Kako se zvao?",
+    "answers": ["Nikola Kopernik", "Mikołaj Kopernik", "Nicolaus Copernicus", "Kopernik"],
+    "image": null
+  },
+  {
+    "id": 33,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Na Drini ćuprija opisuje povijest jednog grada i mosta na rijeci Drini kroz nekoliko stoljeća. Autor je bosanskohercegovački pisac i dobitnik Nobelove nagrade. Kako se zove taj pisac?",
+    "answers": ["Ivo Andrić", "Andrić"],
+    "image": null
+  },
+  {
+    "id": 34,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U islamskoj tradiciji, grad u kojem je Poslanik Muhamed rođen i u kojem se nalazi Kaba smatra se najsvetijim mjestom islama. Tamo godišnje hodočasti milijune vjernika. Kako se zove taj grad?",
+    "answers": ["Meka", "Mecca", "Mekka"],
+    "image": null
+  },
+  {
+    "id": 35,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj slavni fizikalni eksperiment govori o mački zatvorenoj u kutiji koja je istodobno živa i mrtva dok je ne otvorimo, kao ilustracija kvantne superpozicije. Uz koje se prezime fizičara veže ta misao?",
+    "answers": ["Schrödinger", "Schrodinger"],
+    "image": null
+  },
+  {
+    "id": 36,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu sporta, klub iz Barcelone poznat je po svojoj nogometnoj akademiji La Masia i sloganom Više od kluba. Igra u dresovima plave i grimizne boje. Kako se zove taj nogometni klub?",
+    "answers": ["Barcelona", "FC Barcelona", "Barca"],
+    "image": null
+  },
+  {
+    "id": 37,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti glazbe, britanski rock sastav osnovan u Londonu 1960-ih postao je jedan od najutjecajnijih bendova svih vremena, a članovi su bili John, Paul, George i Ringo. Kako se zvao taj bend?",
+    "answers": ["The Beatles", "Beatles"],
+    "image": null
+  },
+  {
+    "id": 38,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U svijetu filma, Oscar za najbolji film dodjeljuje američka Akademija filmskih umjetnosti i znanosti. Kako se na engleskom jeziku službeno zove ta nagrada, skraćeno kao Academy Awards?",
+    "answers": ["Academy Award for Best Picture", "Academy Award", "Academy Awards"],
+    "image": null
+  },
+  {
+    "id": 39,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Metoda u matematici koja se bavi derivacijama i integralima nastala je u 17. stoljeću zahvaljujući radovima Newtona i Leibniza. Danas je temelj mnogih područja fizike i tehnike. Kako se zove ovo područje matematike?",
+    "answers": ["Infinitesimalni račun", "Kalkulus", "Diferencijalni i integralni račun"],
+    "image": null
+  },
+  {
+    "id": 40,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj kontinent dom je Amazonske prašume, Anda i rijeke Parane, a na njemu se nalaze države poput Brazila, Argentine i Perua. Kako se zove taj kontinent?",
+    "answers": ["Južna Amerika", "Juzna Amerika", "South America"],
+    "image": null
+  },
+  {
+    "id": 41,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu umjetnosti, nizozemski slikar poznat po rezanom uhu i slikama poput Zvjezdana noć i Suncokreti nije doživio slavu za života. Kako se zvao taj slikar?",
+    "answers": ["Vincent van Gogh", "Van Gogh"],
+    "image": null
+  },
+  {
+    "id": 42,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U molekularnoj biologiji, ova molekula u obliku dvostruke zavojnice nosi genetske informacije živih organizama. Sastoji se od nukleotida i baza adenin, timin, citozin i gvanin. Kako se zove ta molekula?",
+    "answers": ["DNK", "DNA", "Deoksiribonukleinska kiselina"],
+    "image": null
+  },
+  {
+    "id": 43,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti književnosti, roman Zločin i kazna prati studenta u Sankt Peterburgu koji počini ubojstvo i bori se s osjećajem krivnje. Autor je ruski pisac iz 19. stoljeća. Kako se zove taj autor?",
+    "answers": ["Fjodor Mihajlovič Dostojevski", "Fjodor Dostojevski", "Dostojevski", "Dostoevsky"],
+    "image": null
+  },
+  {
+    "id": 44,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Ova matematičarka i fizičarka rođena u Poljskoj, a kasnije djelovala u Francuskoj, dobila je dvije Nobelove nagrade za svoj rad na radiju i poloniju. Kako se zove ova pionirka u istraživanju radioaktivnosti?",
+    "answers": ["Marie Curie", "Maria Skłodowska Curie", "Marie Skłodowska Curie"],
+    "image": null
+  },
+  {
+    "id": 45,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj jezik pripada romanskoj skupini, službeni je u državama poput Francuske, Belgije i Švicarske, a često se naziva jezikom diplomacije i umjetnosti. Kako se zove taj jezik?",
+    "answers": ["Francuski", "francuski jezik", "French"],
+    "image": null
+  },
+  {
+    "id": 46,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U europskoj povijesti, razdoblje otprilike između 5. i 15. stoljeća često se naziva srednjim vijekom. Kako se na latinskom jeziku naziva taj period, skraćeno u izrazu koji doslovno znači srednje doba?",
+    "answers": ["Medium aevum", "medieval", "medium aevi"],
+    "image": null
+  },
+  {
+    "id": 47,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U staroj Grčkoj, ovaj je grad-država bio poznat po svojoj ratničkoj kulturi, spartanskoj disciplini i odgoju dječaka u vojnike. Suprotstavljao se Ateni u Peloponeskom ratu. Kako se zvao taj grad?",
+    "answers": ["Sparta"],
+    "image": null
+  },
+  {
+    "id": 48,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj slavni brod smatran je nepotopivim, ali je 1912. godine udario u ledenjak i potonuo tijekom svog prvog putovanja od Europe prema New Yorku. Kako se zvao taj brod?",
+    "answers": ["Titanic"],
+    "image": null
+  },
+  {
+    "id": 49,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U filozofiji, grčki mislilac iz Atene, učenik Sokrata i učitelj Aristotela, napisao je dijaloge kao što su Država i Gozba. Smatra se jednim od utemeljitelja zapadne filozofije. Kako se zove?",
+    "answers": ["Platon", "Plato"],
+    "image": null
+  },
+  {
+    "id": 50,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu astronomije, ovaj je teleskop lansiran 1990. godine i smješten u orbitu Zemlje, a dao je neke od najpoznatijih fotografija svemira. Nazvan je po američkom astronomu. Kako se zove teleskop?",
+    "answers": ["Hubble", "Hubble Space Telescope"],
+    "image": null
+  },
+  {
+    "id": 51,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj njemački skladatelj kasnog 18. i ranog 19. stoljeća poznat je po simfonijama, sonatama i činjenici da je dio svojih najvećih djela skladao gotovo potpuno gluh. Kako se zvao?",
+    "answers": ["Ludwig van Beethoven", "Beethoven"],
+    "image": null
+  },
+  {
+    "id": 52,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti matematike, ovaj grčki mislilac poznat je po poučku o odnosu stranica u pravokutnom trokutu i glasovitom uzviku kad je otkrio zakon o istiskivanju tekućine. Kako se zove?",
+    "answers": ["Arhimed", "Archimedes"],
+    "image": null
+  },
+  {
+    "id": 53,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti Balkana, ovaj srednjovjekovni bosanski vladar proširio je granice Bosne, vodio borbe s Ugarskom i često se naziva najvećim bosanskim banom, a kasnije kraljem. Kako se zvao?",
+    "answers": ["Tvrtko I", "Tvrtko Kotromanić", "Tvrtko", "Tvrtko I Kotromanić"],
+    "image": null
+  },
+  {
+    "id": 54,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu književnosti, roman Mali princ govori o dječaku s drugog planeta i njegovim putovanjima, a iza jednostavne priče kriju se duboke poruke. Kako se zvao autor ovog djela?",
+    "answers": ["Antoine de Saint Exupéry", "Antoine de Saint-Exupéry", "Saint Exupéry", "Saint-Exupéry"],
+    "image": null
+  },
+  {
+    "id": 55,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti glazbe, američki jazz saksofonist i skladatelj poznat po albumima A Love Supreme i Giant Steps smatra se jednim od najvećih inovatora jazz glazbe. Kako se zvao?",
+    "answers": ["John Coltrane", "Coltrane"],
+    "image": null
+  },
+  {
+    "id": 56,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U geografiji, ova velika pustinja prostire se na sjeveru Afrike i najveća je vruća pustinja na svijetu. Proteže se kroz zemlje poput Alžira, Libije i Egipta. Kako se zove?",
+    "answers": ["Sahara"],
+    "image": null
+  },
+  {
+    "id": 57,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti medicine, britanski liječnik otkrio je da cijepljenje protiv boginja korištenjem kravlji boginja može spriječiti bolest kod ljudi. Smatra se ocem imunologije. Kako se zvao taj liječnik?",
+    "answers": ["Edward Jenner", "Jenner"],
+    "image": null
+  },
+  {
+    "id": 58,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U nogometu, reprezentacija ove južnoameričke zemlje osvojila je najviše naslova svjetskog prvaka, a njeni dresovi su žuto-zelene boje. Kako se zove ta država?",
+    "answers": ["Brazil"],
+    "image": null
+  },
+  {
+    "id": 59,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, trilogija Gospodar prstenova temelji se na romanima engleskog književnika, a prati putovanje hobita koji nosi Prsten moći do Mordora. Kako se zove autor knjiga?",
+    "answers": ["J. R. R. Tolkien", "JRR Tolkien", "Tolkien"],
+    "image": null
+  },
+  {
+    "id": 60,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U politologiji, sustav vlasti u kojem narod neposredno ili putem izabranih predstavnika sudjeluje u odlučivanju naziva se vlašću naroda. Kako se zove taj oblik vlasti?",
+    "answers": ["Demokracija"],
+    "image": null
+  },
+  {
+    "id": 61,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti, ova je vojna organizacija nastala u srednjem vijeku kao red kršćanskih vitezova čija je prvotna zadaća bila štititi hodočasnike u Svetoj zemlji. Kasnije su postali iznimno bogati i moćni. Kako se zvao taj red?",
+    "answers": ["Templari", "Vitezovi templari", "Knights Templar", "Templarski red"],
+    "image": null
+  },
+  {
+    "id": 62,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj je kontinent najmanji po površini, ali cijeli ujedno čini i jednu državu koja slovi za bogatu rudama i jedinstvenom faunom, poput klokana i koala. Kako se zove taj kontinent država?",
+    "answers": ["Australija", "Australia"],
+    "image": null
+  },
+  {
+    "id": 63,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, britanski pjevač poznat po albumu Thriller, jednom od najprodavanijih albuma svih vremena, nazivan je kraljem popa. Kako se zvao taj izvođač?",
+    "answers": ["Michael Jackson", "Jackson"],
+    "image": null
+  },
+  {
+    "id": 64,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kvantnoj fizici, načelo koje kaže da ne možemo istodobno točno odrediti položaj i brzinu čestice povezano je s jednim njemačkim fizičarom. Kako se zove to načelo ili prezime fizičara?",
+    "answers": ["Heisenbergovo načelo neodređenosti", "Heisenberg"],
+    "image": null
+  },
+  {
+    "id": 65,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, lik dječaka koji nikad ne odraste i živi u Nedođiji, u društvu Zvončice i Izgubljenih dječaka, stvorio je škotski pisac J. M. Barrie. Kako se zove taj lik?",
+    "answers": ["Petar Pan", "Peter Pan"],
+    "image": null
+  },
+  {
+    "id": 66,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Ovo razdoblje u europskoj povijesti obilježeno je preporodom umjetnosti, znanosti i humanizma te se razvilo u Italiji od 14. stoljeća, a kasnije proširilo cijelom Europom. Kako se zove ovo razdoblje?",
+    "answers": ["Renesansa", "Renaissance"],
+    "image": null
+  },
+  {
+    "id": 67,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, ova teorija opisuje ponašanje vrlo sitnih čestica, gdje klasična mehanika više ne vrijedi, a pojavljuju se pojmovi poput valne funkcije i superpozicije. Kako se zove to područje fizike?",
+    "answers": ["Kvantna mehanika", "kvantna fizika"],
+    "image": null
+  },
+  {
+    "id": 68,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svjetskoj povijesti, Zid koji je dijelio jedan europski grad na istočni i zapadni dio srušen je 1989. godine i simbolizirao je kraj Hladnog rata. Kako se zvao taj zid?",
+    "answers": ["Berlinski zid", "Berlin Wall"],
+    "image": null
+  },
+  {
+    "id": 69,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, imaginarna jedinica definira se kao broj čiji je kvadrat jednak minus jedan. Označava se jednim slovom. Kako se zove ili označava ta imaginarna jedinica?",
+    "answers": ["i"],
+    "image": null
+  },
+  {
+    "id": 70,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj lik iz suvremenih kriminalističkih romana švedskog autora Stiega Larssona hakerica je s tetovažama i teškom prošlošću, a pojavljuje se u trilogiji Milenij. Kako se zove taj ženski lik?",
+    "answers": ["Lisbeth Salander", "Salander"],
+    "image": null
+  },
+  {
+    "id": 71,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U anatomiji, najveći ljudski organ po površini nalazi se izvana i štiti tijelo te sudjeluje u termoregulaciji. Kako se zove taj organ?",
+    "answers": ["Koža", "koza", "Skin"],
+    "image": null
+  },
+  {
+    "id": 72,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, sila koja privlači tijela jedno prema drugome proporcionalno njihovim masama i obrnuto proporcionalno kvadratu udaljenosti naziva se univerzalnom gravitacijskom silom. Po kojem slavnom znanstveniku nosi ime srodni zakon?",
+    "answers": ["Newton", "Isaac Newton", "Newtonov zakon gravitacije"],
+    "image": null
+  },
+  {
+    "id": 73,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, Venecija, Genova i Pisa bile su moćne talijanske pomorske republike. Ipak, jedan je grad kasnije postao središte ujedinjenja Italije i prijestolnica moderne države. Kako se zove taj grad?",
+    "answers": ["Rim", "Roma", "Rome"],
+    "image": null
+  },
+  {
+    "id": 74,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu sporta, ovaj švicarski tenisač osvojio je 20 Grand Slam naslova i dugo bio na vrhu ATP ljestvice. Poznat je po elegantnom stilu igre. Kako se zove?",
+    "answers": ["Roger Federer", "Federer"],
+    "image": null
+  },
+  {
+    "id": 75,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman 1984. opisuje distopijski svijet nadzora, propagande i Velikog Brata. Autor ovog romana bio je engleski pisac koji je kritizirao totalitarizam. Kako se zvao?",
+    "answers": ["George Orwell", "Orwell"],
+    "image": null
+  },
+  {
+    "id": 76,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, NaCl je formula spoja koji svakodnevno koristimo u prehrani, a sastoji se od iona natrija i klora. Kako se naziva taj spoj u kućanstvu?",
+    "answers": ["Kuhinjska sol", "sol", "natrijev klorid"],
+    "image": null
+  },
+  {
+    "id": 77,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti Balkana, ovaj je grad bio glavni grad Kraljevine Jugoslavije i danas je prijestolnica Srbije. Leži na ušću Save u Dunav. Kako se zove?",
+    "answers": ["Beograd", "Belgrade"],
+    "image": null
+  },
+  {
+    "id": 78,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Ovaj francuski general i državnik proglasio se carem početkom 19. stoljeća, osvojio velik dio Europe i konačno bio poražen kod Waterlooa. Kako se zvao?",
+    "answers": ["Napoleon Bonaparte", "Napoleon"],
+    "image": null
+  },
+  {
+    "id": 79,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U glazbi, ovaj britanski bend iz Manchestera 1990-ih objavio je hitove Wonderwall i Don't Look Back in Anger, a braća Gallagher bila su u središtu medijske pozornosti. Kako se zvao bend?",
+    "answers": ["Oasis"],
+    "image": null
+  },
+  {
+    "id": 80,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Roman Ana Karenjina pripovijeda o tragičnoj ljubavi u ruskom društvu 19. stoljeća. Autor je isti pisac koji je napisao Rat i mir. Kako se zove taj pisac?",
+    "answers": ["Lav Tolstoj", "Leo Tolstoy", "Tolstoj"],
+    "image": null
+  },
+  {
+    "id": 81,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti Kine, duga obrambena struktura proteže se tisućama kilometara kroz sjeverni dio zemlje, a gradila se stoljećima kako bi se spriječili upadi nomadskih plemena. Kako se zove ta građevina?",
+    "answers": ["Kineski zid", "Kineski veliki zid", "Great Wall of China"],
+    "image": null
+  },
+  {
+    "id": 82,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U religiji, ova sveta knjiga kršćanstva sastoji se od Starog i Novog zavjeta i prevedena je na gotovo sve jezike svijeta. Kako se zove?",
+    "answers": ["Biblija"],
+    "image": null
+  },
+  {
+    "id": 83,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U biologiji, proces kojim biljke uz pomoć svjetlosti, vode i ugljikova dioksida stvaraju glukozu i kisik odvija se u kloroplastima. Kako se zove taj proces?",
+    "answers": ["Fotosinteza", "photosinteza", "photosynthesis"],
+    "image": null
+  },
+  {
+    "id": 84,
+    "type": "story",
+    "difficulty": 3,
+    "question": "Ovaj jezik pripada slavenskoj skupini i službeni je jezik u Poljskoj. Piše se latinicom, a poznat je po složenim suglasničkim skupinama. Kako se zove taj jezik?",
+    "answers": ["Poljski", "poljski jezik"],
+    "image": null
+  },
+  {
+    "id": 85,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti fizike, američki projekt tijekom Drugog svjetskog rata razvio je prvu atomsku bombu, a ime je dobio po planinskom lancu u SAD-u. Kako se zvao taj projekt?",
+    "answers": ["Projekt Manhattan", "Manhattan Project"],
+    "image": null
+  },
+  {
+    "id": 86,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu književnosti, serija romana o mladom čarobnjaku koji pohađa školu magije Hogwarts postala je globalni fenomen. Kako se zove taj lik?",
+    "answers": ["Harry Potter"],
+    "image": null
+  },
+  {
+    "id": 87,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U geometriji, trokut koji ima sve tri stranice različitih duljina zove se posebnim nazivom, za razliku od jednakostraničnog i jednakokračnog. Kako se zove takav trokut?",
+    "answers": ["Raznostranični trokut", "skaleni trokut", "raznostranični"],
+    "image": null
+  },
+  {
+    "id": 88,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U antičkoj mitologiji, junak je morao obaviti dvanaest gotovo nemogućih zadataka, među kojima su ubijanje Nemejskog lava i čišćenje Augijevih štala. Kako se zvao taj junak?",
+    "answers": ["Heraklo", "Herkul", "Herakles", "Hercules"],
+    "image": null
+  },
+  {
+    "id": 89,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu pop kulture, filmska saga koja počinje epizodom Nova nada prati borbu Jedi vitezova protiv Sitha i Imperija, a odvija se u dalekoj galaksiji. Kako se zove ova filmska franšiza?",
+    "answers": ["Ratovi zvijezda", "Star Wars"],
+    "image": null
+  },
+  {
+    "id": 90,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Ovaj francuski pisac 19. stoljeća autor je djela Jadnici, koje prati život Jeana Valjeana i oslikava društvo Pariza tog vremena. Kako se zove pisac?",
+    "answers": ["Victor Hugo", "Hugo"],
+    "image": null
+  },
+  {
+    "id": 91,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, pH vrijednost 7 označava neutralnu otopinu. Kako se zove vodena otopina čija je pH vrijednost manja od 7?",
+    "answers": ["Kisela otopina", "kisela", "kiselina"],
+    "image": null
+  },
+  {
+    "id": 92,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U geografiji, ova rijeka protječe kroz Egipat i često se naziva darom Egipta, jer je omogućila razvoj civilizacije uz svoju obalu. Kako se zove ta rijeka?",
+    "answers": ["Nil", "Nile"],
+    "image": null
+  },
+  {
+    "id": 93,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti umjetnosti, talijanski kipar i arhitekt iz 17. stoljeća smatra se glavnim predstavnikom baroka, a poznat je po skulpturi Ekstaza svete Terezije. Kako se zvao?",
+    "answers": ["Gian Lorenzo Bernini", "Bernini"],
+    "image": null
+  },
+  {
+    "id": 94,
+    "type": "story",
+    "difficulty": 4,
+    "question": "Ovaj grčki filozof razvijao je logiku, etiku i metafiziku, bio učitelj Aleksandra Velikog i osnivač peripatetičke škole u Ateni. Kako se zvao?",
+    "answers": ["Aristotel", "Aristotle"],
+    "image": null
+  },
+  {
+    "id": 95,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U sportu, svjetsko prvenstvo u nogometu održava se svake četiri godine, a organizira ga globalna nogometna organizacija. Kako se zove ta organizacija skraćeno?",
+    "answers": ["FIFA"],
+    "image": null
+  },
+  {
+    "id": 96,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U glazbi, Ludwig van Beethoven skladao je poznatu Devetu simfoniju, čiji završni dio koristi tekst Ode radosti. Na kojem je jeziku napisan originalni tekst te pjesme?",
+    "answers": ["Njemački", "njemacki", "njemački jezik"],
+    "image": null
+  },
+  {
+    "id": 97,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U astronomiji, galaksija u kojoj se nalazi naš Sunčev sustav ima oblik spiralnog diska, a njezin naziv potječe od pojave svijetle trake na noćnom nebu. Kako se zove ta galaksija?",
+    "answers": ["Mliječna staza", "Mlijecna staza", "Milky Way"],
+    "image": null
+  },
+  {
+    "id": 98,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, Don Quijote je lik plemića koji poludi od čitanja viteških romana i kreće u borbu protiv vjetrenjača. Kako se zvao španjolski autor koji je stvorio ovaj lik?",
+    "answers": ["Miguel de Cervantes", "Cervantes"],
+    "image": null
+  },
+  {
+    "id": 99,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, reakcija pri kojoj tvar gubi elektrone naziva se posebnim nazivom, za razliku od redukcije kada elektrone prima. Kako se zove taj proces gubitka elektrona?",
+    "answers": ["Oksidacija"],
+    "image": null
+  },
+  {
+    "id": 100,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, jedinica za snagu u SI sustavu dobila je ime po škotskom inženjeru koji je unaprijedio parni stroj. Kako se zove ta jedinica?",
+    "answers": ["Vat", "watt", "W"],
+    "image": null
+  },
+  {
+    "id": 101,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti Balkana, ovaj je grad bio prijestolnica srednjovjekovne Hrvatske, a danas je poznat po katedrali sv. Lovre i UNESCO-ovoj zaštiti. Kako se zove taj dalmatinski grad?",
+    "answers": ["Trogir"],
+    "image": null
+  },
+  {
+    "id": 102,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U mitologiji, ptica koja se rađa iz vlastitog pepela simbol je uskrsnuća i vječnog života. Često se spominje u antičkim i srednjovjekovnim pričama. Kako se zove ta ptica?",
+    "answers": ["Feniks", "Phoenix"],
+    "image": null
+  },
+  {
+    "id": 103,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, irski rock bend osnovan u Dublinu, poznat po albumima The Joshua Tree i Achtung Baby, ima pjevača nadimka Bono. Kako se zove bend?",
+    "answers": ["U2"],
+    "image": null
+  },
+  {
+    "id": 104,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U biologiji, znanost koja proučava nasljeđivanje svojstava i varijabilnost organizama, uključujući gene i kromosome, naziva se posebnim imenom. Kako se zove ta znanost?",
+    "answers": ["Genetika"],
+    "image": null
+  },
+  {
+    "id": 105,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U crtanim filmovima, lik psa detektiva s karakterističnim glasom i ljubičastom ogrlicom rješava misterije sa svojom ekipom u kombiju nazvanom Mystery Machine. Kako se zove taj lik?",
+    "answers": ["Scooby Doo", "Scooby-Doo", "Skubi Du"],
+    "image": null
+  },
+  {
+    "id": 106,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U ekonomiji, opći porast razine cijena dobara i usluga tijekom vremena, koji smanjuje kupovnu moć novca, naziva se jednim pojmom. Kako se zove taj proces?",
+    "answers": ["Inflacija"],
+    "image": null
+  },
+  {
+    "id": 107,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, broj koji je djeljiv samo s jedan i samim sobom naziva se posebnim imenom. Kako se nazivaju takvi brojevi?",
+    "answers": ["Prosti brojevi", "prim brojevi", "prosti"],
+    "image": null
+  },
+  {
+    "id": 108,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, ova je bolest tijekom 14. stoljeća poharala Europu i usmrtila velik dio stanovništva, a širila se preko buha na štakorima. Kako se često naziva ta pandemija?",
+    "answers": ["Crna smrt", "kuga", "bubonska kuga"],
+    "image": null
+  },
+  {
+    "id": 109,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, rock bend iz Seattlea predvođen Kurtom Cobainom postao je simbol grunge pokreta početkom 1990-ih. Kako se zvao taj bend?",
+    "answers": ["Nirvana"],
+    "image": null
+  },
+  {
+    "id": 110,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Lovac u žitu prati tinejdžera Holdena Caulfielda kroz nekoliko dana njegova života u New Yorku. Kako se zvao američki pisac koji je napisao ovo djelo?",
+    "answers": ["J. D. Salinger", "JD Salinger", "Salinger"],
+    "image": null
+  },
+  {
+    "id": 111,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, temeljna čestica koja nosi elektromagnetsku interakciju i nema mirovanje mase naziva se kvant svjetlosti. Kako se zove ta čestica?",
+    "answers": ["Foton"],
+    "image": null
+  },
+  {
+    "id": 112,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti filozofije, njemački mislilac iz 18. stoljeća autor je Kritike čistog uma i poznat po kategorijskom imperativu. Kako se zove taj filozof?",
+    "answers": ["Immanuel Kant", "Kant"],
+    "image": null
+  },
+  {
+    "id": 113,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, redatelj Steven Spielberg režirao je film o dječaku koji se sprijatelji s vanzemaljcem, a naslov filma je kratica njegova imena. Kako se zove taj film?",
+    "answers": ["E.T.", "ET", "E.T. the Extra-Terrestrial"],
+    "image": null
+  },
+  {
+    "id": 114,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti Balkana, grad Dubrovnik bio je središte pomorske republike poznate po slobodi trgovine i diplomaciji. Kako se zvala ta povijesna država ili republika?",
+    "answers": ["Dubrovacka republika", "Dubrovačka republika", "Republika Ragusa", "Ragusa"],
+    "image": null
+  },
+  {
+    "id": 115,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti za djecu, priča o drvenom lutku koji želi postati pravi dječak i kojemu nos raste kad laže potječe iz Italije. Kako se zove taj lik?",
+    "answers": ["Pinokio", "Pinocchio"],
+    "image": null
+  },
+  {
+    "id": 116,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U astronomiji, tijelo koje kruži oko planeta, a nije umjetno napravljeno, naziva se prirodnim satelitom. Kako se zove prirodni satelit Zemlje?",
+    "answers": ["Mjesec", "Moon"],
+    "image": null
+  },
+  {
+    "id": 117,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, Spartak je bio vođa ustanka robova protiv Rima u 1. stoljeću prije Krista. Koja je bila njegova izvorna profesija prije nego je postao gladijator i vođa pobune?",
+    "answers": ["Vojnik", "tracijski vojnik", "vojnik iz Trakije"],
+    "image": null
+  },
+  {
+    "id": 118,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, agregatno stanje tvari pri kojem molekule imaju uređen raspored i zauzimaju određeni volumen i oblik naziva se jednim od tri osnovna stanja. Kako se zove to stanje?",
+    "answers": ["Kruto", "kruto stanje", "čvrsto stanje", "čvrsto"],
+    "image": null
+  },
+  {
+    "id": 119,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U filmu, serijal o arheologu s fedora šeširom i bičem u kojem traži izgubljene artefakte počinje filmom Otimači izgubljenog kovčega. Kako se zove taj filmski junak?",
+    "answers": ["Indiana Jones"],
+    "image": null
+  },
+  {
+    "id": 120,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti, hladni rat predstavlja razdoblje političke napetosti između dva bloka. Jedan je predvodio SAD, a drugi velika socijalistička država u Europi i Aziji. Kako se zvala ta država?",
+    "answers": ["Sovjetski Savez", "SSSR", "Sovjetski savez", "Soviet Union", "USSR"],
+    "image": null
+  },
+  {
+    "id": 121,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Alisa u zemlji čudesa govori o djevojčici koja pada u zečju rupu i ulazi u svijet bizarnosti. Kako se zvao engleski autor koji je napisao ovo djelo pod pseudonimom?",
+    "answers": ["Lewis Carroll", "Charles Lutwidge Dodgson", "Carroll"],
+    "image": null
+  },
+  {
+    "id": 122,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, niz brojeva 1, 1, 2, 3, 5, 8, 13 i tako dalje, u kojem je svaki sljedeći broj zbroj prethodna dva, naziva se po talijanskom matematičaru. Kako se zove taj niz?",
+    "answers": ["Fibonaccijev niz", "Fibonacci niz"],
+    "image": null
+  },
+  {
+    "id": 123,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, Freddie Mercury bio je pjevač britanskog rock benda poznatog po pjesmama Bohemian Rhapsody i We Will Rock You. Kako se zove taj bend?",
+    "answers": ["Queen"],
+    "image": null
+  },
+  {
+    "id": 124,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U biologiji, znanost koja proučava ponašanje životinja i ljudi u prirodnim i umjetnim uvjetima naziva se posebnim imenom. Kako se zove ta znanost?",
+    "answers": ["Etologija"],
+    "image": null
+  },
+  {
+    "id": 125,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti Balkana, vrijeme osmanske vladavine ostavilo je trag u arhitekturi, gastronomiji i jeziku. Kako se zvao glavni grad Osmanskog Carstva, današnji Istanbul, u to doba?",
+    "answers": ["Carigrad", "Konstantinopol", "Konstantinopolis", "Constantinople"],
+    "image": null
+  },
+  {
+    "id": 126,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, Šerlok Holms je detektiv koji rješava zločine logikom i dedukcijom uz pomoć prijatelja dr. Watsona. Kako se zvao pisac koji je stvorio ovog lika?",
+    "answers": ["Arthur Conan Doyle", "Conan Doyle", "Doyle"],
+    "image": null
+  },
+  {
+    "id": 127,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U znanosti o Zemlji, ploče koje plivaju na astenosferi i čije se kretanje očituje u pomicanju kontinenata i nastanku potresa i vulkana zovu se posebnim imenom. Kako se zovu te ploče?",
+    "answers": ["Litosferne ploče", "tektonske ploče", "tectonske ploče"],
+    "image": null
+  },
+  {
+    "id": 128,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu sporta, olimpijske igre modernog doba prvi put su održane 1896. godine u jednom europskom gradu, kolijevci antičkih igara. Kako se zove taj grad?",
+    "answers": ["Atena", "Athens"],
+    "image": null
+  },
+  {
+    "id": 129,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti filozofije, francuski mislilac 17. stoljeća poznat je po rečenici Mislim, dakle jesam i važan je za razvoj racionalizma. Kako se zove taj filozof?",
+    "answers": ["Rene Descartes", "René Descartes", "Descartes"],
+    "image": null
+  },
+  {
+    "id": 130,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U glazbi, festival Woodstock 1969. okupio je stotine tisuća ljudi i postao simbol hippie pokreta i rock kulture. U kojoj je državi održan taj festival?",
+    "answers": ["Sjedinjene Američke Države", "SAD", "United States", "USA"],
+    "image": null
+  },
+  {
+    "id": 131,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, element sa simbolom Au cijenjen je kroz povijest zbog svoje rijetkosti i sjaja, a koristi se u izradi nakita i kao monetarni standard. Kako se zove taj element?",
+    "answers": ["Zlato", "gold"],
+    "image": null
+  },
+  {
+    "id": 132,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Proces opisuje neobičnu sudsku proceduru protiv Josefa K. i djelo je češkog pisca koji je pisao na njemačkom jeziku. Kako se zove taj autor?",
+    "answers": ["Franz Kafka", "Kafka"],
+    "image": null
+  },
+  {
+    "id": 133,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, SI jedinica za električnu struju nazvana je po talijanskom fizičaru koji je proučavao strujne krugove. Kako se zove ta jedinica?",
+    "answers": ["Amper", "ampere", "A"],
+    "image": null
+  },
+  {
+    "id": 134,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, Dvorac Versailles kod Pariza simbol je apsolutističke vlasti i raskoši francuskih kraljeva. Koji je francuski kralj, poznat kao Kralj Sunce, najviše povezan s tim dvorcem?",
+    "answers": ["Luj XIV", "Louis XIV", "Luj 14."],
+    "image": null
+  },
+  {
+    "id": 135,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, funkcija koja je jednaka negativnoj vrijednosti u točki simetričnoj po ishodištu, odnosno zadovoljava f(-x) = -f(x), naziva se posebnim imenom. Kako se zove takva funkcija?",
+    "answers": ["Neparna funkcija", "antisimetrična funkcija", "neparna"],
+    "image": null
+  },
+  {
+    "id": 136,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, trilogija KUM prati uspon i pad mafijaške obitelji Corleone. Koji je redatelj potpisao ova tri filma?",
+    "answers": ["Francis Ford Coppola", "Coppola"],
+    "image": null
+  },
+  {
+    "id": 137,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U glazbi, švedski pop kvartet iz 1970-ih poznat je po hitovima kao Dancing Queen i Mamma Mia i nastupima na Eurosongu. Kako se zove taj bend?",
+    "answers": ["ABBA"],
+    "image": null
+  },
+  {
+    "id": 138,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, H2O je kemijska formula tvari koja je ključna za život, a na Zemlji se pojavljuje u sva tri agregatna stanja. Kako se zove ta tvar?",
+    "answers": ["Voda"],
+    "image": null
+  },
+  {
+    "id": 139,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Sto godina samoće opisuje povijest obitelji Buendía u izmišljenom gradu Macondu. Autor je kolumbijski nobelovac. Kako se zove taj pisac?",
+    "answers": ["Gabriel García Márquez", "Gabriel Garcia Marquez", "Marquez", "Márquez"],
+    "image": null
+  },
+  {
+    "id": 140,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U povijesti, Magna Carta iz 1215. godine ograničila je vlast engleskog kralja i dala određena prava plemstvu. Kako se zvao kralj koji je bio prisiljen potpisati ovaj dokument?",
+    "answers": ["Ivan Bez Zemlje", "Kralj Ivan", "John Lackland", "King John"],
+    "image": null
+  },
+  {
+    "id": 141,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U sportu, Olimpijske igre imaju moto sastavljen od tri latinske riječi koje znače brže, više, jače. Koja je prva riječ tog motta i na latinskom znači brže?",
+    "answers": ["Citius"],
+    "image": null
+  },
+  {
+    "id": 142,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, broj e približne vrijednosti 2,71828 važan je u rastu i složenom kamatnom računu te se naziva Eulerova konstanta. Kako se najčešće označava ta konstanta?",
+    "answers": ["e"],
+    "image": null
+  },
+  {
+    "id": 143,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U glazbi, kantautor Bob Dylan poznat je po protestnim pjesmama poput Blowin in the Wind i osvojio je Nobelovu nagradu za književnost. Iz koje države potječe Bob Dylan?",
+    "answers": ["Sjedinjene Američke Države", "SAD", "United States", "USA"],
+    "image": null
+  },
+  {
+    "id": 144,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U biologiji, zajednica biljaka i životinja koja se razvila na određenom staništu i prilagođena je njegovim uvjetima naziva se ekološkom zajednicom. Kako se na grčkom naziva ta zajednica, pojam koji koristimo i danas?",
+    "answers": ["Biocenoza"],
+    "image": null
+  },
+  {
+    "id": 145,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, tajni dokument iz 1917. godine u kojem je Njemačka nudila Meksiku savez protiv SAD-a, a koji su Britanci presreli i objavili, ubrzao je ulazak SAD-a u Prvi svjetski rat. Kako se zvao taj telegram?",
+    "answers": ["Zimmermannov telegram", "Zimmermann telegram"],
+    "image": null
+  },
+  {
+    "id": 146,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U logici, zaključivanje kod kojega iz općih premisa izvlačimo pojedinačni zaključak naziva se silogističkim zaključivanjem, a zove se jednim pojmom suprotnim indukciji. Kako se zove taj tip zaključivanja?",
+    "answers": ["Dedukcija", "deduktivno zaključivanje"],
+    "image": null
+  },
+  {
+    "id": 147,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, glumac Al Pacino tumačio je lik Michaela Corleonea u trilogiji KUM. Kako se zove glumac koji je glumio njegova oca Vita Corleonea u prvom filmu i dobio Oscara?",
+    "answers": ["Marlon Brando", "Brando"],
+    "image": null
+  },
+  {
+    "id": 148,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, periodni sustav elemenata raspoređuje elemente prema atomskom broju i ponavljajućim svojstvima. Kako se zove ruski kemičar koji se smatra utemeljiteljem modernog periodnog sustava?",
+    "answers": ["Dmitrij Mendeljejev", "Dmitri Mendelejev", "Dmitri Mendeleev", "Mendeljejev"],
+    "image": null
+  },
+  {
+    "id": 149,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Bratstvo poštenih ljudi i stripovi o Lucky Lukeu dijele zajedničku pozornicu Divljeg zapada. Kako se zove država u kojoj se većina radnje tih western priča odvija?",
+    "answers": ["Sjedinjene Američke Države", "SAD", "United States", "USA"],
+    "image": null
+  },
+  {
+    "id": 150,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, zakon koji kaže da je tlak u zatvorenoj tekućini jednako raspoređen u svim smjerovima naziva se po francuskom znanstveniku. Kako se zove taj zakon?",
+    "answers": ["Pascalov zakon", "Pascal"],
+    "image": null
+  },
+  {
+    "id": 151,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U glazbi, film Moulin Rouge! i cijela pariška kabare scena vezani su uz četvrt na brežuljku s poznatom bazilikom Sacré-Coeur. Kako se zove ta pariška četvrt?",
+    "answers": ["Montmartre", "Monmartr"],
+    "image": null
+  },
+  {
+    "id": 152,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, logaritamska funkcija je inverzna eksponencijalnoj. Kako se zove logaritam koji ima bazu e i često se koristi u analizi rasta i raspada?",
+    "answers": ["Prirodni logaritam", "ln", "naturalni logaritam"],
+    "image": null
+  },
+  {
+    "id": 153,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, Matrix je znanstvenofantastični film u kojem Neo otkriva da je svijet koji poznaje zapravo računalna simulacija. Koji je glumac tumačio lik Nea?",
+    "answers": ["Keanu Reeves", "Reeves"],
+    "image": null
+  },
+  {
+    "id": 154,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U biologiji, osnovna jedinica građe i funkcije svih živih bića naziva se posebnim pojmom. Kako se zove ta najmanja struktura koja još uvijek pokazuje osobine života?",
+    "answers": ["Stanica", "ćelija"],
+    "image": null
+  },
+  {
+    "id": 155,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Ime ruže prati franjevačkog redovnika Williama od Baskervillea dok istražuje niz ubojstava u srednjovjekovnom samostanu. Kako se zove talijanski autor ovog romana?",
+    "answers": ["Umberto Eco", "Eco"],
+    "image": null
+  },
+  {
+    "id": 156,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U glazbi, termin cappella označava pjevanje bez instrumentalne pratnje. Iz kojeg jezika potječe izraz a cappella i doslovno znači u kapeli?",
+    "answers": ["Talijanskog", "talijanski jezik", "talijanski"],
+    "image": null
+  },
+  {
+    "id": 157,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti sporta, ovaj jamajčanski sprinter smatra se najbržim čovjekom na svijetu i drži svjetski rekord na 100 metara. Kako se zove?",
+    "answers": ["Usain Bolt", "Bolt"],
+    "image": null
+  },
+  {
+    "id": 158,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, element sa simbolom C osnova je organske kemije i nalazi se u svim živim bićima. Kako se zove taj element?",
+    "answers": ["Ugljik", "karbon", "carbon"],
+    "image": null
+  },
+  {
+    "id": 159,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Ponos i predrasude prati obitelj Bennet i ljubavnu priču između Elizabeth i gospodina Darcyja. Kako se zvala autorica ovog romana?",
+    "answers": ["Jane Austen", "Austen"],
+    "image": null
+  },
+  {
+    "id": 160,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, sredstvo koje usmjerava svjetlost razbijajući je u spektar boja zove se posebnim imenom, često u obliku staklenog trostranog tijela. Kako se zove taj optički element?",
+    "answers": ["Prizma"],
+    "image": null
+  },
+  {
+    "id": 161,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, serija o mafijaškoj obitelji iz New Jerseyja koja kombinira obiteljski život i kriminalnu karijeru Tonyja Soprana smatra se jednom od najboljih TV serija svih vremena. Kako se zove ta serija?",
+    "answers": ["Sopranovi", "The Sopranos"],
+    "image": null
+  },
+  {
+    "id": 162,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, funkcija koja brzo raste i često se koristi za opisivanje populacijskog rasta u idealnim uvjetima ima oblik a na x. Kako se zove takva funkcija?",
+    "answers": ["Eksponencijalna funkcija", "eksponencijalna"],
+    "image": null
+  },
+  {
+    "id": 163,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, pokret otpora u Francuskoj tijekom nacističke okupacije uključivao je sabotaže i špijunažu. Kako se na francuskom zvao taj pokret, općenito naziv za otpor?",
+    "answers": ["Résistance", "Resistance"],
+    "image": null
+  },
+  {
+    "id": 164,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, trilogija Milenij počinje romanom Muškarci koji mrze žene, a u središtu priče su novinar Mikael Blomkvist i hakerica Lisbeth Salander. Iz koje države potječe autor Stieg Larsson?",
+    "answers": ["Švedske", "Švedska", "Svedska", "Sweden"],
+    "image": null
+  },
+  {
+    "id": 165,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U biologiji, proces u kojem stanica nastaje iz jedne matične stanice dijeljenjem na dvije genetski identične stanice zove se jednostavno dijeljenje stanice. Kako se naziva ta vrsta stanične diobe?",
+    "answers": ["Mitoza"],
+    "image": null
+  },
+  {
+    "id": 166,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, festival Glastonbury održava se u Engleskoj i jedan je od najvećih glazbenih festivala na otvorenom. Kako se zove država u kojoj se nalazi mjesto Glastonbury?",
+    "answers": ["Ujedinjeno Kraljevstvo", "UK", "Velika Britanija", "Engleska"],
+    "image": null
+  },
+  {
+    "id": 167,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, reakcija u kojoj se veći broj malih molekula spaja u jedan veliki lanac naziva se stvaranjem polimera. Kako se zove takva reakcija?",
+    "answers": ["Polimerizacija"],
+    "image": null
+  },
+  {
+    "id": 168,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti Balkana, grad Mostar poznat je po kamenom luku koji je srušen tijekom rata devedesetih i kasnije obnovljen. Kako se zove taj most?",
+    "answers": ["Stari most"],
+    "image": null
+  },
+  {
+    "id": 169,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, pojam koji opisuje otpor tijela promjeni gibanja, a proporcionalan je masi, često se tumači kao tromost. Kako se naziva ova pojava ili svojstvo?",
+    "answers": ["Inercija"],
+    "image": null
+  },
+  {
+    "id": 170,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Derviš i smrt opisuje unutarnju borbu šejha Nurudina i kritiku totalitarnog sustava. Autor je bosanskohercegovački pisac. Kako se zove autor?",
+    "answers": ["Meša Selimović", "Mesa Selimovic", "Selimović", "Selimovic"],
+    "image": null
+  },
+  {
+    "id": 171,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, formula CH4 označava najjednostavniji ugljikovodik, plin bez boje i mirisa koji je glavni sastojak prirodnog plina. Kako se zove ta molekula?",
+    "answers": ["Metan", "methane"],
+    "image": null
+  },
+  {
+    "id": 172,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, animirani film Kralj lavova prati mladog lava koji mora preuzeti prijestolje nakon očeve smrti. Kako se zove taj mladi lav?",
+    "answers": ["Simba"],
+    "image": null
+  },
+  {
+    "id": 173,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, skup realnih brojeva uključuje i racionalne i iracionalne brojeve. Kako se zove podskup realnih brojeva koji se može zapisati kao omjer dvaju cijelih brojeva?",
+    "answers": ["Racionalni brojevi", "racionalni"],
+    "image": null
+  },
+  {
+    "id": 174,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U glazbi, festival Exit započeo je kao studentski pokret protiv režima i danas je jedan od najvećih glazbenih festivala u regiji. U kojem se gradu održava Exit?",
+    "answers": ["Novi Sad"],
+    "image": null
+  },
+  {
+    "id": 175,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U biologiji, skup molekula koje ubrzavaju kemijske reakcije u organizmu i većinom su bjelančevine naziva se jednim pojmom. Kako se zovu te biološke katalizatore?",
+    "answers": ["Enzimi", "enzim"],
+    "image": null
+  },
+  {
+    "id": 176,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Drakula B. Stokera uveo je lik transilvanskog grofa vampira. Kako se zove taj grof?",
+    "answers": ["GroF Drakula", "Drakula", "Count Dracula"],
+    "image": null
+  },
+  {
+    "id": 177,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, reakcija pri kojoj tvar prima elektrone i time se smanjuje njezin oksidacijski broj naziva se suprotno od oksidacije. Kako se zove ta reakcija?",
+    "answers": ["Redukcija"],
+    "image": null
+  },
+  {
+    "id": 178,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, grad Carigrad bio je glavni grad Bizantskog Carstva. Koje se današnje ime koristi za taj grad?",
+    "answers": ["Istanbul"],
+    "image": null
+  },
+  {
+    "id": 179,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, veličina definirana kao rad obavljen u jedinici vremena, koja se mjeri u vatima, naziva se posebnim pojmom. Kako se zove ta veličina?",
+    "answers": ["Snaga"],
+    "image": null
+  },
+  {
+    "id": 180,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Zovu divljine Jacka Londona prati psa Brucka koji se vraća svojim divljim instinktima na Aljasci. Iz koje države potječe autor Jack London?",
+    "answers": ["Sjedinjene Američke Države", "SAD", "United States", "USA"],
+    "image": null
+  },
+  {
+    "id": 181,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, pojam apsolutne vrijednosti broja označava udaljenost tog broja od nule na brojevnoj pravcu bez obzira na predznak. Koje se dvije okomite crte koriste za označavanje apsolutne vrijednosti, npr. za x?",
+    "answers": ["|x|", "apsolutna vrijednost", "vertikalne crte"],
+    "image": null
+  },
+  {
+    "id": 182,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, pjevač Elton John poznat je po hitovima kao Rocket Man i Candle in the Wind. Kojeg je instrumenta najčešće svirao dok je pjevao?",
+    "answers": ["Klavir", "piano"],
+    "image": null
+  },
+  {
+    "id": 183,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, element sa simbolom O čini oko 21 posto Zemljine atmosfere i ključan je za disanje aerobnih organizama. Kako se zove taj element?",
+    "answers": ["Kisik", "oxygen"],
+    "image": null
+  },
+  {
+    "id": 184,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Lovac na zmajeve opisuje prijateljstvo i izdaju dvojice dječaka u Afganistanu. Kako se zove autor ovog romana?",
+    "answers": ["Khaled Hosseini", "Hosseini"],
+    "image": null
+  },
+  {
+    "id": 185,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, val koji nastaje širenjem električnog i magnetskog polja kroz prostor, a ne treba materijalni medij, naziva se jednim zajedničkim imenom. Kako se zove takav val?",
+    "answers": ["Elektromagnetski val"],
+    "image": null
+  },
+  {
+    "id": 186,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, grad Rim je prema legendi osnovan od braće odgojene od vučice. Kako se zvala ta braća?",
+    "answers": ["Romiul i Rem", "Rim i Rem", "Romul i Remus", "Romul i Rem"],
+    "image": null
+  },
+  {
+    "id": 187,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, količina tvari mjeri se u molovima. Koliko približno iznosi Avogadrov broj, broj čestica u jednom molu tvari (navedi približnu vrijednost u obliku 6,02 x 10 na koju potenciju)?",
+    "answers": ["6,02 x 10^23", "6.02e23", "6,02·10^23", "6.02 x 10^23"],
+    "image": null
+  },
+  {
+    "id": 188,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Fahrenheit 451 Raya Bradburyja prikazuje društvo u kojem vatrogasci spaljuju knjige. Na kojoj se mjeri temelji broj 451 u naslovu, što označava temperaturu pri kojoj papir navodno gori?",
+    "answers": ["Fahrenheit", "stupnjevi Fahrenheita"],
+    "image": null
+  },
+  {
+    "id": 189,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, pojam derivacije opisuje trenutnu brzinu promjene funkcije. Kako se naziva obrnuti proces, kojim tražimo funkciju čija je derivacija zadana?",
+    "answers": ["Integracija", "integral"],
+    "image": null
+  },
+  {
+    "id": 190,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, festival Sanremo u Italiji poznat je po natjecanju za najbolju pjesmu, a često je služio kao selekcija za Eurosong. Koji je jezik službeni jezik pjesama na Sanremu?",
+    "answers": ["Talijanski", "talijanski jezik"],
+    "image": null
+  },
+  {
+    "id": 191,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U povijesti, Berlin je nakon Drugog svjetskog rata podijeljen na četiri zone. Koje su dvije glavne sile predstavljale istočni i zapadni blok u tom gradu?",
+    "answers": ["SAD i Sovjetski Savez", "Sjedinjene Američke Države i Sovjetski Savez", "SAD i SSSR"],
+    "image": null
+  },
+  {
+    "id": 192,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, proces u kojem se tekućina pretvara u plin na cijeloj svojoj masi, a ne samo na površini, događa se pri određenoj temperaturi i tlaku. Kako se zove ta pojava?",
+    "answers": ["Vrenje", "ključanje"],
+    "image": null
+  },
+  {
+    "id": 193,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Alhemičar brazilskog pisca Paula Coelha prati putovanje pastira Santiaga u potrazi za osobnom legendom. Iz koje države potječe autor Paulo Coelho?",
+    "answers": ["Brazil", "Brazila"],
+    "image": null
+  },
+  {
+    "id": 194,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, zakon koji kaže da je sila jednaka umnošku mase i ubrzanja temelj je klasične mehanike. Kako glasi taj zakon u najkraćem obliku formule?",
+    "answers": ["F = m a", "F=ma"],
+    "image": null
+  },
+  {
+    "id": 195,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu filma, serija Prijatelji prati šest prijatelja u New Yorku i postala je jedna od najpopularnijih sitcom serija. Kako se zove kafić u kojem se često okupljaju?",
+    "answers": ["Central Perk"],
+    "image": null
+  },
+  {
+    "id": 196,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U kemiji, element sa simbolom Fe, važan sastojak hemoglobina, nalazi se u crvenim krvnim stanicama i odgovoran je za prijenos kisika. Kako se zove taj metal?",
+    "answers": ["Željezo", "zeljezo", "iron"],
+    "image": null
+  },
+  {
+    "id": 197,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U književnosti, roman Grof Monte Cristo prati Edmonda Dantèsa koji nakon nepravednog zatvora traži osvetu i pravdu. Kako se zvao francuski autor ovog romana?",
+    "answers": ["Alexandre Dumas", "Dumas"],
+    "image": null
+  },
+  {
+    "id": 198,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U matematici, beskonačni niz brojeva može biti konvergentan ili divergentan. Kako se naziva vrijednost kojoj se konvergentni niz približava kada broj članova teži beskonačnosti?",
+    "answers": ["Granična vrijednost", "granična točka", "limit"],
+    "image": null
+  },
+  {
+    "id": 199,
+    "type": "story",
+    "difficulty": 3,
+    "question": "U svijetu glazbe, pjesma Bohemian Rhapsody sastavljena je od više dijelova, uključujući baladu, operni segment i rock dio. Koji je bend originalno izveo ovu pjesmu?",
+    "answers": ["Queen"],
+    "image": null
+  },
+  {
+    "id": 200,
+    "type": "story",
+    "difficulty": 4,
+    "question": "U fizici, brzina svjetlosti u vakuumu približno iznosi 300 tisuća kilometara u sekundi i označava se slovom c. Kako se ta brzina najčešće zapisuje u znanstvenoj notaciji, kao 3,0 puta 10 na koju potenciju metara u sekundi?",
+    "answers": ["3,0 x 10^8 m/s", "3 x 10^8 m/s", "3.0e8 m/s"],
+    "image": null
+  }
+]
