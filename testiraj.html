@@ -631,17 +631,6 @@
       color: var(--text-muted);
     }
 
-    .quiz-status-line {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      margin-top: 0.4rem;
-      min-height: 1.1em;
-    }
-
-    .quiz-status-line strong {
-      color: var(--accent);
-    }
-
     /* FOOTER */
 
     .site-footer {
@@ -726,7 +715,7 @@
       <div class="quiz-hero-badges">
         <span class="badge badge--accent">Blitz 60s</span>
         <span class="badge badge--accent">Story 90s</span>
-        <span class="badge">Bez vremena</span>
+        <span class="badge badge--accent">Bez vremena</span>
         <span class="badge">Pitanja označena težinom 1–5</span>
       </div>
 
@@ -764,8 +753,8 @@
     <section class="quiz-card" id="quiz-card">
       <header class="quiz-card-header">
         <div class="quiz-card-title-block">
-          <h2 class="quiz-card-title">Aktivno pitanje</h2>
-          <p class="quiz-card-subtitle" id="quiz-mode-label">Blitz 60s</p>
+          <h2 class="quiz-card-title" id="quiz-title">Blitz kviz</h2>
+          <p class="quiz-card-subtitle" id="quiz-mode-label">Brza pitanja u 60 sekundi</p>
         </div>
         <div class="timer-pill" id="timer-pill">
           <span class="timer-label">Vrijeme</span>
@@ -808,10 +797,7 @@
           <button class="btn btn--ghost btn--small" id="btn-reset">Reset kviza</button>
         </div>
       </div>
-
-      <div class="quiz-status-line" id="quiz-status-line">
-        Pitanja se učitavaju…
-      </div>
+      <!-- status linija maknuta -->
     </section>
 
     <aside class="sidebar-card">
@@ -852,6 +838,10 @@
   let currentQuestion = null;
   let usedQuestionIds = new Set();
 
+  // za miksanje težina
+  let lastDifficulty = null;
+  let sameDifficultyStreak = 0;
+
   let timerDurationMs = 60000; // default 60s
   let remainingMs = 60000;
   let timerIntervalId = null;
@@ -876,7 +866,7 @@
     updateModeLabel();
     updateScoreUI();
     setQuizInteractionEnabled(true);
-    updateQuizStatus("Pitanja učitana. Odaberi mod i klikni “Kreni s kvizom”.");
+    // više ne prikazujemo "Pitanja učitana..." na dnu
   });
 
   function initYear() {
@@ -887,7 +877,7 @@
   /* ------------------ LOAD QUESTIONS (JSON) ------------------ */
 
   async function loadQuestionsFromJson() {
-    const statusEl = document.getElementById("quiz-status-line");
+    const statusEl = document.getElementById("quiz-status-line"); // element ne postoji, ali ovo ne smeta
 
     try {
       const [respBlitz, respStory] = await Promise.all([
@@ -962,10 +952,11 @@
         usedQuestionIds.clear();
         typingPauseUsedForCurrentQuestion = false;
         quizFinished = false;
+        lastDifficulty = null;
+        sameDifficultyStreak = 0;
         setQuizInteractionEnabled(true);
 
         updateModeLabel();
-        updateQuizStatus("Promijenjen mod. Klikni “Kreni s kvizom” u prozoru pitanja.");
       });
     });
   }
@@ -983,15 +974,26 @@
   }
 
   function updateModeLabel() {
-    const el = document.getElementById("quiz-mode-label");
-    if (!el) return;
+    const subtitleEl = document.getElementById("quiz-mode-label");
+    const titleEl = document.getElementById("quiz-title");
+    if (!subtitleEl || !titleEl) return;
 
-    let modeText = "";
-    if (currentMode === "blitz60") modeText = "Blitz 60s";
-    else if (currentMode === "story90") modeText = "Story 90s";
-    else modeText = "Bez vremena";
+    let titleText = "";
+    let subtitleText = "";
 
-    el.textContent = modeText;
+    if (currentMode === "blitz60") {
+      titleText = "Blitz kviz";
+      subtitleText = "Brza pitanja u 60 sekundi";
+    } else if (currentMode === "story90") {
+      titleText = "Story kviz";
+      subtitleText = "Duže priče i pitanja u 90 sekundi";
+    } else {
+      titleText = "Bezvremenski kviz";
+      subtitleText = "Opušteni mix blitz + story bez ograničenja";
+    }
+
+    titleEl.textContent = titleText;
+    subtitleEl.textContent = subtitleText;
   }
 
   /* ------------------ GUMBI ------------------ */
@@ -1032,11 +1034,9 @@
     if (btnSkip) {
       btnSkip.addEventListener("click", () => {
         if (isTimedMode() && quizFinished) {
-          updateQuizStatus("Vrijeme je isteklo. Klikni “Kreni s kvizom” za novi krug.");
           return;
         }
         if (!currentQuestion) {
-          updateQuizStatus("Nema aktivnog pitanja za preskočiti.");
           return;
         }
         logAnswerHistory("", false, true);
@@ -1069,6 +1069,8 @@
     scoreWrong = 0;
     scoreTotal = 0;
     quizFinished = false;
+    lastDifficulty = null;
+    sameDifficultyStreak = 0;
     updateScoreUI();
     clearHistoryList();
     stopTimer();
@@ -1091,29 +1093,45 @@
 
   function loadNextQuestion() {
     if (isTimedMode() && quizFinished) {
-      updateQuizStatus("Vrijeme je isteklo. Klikni “Kreni s kvizom” za novi krug.");
       return;
     }
 
     const pool = getQuestionPoolForCurrentMode();
 
     if (!pool.length) {
-      updateQuizStatus("Nema pitanja za odabrani mod.");
       return;
     }
 
     const available = pool.filter(q => !usedQuestionIds.has(q.id));
 
-    let chosen;
-    if (!available.length) {
-      usedQuestionIds.clear();
-      chosen = pool[Math.floor(Math.random() * pool.length)];
-    } else {
-      chosen = available[Math.floor(Math.random() * available.length)];
+    // --- pametnije miješanje težina ---
+    let candidates = (available.length ? available : pool).slice();
+
+    const ld = (typeof lastDifficulty === "number") ? lastDifficulty : null;
+    if (ld !== null && sameDifficultyStreak >= 2) {
+      const alt = candidates.filter(q => typeof q.difficulty === "number" && q.difficulty !== ld);
+      if (alt.length) {
+        candidates = alt;
+      }
     }
+
+    const chosen = candidates[Math.floor(Math.random() * candidates.length)];
 
     currentQuestion = chosen;
     usedQuestionIds.add(chosen.id);
+
+    // update streak težine
+    if (typeof chosen.difficulty === "number") {
+      if (lastDifficulty === chosen.difficulty) {
+        sameDifficultyStreak++;
+      } else {
+        lastDifficulty = chosen.difficulty;
+        sameDifficultyStreak = 1;
+      }
+    } else {
+      lastDifficulty = null;
+      sameDifficultyStreak = 0;
+    }
 
     typingPauseUsedForCurrentQuestion = false;
     timerPausedForTyping = false;
@@ -1121,12 +1139,6 @@
 
     updateQuestionUI(chosen);
     clearAnswerField();
-
-    if (!isTimedMode()) {
-      updateQuizStatus("Bez vremena – opušteni mod. Odgovaraj svojim tempom.");
-    } else {
-      updateQuizStatus("Aktivno pitanje – vrijeme teče.");
-    }
   }
 
   function getQuestionPoolForCurrentMode() {
@@ -1227,7 +1239,6 @@
         quizFinished = true;
         currentQuestion = null;
         setQuizInteractionEnabled(false);
-        updateQuizStatus("Vrijeme isteklo! Kviz je završio. Klikni “Kreni s kvizom” za novi krug.");
         return;
       }
 
@@ -1280,12 +1291,10 @@
 
   function handleSubmitAnswer() {
     if (isTimedMode() && quizFinished) {
-      updateQuizStatus("Vrijeme je isteklo. Klikni “Kreni s kvizom” za novi krug.");
       return;
     }
 
     if (!currentQuestion) {
-      updateQuizStatus("Nema aktivnog pitanja – klikni “Kreni s kvizom”.");
       return;
     }
 
@@ -1295,7 +1304,6 @@
 
     const userAnswerRaw = input.value.trim();
     if (!userAnswerRaw) {
-      updateQuizStatus("Upiši odgovor ili preskoči pitanje.");
       return;
     }
 
@@ -1458,12 +1466,7 @@
     if (list) list.innerHTML = "";
   }
 
-  /* ------------------ STATUS LINE & RESET ------------------ */
-
-  function updateQuizStatus(msg) {
-    const el = document.getElementById("quiz-status-line");
-    if (el) el.textContent = msg || "";
-  }
+  /* ------------------ RESET ------------------ */
 
   function resetQuiz() {
     stopTimer();
@@ -1471,6 +1474,8 @@
     currentQuestion = null;
     usedQuestionIds.clear();
     typingPauseUsedForCurrentQuestion = false;
+    lastDifficulty = null;
+    sameDifficultyStreak = 0;
 
     scoreCorrect = 0;
     scoreWrong = 0;
@@ -1508,8 +1513,6 @@
     if (input) {
       input.value = "";
     }
-
-    updateQuizStatus("Kviz je resetiran.");
   }
 </script>
 </body>
