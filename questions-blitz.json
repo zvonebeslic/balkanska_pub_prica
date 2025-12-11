@@ -324,19 +324,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je NBA klub osvojio najviše naslova prvaka do danas (ukupno Boston + LA su izjednačeni)?",
+    "difficulty": 3,
+    "question": "Koji je NBA klub osvojio najviše naslova prvaka do danas, ukupno 18?",
     "answers": [
       "Boston Celtics",
-      "Los Angeles Lakers",
-      "Celtics",
-      "Lakers"
+      "Boston",
+      "Celtics"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Kako se zove tenisač iz Srbije s najviše Grand Slam naslova u povijesti muškog tenisa?",
     "answers": [
       "Novak Đoković",
@@ -347,8 +346,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se zove najveće Zemljino prirodno satelitsko tijelo?",
+    "difficulty": 1,
+    "question": "Kako se zove Zemljin najveći prirodni satelit?",
     "answers": [
       "Mjesec",
       "Moon"
@@ -357,7 +356,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koje je godine počeo Domovinski rat u Hrvatskoj?",
     "answers": [
       "1991"
@@ -366,8 +365,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zvao prvi hrvatski predsjednik nakon osamostaljenja?",
+    "difficulty": 2,
+    "question": "Kako se zvao prvi hrvatski predsjednik nakon osamostaljenja 1991.?",
     "answers": [
       "Franjo Tuđman",
       "Tudman",
@@ -378,7 +377,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove najpoznatiji kemijski element s atomskim brojem 1?",
+    "question": "Kako se zove kemijski element s atomskim brojem 1?",
     "answers": [
       "Vodik",
       "Hidrogen",
@@ -389,7 +388,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Koja je najveća pustinja na svijetu po površini?",
+    "question": "Kako se zove najveća polarna pustinja na svijetu?",
     "answers": [
       "Antarktika",
       "Antarktika pustinja",
@@ -408,8 +407,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove formula za masu u posebnoj teoriji relativnosti: E = m · c². Što označava E?",
+    "difficulty": 3,
+    "question": "Kako se zove fundamentalna fizikalna veličina koja predstavlja sposobnost tijela ili sustava da obavi rad ili da izazove promjenu",
     "answers": [
       "Energija"
     ],
@@ -418,11 +417,9 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Koja se krvna grupa smatra univerzalnim darivateljem (crvenih krvnih stanica)?",
+    "question": "Bijele krvne stanice se dijele na 5 glavnih tipova, neutrofili, eozinofili, bazofili (granulociti), limfociti (agranulociti) i koji još?",
     "answers": [
-      "0-",
-      "0 negativna",
-      "nula negativna"
+      "Monociti"
     ],
     "image": null
   },
