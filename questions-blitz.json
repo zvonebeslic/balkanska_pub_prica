@@ -10,7 +10,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 2,
+    "difficulty": 1,
     "question": "Koji je glavni grad Italije?",
     "answers": [
       "Rim",
@@ -20,8 +20,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se zove najduža rijeka na svijetu prema većini izvora?",
+    "difficulty": 1,
+    "question": "Kako se zove najduža rijeka u Africi?",
     "answers": [
       "Nil",
       "Nile"
@@ -30,7 +30,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koja je najveća planeta u Sunčevu sustavu?",
     "answers": [
       "Jupiter"
@@ -39,7 +39,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je kemijski simbol za natrij?",
     "answers": [
       "Na"
@@ -48,18 +48,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove teorem koji kaže da je a² + b² = c² u pravokutnom trokutu?",
+    "difficulty": 2,
+    "question": "Kako se zove poučak koji kaže da je a² + b² = c² u pravokutnom trokutu?",
     "answers": [
-      "Pitagorin teorem",
-      "Pitagora"
+      "Pitagorin poučak",
+      "Pitagorin"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 2,
-    "question": "Koje je more između Italije i Hrvatske?",
+    "question": "Koje more se nalazi između Ancone i Zadra?",
     "answers": [
       "Jadransko more",
       "Jadran"
@@ -69,10 +69,9 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Koja država ima najveći broj stanovnika na svijetu?",
+    "question": "Koja država je pretekla Kinu i trenutno ima najveći broj stanovnika na svijetu?",
     "answers": [
-      "Kina",
-      "China"
+      "Indija"
     ],
     "image": null
   },
@@ -107,7 +106,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zvao grčki bog mora?",
+    "question": "Kako se zvao grčki Bog mora?",
     "answers": [
       "Posejdon",
       "Poseidon"
