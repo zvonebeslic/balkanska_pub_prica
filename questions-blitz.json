@@ -416,7 +416,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 4,
     "question": "Bijele krvne stanice se dijele na 5 glavnih tipova, neutrofili, eozinofili, bazofili (granulociti), limfociti (agranulociti) i koji još?",
     "answers": [
       "Monociti"
@@ -426,28 +426,41 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove Nobelova nagrada koja se ne dodjeljuje u Švedskoj nego u Norveškoj?",
+    "question": "Koja se Nobelova nagrada ne dodjeljuje u Švedskoj nego u Norveškoj?",
     "answers": [
       "Nobelova nagrada za mir",
-      "Nagrada za mir"
+      "Nagrada za mir",
+      "Za mir"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je najveći unutarnji organ u ljudskom tijelu?",
     "answers": [
-      "Jetra"
+      "Jetra",
+      "Hepar"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove proces pri kojem zelene biljke uz pomoć Sunčeve svjetlosti stvaraju šećere iz vode i ugljikova dioksida?",
+    "difficulty": 3,
+    "question": "Kako se zove proces pri kojem zelene biljke uz pomoć Sunčeve svjetlosti stvaraju šećer iz vode i ugljikova dioksida?",
     "answers": [
       "Fotosinteza"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 5,
+    "question": "Kojoj dinastiji su pripadali rimski carevi Vespazijan, Tit i Domicijan?",
+    "answers": [
+      "Flavijevci",
+      "Flavijevskoj",
+      "Flavijevskoj Dinastiji"
     ],
     "image": null
   },
@@ -465,7 +478,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove najpoznatiji rimski amfiteatar u Italiji?",
+    "question": "Kako se zove najpoznatiji rimski amfiteatar u Italiji, izvornog imena Flavijev amfiteatar?",
     "answers": [
       "Kolosej",
       "Koloseum",
@@ -475,7 +488,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je glavni grad Egipta?",
     "answers": [
       "Kairo",
