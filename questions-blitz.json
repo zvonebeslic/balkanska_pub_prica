@@ -1,6 +1,17 @@
 [
   {
     "type": "blitz",
+    "difficulty": 4,
+    "question": "Tko je utjelovio Sheldona Coopera u Teoriji Velikog Praska",
+    "answers": [
+      "Jim Parsons",
+      "Džim Parsons",
+      "Parsons"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
     "difficulty": 2,
     "question": "Koji je kemijski simbol za zlato?",
     "answers": [
@@ -148,6 +159,15 @@
     "answers": [
       "Neil Armstrong",
       "Armstrong"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 3,
+    "question": "Čijoj svjetlosti je potrebno 8 minuta i 19 sekundi da bi stigla do Zemlje prelazeći udaljenost od 150 milijuna kilometara?",
+    "answers": [
+      "Sunčevoj"
     ],
     "image": null
   },
@@ -1052,6 +1072,14 @@
     ],
     "image": null
   },
+    "type": "blitz",
+    "difficulty": 4,
+    "question": "Koje ime dijele majka Aleksandra Velikog i četverogodišnje razdoblje u antičkoj Grčkoj",
+    "answers": [
+      "Olimpijada"
+    ],
+    "image": null
+  },
   {
     "type": "blitz",
     "difficulty": 4,
@@ -1192,7 +1220,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove sveta knjiga judaizma koja obuhvaća Petoknjižje?",
+    "question": "Kako se zove sveta knjiga Judaizma koja obuhvaća Petoknjižje?",
     "answers": [
       "Tora",
       "Torah"
@@ -1202,7 +1230,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove grčki filozof koji je učitelj Aleksandra Makedonskog?",
+    "question": "Kako se zove grčki filozof koji je bio učitelj Aleksandra Makedonskog?",
     "answers": [
       "Aristotel"
     ],
@@ -1210,7 +1238,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove matematički broj približno jednak 3,14159?",
     "answers": [
       "Pi",
@@ -1220,7 +1248,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove vrsta rečenice koja završava upitnikom?",
     "answers": [
       "Upitna rečenica",
@@ -1230,7 +1258,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je matematički pojam definiran kao razlika između najveće i najmanje vrijednosti skupa podataka?",
     "answers": [
       "Raspon",
@@ -1240,7 +1268,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove književna vrsta u stihovima koja najčešće izražava osjećaje i raspoloženja?",
     "answers": [
       "Lirika",
@@ -1250,7 +1278,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove književna vrsta u kojoj se u središtu radnje nalazi junak u sukobu s društvom ili sudbinom, najčešće s tragičnim završetkom?",
     "answers": [
       "Tragedija"
@@ -1259,8 +1287,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove književna vrsta koja se izruguje društvene pojave, često kroz komiku?",
+    "difficulty": 3,
+    "question": "Kako se zove književna vrsta koja izruguje društvene pojave, često kroz komiku?",
     "answers": [
       "Satira"
     ],
@@ -1299,18 +1327,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se zove nagrada Američke filmske akademije za najbolji film godine?",
     "answers": [
       "Oscar",
       "Oscars",
-      "Academy Award"
+      "Oskar"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove najpoznatija europska nogometna klupska liga koju organizira UEFA?",
     "answers": [
       "Liga prvaka",
@@ -1321,8 +1349,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se zove najpoznatiji automobilistički sportski ciklus utrka s bolidima jednomjestima?",
+    "difficulty": 2,
+    "question": "Kako se zove najpoznatiji automobilistički sportski ciklus utrka s bolidima s jednim sjedalom?",
     "answers": [
       "Formula 1",
       "F1"
@@ -1335,14 +1363,14 @@
     "question": "Kako se zove najpoznatija biciklistička utrka koja se održava u Francuskoj?",
     "answers": [
       "Tour de France",
-      "Tura de France"
+      "Tur de franc"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Koji klub je poznat pod nadimkom \"stara dama\" u talijanskom nogometu?",
+    "question": "Koji klub je poznat pod nadimkom "stara dama"?",
     "answers": [
       "Juventus"
     ],
@@ -1350,52 +1378,47 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je proslavljeni hrvatski košarkaš nosio nadimak \"Mozart košarke\"?",
+    "difficulty": 3,
+    "question": "Koji je proslavljeni hrvatski košarkaš nosio nadimak "Košarkaši Mozart"?",
     "answers": [
       "Dražen Petrović",
-      "Drazen Petrovic",
-      "Petrović",
-      "Petrovic"
+      "Petrović"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove hrvatski nogometni izbornik koji je vodio reprezentaciju do srebra na SP 2018.?",
+    "difficulty": 1,
+    "question": "Kako se zove hrvatski nogometni izbornik koji je vodio reprezentaciju do srebra na SP 2018. i bronce na SP 2022.?",
     "answers": [
       "Zlatko Dalić",
-      "Dalić",
-      "Dalic"
+      "Dalić"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji se hrvatski nogometaš proslavio kao kapetan reprezentacije na SP-u 2018. i osvajanjem Zlatne lopte?",
+    "difficulty": 1,
+    "question": "Koji se hrvatski nogometaš proslavio kao kapetan reprezentacije na SP-u 2018. i osvajanjem Zlatne lopte iste godine?",
     "answers": [
       "Luka Modrić",
-      "Modrić",
-      "Modric"
+      "Modrić"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove pojam u fizici koji opisuje maksimalnu brzinu širenja informacija u svemiru?",
+    "difficulty": 3,
+    "question": "Kako se zove pojam u fizici koji opisuje maksimalnu brzinu širenja elektromagnetskih valova u svemiru?",
     "answers": [
       "Brzina svjetlosti",
-      "c",
       "speed of light"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove matematički skup brojeva koji uključuje i realne i imaginarne brojeve?",
     "answers": [
       "Kompleksni brojevi",
@@ -1406,17 +1429,17 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove logička operacija koja je istinita samo ako su oba logička izraza istinita?",
+    "question": "Koju vrijednost ima Konjukcija ako su obje varijable istinite?",
     "answers": [
-      "Konjunkcija",
-      "AND"
+      "1",
+      "Jedan"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se na engleskom jeziku kaže poslovica \"Bolje spriječiti nego liječiti\"?",
+    "difficulty": 3,
+    "question": "Kako se na engleskom jeziku kaže poslovica "Bolje spriječiti nego liječiti"?",
     "answers": [
       "Prevention is better than cure"
     ],
@@ -1425,7 +1448,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koji je latinski izraz za \"sve prolazi\"?",
+    "question": "Koji je latinski izraz za "sve prolazi"?",
     "answers": [
       "Omnia transit",
       "omnia transeunt"
@@ -1435,7 +1458,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koji je latinski izraz za \"Mislim, dakle jesam\"?",
+    "question": "Koji je latinski izraz za "Mislim, dakle jesam"?",
     "answers": [
       "Cogito ergo sum"
     ],
@@ -1444,7 +1467,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove francuski izraz za \"ljubav prema životu\" koji se često koristi u umjetnosti?",
+    "question": "Kako se zove francuski izraz za "ljubav prema životu" koji se često koristi u umjetnosti?",
     "answers": [
       "Joie de vivre"
     ],
@@ -1452,7 +1475,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Kako se zove glavni grad Rusije?",
     "answers": [
       "Moskva",
@@ -1473,10 +1496,9 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove proces kruženja vode u prirodi (isparavanje, kondenzacija, oborine)?",
     "answers": [
-      "Kružni tok vode",
       "vodeni ciklus",
       "ciklus vode"
     ],
