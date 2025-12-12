@@ -796,7 +796,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 4,
     "question": "Kako se zove umjetnički pravac kojem pripada slikar Vincent van Gogh?",
     "answers": [
       "Postimpresionizam",
@@ -806,10 +806,11 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 5,
     "question": "Kako se zove slika Edvarda Muncha koja prikazuje lik koji vrišti na mostu?",
     "answers": [
       "Krik",
+      "Skrik",
       "Vrisak"
     ],
     "image": null
@@ -817,7 +818,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koji je slikar naslikao \"Guernicu\" kao reakciju na bombardiranje tijekom Španjolskog građanskog rata?",
+    "question": "Koji je slikar naslikao "Guernicu" kao reakciju na bombardiranje tijekom Španjolskog građanskog rata?",
     "answers": [
       "Pablo Picasso",
       "Picasso"
@@ -827,11 +828,9 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove prvo poglavlje u romanu \"Na Drini ćuprija\" koje opisuje gradnju mosta?",
+    "question": "Koji grad je povezan mostom Mehmed-paše Sokolovića, najpoznatijim po romanu "Na Drini ćuprija"?",
     "answers": [
-      "Uvod",
-      "nije bitno",
-      "gradnja mosta"
+      "Višegrad"
     ],
     "image": null
   },
@@ -840,15 +839,14 @@
     "difficulty": 3,
     "question": "Koja je najveća katedrala u Parizu koja je djelomično stradala u požaru 2019. godine?",
     "answers": [
-      "Notre Dame",
-      "Notre-Dame"
+      "Notre Dame"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove popularni TV kviz znanja koji vodi Tarik Filipović u hrvatskoj verziji?",
+    "question": "Kako se zove popularni TV kviz znanja koji vodi Tarik Filipović na hrvatskoj verziji?",
     "answers": [
       "Tko želi biti milijunaš",
       "Milijunaš"
@@ -866,7 +864,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koja država je osvojila Svjetsko prvenstvo u nogometu 2018. godine?",
     "answers": [
       "Francuska",
@@ -876,7 +874,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koja je nogometna reprezentacija osvojila Svjetsko prvenstvo 1998. godine?",
     "answers": [
       "Francuska",
@@ -886,7 +884,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koje je godine Hrvatska prvi put nastupila kao samostalna reprezentacija na Svjetskom nogometnom prvenstvu?",
     "answers": [
       "1998"
@@ -906,10 +904,10 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove proces kojim se biljke razmnožavaju spajanjem muških i ženskih spolnih stanica u cvijetu?",
+    "question": "Biljke koje se oprašuju uz pomoć insekata nazivamo kako?",
     "answers": [
-      "Oplođenje",
-      "fertilizacija"
+      "Entomofilne biljke",
+      "Entomofilne"
     ],
     "image": null
   },
@@ -937,7 +935,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove poznata teorija koja opisuje nastanak i širenje svemira iz izuzetno guste točke?",
     "answers": [
       "Veliki prasak",
@@ -947,19 +945,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove galaksija u kojoj se nalazi Sunčev sustav?",
     "answers": [
       "Mliječna staza",
-      "Mlijecna staza",
       "Milky Way"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Koji je glavni grad Slovenije?",
+    "difficulty": 1,
+    "question": "Kako se zove glavni grad Slovenije?",
     "answers": [
       "Ljubljana"
     ],
@@ -967,8 +964,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Koji je glavni grad Srbije?",
+    "difficulty": 1,
+    "question": "Kako se zove glavni grad Srbije?",
     "answers": [
       "Beograd"
     ],
@@ -976,8 +973,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Koji je glavni grad Bosne i Hercegovine?",
+    "difficulty": 1,
+    "question": "Kako se zove glavni grad Bosne i Hercegovine?",
     "answers": [
       "Sarajevo"
     ],
@@ -985,7 +982,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se zove najveće jezero u Hrvatskoj?",
     "answers": [
       "Vransko jezero",
@@ -995,7 +992,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove međunarodna organizacija osnovana 1945. radi održavanja svjetskog mira i sigurnosti?",
     "answers": [
       "Ujedinjeni narodi",
@@ -1007,7 +1004,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove najpoznatiji dokument koji počinje riječima \"Mi, narodi Ujedinjenih naroda\"?",
+    "question": "Kako se zove najpoznatiji dokument koji počinje riječima "Mi, narodi Ujedinjenih naroda"?",
     "answers": [
       "Povelja Ujedinjenih naroda",
       "Povelja UN",
@@ -1017,7 +1014,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove rat između SAD-a i Sjevernog Vijetnama u drugoj polovici 20. stoljeća?",
     "answers": [
       "Vijetnamski rat",
@@ -1028,7 +1025,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zvala vojno-politička kriza između SAD-a i SSSR-a 1962. zbog raketa na Kubi?",
     "answers": [
       "Kubanska kriza",
@@ -1057,8 +1054,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se zove pjevačica koja je osvojila Euroviziju 2021. s pjesmom \"Zitti e buoni\" kao dio benda Måneskin?",
+    "difficulty": 4,
+    "question": "Kako se zove pjevač koja je osvojio Euroviziju 2021. s pjesmom "Zitti e buoni" kao dio benda Måneskin?",
     "answers": [
       "Damiano David",
       "Damiano"
@@ -1067,12 +1064,10 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je glazbeni žanr najviše povezan s bendom Metallica?",
     "answers": [
-      "Heavy metal",
-      "metal",
-      "thrash metal"
+      "Heavy metal"
     ],
     "image": null
   },
@@ -1097,7 +1092,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove tvorac lika Sherlocka Holmesa?",
     "answers": [
       "Arthur Conan Doyle",
@@ -1117,7 +1112,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "U kojem se gradu nalazi svjetski poznati muzej Louvre?",
     "answers": [
       "Pariz",
@@ -1149,14 +1144,13 @@
     "difficulty": 4,
     "question": "Kako se zove čvrsto tijelo koje nastaje kristalizacijom magme u unutrašnjosti Zemlje?",
     "answers": [
-      "Magmatska stijena",
-      "magmatska"
+      "Magmatska stijena"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove fizikalna veličina definirana kao rad po jedinici vremena?",
     "answers": [
       "Snaga",
@@ -1166,7 +1160,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koja je SI jedinica za snagu?",
     "answers": [
       "Watt",
@@ -1177,7 +1171,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Kako se zove religijska knjiga kršćana koja se sastoji od Starog i Novog zavjeta?",
     "answers": [
       "Biblija"
@@ -1186,8 +1180,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se zove sveta knjiga islama?",
+    "difficulty": 1,
+    "question": "Kako se zove sveta knjiga Islama?",
     "answers": [
       "Kuran",
       "Kur'an",
