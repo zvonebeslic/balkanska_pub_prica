@@ -401,7 +401,8 @@
     "difficulty": 3,
     "question": "Koji je glavni grad Australije?",
     "answers": [
-      "Canberra"
+      "Canberra",
+      "Canbera"
     ],
     "image": null
   },
@@ -498,12 +499,20 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove rijeka na kojoj leži grad Beograd?",
+    "difficulty": 2,
+    "question": "Koja se rijeka u Beogradu ulijeva u Dunav?",
     "answers": [
-      "Sava",
-      "Dunav",
-      "Sava i Dunav"
+      "Sava"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 4,
+    "question": "U koliko glavnih gradova se može uživati u pogledu na rijeku Savu?",
+    "answers": [
+      "3",
+      "tri"
     ],
     "image": null
   },
@@ -519,7 +528,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je američki predsjednik bio na vlasti tijekom većine Drugog svjetskog rata (do 1945.)?",
     "answers": [
       "Franklin Delano Roosevelt",
@@ -531,7 +540,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zvala poznata egipatska kraljica koja je imala vezu s Markom Antonijem?",
     "answers": [
       "Kleopatra",
@@ -539,9 +548,19 @@
     ],
     "image": null
   },
+    {
+    "type": "blitz",
+    "difficulty": 4,
+    "question": "10. siječnja 49.g. pr.n e. Julije Cezar prelazi rijeku Rubikon izgovarajući koju poznatu rečenicu",
+    "answers": [
+      "Kocka je bačena",
+      "Alea iacta est"
+    ],
+    "image": null
+  },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je glavni grad Turske?",
     "answers": [
       "Ankara"
@@ -550,8 +569,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu i nakon njega?",
+    "difficulty": 4,
+    "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
     "answers": [
       "Charles de Gaulle",
       "De Gaulle"
@@ -581,16 +600,15 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koji je glavni bog nordijske mitologije koji vlada Asgardom?",
+    "question": "Koji je vrhovni bog nordijske mitologije koji vlada Asgardom?",
     "answers": [
-      "Odín",
-      "Odin"
+      "Odín"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je kemijski simbol za kisik?",
     "answers": [
       "O"
@@ -600,7 +618,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove proces prelaska tvari iz čvrstog u plinovito agregatno stanje bez prijelaza u tekuće?",
+    "question": "U fizici, proces prelaska tvari iz čvrstog u plinovito stanje bez prethodnog prijelaza u tekuće se zove kako?",
     "answers": [
       "Sublimacija"
     ],
@@ -609,7 +627,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zvao najpoznatiji rimski vojskovođa koji je prešao rijeku Rubikon?",
+    "question": "Kako se zvao najpoznatiji rimski vojskovođa koji je sa svojom 13. legijom prešao rijeku Rubikon?",
     "answers": [
       "Gaj Julije Cezar",
       "Julius Caesar",
