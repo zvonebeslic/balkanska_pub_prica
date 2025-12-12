@@ -46,6 +46,16 @@
     ],
     "image": null
   },
+    {
+    "type": "blitz",
+    "difficulty": 5,
+    "question": "Koje ime nosi mirovni sporazum potpisan između Atine i Sparte 421. godine, kojim se završila prva faza peloponeskog rata",
+    "answers": [
+      "Nikijin mir",
+      "Nikijin"
+    ],
+    "image": null
+  },
   {
     "type": "blitz",
     "difficulty": 2,
@@ -647,11 +657,12 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove legendarni vođa Huna koji je napadao Rim i Europu u 5. stoljeću?",
     "answers": [
       "Atila",
       "Atilla",
+      "Bič Božji",
       "Atila Bič Božji"
     ],
     "image": null
@@ -668,8 +679,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove jedinica za električnu struju u SI sustavu?",
+    "difficulty": 3,
+    "question": "Kako se zove jedinica za električnu struju u SI sustavu (Système International d'Unités)?",
     "answers": [
       "Amper",
       "Ampere",
@@ -679,8 +690,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove najpoznatiji eksperimentalni dokaz dvostruke prirode svjetlosti (val i čestica)?",
+    "difficulty": 5,
+    "question": "Kako se zove najpoznatiji eksperimentalni dokaz dvostruke prirodne svjetlosti (val i čestica)?",
     "answers": [
       "Dvo-šupljinski pokus",
       "Youngov pokus",
@@ -690,7 +701,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koja država ima glavni grad Buenos Aires?",
     "answers": [
       "Argentina"
@@ -699,18 +710,17 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Koji je kontinent poznat po rijeci Amazonki?",
+    "difficulty": 2,
+    "question": "Koji je kontinent poznat po rijeci Amazoni?",
     "answers": [
       "Južna Amerika",
-      "Juzna Amerika",
-      "South America"
+      "Latinska Amerika"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove planet na kojem se nalazi planina Olympus Mons, najveći vulkan u Sunčevu sustavu?",
     "answers": [
       "Mars"
@@ -729,7 +739,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove autor romana \"Na Drini ćuprija\"?",
+    "question": "Kako se zove autor romana "Na Drini ćuprija"?",
     "answers": [
       "Ivo Andrić",
       "Andrić"
@@ -748,7 +758,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zvao srednjovjekovni bosanski kralj poznat po naslovu \"Kralj Bosne i Primorja\"?",
+    "question": "Kako se zvao srednjovjekovni bosanski kralj poznat po naslovu "Kralj Bosne i Primorja"?",
     "answers": [
       "Tvrtko I",
       "Tvrtko",
@@ -759,7 +769,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove poznata hrvatska spisateljica koja je napisala djelo \"Gospoda Glembajevi\"?",
+    "question": "Kako se zove poznat hrvatski književnik koji je napisao djelo "Gospoda Glembajevi"?",
     "answers": [
       "Miroslav Krleža",
       "Krleža"
@@ -769,7 +779,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove filozof iz antičke Grčke koji je napisao djela \"Država\" i \"Zakoni\"?",
+    "question": "Kako se zove filozof iz antičke Grčke koji je napisao djela "Država" i "Zakoni"?,
     "answers": [
       "Platon"
     ],
