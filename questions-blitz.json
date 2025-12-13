@@ -262,6 +262,16 @@
   },
   {
     "type": "blitz",
+    "difficulty": 4,
+    "question": "Na kojem je brodu kitolovcu kapetan Ahab alfa i omega",
+    "answers": [
+      "Pequod",
+      "Pekod"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
     "difficulty": 3,
     "question": "Kako se zove znanost koja proučava fosile?",
     "answers": [
@@ -553,6 +563,15 @@
     "answers": [
       "3",
       "tri"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 5,
+    "question": "Ako pričamo o Mitozi, znamo da redom idu Profaza, Prometafaza, Metafaza, Anafaza i koja još faza?",
+    "answers": [
+      "Telofaza"
     ],
     "image": null
   },
@@ -899,6 +918,15 @@
     "answers": [
       "Francuska",
       "France"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 4,
+    "question": "Kako se zove druga faza stanične diobe, koja slijedi nakon mitoze",
+    "answers": [
+      "Citokineza"
     ],
     "image": null
   },
@@ -1551,7 +1579,8 @@
     "question": "Kako se zove poznata bitka iz 1815. u kojoj je Napoleon konačno poražen?",
     "answers": [
       "Bitka kod Waterlooa",
-      "Waterloo"
+      "Waterloo",
+      "Vaterlo"
     ],
     "image": null
   },
@@ -1576,7 +1605,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove poznati citat koji počinje s \"Biti ili ne biti\"?",
+    "question": "Kako počinje čuveni monolog iz Shakespeareove tragedije Hamlet koji završava s '..., pitanje je sad.'?",
     "answers": [
       "Biti ili ne biti",
       "To be or not to be"
@@ -1586,16 +1615,16 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "U kojem je klasičnom romanu glavni lik kapetan Ahab opsjednut lovom na jednog kita?",
+    "question": "U kojem je romanu glavni lik kapetan Ahab opsjednut lovom na jednog kita?",
     "answers": [
       "Moby Dick",
-      "Moby-Dick"
+      "Mobi dik"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove matematički pojam za neprekidnu liniju koja spaja beskonačno mnogo točaka bez samopresijecanja i često se koristi za prikaz funkcije?",
     "answers": [
       "Krivulja",
@@ -1605,29 +1634,29 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se kaže da je broj djeljiv samo s 1 i samim sobom?",
+    "difficulty": 2,
+    "question": "Kako se kaže za broj koji je djeljiv samo s 1 i samim sobom?",
     "answers": [
       "Prost broj",
-      "prost"
+      "prosti"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove najpoznatiji algoritam za pronalazak najkraćeg puta u grafu koji je osmislio nizozemski informatičar?",
+    "question": "Kako se zove najpoznatiji algoritam za pronalazak najkraćeg puta u grafu koji je osmislio nizozemski informatičar Edsger Dijkstra?",
     "answers": [
       "Dijkstrin algoritam",
       "Dijkstra",
-      "Dijkstra algorithm"
+      "Dijkstrin"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove proces u biologiji u kojem stanica dijeljenjem nastaje dvije genetski identične stanice?",
+    "difficulty": 3,
+    "question": "Kako se zove prva faza diobe jezgre tjelesnih stanica, koja slijedi nakon interfaze?",
     "answers": [
       "Mitoza"
     ],
@@ -1644,7 +1673,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koja je službena valuta u Švicarskoj?",
     "answers": [
       "Švicarski franak",
@@ -1659,33 +1688,37 @@
     "question": "Koja je službena valuta u Japanu?",
     "answers": [
       "Jen",
-      "Yen"
+      "Yen",
+      "Japanski Jen",
+      "Japanski Yen",
+      "JPY"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove poznati američki pisac znanstvene fantastike autor romana \"1984\" i \"Životinjska farma\"?",
+    "difficulty": 3,
+    "question": "Kako se zove poznati američki pisac znanstvene fantastike autor romana '1984' i 'Životinjska farma'?",
     "answers": [
       "George Orwell",
-      "Orwell"
+      "Orwell",
+      "Gorg Orvel",
+      "Orvel"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove termin u književnosti za skrivenu poruku ili značenje ispod površinske radnje djela?",
     "answers": [
-      "Simbolika",
-      "alegorija"
+      "Alegorija"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva umjetnički stil u kojem se naglašava osjećaj, fantazija i subjektivnost, karakterističan za 19. stoljeće?",
     "answers": [
       "Romantizam"
@@ -1694,7 +1727,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koje je godine izbio Prvi svjetski rat?",
     "answers": [
       "1914"
@@ -1703,7 +1736,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koje je godine završio Prvi svjetski rat?",
     "answers": [
       "1918"
@@ -1712,7 +1745,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koje je godine završio Drugi svjetski rat?",
     "answers": [
       "1945"
@@ -1721,11 +1754,11 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zvao saveznički iskrcaj u Normandiji 6. lipnja 1944. godine kodnim imenom?",
+    "difficulty": 3,
+    "question": "Koje kodno ime je dano savezničkom iskrcavanju vojske u Normandiji 6. lipnja 1944.?",
     "answers": [
-      "Operacija Overlord",
-      "Overlord",
+      "Dan D",
+      "D Dan",
       "D-Day"
     ],
     "image": null
@@ -1742,29 +1775,31 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je američki predsjednik potpisao sporazum u Daytonu kojim je okončan rat u BiH?",
     "answers": [
       "Bill Clinton",
-      "Clinton"
+      "Clinton",
+      "Bil Klinton"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove sporazum kojim je 1995. godine formalno završen rat u Bosni i Hercegovini?",
     "answers": [
       "Daytonski sporazum",
       "Dayton",
-      "Dayton Agreement"
+      "Dejtonski sporazum",
+      "Dejton"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove rijeka koja teče kroz Žepče, Zenicu i Doboj prije nego što se ulije u Savu?",
+    "difficulty": 3,
+    "question": "Kako se zove rijeka koja, prije no što se ulije u Savu, teče kroz Žepče, Zenicu i Doboj?",
     "answers": [
       "Bosna"
     ],
@@ -1772,7 +1807,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se zove glavni grad Španjolske?",
     "answers": [
       "Madrid"
@@ -1781,7 +1816,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se zove glavni grad Portugala?",
     "answers": [
       "Lisabon",
@@ -1791,7 +1826,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove sport u kojem se natjecatelji bore u ringu koristeći udarce rukama sa specijalnim rukavicama?",
     "answers": [
       "Boks",
@@ -1801,11 +1836,10 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove olimpijski sport u kojem se koriste mač, sablja ili floret?",
     "answers": [
-      "Mačevanje",
-      "fencing"
+      "Mačevanje"
     ],
     "image": null
   },
