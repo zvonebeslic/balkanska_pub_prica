@@ -216,8 +216,7 @@
     "question": "Koja se mjera koristi za električni otpor?",
     "answers": [
       "Ohm",
-      "om",
-      "Ω"
+      "om"
     ],
     "image": null
   },
@@ -318,7 +317,6 @@
     "answers": [
       "Postanak",
       "Knjiga Postanka",
-      "Genezis",
       "Genesis"
     ],
     "image": null
@@ -470,7 +468,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Bijele krvne stanice se dijele na 5 glavnih tipova, neutrofili, eozinofili, bazofili (granulociti), limfociti (agranulociti) i koji još?",
+    "question": "Bijele krvne stanice se dijele na 5 glavnih tipova, neutrofili, eozinofili, bazofili (granulociti), limfociti (agranulociti) i koje još?",
     "answers": [
       "Monociti"
     ],
@@ -492,8 +490,7 @@
     "difficulty": 3,
     "question": "Koji je najveći unutarnji organ u ljudskom tijelu?",
     "answers": [
-      "Jetra",
-      "Hepar"
+      "Jetra"
     ],
     "image": null
   },
@@ -583,7 +580,9 @@
     "question": "Koji je američki predsjednik potpisao Proglas o emancipaciji robova 1863. godine?",
     "answers": [
       "Abraham Lincoln",
-      "Lincoln"
+      "Abraham Linkoln",
+      "Lincoln",
+      "Linkoln"
     ],
     "image": null
   },
@@ -594,8 +593,10 @@
     "answers": [
       "Franklin Delano Roosevelt",
       "Franklin Roosevelt",
+      "Frenklin Ruzvelt",
       "FDR",
-      "Roosevelt"
+      "Roosevelt",
+      "Ruzvelt"
     ],
     "image": null
   },
@@ -634,7 +635,9 @@
     "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
     "answers": [
       "Charles de Gaulle",
-      "De Gaulle"
+      "Čarls degaul",
+      "De Gaulle",
+      "Gaul"
     ],
     "image": null
   },
@@ -692,6 +695,7 @@
     "answers": [
       "Gaj Julije Cezar",
       "Julius Caesar",
+      "Julije Cezar",
       "Cezar"
     ],
     "image": null
@@ -872,7 +876,9 @@
     "question": "Koji je slikar naslikao 'Guernicu' kao reakciju na bombardiranje tijekom Španjolskog građanskog rata?",
     "answers": [
       "Pablo Picasso",
-      "Picasso"
+      "Pablo Pikaso",
+      "Picasso",
+      "Pikaso"
     ],
     "image": null
   },
@@ -890,7 +896,9 @@
     "difficulty": 3,
     "question": "Koja je najveća katedrala u Parizu koja je djelomično stradala u požaru 2019. godine?",
     "answers": [
-      "Notre Dame"
+      "Notre Dame",
+      "Noterdam",
+      "Notre Dam"
     ],
     "image": null
   },
@@ -957,7 +965,9 @@
     "question": "Kako se zove poznati američki košarkaš koji je šest puta osvojio naslov NBA prvaka s Chicago Bullsima?",
     "answers": [
       "Michael Jordan",
-      "Jordan"
+      "Majkl Džordan",
+      "Jordan",
+      "Džordan"
     ],
     "image": null
   },
@@ -1078,7 +1088,6 @@
     "question": "Kako se zove rat između SAD-a i Sjevernog Vijetnama u drugoj polovici 20. stoljeća?",
     "answers": [
       "Vijetnamski rat",
-      "Vijetnam",
       "Rat u Vijetnamu"
     ],
     "image": null
@@ -1098,7 +1107,8 @@
     "difficulty": 3,
     "question": "Kako se zove poznata rock grupa koju čine članovi Brian May, Roger Taylor i John Deacon uz karizmatičnog frontmena Freddieja Mercuryja?",
     "answers": [
-      "Queen"
+      "Queen",
+      "Kuin"
     ],
     "image": null
   },
@@ -1108,7 +1118,8 @@
     "question": "Kako se zove najpoznatiji album skupine Pink Floyd iz 1973. godine?",
     "answers": [
       "The Dark Side of the Moon",
-      "Dark Side of the Moon"
+      "Dark Side of the Moon",
+      "Tamna strana Mjeseca"
     ],
     "image": null
   },
@@ -1136,7 +1147,8 @@
     "difficulty": 3,
     "question": "Koji je glazbeni žanr najviše povezan s bendom Metallica?",
     "answers": [
-      "Heavy metal"
+      "Heavy metal",
+      "Hevi Metal"
     ],
     "image": null
   },
@@ -1145,7 +1157,9 @@
     "difficulty": 3,
     "question": "Kako se zove popularni TV serijal o učitelju kemije koji postaje proizvođač metamfetamina?",
     "answers": [
-      "Breaking Bad"
+      "Breaking Bad",
+      "Na putu prema dolje",
+      "Brejking Bed"
     ],
     "image": null
   },
@@ -1165,8 +1179,11 @@
     "question": "Kako se zove tvorac lika Sherlocka Holmesa?",
     "answers": [
       "Arthur Conan Doyle",
+      "Artur Konan Dojl",
       "Conan Doyle",
-      "Doyle"
+      "Konan Dojl",
+      "Doyle",
+      "Dojl"
     ],
     "image": null
   },
@@ -1351,7 +1368,7 @@
     "question": "Kako se zove škola čarobnjaštva koju pohađa Harry Potter?",
     "answers": [
       "Hogwarts",
-      "Hogvorts",
+      "Hogvarts",
       "Hogwarts School"
     ],
     "image": null
@@ -1847,7 +1864,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je sport poznat po izrazima kao što su birdie, eagle i bogey?",
     "answers": [
       "Golf"
@@ -1856,8 +1873,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je sport u kojem momčad pokušava ubaciti pak u protivnički gol na ledu?",
+    "difficulty": 2,
+    "question": "Kako se zove sport u kojem jedna momčad kližući po ledu pokušava ubaciti pak u protivnički gol?",
     "answers": [
       "Hokej na ledu",
       "hokej"
@@ -1870,7 +1887,8 @@
     "question": "Kako se zove popularna serija o mafijaškom bossu iz New Jerseyja, Tonyju Sopranu?",
     "answers": [
       "The Sopranos",
-      "Sopranos"
+      "Sopranos",
+      "Obitelj Soprano"
     ],
     "image": null
   },
@@ -1879,22 +1897,24 @@
     "difficulty": 3,
     "question": "Kako se zove serija o kriminalističkom odjelu u Miamiju gdje je glavni lik forenzičar i serijski ubojica?",
     "answers": [
-      "Dexter"
+      "Dexter",
+      "Dekster"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove serija o kemijski obrazovanom kuharskom geniju i njegovom pomoćniku u kuhinji, smještena u New Yorku, iz 90-ih, čiji glavni lik ima nadimak \"Soup Nazi\" u jednoj epizodi?",
+    "question": "Kako se zove američka televizijska serija koju su zajedno osmislili i režirali Larry David i Jerry Seinfield?",
     "answers": [
-      "Seinfeld"
+      "Seinfeld",
+      "Seinfild"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koja je zemlja rodno mjesto grupe ABBA?",
     "answers": [
       "Švedska",
@@ -1904,38 +1924,41 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove nagrada za najbolji album godine koju dodjeljuje američka glazbena akademija?",
     "answers": [
       "Grammy",
+      "Gremi",
       "Grammy Award"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove nagrada koja se dodjeljuje za odličja u televizijskoj industriji u SAD-u?",
     "answers": [
       "Emmy",
+      "Emi",
       "Emmy Award"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove nagrada za kazališna postignuća na Broadwayu?",
     "answers": [
       "Tony",
+      "Toni",
       "Tony Award"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove udžbenik ili priručnik koji sadrži zbirku psalama i molitava u Bibliji?",
+    "difficulty": 3,
+    "question": "Kako se zove zbirka himana, zahvala i molbi upućenih Bogu u stihovima u obliku knjige koja je sastavni dio Biblije?",
     "answers": [
       "Psalmi",
       "Knjiga psalama"
@@ -1944,7 +1967,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove poznata biblijska knjiga koja opisuje apokaliptične vizije i kraj vremena?",
     "answers": [
       "Otkrivenje",
@@ -1955,7 +1978,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove poznata teorija u biologiji koja objašnjava razvoj vrsta putem prirodne selekcije?",
     "answers": [
       "Teorija evolucije",
@@ -1966,11 +1989,13 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove britanski prirodoslovac koji je formulirao teoriju prirodne selekcije?",
+    "difficulty": 3,
+    "question": "Kako se zove britanski prirodoslovac koji je formulirao teoriju prirodne selekcije tj. evolucije?",
     "answers": [
       "Charles Darwin",
-      "Darwin"
+      "Čarls Darvin",
+      "Darwin",
+      "Darvin"
     ],
     "image": null
   },
