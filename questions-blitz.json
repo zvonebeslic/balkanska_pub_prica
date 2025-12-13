@@ -726,6 +726,15 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "question": "Što probija zrakoplov kada prijeđe brzinu zvuka?",
+    "answers": [
+      "Zvučni zid"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 3,
     "question": "Kako se zove legendarni vođa Huna koji je napadao Rim i Europu u 5. stoljeću?",
     "answers": [
       "Atila",
@@ -1560,6 +1569,15 @@
     "answers": [
       "Moskva",
       "Moscow"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 4,
+    "question": "Koja grana biologije proučava funkcije živih organizama, organa, tkiva, stanica i molekula?",
+    "answers": [
+      "Fiziologija"
     ],
     "image": null
   },
@@ -2442,8 +2460,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Koji je sveti grad islama u kojem se nalazi Kaaba?",
+    "difficulty": 2,
+    "question": "Koji je sveti grad islama u kojem se nalazi Kaaba/Ćaba?",
     "answers": [
       "Meka",
       "Mecca",
@@ -2453,8 +2471,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je sveti grad kršćanstva i judaizma u kojem se nalazi Crkva Svetog groba i Zid plača?",
+    "difficulty": 2,
+    "question": "Koji je sveti grad kršćanstva i judaizma u kojem se nalazi Bazilika Svetog Groba i Zid plača?",
     "answers": [
       "Jeruzalem",
       "Jerusalem"
@@ -2464,10 +2482,10 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove prvo knjigovodstveno pravilo koje kaže da svaka promjena u imovini ima protustavku u kapitalu ili obvezama?",
+    "question": "Ako bi upitali američku novinarku Mignon McLaughlin o ljubavi, rekla bi da je jedan plus jedan beskonačno, a dva minus jedan koliko?",
     "answers": [
-      "Dvojno knjigovodstvo",
-      "dvostavno knjigovodstvo"
+      "Nula",
+      "0"
     ],
     "image": null
   },
@@ -2477,6 +2495,7 @@
     "question": "Kako se zove najpoznatiji američki burzovni indeks koji sadrži 30 velikih industrijskih dionica?",
     "answers": [
       "Dow Jones",
+      "Dov Džons",
       "Dow Jones Industrial Average",
       "DJIA"
     ],
@@ -2488,7 +2507,8 @@
     "question": "Kako se zove najveća burza dionica po tržišnoj kapitalizaciji u SAD-u smještena u New Yorku?",
     "answers": [
       "NYSE",
-      "New York Stock Exchange"
+      "New York Stock Exchange",
+      "Nju Jork Stok Eksčendž"
     ],
     "image": null
   },
@@ -2497,26 +2517,13 @@
     "difficulty": 3,
     "question": "Koje se gorivo, dobiveno iz fosilnih izvora, najčešće koristi u automobilima s unutarnjim izgaranjem?",
     "answers": [
-      "Benzin",
-      "gasoline",
-      "petrol"
+      "Benzin"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove postupak pri kojem se tekuće željezo dobiva iz željezne rude u visokim pećima?",
-    "answers": [
-      "Talonarenje",
-      "dobivanje sirovog željeza",
-      "proces u visokoj peći"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koji je kemijski simbol za srebro?",
     "answers": [
       "Ag"
@@ -2525,7 +2532,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koji je kemijski simbol za kalij?",
     "answers": [
       "K"
@@ -2534,40 +2541,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove broj Avogadrov, broj čestica u jednom molu tvari? (dovoljno je navesti približnu vrijednost u znanstvenom zapisu)",
-    "answers": [
-      "6.022×10^23",
-      "6.02×10^23",
-      "6,022×10^23"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva jednadžba koja povezuje tlak, volumen i temperaturu idealnog plina (p·V = n·R·T)?",
-    "answers": [
-      "Jednadžba stanja idealnog plina",
-      "plinska jednadžba",
-      "ideal gas law"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove glavni lik serije \"House M.D.\" koji je genijalan, ali ciničan liječnik?",
+    "question": "Kako se punim imenom i prezimenom zove glavni lik serije 'House M.D.' koji je genijalan, ali ciničan liječnik?",
     "answers": [
       "Gregory House",
-      "Dr. House"
+      "Gregori Haus"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove serija o FBI agentima Foxu Mulderu i Danu Scully koji istražuju neobjašnjive fenomene?",
+    "question": "Kako se zove serija o FBI agentima Foxu Mulderu i Danu Scully-u koji istražuju neobjašnjive fenomene?",
     "answers": [
       "The X-Files",
       "Dosjei X"
@@ -2576,7 +2561,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se zove animirana serija o obitelji iz Springfieda čiji je otac Homer?",
     "answers": [
       "Simpsoni",
@@ -2597,19 +2582,21 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Koji je američki glumac utjelovio lik Rockyja Balboe u filmskom serijalu \"Rocky\"?",
+    "question": "Koji je američki glumac utjelovio lik Rockyja Balboe u filmskom serijalu 'Rocky'?",
     "answers": [
       "Sylvester Stallone",
+      "Silvestar Stalone",
       "Stallone"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove glumac koji je utjelovio originalnog Indianu Jonesa?",
     "answers": [
-      "Harrison Ford"
+      "Harrison Ford",
+      "Harison Ford"
     ],
     "image": null
   },
@@ -2619,6 +2606,7 @@
     "question": "Kako se zove filmska franšiza o hakeru Neo i borbi protiv strojeva u simuliranoj stvarnosti?",
     "answers": [
       "Matrix",
+      "Matriks",
       "The Matrix"
     ],
     "image": null
@@ -2626,39 +2614,43 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Koji je redatelj snimio filmove \"Pulp Fiction\" i \"Kill Bill\"?",
+    "question": "Koji je redatelj snimio filmove 'Pulp Fiction' i 'Kill Bill'?",
     "answers": [
       "Quentin Tarantino",
+      "Kventin Tarantino",
       "Tarantino"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je redatelj snimio trilogiju \"Gospodar prstenova\"?",
+    "difficulty": 3,
+    "question": "Koji je redatelj snimio trilogiju 'Gospodar prstenova'?",
     "answers": [
-      "Peter Jackson"
+      "Peter Jackson",
+      "Piter Džekson"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove pjevač grupe U2?",
+    "question": "Koje umjetničko ime nosi pjevač grupe U2?",
     "answers": [
       "Bono",
-      "Bono Vox"
+      "Bono Vox",
+      "Bono Voks"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove legendarna britanska rock skupina čiji su članovi Mick Jagger i Keith Richards?",
+    "question": "Kako se zove legendarna britanska rock grupa čiji su članovi Mick Jagger i Keith Richards?",
     "answers": [
       "The Rolling Stones",
-      "Rolling Stones"
+      "Rolling Stones",
+      "Roling Stons"
     ],
     "image": null
   },
@@ -2668,6 +2660,7 @@
     "question": "Kako se zove glazbeni festival koji se svake godine održava u Glastonburyju u Engleskoj?",
     "answers": [
       "Glastonbury",
+      "Glastonburi",
       "Glastonbury Festival"
     ],
     "image": null
@@ -2675,17 +2668,19 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove najpoznatiji jazz saksofonist koji je snimio album \"A Love Supreme\"?",
+    "question": "Kako se zove najpoznatiji jazz saksofonist koji je snimio album 'A Love Supreme'?",
     "answers": [
       "John Coltrane",
-      "Coltrane"
+      "Džon Koltren,
+      "Coltrane",
+      "Koltren"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove američka pjevačica poznata po albumu \"Like a Virgin\"?",
+    "difficulty": 3,
+    "question": "Kako se zove američka pjevačica poznata po albumu 'Like a Virgin'?",
     "answers": [
       "Madonna"
     ],
@@ -2693,21 +2688,11 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove dodjela glazbenih nagrada u Europi koju organizira glazbena televizija MTV?",
-    "answers": [
-      "MTV Europe Music Awards",
-      "MTV EMA"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove hrvatski festival zabavne glazbe koji se tradicionalno održava u Splitu?",
     "answers": [
       "Splitski festival",
-      "Splitski festival zabavne glazbe"
+      "Splitski"
     ],
     "image": null
   },
@@ -2716,24 +2701,26 @@
     "difficulty": 3,
     "question": "Kako se zove pjesma s kojom je ABBA pobijedila na Euroviziji 1974. godine?",
     "answers": [
-      "Waterloo"
+      "Waterloo",
+      "Vaterlo"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je glavni grad Meksika?",
     "answers": [
       "Ciudad de México",
       "Mexico City",
-      "Ciudad de Mexico"
+      "Siudad de Meksiko",
+      "Meksiko Siti"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je glavni grad Argentine?",
     "answers": [
       "Buenos Aires"
@@ -2742,7 +2729,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je glavni grad Čilea?",
     "answers": [
       "Santiago",
@@ -2752,12 +2739,11 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koji je glavni grad Južnoafričke Republike? (dovoljno je navesti jedan od službenih)",
     "answers": [
-      "Pretoria",
       "Cape Town",
-      "Bloemfontein"
+      "Kejp Tovn"
     ],
     "image": null
   },
@@ -2767,7 +2753,6 @@
     "question": "Kako se zove morska životinja koja može mijenjati boju kože i ima osam krakova?",
     "answers": [
       "Hobotnica",
-      "octopus"
     ],
     "image": null
   },
@@ -2777,19 +2762,17 @@
     "question": "Kako se naziva najveći kopneni mesožder na svijetu?",
     "answers": [
       "Polarni medvjed",
-      "bijeli medvjed",
-      "polar bear"
+      "Polar bear"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove brzina iznad koje se let zrakoplova smatra nadzvučnim?",
     "answers": [
-      "Brzina zvuka",
-      "Mach 1",
-      "mah 1"
+      "Nadzvučna brzina",
+      "Nadzvučna"
     ],
     "image": null
   },
@@ -2799,18 +2782,18 @@
     "question": "Kako se naziva visokoenergetska svemirska pojava koja nastaje kolapsom masivne zvijezde ili sudarom neutronskih zvijezda?",
     "answers": [
       "Gamma bljesak",
-      "gamma-ray burst",
+      "Gama bljesak",
+      "Gamma-ray",
       "GRB"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove skup galaksija kojem pripada i Mliječna staza, zajedno s Andromedom i nekolicinom drugih?",
+    "difficulty": 3,
+    "question": "Koja galaksija je udaljena 2,5 milijuna svjetlosnih godina od nas",
     "answers": [
-      "Lokalna skupina",
-      "Local Group"
+      "Andromeda"
     ],
     "image": null
   },
@@ -2819,8 +2802,7 @@
     "difficulty": 4,
     "question": "Kako se naziva pojava zakrivljenja prostor-vremena uzrokovana masom i energijom, prema općoj teoriji relativnosti?",
     "answers": [
-      "Gravitacija",
-      "gravitacijsko polje"
+      "Gravitacija"
     ],
     "image": null
   },
@@ -2830,14 +2812,15 @@
     "question": "Kako se naziva područje oko crne rupe iz kojeg više ništa, pa ni svjetlost, ne može pobjeći?",
     "answers": [
       "Horizont događaja",
-      "event horizon"
+      "Događajni obzor",
+      "Obzor događaja"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koja planeta se zbog gustog oblaka CO2 i efekta staklenika smatra najtoplijom u Sunčevu sustavu?",
+    "question": "Koji planet se zbog gustog oblaka CO2 i efekta staklenika smatra najtoplijim u Sunčevu sustavu?",
     "answers": [
       "Venera",
       "Venus"
@@ -2847,7 +2830,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koja je planeta poznata po svojim prstenovima građenim od leda i stijena?",
+    "question": "Koji planet je poznat po svojim prstenovima građenim od leda i stijena?",
     "answers": [
       "Saturn"
     ],
@@ -2856,89 +2839,62 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koja planeta ima najviše potvrđenih prirodnih satelita u Sunčevu sustavu?",
+    "question": "Koji planet ima najviše potvrđenih prirodnih satelita u Sunčevu sustavu?",
     "answers": [
-      "Jupiter",
-      "Saturn"
+      "Jupiter"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove geometrijsko tijelo koje ima šest kvadratnih strana?",
     "answers": [
-      "Kocka",
-      "kocka"
+      "Kocka"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva poligonalni oblik s osam stranica?",
     "answers": [
       "Oktogon",
-      "osmerokut"
+      "Osmerokut"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove funkcija koja svakom realnom broju x pridružuje njegov kvadrat x²?",
-    "answers": [
-      "Kvadratna funkcija",
-      "parabola"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 5,
     "question": "Kako se naziva matematička funkcija koja je inverzna prirodnom logaritmu?",
     "answers": [
-      "Eksponencijalna funkcija",
-      "e^x",
-      "exp"
+      "Eksponencijalna funkcija"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 5,
-    "question": "Kako se naziva operacija računanja površine ispod krivulje, osnovni pojam u integralnom računu?",
+    "question": "Kako se naziva operacija računanja površine ispod krivulje?",
     "answers": [
-      "Integracija",
-      "integral"
+      "Integracija"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 4,
     "question": "Kako se naziva operacija računanja brzine promjene funkcije u jednoj točki?",
     "answers": [
-      "Diferencijacija",
-      "izvod",
-      "derivacija"
+      "Derivacija"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako glasi Pitagorin teorem riječima? (dovoljno je navesti da je zbroj kvadrata kateta jednak kvadratu hipotenuze)",
-    "answers": [
-      "Zbroj kvadrata kateta jednak je kvadratu hipotenuze",
-      "a²+b²=c²"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva djelatnost proučavanja prošlosti ljudi na temelju materijalnih ostataka, oruđa i oružja?",
+    "difficulty": 3,
+    "question": "Koja znanost sustavno proučava i istražuje stare materijalne ostatke s ciljem rekonstrukcije cjelokupnog života čovječanstva?",
     "answers": [
       "Arheologija"
     ],
@@ -2964,18 +2920,16 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva nauka o građu i funkciji ljudskog tijela?",
+    "difficulty": 3,
+    "question": "Kako se naziva nauka o građi i funkciji ljudskog tijela?",
     "answers": [
-      "Anatomija i fiziologija",
-      "anatomija",
-      "fiziologija"
+      "Anatomija"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva medicinska specijalnost koja se bavi bolestima srca i krvnih žila?",
     "answers": [
       "Kardiologija"
@@ -2984,7 +2938,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove krvna žila koja odvodi krv iz srca prema tijelu?",
     "answers": [
       "Aorta"
@@ -2996,27 +2950,27 @@
     "difficulty": 3,
     "question": "Kako se naziva organ u kojem se probavljaju ugljikohidrati, bjelančevine i masti, a koji proizvodi inzulin?",
     "answers": [
-      "Gušterača",
-      "pankreas"
+      "Gušterača"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se naziva organ u kojem se vrši filtracija krvi i nastajanje mokraće?",
+    "question": "Kako se naziva organ u kojem se vrši filtracija krvi i nastaje mokraća?",
     "answers": [
-      "Bubreg",
-      "bubrezi"
+      "Bubreg"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva napitak od prženih i mljevenih zrna biljke Coffea?",
+    "difficulty": 2,
+    "question": "Kakav napitak dobijemo od prženih i mljevenih zrna biljke koja dolazi iz porodice broćevki?",
     "answers": [
       "Kava",
+      "Kavu",
+      "Kafu",
       "kafa",
       "coffee"
     ],
