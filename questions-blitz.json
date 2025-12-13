@@ -2837,6 +2837,15 @@
     ],
     "image": null
   },
+    {
+    "type": "blitz",
+    "difficulty": 5,
+    "question": "Koji pojam opisuje podjelu cjeline na dva međusobno isključiva dijela, a najčešće se koristi u logici, filozofiji, botanici i lingvistici?",
+    "answers": [
+      "Dihotomija"
+    ],
+    "image": null
+  },
   {
     "type": "blitz",
     "difficulty": 4,
@@ -3402,22 +3411,23 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva mjera ubrzanja koja se često koristi u auto-moto svijetu, izmjerena kao omjer sile i mase?",
     "answers": [
-      "g-sila",
-      "g force"
+      "G sila",
+      "G force"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je američki brend motocikala kultan među bikerima, poznat po modelu Sportster?",
     "answers": [
-      "Harley-Davidson",
       "Harley Davidson",
-      "Harley"
+      "Harli Dejvidson",
+      "Harley",
+      "Harli"
     ],
     "image": null
   },
@@ -3427,23 +3437,23 @@
     "question": "Kako se naziva zaštitna metalna konstrukcija u utrkama koja štiti vozača pri prevrtanju vozila?",
     "answers": [
       "Roll cage",
-      "zaštitni kavez"
+      "Zaštitni kavez"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako glasi poslovica koja kaže da nije sve onako kako izgleda, počinje s \"Nije zlato\"?",
+    "difficulty": 3,
+    "question": "Nije 'što? sve što sja.",
     "answers": [
-      "Nije zlato sve što sja"
+      "Zlato"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako glasi izreka koja kaže da je bolje spriječiti nego kasnije rješavati posljedice? (u hrvatskom jeziku)",
+    "difficulty": 3,
+    "question": "Kako glasi izreka koja kaže da je bolje djelovati odmah nego kasnije rješavati posljedice?",
     "answers": [
       "Bolje spriječiti nego liječiti"
     ],
@@ -3451,56 +3461,29 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako glasi izreka koja naglašava važnost prilike: \"Prilika čini...\"?",
+    "difficulty": 3,
+    "question": "U kojoj se poslanici Korinćanima nalazi poznati citat o ljubavi 'Ljubav je strpljiva, ljubav je dobrostiva'?",
     "answers": [
-      "Prilika čini lopova"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako glasi poznati citat filozofa Sokrata o vlastitom znanju, često se parafrazira kao \"Znam da ništa ne znam\". Na hrvatskom je dovoljno prenijeti smisao.",
-    "answers": [
-      "Znam da ništa ne znam"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako glasi poznati citat iz Biblije o ljubavi: \"Ljubav je strpljiva, ljubav je dobrostiva\" – u kojoj novozavjetnoj poslanici se nalazi?",
-    "answers": [
-      "Prva poslanica Korinćanima",
-      "1. Korinćanima",
-      "1 Kor"
+      "Prvoj",
+      "1.",
+      "U prvoj",
+      "U 1.",
+      "U prvoj poslanici"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 5,
-    "question": "Kako se naziva klasični logički paradoks s rečenicom: \"Ova rečenica je lažna\"?",
+    "question": "Kako se naziva misaoni eksperiment filozofa Zenaona o strijeli koja nikada ne stiže do cilja?",
     "answers": [
-      "Lagački paradoks",
-      "lažljivčev paradoks"
+      "Zenonov paradoks"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 5,
-    "question": "Kako se naziva misao eksperiment filozofa Zenaona o strijeli koja nikada ne stiže do cilja?",
-    "answers": [
-      "Zenonov paradoks",
-      "paradoks strijele"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 4,
     "question": "Kako se naziva teorija etike koja tvrdi da je moralno ono što donosi najveću sreću najvećem broju ljudi?",
     "answers": [
       "Utilitarizam"
@@ -3510,17 +3493,15 @@
   {
     "type": "blitz",
     "difficulty": 5,
-    "question": "Kako se naziva filozofska metoda koja putem pitanja i odgovora dovodi sugovornika do uvida u vlastito neznanje? Povezuje se sa Sokratom.",
+    "question": "Kako se naziva filozofska metoda koja putem pitanja i odgovora iz sugovornika izvlači 'pravu istinu'?",
     "answers": [
-      "Sokratska metoda",
-      "maiutica",
       "majeutika"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 4,
     "question": "Kako se naziva ogranak filozofije koji se bavi pitanjima lijepog, umjetnosti i ukusa?",
     "answers": [
       "Estetika"
@@ -3529,7 +3510,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 3,
     "question": "Kako se naziva znanost o ispravnom zaključivanju?",
     "answers": [
       "Logika"
@@ -3538,7 +3519,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 4,
     "question": "Kako se naziva područje filozofije koje se bavi pitanjima postojanja, bića i stvarnosti?",
     "answers": [
       "Ontologija"
@@ -3547,7 +3528,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva znanstvena disciplina koja proučava strukturu, povijest i procese na Zemljinoj kori?",
     "answers": [
       "Geologija"
@@ -3556,7 +3537,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva znanstvena disciplina koja proučava atmosferu i vremenske prilike?",
     "answers": [
       "Meteorologija"
@@ -3569,23 +3550,26 @@
     "question": "Kako se naziva skala koja mjeri jačinu potresa prema štetama na objektima i percepciji ljudi?",
     "answers": [
       "Mercallijeva ljestvica",
+      "Marcelijeva ljestvica",
+      "Marcelijeva",
       "Mercalli"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove skala koja mjeri magnitudu potresa na temelju oslobođene energije?",
     "answers": [
       "Richterova ljestvica",
-      "Richter"
+      "Rihterova ljestvica",
+      "Richterova"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove instrument kojim se mjeri jačina potresa?",
     "answers": [
       "Seizmograf"
@@ -3630,7 +3614,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 4,
     "question": "Kako se naziva kut između sjevera i smjera kretanja, mjeri se u stupnjevima?",
     "answers": [
       "Azimut"
@@ -3639,7 +3623,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se naziva instrument koji se koristi za utvrđivanje smjera prema magnetskom sjeveru?",
     "answers": [
       "Kompas"
@@ -3648,11 +3632,10 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 4,
     "question": "Kako se naziva aparatić koji mjeri broj otkucaja srca, često korišten u sportu?",
     "answers": [
-      "Pulsmetar",
-      "heart rate monitor"
+      "Pulsmetar"
     ],
     "image": null
   },
@@ -3661,14 +3644,13 @@
     "difficulty": 3,
     "question": "Kako se naziva proces prilagodbe organizma na veće nadmorske visine i manjak kisika?",
     "answers": [
-      "Akli­matizacija",
-      "aklimatizacija"
+      "Akli­matizacija"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se naziva stanje organizma uslijed gubitka tekućine i elektrolita zbog znojenja i nedostatka vode?",
     "answers": [
       "Dehidracija"
@@ -3677,48 +3659,27 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Kako se naziva opasnost u planini kada se velika masa snijega odvoji i sklizne niz padinu?",
     "answers": [
-      "Lavina",
-      "snježna lavina"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se zove standardni uređaj koji pomaže u spašavanju zatrpanih u lavini emitiranjem i primanjem signala?",
-    "answers": [
-      "Lavinski primopredajnik",
-      "lavinski uređaj",
-      "transceiver"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se naziva francuski izraz za planinarski dom ili sklonište u Alpama?",
-    "answers": [
-      "Refuge",
-      "refugio"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 3,
-    "question": "Kako se naziva uzak greben između dviju dolina, često oštar i izdužen?",
-    "answers": [
-      "Greben",
-      "hrbat"
+      "Lavina"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 4,
+    "question": "Koji se talijanski izraz koristi za planinarski dom ili sklonište u Alpama?",
+    "answers": [
+      "Refuge",
+      "Refugio",
+      "Refuđio"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 3,
     "question": "Kako se zove proces trošenja stijena i tla uslijed djelovanja vode, vjetra i leda?",
     "answers": [
       "Erozija"
@@ -3728,16 +3689,15 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se naziva proces kojim se materijal taloži na nekom mjestu nakon erozije i transporta?",
+    "question": "Kako se naziva proces taloženja čestica pod utjecajem sile kroz tekućinu?",
     "answers": [
-      "Sedimentacija",
-      "depozicija"
+      "Sedimentacija"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 1,
     "question": "Kako se zove monoteistička religija koju je osnovao prorok Muhamed u 7. stoljeću?",
     "answers": [
       "Islam"
@@ -3746,7 +3706,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 1,
     "question": "Kako se zove monoteistička religija utemeljena na Starom i Novom zavjetu?",
     "answers": [
       "Kršćanstvo",
@@ -3756,7 +3716,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove religija čiji su sveti tekstovi Vede i koja priznaje mnoge bogove poput Višne i Šive?",
     "answers": [
       "Hinduizam"
@@ -3765,7 +3725,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove religija koju je utemeljio Siddhartha Gautama, usmjerena na put prosvjetljenja i nirvane?",
     "answers": [
       "Budizam"
@@ -3774,8 +3734,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove religija židovskog naroda utemeljena na Toru?",
+    "difficulty": 2,
+    "question": "Kako se zove religija židovskog naroda utemeljena na Petoknjižju?",
     "answers": [
       "Judaizam"
     ],
@@ -3783,17 +3743,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove znanstvena disciplina koja proučava religije, njihove tekstove i običaje?",
-    "answers": [
-      "Religijska studija",
-      "znanost o religiji"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove pojam u kršćanstvu koji označava tri osobe u jednom Bogu: Oca, Sina i Duha Svetoga?",
     "answers": [
       "Presveto Trojstvo",
@@ -3804,7 +3754,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove poznata muslimanska sveta knjiga otkrivena Muhamedu?",
     "answers": [
       "Kur'an",
@@ -3815,7 +3765,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove židovski blagdan kojim se slavi izlazak Izraelaca iz Egipta?",
     "answers": [
       "Pesah",
@@ -3826,7 +3776,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 1,
     "question": "Kako se naziva blagdan u kršćanstvu kojim se slavi uskrsnuće Isusa Krista?",
     "answers": [
       "Uskrs",
@@ -3836,7 +3786,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se naziva blagdan u islamu kojim se završava mjesec posta ramazana?",
     "answers": [
       "Ramazanski bajram",
@@ -3846,8 +3796,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva blagdan u islamu kojim se obilježava žrtva Ibrahimova (Abrahamova)?",
+    "difficulty": 2,
+    "question": "Kako se naziva blagdan u islamu kojim se obilježava žrtva Abrahamova?",
     "answers": [
       "Kurban-bajram",
       "Eid al-Adha"
@@ -3915,17 +3865,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove poznata izjava rimskog senatora Katona Starijeg: \"Osim toga smatram da Kartagu treba razoriti\" na latinskom?",
-    "answers": [
-      "Ceterum censeo Carthaginem esse delendam",
-      "Ceterum censeo Carthaginem delendam esse"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove čovjek za kojeg se kaže da je \"otac povijesti\" i koji je napisao djelo \"Povijesti\"?",
+    "question": "Kako se zove čovjek za kojeg se kaže da je 'otac povijesti' i koji je napisao djelo 'Povijesti'?",
     "answers": [
       "Herodot"
     ],
@@ -3933,7 +3873,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 5,
     "question": "Kako se zove grčki povjesničar koji je opisao Peloponeski rat?",
     "answers": [
       "Tukidid",
@@ -3945,17 +3885,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se naziva poznata metoda u povijesnoj znanosti koja uspoređuje izvore i provjerava njihovu vjerodostojnost?",
-    "answers": [
-      "Kritika izvora",
-      "kritika povijesnih izvora"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva znanost koja proučava staru pisanu građu urezanu u kamen, metal ili glinu?",
+    "question": "Kako se naziva znanost koja proučava stara pisma urezana u kamen, metal ili glinu?",
     "answers": [
       "Epigrafika"
     ],
@@ -3973,16 +3903,17 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove klinasto pismo koje su koristili Sumerani i drugi narodi Mezopotamije?",
+    "question": "Kako se zove pismo koje su koristili Sumerani i drugi narodi Mezopotamije?",
     "answers": [
+      "Klinopis",
       "Klinasto pismo",
-      "cuneiform"
+      "Klinovo pismo"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva pismo starog Egipta koje se sastoji od slikovnih znakova?",
     "answers": [
       "Hijeroglifi",
@@ -3992,7 +3923,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 5,
     "question": "Kako se zove ploča pronađena u Egiptu koja je pomogla u dešifriranju hijeroglifa jer ima tekst na tri pisma?",
     "answers": [
       "Rosettski kamen",
@@ -4003,7 +3934,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva kazališna umjetnost u kojoj glumci izvode radnju uz unaprijed zapisane melodije i pjesme, često s velikim orkestrom?",
     "answers": [
       "Opera"
@@ -4013,7 +3944,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se naziva kraća glazbena scenska forma s više govora i manje pjevanja, bliža opereti?",
+    "question": "Kako se naziva kraća glazbena scenska forma s više govora i manje pjevanja?",
     "answers": [
       "Opereta"
     ],
@@ -4021,7 +3952,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva glazbeni oblik za orkestar s više stavaka, nastao u klasicizmu, npr. djela Mozarta i Beethovena?",
     "answers": [
       "Simfonija"
@@ -4030,7 +3961,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva glazbeno djelo za solistički instrument i orkestar, često u tri stavka?",
     "answers": [
       "Koncert"
@@ -4039,21 +3970,29 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva slika ili skulptura koja prikazuje osobu od ramena naviše?",
     "answers": [
-      "Portret",
-      "bista"
+      "Portret"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva slika krajolika, najčešće prirodnog prizora poput planina, šuma ili rijeka?",
     "answers": [
       "Pejzaž",
       "landscape"
+    ],
+    "image": null
+  }
+  {
+    "type": "blitz",
+    "difficulty": 1,
+    "question": "Tko pod drugim jamu kopa, sam u nju.. što?",
+    "answers": [
+      "Upada"
     ],
     "image": null
   }
