@@ -2,6 +2,16 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "question": "Koliko naslova svjetskog WRC prvaka ukupno imaju legendarni finski rally vozači Juha Kankkunen i Tommi Mäkinen?",
+    "answers": [
+      "8",
+      "Osam"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 4,
     "question": "Tko je utjelovio Sheldona Coopera u Teoriji Velikog Praska",
     "answers": [
       "Jim Parsons",
@@ -1507,37 +1517,37 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koja se mjera koristi za količinu tvari u SI sustavu?",
+    "difficulty": 3,
+    "question": "U Međunarodnom sustavu jedinica, koja se mjera koristi za količinu tvari?",
     "answers": [
-      "Mol",
-      "mole"
+      "Mol"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove najpoznatiji francuski vojskovođa koji se proglasio carem početkom 19. stoljeća?",
     "answers": [
       "Napoleon Bonaparte",
-      "Napoleon"
+      "Napoleon",
+      "Napoleon 1."
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove rat u kojem je sudjelovao Napoleon protiv koalicije europskih sila (1799.–1815.)?",
+    "difficulty": 3,
+    "question": "Kako se zove niz oružanih sukoba u kojima je sudjelovao Napoleon protiv koalicije europskih sila (1799.–1815.)?",
     "answers": [
       "Napoleonski ratovi",
-      "Napoleonski rat"
+      "Napoleonovi ratovi"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove poznata bitka iz 1815. u kojoj je Napoleon konačno poražen?",
     "answers": [
       "Bitka kod Waterlooa",
@@ -1547,22 +1557,19 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove poznata brdska utrka u automobilizmu koja se vozi u američkoj saveznoj državi Colorado do vrha planine?",
+    "difficulty": 5,
+    "question": "Do kojeg se planinskog vrha u Saveznoj državi Colorado vozi poznata brdska utrka u automobilizmu koja nosi kraticu PPIHC?",
     "answers": [
-      "Pikes Peak",
-      "Pikes Peak International Hill Climb"
+      "Pikes Peak"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove najpoznatiji rally vozač iz Finske, višestruki svjetski prvak u WRC-u?",
+    "question": "Kako se zove poznati rally vozač iz Finske, višestruki svjetski prvak u WRC-u iz '86 i '87 te '91 i '93?",
     "answers": [
-      "Juha Kankkunen",
-      "Tommi Mäkinen",
-      "Tommi Makinen"
+      "Juha Kankkunen"
     ],
     "image": null
   },
