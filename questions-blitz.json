@@ -1345,6 +1345,15 @@
   },
   {
     "type": "blitz",
+    "difficulty": 4,
+    "question": "Ako pričamo o 4 nebeske kineske životinje, spomenuti ćemo Tigra, Zmaja, Pticu i koga još?",
+    "answers": [
+      "Kornjaču"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
     "difficulty": 3,
     "question": "Kako se zove književna vrsta koja izruguje društvene pojave, često kroz komiku?",
     "answers": [
@@ -2001,8 +2010,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove pojava kada se zrak lomi pri prolasku kroz različite optičke gustoće i zbog toga nam se čini da je štap u vodi slomljen?",
+    "difficulty": 3,
+    "question": "Kako se zove pojava kada se svjetlosna zraka lomi pri prolasku kroz različite optičke gustoće i zbog toga nam se čini da je štap u vodi slomljen?",
     "answers": [
       "Lom svjetlosti",
       "refrakcija"
@@ -2011,37 +2020,38 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove pojava širenja valova (npr. svjetlosti ili zvuka) pri prolasku kroz uski otvor ili oko prepreke?",
+    "difficulty": 3,
+    "question": "Kako se zove pojava širenja valova kao svjetlosti ili zvuka, pri prolasku kroz uski otvor ili oko prepreke?",
     "answers": [
-      "Difrakcija"
+      "Difrakcija",
+      "Ogib svjetlosti",
+      "Ogib"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove mjerna jedinica za tlak jednaka sili od jednog Newtona po kvadratnom metru?",
+    "difficulty": 3,
+    "question": "Kako se zove mjerna jedinica za koja iznosi jedan Newtona po kvadratnom metru?",
     "answers": [
       "Pascal",
+      "Paskal",
       "Pa"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove grana matematike koja se bavi vjerojatnostima i slučajnim događajima?",
     "answers": [
-      "Teorija vjerojatnosti",
-      "statistika",
-      "vjerojatnost"
+      "Teorija vjerojatnosti"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 3,
     "question": "Kako se zove matematička konstanta koja opisuje omjer opsega kruga i njegova promjera?",
     "answers": [
       "Pi",
@@ -2051,17 +2061,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
-    "question": "Kako se zove teorija u fizici koja objedinjeno opisuje elektromagnetsku, slabu i jaku nuklearnu silu, ali još uvijek ne uključuje gravitaciju?",
-    "answers": [
-      "Standardni model",
-      "standardni model fizike čestica"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 4,
     "question": "Kako se zove hipotetska čestica koja se u kvantnoj kromodinamici smatra nositeljem jake nuklearne sile?",
     "answers": [
       "Gluon",
@@ -2071,7 +2071,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 4,
     "question": "Kako se zove pojam u kvantnoj mehanici za sustav u kojem su dvije čestice povezane na način da mjerenje jedne trenutačno utječe na stanje druge?",
     "answers": [
       "Spregnutost",
@@ -2082,18 +2082,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 4,
     "question": "Kako se zove poznati misaoni eksperiment o mački koja je istovremeno živa i mrtva dok ne otvorimo kutiju?",
     "answers": [
-      "Schrödingerova mačka",
       "Schrodingerova mačka",
+      "Šrodingerova mačka",
       "Schrodinger's cat"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 3,
     "question": "Kako se zove pojam iz ekonomije koji opisuje opći rast cijena u gospodarstvu?",
     "answers": [
       "Inflacija"
@@ -2102,18 +2102,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
-    "question": "Kako se zove financijski dokument u kojem su prikazani prihodi i rashodi poduzeća u određenom razdoblju?",
-    "answers": [
-      "Račun dobiti i gubitka",
-      "bilanca uspjeha",
-      "income statement"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 5,
+    "difficulty": 3,
     "question": "Kako se zove auto-moto utrka izdržljivosti koja traje 24 sata i vozi se u Francuskoj?",
     "answers": [
       "24 sata Le Mansa",
@@ -2124,7 +2113,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 2,
     "question": "Koji je glavni grad Kanade?",
     "answers": [
       "Ottawa",
@@ -2134,8 +2123,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Koja se država prostire na oba kontinenta, Europi i Aziji, a ima glavni grad Moskvu?",
+    "difficulty": 1,
+    "question": "Koja se država prostire po kontinentima Europi i Aziji, a ima glavni grad Moskvu?",
     "answers": [
       "Rusija",
       "Russia"
@@ -2144,7 +2133,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Koji je glavni grad Poljske?",
     "answers": [
       "Varšava",
@@ -2155,7 +2144,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Koji je glavni grad Nizozemske?",
     "answers": [
       "Amsterdam"
@@ -2164,7 +2153,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Koji je glavni grad Norveške?",
     "answers": [
       "Oslo"
@@ -2174,9 +2163,9 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se zove najveće talijansko jezero po površini?",
+    "question": "Kako se zove najveće jezero u Italiji, ujedno i 34. po veličini u Europi?",
     "answers": [
-      "Gardsko jezero",
+      "Jezero Garda",
       "Lago di Garda",
       "Garda"
     ],
@@ -2184,17 +2173,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
-    "question": "Koja planina je najviši vrh Alpa?",
+    "difficulty": 2,
+    "question": "Kako se zove najviši vrh svih alpskih planina?",
     "answers": [
       "Mont Blanc",
-      "Monblan"
+      "Monblan",
+      "Mont Blan"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koja je najduža rijeka u Europi?",
     "answers": [
       "Volga"
@@ -2203,7 +2193,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Koji je glavni grad Švedske?",
     "answers": [
       "Stockholm",
@@ -2213,7 +2203,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Koji je glavni grad Finske?",
     "answers": [
       "Helsinki"
@@ -2222,7 +2212,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 1,
     "question": "Koji je glavni grad Grčke?",
     "answers": [
       "Atena",
@@ -2232,16 +2222,27 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je glavni grad Irske?",
+    "difficulty": 5,
+    "question": "Prema kineskoj predaji, za kojeg se vladara smatra da je vladao od 2697. pr. Kr. do 2597. pr. Kr. ujedno izumitelja kompasa, kalendara i pisanja?",
     "answers": [
-      "Dublin"
+      "Žuti Car",
+      "Huangdi"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 1,
+    "question": "Koji je glavni grad Irske?",
+    "answers": [
+      "Dublin",
+      "Dablin"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 2,
     "question": "Kako se zove pustinja koja pokriva veći dio sjeverne Afrike?",
     "answers": [
       "Sahara"
@@ -2250,7 +2251,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koja planina je najviši vrh Afrike?",
     "answers": [
       "Kilimandžaro",
@@ -2260,7 +2261,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove poznato svjetsko čudo u Jordanu, grad uklesan u stijenu?",
     "answers": [
       "Petra"
@@ -2269,8 +2270,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove drevni grad u Iraku koji je bio prijestolnica Babilonskog Carstva?",
+    "difficulty": 3,
+    "question": "Kako se zove drevni grad u današnjem Iraku, čije ime dolazi iz hebrjeske riječi 'Bābel'?",
     "answers": [
       "Babilon",
       "Babylon"
@@ -2279,7 +2280,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koja se rijeka smatra svetom u hinduizmu i protječe kroz Indiju?",
     "answers": [
       "Ganges",
@@ -2289,7 +2290,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koji je najveći grad u Turskoj po broju stanovnika, iako nije glavni grad?",
     "answers": [
       "Istanbul"
@@ -2298,7 +2299,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove planina na kojoj se, prema Bibliji, Noina arka zaustavila nakon potopa?",
     "answers": [
       "Ararat",
@@ -2308,17 +2309,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
-    "question": "Koju je brojčanu vrijednost približno jednak pi/2 ima konstantna koja se naziva Catalanova konstanta? (traži se početno slovo i prezime matematičara)",
-    "answers": [
-      "Eugène Charles Catalan",
-      "Catalan"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove grčki bog podzemlja?",
     "answers": [
       "Had",
@@ -2328,7 +2319,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove grčka božica mudrosti i ratne taktike?",
     "answers": [
       "Atena",
@@ -2338,7 +2329,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove grčki bog vina i zabave?",
     "answers": [
       "Dioniz",
@@ -2349,7 +2340,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove nordijski bog groma?",
     "answers": [
       "Thor",
@@ -2362,7 +2353,7 @@
     "difficulty": 4,
     "question": "Kako se zove nordijska zmija-čudovište koja obuhvaća svijet i neprijatelj je boga Thora?",
     "answers": [
-      "Jörmungandr",
+      "Jormungand",
       "Jormungandr"
     ],
     "image": null
@@ -2388,8 +2379,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove egipatski bog sa šakaljom glavom, zaštitnik balzamiranja i zagrobnog života?",
+    "difficulty": 3,
+    "question": "Kako se zove egipatski bog sa glavom šakala, zaštitnik balzamiranja i zagrobnog života?",
     "answers": [
       "Anubis"
     ],
@@ -2397,8 +2388,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se nazivaju monumentalne grobnice faraona u Egiptu trokutastog oblika?",
+    "difficulty": 2,
+    "question": "Kako se nazivaju velike monumentalne grobnice faraona u Egiptu trokutastog oblika?",
     "answers": [
       "Pirami­de",
       "piramide"
@@ -2408,7 +2399,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove kineska dinastija koja je izgradila veći dio Kineskog zida i uvela prvi carsku titulu 'Huangdi'?",
+    "question": "Koje ime nosi kineska dinastija koja je izgradila veći dio Kineskog zida i prva uvela carsku titulu 'Huangdi'?",
     "answers": [
       "Dinastija Qin",
       "Qin"
@@ -2417,7 +2408,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove kineski filozof čija učenja čine temelj konfucijanizma?",
     "answers": [
       "Konfucije",
@@ -2427,7 +2418,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 5,
     "question": "Kako se zove sveti grad budizma u kojem je Buda navodno doživio prosvjetljenje?",
     "answers": [
       "Bodh Gaya",
@@ -2437,7 +2428,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je sveti grad islama u kojem se nalazi Kaaba?",
     "answers": [
       "Meka",
