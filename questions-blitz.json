@@ -207,6 +207,16 @@
   },
   {
     "type": "blitz",
+    "difficulty": 5,
+    "question": "Antun Mihanović je za boravka u Americi pokušao 'prokrčiti put u američku trgovinu jednom od najplemenitijih i najvažnijih proizvoda'. O kojem je napitku riječ?",
+    "answers": [
+      "Vinu",
+      "Vino"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
     "difficulty": 1,
     "question": "Kako se zove glavni grad Hrvatske?",
     "answers": [
@@ -2671,7 +2681,7 @@
     "question": "Kako se zove najpoznatiji jazz saksofonist koji je snimio album 'A Love Supreme'?",
     "answers": [
       "John Coltrane",
-      "Džon Koltren,
+      "Džon Koltren",
       "Coltrane",
       "Koltren"
     ],
@@ -2966,32 +2976,33 @@
   {
     "type": "blitz",
     "difficulty": 2,
-    "question": "Kakav napitak dobijemo od prženih i mljevenih zrna biljke koja dolazi iz porodice broćevki?",
+    "question": "Koji napitak dobijemo od prženih i mljevenih zrna biljke koja dolazi iz porodice broćevki?",
     "answers": [
       "Kava",
       "Kavu",
       "Kafu",
-      "kafa",
-      "coffee"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove francuski desert od jaja, mlijeka, šećera i karamele, poznat po glatkoj teksturi?",
-    "answers": [
-      "Crème brûlée",
-      "creme brulee"
+      "Kafa",
+      "Coffee"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
+    "question": "Kako se zove francuski desert od jaja, mlijeka, šećera i karamele, poznat po glatkoj teksturi?",
+    "answers": [
+      "Creme brulee",
+      "Krem Brule"
+    ],
+    "image": null
+  },
+  {
+    "type": "blitz",
+    "difficulty": 2,
     "question": "Kako se zove tradicionalno talijansko jelo od tankog tijesta, rajčice, sira i raznih dodataka?",
     "answers": [
-      "Pizza"
+      "Pizza",
+      "Pica"
     ],
     "image": null
   },
@@ -3001,7 +3012,7 @@
     "question": "Kako se zove tradicionalno japansko jelo od riže, sirove ribe i algi?",
     "answers": [
       "Sushi",
-      "suši"
+      "Suši"
     ],
     "image": null
   },
@@ -3011,36 +3022,35 @@
     "question": "Kako se zove popularno meksičko jelo od tortilje punjene mesom, povrćem i umakom?",
     "answers": [
       "Taco",
-      "tacos"
+      "Tacos"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 3,
-    "question": "Kako se naziva serija knjiga o dječaku čarobnjaku Harryju koje je napisala J. K. Rowling?",
+    "question": "Kako se naziva serija knjiga o dječaku čarobnjaku koje je napisala J. K. Rowling?",
     "answers": [
-      "Harry Potter"
+      "Harry Potter",
+      Heri Poter"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva roman Lev Nikolajeviča Tolstoja koji opisuje život ruskog plemstva u vrijeme Napoleonovih ratova?",
+    "difficulty": 3,
+    "question": "Kako se naziva roman Lava Nikolajeviča Tolstoja koji opisuje život ruskog plemstva u vrijeme Napoleonovih ratova?",
     "answers": [
-      "Rat i mir",
-      "War and Peace"
+      "Rat i mir"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva roman Fjodora Dostojevskog o studentu Raskoljnikovu koji počini ubojstvo iz ideje o nadčovjeku?",
     "answers": [
-      "Zločin i kazna",
-      "Crime and Punishment"
+      "Zločin i kazna"
     ],
     "image": null
   },
@@ -3049,14 +3059,13 @@
     "difficulty": 4,
     "question": "Kako se naziva roman Gabriela Garcíje Márqueza kojim je populariziran pojam magičnog realizma?",
     "answers": [
-      "Sto godina samoće",
-      "One Hundred Years of Solitude"
+      "Sto godina samoće"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zove britanski pisac koji je stvorio lik Jamesa Bonda?",
     "answers": [
       "Ian Fleming",
@@ -3069,24 +3078,27 @@
     "difficulty": 4,
     "question": "Kako se zove roman Mary Shelley o znanstveniku koji stvara čudovište od dijelova ljudskih tijela?",
     "answers": [
-      "Frankenstein"
+      "Frankenstein",
+      "Frankenštajn"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je američki predsjednik poznat po frazi \"Ask not what your country can do for you\"?",
+    "difficulty": 3,
+    "question": "Koji je američki predsjednik poznat po frazi 'Ask not what your country can do for you'?",
     "answers": [
       "John F. Kennedy",
+      "Džon Kenedi",
       "Kennedy",
+      "Kenedi",
       "JFK"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je američki predsjednik bio ujedno i glavni zapovjednik snaga Unije tijekom Američkog građanskog rata?",
     "answers": [
       "Abraham Lincoln",
@@ -3096,38 +3108,40 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji je američki predsjednik jedini obnašao dužnost više od dva mandata?",
     "answers": [
       "Franklin Delano Roosevelt",
       "Franklin Roosevelt",
-      "FDR"
+      "Frenklin Ruzvelt",
+      "Ruzvelt"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je američki predsjednik se suočio s aferom Watergate i dao ostavku?",
+    "difficulty": 3,
+    "question": "Koji se američki predsjednik suočio s aferom Watergate i dao ostavku?",
     "answers": [
       "Richard Nixon",
-      "Nixon"
+      "Ričard Nikson",
+      "Nixon",
+      "Nikson"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva politički sustav u kojem je sva vlast u rukama jednog vladara koji tu vlast nasljeđuje?",
     "answers": [
-      "Monarhija",
-      "apsolutna monarhija"
+      "Monarhija"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se naziva politički sustav u kojem vlast proizlazi iz naroda putem izbora i predstavnika?",
     "answers": [
       "Demokracija"
@@ -3136,7 +3150,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva sustav u kojem država posjeduje sredstva za proizvodnju, a cilj je društvena jednakost?",
     "answers": [
       "Socijalizam"
@@ -3145,7 +3159,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva ideologija koja zagovara ukidanje privatnog vlasništva i klasnih razlika?",
     "answers": [
       "Komunizam"
@@ -3154,30 +3168,33 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva ideologija koja zagovara ekstremni nacionalizam i autoritarnu vlast, često uz kult vođe?",
     "answers": [
-      "Fašizam",
-      "fascizam"
+      "Fašizam"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji se rat naziva i \"Veliki rat\" i odvijao se od 1914. do 1918.?",
+    "difficulty": 3,
+    "question": "Koji se rat naziva i 'Veliki rat' i odvijao se od 1914. do 1918.?",
     "answers": [
       "Prvi svjetski rat",
+      "Prvi svjetski",
+      "1. svjetski",
       "1. svjetski rat"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Koji se rat odvijao između 1939. i 1945. i uključivao većinu svjetskih sila?",
     "answers": [
       "Drugi svjetski rat",
+      "Drugi svjetski",
+      "2. svjetski",
       "2. svjetski rat"
     ],
     "image": null
@@ -3185,7 +3202,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zvao plan njemačkog napada na SSSR 1941. godine?",
+    "question": "Kako se zvala operacija Trećeg Reicha s invazijom na SSSR 1941. godine?",
     "answers": [
       "Operacija Barbarossa",
       "Barbarossa"
@@ -3214,7 +3231,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva vojni savez kojeg su 1949. osnovale zapadne države uključujući SAD, Kanadu i zapadnoeuropske zemlje?",
     "answers": [
       "NATO",
@@ -3224,7 +3241,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se zvao komunistički vojno-politički savez istočnoeuropskih država na čelu sa SSSR-om osnovan 1955.?",
     "answers": [
       "Varšavski pakt",
@@ -3234,7 +3251,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Kako se zove najpoznatiji grad na obali Nila u kojem su piramide u Gizi?",
     "answers": [
       "Kairo",
@@ -3244,7 +3261,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva združena država Slovenaca, Hrvata i Srba osnovana 1918. prije preimenovanja u Kraljevinu Jugoslaviju?",
     "answers": [
       "Država SHS",
@@ -3255,47 +3272,36 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se zove poznati hrvatski ban iz 19. stoljeća koji je proveo ilirski pokret i uveo hrvatski jezik kao službeni?",
+    "question": "Kako se zove poznati hrvatski ban iz 19. stoljeća koji je provodio ilirski pokret i uveo hrvatski jezik kao službeni?",
     "answers": [
       "Ban Jelačić",
+      "Ban Josip Jelačić",
       "Josip Jelačić"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove veliki hrvatski pjesnik i pisac \"Zdravljice\" i \"Horvatske domovine\" iz 19. stoljeća?",
+    "difficulty": 3,
+    "question": "Kako se zove veliki hrvatski pjesnik i pisac, autor 'Horvatske domovine' iz 19. stoljeća?",
     "answers": [
       "Antun Mihanović",
-      "France Prešeren",
-      "Prešeren"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove najpoznatiji srpski ep o junaku koji se bori protiv Turaka, dio ciklusa kosovskih pjesama?",
-    "answers": [
-      "Smrt majke Jugovića",
-      "Kosovski boj"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se zove poznati bosanskohercegovački pjesnik i pisac \"Seobe\" i \"Derviša i smrti\"?",
+    "difficulty": 3,
+    "question": "Kako se zove poznati bosanskohercegovački pjesnik i pisac, autor romana 'Derviš i smrt'?",
     "answers": [
       "Meša Selimović",
-      "Mesa Selimovic"
+      "Mehmed Meša Selimović"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva tradicionalna pjesnička forma iz japanske književnosti s 5-7-5 slogova?",
     "answers": [
       "Haiku"
@@ -3304,17 +3310,19 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva najviša liga engleskog nogometa koja je osnovana 1992.?",
+    "difficulty": 2,
+    "question": "Kako se naziva najviši rang engleskog nogometa koji je osnovan 1992.?",
     "answers": [
       "Premier League",
-      "Premiership"
+      "Premjer Lig",
+      "Premiership",
+      "Premjeršip"
     ],
     "image": null
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koji je klub iz Münchena višestruki prvak Njemačke i osvajač Lige prvaka?",
     "answers": [
       "Bayern München",
@@ -3325,7 +3333,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 3,
     "question": "Kako se naziva utrka Formule 1 koja se vozi ulicama Monte Carla?",
     "answers": [
       "Velika nagrada Monaka",
@@ -3335,8 +3343,8 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Kako se naziva talijanska staza Formule 1 poznata kao \"Hram brzine\"?",
+    "difficulty": 3,
+    "question": "Kako se naziva talijanska staza Formule 1 poznata kao 'Hram brzine'?",
     "answers": [
       "Monza",
       "Autodromo Nazionale Monza"
@@ -3355,18 +3363,18 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
-    "question": "Koji je talijanski proizvođač automobila poznat po modelima 911 i Cayenne? (trik pitanje)",
+    "difficulty": 3,
+    "question": "Koji je njemački proizvođač automobila poznat po modelima 911 i Cayenne?",
     "answers": [
-      "Nijedan, Porsche je njemački",
-      "Porsche je njemački"
+      "Porsche",
+      "Porše"
     ],
     "image": null
   },
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Koji njemački proizvođač automobila ima slogan \"Vorsprung durch Technik\"?",
+    "question": "Koji njemački proizvođač automobila ima slogan 'Vorsprung durch Technik'?",
     "answers": [
       "Audi"
     ],
@@ -3374,7 +3382,7 @@
   },
   {
     "type": "blitz",
-    "difficulty": 4,
+    "difficulty": 2,
     "question": "Koji proizvođač automobila stoji iza modela Golf, Passat i Polo?",
     "answers": [
       "Volkswagen",
@@ -3385,9 +3393,10 @@
   {
     "type": "blitz",
     "difficulty": 4,
-    "question": "Kako se naziva izraz u auto-moto svijetu za pretjerano trošenje guma kroz \"spaljivanje\" na mjestu?",
+    "question": "Kako se naziva izraz u auto-moto svijetu za pretjerano trošenje guma kroz 'spaljivanje' na mjestu?",
     "answers": [
-      "Burnout"
+      "Burnout",
+      "Paljenje guma"
     ],
     "image": null
   },
