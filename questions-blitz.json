@@ -3011,6 +3011,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Koji je glavni grad Argentine?",
     "answers": [
       "Buenos Aires"
@@ -3020,6 +3021,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Koji je glavni grad Čilea?",
     "answers": [
       "Santiago",
@@ -3030,6 +3032,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Koji je glavni grad Južnoafričke Republike? (dovoljno je navesti jedan od službenih)",
     "answers": [
       "Cape Town",
@@ -3040,6 +3043,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove morska životinja koja može mijenjati boju kože i ima osam krakova?",
     "answers": [
       "Hobotnica"
@@ -3049,6 +3053,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "", 
     "question": "Kako se naziva najveći kopneni mesožder na svijetu?",
     "answers": [
       "Polarni medvjed",
@@ -3059,6 +3064,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove brzina iznad koje se let zrakoplova smatra nadzvučnim?",
     "answers": [
       "Nadzvučna brzina",
@@ -3069,6 +3075,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva visokoenergetska svemirska pojava koja nastaje kolapsom masivne zvijezde ili sudarom neutronskih zvijezda?",
     "answers": [
       "Gamma bljesak",
@@ -3081,6 +3088,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koja galaksija je udaljena 2,5 milijuna svjetlosnih godina od nas",
     "answers": [
       "Andromeda"
@@ -3090,6 +3098,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva pojava zakrivljenja prostor-vremena uzrokovana masom i energijom, prema općoj teoriji relativnosti?",
     "answers": [
       "Gravitacija"
@@ -3099,6 +3108,7 @@
   {
     "type": "blitz",
     "difficulty": 5,
+    "topic": "",
     "question": "Kako se naziva područje oko crne rupe iz kojeg više ništa, pa ni svjetlost, ne može pobjeći?",
     "answers": [
       "Horizont događaja",
@@ -3110,6 +3120,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Koji planet se zbog gustog oblaka CO2 i efekta staklenika smatra najtoplijim u Sunčevu sustavu?",
     "answers": [
       "Venera",
@@ -3120,6 +3131,7 @@
     {
     "type": "blitz",
     "difficulty": 5,
+    "topic": "",
     "question": "Koji pojam opisuje podjelu cjeline na dva međusobno isključiva dijela, a najčešće se koristi u logici, filozofiji, botanici i lingvistici?",
     "answers": [
       "Dihotomija"
@@ -3129,6 +3141,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Koji planet je poznat po svojim prstenovima građenim od leda i stijena?",
     "answers": [
       "Saturn"
@@ -3138,6 +3151,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Koji planet ima najviše potvrđenih prirodnih satelita u Sunčevu sustavu?",
     "answers": [
       "Jupiter"
@@ -3147,6 +3161,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove geometrijsko tijelo koje ima šest kvadratnih strana?",
     "answers": [
       "Kocka"
@@ -3156,6 +3171,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva poligonalni oblik s osam stranica?",
     "answers": [
       "Oktogon",
@@ -3166,6 +3182,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva matematička funkcija koja je inverzna prirodnom logaritmu?",
     "answers": [
       "Eksponencijalna funkcija"
@@ -3175,6 +3192,7 @@
   {
     "type": "blitz",
     "difficulty": 5,
+    "topic": "",
     "question": "Kako se naziva operacija računanja površine ispod krivulje?",
     "answers": [
       "Integracija"
@@ -3184,6 +3202,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva operacija računanja brzine promjene funkcije u jednoj točki?",
     "answers": [
       "Derivacija"
@@ -3193,6 +3212,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koja znanost sustavno proučava i istražuje stare materijalne ostatke s ciljem rekonstrukcije cjelokupnog života čovječanstva?",
     "answers": [
       "Arheologija"
@@ -3202,6 +3222,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva grana biologije koja proučava životinje?",
     "answers": [
       "Zoologija"
@@ -3211,6 +3232,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva grana biologije koja proučava biljke?",
     "answers": [
       "Botanika"
@@ -3220,6 +3242,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva nauka o građi i funkciji ljudskog tijela?",
     "answers": [
       "Anatomija"
@@ -3229,6 +3252,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva medicinska specijalnost koja se bavi bolestima srca i krvnih žila?",
     "answers": [
       "Kardiologija"
@@ -3238,6 +3262,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove krvna žila koja odvodi krv iz srca prema tijelu?",
     "answers": [
       "Aorta"
@@ -3247,6 +3272,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva organ u kojem se probavljaju ugljikohidrati, bjelančevine i masti, a koji proizvodi inzulin?",
     "answers": [
       "Gušterača"
@@ -3256,6 +3282,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva organ u kojem se vrši filtracija krvi i nastaje mokraća?",
     "answers": [
       "Bubreg"
@@ -3265,6 +3292,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Koji napitak dobijemo od prženih i mljevenih zrna biljke koja dolazi iz porodice broćevki?",
     "answers": [
       "Kava",
@@ -3278,6 +3306,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove francuski desert od jaja, mlijeka, šećera i karamele, poznat po glatkoj teksturi?",
     "answers": [
       "Creme brulee",
@@ -3288,6 +3317,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove tradicionalno talijansko jelo od tankog tijesta, rajčice, sira i raznih dodataka?",
     "answers": [
       "Pizza",
@@ -3298,6 +3328,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove tradicionalno japansko jelo od riže, sirove ribe i algi?",
     "answers": [
       "Sushi",
@@ -3308,6 +3339,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove popularno meksičko jelo od tortilje punjene mesom, povrćem i umakom?",
     "answers": [
       "Taco",
@@ -3318,6 +3350,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva serija knjiga o dječaku čarobnjaku koje je napisala J. K. Rowling?",
     "answers": [
       "Harry Potter",
@@ -3328,6 +3361,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva roman Lava Nikolajeviča Tolstoja koji opisuje život ruskog plemstva u vrijeme Napoleonovih ratova?",
     "answers": [
       "Rat i mir"
@@ -3337,6 +3371,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva roman Fjodora Dostojevskog o studentu Raskoljnikovu koji počini ubojstvo iz ideje o nadčovjeku?",
     "answers": [
       "Zločin i kazna"
@@ -3346,6 +3381,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva roman Gabriela Garcíje Márqueza kojim je populariziran pojam magičnog realizma?",
     "answers": [
       "Sto godina samoće"
@@ -3355,6 +3391,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove britanski pisac koji je stvorio lik Jamesa Bonda?",
     "answers": [
       "Ian Fleming",
@@ -3365,6 +3402,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "", 
     "question": "Kako se zove roman Mary Shelley o znanstveniku koji stvara čudovište od dijelova ljudskih tijela?",
     "answers": [
       "Frankenstein",
@@ -3375,6 +3413,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koji je američki predsjednik poznat po frazi 'Ask not what your country can do for you'?",
     "answers": [
       "John F. Kennedy",
@@ -3388,6 +3427,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koji je američki predsjednik bio ujedno i glavni zapovjednik snaga Unije tijekom Američkog građanskog rata?",
     "answers": [
       "Abraham Lincoln",
@@ -3398,6 +3438,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koji je američki predsjednik jedini obnašao dužnost više od dva mandata?",
     "answers": [
       "Franklin Delano Roosevelt",
@@ -3410,6 +3451,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koji se američki predsjednik suočio s aferom Watergate i dao ostavku?",
     "answers": [
       "Richard Nixon",
@@ -3422,6 +3464,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva politički sustav u kojem je sva vlast u rukama jednog vladara koji tu vlast nasljeđuje?",
     "answers": [
       "Monarhija"
@@ -3431,6 +3474,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se naziva politički sustav u kojem vlast proizlazi iz naroda putem izbora i predstavnika?",
     "answers": [
       "Demokracija"
@@ -3440,6 +3484,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva sustav u kojem država posjeduje sredstva za proizvodnju, a cilj je društvena jednakost?",
     "answers": [
       "Socijalizam"
@@ -3449,6 +3494,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva ideologija koja zagovara ukidanje privatnog vlasništva i klasnih razlika?",
     "answers": [
       "Komunizam"
@@ -3458,6 +3504,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva ideologija koja zagovara ekstremni nacionalizam i autoritarnu vlast, često uz kult vođe?",
     "answers": [
       "Fašizam"
@@ -3467,6 +3514,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koji se rat naziva i 'Veliki rat' i odvijao se od 1914. do 1918.?",
     "answers": [
       "Prvi svjetski rat",
@@ -3479,6 +3527,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koji se rat odvijao između 1939. i 1945. i uključivao većinu svjetskih sila?",
     "answers": [
       "Drugi svjetski rat",
@@ -3491,6 +3540,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se zvala operacija Trećeg Reicha s invazijom na SSSR 1941. godine?",
     "answers": [
       "Operacija Barbarossa",
@@ -3501,6 +3551,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se zove najveća tenkovska bitka u povijesti, vođena 1943. između njemačkih i sovjetskih snaga?",
     "answers": [
       "Bitka kod Kurska",
@@ -3511,6 +3562,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva razdoblje napetosti između SAD-a i SSSR-a nakon Drugog svjetskog rata bez direktnog velikog vojnog sukoba?",
     "answers": [
       "Hladni rat",
@@ -3521,6 +3573,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva vojni savez kojeg su 1949. osnovale zapadne države uključujući SAD, Kanadu i zapadnoeuropske zemlje?",
     "answers": [
       "NATO",
@@ -3531,6 +3584,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zvao komunistički vojno-politički savez istočnoeuropskih država na čelu sa SSSR-om osnovan 1955.?",
     "answers": [
       "Varšavski pakt",
@@ -3541,6 +3595,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove najpoznatiji grad na obali Nila u kojem su piramide u Gizi?",
     "answers": [
       "Kairo",
@@ -3551,6 +3606,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva združena država Slovenaca, Hrvata i Srba osnovana 1918. prije preimenovanja u Kraljevinu Jugoslaviju?",
     "answers": [
       "Država SHS",
@@ -3561,6 +3617,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se zove poznati hrvatski ban iz 19. stoljeća koji je provodio ilirski pokret i uveo hrvatski jezik kao službeni?",
     "answers": [
       "Ban Jelačić",
@@ -3572,6 +3629,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove veliki hrvatski pjesnik i pisac, autor 'Horvatske domovine' iz 19. stoljeća?",
     "answers": [
       "Antun Mihanović"
@@ -3581,6 +3639,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove poznati bosanskohercegovački pjesnik i pisac, autor romana 'Derviš i smrt'?",
     "answers": [
       "Meša Selimović",
@@ -3591,6 +3650,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva tradicionalna pjesnička forma iz japanske književnosti s 5-7-5 slogova?",
     "answers": [
       "Haiku"
@@ -3600,6 +3660,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se naziva najviši rang engleskog nogometa koji je osnovan 1992.?",
     "answers": [
       "Premier League",
@@ -3612,6 +3673,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Koji je klub iz Münchena višestruki prvak Njemačke i osvajač Lige prvaka?",
     "answers": [
       "Bayern München",
@@ -3623,6 +3685,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva utrka Formule 1 koja se vozi ulicama Monte Carla?",
     "answers": [
       "Velika nagrada Monaka",
@@ -3633,6 +3696,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva talijanska staza Formule 1 poznata kao 'Hram brzine'?",
     "answers": [
       "Monza",
@@ -3643,6 +3707,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva popularni reli koji se vozi po snijegu i ledu u Švedskoj?",
     "answers": [
       "Rally Sweden",
@@ -3653,6 +3718,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "", 
     "question": "Koji je njemački proizvođač automobila poznat po modelima 911 i Cayenne?",
     "answers": [
       "Porsche",
@@ -3663,6 +3729,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Koji njemački proizvođač automobila ima slogan 'Vorsprung durch Technik'?",
     "answers": [
       "Audi"
@@ -3672,6 +3739,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Koji proizvođač automobila stoji iza modela Golf, Passat i Polo?",
     "answers": [
       "Volkswagen",
@@ -3682,6 +3750,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva izraz u auto-moto svijetu za pretjerano trošenje guma kroz 'spaljivanje' na mjestu?",
     "answers": [
       "Burnout",
@@ -3692,6 +3761,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva mjera ubrzanja koja se često koristi u auto-moto svijetu, izmjerena kao omjer sile i mase?",
     "answers": [
       "G sila",
@@ -3702,6 +3772,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Koji je američki brend motocikala kultan među bikerima, poznat po modelu Sportster?",
     "answers": [
       "Harley Davidson",
@@ -3714,6 +3785,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva zaštitna metalna konstrukcija u utrkama koja štiti vozača pri prevrtanju vozila?",
     "answers": [
       "Roll cage",
@@ -3724,6 +3796,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Nije 'što? sve što sja.",
     "answers": [
       "Zlato"
@@ -3733,6 +3806,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako glasi izreka koja kaže da je bolje djelovati odmah nego kasnije rješavati posljedice?",
     "answers": [
       "Bolje spriječiti nego liječiti"
@@ -3742,6 +3816,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "U kojoj se poslanici Korinćanima nalazi poznati citat o ljubavi 'Ljubav je strpljiva, ljubav je dobrostiva'?",
     "answers": [
       "Prvoj",
@@ -3755,6 +3830,7 @@
   {
     "type": "blitz",
     "difficulty": 5,
+    "topic": "",
     "question": "Kako se naziva misaoni eksperiment filozofa Zenaona o strijeli koja nikada ne stiže do cilja?",
     "answers": [
       "Zenonov paradoks"
@@ -3764,6 +3840,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva teorija etike koja tvrdi da je moralno ono što donosi najveću sreću najvećem broju ljudi?",
     "answers": [
       "Utilitarizam"
@@ -3773,6 +3850,7 @@
   {
     "type": "blitz",
     "difficulty": 5,
+    "topic": "",
     "question": "Kako se naziva filozofska metoda koja putem pitanja i odgovora iz sugovornika izvlači 'pravu istinu'?",
     "answers": [
       "majeutika"
@@ -3782,6 +3860,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva ogranak filozofije koji se bavi pitanjima lijepog, umjetnosti i ukusa?",
     "answers": [
       "Estetika"
@@ -3791,6 +3870,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva znanost o ispravnom zaključivanju?",
     "answers": [
       "Logika"
@@ -3800,6 +3880,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva područje filozofije koje se bavi pitanjima postojanja, bića i stvarnosti?",
     "answers": [
       "Ontologija"
@@ -3809,6 +3890,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva znanstvena disciplina koja proučava strukturu, povijest i procese na Zemljinoj kori?",
     "answers": [
       "Geologija"
@@ -3818,6 +3900,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva znanstvena disciplina koja proučava atmosferu i vremenske prilike?",
     "answers": [
       "Meteorologija"
@@ -3827,6 +3910,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva skala koja mjeri jačinu potresa prema štetama na objektima i percepciji ljudi?",
     "answers": [
       "Mercallijeva ljestvica",
@@ -3839,6 +3923,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove skala koja mjeri magnitudu potresa na temelju oslobođene energije?",
     "answers": [
       "Richterova ljestvica",
@@ -3850,6 +3935,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove instrument kojim se mjeri jačina potresa?",
     "answers": [
       "Seizmograf"
@@ -3859,6 +3945,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva linija koja spaja mjesta s istom nadmorskom visinom na karti?",
     "answers": [
       "Izohipsa"
@@ -3868,6 +3955,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "", 
     "question": "Kako se naziva linija koja spaja mjesta s istim tlakom na karti?",
     "answers": [
       "Izobara"
@@ -3877,6 +3965,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva linija koja spaja mjesta s jednakom temperaturom na karti?",
     "answers": [
       "Izoterma"
@@ -3886,6 +3975,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva umjetnost pravljenja karata?",
     "answers": [
       "Kartografija"
@@ -3895,6 +3985,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva kut između sjevera i smjera kretanja, mjeri se u stupnjevima?",
     "answers": [
       "Azimut"
@@ -3904,6 +3995,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se naziva instrument koji se koristi za utvrđivanje smjera prema magnetskom sjeveru?",
     "answers": [
       "Kompas"
@@ -3913,6 +4005,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva aparatić koji mjeri broj otkucaja srca, često korišten u sportu?",
     "answers": [
       "Pulsmetar"
@@ -3922,6 +4015,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva proces prilagodbe organizma na veće nadmorske visine i manjak kisika?",
     "answers": [
       "Akli­matizacija"
@@ -3931,6 +4025,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se naziva stanje organizma uslijed gubitka tekućine i elektrolita zbog znojenja i nedostatka vode?",
     "answers": [
       "Dehidracija"
@@ -3940,6 +4035,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se naziva opasnost u planini kada se velika masa snijega odvoji i sklizne niz padinu?",
     "answers": [
       "Lavina"
@@ -3949,6 +4045,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Koji se talijanski izraz koristi za planinarski dom ili sklonište u Alpama?",
     "answers": [
       "Refuge",
@@ -3960,6 +4057,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se zove proces trošenja stijena i tla uslijed djelovanja vode, vjetra i leda?",
     "answers": [
       "Erozija"
@@ -3969,6 +4067,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva proces taloženja čestica pod utjecajem sile kroz tekućinu?",
     "answers": [
       "Sedimentacija"
@@ -3978,6 +4077,7 @@
   {
     "type": "blitz",
     "difficulty": 1,
+    "topic": "",
     "question": "Kako se zove monoteistička religija koju je osnovao prorok Muhamed u 7. stoljeću?",
     "answers": [
       "Islam"
@@ -3987,6 +4087,7 @@
   {
     "type": "blitz",
     "difficulty": 1,
+    "topic": "",
     "question": "Kako se zove monoteistička religija utemeljena na Starom i Novom zavjetu?",
     "answers": [
       "Kršćanstvo",
@@ -3997,6 +4098,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove religija čiji su sveti tekstovi Vede i koja priznaje mnoge bogove poput Višne i Šive?",
     "answers": [
       "Hinduizam"
@@ -4006,6 +4108,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove religija koju je utemeljio Siddhartha Gautama, usmjerena na put prosvjetljenja i nirvane?",
     "answers": [
       "Budizam"
@@ -4015,6 +4118,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove religija židovskog naroda utemeljena na Petoknjižju?",
     "answers": [
       "Judaizam"
@@ -4024,6 +4128,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove pojam u kršćanstvu koji označava tri osobe u jednom Bogu: Oca, Sina i Duha Svetoga?",
     "answers": [
       "Presveto Trojstvo",
@@ -4035,6 +4140,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove poznata muslimanska sveta knjiga otkrivena Muhamedu?",
     "answers": [
       "Kur'an",
@@ -4046,6 +4152,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se zove židovski blagdan kojim se slavi izlazak Izraelaca iz Egipta?",
     "answers": [
       "Pesah",
@@ -4057,6 +4164,7 @@
   {
     "type": "blitz",
     "difficulty": 1,
+    "topic": "",
     "question": "Kako se naziva blagdan u kršćanstvu kojim se slavi uskrsnuće Isusa Krista?",
     "answers": [
       "Uskrs",
@@ -4067,6 +4175,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se naziva blagdan u islamu kojim se završava mjesec posta ramazana?",
     "answers": [
       "Ramazanski bajram",
@@ -4077,6 +4186,7 @@
   {
     "type": "blitz",
     "difficulty": 2,
+    "topic": "",
     "question": "Kako se naziva blagdan u islamu kojim se obilježava žrtva Abrahamova?",
     "answers": [
       "Kurban-bajram",
@@ -4087,6 +4197,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se zove najpoznatiji rimski put koji je povezivao Rim s jugom Italije i koji je simbol rimskog cestovnog sustava?",
     "answers": [
       "Via Appia",
@@ -4097,6 +4208,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva razdoblje rimskog mira od oko 27. pr. Kr. do 180. po. Kr., kada je carstvo bilo relativno stabilno?",
     "answers": [
       "Pax Romana"
@@ -4106,6 +4218,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Koji je rimski car legalizirao kršćanstvo Milanskim ediktom 313. godine?",
     "answers": [
       "Konstantin Veliki",
@@ -4116,6 +4229,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Koji je rimski car podijelio Carstvo na istočni i zapadni dio 395. godine?",
     "answers": [
       "Teodozije I",
@@ -4126,6 +4240,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se zove legendarni vođa Kartažana koji je preko Alpa doveo slonove da napadne Rim?",
     "answers": [
       "Hanibal",
@@ -4136,6 +4251,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se zovu ratovi između Rima i Kartage vođeni od 264. do 146. pr. Kr.?",
     "answers": [
       "Punski ratovi"
@@ -4145,6 +4261,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "", 
     "question": "Kako se zove čovjek za kojeg se kaže da je 'otac povijesti' i koji je napisao djelo 'Povijesti'?",
     "answers": [
       "Herodot"
@@ -4154,6 +4271,7 @@
   {
     "type": "blitz",
     "difficulty": 5,
+    "topic": "",
     "question": "Kako se zove grčki povjesničar koji je opisao Peloponeski rat?",
     "answers": [
       "Tukidid",
@@ -4165,6 +4283,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva znanost koja proučava stara pisma urezana u kamen, metal ili glinu?",
     "answers": [
       "Epigrafika"
@@ -4174,6 +4293,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva papir od biljke koji su koristili stari Egipćani za pisanje?",
     "answers": [
       "Papirus"
@@ -4183,6 +4303,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se zove pismo koje su koristili Sumerani i drugi narodi Mezopotamije?",
     "answers": [
       "Klinopis",
@@ -4194,6 +4315,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva pismo starog Egipta koje se sastoji od slikovnih znakova?",
     "answers": [
       "Hijeroglifi",
@@ -4204,6 +4326,7 @@
   {
     "type": "blitz",
     "difficulty": 5,
+    "topic": "",
     "question": "Kako se zove ploča pronađena u Egiptu koja je pomogla u dešifriranju hijeroglifa jer ima tekst na tri pisma?",
     "answers": [
       "Rosettski kamen",
@@ -4215,6 +4338,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva kazališna umjetnost u kojoj glumci izvode radnju uz unaprijed zapisane melodije i pjesme, često s velikim orkestrom?",
     "answers": [
       "Opera"
@@ -4224,6 +4348,7 @@
   {
     "type": "blitz",
     "difficulty": 4,
+    "topic": "",
     "question": "Kako se naziva kraća glazbena scenska forma s više govora i manje pjevanja?",
     "answers": [
       "Opereta"
@@ -4233,6 +4358,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva glazbeni oblik za orkestar s više stavaka, nastao u klasicizmu, npr. djela Mozarta i Beethovena?",
     "answers": [
       "Simfonija"
@@ -4242,6 +4368,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva glazbeno djelo za solistički instrument i orkestar, često u tri stavka?",
     "answers": [
       "Koncert"
@@ -4251,6 +4378,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva slika ili skulptura koja prikazuje osobu od ramena naviše?",
     "answers": [
       "Portret"
@@ -4260,6 +4388,7 @@
   {
     "type": "blitz",
     "difficulty": 3,
+    "topic": "",
     "question": "Kako se naziva slika krajolika, najčešće prirodnog prizora poput planina, šuma ili rijeka?",
     "answers": [
       "Pejzaž",
@@ -4270,6 +4399,7 @@
   {
     "type": "blitz",
     "difficulty": 1,
+    "topic": "",
     "question": "Tko pod drugim jamu kopa, sam u nju.. što?",
     "answers": [
       "Upada"
