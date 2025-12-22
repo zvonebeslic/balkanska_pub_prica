@@ -579,6 +579,7 @@
   let ALL_QUESTIONS = [];
   let loadedBlitzCount = 0;
   let loadedStoryCount = 0;
+  let loadedFloraCount = 0;
 
   let currentMode = "blitz60"; // "blitz60" | "story90" | "relax"
   let currentQuestion = null;
@@ -635,7 +636,7 @@
     const statusEl = document.getElementById("quiz-status-line"); // element ne postoji
 
     try {
-      const [respBlitz, respStory] = await Promise.all([
+      const [respBlitz, respStory, respFlora] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         fetch(QUESTIONS_URL_STORY),
         fetch(QUESTIONS_URL_FLORA)
@@ -697,7 +698,7 @@
       console.error("Greška pri učitavanju pitanja:", err);
       if (statusEl) {
         statusEl.textContent =
-          "Ne možemo učitati pitanja. Provjeri JSON datoteke (questions-blitz.json, questions-story.json).";
+          "Ne možemo učitati pitanja. Provjeri JSON datoteke (questions-blitz.json, questions-story.json, FloraFauna.json).";
       }
     }
   }
