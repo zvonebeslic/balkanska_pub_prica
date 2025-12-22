@@ -574,6 +574,7 @@
 
   const QUESTIONS_URL_BLITZ = "questions-blitz.json";
   const QUESTIONS_URL_STORY = "questions-story.json";
+  const QUESTIONS_URL_FLORA = "FloraFauna.json";
 
   let ALL_QUESTIONS = [];
   let loadedBlitzCount = 0;
@@ -636,17 +637,19 @@
     try {
       const [respBlitz, respStory] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
-        fetch(QUESTIONS_URL_STORY)
+        fetch(QUESTIONS_URL_STORY),
+        fetch(QUESTIONS_URL_FLORA)
       ]);
 
-      if (!respBlitz.ok || !respStory.ok) {
+      if (!respBlitz.ok || !respStory.ok || !respFlora.ok) {
         throw new Error("Greška pri čitanju JSON datoteka.");
       }
 
       const blitzData = await respBlitz.json();
       const storyData = await respStory.json();
-
-      if (!Array.isArray(blitzData) || !Array.isArray(storyData)) {
+      const floraData = await respFlora.json();
+      
+      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData)) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
       }
 
@@ -670,10 +673,21 @@
         image: q.image || null
       }));
 
-      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory];
+      const normalizedFlora = floraData.map((q, idx) => ({
+        id: q.id ?? "flora-" + idx,
+        type: q.type || "blitz", // ✅ default: ubaci ih u Blitz + Relax
+        difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
+        topic: (q.topic && String(q.topic).trim()) ? String(q.topic).trim() : "FloraFauna",
+        question: q.question || "",
+        answers: Array.isArray(q.answers) ? q.answers : [],
+        image: q.image || null
+       }));
+
+      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory, ...normalizedFlora];
       loadedBlitzCount = normalizedBlitz.length;
       loadedStoryCount = normalizedStory.length;
-
+      loadedFloraCount = normalizedFlora.length;
+      
       resetQuestionQueue();
 
       if (statusEl) {
