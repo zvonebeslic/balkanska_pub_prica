@@ -638,7 +638,7 @@
     const statusEl = document.getElementById("quiz-status-line"); // element ne postoji
 
     try {
-      const [respBlitz, respStory, respFlora] = await Promise.all([
+      const [respBlitz, respStory, respFlora, respFilm] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         fetch(QUESTIONS_URL_STORY),
         fetch(QUESTIONS_URL_FLORA),
