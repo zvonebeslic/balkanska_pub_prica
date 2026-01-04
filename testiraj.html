@@ -740,7 +740,7 @@
       const filmData  = await respFilm.json();
       const antickiRimData = await respAntickiRim.json();
       
-      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData) {
+      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData)) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
       }
 
