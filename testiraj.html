@@ -990,7 +990,7 @@
         scoreWrong++;
         updateScoreUI();
 
-        logAnswerHistory("", false, true);
+        logAnswerHistory("", { ok:false, exact:false }, true);
         loadNextQuestion();
       });
     }
@@ -1285,43 +1285,135 @@
   }
 
   /* ------------------ ANSWERS ------------------ */
-  // ✅ Ključno: priznaje ako se bilo koji spremljeni odgovor pojavljuje UNUTAR onoga što igrač upiše
-  //            kao cijela riječ/fraza (npr. "Lucije Domicije Neron" priznaje "Neron"/"Nero")
+  // ✅ Ovo je "ovako kako smo dogovorili":
+  // - di caprio == DiCaprio (razmaci se ignoriraju u jednom od checkova)
+  // - prihvaća prezime kad je u bazi ime+prezime
+  // - prihvaća male tipfelere (Onsk ~ Omsk) po Levenshteinu
+  // - ako NIJE 100% isto -> u povijesti piše "Prihvaćeno (≈)" i odmah ispod "100% točno: <answers[0]>"
 
-  function normalizeForMatch(s) {
+  function normalizeWords(s) {
     return (s || "")
       .toString()
       .toLowerCase()
       .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")  // ukloni dijakritike
-      .replace(/[^a-z0-9\s]/g, " ")     // interpunkcija -> razmak
+      .replace(/[\u0300-\u036f]/g, "")     // dijakritika
+      .replace(/[^a-z0-9\s]/g, " ")        // interpunkcija -> razmak
       .replace(/\s+/g, " ")
       .trim();
+  }
+
+  function normalizeCollapsed(s) {
+    // kao normalizeWords, ali bez razmaka (Di Caprio == DiCaprio)
+    return normalizeWords(s).replace(/\s+/g, "");
   }
 
   function escapeRegex(s) {
     return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
-  function containsWholeWordOrPhrase(playerInput, savedAnswer) {
-    const hay = normalizeForMatch(playerInput);
-    const needle = normalizeForMatch(savedAnswer);
+  function levenshtein(a, b) {
+    const s = a || "";
+    const t = b || "";
+    const n = s.length;
+    const m = t.length;
+    if (n === 0) return m;
+    if (m === 0) return n;
+
+    const dp = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+    for (let i = 0; i <= n; i++) dp[i][0] = i;
+    for (let j = 0; j <= m; j++) dp[0][j] = j;
+
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= m; j++) {
+        const cost = s[i - 1] === t[j - 1] ? 0 : 1;
+        dp[i][j] = Math.min(
+          dp[i - 1][j] + 1,
+          dp[i][j - 1] + 1,
+          dp[i - 1][j - 1] + cost
+        );
+      }
+    }
+    return dp[n][m];
+  }
+
+  function allowedTyposByLength(len) {
+    if (len <= 4) return 0;
+    if (len <= 7) return 1;
+    if (len <= 11) return 2;
+    return 3;
+  }
+
+  function containsWholeWordOrPhrase(haystackRaw, needleRaw) {
+    const hay = normalizeWords(haystackRaw);
+    const needle = normalizeWords(needleRaw);
     if (!hay || !needle) return false;
 
-    // granice: početak ili razmak prije i poslije
     const re = new RegExp(`(^|\\s)${escapeRegex(needle)}(\\s|$)`, "i");
     return re.test(hay);
   }
 
-  function checkAnswer(question, userAnswerRaw) {
+  function lastToken(s) {
+    const w = normalizeWords(s);
+    if (!w) return "";
+    const parts = w.split(" ").filter(Boolean);
+    return parts[parts.length - 1] || "";
+  }
+
+  function checkAnswerDetailed(question, userAnswerRaw) {
     const answers = Array.isArray(question.answers) ? question.answers : [];
-    if (!answers.length) return false;
+    const userW = normalizeWords(userAnswerRaw);
+    const userC = normalizeCollapsed(userAnswerRaw);
+    if (!answers.length || !userW) {
+      return { ok: false, exact: false, matched: null, reason: "" };
+    }
+
+    let best = { ok: false, exact: false, matched: null, reason: "", dist: Infinity };
 
     for (const saved of answers) {
       if (!saved) continue;
-      if (containsWholeWordOrPhrase(userAnswerRaw, saved)) return true;
+
+      const savedW = normalizeWords(saved);
+      const savedC = normalizeCollapsed(saved);
+      if (!savedW) continue;
+
+      // 1) EXACT (nakon normalizacije)
+      if (userW === savedW || userC === savedC) {
+        return { ok: true, exact: true, matched: saved, reason: "exact" };
+      }
+
+      // 2) user sadrži spremljeni odgovor kao riječ/frazu (tvoj koncept)
+      if (containsWholeWordOrPhrase(userAnswerRaw, saved)) {
+        best = { ok: true, exact: false, matched: saved, reason: "contains", dist: 0 };
+        continue;
+      }
+
+      // 3) prezime-only
+      const savedLast = lastToken(saved);
+      if (savedW.includes(" ") && userW === savedLast && userW.length >= 3) {
+        best = { ok: true, exact: false, matched: saved, reason: "surname", dist: 0 };
+        continue;
+      }
+      if (savedW.includes(" ") && savedLast && containsWholeWordOrPhrase(userAnswerRaw, savedLast)) {
+        best = { ok: true, exact: false, matched: saved, reason: "surname-in-phrase", dist: 0 };
+        continue;
+      }
+
+      // 4) tipfeleri (Onsk ~ Omsk)
+      const len = Math.max(savedC.length, userC.length);
+      const allowed = allowedTyposByLength(len);
+
+      if (allowed > 0) {
+        const d = levenshtein(userC, savedC);
+        if (d <= allowed && len >= 5) {
+          if (!best.ok || d < best.dist) {
+            best = { ok: true, exact: false, matched: saved, reason: "typo", dist: d };
+          }
+        }
+      }
     }
-    return false;
+
+    if (best.ok) return best;
+    return { ok: false, exact: false, matched: null, reason: "" };
   }
 
   function handleSubmitAnswer() {
@@ -1337,18 +1429,24 @@
 
     forceResumeTimerFromTyping();
 
-    const ok = checkAnswer(currentQuestion, userAnswerRaw);
+    const res = checkAnswerDetailed(currentQuestion, userAnswerRaw);
 
     scoreTotal++;
-    if (ok) scoreCorrect++;
+    if (res.ok) scoreCorrect++;
     else scoreWrong++;
 
     updateScoreUI();
-    logAnswerHistory(userAnswerRaw, ok, false);
+    logAnswerHistory(userAnswerRaw, res, false);
 
-    feedbackEl.textContent = ok ? "Točno! ✅" : "Netočno. ❌";
-    feedbackEl.classList.toggle("correct", ok);
-    feedbackEl.classList.toggle("incorrect", !ok);
+    if (res.ok) {
+      feedbackEl.textContent = res.exact ? "Točno! ✅" : "Prihvaćeno (≈) ✅";
+      feedbackEl.classList.toggle("correct", true);
+      feedbackEl.classList.toggle("incorrect", false);
+    } else {
+      feedbackEl.textContent = "Netočno. ❌";
+      feedbackEl.classList.toggle("correct", false);
+      feedbackEl.classList.toggle("incorrect", true);
+    }
 
     setTimeout(() => {
       if (isTimedMode() && quizFinished) return;
@@ -1375,12 +1473,16 @@
     if (percentEl) percentEl.textContent = percent + "% uspješnosti";
   }
 
-  function logAnswerHistory(userAnswer, isCorrect, skipped) {
+  function logAnswerHistory(userAnswer, resultOrBool, skipped) {
     const list = document.getElementById("history-list");
     if (!list || !currentQuestion) return;
 
+    const res = (typeof resultOrBool === "object" && resultOrBool)
+      ? resultOrBool
+      : { ok: !!resultOrBool, exact: !!resultOrBool, matched: null, reason: "" };
+
     const li = document.createElement("li");
-    li.className = "history-item " + (skipped ? "incorrect" : (isCorrect ? "correct" : "incorrect"));
+    li.className = "history-item " + (skipped ? "incorrect" : (res.ok ? "correct" : "incorrect"));
 
     const qDiv = document.createElement("div");
     qDiv.className = "history-q";
@@ -1395,15 +1497,23 @@
 
     const aDiv = document.createElement("div");
     aDiv.className = "history-a";
+
     const answers = currentQuestion.answers || [];
     const mainAnswer = answers[0] || "(nema odgovora)";
 
     if (skipped) {
       aDiv.innerHTML = `<span class="label">Preskočeno.</span> Točan odgovor: <strong>${mainAnswer}</strong>`;
-    } else if (isCorrect) {
+    } else if (res.ok) {
+      const verdict = res.exact ? "Točno ✔" : "Prihvaćeno (≈) ✔";
+
       aDiv.innerHTML =
         `<span class="label">Tvoj odgovor:</span> ${userAnswer || "(prazno)"}<br>` +
-        `<span class="label">Točno ✔</span>`;
+        `<span class="label">${verdict}</span>`;
+
+      // ✅ Ključno: ako nije 100% isto, prikaži odmah ispod 100% odgovor
+      if (!res.exact) {
+        aDiv.innerHTML += `<br><span class="label">100% točno:</span> <strong>${mainAnswer}</strong>`;
+      }
     } else {
       aDiv.innerHTML =
         `<span class="label">Tvoj odgovor:</span> ${userAnswer || "(prazno)"}<br>` +
