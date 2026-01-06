@@ -2281,8 +2281,8 @@
     "topic": "Znanost",
     "question": "Kako se zove pojava kada se svjetlosna zraka lomi pri prolasku kroz različite optičke gustoće i zbog toga nam se čini da je štap u vodi slomljen?",
     "answers": [
-      "Lom svjetlosti",
-      "refrakcija"
+      "Refrakcija",
+      "Lom svjetlosti"
     ],
     "image": null
   },
@@ -2889,7 +2889,8 @@
     "question": "Kako se zove glumac koji je utjelovio originalnog Indianu Jonesa?",
     "answers": [
       "Harrison Ford",
-      "Harison Ford"
+      "Harison Ford",
+      "Ford"
     ],
     "image": null
   },
@@ -2924,7 +2925,9 @@
     "question": "Koji je redatelj snimio trilogiju 'Gospodar prstenova'?",
     "answers": [
       "Peter Jackson",
-      "Piter Džekson"
+      "Piter Džekson",
+      "Jackson",
+      "Džekson"
     ],
     "image": null
   },
@@ -2934,8 +2937,8 @@
     "topic": "FilmGlazba",
     "question": "Koje umjetničko ime nosi pjevač grupe U2?",
     "answers": [
-      "Bono",
       "Bono Vox",
+      "Bono",
       "Bono Voks"
     ],
     "image": null
@@ -2954,9 +2957,9 @@
   },
   {
     "type": "blitz",
-    "difficulty": 3,
+    "difficulty": 4,
     "topic": "FilmGlazba",
-    "question": "Kako se zove glazbeni festival koji se svake godine održava u Glastonburyju u Engleskoj?",
+    "question": "Kako se zove glazbeni festival koji se svake godine održava u blizini malog mjesta Piltona u Engleskoj?",
     "answers": [
       "Glastonbury",
       "Glastonburi",
@@ -3637,7 +3640,8 @@
     "answers": [
       "Ban Jelačić",
       "Ban Josip Jelačić",
-      "Josip Jelačić"
+      "Josip Jelačić",
+      "Jelačić"
     ],
     "image": null
   },
@@ -3647,7 +3651,8 @@
     "topic": "KnjigaSlika",
     "question": "Kako se zove veliki hrvatski pjesnik i pisac, autor 'Horvatske domovine' iz 19. stoljeća?",
     "answers": [
-      "Antun Mihanović"
+      "Antun Mihanović",
+      "Mihanović"
     ],
     "image": null
   },
@@ -3658,7 +3663,8 @@
     "question": "Kako se zove poznati bosanskohercegovački pjesnik i pisac, autor romana 'Derviš i smrt'?",
     "answers": [
       "Meša Selimović",
-      "Mehmed Meša Selimović"
+      "Mehmed Meša Selimović",
+      "Selimović"
     ],
     "image": null
   },
@@ -4236,7 +4242,8 @@
     "question": "Koji je rimski car podijelio Carstvo na istočni i zapadni dio 395. godine?",
     "answers": [
       "Teodozije I",
-      "Teodozije Veliki"
+      "Teodozije Veliki",
+      "Teodezije"
     ],
     "image": null
   },
