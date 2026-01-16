@@ -876,18 +876,6 @@
   },
   {
     "type": "blitz",
-    "difficulty": 5,
-    "topic": "Znanost",
-    "question": "Kako se zove najpoznatiji eksperimentalni dokaz dvostruke prirodne svjetlosti (val i čestica)?",
-    "answers": [
-      "Dvo-šupljinski pokus",
-      "Youngov pokus",
-      "dvostruki procjep"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
     "difficulty": 2,
     "topic": "Zemljopis",
     "question": "Koja država ima glavni grad Buenos Aires?",
@@ -1716,7 +1704,8 @@
     "topic": "KnjigaSlika",
     "question": "Kako se na engleskom jeziku kaže poslovica 'Bolje spriječiti nego liječiti'?",
     "answers": [
-      "Prevention is better than cure"
+      "Prevention is better than cure",
+      "Better save than cure"
     ],
     "image": null
   },
@@ -1846,7 +1835,8 @@
     "topic": "Sport",
     "question": "Do kojeg se planinskog vrha u Saveznoj državi Colorado vozi poznata brdska utrka u automobilizmu koja nosi kraticu PPIHC?",
     "answers": [
-      "Pikes Peak"
+      "Pikes Peak",
+      "Pajks Pik"
     ],
     "image": null
   },
@@ -1856,7 +1846,8 @@
     "topic": "Sport",
     "question": "Kako se zove poznati rally vozač iz Finske, višestruki svjetski prvak u WRC-u iz '86 i '87 te '91 i '93?",
     "answers": [
-      "Juha Kankkunen"
+      "Juha Kankkunen",
+      "Kankkunen"
     ],
     "image": null
   },
@@ -2316,7 +2307,8 @@
     "topic": "Znanost",
     "question": "Kako se zove teorija u matematici koja se bavi vjerojatnostima i slučajnim događajima?",
     "answers": [
-      "Teorija vjerojatnosti"
+      "Teorija vjerojatnosti",
+      "Vjerojatnosti"
     ],
     "image": null
   },
@@ -3361,7 +3353,9 @@
     "question": "Kako se zove popularno meksičko jelo od tortilje punjene mesom, povrćem i umakom?",
     "answers": [
       "Taco",
-      "Tacos"
+      "Tacos",
+      "Tako",
+      "Takos"
     ],
     "image": null
   },
