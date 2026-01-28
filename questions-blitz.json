@@ -420,7 +420,8 @@
     "answers": [
       "Tihi ocean",
       "Pacifik",
-      "Tihi"
+      "Tihi",
+      "Pacifički"
     ],
     "image": null
   },
@@ -613,7 +614,8 @@
     "answers": [
       "Nobelova nagrada za mir",
       "Nagrada za mir",
-      "Za mir"
+      "Za mir",
+      "Mir"
     ],
     "image": null
   },
@@ -1256,7 +1258,10 @@
     "answers": [
       "Povelja Ujedinjenih naroda",
       "Povelja UN",
-      "UN Charter"
+      "UN Charter",
+      "Povelja UN-a",
+      "Povelja"
+      
     ],
     "image": null
   },
@@ -1423,7 +1428,9 @@
     "topic": "Zemljopis",
     "question": "Kako se zove čvrsto tijelo koje nastaje kristalizacijom magme u unutrašnjosti Zemlje?",
     "answers": [
-      "Magmatska stijena"
+      "Magmatska stijena",
+      "Magmatska",
+      "Magma"
     ],
     "image": null
   },
@@ -1793,7 +1800,7 @@
     "question": "Koji je službeni jezik u Brazilu?",
     "answers": [
       "Portugalski",
-      "portugalski jezik",
+      "Portugalski jezik",
       "Portuguese"
     ],
     "image": null
@@ -1801,11 +1808,12 @@
   {
     "type": "blitz",
     "difficulty": 3,
-    "topic": "Znanost",
-    "question": "Kako se zove proces kruženja vode u prirodi (isparavanje, kondenzacija, oborine)?",
+    "topic": "Povijest",
+    "question": "Zbog kojeg su ženskog imena gr i zaratili sa Trojom?",
     "answers": [
-      "vodeni ciklus",
-      "ciklus vode"
+      "Helena",
+      "Helene",
+      "Helenom"
     ],
     "image": null
   },
@@ -1916,7 +1924,7 @@
     "question": "Kako se kaže za broj koji je djeljiv samo s 1 i samim sobom?",
     "answers": [
       "Prost broj",
-      "prosti"
+      "Prosti"
     ],
     "image": null
   },
@@ -2050,17 +2058,6 @@
       "Dan D",
       "D Dan",
       "D-Day"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 4,
-    "topic": "Ostalo",
-    "question": "Kako se zove poznata deklaracija o ljudskim pravima koju je usvojila Opća skupština UN-a 1948. godine?",
-    "answers": [
-      "Opća deklaracija o ljudskim pravima",
-      "Universal Declaration of Human Rights"
     ],
     "image": null
   },
@@ -2273,7 +2270,7 @@
     "question": "Kako se zove poznata teorija u biologiji koja objašnjava razvoj vrsta putem prirodne selekcije?",
     "answers": [
       "Teorija evolucije",
-      "evolucija",
+      "Evolucija",
       "Darwinova teorija"
     ],
     "image": null
@@ -2365,8 +2362,8 @@
     "question": "Kako se zove pojam u kvantnoj mehanici za sustav u kojem su dvije čestice povezane na način da mjerenje jedne trenutačno utječe na stanje druge?",
     "answers": [
       "Spregnutost",
-      "kvantna spregnutost",
-      "entanglement"
+      "Kvantna spregnutost",
+      "Entanglement"
     ],
     "image": null
   },
@@ -2714,8 +2711,7 @@
     "topic": "Ostalo",
     "question": "Kako se nazivaju velike monumentalne grobnice faraona u Egiptu trokutastog oblika?",
     "answers": [
-      "Pirami­de",
-      "piramide"
+      "Pirami­de"
     ],
     "image": null
   },
@@ -3651,7 +3647,8 @@
     "question": "Kako se naziva združena država Slovenaca, Hrvata i Srba osnovana 1918. prije preimenovanja u Kraljevinu Jugoslaviju?",
     "answers": [
       "Država SHS",
-      "Država Slovenaca, Hrvata i Srba"
+      "Država Slovenaca, Hrvata i Srba",
+      "SHS"
     ],
     "image": null
   },
@@ -4342,7 +4339,10 @@
     "answers": [
       "Klinopis",
       "Klinasto pismo",
-      "Klinovo pismo"
+      "Klinovo pismo",
+      "Klinasto",
+      "Klinčano",
+      "Klinovo"
     ],
     "image": null
   },
