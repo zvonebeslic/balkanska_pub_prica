@@ -656,14 +656,16 @@
   const QUESTIONS_URL_FLORA = "FloraFauna.json";
   const QUESTIONS_URL_FILM  = "FilmGlazba.json";
   const QUESTIONS_URL_ANTICKI_RIM = "AntickiRim.json";
-
+  const QUESTIONS_URL_AMERICKIPREDSJEDNICI = "AmerickiPredsjednici.json";
+ 
   let ALL_QUESTIONS = [];
   let loadedBlitzCount = 0;
   let loadedStoryCount = 0;
   let loadedFloraCount = 0;
   let loadedFilmCount  = 0;
   let loadedAntickiRimCount = 0;
-
+  let loadedAmerickiPredsjednici = 0;
+  
   // mode: "blitz60" | "story90" | "relax" | "themed"
   let currentMode = "blitz60";
   let currentThemeTopic = null; // npr "AntickiRim"
@@ -722,15 +724,16 @@
 
   async function loadQuestionsFromJson() {
     try {
-      const [respBlitz, respStory, respFlora, respFilm, respAntickiRim] = await Promise.all([
+      const [respBlitz, respStory, respFlora, respFilm, respAntickiRim, respAmerickiPredsjednici] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         fetch(QUESTIONS_URL_STORY),
         fetch(QUESTIONS_URL_FLORA),
         fetch(QUESTIONS_URL_FILM),
         fetch(QUESTIONS_URL_ANTICKI_RIM)
+        fetch(QUESTIONS_URL_AMERICKI_PREDSJEDNICI)
       ]);
 
-      if (!respBlitz.ok || !respStory.ok || !respFlora.ok || !respFilm.ok || !respAntickiRim.ok) {
+      if (!respBlitz.ok || !respStory.ok || !respFlora.ok || !respFilm.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok) {
         throw new Error("Greška pri čitanju JSON datoteka.");
       }
 
@@ -739,8 +742,9 @@
       const floraData = await respFlora.json();
       const filmData  = await respFilm.json();
       const antickiRimData = await respAntickiRim.json();
+      const americkiPredsjedniciData = await respAmerickiPredsjednici.json();
       
-      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData)) {
+      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData)) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
       }
 
@@ -794,12 +798,23 @@
         image: q.image || null
       }));
 
-      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory, ...normalizedFlora, ...normalizedFilm, ...normalizedAntickiRim];
+      const normalizedAmerickiPredsjednici = americkiPredsjedniciData.map((q, idx) => ({
+        id: q.id ?? "antickiRim-" + idx,
+        type: q.type || "blitz", // da ulazi u Blitz + Relax (a možeš i "story" ako imaš duža)
+        difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
+        topic: "AntickiRim",
+        question: q.question || "",
+        answers: Array.isArray(q.answers) ? q.answers : [],
+        image: q.image || null
+      }));
+
+      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory, ...normalizedFlora, ...normalizedFilm, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici];
       loadedBlitzCount = normalizedBlitz.length;
       loadedStoryCount = normalizedStory.length;
       loadedFloraCount = normalizedFlora.length;
       loadedFilmCount  = normalizedFilm.length;
       loadedAntickiRimCount = normalizedAntickiRim.length;
+      loadedAmerickiPredsjedniciCount = normalizedAmerickiPredsjednici.lenght;
       
       resetQuestionQueue();
     } catch (err) {
