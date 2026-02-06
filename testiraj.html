@@ -682,6 +682,39 @@
   const TOPIC_COOLDOWN = 5;
   let recentTopics = [];
 
+  // ✅ PERSISTENT (pamti između ulazaka u stranicu)
+  const QUIZ_STATE_KEY = "bpqm_seen_v1";
+  const COOLDOWN_MS = 3 * 60 * 60 * 1000; // 3 sata
+  const RECENT_BLOCK = 12; // ne vraćaj zadnjih 12 odmah
+
+  function loadState() {
+  try {
+    const raw = localStorage.getItem(QUIZ_STATE_KEY);
+    if (!raw) return { playedAt: {}, recent: [] };
+    const s = JSON.parse(raw);
+    return {
+      playedAt: (s.playedAt && typeof s.playedAt === "object") ? s.playedAt : {},
+      recent: Array.isArray(s.recent) ? s.recent : []
+    };
+  } catch {
+    return { playedAt: {}, recent: [] };
+  }
+  }
+
+  function saveState(state) {
+  if (state.recent.length > 200) state.recent = state.recent.slice(-200);
+  localStorage.setItem(QUIZ_STATE_KEY, JSON.stringify(state));
+  }
+
+  function markPlayed(id) {
+  const state = loadState();
+  const key = String(id);
+  const now = Date.now();
+  state.playedAt[key] = now;
+  state.recent.push(key);
+  saveState(state);
+  }
+
   // ✅ "špil" pitanja po modu
   let questionQueue = [];
   let queueMode = null;
@@ -1159,6 +1192,7 @@
 
     currentQuestion = chosen;
     usedQuestionIds.add(chosen.id);
+    markPlayed(chosen.id);
 
     if (typeof chosen.difficulty === "number") {
       if (lastDifficulty === chosen.difficulty) sameDifficultyStreak++;
@@ -1200,7 +1234,29 @@
       base = base.filter(q => String(q.topic).trim() === String(currentThemeTopic).trim());
     }
 
-    return base;
+    // ✅ spriječi ponavljanje između ulazaka (cooldown + recent block)
+  const state = loadState();
+  const now = Date.now();
+  const recentSet = new Set(state.recent.slice(-RECENT_BLOCK));
+
+  // 1) strogo: nije u cooldownu + nije u recent
+  let filtered = base.filter(q => {
+    const id = String(q.id);
+    const last = state.playedAt[id];
+    const inCooldown = (typeof last === "number") && (now - last) < COOLDOWN_MS;
+    const isRecent = recentSet.has(id);
+    return !inCooldown && !isRecent;
+  });
+
+  // 2) ako je premalo (npr. mala tema), popusti: samo izbjegni recent
+  if (filtered.length < 10) {
+    filtered = base.filter(q => !recentSet.has(String(q.id)));
+  }
+
+  // 3) ako je i dalje premalo, dopusti sve
+  if (filtered.length < 10) filtered = base;
+
+  return filtered;
   }
 
   /* ------------------ UI UPDATE – QUESTION ------------------ */
