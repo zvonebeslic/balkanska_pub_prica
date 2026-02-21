@@ -1946,7 +1946,6 @@
     ],
     "image": null
   },
-  [
   {
     "type": "blitz",
     "difficulty": 3,
@@ -2076,18 +2075,6 @@
     "answers": [
       "Fillmore",
       "Filmor"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 3,
-    "topic": "AmerickiPredsjednici",
-    "question": "Koliko američkih predsjednika ima registriran patent na izum?",
-    "answers": [
-      "Jedan",
-      "Jedno",
-      "1"
     ],
     "image": null
   },
@@ -2319,16 +2306,6 @@
       "Stejts of Amerika",
       "Junajted Stejts",
       "Ameriken"
-    ],
-    "image": null
-  },
-  {
-    "type": "blitz",
-    "difficulty": 3,
-    "topic": "AmerickiPredsjednici",
-    "question": "U vrijeme kojeg po redu svog mandata je ubijen Abraham Lincoln?",
-    "answers": [
-      "Drugog"
     ],
     "image": null
   },
@@ -2890,8 +2867,11 @@
     "type": "blitz",
     "difficulty": 3,
     "topic": "AmerickiPredsjednici",
-    "question": "Second",
+    "question": "U vrijeme kojeg po redu svog mandata je ubijen Abraham Lincoln",
     "answers": [
+      "Drugog",
+      "2.",
+      "Second",
       "2nd",
       "II.",
       "Drugoga",
@@ -2955,8 +2935,13 @@
     "type": "blitz",
     "difficulty": 3,
     "topic": "AmerickiPredsjednici",
-    "question": "I",
+    "question": "Koliko američkih predsjednika ima registriran patent na izum?",
     "answers": [
+      "Jedan",
+      "Jedno",
+      "1.",
+      "1",
+      "I",
       "I.",
       "One"
     ],
@@ -3262,7 +3247,8 @@
       "15",
       "Petnaest",
       "Fifteen",
-      "XV"
+      "XV",
+      "Petnaestero"
     ],
     "image": null
   },
@@ -3287,8 +3273,7 @@
       "Alaska"
     ],
     "image": null
-  }
-]
+  },
   {
     "type": "blitz",
     "difficulty": 3,
