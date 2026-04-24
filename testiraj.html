@@ -657,7 +657,8 @@
   const QUESTIONS_URL_FILM  = "FilmGlazba.json";
   const QUESTIONS_URL_ANTICKI_RIM = "AntickiRim.json";
   const QUESTIONS_URL_AMERICKI_PREDSJEDNICI = "AmerickiPredsjednici.json";
- 
+  const QUESTIONS_URL_ZEMLJOPIS = "questions-zemljopis.json";
+  
   let ALL_QUESTIONS = [];
   let loadedBlitzCount = 0;
   let loadedStoryCount = 0;
@@ -665,6 +666,7 @@
   let loadedFilmCount  = 0;
   let loadedAntickiRimCount = 0;
   let loadedAmerickiPredsjedniciCount = 0;
+  let loadedZemljopisCount = 0;
   
   // mode: "blitz60" | "story90" | "relax" | "themed"
   let currentMode = "blitz60";
@@ -757,16 +759,17 @@
 
   async function loadQuestionsFromJson() {
     try {
-      const [respBlitz, respStory, respFlora, respFilm, respAntickiRim, respAmerickiPredsjednici] = await Promise.all([
+      const [respBlitz, respStory, respFlora, respFilm, respAntickiRim, respAmerickiPredsjednici, respZemljopis] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         fetch(QUESTIONS_URL_STORY),
         fetch(QUESTIONS_URL_FLORA),
         fetch(QUESTIONS_URL_FILM),
         fetch(QUESTIONS_URL_ANTICKI_RIM),
-        fetch(QUESTIONS_URL_AMERICKI_PREDSJEDNICI)
+        fetch(QUESTIONS_URL_AMERICKI_PREDSJEDNICI),
+        fetch(QUESTIONS_URL_ZEMLJOPIS),
       ]);
 
-      if (!respBlitz.ok || !respStory.ok || !respFlora.ok || !respFilm.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok) {
+      if (!respBlitz.ok || !respStory.ok || !respFlora.ok || !respFilm.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok || !respZemljopis.ok) {
         throw new Error("Greška pri čitanju JSON datoteka.");
       }
 
@@ -776,8 +779,9 @@
       const filmData  = await respFilm.json();
       const antickiRimData = await respAntickiRim.json();
       const americkiPredsjedniciData = await respAmerickiPredsjednici.json();
+      const zemljopisData = await respZemljopis.json();
       
-      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData)) {
+      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData)) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
       }
 
@@ -841,13 +845,24 @@
         image: q.image || null
       }));
 
-      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory, ...normalizedFlora, ...normalizedFilm, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici];
+      const normalizedZemljopis = zemljopisData.map((q, idx) => ({
+        id: q.id ?? "zemljopis-" + idx,
+        type: q.type || "blitz", // da ulazi u Blitz + Relax (a možeš i "story" ako imaš duža)
+        difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
+        topic: "Zemljopis",
+        question: q.question || "",
+        answers: Array.isArray(q.answers) ? q.answers : [],
+        image: q.image || null
+      }));
+
+      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory, ...normalizedFlora, ...normalizedFilm, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici, ...normalizedZemljopis];
       loadedBlitzCount = normalizedBlitz.length;
       loadedStoryCount = normalizedStory.length;
       loadedFloraCount = normalizedFlora.length;
       loadedFilmCount  = normalizedFilm.length;
       loadedAntickiRimCount = normalizedAntickiRim.length;
       loadedAmerickiPredsjedniciCount = normalizedAmerickiPredsjednici.length;
+      loadedZemljopisCount = normalizedZemljopis.length;
       
       resetQuestionQueue();
     } catch (err) {
