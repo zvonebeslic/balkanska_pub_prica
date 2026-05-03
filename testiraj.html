@@ -862,7 +862,7 @@
       }));
 
       const normalizedNogomet = nogometData.map((q, idx) => ({
-        id: q.id ?? "zemljopis-" + idx,
+        id: q.id ?? "nogomet-" + idx,
         type: q.type || "blitz", // da ulazi u Blitz + Relax (a možeš i "story" ako imaš duža)
         difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
         topic: "Nogomet",
