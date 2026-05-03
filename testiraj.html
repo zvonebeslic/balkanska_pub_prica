@@ -670,7 +670,7 @@
   let loadedAntickiRimCount = 0;
   let loadedAmerickiPredsjedniciCount = 0;
   let loadedZemljopisCount = 0;
-  let loadedNogometCount = 0
+  let loadedNogometCount = 0;
   
   // mode: "blitz60" | "story90" | "relax" | "themed"
   let currentMode = "blitz60";
@@ -785,7 +785,7 @@
       const antickiRimData = await respAntickiRim.json();
       const americkiPredsjedniciData = await respAmerickiPredsjednici.json();
       const zemljopisData = await respZemljopis.json();
-      const nogometData = await respZemljopis.json();
+      const nogometData = await respNogomet.json();
       
       if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData) || !Array.isArray(nogometData)) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
@@ -1020,7 +1020,7 @@
       "AntickiEgipat": "Antički Egipat",
       "AntickiRim": "Antički Rim",
       "AmerickiPredsjednici": "Američki predsjednici",
-      "Zemljopis": "Zemljopis"
+      "Zemljopis": "Zemljopis",
       "Nogomet": "Nogomet"
     };
     return map[topicKey] || topicKey;
