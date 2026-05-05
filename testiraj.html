@@ -794,7 +794,7 @@
       const zemljopisData = await respZemljopis.json();
       const nogometData = await respNogomet.json();
       
-      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData) || !Array.isArray(nogometData)) {
+      if (!Array.isArray(blitzData) || !Array.isArray(storyData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(glazbaData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData) || !Array.isArray(nogometData)) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
       }
 
@@ -839,7 +839,7 @@
       }));
 
       const normalizedGlazba = glazbaData.map((q, idx) => ({
-        id: q.id ?? "film-" + idx,
+        id: q.id ?? "glazba-" + idx,
         type: q.type || "blitz",
         difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
         topic: (q.topic && String(q.topic).trim()) ? String(q.topic).trim() : "Glazba",
