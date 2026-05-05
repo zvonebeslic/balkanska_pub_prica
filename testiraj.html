@@ -561,7 +561,8 @@
           <button class="themed-topic" data-topic="Zemljopis" type="button">Zemljopis kviz</button>
           <button class="themed-topic" data-topic="Nogomet" type="button">Nogomet kviz</button>
           <button class="themed-topic" data-topic="FloraFauna" type="button">FloraFauna kviz</button>
-          <button class="themed-topic" data-topic="FilmGlazba" type="button">FilmGlazba kviz</button>
+          <button class="themed-topic" data-topic="Film" type="button">Film kviz</button>
+          <button class="themed-topic" data-topic="Glazba" type="button">Glazba kviz</button>
         </div>
         <div class="themed-hint">
           U tematskom kvizu dobivaš <strong>samo pitanja odabrane teme</strong>.
@@ -658,7 +659,8 @@
   const QUESTIONS_URL_BLITZ = "questions-blitz.json";
   const QUESTIONS_URL_STORY = "questions-story.json";
   const QUESTIONS_URL_FLORA = "FloraFauna.json";
-  const QUESTIONS_URL_FILM  = "FilmGlazba.json";
+  const QUESTIONS_URL_FILM  = "Film.json";
+  const QUESTIONS_URL_GLAZBA  = "Glazba.json";
   const QUESTIONS_URL_ANTICKI_RIM = "AntickiRim.json";
   const QUESTIONS_URL_AMERICKI_PREDSJEDNICI = "AmerickiPredsjednici.json";
   const QUESTIONS_URL_ZEMLJOPIS = "Zemljopis.json";
@@ -669,6 +671,7 @@
   let loadedStoryCount = 0;
   let loadedFloraCount = 0;
   let loadedFilmCount  = 0;
+  let loadedGlazbaCount  = 0;
   let loadedAntickiRimCount = 0;
   let loadedAmerickiPredsjedniciCount = 0;
   let loadedZemljopisCount = 0;
@@ -765,18 +768,19 @@
 
   async function loadQuestionsFromJson() {
     try {
-      const [respBlitz, respStory, respFlora, respFilm, respAntickiRim, respAmerickiPredsjednici, respZemljopis, respNogomet] = await Promise.all([
+      const [respBlitz, respStory, respFlora, respFilm, respGlazba, respAntickiRim, respAmerickiPredsjednici, respZemljopis, respNogomet] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         fetch(QUESTIONS_URL_STORY),
         fetch(QUESTIONS_URL_FLORA),
         fetch(QUESTIONS_URL_FILM),
+        fetch(QUESTIONS_URL_GLAZBA),
         fetch(QUESTIONS_URL_ANTICKI_RIM),
         fetch(QUESTIONS_URL_AMERICKI_PREDSJEDNICI),
         fetch(QUESTIONS_URL_ZEMLJOPIS),
         fetch(QUESTIONS_URL_NOGOMET),
       ]);
 
-      if (!respBlitz.ok || !respStory.ok || !respFlora.ok || !respFilm.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok || !respZemljopis.ok || !respNogomet.ok) {
+      if (!respBlitz.ok || !respStory.ok || !respFlora.ok || !respFilm.ok || !respGlazba.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok || !respZemljopis.ok || !respNogomet.ok) {
         throw new Error("Greška pri čitanju JSON datoteka.");
       }
 
@@ -784,6 +788,7 @@
       const storyData = await respStory.json();
       const floraData = await respFlora.json();
       const filmData  = await respFilm.json();
+      const glazbaData  = await respGlazba.json();
       const antickiRimData = await respAntickiRim.json();
       const americkiPredsjedniciData = await respAmerickiPredsjednici.json();
       const zemljopisData = await respZemljopis.json();
@@ -827,7 +832,17 @@
         id: q.id ?? "film-" + idx,
         type: q.type || "blitz",
         difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
-        topic: (q.topic && String(q.topic).trim()) ? String(q.topic).trim() : "FilmGlazba",
+        topic: (q.topic && String(q.topic).trim()) ? String(q.topic).trim() : "Film",
+        question: q.question || "",
+        answers: Array.isArray(q.answers) ? q.answers : [],
+        image: q.image || null
+      }));
+
+      const normalizedGlazba = glazbaData.map((q, idx) => ({
+        id: q.id ?? "film-" + idx,
+        type: q.type || "blitz",
+        difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
+        topic: (q.topic && String(q.topic).trim()) ? String(q.topic).trim() : "Glazba",
         question: q.question || "",
         answers: Array.isArray(q.answers) ? q.answers : [],
         image: q.image || null
@@ -873,11 +888,12 @@
         image: q.image || null
       }));
 
-      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory, ...normalizedFlora, ...normalizedFilm, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici, ...normalizedZemljopis, ...normalizedNogomet];
+      ALL_QUESTIONS = [...normalizedBlitz, ...normalizedStory, ...normalizedFlora, ...normalizedFilm, ...normalizedGlazba, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici, ...normalizedZemljopis, ...normalizedNogomet];
       loadedBlitzCount = normalizedBlitz.length;
       loadedStoryCount = normalizedStory.length;
       loadedFloraCount = normalizedFlora.length;
       loadedFilmCount  = normalizedFilm.length;
+      loadedGlazbaCount  = normalizedGlazba.length;
       loadedAntickiRimCount = normalizedAntickiRim.length;
       loadedAmerickiPredsjedniciCount = normalizedAmerickiPredsjednici.length;
       loadedZemljopisCount = normalizedZemljopis.length;
@@ -1023,7 +1039,10 @@
       "AntickiRim": "Antički Rim",
       "AmerickiPredsjednici": "Američki predsjednici",
       "Zemljopis": "Zemljopis",
-      "Nogomet": "Nogomet"
+      "Nogomet": "Nogomet",
+      "FloraFauna": "FloraFauna",
+      "Film": "Film",
+      "Glazba": "Glazba",
     };
     return map[topicKey] || topicKey;
   }
