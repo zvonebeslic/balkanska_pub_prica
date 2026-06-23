@@ -670,7 +670,7 @@
   const QUESTIONS_URL_ZEMLJOPIS = "Zemljopis.json";
   const QUESTIONS_URL_NOGOMET = "Nogomet.json";
   const QUESTIONS_URL_ZNANOST = "Znanost.json";
-  const QUESTIONS_URL_ZNANOST = "Knjizevnost.json";
+  const QUESTIONS_URL_KNJIZEVNOST = "Knjizevnost.json";
   
   let ALL_QUESTIONS = [];
   let loadedBlitzCount = 0;
@@ -683,7 +683,7 @@
   let loadedZemljopisCount = 0;
   let loadedNogometCount = 0;
   let loadedZnanostCount = 0;
-  let loadedKnjizevnost = 0;
+  let loadedKnjizevnostCount = 0;
   
   // mode: "blitz60" | "story90" | "relax" | "themed"
   let currentMode = "blitz60";
@@ -911,7 +911,7 @@
       }));
 
       const normalizedKnjizevnost = knjizevnostData.map((q, idx) => ({
-        id: q.id ?? "znanost-" + idx,
+        id: q.id ?? "knjizevnost-" + idx,
         type: q.type || "blitz", // da ulazi u Blitz + Relax (a možeš i "story" ako imaš duža)
         difficulty: typeof q.difficulty === "number" ? q.difficulty : 1,
         topic: "Knjizevnost",
@@ -1078,7 +1078,7 @@
       "Film": "Film",
       "Znanost": "Znanost",
       "Glazba": "Glazba",
-      "Knjizevnost": "Knnizevnost",
+      "Knjizevnost": "Knjizevnost",
     };
     return map[topicKey] || topicKey;
   }
