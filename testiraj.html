@@ -409,7 +409,8 @@ a { -webkit-tap-highlight-color: transparent; }
 .btn--small { padding: 0.35rem 0.9rem; font-size: 0.8rem; }
 .btn-start-inline { margin-top: 0.6rem; }
 .btn--icon { padding-inline: 1rem; font-size: 1.25rem; color: #ffffff !important; opacity: 1; text-shadow: none; }
-#btn-submit-answer { color: #ffffff !important; }
+#btn-submit-answer { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; opacity: 1 !important; }
+.submit-checkmark { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; opacity: 1 !important; line-height: 1; display: inline-block; font-weight: 950; }
 
 .answer-wrap { margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.4rem; }
 .answer-input-row { display: flex; gap: 0.4rem; align-items: center; }
@@ -431,7 +432,8 @@ a { -webkit-tap-highlight-color: transparent; }
 .score-badge { padding: 0.1rem 0.45rem; border-radius: var(--radius-pill); border: 1px solid var(--border); background: rgba(255, 255, 255, 0.06); }
 .score-badge--green { color: var(--green); border-color: rgba(34, 197, 94, 0.5); }
 .score-badge--red { color: var(--red); border-color: rgba(239, 68, 68, 0.5); }
-.history-list { list-style: none; display: flex; flex-direction: column; gap: 0.35rem; overflow-y: auto; padding-right: 0.2rem; font-size: 0.78rem; -webkit-overflow-scrolling: touch; }
+.history-list { list-style: none; display: flex; flex-direction: column !important; flex-wrap: nowrap !important; align-items: stretch; gap: 0.35rem; overflow-y: auto; padding-right: 0.2rem; font-size: 0.78rem; -webkit-overflow-scrolling: touch; }
+.history-list .history-item { width: 100%; flex: 0 0 auto; }
 .history-item { border-radius: 12px; padding: 0.4rem 0.5rem; border: 1px solid var(--border); background: var(--card-soft); }
 .history-item.correct { border-color: rgba(34, 197, 94, 0.5); }
 .history-item.incorrect { border-color: rgba(239, 68, 68, 0.5); }
@@ -623,7 +625,7 @@ a { -webkit-tap-highlight-color: transparent; }
       <div class="answer-wrap">
         <div class="answer-input-row">
           <input type="text" id="answer-input" placeholder="Upiši svoj odgovor..." autocomplete="off">
-          <button class="btn btn--accent btn--icon" id="btn-submit-answer" title="Potvrdi odgovor">✔</button>
+          <button class="btn btn--accent btn--icon" id="btn-submit-answer" title="Potvrdi odgovor" aria-label="Potvrdi odgovor"><span class="submit-checkmark">✓</span></button>
         </div>
         <div class="answer-feedback" id="answer-feedback"></div>
       </div>
@@ -1877,6 +1879,7 @@ a { -webkit-tap-highlight-color: transparent; }
     li.appendChild(aDiv);
     li.appendChild(actionsDiv);
 
+    // Povijest ide kronološki: prvo pitanje ostaje gore, svako novo ide ispod prethodnog.
     list.appendChild(li);
   }
 
