@@ -2673,6 +2673,28 @@ function initTestKnowledgeButton() {
     window.location.href = "testiraj.html";
   });
 }
+
+const profileBtn = document.getElementById("profile-btn");
+
+
+/* ----------------- GUMB KOJI VODI NA REGISTRACIJU ILI LOG IN ILI PROFIL ----------------- */
+        
+if (profileBtn) {
+  profileBtn.addEventListener("click", async () => {
+    if (!supabaseClient) {
+      window.location.href = "login.html";
+      return;
+    }
+
+    const { data } = await supabaseClient.auth.getSession();
+
+    if (data.session) {
+      window.location.href = "profil.html";
+    } else {
+      window.location.href = "login.html";
+    }
+  });
+}        
         
     </script>
 </body>
