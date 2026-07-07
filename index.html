@@ -847,6 +847,68 @@ select option {
 }
 
 /* ========================================================= */
+/* 12 BROJALICA PITANJA */
+/* ========================================================= */
+.stats-section {
+    width: min(1180px, calc(100% - 1.2rem));
+    margin: 1rem auto;
+}
+
+.stats-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 0.9rem;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+.stats-card--main {
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, #0f2f66, var(--blue));
+}
+
+.stats-number {
+    font-size: clamp(1.55rem, 5vw, 2.7rem);
+    font-weight: 950;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.stats-label {
+    margin-top: 0.35rem;
+    font-size: 0.82rem;
+    font-weight: 850;
+    color: var(--text-muted);
+}
+
+.stats-card--main .stats-label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+    .stats-section {
+        width: calc(100% - 0.8rem);
+        margin: 0.75rem auto;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .stats-card {
+        padding: 0.75rem 0.5rem;
+    }
+}
+        
+/* ========================================================= */
 /* 12 FOOTER */
 /* ========================================================= */
 .site-footer {
@@ -1291,6 +1353,25 @@ select option {
         </div>
     </div>
 
+    <section class="stats-section" id="stats-section">
+  <div class="stats-card stats-card--main">
+    <div class="stats-number" data-count="4000" data-suffix="+">0</div>
+    <div class="stats-label">Broj pitanja</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stats-card"><div class="stats-number" data-count="368">0</div><div class="stats-label">Nogomet</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="175">0</div><div class="stats-label">Film</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="149">0</div><div class="stats-label">Glazba</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="501">0</div><div class="stats-label">Znanost</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="815">0</div><div class="stats-label">Zemljopis</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="403">0</div><div class="stats-label">Književnost</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="204">0</div><div class="stats-label">Flora & Fauna</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="578">0</div><div class="stats-label">Antički Rim</div></div>
+    <div class="stats-card"><div class="stats-number" data-count="486">0</div><div class="stats-label">Američki predsjednici</div></div>
+  </div>
+</section>
+
     <footer class="site-footer">
         <!-- 1) Gumbi na vrhu -->
         <div class="footer-links">
@@ -1608,6 +1689,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initFindQuizzesButton();
   initTestKnowledgeButton();
   initHeroSlider();
+  initStatsCounter();  
 
   // ako smo već prije uključili lokaciju, vrati je i pokaži radijus
   restoreLocationFromLocal();
@@ -2695,6 +2777,60 @@ if (profileBtn) {
     }
   });
 }        
+
+
+/* ----------------- BROJALICA PITANJA ----------------- */
+        
+        
+  function initStatsCounter() {
+  const section = document.getElementById("stats-section");
+  const numbers = document.querySelectorAll(".stats-number");
+  if (!section || !numbers.length) return;
+
+  let hasAnimated = false;
+
+  const animateNumber = (el) => {
+    const target = Number(el.getAttribute("data-count"));
+    const suffix = el.getAttribute("data-suffix") || "";
+    if (Number.isNaN(target)) return;
+
+    const duration = 1300;
+    const startTime = performance.now();
+
+    const tick = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(target * eased);
+
+      el.textContent = current.toLocaleString("hr-HR") + suffix;
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = target.toLocaleString("hr-HR") + suffix;
+      }
+    };
+
+    requestAnimationFrame(tick);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (hasAnimated) return;
+
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          hasAnimated = true;
+          numbers.forEach(animateNumber);
+          observer.disconnect();
+        }
+      });
+    },
+    { threshold: 0.35 }
+  );
+
+  observer.observe(section);
+}      
         
     </script>
 </body>
