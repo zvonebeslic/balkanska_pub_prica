@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | KvizToGo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, system-ui, sans-serif;
+      background: #0b1220;
+      color: #f5f7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .auth-card {
+      width: min(420px, 100%);
+      background: #162235;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      border-radius: 24px;
+      padding: 1.2rem;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      margin-bottom: 1rem;
+    }
+
+    .logo span:nth-child(1) { color: #fff; }
+    .logo span:nth-child(2) { color: #2f80ff; }
+    .logo span:nth-child(3) { color: #22c55e; }
+
+    h1 {
+      text-align: center;
+      font-size: 1.35rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #a8b3c7;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      margin-top: 0.3rem;
+      padding: 0.75rem;
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: #101b2d;
+      color: #fff;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #2f80ff;
+      box-shadow: 0 0 0 4px rgba(47,128,255,0.18);
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: 1rem;
+      min-height: 45px;
+      border: 0;
+      border-radius: 999px;
+      background: #2f80ff;
+      color: #fff;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: #1d5fd6; }
+
+    .links {
+      margin-top: 1rem;
+      text-align: center;
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .link-btn {
+      background: none;
+      border: 0;
+      color: #2f80ff;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .forgot-btn {
+      background: none;
+      border: 0;
+      color: #94a3b8;
+      font-size: 0.78rem;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: #facc15;
+      text-align: center;
+      min-height: 1.2rem;
+    }
+
+    .back {
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+      color: #a8b3c7;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="auth-card">
+    <div class="logo">
+      <span>kviz</span><span>to</span><span>go</span>
+    </div>
+
+    <h1 id="auth-title">Prijava</h1>
+    <p class="subtitle" id="auth-subtitle">Prijavi se za ulazak u svoj profil.</p>
+
+    <form id="auth-form">
+      <label>
+        E-mail
+        <input type="email" id="email" required>
+      </label>
+
+      <label>
+        Lozinka
+        <input type="password" id="password" required minlength="6">
+      </label>
+
+      <button class="btn" type="submit" id="submit-btn">Prijavi se</button>
+    </form>
+
+    <div class="links">
+      <button class="link-btn" type="button" id="toggle-mode-btn">Registriraj se</button>
+      <button class="forgot-btn" type="button" id="forgot-btn">Zaboravili ste lozinku?</button>
+    </div>
+
+    <p class="message" id="message"></p>
+
+    <a href="index.html" class="back">← Povratak na početnu</a>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
+
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    const SESSION_TIME_KEY = "kviztogo_login_time";
+    const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
+
+    const form = document.getElementById("auth-form");
+    const emailEl = document.getElementById("email");
+    const passwordEl = document.getElementById("password");
+    const titleEl = document.getElementById("auth-title");
+    const subtitleEl = document.getElementById("auth-subtitle");
+    const submitBtn = document.getElementById("submit-btn");
+    const toggleBtn = document.getElementById("toggle-mode-btn");
+    const forgotBtn = document.getElementById("forgot-btn");
+    const messageEl = document.getElementById("message");
+
+    let mode = "login";
+
+    async function checkExistingSession() {
+      const { data } = await supabaseClient.auth.getSession();
+      const loginTime = Number(localStorage.getItem(SESSION_TIME_KEY));
+
+      if (data.session && loginTime && Date.now() - loginTime < THREE_DAYS_MS) {
+        window.location.href = "profil.html";
+        return;
+      }
+
+      if (data.session && loginTime && Date.now() - loginTime >= THREE_DAYS_MS) {
+        await supabaseClient.auth.signOut();
+        localStorage.removeItem(SESSION_TIME_KEY);
+      }
+    }
+
+    checkExistingSession();
+
+    toggleBtn.addEventListener("click", () => {
+      mode = mode === "login" ? "register" : "login";
+
+      if (mode === "register") {
+        titleEl.textContent = "Registracija";
+        subtitleEl.textContent = "Napravi profil za KvizToGo.";
+        submitBtn.textContent = "Registriraj se";
+        toggleBtn.textContent = "Već imaš profil? Prijavi se";
+      } else {
+        titleEl.textContent = "Prijava";
+        subtitleEl.textContent = "Prijavi se za ulazak u svoj profil.";
+        submitBtn.textContent = "Prijavi se";
+        toggleBtn.textContent = "Registriraj se";
+      }
+
+      messageEl.textContent = "";
+    });
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const email = emailEl.value.trim();
+      const password = passwordEl.value.trim();
+
+      messageEl.textContent = "";
+
+      if (mode === "login") {
+        const { data, error } = await supabaseClient.auth.signInWithPassword({
+          email,
+          password
+        });
+
+        if (error) {
+          messageEl.textContent = "Pogrešan e-mail ili lozinka.";
+          return;
+        }
+
+        localStorage.setItem(SESSION_TIME_KEY, String(Date.now()));
+        window.location.href = "profil.html";
+      }
+
+      if (mode === "register") {
+        const { data, error } = await supabaseClient.auth.signUp({
+          email,
+          password
+        });
+
+        if (error) {
+          messageEl.textContent = error.message;
+          return;
+        }
+
+        localStorage.setItem(SESSION_TIME_KEY, String(Date.now()));
+        messageEl.textContent = "Registracija uspješna. Provjeri e-mail ako je potrebna potvrda.";
+
+        setTimeout(() => {
+          window.location.href = "profil.html";
+        }, 1200);
+      }
+    });
+
+    forgotBtn.addEventListener("click", async () => {
+      const email = emailEl.value.trim();
+
+      if (!email) {
+        messageEl.textContent = "Prvo upiši e-mail adresu.";
+        return;
+      }
+
+      const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        redirectTo: "https://zvonebeslic.github.io/reset-lozinke.html"
+      });
+
+      if (error) {
+        messageEl.textContent = error.message;
+        return;
+      }
+
+      messageEl.textContent = "Link za reset lozinke poslan je na e-mail.";
+    });
+  </script>
+</body>
+</html>
