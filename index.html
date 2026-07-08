@@ -1232,7 +1232,7 @@ select option {
                 <h2 data-i18n="cardTypeTitle">Vrsta kviza</h2>
                 <div class="filter-group">
                     <label><input type="checkbox" class="quiz-type-filter" value="opce" checked><span data-i18n="typeGeneral">Kviz općeg znanja</span></label>
-                    <label><input type="checkbox" class="quiz-type-filter" value="kafanski" checked><span data-i18n="typeKafanski">Kafanski kviz</span></label>
+                    <label><input type="checkbox" class="quiz-type-filter" value="glazbeni" checked><span data-i18n="typeKafanski">Glazbeni kviz</span></label>
                     <label><input type="checkbox" class="quiz-type-filter" value="nogometni" checked><span data-i18n="typeFootball">Nogometni kviz</span></label>
                     <label><input type="checkbox" class="quiz-type-filter" value="sportski" checked><span data-i18n="typeSports">Sportski kviz</span></label>
                     <label><input type="checkbox" class="quiz-type-filter" value="beskorisno" checked><span data-i18n="typeUseless">Kviz beskorisnog znanja</span></label>
@@ -1280,7 +1280,7 @@ select option {
                         <span data-i18n="fieldType">Vrsta kviza</span>
                         <select id="quiz-type" required>
                             <option value="opce" data-i18n="typeGeneral">Kviz općeg znanja</option>
-                            <option value="kafanski" data-i18n="typeKafanski">Kafanski kviz</option>
+                            <option value="glazbeni" data-i18n="typeGlazbeni">Glazbeni kviz</option>
                             <option value="nogometni" data-i18n="typeFootball">Nogometni kviz</option>
                             <option value="sportski" data-i18n="typeSports">Sportski kviz</option>
                             <option value="beskorisno" data-i18n="typeUseless">Kviz beskorisnog znanja</option>
@@ -1350,7 +1350,7 @@ select option {
                     <input type="hidden" id="quiz-lng">
 
                     <p class="small-text small-text--warning" data-i18n="paymentInfo">
-                        Objava kviza naplaćuje se 6EUR po objavi. Nakon klika na gumb prelaziš na plaćanje,
+                        Objava kviza naplaćuje se 5 EUR/10 BAM po objavi. Nakon klika na gumb prelaziš na plaćanje,
                         a kviz se objavljuje nakon uspješne uplate.
                     </p>
 
@@ -1395,7 +1395,7 @@ select option {
                 <span>IG</span>
             </a>
             <!-- zamijeni email adresu svojom -->
-            <a href="mailto:info@balkanskakvizprica.com" class="footer-icon" aria-label="Email">
+            <a href="mailto:info@kviztogo.com" class="footer-icon" aria-label="Email">
                 ✉
             </a>
         </div>
@@ -1403,7 +1403,7 @@ select option {
         <!-- 3) Copyright -->
         <p class="footer-copy">
             © <span id="year"></span>
-            <span data-i18n="footerMain">Balkanska Kviz Priča – Svi kvizovi na jednom mjestu.</span>
+            <span data-i18n="footerMain">KvizToGo – Svi kvizovi na jednom mjestu.</span>
         </p>
     </footer>
 
@@ -1454,7 +1454,7 @@ let currentLang = "hr";
 
 const i18n = {
   hr: {
-    logoMain: "Balkanska Kviz Priča",
+    logoMain: "KvizToGo",
     logoSub: "Mapa kvizova po Balkanu",
     btnFind: "Pronađi kviz",
     btnAdd: "Dodaj kviz",
@@ -1467,7 +1467,7 @@ const i18n = {
     radiusAll: "Prikaži sve",
     cardTypeTitle: "Vrsta kviza",
     typeGeneral: "Kviz općeg znanja",
-    typeKafanski: "Kafanski kviz",
+    typeKafanski: "Glazbeni kviz",
     typeFootball: "Nogometni kviz",
     typeSports: "Sportski kviz",
     typeUseless: "Kviz beskorisnog znanja",
@@ -1494,9 +1494,9 @@ const i18n = {
     fieldPrize2: "Nagrada za 2. mjesto",
     fieldPrize3: "Nagrada za 3. mjesto",
     fieldPrizeExtra: "Dodatne nagrade (opcionalno)",
-    paymentInfo: "Objava kviza naplaćuje se 6EUR po objavi. Nakon klika na gumb prelaziš na plaćanje, a kviz se objavljuje nakon uspješne uplate.",
+    paymentInfo: "Objava kviza naplaćuje se 6 EUR/10 BAM po objavi. Nakon klika na gumb prelaziš na plaćanje, a kviz se objavljuje nakon uspješne uplate.",
     btnPay: "Nastavi na plaćanje",
-    footerMain: "Balkanska Kviz Priča – Svi kvizovi na jednom mjestu.",
+    footerMain: "KvizToGo – Svi kvizovi na jednom mjestu.",
     footerSupport: "Podrška",
     footerLegal: "Legalno",
     statusLive: "LIVE",
@@ -1521,7 +1521,7 @@ const i18n = {
   },
     
   en: {
-  logoMain: "Balkan Pub Quiz Story",
+  logoMain: "QuizToGo",
   logoSub: "Quiz map across the Balkans",
   btnFind: "Find a quiz",
   btnAdd: "Add quiz",
@@ -1534,7 +1534,7 @@ const i18n = {
   radiusAll: "Show all",
   cardTypeTitle: "Quiz type",
   typeGeneral: "General knowledge quiz",
-  typeKafanski: "Pub quiz",
+  typeKafanski: "Music quiz",
   typeFootball: "Football quiz",
   typeSports: "Sports quiz",
   typeUseless: "Useless knowledge quiz",
@@ -1561,9 +1561,9 @@ const i18n = {
   fieldPrize2: "Prize for 2nd place",
   fieldPrize3: "Prize for 3rd place",
   fieldPrizeExtra: "Additional prizes (optional)",
-  paymentInfo: "Publishing a quiz costs 6 EUR per listing. After clicking the button, you will proceed to payment, and the quiz will be published after a successful payment.",
+  paymentInfo: "Publishing a quiz costs 6 EUR/10 BAM per listing. After clicking the button, you will proceed to payment, and the quiz will be published after a successful payment.",
   btnPay: "Continue to payment",
-  footerMain: "Balkan Quiz Story – All quizzes in one place.",
+  footerMain: "QuizToGo – All quizzes in one place.",
   footerSupport: "Support",
   footerLegal: "Legal",
   statusLive: "LIVE",
@@ -1634,8 +1634,8 @@ const demoQuizzes = [
   },
   {
     id: "demo-2",
-    title: "Kafanski kviz – Mostar Night",
-    type: "kafanski",
+    title: "Glazbeni kviz – Mostar Night",
+    type: "Glazbeni",
     datetime: offsetDays(8, 21, 0),
     venue: "Stari Grad Pub, Mostar",
     lat: 43.3438,
@@ -2361,7 +2361,7 @@ function renderQuizzes() {
     const typeLabel =
       quiz.type === "opce"
         ? dict.typeGeneral
-        : quiz.type === "kafanski"
+        : quiz.type === "glazbeni"
         ? dict.typeKafanski
         : quiz.type === "nogometni"
         ? dict.typeFootball
