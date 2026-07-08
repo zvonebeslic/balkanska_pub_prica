@@ -192,6 +192,26 @@ a { -webkit-tap-highlight-color: transparent; }
   box-shadow: var(--shadow-soft);
 }
 
+ .profile-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.profile-btn:hover {
+  background: rgba(47, 128, 255, 0.16);
+  box-shadow: var(--shadow-soft);
+}   
+
 /* ========================================================= */
 /* 03 GLAVNI SADRŽAJ */
 /* ========================================================= */
@@ -505,7 +525,11 @@ a { -webkit-tap-highlight-color: transparent; }
     <span class="logo-kviz">kviz</span><span class="logo-to">to</span><span class="logo-go">go</span>
   </a>
 
-  <div class="header-side header-side--right"></div>
+  <div class="header-side header-side--right">
+  <a href="profil.html" class="profile-btn" aria-label="Profil">
+    👤
+  </a>
+</div>
 </header>
 
 <main class="page-wrap">
@@ -516,17 +540,6 @@ a { -webkit-tap-highlight-color: transparent; }
         Blitz pitanja za brze reflekse ili opušteni kviz bez vremena.
         Odaberi način, pa započni kviz u prozoru s pitanjem.
       </p>
-
-      <div class="quiz-hero-badges">
-        <span class="badge badge--accent">Blitz 60s</span>
-        <!-- STORY NAČIN PRIVREMENO ISKLJUČEN
-        <span class="badge badge--accent">Story 90s</span>
-        -->
-        <span class="badge badge--accent">Bez vremena</span>
-        <!-- TEŽINA PRIVREMENO ISKLJUČENA
-        <span class="badge">Pitanja označena težinom 1–5</span>
-        -->
-      </div>
 
       <div class="mode-pills" id="mode-pills">
         <button class="mode-pill active" data-mode="blitz60">
