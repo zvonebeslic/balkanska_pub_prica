@@ -192,25 +192,28 @@ a { -webkit-tap-highlight-color: transparent; }
   box-shadow: var(--shadow-soft);
 }
 
- .profile-btn {
+.login-btn {
   width: 42px;
   height: 42px;
-  border-radius: 50%;
   border: 1px solid var(--border);
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  font-size: 1.15rem;
-  font-weight: 900;
+  cursor: pointer;
+  box-shadow: none;
 }
 
-.profile-btn:hover {
-  background: rgba(47, 128, 255, 0.16);
-  box-shadow: var(--shadow-soft);
-}   
+.login-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.login-icon {
+  width: 22px;
+  height: 22px;
+}
 
 /* ========================================================= */
 /* 03 GLAVNI SADRŽAJ */
@@ -505,6 +508,7 @@ a { -webkit-tap-highlight-color: transparent; }
   .themed-grid { grid-template-columns: 1fr; }
   .answer-input-row { align-items: stretch; }
   .btn--icon { color: #ffffff; background: var(--blue); border-color: var(--blue); }
+  .login-btn { width: 39px; height: 39px;}
 }
 
 
@@ -526,10 +530,14 @@ a { -webkit-tap-highlight-color: transparent; }
   </a>
 
   <div class="header-side header-side--right">
-  <a href="profil.html" class="profile-btn" aria-label="Profil">
-    👤
-  </a>
+  <button class="login-btn" type="button" aria-label="Moj profil" id="profile-btn">
+    <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 12.2a4.4 4.4 0 1 0 0-8.8 4.4 4.4 0 0 0 0 8.8Z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M4.2 21a7.8 7.8 0 0 1 15.6 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
 </div>
+  
 </header>
 
 <main class="page-wrap">
