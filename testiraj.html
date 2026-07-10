@@ -615,14 +615,14 @@ a { -webkit-tap-highlight-color: transparent; }
 
       <div class="themed-panel" id="themed-panel">
         <div class="themed-grid" id="themed-grid">
-          <button class="themed-topic" data-topic="HarryPotter" type="button" data-i18n="themeHarry">Harry Potter kviz</button>
-          <button class="themed-topic" data-topic="LOTR" type="button" data-i18n="themeLotr">L.O.T.R. kviz</button>
-          <button class="themed-topic" data-topic="PiratiSKariba" type="button" data-i18n="themePirates">Pirati s Kariba kviz</button>
-          <button class="themed-topic" data-topic="VolimHrvatsku" type="button" data-i18n="themeCroatia">Volim Hrvatsku kviz</button>
-          <button class="themed-topic" data-topic="VolimBiH" type="button" data-i18n="themeBih">Volim BiH kviz</button>
-          <button class="themed-topic" data-topic="VolimSrbiju" type="button" data-i18n="themeSerbia">Volim Srbiju kviz</button>
-          <button class="themed-topic" data-topic="AntickaGrcka" type="button" data-i18n="themeGreece">Antička Grčka kviz</button>
-          <button class="themed-topic" data-topic="AntickiEgipat" type="button" data-i18n="themeEgypt">Antički Egipat kviz</button>
+        <!--  <button class="themed-topic" data-topic="HarryPotter" type="button" data-i18n="themeHarry">Harry Potter kviz</button> --!>
+        <!-- <button class="themed-topic" data-topic="LOTR" type="button" data-i18n="themeLotr">L.O.T.R. kviz</button> --!>
+        <!--  <button class="themed-topic" data-topic="PiratiSKariba" type="button" data-i18n="themePirates">Pirati s Kariba kviz</button> --!>
+        <!--  <button class="themed-topic" data-topic="VolimHrvatsku" type="button" data-i18n="themeCroatia">Volim Hrvatsku kviz</button> --!>
+        <!--  <button class="themed-topic" data-topic="VolimBiH" type="button" data-i18n="themeBih">Volim BiH kviz</button> --!>
+        <!--  <button class="themed-topic" data-topic="VolimSrbiju" type="button" data-i18n="themeSerbia">Volim Srbiju kviz</button> --!>
+        <!--  <button class="themed-topic" data-topic="AntickaGrcka" type="button" data-i18n="themeGreece">Antička Grčka kviz</button> --!>
+        <!--  <button class="themed-topic" data-topic="AntickiEgipat" type="button" data-i18n="themeEgypt">Antički Egipat kviz</button> --!>
           <button class="themed-topic" data-topic="AntickiRim" type="button" data-i18n="themeRome">Antički Rim kviz</button>
           <button class="themed-topic" data-topic="AmerickiPredsjednici" type="button" data-i18n="themeUsPresidents">Američki predsjednici kviz</button>
           <button class="themed-topic" data-topic="Zemljopis" type="button" data-i18n="themeGeography">Zemljopis kviz</button>
@@ -2196,6 +2196,10 @@ a { -webkit-tap-highlight-color: transparent; }
     if (feedbackEl) { feedbackEl.textContent = ""; feedbackEl.classList.remove("correct", "incorrect"); }
     if (input) input.value = "";
   }
+  // Gumb "Moj profil"
+document.getElementById("profile-btn").addEventListener("click", () => {
+    window.location.href = "profil.html";
+});
 </script>
 </body>
 </html>
