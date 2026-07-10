@@ -739,7 +739,18 @@ a { -webkit-tap-highlight-color: transparent; }
   <p class="footer-copy">© <span id="year"></span> KvizToGo – <span data-i18n="footerCopy">Testiraj svoje znanje.</span></p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>          
 <script>
+
+const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
+const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
 
   /* ------------------ LANGUAGE ------------------ */
   const LANG_KEY = "kviztogo_lang";
@@ -2197,8 +2208,14 @@ a { -webkit-tap-highlight-color: transparent; }
     if (input) input.value = "";
   }
   // Gumb "Moj profil"
-document.getElementById("profile-btn").addEventListener("click", () => {
-    window.location.href = "profil.html";
+document.getElementById("profile-btn").addEventListener("click", async () => {
+    const { data } = await supabaseClient.auth.getSession();
+
+    if (data.session) {
+        window.location.href = "profil.html";
+    } else {
+        window.location.href = "login.html";
+    }
 });
 </script>
 </body>
