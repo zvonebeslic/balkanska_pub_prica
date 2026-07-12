@@ -1024,26 +1024,58 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
     }
 
     async function deleteAccount() {
-      const d = dict();
-      const expected = currentLang === "hr" ? "IZBRIŠI" : "DELETE";
+  const d = dict();
+  const expected = currentLang === "hr" ? "IZBRIŠI" : "DELETE";
+  const deleteButton = document.getElementById("confirm-delete-btn");
 
-      deleteMessage.textContent = "";
+  deleteMessage.textContent = "";
 
-      if (deleteInput.value.trim() !== expected) {
-        deleteMessage.textContent = d.deleteType;
-        return;
-      }
+  if (deleteInput.value.trim() !== expected) {
+    deleteMessage.textContent = d.deleteType;
+    return;
+  }
 
-      const { error } = await supabaseClient.rpc("delete_own_account");
+  try {
+    deleteButton.disabled = true;
+    deleteMessage.textContent =
+      currentLang === "hr"
+        ? "Brisanje računa..."
+        : "Deleting account...";
 
-      if (error) {
-        deleteMessage.textContent = d.deleteUnavailable;
-        return;
-      }
+    const { error } = await supabaseClient.rpc("delete_own_account");
 
-      localStorage.removeItem(SESSION_TIME_KEY);
-      window.location.replace("index.html");
+    if (error) {
+      throw error;
     }
+
+    /*
+      Račun je već izbrisan iz baze, ali Supabaseova sesija
+      može još biti spremljena u pregledniku.
+    */
+    try {
+      await supabaseClient.auth.signOut({ scope: "local" });
+    } catch (signOutError) {
+      console.warn("Sesija se nije mogla standardno ukloniti:", signOutError);
+    }
+
+    localStorage.removeItem(SESSION_TIME_KEY);
+    localStorage.removeItem("kviztogo_after_login");
+
+    sessionStorage.clear();
+
+    window.location.replace("index.html");
+  } catch (error) {
+    console.error("Greška prilikom brisanja računa:", error);
+
+    deleteMessage.textContent =
+      error?.message ||
+      (currentLang === "hr"
+        ? "Račun nije obrisan. Pokušaj ponovno."
+        : "The account was not deleted. Please try again.");
+
+    deleteButton.disabled = false;
+  }
+}
 
     function getInviteUrl() {
       if (!currentInviteCode) return null;
