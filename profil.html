@@ -1079,7 +1079,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
 
     function getInviteUrl() {
       if (!currentInviteCode) return null;
-      return `${window.location.origin}/login.html?ref=${encodeURIComponent(currentInviteCode)}`;
+      return `${window.location.origin}/index.html?ref=${encodeURIComponent(currentInviteCode)}`;
     }
 
     async function copyInviteLink() {
