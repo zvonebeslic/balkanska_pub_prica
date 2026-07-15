@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Prijava i registracija | KvizToGo</title>
+  <link rel="canonical" href="https://kviztogo.com/login.html">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Prijavi se ili izradi KvizToGo račun za upravljanje profilom i jednostavnije korištenje karte pub kvizova.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- KvizToGo favicon i ikona za mobitele -->
+  <link rel="icon" type="image/png" href="images/KvizToGo-online-kviz-pitanja.png">
+  <link rel="apple-touch-icon" href="images/KvizToGo-online-kviz-pitanja.png">
+
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --page-bg: #0b1220;
+      --card-bg: #162235;
+      --card-soft: #101b2d;
+      --blue: #2f80ff;
+      --blue-dark: #1d5fd6;
+      --blue-soft: rgba(47, 128, 255, 0.18);
+      --green: #22c55e;
+      --text-main: #f5f7fb;
+      --text-muted: #a8b3c7;
+      --border: rgba(148, 163, 184, 0.22);
+      --shadow: 0 18px 45px rgba(0,0,0,0.35);
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    html, body { min-height: 100%; }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(47, 128, 255, 0.14), transparent 42%),
+        radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.10), transparent 38%),
+        var(--page-bg);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+    }
+
+    button, input { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: grid;
+      grid-template-columns: 52px 1fr 52px;
+      align-items: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      background: #000000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.28);
+      backdrop-filter: blur(14px);
+    }
+
+    .header-side { display: flex; align-items: center; }
+    .header-side--left { justify-content: flex-start; }
+    .header-side--right { justify-content: flex-end; }
+
+    .brand-logo {
+      justify-self: center;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      font-size: clamp(2rem, 7vw, 4rem);
+      text-transform: none;
+    }
+
+    .logo-kviz { color: #ffffff; }
+    .logo-to { color: var(--blue); }
+    .logo-go { color: var(--green); }
+
+    .login-btn,
+    .flag-toggle {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: none;
+      text-decoration: none;
+    }
+
+    .login-btn:hover,
+    .flag-toggle:hover { background: rgba(255, 255, 255, 0.15); }
+
+    .login-icon { width: 22px; height: 22px; }
+
+    .flag-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-size: 1.15rem;
+      background: var(--blue-soft);
+    }
+
+    .flag-icon::before { content: "🇭🇷"; }
+    .flag-toggle[data-current-lang="en"] .flag-icon::before { content: "🇬🇧"; }
+
+    .auth-shell {
+      flex: 1;
+      width: min(420px, calc(100% - 1.2rem));
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .auth-card {
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.35rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      margin-top: 0.3rem;
+      padding: 0.75rem;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: var(--card-soft);
+      color: #fff;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 4px var(--blue-soft);
+    }
+
+    .password-wrap {
+      position: relative;
+      margin-top: 0.3rem;
+    }
+
+    .password-wrap input {
+      margin-top: 0;
+      padding-right: 3rem;
+    }
+
+    .password-toggle {
+      position: absolute;
+      right: 0.35rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: #94a3b8;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      box-shadow: none;
+      transition: none;
+      animation: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .password-toggle:hover,
+    .password-toggle:focus,
+    .password-toggle:focus-visible,
+    .password-toggle:active {
+      background: transparent;
+      outline: none;
+      box-shadow: none;
+      transform: translateY(-50%);
+    }
+
+    .password-toggle svg {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      min-height: 22px;
+      max-width: 22px;
+      max-height: 22px;
+      display: block;
+      flex: 0 0 22px;
+      transition: none;
+      animation: none;
+      transform: none;
+    }
+
+    .password-toggle[data-visible="true"] {
+      color: #ffffff;
+    }
+
+    .password-toggle[data-visible="false"] {
+      color: #94a3b8;
+    }
+
+    .password-rules {
+      margin-top: 0.35rem;
+      color: var(--text-muted);
+      font-size: 0.76rem;
+      line-height: 1.35;
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: 1rem;
+      min-height: 45px;
+      border: 0;
+      border-radius: var(--radius-pill);
+      background: var(--blue);
+      color: #fff;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn:hover { background: var(--blue-dark); }
+
+    .google-btn {
+      width: 100%;
+      min-height: 45px;
+      margin-bottom: 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      background: #ffffff;
+      color: #111827;
+      font-weight: 850;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+    }
+
+    .google-btn:hover { background: #f1f5f9; }
+
+    .google-icon {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 auto;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 0.9rem;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .links {
+      margin-top: 1rem;
+      text-align: center;
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .link-btn {
+      background: none;
+      border: 0;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .forgot-btn {
+      background: none;
+      border: 0;
+      color: #94a3b8;
+      font-size: 0.78rem;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: #facc15;
+      text-align: center;
+      min-height: 1.2rem;
+    }
+
+    .back {
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .back:hover { color: #ffffff; }
+
+    .site-footer {
+      margin-top: auto;
+      padding: 1.1rem 0.75rem 1.3rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.72);
+      background: #000000;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-links,
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .footer-links a {
+      min-width: 118px;
+      min-height: 38px;
+      padding: 0.55rem 1rem;
+      border: 1px solid rgba(47, 128, 255, 0.65);
+      border-radius: var(--radius-pill);
+      background: #111827;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 850;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-links a:hover { background: #162235; border-color: var(--blue); }
+
+    .footer-icons { margin-top: 0.65rem; }
+
+    .footer-icon {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 850;
+    }
+
+    .footer-copy {
+      margin-top: 0.65rem;
+      font-size: 0.78rem;
+    }
+
+    @media (max-width: 640px) {
+      .site-header {
+        grid-template-columns: 46px 1fr 46px;
+        padding: 0.55rem 0.65rem;
+      }
+
+      .login-btn,
+      .flag-toggle { width: 39px; height: 39px; }
+
+      .brand-logo { font-size: clamp(2rem, 12vw, 3.1rem); }
+    }
+  </style>
+
+  <!-- Open Graph / prikaz linka u WhatsAppu, Viberu i Messengeru -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prijava i registracija | KvizToGo">
+  <meta property="og:description" content="Prijavi se ili izradi KvizToGo račun za upravljanje profilom i jednostavnije korištenje karte pub kvizova.">
+  <meta property="og:url" content="https://kviztogo.com/login.html">
+  <meta property="og:image" content="https://kviztogo.com/images/KvizToGo-kvizovi-i-kviz-pitanja.png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="KvizToGo – kvizovi i kviz pitanja">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prijava i registracija | KvizToGo">
+  <meta name="twitter:description" content="Prijavi se ili izradi KvizToGo račun za upravljanje profilom i jednostavnije korištenje karte pub kvizova.">
+  <meta name="twitter:image" content="https://kviztogo.com/images/KvizToGo-kvizovi-i-kviz-pitanja.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-side header-side--left">
+      <button class="flag-toggle" id="language-cycle-btn" type="button" data-current-lang="hr" aria-label="Promijeni jezik">
+        <span class="flag-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <a href="index.html" class="brand-logo" aria-label="KvizToGo početna">
+      <span class="logo-kviz">Kviz</span><span class="logo-to">To</span><span class="logo-go">Go</span>
+    </a>
+
+    <div class="header-side header-side--right">
+      <a href="index.html" class="login-btn" aria-label="Početna">
+        <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 11.5 12 4l9 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.5 10.5V20h13v-9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="auth-shell">
+    <section class="auth-card">
+      <h1 id="auth-title" data-i18n="authTitleLogin">Prijava</h1>
+      <p class="subtitle" id="auth-subtitle" data-i18n="authSubtitleLogin">Prijavi se za ulazak u svoj profil.</p>
+
+      <button class="google-btn" type="button" id="google-login-btn">
+        <svg class="google-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path fill="#FFC107" d="M43.6 20H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-4Z"/>
+          <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4c-7.7 0-14.4 4.4-17.7 10.7Z"/>
+          <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.7-3.3-11.3-8l-6.5 5C9.5 39.5 16.2 44 24 44Z"/>
+          <path fill="#1976D2" d="M43.6 20H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.2 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-4Z"/>
+        </svg>
+        <span data-i18n="continueGoogle">Nastavi s Googleom</span>
+      </button>
+
+      <div class="divider"><span data-i18n="orText">ili</span></div>
+
+      <form id="auth-form">
+        <label>
+          <span data-i18n="emailLabel">E-mail</span>
+          <input type="email" id="email" required autocomplete="email">
+        </label>
+
+        <label>
+          <span data-i18n="passwordLabel">Lozinka</span>
+          <div class="password-wrap">
+            <input type="password" id="password" required minlength="6" autocomplete="current-password">
+            <button class="password-toggle" id="password-toggle" type="button"
+                    aria-label="Prikaži lozinku" data-visible="false">
+  <svg id="eye-open-icon" viewBox="0 0 24 24" aria-hidden="true" style="display:none;">
+    <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="12" cy="12" r="3"
+            fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <svg id="eye-closed-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M3 3l18 18"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round"/>
+    <path d="M10.6 10.7A2 2 0 0 0 13.3 13.4"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round"/>
+    <path d="M9.9 5.2A10.7 10.7 0 0 1 12 5c6 0 9.5 7 9.5 7a17.2 17.2 0 0 1-2.3 3.1M6.2 6.2C3.8 8 2.5 12 2.5 12s3.5 7 9.5 7a10.9 10.9 0 0 0 4.1-.8"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+          </div>
+          <div class="password-rules" id="password-rules" data-i18n="passwordRules" style="display:none;">
+            Lozinka mora imati najmanje 6 znakova, barem jedan broj i barem jedan poseban znak.
+          </div>
+        </label>
+
+        <button class="btn" type="submit" id="submit-btn" data-i18n="submitLogin">Prijavi se</button>
+      </form>
+
+      <div class="links">
+        <button class="link-btn" type="button" id="toggle-mode-btn" data-i18n="toggleRegister">Registriraj se</button>
+        <button class="forgot-btn" type="button" id="forgot-btn" data-i18n="forgotPassword">Zaboravili ste lozinku?</button>
+      </div>
+
+      <p class="message" id="message"></p>
+
+      <a href="index.html" class="back" data-i18n="backHome">← Povratak na početnu</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="podrska.html" data-i18n="footerSupport">Podrška</a>
+      <a href="legalno.html" data-i18n="footerLegal">Legalno</a>
+    </div>
+
+    <div class="footer-icons">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">IG</a>
+      <a href="mailto:info@kviztogo.com" class="footer-icon" aria-label="Email">✉</a>
+    </div>
+
+    <p class="footer-copy">© <span id="year"></span> <span data-i18n="footerMain">KvizToGo – Svi kvizovi na jednom mjestu.</span></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+      auth: {
+        persistSession: true,
+        detectSessionInUrl: true,
+        autoRefreshToken: true,
+        flowType: "implicit"
+      }
+    });
+
+    const SESSION_TIME_KEY = "kviztogo_login_time";
+    const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
+
+    const i18n = {
+      hr: {
+        authTitleLogin: "Prijava",
+        authSubtitleLogin: "Prijavi se za ulazak u svoj profil.",
+        authTitleRegister: "Registracija",
+        authSubtitleRegister: "Napravi profil za KvizToGo.",
+        emailLabel: "E-mail",
+        passwordLabel: "Lozinka",
+        passwordRules: "Lozinka mora imati najmanje 6 znakova, barem jedan broj i barem jedan poseban znak.",
+        submitLogin: "Prijavi se",
+        submitRegister: "Registriraj se",
+        toggleRegister: "Registriraj se",
+        toggleLogin: "Već imaš profil? Prijavi se",
+        forgotPassword: "Zaboravili ste lozinku?",
+        backHome: "← Povratak na početnu",
+        msgWrong: "Pogrešan e-mail ili lozinka.",
+        msgPasswordRule: "Lozinka mora sadržavati barem jedan broj i barem jedan poseban znak.",
+        msgRegisterSuccess: "Registracija uspješna. Provjeri e-mail ako je potrebna potvrda.",
+        msgEmailFirst: "Prvo upiši e-mail adresu.",
+        msgResetSent: "Link za reset lozinke poslan je na e-mail.",
+        showPassword: "Prikaži lozinku",
+        hidePassword: "Sakrij lozinku",
+        continueGoogle: "Nastavi s Googleom",
+        orText: "ili",
+        msgGoogleError: "Google prijava nije uspjela.",
+        footerMain: "KvizToGo – Svi kvizovi na jednom mjestu.",
+        footerSupport: "Podrška",
+        footerLegal: "Legalno"
+      },
+      en: {
+        authTitleLogin: "Log in",
+        authSubtitleLogin: "Log in to access your profile.",
+        authTitleRegister: "Create account",
+        authSubtitleRegister: "Create your KvizToGo profile.",
+        emailLabel: "E-mail",
+        passwordLabel: "Password",
+        passwordRules: "Password must have at least 6 characters, one number and one special character.",
+        submitLogin: "Log in",
+        submitRegister: "Create account",
+        toggleRegister: "Create account",
+        toggleLogin: "Already have an account? Log in",
+        forgotPassword: "Forgot your password?",
+        backHome: "← Back to homepage",
+        msgWrong: "Wrong e-mail or password.",
+        msgPasswordRule: "Password must include at least one number and one special character.",
+        msgRegisterSuccess: "Registration successful. Check your e-mail if confirmation is required.",
+        msgEmailFirst: "Please enter your e-mail address first.",
+        msgResetSent: "Password reset link has been sent to your e-mail.",
+        showPassword: "Show password",
+        hidePassword: "Hide password",
+        continueGoogle: "Continue with Google",
+        orText: "or",
+        msgGoogleError: "Google sign-in failed.",
+        footerMain: "KvizToGo – All quizzes in one place.",
+        footerSupport: "Support",
+        footerLegal: "Legal"
+      }
+    };
+
+    let currentLang = "hr";
+    let mode = "login";
+
+    const form = document.getElementById("auth-form");
+    const emailEl = document.getElementById("email");
+    const passwordEl = document.getElementById("password");
+    const titleEl = document.getElementById("auth-title");
+    const subtitleEl = document.getElementById("auth-subtitle");
+    const submitBtn = document.getElementById("submit-btn");
+    const toggleBtn = document.getElementById("toggle-mode-btn");
+    const forgotBtn = document.getElementById("forgot-btn");
+    const messageEl = document.getElementById("message");
+    const passwordToggle = document.getElementById("password-toggle");
+    const passwordRules = document.getElementById("password-rules");
+    const flagBtn = document.getElementById("language-cycle-btn");
+    const googleLoginBtn = document.getElementById("google-login-btn");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function dict() { return i18n[currentLang] || i18n.hr; }
+
+    function applyTranslations() {
+      const d = dict();
+      document.documentElement.lang = currentLang;
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (key && d[key]) el.textContent = d[key];
+      });
+
+      titleEl.textContent = mode === "login" ? d.authTitleLogin : d.authTitleRegister;
+      subtitleEl.textContent = mode === "login" ? d.authSubtitleLogin : d.authSubtitleRegister;
+      submitBtn.textContent = mode === "login" ? d.submitLogin : d.submitRegister;
+      toggleBtn.textContent = mode === "login" ? d.toggleRegister : d.toggleLogin;
+      passwordToggle.setAttribute("aria-label", passwordEl.type === "password" ? d.showPassword : d.hidePassword);
+      flagBtn.setAttribute("data-current-lang", currentLang);
+      flagBtn.setAttribute("aria-label", currentLang === "hr" ? "Promijeni jezik na engleski" : "Switch language to Croatian");
+    }
+
+    function setMode(nextMode) {
+      mode = nextMode;
+      messageEl.textContent = "";
+      passwordRules.style.display = mode === "register" ? "block" : "none";
+      passwordEl.setAttribute("autocomplete", mode === "register" ? "new-password" : "current-password");
+      applyTranslations();
+    }
+
+    function isStrongPassword(password) {
+      return password.length >= 6 && /\d/.test(password) && /[^A-Za-z0-9]/.test(password);
+    }
+
+    let redirectingToProfile = false;
+
+    async function goToProfile(session) {
+      if (!session || redirectingToProfile) return;
+
+      const savedLoginTime = Number(localStorage.getItem(SESSION_TIME_KEY));
+      const loginTime = savedLoginTime || Date.now();
+
+      if (!savedLoginTime) {
+        localStorage.setItem(SESSION_TIME_KEY, String(loginTime));
+      }
+
+      if (Date.now() - loginTime < THREE_DAYS_MS) {
+        redirectingToProfile = true;
+        window.location.replace("profil.html");
+        return;
+      }
+
+      await supabaseClient.auth.signOut();
+      localStorage.removeItem(SESSION_TIME_KEY);
+    }
+
+    async function checkExistingSession() {
+      // Na profil preusmjeravamo samo nakon stvarnog OAuth povratka.
+      // Običan dolazak na login stranicu više ne koristi staru aktivnu sesiju.
+      const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      const authError = hashParams.get("error_description") || hashParams.get("error");
+      const isOAuthCallback =
+        hashParams.has("access_token") ||
+        hashParams.has("refresh_token") ||
+        hashParams.has("provider_token");
+
+      if (authError) {
+        messageEl.textContent = `${dict().msgGoogleError} ${decodeURIComponent(authError)}`;
+        history.replaceState({}, document.title, window.location.pathname);
+        return;
+      }
+
+      if (!isOAuthCallback) return;
+
+      const { data, error } = await supabaseClient.auth.getSession();
+
+      if (error || !data?.session) {
+        messageEl.textContent = `${dict().msgGoogleError} ${error?.message || ""}`.trim();
+        return;
+      }
+
+      history.replaceState({}, document.title, window.location.pathname);
+      localStorage.setItem(SESSION_TIME_KEY, String(Date.now()));
+      await goToProfile(data.session);
+    }
+
+    supabaseClient.auth.onAuthStateChange((event, session) => {
+      // INITIAL_SESSION namjerno ignoriramo jer može biti stara spremljena sesija.
+      if (event === "SIGNED_IN" && session) {
+        window.setTimeout(() => {
+          goToProfile(session);
+        }, 0);
+      }
+    });
+
+    flagBtn.addEventListener("click", () => {
+      currentLang = currentLang === "hr" ? "en" : "hr";
+      applyTranslations();
+    });
+
+    passwordToggle.addEventListener("click", () => {
+      const showPassword = passwordEl.type === "password";
+
+      passwordEl.type = showPassword ? "text" : "password";
+      passwordToggle.dataset.visible = showPassword ? "true" : "false";
+
+      document.getElementById("eye-open-icon").style.display =
+        showPassword ? "block" : "none";
+
+      document.getElementById("eye-closed-icon").style.display =
+        showPassword ? "none" : "block";
+
+      applyTranslations();
+    });
+
+    toggleBtn.addEventListener("click", () => {
+      setMode(mode === "login" ? "register" : "login");
+    });
+
+    googleLoginBtn.addEventListener("click", async () => {
+      messageEl.textContent = "";
+      googleLoginBtn.disabled = true;
+
+      // Radi i na glavnoj domeni i ako je stranica smještena u podmapi.
+      const redirectUrl = new URL("login.html", window.location.href).href;
+
+      const { error } = await supabaseClient.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: redirectUrl,
+          queryParams: {
+            prompt: "select_account"
+          }
+        }
+      });
+
+      if (error) {
+        googleLoginBtn.disabled = false;
+        messageEl.textContent = `${dict().msgGoogleError} ${error.message}`;
+      }
+    });
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const email = emailEl.value.trim();
+      const password = passwordEl.value.trim();
+      const d = dict();
+
+      messageEl.textContent = "";
+
+      if (mode === "login") {
+        // Ukloni eventualnu staru lokalnu sesiju prije nove prijave.
+        // Tako upisani e-mail i lozinka moraju stvarno proći provjeru.
+        await supabaseClient.auth.signOut({ scope: "local" });
+        localStorage.removeItem(SESSION_TIME_KEY);
+        redirectingToProfile = false;
+
+        const { data, error } = await supabaseClient.auth.signInWithPassword({
+          email,
+          password
+        });
+
+        if (error || !data?.session || !data?.user) {
+          messageEl.textContent = d.msgWrong;
+          return;
+        }
+
+        localStorage.setItem(SESSION_TIME_KEY, String(Date.now()));
+        window.location.replace("profil.html");
+        return;
+      }
+
+      if (mode === "register") {
+        if (!isStrongPassword(password)) {
+          messageEl.textContent = d.msgPasswordRule;
+          return;
+        }
+
+        const { data, error } = await supabaseClient.auth.signUp({
+          email,
+          password,
+          options: {
+            emailRedirectTo: `${window.location.origin}/profil.html`
+          }
+        });
+
+        if (error) {
+          messageEl.textContent = error.message;
+          return;
+        }
+
+        messageEl.textContent = d.msgRegisterSuccess;
+
+        if (data.session) {
+          localStorage.setItem(SESSION_TIME_KEY, String(Date.now()));
+          window.location.href = "profil.html";
+        }
+      }
+    });
+
+    forgotBtn.addEventListener("click", async () => {
+      const email = emailEl.value.trim();
+      const d = dict();
+
+      if (!email) {
+        messageEl.textContent = d.msgEmailFirst;
+        return;
+      }
+
+      const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        redirectTo: new URL("reset-lozinke.html", window.location.href).href
+      });
+
+      if (error) {
+        messageEl.textContent = error.message;
+        return;
+      }
+
+      messageEl.textContent = d.msgResetSent;
+    });
+
+    setMode("login");
+    checkExistingSession();
+  </script>
+</body>
+</html>
