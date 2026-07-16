@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Podrška i česta pitanja | KvizToGo</title>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/KvizToGo-online-kviz-pitanja.png">
+  <link rel="apple-touch-icon" href="images/KvizToGo-online-kviz-pitanja.png">
+
+  <!-- SEO -->
+  <meta name="description" content="KvizToGo podrška i česta pitanja o karti pub kvizova, dodavanju kviza, korisničkom računu, online kvizu i kviz pitanjima.">
+  <link rel="canonical" href="https://kviztogo.com/podrska.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Podrška i česta pitanja | KvizToGo">
+  <meta property="og:description" content="KvizToGo podrška i česta pitanja o karti pub kvizova, dodavanju kviza, korisničkom računu, online kvizu i kviz pitanjima.">
+  <meta property="og:url" content="https://kviztogo.com/podrska.html">
+  <meta property="og:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Podrška i česta pitanja | KvizToGo">
+  <meta name="twitter:description" content="KvizToGo podrška i česta pitanja o karti pub kvizova, dodavanju kviza, korisničkom računu, online kvizu i kviz pitanjima.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-main: #0b1220;
+      --bg-card: rgba(22, 34, 53, 0.94);
+      --blue: #2f80ff;
+      --blue-dark: #1d5fd6;
+      --blue-soft: rgba(47, 128, 255, 0.18);
+      --green: #22c55e;
+      --text-main: #f5f7fb;
+      --text-muted: #a8b3c7;
+      --border: rgba(148, 163, 184, 0.22);
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+      --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.28);
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(47, 128, 255, 0.18), transparent 38%),
+        radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.10), transparent 42%),
+        linear-gradient(180deg, #0b1220 0%, #101b2d 48%, #0b1220 100%),
+        var(--bg-main);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Header - isti stil kao index/online-kviz */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: grid;
+      grid-template-columns: 52px 1fr 52px;
+      align-items: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      background: #000000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.28);
+      backdrop-filter: blur(14px);
+    }
+
+    .header-side {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-side--left { justify-content: flex-start; }
+    .header-side--right { justify-content: flex-end; }
+
+    .brand-logo {
+      justify-self: center;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      font-size: clamp(2rem, 7vw, 4rem);
+      text-transform: none;
+    }
+
+    .logo-kviz { color: #ffffff; text-shadow: none; }
+    .logo-to { color: var(--blue); }
+    .logo-go { color: var(--green); }
+
+    .login-btn,
+    .flag-toggle {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: none;
+    }
+
+    .login-btn:hover,
+    .flag-toggle:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .login-icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    .flag-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-size: 1.15rem;
+      background: var(--blue-soft);
+    }
+
+    .flag-icon::before { content: "🇭🇷"; }
+    .flag-toggle[data-current-lang="en"] .flag-icon::before { content: "🇬🇧"; }
+
+    .under-header-nav {
+      width: min(900px, calc(100% - 1.2rem));
+      margin: 0.75rem auto 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .back-btn {
+      min-height: 38px;
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(47, 128, 255, 0.55);
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 850;
+      font-size: 0.82rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      box-shadow: 0 0 14px rgba(47, 128, 255, 0.12);
+      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .back-btn:hover {
+      background: rgba(47, 128, 255, 0.18);
+      transform: translateY(-1px);
+      box-shadow: 0 0 18px rgba(47, 128, 255, 0.28);
+    }
+
+    /* Main layout */
+    .page-wrapper {
+      flex: 1;
+      max-width: 900px;
+      width: 100%;
+      margin: 0.8rem auto 0;
+      padding: 0 1.2rem 1rem;
+    }
+
+    .page-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      padding: 1.3rem 1.4rem 1.2rem;
+    }
+
+    .page-title {
+      font-size: clamp(1.45rem, 4vw, 2.1rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      margin-bottom: 0.45rem;
+      font-weight: 900;
+    }
+
+    .page-subtitle {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .section-block { margin-bottom: 1.1rem; }
+
+    .section-title {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .section-text {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    .section-text + .section-text { margin-top: 0.45rem; }
+
+    ul.section-list {
+      margin-top: 0.35rem;
+      margin-left: 1.2rem;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    ul.section-list li + li { margin-top: 0.25rem; }
+
+    .highlight-box {
+      margin-top: 0.6rem;
+      padding: 0.7rem 0.8rem;
+      border-radius: 14px;
+      border: 1px dashed rgba(47, 128, 255, 0.65);
+      background: rgba(47, 128, 255, 0.08);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .contact-email a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 850;
+    }
+
+    .contact-email a:hover { text-decoration: underline; }
+
+    /* Footer - isti stil kao index/online-kviz */
+    .site-footer {
+      margin-top: auto;
+      padding: 1.1rem 0.75rem 1.3rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.72);
+      background: #000000;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-links,
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .footer-links a {
+      min-width: 118px;
+      min-height: 38px;
+      padding: 0.55rem 1rem;
+      border: 1px solid rgba(47, 128, 255, 0.65);
+      border-radius: var(--radius-pill);
+      background: #111827;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 850;
+      box-shadow: 0 0 0 rgba(47, 128, 255, 0);
+      transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      background: #162235;
+      border-color: var(--blue);
+      box-shadow: 0 0 18px rgba(47, 128, 255, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .footer-icons { margin-top: 0.65rem; }
+
+    .footer-icon {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 850;
+      transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+    }
+
+    .footer-icon:hover {
+      background: #162235;
+      transform: translateY(-1px);
+      box-shadow: 0 0 10px rgba(47, 128, 255, 0.35);
+    }
+
+    .footer-copy {
+      margin-top: 0.65rem;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    @media (max-width: 768px) {
+      .site-header {
+        grid-template-columns: 46px 1fr 46px;
+        padding: 0.55rem 0.65rem;
+      }
+
+      .brand-logo { font-size: clamp(2rem, 12vw, 3.1rem); }
+
+      .login-btn,
+      .flag-toggle {
+        width: 39px;
+        height: 39px;
+      }
+
+      .under-header-nav {
+        width: calc(100% - 0.8rem);
+        margin-top: 0.55rem;
+      }
+
+      .page-wrapper {
+        margin-top: 0.55rem;
+        padding: 0 0.7rem 0.9rem;
+      }
+
+      .page-card { padding: 1rem 0.9rem 1rem; }
+    }
+
+    @media (max-width: 380px) {
+      .brand-logo { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-side header-side--left">
+    <button class="flag-toggle" id="language-cycle-btn" type="button" data-current-lang="hr" aria-label="Promijeni jezik">
+      <span class="flag-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <a href="/" class="brand-logo" aria-label="KvizToGo početna">
+    <span class="logo-kviz">Kviz</span><span class="logo-to">To</span><span class="logo-go">Go</span>
+  </a>
+
+  <div class="header-side header-side--right">
+    <button class="login-btn" type="button" aria-label="Moj profil" id="profile-btn">
+      <svg class="login-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 12.2a4.4 4.4 0 1 0 0-8.8 4.4 4.4 0 0 0 0 8.8Z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M4.2 21a7.8 7.8 0 0 1 15.6 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="under-header-nav">
+  <a href="/" class="back-btn" data-i18n="btnHome">← Natrag na kartu</a>
+</div>
+
+<main class="page-wrapper">
+  <article class="page-card">
+    <h1 class="page-title" data-i18n="supportTitle">Podrška za KvizToGo</h1>
+    <p class="page-subtitle" data-i18n="supportSubtitle">
+      Ovdje možete pronaći odgovore na najčešća pitanja, upute za dodavanje kviza i načine kako nas kontaktirati.
+    </p>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secHowAddTitle">Kako dodati kviz na mapu?</h2>
+      <p class="section-text" data-i18n="secHowAddP1">
+        Kviz možete dodati izravno putem početne stranice ili sa svojeg KvizToGo profila, klikom na gumb „Dodaj kviz”. Postupak izgleda ovako:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secHowAddLi1">Kliknite na gumb „Dodaj kviz” na početnoj stranici.</li>
+        <li data-i18n="secHowAddLi2">Unesite naziv kviza, lokaciju, datum i vrijeme održavanja te ostale potrebne informacije.</li>
+        <li data-i18n="secHowAddLi3">U polje za lokaciju zalijepite koordinate (lat i lng).</li>
+        <li data-i18n="secHowAddLi4">Upišite broj telefona ili dodajte poveznicu za rezervacije te navedite nagrade za najbolje ekipe.</li>
+        <li data-i18n="secHowAddLi5">Klikom na gumb za potvrdu završavate postupak, nakon čega će kviz biti objavljen.</li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secPaymentTitle">Plaćanje i potvrda objave</h2>
+      <p class="section-text" data-i18n="secPaymentP1">
+        Objava jednog kviza trenutačno je besplatna. U budućnosti bi se mogla naplaćivati 6 EUR / 10 BAM po objavi. Plaćanje, ako bude uvedeno, obavljat će se putem online servisa za plaćanje, primjerice PayPala ili kartičnog plaćanja preko pružatelja usluge plaćanja.
+      </p>
+      <p class="section-text" data-i18n="secPaymentP2">
+        Nakon što objava bude uspješno potvrđena, kviz će se u pravilu prikazati na karti u kratkom roku. U iznimnim slučajevima može doći do manjeg kašnjenja zbog ručne provjere ili tehničkih poteškoća.
+      </p>
+      <div class="highlight-box">
+        <p data-i18n="secPaymentNote">
+          Napomena: dok sustav ne potvrdi da su svi podaci ispravno uneseni, kviz neće biti javno prikazan na karti. Ako ste sve ispravno unijeli, a kviz dulje vrijeme nije vidljiv, slobodno nam se javite.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secRefundsTitle">Pogrešni unosi i povrat novca</h2>
+      <p class="section-text" data-i18n="secRefundsP1">
+        Ako ste slučajno unijeli pogrešne podatke, poput datuma, lokacije ili naziva kviza, ispravite ih putem svojeg KvizToGo profila te ponovno spremite kviz. Ako se promjene ni tada ne prikažu, javite nam se i u većini slučajeva možemo ručno ispraviti podatke.
+      </p>
+      <p class="section-text" data-i18n="secRefundsP2">
+        U slučaju tehničke pogreške na našoj strani, zbog koje kviz nije prikazan unatoč urednoj uplati, nastojat ćemo:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secRefundsLi1">produžiti razdoblje prikaza kviza ili</li>
+        <li data-i18n="secRefundsLi2">dogovoriti povrat sredstava, ovisno o okolnostima i načinu plaćanja.</li>
+      </ul>
+      <p class="section-text" data-i18n="secRefundsP3">
+        Svaki zahtjev za povrat sredstava rješava se pojedinačno, u skladu s pravilima korištenog pružatelja usluge plaćanja.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secFaqTitle">Česta pitanja (FAQ)</h2>
+      <p class="section-text" data-i18n="secFaqP1">
+        Pitanje: Koliko dugo kviz ostaje na karti?\nOdgovor: Kviz je vidljiv u razdoblju oko datuma održavanja, s naglaskom na ±30 dana od datuma događaja te kratko vrijeme nakon završetka radi pregleda arhive.
+      </p>
+      <p class="section-text" data-i18n="secFaqP2">
+        Pitanje: Naplaćuje li se uređivanje kviza nakon objave?\nOdgovor: Ne. Izmjene poput broja telefona, manjih ispravaka teksta ili drugih osnovnih podataka u pravilu se ne naplaćuju.
+      </p>
+      <p class="section-text" data-i18n="secFaqP3">
+        Pitanje: Mogu li otkazati kviz?\nOdgovor: Da. Ako otkažete kviz, molimo Vas da ga otkažete putem svojeg KvizToGo računa ili nas obavijestite kako bismo ažurirali njegov status na karti.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="secContactTitle">Kontakt i prijava problema</h2>
+      <p class="section-text contact-email">
+        <span data-i18n="secContactP1">Za sva pitanja vezana uz plaćanje, prikaz kviza ili tehničke poteškoće možete nam se obratiti na:</span><br>
+        Email: <a href="mailto:info@kviztogo.com">info@kviztogo.com</a>
+      </p>
+      <p class="section-text" data-i18n="secContactP2">
+        U poruci nam svakako pošaljite:
+      </p>
+      <ul class="section-list">
+        <li data-i18n="secContactLi1">naziv kviza i grad u kojem se održava,</li>
+        <li data-i18n="secContactLi2">datum i vrijeme kviza,</li>
+        <li data-i18n="secContactLi3">ako je moguće, kontakt organizatora kviza.</li>
+      </ul>
+    </section>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="podrska.html" data-i18n="footerSupport">Podrška</a>
+    <a href="legalno.html" data-i18n="footerLegal">Legalno</a>
+  </div>
+
+  <div class="footer-icons">
+    <a href="https://instagram.com/" target="_blank" rel="noopener" class="footer-icon" aria-label="Instagram">
+      <span>IG</span>
+    </a>
+    <a href="mailto:info@kviztogo.com" class="footer-icon" aria-label="Email">✉</a>
+  </div>
+
+  <p class="footer-copy">
+    © <span id="year"></span>
+    <span data-i18n="footerMain">KvizToGo – Svi kvizovi na jednom mjestu.</span>
+  </p>
+</footer>
+
+<script>
+  let currentLang = "hr";
+
+  const i18n = {
+    hr: {
+      btnHome: "← Natrag na kartu",
+      supportTitle: "Podrška za KvizToGo",
+      supportSubtitle: "Ovdje možete pronaći odgovore na najčešća pitanja, upute za dodavanje kviza i načine kako nas kontaktirati.",
+      secHowAddTitle: "Kako dodati kviz na kartu?",
+      secHowAddP1: "Kviz možete dodati izravno putem početne stranice ili sa svojeg KvizToGo profila, klikom na gumb „Dodaj kviz”. Postupak izgleda ovako:",
+      secHowAddLi1: "Kliknite na gumb „Dodaj kviz” na početnoj stranici.",
+      secHowAddLi2: "Unesite naziv kviza, lokaciju, datum i vrijeme održavanja te ostale potrebne informacije.",
+      secHowAddLi3: "U polje za lokaciju zalijepite koordinate (lat i lng).",
+      secHowAddLi4: "Upišite broj telefona ili dodajte poveznicu za rezervacije te navedite nagrade za najbolje ekipe.",
+      secHowAddLi5: "Klikom na gumb za potvrdu završavate postupak, nakon čega će kviz biti objavljen.",
+      secPaymentTitle: "Plaćanje i potvrda objave",
+      secPaymentP1: "Objava jednog kviza trenutačno je besplatna. U budućnosti bi se mogla naplaćivati 6 EUR / 10 BAM po objavi. Plaćanje, ako bude uvedeno, obavljat će se putem online servisa za plaćanje, primjerice PayPala ili kartičnog plaćanja preko pružatelja usluge plaćanja.",
+      secPaymentP2: "Nakon što objava bude uspješno potvrđena, kviz će se u pravilu prikazati na karti u kratkom roku. U iznimnim slučajevima može doći do manjeg kašnjenja zbog ručne provjere ili tehničkih poteškoća.",
+      secPaymentNote: "Napomena: dok sustav ne potvrdi da su svi podaci ispravno uneseni, kviz neće biti javno prikazan na karti. Ako ste sve ispravno unijeli, a kviz dulje vrijeme nije vidljiv, slobodno nam se javite.",
+      secRefundsTitle: "Pogrešni unosi i povrat novca",
+      secRefundsP1: "Ako ste slučajno unijeli pogrešne podatke, poput datuma, lokacije ili naziva kviza, ispravite ih putem svojeg KvizToGo profila te ponovno spremite kviz. Ako se promjene ni tada ne prikažu, javite nam se i u većini slučajeva možemo ručno ispraviti podatke.",
+      secRefundsP2: "U slučaju tehničke pogreške na našoj strani, zbog koje kviz nije prikazan unatoč urednoj uplati, nastojat ćemo:",
+      secRefundsLi1: "produžiti razdoblje prikaza kviza ili",
+      secRefundsLi2: "dogovoriti povrat sredstava, ovisno o okolnostima i načinu plaćanja.",
+      secRefundsP3: "Svaki zahtjev za povrat sredstava rješava se pojedinačno, u skladu s pravilima korištenog pružatelja usluge plaćanja.",
+      secFaqTitle: "Česta pitanja (FAQ)",
+      secFaqP1: "Pitanje: Koliko dugo kviz ostaje na karti?\nOdgovor: Kviz je vidljiv u razdoblju oko datuma održavanja, s naglaskom na ±30 dana od datuma događaja te kratko vrijeme nakon završetka radi pregleda arhive.",
+      secFaqP2: "Pitanje: Naplaćuje li se uređivanje kviza nakon objave?\nOdgovor: Ne. Izmjene poput broja telefona, manjih ispravaka teksta ili drugih osnovnih podataka u pravilu se ne naplaćuju.",
+      secFaqP3: "Pitanje: Mogu li otkazati kviz?\nOdgovor: Da. Ako otkažete kviz, molimo Vas da ga otkažete putem svojeg KvizToGo računa ili nas obavijestite kako bismo ažurirali njegov status na karti.",
+      secContactTitle: "Kontakt i prijava problema",
+      secContactP1: "Za sva pitanja vezana uz plaćanje, prikaz kviza ili tehničke poteškoće možete nam se obratiti na:",
+      secContactP2: "U poruci nam svakako pošaljite:",
+      secContactLi1: "naziv kviza i grad u kojem se održava,",
+      secContactLi2: "datum i vrijeme održavanja kviza,",
+      secContactLi3: "ako je moguće, kontakt organizatora kviza.",
+      footerMain: "KvizToGo – Svi kvizovi na jednom mjestu.",
+      footerSupport: "Podrška",
+      footerLegal: "Legalno"
+    },
+    en: {
+      btnHome: "← Back to map",
+      supportTitle: "KvizToGo Support",
+      supportSubtitle: "Here you can find answers to frequently asked questions, instructions on how to add a quiz, and ways to contact us.",
+      secHowAddTitle: "How can you add a quiz to the map?",
+      secHowAddP1: "You can add a quiz directly from the homepage or from your KvizToGo profile by clicking the “Add Quiz” button. The process is as follows:",
+      secHowAddLi1: "Click the “Add Quiz” button on the homepage.",
+      secHowAddLi2: "Enter the quiz name, location, date, time and any other required information.",
+      secHowAddLi3: "Paste the coordinates (latitude and longitude) into the location field.",
+      secHowAddLi4: "Enter a phone number or add a reservation link, and list the prizes for the top teams.",
+      secHowAddLi5: "Click the confirmation button to complete the process. Once confirmed, your quiz will be published.",
+      secPaymentTitle: "Payment and Publication Confirmation",
+      secPaymentP1: "Publishing a quiz is currently free of charge. In the future, a fee of EUR 6 / BAM 10 per listing may apply. If introduced, payments will be processed through an online payment service such as PayPal or a third-party card payment provider.",
+      secPaymentP2: "Once your submission has been successfully confirmed, your quiz will normally appear on the map within a short period of time. In exceptional cases, publication may be delayed due to manual review or technical issues.",
+      secPaymentNote: "Note: Your quiz will not appear publicly on the map until the system confirms that all required information has been entered correctly. If everything has been submitted correctly and your quiz is still not visible after an extended period, please contact us.",
+      secRefundsTitle: "Incorrect Information and Refunds",
+      secRefundsP1: "If you accidentally entered incorrect information, such as the date, location or quiz name, you can correct it through your KvizToGo profile and save the quiz again. If the changes are still not visible, please contact us and we will usually be able to update the information manually.",
+      secRefundsP2: "If a technical issue on our side prevents your quiz from being displayed despite a successful payment, we will do our best to:",
+      secRefundsLi1: "extend your quiz's visibility period, or",
+      secRefundsLi2: "arrange a refund, depending on the circumstances and payment method.",
+      secRefundsP3: "All refund requests are handled individually in accordance with the policies of the payment service provider used.",
+      secFaqTitle: "Frequently Asked Questions (FAQ)",
+      secFaqP1: "Q: How long does a quiz remain on the map?\nA: A quiz is displayed around its event date, mainly within ±30 days of the event, with a short period afterwards for archive viewing.",
+      secFaqP2: "Q: Is there a fee for editing a quiz after publication?\nA: No. Changes such as phone numbers, minor text corrections or other basic information are generally free of charge.",
+      secFaqP3: "Q: Can I cancel a quiz?\nA: Yes. If you cancel your quiz, please cancel it through your KvizToGo account or contact us so we can update its status on the map.",
+      secContactTitle: "Contact and Technical Support",
+      secContactP1: "If you have any questions regarding payments, quiz listings or technical issues, you can contact us at:",
+      secContactP2: "When contacting us, please include:",
+      secContactLi1: "the quiz name and the city where it takes place,",
+      secContactLi2: "the quiz date and time,",
+      secContactLi3: "if possible, the organiser's contact details.",
+      footerMain: "KvizToGo – All quizzes in one place.",
+      footerSupport: "Support",
+      footerLegal: "Legal"
+    }
+  };
+
+  function applyTranslations() {
+    const dict = i18n[currentLang] || i18n.hr;
+    document.documentElement.lang = currentLang;
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      if (!key || !dict[key]) return;
+      const value = dict[key];
+      if (value.includes("\\n") || value.includes("\n")) {
+        el.innerHTML = value.replace(/\\n/g, "<br>").replace(/\n/g, "<br>");
+      } else {
+        el.textContent = value;
+      }
+    });
+  }
+
+  function initLanguageToggle() {
+    const flagBtn = document.getElementById("language-cycle-btn");
+    if (!flagBtn) return;
+
+    const syncFlag = () => {
+      flagBtn.setAttribute("data-current-lang", currentLang);
+      flagBtn.setAttribute(
+        "aria-label",
+        currentLang === "hr" ? "Promijeni jezik na engleski" : "Switch language to Croatian"
+      );
+    };
+
+    syncFlag();
+
+    flagBtn.addEventListener("click", () => {
+      currentLang = currentLang === "hr" ? "en" : "hr";
+      syncFlag();
+      applyTranslations();
+    });
+  }
+
+  function initProfileButton() {
+    const profileBtn = document.getElementById("profile-btn");
+    if (!profileBtn) return;
+
+    profileBtn.addEventListener("click", () => {
+      window.location.href = "login.html";
+    });
+  }
+
+  function initYear() {
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initYear();
+    initLanguageToggle();
+    initProfileButton();
+    applyTranslations();
+  });
+</script>
+</body>
+</html>
