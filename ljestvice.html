@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ljestvica znanja | KvizToGo</title>
+  <meta name="description" content="Ljestvica znanja igrača KvizToGo online kviza.">
+  <link rel="stylesheet" href="daily30.css">
+  <link rel="stylesheet" href="leaderboards.css">
+  <style>
+    * { box-sizing: border-box; }
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #f8fbff;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(47, 128, 255, 0.16), transparent 32%),
+        radial-gradient(circle at 92% 15%, rgba(34, 197, 94, 0.08), transparent 28%),
+        #07111f;
+    }
+    .ranking-header {
+      width: min(720px, calc(100% - 24px));
+      margin: 0 auto;
+      min-height: 74px;
+      display: grid;
+      grid-template-columns: 42px 1fr 42px;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .ranking-back {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid rgba(148, 163, 184, 0.26);
+      background: rgba(255, 255, 255, 0.055);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+    .ranking-brand { text-align: center; font-size: 1.18rem; font-weight: 950; letter-spacing: -0.03em; }
+    .ranking-brand .to { color: #ffffff; }
+    .ranking-brand .go { color: #22c55e; }
+    .ranking-header-spacer { width: 40px; }
+    .leaderboard-page-card .leaderboard-title { font-size: 1.12rem; }
+    .ranking-note {
+      width: min(720px, calc(100% - 24px));
+      margin: -0.35rem auto 1rem;
+      color: #94a3b8;
+      font-size: 0.62rem;
+      line-height: 1.4;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="ranking-header">
+    <a class="ranking-back" href="online-kviz.html" aria-label="Natrag na online kviz">‹</a>
+    <div class="ranking-brand"><span>Kviz</span><span class="to">To</span><span class="go">Go</span></div>
+    <div class="ranking-header-spacer" aria-hidden="true"></div>
+  </header>
+
+  <main class="leaderboard-page-card" id="leaderboard-page">
+    <div class="leaderboard-heading-row">
+      <h1 class="leaderboard-title">🏆 Ljestvica znanja</h1>
+      <span class="leaderboard-test-badge">GitHub test</span>
+    </div>
+
+    <div class="leaderboard-tabs" role="tablist" aria-label="Vrsta ljestvice">
+      <button class="leaderboard-tab active" type="button" data-leaderboard-view="daily30">Dnevnih 30</button>
+      <button class="leaderboard-tab" type="button" data-leaderboard-view="week">Ovaj tjedan</button>
+      <button class="leaderboard-tab" type="button" data-leaderboard-view="month">Ovaj mjesec</button>
+      <button class="leaderboard-tab" type="button" data-leaderboard-view="all">Svih vremena</button>
+    </div>
+
+    <div class="leaderboard-full-period" id="leaderboard-full-period">
+      <button class="leaderboard-period-nav" id="leaderboard-period-prev" type="button" aria-label="Prethodno razdoblje">‹</button>
+      <span id="leaderboard-full-period-label"></span>
+      <button class="leaderboard-period-nav" id="leaderboard-period-next" type="button" aria-label="Sljedeće razdoblje">›</button>
+    </div>
+
+    <div class="leaderboard-list" id="leaderboard-full-list"></div>
+  </main>
+
+  <p class="ranking-note">Ovo je probni GitHub prikaz. Stvarni zajednički rezultati uključit će se tek nakon odobrenja izgleda i povezivanja sa Supabaseom.</p>
+
+  <script src="daily30.js"></script>
+  <script src="leaderboards.js"></script>
+</body>
+</html>

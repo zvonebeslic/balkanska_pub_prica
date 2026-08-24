@@ -2742,6 +2742,9 @@ body.player-panel-open { overflow: hidden; }
 
 </style>
 
+  <link rel="stylesheet" href="daily30.css">
+  <link rel="stylesheet" href="leaderboards.css">
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -2823,6 +2826,16 @@ body.player-panel-open { overflow: hidden; }
       <p class="quiz-hero-subtitle" data-i18n="heroSubtitle">Odgovaraj na tisuće kviz pitanja iz raznih tema. Odaberi Blitz 60 sekundi, tematski kviz ili opuštenu igru bez vremenskog ograničenja.</p>
 
       <div class="mode-pills" id="mode-pills">
+        <button class="mode-pill mode-pill--daily" data-mode="daily30">
+          <span class="daily30-mode-copy">
+            <span class="mode-label" data-i18n="modeDailyLabel">Dnevnih 30</span>
+            <span class="mode-desc" data-i18n="modeDailyDesc">Svaki dan isti set za sve igrače</span>
+          </span>
+          <span class="daily30-countdown" aria-label="Vrijeme do idućeg kviza">
+            <span aria-hidden="true">⏳</span>
+            <strong id="daily30-countdown">--:--:--</strong>
+          </span>
+        </button>
         <button class="mode-pill active circle-selected" data-mode="blitz60">
           <span class="mode-label" data-i18n="modeBlitzLabel">Blitz 60s</span>
           <span class="mode-desc" data-i18n="modeBlitzDesc">jedno pitanje za drugim (igraj s prijateljima)</span>
@@ -2838,6 +2851,36 @@ body.player-panel-open { overflow: hidden; }
           <span class="mode-desc" data-i18n="modeRelaxDesc">Nasumična pitanja (igraj do besvijesti)</span>
         </button>
       </div>
+
+      <section class="daily30-panel" id="daily30-panel" aria-label="Dnevnih 30">
+        <div class="daily30-choice-bar">
+          <button class="daily30-choice active" id="daily30-current-choice" type="button" data-i18n="dailyPlayToday">Igraj današnji</button>
+          <button class="daily30-choice" id="daily30-archive-choice" type="button" data-i18n="dailyPlayPast">Odigraj prošle kvizove</button>
+        </div>
+        <div class="daily30-selection-note" id="daily30-selection-note">Današnji set od 30 pitanja spreman je za igru.</div>
+
+        <div class="daily30-history" id="daily30-history">
+          <div class="daily30-calendar">
+            <div class="daily30-calendar-head">
+              <button class="daily30-month-nav" id="daily30-month-prev" type="button" aria-label="Prethodni mjesec">‹</button>
+              <div class="daily30-month-label" id="daily30-month-label">—</div>
+              <button class="daily30-month-nav" id="daily30-month-next" type="button" aria-label="Sljedeći mjesec">›</button>
+            </div>
+            <div class="daily30-weekdays" aria-hidden="true"><span>PO</span><span>UT</span><span>SR</span><span>ČE</span><span>PE</span><span>SU</span><span>NE</span></div>
+            <div class="daily30-days" id="daily30-days"></div>
+          </div>
+        </div>
+
+        <div class="daily30-name-card" id="daily30-name-card">
+          <div class="daily30-name-title" data-i18n="dailyNameTitle">Kako želiš da piše na ljestvici?</div>
+          <div class="daily30-name-copy" data-i18n="dailyNameCopy">Bez računa i prijave — ime vrijedi samo na ovom uređaju, a broj gosta nikad se ne prikazuje javno.</div>
+          <div class="daily30-name-row">
+            <input class="daily30-name-input" id="daily30-name-input" type="text" maxlength="20" autocomplete="nickname" placeholder="Tvoje ime">
+            <button class="daily30-name-save" id="daily30-name-save" type="button" data-i18n="dailyNameSave">Spremi</button>
+          </div>
+        </div>
+        <button class="daily30-name-edit" id="daily30-name-edit" type="button" data-i18n="dailyNameEdit">Promijeni ime na ljestvici</button>
+      </section>
 
       <!-- ✅ NOVO: Tematski kvizovi -->
       <div class="themed-row">
@@ -2965,6 +3008,23 @@ body.player-panel-open { overflow: hidden; }
         </button>
       </div>
     </aside>
+  </section>
+
+  <section class="leaderboard-preview" id="leaderboard-preview" aria-labelledby="leaderboard-preview-title">
+    <div class="leaderboard-heading-row">
+      <h2 class="leaderboard-title" id="leaderboard-preview-title">🏆 Ljestvica znanja</h2>
+      <span class="leaderboard-test-badge">GitHub test</span>
+    </div>
+    <div class="leaderboard-tabs" role="tablist" aria-label="Razdoblje ljestvice">
+      <button class="leaderboard-tab active" type="button" data-leaderboard-view="daily30">Dnevnih 30</button>
+      <button class="leaderboard-tab" type="button" data-leaderboard-view="week">Ovaj tjedan</button>
+      <button class="leaderboard-tab" type="button" data-leaderboard-view="month">Ovaj mjesec</button>
+      <button class="leaderboard-tab" type="button" data-leaderboard-view="all">Svih vremena</button>
+    </div>
+    <div class="leaderboard-period" id="leaderboard-preview-period"></div>
+    <div class="leaderboard-list" id="leaderboard-preview-list"></div>
+    <div class="leaderboard-own-position" id="leaderboard-preview-own"></div>
+    <a class="leaderboard-more-link" id="leaderboard-more-link" href="ljestvice.html">Prikaži cijelu ljestvicu</a>
   </section>
 
 
@@ -3344,6 +3404,8 @@ body.player-panel-open { overflow: hidden; }
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="daily30.js"></script>
+<script src="leaderboards.js"></script>
          
 <script>
 
@@ -3387,6 +3449,14 @@ if (!supabaseClient) {
       profile: "Moj profil",
       heroTitle: "Kviz pitanja i online kviz",
       heroSubtitle: "Odgovaraj na tisuće kviz pitanja iz raznih tema. Odaberi Blitz 60 sekundi, tematski kviz ili opuštenu igru bez vremenskog ograničenja.",
+      modeDailyLabel: "Dnevnih 30",
+      modeDailyDesc: "Svaki dan isti set za sve igrače",
+      dailyPlayToday: "Igraj današnji",
+      dailyPlayPast: "Odigraj prošle kvizove",
+      dailyNameTitle: "Kako želiš da piše na ljestvici?",
+      dailyNameCopy: "Bez računa i prijave — ime vrijedi samo na ovom uređaju, a broj gosta nikad se ne prikazuje javno.",
+      dailyNameSave: "Spremi",
+      dailyNameEdit: "Promijeni ime na ljestvici",
       modeBlitzLabel: "Blitz 60s",
       modeBlitzDesc: "jedno pitanje za drugim (igraj s prijateljima)",
       modeRelaxLabel: "Bez vremena",
@@ -3422,6 +3492,8 @@ if (!supabaseClient) {
       support: "Podrška",
       legal: "Legalno",
       footerCopy: "Kviz pitanja, online kvizovi i karta pub kvizova.",
+      quizDailyTitle: "Dnevnih 30",
+      quizDailySubtitle: "30 istih pitanja za sve igrače",
       quizBlitzTitle: "Blitz kviz",
       quizBlitzSubtitle: "Brza pitanja u 60 sekundi",
       quizStoryTitle: "Story kviz",
@@ -3431,6 +3503,7 @@ if (!supabaseClient) {
       quizRelaxTitle: "Bezvremenski kviz",
       quizRelaxSubtitle: "Opušteni mix pitanja bez ograničenja",
       typeDash: "Tip: —",
+      typeDaily: "Tip: Dnevnih 30",
       typeBlitz: "Tip: Blitz",
       emptyQuestion: "(prazno pitanje)",
       visualAlt: "Vizualna pomoć za pitanje",
@@ -3469,6 +3542,14 @@ if (!supabaseClient) {
       profile: "My profile",
       heroTitle: "Quiz questions and online quiz",
       heroSubtitle: "Answer thousands of quiz questions across many topics. Choose Blitz 60 seconds, a themed quiz or a relaxed game with no time limit.",
+      modeDailyLabel: "Daily 30",
+      modeDailyDesc: "The same daily set for every player",
+      dailyPlayToday: "Play today's quiz",
+      dailyPlayPast: "Play past quizzes",
+      dailyNameTitle: "What name should appear on the leaderboard?",
+      dailyNameCopy: "No account or sign-in — the name stays on this device, and your guest number is never shown publicly.",
+      dailyNameSave: "Save",
+      dailyNameEdit: "Change leaderboard name",
       modeBlitzLabel: "Blitz 60s",
       modeBlitzDesc: "one question after another (play with friends)",
       modeRelaxLabel: "No timer",
@@ -3504,6 +3585,8 @@ if (!supabaseClient) {
       support: "Support",
       legal: "Legal",
       footerCopy: "Quiz questions, online quizzes and a pub quiz map.",
+      quizDailyTitle: "Daily 30",
+      quizDailySubtitle: "The same 30 questions for every player",
       quizBlitzTitle: "Blitz quiz",
       quizBlitzSubtitle: "Fast questions in 60 seconds",
       quizStoryTitle: "Story quiz",
@@ -3513,6 +3596,7 @@ if (!supabaseClient) {
       quizRelaxTitle: "Timeless quiz",
       quizRelaxSubtitle: "Relaxed question mix with no time limit",
       typeDash: "Type: —",
+      typeDaily: "Type: Daily 30",
       typeBlitz: "Type: Blitz",
       emptyQuestion: "(empty question)",
       visualAlt: "Visual hint for the question",
@@ -3623,6 +3707,8 @@ if (!supabaseClient) {
     updateScoreUI();
     refreshDynamicLanguageText();
     if (typeof refreshPlayerExperienceLanguage === "function") refreshPlayerExperienceLanguage();
+    window.KvizDaily30?.afterLanguageChange?.();
+    window.KvizLeaderboards?.refreshAll?.();
     if (!currentQuestion) {
       const typeLabelEl = document.getElementById("question-type-label");
       if (typeLabelEl) typeLabelEl.textContent = tr("typeDash");
@@ -3691,7 +3777,7 @@ if (!supabaseClient) {
   let loadedMoreplovciCount = 0;
   let loadedSvastaraCount = 0;
   
-  // mode: "blitz60" | "story90" | "relax" | "themed"
+  // mode: "daily30" | "blitz60" | "story90" | "relax" | "themed"
   let currentMode = "blitz60";
   let currentThemeTopic = null; // npr "AntickiRim"
   let currentQuestion = null;
@@ -3827,7 +3913,8 @@ if (!supabaseClient) {
       id: uuid,
       createdAt: created.toISOString(),
       timestamp: makeGuestTimestamp(created),
-      suffix: compactUuid.slice(-8).padStart(8, "0")
+      suffix: compactUuid.slice(-8).padStart(8, "0"),
+      displayName: ""
     };
   }
 
@@ -3845,7 +3932,8 @@ if (!supabaseClient) {
           id: String(saved.id),
           createdAt: saved.createdAt || null,
           timestamp: String(saved.timestamp),
-          suffix: String(saved.suffix || compactId.slice(-8) || "00000000").toUpperCase()
+          suffix: String(saved.suffix || compactId.slice(-8) || "00000000").toUpperCase(),
+          displayName: String(saved.displayName || "").trim().slice(0, 20)
         };
         localStorage.setItem(GUEST_IDENTITY_KEY, JSON.stringify(guestIdentity));
         return guestIdentity;
@@ -3865,7 +3953,36 @@ if (!supabaseClient) {
 
   function getGuestDisplayName() {
     const identity = getOrCreateGuestIdentity();
+    if (identity.displayName) return identity.displayName;
     return `${playerText("guest")}${identity.timestamp}${identity.suffix}`;
+  }
+
+  function saveGuestLeaderboardName(value) {
+    if (!playerIdentity.isGuest) return false;
+    const name = String(value || "").replace(/\s+/g, " ").trim().slice(0, 20);
+    const valid = name.length >= 2 && /^[\p{L}\p{N} ._'’-]+$/u.test(name);
+    if (!valid) {
+      showKvizToast(currentLang === "en"
+        ? "Use 2–20 letters or numbers for the leaderboard name."
+        : "Ime za ljestvicu mora imati 2–20 slova ili brojeva.");
+      return false;
+    }
+
+    const identity = getOrCreateGuestIdentity();
+    identity.displayName = name;
+    guestIdentity = identity;
+    try {
+      localStorage.setItem(GUEST_IDENTITY_KEY, JSON.stringify(identity));
+    } catch (error) {
+      console.warn("Ime gosta nije spremljeno:", error);
+      return false;
+    }
+    playerIdentity.name = name;
+    refreshPlayerExperienceLanguage();
+    window.KvizDaily30?.setPlayerContext?.(playerIdentity);
+    window.KvizLeaderboards?.refreshAll?.();
+    showKvizToast(currentLang === "en" ? "Leaderboard name saved." : "Ime za ljestvicu je spremljeno.");
+    return true;
   }
 
   function migrateLegacyGuestStats() {
@@ -4607,6 +4724,7 @@ if (!supabaseClient) {
   }
 
   function markRareQuestionSeen(question) {
+    if (currentMode === "daily30") return;
     const rarity = normalizeQuestionRarity(question);
     const key = getRareQuestionKey(question);
     if (!rarity || !key) return;
@@ -5122,6 +5240,7 @@ if (!supabaseClient) {
   }
 
   function markLocalQuestionDiscovered(question) {
+    if (currentMode === "daily30") return;
     if (!question) return;
     const key = String(question.id ?? question.question ?? "");
     if (!key || localStats.discoveredQuestionIds.includes(key)) return;
@@ -5139,7 +5258,7 @@ if (!supabaseClient) {
     currentLocalGameMode = currentMode;
     currentLocalGameTheme = currentThemeTopic;
     localGameActive = true;
-    startLocalPlayClock();
+    if (currentLocalGameMode !== "daily30") startLocalPlayClock();
     updateHistoryDownloadButton();
   }
 
@@ -5147,16 +5266,19 @@ if (!supabaseClient) {
     if (!localGameActive) beginLocalGame();
     const ok = !skipped && Boolean(result?.ok);
     const answers = Array.isArray(question?.answers) ? question.answers : [];
+    const dailyOnly = currentLocalGameMode === "daily30";
 
-    localStats.totalCorrect += ok ? 1 : 0;
-    localStats.totalWrong += ok ? 0 : 1;
+    if (!dailyOnly) {
+      localStats.totalCorrect += ok ? 1 : 0;
+      localStats.totalWrong += ok ? 0 : 1;
+    }
 
-    const newlyCollectedRarity = ok ? collectRareAnswer(question) : null;
+    const newlyCollectedRarity = !dailyOnly && ok ? collectRareAnswer(question) : null;
 
     if (ok) {
       currentGameStreak += 1;
       currentGameLongestStreak = Math.max(currentGameLongestStreak, currentGameStreak);
-      localStats.longestStreak = Math.max(localStats.longestStreak, currentGameStreak);
+      if (!dailyOnly) localStats.longestStreak = Math.max(localStats.longestStreak, currentGameStreak);
     } else {
       currentGameStreak = 0;
     }
@@ -5175,7 +5297,7 @@ if (!supabaseClient) {
       rarity: normalizeQuestionRarity(question)
     });
 
-    saveLocalStats();
+    if (!dailyOnly) saveLocalStats();
     if (newlyCollectedRarity) {
       showKvizToast(formatPlayerText("rareCollectedToast", {
         rarity: playerText(getRarityLabelKey(newlyCollectedRarity))
@@ -5186,9 +5308,10 @@ if (!supabaseClient) {
 
   function finalizeLocalGame(completed) {
     if (!localGameActive) return;
-    updateLocalPlayClock(true);
+    if (currentLocalGameMode !== "daily30") updateLocalPlayClock(true);
     stopLocalPlayClock();
     localGameActive = false;
+    if (currentLocalGameMode === "daily30") return;
 
     if (currentGameHistory.length > 0) {
       const total = currentGameHistory.length;
@@ -6381,6 +6504,8 @@ if (!supabaseClient) {
     if (activeQuizPlayId) {
       await finishQuizTracking(false);
     }
+    /* GitHub prototip Dnevnih 30 je namjerno potpuno lokalan dok ne uvedemo novu baznu strukturu. */
+    if (currentMode === "daily30") return;
 
     activeQuizStartedAt = Date.now();
     activeQuizSessionId = makeQuizSessionId();
@@ -6416,6 +6541,7 @@ if (!supabaseClient) {
   }
 
   async function saveQuizAnswer(question, userAnswer, result, skipped) {
+    if (currentMode === "daily30") return;
     if (!supabaseClient || !question || !activeQuizSessionId) return;
 
     try {
@@ -6452,6 +6578,7 @@ if (!supabaseClient) {
   }
 
   async function saveQuestionVote(question, vote) {
+    if (currentMode === "daily30") return false;
     if (!supabaseClient || !question || !activeQuizSessionId || !["like", "dislike"].includes(vote)) return false;
 
     try {
@@ -6484,6 +6611,7 @@ if (!supabaseClient) {
   }
 
   async function updateQuizTracking() {
+    if (currentMode === "daily30") return;
     if (!supabaseClient || !activeQuizPlayId || !activeQuizStartedAt) return;
 
     const durationSeconds = getActiveQuizDurationSeconds();
@@ -6563,6 +6691,9 @@ if (!supabaseClient) {
     setQuizInteractionEnabled(true);
     updateTimerUI(); // da odmah pokaže ∞ ako treba
     await initPlayerExperience();
+    window.KvizDaily30?.setPlayerContext?.(playerIdentity);
+    await window.KvizDaily30?.initOnline?.();
+    window.KvizLeaderboards?.refreshAll?.();
   });
 
   function initYear() {
@@ -6902,7 +7033,11 @@ if (!supabaseClient) {
     pills.forEach((pill) => {
       pill.addEventListener("click", () => {
         const mode = pill.getAttribute("data-mode");
-        if (!mode || mode === currentMode) return;
+        if (!mode) return;
+        if (mode === currentMode) {
+          if (mode === "daily30") window.KvizDaily30?.onModeSelected?.();
+          return;
+        }
 
         // Ako user klikne običan mod, izlazimo iz tematskog
         currentMode = mode;
@@ -6911,6 +7046,8 @@ if (!supabaseClient) {
 
         pills.forEach((p) => p.classList.toggle("active", p === pill));
         setExclusiveChoiceCircle(pill);
+        if (currentMode === "daily30") window.KvizDaily30?.onModeSelected?.();
+        else window.KvizDaily30?.onModeLeft?.();
 
         stopTimer();
         hideAtomicJokerToolkit();
@@ -6942,6 +7079,7 @@ if (!supabaseClient) {
     else timerDurationMs = 0; // relax + themed = bez vremena
 
     remainingMs = timerDurationMs;
+    if (currentMode === "daily30") window.KvizDaily30?.resetStopwatch?.();
     updateTimerUI();
   }
 
@@ -6949,12 +7087,22 @@ if (!supabaseClient) {
     return currentMode === "blitz60"; /* STORY PRIVREMENO ISKLJUČEN: || currentMode === "story90" */
   }
 
+  function isFiniteQuestionMode() {
+    return isTimedMode() || currentMode === "daily30";
+  }
+
   function updateModeLabel() {
     const subtitleEl = document.getElementById("quiz-mode-label");
     const titleEl = document.getElementById("quiz-title");
     if (!subtitleEl || !titleEl) return;
 
-    if (currentMode === "blitz60") {
+    if (currentMode === "daily30") {
+      titleEl.textContent = tr("quizDailyTitle");
+      const dateKey = window.KvizDaily30?.getSelectedDate?.();
+      subtitleEl.textContent = dateKey
+        ? `${tr("quizDailySubtitle")} · ${window.KvizDaily30?.formatFullDate?.(dateKey) || dateKey}`
+        : tr("quizDailySubtitle");
+    } else if (currentMode === "blitz60") {
       titleEl.textContent = tr("quizBlitzTitle");
       subtitleEl.textContent = tr("quizBlitzSubtitle");
     /* STORY PRIVREMENO ISKLJUČEN
@@ -6994,6 +7142,7 @@ if (!supabaseClient) {
         // Prebaci na themed mod
         currentMode = "themed";
         currentThemeTopic = topic;
+        window.KvizDaily30?.onModeLeft?.();
 
         // makni active s mode pillova (da se jasno vidi da je themed poseban)
         document.querySelectorAll(".mode-pill").forEach(p => p.classList.remove("active"));
@@ -7451,7 +7600,16 @@ if (!supabaseClient) {
     const answerInput = document.getElementById("answer-input");
 
     if (btnStart) {
-      btnStart.addEventListener("click", () => {
+      btnStart.addEventListener("click", async () => {
+        if (currentMode === "daily30") {
+          btnStart.disabled = true;
+          const ready = await window.KvizDaily30?.prepareSelectedRound?.();
+          btnStart.disabled = false;
+          if (!ready) {
+            showKvizToast(currentLang === "en" ? "Daily 30 could not be loaded." : "Dnevnih 30 nije moguće učitati.");
+            return;
+          }
+        }
         startNewRound(isTimedMode());
         focusAnswerInputSoon();
       });
@@ -7497,7 +7655,7 @@ if (!supabaseClient) {
 
     if (btnSkip) {
       btnSkip.addEventListener("click", () => {
-        if (isTimedMode() && quizFinished) return;
+        if (isFiniteQuestionMode() && quizFinished) return;
         if (!currentQuestion) return;
 
         const skippedQuestion = currentQuestion;
@@ -7512,6 +7670,12 @@ if (!supabaseClient) {
         void saveQuizAnswer(skippedQuestion, "", { ok:false, exact:false, matched:null, reason:"skipped" }, true);
 
         logAnswerHistory("", { ok:false, exact:false }, true);
+        if (currentMode === "daily30" && scoreTotal >= 30) {
+          currentQuestion = null;
+          setQuizInteractionEnabled(false);
+          window.setTimeout(finishDaily30Round, 180);
+          return;
+        }
         loadNextQuestion();
         focusAnswerInputSoon();
       });
@@ -7564,8 +7728,33 @@ if (!supabaseClient) {
 
     loadNextQuestion();
 
-    if (startTimerAlso && isTimedMode()) startTimer();
+    if (currentMode === "daily30") window.KvizDaily30?.startStopwatch?.();
+    else if (startTimerAlso && isTimedMode()) startTimer();
     else stopTimer();
+  }
+
+  function finishDaily30Round() {
+    if (currentMode !== "daily30" || quizFinished) return;
+    quizFinished = true;
+    const savedResult = window.KvizDaily30?.complete?.(scoreCorrect, scoreTotal);
+    finalizeLocalGame(true);
+    currentQuestion = null;
+    hideAtomicJokerToolkit();
+    clearQuestionRarityUI();
+    setQuizInteractionEnabled(false);
+    setStartButtonState(false);
+    closeMobileQuizFocus();
+
+    const questionTextEl = document.getElementById("question-text");
+    if (questionTextEl) {
+      const duration = window.KvizDaily30?.formatDuration?.(savedResult?.durationSeconds || 0) || "—";
+      questionTextEl.textContent = currentLang === "en"
+        ? `Daily 30 completed: ${scoreCorrect}/30 in ${duration}.`
+        : `Dnevnih 30 završeno: ${scoreCorrect}/30 za ${duration}.`;
+    }
+    const typeLabelEl = document.getElementById("question-type-label");
+    if (typeLabelEl) typeLabelEl.textContent = tr("typeDaily");
+    window.KvizLeaderboards?.refreshAll?.();
   }
 
   /* ------------------ STRONGER RANDOM (SHUFFLED QUEUE) ------------------ */
@@ -7586,6 +7775,20 @@ if (!supabaseClient) {
   }
 
   function ensureQueueReady() {
+    if (currentMode === "daily30") {
+      const dailyDate = window.KvizDaily30?.getActiveDate?.() || null;
+      if (queueMode !== currentMode || queueTheme !== dailyDate || questionQueue.length === 0) {
+        questionQueue = (window.KvizDaily30?.getActiveQuestions?.() || []).slice().reverse();
+        queueMode = currentMode;
+        queueTheme = dailyDate;
+        usedQuestionIds.clear();
+        lastDifficulty = null;
+        sameDifficultyStreak = 0;
+        recentTopics = [];
+      }
+      return;
+    }
+
     // za themed: promjena teme mora rebuildati queue
     const themeKey = currentMode === "themed" ? currentThemeTopic : null;
 
@@ -7624,8 +7827,8 @@ if (!supabaseClient) {
   function pickFromQueueRespectTopicCooldown() {
     if (questionQueue.length === 0) return null;
 
-    // u tematskom modu je ionako sve isti topic -> samo pop
-    if (currentMode === "themed") return questionQueue.pop();
+    // Dnevnih 30 mora zadržati isti redoslijed za svakoga; u tematskom je ionako sve isti topic.
+    if (currentMode === "daily30" || currentMode === "themed") return questionQueue.pop();
 
     const peek = questionQueue[questionQueue.length - 1];
     const peekTopic = getTopicSafe(peek);
@@ -7649,7 +7852,7 @@ if (!supabaseClient) {
   }
 
   function loadNextQuestion() {
-    if (isTimedMode() && quizFinished) return;
+    if (isFiniteQuestionMode() && quizFinished) return;
 
     clearActiveAtomicJokerHint();
     setAtomicJokerOpen(false);
@@ -7690,6 +7893,8 @@ if (!supabaseClient) {
   }
 
   function getQuestionPoolForCurrentMode() {
+    if (currentMode === "daily30") return window.KvizDaily30?.getActiveQuestions?.() || [];
+
     // Osnovno: validna pitanja
     let base = ALL_QUESTIONS.filter(q => {
       if (!q || !q.question || !Array.isArray(q.answers) || q.answers.length === 0) return false;
@@ -7774,7 +7979,7 @@ if (!supabaseClient) {
 
     applyQuestionRarityUI(q);
     if (questionTextEl) questionTextEl.textContent = q.question || tr("emptyQuestion");
-    if (typeLabelEl) typeLabelEl.textContent = tr("typeBlitz"); /* STORY PRIVREMENO ISKLJUČEN */
+    if (typeLabelEl) typeLabelEl.textContent = currentMode === "daily30" ? tr("typeDaily") : tr("typeBlitz"); /* STORY PRIVREMENO ISKLJUČEN */
 
     /* TEŽINA PRIVREMENO ISKLJUČENA - ne prikazuj 1/5, 2/5, 3/5... */
     if (diffPillEl) diffPillEl.textContent = "";
@@ -7857,6 +8062,7 @@ if (!supabaseClient) {
   function stopTimer() {
     timerRunning = false;
     if (timerIntervalId) { cancelAnimationFrame(timerIntervalId); timerIntervalId = null; }
+    window.KvizDaily30?.stopStopwatch?.();
   }
 
   function pauseTimerForTyping() {
@@ -7874,6 +8080,11 @@ if (!supabaseClient) {
     const valEl = document.getElementById("timer-value");
     const pill = document.getElementById("timer-pill");
     if (!valEl || !pill) return;
+
+    if (currentMode === "daily30") {
+      window.KvizDaily30?.renderStopwatch?.();
+      return;
+    }
 
     if (!isTimedMode()) {
       pill.style.opacity = 0.35;
@@ -8090,7 +8301,7 @@ if (!supabaseClient) {
   }
 
   function handleSubmitAnswer() {
-    if (isTimedMode() && quizFinished) return;
+    if (isFiniteQuestionMode() && quizFinished) return;
     if (!currentQuestion) return;
 
     const input = document.getElementById("answer-input");
@@ -8117,6 +8328,10 @@ if (!supabaseClient) {
     void updateQuizTracking();
     void saveQuizAnswer(answeredQuestion, userAnswerRaw, res, false);
     logAnswerHistory(userAnswerRaw, res, false);
+    if (currentMode === "daily30") {
+      currentQuestion = null;
+      setQuizInteractionEnabled(false);
+    }
 
     if (res.ok) {
       feedbackEl.textContent = res.exact ? tr("correct") : tr("accepted");
@@ -8129,7 +8344,12 @@ if (!supabaseClient) {
     }
 
     setTimeout(() => {
-      if (isTimedMode() && quizFinished) return;
+      if (currentMode === "daily30" && scoreTotal >= 30) {
+        finishDaily30Round();
+        return;
+      }
+      if (isFiniteQuestionMode() && quizFinished) return;
+      if (currentMode === "daily30") setQuizInteractionEnabled(true);
       loadNextQuestion();
       focusAnswerInputSoon();
     }, 600);
