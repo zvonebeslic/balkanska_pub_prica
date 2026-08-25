@@ -287,3 +287,8 @@
   .daily30-day-number { font-size: 0.67rem; }
   .daily30-day-result, .daily30-day-time { font-size: 0.43rem; }
 }
+
+/* Rezultati i povijest: skriveni dok kviz nije aktivan. */
+.quiz-main-grid { grid-template-columns: 1fr !important; }
+.sidebar-card { display: none !important; }
+body.quiz-playing .sidebar-card { display: flex !important; }
