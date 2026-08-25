@@ -1,3 +1,20 @@
+(function(){
+  "use strict";
+  const style=document.createElement("style");
+  style.id="kviztogo-daily30-inline-style";
+  style.textContent=`
+.mode-pill--daily{flex:0 1 calc(100% - .8rem);width:calc(100% - .8rem);margin:.12rem .4rem .28rem;min-height:58px;border-color:rgba(250,204,21,.46);background:radial-gradient(circle at 88% 18%,rgba(250,204,21,.15),transparent 36%),rgba(255,255,255,.055)}
+#mode-pills{margin-bottom:0}.mode-pill--daily.active{border-color:rgba(250,204,21,.82);background:radial-gradient(circle at 88% 18%,rgba(250,204,21,.22),transparent 38%),linear-gradient(135deg,rgba(47,128,255,.96),rgba(23,105,232,.96));box-shadow:0 10px 25px rgba(47,128,255,.2),0 0 20px rgba(250,204,21,.08)}
+.daily30-mode-copy{display:flex;min-width:0;flex:1 1 auto;flex-direction:column;align-items:flex-start;text-align:left}.daily30-countdown{display:inline-flex;flex:0 0 auto;align-items:center;gap:.28rem;min-width:112px;justify-content:center;padding:.36rem .58rem;border-radius:999px;border:1px solid rgba(250,204,21,.48);background:rgba(0,0,0,.22);color:#fff4b1;font-size:.68rem;font-weight:900;font-variant-numeric:tabular-nums;white-space:nowrap}
+.daily30-panel{display:none;margin:.55rem 0 .75rem;padding:.72rem;border-radius:17px;border:1px solid rgba(250,204,21,.3);background:radial-gradient(circle at top right,rgba(250,204,21,.09),transparent 42%),rgba(6,14,27,.55)}.daily30-panel.open{display:block}.daily30-choice-bar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.42rem}.daily30-choice{min-height:42px;border-radius:13px;border:1px solid rgba(148,163,184,.28);background:rgba(255,255,255,.055);color:var(--text-muted);padding:.5rem .62rem;font-size:.74rem;font-weight:900;cursor:pointer}.daily30-choice.active{border-color:rgba(47,128,255,.72);background:rgba(47,128,255,.2);color:#fff}.daily30-selection-note{min-height:1.4em;margin-top:.52rem;color:var(--text-muted);font-size:.7rem;line-height:1.4;text-align:center}.daily30-history{display:none;margin-top:.68rem}.daily30-history.open{display:block}
+.daily30-calendar{padding:.68rem;border-radius:15px;border:1px solid rgba(148,163,184,.2);background:rgba(4,10,20,.54)}.daily30-calendar-head{display:grid;grid-template-columns:34px 1fr 34px;align-items:center;gap:.35rem;margin-bottom:.62rem}.daily30-month-label{color:#fff;font-size:.86rem;font-weight:950;text-align:center}.daily30-month-nav{width:34px;height:34px;border-radius:50%;border:1px solid rgba(148,163,184,.26);background:rgba(255,255,255,.065);color:#fff;font-size:1rem;cursor:pointer}.daily30-month-nav:disabled{opacity:.28;cursor:default}.daily30-weekdays,.daily30-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.28rem}.daily30-weekdays{margin-bottom:.3rem;color:var(--text-muted);font-size:.58rem;font-weight:900;text-align:center}
+.daily30-day{min-width:0;min-height:48px;padding:.28rem .12rem;border-radius:10px;border:1px solid rgba(148,163,184,.22);background:rgba(255,255,255,.055);color:#fff;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.08rem;overflow:hidden}.daily30-day:hover:not(:disabled){border-color:rgba(47,128,255,.64);background:rgba(47,128,255,.14)}.daily30-day.played{border-color:rgba(34,197,94,.58);background:rgba(34,197,94,.17)}.daily30-day.selected{outline:2px solid rgba(250,204,21,.88);outline-offset:1px}.daily30-day.today .daily30-day-number{color:#ffe477}.daily30-day:disabled{opacity:.24;cursor:default}.daily30-day.locked:disabled{opacity:1;border-color:rgba(148,163,184,.18);background:rgba(255,255,255,.045);color:#fff}.daily30-day-spacer{min-height:48px}.daily30-day-number{font-size:.73rem;font-weight:950;line-height:1}.daily30-day-lock{color:#a8b2c2;font-size:.6rem;line-height:1;filter:grayscale(1)}.daily30-day-result,.daily30-day-time{max-width:100%;color:#cffff0;font-size:.48rem;font-weight:850;line-height:1.05;white-space:nowrap}
+.daily30-picked-summary{margin-top:.55rem;padding:.5rem .58rem;border-radius:11px;border:1px solid rgba(47,128,255,.24);background:rgba(47,128,255,.08);color:#d8e8ff;font-size:.68rem;line-height:1.4;text-align:center}.daily30-name-card{display:none;margin-top:.65rem;padding:.65rem;border-radius:14px;border:1px solid rgba(34,197,94,.48);background:rgba(34,197,94,.1)}.daily30-name-card.open{display:block}.daily30-name-title{color:#fff;font-size:.78rem;font-weight:950}.daily30-name-copy{margin-top:.16rem;color:var(--text-muted);font-size:.65rem;line-height:1.35}.daily30-name-row{display:flex;gap:.38rem;margin-top:.5rem}.daily30-name-input{min-width:0;flex:1 1 auto;min-height:40px;border-radius:11px;border:1px solid rgba(148,163,184,.32);background:rgba(0,0,0,.22);color:#fff;padding:.48rem .58rem;font-size:16px;outline:none}.daily30-name-input:focus{border-color:rgba(47,128,255,.75)}.daily30-name-save{min-height:40px;border-radius:11px;border:1px solid rgba(34,197,94,.62);background:rgba(34,197,94,.2);color:#fff;padding:.48rem .7rem;font-size:.7rem;font-weight:900;cursor:pointer}.daily30-name-edit{display:block;margin:.48rem auto 0;border:0;background:transparent;color:#a9c7f4;padding:.2rem .35rem;font-size:.62rem;font-weight:850;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.daily30-name-edit[hidden]{display:none}
+@media(max-width:520px){.mode-pill--daily{width:calc(100% - .6rem);flex-basis:calc(100% - .6rem);margin-inline:.3rem;min-height:56px;align-items:center}.daily30-countdown{min-width:104px;padding-inline:.45rem;font-size:.61rem}.daily30-panel{padding:.58rem}.daily30-calendar{padding:.52rem}.daily30-weekdays,.daily30-days{gap:.2rem}.daily30-day,.daily30-day-spacer{min-height:45px}.daily30-day{border-radius:8px}.daily30-day-number{font-size:.67rem}.daily30-day-result,.daily30-day-time{font-size:.43rem}}
+.quiz-main-grid{grid-template-columns:1fr!important}.sidebar-card{display:none!important}body.quiz-playing .sidebar-card{display:flex!important}`;
+  document.head.appendChild(style);
+})();
+
 (function () {
   "use strict";
 
@@ -8,647 +25,69 @@
   const GUEST_IDENTITY_KEY = "kviztogo_guest_identity_v1";
   const PLAYER_CONTEXT_KEY = "kviztogo_daily30_player_context_v1";
 
-  const state = {
-    index: null,
-    availableDates: new Set(),
-    selectedDate: null,
-    selectedView: "today",
-    calendarMonth: null,
-    activeDate: null,
-    activeQuestions: [],
-    playerContext: null,
-    stopwatchStartedAt: null,
-    stopwatchElapsedMs: 0,
-    stopwatchInterval: null,
-    countdownInterval: null,
-    nextMidnightAt: null
-  };
+  const state = {index:null,availableDates:new Set(),selectedDate:null,selectedView:"today",calendarMonth:null,activeDate:null,activeQuestions:[],playerContext:null,stopwatchStartedAt:null,stopwatchElapsedMs:0,stopwatchInterval:null,countdownInterval:null,nextMidnightAt:null};
+  const copy={hr:{currentReady:"Današnji set od 30 pitanja spreman je za igru.",archiveReady:"Odaberi datum pa pokreni kviz u glavnom oblačiću.",notPlayed:"Nije odigrano",played:"Odigrano",loading:"Učitavam dnevni set…",unavailable:"Dnevni set trenutačno nije dostupan. Pokušaj ponovno za nekoliko trenutaka.",locked:"Zaključano do tog datuma",result:"Rezultat",time:"vrijeme"},en:{currentReady:"Today's set of 30 questions is ready to play.",archiveReady:"Choose a date, then start the quiz in the main card.",notPlayed:"Not played",played:"Played",loading:"Loading the daily set…",unavailable:"The daily set is currently unavailable. Please try again shortly.",locked:"Locked until this date",result:"Score",time:"time"}};
+  function language(){try{return typeof currentLang!=="undefined"&&currentLang==="en"?"en":"hr";}catch{return document.documentElement.lang==="en"?"en":"hr";}}
+  function text(key){return copy[language()]?.[key]||copy.hr[key]||key;}
+  function zonedDateKey(date=new Date()){const parts=new Intl.DateTimeFormat("en-CA",{timeZone:TIME_ZONE,year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(date),values=Object.fromEntries(parts.map(part=>[part.type,part.value]));return `${values.year}-${values.month}-${values.day}`;}
+  function parseDateKey(dateKey){const[year,month,day]=String(dateKey).split("-").map(Number);return new Date(Date.UTC(year,month-1,day,12));}
+  function addDays(dateKey,amount){const date=parseDateKey(dateKey);date.setUTCDate(date.getUTCDate()+amount);return date.toISOString().slice(0,10);}
+  function formatFullDate(dateKey){return new Intl.DateTimeFormat(language()==="en"?"en-GB":"hr-HR",{timeZone:"UTC",day:"numeric",month:"long",year:"numeric"}).format(parseDateKey(dateKey));}
+  function formatMonth(dateKey){const value=new Intl.DateTimeFormat(language()==="en"?"en-GB":"hr-HR",{timeZone:"UTC",month:"long",year:"numeric"}).format(parseDateKey(dateKey));return value.charAt(0).toUpperCase()+value.slice(1);}
+  function formatDuration(totalSeconds){const seconds=Math.max(0,Math.round(Number(totalSeconds)||0)),hours=Math.floor(seconds/3600),minutes=Math.floor((seconds%3600)/60),rest=seconds%60;if(hours)return `${hours}:${String(minutes).padStart(2,"0")}:${String(rest).padStart(2,"0")}`;return `${String(minutes).padStart(2,"0")}:${String(rest).padStart(2,"0")}`;}
+  function resultStorageKey(){const context=getPlayerContext();if(context&&!context.isGuest&&context.userId)return `${RESULTS_BASE_KEY}:user:${context.userId}`;if(context?.isGuest&&context.guestId)return `${RESULTS_BASE_KEY}:guest:${context.guestId}`;try{if(typeof playerIdentity!=="undefined"&&playerIdentity&&!playerIdentity.isGuest&&playerIdentity.userId)return `${RESULTS_BASE_KEY}:user:${playerIdentity.userId}`;if(typeof getOrCreateGuestIdentity==="function")return `${RESULTS_BASE_KEY}:guest:${getOrCreateGuestIdentity().id}`;}catch(_){}return `${RESULTS_BASE_KEY}:device`;}
+  function loadResults(){try{const value=JSON.parse(localStorage.getItem(resultStorageKey())||"null");return value&&typeof value==="object"?value:{};}catch{return {};}}
+  function saveResults(results){try{localStorage.setItem(resultStorageKey(),JSON.stringify(results));}catch(error){console.warn("Dnevnih 30 rezultat nije spremljen:",error);}}
+  function getCustomGuestName(){try{const identity=JSON.parse(localStorage.getItem(GUEST_IDENTITY_KEY)||"null"),name=String(identity?.displayName||"").trim();return name||null;}catch{return null;}}
+  function getPublicPlayerName(){const context=getPlayerContext();if(context?.name)return context.name;try{if(typeof playerIdentity!=="undefined"&&playerIdentity&&!playerIdentity.isGuest)return String(playerIdentity.name||"Kvizoman").trim()||"Kvizoman";}catch(_){}return getCustomGuestName()||(language()==="en"?"Your score":"Tvoj rezultat");}
+  function getPlayerContext(){if(state.playerContext)return state.playerContext;try{const saved=JSON.parse(localStorage.getItem(PLAYER_CONTEXT_KEY)||"null");if(saved&&typeof saved==="object")state.playerContext=saved;}catch(_){}return state.playerContext;}
+  function setPlayerContext(identity){if(!identity||typeof identity!=="object")return;let guestId=null;if(identity.isGuest){try{const saved=JSON.parse(localStorage.getItem(GUEST_IDENTITY_KEY)||"null");guestId=saved?.id||null;}catch(_){}}state.playerContext={isGuest:Boolean(identity.isGuest),userId:identity.userId||null,guestId,name:String(identity.isGuest?(getCustomGuestName()||""):(identity.name||"")).trim().slice(0,40)};try{localStorage.setItem(PLAYER_CONTEXT_KEY,JSON.stringify(state.playerContext));}catch(_){}}
+  function findNextMidnight(now=Date.now()){const currentKey=zonedDateKey(new Date(now));let low=now,high=now+30*60*60*1000;for(let index=0;index<42;index++){const middle=Math.floor((low+high)/2);if(zonedDateKey(new Date(middle))===currentKey)low=middle+1;else high=middle;}return high;}
+  function renderCountdown(){const element=document.getElementById("daily30-countdown");if(!element)return;const now=Date.now();if(!state.nextMidnightAt||now>=state.nextMidnightAt+1000){state.nextMidnightAt=findNextMidnight(now);const currentDate=zonedDateKey();if(state.selectedView==="today")state.selectedDate=currentDate;void loadIndex(true).then(()=>{updateSelectionNote();renderCalendar();try{if(typeof updateModeLabel==="function")updateModeLabel();}catch(_){}});}const remaining=Math.max(0,Math.ceil((state.nextMidnightAt-now)/1000)),hours=Math.floor(remaining/3600),minutes=Math.floor((remaining%3600)/60),seconds=remaining%60;element.textContent=`${String(hours).padStart(2,"0")}:${String(minutes).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`;}
+  async function loadIndex(force=false){if(state.index&&!force)return state.index;try{const response=await fetch(`${INDEX_URL}${force?`?v=${Date.now()}`:""}`,{cache:force?"no-store":"default"});if(!response.ok)throw new Error(`HTTP ${response.status}`);const value=await response.json();state.index=value;state.availableDates=new Set(Array.isArray(value.dates)?value.dates:[]);return value;}catch(error){console.warn("Arhiva Dnevnih 30 nije učitana:",error);return state.index;}}
+  function hashString(value){let hash=2166136261;for(let index=0;index<value.length;index++){hash^=value.charCodeAt(index);hash=Math.imul(hash,16777619);}return(hash>>>0).toString(16).padStart(8,"0");}
+  function createRandom(seedText){let seed=1779033703^seedText.length;for(let index=0;index<seedText.length;index++){seed=Math.imul(seed^seedText.charCodeAt(index),3432918353);seed=(seed<<13)|(seed>>>19);}seed=Math.imul(seed^(seed>>>16),2246822507);seed=Math.imul(seed^(seed>>>13),3266489909);let value=(seed^(seed>>>16))>>>0;return()=>{value+=0x6d2b79f5;let result=value;result=Math.imul(result^(result>>>15),result|1);result^=result+Math.imul(result^(result>>>7),result|61);return((result^(result>>>14))>>>0)/4294967296;};}
+  function shuffled(items,random){const copy=items.slice();for(let index=copy.length-1;index>0;index--){const swapIndex=Math.floor(random()*(index+1));[copy[index],copy[swapIndex]]=[copy[swapIndex],copy[index]];}return copy;}
+  async function generateFallbackSet(dateKey){const manifestResponse=await fetch(MANIFEST_URL);if(!manifestResponse.ok)throw new Error("Manifest pitanja nije dostupan.");const manifest=await manifestResponse.json(),files=Array.isArray(manifest.files)?manifest.files:[],collections=await Promise.all(files.map(async fileName=>{const response=await fetch(fileName);if(!response.ok)return[];const value=await response.json();return Array.isArray(value)?value.map((question,index)=>({fileName,question,index})):[];}));const seen=new Set(),pool=[];collections.flat().forEach(({fileName,question,index})=>{if(!question?.question||!Array.isArray(question.answers)||!question.answers.length)return;const normalized=String(question.question).toLocaleLowerCase("hr").replace(/\s+/g," ").trim();if(!normalized||seen.has(normalized))return;seen.add(normalized);const topic=String(question.topic||fileName.replace(/\.json$/i,"")||"Ostalo").trim();pool.push({topic,value:{...question,id:`daily-${hashString(`${fileName}:${question.id??index}:${normalized}`)}`,type:question.type||"blitz",topic,image:question.image||null}});});const byTopic=new Map();pool.forEach(item=>{if(!byTopic.has(item.topic))byTopic.set(item.topic,[]);byTopic.get(item.topic).push(item.value);});const topics=shuffled([...byTopic.keys()],createRandom(`kviztogo-daily-topics:${dateKey}`)),queues=new Map(topics.map(topic=>[topic,shuffled(byTopic.get(topic),createRandom(`kviztogo-daily:${dateKey}:${topic}`))])),chosen=[];let round=0;while(chosen.length<30&&topics.some(topic=>queues.get(topic).length>round)){shuffled(topics,createRandom(`kviztogo-round:${dateKey}:${round}`)).forEach(topic=>{if(chosen.length>=30)return;const question=queues.get(topic)[round];if(question)chosen.push(question);});round++;}return shuffled(chosen,createRandom(`kviztogo-order:${dateKey}`));}
+  async function loadSet(dateKey){try{const response=await fetch(`daily30/${dateKey}.json`);if(!response.ok)throw new Error(`HTTP ${response.status}`);const value=await response.json();if(!Array.isArray(value.questions)||value.questions.length!==30)throw new Error("Neispravan dnevni set.");return value.questions;}catch(error){console.warn(`Spremljeni dnevni set ${dateKey} nije učitan; koristim determinističku rezervu.`,error);const questions=await generateFallbackSet(dateKey);if(questions.length!==30)throw new Error("Nije moguće pripremiti 30 dnevnih pitanja.");return questions;}}
+  async function prepareSelectedRound(){const note=document.getElementById("daily30-selection-note");if(note)note.textContent=text("loading");try{const dateKey=state.selectedDate||zonedDateKey();state.activeQuestions=await loadSet(dateKey);state.activeDate=dateKey;if(note)updateSelectionNote();return true;}catch(error){console.error("Dnevnih 30 nije pripremljen:",error);if(note)note.textContent=text("unavailable");return false;}}
+  function getActiveQuestions(){return state.activeQuestions.slice();}function getActiveDate(){return state.activeDate||state.selectedDate||zonedDateKey();}function getSelectedDate(){return state.selectedDate||zonedDateKey();}
+  function resetStopwatch(){stopStopwatch();state.stopwatchElapsedMs=0;state.stopwatchStartedAt=null;renderStopwatch();}
+  function startStopwatch(){resetStopwatch();state.stopwatchStartedAt=Date.now();state.stopwatchInterval=window.setInterval(renderStopwatch,100);renderStopwatch();}
+  function stopStopwatch(){if(state.stopwatchStartedAt){state.stopwatchElapsedMs+=Date.now()-state.stopwatchStartedAt;state.stopwatchStartedAt=null;}if(state.stopwatchInterval){window.clearInterval(state.stopwatchInterval);state.stopwatchInterval=null;}renderStopwatch();}
+  function elapsedMs(){return state.stopwatchElapsedMs+(state.stopwatchStartedAt?Date.now()-state.stopwatchStartedAt:0);}
+  function renderStopwatch(){let modeIsDaily=false;try{modeIsDaily=typeof currentMode!=="undefined"&&currentMode==="daily30";}catch(_){}if(!modeIsDaily)return;const element=document.getElementById("timer-value"),pill=document.getElementById("timer-pill");if(pill)pill.style.opacity="1";if(!element)return;const tenths=Math.floor(elapsedMs()/100),minutes=Math.floor(tenths/600),seconds=Math.floor((tenths%600)/10);element.textContent=`${String(minutes).padStart(2,"0")}:${String(seconds).padStart(2,"0")}.${tenths%10}`;}
+  function complete(score,total){stopStopwatch();const dateKey=getActiveDate(),today=zonedDateKey(),durationSeconds=Math.max(1,Math.round(elapsedMs()/1000)),results=loadResults(),previous=results[dateKey]||null,official=dateKey===today&&!previous?.official,candidate={date:dateKey,score:Math.max(0,Number(score)||0),total:Math.max(0,Number(total)||30),durationSeconds,completedAt:new Date().toISOString(),official,attempts:Math.max(0,Number(previous?.attempts)||0)+1};if(previous?.official)results[dateKey]={...previous,attempts:candidate.attempts,lastPractice:candidate};else{const previousIsBetter=previous&&(Number(previous.score)>candidate.score||(Number(previous.score)===candidate.score&&Number(previous.durationSeconds)<=candidate.durationSeconds));results[dateKey]=previousIsBetter?{...previous,attempts:candidate.attempts,lastPractice:candidate}:candidate;}saveResults(results);renderCalendar();updateSelectionNote();showNameCardIfNeeded();window.KvizLeaderboards?.refreshAll?.();return results[dateKey];}
+  function getResult(dateKey){return loadResults()[dateKey]||null;}
+  function updateSelectionNote(){const note=document.getElementById("daily30-selection-note");if(!note)return;const selectedDate=getSelectedDate(),result=getResult(selectedDate);if(result){note.textContent=`${formatFullDate(selectedDate)} · ${text("played")}: ${result.score}/${result.total} · ${formatDuration(result.durationSeconds)}`;return;}note.textContent=state.selectedView==="today"?text("currentReady"):`${formatFullDate(selectedDate)} · ${text("notPlayed")}`;}
+  function showNameCardIfNeeded(force=false){const card=document.getElementById("daily30-name-card");if(!card)return;let isGuest=true;try{isGuest=typeof playerIdentity==="undefined"||playerIdentity.isGuest;}catch(_){}card.classList.toggle("open",Boolean(isGuest&&(force||!getCustomGuestName())));const editButton=document.getElementById("daily30-name-edit");if(editButton)editButton.hidden=!isGuest;const input=document.getElementById("daily30-name-input");if(input&&getCustomGuestName())input.value=getCustomGuestName();if(force&&isGuest)window.setTimeout(()=>input?.focus(),0);}
+  function renderCalendar(){const daysRoot=document.getElementById("daily30-days"),monthLabel=document.getElementById("daily30-month-label");if(!daysRoot||!monthLabel)return;const currentDate=zonedDateKey(),monthKey=state.calendarMonth||getSelectedDate().slice(0,7)+"-01";state.calendarMonth=monthKey;monthLabel.textContent=formatMonth(monthKey);daysRoot.innerHTML="";const monthDate=parseDateKey(monthKey),year=monthDate.getUTCFullYear(),month=monthDate.getUTCMonth(),firstDayMondayIndex=(new Date(Date.UTC(year,month,1)).getUTCDay()+6)%7,daysInMonth=new Date(Date.UTC(year,month+1,0)).getUTCDate(),results=loadResults();for(let index=0;index<firstDayMondayIndex;index++){const spacer=document.createElement("div");spacer.className="daily30-day-spacer";daysRoot.appendChild(spacer);}for(let day=1;day<=daysInMonth;day++){const dateKey=`${year}-${String(month+1).padStart(2,"0")}-${String(day).padStart(2,"0")}`,available=state.availableDates.has(dateKey)||dateKey===currentDate,locked=available&&dateKey>currentDate,result=results[dateKey],button=document.createElement("button");button.type="button";button.className="daily30-day";button.disabled=!available||locked;button.classList.toggle("today",dateKey===currentDate);button.classList.toggle("selected",dateKey===getSelectedDate());button.classList.toggle("played",Boolean(result));button.classList.toggle("locked",locked);if(locked){button.setAttribute("aria-label",`${formatFullDate(dateKey)} · ${text("locked")}`);button.title=text("locked");}button.innerHTML=`<span class="daily30-day-number">${day}</span>${locked?`<span class="daily30-day-lock" aria-hidden="true">🔒</span>`:(result?`<span class="daily30-day-result">${text("played")}</span><span class="daily30-day-time">${result.score}/${result.total} · ${formatDuration(result.durationSeconds)}</span>`:"")}`;if(!button.disabled)button.addEventListener("click",()=>{state.selectedDate=dateKey;state.selectedView=dateKey===currentDate?"today":"archive";syncChoiceButtons();renderCalendar();updateSelectionNote();state.activeQuestions=[];state.activeDate=null;try{if(typeof resetQuestionQueue==="function")resetQuestionQueue();if(typeof updateModeLabel==="function")updateModeLabel();}catch(_){}});daysRoot.appendChild(button);}const previousButton=document.getElementById("daily30-month-prev"),nextButton=document.getElementById("daily30-month-next"),launchMonth=String(state.index?.launchDate||"2026-07-01").slice(0,7),latestMonth=String(state.index?.latestDate||currentDate).slice(0,7);if(previousButton)previousButton.disabled=monthKey.slice(0,7)<=launchMonth;if(nextButton)nextButton.disabled=monthKey.slice(0,7)>=latestMonth;}
+  function shiftCalendarMonth(amount){const date=parseDateKey(state.calendarMonth||`${zonedDateKey().slice(0,7)}-01`);date.setUTCMonth(date.getUTCMonth()+amount);state.calendarMonth=date.toISOString().slice(0,7)+"-01";renderCalendar();}
+  function syncChoiceButtons(){const currentButton=document.getElementById("daily30-current-choice"),archiveButton=document.getElementById("daily30-archive-choice"),history=document.getElementById("daily30-history"),isArchive=state.selectedView==="archive";currentButton?.classList.toggle("active",!isArchive);archiveButton?.classList.toggle("active",isArchive);history?.classList.toggle("open",isArchive);}
+  function selectToday(){const currentDate=zonedDateKey();state.selectedView="today";state.selectedDate=currentDate;state.calendarMonth=`${currentDate.slice(0,7)}-01`;state.activeQuestions=[];state.activeDate=null;syncChoiceButtons();renderCalendar();updateSelectionNote();try{if(typeof resetQuestionQueue==="function")resetQuestionQueue();if(typeof updateModeLabel==="function")updateModeLabel();}catch(_){}}
+  function selectArchive(){state.selectedView="archive";const currentDate=zonedDateKey();if(!state.selectedDate||state.selectedDate===currentDate)state.selectedDate=state.availableDates.has(addDays(currentDate,-1))?addDays(currentDate,-1):currentDate;state.calendarMonth=`${state.selectedDate.slice(0,7)}-01`;state.activeQuestions=[];state.activeDate=null;syncChoiceButtons();renderCalendar();updateSelectionNote();try{if(typeof resetQuestionQueue==="function")resetQuestionQueue();if(typeof updateModeLabel==="function")updateModeLabel();}catch(_){}}
+  function onModeSelected(){document.getElementById("daily30-panel")?.classList.add("open");if(!state.selectedDate)selectToday();updateSelectionNote();}function onModeLeft(){document.getElementById("daily30-panel")?.classList.remove("open");stopStopwatch();}function afterLanguageChange(){updateSelectionNote();renderCalendar();}
+  async function initOnline(){state.selectedDate=zonedDateKey();state.calendarMonth=`${state.selectedDate.slice(0,7)}-01`;await loadIndex();document.getElementById("daily30-current-choice")?.addEventListener("click",selectToday);document.getElementById("daily30-archive-choice")?.addEventListener("click",selectArchive);document.getElementById("daily30-month-prev")?.addEventListener("click",()=>shiftCalendarMonth(-1));document.getElementById("daily30-month-next")?.addEventListener("click",()=>shiftCalendarMonth(1));document.getElementById("daily30-name-edit")?.addEventListener("click",()=>showNameCardIfNeeded(true));document.getElementById("daily30-name-save")?.addEventListener("click",()=>{const input=document.getElementById("daily30-name-input"),value=String(input?.value||"").trim();if(!value||typeof saveGuestLeaderboardName!=="function")return;if(saveGuestLeaderboardName(value)){showNameCardIfNeeded(false);window.KvizLeaderboards?.refreshAll?.();}});renderCountdown();state.countdownInterval=window.setInterval(renderCountdown,1000);syncChoiceButtons();renderCalendar();updateSelectionNote();showNameCardIfNeeded(false);}
+  window.KvizDaily30={initOnline,onModeSelected,onModeLeft,afterLanguageChange,prepareSelectedRound,getActiveQuestions,getActiveDate,getSelectedDate,getResult,getResults:loadResults,getPublicPlayerName,setPlayerContext,formatDuration,formatFullDate,zonedDateKey,resetStopwatch,startStopwatch,stopStopwatch,renderStopwatch,elapsedSeconds:()=>Math.max(0,Math.round(elapsedMs()/1000)),complete,showNameCardIfNeeded,refreshCalendar:renderCalendar};
+})();
 
-  const copy = {
-    hr: {
-      currentReady: "Današnji set od 30 pitanja spreman je za igru.",
-      archiveReady: "Odaberi datum pa pokreni kviz u glavnom oblačiću.",
-      notPlayed: "Nije odigrano",
-      played: "Odigrano",
-      loading: "Učitavam dnevni set…",
-      unavailable: "Dnevni set trenutačno nije dostupan. Pokušaj ponovno za nekoliko trenutaka.",
-      locked: "Zaključano do tog datuma",
-      result: "Rezultat",
-      time: "vrijeme"
-    },
-    en: {
-      currentReady: "Today's set of 30 questions is ready to play.",
-      archiveReady: "Choose a date, then start the quiz in the main card.",
-      notPlayed: "Not played",
-      played: "Played",
-      loading: "Loading the daily set…",
-      unavailable: "The daily set is currently unavailable. Please try again shortly.",
-      locked: "Locked until this date",
-      result: "Score",
-      time: "time"
-    }
-  };
-
-  function language() {
-    try { return typeof currentLang !== "undefined" && currentLang === "en" ? "en" : "hr"; }
-    catch { return document.documentElement.lang === "en" ? "en" : "hr"; }
-  }
-
-  function text(key) { return copy[language()]?.[key] || copy.hr[key] || key; }
-
-  function zonedDateKey(date = new Date()) {
-    const parts = new Intl.DateTimeFormat("en-CA", {
-      timeZone: TIME_ZONE,
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit"
-    }).formatToParts(date);
-    const values = Object.fromEntries(parts.map(part => [part.type, part.value]));
-    return `${values.year}-${values.month}-${values.day}`;
-  }
-
-  function parseDateKey(dateKey) {
-    const [year, month, day] = String(dateKey).split("-").map(Number);
-    return new Date(Date.UTC(year, month - 1, day, 12));
-  }
-
-  function addDays(dateKey, amount) {
-    const date = parseDateKey(dateKey);
-    date.setUTCDate(date.getUTCDate() + amount);
-    return date.toISOString().slice(0, 10);
-  }
-
-  function formatFullDate(dateKey) {
-    return new Intl.DateTimeFormat(language() === "en" ? "en-GB" : "hr-HR", {
-      timeZone: "UTC",
-      day: "numeric",
-      month: "long",
-      year: "numeric"
-    }).format(parseDateKey(dateKey));
-  }
-
-  function formatMonth(dateKey) {
-    const value = new Intl.DateTimeFormat(language() === "en" ? "en-GB" : "hr-HR", {
-      timeZone: "UTC",
-      month: "long",
-      year: "numeric"
-    }).format(parseDateKey(dateKey));
-    return value.charAt(0).toUpperCase() + value.slice(1);
-  }
-
-  function formatDuration(totalSeconds) {
-    const seconds = Math.max(0, Math.round(Number(totalSeconds) || 0));
-    const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    const rest = seconds % 60;
-    if (hours) return `${hours}:${String(minutes).padStart(2, "0")}:${String(rest).padStart(2, "0")}`;
-    return `${String(minutes).padStart(2, "0")}:${String(rest).padStart(2, "0")}`;
-  }
-
-  function resultStorageKey() {
-    const context = getPlayerContext();
-    if (context && !context.isGuest && context.userId) return `${RESULTS_BASE_KEY}:user:${context.userId}`;
-    if (context?.isGuest && context.guestId) return `${RESULTS_BASE_KEY}:guest:${context.guestId}`;
-    try {
-      if (typeof playerIdentity !== "undefined" && playerIdentity && !playerIdentity.isGuest && playerIdentity.userId) {
-        return `${RESULTS_BASE_KEY}:user:${playerIdentity.userId}`;
-      }
-      if (typeof getOrCreateGuestIdentity === "function") {
-        return `${RESULTS_BASE_KEY}:guest:${getOrCreateGuestIdentity().id}`;
-      }
-    } catch (_) {}
-    return `${RESULTS_BASE_KEY}:device`;
-  }
-
-  function loadResults() {
-    try {
-      const value = JSON.parse(localStorage.getItem(resultStorageKey()) || "null");
-      return value && typeof value === "object" ? value : {};
-    } catch {
-      return {};
-    }
-  }
-
-  function saveResults(results) {
-    try { localStorage.setItem(resultStorageKey(), JSON.stringify(results)); }
-    catch (error) { console.warn("Dnevnih 30 rezultat nije spremljen:", error); }
-  }
-
-  function getCustomGuestName() {
-    try {
-      const identity = JSON.parse(localStorage.getItem(GUEST_IDENTITY_KEY) || "null");
-      const name = String(identity?.displayName || "").trim();
-      return name || null;
-    } catch {
-      return null;
-    }
-  }
-
-  function getPublicPlayerName() {
-    const context = getPlayerContext();
-    if (context?.name) return context.name;
-    try {
-      if (typeof playerIdentity !== "undefined" && playerIdentity && !playerIdentity.isGuest) {
-        return String(playerIdentity.name || "Kvizoman").trim() || "Kvizoman";
-      }
-    } catch (_) {}
-    return getCustomGuestName() || (language() === "en" ? "Your score" : "Tvoj rezultat");
-  }
-
-  function getPlayerContext() {
-    if (state.playerContext) return state.playerContext;
-    try {
-      const saved = JSON.parse(localStorage.getItem(PLAYER_CONTEXT_KEY) || "null");
-      if (saved && typeof saved === "object") state.playerContext = saved;
-    } catch (_) {}
-    return state.playerContext;
-  }
-
-  function setPlayerContext(identity) {
-    if (!identity || typeof identity !== "object") return;
-    let guestId = null;
-    if (identity.isGuest) {
-      try {
-        const saved = JSON.parse(localStorage.getItem(GUEST_IDENTITY_KEY) || "null");
-        guestId = saved?.id || null;
-      } catch (_) {}
-    }
-    state.playerContext = {
-      isGuest: Boolean(identity.isGuest),
-      userId: identity.userId || null,
-      guestId,
-      name: String(identity.isGuest ? (getCustomGuestName() || "") : (identity.name || "")).trim().slice(0, 40)
-    };
-    try { localStorage.setItem(PLAYER_CONTEXT_KEY, JSON.stringify(state.playerContext)); } catch (_) {}
-  }
-
-  function findNextMidnight(now = Date.now()) {
-    const currentKey = zonedDateKey(new Date(now));
-    let low = now;
-    let high = now + 30 * 60 * 60 * 1000;
-    for (let index = 0; index < 42; index += 1) {
-      const middle = Math.floor((low + high) / 2);
-      if (zonedDateKey(new Date(middle)) === currentKey) low = middle + 1;
-      else high = middle;
-    }
-    return high;
-  }
-
-  function renderCountdown() {
-    const element = document.getElementById("daily30-countdown");
-    if (!element) return;
-    const now = Date.now();
-    if (!state.nextMidnightAt || now >= state.nextMidnightAt + 1000) {
-      state.nextMidnightAt = findNextMidnight(now);
-      const currentDate = zonedDateKey();
-      if (state.selectedView === "today") state.selectedDate = currentDate;
-      void loadIndex(true).then(() => {
-        updateSelectionNote();
-        renderCalendar();
-        try { if (typeof updateModeLabel === "function") updateModeLabel(); } catch (_) {}
-      });
-    }
-    const remaining = Math.max(0, Math.ceil((state.nextMidnightAt - now) / 1000));
-    const hours = Math.floor(remaining / 3600);
-    const minutes = Math.floor((remaining % 3600) / 60);
-    const seconds = remaining % 60;
-    element.textContent = `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
-  }
-
-  async function loadIndex(force = false) {
-    if (state.index && !force) return state.index;
-    try {
-      const response = await fetch(`${INDEX_URL}${force ? `?v=${Date.now()}` : ""}`, { cache: force ? "no-store" : "default" });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const value = await response.json();
-      state.index = value;
-      state.availableDates = new Set(Array.isArray(value.dates) ? value.dates : []);
-      return value;
-    } catch (error) {
-      console.warn("Arhiva Dnevnih 30 nije učitana:", error);
-      return state.index;
-    }
-  }
-
-  function hashString(value) {
-    let hash = 2166136261;
-    for (let index = 0; index < value.length; index += 1) {
-      hash ^= value.charCodeAt(index);
-      hash = Math.imul(hash, 16777619);
-    }
-    return (hash >>> 0).toString(16).padStart(8, "0");
-  }
-
-  function createRandom(seedText) {
-    let seed = 1779033703 ^ seedText.length;
-    for (let index = 0; index < seedText.length; index += 1) {
-      seed = Math.imul(seed ^ seedText.charCodeAt(index), 3432918353);
-      seed = (seed << 13) | (seed >>> 19);
-    }
-    seed = Math.imul(seed ^ (seed >>> 16), 2246822507);
-    seed = Math.imul(seed ^ (seed >>> 13), 3266489909);
-    let value = (seed ^ (seed >>> 16)) >>> 0;
-    return () => {
-      value += 0x6d2b79f5;
-      let result = value;
-      result = Math.imul(result ^ (result >>> 15), result | 1);
-      result ^= result + Math.imul(result ^ (result >>> 7), result | 61);
-      return ((result ^ (result >>> 14)) >>> 0) / 4294967296;
-    };
-  }
-
-  function shuffled(items, random) {
-    const copy = items.slice();
-    for (let index = copy.length - 1; index > 0; index -= 1) {
-      const swapIndex = Math.floor(random() * (index + 1));
-      [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
-    }
-    return copy;
-  }
-
-  async function generateFallbackSet(dateKey) {
-    const manifestResponse = await fetch(MANIFEST_URL);
-    if (!manifestResponse.ok) throw new Error("Manifest pitanja nije dostupan.");
-    const manifest = await manifestResponse.json();
-    const files = Array.isArray(manifest.files) ? manifest.files : [];
-    const collections = await Promise.all(files.map(async fileName => {
-      const response = await fetch(fileName);
-      if (!response.ok) return [];
-      const value = await response.json();
-      return Array.isArray(value) ? value.map((question, index) => ({ fileName, question, index })) : [];
-    }));
-
-    const seen = new Set();
-    const pool = [];
-    collections.flat().forEach(({ fileName, question, index }) => {
-      if (!question?.question || !Array.isArray(question.answers) || !question.answers.length) return;
-      const normalized = String(question.question).toLocaleLowerCase("hr").replace(/\s+/g, " ").trim();
-      if (!normalized || seen.has(normalized)) return;
-      seen.add(normalized);
-      const topic = String(question.topic || fileName.replace(/\.json$/i, "") || "Ostalo").trim();
-      pool.push({
-        topic,
-        value: {
-          ...question,
-          id: `daily-${hashString(`${fileName}:${question.id ?? index}:${normalized}`)}`,
-          type: question.type || "blitz",
-          topic,
-          image: question.image || null
-        }
-      });
-    });
-
-    const byTopic = new Map();
-    pool.forEach(item => {
-      if (!byTopic.has(item.topic)) byTopic.set(item.topic, []);
-      byTopic.get(item.topic).push(item.value);
-    });
-    const topics = shuffled([...byTopic.keys()], createRandom(`kviztogo-daily-topics:${dateKey}`));
-    const queues = new Map(topics.map(topic => [topic, shuffled(byTopic.get(topic), createRandom(`kviztogo-daily:${dateKey}:${topic}`))]));
-    const chosen = [];
-    let round = 0;
-    while (chosen.length < 30 && topics.some(topic => queues.get(topic).length > round)) {
-      shuffled(topics, createRandom(`kviztogo-round:${dateKey}:${round}`)).forEach(topic => {
-        if (chosen.length >= 30) return;
-        const question = queues.get(topic)[round];
-        if (question) chosen.push(question);
-      });
-      round += 1;
-    }
-    return shuffled(chosen, createRandom(`kviztogo-order:${dateKey}`));
-  }
-
-  async function loadSet(dateKey) {
-    try {
-      const response = await fetch(`daily30/${dateKey}.json`);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const value = await response.json();
-      if (!Array.isArray(value.questions) || value.questions.length !== 30) throw new Error("Neispravan dnevni set.");
-      return value.questions;
-    } catch (error) {
-      console.warn(`Spremljeni dnevni set ${dateKey} nije učitan; koristim determinističku rezervu.`, error);
-      const questions = await generateFallbackSet(dateKey);
-      if (questions.length !== 30) throw new Error("Nije moguće pripremiti 30 dnevnih pitanja.");
-      return questions;
-    }
-  }
-
-  async function prepareSelectedRound() {
-    const note = document.getElementById("daily30-selection-note");
-    if (note) note.textContent = text("loading");
-    try {
-      const dateKey = state.selectedDate || zonedDateKey();
-      state.activeQuestions = await loadSet(dateKey);
-      state.activeDate = dateKey;
-      if (note) updateSelectionNote();
-      return true;
-    } catch (error) {
-      console.error("Dnevnih 30 nije pripremljen:", error);
-      if (note) note.textContent = text("unavailable");
-      return false;
-    }
-  }
-
-  function getActiveQuestions() { return state.activeQuestions.slice(); }
-  function getActiveDate() { return state.activeDate || state.selectedDate || zonedDateKey(); }
-  function getSelectedDate() { return state.selectedDate || zonedDateKey(); }
-
-  function resetStopwatch() {
-    stopStopwatch();
-    state.stopwatchElapsedMs = 0;
-    state.stopwatchStartedAt = null;
-    renderStopwatch();
-  }
-
-  function startStopwatch() {
-    resetStopwatch();
-    state.stopwatchStartedAt = Date.now();
-    state.stopwatchInterval = window.setInterval(renderStopwatch, 100);
-    renderStopwatch();
-  }
-
-  function stopStopwatch() {
-    if (state.stopwatchStartedAt) {
-      state.stopwatchElapsedMs += Date.now() - state.stopwatchStartedAt;
-      state.stopwatchStartedAt = null;
-    }
-    if (state.stopwatchInterval) {
-      window.clearInterval(state.stopwatchInterval);
-      state.stopwatchInterval = null;
-    }
-    renderStopwatch();
-  }
-
-  function elapsedMs() {
-    return state.stopwatchElapsedMs + (state.stopwatchStartedAt ? Date.now() - state.stopwatchStartedAt : 0);
-  }
-
-  function renderStopwatch() {
-    let modeIsDaily = false;
-    try { modeIsDaily = typeof currentMode !== "undefined" && currentMode === "daily30"; } catch (_) {}
-    if (!modeIsDaily) return;
-    const element = document.getElementById("timer-value");
-    const pill = document.getElementById("timer-pill");
-    if (pill) pill.style.opacity = "1";
-    if (!element) return;
-    const tenths = Math.floor(elapsedMs() / 100);
-    const minutes = Math.floor(tenths / 600);
-    const seconds = Math.floor((tenths % 600) / 10);
-    element.textContent = `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}.${tenths % 10}`;
-  }
-
-  function complete(score, total) {
-    stopStopwatch();
-    const dateKey = getActiveDate();
-    const today = zonedDateKey();
-    const durationSeconds = Math.max(1, Math.round(elapsedMs() / 1000));
-    const results = loadResults();
-    const previous = results[dateKey] || null;
-    const official = dateKey === today && !previous?.official;
-    const candidate = {
-      date: dateKey,
-      score: Math.max(0, Number(score) || 0),
-      total: Math.max(0, Number(total) || 30),
-      durationSeconds,
-      completedAt: new Date().toISOString(),
-      official,
-      attempts: Math.max(0, Number(previous?.attempts) || 0) + 1
-    };
-
-    if (previous?.official) {
-      results[dateKey] = { ...previous, attempts: candidate.attempts, lastPractice: candidate };
-    } else {
-      const previousIsBetter = previous && (
-        Number(previous.score) > candidate.score ||
-        (Number(previous.score) === candidate.score && Number(previous.durationSeconds) <= candidate.durationSeconds)
-      );
-      results[dateKey] = previousIsBetter
-        ? { ...previous, attempts: candidate.attempts, lastPractice: candidate }
-        : candidate;
-    }
-    saveResults(results);
-    renderCalendar();
-    updateSelectionNote();
-    showNameCardIfNeeded();
-    window.KvizLeaderboards?.refreshAll?.();
-    return results[dateKey];
-  }
-
-  function getResult(dateKey) { return loadResults()[dateKey] || null; }
-
-  function updateSelectionNote() {
-    const note = document.getElementById("daily30-selection-note");
-    if (!note) return;
-    const selectedDate = getSelectedDate();
-    const result = getResult(selectedDate);
-    if (result) {
-      note.textContent = `${formatFullDate(selectedDate)} · ${text("played")}: ${result.score}/${result.total} · ${formatDuration(result.durationSeconds)}`;
-      return;
-    }
-    note.textContent = state.selectedView === "today"
-      ? text("currentReady")
-      : `${formatFullDate(selectedDate)} · ${text("notPlayed")}`;
-  }
-
-  function showNameCardIfNeeded(force = false) {
-    const card = document.getElementById("daily30-name-card");
-    if (!card) return;
-    let isGuest = true;
-    try { isGuest = typeof playerIdentity === "undefined" || playerIdentity.isGuest; } catch (_) {}
-    card.classList.toggle("open", Boolean(isGuest && (force || !getCustomGuestName())));
-    const editButton = document.getElementById("daily30-name-edit");
-    if (editButton) editButton.hidden = !isGuest;
-    const input = document.getElementById("daily30-name-input");
-    if (input && getCustomGuestName()) input.value = getCustomGuestName();
-    if (force && isGuest) window.setTimeout(() => input?.focus(), 0);
-  }
-
-  function renderCalendar() {
-    const daysRoot = document.getElementById("daily30-days");
-    const monthLabel = document.getElementById("daily30-month-label");
-    if (!daysRoot || !monthLabel) return;
-
-    const currentDate = zonedDateKey();
-    const monthKey = state.calendarMonth || getSelectedDate().slice(0, 7) + "-01";
-    state.calendarMonth = monthKey;
-    monthLabel.textContent = formatMonth(monthKey);
-    daysRoot.innerHTML = "";
-
-    const monthDate = parseDateKey(monthKey);
-    const year = monthDate.getUTCFullYear();
-    const month = monthDate.getUTCMonth();
-    const firstDayMondayIndex = (new Date(Date.UTC(year, month, 1)).getUTCDay() + 6) % 7;
-    const daysInMonth = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
-    const results = loadResults();
-
-    for (let index = 0; index < firstDayMondayIndex; index += 1) {
-      const spacer = document.createElement("div");
-      spacer.className = "daily30-day-spacer";
-      daysRoot.appendChild(spacer);
-    }
-
-    for (let day = 1; day <= daysInMonth; day += 1) {
-      const dateKey = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
-      const available = state.availableDates.has(dateKey) || dateKey === currentDate;
-      const locked = available && dateKey > currentDate;
-      const result = results[dateKey];
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "daily30-day";
-      button.disabled = !available || locked;
-      button.classList.toggle("today", dateKey === currentDate);
-      button.classList.toggle("selected", dateKey === getSelectedDate());
-      button.classList.toggle("played", Boolean(result));
-      button.classList.toggle("locked", locked);
-      if (locked) {
-        button.setAttribute("aria-label", `${formatFullDate(dateKey)} · ${text("locked")}`);
-        button.title = text("locked");
-      }
-      button.innerHTML = `<span class="daily30-day-number">${day}</span>${locked ? `<span class="daily30-day-lock" aria-hidden="true">🔒</span>` : (result ? `<span class="daily30-day-result">${text("played")}</span><span class="daily30-day-time">${result.score}/${result.total} · ${formatDuration(result.durationSeconds)}</span>` : "")}`;
-      if (!button.disabled) {
-        button.addEventListener("click", () => {
-          state.selectedDate = dateKey;
-          state.selectedView = dateKey === currentDate ? "today" : "archive";
-          syncChoiceButtons();
-          renderCalendar();
-          updateSelectionNote();
-          state.activeQuestions = [];
-          state.activeDate = null;
-          try {
-            if (typeof resetQuestionQueue === "function") resetQuestionQueue();
-            if (typeof updateModeLabel === "function") updateModeLabel();
-          } catch (_) {}
-        });
-      }
-      daysRoot.appendChild(button);
-    }
-
-    const previousButton = document.getElementById("daily30-month-prev");
-    const nextButton = document.getElementById("daily30-month-next");
-    const launchMonth = String(state.index?.launchDate || "2026-07-01").slice(0, 7);
-    const latestMonth = String(state.index?.latestDate || currentDate).slice(0, 7);
-    if (previousButton) previousButton.disabled = monthKey.slice(0, 7) <= launchMonth;
-    if (nextButton) nextButton.disabled = monthKey.slice(0, 7) >= latestMonth;
-  }
-
-  function shiftCalendarMonth(amount) {
-    const date = parseDateKey(state.calendarMonth || `${zonedDateKey().slice(0, 7)}-01`);
-    date.setUTCMonth(date.getUTCMonth() + amount);
-    state.calendarMonth = date.toISOString().slice(0, 7) + "-01";
-    renderCalendar();
-  }
-
-  function syncChoiceButtons() {
-    const currentButton = document.getElementById("daily30-current-choice");
-    const archiveButton = document.getElementById("daily30-archive-choice");
-    const history = document.getElementById("daily30-history");
-    const isArchive = state.selectedView === "archive";
-    currentButton?.classList.toggle("active", !isArchive);
-    archiveButton?.classList.toggle("active", isArchive);
-    history?.classList.toggle("open", isArchive);
-  }
-
-  function selectToday() {
-    const currentDate = zonedDateKey();
-    state.selectedView = "today";
-    state.selectedDate = currentDate;
-    state.calendarMonth = `${currentDate.slice(0, 7)}-01`;
-    state.activeQuestions = [];
-    state.activeDate = null;
-    syncChoiceButtons();
-    renderCalendar();
-    updateSelectionNote();
-    try {
-      if (typeof resetQuestionQueue === "function") resetQuestionQueue();
-      if (typeof updateModeLabel === "function") updateModeLabel();
-    } catch (_) {}
-  }
-
-  function selectArchive() {
-    state.selectedView = "archive";
-    const currentDate = zonedDateKey();
-    if (!state.selectedDate || state.selectedDate === currentDate) {
-      state.selectedDate = state.availableDates.has(addDays(currentDate, -1)) ? addDays(currentDate, -1) : currentDate;
-    }
-    state.calendarMonth = `${state.selectedDate.slice(0, 7)}-01`;
-    state.activeQuestions = [];
-    state.activeDate = null;
-    syncChoiceButtons();
-    renderCalendar();
-    updateSelectionNote();
-    try {
-      if (typeof resetQuestionQueue === "function") resetQuestionQueue();
-      if (typeof updateModeLabel === "function") updateModeLabel();
-    } catch (_) {}
-  }
-
-  function onModeSelected() {
-    document.getElementById("daily30-panel")?.classList.add("open");
-    if (!state.selectedDate) selectToday();
-    updateSelectionNote();
-  }
-
-  function onModeLeft() {
-    document.getElementById("daily30-panel")?.classList.remove("open");
-    stopStopwatch();
-  }
-
-  function afterLanguageChange() {
-    updateSelectionNote();
-    renderCalendar();
-  }
-
-  async function initOnline() {
-    state.selectedDate = zonedDateKey();
-    state.calendarMonth = `${state.selectedDate.slice(0, 7)}-01`;
-    await loadIndex();
-
-    document.getElementById("daily30-current-choice")?.addEventListener("click", selectToday);
-    document.getElementById("daily30-archive-choice")?.addEventListener("click", selectArchive);
-    document.getElementById("daily30-month-prev")?.addEventListener("click", () => shiftCalendarMonth(-1));
-    document.getElementById("daily30-month-next")?.addEventListener("click", () => shiftCalendarMonth(1));
-    document.getElementById("daily30-name-edit")?.addEventListener("click", () => showNameCardIfNeeded(true));
-    document.getElementById("daily30-name-save")?.addEventListener("click", () => {
-      const input = document.getElementById("daily30-name-input");
-      const value = String(input?.value || "").trim();
-      if (!value || typeof saveGuestLeaderboardName !== "function") return;
-      if (saveGuestLeaderboardName(value)) {
-        showNameCardIfNeeded(false);
-        window.KvizLeaderboards?.refreshAll?.();
-      }
-    });
-
-    renderCountdown();
-    state.countdownInterval = window.setInterval(renderCountdown, 1000);
-    syncChoiceButtons();
-    renderCalendar();
-    updateSelectionNote();
-    showNameCardIfNeeded(false);
-  }
-
-  window.KvizDaily30 = {
-    initOnline,
-    onModeSelected,
-    onModeLeft,
-    afterLanguageChange,
-    prepareSelectedRound,
-    getActiveQuestions,
-    getActiveDate,
-    getSelectedDate,
-    getResult,
-    getResults: loadResults,
-    getPublicPlayerName,
-    setPlayerContext,
-    formatDuration,
-    formatFullDate,
-    zonedDateKey,
-    resetStopwatch,
-    startStopwatch,
-    stopStopwatch,
-    renderStopwatch,
-    elapsedSeconds: () => Math.max(0, Math.round(elapsedMs() / 1000)),
-    complete,
-    showNameCardIfNeeded,
-    refreshCalendar: renderCalendar
-  };
+(function(){
+"use strict";
+const KEY="kviztogo_daily30_crowns_v1";
+function blank(){return{realTimeDates:{},totalDays:0,currentStreak:0,bestStreak:0,lastCountedDate:null};}
+function load(){try{return{...blank(),...(JSON.parse(localStorage.getItem(KEY)||"null")||{})};}catch(_){return blank();}}
+function save(s){try{localStorage.setItem(KEY,JSON.stringify(s));}catch(_){}}
+function today(){return window.KvizDaily30?.zonedDateKey?.()||new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Sarajevo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
+function parse(k){const[y,m,d]=String(k).split('-').map(Number);return new Date(Date.UTC(y,m-1,d,12));}
+function key(d){return d.toISOString().slice(0,10);}
+function addDays(k,n){const d=parse(k);d.setUTCDate(d.getUTCDate()+n);return key(d);}
+function recalc(s){const dates=Object.keys(s.realTimeDates||{}).filter(k=>s.realTimeDates[k]).sort();s.totalDays=dates.length;let best=0,run=0,prev=null;dates.forEach(d=>{run=prev&&addDays(prev,1)===d?run+1:1;best=Math.max(best,run);prev=d;});s.bestStreak=best;const t=today();if(s.realTimeDates[t]){let cur=0,d=t;while(s.realTimeDates[d]){cur++;d=addDays(d,-1);}s.currentStreak=cur;}else{s.currentStreak=0;}return s;}
+function update(){if(!window.KvizDaily30?.getResults)return;const t=today(),results=window.KvizDaily30.getResults()||{},r=results[t],s=load();if(r?.official&&!s.realTimeDates[t]){s.realTimeDates[t]=Date.now();s.lastCountedDate=t;recalc(s);save(s);render();}else if(s.realTimeDates[t]&&s.currentStreak===0){recalc(s);save(s);render();}}
+function stats(){return recalc(load());}
+function en(){return document.documentElement.lang==='en';}
+function svg(){return '<svg class="achievement-crown-svg" viewBox="0 0 64 52" aria-hidden="true"><path d="M8 17 20 29 32 9 44 29 56 17 51 42H13L8 17Z" fill="#facc15" stroke="#fff3b0" stroke-width="2"/><circle cx="8" cy="15" r="4" fill="#facc15"/><circle cx="32" cy="7" r="4" fill="#facc15"/><circle cx="56" cy="15" r="4" fill="#facc15"/><path d="M14 45h36" stroke="#facc15" stroke-width="5" stroke-linecap="round"/></svg>';}
+function items(){const s=stats(),isEn=en(),out=[];[1,10,20,30,60,100].forEach(n=>out.push({c:s.totalDays,t:n,title:isEn?'Daily 30 ×'+n:'Dnevnih 30 ×'+n,cond:isEn?'Play Daily 30 on '+n+(n===1?' real day.':' different real days.'):'Odigraj Dnevnih 30 '+n+(n===1?' put.':' puta, svaki na stvarni aktualni dan.')}));[5,10,20,30].forEach(n=>out.push({c:s.bestStreak,t:n,title:isEn?n+' day streak':n+' dana zaredom',cond:isEn?'Play Daily 30 '+n+' real days in a row.':'Odigraj Dnevnih 30 '+n+' stvarnih dana zaredom.'}));return out;}
+function render(){const box=document.getElementById('achievement-groups');if(!box)return;let sec=box.querySelector('[data-daily30-crowns]');if(!sec){sec=document.createElement('section');sec.className='achievement-group';sec.dataset.daily30Crowns='1';const lb=box.querySelector('[data-lb-crowns]');if(lb)lb.insertAdjacentElement('afterend',sec);else box.prepend(sec);}const its=items(),u=its.filter(x=>x.c>=x.t).length;sec.innerHTML='<div class="achievement-group-title"><span>'+(en()?'Daily 30 crowns':'Krune Dnevnih 30')+'</span><span class="achievement-group-count">'+u+'/'+its.length+'</span></div><div class="achievement-crown-grid"></div>';const grid=sec.querySelector('.achievement-crown-grid');its.forEach(x=>{const ok=x.c>=x.t,card=document.createElement('article');card.className='achievement-crown-card '+(ok?'unlocked':'locked');card.innerHTML='<div class="achievement-crown-wrap">'+svg()+'</div><div class="achievement-crown-title">'+x.title+'</div><div class="achievement-crown-condition">'+x.cond+'</div><div class="achievement-crown-progress">'+(ok?(en()?'Unlocked':'Otključano'):Math.min(x.c,x.t)+'/'+x.t)+'</div>';grid.appendChild(card);});}
+document.addEventListener('DOMContentLoaded',()=>{render();update();setInterval(update,1000);const b=document.getElementById('achievement-groups');if(b)new MutationObserver(()=>{if(!b.querySelector('[data-daily30-crowns]'))render();}).observe(b,{childList:true});});
+window.KvizDaily30Achievements={getStats:stats,render,storageKey:KEY};
 })();
