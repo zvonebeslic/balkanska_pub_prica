@@ -1,6 +1,8 @@
 .mode-pill--daily {
-  flex: 1 1 100%;
-  min-height: 62px;
+  flex: 0 1 calc(100% - 0.8rem);
+  width: calc(100% - 0.8rem);
+  margin: 0.12rem 0.4rem 0.28rem;
+  min-height: 58px;
   border-color: rgba(250, 204, 21, 0.46);
   background:
     radial-gradient(circle at 88% 18%, rgba(250, 204, 21, 0.15), transparent 36%),
@@ -275,7 +277,7 @@
 .daily30-name-edit[hidden] { display: none; }
 
 @media (max-width: 520px) {
-  .mode-pill--daily { align-items: center; }
+  .mode-pill--daily { width: calc(100% - 0.6rem); flex-basis: calc(100% - 0.6rem); margin-inline: 0.3rem; min-height: 56px; align-items: center; }
   .daily30-countdown { min-width: 104px; padding-inline: 0.45rem; font-size: 0.61rem; }
   .daily30-panel { padding: 0.58rem; }
   .daily30-calendar { padding: 0.52rem; }
