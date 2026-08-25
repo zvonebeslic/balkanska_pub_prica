@@ -7,6 +7,19 @@
   const DEMO_START_DATE = "2026-07-01";
 
   const DEMO_NAMES = [
+    "Ivan7", "Ana4", "Marko9", "Petra6", "Luka3", "Marta8", "Nikola5", "Ivana2", "Matej1", "Lucija7",
+    "Filip23", "Ema64", "Josip18", "Sara27", "Karlo91", "Lea42", "David76", "Iva35", "Lovro58", "Nina84",
+    "Ivan Horvat317", "Petra Marić204", "Luka Kovač731", "Ana Babić418", "Marko Jurić592", "Marta Novak163", "Filip Radić826", "Sara Perić305", "Nikola Barišić714", "Lucija Matić249",
+    "ČudniKljun", "SjenaSaŠanka", "TrećiPokušaj", "KaktusNaKvadrat", "BezGooglea", "KasniOdgovor", "PlaviToster", "MozakNaPauzi", "MaliOrakul", "KriviKontinent",
+    "TihiAlarm", "ZadnjaKlupa", "PetaBrzina", "PolaBoda", "NoćnaSova", "KavaBezŠećera", "LijeviKlik", "ZeleniFenjer", "MorskiKrastavac", "NultiMeridijan",
+    "PogrešanPlanet", "ŠestiOsjećaj", "DvaPromilaZnanja", "RezervniMozak", "SlučajniGenij", "KraljTipfelera", "ČetvrtiOdgovor", "PitajSusjeda", "BezPojmaAliBrzo", "TkoJeOvo",
+    "KrumpirProfesor", "GospodinMožda", "AjdeC", "NisamUčio", "BurekLogika", "KvizniPuž", "PametniĆevap", "ČekajZnam", "MaloSutra", "JošJednoPaIdem",
+    "NijeA", "SigurnoB", "MoždaC", "ProfesoricaKava", "TriSekundeKasnije", "KvizniJež", "ZaboravniLav", "PonedjeljakMozak", "SubotnjiGenije", "TetaWikipedia",
+    "KvizMaster", "LovacNaBodove", "Mozgalo", "Kvizoman", "Znalac", "Pitanjolovac", "BrziPrst", "PubKvizVeteran", "Enciklopedist", "KvizNindža",
+    "BodPoBod", "TridesetPitanja", "FinalniOdgovor", "BezDžokera", "LovacNaTrideset", "KvizKompas", "TihiZnalac", "MozakUTrećoj", "KvizRudar", "TočanOdgovor"
+  ];
+
+  const DEMO_SEED_NAMES = [
     "Ivan", "Ana", "Marko", "Petra", "Luka", "Marta", "Nikola", "Ivana", "Matej", "Lucija",
     "Filip", "Ema", "Josip", "Sara", "Karlo", "Lea", "David", "Iva", "Lovro", "Nina",
     "Ivan Horvat", "Petra Marić", "Luka Kovač", "Ana Babić", "Marko Jurić", "Marta Novak", "Filip Radić", "Sara Perić", "Nikola Barišić", "Lucija Matić",
@@ -87,7 +100,8 @@
       }
       const group = SKILL_GROUPS[skillIndex];
       usedInGroup += 1;
-      const random = randomFor(`demo-profile:${index}:${name}`);
+      const seedName = DEMO_SEED_NAMES[index] || name;
+      const random = randomFor(`demo-profile:${index}:${seedName}`);
       return {
         id: `demo-${String(index + 1).padStart(3, "0")}`,
         name,
@@ -128,7 +142,6 @@
       });
     });
 
-    // Spriječi prenatrpane dane. Reže samo najniži prioritet tog dana, nikad iznad 66 demo igrača.
     for (const [dateKey, profiles] of map.entries()) {
       if (profiles.length <= 66) continue;
       const random = randomFor(`demo-cap:${dateKey}`);
