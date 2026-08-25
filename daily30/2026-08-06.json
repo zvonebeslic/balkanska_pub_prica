@@ -1,449 +1,435 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-06",
-  "generatedAt": "2026-08-24T20:08:22.541Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-4a1285cd",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "U kojem filmu iz 2001. igraju George Clooney i Brad Pitt kao pljačkaši kockarnica?",
-      "answers": [
-        "Oceanovih 11",
-        "Oceanovih jedanaest",
-        "Oceans eleven",
-        "Ošens eleven"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c0140072",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Tko je napisao operu 'Čarobna frula'?",
-      "answers": [
-        "Wolfgang Mozart",
-        "Wolfgang Amadeus Mozart",
-        "Volfgang Amadeus Mocart",
-        "Volfgang Mocart",
-        "Mozart",
-        "Mocart"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-94925fe5",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se naziva kazališna umjetnost u kojoj glumci izvode radnju uz unaprijed zapisane melodije i pjesme, često s velikim orkestrom?",
-      "answers": [
-        "Opera"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c93e99fb",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Sport",
-      "question": "Kako se zove sport u kojem se natjecatelji bore u ringu koristeći udarce rukama sa specijalnim rukavicama?",
-      "answers": [
-        "Boks",
-        "Boxing",
-        "Boksing"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-55df374c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji je, tada budući američki predsjednik, potpisao mir u Gentu 1814.g. kojim je okončan anglo-američki rat?",
-      "answers": [
-        "John Quincy Adams",
-        "Džon Kvinci Adams",
-        "Adams",
-        "Quincy Adams",
-        "Kvinci Adams"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5648c0ac",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove zbirka himana, zahvala i molbi upućenih Bogu u stihovima u obliku knjige koja je sastavni dio Biblije?",
-      "answers": [
-        "Psalmi",
-        "Knjiga psalama",
-        "Psalama"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1044633f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Samo se jedna država može pohvaliti da su čak dva puta njihovi nogometaši zauzeli prve tri pozicije na svečanoj dodjeli Ballon d'Or nagrade. Bilo je to 1972.g. i 1981.g. a država je koja?",
-      "answers": [
-        "Njemačka",
-        "Švabija",
-        "Deutschland",
-        "Dojčland",
-        "Germany",
-        "Džermani",
-        "Njemci",
-        "Švabe"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1d8d1874",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Pod kojim imenom poznajemo neutralne čestice u jezgri atoma?",
-      "answers": [
-        "Neutroni",
-        "Neutrons",
-        "Neutron"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8e367b8d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "O priznanju koje države se radi ako znamo da su 'mir' potpisali John Adams, Benjamin Franklin te John Jay?",
-      "answers": [
-        "SAD-a",
-        "SAD",
-        "Sjedinjenih Američkih Država",
-        "Amerike",
-        "Sjedinjeni Američki Država",
-        "Sjedinjenih država",
-        "Sjedinjene Američke Države",
-        "USA-a",
-        "USA",
-        "United States of America",
-        "America",
-        "Junajted Stejts of Amerika",
-        "United States",
-        "Junajted Stejts",
-        "US-a",
-        "US"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a269f1a7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koja se povijesna osoba u Evanđelju po Ivanu obraća Isusu pitanjem 'Što je istina?'",
-      "answers": [
-        "Poncije Pilat",
-        "Pilat",
-        "Pilatus",
-        "Pontius Pilatus",
-        "Poncijus Pilatus",
-        "Pilatu",
-        "Pilatusu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a62c9510",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Na kojem su stadionu nogometaši Arsenala uvijek neugodni domaćini?",
-      "answers": [
-        "Emirates",
-        "Emirejts",
-        "Emiratesu",
-        "Emirejtsu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e097a03d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove svijet smrtnika smješten između High Heavensa i Burning Hellsa u serijalu videoigara Diablo?",
-      "answers": [
-        "Sanctuary",
-        "Sanktuari",
-        "Svetište"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5537e1b9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je engleski istraživač i miljenik kraljice Elizabete I. organizirao pokušaje osnivanja engleske kolonije na otoku Roanoke?",
-      "answers": [
-        "Walter Raleigh",
-        "Valter Ralej",
-        "Valter Ralejt",
-        "Raleigh",
-        "Ralej",
-        "Ralejt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c33bb3f1",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako se zove djevojčica iz romana 'Vlak u snijegu' koja s Ljubanom i Perom u školu ide iz zaseoka Jabukovac?",
-      "answers": [
-        "Draga"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ec6a8a3b",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Zemljopis",
-      "question": "Koja se rijeka, inače najduža u europi, nakon 3 534km toka, ulijeva u Kaspijsko jezero?",
-      "answers": [
-        "Volga"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f02b8212",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Svi znamo za poslovicu koja kaže da je 'bolje imati vrapca u ruci nego koga na grani?",
-      "answers": [
-        "Goluba",
-        "Golub"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1f325de6",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Ako je glavnom protagonistu Swiftove knjige prezime Gulliver, onda mu je ime koje?",
-      "answers": [
-        "Lemuel",
-        "Lemjuel",
-        "Lemjul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7171c852",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Na dvor kineskog cara nakon ekspedicija Zheng Hea stigla je koja egzotična afrička životinja koju su Kinezi povezivali s mitskim qilinom?",
-      "answers": [
-        "Žirafa",
-        "Giraffe",
-        "Žirafe"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9db6e49d",
+      "id": "daily-03909976",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Grčki je junak Fidipid pretrčao 42km u komadu kako bi sve u Ateni obavijestio da je Grčka vojska pobijedila Perzijsku u bitci kraj kojeg mjesta?",
+      "question": "Dok su Napoleon i Aleksandar I. sklapali Mir u Tilzitu ploveći na splavu, ispod njih je tekla.koja rijeka?",
       "answers": [
-        "Maratona",
-        "Maraton",
-        "Marathona",
-        "Marathon"
+        "Njemen",
+        "Nemunas",
+        "Nemen"
       ],
       "image": null
     },
     {
-      "id": "daily-4705fdd1",
+      "id": "daily-69f88a59",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Zemljopis",
-      "question": "S kojom baltičkom državom Litva ne graniči?",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Američki predsjednik priseže zakletvom na mandat od koliko godina?",
       "answers": [
-        "Estonijom",
-        "Estonija",
-        "Estoniom",
-        "Estonia",
-        "Esti",
-        "Est",
-        "Ests",
-        "Estons",
-        "Estoni"
+        "4",
+        "Četiri",
+        "IV",
+        "Four",
+        "For"
       ],
       "image": null
     },
     {
-      "id": "daily-d9698895",
+      "id": "daily-6117df6e",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove pjevač koji je osvojio Euroviziju 2021. s pjesmom 'Zitti e buoni' kao dio benda Måneskin?",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je britanski lovački zrakoplov, zajedno s Hurricaneom, postao jedan od najprepoznatljivijih simbola obrane britanskog neba 1940.g.?",
       "answers": [
-        "Damiano David",
-        "Damiano",
-        "David"
+        "Spitfire",
+        "Spitfajer"
       ],
       "image": null
     },
     {
-      "id": "daily-f94edb35",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "AntickiRim",
-      "question": "Koji egipatski faraon je dao pogubiti Pompeja Velikog?",
-      "answers": [
-        "Ptolomej 13.",
-        "Ptolomej XIII",
-        "Ptolomej 13",
-        "Ptolomej trinaesti",
-        "Ptolemej XIII Theos Philopator"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fd7a3d66",
+      "id": "daily-3a470e96",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koji je najmanji prost broj?",
+      "question": "Koji se japanski čaj ne priprema klasičnim namakanjem listića, nego se fini zeleni prah umuti izravno u vodi i tradicionalno koristi u japanskoj ceremoniji ispijanja čaja?",
       "answers": [
-        "2",
-        "Dva",
-        "Two",
-        "Ii",
-        "Tu",
-        "Tvu",
-        "Zwei",
-        "Cvaj"
+        "Matcha",
+        "Mača",
+        "Maca"
       ],
       "image": null
     },
     {
-      "id": "daily-9e65a639",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Koja je najotrovnija hrvatska a ujedno i europska zmija prepoznatljiva po roščiću na glavi?",
-      "answers": [
-        "Poskok"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5991ff3f",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Ostalo",
-      "question": "Kako se naziva područje oko crne rupe iz kojeg više ništa, pa ni svjetlost, ne može pobjeći?",
-      "answers": [
-        "Horizont događaja",
-        "Događajni obzor",
-        "Obzor događaja",
-        "Event Horizont"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-31732e2a",
+      "id": "daily-ff3fad45",
       "type": "blitz",
       "difficulty": 2,
       "topic": "Film",
-      "question": "Koji glumac glumi Sherlocka Holmesa u filmovima Guyja Ritchieja?",
+      "question": "Tko je režirao horor film 'Psycho'?",
       "answers": [
-        "Robert Downey Jr",
-        "Robert Dovni Junior",
-        "Downey Jr",
-        "Dovni Junior",
-        "Robert John Downey Jr.",
-        "Robert Dovni",
-        "Downey",
-        "Dovni",
-        "Robert Junior",
-        "Robert Džunior",
-        "Dovni Džunior",
-        "Robert Dovni Džunior"
+        "Alfred Hitchcock",
+        "Alfred Hičkok",
+        "Hitchcock",
+        "Hičkok"
       ],
       "image": null
     },
     {
-      "id": "daily-9386fb6b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove tvorac lika Sherlocka Holmesa?",
-      "answers": [
-        "Arthur Conan Doyle",
-        "Artur Konan Dojl",
-        "Conan Doyle",
-        "Konan Dojl",
-        "Doyle",
-        "Dojl"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-dc96439f",
+      "id": "daily-d120b282",
       "type": "blitz",
       "difficulty": 5,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove slika Edvarda Muncha koja prikazuje lik koji vrišti na mostu?",
+      "topic": "Zemljopis",
+      "question": "Koja karipska država na svojoj zastavi ima otvorenu Bibliju sa citatom 'i istina će vas osloboditi'?",
       "answers": [
-        "Krik",
-        "Skrik",
-        "Vrisak"
+        "Dominikanska Republika",
+        "Dominikanska",
+        "Dominican",
+        "Dominikan",
+        "Dominiken",
+        "Dominicana",
+        "Dominikana"
       ],
       "image": null
+    },
+    {
+      "id": "daily-98cd777a",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Tko je režirao 'Hrabro srce' (Braveheart)?",
+      "answers": [
+        "Mel Gibson",
+        "Gibson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d3c4d4e2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove najpoznatiji američki burzovni indeks koji sadrži 30 velikih industrijskih dionica?",
+      "answers": [
+        "Dow Jones",
+        "Dov Džons",
+        "Dow Jones Industrial Average",
+        "DJIA"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fdc0928f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koga je hicem iz pištolja usmrtio John Wilkes Booth?",
+      "answers": [
+        "Abrahama Lincolna",
+        "Abraham Lincoln",
+        "Lincolna",
+        "Lincoln",
+        "Abrahama Linkolna",
+        "Abraham Linkoln",
+        "Linkolna",
+        "Linkoln"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-25c14640",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je gusarski kapetan poznat kao Calico Jack dao svoje ime nadimkom dobivenim prema šarenoj odjeći, dok je njegova zastava s lubanjom i prekriženim sabljama postala jedna od najprepoznatljivijih gusarskih zastava?",
+      "answers": [
+        "Jack Rackham",
+        "Džek Rekam",
+        "Džek Rakam",
+        "Rackham",
+        "Rekam",
+        "Rakam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-185e1e35",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Kakav je, prema poslovici, onaj koji ne vjeruje gladnome?",
+      "answers": [
+        "Sit",
+        "Najeden"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-10ababa3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kojom riječju nazivamo osobu koja posjeduje općenito znanje u mnogim područjima znanosti?",
+      "answers": [
+        "Polihistor",
+        "Polimat",
+        "Mnogoznalac"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6dccae0a",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Iako je roman objavljen 1870.g., koje prijevozno sredstvo Jules Verne opisuje kao električno pogonjeno i sposobno za dugotrajnu plovidbu ispod površine mora?",
+      "answers": [
+        "Podmornica",
+        "Podmornicu",
+        "Subamrine",
+        "Subamarin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2519feb8",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Koje je troslovno londonsko naselje dom najvećem herbariju na svijetu, Kraljevskim botaničkim vrtovima?",
+      "answers": [
+        "Kew",
+        "Kju",
+        "Kev"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c7d32944",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je engleski gusarski kapetan 1718.g. odbio kraljevsko pomilovanje koje je na Bahamima ponudio guverner Woodes Rogers te uspio pobjeći iz blokirane luke Nassau?",
+      "answers": [
+        "Charles Vane",
+        "Čarls Vejn",
+        "Charles Vein",
+        "Vane",
+        "Vejn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eebcc53f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Kako se zove kćer Billyja Raya Cyrusa?",
+      "answers": [
+        "Miley Cyrus",
+        "Miley Ray Cyrus",
+        "Majli Sajrus",
+        "Cyrus",
+        "Sajrus",
+        "Destiny Hope Cyrus",
+        "Miley",
+        "Majli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1a79815f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva izrazito tanka i visoka potpetica čije ime na talijanskom označava vrstu tankog bodeža?",
+      "answers": [
+        "Stiletto",
+        "Stileto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1e1b736e",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Znanost",
+      "question": "Kako se zove znanost o nasljednim osobinama organizama?",
+      "answers": [
+        "Genetika"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b87bbb4b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove područje u kojem se odvija radnja videoigre Elden Ring?",
+      "answers": [
+        "Lands Between",
+        "Lends Bitvin",
+        "Zemlja između",
+        "Izmeđuzemlja",
+        "Izmeđuzemlje",
+        "Između zemlja"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fccd08be",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koje drvo je Van Gogh naslikao u svom remek-djelu 'Zvjezdana noć'?",
+      "answers": [
+        "Čempres",
+        "Drvo čempresa",
+        "Čempresa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6a850d53",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Ankara je glavni grad koje države?",
+      "answers": [
+        "Turske",
+        "Turska",
+        "Turkey",
+        "Turki",
+        "Turkeys",
+        "Turkejs",
+        "Turkiye",
+        "Turkije",
+        "Turk",
+        "Turks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-57ad38c5",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Rimljani su osvojene teritorije van Italije organizirali u koje upravne jedinice?",
+      "answers": [
+        "Provincije",
+        "Provincie",
+        "Pokrajine"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c6307d7a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Nadopunite upozorenje da vanjski sjaj može varati: 'Nije zlato sve što...'",
+      "answers": [
+        "Sja",
+        "Sija",
+        "Sjaji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-38d3c63d",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Tko je vokalist grupe Maroon 5?",
+      "answers": [
+        "Adam Levine",
+        "Levine",
+        "Adam Noah Levine"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e708181c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove plavo odjeveni borac iz Mortal Kombata čije su karakteristične sposobnosti povezane s ledom i zamrzavanjem protivnika?",
+      "answers": [
+        "Sub Zero",
+        "Sab Zero",
+        "Sab Ziro",
+        "Sub Ziro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b9bdeff",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "U kojoj se državi odigralo Svjetsko nogometno prvenstvo 2014.g.?",
+      "answers": [
+        "Brazilu",
+        "Brazil",
+        "Brasils",
+        "Brasil",
+        "Bra"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4717776e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Koji se američki predsjednik suočio s aferom Watergate i dao ostavku?",
+      "answers": [
+        "Richard Nixon",
+        "Ričard Nikson",
+        "Nixon",
+        "Nikson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ef4fef7a",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Čija je putovanja u svojoj knjizi opisao Jonathan Swift?",
+      "answers": [
+        "Gulliverova",
+        "Gullivers",
+        "Gulliver",
+        "Guliverova",
+        "Gulivers",
+        "Guliver"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e7d4fa49",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Koji je današnji grad u Velikoj Britaniji, na rijeci Tyne, prvotno nastao kao rimsko naselje Pons Aelius?",
+      "answers": [
+        "Newcastle",
+        "Njukasl",
+        "Njukastl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b697170b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja država je prva u povijesti osvojila Svjetsko nogometno prvenstvo?",
+      "answers": [
+        "Urugvaj",
+        "Uruguay"
+      ],
+      "image": null,
+      "rarity": "silver"
     }
   ]
 }

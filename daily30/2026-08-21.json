@@ -1,439 +1,442 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-21",
-  "generatedAt": "2026-08-24T20:08:22.547Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-acd02078",
+      "id": "daily-c215a501",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f20e5862",
-      "type": "blitz",
-      "difficulty": 4,
       "topic": "Zemljopis",
-      "question": "Kako se zove glavni grad Omana?",
+      "question": "Kako se zove glavni grad Nepala?",
       "answers": [
-        "Muscat",
-        "Muskat"
+        "Kathmandu",
+        "Katmandu"
       ],
       "image": null
     },
     {
-      "id": "daily-617cf30c",
+      "id": "daily-13c4965b",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Kako se preziva bogata obitelj u filmu 'Parazit'?",
       "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
+        "Park"
       ],
       "image": null
     },
     {
-      "id": "daily-03f8e20d",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliko je 999 × 1?",
-      "answers": [
-        "999",
-        "Devetsto devedeset devet",
-        "CMXCIX",
-        "Devet devet devet"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7ac83262",
+      "id": "daily-c20e29a2",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Beograd je glavni grad koje države?",
+      "topic": "Povijest",
+      "question": "Kojim je nadimkom ostao poznat Edvard od Woodstocka, sin Edvarda III. i jedan od najslavnijih engleskih zapovjednika Stogodišnjeg rata, iako razlog nastanka tog nadimka ni danas nije potpuno razjašnjen?",
       "answers": [
-        "Srbije",
-        "Srbija",
-        "Serbia",
-        "Serbie",
-        "Serbije",
-        "Serbija",
-        "Srba",
-        "Srb",
-        "RS"
+        "Crni Princ",
+        "Black Prince",
+        "Blek Princ"
       ],
       "image": null
     },
     {
-      "id": "daily-0e3a0d53",
+      "id": "daily-8d0d70e8",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koju zlatnu kovanicu je rimsko carstvo počelo kovati u 4.st?",
+      "answers": [
+        "Solidus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f4b339b2",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Čega se odrekla Mala Sirena iz Andersenove bajke kako bi dobila ljudske noge?",
+      "question": "Kojeg sisavca lovi posada sa fiktivnog broda Pequoda?",
       "answers": [
-        "Glasa",
-        "Glas",
-        "Voice",
-        "Vojs",
-        "Voicea",
-        "Vojsa"
+        "Kita",
+        "Kit",
+        "Whale",
+        "Vhejl",
+        "Vejl"
       ],
       "image": null
     },
     {
-      "id": "daily-24dfc14f",
+      "id": "daily-adc8048f",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se zove poznati američki košarkaš koji je šest puta osvojio naslov NBA prvaka s Chicago Bullsima?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja je spisateljica napisala roman 'Mala Princeza'?",
       "answers": [
-        "Michael Jordan",
-        "Majkl Džordan",
-        "Jordan",
-        "Džordan"
+        "Frances Hodgson Burnett",
+        "Frances Eliza Hodgson Burnett",
+        "Frances Burnett",
+        "Fransis Elajza Hodžsn Bernet",
+        "Fransis Elajza Hodžsn Bernet",
+        "Fransis Bernet",
+        "Hodgson Burnett",
+        "Burnett",
+        "Hodgson",
+        "Hodžson Bernet",
+        "Bernet",
+        "Hodžson"
       ],
       "image": null
     },
     {
-      "id": "daily-34ec4343",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Nakon Bitke za Britaniju, koji je britanski premijer izrekao znamenitu pohvalu pilotima riječima da 'nikada toliko mnogo ljudi nije dugovalo toliko malom broju'?",
-      "answers": [
-        "Winston Churchill",
-        "Vinston Črčil",
-        "Churchill",
-        "Čurčil",
-        "Črčil"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a234ce97",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Up, Down, Charm, Strange, Top i Bottom su elementarne čestice koje skupno nazivamo kako?",
-      "answers": [
-        "Kvarkovi",
-        "Kvark",
-        "Quarks",
-        "Quark",
-        "Kvarks"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-185e1e35",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Kakav je, prema poslovici, onaj koji ne vjeruje gladnome?",
-      "answers": [
-        "Sit",
-        "Najeden"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b32c6c4e",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliki je opseg kvadrata čije su stranice duge 5 cm?",
-      "answers": [
-        "20",
-        "Twenty",
-        "Tventi",
-        "XX",
-        "Dvadeset"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cf6fe063",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se zvao mali norveški brod kojim je Roald Amundsen između 1903. i 1906.g. izveo prvo potpuno preplovljavanje Sjeverozapadnog prolaza?",
-      "answers": [
-        "Gjøa",
-        "Gjoa",
-        "Đoa",
-        "Goa",
-        "Đjoa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9faca481",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koji je američki predsjednik jedini obnašao dužnost više od dva mandata?",
-      "answers": [
-        "Franklin Delano Roosevelt",
-        "Franklin Roosevelt",
-        "Frenklin Ruzvelt",
-        "Ruzvelt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cb9e0907",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove najpoznatija slika Leonarda da Vincija koja prikazuje ženu tajanstvenog osmijeha?",
-      "answers": [
-        "Mona Lisa",
-        "Giaconda",
-        "Đakonda"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-83ae8268",
+      "id": "daily-8d899a02",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Kako se zove poznati francuski vojskovođa koji se proglasio carem početkom 19. stoljeća?",
+      "question": "Iz kojeg je francuskog lučkog grada 1940.g. evakuirano više od 300.000 britanskih i savezničkih vojnika nakon što ih je njemački prodor potisnuo prema obali La Manchea?",
       "answers": [
-        "Napoleon Bonaparte",
-        "Napoleon",
-        "Napoleon 1."
+        "Dunkerque",
+        "Dankirk",
+        "Dunkirk",
+        "Dunkerquea",
+        "Dankirka",
+        "Dunkirka"
       ],
       "image": null
     },
     {
-      "id": "daily-ff23fe21",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove najpoznatiji album skupine Pink Floyd iz 1973. godine?",
-      "answers": [
-        "The Dark Side of the Moon",
-        "Dark Side of the Moon",
-        "Tamna strana Mjeseca"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b1e092e6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zove legendarni vođa Huna koji je napadao Rim i Europu u 5. stoljeću?",
-      "answers": [
-        "Atila",
-        "Atilla",
-        "Bič Božji",
-        "Atila Bič Božji"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-aeef828d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 39. predsjednik SAD-a, prezimena Carter, potpisao samo inicijalima, dobili bi koja slova?",
-      "answers": [
-        "JEC"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f09b7334",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koja glumica tumači lik Katniss Everdeen?",
-      "answers": [
-        "Jennifer Lawrence",
-        "Dženifer Lovrenc",
-        "Lawrence",
-        "Lovrenc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8e51f4b0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koje su životinje glavni neprijatelji ptica u originalnoj videoigri Angry Birds, u kojoj kradu njihova jaja?",
-      "answers": [
-        "Svinje",
-        "Svinja",
-        "Pigs",
-        "Piggies",
-        "Pigis",
-        "Krmad",
-        "Pujsići",
-        "Pujsad",
-        "Odojci",
-        "Krme",
-        "Pujse",
-        "Klempo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1bdb53fb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove popularni TV serijal o učitelju kemije koji postaje proizvođač metamfetamina?",
-      "answers": [
-        "Breaking Bad",
-        "Na putu prema dolje",
-        "Brejking Bed"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3aa4dd35",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "S kojeg je karipskog otoka Hernán Cortés 1519.g. krenuo u ekspediciju koja je završila osvajanjem Aztečkog Carstva?",
-      "answers": [
-        "Kuba",
-        "Kube",
-        "Cuba",
-        "Cube",
-        "Cubas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7e37c898",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "S kim se izležava Milo Hrnić u pjesmi 'Budi noćas mirno more'?",
-      "answers": [
-        "S cvrčkom",
-        "Cvrčkom",
-        "Cvrčak"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-be3fa6f7",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Sport",
-      "question": "Kako se zove tenisač iz Srbije s najviše Grand Slam naslova u povijesti muškog tenisa?",
-      "answers": [
-        "Novak Đoković",
-        "Djokovic",
-        "Đoković"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-64d57669",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Za kojeg rimskog cara, kršćanstvo u cijelom rimskom carstvu postaje jedina dopuštena državna religija?",
-      "answers": [
-        "Teodozija",
-        "Teodozije",
-        "Theodosius",
-        "Theodosiusa",
-        "Teodozijusa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c0140072",
+      "id": "daily-eb48d720",
       "type": "blitz",
       "difficulty": 2,
       "topic": "Glazba",
-      "question": "Tko je napisao operu 'Čarobna frula'?",
+      "question": "Tko je osvojio Euroviziju 2024. s pjesmom 'The Code'?",
       "answers": [
-        "Wolfgang Mozart",
-        "Wolfgang Amadeus Mozart",
-        "Volfgang Amadeus Mocart",
-        "Volfgang Mocart",
-        "Mozart",
-        "Mocart"
+        "Nemo"
       ],
       "image": null
     },
     {
-      "id": "daily-90fdfb85",
+      "id": "daily-cacc8753",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koja je država, uz Poljsku, bila domaćin Europskog nogometnog prvenstva 2012.g.?",
+      "topic": "Gaming",
+      "question": "Kako se zove jeziva i poludjela umjetna inteligencija koja muči igrača na svemirskom brodu u igri System Shock 2?",
       "answers": [
-        "Ukrajina",
-        "Ukraina",
-        "Ukrain",
-        "Jukrein",
-        "Ukr",
-        "Ukrainci",
-        "Ukrajinci"
+        "Shodan",
+        "Šodan"
       ],
       "image": null
     },
     {
-      "id": "daily-6194d2a4",
+      "id": "daily-567a87a1",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Najzapadnija točka kontinentalne Europe je nekada bila i najzapadnija točka rimskog carstva. Rimljani su taj rt poznavali kao Promontorium Magnum, a kako se on danas zove?",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koje gorje Rusiju dijeli na Europsku i Azijsku?",
       "answers": [
-        "Cabo de Roca",
-        "Kabo de Roka"
+        "Ural"
       ],
       "image": null
     },
     {
-      "id": "daily-57ccf7b9",
+      "id": "daily-05301c6d",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva broj koji je djeljiv s 2?",
+      "answers": [
+        "Paran broj",
+        "Paran",
+        "Parni"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d65278af",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Rimski je vojskovođa Julije Cezar svoju brzu vojnu pobjedu kod Zele 47.g. pr. Kr. opisao čuvenim riječima 'Veni, Vidi, ... ,  što?",
+      "answers": [
+        "Vici",
+        "Pobjedih",
+        "Pobjedi",
+        "Pobjeda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-77f5360b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Tko je bio pjevač grupe 'The Doors' sve do svoje smrti 1971. u Parizu?",
+      "answers": [
+        "Jim Morrison",
+        "Džim Morison",
+        "Morrison",
+        "Morison",
+        "James Douglas Morrison"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3b0374a4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako nazivamo glavni otpadni proizvod deaminacije aminokiselina u sisavcima?",
+      "answers": [
+        "Urea",
+        "Ureja"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-27b4b440",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Ako je Lincoln bio prvi američki predsjednik koji je ubijen u atentatu, tko je bio drugi?",
+      "answers": [
+        "James Abram Garfield",
+        "Garfield",
+        "Garfild"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee82b0bd",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Koja fiktivna curica ima pjege, crvene pletenice i najjača je djevojčica na svijetu?",
+      "question": "U bajci Ivane Brlić Mažuranić, ako je mladoženja Oleh, mlada Neva Nevinčica, onda je djever tko?",
       "answers": [
-        "Pipi Duga Čarapa",
-        "Pipi",
-        "Duga Čarapa",
-        "Pipi Langstrump",
-        "Pipi Langštrunf",
-        "Pippilotta",
-        "Pipilota",
-        "Pipi Long Socks",
-        "Pipi Long Soks"
+        "Sunce",
+        "Sun",
+        "San"
       ],
       "image": null
     },
     {
-      "id": "daily-d19bbe1c",
+      "id": "daily-f617a266",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koji biološki proces dramatične preobrazbe oblika, strukture i načina života možemo vidjeti kod leptira i žaba?",
+      "answers": [
+        "Metamorfozu",
+        "Metamorfoza"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8a27c01d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove britanski pisac koji je stvorio lik Jamesa Bonda?",
+      "topic": "Film",
+      "question": "Tko je utjelovio Tonija Montanu u filmu 'Lice s ožiljkom' (Scarface) iz 1983.?",
       "answers": [
-        "Ian Fleming",
-        "Fleming"
+        "Al Pacino",
+        "Al paćino",
+        "Pacino",
+        "Paćino"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8e10323b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je španjolska kraljica, zajedno sa suprugom Ferdinandom II. Aragonskim, podržala i financijski pomogla Kristoforu Kolumbu da 1492.g. krene na svoje prvo veliko putovanje prema zapadu?",
+      "answers": [
+        "Izabela I. Kastiljska",
+        "Izabela I.",
+        "Izabela 1.",
+        "Izabela prva",
+        "Izabela 1st",
+        "Izabela first",
+        "Izabela frst",
+        "Izabela",
+        "Isabel",
+        "Isabela"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b8533232",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Tko je bila prva žena koja je dobila Nobelovu nagradu?",
+      "answers": [
+        "Marie Curie",
+        "Mari Kiri",
+        "Mari Kuri",
+        "Mari Kjuri",
+        "Curie",
+        "Kiri",
+        "Kuri",
+        "Maria Curie",
+        "Kjuri"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb22e55d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Granada i Cadiz su nogometni klubovi u kojoj državi?",
+      "answers": [
+        "Španjolskoj",
+        "Španjolska",
+        "Spains",
+        "Spain",
+        "Spejns",
+        "Spejn",
+        "Spajn",
+        "Espanjol",
+        "Espanyol",
+        "Espanjols",
+        "Espanyols",
+        "Spa",
+        "Esp",
+        "Španija",
+        "Španiji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5bb5a58b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "U kojem se moru 1538.g. odigrala bitka kod Preveze, u kojoj je osmanska flota pod zapovjedništvom Hajrudina Barbarosse porazila flotu Svete lige?",
+      "answers": [
+        "Jonsko more",
+        "Ionian Sea",
+        "Jonskom moru",
+        "Jonsko",
+        "Jonskom",
+        "Ionian",
+        "Jonijan",
+        "Ionijanionians",
+        "Jonijans",
+        "Ionijans"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-31ba57f6",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "'Tamnu fazu fotosinteze' su 1950-ih  otkrili Melvin Calvin, James Bassham i Andrew Benson na kojem kalifornijskom sveučilištu?",
+      "answers": [
+        "Berkeley",
+        "Berkli",
+        "UC Berkeley",
+        "UC Berkli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-61f20dbf",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "'Fiscus Judaicus' je bio nametnuti porez u starom Rimu kojeg je plaćala samo jedna etnoreligijska skupina. Koja?",
+      "answers": [
+        "Židovi",
+        "Judejci",
+        "Hebreji",
+        "Jews",
+        "Jevreji",
+        "Židovstvo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9eca1f5f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Ostalo",
+      "question": "Kako se zove monoteistička religija utemeljena na Starom i Novom zavjetu?",
+      "answers": [
+        "Kršćanstvo",
+        "kršćanstvo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0272e77c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koliko minuta traje jedno poluvrijeme u nogometu?",
+      "answers": [
+        "45",
+        "Četrdeset pet",
+        "Četrdeset i pet",
+        "Fourty five",
+        "Forti fajv",
+        "XLV"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d06c0174",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 32. predsjednik SAD-a, prezimena Roosevelt, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "FDR"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8cbd6bfc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'Ne pitajte što vaša zemlja može učiniti za vas, pitajte što vi možete učiniti za svoju zemlju.' Koji je američki predsjednik izgovorio te riječi u inauguracijskom govoru 1961.g.?",
+      "answers": [
+        "John F. Kennedy",
+        "Džon F. Kenedi",
+        "John Fitzgerald Kennedy",
+        "Džon Ficgerald Kenedi",
+        "John Kennedy",
+        "Džon Kenedi",
+        "Kennedy",
+        "Kenedi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cad9ec6d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je američka kompanija 1979.g. objavila arkadnu videoigru Asteroids?",
+      "answers": [
+        "Atari"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bed174b0",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja je velika trgovačka suparnica Venecije zarobila Marka Pola tijekom njihova međusobnog rata, što će posredno dovesti do nastanka njegove slavne knjige?",
+      "answers": [
+        "Genova",
+        "Đenoa"
       ],
       "image": null
     }

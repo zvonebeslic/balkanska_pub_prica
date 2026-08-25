@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Generiraj današnji set
+      - name: Pripremi cijele mjesece Dnevnih 30
         run: node scripts/generate-daily-30.mjs
 
       - name: Spremi novi dnevni set

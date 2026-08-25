@@ -1,0 +1,464 @@
+{
+  "version": 2,
+  "date": "2026-08-27",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-f6e53c22",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Tko glumi Jordana Belforta u filmu 'Vuk s Wall Streeta' (The Wolf of Wall Street)?",
+      "answers": [
+        "Leonardo DiCaprio",
+        "Leonardo Dikaprio",
+        "DiCaprio",
+        "Dikaprio",
+        "Leonardo Wilhelm DiCaprio"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1a71a442",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Izreku 'vrijeme je novac' prvi put smo susreli u eseju 'Savjet mladom trgovcu' (Advice to a Young Tradesman) iz 1748.g., a autor tog eseja je tko?",
+      "answers": [
+        "Benjamin Franklin",
+        "Bendžamin Frenklin",
+        "Benjamin Frenklin",
+        "Franklin",
+        "Frenklin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d3b849d1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Iako ga većina pamti po jednom sasvim drugom djelu, koji je francuski pisac također napisao 'Noćni let', 'Pošta za jug' i 'Zrakoplovac'?",
+      "answers": [
+        "Antoine de Saint Exupery",
+        "Antoan de Sen Egziperi",
+        "Saint Exupery",
+        "Sen Egzuperi",
+        "Exupery",
+        "Egziperi",
+        "Eksuperi",
+        "Ehuperi",
+        "Ekuperi",
+        "Esuperi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7ddbc9fb",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "'Bako, bako, zašto imaš tako velike oči?' Je poznata rečenica iz koje bajke?",
+      "answers": [
+        "Crvenkapica",
+        "Crvenkapice",
+        "Crvenkrpica",
+        "Little Red Riding Hood",
+        "Litl Red Rajding Hud",
+        "Crvenkrpica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-62eb136d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je dominantni planinski vrh na talijansko-švicarskoj granici popeo američki predsjednik Theodore Roosevelt?",
+      "answers": [
+        "Matterhorn",
+        "Materhorn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7f135dd3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Dok je nizozemski moreplovac Abel Tasman 1642.g. plovio uz obale Tasmanije i Novog Zelanda, koji je veliki rat započet 1618.g. još bjesnio Europom?",
+      "answers": [
+        "Tridesetogodišnji",
+        "Trideset godišnji",
+        "30 godišnji",
+        "Thirty Years",
+        "Tirti Jirs",
+        "30",
+        "30 godina",
+        "Trideset",
+        "Thirty",
+        "Tirti",
+        "30godišnji",
+        "Tridesetogodišnjem",
+        "Trideset godišnjem",
+        "30 godišnjem"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b9f6ed57",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove japanski dizajner koji je osmislio i programirao originalnu igricu Space Invaders?",
+      "answers": [
+        "Tomohiro Nishikado",
+        "Tomohiro Nišikado",
+        "Nishikado",
+        "Nišikado"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9d0e067e",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji starorimski povjesničar u svom djelu 'Annales' spominje kršćane i Isusa?",
+      "answers": [
+        "Tacit",
+        "Publije Kornelije Tacit",
+        "Gaj Kornelije Tacit",
+        "Publije Tacit",
+        "Kornelije Tacit",
+        "Gaj Tacit",
+        "Publius Kornelius Tacitus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-137728a5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Vrsta kojeg hrasta se nalazi na kovanici od 5 lipa?",
+      "answers": [
+        "Lužnjak",
+        "Hrast lužnjak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-23fbe620",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se danas naziva bezalkoholno piće osmišljeno i posluženo poput koktela, čiji je naziv nastao spajanjem riječi koje sugeriraju 'lažni koktel'?",
+      "answers": [
+        "Mocktail",
+        "Moktel",
+        "Mock tail",
+        "Moktejl",
+        "Mok tejl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b35a926f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Veni, Vidi, Vici, u prijevodu znači: Dođoh, vidjeh, što?",
+      "answers": [
+        "Pobjedih"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-da6076d6",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "U kultnom hororu 'Alien', kako se zove mačka koja preživi napad ksenomorfa na brodu?",
+      "answers": [
+        "Jones",
+        "Jonesy",
+        "Džonsi",
+        "Džoni"
+      ],
+      "image": null,
+      "rarity": "platinum"
+    },
+    {
+      "id": "daily-fd0a2af8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji instrument koristimo za mjerenje jakosti svjetla?",
+      "answers": [
+        "Fotometar",
+        "Svjetlomjer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e859ef3c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "132m visoki, veličanstveni slapovi Tequendama se nalaze u kojoj južnoameričkoj državi?",
+      "answers": [
+        "Kolumbiji",
+        "Kolumbija",
+        "Columbia",
+        "Columbiji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c3d76541",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koje je ime nosio poznati splav norveškog pustolova Thora Heyerdahla?",
+      "answers": [
+        "Kon Tiki",
+        "Con Tici",
+        "Kontiki",
+        "Contici",
+        "Tiki"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-08a5be19",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Koji je bend objavio album 'The Dark Side of the Moon'?",
+      "answers": [
+        "Pink Floyd",
+        "Pink Flojd"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-148d6770",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Prema legendi, Sv. Jeronim je trn iz šape izvadio kojoj životinji iz porodica mačaka?",
+      "answers": [
+        "Lavu",
+        "Lav"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7b989f5c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove izmišljeni grad inspiriran New Yorkom koji je glavno mjesto radnje Grand Theft Auta IV, a pojavljuje se i u drugim igrama serijala?",
+      "answers": [
+        "Liberty City",
+        "Liberti Siti",
+        "Liberty",
+        "Liberti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eecfb226",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji je glumac utjelovio Charlieja Chaplina u biografskom filmu iz 1992. godine?",
+      "answers": [
+        "Robert Downey Jr",
+        "Robert  Dovni Jr",
+        "Downey Jr",
+        "Dovni jr",
+        "Dovni Junior",
+        "Robert John Downey Jr"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3edc1e05",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Samo je jedan danac osvajao Ballon d'Or, bilo je to davne 1977.g. a nogometaš se zove kako?",
+      "answers": [
+        "Allan Simonsen",
+        "Alan Simonsen",
+        "Simonsen",
+        "Rodenkam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fa7bd89a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji ugljikovodici u hrvatskom nazivlju završavaju na nastavak 'an' a u engleskom ''ane'?",
+      "answers": [
+        "Alkani",
+        "Alcane",
+        "Alkane",
+        "Alkan",
+        "Alcan",
+        "Alcanes",
+        "Alkanes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e292be36",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Od kojeg se voća proizvodi klasično vino poput crnog, bijelog i rosé vina?",
+      "answers": [
+        "Grožđe",
+        "Grožđa",
+        "Grozđe",
+        "Grozda",
+        "Grape",
+        "Grejp",
+        "Grapes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b241d758",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojem je stoljeću završio Stogodišnji rat?",
+      "answers": [
+        "15.",
+        "Petnaestom",
+        "Petnaest",
+        "15om",
+        "15th",
+        "Fifteenth",
+        "Fifteen",
+        "Fiftin",
+        "Fiftint",
+        "XV."
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3db30814",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "'La Marseillaise' je himna koje države?",
+      "answers": [
+        "Francuske",
+        "Francuska"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fc83d3cc",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Glazba",
+      "question": "Koji instrument svira Melissa Viviane Jefferson, poznatija kao Lizzo?",
+      "answers": [
+        "Flautu",
+        "Flauta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-01a84bd9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je američki predsjednik prvi posjetio Sjevernu Koreju?",
+      "answers": [
+        "Donald Trump",
+        "Donald John Trump",
+        "Donald Tramp",
+        "Trump",
+        "Tramp",
+        "Djt"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d30fce73",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koja granica u astrofizici označava najveću moguću masu bijelog patuljka, približno 1,39 puta veću od mase Sunca?",
+      "answers": [
+        "Chandrasekharova granica",
+        "Chandrasekharova",
+        "Kandrasekarova",
+        "Kandrasekar",
+        "Chandrasekhars limit",
+        "Čandrasekars limit",
+        "Čandrasekars",
+        "Čandrasekarova"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5903bb53",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je nogometaš osvojio Ballon d'Or godinu prije desetogodišnje dominacije Ronalda i Messija?",
+      "answers": [
+        "Kaka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cdb5c8cf",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U pustolovinama kojeg se fiktivnog lika pojavljuju teta Polly, Becky Thatcher i Injun Joe?",
+      "answers": [
+        "Toma Sawyera",
+        "Tom Sawyer",
+        "Toma Sejera",
+        "Tom Sejer",
+        "Sawyera",
+        "Sejera",
+        "Sawyer",
+        "Sejer",
+        "Sajer",
+        "Sajera",
+        "Savjer",
+        "Savjera"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-113c8da0",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Zemljopis",
+      "question": "Koji je kontinent poznat po rijeci Amazoni?",
+      "answers": [
+        "Južna Amerika",
+        "Latinska Amerika",
+        "South America",
+        "Saud Amerika"
+      ],
+      "image": null
+    }
+  ]
+}

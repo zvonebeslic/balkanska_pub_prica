@@ -1,417 +1,451 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-03",
-  "generatedAt": "2026-08-24T20:08:22.538Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-363f5a05",
+      "id": "daily-26515800",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Film",
-      "question": "Koji je originalni naziv psihološkog trilera 'Vrtoglavica'?",
+      "topic": "Moreplovci",
+      "question": "Koji je grad na Floridi Pedro Menéndez de Avilés osnovao 1565.g., a danas se smatra najstarijim trajno naseljenim europskim gradom u kontinentalnom dijelu SAD-a?",
       "answers": [
-        "Vertigo"
-      ],
-      "image": null,
-      "rarity": "silver"
-    },
-    {
-      "id": "daily-5afcba57",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove glazbeni festival koji se svake godine održava u blizini malog mjesta Piltona u Engleskoj?",
-      "answers": [
-        "Glastonbury",
-        "Glastonburi",
-        "Glastonbury Festival"
+        "St. Augustine",
+        "Saint Augustine",
+        "Sveti Augustin",
+        "Augustine",
+        "Augustin"
       ],
       "image": null
     },
     {
-      "id": "daily-431b3e24",
+      "id": "daily-df05b5ff",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Johnny Haynes je u svojoj nogometnoj karijeri najviše nastupa zabilježio za koji engleski klub?",
+      "question": "Liberec i Zlin su nogometni klubovi iz koje države?",
       "answers": [
-        "Fulham",
-        "Fulem"
+        "Češke",
+        "Češka",
+        "Czech",
+        "Czechs",
+        "Čeh",
+        "Czeh",
+        "Češh"
       ],
       "image": null
     },
     {
-      "id": "daily-18c21cee",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Ostalo",
-      "question": "Kako se naziva misaoni eksperiment filozofa Zenaona o strijeli koja nikada ne stiže do cilja?",
-      "answers": [
-        "Zenonov paradoks"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e46b4e40",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Etin, propin i butin su svi redom koji ugljikovodici?",
-      "answers": [
-        "Alkini",
-        "Alcyne",
-        "Alkine",
-        "Alkin",
-        "Alcyn",
-        "Alcynes",
-        "Alkynes",
-        "Alkines"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-dd6b8a1a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvalo carstvo koje je u 7. stoljeću pr. Kr. obuhvaćalo područje od Egipta do Perzijskog zaljeva, a prijestolnicu imalo u Ninivi?",
-      "answers": [
-        "Asirsko Carstvo",
-        "Asirija",
-        "Asirsko",
-        "Assyrian",
-        "Asirijan",
-        "Assyr",
-        "Asir",
-        "Assyrs",
-        "Asirs"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5cc5f131",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "'Kost u grlu' je prvi studijski album kojeg srpskog rock sastava?",
-      "answers": [
-        "Riblja čorba"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-14906f6b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove autor romana Zločin i kazna?",
-      "answers": [
-        "Fjodor Dostojevski",
-        "Dostojevski"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0de0feaf",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U kojem je glavnom gradu rođen Jonathan Swift, autor Gulliverovih putovanja?",
-      "answers": [
-        "Dublin",
-        "Dublinu",
-        "Dablin",
-        "Dablinu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0e0ee76c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "U serijalu videoigara Crash Bandicoot, kako se zove čarobna maska koja pomaže Crashu i štiti ga od neprijatelja?",
-      "answers": [
-        "Aku Aku"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8678991c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Zemljopis",
-      "question": "Koji se aktivni vulkan u Ekvadoru, sa kečuanskog jezika prevodi kao \"prijestolje mjeseca\"?",
-      "answers": [
-        "Cotopaxi",
-        "Kotopaksi",
-        "Kotopaxi",
-        "Cotopaksi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0d4170aa",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja znamenka stoji na mjestu stotica u broju 4.582?",
-      "answers": [
-        "5",
-        "Pet",
-        "Five",
-        "Fajv",
-        "V"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-08520734",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "AntickiRim",
-      "question": "Kojom su troslovnom riječju stari rimljani nazivali današnje 'pravo'?",
-      "answers": [
-        "Ius",
-        "Jus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-207cf397",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je španjolski galijun s vrijednim teretom potonuo 1622.g. kod Floridskih otoka, a istraživač Mel Fisher pronašao je njegovu olupinu 1985.g.?",
-      "answers": [
-        "Nuestra Señora de Atocha",
-        "Atocha",
-        "Nuestra Senora de Atocha",
-        "Atoča",
-        "Atoche",
-        "Atoče"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-966b5b81",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Sport",
-      "question": "Kako se zove domaći nogometni klub iz Splita s crveno-bijelim kvadratićima u grbu?",
-      "answers": [
-        "Hajduk",
-        "HNK Hajduk Split",
-        "Hajduk Split"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a9f164e0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove termin u književnosti za skrivenu poruku ili značenje ispod površinske radnje djela?",
-      "answers": [
-        "Alegorija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a1676a23",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je konkvistador srušio Aztečko Carstvo, koristeći ne samo španjolsko oružje nego i savezništva s narodima drugih domorodaca koji su bili neprijatelji Azteka?",
-      "answers": [
-        "Hernán Cortés",
-        "Hernando Cortez",
-        "Hernando Kortez",
-        "Hernan Kortez",
-        "Cortes",
-        "Kortez"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-56af4e3e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Kada kažemo da nešto ne treba procjenjivati samo po vanjštini, upozoravamo da knjigu ne treba suditi po čemu?",
-      "answers": [
-        "Koricama",
-        "Korama",
-        "Kora",
-        "Kore",
-        "Korice"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fbc2f15c",
+      "id": "daily-ebffe2cd",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Film",
-      "question": "Koja je glumica utjelovila Maleficent, u istoimenom filmu iz 2014.?",
+      "question": "Koji je film Alfreda Hitchcocka snimljen kao kadar iz jedne sobe s pogledom na dvorište i okolne zgrade?",
       "answers": [
-        "Angelina Jolie",
-        "Anđelina Džoli",
-        "Jolie",
-        "Džoli"
+        "Prozor u dvorište",
+        "Rear Window",
+        "Rer Vindov"
       ],
       "image": null
     },
     {
-      "id": "daily-d9698895",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove pjevač koji je osvojio Euroviziju 2021. s pjesmom 'Zitti e buoni' kao dio benda Måneskin?",
-      "answers": [
-        "Damiano David",
-        "Damiano",
-        "David"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9b994db2",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Zemljopis",
-      "question": "Koje pismo je službeno u Srbiji?",
-      "answers": [
-        "Ćirilica",
-        "Cirilic",
-        "Cyrlyic",
-        "Cyrlic",
-        "Cirilik",
-        "Ćirilik",
-        "Cirilic"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-15074972",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koje je srednje ime, američkog predsjednika Richarda Nixona?",
-      "answers": [
-        "Milhous",
-        "Milhus",
-        "Milhaus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-975ad238",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Što je, prema narodnoj poslovici, najbolje kovati dok je vruće?",
-      "answers": [
-        "Željezo",
-        "Metal",
-        "Čelik"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b2cb9c9a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Na području kojeg su se današnjeg američkog grada, blizu Bostona, rodila dva američka predsjednika, otac i sin, John i John Quincy Adams?",
-      "answers": [
-        "Quincy",
-        "Kvinci",
-        "Kvinsi",
-        "Kuinci",
-        "Kuinsi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5e3a5453",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Znanost",
-      "question": "Kako se zove nobelovac koji je razvio teoriju relativnosti?",
-      "answers": [
-        "Albert Einstein",
-        "Einstein",
-        "Ajnštajn",
-        "Albert Ajnštajn"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f93d4c62",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se zove olimpijski sport u kojem se koriste sablja ili floret?",
-      "answers": [
-        "Mačevanje"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-75c61f99",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Od kojeg je kemijskog elementa primarno bio kovan rimski novac Sestercij?",
-      "answers": [
-        "Bakra",
-        "Cu",
-        "Bakar",
-        "Copper",
-        "Koper",
-        "Cuprum"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-00377f9c",
+      "id": "daily-957d00a3",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Kolika je površina kvadrata čije su stranice duge 5 cm?",
+      "question": "Efekt prema kojem ljudi s malo znanja ili sposobnosti u nekom području mogu precijeniti vlastitu kompetenciju nosi prezimena koja dva psihologa?",
       "answers": [
-        "25",
-        "Dvadeset pet",
-        "Twenty five",
-        "Tventi fajv",
-        "XXV"
+        "Dunning Kruger",
+        "Daning Kruger",
+        "Kruger Dunning",
+        "Kruger Daning",
+        "Daning Krugerov",
+        "Dunning Kurgerov",
+        "Kruger Dunningov",
+        "Kruger Daningov",
+        "Daningov Krugerov",
+        "Krugerov Daningov",
+        "Dunningov Krugerov",
+        "Krugerov Dunningov"
       ],
       "image": null
     },
     {
-      "id": "daily-18fa9084",
+      "id": "daily-1d4406f1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Kada netko pretjeruje oko nečega nevažnog, kažemo da od muhe pravi što?",
+      "answers": [
+        "Slona",
+        "Slon",
+        "Elefant",
+        "Elephant"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b9ad770",
       "type": "blitz",
       "difficulty": 3,
       "topic": "FloraFauna",
-      "question": "Koji plin se oslobađa kao nusprodukt fotosinteze?",
+      "question": "Koji začin dobivamo od biljke penjačice latinskog imena 'Piper'?",
       "answers": [
-        "Kisik",
-        "O2"
+        "Papar",
+        "Biber"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ae430ea8",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Koji kanadski glumac posuđuje glas Shreku?",
+      "answers": [
+        "Mike Myers",
+        "Majk Maers",
+        "Myers",
+        "Maers"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bae7749d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Nakš-e Rustam je velika perzijska nekropola uklesana u stijenu gdje se pored grobnica ahemenidskih careva nalaze i sasanidski reljefi, a jedan od njih slavi pobjedu kralja Šapura I. nad kojim carstvom?",
+      "answers": [
+        "Rimskim",
+        "Rim",
+        "Rome",
+        "Rimsko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a6d807e7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Indije?",
+      "answers": [
+        "New Delhi",
+        "Nju Delhi",
+        "Nju Deli",
+        "New Deli",
+        "Delhi",
+        "Deli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9532ea4b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Uz obalu kojeg je danskog poluotoka 1916. vođen najveći pomorski sukob Prvog svjetskog rata između glavnih britanskih i njemačkih ratnih flota?",
+      "answers": [
+        "Jutland",
+        "Jutlanda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5ef0c25c",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Svi znamo za Fantastičnog gospodina Lisca i istoimeni film iz 2009. godine u režiji Wesa Andersona, no znate li prema knjizi kojeg je pisca snimljen?",
+      "answers": [
+        "Roalda Dahla",
+        "Dahla",
+        "Dala",
+        "Roualda Dala",
+        "Roald Dahl",
+        "Dahl",
+        "Dal",
+        "Rouald Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4120fa00",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je velški gusar postao toliko uspješan u napadima na Španjolce na Karibima da je poslije čak postao zamjenik guvernera Jamajke?",
+      "answers": [
+        "Henry Morgan",
+        "Henri Morgan",
+        "Morgan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-af671f36",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Ako je za bubnjevima Emil Kranjčić, za klavijaturama Damjan Deurić, sa gitarom Andraš Išpan a pjeva Livio Berak, onda smo na koncertu koje grupe?",
+      "answers": [
+        "Divlje Jagode"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a2385366",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove sveta knjiga Judaizma koja obuhvaća Petoknjižje?",
+      "answers": [
+        "Tora",
+        "Torah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e79fda32",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se zove religija koju je utemeljio Siddhartha Gautama, usmjerena na put prosvjetljenja i nirvane?",
+      "answers": [
+        "Budizam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f31b5c0d",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Koje ime nosi najprodavaniji glazbeni album svih vremena?",
+      "answers": [
+        "Thriller",
+        "Triler"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d3ffab9d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kakve frekvencije su do 1943.g. smatrane izumom Guglielma Marconija, a od te godine su sva prava na njih pripisana Nikoli Tesli?",
+      "answers": [
+        "Radiofrekvencije",
+        "Radiofrequencies",
+        "Radiofrekvencis",
+        "Radio",
+        "Radijo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bb115c67",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koliko je Zlatnih lopti osvojio Lionel Messi?",
+      "answers": [
+        "8",
+        "Osam",
+        "VIII",
+        "Eight",
+        "Ejt",
+        "Eijt",
+        "Eigt"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bc263f56",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako zovemo pojavu proizvodnje istosmjerne električne struje kemijskim putem, odnosno kontaktom dvaju različitih metala uronjenih u elektrolit?",
+      "answers": [
+        "Galvanizam",
+        "Galvanism",
+        "Galvanizm",
+        "Galvanizacija",
+        "Galvanization",
+        "Galvanizejšn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-15f34a0a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove glavni lik videoigre Subway Surfers, grafiter kojeg na početku igre počinju progoniti inspektor i njegov pas?",
+      "answers": [
+        "Jake",
+        "Džejk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ce5db8de",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Na kojem talijanskom otoku umire rimski car Tiberije?",
+      "answers": [
+        "Capri",
+        "Capriju",
+        "Na Capriju",
+        "Kapri",
+        "Kapriju"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fac372d3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je slikar naslikao dvije slike simboličnih naziva 'drugi i treći Svibnja (Maja) 1808.g.' i na njima uprizorio krvavi ustanak građana Madrida protiv Napoleonove okupacije?",
+      "answers": [
+        "Francisco Goya",
+        "Francisko Goja",
+        "Goya",
+        "Goja",
+        "Fransisco Goya"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-22c2867d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "S kojom su strankom na američkim izborima za predsjednika pobjedili Harrison, Tyler, Taylor i Polk?",
+      "answers": [
+        "Vigovskom",
+        "Vigovci",
+        "Vigovska",
+        "Whig",
+        "Whigs",
+        "Vig",
+        "Vigs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c2ae18a0",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Koja biljka nam je omogućila uživanje u čokoladi?",
+      "answers": [
+        "Kakaovac",
+        "Drvo kakaovca"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4fdff8ec",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se zove dužina od središta kružnice do njezina ruba?",
+      "answers": [
+        "Polumjer",
+        "Radijus",
+        "Radius"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-52b9bbf1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji odjevni predmet Pipi Duga Čarapa nosi za mnogo brojeva veći nego što joj stvarno treba?",
+      "answers": [
+        "Cipele",
+        "Tene",
+        "Pume",
+        "Patike",
+        "Šue",
+        "Shoes",
+        "Šuz",
+        "Tenisice",
+        "Cipelice",
+        "Pumice",
+        "Postole",
+        "Opanke",
+        "Opanci",
+        "Obuću",
+        "Obuća",
+        "Čevlji",
+        "Čevlje"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-939091cf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Što radi onaj koji po poslovici 'ne skita'?",
+      "answers": [
+        "Pita"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e387fa47",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kojim imenom Geralt u svijetu videoigara The Witcher naziva svoje konje, pa se isto ime koristi za različite životinje koje jaše tijekom svojih pustolovina?",
+      "answers": [
+        "Roach",
+        "Rouč",
+        "Roč",
+        "Roač"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-439900d8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kako glasi srednje ime američkog predsjednika Johna Kennedyja?",
+      "answers": [
+        "Fitzgerald",
+        "Ficgerald",
+        "Ficdžerald"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2d626a57",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Na području koje današnje države je nastao latinski jezik?",
+      "answers": [
+        "Italije",
+        "Italija",
+        "Italie",
+        "Italia",
+        "Italy",
+        "Italys",
+        "Itali",
+        "Italis",
+        "Italiana",
+        "Italijana"
       ],
       "image": null
     }

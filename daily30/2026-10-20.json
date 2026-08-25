@@ -1,0 +1,445 @@
+{
+  "version": 2,
+  "date": "2026-10-20",
+  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-5eb2de1e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koje tradicionalno japansko bacačko oružje Joe Musashi koristi protiv neprijatelja u arkadnoj videoigri Shinobi?",
+      "answers": [
+        "Shuriken",
+        "Šuriken"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-118d2508",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "U kojem se filmu pojavljuje 'Flux Capacitor'?",
+      "answers": [
+        "Povratak u budućnost",
+        "Back to the Future",
+        "Bek to d fjučr"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b32c6c4e",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliki je opseg kvadrata čije su stranice duge 5 cm?",
+      "answers": [
+        "20",
+        "Twenty",
+        "Tventi",
+        "XX",
+        "Dvadeset"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ae47cef0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kako se zvala žena koja je prva obnašala dužnost 'FLOTUS'-a",
+      "answers": [
+        "Martha Washington",
+        "Martha",
+        "Marta Vašington",
+        "Marta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c4efefed",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Koji je reper poznat i po nadimku 'Slim Shady'?",
+      "answers": [
+        "Eminem",
+        "Marshall Bruce Mathers 3."
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e8e83daa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kolumbo je 1492.g. prvo kopno na koje je stupio nazvao San Salvador a danas on pripada kojem otočju?",
+      "answers": [
+        "Bahami",
+        "Bahame",
+        "Bahamama",
+        "Bamamima",
+        "Bahamas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-64c37c89",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "U velikoj erupciji Vezuva 79 g. bivaju uništeni gradovi: Pompeji, Stabije, Oplontis i koji još antički grad?",
+      "answers": [
+        "Herkulanej",
+        "Herculaneum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dc30f1b5",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojem se danskom gradu nalazi poznati kip Andersenove Male sirene?",
+      "answers": [
+        "Kopenhagenu",
+        "Kopenhagen",
+        "Copenhagen",
+        "Copenhagenu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee82b0bd",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U bajci Ivane Brlić Mažuranić, ako je mladoženja Oleh, mlada Neva Nevinčica, onda je djever tko?",
+      "answers": [
+        "Sunce",
+        "Sun",
+        "San"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ecc3600a",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je most u Višegradu poslužio kao središnji simbol romana Ive Andrića 'Na Drini ćuprija'?",
+      "answers": [
+        "Mehmed-paše Sokolovića",
+        "Drini",
+        "Višegradski",
+        "Ćuprija",
+        "Sokolovićev",
+        "Mehmedov",
+        "Drinski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d2f168b6",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Kako zovemo vrstu vivarija koja oponaša vodena staništa uz rubove rijeka, potoka ili jezera?",
+      "answers": [
+        "Riparij",
+        "Riparium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b11213f4",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja životinja se nalazi na grbovima Madrida, Berna i Berlina?",
+      "answers": [
+        "Medvjed",
+        "Medo",
+        "Međed",
+        "Bear",
+        "Ber"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fb542a1d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'Što me ne ubije, čini me jačim' jedna je od najcitiranijih misli kojeg njemačkog filozofa?",
+      "answers": [
+        "Friedricha Nietzschea",
+        "Fridriha Ničea",
+        "Nietzschea",
+        "Ničea",
+        "Nitčea",
+        "Niečea",
+        "Friedrich Nietzsche",
+        "Fridrih Niče",
+        "Nietzsche",
+        "Niče",
+        "Nitče",
+        "Nieče"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-661d96f9",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se zove poznata muslimanska sveta knjiga otkrivena Muhamedu?",
+      "answers": [
+        "Kur'an",
+        "Kuran",
+        "Qur'an"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d7896430",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je gusar prije odlaska na more bio imućni vlasnik plantaže, zbog čega je u povijesti ostao poznat pod nadimkom Gentleman Pirate?",
+      "answers": [
+        "Stede Bonnet",
+        "Stid Bonet",
+        "Steed Bonnet",
+        "Bonnet",
+        "Bonet"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3170a985",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Kako se zove lav iz Narnijskih kronika?",
+      "answers": [
+        "Aslan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f4b7adf7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji otok polineški starosjedioci poznaju kao Rapa Nui?",
+      "answers": [
+        "Uskršnji Otok",
+        "Uskršnji",
+        "Easter",
+        "Ister",
+        "Pasha",
+        "Paska",
+        "Pascua"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9aa46216",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Bratislava je glavni grad koje države?",
+      "answers": [
+        "Slovačke",
+        "Slovačka",
+        "Slovakias",
+        "Slovakia",
+        "Slovakija",
+        "Slovakijas",
+        "Slovensko",
+        "Slovenske"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-09f0c8ff",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji se američki predsjednik susreo sa papom Lavom 13., kraljicom Viktorijom i princom Ottom Von Bismarckom?",
+      "answers": [
+        "Ulysses Simpson Grant",
+        "Ulysses S. Grant",
+        "Ulysses Grant",
+        "S. Grant",
+        "Simpson Grant",
+        "Ulysses",
+        "Grant",
+        "Ulises Simpson Grant",
+        "Ulises S. Grant",
+        "Ulises Grant",
+        "S. Grant",
+        "Simpson Grant",
+        "Ulises"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fea9dd69",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Nogomet",
+      "question": "Pod kojim je nadimkom poznatiji brazilski nogometaš koji je proslavio pogodak na Svjetskom prvenstvu 1994. godine oponašajući njihanje bebe u čast rođenja svog sina?",
+      "answers": [
+        "Bebeto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-709e7015",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "U kojem se serijalu borilačkih videoigara održava turnir pod nazivom „The King of Iron Fist Tournament“, oko kojeg se vrti velik dio radnje i na kojem sudjeluju borci poput Heihachija Mishime, Kazuye Mishime i Paula Phoenixa?",
+      "answers": [
+        "Tekken",
+        "Teken"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8171f208",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se nazivaju velike monumentalne grobnice faraona u Egiptu trokutastog oblika?",
+      "answers": [
+        "Piramide"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-624cec9c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je znanstvenik svirao violinu, na kojoj je ugravirano 'Lina', a koja se 2025.g. na aukciji prodala za nevjerojatnih 860 000 funti?",
+      "answers": [
+        "Albert Einstein",
+        "Albert Ajnštajn",
+        "Einstein",
+        "Ajnštajn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-489dfa19",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Zbog kojeg je igrača Zidane dobio crveni karton u finalu SP-a 2006.g.?",
+      "answers": [
+        "Marca Materazzija",
+        "Marco Materazzi",
+        "Marka Materacija",
+        "Marko Materaci",
+        "Materazzija",
+        "Materazzi",
+        "Materacija",
+        "Materaci"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eb6355bb",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Koji je reper suprug pjevačice Beyoncé?",
+      "answers": [
+        "Jay Z",
+        "Džej Zi",
+        "Shawn Corey Carter",
+        "Corey",
+        "Korej",
+        "Carter",
+        "Karter"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-49638de4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je vrhovni bog neba u sumerskoj mitologiji, kojeg su Sumerani smatrali ocem bogova?",
+      "answers": [
+        "Anu",
+        "An",
+        "Anum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9fe99673",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Čak i loš događaj ponekad donese nešto korisno ili kako poslovica kaže: 'Svako zlo za neko...'?",
+      "answers": [
+        "Dobro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-42b18431",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvao prvi glavni grad Perzijskog carstva kojeg je ustanovio Kir Veliki, a ostaci mu se danas nalaze blizu modernog grada Širaza u Iranu?",
+      "answers": [
+        "Pasargad",
+        "Pasargada"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8d0d70e8",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koju zlatnu kovanicu je rimsko carstvo počelo kovati u 4.st?",
+      "answers": [
+        "Solidus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-de17690b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kombinaciji sa kojim visoko zapaljivim plinom, plin koji podržava gorenje daje tekućinu koja gasi požare?",
+      "answers": [
+        "Vodikom",
+        "Vodik",
+        "Vodika",
+        "Hidrogenom",
+        "Hidrogen",
+        "Hydrogenom",
+        "Hydrogen",
+        "Hydrogens",
+        "Hidrogens",
+        "Hidrodžen",
+        "Hidrodženom",
+        "Hidrodžens"
+      ],
+      "image": null
+    }
+  ]
+}

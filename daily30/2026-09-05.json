@@ -1,0 +1,428 @@
+{
+  "version": 2,
+  "date": "2026-09-05",
+  "generatedAt": "2026-08-25T18:26:49.228Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-044eb503",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kratica RGB predstavlja crvenu, zelenu i koju još boju?",
+      "answers": [
+        "Plavu",
+        "Plava",
+        "Blue",
+        "Blu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5cc5f131",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "'Kost u grlu' je prvi studijski album kojeg srpskog rock sastava?",
+      "answers": [
+        "Riblja čorba"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-06884041",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji glumac tumači ulogu detektiva Ricka Deckarda u originalnom filmu 'Istrebljivač' (Blade Runner)?",
+      "answers": [
+        "Harrison Ford",
+        "Harison Ford",
+        "Ford"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0afbd5d8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove poznata rock grupa koju čine članovi Brian May, Roger Taylor i John Deacon uz karizmatičnog frontmena Freddieja Mercuryja?",
+      "answers": [
+        "Queen",
+        "Kuin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb808968",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je britanski premijer u svibnju 1940.g., neposredno nakon preuzimanja dužnosti, govorio o 'krvi, trudu, suzama i znoju'?",
+      "answers": [
+        "Winston Churchill",
+        "Vinston Črčil",
+        "Churchill",
+        "Čurčil",
+        "Črčil"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ada2f375",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je američki industrijalac postao simbol masovne automobilske proizvodnje zahvaljujući pokretnoj proizvodnoj traci kojom je dramatično ubrzao izradu Modela T?",
+      "answers": [
+        "Henry Ford",
+        "Henri Ford",
+        "Ford"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-351dfb53",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Koji je američki predsjednik potpisao sporazum u Daytonu kojim je okončan rat u BiH?",
+      "answers": [
+        "Bill Clinton",
+        "Clinton",
+        "Bil Klinton",
+        "Klinton"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eed10f15",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je portugalski moreplovac dao ime najvećem kanadskom poluotoku, nakon što je krajem 15. stoljeća istraživao sjevernoatlantske obale u portugalskoj službi?",
+      "answers": [
+        "João Fernandes Lavrador",
+        "Žoao Fernandez Lavrador",
+        "Lavrador"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-56af4e3e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Kada kažemo da nešto ne treba procjenjivati samo po vanjštini, upozoravamo da knjigu ne treba suditi po čemu?",
+      "answers": [
+        "Koricama",
+        "Korama",
+        "Kora",
+        "Kore",
+        "Korice"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a2513db9",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Koji je glumac utjelovio Jokera u filmu 'Vitez tame'?",
+      "answers": [
+        "Heath Ledger",
+        "Hit Ledžer",
+        "Ledger",
+        "Ledžer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e8d9e8cc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Tko je 2000-e godine, ispred Zidanea i Shevchenka osvojio Zlatnu Loptu?",
+      "answers": [
+        "Luis Figo",
+        "Figo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1886e1fb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se zove auto-moto utrka izdržljivosti koja traje 24 sata i vozi se u Francuskoj?",
+      "answers": [
+        "24 sata Le Mansa",
+        "Le Mans",
+        "24h Le Mans"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7f4a23b6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Na kojim se poljima odvila najvažnija bitka između Huna i Zapadnorimskog carstva u savezu sa Vizigotima?",
+      "answers": [
+        "Katalaunskim",
+        "Catalaunian"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b01eb952",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Ostalo",
+      "question": "Koji kviz sa izazivačima i lovcem rado gledamo na HRT-u?",
+      "answers": [
+        "Potjeru",
+        "Potjera"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a9f164e0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove termin u književnosti za skrivenu poruku ili značenje ispod površinske radnje djela?",
+      "answers": [
+        "Alegorija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-718ae746",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Uz koju su rijeku talijanske i austro-ugarske snage između 1915. i 1917. vodile čak dvanaest velikih bitaka na jednom od najtežih planinskih bojišta Prvog svjetskog rata?",
+      "answers": [
+        "Soču",
+        "Soča",
+        "Socha",
+        "Sochu",
+        "Isonzo",
+        "Isonzu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-97364c4c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kako se naziva grana biologije koja proučava životinje?",
+      "answers": [
+        "Zoologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9f3f0b51",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koju medalju znanstvenicima dodjeljuje Britansko Kraljevsko Društvo, a ona je ujedno njihovo najstarije i najcjenjenije priznanje?",
+      "answers": [
+        "Copleyevu Medalju",
+        "Copleyeva Medalja",
+        "Copleys Medal",
+        "Copley Medal",
+        "Copleyevu",
+        "Copleyeva",
+        "Copleys",
+        "Copley",
+        "Koplejeva",
+        "Koplejevu",
+        "Koplejs",
+        "Koplej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e1b0575e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kada je Michael Owen osvojio Ballon d'Or, jedan španjolac je 'ostao' na drugom mjestu, a to je bio tko?",
+      "answers": [
+        "Raul Gonzales",
+        "Raul"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ce6daab0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Pierce, Buchanan i Knox su prezimena koja su predsjedala kojom državom?",
+      "answers": [
+        "SAD-om",
+        "Američke",
+        "American",
+        "Sjedinjenih Američkih Država",
+        "Američkih Država",
+        "SAD",
+        "USA-ja",
+        "USA",
+        "United States",
+        "United States of America",
+        "US",
+        "US-a",
+        "Sjedinjenih Država",
+        "States of America",
+        "Junajted Stejts of Amerika",
+        "Stejts of Amerika",
+        "Junajted Stejts",
+        "Ameriken",
+        "SAD-a",
+        "Amerikom",
+        "US-om",
+        "Sjedinjene Američke Države",
+        "Sjedinjenim Američkim Državama",
+        "Američke",
+        "Američkim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dcb4e36e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja ptica prepoznajemo po dugim nogama, dugom vratu i ružičastom perju?",
+      "answers": [
+        "Flaminga",
+        "Plamenac",
+        "Plamenca",
+        "Flamingos"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-97a7704f",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove vladar svih šumskih bjesova u bajci Kako je Potjeh tražio istinu?",
+      "answers": [
+        "Bjesomar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0aea4d99",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Pod kojim umjetničkim imenom je poznatiji reper Calvin Cordozar Broadus, Jr?",
+      "answers": [
+        "Snoop Dogg",
+        "Snup Dog"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d29e14d7",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove roman Mary Shelley o znanstveniku koji stvara čudovište od dijelova ljudskih tijela?",
+      "answers": [
+        "Frankenstein",
+        "Frankenštajn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ec0b277f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se zove grad domaćin ljetnih Olimpijskih igara 2012. godine?",
+      "answers": [
+        "London"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-67f41721",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kojom rijekom su povezani Managua i Nikaragva, dva najveća jezera države Nikaragve?",
+      "answers": [
+        "Tipitapa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-58c0a605",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "U tzv. 'Kvazi Ratu' amerikanci su u pomorskim sukobima zarobljavali brodove koje republike?",
+      "answers": [
+        "Francuske",
+        "France",
+        "Frenc",
+        "Francuska"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1b0e7d89",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko sati traje slavna automobilistička utrka izdržljivosti Le Mans, koja se održava još od 1923.g.?",
+      "answers": [
+        "24",
+        "Dvadeset i četiri",
+        "Dvaest četiri",
+        "Twenty two",
+        "Tventi tu",
+        "Tventi tvu",
+        "XXIV"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b407077a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je američka gaming kompanija, jedan od pionira industrije videoigara, proizvela legendarnu igraću konzolu modela 2600?",
+      "answers": [
+        "Atari"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2a507e13",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove borac iz serijala videoigara Tekken kojeg je njegov otac Heihachi Mishima još kao dječaka bacio s litice kako bi iskušao njegovu snagu?",
+      "answers": [
+        "Kazuya Mishima",
+        "Kazuya",
+        "Kazuja Mishima",
+        "Kazuja",
+        "Kazuja Mišima"
+      ],
+      "image": null
+    }
+  ]
+}

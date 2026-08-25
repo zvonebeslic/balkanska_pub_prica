@@ -1,423 +1,429 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-09",
-  "generatedAt": "2026-08-24T20:08:22.542Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-4379cc2a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je grad na otoku New Providence na Bahamima početkom 18. stoljeća postao glavno gusarsko utočište i središte takozvane Gusarske republike?",
-      "answers": [
-        "Nassau",
-        "Nasau"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-78f677cc",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako su se nazivali kameni stupovi s portugalskim grbom koje su portugalski istraživači postavljali na novoistraženim obalama?",
-      "answers": [
-        "Padrão",
-        "Padrao",
-        "Padrões",
-        "Padroes",
-        "Padros"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e057885b",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U kojoj se knjizi Roalda Dahla pojavljuje pripravak 'Formula 86 Delayed Action Mouse-Maker'?",
-      "answers": [
-        "Vještice",
-        "Witches",
-        "Vitčes",
-        "Vičes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6e310e1b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove poznato Shakespeareovo djelo o danskom princu koji sumnja u ubojstvo svog oca?",
-      "answers": [
-        "Hamlet"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bd4ac8ce",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Tko je bio prvi američki predsjednik koji je posjetio Zagreb?",
-      "answers": [
-        "Richard Nixon",
-        "Ričard Nikson",
-        "Nixon",
-        "Nikson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-da6a41ea",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "U starom Rimu, doručak je bio lentaculum, večera je bila cena, a ručak?",
-      "answers": [
-        "Prandium"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b9224c45",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Zemljopis",
-      "question": "Kako se zove najviši vrh svih alpskih planina?",
-      "answers": [
-        "Mont Blanc",
-        "Monblan",
-        "Mont Blan",
-        "Blanc",
-        "Blan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e68278bc",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvao vrhovni bog neba u akadskom i babilonskom panteonu, čiji je sumerski pandan An?",
-      "answers": [
-        "Anu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-490fd1be",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Svi znamo za Hanibala njegov ratni pohod na Rim preko Alpa sa slonovima te žestoke borbe s Rimljanima za vrijeme drugog punskog rata, no kako se zove njegov otac, takoder kartaški vojskovođa koji se s istim neprijateljem borio u prvom punskomq ratu?",
-      "answers": [
-        "Hamilkar Barka",
-        "Hamilkar",
-        "Hamilcar Barca",
-        "Hamilcar",
-        "Barka",
-        "Barca"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a6c7862f",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Učinak kod kojeg osoba može osjetiti poboljšanje nakon tretmana bez specifičnog aktivnog djelovanja, djelomično zbog očekivanja, naziva se?",
-      "answers": [
-        "Placebo efekt",
-        "Placebo učinak",
-        "Placebo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ca9ce53f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Koji je američki glumac utjelovio lik Rockyja Balboe u filmskom serijalu 'Rocky'?",
-      "answers": [
-        "Sylvester Stallone",
-        "Silvestar Stalone",
-        "Stallone"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ec2b590f",
+      "id": "daily-a945965e",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Dovršite poznatu zdravstvenu mudrost: 'Bolje spriječiti nego...'?",
+      "question": "Kojeg je francuskog filozofa prosvjetiteljstva proslavila obrana slobode mišljenja, zbog čega mu se često, premda pogrešno, pripisuje misao 'Ne slažem se s onim što govoriš, ali branit ću tvoje pravo da to kažeš'?",
       "answers": [
-        "Liječiti",
-        "Ličiti"
+        "Voltaire",
+        "Volter",
+        "François Marie Arouet",
+        "Fransoa Mari Arue",
+        "Arue",
+        "Arouet"
       ],
       "image": null
     },
     {
-      "id": "daily-b15d5835",
+      "id": "daily-068d8816",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "'Sav je svijet pozornica, a svi muškarci i žene tek glumci' poznata je misao kojeg književnika?",
-      "answers": [
-        "Williama Shakespearea",
-        "Vilijama Šekspira",
-        "Shakespearea",
-        "Šekspira",
-        "Šekspir"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-973aedc2",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kako se naziva kultni model sunčanih naočala koji je izvorno razvijen za američke pilote, a karakteriziraju ga velike, približno kapljaste leće?",
-      "answers": [
-        "Aviator",
-        "Avijator",
-        "Aviatorice",
-        "Aviators"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7fa41b29",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Koja se poznata špilja nalazi u dolini rijeke Vezere u Francuskoj a poznata je po dobro očuvanim crtežima životinja koji datiraju iz starijeg kamenog doba?",
-      "answers": [
-        "Lascaux",
-        "Lasko",
-        "Lašo",
-        "Lašok"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6db6fbda",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koje prezime spaja 4. potpredsjednika i 42. predsjednika SAD-a?",
-      "answers": [
-        "Clinton",
-        "Klinton"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-687c92f2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koji je od četiri duha koji slijede Pac Mana najmanje zainteresiran da ga uhvati?",
-      "answers": [
-        "Clyde",
-        "Klajd"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-439b0d39",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Prve tri atomske bombe ikad napravljene nosile su ime Trinity (Trojstvo). Dvije su bačene na Japan a jedna je detonirana na području koje današnje države?",
-      "answers": [
-        "SAD-a",
-        "SAD",
-        "US",
-        "USA",
-        "USA-a",
-        "US-a",
-        "United States",
-        "Junajted Stejts",
-        "Sjedinjene Države",
-        "Sjedinjenih Država",
-        "Americe",
-        "Americas",
-        "Amerikas",
-        "Amerike",
-        "Američke",
-        "Amerika",
-        "Sjedinjene Američke Države",
-        "United States of America",
-        "Junajted Stejts of Amerika"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-91903a2e",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "U kojoj trilogiji je hobbit Bilbo Baggins, glavni lik?",
-      "answers": [
-        "Hobbit",
-        "Hobit"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-10286ea2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je legendarni njemački nogometaš bio trener njemačke reprezentacije na SP-u 2006.g. te ih odveo do trećeg mjesta na turniru?",
-      "answers": [
-        "Jurgen Klinsmann",
-        "Jurgen Klinsman",
-        "Klinsmann",
-        "Klinsman"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7e47c455",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koja država ima najviše otoka na svijetu, preko 260 000?",
-      "answers": [
-        "Švedska",
-        "Sweden",
-        "Sviden",
-        "Swedens",
-        "Svidens",
-        "Sverige",
-        "Swerige",
-        "Šverige",
-        "Šverig"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e79fda32",
-      "type": "blitz",
-      "difficulty": 2,
       "topic": "Ostalo",
-      "question": "Kako se zove religija koju je utemeljio Siddhartha Gautama, usmjerena na put prosvjetljenja i nirvane?",
+      "question": "Kako se naziva mjera ubrzanja koja se često koristi u auto-moto svijetu, izmjerena kao omjer sile i mase?",
       "answers": [
-        "Budizam"
+        "G sila",
+        "G force"
       ],
       "image": null
     },
     {
-      "id": "daily-ae9c009d",
+      "id": "daily-e70f3f25",
       "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Tko je autor romana Percy Jackson i kradljivac munje?",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Tko pjeva pjesmu 'Poker Face'?",
       "answers": [
-        "Rick Riordan",
-        "Rik Riordan",
-        "Riordan"
+        "Lady Gaga",
+        "Lejdi Gaga",
+        "Gaga"
       ],
       "image": null
     },
     {
-      "id": "daily-7a936c47",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se naziva utrka Formule 1 koja se vozi ulicama Monte Carla?",
-      "answers": [
-        "Velika nagrada Monaka",
-        "Monaco Grand Prix"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-94fcaf4d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se naziva mala kaseta s videoigrom koja se umeće izravno u igraću konzolu, kakvu su koristili NES, Game Boy i brojne druge konzole?",
-      "answers": [
-        "Cartridge",
-        "Kartridž"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1d228b80",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kitovi pod vodom u prosjeku izdrže 20 minuta a dišu kojim organom?",
-      "answers": [
-        "Plućima",
-        "Pluća"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cee19b30",
+      "id": "daily-7f6e236b",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Glazba",
-      "question": "Violinu koja se 2013.g. na aukciji prodala za 900 000 funti, je Wallace Hartley svirao 1912.g. na kojem brodu?",
+      "question": "Tko je bio čuveni bubnjar Beatlesa?",
       "answers": [
-        "Titaniku",
-        "Titanik",
-        "Titanicu",
-        "Titanic",
-        "Titanics",
-        "Titaniks"
+        "Ringo Starr",
+        "Ringo Star",
+        "Starr",
+        "Star",
+        "Richard Starkey"
       ],
       "image": null
     },
     {
-      "id": "daily-6629d8d9",
+      "id": "daily-5e390b1e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Microsoftova igraća konzola koja se na tržištu prvi put pojavila 2001.g.?",
+      "answers": [
+        "Xbox",
+        "X Box",
+        "Iks Boks",
+        "X Boks",
+        "Iksboks",
+        "Iksbox",
+        "Iks box"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-634008ce",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Kako se zove čuveni špijun s kodnim imenom 007?",
+      "answers": [
+        "James Bond",
+        "Džems Bond",
+        "Bond"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2182f482",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koji kemijski element čini 21% Zemljine atmosfere ali i 65% ukupne mase ljudskog tijela?",
+      "question": "Koje se slovo u Morseovoj abecedi sastoji od tri točke?",
       "answers": [
-        "Kisik",
-        "Oxygen",
-        "Oksidžen",
-        "Oksigen",
-        "O",
-        "Kiseonik"
+        "S",
+        "Es"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f2fd528a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Ija, Ganimed, Europa i Kalista su mjeseci koji kruže oko kojeg planeta?",
+      "answers": [
+        "Jupitera",
+        "Jupiter",
+        "Jupiters"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aed6d0f6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zove najstariji sačuvani globus Zemlje, izrađen 1492.g. pod vodstvom njemačkog moreplovca i kartografa Martina Behaima, na kojem još nije prikazana Amerika?",
+      "answers": [
+        "Erdapfel",
+        "Zemaljska jabuka",
+        "Earth Apple",
+        "Ert Apl",
+        "Ert Apel",
+        "Jabuka zemlje",
+        "Zemljina jabuka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1697eb9d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Koliko je bilo Punskih ratova?",
+      "answers": [
+        "3",
+        "tri"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4482109f",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Kako se zove znanost koja proučava pelud?",
+      "answers": [
+        "Palinologija"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-5a7bac53",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Mandat američkog predsjednika Johna Tylera obilježio je incident na parnoj korveti američke ratne mornarice na kojoj je, prilikom ceremonijalne plovidbe rijekom Potomac 1844.g., eksplodirao jedan od topova te usmrtio 6 osoba. Kako se zvao taj brod, ako znamo da ime dijeli s jednim uglednim američkim sveučilištem?",
+      "answers": [
+        "USS Princeton",
+        "Princeton",
+        "Prinston",
+        "Princton"
+      ],
+      "image": null,
+      "rarity": "platinum"
+    },
+    {
+      "id": "daily-9ce264b1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja srednjoamerička država ima izlaz na Tihi Ocean ali nema na Karipsko More?",
+      "answers": [
+        "El Salvador",
+        "Salvador"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-04e44837",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "U kojoj državi se odvija radnja filma 'Casablanca' iz 1942.?",
+      "answers": [
+        "Maroko",
+        "Maroku",
+        "Morocco",
+        "Moroko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5814247a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koja se protestantska vjerska struja posebno snažno proširila sjevernim nizozemskim provincijama i dodatno zaoštrila njihov sukob s izrazito katoličkim kraljem španjolske, Filipom II.?",
+      "answers": [
+        "Kalvinizam",
+        "Calvinism"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1f87a4fd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kojem je povijesnom engleskom moreplovcu protagonist videoigre Uncharted Nathan Drake, tvrdio da je potomak?",
+      "answers": [
+        "Francis Drake",
+        "Francis Drejk",
+        "Drake",
+        "Drejk",
+        "Drakeu",
+        "Drejku",
+        "Francisu Drakeu",
+        "Frencisu Drejku"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e744e797",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Koja je najveća katedrala u Parizu koja je djelomično stradala u požaru 2019. godine?",
+      "answers": [
+        "Notre Dame",
+        "Noterdam",
+        "Notre Dam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d080ccca",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je legendarni talijanski golman, s 40 godina, kao kapetan podigao trofej svjetskog prvaka 1982.g.?",
+      "answers": [
+        "Dino Zoff",
+        "Dino Cof",
+        "Dino Zof",
+        "Zoff",
+        "Cof",
+        "Zof"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-65a87c01",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Glavni pravac Transsibirske željeznice iznosi 9 288km a spaja Moskvu sa kojim ruskim gradom te najvećom ruskom lukom u Tihom Oceanu?",
+      "answers": [
+        "Vladivostokom",
+        "Vladivostok",
+        "Vladivostock",
+        "Vladivostockom",
+        "Vladivostoks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bb252299",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U bajci Ivane Brlić Mažuranić, kako se zove domaći koji je najviše pomagao majci da opameti svog sina?",
+      "answers": [
+        "Malik Tintilinić",
+        "Tintilinić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-17edabbd",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Tko je bio prvi rimski car nakon završetka Julijevsko - Klaudijevske dinastije i njihovih 5 careva?",
+      "answers": [
+        "Galba"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ad445eb6",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje je kratko automobilsko ime, nastalo tijekom Drugog svjetskog rata, s vremenom postalo gotovo sinonim za robusno terensko vozilo?",
+      "answers": [
+        "Jeep",
+        "Džip",
+        "Đip"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-be4fc9ac",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koju Rockefellerovu kompaniju, Roosevelt uz pomoć vrhovnog suda razbija na 34 manje kompanije?",
+      "answers": [
+        "Standard Oil",
+        "Standard Ojl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a5d226e3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja grana zoologije se bavi proučavanjem kukaca?",
+      "answers": [
+        "Entomologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d62f0c93",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Od 2010.g. do 2020.g. samo je jedan brazilac završavao na postolju za prestižnu Ballon d'Or nagradu, a to je tko?",
+      "answers": [
+        "Neymar",
+        "Neimar",
+        "Nejmar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c67bd1bc",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Dadilja Nana u originalnoj knjizi o Petru Panu je zapravo koja životinja koja se brine o djeci obitelji Darling?",
+      "answers": [
+        "Pas",
+        "Dog",
+        "Hund",
+        "Newfoundland",
+        "Njufaundlend"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-df49dca6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Tijekom koje je svemirske misije nastala slavna rečenica 'Houston, we've had a problem', danas jedna od najpoznatijih fraza u povijesti istraživanja svemira?",
+      "answers": [
+        "Apollo 13",
+        "Apolo 13",
+        "Apollo thirteen",
+        "Apolo trtin",
+        "Apollo trinaest",
+        "Apolo trinaest",
+        "Apollo XII",
+        "Apolo XIII",
+        "Apolo",
+        "Apollo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f627c77b",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko dijagonala ima kvadrat?",
+      "answers": [
+        "2",
+        "Dvije",
+        "Dva",
+        "Two",
+        "Ii",
+        "Tu",
+        "Tvu",
+        "Zwei",
+        "Cvaj",
+        "Dvi",
+        "Obe",
+        "Obadvi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0177b09b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je kan vladao Kinom u vrijeme putovanja Marka Pola?",
+      "answers": [
+        "Kublaj Kan",
+        "Kublaj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca40947d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kada je Jacques Louis David slikao svoje remekdjelo s Napoleonom kako prelazi Alpe, onda je na umu imao i to da je Napoleon stigao u Italiju i austrijance pobijedio u bitci kod kojeg mjesta?",
+      "answers": [
+        "Marengo",
+        "Marengoa",
+        "Marenga"
       ],
       "image": null
     }

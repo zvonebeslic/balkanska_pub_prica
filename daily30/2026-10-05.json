@@ -1,0 +1,440 @@
+{
+  "version": 2,
+  "date": "2026-10-05",
+  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-463cb96c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koja ćorava životinja nastupa u poslovici u kojoj i ona nađe zrno?",
+      "answers": [
+        "Koka",
+        "Kokoš",
+        "Kokica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a0660b67",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Ostalo",
+      "question": "Kako se zove religijska knjiga kršćana koja se sastoji od Starog i Novog zavjeta?",
+      "answers": [
+        "Biblija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2defe612",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "11, 12, 19, 20, 38 i dopunski broj 56... ne ne, ovo nisu brojevi sa lota već atomski brojevi kemijskih elemenata koje je otkrio koji čuveni britanac?",
+      "answers": [
+        "Humphry Davy",
+        "Hampri Dejvi",
+        "Hamfri Dejvi",
+        "Davy",
+        "Dejvi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e8dc9ae1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Uz obalu kojeg se današnjeg tuniskog otoka 1560.g. odigrala velika pomorska bitka u kojoj je osmanska flota porazila kršćanski savez?",
+      "answers": [
+        "Đerba",
+        "Djerba",
+        "Jerba",
+        "Džerba",
+        "Djerbe",
+        "Džerbe",
+        "Jerbe"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d410fec9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Sudeći prema izreci, u strahu je najveći koji dio tijela?",
+      "answers": [
+        "Oči",
+        "Oko",
+        "Eyes",
+        "Ajs",
+        "Ese",
+        "Aj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f6760567",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko nula ima bilijun prema hrvatskoj dugoj ljestvici?",
+      "answers": [
+        "12",
+        "Dvanaest",
+        "Twelve",
+        "Tvelv",
+        "XII"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a8e6fadf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je francuz, igrajući za Marseille, osvojio Zlatnu Loptu 1991.g.?",
+      "answers": [
+        "Jean Pierre Papin",
+        "Žan Pier Papin",
+        "Papin",
+        "Papen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-84296eef",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koja se pjevačica glazbom počela baviti pod pseudonimom Lizzy Grant a svjetsku slavu stekla pjesmom 'Video Games'?",
+      "answers": [
+        "Lana Del Rey",
+        "Lana Del Rej",
+        "Del Rey",
+        "Del Rej",
+        "Elizabeth Woolridge Grant",
+        "Rey",
+        "Rej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-65a6744a",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "U rimskoj religiji, od 15 svećenika Flamena, koliko ih je bilo 'velikih'?",
+      "answers": [
+        "Tri",
+        "3",
+        "Trojica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d50e1f14",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji je legendarni lik iz Nintendovih videoigara dobio svoj prepoznatljivi izgled dijelom zbog tehničkih ograničenja ranih arkadnih strojeva, pa mu je Shigeru Miyamoto stavio kapu kako ne bi morao detaljno prikazivati i animirati kosu, dok su veliki brkovi pomogli da se njegovo lice i nos jasnije razaznaju na malom broju piksela?",
+      "answers": [
+        "Super Mario",
+        "Mario"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fd6f2811",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Povijest",
+      "question": "Kako se zove grčki povjesničar koji je opisao Peloponeski rat?",
+      "answers": [
+        "Tukidid",
+        "Thukydides",
+        "Thucydides"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-69507a88",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Koja grana entomologije proučava mrave?",
+      "answers": [
+        "Mirmekologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3ced8631",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "'Vrata svih naroda' ili Kserksova vrata dao je sagraditi kralj Kserkso I. 475.g. pr. Kr. a predstavaljala su monumentalni ulazni portal u koji drevni perzijski grad?",
+      "answers": [
+        "Perzepolis",
+        "Persepolis",
+        "Parsa",
+        "Parsu",
+        "Taht-e Džamšid",
+        "Tahsti Džamšid",
+        "Čehel Minar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4c6d2f8d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kojeg prezimena su bila polubraća koja su igrala jedan protiv drugog na Svjetskom nogometnom prvenstvu 2010.g.? Jedan za Njemačku a drugi za Ganu.",
+      "answers": [
+        "Boateng",
+        "Boteng",
+        "Bateng"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-221a085c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Svi znamo da je Mercedes dobio ime po imenu kćeri jednog trgovca automobilima, a kako su se ti otac i kćer prezivali?",
+      "answers": [
+        "Jellinek",
+        "Jelinek"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-859b0fa6",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "U kojem gradu žive 'Prijatelji' (Friends)?",
+      "answers": [
+        "New York",
+        "Nju Jork",
+        "NY",
+        "NYC"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cba3a2e4",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Ono što na nebu s'ja visoko, mjesec je il' sivi.. tko?",
+      "answers": [
+        "Sokol"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d3bf6897",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Koji glumac tumači lik Iron Mana u Marvelovim filmovima?",
+      "answers": [
+        "Robert Downey Jr.",
+        "Robert Dovnej Junior",
+        "Downey Jr.",
+        "Dovnej Junior",
+        "Downey",
+        "Dovni"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c9399d31",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je britanac napisao knjigu o Matildi, nadprosječno pametnoj djevojčici koja ima i telekinetičke sposobnosti?",
+      "answers": [
+        "Roald Dahl",
+        "Rouald Dal",
+        "Roald Dal",
+        "Dahl",
+        "Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4d1fcb83",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Zastava koje države je, zbog crveno bijelih polja koja simboliziraju šahovnicu, jedinstvena u svijetu?",
+      "answers": [
+        "Hrvatske",
+        "Hrvatska",
+        "Croatia",
+        "Kroejša",
+        "Croatias",
+        "Kroejšas",
+        "Cro",
+        "Kro",
+        "Hr",
+        "Hrv",
+        "Rh"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b2d8521f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je grad na obali Meksičkog zaljeva Hernan Cortés osnovao 1519.g. i preko njegova gradskog vijeća pokušao osigurati zakonitu osnovu za svoj pohod?",
+      "answers": [
+        "Veracruz",
+        "Vera Cruz",
+        "Villa Rica de la Vera Cruz",
+        "Vera Kruz",
+        "Verakruz"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60ad5eca",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Od koje godine je u uporabi Veliki pečat Sjedinjenih Američkih Država (Great Seal of the US)?",
+      "answers": [
+        "1782.",
+        "Tisuću sedamsto osamdeset druge",
+        "Tisuću sedamsto osamdeset dva",
+        "MDCCLXXXII"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7d2ea5f2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji je glazbenik poznat po hitu 'Rocket Man'?",
+      "answers": [
+        "Elton John",
+        "Elton Džon",
+        "John",
+        "Džon",
+        "Reginald Kenneth Dwight",
+        "Elton Hercules John"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-037f2beb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Najrasprostranjeniji spoj na Zemlji koji sadrži kisik nalazimo u kojoj tekućini?",
+      "answers": [
+        "Vodi",
+        "Voda",
+        "Water",
+        "Vater",
+        "H2O",
+        "Wasser",
+        "Vaser"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b6045b0d",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji antički rimski pisac i ugledni znanstvenik pogiba u erupciji vulkana Vezuva?",
+      "answers": [
+        "Plinije stariji",
+        "Plinije",
+        "Plinius",
+        "Plinius secundus maior"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a2385366",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove sveta knjiga Judaizma koja obuhvaća Petoknjižje?",
+      "answers": [
+        "Tora",
+        "Torah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca8de667",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj mitskoj zemlji svoje beskrajno djetinjstvo provodi Petar Pan?",
+      "answers": [
+        "Nigdjezemska",
+        "Nigdjezemskoj",
+        "Neverlandu",
+        "Neverland",
+        "Neverlands",
+        "Neverlend",
+        "Neverlends",
+        "Neverlendu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-36db94c6",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Jezero Viktorija i Viktorijini slapovi se nalaze na kojem kontinentu?",
+      "answers": [
+        "Afrika",
+        "Africi",
+        "Afriki",
+        "Africa",
+        "Africas",
+        "Afrikas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-598b9fb6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se u serijalu videoigara Assassin's Creed zove uređaj koji omogućuje korisniku proživljavanje genetskih sjećanja svojih predaka?",
+      "answers": [
+        "Animus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-434fdfc6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 46. predsjednik SAD-a, prezimena Biden, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "JRBJ"
+      ],
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "version": 2,
+  "date": "2026-07-25",
+  "generatedAt": "2026-08-25T18:26:49.209Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-8c48a194",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tommy i Annika Settergren su brat i sestra koji u knjizi Astrid Lindgren zajedno prolaze kroz pustolovine koje, vrlo neobične djevojčice?",
+      "answers": [
+        "Pipi Duge Čarape",
+        "Pipi Duga Čarapa",
+        "Pipi",
+        "Duga Čarapa",
+        "Pipi Langstrump",
+        "Pipi Langštrunf",
+        "Pippilotta",
+        "Pipilota",
+        "Pipi Long Socks",
+        "Pipi Long Soks",
+        "Pippilotte",
+        "Pipilote"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-22fc74b9",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Kojom državom je u potpunosti okružen Monako?",
+      "answers": [
+        "Francuskom",
+        "Francuska",
+        "France",
+        "Frenc",
+        "Frenč",
+        "French"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ab41737c",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U svojoj fiktivnoj autobiografiji, Robinson Crusoe spašava jednog domoroca i daje mu ime po kojem danu u tjednu?",
+      "answers": [
+        "Petak",
+        "Friday",
+        "Frajdej",
+        "Petku",
+        "Fridays",
+        "Frajdejs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5f182fa8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je 'piratski kralj' meksičkog zaljeva pomogao Andrewju Jacksonu u obrani New Orleansa od Britanaca 1815.g.?",
+      "answers": [
+        "Jean Lafitte",
+        "Lafitte",
+        "Žan Lafit",
+        "Lafit"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-961c4e1c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kako zovemo blisku, često dugotrajnu interakciju dvaju organizama različitih vrsta?",
+      "answers": [
+        "Simbioza"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-509b12e2",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Koji je kompozitor skladao glazbu za Ratove zvijezda?",
+      "answers": [
+        "John Williams",
+        "Džon Viliams",
+        "Williams",
+        "Viliams",
+        "John Towner Williams"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ae606165",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "KnjigaSlika",
+      "question": "Kako se naziva papir od biljke koji su koristili stari Egipćani za pisanje?",
+      "answers": [
+        "Papirus",
+        "Papyrus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d4b3f501",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva karakteristična ruska krznena kapa čiji se preklopi mogu spustiti preko ušiju i zaštititi ih od velike hladnoće?",
+      "answers": [
+        "Ushanka",
+        "Ušanka",
+        "Earflap",
+        "Irflep"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2c832cda",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je domaća životinja najprije oplovila svijet na brodu Dolphin, a zatim ponovno putovala oko svijeta s Jamesom Cookom na brodu Endeavour?",
+      "answers": [
+        "Koza",
+        "Goat",
+        "Got",
+        "Kozle",
+        "Zige",
+        "Jare",
+        "Jarić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fba35291",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Glazba",
+      "question": "Andrea Amati, slavni tvorac violina iz Cremone, 1560. godine pravi 24 violine za kojeg francuskog kralja?",
+      "answers": [
+        "Karlo IX",
+        "Karla 9.",
+        "Karlo 9",
+        "Karla devetog",
+        "Karla IX",
+        "Karla 9",
+        "Charles IX",
+        "Čarls IX",
+        "Charles 9",
+        "Čarls 9",
+        "Charles Maximilien"
+      ],
+      "image": null,
+      "rarity": "platinum"
+    },
+    {
+      "id": "daily-341de582",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koje drvo može narasti preko 20m u visinu i 8m u širinu a ujedno je i nacionalni simbol Madagaskara?",
+      "answers": [
+        "Baobab",
+        "Boab",
+        "Adansonija"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-cccf8c2e",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Ferdo Jurić i Jura Ferdić su glavni protagonisti koje humoristične tv serije?",
+      "answers": [
+        "Zauvijek susjedi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c1491f91",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koliki se dio krivnje, prema poslovici, prašta onome tko prizna?",
+      "answers": [
+        "Pola",
+        "Half",
+        "50%"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ba03e2bf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je nogometaš osvojio Ballon d'Or ispred Ronalda i Griezmanna?",
+      "answers": [
+        "Luka Modrić",
+        "Modrić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a755e9de",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Velika Depresija i slom burze na Wall Streetu obilježili su mandat kojeg američkog predsjednika?",
+      "answers": [
+        "Herbert Hoover",
+        "Herbert Clark Hoover",
+        "Hoover",
+        "Hover",
+        "Huver",
+        "Herberta Hoovera",
+        "Herbert Clark Hoovera",
+        "Hoovera",
+        "Hovera",
+        "Huvera"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-294f5399",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koja je sumerska božica zemlje, planina, plodnosti i majčinstva smatrana majkom mnogih bogova?",
+      "answers": [
+        "Ninhursag",
+        "Ninharsag",
+        "Ninharsang",
+        "Ninursag",
+        "Damgalnuna",
+        "Ninmah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bd81e594",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Koji planet je poznat po svojim prstenovima građenim od leda i stijena?",
+      "answers": [
+        "Saturn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8ed654de",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je japanska kompanija razvila arkadnu videoigru Frogger, objavljenu 1981.g.?",
+      "answers": [
+        "Konami"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7637fd93",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Tko je bio car istočnog, u vrijeme kada je zapadno rimsko carstvo prestalo postojati?",
+      "answers": [
+        "Zenon",
+        "Zeno"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-908aeff9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Drugi trijumvirat 43.g. pr. Kr. su sklopili Oktavijan (kasnije August), Marko Emilie Lepid i tko još?",
+      "answers": [
+        "Marko Antonije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fa8e02d0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kojim stručnim pojmom opisujemo proces u kojem se molekule ili atomi zadržavaju na površini neke tvari, bez prodiranja u njezinu unutrašnjost?",
+      "answers": [
+        "Adsorpcija",
+        "Adsorption",
+        "Adsorpšn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-282080aa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Gary Lineker je jednom izjavio 'Nogomet je jednostavna igra: 22 čovjeka trče za loptom 90 minuta, a na kraju uvijek pobijede...' Tko?",
+      "answers": [
+        "Njemci",
+        "Švabe",
+        "Njemačka",
+        "Deutschland",
+        "Germani",
+        "Germany",
+        "Džermani",
+        "Džermani",
+        "Ger",
+        "De",
+        "Njem",
+        "Švabija",
+        "Švabska"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7724b253",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvala božica zemlje i Anšarova družica, majka boga Anua prema mezopotamskoj kozmogoniji?",
+      "answers": [
+        "Kišar",
+        "Kishar"
+      ],
+      "image": null,
+      "rarity": "legendary"
+    },
+    {
+      "id": "daily-44158f61",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja se afrička država smatra pradomovinom kave, a uz nju je vezana i legenda o pastiru Kaldiju koji je primijetio neobično živahno ponašanje svojih koza nakon što su jele crvene bobice?",
+      "answers": [
+        "Etiopija",
+        "Ethiopia"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-47fab0b1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kojim slovom označavamo Farad, mjernu jedinicu za električni kapacitet?",
+      "answers": [
+        "F",
+        "Ef"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-08466cc4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "'Pergamski oltar' i 'Ištarina vrata'  kao autentične rekonstrukcije povijesnih građevina možete posjetiti u kojem berlinskom muzeju?",
+      "answers": [
+        "Pergamskom Muzeju",
+        "Pergamski",
+        "Pergamon",
+        "Pergamons",
+        "Pergamonski",
+        "Pergamov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3ee2d411",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koje je godine Hrvatska nogometna reprezentacija prvi put nastupila na Europskom prvenstvu?",
+      "answers": [
+        "1996",
+        "Tisuću devetsto devedeset šeste",
+        "MCMXCVI",
+        "Nineteen nintysix",
+        "Najntin najntisiks",
+        "96",
+        "Devedeset šeste"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b407077a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je američka gaming kompanija, jedan od pionira industrije videoigara, proizvela legendarnu igraću konzolu modela 2600?",
+      "answers": [
+        "Atari"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4a310df9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Cookovi su mornari, kao i mnoge druge posade dugih putovanja, strahovali od bolesti uzrokovane nedostatkom vitamina C. a zvala se kako?",
+      "answers": [
+        "Skorbut"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6b7481a4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Koji je američki predsjednik bio na vlasti tijekom većine Drugog svjetskog rata (do 1945.)?",
+      "answers": [
+        "Franklin Delano Roosevelt",
+        "Franklin Roosevelt",
+        "Frenklin Ruzvelt",
+        "FDR",
+        "Roosevelt",
+        "Ruzvelt"
+      ],
+      "image": null
+    }
+  ]
+}

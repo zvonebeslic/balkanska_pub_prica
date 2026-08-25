@@ -1,438 +1,448 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-19",
-  "generatedAt": "2026-08-24T20:08:22.546Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-ee42bfde",
+      "id": "daily-6cc8ac0a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Kojem se francuskom 'Kralju Suncu', simbolu apsolutne monarhije, tradicionalno pripisuje izreka 'Država, to sam ja'?",
+      "answers": [
+        "Luj XIV.",
+        "Luj 14.",
+        "Luj Bogodani",
+        "Luj Veliki",
+        "Luju",
+        "Louis",
+        "Luis",
+        "Luja",
+        "Louisa",
+        "Luisa",
+        "Luju četrnaestom",
+        "Luj četrnaesti",
+        "Luju 14.",
+        "Luju XIV.",
+        "Luju 14th",
+        "Luj Forteenth",
+        "Luj Fortint"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-17c98932",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji je pjevač poznat po pjesmama 'Purple Haze' i 'Hey Joe'?",
+      "answers": [
+        "Jimi Hendrix",
+        "Džimi Hendriks",
+        "Hendrix",
+        "Hendriks",
+        "Johnny Allen Hendrix"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2f082909",
       "type": "blitz",
       "difficulty": 1,
-      "topic": "Film",
-      "question": "Kako se zove izmišljeni grad u kojem živi Batman?",
-      "answers": [
-        "Gotham",
-        "Gotham City",
-        "Gotem"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-16d7c4aa",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koja dva prezimena se nalaze na američkom zvonu slobode (Liberty Bell) koja ujedno predstavljaju londonske majstore ljevače, koji su zvone i napravili?",
-      "answers": [
-        "Pass i Stow",
-        "Pass Stow",
-        "Pas i Stov",
-        "Pas Stov",
-        "Pass and Stow",
-        "Pas end Stov",
-        "Pas and Stov",
-        "Stow i Pass",
-        "Stow Pass",
-        "Stov i Pas",
-        "Stov Pas",
-        "Stow and Pass",
-        "Stov end Pas",
-        "Stov and Pas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-228cb202",
-      "type": "blitz",
-      "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Na kojem se kontinentu nalazi najveći dio Turske?",
+      "question": "Koji je glavni grad Bjelorusije?",
       "answers": [
-        "Azija",
-        "Aziji",
-        "Asia",
-        "Asias",
-        "Asii"
+        "Minsk"
       ],
       "image": null
     },
     {
-      "id": "daily-0374a151",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "AntickiRim",
-      "question": "U kojem talijanskom gradu se nalaze Karakaline terme, kompleks koji je odjednom mogao primiti 1600 kupača?",
-      "answers": [
-        "Rimu",
-        "U Rimu",
-        "Rim"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c7ed021b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se naziva zamišljena crta koja Zemlju dijeli na sjevernu i južnu polutku?",
-      "answers": [
-        "Ekvator",
-        "Ecuator",
-        "Ecvator",
-        "Polutnik",
-        "Poluta",
-        "Equator"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-eb6355bb",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koji je reper suprug pjevačice Beyoncé?",
-      "answers": [
-        "Jay Z",
-        "Džej Zi",
-        "Shawn Corey Carter",
-        "Corey",
-        "Korej",
-        "Carter",
-        "Karter"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4b9ad770",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji začin dobivamo od biljke penjačice latinskog imena 'Piper'?",
-      "answers": [
-        "Papar",
-        "Biber"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-68ec5bd1",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Koji je vrhovni bog nordijske mitologije koji vlada Asgardom?",
-      "answers": [
-        "Odin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f75c08c3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je vojskovođa češkog podrijetla tijekom Tridesetogodišnjeg rata okupio golemu plaćeničku vojsku, postao gotovo nezamjenjiv caru Ferdinandu II. i zatim toliko moćan da je 1634.g. ubijen nakon optužbi za izdaju?",
-      "answers": [
-        "Albrecht von Wallenstein",
-        "Albreht von Valenštajn",
-        "Von Wallenstein",
-        "Von Valenštajn",
-        "Wallenstein",
-        "Valenštajn"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d19bbe1c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove britanski pisac koji je stvorio lik Jamesa Bonda?",
-      "answers": [
-        "Ian Fleming",
-        "Fleming"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2c80d1d1",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se naziva politički sustav u kojem vlast proizlazi iz naroda putem izbora i predstavnika?",
-      "answers": [
-        "Demokracija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ecbb7b70",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Sport",
-      "question": "Koliko naslova svjetskog WRC prvaka ukupno imaju legendarni finski rally vozači Juha Kankkunen i Tommi Mäkinen?",
-      "answers": [
-        "8",
-        "Osam"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bf545ed8",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "S kojim se renesansnim političkim misliocem često povezuje tvrdnja 'Cilj opravdava sredstvo', iako te riječi u tom obliku nije zapisao?",
-      "answers": [
-        "Niccolò Machiavelli",
-        "Nikolo Makijaveli",
-        "Machiavelli",
-        "Makijaveli",
-        "Machiavelliem",
-        "Makijavelijem"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bc05b347",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Od kojeg dijela, prema poslovici, riba počinje smrdjeti?",
-      "answers": [
-        "Glave",
-        "Glava",
-        "Head",
-        "Hed"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7d20c661",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koja je spisateljica napisala 'Tajni Vrt'?",
-      "answers": [
-        "Frances Hodgson Burnett",
-        "Frances Eliza Hodgson Burnett",
-        "Frances Burnett",
-        "Fransis Elajza Hodžsn Bernet",
-        "Fransis Elajza Hodžsn Bernet",
-        "Fransis Bernet",
-        "Hodgson Burnett",
-        "Burnett",
-        "Hodgson",
-        "Hodžson Bernet",
-        "Bernet",
-        "Hodžson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-00affbd0",
+      "id": "daily-27a114fb",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Kako se naziva mnogokut s osam stranica?",
+      "question": "Kojim je nazivom ostao poznat 29. listopada 1929.g., jedan od najdramatičnijih dana sloma američkog tržišta dionica?",
       "answers": [
-        "Osmerokut",
-        "Oktogon",
-        "Octagon"
+        "Crni utorak",
+        "Black Tuesday",
+        "Blek Tjuzdej",
+        "Blek Tjuzdi",
+        "Utorak crni"
       ],
       "image": null
     },
     {
-      "id": "daily-56d0be5f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se naziva glazbeno djelo za solistički instrument i orkestar, često u tri stavka?",
-      "answers": [
-        "Koncert"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-86d1e104",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji je najveći Saturnov mjesec?",
-      "answers": [
-        "Titan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-38a45fb3",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji je hrvatski književnik napisao dječije romane 'Zagonetni dječak', 'Domaća zadaća' i 'Lažeš, Melita'?",
-      "answers": [
-        "Ivan Kušan",
-        "Kušan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ca9ce53f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Koji je američki glumac utjelovio lik Rockyja Balboe u filmskom serijalu 'Rocky'?",
-      "answers": [
-        "Sylvester Stallone",
-        "Silvestar Stalone",
-        "Stallone"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4ec9455f",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "U kojem današnjem gradu je bilo sjedište Galskog carstva, koje se pod vodstvom Postuma odvojilo od Rima?",
-      "answers": [
-        "Kölnu",
-        "Köln",
-        "Koln",
-        "Kolnu",
-        "Cologne",
-        "Cologneu",
-        "Kolonje",
-        "Kolonji",
-        "Keln",
-        "Kelnu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-83db3a36",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koje otočje uz obalu Afrike pripada Španjolskoj?",
-      "answers": [
-        "Kanarski Otoci",
-        "Kanarsko",
-        "Kanarski",
-        "Kanari",
-        "Canares",
-        "Canarias",
-        "Kanares",
-        "Kanarias",
-        "Canari"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9ce91548",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Sport",
-      "question": "Koji je klub iz Münchena višestruki prvak Njemačke i osvajač Lige prvaka?",
-      "answers": [
-        "Bayern München",
-        "Bayern Munich",
-        "Bayern"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-05fae748",
+      "id": "daily-6962c696",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove protagonist igre Grand Theft Auto IV, ratni veteran s područja bivše Jugoslavije koji dolazi u Liberty City u potrazi za novim životom?",
+      "question": "Kako se zove demon koji daje ime serijalu akcijskih RPG videoigara Diablo i nosi titulu Lord of Terror (Gospodar terora)?",
       "answers": [
-        "Niko Bellic",
-        "Niko Belić",
-        "Niko Belik",
-        "Bellic",
-        "Belić"
+        "Diablo",
+        "Dijablo"
       ],
       "image": null
     },
     {
-      "id": "daily-262d11fe",
+      "id": "daily-73e65d21",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Koji je službeni jezik u Brazilu?",
+      "topic": "MisliIzrekeCitati",
+      "question": "Astronaut Neil Armstrong je nakon što je stupio nogom na Mjesec 1969.g. izgovorio jednu od najpoznatijih rečenica 20. stoljeća u kojoj spominje mali korak za čovjeka ali i veliki za koga?",
       "answers": [
-        "Portugalski",
-        "Portugalski jezik",
-        "Portuguese",
-        "Portugiz"
+        "Čovječanstvo",
+        "Humanity",
+        "Hjumeniti",
+        "Humaniti",
+        "Ljudstvo",
+        "Ljude",
+        "People",
+        "Pipl"
       ],
       "image": null
     },
     {
-      "id": "daily-acd02078",
+      "id": "daily-7db41e64",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Koji je američki gluhi glumac dobio oscara za ulogu u filmu 'Coda', igrajući ulogu Franka, gluhog oca obitelji Rossi?",
       "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
+        "Troy Kotsur",
+        "Troj Kocur",
+        "Kotsur",
+        "Kocur",
+        "Troy Michael Kotsur"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-659241b5",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je britanski model, prepoznatljiv po vrlo kratkoj kosi i velikim očima, postao jednom od najvećih modnih ikona 'Swinging Londona' tijekom 1960-ih?",
+      "answers": [
+        "Twiggy",
+        "Tvigi",
+        "Lesley Hornby",
+        "Lesley Lawson"
       ],
       "image": null
     },
     {
-      "id": "daily-169afea6",
+      "id": "daily-a29dcb71",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Kako se zove poznata teorija koja opisuje nastanak i širenje svemira iz izuzetno guste točke?",
+      "question": "Kojem su znanstveniku Milutin i Georgina bili otac i majka?",
       "answers": [
-        "Veliki prasak",
-        "Big Bang",
-        "Velikog Praska",
-        "Big Beng"
+        "Nikoli Tesli",
+        "Nikola Tesla",
+        "Tesli",
+        "Tesla",
+        "Teslas"
       ],
       "image": null
     },
     {
-      "id": "daily-d6a2f75f",
+      "id": "daily-c6956be7",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Od 7 rimskih kraljeva, koliko ih je bilo etruščanskog porijekla?",
+      "answers": [
+        "3",
+        "Tri",
+        "Trojica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dd965a59",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji američki grad nosi ime po šestom predsjedniku SAD-a?",
+      "answers": [
+        "Quincy",
+        "Kvinci",
+        "Kvinsi",
+        "Kuinci",
+        "Kuinsi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-10d9a3d2",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Tko pjeva pjesmu 'Single Ladies' iz 2008.?",
+      "answers": [
+        "Beyonce",
+        "Bions",
+        "Beyonce Giselle Knowles",
+        "Beyonce Knowles"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dd7df768",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Uz Buba, kako se zove još jedan zmaj kojima igrači upravlja u arkadnoj videoigri Bubble Bobble?",
+      "answers": [
+        "Bob"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-188b0f8c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Koji je američki predsjednik poznat po frazi 'Ask not what your country can do for you'?",
+      "answers": [
+        "John F. Kennedy",
+        "Džon Kenedi",
+        "Kennedy",
+        "Kenedi",
+        "JFK"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b2acc8ba",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kako se zove planinski prolaz kod kojeg su se 1847 g. sukobile američke snage sa, tada budućim predsjednikom amerike Zacharyjom Taylorom i meksičke snage pod vodstvom Antonia Lopeza de Santa Anna?",
+      "answers": [
+        "Buena Vista"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-79d87dd8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva stražnji dio broda?",
+      "answers": [
+        "Krma"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a08a222c",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Nastavi karijeru Dennisa Bergkampa: Ajax, Inter Milan, pa onda tko?",
+      "question": "Na europskom prvenstvu 1976.g. održanom u Jugoslaviji, samo je jedan jugoslavenski reprezentativac završio u najboljih 11 cijelog turnira, a on je tko?",
       "answers": [
-        "Arsenal",
-        "Topnici",
-        "Gunners",
-        "Ganers"
+        "Dragan Džajić",
+        "Dzajic",
+        "Džajić"
       ],
       "image": null
     },
     {
-      "id": "daily-8372cf86",
+      "id": "daily-b60d5c27",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "'Berlinsko društvo cara Wilhelma' bilo je njemačko znanstveno društvo koje danas, kao najveća njemačka znanstvena organizacija, djeluje pod imenom kojeg njemačkog nobelovca?",
+      "answers": [
+        "Maxa Plancka",
+        "Max Planck",
+        "Maksa Planka",
+        "Maks Plank",
+        "Plancka",
+        "Planck",
+        "Planka",
+        "Plank",
+        "Plancks",
+        "Planks"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-444b1bb4",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji bi broj dobili kada bi zbrojili milje i dane iz dva možda i najpoznatija romana Julesa Verna?",
+      "answers": [
+        "20 080",
+        "Dvadeset tisuća i osamdeset",
+        "Dvadeset tisuća osamdeset",
+        "Dvadeset hiljada osamdeset",
+        "Twenty thousand eighty",
+        "Tventi tausend ejti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-32620f6b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji se glavni grad nalazi 'preko vode' finskom glavnom gradu Helsinkiju?",
+      "answers": [
+        "Tallinn",
+        "Talin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b900b37a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Po kojim je mitskim ratnicama iz grčke mitologije Francisco de Orellana nazvao najveću rijeku Južne Amerike, nakon što je njegova ekspedicija izvijestila o susretu sa ženama ratnicama?",
+      "answers": [
+        "Amazonkama",
+        "Amazone",
+        "Amazons",
+        "Amazonke",
+        "Amazonama",
+        "Amazonsima",
+        "Amazonka",
+        "Amazona",
+        "Amazonsi",
+        "Amazonsice",
+        "Amazonkice",
+        "Amazonkicama"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3170a985",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Kako se zove lav iz Narnijskih kronika?",
+      "answers": [
+        "Aslan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0a839f4e",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Film",
-      "question": "Američka televizijska serija 'Prijatelji' (Friends) se na NBC-u prikazivala od 1994. do koje godine?",
+      "topic": "AntickiRim",
+      "question": "Koji je drevni narod italije prvo ratovao, pa se udružio sa Romulovim narodom nakon što su 'Otete Sabinjanke' zaustavile boj?",
       "answers": [
-        "2004.",
-        "Dvije tisuće četvrta"
+        "Sabinjani",
+        "Sabini"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b6e75da9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojoj je bitki 1757.g. Fridrik II. Hohenzollern s brojčano slabijom vojskom izveo briljantan manevar protiv Francuza i njihovih saveznika te ostvario jednu od najpoznatijih pobjeda svoje vojne karijere?",
+      "answers": [
+        "Bitka kod Rossbacha",
+        "Battle of Rossbach",
+        "Batl.of Rozbah",
+        "Bitka kod Rozbaha",
+        "Rossbacha",
+        "Rozbaha",
+        "Rossbach",
+        "Rozbah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-049e9197",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove grčki bog podzemlja?",
+      "answers": [
+        "Had",
+        "Hades"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7c979f2c",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tko je napisao fantastični roman o malenoj djevojčici Momo i misterioznim osobama u sivom koji se hrane vremenom ljudskim vremenom?",
+      "answers": [
+        "Michael Ende",
+        "Majkl Ende",
+        "Mihael Ende",
+        "Mihael End",
+        "Majkl End",
+        "Ende",
+        "End"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-705e0a36",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Koja je membranska vrećasta struktura unutar kloroplasta ključna za odvijanje svjetlosno-ovisnih reakcija?",
+      "answers": [
+        "Tilakoid",
+        "Tilakoidi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0a0aa13e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kojoj pasmini pripada Rin Tin Tin, pas spašen iz 1. Svjetskog rata koji je kasnije postao filmska zvijezda?",
+      "answers": [
+        "Njemački ovčar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-05375db6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojoj je francuskoj palači 1919.g. potpisan mirovni sporazum s Njemačkom, na istom mjestu na kojem je samo 48 godina ranije bilo proglašeno Njemačko Carstvo?",
+      "answers": [
+        "Versaille",
+        "Versaj",
+        "Versailleu",
+        "Versaju",
+        "Versailleskoj",
+        "Versajskoj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a62c9510",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Na kojem su stadionu nogometaši Arsenala uvijek neugodni domaćini?",
+      "answers": [
+        "Emirates",
+        "Emirejts",
+        "Emiratesu",
+        "Emirejtsu"
       ],
       "image": null
     }

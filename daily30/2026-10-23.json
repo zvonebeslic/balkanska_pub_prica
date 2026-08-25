@@ -1,0 +1,448 @@
+{
+  "version": 2,
+  "date": "2026-10-23",
+  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-6e10408d",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je popularni fiktivni lik iz dječjih priča u originalnoj verziji priče završio obješen o drvo od strane Lisice i Mačka, dvojice razbojnika? Iako je pisac prvotno zamislio tragičan kraj, zbog velikog broja šokiranih čitatelja i djece bio je primoran promijeniti završetak i nastaviti priču sretnijim sa krajem.",
+      "answers": [
+        "Pinokijo",
+        "Pinokio",
+        "Pinocchio",
+        "Pinochio"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7f6e236b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Tko je bio čuveni bubnjar Beatlesa?",
+      "answers": [
+        "Ringo Starr",
+        "Ringo Star",
+        "Starr",
+        "Star",
+        "Richard Starkey"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4d6daae4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio prvi afroamerički predsjednik SAD-a",
+      "answers": [
+        "Barack Obama",
+        "Barak Obama",
+        "Obama"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-c4b76f2d",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Tko je glumio Freddija Mercuryja u filmu Bohemian Rhapsody iz 2018.?",
+      "answers": [
+        "Rami Malek",
+        "Malek"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9d516afd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Unutar kojeg se prostora za eksploataciju prirodnih sirovina koristila Davyjeva svjetiljka?",
+      "answers": [
+        "Rudnika",
+        "Rudniku",
+        "Rudnik",
+        "Mine",
+        "Majn",
+        "Mines",
+        "Majns",
+        "Pit",
+        "Pits"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2a6dd091",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad Meksika?",
+      "answers": [
+        "Ciudad de México",
+        "Mexico City",
+        "Siudad de Meksiko",
+        "Meksiko Siti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bcecb2ea",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Edward Bulwer-Lytton je bio engleski književnik koji je skovao čuvenu rečenicu prema kojoj je pero moćnije od čega?",
+      "answers": [
+        "Mača",
+        "Mač",
+        "Swords",
+        "Sword",
+        "Svords",
+        "Svord"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7c8bb81d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Terran odmetnik i jedan od glavnih protagonista serijala videoigara StarCraft, dugogodišnji saveznik i protivnik Sarah Kerrigan?",
+      "answers": [
+        "Jim Raynor",
+        "Džim Rejnor",
+        "Raynor",
+        "Rejnor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3b34460a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Do kojeg je kontinenta Kristofor Kolumbo vjerovao da je stigao 1492. godine?",
+      "answers": [
+        "Azija",
+        "Azije",
+        "Asia",
+        "Asie",
+        "Asias"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1321ff0c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "U Sarajevu je do danas sačuvano nekoliko kamenih mostova preko kojih se može prijeći, a jedan takav, iako su ga gradili Osmanlije, dobio je ime po carstvu koje je tim prostorom vladalo mnogo prije. Kako se zove taj most?",
+      "answers": [
+        "Rimski most",
+        "Rimski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4e82aa4c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "FloraFauna",
+      "question": "Kojom zbirnom imenicom nazivamo jagodu, nektarinu, kesten, dunju i limun?",
+      "answers": [
+        "Voće"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-08954366",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad države Južni Sudan?",
+      "answers": [
+        "Juba",
+        "Džuba"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f33604af",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "U kojoj seriji Borisa Dvornika poznamo kao Dimnjačara?",
+      "answers": [
+        "Kapelski Kresovi",
+        "Kresovi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cd43823b",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji roman Marka Twaina na kraju prepričava kako je jedan od dva glavna lika živio dug život dok je drugi umro u petnaestoj godini života?",
+      "answers": [
+        "Kraljević i Prosjak",
+        "Kraljević Prosjak",
+        "Kraljević i Prosjačić",
+        "Kraljević Prosjačić",
+        "Kraljević i Prosijak",
+        "Kraljević Prosijak",
+        "Kralj i Prosjak",
+        "Kralj Prosjak",
+        "Kralj i Prosjačić",
+        "Kralj Prosjačić",
+        "The Prince and the Pauper",
+        "Prince and the Pauper",
+        "D princ end d pouper",
+        "Princ end d pouper"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-36c51635",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koliko je godina trajao, simboličnim okruglim brojem nazvan, Stogodišnji rat?",
+      "answers": [
+        "116",
+        "Sto šesnaest",
+        "CXVI",
+        "One hundred sixteen",
+        "Van handred sikstin",
+        "Sto i šesnaest",
+        "Stotinu šesnaest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f36654f3",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva osvježavajući napitak od jogurta, vode i soli koji je osobito raširen u Turskoj i okolnim područjima?",
+      "answers": [
+        "Ayran",
+        "Ajran",
+        "Airan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d5fb13a9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koje je prezime nosio britanski matematičar Alan Mathison koji je imao važnu ulogu u razbijanju šifri Enigme i poslije postao jedna od ključnih figura rane računalne znanosti te umjetne inteligencije?",
+      "answers": [
+        "Turing",
+        "Taring",
+        "Alan Turing",
+        "Alan Taring"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-34cc1b1a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koje je morske životinje Kristofor Kolumbo 1493.g. ugledao u Karipskom moru i u svojem ih zapisu opisao kao sirene?",
+      "answers": [
+        "Morske krave",
+        "Morska krava",
+        "Lamantini",
+        "Lamantine",
+        "Manatees",
+        "Manate",
+        "Sea Cow",
+        "Si kov",
+        "Seacow",
+        "Sikov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-986686d5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 4. predsjednik SAD-a, prezimena Madison, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "JM"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-459cef41",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva umjetno prokopan vodeni put kojim mogu ploviti brodovi?",
+      "answers": [
+        "Kanal",
+        "Canal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6ea2633b",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je zlatni novac, prvi put kovan u Veneciji krajem 13. st, stoljećima bio jedna od najuglednijih trgovačkih kovanica Europe i Sredozemlja?",
+      "answers": [
+        "Dukat",
+        "Ducato",
+        "Ducati",
+        "Ducat"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-79cb8194",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja je životinja potvrdila nijekanje sv. Petra da pozna Isusa Krista?",
+      "answers": [
+        "Pijetao",
+        "Pijevac",
+        "Oroz",
+        "Kokot"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5d39755a",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj fiktivnoj šumi, nakon prestanka čarolije, nestaje dvor, starješina, domaći i snaha a ostaju samo majka i sin?",
+      "answers": [
+        "Šumi Striborovoj",
+        "Striborovoj",
+        "Stribors",
+        "Stribor",
+        "Stribora"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-57d034cb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je trener vratio Juventus iz druge u prvu talijansku nogometnu ligu 2007.g.?",
+      "answers": [
+        "Didier Deschamps",
+        "Didijer Dešamp",
+        "Didie Dešamp",
+        "Deschamps",
+        "Dešamp"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a2ef6db3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "U kojoj se državi nalazi stadion Hampden Park koji se zbog sponzorskih obveza zove i Barclays Hampden?",
+      "answers": [
+        "Škotskoj",
+        "Škotska",
+        "Scotland",
+        "Scotlands",
+        "Skotlend",
+        "Skotlends",
+        "Scotts",
+        "Skots",
+        "Scot",
+        "Sco"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-76126662",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove slavni ork iz Warcrafta koji je bio poglavar Horde i jedan od najpoznatijih šamana u svijetu Azerotha?",
+      "answers": [
+        "Thrall",
+        "Tral"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-af671f36",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Ako je za bubnjevima Emil Kranjčić, za klavijaturama Damjan Deurić, sa gitarom Andraš Išpan a pjeva Livio Berak, onda smo na koncertu koje grupe?",
+      "answers": [
+        "Divlje Jagode"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-37e41f8f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Stadion Jose Alvalade se nalazi u kojem portugalskom gradu?",
+      "answers": [
+        "Lisabonu",
+        "Lisabon",
+        "Lisboas",
+        "Lisboa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b5774b50",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji se skup disciplina bavi proučavanjem struktura od 1 do 100 nanometara?",
+      "answers": [
+        "Nanotehnologija",
+        "Nanotehnika",
+        "Nanotechnology",
+        "Nanotehnolođi",
+        "Nanotechnik",
+        "Nanotehnik",
+        "Nanoscience",
+        "Nanoscajenc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7dd462ea",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Kojeg rimskog cara 235.g. ubija njegova vojska u vojnom logoru u blizini današnjeg Mainza?",
+      "answers": [
+        "Aleksandar Sever",
+        "Aleksandra Severa",
+        "Alexander Severus",
+        "Severus Alexander"
+      ],
+      "image": null
+    }
+  ]
+}

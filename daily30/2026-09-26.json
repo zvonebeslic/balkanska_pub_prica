@@ -1,0 +1,412 @@
+{
+  "version": 2,
+  "date": "2026-09-26",
+  "generatedAt": "2026-08-25T18:26:49.228Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-5ff2592c",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Koji je njemački skladatelj i orguljaš bio poznat i kao 'Peti Evanđelist'?",
+      "answers": [
+        "Johann Sebastian Bach",
+        "Johan Sebastian Bah",
+        "Johann Bach",
+        "Johan Bah",
+        "Sebastian Bach",
+        "Sebastian Bah",
+        "Bach",
+        "Bah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a8291b7f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Koji grad tražimo, ako znamo da se u rimsko doba zvao Tilurium?",
+      "answers": [
+        "Trilj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-192fed4a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koje godine je prvi put održan izbor za najboljeg nogometaša prošle sezone, po izboru France Footballa?",
+      "answers": [
+        "1956",
+        "Tisuću devetsto pedeset šeste",
+        "56",
+        "Pedeset šeste",
+        "Nineteen fifty six",
+        "Najtin fifti siks",
+        "Fifty six",
+        "Fifti siks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-983a5a16",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Nastavi klupsku karijeru Michela Platinija: Nancy, Saint-Etienne pa onda koji klub?",
+      "answers": [
+        "Juventus",
+        "Juve"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-64701fa8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se nazivaju virtualni ljudi kojima igrač upravlja u serijalu videoigara The Sims?",
+      "answers": [
+        "Simovi",
+        "Sims",
+        "Sim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eb9c8068",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Povijest",
+      "question": "Kako se zove najpoznatiji rimski put koji je povezivao Rim s jugom Italije i koji je simbol rimskog cestovnog sustava?",
+      "answers": [
+        "Via Appia",
+        "Apijeva cesta",
+        "Vija Apija",
+        "Via Apija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8b153553",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Mozambika?",
+      "answers": [
+        "Maputo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a822087a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako nazivamo točku na Zemljinoj površini iznad žarišta potresa, iz koje se potresni valovi šire u svim smjerovima?",
+      "answers": [
+        "Epicentar"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-67579d0e",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Iz kojeg grada dolazi hip-hop grupa Wu-Tang Clan?",
+      "answers": [
+        "New York",
+        "New Yorka",
+        "Nju Jork",
+        "Nju Jorka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-39679617",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Prema kojem je azijskom području zapravo plovila flota moreplovca Pedra Cabrala kada je 1500.g. stigla do Brazila?",
+      "answers": [
+        "Indija",
+        "Indiji",
+        "India",
+        "Indie",
+        "Indii"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a4c79dbf",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Tko je bio zadnji 'priznati' rimski car, zapadnog rimskog carstva?",
+      "answers": [
+        "Julije Nepot",
+        "Nepot",
+        "Iulius Nepotus",
+        "Nepotus",
+        "Julius Nepotus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-07e583ae",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako su se prezivala braća Joseph Michel i Jacques Etienne, koji su 1783.g. izumili balon na vrući zrak?",
+      "answers": [
+        "Montgolfier",
+        "Mongolfjer",
+        "Mongolfer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-33cf2849",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje je utvrđeno mjesto u Kentuckyju postalo gotovo mitski simbol američkih zlatnih rezervi jer se ondje nalazi United States Bullion Depository?",
+      "answers": [
+        "Fort Knox",
+        "Fort Noks",
+        "Knox",
+        "Noks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d1dcd0af",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove grčki bog vina i zabave?",
+      "answers": [
+        "Dioniz",
+        "Dionysos",
+        "Dionysus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b564328",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Na koju rijeku, kroz Caprivijev uski pojas, Namibija ima izlaz?",
+      "answers": [
+        "Zambezi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8a197f5d",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Povijest",
+      "question": "Kojoj su dinastiji pripadali rimski carevi Vespazijan, Tit i Domicijan?",
+      "answers": [
+        "Flavijevci",
+        "Flavijevskoj",
+        "Flavijevskoj Dinastiji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-96525f8b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva uređaj kojim se upravlja smjerom kretanja broda?",
+      "answers": [
+        "Kormilo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ec915269",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je fiktivni lik nastao iz pera Carla Collodija 1881.g.?",
+      "answers": [
+        "Pinokijo",
+        "Pinokio",
+        "Pinocchio",
+        "Pinochio"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6415af46",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Tko je režirao 'Pakleni šund' (Pulp Fiction)?",
+      "answers": [
+        "Quentin Tarantino",
+        "Kventin Tarantino",
+        "Tarantino"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e0d8b12c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Koji je film iz 1972. ovjekovječen rečenicom 'Piše Hund, ali piše i Mile'?",
+      "answers": [
+        "Vuk samotnjak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9e65a639",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Koja je najotrovnija hrvatska a ujedno i europska zmija prepoznatljiva po roščiću na glavi?",
+      "answers": [
+        "Poskok"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a55129c7",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kovčeg koje djevojčice sadrži točno 43.162 zlatnika koje joj je ostavio njezin otac, kapetan Efraim?",
+      "answers": [
+        "Pipi Duge Čarape",
+        "Pipi Duga Čarapa",
+        "Pipi",
+        "Duga Čarapa",
+        "Pipi Langstrump",
+        "Pipi Langštrunf",
+        "Pippilotta",
+        "Pipilota",
+        "Pipi Long Socks",
+        "Pipi Long Soks",
+        "Pippilotte",
+        "Pipilote"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60dfdefd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove golemi gušter, jedan od tri originalna igriva čudovišta u arkadnoj videoigri Rampage?",
+      "answers": [
+        "Lizzie",
+        "Lizi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bacd12d7",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji geometrijski lik nema ni stranice ni vrhove, a sve točke njegove kružnice jednako su udaljene od središta?",
+      "answers": [
+        "Krug",
+        "Kružnica",
+        "Circle",
+        "Cirkl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b30107ae",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Pas Lajka je jedno od prvih živih bića u svemiru, ali i pas lutalica iz kojeg grada?",
+      "answers": [
+        "Moskvi",
+        "Moskva"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a17714b9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Izraz 'Kruha i igara' kritizirao je rimsko društvo koje se zadovoljavalo hranom i zabavom umjesto političkom slobodom. Koji ga je rimski satiričar proslavio?",
+      "answers": [
+        "Juvenal",
+        "Juvenalis"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fdbed69b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 13. predsjednik SAD-a, prezimena Fillmore, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "MF"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-71d91bc6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "U čast kojeg američkog predsjednika je podignut 169m visok monumentalni obelisk u Washington DC-u?",
+      "answers": [
+        "Georgea Washingtona",
+        "Washingtona",
+        "Džordža Vašingtona",
+        "Vašingtona"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2f495118",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je rimski pjesnik zaslužan za poznatu latinsku poruku 'Carpe diem', odnosno 'Iskoristi dan'?",
+      "answers": [
+        "Horacije",
+        "Horatie",
+        "Horatius",
+        "Horacius"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-45162d3b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Koji je američki predsjednik potpisao Proglas o emancipaciji robova 1863. godine?",
+      "answers": [
+        "Abraham Lincoln",
+        "Abraham Linkoln",
+        "Lincoln",
+        "Linkoln"
+      ],
+      "image": null
+    }
+  ]
+}

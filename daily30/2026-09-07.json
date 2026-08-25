@@ -1,0 +1,424 @@
+{
+  "version": 2,
+  "date": "2026-09-07",
+  "generatedAt": "2026-08-25T18:26:49.228Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-c3524420",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja je država bila domaćin Europskog nogometnog prvenstva 1996.g.?",
+      "answers": [
+        "Engleska",
+        "England",
+        "Englend",
+        "Inglend",
+        "Englezi",
+        "Eng"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cd6546f7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koja životinja, prema poslovici, često mnogo laje, ali ne grize?",
+      "answers": [
+        "Pas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-53540998",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Po kojem je alkoholnom piću ime dobila revolucija koja se protivila Georgeu Washingtonu i njegovu uvođenju poreza na žestoka pića 1791.g.?",
+      "answers": [
+        "Viskiju",
+        "Viski",
+        "Whiskey",
+        "Viskej",
+        "Whiskeyu",
+        "Viskeju"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6ad0e243",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Tko je utjelovio Nadu, u filmu 'Bitka na Neretvi'?",
+      "answers": [
+        "Milena Dravić",
+        "Dravić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-42f65a07",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove animirana serija o dječaku genijalcu s velikom glavom i laboratorijem u svojoj sobi?",
+      "answers": [
+        "Dexterov laboratorij",
+        "Dexter's Laboratory"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5acf8297",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Čemu, prema poslovici, leti svaka ptica?",
+      "answers": [
+        "Svome jatu",
+        "Jatu svome",
+        "Jatu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6d20e981",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja fiktivna djevojčica u svojoj kući živi zajedno sa svojim pjegavim konjem Lilla gubben (Malim prijateljem) i majmunom Gospodinom Nilssonom?",
+      "answers": [
+        "Pipi Duga Čarapa",
+        "Pipi",
+        "Duga Čarapa",
+        "Pipi Langstrump",
+        "Pipi Langštrunf",
+        "Pippilotta",
+        "Pipilota",
+        "Pipi Long Socks",
+        "Pipi Long Soks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ad2f7c9b",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Domingo, Carreras i Pavarotti čine skupinu opernih pjevača kojeg imena?",
+      "answers": [
+        "Tri tenora"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dc96439f",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove slika Edvarda Muncha koja prikazuje lik koji vrišti na mostu?",
+      "answers": [
+        "Krik",
+        "Skrik",
+        "Vrisak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7d86e7b2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako nazivamo vrstu zvuka čija frekvencija ne prelazi 20 Hz?",
+      "answers": [
+        "Infrazvuk",
+        "Infrasound",
+        "Infrasaund"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-446783f1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Na zastavi koje azijske države možemo vidjeti lava s mačem u ruci?",
+      "answers": [
+        "Šri Lanke",
+        "Šri Lanka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8f6a4da5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji štakor, učitelj Ninja kornjača, pojavljuje se među likovima arkadne videoigre Teenage Mutant Ninja Turtles?",
+      "answers": [
+        "Splinter"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dc4d8095",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je češki grad dao ime stilu svijetlog lagera koji je ondje prvi put proizveden 1842.g.?",
+      "answers": [
+        "Plzeň",
+        "Plzen",
+        "Pilsen",
+        "Plzenj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7a7a4011",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "U kojem stoljeću vlada ludi rimski car Kaligula?",
+      "answers": [
+        "1.",
+        "1",
+        "Prvom",
+        "1.st",
+        "1 stoljeće",
+        "1. Stoljeće",
+        "U Prvom",
+        "I.",
+        "Prvo stoljeće",
+        "Prvom stoljeću"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2d550eac",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Ostalo",
+      "question": "Ako bi se iz 2010.g. vratili u prošlost za točno 500 godina, u kojoj godini bi završili?",
+      "answers": [
+        "1510"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-13512248",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Povijest",
+      "question": "Koje ime dijele majka Aleksandra Velikog i četverogodišnje razdoblje u antičkoj Grčkoj",
+      "answers": [
+        "Olimpijada"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-91f43b00",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je grad dao ime velikoj pomorskoj bitci 1571.g. u kojoj je Sveta liga teško porazila osmansku flotu, a među sudionicima se nalazio i budući autor Don Quijotea, Miguel de Cervantes?",
+      "answers": [
+        "Lepant"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c93e99fb",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Sport",
+      "question": "Kako se zove sport u kojem se natjecatelji bore u ringu koristeći udarce rukama sa specijalnim rukavicama?",
+      "answers": [
+        "Boks",
+        "Boxing",
+        "Boksing"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6226e28c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja portugalska riječ označava navijače koji zdušno navijaju za neki klub?",
+      "answers": [
+        "Torcida"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7724b253",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvala božica zemlje i Anšarova družica, majka boga Anua prema mezopotamskoj kozmogoniji?",
+      "answers": [
+        "Kišar",
+        "Kishar"
+      ],
+      "image": null,
+      "rarity": "legendary"
+    },
+    {
+      "id": "daily-d6579626",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj bajci možemo pročitati da je u laži dug nos?",
+      "answers": [
+        "Pinokiju",
+        "Pinokijo",
+        "Pinokiu",
+        "Pinokio",
+        "Pinocchio",
+        "Pinocchiu",
+        "Pinochio",
+        "Pinochiu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1bdb53fb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove popularni TV serijal o učitelju kemije koji postaje proizvođač metamfetamina?",
+      "answers": [
+        "Breaking Bad",
+        "Na putu prema dolje",
+        "Brejking Bed"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f078c745",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Koji je slavni redatelj režirao '2001: Odiseja u Svemiru', ali se nikada nije pojavio na dodjeli Oscara da podigne kipić?",
+      "answers": [
+        "Stanley Kubrick",
+        "Stenli Kubrik",
+        "Kubrick",
+        "Kubrik"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a2f42850",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "U Danteovoj 'Božanskoj Komediji', u kojem krugu pakla se nalazi Gaj Julije Cezar?",
+      "answers": [
+        "Prvom",
+        "1.",
+        "U prvom",
+        "U 1.",
+        "1",
+        "I",
+        "I.",
+        "U limbu",
+        "Limb",
+        "Limbu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-390bf459",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Koju se ženu, iz ugledne slavonske plemićke obitelji smatra prvom hrvatskom skladateljicom?",
+      "answers": [
+        "Dora Pejačević",
+        "Doru Pejačević",
+        "Pejačević"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca0adea8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Od drva nasukanog broda Santa María, Kolumbovi su ljudi podigli malu utvrdu. Nazvali su je po kojem blagdanu na koji se brodolom dogodio?",
+      "answers": [
+        "La Navidad",
+        "Božić",
+        "Christmas",
+        "Krismes",
+        "Krismas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fe75dad8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove poznati američki pisac znanstvene fantastike autor romana '1984' i 'Životinjska farma'?",
+      "answers": [
+        "George Orwell",
+        "Orwell",
+        "Gorg Orvel",
+        "Orvel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-49c1ad0b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Jezero koje se nalazi na nadmorskoj visini od 3810m, ima 41 otok i 25 rijeka koje utječu u njega, najviše je plovno jezero na svijetu. Na granici je Perua i Bolivije, a zove se kako?",
+      "answers": [
+        "Titicaca",
+        "Titikaka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c2eb6e4a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove prepoznatljivi neprijatelj iz igrica Super Mario, nalik crnoj bombi s nogama i ključem za navijanje na leđima?",
+      "answers": [
+        "Bob Omb",
+        "Bobomb",
+        "Ombbob",
+        "Omb bob",
+        "Bobby",
+        "Bobi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e2ea02ff",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Savez tračkih plemena, poznat kao Odriško Kraljevstvo se razvio između 5-og i 3-eg st. pr. Kr na području koje današnje države?",
+      "answers": [
+        "Bugarske",
+        "Bugarska",
+        "Bugarskij",
+        "Bulgaria",
+        "Bulgarija",
+        "Bulgarije"
+      ],
+      "image": null
+    }
+  ]
+}

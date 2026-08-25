@@ -1,0 +1,443 @@
+{
+  "version": 2,
+  "date": "2026-07-24",
+  "generatedAt": "2026-08-25T18:26:49.209Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-55989ea3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kako se naziva nogometna utakmica između Real Madrida i Barcelone?",
+      "answers": [
+        "El Clasico",
+        "El Klasiko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f17bcd3b",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je britanski ekonomist, autor 'Opće teorije zaposlenosti, kamate i novca', dao prezime čitavom pravcu ekonomske misli koji naglašava ulogu države u upravljanju potražnjom?",
+      "answers": [
+        "John Maynard Keynes",
+        "John Keynes",
+        "Maynard Keynes",
+        "Keynes",
+        "Kejnes",
+        "Džon Mejnard Kejns",
+        "Mejnard Kejns",
+        "Kejns"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee012536",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se naziva zeleni kristal koji lebdi iznad glave aktivnog lika u serijalu videoigara The Sims?",
+      "answers": [
+        "Plumbob",
+        "Plambob"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5cc5f131",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "'Kost u grlu' je prvi studijski album kojeg srpskog rock sastava?",
+      "answers": [
+        "Riblja čorba"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7238da83",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Zemljopis",
+      "question": "Kako glasi francuska inačica Engleskog kanala?",
+      "answers": [
+        "La Manche",
+        "Le Manš",
+        "La Manš",
+        "Le Manche"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2b8915b4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je nekadašnji saveznik Francisca Pizarra u osvajanju Carstva Inka poslije postao njegov suparnik te predvodio ranu španjolsku ekspediciju u Čile, gdje nije pronašao bogatstvo kojem se nadao?",
+      "answers": [
+        "Diego de Almagro",
+        "Diego Almagro",
+        "Almagro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-40c50945",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kada je 2022.g. Dinamo Zagreb u Ligi Prvaka sa 1-0 pobijedio protiv Chelsea, odmah idući dan je koji trener Chelsea dobio otkaz?",
+      "answers": [
+        "Thomas Tuchel",
+        "Thomas Tušel",
+        "Tuchel",
+        "Tušel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a9badf04",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koje je voće pisac Roald Dahl u svojoj knjizi pretvorio u golemo prijevozno sredstvo za dječaka Jamesa Henryja Trottera?",
+      "answers": [
+        "Breskvu",
+        "Peach",
+        "Pič",
+        "Peč"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f064f508",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Partizanski bombaš, Boško Buha je na filmsko platno prenešen od strane kojeg hrvatskog redatelja?",
+      "answers": [
+        "Branka Bauera",
+        "Branko Bauer",
+        "Bauer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-93534150",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Tko je režirao 'Isijavanje' (The Shining)?",
+      "answers": [
+        "Stanley Kubrick",
+        "Stenli Kjubrik",
+        "Kubrick",
+        "Kjubrik"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-881227fc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "'Bilady, Bilady, Bilady', što u prijevodu znači 'Moja Domovina', službena je himna koje države?",
+      "answers": [
+        "Egipta",
+        "Egipat",
+        "Egypt",
+        "Edžipt",
+        "Egipt",
+        "Eđipt",
+        "Egipata",
+        "Egypta",
+        "Edžipta",
+        "Eđipta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eb9c8068",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Povijest",
+      "question": "Kako se zove najpoznatiji rimski put koji je povezivao Rim s jugom Italije i koji je simbol rimskog cestovnog sustava?",
+      "answers": [
+        "Via Appia",
+        "Apijeva cesta",
+        "Vija Apija",
+        "Via Apija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d5a08926",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koje subatomske čestice prenose jaku nuklearnu silu između protona i neutrona u atomskoj jezgri?",
+      "answers": [
+        "Pioni",
+        "Pion",
+        "Pions",
+        "Pijoni",
+        "Pijon",
+        "Pijons"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4a87130c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se naziva politički sustav u kojem je sva vlast u rukama jednog vladara koji tu vlast nasljeđuje?",
+      "answers": [
+        "Monarhija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-53d8b6a5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koji je zaljev u Sydneyu poznat po tome što je istraživaču Jamesu Cooku ponudio obilje novih biljnih vrsta?",
+      "answers": [
+        "Botany bay",
+        "Botani bej",
+        "Botani zaljev"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b51aa9b1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Tijekom Praške defenestracije 1618.g. Česki su plemići izbacili carske izaslanike na polje kroz koji dio dvorca?",
+      "answers": [
+        "Prozore",
+        "Prozor",
+        "Prozora",
+        "Fenstere",
+        "Fensters",
+        "Windows",
+        "Vindovs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dffe0b77",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kako se zove zatvoreni, uglavnom suhi prostor za držanje pauka, kukaca i gmazova?",
+      "answers": [
+        "Terarij",
+        "Terarium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5acf8297",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Čemu, prema poslovici, leti svaka ptica?",
+      "answers": [
+        "Svome jatu",
+        "Jatu svome",
+        "Jatu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-644c4da3",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji su naziv stari Rimljani koristili za Kinu, zemlju svile?",
+      "answers": [
+        "Seres"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3fb8aa18",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove otok na kojem se odvija velik dio radnje videoigara Angry Birds?",
+      "answers": [
+        "Piggy Island",
+        "Otok Svinja",
+        "Svinjski otok",
+        "Svinja",
+        "Svinjski",
+        "Piggy",
+        "Pigi",
+        "Pigs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3f235f8d",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji se budući engleski kralj pojavljuje kao jedan od dvojice glavnih likova romana Kraljević i Prosjak?",
+      "answers": [
+        "Edward VI",
+        "Edvard VI",
+        "Edward četvrti",
+        "Edward 6th",
+        "Edward",
+        "Eduard",
+        "Edvrd",
+        "Edvard"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b7b6cff2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Metan, etan, propan i butan su svi redom koji ugljikovodici?",
+      "answers": [
+        "Alkani",
+        "Alcane",
+        "Alkane",
+        "Alkan",
+        "Alcan",
+        "Alcanes",
+        "Alkanes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-525e3d9d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Amerikanci su kupili Louisianu od Francuza, otok Manhattan od Indijanaca, a Aljasku od kojeg carstva?",
+      "answers": [
+        "Ruskog",
+        "Rusija",
+        "Russia",
+        "Rusko",
+        "Russian",
+        "Rusijan",
+        "Rusije",
+        "Russie",
+        "Rusa",
+        "Rusi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cf727be1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "U kojoj se današnjoj američkoj saveznoj državi nalazilo područje koje je ekspedicija Francisca Vazqueza de Coronada smatrala legendarnom Quivirom?",
+      "answers": [
+        "Kansas",
+        "Kanzas",
+        "Kansasu",
+        "Kanzasu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f02593df",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove vrsta rečenice koja završava upitnikom?",
+      "answers": [
+        "Upitna rečenica",
+        "upitna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-238a9c65",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je francuski filozof u djelu 'Društveni ugovor' napisao: 'Čovjek je rođen slobodan, a posvuda je u okovima'?",
+      "answers": [
+        "Jean-Jacques Rousseau",
+        "Žan Žak Ruso",
+        "Ruso",
+        "Rusao",
+        "Rusau"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ffb8426f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove poznati bosanskohercegovački pjesnik i pisac, autor romana 'Derviš i smrt'?",
+      "answers": [
+        "Meša Selimović",
+        "Mehmed Meša Selimović",
+        "Selimović"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-de49e2b2",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Tko pjeva pjesmu 'Lose Yourself' iz 2002.?",
+      "answers": [
+        "Eminem",
+        "Marshall Bruce Mathers 3"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ec1a7aef",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje je boje križ na zastavi Švicarske?",
+      "answers": [
+        "Bijele",
+        "Bijela",
+        "White",
+        "Vajt",
+        "Blanco",
+        "Blanko",
+        "Bianco",
+        "Bijanko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a864b2fa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Koji njemački grad na rijeci Rajni, stari rimljani osnivaju kao Moguntiacum?",
+      "answers": [
+        "Mainz",
+        "Majnc",
+        "Majc",
+        "Manjc"
+      ],
+      "image": null
+    }
+  ]
+}

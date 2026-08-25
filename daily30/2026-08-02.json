@@ -1,420 +1,452 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-02",
-  "generatedAt": "2026-08-24T20:08:22.534Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-fd9696b6",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "U rimskoj religiji, kako se zvao jedan od petnaestorice svećenika dodijeljenih kultovima petnaestero bogova?",
-      "answers": [
-        "Flamen",
-        "Flamines"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ab1abfab",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Kojem su engleskom nogometašu pripale Ballon d'Or nagrade 1978 g. I 1979.g.?",
-      "answers": [
-        "Kevinu Keeganu",
-        "Kevin Keegan",
-        "Keeganu",
-        "Keegan",
-        "Kigenu",
-        "Kigen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-77b8a796",
+      "id": "daily-28f75f72",
       "type": "blitz",
       "difficulty": 2,
       "topic": "Glazba",
-      "question": "Koja pjevačica je poznata kao 'Riri'?",
+      "question": "Koja je pjevačica izvela pjesmu 'My Heart Will Go On'?",
       "answers": [
-        "Rihanna",
-        "Riena",
-        "Robyn Rihanna Fenty",
-        "Riana"
+        "Celine Dion",
+        "Selin Dion",
+        "Dion",
+        "Céline Marie Claudette Dion"
       ],
       "image": null
     },
     {
-      "id": "daily-820f334a",
+      "id": "daily-c92c1579",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Kokosovi Otoci su vanjski teritorij koje države?",
-      "answers": [
-        "Australije",
-        "Australija",
-        "Australias",
-        "Austrejlijas",
-        "Austrajlije",
-        "Austrejlije",
-        "Australie",
-        "Australia",
-        "Austrajlija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-096926e6",
-      "type": "blitz",
-      "difficulty": 2,
       "topic": "Film",
-      "question": "Pavle Čutura 'Paja' i Živadin Jarić 'Jare' protagonisti su koje humoristične tv serije?",
+      "question": "Tko glumi glavnu ulogu u filmu 'Elvis' (2022)?",
       "answers": [
-        "Kamiondžije"
+        "Austin Butler",
+        "Astim Batler",
+        "Butler",
+        "Batler"
       ],
       "image": null
     },
     {
-      "id": "daily-93341f19",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Sport",
-      "question": "Do kojeg se planinskog vrha u Saveznoj državi Colorado vozi poznata brdska utrka u automobilizmu koja nosi kraticu PPIHC?",
-      "answers": [
-        "Pikes Peak",
-        "Pajks Pik"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8bee2e3c",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "'Bože pravde' je ime himne koje balkanske države?",
-      "answers": [
-        "Srbija",
-        "Srbije"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-77b9ef66",
+      "id": "daily-99b55dce",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se naziva površina broda po kojoj se kreću mornari?",
+      "topic": "Povijest",
+      "question": "Koji je kartaški vojskovođa, zet Hamilkara Barke i Hanibalov šurjak, 227.g. pr. Kr. osnovao Qart Hadašt, tj. današnju Cartagenu u Španjolskoj?",
       "answers": [
-        "Paluba"
+        "Hasdrubal Lijepi",
+        "Hazdrubal Lijepi",
+        "Hazdrubal",
+        "Hasdrubal",
+        "Hasdrubal the Fair",
+        "Hazdrubal the Fair",
+        "Hazdrubal d fer",
+        "Hazdrubal d feir"
       ],
       "image": null
     },
     {
-      "id": "daily-eecfb226",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koji je glumac utjelovio Charlieja Chaplina u biografskom filmu iz 1992. godine?",
-      "answers": [
-        "Robert Downey Jr",
-        "Robert  Dovni Jr",
-        "Downey Jr",
-        "Dovni jr",
-        "Dovni Junior",
-        "Robert John Downey Jr"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0b47800f",
+      "id": "daily-ede88d18",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koju medalju dodjeljuje Londonsko Kraljevsko Društvo znanstvenicima za izvanredna postignuća na području kemije?",
+      "question": "Roman 'Proces stoljeća' kojeg je napisao hrvatski znanstvenik i književnik Ivan Supek prati proces protiv kojeg američkog fizičara?",
       "answers": [
-        "Davy Medalju",
-        "Davy Medalja",
-        "Davy",
-        "Dejvi Medalja",
-        "Dejvi",
-        "Devyjevu",
-        "Dejvyjeva",
-        "Devys",
-        "Dejvis",
-        "Dejvijevu",
-        "Dejvijeva",
-        "Davy Medal",
-        "Dejvi Medal"
+        "Roberta Oppenheimera",
+        "Robert Oppenheimer",
+        "Roberta Openhajmera",
+        "Openhajmer",
+        "Oppenheimer",
+        "Openhajmers",
+        "Oppenheimers"
       ],
       "image": null
     },
     {
-      "id": "daily-9386fb6b",
+      "id": "daily-54d04af3",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove tvorac lika Sherlocka Holmesa?",
+      "topic": "MisliIzrekeCitati",
+      "question": "Prema poznatoj narodnoj poslovici, tko rano rani, koliko sreća grabi?",
       "answers": [
-        "Arthur Conan Doyle",
-        "Artur Konan Dojl",
-        "Conan Doyle",
-        "Konan Dojl",
-        "Doyle",
-        "Dojl"
+        "Dvije",
+        "2",
+        "Dvi",
+        "Two",
+        "Tvu",
+        "Zweii",
+        "Zwei",
+        "Cvaj",
+        "Obe",
+        "Obadvi",
+        "Obe dvi"
       ],
       "image": null
     },
     {
-      "id": "daily-1d7b6a65",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Kako se zove nordijska zmija-čudovište koja obuhvaća svijet i neprijatelj je boga Thora?",
-      "answers": [
-        "Jormungand",
-        "Jormungandr"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bd9b6409",
+      "id": "daily-b5be777d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koje kodno ime je Tajna služba dodijelila 36. predsjedniku SAD-a Lyndonu B. Johnsonu?",
+      "question": "Kako se zove ubojica JFK-a?",
       "answers": [
-        "Volunteer",
-        "Volunter",
-        "Voluntier",
-        "Voluntir"
+        "Lee Harvey Oswald",
+        "Li Harvi Osvald",
+        "Oswald",
+        "Osvald",
+        "Harvey Oswald",
+        "Harvi Osvald"
       ],
       "image": null
     },
     {
-      "id": "daily-132603ca",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Koje ime nosi konj na kojem sjedi Ban Josip Jelačić, na istoimenom trgu u Zagrebu?",
-      "answers": [
-        "Emir"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7d5fbf8e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove planet na kojem se nalazi planina Olympus Mons, najveći vulkan u Sunčevu sustavu?",
-      "answers": [
-        "Mars"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d5144786",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "'Old Faithful' je najpoznatiji američki gejzir čije se izbacivanje vode može uživo promatrati u Nacionalnom parku Yellowstone, ali u kojoj američkoj saveznoj državi?",
-      "answers": [
-        "Wyoming",
-        "Vajoming",
-        "Vayoming"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bb13992f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Strpljenje se često nagrađuje, barem prema poslovici koja kaže 'Tko čeka, taj i ...'?",
-      "answers": [
-        "Dočeka"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1d228b80",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kitovi pod vodom u prosjeku izdrže 20 minuta a dišu kojim organom?",
-      "answers": [
-        "Plućima",
-        "Pluća"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c319bab7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je belgijski grad postao središte američkog otpora tijekom njemačke ofenzive u Ardenima u 2. svjetskom ratu, kada su opkoljenim braniteljima Nijemci ponudili predaju?",
-      "answers": [
-        "Bastogne",
-        "Bastonja",
-        "Bastonj",
-        "Baston",
-        "Bastone"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0afbd5d8",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove poznata rock grupa koju čine članovi Brian May, Roger Taylor i John Deacon uz karizmatičnog frontmena Freddieja Mercuryja?",
-      "answers": [
-        "Queen",
-        "Kuin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-88cf6264",
+      "id": "daily-9106edd3",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove gotovo nezaustavljivo biološko oružje iz Resident Evila 3 koje tijekom igre progoni Jill Valentine?",
+      "question": "Kako se zove supervojnik oznake John-117, glavni junak serijala videoigara Halo, prepoznatljiv po zelenom oklopu?",
       "answers": [
-        "Nemesis",
-        "Nemezis",
-        "Nemesis"
+        "Master Chief",
+        "Master Čif",
+        "Master Chif",
+        "Chief",
+        "Čif"
       ],
       "image": null
     },
     {
-      "id": "daily-42b18431",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvao prvi glavni grad Perzijskog carstva kojeg je ustanovio Kir Veliki, a ostaci mu se danas nalaze blizu modernog grada Širaza u Iranu?",
-      "answers": [
-        "Pasargad",
-        "Pasargada"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6ee0a358",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je američki državnik i znanstvenik u djelu 'Advice to a Young Tradesman' zapisao misao koja je postala poznata kao 'Vrijeme je novac'?",
-      "answers": [
-        "Benjamin Franklin",
-        "Bendžamin Frenklin",
-        "Franklin",
-        "Frenklin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ada2f375",
+      "id": "daily-04917e88",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koji je američki industrijalac postao simbol masovne automobilske proizvodnje zahvaljujući pokretnoj proizvodnoj traci kojom je dramatično ubrzao izradu Modela T?",
+      "question": "Koliko je 50 % od 50?",
       "answers": [
-        "Henry Ford",
-        "Henri Ford",
-        "Ford"
+        "25",
+        "Dvadeset pet",
+        "Twenty five",
+        "Tventi fajv",
+        "XXV"
       ],
       "image": null
     },
     {
-      "id": "daily-24dfc14f",
+      "id": "daily-5cb91b04",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se zove poznati američki košarkaš koji je šest puta osvojio naslov NBA prvaka s Chicago Bullsima?",
+      "topic": "Zemljopis",
+      "question": "Najveći kip na svijetu sačinjen u potpunosti od zlata je 5,5 tona težak kip Bude koji se čuva u hramu Wat Traimit, u kojoj državi?",
       "answers": [
-        "Michael Jordan",
-        "Majkl Džordan",
-        "Jordan",
-        "Džordan"
+        "Tajland",
+        "Tailand",
+        "Thai",
+        "Thailand",
+        "Tajlend",
+        "Tailend",
+        "Tai",
+        "Taj",
+        "Tajlandu",
+        "Tailandu",
+        "Thaiu",
+        "Thailandu",
+        "Tajlendu",
+        "Tailendu",
+        "Taiu",
+        "Taju"
       ],
       "image": null
     },
     {
-      "id": "daily-b352bc86",
+      "id": "daily-6efc6057",
       "type": "blitz",
-      "difficulty": 4,
+      "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "U starom Rimu, kako se zvalo koplje koje je bilo sastavni dio naoružanog rimskog vojnika?",
+      "question": "Rodom s kojeg kontinenta je rimski car Septimije Sever?",
       "answers": [
-        "Pilum"
+        "Afrika",
+        "Afrike"
       ],
       "image": null
     },
     {
-      "id": "daily-617cf30c",
+      "id": "daily-9dd75b9a",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se naziva blagdan u islamu kojim se obilježava žrtva Abrahamova?",
+      "answers": [
+        "Kurban-bajram",
+        "Eid al-Adha",
+        "Kurban Bajram"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4f78e807",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je libijski lučki grad mjesecima odolijevao snagama Osovine i zbog svog strateškog položaja postao jedno od ključnih mjesta sjevernoafričkog bojišta?",
+      "answers": [
+        "Tobruk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1e282df9",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji se naziv koristi za pivo donjeg vrenja koje dozrijeva na niskim temperaturama, a njegovo ime potječe od njemačke riječi povezane sa skladištenjem?",
+      "answers": [
+        "Lager",
+        "Lagerbier",
+        "Lagerbir"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-14ecf0e0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Što je, prema poznatoj poslovici, kratko u laži?",
+      "answers": [
+        "Noge",
+        "Noga",
+        "Legs",
+        "Leg"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a7d6f650",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Koja glumica tumači lik Barbie u istoimenom filmu iz 2023. godine?",
+      "answers": [
+        "Margot Robbie",
+        "Margot Robi",
+        "Robbie",
+        "Robi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-21a30035",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
+      "topic": "FloraFauna",
+      "question": "Četiri plemenite kineske biljke su: Bambus, Orhideja, Šljiva i koja još biljka koja cvjeta u jesen?",
       "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
+        "Krizantema"
       ],
       "image": null
     },
     {
-      "id": "daily-c2c62764",
+      "id": "daily-c1df48ca",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je irska pomorska zapovjednica i vladarica poznata kao Gusarska kraljica Connachta 1593.g. osobno pregovarala s engleskom kraljicom Elizabetom I.?",
+      "answers": [
+        "Grace O’Malley",
+        "Grace O'Malley",
+        "Grejs O'Mali",
+        "Gráinne O’Malley",
+        "Gráinne Ní Mháille",
+        "O Malley",
+        "O majli",
+        "O mali",
+        "Mhaille",
+        "Maile",
+        "Majile",
+        "Majle"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e425cb1c",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Na kojem stadionu svoje domaće utakmice igra FC Bayern Munchen?",
+      "question": "Koji je brazilski 'čarobnjak' osvojio Zlatnu Loptu 2005.g. ispred engleskih velikana Lamparda i Gerrarda?",
       "answers": [
-        "Allianz Arena",
-        "Allianz Areni",
-        "Allianz",
-        "Alijanc Areni",
-        "Alijanc Arena",
-        "Alijanc",
-        "Alijancu",
-        "Allianzu",
-        "Alijanci"
+        "Ronaldinho",
+        "Ronaldinjo"
       ],
       "image": null
     },
     {
-      "id": "daily-acd02078",
+      "id": "daily-07f7627e",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
+      "topic": "Zemljopis",
+      "question": "Koja planina je najviši vrh Afrike?",
       "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
+        "Kilimandžaro",
+        "Kilimanjaro"
       ],
       "image": null
     },
     {
-      "id": "daily-fa50474f",
+      "id": "daily-6dc4dbc9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Merseyside Derby je engleski nogometni derbi koji se igra između Liverpoola i kojeg još kluba?",
+      "answers": [
+        "Evertona",
+        "Everton"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a560d99f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove kineski filozof čija učenja čine temelj konfucijanizma?",
+      "answers": [
+        "Konfucije",
+        "Confucius"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f0c6ad7f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koju životinju igrač vodi kroz promet i preko rijeke u kultnoj arkadnoj videoigri Frogger iz 1981.g.?",
+      "answers": [
+        "Žabu",
+        "Žaba",
+        "Frog",
+        "Frogs",
+        "Žabe"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1ebe82a1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji su domorodački narod i grad-država, veliki protivnici Azteka, postali najvažniji saveznici Hernána Cortésa u pohodu na Tenochtitlán?",
+      "answers": [
+        "Tlaxcalteci",
+        "Tlaškalteci",
+        "Tlaxcalani",
+        "Tlaxcala",
+        "Tlaškala",
+        "Tlaškalteci"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-28632ab9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 21. predsjednik SAD-a, prezimena Arthur, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "CAA"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f489f503",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Kako se zove glavni antagonist dječjeg romana Emil i detektivi?",
+      "question": "Koji je slavni engleski pisac pod pseudonimom Boz objavljivao svoje prve književne radove?",
       "answers": [
-        "Max Grundeis",
-        "Maks Grundajs",
-        "Grundeis",
-        "Grundajs",
-        "Max Grundajs",
-        "Grundajz",
-        "Max",
-        "Maks"
+        "Charles Dickens",
+        "Čarls Dikens",
+        "Dickens",
+        "Dikens"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f452b5b5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Tko je skladao 'Četiri godišnja doba'?",
+      "answers": [
+        "Antonio Vivaldi",
+        "Vivaldi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e8bdbf24",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Dok je trajao Osamdesetogodišnji rat, skoro cijeli svoj život je proživio koji talijanski astronom i matematičar?",
+      "answers": [
+        "Galileo Galilei",
+        "Galileo Galileji",
+        "Galilei",
+        "Galileji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1a36b6f0",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kojeg su fiktivnog lika, kojeg je napisao škotski romanopisac J. M. Barrie, letjeti učile ptice i vile?",
+      "answers": [
+        "Petra Pana",
+        "Petar Pan",
+        "Pana",
+        "Pan",
+        "Pans",
+        "Pen",
+        "Pens",
+        "Piter Pen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4f5a274c",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "U blizini kojeg drevnog grada u turskoj je Partsko carstvo 53.g. pr. Kr. nanijelo Rimljanima jedan od najvećih vojnih poraza u njihovoj povijesti?",
+      "answers": [
+        "Haran",
+        "Harana",
+        "Harran",
+        "Harrana",
+        "Kara",
+        "Carrhae"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-161163a5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koji je njemački zoolog prvi u svijetu upotrijebio pojam 'ekologija'?",
+      "answers": [
+        "Ernst Haeckel",
+        "Ernst Hakel",
+        "Haeckel",
+        "Hakel"
       ],
       "image": null
     }

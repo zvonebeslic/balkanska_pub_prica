@@ -1,421 +1,432 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-07",
-  "generatedAt": "2026-08-24T20:08:22.541Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c7ed021b",
+      "id": "daily-015346eb",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kako se naziva zamišljena crta koja Zemlju dijeli na sjevernu i južnu polutku?",
+      "question": "Koji je nizozemski trgovački brod 1629.g. doživio brodolom kod otočja Houtman Abrolhos uz zapadnu obalu Australije, tijekom svoje prve plovidbe prema Javi?",
       "answers": [
-        "Ekvator",
-        "Ecuator",
-        "Ecvator",
-        "Polutnik",
-        "Poluta",
-        "Equator"
+        "Batavia",
+        "Batavija"
       ],
       "image": null
     },
     {
-      "id": "daily-4feaa816",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "U babilonskoj mitologiji, bogovi se dijele na dvije grupe, Annunaki su bili vrhovni bogovi, a bogovi sluge su se nazivali kako?",
-      "answers": [
-        "Igigi",
-        "Igigis",
-        "Igigiji",
-        "Igigii",
-        "Igigu",
-        "Igigui",
-        "Igiguji",
-        "Igigus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-69739300",
+      "id": "daily-8906c8e7",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove bijela ptica iz Angry Birdsa koja u originalnim igrama tijekom leta može ispustiti eksplozivno jaje?",
+      "question": "Koji sport čini drugi dio imena videoigre Tetris, koju je njezin tvorac Aleksej Pažitnov nazvao spajanjem riječi 'tetra' i naziva tog sporta?",
       "answers": [
-        "Matilda"
+        "Tenis",
+        "Tennis"
       ],
       "image": null
     },
     {
-      "id": "daily-8372cf86",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Američka televizijska serija 'Prijatelji' (Friends) se na NBC-u prikazivala od 1994. do koje godine?",
-      "answers": [
-        "2004.",
-        "Dvije tisuće četvrta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4a89427b",
+      "id": "daily-e9ed0a78",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se naziva talijanska staza Formule 1 poznata kao 'Hram brzine'?",
+      "topic": "Povijest",
+      "question": "Iz kojeg je gorućeg grada bježao starogrčki junak Eneja?",
       "answers": [
-        "Monza",
-        "Autodromo Nazionale Monza"
+        "Troje",
+        "Troy",
+        "Troj",
+        "Troys",
+        "Troja"
       ],
       "image": null
     },
     {
-      "id": "daily-d6c6584a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "U kojem je zviježđu Johannes Kepler 1604.g. promatrao posljednju supernovu iz naše galaksije, tada vidljivu golim okom?",
-      "answers": [
-        "Zmijonosac",
-        "Zmijonoscu",
-        "Nosač Zmije",
-        "Nosaču Zmije",
-        "Ophiuchus",
-        "Ophiuchusu",
-        "Ofijukusu",
-        "Ofijukus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f7f537ca",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Kuna bjelica, tri lava te koza svoje su mjesto našli na zastavi koje države?",
-      "answers": [
-        "Hrvatske",
-        "Hrvatska",
-        "Hr",
-        "Hrv",
-        "Cro",
-        "Croatie",
-        "Croatia",
-        "Kroejša",
-        "Kroejše"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-228bc752",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "S kojom bi riječi na jeziku majmuna Mangani opisali 'bijelog čovjeka'?",
-      "answers": [
-        "Tarzan",
-        "Tarzans"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-531bea00",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se naziva pismo starog Egipta koje se sastoji od slikovnih znakova?",
-      "answers": [
-        "Hijeroglifi",
-        "hijeroglifsko pismo",
-        "Hierogliphes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f465b976",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Nogomet",
-      "question": "Koji je nogometaš postao prvi osvajač Svjetskog prvenstva koji je tijekom svoje karijere nastupao i u Hrvatskoj nogometnoj ligi?",
-      "answers": [
-        "Dani Olmo",
-        "Olmo",
-        "Deni Olmo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-32cbae90",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se naziva blagdan u islamu kojim se završava mjesec posta ramazana?",
-      "answers": [
-        "Ramazanski bajram",
-        "Eid al-Fitr",
-        "Ramazan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-576fafb6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Samo su dva hrvatska trenera u povijesti engleskog Championshipa svoje klubove odveli do promocije u Premiership. Sergej Jakirović je to 2026. godine uspio s Hull Cityjem, a koji je hrvatski strateg 2020. godine isto ostvario s West Bromwich Albionom?",
-      "answers": [
-        "Slaven Bilić",
-        "Bilić"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-75d431d8",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji kemijski element tražimo ako je na periodnom sustavu okružen redom: s desna fosforom, s lijeva aluminijem, iznad ugljikom a ispod germanijem?",
-      "answers": [
-        "Silicij",
-        "Silicium",
-        "Silicijum",
-        "Silicon",
-        "Silikon",
-        "Si"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8a946891",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Iz koje zemlje dolazi grupa ABBA?",
-      "answers": [
-        "Švedske",
-        "Švedska"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-820e0c6b",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Sport",
-      "question": "Kako se zove poznati rally vozač iz Finske, višestruki svjetski prvak u WRC-u iz '86 i '87 te '91 i '93?",
-      "answers": [
-        "Juha Kankkunen",
-        "Kankkunen",
-        "Kankunen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0fdfaa73",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je američki inženjer bio glavni projektant Golden Gate Bridgea i desetljećima se borio da projekt uopće bude prihvaćen?",
-      "answers": [
-        "Joseph Strauss",
-        "Joseph Baermann Strauss",
-        "Džozef Strauss",
-        "Strauss",
-        "Štraus",
-        "Džozef Štraus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9f67159c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji cvijet latinskog imena 'Galanthus' ujedno označava i početak proljeća?",
-      "answers": [
-        "Visibaba"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c6307d7a",
+      "id": "daily-f4e1ed90",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Nadopunite upozorenje da vanjski sjaj može varati: 'Nije zlato sve što...'",
+      "question": "Dovršite poslovicu koja poručuje da jasni financijski odnosi čuvaju dobre odnose: 'Čist račun, duga...'?",
       "answers": [
-        "Sja",
-        "Sija",
-        "Sjaji"
+        "Ljubav",
+        "Love",
+        "Lov"
       ],
       "image": null
     },
     {
-      "id": "daily-509b12e2",
+      "id": "daily-e1db6de6",
       "type": "blitz",
-      "difficulty": 4,
+      "difficulty": 2,
       "topic": "Glazba",
-      "question": "Koji je kompozitor skladao glazbu za Ratove zvijezda?",
+      "question": "Koji bend pjeva 'Sweet Child O' Mine'?",
       "answers": [
-        "John Williams",
-        "Džon Viliams",
-        "Williams",
-        "Viliams",
-        "John Towner Williams"
+        "Guns N Roses",
+        "Guns Roses",
+        "Gans n Roses",
+        "Gans Roses",
+        "Gunsi",
+        "Guns",
+        "Gansi",
+        "Gans"
       ],
       "image": null
     },
     {
-      "id": "daily-733b10fb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je španjolski konkvistador nakon sudjelovanja u osvajanju Carstva Inka otišao u Čile, gdje je 1541.g. osnovao grad Santiago?",
-      "answers": [
-        "Pedro de Valdivia",
-        "Pedro Valdivia",
-        "Valdivia",
-        "Valdivija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-10e3e1e9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Na kojeg je svećenika i borca za prava američkog crnačkog stanovništva izvršen atentat dok je američki predsjednik bio Lyndon B. Johnson?",
-      "answers": [
-        "Martin Luther King",
-        "Martina Luthera Kinga",
-        "Martina Lutera Kinga",
-        "Martin Luter King",
-        "Luther King",
-        "Lutera Kinga",
-        "Luthera Kinga",
-        "Luter King",
-        "King",
-        "Kinga"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-78c0621f",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "AntickiRim",
-      "question": "Koji kalendar ustanovljuje Julije Cezar, a koristiti će se do 16. st?",
-      "answers": [
-        "Julijanski",
-        "Julijanski kalendar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9dd75b9a",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se naziva blagdan u islamu kojim se obilježava žrtva Abrahamova?",
-      "answers": [
-        "Kurban-bajram",
-        "Eid al-Adha",
-        "Kurban Bajram"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fae5788d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove škola čarobnjaštva koju pohađa Harry Potter?",
-      "answers": [
-        "Hogwarts",
-        "Hogvarts",
-        "Hogwarts School"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-911a8728",
+      "id": "daily-bd11aefc",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "KnjigaSlika",
-      "question": "Na kojem je brodu kitolovcu kapetan Ahab alfa i omega",
+      "topic": "Film",
+      "question": "Koji je epski biografski triler osvojio Oscara za najbolji film 2024. godine?",
       "answers": [
-        "Pequod",
-        "Pekod"
+        "Oppenheimer",
+        "Openhajmer"
       ],
       "image": null
     },
     {
-      "id": "daily-acd02078",
+      "id": "daily-d89d6060",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji bozon prenosi elektromagnetsku silu?",
       "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
+        "Foton",
+        "Photon"
       ],
       "image": null
     },
     {
-      "id": "daily-243f2905",
+      "id": "daily-6eecc8af",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji je švedski studio stvorio i razvija serijal videoigara Battlefield?",
+      "answers": [
+        "DICE",
+        "EA DICE",
+        "Dajs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7cbabbfc",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 24. predsjednik SAD-a, prezimena Cleveland, potpisao samo inicijalima, dobili bi koja slova?",
+      "question": "Koju troslovnu kraticu najčešće koristimo za američki Federal Reserve System?",
       "answers": [
-        "GC"
+        "FED"
       ],
       "image": null
     },
     {
-      "id": "daily-bddda8a2",
+      "id": "daily-8d8a2f2f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji mineral traje zauvijek u Bondovu filmu iz 1971.g.?",
+      "answers": [
+        "Dijamant",
+        "Diamond",
+        "Dajmond",
+        "Dijamanti",
+        "Diamonds",
+        "Dajmonds"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-50d950aa",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja je mongolska dinastija vladala Kinom tijekom boravka Marka Pola u Aziji, a njezin je prvi car bio Kublaj-kan?",
+      "answers": [
+        "Yuan",
+        "Juan",
+        "Huan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-efc33912",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Iznimno snažan podvodni zvuk koji je NOAA zabilježila u Pacifiku 1997.g. dobio je koje kratko ime?",
+      "answers": [
+        "Bloop",
+        "Blop",
+        "Blup"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2ef8ad5a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Jedini čovjek koji je sudjelovao u Sedmogodišnjem ratu, a kasnije postao predsjednikom SAD‐a je bio tko?",
+      "answers": [
+        "George Washington",
+        "Washington",
+        "Džordž Vašington",
+        "Vašington"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b205c436",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Reprezentacija koje je države osvojila Europsko nogometno prvenstvo 2020.g.?",
+      "answers": [
+        "Italije",
+        "Italija",
+        "Italy",
+        "Italys",
+        "Itali",
+        "Italis",
+        "Ital",
+        "Ita",
+        "It"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-10a23765",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "U kojoj seriji susrećemo Pučanstvo, policajca i trgovca sličica sa svecima?",
+      "answers": [
+        "Velo Misto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cc24faf2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "U kojoj državi se nalaze gradovi Plovdiv, Varna i Burgas?",
+      "answers": [
+        "Bugarskoj",
+        "Bugarska",
+        "Bulgaria",
+        "Bulgarija",
+        "Bulgarii",
+        "Bulgariji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a3adc088",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kako se zovu navijači FK Partizana?",
+      "answers": [
+        "Grobari",
+        "Grobar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6a9c23a9",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Nekadašnje rimske provincije Likija, Galatija i Kapadokija su se nalazile na području koje današnje države?",
+      "answers": [
+        "Turske",
+        "Turska",
+        "Turkey",
+        "Turki"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6b61802c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Ptolomej I. Soter je osnivač Ptolomejske loze u Egiptu, Seleuk I. Nikator je osnivač Seleukidskog carstva, Antigon I. Monoftalmos je praotac Atigonidske dinastije u Makedoniji a svi oni su bili generali u vojskama kojeg velikog osvajača?",
+      "answers": [
+        "Aleksandra Velikog",
+        "Aleksandra",
+        "Alexandra Velikog",
+        "Alexandra",
+        "Alexanders the Great",
+        "Aleksanders d Grejt",
+        "Aleksandra Makedonskog",
+        "Alexandra Makedonskog",
+        "Aleksanders Makedonijan",
+        "Alexanders Macedonian",
+        "Aleksandra III. Makedonskog",
+        "Aleksandra trećeg Makedonskog",
+        "Aleksandra 3. Makedonskog",
+        "Aleksandar Veliki",
+        "Aleksandar",
+        "Alexander Veliki",
+        "Alexander",
+        "Alexander the Great",
+        "Aleksander d Grejt",
+        "Aleksandar Makedonski",
+        "Alexander Makedonski",
+        "Aleksander Makedonijan",
+        "Alexander Macedonian",
+        "Aleksandar III. Makedonski",
+        "Aleksandar treći Makedonski",
+        "Aleksandar 3. Makedonski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-38b86136",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Zemljopis",
-      "question": "Mala karipska država Antigva i Barbuda se sastoji od 3 otoka. Prva dva se nalaze u imenu države, a koji je treći, najmanji i nenaseljen otok, vulkanskog porijekla?",
+      "question": "Viti Levu i Vanua Levu su najveći otoci koje države iz Oceanije?",
       "answers": [
-        "Redonda"
+        "Fidžija",
+        "Fidži",
+        "Fiji",
+        "Fijia"
       ],
       "image": null
     },
     {
-      "id": "daily-74d16777",
+      "id": "daily-4a4f5859",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Tko pjeva pjesmu 'Vampire' iz 2023.?",
+      "answers": [
+        "Olivia Rodrigo",
+        "Rodrigo",
+        "Olivia Isabel Rodrigo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a39f5046",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koja je staro-rimska kovanica iznosila pola od vrijednosti jednog denara?",
+      "answers": [
+        "Kvinar",
+        "Qvinarivs",
+        "Kvinarius"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1f229619",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Koji je nizozemski etolog, ornitolog i nobelovac autor knjiga 'Proučavanje instinkta' i 'Socijalno ponašanje u životinja'?",
+      "answers": [
+        "Nikolaas Tinbergen",
+        "Nikolas Tinbergen",
+        "Tinbergen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8c35cd72",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se naziva ideologija koja zagovara ekstremni nacionalizam i autoritarnu vlast, često uz kult vođe?",
+      "answers": [
+        "Fašizam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-26d89d95",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koji cvijet u Kini simbolizira čistoću i prosvjetljenje?",
+      "answers": [
+        "Lotos",
+        "Lotosov cvijet"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3e81d2e4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako glasi izreka koja kaže da je bolje djelovati odmah nego kasnije rješavati posljedice?",
+      "answers": [
+        "Bolje spriječiti nego liječiti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-abb34736",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "U knjizi Charlie i tvornica čokolade, koliko je zlatnih karata pronađeno u omotima Wonkinih čokoladica?",
+      "question": "Koje kraljevstvo izmišljaju Leslie Burke i Jesse Aarons, fiktivni likovi izišli iz pera američke spisateljice Katherine Paterson?",
       "answers": [
-        "5",
-        "Pet",
-        "V",
-        "Five",
-        "Fajv",
-        "Fumf",
-        "Fmf"
+        "Terabithiju",
+        "Terabithia",
+        "Terabithia",
+        "Terabitija",
+        "Terabitiju"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f02b8212",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Svi znamo za poslovicu koja kaže da je 'bolje imati vrapca u ruci nego koga na grani?",
+      "answers": [
+        "Goluba",
+        "Golub"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3a5dd2a9",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je slavni pisac za djecu tijekom Drugog svjetskog rata bio pilot RAF-a, a potom radio na britanskim obavještajnim zadacima u Washingtonu?",
+      "answers": [
+        "Roald Dahl",
+        "Dahl",
+        "Dal",
+        "Rouald Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1448434f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva srednjovjekovna pomorska karta koja je vrlo detaljno prikazivala obale, luke i smjerove plovidbe, ali uglavnom nije prikazivala unutrašnjost kopna?",
+      "answers": [
+        "Portolan",
+        "Portolanska",
+        "Portulan",
+        "Portolans"
       ],
       "image": null
     }

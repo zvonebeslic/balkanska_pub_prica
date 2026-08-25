@@ -7,6 +7,8 @@
     rgba(255, 255, 255, 0.055);
 }
 
+#mode-pills { margin-bottom: 0; }
+
 .mode-pill--daily.active {
   border-color: rgba(250, 204, 21, 0.82);
   background:
@@ -175,12 +177,25 @@
 
 .daily30-day.today .daily30-day-number { color: #ffe477; }
 .daily30-day:disabled { opacity: 0.24; cursor: default; }
+.daily30-day.locked:disabled {
+  opacity: 1;
+  border-color: rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.045);
+  color: #ffffff;
+}
 .daily30-day-spacer { min-height: 48px; }
 
 .daily30-day-number {
   font-size: 0.73rem;
   font-weight: 950;
   line-height: 1;
+}
+
+.daily30-day-lock {
+  color: #a8b2c2;
+  font-size: 0.6rem;
+  line-height: 1;
+  filter: grayscale(1);
 }
 
 .daily30-day-result,

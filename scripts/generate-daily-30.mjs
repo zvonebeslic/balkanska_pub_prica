@@ -12,7 +12,12 @@ const configPath = path.join(outputDir, "config.json");
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const timeZone = config.timeZone || "Europe/Sarajevo";
 const launchDate = config.launchDate;
+const preparedThrough = config.preparedThrough || null;
+const questionsPerDay = Math.max(1, Number(config.questionsPerDay) || 30);
 const requestedDate = process.argv.find(arg => arg.startsWith("--date="))?.split("=")[1] || null;
+const requestedFrom = process.argv.find(arg => arg.startsWith("--from="))?.split("=")[1] || launchDate;
+const requestedThrough = process.argv.find(arg => arg.startsWith("--through="))?.split("=")[1] || preparedThrough;
+const regenerate = process.argv.includes("--regenerate");
 const backfill = process.argv.includes("--backfill");
 
 function dateKeyInTimeZone(date = new Date()) {
@@ -26,10 +31,28 @@ function dateKeyInTimeZone(date = new Date()) {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
-function addDays(dateKey, amount) {
-  const [year, month, day] = dateKey.split("-").map(Number);
-  const date = new Date(Date.UTC(year, month - 1, day + amount, 12));
-  return date.toISOString().slice(0, 10);
+function monthKey(dateKey) {
+  return String(dateKey).slice(0, 7);
+}
+
+function addMonths(value, amount) {
+  const [year, month] = monthKey(value).split("-").map(Number);
+  const date = new Date(Date.UTC(year, month - 1 + amount, 1, 12));
+  return date.toISOString().slice(0, 7);
+}
+
+function datesInMonth(value) {
+  const key = monthKey(value);
+  const [year, month] = key.split("-").map(Number);
+  const dayCount = new Date(Date.UTC(year, month, 0, 12)).getUTCDate();
+  return Array.from({ length: dayCount }, (_, index) => `${key}-${String(index + 1).padStart(2, "0")}`);
+}
+
+function monthsBetween(fromDate, throughDate) {
+  if (!fromDate || !throughDate || monthKey(fromDate) > monthKey(throughDate)) return [];
+  const months = [];
+  for (let key = monthKey(fromDate); key <= monthKey(throughDate); key = addMonths(key, 1)) months.push(key);
+  return months;
 }
 
 function hashString(value) {
@@ -134,33 +157,52 @@ function loadQuestionPool(files) {
   return pool;
 }
 
-function selectDailyQuestions(pool, dateKey, amount = 30) {
+function selectMonthlyQuestions(pool, dates, excludedIds = new Set()) {
+  const required = dates.length * questionsPerDay;
+  const eligible = pool.filter(item => !excludedIds.has(item.question.id));
+  if (eligible.length < required) {
+    throw new Error(`Za ${dates[0]?.slice(0, 7)} treba ${required} novih pitanja, a dostupno ih je ${eligible.length}.`);
+  }
+
   const byTopic = new Map();
-  pool.forEach(item => {
+  eligible.forEach(item => {
     if (!byTopic.has(item.topic)) byTopic.set(item.topic, []);
     byTopic.get(item.topic).push(item);
   });
 
-  const topicRandom = createRandom(`kviztogo-daily-topics:${dateKey}`);
-  const topics = shuffled([...byTopic.keys()], topicRandom);
-  const queues = new Map(topics.map(topic => [
+  const scheduleKey = dates[0]?.slice(0, 7) || "unknown";
+  const queues = new Map([...byTopic.entries()].map(([topic, items]) => [
     topic,
-    shuffled(byTopic.get(topic), createRandom(`kviztogo-daily:${dateKey}:${topic}`))
+    shuffled(items, createRandom(`kviztogo-month:${scheduleKey}:${topic}`))
   ]));
+  const positions = new Map([...queues.keys()].map(topic => [topic, 0]));
+  const schedule = new Map();
 
-  const chosen = [];
-  let round = 0;
-  while (chosen.length < amount && topics.some(topic => queues.get(topic).length > round)) {
-    const roundTopics = shuffled(topics, createRandom(`kviztogo-round:${dateKey}:${round}`));
-    roundTopics.forEach(topic => {
-      if (chosen.length >= amount) return;
-      const item = queues.get(topic)[round];
-      if (item) chosen.push(item);
-    });
-    round += 1;
-  }
+  dates.forEach(dateKey => {
+    const chosen = [];
+    let round = 0;
+    while (chosen.length < questionsPerDay) {
+      const activeTopics = [...queues.keys()].filter(topic => positions.get(topic) < queues.get(topic).length);
+      if (!activeTopics.length) break;
+      const orderedTopics = shuffled(activeTopics, createRandom(`kviztogo-day-topics:${dateKey}:${round}`));
+      orderedTopics.forEach(topic => {
+        if (chosen.length >= questionsPerDay) return;
+        const position = positions.get(topic);
+        const item = queues.get(topic)[position];
+        if (!item) return;
+        positions.set(topic, position + 1);
+        chosen.push(item);
+      });
+      round += 1;
+    }
 
-  return shuffled(chosen, createRandom(`kviztogo-order:${dateKey}`)).map(item => item.question);
+    if (chosen.length !== questionsPerDay) {
+      throw new Error(`Za ${dateKey} pronađeno je samo ${chosen.length} valjanih pitanja.`);
+    }
+    schedule.set(dateKey, shuffled(chosen, createRandom(`kviztogo-day-order:${dateKey}`)));
+  });
+
+  return schedule;
 }
 
 function writeJson(filePath, value) {
@@ -173,24 +215,43 @@ function readJson(filePath) {
   catch { return null; }
 }
 
-function generateSet(dateKey, pool, files) {
-  const filePath = path.join(outputDir, `${dateKey}.json`);
-  if (fs.existsSync(filePath)) return false;
-
-  const questions = selectDailyQuestions(pool, dateKey, 30);
-  if (questions.length !== 30) {
-    throw new Error(`Za ${dateKey} pronađeno je samo ${questions.length} valjanih pitanja.`);
-  }
-
-  writeJson(filePath, {
-    version: 1,
-    date: dateKey,
-    generatedAt: new Date().toISOString(),
-    questionCount: questions.length,
-    sourceFileCount: files.length,
-    questions
+function questionIdsForMonth(value) {
+  const ids = new Set();
+  datesInMonth(value).forEach(dateKey => {
+    const saved = readJson(path.join(outputDir, `${dateKey}.json`));
+    (Array.isArray(saved?.questions) ? saved.questions : []).forEach(question => {
+      if (question?.id) ids.add(String(question.id));
+    });
   });
-  return true;
+  return ids;
+}
+
+function generateMonth(value, pool, files, { overwrite = false, excludedIds = new Set() } = {}) {
+  const dates = datesInMonth(value);
+  const targetDates = overwrite
+    ? dates
+    : dates.filter(dateKey => !fs.existsSync(path.join(outputDir, `${dateKey}.json`)));
+  if (!targetDates.length) return { written: 0, questionIds: questionIdsForMonth(value) };
+
+  const exclusions = new Set(excludedIds);
+  if (!overwrite) questionIdsForMonth(value).forEach(id => exclusions.add(id));
+  const schedule = selectMonthlyQuestions(pool, targetDates, exclusions);
+  const generatedAt = new Date().toISOString();
+
+  targetDates.forEach(dateKey => {
+    const questions = schedule.get(dateKey).map(item => item.question);
+    writeJson(path.join(outputDir, `${dateKey}.json`), {
+      version: 2,
+      date: dateKey,
+      generatedAt,
+      questionCount: questions.length,
+      sourceFileCount: files.length,
+      selectionPolicy: "unique-in-month-and-not-used-in-previous-month",
+      questions
+    });
+  });
+
+  return { written: targetDates.length, questionIds: questionIdsForMonth(value) };
 }
 
 function listGeneratedDates() {
@@ -201,49 +262,113 @@ function listGeneratedDates() {
     .sort();
 }
 
+function verifyGeneratedSchedule(dates) {
+  const monthlyQuestions = new Map();
+
+  dates.forEach(dateKey => {
+    const saved = readJson(path.join(outputDir, `${dateKey}.json`));
+    const questions = Array.isArray(saved?.questions) ? saved.questions : [];
+    if (questions.length !== questionsPerDay) {
+      throw new Error(`${dateKey} nema točno ${questionsPerDay} pitanja.`);
+    }
+
+    const dailyKeys = new Set();
+    const currentMonth = monthKey(dateKey);
+    if (!monthlyQuestions.has(currentMonth)) monthlyQuestions.set(currentMonth, new Set());
+    const monthQuestions = monthlyQuestions.get(currentMonth);
+
+    questions.forEach(question => {
+      const normalizedText = String(question?.question || "").toLocaleLowerCase("hr").replace(/\s+/g, " ").trim();
+      if (!normalizedText) throw new Error(`${dateKey} sadrži prazno pitanje.`);
+      if (dailyKeys.has(normalizedText)) throw new Error(`${dateKey} sadrži ponovljeno pitanje.`);
+      if (monthQuestions.has(normalizedText)) throw new Error(`${currentMonth} sadrži pitanje više od jednom.`);
+      dailyKeys.add(normalizedText);
+      monthQuestions.add(normalizedText);
+    });
+  });
+
+  const months = [...monthlyQuestions.keys()].sort();
+  for (let index = 1; index < months.length; index += 1) {
+    const previousMonth = months[index - 1];
+    const currentMonth = months[index];
+    if (addMonths(previousMonth, 1) !== currentMonth) continue;
+    const previousQuestions = monthlyQuestions.get(previousMonth);
+    const repeated = [...monthlyQuestions.get(currentMonth)].find(question => previousQuestions.has(question));
+    if (repeated) throw new Error(`${currentMonth} ponavlja pitanje iz prethodnog mjeseca ${previousMonth}.`);
+  }
+}
+
 const files = discoverQuestionFiles();
 const pool = loadQuestionPool(files);
 const currentDate = requestedDate || dateKeyInTimeZone();
 
-if (!files.length || pool.length < 30) {
+if (!launchDate || !/^\d{4}-\d{2}-\d{2}$/.test(launchDate)) {
+  throw new Error("daily30/config.json mora sadržavati ispravan launchDate.");
+}
+if (!files.length || pool.length < questionsPerDay) {
   throw new Error("Nije pronađena dovoljna baza kviz pitanja.");
 }
 
 const manifestPath = path.join(outputDir, "questions-manifest.json");
 const previousManifest = readJson(manifestPath);
 const sourceHash = hashString(JSON.stringify(pool.map(item => [item.key, item.topic, item.question])));
-const manifestChanged = previousManifest?.sourceHash !== sourceHash;
+const manifestChanged = previousManifest?.version !== 2 ||
+  previousManifest?.sourceHash !== sourceHash ||
+  previousManifest?.questionsPerDay !== questionsPerDay;
 writeJson(manifestPath, {
-  version: 1,
+  version: 2,
   generatedAt: manifestChanged ? new Date().toISOString() : previousManifest.generatedAt,
   questionCount: pool.length,
+  questionsPerDay,
   sourceHash,
   files
 });
 
-let created = 0;
-if (backfill) {
-  for (let dateKey = launchDate; dateKey <= currentDate; dateKey = addDays(dateKey, 1)) {
-    if (generateSet(dateKey, pool, files)) created += 1;
+let written = 0;
+if (regenerate) {
+  const through = requestedThrough || currentDate;
+  let previousMonthIds = questionIdsForMonth(addMonths(monthKey(requestedFrom), -1));
+
+  monthsBetween(requestedFrom, through).forEach(value => {
+    const result = generateMonth(value, pool, files, { overwrite: true, excludedIds: previousMonthIds });
+    written += result.written;
+    previousMonthIds = result.questionIds;
+  });
+} else {
+  const monthsToEnsure = new Set();
+  const configuredEnd = preparedThrough || (backfill ? currentDate : launchDate);
+  monthsBetween(launchDate, configuredEnd).forEach(value => monthsToEnsure.add(value));
+  if (monthKey(currentDate) >= monthKey(launchDate)) {
+    monthsToEnsure.add(monthKey(currentDate));
+    monthsToEnsure.add(addMonths(currentDate, 1));
   }
-} else if (generateSet(currentDate, pool, files)) {
-  created += 1;
+
+  [...monthsToEnsure].sort().forEach(value => {
+    const previousMonthIds = questionIdsForMonth(addMonths(value, -1));
+    const result = generateMonth(value, pool, files, { excludedIds: previousMonthIds });
+    written += result.written;
+  });
 }
 
 const dates = listGeneratedDates();
+verifyGeneratedSchedule(dates);
 const indexPath = path.join(outputDir, "index.json");
 const previousIndex = readJson(indexPath);
-const indexChanged = previousIndex?.timeZone !== timeZone ||
+const indexChanged = previousIndex?.version !== 2 ||
+  previousIndex?.timeZone !== timeZone ||
   previousIndex?.launchDate !== launchDate ||
+  previousIndex?.preparedThrough !== preparedThrough ||
   JSON.stringify(previousIndex?.dates || []) !== JSON.stringify(dates);
 writeJson(indexPath, {
-  version: 1,
+  version: 2,
   timeZone,
   launchDate,
+  preparedThrough,
   updatedAt: indexChanged ? new Date().toISOString() : previousIndex.updatedAt,
   latestDate: dates.at(-1) || null,
   dates
 });
 
 console.log(`Dnevnih 30: ${pool.length} jedinstvenih pitanja iz ${files.length} JSON datoteka.`);
-console.log(`Novi setovi: ${created}. Dostupni datumi: ${dates.length}.`);
+console.log(`Napisani setovi: ${written}. Dostupni datumi: ${dates.length}.`);
+console.log("Provjera rasporeda: bez ponavljanja unutar mjeseca i između susjednih mjeseci.");

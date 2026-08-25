@@ -1,410 +1,427 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-14",
-  "generatedAt": "2026-08-24T20:08:22.544Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2d9ad3c5",
+      "id": "daily-c620c29b",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Na području koje se današnje države nalazila antička Kartaga?",
+      "question": "Tijekom prve francuske revolucije i Napoleonovih ratova, protivničke sile su ukupno sklopile koliko vojnih koalicija?",
       "answers": [
-        "Tunis",
-        "Tunisa",
-        "Tunnis",
-        "Tunnisa"
+        "7",
+        "Sedam",
+        "Seven",
+        "VII",
+        "Sevn",
+        "Ziben",
+        "Zieben"
       ],
       "image": null
     },
     {
-      "id": "daily-e7c090a7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kako se zove matematički skup brojeva koji uključuje i realne i imaginarne brojeve?",
-      "answers": [
-        "Kompleksni brojevi",
-        "Kompleksni"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ea72f18b",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Koja je ptica s Mauricijusa izumrla u 17. stoljeću?",
-      "answers": [
-        "Dodo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d63466a6",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koje je boje križ koji se u mnogim europskim državama često koristi kao oznaka ljekarne?",
-      "answers": [
-        "Zelene",
-        "Zelena",
-        "Green",
-        "Grin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-da7a0519",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 2. predsjednik SAD-a, prezimena Adams, potpisao samo inicijalima, dobili bi koja slova?",
-      "answers": [
-        "JA"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-042b79bd",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Film",
-      "question": "Medo, Šilo i Milo dijete su članovi čije družbe?",
-      "answers": [
-        "Pere Kvržice",
-        "Družba Pere Kvržice"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f488ab57",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove građevina u bazi koju protivnička ekipa mora uništiti kako bi pobijedila u meču videoigre Dota 2?",
-      "answers": [
-        "Ancient",
-        "The Ancient",
-        "Drevna",
-        "Drevni"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-20a14be3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koji je američki brend motocikala kultan među bikerima, poznat po modelu Sportster?",
-      "answers": [
-        "Harley Davidson",
-        "Harli Dejvidson",
-        "Harley",
-        "Harli"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d51b70b2",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Tko je bio prvi pisac na engleskom jeziku koji je dobio Nobelovu nagradu za književnost 1907.g., a ujedno i najmlađi dobitnik te nagrade do danas sa 41.g. života?",
-      "answers": [
-        "Rudyard Kipling",
-        "Rudjard Kipling",
-        "Kipling",
-        "Keping"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ecbb7b70",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Sport",
-      "question": "Koliko naslova svjetskog WRC prvaka ukupno imaju legendarni finski rally vozači Juha Kankkunen i Tommi Mäkinen?",
-      "answers": [
-        "8",
-        "Osam"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-059a6e54",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je francuski filozof u 17. stoljeću svoj sustav potrage za sigurnim znanjem sažeo u znamenitu misao „Mislim, dakle jesam“?",
-      "answers": [
-        "René Descartes",
-        "Descartes",
-        "Rene Dekart",
-        "Dekart",
-        "Deskart",
-        "Dekartes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f6200c46",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je norveški istraživač brodom Fram između 1898. i 1902.g. istraživao velike dijelove kanadskog Arktika, uključujući skupinu otoka koja danas nosi njegovo prezime?",
-      "answers": [
-        "Otto Sverdrup",
-        "Oto Sverdrup",
-        "Sverdrup"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-306d3d9d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Prezime kojeg američkog predsjednika je jednako imenu predsjednika nepriznate konfederacije američkih država?",
-      "answers": [
-        "Jefferson",
-        "Džeferson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4e3ef45c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kako se naziva grana biologije koja proučava biljke?",
-      "answers": [
-        "Botanika"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9f43b046",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Tko je naslijedio carsku titulu od cara Augusta?",
-      "answers": [
-        "Tiberije",
-        "Tiberius Claudius Nero Caesar",
-        "Tiberije Klaudije Neron Cezar",
-        "Tiberije Cezar",
-        "Tiberius Caesar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2ff72b1f",
+      "id": "daily-866933ba",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "S kojom rijekom, rijeka Irtiš čini najdužu rijeku Rusije?",
+      "question": "Ime koje države možemo pronaći u suprotnom značenju riječi 'Veliki'?",
       "answers": [
-        "Ob"
+        "Mali"
       ],
       "image": null
     },
     {
-      "id": "daily-a8df3972",
+      "id": "daily-e8e83daa",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Po kojem je crvenkastom drvu, važnom u ranoj trgovini s Portugalcima, Brazil dobio svoje današnje ime?",
+      "question": "Kolumbo je 1492.g. prvo kopno na koje je stupio nazvao San Salvador a danas on pripada kojem otočju?",
       "answers": [
-        "Pau brasil",
-        "Paubrasilia",
-        "Paubrazilija",
-        "Brazilsko drvo",
-        "Brazilovo drvo",
-        "Brazilwood",
-        "Drvo brazil",
-        "Brazilvud"
+        "Bahami",
+        "Bahame",
+        "Bahamama",
+        "Bamamima",
+        "Bahamas"
       ],
       "image": null
     },
     {
-      "id": "daily-9862a615",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koji je studio razvio i 2010.g. objavio popularnu online videoigru World of Tanks?",
-      "answers": [
-        "Wargaming",
-        "Wargejming",
-        "War Gaming",
-        "Var Gejming"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-548c1116",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je brazilac proglašen najboljim igračem finala svjetskog nogometnog prvenstva 2002.g.?",
-      "answers": [
-        "Ronaldo Nazario",
-        "Ronaldo",
-        "Nazario"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6042b9eb",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Kod kojeg rta su vandali 468.g. na čelu s kraljem Gajzerikom, porazili duplo veću vojsku istočnog rimskog carstva koja je brojala preko 1000 brodova i 100 000 vojnika?",
-      "answers": [
-        "Bon",
-        "Bona"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a269f1a7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koja se povijesna osoba u Evanđelju po Ivanu obraća Isusu pitanjem 'Što je istina?'",
-      "answers": [
-        "Poncije Pilat",
-        "Pilat",
-        "Pilatus",
-        "Pontius Pilatus",
-        "Poncijus Pilatus",
-        "Pilatu",
-        "Pilatusu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6cfe31f3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se naziva specifični oblik ratovanja koji je nastao tijekom španjolskog otpora Napoleonovoj okupaciji, a čiji naziv na španjolskom jeziku doslovno znači 'mali rat'?",
-      "answers": [
-        "Gerila",
-        "Gerilsko ratovanje",
-        "Guerrilla",
-        "Guerrila",
-        "Gerilski rat",
-        "Gerila rat",
-        "Guerilla rat",
-        "Guerilla warfare",
-        "Gerila varfer",
-        "Gerilsko",
-        "Gerilski"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-46a64810",
+      "id": "daily-c6b6a1f8",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Iako je najpoznatija ona verzija braće Grimm, koji je francuski pisac napisao svoju inačicu Crvenkapice?",
+      "question": "Kojeg je mladog engleskog kralja Mark Twain stavio u središte zbivanja svojeg romana Kraljević i Prosjak?",
       "answers": [
-        "Charles Perrault",
-        "Šarl Pero",
-        "Čarls Pero",
-        "Perrault",
-        "Pero",
-        "Perot"
+        "Edwarda VI",
+        "Edward VI",
+        "Edvarda",
+        "Edwarda",
+        "Edvard",
+        "Edvarda",
+        "Eduard",
+        "Eduarda",
+        "Edvrd",
+        "Edvrda",
+        "Edwards",
+        "Edvards",
+        "Edvrds"
       ],
       "image": null
     },
     {
-      "id": "daily-1218e3ef",
+      "id": "daily-afbf1a18",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove junak odjeven u zeleno koji u većini igara serijala The Legend of Zelda spašava Zeldu?",
+      "answers": [
+        "Link"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7c579cc1",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Koji pojam možemo pronaći u matematici, dijelu biljke i dijelu zuba?",
+      "answers": [
+        "Korijen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2482bb9a",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koji je prvi planet koji je pronađen matematičkim izračunima umjesto empirijskim promatranjima?",
+      "question": "U fizici, proces prelaska tvari iz čvrstog u plinovito stanje bez prethodnog prijelaza u tekuće se zove kako?",
       "answers": [
-        "Neptun"
+        "Sublimacija"
       ],
       "image": null
     },
     {
-      "id": "daily-a9f164e0",
+      "id": "daily-3161e536",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove termin u književnosti za skrivenu poruku ili značenje ispod površinske radnje djela?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je jedini američki predsjednik u povijesti koji je dao ostavku na mjesto predsjednika?",
       "answers": [
-        "Alegorija"
+        "Richard Nixon",
+        "Ričard Nikson",
+        "Nixon",
+        "Nikson"
       ],
       "image": null
     },
     {
-      "id": "daily-1639448e",
+      "id": "daily-a0660b67",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Ostalo",
+      "question": "Kako se zove religijska knjiga kršćana koja se sastoji od Starog i Novog zavjeta?",
+      "answers": [
+        "Biblija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9591943d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Sport",
-      "question": "Koji je proslavljeni hrvatski košarkaš nosio nadimak 'Košarkaši Mozart'?",
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je britanski povjesničar upozorio na opasnost vlasti poznatom mišlju 'Moć kvari, a apsolutna moć kvari apsolutno'?",
       "answers": [
-        "Dražen Petrović",
-        "Petrović"
+        "Lord Acton",
+        "Akton",
+        "Acton",
+        "Lord Akton",
+        "Ekton"
       ],
       "image": null
     },
     {
-      "id": "daily-c9c33247",
+      "id": "daily-e95d67fa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Prema antičkoj predaji, tko je prelazeći Rubikon 49.g. pr. Kr. izgovorio riječi koje danas poznajemo kao ' 'Kocka je bačena'?",
+      "answers": [
+        "Julije Cezar",
+        "Cezar",
+        "Julius Caesar",
+        "Caesar",
+        "Sezar",
+        "Iulius Caesar",
+        "Julijus Sezar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-15f71040",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je sumerski bog Mjeseca i otac boga Sunca Utua bio zaštitnik grada Ura?",
+      "answers": [
+        "Nana",
+        "Nanna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3c4a0209",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Koje slovo je označavalo broj 100 u rimskom carstvu?",
+      "answers": [
+        "C"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-78ae5dfd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "U kojoj je zgradi u Philadelphiji potpisan Ustav SAD-a?",
+      "answers": [
+        "Independence Hall",
+        "Dvorana Neovisnosti",
+        "Zgrada Neovisnosti",
+        "Independenc Hal",
+        "Hall of Independence",
+        "Hal of Independenc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-46defb00",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "FilmGlazba",
-      "question": "Kako se naziva kraća glazbena scenska forma s više govora i manje pjevanja?",
-      "answers": [
-        "Opereta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4b478d76",
-      "type": "blitz",
-      "difficulty": 3,
       "topic": "Glazba",
-      "question": "Koji se arhaizam za violinu danas koristi kao naziv jednog narodnog instrumenta?",
+      "question": "Koji bend je osmislio svoj logo po uzoru na hinduističku božicu Kali, koju se većinom prikazuje isplažena jezika?",
       "answers": [
-        "Gusle",
-        "Gusla"
+        "The Rolling Stones",
+        "Rolling Stones",
+        "Roling Stonsi",
+        "Stonsi",
+        "Stones"
       ],
       "image": null
     },
     {
-      "id": "daily-13ccfb33",
+      "id": "daily-19796cc9",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koje je boje karta kojom nogometni sudac isključuje igrača iz utakmice?",
+      "question": "Kako se naziva postupak proizvodnje pjenušavog vina u kojem se sekundarna fermentacija, odgovorna za nastanak mjehurića, odvija izravno u boci?",
       "answers": [
-        "Crvena",
-        "Crvene",
-        "Red",
-        "Rott",
-        "Rot"
+        "Méthode traditionnelle",
+        "Methode traditionnelle",
+        "Tradicionalna metoda",
+        "Traditional method",
+        "Metoda tradicional",
+        "Metoda šampanjizacije",
+        "Šampanjska metoda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9b9ce19f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Koje je ime nosilo naselje Cavtat za vrijeme rimskog carstva?",
+      "answers": [
+        "Epidaurum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0670c821",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koji zeleni pigment daje boju biljkama i algama te je ključan za fotosintezu?",
+      "answers": [
+        "Klorofil"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-86a16b04",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove tajanstveni čovjek u odijelu koji se tijekom serijala videoigara Half-Life pojavljuje i promatra Gordona Freemana?",
+      "answers": [
+        "G Man",
+        "Dži Men",
+        "Gi Men",
+        "G Men"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aba098d3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koje je pacifičko otočje Álvaro de Mendaña 1568.g. nazvao po biblijskom kralju za čije se zemlje vjerovalo da obiluju zlatom?",
+      "answers": [
+        "Solomonovi Otoci",
+        "Salomonski Otoci",
+        "Solomonsko otočje",
+        "Salomonovi",
+        "Salomons",
+        "Salomon",
+        "Salomonski",
+        "Salomonsko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8372cf86",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Američka televizijska serija 'Prijatelji' (Friends) se na NBC-u prikazivala od 1994. do koje godine?",
+      "answers": [
+        "2004.",
+        "Dvije tisuće četvrta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-40cac0bf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Laval i Bastia su nogometni klubovi iz koje države?",
+      "answers": [
+        "Francuske",
+        "Francuska",
+        "France",
+        "Frenc",
+        "Franes",
+        "Frencs",
+        "Fra"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cce1fd9a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji je bend snimio album 'A Night at the Opera'?",
+      "answers": [
+        "Queen",
+        "Kuin",
+        "Kvin",
+        "Quin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a9c147e7",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Zemljopis",
+      "question": "Koja se pustinja proteže duž cijele obale Namibije?",
+      "answers": [
+        "Namib"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a40f4e01",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja životinja iz Šume od sto jutara, tj. Pustolovina medvjedića Winnieja, koristi vlastiti rep poput opruge za skakanje?",
+      "answers": [
+        "Tigger",
+        "Tajger",
+        "Tiger",
+        "Tigar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8ac48d69",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Reprezentacija koje je države osvojila Europsko nogometno prvenstvo 2016.g.?",
+      "answers": [
+        "Portugal",
+        "Portugol",
+        "Portuguise",
+        "Portugiz",
+        "Portugalci",
+        "Port",
+        "Portugalske",
+        "Por"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3bd3dcae",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Kako se zove zlikovac u prvom od filmova 'Umri muški' (Die Hard)?",
+      "answers": [
+        "Hans Gruber",
+        "Gruber"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3667df7c",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Kako se naziva zaštitna metalna konstrukcija u utrkama koja štiti vozača pri prevrtanju vozila?",
+      "answers": [
+        "Roll cage",
+        "Zaštitni kavez",
+        "Rol Kejdž"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-05f352fd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kraticu kojeg kemijskog elementa nalazimo uz imena mineralnih voda za piće, Donata i Mivele?",
+      "answers": [
+        "Mg",
+        "Em ge",
+        "Emge",
+        "Magnezij",
+        "Magnesium",
+        "Magnezijum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4edddfbe",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji španjolski naziv za šešir izvan španjolskog govornog područja najčešće povezujemo s tradicionalnim meksičkim šeširom izrazito širokog oboda?",
+      "answers": [
+        "Sombrero"
       ],
       "image": null
     }

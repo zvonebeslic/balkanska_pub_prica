@@ -1,417 +1,395 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-18",
-  "generatedAt": "2026-08-24T20:08:22.546Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-cee19b30",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Violinu koja se 2013.g. na aukciji prodala za 900 000 funti, je Wallace Hartley svirao 1912.g. na kojem brodu?",
-      "answers": [
-        "Titaniku",
-        "Titanik",
-        "Titanicu",
-        "Titanic",
-        "Titanics",
-        "Titaniks"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7e37c898",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "S kim se izležava Milo Hrnić u pjesmi 'Budi noćas mirno more'?",
-      "answers": [
-        "S cvrčkom",
-        "Cvrčkom",
-        "Cvrčak"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-82b2e813",
+      "id": "daily-aef1525f",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Koja kompanija posjeduje studio Polyphony Digital i izdaje serijal trkaćih videoigara Gran Turismo?",
+      "question": "Kako se zove arkadna videoigra iz 1985.g. u kojoj igrač upravlja svemirskim brodom Vic Viper i pomoću posebne trake bira nadogradnje oružja?",
       "answers": [
-        "Sony Interactive Entertainment",
-        "Sony",
-        "Soni"
+        "Gradius",
+        "Gradijus"
       ],
       "image": null
     },
     {
-      "id": "daily-ad0b10c2",
+      "id": "daily-2677f860",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koje je drago kamenje zapravo zeleno obojeni oblik minerala berila?",
+      "topic": "Nogomet",
+      "question": "Godina je 1997., na 'Tournoi de France' igraju Brazil i Francuska. Roberto Carlos se sprema izvesti slobodnjak sa nekih 35m i ne sluteći da će taj pogodak postati jedan od najljepših i najnevjerojatnijih golova u povijesti ovog sporta. Barthez je na golu Francuske i namješta živi zid od 4 igrača, a u zidu Vieira, Maurice, Deschamps i tko još?",
       "answers": [
-        "Smaragd",
-        "Smaragdus"
+        "Zinedine Zidane",
+        "Zinedin Zidan",
+        "Zidane",
+        "Zidan"
       ],
       "image": null
     },
     {
-      "id": "daily-a1676a23",
+      "id": "daily-c9399d31",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je britanac napisao knjigu o Matildi, nadprosječno pametnoj djevojčici koja ima i telekinetičke sposobnosti?",
+      "answers": [
+        "Roald Dahl",
+        "Rouald Dal",
+        "Roald Dal",
+        "Dahl",
+        "Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a8df3972",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je konkvistador srušio Aztečko Carstvo, koristeći ne samo španjolsko oružje nego i savezništva s narodima drugih domorodaca koji su bili neprijatelji Azteka?",
+      "question": "Po kojem je crvenkastom drvu, važnom u ranoj trgovini s Portugalcima, Brazil dobio svoje današnje ime?",
       "answers": [
-        "Hernán Cortés",
-        "Hernando Cortez",
-        "Hernando Kortez",
-        "Hernan Kortez",
-        "Cortes",
-        "Kortez"
+        "Pau brasil",
+        "Paubrasilia",
+        "Paubrazilija",
+        "Brazilsko drvo",
+        "Brazilovo drvo",
+        "Brazilwood",
+        "Drvo brazil",
+        "Brazilvud"
       ],
       "image": null
     },
     {
-      "id": "daily-509b12e2",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Koji je kompozitor skladao glazbu za Ratove zvijezda?",
-      "answers": [
-        "John Williams",
-        "Džon Viliams",
-        "Williams",
-        "Viliams",
-        "John Towner Williams"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-044eb503",
+      "id": "daily-f58d5722",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kratica RGB predstavlja crvenu, zelenu i koju još boju?",
+      "topic": "Moreplovci",
+      "question": "Kako se naziva gusarska zastava s lubanjom i prekriženim kostima, čiji je izgled imao brojne varijante, ali je postala univerzalni simbol piratstva?",
       "answers": [
-        "Plavu",
-        "Plava",
-        "Blue",
-        "Blu"
+        "Jolly Roger",
+        "Džoli Rođer"
       ],
       "image": null
     },
     {
-      "id": "daily-37399cea",
+      "id": "daily-1a8d4097",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koje ime nosi najduža rijeka u Keniji, 1000km duga žila kucavica ove države koja se naposlijetku ulijeva u Indijski Ocean?",
+      "topic": "Gaming",
+      "question": "Koja japanska kompanija razvija nogometni serijal eFootball, ranije poznat kao Pro Evolution Soccer?",
       "answers": [
-        "Tana"
+        "Konami"
       ],
       "image": null
     },
     {
-      "id": "daily-3c0713c4",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kojim brojem možemo pomnožiti bilo koji broj, a da broju kojem se dodaje taj broj ne promijenimo vrijednost?",
-      "answers": [
-        "1",
-        "Jedan",
-        "One",
-        "Von",
-        "Ein",
-        "Ajn",
-        "I"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d19bbe1c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove britanski pisac koji je stvorio lik Jamesa Bonda?",
-      "answers": [
-        "Ian Fleming",
-        "Fleming"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ba52d41f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 36. predsjednik SAD-a, prezimena Johnson, potpisao samo inicijalima, dobili bi koja slova?",
-      "answers": [
-        "LBJ"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-84d3acf9",
+      "id": "daily-43c1ff91",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koji se rat odvijao između 1939. i 1945. i uključivao većinu svjetskih sila?",
+      "question": "Koji je trojanski junak ubio Patrokla misleći da je Ahilej i time izazvao Ahilejev povratak na bojište?",
       "answers": [
-        "Drugi svjetski rat",
-        "Drugi svjetski",
-        "2. svjetski",
-        "2. svjetski rat",
-        "WW2",
-        "WW 2"
+        "Hektor",
+        "Hector"
       ],
       "image": null
     },
     {
-      "id": "daily-c5d0817d",
+      "id": "daily-f326705c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Tko je pjevač grupe Arctic Monkeys?",
+      "answers": [
+        "Alex Turner",
+        "Aleks Turner",
+        "Turner",
+        "Tarner"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6efcf824",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Ako pričamo o 4 nebeske kineske životinje, spomenuti ćemo Tigra, Zmaja, Pticu i koga još?",
+      "topic": "FloraFauna",
+      "question": "Tri mudraca su novorođenom Isusu kao dar donijeli zlato, tamjan i koju još aromatičnu smolu?",
       "answers": [
-        "Kornjaču"
+        "Smirnu",
+        "Smirna",
+        "Mira",
+        "Izmirna"
       ],
       "image": null
     },
     {
-      "id": "daily-c42e41ae",
+      "id": "daily-95bb778a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element ima simbol F, atomski broj 9 a atomsku masu 18,9984?",
+      "answers": [
+        "Fluor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8adab700",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko je 3/4 od 200?",
+      "answers": [
+        "150",
+        "Sto pedeset",
+        "Stotinu pedeset",
+        "Hundred fifty"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6b008ad7",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Biljke koje se oprašuju uz pomoć insekata nazivamo kako?",
+      "answers": [
+        "Entomofilne biljke",
+        "Entomofilne"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3ee22ecd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojem je gradu nekoliko carskih predstavnika 1618.g. preživjelo izbacivanje kroz prozor, dok je politički potres izazvan njihovim padom pomogao pokrenuti sukob koji će trajati sljedećih trideset godina?",
+      "answers": [
+        "Pragu",
+        "Prag",
+        "Prague",
+        "Praha",
+        "Pragues",
+        "Prahi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-32486de3",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Koji je glavni grad Komora?",
+      "question": "Koja Ruska rijeka, duga 4 472km, izvire u Bajkalskim planinama a svoje ušće ima u Laptevskom Moru?",
       "answers": [
-        "Moroni"
+        "Lena"
       ],
       "image": null
     },
     {
-      "id": "daily-20a14be3",
+      "id": "daily-efdaa045",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koji je američki brend motocikala kultan među bikerima, poznat po modelu Sportster?",
+      "topic": "Film",
+      "question": "Kako se zove zli klaun u filmu 'Ono' (It)?",
       "answers": [
-        "Harley Davidson",
-        "Harli Dejvidson",
-        "Harley",
-        "Harli"
+        "Pennywise",
+        "Penivajs"
       ],
       "image": null
     },
     {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4276ab8e",
+      "id": "daily-bb13992f",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Sudeći po jednoj poslovici, onaj tko je 'strpljen' taj je i što?",
+      "question": "Strpljenje se često nagrađuje, barem prema poslovici koja kaže 'Tko čeka, taj i ...'?",
       "answers": [
-        "Spašen",
-        "Saved",
-        "Sejvd"
+        "Dočeka"
       ],
       "image": null
     },
     {
-      "id": "daily-fd8aef13",
+      "id": "daily-dca20d1a",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Kome je pomogao Andrew Jackson, inače 7. predsjednik SAD-a, da osnuje demokratsku stranku, ?",
+      "question": "Kada bi se 7. predsjednik SAD-a, prezimena Jackson, potpisao samo inicijalima, dobili bi koja slova?",
       "answers": [
-        "Martinu Van Burenu",
+        "AJ"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0cb0d81e",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Koja je najuglednija glazbena nagrada u Republici Hrvatskoj?",
+      "answers": [
+        "Porin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c49c5d75",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Na kojem stadionu svoje domaće nogometne utakmice igra GNK Dinamo Zagreb?",
+      "answers": [
+        "Maksimiru",
+        "Maksimir"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1f44d739",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Koji se talijanski izraz koristi za planinarski dom ili sklonište u Alpama?",
+      "answers": [
+        "Refuge",
+        "Refugio",
+        "Refuđio"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8171f208",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se nazivaju velike monumentalne grobnice faraona u Egiptu trokutastog oblika?",
+      "answers": [
+        "Piramide"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f0b2a706",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio prvi američki predsjednik koji se rodio kao američki državljanin?",
+      "answers": [
         "Martin Van Buren",
-        "Van Burenu",
         "Van Buren"
       ],
       "image": null
     },
     {
-      "id": "daily-e95d67fa",
+      "id": "daily-36e6ceaf",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je jedini paran prost broj?",
+      "answers": [
+        "2",
+        "Dva",
+        "Two",
+        "Ii",
+        "Tu",
+        "Tvu",
+        "Zwei",
+        "Cvaj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-29aaf2aa",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Prema antičkoj predaji, tko je prelazeći Rubikon 49.g. pr. Kr. izgovorio riječi koje danas poznajemo kao ' 'Kocka je bačena'?",
+      "topic": "Znanost",
+      "question": "Na kojem se sveučilištu nalazi Lucasova katedra, prestižna organizacijska jedinica za matematiku i fiziku na kojoj su predavali Newton, Dirac i Hawking?",
       "answers": [
-        "Julije Cezar",
-        "Cezar",
-        "Julius Caesar",
-        "Caesar",
-        "Sezar",
-        "Iulius Caesar",
-        "Julijus Sezar"
+        "Cambridgeu",
+        "Kembridžu",
+        "Cambridge",
+        "Kembridž"
       ],
       "image": null
     },
     {
-      "id": "daily-7d4bee77",
+      "id": "daily-799b01cb",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja grana zoologije se bavi proučavanjem paučnjaka?",
+      "topic": "Zemljopis",
+      "question": "Koje ime koristimo za oblik putovanja u prirodi, najčešće u Africi, s ciljem promatranja divljih životinja u njihovom prirodnom okruženju?",
       "answers": [
-        "Arahnologija"
+        "Safari"
       ],
       "image": null
     },
     {
-      "id": "daily-7bf1b61e",
+      "id": "daily-658f02b2",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "FilmGlazba",
-      "question": "U kojem je gradu nastao rock bend The Beatles?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji glazbeni instrument spaja bajku braće Grimm u kojoj svirač odvodi štakore i djecu iz grada te Mozartovu operu punu fantastičnih likova?",
       "answers": [
-        "Liverpool",
-        "Liverpul"
+        "Frula",
+        "Flote",
+        "Flute"
       ],
       "image": null
     },
     {
-      "id": "daily-0b237abd",
+      "id": "daily-1c2b761f",
       "type": "blitz",
       "difficulty": 1,
       "topic": "AntickiRim",
-      "question": "Koje more su stari rimljani zvali 'našim morem'?",
+      "question": "Koje slovo je označavalo broj 5 u rimskom carstvu?",
       "answers": [
-        "Mediteransko",
-        "Mediteransko more",
-        "Mediteran",
-        "Sredozemno",
-        "Sredozemno more",
-        "Mediterranean"
+        "V"
       ],
       "image": null
     },
     {
-      "id": "daily-75453eba",
+      "id": "daily-608c8252",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Izreka 'Mašta je važnija od znanja' se pripisuje kojem velikom svjetskom znanstveniku?",
+      "answers": [
+        "Albertu Einsteinu",
+        "Albertu Ajnštajnu",
+        "Einstein",
+        "Einsteinu",
+        "Ajnštajnu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e25ce4dd",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Sport",
-      "question": "Kako se zove najpoznatija europska nogometna klupska liga koju organizira UEFA?",
-      "answers": [
-        "Liga prvaka",
-        "UEFA Champions League",
-        "Champions League",
-        "Liga Šampiona",
-        "Čempions Lig"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-38a047dc",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove pismo koje su koristili Sumerani i drugi narodi Mezopotamije?",
-      "answers": [
-        "Klinopis",
-        "Klinasto pismo",
-        "Klinovo pismo",
-        "Klinasto",
-        "Klinčano",
-        "Klinovo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2ad13a20",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je nogometni trener osvojio naslove u svih 5 najjačih liga Europe?",
-      "answers": [
-        "Carlo Ancelotti",
-        "Karlo Anćeloti",
-        "Ancelotti",
-        "Anćeloti"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e45967e6",
-      "type": "blitz",
-      "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "Koji je germanski narod opljačkao Rim 455.g.?",
+      "question": "Koje more su stari rimljani poznavali kao Mare Germanicum?",
       "answers": [
-        "Vandali"
+        "Sjeverno more",
+        "Sjeverno",
+        "North sea",
+        "Nort si"
       ],
       "image": null
     },
     {
-      "id": "daily-edff693a",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Književnost",
-      "question": "Ep o kojem je legendarnom sumerskom kralju napisan na glinenim pločama, klinastim pismom?",
-      "answers": [
-        "Gilgamešu",
-        "Gilgameš"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c9c33247",
+      "id": "daily-f5b15da1",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "FilmGlazba",
-      "question": "Kako se naziva kraća glazbena scenska forma s više govora i manje pjevanja?",
-      "answers": [
-        "Opereta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-938e1da3",
-      "type": "blitz",
-      "difficulty": 2,
       "topic": "Film",
-      "question": "Film 'Dunkirk' govori o evakuaciji savezničkih vojnika iz kojeg rata?",
+      "question": "Koji film završava rečenicom: 'Louis, mislim da je ovo početak jednog divnog prijateljstva'?",
       "answers": [
-        "Drugog svjetskog rata",
-        "2. svjetskog rata",
-        "Drugog svjetskog",
-        "2. svjetskog",
-        "2",
-        "drugog",
-        "2 svjetskog",
-        "drugog svjetskog",
-        "2 svj",
-        "Drugog svj"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
+        "Casablanca",
+        "Kazablanka"
       ],
       "image": null
     }

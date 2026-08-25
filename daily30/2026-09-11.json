@@ -1,0 +1,439 @@
+{
+  "version": 2,
+  "date": "2026-09-11",
+  "generatedAt": "2026-08-25T18:26:49.228Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-cb9e0907",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove najpoznatija slika Leonarda da Vincija koja prikazuje ženu tajanstvenog osmijeha?",
+      "answers": [
+        "Mona Lisa",
+        "Giaconda",
+        "Đakonda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-531bea00",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se naziva pismo starog Egipta koje se sastoji od slikovnih znakova?",
+      "answers": [
+        "Hijeroglifi",
+        "hijeroglifsko pismo",
+        "Hierogliphes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-29a0c4e2",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se naziva opasnost u planini kada se velika masa snijega odvoji i sklizne niz padinu?",
+      "answers": [
+        "Lavina"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ef141539",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koliko je zvjezdica iznad orla na Velikom pečatu SAD-a?",
+      "answers": [
+        "13",
+        "13.",
+        "Trinaest",
+        "XIII",
+        "Thirteen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e8486344",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji se književni junak često naziva 'gospodarom džungle'?",
+      "answers": [
+        "Tarzan",
+        "Tarzans"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-e8015437",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja reprezentacija je osvojila SP u nogometu 2018.g.?",
+      "answers": [
+        "Francuska",
+        "Francuske",
+        "Francuzi",
+        "Franch",
+        "Frenč",
+        "Franchs",
+        "France",
+        "Frenc",
+        "Frances",
+        "Frencs",
+        "Fra",
+        "Fr"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9bef468d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Završi poznatu izreku: 'Tko pod drugim jamu kopa, sam u nju...?",
+      "answers": [
+        "Upada",
+        "Pada"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-24dfc14f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se zove poznati američki košarkaš koji je šest puta osvojio naslov NBA prvaka s Chicago Bullsima?",
+      "answers": [
+        "Michael Jordan",
+        "Majkl Džordan",
+        "Jordan",
+        "Džordan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b400dd43",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja životinja je u 'trku' na banovcu, prvom hrvatskom novcu kovanom u Pakracu i Zagrebu?",
+      "answers": [
+        "Kuna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2ed303cd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Sa atomskom težinom od 1,00794 koji je najlakši kemijski element?",
+      "answers": [
+        "Vodik",
+        "Hydrogen",
+        "Hidrogen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f7f537ca",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Kuna bjelica, tri lava te koza svoje su mjesto našli na zastavi koje države?",
+      "answers": [
+        "Hrvatske",
+        "Hrvatska",
+        "Hr",
+        "Hrv",
+        "Cro",
+        "Croatie",
+        "Croatia",
+        "Kroejša",
+        "Kroejše"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4acdac7d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Na čemu se, prema poslovici, najbolje poznaju junaci?",
+      "answers": [
+        "Na muci",
+        "Na muki",
+        "Muci",
+        "Muki",
+        "Muka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fd6c7896",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove serija smještena u fiktivnim krajolicima Westerosa, temeljena na knjigama Georgea R. R. Martina?",
+      "answers": [
+        "Igra prijestolja",
+        "Game of Thrones"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b1e84ab1",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Tko je pjevač grupe Coldplay?",
+      "answers": [
+        "Chris Martin",
+        "Kris Martin",
+        "Martin",
+        "Christopher Anthony John Martin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d1e2475d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Paul Dirac i Erwin Schrodinger su 1933.g. zajedno dobili koju nagradu?",
+      "answers": [
+        "Nobelovu",
+        "Nobela",
+        "Nobels",
+        "Nobelsku",
+        "Nobel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9e923ee6",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Što je bačeno u slavnoj izreci Gaja Julija Cezara?",
+      "answers": [
+        "Kocka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e39373d2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Otok Borneo od Filipina odvajaju dva mora. Jedno je Sulusko a drugo koje?",
+      "answers": [
+        "Celebsko More",
+        "Celebsko",
+        "Celebs",
+        "Celebian",
+        "Celebijan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b8c28d59",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja japanska kompanija proizvodi igraće konzole PlayStation?",
+      "answers": [
+        "Sony",
+        "Soni"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9d526661",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Zemljopis",
+      "question": "Otoci Mahe, Praslin i La Digue se nalaze u sastavu koje otočne države u Indijskom Oceanu?",
+      "answers": [
+        "Sejšela",
+        "Sejšeli",
+        "Seychelles",
+        "Sejšeles",
+        "Seychellesa",
+        "Seychella"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-325fa6b5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je arapski moreplovac i pisac iz 15. stoljeća, poznat pod nadimkom Lav mora, napisao važne priručnike o plovidbi Indijskim oceanom?",
+      "answers": [
+        "Ahmad ibn Majid",
+        "Ahmed ibn Madžid",
+        "Ahmad bin Majid",
+        "Ibn Majid",
+        "Ibn Madžid",
+        "Majid",
+        "Madžid"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-966b5b81",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Sport",
+      "question": "Kako se zove domaći nogometni klub iz Splita s crveno-bijelim kvadratićima u grbu?",
+      "answers": [
+        "Hajduk",
+        "HNK Hajduk Split",
+        "Hajduk Split"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8e69f811",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove proces trošenja stijena i tla uslijed djelovanja vode, vjetra i leda?",
+      "answers": [
+        "Erozija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e9d97260",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je njemačko američki poduzetnik zajedno s Jacobom Davisom povezan s patentiranjem hlača ojačanih metalnim zakovicama, iz kojih su se razvile moderne traperice?",
+      "answers": [
+        "Levi Strauss",
+        "Levi Štraus",
+        "Strauss",
+        "Štraus",
+        "Levis",
+        "Levi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cd1a4f52",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja bića u Dahlovu romanu prepoznajemo po kandžama, perikama i odbojnosti prema dječjem mirisu?",
+      "answers": [
+        "Vještice",
+        "Witches",
+        "Vitčes",
+        "Vičes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-712d6ba8",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Rimski je car Emilijan vladao svega 2 mjeseca, svrgnuo je cara Trebonija Gala, bio ubijen od svoje vojske u Spoletiumu a rodio se na najvećem Tuniškom otoku, koji se zove kako?",
+      "answers": [
+        "Djerba",
+        "Đerba",
+        "Džerba",
+        "Girba",
+        "Gerba"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d039f5b9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove popularna serija o mafijaškom bossu iz New Jerseyja, Tonyju Sopranu?",
+      "answers": [
+        "The Sopranos",
+        "Sopranos",
+        "Obitelj Soprano",
+        "Soprano"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1c3b6983",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je grčki junak bio gotovo nepobjediv u borbi, ali je zbog svađe s Agamemnonom odbio sudjelovati u najvažnijim bitkama protiv Troje?",
+      "answers": [
+        "Ahilej",
+        "Achilles",
+        "Ahilis",
+        "Achiles",
+        "Ahiles",
+        "Aciles"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e326bcd4",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Tko je pjevačica hita 'Bad Guy'?",
+      "answers": [
+        "Billie Eilish",
+        "Bili Ajliš",
+        "Eilish",
+        "Ajliš",
+        "Billie Eilish Pirate Baird O'Connell"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b980617b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji je horor film iz 2017. godine proslavio Jordana Peelea kao vrhunskog redatelja horor žanra?",
+      "answers": [
+        "Bježi",
+        "Get out",
+        "Bježi!",
+        "Get Out!"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-617d1cb7",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Kako se zove otac Lukea Skywalkera?",
+      "answers": [
+        "Darth Vader",
+        "Dart Vejder",
+        "Anakin Skywalker",
+        "Anakin Skajvoker",
+        "Vader",
+        "Vejder",
+        "Anakin",
+        "Darth"
+      ],
+      "image": null
+    }
+  ]
+}

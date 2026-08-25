@@ -1,438 +1,442 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-16",
-  "generatedAt": "2026-08-24T20:08:22.545Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-6788b576",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "U kojoj se poslanici Korinćanima nalazi poznati citat o ljubavi 'Ljubav je strpljiva, ljubav je dobrostiva'?",
-      "answers": [
-        "Prvoj",
-        "1.",
-        "U prvoj",
-        "U 1.",
-        "U prvoj poslanici",
-        "1st",
-        "First",
-        "Frst"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-52b9bbf1",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji odjevni predmet Pipi Duga Čarapa nosi za mnogo brojeva veći nego što joj stvarno treba?",
-      "answers": [
-        "Cipele",
-        "Tene",
-        "Pume",
-        "Patike",
-        "Šue",
-        "Shoes",
-        "Šuz",
-        "Tenisice",
-        "Cipelice",
-        "Pumice",
-        "Postole",
-        "Opanke",
-        "Opanci",
-        "Obuću",
-        "Obuća",
-        "Čevlji",
-        "Čevlje"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-86c33796",
+      "id": "daily-67236dae",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koje je luksuzno odmaralište na Floridi u vlasništvu Donalda Trumpa?",
+      "question": "Koji je američki predsjednik poznat po nadimku Old Kinderhook?",
       "answers": [
-        "Mar a Lago",
-        "Maralago"
+        "Martin Van Buren",
+        "Van Buren"
       ],
       "image": null
     },
     {
-      "id": "daily-6df3ac4b",
+      "id": "daily-31732e2a",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Koji glumac glumi Sherlocka Holmesa u filmovima Guyja Ritchieja?",
+      "answers": [
+        "Robert Downey Jr",
+        "Robert Dovni Junior",
+        "Downey Jr",
+        "Dovni Junior",
+        "Robert John Downey Jr.",
+        "Robert Dovni",
+        "Downey",
+        "Dovni",
+        "Robert Junior",
+        "Robert Džunior",
+        "Dovni Džunior",
+        "Robert Dovni Džunior"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-67de0a6d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Koji je nogometni trener sa Barcelonom revolucionirao poznatu 'tiki-taka' strategiju?",
+      "question": "Stadion kojeg nogometnog kluba se kroz povijest zvao Papazin Cayiri, Union Club Field, Ittihat Spor Field, Ulker stadion Sukru Saracoglu, a od nedavno i Chobani?",
       "answers": [
-        "Pep Guardiola",
-        "Guardiola",
-        "Pep Gvardiola",
-        "Guardiola",
-        "Gvardiola"
+        "Fenerbahcea",
+        "Fenerbahce",
+        "Fenerbahčea",
+        "Fenerbahče",
+        "Fenera",
+        "Fener"
       ],
       "image": null
     },
     {
-      "id": "daily-c5bbbc5f",
+      "id": "daily-cd24106a",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Koji je njemački pisac za djecu između ostalog, napisao 'Leteći razred', 'Trojica u snijegu' i 'Konferencija životinja'?",
+      "question": "Kako se zove fiktivni pripovjedač romana 'Moby-Dick' koji se u knjizi predstavlja na samom početku?",
       "answers": [
-        "Erich Kästner",
-        "Kastner",
-        "Erik Kastner",
-        "Erih Kastner",
-        "Kasner",
-        "Kestner"
+        "Ishmael",
+        "Išmael"
       ],
       "image": null
     },
     {
-      "id": "daily-f4f01f9e",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Kako se zove zlikovac koji u Bondovu filmu 'Za smrt nema vremena' (No Time to Die) koristi nanorobote kao biološko oružje?",
-      "answers": [
-        "Lyutsifer Safin",
-        "Safin",
-        "Lucifer Safin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3fb8aa18",
+      "id": "daily-3fb425dd",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove otok na kojem se odvija velik dio radnje videoigara Angry Birds?",
+      "topic": "Znanost",
+      "question": "Koji bi troslovni sistem griješio u 'kilometre' da Einstein nije otkrio teoriju relativnosti?",
       "answers": [
-        "Piggy Island",
-        "Otok Svinja",
-        "Svinjski otok",
-        "Svinja",
-        "Svinjski",
-        "Piggy",
-        "Pigi",
-        "Pigs"
+        "GPS",
+        "Dži Pi Es",
+        "Džipies"
       ],
       "image": null
     },
     {
-      "id": "daily-6a5e14ed",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja portugalska rijeka protječe kroz jednu od najstarijih zakonski razgraničenih vinskih regija svijeta, poznatu ponajprije po proizvodnji vina 'porta'?",
-      "answers": [
-        "Douro",
-        "Duero"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-13e92384",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "FloraFauna",
-      "question": "Za koju mačku se kaže da je 'kralj životinja'?",
-      "answers": [
-        "Lava",
-        "Lav",
-        "Lion",
-        "Lajon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1448434f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se naziva srednjovjekovna pomorska karta koja je vrlo detaljno prikazivala obale, luke i smjerove plovidbe, ali uglavnom nije prikazivala unutrašnjost kopna?",
-      "answers": [
-        "Portolan",
-        "Portolanska",
-        "Portulan",
-        "Portolans"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b67a13b6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "U starorimskoj republici, koju titulu obnašaju dvojica najviših službenika koji zajedno sa senatom upravljaju državom?",
-      "answers": [
-        "Konzul",
-        "Konzula"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c2ae18a0",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Koja biljka nam je omogućila uživanje u čokoladi?",
-      "answers": [
-        "Kakaovac",
-        "Drvo kakaovca"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-dd1a3a52",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Koji je današnji grad, za vrijeme rimskog carstva bio poznat pod imenom Vindobona?",
-      "answers": [
-        "Beč",
-        "Vienna",
-        "Wien",
-        "Vijen",
-        "Vijena"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6c39fa30",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Na kojoj su planini, prema grčkoj mitologiji, živjeli bogovi?",
-      "answers": [
-        "Olimp",
-        "Olympus",
-        "Olimpus",
-        "Olimpu",
-        "Olimpusu",
-        "Olympusu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9dbf0974",
+      "id": "daily-bc3843d7",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Na području koje se današnje države nalazila nekad velika Troja?",
+      "question": "Koji je sovjetski srednji tenk, zahvaljujući kombinaciji pokretljivosti, kosog oklopa i masovne proizvodnje, postao jedan od najvažnijih tenkova 2. svjetskog rata?",
       "answers": [
-        "Turske",
-        "Turska",
-        "Turkey",
-        "Turkeys",
-        "Turki",
-        "Turkis",
-        "Turaka",
-        "Turka",
-        "Turci",
-        "Turačke"
+        "T 34",
+        "Te 34",
+        "T trideset i cetiri",
+        "Te trideset i četiri"
       ],
       "image": null
     },
     {
-      "id": "daily-e859ef3c",
+      "id": "daily-7ac2cea9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je tjesnac između Koreje i Japana dao ime pomorskoj bitci iz 1905.g. u kojoj je Japan teško porazio rusku Baltičku flotu?",
+      "answers": [
+        "Tsushima",
+        "Cušimski",
+        "Tjesnac Tsushima",
+        "Tsushima Strait",
+        "Tsušimski",
+        "Korejski",
+        "Korena",
+        "Korejan",
+        "Koreans",
+        "Korejans",
+        "Cušimskom",
+        "Cušima"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f6760567",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko nula ima bilijun prema hrvatskoj dugoj ljestvici?",
+      "answers": [
+        "12",
+        "Dvanaest",
+        "Twelve",
+        "Tvelv",
+        "XII"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2bd734dc",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "132m visoki, veličanstveni slapovi Tequendama se nalaze u kojoj južnoameričkoj državi?",
+      "question": "Koji je glavni grad Eritreje?",
       "answers": [
-        "Kolumbiji",
-        "Kolumbija",
-        "Columbia",
-        "Columbiji"
+        "Asmara",
+        "Asmera"
       ],
       "image": null
     },
     {
-      "id": "daily-7b7266ae",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se zove najpoznatija biciklistička utrka koja se održava u Francuskoj?",
-      "answers": [
-        "Tour de France",
-        "Tur de franc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cd6546f7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koja životinja, prema poslovici, često mnogo laje, ali ne grize?",
-      "answers": [
-        "Pas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
+      "id": "daily-4edd1d83",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
+      "topic": "AntickiRim",
+      "question": "U kojoj su šumi, germani u svega 3 dana u potpunosti uništili 3 rimske legije?",
       "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
+        "Teutoburškoj šumi",
+        "Teutoburškoj",
+        "Teutoburška šuma",
+        "Teutoburška",
+        "Teutoburgs"
       ],
       "image": null
     },
     {
-      "id": "daily-808b64c8",
+      "id": "daily-fff30e12",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji nogometaš ima točno 5 zlatnih trofeja Ballon d'Or nagrade?",
+      "answers": [
+        "Cristiano Ronaldo",
+        "Kristiano Ronaldo",
+        "Ronaldo",
+        "CR",
+        "CR7"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aed73876",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Američki otmičar zrakoplova koji je 1971.g. uzeo 200.000 dolara otkupnine, iskočio padobranom iz aviona i nestao, poznat je pod kojim imenom?",
+      "answers": [
+        "D. B. Cooper",
+        "DB Cooper",
+        "D B Cooper",
+        "Cooper",
+        "Di Bi Cooper",
+        "Kuper",
+        "Koper",
+        "Dan Cooper",
+        "Den Kuper"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d4abac94",
       "type": "blitz",
       "difficulty": 4,
       "topic": "Glazba",
-      "question": "Tko je skladao glazbu za film 'Kralj lavova' (The Lion King)?",
+      "question": "Tko pjeva pjesmu 'Wonderwall' iz 1995.?",
       "answers": [
-        "Hans Zimmer",
-        "Hans Cimer",
-        "Zimmer",
-        "Cimer"
+        "Oasis",
+        "Oejsis",
+        "Oazis"
       ],
       "image": null
     },
     {
-      "id": "daily-159c6020",
+      "id": "daily-2001a491",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji se znanstvenik našao na novčanici od 20 britanskih funti koje su printane od 1991.g. do 2001.g.?",
+      "topic": "Ostalo",
+      "question": "Kako se zove brzina iznad koje se let zrakoplova smatra nadzvučnim?",
       "answers": [
-        "Michael Faraday",
-        "Majkel Faradey",
-        "Mihael Faradey",
-        "Faraday",
-        "Faradej"
+        "Nadzvučna brzina",
+        "Nadzvučna"
       ],
       "image": null
     },
     {
-      "id": "daily-c1cd1c33",
+      "id": "daily-85bb3d9a",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove animirana serija o obitelji iz Springfieda čiji je otac Homer?",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je admiral 1805.g. kod Trafalgara porazio francusko-španjolsku flotu i osigurao britansku prevlast na moru, ali je tijekom same bitke smrtno ranjen?",
       "answers": [
-        "Simpsoni",
-        "The Simpsons"
+        "Horatio Nelson",
+        "Horacio Nelson",
+        "Nelson"
       ],
       "image": null
     },
     {
-      "id": "daily-55ef875a",
+      "id": "daily-42d909e9",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koja je indijanka, članica ekspedicije Lewis & Clark, svoje mjesto pronašla i na jako rijetkim kovanicama od jednog dolara?",
+      "question": "Potpisivanjem mira u kojem gradu 1814.g. završava britansko-američki rat koji je otpočeo 1812.g.?",
       "answers": [
-        "Sacagawea",
-        "Sakakawea",
-        "Sacajawea",
-        "Sakagavea",
-        "Sakagava",
-        "Sakakavea",
-        "Sakakava",
-        "Sakajavea",
-        "Sakajava"
+        "Gentu",
+        "Gent",
+        "Ghentu",
+        "Ghent"
       ],
       "image": null
     },
     {
-      "id": "daily-7036112b",
+      "id": "daily-05d5c849",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Tko je otpjevao uvodnu pjesmu hrvatske verzije crtane serije Spužvabob Skockani?",
+      "topic": "FloraFauna",
+      "question": "Grana koje se biljke nalazi na grbu francuskog grada Cannesa?",
       "answers": [
-        "Davor Gobac",
-        "Gobac"
+        "Palme",
+        "Palma"
       ],
       "image": null
     },
     {
-      "id": "daily-2c126807",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Ako upitamo engleskog filozofa i državnika s početka 17. stoljeća Francisa Bacona za misao o znanju, sasvim sigurno će nam odgovoriti da je znanje što?",
-      "answers": [
-        "Moć"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-42549b58",
+      "id": "daily-0303e61f",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Kako se naziva poligonalni oblik s osam stranica?",
+      "question": "Zbog udisanja kojeg kemijskog elementa čovjekov glas zvuči smiješno, poput crtanog lika?",
       "answers": [
-        "Oktogon",
-        "Osmerokut"
+        "Helija",
+        "Helij",
+        "Heliuma",
+        "Helium",
+        "Helijuma",
+        "Helijum"
       ],
       "image": null
     },
     {
-      "id": "daily-1639448e",
+      "id": "daily-48056fe8",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Sport",
-      "question": "Koji je proslavljeni hrvatski košarkaš nosio nadimak 'Košarkaši Mozart'?",
+      "topic": "Zemljopis",
+      "question": "U kojem se glavnom gradu nalaze Brandenburška Vrata?",
       "answers": [
-        "Dražen Petrović",
-        "Petrović"
+        "Berlinu",
+        "Berlin"
       ],
       "image": null
     },
     {
-      "id": "daily-1f481432",
+      "id": "daily-a479994e",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "KnjigaSlika",
-      "question": "Koji je latinski izraz za 'sve prolazi'?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Pequod, Zorogaz i Jolly Roger su sve redom fiktivni..., što?",
       "answers": [
-        "Omnia transit",
-        "Omnia transeunt"
+        "Brodovi",
+        "Brodi",
+        "Brod",
+        "Ship",
+        "Ships",
+        "Šip",
+        "Šips"
       ],
       "image": null
     },
     {
-      "id": "daily-b717090b",
+      "id": "daily-b6a14ce1",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zvao Konamijev nogometni serijal prije nego što je preimenovan u eFootball?",
+      "question": "Kako se zove arkadna videoigra iz 1987.g. u kojoj komandosi Bill Rizer i Lance Bean ratuju protiv izvanzemaljske prijetnje?",
       "answers": [
-        "Pro Evolution Soccer",
-        "Pro Evolušn soker",
-        "Pro Evolušn",
-        "Pro Evolution",
-        "PES"
+        "Contra",
+        "Kontra"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9c21906e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Kojoj se utjecajnoj ljubavnici francuskog kralja Luja XV. tradicionalno pripisuje rečenica 'Nakon nas potop'?",
+      "answers": [
+        "Madame de Pompadour",
+        "Madam de Pompador",
+        "Jeanne Antoinette Poisson",
+        "Markiza de Pompadour",
+        "De Pompadour",
+        "DenPompador",
+        "Poisson",
+        "Poizon",
+        "Žane Antoniet Poizon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2da205d2",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koju rimsku boginju tražimo ako znamo da su joj Mars i Vulkan braća, Diskordija sestra, Prozerpina polusestra, stričevi Neptun i Pluton a muž Herkul?",
+      "answers": [
+        "Juventas",
+        "Iuventas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-894ce636",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja grana zoologije se bavi proučavanjem rakova?",
+      "answers": [
+        "Karcinologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0654c583",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koja riječ nedostaje u poslovici koja nas tješi kada nešto napravimo sa zakašnjenjem: 'Bolje ikad nego...'?",
+      "answers": [
+        "Nikad"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-661d96f9",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se zove poznata muslimanska sveta knjiga otkrivena Muhamedu?",
+      "answers": [
+        "Kur'an",
+        "Kuran",
+        "Qur'an"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-47246c42",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojem je tjesnacu kralj spartanaca Leonida, sa nekolicinom svoje vojske dočekao daleko mnogobrojniju perzijsku vojsku na čelu sa Kserksom I. ?",
+      "answers": [
+        "Termopil",
+        "Termopilu",
+        "Thermopilae",
+        "Thermopilaeu",
+        "Termopilaju",
+        "Termopilajeu",
+        "Termopilskom",
+        "Termopilski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-31e962a1",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Koji bosanskohercegovački reper potpisuje pjesme 'Prikaze' i 'No sikiriki no'?",
+      "answers": [
+        "Edo Maajka",
+        "Edo Majka",
+        "Maajka",
+        "Majka",
+        "Edin Osmić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7676fc3c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove gorila, jedan od tri igriva čudovišta u arkadnoj videoigri Rampage iz 1986.g.?",
+      "answers": [
+        "George",
+        "Grgo",
+        "Džordž"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ac9be488",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "U filmu 'Matrix', koju boju pilule Neo bira kako bi saznao istinu o svijetu u kojem živi?",
+      "answers": [
+        "Crvenu pilulu",
+        "Crvenu",
+        "Red pill",
+        "Red"
       ],
       "image": null
     }

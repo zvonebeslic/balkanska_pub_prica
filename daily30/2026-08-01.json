@@ -1,451 +1,414 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-01",
-  "generatedAt": "2026-08-24T20:08:22.529Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-401a6ee3",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kako se naziva njemačko piće nastalo miješanjem piva i limunade, čije ime na njemačkom znači 'biciklist'?",
-      "answers": [
-        "Radler"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3c826258",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kako se zove proces pri kojem zelene biljke uz pomoć Sunčeve svjetlosti stvaraju šećer iz vode i ugljikova dioksida?",
-      "answers": [
-        "Fotosinteza"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-15d314f5",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Pod obroncima kojeg je planinskog lanca sa djedom živjela malena Heidi?",
-      "answers": [
-        "Alpa",
-        "Alpskog",
-        "Alpi",
-        "Alpe",
-        "Alps",
-        "Alpen",
-        "Alpski",
-        "Alpes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8eee5e82",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Ostalo",
-      "question": "Kako se zove sveti grad budizma u kojem je Buda navodno doživio prosvjetljenje?",
-      "answers": [
-        "Bodh Gaya",
-        "Bodhgaya",
-        "Bodigaja",
-        "Bodi Gaja"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f34bca0a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Tunis je glavni grad koje države?",
-      "answers": [
-        "Tunisa",
-        "Tunis",
-        "Tunisia",
-        "Tunisija",
-        "Tunejža",
-        "Tunisie",
-        "Tunisije",
-        "Tunejže"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-61c7ad9a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove ratnik iz arkadne videoigre Gauntlet koji predstavlja crvenu boju među četirima igrivim junacima?",
-      "answers": [
-        "Thor",
-        "Tor"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-97364c4c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kako se naziva grana biologije koja proučava životinje?",
-      "answers": [
-        "Zoologija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d749d3f3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove žuta ptica trokutastog oblika iz Angry Birdsa koja nakon aktiviranja svoje sposobnosti naglo ubrzava?",
-      "answers": [
-        "Chuck",
-        "Čak",
-        "Čuk"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fae5788d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove škola čarobnjaštva koju pohađa Harry Potter?",
-      "answers": [
-        "Hogwarts",
-        "Hogvarts",
-        "Hogwarts School"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9ea0ac0e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "John Wilkes Booth i Lee Harvey Oswald su usmrtili predsjednike koje države?",
-      "answers": [
-        "SAD-a",
-        "Američke",
-        "American",
-        "Sjedinjenih Američkih Država",
-        "Američkih Država",
-        "SAD",
-        "USA-ja",
-        "USA",
-        "United States",
-        "United States of America",
-        "US",
-        "US-a",
-        "Sjedinjenih Država",
-        "States of America",
-        "Junajted Stejts of Amerika",
-        "Stejts of Amerika",
-        "Junajted Stejts",
-        "Ameriken"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-24dfc14f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se zove poznati američki košarkaš koji je šest puta osvojio naslov NBA prvaka s Chicago Bullsima?",
-      "answers": [
-        "Michael Jordan",
-        "Majkl Džordan",
-        "Jordan",
-        "Džordan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8a6d6cd2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je hrvatski nogometaš osvajao Ligu Prvaka rekordnih 6 puta?",
-      "answers": [
-        "Luka Modrić",
-        "Modrić"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b35897cb",
+      "id": "daily-9f43b046",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "'Cezar i Kleopatra' je film iz 1945. u kojem Kleopatru glumi Vivien Leigh a Cezara tko?",
+      "question": "Tko je naslijedio carsku titulu od cara Augusta?",
       "answers": [
-        "Claude Rains",
-        "Klud Rain",
-        "Rains",
-        "Rain"
+        "Tiberije",
+        "Tiberius Claudius Nero Caesar",
+        "Tiberije Klaudije Neron Cezar",
+        "Tiberije Cezar",
+        "Tiberius Caesar"
       ],
       "image": null
     },
     {
-      "id": "daily-3c0d7dca",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je maurijski car širio budizam po indijskom poluotoku podizanjem stupova s uklesanim ediktima te slanjem misionara, među ostalim i na Šri Lanku?",
-      "answers": [
-        "Ašoka Veliki",
-        "Ašok Veliki",
-        "Ašoka",
-        "Ašok",
-        "Ashoka Veliki",
-        "Ashok Veliki",
-        "Ashok",
-        "Ashoka",
-        "Ashoka the Great",
-        "Ašoka d Grejt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d1444fda",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je gusar, pravim imenom Edward Teach, zastrašivao neprijatelje izgledom, ogromnom crnom bradom i reputacijom koja je nadživjela njegovu relativno kratku gusarsku karijeru?",
-      "answers": [
-        "Crnobradi",
-        "Blackbeard",
-        "Blakbird"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ac7beb35",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Tko je Posejdonov pandan u rimskoj mitologiji?",
-      "answers": [
-        "Neptun"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3e70eb79",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove književna vrsta u stihovima koja najčešće izražava osjećaje i raspoloženja?",
-      "answers": [
-        "Lirika",
-        "Lirička pjesma",
-        "Lirička"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-62c550ca",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Kako se zove najveći škotski derbi između Celtica i Rangersa?",
-      "answers": [
-        "Old Firm",
-        "Old Frm"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-05af49a9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Sidon, Tir i Biblos tri su najpoznatija drevna fenička grada, koja se danas nalaze na području koje države?",
-      "answers": [
-        "Libanon",
-        "Libanona",
-        "Lebanon",
-        "Lebanona",
-        "Lebanese",
-        "Libanis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3ade35b4",
+      "id": "daily-5ce775c8",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koga tražimo, ako znamo da je, prije predsjedanja Amerikom, bio izabran kao guverner New Yorka 1829.g. ali je na tu funkciju odmah podnio ostavku kako bi postao državni tajnik u prvoj administraciji Andrewja Jacksona?",
+      "question": "Pod kojim imenom, u kojem se spominje i jedan broj, indijansko pleme Lakota Siouxa poznaje planinu Mount Rushmore",
       "answers": [
-        "Martin Van Buren",
-        "Van Buren",
-        "Martina Van Burena",
-        "Van Burena"
+        "6 djedova",
+        "Šest djedova",
+        "Six grandfathers",
+        "6 grandfathers",
+        "Siks grandfaters"
       ],
       "image": null
     },
     {
-      "id": "daily-57e32664",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "Kontra kojeg grada Dino Dvornik ne želi čuti ništa?",
-      "answers": [
-        "Splita",
-        "Split"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a9f164e0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove termin u književnosti za skrivenu poruku ili značenje ispod površinske radnje djela?",
-      "answers": [
-        "Alegorija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fd7d8d14",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove popularni TV kviz znanja koji vodi Tarik Filipović na hrvatskoj verziji?",
-      "answers": [
-        "Tko želi biti milijunaš",
-        "Milijunaš"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-44de4de8",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je njemački izumitelj 1886.g. patentirao Motorwagen, vozilo koje se često smatra prvim praktičnim automobilom pokretanim motorom s unutarnjim izgaranjem?",
-      "answers": [
-        "Karl Benz",
-        "Carl Benz",
-        "Karl Benc",
-        "Benz",
-        "Benc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d7150640",
+      "id": "daily-3e72e3b1",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koji je britanski teorijski fizičar zbog paralize mišića s okolinom pričao pomoću računalnog sintetizatora glasa?",
+      "question": "Koju kraticu koristimo za kemijski element Neon?",
       "answers": [
-        "Stephen Hawking",
-        "Stiven Hovking",
-        "Stefen Hovking",
-        "Hawking",
-        "Hovking",
-        "Havking",
-        "Hoking",
-        "Hokins"
+        "Ne"
       ],
       "image": null
     },
     {
-      "id": "daily-616f4b4f",
+      "id": "daily-cba3a2e4",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Ono što na nebu s'ja visoko, mjesec je il' sivi.. tko?",
+      "answers": [
+        "Sokol"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-002dc4e8",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Film",
-      "question": "Koji je jedini horor film u povijesti koji je osvojio Oscara za najbolji film?",
+      "topic": "Zemljopis",
+      "question": "Koji se veliki grad civilizacije Maya, a danas kulturno dobro Meksika, nalazi na popisu 7 svjetskih čuda?",
       "answers": [
-        "Kad jaganjci utihnu",
-        "The Silence of the Lambs",
-        "Sajlenc of d lembs"
+        "Chichen Itza",
+        "Čičen Ica",
+        "Cicen Itza",
+        "Čicen Itza",
+        "Čičen Itza",
+        "Cicen Ica"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-34bae575",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kod kojeg je francuskog grada saveznički napad 8. kolovoza 1918.g. toliko potresao njemačku vojsku da je Ludendorff taj datum nazvao „crnim danom njemačke vojske”?",
+      "answers": [
+        "Amiensa",
+        "Amiens",
+        "Amiena",
+        "Amien"
       ],
       "image": null
     },
     {
-      "id": "daily-73a91993",
+      "id": "daily-809c9c63",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Tko je glavni lik u fiktivnoj 'Šumi od 100 jutara'?",
+      "question": "Braća Edmund i Peter i sestre Lucy i Susan kroz ormar dospijevaju u koju fiktivnu zemlju?",
       "answers": [
-        "Winnie the Pooh",
-        "Vini d Puh",
-        "Winnie Pooh",
-        "Vini Puh",
-        "Vini d po",
-        "Vini d pu",
-        "Vini po",
-        "Vini pu",
-        "Medvjedić Winnie",
-        "Medvjedić Vini",
-        "Medvjedić Pooh",
-        "Medvjedić Pu",
-        "Pooh",
-        "Pu",
-        "Po",
-        "Winnie",
-        "Vini"
+        "Narniju",
+        "Narnija",
+        "Narniu",
+        "Narnia",
+        "Narnias",
+        "Narnijas"
       ],
       "image": null
     },
     {
-      "id": "daily-b1fcb367",
+      "id": "daily-9fe99673",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Koji je francuski kralj, prema predaji, prije Bitke kod Ivryja 1590.g. svojim vojnicima poručio da slijede njegov 'bijeli perjanik' ako izgube svoje zastave?",
+      "question": "Čak i loš događaj ponekad donese nešto korisno ili kako poslovica kaže: 'Svako zlo za neko...'?",
       "answers": [
-        "Henrik IV.",
-        "Henrik 4.",
-        "Henrik četvrti",
-        "Henrik fourth",
-        "Henrik fort",
-        "Henrik 4th",
-        "Henri IV.",
-        "Henri 4.",
-        "Henri četvrti",
-        "Henri fourth",
-        "Henri fort",
-        "Henri 4th"
+        "Dobro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e586323c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji je pjevač grčko-ciparskog podrijetla bio u bendu Wham!?",
+      "answers": [
+        "George Michael",
+        "Džordž Majkl",
+        "Michael",
+        "Majkl",
+        "Georgios Kyriacos Panayiotou"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dc8de6ce",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "'Derby of the Eternal Enemies' ili 'Derbi vječitih neprijatelja' je poslastica grčkog nogometa a igra se između Panathinaikosa i kojeg još kluba?",
+      "answers": [
+        "Olympiacosa",
+        "Olympiacos",
+        "Olimpiakos",
+        "Olimpiakosa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f11a5906",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove američki borac iz serijala videoigara Tekken, prepoznatljiv po izrazito visokoj plavoj frizuri i snažnom udarcu šakom poznatom kao Phoenix Smasher?",
+      "answers": [
+        "Paul Phoenix",
+        "Paul",
+        "Pol Feniks",
+        "Paul Feniks",
+        "Pol"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-11231b51",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Tko pjeva pjesmu 'Flowers', hit iz 2023. godine?",
+      "answers": [
+        "Miley Cyrus",
+        "Majli Sajrus",
+        "Cyrus",
+        "Sajrus",
+        "Miley Ray Cyrus",
+        "Destiny Hope Cyrus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ac834d86",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se zove velika američka burza osnovana 1971.g., poznata po snažnoj zastupljenosti tehnoloških kompanija i po tome što je započela kao elektroničko tržište vrijednosnih papira?",
+      "answers": [
+        "NASDAQ",
+        "Nasdaq",
+        "Nazdak",
+        "Nasdak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3856f781",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kojem je portugalcu, prvom nakon Eusebija, pošlo za 'nogom' osvojiti Ballon d'Or?",
+      "answers": [
+        "Luisu Figu",
+        "Luis Figo",
+        "Figu",
+        "Figo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9f503f1b",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je lovački šešir s prednjim i stražnjim šiltom zahvaljujući ilustracijama i kasnijoj popularnoj kulturi postao gotovo neodvojiv od lika Sherlocka Holmesa?",
+      "answers": [
+        "Deerstalker",
+        "Dirstalker",
+        "Kapa za lov na jelene"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3b5f6dcc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji se veliki južnoafrički grad nalazi u blizini Rta dobre nade i često se s njime pogrešno poistovjećuje kao najjužnija točka Afrike?",
+      "answers": [
+        "Cape Town",
+        "Kejp Tovn",
+        "Kejp Tavn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f71a7c5c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se nazivao malen, brz i okretan tip jedrenjaka koji su Portugalci i Španjolci često koristili za istraživanje udaljenih obala tijekom doba velikih geografskih otkrića?",
+      "answers": [
+        "Karavela",
+        "Caravel",
+        "Caravela",
+        "Karavel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7d152c80",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element ima atomski broj 1?",
+      "answers": [
+        "Vodik",
+        "Hydrogen",
+        "Hidrogen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-90b12bd2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je američki predsjednik tijekom Hladnog rata popularizirao poslovicu 'Vjeruj, ali provjeri', koristeći je u razgovorima o nuklearnom razoružanju sa Sovjetskim Savezom?",
+      "answers": [
+        "Ronald Reagan",
+        "Ronald Regan",
+        "Reagan",
+        "Regan",
+        "Rigen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1b957059",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Povijest",
+      "question": "Kako se zvao prvi čovjek koji je kročio na Mjesec?",
+      "answers": [
+        "Neil Armstrong",
+        "Armstrong",
+        "Nil Armstrong"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-491717f1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 25. predsjednik SAD-a, prezimena McKinley, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "WM"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ce446837",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koje voće u kineskoj mitologiji simbolizira besmrtnost?",
+      "answers": [
+        "Breskva"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-71bed615",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove pojam iz ekonomije koji opisuje opći rast cijena u gospodarstvu?",
+      "answers": [
+        "Inflacija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c1360d1e",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koja je glumica osvojila Oscara za film 'Jadnici' (Les Misérables)?",
+      "answers": [
+        "Anne Hathaway",
+        "Ana Hetvej",
+        "Hathaway",
+        "Hetvej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8f15056a",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je engleski književnik napisao Knjigu o Džungli?",
+      "answers": [
+        "Rudyard Kipling",
+        "Rudjard Kipling",
+        "Kipling",
+        "Keping"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-49d5839e",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Koji je najveći broj koji se može zapisati rimskim brojevima ako se svako rimsko slovo smije upotrijebiti samo jednom?",
+      "answers": [
+        "1666",
+        "MDCLXVI"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8b0c75bd",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Ispod kojeg je drveta Buda doživio prosvjetljenje?",
+      "answers": [
+        "Drvo smokve",
+        "Drveta smokve",
+        "Smokve",
+        "Indijske smokve",
+        "Indijska smokva"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bb50d128",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja se velika indijska pustinja može pohvaliti najgušćom naseljenosti od svih svjetskih pustinja?",
+      "answers": [
+        "Thar",
+        "Tar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5b8da836",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Koji film prati povijest stvaranja Facebooka?",
+      "answers": [
+        "Društvena mreža",
+        "The Social Network",
+        "Sošl Netvork",
+        "Social Network"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8a0b7d0a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji je studio razvio originalnu videoigru Crash Bandicoot iz 1996.g.?",
+      "answers": [
+        "Naughty Dog",
+        "Noti Dog",
+        "Nadi Dog"
       ],
       "image": null
     }

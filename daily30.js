@@ -32,6 +32,7 @@
       played: "Odigrano",
       loading: "Učitavam dnevni set…",
       unavailable: "Dnevni set trenutačno nije dostupan. Pokušaj ponovno za nekoliko trenutaka.",
+      locked: "Zaključano do tog datuma",
       result: "Rezultat",
       time: "vrijeme"
     },
@@ -42,6 +43,7 @@
       played: "Played",
       loading: "Loading the daily set…",
       unavailable: "The daily set is currently unavailable. Please try again shortly.",
+      locked: "Locked until this date",
       result: "Score",
       time: "time"
     }
@@ -488,15 +490,21 @@
     for (let day = 1; day <= daysInMonth; day += 1) {
       const dateKey = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
       const available = state.availableDates.has(dateKey) || dateKey === currentDate;
+      const locked = available && dateKey > currentDate;
       const result = results[dateKey];
       const button = document.createElement("button");
       button.type = "button";
       button.className = "daily30-day";
-      button.disabled = !available || dateKey > currentDate;
+      button.disabled = !available || locked;
       button.classList.toggle("today", dateKey === currentDate);
       button.classList.toggle("selected", dateKey === getSelectedDate());
       button.classList.toggle("played", Boolean(result));
-      button.innerHTML = `<span class="daily30-day-number">${day}</span>${result ? `<span class="daily30-day-result">${text("played")}</span><span class="daily30-day-time">${result.score}/${result.total} · ${formatDuration(result.durationSeconds)}</span>` : ""}`;
+      button.classList.toggle("locked", locked);
+      if (locked) {
+        button.setAttribute("aria-label", `${formatFullDate(dateKey)} · ${text("locked")}`);
+        button.title = text("locked");
+      }
+      button.innerHTML = `<span class="daily30-day-number">${day}</span>${locked ? `<span class="daily30-day-lock" aria-hidden="true">🔒</span>` : (result ? `<span class="daily30-day-result">${text("played")}</span><span class="daily30-day-time">${result.score}/${result.total} · ${formatDuration(result.durationSeconds)}</span>` : "")}`;
       if (!button.disabled) {
         button.addEventListener("click", () => {
           state.selectedDate = dateKey;
@@ -517,10 +525,10 @@
 
     const previousButton = document.getElementById("daily30-month-prev");
     const nextButton = document.getElementById("daily30-month-next");
-    const launchMonth = String(state.index?.launchDate || "2026-08-01").slice(0, 7);
-    const currentMonth = currentDate.slice(0, 7);
+    const launchMonth = String(state.index?.launchDate || "2026-07-01").slice(0, 7);
+    const latestMonth = String(state.index?.latestDate || currentDate).slice(0, 7);
     if (previousButton) previousButton.disabled = monthKey.slice(0, 7) <= launchMonth;
-    if (nextButton) nextButton.disabled = monthKey.slice(0, 7) >= currentMonth;
+    if (nextButton) nextButton.disabled = monthKey.slice(0, 7) >= latestMonth;
   }
 
   function shiftCalendarMonth(amount) {

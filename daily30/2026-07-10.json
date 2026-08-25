@@ -1,0 +1,406 @@
+{
+  "version": 2,
+  "date": "2026-07-10",
+  "generatedAt": "2026-08-25T18:26:49.209Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-6f65198a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je legendarni napadač Real Madrida osvojio Ballon d'Or 1957.g.?",
+      "answers": [
+        "Alfredo Di Stefano",
+        "Alfredo Di Štefano",
+        "Di Stefano",
+        "Di Štefano"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2eadfe21",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Koji je instrument svirao Jimi Hendrix?",
+      "answers": [
+        "Gitara",
+        "Gitaru",
+        "Guitar",
+        "Gitar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bfd44478",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Tko je prva žena koja je osvojila Oscara za najbolju režiju?",
+      "answers": [
+        "Kathryn Bigelow",
+        "Ketrin Biglov",
+        "Bigelow",
+        "Biglov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8eb32aad",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove roman Georgea Orwella o totalitarnoj državi u kojoj je 'Veliki Brat' stalno prisutan?",
+      "answers": [
+        "1984"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7171c852",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Na dvor kineskog cara nakon ekspedicija Zheng Hea stigla je koja egzotična afrička životinja koju su Kinezi povezivali s mitskim qilinom?",
+      "answers": [
+        "Žirafa",
+        "Giraffe",
+        "Žirafe"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c7c6f7e5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je ukrasna penjačica, prepoznatljiva po živim ružičastim, ljubičastim ili crvenim pricvjetnim listovima, dobila ime po zapovjedniku prvog francuskog putovanja oko svijeta?",
+      "answers": [
+        "Bugenvilija",
+        "Bougainvillea",
+        "Bugenvileja",
+        "Bugenvelija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6415af46",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Tko je režirao 'Pakleni šund' (Pulp Fiction)?",
+      "answers": [
+        "Quentin Tarantino",
+        "Kventin Tarantino",
+        "Tarantino"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7d4bee77",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja grana zoologije se bavi proučavanjem paučnjaka?",
+      "answers": [
+        "Arahnologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7337e806",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se naziva događaj iz 1618.g. u kojem su češki protestantski plemići kroz prozor Praškog dvorca izbacili carske predstavnike i time zapalili iskru rata koji će opustošiti velik dio srednje Europe?",
+      "answers": [
+        "Praška defenestracija",
+        "Defenestration of Prague",
+        "Defenestrejšn of Prag"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60319184",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji ples možemo spojiti s dizajnom jedne Adidasove nogometne lopte, prvi put napravljene za SP 1978. godine u Argentini?",
+      "answers": [
+        "Tango"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7a640c7b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Znanost",
+      "question": "Kako se naziva matematička funkcija koja je inverzna prirodnom logaritmu?",
+      "answers": [
+        "Eksponencijalna funkcija",
+        "Eksponencijalna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-820e0c6b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Sport",
+      "question": "Kako se zove poznati rally vozač iz Finske, višestruki svjetski prvak u WRC-u iz '86 i '87 te '91 i '93?",
+      "answers": [
+        "Juha Kankkunen",
+        "Kankkunen",
+        "Kankunen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0e3a0d53",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Čega se odrekla Mala Sirena iz Andersenove bajke kako bi dobila ljudske noge?",
+      "answers": [
+        "Glasa",
+        "Glas",
+        "Voice",
+        "Vojs",
+        "Voicea",
+        "Vojsa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d72ca640",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko je 25 % od 80?",
+      "answers": [
+        "20",
+        "Dvadeset",
+        "Twenty"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-710b07d5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Tko je sa Justinom Bieberom otpjevao pjesmu 'Stay'?",
+      "answers": [
+        "The Kid Laroi",
+        "D Kid Laroi",
+        "Kid Laroi",
+        "Charlton Kenneth Jeffrey Howard",
+        "Laroi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-32a804e3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko nedostaje Washingtonu, Rooseveltu i Lincolnu, na planini Rushmore?",
+      "answers": [
+        "Thomas Jefferson",
+        "Tomas Džeferson",
+        "Jefferson",
+        "Džeferson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a676175c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koje je godine u Japanu prvi put objavljena legendarna Nintendova igrica Super Mario Bros.?",
+      "answers": [
+        "1985",
+        "Tisuću devetsto osamdeset pet",
+        "Hiljadu devet stotina osamdeset pet",
+        "MCMLXXXV",
+        "85",
+        "Osamdeset pete"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aaeaa52b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se naziva ideologija koja zagovara ukidanje privatnog vlasništva i klasnih razlika?",
+      "answers": [
+        "Komunizam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-344e5437",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja rijeka razdvaja Senegal i Mauritaniju?",
+      "answers": [
+        "Senegal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-db391e32",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Prema izreci, što vuk može promijeniti, ali svoju ćud navodno nikada?",
+      "answers": [
+        "Dlaku"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-de2b44e4",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad Italije?",
+      "answers": [
+        "Rim",
+        "Rome",
+        "Rom"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4c05c208",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "I, V, X, L i C nazivamo kakvim brojevima?",
+      "answers": [
+        "Rimskim",
+        "Romans",
+        "Romes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3f48151d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove tradicionalno japansko jelo od riže, sirove ribe i algi?",
+      "answers": [
+        "Sushi",
+        "Suši"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fae5788d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove škola čarobnjaštva koju pohađa Harry Potter?",
+      "answers": [
+        "Hogwarts",
+        "Hogvarts",
+        "Hogwarts School"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-059a6e54",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je francuski filozof u 17. stoljeću svoj sustav potrage za sigurnim znanjem sažeo u znamenitu misao „Mislim, dakle jesam“?",
+      "answers": [
+        "René Descartes",
+        "Descartes",
+        "Rene Dekart",
+        "Dekart",
+        "Deskart",
+        "Dekartes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-358a8767",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koje slovo u periodnom sustavu elemenata predstavlja fosfor?",
+      "answers": [
+        "P"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-55695415",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Ako čitamo da su vrtlari pikovi, vojnici trefovi, dvorjani karo a kraljevska obitelj herc onda čitamo koju knjigu?",
+      "answers": [
+        "Alisa u Zemlji čudesa",
+        "Alisa i Zemlja Čudesa",
+        "Alice in Wonderland",
+        "Alis in vonderlend",
+        "Alice's Adventures in Wonderland",
+        "Alis advenčurs in vonderlend",
+        "Alisa u Wonderlandu",
+        "Alisa u Vanderlendu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e3c42b4b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Kojem su starorimskom rodu pripadali Julije Cezar i Oktavijan?",
+      "answers": [
+        "Julijevcima",
+        "Julijevci",
+        "Julijevskom",
+        "Julijskom",
+        "Julijevom"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-32a8abfb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove jedna od dviju glavnih suprotstavljenih frakcija u videoigri World of Warcraft, kojoj tradicionalno pripadaju ljudi, patuljci i noćni vilenjaci?",
+      "answers": [
+        "Alliance",
+        "Alijansa",
+        "Savez"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-444179a6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "U kojem se velikom gradu, danas nalazi utvrda Alamo?",
+      "answers": [
+        "San Antonio",
+        "San Antoniu"
+      ],
+      "image": null
+    }
+  ]
+}

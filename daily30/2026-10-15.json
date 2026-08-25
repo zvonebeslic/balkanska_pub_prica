@@ -1,0 +1,427 @@
+{
+  "version": 2,
+  "date": "2026-10-15",
+  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-c509a923",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Tko je skladao 'Devetu simfoniju'?",
+      "answers": [
+        "Ludwig van Beethoven",
+        "Ludvig van Betoven",
+        "Beethoven",
+        "Betoven"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cf06222a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kako se zvala službena lopta Svjetskog nogometnog prvenstva 2010.g. u Juznoafričkoj Republici?",
+      "answers": [
+        "Jabulani",
+        "Džabulani",
+        "Žabulani"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-83a67fa4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koja je znanstvenica 1922.g. postala prva žena članica francuske Académie de médecine?",
+      "answers": [
+        "Marie Curie",
+        "Mari Kiri",
+        "Mari Kuri",
+        "Mari Kjuri",
+        "Curie",
+        "Kiri",
+        "Kuri",
+        "Kjuri",
+        "Maria Curie"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-47e003c2",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Jolly Roger je gusarski brod, Dugi Tom je najveći top na tom brodu, Mr. Smee je najodaniji član posade a kapetan svemu spomenutom je tko?",
+      "answers": [
+        "Kapetan Kuka",
+        "Kuka",
+        "Hook",
+        "Hok",
+        "Huk",
+        "Captain Hook",
+        "Kepten Hok"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9cc7cdc1",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Via Argentaria je starorimska cesta koja je iz današnjeg Solina vodila do kojeg današnjeg grada u BiH?",
+      "answers": [
+        "Srebrenice",
+        "Srebrenica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-85bb3d9a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je admiral 1805.g. kod Trafalgara porazio francusko-španjolsku flotu i osigurao britansku prevlast na moru, ali je tijekom same bitke smrtno ranjen?",
+      "answers": [
+        "Horatio Nelson",
+        "Horacio Nelson",
+        "Nelson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2c47fb71",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'Koliko ljudi, toliko...' Čega, prema poslovici, ima jednako mnogo kao ljudi?",
+      "answers": [
+        "Ćudi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7ac9b8bc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kojeg je sijamskog kralja upoznao 18. predsjednik SAD-a Ulysses S. Grant?",
+      "answers": [
+        "Chulalongkorna",
+        "Chulalongkorn",
+        "Čulalongkorna",
+        "Čulalongkorn",
+        "Rama V.",
+        "Rama 5.",
+        "Rama peti",
+        "Rama fifth",
+        "Rama fift"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9f503f1b",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je lovački šešir s prednjim i stražnjim šiltom zahvaljujući ilustracijama i kasnijoj popularnoj kulturi postao gotovo neodvojiv od lika Sherlocka Holmesa?",
+      "answers": [
+        "Deerstalker",
+        "Dirstalker",
+        "Kapa za lov na jelene"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-33fd192c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Menelaj je za rat protiv Troje zatražio pomoć svojega moćnog brata, kralja Mikene. Taj je vladar okupio grčke junake i postao vrhovni zapovjednik pohoda na Troju a zvao se kako?",
+      "answers": [
+        "Agamemnon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-106503ad",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je pionirska gaming kompanija proslavila Pong i proizvela jednu od najpoznatijih ranih igraćih konzola, Atari 2600?",
+      "answers": [
+        "Atari"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-44242a11",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je legendarni nogometni trener osvajao englesku Premier Ligu čak 13 puta?",
+      "answers": [
+        "Sir Alex Ferguson",
+        "Alex Ferguson",
+        "Aleks Ferguson",
+        "Ferguson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-146fc52c",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Od kojeg je izmišljenog metala napravljen štit Kapetana Amerike?",
+      "answers": [
+        "Vibraniuma",
+        "Vibranium",
+        "Vibranijuma",
+        "Vibranija",
+        "Vibranij"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-10d9a3d2",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Tko pjeva pjesmu 'Single Ladies' iz 2008.?",
+      "answers": [
+        "Beyonce",
+        "Bions",
+        "Beyonce Giselle Knowles",
+        "Beyonce Knowles"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-deb80479",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Protiv kojeg su se carstva britanske, francuske, australske i novozelandske snage borile tijekom neuspješnog savezničkog pohoda na Galipolje 1915.g.?",
+      "answers": [
+        "Osmanskog",
+        "Osmansko",
+        "Osmansko Carstvo",
+        "Osmanlija",
+        "Osmanlijskog",
+        "Osmanlije",
+        "Osmans",
+        "Ottomans",
+        "Ottoman Empire",
+        "Otoman Empajr"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-26d89d95",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koji cvijet u Kini simbolizira čistoću i prosvjetljenje?",
+      "answers": [
+        "Lotos",
+        "Lotosov cvijet"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-55603874",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Napoleon, Old Major, Squealer, Snowball, Minimus i Pinkeye su svi redom koja životinja?",
+      "answers": [
+        "Svinja",
+        "Svinje"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-363f5a05",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Koji je originalni naziv psihološkog trilera 'Vrtoglavica'?",
+      "answers": [
+        "Vertigo"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-8b0c75bd",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Ispod kojeg je drveta Buda doživio prosvjetljenje?",
+      "answers": [
+        "Drvo smokve",
+        "Drveta smokve",
+        "Smokve",
+        "Indijske smokve",
+        "Indijska smokva"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4092be3c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Minecraftova opasna dimenzija ispunjena lavom, do koje igrač najčešće dolazi prolaskom kroz portal napravljen od opsidijana?",
+      "answers": [
+        "Nether",
+        "Neder",
+        "Neter"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-df4d2ab5",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliki je zbroj prvih pet prirodnih brojeva?",
+      "answers": [
+        "15",
+        "Petnaest",
+        "Fifteen",
+        "Fiftin",
+        "XV"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-300ee426",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "U kojoj je pariškoj palači potpisan Daytonski sporazum?",
+      "answers": [
+        "Elizejskoj palači",
+        "Elizejskoj",
+        "Elizejska",
+        "L'ELysee'",
+        "Elisej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d4bffa7f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Sjeverne Makedonije?",
+      "answers": [
+        "Skoplje",
+        "Skopje"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-34659ae6",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Uz koju talijansku planinu vežemo Spartakov robovski ustanak i uništenje grada Pompeja?",
+      "answers": [
+        "Vezuv",
+        "Vesuvius",
+        "Vesuvio"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c937783d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element poznamo po simbolu 'Li'?",
+      "answers": [
+        "Litij",
+        "Litium",
+        "Lithium",
+        "Litijum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ea6854c8",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji fiktivni lik otkriva kako su dvije moćne države Lilliput i Blefuscu u ratu, jer je vjerovanje u jednoj da se jajetu razbija dno, a u drugoj da se razbija vrh?",
+      "answers": [
+        "Gulliver",
+        "Guliver"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-41ebda47",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je engleski gusar 1695.g. u Indijskom oceanu zarobio iznimno bogat mogulski brod Ganj-i-Sawai, a zatim nestao i nikada nije odgovarao za svoj najveći plijen?",
+      "answers": [
+        "Henry Every",
+        "Henry Avery",
+        "Henri Everi",
+        "John Avery",
+        "Long Ben",
+        "Every",
+        "Avery",
+        "Everi",
+        "Averi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-185e1e35",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Kakav je, prema poslovici, onaj koji ne vjeruje gladnome?",
+      "answers": [
+        "Sit",
+        "Najeden"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c0c7197a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Nije 'što? sve što sja.",
+      "answers": [
+        "Zlato"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-345be75f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je veliki kompleks 'Kmerskih' hramova u Kambodži poslužio i za snimanje scena iz filma Lara Croft: Tomb Rider?",
+      "answers": [
+        "Angkor Wat",
+        "Ankor Vat",
+        "Angkor",
+        "Ankor"
+      ],
+      "image": null
+    }
+  ]
+}

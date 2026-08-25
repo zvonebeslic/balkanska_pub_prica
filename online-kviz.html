@@ -516,12 +516,15 @@ a { -webkit-tap-highlight-color: transparent; }
   gap: 0.6rem;
 }
 .quiz-card-header { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
-.quiz-card-title-block { display: flex; flex-direction: column; gap: 0.15rem; }
+.quiz-card-title-block { min-width: 0; flex: 1 1 auto; display: flex; flex-direction: column; gap: 0.15rem; }
 .quiz-card-title { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
 .quiz-card-subtitle { font-size: 0.8rem; color: var(--text-muted); }
 
 .timer-pill {
-  min-width: 90px;
+  width: max-content;
+  min-width: max-content;
+  max-width: none;
+  flex: 0 0 auto;
   text-align: right;
   font-family: "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.95rem;
@@ -533,10 +536,11 @@ a { -webkit-tap-highlight-color: transparent; }
   justify-content: flex-end;
   gap: 0.35rem;
   align-items: center;
+  white-space: nowrap;
 }
 
 .timer-label { font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); }
-.timer-value { font-weight: 850; }
+.timer-value { flex: 0 0 auto; min-width: max-content; font-weight: 850; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 .question-image { width: 100%; max-height: 210px; border-radius: 14px; object-fit: cover; margin-top: 0.4rem; border: 1px solid var(--border); }
 .question-container,
@@ -549,8 +553,10 @@ a { -webkit-tap-highlight-color: transparent; }
 .question-text-wrap { margin-top: 0.4rem; }
 .question-text-label { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.15rem; }
 .question-text { font-size: 0.98rem; line-height: 1.45; }
-.question-meta { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
+.question-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.4rem; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
 .question-meta span { margin-right: 0.4rem; }
+.question-meta .daily30-question-progress { margin-right: 0; margin-left: auto; color: #d8e8ff; font-weight: 900; white-space: nowrap; }
+.question-meta .daily30-question-progress[hidden] { display: none; }
 .question-meta .difficulty-pill { padding: 0.1rem 0.45rem; border-radius: var(--radius-pill); border: 1px solid var(--border); font-size: 0.7rem; display: none; }
 
 .btn {
@@ -2836,20 +2842,6 @@ body.player-panel-open { overflow: hidden; }
             <strong id="daily30-countdown">--:--:--</strong>
           </span>
         </button>
-        <button class="mode-pill active circle-selected" data-mode="blitz60">
-          <span class="mode-label" data-i18n="modeBlitzLabel">Blitz 60s</span>
-          <span class="mode-desc" data-i18n="modeBlitzDesc">jedno pitanje za drugim (igraj s prijateljima)</span>
-        </button>
-        <!-- STORY NAČIN PRIVREMENO ISKLJUČEN
-        <button class="mode-pill" data-mode="story90">
-          <span class="mode-label">Story 90s</span>
-          <span class="mode-desc">duža pitanja kao na pub kvizu</span>
-        </button>
-        -->
-        <button class="mode-pill" data-mode="relax">
-          <span class="mode-label" data-i18n="modeRelaxLabel">Bez vremena</span>
-          <span class="mode-desc" data-i18n="modeRelaxDesc">Nasumična pitanja (igraj do besvijesti)</span>
-        </button>
       </div>
 
       <section class="daily30-panel" id="daily30-panel" aria-label="Dnevnih 30">
@@ -2881,6 +2873,23 @@ body.player-panel-open { overflow: hidden; }
         </div>
         <button class="daily30-name-edit" id="daily30-name-edit" type="button" data-i18n="dailyNameEdit">Promijeni ime na ljestvici</button>
       </section>
+
+      <div class="mode-pills mode-pills--standard">
+        <button class="mode-pill active circle-selected" data-mode="blitz60">
+          <span class="mode-label" data-i18n="modeBlitzLabel">Blitz 60s</span>
+          <span class="mode-desc" data-i18n="modeBlitzDesc">jedno pitanje za drugim (igraj s prijateljima)</span>
+        </button>
+        <!-- STORY NAČIN PRIVREMENO ISKLJUČEN
+        <button class="mode-pill" data-mode="story90">
+          <span class="mode-label">Story 90s</span>
+          <span class="mode-desc">duža pitanja kao na pub kvizu</span>
+        </button>
+        -->
+        <button class="mode-pill" data-mode="relax">
+          <span class="mode-label" data-i18n="modeRelaxLabel">Bez vremena</span>
+          <span class="mode-desc" data-i18n="modeRelaxDesc">Nasumična pitanja (igraj do besvijesti)</span>
+        </button>
+      </div>
 
       <!-- ✅ NOVO: Tematski kvizovi -->
       <div class="themed-row">
@@ -2953,6 +2962,7 @@ body.player-panel-open { overflow: hidden; }
           <div class="question-meta" id="question-meta">
             <span id="question-type-label">Tip: —</span>
             <span class="question-rarity-badge" id="question-rarity-badge" hidden></span>
+            <span class="daily30-question-progress" id="daily30-question-progress" hidden>Pitanje 1/30</span>
             <!-- TEŽINA PRIVREMENO ISKLJUČENA
             <!-- TEŽINA PRIVREMENO ISKLJUČENA
             <span class="difficulty-pill" id="question-difficulty-pill">Težina —/5</span>
@@ -3494,6 +3504,7 @@ if (!supabaseClient) {
       footerCopy: "Kviz pitanja, online kvizovi i karta pub kvizova.",
       quizDailyTitle: "Dnevnih 30",
       quizDailySubtitle: "30 istih pitanja za sve igrače",
+      dailyQuestionProgress: "Pitanje {current}/30",
       quizBlitzTitle: "Blitz kviz",
       quizBlitzSubtitle: "Brza pitanja u 60 sekundi",
       quizStoryTitle: "Story kviz",
@@ -3587,6 +3598,7 @@ if (!supabaseClient) {
       footerCopy: "Quiz questions, online quizzes and a pub quiz map.",
       quizDailyTitle: "Daily 30",
       quizDailySubtitle: "The same 30 questions for every player",
+      dailyQuestionProgress: "Question {current}/30",
       quizBlitzTitle: "Blitz quiz",
       quizBlitzSubtitle: "Fast questions in 60 seconds",
       quizStoryTitle: "Story quiz",
@@ -7117,6 +7129,18 @@ if (!supabaseClient) {
       titleEl.textContent = tr("quizRelaxTitle");
       subtitleEl.textContent = tr("quizRelaxSubtitle");
     }
+    updateDailyQuestionProgress();
+  }
+
+  function updateDailyQuestionProgress(forceComplete = false) {
+    const progressEl = document.getElementById("daily30-question-progress");
+    if (!progressEl) return;
+    const quizIsRunning = document.getElementById("btn-start")?.dataset.quizState === "running";
+    const shouldShow = currentMode === "daily30" && (forceComplete || (Boolean(currentQuestion) && quizIsRunning));
+    progressEl.hidden = !shouldShow;
+    if (!shouldShow) return;
+    const current = forceComplete ? 30 : Math.min(30, Math.max(1, scoreTotal + 1));
+    progressEl.textContent = tr("dailyQuestionProgress").replace("{current}", String(current));
   }
   /* ------------------ TEMATSKI UI ------------------ */
 
@@ -7754,6 +7778,7 @@ if (!supabaseClient) {
     }
     const typeLabelEl = document.getElementById("question-type-label");
     if (typeLabelEl) typeLabelEl.textContent = tr("typeDaily");
+    updateDailyQuestionProgress(true);
     window.KvizLeaderboards?.refreshAll?.();
   }
 
@@ -7980,6 +8005,7 @@ if (!supabaseClient) {
     applyQuestionRarityUI(q);
     if (questionTextEl) questionTextEl.textContent = q.question || tr("emptyQuestion");
     if (typeLabelEl) typeLabelEl.textContent = currentMode === "daily30" ? tr("typeDaily") : tr("typeBlitz"); /* STORY PRIVREMENO ISKLJUČEN */
+    updateDailyQuestionProgress();
 
     /* TEŽINA PRIVREMENO ISKLJUČENA - ne prikazuj 1/5, 2/5, 3/5... */
     if (diffPillEl) diffPillEl.textContent = "";
@@ -8672,6 +8698,7 @@ feedbackNote.innerHTML = currentLang === "en"
       questionTextEl.innerHTML = tr("resetMessage");
     }
     if (typeLabelEl) typeLabelEl.textContent = tr("typeDash");
+    updateDailyQuestionProgress();
     if (diffPillEl) diffPillEl.textContent = "";
     if (imgEl) { imgEl.src = ""; imgEl.style.display = "none"; }
     if (feedbackEl) { feedbackEl.textContent = ""; feedbackEl.classList.remove("correct", "incorrect"); }

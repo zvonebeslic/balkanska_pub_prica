@@ -1,0 +1,446 @@
+{
+  "version": 2,
+  "date": "2026-10-17",
+  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-e70c8bc6",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koji napitak potječe od biljke 'Camellia sinensis'?",
+      "answers": [
+        "Čaj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-43e5a031",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koliko Keplerovih zakona o gibanju planeta poznajemo danas?",
+      "answers": [
+        "3",
+        "Tri",
+        "Three",
+        "Tre",
+        "III",
+        "Drei",
+        "Draj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a560d99f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove kineski filozof čija učenja čine temelj konfucijanizma?",
+      "answers": [
+        "Konfucije",
+        "Confucius"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9a643552",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je plin odgovoran za mjehuriće u pjenušavom vinu?",
+      "answers": [
+        "Ugljikov dioksid",
+        "Ugljični dioksid",
+        "CO2",
+        "Carbon dioxide",
+        "Karbon dioksid"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c6308069",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Ostalo",
+      "question": "Tko pod drugim jamu kopa, sam u nju.. što?",
+      "answers": [
+        "Upada"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e5b7c446",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski pribor poznajemo pod imenom Bunsenov i Mekerov?",
+      "answers": [
+        "Plamenik",
+        "Plemenik",
+        "Plamen",
+        "Plemen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-af61a0b4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U trojanskom ratu, kako se zvala Hektorova supruga, koja ga je molila da ne odlazi ponovno u bitku jer je strahovala da će ostati udovica?",
+      "answers": [
+        "Andromaha"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c39c5b63",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je planinski vrh na grbu Nepala?",
+      "answers": [
+        "Mount Everest",
+        "Everest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ab9a298",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove glavni antagonist igrice Paper Mario: The Origami King, kralj origamija koji želi cijeli svijet pretvoriti u origami?",
+      "answers": [
+        "Olly",
+        "Oli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-49a67e9e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove podserijal videoigre Call of Duty koji uključuje likove poput Alexa Masona i Franka Woodsa?",
+      "answers": [
+        "Black Ops",
+        "Blek Ops"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-829fd75a",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Koja je zemlja pobijedila na Euroviziji s pjesmom 'Euphoria'?",
+      "answers": [
+        "Švedska",
+        "Sweden",
+        "Sviden",
+        "Sverige",
+        "Swe"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9591943d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je britanski povjesničar upozorio na opasnost vlasti poznatom mišlju 'Moć kvari, a apsolutna moć kvari apsolutno'?",
+      "answers": [
+        "Lord Acton",
+        "Akton",
+        "Acton",
+        "Lord Akton",
+        "Ekton"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f465b976",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Nogomet",
+      "question": "Koji je nogometaš postao prvi osvajač Svjetskog prvenstva koji je tijekom svoje karijere nastupao i u Hrvatskoj nogometnoj ligi?",
+      "answers": [
+        "Dani Olmo",
+        "Olmo",
+        "Deni Olmo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9d1bb4f1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako su se prezivala braća koja su napisala najpoznatiju verziju o Crvenkapici?",
+      "answers": [
+        "Grimm",
+        "Grim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-33e771e8",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je tvrdi, zaobljeni šešir nastao u Engleskoj sredinom 19. stoljeća, a u hrvatskom se naziva i polucilindar?",
+      "answers": [
+        "Bowler",
+        "Bovler",
+        "Bobcat",
+        "Bob cat",
+        "Bbillycock",
+        "Coke",
+        "Derby",
+        "Derbi",
+        "Kok"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6f7e70c3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "U kojem stoljeću, na mjesto rimskog cara stižu čak tri Gordijana, prvi, drugi i treći?",
+      "answers": [
+        "3.",
+        "3",
+        "Trećem",
+        "Treće",
+        "3. st",
+        "3 st",
+        "3. Stoljeće",
+        "3 stoljeće",
+        "Tri",
+        "III.",
+        "III",
+        "III stoljeće",
+        "Trećem stoljeću",
+        "Treće stoljeće"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-381f8f48",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'S kim si, takav si' upozorava na utjecaj čega na čovjeka?",
+      "answers": [
+        "Društva",
+        "Ekipe",
+        "Kompanije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6411914e",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Koje voće je ujedno i dom Spužvaboba Skockanog?",
+      "answers": [
+        "Ananas"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-f1efb8af",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Koji je legendarni i jedan od posljednjih latinskih kraljeva Alba Longe, ujedno i djed osnivača Rima, Romula?",
+      "answers": [
+        "Numitor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-92ee813e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio prvi predsjednik SAD-a koji je uživo fotografiran dok je radio u uredu?",
+      "answers": [
+        "James Knox Polk",
+        "Knox",
+        "Polk",
+        "Džejms Noks Polk",
+        "Knoks",
+        "Noks",
+        "Džejms Knoks Polk",
+        "James Polk",
+        "Džejms Polk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-35b9b510",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojem je licu napisana knjiga 'Lovac u žitu' (The Catcher in the Rye), američkog pisca J. D. Salingera?",
+      "answers": [
+        "Prvom",
+        "Prvi",
+        "Prvo",
+        "Prva",
+        "Prv",
+        "1.",
+        "1.st",
+        "1st",
+        "1 st",
+        "First",
+        "Frst",
+        "Jedan",
+        "One",
+        "Von",
+        "1",
+        "I.",
+        "I"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3517e2d5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je grad 1939.g. bio podijeljen između njemačkih zahtjeva i poljskog pristupa Baltiku, a pod njemačkim imenom Danzig postao jedan od simbola krize koja je prethodila ratu?",
+      "answers": [
+        "Gdanjsk",
+        "Gdansk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bcd0477f",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Kako se zove robot pratitelj Lukea Skywalkera?",
+      "answers": [
+        "R2 D2",
+        "Artoo Detoo",
+        "Erto Deto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aac890f8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji bend potpisuje pjesmu 'Stairway to Heaven'?",
+      "answers": [
+        "Led Zeppelin",
+        "Led Cepelin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5efbe021",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Koji glumac je utjelovio lik i djelo kapetana Jacka Sparrowa?",
+      "answers": [
+        "Johnny Depp",
+        "Džoni Dep",
+        "Depp",
+        "Dep"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-84330c7a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Rat sa kojom državom je Ulysses S. Grant opisao kao 'zločin radi kojeg je Bog Ameriku kaznio građanskim ratom'?",
+      "answers": [
+        "Meksikom",
+        "Mexicom",
+        "Meksiko",
+        "Mexico",
+        "Mexikom"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-89dd61ba",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "'Carreira de indija' je bila pomorska ruta koja je polazila na dugačak put iz kojeg portugalskog grada?",
+      "answers": [
+        "Lisabona",
+        "Lisabon",
+        "Lisboa",
+        "Lisboe",
+        "Lisbo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-564dec0f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Na kojem se kontinentu nalazi najveći broj stadiona, istanbulskih prvoligaša?",
+      "answers": [
+        "Europi",
+        "Europa",
+        "Jurop",
+        "Europes",
+        "Jurops"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fe1d704f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji umjetno prokopani kanal, dužine 6,3km, spaja Jonsko sa Egejskim morem?",
+      "answers": [
+        "Korintski Kanal",
+        "Korintski",
+        "Korintov",
+        "Korint",
+        "Corint",
+        "Corinth",
+        "Corinthian",
+        "Korintijan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a0d96eae",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koliko je topova posada broda HMS Endeavour 1770.g. bacila u more kako bi olakšala brod nakon što se nasukao na Velikom koraljnom grebenu?",
+      "answers": [
+        "6",
+        "Šest",
+        "VI",
+        "Six",
+        "Siks"
+      ],
+      "image": null
+    }
+  ]
+}

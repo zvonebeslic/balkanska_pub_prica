@@ -1,232 +1,237 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-04",
-  "generatedAt": "2026-08-24T20:08:22.539Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-0afbd5d8",
+      "id": "daily-f9bda5a8",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove poznata rock grupa koju čine članovi Brian May, Roger Taylor i John Deacon uz karizmatičnog frontmena Freddieja Mercuryja?",
+      "topic": "Gaming",
+      "question": "Kako se zove duh iz igrica Super Mario koji se obično prestaje kretati kada ga Mario gleda?",
       "answers": [
-        "Queen",
-        "Kuin"
+        "Boo",
+        "Bo"
       ],
       "image": null
     },
     {
-      "id": "daily-6a850d53",
+      "id": "daily-ba8b737a",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "Zemljopis",
-      "question": "Ankara je glavni grad koje države?",
-      "answers": [
-        "Turske",
-        "Turska",
-        "Turkey",
-        "Turki",
-        "Turkeys",
-        "Turkejs",
-        "Turkiye",
-        "Turkije",
-        "Turk",
-        "Turks"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8f82c3b6",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Kako se zove zatvoreni prostor koji kombinira vodeni i kopneni dio za biljke i životinje?",
-      "answers": [
-        "Paludarij",
-        "Paludarium"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c1dede87",
-      "type": "blitz",
-      "difficulty": 5,
+      "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "Tko je uz Lucija Tarkvinija Kolatina postao prvi konzul Rimske Republike 509.g. pr. Kr.?",
+      "question": "Rimski car Konstantin I. Veliki je na mjestu starog Bizantija odredio granice kojeg budućeg 'svoga' grada?",
       "answers": [
-        "Lucije Junije Brut",
-        "Junije Brut",
-        "Brut"
+        "Konstantinopola",
+        "Konstantinova",
+        "Konstantinopol",
+        "Konstantinov",
+        "Konstantinopolis",
+        "Constantinopolis",
+        "Constantinopolitana",
+        "Constantinov"
       ],
       "image": null
     },
     {
-      "id": "daily-adeef4cd",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se zvao prvi hrvatski predsjednik nakon osamostaljenja 1991.?",
-      "answers": [
-        "Franjo Tuđman",
-        "Tudman",
-        "Tuđman"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6029608e",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji francuski pojam označava najvišu kategoriju francuske mode, čiji naziv doslovno znači 'visoko krojenje', a pravo korištenja tog naziva u Francuskoj podliježe posebnim pravilima?",
-      "answers": [
-        "Haute couture",
-        "Ot kutir",
-        "Hot kutir",
-        "Haut kutir"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e22ee9f9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Što se tiče 7 svjetskih čuda iz antičkog doba, Napoleon je ratovao samo pored jednog, kojeg?",
-      "answers": [
-        "Keopsove piramide",
-        "Piramida",
-        "Pyramid",
-        "Ceopses pyramid",
-        "Keopses Piramid",
-        "Keopses Pyramid"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-18e070c9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koja je vojna vježba NATO saveza simulirala vojnu intervenciju Varšavskog Pakta na tadašnju Jugoslaviju, zbog političkih nemira u toj zemlji?",
-      "answers": [
-        "AbleArcher 83",
-        "Able Archer 83",
-        "Spremni Strijelac 83",
-        "Spreman Strijelac 83",
-        "EjblArčer 83",
-        "EblArčer 83",
-        "Ejbl Arčer 83",
-        "Ebl Arčer 83"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e0a5233c",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Film",
-      "question": "Kojem broju ljudi se sudi u filmu o skupini prosvjednika na Demokratskoj nacionalnoj konvenciji 1968. u Chicagu?",
-      "answers": [
-        "7",
-        "Sedam",
-        "Sedmorici",
-        "Seven"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bacb4df7",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "KnjigaSlika",
-      "question": "Kako se naziva roman Gabriela Garcíje Márqueza kojim je populariziran pojam magičnog realizma?",
-      "answers": [
-        "Sto godina samoće"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b68f9e12",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se nazivao velik oceanski jedrenjak široka trupa, na portugalskom poznat kao nau, koji je tijekom velikih geografskih otkrića mogao prevoziti znatno više tereta od karavele?",
-      "answers": [
-        "Karaka",
-        "Carrack",
-        "Nau",
-        "Nao",
-        "Karak"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9365531d",
+      "id": "daily-a305217d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Glazba",
-      "question": "Koji bend potpisuje pjesmu 'Dancing Queen'?",
+      "question": "Kako se zove poznati glazbeni festival koji se održava u pustinji u Kaliforniji?",
       "answers": [
-        "ABBA",
-        "ABA"
+        "Coachella",
+        "Koačela"
       ],
       "image": null
     },
     {
-      "id": "daily-1d7b6a65",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Kako se zove nordijska zmija-čudovište koja obuhvaća svijet i neprijatelj je boga Thora?",
-      "answers": [
-        "Jormungand",
-        "Jormungandr"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9eb619dc",
+      "id": "daily-cbc29495",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je boljševički vođa, nakon preuzimanja vlasti u Rusiji 1917.g., inzistirao na izlasku zemlje iz rata čak i po cijenu velikih teritorijalnih ustupaka Njemačkoj?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Prezime 25-og predsjednika SAD-a, Williama McKinleyja na karti možemo pronaći i kao najvišu točku Sjevernoameričkog kontinenta, ali u granicama koje savezne države?",
       "answers": [
-        "Vladimir Lenjin",
-        "Lenjin"
+        "Aljaske",
+        "Alaskas",
+        "Aljaska",
+        "Alaska"
       ],
       "image": null
     },
     {
-      "id": "daily-fc91bd24",
+      "id": "daily-97fc57dd",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koji kemijski spoj, svoj 'potpis' stavlja kao C4H10",
+      "question": "Koji je najveći unutarnji organ u ljudskom tijelu?",
       "answers": [
-        "Butan",
-        "Butane"
+        "Jetra"
       ],
       "image": null
     },
     {
-      "id": "daily-630e5ca4",
+      "id": "daily-88114bbf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "U kojoj je državi razvijena popularna mobilna videoigra Subway Surfers?",
+      "answers": [
+        "Danska",
+        "Danskoj",
+        "Danci",
+        "Denmark",
+        "Dansk",
+        "Denmarks",
+        "Denmarku",
+        "Den"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7b380857",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je oblik ratovanja, nakon što su se vojske na Zapadnom bojištu ukopale u kilometre povezanih položaja zaštićenih bodljikavom žicom i strojnicama, postao simbol Prvog svjetskog rata?",
+      "answers": [
+        "Rovovsko ratovanje",
+        "Rovovi",
+        "Rovovsko",
+        "Rovsko",
+        "Rovarenje",
+        "Rovanje"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-98b9d725",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je kineski admiral početkom 15. stoljeća predvodio goleme ekspedicije dinastije Ming preko Indijskog oceana, desetljećima prije velikih portugalskih putovanja?",
+      "answers": [
+        "Zheng He",
+        "Zeng He",
+        "Ženg He"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bba88ea4",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko vrhova ima stožac?",
+      "answers": [
+        "1",
+        "Jedan",
+        "One",
+        "Von",
+        "Ein",
+        "I"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c509a923",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Tko je skladao 'Devetu simfoniju'?",
+      "answers": [
+        "Ludwig van Beethoven",
+        "Ludvig van Betoven",
+        "Beethoven",
+        "Betoven"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d2f168b6",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Kako zovemo vrstu vivarija koja oponaša vodena staništa uz rubove rijeka, potoka ili jezera?",
+      "answers": [
+        "Riparij",
+        "Riparium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7d627ba0",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kojim dvjema riječima počinje čuveni besmisleni tekst koji se desetljećima koristi kao privremeni sadržaj pri grafičkom dizajnu i prijelomu stranica?",
+      "answers": [
+        "Lorem ipsum",
+        "Loremipsum",
+        "Lorimipsum",
+        "Lorim ipsum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-48f54cc1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Godine 1807., u jeku velikih britansko-francuskih ratnih sukoba, 'Institut de France' dodijelio je britancu Humphryju Davyju nagradu od 3000 franaka za njegov rad na području elektriciteta i galvanizma a sve to, vjerovali ili ne, pod čijim pokroviteljstvom?",
+      "answers": [
+        "Napoleonovim",
+        "Napoleons",
+        "Napolions",
+        "Napoleon",
+        "Bonaparte",
+        "Bonapartes",
+        "Bonpart",
+        "Bonapart",
+        "Napoleonskim",
+        "Napoleonski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-658cb61d",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Tko je napisao bajku o princezi na zrnu graška?",
+      "question": "U bajci o Crvenkapici, tko biva prvi pojeden od strane vuka?",
       "answers": [
-        "Hans Christian Andersen",
-        "HCA",
-        "Andersen",
-        "Christian Andersen",
-        "Hans Christian",
-        "Hans Andersen",
-        "Hans Kristijan Andersen",
-        "Kristijan Andersen",
-        "Hans Kristijan"
+        "Baka",
+        "Baba",
+        "Nana",
+        "Nona",
+        "Babuška",
+        "Babica",
+        "Bakica",
+        "Nonica",
+        "Nanica",
+        "Grandmother",
+        "Grendmoter"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9d4428cd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koje je veliko carstvo u današnjem Meksiku osvojio Hernán Cortés?",
+      "answers": [
+        "Aztečko",
+        "Azteka",
+        "Azteci",
+        "Aztecs",
+        "Azteks",
+        "Asteka",
+        "Astečko",
+        "Asteci"
       ],
       "image": null
     },
@@ -242,174 +247,215 @@
       "image": null
     },
     {
-      "id": "daily-aab61352",
+      "id": "daily-41231d3a",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove američka televizijska serija koju su zajedno osmislili i režirali Larry David i Jerry Seinfeld?",
-      "answers": [
-        "Seinfeld",
-        "Seinfild"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b7ed84fd",
-      "type": "blitz",
-      "difficulty": 3,
+      "difficulty": 2,
       "topic": "AntickiRim",
-      "question": "Kojeg se rimskog boga smatra bogom podzemlja?",
+      "question": "Pranećak kojeg slavnog rimskog vojskovođe je bio 1. rimski car August?",
       "answers": [
-        "Plutona",
-        "Pluton"
+        "Julija Cezara",
+        "Gaja Julija Cezara",
+        "Julije Cezar",
+        "Gaj Julije Cezar",
+        "Caius Iulius Caesar",
+        "Cezara",
+        "Cesars"
       ],
       "image": null
     },
     {
-      "id": "daily-41dee147",
+      "id": "daily-202c6d6b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Koji planet se zbog gustog oblaka CO2 i efekta staklenika smatra najtoplijim u Sunčevu sustavu?",
+      "answers": [
+        "Venera",
+        "Venus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a4e26c28",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Tko je bio američki predsjednik u vrijeme uvođenja prvih poštanskih markica u SAD-u?",
+      "question": "Koje kodno ime je Tajna služba dodijelila 41. predsjedniku SAD-a Georgeu H. W. Bushu?",
       "answers": [
-        "James Knox Polk",
-        "Knox",
-        "Polk",
-        "Džejms Noks Polk",
-        "Knoks",
-        "Noks",
-        "Dzejms Knoks Polk",
-        "James Polk",
-        "Džejms Polk"
+        "Timberwolf",
+        "Timbervolf"
       ],
       "image": null
     },
     {
-      "id": "daily-617cf30c",
+      "id": "daily-bac5430a",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
+      "difficulty": 1,
+      "topic": "Ostalo",
+      "question": "Kako se zove monoteistička religija koju je osnovao prorok Muhamed u 7. stoljeću?",
       "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
+        "Islam"
       ],
       "image": null
     },
     {
-      "id": "daily-14077d4a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Što se, prema poslovici, poznaje po jutru?",
-      "answers": [
-        "Dan",
-        "Day",
-        "Dej"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-60319184",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji ples možemo spojiti s dizajnom jedne Adidasove nogometne lopte, prvi put napravljene za SP 1978. godine u Argentini?",
-      "answers": [
-        "Tango"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-254de00b",
+      "id": "daily-110e2676",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Film",
-      "question": "Vozilo XB Falcon Hardtop kojeg proizvođača je vozio Max Rockatansky?",
+      "question": "Kako se zove planet s kojeg dolazi Superman?",
       "answers": [
-        "Ford",
-        "Forda"
+        "Krypton",
+        "Kripton"
       ],
       "image": null
     },
     {
-      "id": "daily-3a42b67b",
+      "id": "daily-9025f6d3",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Koji je rimski državnik i govornik završavao niz svojih govora tvrdnjom da Kartagu treba razoriti, poznatom po latinskoj frazi 'Carthago delenda est'?",
+      "question": "Koji je američki predsjednik tijekom posjeta Zapadnom Berlinu 1963.g. izgovorio čuvene riječi 'Ich bin ein Berliner'?",
       "answers": [
-        "Katon Stariji",
-        "Katon",
-        "Caton",
-        "Cato",
-        "Kato"
+        "John F. Kennedy",
+        "Džon F. Kenedi",
+        "John Fitzgerald Kennedy",
+        "Džon Ficgerald Kenedi",
+        "John Kennedy",
+        "Džon Kenedi",
+        "Kennedy",
+        "Kenedi"
       ],
       "image": null
     },
     {
-      "id": "daily-4a89427b",
+      "id": "daily-54447c74",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji redatelj potpisuje vizualno upečatljive filmove 'Grand Budapest Hotel' i 'Asteroid City'?",
+      "answers": [
+        "Wes Anderson",
+        "Ves Anderson",
+        "Wesley Wales Anderson",
+        "Anderson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-86ba72b1",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se naziva talijanska staza Formule 1 poznata kao 'Hram brzine'?",
+      "topic": "Povijest",
+      "question": "Kod kojeg su planinskog prijevoja poljski laki konjanici 1808. jurišem kroz topničku vatru otvorili Napoleonu put prema Madridu?",
       "answers": [
-        "Monza",
-        "Autodromo Nazionale Monza"
+        "Somosierra",
+        "Somosiera",
+        "Somsier",
+        "Somsiera"
       ],
-      "image": null
+      "image": null,
+      "rarity": "silver"
     },
     {
-      "id": "daily-375b8151",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja matematička konstanta predstavlja omjer opsega kružnice i njezina promjera?",
-      "answers": [
-        "Pi",
-        "π"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-08d3a1de",
+      "id": "daily-c32bef46",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koja je američka kompanija razvila popularnu mobilnu videoigru Pokémon GO, objavljenu 2016.g.?",
+      "topic": "Zemljopis",
+      "question": "Najveći grad Benina je Cotonou, a glavni, koji?",
       "answers": [
-        "Niantic",
-        "Niantik"
+        "Porto-Novo",
+        "Porto Novo",
+        "Portonovo"
       ],
       "image": null
     },
     {
-      "id": "daily-e72b8795",
+      "id": "daily-46ea7685",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Sa kojim fiktivnim likom Roalda Dahla u divovskoj breskvi putuju stonoga, skakavac, gusjenica, pauk i bubamara?",
+      "answers": [
+        "Jamesom",
+        "Džejmsom",
+        "James",
+        "Džejms"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2c526e18",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Najvažniji minerali kojeg kemijskog elementa su pirit, sfalerit i halkopirit?",
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je njemački filozof 19. stoljeća kroz svoja djela proslavio provokativnu tvrdnju 'Bog je mrtav'?",
       "answers": [
-        "Sumpora",
-        "Sumpir",
-        "Sulfura",
-        "Sulfur",
-        "Sulphura",
-        "Sulphur"
+        "Friedrich Nietzsche",
+        "Fridrih Niče",
+        "Nietzsche",
+        "Niče",
+        "Nitče",
+        "Nieče"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b4f65d5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja se država može pohvaliti da su njeni klubovi osvojili najviše titula Lige Prvaka, njih čak 20?",
+      "answers": [
+        "Španjolska",
+        "Spanjolske",
+        "Spains",
+        "Spejns",
+        "Spain",
+        "Spejn",
+        "Espanyol",
+        "Espanjol",
+        "Espanyols",
+        "Espanjols",
+        "Španija",
+        "Španije",
+        "Spa",
+        "Esp",
+        "Špein",
+        "Špejn",
+        "Špajn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d0be66bd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Talijanska nogometna legenda, Giacinto Facchetti, u svojoj je karijeri nastupao samo za jedan klub, koji?",
+      "answers": [
+        "Inter Milan",
+        "Inter iz Milana",
+        "Internazionale",
+        "Internacional",
+        "Inter Milan",
+        "InterMilan",
+        "Inter Milano",
+        "InterMilano"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-11276d41",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja se životinja nalazi na grbu finskog alandskog otočja?",
+      "answers": [
+        "Jelen",
+        "Stag",
+        "Deer",
+        "Dir"
       ],
       "image": null
     }

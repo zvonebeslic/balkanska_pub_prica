@@ -1,0 +1,445 @@
+{
+  "version": 2,
+  "date": "2026-09-16",
+  "generatedAt": "2026-08-25T18:26:49.228Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-2943c869",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "U kojem filmu John Travolta kao Vincent Vega i Uma Thurman kao Mia Wallace plešu kultni ples?",
+      "answers": [
+        "Pakleni šund",
+        "Pulp Fiction",
+        "Pulp Fikšn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-97b8e72a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je videoigra iz 1987.g., koju je dizajnirao Hironobu Sakaguchi za japansku tvrtku Square, nastala u razdoblju kada je Sakaguchi razmišljao o napuštanju industrije, a njezin je neočekivani uspjeh pokrenuo jedan od najvećih RPG serijala u povijesti gaminga?",
+      "answers": [
+        "Final Fantasy",
+        "Final Fantazi",
+        "Fajnl Fantazi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-31cf9653",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja se otočna afrička država kvalificirala na Svjetsko Nogometno Prvenstvo 2026.g.?",
+      "answers": [
+        "Zelenorski Otoci",
+        "Zelenortski Otoci",
+        "Zelenorska Republika",
+        "Zelenortska Republika",
+        "Kapverdski",
+        "Kapverdska",
+        "Capo Verde",
+        "Kapo Verde",
+        "Capoverde",
+        "Kapoverde",
+        "Kabo Verde",
+        "Kaboverde",
+        "Zelenorski",
+        "Zelenortski",
+        "Zelenorska",
+        "Zelenortska",
+        "Zelenortska Ostrva"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f55f1a2e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je američki državnik i jedan od tvoraca američke Deklaracije neovisnosti napisao da su 'svi ljudi stvoreni jednaki'?",
+      "answers": [
+        "Thomas Jefferson",
+        "Tomas Džeferson",
+        "Jefferson",
+        "Džeferson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7a410b95",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 5. predsjednik SAD-a, prezimena Monroe, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "JM"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-42aa3dda",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Nacionalni park Durmitor se nalazi u kojoj balkanskoj državi?",
+      "answers": [
+        "Crnoj Gori",
+        "Crna Gora",
+        "Montenegro",
+        "Monte Negro",
+        "Montenegros",
+        "Monte Negros"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-87f18fb0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Tko je bio prvi rimski car koji je primio sakramenat krštenja?",
+      "answers": [
+        "Konstantin",
+        "Constantin",
+        "Constantinus",
+        "Konstantinus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aaac0aec",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove popularno meksičko jelo od tortilje punjene mesom, povrćem i umakom?",
+      "answers": [
+        "Taco",
+        "Tacos",
+        "Tako",
+        "Takos"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-130b1748",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove serija o FBI agentima Foxu Mulderu i Danu Scully-u koji istražuju neobjašnjive fenomene?",
+      "answers": [
+        "X Files",
+        "X-Files",
+        "The X-Files",
+        "Dosjei X"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d7150640",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je britanski teorijski fizičar zbog paralize mišića s okolinom pričao pomoću računalnog sintetizatora glasa?",
+      "answers": [
+        "Stephen Hawking",
+        "Stiven Hovking",
+        "Stefen Hovking",
+        "Hawking",
+        "Hovking",
+        "Havking",
+        "Hoking",
+        "Hokins"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-84ede5ab",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji golemi čelični lučni most, otvoren 1932.g., dominira lukom najvećeg australskog grada?",
+      "answers": [
+        "Sydney Harbour Bridge",
+        "Sidnej Harbor",
+        "Sidnejski Lučki most",
+        "Sidnejski Lučki"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9590cc95",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Na čijem planetu, podno tri vulkani, rastu razni cvjetovi, korisne biljke ali i opasni baobabi?",
+      "answers": [
+        "Malog Princa",
+        "Mali Princ",
+        "Little Prince",
+        "Lidl Princ",
+        "Lidl Prins",
+        "La petit Prince",
+        "Le petit Princ",
+        "Malom Princu",
+        "Prinčevom",
+        "Prinčevu",
+        "Princes",
+        "Princs",
+        "Princ",
+        "Prince",
+        "Princs",
+        "Princa",
+        "Princu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb8a839a",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "U klasičnom slikarstvu, koju boju dobijemo miješanjem plave i žute?",
+      "answers": [
+        "Zelenu",
+        "Zelena",
+        "Green",
+        "Grin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a43a4e02",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Na rimskom forumu u Zadru danas se nalazi koja crkva?",
+      "answers": [
+        "Sv. Donata",
+        "Donata",
+        "Donat",
+        "Sv. Donat",
+        "Donatova",
+        "Sv. Donatova",
+        "Svetog Donata"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-662d05d5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Ako bi upitali američku novinarku Mignon McLaughlin o ljubavi, rekla bi da je jedan plus jedan beskonačno, a dva minus jedan koliko?",
+      "answers": [
+        "Nula",
+        "0"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6b227587",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koje je veliko južnoameričko carstvo osvojio Francisco Pizarro?",
+      "answers": [
+        "Carstvo Inka",
+        "Inke",
+        "Inka",
+        "Incas",
+        "Inkas",
+        "Ince",
+        "Inca"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ac2d7e2f",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Kako se zove mitsko biće koje u filmu 'Panov labirint' (Pan's Labyrnth) jede djecu i ima oči na dlanovima?",
+      "answers": [
+        "Blijedi čovjek",
+        "Pale Man",
+        "The Pale Man",
+        "Pejl men"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c2972183",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove najpoznatije književno djelo pisca i zrakoplovca Antoinea de Saint Exuperyja?",
+      "answers": [
+        "Mali Princ",
+        "Little Princ",
+        "Lidl Prins",
+        "Lidl Princ"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b9959c99",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove nagrada za najbolji album godine koju dodjeljuje američka glazbena akademija?",
+      "answers": [
+        "Grammy",
+        "Gremi",
+        "Grammy Award",
+        "Grammys",
+        "Gremis"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7d0a741a",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Sport",
+      "question": "Koja država je osvojila Svjetsko prvenstvo u nogometu 2018. godine?",
+      "answers": [
+        "Francuska",
+        "France"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1d228b80",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kitovi pod vodom u prosjeku izdrže 20 minuta a dišu kojim organom?",
+      "answers": [
+        "Plućima",
+        "Pluća"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-70843c57",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Od čega, prema poslovici, glava ne boli?",
+      "answers": [
+        "Viška"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f28d5f7b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "USS Pomfret je bila američka ratna podmornica na kojoj je služio koji, tada budući, američki predsjednik?",
+      "answers": [
+        "Jimmy Carter",
+        "Džimi Karter",
+        "Carter",
+        "Karter"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee8c1cb4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove poznati roman J. R. R. Tolkiena o hobitu koji nosi Prsten moći?",
+      "answers": [
+        "Gospodar prstenova",
+        "Lord of the Rings"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0153709a",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "KnjigaSlika",
+      "question": "Koji je slikar naslikao 'Guernicu' kao reakciju na bombardiranje tijekom Španjolskog građanskog rata?",
+      "answers": [
+        "Pablo Picasso",
+        "Pablo Pikaso",
+        "Picasso",
+        "Pikaso"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f133c281",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove legendarni izgubljeni grad koji Nathan Drake traži u videoigri Uncharted 2: Among Thieves?",
+      "answers": [
+        "Shambhala",
+        "Šambala"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3c826258",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kako se zove proces pri kojem zelene biljke uz pomoć Sunčeve svjetlosti stvaraju šećer iz vode i ugljikova dioksida?",
+      "answers": [
+        "Fotosinteza"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dab206d9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je klub osvojio englesku Premier Ligu 2016.g.?",
+      "answers": [
+        "Leicester",
+        "Lester",
+        "Licester",
+        "Lecester"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f22ec467",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zove rat između Atene i Sparte koji je trajao gotovo 30 godina?",
+      "answers": [
+        "Peloponeski rat",
+        "Peloponeski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3a448a2d",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Tko je pjevačica pjesme 'Hips Don't Lie'?",
+      "answers": [
+        "Shakira",
+        "Šakira",
+        "Shakira Isabel Mebarak Ripoll"
+      ],
+      "image": null
+    }
+  ]
+}

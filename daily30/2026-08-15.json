@@ -1,453 +1,433 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-15",
-  "generatedAt": "2026-08-24T20:08:22.545Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-9b5ff17b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je austrijski nadvojvoda zapovijedao vojskom koja je porazila Napoleona kod Aspern-Esslinga 1809.g.?",
-      "answers": [
-        "Nadvojvoda Charles",
-        "Archduke Charles",
-        "Arčdjuk Čarls",
-        "Nadvojvoda Čarls",
-        "Charles",
-        "Čarls",
-        "Karlo",
-        "Nadvojvoda Karlo",
-        "Duke of Techen",
-        "Djuk of Tehen",
-        "Vojvoda od Techena",
-        "Vojvoda od Tehena",
-        "Charles Louis John Joseph Lawrence"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b3382139",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koja je američka spisateljica napisala 'Most za Terabithiu'?",
-      "answers": [
-        "Katherine Paterson",
-        "Ketrin Peterson",
-        "Ketrine Paterson",
-        "Katarina Paterson",
-        "Paterson",
-        "Peterson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c319bab7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je belgijski grad postao središte američkog otpora tijekom njemačke ofenzive u Ardenima u 2. svjetskom ratu, kada su opkoljenim braniteljima Nijemci ponudili predaju?",
-      "answers": [
-        "Bastogne",
-        "Bastonja",
-        "Bastonj",
-        "Baston",
-        "Bastone"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c773091c",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Skulpture koje ptice su pronađene u ruševinama Velikog Zimbabvea te su i danas nacionalni simbol suvremenog Zimbabvea?",
-      "answers": [
-        "Orla",
-        "Orao",
-        "Eagle",
-        "Igl"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-91f5191f",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja je francuska automobilska marka 1955.g. predstavila futuristički model DS, koji se proslavio hidropneumatskim ovjesom i čije se ime na francuskom izgovara poput riječi 'božica'?",
-      "answers": [
-        "Citroen",
-        "Citrojen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fa4d87c7",
+      "id": "daily-fbf56ac7",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Tko je bio predsjednik međunarodno nepriznate Konfederacije Američkih Država?",
+      "question": "William Henry je ime čovjeka koji je 18-om američkom predsjedniku, Ulysses S. Grantu 1884.g. posudio 150 000 dolara kako bi Grant spasio svoje investicije koje su počele propadati. No ipak neuspješno jer je Grant izgubio sve, a taj 'posuđivač' je član koje poznate američke obitelji?",
       "answers": [
-        "Jefferson Davis",
-        "Davis",
-        "Džeferson Dejvis",
-        "Dejvis"
+        "Vanderbilt"
       ],
       "image": null
     },
     {
-      "id": "daily-837bd740",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koji je po redu PlayStation Sony predstavio 2000.g. i koji je poslije postao najprodavanija igraća konzola svih vremena?",
-      "answers": [
-        "PlayStation 2",
-        "PS2",
-        "Ps 2",
-        "Dvicu",
-        "Drugi",
-        "Dva",
-        "2",
-        "Two",
-        "Tvu",
-        "Tu",
-        "II",
-        "Dvojka",
-        "Plejstejšn 2",
-        "Playstation dva",
-        "2nd",
-        "Plejstejšn dva",
-        "Second",
-        "Seknd"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-67579d0e",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Iz kojeg grada dolazi hip-hop grupa Wu-Tang Clan?",
-      "answers": [
-        "New York",
-        "New Yorka",
-        "Nju Jork",
-        "Nju Jorka"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-34c23d4b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se naziva glazbeni oblik za orkestar s više stavaka, nastao u klasicizmu, npr. djela Mozarta i Beethovena?",
-      "answers": [
-        "Simfonija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-509ec6a2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "U kojoj se republici rodio Marko Polo?",
-      "answers": [
-        "Mletačkoj",
-        "Venecijskoj",
-        "Venecijanskoj",
-        "Mletačka",
-        "Venecija",
-        "Venecijska",
-        "Venetia",
-        "Venetias"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8518a85d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koja se država proteže od atola Ihavandhippolhu na sjeveru do atola Addu na jugu čineći skupinu od njih 26?",
-      "answers": [
-        "Maldivi",
-        "Maldives"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8944eb38",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Sport",
-      "question": "Kako se naziva najviši rang engleskog nogometa koji je osnovan 1992.?",
-      "answers": [
-        "Premier League",
-        "Premjer Lig",
-        "Premiership",
-        "Premjeršip"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-110e2676",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "Kako se zove planet s kojeg dolazi Superman?",
-      "answers": [
-        "Krypton",
-        "Kripton"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1f481432",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "KnjigaSlika",
-      "question": "Koji je latinski izraz za 'sve prolazi'?",
-      "answers": [
-        "Omnia transit",
-        "Omnia transeunt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bd12ff0b",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kako se naziva broj koji nije djeljiv s 2?",
-      "answers": [
-        "Neparan broj",
-        "Neparan",
-        "Neparni"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-42f65a07",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove animirana serija o dječaku genijalcu s velikom glavom i laboratorijem u svojoj sobi?",
-      "answers": [
-        "Dexterov laboratorij",
-        "Dexter's Laboratory"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-31e1df4d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Tko je bio prvi germanski vođa koji je osvojio Rim?",
-      "answers": [
-        "Alarik",
-        "Alareiks"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3f48151d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove tradicionalno japansko jelo od riže, sirove ribe i algi?",
-      "answers": [
-        "Sushi",
-        "Suši"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cd6546f7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koja životinja, prema poslovici, često mnogo laje, ali ne grize?",
-      "answers": [
-        "Pas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ad3599d7",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Zemljopis",
-      "question": "Koja afrička država ima zračnu luku Bengui M'Poko'?",
-      "answers": [
-        "Srednjoafrička Republika",
-        "Srednjoafrička",
-        "Srednjeafrička",
-        "Srednjo Afrička",
-        "Srednje Afrička",
-        "Srednja Afrika",
-        "Centralafrička",
-        "Centralnoafrička",
-        "Central Afrička",
-        "Centralno Afrička",
-        "Centralna Afrika",
-        "CAR",
-        "SAR",
-        "Central Africa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9c355931",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji je astrološki prikaz položaja Sunca, Mjeseca i planeta u trenutku nečijeg rođenja, Johannes Kepler pisao za brojne velikaše?",
-      "answers": [
-        "Horoskop",
-        "Horoscope",
-        "Horoscop"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c4efefed",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koji je reper poznat i po nadimku 'Slim Shady'?",
-      "answers": [
-        "Eminem",
-        "Marshall Bruce Mathers 3."
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f18c4cb5",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Sudeći po narodnoj poslovici, koju radnju bi trebali prvo obaviti pa tek onda nešto reći naglas?",
-      "answers": [
-        "Ispeći",
-        "Ispeci",
-        "Peći",
-        "Peci"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ca5096b7",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kojeg se američkog književnika i jednog od nekolicine dobrih prijatelja Nikole Tesle, naziva ocem američke književnosti?",
-      "answers": [
-        "Marka Twaina",
-        "Marka Tvejna",
-        "Marka Tvajna",
-        "Twaina",
-        "Tvejna",
-        "Tvajna",
-        "Samuel Langhorne Clemensa",
-        "Langhornea Clemensa",
-        "Langhorna Klemensa",
-        "Clemensa",
-        "Klemensa",
-        "Mark Twain",
-        "Mark Tvejn",
-        "Mark Tvajn",
-        "Twain",
-        "Tvejn",
-        "Tvajn",
-        "Samuel Langhorne Clemens",
-        "Langhorne Clemens",
-        "Langhorn Klemens",
-        "Clemens",
-        "Klemens"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5a7aa1e7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove izmišljena farmaceutska korporacija iz Resident Evila čiji je crveno-bijeli logotip postao jedan od najprepoznatljivijih simbola cijele igre?",
-      "answers": [
-        "Umbrella",
-        "Umbrela",
-        "Umbrella Corporation",
-        "Ambrela",
-        "Kišobran"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f064f508",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Partizanski bombaš, Boško Buha je na filmsko platno prenešen od strane kojeg hrvatskog redatelja?",
-      "answers": [
-        "Branka Bauera",
-        "Branko Bauer",
-        "Bauer"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-60319184",
+      "id": "daily-9dd8e1fe",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Koji ples možemo spojiti s dizajnom jedne Adidasove nogometne lopte, prvi put napravljene za SP 1978. godine u Argentini?",
+      "question": "U čemu se nalazi nogometaš kojem se dodaje lopta dok je na protivničkoj polovici iza najzadnjeg braniča?",
       "answers": [
-        "Tango"
+        "Zaleđu",
+        "Ofsajdu",
+        "Offside",
+        "Off side",
+        "Of sajdu",
+        "Offsideu",
+        "Off sideu",
+        "Zaleđe",
+        "Ofsajd"
       ],
       "image": null
     },
     {
-      "id": "daily-a0660b67",
+      "id": "daily-5d166b91",
       "type": "blitz",
       "difficulty": 1,
-      "topic": "Ostalo",
-      "question": "Kako se zove religijska knjiga kršćana koja se sastoji od Starog i Novog zavjeta?",
+      "topic": "FloraFauna",
+      "question": "Kako nazivamo vanjski dio debla?",
       "answers": [
-        "Biblija"
+        "Kora"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-14077d4a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Što se, prema poslovici, poznaje po jutru?",
+      "answers": [
+        "Dan",
+        "Day",
+        "Dej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2d779640",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji roman Frances Hodgson Burnett prati djevojčicu koja od bogate učenice postaje služavka u londonskom internatu?",
+      "answers": [
+        "Mala Princeza",
+        "A Little Princess",
+        "Litl Princes",
+        "Lidl Princes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0f829aa1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Zemljopis",
+      "question": "Koja država je do 1975.g. nosila ima Dahomej?",
+      "answers": [
+        "Benin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1ee56c81",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja je europska bankarska obitelj, čiji je uspon započeo s Mayerom Amschelom u Frankfurtu, tijekom 19. stoljeća izgradila financijsku mrežu u nekoliko najvećih europskih gradova?",
+      "answers": [
+        "Rothschild",
+        "Rothschildi",
+        "Rothschildovi",
+        "Rotšild",
+        "Rotšildi",
+        "Rotšildovi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f52b51d4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Mohsova ljestvica je niz od 10 minerala poredanih po tvrdoći. Na prvom mjestu nalazi se talk odnosno milovka kao najmekši, a koji se mineral kao najtvrđi nalazi na 10-om mjestu?",
+      "answers": [
+        "Dijamant",
+        "Diamond",
+        "Dajmond"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-66af2a9c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koje je prezime nosio američki predsjednik koji je 1917.g.  od Kongresa zatražio ulazak SAD-a u rat, a godinu poslije predstavio svojih poznatih Četrnaest točaka za poslijeratni svijet?",
+      "answers": [
+        "Wilson",
+        "Woodrow Wilson",
+        "Vudrov Vilson",
+        "Vilson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-477d755e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove legendarni vojnik i stručnjak za infiltraciju koji je jedan od glavnih protagonista serijala Metal Gear?",
+      "answers": [
+        "Solid Snake",
+        "Solid Snejk",
+        "Snake",
+        "Snejk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-06db7e23",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Glazba",
+      "question": "Koji američki skladatelj i dirigent potpisuje napete i zastrašujuće note filma 'Ralje' za koje je dobio i Oscara?",
+      "answers": [
+        "John Williams",
+        "John Towner Williams",
+        "Džon Viliams",
+        "Williams",
+        "Viliams"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8eb3cf45",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Kako se zove planina na koju Frodo mora odnijeti Prsten Moći da bi ga uništio?",
+      "answers": [
+        "Kleta gora",
+        "Mt. Doom",
+        "Mt Doom",
+        "Mountain Doom",
+        "Mont Dum",
+        "Mount Doom"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6903c9ae",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kapelica kojeg se katoličkog sveca nalazi u sklopu stadiona na Poljudu?",
+      "answers": [
+        "Sv. Šarbela",
+        "Šarbela",
+        "Šarbelu",
+        "Charbel",
+        "Charbels",
+        "Sharbels",
+        "Sharbel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-67d6454d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 42. predsjednik SAD-a, prezimena Clinton, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "WJC"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7f787841",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove poznata biblijska knjiga koja opisuje apokaliptične vizije i kraj vremena?",
+      "answers": [
+        "Otkrivenje",
+        "Apokalipsa",
+        "Knjiga Otkrivenja",
+        "Otkrivenja"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ea045540",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zvao nekadašnji brod za prijevoz porobljenih ljudi koji je gusar Samuel Bellamy zarobio, pretvorio u svoj glavni brod, a koji je 1717.g. potonuo kod Cape Coda?",
+      "answers": [
+        "Whydah Gally",
+        "Whydah",
+        "Whydah Galley",
+        "Vajda Gali",
+        "Whydah",
+        "Vidah",
+        "Vajdah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f9af3517",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Kako se zvala nordijska božica ljubavi i ljepote?",
+      "answers": [
+        "Freja",
+        "Freyja"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ad91ebe",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji je glazbenik imenima svojih albuma dao znakove zbrajanja, množenja, dijeljenja i jednakosti?",
+      "answers": [
+        "Ed Sheeran",
+        "Ed Šeran",
+        "Sheeran",
+        "Šeran",
+        "Edward Christopher Sheeran"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0f7ddb42",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je francuski kralj navodno smatrao da je Pariz 'vrijedan jedne mise' kada je prelaskom na katoličanstvo učvrstio svoj položaj na prijestolju?",
+      "answers": [
+        "Henrik IV.",
+        "Henrik 4.",
+        "Henrik četvrti",
+        "Henrik fourth",
+        "Henrik fort",
+        "Henrik 4th",
+        "Henri IV.",
+        "Henri 4.",
+        "Henri četvrti",
+        "Henri fourth",
+        "Henri fort",
+        "Henri 4th"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2a512fe7",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja je žena 1888.g. bez znanja svojeg supruga krenula njegovim automobilom na put dug više od 100 kilometara i izvela prvo veliko putovanje automobilom u povijesti?",
+      "answers": [
+        "Bertha Benz",
+        "Berta Benz",
+        "Bertha Benc",
+        "Berta Benc",
+        "Bertha",
+        "Berta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5eb8a935",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "ABC otoke čine otoci Aruba, Bonaire i koji još?",
+      "answers": [
+        "Curacao",
+        "Kurakao"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5db8d912",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Budistički tekstovi pisani Gandhārskim pismom su jedni od najstarijih sačuvanih budističkih rukopisa uopće, a pisani su na kori kojeg drveta?",
+      "answers": [
+        "Breza",
+        "Breze"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f4f17ec6",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koje je svoje djelo Herman Melville posvetio svom suvremeniku, piscu Nathanielu Hawthorneu?",
+      "answers": [
+        "Moby Dick",
+        "Bijeli kit",
+        "Mobi dik",
+        "The Wale",
+        "D Vejl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-68c73820",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Na području koje današnje države se dogodila bitka kod Filipija iz 42.g. pr. Kr.?",
+      "answers": [
+        "Grčke",
+        "Grčka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e8c0b433",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Znanost",
+      "question": "Koji pojam opisuje podjelu cjeline na dva međusobno isključiva dijela, a najčešće se koristi u logici, filozofiji, botanici i lingvistici?",
+      "answers": [
+        "Dihotomija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-174c1e06",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je francuska botaničarka, prerušena u muškarca kako bi se mogla ukrcati na brod, postala prva poznata žena koja je oplovila svijet?",
+      "answers": [
+        "Jeanne Baret",
+        "Jeanne Baré",
+        "Jeanne Barret",
+        "Žan Baret",
+        "Baret",
+        "Barret",
+        "Bare",
+        "Baret"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e72a97e4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove tajni istraživački kompleks u kojem na početku prve videoigre Half-Life katastrofalni eksperiment otvara put izvanzemaljskim stvorenjima?",
+      "answers": [
+        "Black Mesa",
+        "Blek Mesa",
+        "Crna Mesa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-510a44d5",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Koja je hrvatska dječja tv serija nadahnuta romanom Bijeli Jelen, Vladimira Nazora?",
+      "answers": [
+        "Jelenko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6cb40c4f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "7 rimskih brežuljaka su: Palatin, Aventin, Celij, Viminal, Kvirinal, Eskvilin i koji još?",
+      "answers": [
+        "Kapitol",
+        "Kapitolij",
+        "Capitolium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b3563f90",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji broj stari Rimljani nisu poznavali?",
+      "answers": [
+        "Nula",
+        "Nulu",
+        "0",
+        "Zero",
+        "Ziro",
+        "Null",
+        "Nul"
       ],
       "image": null
     }

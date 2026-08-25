@@ -1,407 +1,401 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-23",
-  "generatedAt": "2026-08-24T20:08:22.548Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-9aa55e23",
+      "id": "daily-2396bc59",
       "type": "blitz",
       "difficulty": 4,
       "topic": "AntickiRim",
-      "question": "Forum kojeg rimskog cara je započet s izgradnjom 107.g., a završen 112.g., ujedno i najvećih od svih?",
+      "question": "Koja se rimska tvrđava prvotno zvala Hadrijanov mauzolej?",
       "answers": [
-        "Trajanov",
-        "Traianus",
-        "Traianov"
+        "Anđeoska",
+        "Anđeoska tvrđava"
       ],
       "image": null
     },
     {
-      "id": "daily-a24017b3",
+      "id": "daily-a4ccb538",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je košarkaš izjavio 'Promašio sam više od 9000 šuteva u karijeri... I zato uspijevam'?",
+      "topic": "Glazba",
+      "question": "Ime koje pjevačice potječe od staronordijskog 'Adalheidis' što znači 'plemenita'?",
       "answers": [
-        "Michael Jordan",
-        "Majkl Džordan",
-        "Jordan",
-        "Džordan"
+        "Adele",
+        "Adel"
       ],
       "image": null
     },
     {
-      "id": "daily-d8f5236f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koje je malo hrvatsko mjesto u hrvatskom zagorju 1970.g. posjetio američki predsjednik Richard Nixon?",
-      "answers": [
-        "Kumrovec"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2c51f5a1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koja je kineska dinastija poslala Zheng Hea na njegovih sedam velikih pomorskih ekspedicija?",
-      "answers": [
-        "Ming"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f079ebee",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je automobil s karoserijom od nehrđajućeg čelika i vratima koja se podižu prema gore postao filmski vremeplov u trilogiji 'Povratak u budućnost'?",
-      "answers": [
-        "DeLorean",
-        "DeLorin",
-        "DMC-12",
-        "DMC 12",
-        "DMC dvanaest",
-        "DMC tvelve",
-        "DMC tvelv",
-        "DMC XII"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c7c0c2bb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove egipatski bog sa glavom šakala, zaštitnik balzamiranja i zagrobnog života?",
-      "answers": [
-        "Anubis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c9399d31",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji je britanac napisao knjigu o Matildi, nadprosječno pametnoj djevojčici koja ima i telekinetičke sposobnosti?",
-      "answers": [
-        "Roald Dahl",
-        "Rouald Dal",
-        "Roald Dal",
-        "Dahl",
-        "Dal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9ce91548",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Sport",
-      "question": "Koji je klub iz Münchena višestruki prvak Njemačke i osvajač Lige prvaka?",
-      "answers": [
-        "Bayern München",
-        "Bayern Munich",
-        "Bayern"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-71856c3c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove umjetnički pravac kojem pripada slikar Vincent van Gogh?",
-      "answers": [
-        "Postimpresionizam",
-        "post-impresionizam"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b9959c99",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove nagrada za najbolji album godine koju dodjeljuje američka glazbena akademija?",
-      "answers": [
-        "Grammy",
-        "Gremi",
-        "Grammy Award",
-        "Grammys",
-        "Gremis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9fada995",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove američka pjevačica poznata po albumu 'Like a Virgin'?",
-      "answers": [
-        "Madonna",
-        "Madona"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6d9eb8d8",
+      "id": "daily-bafc8ca6",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Za jačinu svjetlosti koristimo kandelu, za svjetlosni tok koristimo lumen a za osvjetljenje što?",
+      "question": "Koje ime nosi dio generatora koji se okreće?",
       "answers": [
-        "Luks",
-        "Lux"
+        "Rotor"
       ],
       "image": null
     },
     {
-      "id": "daily-97232a37",
+      "id": "daily-96c0d046",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Rusije?",
+      "answers": [
+        "Moskva",
+        "Moscow",
+        "Moskov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-774c0845",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 17. predsjednik SAD-a, prezimena Johnson, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "AJ"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9fe5d25e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji kipar je najzaslužniji za djelo američkih predsjednika na planini Rushmore?",
+      "answers": [
+        "Gutzon Borglum",
+        "Gucon Borglum",
+        "Borglum",
+        "John Gutzon de la Mothe Borglum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0ff1cd3b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Naziv nizozemskog broda Duyfken, koji je 1606.g. ostvario prvi dokumentirani europski dolazak do Australije, u prijevodu znači 'mala' koja ptica?",
+      "answers": [
+        "Golubica",
+        "Golub",
+        "Mala golubica",
+        "Dove",
+        "Little Dove",
+        "Goluba",
+        "Dov",
+        "Dovs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7036112b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Tko je otpjevao uvodnu pjesmu hrvatske verzije crtane serije Spužvabob Skockani?",
+      "answers": [
+        "Davor Gobac",
+        "Gobac"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c84e2387",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Tko je bio na čelu galske vojske kada su 390.g. provalili i opljačkali Rim?",
+      "answers": [
+        "Bren",
+        "Brennus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-81ea8f5e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koje ime dijele nogometaši Van Nistelrooy, Gulit i Krol?",
+      "answers": [
+        "Ruud",
+        "Rud"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0d227b7f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja se životinja spominje u poznatoj frazi PUBG-ja koja se prikazuje igraču ili ekipi nakon pobjede u meču?",
+      "answers": [
+        "Kokoš",
+        "Koka",
+        "Chicken",
+        "Čiken",
+        "Kokošurina"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-675c694f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja životinja se nalazi na grbu Venecije i zastavama nekadašnje Mletačke Republike?",
+      "answers": [
+        "Lav",
+        "Lavovi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-28032654",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Segina fantasy arkadna videoigra iz 1989.g. u kojoj se Ax Battler, Tyris Flare i Gilius Thunderhead bore protiv Death Addera?",
+      "answers": [
+        "Golden Axe",
+        "Zlatna sjekira",
+        "Golden Aks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-87bd0d54",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koje je otočje osobito poznato po Darwinovim opažanjima životinjskih vrsta i kasnijoj povezanosti s razvojem njegove teorije evolucije?",
+      "answers": [
+        "Galapagos",
+        "Colon",
+        "Kolon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-427c40a1",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Na području koje se povijesne francuske regije odvijala posljednja bitka Stogodišnjeg rata gdje su Francuzi uz masovniju uporabu topova ostvarili pobjedu nad Englezima te tako ovladali kopnenim teritorijem uz La Manche?",
+      "question": "U kojem je gradu 1915.g. sklopljen tajni sporazum kojim su sile Antante Italiji obećale teritorijalne dobitke ako uđe u rat protiv Austro-Ugarske?",
       "answers": [
-        "Gaskonje",
-        "Gascogne",
-        "Gaskonja"
+        "Londonu",
+        "London"
       ],
       "image": null
     },
     {
-      "id": "daily-305018e6",
+      "id": "daily-ba06d1ab",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Poslovica je davno objasnila da kruha nema bez čega?",
+      "answers": [
+        "Motike",
+        "Motika"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9b6fa901",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koji stručni naziv koristimo za 'zimski san' kod životinja?",
+      "answers": [
+        "Hibernacija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4f190f2f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Koji glumac glumi Thora u Marvelovim filmovima?",
+      "answers": [
+        "Chris Hemsworth",
+        "Kris Hemsvort",
+        "Hemsworth",
+        "Hemsvort"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8c2b9876",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koje slovo se nalazi na početku svake riječi u imenu navijača Dinama iz Zagreba?",
+      "answers": [
+        "B"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-169afea6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako se zove poznata teorija koja opisuje nastanak i širenje svemira iz izuzetno guste točke?",
+      "answers": [
+        "Veliki prasak",
+        "Big Bang",
+        "Velikog Praska",
+        "Big Beng"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-710d99f8",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Kako nazivamo razdoblje američke povijesti od 1920. do 1933.g. tijekom kojeg je ustavnim amandmanom i saveznim zakonima bila zabranjena proizvodnja, prodaja i prijevoz alkoholnih pića?",
+      "question": "Koliko je 10 × 10 × 10?",
       "answers": [
-        "Američka Prohibicija",
-        "Prohibition",
-        "Prohibicija",
-        "Zabrana alkohola"
+        "1000",
+        "Tisuću",
+        "Thousand",
+        "Tauzend",
+        "M"
       ],
       "image": null
     },
     {
-      "id": "daily-eb48d720",
+      "id": "daily-22b0fd1a",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koju je životinju Robinson Crusoe pripitomio kako bi na otoku imao stalan izvor mlijeka i mesa?",
+      "answers": [
+        "Kozu",
+        "Koza",
+        "Koze",
+        "Goat",
+        "Goats",
+        "Got",
+        "Gots",
+        "Gout",
+        "Gouts"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-909eb4ba",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Tko je zapovijedao brodom Gjøa kada je između 1903. i 1906.g. prvi put uspješno preplovljen cijeli Sjeverozapadni prolaz?",
+      "answers": [
+        "Roald Amundsen",
+        "Amundsen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4144c67c",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Tko je osvojio Euroviziju 2024. s pjesmom 'The Code'?",
+      "topic": "Film",
+      "question": "Koja je glumica utjelovila lik Hermione Granger?",
+      "answers": [
+        "Emma Watson",
+        "Ema Vatson",
+        "Watson",
+        "Vatson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-92affa06",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Na kojem su jordanskom području, poznatom i kao Dolina Mjeseca, snimani filmovi Marsovac, Dune, Ratovi Zvijezda i Aladdin?",
+      "answers": [
+        "Wadi Rum",
+        "Vadi Rum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9fd004b4",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove Verne-ov fiktivni kapetan podmornice Nautilus?",
       "answers": [
         "Nemo"
       ],
       "image": null
     },
     {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f01295c3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je bundesligaški klub, u sezoni 2023/24 ostao neporažen, te tako osvojio nogometno prvenstvo sa 28 pobjeda i 6 remija?",
-      "answers": [
-        "Bayer Leverkusen",
-        "Bajer Leverkuzen",
-        "Leverkusen",
-        "Leverkuzen",
-        "Bayer",
-        "Bajer"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-68777975",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Zemljopis",
-      "question": "Koji je glavni grad Gruzije?",
-      "answers": [
-        "Tbilisi",
-        "Tibilisi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9386fb6b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove tvorac lika Sherlocka Holmesa?",
-      "answers": [
-        "Arthur Conan Doyle",
-        "Artur Konan Dojl",
-        "Conan Doyle",
-        "Konan Dojl",
-        "Doyle",
-        "Dojl"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-18fa9084",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji plin se oslobađa kao nusprodukt fotosinteze?",
-      "answers": [
-        "Kisik",
-        "O2"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7221eafb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Kako se zove pjevačica hita 'Thank U, Next'?",
-      "answers": [
-        "Ariana Grande",
-        "Grande",
-        "Ariana Grande Butera"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-dd7df768",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Uz Buba, kako se zove još jedan zmaj kojima igrači upravlja u arkadnoj videoigri Bubble Bobble?",
-      "answers": [
-        "Bob"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d5506f1f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Prezime kojeg američkog predsjednika se piše kao ime jednog glumca koji je utjelovio agenta 007?",
-      "answers": [
-        "Pierce",
-        "Pirs"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-228bc752",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "S kojom bi riječi na jeziku majmuna Mangani opisali 'bijelog čovjeka'?",
-      "answers": [
-        "Tarzan",
-        "Tarzans"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1419dbbb",
+      "id": "daily-9cd6af63",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "Po kojem starorimskom državniku i filozofu, koji je detaljno opisao erupciju Vezuva, znanstvenici danas nazivaju najjači tip vulkanske erupcije?",
+      "question": "Koji rimski car nastavlja vladati Rimom još 8 godina, nakon što njegova oca Valerijana odvode u zatočeništvo?",
       "answers": [
-        "Plinije",
-        "Plinije mlađi",
-        "Plinius",
-        "Plinius secundus"
+        "Galijen",
+        "Gallienus"
       ],
       "image": null
     },
     {
-      "id": "daily-bab0b547",
+      "id": "daily-eb4c71c5",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "U oružanom napadu pljačkaša na samostan Kiremba u Burundiju 2011.g., ubijena je koja hrvatska katolička misionarka i mučenica?",
-      "answers": [
-        "Lukrecija Anđa Mamić",
-        "Lukrecija Mamić",
-        "Mamić",
-        "Lukrecija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-689bc01e",
-      "type": "blitz",
-      "difficulty": 2,
+      "difficulty": 4,
       "topic": "Film",
-      "question": "Koji je prvi dugometražni animirani film Walta Disneyja?",
+      "question": "U filmu Interstellar, 'tik' svakih 1,25 sekundi na Millerovu planetu predstavlja koliko vremena na Zemlji?",
       "answers": [
-        "Snjeguljica i sedam patuljak",
-        "Snjeguljica i 7 patuljaka",
-        "Snjeguljica",
-        "Snow White",
-        "Snowwhite",
-        "Snovvajt",
-        "Snov Vajt",
-        "Snow white and the 7 dwarfs",
-        "Snov vajt end d 7 dvarfs",
-        "Snov vajt end d sevn dvarfs",
-        "Snow white and the seven dvarfs"
+        "1 dan",
+        "24h",
+        "24 sata",
+        "Jedan dan",
+        "1 dan",
+        "1 day",
+        "One day",
+        "On Dej"
       ],
       "image": null
     },
     {
-      "id": "daily-b2b9c511",
+      "id": "daily-d8f3ae10",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je danski moreplovac u ruskoj službi 1728.g. prošao morskim prolazom između Sibira i Aljaske, koji je poslije nazvan njegovim prezimenom?",
+      "topic": "Povijest",
+      "question": "Koje je godine čovjek prvi put sletio na Mjesec?",
       "answers": [
-        "Vitus Bering",
-        "Bering",
-        "Vitus Jonassen Bering",
-        "Bering"
+        "1969"
       ],
       "image": null
     },
     {
-      "id": "daily-5a7b8598",
+      "id": "daily-d15094a0",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koja je univerzalna oznaka za 'brzinu'?",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko različitih rezultata može pokazati obična igraća kocka?",
       "answers": [
-        "V",
-        "Ve"
+        "6",
+        "Šest",
+        "Six",
+        "Siks",
+        "VI"
       ],
       "image": null
     }

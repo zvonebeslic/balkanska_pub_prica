@@ -1,429 +1,427 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-20",
-  "generatedAt": "2026-08-24T20:08:22.547Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-42f65a07",
+      "id": "daily-cabec328",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove animirana serija o dječaku genijalcu s velikom glavom i laboratorijem u svojoj sobi?",
+      "topic": "Moreplovci",
+      "question": "Koja zemljopisna koordinata pokazuje koliko se neko mjesto nalazi istočno ili zapadno od početnog meridijana?",
       "answers": [
-        "Dexterov laboratorij",
-        "Dexter's Laboratory"
+        "Zemljopisna dužina",
+        "Geografska dužina",
+        "Dužina",
+        "Longitude",
+        "Longituda"
       ],
       "image": null
     },
     {
-      "id": "daily-852c2e62",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "U kojem je romanu glavni lik kapetan Ahab opsjednut lovom na jednog kita?",
-      "answers": [
-        "Moby Dick",
-        "Mobi dik"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9bef468d",
+      "id": "daily-a24017b3",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Završi poznatu izreku: 'Tko pod drugim jamu kopa, sam u nju...?",
+      "question": "Koji je košarkaš izjavio 'Promašio sam više od 9000 šuteva u karijeri... I zato uspijevam'?",
       "answers": [
-        "Upada",
-        "Pada"
+        "Michael Jordan",
+        "Majkl Džordan",
+        "Jordan",
+        "Džordan"
       ],
       "image": null
     },
     {
-      "id": "daily-e5d6276e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koja se tehnologija prijenosa zvuka, podataka ili signala pomoću elektromagnetskih valova nekada nazivala 'krugoval'?",
-      "answers": [
-        "Radio",
-        "Radijo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-646cb3cb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Titov slavoluk u Rimu slavi uništenje i paljenje kojeg grada u Judeji?",
-      "answers": [
-        "Jeruzalema",
-        "Jeruzalem"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4f8071df",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Središte kojeg španjolskog grada je u potpunosti okruženo s više od 2km rimskih zidina iz 3.st., a ime nosi po keltskom bogu svjetlosti te ga poistovjećujemo s malenim šumarkom ili ostacima nakon izgaranja?",
-      "answers": [
-        "Lugo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-afbf1a18",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove junak odjeven u zeleno koji u većini igara serijala The Legend of Zelda spašava Zeldu?",
-      "answers": [
-        "Link"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-60319184",
+      "id": "daily-489dfa19",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Koji ples možemo spojiti s dizajnom jedne Adidasove nogometne lopte, prvi put napravljene za SP 1978. godine u Argentini?",
+      "question": "Zbog kojeg je igrača Zidane dobio crveni karton u finalu SP-a 2006.g.?",
       "answers": [
-        "Tango"
+        "Marca Materazzija",
+        "Marco Materazzi",
+        "Marka Materacija",
+        "Marko Materaci",
+        "Materazzija",
+        "Materazzi",
+        "Materacija",
+        "Materaci"
       ],
       "image": null
     },
     {
-      "id": "daily-86186a49",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Litva graniči sa 4 država, a površinom najveća od njih je koja?",
-      "answers": [
-        "Rusija",
-        "Rusia",
-        "Russia"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6e48bd24",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Slavni brod još slavnijeg moreplovca Jamesa Cooka, HMS Endeavour, je svoju ne tako slavnu budućnost nakon svjetskih plovidbi nastavio pod kojim drugim imenom?",
-      "answers": [
-        "Lord Sandwich",
-        "Lord Sendvič"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-04878d41",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "FloraFauna",
-      "question": "Plod kojeg drveta najviše podsjeća na ljudski mozak?",
-      "answers": [
-        "Oraha",
-        "Orah",
-        "Drvo Oraha",
-        "Orašak",
-        "Oraška"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-73b01c52",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Povijest",
-      "question": "Koji je rimski car legalizirao kršćanstvo Milanskim ediktom 313. godine?",
-      "answers": [
-        "Konstantin Veliki",
-        "Konstantin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f1e164dc",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Dvije države koje više ne postoje su nekada osvajale Europsko nogometno prvenstvo, jedna je Sovjetski Savez a druga koja?",
-      "answers": [
-        "Čehoslovačka",
-        "Čehoslovačke",
-        "Czechoslovakias",
-        "Czechoslovakia",
-        "Čehoslovakija",
-        "Čehoslovakije"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fe89525b",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Svaki put kada neko dijete kaže 'Ja ne vjerujem u vile', jedna vila negdje padne mrtva.... Poznata je izreka kojeg fiktivnog lika?",
-      "answers": [
-        "Petra Pana",
-        "Petar Pan",
-        "Pana",
-        "Pan",
-        "Pans",
-        "Pen",
-        "Pens",
-        "Piter Pen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6113d184",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koja se pustinja nalazi između Nila i Crvenog Mora, u sjeveroistočnom Sudanu?",
-      "answers": [
-        "Nubijska pustinja",
-        "Nubijska",
-        "Nubija",
-        "Nubia",
-        "Nubias",
-        "Nubium",
-        "Nubiums",
-        "Nubijum",
-        "Nubijums",
-        "Nubian",
-        "Nubijan",
-        "Nubians",
-        "Nubijans"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-eecfb226",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koji je glumac utjelovio Charlieja Chaplina u biografskom filmu iz 1992. godine?",
-      "answers": [
-        "Robert Downey Jr",
-        "Robert  Dovni Jr",
-        "Downey Jr",
-        "Dovni jr",
-        "Dovni Junior",
-        "Robert John Downey Jr"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-aa2e6749",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Svila se dobiva odmatanjem niti s čahure kojeg moljca?",
-      "answers": [
-        "Dudova svilca",
-        "Dudov svilac"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6b7481a4",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koji je američki predsjednik bio na vlasti tijekom većine Drugog svjetskog rata (do 1945.)?",
-      "answers": [
-        "Franklin Delano Roosevelt",
-        "Franklin Roosevelt",
-        "Frenklin Ruzvelt",
-        "FDR",
-        "Roosevelt",
-        "Ruzvelt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-007ff805",
+      "id": "daily-6b510670",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koja oznaka na škotskom whiskyju znači da je proizveden u jednoj destileriji od vode i sladnog ječma, bez miješanja whiskyja iz različitih destilerija?",
+      "question": "Plitka laboratorijska posuda za uzgoj mikroorganizama nosi prezime kojeg njemačkog bakteriologa?",
       "answers": [
-        "Single malt",
-        "Singl malt",
-        "Singl melt"
+        "Julius Richard Petri",
+        "Julius Petri",
+        "Petri",
+        "Petria",
+        "Petrija",
+        "Pitri",
+        "Pitrijeva",
+        "Pitris",
+        "Pitrija"
       ],
       "image": null
     },
     {
-      "id": "daily-1675526e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koliko je predsjednika SAD-a obnašalo dužnost za vrijeme života kraljice Elizabete II.?",
-      "answers": [
-        "17",
-        "17.",
-        "Sedamnaest",
-        "Seventeen",
-        "XVII.",
-        "XVII"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e99411e8",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Tijekom kojeg je rata u bitki kod Lutzena poginuo veliki švedski kralj Gustav II. Adolf",
-      "answers": [
-        "Tridesetogodišnjeg",
-        "Tridesetogodišnji",
-        "Thirty years war",
-        "Tirti jirs var",
-        "30ogodišnji",
-        "30",
-        "30 godina",
-        "30 years war",
-        "30 jirs var",
-        "30ogodišnjeg"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-28f75f72",
+      "id": "daily-d3bf6897",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koja je pjevačica izvela pjesmu 'My Heart Will Go On'?",
+      "topic": "Film",
+      "question": "Koji glumac tumači lik Iron Mana u Marvelovim filmovima?",
       "answers": [
-        "Celine Dion",
-        "Selin Dion",
-        "Dion",
-        "Céline Marie Claudette Dion"
+        "Robert Downey Jr.",
+        "Robert Dovnej Junior",
+        "Downey Jr.",
+        "Dovnej Junior",
+        "Downey",
+        "Dovni"
       ],
       "image": null
     },
     {
-      "id": "daily-75453eba",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Sport",
-      "question": "Kako se zove najpoznatija europska nogometna klupska liga koju organizira UEFA?",
-      "answers": [
-        "Liga prvaka",
-        "UEFA Champions League",
-        "Champions League",
-        "Liga Šampiona",
-        "Čempions Lig"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e7c090a7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kako se zove matematički skup brojeva koji uključuje i realne i imaginarne brojeve?",
-      "answers": [
-        "Kompleksni brojevi",
-        "Kompleksni"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e6c14781",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove pjesma s kojom je ABBA pobijedila na Euroviziji 1974. godine?",
-      "answers": [
-        "Waterloo",
-        "Vaterlo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8944eb38",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Sport",
-      "question": "Kako se naziva najviši rang engleskog nogometa koji je osnovan 1992.?",
-      "answers": [
-        "Premier League",
-        "Premjer Lig",
-        "Premiership",
-        "Premjeršip"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-325fa6b5",
+      "id": "daily-02994b0d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je arapski moreplovac i pisac iz 15. stoljeća, poznat pod nadimkom Lav mora, napisao važne priručnike o plovidbi Indijskim oceanom?",
+      "question": "Koji je francuski književnik u romanu „Dvadeset tisuća milja pod morem” doveo podmornicu Nautilus do Vanikora, mjesta brodoloma La Pérouseove ekspedicije i njezinih brodova Boussole i Astrolabe?",
       "answers": [
-        "Ahmad ibn Majid",
-        "Ahmed ibn Madžid",
-        "Ahmad bin Majid",
-        "Ibn Majid",
-        "Ibn Madžid",
-        "Majid",
-        "Madžid"
+        "Jules Verne",
+        "Žil Vern",
+        "Jul Vern",
+        "Jules Vern",
+        "Verne",
+        "Vern"
       ],
       "image": null
     },
     {
-      "id": "daily-9fa6ef3d",
+      "id": "daily-9c7185c8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Tko je režirao 'Krupnu ribu' (Big Fish)?",
+      "answers": [
+        "Tim Burton",
+        "Burton",
+        "Barton"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6580dad7",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Koji je sveti grad kršćanstva i judaizma u kojem se nalazi Bazilika Svetog Groba i Zid plača?",
+      "answers": [
+        "Jeruzalem",
+        "Jerusalem"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-edb01dab",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'Homo homini lupus', odnosno 'Čovjek je čovjeku vuk', potječe još iz antike. Koji ju je rimski komediograf zapisao stoljećima prije nego što ju je proslavio Thomas Hobbes?",
+      "answers": [
+        "Plaut",
+        "Plautus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6351e3c4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji je ratnik iz serijala videoigara God of War, prepoznatljiv po blijedoj koži i crvenoj tetovaži, u prvim igrama vodio krvave sukobe s bogovima grčke mitologije?",
+      "answers": [
+        "Kratos",
+        "Cratos"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-44437467",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojoj se pariškoj katedrali Napoleon 1804.g. okrunio za francuskog cara, uzevši krunu pred papom Pijem VII. i položivši je na vlastitu glavu?",
+      "answers": [
+        "Notre Dame",
+        "Noter dam",
+        "Noterdam",
+        "Notredame"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4d1b1d7e",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Svi znaju da su mnoge najljepše bajke svijeta napisala braća Grimm, no ne znaju im svi imena. Jedan se zvao Wilhelm, a drugi kako?",
+      "answers": [
+        "Jacob",
+        "Jakob",
+        "Jakov",
+        "Džejkob",
+        "Jacob Ludwig",
+        "Ludwig",
+        "Ludvig"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7c659a21",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koji je američki predsjednik glumio u filmovima 'Kraljeva ulica' (Kings Row), 'Laku noć, Bonzo' (Bedtime for Bonzo) i 'Put za Santa Fe' (Santa Fe Trail)?",
+      "question": "Koju ličnost tražimo, ako znamo da je izabran za gradonačelnika Buffaloa, za guvernera New Yorka i za predsjednika SAD-a?",
       "answers": [
-        "Ronald Reagan",
-        "Ronald Regan",
-        "Reagan",
-        "Regan",
-        "Rigen",
-        "Rigan",
-        "Regen"
+        "Grover Cleveland",
+        "Cleveland",
+        "Klivelend",
+        "Klevelend",
+        "Kleveland",
+        "Clevelanda",
+        "Klivelenda",
+        "Klevelenda",
+        "Klevelanda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-622a8ad0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Pod kojim imenom poznajemo regiju prostor vremena u kojem je velika masa zbijena u malu točku čija je gravitacijska akceleracija ili sila toliko jaka da joj ništa, niti čestice pa čak ni svjetlost ne može pobjeći?",
+      "answers": [
+        "Crna Rupa",
+        "Black Hole",
+        "Blek Hol",
+        "Crne Rupe",
+        "Black Holes",
+        "Blek Hols"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6499c287",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Kako se naziva teorija etike koja tvrdi da je moralno ono što donosi najveću sreću najvećem broju ljudi?",
+      "answers": [
+        "Utilitarizam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2f29ceaa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je 'službeni' glavni grad Bolivije?",
+      "answers": [
+        "Sucre",
+        "Sukre"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ae7f41a1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koju vrstu mitskog bića predstavlja ljubičasti protagonist serijala videoigara Spyro?",
+      "answers": [
+        "Zmaj",
+        "Dragon",
+        "Dregn",
+        "Dregon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d1f3daca",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji dio kuće možemo spojiti sa kemijskim spojem NaCl, odnosno Natrijevim Kloridom?",
+      "answers": [
+        "Kuhinju",
+        "Kuhinja",
+        "Kuhinjska",
+        "Kuhinjsko",
+        "Kuhinjski",
+        "Kitchen",
+        "Kičen",
+        "Kitches",
+        "Kičens"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2eadd881",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Za koje su glazbalo napisana '4 godišnja doba', ciklus od 4 koncerta Antonija Vivaldija?",
+      "answers": [
+        "Violinu",
+        "Violina",
+        "Viola",
+        "Violu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e6f75961",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji se američki predsjednik nalazi na novčanici od 5 dolara?",
+      "answers": [
+        "Abraham Lincoln",
+        "Linkoln",
+        "Lincoln"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e9f61a56",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Koji se bog u rimskoj i grčkoj mitologiji naziva isto?",
+      "answers": [
+        "Apolon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ea72f18b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja je ptica s Mauricijusa izumrla u 17. stoljeću?",
+      "answers": [
+        "Dodo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-69c303fc",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je fiktivni ribar Ivane Brlić Mažuranić došao do dvora Kralja Morskoga te postao njegova dvorska luda?",
+      "answers": [
+        "Palunko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-79e06df1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Glazba",
+      "question": "Emanuel Schikaneder je napisao libreto za koju operu praizvedenu 30.9.1791.?",
+      "answers": [
+        "Čarobna frula",
+        "Zauberflöte"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-7e812afa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kako se naziva tehnika izvođenja penala u kojoj igrač lagano 'potkopa' loptu po sredini gola dok golman pada u stranu?",
+      "answers": [
+        "Panenka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ab0d553",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji je talijanski grad, kao luka i važno uporište na Siciliji, u vrijeme rimske republike bio poznat pod imenom Lilibej?",
+      "answers": [
+        "Marsala",
+        "Maissala"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e85dad55",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Naziv koje čvrste pamučne tkanine, danas neraskidivo povezane s trapericama, potječe od francuskog izraza 'serge de Nîmes'?",
+      "answers": [
+        "Denim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-88c7934b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Dok se grčka flota skrivala iza obližnjeg otoka, jedan je Grk ostao pred Trojom i uvjerio stanovnike da je konj sveti dar koji će im donijeti zaštitu. Kako se zvao taj lukavi Grk?",
+      "answers": [
+        "Sinon",
+        "Sinopos"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3dfb39ac",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koje pasmine je bio pas Hachiko?",
+      "answers": [
+        "Akita",
+        "Akita Inu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d5312804",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koje se povijesno ime i danas često povezuje sa državom Iran, a nekada je označavalo jedno moćno carstvo koje je stolovalo na istom području?",
+      "answers": [
+        "Perzija",
+        "Persia",
+        "Perzijsko",
+        "Perzijci",
+        "Perzijska",
+        "Persian",
+        "Perža",
+        "Peržan",
+        "Peržian"
       ],
       "image": null
     }

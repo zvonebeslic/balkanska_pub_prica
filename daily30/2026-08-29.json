@@ -1,0 +1,466 @@
+{
+  "version": 2,
+  "date": "2026-08-29",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
+  "questionCount": 30,
+  "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-0f1e373b",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U knjizi 'Otok s blagom' koje prijevozno sredstvo Jim Hawkins i njegovi suputnici koriste kako bi stigli do Otoka s blagom?",
+      "answers": [
+        "Brod",
+        "Ship",
+        "Šip"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-10d50767",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja se životinja našla u videoigri u kojoj igrač njom upravlja te koja postaje sve duža dok skuplja hranu, pritom izbjegavajući sudar sa samom sobom?",
+      "answers": [
+        "Zmija",
+        "Snake",
+        "Snejk",
+        "Zmijica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5fc8a3f9",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Zemljopis",
+      "question": "Kojim se troslovnim imenom zove trokutasti planinski vijenac u sjevernom Nigeru?",
+      "answers": [
+        "Air",
+        "Ayar",
+        "Azbin",
+        "Abzin"
+      ],
+      "image": null,
+      "rarity": "platinum"
+    },
+    {
+      "id": "daily-6e6eb889",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Ako broj 50 povećamo za 100 %, koliko dobijemo?",
+      "answers": [
+        "100",
+        "Sto",
+        "Hundred",
+        "Handred",
+        "C"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-252930c2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Kako se zove grad-planet iz Ratova zvijezda, koji je sjedište Galaktičke Republike?",
+      "answers": [
+        "Coruscant",
+        "Koruskant"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-371e94c2",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Bebek, Tifa i Islamović su se izmijenili kao vokalisti koje rock grupe?",
+      "answers": [
+        "Bijelo Dugme",
+        "Bijelog Dugmeta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-03790942",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja biljka se nalazi na kovanici od  2 lipe?",
+      "answers": [
+        "Vinova loza",
+        "Loza"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8bee2e3c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "'Bože pravde' je ime himne koje balkanske države?",
+      "answers": [
+        "Srbija",
+        "Srbije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f1b13d9a",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Prezime kojeg američkog glumca i hrvača možemo poistovjetiti sa večernjim objedom iz starog Rima?",
+      "answers": [
+        "Cena"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d6161d8d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Tko je u finalu svjetskog nogometnog prvenstva 1966.g. zabio hat-trick u pobjedi Engleske protiv Zapadne Njemačke 4-2 te tako postao prvi nogometaš koji je zabio 3 gola u nekom od finala SP-a?",
+      "answers": [
+        "Geoff Hurst",
+        "Hurst",
+        "Hrst",
+        "Herst",
+        "Harst",
+        "Hast",
+        "Hest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7221eafb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Kako se zove pjevačica hita 'Thank U, Next'?",
+      "answers": [
+        "Ariana Grande",
+        "Grande",
+        "Ariana Grande Butera"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-88cc92ad",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koje je prezime nosio njemački feldmaršal koji je zapovijedao 6. armijom opkoljenom kod Staljingrada i predao se Sovjetima početkom 1943.g.?",
+      "answers": [
+        "Paulus",
+        "Friedrich Paulus",
+        "Fridrih Paulus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4a1285cd",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "U kojem filmu iz 2001. igraju George Clooney i Brad Pitt kao pljačkaši kockarnica?",
+      "answers": [
+        "Oceanovih 11",
+        "Oceanovih jedanaest",
+        "Oceans eleven",
+        "Ošens eleven"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7b7a3442",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Po kojem je talijanskom fizičaru nazvana jedinica za mjerenje električnog napona?",
+      "answers": [
+        "Alessandru Volti",
+        "Alessandro Volta",
+        "Volti",
+        "Volta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e79b042f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 15. predsjednik SAD-a, prezimena Buchanan, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "JB"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d27c7ded",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Mladog Potrku je glumio Stjepan Puljić. Tko je glumio odraslog Matana?",
+      "answers": [
+        "Rade Serbedžija",
+        "Šerbedžija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-55a38aef",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove vitez koji pomaže pravom princu u knjizi Kraljević i Prosjak, tijekom njegovih pustolovina izvan dvora?",
+      "answers": [
+        "Miles Hendon",
+        "Hendon",
+        "Handon",
+        "Majls Handon",
+        "Majls Hendon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-73bb3508",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Iako je najveći dio karijere branio u Juventusu, koji je nogometni vratar svoju profesionalnu karijeru započeo i završio u Parmi?",
+      "answers": [
+        "Gianluigi Buffon",
+        "Đanluiđi Bufon",
+        "Buffon",
+        "Bufon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cdbdc7ac",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Čudotvorne pripravke Wonka-Vite i Vita-Wonk koji pomlađuju, odnosno postaruju posjeduje koji fikrivni lik Roalda Dahla?",
+      "answers": [
+        "Willy Wonka",
+        "Vili Vonka",
+        "Wonka",
+        "Vonka",
+        "Willy",
+        "Vili"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-707e3746",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je španjolski svećenik i brodolomac, prethodno godinama zatočen među Majama, Cortésu služio kao prevoditelj između španjolskog i jezika Maja?",
+      "answers": [
+        "Jerónimo de Aguilar",
+        "Žeronimo de Agiljar",
+        "Gerónimo de Aguilar",
+        "Aguilar",
+        "Agilar",
+        "Agiljar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6cb8f7e9",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Kako se zvao bodež koji je vojnicima starog Rima služio kao dodatno oružje, u slučaju iznenadnih situacija?",
+      "answers": [
+        "Pugio",
+        "Puđo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-258f1698",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Sustav dodjeljivanja jedne, dvije ili tri zvjezdice vrhunskim restoranima potječe od vodiča kojeg francuskog proizvođača automobilskih guma?",
+      "answers": [
+        "Michelin",
+        "Mišelin",
+        "Michelina",
+        "Mišelina",
+        "Michelinov",
+        "Mišelinov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-baf27b5a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Na kojem je otoku Tesla sagradio Wardenclyff Tower?",
+      "answers": [
+        "Long Island",
+        "Long Ajlend",
+        "Dugi Otok",
+        "Long Islands",
+        "Long Ajlends",
+        "Dugom Otoku"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7492e9ac",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koje je godine izvorno objavljena videoigra Age of Empires II, nastavak popularnog povijesnog strateškog serijala smještenog prvenstveno u srednji vijek?",
+      "answers": [
+        "1999",
+        "Tisuću devetsto devedeset devete",
+        "Hiljadu devet stotina devedeset devet",
+        "Iljadu devesto devedeset devet",
+        "MCMXCIX"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60a610e1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je perzijski kralj tijekom pohoda na Grčku dao izgraditi dva pontonska mosta od povezanih brodova preko Helesponta, a prema antičkim grčkim izvorima nakon što je oluja uništila prve mostove naredio da se more simbolično išiba i okuje lancima?",
+      "answers": [
+        "Xerkso",
+        "Kserkso",
+        "Xerxo",
+        "Kserxo",
+        "Xerkso prvi",
+        "Kserkso prvi",
+        "Xerxo prvi",
+        "Kserxo prvi",
+        "Xerkso Veliki",
+        "Kserkso Veliki",
+        "Xerxo Veliki",
+        "Kserxo Veliki",
+        "Xerkso I.",
+        "Kserkso I.",
+        "Xerxo I.",
+        "Kserxo I.",
+        "Xerkso 1.",
+        "Kserkso 1.",
+        "Xerxo 1.",
+        "Kserxo 1.",
+        "Xerkso 1. Veliki",
+        "Kserkso 1. Veliki",
+        "Xerxo 1. Veliki",
+        "Kserxo 1. Veliki",
+        "Xerkso Prvi Veliki",
+        "Kserkso Prvi Veliki",
+        "Xerxo Prvi Veliki",
+        "Kserxo Prvi Veliki",
+        "Xerkso First",
+        "Kserkso First",
+        "Xerxo First",
+        "Xerkso 1st",
+        "Kserkso 1st",
+        "Kserxo First"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2d046d9f",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja životinja povezuje grbove gradova Tallina i Praga?",
+      "answers": [
+        "Lav"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e0cfb225",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kad bismo vrijeme mjerili u hercima, koliko bi herca prošlo u jednoj sekundi?",
+      "answers": [
+        "Jedan",
+        "1",
+        "I",
+        "Jedna",
+        "Jedno",
+        "One",
+        "Van",
+        "Von",
+        "Eine",
+        "Ein",
+        "Ajne",
+        "Ajn",
+        "Ajnc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-584accdf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Najviši vulkan u Europi pripada Španjolskoj, nalazi se na Kanarima, visok je 3718m a zove se kako?",
+      "answers": [
+        "Teide",
+        "Tejde",
+        "Teida",
+        "Tejda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e8f88d4e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Bitka kod Trafalgara odvijala se uz obalu koje države?",
+      "answers": [
+        "Španjolska",
+        "Španjolske",
+        "Spains",
+        "Spejns",
+        "Espania",
+        "Espanja",
+        "Španija",
+        "Španiji",
+        "Esp",
+        "Spa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9e5156ea",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji američki predsjednik, samo 2 mjeseca prije svoje inauguracije doživljava željezničku nesreću u kojoj mu pogiba 11-ogodišnji sin?",
+      "answers": [
+        "Franklin Pierce",
+        "Frenklin Pirs",
+        "Pierce",
+        "Pirs"
+      ],
+      "image": null
+    }
+  ]
+}

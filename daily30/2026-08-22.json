@@ -1,393 +1,458 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-22",
-  "generatedAt": "2026-08-24T20:08:22.547Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-1639448e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Koji je proslavljeni hrvatski košarkaš nosio nadimak 'Košarkaši Mozart'?",
-      "answers": [
-        "Dražen Petrović",
-        "Petrović"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fd273337",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "Kako se zove kraljevstvo iz filma 'Snježno kraljevstvo' (Frozen)?",
-      "answers": [
-        "Arendelle",
-        "Arendel"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e3c152b7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koliko različitih oblika možemo slagati u igrici Tetris?",
-      "answers": [
-        "7",
-        "Seven",
-        "Sedam",
-        "VII"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a17714b9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Izraz 'Kruha i igara' kritizirao je rimsko društvo koje se zadovoljavalo hranom i zabavom umjesto političkom slobodom. Koji ga je rimski satiričar proslavio?",
-      "answers": [
-        "Juvenal",
-        "Juvenalis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c53418ad",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Thomas Tuchel je s Chelseom osvojio čak i Ligu Prvaka ali je u tom klubu otkaz dobio nakon 1-0 poraza u LP, od kojeg kluba?",
-      "answers": [
-        "Dinamo Zagreb",
-        "Dinama iz Zagreba",
-        "Dinamo Zagreba",
-        "Dinama Zagreba",
-        "Dinama Zagreb",
-        "Dinama",
-        "Dinamo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d38c696e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "Koji film iz 2018. prati život pjevača Freddieja Mercuryja te grupe Queen?",
-      "answers": [
-        "Bohemian Rhapsody",
-        "Bohemijan Rapsodi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1da0fc72",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Tko je otpjevao pjesmu 'Imagine' koja se našla i na istoimenom albumu iz 1971.?",
-      "answers": [
-        "John Lennon",
-        "Džon Lenon",
-        "Lennon",
-        "Lenon",
-        "John Winston Lennon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a3672ca8",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvao jedan od prvih potomaka Apsua i Tijamat, brat Lahamu, koji u mezopotamskoj kozmogoniji predstavlja prvu generaciju božanstava?",
-      "answers": [
-        "Lahmu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-760eb213",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove legendarna britanska rock grupa čiji su članovi Mick Jagger i Keith Richards?",
-      "answers": [
-        "The Rolling Stones",
-        "Rolling Stones",
-        "Roling Stons",
-        "Roling Stons"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4a87130c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se naziva politički sustav u kojem je sva vlast u rukama jednog vladara koji tu vlast nasljeđuje?",
-      "answers": [
-        "Monarhija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-584accdf",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Najviši vulkan u Europi pripada Španjolskoj, nalazi se na Kanarima, visok je 3718m a zove se kako?",
-      "answers": [
-        "Teide",
-        "Tejde",
-        "Teida",
-        "Tejda"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-53d8b6a5",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Koji je zaljev u Sydneyu poznat po tome što je istraživaču Jamesu Cooku ponudio obilje novih biljnih vrsta?",
-      "answers": [
-        "Botany bay",
-        "Botani bej",
-        "Botani zaljev"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-44de4de8",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je njemački izumitelj 1886.g. patentirao Motorwagen, vozilo koje se često smatra prvim praktičnim automobilom pokretanim motorom s unutarnjim izgaranjem?",
-      "answers": [
-        "Karl Benz",
-        "Carl Benz",
-        "Karl Benc",
-        "Benz",
-        "Benc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-820e0c6b",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Sport",
-      "question": "Kako se zove poznati rally vozač iz Finske, višestruki svjetski prvak u WRC-u iz '86 i '87 te '91 i '93?",
-      "answers": [
-        "Juha Kankkunen",
-        "Kankkunen",
-        "Kankunen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d0127285",
+      "id": "daily-7e33f9ea",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 19. predsjednik SAD-a, prezimena Hayes, potpisao samo inicijalima, dobili bi koja slova?",
+      "question": "Tko je 4. ožujka (marta) 1861.g. predao bijelu kuću Abrahamu Lincolnu?",
       "answers": [
-        "RBH"
+        "James Buchanan",
+        "Buchanan",
+        "Džejms Bukenen",
+        "Džejms Bjukenen",
+        "Bukenen",
+        "Bjukenen"
       ],
       "image": null
     },
     {
-      "id": "daily-512e9e6e",
+      "id": "daily-be669326",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Prvi trgovci iz rimskog carstva koji su dospjeli do Kine su poslani za vrijeme careva Antonina Pia i Marka Aurelija, a tada je kinom vladala koja dinastija?",
+      "topic": "Zemljopis",
+      "question": "Kako nazivamo graničnu zonu u Africi između Sahare na sjeveru i plodnije regije Sudan na jugu?",
       "answers": [
-        "Han"
+        "Sahel"
       ],
       "image": null
     },
     {
-      "id": "daily-ad73fdf1",
+      "id": "daily-86f9db58",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koliko igrača nastupa za jedan nogometni klub u jednoj utakmici?",
+      "topic": "Film",
+      "question": "Tko u filmu 'Pobješnjeli Max: Divlja cesta', glumi imperatoricu Furiosu?",
       "answers": [
-        "11",
-        "Jedanaest",
-        "Jedanest",
-        "Eleven",
-        "XI"
+        "Charlize Theron",
+        "Šarliz Teron",
+        "Theron",
+        "Teron"
       ],
       "image": null
     },
     {
-      "id": "daily-5d39755a",
+      "id": "daily-67fb80e3",
       "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U kojoj fiktivnoj šumi, nakon prestanka čarolije, nestaje dvor, starješina, domaći i snaha a ostaju samo majka i sin?",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove duh u arkadnoj videoigri Ms. Pac-Man koji je zamijenio Clydea iz originalne verzije Pac-Mana?",
       "answers": [
-        "Šumi Striborovoj",
-        "Striborovoj",
-        "Stribors",
-        "Stribor",
-        "Stribora"
+        "Sue",
+        "Su",
+        "Sju"
       ],
       "image": null
     },
     {
-      "id": "daily-c5d0817d",
+      "id": "daily-406198a8",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Ako pričamo o 4 nebeske kineske životinje, spomenuti ćemo Tigra, Zmaja, Pticu i koga još?",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je najvažniji i najjednostavniji alifatski keton?",
       "answers": [
-        "Kornjaču"
+        "Aceton"
       ],
       "image": null
     },
     {
-      "id": "daily-861ba916",
+      "id": "daily-a2c9547d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja se grabežljiva riba pojavljuje u horor filmu Aleksandrea Aje iz 2010.?",
+      "answers": [
+        "Piranja",
+        "Piranje",
+        "Piranha"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ad18f4c2",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Koji je grčki matematičar i izumitelj, govoreći o principu poluge, navodno rekao da bi uz odgovarajući oslonac mogao pomaknuti Zemlju?",
+      "question": "U kojoj se situaciji, prema narodnoj mudrosti, najbolje prepoznaje pravi prijatelj?",
       "answers": [
-        "Arhimed"
+        "U nevolji",
+        "Nevolji",
+        "Nevolja"
       ],
       "image": null
     },
     {
-      "id": "daily-6271a2a4",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se naziva roman Fjodora Dostojevskog o studentu Raskoljnikovu koji počini ubojstvo iz ideje o nadčovjeku?",
-      "answers": [
-        "Zločin i kazna"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-960956bf",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koji je glavni grad Bahreina?",
-      "answers": [
-        "Manama",
-        "Al Manama"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-edff9502",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Znanost",
-      "question": "Kako se zove proces pretvaranja vode u paru?",
-      "answers": [
-        "Isparavanje",
-        "evaporacija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-60dff567",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je francuski grad 1429.g. postao mjesto prvog velikog uspjeha Ivane Orleanske u Stogodišnjem ratu, kada je njezin dolazak pomogao prekinuti englesku opsadu i dramatično podići moral gotovo poražene Francuske?",
-      "answers": [
-        "Orleans",
-        "Orlean",
-        "Orlen",
-        "Orlens"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-76e35d80",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "FloraFauna",
-      "question": "Koji plod pada s kokosove palme?",
-      "answers": [
-        "Kokosov orah"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-707e3746",
+      "id": "daily-d99d3deb",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je španjolski svećenik i brodolomac, prethodno godinama zatočen među Majama, Cortésu služio kao prevoditelj između španjolskog i jezika Maja?",
+      "question": "Koji je portugalski putnik potkraj 15. stoljeća kopnenim putem stigao do Indije i Etiopije te kralju Ivanu II. slao podatke korisne za pronalazak pomorskog puta prema Aziji?",
       "answers": [
-        "Jerónimo de Aguilar",
-        "Žeronimo de Agiljar",
-        "Gerónimo de Aguilar",
-        "Aguilar",
-        "Agilar",
-        "Agiljar"
+        "Pêro da Covilhã",
+        "Pero da Covilhã",
+        "Pero da Covilha",
+        "Pêro da Covilha",
+        "Covilhã",
+        "Covilha",
+        "Pedro da Kovilja",
+        "Pedro Kovilja",
+        "Kovilja"
       ],
       "image": null
     },
     {
-      "id": "daily-9a9cbf30",
+      "id": "daily-bfb6ce27",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove veliki hrvatski pjesnik i pisac, autor 'Horvatske domovine' iz 19. stoljeća?",
+      "topic": "Nogomet",
+      "question": "U koji je talijanski klub iz Crvene Zvezde prešao Dejan Savićević?",
       "answers": [
-        "Antun Mihanović",
-        "Mihanović"
+        "Milan",
+        "Milano"
       ],
       "image": null
     },
     {
-      "id": "daily-617cf30c",
+      "id": "daily-71d86667",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva intenzivna plava boja čiji se skupocjeni pigment tradicionalno proizvodio od minerala lapis lazuli?",
+      "answers": [
+        "Ultramarin",
+        "Ultramarinska",
+        "Ultramarine"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dddb6034",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
+      "topic": "AntickiRim",
+      "question": "Koji nadimak rimski car Klaudije daje svom sinu nakon što osvoji Britaniju?",
       "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
+        "Britanik",
+        "Britannicus"
       ],
       "image": null
     },
     {
-      "id": "daily-ca9ce53f",
+      "id": "daily-39c42383",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje se španjolsko osvježavajuće piće u Valenciji tradicionalno proizvodi od tigrovih oraščića, odnosno gomolja biljke Cyperus esculentus?",
+      "answers": [
+        "Horchata",
+        "Orchata",
+        "Orčata",
+        "Horčata"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-af6e32bf",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Koji bend polaže autorska prava na pjesmu 'Mr. Brightside'?",
+      "answers": [
+        "The Killers",
+        "D Kilers"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-5078eb17",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Koji je američki glumac utjelovio lik Rockyja Balboe u filmskom serijalu 'Rocky'?",
+      "topic": "Znanost",
+      "question": "Kemijski element sa simbolom Mg je otkrio koji engleski znanstvenik?",
       "answers": [
-        "Sylvester Stallone",
-        "Silvestar Stalone",
-        "Stallone"
+        "Humphry Davy",
+        "Hampri Dejvi",
+        "Hamfri Dejvi",
+        "Davy",
+        "Dejvi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f1162b72",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Tko glumi Dianu Prince u filmovima o Wonder Woman iz 2017. i 2020.?",
+      "answers": [
+        "Gal Gadot",
+        "Gal Gadot Varsano",
+        "Gadot"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-2c47fb71",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'Koliko ljudi, toliko...' Čega, prema poslovici, ima jednako mnogo kao ljudi?",
+      "answers": [
+        "Ćudi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8ea67e84",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je potpisnik američke deklaracije neovisnosti izumio gromobran?",
+      "answers": [
+        "Benjamin Franklin",
+        "Bendžamin Frenklin",
+        "Benjamin Frenklin",
+        "Franklin",
+        "Frenklin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4c6d2f8d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kojeg prezimena su bila polubraća koja su igrala jedan protiv drugog na Svjetskom nogometnom prvenstvu 2010.g.? Jedan za Njemačku a drugi za Ganu.",
+      "answers": [
+        "Boateng",
+        "Boteng",
+        "Bateng"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1b570749",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "U kojoj su današnjoj državi stari Rimljani osnovali gradove Emerita Augusta, Tarraco i Hispalis?",
+      "answers": [
+        "Španjolska",
+        "Španjolskoj",
+        "Spain",
+        "Espania",
+        "Španiji",
+        "Espania",
+        "Espanji",
+        "Španija",
+        "Spejn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2eb89673",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koje jezero čini 20% teritorija države Malavi?",
+      "answers": [
+        "Malavi",
+        "Malaui",
+        "Malawi",
+        "Nijassa",
+        "Nyassa",
+        "Nijasa",
+        "Niassa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-290e9856",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Na kojem je nogometnom stadionu ekipa Atletico Madrida uvijek težak domaćin za pobijediti?",
+      "answers": [
+        "Metropolitano",
+        "Metropolitanu",
+        "Metropolitanos",
+        "Wanda Metropolitano",
+        "Vanda Metropolitano"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1945d409",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojem je malenom talijanskom gradu potpisan mirovnim sporazum iz 1797.g. kojim je Napoleon završio svoj prvi talijanski pohod i prisilio Austriju da prizna velike francuske dobitke?",
+      "answers": [
+        "Campoformio",
+        "Campoformido",
+        "Kampoformio",
+        "Kampoformido"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-24b3f7a1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojem romanu Marka Twaina kraljević završava na londonskim ulicama, a prosjak u kraljevskoj palači?",
+      "answers": [
+        "Kraljević i Prosjak",
+        "Kraljević Prosjak",
+        "Kraljević i Prosjačić",
+        "Kraljević Prosjačić",
+        "Kraljević i Prosijak",
+        "Kraljević Prosijak",
+        "Kralj i Prosjak",
+        "Kralj Prosjak",
+        "Kralj i Prosjačić",
+        "Kralj Prosjačić",
+        "The Prince and the Pauper",
+        "Prince and the Pauper",
+        "D princ end d pouper",
+        "Princ end d pouper"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9721b93a",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U romanu Julesa Verna 'Put oko svijeta u 80 dana' na kojem kontinentu Phileas Fogg spašava Aoudu, u koju se zaljubi te je kasnije oženi?",
+      "answers": [
+        "Aziji",
+        "Azija",
+        "Asia",
+        "Asiji",
+        "Asii",
+        "Ejža",
+        "Ajža",
+        "Ejžas",
+        "Ajžas",
+        "Asias"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-90444f65",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja grana zoologije se bavi proučavanjem mekušaca?",
+      "answers": [
+        "Malakologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-19d0ad1d",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Iz koje rock grupe je nastala rock grupa Bijelo Dugme?",
+      "answers": [
+        "Jutro",
+        "Grupa Jutro",
+        "Rock grupa Jutro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2f1d139b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je vladar iz dinastije Habsburg u 16. stoljeću nosio titulu kralja Španjolske i cara Svetog Rimskog Carstva, vladajući golemim teritorijima koji su obuhvaćali velik dio Europe, ali i novootkrivene posjede u Americi i Aziji (poput Filipina), zbog čega je njegova država dobila povijesni nadimak \"carstvo u kojem sunce nikada ne zalazi\" jer je u svakom trenutku dana barem na jednom dijelu njegova teritorija bilo dnevno svjetlo?",
+      "answers": [
+        "Karlo V. Habzburški",
+        "Charles V Habsburgs",
+        "Karlo 5. Habzburški",
+        "Charles 5. Habsburgs",
+        "Karlo peti Habzburški",
+        "Charles peti Habsburgs",
+        "Karlo 5th Habsburgs",
+        "Charles 5th Habsburgs",
+        "Čarls 5. Habzburg",
+        "Čarls V. Habzburgs",
+        "Čarls peti Habzburški",
+        "Čarls 5th Habsburgs",
+        "Čarls fifth Habsburgs",
+        "Charles fifth Habsburgs",
+        "Karlo V.",
+        "Charles V",
+        "Karlo 5.",
+        "Charles 5.",
+        "Karlo peti",
+        "Charles peti",
+        "Karlo 5th",
+        "Charles 5th",
+        "Čarls 5.",
+        "Čarls V.",
+        "Čarls peti",
+        "Čarls 5th",
+        "Čarls fifth",
+        "Charles fifth"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c33880b8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koju pojavu definiramo kao mehanički val nastao vibracijom tijela koji se širi kroz zrak, vodu ili druge tvari?",
+      "answers": [
+        "Zvuk",
+        "Sound",
+        "Saund"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9c19627c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je japanska gaming kompanija proizvela konzole Mega Drive i Dreamcast, a njezin je najpoznatiji lik plavi jež Sonic?",
+      "answers": [
+        "Sega"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-24648059",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Vikinzi su navodno stoljećima prije Kolumba stigli do Sjeverne Amerike. Kako se zvao sin Erika Crvenog kojeg sage povezuju s Vinlandom?",
+      "answers": [
+        "Leif Erikson",
+        "Leif",
+        "Erikson"
       ],
       "image": null
     }

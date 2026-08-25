@@ -1,427 +1,437 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-25",
-  "generatedAt": "2026-08-24T22:37:30.970Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-cc3c4dd6",
+      "id": "daily-e43c1dee",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Savez Treće koalicije u ratu protiv Napoleonove Francuske su činile Velika Britanija, Švedska, Napuljska Kraljevina, Austrija i koje još carstvo?",
+      "question": "Kako su se zajedničkim imenom nazivali grčki ratnici koji su pod vodstvom Agamemnona krenuli prema Troji?",
       "answers": [
-        "Rusko",
-        "Rusija",
-        "Rusko Carstvo",
-        "Carska Rusija",
-        "Russia"
+        "Ahejci",
+        "Aheji"
       ],
       "image": null
     },
     {
-      "id": "daily-0cd62ffa",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Kako zovemo ekološki odnos između dva ili više različitih organizama u kojem jedna strana ima korist dok je druga neutralna?",
-      "answers": [
-        "Komenzalizam"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-af94735f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koju vrstu kape možemo pronaći na grbovima Kolumbije, Argentine, Nikaragve te Kube?",
-      "answers": [
-        "Frigijsku",
-        "Frigijska",
-        "Frigija",
-        "Frigias",
-        "Frigijas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
-      "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8f06b8f6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Na Galápagosu postoji vrsta velikih gmazova čija se različitost među otocima posebno isticala. O kojoj je životinji riječ?",
-      "answers": [
-        "Kornjača",
-        "Kornjače",
-        "Turtle",
-        "Turtl"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-79cb8194",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja je životinja potvrdila nijekanje sv. Petra da pozna Isusa Krista?",
-      "answers": [
-        "Pijetao",
-        "Pijevac",
-        "Oroz",
-        "Kokot"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-62c550ca",
+      "id": "daily-00d1f4d3",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Kako se zove najveći škotski derbi između Celtica i Rangersa?",
+      "question": "Na kojem se nogometnom stadionu, prije svake utakmice pjeva 'himna', You'll never walk alone?",
       "answers": [
-        "Old Firm",
-        "Old Frm"
+        "Anfield",
+        "Ejnfild",
+        "Anfild",
+        "Enfild",
+        "Anfieldu",
+        "Ejnfildu",
+        "Anfildu",
+        "Enfildu"
       ],
       "image": null
     },
     {
-      "id": "daily-b15d5835",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "'Sav je svijet pozornica, a svi muškarci i žene tek glumci' poznata je misao kojeg književnika?",
-      "answers": [
-        "Williama Shakespearea",
-        "Vilijama Šekspira",
-        "Shakespearea",
-        "Šekspira",
-        "Šekspir"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ec0b277f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Kako se zove grad domaćin ljetnih Olimpijskih igara 2012. godine?",
-      "answers": [
-        "London"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4138c917",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Koji planet ima najviše potvrđenih prirodnih satelita u Sunčevu sustavu?",
-      "answers": [
-        "Jupiter"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ad4a2c92",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove izmišljeni američki grad u kojem se odvija najveći dio radnje videoigre Mafia II?",
-      "answers": [
-        "Empire Bay",
-        "Empajer Bej",
-        "Carski zaljev"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fe5d65ae",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Peripatička škola je svoja učenja temeljila na djelima kojeg grčkog filozofa?",
-      "answers": [
-        "Aristotela",
-        "Aristotel",
-        "Aristotelesa",
-        "Aristoteles"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-11231b51",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Tko pjeva pjesmu 'Flowers', hit iz 2023. godine?",
-      "answers": [
-        "Miley Cyrus",
-        "Majli Sajrus",
-        "Cyrus",
-        "Sajrus",
-        "Miley Ray Cyrus",
-        "Destiny Hope Cyrus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-31b92bc1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "'Matematička načela prirodne filozofije' (Philosophiae naturalis principia mathematica) je slavno djelo kojeg engleskog  znanstvenika?",
-      "answers": [
-        "Isaaca Newtona",
-        "Isaac Newton",
-        "Isak Njutn",
-        "Izaka Njutna",
-        "Newtona",
-        "Njutna"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5ba60391",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Likove iz koje društvene igre Alisa susreće u svojoj prvoj pustolovini u Zemlji čudesa?",
-      "answers": [
-        "Kartanja",
-        "Kartanje",
-        "Karte",
-        "Karata",
-        "Cards",
-        "Kards",
-        "Card",
-        "Kard",
-        "Karti",
-        "Karta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f62b3ca0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvala posljednja prijestolnica Asirskog Carstva, koju su 612.g. pr. Kr. osvojili Međani i Babilonci?",
-      "answers": [
-        "Niniva",
-        "Ninive",
-        "Ninua"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-97316678",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Tko je napisao knjigu Charlie i tvornica čokolade?",
-      "answers": [
-        "Roald Dahl",
-        "Dahl",
-        "Dal",
-        "Rouald Dal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a945965e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Kojeg je francuskog filozofa prosvjetiteljstva proslavila obrana slobode mišljenja, zbog čega mu se često, premda pogrešno, pripisuje misao 'Ne slažem se s onim što govoriš, ali branit ću tvoje pravo da to kažeš'?",
-      "answers": [
-        "Voltaire",
-        "Volter",
-        "François Marie Arouet",
-        "Fransoa Mari Arue",
-        "Arue",
-        "Arouet"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-732b6c64",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koji film Wes Andersona prati radnju u poznatom europskom hotelu?",
-      "answers": [
-        "The Grand Budapest Hotel",
-        "Grand Budapest Hotel",
-        "Grand Budapešt Hotel"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c7c0c2bb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove egipatski bog sa glavom šakala, zaštitnik balzamiranja i zagrobnog života?",
-      "answers": [
-        "Anubis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-eb15dac8",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "AntickiRim",
-      "question": "Tko je do svoje smrti bio suvladar svog brata i rimskog cara Karakale?",
-      "answers": [
-        "Geta",
-        "Lucije"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c84e2387",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Tko je bio na čelu galske vojske kada su 390.g. provalili i opljačkali Rim?",
-      "answers": [
-        "Bren",
-        "Brennus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-177fb719",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Tko je bio 40-i predsjednik SAD-a ali i 33 guverner Kalifornije?",
-      "answers": [
-        "Ronald Reagan",
-        "Ronald Regan",
-        "Reagan",
-        "Regan",
-        "Rigen",
-        "Rigan",
-        "Regen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-617cf30c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
-      "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e15d36b9",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja je biljka jedina vrsta agave dopuštena za proizvodnju tequile, a prepoznatljiva je po velikoj rozeti dugih, šiljastih listova?",
-      "answers": [
-        "Plava agava",
-        "Blue agave",
-        "Blue Weber agave",
-        "Weber blue agave",
-        "Agave tequilana",
-        "Agave tequilana Weber",
-        "Weberova agava",
-        "Plava",
-        "Blue",
-        "Weberova",
-        "Weber",
-        "Veberova",
-        "Veber"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b5a2e81e",
+      "id": "daily-0c93ba81",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kako se naziva prednji dio broda koji prvi siječe valove?",
+      "question": "Koji je flamanski kartograf 1569.g. predstavio projekciju karte koja je moreplovcima omogućavala prikazivanje stalnog smjera plovidbe ravnom linijom?",
       "answers": [
-        "Pramac"
+        "Gerardus Mercator",
+        "Gerhard Mercator",
+        "Gerard Merkator",
+        "Mercator",
+        "Merkator"
       ],
       "image": null
     },
     {
-      "id": "daily-1bdb53fb",
+      "id": "daily-281806ae",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Kako se zove brod u filmu 'Osmi putnik' (Alien)?",
+      "answers": [
+        "Nostromo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fc2d3cdc",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove popularni TV serijal o učitelju kemije koji postaje proizvođač metamfetamina?",
+      "topic": "Zemljopis",
+      "question": "Ouguija je službeno sredstvo plaćanja u kojoj azijskoj državi?",
       "answers": [
-        "Breaking Bad",
-        "Na putu prema dolje",
-        "Brejking Bed"
+        "Mauritaniji",
+        "Mauretaniji",
+        "Mauritanija",
+        "Mauretanija",
+        "Mauretania",
+        "Mauritania",
+        "Mauretanii",
+        "Mauritanii"
       ],
       "image": null
     },
     {
-      "id": "daily-04917e88",
+      "id": "daily-b28ef1bb",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliko je 50 % od 50?",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Tko je uz Bruta predvodio urotu protiv Julija Cezara u kojoj je Julije i ubijen?",
       "answers": [
-        "25",
-        "Dvadeset pet",
-        "Twenty five",
-        "Tventi fajv",
-        "XXV"
+        "Kasije",
+        "Kasije Longin",
+        "Gaj Kasije Longin",
+        "Longin"
       ],
       "image": null
     },
     {
-      "id": "daily-fe75dad8",
+      "id": "daily-a95ae87d",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove poznati američki pisac znanstvene fantastike autor romana '1984' i 'Životinjska farma'?",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Tko je rimska božica ljubavi i plodnosti?",
       "answers": [
-        "George Orwell",
-        "Orwell",
-        "Gorg Orvel",
-        "Orvel"
+        "Venera"
       ],
       "image": null
     },
     {
-      "id": "daily-5f956bfa",
+      "id": "daily-ec5185bd",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Brana koja tvori jezero Mead i bar na kratko zaustavlja rijeku Colorado dobila je ime po prezimenu jednog američkog predsjednika, a ono glasi kako?",
+      "question": "Invaziju na koji kubanski zaljev je lansirao JFK 1961.g.?",
       "answers": [
-        "Hoover",
-        "Hover",
-        "Huver"
+        "Zaljev svinja",
+        "Svinja",
+        "Pigs",
+        "Pigs bay",
+        "Pigs bej",
+        "Bay of Pigs",
+        "Bej of Pigs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a5267210",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Ime estuarija Río de la Plata, uz koji su nastali Buenos Aires i Montevideo, doslovno upućuje na koji plemeniti metal za kojim su europski istraživači tragali u unutrašnjosti Južne Amerike?",
+      "answers": [
+        "Srebro",
+        "Silver",
+        "Plata",
+        "Ag",
+        "Argentum",
+        "Argentium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-94fcaf4d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se naziva mala kaseta s videoigrom koja se umeće izravno u igraću konzolu, kakvu su koristili NES, Game Boy i brojne druge konzole?",
+      "answers": [
+        "Cartridge",
+        "Kartridž"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c41c949d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koju je riječ Robert Hooke predložio za osnovnu strukturnu i funkcionalnu jedinicu svih poznatih organizama?",
+      "answers": [
+        "Stanica",
+        "Stanicu",
+        "Cell",
+        "Sel",
+        "Cells",
+        "Sels",
+        "Ćeliju",
+        "Ćelija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0e29b8a5",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Povijest",
+      "question": "Koje je godine izbio Prvi svjetski rat?",
+      "answers": [
+        "1914"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c1d8c4da",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U Verne-ovom romanu 'Put oko svijeta u 80 dana', tijekom putovanja kroz Indiju, koje su životinje korištene za prijevoz nakon što željeznička pruga nije bila dovršena?",
+      "answers": [
+        "Slonovi",
+        "Sloni",
+        "Slon",
+        "Elephants",
+        "Elephant",
+        "Elefants",
+        "Elefant",
+        "Elefanti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-151665f3",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "'Druga zvijezda zdesna i ravno do jutra!' je poznata izreka iz koje dječije bajke?",
+      "answers": [
+        "Petra Pana",
+        "Petar Pan",
+        "Pana",
+        "Pan",
+        "Pans",
+        "Pen",
+        "Pens",
+        "Piter Pen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-75d431d8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element tražimo ako je na periodnom sustavu okružen redom: s desna fosforom, s lijeva aluminijem, iznad ugljikom a ispod germanijem?",
+      "answers": [
+        "Silicij",
+        "Silicium",
+        "Silicijum",
+        "Silicon",
+        "Silikon",
+        "Si"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5d409f4b",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Prvi trijumvirat 60.g. pr. Kr. su sklopili Julije Cezar, Marko Licinije Kras i tko još?",
+      "answers": [
+        "Pompej",
+        "Pompej Veliki",
+        "Gnej Pompej Veliki"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5fa80add",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kako se naziva najveći kopneni mesožder na svijetu?",
+      "answers": [
+        "Polarni medvjed",
+        "Polar bear",
+        "Polar ber"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-320252a0",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Glazba",
+      "question": "Koji glazbeni instrument u kristalnom izadnju šalje Claude Laurent, Jamesu Madisonu za njegov drugi mandat predsjednika SAD-a?",
+      "answers": [
+        "Flautu",
+        "Flauta"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-f977d2fa",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je britanski modni dizajner, poznat po dramatičnim i teatralnim modnim revijama, četiri puta osvojio nagradu British Designer of the Year?",
+      "answers": [
+        "Alexander McQueen",
+        "McQueen",
+        "Aleksander Mekvin",
+        "Mekvin",
+        "Mkvin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3f8ce192",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 11. predsjednik SAD-a, prezimena Polk, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "JKP"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7286bea6",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "U animiranom filmu 'Coco', kako se zove most koji povezuje svijet živih i svijet mrtvih?",
+      "answers": [
+        "Most od latica nevena",
+        "Marigold bridge"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4f07ae38",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako danas nazivamo golemi splet kopnenih trgovačkih ruta između Azije i Europe kojim su se prenosili roba, ljudi, ideje i religije, a dijelovima kojeg su putovali i Polovi?",
+      "answers": [
+        "Put svile",
+        "Svilin put",
+        "Silk road",
+        "Silk rod"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-36d35f16",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja se životinja nalazi na kovanici od 5 kuna?",
+      "answers": [
+        "Mrki medvjed"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aac890f8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji bend potpisuje pjesmu 'Stairway to Heaven'?",
+      "answers": [
+        "Led Zeppelin",
+        "Led Cepelin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-efa3d6fb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja država koristi internetski nastavak 'ht'?",
+      "answers": [
+        "Haiti",
+        "Hajiti",
+        "Ayiti",
+        "Ajiti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b1e3bc52",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove protivnik iz videoigre Elden Ring koji čuva pristup dvorcu Stormveil a poznat je po rečenici 'Foul Tarnished'?",
+      "answers": [
+        "Margit",
+        "Margit the Fell Omen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-269bb687",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja je država, uz Nizozemsku, bila domaćin Europskog nogometnog prvenstva 2000.g.?",
+      "answers": [
+        "Belgija",
+        "Belgium",
+        "Beldžum",
+        "Belđum",
+        "Belgijanci",
+        "Belgijci",
+        "Belg",
+        "Bel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aeb86cc1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Henryk Kasperczak i Sabri Lamouchi su nogometni treneri koji su otkaz dobili tijekom Svjetskog prvenstva, a obojica su vodila reprezentaciju koje države?",
+      "answers": [
+        "Tunisa",
+        "Tunis",
+        "Tunisia",
+        "Tunisie",
+        "Tunizije",
+        "Tuniže",
+        "Tunižije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-70e85886",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Na području koje se današnje talijanske regije rodio Leonardo da Vinci?",
+      "answers": [
+        "Toskane",
+        "Toskana",
+        "Toscane",
+        "Toscana"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e9f07018",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji je glumac tumačio ulogu Stephena Hawkinga u filmu 'Teorija svega' (The Theory of Everything)?",
+      "answers": [
+        "Eddie Redmayne",
+        "Edi Redmajn",
+        "Redmayne",
+        "Redmajn",
+        "Edward John David Redmayne"
       ],
       "image": null
     }

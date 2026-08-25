@@ -1,445 +1,438 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-08-13",
-  "generatedAt": "2026-08-24T20:08:22.543Z",
+  "generatedAt": "2026-08-25T18:26:49.220Z",
   "questionCount": 30,
   "sourceFileCount": 14,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
   "questions": [
     {
-      "id": "daily-4f4d2f02",
+      "id": "daily-817ee4f3",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Tko postaje kralj lavova u istoimenom Disneyjevom crtiću nakon Mufasine tragične smrti te pobjede nad Scarom?",
+      "difficulty": 5,
+      "topic": "Zemljopis",
+      "question": "'Tavisupleba' je himna koje države?",
       "answers": [
-        "Simba"
+        "Gruzije",
+        "Gruzija",
+        "Georgija",
+        "Georgije",
+        "Georgia",
+        "Georgie",
+        "Džordžije",
+        "Džordžija"
       ],
       "image": null
     },
     {
-      "id": "daily-f432cb6e",
+      "id": "daily-e8dc9ae1",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je trener vodio Bayer Leverkusen do naslova nogometnih prvaka njemačke Bundeslige u sezoni 2023/24?",
+      "topic": "Moreplovci",
+      "question": "Uz obalu kojeg se današnjeg tuniskog otoka 1560.g. odigrala velika pomorska bitka u kojoj je osmanska flota porazila kršćanski savez?",
       "answers": [
-        "Xabi Alonso",
-        "Čabi Alonso",
-        "Ksavi Alonso",
-        "Čavi Alonso",
-        "Alonso",
-        "Xabi"
+        "Đerba",
+        "Djerba",
+        "Jerba",
+        "Džerba",
+        "Djerbe",
+        "Džerbe",
+        "Jerbe"
       ],
       "image": null
     },
     {
-      "id": "daily-f1274333",
+      "id": "daily-d7f0bf33",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Koji veliki sasanidsko-perzijski šah u bitci kod Edese nanosi sramotan poraz rimskoj vojsci te kao roba u Perziju odvodi cara Valerijana?",
+      "answers": [
+        "Šapur 1.",
+        "Šapur I.",
+        "Šapur 1",
+        "Šapur I",
+        "Šapur",
+        "Šapur prvi",
+        "Sapor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-04878d41",
       "type": "blitz",
       "difficulty": 1,
-      "topic": "Ostalo",
-      "question": "Kako se naziva blagdan u kršćanstvu kojim se slavi uskrsnuće Isusa Krista?",
+      "topic": "FloraFauna",
+      "question": "Plod kojeg drveta najviše podsjeća na ljudski mozak?",
       "answers": [
-        "Uskrs",
-        "Vazam",
-        "Easter"
+        "Oraha",
+        "Orah",
+        "Drvo Oraha",
+        "Orašak",
+        "Oraška"
       ],
       "image": null
     },
     {
-      "id": "daily-4b4f65d5",
+      "id": "daily-b11213f4",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koja se država može pohvaliti da su njeni klubovi osvojili najviše titula Lige Prvaka, njih čak 20?",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja životinja se nalazi na grbovima Madrida, Berna i Berlina?",
       "answers": [
-        "Španjolska",
-        "Spanjolske",
-        "Spains",
-        "Spejns",
-        "Spain",
-        "Spejn",
-        "Espanyol",
-        "Espanjol",
-        "Espanyols",
-        "Espanjols",
-        "Španija",
-        "Španije",
-        "Spa",
-        "Esp",
-        "Špein",
-        "Špejn",
-        "Špajn"
+        "Medvjed",
+        "Medo",
+        "Međed",
+        "Bear",
+        "Ber"
       ],
       "image": null
     },
     {
-      "id": "daily-42360737",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Invazije na Meksičku zemlju koje meksikanci nazivaju 'Invasión estadounidense a México' i 'Guerra del 47' izvela je koja država?",
-      "answers": [
-        "SAD",
-        "Amerika",
-        "America",
-        "Sjedinjene Američke Države",
-        "Američke Države",
-        "USA",
-        "United States",
-        "United States of America",
-        "US",
-        "Sjedinjene Države",
-        "States of America",
-        "Junajted Stejts of Amerika",
-        "Stejts of Amerika",
-        "Junajted Stejts"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-282080aa",
+      "id": "daily-9931cc6b",
       "type": "blitz",
       "difficulty": 3,
       "topic": "MisliIzrekeCitati",
-      "question": "Gary Lineker je jednom izjavio 'Nogomet je jednostavna igra: 22 čovjeka trče za loptom 90 minuta, a na kraju uvijek pobijede...' Tko?",
+      "question": "Mudra izreka nam govori da čovjek uči dok je što?",
       "answers": [
-        "Njemci",
-        "Švabe",
-        "Njemačka",
-        "Deutschland",
-        "Germani",
-        "Germany",
-        "Džermani",
-        "Džermani",
-        "Ger",
-        "De",
-        "Njem",
-        "Švabija",
-        "Švabska"
+        "Živ",
+        "Live",
+        "Lajv"
       ],
       "image": null
     },
     {
-      "id": "daily-6044955d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je američki borac za građanska prava 1963.g. ispred Lincolnova memorijala održao govor koji je u povijest ušao po riječima 'I have a dream'?",
-      "answers": [
-        "Martin Luther King Jr.",
-        "Martin Luther King",
-        "Martin Luter King",
-        "Luther King",
-        "Luter King",
-        "King"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4d69033c",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kako se zove broj ispod razlomačke crte?",
-      "answers": [
-        "Nazivnik",
-        "Denominator"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e8f1ac05",
+      "id": "daily-15d314f5",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Koji je nadimak dobio John Clayton nakon što su ga odgojili majmuni u afričkoj džungli?",
+      "question": "Pod obroncima kojeg je planinskog lanca sa djedom živjela malena Heidi?",
       "answers": [
-        "Tarzan",
-        "Tarzans"
+        "Alpa",
+        "Alpskog",
+        "Alpi",
+        "Alpe",
+        "Alps",
+        "Alpen",
+        "Alpski",
+        "Alpes"
       ],
       "image": null
     },
     {
-      "id": "daily-c1effc32",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "KnjigaSlika",
-      "question": "Kako se zove književna vrsta u kojoj se u središtu radnje nalazi junak u sukobu s društvom ili sudbinom, najčešće s tragičnim završetkom?",
-      "answers": [
-        "Tragedija",
-        "Tragedy",
-        "Tradžedi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-99bd9f44",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se preziva Sam, glavni junak serijala videoigara Serious Sam, poznat po nadimku 'Serious'?",
-      "answers": [
-        "Stone",
-        "Stoun",
-        "Ston"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e8e83daa",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kolumbo je 1492.g. prvo kopno na koje je stupio nazvao San Salvador a danas on pripada kojem otočju?",
-      "answers": [
-        "Bahami",
-        "Bahame",
-        "Bahamama",
-        "Bamamima",
-        "Bahamas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bfbce61c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Na kojem su okruglom broju, drevni Sumerani temeljili svoj matematički sustav?",
-      "answers": [
-        "60",
-        "Šezdeset",
-        "Sixty",
-        "Siksti",
-        "LX"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-368702d3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Ako gledamo s lijeva na desno, u kruni Hrvatskog grba na petom mjestu se nalazi mali štit koji simbolizira zastavu koje povijesne hrvatske regije?",
-      "answers": [
-        "Slavonije",
-        "Slavonia",
-        "Slavonie",
-        "Slavonija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-acd02078",
+      "id": "daily-f9867256",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Politika",
-      "question": "Koje je godine Hrvatska postala članica Europske unije?",
+      "topic": "Ostalo",
+      "question": "Koja je službena valuta u Švicarskoj?",
       "answers": [
-        "2013",
-        "Dvije tisuće trinaest"
+        "Švicarski franak",
+        "Franak",
+        "CHF",
+        "Frank"
       ],
       "image": null
     },
     {
-      "id": "daily-0cb0d81e",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "Koja je najuglednija glazbena nagrada u Republici Hrvatskoj?",
-      "answers": [
-        "Porin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5078eb17",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kemijski element sa simbolom Mg je otkrio koji engleski znanstvenik?",
-      "answers": [
-        "Humphry Davy",
-        "Hampri Dejvi",
-        "Hamfri Dejvi",
-        "Davy",
-        "Dejvi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-afe7b38a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kako se zove fundamentalna fizikalna veličina koja predstavlja sposobnost tijela ili sustava da obavi rad ili da izazove promjenu",
-      "answers": [
-        "Energija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5d409f4b",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Prvi trijumvirat 60.g. pr. Kr. su sklopili Julije Cezar, Marko Licinije Kras i tko još?",
-      "answers": [
-        "Pompej",
-        "Pompej Veliki",
-        "Gnej Pompej Veliki"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0670c821",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji zeleni pigment daje boju biljkama i algama te je ključan za fotosintezu?",
-      "answers": [
-        "Klorofil"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bde696e1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Sport",
-      "question": "Koji klub je poznat pod nadimkom 'Stara dama'?",
-      "answers": [
-        "Juventus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-86ba72b1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kod kojeg su planinskog prijevoja poljski laki konjanici 1808. jurišem kroz topničku vatru otvorili Napoleonu put prema Madridu?",
-      "answers": [
-        "Somosierra",
-        "Somosiera",
-        "Somsier",
-        "Somsiera"
-      ],
-      "image": null,
-      "rarity": "silver"
-    },
-    {
-      "id": "daily-8b22ede4",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove bjelokosi lovac na čudovišta iz Rivije, glavni junak serijala videoigara The Witcher?",
-      "answers": [
-        "Geralt",
-        "Geralt of Rivia",
-        "Geralt od Rivije",
-        "Dzeralt",
-        "Džeral"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-98b9d725",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je kineski admiral početkom 15. stoljeća predvodio goleme ekspedicije dinastije Ming preko Indijskog oceana, desetljećima prije velikih portugalskih putovanja?",
-      "answers": [
-        "Zheng He",
-        "Zeng He",
-        "Ženg He"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8bee2e3c",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "'Bože pravde' je ime himne koje balkanske države?",
-      "answers": [
-        "Srbija",
-        "Srbije"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b5033063",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koje more se nalazi ispred obale Omana?",
-      "answers": [
-        "Arapsko More",
-        "Arapsko",
-        "Arabian",
-        "Arab",
-        "Arabs",
-        "Arabijan",
-        "Raebijn",
-        "Arebijan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b9959c99",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FilmGlazba",
-      "question": "Kako se zove nagrada za najbolji album godine koju dodjeljuje američka glazbena akademija?",
-      "answers": [
-        "Grammy",
-        "Gremi",
-        "Grammy Award",
-        "Grammys",
-        "Gremis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2462aa6d",
+      "id": "daily-d6eb07ae",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "U znak pobjede nakon bitke za koji Libijski grad je prvi put u povijesti podignuta američka zastava van američkih granica?",
+      "question": "Na poznatoj slici 'Washington prelazi rijeku Delaware' tko stoji uz Washingtona u brodu, a kasnije postaje predsjednikom SAD-a?",
       "answers": [
-        "Derna",
-        "Dernu",
-        "Darnah",
-        "Darnu",
-        "Darna",
-        "Darnahu"
+        "James Monroe",
+        "Džejms Monro",
+        "Monroe",
+        "Monro"
       ],
       "image": null
     },
     {
-      "id": "daily-617cf30c",
+      "id": "daily-b7c3067c",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Politika",
-      "question": "Kako se zove poznati francuski general i državnik koji je vodio Francusku u Drugom svjetskom ratu te bio 1. predsjednik  pete republike?",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove jedan od najpoznatijih likova iz serijala videoigara Tekken, osnivač korporacije Mishima Zaibatsu i otac Kazuye Mishime?",
       "answers": [
-        "Charles de Gaulle",
-        "Čarls degaul",
-        "De Gaulle",
-        "Gaul"
+        "Heihachi Mishima",
+        "Heihachi",
+        "Heihači Mishima",
+        "Heihači",
+        "Heihači Mišima"
       ],
       "image": null
     },
     {
-      "id": "daily-a9bef924",
+      "id": "daily-555913de",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "U kojoj se američkoj saveznoj državi nalazi izmišljeni Hope County, mjesto radnje videoigre Far Cry 5?",
+      "answers": [
+        "Montana",
+        "Montani"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c8d848c4",
       "type": "blitz",
       "difficulty": 2,
       "topic": "AntickiRim",
-      "question": "Koliko je planeta sunčeva sustava dobilo ime po rimskim božanstvima?",
+      "question": "Koju su utvrdu ilirskog plemena Delmata rimljani osvojili 155.g. pr. Kr.?",
       "answers": [
-        "6",
-        "Šest"
+        "Delminij",
+        "Delminium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a1cb83b2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koju je nagradu, 1901.g. dobio Wilhelm Rontgen za otkriće rendgenskog zračenja?",
+      "answers": [
+        "Nobelovu",
+        "Nobels",
+        "Nobela",
+        "Nobel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-66a174e6",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koju boju dobijemo miješanjem crvene i žute?",
+      "answers": [
+        "Narančastu",
+        "Narančasta",
+        "Orange",
+        "Orendž"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-871786d2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad druge najveće države na svijetu?",
+      "answers": [
+        "Ottawa",
+        "Otava"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1c1fc021",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Kako se zove drevni egipatski bog s glavom sokola, bog neba i kraljevske moći?",
+      "answers": [
+        "Horus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-727ad11d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Koja je glumica odigrala ulogu Vivian Ward, poznatiju kao 'Pretty Woman'?",
+      "answers": [
+        "Julia Roberts",
+        "Džulia Roberts",
+        "Roberts"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d1a7698f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je njemački astronom ustanovio gibanje planeta po elipsama?",
+      "answers": [
+        "Johannes Kepler",
+        "Joanes Kepler",
+        "Kepler"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8d140771",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja je njemačka financijska tvrtka svoje ime ugravirala na stadione u Munchenu, Londonu, Sydneyju, Nici, Torinu, Sao Paulu i Beču?",
+      "answers": [
+        "Allianz",
+        "Alijanc",
+        "Alijanz",
+        "Alijanca"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aa84a0d4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Ako Inter Milan igra kod kuće onda je Giuseppe Meazza, a ako Milan ugošćuje protivnika onda je...?",
+      "answers": [
+        "San Siro",
+        "San Sir"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6fa66424",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "'Our American Cousin' je predstava za čijeg igranja je ubijen tko?",
+      "answers": [
+        "Abraham Lincoln",
+        "Lincoln",
+        "Abraham Linkoln",
+        "Linkoln"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b3fc6ba2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji je žanr glazbe proslavio Boba Marleya?",
+      "answers": [
+        "Reggae",
+        "Rege",
+        "Regga",
+        "Regge"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ac0a162c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliki je korijen iz 144?",
+      "answers": [
+        "12",
+        "Dvanaest",
+        "Twelve",
+        "Tvelv",
+        "XII"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-381f8f48",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'S kim si, takav si' upozorava na utjecaj čega na čovjeka?",
+      "answers": [
+        "Društva",
+        "Ekipe",
+        "Kompanije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1ee7dc2c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koje je godine Austro-Ugarska objavila rat Srbiji, čime je sukob prerastao u veliki Prvi svjetski rat?",
+      "answers": [
+        "1914",
+        "Tisuću devetsto četrnaeste",
+        "Iljadu devetsko četrnaeste",
+        "14",
+        "Četrnaeste",
+        "Nineteen forteen",
+        "Najntin fortin",
+        "MCMXIV",
+        "XIV",
+        "Fourteenth",
+        "Fortinth"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2b47e5be",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Do koje je azijske zemlje Vasco da Gama doplovio 1498. godine?",
+      "answers": [
+        "Indija",
+        "Indije",
+        "Ind",
+        "Indijas",
+        "India"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4a667844",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Tko je režirao 'Schindlerovu listu'?",
+      "answers": [
+        "Steven Spielberg",
+        "Stiven Spilberg",
+        "Spielberg",
+        "Spilberg"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-58d77dc9",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Na kojem broju na satu se kazaljke trebaju spojiti kako bi pepeljugina čarolija prestala postojati?",
+      "answers": [
+        "12",
+        "Dvanaest",
+        "Twelve",
+        "Tvelv",
+        "XII"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5ae8bda1",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Bartolomeo Cristofori je talijanski izrađivač glazbala kojemu se pripisuje izum kojeg, danas popularnog glazbenog instrumenta?",
+      "answers": [
+        "Klavira",
+        "Klavir",
+        "Glasovir",
+        "Glasovira",
+        "Piano"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4db6a590",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Povijest",
+      "question": "Kako se zove čovjek za kojeg se kaže da je 'otac povijesti' i koji je napisao djelo 'Povijesti'?",
+      "answers": [
+        "Herodot"
       ],
       "image": null
     }
