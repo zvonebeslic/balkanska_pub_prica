@@ -1,13 +1,9 @@
 (function () {
   "use strict";
 
-  const DEMO_PLAYERS = [
-    "Kvizoman", "Lara", "Atlas", "Marko", "Marta", "Profesor", "Sova", "Radoznalac",
-    "Una", "Leo", "Nikola", "Ena", "Lovro", "Klara", "Znalac", "Iva", "Noa", "Mia", "Nino", "Tena"
-  ];
-
   const previewState = { view: "daily30", anchor: null };
   const pageState = { view: "daily30", anchor: null };
+  const DAILY_HISTORY_DAYS = 7;
 
   function lang() { return document.documentElement.lang === "en" ? "en" : "hr"; }
   function todayKey() { return window.KvizDaily30?.zonedDateKey?.() || new Date().toISOString().slice(0, 10); }
@@ -18,25 +14,6 @@
   function keyOf(date) { return date.toISOString().slice(0, 10); }
   function addDays(key, amount) { const date = parseKey(key); date.setUTCDate(date.getUTCDate() + amount); return keyOf(date); }
   function addMonths(key, amount) { const date = parseKey(key); date.setUTCDate(1); date.setUTCMonth(date.getUTCMonth() + amount); return keyOf(date); }
-
-  function hash(value) {
-    let result = 2166136261;
-    for (let index = 0; index < value.length; index += 1) {
-      result ^= value.charCodeAt(index);
-      result = Math.imul(result, 16777619);
-    }
-    return result >>> 0;
-  }
-
-  function randomFor(seedText) {
-    let value = hash(seedText) || 1;
-    return () => {
-      value ^= value << 13;
-      value ^= value >>> 17;
-      value ^= value << 5;
-      return (value >>> 0) / 4294967296;
-    };
-  }
 
   function initials(name) {
     return String(name || "?").split(/\s+/).filter(Boolean).slice(0, 2).map(part => part[0]?.toUpperCase() || "").join("") || "?";
@@ -58,6 +35,16 @@
     return today;
   }
 
+  function oldestDailyAnchor() { return addDays(todayKey(), -(DAILY_HISTORY_DAYS - 1)); }
+
+  function clampDailyAnchor(anchor) {
+    const today = todayKey();
+    const oldest = oldestDailyAnchor();
+    if (anchor > today) return today;
+    if (anchor < oldest) return oldest;
+    return anchor;
+  }
+
   function periodLabel(view, anchor) {
     const locale = lang() === "en" ? "en-GB" : "hr-HR";
     const formatDay = key => new Intl.DateTimeFormat(locale, { timeZone: "UTC", day: "numeric", month: "short", year: "numeric" }).format(parseKey(key));
@@ -70,24 +57,33 @@
     return "";
   }
 
-  function demoRows(view, anchor) {
-    return DEMO_PLAYERS.map((name, index) => {
-      const random = randomFor(`${view}:${anchor}:${name}:${index}`);
-      if (view === "daily30") {
-        return { id: `demo-${index}`, name, score: 18 + Math.floor(random() * 13), durationSeconds: 175 + Math.floor(random() * 620), isPlayer: false };
-      }
-      const base = view === "week" ? 75 : view === "month" ? 260 : 2800;
-      const range = view === "week" ? 260 : view === "month" ? 950 : 9000;
-      return { id: `demo-${index}`, name, score: base + Math.floor(random() * range), durationSeconds: 0, isPlayer: false };
-    });
+  function formatLeaderboardDuration(totalSeconds) {
+    const seconds = Math.max(0, Math.round(Number(totalSeconds) || 0));
+    const days = Math.floor(seconds / 86400);
+    const hours = Math.floor((seconds % 86400) / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const rest = seconds % 60;
+
+    if (days > 0) return `${days}d ${hours}h ${minutes}min`;
+    if (hours > 0) return `${hours}h ${minutes}m ${rest}s`;
+    if (minutes > 0) return `${minutes}m ${rest}s`;
+    return `${rest}s`;
   }
 
   function localRows(view, anchor) {
     const results = window.KvizDaily30?.getResults?.() || {};
     const name = window.KvizDaily30?.getPublicPlayerName?.() || (lang() === "en" ? "Your score" : "Tvoj rezultat");
+
     if (view === "daily30") {
       const result = results[anchor];
-      return result?.official ? [{ id: "local-player", name, score: Number(result.score) || 0, durationSeconds: Number(result.durationSeconds) || 0, isPlayer: true }] : [];
+      return result?.official ? [{
+        id: "local-player",
+        name,
+        score: Number(result.score) || 0,
+        durationSeconds: Number(result.durationSeconds) || 0,
+        played: 1,
+        isPlayer: true
+      }] : [];
     }
 
     const dates = Object.keys(results).filter(date => {
@@ -96,24 +92,30 @@
       if (view === "month") return date.startsWith(anchor.slice(0, 7));
       return true;
     });
+
     if (!dates.length) return [];
+
     const score = dates.reduce((sum, date) => sum + (Number(results[date]?.score) || 0), 0);
-    return [{ id: "local-player", name, score, durationSeconds: 0, isPlayer: true }];
+    const durationSeconds = dates.reduce((sum, date) => sum + (Number(results[date]?.durationSeconds) || 0), 0);
+
+    return [{ id: "local-player", name, score, durationSeconds, played: dates.length, isPlayer: true }];
   }
 
   function rankedRows(view, anchor) {
-    const rows = [...demoRows(view, anchor), ...localRows(view, anchor)];
+    const rows = localRows(view, anchor);
     rows.sort((left, right) => {
       if (right.score !== left.score) return right.score - left.score;
-      if (view === "daily30" && left.durationSeconds !== right.durationSeconds) return left.durationSeconds - right.durationSeconds;
+      if (left.durationSeconds !== right.durationSeconds) return left.durationSeconds - right.durationSeconds;
       return left.name.localeCompare(right.name, "hr");
     });
     return rows.map((row, index) => ({ ...row, rank: index + 1 }));
   }
 
   function valueText(row, view) {
-    if (view === "daily30") return `${row.score}/30 · ${window.KvizDaily30?.formatDuration?.(row.durationSeconds) || row.durationSeconds + "s"}`;
-    return lang() === "en" ? `${row.score} correct` : `${row.score} točnih`;
+    const duration = formatLeaderboardDuration(row.durationSeconds);
+    if (view === "daily30") return `${row.score}/30 · ${duration}`;
+    const correct = lang() === "en" ? "correct" : "točnih";
+    return `${row.score} ${correct} · ${duration}`;
   }
 
   function rowHtml(row, view) {
@@ -153,24 +155,25 @@
     const list = document.getElementById("leaderboard-preview-list");
     if (!root || !list) return;
     if (!previewState.anchor) previewState.anchor = currentPeriodAnchor(previewState.view);
+    if (previewState.view === "daily30") previewState.anchor = clampDailyAnchor(previewState.anchor);
     syncTabs(root, previewState.view);
+
     const period = document.getElementById("leaderboard-preview-period");
     if (period) period.textContent = previewState.view === "all" ? "" : periodLabel(previewState.view, previewState.anchor);
 
     const rows = rankedRows(previewState.view, previewState.anchor);
     const top = rows.slice(0, 5);
-    list.innerHTML = top.map(row => rowHtml(row, previewState.view)).join("");
-    const own = rows.find(row => row.isPlayer);
+    list.innerHTML = top.length ? top.map(row => rowHtml(row, previewState.view)).join("") : `<div class="leaderboard-empty">${lang() === "en" ? "No results yet." : "Još nema rezultata."}</div>`;
+
     const ownRoot = document.getElementById("leaderboard-preview-own");
     if (ownRoot) {
-      const visible = Boolean(own && own.rank > 5);
-      ownRoot.classList.toggle("visible", visible);
-      ownRoot.innerHTML = visible ? rowHtml(own, previewState.view) : "";
+      ownRoot.classList.remove("visible");
+      ownRoot.innerHTML = "";
     }
+
     const link = document.getElementById("leaderboard-more-link");
     if (link) {
-      const label = lang() === "en" ? "View full leaderboard" : "Prikaži cijelu ljestvicu";
-      link.textContent = label;
+      link.textContent = lang() === "en" ? "View full leaderboard" : "Prikaži cijelu ljestvicu";
       link.href = `ljestvice.html?view=${encodeURIComponent(previewState.view)}&date=${encodeURIComponent(previewState.anchor)}`;
     }
   }
@@ -180,7 +183,9 @@
     const list = document.getElementById("leaderboard-full-list");
     if (!root || !list) return;
     if (!pageState.anchor) pageState.anchor = currentPeriodAnchor(pageState.view);
+    if (pageState.view === "daily30") pageState.anchor = clampDailyAnchor(pageState.anchor);
     syncTabs(root, pageState.view);
+
     const periodRoot = document.getElementById("leaderboard-full-period");
     const periodLabelRoot = document.getElementById("leaderboard-full-period-label");
     periodRoot?.classList.toggle("is-all-time", pageState.view === "all");
@@ -188,7 +193,10 @@
 
     const rows = rankedRows(pageState.view, pageState.anchor);
     list.innerHTML = rows.length ? rows.map(row => rowHtml(row, pageState.view)).join("") : `<div class="leaderboard-empty">${lang() === "en" ? "No results yet." : "Još nema rezultata."}</div>`;
+
+    const prev = document.getElementById("leaderboard-period-prev");
     const next = document.getElementById("leaderboard-period-next");
+    if (prev) prev.disabled = pageState.view === "all" || (pageState.view === "daily30" && pageState.anchor <= oldestDailyAnchor());
     if (next) next.disabled = pageState.view === "all" || pageState.anchor >= currentPeriodAnchor(pageState.view);
   }
 
@@ -200,7 +208,7 @@
   function shiftPagePeriod(direction) {
     if (pageState.view === "all") return;
     let next = pageState.anchor;
-    if (pageState.view === "daily30") next = addDays(next, direction);
+    if (pageState.view === "daily30") next = clampDailyAnchor(addDays(next, direction));
     if (pageState.view === "week") next = addDays(next, direction * 7);
     if (pageState.view === "month") next = addMonths(next, direction);
     if (direction > 0 && next > currentPeriodAnchor(pageState.view)) next = currentPeriodAnchor(pageState.view);
@@ -228,14 +236,16 @@
     setView(pageState, params.get("view") || "daily30");
     const requestedDate = params.get("date");
     if (requestedDate && /^\d{4}-\d{2}-\d{2}$/.test(requestedDate) && pageState.view !== "all") {
-      pageState.anchor = pageState.view === "week" ? startOfWeek(requestedDate) : pageState.view === "month" ? monthStart(requestedDate) : requestedDate;
+      pageState.anchor = pageState.view === "week" ? startOfWeek(requestedDate) : pageState.view === "month" ? monthStart(requestedDate) : clampDailyAnchor(requestedDate);
     }
+
     root.querySelectorAll("[data-leaderboard-view]").forEach(button => {
       button.addEventListener("click", () => {
         setView(pageState, button.getAttribute("data-leaderboard-view"));
         renderPage();
       });
     });
+
     document.getElementById("leaderboard-period-prev")?.addEventListener("click", () => shiftPagePeriod(-1));
     document.getElementById("leaderboard-period-next")?.addEventListener("click", () => shiftPagePeriod(1));
     renderPage();
@@ -246,7 +256,11 @@
   document.addEventListener("DOMContentLoaded", () => {
     initPreview();
     initPage();
+    window.addEventListener("storage", event => {
+      if (String(event.key || "").startsWith("kviztogo_daily30_results_v1")) refreshAll();
+    });
+    setInterval(refreshAll, 1000);
   });
 
-  window.KvizLeaderboards = { refreshAll, renderPreview, renderPage };
+  window.KvizLeaderboards = { refreshAll, renderPreview, renderPage, formatLeaderboardDuration };
 })();
