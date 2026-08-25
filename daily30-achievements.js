@@ -1,0 +1,20 @@
+(function(){
+"use strict";
+const KEY="kviztogo_daily30_crowns_v1";
+function blank(){return{realTimeDates:{},totalDays:0,currentStreak:0,bestStreak:0,lastCountedDate:null};}
+function load(){try{return{...blank(),...(JSON.parse(localStorage.getItem(KEY)||"null")||{})};}catch(_){return blank();}}
+function save(s){try{localStorage.setItem(KEY,JSON.stringify(s));}catch(_){}}
+function today(){return window.KvizDaily30?.zonedDateKey?.()||new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Sarajevo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}
+function parse(k){const[y,m,d]=String(k).split('-').map(Number);return new Date(Date.UTC(y,m-1,d,12));}
+function key(d){return d.toISOString().slice(0,10);}
+function addDays(k,n){const d=parse(k);d.setUTCDate(d.getUTCDate()+n);return key(d);}
+function recalc(s){const dates=Object.keys(s.realTimeDates||{}).filter(k=>s.realTimeDates[k]).sort();s.totalDays=dates.length;let best=0,run=0,prev=null;dates.forEach(d=>{run=prev&&addDays(prev,1)===d?run+1:1;best=Math.max(best,run);prev=d;});s.bestStreak=best;const t=today();if(s.realTimeDates[t]){let cur=0,d=t;while(s.realTimeDates[d]){cur++;d=addDays(d,-1);}s.currentStreak=cur;}else{s.currentStreak=0;}return s;}
+function update(){if(!window.KvizDaily30?.getResults)return;const t=today(),results=window.KvizDaily30.getResults()||{},r=results[t],s=load();if(r?.official&&!s.realTimeDates[t]){s.realTimeDates[t]=Date.now();s.lastCountedDate=t;recalc(s);save(s);render();}else if(s.realTimeDates[t]&&s.currentStreak===0){recalc(s);save(s);render();}}
+function stats(){return recalc(load());}
+function en(){return document.documentElement.lang==='en';}
+function svg(){return '<svg class="achievement-crown-svg" viewBox="0 0 64 52" aria-hidden="true"><path d="M8 17 20 29 32 9 44 29 56 17 51 42H13L8 17Z" fill="#facc15" stroke="#fff3b0" stroke-width="2"/><circle cx="8" cy="15" r="4" fill="#facc15"/><circle cx="32" cy="7" r="4" fill="#facc15"/><circle cx="56" cy="15" r="4" fill="#facc15"/><path d="M14 45h36" stroke="#facc15" stroke-width="5" stroke-linecap="round"/></svg>';}
+function items(){const s=stats(),isEn=en(),out=[];[1,10,20,30,60,100].forEach(n=>out.push({c:s.totalDays,t:n,title:isEn?'Daily 30 ×'+n:'Dnevnih 30 ×'+n,cond:isEn?'Play Daily 30 on '+n+(n===1?' real day.':' different real days.'):'Odigraj Dnevnih 30 '+n+(n===1?' put.':' puta, svaki na stvarni aktualni dan.')}));[5,10,20,30].forEach(n=>out.push({c:s.bestStreak,t:n,title:isEn?n+' day streak':n+' dana zaredom',cond:isEn?'Play Daily 30 '+n+' real days in a row.':'Odigraj Dnevnih 30 '+n+' stvarnih dana zaredom.'}));return out;}
+function render(){const box=document.getElementById('achievement-groups');if(!box)return;let sec=box.querySelector('[data-daily30-crowns]');if(!sec){sec=document.createElement('section');sec.className='achievement-group';sec.dataset.daily30Crowns='1';const lb=box.querySelector('[data-lb-crowns]');if(lb)lb.insertAdjacentElement('afterend',sec);else box.prepend(sec);}const its=items(),u=its.filter(x=>x.c>=x.t).length;sec.innerHTML='<div class="achievement-group-title"><span>'+(en()?'Daily 30 crowns':'Krune Dnevnih 30')+'</span><span class="achievement-group-count">'+u+'/'+its.length+'</span></div><div class="achievement-crown-grid"></div>';const grid=sec.querySelector('.achievement-crown-grid');its.forEach(x=>{const ok=x.c>=x.t,card=document.createElement('article');card.className='achievement-crown-card '+(ok?'unlocked':'locked');card.innerHTML='<div class="achievement-crown-wrap">'+svg()+'</div><div class="achievement-crown-title">'+x.title+'</div><div class="achievement-crown-condition">'+x.cond+'</div><div class="achievement-crown-progress">'+(ok?(en()?'Unlocked':'Otključano'):Math.min(x.c,x.t)+'/'+x.t)+'</div>';grid.appendChild(card);});}
+document.addEventListener('DOMContentLoaded',()=>{render();update();setInterval(update,1000);const b=document.getElementById('achievement-groups');if(b)new MutationObserver(()=>{if(!b.querySelector('[data-daily30-crowns]'))render();}).observe(b,{childList:true});});
+window.KvizDaily30Achievements={getStats:stats,render,storageKey:KEY};
+})();
