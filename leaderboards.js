@@ -1,1 +1,1 @@
-document.write('<script src="leaderboards-core.js?v=20260825"><\/script><script src="leaderboard-achievements.js?v=20260825"><\/script>');
+document.write('<script src="leaderboards-core.js?v=20260825"><\/script><script src="leaderboard-achievements.js?v=20260825"><\/script><script src="daily30-achievements.js?v=20260825"><\/script>');
