@@ -1,0 +1,36 @@
+name: Fix leaderboard button
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-leaderboard-button.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace stale leaderboard link
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('online-kviz.html')
+          s=p.read_text(encoding='utf-8')
+          old='<a class="leaderboard-more-link" id="leaderboard-more-link" href="ljestvice.html">Prikaži cijelu ljestvicu</a>'
+          new='<button class="leaderboard-more-link" id="leaderboard-more-link" type="button">Prikaži cijelu ljestvicu</button>'
+          if old not in s:
+              raise SystemExit('stale leaderboard link not found')
+          p.write_text(s.replace(old,new,1),encoding='utf-8')
+          PY
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add online-kviz.html
+          git diff --cached --quiet || git commit -m "Remove stale leaderboard page link"
+          git push
