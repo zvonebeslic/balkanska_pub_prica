@@ -1,0 +1,49 @@
+name: Fix leaderboard display
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-leaderboard-display.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch leaderboards.js
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('leaderboards.js')
+          s = p.read_text(encoding='utf-8')
+
+          old = "function renderPreview(){const root=document.getElementById('leaderboard-preview'),list=document.getElementById('leaderboard-preview-list');if(!root||!list)return;if(!previewState.anchor)previewState.anchor=currentAnchor(previewState.view);if(previewState.view==='daily30')previewState.anchor=clamp(previewState.anchor);tabs(root,previewState.view);const pr=document.getElementById('leaderboard-preview-period');if(pr)pr.textContent=previewState.view==='all'?'':period(previewState.view,previewState.anchor);const rows=ranked(previewState.view,previewState.anchor),top=rows.slice(0,5);list.innerHTML=top.length?top.map(x=>row(x,previewState.view)).join(''):`<div class=\"leaderboard-empty\">${lang()==='en'?'No results yet.':'Još nema rezultata.'}</div>`;const own=rows.find(x=>x.isPlayer),ownRoot=document.getElementById('leaderboard-preview-own');if(ownRoot){const show=!!(own&&own.rank>5);ownRoot.classList.toggle('visible',show);ownRoot.innerHTML=show?row(own,previewState.view):''}const link=document.getElementById('leaderboard-more-link');if(link){link.textContent=lang()==='en'?'View full leaderboard':'Prikaži cijelu ljestvicu';link.href='#leaderboard-page';link.onclick=e=>{e.preventDefault();injectFull();pageState.view=previewState.view;pageState.anchor=previewState.anchor;const full=document.getElementById('leaderboard-page');full?.classList.add('open');renderPage();setTimeout(()=>full?.scrollIntoView({behavior:'smooth',block:'start'}),0)}}}"
+
+          new = "function renderPreview(){const root=document.getElementById('leaderboard-preview'),list=document.getElementById('leaderboard-preview-list');if(!root||!list)return;if(!previewState.anchor)previewState.anchor=currentAnchor(previewState.view);if(previewState.view==='daily30')previewState.anchor=clamp(previewState.anchor);tabs(root,previewState.view);const pr=document.getElementById('leaderboard-preview-period');if(pr)pr.textContent=previewState.view==='all'?'':period(previewState.view,previewState.anchor);const rows=ranked(previewState.view,previewState.anchor),expanded=root.dataset.expanded==='1',shown=expanded?rows:rows.slice(0,5);list.innerHTML=shown.length?shown.map(x=>row(x,previewState.view)).join(''):`<div class=\"leaderboard-empty\">${lang()==='en'?'No results yet.':'Još nema rezultata.'}</div>`;const own=rows.find(x=>x.isPlayer),ownRoot=document.getElementById('leaderboard-preview-own');if(ownRoot){const show=!expanded&&!!(own&&own.rank>5);ownRoot.classList.toggle('visible',show);ownRoot.innerHTML=show?row(own,previewState.view):''}const link=document.getElementById('leaderboard-more-link');if(link){link.textContent=expanded?(lang()==='en'?'Show less':'Prikaži manje'):(lang()==='en'?'View full leaderboard':'Prikaži cijelu ljestvicu');link.href='#leaderboard-preview';link.onclick=e=>{e.preventDefault();root.dataset.expanded=expanded?'0':'1';renderPreview();if(!expanded)setTimeout(()=>root.scrollIntoView({behavior:'smooth',block:'start'}),0)}}}"
+
+          if old not in s:
+              raise SystemExit('renderPreview block not found')
+          s = s.replace(old, new, 1)
+
+          old_click = "root.querySelectorAll('[data-leaderboard-view]').forEach(b=>b.addEventListener('click',()=>{previewState.view=b.dataset.leaderboardView;previewState.anchor=currentAnchor(previewState.view);renderPreview()}));"
+          new_click = "root.querySelectorAll('[data-leaderboard-view]').forEach(b=>b.addEventListener('click',()=>{previewState.view=b.dataset.leaderboardView;previewState.anchor=currentAnchor(previewState.view);root.dataset.expanded='0';document.getElementById('leaderboard-page')?.classList.remove('open');renderPreview()}));"
+          if old_click not in s:
+              raise SystemExit('tab handler not found')
+          s = s.replace(old_click, new_click, 1)
+
+          s = s.replace("function refreshAll(){renderPreview();renderPage()}", "function refreshAll(){renderPreview()}", 1)
+
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add leaderboards.js
+          git diff --cached --quiet || git commit -m "Fix leaderboard tabs and full view"
+          git push
