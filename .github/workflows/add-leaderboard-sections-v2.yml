@@ -1,0 +1,44 @@
+name: Add leaderboard sections v2
+on:
+  push:
+    paths:
+      - '.github/workflows/add-leaderboard-sections-v2.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch files
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          hp=Path('online-kviz.html')
+          s=hp.read_text(encoding='utf-8')
+          m='    <div class="leaderboard-tabs" role="tablist" aria-label="Razdoblje ljestvice">'
+          block='''    <div class="leaderboard-section-tabs" aria-label="Vrsta ljestvice">
+      <button class="leaderboard-section-tab leaderboard-section-tab--soon" type="button" disabled aria-disabled="true"><span>Multiplayer</span><small>Uskoro</small></button>
+      <button class="leaderboard-section-tab active" type="button" aria-pressed="true">Dnevnih 30</button>
+    </div>
+    <div class="leaderboard-tabs" role="tablist" aria-label="Razdoblje ljestvice">'''
+          if 'leaderboard-section-tabs' not in s:
+              assert m in s
+              hp.write_text(s.replace(m,block,1),encoding='utf-8')
+          jp=Path('leaderboards.js')
+          j=jp.read_text(encoding='utf-8')
+          m2='.leaderboard-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));'
+          css='.leaderboard-section-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.34rem;margin:.15rem 0 .55rem;padding:.3rem;border-radius:14px;border:1px solid rgba(148,163,184,.18);background:rgba(0,0,0,.2)}.leaderboard-section-tab{min-width:0;min-height:42px;border:1px solid transparent;border-radius:11px;background:transparent;color:var(--leader-muted);padding:.42rem .45rem;font-size:.72rem;font-weight:950;display:flex;align-items:center;justify-content:center;gap:.38rem}.leaderboard-section-tab.active{background:linear-gradient(135deg,rgba(47,128,255,.98),rgba(28,113,238,.98));border-color:rgba(115,173,255,.48);color:#fff;box-shadow:0 7px 18px rgba(47,128,255,.16)}.leaderboard-section-tab--soon{opacity:.58;cursor:not-allowed}.leaderboard-section-tab--soon small{font-size:.52rem;font-weight:950;text-transform:uppercase;letter-spacing:.04em;padding:.13rem .3rem;border-radius:999px;border:1px solid rgba(148,163,184,.28);background:rgba(255,255,255,.055);color:#cbd5e1}.leaderboard-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));'
+          if '.leaderboard-section-tabs{' not in j:
+              assert m2 in j
+              jp.write_text(j.replace(m2,css,1),encoding='utf-8')
+          PY
+      - name: Commit
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add online-kviz.html leaderboards.js
+          git diff --cached --quiet || git commit -m 'Add Daily 30 and Multiplayer leaderboard sections'
+          git push
