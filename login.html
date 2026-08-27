@@ -550,7 +550,7 @@
 
     const SESSION_TIME_KEY = "kviztogo_login_time";
     const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
-    const POST_LOGIN_DESTINATION = "profil.html";
+    const POST_LOGIN_DESTINATION = new URL("profil.html", window.location.href).href;
     const LEGACY_AFTER_LOGIN_KEY = "kviztogo_after_login";
     const PENDING_DESTINATION_KEY = "kviztogo_pending_after_profile";
     const PENDING_INVITE_KEY = "kviztogo_pending_invite_code";
