@@ -1986,7 +1986,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('a[h
       </button>
     </div>
 
-    <a href="index.html" class="brand-logo" aria-label="KvizToGo početna">
+    <a href="/index.html" class="brand-logo" aria-label="KvizToGo početna">
       <span class="logo-kviz">Kviz</span><span class="logo-to">To</span><span class="logo-go">Go</span>
     </a>
 
@@ -3278,11 +3278,14 @@ function getInviteUrl() {
     });
 
     document.getElementById("back-btn").addEventListener("click", () => {
-      if (document.referrer && new URL(document.referrer).origin === window.location.origin) {
-        history.back();
-      } else {
-        window.location.href = "index.html";
-      }
+      localStorage.removeItem("kviztogo_after_login");
+      window.location.replace("/index.html");
+    });
+
+    document.querySelector(".brand-logo")?.addEventListener("click", (event) => {
+      event.preventDefault();
+      localStorage.removeItem("kviztogo_after_login");
+      window.location.replace("/index.html");
     });
 
     settingsBtn.addEventListener("click", (event) => {
