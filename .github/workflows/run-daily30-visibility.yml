@@ -1,0 +1,20 @@
+name: Run Daily30 visibility patch
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/run-daily30-visibility.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 patch_daily30_visibility.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daily30.js online-kviz.html leaderboards.js
+          git diff --cached --quiet || git commit -m "Add leaderboard visibility control"
+          git push
