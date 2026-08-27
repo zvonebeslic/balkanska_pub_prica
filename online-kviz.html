@@ -6560,9 +6560,6 @@ if (!supabaseClient) {
     if (activeQuizPlayId) {
       await finishQuizTracking(false);
     }
-    /* GitHub prototip Dnevnih 30 je namjerno potpuno lokalan dok ne uvedemo novu baznu strukturu. */
-    if (currentMode === "daily30") return;
-
     activeQuizStartedAt = Date.now();
     activeQuizSessionId = makeQuizSessionId();
     activeQuizActiveMs = 0;
@@ -7806,6 +7803,7 @@ if (!supabaseClient) {
     quizFinished = true;
     const savedResult = window.KvizDaily30?.complete?.(scoreCorrect, scoreTotal);
     finalizeLocalGame(true);
+    void finishQuizTracking(true);
     currentQuestion = null;
     hideAtomicJokerToolkit();
     clearQuestionRarityUI();
