@@ -18,3 +18,4 @@ jobs:
           git add online-kviz.html
           git diff --cached --quiet || git commit -m "Add Daily 30 stats to online profile"
           git push
+# rerun after patch fix
