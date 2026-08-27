@@ -1,0 +1,20 @@
+name: Run login profile redirect patch
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/run-login-profile-redirect.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 patch_login_profile_redirect.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add login.html
+          git diff --cached --quiet || git commit -m "Redirect successful login to profile"
+          git push
