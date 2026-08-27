@@ -2922,15 +2922,10 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
       const historyEl = document.getElementById("my-quizzes-history");
       const now = Date.now();
       const finishedAfterMs = 4 * 60 * 60 * 1000;
-      const cancelledHistoryCutoff = now - 2 * 24 * 60 * 60 * 1000;
 
-      // Kviz ide u povijest čim završi njegov 4-satni prikaz "UŽIVO".
-      // Otkazani kviz ostaje kratko u aktivnom prikazu kako bi ga korisnik mogao ponovno objaviti.
+      // Glavni prikaz: samo kvizovi koji dolaze ili su još u 4-satnom UŽIVO prozoru.
+      // Povijest: samo kvizovi čiji je UŽIVO prozor završio.
       const isHistory = (q) => {
-        if (q.status === "cancelled") {
-          const cancelledAt = new Date(q.cancelled_at || q.updated_at || q.datetime).getTime();
-          return Number.isFinite(cancelledAt) && cancelledAt < cancelledHistoryCutoff;
-        }
         const start = new Date(q.datetime).getTime();
         return Number.isFinite(start) && now >= start + finishedAfterMs;
       };
@@ -2942,8 +2937,12 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
         <div class="my-quiz-meta"><strong>${escapeHtmlProfile(quizStatus(q))}</strong><br>${escapeHtmlProfile(q.venue || "—")}<br>${escapeHtmlProfile(formatQuizDate(q.datetime))}${q.phone ? `<br>${escapeHtmlProfile(q.phone)}` : ""}${q.description ? `<br>${escapeHtmlProfile(q.description)}` : ""}</div>
         ${historyMode ? "" : `<div class="my-quiz-actions"><button class="btn btn--soft edit-quiz-btn" data-id="${q.id}">✏️ Uredi</button><button class="btn btn--danger cancel-quiz-btn" data-id="${q.id}">${q.status === "cancelled" ? "Ponovno objavi" : "Otkaži"}</button></div>`}
       </article>`;
-      activeEl.innerHTML = active.length ? active.map(q => card(q)).join("") : '<p class="empty-state">Još niste objavili nijedan aktivan kviz.</p>';
-      historyEl.innerHTML = history.length ? history.map(q => card(q, true)).join("") : "";
+      activeEl.innerHTML = active.length ? active.map(q => card(q)).join("") : '<p class="empty-state">Trenutno nemate kvizova koji dolaze ili su uživo.</p>';
+      historyEl.innerHTML = history.length ? history.map(q => card(q, true)).join("") : '<p class="empty-state">Još nema završenih kvizova.</p>';
+      activeEl.hidden = false;
+      historyEl.hidden = true;
+      const historyButton = document.getElementById("history-toggle-btn");
+      if (historyButton) historyButton.textContent = currentLang === "en" ? "My quiz history" : "Povijest mojih kvizova";
     }
 
     function escapeHtmlProfile(value) { const d=document.createElement("div"); d.textContent=String(value ?? ""); return d.innerHTML; }
