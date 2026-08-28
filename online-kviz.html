@@ -6596,7 +6596,6 @@ if (!supabaseClient) {
   }
 
   async function saveQuizAnswer(question, userAnswer, result, skipped) {
-    if (currentMode === "daily30") return;
     if (!supabaseClient || !question || !activeQuizSessionId) return;
 
     try {
@@ -6633,7 +6632,6 @@ if (!supabaseClient) {
   }
 
   async function saveQuestionVote(question, vote) {
-    if (currentMode === "daily30") return false;
     if (!supabaseClient || !question || !activeQuizSessionId || !["like", "dislike"].includes(vote)) return false;
 
     try {
@@ -6666,7 +6664,6 @@ if (!supabaseClient) {
   }
 
   async function updateQuizTracking() {
-    if (currentMode === "daily30") return;
     if (!supabaseClient || !activeQuizPlayId || !activeQuizStartedAt) return;
 
     const durationSeconds = getActiveQuizDurationSeconds();
