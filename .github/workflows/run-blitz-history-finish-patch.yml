@@ -1,0 +1,26 @@
+name: Run Blitz history finish patch
+
+on:
+  push:
+    paths:
+      - 'patch_blitz_history_finish.py'
+      - '.github/workflows/run-blitz-history-finish-patch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch Blitz finish history
+        run: python patch_blitz_history_finish.py
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add online-kviz.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Keep Blitz history visible after timer ends"
+          git push
