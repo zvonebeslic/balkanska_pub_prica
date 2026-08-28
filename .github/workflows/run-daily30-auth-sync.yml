@@ -1,0 +1,20 @@
+name: Apply Daily30 auth sync
+on:
+  push:
+    paths:
+      - 'patch_daily30_auth_sync.py'
+      - '.github/workflows/run-daily30-auth-sync.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python patch_daily30_auth_sync.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daily30.js
+          git commit -m "Sync Daily30 results with authenticated profile" || exit 0
+          git push
