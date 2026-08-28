@@ -40,6 +40,7 @@
 /* Sprijeci kratki prikaz nedovrsenog layouta prije ucitavanja pocetnih skripti. */
 html.kviz-initial-loading { background: #0b1220; }
 html.kviz-initial-loading body { visibility: hidden; }
+html body.quiz-results-visible .sidebar-card { display: flex !important; }
 
 /* ========================================================= */
 /* 01 RESET I OSNOVNE POSTAVKE */
@@ -6791,7 +6792,7 @@ if (!supabaseClient) {
     const input = document.getElementById("answer-input");
     if (input) input.blur();
 
-    document.body.classList.remove("quiz-playing", "keyboard-active");
+    document.body.classList.remove("quiz-playing", "keyboard-active", "quiz-results-visible");
     document.documentElement.style.setProperty("--keyboard-safe-space", "0px");
   }
 
@@ -8122,6 +8123,7 @@ if (!supabaseClient) {
         setQuizInteractionEnabled(false);
         setStartButtonState(false);
         closeMobileQuizFocus();
+        document.body.classList.add("quiz-results-visible");
         void finishQuizTracking(true);
         return;
       }
