@@ -108,9 +108,9 @@
     return true;
   }
 
-  async function runMerge(session) {
+  async function runMerge(session, clientOverride) {
     const user = session?.user || null;
-    const client = window.supabaseClient || null;
+    const client = clientOverride || window.supabaseClient || null;
     if (!user || !client) return false;
 
     const guestId = readGuestId();
@@ -145,7 +145,7 @@
     return true;
   }
 
-  async function merge(session) {
+  async function merge(session, clientOverride) {
     const userId = session?.user?.id || "";
     const guestId = readGuestId() || "";
     const signature = `${userId}|${guestId}`;
@@ -153,7 +153,7 @@
     if (runningMerge && runningSignature === signature) return runningMerge;
 
     runningSignature = signature;
-    runningMerge = runMerge(session).finally(() => {
+    runningMerge = runMerge(session, clientOverride).finally(() => {
       runningMerge = null;
       runningSignature = "";
     });
