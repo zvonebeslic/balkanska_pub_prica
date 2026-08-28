@@ -535,6 +535,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="guest-profile-sync.js"></script>
 
   <script>
     const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
@@ -701,56 +702,14 @@
     let redirectingToProfile = false;
 
     async function syncPendingDaily30AfterLogin(session) {
-      const user = session?.user || null;
-      if (!user || !supabaseClient) return false;
-
-      let guestId = null;
       try {
-        const savedGuest = JSON.parse(localStorage.getItem("kviztogo_guest_identity_v1") || "null");
-        guestId = savedGuest?.id || null;
-      } catch (_) {}
-
-      try {
-        if (guestId) {
-          const attached = await supabaseClient.rpc("daily30_attach_guest_to_current_user", {
-            p_guest_player_key: `guest:${guestId}`
-          });
-          if (attached.error) {
-            console.warn("Daily30 guest rezultat nije spojen nakon prijave:", attached.error);
-          }
+        if (window.KvizGuestProfileSync?.merge) {
+          return await window.KvizGuestProfileSync.merge(session, supabaseClient);
         }
-
-        const mine = await supabaseClient.rpc("daily30_get_my_results");
-        if (mine.error) throw mine.error;
-
-        if (mine.data && typeof mine.data === "object") {
-          localStorage.setItem(
-            `kviztogo_daily30_results_v1:user:${user.id}`,
-            JSON.stringify(mine.data)
-          );
-        }
-
-        localStorage.setItem(
-          "kviztogo_daily30_player_context_v1",
-          JSON.stringify({
-            isGuest: false,
-            userId: user.id,
-            guestId: null,
-            name: String(
-              user.user_metadata?.username ||
-              user.user_metadata?.full_name ||
-              user.user_metadata?.name ||
-              user.email?.split("@")[0] ||
-              "Kvizoman"
-            ).trim().slice(0, 40)
-          })
-        );
-
-        return true;
       } catch (error) {
-        console.warn("Daily30 sinkronizacija nakon prijave nije uspjela:", error);
-        return false;
+        console.warn("Guest → profil sinkronizacija nakon prijave nije uspjela:", error);
       }
+      return false;
     }
 
     async function goToProfile(session) {
