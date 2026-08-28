@@ -1,0 +1,26 @@
+name: Run login guest merge patch
+
+on:
+  push:
+    paths:
+      - 'patch_login_guest_merge.py'
+      - '.github/workflows/run-login-guest-merge-patch.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch login
+        run: python patch_login_guest_merge.py
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add login.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Centralize guest to profile sync on login"
+          git push
