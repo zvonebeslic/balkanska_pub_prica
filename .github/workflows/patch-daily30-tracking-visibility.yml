@@ -1,0 +1,28 @@
+name: Patch Daily30 tracking and visibility
+
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-daily30-tracking-visibility.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply precise patch
+        run: python patch_daily30_tracking_visibility.py
+      - name: Commit patched files
+        run: |
+          if git diff --quiet -- online-kviz.html leaderboards.js; then
+            echo "No changes needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add online-kviz.html leaderboards.js
+          git commit -m "Fix Daily30 tracking and leaderboard visibility"
+          git push
