@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="hr" class="kviz-initial-loading">
 <head>
   <meta charset="UTF-8">
   <!-- Uvijek provjeri najnoviju HTML verziju -->
@@ -37,6 +37,10 @@
   <meta name="twitter:image" content="https://kviztogo.com/images/KvizToGo-kvizovi-i-kviz-pitanja.png">
 
   <style>
+/* Sprijeci kratki prikaz nedovrsenog layouta prije ucitavanja pocetnih skripti. */
+html.kviz-initial-loading { background: #0b1220; }
+html.kviz-initial-loading body { visibility: hidden; }
+
 /* ========================================================= */
 /* 01 RESET I OSNOVNE POSTAVKE */
 /* ========================================================= */
@@ -6730,6 +6734,7 @@ if (!supabaseClient) {
   /* ------------------ INIT ------------------ */
 
   document.addEventListener("DOMContentLoaded", async () => {
+    document.documentElement.classList.remove("kviz-initial-loading");
     initLanguageSwitch();
   initHowToggle();
     initYear();
