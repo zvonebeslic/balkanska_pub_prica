@@ -1,0 +1,26 @@
+name: Patch Daily30 login sync
+
+on:
+  push:
+    paths:
+      - '.github/workflows/patch-login-daily30-sync.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch login Daily30 sync
+        run: python patch_login_daily30_sync.py
+      - name: Commit patch and cleanup helpers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm patch_login_daily30_sync.py .github/workflows/patch-login-daily30-sync.yml
+          git add login.html
+          git diff --cached --check
+          git commit -m "Sync Daily30 immediately after login"
+          git push
