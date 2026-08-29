@@ -5307,7 +5307,6 @@ if (!supabaseClient) {
   }
 
   function markLocalQuestionDiscovered(question) {
-    if (currentMode === "daily30") return;
     if (!question) return;
     const key = String(question.id ?? question.question ?? "");
     if (!key || localStats.discoveredQuestionIds.includes(key)) return;
@@ -5325,7 +5324,7 @@ if (!supabaseClient) {
     currentLocalGameMode = currentMode;
     currentLocalGameTheme = currentThemeTopic;
     localGameActive = true;
-    if (currentLocalGameMode !== "daily30") startLocalPlayClock();
+    startLocalPlayClock();
     updateHistoryDownloadButton();
   }
 
@@ -5335,17 +5334,15 @@ if (!supabaseClient) {
     const answers = Array.isArray(question?.answers) ? question.answers : [];
     const dailyOnly = currentLocalGameMode === "daily30";
 
-    if (!dailyOnly) {
-      localStats.totalCorrect += ok ? 1 : 0;
-      localStats.totalWrong += ok ? 0 : 1;
-    }
+    localStats.totalCorrect += ok ? 1 : 0;
+    localStats.totalWrong += ok ? 0 : 1;
 
     const newlyCollectedRarity = !dailyOnly && ok ? collectRareAnswer(question) : null;
 
     if (ok) {
       currentGameStreak += 1;
       currentGameLongestStreak = Math.max(currentGameLongestStreak, currentGameStreak);
-      if (!dailyOnly) localStats.longestStreak = Math.max(localStats.longestStreak, currentGameStreak);
+      localStats.longestStreak = Math.max(localStats.longestStreak, currentGameStreak);
     } else {
       currentGameStreak = 0;
     }
@@ -5364,7 +5361,7 @@ if (!supabaseClient) {
       rarity: normalizeQuestionRarity(question)
     });
 
-    if (!dailyOnly) saveLocalStats();
+    saveLocalStats();
     if (newlyCollectedRarity) {
       showKvizToast(formatPlayerText("rareCollectedToast", {
         rarity: playerText(getRarityLabelKey(newlyCollectedRarity))
@@ -5375,10 +5372,9 @@ if (!supabaseClient) {
 
   function finalizeLocalGame(completed) {
     if (!localGameActive) return;
-    if (currentLocalGameMode !== "daily30") updateLocalPlayClock(true);
+    updateLocalPlayClock(true);
     stopLocalPlayClock();
     localGameActive = false;
-    if (currentLocalGameMode === "daily30") return;
 
     if (currentGameHistory.length > 0) {
       const total = currentGameHistory.length;
@@ -5389,6 +5385,11 @@ if (!supabaseClient) {
       localStats.bestScore = Math.max(localStats.bestScore, correct);
       localStats.bestPercent = Math.max(localStats.bestPercent, percent);
       localStats.longestStreak = Math.max(localStats.longestStreak, currentGameLongestStreak);
+
+      if (currentLocalGameMode === "daily30") {
+        saveLocalStats();
+        return;
+      }
 
       const modeKey = currentLocalGameMode === "themed"
         ? "themed"
