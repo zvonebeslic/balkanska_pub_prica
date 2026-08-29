@@ -3604,6 +3604,7 @@ if (!supabaseClient) {
       how7: "Themed quizzes do not have a blitz option.",
       how8: "Each question has a praise/feedback button. If you notice an error or inaccuracy, please let us know so we can fix it.",
       how9: "After typing your answer, confirm it by clicking the white checkmark on the green background.",
+      how10: "Daily 30 is a quiz mode in which every player gets the same questions in the same order. The leaderboard shows and ranks players' results, and you can hide your own result if you wish. Only a quiz played on the day it is active counts as an official result and toward the leaderboard. You can still play past Daily 30 quizzes, but those results do not count toward the leaderboard.",
       howAiNote: "We are building this system as a smart AI and it is still under development. If it mistakenly marks your correct answer as incorrect, do not worry too much. The most important thing is that you knew the answer.",
       readMore: "Read more",
       readLess: "Show less",
@@ -3731,6 +3732,11 @@ if (!supabaseClient) {
     });
     const dailyNameInput = document.getElementById("daily30-name-input");
     if (dailyNameInput) dailyNameInput.placeholder = isEnglish ? "Your name" : "Tvoje ime";
+
+    const leaderboardVisibilityTitle = document.querySelector(".leaderboard-visibility-title");
+    if (leaderboardVisibilityTitle) leaderboardVisibilityTitle.textContent = isEnglish ? "Show me on the leaderboard" : "Prikaži me na ljestvici";
+    const leaderboardVisibilityNote = document.querySelector(".leaderboard-visibility-note");
+    if (leaderboardVisibilityNote) leaderboardVisibilityNote.textContent = isEnglish ? "Your result stays saved when hidden." : "Rezultat ostaje spremljen i kad si skriven.";
 
     const btnStart = document.getElementById("btn-start");
     if (btnStart) setStartButtonState(btnStart.dataset.quizState === "running");
