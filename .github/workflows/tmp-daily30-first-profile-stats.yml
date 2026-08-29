@@ -1,0 +1,23 @@
+name: Temporary Daily30 first profile stats patch
+on:
+  push:
+    paths:
+      - '.github/workflows/tmp-daily30-first-profile-stats.yml'
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python .tmp_patch_daily30_first_profile_stats.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add online-kviz.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Count Daily30 profile stats only on first play"
+          git push
