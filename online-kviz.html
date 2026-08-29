@@ -3936,6 +3936,7 @@ if (!supabaseClient) {
   let localGameActive = false;
   let currentLocalGameMode = "blitz60";
   let currentLocalGameTheme = null;
+  let currentDaily30CountsForProfile = true;
   let playerIdentity = { isGuest: true, userId: null, name: "Gost" };
   let guestIdentity = null;
   let toastTimerId = null;
@@ -5307,6 +5308,7 @@ if (!supabaseClient) {
   }
 
   function markLocalQuestionDiscovered(question) {
+    if (currentMode === "daily30" && !currentDaily30CountsForProfile) return;
     if (!question) return;
     const key = String(question.id ?? question.question ?? "");
     if (!key || localStats.discoveredQuestionIds.includes(key)) return;
@@ -5323,8 +5325,14 @@ if (!supabaseClient) {
     currentGameLongestStreak = 0;
     currentLocalGameMode = currentMode;
     currentLocalGameTheme = currentThemeTopic;
+    currentDaily30CountsForProfile = true;
+    if (currentLocalGameMode === "daily30") {
+      const dailyDate = window.KvizDaily30?.getActiveDate?.() || window.KvizDaily30?.getSelectedDate?.() || null;
+      const dailyResults = window.KvizDaily30?.getResults?.() || {};
+      currentDaily30CountsForProfile = Boolean(dailyDate && !dailyResults[dailyDate]);
+    }
     localGameActive = true;
-    startLocalPlayClock();
+    if (currentLocalGameMode !== "daily30" || currentDaily30CountsForProfile) startLocalPlayClock();
     updateHistoryDownloadButton();
   }
 
@@ -5334,15 +5342,20 @@ if (!supabaseClient) {
     const answers = Array.isArray(question?.answers) ? question.answers : [];
     const dailyOnly = currentLocalGameMode === "daily30";
 
-    localStats.totalCorrect += ok ? 1 : 0;
-    localStats.totalWrong += ok ? 0 : 1;
+    const countsForProfile = !dailyOnly || currentDaily30CountsForProfile;
+    if (countsForProfile) {
+      localStats.totalCorrect += ok ? 1 : 0;
+      localStats.totalWrong += ok ? 0 : 1;
+    }
 
-    const newlyCollectedRarity = !dailyOnly && ok ? collectRareAnswer(question) : null;
+    const newlyCollectedRarity = countsForProfile && ok ? collectRareAnswer(question) : null;
 
     if (ok) {
       currentGameStreak += 1;
       currentGameLongestStreak = Math.max(currentGameLongestStreak, currentGameStreak);
-      localStats.longestStreak = Math.max(localStats.longestStreak, currentGameStreak);
+      if (!dailyOnly || currentDaily30CountsForProfile) {
+        localStats.longestStreak = Math.max(localStats.longestStreak, currentGameStreak);
+      }
     } else {
       currentGameStreak = 0;
     }
@@ -5361,7 +5374,7 @@ if (!supabaseClient) {
       rarity: normalizeQuestionRarity(question)
     });
 
-    saveLocalStats();
+    if (!dailyOnly || currentDaily30CountsForProfile) saveLocalStats();
     if (newlyCollectedRarity) {
       showKvizToast(formatPlayerText("rareCollectedToast", {
         rarity: playerText(getRarityLabelKey(newlyCollectedRarity))
@@ -5372,11 +5385,12 @@ if (!supabaseClient) {
 
   function finalizeLocalGame(completed) {
     if (!localGameActive) return;
-    updateLocalPlayClock(true);
+    if (currentLocalGameMode !== "daily30" || currentDaily30CountsForProfile) updateLocalPlayClock(true);
     stopLocalPlayClock();
     localGameActive = false;
 
     if (currentGameHistory.length > 0) {
+      if (currentLocalGameMode === "daily30" && !currentDaily30CountsForProfile) return;
       const total = currentGameHistory.length;
       const correct = currentGameHistory.filter(item => item.isCorrect).length;
       const wrong = total - correct;
