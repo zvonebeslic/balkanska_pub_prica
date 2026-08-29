@@ -1,0 +1,25 @@
+name: Temporary Daily30 language patch
+on:
+  push:
+    paths:
+      - '.github/workflows/tmp-daily30-language-patch.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Apply exact patch
+        run: python .tmp_patch_daily30_language.py
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add online-kviz.html leaderboards.js
+          git diff --cached --check
+          git commit -m "Keep Daily30 history visible and complete EN labels"
+          git push
