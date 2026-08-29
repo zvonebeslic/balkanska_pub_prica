@@ -3703,6 +3703,35 @@ if (!supabaseClient) {
   }
 
   function refreshDynamicLanguageText() {
+    const isEnglish = currentLang === "en";
+
+    const leaderboardTitle = document.getElementById("leaderboard-preview-title");
+    if (leaderboardTitle) leaderboardTitle.textContent = isEnglish ? "🏆 Knowledge leaderboard" : "🏆 Ljestvica znanja";
+
+    const leaderboardSectionTabs = document.querySelector(".leaderboard-section-tabs");
+    if (leaderboardSectionTabs) leaderboardSectionTabs.setAttribute("aria-label", isEnglish ? "Leaderboard type" : "Vrsta ljestvice");
+    const leaderboardMainTab = document.querySelector(".leaderboard-section-tab.active");
+    if (leaderboardMainTab) leaderboardMainTab.textContent = isEnglish ? "Daily 30" : "Dnevnih 30";
+    const leaderboardSoon = document.querySelector(".leaderboard-section-tab--soon small");
+    if (leaderboardSoon) leaderboardSoon.textContent = isEnglish ? "Soon" : "Uskoro";
+    const leaderboardPeriodTabs = document.querySelector(".leaderboard-tabs");
+    if (leaderboardPeriodTabs) leaderboardPeriodTabs.setAttribute("aria-label", isEnglish ? "Leaderboard period" : "Razdoblje ljestvice");
+
+    const dailyCountdown = document.querySelector(".daily30-countdown");
+    if (dailyCountdown) dailyCountdown.setAttribute("aria-label", isEnglish ? "Time until the next quiz" : "Vrijeme do idućeg kviza");
+    const dailyPanel = document.getElementById("daily30-panel");
+    if (dailyPanel) dailyPanel.setAttribute("aria-label", isEnglish ? "Daily 30" : "Dnevnih 30");
+    const dailyPrev = document.getElementById("daily30-month-prev");
+    if (dailyPrev) dailyPrev.setAttribute("aria-label", isEnglish ? "Previous month" : "Prethodni mjesec");
+    const dailyNext = document.getElementById("daily30-month-next");
+    if (dailyNext) dailyNext.setAttribute("aria-label", isEnglish ? "Next month" : "Sljedeći mjesec");
+    const weekdayLabels = isEnglish ? ["MO","TU","WE","TH","FR","SA","SU"] : ["PO","UT","SR","ČE","PE","SU","NE"];
+    document.querySelectorAll(".daily30-weekdays span").forEach((el, index) => {
+      if (weekdayLabels[index]) el.textContent = weekdayLabels[index];
+    });
+    const dailyNameInput = document.getElementById("daily30-name-input");
+    if (dailyNameInput) dailyNameInput.placeholder = isEnglish ? "Your name" : "Tvoje ime";
+
     const btnStart = document.getElementById("btn-start");
     if (btnStart) setStartButtonState(btnStart.dataset.quizState === "running");
 
@@ -7815,6 +7844,7 @@ if (!supabaseClient) {
     setQuizInteractionEnabled(false);
     setStartButtonState(false);
     closeMobileQuizFocus();
+    document.body.classList.add("quiz-results-visible");
 
     const questionTextEl = document.getElementById("question-text");
     if (questionTextEl) {
