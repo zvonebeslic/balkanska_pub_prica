@@ -1,0 +1,23 @@
+name: Temporary hide all-time arrows
+on:
+  push:
+    paths:
+      - '.github/workflows/tmp-hide-alltime-arrows.yml'
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python .tmp_hide_alltime_arrows.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add leaderboards.js
+          git diff --cached --quiet && exit 0
+          git commit -m "Hide navigation on all-time leaderboard"
+          git push
