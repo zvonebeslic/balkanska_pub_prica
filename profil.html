@@ -336,6 +336,7 @@
     }
 
     .my-quizzes-list { display:grid; gap:.7rem; }
+    .my-quizzes-list[hidden] { display:none !important; }
     .my-quiz-card { padding:.85rem; border:1px solid var(--border); border-radius:16px; background:var(--card-soft); display:grid; gap:.38rem; }
     .my-quiz-card.cancelled { border:2px solid var(--red); }
     .my-quiz-title { font-weight:900; font-size:1rem; }
@@ -3417,11 +3418,11 @@ function getInviteUrl() {
       if (showingHistory) {
         history.hidden = true;
         active.hidden = false;
-        button.textContent = "Povijest mojih kvizova";
+        button.textContent = currentLang === "en" ? "My quiz history" : "Povijest mojih kvizova";
       } else {
         active.hidden = true;
         history.hidden = false;
-        button.textContent = "Sakrij povijest";
+        button.textContent = currentLang === "en" ? "Hide history" : "Sakrij povijest";
       }
     });
 

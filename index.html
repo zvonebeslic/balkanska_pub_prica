@@ -1604,10 +1604,7 @@ select option {
                 <div class="legend-inner">
                     <span class="map-hint-label" data-i18n="legendTitle">Legenda boja:</span>
                     <div class="legend-row-group">
-                        <div class="legend-row"><span class="legend-dot legend-dot--green"></span><span data-i18n="legendGreen">danas - 7 dana</span></div>
-                        <div class="legend-row"><span class="legend-dot legend-dot--yellow"></span><span data-i18n="legendYellow">8–14 dana</span></div>
-                        <div class="legend-row"><span class="legend-dot legend-dot--red"></span><span data-i18n="legendRed">15–30 dana</span></div>
-                        <div class="legend-row"><span class="legend-dot legend-dot--grey"></span><span data-i18n="legendGrey">nedavno završeni (do 2 dana)</span></div>
+                        <div class="legend-row"><span class="legend-dot legend-dot--green"></span><span data-i18n="legendGreen">kviz</span></div>
                         <div class="legend-row"><span class="legend-cancelled-x" aria-hidden="true">×</span><span data-i18n="legendCancelled">odgođeno</span></div>
                         <div class="legend-row"><span class="legend-dot legend-dot--black"></span><span data-i18n="legendBlack">tvoja lokacija</span></div>
                     </div>
@@ -1924,8 +1921,7 @@ const LOCATION_STORAGE_KEY = "bpq_user_location_v1";
 
 // vremenski prozori
 const FOUR_HOURS_MS = 4 * 60 * 60 * 1000;
-const UPCOMING_WINDOW_MS = 30 * 86400000;      // ±30 dana
-const FINISHED_VISIBLE_MS = 2 * 86400000;      // završeni vidljivi još 2 dana
+const UPCOMING_WINDOW_MS = 30 * 86400000;      // nadolazeći do 30 dana
 
 /* --- SUPABASE KONFIG --- */
 
@@ -2416,11 +2412,8 @@ const i18n = {
     typeOther: "Ostalo",
     cardListTitle: "5 najbližih kvizova",
     noQuizzes: "Trenutno nema kvizova za odabrane filtere.",
-    legendTitle: "Legenda boja:",
-    legendGreen: "danas - 7 dana",
-    legendYellow: "8–14 dana",
-    legendRed: "15–30 dana",
-    legendGrey: "nedavno završeni (do 2 dana)",
+    legendTitle: "Legenda:",
+    legendGreen: "kviz",
     legendBlack: "tvoja lokacija",
     legendCancelled: "odgođeno",
     modalTitle: "Dodaj novi kviz",
@@ -2534,11 +2527,8 @@ const i18n = {
   typeOther: "Other",
   cardListTitle: "5 nearest quizzes",
   noQuizzes: "There are currently no quizzes for the selected filters.",
-  legendTitle: "Color legend:",
-  legendGreen: "today - 7 days",
-  legendYellow: "8–14 days",
-  legendRed: "15–30 days",
-  legendGrey: "recently finished (up to 2 days)",
+  legendTitle: "Legend:",
+  legendGreen: "quiz",
   legendBlack: "your location",
   legendCancelled: "postponed",
   modalTitle: "Add a new quiz",
@@ -3107,8 +3097,8 @@ async function loadInitialQuizzes() {
     const t = new Date(quiz.datetime).getTime();
     if (Number.isNaN(t)) return false;
     const diff = t - now;
-    // dopuštamo evente od prije max 2 dana do +30 dana
-    return diff >= -FINISHED_VISIBLE_MS && diff <= UPCOMING_WINDOW_MS;
+    // Nadolazeći kvizovi i kvizovi koji su još u postojećem 4-satnom UŽIVO prozoru.
+    return diff >= -FOUR_HOURS_MS && diff <= UPCOMING_WINDOW_MS;
   };
 
   allQuizzes = supabaseQuizzes.filter(withinWindow);
@@ -3165,22 +3155,10 @@ function createMarkerIcon(colorName, cancelled = false) {
   });
 }
 
-function getMarkerColor(quiz) {
-  const now = Date.now();
-  const t = new Date(quiz.datetime).getTime();
-  if (Number.isNaN(t)) return "grey";
-
-  const diff = t - now;
-
-  // finished but još vidljiv
-  if (diff < 0 && diff >= -FINISHED_VISIBLE_MS) return "grey";
-
-  const dayMs = 86400000;
-  const daysAhead = diff / dayMs;
-  if (daysAhead <= 7) return "green";
-  if (daysAhead <= 14) return "yellow";
-  if (daysAhead <= 30) return "red";
-  return "grey";
+function getMarkerColor() {
+  // Svi objavljeni kvizovi koriste isti zeleni marker.
+  // Odgođeni kvizovi se i dalje crtaju zasebnim X markerom.
+  return "green";
 }
 
 /* zoom prema radijusu */
@@ -3604,9 +3582,9 @@ function getFilteredQuizzes() {
       if (userLocation && radiusKm !== null && quiz._distanceKm != null) {
         if (quiz._distanceKm > radiusKm) return false;
       }
-      // vremenski prozor
+      // Nadolazeći + trenutačno UŽIVO; završeni se odmah nakon LIVE prozora uklanjaju.
       const diff = quiz._timeMs - now;
-      return diff >= -FINISHED_VISIBLE_MS && diff <= UPCOMING_WINDOW_MS;
+      return diff >= -FOUR_HOURS_MS && diff <= UPCOMING_WINDOW_MS;
     })
     .sort((a, b) => {
       if (userLocation && a._distanceKm != null && b._distanceKm != null) {
@@ -4461,6 +4439,7 @@ function initAddQuizModal() {
       <div class="quiz-preview-row quiz-preview-description"><strong>${escapeHtml(t.previewDescription || "Opis kviza")}:</strong> ${escapeHtml(quiz.description || "—")}</div>
     `;
 
+    form.classList.add("hidden");
     previewPanel.classList.add("visible");
     previewPanel.hidden = false;
 
@@ -4531,6 +4510,11 @@ function initAddQuizModal() {
 
   previewEditBtn?.addEventListener("click", () => {
     previewPanel?.classList.remove("visible");
+    if (previewPanel) {
+      previewPanel.hidden = true;
+      previewPanel.style.display = "";
+    }
+    form.classList.remove("hidden");
     const header = document.querySelector(".site-header");
     const offset = (header?.getBoundingClientRect().height || 72) + 12;
     const top = form.getBoundingClientRect().top + window.scrollY - offset;
