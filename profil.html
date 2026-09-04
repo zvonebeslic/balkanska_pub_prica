@@ -1,0 +1,3431 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <title>Moj račun | KvizToGo</title>
+  <link rel="canonical" href="https://kviztogo.com/profil.html">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Upravljaj svojim KvizToGo računom, postavkama profila i pozivnicama.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- KvizToGo favicon i ikona za mobitele -->
+  <link rel="icon" type="image/png" href="images/KvizToGo-online-kviz-pitanja.png">
+  <link rel="apple-touch-icon" href="images/KvizToGo-online-kviz-pitanja.png">
+
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --page-bg: #0b1220;
+      --card-bg: #162235;
+      --card-soft: #101b2d;
+      --blue: #2f80ff;
+      --blue-dark: #1d5fd6;
+      --blue-soft: rgba(47, 128, 255, 0.18);
+      --green: #22c55e;
+      --green-dark: #169447;
+      --red: #ef4444;
+      --red-soft: rgba(239, 68, 68, 0.14);
+      --text-main: #f5f7fb;
+      --text-muted: #a8b3c7;
+      --border: rgba(148, 163, 184, 0.22);
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+    }
+
+    html, body { min-height: 100%; }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(47, 128, 255, 0.14), transparent 42%),
+        radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.10), transparent 38%),
+        var(--page-bg);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+    }
+
+    button, input { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: grid;
+      grid-template-columns: 52px 1fr 52px;
+      align-items: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      background: #000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.28);
+    }
+
+    .header-side {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-side--left { justify-content: flex-start; }
+    .header-side--right { justify-content: flex-end; }
+
+    .brand-logo {
+      justify-self: center;
+      display: inline-flex;
+      align-items: baseline;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      font-size: clamp(2rem, 7vw, 4rem);
+      text-transform: none;
+    }
+
+    .logo-kviz { color: #fff; }
+    .logo-to { color: var(--blue); }
+    .logo-go { color: var(--green); }
+
+    .header-btn,
+    .flag-toggle {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .header-btn:hover,
+    .flag-toggle:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .header-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .flag-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-size: 1.15rem;
+      background: var(--blue-soft);
+    }
+
+    .flag-icon::before { content: "🇭🇷"; }
+    .flag-toggle[data-current-lang="en"] .flag-icon::before { content: "🇬🇧"; }
+    
+    .page-shell {
+      width: min(760px, calc(100% - 1.2rem));
+      margin: 1rem auto 1.4rem;
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .back-map-row {
+  width: min(760px, calc(100% - 1.2rem));
+  margin: 0.65rem auto 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-btn {
+  min-height: 42px;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 850;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(47, 128, 255, 0.16);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 768px) {
+  .back-map-row {
+    width: calc(100% - 0.8rem);
+    margin-top: 0.55rem;
+  }
+
+  .back-map-row .nav-btn {
+    min-height: 38px;
+    padding: 0.42rem 0.78rem;
+    font-size: 0.8rem;
+  }
+}
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .card h1,
+    .card h2 {
+      letter-spacing: -0.03em;
+    }
+
+    .card h1 { font-size: 1.35rem; }
+    .card h2 { font-size: 1.05rem; }
+
+    .icon-btn {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .icon-btn:hover { background: rgba(255, 255, 255, 0.12); }
+
+    .icon-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .account-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 0.75rem;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .account-row:last-child { border-bottom: 0; }
+
+    .account-label {
+      color: var(--text-muted);
+      font-size: 0.79rem;
+      margin-bottom: 0.18rem;
+    }
+
+    .account-value {
+      font-weight: 850;
+      overflow-wrap: anywhere;
+    }
+
+    .edit-btn {
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .edit-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .edit-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .section-copy {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 0.65rem;
+    }
+
+    .btn {
+      width: 100%;
+      min-height: 47px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      padding: 0.65rem 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      text-decoration: none;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .btn + .btn { margin-top: 0.55rem; }
+
+    .btn--blue {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    .btn--blue:hover { background: var(--blue-dark); }
+
+    .btn--green {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+    }
+
+    .btn--green:hover { background: var(--green-dark); }
+
+    .btn--soft {
+      background: rgba(255, 255, 255, 0.07);
+      color: #fff;
+    }
+
+    .btn--danger {
+      background: var(--red-soft);
+      border-color: rgba(239, 68, 68, 0.45);
+      color: #fecaca;
+    }
+
+    .btn--disabled {
+      background: rgba(148, 163, 184, 0.10);
+      color: #718096;
+      cursor: not-allowed;
+      opacity: 0.8;
+    }
+
+    .my-quizzes-list { display:grid; gap:.7rem; }
+    .my-quiz-card { padding:.85rem; border:1px solid var(--border); border-radius:16px; background:var(--card-soft); display:grid; gap:.38rem; }
+    .my-quiz-card.cancelled { border:2px solid var(--red); }
+    .my-quiz-title { font-weight:900; font-size:1rem; }
+    .my-quiz-meta { color:var(--text-muted); font-size:.82rem; line-height:1.45; overflow-wrap:anywhere; }
+    .my-quiz-actions { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; margin-top:.35rem; }
+    .history-toggle { width:auto; min-height:36px; padding:.4rem .75rem; font-size:.78rem; }
+    .empty-state { color:var(--text-muted); padding:.5rem 0; }
+
+    .invite-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+
+    .invite-grid .btn {
+      margin-top: 0;
+      min-height: 40px;
+      padding: 0.45rem 0.65rem;
+      font-size: 0.78rem;
+      gap: 0.35rem;
+    }
+
+    .btn--viber {
+      background: #7360f2;
+      border-color: #7360f2;
+      color: #fff;
+    }
+
+    .btn--messenger {
+      background: #168aff;
+      border-color: #168aff;
+      color: #fff;
+    }
+
+    .settings-wrap {
+      position: relative;
+    }
+
+    .settings-menu {
+      position: absolute;
+      top: calc(100% + 0.45rem);
+      right: 0;
+      z-index: 30;
+      width: min(270px, calc(100vw - 2rem));
+      padding: 0.55rem;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #101b2d;
+      box-shadow: var(--shadow);
+      display: none;
+    }
+
+    .settings-menu.is-open { display: block; }
+
+    .settings-menu button {
+      width: 100%;
+      min-height: 43px;
+      padding: 0.6rem 0.75rem;
+      border: 0;
+      border-radius: 12px;
+      background: transparent;
+      color: #fff;
+      text-align: left;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .settings-menu button:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .settings-menu .danger { color: #fca5a5; }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.68);
+      backdrop-filter: blur(5px);
+    }
+
+    .modal-backdrop.is-open { display: flex; }
+
+    .modal {
+      width: min(560px, 100%);
+      max-height: calc(100vh - 2rem);
+      overflow-y: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .modal-close {
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .field-label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .field-input {
+      width: 100%;
+      min-height: 46px;
+      padding: 0.7rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: var(--card-soft);
+      color: #fff;
+      outline: none;
+    }
+
+    .field-input:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 4px var(--blue-soft);
+    }
+
+    .field-help,
+    .modal-message {
+      margin-top: 0.45rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+
+    .modal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.55rem;
+      margin-top: 0.9rem;
+    }
+
+    .modal-actions .btn { margin: 0; }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 1.2rem;
+      z-index: 3000;
+      transform: translateX(-50%) translateY(120px);
+      max-width: calc(100% - 2rem);
+      padding: 0.7rem 1rem;
+      border-radius: var(--radius-pill);
+      background: #0f5132;
+      color: #dcfce7;
+      font-size: 0.85rem;
+      font-weight: 850;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.22s ease, opacity 0.22s ease;
+    }
+
+    .toast.is-visible {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .site-footer {
+      margin-top: auto;
+      padding: 1rem;
+      text-align: center;
+      background: #000;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.8rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    @media (max-width: 640px) {
+      .site-header {
+        grid-template-columns: 46px 1fr 46px;
+        padding: 0.55rem 0.65rem;
+      }
+
+      .header-btn,
+      .flag-toggle {
+        width: 39px;
+        height: 39px;
+      }
+
+      .brand-logo {
+        font-size: clamp(2rem, 12vw, 3.1rem);
+      }
+
+      .modal-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .invite-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.45rem;
+      }
+
+      .invite-grid .btn {
+        min-height: 38px;
+        padding: 0.4rem 0.45rem;
+        font-size: 0.72rem;
+      }
+    }
+  /* ========================================================= */
+/* 09 PROFIL ZNANJA, KVIZ KOLEKCIJE I NAJAVE */
+/* ========================================================= */
+.future-mode-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.55rem;
+}
+
+.future-mode-btn {
+  position: relative;
+  opacity: 0.88;
+}
+
+.future-mode-btn:disabled {
+  cursor: default;
+  opacity: 0.78;
+}
+
+.coming-pill,
+.preview-pill {
+  margin-left: 0.2rem;
+  padding: 0.12rem 0.42rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.62rem;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.coming-pill {
+  color: #d8e8ff;
+  border: 1px solid rgba(47, 128, 255, 0.45);
+  background: rgba(47, 128, 255, 0.13);
+}
+
+.preview-pill {
+  color: #e8fff0;
+  border: 1px solid rgba(34, 197, 94, 0.42);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.knowledge-roadmap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.knowledge-feature-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 190px;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, rgba(22, 34, 53, 0.97), rgba(16, 27, 45, 0.98));
+  box-shadow: var(--shadow-soft);
+}
+
+.knowledge-feature-card::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  right: -70px;
+  top: -80px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(47, 128, 255, 0.10);
+  filter: blur(1px);
+}
+
+.knowledge-feature-card--collections {
+  border-color: rgba(34, 197, 94, 0.32);
+}
+
+.knowledge-feature-card--collections::after {
+  background: rgba(34, 197, 94, 0.10);
+}
+
+.knowledge-feature-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.55rem;
+  color: #d8e8ff;
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.knowledge-feature-card--collections .knowledge-feature-kicker {
+  color: #e8fff0;
+}
+
+.knowledge-feature-title {
+  position: relative;
+  z-index: 1;
+  font-size: 1.15rem;
+  font-weight: 950;
+  letter-spacing: -0.025em;
+}
+
+.knowledge-feature-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 52ch;
+  margin-top: 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.knowledge-feature-btn {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 0.8rem;
+  padding: 0.48rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(34, 197, 94, 0.58);
+  background: rgba(34, 197, 94, 0.14);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.knowledge-feature-btn:hover {
+  background: rgba(34, 197, 94, 0.23);
+}
+
+.knowledge-feature-btn:disabled {
+  border-color: rgba(47, 128, 255, 0.42);
+  background: rgba(47, 128, 255, 0.10);
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.player-panel {
+  width: min(430px, calc(100% - 24px));
+}
+
+.player-panel-header {
+  margin-bottom: 0.7rem;
+}
+
+.player-panel-subtitle {
+  line-height: 1.35;
+}
+
+.player-login-note--hero {
+  margin-top: 0;
+  border-color: rgba(34, 197, 94, 0.38);
+  background:
+    radial-gradient(circle at top right, rgba(34, 197, 94, 0.12), transparent 45%),
+    rgba(34, 197, 94, 0.055);
+}
+
+.player-login-note--hero strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.player-login-note--hero a {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 0.7rem;
+  padding: 0.62rem 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.86rem;
+  line-height: 1.2;
+  border-color: rgba(34, 197, 94, 0.68);
+  background: rgba(34, 197, 94, 0.18);
+}
+
+.player-login-note--hero a:hover {
+  background: rgba(34, 197, 94, 0.28);
+}
+
+.player-knowledge-overview,
+.player-mode-section,
+.player-collection-card,
+.player-multiplayer-card {
+  margin-top: 0.7rem;
+  padding: 0.82rem;
+  border-radius: 17px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.052);
+}
+
+.player-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.player-section-title {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 950;
+}
+
+.player-section-copy {
+  margin-top: 0.16rem;
+  color: var(--text-muted);
+  font-size: 0.69rem;
+  line-height: 1.38;
+}
+
+.player-section-chip {
+  flex: 0 0 auto;
+  padding: 0.18rem 0.48rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(47, 128, 255, 0.42);
+  background: rgba(47, 128, 255, 0.12);
+  color: #d8e8ff;
+  font-size: 0.64rem;
+  font-weight: 900;
+}
+
+.player-overview-grid,
+.player-mode-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.48rem;
+  margin-top: 0.68rem;
+}
+
+.player-overview-stat,
+.player-mode-stat {
+  min-width: 0;
+  padding: 0.62rem;
+  border-radius: 13px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.player-overview-stat-label,
+.player-mode-stat-label {
+  color: var(--text-muted);
+  font-size: 0.64rem;
+  line-height: 1.3;
+}
+
+.player-overview-stat-value,
+.player-mode-stat-value {
+  margin-top: 0.2rem;
+  color: #ffffff;
+  font-size: 1.08rem;
+  font-weight: 950;
+  line-height: 1.1;
+}
+
+.player-knowledge-progress,
+.player-collection-progress {
+  margin-top: 0.68rem;
+}
+
+.player-progress-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+}
+
+.player-progress-caption strong {
+  color: #ffffff;
+}
+
+.player-mode-section--blitz {
+  border-color: rgba(47, 128, 255, 0.38);
+  background:
+    radial-gradient(circle at top right, rgba(47, 128, 255, 0.11), transparent 42%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.player-mode-section--relax {
+  border-color: rgba(34, 197, 94, 0.30);
+}
+
+.player-mode-section--themed {
+  border-color: rgba(148, 163, 184, 0.28);
+}
+
+.player-mode-section--daily30 {
+  border-color: rgba(250, 204, 21, 0.38);
+  background:
+    radial-gradient(circle at top right, rgba(250, 204, 21, 0.10), transparent 42%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.player-blitz-rank {
+  margin-top: 0.6rem;
+  padding: 0.52rem 0.62rem;
+  border-radius: 12px;
+  border: 1px solid rgba(47, 128, 255, 0.30);
+  background: rgba(47, 128, 255, 0.09);
+  color: #d8e8ff;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.player-blitz-rank[hidden] {
+  display: none;
+}
+
+.player-collection-card {
+  border-color: rgba(34, 197, 94, 0.38);
+  background:
+    radial-gradient(circle at bottom left, rgba(34, 197, 94, 0.11), transparent 46%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.player-collection-btn {
+  width: 100%;
+  min-height: 42px;
+  margin-top: 0.7rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(34, 197, 94, 0.58);
+  background: rgba(34, 197, 94, 0.16);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.player-collection-btn:hover {
+  background: rgba(34, 197, 94, 0.26);
+}
+
+.player-multiplayer-card {
+  opacity: 0.84;
+  border-style: dashed;
+  border-color: rgba(47, 128, 255, 0.36);
+}
+
+
+.player-stat-sub {
+  margin-top: 0.24rem;
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  line-height: 1.25;
+}
+
+.player-rare-card,
+.player-upcoming-card {
+  margin-top: 0.7rem;
+  padding: 0.82rem;
+  border-radius: 17px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.052);
+}
+
+.player-rare-card {
+  border-color: rgba(250, 204, 21, 0.25);
+  background:
+    radial-gradient(circle at top right, rgba(250, 204, 21, 0.075), transparent 42%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.player-rare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.48rem;
+  margin-top: 0.68rem;
+}
+
+.player-rare-stat {
+  min-width: 0;
+  padding: 0.62rem;
+  border-radius: 13px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.player-rare-stat-label {
+  font-size: 0.66rem;
+  font-weight: 900;
+}
+
+.player-rare-stat-value {
+  margin-top: 0.2rem;
+  color: #ffffff;
+  font-size: 1.06rem;
+  font-weight: 950;
+}
+
+.player-rare-stat--silver {
+  border-color: rgba(203, 213, 225, 0.46);
+  background: rgba(203, 213, 225, 0.065);
+}
+.player-rare-stat--silver .player-rare-stat-label { color: #dbe4ef; }
+
+.player-rare-stat--golden {
+  border-color: rgba(250, 204, 21, 0.48);
+  background: rgba(250, 204, 21, 0.075);
+}
+.player-rare-stat--golden .player-rare-stat-label { color: #fde68a; }
+
+.player-rare-stat--platinum {
+  border-color: rgba(34, 211, 238, 0.42);
+  background: rgba(8, 145, 178, 0.085);
+}
+.player-rare-stat--platinum .player-rare-stat-label { color: #a5f3fc; }
+
+.player-rare-stat--legendary {
+  border-color: rgba(249, 115, 22, 0.48);
+  background: linear-gradient(135deg, rgba(120, 53, 15, 0.11), rgba(249, 115, 22, 0.075));
+}
+.player-rare-stat--legendary .player-rare-stat-label { color: #fdba74; }
+
+.player-games-toggle {
+  width: max-content;
+  max-width: 100%;
+  min-height: 42px;
+  margin: 0.72rem auto 0;
+  padding: 0.48rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(47, 128, 255, 0.48);
+  background: rgba(47, 128, 255, 0.13);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.player-games-toggle:hover { background: rgba(47, 128, 255, 0.22); }
+.player-games-toggle-icon { transition: transform 0.25s ease; }
+.player-games-toggle[aria-expanded="true"] .player-games-toggle-icon { transform: rotate(180deg); }
+
+.player-games-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.player-games-details.open { grid-template-rows: 1fr; }
+.player-games-details-inner { min-height: 0; overflow: hidden; }
+
+.player-upcoming-card {
+  opacity: 0.84;
+  border-style: dashed;
+}
+.player-upcoming-card--collections { border-color: rgba(34, 197, 94, 0.34); }
+.player-upcoming-card--multiplayer { border-color: rgba(47, 128, 255, 0.36); }
+
+.question-rarity-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.1rem;
+  padding: 0.13rem 0.48rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid currentColor;
+  font-size: 0.66rem;
+  font-weight: 950;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.question-rarity-badge[hidden] { display: none; }
+
+.quiz-card.rarity-silver {
+  border-color: rgba(203, 213, 225, 0.62);
+  background:
+    radial-gradient(circle at top right, rgba(203, 213, 225, 0.11), transparent 46%),
+    var(--card-bg);
+  box-shadow: 0 12px 32px rgba(203, 213, 225, 0.09), var(--shadow-soft);
+}
+.quiz-card.rarity-golden {
+  border-color: rgba(250, 204, 21, 0.66);
+  background:
+    radial-gradient(circle at top right, rgba(250, 204, 21, 0.13), transparent 48%),
+    var(--card-bg);
+  box-shadow: 0 12px 34px rgba(250, 204, 21, 0.12), var(--shadow-soft);
+}
+.quiz-card.rarity-platinum {
+  border-color: rgba(34, 211, 238, 0.58);
+  background:
+    radial-gradient(circle at top right, rgba(8, 145, 178, 0.16), transparent 48%),
+    var(--card-bg);
+  box-shadow: 0 12px 34px rgba(8, 145, 178, 0.14), var(--shadow-soft);
+}
+.quiz-card.rarity-legendary {
+  border-color: rgba(249, 115, 22, 0.68);
+  background:
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.16), transparent 43%),
+    radial-gradient(circle at bottom left, rgba(120, 53, 15, 0.16), transparent 47%),
+    var(--card-bg);
+  box-shadow: 0 12px 36px rgba(249, 115, 22, 0.15), var(--shadow-soft);
+}
+
+.question-rarity-badge.rarity-silver { color: #dbe4ef; background: rgba(203, 213, 225, 0.08); }
+.question-rarity-badge.rarity-golden { color: #fde68a; background: rgba(250, 204, 21, 0.09); }
+.question-rarity-badge.rarity-platinum { color: #a5f3fc; background: rgba(8, 145, 178, 0.11); }
+.question-rarity-badge.rarity-legendary { color: #fdba74; background: rgba(120, 53, 15, 0.13); }
+
+.collection-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1780;
+  background: rgba(0, 0, 0, 0.68);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.collection-modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.collection-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1790;
+  width: min(920px, calc(100% - 24px));
+  max-height: min(780px, calc(100dvh - 24px));
+  overflow-y: auto;
+  transform: translate(-50%, calc(-50% + 18px));
+  opacity: 0;
+  visibility: hidden;
+  padding: 1rem;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.13), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(47, 128, 255, 0.13), transparent 36%),
+    #0d1727;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.64);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.collection-modal.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+.collection-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.collection-modal-title {
+  font-size: 1.3rem;
+  font-weight: 950;
+  letter-spacing: -0.035em;
+}
+
+.collection-modal-copy {
+  max-width: 68ch;
+  margin-top: 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  line-height: 1.48;
+}
+
+.collection-modal-close {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.collection-summary-card {
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 16px;
+  border: 1px solid rgba(34, 197, 94, 0.34);
+  background: rgba(34, 197, 94, 0.07);
+}
+
+.collection-summary-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.collection-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.collection-filter {
+  padding: 0.38rem 0.72rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.collection-filter.active {
+  border-color: rgba(47, 128, 255, 0.58);
+  background: rgba(47, 128, 255, 0.16);
+  color: #ffffff;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.62rem;
+  margin-top: 0.72rem;
+}
+
+.collection-item {
+  min-width: 0;
+  min-height: 150px;
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.collection-item.completed {
+  border-color: rgba(34, 197, 94, 0.55);
+  background: rgba(34, 197, 94, 0.09);
+}
+
+.collection-item.not-played,
+.collection-item.upcoming {
+  color: var(--text-muted);
+}
+
+.collection-item-title {
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 920;
+  line-height: 1.32;
+}
+
+.collection-item-meta {
+  margin-top: 0.3rem;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.collection-item-status {
+  display: inline-flex;
+  margin-top: 0.65rem;
+  padding: 0.18rem 0.48rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  font-size: 0.64rem;
+  font-weight: 900;
+}
+
+.collection-item.completed .collection-item-status {
+  border-color: rgba(34, 197, 94, 0.48);
+  background: rgba(34, 197, 94, 0.12);
+  color: #e8fff0;
+}
+
+body.collection-modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .knowledge-roadmap { grid-template-columns: 1fr; }
+  .knowledge-feature-card { min-height: 0; }
+  .collection-modal { width: calc(100% - 12px); max-height: calc(100dvh - 12px); padding: 0.8rem; border-radius: 18px; }
+  .collection-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ========================================================= */
+/* 10 MOJA POSTIGNUĆA, RAZINE I KRUNE */
+/* ========================================================= */
+.player-achievements-toggle {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 0.7rem;
+  padding: 0.66rem 0.78rem;
+  border-radius: 17px;
+  border: 1px solid rgba(47, 128, 255, 0.48);
+  background:
+    radial-gradient(circle at top right, rgba(34, 197, 94, 0.11), transparent 44%),
+    rgba(47, 128, 255, 0.10);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.player-achievements-toggle:hover {
+  background:
+    radial-gradient(circle at top right, rgba(34, 197, 94, 0.16), transparent 44%),
+    rgba(47, 128, 255, 0.17);
+}
+
+.player-achievements-toggle-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+
+.player-achievements-toggle-title {
+  font-size: 0.92rem;
+  font-weight: 950;
+}
+
+.player-achievements-toggle-subtitle {
+  color: var(--text-muted);
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+.player-achievements-toggle-icon {
+  flex: 0 0 auto;
+  font-size: 1rem;
+  color: #d8e8ff;
+  transition: transform 0.25s ease;
+}
+
+.player-achievements-toggle[aria-expanded="true"] .player-achievements-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.player-achievements-details,
+.player-levels-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.player-achievements-details.open,
+.player-levels-details.open {
+  grid-template-rows: 1fr;
+}
+
+.player-achievements-details-inner,
+.player-levels-details-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.player-level-card,
+.player-crowns-card {
+  margin-top: 0.7rem;
+  padding: 0.82rem;
+  border-radius: 17px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.052);
+}
+
+.player-level-card {
+  border-color: rgba(47, 128, 255, 0.40);
+  background:
+    radial-gradient(circle at top right, rgba(47, 128, 255, 0.13), transparent 44%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.player-level-current {
+  margin-top: 0.72rem;
+  padding: 0.76rem;
+  border-radius: 15px;
+  border: 1px solid rgba(34, 197, 94, 0.34);
+  background: rgba(34, 197, 94, 0.075);
+}
+
+.player-level-name {
+  color: #ffffff;
+  font-size: 1.22rem;
+  font-weight: 950;
+  letter-spacing: -0.025em;
+}
+
+.player-level-points {
+  margin-top: 0.18rem;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
+.player-progress-track {
+  height: 10px;
+  margin-top: 0.55rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.player-progress-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--blue), var(--green));
+  transition: width 0.25s ease;
+}
+
+/* Razina znanja: tamno zlatna na početku, jarko zlatna prema kraju. */
+#player-level-progress-fill {
+  --level-progress: 0%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #5a3900 0%,
+    #8a5a00 28%,
+    #b77908 52%,
+    #f0b90b 78%,
+    #ffd700 100%
+  );
+  clip-path: inset(0 calc(100% - var(--level-progress)) 0 0);
+  transition: clip-path 0.28s ease, filter 0.28s ease;
+}
+
+#player-level-progress-fill.is-complete {
+  filter: drop-shadow(0 0 7px rgba(255, 215, 0, 0.78));
+}
+
+.player-level-progress-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.62rem;
+  color: var(--text-muted);
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+.player-level-progress-caption strong { color: #ffffff; }
+
+.player-level-remaining {
+  margin-top: 0.38rem;
+  color: #d8e8ff;
+  font-size: 0.66rem;
+  line-height: 1.35;
+}
+
+.player-levels-toggle {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 0.65rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(47, 128, 255, 0.44);
+  background: rgba(47, 128, 255, 0.11);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.player-levels-toggle:hover { background: rgba(47, 128, 255, 0.20); }
+
+.player-levels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+  margin-top: 0.62rem;
+}
+
+.player-level-row {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.48rem;
+  padding: 0.52rem 0.58rem;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(0, 0, 0, 0.14);
+  color: var(--text-muted);
+  font-size: 0.68rem;
+}
+
+.player-level-row.completed {
+  border-color: rgba(34, 197, 94, 0.34);
+  background: rgba(34, 197, 94, 0.07);
+  color: #e8fff0;
+}
+
+.player-level-row.current {
+  border-color: rgba(47, 128, 255, 0.66);
+  background: rgba(47, 128, 255, 0.15);
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(47, 128, 255, 0.10);
+}
+
+.player-level-row-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.64rem;
+  font-weight: 950;
+}
+
+.player-level-row.completed .player-level-row-icon {
+  border-color: rgba(34, 197, 94, 0.48);
+  background: rgba(34, 197, 94, 0.14);
+  color: #ffffff;
+}
+
+.player-level-row.current .player-level-row-icon {
+  border-color: rgba(47, 128, 255, 0.62);
+  background: rgba(47, 128, 255, 0.22);
+}
+
+.player-level-row-name { font-weight: 900; }
+.player-level-row-range { white-space: nowrap; font-size: 0.62rem; }
+
+.player-crowns-card {
+  border-color: rgba(34, 197, 94, 0.30);
+  background:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.09), transparent 42%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.achievement-group { margin-top: 0.9rem; }
+.achievement-group:first-child { margin-top: 0.72rem; }
+
+.achievement-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.48rem;
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 950;
+}
+
+.achievement-group-count {
+  color: var(--text-muted);
+  font-size: 0.61rem;
+  font-weight: 850;
+}
+
+.achievement-crown-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.46rem;
+}
+
+.achievement-crown-card {
+  position: relative;
+  min-width: 0;
+  min-height: 142px;
+  overflow: hidden;
+  padding: 0.52rem 0.42rem 0.48rem;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(0, 0, 0, 0.31);
+  text-align: center;
+}
+
+.achievement-crown-card.locked::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.44));
+}
+
+.achievement-crown-card.unlocked {
+  border-color: rgba(34, 197, 94, 0.56);
+  background:
+    radial-gradient(circle at 50% 31%, rgba(34, 197, 94, 0.27), transparent 39%),
+    linear-gradient(150deg, rgba(47, 128, 255, 0.11), rgba(34, 197, 94, 0.08));
+  box-shadow: inset 0 0 18px rgba(34, 197, 94, 0.07), 0 7px 18px rgba(0, 0, 0, 0.22);
+}
+
+.achievement-crown-wrap {
+  position: relative;
+  z-index: 1;
+  width: 54px;
+  height: 48px;
+  margin: 0 auto 0.32rem;
+  display: grid;
+  place-items: center;
+}
+
+.achievement-crown-svg {
+  width: 52px;
+  height: 44px;
+  overflow: visible;
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.46));
+}
+
+.achievement-crown-card.locked .achievement-crown-svg {
+  opacity: 0.42;
+  filter: brightness(0.30) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.54));
+}
+
+.achievement-crown-title,
+.achievement-crown-condition,
+.achievement-crown-progress {
+  position: relative;
+  z-index: 1;
+}
+
+.achievement-crown-title {
+  color: #ffffff;
+  font-size: 0.66rem;
+  font-weight: 950;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.achievement-crown-condition {
+  margin-top: 0.22rem;
+  color: var(--text-muted);
+  font-size: 0.56rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.achievement-crown-progress {
+  display: inline-flex;
+  margin-top: 0.34rem;
+  padding: 0.11rem 0.32rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  color: var(--text-muted);
+  font-size: 0.56rem;
+  font-weight: 900;
+}
+
+.achievement-crown-card.unlocked .achievement-crown-progress {
+  border-color: rgba(34, 197, 94, 0.46);
+  background: rgba(34, 197, 94, 0.13);
+  color: #ffffff;
+}
+
+.achievement-upcoming-card {
+  margin-top: 0.7rem;
+  padding: 0.76rem;
+  border-radius: 15px;
+  border-style: dashed;
+  background: rgba(255, 255, 255, 0.035);
+  opacity: 0.88;
+}
+
+.achievement-upcoming-card--collections { border: 1px dashed rgba(34, 197, 94, 0.46); }
+.achievement-upcoming-card--multiplayer { border: 1px dashed rgba(47, 128, 255, 0.50); }
+
+@media (max-width: 360px) {
+  .achievement-crown-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+
+
+
+    .profile-progress-area {
+      display: grid;
+      gap: 0;
+      min-width: 0;
+    }
+
+    .profile-progress-status {
+      display: none;
+      margin-bottom: 0.7rem;
+      padding: 0.72rem 0.82rem;
+      border-radius: 16px;
+      border: 1px solid rgba(47, 128, 255, 0.42);
+      background: rgba(47, 128, 255, 0.10);
+      color: #d8e8ff;
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .profile-progress-status.visible { display: block; }
+    .profile-progress-status.error {
+      border-color: rgba(239, 68, 68, 0.48);
+      background: rgba(239, 68, 68, 0.10);
+      color: #fecaca;
+    }
+
+    @media (min-width: 641px) {
+      .achievement-crown-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+  
+
+/* ========================================================= */
+/* 11 DREČAVIJI PROFIL, RAZINE I RIJETKA PITANJA */
+/* ========================================================= */
+.player-achievements-toggle,
+.player-games-toggle {
+  border-color: #72a9ff;
+  background: linear-gradient(135deg, #2f80ff 0%, #1769e8 100%);
+  box-shadow:
+    0 0 23px rgba(47, 128, 255, 0.46),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+.player-achievements-toggle:hover,
+.player-games-toggle:hover {
+  background: linear-gradient(135deg, #438dff 0%, #2375f4 100%);
+  box-shadow:
+    0 0 29px rgba(47, 128, 255, 0.60),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.player-achievements-toggle-subtitle,
+.player-achievements-toggle-icon {
+  color: #eaf3ff;
+}
+
+.player-level-card,
+.player-knowledge-overview,
+.player-mode-section,
+.player-collection-card,
+.player-crowns-card,
+.player-rare-card {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.player-level-card {
+  border-color: rgba(86, 153, 255, 0.72);
+  background:
+    radial-gradient(circle at top right, rgba(47, 128, 255, 0.28), transparent 45%),
+    linear-gradient(145deg, rgba(27, 48, 82, 0.98), rgba(16, 30, 52, 0.98));
+}
+
+.player-level-current {
+  border-color: rgba(63, 230, 126, 0.68);
+  background:
+    radial-gradient(circle at top right, rgba(34, 197, 94, 0.22), transparent 48%),
+    rgba(34, 197, 94, 0.12);
+  box-shadow: 0 0 21px rgba(34, 197, 94, 0.13);
+}
+
+.player-section-chip {
+  border-color: rgba(93, 161, 255, 0.80);
+  background: rgba(47, 128, 255, 0.26);
+  color: #ffffff;
+  box-shadow: 0 0 13px rgba(47, 128, 255, 0.24);
+}
+
+.player-levels-toggle {
+  border-color: #72a9ff;
+  background: rgba(47, 128, 255, 0.28);
+  box-shadow: 0 0 16px rgba(47, 128, 255, 0.22);
+}
+.player-levels-toggle:hover { background: rgba(47, 128, 255, 0.42); }
+
+.player-level-progress-route {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.52rem;
+  margin-top: 0.58rem;
+}
+
+.player-level-route-start {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 2px solid #ffe785;
+  background:
+    radial-gradient(circle at 34% 28%, #fff7bc 0%, #ffd700 30%, #f3a800 72%, #9b5d00 100%);
+  color: #312000;
+  font-size: 0.84rem;
+  font-weight: 1000;
+  box-shadow:
+    0 0 12px rgba(255, 215, 0, 0.72),
+    0 0 25px rgba(255, 183, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.player-level-route-next {
+  min-width: 72px;
+  max-width: 122px;
+  padding: 0.38rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(90, 160, 255, 0.86);
+  background: linear-gradient(135deg, rgba(47, 128, 255, 0.38), rgba(26, 97, 218, 0.34));
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 950;
+  line-height: 1.18;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(47, 128, 255, 0.25);
+  overflow-wrap: anywhere;
+}
+
+.player-level-progress-route .player-progress-track {
+  height: 13px;
+  margin-top: 0;
+  border: 1px solid rgba(255, 231, 133, 0.28);
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.35), 0 0 10px rgba(255, 215, 0, 0.10);
+}
+
+#player-level-progress-fill {
+  background: linear-gradient(90deg, #fff16a 0%, #ffd700 48%, #ffb000 100%);
+  box-shadow:
+    0 0 8px rgba(255, 227, 73, 0.78),
+    0 0 15px rgba(255, 183, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+#player-level-progress-fill.is-complete {
+  filter: drop-shadow(0 0 9px rgba(255, 225, 68, 0.92));
+}
+
+.player-rare-card {
+  border-color: rgba(255, 210, 74, 0.56);
+  background:
+    radial-gradient(circle at top right, rgba(250, 204, 21, 0.19), transparent 43%),
+    linear-gradient(145deg, rgba(36, 42, 58, 0.98), rgba(20, 30, 48, 0.98));
+}
+
+.player-rare-stat {
+  position: relative;
+  overflow: hidden;
+  border-width: 1px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.player-rare-stat::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: -30px;
+  top: -34px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.09;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.player-rare-stat--silver {
+  border-color: rgba(228, 237, 248, 0.86);
+  background: linear-gradient(135deg, rgba(218, 228, 240, 0.20), rgba(100, 116, 139, 0.12));
+  box-shadow: 0 0 18px rgba(203, 213, 225, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.player-rare-stat--silver .player-rare-stat-label { color: #f3f7fc; text-shadow: 0 0 9px rgba(226, 232, 240, 0.45); }
+
+.player-rare-stat--golden {
+  border-color: rgba(255, 222, 85, 0.90);
+  background: linear-gradient(135deg, rgba(250, 204, 21, 0.24), rgba(180, 112, 0, 0.13));
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.23), inset 0 1px 0 rgba(255, 244, 180, 0.13);
+}
+.player-rare-stat--golden .player-rare-stat-label { color: #fff3a5; text-shadow: 0 0 10px rgba(250, 204, 21, 0.58); }
+
+.player-rare-stat--platinum {
+  border-color: rgba(120, 235, 255, 0.88);
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.23), rgba(3, 105, 161, 0.15));
+  box-shadow: 0 0 21px rgba(34, 211, 238, 0.22), inset 0 1px 0 rgba(210, 251, 255, 0.12);
+}
+.player-rare-stat--platinum .player-rare-stat-label { color: #d6fbff; text-shadow: 0 0 10px rgba(34, 211, 238, 0.60); }
+
+.player-rare-stat--legendary {
+  border-color: rgba(255, 144, 55, 0.94);
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.26), rgba(127, 29, 29, 0.15));
+  box-shadow: 0 0 23px rgba(249, 115, 22, 0.25), inset 0 1px 0 rgba(255, 218, 180, 0.12);
+}
+.player-rare-stat--legendary .player-rare-stat-label { color: #ffd0a8; text-shadow: 0 0 11px rgba(249, 115, 22, 0.64); }
+
+.player-rare-stat-value { text-shadow: 0 0 12px rgba(255, 255, 255, 0.16); }
+
+/* Rijetko pitanje u igri koristi istu paletu kao kartica u profilu. */
+.quiz-card[class*="rarity-"] {
+  position: relative;
+  overflow: hidden;
+  border-width: 1px;
+}
+
+.quiz-card[class*="rarity-"]::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  right: -92px;
+  top: -105px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.075;
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.quiz-card.rarity-silver {
+  color: #f3f7fc;
+  border-color: rgba(228, 237, 248, 0.88);
+  background:
+    radial-gradient(circle at top right, rgba(228, 237, 248, 0.20), transparent 48%),
+    linear-gradient(145deg, rgba(45, 57, 74, 0.98), rgba(20, 31, 48, 0.98));
+  box-shadow: 0 0 26px rgba(203, 213, 225, 0.20), var(--shadow-soft);
+}
+
+.quiz-card.rarity-golden {
+  color: #fff3a5;
+  border-color: rgba(255, 222, 85, 0.92);
+  background:
+    radial-gradient(circle at top right, rgba(250, 204, 21, 0.25), transparent 48%),
+    linear-gradient(145deg, rgba(68, 50, 18, 0.98), rgba(28, 31, 42, 0.98));
+  box-shadow: 0 0 29px rgba(250, 204, 21, 0.24), var(--shadow-soft);
+}
+
+.quiz-card.rarity-platinum {
+  color: #d6fbff;
+  border-color: rgba(120, 235, 255, 0.90);
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.25), transparent 48%),
+    linear-gradient(145deg, rgba(16, 64, 80, 0.98), rgba(18, 31, 48, 0.98));
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.24), var(--shadow-soft);
+}
+
+.quiz-card.rarity-legendary {
+  color: #ffd0a8;
+  border-color: rgba(255, 144, 55, 0.95);
+  background:
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.28), transparent 45%),
+    radial-gradient(circle at bottom left, rgba(185, 28, 28, 0.20), transparent 48%),
+    linear-gradient(145deg, rgba(72, 35, 23, 0.98), rgba(30, 27, 40, 0.98));
+  box-shadow: 0 0 32px rgba(249, 115, 22, 0.27), var(--shadow-soft);
+}
+
+.question-rarity-badge {
+  padding: 0.18rem 0.58rem;
+  border-width: 1px;
+  font-size: 0.69rem;
+  box-shadow: 0 0 15px currentColor;
+  text-shadow: 0 0 8px currentColor;
+}
+.question-rarity-badge.rarity-silver { color: #f3f7fc; background: rgba(203, 213, 225, 0.19); }
+.question-rarity-badge.rarity-golden { color: #fff3a5; background: rgba(250, 204, 21, 0.22); }
+.question-rarity-badge.rarity-platinum { color: #d6fbff; background: rgba(34, 211, 238, 0.21); }
+.question-rarity-badge.rarity-legendary { color: #ffd0a8; background: rgba(249, 115, 22, 0.23); }
+
+@media (max-width: 440px) {
+  .player-level-progress-route {
+    grid-template-columns: 38px minmax(0, 1fr) 82px;
+    gap: 0.42rem;
+  }
+  .player-level-route-start { width: 38px; height: 38px; }
+  .player-level-route-next { min-width: 0; max-width: 82px; padding-inline: 0.35rem; font-size: 0.57rem; }
+}
+
+
+/* ========================================================= */
+/* 12 STALNI PREGLED ZNANJA I UJEDNAČENI PLAVI GUMBI */
+/* ========================================================= */
+.player-games-toggle {
+  width: 100%;
+  max-width: none;
+  min-height: 52px;
+  margin: 0.7rem 0 0;
+  padding: 0.66rem 0.78rem;
+  border-radius: 17px;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+#player-games-toggle-label {
+  min-width: 0;
+  font-weight: 950;
+}
+
+.player-games-toggle-icon {
+  flex: 0 0 auto;
+  color: #eaf3ff;
+  font-size: 1rem;
+}
+
+</style>
+
+  <!-- Open Graph / prikaz linka u WhatsAppu, Viberu i Messengeru -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Moj račun | KvizToGo">
+  <meta property="og:description" content="Upravljaj svojim KvizToGo računom, postavkama profila i pozivnicama.">
+  <meta property="og:url" content="https://kviztogo.com/profil.html">
+  <meta property="og:image" content="https://kviztogo.com/images/KvizToGo-kvizovi-i-kviz-pitanja.png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="KvizToGo – kvizovi i kviz pitanja">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Moj račun | KvizToGo">
+  <meta name="twitter:description" content="Upravljaj svojim KvizToGo računom, postavkama profila i pozivnicama.">
+  <meta name="twitter:image" content="https://kviztogo.com/images/KvizToGo-kvizovi-i-kviz-pitanja.png">
+
+<script>
+(function(){
+function fresh(u){try{const x=new URL(u,location.href);if(x.origin!==location.origin)return u;if(/\.html$/i.test(x.pathname)||x.pathname.endsWith("/")){x.searchParams.set("_fresh",Date.now());return x.pathname+x.search+x.hash}return u}catch(e){return u}}
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('a[href]').forEach(a=>{const h=a.getAttribute("href");if(!h||h.startsWith("#")||h.startsWith("mailto:")||h.startsWith("tel:"))return;a.addEventListener("click",e=>{if(e.defaultPrevented)return;e.preventDefault();location.assign(fresh(h));});});});
+})();
+</script>
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-side header-side--left">
+      <button class="flag-toggle" id="language-cycle-btn" type="button"
+              data-current-lang="hr" aria-label="Promijeni jezik">
+        <span class="flag-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <a href="index.html" class="brand-logo" aria-label="KvizToGo početna">
+      <span class="logo-kviz">Kviz</span><span class="logo-to">To</span><span class="logo-go">Go</span>
+    </a>
+
+    <div class="header-side header-side--right"></div>
+  </header>
+
+<div class="back-map-row">
+    <button class="nav-btn" id="back-btn" type="button" data-i18n="backMap">
+        ← Natrag
+    </button>
+</div>
+
+  <main class="page-shell">
+    <section class="card">
+      <div class="card-head">
+        <h1 data-i18n="accountTitle">Moj račun</h1>
+
+        <div class="settings-wrap">
+          <button class="icon-btn" id="settings-btn" type="button"
+                  aria-label="Postavke" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8.2A3.8 3.8 0 1 0 12 15.8 3.8 3.8 0 0 0 12 8.2Z"
+                    fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.36a1.7 1.7 0 0 0-1 .64 1.7 1.7 0 0 0-.36 1.06V21h-4v-.09A1.7 1.7 0 0 0 8.6 19.3a1.7 1.7 0 0 0-1.87.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.24 15a1.7 1.7 0 0 0-.64-1A1.7 1.7 0 0 0 2.54 13H2.5V9h.09A1.7 1.7 0 0 0 4.2 7.96a1.7 1.7 0 0 0-.34-1.87l-.06-.06L6.63 3.2l.06.06A1.7 1.7 0 0 0 8.56 3.6a1.7 1.7 0 0 0 1-.64A1.7 1.7 0 0 0 9.92 1.9V1.8h4v.09A1.7 1.7 0 0 0 14.96 3.5a1.7 1.7 0 0 0 1.87-.34l.06-.06 2.83 2.83-.06.06a1.7 1.7 0 0 0-.34 1.87 1.7 1.7 0 0 0 .64 1 1.7 1.7 0 0 0 1.06.36h.09v4h-.09A1.7 1.7 0 0 0 19.4 15Z"
+                    fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="settings-menu" id="settings-menu">
+            <button type="button" id="change-email-btn" data-i18n="changeEmail">Promijeni e-mail</button>
+            <button type="button" id="logout-btn" data-i18n="logout">Odjavi se</button>
+            <button type="button" id="delete-account-btn" class="danger" data-i18n="deleteAccount">Izbriši račun</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="account-row">
+        <div>
+          <div class="account-label" data-i18n="usernameLabel">Korisničko ime</div>
+          <div class="account-value" id="username-value">Učitavanje...</div>
+        </div>
+
+        <button class="edit-btn" id="edit-username-btn" type="button"
+                aria-label="Uredi korisničko ime">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m4 20 4.2-1 10.6-10.6a2 2 0 0 0-2.8-2.8L5.4 16.2 4 20Z"
+                  fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="account-row">
+        <div>
+          <div class="account-label" data-i18n="emailLabel">E-mail</div>
+          <div class="account-value" id="email-value">Učitavanje...</div>
+        </div>
+
+        <button class="edit-btn" id="edit-email-btn" type="button"
+                aria-label="Uredi e-mail">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m4 20 4.2-1 10.6-10.6a2 2 0 0 0-2.8-2.8L5.4 16.2 4 20Z"
+                  fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="card" id="post-login-continue-card" hidden>
+      <h2 data-i18n="continueTitle">Nastavi gdje si stao</h2>
+      <p class="section-copy" data-i18n="continueCopy">Prijava je uspješna. Možeš nastaviti radnju koju si započeo prije prijave.</p>
+      <a class="btn btn--green" id="post-login-continue-link" href="index.html?openAddQuiz=1" data-i18n="continueButton">Nastavi objavu kviza</a>
+      <button class="btn btn--soft" id="post-login-dismiss-btn" type="button" data-i18n="continueDismiss">Kasnije</button>
+    </section>
+
+
+    <section class="profile-progress-area" id="profile-progress-area" aria-busy="true">
+      <div class="profile-progress-status" id="profile-progress-status" role="status" aria-live="polite"></div>
+
+          <section class="player-level-card" aria-labelledby="player-level-title">
+            <div class="player-section-heading"><div><div class="player-section-title" id="player-level-title">Razina znanja</div><div class="player-section-copy" id="player-level-copy">Svaki točan odgovor donosi jedan korak napretka.</div></div><span class="player-section-chip" id="player-level-chip">Početnik</span></div>
+            <div class="player-level-current">
+              <div class="player-level-name" id="player-level-name">Početnik</div>
+              <div class="player-level-points" id="player-level-points">0 točnih odgovora</div>
+              <div class="player-level-progress-caption"><span id="player-level-progress-label">Napredak do razine Radoznalac</span><strong id="player-level-progress-value">0/20</strong></div>
+              <div class="player-level-progress-route"><div class="player-level-route-start" id="player-level-route-start" title="Početnik">1</div><div class="player-progress-track"><div class="player-progress-fill" id="player-level-progress-fill"></div></div><div class="player-level-route-next" id="player-level-route-next">Radoznalac</div></div>
+              <div class="player-level-remaining" id="player-level-remaining">Još 20 točnih odgovora do sljedeće razine.</div>
+            </div>
+            <button class="player-levels-toggle" id="player-levels-toggle" type="button" aria-expanded="false" aria-controls="player-levels-details">Pogledaj sve razine</button>
+            <div class="player-levels-details" id="player-levels-details"><div class="player-levels-details-inner"><div class="player-levels-list" id="player-levels-list"></div></div></div>
+          </section>
+
+      <section class="player-knowledge-overview">
+        <div class="player-section-heading"><div><div class="player-section-title" id="player-overview-title">Pregled znanja</div><div class="player-section-copy" id="player-overview-copy">Svi tvoji odgovori i otkrivena pitanja na jednom mjestu.</div></div><span class="player-section-chip" id="player-overview-chip">Ukupno</span></div>
+        <div class="player-overview-grid">
+          <div class="player-overview-stat"><div class="player-overview-stat-label" id="stat-result-label">Rezultat</div><div class="player-overview-stat-value" id="stat-overall-result">0/0</div><div class="player-stat-sub" id="stat-overall-result-percent">0% uspješnosti</div></div>
+          <div class="player-overview-stat"><div class="player-overview-stat-label" id="stat-streak-label">Najduži niz točnih</div><div class="player-overview-stat-value" id="stat-longest-streak">0</div></div>
+          <div class="player-overview-stat"><div class="player-overview-stat-label" id="stat-games-label">Odigrano kvizova</div><div class="player-overview-stat-value" id="stat-games-played">0</div></div>
+          <div class="player-overview-stat"><div class="player-overview-stat-label" id="stat-discovered-label">Otkrivena pitanja</div><div class="player-overview-stat-value" id="stat-discovered">0</div></div>
+        </div>
+        <div class="player-knowledge-progress"><div class="player-progress-caption"><span id="knowledge-progress-label">Otkriveno različitih pitanja</span><strong id="knowledge-progress-value">0/0</strong></div><div class="player-progress-track"><div class="player-progress-fill" id="knowledge-progress-fill"></div></div></div>
+      </section>
+
+      <button class="player-achievements-toggle" id="player-achievements-toggle" type="button" aria-expanded="false" aria-controls="player-achievements-details">
+        <span class="player-achievements-toggle-main">
+          <span class="player-achievements-toggle-title" id="player-achievements-toggle-title">Moja postignuća</span>
+          <span class="player-achievements-toggle-subtitle" id="player-achievements-toggle-subtitle">Razina Početnik · otvori razine, rijetke odgovore i krune</span>
+        </span>
+        <span class="player-achievements-toggle-icon" aria-hidden="true">⌄</span>
+      </button>
+
+      <div class="player-achievements-details" id="player-achievements-details">
+        <div class="player-achievements-details-inner">
+
+          <section class="player-rare-card" aria-labelledby="player-rare-title">
+            <div class="player-section-heading"><div><div class="player-section-title" id="player-rare-title">Rijetki odgovori</div><div class="player-section-copy" id="player-rare-copy">Rijetki minerali u zemlji. Rijetki odgovori u glavi.</div></div><span class="player-section-chip" id="player-rare-total">0/101</span></div>
+            <div class="player-rare-grid">
+              <div class="player-rare-stat player-rare-stat--silver"><div class="player-rare-stat-label" id="rare-silver-label">Silver</div><div class="player-rare-stat-value" id="rare-silver-value">0/50</div></div>
+              <div class="player-rare-stat player-rare-stat--golden"><div class="player-rare-stat-label" id="rare-golden-label">Golden</div><div class="player-rare-stat-value" id="rare-golden-value">0/30</div></div>
+              <div class="player-rare-stat player-rare-stat--platinum"><div class="player-rare-stat-label" id="rare-platinum-label">Platinum</div><div class="player-rare-stat-value" id="rare-platinum-value">0/15</div></div>
+              <div class="player-rare-stat player-rare-stat--legendary"><div class="player-rare-stat-label" id="rare-legendary-label">Legendary</div><div class="player-rare-stat-value" id="rare-legendary-value">0/6</div></div>
+            </div>
+          </section>
+
+          <section class="player-crowns-card" aria-labelledby="player-crowns-title">
+            <div class="player-section-heading"><div><div class="player-section-title" id="player-crowns-title">Krune postignuća</div><div class="player-section-copy" id="player-crowns-copy">Zaključane krune čekaju u tami. Otključane zasjaju zlatno.</div></div><span class="player-section-chip" id="player-crowns-total">0/0</span></div>
+            <div id="achievement-groups"></div>
+          </section>
+
+          <section class="achievement-upcoming-card achievement-upcoming-card--collections"><div class="player-section-heading"><div><div class="player-section-title" id="collection-achievements-title">Kolekcionarska postignuća</div><div class="player-section-copy" id="collection-achievements-copy">Krune povezane s Kviz kolekcijama stižu s tim načinom igre.</div></div><span class="player-section-chip" id="collection-achievements-chip">Uskoro</span></div></section>
+          <section class="achievement-upcoming-card achievement-upcoming-card--multiplayer"><div class="player-section-heading"><div><div class="player-section-title" id="multiplayer-achievements-title">Multiplayer postignuća</div><div class="player-section-copy" id="multiplayer-achievements-copy">Pobjede, nizovi i dvoboji dobit će vlastite krune.</div></div><span class="player-section-chip" id="multiplayer-achievements-chip">Uskoro</span></div></section>
+        </div>
+      </div>
+
+      <button class="player-games-toggle" id="player-games-toggle" type="button" aria-expanded="false" aria-controls="player-games-details"><span id="player-games-toggle-label">Pregled odigranih kvizova</span><span class="player-games-toggle-icon" aria-hidden="true">⌄</span></button>
+      <div class="player-games-details" id="player-games-details"><div class="player-games-details-inner">
+        <section class="player-mode-section player-mode-section--blitz">
+          <div class="player-section-heading"><div><div class="player-section-title" id="profile-blitz-title">Blitz 60s</div><div class="player-section-copy" id="profile-blitz-copy">Poštena usporedba jer svi imaju isto vrijeme.</div></div><span class="player-section-chip">60s</span></div>
+          <div class="player-mode-stats">
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="blitz-result-label">Ukupni rezultat</div><div class="player-mode-stat-value" id="blitz-total-result">0/0</div><div class="player-stat-sub" id="blitz-total-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="blitz-record-label">Blitz rekord</div><div class="player-mode-stat-value" id="blitz-best-result">0/0</div><div class="player-stat-sub" id="blitz-best-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="blitz-games-label">Odigrano partija</div><div class="player-mode-stat-value" id="blitz-games-played">0</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="blitz-streak-label">Najduži niz točnih</div><div class="player-mode-stat-value" id="blitz-longest-streak">0</div></div>
+          </div><div class="player-blitz-rank" id="blitz-percentile-note" hidden></div>
+        </section>
+        <section class="player-mode-section player-mode-section--relax">
+          <div class="player-section-heading"><div><div class="player-section-title" id="profile-relax-title">Bez vremena</div><div class="player-section-copy" id="profile-relax-copy">Tvoja privatna statistika igre bez vremenskog ograničenja.</div></div><span class="player-section-chip">∞</span></div>
+          <div class="player-mode-stats">
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="relax-result-label">Ukupni rezultat</div><div class="player-mode-stat-value" id="relax-total-result">0/0</div><div class="player-stat-sub" id="relax-total-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="relax-best-label">Najbolja partija</div><div class="player-mode-stat-value" id="relax-best-result">0/0</div><div class="player-stat-sub" id="relax-best-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="relax-games-label">Odigrano partija</div><div class="player-mode-stat-value" id="relax-games-played">0</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="relax-streak-label">Najduži niz točnih</div><div class="player-mode-stat-value" id="relax-longest-streak">0</div></div>
+          </div>
+        </section>
+        <section class="player-mode-section player-mode-section--themed">
+          <div class="player-section-heading"><div><div class="player-section-title" id="profile-themed-title">Tematski kvizovi</div><div class="player-section-copy" id="profile-themed-copy">Tvoja privatna statistika kvizova po odabranim temama.</div></div><span class="player-section-chip" id="themed-topics-chip">0 tema</span></div>
+          <div class="player-mode-stats">
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="themed-result-label">Ukupni rezultat</div><div class="player-mode-stat-value" id="themed-total-result">0/0</div><div class="player-stat-sub" id="themed-total-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="themed-best-label">Najbolja partija</div><div class="player-mode-stat-value" id="themed-best-result">0/0</div><div class="player-stat-sub" id="themed-best-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="themed-games-label">Odigrano partija</div><div class="player-mode-stat-value" id="themed-games-played">0</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="themed-streak-label">Najduži niz točnih</div><div class="player-mode-stat-value" id="themed-longest-streak">0</div></div>
+          </div>
+        </section>
+        <section class="player-mode-section player-mode-section--daily30">
+          <div class="player-section-heading"><div><div class="player-section-title" id="profile-daily30-title">Dnevnih 30</div><div class="player-section-copy" id="profile-daily30-copy">Statistika samo iz dnevnog kviza odigranog na dan kada je aktivan.</div></div><span class="player-section-chip">30</span></div>
+          <div class="player-mode-stats">
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="daily30-result-label">Ukupni rezultat</div><div class="player-mode-stat-value" id="daily30-total-result">0/0</div><div class="player-stat-sub" id="daily30-total-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="daily30-best-label">Najbolja partija</div><div class="player-mode-stat-value" id="daily30-best-result">0/0</div><div class="player-stat-sub" id="daily30-best-percent">0% uspješnosti</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="daily30-games-label">Odigrano dana</div><div class="player-mode-stat-value" id="daily30-games-played">0</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="daily30-streak-label">Najduži niz točnih</div><div class="player-mode-stat-value" id="daily30-longest-streak">0</div></div>
+          </div>
+        </section>
+        <section class="player-upcoming-card player-upcoming-card--collections"><div class="player-section-heading"><div><div class="player-section-title" id="profile-collection-title">Kviz kolekcije</div><div class="player-section-copy" id="profile-collection-copy">Posebni kvizovi od 20 pitanja o jednoj konkretnoj temi.</div></div><span class="player-section-chip" id="profile-collection-chip">Uskoro</span></div></section>
+        <section class="player-upcoming-card player-upcoming-card--multiplayer"><div class="player-section-heading"><div><div class="player-section-title" id="profile-multiplayer-title">Multiplayer</div><div class="player-section-copy" id="profile-multiplayer-copy">Igra protiv drugih kvizaša dolazi uskoro.</div></div><span class="player-section-chip" id="profile-multiplayer-chip">Uskoro</span></div></section>
+      </div></div>
+    </section>
+
+
+    <section class="card">
+      <h2 data-i18n="playTitle">Igraj kviz</h2>
+      <p class="section-copy" data-i18n="playCopy">Testiraj znanje i pokušaj nadmašiti vlastiti rezultat.</p>
+      <a class="btn btn--blue" href="online-kviz.html" data-i18n="playButton">Igraj kviz</a>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="mapTitle">Karta kvizova</h2>
+      <p class="section-copy" data-i18n="mapCopy">
+        Gledaš gdje igrati ili želiš da se vidi gdje se održava kviz? Klikni ovdje.
+      </p>
+      <a class="btn btn--green" href="index.html" data-i18n="mapButton">Otvori kartu kvizova</a>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="comingTitle">Stay tuned...</h2>
+      <p class="section-copy" data-i18n="comingCopy">Uskoro dolazi nešto novo.</p>
+      <button class="btn btn--disabled" type="button" disabled data-i18n="comingButton">Uskoro</button>
+    </section>
+
+    <section class="card" id="my-quizzes-section">
+      <div class="card-head">
+        <h2 data-i18n="myQuizzesTitle">Moji objavljeni kvizovi</h2>
+        <button class="btn btn--soft history-toggle" id="history-toggle-btn" type="button" data-i18n="myQuizzesHistory">Povijest mojih kvizova</button>
+      </div>
+      <p class="section-copy" data-i18n="myQuizzesCopy">Ovdje možete urediti ili otkazati kvizove koje ste objavili.</p>
+      <div class="my-quizzes-list" id="my-quizzes-list"><p class="empty-state">Učitavanje...</p></div>
+      <div class="my-quizzes-list" id="my-quizzes-history" hidden></div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="inviteTitle">Pozovi prijatelje</h2>
+      <p class="section-copy" data-i18n="inviteCopy">
+        Podijeli KvizToGo s ekipom za kviz.
+      </p>
+
+      <div class="invite-grid">
+        <button class="btn btn--soft" id="copy-link-btn" type="button" data-i18n="copyLink">Kopiraj link</button>
+        <button class="btn btn--green" id="whatsapp-btn" type="button" data-i18n="whatsapp">Pošalji na WhatsApp</button>
+        <button class="btn btn--viber" id="viber-btn" type="button" data-i18n="viber">Pošalji na Viber</button>
+        <button class="btn btn--messenger" id="messenger-btn" type="button" data-i18n="messenger">Pošalji na Messenger</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> <span data-i18n="footerText">KvizToGo – Kviz pitanja, online kvizovi i karta pub kvizova.</span>
+  </footer>
+
+  <div class="modal-backdrop" id="username-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="username-modal-title">
+      <div class="modal-head">
+        <h2 id="username-modal-title" data-i18n="usernameModalTitle">Uredi korisničko ime</h2>
+        <button class="modal-close" type="button" data-close-modal="username-modal" aria-label="Zatvori">✕</button>
+      </div>
+
+      <label class="field-label" for="username-input" data-i18n="newUsername">Novo korisničko ime</label>
+      <input class="field-input" id="username-input" type="text" maxlength="24" autocomplete="off">
+      <p class="field-help" data-i18n="usernameRules">3–24 znaka. Dopuštena su slova, brojevi, točka, crtica i donja crta.</p>
+      <p class="modal-message" id="username-message"></p>
+
+      <div class="modal-actions">
+        <button class="btn btn--soft" type="button" data-close-modal="username-modal" data-i18n="cancel">Odustani</button>
+        <button class="btn btn--blue" id="save-username-btn" type="button" data-i18n="save">Spremi</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="email-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="email-modal-title">
+      <div class="modal-head">
+        <h2 id="email-modal-title" data-i18n="emailModalTitle">Promijeni e-mail</h2>
+        <button class="modal-close" type="button" data-close-modal="email-modal" aria-label="Zatvori">✕</button>
+      </div>
+
+      <label class="field-label" for="email-input" data-i18n="newEmail">Nova e-mail adresa</label>
+      <input class="field-input" id="email-input" type="email" autocomplete="email">
+      <p class="field-help" data-i18n="emailHelp">Supabase će poslati poruku za potvrdu nove adrese.</p>
+      <p class="modal-message" id="email-message"></p>
+
+      <div class="modal-actions">
+        <button class="btn btn--soft" type="button" data-close-modal="email-modal" data-i18n="cancel">Odustani</button>
+        <button class="btn btn--blue" id="save-email-btn" type="button" data-i18n="save">Spremi</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="delete-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-modal-title">
+      <div class="modal-head">
+        <h2 id="delete-modal-title" data-i18n="deleteModalTitle">Izbriši račun</h2>
+        <button class="modal-close" type="button" data-close-modal="delete-modal" aria-label="Zatvori">✕</button>
+      </div>
+
+      <p class="section-copy" data-i18n="deleteWarning">
+        Ova radnja trajno briše račun i ne može se poništiti.
+      </p>
+
+      <label class="field-label" for="delete-confirm-input" data-i18n="deleteConfirmLabel">Upiši IZBRIŠI za potvrdu</label>
+      <input class="field-input" id="delete-confirm-input" type="text" autocomplete="off">
+      <p class="modal-message" id="delete-message"></p>
+
+      <div class="modal-actions">
+        <button class="btn btn--soft" type="button" data-close-modal="delete-modal" data-i18n="cancel">Odustani</button>
+        <button class="btn btn--danger" id="confirm-delete-btn" type="button" data-i18n="deleteAccount">Izbriši račun</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal-backdrop" id="quiz-edit-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="quiz-edit-modal-title">
+      <div class="modal-head">
+        <h2 id="quiz-edit-modal-title">Uredi kviz</h2>
+        <button class="modal-close" type="button" data-close-modal="quiz-edit-modal" aria-label="Zatvori">✕</button>
+      </div>
+
+      <input id="edit-quiz-id" type="hidden">
+
+      <label class="field-label" for="edit-quiz-title">Naziv kviza</label>
+      <input class="field-input" id="edit-quiz-title" type="text" maxlength="150" required>
+
+      <label class="field-label" for="edit-quiz-venue" style="margin-top:.7rem;">Naziv lokala / bara</label>
+      <input class="field-input" id="edit-quiz-venue" type="text" maxlength="200" required>
+
+      <label class="field-label" for="edit-quiz-type" style="margin-top:.7rem;">Vrsta kviza</label>
+      <select class="field-input" id="edit-quiz-type">
+        <option value="opce">Kviz općeg znanja</option><option value="glazbeni">Glazbeni kviz</option><option value="nogometni">Nogometni kviz</option><option value="sportski">Sportski kviz</option><option value="beskorisno">Kviz beskorisnog znanja</option><option value="ostalo">Ostalo</option>
+      </select>
+
+      <label class="field-label" for="edit-quiz-datetime" style="margin-top:.7rem;">Datum i vrijeme</label>
+      <input class="field-input" id="edit-quiz-datetime" type="datetime-local" required>
+
+      <label class="field-label" for="edit-quiz-team-size" style="margin-top:.7rem;">Maksimalan broj ljudi u ekipi</label>
+      <input class="field-input" id="edit-quiz-team-size" type="number" min="1" max="20">
+
+      <label class="field-label" for="edit-quiz-entry-fee" style="margin-top:.7rem;">Uplata</label>
+      <input class="field-input" id="edit-quiz-entry-fee" type="text" maxlength="80" placeholder="Npr. 20 KM po ekipi">
+
+      <label class="field-label" for="edit-quiz-maps-link" style="margin-top:.7rem;">Google Maps link ili koordinate</label>
+      <input class="field-input" id="edit-quiz-maps-link" type="text" required>
+      <input id="edit-quiz-lat" type="hidden"><input id="edit-quiz-lng" type="hidden">
+
+      <label class="field-label" for="edit-quiz-phone" style="margin-top:.7rem;">Broj za rezervacije</label>
+      <input class="field-input" id="edit-quiz-phone" type="text">
+
+      <label class="field-label" for="edit-quiz-signup" style="margin-top:.7rem;">Link za prijavu</label>
+      <input class="field-input" id="edit-quiz-signup" type="text">
+
+      <label class="field-label" for="edit-quiz-prize1" style="margin-top:.7rem;">Nagrada za 1. mjesto</label>
+      <input class="field-input" id="edit-quiz-prize1" type="text">
+      <label class="field-label" for="edit-quiz-prize2" style="margin-top:.7rem;">Nagrada za 2. mjesto</label>
+      <input class="field-input" id="edit-quiz-prize2" type="text">
+      <label class="field-label" for="edit-quiz-prize3" style="margin-top:.7rem;">Nagrada za 3. mjesto</label>
+      <input class="field-input" id="edit-quiz-prize3" type="text">
+      <label class="field-label" for="edit-quiz-prize-extra" style="margin-top:.7rem;">Dodatne nagrade</label>
+      <textarea class="field-input" id="edit-quiz-prize-extra" rows="3"></textarea>
+
+      <label class="field-label" for="edit-quiz-description" style="margin-top:.7rem;">Opis kviza</label>
+      <textarea class="field-input" id="edit-quiz-description" rows="5" maxlength="1000"></textarea>
+
+      <p class="modal-message" id="edit-quiz-message"></p>
+
+      <div class="modal-actions">
+        <button class="btn btn--soft" type="button" data-close-modal="quiz-edit-modal">Odustani</button>
+        <button class="btn btn--blue" id="save-quiz-edit-btn" type="button">Spremi promjene</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
+
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
+      auth: {
+        persistSession: true,
+        detectSessionInUrl: true,
+        autoRefreshToken: true,
+        storage: window.localStorage
+      }
+    });
+const SESSION_TIME_KEY = "kviztogo_login_time";
+    const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000;
+    const PROFILE_PAGE = "profil.html";
+    const LOGIN_PAGE = "login.html";
+    const LEGACY_AFTER_LOGIN_KEY = "kviztogo_after_login";
+    const PENDING_DESTINATION_KEY = "kviztogo_pending_after_profile";
+    const PENDING_INVITE_KEY = "kviztogo_pending_invite_code";
+
+    function redirectToLogin() {
+      localStorage.removeItem(LEGACY_AFTER_LOGIN_KEY);
+      const loginUrl = new URL(LOGIN_PAGE, window.location.href);
+      loginUrl.searchParams.set("redirect", PROFILE_PAGE);
+      window.location.replace(loginUrl.href);
+    }
+
+    const i18n = {
+      hr: {
+        backMap: "← Natrag",
+        accountTitle: "Moj račun",
+        usernameLabel: "Korisničko ime",
+        emailLabel: "E-mail",
+        playTitle: "Igraj kviz",
+        playCopy: "Testiraj znanje i pokušaj nadmašiti vlastiti rezultat.",
+        playButton: "Igraj kviz",
+        mapTitle: "Karta kvizova",
+        mapCopy: "Gledaš gdje igrati ili želiš da se vidi gdje se održava kviz? Klikni ovdje.",
+        mapButton: "Otvori kartu kvizova",
+        continueTitle: "Nastavi gdje si stao",
+        continueCopy: "Prijava je uspješna. Možeš nastaviti radnju koju si započeo prije prijave.",
+        continueButton: "Nastavi objavu kviza",
+        continueDismiss: "Kasnije",
+        inviteAccepted: "Pozivnica je prihvaćena. Dobro došao/la u KvizToGo ekipu!",
+        inviteInvalid: "Pozivnica nije primijenjena. Možda je već iskorištena ili kod nije valjan.",
+        inviteError: "Pozivnicu trenutačno nije moguće potvrditi. Pokušat ćemo ponovno pri sljedećem otvaranju profila.",
+        comingTitle: "Stay tuned...",
+        comingCopy: "Uskoro dolazi nešto novo.",
+        comingButton: "Uskoro",
+        inviteTitle: "Pozovi prijatelje",
+        inviteCopy: "Podijeli KvizToGo s ekipom za kviz.",
+        copyLink: "Kopiraj link",
+        whatsapp: "Pošalji na WhatsApp",
+        viber: "Pošalji na Viber",
+        messenger: "Pošalji na Messenger",
+        shareText: "Pridruži mi se na KvizToGo, testiraj znanje i pronađi pub kvizove.",
+        shareFallback: "Pozivni link je kopiran. Zalijepi ga u Messenger.",
+        changeEmail: "Promijeni e-mail",
+        logout: "Odjavi se",
+        deleteAccount: "Izbriši račun",
+        usernameModalTitle: "Uredi korisničko ime",
+        newUsername: "Novo korisničko ime",
+        usernameRules: "3–24 znaka. Dopuštena su slova, brojevi, točka, crtica i donja crta.",
+        emailModalTitle: "Promijeni e-mail",
+        newEmail: "Nova e-mail adresa",
+        emailHelp: "Supabase će poslati poruku za potvrdu nove adrese.",
+        deleteModalTitle: "Izbriši račun",
+        deleteWarning: "Ova radnja trajno briše račun i ne može se poništiti.",
+        deleteConfirmLabel: "Upiši IZBRIŠI za potvrdu",
+        cancel: "Odustani",
+        save: "Spremi",
+        footerText: "KvizToGo – Kviz pitanja, online kvizovi i karta pub kvizova.",
+        copied: "Pozivni link je kopiran u međuspremnik.",
+        inviteUnavailable: "Pozivni link trenutačno nije dostupan.",
+        usernameTaken: "To korisničko ime već postoji.",
+        usernameAvailable: "Korisničko ime je dostupno.",
+        usernameInvalid: "Korisničko ime nije u dopuštenom obliku.",
+        usernameSaved: "Korisničko ime je spremljeno.",
+        emailInvalid: "Upiši ispravnu e-mail adresu.",
+        emailSent: "Poslana je potvrda na novu e-mail adresu.",
+        deleteType: "Za potvrdu upiši IZBRIŠI.",
+        deleteUnavailable: "Brisanje računa još zahtijeva sigurnu Supabase funkciju.",
+        genericError: "Dogodila se pogreška.",
+        myQuizzesTitle:"Moji objavljeni kvizovi",
+        myQuizzesHistory:"Povijest mojih kvizova",
+        myQuizzesCopy:"Ovdje možete urediti ili otkazati kvizove koje ste objavili.",
+        loading:"Učitavanje...",
+        noActiveQuizzes:"Još niste objavili nijedan aktivan kviz.",
+        editQuiz:"Uredi",
+        cancelQuiz:"Otkaži",
+        republishQuiz:"Ponovno objavi"
+      },
+      en: {
+        backMap: "← Back",
+        accountTitle: "My account",
+        usernameLabel: "Username",
+        emailLabel: "E-mail",
+        playTitle: "Play quiz",
+        playCopy: "Test your knowledge and try to beat your own score.",
+        playButton: "Play quiz",
+        mapTitle: "Quiz map",
+        mapCopy: "Looking for somewhere to play, or want your quiz location to appear? Click here.",
+        mapButton: "Open quiz map",
+        continueTitle: "Continue where you left off",
+        continueCopy: "You are signed in. You can continue the action you started before signing in.",
+        continueButton: "Continue publishing the quiz",
+        continueDismiss: "Later",
+        inviteAccepted: "Invitation accepted. Welcome to the KvizToGo team!",
+        inviteInvalid: "The invitation was not applied. It may already have been used or the code is invalid.",
+        inviteError: "The invitation cannot be confirmed right now. We will try again the next time you open your profile.",
+        comingTitle: "Stay tuned...",
+        comingCopy: "Something new is coming soon.",
+        comingButton: "Coming soon",
+        inviteTitle: "Invite friends",
+        inviteCopy: "Share KvizToGo with your quiz team.",
+        copyLink: "Copy link",
+        whatsapp: "Send on WhatsApp",
+        viber: "Send on Viber",
+        messenger: "Send on Messenger",
+        shareText: "Join me on KvizToGo, test your knowledge and find pub quizzes.",
+        shareFallback: "Invite link copied. Paste it into Messenger.",
+        changeEmail: "Change e-mail",
+        logout: "Log out",
+        deleteAccount: "Delete account",
+        usernameModalTitle: "Edit username",
+        newUsername: "New username",
+        usernameRules: "3–24 characters. Letters, numbers, dots, hyphens and underscores are allowed.",
+        emailModalTitle: "Change e-mail",
+        newEmail: "New e-mail address",
+        emailHelp: "Supabase will send a confirmation message to the new address.",
+        deleteModalTitle: "Delete account",
+        deleteWarning: "This permanently deletes the account and cannot be undone.",
+        deleteConfirmLabel: "Type DELETE to confirm",
+        cancel: "Cancel",
+        save: "Save",
+        footerText: "KvizToGo – Quiz questions, online quizzes and a pub quiz map.",
+        copied: "Invite link copied to clipboard.",
+        inviteUnavailable: "The invite link is currently unavailable.",
+        usernameTaken: "That username is already taken.",
+        usernameAvailable: "Username is available.",
+        usernameInvalid: "Username format is not valid.",
+        usernameSaved: "Username saved.",
+        emailInvalid: "Enter a valid e-mail address.",
+        emailSent: "A confirmation was sent to the new e-mail address.",
+        deleteType: "Type DELETE to confirm.",
+        deleteUnavailable: "Account deletion still requires a secure Supabase function.",
+        genericError: "Something went wrong.",
+        myQuizzesTitle:"My published quizzes",
+        myQuizzesHistory:"My quiz history",
+        myQuizzesCopy:"Here you can edit or cancel the quizzes you have published.",
+        loading:"Loading...",
+        noActiveQuizzes:"You haven't published any active quizzes yet.",
+        editQuiz:"Edit",
+        cancelQuiz:"Cancel",
+        republishQuiz:"Republish"
+      }
+    };
+
+    let currentLang = localStorage.getItem("kviztogo_lang") || "hr";
+    let currentUser = null;
+    let currentInviteCode = null;
+    let toastTimer = null;
+    let myQuizzes = [];
+
+    const usernameValue = document.getElementById("username-value");
+    const emailValue = document.getElementById("email-value");
+    const settingsBtn = document.getElementById("settings-btn");
+    const settingsMenu = document.getElementById("settings-menu");
+    const flagBtn = document.getElementById("language-cycle-btn");
+
+    const usernameInput = document.getElementById("username-input");
+    const usernameMessage = document.getElementById("username-message");
+    const emailInput = document.getElementById("email-input");
+    const emailMessage = document.getElementById("email-message");
+    const deleteInput = document.getElementById("delete-confirm-input");
+    const deleteMessage = document.getElementById("delete-message");
+
+    function dict() {
+      return i18n[currentLang] || i18n.hr;
+    }
+
+    function applyTranslations() {
+      const d = dict();
+      document.documentElement.lang = currentLang;
+      flagBtn.dataset.currentLang = currentLang;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.dataset.i18n;
+        if (d[key]) element.textContent = d[key];
+      });
+      if (profileProgressReady) renderProfileDashboard();
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("is-visible");
+
+      window.clearTimeout(toastTimer);
+      toastTimer = window.setTimeout(() => {
+        toast.classList.remove("is-visible");
+      }, 1800);
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.add("is-open");
+      document.body.style.overflow = "hidden";
+      settingsMenu.classList.remove("is-open");
+      settingsBtn.setAttribute("aria-expanded", "false");
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("is-open");
+      document.body.style.overflow = "";
+    }
+
+    function getMetadataUsername(user) {
+      return (
+        user?.user_metadata?.username ||
+        user?.user_metadata?.user_name ||
+        user?.user_metadata?.preferred_username ||
+        user?.user_metadata?.full_name ||
+        user?.user_metadata?.name ||
+        "KvizToGo korisnik"
+      );
+    }
+
+
+
+    /* ------------------ TRAJNI KVIZ PROFIL I PRIJENOS GOSTA ------------------ */
+    const PLAYER_PROGRESS_TABLE = "player_progress";
+    const PLAYER_PROGRESS_VERSION = 1;
+    const PLAYER_STATS_BASE_KEY = "kviztogo_player_stats_v1";
+    const PLAYER_ATOMIC_BASE_KEY = "kviztogo_atomic_jokers_v1";
+    const PLAYER_MIGRATION_BASE_KEY = "kviztogo_progress_migrated_v1";
+    const PLAYER_DIRTY_BASE_KEY = "kviztogo_progress_dirty_v1";
+    const DEFAULT_QUESTION_TOTAL = 4038;
+    const RARITY_TOTALS = Object.freeze({ silver: 50, golden: 30, platinum: 15, legendary: 6 });
+    const RARITY_ORDER = Object.freeze(["silver", "golden", "platinum", "legendary"]);
+    // Krune se prikazuju samo za tematske kvizove koji su trenutačno aktivni u online-kviz.html.
+    const THEME_KEYS = Object.freeze(["AntickiRim","AmerickiPredsjednici","Zemljopis","Nogomet","FloraFauna","Film","Znanost","Glazba","Knjizevnost","Gaming","Moreplovci"]);
+    const KNOWLEDGE_LEVELS = Object.freeze([
+      { min: 0, max: 19, hr: "Početnik", en: "Beginner" },
+      { min: 20, max: 99, hr: "Radoznalac", en: "Curious Mind" },
+      { min: 100, max: 249, hr: "Istraživač", en: "Explorer" },
+      { min: 250, max: 599, hr: "Poznavatelj", en: "Connoisseur" },
+      { min: 600, max: 1499, hr: "Kvizaš", en: "Quizzer" },
+      { min: 1500, max: 2999, hr: "Tragač", en: "Seeker" },
+      { min: 3000, max: 6499, hr: "Znalac", en: "Knowledgeable" },
+      { min: 6500, max: 9999, hr: "Kvizolog", en: "Quizologist" },
+      { min: 10000, max: 14999, hr: "Lovac na znanje", en: "Knowledge Hunter" },
+      { min: 15000, max: 24999, hr: "Kvizomajstor", en: "Quizmaster" },
+      { min: 25000, max: 39999, hr: "Enciklopedija", en: "Encyclopedia" },
+      { min: 40000, max: 64999, hr: "Polihistor", en: "Polymath" },
+      { min: 65000, max: Infinity, hr: "IQ 5001", en: "IQ 5001" }
+    ]);
+
+    let profileStats = createEmptyPlayerStats();
+    let profileAtomic = createEmptyPlayerAtomic();
+    let profileQuestionTotal = DEFAULT_QUESTION_TOTAL;
+    let profileProgressReady = false;
+    let profileBlitzPercentile = null;
+
+    function createEmptyModeStats() { return { gamesPlayed:0,totalCorrect:0,totalWrong:0,bestScore:0,bestTotal:0,bestPercent:0,longestStreak:0,themesPlayed:[],topicStats:{} }; }
+    function createEmptyPlayerStats() { return { gamesPlayed:0,totalCorrect:0,totalWrong:0,bestScore:0,bestPercent:0,longestStreak:0,discoveredQuestionIds:[],modeStats:{blitz60:createEmptyModeStats(),relax:createEmptyModeStats(),themed:createEmptyModeStats()},collectionStats:{completedIds:[],bestScores:{},attempts:{}},rareAnswers:{silver:[],golden:[],platinum:[],legendary:[]},rareSeenQuestionIds:[],shareCount:0,maxContinuousPlaySeconds:0,updatedAt:null }; }
+    function createEmptyPlayerAtomic() { return { cooldownUntil:{letter:0,anagram:0,reveal:0},uses:{letter:0,anagram:0,reveal:0} }; }
+
+    function normalizeModeStats(value) {
+      const s=value&&typeof value==="object"?value:{}; const topicStats={};
+      Object.entries(s.topicStats&&typeof s.topicStats==="object"?s.topicStats:{}).forEach(([topic,itemValue])=>{const item=itemValue&&typeof itemValue==="object"?itemValue:{};topicStats[String(topic)]={gamesPlayed:Math.max(0,Number(item.gamesPlayed)||0),totalCorrect:Math.max(0,Number(item.totalCorrect)||0),totalWrong:Math.max(0,Number(item.totalWrong)||0),bestScore:Math.max(0,Number(item.bestScore)||0),bestPercent:Math.max(0,Number(item.bestPercent)||0)};});
+      return {gamesPlayed:Math.max(0,Number(s.gamesPlayed)||0),totalCorrect:Math.max(0,Number(s.totalCorrect)||0),totalWrong:Math.max(0,Number(s.totalWrong)||0),bestScore:Math.max(0,Number(s.bestScore)||0),bestTotal:Math.max(0,Number(s.bestTotal)||((Number(s.bestScore)>0&&Number(s.bestPercent)>0)?Math.max(Number(s.bestScore),Math.round(Number(s.bestScore)/(Number(s.bestPercent)/100))):0)),bestPercent:Math.max(0,Number(s.bestPercent)||0),longestStreak:Math.max(0,Number(s.longestStreak)||0),themesPlayed:Array.isArray(s.themesPlayed)?[...new Set(s.themesPlayed.map(String))].slice(-500):[],topicStats};
+    }
+
+    function normalizePlayerStats(value) {
+      const empty=createEmptyPlayerStats(),s=value&&typeof value==="object"?value:{},collections=s.collectionStats&&typeof s.collectionStats==="object"?s.collectionStats:{},rare=s.rareAnswers&&typeof s.rareAnswers==="object"?s.rareAnswers:{};
+      const ids=(value,limit)=>Array.isArray(value)?[...new Set(value.map(String))].slice(-limit):[];
+      return {gamesPlayed:Math.max(0,Number(s.gamesPlayed)||0),totalCorrect:Math.max(0,Number(s.totalCorrect)||0),totalWrong:Math.max(0,Number(s.totalWrong)||0),bestScore:Math.max(0,Number(s.bestScore)||0),bestPercent:Math.max(0,Number(s.bestPercent)||0),longestStreak:Math.max(0,Number(s.longestStreak)||0),discoveredQuestionIds:ids(s.discoveredQuestionIds,10000),modeStats:{blitz60:normalizeModeStats(s.modeStats?.blitz60),relax:normalizeModeStats(s.modeStats?.relax),themed:normalizeModeStats(s.modeStats?.themed)},collectionStats:{completedIds:ids(collections.completedIds,1000),bestScores:collections.bestScores&&typeof collections.bestScores==="object"?collections.bestScores:{},attempts:collections.attempts&&typeof collections.attempts==="object"?collections.attempts:{}},rareAnswers:{silver:ids(rare.silver,1000),golden:ids(rare.golden||rare.gold,1000),platinum:ids(rare.platinum,1000),legendary:ids(rare.legendary,1000)},rareSeenQuestionIds:ids(s.rareSeenQuestionIds,2000),shareCount:Math.max(0,Number(s.shareCount)||0),maxContinuousPlaySeconds:Math.max(0,Number(s.maxContinuousPlaySeconds)||0),updatedAt:s.updatedAt||null};
+    }
+
+    function normalizePlayerAtomic(value) { const s=value&&typeof value==="object"?value:{}; return {cooldownUntil:{letter:Math.max(0,Number(s.cooldownUntil?.letter)||0),anagram:Math.max(0,Number(s.cooldownUntil?.anagram)||0),reveal:Math.max(0,Number(s.cooldownUntil?.reveal)||0)},uses:{letter:Math.max(0,Number(s.uses?.letter)||0),anagram:Math.max(0,Number(s.uses?.anagram)||0),reveal:Math.max(0,Number(s.uses?.reveal)||0)}}; }
+    function normalizePlayerPackage(value) { const s=value&&typeof value==="object"?value:{}; return {version:PLAYER_PROGRESS_VERSION,stats:normalizePlayerStats(s.stats||s),atomicJokers:normalizePlayerAtomic(s.atomicJokers),questionTotal:Math.max(0,Number(s.questionTotal)||0),syncedAt:s.syncedAt||null}; }
+
+    function mergeModeStatsAdditive(aValue,bValue) { const a=normalizeModeStats(aValue),b=normalizeModeStats(bValue); const bBetter=b.bestScore>a.bestScore||(b.bestScore===a.bestScore&&b.bestPercent>a.bestPercent)||(b.bestScore===a.bestScore&&b.bestPercent===a.bestPercent&&b.bestTotal>a.bestTotal); const best=bBetter?b:a; const topicStats={}; new Set([...Object.keys(a.topicStats),...Object.keys(b.topicStats)]).forEach(topic=>{const x=a.topicStats[topic]||{},y=b.topicStats[topic]||{};topicStats[topic]={gamesPlayed:(Number(x.gamesPlayed)||0)+(Number(y.gamesPlayed)||0),totalCorrect:(Number(x.totalCorrect)||0)+(Number(y.totalCorrect)||0),totalWrong:(Number(x.totalWrong)||0)+(Number(y.totalWrong)||0),bestScore:Math.max(Number(x.bestScore)||0,Number(y.bestScore)||0),bestPercent:Math.max(Number(x.bestPercent)||0,Number(y.bestPercent)||0)};}); return {gamesPlayed:a.gamesPlayed+b.gamesPlayed,totalCorrect:a.totalCorrect+b.totalCorrect,totalWrong:a.totalWrong+b.totalWrong,bestScore:best.bestScore,bestTotal:best.bestTotal,bestPercent:best.bestPercent,longestStreak:Math.max(a.longestStreak,b.longestStreak),themesPlayed:[...new Set([...a.themesPlayed,...b.themesPlayed])].slice(-500),topicStats}; }
+    function mergePlayerStatsAdditive(aValue,bValue) { const a=normalizePlayerStats(aValue),b=normalizePlayerStats(bValue),ids=(x,y,limit)=>[...new Set([...(x||[]),...(y||[])].map(String))].slice(-limit),bestScores={...a.collectionStats.bestScores},attempts={...a.collectionStats.attempts}; Object.entries(b.collectionStats.bestScores).forEach(([id,n])=>bestScores[id]=Math.max(Number(bestScores[id])||0,Number(n)||0)); Object.entries(b.collectionStats.attempts).forEach(([id,n])=>attempts[id]=(Number(attempts[id])||0)+(Number(n)||0)); return normalizePlayerStats({gamesPlayed:a.gamesPlayed+b.gamesPlayed,totalCorrect:a.totalCorrect+b.totalCorrect,totalWrong:a.totalWrong+b.totalWrong,bestScore:Math.max(a.bestScore,b.bestScore),bestPercent:Math.max(a.bestPercent,b.bestPercent),longestStreak:Math.max(a.longestStreak,b.longestStreak),discoveredQuestionIds:ids(a.discoveredQuestionIds,b.discoveredQuestionIds,10000),modeStats:{blitz60:mergeModeStatsAdditive(a.modeStats.blitz60,b.modeStats.blitz60),relax:mergeModeStatsAdditive(a.modeStats.relax,b.modeStats.relax),themed:mergeModeStatsAdditive(a.modeStats.themed,b.modeStats.themed)},collectionStats:{completedIds:ids(a.collectionStats.completedIds,b.collectionStats.completedIds,1000),bestScores,attempts},rareAnswers:{silver:ids(a.rareAnswers.silver,b.rareAnswers.silver,1000),golden:ids(a.rareAnswers.golden,b.rareAnswers.golden,1000),platinum:ids(a.rareAnswers.platinum,b.rareAnswers.platinum,1000),legendary:ids(a.rareAnswers.legendary,b.rareAnswers.legendary,1000)},rareSeenQuestionIds:ids(a.rareSeenQuestionIds,b.rareSeenQuestionIds,2000),shareCount:a.shareCount+b.shareCount,maxContinuousPlaySeconds:Math.max(a.maxContinuousPlaySeconds,b.maxContinuousPlaySeconds),updatedAt:new Date().toISOString()}); }
+    function mergePlayerAtomicAdditive(aValue,bValue) { const a=normalizePlayerAtomic(aValue),b=normalizePlayerAtomic(bValue); return {cooldownUntil:{letter:Math.max(a.cooldownUntil.letter,b.cooldownUntil.letter),anagram:Math.max(a.cooldownUntil.anagram,b.cooldownUntil.anagram),reveal:Math.max(a.cooldownUntil.reveal,b.cooldownUntil.reveal)},uses:{letter:a.uses.letter+b.uses.letter,anagram:a.uses.anagram+b.uses.anagram,reveal:a.uses.reveal+b.uses.reveal}}; }
+    function playerStatsHaveData(value) { const s=normalizePlayerStats(value); return Boolean(s.totalCorrect||s.totalWrong||s.gamesPlayed||s.shareCount||s.maxContinuousPlaySeconds||s.discoveredQuestionIds.length||RARITY_ORDER.some(r=>s.rareAnswers[r].length)); }
+    function playerAtomicHasData(value) { const s=normalizePlayerAtomic(value); return Boolean(s.uses.letter||s.uses.anagram||s.uses.reveal||s.cooldownUntil.letter||s.cooldownUntil.anagram||s.cooldownUntil.reveal); }
+
+    function playerProgressText(hr,en){return currentLang==="en"?en:hr;}
+    function prettyThemeName(key){const hr={HarryPotter:"Harry Potter",LOTR:"L.O.T.R.",PiratiSKariba:"Pirati s Kariba",VolimHrvatsku:"Volim Hrvatsku",VolimBiH:"Volim BiH",VolimSrbiju:"Volim Srbiju",AntickaGrcka:"Antička Grčka",AntickiEgipat:"Antički Egipat",AntickiRim:"Antički Rim",AmerickiPredsjednici:"Američki predsjednici",Zemljopis:"Zemljopis",Nogomet:"Nogomet",FloraFauna:"FloraFauna",Film:"Film",Znanost:"Znanost",Glazba:"Glazba",Knjizevnost:"Književnost",Gaming:"Svijet Gaminga",Moreplovci:"Moreplovci"},en={HarryPotter:"Harry Potter",LOTR:"L.O.T.R.",PiratiSKariba:"Pirates of the Caribbean",VolimHrvatsku:"I Love Croatia",VolimBiH:"I Love BiH",VolimSrbiju:"I Love Serbia",AntickaGrcka:"Ancient Greece",AntickiEgipat:"Ancient Egypt",AntickiRim:"Ancient Rome",AmerickiPredsjednici:"U.S. Presidents",Zemljopis:"Geography",Nogomet:"Football",FloraFauna:"Flora & Fauna",Film:"Film",Znanost:"Science",Glazba:"Music",Knjizevnost:"Literature",Gaming:"World of Gaming",Moreplovci:"Moreplovci"};return (currentLang==="en"?en:hr)[key]||key;}
+    function setProgressText(id,value){const el=document.getElementById(id);if(el)el.textContent=value;}
+    function getModeAccuracy(s){const total=(s?.totalCorrect||0)+(s?.totalWrong||0);return total?Math.round((s.totalCorrect/total)*100):0;}
+
+    function getCrownSvg(){return `<svg class="achievement-crown-svg" viewBox="0 0 64 52" aria-hidden="true"><defs><linearGradient id="profileCrownGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0a6"/><stop offset="0.38" stop-color="#facc15"/><stop offset="1" stop-color="#b77908"/></linearGradient></defs><path d="M8 17 20 29 32 9 44 29 56 17 51 42H13L8 17Z" fill="url(#profileCrownGold)" stroke="#fff3b0" stroke-width="2" stroke-linejoin="round"/><circle cx="8" cy="15" r="4" fill="#facc15"/><circle cx="32" cy="7" r="4" fill="#facc15"/><circle cx="56" cy="15" r="4" fill="#facc15"/><path d="M14 45h36" stroke="#facc15" stroke-width="5" stroke-linecap="round"/></svg>`;}
+    function makeAchievement(id,hr,en,conditionHr,conditionEn,current,target){const c=Math.max(0,Number(current)||0),t=Math.max(1,Number(target)||1);return{id,title:playerProgressText(hr,en),condition:playerProgressText(conditionHr,conditionEn),current:c,target:t,unlocked:c>=t};}
+
+    function buildProfileAchievementGroups(){const s=profileStats,groups=[],streak=s.longestStreak||0,blitzBest=s.modeStats.blitz60.bestScore||0,time=s.maxContinuousPlaySeconds||0,blitzGames=s.modeStats.blitz60.gamesPlayed||0,relaxGames=s.modeStats.relax.gamesPlayed||0,rareSeen=s.rareSeenQuestionIds.length,rareCorrect=RARITY_ORDER.reduce((sum,r)=>sum+s.rareAnswers[r].length,0),shares=s.shareCount||0;
+      const streakData=[[3,"Guuuraaj","Keep It Going"],[4,"Četiri u komadu","Four in a Row"],[5,"Petica bez kočenja","Five Without Brakes"],[7,"Sedmica znanja","Lucky Seven"],[10,"Deset bez greške","Ten Without a Miss"],[20,"Niz za pamćenje","A Streak to Remember"]];groups.push({title:playerProgressText("Nizovi točnih odgovora","Correct-answer streaks"),items:streakData.map(([n,hr,en])=>makeAchievement(`streak-${n}`,hr,en,`Odgovori ${n} puta točno zaredom.`,`Answer ${n} questions correctly in a row.`,streak,n))});
+      groups.push({title:playerProgressText("Blitz rezultat u jednoj rundi","Blitz score in one round"),items:[[3,"Prvi bljesak","First Flash"],[5,"Brzih pet","Fast Five"],[7,"Sedam u 60","Seven in 60"],[10,"Dvoznamenkasti","Double Digits"]].map(([n,hr,en])=>makeAchievement(`blitz-round-${n}`,hr,en,`Ostvari ${n} točnih odgovora u jednoj Blitz rundi.`,`Score ${n} correct answers in one Blitz round.`,blitzBest,n))});
+      groups.push({title:playerProgressText("Igra bez prekida","Uninterrupted play"),items:[[60,"Jedna minuta bez stajanja","One Minute Nonstop"],[100,"Stotka u komadu","One Hundred Seconds"],[150,"Dugi dah","Long Breath"],[200,"Bez kočenja","No Brakes"],[500,"Kviz maratonac","Quiz Marathoner"],[1000,"Tisuću sekundi","One Thousand Seconds"],[2000,"Nezaustavljiv","Unstoppable"]].map(([n,hr,en])=>makeAchievement(`time-${n}`,hr,en,`Igraj bez prekida ${n} sekundi.`,`Play without interruption for ${n} seconds.`,time,n))});
+      const gameGroup=(titleHr,titleEn,id,current,modeHr,modeEn,thresholds)=>({title:playerProgressText(titleHr,titleEn),items:thresholds.map(n=>makeAchievement(`${id}-${n}`,n===1?`Prvi ${modeHr}`:`${modeHr} ×${n}`,n===1?`First ${modeEn}`:`${modeEn} ×${n}`,n===1?`Odigraj prvu ${modeHr} partiju.`:`Odigraj ${n} ${modeHr} partija.`,n===1?`Play your first ${modeEn} game.`:`Play ${n} ${modeEn} games.`,current,n))});
+      groups.push(gameGroup("Odigrane Blitz partije","Blitz games played","blitz-games",blitzGames,"Blitz","Blitz",[1,5,10,25,50,100,250,500]));groups.push(gameGroup("Odigrane partije Bez vremena","No-timer games played","relax-games",relaxGames,"Bez vremena","No-timer",[1,5,10,25,50]));
+      const t=[1,5,10,20,50],titlesHr=["Prvi korak","Povratnik","Tema pod kožom","Tematski znalac","Majstor teme"],titlesEn=["First Step","Returning Player","Under Your Skin","Theme Expert","Theme Master"];THEME_KEYS.forEach(key=>{const name=prettyThemeName(key),games=Number(s.modeStats.themed.topicStats?.[key]?.gamesPlayed)||0;groups.push({title:name,items:t.map((n,i)=>makeAchievement(`theme-${key}-${n}`,titlesHr[i],titlesEn[i],n===1?`Odigraj prvi kviz iz teme ${name}.`:`Odigraj ${n} kvizova iz teme ${name}.`,n===1?`Play your first ${name} quiz.`:`Play ${n} ${name} quizzes.`,games,n))});});
+      groups.push({title:playerProgressText("Rijetka pitanja","Rare questions"),items:[makeAchievement("rare-seen-1","Nešto sjaji","Something Shines","Naiđi na prvo rijetko pitanje.","Encounter your first rare question.",rareSeen,1),makeAchievement("rare-correct-1","Prvi dragulj","First Gem","Točno odgovori na jedno rijetko pitanje.","Answer one rare question correctly.",rareCorrect,1),makeAchievement("rare-correct-3","Mala riznica","Small Treasury","Prikupi 3 rijetka odgovora.","Collect 3 rare answers.",rareCorrect,3),makeAchievement("rare-correct-5","Pet dragulja","Five Gems","Prikupi 5 rijetkih odgovora.","Collect 5 rare answers.",rareCorrect,5),makeAchievement("rare-correct-10","Lovac na rijetke","Rare Hunter","Prikupi 10 rijetkih odgovora.","Collect 10 rare answers.",rareCorrect,10),makeAchievement("rare-correct-25","Rizničar znanja","Keeper of Knowledge","Prikupi 25 rijetkih odgovora.","Collect 25 rare answers.",rareCorrect,25)]});
+      groups.push({title:playerProgressText("Izvanredne krune","Extraordinary crowns"),items:[makeAchievement("atomic-letter-1","Džoker zovi","Call a Joker","Iskoristi Slovni trag na aktivnom pitanju.","Use the Letter Hint on the active question.",profileAtomic.uses.letter,1),makeAchievement("atomic-anagram-1","Premetaljkom do odgovora","Answer by Anagram","Iskoristi premetaljku na aktivnom pitanju.","Use the anagram helper on the active question.",profileAtomic.uses.anagram,1),makeAchievement("atomic-reveal-1","Nema na čemu","You're Welcome","Iskoristi pomoć Nema na čemu na aktivnom pitanju.","Use the You're Welcome helper on the active question.",profileAtomic.uses.reveal,1)]});
+      groups.push({title:playerProgressText("Širenje KvizToGo priče","Sharing KvizToGo"),items:[makeAchievement("share-1","Poznanik KvizToGo","KvizToGo Acquaintance","Podijeli pitanje ili rezultat jednom.","Share a question or result once.",shares,1),makeAchievement("share-10","Prijatelj KvizToGo","KvizToGo Friend","Podijeli pitanje ili rezultat 10 puta.","Share a question or result 10 times.",shares,10),makeAchievement("share-20","Legenda KvizToGo","KvizToGo Legend","Podijeli pitanje ili rezultat 20 puta.","Share a question or result 20 times.",shares,20)]});return groups;}
+
+    function renderProfileLevels(){
+      const points=profileStats.totalCorrect,
+        index=Math.max(0,KNOWLEDGE_LEVELS.findIndex(level=>points>=level.min&&points<=level.max)),
+        level=KNOWLEDGE_LEVELS[index]||KNOWLEDGE_LEVELS.at(-1),
+        next=KNOWLEDGE_LEVELS[index+1],
+        name=currentLang==="en"?level.en:level.hr,
+        locale=currentLang==="en"?"en-GB":"hr-HR";
+      setProgressText("player-level-title",playerProgressText("Razina znanja","Knowledge level"));
+      setProgressText("player-level-copy",playerProgressText("Svaki točan odgovor donosi jedan korak napretka.","Every correct answer adds one step of progress."));
+      setProgressText("player-level-chip",name);
+      setProgressText("player-level-name",name);
+      setProgressText("player-level-route-start",String(index+1));
+      const routeStart=document.getElementById("player-level-route-start");
+      if(routeStart)routeStart.title=name;
+      setProgressText("player-level-points",playerProgressText(`${points.toLocaleString("hr-HR")} točnih odgovora`,`${points.toLocaleString("en-GB")} correct answers`));
+      const fill=document.getElementById("player-level-progress-fill");
+      if(next){
+        const nextName=currentLang==="en"?next.en:next.hr,
+          span=Math.max(1,next.min-level.min),
+          percent=Math.min(100,Math.round(((points-level.min)/span)*100)),
+          remaining=Math.max(0,next.min-points);
+        setProgressText("player-level-progress-label",playerProgressText(`Napredak do razine ${nextName}`,`Progress to ${nextName}`));
+        setProgressText("player-level-progress-value",`${points.toLocaleString(locale)}/${next.min.toLocaleString(locale)}`);
+        setProgressText("player-level-route-next",nextName);
+        const routeNext=document.getElementById("player-level-route-next");
+        if(routeNext)routeNext.title=playerProgressText(`Sljedeća razina: ${nextName}`,`Next level: ${nextName}`);
+        setProgressText("player-level-remaining",playerProgressText(`Još ${remaining.toLocaleString("hr-HR")} točnih odgovora do sljedeće razine.`,`${remaining.toLocaleString("en-GB")} more correct answers to the next level.`));
+        if(fill){fill.style.width="100%";fill.style.setProperty("--level-progress",`${percent}%`);fill.classList.toggle("is-complete",percent>=100);}
+      }else{
+        setProgressText("player-level-progress-label",playerProgressText("Najviša razina","Highest level"));
+        setProgressText("player-level-progress-value","∞");
+        setProgressText("player-level-route-next",playerProgressText("VRH","TOP"));
+        const routeNext=document.getElementById("player-level-route-next");
+        if(routeNext)routeNext.title=playerProgressText("Najviša razina","Highest level");
+        setProgressText("player-level-remaining",playerProgressText("Dosegnuo si vrh ljestvice.","You reached the top of the ladder."));
+        if(fill){fill.style.width="100%";fill.style.setProperty("--level-progress","100%");fill.classList.add("is-complete");}
+      }
+      setProgressText("player-achievements-toggle-title",playerProgressText("Moja postignuća","My achievements"));
+      setProgressText("player-achievements-toggle-subtitle",playerProgressText(`Razina ${name} · otvori razine, rijetke odgovore i krune`,`Level ${name} · open levels, rare answers and crowns`));
+      setProgressText("player-levels-toggle",playerProgressText("Pogledaj sve razine","View all levels"));
+      const list=document.getElementById("player-levels-list");
+      if(list){
+        list.innerHTML="";
+        KNOWLEDGE_LEVELS.forEach((item,i)=>{
+          const row=document.createElement("div");
+          row.className="player-level-row"+(i<index?" completed":"")+(i===index?" current":"");
+          const range=Number.isFinite(item.max)?`${item.min.toLocaleString(locale)}–${item.max.toLocaleString(locale)}`:`${item.min.toLocaleString(locale)}+`;
+          row.innerHTML=`<span class="player-level-row-icon">${i<index?"✓":i===index?"●":"○"}</span><span class="player-level-row-name">${currentLang==="en"?item.en:item.hr}</span><span class="player-level-row-range">${range}</span>`;
+          list.appendChild(row);
+        });
+      }
+    }
+
+    function renderProfileAchievements(){renderProfileLevels();const groups=buildProfileAchievementGroups(),container=document.getElementById("achievement-groups");let total=0,unlocked=0;if(container){container.innerHTML="";groups.forEach(group=>{const section=document.createElement("section");section.className="achievement-group";const groupUnlocked=group.items.filter(item=>item.unlocked).length;total+=group.items.length;unlocked+=groupUnlocked;section.innerHTML=`<div class="achievement-group-title"><span>${group.title}</span><span class="achievement-group-count">${groupUnlocked}/${group.items.length}</span></div><div class="achievement-crown-grid"></div>`;const grid=section.querySelector(".achievement-crown-grid");group.items.forEach(item=>{const card=document.createElement("article");card.className=`achievement-crown-card ${item.unlocked?"unlocked":"locked"}`;card.innerHTML=`<div class="achievement-crown-wrap">${getCrownSvg()}</div><div class="achievement-crown-title">${item.title}</div><div class="achievement-crown-condition">${item.condition}</div><div class="achievement-crown-progress">${item.unlocked?playerProgressText("Otključano","Unlocked"):`${Math.min(item.current,item.target)}/${item.target}`}</div>`;grid.appendChild(card);});container.appendChild(section);});}setProgressText("player-crowns-total",`${unlocked}/${total}`);setProgressText("player-crowns-title",playerProgressText("Krune postignuća","Achievement crowns"));setProgressText("player-crowns-copy",playerProgressText("Zaključane krune čekaju u tami. Otključane zasjaju zlatno.","Locked crowns wait in the dark. Unlocked crowns shine gold."));}
+
+    function profileDaily30StorageKey(){
+      if(currentUser?.id)return `kviztogo_daily30_results_v1:user:${currentUser.id}`;
+      return null;
+    }
+    function getProfileDaily30Stats(){
+      const empty={gamesPlayed:0,totalCorrect:0,totalWrong:0,bestScore:0,bestTotal:0,bestPercent:0,longestStreak:0};
+      const key=profileDaily30StorageKey();
+      if(!key)return empty;
+      let results={};
+      try{const parsed=JSON.parse(localStorage.getItem(key)||"null");if(parsed&&typeof parsed==="object")results=parsed;}catch(_){return empty;}
+      const official=Object.values(results).filter(r=>r&&r.official===true&&/^\d{4}-\d{2}-\d{2}$/.test(String(r.date||"")));
+      if(!official.length)return empty;
+      let totalCorrect=0,totalWrong=0,bestScore=0,bestTotal=0,bestPercent=0;
+      official.forEach(r=>{const score=Math.max(0,Number(r.score)||0),total=Math.max(score,Number(r.total)||30),pct=total?Math.round(score/total*100):0;totalCorrect+=score;totalWrong+=Math.max(0,total-score);if(pct>bestPercent||(pct===bestPercent&&score>bestScore)){bestPercent=pct;bestScore=score;bestTotal=total;}});
+      let longestStreak=0;
+      try{const crowns=JSON.parse(localStorage.getItem("kviztogo_daily30_crowns_v1")||"null");longestStreak=Math.max(0,Number(crowns?.bestStreak)||0);}catch(_){}
+      return {gamesPlayed:official.length,totalCorrect,totalWrong,bestScore,bestTotal,bestPercent,longestStreak};
+    }
+
+    function renderProfileDashboard(){if(!profileProgressReady)return;const s=profileStats,total=s.totalCorrect+s.totalWrong,accuracy=total?Math.round((s.totalCorrect/total)*100):0,questionTotal=Math.max(profileQuestionTotal,s.discoveredQuestionIds.length),discovered=s.discoveredQuestionIds.length;const success=n=>playerProgressText(`${n}% uspješnosti`,`${n}% accuracy`),mode=(prefix,data)=>{const answered=data.totalCorrect+data.totalWrong;setProgressText(`${prefix}-total-result`,`${data.totalCorrect}/${answered}`);setProgressText(`${prefix}-total-percent`,success(getModeAccuracy(data)));setProgressText(`${prefix}-best-result`,`${data.bestScore}/${data.bestTotal}`);setProgressText(`${prefix}-best-percent`,success(data.bestPercent));setProgressText(`${prefix}-games-played`,data.gamesPlayed);setProgressText(`${prefix}-longest-streak`,data.longestStreak);};
+      setProgressText("player-overview-title",playerProgressText("Pregled znanja","Knowledge overview"));setProgressText("player-overview-copy",playerProgressText("Svi tvoji odgovori i otkrivena pitanja na jednom mjestu.","All your answers and discovered questions in one place."));setProgressText("player-overview-chip",playerProgressText("Ukupno","Total"));setProgressText("stat-result-label",playerProgressText("Rezultat","Result"));setProgressText("stat-streak-label",playerProgressText("Najduži niz točnih","Longest correct streak"));setProgressText("stat-games-label",playerProgressText("Odigrano kvizova","Quizzes played"));setProgressText("stat-discovered-label",playerProgressText("Otkrivena pitanja","Discovered questions"));setProgressText("stat-overall-result",`${s.totalCorrect}/${total}`);setProgressText("stat-overall-result-percent",success(accuracy));setProgressText("stat-longest-streak",s.longestStreak);setProgressText("stat-games-played",s.gamesPlayed);setProgressText("stat-discovered",`${discovered}/${questionTotal}`);setProgressText("knowledge-progress-label",playerProgressText("Otkriveno različitih pitanja","Different questions discovered"));setProgressText("knowledge-progress-value",`${discovered}/${questionTotal}`);const knowledgeFill=document.getElementById("knowledge-progress-fill");if(knowledgeFill)knowledgeFill.style.width=`${questionTotal?Math.min(100,Math.round(discovered/questionTotal*100)):0}%`;
+      mode("blitz",s.modeStats.blitz60);mode("relax",s.modeStats.relax);mode("themed",s.modeStats.themed);mode("daily30",getProfileDaily30Stats());setProgressText("themed-topics-chip",playerProgressText(`${s.modeStats.themed.themesPlayed.length} tema`,`${s.modeStats.themed.themesPlayed.length} themes`));
+      setProgressText("profile-blitz-copy",playerProgressText("Poštena usporedba jer svi imaju isto vrijeme.","A fair comparison because everyone has the same time."));setProgressText("profile-relax-title",playerProgressText("Bez vremena","No timer"));setProgressText("profile-relax-copy",playerProgressText("Tvoja privatna statistika igre bez vremenskog ograničenja.","Your private no-timer statistics."));setProgressText("profile-themed-title",playerProgressText("Tematski kvizovi","Themed quizzes"));setProgressText("profile-themed-copy",playerProgressText("Tvoja privatna statistika kvizova po odabranim temama.","Your private themed-quiz statistics."));setProgressText("profile-daily30-title",playerProgressText("Dnevnih 30","Daily 30"));setProgressText("profile-daily30-copy",playerProgressText("Broje se samo dnevni kvizovi odigrani na dan kada su aktivni.","Only Daily 30 quizzes played on their live day are counted."));setProgressText("daily30-result-label",playerProgressText("Ukupni rezultat","Total score"));setProgressText("daily30-best-label",playerProgressText("Najbolja partija","Best game"));setProgressText("daily30-games-label",playerProgressText("Odigrano dana","Days played"));setProgressText("daily30-streak-label",playerProgressText("Najduži niz točnih","Longest correct streak"));setProgressText("player-games-toggle-label",playerProgressText("Pregled odigranih kvizova","View played quizzes"));setProgressText("profile-collection-chip",playerProgressText("Uskoro","Coming soon"));setProgressText("profile-multiplayer-chip",playerProgressText("Uskoro","Coming soon"));setProgressText("collection-achievements-chip",playerProgressText("Uskoro","Coming soon"));setProgressText("multiplayer-achievements-chip",playerProgressText("Uskoro","Coming soon"));
+      let rareTotal=0;RARITY_ORDER.forEach(r=>{const count=Math.min(RARITY_TOTALS[r],s.rareAnswers[r].length);rareTotal+=count;setProgressText(`rare-${r}-value`,`${count}/${RARITY_TOTALS[r]}`);});setProgressText("player-rare-total",`${rareTotal}/101`);setProgressText("player-rare-title",playerProgressText("Rijetki odgovori","Rare answers"));setProgressText("player-rare-copy",playerProgressText("Rijetki minerali u zemlji. Rijetki odgovori u glavi.","Rare minerals in the ground. Rare answers in your mind."));renderProfileAchievements();updateProfileBlitzPercentile();}
+
+    function setProfileStatus(message,isError=false){const el=document.getElementById("profile-progress-status");if(!el)return;el.textContent=message||"";el.classList.toggle("visible",Boolean(message));el.classList.toggle("error",Boolean(message&&isError));}
+    function getProfileLocalKeys(userId){return{stats:`${PLAYER_STATS_BASE_KEY}:${userId}`,atomic:`${PLAYER_ATOMIC_BASE_KEY}:${userId}`,migration:`${PLAYER_MIGRATION_BASE_KEY}:${userId}`,dirty:`${PLAYER_DIRTY_BASE_KEY}:${userId}`};}
+    function collectGuestProfileSources(){const sources=[],keys=[],seen=new Set(),prefix=`${PLAYER_STATS_BASE_KEY}:guest`;try{for(let i=0;i<localStorage.length;i+=1){const key=localStorage.key(i);if(!key||!key.startsWith(prefix))continue;const stats=normalizePlayerStats(JSON.parse(localStorage.getItem(key)||"null"));if(!playerStatsHaveData(stats))continue;const signature=JSON.stringify(stats);if(seen.has(signature))continue;seen.add(signature);sources.push(stats);keys.push(key);}}catch(error){console.warn("Gostujući napredak nije pročitan:",error);}return{sources,keys};}
+
+    async function loadAndMigratePlayerProgress(user){const keys=getProfileLocalKeys(user.id),guest=collectGuestProfileSources(),migrationDone=Boolean(localStorage.getItem(keys.migration)),dirty=Boolean(localStorage.getItem(keys.dirty));let localStatsValue=createEmptyPlayerStats(),localAtomicValue=createEmptyPlayerAtomic();try{localStatsValue=normalizePlayerStats(JSON.parse(localStorage.getItem(keys.stats)||"null"));localAtomicValue=normalizePlayerAtomic(JSON.parse(localStorage.getItem(keys.atomic)||localStorage.getItem(PLAYER_ATOMIC_BASE_KEY)||"null"));}catch(_){}
+      try{const{data,error}=await supabaseClient.from(PLAYER_PROGRESS_TABLE).select("progress, updated_at").eq("user_id",user.id).maybeSingle();if(error)throw error;const remoteExists=Boolean(data?.progress),remote=normalizePlayerPackage(data?.progress||{});let merged=dirty||!remoteExists?{version:PLAYER_PROGRESS_VERSION,stats:localStatsValue,atomicJokers:localAtomicValue,questionTotal:Math.max(remote.questionTotal,DEFAULT_QUESTION_TOTAL),syncedAt:new Date().toISOString()}:remote,needsUpsert=dirty||!remoteExists;
+        if(!migrationDone){const localSig=JSON.stringify(localStatsValue),remoteSig=JSON.stringify(remote.stats);if(remoteExists&&!dirty&&playerStatsHaveData(localStatsValue)&&localSig!==remoteSig){merged.stats=mergePlayerStatsAdditive(merged.stats,localStatsValue);needsUpsert=true;}if(remoteExists&&playerAtomicHasData(localAtomicValue)&&JSON.stringify(localAtomicValue)!==JSON.stringify(remote.atomicJokers)){merged.atomicJokers=mergePlayerAtomicAdditive(merged.atomicJokers,localAtomicValue);needsUpsert=true;}guest.sources.forEach(stats=>{merged.stats=mergePlayerStatsAdditive(merged.stats,stats);needsUpsert=true;});}
+        merged.questionTotal=Math.max(Number(merged.questionTotal)||0,DEFAULT_QUESTION_TOTAL,merged.stats.discoveredQuestionIds.length);merged.syncedAt=new Date().toISOString();if(needsUpsert){const{error:upsertError}=await supabaseClient.from(PLAYER_PROGRESS_TABLE).upsert({user_id:user.id,progress:merged,updated_at:merged.syncedAt},{onConflict:"user_id"});if(upsertError)throw upsertError;}
+        profileStats=normalizePlayerStats(merged.stats);profileAtomic=normalizePlayerAtomic(merged.atomicJokers);profileQuestionTotal=merged.questionTotal;localStorage.setItem(keys.stats,JSON.stringify(profileStats));localStorage.setItem(keys.atomic,JSON.stringify(profileAtomic));localStorage.removeItem(keys.dirty);if(!migrationDone){guest.keys.forEach(key=>localStorage.removeItem(key));localStorage.removeItem(PLAYER_ATOMIC_BASE_KEY);localStorage.setItem(keys.migration,new Date().toISOString());}setProfileStatus(guest.sources.length?playerProgressText("Gostujući napredak uspješno je prenesen na tvoj račun.","Guest progress was successfully moved to your account."):"");return true;
+      }catch(error){console.error("Trajni profil nije učitan:",error);profileStats=localStatsValue;profileAtomic=localAtomicValue;profileQuestionTotal=Math.max(DEFAULT_QUESTION_TOTAL,profileStats.discoveredQuestionIds.length);setProfileStatus(playerProgressText("Za trajno spremanje napretka treba uključiti Supabase tablicu player_progress. Lokalna kopija je i dalje sigurna na ovom uređaju.","The Supabase player_progress table must be enabled for permanent progress. The local copy is still safe on this device."),true);return false;}finally{profileProgressReady=true;document.getElementById("profile-progress-area")?.setAttribute("aria-busy","false");renderProfileDashboard();}}
+
+    async function updateProfileBlitzPercentile(){const note=document.getElementById("blitz-percentile-note"),best=profileStats.modeStats.blitz60.bestScore;if(!note)return;note.hidden=false;if(!best){note.textContent=playerProgressText("Završi barem jednu Blitz 60s partiju za usporedbu.","Finish at least one Blitz 60s game to see your comparison.");return;}if(profileBlitzPercentile?.best===best){note.textContent=profileBlitzPercentile.text;return;}note.textContent=playerProgressText("Uspoređujem Blitz rekord…","Comparing the Blitz record…");try{const{data,error}=await supabaseClient.from("quiz_plays").select("correct_answers").eq("quiz_mode","blitz60").eq("completed",true).not("correct_answers","is",null).limit(5000);if(error)throw error;const scores=(data||[]).map(x=>Number(x.correct_answers)).filter(Number.isFinite);if(!scores.length)throw new Error("No scores");const better=scores.filter(score=>score>best).length,top=Math.max(1,Math.min(100,Math.round((better+1)/scores.length*100))),text=playerProgressText(`Među najboljih ${top}% odigranih Blitz rezultata · usporedba s ${scores.length} rezultata`,`Among the top ${top}% of played Blitz results · compared with ${scores.length} results`);profileBlitzPercentile={best,text};note.textContent=text;}catch(error){note.textContent=playerProgressText("Blitz usporedba trenutačno nije dostupna.","The Blitz comparison is currently unavailable.");}}
+
+    function initProfileProgressInteractions(){document.getElementById("player-achievements-toggle")?.addEventListener("click",()=>{const button=document.getElementById("player-achievements-toggle"),details=document.getElementById("player-achievements-details"),open=button.getAttribute("aria-expanded")!=="true";button.setAttribute("aria-expanded",String(open));details.classList.toggle("open",open);});document.getElementById("player-levels-toggle")?.addEventListener("click",()=>{const button=document.getElementById("player-levels-toggle"),details=document.getElementById("player-levels-details"),open=button.getAttribute("aria-expanded")!=="true";button.setAttribute("aria-expanded",String(open));details.classList.toggle("open",open);button.textContent=open?playerProgressText("Sakrij razine","Hide levels"):playerProgressText("Pogledaj sve razine","View all levels");});document.getElementById("player-games-toggle")?.addEventListener("click",()=>{const button=document.getElementById("player-games-toggle"),details=document.getElementById("player-games-details"),open=button.getAttribute("aria-expanded")!=="true";button.setAttribute("aria-expanded",String(open));details.classList.toggle("open",open);setProgressText("player-games-toggle-label",open?playerProgressText("Sakrij odigrane kvizove","Hide played quizzes"):playerProgressText("Pregled odigranih kvizova","View played quizzes"));});}
+
+
+    function safePendingDestination(value) {
+      if (!value) return null;
+      try {
+        const url = new URL(value, window.location.href);
+        if (url.origin !== window.location.origin) return null;
+        const file = url.pathname.split("/").pop() || "";
+        if (!/^[A-Za-z0-9._-]+\.html$/i.test(file)) return null;
+        return `${file}${url.search}${url.hash}`;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function initPendingDestinationCard() {
+      const card = document.getElementById("post-login-continue-card");
+      const link = document.getElementById("post-login-continue-link");
+      const dismiss = document.getElementById("post-login-dismiss-btn");
+      if (!card || !link || !dismiss) return;
+
+      const destination = safePendingDestination(localStorage.getItem(PENDING_DESTINATION_KEY));
+      if (!destination || destination === PROFILE_PAGE) {
+        localStorage.removeItem(PENDING_DESTINATION_KEY);
+        card.hidden = true;
+        return;
+      }
+
+      link.href = destination;
+      card.hidden = false;
+
+      link.addEventListener("click", () => {
+        localStorage.removeItem(PENDING_DESTINATION_KEY);
+      }, { once: true });
+
+      dismiss.addEventListener("click", () => {
+        localStorage.removeItem(PENDING_DESTINATION_KEY);
+        card.hidden = true;
+      }, { once: true });
+    }
+
+    async function acceptPendingInvite() {
+      const inviteCode = (localStorage.getItem(PENDING_INVITE_KEY) || "").trim();
+      if (!/^[A-Za-z0-9]{6,32}$/.test(inviteCode)) {
+        localStorage.removeItem(PENDING_INVITE_KEY);
+        return;
+      }
+
+      try {
+        const { data, error } = await supabaseClient.rpc("accept_invite", {
+          p_code: inviteCode.toUpperCase()
+        });
+        if (error) throw error;
+
+        localStorage.removeItem(PENDING_INVITE_KEY);
+        showToast(data === true ? dict().inviteAccepted : dict().inviteInvalid);
+      } catch (error) {
+        console.warn("Pozivnica nije potvrđena:", error);
+        showToast(dict().inviteError);
+      }
+    }
+
+    async function protectProfilePage() {
+      try {
+        const { data: sessionData, error: sessionError } = await supabaseClient.auth.getSession();
+
+        if (sessionError || !sessionData?.session?.user) {
+          redirectToLogin();
+          return;
+        }
+
+        // Potvrdi korisnika i na Supabase poslužitelju, ne samo iz lokalno
+        // spremljene sesije preglednika.
+        const { data: userData, error: userError } = await supabaseClient.auth.getUser();
+        if (userError || !userData?.user) {
+          await supabaseClient.auth.signOut({ scope: "local" }).catch(() => {});
+          localStorage.removeItem(SESSION_TIME_KEY);
+          redirectToLogin();
+          return;
+        }
+
+        const verifiedUser = userData.user;
+        const lastSignInMs = new Date(verifiedUser.last_sign_in_at || 0).getTime();
+        const storedLoginTime = Number(localStorage.getItem(SESSION_TIME_KEY));
+        const loginTime = Number.isFinite(lastSignInMs) && lastSignInMs > 0
+          ? lastSignInMs
+          : (storedLoginTime || Date.now());
+        localStorage.setItem(SESSION_TIME_KEY, String(loginTime));
+
+        if (Date.now() - loginTime > THREE_DAYS_MS) {
+          await supabaseClient.auth.signOut({ scope: "local" });
+          localStorage.removeItem(SESSION_TIME_KEY);
+          redirectToLogin();
+          return;
+        }
+
+        currentUser = verifiedUser;
+        localStorage.removeItem(LEGACY_AFTER_LOGIN_KEY);
+        emailValue.textContent = currentUser.email || "—";
+        emailInput.value = currentUser.email || "";
+
+        let username = getMetadataUsername(currentUser);
+
+        const { data: profileData, error: profileError } = await supabaseClient
+          .from("profiles")
+          .select("username, invite_code")
+          .eq("id", currentUser.id)
+          .maybeSingle();
+
+        if (profileError) {
+          console.warn("Profile read error:", profileError);
+        } else {
+          if (profileData?.username) username = profileData.username;
+          currentInviteCode = profileData?.invite_code || null;
+        }
+
+        usernameValue.textContent = username;
+        usernameInput.value = username === "KvizToGo korisnik" ? "" : username;
+
+        await acceptPendingInvite();
+        initPendingDestinationCard();
+        await loadAndMigratePlayerProgress(currentUser);
+        await loadMyQuizzes();
+      } catch (error) {
+        console.error("Profile loading error:", error);
+
+        const authFailure =
+          error?.name === "AuthSessionMissingError" ||
+          error?.status === 401 ||
+          /session|jwt|auth/i.test(String(error?.message || ""));
+
+        if (authFailure) {
+          localStorage.removeItem(SESSION_TIME_KEY);
+          redirectToLogin();
+          return;
+        }
+
+        usernameValue.textContent = "Greška pri učitavanju";
+        emailValue.textContent = "Osvježite stranicu";
+        const list = document.getElementById("my-quizzes-list");
+        if (list) {
+          list.innerHTML = '<p class="empty-state">Podaci se nisu mogli učitati. Osvježite stranicu ili se ponovno prijavite.</p>';
+        }
+      }
+    }
+
+    function quizStatus(quiz) {
+      if (quiz.status === "cancelled") return currentLang === "en" ? "Postponed" : "Odgođeno";
+      if (quiz.status === "pending") return currentLang === "en" ? "Pending approval" : "Čeka odobrenje";
+      if (quiz.status === "rejected") return currentLang === "en" ? "Rejected" : "Odbijeno";
+
+      const start = new Date(quiz.datetime).getTime();
+      const now = Date.now();
+
+      if (now >= start && now < start + 4 * 60 * 60 * 1000) {
+        return currentLang === "en" ? "LIVE" : "UŽIVO";
+      }
+      if (now >= start + 4 * 60 * 60 * 1000) {
+        return currentLang === "en" ? "Finished" : "Završeno";
+      }
+      return currentLang === "en" ? "Upcoming" : "Uskoro";
+    }
+
+    function formatQuizDate(value) {
+      const d = new Date(value);
+      return Number.isNaN(d.getTime()) ? "—" : d.toLocaleString(currentLang === "en" ? "en-GB" : "hr-HR", {dateStyle:"medium", timeStyle:"short"});
+    }
+
+    function renderMyQuizzes() {
+      const activeEl = document.getElementById("my-quizzes-list");
+      const historyEl = document.getElementById("my-quizzes-history");
+      const now = Date.now();
+      const finishedAfterMs = 4 * 60 * 60 * 1000;
+
+      // Glavni prikaz: samo kvizovi koji dolaze ili su još u 4-satnom UŽIVO prozoru.
+      // Povijest: samo kvizovi čiji je UŽIVO prozor završio.
+      const isHistory = (q) => {
+        const start = new Date(q.datetime).getTime();
+        return Number.isFinite(start) && now >= start + finishedAfterMs;
+      };
+      const active = myQuizzes.filter(q => !isHistory(q));
+      const history = myQuizzes.filter(isHistory);
+
+      const card = (q, historyMode=false) => `<article class="my-quiz-card ${q.status === "cancelled" ? "cancelled" : ""}">
+        <div class="my-quiz-title">${escapeHtmlProfile(q.title || "Kviz")}</div>
+        <div class="my-quiz-meta"><strong>${escapeHtmlProfile(quizStatus(q))}</strong><br>${escapeHtmlProfile(q.venue || "—")}<br>${escapeHtmlProfile(formatQuizDate(q.datetime))}${q.phone ? `<br>${escapeHtmlProfile(q.phone)}` : ""}${q.description ? `<br>${escapeHtmlProfile(q.description)}` : ""}</div>
+        ${historyMode ? "" : `<div class="my-quiz-actions"><button class="btn btn--soft edit-quiz-btn" data-id="${q.id}">✏️ Uredi</button><button class="btn btn--danger cancel-quiz-btn" data-id="${q.id}">${q.status === "cancelled" ? "Ponovno objavi" : "Otkaži"}</button></div>`}
+      </article>`;
+      activeEl.innerHTML = active.length ? active.map(q => card(q)).join("") : '<p class="empty-state">Trenutno nemate kvizova koji dolaze ili su uživo.</p>';
+      historyEl.innerHTML = history.length ? history.map(q => card(q, true)).join("") : '<p class="empty-state">Još nema završenih kvizova.</p>';
+      activeEl.hidden = false;
+      historyEl.hidden = true;
+      const historyButton = document.getElementById("history-toggle-btn");
+      if (historyButton) historyButton.textContent = currentLang === "en" ? "My quiz history" : "Povijest mojih kvizova";
+    }
+
+    function escapeHtmlProfile(value) { const d=document.createElement("div"); d.textContent=String(value ?? ""); return d.innerHTML; }
+
+    async function loadMyQuizzes() {
+      if (!currentUser?.id) {
+        document.getElementById("my-quizzes-list").innerHTML =
+          '<p class="empty-state">Korisnička sesija nije učitana. Prijavite se ponovno.</p>';
+        return;
+      }
+
+      const { data, error } = await supabaseClient
+        .from("quizzes")
+        .select("*")
+        .eq("user_id", currentUser.id)
+        .order("datetime", { ascending: true });
+
+      if (error) {
+        document.getElementById("my-quizzes-list").innerHTML =
+          `<p class="empty-state">${escapeHtmlProfile(error.message)}</p>`;
+        return;
+      }
+
+      myQuizzes = data || [];
+      renderMyQuizzes();
+    }
+
+    function openQuizEditor(id) {
+      const q = myQuizzes.find(item => String(item.id) === String(id));
+      if (!q) return;
+      const set = (id, value) => { const el=document.getElementById(id); if(el) el.value=value ?? ""; };
+      set("edit-quiz-id", q.id); set("edit-quiz-title", q.title); set("edit-quiz-venue", q.venue);
+      set("edit-quiz-type", q.type || "opce");
+      const d=new Date(q.datetime); set("edit-quiz-datetime", Number.isNaN(d.getTime()) ? "" : new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,16));
+      set("edit-quiz-team-size", q.team_size); set("edit-quiz-entry-fee", q.entry_fee);
+      set("edit-quiz-maps-link", q.maps_link || (q.lat != null && q.lng != null ? `${q.lat},${q.lng}` : ""));
+      set("edit-quiz-lat", q.lat); set("edit-quiz-lng", q.lng); set("edit-quiz-phone", q.phone);
+      set("edit-quiz-signup", q.signup_link); set("edit-quiz-prize1", q.prize1); set("edit-quiz-prize2", q.prize2);
+      set("edit-quiz-prize3", q.prize3); set("edit-quiz-prize-extra", q.prize_extra); set("edit-quiz-description", q.description);
+      document.getElementById("edit-quiz-message").textContent="";
+      openModal("quiz-edit-modal");
+    }
+
+    function parseEditorCoordinates(value) {
+      const text=String(value||"").trim();
+      const direct=text.match(/(-?\d{1,2}(?:\.\d+)?)\s*[, ]\s*(-?\d{1,3}(?:\.\d+)?)/);
+      if(direct) return {lat:Number(direct[1]),lng:Number(direct[2])};
+      const at=text.match(/@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/);
+      return at ? {lat:Number(at[1]),lng:Number(at[2])} : null;
+    }
+
+    async function saveQuizEdit() {
+      const get=(id)=>document.getElementById(id)?.value?.trim()||"";
+      const id=get("edit-quiz-id"), dateValue=get("edit-quiz-datetime");
+      const message=document.getElementById("edit-quiz-message");
+      const originalQuiz=myQuizzes.find(item=>String(item.id)===String(id));
+      if(!originalQuiz){message.textContent="Kviz nije pronađen. Osvježite stranicu i pokušajte ponovno.";return;}
+
+      const mapsLink=get("edit-quiz-maps-link");
+      const originalMapsLink=String(originalQuiz.maps_link || (originalQuiz.lat != null && originalQuiz.lng != null ? `${originalQuiz.lat},${originalQuiz.lng}` : "")).trim();
+      const locationChanged=mapsLink !== originalMapsLink;
+
+      // Ako lokacija nije dirana, NE parsiramo je ponovno iz Maps linka.
+      // Tako promjena samo datuma/vremena ne može slučajno pokvariti lat/lng.
+      let coords;
+      if(!locationChanged){
+        coords={lat:Number(originalQuiz.lat),lng:Number(originalQuiz.lng)};
+      }else{
+        coords=parseEditorCoordinates(mapsLink);
+      }
+
+      const validCoords=coords && Number.isFinite(coords.lat) && Number.isFinite(coords.lng) && coords.lat>=-90 && coords.lat<=90 && coords.lng>=-180 && coords.lng<=180;
+      if(!get("edit-quiz-title") || !get("edit-quiz-venue") || !dateValue || !validCoords) {
+        message.textContent="Ispunite naziv, lokal, datum i valjanu Google Maps lokaciju/koordinate."; return;
+      }
+      const teamSize=Number(get("edit-quiz-team-size"));
+      const payload={title:get("edit-quiz-title"),venue:get("edit-quiz-venue"),type:get("edit-quiz-type")||"opce",datetime:new Date(dateValue).toISOString(),team_size:Number.isFinite(teamSize)&&teamSize>0?teamSize:null,entry_fee:get("edit-quiz-entry-fee")||null,maps_link:mapsLink,lat:coords.lat,lng:coords.lng,phone:get("edit-quiz-phone")||null,signup_link:get("edit-quiz-signup")||null,prize1:get("edit-quiz-prize1")||null,prize2:get("edit-quiz-prize2")||null,prize3:get("edit-quiz-prize3")||null,prize_extra:get("edit-quiz-prize-extra")||null,description:get("edit-quiz-description")||null,updated_at:new Date().toISOString()};
+      const {error}=await supabaseClient.from("quizzes").update(payload).eq("id",id).eq("user_id",currentUser.id);
+      if(error){message.textContent=error.message;return;}
+      closeModal("quiz-edit-modal"); showToast("Kviz je ažuriran."); await loadMyQuizzes();
+    }
+
+    async function toggleQuizCancelled(id) {
+      const q=myQuizzes.find(item=>String(item.id)===String(id)); if(!q)return;
+      const next=q.status === "cancelled" ? "approved" : "cancelled";
+      if(next === "cancelled" && !confirm("Želite li označiti ovaj kviz kao odgođen?")) return;
+      const now=new Date().toISOString();
+      const payload=next === "cancelled" ? {status:next,cancelled_at:now,updated_at:now} : {status:next,cancelled_at:null,updated_at:now};
+      const {error}=await supabaseClient.from("quizzes").update(payload).eq("id",id).eq("user_id",currentUser.id);
+      if(error){showToast(error.message);return;} showToast(next === "cancelled" ? "Kviz je označen kao odgođen." : "Kviz je ponovno objavljen."); await loadMyQuizzes();
+    }
+
+    function isValidUsername(username) {
+      return /^[A-Za-zÀ-ž0-9._-]{3,24}$/.test(username);
+    }
+
+    async function checkUsernameAvailability(username) {
+      const { data, error } = await supabaseClient.rpc("username_available", {
+        candidate: username
+      });
+
+      if (error) throw error;
+      return data === true;
+    }
+
+    async function saveUsername() {
+      const d = dict();
+      const saveButton = document.getElementById("save-username-btn");
+      const username = usernameInput.value.trim();
+
+      usernameMessage.textContent = "";
+
+      if (!isValidUsername(username)) {
+        usernameMessage.textContent = d.usernameInvalid;
+        return;
+      }
+
+      try {
+        saveButton.disabled = true;
+
+        if (!currentUser?.id) {
+          const { data: userData, error: userError } = await supabaseClient.auth.getUser();
+          if (userError) throw userError;
+          currentUser = userData?.user || null;
+        }
+
+        if (!currentUser?.id) {
+          throw new Error(
+            currentLang === "en"
+              ? "Your session has expired. Please sign in again."
+              : "Prijava je istekla. Prijavite se ponovno."
+          );
+        }
+
+        const available = await checkUsernameAvailability(username);
+
+        if (!available) {
+          usernameMessage.textContent = d.usernameTaken;
+          return;
+        }
+
+        const { data: updatedProfile, error: profileError } = await supabaseClient
+          .from("profiles")
+          .update({ username })
+          .eq("id", currentUser.id)
+          .select("username")
+          .single();
+
+        if (profileError) throw profileError;
+        if (!updatedProfile) throw new Error(d.genericError);
+
+        const { error: metadataError } = await supabaseClient.auth.updateUser({
+          data: { username }
+        });
+
+        if (metadataError) throw metadataError;
+
+        usernameValue.textContent = username;
+        usernameMessage.textContent = d.usernameSaved;
+
+        window.setTimeout(() => {
+          closeModal("username-modal");
+          showToast(d.usernameSaved);
+        }, 500);
+      } catch (error) {
+        if (error?.code === "23505") {
+          usernameMessage.textContent = d.usernameTaken;
+        } else {
+          usernameMessage.textContent = error?.message || d.genericError;
+        }
+      } finally {
+        saveButton.disabled = false;
+      }
+    }
+
+    async function saveEmail() {
+      const d = dict();
+      const email = emailInput.value.trim();
+
+      emailMessage.textContent = "";
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailMessage.textContent = d.emailInvalid;
+        return;
+      }
+
+      const { error } = await supabaseClient.auth.updateUser(
+        { email },
+        { emailRedirectTo: `${window.location.origin}/profil.html` }
+      );
+
+      if (error) {
+        emailMessage.textContent = error.message;
+        return;
+      }
+
+      emailMessage.textContent = d.emailSent;
+    }
+
+    async function logout() {
+      await supabaseClient.auth.signOut();
+      localStorage.removeItem(SESSION_TIME_KEY);
+      window.location.replace("index.html");
+    }
+
+async function deleteAccount() {
+  const d = dict();
+  const expected = currentLang === "hr" ? "IZBRIŠI" : "DELETE";
+  const deleteButton = document.getElementById("confirm-delete-btn");
+
+  deleteMessage.textContent = "";
+
+  if (deleteInput.value.trim() !== expected) {
+    deleteMessage.textContent = d.deleteType;
+    return;
+  }
+
+  try {
+    deleteButton.disabled = true;
+    deleteMessage.textContent =
+      currentLang === "hr"
+        ? "Brisanje računa..."
+        : "Deleting account...";
+
+    const { error } = await supabaseClient.rpc("delete_own_account");
+
+    if (error) {
+      throw error;
+    }
+
+    /*
+      Račun je već izbrisan iz baze, ali Supabaseova sesija
+      može još biti spremljena u pregledniku.
+    */
+    try {
+      await supabaseClient.auth.signOut({ scope: "local" });
+    } catch (signOutError) {
+      console.warn("Sesija se nije mogla standardno ukloniti:", signOutError);
+    }
+
+    localStorage.removeItem(SESSION_TIME_KEY);
+    localStorage.removeItem("kviztogo_after_login");
+    if (currentUser?.id) {
+      const progressKeys = getProfileLocalKeys(currentUser.id);
+      localStorage.removeItem(progressKeys.stats);
+      localStorage.removeItem(progressKeys.atomic);
+      localStorage.removeItem(progressKeys.migration);
+      localStorage.removeItem(progressKeys.dirty);
+    }
+
+    sessionStorage.clear();
+
+    window.location.replace("index.html");
+  } catch (error) {
+    console.error("Greška prilikom brisanja računa:", error);
+
+    deleteMessage.textContent =
+      error?.message ||
+      (currentLang === "hr"
+        ? "Račun nije obrisan. Pokušaj ponovno."
+        : "The account was not deleted. Please try again.");
+
+    deleteButton.disabled = false;
+  }
+}
+
+function getInviteUrl() {
+  if (!currentInviteCode) return null;
+  const inviteUrl = new URL("login.html", window.location.href);
+  inviteUrl.searchParams.set("ref", currentInviteCode);
+  return inviteUrl.href;
+}
+
+    async function copyInviteLink() {
+      const url = getInviteUrl();
+
+      if (!url) {
+        showToast(dict().inviteUnavailable);
+        return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch {
+        const temporaryInput = document.createElement("textarea");
+        temporaryInput.value = url;
+        document.body.appendChild(temporaryInput);
+        temporaryInput.select();
+        document.execCommand("copy");
+        temporaryInput.remove();
+      }
+
+      showToast(dict().copied);
+    }
+
+    function getInviteMessage(url) {
+      return `${dict().shareText} ${url}`;
+    }
+
+    function shareOnWhatsApp() {
+      const url = getInviteUrl();
+
+      if (!url) {
+        showToast(dict().inviteUnavailable);
+        return;
+      }
+
+      window.open(
+        `https://wa.me/?text=${encodeURIComponent(getInviteMessage(url))}`,
+        "_blank",
+        "noopener"
+      );
+    }
+
+    function shareOnViber() {
+      const url = getInviteUrl();
+
+      if (!url) {
+        showToast(dict().inviteUnavailable);
+        return;
+      }
+
+      window.location.href = `viber://forward?text=${encodeURIComponent(getInviteMessage(url))}`;
+    }
+
+    async function shareOnMessenger() {
+      const url = getInviteUrl();
+
+      if (!url) {
+        showToast(dict().inviteUnavailable);
+        return;
+      }
+
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: "KvizToGo",
+            text: dict().shareText,
+            url
+          });
+          return;
+        } catch (error) {
+          if (error?.name === "AbortError") return;
+        }
+      }
+
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch {
+        const temporaryInput = document.createElement("textarea");
+        temporaryInput.value = url;
+        document.body.appendChild(temporaryInput);
+        temporaryInput.select();
+        document.execCommand("copy");
+        temporaryInput.remove();
+      }
+
+      showToast(dict().shareFallback);
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    flagBtn.addEventListener("click", () => {
+      currentLang = currentLang === "hr" ? "en" : "hr";
+      localStorage.setItem("kviztogo_lang", currentLang);
+      applyTranslations();
+    });
+
+    document.getElementById("back-btn").addEventListener("click", () => {
+      localStorage.removeItem("kviztogo_after_login");
+      window.location.replace("index.html");
+    });
+
+    document.querySelector(".brand-logo")?.addEventListener("click", (event) => {
+      event.preventDefault();
+      localStorage.removeItem("kviztogo_after_login");
+      window.location.replace("index.html");
+    });
+
+    settingsBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const open = settingsMenu.classList.toggle("is-open");
+      settingsBtn.setAttribute("aria-expanded", String(open));
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!settingsMenu.contains(event.target) && !settingsBtn.contains(event.target)) {
+        settingsMenu.classList.remove("is-open");
+        settingsBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.getElementById("edit-username-btn").addEventListener("click", () => {
+      usernameMessage.textContent = "";
+      openModal("username-modal");
+      usernameInput.focus();
+    });
+
+    document.getElementById("edit-email-btn").addEventListener("click", () => {
+      emailMessage.textContent = "";
+      openModal("email-modal");
+      emailInput.focus();
+    });
+
+    document.getElementById("change-email-btn").addEventListener("click", () => {
+      emailMessage.textContent = "";
+      openModal("email-modal");
+      emailInput.focus();
+    });
+
+    document.getElementById("logout-btn").addEventListener("click", logout);
+
+    document.getElementById("delete-account-btn").addEventListener("click", () => {
+      deleteInput.value = "";
+      deleteMessage.textContent = "";
+      openModal("delete-modal");
+      deleteInput.focus();
+    });
+
+    document.getElementById("save-username-btn").addEventListener("click", saveUsername);
+    document.getElementById("save-email-btn").addEventListener("click", saveEmail);
+    document.getElementById("confirm-delete-btn").addEventListener("click", deleteAccount);
+    document.getElementById("copy-link-btn").addEventListener("click", copyInviteLink);
+    document.getElementById("whatsapp-btn").addEventListener("click", shareOnWhatsApp);
+    document.getElementById("viber-btn").addEventListener("click", shareOnViber);
+    document.getElementById("messenger-btn").addEventListener("click", shareOnMessenger);
+
+    document.querySelectorAll("[data-close-modal]").forEach((button) => {
+      button.addEventListener("click", () => closeModal(button.dataset.closeModal));
+    });
+
+    document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
+      backdrop.addEventListener("click", (event) => {
+        if (event.target === backdrop) closeModal(backdrop.id);
+      });
+    });
+
+    usernameInput.addEventListener("input", async () => {
+      const username = usernameInput.value.trim();
+      usernameMessage.textContent = "";
+
+      if (!isValidUsername(username)) return;
+
+      try {
+        const available = await checkUsernameAvailability(username);
+        usernameMessage.textContent = available
+          ? dict().usernameAvailable
+          : dict().usernameTaken;
+      } catch {
+        usernameMessage.textContent = "";
+      }
+    });
+
+    initProfileProgressInteractions();
+    applyTranslations();
+    protectProfilePage();
+
+    document.getElementById("my-quizzes-list")?.addEventListener("click", (e) => {
+      const edit = e.target.closest(".edit-quiz-btn");
+      const cancel = e.target.closest(".cancel-quiz-btn");
+      if (edit) openQuizEditor(edit.dataset.id);
+      if (cancel) toggleQuizCancelled(cancel.dataset.id);
+    });
+
+    document.getElementById("history-toggle-btn")?.addEventListener("click", () => {
+      const active = document.getElementById("my-quizzes-list");
+      const history = document.getElementById("my-quizzes-history");
+      const button = document.getElementById("history-toggle-btn");
+      if (!active || !history || !button) return;
+
+      const showingHistory = !history.hidden;
+      if (showingHistory) {
+        history.hidden = true;
+        active.hidden = false;
+        button.textContent = "Povijest mojih kvizova";
+      } else {
+        active.hidden = true;
+        history.hidden = false;
+        button.textContent = "Sakrij povijest";
+      }
+    });
+
+    document.getElementById("save-quiz-edit-btn")?.addEventListener("click", saveQuizEdit);
+  </script>
+</body>
+</html>
