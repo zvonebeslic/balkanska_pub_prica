@@ -32,99 +32,109 @@ jobs:
           fs.writeFileSync('Sport.json', JSON.stringify(sport, null, 2) + '\n');
 
           let html = fs.readFileSync('online-kviz.html', 'utf8');
-          const once = (oldText, newText, label) => {
-            if (!html.includes(oldText)) {
-              if (html.includes(newText)) return;
-              throw new Error(`Nije pronađeno mjesto za: ${label}`);
-            }
+
+          const sportButton = '          <button class="themed-topic" data-topic="Sport" data-achievements="true" type="button" data-i18n="themeSport">Sport kviz</button>';
+          html = html.replace(/^\s*<button class="themed-topic" data-topic="Sport"[^\n]*\n/gm, '');
+          const moreplovciButton = '          <button class="themed-topic" data-topic="Moreplovci" data-achievements="true" type="button" data-i18n="themeMoreplovci">Moreplovci</button>';
+          if (!html.includes(moreplovciButton)) throw new Error('Nije pronađen Moreplovci tematski gumb.');
+          html = html.replace(moreplovciButton, `${moreplovciButton}\n${sportButton}`);
+
+          html = html.replace(/, themeSport: "Sport kviz"/g, '');
+          html = html.replace(/, themeSport: "Sport quiz"/g, '');
+          html = html.replace('themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci",', 'themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci", themeSport: "Sport kviz",');
+          html = html.replace('themeGaming: "World of Gaming", themeMoreplovci: "Seafarers",', 'themeGaming: "World of Gaming", themeMoreplovci: "Seafarers", themeSport: "Sport quiz",');
+
+          const ensureReplace = (oldText, newText, alreadyPresent, label) => {
+            if (alreadyPresent && html.includes(alreadyPresent)) return;
+            if (!html.includes(oldText)) throw new Error(`Nije pronađeno mjesto za: ${label}`);
             html = html.replace(oldText, newText);
           };
 
-          once(
-            '<button class="themed-topic" data-topic="Moreplovci" data-achievements="true" type="button" data-i18n="themeMoreplovci">Moreplovci</button>',
-            '<button class="themed-topic" data-topic="Moreplovci" data-achievements="true" type="button" data-i18n="themeMoreplovci">Moreplovci</button>\n          <button class="themed-topic" data-topic="Sport" data-achievements="true" type="button" data-i18n="themeSport">Sport kviz</button>',
-            'Sport tematski gumb'
-          );
-
-          once(
-            'themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci",',
-            'themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci", themeSport: "Sport kviz",',
-            'HR prijevod Sport'
-          );
-          once(
-            'themeGaming: "World of Gaming", themeMoreplovci: "Seafarers",',
-            'themeGaming: "World of Gaming", themeMoreplovci: "Seafarers", themeSport: "Sport quiz",',
-            'EN prijevod Sport'
-          );
-
-          once(
+          ensureReplace(
             'const QUESTIONS_URL_MOREPLOVCI = "Moreplovci.json";\n  const QUESTIONS_URL_SVASTARA = "Svastara.json";',
             'const QUESTIONS_URL_MOREPLOVCI = "Moreplovci.json";\n  const QUESTIONS_URL_SPORT = "Sport.json";\n  const QUESTIONS_URL_SVASTARA = "Svastara.json";',
+            'const QUESTIONS_URL_SPORT = "Sport.json";',
             'Sport URL'
           );
-          once(
+          ensureReplace(
             'let loadedMoreplovciCount = 0;\n  let loadedSvastaraCount = 0;',
             'let loadedMoreplovciCount = 0;\n  let loadedSportCount = 0;\n  let loadedSvastaraCount = 0;',
+            'let loadedSportCount = 0;',
             'Sport brojač'
           );
-
-          once(
+          ensureReplace(
             'respGaming, respMoreplovci, respSvastara] = await Promise.all([',
+            'respGaming, respMoreplovci, respSport, respSvastara] = await Promise.all([',
             'respGaming, respMoreplovci, respSport, respSvastara] = await Promise.all([',
             'Promise destructuring'
           );
-          once(
+          ensureReplace(
             'fetch(QUESTIONS_URL_MOREPLOVCI),\n        fetch(QUESTIONS_URL_SVASTARA),',
             'fetch(QUESTIONS_URL_MOREPLOVCI),\n        fetch(QUESTIONS_URL_SPORT),\n        fetch(QUESTIONS_URL_SVASTARA),',
+            'fetch(QUESTIONS_URL_SPORT),',
             'Sport fetch'
           );
-          once(
+          ensureReplace(
             '!respGaming.ok || !respMoreplovci.ok || !respSvastara.ok)',
             '!respGaming.ok || !respMoreplovci.ok || !respSport.ok || !respSvastara.ok)',
+            '!respSport.ok',
             'Sport response check'
           );
-          once(
+          ensureReplace(
             'const moreplovciData = await respMoreplovci.json();\n      const svastaraData = await respSvastara.json();',
             'const moreplovciData = await respMoreplovci.json();\n      const sportData = await respSport.json();\n      const svastaraData = await respSvastara.json();',
+            'const sportData = await respSport.json();',
             'Sport JSON parse'
           );
-          once(
+          ensureReplace(
             '!Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(svastaraData))',
             '!Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(sportData) || !Array.isArray(svastaraData))',
+            '!Array.isArray(sportData)',
             'Sport array check'
           );
 
-          const marker = `      const normalizedSvastara = svastaraData.map((q, idx) => ({`;
-          const sportBlock = `      const normalizedSport = sportData.map((q, idx) => ({\n        id: q.id ?? "sport-" + idx,\n        type: q.type || "blitz",\n        difficulty: typeof q.difficulty === "number" ? q.difficulty : 3,\n        topic: "Sport",\n        question: q.question || "",\n        answers: Array.isArray(q.answers) ? q.answers : [],\n        image: q.image || null,\n        rarity: normalizeQuestionRarity(q.rarity)\n      }));\n\n`;
           if (!html.includes('const normalizedSport = sportData.map')) {
+            const marker = '      const normalizedSvastara = svastaraData.map((q, idx) => ({';
+            const block = `      const normalizedSport = sportData.map((q, idx) => ({\n        id: q.id ?? "sport-" + idx,\n        type: q.type || "blitz",\n        difficulty: typeof q.difficulty === "number" ? q.difficulty : 3,\n        topic: "Sport",\n        question: q.question || "",\n        answers: Array.isArray(q.answers) ? q.answers : [],\n        image: q.image || null,\n        rarity: normalizeQuestionRarity(q.rarity)\n      }));\n\n`;
             if (!html.includes(marker)) throw new Error('Nije pronađeno mjesto za normalizedSport');
-            html = html.replace(marker, sportBlock + marker);
+            html = html.replace(marker, block + marker);
           }
 
-          once(
+          ensureReplace(
             '...normalizedGaming, ...normalizedMoreplovci, ...normalizedSvastara];',
+            '...normalizedGaming, ...normalizedMoreplovci, ...normalizedSport, ...normalizedSvastara];',
             '...normalizedGaming, ...normalizedMoreplovci, ...normalizedSport, ...normalizedSvastara];',
             'Sport ALL_QUESTIONS'
           );
-          once(
+          ensureReplace(
             'loadedMoreplovciCount = normalizedMoreplovci.length;\n      loadedSvastaraCount = normalizedSvastara.length;',
             'loadedMoreplovciCount = normalizedMoreplovci.length;\n      loadedSportCount = normalizedSport.length;\n      loadedSvastaraCount = normalizedSvastara.length;',
+            'loadedSportCount = normalizedSport.length;',
             'Sport loaded count'
           );
 
-          once(
-            '"Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci"',
-            '"Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci", "Sport": "Sport"',
-            'prettyTheme HR'
-          );
-          once(
-            '"Gaming": "World of Gaming", "Moreplovci": "Seafarers"',
-            '"Gaming": "World of Gaming", "Moreplovci": "Seafarers", "Sport": "Sport"',
-            'prettyTheme EN'
-          );
+          html = html.replace(/"Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci"(?:, "Sport": "Sport")*/g, '"Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci", "Sport": "Sport"');
+          html = html.replace(/"Gaming": "World of Gaming", "Moreplovci": "Seafarers"(?:, "Sport": "Sport")*/g, '"Gaming": "World of Gaming", "Moreplovci": "Seafarers", "Sport": "Sport"');
+
+          const sportButtonCount = (html.match(/data-topic="Sport"/g) || []).length;
+          const hrThemeCount = (html.match(/themeSport: "Sport kviz"/g) || []).length;
+          const enThemeCount = (html.match(/themeSport: "Sport quiz"/g) || []).length;
+          if (sportButtonCount !== 1 || hrThemeCount !== 1 || enThemeCount !== 1) {
+            throw new Error(`Sport UI validacija nije prošla: button=${sportButtonCount}, hr=${hrThemeCount}, en=${enThemeCount}`);
+          }
+          for (const required of [
+            'const QUESTIONS_URL_SPORT = "Sport.json";',
+            'fetch(QUESTIONS_URL_SPORT),',
+            'const sportData = await respSport.json();',
+            'const normalizedSport = sportData.map',
+            '...normalizedSport, ...normalizedSvastara',
+            'loadedSportCount = normalizedSport.length;'
+          ]) {
+            if (!html.includes(required)) throw new Error(`Nedostaje Sport integracija: ${required}`);
+          }
 
           fs.writeFileSync('online-kviz.html', html);
-          console.log(`Sport instaliran: ${sport.length} pitanja.`);
+          console.log(`Sport instaliran i provjeren: ${sport.length} pitanja.`);
           NODE
 
           git config user.name "KvizToGo Bot"
