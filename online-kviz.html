@@ -2931,6 +2931,7 @@ body.player-panel-open { overflow: hidden; }
           <button class="themed-topic" data-topic="Povijest" data-achievements="true" type="button" data-i18n="themeHistory">Povijest kviz</button>
           <button class="themed-topic" data-topic="Gaming" data-achievements="true" type="button" data-i18n="themeGaming">Svijet Gaminga</button>
           <button class="themed-topic" data-topic="Moreplovci" data-achievements="true" type="button" data-i18n="themeMoreplovci">Moreplovci</button>
+          <button class="themed-topic" data-topic="Sport" data-achievements="true" type="button" data-i18n="themeSport">Sport kviz</button>
          <!--  <button class="themed-topic" data-topic="svastara" data-achievements="true" type="button" data-i18n="themeSvastara">Svaštara kviz</button> -->
       
         </div>
@@ -3568,7 +3569,7 @@ if (!supabaseClient) {
       feedbackMessage: "Moja poruka:",
       resetMessage: "Kviz je resetiran. Odaberi način igre i klikni <strong>„Kreni s kvizom”</strong>.",
       themeSvastara: "Svaštara kviz",
-      themeHarry: "Harry Potter kviz", themeLotr: "L.O.T.R. kviz", themePirates: "Pirati s Kariba kviz", themeCroatia: "Volim Hrvatsku kviz", themeBih: "Volim BiH kviz", themeSerbia: "Volim Srbiju kviz", themeGreece: "Antička Grčka kviz", themeEgypt: "Antički Egipat kviz", themeRome: "Antički Rim kviz", themeUsPresidents: "Američki predsjednici kviz", themeGeography: "Zemljopis kviz", themeFootball: "Nogomet kviz", themeFloraFauna: "FloraFauna kviz", themeFilm: "Film kviz", themeScience: "Znanost kviz", themeMusic: "Glazba kviz", themeLiterature: "Književnost kviz", themeHistory: "Povijest kviz", themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci",
+      themeHarry: "Harry Potter kviz", themeLotr: "L.O.T.R. kviz", themePirates: "Pirati s Kariba kviz", themeCroatia: "Volim Hrvatsku kviz", themeBih: "Volim BiH kviz", themeSerbia: "Volim Srbiju kviz", themeGreece: "Antička Grčka kviz", themeEgypt: "Antički Egipat kviz", themeRome: "Antički Rim kviz", themeUsPresidents: "Američki predsjednici kviz", themeGeography: "Zemljopis kviz", themeFootball: "Nogomet kviz", themeFloraFauna: "FloraFauna kviz", themeFilm: "Film kviz", themeScience: "Znanost kviz", themeMusic: "Glazba kviz", themeLiterature: "Književnost kviz", themeHistory: "Povijest kviz", themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci", themeSport: "Sport kviz",
       collectionsBtn: "Kviz kolekcije", previewLabel: "Pregled", multiplayerBtn: "Multiplayer", comingSoon: "Uskoro", collectionsKicker: "Kolekcionar znanja", collectionsFeatureTitle: "Kviz kolekcije", collectionsFeatureText: "Posebni kvizovi od 20 pitanja o jednoj konkretnoj temi. Svima dolaze ista pitanja istim redoslijedom, a završeni kvizovi ostaju u tvojoj kolekciji.", viewCollection: "Pogledaj kolekciju", multiplayerFeatureTitle: "Znanje protiv znanja", multiplayerFeatureText: "Igra protiv prijatelja i drugih kvizaša stiže u jednoj od sljedećih nadogradnji."
     },
     en: {
@@ -3663,7 +3664,7 @@ if (!supabaseClient) {
       feedbackMessage: "My message:",
       resetMessage: "The quiz has been reset. Choose a game mode and click <strong>“Start quiz”</strong>.",
       themeSvastara: "Miscellaneous quiz",
-      themeHarry: "Harry Potter quiz", themeLotr: "L.O.T.R. quiz", themePirates: "Pirates of the Caribbean quiz", themeCroatia: "I Love Croatia quiz", themeBih: "I Love BiH quiz", themeSerbia: "I Love Serbia quiz", themeGreece: "Ancient Greece quiz", themeEgypt: "Ancient Egypt quiz", themeRome: "Ancient Rome quiz", themeUsPresidents: "U.S. Presidents quiz", themeGeography: "Geography quiz", themeFootball: "Football quiz", themeFloraFauna: "Flora & Fauna quiz", themeFilm: "Film quiz", themeScience: "Science quiz", themeMusic: "Music quiz", themeLiterature: "Literature quiz", themeHistory: "History quiz", themeGaming: "World of Gaming", themeMoreplovci: "Seafarers",
+      themeHarry: "Harry Potter quiz", themeLotr: "L.O.T.R. quiz", themePirates: "Pirates of the Caribbean quiz", themeCroatia: "I Love Croatia quiz", themeBih: "I Love BiH quiz", themeSerbia: "I Love Serbia quiz", themeGreece: "Ancient Greece quiz", themeEgypt: "Ancient Egypt quiz", themeRome: "Ancient Rome quiz", themeUsPresidents: "U.S. Presidents quiz", themeGeography: "Geography quiz", themeFootball: "Football quiz", themeFloraFauna: "Flora & Fauna quiz", themeFilm: "Film quiz", themeScience: "Science quiz", themeMusic: "Music quiz", themeLiterature: "Literature quiz", themeHistory: "History quiz", themeGaming: "World of Gaming", themeMoreplovci: "Seafarers", themeSport: "Sport quiz",
       collectionsBtn: "Quiz Collections", previewLabel: "Preview", multiplayerBtn: "Multiplayer", comingSoon: "Coming soon", collectionsKicker: "Knowledge collector", collectionsFeatureTitle: "Quiz Collections", collectionsFeatureText: "Special 20-question quizzes about one specific subject. Everyone gets the same questions in the same order, and completed quizzes stay in your collection.", viewCollection: "View collection", multiplayerFeatureTitle: "Knowledge versus knowledge", multiplayerFeatureText: "Play against friends and other quiz players in an upcoming update."
     }
   };
@@ -3831,6 +3832,7 @@ if (!supabaseClient) {
   const QUESTIONS_URL_POVIJEST = "povijest.json";
   const QUESTIONS_URL_GAMING = "Gaming.json";
   const QUESTIONS_URL_MOREPLOVCI = "Moreplovci.json";
+  const QUESTIONS_URL_SPORT = "Sport.json";
   const QUESTIONS_URL_SVASTARA = "Svastara.json";
   
   let ALL_QUESTIONS = [];
@@ -3848,6 +3850,7 @@ if (!supabaseClient) {
   let loadedPovijestCount = 0;
   let loadedGamingCount = 0;
   let loadedMoreplovciCount = 0;
+  let loadedSportCount = 0;
   let loadedSvastaraCount = 0;
   
   // mode: "daily30" | "blitz60" | "story90" | "relax" | "themed"
@@ -6877,7 +6880,7 @@ if (!supabaseClient) {
 
   async function loadQuestionsFromJson() {
     try {
-      const [respBlitz, respFlora, respFilm, respGlazba, respAntickiRim, respAmerickiPredsjednici, respZemljopis, respNogomet, respZnanost, respKnjizevnost, respPovijest, respGaming, respMoreplovci, respSvastara] = await Promise.all([
+      const [respBlitz, respFlora, respFilm, respGlazba, respAntickiRim, respAmerickiPredsjednici, respZemljopis, respNogomet, respZnanost, respKnjizevnost, respPovijest, respGaming, respMoreplovci, respSport, respSvastara] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         /* STORY PRIVREMENO ISKLJUČEN
         fetch(QUESTIONS_URL_STORY),
@@ -6894,10 +6897,11 @@ if (!supabaseClient) {
         fetch(QUESTIONS_URL_POVIJEST),
         fetch(QUESTIONS_URL_GAMING),
         fetch(QUESTIONS_URL_MOREPLOVCI),
+        fetch(QUESTIONS_URL_SPORT),
         fetch(QUESTIONS_URL_SVASTARA),
       ]);
 
-      if (!respBlitz.ok || !respFlora.ok || !respFilm.ok || !respGlazba.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok || !respZemljopis.ok || !respNogomet.ok || !respZnanost.ok || !respKnjizevnost.ok || !respPovijest.ok || !respGaming.ok || !respMoreplovci.ok || !respSvastara.ok) {
+      if (!respBlitz.ok || !respFlora.ok || !respFilm.ok || !respGlazba.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok || !respZemljopis.ok || !respNogomet.ok || !respZnanost.ok || !respKnjizevnost.ok || !respPovijest.ok || !respGaming.ok || !respMoreplovci.ok || !respSport.ok || !respSvastara.ok) {
         throw new Error("Greška pri čitanju JSON datoteka.");
       }
 
@@ -6918,9 +6922,10 @@ if (!supabaseClient) {
       const povijestData = await respPovijest.json();
       const gamingData = await respGaming.json();
       const moreplovciData = await respMoreplovci.json();
+      const sportData = await respSport.json();
       const svastaraData = await respSvastara.json();
       
-      if (!Array.isArray(blitzData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(glazbaData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData) || !Array.isArray(nogometData) || !Array.isArray(znanostData) || !Array.isArray(knjizevnostData) || !Array.isArray(povijestData) || !Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(svastaraData)) {
+      if (!Array.isArray(blitzData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(glazbaData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData) || !Array.isArray(nogometData) || !Array.isArray(znanostData) || !Array.isArray(knjizevnostData) || !Array.isArray(povijestData) || !Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(sportData) || !Array.isArray(svastaraData)) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
       }
 
@@ -7081,6 +7086,17 @@ if (!supabaseClient) {
         rarity: normalizeQuestionRarity(q.rarity)
       }));
 
+      const normalizedSport = sportData.map((q, idx) => ({
+        id: q.id ?? "sport-" + idx,
+        type: q.type || "blitz",
+        difficulty: typeof q.difficulty === "number" ? q.difficulty : 3,
+        topic: "Sport",
+        question: q.question || "",
+        answers: Array.isArray(q.answers) ? q.answers : [],
+        image: q.image || null,
+        rarity: normalizeQuestionRarity(q.rarity)
+      }));
+
       const normalizedSvastara = svastaraData.map((q, idx) => ({
         id: q.id ?? "svastara-" + idx,
         type: q.type || "blitz",
@@ -7092,7 +7108,7 @@ if (!supabaseClient) {
         rarity: normalizeQuestionRarity(q.rarity)
       }));
 
-      ALL_QUESTIONS = [...normalizedBlitz, /* ...normalizedStory, */ ...normalizedFlora, ...normalizedFilm, ...normalizedGlazba, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici, ...normalizedZemljopis, ...normalizedNogomet, ...normalizedZnanost, ...normalizedKnjizevnost, ...normalizedPovijest, ...normalizedGaming, ...normalizedMoreplovci, ...normalizedSvastara];
+      ALL_QUESTIONS = [...normalizedBlitz, /* ...normalizedStory, */ ...normalizedFlora, ...normalizedFilm, ...normalizedGlazba, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici, ...normalizedZemljopis, ...normalizedNogomet, ...normalizedZnanost, ...normalizedKnjizevnost, ...normalizedPovijest, ...normalizedGaming, ...normalizedMoreplovci, ...normalizedSport, ...normalizedSvastara];
       loadedBlitzCount = normalizedBlitz.length;
       loadedStoryCount = normalizedStory.length;
       loadedFloraCount = normalizedFlora.length;
@@ -7107,6 +7123,7 @@ if (!supabaseClient) {
       loadedPovijestCount = normalizedPovijest.length;
       loadedGamingCount = normalizedGaming.length;
       loadedMoreplovciCount = normalizedMoreplovci.length;
+      loadedSportCount = normalizedSport.length;
       loadedSvastaraCount = normalizedSvastara.length;
       
       resetQuestionQueue();
@@ -7297,10 +7314,10 @@ if (!supabaseClient) {
   function prettyThemeName(topicKey) {
     const maps = {
       hr: {
-        "HarryPotter": "Harry Potter", "LOTR": "L.O.T.R.", "PiratiSKariba": "Pirati s Kariba", "VolimHrvatsku": "Volim Hrvatsku", "VolimBiH": "Volim BiH", "VolimSrbiju": "Volim Srbiju", "AntickaGrcka": "Antička Grčka", "AntickiEgipat": "Antički Egipat", "AntickiRim": "Antički Rim", "AmerickiPredsjednici": "Američki predsjednici", "Zemljopis": "Zemljopis", "Nogomet": "Nogomet", "FloraFauna": "FloraFauna", "Film": "Film", "Znanost": "Znanost", "Glazba": "Glazba", "Knjizevnost": "Književnost", "Povijest": "Povijest", "Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci"
+        "HarryPotter": "Harry Potter", "LOTR": "L.O.T.R.", "PiratiSKariba": "Pirati s Kariba", "VolimHrvatsku": "Volim Hrvatsku", "VolimBiH": "Volim BiH", "VolimSrbiju": "Volim Srbiju", "AntickaGrcka": "Antička Grčka", "AntickiEgipat": "Antički Egipat", "AntickiRim": "Antički Rim", "AmerickiPredsjednici": "Američki predsjednici", "Zemljopis": "Zemljopis", "Nogomet": "Nogomet", "FloraFauna": "FloraFauna", "Film": "Film", "Znanost": "Znanost", "Glazba": "Glazba", "Knjizevnost": "Književnost", "Povijest": "Povijest", "Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci", "Sport": "Sport"
       },
       en: {
-        "HarryPotter": "Harry Potter", "LOTR": "L.O.T.R.", "PiratiSKariba": "Pirates of the Caribbean", "VolimHrvatsku": "I Love Croatia", "VolimBiH": "I Love BiH", "VolimSrbiju": "I Love Serbia", "AntickaGrcka": "Ancient Greece", "AntickiEgipat": "Ancient Egypt", "AntickiRim": "Ancient Rome", "AmerickiPredsjednici": "U.S. Presidents", "Zemljopis": "Geography", "Nogomet": "Football", "FloraFauna": "Flora & Fauna", "Film": "Film", "Znanost": "Science", "Glazba": "Music", "Knjizevnost": "Literature", "Povijest": "History", "Gaming": "World of Gaming", "Moreplovci": "Seafarers"
+        "HarryPotter": "Harry Potter", "LOTR": "L.O.T.R.", "PiratiSKariba": "Pirates of the Caribbean", "VolimHrvatsku": "I Love Croatia", "VolimBiH": "I Love BiH", "VolimSrbiju": "I Love Serbia", "AntickaGrcka": "Ancient Greece", "AntickiEgipat": "Ancient Egypt", "AntickiRim": "Ancient Rome", "AmerickiPredsjednici": "U.S. Presidents", "Zemljopis": "Geography", "Nogomet": "Football", "FloraFauna": "Flora & Fauna", "Film": "Film", "Znanost": "Science", "Glazba": "Music", "Knjizevnost": "Literature", "Povijest": "History", "Gaming": "World of Gaming", "Moreplovci": "Seafarers", "Sport": "Sport"
       }
     };
     return (maps[currentLang] && maps[currentLang][topicKey]) || maps.hr[topicKey] || topicKey;
