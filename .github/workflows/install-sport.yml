@@ -1,0 +1,135 @@
+name: Install Sport quiz
+
+on:
+  push:
+    paths:
+      - '.github/sport-install-trigger.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Sport.json and wire online quiz
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const chunkDir = '.github/tmp_sport_chunks';
+          const chunks = Array.from({length: 8}, (_, i) => `${chunkDir}/part${String(i+1).padStart(2,'0')}.txt`);
+          const sportText = chunks.map(p => fs.readFileSync(p, 'utf8')).join('');
+          const sport = JSON.parse(sportText);
+          if (!Array.isArray(sport) || sport.length !== 277) throw new Error(`Sport.json: očekivano 277 pitanja, dobiveno ${sport.length}`);
+          for (const q of sport) {
+            if (q.type !== 'blitz' || q.topic !== 'Sport' || q.difficulty !== 3 || !q.question || !Array.isArray(q.answers) || !q.answers.length) {
+              throw new Error('Sport.json sadrži neispravan zapis.');
+            }
+          }
+          fs.writeFileSync('Sport.json', JSON.stringify(sport, null, 2) + '\n');
+
+          let html = fs.readFileSync('online-kviz.html', 'utf8');
+          const once = (oldText, newText, label) => {
+            if (!html.includes(oldText)) {
+              if (html.includes(newText)) return;
+              throw new Error(`Nije pronađeno mjesto za: ${label}`);
+            }
+            html = html.replace(oldText, newText);
+          };
+
+          once(
+            '<button class="themed-topic" data-topic="Moreplovci" data-achievements="true" type="button" data-i18n="themeMoreplovci">Moreplovci</button>',
+            '<button class="themed-topic" data-topic="Moreplovci" data-achievements="true" type="button" data-i18n="themeMoreplovci">Moreplovci</button>\n          <button class="themed-topic" data-topic="Sport" data-achievements="true" type="button" data-i18n="themeSport">Sport kviz</button>',
+            'Sport tematski gumb'
+          );
+
+          once(
+            'themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci",',
+            'themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci", themeSport: "Sport kviz",',
+            'HR prijevod Sport'
+          );
+          once(
+            'themeGaming: "World of Gaming", themeMoreplovci: "Seafarers",',
+            'themeGaming: "World of Gaming", themeMoreplovci: "Seafarers", themeSport: "Sport quiz",',
+            'EN prijevod Sport'
+          );
+
+          once(
+            'const QUESTIONS_URL_MOREPLOVCI = "Moreplovci.json";\n  const QUESTIONS_URL_SVASTARA = "Svastara.json";',
+            'const QUESTIONS_URL_MOREPLOVCI = "Moreplovci.json";\n  const QUESTIONS_URL_SPORT = "Sport.json";\n  const QUESTIONS_URL_SVASTARA = "Svastara.json";',
+            'Sport URL'
+          );
+          once(
+            'let loadedMoreplovciCount = 0;\n  let loadedSvastaraCount = 0;',
+            'let loadedMoreplovciCount = 0;\n  let loadedSportCount = 0;\n  let loadedSvastaraCount = 0;',
+            'Sport brojač'
+          );
+
+          once(
+            'respGaming, respMoreplovci, respSvastara] = await Promise.all([',
+            'respGaming, respMoreplovci, respSport, respSvastara] = await Promise.all([',
+            'Promise destructuring'
+          );
+          once(
+            'fetch(QUESTIONS_URL_MOREPLOVCI),\n        fetch(QUESTIONS_URL_SVASTARA),',
+            'fetch(QUESTIONS_URL_MOREPLOVCI),\n        fetch(QUESTIONS_URL_SPORT),\n        fetch(QUESTIONS_URL_SVASTARA),',
+            'Sport fetch'
+          );
+          once(
+            '!respGaming.ok || !respMoreplovci.ok || !respSvastara.ok)',
+            '!respGaming.ok || !respMoreplovci.ok || !respSport.ok || !respSvastara.ok)',
+            'Sport response check'
+          );
+          once(
+            'const moreplovciData = await respMoreplovci.json();\n      const svastaraData = await respSvastara.json();',
+            'const moreplovciData = await respMoreplovci.json();\n      const sportData = await respSport.json();\n      const svastaraData = await respSvastara.json();',
+            'Sport JSON parse'
+          );
+          once(
+            '!Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(svastaraData))',
+            '!Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(sportData) || !Array.isArray(svastaraData))',
+            'Sport array check'
+          );
+
+          const marker = `      const normalizedSvastara = svastaraData.map((q, idx) => ({`;
+          const sportBlock = `      const normalizedSport = sportData.map((q, idx) => ({\n        id: q.id ?? "sport-" + idx,\n        type: q.type || "blitz",\n        difficulty: typeof q.difficulty === "number" ? q.difficulty : 3,\n        topic: "Sport",\n        question: q.question || "",\n        answers: Array.isArray(q.answers) ? q.answers : [],\n        image: q.image || null,\n        rarity: normalizeQuestionRarity(q.rarity)\n      }));\n\n`;
+          if (!html.includes('const normalizedSport = sportData.map')) {
+            if (!html.includes(marker)) throw new Error('Nije pronađeno mjesto za normalizedSport');
+            html = html.replace(marker, sportBlock + marker);
+          }
+
+          once(
+            '...normalizedGaming, ...normalizedMoreplovci, ...normalizedSvastara];',
+            '...normalizedGaming, ...normalizedMoreplovci, ...normalizedSport, ...normalizedSvastara];',
+            'Sport ALL_QUESTIONS'
+          );
+          once(
+            'loadedMoreplovciCount = normalizedMoreplovci.length;\n      loadedSvastaraCount = normalizedSvastara.length;',
+            'loadedMoreplovciCount = normalizedMoreplovci.length;\n      loadedSportCount = normalizedSport.length;\n      loadedSvastaraCount = normalizedSvastara.length;',
+            'Sport loaded count'
+          );
+
+          once(
+            '"Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci"',
+            '"Gaming": "Svijet Gaminga", "Moreplovci": "Moreplovci", "Sport": "Sport"',
+            'prettyTheme HR'
+          );
+          once(
+            '"Gaming": "World of Gaming", "Moreplovci": "Seafarers"',
+            '"Gaming": "World of Gaming", "Moreplovci": "Seafarers", "Sport": "Sport"',
+            'prettyTheme EN'
+          );
+
+          fs.writeFileSync('online-kviz.html', html);
+          console.log(`Sport instaliran: ${sport.length} pitanja.`);
+          NODE
+
+          git config user.name "KvizToGo Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add Sport.json online-kviz.html
+          git diff --cached --check
+          git commit -m "Add Sport quiz to online quiz" || exit 0
+          git push
