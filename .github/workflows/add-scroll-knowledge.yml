@@ -1,9 +1,11 @@
-name: Add Scrollanjem do Znanja
+name: Scrollanjem do Znanja
 
 on:
   push:
+    branches: [main]
     paths:
-      - '.github/workflows/add-scroll-knowledge.yml'
+      - ".github/workflows/add-scroll-knowledge.yml"
+      - "scripts/add-scroll-knowledge.mjs"
 
 permissions:
   contents: write
@@ -12,60 +14,25 @@ jobs:
   patch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Preuzmi repo
+        uses: actions/checkout@v4
 
-      - name: Add Scrollanjem do Znanja dropdown
-        run: |
-          python - <<'PY'
-          from pathlib import Path
+      - name: Pripremi Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-          path = Path('online-kviz.html')
-          text = path.read_text(encoding='utf-8')
-          marker = '      <!-- ✅ NOVO: Tematski kvizovi -->'
+      - name: Dodaj Scrollanjem do Znanja
+        run: node scripts/add-scroll-knowledge.mjs
 
-          if 'id="scroll-knowledge-menu"' in text:
-              print('Scrollanjem do Znanja već postoji, nema promjene.')
-          else:
-              if marker not in text:
-                  raise SystemExit('Nije pronađeno sigurno mjesto za umetanje prije Tematskih kvizova.')
-
-              block = '''      <!-- Scrollanjem do Znanja -->
-      <div class="themed-row" id="scroll-knowledge-menu" style="display:block;">
-        <details style="width:100%;">
-          <summary class="themed-btn" style="list-style:none;cursor:pointer;user-select:none;">Scrollanjem do Znanja</summary>
-          <div style="margin-top:.55rem;padding:.65rem;border:1px solid rgba(148,163,184,.22);border-radius:18px;background:rgba(16,27,45,.82);">
-            <div class="themed-grid">
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?mode=all">Beskrajni niz</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?mode=50">Nasumičnih 50</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=AmerickiPredsjednici.json">Američki predsjednici</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=AntickiRim.json">Antički Rim</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Film.json">Film</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=FloraFauna.json">Flora i fauna</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Gaming.json">Gaming</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Glazba.json">Glazba</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Knjizevnost.json">Književnost</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Moreplovci.json">Moreplovci</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Nogomet.json">Nogomet</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Sport.json">Sport</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Zemljopis.json">Zemljopis</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Znanost.json">Znanost</a>
-            </div>
-          </div>
-        </details>
-      </div>
-
-'''
-              path.write_text(text.replace(marker, block + marker, 1), encoding='utf-8')
-          PY
-
-      - name: Commit change
+      - name: Spremi promjenu
         run: |
           if git diff --quiet -- online-kviz.html; then
-            echo "No changes"
+            echo "Nema promjene."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "KvizToGo"
+          git config user.email "actions@users.noreply.github.com"
           git add online-kviz.html
           git commit -m "Dodaj Scrollanjem do Znanja u online kviz"
           git push
