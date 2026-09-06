@@ -168,10 +168,29 @@
     const d=e.detail||{}, card=d.card; let ok=false;
     try {
       if(!card||!d.message) throw new Error('Nema poruke');
-      const { data: authData } = await client.auth.getUser(); const u=authData?.user||null;
-      const username=u?.user_metadata?.username||u?.user_metadata?.display_name||u?.email?.split('@')[0]||(document.documentElement.lang==='en'?'Guest':'Gost');
-      const { error } = await client.from('quiz_feedback').insert({user_id:u?.id||null,username,user_email:u?.email||null,question_id:null,question:card.querySelector('.qt')?.textContent?.trim()||'',correct_answer:card.dataset.correctAnswer||null,topic:card.dataset.topic||activeTopic,question_type:'scroll',message:d.message,language:document.documentElement.lang==='en'?'en':'hr',page_url:location.href,email_sent:false,email_error:null});
-      if(error) throw error; ok=true;
+      const { data: authData } = await client.auth.getUser();
+      const u=authData?.user||null;
+      let username=u?.user_metadata?.username||u?.user_metadata?.display_name||u?.email?.split('@')[0]||(document.documentElement.lang==='en'?'Guest':'Gost');
+      if(u?.id){
+        try{
+          const { data: profile } = await client.from('profiles').select('username').eq('id',u.id).maybeSingle();
+          if(profile?.username) username=profile.username;
+        }catch(_){}
+      }
+      const { data, error } = await client.functions.invoke('send-quiz-feedback',{body:{
+        username,
+        questionId:null,
+        question:card.querySelector('.qt')?.textContent?.trim()||'',
+        correctAnswer:card.dataset.correctAnswer||null,
+        topic:card.dataset.topic||activeTopic,
+        questionType:'scroll',
+        message:d.message,
+        language:document.documentElement.lang==='en'?'en':'hr',
+        pageUrl:location.href
+      }});
+      if(error) throw error;
+      if(!data?.ok) throw new Error(data?.error||'Slanje nije potvrđeno.');
+      ok=true;
     } catch(err){ console.warn('Scroll feedback:',err); }
     try{d.done?.(ok)}catch(_){}
   });
