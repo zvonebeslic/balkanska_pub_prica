@@ -13,15 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Add Scrollanjem do Znanja dropdown
-        shell: python
         run: |
+          python - <<'PY'
           from pathlib import Path
 
           path = Path('online-kviz.html')
           text = path.read_text(encoding='utf-8')
-
           marker = '      <!-- ✅ NOVO: Tematski kvizovi -->'
+
           if 'id="scroll-knowledge-menu"' in text:
               print('Scrollanjem do Znanja već postoji, nema promjene.')
           else:
@@ -54,8 +55,8 @@ jobs:
       </div>
 
 '''
-              text = text.replace(marker, block + marker, 1)
-              path.write_text(text, encoding='utf-8')
+              path.write_text(text.replace(marker, block + marker, 1), encoding='utf-8')
+          PY
 
       - name: Commit change
         run: |
