@@ -1,0 +1,33 @@
+name: Bump moderation loader
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/bump-moderation-loader.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump moderation script version
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('online-kviz.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('moderation-messages.js?v=20260906-1','moderation-messages.js?v=20260906-2')
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit
+        run: |
+          if git diff --quiet -- online-kviz.html; then exit 0; fi
+          git config user.name "KvizToGo Maintenance"
+          git config user.email "actions@users.noreply.github.com"
+          git add online-kviz.html
+          git commit -m "Bump moderation messages cache version"
+          git push
