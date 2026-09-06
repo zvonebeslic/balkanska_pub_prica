@@ -144,7 +144,7 @@
     const card = e.target.closest('.q'); if (!card) return;
     if (e.target.closest('.more')) { learnMore += 1; flush(); }
     if (e.target.closest('.share')) { shares += 1; flush(); }
-    if (e.target.closest('.ok')) setTimeout(() => { const s=cardState.get(card)||{}; if(s.answered)return; const result=card.querySelector('.result'); if(!result?.classList.contains('good')&&!result?.classList.contains('bad'))return; s.answered=true; cardState.set(card,s); if(result.classList.contains('good'))correct+=1; else wrong+=1; saveQuestion(card,'answered'); flush(); },0);
+    if (e.target.closest('.ok')) setTimeout(() => { const s=cardState.get(card)||{}; if(s.answered||!card.dataset.matchReason)return; s.answered=true; cardState.set(card,s); if(card.dataset.matchReason==='wrong')wrong+=1; else correct+=1; saveQuestion(card,'answered'); flush(); },0);
   }, true);
 
   document.addEventListener('keydown', e => {
