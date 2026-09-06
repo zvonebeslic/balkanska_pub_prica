@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const path='index.html';
+let s=fs.readFileSync(path,'utf8');
+const hrNeedle='    statsAmericanPresidents: "Američki predsjednici",\n    phQuizTitle:';
+const hrReplace='    statsAmericanPresidents: "Američki predsjednici",\n    statsSvijetGaminga: "Svijet Gaminga",\n    statsMoreplovci: "Moreplovci",\n    phQuizTitle:';
+const enNeedle='  statsAmericanPresidents: "American presidents",\n  phQuizTitle:';
+const enReplace='  statsAmericanPresidents: "American presidents",\n  statsSvijetGaminga: "Gaming World",\n  statsMoreplovci: "Seafarers",\n  phQuizTitle:';
+if(!s.includes(hrNeedle)) throw new Error('HR mjesto nije pronađeno');
+if(!s.includes(enNeedle)) throw new Error('EN mjesto nije pronađeno');
+s=s.replace(hrNeedle,hrReplace).replace(enNeedle,enReplace);
+fs.writeFileSync(path,s);
