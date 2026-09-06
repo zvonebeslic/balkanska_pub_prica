@@ -63,6 +63,37 @@
     } catch (e) { console.warn('Scroll statistika start:', e); }
   }
 
+  function normalizeAnswer(value) {
+    return String(value ?? '').toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9čćđšž ]/gi, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function answerDistance(a, b) {
+    a = normalizeAnswer(a); b = normalizeAnswer(b);
+    const row = Array(b.length + 1).fill(0).map((_, i) => i);
+    for (let i = 1; i <= a.length; i += 1) {
+      let prev = row[0]; row[0] = i;
+      for (let j = 1; j <= b.length; j += 1) {
+        const temp = row[j];
+        row[j] = Math.min(row[j] + 1, row[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1));
+        prev = temp;
+      }
+    }
+    return row[b.length];
+  }
+
+  function allowedDistance(length) {
+    return length <= 3 ? 0 : length <= 4 ? 1 : length <= 7 ? 2 : length <= 11 ? 3 : length <= 15 ? 4 : 4 + Math.floor((length - 15) / 5);
+  }
+
+  function findMatchedAnswer(input, answers) {
+    const normalizedInput = normalizeAnswer(input);
+    for (const answer of Array.isArray(answers) ? answers : []) {
+      const normalizedAnswer = normalizeAnswer(answer);
+      if (normalizedInput === normalizedAnswer || answerDistance(normalizedInput, normalizedAnswer) <= allowedDistance(normalizedAnswer.length)) return String(answer);
+    }
+    return null;
+  }
+
   async function saveQuestion(card, type) {
     if (!playId) return;
     const state = cardState.get(card) || {};
@@ -72,9 +103,12 @@
     const isCorrect = type === 'answered' ? !!result?.classList.contains('good') : null;
     const questionTopic = card.dataset.topic || activeTopic;
     const correctAnswer = card.dataset.correctAnswer || null;
+    let acceptedAnswers = [];
+    try { acceptedAnswers = JSON.parse(card.dataset.answers || '[]'); } catch (_) {}
+    const matchedAnswer = type === 'answered' && isCorrect ? findMatchedAnswer(input, acceptedAnswers) : null;
     const lang = document.documentElement.lang === 'en' ? 'en' : 'hr';
     try {
-      await client.from('quiz_answers').insert({quiz_play_id:playId,session_id:sessionId,user_id:userId,question_id:null,question_text:text,question_topic:questionTopic,question_type:'scroll',quiz_mode:'scroll',selected_theme:activeTopic,user_answer:type==='answered'?input:null,correct_answer:correctAnswer,matched_answer:null,is_correct:isCorrect,is_exact:false,was_skipped:false,was_scrolled:type==='scrolled',was_viewed:!!state.viewed,match_reason:type==='scrolled'?'scrolled':'scroll_answer',language:lang,answered_at:new Date().toISOString()});
+      await client.from('quiz_answers').insert({quiz_play_id:playId,session_id:sessionId,user_id:userId,question_id:null,question_text:text,question_topic:questionTopic,question_type:'scroll',quiz_mode:'scroll',selected_theme:activeTopic,user_answer:type==='answered'?input:null,correct_answer:correctAnswer,matched_answer:matchedAnswer,is_correct:isCorrect,is_exact:false,was_skipped:false,was_scrolled:type==='scrolled',was_viewed:!!state.viewed,match_reason:type==='scrolled'?'scrolled':'scroll_answer',language:lang,answered_at:new Date().toISOString()});
     } catch (e) { console.warn('Scroll pitanje statistika:', e); }
   }
 
