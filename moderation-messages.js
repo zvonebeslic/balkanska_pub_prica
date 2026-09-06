@@ -9,6 +9,9 @@
   const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
   let fallbackClient = null;
 
+  function uiLang() { return document.documentElement.lang === "en" || localStorage.getItem("kviztogo_lang") === "en" ? "en" : "hr"; }
+  function tx(hr, en) { return uiLang() === "en" ? en : hr; }
+
   function getClient() {
     try {
       if (typeof supabaseClient !== "undefined" && supabaseClient) return supabaseClient;
@@ -84,8 +87,8 @@
     if (!restricted) return;
     const label = document.getElementById("player-fab-label");
     const panelName = document.getElementById("player-panel-name");
-    if (label) label.textContent = "Ime uklonjeno";
-    if (panelName) panelName.textContent = "Ime uklonjeno";
+    if (label) label.textContent = tx("Ime uklonjeno", "Name removed");
+    if (panelName) panelName.textContent = tx("Ime uklonjeno", "Name removed");
   }
 
   async function syncModerationState(identity) {
@@ -154,7 +157,7 @@
     bubble.className = "player-fab-message-bubble";
     bubble.setAttribute("role", "button");
     bubble.setAttribute("tabindex", "0");
-    bubble.setAttribute("aria-label", "Poruke");
+    bubble.setAttribute("aria-label", tx("Poruke", "Messages"));
     bubble.innerHTML = '<span class="player-fab-message-envelope" aria-hidden="true">✉</span><span class="player-fab-message-count" id="player-fab-message-count"></span>';
     fab.appendChild(bubble);
     const open = event => { event.preventDefault(); event.stopPropagation(); void openInbox(); };
@@ -170,7 +173,7 @@
     backdrop = document.createElement("div");
     backdrop.id = MODAL_ID;
     backdrop.className = "modmsg-backdrop";
-    backdrop.innerHTML = '<section class="modmsg-card" role="dialog" aria-modal="true" aria-label="Poruke"><div class="modmsg-head"><div class="modmsg-title">Poruke</div><button class="modmsg-close" type="button" aria-label="Zatvori">×</button></div><div id="modmsg-list"></div></section>';
+    backdrop.innerHTML = `<section class="modmsg-card" role="dialog" aria-modal="true" aria-label="${tx('Poruke','Messages')}"><div class="modmsg-head"><div class="modmsg-title">${tx('Poruke','Messages')}</div><button class="modmsg-close" type="button" aria-label="${tx('Zatvori','Close')}">×</button></div><div id="modmsg-list"></div></section>`;
     document.body.appendChild(backdrop);
     backdrop.querySelector(".modmsg-close")?.addEventListener("click", closeInbox);
     backdrop.addEventListener("click", event => { if (event.target === backdrop) closeInbox(); });
@@ -206,7 +209,7 @@
     bubble.classList.toggle("has-unread", n > 0);
     const badge = document.getElementById("player-fab-message-count");
     if (badge) badge.textContent = n > 9 ? "9+" : String(n || "");
-    bubble.setAttribute("aria-label", n ? `Poruke, ${n} nepročitanih` : "Poruke");
+    bubble.setAttribute("aria-label", n ? (uiLang() === "en" ? `Messages, ${n} unread` : `Poruke, ${n} nepročitanih`) : tx("Poruke", "Messages"));
   }
 
   async function refreshUnread() {
@@ -223,7 +226,7 @@
   }
 
   function formatDate(value) {
-    try { return new Intl.DateTimeFormat("hr-HR", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" }).format(new Date(value)); }
+    try { return new Intl.DateTimeFormat(uiLang() === "en" ? "en-GB" : "hr-HR", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" }).format(new Date(value)); }
     catch (_) { return ""; }
   }
 
@@ -234,7 +237,7 @@
     note.textContent = "";
     if (newName.length < 2 || newName.length > 20) {
       note.classList.add("error");
-      note.textContent = "Ime mora imati od 2 do 20 znakova.";
+      note.textContent = tx("Ime mora imati od 2 do 20 znakova.", "The name must be between 2 and 20 characters.");
       return;
     }
     try {
@@ -244,7 +247,7 @@
       if (result.error) throw result.error;
       if (result.data !== true) {
         note.classList.add("error");
-        note.textContent = "To ime je zauzeto ili ga nije moguće spremiti. Odaberi drugo ime.";
+        note.textContent = tx("To ime je zauzeto ili ga nije moguće spremiti. Odaberi drugo ime.", "That name is taken or cannot be saved. Choose another name.");
         return;
       }
       if (identity.isGuest) {
@@ -252,12 +255,12 @@
         if (guest) { guest.displayName = newName; saveGuestIdentity(guest); }
       }
       note.classList.add("success");
-      note.textContent = "Novo ime je spremljeno. Ponovno se prikazuješ na ljestvici.";
+      note.textContent = tx("Novo ime je spremljeno. Ponovno se prikazuješ na ljestvici.", "Your new name has been saved. You are visible on the leaderboard again.");
       setTimeout(() => location.reload(), 650);
     } catch (error) {
       console.warn("Moderirano ime nije promijenjeno:", error);
       note.classList.add("error");
-      note.textContent = "Promjena imena trenutačno nije uspjela.";
+      note.textContent = tx("Promjena imena trenutačno nije uspjela.", "The name change could not be completed right now.");
     }
   }
 
@@ -266,13 +269,13 @@
     modal.classList.add("open");
     const list = document.getElementById("modmsg-list");
     if (!list) return;
-    list.innerHTML = '<div class="modmsg-empty">Učitavam poruke...</div>';
+    list.innerHTML = `<div class="modmsg-empty">${tx('Učitavam poruke...','Loading messages...')}</div>`;
     try {
       const identity = await getIdentity();
-      if (!identity) { list.innerHTML = '<div class="modmsg-empty">Nema poruka.</div>'; return; }
+      if (!identity) { list.innerHTML = `<div class="modmsg-empty">${tx('Nema poruka.','No messages.')}</div>`; return; }
       const state = await syncModerationState(identity);
       const messages = await loadMessages(identity);
-      if (!messages.length) { list.innerHTML = '<div class="modmsg-empty">Nema poruka.</div>'; setUnreadCount(0); return; }
+      if (!messages.length) { list.innerHTML = `<div class="modmsg-empty">${tx('Nema poruka.','No messages.')}</div>`; setUnreadCount(0); return; }
 
       list.innerHTML = "";
       for (const message of messages) {
@@ -287,11 +290,11 @@
           action.className = "modmsg-btn primary";
           action.type = "button";
           action.style.marginTop = "10px";
-          action.textContent = "Odaberi novo ime";
+          action.textContent = tx("Odaberi novo ime", "Choose a new name");
           item.appendChild(action);
           const rename = document.createElement("div");
           rename.className = "modmsg-rename";
-          rename.innerHTML = '<div class="modmsg-rename-row"><input class="modmsg-rename-input" maxlength="20" autocomplete="nickname" placeholder="Novo ime"><button class="modmsg-btn primary" type="button">Spremi</button></div><div class="modmsg-note"></div>';
+          rename.innerHTML = `<div class="modmsg-rename-row"><input class="modmsg-rename-input" maxlength="20" autocomplete="nickname" placeholder="${tx('Novo ime','New name')}"><button class="modmsg-btn primary" type="button">${tx('Spremi','Save')}</button></div><div class="modmsg-note"></div>`;
           item.appendChild(rename);
           action.addEventListener("click", () => { rename.classList.add("open"); rename.querySelector("input")?.focus(); });
           rename.querySelector("button")?.addEventListener("click", () => resolveName(identity, rename.querySelector("input"), rename.querySelector(".modmsg-note")));
@@ -302,7 +305,7 @@
       await refreshUnread();
     } catch (error) {
       console.warn("Inbox nije učitan:", error);
-      list.innerHTML = '<div class="modmsg-empty">Poruke trenutačno nisu dostupne.</div>';
+      list.innerHTML = `<div class="modmsg-empty">${tx('Poruke trenutačno nisu dostupne.','Messages are currently unavailable.')}</div>`;
     }
   }
 
