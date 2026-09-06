@@ -6684,6 +6684,9 @@ if (!supabaseClient) {
   async function saveQuizAnswer(question, userAnswer, result, skipped) {
     if (!supabaseClient || !question || !activeQuizSessionId) return;
 
+    // U quiz_answers spremamo samo pitanja na kojima je odgovor stvarno poslan.
+    if (skipped || !String(userAnswer || "").trim()) return;
+
     try {
       const { data: authData } = await supabaseClient.auth.getSession();
       const userId = authData?.session?.user?.id || null;
@@ -7832,7 +7835,6 @@ if (!supabaseClient) {
         recordLocalAnswer(skippedQuestion, "", { ok:false, exact:false, matched:null, reason:"skipped" }, true);
         markQuizTrackingInteraction();
         void updateQuizTracking();
-        void saveQuizAnswer(skippedQuestion, "", { ok:false, exact:false, matched:null, reason:"skipped" }, true);
 
         logAnswerHistory("", { ok:false, exact:false }, true);
         if (currentMode === "daily30" && scoreTotal >= 30) {
