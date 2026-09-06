@@ -153,6 +153,29 @@
     setTimeout(()=>{const s=cardState.get(card)||{};if(s.answered)return;const result=card.querySelector('.result');if(!result?.classList.contains('good')&&!result?.classList.contains('bad'))return;s.answered=true;cardState.set(card,s);if(result.classList.contains('good'))correct+=1;else wrong+=1;saveQuestion(card,'answered');flush();},0);
   });
 
+  document.addEventListener('scroll-vote', async e => {
+    const d=e.detail||{}, card=d.card; let ok=false;
+    try {
+      if(!playId||!card) throw new Error('Nema aktivne Scroll sesije');
+      const { data: authData } = await client.auth.getUser();
+      const { error } = await client.from('quiz_question_votes').insert({quiz_play_id:playId,session_id:sessionId,user_id:authData?.user?.id||null,question_id:null,question_text:card.querySelector('.qt')?.textContent?.trim()||'',correct_answer:card.dataset.correctAnswer||null,question_topic:card.dataset.topic||activeTopic,quiz_mode:'scroll',selected_theme:activeTopic,vote:d.vote,language:document.documentElement.lang==='en'?'en':'hr',voted_at:new Date().toISOString()});
+      if(error) throw error; ok=true;
+    } catch(err){ console.warn('Scroll vote:',err); }
+    try{d.done?.(ok)}catch(_){}
+  });
+
+  document.addEventListener('scroll-feedback', async e => {
+    const d=e.detail||{}, card=d.card; let ok=false;
+    try {
+      if(!card||!d.message) throw new Error('Nema poruke');
+      const { data: authData } = await client.auth.getUser(); const u=authData?.user||null;
+      const username=u?.user_metadata?.username||u?.user_metadata?.display_name||u?.email?.split('@')[0]||(document.documentElement.lang==='en'?'Guest':'Gost');
+      const { error } = await client.from('quiz_feedback').insert({user_id:u?.id||null,username,user_email:u?.email||null,question_id:null,question:card.querySelector('.qt')?.textContent?.trim()||'',correct_answer:card.dataset.correctAnswer||null,topic:card.dataset.topic||activeTopic,question_type:'scroll',message:d.message,language:document.documentElement.lang==='en'?'en':'hr',page_url:location.href,email_sent:false,email_error:null});
+      if(error) throw error; ok=true;
+    } catch(err){ console.warn('Scroll feedback:',err); }
+    try{d.done?.(ok)}catch(_){}
+  });
+
   document.addEventListener('visibilitychange',()=>{tick();flush();});
   window.addEventListener('blur',()=>{tick();flush();});
   window.addEventListener('focus',()=>{lastTick=performance.now();});
