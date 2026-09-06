@@ -1,0 +1,25 @@
+name: Fix index stats translations
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/fix-index-stats-i18n.mjs"
+      - ".github/workflows/fix-index-stats-i18n.yml"
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node scripts/fix-index-stats-i18n.mjs
+      - run: |
+          git config user.name "KvizToGo"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Prevedi Gaming i Moreplovce na indexu"
+          git push
