@@ -49,7 +49,7 @@
     } catch (e) { console.warn('Scroll statistika finish:', e); }
   }
 
-  async function start(topic) {
+  async function start(topic, sharedEntry = false) {
     await finish(false);
     activeTopic = topic;
     sessionId = 'scroll-' + crypto.randomUUID();
@@ -58,7 +58,7 @@
     try {
       const { data: userData } = await client.auth.getUser();
       userId = userData?.user?.id || null;
-      const { data, error } = await client.from('quiz_plays').insert({user_id:userId,session_id:sessionId,visitor_id:visitorId(),quiz_mode:'scroll',topic,started_at:new Date().toISOString(),duration_seconds:0,correct_answers:0,wrong_answers:0,completed:false,viewed_questions:0,scrolled_questions:0,learn_more_clicks:0,share_clicks:0}).select('id').single();
+      const { data, error } = await client.from('quiz_plays').insert({user_id:userId,session_id:sessionId,visitor_id:visitorId(),quiz_mode:'scroll',topic,started_at:new Date().toISOString(),duration_seconds:0,correct_answers:0,wrong_answers:0,completed:false,viewed_questions:0,scrolled_questions:0,learn_more_clicks:0,share_clicks:0,shared_question_entry:sharedEntry}).select('id').single();
       if (error) throw error; playId = data?.id || null;
     } catch (e) { console.warn('Scroll statistika start:', e); }
   }
@@ -127,5 +127,5 @@
   if(p.get('mode')==='50')start('Nasumičnih 50');
   else if(p.get('mode')==='all')start('Beskrajni niz');
   else if(p.get('topic'))start(p.get('topic').replace(/\.json$/i,''));
-  else if(p.get('shared'))start('Podijeljeno pitanje');
+  else if(p.get('q')||p.get('shared'))start('Podijeljeno pitanje', true);
 })();
