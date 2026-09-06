@@ -2906,23 +2906,23 @@ body.player-panel-open { overflow: hidden; }
       <!-- Scrollanjem do Znanja -->
       <div class="themed-row" id="scroll-knowledge-menu" style="display:block;">
         <details style="width:100%;">
-          <summary class="themed-btn" style="list-style:none;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:.42rem;"><span aria-hidden="true" style="width:8px;height:8px;flex:0 0 8px;display:inline-block;border:1.5px solid currentColor;border-radius:50%;"></span>Scrollanjem do Znanja</summary>
+          <summary class="themed-btn" style="list-style:none;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:.42rem;"><span aria-hidden="true" style="width:8px;height:8px;flex:0 0 8px;display:inline-block;border:1.5px solid currentColor;border-radius:50%;"></span><span data-i18n="scrollModeLabel">Scrollanjem do Znanja</span></summary>
           <div style="margin-top:.55rem;padding:.65rem;border:1px solid rgba(148,163,184,.22);border-radius:18px;background:rgba(16,27,45,.82);">
             <div class="themed-grid">
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?mode=all">Beskrajni niz</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?mode=50">Nasumičnih 50</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=AmerickiPredsjednici.json">Američki predsjednici</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=AntickiRim.json">Antički Rim</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Film.json">Film</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=FloraFauna.json">Flora i fauna</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Gaming.json">Gaming</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Glazba.json">Glazba</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Knjizevnost.json">Književnost</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Moreplovci.json">Moreplovci</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Nogomet.json">Nogomet</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Sport.json">Sport</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Zemljopis.json">Zemljopis</a>
-              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Znanost.json">Znanost</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?mode=all" data-i18n="scrollAll">Beskrajni niz</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?mode=50" data-i18n="scroll50">Nasumičnih 50</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=AmerickiPredsjednici.json" data-i18n="scrollUsPresidents">Američki predsjednici</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=AntickiRim.json" data-i18n="scrollRome">Antički Rim</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Film.json" data-i18n="scrollFilm">Film</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=FloraFauna.json" data-i18n="scrollFlora">Flora i fauna</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Gaming.json" data-i18n="scrollGaming">Gaming</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Glazba.json" data-i18n="scrollMusic">Glazba</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Knjizevnost.json" data-i18n="scrollLiterature">Književnost</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Moreplovci.json" data-i18n="scrollSeafarers">Moreplovci</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Nogomet.json" data-i18n="scrollFootball">Nogomet</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Sport.json" data-i18n="scrollSport">Sport</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Zemljopis.json" data-i18n="scrollGeography">Zemljopis</a>
+              <a class="themed-topic" style="text-decoration:none;" href="scroll-znanje.html?topic=Znanost.json" data-i18n="scrollScience">Znanost</a>
             </div>
           </div>
         </details>
@@ -3523,6 +3523,7 @@ if (!supabaseClient) {
       modeBlitzDesc: "jedno pitanje za drugim (igraj s prijateljima)",
       modeRelaxLabel: "Bez vremena",
       modeRelaxDesc: "Nasumična pitanja (igraj do besvijesti)",
+      scrollModeLabel: "Scrollanjem do Znanja", scrollAll: "Beskrajni niz", scroll50: "Nasumičnih 50", scrollUsPresidents: "Američki predsjednici", scrollRome: "Antički Rim", scrollFilm: "Film", scrollFlora: "Flora i fauna", scrollGaming: "Gaming", scrollMusic: "Glazba", scrollLiterature: "Književnost", scrollSeafarers: "Moreplovci", scrollFootball: "Nogomet", scrollSport: "Sport", scrollGeography: "Zemljopis", scrollScience: "Znanost",
       themedBtn: "Tematski kvizovi",
       themePrefix: "Tema:",
       themedHint: "U tematskom kvizu dobivaš <strong>samo pitanja odabrane teme</strong>. U ostalim vrstama sve teme se i dalje mogu pojavljivati normalno.",
@@ -3618,6 +3619,7 @@ if (!supabaseClient) {
       modeBlitzDesc: "one question after another (play with friends)",
       modeRelaxLabel: "No timer",
       modeRelaxDesc: "Random questions (play as long as you want)",
+      scrollModeLabel: "Scroll to Knowledge", scrollAll: "Endless stream", scroll50: "Random 50", scrollUsPresidents: "U.S. Presidents", scrollRome: "Ancient Rome", scrollFilm: "Film", scrollFlora: "Flora & Fauna", scrollGaming: "Gaming", scrollMusic: "Music", scrollLiterature: "Literature", scrollSeafarers: "Seafarers", scrollFootball: "Football", scrollSport: "Sport", scrollGeography: "Geography", scrollScience: "Science",
       themedBtn: "Themed quizzes",
       themePrefix: "Theme:",
       themedHint: "In a themed quiz you get <strong>only questions from the selected theme</strong>. In other modes, all themes can still appear normally.",

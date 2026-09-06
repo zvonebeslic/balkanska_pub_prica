@@ -2938,8 +2938,8 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
         <div class="my-quiz-meta"><strong>${escapeHtmlProfile(quizStatus(q))}</strong><br>${escapeHtmlProfile(q.venue || "—")}<br>${escapeHtmlProfile(formatQuizDate(q.datetime))}${q.phone ? `<br>${escapeHtmlProfile(q.phone)}` : ""}${q.description ? `<br>${escapeHtmlProfile(q.description)}` : ""}</div>
         ${historyMode ? "" : `<div class="my-quiz-actions"><button class="btn btn--soft edit-quiz-btn" data-id="${q.id}">✏️ Uredi</button><button class="btn btn--danger cancel-quiz-btn" data-id="${q.id}">${q.status === "cancelled" ? "Ponovno objavi" : "Otkaži"}</button></div>`}
       </article>`;
-      activeEl.innerHTML = active.length ? active.map(q => card(q)).join("") : '<p class="empty-state">Trenutno nemate kvizova koji dolaze ili su uživo.</p>';
-      historyEl.innerHTML = history.length ? history.map(q => card(q, true)).join("") : '<p class="empty-state">Još nema završenih kvizova.</p>';
+      activeEl.innerHTML = active.length ? active.map(q => card(q)).join("") : '<p class="empty-state">'+(currentLang === "en" ? "You currently have no upcoming or live quizzes." : "Trenutno nemate kvizova koji dolaze ili su uživo.")+'</p>';
+      historyEl.innerHTML = history.length ? history.map(q => card(q, true)).join("") : '<p class="empty-state">'+(currentLang === "en" ? "There are no finished quizzes yet." : "Još nema završenih kvizova.")+'</p>';
       activeEl.hidden = false;
       historyEl.hidden = true;
       const historyButton = document.getElementById("history-toggle-btn");
