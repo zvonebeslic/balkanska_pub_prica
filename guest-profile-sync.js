@@ -2,6 +2,7 @@
   "use strict";
 
   const GUEST_IDENTITY_KEY = "kviztogo_guest_identity_v1";
+  const GUEST_SECRET_KEY = "kviztogo_guest_secret_v1";
   const DAILY30_RESULTS_BASE_KEY = "kviztogo_daily30_results_v1";
   const hooks = new Map();
   let runningMerge = null;
@@ -11,6 +12,25 @@
     try {
       const saved = JSON.parse(localStorage.getItem(GUEST_IDENTITY_KEY) || "null");
       return saved?.id ? String(saved.id) : null;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function createGuestSecret() {
+    const bytes = new Uint8Array(32);
+    crypto.getRandomValues(bytes);
+    return Array.from(bytes, b => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  function getOrCreateGuestSecret(guestId) {
+    if (!guestId) return null;
+    try {
+      const saved = JSON.parse(localStorage.getItem(GUEST_SECRET_KEY) || "null");
+      if (saved?.guestId === guestId && typeof saved.secret === "string" && saved.secret.length >= 32) return saved.secret;
+      const secret = createGuestSecret();
+      localStorage.setItem(GUEST_SECRET_KEY, JSON.stringify({ guestId, secret }));
+      return secret;
     } catch (_) {
       return null;
     }
@@ -81,8 +101,11 @@
     if (!client || !userId) return false;
 
     if (guestId) {
-      const attached = await client.rpc("daily30_attach_guest_to_current_user", {
-        p_guest_player_key: `guest:${guestId}`
+      const guestSecret = getOrCreateGuestSecret(guestId);
+      if (!guestSecret) return false;
+      const attached = await client.rpc("daily30_attach_guest_to_current_user_secure", {
+        p_guest_player_key: `guest:${guestId}`,
+        p_guest_secret: guestSecret
       });
       if (attached.error) throw attached.error;
     }

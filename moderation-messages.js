@@ -2,6 +2,7 @@
   "use strict";
 
   const GUEST_IDENTITY_KEY = "kviztogo_guest_identity_v1";
+  const GUEST_SECRET_KEY = "kviztogo_guest_secret_v1";
   const STYLE_ID = "kviztogo-moderation-messages-style";
   const MODAL_ID = "moderation-messages-modal";
   const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
@@ -37,6 +38,36 @@
     catch (_) { return false; }
   }
 
+  function createGuestSecret() {
+    const bytes = new Uint8Array(32);
+    crypto.getRandomValues(bytes);
+    return Array.from(bytes, b => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  function getOrCreateGuestSecret() {
+    const guest = getGuestIdentity();
+    if (!guest?.id) return null;
+    const guestId = String(guest.id);
+    try {
+      const saved = JSON.parse(localStorage.getItem(GUEST_SECRET_KEY) || "null");
+      if (saved?.guestId === guestId && typeof saved.secret === "string" && saved.secret.length >= 32) return saved.secret;
+      const secret = createGuestSecret();
+      localStorage.setItem(GUEST_SECRET_KEY, JSON.stringify({ guestId, secret }));
+      return secret;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  async function ensureGuestSecretRegistered(identity) {
+    if (!identity?.isGuest) return null;
+    const client = getClient();
+    const secret = getOrCreateGuestSecret();
+    if (!client || !secret) return null;
+    try { await client.rpc("daily30_register_guest_secret", { p_player_key: identity.playerKey, p_guest_secret: secret }); } catch (_) {}
+    return secret;
+  }
+
   async function getIdentity() {
     const client = getClient();
     if (!client) return null;
@@ -62,7 +93,9 @@
     if (!client || !identity) return null;
 
     if (identity.isGuest) {
-      const { data, error } = await client.rpc("moderation_get_guest_state", { p_player_key: identity.playerKey });
+      const guestSecret = await ensureGuestSecretRegistered(identity);
+      if (!guestSecret) return null;
+      const { data, error } = await client.rpc("moderation_get_guest_state_secure", { p_player_key: identity.playerKey, p_guest_secret: guestSecret });
       if (error) throw error;
       const state = Array.isArray(data) ? (data[0] || null) : data;
       if (!state) return null;
@@ -150,7 +183,7 @@
     const client = getClient();
     if (!client || !identity) return [];
     const result = identity.isGuest
-      ? await client.rpc("moderation_get_guest_messages", { p_player_key: identity.playerKey })
+      ? await client.rpc("moderation_get_guest_messages_secure", { p_player_key: identity.playerKey, p_guest_secret: await ensureGuestSecretRegistered(identity) })
       : await client.rpc("moderation_get_my_messages");
     if (result.error) throw result.error;
     return Array.isArray(result.data) ? result.data : [];
@@ -160,7 +193,7 @@
     const client = getClient();
     if (!client || !identity || !id) return false;
     const result = identity.isGuest
-      ? await client.rpc("moderation_mark_guest_message_read", { p_id: id, p_player_key: identity.playerKey })
+      ? await client.rpc("moderation_mark_guest_message_read_secure", { p_id: id, p_player_key: identity.playerKey, p_guest_secret: await ensureGuestSecretRegistered(identity) })
       : await client.rpc("moderation_mark_my_message_read", { p_id: id });
     if (result.error) throw result.error;
     return result.data === true;
@@ -206,7 +239,7 @@
     }
     try {
       const result = identity.isGuest
-        ? await client.rpc("moderation_resolve_guest_name", { p_player_key: identity.playerKey, p_new_name: newName })
+        ? await client.rpc("moderation_resolve_guest_name_secure", { p_player_key: identity.playerKey, p_new_name: newName, p_guest_secret: await ensureGuestSecretRegistered(identity) })
         : await client.rpc("moderation_resolve_my_profile_name", { p_new_name: newName });
       if (result.error) throw result.error;
       if (result.data !== true) {
@@ -249,7 +282,7 @@
         const body = document.createElement("div"); body.className = "modmsg-item-body"; body.textContent = message.body || ""; item.appendChild(body);
         const date = document.createElement("div"); date.className = "modmsg-item-date"; date.textContent = formatDate(message.created_at); item.appendChild(date);
 
-        if (state?.name_requires_change) {
+        if (state?.name_requires_change && (message.message_type || "name_restriction") === "name_restriction") {
           const action = document.createElement("button");
           action.className = "modmsg-btn primary";
           action.type = "button";
