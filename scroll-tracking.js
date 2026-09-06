@@ -99,8 +99,7 @@
     const state = cardState.get(card) || {};
     const text = card.querySelector('.qt')?.textContent?.trim() || '';
     const input = card.querySelector('input')?.value?.trim() || null;
-    const result = card.querySelector('.result');
-    const isCorrect = type === 'answered' ? !!result?.classList.contains('good') : null;
+    const isCorrect = type === 'answered' ? card.dataset.matchReason !== 'wrong' : null;
     const questionTopic = card.dataset.topic || activeTopic;
     const correctAnswer = card.dataset.correctAnswer || null;
     let acceptedAnswers = [];
@@ -150,7 +149,7 @@
 
   document.addEventListener('keydown', e => {
     if (e.key !== 'Enter') return; const card=e.target.closest?.('.q'); if(!card||!e.target.matches('input'))return;
-    setTimeout(()=>{const s=cardState.get(card)||{};if(s.answered)return;const result=card.querySelector('.result');if(!result?.classList.contains('good')&&!result?.classList.contains('bad'))return;s.answered=true;cardState.set(card,s);if(result.classList.contains('good'))correct+=1;else wrong+=1;saveQuestion(card,'answered');flush();},0);
+    setTimeout(()=>{const s=cardState.get(card)||{};if(s.answered||!card.dataset.matchReason)return;s.answered=true;cardState.set(card,s);if(card.dataset.matchReason==='wrong')wrong+=1;else correct+=1;saveQuestion(card,'answered');flush();},0);
   });
 
   document.addEventListener('scroll-vote', async e => {
