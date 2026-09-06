@@ -95,7 +95,8 @@
   }
 
   async function saveQuestion(card, type) {
-    if (!playId) return;
+    // U quiz_answers smiju ići samo pitanja na koja je korisnik stvarno odgovorio.
+    if (!playId || type !== 'answered') return;
     const state = cardState.get(card) || {};
     const text = card.querySelector('.qt')?.textContent?.trim() || '';
     const input = card.querySelector('input')?.value?.trim() || null;
@@ -124,7 +125,7 @@
         }
       } else {
         if (s.timer) { clearTimeout(s.timer); s.timer = null; }
-        if (s.entered && !s.answered && !s.scrolled) { s.scrolled = true; scrolled += 1; saveQuestion(card, 'scrolled'); flush(); }
+        if (s.entered && !s.answered && !s.scrolled) { s.scrolled = true; scrolled += 1; flush(); }
       }
       cardState.set(card, s);
     }
