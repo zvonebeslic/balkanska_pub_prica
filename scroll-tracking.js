@@ -105,10 +105,12 @@
     const correctAnswer = card.dataset.correctAnswer || null;
     let acceptedAnswers = [];
     try { acceptedAnswers = JSON.parse(card.dataset.answers || '[]'); } catch (_) {}
-    const matchedAnswer = type === 'answered' && isCorrect ? findMatchedAnswer(input, acceptedAnswers) : null;
+    const matchedAnswer = type === 'answered' && isCorrect ? (card.dataset.matchedAnswer || findMatchedAnswer(input, acceptedAnswers)) : null;
+    const isExact = type === 'answered' && isCorrect ? (card.dataset.matchExact === 'true' || normalizeAnswer(input) === normalizeAnswer(matchedAnswer)) : false;
+    const matchReason = type === 'scrolled' ? 'scrolled' : (isCorrect ? (card.dataset.matchReason || (isExact ? 'exact' : 'tolerance')) : 'wrong');
     const lang = document.documentElement.lang === 'en' ? 'en' : 'hr';
     try {
-      await client.from('quiz_answers').insert({quiz_play_id:playId,session_id:sessionId,user_id:userId,question_id:null,question_text:text,question_topic:questionTopic,question_type:'scroll',quiz_mode:'scroll',selected_theme:activeTopic,user_answer:type==='answered'?input:null,correct_answer:correctAnswer,matched_answer:matchedAnswer,is_correct:isCorrect,is_exact:false,was_skipped:false,was_scrolled:type==='scrolled',was_viewed:!!state.viewed,match_reason:type==='scrolled'?'scrolled':'scroll_answer',language:lang,answered_at:new Date().toISOString()});
+      await client.from('quiz_answers').insert({quiz_play_id:playId,session_id:sessionId,user_id:userId,question_id:null,question_text:text,question_topic:questionTopic,question_type:'scroll',quiz_mode:'scroll',selected_theme:activeTopic,user_answer:type==='answered'?input:null,correct_answer:correctAnswer,matched_answer:matchedAnswer,is_correct:isCorrect,is_exact:isExact,was_skipped:false,was_scrolled:type==='scrolled',was_viewed:!!state.viewed,match_reason:matchReason,language:lang,answered_at:new Date().toISOString()});
     } catch (e) { console.warn('Scroll pitanje statistika:', e); }
   }
 
