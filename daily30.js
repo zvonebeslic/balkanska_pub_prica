@@ -1,5 +1,53 @@
 (function(){
   "use strict";
+
+  /* Zajednički guest identitet za sva igranja koja koriste quiz_plays.
+     daily30.js se učitava prije stvaranja Supabase klijenta na online-kviz.html,
+     pa ovdje jednom presrećemo insert u quiz_plays i za gosta dodajemo visitor_id.
+     Baza zatim sama iz visitor_id/user_id izrađuje player_key i prenosi ga u quiz_answers. */
+  const GUEST_IDENTITY_KEY="kviztogo_guest_identity_v1";
+  function getSharedGuestId(){
+    try{
+      const identity=JSON.parse(localStorage.getItem(GUEST_IDENTITY_KEY)||"null");
+      return identity?.id?String(identity.id):null;
+    }catch(_){return null;}
+  }
+  const supabaseApi=window.supabase;
+  const originalCreateClient=supabaseApi&&typeof supabaseApi.createClient==="function"
+    ? supabaseApi.createClient
+    : null;
+  if(originalCreateClient&&!originalCreateClient.__kviztogoGuestTrackingPatched){
+    const wrappedCreateClient=function(...args){
+      const client=originalCreateClient.apply(this,args);
+      if(!client||typeof client.from!=="function")return client;
+      const originalFrom=client.from.bind(client);
+      client.from=function(table){
+        const builder=originalFrom(table);
+        if(table!=="quiz_plays"||!builder||typeof builder.insert!=="function")return builder;
+        const originalInsert=builder.insert.bind(builder);
+        builder.insert=function(values,options){
+          const addGuestIdentity=(row)=>{
+            if(!row||typeof row!=="object"||Array.isArray(row))return row;
+            if(row.user_id||row.visitor_id)return row;
+            const guestId=getSharedGuestId();
+            return guestId?{...row,visitor_id:guestId}:row;
+          };
+          const nextValues=Array.isArray(values)
+            ? values.map(addGuestIdentity)
+            : addGuestIdentity(values);
+          return originalInsert(nextValues,options);
+        };
+        return builder;
+      };
+      return client;
+    };
+    wrappedCreateClient.__kviztogoGuestTrackingPatched=true;
+    supabaseApi.createClient=wrappedCreateClient;
+  }
+})();
+
+(function(){
+  "use strict";
   const style=document.createElement("style");
   style.id="kviztogo-daily30-inline-style";
   style.textContent=`
