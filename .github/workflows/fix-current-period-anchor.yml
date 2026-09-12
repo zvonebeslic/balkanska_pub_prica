@@ -1,0 +1,34 @@
+name: Fix current period anchor
+on:
+  push:
+    paths:
+      - '.github/current-period-anchor-trigger.txt'
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix current week/month anchor
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('leaderboards.js')
+          s=p.read_text()
+          old="const next=v==='week'?(dir<0?addDays(weekStart(a),-1):addDays(weekStart(a),13)):v==='month'?(dir<0?addDays(monthStart(a),-1):periodEnd('month',addMonths(monthStart(a),1))):addDays(a,dir);"
+          new="const next=v==='week'?(dir<0?addDays(weekStart(a),-1):(addDays(weekStart(a),7)<=today()&&today()<=addDays(weekStart(a),13)?today():addDays(weekStart(a),13))):v==='month'?(dir<0?addDays(monthStart(a),-1):(addMonths(monthStart(a),1)<=today()&&today()<=periodEnd('month',addMonths(monthStart(a),1))?today():periodEnd('month',addMonths(monthStart(a),1)))):addDays(a,dir);"
+          count=s.count(old)
+          if count!=2:
+              raise SystemExit(f'Expected 2 navigation matches, found {count}')
+          p.write_text(s.replace(old,new))
+          PY
+      - name: Remove temporary workflow files
+        run: rm -f .github/workflows/fix-current-period-anchor.yml .github/current-period-anchor-trigger.txt
+      - name: Commit fix
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add leaderboards.js .github
+          git commit -m 'Fix current leaderboard period anchor'
+          git push
