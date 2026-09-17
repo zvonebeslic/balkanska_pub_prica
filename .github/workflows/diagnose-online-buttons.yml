@@ -10,28 +10,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check inline JavaScript and JSON files
-        shell: python
+      - name: Browser runtime diagnosis
         run: |
-          from pathlib import Path
-          import re, subprocess, json
-          s=Path('online-kviz.html').read_text(encoding='utf-8')
-          blocks=re.findall(r'<script([^>]*)>(.*?)</script>',s,re.S|re.I)
-          bad=[]
-          for i,(attrs,code) in enumerate(blocks):
-            if 'application/ld+json' in attrs.lower() or not code.strip(): continue
-            p=Path(f'/tmp/script-{i}.js'); p.write_text(code,encoding='utf-8')
-            r=subprocess.run(['node','--check',str(p)],capture_output=True,text=True)
-            if r.returncode:
-              print('BAD SCRIPT',i); print(r.stderr); bad.append(i)
-          if bad: raise SystemExit('Syntax errors in scripts '+str(bad))
-          print('All executable inline scripts parse OK')
-          files=['questions-blitz.json','FloraFauna.json','Film.json','Glazba.json','AntickiRim.json','AmerickiPredsjednici.json','Zemljopis.json','Nogomet.json','Znanost.json','Knjizevnost.json','povijest.json','Gaming.json','Moreplovci.json','Sport.json','Svastara.json']
-          files += list(map(str,Path('ABC pitanja').glob('*.json')))
-          for f in files:
-            try:
-              data=json.loads(Path(f).read_text(encoding='utf-8'))
-              if not isinstance(data,list): raise ValueError('root is not list')
-              print('OK JSON',f,len(data))
-            except Exception as e:
-              print('BAD JSON',f,repr(e)); raise
+          npm init -y >/dev/null 2>&1
+          npm install playwright >/dev/null 2>&1
+          npx playwright install chromium >/dev/null 2>&1
+          python3 -m http.server 8000 >/tmp/server.log 2>&1 &
+          cat > /tmp/test.js <<'EOF'
+          const { chromium } = require('playwright');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const page=await browser.newPage();
+            page.on('console',m=>console.log('CONSOLE',m.type(),m.text()));
+            page.on('pageerror',e=>console.log('PAGEERROR',e.stack||e.message));
+            page.on('response',r=>{if(r.status()>=400) console.log('HTTP',r.status(),r.url())});
+            await page.goto('http://127.0.0.1:8000/online-kviz.html',{waitUntil:'networkidle',timeout:120000});
+            await page.waitForTimeout(3000);
+            console.log('BODYCLASS',await page.locator('body').getAttribute('class'));
+            console.log('QUESTION',await page.locator('#question-text').textContent().catch(()=>null));
+            console.log('START_DISABLED',await page.locator('#btn-start').isDisabled().catch(()=>null));
+            console.log('MODE_COUNT',await page.locator('.mode-pill').count());
+            await page.locator('[data-mode="blitz60"]').click().catch(e=>console.log('BLITZCLICK',e.message));
+            await page.locator('#btn-start').click().catch(e=>console.log('STARTCLICK',e.message));
+            await page.waitForTimeout(1000);
+            console.log('AFTER_START_QUESTION',await page.locator('#question-text').textContent().catch(()=>null));
+            await browser.close();
+          })();
+          EOF
+          node /tmp/test.js
