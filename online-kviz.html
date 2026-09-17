@@ -8190,7 +8190,10 @@ if (!supabaseClient) {
     loadNextQuestion();
 
     if (currentMode === "daily30") window.KvizDaily30?.startStopwatch?.();
-    else if (startTimerAlso && isTimedMode()) startTimer();
+    else if (startTimerAlso && isTimedMode()) {
+      updateTimerUI();
+      startTimer();
+    }
     else stopTimer();
   }
 
@@ -9193,6 +9196,7 @@ feedbackNote.innerHTML = currentLang === "en"
 
     // Povijest ide obrnuto kronološki: najnovije odgovoreno/preskočeno pitanje je odmah ispod aktivnog pitanja.
     list.insertBefore(li, list.firstChild);
+    list.scrollTop = 0;
   }
 
   function clearHistoryList() {
