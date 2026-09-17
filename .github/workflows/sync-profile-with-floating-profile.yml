@@ -1,0 +1,71 @@
+name: Sync standalone profile with floating profile
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-profile-with-floating-profile.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync profile functionality and translations
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          p=Path('profil.html')
+          s=p.read_text(encoding='utf-8')
+
+          # Remove obsolete Blitz percentile/rank UI remnants to match floating profile.
+          s=re.sub(r'\n\s*\.player-blitz-rank\s*\{.*?\.player-blitz-rank\[hidden\]\s*\{\s*display:\s*none;\s*\}\s*', '\n', s, flags=re.S)
+          s=re.sub(r'\n\s*<[^>]+(?:id|class)="[^"]*blitz-rank[^"]*"[^>]*>.*?</[^>]+>\s*', '\n', s, flags=re.S|re.I)
+          s=re.sub(r'^\s*blitzRank(?:Template|Loading|NeedGame|Unavailable):.*?\n', '', s, flags=re.M)
+
+          # Add ABC local mode stats wherever the standalone profile still has the old 3-mode shape.
+          s=s.replace('themed: createEmptyModeStats()\n', 'themed: createEmptyModeStats(),\n      abc: createEmptyModeStats()\n')
+          s=s.replace('themed: createEmptyModeStats(),\n      daily30:', 'themed: createEmptyModeStats(),\n      abc: createEmptyModeStats(),\n      daily30:')
+
+          # Normalize integrated ABC modes to one profile category, exactly as online-kviz does.
+          marker='function normalizeProfileMode(mode)'
+          if marker not in s:
+              insert='''\nfunction normalizeProfileMode(mode) {\n  return mode === "abc_blitz" || mode === "abc_relax" || mode === "abc_themed" ? "abc" : mode;\n}\n'''
+              idx=s.find('</script>')
+              if idx!=-1: s=s[:idx]+insert+s[idx:]
+
+          # Keep language switching parity: ensure the standalone profile exposes both HR and EN labels for ABC crowns.
+          # Crown text is patched only when the crown definitions exist in this file.
+          replacements={
+            '"Odigrane ABC partije"':'(currentLang === "en" ? "ABC games played" : "Odigrane ABC partije")',
+            '"Prvi ABC"':'(currentLang === "en" ? "First ABC" : "Prvi ABC")',
+            '"Odigraj prvi ABC kviz"':'(currentLang === "en" ? "Play your first ABC quiz" : "Odigraj prvi ABC kviz")',
+            '"Skupi 100 točnih ABC odgovora"':'(currentLang === "en" ? "Get 100 ABC answers correct" : "Skupi 100 točnih ABC odgovora")',
+            '"Skupi 500 točnih ABC odgovora"':'(currentLang === "en" ? "Get 500 ABC answers correct" : "Skupi 500 točnih ABC odgovora")',
+            '"ABC niz 20"':'(currentLang === "en" ? "ABC streak 20" : "ABC niz 20")',
+            '"Pogodi 20 ABC pitanja zaredom"':'(currentLang === "en" ? "Answer 20 ABC questions correctly in a row" : "Pogodi 20 ABC pitanja zaredom")'
+          }
+          for a,b in replacements.items():
+              s=s.replace(a,b)
+
+          # Remove the large duplicate ABC statistics card if one was copied previously.
+          s=re.sub(r'\n\s*<section class="player-mode-section[^>]*player-mode-section--abc[^>]*>.*?</section>\s*', '\n', s, flags=re.S|re.I)
+
+          p.write_text(s,encoding='utf-8')
+      - name: Validate
+        shell: python
+        run: |
+          from pathlib import Path
+          s=Path('profil.html').read_text(encoding='utf-8')
+          assert 'Among the top {top}% of played Blitz games' not in s
+          assert 'Među najboljih' not in s or 'Blitz' not in s[s.find('Među najboljih'):s.find('Među najboljih')+150]
+          assert '<html' in s and '</html>' in s
+          print('profil.html sync validation OK')
+      - name: Commit
+        run: |
+          git config user.name 'KvizToGo automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add profil.html
+          git rm .github/workflows/sync-profile-with-floating-profile.yml
+          git commit -m 'Sync standalone profile with floating quiz profile'
+          git push
