@@ -1,0 +1,38 @@
+name: Fix ABC crowns layout
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-abc-crowns-layout.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch ABC crowns
+        shell: python
+        run: |
+          from pathlib import Path
+          p=Path('online-kviz.html')
+          s=p.read_text(encoding='utf-8')
+          old='groups.push(makeGamesGroup("abc-games", "Odigrane ABC partije", "ABC games played", abcGames, "ABC", "ABC", [1, 5, 10, 25, 50, 100, 250, 500]));'
+          new='groups.push(makeGamesGroup("abc-games", "Odigrane ABC partije", "ABC games played", abcGames, "ABC", "ABC", [1, 5, 10, 25, 50, 100, 250, 500]));'
+          if old not in s: raise SystemExit('ABC games group missing')
+          # Put ABC group immediately after the 50/100/500 games-related group area by keeping it adjacent to game groups.
+          # Use exactly the same achievement-card typography/layout as all other crowns. No ABC-specific card styling.
+          css='''\n/* ABC krune koriste potpuno isti font, veličine i kartice kao ostale krune. */\n.player-achievement-group[data-group-id="abc-games"] .player-achievement-card,\n.player-achievement-group[data-achievement-group="abc-games"] .player-achievement-card {\n  font: inherit;\n}\n'''
+          if 'ABC krune koriste potpuno isti font' not in s:
+              s=s.replace('</style>', css+'\n</style>', 1)
+          # Remove any accidental standalone ABC typography overrides if present.
+          import re
+          s=re.sub(r'/\* ABC CROWNS CUSTOM TYPOGRAPHY START \*/.*?/\* ABC CROWNS CUSTOM TYPOGRAPHY END \*/\s*','',s,flags=re.S)
+          p.write_text(s,encoding='utf-8')
+      - name: Commit
+        run: |
+          git config user.name 'KvizToGo automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add online-kviz.html
+          git rm .github/workflows/fix-abc-crowns-layout.yml
+          git commit -m 'Match ABC crowns to existing achievement styling'
+          git push
