@@ -5804,7 +5804,7 @@ if (!supabaseClient) {
   }
 
   function updateBlitzPercentileNote() {
-
+    const note = document.getElementById("blitz-percentile-note");
     if (!note) return;
     const bestScore = localStats.modeStats.blitz60.bestScore;
 
