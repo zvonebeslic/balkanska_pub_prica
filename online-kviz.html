@@ -106,8 +106,9 @@ body.keyboard-active { overflow-anchor: none; padding-bottom: 0; }
   }
 
   body.quiz-playing .history-list {
-    overflow: visible;
-    max-height: none;
+    overflow-y: auto;
+    max-height: 34vh;
+    min-height: 3rem;
   }
 
   body.quiz-playing .question-text { font-size: 0.95rem; line-height: 1.38; }
