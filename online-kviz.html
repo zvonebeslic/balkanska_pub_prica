@@ -345,7 +345,9 @@ a { -webkit-tap-highlight-color: transparent; }
 /* Mali krug uz odabir vrste kviza. */
 .mode-pill::before,
 #btn-themed::before,
-.themed-topic::before {
+#btn-abc::before,
+.themed-topic::before,
+.abc-option::before {
   content: "";
   width: 8px;
   height: 8px;
@@ -356,7 +358,8 @@ a { -webkit-tap-highlight-color: transparent; }
   vertical-align: 0.02em;
 }
 
-.themed-topic::before { margin-right: 0.42rem; }
+.themed-topic::before,
+.abc-option::before { margin-right: 0.42rem; }
 
 .mode-pill span.mode-label { font-weight: 850; }
 .mode-pill span.mode-desc { font-size: 0.75rem; color: var(--text-muted); }
@@ -374,7 +377,9 @@ a { -webkit-tap-highlight-color: transparent; }
 /* Samo jedan odabrani krug smije biti ispunjen bijelom bojom. */
 .mode-pill.circle-selected::before,
 #btn-themed.circle-selected::before,
-.themed-topic.circle-selected::before {
+.themed-topic.circle-selected::before,
+#btn-abc.circle-selected::before,
+.abc-option.circle-selected::before {
   background: #ffffff;
   border-color: #ffffff;
 }
@@ -429,6 +434,42 @@ a { -webkit-tap-highlight-color: transparent; }
 .themed-topic:hover { background: rgba(47, 128, 255, 0.12); transform: translateY(-1px); }
 .themed-topic.active { background: var(--blue-soft); border-color: rgba(47, 128, 255, 0.75); color: #d8e8ff; font-weight: 800; }
 .themed-hint { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.4rem; }
+
+/* ABC pitanja imaju vlastiti padajući izbornik i odabir jednim klikom. */
+.abc-row { width: 100%; margin-top: 0.45rem; }
+.abc-panel {
+  display: none;
+  margin-top: 0.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(16, 27, 45, 0.95);
+  padding: 0.65rem;
+}
+.abc-panel.open { display: block; }
+.abc-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.45rem; }
+.abc-section-label {
+  margin: 0.35rem 0 0.05rem;
+  padding: 0 0.15rem;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.abc-option {
+  width: 100%;
+  border-radius: 14px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.82rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease, border-color 0.15s ease;
+  text-align: left;
+}
+.abc-option:hover { background: rgba(47, 128, 255, 0.12); transform: translateY(-1px); }
+.abc-option.active { background: var(--blue-soft); border-color: rgba(47, 128, 255, 0.75); color: #d8e8ff; font-weight: 800; }
 
 .hero-right-card {
   background: rgba(16, 27, 45, 0.96);
@@ -599,6 +640,40 @@ a { -webkit-tap-highlight-color: transparent; }
 .answer-input-row input[type="text"] { flex: 1; border-radius: 16px; border: 1px solid var(--border); background: var(--card-soft); padding: 0.65rem 1.1rem; color: var(--text-main); font-size: 1rem; outline: none; }
 .answer-input-row input[type="text"]::placeholder { color: rgba(245, 247, 251, 0.45); }
 .answer-input-row input[type="text"]:focus { border-color: var(--blue); box-shadow: 0 0 0 4px var(--blue-soft); }
+.abc-answer-options { display: none; grid-template-columns: 1fr; gap: 0.5rem; }
+body.abc-mode .answer-input-row { display: none; }
+body.abc-mode .abc-answer-options { display: grid; }
+.abc-answer-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--card-soft);
+  color: var(--text-main);
+  padding: 0.68rem 0.8rem;
+  font-size: 0.93rem;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+.abc-answer-button:hover:not(:disabled) { background: rgba(47, 128, 255, 0.14); border-color: rgba(47, 128, 255, 0.58); transform: translateY(-1px); }
+.abc-answer-button:disabled { cursor: default; }
+.abc-answer-button.correct { background: rgba(34, 197, 94, 0.2); border-color: var(--green); }
+.abc-answer-button.incorrect { background: rgba(239, 68, 68, 0.2); border-color: var(--red); }
+.abc-answer-letter {
+  width: 1.8rem;
+  height: 1.8rem;
+  flex: 0 0 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  font-weight: 950;
+}
 .answer-feedback { font-size: 0.8rem; min-height: 1.1em; }
 .answer-feedback.correct { color: var(--green); }
 .answer-feedback.incorrect { color: var(--red); }
@@ -2903,6 +2978,31 @@ body.player-panel-open { overflow: hidden; }
         </button>
       </div>
 
+      <div class="abc-row">
+        <button class="themed-btn" id="btn-abc" type="button" aria-expanded="false" aria-controls="abc-panel" data-i18n="abcMenuLabel">ABC pitanja</button>
+        <div class="abc-panel" id="abc-panel">
+          <div class="abc-grid" id="abc-grid">
+            <button class="abc-option" data-abc-mode="abc_blitz" type="button" data-i18n="modeBlitzLabel">Blitz 60s</button>
+            <button class="abc-option" data-abc-mode="abc_relax" type="button" data-i18n="abcRelaxLabel">Bezvremenski</button>
+            <div class="abc-section-label" data-i18n="abcThemesLabel">Tematike</div>
+            <button class="abc-option" data-abc-topic="AntickiRim" type="button" data-i18n="themeRome">Antički Rim kviz</button>
+            <button class="abc-option" data-abc-topic="AmerickiPredsjednici" type="button" data-i18n="themeUsPresidents">Američki predsjednici kviz</button>
+            <button class="abc-option" data-abc-topic="Zemljopis" type="button" data-i18n="themeGeography">Zemljopis kviz</button>
+            <button class="abc-option" data-abc-topic="Nogomet" type="button" data-i18n="themeFootball">Nogomet kviz</button>
+            <button class="abc-option" data-abc-topic="FloraFauna" type="button" data-i18n="themeFloraFauna">FloraFauna kviz</button>
+            <button class="abc-option" data-abc-topic="Film" type="button" data-i18n="themeFilm">Film kviz</button>
+            <button class="abc-option" data-abc-topic="Znanost" type="button" data-i18n="themeScience">Znanost kviz</button>
+            <button class="abc-option" data-abc-topic="Glazba" type="button" data-i18n="themeMusic">Glazba kviz</button>
+            <button class="abc-option" data-abc-topic="Knjizevnost" type="button" data-i18n="themeLiterature">Književnost kviz</button>
+            <button class="abc-option" data-abc-topic="Povijest" type="button" data-i18n="themeHistory">Povijest kviz</button>
+            <button class="abc-option" data-abc-topic="Gaming" type="button" data-i18n="themeGaming">Svijet Gaminga</button>
+            <button class="abc-option" data-abc-topic="Moreplovci" type="button" data-i18n="themeMoreplovci">Moreplovci</button>
+            <button class="abc-option" data-abc-topic="Sport" type="button" data-i18n="themeSport">Sport kviz</button>
+          </div>
+          <div class="themed-hint" data-i18n="abcMenuHint">Odaberi odgovor A, B ili C. Miješani načini uključuju i dodatna pitanja koja nisu zasebne tematike.</div>
+        </div>
+      </div>
+
       <!-- Scrollanjem do Znanja -->
       <div class="themed-row" id="scroll-knowledge-menu" style="display:block;">
         <details style="width:100%;">
@@ -3017,6 +3117,7 @@ body.player-panel-open { overflow: hidden; }
           <input type="text" id="answer-input" placeholder="Upiši svoj odgovor..." autocomplete="off" data-i18n-placeholder="answerPlaceholder">
           <button class="btn btn--accent btn--icon" id="btn-submit-answer" title="Potvrdi odgovor" aria-label="Potvrdi odgovor" data-i18n-title="submitAnswer" data-i18n-aria-label="submitAnswer"><span class="submit-checkmark">✓</span></button>
         </div>
+        <div class="abc-answer-options" id="abc-answer-options" aria-live="polite"></div>
         <div class="answer-feedback" id="answer-feedback"></div>
       </div>
 
@@ -3523,6 +3624,10 @@ if (!supabaseClient) {
       modeBlitzDesc: "jedno pitanje za drugim (igraj s prijateljima)",
       modeRelaxLabel: "Bez vremena",
       modeRelaxDesc: "Nasumična pitanja (igraj do besvijesti)",
+      abcMenuLabel: "ABC pitanja",
+      abcRelaxLabel: "Bezvremenski",
+      abcThemesLabel: "Tematike",
+      abcMenuHint: "Odaberi odgovor A, B ili C. Miješani načini uključuju i dodatna pitanja koja nisu zasebne tematike.",
       scrollModeLabel: "Scrollanjem do Znanja", scrollAll: "Beskrajni niz", scroll50: "Nasumičnih 50", scrollUsPresidents: "Američki predsjednici", scrollRome: "Antički Rim", scrollFilm: "Film", scrollFlora: "Flora i fauna", scrollGaming: "Gaming", scrollMusic: "Glazba", scrollLiterature: "Književnost", scrollSeafarers: "Moreplovci", scrollFootball: "Nogomet", scrollSport: "Sport", scrollGeography: "Zemljopis", scrollScience: "Znanost",
       themedBtn: "Tematski kvizovi",
       themePrefix: "Tema:",
@@ -3567,9 +3672,15 @@ if (!supabaseClient) {
       chooseTheme: "Odaberi temu",
       quizRelaxTitle: "Bezvremenski kviz",
       quizRelaxSubtitle: "Opušteni mix pitanja bez ograničenja",
+      quizAbcBlitzTitle: "ABC Blitz kviz",
+      quizAbcBlitzSubtitle: "Odaberi A, B ili C u 60 sekundi",
+      quizAbcRelaxTitle: "ABC bezvremenski kviz",
+      quizAbcRelaxSubtitle: "Odaberi A, B ili C bez vremenskog ograničenja",
+      quizAbcThemedTitle: "ABC tematski kviz",
       typeDash: "Tip: —",
       typeDaily: "Tip: Dnevnih 30",
       typeBlitz: "Tip: Blitz",
+      typeAbc: "Tip: ABC",
       emptyQuestion: "(prazno pitanje)",
       visualAlt: "Vizualna pomoć za pitanje",
       correct: "Točno! ✅",
@@ -3619,6 +3730,10 @@ if (!supabaseClient) {
       modeBlitzDesc: "one question after another (play with friends)",
       modeRelaxLabel: "No timer",
       modeRelaxDesc: "Random questions (play as long as you want)",
+      abcMenuLabel: "ABC questions",
+      abcRelaxLabel: "Timeless",
+      abcThemesLabel: "Topics",
+      abcMenuHint: "Choose answer A, B or C. Mixed modes also include extra questions that are not separate topics.",
       scrollModeLabel: "Scroll to Knowledge", scrollAll: "Endless stream", scroll50: "Random 50", scrollUsPresidents: "U.S. Presidents", scrollRome: "Ancient Rome", scrollFilm: "Film", scrollFlora: "Flora & Fauna", scrollGaming: "Gaming", scrollMusic: "Music", scrollLiterature: "Literature", scrollSeafarers: "Seafarers", scrollFootball: "Football", scrollSport: "Sport", scrollGeography: "Geography", scrollScience: "Science",
       themedBtn: "Themed quizzes",
       themePrefix: "Theme:",
@@ -3663,9 +3778,15 @@ if (!supabaseClient) {
       chooseTheme: "Choose a theme",
       quizRelaxTitle: "Timeless quiz",
       quizRelaxSubtitle: "Relaxed question mix with no time limit",
+      quizAbcBlitzTitle: "ABC Blitz quiz",
+      quizAbcBlitzSubtitle: "Choose A, B or C in 60 seconds",
+      quizAbcRelaxTitle: "ABC timeless quiz",
+      quizAbcRelaxSubtitle: "Choose A, B or C with no time limit",
+      quizAbcThemedTitle: "ABC themed quiz",
       typeDash: "Type: —",
       typeDaily: "Type: Daily 30",
       typeBlitz: "Type: Blitz",
+      typeAbc: "Type: ABC",
       emptyQuestion: "(empty question)",
       visualAlt: "Visual hint for the question",
       correct: "Correct! ✅",
@@ -3862,8 +3983,27 @@ if (!supabaseClient) {
   const QUESTIONS_URL_MOREPLOVCI = "Moreplovci.json";
   const QUESTIONS_URL_SPORT = "Sport.json";
   const QUESTIONS_URL_SVASTARA = "Svastara.json";
+
+  const ABC_SOURCE_CONFIG = [
+    { key: "questions-blitz", url: "ABC pitanja/questions-blitz.json", topic: null },
+    { key: "svastara", url: "ABC pitanja/Svastara.json", topic: null },
+    { key: "anticki-rim", url: "ABC pitanja/AntickiRim.json", topic: "AntickiRim" },
+    { key: "americki-predsjednici", url: "ABC pitanja/AmerickiPredsjednici.json", topic: "AmerickiPredsjednici" },
+    { key: "zemljopis", url: "ABC pitanja/Zemljopis.json", topic: "Zemljopis" },
+    { key: "nogomet", url: "ABC pitanja/Nogomet.json", topic: "Nogomet" },
+    { key: "flora-fauna", url: "ABC pitanja/FloraFauna.json", topic: "FloraFauna" },
+    { key: "film", url: "ABC pitanja/Film.json", topic: "Film" },
+    { key: "znanost", url: "ABC pitanja/Znanost.json", topic: "Znanost" },
+    { key: "glazba", url: "ABC pitanja/Glazba.json", topic: "Glazba" },
+    { key: "knjizevnost", url: "ABC pitanja/Knjizevnost.json", topic: "Knjizevnost" },
+    { key: "povijest", url: "ABC pitanja/povijest.json", topic: "Povijest" },
+    { key: "gaming", url: "ABC pitanja/Gaming.json", topic: "Gaming" },
+    { key: "moreplovci", url: "ABC pitanja/Moreplovci.json", topic: "Moreplovci" },
+    { key: "sport", url: "ABC pitanja/Sport.json", topic: "Sport" }
+  ];
   
   let ALL_QUESTIONS = [];
+  let ALL_ABC_QUESTIONS = [];
   let loadedBlitzCount = 0;
   let loadedStoryCount = 0;
   let loadedFloraCount = 0;
@@ -3881,10 +4021,15 @@ if (!supabaseClient) {
   let loadedSportCount = 0;
   let loadedSvastaraCount = 0;
   
-  // mode: "daily30" | "blitz60" | "story90" | "relax" | "themed"
+  // mode: "daily30" | "blitz60" | "story90" | "relax" | "themed" | "abc_blitz" | "abc_relax" | "abc_themed"
   let currentMode = "blitz60";
   let currentThemeTopic = null; // npr "AntickiRim"
+  let currentAbcTopic = null;
   let currentQuestion = null;
+
+  function isAbcMode(mode = currentMode) {
+    return mode === "abc_blitz" || mode === "abc_relax" || mode === "abc_themed";
+  }
 
   const ATOMIC_JOKER_COOLDOWN_MS = 15 * 60 * 1000;
   const ATOMIC_JOKER_STORAGE_BASE_KEY = "kviztogo_atomic_jokers_v1";
@@ -5341,6 +5486,7 @@ if (!supabaseClient) {
   function getTotalQuestionCount() {
     const ids = new Set();
     ALL_QUESTIONS.forEach((q, index) => ids.add(String(q?.id ?? (q?.question || index))));
+    ALL_ABC_QUESTIONS.forEach((q, index) => ids.add(String(q?.id ?? (q?.question || `abc-${index}`))));
     return ids.size;
   }
 
@@ -5361,7 +5507,7 @@ if (!supabaseClient) {
     currentGameStreak = 0;
     currentGameLongestStreak = 0;
     currentLocalGameMode = currentMode;
-    currentLocalGameTheme = currentThemeTopic;
+    currentLocalGameTheme = currentMode === "abc_themed" ? currentAbcTopic : currentThemeTopic;
     currentDaily30CountsForProfile = true;
     if (currentLocalGameMode === "daily30") {
       const dailyDate = window.KvizDaily30?.getActiveDate?.() || window.KvizDaily30?.getSelectedDate?.() || null;
@@ -5442,9 +5588,9 @@ if (!supabaseClient) {
         return;
       }
 
-      const modeKey = currentLocalGameMode === "themed"
+      const modeKey = currentLocalGameMode === "themed" || currentLocalGameMode === "abc_themed"
         ? "themed"
-        : currentLocalGameMode === "relax"
+        : currentLocalGameMode === "relax" || currentLocalGameMode === "abc_relax"
           ? "relax"
           : "blitz60";
       const modeStats = localStats.modeStats[modeKey] || createEmptyModeStats();
@@ -6637,9 +6783,9 @@ if (!supabaseClient) {
   }
 
   function getTrackingTopic() {
-    return currentMode === "themed" && currentThemeTopic
-      ? currentThemeTopic
-      : null;
+    if (currentMode === "themed" && currentThemeTopic) return currentThemeTopic;
+    if (currentMode === "abc_themed" && currentAbcTopic) return currentAbcTopic;
+    return null;
   }
 
   async function startQuizTracking() {
@@ -6822,6 +6968,7 @@ if (!supabaseClient) {
     initYear();
     initModeSwitch();
     initThemedUI();
+    initAbcUI();
     initButtons();
     initAtomicJokerToolkit();
     await loadQuestionsFromJson();
@@ -6858,6 +7005,7 @@ if (!supabaseClient) {
   }
 
   function focusAnswerInputSoon() {
+    if (isAbcMode()) return;
     const input = document.getElementById("answer-input");
     if (!input || input.disabled) return;
 
@@ -6906,8 +7054,36 @@ if (!supabaseClient) {
 
   /* ------------------ LOAD QUESTIONS (JSON) ------------------ */
 
+  function normalizeAbcQuestion(question, index, source) {
+    const options = question?.answers;
+    const correctKey = String(question?.correct_answer || "").trim().toUpperCase();
+    const optionKeys = ["A", "B", "C"];
+    const validOptions = options && !Array.isArray(options) && optionKeys.every(key => {
+      return typeof options[key] === "string" && options[key].trim().length > 0;
+    });
+    if (!question?.question || !validOptions || !optionKeys.includes(correctKey)) {
+      throw new Error(`Neispravno ABC pitanje: ${source.url} #${index + 1}`);
+    }
+
+    const topic = source.topic || ((question.topic && String(question.topic).trim()) ? String(question.topic).trim() : "Ostalo");
+    return {
+      id: `abc-${source.key}-${question.id ?? index}`,
+      type: "abc",
+      difficulty: typeof question.difficulty === "number" ? question.difficulty : 1,
+      topic,
+      question: question.question,
+      answers: [options[correctKey]],
+      abcOptions: { A: options.A, B: options.B, C: options.C },
+      correctAnswerKey: correctKey,
+      abcThemeEligible: Boolean(source.topic),
+      image: question.image || null,
+      rarity: normalizeQuestionRarity(question.rarity)
+    };
+  }
+
   async function loadQuestionsFromJson() {
     try {
+      const abcResponsesPromise = Promise.all(ABC_SOURCE_CONFIG.map(source => fetch(source.url)));
       const [respBlitz, respFlora, respFilm, respGlazba, respAntickiRim, respAmerickiPredsjednici, respZemljopis, respNogomet, respZnanost, respKnjizevnost, respPovijest, respGaming, respMoreplovci, respSport, respSvastara] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         /* STORY PRIVREMENO ISKLJUČEN
@@ -6928,8 +7104,9 @@ if (!supabaseClient) {
         fetch(QUESTIONS_URL_SPORT),
         fetch(QUESTIONS_URL_SVASTARA),
       ]);
+      const abcResponses = await abcResponsesPromise;
 
-      if (!respBlitz.ok || !respFlora.ok || !respFilm.ok || !respGlazba.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok || !respZemljopis.ok || !respNogomet.ok || !respZnanost.ok || !respKnjizevnost.ok || !respPovijest.ok || !respGaming.ok || !respMoreplovci.ok || !respSport.ok || !respSvastara.ok) {
+      if (!respBlitz.ok || !respFlora.ok || !respFilm.ok || !respGlazba.ok || !respAntickiRim.ok || !respAmerickiPredsjednici.ok || !respZemljopis.ok || !respNogomet.ok || !respZnanost.ok || !respKnjizevnost.ok || !respPovijest.ok || !respGaming.ok || !respMoreplovci.ok || !respSport.ok || !respSvastara.ok || abcResponses.some(response => !response.ok)) {
         throw new Error("Greška pri čitanju JSON datoteka.");
       }
 
@@ -6952,8 +7129,9 @@ if (!supabaseClient) {
       const moreplovciData = await respMoreplovci.json();
       const sportData = await respSport.json();
       const svastaraData = await respSvastara.json();
+      const abcCollections = await Promise.all(abcResponses.map(response => response.json()));
       
-      if (!Array.isArray(blitzData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(glazbaData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData) || !Array.isArray(nogometData) || !Array.isArray(znanostData) || !Array.isArray(knjizevnostData) || !Array.isArray(povijestData) || !Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(sportData) || !Array.isArray(svastaraData)) {
+      if (!Array.isArray(blitzData) || !Array.isArray(floraData) || !Array.isArray(filmData) || !Array.isArray(glazbaData) || !Array.isArray(antickiRimData) || !Array.isArray(americkiPredsjedniciData) || !Array.isArray(zemljopisData) || !Array.isArray(nogometData) || !Array.isArray(znanostData) || !Array.isArray(knjizevnostData) || !Array.isArray(povijestData) || !Array.isArray(gamingData) || !Array.isArray(moreplovciData) || !Array.isArray(sportData) || !Array.isArray(svastaraData) || abcCollections.some(collection => !Array.isArray(collection))) {
         throw new Error("JSON format nije ispravan (očekuje se lista).");
       }
 
@@ -7137,6 +7315,10 @@ if (!supabaseClient) {
       }));
 
       ALL_QUESTIONS = [...normalizedBlitz, /* ...normalizedStory, */ ...normalizedFlora, ...normalizedFilm, ...normalizedGlazba, ...normalizedAntickiRim, ...normalizedAmerickiPredsjednici, ...normalizedZemljopis, ...normalizedNogomet, ...normalizedZnanost, ...normalizedKnjizevnost, ...normalizedPovijest, ...normalizedGaming, ...normalizedMoreplovci, ...normalizedSport, ...normalizedSvastara];
+      ALL_ABC_QUESTIONS = abcCollections.flatMap((collection, sourceIndex) => {
+        const source = ABC_SOURCE_CONFIG[sourceIndex];
+        return collection.map((question, questionIndex) => normalizeAbcQuestion(question, questionIndex, source));
+      });
       loadedBlitzCount = normalizedBlitz.length;
       loadedStoryCount = normalizedStory.length;
       loadedFloraCount = normalizedFlora.length;
@@ -7163,12 +7345,23 @@ if (!supabaseClient) {
   /* ------------------ MODE SWITCH (PILLS) ------------------ */
 
   function setExclusiveChoiceCircle(target) {
-    document.querySelectorAll(".mode-pill, #btn-themed, .themed-topic").forEach((el) => {
+    document.querySelectorAll(".mode-pill, #btn-themed, .themed-topic, #btn-abc, .abc-option").forEach((el) => {
       el.classList.toggle("circle-selected", el === target);
     });
   }
 
   function restoreChoiceCircleFromState() {
+    if (isAbcMode()) {
+      const abcSelector = currentMode === "abc_themed" && currentAbcTopic
+        ? `.abc-option[data-abc-topic="${currentAbcTopic}"]`
+        : `.abc-option[data-abc-mode="${currentMode}"]`;
+      const abcButton = document.querySelector(abcSelector);
+      if (abcButton) {
+        setExclusiveChoiceCircle(abcButton);
+        return;
+      }
+    }
+
     if (currentMode === "themed" && currentThemeTopic) {
       const topicButton = document.querySelector(`.themed-topic[data-topic="${currentThemeTopic}"]`);
       if (topicButton) {
@@ -7195,7 +7388,9 @@ if (!supabaseClient) {
         // Ako user klikne običan mod, izlazimo iz tematskog
         currentMode = mode;
         currentThemeTopic = null;
+        currentAbcTopic = null;
         syncThemedActiveUI(null);
+        syncAbcActiveUI(null);
 
         pills.forEach((p) => p.classList.toggle("active", p === pill));
         setExclusiveChoiceCircle(pill);
@@ -7218,6 +7413,7 @@ if (!supabaseClient) {
         recentTopics = [];
 
         setQuizInteractionEnabled(true);
+        syncAnswerModeUI();
         updateModeLabel();
         updateTimerUI();
       });
@@ -7225,7 +7421,7 @@ if (!supabaseClient) {
   }
 
   function resetTimerForMode() {
-    if (currentMode === "blitz60") timerDurationMs = 60000;
+    if (currentMode === "blitz60" || currentMode === "abc_blitz") timerDurationMs = 60000;
     /* STORY PRIVREMENO ISKLJUČEN
     else if (currentMode === "story90") timerDurationMs = 90000;
     */
@@ -7237,7 +7433,7 @@ if (!supabaseClient) {
   }
 
   function isTimedMode() {
-    return currentMode === "blitz60"; /* STORY PRIVREMENO ISKLJUČEN: || currentMode === "story90" */
+    return currentMode === "blitz60" || currentMode === "abc_blitz"; /* STORY PRIVREMENO ISKLJUČEN: || currentMode === "story90" */
   }
 
   function isFiniteQuestionMode() {
@@ -7258,6 +7454,15 @@ if (!supabaseClient) {
     } else if (currentMode === "blitz60") {
       titleEl.textContent = tr("quizBlitzTitle");
       subtitleEl.textContent = tr("quizBlitzSubtitle");
+    } else if (currentMode === "abc_blitz") {
+      titleEl.textContent = tr("quizAbcBlitzTitle");
+      subtitleEl.textContent = tr("quizAbcBlitzSubtitle");
+    } else if (currentMode === "abc_relax") {
+      titleEl.textContent = tr("quizAbcRelaxTitle");
+      subtitleEl.textContent = tr("quizAbcRelaxSubtitle");
+    } else if (currentMode === "abc_themed") {
+      titleEl.textContent = tr("quizAbcThemedTitle");
+      subtitleEl.textContent = currentAbcTopic ? (tr("themePrefix") + " " + prettyThemeName(currentAbcTopic)) : tr("chooseTheme");
     /* STORY PRIVREMENO ISKLJUČEN
     } else if (currentMode === "story90") {
       titleEl.textContent = tr("quizStoryTitle");
@@ -7307,6 +7512,7 @@ if (!supabaseClient) {
         // Prebaci na themed mod
         currentMode = "themed";
         currentThemeTopic = topic;
+        currentAbcTopic = null;
         window.KvizDaily30?.onModeLeft?.();
 
         // makni active s mode pillova (da se jasno vidi da je themed poseban)
@@ -7314,6 +7520,7 @@ if (!supabaseClient) {
 
         // označi aktivnu temu
         themedButtons.forEach(x => x.classList.toggle("active", x === b));
+        syncAbcActiveUI(null);
         setExclusiveChoiceCircle(b);
         syncThemedActiveUI(topic);
 
@@ -7333,6 +7540,7 @@ if (!supabaseClient) {
         recentTopics = [];
 
         setQuizInteractionEnabled(true);
+        syncAnswerModeUI();
         updateModeLabel();
         updateTimerUI();
       });
@@ -7366,6 +7574,72 @@ if (!supabaseClient) {
 
     badge.style.display = "inline-flex";
     name.textContent = prettyThemeName(topicOrNull);
+  }
+
+  /* ------------------ ABC UI ------------------ */
+
+  function syncAbcActiveUI(activeButtonOrNull) {
+    document.querySelectorAll(".abc-option").forEach(button => {
+      button.classList.toggle("active", button === activeButtonOrNull);
+    });
+  }
+
+  function syncAnswerModeUI() {
+    document.body.classList.toggle("abc-mode", isAbcMode());
+    const options = document.getElementById("abc-answer-options");
+    if (!options) return;
+    if (!isAbcMode() || !currentQuestion?.abcOptions) options.innerHTML = "";
+  }
+
+  function initAbcUI() {
+    const btn = document.getElementById("btn-abc");
+    const panel = document.getElementById("abc-panel");
+    const optionButtons = document.querySelectorAll(".abc-option");
+    if (!btn || !panel) return;
+
+    btn.addEventListener("click", () => {
+      const open = panel.classList.toggle("open");
+      btn.classList.toggle("active", open);
+      btn.setAttribute("aria-expanded", String(open));
+      if (open) setExclusiveChoiceCircle(btn);
+      else restoreChoiceCircleFromState();
+    });
+
+    optionButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const topic = button.getAttribute("data-abc-topic");
+        const mode = button.getAttribute("data-abc-mode");
+        if (!topic && !mode) return;
+
+        currentMode = topic ? "abc_themed" : mode;
+        currentAbcTopic = topic || null;
+        currentThemeTopic = null;
+        window.KvizDaily30?.onModeLeft?.();
+
+        document.querySelectorAll(".mode-pill").forEach(pill => pill.classList.remove("active"));
+        syncThemedActiveUI(null);
+        syncAbcActiveUI(button);
+        setExclusiveChoiceCircle(button);
+
+        stopTimer();
+        hideAtomicJokerToolkit();
+        resetTimerForMode();
+        usedQuestionIds.clear();
+        resetQuestionQueue();
+        typingPauseUsedForCurrentQuestion = false;
+        quizFinished = false;
+        lastDifficulty = null;
+        sameDifficultyStreak = 0;
+        recentTopics = [];
+
+        setQuizInteractionEnabled(true);
+        syncAnswerModeUI();
+        updateModeLabel();
+        updateTimerUI();
+      });
+    });
+
+    syncAnswerModeUI();
   }
 
 
@@ -7595,7 +7869,7 @@ if (!supabaseClient) {
   function showAtomicJokerToolkitForCurrentQuestion() {
     const toolkit = document.getElementById("atomic-joker-toolkit");
     const firstAnswer = Array.isArray(currentQuestion?.answers) ? currentQuestion.answers[0] : "";
-    if (!toolkit || !currentQuestion || quizFinished || !isAtomicToolkitAnswerUsable(firstAnswer)) {
+    if (!toolkit || !currentQuestion || quizFinished || isAbcMode() || !isAtomicToolkitAnswerUsable(firstAnswer)) {
       hideAtomicJokerToolkit();
       return;
     }
@@ -7858,6 +8132,9 @@ if (!supabaseClient) {
     if (answerInput) answerInput.disabled = !enabled;
     if (btnSubmit) btnSubmit.disabled = !enabled;
     if (btnSkip) btnSkip.disabled = !enabled;
+    document.querySelectorAll(".abc-answer-button").forEach(button => {
+      button.disabled = !enabled;
+    });
   }
 
   /* ------------------ ROUND MANAGEMENT ------------------ */
@@ -7958,7 +8235,11 @@ if (!supabaseClient) {
     }
 
     // za themed: promjena teme mora rebuildati queue
-    const themeKey = currentMode === "themed" ? currentThemeTopic : null;
+    const themeKey = currentMode === "themed"
+      ? currentThemeTopic
+      : currentMode === "abc_themed"
+        ? currentAbcTopic
+        : null;
 
     if (queueMode !== currentMode || queueTheme !== themeKey || questionQueue.length === 0) {
       const pool = getQuestionPoolForCurrentMode();
@@ -7996,7 +8277,7 @@ if (!supabaseClient) {
     if (questionQueue.length === 0) return null;
 
     // Dnevnih 30 mora zadržati isti redoslijed za svakoga; u tematskom je ionako sve isti topic.
-    if (currentMode === "daily30" || currentMode === "themed") return questionQueue.pop();
+    if (currentMode === "daily30" || currentMode === "themed" || currentMode === "abc_themed") return questionQueue.pop();
 
     const peek = questionQueue[questionQueue.length - 1];
     const peekTopic = getTopicSafe(peek);
@@ -8044,7 +8325,7 @@ if (!supabaseClient) {
     }
 
     // topic cooldown history samo u non-themed
-    if (currentMode !== "themed") {
+    if (currentMode !== "themed" && currentMode !== "abc_themed") {
       const chosenTopic = getTopicSafe(chosen);
       recentTopics.push(chosenTopic);
       if (recentTopics.length > TOPIC_COOLDOWN) recentTopics.shift();
@@ -8064,20 +8345,24 @@ if (!supabaseClient) {
     if (currentMode === "daily30") return window.KvizDaily30?.getActiveQuestions?.() || [];
 
     // Osnovno: validna pitanja
-    let base = ALL_QUESTIONS.filter(q => {
+    let base = (isAbcMode() ? ALL_ABC_QUESTIONS : ALL_QUESTIONS).filter(q => {
       if (!q || !q.question || !Array.isArray(q.answers) || q.answers.length === 0) return false;
       return true;
     });
 
     // Mod filter
-    if (currentMode === "blitz60") base = base.filter(q => q.type === "blitz");
+    if (isAbcMode()) {
+      if (currentMode === "abc_themed" && currentAbcTopic) {
+        base = base.filter(q => q.abcThemeEligible && String(q.topic).trim() === String(currentAbcTopic).trim());
+      }
+    } else if (currentMode === "blitz60") base = base.filter(q => q.type === "blitz");
     /* STORY PRIVREMENO ISKLJUČEN
     else if (currentMode === "story90") base = base.filter(q => q.type === "story");
     */
     else base = base.filter(q => q.type === "blitz"); // relax + themed, bez story pitanja
 
     // ✅ Tematski filter: samo odabrani topic
-    if (currentMode === "themed" && currentThemeTopic) {
+    if (!isAbcMode() && currentMode === "themed" && currentThemeTopic) {
       base = base.filter(q => String(q.topic).trim() === String(currentThemeTopic).trim());
     }
 
@@ -8147,7 +8432,13 @@ if (!supabaseClient) {
 
     applyQuestionRarityUI(q);
     if (questionTextEl) questionTextEl.textContent = q.question || tr("emptyQuestion");
-    if (typeLabelEl) typeLabelEl.textContent = currentMode === "daily30" ? tr("typeDaily") : tr("typeBlitz"); /* STORY PRIVREMENO ISKLJUČEN */
+    if (typeLabelEl) {
+      typeLabelEl.textContent = currentMode === "daily30"
+        ? tr("typeDaily")
+        : isAbcMode()
+          ? tr("typeAbc")
+          : tr("typeBlitz"); /* STORY PRIVREMENO ISKLJUČEN */
+    }
     updateDailyQuestionProgress();
 
     /* TEŽINA PRIVREMENO ISKLJUČENA - ne prikazuj 1/5, 2/5, 3/5... */
@@ -8169,6 +8460,33 @@ if (!supabaseClient) {
       feedbackEl.textContent = "";
       feedbackEl.classList.remove("correct", "incorrect");
     }
+    renderAbcAnswerOptions(q);
+  }
+
+  function renderAbcAnswerOptions(question) {
+    const container = document.getElementById("abc-answer-options");
+    if (!container) return;
+    container.innerHTML = "";
+    if (!isAbcMode() || !question?.abcOptions) return;
+
+    ["A", "B", "C"].forEach(key => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "abc-answer-button";
+      button.dataset.answerKey = key;
+
+      const letter = document.createElement("span");
+      letter.className = "abc-answer-letter";
+      letter.textContent = key;
+
+      const answer = document.createElement("span");
+      answer.textContent = question.abcOptions[key];
+
+      button.appendChild(letter);
+      button.appendChild(answer);
+      button.addEventListener("click", () => handleAbcAnswer(button, key));
+      container.appendChild(button);
+    });
   }
 
   function clearAnswerField() {
@@ -8177,7 +8495,7 @@ if (!supabaseClient) {
     input.value = "";
 
     /* Ako je kviz pokrenut, input ostaje stalno aktivan da tipkovnica ne nestaje. */
-    if (document.body.classList.contains("quiz-playing")) {
+    if (!isAbcMode() && document.body.classList.contains("quiz-playing")) {
       input.focus({ preventScroll: true });
     }
   }
@@ -8470,6 +8788,53 @@ if (!supabaseClient) {
     return { ok: false, exact: false, matched: null, reason: "" };
   }
 
+  function handleAbcAnswer(selectedButton, selectedKey) {
+    if (!isAbcMode() || !currentQuestion || !currentQuestion.abcOptions) return;
+    if (isFiniteQuestionMode() && quizFinished) return;
+
+    const feedbackEl = document.getElementById("answer-feedback");
+    if (!feedbackEl) return;
+
+    const answeredQuestion = currentQuestion;
+    const correctKey = answeredQuestion.correctAnswerKey;
+    const selectedAnswer = answeredQuestion.abcOptions[selectedKey] || "";
+    const result = {
+      ok: selectedKey === correctKey,
+      exact: selectedKey === correctKey,
+      matched: selectedKey === correctKey ? selectedAnswer : null,
+      reason: "abc"
+    };
+
+    const answerButtons = document.querySelectorAll(".abc-answer-button");
+    answerButtons.forEach(button => {
+      button.disabled = true;
+      if (button.dataset.answerKey === correctKey) button.classList.add("correct");
+    });
+    if (!result.ok) selectedButton.classList.add("incorrect");
+
+    scoreTotal++;
+    if (result.ok) scoreCorrect++;
+    else scoreWrong++;
+
+    updateScoreUI();
+    recordLocalAnswer(answeredQuestion, selectedAnswer, result, false);
+    markQuizTrackingInteraction();
+    void updateQuizTracking();
+    void saveQuizAnswer(answeredQuestion, selectedAnswer, result, false);
+    logAnswerHistory(selectedAnswer, result, false);
+
+    feedbackEl.textContent = result.ok ? tr("correct") : tr("incorrect");
+    feedbackEl.classList.toggle("correct", result.ok);
+    feedbackEl.classList.toggle("incorrect", !result.ok);
+
+    window.setTimeout(() => {
+      if (currentQuestion !== answeredQuestion) return;
+      if (isFiniteQuestionMode() && quizFinished) return;
+      setQuizInteractionEnabled(true);
+      loadNextQuestion();
+    }, 650);
+  }
+
   function handleSubmitAnswer() {
     if (isFiniteQuestionMode() && quizFinished) return;
     if (!currentQuestion) return;
@@ -8562,7 +8927,7 @@ if (!supabaseClient) {
     const metaDiv = document.createElement("div");
     metaDiv.className = "history-meta";
 
-    const typeLabel = "Blitz"; /* STORY PRIVREMENO ISKLJUČEN */
+    const typeLabel = currentQuestion?.type === "abc" ? "ABC" : "Blitz"; /* STORY PRIVREMENO ISKLJUČEN */
     /* TEŽINA PRIVREMENO ISKLJUČENA - sakriveno i u povijesti odgovora */
     metaDiv.innerHTML = `<span>${typeLabel}</span>`;
 
@@ -8835,6 +9200,7 @@ feedbackNote.innerHTML = currentLang === "en"
     const imgEl = document.getElementById("question-image");
     const feedbackEl = document.getElementById("answer-feedback");
     const input = document.getElementById("answer-input");
+    const abcOptions = document.getElementById("abc-answer-options");
 
     clearQuestionRarityUI();
     if (questionTextEl) {
@@ -8842,6 +9208,7 @@ feedbackNote.innerHTML = currentLang === "en"
       questionTextEl.innerHTML = tr("resetMessage");
     }
     if (typeLabelEl) typeLabelEl.textContent = tr("typeDash");
+    if (abcOptions) abcOptions.innerHTML = "";
     updateDailyQuestionProgress();
     if (diffPillEl) diffPillEl.textContent = "";
     if (imgEl) { imgEl.src = ""; imgEl.style.display = "none"; }
