@@ -1,0 +1,42 @@
+name: Diagnose live online quiz JavaScript
+on:
+  push:
+    paths:
+      - '.github/workflows/diagnose-live-quiz.yml'
+permissions:
+  contents: write
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Diagnose JavaScript and restore last known working quiz if broken
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, subprocess, sys
+          p=Path('online-kviz.html')
+          s=p.read_text(encoding='utf-8')
+          scripts=re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>',s,re.S|re.I)
+          Path('/tmp/check.js').write_text('\n'.join(scripts),encoding='utf-8')
+          PY
+          if ! node --check /tmp/check.js; then
+            echo 'Current online-kviz has syntax error; restoring known working 27d0ce version.'
+            git checkout 27d0ce986a3ba52fd2ddf44b024d630b3936e757 -- online-kviz.html
+          fi
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          s=Path('online-kviz.html').read_text(encoding='utf-8')
+          scripts=re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>',s,re.S|re.I)
+          Path('/tmp/check2.js').write_text('\n'.join(scripts),encoding='utf-8')
+          PY
+          node --check /tmp/check2.js
+      - name: Commit repair and remove workflow
+        run: |
+          git config user.name 'KvizToGo automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git rm .github/workflows/diagnose-live-quiz.yml
+          git add online-kviz.html
+          git commit -m 'Repair online quiz JavaScript regression'
+          git push
