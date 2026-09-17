@@ -4497,7 +4497,8 @@ if (!supabaseClient) {
       modeStats: {
         blitz60: createEmptyModeStats(),
         relax: createEmptyModeStats(),
-        themed: createEmptyModeStats()
+        themed: createEmptyModeStats(),
+        abc: createEmptyModeStats()
       },
       collectionStats: {
         completedIds: [],
@@ -4570,7 +4571,8 @@ if (!supabaseClient) {
       modeStats: {
         blitz60: normalizeModeStats(s.modeStats?.blitz60),
         relax: normalizeModeStats(s.modeStats?.relax),
-        themed: normalizeModeStats(s.modeStats?.themed)
+        themed: normalizeModeStats(s.modeStats?.themed),
+        abc: normalizeModeStats(s.modeStats?.abc)
       },
       collectionStats: {
         completedIds: Array.isArray(collectionStats.completedIds) ? [...new Set(collectionStats.completedIds.map(String))].slice(-1000) : [],
@@ -4698,7 +4700,8 @@ if (!supabaseClient) {
       modeStats: {
         blitz60: mergeModeStatsAdditive(a.modeStats.blitz60, b.modeStats.blitz60),
         relax: mergeModeStatsAdditive(a.modeStats.relax, b.modeStats.relax),
-        themed: mergeModeStatsAdditive(a.modeStats.themed, b.modeStats.themed)
+        themed: mergeModeStatsAdditive(a.modeStats.themed, b.modeStats.themed),
+        abc: mergeModeStatsAdditive(a.modeStats.abc, b.modeStats.abc)
       },
       collectionStats: { completedIds: collectionIds, bestScores, attempts },
       rareAnswers: {
@@ -5070,6 +5073,7 @@ if (!supabaseClient) {
     );
     const blitzGames = Math.max(0, Number(localStats.modeStats?.blitz60?.gamesPlayed) || 0);
     const relaxGames = Math.max(0, Number(localStats.modeStats?.relax?.gamesPlayed) || 0);
+    const abcGames = Math.max(0, Number(localStats.modeStats?.abc?.gamesPlayed) || 0);
     const rareSeen = Array.isArray(localStats.rareSeenQuestionIds) ? localStats.rareSeenQuestionIds.length : 0;
     const rareCorrect = getCollectedRareTotal();
     const shares = Math.max(0, Number(localStats.shareCount) || 0);
@@ -5160,6 +5164,7 @@ if (!supabaseClient) {
       [1, 5, 10, 25, 50, 100, 250, 500]
     ));
     groups.push(makeGamesGroup("relax-games", "Odigrane partije Bez vremena", "No-timer games played", relaxGames, "Bez vremena", "No-timer"));
+    groups.push(makeGamesGroup("abc-games", "Odigrane ABC partije", "ABC games played", abcGames, "ABC", "ABC", [1, 5, 10, 25, 50, 100, 250, 500]));
 
     const themeThresholds = [1, 5, 10, 20, 50];
     const themeTitlesHr = ["Prvi korak", "Povratnik", "Tema pod kožom", "Tematski znalac", "Majstor teme"];
@@ -5597,9 +5602,11 @@ if (!supabaseClient) {
         return;
       }
 
-      const modeKey = currentLocalGameMode === "themed" || currentLocalGameMode === "abc_themed"
+      const modeKey = String(currentLocalGameMode || "").startsWith("abc_")
+      ? "abc"
+      : currentLocalGameMode === "themed"
         ? "themed"
-        : currentLocalGameMode === "relax" || currentLocalGameMode === "abc_relax"
+        : currentLocalGameMode === "relax"
           ? "relax"
           : "blitz60";
       const modeStats = localStats.modeStats[modeKey] || createEmptyModeStats();
@@ -5724,7 +5731,29 @@ if (!supabaseClient) {
     return { gamesPlayed:official.length,totalCorrect,totalWrong,bestScore,bestTotal,bestPercent,longestStreak };
   }
 
+  function ensureAbcProfileCard() {
+    if (document.getElementById("profile-abc-title")) return;
+    const title = document.getElementById("profile-themed-title");
+    if (!title) return;
+    let card = title.parentElement;
+    while (card && !(card.querySelector?.("#themed-total-result") && card.querySelector?.("#themed-best-result"))) card = card.parentElement;
+    if (!card || !card.parentElement) return;
+    const clone = card.cloneNode(true);
+    const idMap = {
+      "profile-themed-title":"profile-abc-title", "profile-themed-copy":"profile-abc-copy",
+      "themed-total-result":"abc-total-result", "themed-total-percent":"abc-total-percent",
+      "themed-best-result":"abc-best-result", "themed-best-percent":"abc-best-percent",
+      "themed-games-played":"abc-games-played", "themed-longest-streak":"abc-longest-streak",
+      "themed-result-label":"abc-result-label", "themed-best-label":"abc-best-label",
+      "themed-games-label":"abc-games-label", "themed-streak-label":"abc-streak-label",
+      "themed-topics-chip":"abc-topics-chip"
+    };
+    clone.querySelectorAll("[id]").forEach(el => { if (idMap[el.id]) el.id = idMap[el.id]; });
+    card.insertAdjacentElement("afterend", clone);
+  }
+
   function updatePlayerStatsUI() {
+    ensureAbcProfileCard();
     const totalAnswered = localStats.totalCorrect + localStats.totalWrong;
     const average = totalAnswered ? Math.round((localStats.totalCorrect / totalAnswered) * 100) : 0;
     const totalQuestions = getTotalQuestionCount();
@@ -5733,6 +5762,7 @@ if (!supabaseClient) {
     const blitz = localStats.modeStats.blitz60;
     const relax = localStats.modeStats.relax;
     const themed = localStats.modeStats.themed;
+    const abc = localStats.modeStats.abc;
 
     const setText = (id, value) => {
       const el = document.getElementById(id);
@@ -5767,7 +5797,15 @@ if (!supabaseClient) {
     setModeStats("blitz", blitz);
     setModeStats("relax", relax);
     setModeStats("themed", themed);
+    setModeStats("abc", abc);
     setModeStats("daily30", getOnlineDaily30ProfileStats());
+    setText("profile-abc-title", "ABC");
+    setText("profile-abc-copy", currentLang === "en" ? "All ABC quiz variants together." : "Sve ABC vrste kviza zajedno.");
+    setText("abc-result-label", currentLang === "en" ? "Total result" : "Ukupni rezultat");
+    setText("abc-best-label", currentLang === "en" ? "Best game" : "Najbolja partija");
+    setText("abc-games-label", currentLang === "en" ? "Games" : "Partije");
+    setText("abc-streak-label", currentLang === "en" ? "Longest correct streak" : "Najduži niz točnih");
+    setText("abc-topics-chip", currentLang === "en" ? `${abc.themesPlayed.length} topics` : `${abc.themesPlayed.length} tema`);
     const daily30English = document.documentElement.lang === "en";
     setText("profile-daily30-title", daily30English ? "Daily 30" : "Dnevnih 30");
     setText("profile-daily30-copy", daily30English ? "Only Daily 30 quizzes played on their live day are counted." : "Broje se samo dnevni kvizovi odigrani na dan kada su aktivni.");
@@ -6807,6 +6845,18 @@ if (!supabaseClient) {
     return null;
   }
 
+  function getTrackingQuizMode() {
+    return isAbcMode() ? "abc" : currentMode;
+  }
+
+  function getTrackedQuestionText(question) {
+    if (isAbcMode() || question?.type === "abc") {
+      const topic = String(question?.topic || getTrackingTopic() || "Svaštara").trim();
+      return `ABC · ${topic} · ${question?.question || ""}`;
+    }
+    return question?.question || "";
+  }
+
   async function startQuizTracking() {
     if (!supabaseClient) return;
     /* Ako je prethodna igra ostala otvorena, označi je kao napuštenu. */
@@ -6829,7 +6879,7 @@ if (!supabaseClient) {
         .insert({
           user_id: userId,
           session_id: activeQuizSessionId,
-          quiz_mode: currentMode,
+          quiz_mode: getTrackingQuizMode(),
           topic: getTrackingTopic(),
           correct_answers: 0,
           wrong_answers: 0,
@@ -6861,10 +6911,10 @@ if (!supabaseClient) {
           session_id: activeQuizSessionId,
           user_id: userId,
           question_id: question.id != null ? String(question.id) : null,
-          question_text: question.question || "",
-          question_topic: question.topic || null,
-          question_type: question.type || null,
-          quiz_mode: currentMode,
+          question_text: getTrackedQuestionText(question),
+          question_topic: question.topic || getTrackingTopic() || null,
+          question_type: isAbcMode() ? "abc" : (question.type || null),
+          quiz_mode: getTrackingQuizMode(),
           selected_theme: getTrackingTopic(),
           user_answer: skipped ? null : (userAnswer || ""),
           correct_answer: answers[0] || null,
@@ -6900,7 +6950,7 @@ if (!supabaseClient) {
           question_text: question.question || "",
           correct_answer: answers[0] || null,
           question_topic: question.topic || null,
-          quiz_mode: currentMode,
+          quiz_mode: getTrackingQuizMode(),
           selected_theme: getTrackingTopic(),
           vote,
           language: currentLang
@@ -8226,8 +8276,11 @@ if (!supabaseClient) {
 
   /* ------------------ STRONGER RANDOM (SHUFFLED QUEUE) ------------------ */
 
+  let recentAbcCorrectKeys = [];
+
   function resetQuestionQueue() {
     questionQueue = [];
+    recentAbcCorrectKeys = [];
     queueMode = null;
     queueTheme = null;
   }
@@ -8297,6 +8350,24 @@ if (!supabaseClient) {
   // ✅ topic cooldown pick (NE koristi se u tematskom modu)
   function pickFromQueueRespectTopicCooldown() {
     if (questionQueue.length === 0) return null;
+
+    if (isAbcMode()) {
+      const blockedKey = recentAbcCorrectKeys.length >= 2 &&
+        recentAbcCorrectKeys[recentAbcCorrectKeys.length - 1] === recentAbcCorrectKeys[recentAbcCorrectKeys.length - 2]
+          ? recentAbcCorrectKeys[recentAbcCorrectKeys.length - 1]
+          : null;
+      let idx = questionQueue.length - 1;
+      if (blockedKey) {
+        const found = questionQueue.findLastIndex(q => String(q?.correctAnswerKey || "").toUpperCase() !== blockedKey);
+        if (found >= 0) idx = found;
+      }
+      const chosen = questionQueue.splice(idx, 1)[0] || null;
+      if (chosen) {
+        recentAbcCorrectKeys.push(String(chosen.correctAnswerKey || "").toUpperCase());
+        if (recentAbcCorrectKeys.length > 2) recentAbcCorrectKeys.shift();
+      }
+      return chosen;
+    }
 
     // Dnevnih 30 mora zadržati isti redoslijed za svakoga; u tematskom je ionako sve isti topic.
     if (currentMode === "daily30" || currentMode === "themed" || currentMode === "abc_themed") return questionQueue.pop();
@@ -9197,6 +9268,7 @@ feedbackNote.innerHTML = currentLang === "en"
     // Povijest ide obrnuto kronološki: najnovije odgovoreno/preskočeno pitanje je odmah ispod aktivnog pitanja.
     list.insertBefore(li, list.firstChild);
     list.scrollTop = 0;
+    document.body.classList.add("quiz-results-visible");
   }
 
   function clearHistoryList() {
