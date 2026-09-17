@@ -16,7 +16,7 @@ jobs:
           npm install playwright >/dev/null 2>&1
           npx playwright install chromium >/dev/null 2>&1
           python3 -m http.server 8000 >/tmp/server.log 2>&1 &
-          cat > /tmp/test.js <<'EOF'
+          cat > test-runtime.js <<'EOF'
           const { chromium } = require('playwright');
           (async()=>{
             const browser=await chromium.launch({headless:true});
@@ -25,16 +25,14 @@ jobs:
             page.on('pageerror',e=>console.log('PAGEERROR',e.stack||e.message));
             page.on('response',r=>{if(r.status()>=400) console.log('HTTP',r.status(),r.url())});
             await page.goto('http://127.0.0.1:8000/online-kviz.html',{waitUntil:'networkidle',timeout:120000});
-            await page.waitForTimeout(3000);
-            console.log('BODYCLASS',await page.locator('body').getAttribute('class'));
-            console.log('QUESTION',await page.locator('#question-text').textContent().catch(()=>null));
-            console.log('START_DISABLED',await page.locator('#btn-start').isDisabled().catch(()=>null));
-            console.log('MODE_COUNT',await page.locator('.mode-pill').count());
-            await page.locator('[data-mode="blitz60"]').click().catch(e=>console.log('BLITZCLICK',e.message));
-            await page.locator('#btn-start').click().catch(e=>console.log('STARTCLICK',e.message));
-            await page.waitForTimeout(1000);
-            console.log('AFTER_START_QUESTION',await page.locator('#question-text').textContent().catch(()=>null));
+            await page.waitForTimeout(2500);
+            console.log('QUESTION_BEFORE',await page.locator('#question-text').textContent().catch(()=>null));
+            console.log('STARTS',await page.locator('button').allTextContents());
+            const start=page.locator('#btn-start-quiz');
+            console.log('START_COUNT',await start.count());
+            if(await start.count()){console.log('START_DISABLED',await start.isDisabled());await start.click();await page.waitForTimeout(1000);}
+            console.log('QUESTION_AFTER',await page.locator('#question-text').textContent().catch(()=>null));
             await browser.close();
           })();
           EOF
-          node /tmp/test.js
+          node test-runtime.js
