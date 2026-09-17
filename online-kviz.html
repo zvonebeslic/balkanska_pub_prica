@@ -3479,7 +3479,7 @@ body.player-panel-open { overflow: hidden; }
           <div class="player-mode-stat"><div class="player-mode-stat-label" id="blitz-games-label">Odigrano partija</div><div class="player-mode-stat-value" id="blitz-games-played">0</div></div>
           <div class="player-mode-stat"><div class="player-mode-stat-label" id="blitz-streak-label">Najduži niz točnih</div><div class="player-mode-stat-value" id="blitz-longest-streak">0</div></div>
         </div>
-        <div class="player-blitz-rank" id="blitz-percentile-note" hidden></div>
+
       </section>
 
       <section class="player-mode-section player-mode-section--relax">
@@ -4332,7 +4332,7 @@ if (!supabaseClient) {
         comingSoon: "Uskoro",
         blitzRankLoading: "Uspoređujem tvoj Blitz rekord s ostalim odigranim partijama…",
         blitzRankNeedGame: "Završi barem jednu Blitz 60s partiju kako bi vidio usporedbu.",
-        blitzRankTemplate: "Među najboljih {top}% odigranih Blitz partija · usporedba s {count} rezultata",
+
         blitzRankUnavailable: "Usporedba Blitz rezultata trenutačno nije dostupna.",
         sharePrompt: "Sjetili ste se nekoga na ovom pitanju? Pošaljite mu i provjerite zna li odgovor.",
         shareButton: "📤 Pošalji pitanje",
@@ -5810,7 +5810,7 @@ if (!supabaseClient) {
   }
 
   function updateBlitzPercentileNote() {
-    const note = document.getElementById("blitz-percentile-note");
+
     if (!note) return;
     const bestScore = localStats.modeStats.blitz60.bestScore;
 
@@ -5862,7 +5862,7 @@ if (!supabaseClient) {
       blitzPercentileCache = { bestScore, unavailable: true };
     } finally {
       blitzPercentileLoading = false;
-      const note = document.getElementById("blitz-percentile-note");
+
       if (blitzPercentileCache?.unavailable && note) {
         note.hidden = false;
         note.textContent = playerText("blitzRankUnavailable");
