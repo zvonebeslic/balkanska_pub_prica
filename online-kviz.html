@@ -5738,29 +5738,7 @@ if (!supabaseClient) {
     return { gamesPlayed:official.length,totalCorrect,totalWrong,bestScore,bestTotal,bestPercent,longestStreak };
   }
 
-  function ensureAbcProfileCard() {
-    if (document.getElementById("profile-abc-title")) return;
-    const title = document.getElementById("profile-themed-title");
-    if (!title) return;
-    let card = title.parentElement;
-    while (card && !(card.querySelector?.("#themed-total-result") && card.querySelector?.("#themed-best-result"))) card = card.parentElement;
-    if (!card || !card.parentElement) return;
-    const clone = card.cloneNode(true);
-    const idMap = {
-      "profile-themed-title":"profile-abc-title", "profile-themed-copy":"profile-abc-copy",
-      "themed-total-result":"abc-total-result", "themed-total-percent":"abc-total-percent",
-      "themed-best-result":"abc-best-result", "themed-best-percent":"abc-best-percent",
-      "themed-games-played":"abc-games-played", "themed-longest-streak":"abc-longest-streak",
-      "themed-result-label":"abc-result-label", "themed-best-label":"abc-best-label",
-      "themed-games-label":"abc-games-label", "themed-streak-label":"abc-streak-label",
-      "themed-topics-chip":"abc-topics-chip"
-    };
-    clone.querySelectorAll("[id]").forEach(el => { if (idMap[el.id]) el.id = idMap[el.id]; });
-    card.insertAdjacentElement("afterend", clone);
-  }
-
   function updatePlayerStatsUI() {
-    ensureAbcProfileCard();
     const totalAnswered = localStats.totalCorrect + localStats.totalWrong;
     const average = totalAnswered ? Math.round((localStats.totalCorrect / totalAnswered) * 100) : 0;
     const totalQuestions = getTotalQuestionCount();
@@ -5804,15 +5782,7 @@ if (!supabaseClient) {
     setModeStats("blitz", blitz);
     setModeStats("relax", relax);
     setModeStats("themed", themed);
-    setModeStats("abc", abc);
     setModeStats("daily30", getOnlineDaily30ProfileStats());
-    setText("profile-abc-title", "ABC");
-    setText("profile-abc-copy", currentLang === "en" ? "All ABC quiz variants together." : "Sve ABC vrste kviza zajedno.");
-    setText("abc-result-label", currentLang === "en" ? "Total result" : "Ukupni rezultat");
-    setText("abc-best-label", currentLang === "en" ? "Best game" : "Najbolja partija");
-    setText("abc-games-label", currentLang === "en" ? "Games" : "Partije");
-    setText("abc-streak-label", currentLang === "en" ? "Longest correct streak" : "Najduži niz točnih");
-    setText("abc-topics-chip", currentLang === "en" ? `${abc.themesPlayed.length} topics` : `${abc.themesPlayed.length} tema`);
     const daily30English = document.documentElement.lang === "en";
     setText("profile-daily30-title", daily30English ? "Daily 30" : "Dnevnih 30");
     setText("profile-daily30-copy", daily30English ? "Only Daily 30 quizzes played on their live day are counted." : "Broje se samo dnevni kvizovi odigrani na dan kada su aktivni.");
