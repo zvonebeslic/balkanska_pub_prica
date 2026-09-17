@@ -10,23 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check inline JavaScript syntax
+      - name: Check executable inline JavaScript syntax
         shell: python
         run: |
           from pathlib import Path
-          import re, subprocess, tempfile, sys
+          import re, subprocess
           s=Path('online-kviz.html').read_text(encoding='utf-8')
-          scripts=re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>',s,re.S|re.I)
-          print('inline scripts',len(scripts))
+          blocks=re.findall(r'<script([^>]*)>(.*?)</script>',s,re.S|re.I)
           bad=[]
-          for i,code in enumerate(scripts):
-            if not code.strip(): continue
+          for i,(attrs,code) in enumerate(blocks):
+            if 'application/ld+json' in attrs.lower() or not code.strip(): continue
             p=Path(f'/tmp/script-{i}.js'); p.write_text(code,encoding='utf-8')
             r=subprocess.run(['node','--check',str(p)],capture_output=True,text=True)
             if r.returncode:
               print('BAD SCRIPT',i); print(r.stderr); bad.append(i)
           if bad: raise SystemExit('Syntax errors in scripts '+str(bad))
-          print('All inline scripts parse OK')
+          print('All executable inline scripts parse OK')
       - name: Check duplicate IDs
         shell: python
         run: |
