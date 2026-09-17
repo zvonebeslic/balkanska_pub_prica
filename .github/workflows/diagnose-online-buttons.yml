@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check executable inline JavaScript syntax
+      - name: Check inline JavaScript and JSON files
         shell: python
         run: |
           from pathlib import Path
-          import re, subprocess
+          import re, subprocess, json
           s=Path('online-kviz.html').read_text(encoding='utf-8')
           blocks=re.findall(r'<script([^>]*)>(.*?)</script>',s,re.S|re.I)
           bad=[]
@@ -26,12 +26,12 @@ jobs:
               print('BAD SCRIPT',i); print(r.stderr); bad.append(i)
           if bad: raise SystemExit('Syntax errors in scripts '+str(bad))
           print('All executable inline scripts parse OK')
-      - name: Check duplicate IDs
-        shell: python
-        run: |
-          from pathlib import Path
-          import re,collections
-          s=Path('online-kviz.html').read_text(encoding='utf-8')
-          ids=re.findall(r'\bid=["\']([^"\']+)["\']',s,re.I)
-          d=[(k,v) for k,v in collections.Counter(ids).items() if v>1]
-          print('duplicate ids:',d[:100])
+          files=['questions-blitz.json','FloraFauna.json','Film.json','Glazba.json','AntickiRim.json','AmerickiPredsjednici.json','Zemljopis.json','Nogomet.json','Znanost.json','Knjizevnost.json','povijest.json','Gaming.json','Moreplovci.json','Sport.json','Svastara.json']
+          files += list(map(str,Path('ABC pitanja').glob('*.json')))
+          for f in files:
+            try:
+              data=json.loads(Path(f).read_text(encoding='utf-8'))
+              if not isinstance(data,list): raise ValueError('root is not list')
+              print('OK JSON',f,len(data))
+            except Exception as e:
+              print('BAD JSON',f,repr(e)); raise
