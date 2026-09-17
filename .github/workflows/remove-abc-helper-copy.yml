@@ -1,0 +1,45 @@
+name: Remove ABC helper sentence
+on:
+  push:
+    paths:
+      - '.github/workflows/remove-abc-helper-copy.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove helper sentence
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          p=Path('online-kviz.html')
+          s=p.read_text(encoding='utf-8')
+          needles=[
+            'Odaberi odgovor A, B ili C. Miješani načini uključuju i dodatna pitanja koja nisu zasebne tematike.',
+            'Odaberi odgovor A, B ili C. Mješani načini uključuju i dodatna pitanja koja nisu zasebne tematike.'
+          ]
+          found=False
+          for needle in needles:
+              if needle in s:
+                  s=s.replace(needle,'')
+                  found=True
+          # Remove now-empty paragraph/span if the text was its only content.
+          s=re.sub(r'<(?:p|div|span)([^>]*)>\s*</(?:p|div|span)>', lambda m: '' if ('abc' in m.group(1).lower() or 'helper' in m.group(1).lower() or 'hint' in m.group(1).lower()) else m.group(0), s, flags=re.I)
+          if not found:
+              raise SystemExit('ABC helper sentence not found')
+          p.write_text(s,encoding='utf-8')
+      - name: Validate
+        run: |
+          ! grep -q 'Miješani načini uključuju' online-kviz.html
+          ! grep -q 'Mješani načini uključuju' online-kviz.html
+      - name: Commit
+        run: |
+          git config user.name 'KvizToGo automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add online-kviz.html
+          git rm .github/workflows/remove-abc-helper-copy.yml
+          git commit -m 'Remove ABC mixed-mode helper sentence'
+          git push
