@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ABC pitanja | KvizToGo</title>
+<meta name="description" content="KvizToGo ABC kviz s tri ponuđena odgovora iz raznih tema.">
+<style>
+:root{--bg:#081322;--card:#101d30;--card2:#15263d;--text:#f7fbff;--muted:#9fb1c7;--blue:#2f80ff;--green:#22c55e;--red:#ef4444;--border:rgba(170,190,214,.22)}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,rgba(47,128,255,.18),transparent 34%),radial-gradient(circle at 90% 90%,rgba(34,197,94,.12),transparent 34%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}.header{height:66px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border);background:rgba(8,19,34,.88);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}.logo{font-weight:950;font-size:1.55rem;letter-spacing:-.06em;text-decoration:none;color:#fff}.logo .to{color:#55a3ff}.logo .go{color:#34d27a}.back{max-width:980px;margin:16px auto 0;padding:0 16px}.back a{color:#dceaff;text-decoration:none;font-weight:800}.wrap{max-width:980px;margin:auto;padding:18px 16px 60px}.hero h1{font-size:clamp(1.8rem,5vw,3rem);margin:.25rem 0}.hero p{color:var(--muted);line-height:1.55;margin:.3rem 0 1.2rem}.selector{background:rgba(16,29,48,.86);border:1px solid var(--border);border-radius:22px;padding:14px;margin-bottom:16px}.selector summary{cursor:pointer;list-style:none;font-weight:900;display:flex;align-items:center;gap:8px}.selector summary::-webkit-details-marker{display:none}.dot{width:9px;height:9px;border:1.5px solid currentColor;border-radius:50%;display:inline-block}.mode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}.mode{border:1px solid var(--border);border-radius:15px;background:rgba(255,255,255,.05);color:#fff;padding:12px;text-align:left;font-weight:850;cursor:pointer}.mode.active{border-color:#55a3ff;background:rgba(47,128,255,.15);box-shadow:0 0 0 1px rgba(85,163,255,.16)}.mode.active:before{content:"● ";color:#55a3ff}.card{background:linear-gradient(145deg,rgba(22,39,63,.98),rgba(13,25,43,.98));border:1px solid var(--border);border-radius:24px;padding:clamp(16px,4vw,28px);box-shadow:0 20px 60px rgba(0,0,0,.28)}.top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.topic{font-size:.78rem;color:#b8c9dd;font-weight:850}.counter{font-size:.76rem;color:var(--muted);white-space:nowrap}.question{font-size:clamp(1.25rem,4vw,1.8rem);font-weight:900;line-height:1.35;margin:16px 0 20px}.answers{display:grid;gap:10px}.answer{width:100%;display:flex;gap:12px;align-items:center;text-align:left;padding:14px;border-radius:16px;border:1px solid var(--border);background:rgba(255,255,255,.055);color:#fff;cursor:pointer;font-size:1rem;font-weight:760}.answer:hover{background:rgba(47,128,255,.11)}.answer .letter{width:34px;height:34px;display:grid;place-items:center;flex:0 0 34px;border-radius:50%;background:rgba(47,128,255,.16);border:1px solid rgba(85,163,255,.45);font-weight:950}.answer.correct{border-color:rgba(34,197,94,.75);background:rgba(34,197,94,.16)}.answer.wrong{border-color:rgba(239,68,68,.75);background:rgba(239,68,68,.14)}.answer:disabled{cursor:default}.feedback{min-height:28px;margin-top:13px;font-weight:850}.controls{display:flex;justify-content:space-between;gap:10px;margin-top:16px}.btn{border:1px solid var(--border);border-radius:999px;padding:10px 16px;background:rgba(255,255,255,.07);color:#fff;font-weight:850;cursor:pointer}.btn.primary{background:linear-gradient(135deg,#2f80ff,#236bd4);border-color:#55a3ff}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:.84rem}.stats strong{color:#fff}.loading{text-align:center;color:var(--muted);padding:28px}.error{color:#ffc1c1}.hidden{display:none!important}@media(max-width:620px){.mode-grid{grid-template-columns:1fr}.controls{flex-direction:column}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="header"><a class="logo" href="index.html">Kviz<span class="to">To</span><span class="go">Go</span></a></header>
+<div class="back"><a href="online-kviz.html">← Natrag</a></div>
+<main class="wrap">
+<section class="hero"><h1>ABC pitanja</h1><p>Odaberi način igre ili temu, zatim pronađi točan odgovor među tri ponuđena. Jedan odgovor je točan, dva vrebaju iz grmlja.</p></section>
+<details class="selector" open><summary><span class="dot"></span> Odaberi ABC kviz</summary><div class="mode-grid" id="modes"></div></details>
+<section class="card"><div id="loading" class="loading">Učitavam pitanja…</div><div id="game" class="hidden"><div class="top"><div class="topic" id="topic"></div><div class="counter" id="counter"></div></div><div class="question" id="question"></div><div class="answers" id="answers"></div><div class="feedback" id="feedback"></div><div class="controls"><button class="btn" id="skip">Preskoči pitanje</button><button class="btn primary" id="next" disabled>Sljedeće pitanje</button></div><div class="stats"><span>Točno: <strong id="correct">0</strong></span><span>Netočno: <strong id="wrong">0</strong></span><span>Odigrano: <strong id="played">0</strong></span></div></div></section>
+</main>
+<script>
+const BASE='ABC%20pitanja/';
+const MODES=[
+ {id:'blitz',label:'Blitz 60s',files:['questions-blitz.json','Svastara.json']},
+ {id:'relax',label:'Bez vremena',files:['questions-blitz.json','Svastara.json']},
+ {id:'AntickiRim',label:'Antički Rim',files:['AntickiRim.json']},
+ {id:'AmerickiPredsjednici',label:'Američki predsjednici',files:['AmerickiPredsjednici.json']},
+ {id:'Zemljopis',label:'Zemljopis',files:['Zemljopis.json']},
+ {id:'Nogomet',label:'Nogomet',files:['Nogomet.json']},
+ {id:'FloraFauna',label:'Flora i fauna',files:['FloraFauna.json']},
+ {id:'Film',label:'Film',files:['Film.json']},
+ {id:'Znanost',label:'Znanost',files:['Znanost.json']},
+ {id:'Glazba',label:'Glazba',files:['Glazba.json']},
+ {id:'Knjizevnost',label:'Književnost',files:['Knjizevnost.json']},
+ {id:'Povijest',label:'Povijest',files:['povijest.json']},
+ {id:'Gaming',label:'Svijet Gaminga',files:['Gaming.json']},
+ {id:'Moreplovci',label:'Moreplovci',files:['Moreplovci.json']},
+ {id:'Sport',label:'Sport',files:['Sport.json']}
+];
+let pool=[],current=null,index=0,correct=0,wrong=0,answered=false,mode=MODES[0],timer=null,timeLeft=60;
+const $=id=>document.getElementById(id),modes=$('modes'),game=$('game'),loading=$('loading');
+MODES.forEach((m,i)=>{const b=document.createElement('button');b.className='mode'+(i===0?' active':'');b.textContent=m.label;b.onclick=()=>selectMode(m,b);modes.appendChild(b)});
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function valid(q){return q&&q.question&&q.answers&&['A','B','C'].every(k=>typeof q.answers[k]==='string')&&['A','B','C'].includes(String(q.correct_answer||'').toUpperCase())}
+async function selectMode(m,button){mode=m;document.querySelectorAll('.mode').forEach(x=>x.classList.remove('active'));button.classList.add('active');clearInterval(timer);loading.className='loading';loading.textContent='Učitavam '+m.label+'…';game.classList.add('hidden');try{const sets=await Promise.all(m.files.map(async f=>{const r=await fetch(BASE+encodeURIComponent(f).replace(/%2F/g,'/'),{cache:'no-store'});if(!r.ok)throw new Error(f);return r.json()}));pool=shuffle(sets.flat().filter(valid));if(!pool.length)throw new Error('Nema pitanja');index=correct=wrong=0;updateStats();game.classList.remove('hidden');loading.classList.add('hidden');nextQuestion();if(m.id==='blitz')startTimer()}catch(e){loading.className='loading error';loading.textContent='Pitanja se trenutačno ne mogu učitati. Pokušaj ponovno.'}}
+function startTimer(){timeLeft=60;timer=setInterval(()=>{timeLeft--;if(timeLeft<=0){clearInterval(timer);finish()}},1000)}
+function nextQuestion(){if(!pool.length)return;answered=false;current=pool[index%pool.length];$('topic').textContent=mode.label+(mode.id==='blitz'?' · '+timeLeft+'s':'');$('counter').textContent='Pitanje '+(index+1);$('question').textContent=current.question;$('feedback').textContent='';$('next').disabled=true;const box=$('answers');box.innerHTML='';['A','B','C'].forEach(k=>{const b=document.createElement('button');b.className='answer';b.innerHTML='<span class="letter">'+k+'</span><span></span>';b.lastElementChild.textContent=current.answers[k];b.onclick=()=>answer(k,b);box.appendChild(b)});index++}
+function answer(k,b){if(answered)return;answered=true;const good=String(current.correct_answer).toUpperCase();document.querySelectorAll('.answer').forEach((x,i)=>{x.disabled=true;const letter=['A','B','C'][i];if(letter===good)x.classList.add('correct')});if(k===good){correct++;$('feedback').textContent='✓ Točno!'}else{wrong++;b.classList.add('wrong');$('feedback').textContent='✗ Točan odgovor je '+good+': '+current.answers[good]}$('next').disabled=false;updateStats()}
+function updateStats(){$('correct').textContent=correct;$('wrong').textContent=wrong;$('played').textContent=correct+wrong}
+function finish(){document.querySelectorAll('.answer').forEach(x=>x.disabled=true);$('feedback').textContent='Vrijeme! Rezultat: '+correct+' točnih od '+(correct+wrong)+' odgovorenih.';$('next').disabled=true}
+$('next').onclick=nextQuestion;$('skip').onclick=()=>{if(!answered){wrong++;updateStats()}nextQuestion()};
+selectMode(MODES[0],document.querySelector('.mode'));
+</script>
+</body>
+</html>
