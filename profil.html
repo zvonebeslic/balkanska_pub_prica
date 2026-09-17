@@ -861,22 +861,6 @@
     radial-gradient(circle at top right, rgba(250, 204, 21, 0.10), transparent 42%),
     rgba(255, 255, 255, 0.045);
 }
-
-.player-blitz-rank {
-  margin-top: 0.6rem;
-  padding: 0.52rem 0.62rem;
-  border-radius: 12px;
-  border: 1px solid rgba(47, 128, 255, 0.30);
-  background: rgba(47, 128, 255, 0.09);
-  color: #d8e8ff;
-  font-size: 0.68rem;
-  line-height: 1.4;
-}
-
-.player-blitz-rank[hidden] {
-  display: none;
-}
-
 .player-collection-card {
   border-color: rgba(34, 197, 94, 0.38);
   background:
@@ -2747,7 +2731,6 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
         profileStats=normalizePlayerStats(merged.stats);profileAtomic=normalizePlayerAtomic(merged.atomicJokers);profileQuestionTotal=merged.questionTotal;localStorage.setItem(keys.stats,JSON.stringify(profileStats));localStorage.setItem(keys.atomic,JSON.stringify(profileAtomic));localStorage.removeItem(keys.dirty);if(!migrationDone){guest.keys.forEach(key=>localStorage.removeItem(key));localStorage.removeItem(PLAYER_ATOMIC_BASE_KEY);localStorage.setItem(keys.migration,new Date().toISOString());}setProfileStatus(guest.sources.length?playerProgressText("Gostujući napredak uspješno je prenesen na tvoj račun.","Guest progress was successfully moved to your account."):"");return true;
       }catch(error){console.error("Trajni profil nije učitan:",error);profileStats=localStatsValue;profileAtomic=localAtomicValue;profileQuestionTotal=Math.max(DEFAULT_QUESTION_TOTAL,profileStats.discoveredQuestionIds.length);setProfileStatus(playerProgressText("Za trajno spremanje napretka treba uključiti Supabase tablicu player_progress. Lokalna kopija je i dalje sigurna na ovom uređaju.","The Supabase player_progress table must be enabled for permanent progress. The local copy is still safe on this device."),true);return false;}finally{profileProgressReady=true;document.getElementById("profile-progress-area")?.setAttribute("aria-busy","false");renderProfileDashboard();}}
 
-    async function updateProfileBlitzPercentile(){const note=document.getElementById("blitz-percentile-note"),best=profileStats.modeStats.blitz60.bestScore;if(!note)return;note.hidden=false;if(!best){note.textContent=playerProgressText("Završi barem jednu Blitz 60s partiju za usporedbu.","Finish at least one Blitz 60s game to see your comparison.");return;}if(profileBlitzPercentile?.best===best){note.textContent=profileBlitzPercentile.text;return;}note.textContent=playerProgressText("Uspoređujem Blitz rekord…","Comparing the Blitz record…");try{const{data,error}=await supabaseClient.from("quiz_plays").select("correct_answers").eq("quiz_mode","blitz60").eq("completed",true).not("correct_answers","is",null).limit(5000);if(error)throw error;const scores=(data||[]).map(x=>Number(x.correct_answers)).filter(Number.isFinite);if(!scores.length)throw new Error("No scores");const better=scores.filter(score=>score>best).length,top=Math.max(1,Math.min(100,Math.round((better+1)/scores.length*100))),text=playerProgressText(`Među najboljih ${top}% odigranih Blitz rezultata · usporedba s ${scores.length} rezultata`,`Among the top ${top}% of played Blitz results · compared with ${scores.length} results`);profileBlitzPercentile={best,text};note.textContent=text;}catch(error){note.textContent=playerProgressText("Blitz usporedba trenutačno nije dostupna.","The Blitz comparison is currently unavailable.");}}
 
     function initProfileProgressInteractions(){document.getElementById("player-achievements-toggle")?.addEventListener("click",()=>{const button=document.getElementById("player-achievements-toggle"),details=document.getElementById("player-achievements-details"),open=button.getAttribute("aria-expanded")!=="true";button.setAttribute("aria-expanded",String(open));details.classList.toggle("open",open);});document.getElementById("player-levels-toggle")?.addEventListener("click",()=>{const button=document.getElementById("player-levels-toggle"),details=document.getElementById("player-levels-details"),open=button.getAttribute("aria-expanded")!=="true";button.setAttribute("aria-expanded",String(open));details.classList.toggle("open",open);button.textContent=open?playerProgressText("Sakrij razine","Hide levels"):playerProgressText("Pogledaj sve razine","View all levels");});document.getElementById("player-games-toggle")?.addEventListener("click",()=>{const button=document.getElementById("player-games-toggle"),details=document.getElementById("player-games-details"),open=button.getAttribute("aria-expanded")!=="true";button.setAttribute("aria-expanded",String(open));details.classList.toggle("open",open);setProgressText("player-games-toggle-label",open?playerProgressText("Sakrij odigrane kvizove","Hide played quizzes"):playerProgressText("Pregled odigranih kvizova","View played quizzes"));});}
 
@@ -3427,6 +3410,10 @@ function getInviteUrl() {
     });
 
     document.getElementById("save-quiz-edit-btn")?.addEventListener("click", saveQuizEdit);
-  </script>
+  
+function normalizeProfileMode(mode) {
+  return mode === "abc_blitz" || mode === "abc_relax" || mode === "abc_themed" ? "abc" : mode;
+}
+</script>
 </body>
 </html>
