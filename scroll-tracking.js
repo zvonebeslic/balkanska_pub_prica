@@ -32,10 +32,19 @@
     let s={};try{s=JSON.parse(localStorage.getItem(localStatsKey)||'null')||{};}catch(_){}
     s.gamesPlayed=Math.max(0,Number(s.gamesPlayed)||0);s.totalCorrect=Math.max(0,Number(s.totalCorrect)||0);s.totalWrong=Math.max(0,Number(s.totalWrong)||0);s.bestScore=Math.max(0,Number(s.bestScore)||0);s.bestPercent=Math.max(0,Number(s.bestPercent)||0);s.longestStreak=Math.max(0,Number(s.longestStreak)||0);s.modeStats=s.modeStats&&typeof s.modeStats==='object'?s.modeStats:{};s.modeStats.scroll={...emptyMode(),...(s.modeStats.scroll||{})};return s;
   }
-  function saveLocalStats(s){if(!localStatsKey)return;s.updatedAt=new Date().toISOString();try{localStorage.setItem(localStatsKey,JSON.stringify(s));}catch(_){} }
+  function saveLocalStats(s){
+    if(!localStatsKey)return;
+    s.updatedAt=new Date().toISOString();
+    try{
+      localStorage.setItem(localStatsKey,JSON.stringify(s));
+      /* online-kviz za prijavljenog igraca inace pri povratku ucita stariji
+         Supabase player_progress i pregazi promjene napravljene na Scroll stranici. */
+      if(userId) localStorage.setItem('kviztogo_progress_dirty_v1:'+userId,String(Date.now()));
+    }catch(_){}
+  }
   async function resolveLocalStatsKey(){
     let uid=null;try{const {data}=await client.auth.getUser();uid=data?.user?.id||null;}catch(_){}
-    if(uid){localStatsKey=LOCAL_STATS_BASE+':'+uid;return;}
+    if(uid){userId=uid;localStatsKey=LOCAL_STATS_BASE+':'+uid;return;}
     let gid=null;try{gid=JSON.parse(localStorage.getItem('kviztogo_guest_identity_v1')||'null')?.id||null;}catch(_){}
     localStatsKey=gid?LOCAL_STATS_BASE+':guest:'+gid:LOCAL_STATS_BASE+':guest';
   }
