@@ -179,7 +179,7 @@
     const card = e.target.closest('.q'); if (!card) return;
     if (e.target.closest('.more')) { learnMore += 1; flush(); }
     if (e.target.closest('.share')) { shares += 1; flush(); }
-    if (e.target.closest('.ok')) setTimeout(() => { const s=cardState.get(card)||{}; if(s.answered||!card.dataset.matchReason)return; s.answered=true; cardState.set(card,s); if(card.dataset.matchReason==='wrong')wrong+=1; else correct+=1; saveQuestion(card,'answered'); flush(); },0);
+    if (e.target.closest('.ok')) setTimeout(() => { const s=cardState.get(card)||{}; if(s.answered||!card.dataset.matchReason)return; s.answered=true; cardState.set(card,s); if(card.dataset.matchReason==='wrong'){wrong+=1;registerLocalScrollAnswer(false);}else{correct+=1;registerLocalScrollAnswer(true);} saveQuestion(card,'answered'); flush(); },0);
   }, true);
 
   document.addEventListener('keydown', e => {
