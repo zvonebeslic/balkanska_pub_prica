@@ -1,5 +1,7 @@
 name: Inline ABC integration
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
