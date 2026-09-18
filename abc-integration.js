@@ -78,6 +78,20 @@
   }
   function renderProfile(){addSection();const a={...empty(),...(currentStats().modeStats.abc||{})},total=a.totalCorrect+a.totalWrong,p=total?Math.round(a.totalCorrect*100/total):0;const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};set("abc-total-result",`${a.totalCorrect}/${total}`);set("abc-total-percent",`${p}% uspješnosti`);set("abc-best-result",`${a.bestScore}/${a.bestTotal}`);set("abc-best-percent",`${Math.round(a.bestPercent||0)}% uspješnosti`);set("abc-games-played",String(a.gamesPlayed));set("abc-longest-streak",String(a.longestStreak));}
 
+  function addScrollSection(){
+    if(document.getElementById("profile-scroll-section"))return;
+    addSection();
+    const abc=document.getElementById("profile-abc-section");if(!abc)return;
+    const s=document.createElement("section");s.id="profile-scroll-section";s.className="player-mode-section player-mode-section--scroll";
+    s.innerHTML=`<div class="player-section-heading"><div><div class="player-section-title">Scrollanjem do znanja</div><div class="player-section-copy">Zasebna statistika Scroll igre. Broje se samo pitanja na koja si odgovorio.</div></div><span class="player-section-chip">SCROLL</span></div><div class="player-mode-stats"><div class="player-mode-stat"><div class="player-mode-stat-label">Ukupni rezultat</div><div class="player-mode-stat-value" id="scroll-total-result">0/0</div><div class="player-stat-sub" id="scroll-total-percent">0% uspješnosti</div></div><div class="player-mode-stat"><div class="player-mode-stat-label">Najbolja partija</div><div class="player-mode-stat-value" id="scroll-best-result">0/0</div><div class="player-stat-sub" id="scroll-best-percent">0% uspješnosti</div></div><div class="player-mode-stat"><div class="player-mode-stat-label">Odigrano partija</div><div class="player-mode-stat-value" id="scroll-games-played">0</div></div><div class="player-mode-stat"><div class="player-mode-stat-label">Najduži niz točnih</div><div class="player-mode-stat-value" id="scroll-longest-streak">0</div></div></div>`;
+    abc.insertAdjacentElement("afterend",s);
+  }
+  function renderScrollProfile(){
+    addScrollSection();const a={...empty(),...(currentStats().modeStats?.scroll||{})},total=a.totalCorrect+a.totalWrong,p=total?Math.round(a.totalCorrect*100/total):0;
+    const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+    set("scroll-total-result",`${a.totalCorrect}/${total}`);set("scroll-total-percent",`${p}% uspješnosti`);set("scroll-best-result",`${a.bestScore}/${a.bestTotal}`);set("scroll-best-percent",`${Math.round(a.bestPercent||0)}% uspješnosti`);set("scroll-games-played",String(a.gamesPlayed));set("scroll-longest-streak",String(a.longestStreak));
+  }
+
   /* Dodatne ABC krune idu U postojecu grupu "Odigrane ABC partije",
      istim karticama, SVG krunom i stilom kao sve ostale krune. */
   function mergeAbcCrowns(){
@@ -108,7 +122,7 @@
   }
 
   function history(){const l=document.getElementById('history-list');if(!l)return;const show=()=>{if(l.children.length){document.body.classList.add('quiz-results-visible');const s=l.closest('.sidebar-card');if(s)s.style.display='flex';}};new MutationObserver(show).observe(l,{childList:true});show();}
-  function refreshAbcProfile(){renderProfile();mergeAbcCrowns();}
+  function refreshAbcProfile(){renderProfile();renderScrollProfile();mergeAbcCrowns();}
   function init(){
     installOrder();refreshAbcProfile();history();
     const c=document.getElementById('achievement-groups');
@@ -118,8 +132,8 @@
     let lastSnapshot="";
     window.setInterval(()=>{
       const s=currentStats();
-      const a=s?.modeStats?.abc||{};
-      const snapshot=JSON.stringify([a.gamesPlayed,a.totalCorrect,a.totalWrong,a.bestScore,a.bestTotal,a.bestPercent,a.longestStreak,s?.updatedAt||""]);
+      const a=s?.modeStats?.abc||{},scroll=s?.modeStats?.scroll||{};
+      const snapshot=JSON.stringify([a.gamesPlayed,a.totalCorrect,a.totalWrong,a.bestScore,a.bestTotal,a.bestPercent,a.longestStreak,scroll.gamesPlayed,scroll.totalCorrect,scroll.totalWrong,scroll.bestScore,scroll.bestTotal,scroll.bestPercent,scroll.longestStreak,s?.updatedAt||""]);
       if(snapshot!==lastSnapshot){lastSnapshot=snapshot;refreshAbcProfile();}
     },500);
   }
