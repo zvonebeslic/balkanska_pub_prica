@@ -19,6 +19,39 @@
   let running = false;
   const cardState = new WeakMap();
 
+  /* Lokalni profil: Scroll je jedna zasebna vrsta igre, ali odgovorena pitanja
+     ulaze i u ukupnu statistiku. Samo pregledana/skrolana pitanja se ne broje. */
+  const LOCAL_STATS_BASE = 'kviztogo_player_stats_v1';
+  let localStatsKey = null;
+  let localScrollStreak = 0;
+  let localScrollCorrect = 0;
+  let localScrollWrong = 0;
+
+  function emptyMode(){return {gamesPlayed:0,totalCorrect:0,totalWrong:0,bestScore:0,bestTotal:0,bestPercent:0,longestStreak:0,themesPlayed:[],topicStats:{}};}
+  function getLocalStats(){
+    let s={};try{s=JSON.parse(localStorage.getItem(localStatsKey)||'null')||{};}catch(_){}
+    s.gamesPlayed=Math.max(0,Number(s.gamesPlayed)||0);s.totalCorrect=Math.max(0,Number(s.totalCorrect)||0);s.totalWrong=Math.max(0,Number(s.totalWrong)||0);s.bestScore=Math.max(0,Number(s.bestScore)||0);s.bestPercent=Math.max(0,Number(s.bestPercent)||0);s.longestStreak=Math.max(0,Number(s.longestStreak)||0);s.modeStats=s.modeStats&&typeof s.modeStats==='object'?s.modeStats:{};s.modeStats.scroll={...emptyMode(),...(s.modeStats.scroll||{})};return s;
+  }
+  function saveLocalStats(s){if(!localStatsKey)return;s.updatedAt=new Date().toISOString();try{localStorage.setItem(localStatsKey,JSON.stringify(s));}catch(_){} }
+  async function resolveLocalStatsKey(){
+    let uid=null;try{const {data}=await client.auth.getUser();uid=data?.user?.id||null;}catch(_){}
+    if(uid){localStatsKey=LOCAL_STATS_BASE+':'+uid;return;}
+    let gid=null;try{gid=JSON.parse(localStorage.getItem('kviztogo_guest_identity_v1')||'null')?.id||null;}catch(_){}
+    localStatsKey=gid?LOCAL_STATS_BASE+':guest:'+gid:LOCAL_STATS_BASE+':guest';
+  }
+  async function registerLocalScrollStart(){
+    await resolveLocalStatsKey();localScrollStreak=0;localScrollCorrect=0;localScrollWrong=0;
+    const s=getLocalStats();s.gamesPlayed+=1;s.modeStats.scroll.gamesPlayed=Math.max(0,Number(s.modeStats.scroll.gamesPlayed)||0)+1;saveLocalStats(s);
+  }
+  function registerLocalScrollAnswer(isCorrect){
+    if(!localStatsKey)return;const s=getLocalStats(),m=s.modeStats.scroll;
+    if(isCorrect){s.totalCorrect+=1;m.totalCorrect+=1;localScrollCorrect+=1;localScrollStreak+=1;s.longestStreak=Math.max(s.longestStreak,localScrollStreak);m.longestStreak=Math.max(Number(m.longestStreak)||0,localScrollStreak);}else{s.totalWrong+=1;m.totalWrong+=1;localScrollWrong+=1;localScrollStreak=0;}
+    const total=localScrollCorrect+localScrollWrong,pct=total?Math.round(localScrollCorrect/total*100):0;
+    const better=localScrollCorrect>(Number(m.bestScore)||0)||(localScrollCorrect===(Number(m.bestScore)||0)&&pct>(Number(m.bestPercent)||0))||(localScrollCorrect===(Number(m.bestScore)||0)&&pct===(Number(m.bestPercent)||0)&&total>(Number(m.bestTotal)||0));
+    if(better){m.bestScore=localScrollCorrect;m.bestTotal=total;m.bestPercent=pct;}
+    s.bestScore=Math.max(s.bestScore,localScrollCorrect);s.bestPercent=Math.max(s.bestPercent,pct);s.modeStats.scroll=m;saveLocalStats(s);
+  }
+
   function visitorId() {
     try {
       const saved = JSON.parse(localStorage.getItem('kviztogo_guest_identity_v1') || 'null');
@@ -51,6 +84,7 @@
 
   async function start(topic, sharedEntry = false) {
     await finish(false);
+    await registerLocalScrollStart();
     activeTopic = topic;
     sessionId = 'scroll-' + crypto.randomUUID();
     activeSeconds = viewed = scrolled = correct = wrong = learnMore = shares = 0;
@@ -150,7 +184,7 @@
 
   document.addEventListener('keydown', e => {
     if (e.key !== 'Enter') return; const card=e.target.closest?.('.q'); if(!card||!e.target.matches('input'))return;
-    setTimeout(()=>{const s=cardState.get(card)||{};if(s.answered||!card.dataset.matchReason)return;s.answered=true;cardState.set(card,s);if(card.dataset.matchReason==='wrong')wrong+=1;else correct+=1;saveQuestion(card,'answered');flush();},0);
+    setTimeout(()=>{const s=cardState.get(card)||{};if(s.answered||!card.dataset.matchReason)return;s.answered=true;cardState.set(card,s);if(card.dataset.matchReason==='wrong'){wrong+=1;registerLocalScrollAnswer(false);}else{correct+=1;registerLocalScrollAnswer(true);}saveQuestion(card,'answered');flush();},0);
   });
 
   document.addEventListener('scroll-vote', async e => {
