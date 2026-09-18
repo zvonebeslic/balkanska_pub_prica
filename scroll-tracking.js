@@ -32,15 +32,36 @@
     let s={};try{s=JSON.parse(localStorage.getItem(localStatsKey)||'null')||{};}catch(_){}
     s.gamesPlayed=Math.max(0,Number(s.gamesPlayed)||0);s.totalCorrect=Math.max(0,Number(s.totalCorrect)||0);s.totalWrong=Math.max(0,Number(s.totalWrong)||0);s.bestScore=Math.max(0,Number(s.bestScore)||0);s.bestPercent=Math.max(0,Number(s.bestPercent)||0);s.longestStreak=Math.max(0,Number(s.longestStreak)||0);s.modeStats=s.modeStats&&typeof s.modeStats==='object'?s.modeStats:{};s.modeStats.scroll={...emptyMode(),...(s.modeStats.scroll||{})};return s;
   }
+  async function syncScrollProgressToSupabase(s){
+    if(!userId)return;
+    try{
+      const {data,error}=await client.from('player_progress').select('progress').eq('user_id',userId).maybeSingle();
+      if(error)throw error;
+      const remote=(data?.progress&&typeof data.progress==='object')?data.progress:{};
+      const progress={...remote};
+      progress.version=Math.max(1,Number(progress.version)||1);
+      progress.stats=s;
+      progress.syncedAt=new Date().toISOString();
+      const {error:upsertError}=await client.from('player_progress').upsert({
+        user_id:userId,
+        progress,
+        updated_at:progress.syncedAt
+      },{onConflict:'user_id'});
+      if(upsertError)throw upsertError;
+      try{localStorage.removeItem('kviztogo_progress_dirty_v1:'+userId);}catch(_){}
+    }catch(e){
+      console.warn('Scroll profil Supabase sync:',e);
+      try{localStorage.setItem('kviztogo_progress_dirty_v1:'+userId,String(Date.now()));}catch(_){}
+    }
+  }
   function saveLocalStats(s){
     if(!localStatsKey)return;
     s.updatedAt=new Date().toISOString();
     try{
       localStorage.setItem(localStatsKey,JSON.stringify(s));
-      /* online-kviz za prijavljenog igraca inace pri povratku ucita stariji
-         Supabase player_progress i pregazi promjene napravljene na Scroll stranici. */
       if(userId) localStorage.setItem('kviztogo_progress_dirty_v1:'+userId,String(Date.now()));
     }catch(_){}
+    if(userId) syncScrollProgressToSupabase(s);
   }
   async function resolveLocalStatsKey(){
     let uid=null;try{const {data}=await client.auth.getUser();uid=data?.user?.id||null;}catch(_){}
