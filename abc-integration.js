@@ -5,7 +5,19 @@
   const empty=()=>({gamesPlayed:0,totalCorrect:0,totalWrong:0,bestScore:0,bestTotal:0,bestPercent:0,longestStreak:0});
 
   function statsKeys(){const a=[];for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&(k===BASE||k.startsWith(BASE+":")))a.push(k);}return a;}
-  function currentStats(){const keys=statsKeys();for(const k of keys){try{const s=JSON.parse(localStorage.getItem(k)||"null");if(s?.modeStats?.abc)return s;}catch(_){}}return {modeStats:{abc:empty()}};}
+  function currentStats(){
+    const keys=statsKeys();
+    let best=null,bestTime=-1;
+    for(const k of keys){
+      try{
+        const s=JSON.parse(localStorage.getItem(k)||"null");
+        if(!s?.modeStats?.abc)continue;
+        const t=Date.parse(s.updatedAt||"")||0;
+        if(!best||t>bestTime){best=s;bestTime=t;}
+      }catch(_){}
+    }
+    return best||{modeStats:{abc:empty()}};
+  }
 
   /* Supabase: svi ABC nacini ostaju jedna zasebna kategorija "abc".
      Lokalnu statistiku NE prebrojavamo ovdje: online-kviz.html je vec upisuje
@@ -96,6 +108,20 @@
   }
 
   function history(){const l=document.getElementById('history-list');if(!l)return;const show=()=>{if(l.children.length){document.body.classList.add('quiz-results-visible');const s=l.closest('.sidebar-card');if(s)s.style.display='flex';}};new MutationObserver(show).observe(l,{childList:true});show();}
-  function init(){installOrder();renderProfile();mergeAbcCrowns();history();const c=document.getElementById('achievement-groups');if(c)new MutationObserver(()=>{renderProfile();mergeAbcCrowns();}).observe(c,{childList:true,subtree:false});}
+  function refreshAbcProfile(){renderProfile();mergeAbcCrowns();}
+  function init(){
+    installOrder();refreshAbcProfile();history();
+    const c=document.getElementById('achievement-groups');
+    if(c)new MutationObserver(refreshAbcProfile).observe(c,{childList:true,subtree:false});
+    /* localStorage se u istom tabu ne javlja kroz storage event.
+       Zato osvjezi ABC profil nakon svake promjene statistike i dok je profil otvoren. */
+    let lastSnapshot="";
+    window.setInterval(()=>{
+      const s=currentStats();
+      const a=s?.modeStats?.abc||{};
+      const snapshot=JSON.stringify([a.gamesPlayed,a.totalCorrect,a.totalWrong,a.bestScore,a.bestTotal,a.bestPercent,a.longestStreak,s?.updatedAt||""]);
+      if(snapshot!==lastSnapshot){lastSnapshot=snapshot;refreshAbcProfile();}
+    },500);
+  }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(init,0),{once:true});else setTimeout(init,0);
 })();
