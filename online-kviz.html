@@ -4499,7 +4499,8 @@ if (!supabaseClient) {
         blitz60: createEmptyModeStats(),
         relax: createEmptyModeStats(),
         themed: createEmptyModeStats(),
-        abc: createEmptyModeStats()
+        abc: createEmptyModeStats(),
+        scroll: createEmptyModeStats()
       },
       collectionStats: {
         completedIds: [],
@@ -4573,7 +4574,8 @@ if (!supabaseClient) {
         blitz60: normalizeModeStats(s.modeStats?.blitz60),
         relax: normalizeModeStats(s.modeStats?.relax),
         themed: normalizeModeStats(s.modeStats?.themed),
-        abc: normalizeModeStats(s.modeStats?.abc)
+        abc: normalizeModeStats(s.modeStats?.abc),
+        scroll: normalizeModeStats(s.modeStats?.scroll)
       },
       collectionStats: {
         completedIds: Array.isArray(collectionStats.completedIds) ? [...new Set(collectionStats.completedIds.map(String))].slice(-1000) : [],
@@ -4702,7 +4704,8 @@ if (!supabaseClient) {
         blitz60: mergeModeStatsAdditive(a.modeStats.blitz60, b.modeStats.blitz60),
         relax: mergeModeStatsAdditive(a.modeStats.relax, b.modeStats.relax),
         themed: mergeModeStatsAdditive(a.modeStats.themed, b.modeStats.themed),
-        abc: mergeModeStatsAdditive(a.modeStats.abc, b.modeStats.abc)
+        abc: mergeModeStatsAdditive(a.modeStats.abc, b.modeStats.abc),
+        scroll: mergeModeStatsAdditive(a.modeStats.scroll, b.modeStats.scroll)
       },
       collectionStats: { completedIds: collectionIds, bestScores, attempts },
       rareAnswers: {
@@ -5075,6 +5078,7 @@ if (!supabaseClient) {
     const blitzGames = Math.max(0, Number(localStats.modeStats?.blitz60?.gamesPlayed) || 0);
     const relaxGames = Math.max(0, Number(localStats.modeStats?.relax?.gamesPlayed) || 0);
     const abcGames = Math.max(0, Number(localStats.modeStats?.abc?.gamesPlayed) || 0);
+    const scrollGames = Math.max(0, Number(localStats.modeStats?.scroll?.gamesPlayed) || 0);
     const rareSeen = Array.isArray(localStats.rareSeenQuestionIds) ? localStats.rareSeenQuestionIds.length : 0;
     const rareCorrect = getCollectedRareTotal();
     const shares = Math.max(0, Number(localStats.shareCount) || 0);
@@ -5166,6 +5170,7 @@ if (!supabaseClient) {
     ));
     groups.push(makeGamesGroup("relax-games", "Odigrane partije Bez vremena", "No-timer games played", relaxGames, "Bez vremena", "No-timer"));
     groups.push(makeGamesGroup("abc-games", "Odigrane ABC partije", "ABC games played", abcGames, "ABC", "ABC", [1, 5, 10, 25, 50, 100, 250, 500]));
+    groups.push(makeGamesGroup("scroll-games", "Odigrane Scroll partije", "Scroll games played", scrollGames, "Scroll", "Scroll", [1, 5, 10, 25, 50, 100, 250, 500]));
 
     const themeThresholds = [1, 5, 10, 20, 50];
     const themeTitlesHr = ["Prvi korak", "Povratnik", "Tema pod kožom", "Tematski znalac", "Majstor teme"];
