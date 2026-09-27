@@ -1,7 +1,7 @@
 /* KvizToGo opt-in Web Push za goste i prijavljene korisnike. */
 (function () {
   'use strict';
-  const VAPID_PUBLIC_KEY = 'BDVhAYnv__IhCjo25rRRmnKZXSDzdb-R-QkbJGsoLbgE_SxLSfYx-34e45zfjNvIcy4UMErOHgnQBRSV-eMFfqk';
+  const VAPID_PUBLIC_KEY = 'BLS40jTkvjv0pPfV3YJ3MEvH1sklD3gBPLfVLM0i2L9KnQJ5jTjG7jO4dT_2U5QKX4g9p1x7H5M8u9Y1j6XkG1A';
   const DISMISSED_KEY = 'kviztogo_push_prompt_dismissed_at';
 
   function b64ToBytes(value) {
@@ -17,9 +17,12 @@
   async function saveSubscription(sub) {
     if (!window.supabaseClient || !sub) return false;
     const json = sub.toJSON();
-    const row = { endpoint: json.endpoint, p256dh: json.keys && json.keys.p256dh, auth: json.keys && json.keys.auth, player_key: getPlayerKey(), enabled: true, updated_at: new Date().toISOString() };
-    try { const session = await window.supabaseClient.auth.getSession(); row.user_id = session?.data?.session?.user?.id || null; } catch (_) { row.user_id = null; }
-    const { error } = await window.supabaseClient.from('web_push_subscriptions').upsert(row, { onConflict: 'endpoint' });
+    const { error } = await window.supabaseClient.rpc('register_web_push_subscription', {
+      p_endpoint: json.endpoint,
+      p_p256dh: json.keys && json.keys.p256dh,
+      p_auth: json.keys && json.keys.auth,
+      p_player_key: getPlayerKey()
+    });
     if (!error) return true;
     console.warn('KvizToGo push subscription nije spremljen:', error.message || error); return false;
   }
