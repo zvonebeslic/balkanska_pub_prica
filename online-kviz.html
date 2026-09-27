@@ -3549,15 +3549,19 @@ body.player-panel-open { overflow: hidden; }
         </div>
       </section>
 
-      <section class="player-upcoming-card player-upcoming-card--multiplayer">
-        <div class="player-section-heading">
-          <div>
-            <div class="player-section-title" id="profile-multiplayer-title">Multiplayer</div>
-            <div class="player-section-copy" id="profile-multiplayer-copy">Igra protiv drugih kvizaša dolazi uskoro.</div>
-          </div>
-          <span class="player-section-chip" id="profile-multiplayer-chip">Uskoro</span>
-        </div>
-      </section>
+      <section class="player-upcoming-card player-upcoming-card--multiplayer"
+         onclick="window.location.href='multiplayer.html'"
+         style="cursor:pointer;">
+  <div class="player-section-heading">
+    <div>
+      <div class="player-section-title" id="profile-multiplayer-title">Multiplayer</div>
+      <div class="player-section-copy" id="profile-multiplayer-copy">
+        Igraj protiv drugih kvizaša.
+      </div>
+    </div>
+    <span class="player-section-chip" id="profile-multiplayer-chip">Igraj</span>
+  </div>
+</section>
     </div>
   </div>
 </aside>
