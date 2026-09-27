@@ -1,61 +1,15 @@
-/* KvizToGo opt-in Web Push za goste i prijavljene korisnike. */
-(function () {
-  'use strict';
-  const VAPID_PUBLIC_KEY = 'BLS40jTkvjv0pPfV3YJ3MEvH1sklD3gBPLfVLM0i2L9KnQJ5jTjG7jO4dT_2U5QKX4g9p1x7H5M8u9Y1j6XkG1A';
-  const DISMISSED_KEY = 'kviztogo_push_prompt_dismissed_at';
-
-  function b64ToBytes(value) {
-    const pad = '='.repeat((4 - value.length % 4) % 4);
-    const raw = atob((value + pad).replace(/-/g, '+').replace(/_/g, '/'));
-    return Uint8Array.from([...raw].map(c => c.charCodeAt(0)));
-  }
-  function getPlayerKey() {
-    const keys = ['kviztogo_daily30_player_key','kviztogo_player_key','kviztogo_visitor_id','visitor_id'];
-    for (const key of keys) { const v = localStorage.getItem(key); if (v) return v; }
-    return null;
-  }
-  async function saveSubscription(sub) {
-    if (!window.supabaseClient || !sub) return false;
-    const json = sub.toJSON();
-    const { error } = await window.supabaseClient.rpc('register_web_push_subscription', {
-      p_endpoint: json.endpoint,
-      p_p256dh: json.keys && json.keys.p256dh,
-      p_auth: json.keys && json.keys.auth,
-      p_player_key: getPlayerKey()
-    });
-    if (!error) return true;
-    console.warn('KvizToGo push subscription nije spremljen:', error.message || error); return false;
-  }
-  async function enablePush(button) {
-    try {
-      const permission = await Notification.requestPermission();
-      if (permission !== 'granted') { if (button) button.textContent = 'Obavijesti nisu dopuštene'; return; }
-      const reg = await navigator.serviceWorker.register('/push-sw.js');
-      let sub = await reg.pushManager.getSubscription();
-      if (sub) {
-        const oldKey = sub.options && sub.options.applicationServerKey ? new Uint8Array(sub.options.applicationServerKey) : null;
-        const newKey = b64ToBytes(VAPID_PUBLIC_KEY);
-        if (!oldKey || oldKey.length !== newKey.length || oldKey.some((v,i)=>v!==newKey[i])) { await sub.unsubscribe(); sub = null; }
-      }
-      if (!sub) sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToBytes(VAPID_PUBLIC_KEY) });
-      const ok = await saveSubscription(sub);
-      if (button) { button.textContent = ok ? '✓ Podsjetnik uključen' : 'Pokušaj ponovno'; button.disabled = ok; }
-      if (ok) document.getElementById('kviztogo-push-prompt')?.remove();
-    } catch (err) { console.warn('KvizToGo push:', err); if (button) button.textContent = 'Pokušaj ponovno'; }
-  }
-  async function alreadySubscribed() { try { const reg = await navigator.serviceWorker.getRegistration('/push-sw.js'); return !!(reg && await reg.pushManager.getSubscription()); } catch (_) { return false; } }
-  async function showPrompt() {
-    if (!('serviceWorker' in navigator) || !('PushManager' in window) || !('Notification' in window)) return;
-    if (Notification.permission === 'denied' || await alreadySubscribed()) return;
-    const dismissed = Number(localStorage.getItem(DISMISSED_KEY) || 0); if (dismissed && Date.now() - dismissed < 14 * 86400000) return;
-    if (document.getElementById('kviztogo-push-prompt')) return;
-    const box = document.createElement('div'); box.id = 'kviztogo-push-prompt';
-    box.style.cssText = 'position:fixed;left:12px;right:12px;bottom:14px;z-index:99999;max-width:520px;margin:auto;padding:14px;border:1px solid rgba(34,197,94,.55);border-radius:18px;background:#101b2d;color:#fff;box-shadow:0 18px 50px rgba(0,0,0,.5);font-family:Inter,system-ui,sans-serif';
-    box.innerHTML = '<div style="font-weight:900;font-size:15px">🔔 Želiš podsjetnik za Dnevnih 30?</div><div style="margin-top:5px;color:#cbd5e1;font-size:13px;line-height:1.35">Uključi obavijesti i KvizToGo te može podsjetiti kad te čeka dnevni kviz.</div><div style="display:flex;gap:8px;margin-top:11px"><button id="kviztogo-push-enable" type="button" style="flex:1;border:0;border-radius:12px;padding:10px;background:#22c55e;color:white;font-weight:900">🔔 Podsjeti me na kviz</button><button id="kviztogo-push-later" type="button" style="border:1px solid #64748b;border-radius:12px;padding:10px;background:transparent;color:#e2e8f0;font-weight:800">Ne sada</button></div>';
-    document.body.appendChild(box);
-    box.querySelector('#kviztogo-push-enable').addEventListener('click', e => enablePush(e.currentTarget));
-    box.querySelector('#kviztogo-push-later').addEventListener('click', () => { localStorage.setItem(DISMISSED_KEY, String(Date.now())); box.remove(); });
-  }
-  window.KvizToGoPush = { enable: enablePush }; const boot = () => setTimeout(showPrompt, 3500);
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once:true }); else boot();
+/* KvizToGo Web Push */
+(function(){
+'use strict';
+const KEY='kviztogo_daily30_push_enabled';
+async function getSub(){try{const r=await navigator.serviceWorker.getRegistration('/push-sw.js')||await navigator.serviceWorker.getRegistration();return r?await r.pushManager.getSubscription():null}catch(_){return null}}
+async function waitClient(){for(let i=0;i<20;i++){if(window.supabaseClient)return window.supabaseClient;await new Promise(r=>setTimeout(r,250))}return null}
+async function setPref(sub,on){const c=await waitClient();if(!c||!sub)return false;const x=await c.rpc('set_web_push_preferences',{p_endpoint:sub.endpoint,p_daily30:on,p_new_quizzes:true,p_special_challenges:true});return !x.error}
+function ui(on,msg){const i=document.getElementById('daily30-push-toggle'),r=document.getElementById('daily30-push-row'),s=document.getElementById('daily30-push-status');if(i)i.checked=on;if(r)r.classList.toggle('on',on);if(s)s.textContent=msg||''}
+async function enable(){if(!('Notification'in window)||!('serviceWorker'in navigator)||!('PushManager'in window)){ui(false,'Obavijesti nisu podržane.');return}if(Notification.permission==='denied'){ui(false,'Obavijesti su blokirane u pregledniku.');return}const p=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(p!=='granted'){ui(false,'Dopusti obavijesti u pregledniku.');return}if(window.KvizToGoPushLegacyEnable){await window.KvizToGoPushLegacyEnable();return}ui(false,'Ponovno učitaj stranicu i pokušaj.')}
+async function disable(){const sub=await getSub();if(sub)await setPref(sub,false);localStorage.setItem(KEY,'0');ui(false,'Podsjetnik isključen')}
+async function changed(e){const on=e.currentTarget.checked;e.currentTarget.disabled=true;if(on){localStorage.setItem(KEY,'1');await enable()}else await disable();e.currentTarget.disabled=false}
+function style(){const s=document.createElement('style');s.textContent='.daily30-push-row{display:flex;align-items:center;justify-content:space-between;gap:.8rem;width:100%;margin:.1rem 0 .45rem;padding:.58rem .72rem;border:1px solid rgba(148,163,184,.22);border-radius:14px;background:rgba(255,255,255,.045);color:#f5f7fb}.daily30-push-row.on{border-color:rgba(34,197,94,.42);background:rgba(34,197,94,.075)}.daily30-push-copy{display:flex;flex-direction:column}.daily30-push-title{font-size:.76rem;font-weight:900}.daily30-push-status{font-size:.58rem;color:#94a3b8}.daily30-push-switch{position:relative;width:46px;height:26px;flex:0 0 auto}.daily30-push-switch input{position:absolute;opacity:0}.daily30-push-slider{position:absolute;inset:0;border-radius:999px;background:#475569;cursor:pointer}.daily30-push-slider:before{content:"";position:absolute;width:20px;height:20px;left:3px;top:3px;border-radius:50%;background:#fff;transition:.2s}.daily30-push-switch input:checked+.daily30-push-slider{background:#22c55e}.daily30-push-switch input:checked+.daily30-push-slider:before{transform:translateX(20px)}';document.head.appendChild(s)}
+async function mount(){style();let d=document.querySelector('.mode-pill--daily');for(let i=0;i<30&&!d;i++){await new Promise(r=>setTimeout(r,200));d=document.querySelector('.mode-pill--daily')}if(!d||document.getElementById('daily30-push-row'))return;const r=document.createElement('div');r.id='daily30-push-row';r.className='daily30-push-row';r.innerHTML='<div class="daily30-push-copy"><span class="daily30-push-title">🔔 Podsjeti me na dnevni kviz</span><span id="daily30-push-status" class="daily30-push-status"></span></div><label class="daily30-push-switch"><input id="daily30-push-toggle" type="checkbox"><span class="daily30-push-slider"></span></label>';d.parentNode.insertBefore(r,d);r.querySelector('input').addEventListener('change',changed);const sub=await getSub();const on=Notification.permission==='granted'&&!!sub&&localStorage.getItem(KEY)!=='0';ui(on,on?'Podsjetnik uključen':'')}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 })();
