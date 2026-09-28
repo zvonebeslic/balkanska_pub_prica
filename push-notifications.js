@@ -3,10 +3,12 @@
 'use strict';
 const VAPID='BLS40jTkvjv0pPfV3YJ3MEvH1sklD3gBPLfVLM0i2L9KnQJ5jTjG7jO4dT_2U5QKX4g9p1x7H5M8u9Y1j6XkG1A';
 const KEY='kviztogo_daily30_push_enabled',DISMISS='kviztogo_push_prompt_dismissed_at',THREE_DAYS=259200000;
+const BASE=new URL('./',document.baseURI).pathname;
+const SW_URL=new URL('push-sw.js',document.baseURI).pathname;
 function bytes(v){const p='='.repeat((4-v.length%4)%4),r=atob((v+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from([...r].map(c=>c.charCodeAt(0)))}
 function playerKey(){try{const x=JSON.parse(localStorage.getItem('kviztogo_guest_identity_v1')||'null');if(x?.id)return String(x.id)}catch(_){}for(const k of ['kviztogo_daily30_player_key','kviztogo_player_key','kviztogo_visitor_id','visitor_id']){const v=localStorage.getItem(k);if(v)return v}return null}
 async function client(){for(let i=0;i<40;i++){if(window.supabaseClient)return window.supabaseClient;await new Promise(r=>setTimeout(r,250))}return null}
-async function registration(){let r=await navigator.serviceWorker.getRegistration('/');if(!r)r=await navigator.serviceWorker.register('/push-sw.js',{scope:'/'});await navigator.serviceWorker.ready;return r}
+async function registration(){let r=await navigator.serviceWorker.getRegistration(BASE);if(!r)r=await navigator.serviceWorker.register(SW_URL,{scope:BASE});await navigator.serviceWorker.ready;return r}
 async function sub(){try{const r=await registration();return await r.pushManager.getSubscription()}catch(e){console.warn('KvizToGo push subscription lookup:',e);return null}}
 async function save(s){const c=await client();if(!c)throw new Error('Supabase klijent nije spreman.');if(!s)throw new Error('Push pretplata nije stvorena.');const j=s.toJSON();if(!j.endpoint||!j.keys?.p256dh||!j.keys?.auth)throw new Error('Preglednik nije vratio potpune podatke push pretplate.');const x=await c.rpc('register_web_push_subscription',{p_endpoint:j.endpoint,p_p256dh:j.keys.p256dh,p_auth:j.keys.auth,p_player_key:playerKey()});if(x.error)throw new Error('Spremanje pretplate nije uspjelo: '+(x.error.message||x.error.code||'RPC greška'));return true}
 async function pref(s,on){const c=await client();if(!c)throw new Error('Supabase klijent nije spreman.');if(!s)throw new Error('Push pretplata nije pronađena.');const x=await c.rpc('set_web_push_preferences',{p_endpoint:s.endpoint,p_daily30:!!on,p_new_quizzes:true,p_special_challenges:true});if(x.error)throw new Error('Spremanje postavke nije uspjelo: '+(x.error.message||x.error.code||'RPC greška'));return true}
