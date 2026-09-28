@@ -5,15 +5,32 @@ const VAPID='BLS40jTkvjv0pPfV3YJ3MEvH1sklD3gBPLfVLM0i2L9KnQJ5jTjG7jO4dT_2U5QKX4g
 const KEY='kviztogo_daily30_push_enabled',DISMISS='kviztogo_push_prompt_dismissed_at',THREE_DAYS=259200000;
 const BASE=new URL('./',document.baseURI).pathname;
 const SW_URL=new URL('push-sw.js',document.baseURI).pathname;
+
+/* online-kviz stvara Supabase client nakon ove skripte. Presrecemo createClient,
+   zadrzavamo ISTU instancu i ne stvaramo dodatnu vezu. */
+(function captureSupabaseClient(){
+  const api=window.supabase;
+  if(!api||typeof api.createClient!=='function')return;
+  const previous=api.createClient;
+  if(previous.__kviztogoPushCapture)return;
+  const wrapped=function(...args){
+    const c=previous.apply(this,args);
+    if(c&&typeof c.rpc==='function')window.kviztogoSupabaseClient=c;
+    return c;
+  };
+  wrapped.__kviztogoPushCapture=true;
+  api.createClient=wrapped;
+})();
+
 function bytes(v){const p='='.repeat((4-v.length%4)%4),r=atob((v+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from([...r].map(c=>c.charCodeAt(0)))}
 function playerKey(){try{const x=JSON.parse(localStorage.getItem('kviztogo_guest_identity_v1')||'null');if(x?.id)return String(x.id)}catch(_){}for(const k of ['kviztogo_daily30_player_key','kviztogo_player_key','kviztogo_visitor_id','visitor_id']){const v=localStorage.getItem(k);if(v)return v}return null}
-async function client(){for(let i=0;i<40;i++){if(window.supabaseClient)return window.supabaseClient;await new Promise(r=>setTimeout(r,250))}return null}
+async function client(){for(let i=0;i<60;i++){const c=window.kviztogoSupabaseClient||window.supabaseClient;if(c&&typeof c.rpc==='function')return c;await new Promise(r=>setTimeout(r,250))}return null}
 async function registration(){let r=await navigator.serviceWorker.getRegistration(BASE);if(!r)r=await navigator.serviceWorker.register(SW_URL,{scope:BASE});await navigator.serviceWorker.ready;return r}
 async function sub(){try{const r=await registration();return await r.pushManager.getSubscription()}catch(e){console.warn('KvizToGo push subscription lookup:',e);return null}}
-async function save(s){const c=await client();if(!c)throw new Error('Supabase klijent nije spreman.');if(!s)throw new Error('Push pretplata nije stvorena.');const j=s.toJSON();if(!j.endpoint||!j.keys?.p256dh||!j.keys?.auth)throw new Error('Preglednik nije vratio potpune podatke push pretplate.');const x=await c.rpc('register_web_push_subscription',{p_endpoint:j.endpoint,p_p256dh:j.keys.p256dh,p_auth:j.keys.auth,p_player_key:playerKey()});if(x.error)throw new Error('Spremanje pretplate nije uspjelo: '+(x.error.message||x.error.code||'RPC greška'));return true}
-async function pref(s,on){const c=await client();if(!c)throw new Error('Supabase klijent nije spreman.');if(!s)throw new Error('Push pretplata nije pronađena.');const x=await c.rpc('set_web_push_preferences',{p_endpoint:s.endpoint,p_daily30:!!on,p_new_quizzes:true,p_special_challenges:true});if(x.error)throw new Error('Spremanje postavke nije uspjelo: '+(x.error.message||x.error.code||'RPC greška'));return true}
+async function save(s){const c=await client();if(!c)throw new Error('Supabase klijent nije pronađen na stranici.');if(!s)throw new Error('Push pretplata nije stvorena.');const j=s.toJSON();if(!j.endpoint||!j.keys?.p256dh||!j.keys?.auth)throw new Error('Preglednik nije vratio potpune podatke push pretplate.');const x=await c.rpc('register_web_push_subscription',{p_endpoint:j.endpoint,p_p256dh:j.keys.p256dh,p_auth:j.keys.auth,p_player_key:playerKey()});if(x.error)throw new Error('Spremanje pretplate nije uspjelo: '+(x.error.message||x.error.code||'RPC greška'));return true}
+async function pref(s,on){const c=await client();if(!c)throw new Error('Supabase klijent nije pronađen na stranici.');if(!s)throw new Error('Push pretplata nije pronađena.');const x=await c.rpc('set_web_push_preferences',{p_endpoint:s.endpoint,p_daily30:!!on,p_new_quizzes:true,p_special_challenges:true});if(x.error)throw new Error('Spremanje postavke nije uspjelo: '+(x.error.message||x.error.code||'RPC greška'));return true}
 function sync(on,msg){document.querySelectorAll('.kviz-push-toggle').forEach(i=>i.checked=!!on);document.querySelectorAll('.kviz-push-box').forEach(x=>x.classList.toggle('on',!!on));document.querySelectorAll('.kviz-push-status').forEach(x=>x.textContent=msg||'')}
-function friendly(e){const n=e?.name||'',m=String(e?.message||'');if(n==='NotAllowedError')return 'Preglednik nije dopustio obavijesti.';if(n==='AbortError')return 'Preglednik nije uspio napraviti push pretplatu. Pokušaj ponovno.';if(n==='InvalidStateError')return 'Push servis još nije spreman. Pokušaj ponovno.';if(n==='InvalidAccessError'||n==='DataError')return 'Greška ključa za obavijesti.';if(m.includes('Supabase'))return 'Veza sa servisom još nije spremna. Pokušaj ponovno.';return 'Nije uspjelo: '+(m||n||'nepoznata greška')}
+function friendly(e){const n=e?.name||'',m=String(e?.message||'');if(n==='NotAllowedError')return 'Preglednik nije dopustio obavijesti.';if(n==='AbortError')return 'Preglednik nije uspio napraviti push pretplatu. Pokušaj ponovno.';if(n==='InvalidStateError')return 'Push servis još nije spreman. Pokušaj ponovno.';if(n==='InvalidAccessError'||n==='DataError')return 'Greška ključa za obavijesti.';if(m.includes('Supabase klijent'))return 'Veza sa servisom još nije spremna. Pokušaj ponovno.';return 'Nije uspjelo: '+(m||n||'nepoznata greška')}
 async function enable(){if(!window.isSecureContext){sync(false,'Obavijesti traže sigurnu HTTPS vezu.');return false}if(!('Notification'in window)||!('serviceWorker'in navigator)||!('PushManager'in window)){sync(false,'Obavijesti nisu podržane na ovom uređaju.');return false}if(Notification.permission==='denied'){sync(false,'Obavijesti su blokirane u postavkama preglednika.');return false}const p=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(p!=='granted'){sync(false,'Obavijesti nisu dopuštene.');return false}try{sync(false,'Uključujem…');const r=await registration();let s=await r.pushManager.getSubscription(),k=bytes(VAPID);if(s){const old=s.options?.applicationServerKey?new Uint8Array(s.options.applicationServerKey):null;if(!old||old.length!==k.length||old.some((v,i)=>v!==k[i])){await s.unsubscribe();s=null}}if(!s)s=await r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:k});await save(s);await pref(s,true);localStorage.setItem(KEY,'1');localStorage.removeItem(DISMISS);sync(true,'Podsjetnik uključen');document.getElementById('kviz-push-popup')?.remove();return true}catch(e){console.error('KvizToGo push enable failed:',e);localStorage.setItem(KEY,'0');sync(false,friendly(e));return false}}
 async function disable(){try{const s=await sub();if(s)await pref(s,false);localStorage.setItem(KEY,'0');sync(false,'Podsjetnik isključen');return true}catch(e){console.error('KvizToGo push disable failed:',e);sync(true,friendly(e));return false}}
 async function changed(e){const on=e.currentTarget.checked;document.querySelectorAll('.kviz-push-toggle').forEach(i=>i.disabled=true);if(on)await enable();else await disable();document.querySelectorAll('.kviz-push-toggle').forEach(i=>i.disabled=false)}
