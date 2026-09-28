@@ -2846,6 +2846,54 @@ body.player-panel-open { overflow: hidden; }
   font: inherit;
 }
 
+
+/* MULTIPLAYER PLATINUM - glavni način igre iznad Dnevnih 30 */
+.mode-pill--multiplayer-platinum {
+  position: relative;
+  width: 100%;
+  min-height: 64px;
+  justify-content: space-between;
+  overflow: hidden;
+  color: #f8fbff;
+  border: 1px solid rgba(226,232,240,.82);
+  background:
+    linear-gradient(112deg, rgba(255,255,255,.20) 0%, rgba(148,163,184,.14) 22%, rgba(30,41,59,.92) 48%, rgba(203,213,225,.18) 72%, rgba(255,255,255,.13) 100%),
+    linear-gradient(135deg, #263449, #111b2b);
+  box-shadow: 0 12px 30px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.30), 0 0 22px rgba(203,213,225,.10);
+}
+.mode-pill--multiplayer-platinum::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: inherit;
+  background: linear-gradient(105deg, transparent 12%, rgba(255,255,255,.18) 36%, transparent 52%, rgba(34,197,94,.08) 73%, rgba(47,128,255,.10) 88%);
+  pointer-events: none;
+}
+.mode-pill--multiplayer-platinum:hover {
+  transform: translateY(-1px);
+  border-color: #f8fafc;
+  box-shadow: 0 14px 34px rgba(0,0,0,.38), 0 0 26px rgba(226,232,240,.16);
+}
+.multiplayer-platinum-copy { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: .12rem; text-align: left; }
+.mode-pill--multiplayer-platinum .mode-label { font-size: .95rem; color: #fff; letter-spacing: .01em; text-shadow: 0 1px 8px rgba(255,255,255,.15); }
+.mode-pill--multiplayer-platinum .mode-desc { color: #dbe4ee; }
+.multiplayer-live-pill {
+  position: relative; z-index: 1; flex: 0 0 auto;
+  padding: .28rem .66rem; border-radius: var(--radius-pill);
+  border: 1px solid rgba(255,255,255,.68);
+  background: linear-gradient(135deg, #f8fafc, #aebaca 48%, #eef2f7);
+  color: #101827; font-size: .68rem; font-weight: 950; letter-spacing: .06em;
+  box-shadow: inset 0 1px 0 #fff, 0 4px 12px rgba(0,0,0,.22);
+}
+@media (max-width: 520px) {
+  .mode-pill--multiplayer-platinum { min-height: 60px; padding: .55rem .72rem; }
+  .mode-pill--multiplayer-platinum .mode-label { font-size: .9rem; }
+  .mode-pill--multiplayer-platinum .mode-desc { font-size: .7rem; }
+}
+
 </style>
 
   <link rel="stylesheet" href="daily30.css?v=20260825-2">
@@ -2932,6 +2980,13 @@ body.player-panel-open { overflow: hidden; }
       <p class="quiz-hero-subtitle" data-i18n="heroSubtitle">Odgovaraj na tisuće kviz pitanja iz raznih tema. Odaberi Blitz 60 sekundi, tematski kviz ili opuštenu igru bez vremenskog ograničenja.</p>
 
       <div class="mode-pills" id="mode-pills">
+        <button class="mode-pill mode-pill--multiplayer-platinum" id="btn-multiplayer" type="button" onclick="window.location.href='multiplayer.html'">
+          <span class="multiplayer-platinum-copy">
+            <span class="mode-label" data-i18n="multiplayerBtn">Multiplayer</span>
+            <span class="mode-desc">Dvoboj znanja protiv drugog kvizaša</span>
+          </span>
+          <span class="multiplayer-live-pill">IGRAJ</span>
+        </button>
         <button class="mode-pill mode-pill--daily" data-mode="daily30">
           <span class="daily30-mode-copy">
             <span class="mode-label" data-i18n="modeDailyLabel">Dnevnih 30</span>
@@ -3081,10 +3136,7 @@ body.player-panel-open { overflow: hidden; }
           <span data-i18n="collectionsBtn">Kviz kolekcije</span>
           <span class="coming-pill" data-i18n="comingSoon">Uskoro</span>
         </button>
-        <button class="themed-btn future-mode-btn" id="btn-multiplayer" type="button"  onclick="window.location.href='multiplayer.html'">
-          <span data-i18n="multiplayerBtn">Multiplayer</span>
-          <span class="coming-pill">Igraj</span>
-        </button>
+
       </div>
     </div>
 
