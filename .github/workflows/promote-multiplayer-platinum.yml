@@ -1,0 +1,46 @@
+name: Promote multiplayer platinum
+on:
+  push:
+    paths:
+      - '.github/workflows/promote-multiplayer-platinum.yml'
+permissions:
+  contents: write
+jobs:
+  update-online-quiz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Move multiplayer above Daily 30 and apply platinum style
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('online-kviz.html')
+          s=p.read_text(encoding='utf-8')
+
+          # Remove old multiplayer button from the future modes row, leaving Collections there.
+          old='''        <button class="themed-btn future-mode-btn" id="btn-multiplayer" type="button"  onclick="window.location.href='multiplayer.html'">\n          <span data-i18n="multiplayerBtn">Multiplayer</span>\n          <span class="coming-pill">Igraj</span>\n        </button>'''
+          s=s.replace(old,'')
+
+          # Put Multiplayer at the very top of mode choices, immediately above Daily 30.
+          anchor='''      <div class="mode-pills" id="mode-pills">\n        <button class="mode-pill mode-pill--daily" data-mode="daily30">'''
+          replacement='''      <div class="mode-pills" id="mode-pills">\n        <button class="mode-pill mode-pill--multiplayer-platinum" id="btn-multiplayer" type="button" onclick="window.location.href='multiplayer.html'">\n          <span class="multiplayer-platinum-copy">\n            <span class="mode-label" data-i18n="multiplayerBtn">Multiplayer</span>\n            <span class="mode-desc">Dvoboj znanja protiv drugog kvizaša</span>\n          </span>\n          <span class="multiplayer-live-pill">IGRAJ</span>\n        </button>\n        <button class="mode-pill mode-pill--daily" data-mode="daily30">'''
+          if anchor not in s:
+              raise SystemExit('Daily 30 mode anchor not found')
+          s=s.replace(anchor,replacement,1)
+
+          # Platinum styling. Intentionally premium silver/platinum, with subtle KvizToGo blue/green reflections.
+          css='''\n/* MULTIPLAYER PLATINUM - glavni način igre iznad Dnevnih 30 */\n.mode-pill--multiplayer-platinum {\n  position: relative;\n  width: 100%;\n  min-height: 64px;\n  justify-content: space-between;\n  overflow: hidden;\n  color: #f8fbff;\n  border: 1px solid rgba(226,232,240,.82);\n  background:\n    linear-gradient(112deg, rgba(255,255,255,.20) 0%, rgba(148,163,184,.14) 22%, rgba(30,41,59,.92) 48%, rgba(203,213,225,.18) 72%, rgba(255,255,255,.13) 100%),\n    linear-gradient(135deg, #263449, #111b2b);\n  box-shadow: 0 12px 30px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.30), 0 0 22px rgba(203,213,225,.10);\n}\n.mode-pill--multiplayer-platinum::before {\n  content: "";\n  position: absolute;\n  inset: 0;\n  width: auto;\n  height: auto;\n  border: 0;\n  border-radius: inherit;\n  background: linear-gradient(105deg, transparent 12%, rgba(255,255,255,.18) 36%, transparent 52%, rgba(34,197,94,.08) 73%, rgba(47,128,255,.10) 88%);\n  pointer-events: none;\n}\n.mode-pill--multiplayer-platinum:hover {\n  transform: translateY(-1px);\n  border-color: #f8fafc;\n  box-shadow: 0 14px 34px rgba(0,0,0,.38), 0 0 26px rgba(226,232,240,.16);\n}\n.multiplayer-platinum-copy { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: .12rem; text-align: left; }\n.mode-pill--multiplayer-platinum .mode-label { font-size: .95rem; color: #fff; letter-spacing: .01em; text-shadow: 0 1px 8px rgba(255,255,255,.15); }\n.mode-pill--multiplayer-platinum .mode-desc { color: #dbe4ee; }\n.multiplayer-live-pill {\n  position: relative; z-index: 1; flex: 0 0 auto;\n  padding: .28rem .66rem; border-radius: var(--radius-pill);\n  border: 1px solid rgba(255,255,255,.68);\n  background: linear-gradient(135deg, #f8fafc, #aebaca 48%, #eef2f7);\n  color: #101827; font-size: .68rem; font-weight: 950; letter-spacing: .06em;\n  box-shadow: inset 0 1px 0 #fff, 0 4px 12px rgba(0,0,0,.22);\n}\n@media (max-width: 520px) {\n  .mode-pill--multiplayer-platinum { min-height: 60px; padding: .55rem .72rem; }\n  .mode-pill--multiplayer-platinum .mode-label { font-size: .9rem; }\n  .mode-pill--multiplayer-platinum .mode-desc { font-size: .7rem; }\n}\n'''
+          marker='</style>'
+          if marker not in s:
+              raise SystemExit('style closing tag not found')
+          s=s.replace(marker,css+'\n'+marker,1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add online-kviz.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Move multiplayer above Daily 30 with platinum styling"
+          git push
