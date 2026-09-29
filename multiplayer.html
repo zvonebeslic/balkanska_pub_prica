@@ -126,7 +126,7 @@
   <div class="name-modal-card">
     <h2 id="mp-name-title" data-i18n="changeNameTitle">Promijeni ime</h2>
     <p id="mp-name-help" data-i18n="changeNameHelp">Ovo ime koristit će se na KvizToGo kvizovima i ljestvicama.</p>
-    <input class="name-modal-input" id="mp-name-input" type="text" maxlength="24" autocomplete="nickname">
+    <input class="name-modal-input" id="mp-name-input" type="text" maxlength="20" autocomplete="nickname">
     <div class="name-modal-message" id="mp-name-message"></div>
     <div class="name-modal-actions">
       <button class="secondary" id="mp-name-cancel" type="button" data-i18n="cancel">Odustani</button>
@@ -149,7 +149,7 @@ aiNote:'Ako naš sustav ne pronađe stvarnog protivnika, u igru se uključuje AI
 waitingStart:'Čekamo početak…',historyTitle:'Rezultati & povijest',downloadHistory:'📥 Preuzmi cijelu odigranu povijest',
 downloadHistoryNote:'Sva pitanja i odgovori iz trenutačne partije spremit će se u jednu dugu PNG sliku.',shareResult:'📤 Podijeli rezultat',
 rematch:'Revanš',acceptRematch:'Prihvati revanš',rematchRequesting:'Šaljem revanš…',rematchWaiting:'Čekamo protivnika…',rematchError:'Zahtjev za revanš nije poslan. Pokušaj ponovno.',newOpponent:'Novi protivnik',backQuiz:'Natrag',
-playingAs:'Igraš kao',changeName:'Promijeni ime',changeNameTitle:'Promijeni ime',changeNameHelp:'Ovo ime koristit će se na KvizToGo kvizovima i ljestvicama.',cancel:'Odustani',saveName:'Spremi',nameUnavailable:'To ime nije dostupno.',nameSaved:'Ime je spremljeno.',nameInvalidGuest:'Ime mora imati 2–20 slova ili brojeva.',nameInvalidUser:'Korisničko ime mora imati 3–24 znaka bez razmaka.',nameSaveError:'Promjena imena nije uspjela.',
+playingAs:'Igraš kao',changeName:'Promijeni ime',changeNameTitle:'Promijeni ime',chooseNameTitle:'Odaberi ime za igru',changeNameHelp:'Ovo ime koristit će se na KvizToGo kvizovima i ljestvicama.',chooseNameHelp:'Prije igranja odaberi ime. Mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.',cancel:'Odustani',saveName:'Spremi',nameUnavailable:'To ime nije dostupno.',nameSaved:'Ime je spremljeno.',nameInvalidGuest:'Ime mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.',nameInvalidUser:'Ime mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.',nameSaveError:'Promjena imena nije uspjela.',
 searching:'Tražimo protivnika…',queue:'U redu čekanja',searchButton:'Tražim…',checkingQueue:'provjeravamo red čekanja',searchError:'Greška pri spajanju. Pokušaj ponovno.',
 preparingInvite:'Pripremam poveznicu…',waiting:'Čekamo…',friendNotJoined:'prijatelj još nije ušao',preparingInviteMeta:'Pripremamo pozivnicu',creatingPrivate:'Kreiramo privatni 1 na 1…',
 inviteError:'Pozivnicu nije moguće napraviti. Pokušaj ponovno.',inviteTitle:'KvizToGo 1 na 1',inviteMessage:'Pridruži mi se u kvizu 1 na 1 na KvizToGo! 🧠⚔️\n10 pitanja, vrijeme ovisi o duljini pitanja. Tko zna više?\n{url}',
@@ -186,7 +186,7 @@ aiNote:'If our system cannot find a real opponent, an AI-generated opponent join
 waitingStart:'Waiting to start…',historyTitle:'Results & history',downloadHistory:'📥 Download full played history',
 downloadHistoryNote:'All questions and answers from the current match will be saved as one long PNG image.',shareResult:'📤 Share result',
 rematch:'Rematch',acceptRematch:'Accept rematch',rematchRequesting:'Requesting rematch…',rematchWaiting:'Waiting for opponent…',rematchError:'The rematch request could not be sent. Try again.',newOpponent:'New opponent',backQuiz:'Back',
-playingAs:'Playing as',changeName:'Change name',changeNameTitle:'Change name',changeNameHelp:'This name will be used across KvizToGo quizzes and leaderboards.',cancel:'Cancel',saveName:'Save',nameUnavailable:'That name is unavailable.',nameSaved:'Name saved.',nameInvalidGuest:'Use 2–20 letters or numbers.',nameInvalidUser:'Username must be 3–24 characters without spaces.',nameSaveError:'Name change failed.',
+playingAs:'Playing as',changeName:'Change name',changeNameTitle:'Change name',chooseNameTitle:'Choose your player name',changeNameHelp:'This name will be used across KvizToGo quizzes and leaderboards.',chooseNameHelp:'Choose a name before playing. Use 3–20 characters, letters and numbers only.',cancel:'Cancel',saveName:'Save',nameUnavailable:'That name is unavailable.',nameSaved:'Name saved.',nameInvalidGuest:'Use 3–20 characters, letters and numbers only.',nameInvalidUser:'Use 3–20 characters, letters and numbers only.',nameSaveError:'Name change failed.',
 searching:'Finding an opponent…',queue:'In matchmaking queue',searchButton:'Searching…',checkingQueue:'checking the matchmaking queue',searchError:'Could not connect. Try again.',
 preparingInvite:'Preparing link…',waiting:'Waiting…',friendNotJoined:'your friend has not joined yet',preparingInviteMeta:'Preparing invitation',creatingPrivate:'Creating a private 1v1…',
 inviteError:'Could not create the invitation. Try again.',inviteTitle:'KvizToGo 1v1',inviteMessage:'Join me for a 1v1 quiz on KvizToGo! 🧠⚔️\n10 questions, with time based on question length. Who knows more?\n{url}',
@@ -238,7 +238,7 @@ function mpBotDelay(p,totalSeconds){const mid=(p.base[0]+p.base[1])/2,perQ=mid/3
 const supabaseClient=window.supabase&&typeof window.supabase.createClient==='function'?window.supabase.createClient(SB,KEY):null;
 
 const MP_STATS_BASE='kviztogo_multiplayer_stats_v1',MP_GUEST_IDENTITY='kviztogo_guest_identity_v1',MP_GUEST_SECRET='kviztogo_guest_secret_v1',MP_GUEST_ALIAS='kviztogo_multiplayer_guest_alias_v1';
-let mpIdentityName='',mpIdentityUserId=null,mpIdentityIsGuest=true;
+let mpIdentityName='',mpIdentityUserId=null,mpIdentityIsGuest=true,mpNameRequired=false,pendingInviteParam=null;
 function mpTimestamp(d){const p=(v,n=2)=>String(v).padStart(n,'0');return p(d.getDate())+p(d.getMonth()+1)+d.getFullYear()+p(d.getHours())+p(d.getMinutes())+p(d.getSeconds())+p(d.getMilliseconds(),3)}
 function ensureMpGuestIdentity(){
   try{
@@ -263,42 +263,17 @@ function getOrCreateMpGuestSecret(){
     const secret=createMpGuestSecret();localStorage.setItem(MP_GUEST_SECRET,JSON.stringify({guestId:identity.id,secret}));return secret
   }catch{return null}
 }
-function mpGuestAliasSeed(id){let h=2166136261;for(const ch of String(id)){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return(h>>>0)%1000}
 async function claimGuestName(name){
   const identity=ensureMpGuestIdentity(),secret=getOrCreateMpGuestSecret();
   if(!supabaseClient||!secret)return false;
   const {data,error}=await supabaseClient.rpc('daily30_claim_name_secure',{p_player_key:'guest:'+identity.id,p_player_name:name,p_guest_secret:secret});
   if(error)throw error;return data===true
 }
-async function ensureMpGuestAlias(){
-  const identity=ensureMpGuestIdentity();
-  if(identity.displayName){
-    try{await claimGuestName(identity.displayName)}catch{}
-    return identity.displayName
-  }
-  let saved=null;try{saved=JSON.parse(localStorage.getItem(MP_GUEST_ALIAS)||'null')}catch{}
-  if(saved?.guestId===identity.id&&/^Kvizaš\d{3}$/u.test(String(saved.name||''))){
-    try{
-      if(await claimGuestName(saved.name)){
-        identity.displayName=String(saved.name);
-        saveMpGuestIdentity(identity);
-        return saved.name
-      }
-    }catch{}
-  }
-  const seed=mpGuestAliasSeed(identity.id);
-  for(let i=0;i<1000;i++){
-    const candidate='Kvizaš'+String((seed+i)%1000).padStart(3,'0');
-    try{
-      if(await claimGuestName(candidate)){
-        try{localStorage.setItem(MP_GUEST_ALIAS,JSON.stringify({guestId:identity.id,name:candidate}))}catch{}
-        identity.displayName=candidate;
-        saveMpGuestIdentity(identity);
-        return candidate
-      }
-    }catch(e){console.warn('Gostujuće ime nije rezervirano:',e);break}
-  }
-  return 'Kvizaš'+String(seed).padStart(3,'0')
+function isLegacyAutoMpAlias(identity){
+  try{
+    const saved=JSON.parse(localStorage.getItem(MP_GUEST_ALIAS)||'null');
+    return Boolean(saved?.guestId===identity.id&&saved?.name&&String(saved.name)===String(identity.displayName||'')&&/^Kvizaš\d{3}$/u.test(String(saved.name)))
+  }catch{return false}
 }
 async function loadMpIdentity(){
   if(supabaseClient){
@@ -307,38 +282,58 @@ async function loadMpIdentity(){
       if(user?.id){
         let name=user.user_metadata?.username||user.user_metadata?.full_name||user.user_metadata?.name||user.email?.split('@')[0]||'Kvizoman';
         try{const q=await supabaseClient.from('profiles').select('username').eq('id',user.id).maybeSingle();if(q.data?.username)name=q.data.username}catch{}
-        mpIdentityIsGuest=false;mpIdentityUserId=user.id;mpIdentityName=String(name||'Kvizoman').trim().slice(0,24);
+        mpIdentityIsGuest=false;mpIdentityUserId=user.id;mpIdentityName=String(name||'Kvizoman').trim().slice(0,20);
         try{localStorage.setItem('kviztogo_username',mpIdentityName)}catch{}
         try{await supabaseClient.rpc('daily30_claim_name',{p_player_key:'user:'+user.id,p_user_id:user.id,p_player_name:mpIdentityName})}catch{}
         syncMpIdentityUi();return mpIdentityName
       }
     }catch(e){console.warn('Profilno ime nije učitano:',e)}
   }
-  mpIdentityIsGuest=true;mpIdentityUserId=null;mpIdentityName=await ensureMpGuestAlias();syncMpIdentityUi();return mpIdentityName
+  mpIdentityIsGuest=true;mpIdentityUserId=null;
+  const identity=ensureMpGuestIdentity();
+  if(identity.displayName&&!isLegacyAutoMpAlias(identity)){
+    mpIdentityName=String(identity.displayName).trim().slice(0,20);
+    try{await claimGuestName(mpIdentityName)}catch{}
+  }else{
+    mpIdentityName='';
+  }
+  syncMpIdentityUi();return mpIdentityName
 }
 function syncMpIdentityUi(){
-  const n=mpIdentityName||'Kvizaš';
+  const n=mpIdentityName||'—';
   const a=document.getElementById('mp-identity-name'),b=document.getElementById('meName');
   if(a)a.textContent=n;if(b)b.textContent=n;
-  if(state?.match_id){if(document.getElementById('meGame'))document.getElementById('meGame').textContent=state.me_name||n}
+  if(state?.match_id&&document.getElementById('meGame'))document.getElementById('meGame').textContent=state.me_name||n
 }
-function openMpNameModal(){
-  const modal=document.getElementById('mp-name-modal'),input=document.getElementById('mp-name-input'),msg=document.getElementById('mp-name-message');
-  if(!modal||!input)return;msg.textContent='';msg.classList.remove('error');input.maxLength=mpIdentityIsGuest?20:24;input.value=mpIdentityIsGuest?(ensureMpGuestIdentity().displayName||''):mpIdentityName;input.placeholder=mpIdentityIsGuest?'npr. Mozgalo':'npr. Kvizoman';modal.classList.remove('hidden');setTimeout(()=>input.focus(),0)
+function setMpNameGate(blocked){
+  const find=document.getElementById('find'),friend=document.getElementById('friend');
+  if(find)find.disabled=Boolean(blocked);if(friend)friend.disabled=Boolean(blocked)
 }
-function closeMpNameModal(){document.getElementById('mp-name-modal')?.classList.add('hidden')}
+function openMpNameModal(required=false){
+  mpNameRequired=Boolean(required);
+  const modal=document.getElementById('mp-name-modal'),input=document.getElementById('mp-name-input'),msg=document.getElementById('mp-name-message'),cancel=document.getElementById('mp-name-cancel'),title=document.getElementById('mp-name-title'),help=document.getElementById('mp-name-help');
+  if(!modal||!input)return;
+  msg.textContent='';msg.classList.remove('error');input.maxLength=20;
+  input.value=mpNameRequired?'':(mpIdentityIsGuest?(ensureMpGuestIdentity().displayName||''):mpIdentityName);
+  input.placeholder=currentLang==='en'?'e.g. QuizMaster':'npr. Mozgalo';
+  if(cancel)cancel.hidden=mpNameRequired;
+  if(title)title.textContent=mpNameRequired?t('chooseNameTitle'):t('changeNameTitle');
+  if(help)help.textContent=mpNameRequired?t('chooseNameHelp'):t('changeNameHelp');
+  if(mpNameRequired)setMpNameGate(true);
+  modal.classList.remove('hidden');setTimeout(()=>input.focus(),0)
+}
+function closeMpNameModal(){
+  if(mpNameRequired)return;
+  document.getElementById('mp-name-modal')?.classList.add('hidden')
+}
 async function syncLiveMultiplayerName(name){
   try{if(state)state=await api('rename',{name});syncMpIdentityUi();if(state?.match_id)handle(state)}catch(e){console.warn('Ime u aktivnom multiplayeru nije osvježeno:',e)}
 }
 async function saveMpIdentityName(){
   const input=document.getElementById('mp-name-input'),button=document.getElementById('mp-name-save'),msg=document.getElementById('mp-name-message');
-  const value=String(input?.value||'').replace(/\s+/g,' ').trim();
+  const value=String(input?.value||'').trim();
   msg.textContent='';msg.classList.remove('error');
-  if(mpIdentityIsGuest){
-    if(value.length<2||value.length>20||!/^[\p{L}\p{N} ._'’-]+$/u.test(value)){msg.textContent=t('nameInvalidGuest');msg.classList.add('error');return}
-  }else{
-    if(!/^[A-Za-zÀ-ž0-9._-]{3,24}$/.test(value)){msg.textContent=t('nameInvalidUser');msg.classList.add('error');return}
-  }
+  if(!/^[\p{L}\p{N}]{3,20}$/u.test(value)){msg.textContent=mpIdentityIsGuest?t('nameInvalidGuest'):t('nameInvalidUser');msg.classList.add('error');return}
   button.disabled=true;
   try{
     if(mpIdentityIsGuest){
@@ -353,7 +348,9 @@ async function saveMpIdentityName(){
       const meta=await supabaseClient.auth.updateUser({data:{username:value}});if(meta.error)throw meta.error;
       mpIdentityName=value;try{localStorage.setItem('kviztogo_username',value)}catch{}
     }
-    syncMpIdentityUi();await syncLiveMultiplayerName(value);closeMpNameModal();showMpToast(t('nameSaved'))
+    syncMpIdentityUi();await syncLiveMultiplayerName(value);
+    const wasRequired=mpNameRequired;mpNameRequired=false;document.getElementById('mp-name-modal')?.classList.add('hidden');setMpNameGate(false);showMpToast(t('nameSaved'));
+    if(wasRequired)await continueMultiplayerEntry()
   }catch(e){msg.textContent=e?.message||t('nameSaveError');msg.classList.add('error')}
   finally{button.disabled=false}
 }
@@ -408,7 +405,7 @@ let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null
 
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
-function myName(){return mpIdentityName||(mpIdentityIsGuest?'Kvizaš':t('guest'))}
+function myName(){return mpIdentityName||''}
 function uuid(){return crypto.randomUUID()}
 function token(){let t=localStorage.getItem('kviztogo_mp_token_v3');if(!t||!/^[a-f0-9-]{36}\.[a-f0-9-]{36}$/.test(t)){t=uuid()+'.'+uuid();localStorage.setItem('kviztogo_mp_token_v3',t)}return t}
 function recent(){try{let a=JSON.parse(localStorage.getItem(RECENT)||'[]');return Array.isArray(a)?a.slice(-2000):[]}catch{return[]}}
@@ -596,6 +593,7 @@ function showGame(){ $('lobby').classList.add('hidden');$('game').classList.remo
 function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;historyRenderSignature='';showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
 
 async function findOpponent(){
+  if(!mpIdentityName){openMpNameModal(true);return}
   if($('find').disabled)return;
   $('find').disabled=true;$('friend').disabled=true;$('find').textContent=t('searchButton');$('oppName').textContent=t('searching');$('oppMeta').textContent=t('checkingQueue');$('meMeta').textContent=t('queue');$('search').textContent=t('searching');
   try{state=await api('join',{name:myName(),recent:recent()});handle(state);startPoll()}
@@ -603,6 +601,7 @@ async function findOpponent(){
 }
 
 async function createFriendInvite(){
+  if(!mpIdentityName){openMpNameModal(true);return}
   if($('friend').disabled)return;
   $('friend').disabled=true;$('find').disabled=true;$('friend').textContent=t('preparingInvite');$('oppName').textContent=t('waiting');$('oppMeta').textContent=t('friendNotJoined');$('meMeta').textContent=t('preparingInviteMeta');$('search').textContent=t('creatingPrivate');
   try{
@@ -638,6 +637,7 @@ async function shareFriendInvite(code){
 }
 
 async function joinFriendInvite(code){
+  if(!mpIdentityName){pendingInviteParam=String(code||'');openMpNameModal(true);return}
   showLobby();$('find').disabled=true;$('friend').disabled=true;$('find').textContent=t('joining');$('oppName').textContent=t('findingFriend');$('oppMeta').textContent=t('checkingInvite');$('meMeta').textContent=t('joining');$('search').textContent=t('joiningQuiz');
   try{
     state=await api('join_invite',{code:String(code).toUpperCase(),name:myName(),recent:recent()});
@@ -930,18 +930,23 @@ async function shareCurrentResult(){
   }catch(e){if(e?.name!=='AbortError')showMpToast(e?.message||t('resultShareError'))}
 }
 
+async function continueMultiplayerEntry(){
+  if(!mpIdentityName){openMpNameModal(true);return}
+  if(pendingInviteParam){const code=pendingInviteParam;pendingInviteParam=null;await joinFriendInvite(code);return}
+  api('state',{}).then(s=>{state=s;if(s?.match_id&&['ready','countdown','playing','reveal','finished'].includes(s.status)){handle(s);if(['ready','countdown','playing','reveal','finished'].includes(s.status))startPoll()}else if(['waiting','invite_waiting','bot'].includes(s?.status)){api('leave',{}).catch(()=>{}).finally(()=>resetLobby())}else resetLobby()}).catch(()=>resetLobby())
+}
 async function initMultiplayerPage(){
-  await loadMpIdentity();
-  $('meName').textContent=myName();$('find').onclick=findOpponent;$('friend').onclick=createFriendInvite;
+  $('find').onclick=findOpponent;$('friend').onclick=createFriendInvite;
   const langBtn=$('language-cycle-btn');if(langBtn)langBtn.onclick=()=>applyLanguage(currentLang==='hr'?'en':'hr');applyLanguage(currentLang);
   $('again').onclick=requestRematch;$('newOpp').onclick=async()=>{await leave();findOpponent()};
   $('mp-download-history').onclick=downloadFullHistory;$('mp-share-result').onclick=shareCurrentResult;updateHistoryActionButtons();
-  $('mp-change-name').onclick=openMpNameModal;$('mp-name-cancel').onclick=closeMpNameModal;$('mp-name-save').onclick=saveMpIdentityName;
+  $('mp-change-name').onclick=()=>openMpNameModal(false);$('mp-name-cancel').onclick=closeMpNameModal;$('mp-name-save').onclick=saveMpIdentityName;
   $('mp-name-modal').addEventListener('click',e=>{if(e.target===$('mp-name-modal'))closeMpNameModal()});
   $('mp-name-input').addEventListener('keydown',e=>{if(e.key==='Enter')saveMpIdentityName();else if(e.key==='Escape')closeMpNameModal()});
-  const inviteParam=new URLSearchParams(location.search).get('invite');
-  if(inviteParam){joinFriendInvite(inviteParam)}
-  else{api('state',{}).then(s=>{state=s;if(s?.match_id&&['ready','countdown','playing','reveal','finished'].includes(s.status)){handle(s);if(['ready','countdown','playing','reveal','finished'].includes(s.status))startPoll()}else if(['waiting','invite_waiting','bot'].includes(s?.status)){api('leave',{}).catch(()=>{}).finally(()=>resetLobby())}else resetLobby()}).catch(()=>resetLobby())}
+  pendingInviteParam=new URLSearchParams(location.search).get('invite');
+  await loadMpIdentity();$('meName').textContent=myName()||'—';
+  if(!mpIdentityName){openMpNameModal(true);return}
+  await continueMultiplayerEntry()
 }
 void initMultiplayerPage();
 window.addEventListener('storage',e=>{if(e.key===MP_GUEST_IDENTITY||e.key==='kviztogo_username')void loadMpIdentity().then(()=>syncLiveMultiplayerName(myName()))});
