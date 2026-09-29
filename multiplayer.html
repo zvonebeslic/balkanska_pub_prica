@@ -267,7 +267,7 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
   }
 }
 
-let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='';const questionVotes=new Map();
+let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='',lastEndProcessedMatchKey=null;const questionVotes=new Map();
 let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
 
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -583,7 +583,7 @@ function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot
 function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
-function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');void finishMultiplayerQuizTracking(true);const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');void recordMultiplayerResult(matchKey,result,botMode)}
+function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');if(matchKey&&lastEndProcessedMatchKey!==matchKey){lastEndProcessedMatchKey=matchKey;void finishMultiplayerQuizTracking(true);void recordMultiplayerResult(matchKey,result,botMode)}}
 function updateRematchState(s){
   const btn=$('again');if(!btn)return;
   if(botMode){btn.disabled=false;btn.textContent=t('rematch');return}
