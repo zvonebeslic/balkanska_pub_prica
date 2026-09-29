@@ -278,7 +278,13 @@ async function ensureMpGuestAlias(){
   }
   let saved=null;try{saved=JSON.parse(localStorage.getItem(MP_GUEST_ALIAS)||'null')}catch{}
   if(saved?.guestId===identity.id&&/^Kvizaš\d{3}$/u.test(String(saved.name||''))){
-    try{if(await claimGuestName(saved.name))return saved.name}catch{}
+    try{
+      if(await claimGuestName(saved.name)){
+        identity.displayName=String(saved.name);
+        saveMpGuestIdentity(identity);
+        return saved.name
+      }
+    }catch{}
   }
   const seed=mpGuestAliasSeed(identity.id);
   for(let i=0;i<1000;i++){
@@ -286,6 +292,8 @@ async function ensureMpGuestAlias(){
     try{
       if(await claimGuestName(candidate)){
         try{localStorage.setItem(MP_GUEST_ALIAS,JSON.stringify({guestId:identity.id,name:candidate}))}catch{}
+        identity.displayName=candidate;
+        saveMpGuestIdentity(identity);
         return candidate
       }
     }catch(e){console.warn('Gostujuće ime nije rezervirano:',e);break}
