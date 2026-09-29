@@ -2616,7 +2616,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
     ]);
 
     let profileStats = createEmptyPlayerStats();
-    let profileMultiplayerStats = { gamesPlayed:0, wins:0, draws:0, losses:0 };
+    let profileMultiplayerStats = { gamesPlayed:0, wins:0, draws:0, losses:0, totalCorrect:0, totalWrong:0, longestStreak:0, discoveredQuestionIds:[] };
     let profileAtomic = createEmptyPlayerAtomic();
     let profileQuestionTotal = DEFAULT_QUESTION_TOTAL;
     let profileProgressReady = false;
@@ -2639,18 +2639,51 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
 
 
     const MULTIPLAYER_STATS_BASE_KEY = "kviztogo_multiplayer_stats_v1";
-    function normalizeProfileMultiplayerStats(value){const s=value&&typeof value==="object"?value:{};return{gamesPlayed:Math.max(0,Number(s.gamesPlayed)||0),wins:Math.max(0,Number(s.wins)||0),draws:Math.max(0,Number(s.draws)||0),losses:Math.max(0,Number(s.losses)||0)};}
+    function normalizeProfileMultiplayerStats(value){
+      const s=value&&typeof value==="object"?value:{};
+      return{
+        gamesPlayed:Math.max(0,Number(s.gamesPlayed??s.games_played)||0),
+        wins:Math.max(0,Number(s.wins)||0),
+        draws:Math.max(0,Number(s.draws)||0),
+        losses:Math.max(0,Number(s.losses)||0),
+        totalCorrect:Math.max(0,Number(s.totalCorrect??s.total_correct)||0),
+        totalWrong:Math.max(0,Number(s.totalWrong??s.total_wrong)||0),
+        longestStreak:Math.max(0,Number(s.longestStreak??s.longest_streak)||0),
+        discoveredQuestionIds:Array.isArray(s.discoveredQuestionIds)?[...new Set(s.discoveredQuestionIds.map(String))].slice(-10000):Array.isArray(s.discovered_question_ids)?[...new Set(s.discovered_question_ids.map(String))].slice(-10000):[]
+      };
+    }
     function getLocalProfileMultiplayerStats(userId){try{return normalizeProfileMultiplayerStats(JSON.parse(localStorage.getItem(MULTIPLAYER_STATS_BASE_KEY+":user:"+userId)||"null"));}catch(_){return normalizeProfileMultiplayerStats(null);}}
     async function loadProfileMultiplayerStats(user){
       if(!user?.id){profileMultiplayerStats=normalizeProfileMultiplayerStats(null);return;}
       const local=getLocalProfileMultiplayerStats(user.id);profileMultiplayerStats=local;
       try{
-        const count=outcome=>{let q=supabaseClient.from("multiplayer_profile_results").select("id",{count:"exact",head:true}).eq("user_id",user.id);if(outcome)q=q.eq("outcome",outcome);return q;};
-        const[all,wins,draws,losses]=await Promise.all([count(null),count("win"),count("draw"),count("loss")]);
-        for(const item of[all,wins,draws,losses])if(item.error)throw item.error;
-        const remote={gamesPlayed:all.count||0,wins:wins.count||0,draws:draws.count||0,losses:losses.count||0};
-        profileMultiplayerStats={gamesPlayed:Math.max(local.gamesPlayed,remote.gamesPlayed),wins:Math.max(local.wins,remote.wins),draws:Math.max(local.draws,remote.draws),losses:Math.max(local.losses,remote.losses)};
+        const{data,error}=await supabaseClient.from("multiplayer_profile_summary").select("games_played,wins,draws,losses,total_correct,total_wrong,longest_streak,discovered_question_ids").eq("user_id",user.id).maybeSingle();
+        if(error)throw error;
+        if(!data)return;
+        const remote=normalizeProfileMultiplayerStats(data);
+        if(remote.gamesPlayed>local.gamesPlayed)profileMultiplayerStats=remote;
+        else if(local.gamesPlayed>remote.gamesPlayed)profileMultiplayerStats=local;
+        else profileMultiplayerStats={
+          gamesPlayed:remote.gamesPlayed,
+          wins:Math.max(remote.wins,local.wins),
+          draws:Math.max(remote.draws,local.draws),
+          losses:Math.max(remote.losses,local.losses),
+          totalCorrect:Math.max(remote.totalCorrect,local.totalCorrect),
+          totalWrong:Math.max(remote.totalWrong,local.totalWrong),
+          longestStreak:Math.max(remote.longestStreak,local.longestStreak),
+          discoveredQuestionIds:[...new Set([...remote.discoveredQuestionIds,...local.discoveredQuestionIds])].slice(-10000)
+        };
       }catch(error){console.warn("Multiplayer statistika nije učitana:",error);}
+    }
+    function getCombinedProfileKnowledgeStats(){
+      const base=profileStats,mp=profileMultiplayerStats;
+      return{
+        totalCorrect:Math.max(0,Number(base.totalCorrect)||0)+Math.max(0,Number(mp.totalCorrect)||0),
+        totalWrong:Math.max(0,Number(base.totalWrong)||0)+Math.max(0,Number(mp.totalWrong)||0),
+        gamesPlayed:Math.max(0,Number(base.gamesPlayed)||0)+Math.max(0,Number(mp.gamesPlayed)||0),
+        longestStreak:Math.max(Math.max(0,Number(base.longestStreak)||0),Math.max(0,Number(mp.longestStreak)||0)),
+        discoveredQuestionIds:[...new Set([...(base.discoveredQuestionIds||[]),...(mp.discoveredQuestionIds||[])].map(String))].slice(-10000)
+      };
     }
 
     function normalizePlayerAtomic(value) { const s=value&&typeof value==="object"?value:{}; return {cooldownUntil:{letter:Math.max(0,Number(s.cooldownUntil?.letter)||0),anagram:Math.max(0,Number(s.cooldownUntil?.anagram)||0),reveal:Math.max(0,Number(s.cooldownUntil?.reveal)||0)},uses:{letter:Math.max(0,Number(s.uses?.letter)||0),anagram:Math.max(0,Number(s.uses?.anagram)||0),reveal:Math.max(0,Number(s.uses?.reveal)||0)}}; }
@@ -2670,7 +2703,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
     function getCrownSvg(){return `<svg class="achievement-crown-svg" viewBox="0 0 64 52" aria-hidden="true"><defs><linearGradient id="profileCrownGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0a6"/><stop offset="0.38" stop-color="#facc15"/><stop offset="1" stop-color="#b77908"/></linearGradient></defs><path d="M8 17 20 29 32 9 44 29 56 17 51 42H13L8 17Z" fill="url(#profileCrownGold)" stroke="#fff3b0" stroke-width="2" stroke-linejoin="round"/><circle cx="8" cy="15" r="4" fill="#facc15"/><circle cx="32" cy="7" r="4" fill="#facc15"/><circle cx="56" cy="15" r="4" fill="#facc15"/><path d="M14 45h36" stroke="#facc15" stroke-width="5" stroke-linecap="round"/></svg>`;}
     function makeAchievement(id,hr,en,conditionHr,conditionEn,current,target){const c=Math.max(0,Number(current)||0),t=Math.max(1,Number(target)||1);return{id,title:playerProgressText(hr,en),condition:playerProgressText(conditionHr,conditionEn),current:c,target:t,unlocked:c>=t};}
 
-    function buildProfileAchievementGroups(){const s=profileStats,groups=[],streak=s.longestStreak||0,blitzBest=s.modeStats.blitz60.bestScore||0,time=s.maxContinuousPlaySeconds||0,blitzGames=s.modeStats.blitz60.gamesPlayed||0,relaxGames=s.modeStats.relax.gamesPlayed||0,rareSeen=s.rareSeenQuestionIds.length,rareCorrect=RARITY_ORDER.reduce((sum,r)=>sum+s.rareAnswers[r].length,0),shares=s.shareCount||0;
+    function buildProfileAchievementGroups(){const s=profileStats,groups=[],streak=getCombinedProfileKnowledgeStats().longestStreak||0,blitzBest=s.modeStats.blitz60.bestScore||0,time=s.maxContinuousPlaySeconds||0,blitzGames=s.modeStats.blitz60.gamesPlayed||0,relaxGames=s.modeStats.relax.gamesPlayed||0,rareSeen=s.rareSeenQuestionIds.length,rareCorrect=RARITY_ORDER.reduce((sum,r)=>sum+s.rareAnswers[r].length,0),shares=s.shareCount||0;
       const streakData=[[3,"Guuuraaj","Keep It Going"],[4,"Četiri u komadu","Four in a Row"],[5,"Petica bez kočenja","Five Without Brakes"],[7,"Sedmica znanja","Lucky Seven"],[10,"Deset bez greške","Ten Without a Miss"],[20,"Niz za pamćenje","A Streak to Remember"]];groups.push({title:playerProgressText("Nizovi točnih odgovora","Correct-answer streaks"),items:streakData.map(([n,hr,en])=>makeAchievement(`streak-${n}`,hr,en,`Odgovori ${n} puta točno zaredom.`,`Answer ${n} questions correctly in a row.`,streak,n))});
       groups.push({title:playerProgressText("Blitz rezultat u jednoj rundi","Blitz score in one round"),items:[[3,"Prvi bljesak","First Flash"],[5,"Brzih pet","Fast Five"],[7,"Sedam u 60","Seven in 60"],[10,"Dvoznamenkasti","Double Digits"]].map(([n,hr,en])=>makeAchievement(`blitz-round-${n}`,hr,en,`Ostvari ${n} točnih odgovora u jednoj Blitz rundi.`,`Score ${n} correct answers in one Blitz round.`,blitzBest,n))});
       groups.push({title:playerProgressText("Igra bez prekida","Uninterrupted play"),items:[[60,"Jedna minuta bez stajanja","One Minute Nonstop"],[100,"Stotka u komadu","One Hundred Seconds"],[150,"Dugi dah","Long Breath"],[200,"Bez kočenja","No Brakes"],[500,"Kviz maratonac","Quiz Marathoner"],[1000,"Tisuću sekundi","One Thousand Seconds"],[2000,"Nezaustavljiv","Unstoppable"]].map(([n,hr,en])=>makeAchievement(`time-${n}`,hr,en,`Igraj bez prekida ${n} sekundi.`,`Play without interruption for ${n} seconds.`,time,n))});
@@ -2692,7 +2725,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
       groups.push({title:playerProgressText("Širenje KvizToGo priče","Sharing KvizToGo"),items:[makeAchievement("share-1","Poznanik KvizToGo","KvizToGo Acquaintance","Podijeli pitanje ili rezultat jednom.","Share a question or result once.",shares,1),makeAchievement("share-10","Prijatelj KvizToGo","KvizToGo Friend","Podijeli pitanje ili rezultat 10 puta.","Share a question or result 10 times.",shares,10),makeAchievement("share-20","Legenda KvizToGo","KvizToGo Legend","Podijeli pitanje ili rezultat 20 puta.","Share a question or result 20 times.",shares,20)]});return groups;}
 
     function renderProfileLevels(){
-      const points=profileStats.totalCorrect,
+      const points=getCombinedProfileKnowledgeStats().totalCorrect,
         index=Math.max(0,KNOWLEDGE_LEVELS.findIndex(level=>points>=level.min&&points<=level.max)),
         level=KNOWLEDGE_LEVELS[index]||KNOWLEDGE_LEVELS.at(-1),
         next=KNOWLEDGE_LEVELS[index+1],
@@ -2765,8 +2798,8 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
       return {gamesPlayed:official.length,totalCorrect,totalWrong,bestScore,bestTotal,bestPercent,longestStreak};
     }
 
-    function renderProfileDashboard(){if(!profileProgressReady)return;const s=profileStats,total=s.totalCorrect+s.totalWrong,accuracy=total?Math.round((s.totalCorrect/total)*100):0,questionTotal=Math.max(profileQuestionTotal,s.discoveredQuestionIds.length),discovered=s.discoveredQuestionIds.length;const success=n=>playerProgressText(`${n}% uspješnosti`,`${n}% accuracy`),mode=(prefix,data)=>{const answered=data.totalCorrect+data.totalWrong;setProgressText(`${prefix}-total-result`,`${data.totalCorrect}/${answered}`);setProgressText(`${prefix}-total-percent`,success(getModeAccuracy(data)));setProgressText(`${prefix}-best-result`,`${data.bestScore}/${data.bestTotal}`);setProgressText(`${prefix}-best-percent`,success(data.bestPercent));setProgressText(`${prefix}-games-played`,data.gamesPlayed);setProgressText(`${prefix}-longest-streak`,data.longestStreak);};
-      setProgressText("player-overview-title",playerProgressText("Pregled znanja","Knowledge overview"));setProgressText("player-overview-copy",playerProgressText("Svi tvoji odgovori i otkrivena pitanja na jednom mjestu.","All your answers and discovered questions in one place."));setProgressText("player-overview-chip",playerProgressText("Ukupno","Total"));setProgressText("stat-result-label",playerProgressText("Rezultat","Result"));setProgressText("stat-streak-label",playerProgressText("Najduži niz točnih","Longest correct streak"));setProgressText("stat-games-label",playerProgressText("Odigrano kvizova","Quizzes played"));setProgressText("stat-discovered-label",playerProgressText("Otkrivena pitanja","Discovered questions"));setProgressText("stat-overall-result",`${s.totalCorrect}/${total}`);setProgressText("stat-overall-result-percent",success(accuracy));setProgressText("stat-longest-streak",s.longestStreak);setProgressText("stat-games-played",s.gamesPlayed);setProgressText("stat-discovered",`${discovered}/${questionTotal}`);setProgressText("knowledge-progress-label",playerProgressText("Otkriveno različitih pitanja","Different questions discovered"));setProgressText("knowledge-progress-value",`${discovered}/${questionTotal}`);const knowledgeFill=document.getElementById("knowledge-progress-fill");if(knowledgeFill)knowledgeFill.style.width=`${questionTotal?Math.min(100,Math.round(discovered/questionTotal*100)):0}%`;
+    function renderProfileDashboard(){if(!profileProgressReady)return;const s=profileStats,combined=getCombinedProfileKnowledgeStats(),total=combined.totalCorrect+combined.totalWrong,accuracy=total?Math.round((combined.totalCorrect/total)*100):0,questionTotal=Math.max(profileQuestionTotal,combined.discoveredQuestionIds.length),discovered=combined.discoveredQuestionIds.length;const success=n=>playerProgressText(`${n}% uspješnosti`,`${n}% accuracy`),mode=(prefix,data)=>{const answered=data.totalCorrect+data.totalWrong;setProgressText(`${prefix}-total-result`,`${data.totalCorrect}/${answered}`);setProgressText(`${prefix}-total-percent`,success(getModeAccuracy(data)));setProgressText(`${prefix}-best-result`,`${data.bestScore}/${data.bestTotal}`);setProgressText(`${prefix}-best-percent`,success(data.bestPercent));setProgressText(`${prefix}-games-played`,data.gamesPlayed);setProgressText(`${prefix}-longest-streak`,data.longestStreak);};
+      setProgressText("player-overview-title",playerProgressText("Pregled znanja","Knowledge overview"));setProgressText("player-overview-copy",playerProgressText("Svi tvoji odgovori i otkrivena pitanja na jednom mjestu.","All your answers and discovered questions in one place."));setProgressText("player-overview-chip",playerProgressText("Ukupno","Total"));setProgressText("stat-result-label",playerProgressText("Rezultat","Result"));setProgressText("stat-streak-label",playerProgressText("Najduži niz točnih","Longest correct streak"));setProgressText("stat-games-label",playerProgressText("Odigrano kvizova","Quizzes played"));setProgressText("stat-discovered-label",playerProgressText("Otkrivena pitanja","Discovered questions"));setProgressText("stat-overall-result",`${combined.totalCorrect}/${total}`);setProgressText("stat-overall-result-percent",success(accuracy));setProgressText("stat-longest-streak",combined.longestStreak);setProgressText("stat-games-played",combined.gamesPlayed);setProgressText("stat-discovered",`${discovered}/${questionTotal}`);setProgressText("knowledge-progress-label",playerProgressText("Otkriveno različitih pitanja","Different questions discovered"));setProgressText("knowledge-progress-value",`${discovered}/${questionTotal}`);const knowledgeFill=document.getElementById("knowledge-progress-fill");if(knowledgeFill)knowledgeFill.style.width=`${questionTotal?Math.min(100,Math.round(discovered/questionTotal*100)):0}%`;
       mode("blitz",s.modeStats.blitz60);mode("relax",s.modeStats.relax);mode("themed",s.modeStats.themed);mode("abc",s.modeStats.abc);mode("scroll",s.modeStats.scroll);mode("daily30",getProfileDaily30Stats());setProgressText("multiplayer-games-played",profileMultiplayerStats.gamesPlayed);setProgressText("multiplayer-wins",profileMultiplayerStats.wins);setProgressText("multiplayer-draws",profileMultiplayerStats.draws);setProgressText("multiplayer-losses",profileMultiplayerStats.losses);setProgressText("multiplayer-games-label",playerProgressText("Odigrano","Played"));setProgressText("multiplayer-wins-label",playerProgressText("Pobjede","Wins"));setProgressText("multiplayer-draws-label",playerProgressText("Neriješeno","Draws"));setProgressText("multiplayer-losses-label",playerProgressText("Porazi","Losses"));setProgressText("themed-topics-chip",playerProgressText(`${s.modeStats.themed.themesPlayed.length} tema`,`${s.modeStats.themed.themesPlayed.length} themes`));
       setProgressText("profile-blitz-copy",playerProgressText("Poštena usporedba jer svi imaju isto vrijeme.","A fair comparison because everyone has the same time."));setProgressText("profile-relax-title",playerProgressText("Bez vremena","No timer"));setProgressText("profile-relax-copy",playerProgressText("Tvoja privatna statistika igre bez vremenskog ograničenja.","Your private no-timer statistics."));setProgressText("profile-themed-title",playerProgressText("Tematski kvizovi","Themed quizzes"));setProgressText("profile-themed-copy",playerProgressText("Tvoja privatna statistika kvizova po odabranim temama.","Your private themed-quiz statistics."));setProgressText("profile-abc-title",playerProgressText("ABC pitanja","ABC questions"));setProgressText("profile-abc-copy",playerProgressText("Zasebna statistika svih ABC načina i tematika.","Separate statistics for all ABC modes and topics."));setProgressText("profile-scroll-title",playerProgressText("Scrollanjem do znanja","Scroll to Knowledge"));setProgressText("profile-scroll-copy",playerProgressText("Zasebna statistika Scroll igre. Broje se samo pitanja na koja si odgovorio.","Separate Scroll statistics. Only questions you answered are counted."));setProgressText("profile-daily30-title",playerProgressText("Dnevnih 30","Daily 30"));setProgressText("profile-daily30-copy",playerProgressText("Broje se samo dnevni kvizovi odigrani na dan kada su aktivni.","Only Daily 30 quizzes played on their live day are counted."));setProgressText("profile-multiplayer-title","Multiplayer");setProgressText("profile-multiplayer-copy",playerProgressText("Tvoja statistika 1 na 1 dvoboja.","Your 1v1 match statistics."));setProgressText("daily30-result-label",playerProgressText("Ukupni rezultat","Total score"));setProgressText("daily30-best-label",playerProgressText("Najbolja partija","Best game"));setProgressText("daily30-games-label",playerProgressText("Odigrano dana","Days played"));setProgressText("daily30-streak-label",playerProgressText("Najduži niz točnih","Longest correct streak"));setProgressText("player-games-toggle-label",playerProgressText("Pregled odigranih kvizova","View played quizzes"));setProgressText("profile-collection-chip",playerProgressText("Uskoro","Coming soon"));setProgressText("collection-achievements-chip",playerProgressText("Uskoro","Coming soon"));
       let rareTotal=0;RARITY_ORDER.forEach(r=>{const count=Math.min(RARITY_TOTALS[r],s.rareAnswers[r].length);rareTotal+=count;setProgressText(`rare-${r}-value`,`${count}/${RARITY_TOTALS[r]}`);});setProgressText("player-rare-total",`${rareTotal}/101`);setProgressText("player-rare-title",playerProgressText("Rijetki odgovori","Rare answers"));setProgressText("player-rare-copy",playerProgressText("Rijetki minerali u zemlji. Rijetki odgovori u glavi.","Rare minerals in the ground. Rare answers in your mind."));renderProfileAchievements();}
