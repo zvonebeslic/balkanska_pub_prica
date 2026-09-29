@@ -327,7 +327,7 @@ async function saveMpIdentityName(){
   const value=String(input?.value||'').replace(/\s+/g,' ').trim();
   msg.textContent='';msg.classList.remove('error');
   if(mpIdentityIsGuest){
-    if(value.length<2||value.length>20||!/^\p{L}[\p{L}\p{N} ._'’-]*$/u.test(value)){msg.textContent=t('nameInvalidGuest');msg.classList.add('error');return}
+    if(value.length<2||value.length>20||!^[\p{L}\p{N} ._'’-]+$/u.test(value)){msg.textContent=t('nameInvalidGuest');msg.classList.add('error');return}
   }else{
     if(!/^[A-Za-zÀ-ž0-9._-]{3,24}$/.test(value)){msg.textContent=t('nameInvalidUser');msg.classList.add('error');return}
   }
