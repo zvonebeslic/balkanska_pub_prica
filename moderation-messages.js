@@ -235,9 +235,9 @@
     const newName = String(input?.value || "").trim();
     note.className = "modmsg-note";
     note.textContent = "";
-    if (newName.length < 2 || newName.length > 20) {
+    if (!/^[\p{L}\p{N}]{3,20}$/u.test(newName)) {
       note.classList.add("error");
-      note.textContent = tx("Ime mora imati od 2 do 20 znakova.", "The name must be between 2 and 20 characters.");
+      note.textContent = tx("Ime mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.", "Use 3–20 characters, letters and numbers only.");
       return;
     }
     try {
