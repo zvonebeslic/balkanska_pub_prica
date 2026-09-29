@@ -298,6 +298,27 @@ function getMultiplayerQuizCounts(){
   for(const item of items){if(item?.mine&&item.mine===item?.q?.correctKey)correct++;else wrong++}
   return{correct,wrong}
 }
+function getMultiplayerViewedCount(){
+  if(botMode){
+    if(!mpQuizPlayId)return 0;
+    return Math.min(10,Math.max(botHistory.length,Math.min(10,botPos+1)))
+  }
+  const historyCount=Array.isArray(state?.history)?state.history.length:0;
+  if(state&&['playing','reveal','finished'].includes(state.status)){
+    return Math.min(10,Math.max(historyCount,(Number(state.round)||0)+1))
+  }
+  return historyCount
+}
+async function registerMultiplayerQuestionShare(){
+  if(!supabaseClient||!mpQuizPlayId||!mpQuizSessionId)return;
+  try{
+    const {error}=await supabaseClient.rpc('increment_quiz_play_share',{
+      p_play_id:mpQuizPlayId,
+      p_session_id:mpQuizSessionId
+    });
+    if(error)throw error
+  }catch(e){console.warn('Multiplayer share click was not saved:',e)}
+}
 async function ensureMultiplayerQuizTracking(matchKey,isBot=false){
   if(!supabaseClient||!matchKey)return null;
   const sessionId=makeMpQuizSessionId(matchKey);
@@ -327,7 +348,7 @@ async function ensureMultiplayerQuizTracking(matchKey,isBot=false){
           visitor_id:visitorId,
           session_id:sessionId,
           quiz_mode:'multiplayer',
-          topic:'Multiplayer',
+          topic:null,
           correct_answers:0,
           wrong_answers:0,
           completed:false
@@ -373,6 +394,8 @@ async function saveMultiplayerTrackedAnswer(item,index){
       is_correct:correct,
       is_exact:correct,
       was_skipped:skipped,
+      was_scrolled:false,
+      was_viewed:true,
       match_reason:skipped?'no_answer':correct?'multiplayer_correct':'multiplayer_wrong',
       answer_seconds:Number.isFinite(Number(item.answerSeconds))?Number(item.answerSeconds):null,
       language:currentLang
@@ -396,7 +419,8 @@ async function updateMultiplayerQuizTracking(){
     const {error}=await supabaseClient.from('quiz_plays').update({
       duration_seconds:duration,
       correct_answers:counts.correct,
-      wrong_answers:counts.wrong
+      wrong_answers:counts.wrong,
+      viewed_questions:getMultiplayerViewedCount()
     }).eq('id',mpQuizPlayId);
     if(error)throw error;
     persistMpTrackingState()
@@ -414,6 +438,7 @@ async function finishMultiplayerQuizTracking(completed){
       duration_seconds:duration,
       correct_answers:counts.correct,
       wrong_answers:counts.wrong,
+      viewed_questions:getMultiplayerViewedCount(),
       completed:Boolean(completed)
     }).eq('id',playId);
     if(error)throw error;
@@ -654,7 +679,7 @@ function buildQuestionActions(q){
     try{
       const {data,error}=await supabaseClient.functions.invoke('send-quiz-feedback',{body:{
         questionId:q.id||null,question:q.question||'',correctAnswer:answerText(q,q.correctKey)||null,
-        topic:q.topic||null,questionType:'abc',message,language:currentLang,pageUrl:window.location.href
+        topic:q.topic||null,questionType:'abc',quizMode:'multiplayer',quizPlayId:mpQuizPlayId,sessionId:mpQuizSessionId||currentVoteSessionId(),message,language:currentLang,pageUrl:window.location.href
       }});
       if(error)throw error;if(!data?.ok)throw new Error(data?.error||'Slanje nije potvrđeno.');
       ta.value='';note.classList.add('success');note.innerHTML='<strong>'+esc(t('feedbackThanks'))+'</strong><br>'+esc(t('feedbackReceived'));setTimeout(()=>fb.classList.remove('open'),2500)
@@ -693,9 +718,9 @@ async function shareQuestionAsImage(q){
   const message=t('questionShareText');
   try{
     const blob=await createQuestionShareBlob(q),file=new File([blob],'kviztogo-pitanje-'+(q.id||Date.now())+'.png',{type:'image/png'});
-    if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[file]}))){await navigator.share({title:'KvizToGo pitanje',text:message,files:[file]});showMpToast(t('questionReady'))}
-    else{downloadBlob(blob,file.name);await copyText(message);showMpToast(t('questionSaved'))}
-  }catch(e){if(e?.name!=='AbortError'){await copyText(message);showMpToast(t('quizLinkCopied'))}}
+    if(navigator.share&&(!navigator.canShare||navigator.canShare({files:[file]}))){await navigator.share({title:'KvizToGo pitanje',text:message,files:[file]});void registerMultiplayerQuestionShare();showMpToast(t('questionReady'))}
+    else{downloadBlob(blob,file.name);await copyText(message);void registerMultiplayerQuestionShare();showMpToast(t('questionSaved'))}
+  }catch(e){if(e?.name!=='AbortError'){await copyText(message);void registerMultiplayerQuestionShare();showMpToast(t('quizLinkCopied'))}}
 }
 
 async function createHistoryBlob(){
