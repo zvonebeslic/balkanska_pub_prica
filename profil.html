@@ -2115,6 +2115,15 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('a[h
 
       <button class="player-games-toggle" id="player-games-toggle" type="button" aria-expanded="false" aria-controls="player-games-details"><span id="player-games-toggle-label">Pregled odigranih kvizova</span><span class="player-games-toggle-icon" aria-hidden="true">⌄</span></button>
       <div class="player-games-details" id="player-games-details"><div class="player-games-details-inner">
+<section class="player-mode-section player-mode-section--multiplayer">
+          <div class="player-section-heading"><div><div class="player-section-title" id="profile-multiplayer-title">Multiplayer</div><div class="player-section-copy" id="profile-multiplayer-copy">Tvoja statistika 1 na 1 dvoboja.</div></div><span class="player-section-chip">1 VS 1</span></div>
+          <div class="player-mode-stats">
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-games-label">Odigrano</div><div class="player-mode-stat-value" id="multiplayer-games-played">0</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-wins-label">Pobjede</div><div class="player-mode-stat-value" id="multiplayer-wins">0</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-draws-label">Neriješeno</div><div class="player-mode-stat-value" id="multiplayer-draws">0</div></div>
+            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-losses-label">Porazi</div><div class="player-mode-stat-value" id="multiplayer-losses">0</div></div>
+          </div>
+        </section>
         <section class="player-mode-section player-mode-section--blitz">
           <div class="player-section-heading"><div><div class="player-section-title" id="profile-blitz-title">Blitz 60s</div><div class="player-section-copy" id="profile-blitz-copy">Poštena usporedba jer svi imaju isto vrijeme.</div></div><span class="player-section-chip">60s</span></div>
           <div class="player-mode-stats">
@@ -2170,15 +2179,7 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('a[h
           </div>
         </section>
         <section class="player-upcoming-card player-upcoming-card--collections"><div class="player-section-heading"><div><div class="player-section-title" id="profile-collection-title">Kviz kolekcije</div><div class="player-section-copy" id="profile-collection-copy">Posebni kvizovi od 20 pitanja o jednoj konkretnoj temi.</div></div><span class="player-section-chip" id="profile-collection-chip">Uskoro</span></div></section>
-        <section class="player-mode-section player-mode-section--multiplayer">
-          <div class="player-section-heading"><div><div class="player-section-title" id="profile-multiplayer-title">Multiplayer</div><div class="player-section-copy" id="profile-multiplayer-copy">Tvoja statistika 1 na 1 dvoboja.</div></div><span class="player-section-chip">1 VS 1</span></div>
-          <div class="player-mode-stats">
-            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-games-label">Odigrano</div><div class="player-mode-stat-value" id="multiplayer-games-played">0</div></div>
-            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-wins-label">Pobjede</div><div class="player-mode-stat-value" id="multiplayer-wins">0</div></div>
-            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-draws-label">Neriješeno</div><div class="player-mode-stat-value" id="multiplayer-draws">0</div></div>
-            <div class="player-mode-stat"><div class="player-mode-stat-label" id="multiplayer-losses-label">Porazi</div><div class="player-mode-stat-value" id="multiplayer-losses">0</div></div>
-          </div>
-        </section>
+        
       </div></div>
     </section>
 
