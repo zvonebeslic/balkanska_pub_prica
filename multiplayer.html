@@ -122,7 +122,7 @@ meReady:'Spreman',opponentReady:'Protivnik je spreman.',opponentUnknown:'?',oppo
 aiNote:'Ako naš sustav ne pronađe stvarnog protivnika, u igru se uključuje AI generirani protivnik kako bi se izbjeglo duže čekanje.',
 waitingStart:'Čekamo početak…',historyTitle:'Rezultati & povijest',downloadHistory:'📥 Preuzmi cijelu odigranu povijest',
 downloadHistoryNote:'Sva pitanja i odgovori iz trenutačne partije spremit će se u jednu dugu PNG sliku.',shareResult:'📤 Podijeli rezultat',
-rematch:'Revanš',newOpponent:'Novi protivnik',backQuiz:'Natrag',
+rematch:'Revanš',acceptRematch:'Prihvati revanš',rematchRequesting:'Šaljem revanš…',rematchWaiting:'Čekamo protivnika…',rematchError:'Zahtjev za revanš nije poslan. Pokušaj ponovno.',newOpponent:'Novi protivnik',backQuiz:'Natrag',
 searching:'Tražimo protivnika…',queue:'U redu čekanja',searchButton:'Tražim…',checkingQueue:'provjeravamo red čekanja',searchError:'Greška pri spajanju. Pokušaj ponovno.',
 preparingInvite:'Pripremam poveznicu…',waiting:'Čekamo…',friendNotJoined:'prijatelj još nije ušao',preparingInviteMeta:'Pripremamo pozivnicu',creatingPrivate:'Kreiramo privatni 1 na 1…',
 inviteError:'Pozivnicu nije moguće napraviti. Pokušaj ponovno.',inviteTitle:'KvizToGo 1 na 1',inviteMessage:'Pridruži mi se u kvizu 1 na 1 na KvizToGo! 🧠⚔️\n10 pitanja, vrijeme ovisi o duljini pitanja. Tko zna više?\n{url}',
@@ -158,7 +158,7 @@ meReady:'Ready',opponentReady:'Opponent is ready.',opponentUnknown:'?',opponentN
 aiNote:'If our system cannot find a real opponent, an AI-generated opponent joins the game so you do not have to wait too long.',
 waitingStart:'Waiting to start…',historyTitle:'Results & history',downloadHistory:'📥 Download full played history',
 downloadHistoryNote:'All questions and answers from the current match will be saved as one long PNG image.',shareResult:'📤 Share result',
-rematch:'Rematch',newOpponent:'New opponent',backQuiz:'Back',
+rematch:'Rematch',acceptRematch:'Accept rematch',rematchRequesting:'Requesting rematch…',rematchWaiting:'Waiting for opponent…',rematchError:'The rematch request could not be sent. Try again.',newOpponent:'New opponent',backQuiz:'Back',
 searching:'Finding an opponent…',queue:'In matchmaking queue',searchButton:'Searching…',checkingQueue:'checking the matchmaking queue',searchError:'Could not connect. Try again.',
 preparingInvite:'Preparing link…',waiting:'Waiting…',friendNotJoined:'your friend has not joined yet',preparingInviteMeta:'Preparing invitation',creatingPrivate:'Creating a private 1v1…',
 inviteError:'Could not create the invitation. Try again.',inviteTitle:'KvizToGo 1v1',inviteMessage:'Join me for a 1v1 quiz on KvizToGo! 🧠⚔️\n10 questions, with time based on question length. Who knows more?\n{url}',
@@ -555,7 +555,7 @@ function renderReal(s){
     clearInterval(tickTimer);$('timer').textContent='⏸';$('status').textContent=t('connectionLost');document.querySelectorAll('.answer').forEach(b=>b.disabled=true);return
   }
   if(s.status==='countdown'){
-    $('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('bothReady');updateClock(s);return
+    $('end').classList.add('hidden');$('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('bothReady');updateClock(s);return
   }
   if(s.status==='playing'||s.status==='reveal'){
     let q=s.question;if(!q)return;$('topic').textContent=q.topic||'KvizToGo';$('question').textContent=q.question||'';$('answers').innerHTML='';
@@ -564,7 +564,7 @@ function renderReal(s){
     else $('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);
     updateClock(s);return
   }
-  if(s.status==='finished'){stopPoll();clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score,s.opponent_score);return}
+  if(s.status==='finished'){clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score,s.opponent_score);updateRematchState(s);if(!pollTimer)startPoll();return}
   if(s.status==='cancelled'){stopPoll();clearInterval(tickTimer);void finishMultiplayerQuizTracking(false);$('status').textContent='';$('end').classList.remove('hidden');$('endScore').textContent=(s.me_score||0)+' : '+(s.opponent_score||0);$('endText').textContent=t('duelInterrupted')}
 }
 
@@ -584,6 +584,32 @@ function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
 function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');void finishMultiplayerQuizTracking(true);const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');void recordMultiplayerResult(matchKey,result,botMode)}
+function updateRematchState(s){
+  const btn=$('again');if(!btn)return;
+  if(botMode){btn.disabled=false;btn.textContent=t('rematch');return}
+  if(s?.opponent_rematch_requested&&!s?.me_rematch_requested){
+    btn.disabled=false;btn.textContent=t('acceptRematch');return
+  }
+  if(s?.me_rematch_requested){
+    btn.disabled=true;btn.textContent=t('rematchWaiting');return
+  }
+  btn.disabled=false;btn.textContent=t('rematch')
+}
+async function requestRematch(){
+  if(botMode){beginBotMatch();return}
+  if(!state?.match_id)return;
+  const matchId=state.match_id,btn=$('again');
+  if(btn){btn.disabled=true;btn.textContent=t('rematchRequesting')}
+  try{
+    state=await api('rematch',{match_id:matchId});
+    handle(state);
+    if(!pollTimer)startPoll()
+  }catch(e){
+    console.warn('Multiplayer rematch request failed:',e);
+    if(btn){btn.disabled=false;btn.textContent=t('rematch')}
+    showMpToast(t('rematchError'))
+  }
+}
 async function leave(){if(mpQuizPlayId&&!mpQuizCompleted)await finishMultiplayerQuizTracking(false);try{if(state?.match_id)await api('leave',{match_id:state.match_id});else await api('leave',{})}catch{}resetLobby()}
 
 /* AI fallback tek nakon serverovih 5 sekundi traženja. Bot je prikazan kao spreman, a igrač potvrđuje Kreni s kvizom. */
@@ -769,10 +795,10 @@ async function shareCurrentResult(){
 }
 
 $('meName').textContent=myName();$('find').onclick=findOpponent;$('friend').onclick=createFriendInvite;const langBtn=$('language-cycle-btn');if(langBtn)langBtn.onclick=()=>applyLanguage(currentLang==='hr'?'en':'hr');applyLanguage(currentLang);
-$('again').onclick=async()=>{if(botMode){beginBotMatch();return}await leave();findOpponent()};
+$('again').onclick=requestRematch;
 $('newOpp').onclick=async()=>{await leave();findOpponent()};
 $('mp-download-history').onclick=downloadFullHistory;$('mp-share-result').onclick=shareCurrentResult;updateHistoryActionButtons();
-const inviteParam=new URLSearchParams(location.search).get('invite');if(inviteParam){joinFriendInvite(inviteParam)}else{api('state',{}).then(s=>{state=s;if(s?.match_id&&['ready','countdown','playing','reveal','finished'].includes(s.status)){handle(s);if(['ready','countdown','playing','reveal'].includes(s.status))startPoll()}else if(['waiting','invite_waiting','bot'].includes(s?.status)){api('leave',{}).catch(()=>{}).finally(()=>resetLobby())}else resetLobby()}).catch(()=>resetLobby())};
+const inviteParam=new URLSearchParams(location.search).get('invite');if(inviteParam){joinFriendInvite(inviteParam)}else{api('state',{}).then(s=>{state=s;if(s?.match_id&&['ready','countdown','playing','reveal','finished'].includes(s.status)){handle(s);if(['ready','countdown','playing','reveal','finished'].includes(s.status))startPoll()}else if(['waiting','invite_waiting','bot'].includes(s?.status)){api('leave',{}).catch(()=>{}).finally(()=>resetLobby())}else resetLobby()}).catch(()=>resetLobby())};
 window.addEventListener('pagehide',()=>{if(!state?.match_id&&(state?.status==='invite_waiting'||state?.status==='waiting')){fetch(SB+'/rest/v1/rpc/multiplayer_v3',{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify({p_token:token(),p_action:'leave',p_payload:{}}),keepalive:true}).catch(()=>{})}});
 </script>
 </body>
