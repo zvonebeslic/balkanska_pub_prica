@@ -2241,8 +2241,8 @@ document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('a[h
       </div>
 
       <label class="field-label" for="username-input" data-i18n="newUsername">Novo korisničko ime</label>
-      <input class="field-input" id="username-input" type="text" maxlength="24" autocomplete="off">
-      <p class="field-help" data-i18n="usernameRules">3–24 znaka. Dopuštena su slova, brojevi, točka, crtica i donja crta.</p>
+      <input class="field-input" id="username-input" type="text" maxlength="20" autocomplete="off">
+      <p class="field-help" data-i18n="usernameRules">3–20 znakova. Dopuštena su samo slova i brojevi.</p>
       <p class="modal-message" id="username-message"></p>
 
       <div class="modal-actions">
@@ -2420,7 +2420,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
         deleteAccount: "Izbriši račun",
         usernameModalTitle: "Uredi korisničko ime",
         newUsername: "Novo korisničko ime",
-        usernameRules: "3–24 znaka. Dopuštena su slova, brojevi, točka, crtica i donja crta.",
+        usernameRules: "3–20 znakova. Dopuštena su samo slova i brojevi.",
         emailModalTitle: "Promijeni e-mail",
         newEmail: "Nova e-mail adresa",
         emailHelp: "Supabase će poslati poruku za potvrdu nove adrese.",
@@ -2484,7 +2484,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
         deleteAccount: "Delete account",
         usernameModalTitle: "Edit username",
         newUsername: "New username",
-        usernameRules: "3–24 characters. Letters, numbers, dots, hyphens and underscores are allowed.",
+        usernameRules: "3–20 characters. Letters and numbers only.",
         emailModalTitle: "Change e-mail",
         newEmail: "New e-mail address",
         emailHelp: "Supabase will send a confirmation message to the new address.",
@@ -3106,7 +3106,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
     }
 
     function isValidUsername(username) {
-      return /^[A-Za-zÀ-ž0-9._-]{3,24}$/.test(username);
+      return /^[\p{L}\p{N}]{3,20}$/u.test(username);
     }
 
     async function checkUsernameAvailability(username) {
