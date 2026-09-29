@@ -197,6 +197,43 @@ const MP_SKILL_ACCURACY={excellent:[.84,.94],veryGood:[.72,.86],average:[.53,.70
 function mpBotAccuracy(p){const[a,b]=MP_SKILL_ACCURACY[p.skill]||[.45,.65],x=Math.max(0,Math.min(1,.58*p.cons+.42*p.bias));return a+(b-a)*x}
 function mpBotDelay(p){const mid=(p.base[0]+p.base[1])/2,perQ=mid/30,speed=Math.max(0,Math.min(1,(perQ-8)/12)),center=6100+speed*3000,spread=260+(1-p.cons)*1050;return Math.max(6000,Math.min(9700,Math.round(center+(Math.random()-.5)*2*spread)))}
 const supabaseClient=window.supabase&&typeof window.supabase.createClient==='function'?window.supabase.createClient(SB,KEY):null;
+
+const MP_STATS_BASE='kviztogo_multiplayer_stats_v1',MP_GUEST_IDENTITY='kviztogo_guest_identity_v1';
+function mpTimestamp(d){const p=(v,n=2)=>String(v).padStart(n,'0');return p(d.getDate())+p(d.getMonth()+1)+d.getFullYear()+p(d.getHours())+p(d.getMinutes())+p(d.getSeconds())+p(d.getMilliseconds(),3)}
+function ensureMpGuestIdentity(){
+  try{
+    const saved=JSON.parse(localStorage.getItem(MP_GUEST_IDENTITY)||'null');
+    if(saved?.id&&saved?.timestamp)return saved;
+  }catch{}
+  const d=new Date(),id=(crypto?.randomUUID?crypto.randomUUID():Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)),compact=id.replace(/[^a-z0-9]/gi,'').toUpperCase();
+  const value={version:1,id,createdAt:d.toISOString(),timestamp:mpTimestamp(d),suffix:compact.slice(-8).padStart(8,'0'),displayName:''};
+  try{localStorage.setItem(MP_GUEST_IDENTITY,JSON.stringify(value))}catch{}
+  return value
+}
+function emptyMpStats(){return{gamesPlayed:0,wins:0,draws:0,losses:0,recorded:[]}}
+function normalizeMpStats(v){const s=v&&typeof v==='object'?v:{};return{gamesPlayed:Math.max(0,Number(s.gamesPlayed)||0),wins:Math.max(0,Number(s.wins)||0),draws:Math.max(0,Number(s.draws)||0),losses:Math.max(0,Number(s.losses)||0),recorded:Array.isArray(s.recorded)?[...new Set(s.recorded.map(String))].slice(-2500):[]}}
+async function recordMultiplayerResult(matchKey,outcome,isBot=false){
+  const key=String(matchKey||'').trim();if(!key||!['win','draw','loss'].includes(outcome))return;
+  let user=null;try{user=(await supabaseClient?.auth?.getSession?.())?.data?.session?.user||null}catch{}
+  const identity=user?.id?'user:'+user.id:'guest:'+ensureMpGuestIdentity().id;
+  const storageKey=MP_STATS_BASE+':'+identity;
+  let local=emptyMpStats();try{local=normalizeMpStats(JSON.parse(localStorage.getItem(storageKey)||'null'))}catch{}
+  if(!local.recorded.includes(key)){
+    local.recorded.push(key);local.recorded=local.recorded.slice(-2500);local.gamesPlayed++;
+    if(outcome==='win')local.wins++;else if(outcome==='draw')local.draws++;else local.losses++;
+    try{localStorage.setItem(storageKey,JSON.stringify(local))}catch{}
+  }
+  if(user?.id&&supabaseClient){
+    try{
+      const {error}=await supabaseClient.from('multiplayer_profile_results').upsert(
+        {user_id:user.id,match_key:key,outcome,is_bot:!!isBot},
+        {onConflict:'user_id,match_key',ignoreDuplicates:true}
+      );
+      if(error)throw error;
+    }catch(e){console.warn('Multiplayer profile result was not synced:',e)}
+  }
+}
+
 let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='';const questionVotes=new Map();
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
@@ -301,7 +338,7 @@ function handle(s){
 function renderReal(s){
   $('meScore').textContent=s.me_score||0;$('oppScore').textContent=s.opponent_score||0;$('round').textContent=(Number(s.round||0)+1)+' / 10';renderServerHistory(s);
   if(s.status==='finished'&&s.reason==='disconnect_forfeit'){
-    stopPoll();clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score||0,s.opponent_score||0,s.departed!==s.slot?'win':'lose');return
+    stopPoll();clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score||0,s.opponent_score||0,s.departed!==s.slot?'win':'loss');return
   }
   if(s.opponent_disconnected&&['countdown','playing','reveal'].includes(s.status)){
     clearInterval(tickTimer);$('timer').textContent='⏸';$('status').textContent=t('connectionLost');document.querySelectorAll('.answer').forEach(b=>b.disabled=true);return
@@ -335,7 +372,7 @@ function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot
 function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
-function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'lose':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='lose'?t('endLose'):t('endDraw')}
+function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');void recordMultiplayerResult(matchKey,result,botMode)}
 async function leave(){try{if(state?.match_id)await api('leave',{match_id:state.match_id});else await api('leave',{})}catch{}resetLobby()}
 
 /* AI fallback tek nakon serverovih 5 sekundi traženja. Bot je prikazan kao spreman, a igrač potvrđuje Kreni s kvizom. */
