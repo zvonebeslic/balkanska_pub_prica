@@ -3003,11 +3003,11 @@ body.player-panel-open { overflow: hidden; }
         <div class="daily30-history" id="daily30-history">
           <div class="daily30-calendar">
             <div class="daily30-calendar-head">
-              <button class="daily30-month-nav" id="daily30-month-prev" type="button" aria-label="Prethodni mjesec">‹</button>
+              <button class="daily30-month-nav" id="daily30-month-prev" type="button" aria-label="Prethodni mjesec" data-i18n-aria-label="previousMonth">‹</button>
               <div class="daily30-month-label" id="daily30-month-label">—</div>
-              <button class="daily30-month-nav" id="daily30-month-next" type="button" aria-label="Sljedeći mjesec">›</button>
+              <button class="daily30-month-nav" id="daily30-month-next" type="button" aria-label="Sljedeći mjesec" data-i18n-aria-label="nextMonth">›</button>
             </div>
-            <div class="daily30-weekdays" aria-hidden="true"><span>PO</span><span>UT</span><span>SR</span><span>ČE</span><span>PE</span><span>SU</span><span>NE</span></div>
+            <div class="daily30-weekdays" aria-hidden="true"><span data-i18n="weekdayMon">PO</span><span data-i18n="weekdayTue">UT</span><span data-i18n="weekdayWed">SR</span><span data-i18n="weekdayThu">ČE</span><span data-i18n="weekdayFri">PE</span><span data-i18n="weekdaySat">SU</span><span data-i18n="weekdaySun">NE</span></div>
             <div class="daily30-days" id="daily30-days"></div>
           </div>
         </div>
@@ -3016,7 +3016,7 @@ body.player-panel-open { overflow: hidden; }
           <div class="daily30-name-title" data-i18n="dailyNameTitle">Kako želiš da piše na ljestvici?</div>
           <div class="daily30-name-copy" data-i18n="dailyNameCopy">Bez računa i prijave — ime vrijedi samo na ovom uređaju, a broj gosta nikad se ne prikazuje javno.</div>
           <div class="daily30-name-row">
-            <input class="daily30-name-input" id="daily30-name-input" type="text" maxlength="20" autocomplete="nickname" placeholder="Tvoje ime">
+            <input class="daily30-name-input" id="daily30-name-input" type="text" maxlength="20" autocomplete="nickname" placeholder="Tvoje ime" data-i18n-placeholder="dailyNamePlaceholder">
             <button class="daily30-name-save" id="daily30-name-save" type="button" data-i18n="dailyNameSave">Spremi</button>
           </div>
         </div>
@@ -3817,6 +3817,7 @@ if (!supabaseClient) {
       dailyNameCopy: "Bez računa i prijave — ime vrijedi samo na ovom uređaju, a broj gosta nikad se ne prikazuje javno.",
       dailyNameSave: "Spremi",
       dailyNameEdit: "Promijeni ime na ljestvici",
+      dailyNamePlaceholder: "Tvoje ime", previousMonth: "Prethodni mjesec", nextMonth: "Sljedeći mjesec", weekdayMon: "PO", weekdayTue: "UT", weekdayWed: "SR", weekdayThu: "ČE", weekdayFri: "PE", weekdaySat: "SU", weekdaySun: "NE",
       modeBlitzLabel: "Blitz 60s",
       modeBlitzDesc: "jedno pitanje za drugim (igraj s prijateljima)",
       modeRelaxLabel: "Bez vremena",
@@ -3923,6 +3924,7 @@ if (!supabaseClient) {
       dailyNameCopy: "No account or sign-in — the name stays on this device, and your guest number is never shown publicly.",
       dailyNameSave: "Save",
       dailyNameEdit: "Change leaderboard name",
+      dailyNamePlaceholder: "Your name", previousMonth: "Previous month", nextMonth: "Next month", weekdayMon: "MON", weekdayTue: "TUE", weekdayWed: "WED", weekdayThu: "THU", weekdayFri: "FRI", weekdaySat: "SAT", weekdaySun: "SUN",
       modeBlitzLabel: "Blitz 60s",
       modeBlitzDesc: "one question after another (play with friends)",
       modeRelaxLabel: "No timer",
