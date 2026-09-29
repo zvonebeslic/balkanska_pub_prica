@@ -9506,6 +9506,9 @@ if (!supabaseClient) {
             correctAnswer: mainAnswer,
             topic: questionSnapshot.topic || null,
             questionType: questionSnapshot.type || null,
+            quizMode: getTrackingQuizMode(),
+            quizPlayId: activeQuizPlayId,
+            sessionId: activeQuizSessionId,
             message,
             language: currentLang,
             pageUrl: window.location.href
