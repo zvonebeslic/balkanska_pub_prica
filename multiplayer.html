@@ -339,6 +339,7 @@ async function saveMpIdentityName(){
     if(mpIdentityIsGuest){
       const ok=await claimGuestName(value);if(!ok){msg.textContent=t('nameUnavailable');msg.classList.add('error');return}
       const identity=ensureMpGuestIdentity();identity.displayName=value;if(!saveMpGuestIdentity(identity))throw new Error(t('nameSaveError'));
+      try{localStorage.removeItem(MP_GUEST_ALIAS)}catch{}
       mpIdentityName=value
     }else{
       const available=await supabaseClient.rpc('username_available',{candidate:value});
