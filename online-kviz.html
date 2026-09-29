@@ -3038,10 +3038,6 @@ body.player-panel-open { overflow: hidden; }
           <span class="mode-label" data-i18n="modeBlitzLabel">Blitz 60s</span>
           <span class="mode-desc" data-i18n="modeBlitzDesc">jedno pitanje za drugim (igraj s prijateljima)</span>
         </button>
-        <button class="mode-pill mode-pill--soon" type="button" disabled aria-disabled="true">
-          <span class="mode-label" data-i18n="storytellingLabel">Storytelling</span>
-          <span class="mode-desc" data-i18n="comingSoon">Uskoro</span>
-        </button>
         <button class="mode-pill" data-mode="relax">
           <span class="mode-label" data-i18n="modeRelaxLabel">Bez vremena</span>
           <span class="mode-desc" data-i18n="modeRelaxDesc">Nasumična pitanja (igraj do besvijesti)</span>
@@ -3134,6 +3130,10 @@ body.player-panel-open { overflow: hidden; }
       </div>
 
       <div class="future-mode-row" aria-label="Dodatni načini kviza">
+        <button class="themed-btn future-mode-btn" id="btn-storytelling-soon" type="button" disabled aria-disabled="true">
+          <span data-i18n="storytellingLabel">Storytelling</span>
+          <span class="coming-pill" data-i18n="comingSoon">Uskoro</span>
+        </button>
         <button class="themed-btn future-mode-btn" id="btn-collections" type="button" disabled>
           <span data-i18n="collectionsBtn">Kviz kolekcije</span>
           <span class="coming-pill" data-i18n="comingSoon">Uskoro</span>
