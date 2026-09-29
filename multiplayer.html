@@ -292,8 +292,8 @@ async function loadMpIdentity(){
   mpIdentityIsGuest=true;mpIdentityUserId=null;
   const identity=ensureMpGuestIdentity();
   if(identity.displayName&&!isLegacyAutoMpAlias(identity)){
-    mpIdentityName=String(identity.displayName).trim().slice(0,20);
-    try{await claimGuestName(mpIdentityName)}catch{}
+    const existingName=String(identity.displayName).trim().slice(0,20);
+    try{mpIdentityName=await claimGuestName(existingName)?existingName:''}catch{mpIdentityName=''}
   }else{
     mpIdentityName='';
   }
