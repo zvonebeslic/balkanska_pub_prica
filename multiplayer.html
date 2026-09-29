@@ -257,6 +257,8 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
 }
 
 let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='';const questionVotes=new Map();
+let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
+
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
 function myName(){try{return localStorage.getItem('kviztogo_username')||localStorage.getItem('username')||localStorage.getItem('guestName')||localStorage.getItem('guest_name')||t('guest')}catch{return t('guest')}}
@@ -264,6 +266,155 @@ function uuid(){return crypto.randomUUID()}
 function token(){let t=localStorage.getItem('kviztogo_mp_token_v3');if(!t||!/^[a-f0-9-]{36}\.[a-f0-9-]{36}$/.test(t)){t=uuid()+'.'+uuid();localStorage.setItem('kviztogo_mp_token_v3',t)}return t}
 function recent(){try{let a=JSON.parse(localStorage.getItem(RECENT)||'[]');return Array.isArray(a)?a.slice(-2000):[]}catch{return[]}}
 function remember(ids){try{localStorage.setItem(RECENT,JSON.stringify(recent().concat(ids).slice(-2000)))}catch{}}
+
+function mpQuizTrackingKey(sessionId){return'kviztogo_mp_quiz_tracking_v1:'+sessionId}
+function makeMpQuizSessionId(matchKey){return'multiplayer:'+String(matchKey)+':'+ensureMpGuestIdentity().id}
+function loadMpSavedAnswers(sessionId){
+  try{const x=JSON.parse(localStorage.getItem(mpQuizTrackingKey(sessionId))||'null');return new Set(Array.isArray(x?.answers)?x.answers.map(String):[])}catch{return new Set()}
+}
+function syncMultiplayerActiveTime(now=Date.now()){
+  if(!mpQuizPlayId||mpQuizCompleted||!mpQuizLastTickAt)return;
+  if(mpQuizPageVisible&&now>mpQuizLastTickAt)mpQuizActiveMs+=now-mpQuizLastTickAt;
+  mpQuizLastTickAt=now
+}
+function getMultiplayerQuizDurationSeconds(){syncMultiplayerActiveTime(Date.now());return Math.max(0,Math.round(mpQuizActiveMs/1000))}
+function persistMpTrackingState(){
+  if(!mpQuizSessionId)return;
+  try{localStorage.setItem(mpQuizTrackingKey(mpQuizSessionId),JSON.stringify({answers:[...mpQuizSavedAnswers].slice(-100),durationSeconds:getMultiplayerQuizDurationSeconds()}))}catch{}
+}
+function getMultiplayerQuizCounts(){
+  const items=currentHistoryEntries();let correct=0,wrong=0;
+  for(const item of items){if(item?.mine&&item.mine===item?.q?.correctKey)correct++;else wrong++}
+  return{correct,wrong}
+}
+async function ensureMultiplayerQuizTracking(matchKey,isBot=false){
+  if(!supabaseClient||!matchKey)return null;
+  const sessionId=makeMpQuizSessionId(matchKey);
+  if(mpQuizSessionId===sessionId&&mpQuizPlayId)return mpQuizPlayId;
+  if(mpQuizStartPromise&&mpQuizSessionId===sessionId)return mpQuizStartPromise;
+  if(mpQuizPlayId&&!mpQuizCompleted&&mpQuizSessionId!==sessionId)await finishMultiplayerQuizTracking(false);
+
+  mpQuizSessionId=sessionId;mpQuizMatchKey=String(matchKey);mpQuizCompleted=false;mpQuizSavedAnswers=loadMpSavedAnswers(sessionId);
+  mpQuizStartPromise=(async()=>{
+    try{
+      const {data:authData}=await supabaseClient.auth.getSession();
+      mpQuizUserId=authData?.session?.user?.id||null;
+      const visitorId=mpQuizUserId?null:ensureMpGuestIdentity().id;
+      const {data:existing,error:existingError}=await supabaseClient
+        .from('quiz_plays')
+        .select('id,duration_seconds,completed')
+        .eq('session_id',sessionId)
+        .maybeSingle();
+      if(existingError)throw existingError;
+      if(existing?.id){
+        mpQuizPlayId=existing.id;
+        mpQuizActiveMs=Math.max(0,Number(existing.duration_seconds)||0)*1000;
+        mpQuizCompleted=Boolean(existing.completed);
+      }else{
+        const {data,error}=await supabaseClient.from('quiz_plays').insert({
+          user_id:mpQuizUserId,
+          visitor_id:visitorId,
+          session_id:sessionId,
+          quiz_mode:'multiplayer',
+          topic:'Multiplayer',
+          correct_answers:0,
+          wrong_answers:0,
+          completed:false
+        }).select('id').single();
+        if(error)throw error;
+        mpQuizPlayId=data?.id||null;mpQuizActiveMs=0;mpQuizCompleted=false;
+      }
+      mpQuizLastTickAt=Date.now();mpQuizPageVisible=document.visibilityState==='visible';
+      clearInterval(mpQuizUpdateTimer);
+      if(!mpQuizCompleted)mpQuizUpdateTimer=setInterval(()=>{void updateMultiplayerQuizTracking()},3000);
+      return mpQuizPlayId
+    }catch(e){
+      console.warn('Multiplayer quiz tracking could not start:',e);
+      mpQuizPlayId=null;return null
+    }finally{mpQuizStartPromise=null}
+  })();
+  return mpQuizStartPromise
+}
+async function saveMultiplayerTrackedAnswer(item,index){
+  if(!item?.q||!mpQuizSessionId)return;
+  if(mpQuizStartPromise)await mpQuizStartPromise;
+  if(!mpQuizPlayId)return;
+  const q=item.q,id=String(q.id??q.question??'').trim();
+  const answerKey=String(item.mine||'');
+  const dedupeKey=String(index)+':'+id;
+  if(mpQuizSavedAnswers.has(dedupeKey))return;
+  const skipped=!answerKey;
+  const correct=Boolean(answerKey)&&answerKey===q.correctKey;
+  try{
+    const {error}=await supabaseClient.from('quiz_answers').insert({
+      quiz_play_id:mpQuizPlayId,
+      session_id:mpQuizSessionId,
+      user_id:mpQuizUserId,
+      question_id:id||null,
+      question_text:q.question||'',
+      question_topic:q.topic||null,
+      question_type:'abc',
+      quiz_mode:'multiplayer',
+      selected_theme:q.topic||null,
+      user_answer:skipped?null:answerText(q,answerKey),
+      correct_answer:answerText(q,q.correctKey)||null,
+      matched_answer:skipped?null:answerKey,
+      is_correct:correct,
+      is_exact:correct,
+      was_skipped:skipped,
+      match_reason:skipped?'no_answer':correct?'multiplayer_correct':'multiplayer_wrong',
+      language:currentLang
+    });
+    if(error&&error.code!=='23505')throw error;
+    mpQuizSavedAnswers.add(dedupeKey);persistMpTrackingState()
+  }catch(e){console.warn('Multiplayer answer was not saved:',e)}
+}
+async function syncMultiplayerTrackedAnswers(){
+  if(mpQuizStartPromise)await mpQuizStartPromise;
+  if(!mpQuizPlayId)return;
+  const items=currentHistoryEntries();
+  for(let i=0;i<items.length;i++)await saveMultiplayerTrackedAnswer(items[i],i);
+  await updateMultiplayerQuizTracking()
+}
+async function updateMultiplayerQuizTracking(){
+  if(mpQuizStartPromise)await mpQuizStartPromise;
+  if(!supabaseClient||!mpQuizPlayId||mpQuizCompleted)return;
+  const counts=getMultiplayerQuizCounts(),duration=getMultiplayerQuizDurationSeconds();
+  try{
+    const {error}=await supabaseClient.from('quiz_plays').update({
+      duration_seconds:duration,
+      correct_answers:counts.correct,
+      wrong_answers:counts.wrong
+    }).eq('id',mpQuizPlayId);
+    if(error)throw error;
+    persistMpTrackingState()
+  }catch(e){console.warn('Multiplayer quiz tracking update failed:',e)}
+}
+async function finishMultiplayerQuizTracking(completed){
+  if(mpQuizStartPromise)await mpQuizStartPromise;
+  if(!supabaseClient||!mpQuizPlayId||mpQuizCompleted)return;
+  await syncMultiplayerTrackedAnswers();
+  const playId=mpQuizPlayId,counts=getMultiplayerQuizCounts(),duration=getMultiplayerQuizDurationSeconds();
+  clearInterval(mpQuizUpdateTimer);mpQuizUpdateTimer=null;mpQuizCompleted=true;
+  try{
+    const {error}=await supabaseClient.from('quiz_plays').update({
+      finished_at:new Date().toISOString(),
+      duration_seconds:duration,
+      correct_answers:counts.correct,
+      wrong_answers:counts.wrong,
+      completed:Boolean(completed)
+    }).eq('id',playId);
+    if(error)throw error;
+    persistMpTrackingState()
+  }catch(e){console.warn('Multiplayer quiz tracking finish failed:',e)}
+}
+document.addEventListener('visibilitychange',()=>{
+  syncMultiplayerActiveTime(Date.now());
+  mpQuizPageVisible=document.visibilityState==='visible';
+  mpQuizLastTickAt=Date.now();
+  if(mpQuizPlayId&&!mpQuizCompleted)void updateMultiplayerQuizTracking()
+});
+
 async function api(action,payload={}){let r=await fetch(SB+'/rest/v1/rpc/multiplayer_v3',{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify({p_token:token(),p_action:action,p_payload:payload})});if(!r.ok)throw new Error(await r.text());return r.json()}
 function stopPoll(){clearInterval(pollTimer);pollTimer=null}
 function startPoll(){stopPoll();pollTimer=setInterval(()=>refresh('poll').catch(()=>{}),500)}
@@ -358,6 +509,7 @@ function handle(s){
 }
 
 function renderReal(s){
+  if(s?.match_id&&['countdown','playing','reveal','finished','cancelled'].includes(s.status))void ensureMultiplayerQuizTracking(s.match_id,false).then(()=>syncMultiplayerTrackedAnswers());
   $('meScore').textContent=s.me_score||0;$('oppScore').textContent=s.opponent_score||0;$('round').textContent=(Number(s.round||0)+1)+' / 10';renderServerHistory(s);
   if(s.status==='finished'&&s.reason==='disconnect_forfeit'){
     stopPoll();clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score||0,s.opponent_score||0,s.departed!==s.slot?'win':'loss');return
@@ -376,7 +528,7 @@ function renderReal(s){
     updateClock(s);return
   }
   if(s.status==='finished'){stopPoll();clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score,s.opponent_score);return}
-  if(s.status==='cancelled'){stopPoll();clearInterval(tickTimer);$('status').textContent='';$('end').classList.remove('hidden');$('endScore').textContent=(s.me_score||0)+' : '+(s.opponent_score||0);$('endText').textContent=t('duelInterrupted')}
+  if(s.status==='cancelled'){stopPoll();clearInterval(tickTimer);void finishMultiplayerQuizTracking(false);$('status').textContent='';$('end').classList.remove('hidden');$('endScore').textContent=(s.me_score||0)+' : '+(s.opponent_score||0);$('endText').textContent=t('duelInterrupted')}
 }
 
 function updateClock(s){
@@ -390,12 +542,12 @@ function updateClock(s){
 }
 async function realAnswer(k,b){if(state?.status!=='playing'||state.my_choice)return;b.disabled=true;try{state=await api('answer',{match_id:state.match_id,round:String(state.round),choice:k});handle(state)}catch{b.disabled=false}}
 function answerText(q,k){return(q.answers||[]).find(a=>a.key===k)?.text||''}
-function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot=s.slot,sig=JSON.stringify(h.map(x=>[x.q?.id,x.choice1,x.choice2]));if(sig!==historyRenderSignature){historyRenderSignature=sig;$('history').innerHTML=h.length?'':'<div class="meta" style="margin-top:.7rem">'+esc(t('historyEmpty'))+'</div>';h.slice().reverse().forEach((x,ri)=>{let q=x.q||{},mine=slot===1?x.choice1:x.choice2,theirs=slot===1?x.choice2:x.choice1;addHist(q,mine,theirs,h.length-ri,s.opponent_name)});remember(h.map(x=>x.q?.id).filter(Boolean))}updateHistoryActionButtons()}
+function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot=s.slot,sig=JSON.stringify(h.map(x=>[x.q?.id,x.choice1,x.choice2]));if(sig!==historyRenderSignature){historyRenderSignature=sig;$('history').innerHTML=h.length?'':'<div class="meta" style="margin-top:.7rem">'+esc(t('historyEmpty'))+'</div>';h.slice().reverse().forEach((x,ri)=>{let q=x.q||{},mine=slot===1?x.choice1:x.choice2,theirs=slot===1?x.choice2:x.choice1;addHist(q,mine,theirs,h.length-ri,s.opponent_name)});remember(h.map(x=>x.q?.id).filter(Boolean));void syncMultiplayerTrackedAnswers()}updateHistoryActionButtons()}
 function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
-function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');void recordMultiplayerResult(matchKey,result,botMode)}
-async function leave(){try{if(state?.match_id)await api('leave',{match_id:state.match_id});else await api('leave',{})}catch{}resetLobby()}
+function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');void finishMultiplayerQuizTracking(true);const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');void recordMultiplayerResult(matchKey,result,botMode)}
+async function leave(){if(mpQuizPlayId&&!mpQuizCompleted)await finishMultiplayerQuizTracking(false);try{if(state?.match_id)await api('leave',{match_id:state.match_id});else await api('leave',{})}catch{}resetLobby()}
 
 /* AI fallback tek nakon serverovih 5 sekundi traženja. Bot je prikazan kao spreman, a igrač potvrđuje Kreni s kvizom. */
 async function prepareBot(){
@@ -414,7 +566,7 @@ async function loadBotQuestions(){
 function hash(s){let h=2166136261;for(let ch of s.toLowerCase()){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return(h>>>0).toString(36)}
 function shuffle(a){a=a.slice();for(let i=a.length-1;i;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function beginBotMatch(){
-  botSessionId='multiplayer-bot:'+uuid();historyRenderSignature='';botPos=botMe=botScore=0;botHistory=[];$('history').innerHTML='';$('end').classList.add('hidden');showGame();$('meGame').textContent=myName();$('oppGame').textContent=bot.name;$('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('opponentReady');let end=Date.now()+5000;
+  botSessionId='multiplayer-bot:'+uuid();void ensureMultiplayerQuizTracking(botSessionId,true);historyRenderSignature='';botPos=botMe=botScore=0;botHistory=[];$('history').innerHTML='';$('end').classList.add('hidden');showGame();$('meGame').textContent=myName();$('oppGame').textContent=bot.name;$('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('opponentReady');let end=Date.now()+5000;
   clearInterval(tickTimer);const draw=()=>{let sec=Math.max(0,Math.ceil((end-Date.now())/1000));$('timer').textContent=String(sec);$('question').innerHTML='<span class="countdown">'+esc(t('questionIn',{sec}))+'</span>';if(sec<=0){clearInterval(tickTimer);renderBot()}};
   draw();tickTimer=setInterval(draw,200)
 }
@@ -428,7 +580,7 @@ function renderBot(){
 }
 function botUserAnswer(k,b){if(botMeAnswered)return;botMeAnswered=true;botMyChoice=k;let q=botQuestions[botPos];if(k===q.correctKey){botMe++;b.classList.add('good');$('meScore').textContent=botMe;botClose(q)}else{b.classList.add('bad');b.disabled=true;$('status').textContent=t('wrongOpponentCan');if(botOppAnswered)botClose(q)}}
 function botAnswer(q){if(botOppAnswered)return;botOppAnswered=true;let ok=Math.random()<bot.accuracy;botChoice=ok?q.correctKey:shuffle(q.answers.filter(a=>a.key!==q.correctKey))[0].key;if(ok){botScore++;$('oppScore').textContent=botScore;botClose(q)}else if(botMeAnswered)botClose(q);else $('status').textContent=t('opponentWrong',{opponent:bot.name})}
-function botClose(q){clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});$('timer').textContent='0';$('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);botHistory.push({q,me:botMyChoice,opp:botChoice});$('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));remember([q.id]);updateHistoryActionButtons();setTimeout(()=>{botPos++;if(botPos>=10)showEnd(botMe,botScore);else renderBot()},2000)}
+function botClose(q){clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});$('timer').textContent='0';$('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);botHistory.push({q,me:botMyChoice,opp:botChoice});$('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();setTimeout(()=>{botPos++;if(botPos>=10)showEnd(botMe,botScore);else renderBot()},2000)}
 
 
 function currentHistoryEntries(){
@@ -446,8 +598,8 @@ async function saveQuestionVote(q,vote){
     const {data:authData}=await supabaseClient.auth.getSession();
     const userId=authData?.session?.user?.id||null;
     const {error}=await supabaseClient.from('quiz_question_votes').insert({
-      quiz_play_id:null,
-      session_id:currentVoteSessionId(),
+      quiz_play_id:mpQuizPlayId,
+      session_id:mpQuizSessionId||currentVoteSessionId(),
       user_id:userId,
       question_id:q.id!=null?String(q.id):null,
       question_text:q.question||'',
