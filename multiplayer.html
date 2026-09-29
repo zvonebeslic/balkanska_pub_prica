@@ -282,7 +282,7 @@ async function loadMpIdentity(){
       if(user?.id){
         let name=user.user_metadata?.username||user.user_metadata?.full_name||user.user_metadata?.name||user.email?.split('@')[0]||'Kvizoman';
         try{const q=await supabaseClient.from('profiles').select('username').eq('id',user.id).maybeSingle();if(q.data?.username)name=q.data.username}catch{}
-        mpIdentityIsGuest=false;mpIdentityUserId=user.id;mpIdentityName=String(name||'Kvizoman').trim().slice(0,20);
+        mpIdentityIsGuest=false;mpIdentityUserId=user.id;mpIdentityName=String(name||'Kvizoman').trim().slice(0,24);
         try{localStorage.setItem('kviztogo_username',mpIdentityName)}catch{}
         try{await supabaseClient.rpc('daily30_claim_name',{p_player_key:'user:'+user.id,p_user_id:user.id,p_player_name:mpIdentityName})}catch{}
         syncMpIdentityUi();return mpIdentityName
