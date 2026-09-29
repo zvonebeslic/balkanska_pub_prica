@@ -2840,8 +2840,8 @@ body.player-panel-open { overflow: hidden; }
 }
 
 
-/* Istaknuti ulaz u zasebni način igre iznad Dnevnih 30 */
-.mode-pill--launch-platinum {
+/* Multiplayer ulaz iznad Dnevnih 30 */
+.mode-pill--multiplayer-platinum {
   position: relative;
   text-decoration: none;
   width: 100%;
@@ -2855,7 +2855,7 @@ body.player-panel-open { overflow: hidden; }
     linear-gradient(135deg, #263449, #111b2b);
   box-shadow: 0 12px 30px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.30), 0 0 22px rgba(203,213,225,.10);
 }
-.mode-pill--launch-platinum::before {
+.mode-pill--multiplayer-platinum::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2866,15 +2866,15 @@ body.player-panel-open { overflow: hidden; }
   background: linear-gradient(105deg, transparent 12%, rgba(255,255,255,.18) 36%, transparent 52%, rgba(34,197,94,.08) 73%, rgba(47,128,255,.10) 88%);
   pointer-events: none;
 }
-.mode-pill--launch-platinum:hover {
+.mode-pill--multiplayer-platinum:hover {
   transform: translateY(-1px);
   border-color: #f8fafc;
   box-shadow: 0 14px 34px rgba(0,0,0,.38), 0 0 26px rgba(226,232,240,.16);
 }
-.launch-platinum-copy { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: .12rem; text-align: left; }
-.mode-pill--launch-platinum .mode-label { font-size: .95rem; color: #fff; letter-spacing: .01em; text-shadow: 0 1px 8px rgba(255,255,255,.15); }
-.mode-pill--launch-platinum .mode-desc { color: #dbe4ee; }
-.launch-live-pill {
+.multiplayer-platinum-copy { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: .12rem; text-align: left; }
+.mode-pill--multiplayer-platinum .mode-label { font-size: .95rem; color: #fff; letter-spacing: .01em; text-shadow: 0 1px 8px rgba(255,255,255,.15); }
+.mode-pill--multiplayer-platinum .mode-desc { color: #dbe4ee; }
+.multiplayer-live-pill {
   position: relative; z-index: 1; flex: 0 0 auto;
   padding: .28rem .66rem; border-radius: var(--radius-pill);
   border: 1px solid rgba(255,255,255,.68);
@@ -2883,9 +2883,9 @@ body.player-panel-open { overflow: hidden; }
   box-shadow: inset 0 1px 0 #fff, 0 4px 12px rgba(0,0,0,.22);
 }
 @media (max-width: 520px) {
-  .mode-pill--launch-platinum { min-height: 60px; padding: .55rem .72rem; }
-  .mode-pill--launch-platinum .mode-label { font-size: .9rem; }
-  .mode-pill--launch-platinum .mode-desc { font-size: .7rem; }
+  .mode-pill--multiplayer-platinum { min-height: 60px; padding: .55rem .72rem; }
+  .mode-pill--multiplayer-platinum .mode-label { font-size: .9rem; }
+  .mode-pill--multiplayer-platinum .mode-desc { font-size: .7rem; }
 }
 
 </style>
@@ -2974,12 +2974,12 @@ body.player-panel-open { overflow: hidden; }
       <p class="quiz-hero-subtitle" data-i18n="heroSubtitle">Odgovaraj na tisuće kviz pitanja iz raznih tema. Odaberi Blitz 60 sekundi, tematski kviz ili opuštenu igru bez vremenskog ograničenja.</p>
 
       <div class="mode-pills" id="mode-pills">
-        <a class="mode-pill mode-pill--launch-platinum" id="btn-multiplayer" href="multiplayer.html">
-          <span class="launch-platinum-copy">
+        <a class="mode-pill mode-pill--multiplayer-platinum" id="btn-multiplayer" href="multiplayer.html">
+          <span class="multiplayer-platinum-copy">
             <span class="mode-label" data-i18n="multiplayerBtn">Multiplayer</span>
             <span class="mode-desc" data-i18n="multiplayerDesc">Dvoboj znanja protiv drugog kvizaša</span>
           </span>
-          <span class="launch-live-pill" data-i18n="playNow">IGRAJ</span>
+          <span class="multiplayer-live-pill" data-i18n="playNow">IGRAJ</span>
         </a>
         <button class="mode-pill mode-pill--daily" data-mode="daily30">
           <span class="daily30-mode-copy">
