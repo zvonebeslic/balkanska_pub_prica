@@ -1366,8 +1366,7 @@ body.abc-mode .abc-answer-options { display: grid; }
 
 .player-knowledge-overview,
 .player-mode-section,
-.player-collection-card,
-.player-multiplayer-card {
+.player-collection-card {
   margin-top: 0.7rem;
   padding: 0.82rem;
   border-radius: 17px;
@@ -1517,11 +1516,6 @@ body.abc-mode .abc-answer-options { display: grid; }
   background: rgba(34, 197, 94, 0.26);
 }
 
-.player-multiplayer-card {
-  opacity: 0.84;
-  border-style: dashed;
-  border-color: rgba(47, 128, 255, 0.36);
-}
 
 
 .player-stat-sub {
@@ -2846,9 +2840,10 @@ body.player-panel-open { overflow: hidden; }
 }
 
 
-/* MULTIPLAYER PLATINUM - glavni način igre iznad Dnevnih 30 */
+/* Istaknuti ulaz u zasebni način igre iznad Dnevnih 30 */
 .mode-pill--launch-platinum {
   position: relative;
+  text-decoration: none;
   width: 100%;
   min-height: 64px;
   justify-content: space-between;
@@ -3225,13 +3220,12 @@ body.player-panel-open { overflow: hidden; }
 
   <section class="leaderboard-preview" id="leaderboard-preview" aria-labelledby="leaderboard-preview-title">
     <div class="leaderboard-heading-row">
-      <h2 class="leaderboard-title" id="leaderboard-preview-title">🏆 Ljestvica znanja</h2>
+      <h2 class="leaderboard-title" id="leaderboard-preview-title" data-i18n="leaderboardTitle">🏆 Ljestvica znanja</h2>
     </div>
-    <div class="leaderboard-section-tabs" aria-label="Vrsta ljestvice">
-      <button class="leaderboard-section-tab active" type="button" aria-pressed="true">Dnevnih 30</button>
-      <button class="leaderboard-section-tab leaderboard-section-tab--soon" type="button" disabled aria-disabled="true"><span>Multiplayer</span><small>Uskoro</small></button>
+    <div class="leaderboard-section-tabs" aria-label="Vrsta ljestvice" data-i18n-aria-label="leaderboardTypeAria">
+      <button class="leaderboard-section-tab active" type="button" aria-pressed="true" data-i18n="modeDailyLabel">Dnevnih 30</button>
     </div>
-    <div class="leaderboard-tabs" role="tablist" aria-label="Razdoblje ljestvice">
+    <div class="leaderboard-tabs" role="tablist" aria-label="Razdoblje ljestvice" data-i18n-aria-label="leaderboardPeriodAria">
       <button class="leaderboard-tab active" type="button" data-leaderboard-view="daily30">Dnevnih 30</button>
       <button class="leaderboard-tab" type="button" data-leaderboard-view="week">Ovaj tjedan</button>
       <button class="leaderboard-tab" type="button" data-leaderboard-view="month">Ovaj mjesec</button>
@@ -3240,7 +3234,7 @@ body.player-panel-open { overflow: hidden; }
     <div class="leaderboard-period" id="leaderboard-preview-period"></div>
     <div class="leaderboard-list" id="leaderboard-preview-list"></div>
     <div class="leaderboard-own-position" id="leaderboard-preview-own"></div>
-    <button class="leaderboard-more-link" id="leaderboard-more-link" type="button">Prikaži cijelu ljestvicu</button>
+    <button class="leaderboard-more-link" id="leaderboard-more-link" type="button" data-i18n="leaderboardFull">Prikaži cijelu ljestvicu</button>
   </section>
 
 
@@ -3858,7 +3852,7 @@ if (!supabaseClient) {
       submitAnswer: "Potvrdi odgovor",
       skipBtn: "Preskoči pitanje",
       resetBtn: "Reset kviza",
-      resultsTitle: "Rezultati & povijest",
+      resultsTitle: "Rezultati & povijest", leaderboardTitle: "🏆 Ljestvica znanja", leaderboardTypeAria: "Vrsta ljestvice", leaderboardPeriodAria: "Razdoblje ljestvice", leaderboardFull: "Prikaži cijelu ljestvicu",
       correctPlural: "točnih",
       success: "uspješnosti",
       support: "Podrška",
@@ -3911,7 +3905,7 @@ if (!supabaseClient) {
       resetMessage: "Kviz je resetiran. Odaberi način igre i klikni <strong>„Kreni s kvizom”</strong>.",
       themeSvastara: "Svaštara kviz",
       themeHarry: "Harry Potter kviz", themeLotr: "L.O.T.R. kviz", themePirates: "Pirati s Kariba kviz", themeCroatia: "Volim Hrvatsku kviz", themeBih: "Volim BiH kviz", themeSerbia: "Volim Srbiju kviz", themeGreece: "Antička Grčka kviz", themeEgypt: "Antički Egipat kviz", themeRome: "Antički Rim kviz", themeUsPresidents: "Američki predsjednici kviz", themeGeography: "Zemljopis kviz", themeFootball: "Nogomet kviz", themeFloraFauna: "FloraFauna kviz", themeFilm: "Film kviz", themeScience: "Znanost kviz", themeMusic: "Glazba kviz", themeLiterature: "Književnost kviz", themeHistory: "Povijest kviz", themeGaming: "Svijet Gaminga", themeMoreplovci: "Moreplovci", themeSport: "Sport kviz",
-      collectionsBtn: "Kviz kolekcije", previewLabel: "Pregled", multiplayerBtn: "Multiplayer", multiplayerDesc: "Dvoboj znanja protiv drugog kvizaša", playNow: "IGRAJ", comingSoon: "Uskoro", collectionsKicker: "Kolekcionar znanja", collectionsFeatureTitle: "Kviz kolekcije", collectionsFeatureText: "Posebni kvizovi od 20 pitanja o jednoj konkretnoj temi. Svima dolaze ista pitanja istim redoslijedom, a završeni kvizovi ostaju u tvojoj kolekciji.", viewCollection: "Pogledaj kolekciju", multiplayerFeatureTitle: "Znanje protiv znanja", multiplayerFeatureText: "Igra protiv prijatelja i drugih kvizaša stiže u jednoj od sljedećih nadogradnji."
+      collectionsBtn: "Kviz kolekcije", previewLabel: "Pregled", multiplayerBtn: "Multiplayer", multiplayerDesc: "Dvoboj znanja protiv drugog kvizaša", playNow: "IGRAJ", comingSoon: "Uskoro", collectionsKicker: "Kolekcionar znanja", collectionsFeatureTitle: "Kviz kolekcije", collectionsFeatureText: "Posebni kvizovi od 20 pitanja o jednoj konkretnoj temi. Svima dolaze ista pitanja istim redoslijedom, a završeni kvizovi ostaju u tvojoj kolekciji.", viewCollection: "Pogledaj kolekciju"
     },
     en: {
       pageTitle: "Quiz Questions – Free Online Quiz | KvizToGo",
@@ -3964,7 +3958,7 @@ if (!supabaseClient) {
       submitAnswer: "Submit answer",
       skipBtn: "Skip question",
       resetBtn: "Reset quiz",
-      resultsTitle: "Results & history",
+      resultsTitle: "Results & history", leaderboardTitle: "🏆 Knowledge leaderboard", leaderboardTypeAria: "Leaderboard type", leaderboardPeriodAria: "Leaderboard period", leaderboardFull: "View full leaderboard",
       correctPlural: "correct",
       success: "success rate",
       support: "Support",
@@ -4017,7 +4011,7 @@ if (!supabaseClient) {
       resetMessage: "The quiz has been reset. Choose a game mode and click <strong>“Start quiz”</strong>.",
       themeSvastara: "Miscellaneous quiz",
       themeHarry: "Harry Potter quiz", themeLotr: "L.O.T.R. quiz", themePirates: "Pirates of the Caribbean quiz", themeCroatia: "I Love Croatia quiz", themeBih: "I Love BiH quiz", themeSerbia: "I Love Serbia quiz", themeGreece: "Ancient Greece quiz", themeEgypt: "Ancient Egypt quiz", themeRome: "Ancient Rome quiz", themeUsPresidents: "U.S. Presidents quiz", themeGeography: "Geography quiz", themeFootball: "Football quiz", themeFloraFauna: "Flora & Fauna quiz", themeFilm: "Film quiz", themeScience: "Science quiz", themeMusic: "Music quiz", themeLiterature: "Literature quiz", themeHistory: "History quiz", themeGaming: "World of Gaming", themeMoreplovci: "Seafarers", themeSport: "Sport quiz",
-      collectionsBtn: "Quiz Collections", previewLabel: "Preview", multiplayerBtn: "Multiplayer", multiplayerDesc: "Knowledge duel against another quiz player", playNow: "PLAY", comingSoon: "Coming soon", collectionsKicker: "Knowledge collector", collectionsFeatureTitle: "Quiz Collections", collectionsFeatureText: "Special 20-question quizzes about one specific subject. Everyone gets the same questions in the same order, and completed quizzes stay in your collection.", viewCollection: "View collection", multiplayerFeatureTitle: "Knowledge versus knowledge", multiplayerFeatureText: "Play against friends and other quiz players in an upcoming update."
+      collectionsBtn: "Quiz Collections", previewLabel: "Preview", multiplayerBtn: "Multiplayer", multiplayerDesc: "Knowledge duel against another quiz player", playNow: "PLAY", comingSoon: "Coming soon", collectionsKicker: "Knowledge collector", collectionsFeatureTitle: "Quiz Collections", collectionsFeatureText: "Special 20-question quizzes about one specific subject. Everyone gets the same questions in the same order, and completed quizzes stay in your collection.", viewCollection: "View collection"
     }
   };
 
