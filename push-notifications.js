@@ -3,6 +3,55 @@
 'use strict';
 const VAPID='BOlQQ8H8hjEMy2PtYXdCdrqmp0ExWUzILfneTy8QXcPYqMsT1X0p6aMNcZVcLLN1FpAydBaS2K9blb2SQKCLpA8';
 const KEY='kviztogo_daily30_push_enabled',DISMISS='kviztogo_push_prompt_dismissed_at',THREE_DAYS=259200000;
+const LANG_KEY='kviztogo_lang';
+const COPY={
+  hr:{
+    title:'🔔 Podsjeti me na kviz',
+    popup:'Želiš da te KvizToGo podsjeti na dnevnu dozu znanja?',
+    later:'Ne sada',
+    enabled:'Podsjetnik uključen',
+    disabled:'Podsjetnik isključen',
+    secure:'Obavijesti traže sigurnu HTTPS vezu.',
+    unsupported:'Obavijesti nisu podržane na ovom uređaju.',
+    blocked:'Obavijesti su blokirane u postavkama preglednika.',
+    denied:'Obavijesti nisu dopuštene.',
+    enabling:'Uključujem…',
+    notAllowed:'Preglednik nije dopustio obavijesti.',
+    abort:'Preglednik nije uspio napraviti push pretplatu. Pokušaj ponovno.',
+    invalidState:'Push servis još nije spreman. Pokušaj ponovno.',
+    keyError:'Greška ključa za obavijesti.',
+    service:'Veza sa servisom još nije spremna. Pokušaj ponovno.',
+    failed:'Nije uspjelo: ',
+    unknown:'nepoznata greška'
+  },
+  en:{
+    title:'🔔 Remind me to play',
+    popup:'Would you like KvizToGo to remind you about your daily dose of knowledge?',
+    later:'Not now',
+    enabled:'Reminder enabled',
+    disabled:'Reminder disabled',
+    secure:'Notifications require a secure HTTPS connection.',
+    unsupported:'Notifications are not supported on this device.',
+    blocked:'Notifications are blocked in your browser settings.',
+    denied:'Notifications were not allowed.',
+    enabling:'Enabling…',
+    notAllowed:'The browser did not allow notifications.',
+    abort:'The browser could not create a push subscription. Try again.',
+    invalidState:'The push service is not ready yet. Try again.',
+    keyError:'Notification key error.',
+    service:'The service connection is not ready yet. Try again.',
+    failed:'Failed: ',
+    unknown:'unknown error'
+  }
+};
+function language(){try{return localStorage.getItem(LANG_KEY)==='en'||document.documentElement.lang==='en'?'en':'hr'}catch{return document.documentElement.lang==='en'?'en':'hr'}}
+function tx(key){return COPY[language()]?.[key]||COPY.hr[key]||key}
+function refreshLanguage(){
+  document.querySelectorAll('.kviz-push-title').forEach(x=>x.textContent=tx('title'));
+  document.querySelectorAll('.kviz-push-status[data-status-key]').forEach(x=>x.textContent=tx(x.dataset.statusKey));
+  const p=document.querySelector('#kviz-push-popup p');if(p)p.textContent=tx('popup');
+  const later=document.getElementById('kviz-push-later');if(later)later.textContent=tx('later');
+}
 const BASE=new URL('./',document.baseURI).pathname,SW_URL=new URL('push-sw.js',document.baseURI).pathname;
 (function(){const api=window.supabase;if(!api||typeof api.createClient!=='function')return;const prev=api.createClient;if(prev.__kviztogoPushCapture)return;const wrapped=function(...args){const c=prev.apply(this,args);if(c&&typeof c.rpc==='function')window.kviztogoSupabaseClient=c;return c};wrapped.__kviztogoPushCapture=true;api.createClient=wrapped})();
 function bytes(v){const p='='.repeat((4-v.length%4)%4),r=atob((v+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from([...r].map(c=>c.charCodeAt(0)))}
@@ -12,16 +61,16 @@ async function registration(){let r=await navigator.serviceWorker.getRegistratio
 async function sub(){try{return await (await registration()).pushManager.getSubscription()}catch(e){console.warn('KvizToGo push subscription lookup:',e);return null}}
 async function save(s){const c=await client();if(!c)throw new Error('Supabase klijent nije pronađen na stranici.');const j=s?.toJSON();if(!j?.endpoint||!j.keys?.p256dh||!j.keys?.auth)throw new Error('Preglednik nije vratio potpune podatke push pretplate.');const x=await c.rpc('register_web_push_subscription',{p_endpoint:j.endpoint,p_p256dh:j.keys.p256dh,p_auth:j.keys.auth,p_player_key:playerKey()});if(x.error)throw new Error('Spremanje pretplate nije uspjelo: '+(x.error.message||x.error.code));return true}
 async function pref(s,on){const c=await client();if(!c)throw new Error('Supabase klijent nije pronađen na stranici.');const x=await c.rpc('set_web_push_preferences',{p_endpoint:s.endpoint,p_daily30:!!on,p_new_quizzes:true,p_special_challenges:true});if(x.error)throw new Error('Spremanje postavke nije uspjelo: '+(x.error.message||x.error.code));return true}
-function sync(on,msg){document.querySelectorAll('.kviz-push-toggle').forEach(i=>i.checked=!!on);document.querySelectorAll('.kviz-push-box').forEach(x=>x.classList.toggle('on',!!on));document.querySelectorAll('.kviz-push-status').forEach(x=>x.textContent=msg||'')}
-function friendly(e){const n=e?.name||'',m=String(e?.message||'');if(n==='NotAllowedError')return 'Preglednik nije dopustio obavijesti.';if(n==='AbortError')return 'Preglednik nije uspio napraviti push pretplatu. Pokušaj ponovno.';if(n==='InvalidStateError')return 'Push servis još nije spreman. Pokušaj ponovno.';if(n==='InvalidAccessError'||n==='DataError')return 'Greška ključa za obavijesti.';if(m.includes('Supabase klijent'))return 'Veza sa servisom još nije spremna. Pokušaj ponovno.';return 'Nije uspjelo: '+(m||n||'nepoznata greška')}
-async function enable(){if(!window.isSecureContext){sync(false,'Obavijesti traže sigurnu HTTPS vezu.');return false}if(!('Notification'in window)||!('serviceWorker'in navigator)||!('PushManager'in window)){sync(false,'Obavijesti nisu podržane na ovom uređaju.');return false}if(Notification.permission==='denied'){sync(false,'Obavijesti su blokirane u postavkama preglednika.');return false}const p=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(p!=='granted'){sync(false,'Obavijesti nisu dopuštene.');return false}try{sync(false,'Uključujem…');const r=await registration(),k=bytes(VAPID);let s=await r.pushManager.getSubscription();if(s){const old=s.options?.applicationServerKey?new Uint8Array(s.options.applicationServerKey):null;if(!old||old.length!==k.length||old.some((v,i)=>v!==k[i])){await s.unsubscribe();s=null}}if(!s)s=await r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:k});await save(s);await pref(s,true);localStorage.setItem(KEY,'1');localStorage.removeItem(DISMISS);sync(true,'Podsjetnik uključen');document.getElementById('kviz-push-popup')?.remove();return true}catch(e){console.error('KvizToGo push enable failed:',e);localStorage.setItem(KEY,'0');sync(false,friendly(e));return false}}
-async function disable(){try{const s=await sub();if(s)await pref(s,false);localStorage.setItem(KEY,'0');sync(false,'Podsjetnik isključen');return true}catch(e){sync(true,friendly(e));return false}}
+function sync(on,msg='',statusKey=''){document.querySelectorAll('.kviz-push-toggle').forEach(i=>i.checked=!!on);document.querySelectorAll('.kviz-push-box').forEach(x=>x.classList.toggle('on',!!on));document.querySelectorAll('.kviz-push-status').forEach(x=>{if(statusKey)x.dataset.statusKey=statusKey;else delete x.dataset.statusKey;x.textContent=statusKey?tx(statusKey):(msg||'')})}
+function friendly(e){const n=e?.name||'',m=String(e?.message||'');if(n==='NotAllowedError')return tx('notAllowed');if(n==='AbortError')return tx('abort');if(n==='InvalidStateError')return tx('invalidState');if(n==='InvalidAccessError'||n==='DataError')return tx('keyError');if(m.includes('Supabase klijent'))return tx('service');return tx('failed')+(m||n||tx('unknown'))}
+async function enable(){if(!window.isSecureContext){sync(false,'','secure');return false}if(!('Notification'in window)||!('serviceWorker'in navigator)||!('PushManager'in window)){sync(false,'','unsupported');return false}if(Notification.permission==='denied'){sync(false,'','blocked');return false}const p=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(p!=='granted'){sync(false,'','denied');return false}try{sync(false,'','enabling');const r=await registration(),k=bytes(VAPID);let s=await r.pushManager.getSubscription();if(s){const old=s.options?.applicationServerKey?new Uint8Array(s.options.applicationServerKey):null;if(!old||old.length!==k.length||old.some((v,i)=>v!==k[i])){await s.unsubscribe();s=null}}if(!s)s=await r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:k});await save(s);await pref(s,true);localStorage.setItem(KEY,'1');localStorage.removeItem(DISMISS);sync(true,'','enabled');document.getElementById('kviz-push-popup')?.remove();return true}catch(e){console.error('KvizToGo push enable failed:',e);localStorage.setItem(KEY,'0');sync(false,friendly(e));return false}}
+async function disable(){try{const s=await sub();if(s)await pref(s,false);localStorage.setItem(KEY,'0');sync(false,'','disabled');return true}catch(e){sync(true,friendly(e));return false}}
 async function changed(e){const on=e.currentTarget.checked;document.querySelectorAll('.kviz-push-toggle').forEach(i=>i.disabled=true);if(on)await enable();else await disable();document.querySelectorAll('.kviz-push-toggle').forEach(i=>i.disabled=false)}
-function box(innerClass=''){return `<div class="kviz-push-box ${innerClass}"><div class="kviz-push-copy"><b>🔔 Podsjeti me na kviz</b><span class="kviz-push-status"></span></div><label class="kviz-push-switch"><input class="kviz-push-toggle" type="checkbox"><span></span></label></div>`}
+function box(innerClass=''){return `<div class="kviz-push-box ${innerClass}"><div class="kviz-push-copy"><b class="kviz-push-title">${tx('title')}</b><span class="kviz-push-status"></span></div><label class="kviz-push-switch"><input class="kviz-push-toggle" type="checkbox"><span></span></label></div>`}
 function css(){if(document.getElementById('kviz-push-css'))return;const s=document.createElement('style');s.id='kviz-push-css';s.textContent='.kviz-push-box{display:flex;align-items:center;justify-content:space-between;gap:.55rem;width:100%;padding:.48rem .6rem;border:1px solid rgba(148,163,184,.24);border-radius:12px;background:rgba(255,255,255,.045);color:#fff}.kviz-push-box.on{border-color:rgba(34,197,94,.5);background:rgba(34,197,94,.09)}.kviz-push-copy{display:flex;flex-direction:column;gap:.08rem;text-align:left}.kviz-push-copy b{font-size:.72rem}.kviz-push-status{font-size:.55rem;color:#94a3b8}.kviz-push-switch{position:relative;width:40px;height:23px;flex:0 0 auto}.kviz-push-switch input{position:absolute;opacity:0}.kviz-push-switch>span{position:absolute;inset:0;border-radius:99px;background:#475569;cursor:pointer;transition:.2s}.kviz-push-switch>span:before{content:"";position:absolute;width:17px;height:17px;left:3px;top:3px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 2px 6px #0006}.kviz-push-switch input:checked+span{background:#22c55e}.kviz-push-switch input:checked+span:before{transform:translateX(17px)}#kviz-push-menu-row{margin-top:.5rem}#kviz-push-popup{position:fixed;left:12px;right:12px;bottom:14px;z-index:99999;max-width:520px;margin:auto;padding:14px;border:1px solid rgba(34,197,94,.5);border-radius:18px;background:#101b2d;box-shadow:0 18px 50px #0009;color:#fff}#kviz-push-popup .kviz-push-box{border:0;background:transparent;padding:0}#kviz-push-popup p{margin:.45rem 0 .7rem;color:#cbd5e1;font-size:.7rem;line-height:1.4}#kviz-push-later{margin-top:.65rem;width:100%;border:1px solid #64748b;border-radius:11px;padding:.55rem;background:transparent;color:#dbe5f1;font-weight:800;cursor:pointer}';document.head.appendChild(s)}
 async function state(){try{const s=await sub();return Notification.permission==='granted'&&!!s&&localStorage.getItem(KEY)!=='0'}catch(_){return false}}
 async function mountMenu(){const row=document.querySelector('.future-mode-row');if(!row||document.getElementById('kviz-push-menu-row'))return;const wrap=document.createElement('div');wrap.id='kviz-push-menu-row';wrap.innerHTML=box();row.insertAdjacentElement('afterend',wrap);wrap.querySelector('.kviz-push-toggle').addEventListener('change',changed)}
-async function popup(){if(document.getElementById('kviz-push-popup')||await state())return;const last=Number(localStorage.getItem(DISMISS)||0);if(last&&Date.now()-last<THREE_DAYS)return;const p=document.createElement('div');p.id='kviz-push-popup';p.innerHTML='<p>Želiš da te KvizToGo podsjeti na dnevnu dozu znanja?</p>'+box('popup-box')+'<button id="kviz-push-later" type="button">Ne sada</button>';document.body.appendChild(p);p.querySelector('.kviz-push-toggle').addEventListener('change',changed);p.querySelector('#kviz-push-later').addEventListener('click',()=>{localStorage.setItem(DISMISS,String(Date.now()));p.remove()})}
-async function boot(){css();await mountMenu();const on=await state();sync(on,on?'Podsjetnik uključen':'');setTimeout(popup,4500)}
-window.KvizToGoPush={enable,disable};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+async function popup(){if(document.getElementById('kviz-push-popup')||await state())return;const last=Number(localStorage.getItem(DISMISS)||0);if(last&&Date.now()-last<THREE_DAYS)return;const p=document.createElement('div');p.id='kviz-push-popup';p.innerHTML='<p>'+tx('popup')+'</p>'+box('popup-box')+'<button id="kviz-push-later" type="button">'+tx('later')+'</button>';document.body.appendChild(p);p.querySelector('.kviz-push-toggle').addEventListener('change',changed);p.querySelector('#kviz-push-later').addEventListener('click',()=>{localStorage.setItem(DISMISS,String(Date.now()));p.remove()})}
+async function boot(){css();await mountMenu();const on=await state();sync(on,'',on?'enabled':'');refreshLanguage();setTimeout(popup,4500)}
+window.KvizToGoPush={enable,disable,refreshLanguage};new MutationObserver(()=>refreshLanguage()).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});window.addEventListener('storage',e=>{if(e.key===LANG_KEY)refreshLanguage()});if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();
