@@ -3829,7 +3829,7 @@ if (!supabaseClient) {
       dailyPlayToday: "Igraj današnji",
       dailyPlayPast: "Odigraj prošle kvizove",
       dailyNameTitle: "Kako želiš da piše na ljestvici?",
-      dailyNameCopy: "Bez računa i prijave — ime vrijedi samo na ovom uređaju, a broj gosta nikad se ne prikazuje javno.",
+      dailyNameCopy: "Bez računa i prijave — ime vrijedi samo na ovom uređaju. Ime mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.",
       dailyNameSave: "Spremi",
       dailyNameEdit: "Promijeni ime na ljestvici",
       dailyNamePlaceholder: "Tvoje ime", previousMonth: "Prethodni mjesec", nextMonth: "Sljedeći mjesec", weekdayMon: "PO", weekdayTue: "UT", weekdayWed: "SR", weekdayThu: "ČE", weekdayFri: "PE", weekdaySat: "SU", weekdaySun: "NE",
@@ -3936,7 +3936,7 @@ if (!supabaseClient) {
       dailyPlayToday: "Play today's quiz",
       dailyPlayPast: "Play past quizzes",
       dailyNameTitle: "What name should appear on the leaderboard?",
-      dailyNameCopy: "No account or sign-in — the name stays on this device, and your guest number is never shown publicly.",
+      dailyNameCopy: "No account or sign-in — the name stays on this device. Use 3–20 characters, letters and numbers only.",
       dailyNameSave: "Save",
       dailyNameEdit: "Change leaderboard name",
       dailyNamePlaceholder: "Your name", previousMonth: "Previous month", nextMonth: "Next month", weekdayMon: "MON", weekdayTue: "TUE", weekdayWed: "WED", weekdayThu: "THU", weekdayFri: "FRI", weekdaySat: "SAT", weekdaySun: "SUN",
@@ -4424,12 +4424,12 @@ if (!supabaseClient) {
 
   function saveGuestLeaderboardName(value) {
     if (!playerIdentity.isGuest) return false;
-    const name = String(value || "").replace(/\s+/g, " ").trim().slice(0, 20);
-    const valid = name.length >= 2 && /^[\p{L}\p{N} ._'’-]+$/u.test(name);
+    const name = String(value || "").trim().slice(0, 20);
+    const valid = /^[\p{L}\p{N}]{3,20}$/u.test(name);
     if (!valid) {
       showKvizToast(currentLang === "en"
-        ? "Use 2–20 letters or numbers for the leaderboard name."
-        : "Ime za ljestvicu mora imati 2–20 slova ili brojeva.");
+        ? "Use 3–20 characters, letters and numbers only."
+        : "Ime mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.");
       return false;
     }
 
