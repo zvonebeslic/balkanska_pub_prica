@@ -374,6 +374,16 @@ a { -webkit-tap-highlight-color: transparent; }
 }
 
 .mode-pill.active span.mode-desc { color: rgba(255, 255, 255, 0.82); }
+.mode-pill--soon,
+.mode-pill--soon:hover {
+  cursor: default;
+  opacity: 0.58;
+  transform: none;
+  box-shadow: none;
+  border-style: dashed;
+  background: rgba(255, 255, 255, 0.045);
+}
+.mode-pill--soon .mode-desc { color: var(--text-muted); font-weight: 850; }
 
 /* Samo jedan odabrani krug smije biti ispunjen bijelom bojom. */
 .mode-pill.circle-selected::before,
@@ -3028,12 +3038,10 @@ body.player-panel-open { overflow: hidden; }
           <span class="mode-label" data-i18n="modeBlitzLabel">Blitz 60s</span>
           <span class="mode-desc" data-i18n="modeBlitzDesc">jedno pitanje za drugim (igraj s prijateljima)</span>
         </button>
-        <!-- STORY NAČIN PRIVREMENO ISKLJUČEN
-        <button class="mode-pill" data-mode="story90">
-          <span class="mode-label">Story 90s</span>
-          <span class="mode-desc">duža pitanja kao na pub kvizu</span>
+        <button class="mode-pill mode-pill--soon" type="button" disabled aria-disabled="true">
+          <span class="mode-label" data-i18n="storytellingLabel">Storytelling</span>
+          <span class="mode-desc" data-i18n="comingSoon">Uskoro</span>
         </button>
-        -->
         <button class="mode-pill" data-mode="relax">
           <span class="mode-label" data-i18n="modeRelaxLabel">Bez vremena</span>
           <span class="mode-desc" data-i18n="modeRelaxDesc">Nasumična pitanja (igraj do besvijesti)</span>
@@ -3818,7 +3826,7 @@ if (!supabaseClient) {
       dailyNameSave: "Spremi",
       dailyNameEdit: "Promijeni ime na ljestvici",
       dailyNamePlaceholder: "Tvoje ime", previousMonth: "Prethodni mjesec", nextMonth: "Sljedeći mjesec", weekdayMon: "PO", weekdayTue: "UT", weekdayWed: "SR", weekdayThu: "ČE", weekdayFri: "PE", weekdaySat: "SU", weekdaySun: "NE",
-      modeBlitzLabel: "Blitz 60s",
+      modeBlitzLabel: "Blitz 60s", storytellingLabel: "Storytelling",
       modeBlitzDesc: "jedno pitanje za drugim (igraj s prijateljima)",
       modeRelaxLabel: "Bez vremena",
       modeRelaxDesc: "Nasumična pitanja (igraj do besvijesti)",
@@ -3925,7 +3933,7 @@ if (!supabaseClient) {
       dailyNameSave: "Save",
       dailyNameEdit: "Change leaderboard name",
       dailyNamePlaceholder: "Your name", previousMonth: "Previous month", nextMonth: "Next month", weekdayMon: "MON", weekdayTue: "TUE", weekdayWed: "WED", weekdayThu: "THU", weekdayFri: "FRI", weekdaySat: "SAT", weekdaySun: "SUN",
-      modeBlitzLabel: "Blitz 60s",
+      modeBlitzLabel: "Blitz 60s", storytellingLabel: "Storytelling",
       modeBlitzDesc: "one question after another (play with friends)",
       modeRelaxLabel: "No timer",
       modeRelaxDesc: "Random questions (play as long as you want)",
