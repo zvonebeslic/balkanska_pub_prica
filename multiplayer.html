@@ -50,7 +50,7 @@
   <section id="lobby">
     <div class="hero">
       <h1 data-i18n="heroTitle">Multiplayer</h1>
-      <p data-i18n="heroCopy">Multiplayer način igranja kviza. 10 pitanja po setu. 10 sekundi po pitanju.</p>
+      <p data-i18n="heroCopy">Multiplayer način igranja kviza. 10 pitanja po setu. Vrijeme ovisi o duljini pitanja.</p>
     </div>
 
     <div class="versus">
@@ -107,7 +107,7 @@ let currentLang=localStorage.getItem(LANG_KEY)==='en'?'en':'hr';
 const I18N={
 hr:{
 pageTitle:'Multiplayer | KvizToGo',back:'Natrag',languageToEnglish:'Promijeni jezik na engleski',languageToCroatian:'Promijeni jezik na hrvatski',
-heroTitle:'Multiplayer',heroCopy:'Multiplayer način igranja kviza. 10 pitanja po setu. 10 sekundi po pitanju.',
+heroTitle:'Multiplayer',heroCopy:'Multiplayer način igranja kviza. 10 pitanja po setu. Vrijeme ovisi o duljini pitanja.',
 meReady:'Spreman',opponentReady:'Protivnik je spreman.',opponentUnknown:'?',opponentNotFound:'Protivnik još nije pronađen',questionsReady:'Pitanja spremna',findOpponent:'Traži protivnika',playFriends:'Igraj s prijateljima',
 aiNote:'Ako naš sustav ne pronađe stvarnog protivnika, u igru se uključuje AI generirani protivnik kako bi se izbjeglo duže čekanje.',
 waitingStart:'Čekamo početak…',historyTitle:'Rezultati & povijest',downloadHistory:'📥 Preuzmi cijelu odigranu povijest',
@@ -115,8 +115,8 @@ downloadHistoryNote:'Sva pitanja i odgovori iz trenutačne partije spremit će s
 rematch:'Revanš',newOpponent:'Novi protivnik',backQuiz:'Natrag',
 searching:'Tražimo protivnika…',queue:'U redu čekanja',searchButton:'Tražim…',checkingQueue:'provjeravamo red čekanja',searchError:'Greška pri spajanju. Pokušaj ponovno.',
 preparingInvite:'Pripremam poveznicu…',waiting:'Čekamo…',friendNotJoined:'prijatelj još nije ušao',preparingInviteMeta:'Pripremamo pozivnicu',creatingPrivate:'Kreiramo privatni 1 na 1…',
-inviteError:'Pozivnicu nije moguće napraviti. Pokušaj ponovno.',inviteTitle:'KvizToGo 1 na 1',inviteMessage:'Pridruži mi se u kvizu 1 na 1 na KvizToGo! 🧠⚔️\n10 pitanja, 10 sekundi po pitanju. Tko zna više?\n{url}',
-inviteCardCta:'PRIDRUŽI MI SE 1 NA 1',inviteCardRules:'10 pitanja  •  10 sekundi po pitanju',inviteCardQuestion:'Tko zna više?',inviteCardButton:'OTVORI POVEZNICU I IGRAJ',
+inviteError:'Pozivnicu nije moguće napraviti. Pokušaj ponovno.',inviteTitle:'KvizToGo 1 na 1',inviteMessage:'Pridruži mi se u kvizu 1 na 1 na KvizToGo! 🧠⚔️\n10 pitanja, vrijeme ovisi o duljini pitanja. Tko zna više?\n{url}',
+inviteCardCta:'PRIDRUŽI MI SE 1 NA 1',inviteCardRules:'10 pitanja  •  vrijeme prema duljini pitanja',inviteCardQuestion:'Tko zna više?',inviteCardButton:'OTVORI POVEZNICU I IGRAJ',
 inviteCopied:'Poveznica za prijatelja je kopirana.',joining:'Pridružujem…',findingFriend:'Tražimo prijatelja…',checkingInvite:'provjeravamo pozivnicu',joiningQuiz:'Pridružujemo te 1 na 1 kvizu…',
 ownInvite:'Ovo je tvoja vlastita pozivnica.',inviteExpired:'Pozivnica više nije aktivna.',inviteOpenError:'Pozivnicu nije moguće otvoriti.',
 opponentFound:'Protivnik pronađen',ready:'Spreman ✓',waitingYourStart:'Čeka tvoj start',waitingOpponentStart:'Čeka da pokrene kviz',startQuiz:'Kreni s kvizom',
@@ -143,7 +143,7 @@ guest:'Gost'
 },
 en:{
 pageTitle:'Multiplayer | KvizToGo',back:'Back',languageToEnglish:'Switch language to English',languageToCroatian:'Switch language to Croatian',
-heroTitle:'Multiplayer',heroCopy:'Play multiplayer quizzes. 10 questions per match. 10 seconds per question.',
+heroTitle:'Multiplayer',heroCopy:'Play multiplayer quizzes. 10 questions per match. Time adapts to the question length.',
 meReady:'Ready',opponentReady:'Opponent is ready.',opponentUnknown:'?',opponentNotFound:'Opponent has not been found yet',questionsReady:'Questions ready',findOpponent:'Find opponent',playFriends:'Play with friends',
 aiNote:'If our system cannot find a real opponent, an AI-generated opponent joins the game so you do not have to wait too long.',
 waitingStart:'Waiting to start…',historyTitle:'Results & history',downloadHistory:'📥 Download full played history',
@@ -151,8 +151,8 @@ downloadHistoryNote:'All questions and answers from the current match will be sa
 rematch:'Rematch',newOpponent:'New opponent',backQuiz:'Back',
 searching:'Finding an opponent…',queue:'In matchmaking queue',searchButton:'Searching…',checkingQueue:'checking the matchmaking queue',searchError:'Could not connect. Try again.',
 preparingInvite:'Preparing link…',waiting:'Waiting…',friendNotJoined:'your friend has not joined yet',preparingInviteMeta:'Preparing invitation',creatingPrivate:'Creating a private 1v1…',
-inviteError:'Could not create the invitation. Try again.',inviteTitle:'KvizToGo 1v1',inviteMessage:'Join me for a 1v1 quiz on KvizToGo! 🧠⚔️\n10 questions, 10 seconds per question. Who knows more?\n{url}',
-inviteCardCta:'JOIN ME FOR A 1V1 QUIZ',inviteCardRules:'10 questions  •  10 seconds per question',inviteCardQuestion:'Who knows more?',inviteCardButton:'OPEN THE LINK AND PLAY',
+inviteError:'Could not create the invitation. Try again.',inviteTitle:'KvizToGo 1v1',inviteMessage:'Join me for a 1v1 quiz on KvizToGo! 🧠⚔️\n10 questions, with time based on question length. Who knows more?\n{url}',
+inviteCardCta:'JOIN ME FOR A 1V1 QUIZ',inviteCardRules:'10 questions  •  time based on question length',inviteCardQuestion:'Who knows more?',inviteCardButton:'OPEN THE LINK AND PLAY',
 inviteCopied:'The friend link has been copied.',joining:'Joining…',findingFriend:'Finding your friend…',checkingInvite:'checking the invitation',joiningQuiz:'Joining the 1v1 quiz…',
 ownInvite:'This is your own invitation.',inviteExpired:'This invitation is no longer active.',inviteOpenError:'The invitation could not be opened.',
 opponentFound:'Opponent found',ready:'Ready ✓',waitingYourStart:'Waiting for you to start',waitingOpponentStart:'Waiting to start the quiz',startQuiz:'Start quiz',
@@ -195,7 +195,8 @@ function buildMpBotProfiles(){let gi=0,u=0;return LEADER_BOT_NAMES.map((name,i)=
 const MP_BOT_PROFILES=buildMpBotProfiles();
 const MP_SKILL_ACCURACY={excellent:[.84,.94],veryGood:[.72,.86],average:[.53,.70],sufficient:[.40,.57],bad:[.25,.41],veryBad:[.13,.29]};
 function mpBotAccuracy(p){const[a,b]=MP_SKILL_ACCURACY[p.skill]||[.45,.65],x=Math.max(0,Math.min(1,.58*p.cons+.42*p.bias));return a+(b-a)*x}
-function mpBotDelay(p){const mid=(p.base[0]+p.base[1])/2,perQ=mid/30,speed=Math.max(0,Math.min(1,(perQ-8)/12)),center=6100+speed*3000,spread=260+(1-p.cons)*1050;return Math.max(6000,Math.min(9700,Math.round(center+(Math.random()-.5)*2*spread)))}
+function questionSeconds(q){const len=Array.from(String(q?.question||'')).length;return 6+Math.max(0,Math.ceil((len-70)/20))}
+function mpBotDelay(p,totalSeconds){const mid=(p.base[0]+p.base[1])/2,perQ=mid/30,speed=Math.max(0,Math.min(1,(perQ-8)/12)),baseFraction=(6100+speed*3000)/10000,spreadFraction=(260+(1-p.cons)*1050)/10000,ms=totalSeconds*1000,raw=ms*(baseFraction+(Math.random()-.5)*2*spreadFraction);return Math.max(Math.round(ms*.42),Math.min(Math.round(ms*.96),Math.round(raw)))}
 const supabaseClient=window.supabase&&typeof window.supabase.createClient==='function'?window.supabase.createClient(SB,KEY):null;
 
 const MP_STATS_BASE='kviztogo_multiplayer_stats_v1',MP_GUEST_IDENTITY='kviztogo_guest_identity_v1';
@@ -256,7 +257,7 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
   }
 }
 
-let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='';const questionVotes=new Map();
+let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='';const questionVotes=new Map();
 let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
 
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -363,6 +364,7 @@ async function saveMultiplayerTrackedAnswer(item,index){
       is_exact:correct,
       was_skipped:skipped,
       match_reason:skipped?'no_answer':correct?'multiplayer_correct':'multiplayer_wrong',
+      answer_seconds:Number.isFinite(Number(item.answerSeconds))?Number(item.answerSeconds):null,
       language:currentLang
     });
     if(error&&error.code!=='23505')throw error;
@@ -571,22 +573,23 @@ function beginBotMatch(){
   draw();tickTimer=setInterval(draw,200)
 }
 function renderBot(){
-  clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);botMyChoice=botChoice=null;botMeAnswered=botOppAnswered=false;let q=botQuestions[botPos];
+  clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);botMyChoice=botChoice=null;botMyAnswerSeconds=botOppAnswerSeconds=null;botMeAnswered=botOppAnswered=false;let q=botQuestions[botPos];
+  botQuestionSeconds=questionSeconds(q);const durationMs=botQuestionSeconds*1000;
   $('meScore').textContent=botMe;$('oppScore').textContent=botScore;$('round').textContent=(botPos+1)+' / 10';$('topic').textContent=q.topic;$('question').textContent=q.question;$('answers').innerHTML='';
   q.answers.forEach(a=>{let b=document.createElement('button');b.className='answer';b.innerHTML='<b>'+a.key+'.</b> '+esc(a.text);b.onclick=()=>botUserAnswer(a.key,b);$('answers').appendChild(b)});
   $('status').textContent=t('opponentThinking',{opponent:bot.name});botStart=performance.now();clearInterval(tickTimer);
-  const draw=()=>{$('timer').textContent=String(Math.max(0,Math.ceil((10000-(performance.now()-botStart))/1000)))};draw();tickTimer=setInterval(draw,200);
-  botAnswerTimer=setTimeout(()=>botAnswer(q),bot.answerDelay());botRoundTimer=setTimeout(()=>botClose(q),10000)
+  const draw=()=>{$('timer').textContent=String(Math.max(0,Math.ceil((durationMs-(performance.now()-botStart))/1000)))};draw();tickTimer=setInterval(draw,200);
+  botAnswerTimer=setTimeout(()=>botAnswer(q),mpBotDelay(bot,botQuestionSeconds));botRoundTimer=setTimeout(()=>botClose(q),durationMs)
 }
-function botUserAnswer(k,b){if(botMeAnswered)return;botMeAnswered=true;botMyChoice=k;let q=botQuestions[botPos];if(k===q.correctKey){botMe++;b.classList.add('good');$('meScore').textContent=botMe;botClose(q)}else{b.classList.add('bad');b.disabled=true;$('status').textContent=t('wrongOpponentCan');if(botOppAnswered)botClose(q)}}
-function botAnswer(q){if(botOppAnswered)return;botOppAnswered=true;let ok=Math.random()<bot.accuracy;botChoice=ok?q.correctKey:shuffle(q.answers.filter(a=>a.key!==q.correctKey))[0].key;if(ok){botScore++;$('oppScore').textContent=botScore;botClose(q)}else if(botMeAnswered)botClose(q);else $('status').textContent=t('opponentWrong',{opponent:bot.name})}
-function botClose(q){clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});$('timer').textContent='0';$('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);botHistory.push({q,me:botMyChoice,opp:botChoice});$('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();setTimeout(()=>{botPos++;if(botPos>=10)showEnd(botMe,botScore);else renderBot()},2000)}
+function botUserAnswer(k,b){if(botMeAnswered)return;botMeAnswered=true;botMyChoice=k;botMyAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let q=botQuestions[botPos];if(k===q.correctKey){botMe++;b.classList.add('good');$('meScore').textContent=botMe;botClose(q)}else{b.classList.add('bad');b.disabled=true;$('status').textContent=t('wrongOpponentCan');if(botOppAnswered)botClose(q)}}
+function botAnswer(q){if(botOppAnswered)return;botOppAnswered=true;botOppAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let ok=Math.random()<bot.accuracy;botChoice=ok?q.correctKey:shuffle(q.answers.filter(a=>a.key!==q.correctKey))[0].key;if(ok){botScore++;$('oppScore').textContent=botScore;botClose(q)}else if(botMeAnswered)botClose(q);else $('status').textContent=t('opponentWrong',{opponent:bot.name})}
+function botClose(q){clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});$('timer').textContent='0';$('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);botHistory.push({q,me:botMyChoice,opp:botChoice,answerSeconds:botMyAnswerSeconds,opponentAnswerSeconds:botOppAnswerSeconds});$('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();setTimeout(()=>{botPos++;if(botPos>=10)showEnd(botMe,botScore);else renderBot()},2000)}
 
 
 function currentHistoryEntries(){
-  if(botMode)return botHistory.map((x,i)=>({q:x.q,mine:x.me,theirs:x.opp,n:i+1,opp:bot?.name||t('opponentFound')}));
+  if(botMode)return botHistory.map((x,i)=>({q:x.q,mine:x.me,theirs:x.opp,answerSeconds:x.answerSeconds,opponentAnswerSeconds:x.opponentAnswerSeconds,n:i+1,opp:bot?.name||t('opponentFound')}));
   let h=Array.isArray(state?.history)?state.history:[],slot=state?.slot||1;
-  return h.map((x,i)=>({q:x.q||{},mine:slot===1?x.choice1:x.choice2,theirs:slot===1?x.choice2:x.choice1,n:i+1,opp:state?.opponent_name||t('opponentFound')}));
+  return h.map((x,i)=>({q:x.q||{},mine:slot===1?x.choice1:x.choice2,theirs:slot===1?x.choice2:x.choice1,answerSeconds:slot===1?x.answer_seconds1:x.answer_seconds2,opponentAnswerSeconds:slot===1?x.answer_seconds2:x.answer_seconds1,n:i+1,opp:state?.opponent_name||t('opponentFound')}));
 }
 function currentVoteSessionId(){return state?.match_id?('multiplayer:'+state.match_id):(botSessionId||('multiplayer:'+token().slice(0,36)))}
 function updateHistoryActionButtons(){let on=currentHistoryEntries().length>0;let a=$('mp-download-history'),b=$('mp-share-result');if(a)a.disabled=!on;if(b)b.disabled=!on}
