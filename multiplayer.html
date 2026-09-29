@@ -210,10 +210,24 @@ function ensureMpGuestIdentity(){
   try{localStorage.setItem(MP_GUEST_IDENTITY,JSON.stringify(value))}catch{}
   return value
 }
-function emptyMpStats(){return{gamesPlayed:0,wins:0,draws:0,losses:0,recorded:[]}}
-function normalizeMpStats(v){const s=v&&typeof v==='object'?v:{};return{gamesPlayed:Math.max(0,Number(s.gamesPlayed)||0),wins:Math.max(0,Number(s.wins)||0),draws:Math.max(0,Number(s.draws)||0),losses:Math.max(0,Number(s.losses)||0),recorded:Array.isArray(s.recorded)?[...new Set(s.recorded.map(String))].slice(-2500):[]}}
+function emptyMpStats(){return{gamesPlayed:0,wins:0,draws:0,losses:0,totalCorrect:0,totalWrong:0,longestStreak:0,discoveredQuestionIds:[],recorded:[]}}
+function normalizeMpStats(v){const s=v&&typeof v==='object'?v:{};return{gamesPlayed:Math.max(0,Number(s.gamesPlayed)||0),wins:Math.max(0,Number(s.wins)||0),draws:Math.max(0,Number(s.draws)||0),losses:Math.max(0,Number(s.losses)||0),totalCorrect:Math.max(0,Number(s.totalCorrect)||0),totalWrong:Math.max(0,Number(s.totalWrong)||0),longestStreak:Math.max(0,Number(s.longestStreak)||0),discoveredQuestionIds:Array.isArray(s.discoveredQuestionIds)?[...new Set(s.discoveredQuestionIds.map(String))].slice(-10000):[],recorded:Array.isArray(s.recorded)?[...new Set(s.recorded.map(String))].slice(-2500):[]}}
+function getMultiplayerKnowledgeContribution(){
+  const items=currentHistoryEntries();
+  let correctCount=0,wrongCount=0,streak=0,longestStreak=0;
+  const discovered=[];
+  for(const item of items){
+    const q=item?.q||{},id=String(q.id??q.question??'').trim();
+    if(id)discovered.push(id);
+    const ok=Boolean(item?.mine)&&item.mine===q.correctKey;
+    if(ok){correctCount++;streak++;longestStreak=Math.max(longestStreak,streak)}
+    else{wrongCount++;streak=0}
+  }
+  return{correctCount,wrongCount,longestStreak,discoveredQuestionIds:[...new Set(discovered)].slice(-10000)}
+}
 async function recordMultiplayerResult(matchKey,outcome,isBot=false){
   const key=String(matchKey||'').trim();if(!key||!['win','draw','loss'].includes(outcome))return;
+  const knowledge=getMultiplayerKnowledgeContribution();
   let user=null;try{user=(await supabaseClient?.auth?.getSession?.())?.data?.session?.user||null}catch{}
   const identity=user?.id?'user:'+user.id:'guest:'+ensureMpGuestIdentity().id;
   const storageKey=MP_STATS_BASE+':'+identity;
@@ -221,12 +235,20 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
   if(!local.recorded.includes(key)){
     local.recorded.push(key);local.recorded=local.recorded.slice(-2500);local.gamesPlayed++;
     if(outcome==='win')local.wins++;else if(outcome==='draw')local.draws++;else local.losses++;
+    local.totalCorrect+=knowledge.correctCount;
+    local.totalWrong+=knowledge.wrongCount;
+    local.longestStreak=Math.max(local.longestStreak,knowledge.longestStreak);
+    local.discoveredQuestionIds=[...new Set([...local.discoveredQuestionIds,...knowledge.discoveredQuestionIds])].slice(-10000);
     try{localStorage.setItem(storageKey,JSON.stringify(local))}catch{}
   }
   if(user?.id&&supabaseClient){
     try{
       const {error}=await supabaseClient.from('multiplayer_profile_results').upsert(
-        {user_id:user.id,match_key:key,outcome,is_bot:!!isBot},
+        {
+          user_id:user.id,match_key:key,outcome,is_bot:!!isBot,
+          correct_count:knowledge.correctCount,wrong_count:knowledge.wrongCount,
+          longest_streak:knowledge.longestStreak,discovered_question_ids:knowledge.discoveredQuestionIds
+        },
         {onConflict:'user_id,match_key',ignoreDuplicates:true}
       );
       if(error)throw error;
