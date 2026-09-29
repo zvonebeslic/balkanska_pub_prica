@@ -168,8 +168,8 @@ async function share(){let t=exportText();if(navigator.share)try{await navigator
 function save(){let t=exportText(),b=new Blob([t],{type:'text/plain;charset=utf-8'}),u=URL.createObjectURL(b),a=document.createElement('a'),d=new Date(),p=n=>String(n).padStart(2,'0');a.href=u;a.download='KvizToGo-Multiplayer-'+d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'_'+p(d.getHours())+'-'+p(d.getMinutes())+'-'+p(d.getSeconds())+'.txt';a.click();setTimeout(()=>URL.revokeObjectURL(u),500)}
 
 $('meName').textContent=myName();$('find').onclick=findOpponent;$('friend').onclick=createFriendInvite;
-$('again').onclick=()=>{if(botMode)prepareBot().then(()=>beginBotMatch());else leave().then(findOpponent)};
+$('again').onclick=()=>{if(botMode)beginBotMatch();else leave().then(findOpponent)};
 $('newOpp').onclick=()=>leave().then(findOpponent);$('share').onclick=share;$('save').onclick=save;
-const inviteParam=new URLSearchParams(location.search).get('invite');if(inviteParam)joinFriendInvite(inviteParam);
+const inviteParam=new URLSearchParams(location.search).get('invite');if(inviteParam)joinFriendInvite(inviteParam);else api('state',{}).then(s=>{state=s;if(s?.status&&s.status!=='idle'){handle(s);if(['waiting','invite_waiting','ready','countdown','playing','reveal'].includes(s.status)||s.match_id)startPoll()}}).catch(()=>{});
 window.addEventListener('pagehide',()=>{if(state?.match_id||state?.status==='invite_waiting'||state?.status==='waiting'){fetch(SB+'/rest/v1/rpc/multiplayer_v3',{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify({p_token:token(),p_action:'leave',p_payload:state?.match_id?{match_id:state.match_id}:{}}),keepalive:true}).catch(()=>{})}});
 })();</script></body></html>
