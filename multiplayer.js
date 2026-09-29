@@ -32,10 +32,10 @@ supabaseUnavailable:'Supabase nije dostupan.',sending:'Šaljem...',feedbackThank
 sharePrompt:'Sjetili ste se nekoga na ovom pitanju? Pošaljite mu i provjerite zna li odgovor.',sendQuestion:'📤 Pošalji pitanje',challenge:'MOŽEŠ LI ODGOVORITI?',
 questionShareFooter:'Pošalji prijatelju i provjeri zna li odgovor.',questionShareText:'Možeš li odgovoriti na ovo pitanje?\n\nSjetio/la sam te se baš na ovom pitanju 😄\nOdigraj i ti na KvizToGo i provjeri svoje znanje:\nhttps://kviztogo.com/online-kviz',
 questionReady:'Pitanje je spremno za slanje.',questionSaved:'Slika pitanja je spremljena.',quizLinkCopied:'Poveznica za kviz je kopirana.',
-historyImageTitle:'Multiplayer · odigrana povijest',playedAgainst:'{me} protiv {opponent}',historySaved:'Cijela odigrana povijest spremljena je kao PNG slika.',nothingPlayed:t('nothingPlayed'),
+historyImageTitle:'Multiplayer · odigrana povijest',playedAgainst:'{me} protiv {opponent}',historySaved:'Cijela odigrana povijest spremljena je kao PNG slika.',nothingPlayed:'Još nema odigranih pitanja.',
 resultHeading:'MULTIPLAYER REZULTAT',goodFight:'DOBRA BORBA',resultWin:'POBJEDA',resultDraw:'NERIJEŠENO',resultCta:'Misliš da možeš bolje? Pridruži se multiplayer kvizu.',
 resultShareText:'Upravo sam odigrao/la KvizToGo 1 na 1: {me} {meScore} : {oppScore} {opponent}. 🧠⚔️\n\nPridruži se multiplayer kvizu:\nhttps://kviztogo.com/multiplayer.html',
-resultTitle:'Moj KvizToGo multiplayer rezultat',resultReady:'Rezultat je spreman za dijeljenje.',resultSaved:'Slika rezultata je spremljena.',resultShareError:t('resultShareError'),
+resultTitle:'Moj KvizToGo multiplayer rezultat',resultReady:'Rezultat je spreman za dijeljenje.',resultSaved:'Slika rezultata je spremljena.',resultShareError:'Rezultat nije moguće podijeliti.',
 guest:'Gost'
 },
 en:{
