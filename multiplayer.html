@@ -515,8 +515,9 @@ const MP_BOT_BAG_KEY='kviztogo_mp_bot_bag_v1';
 const MP_BOT_LAST_SKILL_KEY='kviztogo_mp_bot_last_skill_v1';
 const MP_BOT_RECORDS_KEY='kviztogo_mp_bot_records_v1';
 const MP_BOT_FORFEIT_KEY='kviztogo_mp_bot_forfeit_v1';
-let botForfeitTimer=null;
-let activeServerItems=[],activeRefreshTimer=null,invitePromptTimer=null,invitePromptCode=null,invitePromptDismissedCode=null;
+const MP_REAL_DISCONNECT_HINT='kviztogo_mp_real_disconnect_hint_v1';
+let botForfeitTimer=null,resumingDisconnected=false;
+let activeServerItems=[],activeDisconnectItems=[],activeRefreshTimer=null,invitePromptTimer=null,invitePromptCode=null,invitePromptDismissedCode=null;
 const MP_GAME_MODES=[
   {id:'q10',kind:'questions',questionLimit:10,winTarget:null,topic:null,hr:'10 pitanja',en:'10 questions'},
   {id:'q20',kind:'questions',questionLimit:20,winTarget:null,topic:null,hr:'20 pitanja',en:'20 questions'},
@@ -618,6 +619,10 @@ function activeItemStatus(item){
     if(!item.friend_joined)return item.match_type==='invite'?t('activeWaitingFriend'):t('activeTurnSearching');
     return item.my_turn?t('activeYourTurn'):t('activeTurnWaiting')
   }
+  if(item.kind==='disconnect'){
+    const sec=Math.max(0,Math.ceil((Number(item.disconnect_deadline)-Date.now())/1000));
+    return currentLang==='en'?'Resume within '+sec+' s':'Nastavi u roku '+sec+' s'
+  }
   if(item.kind==='bot'&&item.pending_forfeit){
     const sec=Math.max(0,Math.ceil((Number(item.deadline)-Date.now())/1000));
     return currentLang==='en'?'Resume within '+sec+' s':'Nastavi u roku '+sec+' s'
@@ -628,16 +633,41 @@ function activeItemStatus(item){
   if(item.friend_joined&&item.kind==='invite')return t('activeFriendReady');
   return t('activeReady')
 }
+function readRealDisconnectHint(){
+  try{
+    const x=JSON.parse(localStorage.getItem(MP_REAL_DISCONNECT_HINT)||'null');
+    if(!x?.match_id||Number(x.disconnect_deadline)<=Date.now()){localStorage.removeItem(MP_REAL_DISCONNECT_HINT);return null}
+    return x
+  }catch{return null}
+}
+function saveRealDisconnectHint(s){
+  if(!s?.match_id)return;
+  try{localStorage.setItem(MP_REAL_DISCONNECT_HINT,JSON.stringify({
+    id:String(s.match_id),kind:'disconnect',match_id:String(s.match_id),synthetic:true,
+    opponent_name:s.opponent_name||'',me_score:Number(s.me_score)||0,opponent_score:Number(s.opponent_score)||0,
+    game_kind:s.game_kind||'questions',question_limit:Number(s.question_limit)||10,
+    win_target:s.win_target==null?null:Number(s.win_target),topic_filter:s.topic_filter||null,
+    me_series_wins:Number(s.me_series_wins)||0,opponent_series_wins:Number(s.opponent_series_wins)||0,
+    disconnect_deadline:Date.now()+30000,created_at:Date.now()
+  }))}catch{}
+}
+function clearRealDisconnectHint(matchId=null){
+  try{
+    if(!matchId){localStorage.removeItem(MP_REAL_DISCONNECT_HINT);return}
+    const x=JSON.parse(localStorage.getItem(MP_REAL_DISCONNECT_HINT)||'null');
+    if(String(x?.match_id||'')===String(matchId))localStorage.removeItem(MP_REAL_DISCONNECT_HINT)
+  }catch{}
+}
 function renderActiveQuizzes(){
   const root=$('active-quizzes-list');if(!root)return;
-  const bots=loadActiveBots(),items=[...activeServerItems,...bots];
+  const bots=loadActiveBots(),items=[...activeDisconnectItems,...activeServerItems,...bots];
   if(!items.length){root.innerHTML='<div class="active-quiz-empty">'+esc(t('activeEmpty'))+'</div>';return}
   root.innerHTML='';
   for(const item of items){
     const turnReady=item.kind==='turn'&&(item.my_turn||item.status==='finished');
     const card=document.createElement('article');card.className='active-quiz-card'+((item.kind==='invite'&&item.friend_joined)||turnReady?' friend-ready':'');
-    const kind=item.kind==='turn'?t('activeTurn'):item.kind==='bot'?t('activeBot'):item.kind==='invite'?t('activeInvite'):t('activeRematch');
-    const opp=item.kind==='bot'?item.opponent_name:(item.opponent_name||'');
+    const kind=item.kind==='disconnect'?(currentLang==='en'?'Interrupted match':'Prekinuti meč'):item.kind==='turn'?t('activeTurn'):item.kind==='bot'?t('activeBot'):item.kind==='invite'?t('activeInvite'):t('activeRematch');
+    const opp=(item.kind==='bot'||item.kind==='disconnect')?item.opponent_name:(item.opponent_name||'');
     const title=kind+(opp?' · '+opp:'');
     const series=(Number(item.me_series_wins)||0)+(Number(item.opponent_series_wins)||0)>0
       ?' · '+t('activeSeries',{me:Number(item.me_series_wins)||0,opp:Number(item.opponent_series_wins)||0})
@@ -645,8 +675,9 @@ function renderActiveQuizzes(){
     const turnScore=item.kind==='turn'&&item.friend_joined
       ?' · '+t('turnResult',{me:Number(item.me_score)||0,opp:Number(item.opponent_score)||0})
       :'';
+    const disconnectScore=item.kind==='disconnect'?' · '+String(Number(item.me_score)||0)+' : '+String(Number(item.opponent_score)||0):'';
     card.innerHTML='<div class="active-quiz-top"><div class="active-quiz-title">'+esc(title)+'</div><div class="active-quiz-status">'+esc(activeItemStatus(item))+'</div></div>'+
-      '<div class="active-quiz-meta">'+esc(activeModeLabel(item)+series+turnScore)+'</div><div class="active-quiz-actions"></div>';
+      '<div class="active-quiz-meta">'+esc(activeModeLabel(item)+series+turnScore+disconnectScore)+'</div><div class="active-quiz-actions"></div>';
     const actions=card.querySelector('.active-quiz-actions');
     if(item.kind==='invite'&&item.invite_code&&!item.friend_joined){
       const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareFriendInvite(item.invite_code,activeModeLabel(item));actions.appendChild(share)
@@ -654,18 +685,23 @@ function renderActiveQuizzes(){
     if(item.kind==='turn'&&item.match_type==='invite'&&item.invite_code&&!item.friend_joined){
       const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareTurnInvite(item.invite_code,item.question_limit);actions.appendChild(share)
     }
-    const resume=document.createElement('button');resume.className='active-resume';resume.textContent=item.kind==='turn'&&item.my_turn?t('activePlayTurn'):t('activeContinue');resume.onclick=()=>item.kind==='turn'?resumeTurnGame(item.id):item.kind==='bot'?resumeBotActive(item.id):resumeServerActive(item.id);actions.appendChild(resume);
-    const remove=document.createElement('button');remove.className='active-remove';remove.textContent=t('activeRemove');remove.onclick=()=>item.kind==='turn'?removeTurnGame(item.id):item.kind==='bot'?removeBotActive(item.id):removeServerActive(item.id);actions.appendChild(remove);
+    const resume=document.createElement('button');resume.className='active-resume';resume.textContent=item.kind==='turn'&&item.my_turn?t('activePlayTurn'):t('activeContinue');resume.onclick=()=>item.kind==='disconnect'?resumeDisconnectedMatch(item.match_id):item.kind==='turn'?resumeTurnGame(item.id):item.kind==='bot'?resumeBotActive(item.id):resumeServerActive(item.id);actions.appendChild(resume);
+    if(item.kind!=='disconnect'){
+      const remove=document.createElement('button');remove.className='active-remove';remove.textContent=t('activeRemove');remove.onclick=()=>item.kind==='turn'?removeTurnGame(item.id):item.kind==='bot'?removeBotActive(item.id):removeServerActive(item.id);actions.appendChild(remove)
+    }
     root.appendChild(card)
   }
 }
 async function refreshActiveQuizzes(checkMatch=true){
   if(!mpIdentityName)return;
   try{
-    const [data,turnData]=await Promise.all([api('active_list',{}),api('turn_list',{})]);
+    const [data,turnData,disconnectData]=await Promise.all([api('active_list',{}),api('turn_list',{}),api('disconnect_list',{})]);
     activeServerItems=[...(Array.isArray(data)?data:[]),...(Array.isArray(turnData)?turnData:[])];
+    activeDisconnectItems=Array.isArray(disconnectData)?disconnectData:[];
+    const hint=readRealDisconnectHint();
+    if(hint&&!activeDisconnectItems.some(x=>String(x.match_id)===String(hint.match_id)))activeDisconnectItems.unshift(hint);
     renderActiveQuizzes();
-    if(checkMatch&&!botMode&&!state?.match_id&&!['waiting','invite_waiting','bot'].includes(state?.status)){
+    if(checkMatch&&!activeDisconnectItems.length&&!botMode&&!state?.match_id&&!['waiting','invite_waiting','bot'].includes(state?.status)){
       const s=await api('state',{});
       if(s?.match_id&&['ready','countdown','playing','reveal'].includes(s.status)){
         state=s;handle(s);startPoll()
@@ -696,6 +732,28 @@ async function resumeServerActive(id){
     else showMpToast(t('activeWaitingOpponent'));
     await refreshActiveQuizzes(false)
   }catch(e){console.warn('Aktivni kviz nije nastavljen:',e)}
+}
+async function resumeDisconnectedMatch(matchId,automatic=false){
+  if(resumingDisconnected||!matchId)return;
+  resumingDisconnected=true;
+  try{
+    const result=await api('resume_disconnect',{match_id:String(matchId)});
+    if(result?.match_id&&['ready','countdown','playing','reveal'].includes(result.status)){
+      clearRealDisconnectHint(matchId);
+      activeDisconnectItems=activeDisconnectItems.filter(x=>String(x.match_id)!==String(matchId));
+      state=result;handle(state);startPoll();await refreshActiveQuizzes(false);return
+    }
+    if(result?.status==='resume_busy'){
+      if(!automatic)showMpToast(currentLang==='en'?'Another multiplayer match is already in progress.':'Već igraš drugi multiplayer meč.')
+    }else if(result?.status==='disconnect_expired'){
+      clearRealDisconnectHint(matchId);
+      if(!automatic)showMpToast(t('disconnectLoss'))
+    }
+    await refreshActiveQuizzes(false)
+  }catch(e){
+    if(!automatic)showMpToast(t('searchError'));
+    console.warn('Prekinuti meč nije nastavljen:',e)
+  }finally{resumingDisconnected=false}
 }
 
 function turnBackToLobby(){
@@ -1355,6 +1413,9 @@ function renderReal(s){
   if(s.status==='finished'&&s.reason==='disconnect_forfeit'){
     stopPoll();clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score||0,s.opponent_score||0,s.departed!==s.slot?'win':'loss');return
   }
+  if(s.me_disconnected&&['ready','countdown','playing','reveal'].includes(s.status)){
+    clearInterval(tickTimer);$('timer').textContent='⏸';$('status').textContent=currentLang==='en'?'Reconnecting…':'Vraćamo te u meč…';document.querySelectorAll('.answer').forEach(b=>b.disabled=true);void resumeDisconnectedMatch(s.match_id,true);return
+  }
   if(s.opponent_disconnected&&['countdown','playing','reveal'].includes(s.status)){
     clearInterval(tickTimer);$('timer').textContent='⏸';$('status').textContent=t('connectionLost');document.querySelectorAll('.answer').forEach(b=>b.disabled=true);return
   }
@@ -1699,6 +1760,9 @@ async function continueMultiplayerEntry(){
     try{await api('leave',{})}catch{}
     state=null;resetLobby();renderActiveQuizzes();return
   }
+  if(activeDisconnectItems.length){
+    state=null;resetLobby();renderActiveQuizzes();return
+  }
   api('state',{}).then(s=>{state=s;if(s?.match_id&&['ready','countdown','playing','reveal','finished'].includes(s.status)){handle(s);if(['ready','countdown','playing','reveal','finished'].includes(s.status))startPoll()}else if(['waiting','invite_waiting','bot'].includes(s?.status)){api('leave',{}).catch(()=>{}).finally(()=>resetLobby())}else resetLobby()}).catch(()=>resetLobby())
 }
 async function initMultiplayerPage(){
@@ -1728,6 +1792,7 @@ window.addEventListener('pagehide',()=>{
     return
   }
   if(state?.match_id&&!botMode&&['ready','countdown','playing','reveal'].includes(state?.status)){
+    saveRealDisconnectHint(state);
     fetch(SB+'/rest/v1/rpc/multiplayer_v3',{
       method:'POST',
       headers:{apikey:KEY,'Content-Type':'application/json'},
