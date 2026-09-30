@@ -241,7 +241,7 @@ opponentFound:'Protivnik pronađen',ready:'Spreman ✓',waitingYourStart:'Čeka 
 waitingOpponentClick:'Čekamo da protivnik klikne Kreni s kvizom…',waitingOpponent:'Čekamo protivnika…',connectionLost:'Protivnik je izgubio vezu. Čekamo da se vrati…',connectionLostMeta:'Veza prekinuta',
 friendWaiting:'Čekamo da se prijatelj/ica pridruži…',inviteActive:'Pozivnica aktivna',waitingFriend:'Čekamo prijatelja/icu…',shareAgain:'Podijeli ponovno',
 multiplayer:'Multiplayer',roundRule:'Runda završava istekom vremena ili prvim točnim odgovorom.',bothReady:'Oba igrača su spremna.',answerLocked:'Odgovor zaključan. Čekamo protivnika…',opponentAnswered:'Protivnik je odgovorio.',answerBeforeTime:'Odgovori prije isteka vremena.',
-correctAnswer:'Točan odgovor:',win:'🏆 Pobjeda!',disconnectWin:'Protivnik se nije vratio u igru pa pobjeda pripada tebi.',duelFinished:'Dvoboj je završen',disconnectLoss:'Nisi se vratio u igru unutar dopuštenog vremena.',
+correctAnswer:'Točan odgovor:',youAnsweredCorrect:'Odgovorio si točno.',opponentAnsweredCorrect:'{opponent} je odgovorio točno.',timeExpired:'Vrijeme je isteklo.',win:'🏆 Pobjeda!',disconnectWin:'Protivnik se nije vratio u igru pa pobjeda pripada tebi.',duelFinished:'Dvoboj je završen',disconnectLoss:'Nisi se vratio u igru unutar dopuštenog vremena.',
 duelInterrupted:'Dvoboj prekinut',opponentLeft:'Protivnik je napustio dvoboj.',duelInactive:'Dvoboj više nije aktivan.',questionIn:'Pitanje za {sec} sekundi…',nextQuestionIn:'Sljedeće pitanje za {sec} s…',
 historyEmpty:'Odigrana pitanja pojavit će se ovdje.',noAnswer:'nije odgovorio',correctTag:'TOČAN ODGOVOR',victory:'🏆 Pobjeda!',victoryText:'Pobijedio si {opponent}.',
 opponentWins:'Protivnik pobjeđuje',opponentBetter:'{opponent} je ovaj put bio bolji.',draw:'🤝 Neriješeno',drawText:'Potpuno izjednačen dvoboj.',
@@ -278,7 +278,7 @@ opponentFound:'Opponent found',ready:'Ready ✓',waitingYourStart:'Waiting for y
 waitingOpponentClick:'Waiting for your opponent to click Start quiz…',waitingOpponent:'Waiting for opponent…',connectionLost:'Opponent lost connection. Waiting for them to return…',connectionLostMeta:'Connection lost',
 friendWaiting:'Waiting for your friend to join…',inviteActive:'Invitation active',waitingFriend:'Waiting for friend…',shareAgain:'Share again',
 multiplayer:'Multiplayer',roundRule:'The round ends when time expires or someone gives the first correct answer.',bothReady:'Both players are ready.',answerLocked:'Answer locked. Waiting for opponent…',opponentAnswered:'Opponent answered.',answerBeforeTime:'Answer before time runs out.',
-correctAnswer:'Correct answer:',win:'🏆 Victory!',disconnectWin:'Your opponent did not return, so you win the match.',duelFinished:'Match finished',disconnectLoss:'You did not return to the match within the allowed time.',
+correctAnswer:'Correct answer:',youAnsweredCorrect:'You answered correctly.',opponentAnsweredCorrect:'{opponent} answered correctly.',timeExpired:'Time is up.',win:'🏆 Victory!',disconnectWin:'Your opponent did not return, so you win the match.',duelFinished:'Match finished',disconnectLoss:'You did not return to the match within the allowed time.',
 duelInterrupted:'Match interrupted',opponentLeft:'Your opponent left the match.',duelInactive:'The match is no longer active.',questionIn:'Question in {sec} seconds…',nextQuestionIn:'Next question in {sec}s…',
 historyEmpty:'Played questions will appear here.',noAnswer:'no answer',correctTag:'CORRECT ANSWER',victory:'🏆 Victory!',victoryText:'You beat {opponent}.',
 opponentWins:'Opponent wins',opponentBetter:'{opponent} was better this time.',draw:'🤝 Draw',drawText:'A completely even match.',
@@ -1237,13 +1237,22 @@ function renderReal(s){
     let q=s.question;if(!q)return;$('topic').textContent=q.topic||'KvizToGo';$('question').textContent=q.question||'';$('answers').innerHTML='';
     (q.answers||[]).forEach(a=>{let b=document.createElement('button');b.className='answer';b.innerHTML='<b>'+esc(a.key)+'.</b> '+esc(a.text);if(s.my_choice===a.key)b.classList.add(q.correctKey?(a.key===q.correctKey?'good':'bad'):'bad');if(s.status==='reveal'&&a.key===q.correctKey)b.classList.add('good');b.disabled=s.status!=='playing'||!!s.my_choice;b.onclick=()=>realAnswer(a.key,b);$('answers').appendChild(b)});
     if(s.status==='playing')$('status').textContent=s.my_choice?t('answerLocked'):(s.opponent_answered?t('opponentAnswered'):t('answerBeforeTime'));
-    else $('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);
+    else $('status').textContent=realRevealOutcome(s,q);
     updateClock(s);return
   }
   if(s.status==='finished'){clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score,s.opponent_score);updateRematchState(s);if(!pollTimer)startPoll();return}
   if(s.status==='cancelled'){stopPoll();clearInterval(tickTimer);void finishMultiplayerQuizTracking(false);if($('later'))$('later').hidden=true;$('status').textContent='';$('end').classList.remove('hidden');$('endScore').textContent=(s.me_score||0)+' : '+(s.opponent_score||0);$('endText').textContent=t('duelInterrupted')}
 }
 
+function realRevealOutcome(s,q){
+  const h=Array.isArray(s?.history)?s.history:[];
+  const current=[...h].reverse().find(x=>String(x?.q?.id??'')===String(q?.id??''))||h[h.length-1]||null;
+  const mine=current?(s.slot===1?current.choice1:current.choice2):s.my_choice;
+  const theirs=current?(s.slot===1?current.choice2:current.choice1):null;
+  if(mine&&mine===q?.correctKey)return t('youAnsweredCorrect');
+  if(theirs&&theirs===q?.correctKey)return t('opponentAnsweredCorrect',{opponent:s?.opponent_name||t('opponentFound')});
+  return t('timeExpired')
+}
 function isFinalReveal(s){
   const target=Number(s?.win_target)||0,me=Number(s?.me_score)||0,opp=Number(s?.opponent_score)||0;
   const round=Number(s?.round)||0,limit=Math.max(1,Number(s?.question_limit)||10);
@@ -1260,7 +1269,7 @@ function updateClock(s){
       let sec=Math.max(0,Math.ceil((s.deadline-(Date.now()-offset))/1000));
       $('timer').textContent=String(sec)
     }else if(s.status==='reveal'){
-      const q=s.question||{},correct=t('correctAnswer')+' '+(q.correctKey||'')+'. '+answerText(q,q.correctKey);
+      const q=s.question||{},correct=realRevealOutcome(s,q);
       if(isFinalReveal(s)){
         $('timer').textContent='0';
         $('status').textContent=correct
@@ -1377,10 +1386,15 @@ function renderBot(){
 }
 function botUserAnswer(k,b){if(botMeAnswered)return;botMeAnswered=true;botMyChoice=k;botMyAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let q=botQuestions[botPos];if(k===q.correctKey){botMe++;b.classList.add('good');$('meScore').textContent=botMe;botClose(q)}else{b.classList.add('bad');b.disabled=true;$('status').textContent=t('wrongOpponentCan');if(botOppAnswered)botClose(q)}}
 function botAnswer(q){if(botOppAnswered)return;botOppAnswered=true;botOppAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let ok=Math.random()<bot.accuracy;botChoice=ok?q.correctKey:shuffle(q.answers.filter(a=>a.key!==q.correctKey))[0].key;if(ok){botScore++;$('oppScore').textContent=botScore;botClose(q)}else if(botMeAnswered)botClose(q);else $('status').textContent=t('opponentWrong',{opponent:bot.name})}
+function botRevealOutcome(q){
+  if(botMyChoice&&botMyChoice===q?.correctKey)return t('youAnsweredCorrect');
+  if(botChoice&&botChoice===q?.correctKey)return t('opponentAnsweredCorrect',{opponent:bot?.name||t('opponentFound')});
+  return t('timeExpired')
+}
 function botClose(q){
   clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);
   document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});
-  const correct=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);
+  const correct=botRevealOutcome(q);
   botHistory.push({q,me:botMyChoice,opp:botChoice,answerSeconds:botMyAnswerSeconds,opponentAnswerSeconds:botOppAnswerSeconds});
   $('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));
   remember([q.id]);rememberThemeQuestion(q.topic,q.id);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();
