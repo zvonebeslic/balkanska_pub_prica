@@ -584,7 +584,7 @@ function renderActiveQuizzes(){
       '<div class="active-quiz-meta">'+esc(activeModeLabel(item)+series+turnScore)+'</div><div class="active-quiz-actions"></div>';
     const actions=card.querySelector('.active-quiz-actions');
     if(item.kind==='invite'&&item.invite_code&&!item.friend_joined){
-      const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareFriendInvite(item.invite_code);actions.appendChild(share)
+      const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareFriendInvite(item.invite_code,activeModeLabel(item));actions.appendChild(share)
     }
     if(item.kind==='turn'&&item.match_type==='invite'&&item.invite_code&&!item.friend_joined){
       const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareTurnInvite(item.invite_code,item.question_limit);actions.appendChild(share)
@@ -1484,6 +1484,7 @@ async function shareCurrentResult(){
 
 async function continueMultiplayerEntry(){
   if(!mpIdentityName){openMpNameModal(true);return}
+  if(pendingTurnInviteParam){const code=pendingTurnInviteParam;pendingTurnInviteParam=null;await joinTurnInvite(code);return}
   if(pendingInviteParam){const code=pendingInviteParam;pendingInviteParam=null;await joinFriendInvite(code);return}
   api('state',{}).then(s=>{state=s;if(s?.match_id&&['ready','countdown','playing','reveal','finished'].includes(s.status)){handle(s);if(['ready','countdown','playing','reveal','finished'].includes(s.status))startPoll()}else if(['waiting','invite_waiting','bot'].includes(s?.status)){api('leave',{}).catch(()=>{}).finally(()=>resetLobby())}else resetLobby()}).catch(()=>resetLobby())
 }
@@ -1499,7 +1500,7 @@ async function initMultiplayerPage(){
   $('mp-change-name').onclick=()=>openMpNameModal(false);$('mp-name-cancel').onclick=closeMpNameModal;$('mp-name-save').onclick=saveMpIdentityName;
   $('mp-name-modal').addEventListener('click',e=>{if(e.target===$('mp-name-modal'))closeMpNameModal()});
   $('mp-name-input').addEventListener('keydown',e=>{if(e.key==='Enter')saveMpIdentityName();else if(e.key==='Escape')closeMpNameModal()});
-  pendingInviteParam=new URLSearchParams(location.search).get('invite');
+  const entryParams=new URLSearchParams(location.search);pendingTurnInviteParam=entryParams.get('turn');pendingInviteParam=entryParams.get('invite');
   await loadMpIdentity();$('meName').textContent=myName()||'—';
   if(!mpIdentityName){openMpNameModal(true);return}
   await refreshActiveQuizzes(false);startActiveRefresh();
