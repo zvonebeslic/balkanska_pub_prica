@@ -3201,7 +3201,7 @@ const SESSION_TIME_KEY = "kviztogo_login_time";
 
       const { error } = await supabaseClient.auth.updateUser(
         { email },
-        { emailRedirectTo: `${window.location.origin}/profil.html` }
+        { emailRedirectTo: "https://kviztogo.com/profil.html" }
       );
 
       if (error) {
@@ -3281,7 +3281,7 @@ async function deleteAccount() {
 
 function getInviteUrl() {
   if (!currentInviteCode) return null;
-  const inviteUrl = new URL("login.html", window.location.href);
+  const inviteUrl = new URL("https://kviztogo.com/login.html");
   inviteUrl.searchParams.set("ref", currentInviteCode);
   return inviteUrl.href;
 }
