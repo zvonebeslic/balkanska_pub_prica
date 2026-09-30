@@ -295,7 +295,8 @@ function applyLanguage(lang){
   document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));
   document.querySelectorAll('[data-i18n-aria-label]').forEach(el=>el.setAttribute('aria-label',t(el.dataset.i18nAriaLabel)));
   const b=$('language-cycle-btn');if(b){b.dataset.currentLang=currentLang;b.setAttribute('aria-label',currentLang==='hr'?t('languageToEnglish'):t('languageToCroatian'))}
-  if(state?.match_id||['waiting','invite_waiting','bot'].includes(state?.status))handle(state);else if(!botMode&&!friendCode)resetLobby()
+  if(state?.match_id||['waiting','invite_waiting','bot'].includes(state?.status))handle(state);else if(!botMode&&!friendCode)resetLobby();
+  try{renderActiveQuizzes()}catch{}
 }
 
 const SB='https://hssfjguysejbosvholqu.supabase.co',KEY='sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy',RECENT='kviztogo_multiplayer_recent_v2';
@@ -476,6 +477,8 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
 
 const MP_GAME_MODE_KEY='kviztogo_mp_game_mode_v1';
 const MP_THEME_RECENT_KEY='kviztogo_mp_theme_recent_v1';
+const MP_ACTIVE_BOTS_KEY='kviztogo_mp_active_bots_v1';
+let activeServerItems=[],activeRefreshTimer=null,invitePromptTimer=null,invitePromptCode=null,invitePromptDismissedCode=null;
 const MP_GAME_MODES=[
   {id:'q10',kind:'questions',questionLimit:10,winTarget:null,topic:null,hr:'10 pitanja',en:'10 questions'},
   {id:'q20',kind:'questions',questionLimit:20,winTarget:null,topic:null,hr:'20 pitanja',en:'20 questions'},
@@ -527,6 +530,127 @@ function renderSeriesScore(me=0,opp=0,active=false){
   if(lobbyWrap)lobbyWrap.classList.toggle('hidden',!active);
   if(gameWrap)gameWrap.classList.toggle('hidden',!active);
 }
+function loadActiveBots(){try{const a=JSON.parse(localStorage.getItem(MP_ACTIVE_BOTS_KEY)||'[]');return Array.isArray(a)?a:[]}catch{return[]}}
+function saveActiveBots(items){try{localStorage.setItem(MP_ACTIVE_BOTS_KEY,JSON.stringify((items||[]).slice(-12)))}catch{}}
+function activeModeLabel(item){
+  if(item?.modeId){const m=MP_GAME_MODES.find(x=>x.id===item.modeId);if(m)return mpModeLabel(m)}
+  let m=null;
+  if(item?.topic_filter)m=MP_GAME_MODES.find(x=>x.kind==='theme'&&x.topic===item.topic_filter);
+  else if(item?.win_target)m=MP_GAME_MODES.find(x=>x.kind==='race'&&x.winTarget===Number(item.win_target));
+  else m=MP_GAME_MODES.find(x=>x.kind==='questions'&&x.questionLimit===Number(item?.question_limit||10));
+  return m?mpModeLabel(m):String(item?.question_limit||10)+' '+(currentLang==='en'?'questions':'pitanja')
+}
+function activeItemStatus(item){
+  if(item.kind==='bot')return t('activeReady');
+  if(item.kind==='invite'&&!item.friend_joined)return t('activeWaitingFriend');
+  if(item.me_ready&&!item.opponent_ready)return t('activeWaitingOpponent');
+  if(item.friend_joined&&item.kind==='invite')return t('activeFriendReady');
+  return t('activeReady')
+}
+function renderActiveQuizzes(){
+  const root=$('active-quizzes-list');if(!root)return;
+  const bots=loadActiveBots(),items=[...activeServerItems,...bots];
+  if(!items.length){root.innerHTML='<div class="active-quiz-empty">'+esc(t('activeEmpty'))+'</div>';return}
+  root.innerHTML='';
+  for(const item of items){
+    const card=document.createElement('article');card.className='active-quiz-card';
+    const kind=item.kind==='bot'?t('activeBot'):item.kind==='invite'?t('activeInvite'):t('activeRematch');
+    const opp=item.kind==='bot'?item.opponent_name:(item.opponent_name||'');
+    const title=kind+(opp?' · '+opp:'');
+    const series=(Number(item.me_series_wins)||0)+(Number(item.opponent_series_wins)||0)>0
+      ?' · '+t('activeSeries',{me:Number(item.me_series_wins)||0,opp:Number(item.opponent_series_wins)||0})
+      :'';
+    card.innerHTML='<div class="active-quiz-top"><div class="active-quiz-title">'+esc(title)+'</div><div class="active-quiz-status">'+esc(activeItemStatus(item))+'</div></div>'+
+      '<div class="active-quiz-meta">'+esc(activeModeLabel(item)+series)+'</div><div class="active-quiz-actions"></div>';
+    const actions=card.querySelector('.active-quiz-actions');
+    if(item.kind==='invite'&&item.invite_code&&!item.friend_joined){
+      const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareFriendInvite(item.invite_code);actions.appendChild(share)
+    }
+    const resume=document.createElement('button');resume.className='active-resume';resume.textContent=t('activeContinue');resume.onclick=()=>item.kind==='bot'?resumeBotActive(item.id):resumeServerActive(item.id);actions.appendChild(resume);
+    const remove=document.createElement('button');remove.className='active-remove';remove.textContent=t('activeRemove');remove.onclick=()=>item.kind==='bot'?removeBotActive(item.id):removeServerActive(item.id);actions.appendChild(remove);
+    root.appendChild(card)
+  }
+}
+async function refreshActiveQuizzes(checkMatch=true){
+  if(!mpIdentityName)return;
+  try{
+    const data=await api('active_list',{});
+    activeServerItems=Array.isArray(data)?data:[];
+    renderActiveQuizzes();
+    if(checkMatch&&!botMode&&!state?.match_id&&!['waiting','invite_waiting','bot'].includes(state?.status)){
+      const s=await api('state',{});
+      if(s?.match_id&&['ready','countdown','playing','reveal'].includes(s.status)){
+        state=s;handle(s);startPoll()
+      }
+    }
+  }catch(e){console.warn('Aktivni kvizovi nisu osvježeni:',e)}
+}
+function startActiveRefresh(){clearInterval(activeRefreshTimer);activeRefreshTimer=setInterval(()=>void refreshActiveQuizzes(true),3000)}
+function removeBotActive(id){saveActiveBots(loadActiveBots().filter(x=>x.id!==id));renderActiveQuizzes()}
+async function removeServerActive(id){try{await api('active_cancel',{id});await refreshActiveQuizzes(false)}catch(e){console.warn('Aktivni kviz nije uklonjen:',e)}}
+async function resumeServerActive(id){
+  try{
+    const result=await api('active_resume',{id});
+    if(result?.match_id){state=result;handle(state);startPoll();await refreshActiveQuizzes(false);return}
+    if(result?.status==='active_players_busy')showMpToast(t('activeBusy'));
+    else if(result?.status==='active_waiting_friend')showMpToast(t('activeWaitingFriend'));
+    else showMpToast(t('activeWaitingOpponent'));
+    await refreshActiveQuizzes(false)
+  }catch(e){console.warn('Aktivni kviz nije nastavljen:',e)}
+}
+function botFromProfile(profile){return{id:profile.id,name:profile.alias,leaderName:profile.leaderName,skill:profile.skill,cons:profile.cons,bias:profile.bias,base:profile.base,accuracy:mpBotAccuracy(profile),answerDelay:()=>mpBotDelay(profile)}}
+async function resumeBotActive(id){
+  const item=loadActiveBots().find(x=>x.id===id);if(!item)return;
+  if(state?.match_id||['waiting','invite_waiting'].includes(state?.status)||botMode){showMpToast(t('activeBusy'));return}
+  const profile=MP_BOT_PROFILES.find(x=>x.id===item.botId);if(!profile){removeBotActive(id);return}
+  selectedMpGameModeId=MP_GAME_MODES.some(x=>x.id===item.modeId)?item.modeId:'q10';try{localStorage.setItem(MP_GAME_MODE_KEY,selectedMpGameModeId)}catch{}renderMpModePicker();
+  bot=botFromProfile(profile);botMode=true;botPreparing=true;botSeriesMe=Number(item.me_series_wins)||0;botSeriesOpp=Number(item.opponent_series_wins)||0;
+  botQuestions=await loadBotQuestions();botPreparing=false;
+  if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10)){botMode=false;showMpToast(t('questionsLoadError'));return}
+  removeBotActive(id);beginBotMatch()
+}
+async function deferCurrentForLater(){
+  const btn=$('later');if(btn)btn.disabled=true;
+  try{
+    if(botMode){
+      const items=loadActiveBots();
+      items.push({id:'bot-active:'+uuid(),kind:'bot',botId:bot.id,opponent_name:bot.name,modeId:selectedMpGameModeId,me_series_wins:botSeriesMe,opponent_series_wins:botSeriesOpp,created_at:Date.now()});
+      saveActiveBots(items);
+      try{await api('leave',{})}catch{}
+      resetLobby();renderActiveQuizzes();showMpToast(t('savedForLater'));return
+    }
+    if(state?.status!=='finished'||!state?.match_id)return;
+    const matchId=state.match_id;
+    const result=await api('defer_rematch',{match_id:matchId});
+    if(result?.status!=='active_saved')return;
+    await leave();await refreshActiveQuizzes(false);showMpToast(t('savedForLater'))
+  }catch(e){console.warn('Nastavak za kasnije nije spremljen:',e)}
+  finally{if(btn)btn.disabled=false}
+}
+function clearInvitePrompt(resetCode=false){
+  clearTimeout(invitePromptTimer);invitePromptTimer=null;
+  $('invite-later-modal')?.classList.add('hidden');
+  if(resetCode){invitePromptCode=null;invitePromptDismissedCode=null}
+}
+function scheduleInvitePrompt(code){
+  if(!code||invitePromptDismissedCode===code||invitePromptCode===code)return;
+  clearTimeout(invitePromptTimer);invitePromptCode=code;
+  invitePromptTimer=setTimeout(()=>{
+    if(state?.status==='invite_waiting'&&friendCode===code)$('invite-later-modal')?.classList.remove('hidden')
+  },60000)
+}
+async function deferInviteForLater(){
+  if(!friendCode)return;
+  const btn=$('invite-save-later');if(btn)btn.disabled=true;
+  try{
+    const result=await api('defer_invite',{code:friendCode});
+    if(result?.status==='active_saved'){
+      stopPoll();clearInvitePrompt(true);resetLobby();await refreshActiveQuizzes(false);showMpToast(t('savedForLater'))
+    }
+  }catch(e){console.warn('Pozivnica nije spremljena za kasnije:',e)}
+  finally{if(btn)btn.disabled=false}
+}
+
 let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botSeriesMe=0,botSeriesOpp=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='',lastEndProcessedMatchKey=null;const questionVotes=new Map();
 let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
 const MP_INVITE_MATCH_KEY='kviztogo_mp_invite_match_v1';
@@ -746,7 +870,7 @@ function stopPoll(){clearInterval(pollTimer);pollTimer=null}
 function startPoll(){stopPoll();pollTimer=setInterval(()=>refresh('poll').catch(()=>{}),500)}
 function showLobby(){ $('game').classList.add('hidden');$('lobby').classList.remove('hidden') }
 function showGame(){ $('lobby').classList.add('hidden');$('game').classList.remove('hidden');$('meGame').textContent=state?.me_name||myName();$('oppGame').textContent=state?.opponent_name||bot?.name||t('opponentFound') }
-function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;botSeriesMe=0;botSeriesOpp=0;historyRenderSignature='';renderSeriesScore(0,0,false);closeMpModePicker();if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
+function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInvitePrompt(true);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;botSeriesMe=0;botSeriesOpp=0;historyRenderSignature='';renderSeriesScore(0,0,false);closeMpModePicker();if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
 
 async function findOpponent(){
   if(!mpIdentityName){openMpNameModal(true);return}
@@ -801,6 +925,7 @@ async function joinFriendInvite(code){
       $('search').textContent=state.status==='invite_self'?t('ownInvite'):t('inviteExpired');
       history.replaceState({},'',location.pathname);$('find').disabled=false;$('friend').disabled=false;$('find').textContent=t('findOpponent');$('find').onclick=findOpponent;return
     }
+    if(state.status==='active_joined'){handle(state);return}
     if(state?.match_id)rememberMpInviteMatch(state.match_id);
     handle(state);startPoll()
   }catch(e){$('search').textContent=t('inviteOpenError');$('find').disabled=false;$('friend').disabled=false}
@@ -828,7 +953,10 @@ function handle(s){
   syncMpModeFromState(s);
   if(s.status==='waiting'){$('search').textContent=t('searching');$('meMeta').textContent=t('queue');return}
   if(s.status==='invite_waiting'){
-    friendCode=s.invite_code||friendCode;showLobby();$('search').textContent=t('friendWaiting');$('oppName').textContent=t('waiting');$('oppMeta').textContent=t('friendNotJoined');$('meMeta').textContent=t('inviteActive');$('find').textContent=t('waitingFriend');$('find').disabled=true;$('friend').disabled=false;$('friend').textContent=t('shareAgain');$('friend').onclick=()=>shareFriendInvite(friendCode);return
+    friendCode=s.invite_code||friendCode;scheduleInvitePrompt(friendCode);showLobby();$('search').textContent=t('friendWaiting');$('oppName').textContent=t('waiting');$('oppMeta').textContent=t('friendNotJoined');$('meMeta').textContent=t('inviteActive');$('find').textContent=t('waitingFriend');$('find').disabled=true;$('friend').disabled=false;$('friend').textContent=t('shareAgain');$('friend').onclick=()=>shareFriendInvite(friendCode);return
+  }
+  if(s.status==='active_joined'){
+    stopPoll();clearInvitePrompt(true);history.replaceState({},'',location.pathname);state=null;resetLobby();void refreshActiveQuizzes(false);showMpToast(t('activeJoined'));return
   }
   if(s.status==='bot'){stopPoll();prepareBot();return}
   if(s.status==='idle'){resetLobby();return}
@@ -860,7 +988,7 @@ function renderReal(s){
     updateClock(s);return
   }
   if(s.status==='finished'){clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score,s.opponent_score);updateRematchState(s);if(!pollTimer)startPoll();return}
-  if(s.status==='cancelled'){stopPoll();clearInterval(tickTimer);void finishMultiplayerQuizTracking(false);$('status').textContent='';$('end').classList.remove('hidden');$('endScore').textContent=(s.me_score||0)+' : '+(s.opponent_score||0);$('endText').textContent=t('duelInterrupted')}
+  if(s.status==='cancelled'){stopPoll();clearInterval(tickTimer);void finishMultiplayerQuizTracking(false);if($('later'))$('later').hidden=true;$('status').textContent='';$('end').classList.remove('hidden');$('endScore').textContent=(s.me_score||0)+' : '+(s.opponent_score||0);$('endText').textContent=t('duelInterrupted')}
 }
 
 function isFinalReveal(s){
@@ -898,7 +1026,7 @@ function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot
 function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
-function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');if(matchKey&&lastEndProcessedMatchKey!==matchKey){lastEndProcessedMatchKey=matchKey;if(botMode){if(result==='win')botSeriesMe++;else if(result==='loss')botSeriesOpp++;}void finishMultiplayerQuizTracking(true);void recordMultiplayerResult(matchKey,result,botMode)}}
+function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');if($('later')){$('later').hidden=false;$('later').disabled=false}$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');if(matchKey&&lastEndProcessedMatchKey!==matchKey){lastEndProcessedMatchKey=matchKey;if(botMode){if(result==='win')botSeriesMe++;else if(result==='loss')botSeriesOpp++;}void finishMultiplayerQuizTracking(true);void recordMultiplayerResult(matchKey,result,botMode)}}
 function updateRematchState(s){
   const btn=$('again');if(!btn)return;
   if(botMode){btn.disabled=false;btn.textContent=t('rematch');return}
@@ -941,7 +1069,7 @@ async function leave(){if(mpQuizPlayId&&!mpQuizCompleted)await finishMultiplayer
 /* AI fallback tek nakon serverovih 5 sekundi traženja. Bot je prikazan kao spreman, a igrač potvrđuje Kreni s kvizom. */
 async function prepareBot(){
   if(botPreparing||botMode)return;botPreparing=true;botMode=true;botSeriesMe=0;botSeriesOpp=0;renderSeriesScore(0,0,false);
-  const profile=MP_BOT_PROFILES[Math.floor(Math.random()*MP_BOT_PROFILES.length)];bot={id:profile.id,name:profile.alias,leaderName:profile.leaderName,skill:profile.skill,cons:profile.cons,bias:profile.bias,base:profile.base,accuracy:mpBotAccuracy(profile),answerDelay:()=>mpBotDelay(profile)};
+  const profile=MP_BOT_PROFILES[Math.floor(Math.random()*MP_BOT_PROFILES.length)];bot=botFromProfile(profile);
   $('oppName').textContent=bot.name;$('oppMeta').textContent=t('ready');$('meMeta').textContent=t('waitingYourStart');$('search').innerHTML=esc(t('opponentFound'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('preparingQuestions');$('find').disabled=true;$('friend').disabled=true;
   botQuestions=await loadBotQuestions();botPreparing=false;
   if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10)){$('search').textContent=t('questionsLoadError');return}
@@ -1166,7 +1294,9 @@ async function initMultiplayerPage(){
   $('mode-picker-btn').onclick=toggleMpModePicker;
   document.addEventListener('click',e=>{if(!e.target.closest('#mode-picker-wrap'))closeMpModePicker()});
   const langBtn=$('language-cycle-btn');if(langBtn)langBtn.onclick=()=>{applyLanguage(currentLang==='hr'?'en':'hr');renderMpModePicker()};applyLanguage(currentLang);renderMpModePicker();
-  $('again').onclick=requestRematch;$('newOpp').onclick=async()=>{await leave();findOpponent()};
+  $('again').onclick=requestRematch;$('later').onclick=deferCurrentForLater;$('newOpp').onclick=async()=>{await leave();findOpponent()};
+  $('invite-save-later').onclick=deferInviteForLater;
+  $('invite-wait-more').onclick=()=>{invitePromptDismissedCode=friendCode;clearInvitePrompt(false)};
   $('mp-download-history').onclick=downloadFullHistory;$('mp-share-result').onclick=shareCurrentResult;updateHistoryActionButtons();
   $('mp-change-name').onclick=()=>openMpNameModal(false);$('mp-name-cancel').onclick=closeMpNameModal;$('mp-name-save').onclick=saveMpIdentityName;
   $('mp-name-modal').addEventListener('click',e=>{if(e.target===$('mp-name-modal'))closeMpNameModal()});
@@ -1174,6 +1304,7 @@ async function initMultiplayerPage(){
   pendingInviteParam=new URLSearchParams(location.search).get('invite');
   await loadMpIdentity();$('meName').textContent=myName()||'—';
   if(!mpIdentityName){openMpNameModal(true);return}
+  await refreshActiveQuizzes(false);startActiveRefresh();
   await continueMultiplayerEntry()
 }
 void initMultiplayerPage();
