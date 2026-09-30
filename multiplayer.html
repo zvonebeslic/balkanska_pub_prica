@@ -103,7 +103,7 @@
       <p data-i18n="heroCopy">Multiplayer način igranja kviza. Vrijeme ovisi o duljini pitanja.</p>
     </div>
 
-    <div class="series-summary"><span data-i18n="seriesScore">Ukupni rezultat</span><strong id="lobby-series-score">0 : 0</strong></div>
+    <div class="series-summary hidden" id="lobby-series-summary"><span data-i18n="seriesScore">Ukupni rezultat</span><strong id="lobby-series-score">0 : 0</strong></div>
     <div class="versus">
       <div class="player"><div class="name" id="meName">Gost</div><div class="meta" id="meMeta" data-i18n="meReady">Spreman</div></div>
       <div class="vs">VS</div>
@@ -135,7 +135,7 @@
     <div class="grid">
       <div>
         <div class="card">
-          <div class="series-summary series-summary--game"><span data-i18n="seriesScore">Ukupni rezultat</span><strong id="game-series-score">0 : 0</strong></div>
+          <div class="series-summary series-summary--game hidden" id="game-series-summary"><span data-i18n="seriesScore">Ukupni rezultat</span><strong id="game-series-score">0 : 0</strong></div>
           <div class="scorebar">
             <div class="scorebox"><div id="meGame"></div><div class="score" id="meScore">0</div></div>
             <div class="round"><div id="round">1 / 10</div><div class="timer" id="timer">10</div></div>
@@ -498,11 +498,14 @@ function syncMpModeFromState(s){
   if(found){selectedMpGameModeId=found.id;renderMpModePicker()}
 }
 function mpRoundLabel(round,limit,winTarget){return winTarget?(currentLang==='en'?'Question ':'Pitanje ')+(Number(round||0)+1):(Number(round||0)+1)+' / '+Number(limit||10)}
-function renderSeriesScore(me=0,opp=0){
+function renderSeriesScore(me=0,opp=0,active=false){
   const value=String(Number(me)||0)+' : '+String(Number(opp)||0);
   const lobby=$('lobby-series-score'),game=$('game-series-score');
+  const lobbyWrap=$('lobby-series-summary'),gameWrap=$('game-series-summary');
   if(lobby)lobby.textContent=value;
   if(game)game.textContent=value;
+  if(lobbyWrap)lobbyWrap.classList.toggle('hidden',!active);
+  if(gameWrap)gameWrap.classList.toggle('hidden',!active);
 }
 let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botSeriesMe=0,botSeriesOpp=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='',lastEndProcessedMatchKey=null;const questionVotes=new Map();
 let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
@@ -704,7 +707,7 @@ function stopPoll(){clearInterval(pollTimer);pollTimer=null}
 function startPoll(){stopPoll();pollTimer=setInterval(()=>refresh('poll').catch(()=>{}),500)}
 function showLobby(){ $('game').classList.add('hidden');$('lobby').classList.remove('hidden') }
 function showGame(){ $('lobby').classList.add('hidden');$('game').classList.remove('hidden');$('meGame').textContent=state?.me_name||myName();$('oppGame').textContent=state?.opponent_name||bot?.name||t('opponentFound') }
-function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;botSeriesMe=0;botSeriesOpp=0;historyRenderSignature='';renderSeriesScore(0,0);closeMpModePicker();if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
+function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;botSeriesMe=0;botSeriesOpp=0;historyRenderSignature='';renderSeriesScore(0,0,false);closeMpModePicker();if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
 
 async function findOpponent(){
   if(!mpIdentityName){openMpNameModal(true);return}
@@ -798,7 +801,7 @@ function handle(s){
 }
 
 function renderReal(s){
-  renderSeriesScore(s?.me_series_wins||0,s?.opponent_series_wins||0);
+  renderSeriesScore(s?.me_series_wins||0,s?.opponent_series_wins||0,Boolean(s?.series_active));
   if(s?.match_id&&['countdown','playing','reveal','finished','cancelled'].includes(s.status))void ensureMultiplayerQuizTracking(s.match_id,false).then(()=>syncMultiplayerTrackedAnswers());
   $('meScore').textContent=s.me_score||0;$('oppScore').textContent=s.opponent_score||0;$('round').textContent=mpRoundLabel(s.round,s.question_limit,s.win_target);renderServerHistory(s);
   if(s.status==='finished'&&s.reason==='disconnect_forfeit'){
@@ -856,7 +859,7 @@ function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot
 function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
-function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');if(matchKey&&lastEndProcessedMatchKey!==matchKey){lastEndProcessedMatchKey=matchKey;if(botMode){if(result==='win')botSeriesMe++;else if(result==='loss')botSeriesOpp++;renderSeriesScore(botSeriesMe,botSeriesOpp)}void finishMultiplayerQuizTracking(true);void recordMultiplayerResult(matchKey,result,botMode)}}
+function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');if(matchKey&&lastEndProcessedMatchKey!==matchKey){lastEndProcessedMatchKey=matchKey;if(botMode){if(result==='win')botSeriesMe++;else if(result==='loss')botSeriesOpp++;}void finishMultiplayerQuizTracking(true);void recordMultiplayerResult(matchKey,result,botMode)}}
 function updateRematchState(s){
   const btn=$('again');if(!btn)return;
   if(botMode){btn.disabled=false;btn.textContent=t('rematch');return}
@@ -887,7 +890,7 @@ async function leave(){if(mpQuizPlayId&&!mpQuizCompleted)await finishMultiplayer
 
 /* AI fallback tek nakon serverovih 5 sekundi traženja. Bot je prikazan kao spreman, a igrač potvrđuje Kreni s kvizom. */
 async function prepareBot(){
-  if(botPreparing||botMode)return;botPreparing=true;botMode=true;botSeriesMe=0;botSeriesOpp=0;renderSeriesScore(0,0);
+  if(botPreparing||botMode)return;botPreparing=true;botMode=true;botSeriesMe=0;botSeriesOpp=0;renderSeriesScore(0,0,false);
   const profile=MP_BOT_PROFILES[Math.floor(Math.random()*MP_BOT_PROFILES.length)];bot={id:profile.id,name:profile.alias,leaderName:profile.leaderName,skill:profile.skill,cons:profile.cons,bias:profile.bias,base:profile.base,accuracy:mpBotAccuracy(profile),answerDelay:()=>mpBotDelay(profile)};
   $('oppName').textContent=bot.name;$('oppMeta').textContent=t('ready');$('meMeta').textContent=t('waitingYourStart');$('search').innerHTML=esc(t('opponentFound'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('preparingQuestions');$('find').disabled=true;$('friend').disabled=true;
   botQuestions=await loadBotQuestions();botPreparing=false;
@@ -906,7 +909,7 @@ async function loadBotQuestions(){
 function hash(s){let h=2166136261;for(let ch of s.toLowerCase()){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return(h>>>0).toString(36)}
 function shuffle(a){a=a.slice();for(let i=a.length-1;i;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function beginBotMatch(){
-  botSessionId='multiplayer-bot:'+uuid();void ensureMultiplayerQuizTracking(botSessionId,true);historyRenderSignature='';renderSeriesScore(botSeriesMe,botSeriesOpp);botPos=botMe=botScore=0;botHistory=[];$('history').innerHTML='';$('end').classList.add('hidden');showGame();$('meGame').textContent=myName();$('oppGame').textContent=bot.name;$('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('opponentReady');let end=Date.now()+5000;
+  botSessionId='multiplayer-bot:'+uuid();void ensureMultiplayerQuizTracking(botSessionId,true);historyRenderSignature='';renderSeriesScore(botSeriesMe,botSeriesOpp,(botSeriesMe+botSeriesOpp)>0);botPos=botMe=botScore=0;botHistory=[];$('history').innerHTML='';$('end').classList.add('hidden');showGame();$('meGame').textContent=myName();$('oppGame').textContent=bot.name;$('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('opponentReady');let end=Date.now()+5000;
   clearInterval(tickTimer);const draw=()=>{let sec=Math.max(0,Math.ceil((end-Date.now())/1000));$('timer').textContent=String(sec);$('question').innerHTML='<span class="countdown">'+esc(t('questionIn',{sec}))+'</span>';if(sec<=0){clearInterval(tickTimer);renderBot()}};
   draw();tickTimer=setInterval(draw,200)
 }
