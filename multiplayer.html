@@ -969,6 +969,7 @@ function handle(s){
 
 function renderReal(s){
   renderSeriesScore(s?.me_series_wins||0,s?.opponent_series_wins||0,Boolean(s?.series_active));
+  if(s?.invite_entry&&s?.match_id)rememberMpInviteMatch(s.match_id);
   if(s?.match_id&&['countdown','playing','reveal','finished','cancelled'].includes(s.status))void ensureMultiplayerQuizTracking(s.match_id,false).then(()=>syncMultiplayerTrackedAnswers());
   $('meScore').textContent=s.me_score||0;$('oppScore').textContent=s.opponent_score||0;$('round').textContent=mpRoundLabel(s.round,s.question_limit,s.win_target);renderServerHistory(s);
   if(s.status==='finished'&&s.reason==='disconnect_forfeit'){
