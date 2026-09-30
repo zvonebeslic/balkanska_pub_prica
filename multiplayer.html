@@ -1694,6 +1694,11 @@ async function continueMultiplayerEntry(){
   if(!mpIdentityName){openMpNameModal(true);return}
   if(pendingTurnInviteParam){const code=pendingTurnInviteParam;pendingTurnInviteParam=null;await joinTurnInvite(code);return}
   if(pendingInviteParam){const code=pendingInviteParam;pendingInviteParam=null;await joinFriendInvite(code);return}
+  const pendingBot=readPendingBotForfeit();
+  if(pendingBot&&Date.now()<Number(pendingBot.deadline)){
+    try{await api('leave',{})}catch{}
+    state=null;resetLobby();renderActiveQuizzes();return
+  }
   api('state',{}).then(s=>{state=s;if(s?.match_id&&['ready','countdown','playing','reveal','finished'].includes(s.status)){handle(s);if(['ready','countdown','playing','reveal','finished'].includes(s.status))startPoll()}else if(['waiting','invite_waiting','bot'].includes(s?.status)){api('leave',{}).catch(()=>{}).finally(()=>resetLobby())}else resetLobby()}).catch(()=>resetLobby())
 }
 async function initMultiplayerPage(){
