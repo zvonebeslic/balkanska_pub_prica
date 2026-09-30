@@ -238,7 +238,7 @@ inviteCardCta:'PRIDRUŽI MI SE 1 NA 1',inviteCardRules:'10 pitanja  •  vrijeme
 inviteCopied:'Poveznica za prijatelja/icu je kopirana.',joining:'Pridružujem…',findingFriend:'Tražimo prijatelja/icu…',checkingInvite:'provjeravamo pozivnicu',joiningQuiz:'Pridružujemo te 1 na 1 kvizu…',
 ownInvite:'Ovo je tvoja vlastita pozivnica.',inviteExpired:'Pozivnica više nije aktivna.',inviteOpenError:'Pozivnicu nije moguće otvoriti.',
 opponentFound:'Protivnik pronađen',ready:'Spreman ✓',waitingYourStart:'Čeka tvoj start',waitingOpponentStart:'Čeka da pokrene kviz',startQuiz:'Kreni s kvizom',findAgain:'Traži ponovno',cancelMatch:'Odustani',recordLabel:'Pobjede {wins} · Porazi {losses}',
-waitingOpponentClick:'Čekamo da protivnik klikne Kreni s kvizom…',waitingOpponent:'Čekamo protivnika…',connectionLost:'Protivnik je izgubio vezu. Čekamo da se vrati…',connectionLostMeta:'Veza prekinuta',
+waitingOpponentClick:'Čekamo da protivnik klikne Kreni s kvizom…',waitingOpponent:'Čekamo protivnika…',connectionLost:'Protivnik je izašao iz igre. Čekamo do 30 sekundi da se vrati…',connectionLostMeta:'Čekamo protivnika',
 friendWaiting:'Čekamo da se prijatelj/ica pridruži…',inviteActive:'Pozivnica aktivna',waitingFriend:'Čekamo prijatelja/icu…',shareAgain:'Podijeli ponovno',
 multiplayer:'Multiplayer',roundRule:'Runda završava istekom vremena ili prvim točnim odgovorom.',bothReady:'Oba igrača su spremna.',answerLocked:'Odgovor zaključan. Čekamo protivnika…',opponentAnswered:'Protivnik je odgovorio.',answerBeforeTime:'Odgovori prije isteka vremena.',
 correctAnswer:'Točan odgovor:',youAnsweredCorrect:'Odgovorio si točno.',opponentAnsweredCorrect:'{opponent} je odgovorio točno.',timeExpired:'Vrijeme je isteklo.',win:'🏆 Pobjeda!',disconnectWin:'Protivnik se nije vratio u igru pa pobjeda pripada tebi.',duelFinished:'Dvoboj je završen',disconnectLoss:'Nisi se vratio u igru unutar dopuštenog vremena.',
@@ -275,7 +275,7 @@ inviteCardCta:'JOIN ME FOR A 1V1 QUIZ',inviteCardRules:'10 questions  •  time 
 inviteCopied:'The friend link has been copied.',joining:'Joining…',findingFriend:'Finding your friend…',checkingInvite:'checking the invitation',joiningQuiz:'Joining the 1v1 quiz…',
 ownInvite:'This is your own invitation.',inviteExpired:'This invitation is no longer active.',inviteOpenError:'The invitation could not be opened.',
 opponentFound:'Opponent found',ready:'Ready ✓',waitingYourStart:'Waiting for you to start',waitingOpponentStart:'Waiting to start the quiz',startQuiz:'Start quiz',findAgain:'Find again',cancelMatch:'Cancel',recordLabel:'Wins {wins} · Losses {losses}',
-waitingOpponentClick:'Waiting for your opponent to click Start quiz…',waitingOpponent:'Waiting for opponent…',connectionLost:'Opponent lost connection. Waiting for them to return…',connectionLostMeta:'Connection lost',
+waitingOpponentClick:'Waiting for your opponent to click Start quiz…',waitingOpponent:'Waiting for opponent…',connectionLost:'Your opponent left the game. Waiting up to 30 seconds for them to return…',connectionLostMeta:'Waiting for opponent',
 friendWaiting:'Waiting for your friend to join…',inviteActive:'Invitation active',waitingFriend:'Waiting for friend…',shareAgain:'Share again',
 multiplayer:'Multiplayer',roundRule:'The round ends when time expires or someone gives the first correct answer.',bothReady:'Both players are ready.',answerLocked:'Answer locked. Waiting for opponent…',opponentAnswered:'Opponent answered.',answerBeforeTime:'Answer before time runs out.',
 correctAnswer:'Correct answer:',youAnsweredCorrect:'You answered correctly.',opponentAnsweredCorrect:'{opponent} answered correctly.',timeExpired:'Time is up.',win:'🏆 Victory!',disconnectWin:'Your opponent did not return, so you win the match.',duelFinished:'Match finished',disconnectLoss:'You did not return to the match within the allowed time.',
@@ -1588,7 +1588,25 @@ async function initMultiplayerPage(){
 }
 void initMultiplayerPage();
 window.addEventListener('storage',e=>{if(e.key===MP_GUEST_IDENTITY||e.key==='kviztogo_username')void loadMpIdentity().then(()=>syncLiveMultiplayerName(myName()))});
-window.addEventListener('pagehide',()=>{if(!friendInviteShareFlow&&!state?.match_id&&(state?.status==='invite_waiting'||state?.status==='waiting')){fetch(SB+'/rest/v1/rpc/multiplayer_v3',{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify({p_token:token(),p_action:'leave',p_payload:{}}),keepalive:true}).catch(()=>{})}});
+window.addEventListener('pagehide',()=>{
+  if(state?.match_id&&!botMode&&['ready','countdown','playing','reveal'].includes(state?.status)){
+    fetch(SB+'/rest/v1/rpc/multiplayer_v3',{
+      method:'POST',
+      headers:{apikey:KEY,'Content-Type':'application/json'},
+      body:JSON.stringify({p_token:token(),p_action:'disconnect',p_payload:{match_id:state.match_id}}),
+      keepalive:true
+    }).catch(()=>{});
+    return
+  }
+  if(!friendInviteShareFlow&&!state?.match_id&&(state?.status==='invite_waiting'||state?.status==='waiting')){
+    fetch(SB+'/rest/v1/rpc/multiplayer_v3',{
+      method:'POST',
+      headers:{apikey:KEY,'Content-Type':'application/json'},
+      body:JSON.stringify({p_token:token(),p_action:'leave',p_payload:{}}),
+      keepalive:true
+    }).catch(()=>{})
+  }
+});
 </script>
 </body>
 </html>
