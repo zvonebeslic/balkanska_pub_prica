@@ -157,9 +157,15 @@ function loadQuestionPool(files) {
   return pool;
 }
 
-function selectMonthlyQuestions(pool, dates, excludedIds = new Set()) {
+function normalizedQuestionText(question) {
+  return String(question?.question || "").toLocaleLowerCase("hr").replace(/\s+/g, " ").trim();
+}
+
+function selectMonthlyQuestions(pool, dates, excludedIds = new Set(), excludedTexts = new Set()) {
   const required = dates.length * questionsPerDay;
-  const eligible = pool.filter(item => !excludedIds.has(item.question.id));
+  const eligible = pool.filter(item =>
+    !excludedIds.has(item.question.id) && !excludedTexts.has(normalizedQuestionText(item.question))
+  );
   if (eligible.length < required) {
     throw new Error(`Za ${dates[0]?.slice(0, 7)} treba ${required} novih pitanja, a dostupno ih je ${eligible.length}.`);
   }
@@ -226,7 +232,24 @@ function questionIdsForMonth(value) {
   return ids;
 }
 
-function generateMonth(value, pool, files, { overwrite = false, excludedIds = new Set() } = {}) {
+function questionTextsForMonth(value) {
+  const texts = new Set();
+  datesInMonth(value).forEach(dateKey => {
+    const saved = readJson(path.join(outputDir, `${dateKey}.json`));
+    (Array.isArray(saved?.questions) ? saved.questions : []).forEach(question => {
+      const normalized = normalizedQuestionText(question);
+      if (normalized) texts.add(normalized);
+    });
+  });
+  return texts;
+}
+
+function generateMonth(value, pool, files, {
+  overwrite = false,
+  excludedIds = new Set(),
+  excludedTexts = new Set(),
+  selectionPolicy = "unique-in-month-and-not-used-in-previous-month"
+} = {}) {
   const dates = datesInMonth(value);
   const targetDates = overwrite
     ? dates
@@ -235,7 +258,7 @@ function generateMonth(value, pool, files, { overwrite = false, excludedIds = ne
 
   const exclusions = new Set(excludedIds);
   if (!overwrite) questionIdsForMonth(value).forEach(id => exclusions.add(id));
-  const schedule = selectMonthlyQuestions(pool, targetDates, exclusions);
+  const schedule = selectMonthlyQuestions(pool, targetDates, exclusions, excludedTexts);
   const generatedAt = new Date().toISOString();
 
   targetDates.forEach(dateKey => {
@@ -246,7 +269,7 @@ function generateMonth(value, pool, files, { overwrite = false, excludedIds = ne
       generatedAt,
       questionCount: questions.length,
       sourceFileCount: files.length,
-      selectionPolicy: "unique-in-month-and-not-used-in-previous-month",
+      selectionPolicy,
       questions
     });
   });
@@ -260,6 +283,31 @@ function listGeneratedDates() {
     .filter(fileName => /^\d{4}-\d{2}-\d{2}\.json$/.test(fileName))
     .map(fileName => fileName.slice(0, 10))
     .sort();
+}
+
+function verifyNoRepeatsAgainstMonths(targetMonths, excludedMonths) {
+  const excluded = new Set();
+  excludedMonths.forEach(value => questionTextsForMonth(value).forEach(text => excluded.add(text)));
+  targetMonths.forEach(value => {
+    const repeated = [...questionTextsForMonth(value)].find(text => excluded.has(text));
+    if (repeated) throw new Error(`${value} ponavlja pitanje iz zabranjenih mjeseci ${excludedMonths.join(", ")}.`);
+  });
+}
+
+function verifyRequiredTopics(targetMonths, requiredTopics = []) {
+  if (!requiredTopics.length) return;
+  const found = new Set();
+  targetMonths.forEach(value => {
+    datesInMonth(value).forEach(dateKey => {
+      const saved = readJson(path.join(outputDir, `${dateKey}.json`));
+      (Array.isArray(saved?.questions) ? saved.questions : []).forEach(question => {
+        if (question?.topic) found.add(String(question.topic));
+      });
+    });
+  });
+  requiredTopics.forEach(topic => {
+    if (!found.has(topic)) throw new Error(`Regenerirani set nema obaveznu rubriku: ${topic}.`);
+  });
 }
 
 function verifyGeneratedSchedule(dates) {
@@ -325,7 +373,37 @@ writeJson(manifestPath, {
 });
 
 let written = 0;
-if (regenerate) {
+const oneShot = config.oneShotRegenerate && typeof config.oneShotRegenerate === "object"
+  ? config.oneShotRegenerate
+  : null;
+
+if (oneShot?.from && oneShot?.through) {
+  const targetMonths = monthsBetween(oneShot.from, oneShot.through);
+  const excludedMonths = Array.isArray(oneShot.excludeMonths)
+    ? oneShot.excludeMonths.map(monthKey)
+    : [];
+  const requiredTopics = Array.isArray(oneShot.requiredTopics)
+    ? oneShot.requiredTopics.map(String)
+    : [];
+  const excludedTexts = new Set();
+  excludedMonths.forEach(value => questionTextsForMonth(value).forEach(text => excludedTexts.add(text)));
+
+  targetMonths.forEach(value => {
+    const result = generateMonth(value, pool, files, {
+      overwrite: true,
+      excludedTexts,
+      selectionPolicy: `unique-in-month-and-not-used-in-${excludedMonths.join("-or-")}`
+    });
+    written += result.written;
+  });
+
+  verifyNoRepeatsAgainstMonths(targetMonths, excludedMonths);
+  verifyRequiredTopics(targetMonths, requiredTopics);
+
+  const nextConfig = { ...config };
+  delete nextConfig.oneShotRegenerate;
+  writeJson(configPath, nextConfig);
+} else if (regenerate) {
   const through = requestedThrough || currentDate;
   let previousMonthIds = questionIdsForMonth(addMonths(monthKey(requestedFrom), -1));
 
