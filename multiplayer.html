@@ -1280,7 +1280,7 @@ function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot
 function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
-function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');if($('later')){$('later').hidden=false;$('later').disabled=false}$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');if(matchKey&&lastEndProcessedMatchKey!==matchKey){lastEndProcessedMatchKey=matchKey;if(botMode){if(result==='win')botSeriesMe++;else if(result==='loss')botSeriesOpp++;recordBotOutcome(bot?.id,result);}void finishMultiplayerQuizTracking(true);void recordMultiplayerResult(matchKey,result,botMode)}}
+function showEnd(a,b,outcome=null){$('end').classList.remove('hidden');if($('later')){$('later').hidden=false;$('later').disabled=false}const rematchBtn=$('again');if(rematchBtn){rematchBtn.disabled=false;rematchBtn.textContent=t('rematch')}$('endScore').textContent=a+' : '+b;const result=outcome||(a>b?'win':a<b?'loss':'draw');$('endText').textContent=result==='win'?t('endWin'):result==='loss'?t('endLose'):t('endDraw');const matchKey=botMode?(botSessionId||('bot:'+token())):(state?.match_id||'');if(matchKey&&lastEndProcessedMatchKey!==matchKey){lastEndProcessedMatchKey=matchKey;if(botMode){if(result==='win')botSeriesMe++;else if(result==='loss')botSeriesOpp++;recordBotOutcome(bot?.id,result);}void finishMultiplayerQuizTracking(true);void recordMultiplayerResult(matchKey,result,botMode)}}
 function updateRematchState(s){
   const btn=$('again');if(!btn)return;
   if(botMode){btn.disabled=false;btn.textContent=t('rematch');return}
@@ -1296,13 +1296,15 @@ async function requestRematch(){
   if(botMode){
     const btn=$('again');
     if(btn){btn.disabled=true;btn.textContent=t('preparingQuestions')}
-    botQuestions=await loadBotQuestions();
-    if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10)){
+    try{
+      botQuestions=await loadBotQuestions();
+      if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10))throw new Error('questions');
+      beginBotMatch();
+    }catch(e){
+      console.warn('Bot rematch questions failed:',e);
       if(btn){btn.disabled=false;btn.textContent=t('rematch')}
-      showMpToast(t('questionsLoadError'));
-      return
+      showMpToast(t('questionsLoadError'))
     }
-    beginBotMatch();
     return
   }
   if(!state?.match_id)return;
