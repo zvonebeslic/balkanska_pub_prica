@@ -588,7 +588,20 @@ function renderSeriesScore(me=0,opp=0,active=false){
   if(lobbyWrap)lobbyWrap.classList.toggle('hidden',!active);
   if(gameWrap)gameWrap.classList.toggle('hidden',!active);
 }
-function loadActiveBots(){try{const a=JSON.parse(localStorage.getItem(MP_ACTIVE_BOTS_KEY)||'[]');return Array.isArray(a)?a:[]}catch{return[]}}
+function loadActiveBots(){
+  let a=[];try{const x=JSON.parse(localStorage.getItem(MP_ACTIVE_BOTS_KEY)||'[]');a=Array.isArray(x)?x:[]}catch{}
+  const pending=readPendingBotForfeit();
+  if(pending&&Date.now()<Number(pending.deadline)){
+    const id='bot-forfeit:'+String(pending.matchKey);
+    if(!a.some(x=>x.id===id))a.push({
+      id,kind:'bot',pending_forfeit:true,botId:pending.botId,opponent_name:pending.opponentName||'',
+      modeId:pending.modeId||'q10',me_series_wins:Number(pending.meSeriesWins)||0,
+      opponent_series_wins:Number(pending.opponentSeriesWins)||0,deadline:Number(pending.deadline)||0,
+      created_at:Number(pending.createdAt)||Date.now()
+    })
+  }
+  return a
+}
 function saveActiveBots(items){try{localStorage.setItem(MP_ACTIVE_BOTS_KEY,JSON.stringify((items||[]).slice(-12)))}catch{}}
 function activeModeLabel(item){
   if(item?.kind==='turn')return(currentLang==='en'?'Turn-based · ':'Na poteze · ')+String(item?.question_limit||10)+(currentLang==='en'?' each':' po igraču');
@@ -604,6 +617,10 @@ function activeItemStatus(item){
     if(item.status==='finished')return t('activeTurnFinished');
     if(!item.friend_joined)return item.match_type==='invite'?t('activeWaitingFriend'):t('activeTurnSearching');
     return item.my_turn?t('activeYourTurn'):t('activeTurnWaiting')
+  }
+  if(item.kind==='bot'&&item.pending_forfeit){
+    const sec=Math.max(0,Math.ceil((Number(item.deadline)-Date.now())/1000));
+    return currentLang==='en'?'Resume within '+sec+' s':'Nastavi u roku '+sec+' s'
   }
   if(item.kind==='bot')return t('activeReady');
   if(item.kind==='invite'&&!item.friend_joined)return t('activeWaitingFriend');
@@ -657,7 +674,17 @@ async function refreshActiveQuizzes(checkMatch=true){
   }catch(e){console.warn('Aktivni kvizovi nisu osvježeni:',e)}
 }
 function startActiveRefresh(){clearInterval(activeRefreshTimer);activeRefreshTimer=setInterval(()=>void refreshActiveQuizzes(true),3000)}
-function removeBotActive(id){saveActiveBots(loadActiveBots().filter(x=>x.id!==id));renderActiveQuizzes()}
+function removeBotActive(id){
+  const pending=readPendingBotForfeit(),pendingId=pending?'bot-forfeit:'+String(pending.matchKey):'';
+  if(pending&&id===pendingId){
+    pending.deadline=Date.now();
+    try{localStorage.setItem(MP_BOT_FORFEIT_KEY,JSON.stringify(pending))}catch{}
+    void finalizePendingBotForfeit(pending);
+    renderActiveQuizzes();
+    return
+  }
+  saveActiveBots(loadActiveBots().filter(x=>x.id!==id&&!x.pending_forfeit));renderActiveQuizzes()
+}
 async function removeServerActive(id){try{await api('active_cancel',{id});await refreshActiveQuizzes(false)}catch(e){console.warn('Aktivni kviz nije uklonjen:',e)}}
 async function removeTurnGame(id){try{await api('turn_cancel',{id});await refreshActiveQuizzes(false)}catch(e){console.warn('Igra Na poteze nije uklonjena:',e)}}
 async function resumeServerActive(id){
@@ -756,7 +783,17 @@ function savePendingBotForfeit(){
   const pending={
     matchKey:botSessionId,
     botId:bot.id,
+    opponentName:bot.name,
+    modeId:selectedMpGameModeId,
     deadline:Date.now()+30000,
+    createdAt:Date.now(),
+    meSeriesWins:botSeriesMe,
+    opponentSeriesWins:botSeriesOpp,
+    meScore:botMe,
+    opponentScore:botScore,
+    position:botPos,
+    history:botHistory,
+    questions:botQuestions,
     knowledge:getMultiplayerKnowledgeContribution(),
     playId:mpQuizPlayId||null,
     durationSeconds:getMultiplayerQuizDurationSeconds(),
@@ -790,7 +827,7 @@ async function finalizePendingBotForfeit(pending){
   }catch(e){console.warn('Bot forfeit was not fully synced:',e)}
   finally{
     try{localStorage.removeItem(MP_BOT_FORFEIT_KEY)}catch{}
-    renderLobbyRecords();
+    renderLobbyRecords();renderActiveQuizzes();
     showMpToast(t('disconnectLoss'))
   }
 }
@@ -798,6 +835,7 @@ function schedulePendingBotForfeit(){
   clearTimeout(botForfeitTimer);botForfeitTimer=null;
   const pending=readPendingBotForfeit();if(!pending)return;
   const wait=Math.max(0,Number(pending.deadline)-Date.now());
+  renderActiveQuizzes();
   botForfeitTimer=setTimeout(()=>void finalizePendingBotForfeit(pending),wait)
 }
 function loadBotBag(){
@@ -833,9 +871,36 @@ function nextBotProfile(){
   try{localStorage.setItem(MP_BOT_LAST_SKILL_KEY,profile.skill||'')}catch{}
   return profile
 }
+async function resumePendingBotMatch(item){
+  const pending=readPendingBotForfeit();
+  if(!pending||item.id!=='bot-forfeit:'+String(pending.matchKey))return;
+  if(Date.now()>=Number(pending.deadline)){await finalizePendingBotForfeit(pending);renderActiveQuizzes();return}
+  const profile=MP_BOT_PROFILES.find(x=>x.id===pending.botId);if(!profile){await finalizePendingBotForfeit(pending);return}
+  clearTimeout(botForfeitTimer);botForfeitTimer=null;
+  try{localStorage.removeItem(MP_BOT_FORFEIT_KEY)}catch{}
+  selectedMpGameModeId=MP_GAME_MODES.some(x=>x.id===pending.modeId)?pending.modeId:'q10';saveMpGameMode(selectedMpGameModeId);renderMpModePicker();
+  bot=botFromProfile(profile);botMode=true;botPreparing=false;botSessionId=String(pending.matchKey);
+  botSeriesMe=Math.max(0,Number(pending.meSeriesWins)||0);botSeriesOpp=Math.max(0,Number(pending.opponentSeriesWins)||0);
+  botQuestions=Array.isArray(pending.questions)?pending.questions.filter(q=>q&&q.question&&Array.isArray(q.answers)):[];
+  if(!botQuestions.length)botQuestions=await loadBotQuestions();
+  botHistory=Array.isArray(pending.history)?pending.history:[];
+  botMe=Math.max(0,Number(pending.meScore)||0);botScore=Math.max(0,Number(pending.opponentScore)||0);
+  botPos=Math.max(0,Number(pending.position)||0,botHistory.length);
+  lastEndProcessedMatchKey=null;historyRenderSignature='';
+  void ensureMultiplayerQuizTracking(botSessionId,true);
+  renderSeriesScore(botSeriesMe,botSeriesOpp,(botSeriesMe+botSeriesOpp)>0);
+  $('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));
+  updateHistoryActionButtons();$('end').classList.add('hidden');showGame();$('meGame').textContent=myName();$('oppGame').textContent=bot.name;
+  $('meScore').textContent=botMe;$('oppScore').textContent=botScore;
+  renderActiveQuizzes();
+  const mode=selectedMpGameMode(),raceDone=mode.winTarget&&(botMe>=mode.winTarget||botScore>=mode.winTarget),setDone=botPos>=Math.min(mode.questionLimit,botQuestions.length);
+  if(raceDone||setDone){showEnd(botMe,botScore);return}
+  renderBot()
+}
 async function resumeBotActive(id){
   const item=loadActiveBots().find(x=>x.id===id);if(!item)return;
   if(state?.match_id||['waiting','invite_waiting'].includes(state?.status)||botMode){showMpToast(t('activeBusy'));return}
+  if(item.pending_forfeit){await resumePendingBotMatch(item);return}
   const profile=MP_BOT_PROFILES.find(x=>x.id===item.botId);if(!profile){removeBotActive(id);return}
   selectedMpGameModeId=MP_GAME_MODES.some(x=>x.id===item.modeId)?item.modeId:'q10';saveMpGameMode(selectedMpGameModeId);renderMpModePicker();
   bot=botFromProfile(profile);botMode=true;botPreparing=true;botSeriesMe=Number(item.me_series_wins)||0;botSeriesOpp=Number(item.opponent_series_wins)||0;
