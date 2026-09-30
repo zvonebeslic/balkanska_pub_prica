@@ -4,7 +4,7 @@ self.addEventListener('push', event => {
   try { data = event.data ? event.data.json() : {}; }
   catch (_) { data = { body: event.data ? event.data.text() : '' }; }
 
-  const base = new URL('./', self.registration.scope);
+  const base = new URL('https://kviztogo.com/');
   const icon = new URL('Images/KvizToGo-online-kviz-pitanja.png', base).href;
   const target = new URL('online-kviz.html?daily30=1', base).href;
 
@@ -24,7 +24,7 @@ self.addEventListener('push', event => {
 
 self.addEventListener('notificationclick', event => {
   event.notification.close();
-  const base = new URL('./', self.registration.scope);
+  const base = new URL('https://kviztogo.com/');
   const target = event.notification.data?.url || new URL('online-kviz.html?daily30=1', base).href;
 
   event.waitUntil((async () => {
