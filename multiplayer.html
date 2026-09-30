@@ -471,9 +471,14 @@ function getMultiplayerKnowledgeContribution(){
   }
   return{correctCount,wrongCount,longestStreak,discoveredQuestionIds:[...new Set(discovered)].slice(-10000)}
 }
-async function recordMultiplayerResult(matchKey,outcome,isBot=false){
+async function recordMultiplayerResult(matchKey,outcome,isBot=false,knowledgeOverride=null){
   const key=String(matchKey||'').trim();if(!key||!['win','draw','loss'].includes(outcome))return;
-  const knowledge=getMultiplayerKnowledgeContribution();
+  const knowledge=knowledgeOverride&&typeof knowledgeOverride==='object'?{
+    correctCount:Math.max(0,Number(knowledgeOverride.correctCount)||0),
+    wrongCount:Math.max(0,Number(knowledgeOverride.wrongCount)||0),
+    longestStreak:Math.max(0,Number(knowledgeOverride.longestStreak)||0),
+    discoveredQuestionIds:Array.isArray(knowledgeOverride.discoveredQuestionIds)?[...new Set(knowledgeOverride.discoveredQuestionIds.map(String))].slice(-10000):[]
+  }:getMultiplayerKnowledgeContribution();
   let user=null;try{user=(await supabaseClient?.auth?.getSession?.())?.data?.session?.user||null}catch{}
   const identity=user?.id?'user:'+user.id:'guest:'+ensureMpGuestIdentity().id;
   const storageKey=MP_STATS_BASE+':'+identity;
@@ -509,6 +514,8 @@ const MP_ACTIVE_BOTS_KEY='kviztogo_mp_active_bots_v1';
 const MP_BOT_BAG_KEY='kviztogo_mp_bot_bag_v1';
 const MP_BOT_LAST_SKILL_KEY='kviztogo_mp_bot_last_skill_v1';
 const MP_BOT_RECORDS_KEY='kviztogo_mp_bot_records_v1';
+const MP_BOT_FORFEIT_KEY='kviztogo_mp_bot_forfeit_v1';
+let botForfeitTimer=null;
 let activeServerItems=[],activeRefreshTimer=null,invitePromptTimer=null,invitePromptCode=null,invitePromptDismissedCode=null;
 const MP_GAME_MODES=[
   {id:'q10',kind:'questions',questionLimit:10,winTarget:null,topic:null,hr:'10 pitanja',en:'10 questions'},
@@ -736,6 +743,61 @@ function recordBotOutcome(id,humanResult){
   const map=loadBotRecords(),r=botRecord(id);
   if(humanResult==='win')r.losses++;else r.wins++;
   map[id]=r;try{localStorage.setItem(MP_BOT_RECORDS_KEY,JSON.stringify(map))}catch{}
+}
+function readPendingBotForfeit(){
+  try{
+    const x=JSON.parse(localStorage.getItem(MP_BOT_FORFEIT_KEY)||'null');
+    return x&&x.matchKey&&Number(x.deadline)>0?x:null
+  }catch{return null}
+}
+function savePendingBotForfeit(){
+  if(!botMode||!botSessionId||!bot?.id)return;
+  const counts=getMultiplayerQuizCounts();
+  const pending={
+    matchKey:botSessionId,
+    botId:bot.id,
+    deadline:Date.now()+30000,
+    knowledge:getMultiplayerKnowledgeContribution(),
+    playId:mpQuizPlayId||null,
+    durationSeconds:getMultiplayerQuizDurationSeconds(),
+    correctAnswers:counts.correct,
+    wrongAnswers:counts.wrong,
+    viewedQuestions:getMultiplayerViewedCount()
+  };
+  try{localStorage.setItem(MP_BOT_FORFEIT_KEY,JSON.stringify(pending))}catch{}
+}
+async function finalizePendingBotForfeit(pending){
+  const current=readPendingBotForfeit();
+  if(!current||String(current.matchKey)!==String(pending?.matchKey||''))return;
+  if(Date.now()<Number(current.deadline)){
+    schedulePendingBotForfeit();
+    return
+  }
+  try{
+    recordBotOutcome(current.botId,'loss');
+    await recordMultiplayerResult(current.matchKey,'loss',true,current.knowledge||null);
+    if(supabaseClient&&current.playId){
+      const {error}=await supabaseClient.from('quiz_plays').update({
+        finished_at:new Date().toISOString(),
+        duration_seconds:Math.max(0,Number(current.durationSeconds)||0),
+        correct_answers:Math.max(0,Number(current.correctAnswers)||0),
+        wrong_answers:Math.max(0,Number(current.wrongAnswers)||0),
+        viewed_questions:Math.max(0,Number(current.viewedQuestions)||0),
+        completed:true
+      }).eq('id',current.playId);
+      if(error)throw error
+    }
+  }catch(e){console.warn('Bot forfeit was not fully synced:',e)}
+  finally{
+    try{localStorage.removeItem(MP_BOT_FORFEIT_KEY)}catch{}
+    renderLobbyRecords()
+  }
+}
+function schedulePendingBotForfeit(){
+  clearTimeout(botForfeitTimer);botForfeitTimer=null;
+  const pending=readPendingBotForfeit();if(!pending)return;
+  const wait=Math.max(0,Number(pending.deadline)-Date.now());
+  botForfeitTimer=setTimeout(()=>void finalizePendingBotForfeit(pending),wait)
 }
 function loadBotBag(){
   try{
@@ -1582,6 +1644,7 @@ async function initMultiplayerPage(){
   $('mp-name-input').addEventListener('keydown',e=>{if(e.key==='Enter')saveMpIdentityName();else if(e.key==='Escape')closeMpNameModal()});
   const entryParams=new URLSearchParams(location.search);pendingTurnInviteParam=entryParams.get('turn');pendingInviteParam=entryParams.get('invite');
   await loadMpIdentity();$('meName').textContent=myName()||'—';
+  schedulePendingBotForfeit();
   if(!mpIdentityName){openMpNameModal(true);return}
   await refreshActiveQuizzes(false);startActiveRefresh();
   await continueMultiplayerEntry()
@@ -1589,6 +1652,10 @@ async function initMultiplayerPage(){
 void initMultiplayerPage();
 window.addEventListener('storage',e=>{if(e.key===MP_GUEST_IDENTITY||e.key==='kviztogo_username')void loadMpIdentity().then(()=>syncLiveMultiplayerName(myName()))});
 window.addEventListener('pagehide',()=>{
+  if(botMode&&botSessionId){
+    savePendingBotForfeit();
+    return
+  }
   if(state?.match_id&&!botMode&&['ready','countdown','playing','reveal'].includes(state?.status)){
     fetch(SB+'/rest/v1/rpc/multiplayer_v3',{
       method:'POST',
