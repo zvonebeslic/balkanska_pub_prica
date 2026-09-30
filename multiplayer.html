@@ -496,11 +496,13 @@ function getMultiplayerQuizCounts(){
 function getMultiplayerViewedCount(){
   if(botMode){
     if(!mpQuizPlayId)return 0;
-    return Math.min(10,Math.max(botHistory.length,Math.min(10,botPos+1)))
+    const limit=Math.max(1,Math.min(botQuestions.length||selectedMpGameMode().questionLimit,selectedMpGameMode().questionLimit));
+    return Math.min(limit,Math.max(botHistory.length,Math.min(limit,botPos+1)))
   }
   const historyCount=Array.isArray(state?.history)?state.history.length:0;
   if(state&&['playing','reveal','finished'].includes(state.status)){
-    return Math.min(10,Math.max(historyCount,(Number(state.round)||0)+1))
+    const limit=Math.max(1,Number(state.question_limit)||10);
+    return Math.min(limit,Math.max(historyCount,(Number(state.round)||0)+1))
   }
   return historyCount
 }
@@ -657,13 +659,13 @@ function stopPoll(){clearInterval(pollTimer);pollTimer=null}
 function startPoll(){stopPoll();pollTimer=setInterval(()=>refresh('poll').catch(()=>{}),500)}
 function showLobby(){ $('game').classList.add('hidden');$('lobby').classList.remove('hidden') }
 function showGame(){ $('lobby').classList.add('hidden');$('game').classList.remove('hidden');$('meGame').textContent=state?.me_name||myName();$('oppGame').textContent=state?.opponent_name||bot?.name||t('opponentFound') }
-function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;historyRenderSignature='';showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
+function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;historyRenderSignature='';closeMpModePicker();showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
 
 async function findOpponent(){
   if(!mpIdentityName){openMpNameModal(true);return}
   if($('find').disabled)return;
   $('find').disabled=true;$('friend').disabled=true;$('find').textContent=t('searchButton');$('oppName').textContent=t('searching');$('oppMeta').textContent=t('checkingQueue');$('meMeta').textContent=t('queue');$('search').textContent=t('searching');
-  try{state=await api('join',{name:myName(),recent:recent()});handle(state);startPoll()}
+  try{closeMpModePicker();state=await api('join',{name:myName(),recent:recent(),...mpGamePayload()});handle(state);startPoll()}
   catch(e){$('search').textContent=t('searchError');$('find').disabled=false;$('friend').disabled=false;$('find').textContent=t('findOpponent')}
 }
 
@@ -672,14 +674,14 @@ async function createFriendInvite(){
   if($('friend').disabled)return;
   $('friend').disabled=true;$('find').disabled=true;$('friend').textContent=t('preparingInvite');$('oppName').textContent=t('waiting');$('oppMeta').textContent=t('friendNotJoined');$('meMeta').textContent=t('preparingInviteMeta');$('search').textContent=t('creatingPrivate');
   try{
-    state=await api('create_invite',{name:myName(),recent:recent()});
+    closeMpModePicker();state=await api('create_invite',{name:myName(),recent:recent(),...mpGamePayload()});
     if(state.status!=='invite_waiting'||!state.invite_code)throw new Error('invite');
     friendCode=state.invite_code;handle(state);startPoll();await shareFriendInvite(friendCode)
   }catch(e){$('search').textContent=t('inviteError');$('find').disabled=false;$('friend').disabled=false;$('friend').textContent='Igraj s prijateljima'}
 }
 
 function inviteUrl(code){let u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('invite',code);return u.toString()}
-function inviteMessage(url){return t('inviteMessage',{url})}
+function inviteMessage(url){return t('inviteMessage',{url,mode:mpModeLabel()})}
 function inviteCanvas(){
   const c=document.createElement('canvas');c.width=1080;c.height=1350;const x=c.getContext('2d');
   const g=x.createRadialGradient(760,260,30,760,260,760);g.addColorStop(0,'#153b74');g.addColorStop(.48,'#0f2038');g.addColorStop(1,'#0b1220');x.fillStyle=g;x.fillRect(0,0,c.width,c.height);
@@ -687,7 +689,7 @@ function inviteCanvas(){
   x.font='900 94px Arial';x.textBaseline='top';x.fillStyle='#fff';x.fillText('Kviz',150,165);let a=x.measureText('Kviz').width;x.fillStyle='#2f80ff';x.fillText('To',150+a,165);a+=x.measureText('To').width;x.fillStyle='#22c55e';x.fillText('Go',150+a,165);
   x.textAlign='center';x.fillStyle='#fff';x.font='900 92px Arial';x.fillText('1 NA 1',540,395);
   x.font='800 48px Arial';x.fillText(t('inviteCardCta'),540,535);
-  x.fillStyle='#a8b3c7';x.font='700 35px Arial';x.fillText(t('inviteCardRules'),540,650);
+  x.fillStyle='#a8b3c7';x.font='700 35px Arial';x.fillText(mpModeLabel(),540,650);
   x.fillStyle='#facc15';x.font='900 54px Arial';x.fillText(t('inviteCardQuestion'),540,800);
   x.fillStyle='#2f80ff';x.beginPath();x.roundRect(220,965,640,112,56);x.fill();x.fillStyle='#fff';x.font='900 40px Arial';x.fillText(t('inviteCardButton'),540,995);
   x.fillStyle='#a8b3c7';x.font='600 28px Arial';x.fillText('KvizToGo Multiplayer',540,1155);x.textAlign='left';return c
@@ -736,6 +738,7 @@ function setupReadyLobby(s){
 
 function handle(s){
   if(!s)return;
+  syncMpModeFromState(s);
   if(s.status==='waiting'){$('search').textContent=t('searching');$('meMeta').textContent=t('queue');return}
   if(s.status==='invite_waiting'){
     friendCode=s.invite_code||friendCode;showLobby();$('search').textContent=t('friendWaiting');$('oppName').textContent=t('waiting');$('oppMeta').textContent=t('friendNotJoined');$('meMeta').textContent=t('inviteActive');$('find').textContent=t('waitingFriend');$('find').disabled=true;$('friend').disabled=false;$('friend').textContent=t('shareAgain');$('friend').onclick=()=>shareFriendInvite(friendCode);return
@@ -751,7 +754,7 @@ function handle(s){
 
 function renderReal(s){
   if(s?.match_id&&['countdown','playing','reveal','finished','cancelled'].includes(s.status))void ensureMultiplayerQuizTracking(s.match_id,false).then(()=>syncMultiplayerTrackedAnswers());
-  $('meScore').textContent=s.me_score||0;$('oppScore').textContent=s.opponent_score||0;$('round').textContent=(Number(s.round||0)+1)+' / 10';renderServerHistory(s);
+  $('meScore').textContent=s.me_score||0;$('oppScore').textContent=s.opponent_score||0;$('round').textContent=mpRoundLabel(s.round,s.question_limit,s.win_target);renderServerHistory(s);
   if(s.status==='finished'&&s.reason==='disconnect_forfeit'){
     stopPoll();clearInterval(tickTimer);$('timer').textContent='0';showEnd(s.me_score||0,s.opponent_score||0,s.departed!==s.slot?'win':'loss');return
   }
