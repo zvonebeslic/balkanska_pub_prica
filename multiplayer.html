@@ -964,28 +964,88 @@ async function createFriendInvite(){
 }
 
 function inviteUrl(code){let u=new URL('https://kviztogo.com/multiplayer.html');u.searchParams.set('invite',code);return u.toString()}
-function inviteMessage(url){return t('inviteMessage',{url,mode:mpModeLabel()})}
-function inviteCanvas(){
+function turnInviteUrl(code){let u=new URL('https://kviztogo.com/multiplayer.html');u.searchParams.set('turn',code);return u.toString()}
+function inviteMessage(url,mode=mpModeLabel()){return t('inviteMessage',{url,mode})}
+function inviteCanvas(modeLabel=mpModeLabel()){
   const c=document.createElement('canvas');c.width=1080;c.height=1350;const x=c.getContext('2d');
   const g=x.createRadialGradient(760,260,30,760,260,760);g.addColorStop(0,'#153b74');g.addColorStop(.48,'#0f2038');g.addColorStop(1,'#0b1220');x.fillStyle=g;x.fillRect(0,0,c.width,c.height);
   x.fillStyle='rgba(22,34,53,.94)';x.strokeStyle='rgba(47,128,255,.65)';x.lineWidth=4;x.beginPath();x.roundRect(80,105,920,1140,48);x.fill();x.stroke();
   x.font='900 94px Arial';x.textBaseline='top';x.fillStyle='#fff';x.fillText('Kviz',150,165);let a=x.measureText('Kviz').width;x.fillStyle='#2f80ff';x.fillText('To',150+a,165);a+=x.measureText('To').width;x.fillStyle='#22c55e';x.fillText('Go',150+a,165);
   x.textAlign='center';x.fillStyle='#fff';x.font='900 92px Arial';x.fillText('1 NA 1',540,395);
   x.font='800 48px Arial';x.fillText(t('inviteCardCta'),540,535);
-  x.fillStyle='#a8b3c7';x.font='700 35px Arial';x.fillText(mpModeLabel(),540,650);
+  x.fillStyle='#a8b3c7';x.font='700 35px Arial';x.fillText(modeLabel,540,650);
   x.fillStyle='#facc15';x.font='900 54px Arial';x.fillText(t('inviteCardQuestion'),540,800);
   x.fillStyle='#2f80ff';x.beginPath();x.roundRect(220,965,640,112,56);x.fill();x.fillStyle='#fff';x.font='900 40px Arial';x.fillText(t('inviteCardButton'),540,995);
   x.fillStyle='#a8b3c7';x.font='600 28px Arial';x.fillText('KvizToGo Multiplayer',540,1155);x.textAlign='left';return c
 }
 function canvasBlob(c){return new Promise(r=>c.toBlob(r,'image/png',1))}
-async function shareFriendInvite(code){
-  const url=inviteUrl(code),msg=inviteMessage(url);
+async function shareFriendInvite(code,mode=mpModeLabel()){
+  const url=inviteUrl(code),msg=inviteMessage(url,mode);
   try{
-    const blob=await canvasBlob(inviteCanvas()),file=new File([blob],'KvizToGo-1-na-1.png',{type:'image/png'});
+    const blob=await canvasBlob(inviteCanvas(mode)),file=new File([blob],'KvizToGo-1-na-1.png',{type:'image/png'});
     if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({title:t('inviteTitle'),text:msg,files:[file]});return}
     if(navigator.share){await navigator.share({title:t('inviteTitle'),text:msg});return}
     await navigator.clipboard.writeText(msg);alert(t('inviteCopied'))
   }catch(e){}
+}
+
+async function shareTurnInvite(code,limit=selectedMpGameMode().questionLimit){
+  const mode=(currentLang==='en'?'Turn-based · ':'Na poteze · ')+String(limit)+(currentLang==='en'?' each':' po igraču');
+  const url=turnInviteUrl(code),msg=inviteMessage(url,mode);
+  try{
+    const blob=await canvasBlob(inviteCanvas(mode)),file=new File([blob],'KvizToGo-na-poteze.png',{type:'image/png'});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({title:t('inviteTitle'),text:msg,files:[file]});return}
+    if(navigator.share){await navigator.share({title:t('inviteTitle'),text:msg});return}
+    await navigator.clipboard.writeText(msg);alert(t('inviteCopied'))
+  }catch(e){}
+}
+
+async function findTurnOpponent(){
+  if($('find').disabled)return;
+  const mode=selectedMpGameMode();
+  $('find').disabled=true;$('friend').disabled=true;if($('mode-picker-btn'))$('mode-picker-btn').disabled=true;
+  $('find').textContent=t('searchButton');$('search').textContent=t('searching');
+  try{
+    closeMpModePicker();
+    const result=await api('turn_create_random',{name:myName(),recent:recent(),question_limit:mode.questionLimit});
+    resetLobby();await refreshActiveQuizzes(false);
+    showMpToast(result?.status==='turn_matched'?t('savedForLater'):t('activeTurnSearching'))
+  }catch(e){
+    $('search').textContent=t('searchError');$('find').disabled=false;$('friend').disabled=false;if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;$('find').textContent=t('findOpponent')
+  }
+}
+
+async function createTurnInvite(){
+  if($('friend').disabled)return;
+  const mode=selectedMpGameMode();
+  $('friend').disabled=true;$('find').disabled=true;if($('mode-picker-btn'))$('mode-picker-btn').disabled=true;
+  $('friend').textContent=t('preparingInvite');
+  try{
+    closeMpModePicker();
+    const result=await api('turn_create_invite',{name:myName(),recent:recent(),question_limit:mode.questionLimit});
+    const code=result?.invite_code;
+    if(!code)throw new Error('turn_invite');
+    await shareTurnInvite(code,mode.questionLimit);
+    resetLobby();await refreshActiveQuizzes(false)
+  }catch(e){
+    $('search').textContent=t('inviteError');$('find').disabled=false;$('friend').disabled=false;if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;$('friend').textContent=t('playFriends')
+  }
+}
+
+async function joinTurnInvite(code){
+  if(!mpIdentityName){pendingTurnInviteParam=String(code||'');openMpNameModal(true);return}
+  showLobby();$('find').disabled=true;$('friend').disabled=true;$('find').textContent=t('joining');$('search').textContent=t('joiningQuiz');
+  try{
+    const result=await api('turn_join_invite',{code:String(code).toUpperCase(),name:myName(),recent:recent()});
+    if(result?.status==='turn_invite_invalid'||result?.status==='turn_invite_self'){
+      $('search').textContent=result.status==='turn_invite_self'?t('ownInvite'):t('inviteExpired');
+      history.replaceState({},'',location.pathname);$('find').disabled=false;$('friend').disabled=false;$('find').textContent=t('findOpponent');return
+    }
+    history.replaceState({},'',location.pathname);
+    resetLobby();await refreshActiveQuizzes(false);showMpToast(t('turnInviteJoined'))
+  }catch(e){
+    $('search').textContent=t('inviteOpenError');$('find').disabled=false;$('friend').disabled=false
+  }
 }
 
 async function joinFriendInvite(code){
