@@ -872,7 +872,18 @@ function updateRematchState(s){
   btn.disabled=false;btn.textContent=t('rematch')
 }
 async function requestRematch(){
-  if(botMode){beginBotMatch();return}
+  if(botMode){
+    const btn=$('again');
+    if(btn){btn.disabled=true;btn.textContent=t('preparingQuestions')}
+    botQuestions=await loadBotQuestions();
+    if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10)){
+      if(btn){btn.disabled=false;btn.textContent=t('rematch')}
+      showMpToast(t('questionsLoadError'));
+      return
+    }
+    beginBotMatch();
+    return
+  }
   if(!state?.match_id)return;
   const matchId=state.match_id,btn=$('again');
   if(btn){btn.disabled=true;btn.textContent=t('rematchRequesting')}
@@ -902,7 +913,16 @@ async function loadBotQuestions(){
   for(let f of files){try{let r=await fetch('ABC%20pitanja/'+encodeURIComponent(f)+'.json',{cache:'no-store'}),j=await r.json(),a=Array.isArray(j)?j:(j.questions||[]);for(let x of a){if(x?.question&&x.answers&&!Array.isArray(x.answers)&&['A','B','C'].includes(String(x.correct_answer).toUpperCase()))all.push({id:hash((x.topic||f)+'|'+x.question),topic:x.topic||f,question:x.question,correctKey:String(x.correct_answer).toUpperCase(),answers:['A','B','C'].map(k=>({key:k,text:x.answers[k]}))})}}catch{}}
   const mode=selectedMpGameMode(),ban=new Set(recent());
   let eligible=all.filter(q=>!ban.has(q.id));
-  if(mode.topic)eligible=eligible.filter(q=>String(q.topic||'')===mode.topic);
+  if(mode.topic){
+    const themedAll=all.filter(q=>String(q.topic||'')===mode.topic);
+    eligible=themedAll.filter(q=>!ban.has(q.id));
+    if(eligible.length<mode.questionLimit){
+      const themeIds=new Set(themedAll.map(q=>q.id));
+      const preserved=recent().filter(id=>!themeIds.has(id));
+      try{localStorage.setItem(RECENT,JSON.stringify(preserved.slice(-2000)))}catch{}
+      eligible=themedAll.slice();
+    }
+  }
   eligible=shuffle(eligible);
   return eligible.slice(0,mode.questionLimit)
 }
