@@ -543,6 +543,7 @@ function renderSeriesScore(me=0,opp=0,active=false){
 function loadActiveBots(){try{const a=JSON.parse(localStorage.getItem(MP_ACTIVE_BOTS_KEY)||'[]');return Array.isArray(a)?a:[]}catch{return[]}}
 function saveActiveBots(items){try{localStorage.setItem(MP_ACTIVE_BOTS_KEY,JSON.stringify((items||[]).slice(-12)))}catch{}}
 function activeModeLabel(item){
+  if(item?.kind==='turn')return(currentLang==='en'?'Turn-based · ':'Na poteze · ')+String(item?.question_limit||10)+(currentLang==='en'?' each':' po igraču');
   if(item?.modeId){const m=MP_GAME_MODES.find(x=>x.id===item.modeId);if(m)return mpModeLabel(m)}
   let m=null;
   if(item?.topic_filter)m=MP_GAME_MODES.find(x=>x.kind==='theme'&&x.topic===item.topic_filter);
@@ -551,6 +552,11 @@ function activeModeLabel(item){
   return m?mpModeLabel(m):String(item?.question_limit||10)+' '+(currentLang==='en'?'questions':'pitanja')
 }
 function activeItemStatus(item){
+  if(item.kind==='turn'){
+    if(item.status==='finished')return t('activeTurnFinished');
+    if(!item.friend_joined)return item.match_type==='invite'?t('activeWaitingFriend'):t('activeTurnSearching');
+    return item.my_turn?t('activeYourTurn'):t('activeTurnWaiting')
+  }
   if(item.kind==='bot')return t('activeReady');
   if(item.kind==='invite'&&!item.friend_joined)return t('activeWaitingFriend');
   if(item.me_ready&&!item.opponent_ready)return t('activeWaitingOpponent');
@@ -563,29 +569,36 @@ function renderActiveQuizzes(){
   if(!items.length){root.innerHTML='<div class="active-quiz-empty">'+esc(t('activeEmpty'))+'</div>';return}
   root.innerHTML='';
   for(const item of items){
-    const card=document.createElement('article');card.className='active-quiz-card'+(item.kind==='invite'&&item.friend_joined?' friend-ready':'');
-    const kind=item.kind==='bot'?t('activeBot'):item.kind==='invite'?t('activeInvite'):t('activeRematch');
+    const turnReady=item.kind==='turn'&&(item.my_turn||item.status==='finished');
+    const card=document.createElement('article');card.className='active-quiz-card'+((item.kind==='invite'&&item.friend_joined)||turnReady?' friend-ready':'');
+    const kind=item.kind==='turn'?t('activeTurn'):item.kind==='bot'?t('activeBot'):item.kind==='invite'?t('activeInvite'):t('activeRematch');
     const opp=item.kind==='bot'?item.opponent_name:(item.opponent_name||'');
     const title=kind+(opp?' · '+opp:'');
     const series=(Number(item.me_series_wins)||0)+(Number(item.opponent_series_wins)||0)>0
       ?' · '+t('activeSeries',{me:Number(item.me_series_wins)||0,opp:Number(item.opponent_series_wins)||0})
       :'';
+    const turnScore=item.kind==='turn'&&item.friend_joined
+      ?' · '+t('turnResult',{me:Number(item.me_score)||0,opp:Number(item.opponent_score)||0})
+      :'';
     card.innerHTML='<div class="active-quiz-top"><div class="active-quiz-title">'+esc(title)+'</div><div class="active-quiz-status">'+esc(activeItemStatus(item))+'</div></div>'+
-      '<div class="active-quiz-meta">'+esc(activeModeLabel(item)+series)+'</div><div class="active-quiz-actions"></div>';
+      '<div class="active-quiz-meta">'+esc(activeModeLabel(item)+series+turnScore)+'</div><div class="active-quiz-actions"></div>';
     const actions=card.querySelector('.active-quiz-actions');
     if(item.kind==='invite'&&item.invite_code&&!item.friend_joined){
       const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareFriendInvite(item.invite_code);actions.appendChild(share)
     }
-    const resume=document.createElement('button');resume.className='active-resume';resume.textContent=t('activeContinue');resume.onclick=()=>item.kind==='bot'?resumeBotActive(item.id):resumeServerActive(item.id);actions.appendChild(resume);
-    const remove=document.createElement('button');remove.className='active-remove';remove.textContent=t('activeRemove');remove.onclick=()=>item.kind==='bot'?removeBotActive(item.id):removeServerActive(item.id);actions.appendChild(remove);
+    if(item.kind==='turn'&&item.match_type==='invite'&&item.invite_code&&!item.friend_joined){
+      const share=document.createElement('button');share.className='active-share';share.textContent=t('activeShare');share.onclick=()=>shareTurnInvite(item.invite_code,item.question_limit);actions.appendChild(share)
+    }
+    const resume=document.createElement('button');resume.className='active-resume';resume.textContent=item.kind==='turn'&&item.my_turn?t('activePlayTurn'):t('activeContinue');resume.onclick=()=>item.kind==='turn'?resumeTurnGame(item.id):item.kind==='bot'?resumeBotActive(item.id):resumeServerActive(item.id);actions.appendChild(resume);
+    const remove=document.createElement('button');remove.className='active-remove';remove.textContent=t('activeRemove');remove.onclick=()=>item.kind==='turn'?removeTurnGame(item.id):item.kind==='bot'?removeBotActive(item.id):removeServerActive(item.id);actions.appendChild(remove);
     root.appendChild(card)
   }
 }
 async function refreshActiveQuizzes(checkMatch=true){
   if(!mpIdentityName)return;
   try{
-    const data=await api('active_list',{});
-    activeServerItems=Array.isArray(data)?data:[];
+    const [data,turnData]=await Promise.all([api('active_list',{}),api('turn_list',{})]);
+    activeServerItems=[...(Array.isArray(data)?data:[]),...(Array.isArray(turnData)?turnData:[])];
     renderActiveQuizzes();
     if(checkMatch&&!botMode&&!state?.match_id&&!['waiting','invite_waiting','bot'].includes(state?.status)){
       const s=await api('state',{});
@@ -598,6 +611,7 @@ async function refreshActiveQuizzes(checkMatch=true){
 function startActiveRefresh(){clearInterval(activeRefreshTimer);activeRefreshTimer=setInterval(()=>void refreshActiveQuizzes(true),3000)}
 function removeBotActive(id){saveActiveBots(loadActiveBots().filter(x=>x.id!==id));renderActiveQuizzes()}
 async function removeServerActive(id){try{await api('active_cancel',{id});await refreshActiveQuizzes(false)}catch(e){console.warn('Aktivni kviz nije uklonjen:',e)}}
+async function removeTurnGame(id){try{await api('turn_cancel',{id});await refreshActiveQuizzes(false)}catch(e){console.warn('Igra Na poteze nije uklonjena:',e)}}
 async function resumeServerActive(id){
   try{
     const result=await api('active_resume',{id});
