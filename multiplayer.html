@@ -479,6 +479,7 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
 }
 
 const MP_GAME_MODE_KEY='kviztogo_mp_game_mode_v1';
+const MP_GAME_MODE_TTL=60*60*1000;
 const MP_THEME_RECENT_KEY='kviztogo_mp_theme_recent_v1';
 const MP_ACTIVE_BOTS_KEY='kviztogo_mp_active_bots_v1';
 const MP_BOT_BAG_KEY='kviztogo_mp_bot_bag_v1';
@@ -509,11 +510,26 @@ const MP_GAME_MODES=[
   {id:'t-moreplovci',kind:'theme',questionLimit:10,winTarget:null,topic:'Moreplovci',hr:'Moreplovci',en:'Seafarers'},
   {id:'t-sport',kind:'theme',questionLimit:10,winTarget:null,topic:'Sport',hr:'Sport',en:'Sport'}
 ];
-let selectedMpGameModeId=(()=>{try{return localStorage.getItem(MP_GAME_MODE_KEY)||'q10'}catch{return'q10'}})();
+function loadSavedMpGameMode(){
+  try{
+    const raw=localStorage.getItem(MP_GAME_MODE_KEY);
+    if(!raw)return'q10';
+    let saved=null;
+    try{saved=JSON.parse(raw)}catch{return'q10'}
+    const id=String(saved?.id||''),selectedAt=Number(saved?.selectedAt)||0;
+    if(!MP_GAME_MODES.some(x=>x.id===id)||Date.now()-selectedAt>MP_GAME_MODE_TTL){
+      localStorage.removeItem(MP_GAME_MODE_KEY);
+      return'q10'
+    }
+    return id
+  }catch{return'q10'}
+}
+function saveMpGameMode(id){try{localStorage.setItem(MP_GAME_MODE_KEY,JSON.stringify({id,selectedAt:Date.now()}))}catch{}}
+let selectedMpGameModeId=loadSavedMpGameMode();
 function selectedMpGameMode(){return MP_GAME_MODES.find(x=>x.id===selectedMpGameModeId)||MP_GAME_MODES[0]}
 function mpModeLabel(mode=selectedMpGameMode()){return currentLang==='en'?mode.en:mode.hr}
 function mpGamePayload(){const m=selectedMpGameMode();return{question_limit:m.questionLimit,win_target:m.winTarget,topic:m.topic}}
-function setMpGameMode(id,close=true){const m=MP_GAME_MODES.find(x=>x.id===id);if(!m)return;selectedMpGameModeId=m.id;try{localStorage.setItem(MP_GAME_MODE_KEY,m.id)}catch{}renderMpModePicker();if(close)closeMpModePicker()}
+function setMpGameMode(id,close=true){const m=MP_GAME_MODES.find(x=>x.id===id);if(!m)return;selectedMpGameModeId=m.id;saveMpGameMode(m.id);renderMpModePicker();if(close)closeMpModePicker()}
 function closeMpModePicker(){const p=$('mode-picker-panel'),b=$('mode-picker-btn');if(p)p.classList.add('hidden');if(b)b.setAttribute('aria-expanded','false')}
 function toggleMpModePicker(){const p=$('mode-picker-panel'),b=$('mode-picker-btn');if(!p||!b)return;const open=p.classList.contains('hidden');p.classList.toggle('hidden',!open);b.setAttribute('aria-expanded',String(open))}
 function renderMpModePicker(){
@@ -725,7 +741,7 @@ async function resumeBotActive(id){
   const item=loadActiveBots().find(x=>x.id===id);if(!item)return;
   if(state?.match_id||['waiting','invite_waiting'].includes(state?.status)||botMode){showMpToast(t('activeBusy'));return}
   const profile=MP_BOT_PROFILES.find(x=>x.id===item.botId);if(!profile){removeBotActive(id);return}
-  selectedMpGameModeId=MP_GAME_MODES.some(x=>x.id===item.modeId)?item.modeId:'q10';try{localStorage.setItem(MP_GAME_MODE_KEY,selectedMpGameModeId)}catch{}renderMpModePicker();
+  selectedMpGameModeId=MP_GAME_MODES.some(x=>x.id===item.modeId)?item.modeId:'q10';saveMpGameMode(selectedMpGameModeId);renderMpModePicker();
   bot=botFromProfile(profile);botMode=true;botPreparing=true;botSeriesMe=Number(item.me_series_wins)||0;botSeriesOpp=Number(item.opponent_series_wins)||0;
   botQuestions=await loadBotQuestions();botPreparing=false;
   if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10)){botMode=false;showMpToast(t('questionsLoadError'));return}
