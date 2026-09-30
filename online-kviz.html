@@ -3071,7 +3071,7 @@ body.player-panel-open { overflow: hidden; }
 
       <!-- Scrollanjem do Znanja -->
       <div class="themed-row" id="scroll-knowledge-menu" style="display:block;">
-        <details style="width:100%;">
+        <details id="scroll-knowledge-details" style="width:100%;">
           <summary class="themed-btn" style="list-style:none;cursor:pointer;user-select:none;display:inline-flex;align-items:center;gap:.42rem;"><span aria-hidden="true" style="width:8px;height:8px;flex:0 0 8px;display:inline-block;border:1.5px solid currentColor;border-radius:50%;"></span><span data-i18n="scrollModeLabel">Scrollanjem do Znanja</span></summary>
           <div style="margin-top:.55rem;padding:.65rem;border:1px solid rgba(148,163,184,.22);border-radius:18px;background:rgba(16,27,45,.82);">
             <div class="themed-grid">
@@ -7324,6 +7324,7 @@ if (!supabaseClient) {
     initModeSwitch();
     initThemedUI();
     initAbcUI();
+    initQuizCategoryAccordion();
     initButtons();
     initAtomicJokerToolkit();
     await loadQuestionsFromJson();
@@ -7378,6 +7379,24 @@ if (!supabaseClient) {
 
     document.body.classList.remove("quiz-playing", "keyboard-active", "quiz-results-visible");
     document.documentElement.style.setProperty("--keyboard-safe-space", "0px");
+  }
+
+  function centerQuizCardForAbc() {
+    const grid = document.querySelector(".quiz-main-grid");
+    const card = document.getElementById("quiz-card");
+    if (!grid || !card) return;
+
+    if (!isMobileQuizLayout()) {
+      window.setTimeout(() => {
+        card.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+      }, 80);
+      return;
+    }
+
+    document.documentElement.style.setProperty("--keyboard-safe-space", "0px");
+    document.body.classList.add("quiz-playing");
+    document.body.classList.remove("keyboard-active", "quiz-results-visible");
+    grid.scrollTop = 0;
   }
 
   function keepQuizVisibleAboveKeyboard() {
@@ -7740,6 +7759,8 @@ if (!supabaseClient) {
           return;
         }
 
+        closeQuizCategoryMenus();
+
         // Ako user klikne običan mod, izlazimo iz tematskog
         currentMode = mode;
         currentThemeTopic = null;
@@ -7845,6 +7866,36 @@ if (!supabaseClient) {
   }
   /* ------------------ TEMATSKI UI ------------------ */
 
+  function closeQuizCategoryMenus(except = null) {
+    const themedBtn = document.getElementById("btn-themed");
+    const themedPanel = document.getElementById("themed-panel");
+    const abcBtn = document.getElementById("btn-abc");
+    const abcPanel = document.getElementById("abc-panel");
+    const scrollDetails = document.getElementById("scroll-knowledge-details");
+
+    if (except !== "themed") {
+      themedPanel?.classList.remove("open");
+      themedBtn?.classList.remove("active");
+    }
+    if (except !== "abc") {
+      abcPanel?.classList.remove("open");
+      abcBtn?.classList.remove("active");
+      abcBtn?.setAttribute("aria-expanded", "false");
+    }
+    if (except !== "scroll" && scrollDetails) {
+      scrollDetails.open = false;
+    }
+  }
+
+  function initQuizCategoryAccordion() {
+    const scrollDetails = document.getElementById("scroll-knowledge-details");
+    if (!scrollDetails || scrollDetails.dataset.accordionReady === "true") return;
+    scrollDetails.dataset.accordionReady = "true";
+    scrollDetails.addEventListener("toggle", () => {
+      if (scrollDetails.open) closeQuizCategoryMenus("scroll");
+    });
+  }
+
   function initThemedUI() {
     const btn = document.getElementById("btn-themed");
     const panel = document.getElementById("themed-panel");
@@ -7852,7 +7903,9 @@ if (!supabaseClient) {
 
     if (btn && panel) {
       btn.addEventListener("click", () => {
-        const open = panel.classList.toggle("open");
+        const willOpen = !panel.classList.contains("open");
+        if (willOpen) closeQuizCategoryMenus("themed");
+        const open = panel.classList.toggle("open", willOpen);
         btn.classList.toggle("active", open);
         if (open) setExclusiveChoiceCircle(btn);
         else restoreChoiceCircleFromState();
@@ -7863,6 +7916,8 @@ if (!supabaseClient) {
       b.addEventListener("click", () => {
         const topic = b.getAttribute("data-topic");
         if (!topic) return;
+
+        closeQuizCategoryMenus("themed");
 
         // Prebaci na themed mod
         currentMode = "themed";
@@ -7953,7 +8008,9 @@ if (!supabaseClient) {
     if (!btn || !panel) return;
 
     btn.addEventListener("click", () => {
-      const open = panel.classList.toggle("open");
+      const willOpen = !panel.classList.contains("open");
+      if (willOpen) closeQuizCategoryMenus("abc");
+      const open = panel.classList.toggle("open", willOpen);
       btn.classList.toggle("active", open);
       btn.setAttribute("aria-expanded", String(open));
       if (open) setExclusiveChoiceCircle(btn);
@@ -7965,6 +8022,8 @@ if (!supabaseClient) {
         const topic = button.getAttribute("data-abc-topic");
         const mode = button.getAttribute("data-abc-mode");
         if (!topic && !mode) return;
+
+        closeQuizCategoryMenus("abc");
 
         currentMode = topic ? "abc_themed" : mode;
         currentAbcTopic = topic || null;
@@ -8405,7 +8464,8 @@ if (!supabaseClient) {
           }
         }
         startNewRound(isTimedMode());
-        focusAnswerInputSoon();
+        if (isAbcMode()) centerQuizCardForAbc();
+        else focusAnswerInputSoon();
       });
     }
 
