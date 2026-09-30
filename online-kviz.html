@@ -7887,12 +7887,38 @@ if (!supabaseClient) {
     }
   }
 
+  function keepOpenedQuizCategoryInPlace(anchor, originalTop) {
+    if (!anchor) return;
+    const header = document.querySelector(".site-header");
+    const headerBottom = (header?.getBoundingClientRect().bottom || 0) + 8;
+    const wantedTop = Math.max(headerBottom, Number.isFinite(originalTop) ? originalTop : anchor.getBoundingClientRect().top);
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const currentTop = anchor.getBoundingClientRect().top;
+        const delta = currentTop - wantedTop;
+        if (Math.abs(delta) > 1) window.scrollBy({ top: delta, behavior: "auto" });
+      });
+    });
+  }
+
   function initQuizCategoryAccordion() {
     const scrollDetails = document.getElementById("scroll-knowledge-details");
     if (!scrollDetails || scrollDetails.dataset.accordionReady === "true") return;
     scrollDetails.dataset.accordionReady = "true";
+
+    const summary = scrollDetails.querySelector("summary");
+    if (summary) {
+      summary.addEventListener("click", () => {
+        scrollDetails.dataset.openAnchorTop = String(summary.getBoundingClientRect().top);
+      }, { capture: true });
+    }
+
     scrollDetails.addEventListener("toggle", () => {
-      if (scrollDetails.open) closeQuizCategoryMenus("scroll");
+      if (!scrollDetails.open) return;
+      const originalTop = Number(scrollDetails.dataset.openAnchorTop);
+      closeQuizCategoryMenus("scroll");
+      keepOpenedQuizCategoryInPlace(summary || scrollDetails, originalTop);
     });
   }
 
@@ -7904,11 +7930,16 @@ if (!supabaseClient) {
     if (btn && panel) {
       btn.addEventListener("click", () => {
         const willOpen = !panel.classList.contains("open");
+        const originalTop = btn.getBoundingClientRect().top;
         if (willOpen) closeQuizCategoryMenus("themed");
         const open = panel.classList.toggle("open", willOpen);
         btn.classList.toggle("active", open);
-        if (open) setExclusiveChoiceCircle(btn);
-        else restoreChoiceCircleFromState();
+        if (open) {
+          setExclusiveChoiceCircle(btn);
+          keepOpenedQuizCategoryInPlace(btn, originalTop);
+        } else {
+          restoreChoiceCircleFromState();
+        }
       });
     }
 
@@ -8009,12 +8040,17 @@ if (!supabaseClient) {
 
     btn.addEventListener("click", () => {
       const willOpen = !panel.classList.contains("open");
+      const originalTop = btn.getBoundingClientRect().top;
       if (willOpen) closeQuizCategoryMenus("abc");
       const open = panel.classList.toggle("open", willOpen);
       btn.classList.toggle("active", open);
       btn.setAttribute("aria-expanded", String(open));
-      if (open) setExclusiveChoiceCircle(btn);
-      else restoreChoiceCircleFromState();
+      if (open) {
+        setExclusiveChoiceCircle(btn);
+        keepOpenedQuizCategoryInPlace(btn, originalTop);
+      } else {
+        restoreChoiceCircleFromState();
+      }
     });
 
     optionButtons.forEach(button => {
