@@ -680,7 +680,7 @@ async function createFriendInvite(){
   }catch(e){$('search').textContent=t('inviteError');$('find').disabled=false;$('friend').disabled=false;if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;$('friend').textContent=t('playFriends')}
 }
 
-function inviteUrl(code){let u=new URL(location.href);u.search='';u.hash='';u.searchParams.set('invite',code);return u.toString()}
+function inviteUrl(code){let u=new URL('https://kviztogo.com/multiplayer.html');u.searchParams.set('invite',code);return u.toString()}
 function inviteMessage(url){return t('inviteMessage',{url,mode:mpModeLabel()})}
 function inviteCanvas(){
   const c=document.createElement('canvas');c.width=1080;c.height=1350;const x=c.getContext('2d');
