@@ -403,6 +403,7 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
 
 let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='',lastEndProcessedMatchKey=null;const questionVotes=new Map();
 let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
+const MP_INVITE_MATCH_KEY='kviztogo_mp_invite_match_v1';
 
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
@@ -414,6 +415,8 @@ function remember(ids){try{localStorage.setItem(RECENT,JSON.stringify(recent().c
 
 function mpQuizTrackingKey(sessionId){return'kviztogo_mp_quiz_tracking_v1:'+sessionId}
 function makeMpQuizSessionId(matchKey){return'multiplayer:'+String(matchKey)+':'+ensureMpGuestIdentity().id}
+function rememberMpInviteMatch(matchKey){try{if(matchKey)localStorage.setItem(MP_INVITE_MATCH_KEY,String(matchKey))}catch{}}
+function isMpInviteEntry(matchKey){try{return Boolean(matchKey)&&localStorage.getItem(MP_INVITE_MATCH_KEY)===String(matchKey)}catch{return false}}
 function loadMpSavedAnswers(sessionId){
   try{const x=JSON.parse(localStorage.getItem(mpQuizTrackingKey(sessionId))||'null');return new Set(Array.isArray(x?.answers)?x.answers.map(String):[])}catch{return new Set()}
 }
@@ -468,7 +471,7 @@ async function ensureMultiplayerQuizTracking(matchKey,isBot=false){
       const visitorId=mpQuizUserId?null:ensureMpGuestIdentity().id;
       const {data:existing,error:existingError}=await supabaseClient
         .from('quiz_plays')
-        .select('id,duration_seconds,completed')
+        .select('id,duration_seconds,completed,multiplayer_invite_entry')
         .eq('session_id',sessionId)
         .maybeSingle();
       if(existingError)throw existingError;
@@ -476,6 +479,10 @@ async function ensureMultiplayerQuizTracking(matchKey,isBot=false){
         mpQuizPlayId=existing.id;
         mpQuizActiveMs=Math.max(0,Number(existing.duration_seconds)||0)*1000;
         mpQuizCompleted=Boolean(existing.completed);
+        if(isMpInviteEntry(matchKey)&&existing.multiplayer_invite_entry!==true){
+          const inviteUpdate=await supabaseClient.from('quiz_plays').update({multiplayer_invite_entry:true}).eq('id',existing.id);
+          if(inviteUpdate.error)throw inviteUpdate.error
+        }
       }else{
         const {data,error}=await supabaseClient.from('quiz_plays').insert({
           user_id:mpQuizUserId,
@@ -483,6 +490,7 @@ async function ensureMultiplayerQuizTracking(matchKey,isBot=false){
           session_id:sessionId,
           quiz_mode:'multiplayer',
           topic:null,
+          multiplayer_invite_entry:isMpInviteEntry(matchKey),
           correct_answers:0,
           wrong_answers:0,
           completed:false
@@ -646,6 +654,7 @@ async function joinFriendInvite(code){
       $('search').textContent=state.status==='invite_self'?t('ownInvite'):t('inviteExpired');
       history.replaceState({},'',location.pathname);$('find').disabled=false;$('friend').disabled=false;$('find').textContent=t('findOpponent');$('find').onclick=findOpponent;return
     }
+    if(state?.match_id)rememberMpInviteMatch(state.match_id);
     handle(state);startPoll()
   }catch(e){$('search').textContent=t('inviteOpenError');$('find').disabled=false;$('friend').disabled=false}
 }
