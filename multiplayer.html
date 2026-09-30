@@ -622,6 +622,71 @@ async function resumeServerActive(id){
     await refreshActiveQuizzes(false)
   }catch(e){console.warn('Aktivni kviz nije nastavljen:',e)}
 }
+
+function turnBackToLobby(){
+  turnState=null;turnQuestionStartedAt=null;resetLobby();void refreshActiveQuizzes(false)
+}
+function showTurnGame(s){
+  turnState=s;turnQuestionStartedAt=performance.now();stopPoll();clearInterval(tickTimer);
+  $('lobby').classList.add('hidden');$('game').classList.remove('hidden');
+  document.querySelector('#game .history')?.classList.add('hidden');
+  $('end').classList.add('hidden');renderSeriesScore(0,0,false);
+  $('meGame').textContent=s.me_name||myName();$('oppGame').textContent=s.opponent_name||t('waiting');
+  $('meScore').textContent=String(Number(s.me_score)||0);$('oppScore').textContent=String(Number(s.opponent_score)||0);
+  $('timer').textContent='∞';$('answers').innerHTML='';$('status').textContent='';
+  if(s.status==='finished'){
+    $('round').textContent=String(s.question_limit)+' / '+String(s.question_limit);
+    $('question').textContent=t('turnFinishedMessage');
+    $('status').textContent=t('turnResult',{me:Number(s.me_score)||0,opp:Number(s.opponent_score)||0});
+    const back=document.createElement('button');back.className='secondary';back.type='button';back.textContent=t('turnBack');back.onclick=turnBackToLobby;$('answers').appendChild(back);
+    return
+  }
+  if(!s.my_turn||!s.question){
+    $('round').textContent=String(Number(s.me_done)||0)+' / '+String(s.question_limit);
+    $('question').textContent=t('turnWaitingMessage');
+    $('status').textContent=t('turnResult',{me:Number(s.me_score)||0,opp:Number(s.opponent_score)||0});
+    const back=document.createElement('button');back.className='secondary';back.type='button';back.textContent=t('turnBack');back.onclick=turnBackToLobby;$('answers').appendChild(back);
+    return
+  }
+  const q=s.question;
+  $('round').textContent=t('turnMoveProgress',{done:Math.min(Number(s.question_limit)||1,(Number(s.me_done)||0)+1),total:s.question_limit});
+  $('question').textContent=q.question||'';
+  for(const a of(q.answers||[])){
+    const b=document.createElement('button');b.className='answer';b.type='button';b.dataset.key=a.key;b.innerHTML='<b>'+esc(a.key)+'.</b> '+esc(a.text);b.onclick=()=>turnAnswer(a.key,b);$('answers').appendChild(b)
+  }
+  const back=document.createElement('button');back.className='secondary';back.type='button';back.textContent=t('turnBack');back.onclick=turnBackToLobby;$('answers').appendChild(back)
+}
+async function resumeTurnGame(id){
+  try{
+    const s=await api('turn_state',{id});
+    if(s?.status==='turn_missing'){await refreshActiveQuizzes(false);return}
+    if(s?.status==='waiting'){
+      showMpToast(s.match_type==='invite'?t('activeWaitingFriend'):t('activeTurnSearching'));return
+    }
+    if(s?.status==='active'&&!s.my_turn){showMpToast(t('activeTurnWaiting'));return}
+    showTurnGame(s)
+  }catch(e){console.warn('Igra Na poteze nije otvorena:',e)}
+}
+async function turnAnswer(key,button){
+  if(!turnState?.id||!turnState?.my_turn||!turnState?.question)return;
+  const q=turnState.question,elapsed=turnQuestionStartedAt?Math.max(0,(performance.now()-turnQuestionStartedAt)/1000):null;
+  const buttons=[...document.querySelectorAll('#answers .answer')];buttons.forEach(b=>b.disabled=true);
+  try{
+    const result=await api('turn_answer',{id:turnState.id,choice:key,answer_seconds:elapsed});
+    const lr=result?.last_result||{};
+    buttons.forEach(b=>{
+      if(b.dataset.key===lr.correctKey)b.classList.add('good');
+      else if(b.dataset.key===key)b.classList.add('bad')
+    });
+    $('meScore').textContent=String(Number(result.me_score)||0);$('oppScore').textContent=String(Number(result.opponent_score)||0);
+    $('status').textContent=t('correctAnswer')+' '+String(lr.correctKey||'')+'. '+String(lr.correctText||'');
+    if(q.id)remember([q.id]);
+    turnState=result;
+    setTimeout(()=>{turnBackToLobby()},2500)
+  }catch(e){
+    buttons.forEach(b=>b.disabled=false);showMpToast(t('searchError'))
+  }
+}
 function botFromProfile(profile){return{id:profile.id,name:profile.alias,leaderName:profile.leaderName,skill:profile.skill,cons:profile.cons,bias:profile.bias,base:profile.base,accuracy:mpBotAccuracy(profile),answerDelay:()=>mpBotDelay(profile)}}
 function loadBotBag(){
   try{
