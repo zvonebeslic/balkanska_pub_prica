@@ -213,7 +213,7 @@ waitingOpponentClick:'Čekamo da protivnik klikne Kreni s kvizom…',waitingOppo
 friendWaiting:'Čekamo da se prijatelj pridruži…',inviteActive:'Pozivnica aktivna',waitingFriend:'Čekamo prijatelja…',shareAgain:'Podijeli ponovno',
 multiplayer:'Multiplayer',bothReady:'Oba igrača su spremna.',answerLocked:'Odgovor zaključan. Čekamo protivnika…',opponentAnswered:'Protivnik je odgovorio.',answerBeforeTime:'Odgovori prije isteka vremena.',
 correctAnswer:'Točan odgovor:',win:'🏆 Pobjeda!',disconnectWin:'Protivnik se nije vratio u igru pa pobjeda pripada tebi.',duelFinished:'Dvoboj je završen',disconnectLoss:'Nisi se vratio u igru unutar dopuštenog vremena.',
-duelInterrupted:'Dvoboj prekinut',opponentLeft:'Protivnik je napustio dvoboj.',duelInactive:'Dvoboj više nije aktivan.',questionIn:'Pitanje za {sec} sekundi…',
+duelInterrupted:'Dvoboj prekinut',opponentLeft:'Protivnik je napustio dvoboj.',duelInactive:'Dvoboj više nije aktivan.',questionIn:'Pitanje za {sec} sekundi…',nextQuestionIn:'Sljedeće pitanje za {sec} s…',
 historyEmpty:'Odigrana pitanja pojavit će se ovdje.',noAnswer:'nije odgovorio',correctTag:'TOČAN ODGOVOR',victory:'🏆 Pobjeda!',victoryText:'Pobijedio si {opponent}.',
 opponentWins:'Protivnik pobjeđuje',opponentBetter:'{opponent} je ovaj put bio bolji.',draw:'🤝 Neriješeno',drawText:'Potpuno izjednačen dvoboj.',
 preparingQuestions:'Pripremam pitanja…',questionsLoadError:'Pitanja nije moguće učitati.',opponentThinking:'{opponent} razmišlja…',wrongOpponentCan:'Netočno. Protivnik još može odgovoriti.',
@@ -250,7 +250,7 @@ waitingOpponentClick:'Waiting for your opponent to click Start quiz…',waitingO
 friendWaiting:'Waiting for your friend to join…',inviteActive:'Invitation active',waitingFriend:'Waiting for friend…',shareAgain:'Share again',
 multiplayer:'Multiplayer',bothReady:'Both players are ready.',answerLocked:'Answer locked. Waiting for opponent…',opponentAnswered:'Opponent answered.',answerBeforeTime:'Answer before time runs out.',
 correctAnswer:'Correct answer:',win:'🏆 Victory!',disconnectWin:'Your opponent did not return, so you win the match.',duelFinished:'Match finished',disconnectLoss:'You did not return to the match within the allowed time.',
-duelInterrupted:'Match interrupted',opponentLeft:'Your opponent left the match.',duelInactive:'The match is no longer active.',questionIn:'Question in {sec} seconds…',
+duelInterrupted:'Match interrupted',opponentLeft:'Your opponent left the match.',duelInactive:'The match is no longer active.',questionIn:'Question in {sec} seconds…',nextQuestionIn:'Next question in {sec}s…',
 historyEmpty:'Played questions will appear here.',noAnswer:'no answer',correctTag:'CORRECT ANSWER',victory:'🏆 Victory!',victoryText:'You beat {opponent}.',
 opponentWins:'Opponent wins',opponentBetter:'{opponent} was better this time.',draw:'🤝 Draw',drawText:'A completely even match.',
 preparingQuestions:'Preparing questions…',questionsLoadError:'Questions could not be loaded.',opponentThinking:'{opponent} is thinking…',wrongOpponentCan:'Incorrect. Your opponent can still answer.',
@@ -812,14 +812,34 @@ function renderReal(s){
   if(s.status==='cancelled'){stopPoll();clearInterval(tickTimer);void finishMultiplayerQuizTracking(false);$('status').textContent='';$('end').classList.remove('hidden');$('endScore').textContent=(s.me_score||0)+' : '+(s.opponent_score||0);$('endText').textContent=t('duelInterrupted')}
 }
 
+function isFinalReveal(s){
+  const target=Number(s?.win_target)||0,me=Number(s?.me_score)||0,opp=Number(s?.opponent_score)||0;
+  const round=Number(s?.round)||0,limit=Math.max(1,Number(s?.question_limit)||10);
+  return (target>0&&(me>=target||opp>=target)) || round+1>=limit
+}
 function updateClock(s){
   clearInterval(tickTimer);let offset=Date.now()-s.server_ms;
   const draw=()=>{
-    if(s.status==='countdown'){let sec=Math.max(0,Math.ceil((s.starts_at-(Date.now()-offset))/1000));$('timer').textContent=String(sec);$('question').innerHTML='<span class="countdown">'+esc(t('questionIn',{sec}))+'</span>'}
-    else if(s.status==='playing'){let sec=Math.max(0,Math.ceil((s.deadline-(Date.now()-offset))/1000));$('timer').textContent=String(sec)}
-    else $('timer').textContent='0'
+    if(s.status==='countdown'){
+      let sec=Math.max(0,Math.ceil((s.starts_at-(Date.now()-offset))/1000));
+      $('timer').textContent=String(sec);
+      $('question').innerHTML='<span class="countdown">'+esc(t('questionIn',{sec}))+'</span>'
+    }else if(s.status==='playing'){
+      let sec=Math.max(0,Math.ceil((s.deadline-(Date.now()-offset))/1000));
+      $('timer').textContent=String(sec)
+    }else if(s.status==='reveal'){
+      const q=s.question||{},correct=t('correctAnswer')+' '+(q.correctKey||'')+'. '+answerText(q,q.correctKey);
+      if(isFinalReveal(s)){
+        $('timer').textContent='0';
+        $('status').textContent=correct
+      }else{
+        let sec=Math.max(0,Math.ceil((s.next_at-(Date.now()-offset))/1000));
+        $('timer').textContent=String(sec);
+        $('status').textContent=correct+' · '+t('nextQuestionIn',{sec})
+      }
+    }else $('timer').textContent='0'
   };
-  draw();if(s.status==='countdown'||s.status==='playing')tickTimer=setInterval(draw,200)
+  draw();if(s.status==='countdown'||s.status==='playing'||s.status==='reveal')tickTimer=setInterval(draw,200)
 }
 async function realAnswer(k,b){if(state?.status!=='playing'||state.my_choice)return;b.disabled=true;try{state=await api('answer',{match_id:state.match_id,round:String(state.round),choice:k});handle(state)}catch{b.disabled=false}}
 function answerText(q,k){return(q.answers||[]).find(a=>a.key===k)?.text||''}
@@ -892,7 +912,28 @@ function renderBot(){
 }
 function botUserAnswer(k,b){if(botMeAnswered)return;botMeAnswered=true;botMyChoice=k;botMyAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let q=botQuestions[botPos];if(k===q.correctKey){botMe++;b.classList.add('good');$('meScore').textContent=botMe;botClose(q)}else{b.classList.add('bad');b.disabled=true;$('status').textContent=t('wrongOpponentCan');if(botOppAnswered)botClose(q)}}
 function botAnswer(q){if(botOppAnswered)return;botOppAnswered=true;botOppAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let ok=Math.random()<bot.accuracy;botChoice=ok?q.correctKey:shuffle(q.answers.filter(a=>a.key!==q.correctKey))[0].key;if(ok){botScore++;$('oppScore').textContent=botScore;botClose(q)}else if(botMeAnswered)botClose(q);else $('status').textContent=t('opponentWrong',{opponent:bot.name})}
-function botClose(q){clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});$('timer').textContent='0';$('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);botHistory.push({q,me:botMyChoice,opp:botChoice,answerSeconds:botMyAnswerSeconds,opponentAnswerSeconds:botOppAnswerSeconds});$('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();setTimeout(()=>{botPos++;const mode=selectedMpGameMode(),raceDone=mode.winTarget&&(botMe>=mode.winTarget||botScore>=mode.winTarget),setDone=botPos>=Math.min(mode.questionLimit,botQuestions.length);if(raceDone||setDone)showEnd(botMe,botScore);else renderBot()},2000)}
+function botClose(q){
+  clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);
+  document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});
+  const correct=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);
+  botHistory.push({q,me:botMyChoice,opp:botChoice,answerSeconds:botMyAnswerSeconds,opponentAnswerSeconds:botOppAnswerSeconds});
+  $('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));
+  remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();
+  const mode=selectedMpGameMode(),nextPos=botPos+1,raceDone=mode.winTarget&&(botMe>=mode.winTarget||botScore>=mode.winTarget),setDone=nextPos>=Math.min(mode.questionLimit,botQuestions.length);
+  if(raceDone||setDone){
+    $('timer').textContent='0';$('status').textContent=correct;
+    setTimeout(()=>{botPos=nextPos;showEnd(botMe,botScore)},2000);
+    return
+  }
+  const end=performance.now()+5000;
+  const draw=()=>{
+    const sec=Math.max(0,Math.ceil((end-performance.now())/1000));
+    $('timer').textContent=String(sec);
+    $('status').textContent=correct+' · '+t('nextQuestionIn',{sec})
+  };
+  draw();tickTimer=setInterval(draw,200);
+  setTimeout(()=>{clearInterval(tickTimer);botPos=nextPos;renderBot()},5000)
+}
 
 
 function currentHistoryEntries(){
