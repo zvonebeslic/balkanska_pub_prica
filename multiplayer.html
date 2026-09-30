@@ -790,7 +790,8 @@ async function finalizePendingBotForfeit(pending){
   }catch(e){console.warn('Bot forfeit was not fully synced:',e)}
   finally{
     try{localStorage.removeItem(MP_BOT_FORFEIT_KEY)}catch{}
-    renderLobbyRecords()
+    renderLobbyRecords();
+    showMpToast(t('disconnectLoss'))
   }
 }
 function schedulePendingBotForfeit(){
