@@ -456,6 +456,7 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
 }
 
 const MP_GAME_MODE_KEY='kviztogo_mp_game_mode_v1';
+const MP_THEME_RECENT_KEY='kviztogo_mp_theme_recent_v1';
 const MP_GAME_MODES=[
   {id:'q10',kind:'questions',questionLimit:10,winTarget:null,topic:null,hr:'10 pitanja',en:'10 questions'},
   {id:'q20',kind:'questions',questionLimit:20,winTarget:null,topic:null,hr:'20 pitanja',en:'20 questions'},
@@ -518,6 +519,25 @@ function uuid(){return crypto.randomUUID()}
 function token(){let t=localStorage.getItem('kviztogo_mp_token_v3');if(!t||!/^[a-f0-9-]{36}\.[a-f0-9-]{36}$/.test(t)){t=uuid()+'.'+uuid();localStorage.setItem('kviztogo_mp_token_v3',t)}return t}
 function recent(){try{let a=JSON.parse(localStorage.getItem(RECENT)||'[]');return Array.isArray(a)?a.slice(-2000):[]}catch{return[]}}
 function remember(ids){try{localStorage.setItem(RECENT,JSON.stringify(recent().concat(ids).slice(-2000)))}catch{}}
+function loadThemeRecentMap(){try{const x=JSON.parse(localStorage.getItem(MP_THEME_RECENT_KEY)||'{}');return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}catch{return{}}}
+function saveThemeRecentMap(map){try{localStorage.setItem(MP_THEME_RECENT_KEY,JSON.stringify(map||{}))}catch{}}
+function themeRecent(topic,knownIds=null){
+  if(!topic)return[];
+  const map=loadThemeRecentMap();
+  if(!Array.isArray(map[topic])){
+    const allowed=knownIds instanceof Set?knownIds:null;
+    map[topic]=allowed?recent().filter(id=>allowed.has(id)):[];
+    saveThemeRecentMap(map)
+  }
+  return map[topic].map(String)
+}
+function setThemeRecent(topic,ids){if(!topic)return;const map=loadThemeRecentMap();map[topic]=[...new Set((ids||[]).map(String))];saveThemeRecentMap(map)}
+function rememberThemeQuestion(topic,id){
+  if(!topic||!id)return;
+  const map=loadThemeRecentMap(),arr=Array.isArray(map[topic])?map[topic].map(String):[];
+  const sid=String(id);
+  if(!arr.includes(sid)){arr.push(sid);map[topic]=arr;saveThemeRecentMap(map)}
+}
 
 function mpQuizTrackingKey(sessionId){return'kviztogo_mp_quiz_tracking_v1:'+sessionId}
 function makeMpQuizSessionId(matchKey){return'multiplayer:'+String(matchKey)+':'+ensureMpGuestIdentity().id}
@@ -855,7 +875,7 @@ function updateClock(s){
 }
 async function realAnswer(k,b){if(state?.status!=='playing'||state.my_choice)return;b.disabled=true;try{state=await api('answer',{match_id:state.match_id,round:String(state.round),choice:k});handle(state)}catch{b.disabled=false}}
 function answerText(q,k){return(q.answers||[]).find(a=>a.key===k)?.text||''}
-function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot=s.slot,sig=JSON.stringify(h.map(x=>[x.q?.id,x.choice1,x.choice2]));if(sig!==historyRenderSignature){historyRenderSignature=sig;$('history').innerHTML=h.length?'':'<div class="meta" style="margin-top:.7rem">'+esc(t('historyEmpty'))+'</div>';h.slice().reverse().forEach((x,ri)=>{let q=x.q||{},mine=slot===1?x.choice1:x.choice2,theirs=slot===1?x.choice2:x.choice1;addHist(q,mine,theirs,h.length-ri,s.opponent_name)});remember(h.map(x=>x.q?.id).filter(Boolean));void syncMultiplayerTrackedAnswers()}updateHistoryActionButtons()}
+function renderServerHistory(s){let h=Array.isArray(s.history)?s.history:[],slot=s.slot,sig=JSON.stringify(h.map(x=>[x.q?.id,x.choice1,x.choice2]));if(sig!==historyRenderSignature){historyRenderSignature=sig;$('history').innerHTML=h.length?'':'<div class="meta" style="margin-top:.7rem">'+esc(t('historyEmpty'))+'</div>';h.slice().reverse().forEach((x,ri)=>{let q=x.q||{},mine=slot===1?x.choice1:x.choice2,theirs=slot===1?x.choice2:x.choice1;addHist(q,mine,theirs,h.length-ri,s.opponent_name)});remember(h.map(x=>x.q?.id).filter(Boolean));h.forEach(x=>rememberThemeQuestion(x.q?.topic,x.q?.id));void syncMultiplayerTrackedAnswers()}updateHistoryActionButtons()}
 function cls(ch,correct){return!ch?'miss':ch===correct?'ok':'badc'}
 function label(ch,q){return ch?ch+' • '+answerText(q,ch):t('noAnswer')}
 function addHist(q,mine,theirs,n,opp,prepend=false){let d=document.createElement('div');d.className='hist';let aa=(q.answers||[]).map(a=>'<div class="hista '+(a.key===q.correctKey?'correct':'')+'"><b>'+esc(a.key)+'.</b> '+esc(a.text)+(a.key===q.correctKey?'<span class="correct-tag">'+esc(t('correctTag'))+'</span>':'')+'</div>').join('');d.innerHTML='<div class="histq">'+n+'. '+esc(q.question)+'</div>'+aa+'<div class="who"><div class="'+cls(mine,q.correctKey)+'"><b>'+esc(myName())+':</b> '+esc(label(mine,q))+'</div><div class="'+cls(theirs,q.correctKey)+'"><b>'+esc(opp)+':</b> '+esc(label(theirs,q))+'</div></div>';d.appendChild(buildQuestionActions(q));prepend?$('history').prepend(d):$('history').appendChild(d)}
@@ -915,12 +935,14 @@ async function loadBotQuestions(){
   let eligible=all.filter(q=>!ban.has(q.id));
   if(mode.topic){
     const themedAll=all.filter(q=>String(q.topic||'')===mode.topic);
-    eligible=themedAll.filter(q=>!ban.has(q.id));
+    const themeIds=new Set(themedAll.map(q=>q.id));
+    let seen=themeRecent(mode.topic,themeIds);
+    eligible=themedAll.filter(q=>!seen.includes(q.id));
     if(eligible.length<mode.questionLimit){
-      const themeIds=new Set(themedAll.map(q=>q.id));
-      const preserved=recent().filter(id=>!themeIds.has(id));
-      try{localStorage.setItem(RECENT,JSON.stringify(preserved.slice(-2000)))}catch{}
-      eligible=themedAll.slice();
+      const keep=seen.slice(-Math.min(mode.questionLimit,seen.length));
+      setThemeRecent(mode.topic,keep);
+      seen=keep;
+      eligible=themedAll.filter(q=>!seen.includes(q.id));
     }
   }
   eligible=shuffle(eligible);
@@ -950,7 +972,7 @@ function botClose(q){
   const correct=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);
   botHistory.push({q,me:botMyChoice,opp:botChoice,answerSeconds:botMyAnswerSeconds,opponentAnswerSeconds:botOppAnswerSeconds});
   $('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));
-  remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();
+  remember([q.id]);rememberThemeQuestion(q.topic,q.id);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();
   const mode=selectedMpGameMode(),nextPos=botPos+1,raceDone=mode.winTarget&&(botMe>=mode.winTarget||botScore>=mode.winTarget),setDone=nextPos>=Math.min(mode.questionLimit,botQuestions.length);
   if(raceDone||setDone){
     $('timer').textContent='0';$('status').textContent=correct;
