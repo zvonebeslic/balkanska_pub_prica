@@ -7325,6 +7325,7 @@ if (!supabaseClient) {
     initThemedUI();
     initAbcUI();
     initQuizCategoryAccordion();
+    initQuizSelectionFocus();
     initButtons();
     initAtomicJokerToolkit();
     await loadQuestionsFromJson();
@@ -7397,6 +7398,38 @@ if (!supabaseClient) {
     document.body.classList.add("quiz-playing");
     document.body.classList.remove("keyboard-active", "quiz-results-visible");
     grid.scrollTop = 0;
+  }
+
+  function focusQuizCardAfterSelection() {
+    const card = document.getElementById("quiz-card");
+    if (!card) return;
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const header = document.querySelector(".site-header");
+        const headerBottom = header?.getBoundingClientRect().bottom || 0;
+        const cardTop = card.getBoundingClientRect().top;
+        const targetY = Math.max(0, window.scrollY + cardTop - headerBottom - 8);
+        window.scrollTo({ top: targetY, behavior: "smooth" });
+      });
+    });
+  }
+
+  function initQuizSelectionFocus() {
+    if (document.documentElement.dataset.quizSelectionFocusReady === "true") return;
+    document.documentElement.dataset.quizSelectionFocusReady = "true";
+
+    document.addEventListener("click", (event) => {
+      const target = event.target?.closest?.(
+        ".mode-pill[data-mode], .themed-topic[data-topic], .abc-option, #daily30-current-choice, .daily30-day"
+      );
+      if (!target) return;
+
+      if (target.matches(".mode-pill[data-mode='daily30']")) return;
+      if (target.matches(".daily30-day") && target.disabled) return;
+
+      focusQuizCardAfterSelection();
+    });
   }
 
   function keepQuizVisibleAboveKeyboard() {
