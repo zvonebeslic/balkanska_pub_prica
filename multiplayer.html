@@ -1652,7 +1652,7 @@ async function initMultiplayerPage(){
 void initMultiplayerPage();
 window.addEventListener('storage',e=>{if(e.key===MP_GUEST_IDENTITY||e.key==='kviztogo_username')void loadMpIdentity().then(()=>syncLiveMultiplayerName(myName()))});
 window.addEventListener('pagehide',()=>{
-  if(botMode&&botSessionId){
+  if(botMode&&botSessionId&&lastEndProcessedMatchKey!==botSessionId){
     savePendingBotForfeit();
     return
   }
