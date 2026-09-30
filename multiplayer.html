@@ -75,6 +75,7 @@
 .name-modal-card h2{font-size:1rem;margin:.1rem 0 .4rem}.name-modal-card p{margin:.15rem 0 .75rem;color:var(--muted);font-size:.76rem;line-height:1.45}
 .name-modal-input{width:100%;min-height:46px;border:1px solid var(--border);border-radius:12px;background:#101b2d;color:#fff;padding:.65rem .75rem;font-size:16px;outline:none}
 .name-modal-message{min-height:1.2rem;margin:.45rem 0;color:var(--muted);font-size:.74rem}.name-modal-message.error{color:#fca5a5}.name-modal-actions{display:flex;justify-content:flex-end;gap:.45rem;margin-top:.55rem}
+.active-quizzes{max-width:680px;margin:1rem auto 0;padding:.8rem;border:1px solid rgba(47,128,255,.34);border-radius:18px;background:rgba(16,27,45,.74)}.active-quizzes h2{margin:0;font-size:.92rem}.active-quizzes-copy{margin:.22rem 0 .7rem;color:var(--muted);font-size:.68rem;line-height:1.4}.active-quizzes-list{display:grid;gap:.5rem}.active-quiz-empty{padding:.65rem;border:1px dashed rgba(148,163,184,.24);border-radius:12px;color:var(--muted);font-size:.72rem;text-align:center}.active-quiz-card{border:1px solid rgba(47,128,255,.35);border-radius:14px;background:rgba(255,255,255,.045);padding:.65rem}.active-quiz-top{display:flex;justify-content:space-between;gap:.5rem;align-items:flex-start}.active-quiz-title{font-size:.78rem;font-weight:950;color:#fff}.active-quiz-status{font-size:.64rem;font-weight:850;color:#9fc2ff;text-align:right}.active-quiz-meta{margin-top:.28rem;color:var(--muted);font-size:.67rem;line-height:1.4}.active-quiz-actions{display:flex;gap:.38rem;flex-wrap:wrap;margin-top:.55rem}.active-quiz-actions button{min-height:34px;border-radius:999px;padding:.34rem .68rem;font-size:.68rem;font-weight:900}.active-resume{border:1px solid rgba(34,197,94,.65);background:rgba(34,197,94,.16);color:#fff}.active-share{border:1px solid rgba(47,128,255,.65);background:rgba(47,128,255,.15);color:#fff}.active-remove{border:1px solid rgba(239,68,68,.48);background:rgba(239,68,68,.1);color:#ffd4d4}.later-btn{border:1px solid rgba(250,204,21,.58);background:rgba(250,204,21,.12);color:#fff;border-radius:999px;padding:.55rem .9rem;font-weight:850}.invite-later-modal{position:fixed;inset:0;z-index:10030;background:rgba(0,0,0,.68);display:flex;align-items:center;justify-content:center;padding:1rem}.invite-later-card{width:min(92vw,430px);background:#162235;border:1px solid rgba(250,204,21,.58);border-radius:20px;padding:1rem;box-shadow:0 20px 70px rgba(0,0,0,.5)}.invite-later-card h2{font-size:1rem;margin:.1rem 0 .45rem}.invite-later-card p{margin:.1rem 0 .8rem;color:var(--muted);font-size:.77rem;line-height:1.5}
 @media(max-width:760px){.site-header{grid-template-columns:46px 1fr 46px;padding:.55rem .65rem}.brand-logo{font-size:clamp(2rem,12vw,3.1rem)}.flag-toggle{width:39px;height:39px}.back-map-row{width:calc(100% - .5rem);margin-top:.55rem}.back-map-row .nav-btn{min-height:38px;padding:.42rem .78rem;font-size:.8rem}.wrap{width:calc(100% - .5rem);margin:.5rem auto 1.25rem}.grid{display:block;width:100%}.grid>div,.grid>aside,.card,.history,.end{width:100%;max-width:none}.history{margin-top:.75rem}.versus{grid-template-columns:1fr 38px 1fr;width:100%}.history-head{align-items:flex-start;flex-direction:column}}
 
 </style>
@@ -152,6 +153,7 @@
           <div id="endText"></div>
           <div class="actions">
             <button class="primary" style="width:auto;margin:0" id="again" type="button" data-i18n="rematch">Revanš</button>
+            <button class="later-btn" id="later" type="button" data-i18n="continueLater">Nastavi kasnije</button>
             <button class="secondary" id="newOpp" type="button" data-i18n="findOpponent">Traži protivnika</button>
           </div>
         </div>
@@ -174,6 +176,12 @@
     <strong id="mp-identity-name">…</strong>
     <button class="identity-change" id="mp-change-name" type="button" data-i18n="changeName">Promijeni ime</button>
   </div>
+
+  <section class="active-quizzes" id="active-quizzes-section">
+    <h2 data-i18n="activeQuizzes">Aktivni kvizovi</h2>
+    <p class="active-quizzes-copy" data-i18n="activeQuizzesCopy">Spremljene pozivnice i revanši ostaju ovdje dok ih ne nastavite ili uklonite.</p>
+    <div class="active-quizzes-list" id="active-quizzes-list"></div>
+  </section>
 </main>
 
 <div class="name-modal hidden" id="mp-name-modal" role="dialog" aria-modal="true" aria-labelledby="mp-name-title">
@@ -185,6 +193,17 @@
     <div class="name-modal-actions">
       <button class="secondary" id="mp-name-cancel" type="button" data-i18n="cancel">Odustani</button>
       <button class="primary" style="width:auto;margin:0" id="mp-name-save" type="button" data-i18n="saveName">Spremi</button>
+    </div>
+  </div>
+</div>
+
+<div class="invite-later-modal hidden" id="invite-later-modal" role="dialog" aria-modal="true" aria-labelledby="invite-later-title">
+  <div class="invite-later-card">
+    <h2 id="invite-later-title" data-i18n="inviteWaitTitle">Predugo čekaš?</h2>
+    <p data-i18n="inviteWaitCopy">Spremi ovaj poziv u Aktivne kvizove i igraj s drugima dok se prijatelj ne priključi.</p>
+    <div class="name-modal-actions">
+      <button class="secondary" id="invite-wait-more" type="button" data-i18n="waitLonger">Nastavi čekati</button>
+      <button class="primary" style="width:auto;margin:0" id="invite-save-later" type="button" data-i18n="continueLater">Nastavi kasnije</button>
     </div>
   </div>
 </div>
@@ -202,7 +221,7 @@ meReady:'Spreman',opponentReady:'Protivnik je spreman.',opponentUnknown:'?',oppo
 aiNote:'Ako naš sustav ne pronađe stvarnog protivnika, u igru se uključuje AI generirani protivnik kako bi se izbjeglo duže čekanje.',
 waitingStart:'Čekamo početak…',historyTitle:'Rezultati & povijest',downloadHistory:'📥 Preuzmi cijelu odigranu povijest',
 downloadHistoryNote:'Sva pitanja i odgovori iz trenutačne partije spremit će se u jednu dugu PNG sliku.',shareResult:'📤 Podijeli rezultat',
-rematch:'Revanš',acceptRematch:'Prihvati revanš',rematchRequesting:'Šaljem revanš…',rematchWaiting:'Čekamo protivnika…',rematchError:'Zahtjev za revanš nije poslan. Pokušaj ponovno.',newOpponent:'Novi protivnik',backQuiz:'Natrag',
+rematch:'Revanš',acceptRematch:'Prihvati revanš',rematchRequesting:'Šaljem revanš…',rematchWaiting:'Čekamo protivnika…',rematchError:'Zahtjev za revanš nije poslan. Pokušaj ponovno.',continueLater:'Nastavi kasnije',newOpponent:'Novi protivnik',backQuiz:'Natrag',activeQuizzes:'Aktivni kvizovi',activeQuizzesCopy:'Spremljene pozivnice i revanši ostaju ovdje dok ih ne nastavite ili uklonite.',activeEmpty:'Trenutačno nema aktivnih kvizova.',activeInvite:'Poziv prijatelju',activeRematch:'Revanš',activeBot:'AI revanš',activeWaitingFriend:'Čeka prijatelja',activeFriendReady:'Prijatelj se priključio',activeWaitingOpponent:'Čeka protivnika',activeReady:'Spremno za nastavak',activeBusy:'Protivnik je trenutno u drugom meču',activeSeries:'Ukupno {me}:{opp}',activeContinue:'Nastavi',activeRemove:'Ukloni',activeShare:'Podijeli link',savedForLater:'Kviz je spremljen u Aktivne kvizove.',activeJoined:'Pozivnica je spremljena. Možeš igrati druge mečeve dok prijatelj ne bude spreman.',inviteWaitTitle:'Predugo čekaš?',inviteWaitCopy:'Spremi ovaj poziv u Aktivne kvizove i igraj s drugima dok se prijatelj ne priključi.',waitLonger:'Nastavi čekati',
 playingAs:'Igraš kao',changeName:'Promijeni ime',changeNameTitle:'Promijeni ime',chooseNameTitle:'Odaberi ime za igru',changeNameHelp:'Ovo ime koristit će se na KvizToGo kvizovima i ljestvicama.',chooseNameHelp:'Prije igranja odaberi ime. Mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.',cancel:'Odustani',saveName:'Spremi',nameUnavailable:'To ime nije dostupno.',nameSaved:'Ime je spremljeno.',nameInvalidGuest:'Ime mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.',nameInvalidUser:'Ime mora imati 3–20 znakova i smije sadržavati samo slova i brojeve.',nameSaveError:'Promjena imena nije uspjela.',
 searching:'Tražimo protivnika…',queue:'U redu čekanja',searchButton:'Tražim…',checkingQueue:'provjeravamo red čekanja',searchError:'Greška pri spajanju. Pokušaj ponovno.',
 preparingInvite:'Pripremam poveznicu…',waiting:'Čekamo…',friendNotJoined:'prijatelj još nije ušao',preparingInviteMeta:'Pripremamo pozivnicu',creatingPrivate:'Kreiramo privatni 1 na 1…',
@@ -239,7 +258,7 @@ meReady:'Ready',opponentReady:'Opponent is ready.',opponentUnknown:'?',opponentN
 aiNote:'If our system cannot find a real opponent, an AI-generated opponent joins the game so you do not have to wait too long.',
 waitingStart:'Waiting to start…',historyTitle:'Results & history',downloadHistory:'📥 Download full played history',
 downloadHistoryNote:'All questions and answers from the current match will be saved as one long PNG image.',shareResult:'📤 Share result',
-rematch:'Rematch',acceptRematch:'Accept rematch',rematchRequesting:'Requesting rematch…',rematchWaiting:'Waiting for opponent…',rematchError:'The rematch request could not be sent. Try again.',newOpponent:'New opponent',backQuiz:'Back',
+rematch:'Rematch',acceptRematch:'Accept rematch',rematchRequesting:'Requesting rematch…',rematchWaiting:'Waiting for opponent…',rematchError:'The rematch request could not be sent. Try again.',continueLater:'Continue later',newOpponent:'New opponent',backQuiz:'Back',activeQuizzes:'Active quizzes',activeQuizzesCopy:'Saved invitations and rematches stay here until you continue or remove them.',activeEmpty:'There are no active quizzes right now.',activeInvite:'Friend invite',activeRematch:'Rematch',activeBot:'AI rematch',activeWaitingFriend:'Waiting for friend',activeFriendReady:'Friend joined',activeWaitingOpponent:'Waiting for opponent',activeReady:'Ready to continue',activeBusy:'Opponent is currently in another match',activeSeries:'Overall {me}:{opp}',activeContinue:'Continue',activeRemove:'Remove',activeShare:'Share link',savedForLater:'Quiz saved to Active quizzes.',activeJoined:'The invitation is saved. You can play other matches while your friend gets ready.',inviteWaitTitle:'Waiting too long?',inviteWaitCopy:'Save this invite to Active quizzes and play others while your friend joins.',waitLonger:'Keep waiting',
 playingAs:'Playing as',changeName:'Change name',changeNameTitle:'Change name',chooseNameTitle:'Choose your player name',changeNameHelp:'This name will be used across KvizToGo quizzes and leaderboards.',chooseNameHelp:'Choose a name before playing. Use 3–20 characters, letters and numbers only.',cancel:'Cancel',saveName:'Save',nameUnavailable:'That name is unavailable.',nameSaved:'Name saved.',nameInvalidGuest:'Use 3–20 characters, letters and numbers only.',nameInvalidUser:'Use 3–20 characters, letters and numbers only.',nameSaveError:'Name change failed.',
 searching:'Finding an opponent…',queue:'In matchmaking queue',searchButton:'Searching…',checkingQueue:'checking the matchmaking queue',searchError:'Could not connect. Try again.',
 preparingInvite:'Preparing link…',waiting:'Waiting…',friendNotJoined:'your friend has not joined yet',preparingInviteMeta:'Preparing invitation',creatingPrivate:'Creating a private 1v1…',
