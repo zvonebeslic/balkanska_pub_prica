@@ -825,13 +825,17 @@ async function prepareBot(){
   const profile=MP_BOT_PROFILES[Math.floor(Math.random()*MP_BOT_PROFILES.length)];bot={id:profile.id,name:profile.alias,leaderName:profile.leaderName,skill:profile.skill,cons:profile.cons,bias:profile.bias,base:profile.base,accuracy:mpBotAccuracy(profile),answerDelay:()=>mpBotDelay(profile)};
   $('oppName').textContent=bot.name;$('oppMeta').textContent=t('ready');$('meMeta').textContent=t('waitingYourStart');$('search').innerHTML=esc(t('opponentFound'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('preparingQuestions');$('find').disabled=true;$('friend').disabled=true;
   botQuestions=await loadBotQuestions();botPreparing=false;
-  if(botQuestions.length<10){$('search').textContent=t('questionsLoadError');return}
+  if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10)){$('search').textContent=t('questionsLoadError');return}
   $('find').textContent=t('startQuiz');$('find').disabled=false;$('find').onclick=beginBotMatch
 }
 async function loadBotQuestions(){
   const files=['AmerickiPredsjednici','AntickiRim','Film','FloraFauna','Gaming','Glazba','Knjizevnost','Moreplovci','Nogomet','Sport','Svastara','Zemljopis','Znanost','povijest','questions-blitz'];let all=[];
   for(let f of files){try{let r=await fetch('ABC%20pitanja/'+encodeURIComponent(f)+'.json',{cache:'no-store'}),j=await r.json(),a=Array.isArray(j)?j:(j.questions||[]);for(let x of a){if(x?.question&&x.answers&&!Array.isArray(x.answers)&&['A','B','C'].includes(String(x.correct_answer).toUpperCase()))all.push({id:hash((x.topic||f)+'|'+x.question),topic:x.topic||f,question:x.question,correctKey:String(x.correct_answer).toUpperCase(),answers:['A','B','C'].map(k=>({key:k,text:x.answers[k]}))})}}catch{}}
-  let ban=new Set(recent()),eligible=shuffle(all.filter(q=>!ban.has(q.id)));return eligible.slice(0,10)
+  const mode=selectedMpGameMode(),ban=new Set(recent());
+  let eligible=all.filter(q=>!ban.has(q.id));
+  if(mode.topic)eligible=eligible.filter(q=>String(q.topic||'')===mode.topic);
+  eligible=shuffle(eligible);
+  return eligible.slice(0,mode.questionLimit)
 }
 function hash(s){let h=2166136261;for(let ch of s.toLowerCase()){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return(h>>>0).toString(36)}
 function shuffle(a){a=a.slice();for(let i=a.length-1;i;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
@@ -843,7 +847,7 @@ function beginBotMatch(){
 function renderBot(){
   clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);botMyChoice=botChoice=null;botMyAnswerSeconds=botOppAnswerSeconds=null;botMeAnswered=botOppAnswered=false;let q=botQuestions[botPos];
   botQuestionSeconds=questionSeconds(q);const durationMs=botQuestionSeconds*1000;
-  $('meScore').textContent=botMe;$('oppScore').textContent=botScore;$('round').textContent=(botPos+1)+' / 10';$('topic').textContent=q.topic;$('question').textContent=q.question;$('answers').innerHTML='';
+  $('meScore').textContent=botMe;$('oppScore').textContent=botScore;$('round').textContent=mpRoundLabel(botPos,selectedMpGameMode().questionLimit,selectedMpGameMode().winTarget);$('question').textContent=q.question;$('answers').innerHTML='';
   q.answers.forEach(a=>{let b=document.createElement('button');b.className='answer';b.innerHTML='<b>'+a.key+'.</b> '+esc(a.text);b.onclick=()=>botUserAnswer(a.key,b);$('answers').appendChild(b)});
   $('status').textContent=t('opponentThinking',{opponent:bot.name});botStart=performance.now();clearInterval(tickTimer);
   const draw=()=>{$('timer').textContent=String(Math.max(0,Math.ceil((durationMs-(performance.now()-botStart))/1000)))};draw();tickTimer=setInterval(draw,200);
@@ -851,7 +855,7 @@ function renderBot(){
 }
 function botUserAnswer(k,b){if(botMeAnswered)return;botMeAnswered=true;botMyChoice=k;botMyAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let q=botQuestions[botPos];if(k===q.correctKey){botMe++;b.classList.add('good');$('meScore').textContent=botMe;botClose(q)}else{b.classList.add('bad');b.disabled=true;$('status').textContent=t('wrongOpponentCan');if(botOppAnswered)botClose(q)}}
 function botAnswer(q){if(botOppAnswered)return;botOppAnswered=true;botOppAnswerSeconds=Math.min(botQuestionSeconds,Math.max(0,(performance.now()-botStart)/1000));let ok=Math.random()<bot.accuracy;botChoice=ok?q.correctKey:shuffle(q.answers.filter(a=>a.key!==q.correctKey))[0].key;if(ok){botScore++;$('oppScore').textContent=botScore;botClose(q)}else if(botMeAnswered)botClose(q);else $('status').textContent=t('opponentWrong',{opponent:bot.name})}
-function botClose(q){clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});$('timer').textContent='0';$('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);botHistory.push({q,me:botMyChoice,opp:botChoice,answerSeconds:botMyAnswerSeconds,opponentAnswerSeconds:botOppAnswerSeconds});$('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();setTimeout(()=>{botPos++;if(botPos>=10)showEnd(botMe,botScore);else renderBot()},2000)}
+function botClose(q){clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);document.querySelectorAll('.answer').forEach((b,i)=>{b.disabled=true;if(q.answers[i].key===q.correctKey)b.classList.add('good')});$('timer').textContent='0';$('status').textContent=t('correctAnswer')+' '+q.correctKey+'. '+answerText(q,q.correctKey);botHistory.push({q,me:botMyChoice,opp:botChoice,answerSeconds:botMyAnswerSeconds,opponentAnswerSeconds:botOppAnswerSeconds});$('history').innerHTML='';botHistory.slice().reverse().forEach((x,ri)=>addHist(x.q,x.me,x.opp,botHistory.length-ri,bot.name));remember([q.id]);updateHistoryActionButtons();void syncMultiplayerTrackedAnswers();setTimeout(()=>{botPos++;const mode=selectedMpGameMode(),raceDone=mode.winTarget&&(botMe>=mode.winTarget||botScore>=mode.winTarget),setDone=botPos>=Math.min(mode.questionLimit,botQuestions.length);if(raceDone||setDone)showEnd(botMe,botScore);else renderBot()},2000)}
 
 
 function currentHistoryEntries(){
@@ -1008,7 +1012,9 @@ async function continueMultiplayerEntry(){
 }
 async function initMultiplayerPage(){
   $('find').onclick=findOpponent;$('friend').onclick=createFriendInvite;
-  const langBtn=$('language-cycle-btn');if(langBtn)langBtn.onclick=()=>applyLanguage(currentLang==='hr'?'en':'hr');applyLanguage(currentLang);
+  $('mode-picker-btn').onclick=toggleMpModePicker;
+  document.addEventListener('click',e=>{if(!e.target.closest('#mode-picker-wrap'))closeMpModePicker()});
+  const langBtn=$('language-cycle-btn');if(langBtn)langBtn.onclick=()=>{applyLanguage(currentLang==='hr'?'en':'hr');renderMpModePicker()};applyLanguage(currentLang);renderMpModePicker();
   $('again').onclick=requestRematch;$('newOpp').onclick=async()=>{await leave();findOpponent()};
   $('mp-download-history').onclick=downloadFullHistory;$('mp-share-result').onclick=shareCurrentResult;updateHistoryActionButtons();
   $('mp-change-name').onclick=()=>openMpNameModal(false);$('mp-name-cancel').onclick=closeMpNameModal;$('mp-name-save').onclick=saveMpIdentityName;
