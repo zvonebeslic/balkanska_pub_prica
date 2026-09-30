@@ -416,6 +416,49 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
   }
 }
 
+const MP_GAME_MODE_KEY='kviztogo_mp_game_mode_v1';
+const MP_GAME_MODES=[
+  {id:'q10',kind:'questions',questionLimit:10,winTarget:null,topic:null,hr:'10 pitanja',en:'10 questions'},
+  {id:'q20',kind:'questions',questionLimit:20,winTarget:null,topic:null,hr:'20 pitanja',en:'20 questions'},
+  {id:'q30',kind:'questions',questionLimit:30,winTarget:null,topic:null,hr:'30 pitanja',en:'30 questions'},
+  {id:'r5',kind:'race',questionLimit:100,winTarget:5,topic:null,hr:'Tko prvi do 5',en:'First to 5'},
+  {id:'r10',kind:'race',questionLimit:100,winTarget:10,topic:null,hr:'Tko prvi do 10',en:'First to 10'},
+  {id:'r15',kind:'race',questionLimit:100,winTarget:15,topic:null,hr:'Tko prvi do 15',en:'First to 15'},
+  {id:'t-rim',kind:'theme',questionLimit:10,winTarget:null,topic:'AntickiRim',hr:'Antički Rim',en:'Ancient Rome'},
+  {id:'t-predsjednici',kind:'theme',questionLimit:10,winTarget:null,topic:'AmerickiPredsjednici',hr:'Američki predsjednici',en:'U.S. Presidents'},
+  {id:'t-zemljopis',kind:'theme',questionLimit:10,winTarget:null,topic:'Zemljopis',hr:'Zemljopis',en:'Geography'},
+  {id:'t-nogomet',kind:'theme',questionLimit:10,winTarget:null,topic:'Nogomet',hr:'Nogomet',en:'Football'},
+  {id:'t-flora',kind:'theme',questionLimit:10,winTarget:null,topic:'FloraFauna',hr:'Flora i fauna',en:'Flora & Fauna'},
+  {id:'t-film',kind:'theme',questionLimit:10,winTarget:null,topic:'Film',hr:'Film',en:'Film'},
+  {id:'t-znanost',kind:'theme',questionLimit:10,winTarget:null,topic:'Znanost',hr:'Znanost',en:'Science'},
+  {id:'t-glazba',kind:'theme',questionLimit:10,winTarget:null,topic:'Glazba',hr:'Glazba',en:'Music'},
+  {id:'t-knjizevnost',kind:'theme',questionLimit:10,winTarget:null,topic:'Književnost',hr:'Književnost',en:'Literature'},
+  {id:'t-povijest',kind:'theme',questionLimit:10,winTarget:null,topic:'Povijest',hr:'Povijest',en:'History'},
+  {id:'t-gaming',kind:'theme',questionLimit:10,winTarget:null,topic:'Gaming',hr:'Svijet Gaminga',en:'Gaming'},
+  {id:'t-moreplovci',kind:'theme',questionLimit:10,winTarget:null,topic:'Moreplovci',hr:'Moreplovci',en:'Seafarers'},
+  {id:'t-sport',kind:'theme',questionLimit:10,winTarget:null,topic:'Sport',hr:'Sport',en:'Sport'}
+];
+let selectedMpGameModeId=(()=>{try{return localStorage.getItem(MP_GAME_MODE_KEY)||'q10'}catch{return'q10'}})();
+function selectedMpGameMode(){return MP_GAME_MODES.find(x=>x.id===selectedMpGameModeId)||MP_GAME_MODES[0]}
+function mpModeLabel(mode=selectedMpGameMode()){return currentLang==='en'?mode.en:mode.hr}
+function mpGamePayload(){const m=selectedMpGameMode();return{question_limit:m.questionLimit,win_target:m.winTarget,topic:m.topic}}
+function setMpGameMode(id,close=true){const m=MP_GAME_MODES.find(x=>x.id===id);if(!m)return;selectedMpGameModeId=m.id;try{localStorage.setItem(MP_GAME_MODE_KEY,m.id)}catch{}renderMpModePicker();if(close)closeMpModePicker()}
+function closeMpModePicker(){const p=$('mode-picker-panel'),b=$('mode-picker-btn');if(p)p.classList.add('hidden');if(b)b.setAttribute('aria-expanded','false')}
+function toggleMpModePicker(){const p=$('mode-picker-panel'),b=$('mode-picker-btn');if(!p||!b)return;const open=p.classList.contains('hidden');p.classList.toggle('hidden',!open);b.setAttribute('aria-expanded',String(open))}
+function renderMpModePicker(){
+  const sel=$('mode-picker-selected');if(sel)sel.textContent=mpModeLabel();
+  const groups=[['mode-standard-grid',MP_GAME_MODES.filter(x=>x.kind==='questions')],['mode-race-grid',MP_GAME_MODES.filter(x=>x.kind==='race')],['mode-theme-grid',MP_GAME_MODES.filter(x=>x.kind==='theme')]];
+  for(const [id,items] of groups){const root=$(id);if(!root)continue;root.innerHTML='';for(const m of items){const b=document.createElement('button');b.type='button';b.className='mode-option'+(m.id===selectedMpGameModeId?' selected':'');b.textContent=mpModeLabel(m);b.onclick=()=>setMpGameMode(m.id,true);root.appendChild(b)}}
+}
+function syncMpModeFromState(s){
+  if(!s)return;
+  let found=null;
+  if(s.topic_filter)found=MP_GAME_MODES.find(x=>x.kind==='theme'&&x.topic===s.topic_filter);
+  else if(s.win_target)found=MP_GAME_MODES.find(x=>x.kind==='race'&&x.winTarget===Number(s.win_target));
+  else if(s.question_limit)found=MP_GAME_MODES.find(x=>x.kind==='questions'&&x.questionLimit===Number(s.question_limit));
+  if(found){selectedMpGameModeId=found.id;renderMpModePicker()}
+}
+function mpRoundLabel(round,limit,winTarget){return winTarget?(currentLang==='en'?'Question ':'Pitanje ')+(Number(round||0)+1):(Number(round||0)+1)+' / '+Number(limit||10)}
 let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,botPreparing=false,botSessionId=null,historyRenderSignature='',lastEndProcessedMatchKey=null;const questionVotes=new Map();
 let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
 const MP_INVITE_MATCH_KEY='kviztogo_mp_invite_match_v1';
