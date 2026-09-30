@@ -1,231 +1,351 @@
 {
   "version": 2,
   "date": "2026-10-28",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-d0aee176",
+      "id": "daily-90078e1c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Na koje more, Gruzija ima izlaz?",
+      "answers": [
+        "Crno More",
+        "Crno",
+        "Black",
+        "Blek",
+        "Černo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d9b21180",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Tko je jedinstvo rimskog carstva nastojao je učvrstiti i uvođenjem kulta nepobjedivoga boga Sunca (Sol invictus), a sebe dao nazivati gospodinom i bogom (dominus et deus)?",
+      "answers": [
+        "Aurelijan",
+        "Aurelianus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a6aaa350",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "2015.g. je osnovana gaming platforma koja svoje ime dijelom duguje kojoj rimskoj božici svađe i razdora?",
+      "answers": [
+        "Diskordija",
+        "Diskordiji",
+        "Discordia",
+        "Discordie"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-99645c97",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Kako se zove znameniti most preko Neretve u Mostaru, izgrađen u 16. stoljeću, srušen 1993.g. i kasnije obnovljen?",
+      "question": "Složena atmosferska optička varka koja može stvoriti privid izduženih ili lebdećih objekata iznad horizonta nosi ime koje čarobnice iz arturijanskih legendi?",
       "answers": [
-        "Stari most",
-        "Old Bridge",
-        "Old Bridž"
+        "Fatamorgana",
+        "Fata Morgana"
       ],
       "image": null
     },
     {
-      "id": "daily-7eb6c885",
+      "id": "daily-47618745",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "U kojoj se državi odigralo Svjetsko nogometno prvenstvo 2006.g.?",
+      "question": "Svoja 2 od ukupno 3 Ballon d'Ora, Johan Cruyff je osvojio igrajući za koji klub?",
       "answers": [
-        "Njemačkoj",
-        "Njemačka",
-        "Germany",
-        "Germanys",
-        "Džermani",
-        "Džermanis",
-        "De",
-        "Ger",
-        "Deutschland",
-        "Deutschlands",
-        "Dojčland",
-        "Dojčlands"
+        "Barcelonu",
+        "Barcelona"
       ],
       "image": null
     },
     {
-      "id": "daily-a89a7f09",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je britanski pomorac 1718.g. stigao u Nassau kao kraljevski guverner Bahama te pomilovanjima i uporabom sile okončao vlast tamošnje Gusarske republike?",
-      "answers": [
-        "Woodes Rogers",
-        "Woods Rogers",
-        "Vuds Rodžers",
-        "Rogers",
-        "Rodžers"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8372cf86",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Američka televizijska serija 'Prijatelji' (Friends) se na NBC-u prikazivala od 1994. do koje godine?",
-      "answers": [
-        "2004.",
-        "Dvije tisuće četvrta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9f2b1429",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Film",
-      "question": "U filmu 'Sedam', koji od sedam smrtnih grijeha dolazi posljednji?",
-      "answers": [
-        "Srditost",
-        "Srdžba",
-        "Bijes",
-        "Gnjev",
-        "Wrath",
-        "Vrat"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2c8be514",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kako se zove zbirka prešanog sušenog bilja?",
-      "answers": [
-        "Herbarij",
-        "Herbarium"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-83fdce75",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "U 'Shoppingu' od 7,2mil dolara, amerikanci su od rusa kupili koji teritorij?",
-      "answers": [
-        "Aljasku",
-        "Alasku",
-        "Aljaska",
-        "Alaska"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c7ee04f9",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koji je film prvi u povijesti zaradio više od 2 milijarde dolara?",
-      "answers": [
-        "Avatar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3e16800f",
+      "id": "daily-702fc443",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Tjekom Stogodišnjeg rata, koji je bretonski vojskovođa kao glavni zapovjednik Karla V. Mudrog godinama vodio uspješan rat protiv Engleza i nakon smrti dobio iznimnu čast pokopa u kraljevskoj bazilici Saint-Denis?",
+      "question": "Koja je država tijekom ofenzive na Sommi 1916.g. prvi put u povijesti poslala tenkove u borbu, pokušavajući njima prijeći rovove i bodljikavu žicu?",
       "answers": [
-        "Bertrand du Guesclin",
-        "Bertren du Geklan",
-        "Du Guesclin",
-        "Du Geklan",
-        "Geklan",
-        "Guesclin",
-        "Gesklin",
-        "Bertren du Gesklin"
-      ],
-      "image": null,
-      "rarity": "platinum"
-    },
-    {
-      "id": "daily-b55d97e5",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Pored koje rijeke su odrastali Tom Sawyer i Huckleberry Finn?",
-      "answers": [
-        "Mississippi",
-        "Misisipi",
-        "Misisipija"
+        "Velika Britanija",
+        "Britanija",
+        "Brit",
+        "GBR",
+        "VB",
+        "Britanci",
+        "Britons",
+        "Great Britain",
+        "Grejt Britani",
+        "Britannis",
+        "Britani"
       ],
       "image": null
     },
     {
-      "id": "daily-c1067069",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Na EURU-u se 1968.g. pobjednik odlučivao u dvije utakmice. Prva finalna je završila 1-1 , a druga, ponovljena za 2 dana je završila pobjedom Italije od 2-0 protiv koje reprezentacije?",
-      "answers": [
-        "Jugoslavije",
-        "Jugoslavija",
-        "Yugoslavia",
-        "Yugoslavie"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5e390b1e",
+      "id": "daily-142d3de0",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove Microsoftova igraća konzola koja se na tržištu prvi put pojavila 2001.g.?",
+      "question": "Uz protuteroriste koja još suprotstavljena strana čini osnovu većine mečeva u serijalu videoigara Counter-Strike?",
       "answers": [
-        "Xbox",
-        "X Box",
-        "Iks Boks",
-        "X Boks",
-        "Iksboks",
-        "Iksbox",
-        "Iks box"
+        "Teroristi",
+        "Terrorists",
+        "Terorists"
       ],
       "image": null
     },
     {
-      "id": "daily-3dfb39ac",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koje pasmine je bio pas Hachiko?",
-      "answers": [
-        "Akita",
-        "Akita Inu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d83bdc00",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Koji je bend 1991. objavio album 'Nevermind'?",
-      "answers": [
-        "Nirvana"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-33681da4",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zvala posljednja igraća konzola koju je Sega proizvela prije povlačenja iz proizvodnje konzola?",
-      "answers": [
-        "Dreamcast",
-        "Drimkast",
-        "Drimkest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2d42a25e",
+      "id": "daily-40a61245",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koji je znanstvenik otkrio kemijske elemente barij i kalcij?",
+      "question": "U kojem je glavnom gradu rođen nobelovac Niels Bohr?",
+      "answers": [
+        "Kopenhagenu",
+        "Kopenhagen",
+        "Copenhagenu",
+        "Copenhagen",
+        "Kobenhavn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-02e214ec",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Buran život kojeg bi španjolskog književnika mogao poslužiti za proučavanje čovjeka na razmeđu dviju epoha, renesanse i baroka?",
+      "answers": [
+        "Miguela de Cervantesa Saavedre",
+        "Miguel de Cervantes Saavedra",
+        "Miguel de Cervantes Savedra",
+        "Cervantes",
+        "Servantes",
+        "Cervantesa",
+        "Servantesa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c53418ad",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Thomas Tuchel je s Chelseom osvojio čak i Ligu Prvaka ali je u tom klubu otkaz dobio nakon 1-0 poraza u LP, od kojeg kluba?",
+      "answers": [
+        "Dinamo Zagreb",
+        "Dinama iz Zagreba",
+        "Dinamo Zagreba",
+        "Dinama Zagreba",
+        "Dinama Zagreb",
+        "Dinama",
+        "Dinamo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-da09c212",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Švedski ratni brod 'Vasa' iz 17-og stoljeća koji se nije uspio proslaviti u ratu jer je potonuo prije nego je preplovio svoju prvu nautičku milju, bio je izgrađen za kojeg švedskog kralja?",
+      "answers": [
+        "Gustav II. Adolf",
+        "Gustava II.",
+        "Gustava 2.",
+        "Gustava drugog",
+        "Gustava 2nd",
+        "Gustavs second",
+        "Gustavs seknd",
+        "Gustav",
+        "Gustava",
+        "Adolf",
+        "Adolfa",
+        "Adolfs",
+        "Gustavs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4835cfbd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Benjamin Franklin je zaslužan za koji izum koji štiti građevine od atmosferskih pojava nastalih električnim pražnjenjem u atmosferi?",
+      "answers": [
+        "Gromobran"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fcf56d09",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kojem je talijanskom gradu rođen i pokopan fizičar Alessandro Volta?",
+      "answers": [
+        "Como",
+        "Comu",
+        "Comou",
+        "Komo",
+        "Komu",
+        "Komou",
+        "Comos",
+        "Komos"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c0dcc020",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Iako mu na semaforu piše 30, tenisač je zapravo osvojio koliko poena?",
+      "answers": [
+        "2",
+        "Dva",
+        "Two",
+        "Tvu",
+        "Tu",
+        "II"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-01ea9539",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je japanska kompanija razvila arkadnu svemirsku pucačinu Gradius?",
+      "answers": [
+        "Konami"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-86ee7e73",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je drugi po veličini otok u sastavu države Filipina?",
+      "answers": [
+        "Mindanao"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-72f250a9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji se američki predsjednik nalazi na novčanici od 2 dolara?",
+      "answers": [
+        "Thomas Jefferson",
+        "Tomas Džeferson",
+        "Jefferson",
+        "Džeferson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5e4bdaa5",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koje se slovo nalazi na karti kapetana Flinta i označava mjesto zakopanog blaga u romanu 'Otok s blagom'?",
+      "answers": [
+        "X",
+        "Iks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3bb9e2cc",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Ulicama kojeg grada fiktivni dječak Emil sa svojim prijateljima postaje detektiv i traga, te na kraju hvata lopova koji mu je ukrao novac?",
+      "answers": [
+        "Berlina",
+        "Berlinom",
+        "Berlin",
+        "Berlins"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-839da518",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "U kojem stoljeću rimski carevi postaju Valerijan i njegov sin Galijen?",
+      "answers": [
+        "3.",
+        "3",
+        "Trećem",
+        "Treće",
+        "3.st",
+        "3 st",
+        "3. Stoljeće",
+        "3 stoljeće",
+        "Tri",
+        "III.",
+        "III",
+        "III stoljeće",
+        "Trećem stoljeću",
+        "Treće stoljeće"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-61279b45",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove duhovni konj kojeg igrač jaše u videoigri Elden Ring?",
+      "answers": [
+        "Torrent",
+        "Torent"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-655359de",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Iz koje države potječe taekwondo?",
+      "answers": [
+        "Južna Koreja",
+        "Južne Koreje",
+        "South Korea",
+        "Saud Korea",
+        "Saud Koree",
+        "Sud Koreje",
+        "Sud Korej",
+        "Južne Kor",
+        "South Kor",
+        "Sud Kor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2defe612",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "11, 12, 19, 20, 38 i dopunski broj 56... ne ne, ovo nisu brojevi sa lota već atomski brojevi kemijskih elemenata koje je otkrio koji čuveni britanac?",
       "answers": [
         "Humphry Davy",
         "Hampri Dejvi",
@@ -236,208 +356,106 @@
       "image": null
     },
     {
-      "id": "daily-8a717404",
+      "id": "daily-e97c817d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koji je glavni grad Bangladeša?",
+      "topic": "Sport",
+      "question": "Kako se zvao 160 cm visoki razigravač koji je unatoč visini proveo 14 sezona među NBA divovima?",
       "answers": [
-        "Dhaka",
-        "Dacca",
-        "Daka"
+        "Muggsy Bogues",
+        "Mugsi Bogus",
+        "Bogues",
+        "Bogus"
       ],
       "image": null
     },
     {
-      "id": "daily-ab556d9a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Koju riječ su stari Rimljani koristili za most?",
-      "answers": [
-        "Pons"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0962a360",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kako se zove drvena posuda u kojoj odležavaju mnoga vina i jaka alkoholna pića?",
-      "answers": [
-        "Bačva",
-        "Bacva",
-        "Barrel",
-        "Cask",
-        "Bure"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7ecedc6a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Kojim Antilima pripada Barbados?",
-      "answers": [
-        "Malim",
-        "Mali",
-        "Menores",
-        "Petites",
-        "Menor",
-        "Malima",
-        "Little",
-        "Lidl"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0ade2337",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kojeg se starog perzijskog proroka i filozofa smatra osnivačem Mazdaizma?",
-      "answers": [
-        "Zaratustra",
-        "Zaratustru",
-        "Zaratuštra",
-        "Zaratuštru",
-        "Zoroaster",
-        "Zoroastera",
-        "Zoroastresa",
-        "Zoroastres",
-        "Zartosht",
-        "Zartost",
-        "Zartoshta",
-        "Zartosta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9baf8b8c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji organski kemijski spoj ima formulu C2H6?",
-      "answers": [
-        "Etan",
-        "Ethane",
-        "Etane",
-        "Ethan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-81e7613a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Padom Sirakuze pod rimsku vlast 212.g. pr. Kr. svoj život tragično završava i koji veliki matematičar?",
-      "answers": [
-        "Arhimed",
-        "Arkhimedes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-22f7312d",
+      "id": "daily-1817de25",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Nekadašnju Hispaniolu danas dijele dvije države. Jedna je Dominikanska Republika, a koja je druga?",
+      "question": "Kako se naziva velika skupina brodova koji zajedno plove ili ratuju?",
       "answers": [
-        "Haiti"
+        "Flota",
+        "Flote",
+        "Flot"
       ],
       "image": null
     },
     {
-      "id": "daily-efac9204",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U kojem je stoljeću Mark Twain napisao svoja najuspješnija književna djela?",
-      "answers": [
-        "19.st",
-        "19-om",
-        "19.",
-        "19",
-        "Devetnaestom",
-        "Devetnestom",
-        "Nineteen",
-        "Najntin",
-        "XIX.",
-        "XIX",
-        "Najtin",
-        "19om",
-        "Devetnaesto",
-        "Devetnaest"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-15547ac9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Tko je bio američki predsjednik za vrijeme trajanja 1. svjetskog rata?",
-      "answers": [
-        "Thomas Woodrow Wilson",
-        "Woodrow Wilson",
-        "Vudrov Vilson",
-        "Wilson",
-        "Vilson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e3d2e0b3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove izmišljeni kalifornijski grad, snažno inspiriran Los Angelesom, koji je glavno mjesto radnje igre Grand Theft Auto V?",
-      "answers": [
-        "Los Santos",
-        "Los Santoš"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2eadd881",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Za koje su glazbalo napisana '4 godišnja doba', ciklus od 4 koncerta Antonija Vivaldija?",
-      "answers": [
-        "Violinu",
-        "Violina",
-        "Viola",
-        "Violu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4068b6de",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "AntickiRim",
-      "question": "Vizigotska, ili Alarikova pljačka Rima dogodila se koje godine?",
-      "answers": [
-        "410.",
-        "CDX",
-        "Četristo desete"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f73edf5b",
+      "id": "daily-4ad7ad20",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Perzijski kralj Darijo I. Veliki je u 5. st. pr. Kr. dao izgraditi veliki kanal za brodove koji je povezao koju rijeku s Crvenim Morem?",
+      "question": "Koje je prezime nosio njemački zapovjednik kojem je pobjeda kod Tannenberga u 1. svjetskom ratu donijela status nacionalnog junaka, a koji će poslije postati i predsjednik Njemačke?",
       "answers": [
-        "Nil",
-        "Nile"
+        "Hindenburg",
+        "Paul Von Hindenburg",
+        "Paul Ludwig Hans Anton von Beneckendorff"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-373112ec",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio jedini američki predsjednik koji se nikada nije ženio?",
+      "answers": [
+        "James Buchanan",
+        "Buchanan",
+        "Džejms Bukenen",
+        "Džejms Bjukenen",
+        "Bukenen",
+        "Bjukenen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fd7a3d66",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je najmanji prost broj?",
+      "answers": [
+        "2",
+        "Dva",
+        "Two",
+        "Ii",
+        "Tu",
+        "Tvu",
+        "Zwei",
+        "Cvaj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a31111c3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja je država, uz Švicarsku, bila domaćin Europskog nogometnog prvenstva 2008.g.?",
+      "answers": [
+        "Austrija",
+        "Osterreich",
+        "Austria",
+        "Austrijanci",
+        "Osterajh",
+        "Aus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-29f25adf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kod kojeg su mjesta Nijemci 1914., nakon ruskog prodora u Istočnu Prusku, okružili i gotovo uništili jednu rusku armiju te ostvarili jednu od svojih najvećih pobjeda na Istočnom bojištu?",
+      "answers": [
+        "Tannenberg",
+        "Tannenberga",
+        "Taneberga",
+        "Taneberg"
       ],
       "image": null
     }

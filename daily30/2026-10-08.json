@@ -1,445 +1,466 @@
 {
   "version": 2,
   "date": "2026-10-08",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-6351e3c4",
+      "id": "daily-dfd8a746",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Koji je ratnik iz serijala videoigara God of War, prepoznatljiv po blijedoj koži i crvenoj tetovaži, u prvim igrama vodio krvave sukobe s bogovima grčke mitologije?",
+      "question": "Koja je kompanija 1986.g. objavila arkadnu videoigru Rampage, u kojoj George, Lizzie i Ralph ruše gradove?",
       "answers": [
-        "Kratos",
-        "Cratos"
+        "Bally Midway",
+        "Bali Midvej",
+        "Midway",
+        "Midvej",
+        "Bally",
+        "Bali"
       ],
       "image": null
     },
     {
-      "id": "daily-04e44837",
+      "id": "daily-b5c3d062",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Film",
-      "question": "U kojoj državi se odvija radnja filma 'Casablanca' iz 1942.?",
+      "topic": "Znanost",
+      "question": "Simbol 'Mg' predstavlja koji kemijski element?",
       "answers": [
-        "Maroko",
-        "Maroku",
-        "Morocco",
-        "Moroko"
+        "Magnezij",
+        "Magnesium",
+        "Magnezijum"
       ],
       "image": null
     },
     {
-      "id": "daily-c7d32944",
+      "id": "daily-deb80479",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je engleski gusarski kapetan 1718.g. odbio kraljevsko pomilovanje koje je na Bahamima ponudio guverner Woodes Rogers te uspio pobjeći iz blokirane luke Nassau?",
+      "topic": "Povijest",
+      "question": "Protiv kojeg su se carstva britanske, francuske, australske i novozelandske snage borile tijekom neuspješnog savezničkog pohoda na Galipolje 1915.g.?",
       "answers": [
-        "Charles Vane",
-        "Čarls Vejn",
-        "Charles Vein",
-        "Vane",
-        "Vejn"
+        "Osmanskog",
+        "Osmansko",
+        "Osmansko Carstvo",
+        "Osmanlija",
+        "Osmanlijskog",
+        "Osmanlije",
+        "Osmans",
+        "Ottomans",
+        "Ottoman Empire",
+        "Otoman Empajr"
       ],
       "image": null
     },
     {
-      "id": "daily-6029608e",
+      "id": "daily-d3db50a8",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji francuski pojam označava najvišu kategoriju francuske mode, čiji naziv doslovno znači 'visoko krojenje', a pravo korištenja tog naziva u Francuskoj podliježe posebnim pravilima?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Zbog kroničnih zdravstvenih problema i potrage za klimom koja bi mu olakšala tegobe, koji se pisac, tvorac Otoka s blagom, nastanio u Tihom Oceanu te preminuo 1894. godine na otoku Upolu u Samoi?",
       "answers": [
-        "Haute couture",
-        "Ot kutir",
-        "Hot kutir",
-        "Haut kutir"
+        "Robert Louis Stevenson",
+        "Robert Luis Stivenson",
+        "Louis Stevenson",
+        "Luis Stivenson",
+        "Robert Stivenson",
+        "Robert Stevenson",
+        "Stevenson",
+        "Stivenson"
       ],
       "image": null
     },
     {
-      "id": "daily-b28dc44f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Od kojeg je kemijskog elementa bila izrađena tintarnica iz koje su deklaraciju neovisnosti potpisali mnogi 'očevi amerike'?",
-      "answers": [
-        "Srebra",
-        "Ag",
-        "Silvera",
-        "Silver",
-        "Srebrna",
-        "Argentuma"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-84fe40bf",
+      "id": "daily-08a764e9",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "U imenu serijala nogometnih videoigara poznatog pod kraticom PES, koju riječ označava slovo 'E'?",
+      "question": "Pod kojim nadimkom je poznatiji Zvezdin 'Rajko Mitić Stadion'?",
       "answers": [
-        "Evolution",
-        "Evolucija",
-        "Evolušn",
-        "Evolucijon"
+        "Marakana"
       ],
       "image": null
     },
     {
-      "id": "daily-7e7101ea",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Od koliko se boja sastoji zastava Hondurasa?",
-      "answers": [
-        "2",
-        "Dvi",
-        "Dvije",
-        "Dva",
-        "Two",
-        "Tu",
-        "To",
-        "Tvo",
-        "Tvu",
-        "II."
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ca3294c3",
+      "id": "daily-1692c20c",
       "type": "blitz",
       "difficulty": 1,
-      "topic": "FloraFauna",
-      "question": "Kojom zbirnom imenicom nazivamo kupus, mrkvu, češnjak i krastavac?",
+      "topic": "Film",
+      "question": "Smogovci su dječja humoristična serija koja prati život koje obitelji?",
       "answers": [
-        "Povrće"
+        "Vragec",
+        "Obitelji Vragec"
       ],
       "image": null
     },
     {
-      "id": "daily-398dc6e6",
+      "id": "daily-fc37a24c",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koliko igrača standardno čini jednu ekipu na mapi Summoner's Rift u videoigri League of Legends?",
+      "topic": "Povijest",
+      "question": "Koja je unija sklopljena 1579.g. povezala sjeverne pobunjene provincije Nizozemske u čvršći savez i time postavila jedan od najvažnijih političkih temelja buduće neovisne Nizozemske?",
+      "answers": [
+        "Utrechtska Unija",
+        "Utrechtska",
+        "Utrechts",
+        "Utrehts",
+        "Utrehtska",
+        "Utrechts Union"
+      ],
+      "image": null,
+      "rarity": "gold"
+    },
+    {
+      "id": "daily-bdd0895c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva mala posuda s dugom drškom u kojoj se tradicionalno priprema kava u Bosni i Hercegovini, Turskoj i drugim dijelovima nekadašnjeg Osmanskog Carstva?",
+      "answers": [
+        "Džezva",
+        "Dzezva",
+        "Cezve",
+        "Cezva",
+        "Đezma"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7524a4db",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "O Kojem se američkom predsjedniku radi, ako znamo da su mu prethodnici bili Arthur i Harrison, a naljednici Harrison i McKinkey?",
+      "answers": [
+        "Grover Cleveland",
+        "Cleveland",
+        "Klivelend",
+        "Klevelend",
+        "Kleveland",
+        "Clevelandu",
+        "Klivelendu",
+        "Klevelendu",
+        "Klevelandu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9d17a4a3",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Koji lijeni mačak mrzi ponedjeljak a najviše voli jesti lazanje?",
+      "answers": [
+        "Garfield",
+        "Garfild"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9051810a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kojem se stoljeću rodio talijanski znanstvenik Enrico Fermi?",
+      "answers": [
+        "20.st",
+        "20-om",
+        "20om",
+        "Dvateseto",
+        "Dvadesetom",
+        "Twentieth",
+        "Twenty",
+        "Twentith",
+        "Tventith",
+        "Tventijet",
+        "Tventi",
+        "XX.",
+        "Dvadeset",
+        "20",
+        "Dvaestom",
+        "Dvaest",
+        "20th",
+        "20-th"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2e191e59",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je hrvatski tenisač u osvajanju Davis Cupa 2005.g. ostvario 11 pobjeda u 12 odigranih mečeva, uključujući pojedinačne i parove?",
+      "answers": [
+        "Ivan Ljubičić",
+        "Ljubičić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1a0458e1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove pas koji sa šegrtom Hlapićem prolazi kroz njegove avanture?",
+      "answers": [
+        "Bundaš"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ad6d68b3",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "'Cardo' je bila jedna od dvije glavne ulice u rimskim gradovima i logorima a pružala se od sjevera prema kojoj strani svijeta?",
+      "answers": [
+        "Jugu",
+        "Jug",
+        "Juga",
+        "South",
+        "Sud",
+        "Suth",
+        "Sauth"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3ac743d9",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva kut od točno 180°?",
+      "answers": [
+        "Ispruženi kut",
+        "Ispruženi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-de17690b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kombinaciji sa kojim visoko zapaljivim plinom, plin koji podržava gorenje daje tekućinu koja gasi požare?",
+      "answers": [
+        "Vodikom",
+        "Vodik",
+        "Vodika",
+        "Hidrogenom",
+        "Hidrogen",
+        "Hydrogenom",
+        "Hydrogen",
+        "Hydrogens",
+        "Hidrogens",
+        "Hidrodžen",
+        "Hidrodženom",
+        "Hidrodžens"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-407db2eb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "U koji je engleski nogometni klub prešao Davor Šuker nakon odlaska iz Real Madrida?",
+      "answers": [
+        "Arsenal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c5087fd1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zvao brod belgijske antarktičke ekspedicije koji je 1898.g. ostao zarobljen u ledu, zbog čega je njegova posada postala prva koja je provela cijelu zimu na Antarktici?",
+      "answers": [
+        "Belgica",
+        "Belgika",
+        "RV Belgica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4f24dee8",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Snjeguljica i Trnoružica poznate su bajke koje su zapisala koja braća?",
+      "answers": [
+        "Grimm",
+        "Grim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1e466263",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva zaklonjeno mjesto uz obalu u kojem brodovi pristaju i iskrcavaju teret?",
+      "answers": [
+        "Luka",
+        "Harbour",
+        "Harbor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b818fb8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koju je nagradu za 'pisanu riječ' John F. Kennedy dobio 1957.g.?",
+      "answers": [
+        "Pulitzerovu",
+        "Pulitzera",
+        "Pulitzer",
+        "Pulicerovu",
+        "Pulicera",
+        "Pulicer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-24e2ec7e",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koje 'pobunjeno' carstvo se od 260.g. do 273.g. pojavljuje unutar rimskog te obuhvaća provincije Galiju, Britaniju i Hispaniju, gdje 13 godina uživa nezavisnost od središnje rimske vlasti?",
+      "answers": [
+        "Galsko",
+        "Galorimsko",
+        "Galijsko",
+        "Galliarum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e1ea7c6e",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko dijagonala ima peterokut?",
       "answers": [
         "5",
         "Pet",
-        "Five",
-        "Fajv",
+        "Fajfive",
         "V"
       ],
       "image": null
     },
     {
-      "id": "daily-274f8a01",
+      "id": "daily-bb703f6d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kemijske elemente sa simbolima Na, Mg, K, Ca, Sr i Ba otkrio je koji engleski znanstvenik, jedan od utemeljitelja elektrokemije?",
+      "topic": "Gaming",
+      "question": "Kojim se engleskim izrazom nazivaju prijenosne igraće konzole poput Game Boya, PSP-a i Steam Decka?",
       "answers": [
-        "Humphry Davy",
-        "Hampri Dejvi",
-        "Hamfri Dejvi",
-        "Davy",
-        "Dejvi"
+        "Handheld",
+        "Hendheld",
+        "Hand Held",
+        "Hend Held"
       ],
       "image": null
     },
     {
-      "id": "daily-226772ef",
+      "id": "daily-df9d424f",
       "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Za koliko je dana Verne-ov fiktivni lik Fogg uspio proputovati svijet te se vratiti u London?",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Koje ime označava skupinu pčela u letu?",
       "answers": [
-        "80",
-        "Osamdeset",
-        "LXXX",
-        "Eighty",
-        "Ejti",
-        "Eigti"
+        "Roj"
       ],
       "image": null
     },
     {
-      "id": "daily-70c9fb69",
+      "id": "daily-571cd398",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Nogometni stadion kojeg se kluba nalazi najbliže vodi Bospora",
+      "topic": "Sport",
+      "question": "Kako se naziva najpoznatije međunarodno ekipno natjecanje muških teniskih reprezentacija?",
       "answers": [
-        "Besiktasa",
-        "Besiktas",
-        "Bešiktaša",
-        "Bešiktaš"
+        "Davis Cup",
+        "Davisov kup",
+        "Dejvis kup",
+        "Davis",
+        "Davisov",
+        "Dejvis",
+        "Dejvisov"
       ],
       "image": null
     },
     {
-      "id": "daily-35d5cece",
+      "id": "daily-f33604af",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je visoki šešir ravnog vrha i uskog oboda tijekom 19. stoljeća postao neizostavan dio svečanog muškog odijevanja?",
-      "answers": [
-        "Cilindar",
-        "Cylinder",
-        "Cilinder"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a7d6f650",
-      "type": "blitz",
-      "difficulty": 3,
+      "difficulty": 2,
       "topic": "Film",
-      "question": "Koja glumica tumači lik Barbie u istoimenom filmu iz 2023. godine?",
+      "question": "U kojoj seriji Borisa Dvornika poznamo kao Dimnjačara?",
       "answers": [
-        "Margot Robbie",
-        "Margot Robi",
-        "Robbie",
-        "Robi"
+        "Kapelski Kresovi",
+        "Kresovi"
       ],
       "image": null
     },
     {
-      "id": "daily-b7769a4d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove nordijski bog groma?",
-      "answers": [
-        "Thor",
-        "Tor"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a51ca8b2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koja je država 1917.g. nakon obnove njemačkog neograničenog podmorničkog rata i otkrića Zimmermannova telegrama, napustila neutralnost u 1. svjetskom ratu i objavila rat Njemačkoj?",
-      "answers": [
-        "SAD",
-        "Amerika",
-        "America",
-        "Sjedinjene Američke Države",
-        "Američke Države",
-        "USA",
-        "United States",
-        "United States of America",
-        "US",
-        "Sjedinjene Države",
-        "States of America",
-        "Junajted Stejts of Amerika",
-        "Stejts of Amerika",
-        "Junajted Stejts"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ea25a442",
+      "id": "daily-bb17f5f8",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "U kojoj državi se nalaze Dašte e Lut tj. Prazna pustinja i Dašt e Kavir tj. Velika slana pustinja?",
+      "question": "Sa kojom državom graniči portugal?",
       "answers": [
-        "Iran",
-        "Iranu",
-        "Irana"
+        "Španjolskom",
+        "Španjolska",
+        "Španija",
+        "Spain",
+        "Espania",
+        "Espanja",
+        "Spein",
+        "Spejin",
+        "Spejn",
+        "Špain",
+        "Špein",
+        "Špejn",
+        "Špejin"
       ],
       "image": null
     },
     {
-      "id": "daily-608c8252",
+      "id": "daily-e35c7983",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Izreka 'Mašta je važnija od znanja' se pripisuje kojem velikom svjetskom znanstveniku?",
+      "topic": "Zemljopis",
+      "question": "Kako se zove velika morska luka u Ateni?",
       "answers": [
-        "Albertu Einsteinu",
-        "Albertu Ajnštajnu",
-        "Einstein",
-        "Einsteinu",
-        "Ajnštajnu"
+        "Pirejska Luka",
+        "Pirejska",
+        "Pirej",
+        "Piraeus",
+        "Pireas",
+        "Pirea",
+        "Pirijska",
+        "Pirij",
+        "Pireus",
+        "Pireja"
       ],
       "image": null
     },
     {
-      "id": "daily-d0fb1f15",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "U kojem je gradu svoju inaguraciju odradio George Washington?",
-      "answers": [
-        "New York",
-        "Nju Jork",
-        "NYC",
-        "NY",
-        "New Yorku",
-        "Nju Jorku",
-        "Empire State of Mind",
-        "Empajr Stejt of Majnd"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5db8d912",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Budistički tekstovi pisani Gandhārskim pismom su jedni od najstarijih sačuvanih budističkih rukopisa uopće, a pisani su na kori kojeg drveta?",
-      "answers": [
-        "Breza",
-        "Breze"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fd37849b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Prema legendi, koliko su gradova negdje preko Atlantika navodno osnovali biskupi koji su u 8. stoljeću pobjegli pred muslimanskim osvajanjem Pirenejskog poluotoka, a priče o njihovu golemom bogatstvu kasnije su se povezale s Cíbolom i Quivirom te potaknule brojne ekspedicije u potrazi za zlatom i drugim blagom?",
-      "answers": [
-        "7",
-        "Sedam",
-        "VII",
-        "Seven"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b6a30205",
+      "id": "daily-118d2508",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Koji grad u BiH su stari rimljani poznavali kao Domavia?",
+      "topic": "Film",
+      "question": "U kojem se filmu pojavljuje 'Flux Capacitor'?",
       "answers": [
-        "Srebrenica",
-        "Srebrenicu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-05902e30",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kojem je danskom fizičaru, Zagrebačko Sveučilište 1958.g. dodijelilo počasni doktorat?",
-      "answers": [
-        "Nielsu Bohru",
-        "Niels Bohr",
-        "Bohru",
-        "Bohr",
-        "Boru",
-        "Bor"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f452b5b5",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Tko je skladao 'Četiri godišnja doba'?",
-      "answers": [
-        "Antonio Vivaldi",
-        "Vivaldi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-27230a04",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "AntickiRim",
-      "question": "Nakon podjele rimskog carstva na zapadno i Istočno, područje današnje hrvatske je pripalo kojem?",
-      "answers": [
-        "Zapadnom",
-        "Western",
-        "Zapad",
-        "West"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-41d395f0",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Tko pjeva pjesmu 'Purple Rain'?",
-      "answers": [
-        "Prince",
-        "Princ",
-        "Prince Roger Nelson",
-        "Princ Rodžer Nelson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-478b7db7",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako se zove fiktivna djevojčica koja je glavna junakinja romana 'Mala princeza', autorice Frances Hodgson Burnett?",
-      "answers": [
-        "Sara Crewe",
-        "Sara Kriv",
-        "Sara Kreve",
-        "Sara Krev",
-        "Sara Krive",
-        "Sera Crewe",
-        "Sera Kriv",
-        "Sera Kreve",
-        "Sera Krev",
-        "Sera Krive"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c319bab7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je belgijski grad postao središte američkog otpora tijekom njemačke ofenzive u Ardenima u 2. svjetskom ratu, kada su opkoljenim braniteljima Nijemci ponudili predaju?",
-      "answers": [
-        "Bastogne",
-        "Bastonja",
-        "Bastonj",
-        "Baston",
-        "Bastone"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4b903e5b",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se zvao grčki Bog mora?",
-      "answers": [
-        "Posejdon",
-        "Poseidon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e3223b47",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "'Spoznaj samoga sebe' bio je jedan od najpoznatijih natpisa povezanih s kojim velikim starogrčkim svetištem i proročištem?",
-      "answers": [
-        "Delfi"
+        "Povratak u budućnost",
+        "Back to the Future",
+        "Bek to d fjučr"
       ],
       "image": null
     }

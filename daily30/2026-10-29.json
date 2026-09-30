@@ -1,448 +1,429 @@
 {
   "version": 2,
   "date": "2026-10-29",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-9be57307",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koji je glavni grad Kostarike?",
-      "answers": [
-        "San José",
-        "San Hose",
-        "San Joze",
-        "San hoze"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0df2dada",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji klub je u sezoni 2003/04.g. osvojio englesku Premier Ligu neporažen, sa 26 pobjeda i 12 remija?",
-      "answers": [
-        "Arsenal",
-        "Topnici",
-        "Gunners",
-        "Ganers"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ba90677d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Hidraulična preša radi na osnovu zakona kojeg francuskog matematičara i fizičara?",
-      "answers": [
-        "Blaisea Pascala",
-        "Blaise Pascal",
-        "Pascala",
-        "Pascal",
-        "Paskala",
-        "Paskal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bc28ca68",
+      "id": "daily-be93f883",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Kod kojeg je belgijskog grada njemačka vojska 1915.g. pustila veliki oblak otrovnog plina prema savezničkim položajima i tako otvorila jedno od najmračnijih poglavlja kemijskog ratovanja?",
+      "question": "Koji se grčki junak, poznat po golemoj snazi i velikom štitu, u Trojanskom ratu borio protiv Hektora u dvoboju koji je završio bez pobjednika?",
       "answers": [
-        "Ypres",
-        "Jipres",
-        "Ipres",
-        "Ypresa",
-        "Jipresa",
-        "Ipresa"
+        "Ajant",
+        "Ajax",
+        "Aiant",
+        "Aint",
+        "Ajaks"
       ],
       "image": null
     },
     {
-      "id": "daily-72dee92d",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliko vrhova ima kocka?",
-      "answers": [
-        "8",
-        "Osam",
-        "Eight",
-        "Ejt",
-        "VIII"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-70bbc4e7",
+      "id": "daily-a30a416a",
       "type": "blitz",
       "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji je dječji roman autorice Tajnog Vrta smješten velikim dijelom u londonski internat?",
-      "answers": [
-        "Mala Princeza",
-        "A Little Princess",
-        "Litl Princes",
-        "Lidl Princes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2f3b4572",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 12. predsjednik SAD-a, prezimena Taylor, potpisao samo inicijalima, dobili bi koja slova?",
-      "answers": [
-        "ZT"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6194d2a4",
-      "type": "blitz",
-      "difficulty": 4,
       "topic": "AntickiRim",
-      "question": "Najzapadnija točka kontinentalne Europe je nekada bila i najzapadnija točka rimskog carstva. Rimljani su taj rt poznavali kao Promontorium Magnum, a kako se on danas zove?",
+      "question": "Klodija Lijepa, Skribonija i Livija Drusilla su bile žene kojeg rimskog cara?",
       "answers": [
-        "Cabo de Roca",
-        "Kabo de Roka"
+        "Augusta",
+        "August"
       ],
       "image": null
     },
     {
-      "id": "daily-4995d521",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Koji starogrčki fizičar, astronom i matematičar pomaže sa svojim izumima u obrani Sirakuze protiv Rimljana?",
-      "answers": [
-        "Arhimed",
-        "Arkhimedes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d18a13e1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je velški gusar poznat pod nadimkom Black Bart postao jedan od najuspješnijih gusarskih kapetana Zlatnog doba piratstva, zarobivši tijekom karijere stotine brodova?",
-      "answers": [
-        "Bartholomew Roberts",
-        "Bartolomew Roberts",
-        "Bartolomej Roberts",
-        "Roberts",
-        "Roberc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c650601b",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Koji znanstveni naziv koristimo za isparavanje vode iz biljaka?",
-      "answers": [
-        "Transpiracija"
-      ],
-      "image": null,
-      "rarity": "silver"
-    },
-    {
-      "id": "daily-05ea2017",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji je američki potpredsjednik sudjelovao u dvoboju pištoljima sa Alexanderom Hamiltonom iz kojeg je izašao kao pobjednik i preživjeli?",
-      "answers": [
-        "Aaron Burr",
-        "Aaron Burr Jr.",
-        "Aaron Burr Junior",
-        "Aron Bur",
-        "Burr",
-        "Bur",
-        "Burr Jr.",
-        "Burr  Junior",
-        "Bur Jr.",
-        "Bur Junior",
-        "Bur Džunior"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-479bfd57",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koja je nestašna rasa fiktivnih stvorenja iz pilotskog folklora postala naslov i tema prve dječje knjige Roalda Dahla, a poznata je po izazivanju kvarova na avionima?",
-      "answers": [
-        "Gremlini",
-        "Gremlin",
-        "Gremlins"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-562222f0",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Zemljopis",
-      "question": "Koja država kao svoj internetski nastavak koristi 'de'",
-      "answers": [
-        "Njemačka",
-        "Germany",
-        "Džermani",
-        "Deutschland",
-        "Dojčland",
-        "Germani"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-77f5360b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Tko je bio pjevač grupe 'The Doors' sve do svoje smrti 1971. u Parizu?",
-      "answers": [
-        "Jim Morrison",
-        "Džim Morison",
-        "Morrison",
-        "Morison",
-        "James Douglas Morrison"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f08bfc70",
+      "id": "daily-4ab9a298",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Koja je japanska kompanija razvila arkadnu trkaću videoigru Pole Position?",
+      "question": "Kako se zove glavni antagonist igrice Paper Mario: The Origami King, kralj origamija koji želi cijeli svijet pretvoriti u origami?",
       "answers": [
-        "Namco",
-        "Nemko"
+        "Olly",
+        "Oli"
       ],
       "image": null
     },
     {
-      "id": "daily-de2ed6d3",
+      "id": "daily-836fd600",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je veliki kanadski grad na obali Tihog oceana dobio ime po britanskom kapetanu koji je krajem 18. stoljeća detaljno kartirao sjeverozapadnu obalu Sjeverne Amerike?",
+      "topic": "Znanost",
+      "question": "Na prvoj slici koju je Wilhelm Rontgen snimio pomoću X Zraka vidimo ruku i na ruci što?",
       "answers": [
-        "Vancouver",
-        "Vankuver",
-        "Vankuvr"
+        "Prsten",
+        "Ring"
       ],
       "image": null
     },
     {
-      "id": "daily-5b33b5ca",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je drevni mezopotamski grad najpoznatiji kao dom legendarnog kralja Gilgameša koji je, prema predaji, opasao taj grad veličanstvenim zidinama i čija se epska priča smatra najstarijim sačuvanim književnim djelom u svijetu?",
-      "answers": [
-        "Uruk",
-        "Unug",
-        "Ereč",
-        "Varga"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c7b6d359",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja grana zoologije se bavi proučavanjem sisavaca?",
-      "answers": [
-        "Mamalogija",
-        "Mastozoologija",
-        "Teriologija",
-        "Mamtozoologija",
-        "Mastologija",
-        "Mamologija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5ff0c229",
+      "id": "daily-1f83756a",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Znamo da je Prvi svjetski rat trajao od 28. srpnja (jula) 1914.g. do 11. studenog (novembra) 1918.g., a koje godine su u taj rat ušle Sjedinjene Američke Države?",
+      "question": "Zbog koje afere je Richard Nixon dao ostavku na mjesto predsjednika SAD-a?",
       "answers": [
-        "1917",
-        "Tisuću devetsto sedamnaest",
-        "MCMXVII"
+        "Watergate",
+        "Vatergejt"
       ],
       "image": null
     },
     {
-      "id": "daily-30dc8041",
+      "id": "daily-feb1c12c",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Zemljopis",
-      "question": "Rijeka Sava se ulijeva u Dunav, a rijeka Save u koji ocean?",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koju 'slobodnu' državu James Monroe proglašava kao 23. američku saveznu državu, u znak kompromisa prema 'robovlasničkoj' državi Missouri koja je savezna postala kao 24.?",
       "answers": [
-        "Indijski",
-        "Indian",
-        "Indis",
-        "Hindis",
-        "Indijan"
+        "Maine",
+        "Mejn",
+        "Main",
+        "Majne"
       ],
       "image": null
     },
     {
-      "id": "daily-689bc01e",
+      "id": "daily-d326f4a5",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Film",
-      "question": "Koji je prvi dugometražni animirani film Walta Disneyja?",
+      "topic": "Zemljopis",
+      "question": "Koja rijeka je najduža rijeka europske Rusije, ali i cijele Europe?",
       "answers": [
-        "Snjeguljica i sedam patuljak",
-        "Snjeguljica i 7 patuljaka",
-        "Snjeguljica",
-        "Snow White",
-        "Snowwhite",
-        "Snovvajt",
-        "Snov Vajt",
-        "Snow white and the 7 dwarfs",
-        "Snov vajt end d 7 dvarfs",
-        "Snov vajt end d sevn dvarfs",
-        "Snow white and the seven dvarfs"
+        "Volga"
       ],
       "image": null
     },
     {
-      "id": "daily-6e69e469",
+      "id": "daily-e86127fd",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Reprezentacija koje je države osvojila Europsko nogometno prvenstvo 1996.g.?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio predsjednik SAD-a s prijelaza 19-og na 20-o stoljeće?",
       "answers": [
-        "Njemačka",
-        "Deutschland",
-        "Germany",
-        "Njemačke",
-        "Džermani",
-        "Dojčland",
-        "Ger",
-        "De",
-        "Njem",
-        "Njemci"
+        "William McKinley",
+        "McKinley",
+        "Vilijam Mkinli",
+        "Vilijam Mekinli",
+        "Viliam Mkinli",
+        "Viliam Mekinli",
+        "Mekinli",
+        "Mkinli",
+        "Mekinlej"
       ],
       "image": null
     },
     {
-      "id": "daily-2ed05dde",
+      "id": "daily-a8ae3af2",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koju je arkadnu igru kompanija Gremlin objavila 1976.g., a njezin princip kretanja i izbjegavanja vlastitog traga kasnije je postao temelj brojnih Snake igara?",
+      "topic": "Sport",
+      "question": "Koliko bodova vrijedi jedna crvena kugla u snookeru?",
       "answers": [
-        "Blockade",
-        "Blokejd",
-        "Blokada"
+        "1",
+        "Jedan",
+        "One",
+        "Von",
+        "On",
+        "Ein",
+        "Ajn",
+        "Ajnc",
+        "I"
       ],
       "image": null
     },
     {
-      "id": "daily-bf8af7d0",
+      "id": "daily-8daa8bb9",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se prezivaju braća Jacob i Wilhelm, slavni autori mnogih njemačkih bajki?",
+      "answers": [
+        "Grimm",
+        "Grim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ea0b778d",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koji je njemački grad posebno poznat po Rauchbieru, pivu čiji karakteristični okus nastaje uporabom dimljenog slada?",
+      "question": "Ako sat pokazuje 6:00, koliki je manji kut između kazaljki?",
       "answers": [
-        "Bamberg"
+        "180",
+        "Sto osamdeset",
+        "One hundred eighty",
+        "Von handred ejti",
+        "CLXXX"
       ],
       "image": null
     },
     {
-      "id": "daily-81c4040e",
+      "id": "daily-c951e920",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koja reprezentacija je osvojila SP u nogometu 2022.g.?",
+      "topic": "Sport",
+      "question": "Koji je sport, uz košarku, Michael Jordan profesionalno igrao nakon svog prvog povlačenja iz NBA lige?",
       "answers": [
-        "Argentina",
-        "Argentinska",
-        "Argentinci",
-        "Arg",
-        "Argentinas"
+        "Bejzbol",
+        "Baseball",
+        "Bejzbal"
       ],
       "image": null
     },
     {
-      "id": "daily-c92c1579",
+      "id": "daily-006f4c5f",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Film",
-      "question": "Tko glumi glavnu ulogu u filmu 'Elvis' (2022)?",
+      "topic": "Moreplovci",
+      "question": "Koju je stvarnu životinju Marko Polo opisao kao velikog, dlakavog i prilično ružnog jednoroga s crnim rogom?",
       "answers": [
-        "Austin Butler",
-        "Astim Batler",
-        "Butler",
-        "Batler"
+        "Nosorog",
+        "Nosorozi",
+        "Rhinoceros",
+        "Rhino",
+        "Rajno",
+        "Rajnoseros",
+        "Rajnosa",
+        "Rhinos",
+        "Nosoroga"
       ],
       "image": null
     },
     {
-      "id": "daily-f9892891",
+      "id": "daily-8caffa17",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Malija?",
+      "answers": [
+        "Bamako"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4744f18d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "U kojem je austrijskom gradu rođen nobelovac Erwin Schrodinger?",
+      "question": "Koja je srpska matematičarka bila prva supruga Alberta Einsteina?",
       "answers": [
-        "Beču",
-        "Beč",
-        "Vienna",
-        "Vieni",
-        "Vijena",
-        "Vijeni",
-        "Vienni",
-        "Wien",
-        "Vien",
-        "Vijen",
-        "Dunaj"
+        "Mileva Marić",
+        "Marić",
+        "Mileva"
       ],
       "image": null
     },
     {
-      "id": "daily-2b7f7195",
+      "id": "daily-b42d216d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Omotnica s prvog albuma kojeg hrvatskog benda neodoljivo podsjeća na logo Rolling Stonesa?",
+      "topic": "Zemljopis",
+      "question": "Kako se zove rijeka koja, prije no što se ulije u Savu, teče kroz Žepče, Zenicu i Doboj?",
       "answers": [
-        "Prljavo Kazalište",
-        "Prljavog Kazališta"
+        "Bosna"
       ],
       "image": null
     },
     {
-      "id": "daily-b3fc6ba2",
+      "id": "daily-a92badaf",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji je žanr glazbe proslavio Boba Marleya?",
+      "topic": "Nogomet",
+      "question": "Za kojeg je nogometaša Sir Alex Ferguson rekao da je 'rođen u zaleđu'?",
       "answers": [
-        "Reggae",
-        "Rege",
-        "Regga",
-        "Regge"
+        "Fillipa Inzaghija",
+        "Fillipo Inzaghi",
+        "Inzaghi",
+        "Inzaghija",
+        "Inzaghia",
+        "Inzagi",
+        "Inzagija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bae17055",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koje boje su svinje u videoigri 'Angry Birds'?",
+      "answers": [
+        "Zelene",
+        "Zelena",
+        "Green",
+        "Grin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-046d9aa7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je franjevac 1539.g. potkralju Nove Španjolske Antoniju de Mendozi tvrdio da je izdaleka vidio bogatu Cíbolu, zbog čega je Francisco Vázquez de Coronado sljedeće godine krenuo u potragu za legendarnim gradovima?",
+      "answers": [
+        "Marcos de Niza",
+        "Fray Marcos de Niza",
+        "Markos de Niza",
+        "Niza"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-30068ed6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Nakon deset godina neuspješne opsade Ahejci su se pretvarali da odlaze, a pred Trojom su ostavili golemi drveni predmet koji su Trojanci unijeli u grad. Unutra su bili skriveni ahejski vojnici a predmet je bio izgrađen u obliku koje životinje?",
+      "answers": [
+        "Konja",
+        "Konj",
+        "Horse",
+        "Hors",
+        "Pferd",
+        "Pfead"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d9f3b2d4",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji broj nastavlja niz 2, 4, 8, 16...?",
+      "answers": [
+        "32",
+        "Trideset dva",
+        "XXXII",
+        "Thirty two",
+        "Tirti tvu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-378933bb",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "U ratu između Julija Cezara i Ptolomeja 13. u jednom od požara zapaljena je i koja glasovita knjižnica?",
+      "answers": [
+        "Aleksandrijska",
+        "Aleksandrijska knjižnica",
+        "Alexandrijska",
+        "Alexandrija",
+        "Alexandriji",
+        "Aleksandriji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-125d1c68",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je francuska istraživačica na Bougainvilleovoj ekspediciji postala prva poznata žena koja je oplovila svijet?",
+      "answers": [
+        "Jeanne Baret",
+        "Žan Baret",
+        "Jeanne Barret",
+        "Baret",
+        "Barret"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b76728c3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "U eri Messija i Ronalda, od 12 uzastopnih sezona Lige Prvaka njih dvoje su naizmjenično bili najbolji strijelci u svima od njih, a jedan je nogometaš bar na kratko uspio razbiti njihovu dominaciju te se u sezoni 2013/14 sa 10 golova izjednačio na vrhu sa ove dvije spomenute legende. Tko je on?",
+      "answers": [
+        "Neymar",
+        "Neimar",
+        "Nejmar"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-25ca1557",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koliko minuta traje regularni dio nogometne utakmice?",
+      "answers": [
+        "90",
+        "Devedeset",
+        "Ninety",
+        "Najnti",
+        "Ninti",
+        "XC"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bbf960f1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je sport s reketom i i lopticom s perjanicom postao olimpijski sport 1992. godine?",
+      "answers": [
+        "Badminton"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6c578c85",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji se rimski zid, građen od 142. do 154.g., nalazi sjevernije od Hadrijanova te je duplo kraći od njega?",
+      "answers": [
+        "Antoninov zid",
+        "Antoninov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-58a861df",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove fiktivna crna pantera koja je Mowgliju bila zaštitnik i prijatelj?",
+      "answers": [
+        "Bagheera",
+        "Bagera",
+        "Bagira"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2481df69",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvala Ahilejeva majka, morska božica koja je znala da njezin sin može birati između dugog, nepoznatog života i kratkog života ispunjenog vječnom slavom?",
+      "answers": [
+        "Tetida",
+        "Thetis"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-31b92bc1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "'Matematička načela prirodne filozofije' (Philosophiae naturalis principia mathematica) je slavno djelo kojeg engleskog  znanstvenika?",
+      "answers": [
+        "Isaaca Newtona",
+        "Isaac Newton",
+        "Isak Njutn",
+        "Izaka Njutna",
+        "Newtona",
+        "Njutna"
       ],
       "image": null
     }

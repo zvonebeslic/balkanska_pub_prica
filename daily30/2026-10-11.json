@@ -1,411 +1,448 @@
 {
   "version": 2,
   "date": "2026-10-11",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-0e0ee76c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "U serijalu videoigara Crash Bandicoot, kako se zove čarobna maska koja pomaže Crashu i štiti ga od neprijatelja?",
-      "answers": [
-        "Aku Aku"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a7156bc3",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Koje velike životinje je Hanibal vodio preko Alpa u napadima na rimljane?",
-      "answers": [
-        "Slonove",
-        "Slon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-78f677cc",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako su se nazivali kameni stupovi s portugalskim grbom koje su portugalski istraživači postavljali na novoistraženim obalama?",
-      "answers": [
-        "Padrão",
-        "Padrao",
-        "Padrões",
-        "Padroes",
-        "Padros"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6652b38a",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Današnja riječ 'bojkot' nastala je od prezimena kojeg upravitelja imanja kojeg su irski zakupci 1880.g. počeli organizirano izbjegavati?",
-      "answers": [
-        "Charlesa Boycotta",
-        "Charles Boycott",
-        "Charles Cunningham Boycott",
-        "Boycott",
-        "Čarls Bojkot",
-        "Bojkot",
-        "Boycotta",
-        "Bojkota"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-11231b51",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Tko pjeva pjesmu 'Flowers', hit iz 2023. godine?",
-      "answers": [
-        "Miley Cyrus",
-        "Majli Sajrus",
-        "Cyrus",
-        "Sajrus",
-        "Miley Ray Cyrus",
-        "Destiny Hope Cyrus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b45bc0ab",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koja je habsburška vladarica godinama gradila savez protiv Pruske jer nije mogla prihvatiti gubitak bogate Šleske koju joj je Fridrik II. oteo tijekom prethodnih ratova?",
-      "answers": [
-        "Marija Terezija",
-        "Maria Theresa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a929267c",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je šešir karakterističan za 18. stoljeće dobio naziv prema tome što mu je obod bio podignut na tri strane, stvarajući njegova prepoznatljiva tri roga?",
-      "answers": [
-        "Tricorne",
-        "Trikorn"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4ebb2e72",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je legendarni talijanski nogometaš bio najbolji strijelac Serie B u sezoni 2006/07?",
-      "answers": [
-        "Alessandro del Piero",
-        "Alesandro del Piero",
-        "Del Piero",
-        "Del Pijero",
-        "Piero",
-        "Pijero"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-08a5be19",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koji je bend objavio album 'The Dark Side of the Moon'?",
-      "answers": [
-        "Pink Floyd",
-        "Pink Flojd"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-86ab5928",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Koja grana entomologije proučava pčele?",
-      "answers": [
-        "Apiologija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d65278af",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Rimski je vojskovođa Julije Cezar svoju brzu vojnu pobjedu kod Zele 47.g. pr. Kr. opisao čuvenim riječima 'Veni, Vidi, ... ,  što?",
-      "answers": [
-        "Vici",
-        "Pobjedih",
-        "Pobjedi",
-        "Pobjeda"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-dce4970c",
+      "id": "daily-c1c53005",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Polarna svjetlost je ime dobila po rimskoj božici svitanja Aurori i kojem grčkom bogu sjevernih vjetrova?",
+      "question": "Koji je njemački kemičar dobio Nobelovu nagradu za uspješnu sintezu amonijaka?",
       "answers": [
-        "Boreju",
-        "Borej"
+        "Fritz Haber",
+        "Fric Haber",
+        "Haber"
       ],
       "image": null
     },
     {
-      "id": "daily-e152ace6",
+      "id": "daily-e470f5a8",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Kako se zove hotel iz Dahlove knjige 'Vještice' u kojem vještice održavaju svoj sastanak?",
+      "question": "U čijim se pustolovinama prvi put pojavljuje Huckleberry Finn?",
       "answers": [
-        "Hotel Magnificent",
-        "Magnificent",
-        "Magnifisent",
-        "Magnifišnt",
-        "Magnifisnt",
-        "Veličanstveni Hotel",
-        "Veličanstveni"
+        "Toma Sawyera",
+        "Tom Sawyer",
+        "Toma Sejera",
+        "Tom Sejer",
+        "Sawyera",
+        "Sejera",
+        "Sawyer",
+        "Sejer",
+        "Sajer",
+        "Sajera",
+        "Savjer",
+        "Savjera"
       ],
       "image": null
     },
     {
-      "id": "daily-ad0b10c2",
+      "id": "daily-2d274740",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koje je drago kamenje zapravo zeleno obojeni oblik minerala berila?",
+      "topic": "Sport",
+      "question": "Iz koje države potječe moderni karate?",
       "answers": [
-        "Smaragd",
-        "Smaragdus"
+        "Japan",
+        "Japana",
+        "Jap",
+        "Džepen",
+        "Japanese",
+        "Džepenis",
+        "Nihon",
+        "Nihona"
       ],
       "image": null
     },
     {
-      "id": "daily-854c03d5",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako se zove vjerni sluga koji prati Phileasa Fogga u Verne-ovoj knjizi 'Putovanje oko svijeta u 80 dana?",
-      "answers": [
-        "Passepartout",
-        "Pasepartu",
-        "Pasepart",
-        "Paseparto",
-        "Pasepartut",
-        "Paspartu",
-        "Paspartut",
-        "Paspartu",
-        "Pasparte",
-        "Pasparto"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-92aff4d0",
+      "id": "daily-fa4d87c7",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvao glavni grad drevnog Elama, koji je kasnije postao i jedna od prijestolnica Perzijskog Carstva, a čije ime u hrvatskom jeziku često izgovaramo i u tuzi i u radosti?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio predsjednik međunarodno nepriznate Konfederacije Američkih Država?",
       "answers": [
-        "Suza"
+        "Jefferson Davis",
+        "Davis",
+        "Džeferson Dejvis",
+        "Dejvis"
       ],
       "image": null
     },
     {
-      "id": "daily-1c1fc021",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Kako se zove drevni egipatski bog s glavom sokola, bog neba i kraljevske moći?",
-      "answers": [
-        "Horus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bc679be1",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Film",
-      "question": "Koji je film poznat po rečenici: 'E.T. phone home'?",
-      "answers": [
-        "E.T.",
-        "ET",
-        "I Ti",
-        "Iti"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9abc41c1",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Koja božica je bogu Jupiteru rodila boga Apolona?",
-      "answers": [
-        "Latona"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d364a5d3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove protagonist videoigre Mafia II, veteran Drugog svjetskog rata koji ulazi u svijet organiziranog kriminala?",
-      "answers": [
-        "Vito Scaletta",
-        "Vito Skaleta",
-        "Scaletta",
-        "Skaleta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7b73eca3",
+      "id": "daily-e5bbaa99",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Od koje nezavisne države je površinom manji samo Vatikan?",
+      "question": "Koja država sa Afričkog Roga, nema izlaz na more?",
       "answers": [
-        "Monaka",
-        "Monaca",
-        "Monako",
-        "Monaco"
+        "Etiopija"
       ],
       "image": null
     },
     {
-      "id": "daily-4b9dece2",
+      "id": "daily-e701976b",
       "type": "blitz",
-      "difficulty": 3,
+      "difficulty": 5,
       "topic": "AntickiRim",
-      "question": "Rimski senat caru Trajanu dodjeljuje koji naslov, koji mi možemo prevesti kao 'najbolji'?",
+      "question": "Koji bakreni novac s tankom srebrnom prevlakom uvodi Car Dioklecijan kroz svoju novčanu reformu 294.g.?",
       "answers": [
-        "Optimus"
+        "Follis",
+        "Folis"
       ],
       "image": null
     },
     {
-      "id": "daily-c6307d7a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Nadopunite upozorenje da vanjski sjaj može varati: 'Nije zlato sve što...'",
-      "answers": [
-        "Sja",
-        "Sija",
-        "Sjaji"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2627ba55",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Iz koje je zemlje redatelj Bong Joon-ho, redatelj filma 'Parazit'?",
-      "answers": [
-        "Južna Koreja",
-        "Južne Koreje",
-        "South Korea",
-        "Saut Korea"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-329de4ae",
+      "id": "daily-cada747d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je venecijanski sudionik Magellanove ekspedicije ostavio najvažniji sačuvani opis njezina putovanja i prvog oplovljavanja svijeta?",
+      "question": "Koji je mladi vojskovođa naroda Mapuche, koji je upoznao španjolske vojne metode, postao jedan od najpoznatijih vođa otpora konkvistadoru Pedru de Valdiviji i osvajanju Čilea?",
       "answers": [
-        "Antonio Pigafetta",
-        "Antonio Pigafeta",
-        "Pigafetta",
-        "Pigafeta"
+        "Lautaro Leftraru",
+        "Lautaro",
+        "Leftraru"
       ],
       "image": null
     },
     {
-      "id": "daily-d3c4d4e2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove najpoznatiji američki burzovni indeks koji sadrži 30 velikih industrijskih dionica?",
-      "answers": [
-        "Dow Jones",
-        "Dov Džons",
-        "Dow Jones Industrial Average",
-        "DJIA"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b476e0a2",
+      "id": "daily-d76d7d12",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Pod kojim je nadimkom ostao poznat dvojac iz Bayern Munchena, Ribery - Robben, koji je činio ubojita krila tog kluba?",
+      "question": "Pod kojim je nadimkom poznatiji nogometaš Rodrigo Hernández Cascante?",
       "answers": [
-        "Robbery",
-        "Roberi",
-        "Robery"
+        "Rodri"
       ],
       "image": null
     },
     {
-      "id": "daily-95203052",
+      "id": "daily-f568cb54",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Igrajući za koji klub, Cristiano Ronaldo osvaja svoj prvi Ballon d'Or?",
+      "answers": [
+        "Manchester United",
+        "Mančester Junajted",
+        "United",
+        "Junajted",
+        "Mufc",
+        "Man utd",
+        "Utd",
+        "Manchester",
+        "Mančester"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3282e6ba",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Iz kojeg je hrvatskog grada dolazila Jugoplastika, klub koji je od 1989.g. do 1991.g. tri puta zaredom osvojio naslov europskog kosarkaškog prvaka?",
+      "answers": [
+        "Split",
+        "Splita",
+        "St"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e9240c32",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koju je biljku iz porodice orhideja, Hernan Cortes donio u Europu nakon osvajanja Aztečkog carstva?",
+      "answers": [
+        "Vaniliju",
+        "Vanilija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3f8adb38",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "James Cook je poginuo 1779.g. na području koje današnje američke savezne države?",
+      "answers": [
+        "Havaji",
+        "Havai",
+        "Havajima",
+        "Havaima",
+        "Havaii",
+        "Havaiis",
+        "Havais"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-02633c8b",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Zbog velikog poraza kod Horseshoe Benda 1814.g., indijansko pleme Creek je SAD-u prepustilo područje koje današnje savezne države?",
+      "question": "Koji se kralj iz keltske mitologije može pronaći i na popisu američkih predsjednika?",
       "answers": [
-        "Alabame",
-        "Alabama"
+        "Arthur",
+        "Artur"
       ],
       "image": null
     },
     {
-      "id": "daily-04fdd81a",
+      "id": "daily-57ed91cf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "U kojem se organelu odvija fotosinteza?",
+      "answers": [
+        "Kloroplastu",
+        "Kloroplast"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6a5e14ed",
       "type": "blitz",
       "difficulty": 1,
-      "topic": "Zemljopis",
-      "question": "Koje ime nosi preko 2000 godina stari jordanski grad isklesan u stijeni, kojeg su 'doslovno isklesali' Nabatejci?",
+      "topic": "svastara",
+      "question": "Koja portugalska rijeka protječe kroz jednu od najstarijih zakonski razgraničenih vinskih regija svijeta, poznatu ponajprije po proizvodnji vina 'porta'?",
       "answers": [
-        "Petra"
+        "Douro",
+        "Duero"
       ],
       "image": null
     },
     {
-      "id": "daily-2462aa6d",
+      "id": "daily-74d16777",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U knjizi Charlie i tvornica čokolade, koliko je zlatnih karata pronađeno u omotima Wonkinih čokoladica?",
+      "answers": [
+        "5",
+        "Pet",
+        "V",
+        "Five",
+        "Fajv",
+        "Fumf",
+        "Fmf"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d3ef39e1",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "U znak pobjede nakon bitke za koji Libijski grad je prvi put u povijesti podignuta američka zastava van američkih granica?",
+      "topic": "Gaming",
+      "question": "Koja kompanija razvija videoigru Fortnite i Unreal Engine?",
       "answers": [
-        "Derna",
-        "Dernu",
-        "Darnah",
-        "Darnu",
-        "Darna",
-        "Darnahu"
+        "Epic Games",
+        "Epic",
+        "Epik Gejms",
+        "Epik"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6119b77a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Tko kome grize rep u animiranom filmu iz 2004.?",
+      "answers": [
+        "Riba ribi"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-769dee50",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji je galski poglavica bio vođa galskih plemena u pobuni protiv rimske vlasti na čelu s Julijem Cezarom?",
+      "answers": [
+        "Vercingetoriks",
+        "Vercingetorix"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-51b9c783",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Francuski su vojnici tijekom egipatskog pohoda pod zapovjedništvom Napoleona Bonapartea pronašli kamenu ploču koja je stoljećima poslije pomogla u dešifriranju egipatskih hijeroglifa a ta ploča se naziva kako?",
+      "answers": [
+        "Kamen iz Rosette",
+        "Rosettski kamen",
+        "Rosetski kamen",
+        "Rosettes stone",
+        "Rosetes ston",
+        "Rosettska",
+        "Rosettes",
+        "Rosetta",
+        "Rosettas",
+        "Rosetas",
+        "Rosetta Ston",
+        "Rosettas stone"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee33588a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kojem je stoljeću rođen austrijski znanstvenik Erwin Schrodinger?",
+      "answers": [
+        "19.st",
+        "19-om",
+        "19om",
+        "Devetnaestom",
+        "19",
+        "XIX",
+        "Nineteen",
+        "Najntin",
+        "Nineteens",
+        "Najntins",
+        "19-o",
+        "19o",
+        "Devetnaest",
+        "19st",
+        "19stoljeće",
+        "19stoljeću",
+        "19th",
+        "19-th"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d0c8c5de",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U knjizi Charlie i tvornica čokolade, koja je životinja procjenjivala jesu li orasi dovoljno dobri za Wonkine proizvode?",
+      "answers": [
+        "Vjeverica",
+        "Squirrel",
+        "Skvirel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-62e11dc0",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko je 999 × 0?",
+      "answers": [
+        "0",
+        "Nula",
+        "Zero",
+        "Ziro",
+        "Null",
+        "Ništa",
+        "Nul"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-de2ed6d3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je veliki kanadski grad na obali Tihog oceana dobio ime po britanskom kapetanu koji je krajem 18. stoljeća detaljno kartirao sjeverozapadnu obalu Sjeverne Amerike?",
+      "answers": [
+        "Vancouver",
+        "Vankuver",
+        "Vankuvr"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2b668ff9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U rečenici 'Veni Vidi Vici', jedna se riječ ne može napisati koristeći samo rimske brojeve, koja?",
+      "answers": [
+        "Veni"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60e80ba8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je finski nogometaš osvojio Ligu Prvaka sa Ajaxom 1995.g.?",
+      "answers": [
+        "Jari Litmanen",
+        "Litmanen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e1e3b51f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kojim je kodnim nazivom Njemačka nazvala plan invazije na Poljsku pokrenut u rujnu 1939.g.?",
+      "answers": [
+        "Weiss",
+        "Vajs",
+        "Bijela",
+        "Bijelo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d8c8ee16",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koju životinju možemo uočiti na grbu Farskih Otoka, a odaje je i samo ime ove autonomne Danske pokrajine, naravno ako znate staronordijski?",
+      "answers": [
+        "Ovcu",
+        "Ovca",
+        "Ovce",
+        "Sheep",
+        "Sheeps",
+        "Šep",
+        "Šip",
+        "Šeps",
+        "Šips"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0787855a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Nintendova prijenosna igraća konzola iz 1989.g. koja je postala veliki svjetski hit, između ostalog zahvaljujući Tetrisu?",
+      "answers": [
+        "Game Boy",
+        "Gameboy",
+        "Gejm Boj",
+        "Gejmboj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6a10ac09",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kada govorimo o morskim mijenama, dizanje mora zovemo kako?",
+      "answers": [
+        "Plima"
       ],
       "image": null
     }

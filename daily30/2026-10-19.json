@@ -1,498 +1,446 @@
 {
   "version": 2,
   "date": "2026-10-19",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-3e681b5b",
+      "id": "daily-68818874",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Rimski car Konstantin I. Veliki pobjeđuje Maksencija u bitci kod Mulvijeva mosta i postaje vladar zapada, a pobjedu mu je navodno donio kristogram s natpisom 'In Hoc Signo Vinces' kojeg je vidio na nebu, što u prijevodu znači 'pod ovim ćeš znakom pobijediti', a isti taj natpis se nalazi na zastavi koje hrvatske gardijske brigade?",
+      "difficulty": 2,
+      "topic": "Književnost",
+      "question": "Kako se nazivaju slikovni znakovi koji su prethodili razvoju prvih pisama, poput sumerskog klinastog pisma i egipatskih hijeroglifa?",
       "answers": [
-        "Pauci",
-        "Pauka",
-        "4. Gardijske",
-        "4 gardijske",
-        "Četvrte gardijske",
-        "4.",
-        "Četvrte",
-        "4",
-        "Četiri",
-        "Četvrta",
-        "IV",
-        "IV.",
-        "IV. gardijske"
+        "Piktogrami",
+        "Piktogram"
       ],
       "image": null
     },
     {
-      "id": "daily-bed174b0",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja je velika trgovačka suparnica Venecije zarobila Marka Pola tijekom njihova međusobnog rata, što će posredno dovesti do nastanka njegove slavne knjige?",
-      "answers": [
-        "Genova",
-        "Đenoa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f9400279",
+      "id": "daily-c084f2ad",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koje je kazalište u Washington DC-ju bilo poprište ubojstva Abrahama Lincolna?",
+      "question": "Koji je američki predsjednik mandat obnašao svega 6 mjeseci i 15 dana?",
       "answers": [
-        "Fordovo",
-        "Fords",
-        "Ford"
+        "James Abram Garfield",
+        "Garfield",
+        "Garfild"
       ],
       "image": null
     },
     {
-      "id": "daily-0cf68a71",
+      "id": "daily-9c8dce84",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Film 'Brodolom života' započinje nesrećom kojeg prijevoznog sredstva?",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je japanski samuraj predvodio diplomatsku misiju koja je od 1613.g. preko Tihog oceana, Meksika i Atlantika stigla sve do Španjolske i Rima?",
       "answers": [
-        "Aviona",
-        "Zrakoplova",
-        "Avion",
-        "Airplane",
-        "Erplejn"
+        "Hasekura Tsunenaga",
+        "Hasekura Cunenaga",
+        "Tsunenaga Hasekura",
+        "Cunenaga Hasekura",
+        "Hasekura",
+        "Tsunenaga",
+        "Cunenaga"
       ],
       "image": null
     },
     {
-      "id": "daily-9a9ef63f",
+      "id": "daily-3c9c7061",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je žena, prerušena u muškarca i osuđena zbog piratstva, zajedno s Anne Bonny plovila u posadi Calica Jacka i postala jednom od najpoznatijih gusarica Zlatnog doba piratstva?",
+      "answers": [
+        "Mary Read",
+        "Meri Rid",
+        "Read",
+        "Rid"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fb12e078",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koje kodno ime je dano savezničkom iskrcavanju vojske u Normandiji 6. lipnja 1944.?",
+      "question": "Koja je država tijekom većeg dijela 1. svjetskog rata svojom nadmoćnom mornaricom održavala pomorsku blokadu Njemačke i pokušavala joj ograničiti dovoz hrane i sirovina?",
       "answers": [
-        "Dan D",
-        "D Dan",
-        "D-Day"
+        "Velika Britanija",
+        "Britanija",
+        "Brit",
+        "GBR",
+        "VB",
+        "Britanci",
+        "Britons",
+        "Great Britain",
+        "Grejt Britani",
+        "Britannis",
+        "Britani"
       ],
       "image": null
     },
     {
-      "id": "daily-e3e80991",
+      "id": "daily-334460a7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je kompanija razvila i objavila videoigru Prince of Persia: The Sands of Time 2003.g.?",
+      "answers": [
+        "Ubisoft",
+        "Ubisoft Montreal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2efd1398",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je američki tenisač nadimka 'Pistol Pete' osvojio 14 Grand Slam naslova u pojedinačnoj konkurenciji?",
+      "answers": [
+        "Pete Sampras",
+        "Pit Sampras",
+        "Sampras"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-387e48bc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Nakon smrti Nabopolasara, koji njegov sin dolazi na vlast novobabilonskog carstva gdje s vremenom postaje jedan od najvećih vladara u njihovoj povijesti?",
+      "answers": [
+        "Nabukodonosor II.",
+        "Nabukodonosor 2.",
+        "Nabukodonosor drugi",
+        "Nabukodonosor",
+        "Nebukadnezar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d8cff11e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "U košarci, kako se naziva pravokutno označeno područje ispod koša u kojem vrijede posebna pravila, među ostalim i ono o tri sekunde?",
+      "answers": [
+        "Reket",
+        "Key",
+        "Paint",
+        "Ki",
+        "Kej",
+        "Pejnt",
+        "Peint",
+        "Pajnt"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-46320569",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koja je pjevačica poznata kao 'Kraljica Soula'?",
+      "topic": "Povijest",
+      "question": "Kako se zvala poznata egipatska kraljica koja je imala vezu s Markom Antonijem?",
       "answers": [
-        "Aretha Franklin",
-        "Areta Frenklin",
-        "Franklin",
-        "Frenklin",
-        "Aretha Louise Franklin"
+        "Kleopatra",
+        "Cleopatra"
       ],
       "image": null
     },
     {
-      "id": "daily-3be3e24b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Na prvoj međunarodnoj nogometnoj utakmici koja se odigrala 1872.g., sastale su se reprezentacije Engleske i koje još?",
-      "answers": [
-        "Škotske",
-        "Škotska",
-        "Scotland",
-        "Scotlands",
-        "Skotlend",
-        "Skotlends"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-622064d0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koju godinu FIFA smatra kao godinu kada je odigran prvi službeni meč između dvije reprezentacije?",
-      "answers": [
-        "1872",
-        "Tisuću osamsto sedamdeset drugu",
-        "Tisuću osamsto sedamdeset dva",
-        "MDCCCLXXII"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3f5c6312",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Maldivi su po ustroju kakva država?",
-      "answers": [
-        "Republika",
-        "Republik",
-        "Republic",
-        "Republica"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-34ec4343",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Nakon Bitke za Britaniju, koji je britanski premijer izrekao znamenitu pohvalu pilotima riječima da 'nikada toliko mnogo ljudi nije dugovalo toliko malom broju'?",
-      "answers": [
-        "Winston Churchill",
-        "Vinston Črčil",
-        "Churchill",
-        "Čurčil",
-        "Črčil"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8604077a",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako se zove brod kojim se u knjizi Roberta Louisa Stevensona plovi prema Otoku s blagom?",
-      "answers": [
-        "Hispaniola",
-        "Hispanjola"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d5dd99db",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Eukaliptus, akacija i banksija su prvi puta predstavljeni Europi zahvaljujući kojem brodu iz 18. st?",
-      "answers": [
-        "HMS Endeavour",
-        "HMS Endevur",
-        "Endeavour",
-        "Endevur"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6f116bfe",
+      "id": "daily-62230636",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koji je bankar financirao izgradnju Teslina Tornja na Long Islandu ali je kasnije odustao od projekta?",
+      "question": "Koji je svemirski teleskop NASA lansirala 2009.g. s ciljem otkrivanja novih egzoplaneta?",
       "answers": [
-        "John Pierpont Morgan",
-        "J. P. Morgan",
-        "Morgan",
-        "John Morgan",
-        "Pieropnt Morgan",
-        "Džon Pirpont Morgan",
-        "Džon Morgan",
-        "Pirpont Morgan",
-        "JP Morgan"
+        "Kepler",
+        "Keplera"
       ],
       "image": null
     },
     {
-      "id": "daily-068d8816",
+      "id": "daily-58bd2e9d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se naziva mjera ubrzanja koja se često koristi u auto-moto svijetu, izmjerena kao omjer sile i mase?",
+      "topic": "Nogomet",
+      "question": "Koji kompleks od 5 zgrada u Abu Dhabiju dijeli ime sa jednim nogometnih stadionom u Manchesteru?",
       "answers": [
-        "G sila",
-        "G force"
+        "Etihad"
       ],
       "image": null
     },
     {
-      "id": "daily-2c526e18",
+      "id": "daily-68c5060c",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je njemački filozof 19. stoljeća kroz svoja djela proslavio provokativnu tvrdnju 'Bog je mrtav'?",
+      "topic": "Znanost",
+      "question": "Zbog kojeg je voća Adam sagriješio, Newton spoznao gravitaciju a Jobs zaradio milijarde?",
       "answers": [
-        "Friedrich Nietzsche",
-        "Fridrih Niče",
-        "Nietzsche",
-        "Niče",
-        "Nitče",
-        "Nieče"
+        "Jabuke",
+        "Jabuka",
+        "Apple",
+        "Apl",
+        "Apel",
+        "Apples",
+        "Apls",
+        "Apels"
       ],
       "image": null
     },
     {
-      "id": "daily-4c6531d0",
+      "id": "daily-ad823a89",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Ako kvadrat prerežemo jednom dijagonalom, koliko trokuta nastaje?",
+      "question": "Koliko je 0 ÷ 5?",
       "answers": [
-        "2",
-        "Dva",
-        "Two",
-        "Tvu",
-        "Zwei",
-        "Cvaj",
-        "Oba",
-        "II"
+        "0",
+        "Nula",
+        "Zero",
+        "Ziro",
+        "Null",
+        "Nul",
+        "Ništa"
       ],
       "image": null
     },
     {
-      "id": "daily-4ec9455f",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "U kojem današnjem gradu je bilo sjedište Galskog carstva, koje se pod vodstvom Postuma odvojilo od Rima?",
-      "answers": [
-        "Kölnu",
-        "Köln",
-        "Koln",
-        "Kolnu",
-        "Cologne",
-        "Cologneu",
-        "Kolonje",
-        "Kolonji",
-        "Keln",
-        "Kelnu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e744e797",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koja je najveća katedrala u Parizu koja je djelomično stradala u požaru 2019. godine?",
-      "answers": [
-        "Notre Dame",
-        "Noterdam",
-        "Notre Dam"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d45848e0",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koja se šuma nalazi u engleskoj grofoviji Nottinghamshire te je glavno poprište pustolovina Robina Hooda iz knjige Howarda Pylea?",
-      "answers": [
-        "Sherwoodska šuma",
-        "Sherwoodska",
-        "Sherwood",
-        "Šervudska",
-        "Šervud",
-        "Sherwoods",
-        "Šervuds"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-42360737",
+      "id": "daily-fd8aef13",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Invazije na Meksičku zemlju koje meksikanci nazivaju 'Invasión estadounidense a México' i 'Guerra del 47' izvela je koja država?",
+      "question": "Kome je pomogao Andrew Jackson, inače 7. predsjednik SAD-a, da osnuje demokratsku stranku, ?",
       "answers": [
-        "SAD",
-        "Amerika",
-        "America",
-        "Sjedinjene Američke Države",
-        "Američke Države",
-        "USA",
-        "United States",
-        "United States of America",
-        "US",
-        "Sjedinjene Države",
-        "States of America",
-        "Junajted Stejts of Amerika",
-        "Stejts of Amerika",
-        "Junajted Stejts"
+        "Martinu Van Burenu",
+        "Martin Van Buren",
+        "Van Burenu",
+        "Van Buren"
       ],
       "image": null
     },
     {
-      "id": "daily-d17a29cc",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Što je po zanimanju Super Mario?",
-      "answers": [
-        "Vodoinstalater",
-        "Plumber",
-        "Plamber"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fce0de46",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koji je po redu PlayStation Sony predstavio 2020.g.?",
-      "answers": [
-        "PlayStation 5",
-        "PS5",
-        "Ps 5",
-        "5",
-        "Pet",
-        "Peticu",
-        "Peti",
-        "Petorka",
-        "Petak",
-        "Five",
-        "Fajv",
-        "5th",
-        "Fifth",
-        "Fift",
-        "Plejstejšn 5",
-        "Playstation pet",
-        "Plejstejšn pet",
-        "Playstation five",
-        "Plejstejšn fajv"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4ad91ebe",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji je glazbenik imenima svojih albuma dao znakove zbrajanja, množenja, dijeljenja i jednakosti?",
-      "answers": [
-        "Ed Sheeran",
-        "Ed Šeran",
-        "Sheeran",
-        "Šeran",
-        "Edward Christopher Sheeran"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6629d8d9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji kemijski element čini 21% Zemljine atmosfere ali i 65% ukupne mase ljudskog tijela?",
-      "answers": [
-        "Kisik",
-        "Oxygen",
-        "Oksidžen",
-        "Oksigen",
-        "O",
-        "Kiseonik"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-36d35f16",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja se životinja nalazi na kovanici od 5 kuna?",
-      "answers": [
-        "Mrki medvjed"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2f1d139b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je vladar iz dinastije Habsburg u 16. stoljeću nosio titulu kralja Španjolske i cara Svetog Rimskog Carstva, vladajući golemim teritorijima koji su obuhvaćali velik dio Europe, ali i novootkrivene posjede u Americi i Aziji (poput Filipina), zbog čega je njegova država dobila povijesni nadimak \"carstvo u kojem sunce nikada ne zalazi\" jer je u svakom trenutku dana barem na jednom dijelu njegova teritorija bilo dnevno svjetlo?",
-      "answers": [
-        "Karlo V. Habzburški",
-        "Charles V Habsburgs",
-        "Karlo 5. Habzburški",
-        "Charles 5. Habsburgs",
-        "Karlo peti Habzburški",
-        "Charles peti Habsburgs",
-        "Karlo 5th Habsburgs",
-        "Charles 5th Habsburgs",
-        "Čarls 5. Habzburg",
-        "Čarls V. Habzburgs",
-        "Čarls peti Habzburški",
-        "Čarls 5th Habsburgs",
-        "Čarls fifth Habsburgs",
-        "Charles fifth Habsburgs",
-        "Karlo V.",
-        "Charles V",
-        "Karlo 5.",
-        "Charles 5.",
-        "Karlo peti",
-        "Charles peti",
-        "Karlo 5th",
-        "Charles 5th",
-        "Čarls 5.",
-        "Čarls V.",
-        "Čarls peti",
-        "Čarls 5th",
-        "Čarls fifth",
-        "Charles fifth"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-91903a2e",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "U kojoj trilogiji je hobbit Bilbo Baggins, glavni lik?",
-      "answers": [
-        "Hobbit",
-        "Hobit"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-72c87eb6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je britanski kapetan tijekom svojih putovanja detaljno kartirao Novi Zeland i istočnu obalu Australije, a život izgubio 1779.g. na Havajima?",
-      "answers": [
-        "James Cook",
-        "Džejms Kuk",
-        "Cook",
-        "Kok",
-        "Kuk"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-92b76f5d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je brod nestale arktičke ekspedicije Johna Franklina pronađen 2014.g. južno od kanadskog otoka King William, gotovo 170 godina nakon nestanka?",
-      "answers": [
-        "HMS Erebus",
-        "Erebus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e859ef3c",
+      "id": "daily-78354c91",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "132m visoki, veličanstveni slapovi Tequendama se nalaze u kojoj južnoameričkoj državi?",
+      "question": "Na kojem se kontinentu smjestila država Surinam?",
       "answers": [
-        "Kolumbiji",
-        "Kolumbija",
-        "Columbia",
-        "Columbiji"
+        "Južna Amerika",
+        "Južnoj Americi",
+        "South America",
+        "Saut Amerika",
+        "Latinskoj Americi",
+        "Latinska Amerika"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-300316b9",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji poznati slamnati šešir, unatoč svom imenu, tradicionalno potječe iz Ekvadora, gdje se izrađuje od vlakana biljke toquilla?",
+      "answers": [
+        "Panama"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-280e7ea9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kojeg smo francuskog nogometaša upamtili po dobrim igrama ali i po ožiljku na desnoj strani lica koju je kao dijete zadobio u automobilskoj nesreći?",
+      "answers": [
+        "Francka Riberyja",
+        "Franck Ribery",
+        "Riberyja",
+        "Ribery",
+        "Riberi",
+        "Riberija",
+        "Franka Riberija",
+        "Frank Riberi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3f9045c1",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "U blizini kojeg je grčkog otoka početkom 20. stoljeća u antičkoj olupini pronađen iznimno složen mehanizam sa zupčanicima za praćenje astronomskih ciklusa, koji se često opisuje kao jedno od najvećih tehnoloških dostignuća antičkog svijeta i najstarije poznato analogno računalo?",
+      "answers": [
+        "Antikitera",
+        "Antikythera"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-878409e8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Na cesti Via Appia, Petar susreće Krista i pita ga 'Quo Vadis, Domine?', na što Krist odgovara da ide u Rim, gdje u to vrijeme vlada koji car i progonitelj kršćana",
+      "answers": [
+        "Neron",
+        "Nero"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f9cefc99",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Eksplozija kojeg se indonezijskog vulkana 1883.g. mogla čuti čak i u Australiji, 3500km daleko?",
+      "answers": [
+        "Krakataua",
+        "Krakatau",
+        "Krakatoa",
+        "Krakatoae",
+        "Krakatoje",
+        "Krakatauje",
+        "Krakataue"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3c9c2383",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove mali ljubičasti zmaj koji je glavni junak serijala videoigara Spyro?",
+      "answers": [
+        "Spyro",
+        "Spajro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fe3099a1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je francuski astronom, promatrajući pomrčinu Sunca 1868. godine, u Sunčevoj atmosferi otkrio plin helij?",
+      "answers": [
+        "Pierre Janssen",
+        "Jules Janssen",
+        "Janssen",
+        "Pjer Džensen",
+        "Jul Džensen",
+        "Džensen",
+        "Jensen",
+        "Jansen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-816488d0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koje ime koristimo za ekonomski pogram koji je kao riješenje za veliku ekonomsku krizu uveo Franklin Delano Roosevelt?",
+      "answers": [
+        "New Deal",
+        "Novi Dogovor",
+        "Nju Dil"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b626b6c2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Farski Otoci su autonomna pokrajina koje kraljevine?",
+      "answers": [
+        "Danske",
+        "Danska",
+        "Denmark",
+        "Danmark"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3f03969b",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zvala vila koja je 7 dana i 7 noći jahala konja vranca, te u Legen gradu upoznala Regoča?",
+      "answers": [
+        "Kosjenka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-19ec4add",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se u sportskom karateu naziva borba protiv stvarnog protivnika?",
+      "answers": [
+        "Kumite"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-97d2d4f2",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Za vrijeme vladavine kojeg rimskog cara je rođen Isus Krist?",
+      "answers": [
+        "Augusta",
+        "August",
+        "Gaj Julije Cezar Oktavijan",
+        "Julije Cezar Oktavijan",
+        "Oktavijan",
+        "Oktavijana",
+        "Gaius Julius Caesar Octavianus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c7cb8b6a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove korporacija čiji se eksperimenti i objekti često nalaze u središtu katastrofa u serijalu videoigara Doom?",
+      "answers": [
+        "UAC",
+        "Union Aerospace Corporation",
+        "Junion Erospejs Korporejšn",
+        "Union Aerospace",
+        "Union Erospejs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-681647ee",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tvorac Gospodara Prstenova je bio veliki prijatelj kojeg pisca, također tvorca fantastičnih knjiga koje su kasnije ekranizirane?",
+      "answers": [
+        "Clive Staples Lewisa",
+        "C. S. Lewisa",
+        "Luisa",
+        "Lewisa",
+        "Staplesa",
+        "Stiplsa",
+        "Clive Staples Lewis",
+        "Clajv Stipls Luis",
+        "Lewis",
+        "Luis",
+        "Staples",
+        "Stipls"
       ],
       "image": null
     }

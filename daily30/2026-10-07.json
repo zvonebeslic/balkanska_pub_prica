@@ -1,296 +1,57 @@
 {
   "version": 2,
   "date": "2026-10-07",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-3c8ffaa5",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se naziva proces prilagodbe organizma na veće nadmorske visine i manjak kisika?",
-      "answers": [
-        "Aklimatizacija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b9317a04",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji proces označava prenošenje cvjetnog ili peludnog praha s prašnika na stigmu tučka?",
-      "answers": [
-        "Oprašivanje",
-        "Polinacija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d6eb07ae",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Na poznatoj slici 'Washington prelazi rijeku Delaware' tko stoji uz Washingtona u brodu, a kasnije postaje predsjednikom SAD-a?",
-      "answers": [
-        "James Monroe",
-        "Džejms Monro",
-        "Monroe",
-        "Monro"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1d4406f1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Kada netko pretjeruje oko nečega nevažnog, kažemo da od muhe pravi što?",
-      "answers": [
-        "Slona",
-        "Slon",
-        "Elefant",
-        "Elephant"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bfa0e1c1",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "AntickiRim",
-      "question": "Koji se rimski vojskovođa proslavio u drugom Punskom ratu i pobjedi protiv Hanibala?",
-      "answers": [
-        "Scipion Stariji",
-        "Scipion Afrički",
-        "Publije Kornelije Scipion",
-        "Publije Kornelije Scipion Afrički Stariji",
-        "Publius Cornelius Scipio",
-        "Publius Cornelius Scipio Africanus Major"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-46defb00",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Koji bend je osmislio svoj logo po uzoru na hinduističku božicu Kali, koju se većinom prikazuje isplažena jezika?",
-      "answers": [
-        "The Rolling Stones",
-        "Rolling Stones",
-        "Roling Stonsi",
-        "Stonsi",
-        "Stones"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b8c53a72",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "Kako se zove fiktivni otok na kojem se odvija radnja filma 'Jurassic Park' Stevena Spielberga?",
-      "answers": [
-        "Isla Nublar",
-        "Nublar",
-        "Otok Oblaka",
-        "Otok Nublar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b1fcb367",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je francuski kralj, prema predaji, prije Bitke kod Ivryja 1590.g. svojim vojnicima poručio da slijede njegov 'bijeli perjanik' ako izgube svoje zastave?",
-      "answers": [
-        "Henrik IV.",
-        "Henrik 4.",
-        "Henrik četvrti",
-        "Henrik fourth",
-        "Henrik fort",
-        "Henrik 4th",
-        "Henri IV.",
-        "Henri 4.",
-        "Henri četvrti",
-        "Henri fourth",
-        "Henri fort",
-        "Henri 4th"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8fda4376",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Iz koje je temeljne prirodne znanosti britansko - Novozelandski znanstvenik Ernest Rutherford dobio Nobelovu nagradu?",
-      "answers": [
-        "Kemije",
-        "Kemija",
-        "Chemistry",
-        "Kemistry"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d72ca640",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliko je 25 % od 80?",
-      "answers": [
-        "20",
-        "Dvadeset",
-        "Twenty"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-28032654",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove Segina fantasy arkadna videoigra iz 1989.g. u kojoj se Ax Battler, Tyris Flare i Gilius Thunderhead bore protiv Death Addera?",
-      "answers": [
-        "Golden Axe",
-        "Zlatna sjekira",
-        "Golden Aks"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4379cc2a",
+      "id": "daily-9a4158b4",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je grad na otoku New Providence na Bahamima početkom 18. stoljeća postao glavno gusarsko utočište i središte takozvane Gusarske republike?",
+      "question": "Kako se naziva stručnjak koji izrađuje zemljopisne karte?",
       "answers": [
-        "Nassau",
-        "Nasau"
+        "Kartograf",
+        "Kartaš",
+        "Karter",
+        "Kartar"
       ],
       "image": null
     },
     {
-      "id": "daily-d30fce73",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koja granica u astrofizici označava najveću moguću masu bijelog patuljka, približno 1,39 puta veću od mase Sunca?",
-      "answers": [
-        "Chandrasekharova granica",
-        "Chandrasekharova",
-        "Kandrasekarova",
-        "Kandrasekar",
-        "Chandrasekhars limit",
-        "Čandrasekars limit",
-        "Čandrasekars",
-        "Čandrasekarova"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c72e7572",
+      "id": "daily-26c39251",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koji je američki povjesničar i pisac 2001.g. napisao biografiju o drugom američkom predsjedniku, Johnu Adamsu?",
+      "question": "Rutherford B. Hayes je bio 19. predsjednik SAD-a ali je uz to, također bio i 'trezvenjak' pa je u Bijeloj Kući zabranjeno bili točenje kakvog pića?",
       "answers": [
-        "David McCullough",
-        "David Gaub McCullough",
-        "Dejvid Gob Mekalo",
-        "Dejvid Mekalo",
-        "David Mekalo",
-        "McCullough",
-        "Mekalo",
-        "Mekulo",
-        "Mculogh"
+        "Alkoholnog",
+        "Alkohola",
+        "Alcohol",
+        "Alkohol",
+        "Ljutog",
+        "Žestokog",
+        "Žestoko"
       ],
       "image": null
     },
     {
-      "id": "daily-6cdc1320",
+      "id": "daily-a31bfec8",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Zemljopis",
-      "question": "Kako se zove glavni grad Portugala?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Ono što Nijemci svojoj djeci za laku noć pričaju o Hanselu i Gretel, Hrvati svojoj djeci za laku noć pričaju o kome?",
       "answers": [
-        "Lisabon",
-        "Lisbon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-50032c52",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji nogometni klub igra svoje utakmice na Olimpijskom stadionu u Londonu, koji je specijalno napravljen za OI 2012.g.?",
-      "answers": [
-        "West Ham",
-        "Vest Hem"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-202c6d6b",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Koji planet se zbog gustog oblaka CO2 i efekta staklenika smatra najtoplijim u Sunčevu sustavu?",
-      "answers": [
-        "Venera",
-        "Venus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4e3ef45c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kako se naziva grana biologije koja proučava biljke?",
-      "answers": [
-        "Botanika"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3b4b68ea",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja se drevna civilizacija Mezopotamije među prvima povezuje s organiziranom proizvodnjom piva, o čemu svjedoče zapisi i himne posvećene božici Ninkasi?",
-      "answers": [
-        "Sumerani",
-        "Sumer",
-        "Sumerci",
-        "Sumers"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ac0fc30b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "AC Milan je umirovio dres sa brojem 6 u čast koje legende ovog kluba?",
-      "answers": [
-        "Franca Baresija",
-        "Franco Baresi",
-        "Franka Barezija",
-        "Franko Barezi",
-        "Baresija",
-        "Baresis",
-        "Baresi",
-        "Barezija",
-        "Barezis",
-        "Barezi"
+        "Ivici i Marici",
+        "Marici i Ivici",
+        "Ivica i Marica",
+        "Marica i Ivica",
+        "Marica Ivica",
+        "Ivica Marica",
+        "Marici Ivici",
+        "Ivici Marici"
       ],
       "image": null
     },
@@ -306,122 +67,398 @@
       "image": null
     },
     {
-      "id": "daily-31322019",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koja se kineska pustinja nalazi bok uz bok pustinji Gobi?",
-      "answers": [
-        "Takla Makan",
-        "Taklamakan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3f706973",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Koji instrument svira Yo-Yo Ma, Amerikanac, kineskog podrijetla, rođen u Parizu?",
-      "answers": [
-        "Čelo",
-        "Violončelo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5dffcd58",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji fiktivni šegrt ostavlja pismo majstoru da odlazi u svijet razgaziti čizmice i da će mu ih vratiti kada više nebudu tijesne?",
-      "answers": [
-        "Šegrt Hlapić",
-        "Hlapić"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1ad2da31",
+      "id": "daily-9626bfcf",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Koji je žuti Pokémon postao zaštitno lice čitave Pokémon franšize i najpoznatiji pratitelj Asha Ketchuma u animiranoj seriji?",
+      "question": "Kako se nazivaju posebne građevine poput piramida i Kolosa koje u serijalu videoigara Civilization daju velike bonuse civilizaciji koja ih izgradi?",
       "answers": [
-        "Pikachu",
-        "Pikaču",
-        "Pikacu",
-        "Pikaću"
+        "Wonders",
+        "Čuda",
+        "Svjetska čuda",
+        "World Wonders",
+        "Vorld vonders"
       ],
       "image": null
     },
     {
-      "id": "daily-ab9d87bb",
+      "id": "daily-f310f238",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Suprotno 'hibernaciji' zimi, kako nazivamo stanje mirovanja nekih životinja tijekom visokih ljetnih temperatura i suša?",
+      "answers": [
+        "Estivacija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-548c1116",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je brazilac proglašen najboljim igračem finala svjetskog nogometnog prvenstva 2002.g.?",
+      "answers": [
+        "Ronaldo Nazario",
+        "Ronaldo",
+        "Nazario"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9be57307",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad Kostarike?",
+      "answers": [
+        "San José",
+        "San Hose",
+        "San Joze",
+        "San hoze"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-97549358",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Kako se zove dječak iz obitelji McCallister koji ostane 'Sam u kući'?",
+      "answers": [
+        "Kevin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a2cd10ce",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koje je boje pojas koji judaš dobiva stjecanjem prvog majstorskog stupnja?",
+      "answers": [
+        "Crne",
+        "Crna",
+        "Crni",
+        "Black",
+        "Blek",
+        "Dark"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b34ad74",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Od kore kojeg se stabla, prema opisu Marka Pola, u Kini izrađivao materijal za proizvodnju novčanica?",
+      "answers": [
+        "Dud",
+        "Duda",
+        "Murva",
+        "Murve"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ce86e5dc",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Opsada kojeg grada na bliskom istoku se događala 70-e, 1099-e i 1187-e godine?",
+      "answers": [
+        "Jeruzalema",
+        "Jeruzalem"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f488ab57",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove građevina u bazi koju protivnička ekipa mora uništiti kako bi pobijedila u meču videoigre Dota 2?",
+      "answers": [
+        "Ancient",
+        "The Ancient",
+        "Drevna",
+        "Drevni"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2f0f8db3",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja je boja klorofila, pigmenta zahvaljujući kojem većina listova biljaka apsorbira svjetlost za fotosintezu?",
+      "answers": [
+        "Zelena",
+        "Green",
+        "Grin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a6525f3f",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koja je država nakon atentata u Sarajevu uputila Srbiji ultimatum čiji su zahtjevi postali jedan od neposrednih povoda za Pevi svjetski rat?",
+      "question": "Dok se odvijala legendarna kopnena bitka kod Termopila odvijala se i manje poznata pomorska bitka između istih suparnika kod kojeg rta, uz otok Eubeju?",
       "answers": [
-        "Austro Ugarska",
-        "Austrougarska",
-        "Austrija",
-        "Ugarska"
+        "Artemizija",
+        "Artemizij",
+        "Artemisium",
+        "Artemisiuma",
+        "Artemizijuma"
       ],
-      "image": null
+      "image": null,
+      "rarity": "gold"
     },
     {
-      "id": "daily-23e7c2c3",
+      "id": "daily-a8c8b886",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je venecijanski putnik u 13. stoljeću stigao do Azije i ostavio opis putovanja koji će stoljećima hraniti europsku maštu o bogatstvima Dalekog istoka?",
+      "topic": "Znanost",
+      "question": "Koja je znanstvenica osvojila Nobelovu nagradu i za fiziku i za kemiju?",
       "answers": [
-        "Marko Polo",
-        "Marco Polo",
-        "Polo"
+        "Marie Curie",
+        "Mari Kiri",
+        "Mari Kuri",
+        "Mari Kjuri",
+        "Curie",
+        "Kiri",
+        "Kuri",
+        "Kjuri",
+        "Maria Curie"
       ],
       "image": null
     },
     {
-      "id": "daily-adb8506c",
+      "id": "daily-7d20c661",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "U kojoj se engleskoj grofoviji odvija većina radnje Veselih pustolovina Robina Hooda, koje je napisao Howard Pyle?",
+      "question": "Koja je spisateljica napisala 'Tajni Vrt'?",
       "answers": [
-        "Nottinghamshire",
-        "Notingemšajr",
-        "Nottingham",
-        "Notingem"
+        "Frances Hodgson Burnett",
+        "Frances Eliza Hodgson Burnett",
+        "Frances Burnett",
+        "Fransis Elajza Hodžsn Bernet",
+        "Fransis Elajza Hodžsn Bernet",
+        "Fransis Bernet",
+        "Hodgson Burnett",
+        "Burnett",
+        "Hodgson",
+        "Hodžson Bernet",
+        "Bernet",
+        "Hodžson"
       ],
       "image": null
     },
     {
-      "id": "daily-75c61f99",
+      "id": "daily-aafdc203",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je američki predsjednik za svoje političke novinske članke koristio pseudonime Novanglus, Humphrey Ploughjogger i Candidus?",
+      "answers": [
+        "John Adams",
+        "Džon Adams",
+        "Adams"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3ef1845a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kako se naziva Real Madridova generacija koja je dominirala španjolskim nogometom 60-ih, te 1966.g. osvojila Kup prvaka, a bila je sastavljena samo od španjolskih igrača?",
+      "answers": [
+        "Ye Ye",
+        "Je je"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-c9579506",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koje je boje središnji krug standardne streličarske mete?",
+      "answers": [
+        "Žute",
+        "Žuta",
+        "Žuti",
+        "Žut",
+        "Yellow",
+        "Jelov",
+        "Gelb"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e919781e",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Vojnici kojeg budućeg rimskog cara s vlasti uklanjaju cara Vitelija?",
+      "answers": [
+        "Vespazijana",
+        "Vespazijan",
+        "Vespasianus",
+        "Vespazijanus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-92694c78",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja reprezentacija je osvojila SP u nogometu 2006.g.?",
+      "answers": [
+        "Italija",
+        "Talijani",
+        "Italijanska",
+        "Talijanska",
+        "Italy",
+        "Italys",
+        "Itali",
+        "Italis",
+        "Ita",
+        "It",
+        "Tal",
+        "Italijska",
+        "Italo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60027cfd",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Mongolije?",
+      "answers": [
+        "Ulaanbaatar",
+        "Ulanbator",
+        "Ulanbatar",
+        "Ulaan Baatar",
+        "Ulan Bator"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-854c03d5",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove vjerni sluga koji prati Phileasa Fogga u Verne-ovoj knjizi 'Putovanje oko svijeta u 80 dana?",
+      "answers": [
+        "Passepartout",
+        "Pasepartu",
+        "Pasepart",
+        "Paseparto",
+        "Pasepartut",
+        "Paspartu",
+        "Paspartut",
+        "Paspartu",
+        "Pasparte",
+        "Pasparto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bde3f9e2",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Ako bacimo običan novčić za okladu, koliko mogućih ishoda ima?",
+      "answers": [
+        "2",
+        "Dva",
+        "Two",
+        "Tvu",
+        "Zwei",
+        "Cvaj",
+        "Do",
+        "Oba",
+        "II"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f5eb223d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "Od kojeg je kemijskog elementa primarno bio kovan rimski novac Sestercij?",
+      "question": "Kraj koje slavonske rijeke Iliri nanose Rimljanima jedan od najtežih vojnih poraza u njihovoj povijesti?",
       "answers": [
-        "Bakra",
-        "Cu",
-        "Bakar",
-        "Copper",
-        "Koper",
-        "Cuprum"
+        "Vuke",
+        "Vuka",
+        "Rijeke Vuke",
+        "Rijeka Vuka"
       ],
       "image": null
     },
     {
-      "id": "daily-40810593",
+      "id": "daily-67c06086",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koji je sumerski bog vjetra, zraka i oluja bio jedno od najmoćnijih božanstava mezopotamskog panteona, a bio je toliko svet da ga drugi bogovi nisu mogli gledati?",
+      "question": "Kako se zvala najpoznatija fenička kolonija na sjeveru Afrike, kasniji veliki suparnik Rima?",
       "answers": [
-        "Enlil",
-        "Enil",
-        "Nunamnir"
+        "Kartaga",
+        "Carthage",
+        "Kartagina",
+        "Carthagine"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c650601b",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Koji znanstveni naziv koristimo za isparavanje vode iz biljaka?",
+      "answers": [
+        "Transpiracija"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-0a5b2af1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koga je časopis 'Time' proglasio osobom 20-og stoljeća?",
+      "answers": [
+        "Alberta Einsteina",
+        "Albert Einstein",
+        "Alberta Ajnštajna",
+        "Albert Ajnštajn",
+        "Einsteina",
+        "Einstein",
+        "Ajnštajna",
+        "Ajnštajn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-550383ea",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Tko je zapovijedao brodom São Gabriel kada je 1498.g., nakon plovidbe oko Rta dobre nade, stigao do obale Indije?",
+      "answers": [
+        "Vasco da Gama",
+        "Vasko da Gama",
+        "Da Gama",
+        "Gama"
       ],
       "image": null
     }

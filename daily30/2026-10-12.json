@@ -1,477 +1,462 @@
 {
   "version": 2,
   "date": "2026-10-12",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-4144c67c",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koja je glumica utjelovila lik Hermione Granger?",
-      "answers": [
-        "Emma Watson",
-        "Ema Vatson",
-        "Watson",
-        "Vatson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8c35cd72",
+      "id": "daily-dadb7fcb",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se naziva ideologija koja zagovara ekstremni nacionalizam i autoritarnu vlast, često uz kult vođe?",
+      "topic": "Sport",
+      "question": "Kako se naziva streljačka olimpijska disciplina u kojoj natjecatelji pucaju na glinene mete izbačene u zrak iz kućice ispred njih?",
       "answers": [
-        "Fašizam"
+        "Trap"
       ],
       "image": null
     },
     {
-      "id": "daily-6f6c81bf",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove indijski borac iz arkadne videoigre Street Fighter II, poznat po rastezljivim udovima i napadima vatrom?",
-      "answers": [
-        "Dhalsim",
-        "Dalsim",
-        "Delsim"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-06db7e23",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Glazba",
-      "question": "Koji američki skladatelj i dirigent potpisuje napete i zastrašujuće note filma 'Ralje' za koje je dobio i Oscara?",
-      "answers": [
-        "John Williams",
-        "John Towner Williams",
-        "Džon Viliams",
-        "Williams",
-        "Viliams"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bcf8ff8a",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U knjizi 'Vještice' autora Roalda Dahla, u koju životinju vještice pretvore dječaka pripovjedača?",
-      "answers": [
-        "Miša",
-        "Miš",
-        "Mouse",
-        "Maus",
-        "Mausa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-24b3f7a1",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U kojem romanu Marka Twaina kraljević završava na londonskim ulicama, a prosjak u kraljevskoj palači?",
-      "answers": [
-        "Kraljević i Prosjak",
-        "Kraljević Prosjak",
-        "Kraljević i Prosjačić",
-        "Kraljević Prosjačić",
-        "Kraljević i Prosijak",
-        "Kraljević Prosijak",
-        "Kralj i Prosjak",
-        "Kralj Prosjak",
-        "Kralj i Prosjačić",
-        "Kralj Prosjačić",
-        "The Prince and the Pauper",
-        "Prince and the Pauper",
-        "D princ end d pouper",
-        "Princ end d pouper"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9025f6d3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je američki predsjednik tijekom posjeta Zapadnom Berlinu 1963.g. izgovorio čuvene riječi 'Ich bin ein Berliner'?",
-      "answers": [
-        "John F. Kennedy",
-        "Džon F. Kenedi",
-        "John Fitzgerald Kennedy",
-        "Džon Ficgerald Kenedi",
-        "John Kennedy",
-        "Džon Kenedi",
-        "Kennedy",
-        "Kenedi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-be5b2f90",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je gusarski kapetan poznat pod nadimkom Black Sam zapovijedao brodom Whydah Gally prije njegova potonuća kod Cape Coda 1717.g.?",
-      "answers": [
-        "Samuel Bellamy",
-        "Sam Bellamy",
-        "Black Sam Bellamy",
-        "Crni Sam Bellamy",
-        "Belami",
-        "Bellamy"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ffa45343",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koja je mjerna jedinica dobila ime po francuskom matematičaru i fizičaru Blaiseu Pascalu?",
-      "answers": [
-        "Paskal",
-        "Pascal",
-        "Pa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a3510571",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Za himnu koje države je tekat napisao Ferenc Kölcsey, a glazbu skladao Ferenc Erkel?",
-      "answers": [
-        "Mađarsku",
-        "Mađarske",
-        "Mađarska",
-        "Hungary",
-        "Hangari",
-        "Hungari",
-        "Hangary",
-        "Madžarske",
-        "Madžarska",
-        "Madžarsku"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e2fa7758",
+      "id": "daily-bad81d2c",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Kojeg je američkog predsjednika ustrijelio Charles J. Gutieau, zbog čega je, dva mjeseca poslije predsjednik podlegao ozljedama?",
+      "question": "Tko je na mjesto američkog predsjednika bio biran čak četiri puta?",
       "answers": [
-        "Jamesa Abrama Garfielda",
-        "James Abram Garfielda",
-        "James Abram Garfield",
-        "Garfield",
-        "Garfild",
-        "Garfielda",
-        "Garfilda"
+        "Franklin Delano Roosevelt",
+        "Delano Roosevelt",
+        "Roosevelt",
+        "Ruzvelt"
       ],
       "image": null
     },
     {
-      "id": "daily-ba27ae43",
+      "id": "daily-0d663e37",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koja je službena valuta u Japanu?",
+      "topic": "Sport",
+      "question": "Popularna novogodišnja turneja koja se odvija u sklopu skijaških skokova obuhvaća koliko skakaonica?",
       "answers": [
-        "Jen",
-        "Yen",
-        "Japanski Jen",
-        "Japanski Yen",
-        "JPY"
+        "4",
+        "Četiri",
+        "Četri",
+        "Four",
+        "For",
+        "IV"
       ],
       "image": null
     },
     {
-      "id": "daily-e425cb1c",
+      "id": "daily-837a3ebe",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Koji je brazilski 'čarobnjak' osvojio Zlatnu Loptu 2005.g. ispred engleskih velikana Lamparda i Gerrarda?",
+      "question": "Koji se nogometni derbi igra u Milanu?",
       "answers": [
-        "Ronaldinho",
-        "Ronaldinjo"
+        "Derby della Madonnina",
+        "Derbi dela Madonina",
+        "Madonnina",
+        "Madonina"
       ],
       "image": null
     },
     {
-      "id": "daily-72d39632",
+      "id": "daily-45e931a8",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se zvao brod kapetana Williama Kidda, opremljen jedrima i veslima, kojim je 1696.g. krenuo u lov na gusare i neprijateljske brodove?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tko je napisao fantastičnu knjigu za djecu o dječaku Jamesu i divovskoj breskvi?",
       "answers": [
-        "Adventure Galley",
-        "Advenčur Galej",
-        "Adventur Gali",
-        "Avanturistička galija",
-        "Avanturska Galija",
-        "Galley",
-        "Galej",
-        "Galija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8a46c37d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji je talijanski grad bio dom obiteljima Amati, Guarneri i Stradivari?",
-      "answers": [
-        "Cremona",
-        "Kremona"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-19658af3",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Tko je bio posljednji iz plejade rimskih careva koji su vladali u 'godini 4 cara', točnije u 69-oj poslije Krista?",
-      "answers": [
-        "Vespazijan",
-        "Vespasianus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7b380857",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je oblik ratovanja, nakon što su se vojske na Zapadnom bojištu ukopale u kilometre povezanih položaja zaštićenih bodljikavom žicom i strojnicama, postao simbol Prvog svjetskog rata?",
-      "answers": [
-        "Rovovsko ratovanje",
-        "Rovovi",
-        "Rovovsko",
-        "Rovsko",
-        "Rovarenje",
-        "Rovanje"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-398ca9bd",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Najpoznatiji stari perzijski novac je darik, visokokvalitetni zlatnik iz  6. stoljeća pr. Kr. Imao je masu od 8,385 grama i čistoću zlata od oko 95,8%, a na sebi je nosio prikaz kojeg kralja u klečećem stavu s lukom i strijelom koji ga je dao i kovati?",
-      "answers": [
-        "Darija I. Velikog",
-        "Daria",
-        "Darja",
-        "Dario",
-        "Darijo",
-        "Darijo I. Veliki",
-        "Darijo I. Veliki",
-        "Daria I. Velikog",
-        "Daria I. Velikog",
-        "Darijo Prvi",
-        "Dario Prvi",
-        "Daria Prvog",
-        "Darija Prvog",
-        "Darija Prvog Velikog",
-        "Darijo Prvi Veliki",
-        "Dario Veliki",
-        "Darijo Veliki",
-        "Darija Velikog",
-        "Daria Velikog",
-        "Dario the Great",
-        "Dario d Grejt",
-        "Dario First",
-        "Dario Frst",
-        "Darayavahuš",
-        "Dario 1st"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e3c42b4b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Kojem su starorimskom rodu pripadali Julije Cezar i Oktavijan?",
-      "answers": [
-        "Julijevcima",
-        "Julijevci",
-        "Julijevskom",
-        "Julijskom",
-        "Julijevom"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f6a14b62",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "U koji se europski grad Marko Polo 1295.g. vratio nakon približno 24 godine izbivanja i putovanja Azijom?",
-      "answers": [
-        "Veneciju",
-        "Venecija",
-        "Venetiu",
-        "Venetia",
-        "Venetias"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-340a5614",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji je poznati engleski botaničar rođen 1743. ostao upamćen po putovanju sa Jamesom Cookom u Australiju gdje je otkrio mnoge nove biljne vrste?",
-      "answers": [
-        "Joseph Banks",
-        "Džozef Benks",
-        "Sir Joseph Banks",
-        "Sr Džozef Benks",
-        "Banks",
-        "Benks"
+        "Roald Dahl",
+        "Dahl",
+        "Dal",
+        "Rouald Dal"
       ],
       "image": null,
-      "rarity": "legendary"
+      "rarity": "silver"
     },
     {
-      "id": "daily-2b49ac10",
+      "id": "daily-ea524bc1",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Protoni i neutroni tvore jezgru, a elektroni omotač koje čestice?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja je švicarska književnica stvorila lik i djelo malene Heidi?",
       "answers": [
-        "Atom",
-        "Atoma",
-        "Atomu",
-        "Atomi",
-        "Atoms"
+        "Johanne Spyri",
+        "Johanna Spyri",
+        "Johana Spiri",
+        "Spyri",
+        "Spyrije",
+        "Spyris",
+        "Spiri",
+        "Spirije",
+        "Spiris",
+        "Johane Spiri"
       ],
       "image": null
     },
     {
-      "id": "daily-6795a00e",
+      "id": "daily-a4fb30ae",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "U kojem je gradu, Ronald Reagan 1984.g. otvorio Ljetne Olimpijske Igre?",
-      "answers": [
-        "Los Angeles",
-        "Los Enđels",
-        "Los Anđels",
-        "Los Angelesu",
-        "Los Enđelsu",
-        "Los Anđelsu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9fdd38d1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "'Glava od žada' koja predstavlja majanskog boga sunca (Kinich Ahau), je zadivljujući, 5kg težak poludragi kamen koji je pronađen u Belizeu,na arheološkom nalazištu koje se zove kako?",
-      "answers": [
-        "Altun Ha",
-        "Altunha"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0a0aa13e",
-      "type": "blitz",
-      "difficulty": 3,
+      "difficulty": 2,
       "topic": "FloraFauna",
-      "question": "Kojoj pasmini pripada Rin Tin Tin, pas spašen iz 1. Svjetskog rata koji je kasnije postao filmska zvijezda?",
+      "question": "Na kojoj životinji je Isus ujahao u Jeruzalem?",
       "answers": [
-        "Njemački ovčar"
+        "Magarcu",
+        "Magarac",
+        "Na magarcu"
       ],
       "image": null
     },
     {
-      "id": "daily-bb115c67",
+      "id": "daily-d4a4b19c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Ako joj je dao ime 'Domus Aurea', kakvu je onda kuću sagradio rimski car Neron na brežuljku Eskvilinu?",
+      "answers": [
+        "Zlatnu",
+        "Aureu",
+        "Aureus",
+        "Zlatna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2d6d20d5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koje je kodno ime nosila američka desantna plaža na kojoj su savezničke snage 6. lipnja(juna) 1944.g. naišle na posebno snažan njemački otpor i pretrpjele najveće gubitke među pet glavnih desantnih plaža?",
+      "answers": [
+        "Omaha"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5ae8eb72",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kopno kojeg kontinenta Robinson Crusoe povremeno vidi sa otoka na kojem je završio nakon brodoloma?",
+      "answers": [
+        "Južne Amerike",
+        "Južna Amerika",
+        "South America",
+        "South Americas",
+        "Saut Amerika",
+        "Saut Amerikas",
+        "Latinske Amerike",
+        "Latinska Amerika",
+        "Latin America",
+        "Latin Amerika",
+        "Sud Amerika",
+        "Sud Amerikas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-86c18f56",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Koliko je Zlatnih lopti osvojio Lionel Messi?",
+      "question": "Koji je nogometni trener priuštio Atleticu iz Madrida dvije titule španjolskih prvaka u ovom tisućljeću?",
       "answers": [
-        "8",
-        "Osam",
-        "VIII",
-        "Eight",
-        "Ejt",
-        "Eijt",
-        "Eigt"
+        "Diego Simeone",
+        "Dijego Simeone",
+        "Simeone"
       ],
       "image": null
     },
     {
-      "id": "daily-5b8da836",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koji film prati povijest stvaranja Facebooka?",
-      "answers": [
-        "Društvena mreža",
-        "The Social Network",
-        "Sošl Netvork",
-        "Social Network"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bb13992f",
+      "id": "daily-d1444fda",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Strpljenje se često nagrađuje, barem prema poslovici koja kaže 'Tko čeka, taj i ...'?",
+      "topic": "Moreplovci",
+      "question": "Koji je gusar, pravim imenom Edward Teach, zastrašivao neprijatelje izgledom, ogromnom crnom bradom i reputacijom koja je nadživjela njegovu relativno kratku gusarsku karijeru?",
       "answers": [
-        "Dočeka"
+        "Crnobradi",
+        "Blackbeard",
+        "Blakbird"
       ],
       "image": null
     },
     {
-      "id": "daily-99ad4764",
+      "id": "daily-ab17ddbd",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koje glasovito burgundsko vino, proizvedeno iz iznimno malenog vinograda u Vosne-Romanéeu, redovito pripada među najskuplja vina na svijetu?",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Na kojem je otočju Charles Darwin proučavao zebe?",
       "answers": [
-        "Romanée Conti",
-        "Romanee Conti",
-        "Romanée Conti",
-        "Romanee Conti",
-        "Romane Konti"
+        "Galapagos",
+        "Galapagosu"
       ],
       "image": null
     },
     {
-      "id": "daily-bd40987e",
+      "id": "daily-b038fe61",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Zemljopis",
+      "question": "Za ovo tanzanijsko slano jezero često kažemo da je 'jezero smrti' zbog svoje visoke alkalnosti i preko 12pH. Crvenkasto je roze boje, obitavalište flamingosa i posljednji dom mnogim okamenjenim životinjama u neposrednoj blizini vode, čija ih visoka alkalnost pretvara u kamene statue, a jezero se zove kako?",
+      "answers": [
+        "Natron"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-624cec9c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je znanstvenik svirao violinu, na kojoj je ugravirano 'Lina', a koja se 2025.g. na aukciji prodala za nevjerojatnih 860 000 funti?",
+      "answers": [
+        "Albert Einstein",
+        "Albert Ajnštajn",
+        "Einstein",
+        "Ajnštajn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2a0ad501",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove nasmiješeni plavokosi crtani lik u plavo-žutom kombinezonu koji služi kao maskota korporacije Vault-Tec i pojavljuje se na brojnim ikonama i ilustracijama u videoigri Fallout?",
+      "question": "Kako se zove novinarka koja postaje jedna od najvažnijih osoba u životu Nathana Drakea u serijalu videoigara Uncharted?",
       "answers": [
-        "Vault Boy",
-        "Volt Boj",
-        "Vaultboj",
-        "Vault Boj",
-        "Vaultboy"
+        "Elena Fisher",
+        "Elena Fišer",
+        "Fisher",
+        "Fišer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60bc1c3e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je britanski pomorski časnik 1722.g. porazio gusarskog kapetana Bartholomewa Robertsa i poslije bio proglašen vitezom zbog borbe protiv gusarstva?",
+      "answers": [
+        "Chaloner Ogle",
+        "Šaloner Ogl",
+        "Ogle",
+        "Ogl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fd6d189f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je korejski admiral 1597.g. u bitci kod Myeongnyanga s tek trinaest ratnih brodova zaustavio znatno veću japansku flotu?",
+      "answers": [
+        "Yi Sun-sin",
+        "I Sun-sin",
+        "Yi Sunsin",
+        "I Sunsin",
+        "Li Sun-sin",
+        "Sun sin",
+        "Sin",
+        "Sunsin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-09968434",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "U kojoj se državi odigralo Svjetsko nogometno prvenstvo 2010.g.?",
+      "answers": [
+        "Južno Afričkoj Republici",
+        "Južno Afrička Republika",
+        "Južnoafrička Republika",
+        "Juznoafričkoj Republici",
+        "South African Republic",
+        "Saut Afrikan Republik",
+        "Southafrican Republic",
+        "Sautafrikan Republik",
+        "Jar",
+        "Jaru",
+        "Sar",
+        "Saru"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3885323f",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Povijest",
+      "question": "Koje je godine započeo Prvi svjetski rat?",
+      "answers": [
+        "1914"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-77048a84",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji se kanal nalazi između Panama Cityja i Colona?",
+      "answers": [
+        "Panamski Kanal",
+        "Panamski",
+        "Panama",
+        "Panamas",
+        "Panamerican",
+        "Panamerikan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8591d729",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Po kojem cvijetu ime nosi vrt u sklopu Bijele Kuće u SAD-u?",
+      "answers": [
+        "Ruži",
+        "Ruža",
+        "Ružama",
+        "Ruže",
+        "Roses",
+        "Rozes",
+        "Rose",
+        "Roze"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6637f56e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Od koliko se atoma sastoji monoatomski ion?",
+      "answers": [
+        "Jednog",
+        "Jedno",
+        "Jedna",
+        "Jedan",
+        "1",
+        "One",
+        "On",
+        "I",
+        "Jedini"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-449133ef",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove crna ptica iz Angry Birdsa čija je posebna sposobnost eksplozija, zbog čega izgledom i funkcijom podsjeća na jednu eksplozivnu napravu?",
+      "answers": [
+        "Bomb",
+        "Bomba"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8e6035f8",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji se viseći most, otvoren 1937.g., proteže preko tjesnaca koji povezuje zaljev San Francisca s Tihim oceanom i postao je jedan od simbola Kalifornije?",
+      "answers": [
+        "Golden Gate",
+        "Golden Gate Bridge",
+        "Golden Gejt",
+        "Golden Gejt Bridž",
+        "Zlatna Vrata"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5f69d91e",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Kojem se rimskom kralju pripisuje ustroj luke u Ostiji, izgradnja solana i zatvora te drvenog mosta preko Tibera?",
+      "answers": [
+        "Anku Marciju",
+        "Anko Marcije",
+        "Ancus Marcius",
+        "Ancusu Marciusu",
+        "Ankus Marcijus",
+        "Ankusu Marcijusu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e353cc69",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "'Wilhelmus' je himna koje države?",
+      "answers": [
+        "Nizozemske",
+        "Nizozemska",
+        "Holandije",
+        "Holand",
+        "Holandska",
+        "Oranje"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-e5a8cdc8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Edvardijanski, Karolinški i Lancastrijanski ratovi su se svi odvijali u sklopu kojeg velikog rata?",
+      "answers": [
+        "Stogodišnjeg",
+        "Stogodišnji",
+        "One hundreds",
+        "Von handreds",
+        "100-godišnjeg",
+        "100-godišnji",
+        "Stotinu godišnjeg"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-89e16ada",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koliko sekundi NBA momčad ima za završiti napad kada stekne novi posjed lopte, prije nego što se oglasi sirena za istek napada?",
+      "answers": [
+        "24",
+        "Dvadeset i četiri",
+        "Dvajest četiri",
+        "Dvadeset četiri",
+        "Twenty four",
+        "Tventi for",
+        "XXIV"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ea22f6f1",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva pšenično pivo koje zadržava kvasac pa zbog toga obično ima karakterističan mutan izgled?",
+      "answers": [
+        "Hefeweizen",
+        "Hefeweizenbier",
+        "Hefe",
+        "Hefeweissbier",
+        "Hefebijelo"
       ],
       "image": null
     }

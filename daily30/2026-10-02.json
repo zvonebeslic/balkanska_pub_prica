@@ -1,445 +1,430 @@
 {
   "version": 2,
   "date": "2026-10-02",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-54d04af3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Prema poznatoj narodnoj poslovici, tko rano rani, koliko sreća grabi?",
-      "answers": [
-        "Dvije",
-        "2",
-        "Dvi",
-        "Two",
-        "Tvu",
-        "Zweii",
-        "Zwei",
-        "Cvaj",
-        "Obe",
-        "Obadvi",
-        "Obe dvi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5ae017ec",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Zemljopis",
-      "question": "Kako se zove glavni grad Gvatemale?",
-      "answers": [
-        "Guatemala City",
-        "Guatemala",
-        "Gvatemala"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5c0406e2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je prirodoslovac 1831.g. krenuo na putovanje brodom HMS Beagle, ne sluteći da će mu opažanja s tog putovanja pomoći oblikovati jednu od najutjecajnijih znanstvenih teorija u povijesti?",
-      "answers": [
-        "Charles Darwin",
-        "Čarls Darvin",
-        "Darwin",
-        "Darvin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9698b90e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Najviše kisika na Zemlji zapravo ne proizvode šume nego morski fitoplankton i koji još autotrofni organizmi?",
-      "answers": [
-        "Alge",
-        "Alga",
-        "Algae",
-        "Alges",
-        "Algas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7171c852",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Na dvor kineskog cara nakon ekspedicija Zheng Hea stigla je koja egzotična afrička životinja koju su Kinezi povezivali s mitskim qilinom?",
-      "answers": [
-        "Žirafa",
-        "Giraffe",
-        "Žirafe"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a497cd46",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koje ime nosi drevna vještina preobrazbe neplemenitih metala u plemenite, te težnja za pronalaskom Kamena mudraca odnosno potraga za životnim eliksirom?",
-      "answers": [
-        "Alkemija",
-        "Alchemy",
-        "Alkemi",
-        "Alčemi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9c21906e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Kojoj se utjecajnoj ljubavnici francuskog kralja Luja XV. tradicionalno pripisuje rečenica 'Nakon nas potop'?",
-      "answers": [
-        "Madame de Pompadour",
-        "Madam de Pompador",
-        "Jeanne Antoinette Poisson",
-        "Markiza de Pompadour",
-        "De Pompadour",
-        "DenPompador",
-        "Poisson",
-        "Poizon",
-        "Žane Antoniet Poizon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bb703f6d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kojim se engleskim izrazom nazivaju prijenosne igraće konzole poput Game Boya, PSP-a i Steam Decka?",
-      "answers": [
-        "Handheld",
-        "Hendheld",
-        "Hand Held",
-        "Hend Held"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-06b86466",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji je Medvjedić inspiriran američkim predsjednikom Theodoreom Rooseveltom?",
-      "answers": [
-        "Teddy Bear",
-        "Teddy",
-        "Tedi",
-        "Teddys Bear",
-        "Teddys",
-        "Tedis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c0140072",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Tko je napisao operu 'Čarobna frula'?",
-      "answers": [
-        "Wolfgang Mozart",
-        "Wolfgang Amadeus Mozart",
-        "Volfgang Amadeus Mocart",
-        "Volfgang Mocart",
-        "Mozart",
-        "Mocart"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-85d02c4d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja grana zoologije se bavi proučavanjem ptica?",
-      "answers": [
-        "Ornitologija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f1b13d9a",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Prezime kojeg američkog glumca i hrvača možemo poistovjetiti sa večernjim objedom iz starog Rima?",
-      "answers": [
-        "Cena"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1da0fc72",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Tko je otpjevao pjesmu 'Imagine' koja se našla i na istoimenom albumu iz 1971.?",
-      "answers": [
-        "John Lennon",
-        "Džon Lenon",
-        "Lennon",
-        "Lenon",
-        "John Winston Lennon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f476e558",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se zove pojam u kršćanstvu koji označava tri osobe u jednom Bogu: Oca, Sina i Duha Svetoga?",
-      "answers": [
-        "Presveto Trojstvo",
-        "Trojstvo",
-        "Sveto Trojstvo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c75f4967",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Svi znamo da je Maradona 1986.g. zabio 'Božju ruku' , ali malo tko zna na kojem se stadionu to dogodilo. Danas tu igra ekipa Club Americe te meksička reprezentacija, a stadion se zove kako?",
-      "answers": [
-        "Azteca Stadium",
-        "Estadio Azteca",
-        "Azteca",
-        "Asteka",
-        "Astec",
-        "Aztec",
-        "Astek",
-        "Aztek",
-        "Azteka",
-        "Aztec"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-322e1294",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Nastavi klupsku karijeru Ronalda Nazaria: Cruzeiro, PSV, Barcelona, Inter Milan, Real Madrid pa onda tko?",
-      "answers": [
-        "AC Milan",
-        "Milan",
-        "Milen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4a1ad75d",
+      "id": "daily-68e67775",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koji meksički destilat zaštićenog zemljopisnog podrijetla mora biti proizveden od plave Weberove agave, a ime je dobio po gradu u saveznoj državi Jalisco?",
+      "question": "Koji broj nastavlja niz 1, 4, 9, 16, 25...?",
       "answers": [
-        "Tequila",
-        "Tekila"
+        "36",
+        "Trideset šest",
+        "Thirty six",
+        "Tirti siks",
+        "XXXVI"
       ],
       "image": null
     },
     {
-      "id": "daily-ac9be488",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "U filmu 'Matrix', koju boju pilule Neo bira kako bi saznao istinu o svijetu u kojem živi?",
-      "answers": [
-        "Crvenu pilulu",
-        "Crvenu",
-        "Red pill",
-        "Red"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4991d078",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koliko je točaka sadržavao mirovni program američkog predsjednika Woodrowa Wilsona, predstavljen početkom 1918.g. kao prijedlog uređenja svijeta nakon završetka 1. svjetskog rata?",
-      "answers": [
-        "14",
-        "Četrnaest",
-        "Fourteen",
-        "Fortin",
-        "Forteen",
-        "XIV"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e8ed5a76",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Zemljopis",
-      "question": "Koji je glavni grad Austrije?",
-      "answers": [
-        "Beč",
-        "Vienna",
-        "Viena",
-        "Vijena",
-        "Vijen",
-        "Wien",
-        "Vien"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e292be36",
+      "id": "daily-e314514a",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Od kojeg se voća proizvodi klasično vino poput crnog, bijelog i rosé vina?",
+      "question": "Ako znamo da mu je prezime bilo Gucci, koje je onda bilo ime osnivaču modne kuće Gucci, koji je 1921.g. u Firenci pokrenuo posao iz kojeg će nastati jedan od najpoznatijih talijanskih luksuznih brendova?",
       "answers": [
-        "Grožđe",
-        "Grožđa",
-        "Grozđe",
-        "Grozda",
-        "Grape",
-        "Grejp",
-        "Grapes"
+        "Guccio",
+        "Gučio",
+        "Gučo"
       ],
       "image": null
     },
     {
-      "id": "daily-6e0ca977",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Tko je napisao knjigu 'Lovac u žitu' (The Catcher in the Rye)?",
-      "answers": [
-        "Jerome David Salinger",
-        "Džeromi Dejvid Selinger",
-        "Jerome Salinger",
-        "Jerome D. Salinger",
-        "Džerome D. Selinger",
-        "Džerome Selinger",
-        "Salinger",
-        "Selinger"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ea4a3176",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koje ime je nosio Obamin zakon o općem i obaveznom zdravstvenom osiguranju?",
-      "answers": [
-        "Obamacare",
-        "Obamaker"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0c59a443",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koji je njemački proizvođač automobila poznat po modelima 911 i Cayenne?",
-      "answers": [
-        "Porsche",
-        "Porše"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e5e83ca6",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koja je spisateljica za djecu napisala pustolovine Pipi Duge Čarape?",
-      "answers": [
-        "Astrid Lindgren",
-        "Lindgren",
-        "Lindgrin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8e177cb3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Amfiteatar u El Džemu ponosno nosi titulu najvećeg rimskog amfiteatra u Africi, a nalazi se u kojoj državi?",
-      "answers": [
-        "Tunis",
-        "Tunisu",
-        "Tunisia",
-        "Tuniža"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9cfb045b",
+      "id": "daily-e6325374",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove stariji učenjak i pripovjedač iz serijala videoigara Diablo poznat po rečenici 'Stay awhile and listen' (ostani malo i slušaj)?",
+      "question": "Kako se zove zeleni borac iz Brazila koji u arkadnoj videoigri Street Fighter II može napadati protivnike električnom energijom, a ime, iako je muško, dijeli s jednom hrvatskom atletičarkom?",
       "answers": [
-        "Deckard Cain",
-        "Dekard Cain",
-        "Dekard Kejn",
-        "Deckard",
-        "Dekart",
-        "Cain",
-        "Kejn"
+        "Blanka",
+        "Blenka"
       ],
       "image": null
     },
     {
-      "id": "daily-96566353",
+      "id": "daily-f35af643",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Rimski car Decije imao je dva sina koja su se također domogla carske titule, Hrenija i Hostilijana, a koji od njih je navodno umro od kuge?",
+      "answers": [
+        "Hostilijan",
+        "Hostilianus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0598709b",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je trojanski svećenik upozoravao svoje sugrađane da ne vjeruju drvenom konju ostavljenom pred gradskim zidinama?",
+      "topic": "Zemljopis",
+      "question": "Nukuʻalofa je glavni grad koje države?",
       "answers": [
-        "Laokont",
-        "Laokoon"
+        "Tonge",
+        "Tonga"
       ],
       "image": null
     },
     {
-      "id": "daily-59d43397",
+      "id": "daily-67540b83",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koje ribe osim škrga imaju i plivajući mjehur koji im omogućava da udišu kisik?",
+      "answers": [
+        "Dvodihalice"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a2b467d6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Tko je bio otac Lise Marie, prve žene Michaela Jacksona?",
+      "answers": [
+        "Elvis Presley",
+        "Elvis Presli",
+        "Presley",
+        "Presli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-47ac90e4",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U bajci Ivane Brlić Mažuranić, kako se zvao starješina začarane šume, po kojem je šuma i dobila ime?",
+      "answers": [
+        "Stribor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-616f4b4f",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Film",
-      "question": "Koji film završava kultnom scenom u kojoj protagonist Truman shvaća da je cijeli njegov život TV show?",
+      "question": "Koji je jedini horor film u povijesti koji je osvojio Oscara za najbolji film?",
       "answers": [
-        "Trumanov Show",
-        "Trumanov Šov",
-        "The Truman Show",
-        "D Truman Šov"
+        "Kad jaganjci utihnu",
+        "The Silence of the Lambs",
+        "Sajlenc of d lembs"
       ],
       "image": null
     },
     {
-      "id": "daily-800fd227",
+      "id": "daily-7d09e05e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kojim se engleskim gaming izrazom naziva vibracija kontrolera koja igraču omogućuje da fizički osjeti udarce, sudare i druge događaje u igri?",
+      "answers": [
+        "Rumble",
+        "Rambl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-59cf2707",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Kako se zove geometrijsko tijelo koje ima šest kvadratnih strana?",
+      "question": "Koji se dio ljudskog kostura, uz dvije prekrižene kosti, nalazi na piktogramu koji upozorava na otrovnost?",
       "answers": [
-        "Kocka"
+        "Lubanja",
+        "Glava",
+        "Head",
+        "Hed",
+        "Skull",
+        "Skul",
+        "Skal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-81dd9121",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Prema mitu, Ahileja nije ubio Hektor ni neki drugi slavni mačevalac. Pogodila ga je strijela koju je ispalio trojanski princ, a prema nekim verzijama usmjerio bog Apolon. Tko je ispalio strijelu?",
+      "answers": [
+        "Paris"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b45bc0ab",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koja je habsburška vladarica godinama gradila savez protiv Pruske jer nije mogla prihvatiti gubitak bogate Šleske koju joj je Fridrik II. oteo tijekom prethodnih ratova?",
+      "answers": [
+        "Marija Terezija",
+        "Maria Theresa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b5033063",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koje more se nalazi ispred obale Omana?",
+      "answers": [
+        "Arapsko More",
+        "Arapsko",
+        "Arabian",
+        "Arab",
+        "Arabs",
+        "Arabijan",
+        "Raebijn",
+        "Arebijan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-43e5a031",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koliko Keplerovih zakona o gibanju planeta poznajemo danas?",
+      "answers": [
+        "3",
+        "Tri",
+        "Three",
+        "Tre",
+        "III",
+        "Drei",
+        "Draj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4201a040",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Od kojeg je kemijskog elementa napravljen starorimski novac Denar?",
+      "answers": [
+        "Srebra",
+        "Srebro",
+        "Silver",
+        "Ag"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e9e044d7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji nogometni klub svoje domaće susrete igra na Stamford Bridgeu?",
+      "answers": [
+        "Chelsea",
+        "Čelzi",
+        "Celza"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-43b1d5b9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove vatreni junak iz videoigre Dota 2 čije sposobnosti uključuju Dragon Slave i Laguna Blade?",
+      "answers": [
+        "Lina"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5d27ff6f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 1. predsjednik SAD-a, prezimena Washington, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "GW"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb97aa8b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja je titula data poglavaru žute sekte tibetanskog budizma od strane mongolskog vladara Altan Kana?",
+      "answers": [
+        "Dalaj Lama",
+        "Dalajlama",
+        "Dalaj Blama",
+        "Dalajblama"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e96c5223",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je nogometni trener osvojio Ligu Prvaka s Ajaxom 1995.g.?",
+      "answers": [
+        "Louis van Gaal",
+        "Luis van Hal",
+        "Luis van Gal",
+        "Van Gaal",
+        "Van Hal",
+        "Van Gal",
+        "Gaal",
+        "Hal",
+        "Gal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cc422f7a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Dok je Francis Drake između 1577. i 1580.g. oplovljavao svijet, nizozemske su se pokrajine borile za neovisnost od Španjolske u kojem dugotrajnom ratu?",
+      "answers": [
+        "Osamdesetogodišnji",
+        "Osamdeset godišnji",
+        "80 godišnji",
+        "Eighty Years",
+        "Ejti Jirs",
+        "80 years",
+        "80 jirs",
+        "80",
+        "Osamdeset",
+        "Osamdesetogodišnjem",
+        "Osamdeset godišnjem",
+        "80 godišnjem"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-689bc01e",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Koji je prvi dugometražni animirani film Walta Disneyja?",
+      "answers": [
+        "Snjeguljica i sedam patuljak",
+        "Snjeguljica i 7 patuljaka",
+        "Snjeguljica",
+        "Snow White",
+        "Snowwhite",
+        "Snovvajt",
+        "Snov Vajt",
+        "Snow white and the 7 dwarfs",
+        "Snov vajt end d 7 dvarfs",
+        "Snov vajt end d sevn dvarfs",
+        "Snow white and the seven dvarfs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ee9fe47",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koja biljka se nalazi na kovanici od jedne lipe?",
+      "answers": [
+        "Kukuruz"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bcc20938",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je košarkaš u odlučujućoj utakmici NBA finala 1980.g. kao rookie uskočio na poziciju ozlijeđenog Kareema i ubacio 42 poena uz 15 skokova?",
+      "answers": [
+        "Magic Johnson",
+        "Mečik Džonson",
+        "Johnson",
+        "Džonson",
+        "Magic",
+        "Mečik"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-808b64c8",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Tko je skladao glazbu za film 'Kralj lavova' (The Lion King)?",
+      "answers": [
+        "Hans Zimmer",
+        "Hans Cimer",
+        "Zimmer",
+        "Cimer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ed65b5d6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koje ime dijele jedan planinski tjesnac u Meksiku koji je bio poprište bitke u meksičko - američkom ratu te bivša distribucijska kuća Walta Disneyja",
+      "answers": [
+        "Buena Vista"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d0d0bf70",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koje je boje pojas koji u karateu označava ulazak u majstorske, odnosno dan stupnjeve?",
+      "answers": [
+        "Crne",
+        "Crna",
+        "Crni",
+        "Crno",
+        "Bkack",
+        "Blek",
+        "Dark"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-915b8887",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zvao brod moreplovca Jamesa Cooka s njegova prvog velikog putovanja po Pacifiku, čije ime na engleskom znači otprilike 'nastojanje' ili 'pothvat'?",
+      "answers": [
+        "HMS Endeavour",
+        "Endeavour",
+        "Endevur",
+        "Endevor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-65da5304",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je dječji roman Roalda Dahla ekraniziran 1990. i ponovno 2020. godine?",
+      "answers": [
+        "Vještice",
+        "Witches",
+        "Vitčes",
+        "Vičes"
       ],
       "image": null
     }

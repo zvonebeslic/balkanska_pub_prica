@@ -1,430 +1,466 @@
 {
   "version": 2,
   "date": "2026-10-18",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-9241fe3b",
+      "id": "daily-b045a7ba",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Radnički Niš i Spartak Subotica su nogometni klubovi u kojoj državi?",
+      "topic": "Zemljopis",
+      "question": "Ashgabat je glavni grad koje države?",
       "answers": [
-        "Srbiji",
-        "Srbija",
-        "Serbia",
-        "Serbii",
-        "Serbija",
-        "Serbija",
-        "Serbs",
-        "Srbs",
-        "Srb"
+        "Turkmenistana",
+        "Turkmenistan",
+        "Turkmenisten",
+        "Turkmenistens"
       ],
       "image": null
     },
     {
-      "id": "daily-b5c359e9",
+      "id": "daily-e7f16a58",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je američki financijer 2008.g. priznao da je njegova investicijska djelatnost zapravo golema Ponzijeva shema, jedna od najvećih financijskih prijevara u povijesti?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tko je osmislio izmišljenog književnog lika Petra Pana?",
       "answers": [
-        "Bernie Madoff",
-        "Bernard Madoff",
-        "Bernard Lawrence Madoff",
-        "Madoff",
-        "Medof",
-        "Bernie Medof",
-        "Bernard Medof",
-        "Madof"
+        "James Matthew Barrie",
+        "Džejms Metju Bari",
+        "Barrie",
+        "Bari",
+        "Beri",
+        "J. M. Barrie"
       ],
       "image": null
     },
     {
-      "id": "daily-5806fe35",
+      "id": "daily-678fbfcb",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji po redu naslov svjetskog nogometnog prvaka je Brazil osvojio u Japanu 2002.g.?",
+      "topic": "Sport",
+      "question": "Koliko igrača jedne košarkaške momčadi istodobno igra na terenu?",
       "answers": [
         "5",
-        "Peti",
         "Pet",
+        "Five.fajv",
+        "Fumf",
+        "Fmf",
         "V",
-        "Fifth",
-        "Fift",
-        "Five",
-        "Fajv"
+        "Petorica",
+        "Petero",
+        "Petorka"
       ],
       "image": null
     },
     {
-      "id": "daily-7b81c8b8",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U kojoj knjizi glavna junakinja susreće zeca koji uvijek negdje kasni?",
-      "answers": [
-        "Alisa u Zemlji čudesa",
-        "Alisa i Zemlja čudesa",
-        "Alice in Wonderland",
-        "Alis in vonderlend",
-        "Alice's Adventures in Wonderland",
-        "Alis advenčurs in vonderlend",
-        "Alisa u Wonderlandu",
-        "Alisa u Vanderlendu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-72614b4c",
+      "id": "daily-998e429c",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koja je američka pomorska baza na Havajima napadnuta 7. prosinca(decembra) 1941.g., nakon čega su Sjedinjene Države ušle u rat protiv Japana?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Radnja filma Dobar, Loš, Zao je smještena u vrijeme kojeg američkog predsjednika?",
       "answers": [
-        "Pearl Harbor",
-        "Perl Harbor"
+        "Abrahama Lincolna",
+        "Abraham Lincoln",
+        "Lincolna",
+        "Lincoln",
+        "Abrahama Linkolna",
+        "Abraham Linkoln",
+        "Linkolna",
+        "Linkoln"
       ],
       "image": null
     },
     {
-      "id": "daily-4a4f5859",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Tko pjeva pjesmu 'Vampire' iz 2023.?",
-      "answers": [
-        "Olivia Rodrigo",
-        "Rodrigo",
-        "Olivia Isabel Rodrigo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1a0458e1",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako se zove pas koji sa šegrtom Hlapićem prolazi kroz njegove avanture?",
-      "answers": [
-        "Bundaš"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-643f247a",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Koji je starorimski povjesničar u 142 knjige opisao povijest Rima od kraljevine do početaka Rimskog Carstva?",
-      "answers": [
-        "Tit livije",
-        "Livije",
-        "Titus Livius",
-        "Livius"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-878409e8",
+      "id": "daily-818d8a00",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Na cesti Via Appia, Petar susreće Krista i pita ga 'Quo Vadis, Domine?', na što Krist odgovara da ide u Rim, gdje u to vrijeme vlada koji car i progonitelj kršćana",
+      "topic": "AmerickiPredsjednici",
+      "question": "U eri kojeg se rata, odvijao i Vijetnamski rat?",
       "answers": [
-        "Neron",
-        "Nero"
+        "Hladnog rata",
+        "Hladni rat",
+        "Hladnog",
+        "Hladni",
+        "Cold war",
+        "Cold",
+        "Kold var",
+        "Kold"
       ],
       "image": null
     },
     {
-      "id": "daily-a0366c7c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koju zvijezdu, heliocentrični sustav postavlja u središte svega?",
-      "answers": [
-        "Sunce",
-        "Sun",
-        "San",
-        "Suns",
-        "Sans"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f02b8212",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Svi znamo za poslovicu koja kaže da je 'bolje imati vrapca u ruci nego koga na grani?",
-      "answers": [
-        "Goluba",
-        "Golub"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5ff64583",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Koji opisni pridjev koristimo za životinje koje čovjek pripitomljava i uzgaja radi koristi i razonode?",
-      "answers": [
-        "Domaće"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-188b0f8c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koji je američki predsjednik poznat po frazi 'Ask not what your country can do for you'?",
-      "answers": [
-        "John F. Kennedy",
-        "Džon Kenedi",
-        "Kennedy",
-        "Kenedi",
-        "JFK"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6e6eb889",
+      "id": "daily-a9b89f0c",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Ako broj 50 povećamo za 100 %, koliko dobijemo?",
+      "question": "Koja je britanska kompanija 1720.g. bila u središtu velike burzovne pomame nakon koje je cijena njezinih dionica naglo propala i izazvala financijski kaos u Britaniji?",
       "answers": [
-        "100",
-        "Sto",
-        "Hundred",
-        "Handred",
-        "C"
+        "South Sea Company",
+        "South Sea",
+        "Saut Si",
+        "Saut Se",
+        "Saut Si Company",
+        "Saut Si Kompani",
+        "Kompanija Južnog mora",
+        "Tvrtka Južnog mora",
+        "Južno more",
+        "Južnog mora"
       ],
       "image": null
     },
     {
-      "id": "daily-ae430ea8",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Film",
-      "question": "Koji kanadski glumac posuđuje glas Shreku?",
-      "answers": [
-        "Mike Myers",
-        "Majk Maers",
-        "Myers",
-        "Maers"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b37ac9c2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 20. predsjednik SAD-a, prezimena Garfield, potpisao samo inicijalima, dobili bi koja slova?",
-      "answers": [
-        "JAG"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-feb1c12c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koju 'slobodnu' državu James Monroe proglašava kao 23. američku saveznu državu, u znak kompromisa prema 'robovlasničkoj' državi Missouri koja je savezna postala kao 24.?",
-      "answers": [
-        "Maine",
-        "Mejn",
-        "Main",
-        "Majne"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7036112b",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Tko je otpjevao uvodnu pjesmu hrvatske verzije crtane serije Spužvabob Skockani?",
-      "answers": [
-        "Davor Gobac",
-        "Gobac"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bdf410f2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "Koji horor film uključuje ukletu videokasetu, koju, tko god pogleda umire za 7 dana?",
-      "answers": [
-        "Krug",
-        "The Ring",
-        "D ring",
-        "Ring"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e1dcb11c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove serijal videoigara čiji je protagonist perzijski princ, a jedan od njegovih najpoznatijih nastavaka nosi podnaslov The Sands of Time?",
-      "answers": [
-        "Prince of Persia",
-        "Princ Perzije",
-        "Princ od Perzije",
-        "Perzijski Princ",
-        "Princ of Perža",
-        "Princ of Perzija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-72088041",
+      "id": "daily-a514a8f8",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kako se naziva slano vodeno prostranstvo koje je manje od oceana?",
+      "question": "Ferdinand Magellan je bio kapetan kojeg prijevoznog sredstva?",
       "answers": [
-        "More",
-        "Sea",
-        "Si"
+        "Broda",
+        "Brodovi",
+        "Brod",
+        "Ship",
+        "Šip",
+        "Ships",
+        "Šips",
+        "Brodice",
+        "Jedrenjaka",
+        "Galije",
+        "Jedrenjak",
+        "Galija",
+        "Galijuna",
+        "Galijun"
       ],
       "image": null
     },
     {
-      "id": "daily-4717776e",
+      "id": "daily-418a9435",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Koji se američki predsjednik suočio s aferom Watergate i dao ostavku?",
+      "topic": "Sport",
+      "question": "S koje udaljenosti streličari gađaju metu u olimpijskoj 'recurve' disciplini?",
       "answers": [
-        "Richard Nixon",
-        "Ričard Nikson",
-        "Nixon",
-        "Nikson"
+        "70",
+        "Sedamdeset",
+        "Sedandeset",
+        "Seventy",
+        "Seventi",
+        "LXX"
       ],
       "image": null
     },
     {
-      "id": "daily-d047ce53",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Prvi popis svjetskih čuda sačinjen je navodno između 150. i 120. godine prije nove ere, a sačinio ga je koji grčki pjesnik iz Sidona?",
-      "answers": [
-        "Antipatros",
-        "Antipater",
-        "Antipatar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d0d9e8c0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zovu smeđi neprijatelji nalik gljivama, koji su među najčešćim protivnicima u igricama Super Mario?",
-      "answers": [
-        "Goomba",
-        "Goombas",
-        "Gumba",
-        "Gomba",
-        "Gombas",
-        "Gumbas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b4513cf1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Kojoj zemlji velik dio prihoda državnog proračuna dolazi od pristojbi za korištenje internetske domene 'tv'?",
-      "answers": [
-        "Tuvalu",
-        "Tuvaluu",
-        "Tuvalus",
-        "Tuvala",
-        "Tuvali"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-668825eb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Prema legendi, na području koje današnje države je rođen Buda?",
-      "answers": [
-        "Nepala",
-        "Nepal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5ae4b013",
+      "id": "daily-f05007bf",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Kako nazivamo izvedenu mjernu jedinicu koja iznosi milijardu herca?",
+      "question": "Koji se bezbojan i zapaljiv ugljikovodik koristi kao gorivo u upaljačima i plinskim bocama?",
       "answers": [
-        "Gigaherc",
-        "Gigahertz"
+        "Butan",
+        "Butane"
       ],
       "image": null
     },
     {
-      "id": "daily-df9d424f",
+      "id": "daily-a34403f6",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Koje ime označava skupinu pčela u letu?",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koje jelo Peter Pepper sastavlja hodajući preko divovskih sastojaka u arkadnoj videoigri BurgerTime?",
       "answers": [
-        "Roj"
+        "Hamburger",
+        "Hamburg",
+        "Burger"
       ],
       "image": null
     },
     {
-      "id": "daily-78fcbc20",
+      "id": "daily-07b9d659",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "U kojem se gradu igra nogometni derbi poznatiji pod nazivom 'Interkontinentalni derbi'?",
+      "answers": [
+        "Istanbulu",
+        "Istanbuls",
+        "Istanbul"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-da890a9e",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Pretvarajući se u djevojku, u Šumi Striborovoj, zmija potpuno mijenja svoj izgled osim jednog dijela tijela, kojeg?",
+      "answers": [
+        "Jezika",
+        "Jezik",
+        "Tongue",
+        "Tong",
+        "Tongu",
+        "Placalo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f75c08c3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je vojskovođa češkog podrijetla tijekom Tridesetogodišnjeg rata okupio golemu plaćeničku vojsku, postao gotovo nezamjenjiv caru Ferdinandu II. i zatim toliko moćan da je 1634.g. ubijen nakon optužbi za izdaju?",
+      "answers": [
+        "Albrecht von Wallenstein",
+        "Albreht von Valenštajn",
+        "Von Wallenstein",
+        "Von Valenštajn",
+        "Wallenstein",
+        "Valenštajn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b1a76150",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja je njujorška ulica postala toliko povezana s financijama da se njezino ime danas koristi i kao simbol američkog financijskog sektora?",
+      "answers": [
+        "Wall Street",
+        "Vol Strit",
+        "Wol Strit",
+        "Wallstreet",
+        "Val Strit"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d080f797",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "S kojeg su kontinenta Oompa-Loompe dovedene da rade u Wonkinoj tvornici čokolade?",
+      "answers": [
+        "Afrika",
+        "Afrike",
+        "Africas",
+        "Africa",
+        "Afrikas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7d6d78ad",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Nizozemske?",
+      "answers": [
+        "Amsterdam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9b2928c8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove maskirani borac iz serijala videoigara Tekken koji nosi crnu masku jaguara, koristi profesionalno hrvanje i izvorno je predstavljen kao Kingov suparnik?",
+      "answers": [
+        "Armor King",
+        "Armour King",
+        "Armor King",
+        "Oklopljeni King",
+        "Armour",
+        "Armor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7185b26c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove serijal povijesnih strateških videoigara u stvarnom vremenu čiji je prvi nastavak 1997.g. razvio Ensemble Studios?",
+      "answers": [
+        "Age of Empires",
+        "Ejdž of Empajers",
+        "Dobar carstva",
+        "Doba kraljevstva"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b5c1d192",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja je reprezentacija na Svjetskom prvenstvu 2026. godine smijenila izbornika nakon samo jedne odigrane utakmice?",
+      "answers": [
+        "Tunis",
+        "Tunisa",
+        "Tunisia",
+        "Tuniža"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b79e225c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Glavica žigice sastoji se od smjese kalijeva klorata, antimonova sulfida, staklenog praha i ljepila. Dok je površina kutije žigica, tj. onaj dio o koji se tare glavica pri paljenju, prekrivena smjesom antimonova sulfida, ljepila i kojeg još kemijskog elementa, u crvenom izdanju?",
+      "answers": [
+        "Fosfora",
+        "Fosfor",
+        "Phospor",
+        "Phosphor",
+        "Phospora"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-18e4cc9b",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je francuski bukanir iz 17. stoljeća, pravim imenom Jean-David Nau, dobio nadimak prema francuskom gradu Les Sables-d’Olonne?",
+      "question": "Kako se zvao brat Vasca da Game koji je kao kapetan broda São Rafael sudjelovao u njegovu prvom putovanju prema Indiji?",
       "answers": [
-        "François l’Olonnais",
-        "Francois l’Olonnais",
-        "L’Olonnais",
-        "I olonnais",
-        "Iolonais",
-        "Iolnais",
-        "Iolonnais",
-        "Iolonai",
-        "I olonai"
+        "Paulo da Gama",
+        "Pavao da Gama",
+        "Paolo da Gama",
+        "Paulo Gama",
+        "Paulo",
+        "Paolo",
+        "Pavao"
       ],
       "image": null
     },
     {
-      "id": "daily-14077d4a",
+      "id": "daily-e3aae632",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Što se, prema poslovici, poznaje po jutru?",
+      "topic": "Sport",
+      "question": "Koji je košarkaš 1962. napravio nešto što nitko drugi u NBA ligi još nije ponovio, postigavši točno 100 poena u jednoj utakmici?",
       "answers": [
-        "Dan",
-        "Day",
-        "Dej"
+        "Wilt Chamberlain",
+        "Vilt Čamberlajn",
+        "Čamberlajn",
+        "Chamberlain",
+        "Kamberlejn",
+        "Kamberlajn",
+        "Čamberlejn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-401a6ee3",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva njemačko piće nastalo miješanjem piva i limunade, čije ime na njemačkom znači 'biciklist'?",
+      "answers": [
+        "Radler"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-72d39632",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zvao brod kapetana Williama Kidda, opremljen jedrima i veslima, kojim je 1696.g. krenuo u lov na gusare i neprijateljske brodove?",
+      "answers": [
+        "Adventure Galley",
+        "Advenčur Galej",
+        "Adventur Gali",
+        "Avanturistička galija",
+        "Avanturska Galija",
+        "Galley",
+        "Galej",
+        "Galija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c715564a",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Zemljopis",
+      "question": "Kako se zove najviši vrh svijeta?",
+      "answers": [
+        "Mount Everest",
+        "Everest",
+        "Mont Everest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0410c2f3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Da se provede prva američka kopnena ekspedicija do Pacifika i natrag, 1804.g.  naložio je predsjednik Jefferson. Poručnik ekspedicije je bio William Clark a kapetan tko?",
+      "answers": [
+        "Meriweather Lewis",
+        "Meriveter Luis",
+        "Lewis",
+        "Luis"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-07eae9aa",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Rimski kućni duhovi, ključni za obiteljsku religiju, bili su Lari i koji još?",
+      "answers": [
+        "Penati",
+        "Penates"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-65face0d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Da je ostalo do danas, kako bi se u Rimskom Carstvu napisala godina 2026.?",
+      "answers": [
+        "MMXXVI"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-80e90506",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se nazivao savez njemačkih država osnovan pod Napoleonovom zaštitom, čije su članice napustile Sveto Rimsko Carstvo?",
+      "answers": [
+        "Rajnski Savez",
+        "Rajnski",
+        "Rajnska Konfederacija",
+        "Rajnska",
+        "Rheinebund",
+        "Rajnebund",
+        "Konfederirane države Rajne"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3461f0cb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Kakav upravni sustav u rimskom carstvu uvodi car Dioklecijan 293.g.?",
+      "answers": [
+        "Tetrarhiju",
+        "Tetrarhija",
+        "Četverovlađe"
       ],
       "image": null
     }

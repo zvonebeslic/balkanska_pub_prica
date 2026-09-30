@@ -1,373 +1,387 @@
 {
   "version": 2,
   "date": "2026-10-24",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-b5c1d192",
+      "id": "daily-1ffd24ba",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koja je reprezentacija na Svjetskom prvenstvu 2026. godine smijenila izbornika nakon samo jedne odigrane utakmice?",
+      "topic": "Povijest",
+      "question": "Napoleon je 1805.g. planirao invaziju na Veliku Britaniju, ali je britanska mornarička pobjeda pod zapovjedništvom admirala Nelsona učinila francusku prevlast na moru gotovo nemogućom. Kod kojeg se rta odigrala ta slavna pomorska bitka?",
       "answers": [
-        "Tunis",
-        "Tunisa",
-        "Tunisia",
-        "Tuniža"
+        "Trafalgar",
+        "Trafalgara",
+        "Trafagar",
+        "Trafagara"
       ],
       "image": null
     },
     {
-      "id": "daily-a7a1e10c",
+      "id": "daily-87a5c665",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koji bi bozon, da se eksperimentalno otkrije, prenosio gravitacijsku silu?",
+      "question": "Koji je kemijski element, milijun puta radioaktivniji od uranija, 1898.g. otkrio bračni par Curie?",
       "answers": [
-        "Graviton"
+        "Radij",
+        "Radijum",
+        "Radium",
+        "Ra"
       ],
       "image": null
     },
     {
-      "id": "daily-ab17ddbd",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Na kojem je otočju Charles Darwin proučavao zebe?",
-      "answers": [
-        "Galapagos",
-        "Galapagosu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5e5eb02f",
+      "id": "daily-16bac3f3",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Kako se zove glavni grad Kazahstana?",
+      "topic": "Znanost",
+      "question": "Koje ime dijele najsmrtonosniji planinski vrh na svijetu i druga misija NASA-inog svemirskog teleskopa Kepler?",
       "answers": [
-        "Astana"
+        "K2",
+        "Ka2",
+        "K 2",
+        "Ka dva",
+        "Ka 2",
+        "KII",
+        "K II",
+        "Ka II",
+        "Ka2",
+        "Kadva",
+        "KaII"
       ],
       "image": null
     },
     {
-      "id": "daily-bd58b1e7",
+      "id": "daily-dfa11d90",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Nakon podjele rimskog carstva na zapadno i Istočno, područje današnje BiH je pripalo kojem?",
+      "answers": [
+        "Zapadnom",
+        "Western",
+        "Zapad",
+        "West"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b6983c59",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja biljka se nalazi na kovanici od 50 lipa?",
+      "topic": "Nogomet",
+      "question": "Tko je sa 42 gola ostao najbolji strijelac Sovijetske nogometne reprezentacije koja je trajala od 1922.g. do 1991.g.?",
       "answers": [
-        "Velebitska Degenija"
+        "Oleg Blokhin",
+        "Oleg Blokin",
+        "Blokhin",
+        "Blokin",
+        "Blohin"
       ],
       "image": null
     },
     {
-      "id": "daily-bbf6084c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Tko je bila prva osoba koja je stavila svoj potpis na američku deklaraciju nezavisnosti?",
-      "answers": [
-        "John Hancock",
-        "Džon Hankok",
-        "Hancock",
-        "Hankok"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9d63a091",
+      "id": "daily-bb9b0693",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Koja se kratkotrajna država formira na istoku rimskog carstva u vrijeme krize trećeg stoljeća a vladar joj je bio Odenat?",
+      "topic": "Zemljopis",
+      "question": "Koje ime nosi afrička regija koja se nalazi sjeverno od Sahare a zapadno od Nila te obuhvaća više država?",
       "answers": [
-        "Palmir",
-        "Palmirska",
-        "Palmirsko",
-        "Palmira"
+        "Magreb",
+        "Magrebska",
+        "Magrebs",
+        "Mogreb",
+        "Mogrebs",
+        "Mogrebška"
       ],
       "image": null
     },
     {
-      "id": "daily-23291437",
+      "id": "daily-9e97ecc2",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Prezime kojeg je francuskog ministra financija iz 18. stoljeća, poznatog po nepopularnim mjerama štednje, postalo naziv za jeftine portrete izrađene samo kao tamni obrisi?",
+      "answers": [
+        "Étienne de Silhouette",
+        "Silhouette",
+        "Siluet",
+        "Silhouettea",
+        "Silueta",
+        "Etiena de Silueta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a556c074",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je fiktivni lik odrastao među majmunima nakon brodoloma svojih roditelja na afričkoj obali?",
+      "answers": [
+        "Tarzan",
+        "Tarzans"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6e48bd24",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je škotski pomorac proveo više od četiri godine sam na pacifičkom otoku, a njegova je pustolovina pomogla nadahnuti roman Robinson Crusoe?",
+      "question": "Slavni brod još slavnijeg moreplovca Jamesa Cooka, HMS Endeavour, je svoju ne tako slavnu budućnost nakon svjetskih plovidbi nastavio pod kojim drugim imenom?",
       "answers": [
-        "Alexander Selkirk",
-        "Aleksander Selkirk",
-        "Selkirk"
+        "Lord Sandwich",
+        "Lord Sendvič"
       ],
       "image": null
     },
     {
-      "id": "daily-d4a0629a",
+      "id": "daily-62c88680",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koja se mjerna jedinica iz SI sustava koristi za mjerenje radioaktivnosti?",
+      "topic": "Moreplovci",
+      "question": "Koji je brod 1620.g. prevezao skupinu engleskih doseljenika preko Atlantika do obala današnjeg Massachusettsa i postao jedan od najslavnijih brodova u američkoj povijesnoj predaji?",
       "answers": [
-        "Becquerel",
-        "Bekerel",
-        "Bq",
-        "Bekerelova",
-        "Becquerels"
+        "Mayflower",
+        "Mejflover"
       ],
       "image": null
     },
     {
-      "id": "daily-3bd3dcae",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Film",
-      "question": "Kako se zove zlikovac u prvom od filmova 'Umri muški' (Die Hard)?",
-      "answers": [
-        "Hans Gruber",
-        "Gruber"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6007630e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Na kojoj je rijeci u travnju(aprilu) 1945.g. došlo do susreta američkih i sovjetskih vojnika koji su napredovali iz suprotnih smjerova kroz Njemačku?",
-      "answers": [
-        "Elbi",
-        "Elba",
-        "Elb",
-        "Elbu",
-        "Elbas",
-        "Elbs"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3597d72a",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja je bežična tehnologija za povezivanje uređaja dobila ime po danskom kralju Haraldu Gormssonu iz 10. stoljeća, koji je prema predaji nadimak dobio zbog tamnog zuba, a poznat je po ujedinjenju Danske i Norveške, baš kao što je tehnologija trebala 'ujediniti' različite uređaje?",
-      "answers": [
-        "Bluetooth",
-        "Blutut",
-        "Blutu",
-        "Blue tooth",
-        "Blu tut",
-        "Blu tu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4e44fa35",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Povijest",
-      "question": "Prema kineskoj predaji, kojeg se vladara smatra da je vladao od 2697. pr. Kr. do 2597. pr. Kr. za kojeg se vjeruje da je izumitelj kompasa, kalendara i pisanja?",
-      "answers": [
-        "Žuti Car",
-        "Žutog Cara",
-        "Huangdi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-30e6aef9",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "AntickiRim",
-      "question": "Na koje razdoblje da upravljaju, su birani konzuli u starom Rimu?",
-      "answers": [
-        "1 godinu",
-        "Godinu",
-        "Godinu dana",
-        "1g",
-        "1 god",
-        "Jednu godinu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-eb48d720",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Tko je osvojio Euroviziju 2024. s pjesmom 'The Code'?",
-      "answers": [
-        "Nemo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ddf9bf30",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove jedna od najpoznatijih mapa iz Counter-Strike videoigre, smještena u pustinjskom okruženju i prepoznatljiva po dvama bombsiteovima A i B?",
-      "answers": [
-        "Dust II",
-        "Dust 2",
-        "de dust2",
-        "Dust",
-        "Dast",
-        "Prašina",
-        "Prašinska"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a346bc3c",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Iz mašte kojeg je pisca za djecu nastao 'Fantastični gospodin Lisac?",
-      "answers": [
-        "Roalda Dahla",
-        "Dahla",
-        "Dala",
-        "Roualda Dala",
-        "Roald Dahl",
-        "Dahl",
-        "Dal",
-        "Rouald Dal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-316bba95",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je najveći dvoznamenkasti broj?",
-      "answers": [
-        "99",
-        "Devedeset devet",
-        "Ninety nine",
-        "Najnti najn",
-        "XCIX"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a4fb30ae",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Na kojoj životinji je Isus ujahao u Jeruzalem?",
-      "answers": [
-        "Magarcu",
-        "Magarac",
-        "Na magarcu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0cb0d81e",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "Koja je najuglednija glazbena nagrada u Republici Hrvatskoj?",
-      "answers": [
-        "Porin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e35c7983",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Kako se zove velika morska luka u Ateni?",
-      "answers": [
-        "Pirejska Luka",
-        "Pirejska",
-        "Pirej",
-        "Piraeus",
-        "Pireas",
-        "Pirea",
-        "Pirijska",
-        "Pirij",
-        "Pireus",
-        "Pireja"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-edd6546c",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji je britanski pisac u jednoj od svojih knjiga izmislio fiktivnog američkog predsjednika Lancelota R. Gilligrassa?",
-      "answers": [
-        "Roald Dahl",
-        "Dahl",
-        "Dal",
-        "Rouald Dal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ba32d367",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Na kojem je stadionu Francuska nogometna reprezentacija pobijedila u finalu SP-a 1998.g.?",
-      "answers": [
-        "Stade de France",
-        "Stad de Frenc",
-        "Štad de Frenc",
-        "Stad de Franc",
-        "Štad de Franc",
-        "Stadion Francuske",
-        "Stadionu Francuse"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bbff6dbd",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Tko je režirao 'Inception' i 'Interstellar'?",
-      "answers": [
-        "Christopher Nolan",
-        "Kristofer Nolan",
-        "Nolan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-377f7975",
+      "id": "daily-e423873e",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koji je jedini američki predsjednik koji je vodio komercijalnu destileriju viskija?",
+      "question": "Kompromisom iz 1877.g. demokrati ipak priznaju američke predsjedničke izbore za koje su smatrali da su namješteni pa samim tim, predsjednik postaje tko?",
       "answers": [
-        "George Washington",
-        "Washington",
-        "Džordž Vašington",
-        "Vašington"
+        "Rutherford Birchard Hayes",
+        "Hayes",
+        "Heiz",
+        "Hajes",
+        "Hejz",
+        "Hajz"
       ],
       "image": null
     },
     {
-      "id": "daily-5e10b54d",
+      "id": "daily-a262b1ef",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koja glumica igra glavnu ulogu u 'La La Landu'?",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove arkadna videoigra iz 1983.g. u kojoj igrač upravlja naoružanim automobilom opremljenim oružjima poput strojnica i uljnih mrlja?",
       "answers": [
-        "Emma Stone",
-        "Ema Ston",
-        "Stone",
-        "Ston"
+        "Spy Hunter",
+        "Spaj Hanter",
+        "Lovac na špijune"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b645fd61",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U potrazi za mjestom koje bi mu olakšalo zdravstvene tegobe, na kojem je otočju posljednje godine života proveo Robert Louis Stevenson, autor 'Otoka s blagom' i 'Neobičnog slučaja dr. Jekylla i gospodina Hydea'?",
+      "answers": [
+        "Samoa",
+        "Samoi",
+        "Samoe",
+        "Samoai",
+        "Samoae",
+        "Samoja",
+        "Samoji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ddcc3fdf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva velika platnena površina koja hvata vjetar i pokreće jedrenjak?",
+      "answers": [
+        "Jedro",
+        "Jedra"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e65e1dd6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji su lučki grad u jeku Osamdesetogodišnjeg rata 1572.g. zauzeli nizozemski pobunjenici poznati kao Morski prosjaci, pretvorivši naizgled malu pomorsku akciju u važan poticaj širenju ustanka protiv Španjolske?",
+      "answers": [
+        "Brielle",
+        "Briel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e5710179",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje je danas jedno od najpoznatijih bezalkoholnih pića svijeta prvi put predstavljeno 1886.g. u ljekarni u Atlanti, gdje se u početku prodavalo po pet centi za čašu?",
+      "answers": [
+        "Coca Cola",
+        "Coca Cola",
+        "CocaCola",
+        "Koka kola",
+        "Koka kola",
+        "Coke",
+        "Koke",
+        "Kola",
+        "Cola"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c0a0080f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Pod kojim je imenom poznatiji stadion 'Estádio Jornalista Mário Filho', koji se nalazi u Rio de Jarneiru i na kojem igraju Flamengo te Fluminense?",
+      "answers": [
+        "Maracana",
+        "Marakana"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1ffc3964",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove fiktivni kapetan koji je u susretu s Moby Dickom izgubio nogu?",
+      "answers": [
+        "Ahab"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-663f2b64",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Na koliko kontinenta se prostiralo rimsko carstvo?",
+      "answers": [
+        "3",
+        "Tri"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b7ab5266",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Prijam je imao mnogo sinova, ali jedan je bio najveći zaštitnik Troje, sposoban zaustaviti čak i najbolje grčke ratnike. Koji je trojanski junak na svojim ramenima nosio sudbinu cijeloga grada?",
+      "answers": [
+        "Hektor",
+        "Hector"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2ff38a10",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Koja kraljica iz kraljevstva Kuš (današnji Sudan) je odbijala rimske napade te naposlijetu s njima sklopila mir?",
+      "answers": [
+        "Amanirenas",
+        "Amanirena"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3712fe1a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koliko je puta Ronaldo Nazario osvajao Zlatnu Loptu?",
+      "answers": [
+        "2",
+        "Dva",
+        "Dvaput",
+        "Two",
+        "Tu",
+        "Zwei",
+        "Cvaj",
+        "Obadva",
+        "Oba",
+        "II"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-858b4680",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koja je starija sestra Serene Williams također postala svjetski broj jedan i višestruka pobjednica Wimbledona?",
+      "answers": [
+        "Venus Williams",
+        "Venus Vilijams",
+        "Venus",
+        "Williams",
+        "Vilijams"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6acc3382",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja je, od tri baltičke države, površinom najmanja?",
+      "answers": [
+        "Estonija",
+        "Estonia",
+        "Esti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4bae058a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako se zove kemijski element s atomskim brojem 1?",
+      "answers": [
+        "Vodik",
+        "Hidrogen",
+        "Hydrogen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-58291b52",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji je studio stvorio serijal videoigara Uncharted?",
+      "answers": [
+        "Naughty Dog",
+        "Noti Dog",
+        "Nadi Dog"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eed35346",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Srbije?",
+      "answers": [
+        "Beograd"
       ],
       "image": null
     },
@@ -384,52 +398,29 @@
       "image": null
     },
     {
-      "id": "daily-3f8adb38",
+      "id": "daily-6c2060d6",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "James Cook je poginuo 1779.g. na području koje današnje američke savezne države?",
+      "topic": "Sport",
+      "question": "Kako se u američkom nogometu naziva igrač koji najčešće prima loptu nakon snapa i vodi napadačku igru?",
       "answers": [
-        "Havaji",
-        "Havai",
-        "Havajima",
-        "Havaima",
-        "Havaii",
-        "Havaiis",
-        "Havais"
+        "Quarterback",
+        "Kvorterbek",
+        "Kvarterbek"
       ],
       "image": null
     },
     {
-      "id": "daily-8b22ede4",
+      "id": "daily-4376a182",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove bjelokosi lovac na čudovišta iz Rivije, glavni junak serijala videoigara The Witcher?",
+      "topic": "AmerickiPredsjednici",
+      "question": "U godini kada je George Washington počeo svoj drugi mandat kao predsjednik SAD-a, u francuskoj je osnovan koji veliki i svjetski poznati muzej?",
       "answers": [
-        "Geralt",
-        "Geralt of Rivia",
-        "Geralt od Rivije",
-        "Dzeralt",
-        "Džeral"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e1db6de6",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koji bend pjeva 'Sweet Child O' Mine'?",
-      "answers": [
-        "Guns N Roses",
-        "Guns Roses",
-        "Gans n Roses",
-        "Gans Roses",
-        "Gunsi",
-        "Guns",
-        "Gansi",
-        "Gans"
+        "Louvre",
+        "Luvr",
+        "Luvre",
+        "Louvr"
       ],
       "image": null
     }

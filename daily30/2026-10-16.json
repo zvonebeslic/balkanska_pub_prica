@@ -1,446 +1,443 @@
 {
   "version": 2,
   "date": "2026-10-16",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-4482109f",
+      "id": "daily-f2e0b95c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Psihološki fenomen zbog kojeg u oblacima, stijenama ili drugim slučajnim uzorcima prepoznajemo lica i poznate oblike naziva se?",
+      "answers": [
+        "Pareidolija",
+        "Pareidolia"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-135fe0ed",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Davor Šuker je na EURO-u 1996.g. zabio, između ostalih, i svoja dva legendarna gola, 'lobovao' je Schmeichela, a 'zavaljao' koga?",
+      "answers": [
+        "Andreasa Kopkea",
+        "Adreas Kopke",
+        "Kopkea",
+        "Kopke",
+        "Kepkea",
+        "Kepketa",
+        "Kepke"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-29e980f5",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje se drevno kraljevstvo u zapadnoj Maloj Aziji najčešće povezuje s pojavom prvih kovanica u povijesti, izrađivanih od prirodne legure zlata i srebra?",
+      "answers": [
+        "Lidija",
+        "Lydia",
+        "Lidijsko",
+        "Lydias",
+        "Lidijas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0225ff29",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je Grand Slam turnir Goran Ivanišević osvojio 2001.g. nakon što je prethodno tri puta gubio u njegovu finalu?",
+      "answers": [
+        "Wimbledon",
+        "Vimbldon",
+        "Vimbledon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-25ecfcbb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U periodnom sustavu elemenata, koji se plin nalazi pod rednim brojem 2?",
+      "answers": [
+        "Helij",
+        "Helijum",
+        "Helium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dabd6cdd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koja je katastrofalna epidemija sredinom 14. stoljeća odnijela milijune europskih života i usred Stogodišnjeg rata na neko vrijeme učinila bolest opasnijom od engleskih i francuskih vojski?",
+      "answers": [
+        "Crna Smrt",
+        "Black Death",
+        "Blek Ded"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-86fc3a02",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se naziva disciplina u kojoj konj i jahač pokušavaju svladati niz prepreka bez njihova rušenja?",
+      "answers": [
+        "Preponsko jahanje",
+        "Jahanje preko prepona",
+        "Preponsko",
+        "Prepone",
+        "Prepona"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3b34460a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Do kojeg je kontinenta Kristofor Kolumbo vjerovao da je stigao 1492. godine?",
+      "answers": [
+        "Azija",
+        "Azije",
+        "Asia",
+        "Asie",
+        "Asias"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-696093bc",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Koji napitak dobijemo od prženih i mljevenih zrna biljke koja dolazi iz porodice broćevki?",
+      "answers": [
+        "Kava",
+        "Kavu",
+        "Kafu",
+        "Kafa",
+        "Coffee",
+        "Kofi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cc71eae4",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "S kojim oružjem Robin Hood otima bogatima i daje siromašnima?",
+      "answers": [
+        "Luk i strijela",
+        "Lukom i strijelom",
+        "Bow",
+        "Luk",
+        "Arch",
+        "Arč",
+        "Lukom",
+        "Strijela",
+        "Strijelom",
+        "Luk Strijela",
+        "Bow and arch",
+        "Bov end arč",
+        "Bov",
+        "Arč"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-278607d5",
       "type": "blitz",
       "difficulty": 5,
       "topic": "FloraFauna",
-      "question": "Kako se zove znanost koja proučava pelud?",
+      "question": "Koji je legendarni kineski car i bog poljoprivrede po kineskoj predaji otkrio čaj?",
       "answers": [
-        "Palinologija"
+        "Shennong",
+        "Šenong",
+        "Shen nung",
+        "Šen nong"
       ],
       "image": null,
       "rarity": "golden"
     },
     {
-      "id": "daily-2a46520b",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Zemljopis",
-      "question": "Najveće kopneno kretanje životinja na svijetu 'Velika Migracija', odvija se u Tanzaniji i Keniji gdje stotine tisuća gnuova, gazela i zebri u potrazi za hranom prelaze velika afrička prostranstva. Kretanja su tako masivna da se vide i iz svemira a najopasniji dio ove selidbe je prelazak preko koje rijeke?",
-      "answers": [
-        "Mara",
-        "Mare"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-208b1867",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Navijačke skupine Curva Nord i Curva Sud zajedno žive u kojem gradu?",
-      "answers": [
-        "Milanu",
-        "Milano",
-        "Milan",
-        "Milans"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d1274e49",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Kako se zove ludi znanstvenik sijede kose iz 'Povratka u budućnost'?",
-      "answers": [
-        "Doc Brown",
-        "Emmett Brown",
-        "Dr. Emmett Brown",
-        "Emmett Lathrop Brown",
-        "Dok Brovn",
-        "Emet brovn",
-        "Emet latrop brovn"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7ac83262",
+      "id": "daily-36bb2675",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Beograd je glavni grad koje države?",
+      "question": "Koje se žičano glazbalo nalazi na grbu Irske te na grbu Ujedninjenog Kraljevstva?",
       "answers": [
-        "Srbije",
-        "Srbija",
-        "Serbia",
-        "Serbie",
-        "Serbije",
-        "Serbija",
-        "Srba",
-        "Srb",
-        "RS"
+        "Harfa",
+        "Harfe",
+        "Harf",
+        "Harps"
       ],
       "image": null
     },
     {
-      "id": "daily-6cc8ac0a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Kojem se francuskom 'Kralju Suncu', simbolu apsolutne monarhije, tradicionalno pripisuje izreka 'Država, to sam ja'?",
-      "answers": [
-        "Luj XIV.",
-        "Luj 14.",
-        "Luj Bogodani",
-        "Luj Veliki",
-        "Luju",
-        "Louis",
-        "Luis",
-        "Luja",
-        "Louisa",
-        "Luisa",
-        "Luju četrnaestom",
-        "Luj četrnaesti",
-        "Luju 14.",
-        "Luju XIV.",
-        "Luju 14th",
-        "Luj Forteenth",
-        "Luj Fortint"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5a7bac53",
+      "id": "daily-068cc2cd",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Mandat američkog predsjednika Johna Tylera obilježio je incident na parnoj korveti američke ratne mornarice na kojoj je, prilikom ceremonijalne plovidbe rijekom Potomac 1844.g., eksplodirao jedan od topova te usmrtio 6 osoba. Kako se zvao taj brod, ako znamo da ime dijeli s jednim uglednim američkim sveučilištem?",
+      "question": "U kojem se američkom gradu nalazi George Washington Masonic National Memorial?",
       "answers": [
-        "USS Princeton",
-        "Princeton",
-        "Prinston",
-        "Princton"
-      ],
-      "image": null,
-      "rarity": "platinum"
-    },
-    {
-      "id": "daily-161163a5",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Koji je njemački zoolog prvi u svijetu upotrijebio pojam 'ekologija'?",
-      "answers": [
-        "Ernst Haeckel",
-        "Ernst Hakel",
-        "Haeckel",
-        "Hakel"
+        "Aleksandriji",
+        "Aleksandrija",
+        "Alexandria",
+        "Alexandriji"
       ],
       "image": null
     },
     {
-      "id": "daily-44ee9a46",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koja je japanska kompanija razvila arkadnu pucačinu '1942', jednu od svojih prvih velikih međunarodnih uspješnica?",
-      "answers": [
-        "Capcom",
-        "Kapkom"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2d779640",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji roman Frances Hodgson Burnett prati djevojčicu koja od bogate učenice postaje služavka u londonskom internatu?",
-      "answers": [
-        "Mala Princeza",
-        "A Little Princess",
-        "Litl Princes",
-        "Lidl Princes"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-85b3e79f",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koja bi se fiktivna djevojčica posebno trebala paziti Jaberwocka, Jubjub ptice i Bandersnatcha?",
-      "answers": [
-        "Alisa",
-        "Alice",
-        "Alis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bba88ea4",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliko vrhova ima stožac?",
-      "answers": [
-        "1",
-        "Jedan",
-        "One",
-        "Von",
-        "Ein",
-        "I"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b868ad9b",
+      "id": "daily-59c77010",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Od atoma kojeg plina su sastavljene molekule ozonskog omotača?",
+      "question": "Koji instrument koristimo za mjerenje brzine vjetra?",
       "answers": [
-        "Kisika",
-        "Oxygena",
-        "Oksigena",
-        "Oksidžena",
-        "Kisik",
-        "Oxygen",
-        "Oksidžen",
-        "O2",
-        "O",
-        "Kiseonik"
+        "Anemometar",
+        "Anemometer"
       ],
       "image": null
     },
     {
-      "id": "daily-6580dad7",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Koji je sveti grad kršćanstva i judaizma u kojem se nalazi Bazilika Svetog Groba i Zid plača?",
-      "answers": [
-        "Jeruzalem",
-        "Jerusalem"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-427c40a1",
+      "id": "daily-c4c5e7a4",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "U kojem je gradu 1915.g. sklopljen tajni sporazum kojim su sile Antante Italiji obećale teritorijalne dobitke ako uđe u rat protiv Austro-Ugarske?",
+      "topic": "Gaming",
+      "question": "Koja je kompanija izdala originalnu videoigru The Sims 2000.g.?",
       "answers": [
-        "Londonu",
-        "London"
+        "Electronic Arts",
+        "EA",
+        "Elektronik Arts"
       ],
       "image": null
     },
     {
-      "id": "daily-9b0bc0ac",
+      "id": "daily-4b74448d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koju je stratešku otočnu tvrđavu na ulazu u Perzijski zaljev Afonso de Albuquerque trajno stavio pod portugalsku vlast 1515.g.?",
+      "answers": [
+        "Hormuz",
+        "Ormuz",
+        "Hormuzd",
+        "Hormušku",
+        "Ormušku",
+        "Hormuzs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ea92f6e1",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je veliki njemački festival, prvi put održan 1810.g. povodom kraljevskog vjenčanja, prerastao u jedan od najpoznatijih festivala piva na svijetu?",
+      "answers": [
+        "Oktoberfest",
+        "Octoberfest",
+        "Oktober fest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-25c2e098",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Sa koliko igrača nogometna momčad započinje susret?",
+      "question": "Koji je nogometni vratar zabijao golove u Ligi Prvaka dok je branio za Hamburg, Leverkusen te Bayern, a sve je zabio protiv istog protivnika, Juventusa?",
       "answers": [
-        "11",
-        "Jedanaest",
-        "Eleven",
-        "XI"
+        "Hans Jorg Butt",
+        "Hans Žorg But",
+        "Hans Jorg But",
+        "Jorg Butt",
+        "Žorg But",
+        "Jorg But",
+        "Butt",
+        "But"
       ],
       "image": null
     },
     {
-      "id": "daily-2c80d1d1",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se naziva politički sustav u kojem vlast proizlazi iz naroda putem izbora i predstavnika?",
-      "answers": [
-        "Demokracija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-03909976",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Dok su Napoleon i Aleksandar I. sklapali Mir u Tilzitu ploveći na splavu, ispod njih je tekla.koja rijeka?",
-      "answers": [
-        "Njemen",
-        "Nemunas",
-        "Nemen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1218e3ef",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji je prvi planet koji je pronađen matematičkim izračunima umjesto empirijskim promatranjima?",
-      "answers": [
-        "Neptun"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d4abac94",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Tko pjeva pjesmu 'Wonderwall' iz 1995.?",
-      "answers": [
-        "Oasis",
-        "Oejsis",
-        "Oazis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e34d3be8",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "AntickiRim",
-      "question": "Pompej, Cezar i Kras su osnovali koji po redu trijumvirat?",
-      "answers": [
-        "Prvi",
-        "1.",
-        "1",
-        "Prvi trijumvirat"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-24c7fe66",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se naziva najdublja poznata točka Marijanske brazde, nazvana po britanskom brodu HMS Challenger čija je ekspedicija ondje 1875.g. mjerila dubinu?",
-      "answers": [
-        "Challengerova dubina",
-        "Challenger",
-        "Čelendžer",
-        "Chsllengers",
-        "Čelendžers"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-84d95371",
+      "id": "daily-5ea7a3a4",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove izvanzemaljski gospodar i glavni neprijatelj čovječanstva u serijalu videoigara Serious Sam?",
+      "question": "Koju je kultnu videoigru 1984.g. osmislio sovjetski programer Aleksej Pažitnov?",
       "answers": [
-        "Mental"
+        "Tetris"
       ],
       "image": null
     },
     {
-      "id": "daily-c6e6ba98",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja je lagana i iznimno vrijedna tkanina bila jedna od najpoželjnijih azijskih roba među europskim trgovcima poput obitelji Polo?",
-      "answers": [
-        "Svila",
-        "Silk"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-480759e6",
+      "id": "daily-64d57669",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Glazba",
-      "question": "S kojim singlom je debitirala Britney Spears te se odmah vinula na vrhove svjetskih ljestvica?",
+      "topic": "AntickiRim",
+      "question": "Za kojeg rimskog cara, kršćanstvo u cijelom rimskom carstvu postaje jedina dopuštena državna religija?",
       "answers": [
-        "Baby One More Time",
-        "Bejbi on mor tajm"
+        "Teodozija",
+        "Teodozije",
+        "Theodosius",
+        "Theodosiusa",
+        "Teodozijusa"
       ],
       "image": null
     },
     {
-      "id": "daily-f15db8cc",
+      "id": "daily-17298b2d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Kojeg su sjevernovijetnamskog vođu, bezuspješno pokušali poraziti Kennedy, Johnson i Nixon, što je dovelo do kasnijeg povlačenja američke vojske iz Vijetnama?",
+      "question": "Koji je američki predsjednik rođen na imanju zvanom Sinking Spring Farm?",
       "answers": [
-        "Ho Ši Mina",
-        "Ho Chi Minha",
-        "Ho Ši Min",
-        "Ho Chi Minh",
-        "Ši Min",
-        "Ši Mina",
-        "Chi Minha",
-        "Chi Minh",
-        "Min",
-        "Mina",
-        "Minh"
+        "Abraham Lincoln",
+        "Lincoln",
+        "Linkoln"
       ],
       "image": null
     },
     {
-      "id": "daily-bc94c087",
+      "id": "daily-42b18431",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvao prvi glavni grad Perzijskog carstva kojeg je ustanovio Kir Veliki, a ostaci mu se danas nalaze blizu modernog grada Širaza u Iranu?",
+      "answers": [
+        "Pasargad",
+        "Pasargada"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6c8e99df",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je dizajnerica zajedno s Edom Loggom radila na Atarijevoj arkadnoj videoigri Centipede?",
+      "answers": [
+        "Dona Bailey",
+        "Dona Bejli",
+        "Bailey",
+        "Bejli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-640c487d",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kako se zvao brod moreplovca Henryja Hudsona na kojem je izbila kobna pobuna 1611.g. nakon teške zime provedene u zaleđenim vodama današnje Kanade?",
+      "question": "Kako se zvao prvi potkralj Nove Španjolske koji je 1540.g. poslao Francisca Vázqueza de Coronada na područje današnjeg jugozapada SAD-a u potragu za legendarnim Sedam gradova Cíbole?",
       "answers": [
-        "Discovery",
-        "Diskoveri"
+        "Antonio de Mendoza",
+        "Antonio Mendoza",
+        "Mendoza",
+        "Mendosa"
       ],
       "image": null
     },
     {
-      "id": "daily-14ecf0e0",
+      "id": "daily-8f8015d2",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Likove iz koje društvene igre Alisa susreće u svojoj drugoj pustolovini, iza ogledala?",
+      "answers": [
+        "Šaha",
+        "Šah",
+        "Chess",
+        "Čes",
+        "Ces"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-acb3ecfc",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Što je, prema poznatoj poslovici, kratko u laži?",
+      "topic": "Nogomet",
+      "question": "Slaven Bilić je u Premiership 2020. godine uveo West Bromwich Albion, a Sergej Jakirović je 2026. godine u najviši rang engleskog nogometa odveo koji klub?",
       "answers": [
-        "Noge",
-        "Noga",
-        "Legs",
-        "Leg"
+        "Hull City",
+        "Hull",
+        "Hal Siti",
+        "Hal"
       ],
       "image": null
     },
     {
-      "id": "daily-31732e2a",
+      "id": "daily-73d38bbd",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koji glumac glumi Sherlocka Holmesa u filmovima Guyja Ritchieja?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je francuski pisac napisao knjigu pripovjedaka 'Zemlja ljudi'?",
       "answers": [
-        "Robert Downey Jr",
-        "Robert Dovni Junior",
-        "Downey Jr",
-        "Dovni Junior",
-        "Robert John Downey Jr.",
-        "Robert Dovni",
-        "Downey",
-        "Dovni",
-        "Robert Junior",
-        "Robert Džunior",
-        "Dovni Džunior",
-        "Robert Dovni Džunior"
+        "Antoine de Saint Exupery",
+        "Antoan de Sen Egziperi",
+        "Saint Exupery",
+        "Sen Egzuperi",
+        "Exupery",
+        "Egziperi",
+        "Eksuperi",
+        "Ehuperi",
+        "Ekuperi",
+        "Esuperi"
       ],
       "image": null
     },
     {
-      "id": "daily-13fe1405",
+      "id": "daily-2a8d2e29",
       "type": "blitz",
       "difficulty": 4,
       "topic": "AntickiRim",
-      "question": "Najočuvanija te najveća starorimska gradska vrata na svijetu, imena Porta Nigra, se nalaze u kojem njemačkom gradu, gdje su i danas nezaobilazna turistička atrakcija?",
+      "question": "Koji latinski naziv se koristio za roba u starom Rimu koji je bio oslobođen?",
       "answers": [
-        "Trier",
-        "Trieru",
-        "Trijer",
-        "Trijeru"
+        "Libertin",
+        "Libertus",
+        "Libertinus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bf21c2ae",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je vrh, sa 2 962m nadmorske visine, najviši vrh Njemačke?",
+      "answers": [
+        "Zugspitze",
+        "Cugšpice",
+        "Zugšpice",
+        "Zugspice",
+        "Cugspice"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-35fd885a",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Znanost",
+      "question": "Koji je kemijski simbol za kisik?",
+      "answers": [
+        "O"
       ],
       "image": null
     }

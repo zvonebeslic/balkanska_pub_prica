@@ -1,179 +1,129 @@
 {
   "version": 2,
   "date": "2026-10-27",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-43b1d5b9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove vatreni junak iz videoigre Dota 2 čije sposobnosti uključuju Dragon Slave i Laguna Blade?",
-      "answers": [
-        "Lina"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9d17a4a3",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Koji lijeni mačak mrzi ponedjeljak a najviše voli jesti lazanje?",
-      "answers": [
-        "Garfield",
-        "Garfild"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-07b9d659",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "U kojem se gradu igra nogometni derbi poznatiji pod nazivom 'Interkontinentalni derbi'?",
-      "answers": [
-        "Istanbulu",
-        "Istanbuls",
-        "Istanbul"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a4ccb538",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Ime koje pjevačice potječe od staronordijskog 'Adalheidis' što znači 'plemenita'?",
-      "answers": [
-        "Adele",
-        "Adel"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7d627ba0",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kojim dvjema riječima počinje čuveni besmisleni tekst koji se desetljećima koristi kao privremeni sadržaj pri grafičkom dizajnu i prijelomu stranica?",
-      "answers": [
-        "Lorem ipsum",
-        "Loremipsum",
-        "Lorimipsum",
-        "Lorim ipsum"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-82c8ac73",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji zid su istočnonjemačke vlasti podignule dok je u americi predsjedao John F. Kennedy?",
-      "answers": [
-        "Berlinski zid",
-        "Berlinski",
-        "Berlin Wall",
-        "Berlin Val",
-        "Berlins Wall",
-        "Berlins Val",
-        "Berlins",
-        "Berlin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-51732598",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "AntickiRim",
-      "question": "Bitka kod Herakleje se odvijala između Rima i Epira u blizini kojeg današnjeg talijanskog grada?",
-      "answers": [
-        "Policoro",
-        "Policora",
-        "Polikoro",
-        "Polikora",
-        "Policoroa",
-        "Polikoroa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-046d9aa7",
+      "id": "daily-e73a1746",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je franjevac 1539.g. potkralju Nove Španjolske Antoniju de Mendozi tvrdio da je izdaleka vidio bogatu Cíbolu, zbog čega je Francisco Vázquez de Coronado sljedeće godine krenuo u potragu za legendarnim gradovima?",
+      "question": "Na kopnu preko kojeg je Balboa prešao između Atlantika i Pacifika stoljećima poslije izgrađen je jedan od najvažnijih plovnih putova svijeta. Koji?",
       "answers": [
-        "Marcos de Niza",
-        "Fray Marcos de Niza",
-        "Markos de Niza",
-        "Niza"
+        "Panamski kanal",
+        "Panamski",
+        "Panamsko",
+        "Panamas",
+        "Panama"
       ],
       "image": null
     },
     {
-      "id": "daily-2c5cbf3f",
+      "id": "daily-3c3d60a4",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je maleni britanski automobil iz 1959.g. revolucionarno iskoristio prostor postavljanjem motora poprečno i pogonom na prednje kotače?",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Sonyjeva igraća konzola koja je prvi put objavljena u Japanu 1994.g.?",
       "answers": [
-        "Mini",
-        "Morris Mini",
-        "Austin Mini",
-        "Original Mini",
-        "Mini Morris",
-        "Mini Moris",
-        "Oridžinal Mini",
-        "Astin Mini",
-        "Mini Austin",
-        "Mini Astin"
+        "PlayStation",
+        "Plejstejšn",
+        "Play Station",
+        "Plej Stejšn",
+        "Ps",
+        "Pi Es",
+        "Pies"
       ],
       "image": null
     },
     {
-      "id": "daily-61744314",
+      "id": "daily-bb628f61",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Mjerna jedinica za tlak je dobila ime po kojem francuskom matematičaru?",
+      "question": "Kojim je kemijskim elementom bio ispunjen prvi konstruirani cepelin?",
       "answers": [
-        "Blaiseu Pascalu",
-        "Blaise Pascal",
-        "Pascalu",
-        "Pascal",
-        "Paskalu",
-        "Paskal"
+        "Vodikom",
+        "Vodik",
+        "Vodika",
+        "Hidrogenom",
+        "Hidrogen",
+        "Hydrogenom",
+        "Hydrogen",
+        "Hydrogens",
+        "Hidrogens",
+        "Hidrodžen",
+        "Hidrodženom",
+        "Hidrodžens"
       ],
       "image": null
     },
     {
-      "id": "daily-fbf3a8bb",
+      "id": "daily-92649ae0",
       "type": "blitz",
-      "difficulty": 5,
-      "topic": "Film",
-      "question": "Kako se zove hotel u kojem se odvija radnja kultnog horora 'Isijavanje' (The Shining)?",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koliko igrača jedne vaterpolo momčadi započinje utakmicu?",
       "answers": [
-        "Overlook Hotel",
-        "Hotel Overlook",
-        "Overluk Hotel",
-        "Hotel Overluk",
-        "Overlook",
-        "Overluk"
+        "7",
+        "Sedam",
+        "Seven",
+        "Sevn",
+        "VII"
       ],
       "image": null
     },
     {
-      "id": "daily-12f4e8c4",
+      "id": "daily-75187eff",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Kako se zvao rimski vojnik koji kopljem probada Isusa na križu?",
+      "answers": [
+        "Longin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b9095e9f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji su drevni narod Grci nazivali 'phoinikes', odnosno 'ljubičasti', zbog trgovine skupocjenom purpurnom bojom?",
+      "answers": [
+        "Feničane",
+        "Fenička",
+        "Feničani",
+        "Fenics",
+        "Feniks",
+        "Fenic",
+        "Fenik",
+        "Feničanske",
+        "Fenicije",
+        "Fenicijske"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-27d60961",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Polusestra kojeg mitskog kralja je bila vila Morgana, čarobnica iz srednjovjekovnih legendi čije se ime danas nalazi u riječi 'fatamorgana'?",
+      "answers": [
+        "Arthura",
+        "Artura"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-04e7dfac",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "Koliko su ratova vodili Rim i Makedonija u razdoblju od 214.g. pr. Kr do 148.g. pr. Kr?",
+      "question": "U televizijskoj seriji iz 2006.g.,u produkciji HTV-a, se prikazuje koliko 'ludih rimskih careva'?",
       "answers": [
         "4",
         "Četiri"
@@ -181,265 +131,314 @@
       "image": null
     },
     {
-      "id": "daily-fbe87d07",
+      "id": "daily-ab1abfab",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Koja pjevačica pjeva pjesme 'Espresso' i 'Nonsense'?",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kojem su engleskom nogometašu pripale Ballon d'Or nagrade 1978 g. I 1979.g.?",
       "answers": [
-        "Sabrina Carpenter",
-        "Carpenter",
-        "Sabrina Annlynn Carpenter"
+        "Kevinu Keeganu",
+        "Kevin Keegan",
+        "Keeganu",
+        "Keegan",
+        "Kigenu",
+        "Kigen"
       ],
       "image": null
     },
     {
-      "id": "daily-fcf35d2e",
+      "id": "daily-38ebf1ad",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kako se naziva trokutasto jedro koje je brodovima omogućavalo učinkovitije jedrenje pod kutom prema vjetru i bilo posebno važno za manevarske sposobnosti karavela?",
+      "question": "Koji je posljednji vladar neoinkanske države u Vilcabambi zarobljen 1572.g., nakon čega su Španjolci ugasili posljednje neovisno uporište Inka?",
       "answers": [
-        "Latinsko jedro",
-        "Lateensko jedro",
-        "Lateen sail",
-        "Latinsko",
-        "Lateensko",
-        "Lateen",
-        "Latin",
-        "Laten",
-        "Latins",
-        "Lateens"
+        "Túpac Amaru I.",
+        "Tupac Amaru",
+        "Tupak Amaru",
+        "Tupak Amar",
+        "Tupac",
+        "Tupak",
+        "Amaru",
+        "Amar"
       ],
       "image": null
     },
     {
-      "id": "daily-afbf1a18",
+      "id": "daily-0c8499e7",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove junak odjeven u zeleno koji u većini igara serijala The Legend of Zelda spašava Zeldu?",
+      "topic": "Sport",
+      "question": "U borilačkom kontekstu, Knock Out u boksu je ekvivalentan kojoj riječi u judu i karateu?",
       "answers": [
-        "Link"
+        "Ippon",
+        "Ipon"
       ],
       "image": null
     },
     {
-      "id": "daily-cad9ec6d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koja je američka kompanija 1979.g. objavila arkadnu videoigru Asteroids?",
-      "answers": [
-        "Atari"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b45ae438",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je osvajač Ballon d'Ora kasnije postao i predsjednikom države Liberije?",
-      "answers": [
-        "George Weah",
-        "Džordž Vija",
-        "Weah",
-        "Vija",
-        "Vejah",
-        "Veah",
-        "Vea",
-        "Veja",
-        "Via"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a26bd2c8",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U dobro poznatoj bajci braće Grimm, koja životinja pokušava ući u kuću u kojoj se nalazi 7 kozlića?",
-      "answers": [
-        "Vuk",
-        "Wolf",
-        "Volf"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-820f334a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Kokosovi Otoci su vanjski teritorij koje države?",
-      "answers": [
-        "Australije",
-        "Australija",
-        "Australias",
-        "Austrejlijas",
-        "Austrajlije",
-        "Austrejlije",
-        "Australie",
-        "Australia",
-        "Austrajlija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1fc6fb1d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kako nazivamo izvedenu mjernu jedinicu koja iznosi 1000 herca?",
-      "answers": [
-        "Kiloherc",
-        "Kilohertz"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f31b5c0d",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koje ime nosi najprodavaniji glazbeni album svih vremena?",
-      "answers": [
-        "Thriller",
-        "Triler"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9d828b97",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Tko je napisao dječiji roman 'Anne od Zelenih Zabata' (Anne of Green Gables)?",
-      "answers": [
-        "Lucy Maud Montgomery",
-        "Lucy Montgomery",
-        "Maud Montgomery",
-        "Montgomery",
-        "Lusi Mod Montgomeri",
-        "Lusi Montgomeri",
-        "Mod Montgomeri",
-        "Montgomeri"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a8dbc686",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je kamerunski nogometaš igrajući za svoju reprezentaciju protiv Kolumbije 2003.g., doživio srčani udar u 71.minuti susreta, nakon kojeg je i preminuo?",
-      "answers": [
-        "Marc Vivien Foe",
-        "Mark Vivijen Fo",
-        "Vivien Foe",
-        "Vivijen Foe",
-        "Vivijen Fo",
-        "Foe",
-        "Fo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9532ea4b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Uz obalu kojeg je danskog poluotoka 1916. vođen najveći pomorski sukob Prvog svjetskog rata između glavnih britanskih i njemačkih ratnih flota?",
-      "answers": [
-        "Jutland",
-        "Jutlanda"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f09b7334",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koja glumica tumači lik Katniss Everdeen?",
-      "answers": [
-        "Jennifer Lawrence",
-        "Dženifer Lovrenc",
-        "Lawrence",
-        "Lovrenc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0eec2dfe",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Kako se zove šesterokutna struktura od voska u kojoj pčele pohranjuju med i uzgajaju ličinke?",
-      "answers": [
-        "Saće"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2ad65ad0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Rijeke Bafing i Bakoye tvore koju veliku afričku rijeku?",
-      "answers": [
-        "Senegal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-658edc77",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kako se naziva duboka crvena boja koja je ime dobila prema francuskom vinskom području?",
-      "answers": [
-        "Bordo",
-        "Bordeaux",
-        "Bordo crvena"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ab7c5943",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kojim je planom Njemačka na početku 1. svjetskog rata namjeravala brzo poraziti Francusku napadom kroz Belgiju, a zatim prebaciti vojsku vlakovima protiv Rusije?",
-      "answers": [
-        "Schlieffenovim",
-        "Schlieffenov",
-        "Schlieffen",
-        "Šlifenovim",
-        "Šlifenov",
-        "Šlifen",
-        "Schlieffenovim planom",
-        "Schlieffenov plan",
-        "Schlieffen plan",
-        "Šlifenovim planom",
-        "Šlifenov plan",
-        "Šlifen plan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ea0ae2b3",
+      "id": "daily-82da5cc1",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Tko je bio potpredsjednik u kabinetu Billa Clintona?",
+      "question": "Tko je u prepunom Madison Square Gardenu, John F. Kennedyju otpjevao 'Happy Birthday Mr. President'?",
       "answers": [
-        "Al Gore",
-        "Gore",
-        "Al Gor",
-        "Gor",
-        "Albert Arnold Gore Jr"
+        "Marilyn Monroe",
+        "Merlin Monro",
+        "Norma Jeane Mortenson",
+        "Norma Džin Mortenson",
+        "Norma Jeane",
+        "Norma Džin",
+        "Mortenson",
+        "Monroe",
+        "Monro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e5be73f4",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko je 'dva na osmu'?",
+      "answers": [
+        "256",
+        "Dvjesto pedeset šest",
+        "Dvije stotine pedeset šest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f5e2896c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je američki grad, koji se nalazi ispod razine mora, Andrew Jackson branio u anglo-američkom ratu?",
+      "answers": [
+        "New Orleans",
+        "Nju Orlins"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-48858201",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja je spisateljica napisala roman za djecu 'Pollyanna' koji govori o istoimenoj djevojčici koja nakon očeve smrti odlazi u Vermont živjeti sa svojom strogom tetom Polly?",
+      "answers": [
+        "Eleanor Emily Hodgman Porter",
+        "Eleanor H. Porter",
+        "Elenor H. Porter",
+        "Hodgman Porter",
+        "Hodžmen Porter",
+        "Hodgman",
+        "Hodžmen",
+        "Porter",
+        "Eleanor Hodgman Porter",
+        "Eleanor Hodžmen Porter"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-4904ecdd",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je američki pisac osim što je napisao, sam i ilustrirao Vesele pustolovine Robina Hooda?",
+      "answers": [
+        "Howard Pyle",
+        "Hovard Pajl",
+        "Pyle",
+        "Pajl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0a2653d2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je francuz igrajući za Real Madrid, 2022.g. osvojio Ballon d'Or?",
+      "answers": [
+        "Karim Benzema",
+        "Benzema"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7e084648",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja umjetnost, a ujedno i znanost, proučava postojeće grbove te sudjeluje u stavarnju novih?",
+      "answers": [
+        "Heraldika",
+        "Grboslovlje"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-41fb796d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element ima atomski tj. redni broj 4 i atomsku masu 9,0121?",
+      "answers": [
+        "Berilij",
+        "Berilium",
+        "Berilijum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0641ea03",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj bajci možemo susresti ‘Monstra’, divovsko morsko čudovište koje guta brodove i njihove posade?",
+      "answers": [
+        "Pinokiju",
+        "Pinokijo",
+        "Pinokiu",
+        "Pinokio",
+        "Pinocchio",
+        "Pinocchiu",
+        "Pinochio",
+        "Pinochiu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca141d42",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "U kojoj je državi nastala popularna igra Pac Man?",
+      "answers": [
+        "Japanu",
+        "Japan",
+        "Džepen",
+        "Jepen",
+        "Nihonu",
+        "Nihon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4e12dd6a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja država,jednim dijelom graniči i sa Slovenijom te Lihtenštajnom?",
+      "answers": [
+        "Austrija",
+        "Osterreich",
+        "Osterajh"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0c23ef85",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Na kojem španjolskom brodu 1839.g. izbija pobuna afričkih robova iz naroda Mende, koji su kasnije završili na sudu te naposlijetku bili oslobođeni?",
+      "answers": [
+        "La Amistad",
+        "Amistad",
+        "Amištad"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fd45a255",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koju česticu za negaciju nalazimo u kratici kemijskog elementa pod rednim brojem 10?",
+      "answers": [
+        "Ne"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b39cd2b9",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko je 10 % od 350?",
+      "answers": [
+        "35",
+        "Trideset pet",
+        "Thirty five",
+        "Tirti fajv",
+        "XXXV"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e2c8b59c",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Povijest",
+      "question": "Koje je godine završio Drugi svjetski rat?",
+      "answers": [
+        "1945"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-63c4b5f3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Koje ime je nosio staro-rimski zlatni novac prije Solidusa?",
+      "answers": [
+        "Aureus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1a6a42cb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove vilin konjic koji prati Spyra i služi mu kao prijatelj i zaštitnik u originalnim igrama Spyro the Dragon?",
+      "answers": [
+        "Sparx",
+        "Sparks",
+        "Sparx the Dragonfly"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1a183d8a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji plivački stil nosi ime po jednom letećem kukcu?",
+      "answers": [
+        "Leptir",
+        "Butterfly",
+        "Baterflaj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a1676a23",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je konkvistador srušio Aztečko Carstvo, koristeći ne samo španjolsko oružje nego i savezništva s narodima drugih domorodaca koji su bili neprijatelji Azteka?",
+      "answers": [
+        "Hernán Cortés",
+        "Hernando Cortez",
+        "Hernando Kortez",
+        "Hernan Kortez",
+        "Cortes",
+        "Kortez"
       ],
       "image": null
     }

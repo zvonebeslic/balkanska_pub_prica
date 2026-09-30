@@ -1,467 +1,449 @@
 {
   "version": 2,
   "date": "2026-10-06",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-9ea0ac0e",
+      "id": "daily-d0129af1",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "John Wilkes Booth i Lee Harvey Oswald su usmrtili predsjednike koje države?",
+      "topic": "AntickiRim",
+      "question": "Koliko rimskih careva potječe iz flavijevske dinastije?",
       "answers": [
-        "SAD-a",
-        "Američke",
-        "American",
-        "Sjedinjenih Američkih Država",
-        "Američkih Država",
-        "SAD",
-        "USA-ja",
-        "USA",
-        "United States",
-        "United States of America",
-        "US",
-        "US-a",
-        "Sjedinjenih Država",
-        "States of America",
-        "Junajted Stejts of Amerika",
-        "Stejts of Amerika",
-        "Junajted Stejts",
-        "Ameriken"
+        "3",
+        "Tri"
       ],
       "image": null
     },
     {
-      "id": "daily-71ce5c05",
+      "id": "daily-cd2d1bd7",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "U filmu 'Ritam ludila' (Whiplash), koji instrument svira ambiciozni student pod pritiskom okrutnog profesora?",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koje je španjolsko otočje u vrijeme antičkog Rima bilo poznato i cijenjeno po svojim vrsnim strijelcima i praćkašima?",
       "answers": [
-        "Bubnjeve",
-        "Drums"
+        "Balearsko",
+        "Balearski",
+        "Balearski otoci",
+        "Baleari",
+        "Baleares",
+        "Balears"
       ],
       "image": null
     },
     {
-      "id": "daily-1c541b91",
+      "id": "daily-81310ff1",
       "type": "blitz",
-      "difficulty": 5,
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koja boja uz crnu i žutu nedostaje državnoj zastavi pod kojom se rodila Marie Curie?",
+      "answers": [
+        "Bijela",
+        "Bjela",
+        "Bijelo",
+        "White",
+        "Vajt",
+        "Weiss",
+        "Vajs",
+        "Bianco",
+        "Blanco",
+        "Blanc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9b56e2f4",
+      "type": "blitz",
+      "difficulty": 1,
       "topic": "FloraFauna",
-      "question": "Koje je sveto drvo Japana u šintoističkoj tradiciji?",
+      "question": "Gomolj koje biljke se može kuhati, pržiti i peći a od njega nastaju čips i pomfrit?",
       "answers": [
-        "Sakaki"
+        "Krumpir",
+        "Krompir",
+        "Kumpir",
+        "Kunpir"
       ],
       "image": null
     },
     {
-      "id": "daily-c1d8c4da",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "U Verne-ovom romanu 'Put oko svijeta u 80 dana', tijekom putovanja kroz Indiju, koje su životinje korištene za prijevoz nakon što željeznička pruga nije bila dovršena?",
-      "answers": [
-        "Slonovi",
-        "Sloni",
-        "Slon",
-        "Elephants",
-        "Elephant",
-        "Elefants",
-        "Elefant",
-        "Elefanti"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8f40ce47",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Kako se zove album pjevačice Beyoncé iz 2024. godine?",
-      "answers": [
-        "Cowboy Carter",
-        "Covboj Karter",
-        "Kauboj Karter"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d24f6e66",
+      "id": "daily-f82297cb",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove arkadna videoigra iz 1985.g. u kojoj igrač na biciklu dostavlja novine, izbjegavajući automobile, pse i druge prepreke?",
+      "question": "U kojoj se drevnoj civilizaciji i među njezinim hramovima i piramidama odvija velik dio radnje videoigre Serious Sam: The First Encounter?",
       "answers": [
-        "Paperboy",
-        "Pejperboj",
-        "Papar Boy",
-        "Pejper boj",
-        "Dostavljač novina",
-        "Novinski dostavljač"
+        "Egipatskoj",
+        "Egipat",
+        "Drevni Egipat",
+        "Egypt",
+        "Eđipt",
+        "Egypts",
+        "Eđipts",
+        "Egiptskoj",
+        "Egipćanskoj",
+        "Egipćani"
       ],
       "image": null
     },
     {
-      "id": "daily-cada747d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je mladi vojskovođa naroda Mapuche, koji je upoznao španjolske vojne metode, postao jedan od najpoznatijih vođa otpora konkvistadoru Pedru de Valdiviji i osvajanju Čilea?",
-      "answers": [
-        "Lautaro Leftraru",
-        "Lautaro",
-        "Leftraru"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4b9ad770",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji začin dobivamo od biljke penjačice latinskog imena 'Piper'?",
-      "answers": [
-        "Papar",
-        "Biber"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-32899fb7",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji tradicionalni alpski šešir, obično izrađen od filca i ukrašen perom, nosi ime po austrijskoj pokrajini s kojom se posebno povezuje?",
-      "answers": [
-        "Tirolski šešir",
-        "Tyrols",
-        "Tirols",
-        "Tirolski",
-        "Tyrolean",
-        "Tirolean"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-326ba474",
+      "id": "daily-8401a660",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Samo se jednom u povijesti dogodilo da nagrada Ballon d'Or nije dodijeljena, a to je bilo koje godine?",
+      "question": "Koji je trener vodio svoj Juventus do naslova nogometnih prvaka talijanske Serie A u sezoni 2011/12?",
       "answers": [
-        "2020",
-        "Dvije tisuće dvadesete",
-        "MMXX",
-        "Two thousand twenty",
-        "Tvu tausend tventi"
+        "Antonio Conte",
+        "Antonio Konte",
+        "Conte",
+        "Konte"
       ],
       "image": null
     },
     {
-      "id": "daily-abf101a5",
+      "id": "daily-8604077a",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Za vrijeme kojeg se ruskog cara u Varšavi rodila velika znanstvenica i dobitnica dvije Nobelove nagrade, Marie Curie?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove brod kojim se u knjizi Roberta Louisa Stevensona plovi prema Otoku s blagom?",
       "answers": [
-        "Aleksandra II.",
-        "Aleksandar II.",
-        "Aleksandra 2.",
-        "Aleksandar 2.",
-        "Aleksandra drugog",
-        "Aleksandar drugi",
-        "Aleksandar second",
-        "Aleksandar seknd",
-        "Aleksandar the second",
-        "Aleksandar d seknd",
-        "Alexandra II.",
-        "Alexandar II.",
-        "Alexandra 2.",
-        "Alexandar 2.",
-        "Alexandra drugog",
-        "Alexandar drugi",
-        "Alexandar second",
-        "Alexandar seknd",
-        "Alexandar the second",
-        "Alexandar d seknd",
-        "Aleksandar dva",
-        "Aleksandar two",
-        "Alexandar dva",
-        "Alexandar two",
-        "Aleksandar tu",
-        "Alexandar tu"
+        "Hispaniola",
+        "Hispanjola"
       ],
       "image": null
     },
     {
-      "id": "daily-cc3c4dd6",
+      "id": "daily-ab9d87bb",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Savez Treće koalicije u ratu protiv Napoleonove Francuske su činile Velika Britanija, Švedska, Napuljska Kraljevina, Austrija i koje još carstvo?",
+      "question": "Koja je država nakon atentata u Sarajevu uputila Srbiji ultimatum čiji su zahtjevi postali jedan od neposrednih povoda za Pevi svjetski rat?",
       "answers": [
-        "Rusko",
-        "Rusija",
-        "Rusko Carstvo",
-        "Carska Rusija",
-        "Russia"
+        "Austro Ugarska",
+        "Austrougarska",
+        "Austrija",
+        "Ugarska"
       ],
       "image": null
     },
     {
-      "id": "daily-d5506f1f",
+      "id": "daily-84ed6070",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Prezime kojeg američkog predsjednika se piše kao ime jednog glumca koji je utjelovio agenta 007?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "'I živjeli su sretno do kraja života' je rečenica kojom završava mnogo, kakvih književnih vrsta?",
       "answers": [
-        "Pierce",
-        "Pirs"
+        "Bajki",
+        "Bajka",
+        "Bajke",
+        "Farytale",
+        "Feritejl",
+        "Faritejl"
       ],
       "image": null
     },
     {
-      "id": "daily-1ec5a234",
+      "id": "daily-8f82c3b6",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "U HTV-ovoj TV seriji 'Ludi rimski carevi', kroz 4 epizode se prikazuju carevi Kaligula, Neron, Komod i koji još?",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Kako se zove zatvoreni prostor koji kombinira vodeni i kopneni dio za biljke i životinje?",
       "answers": [
-        "Elagabal",
-        "Marko Aurelije Antonin Heliogabal",
-        "Elagabalus",
-        "Heliogabalus",
-        "Antonin Antoninus Bassianus",
-        "Heliogabal"
+        "Paludarij",
+        "Paludarium"
       ],
       "image": null
     },
     {
-      "id": "daily-0ad129ca",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Kako se zove rezultat množenja?",
-      "answers": [
-        "Umnožak",
-        "Produkt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8f99af9e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Koji rimski car je proveo posljednje velike progone kršćana?",
-      "answers": [
-        "Dioklecijan",
-        "Diocletianus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3e81d2e4",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako glasi izreka koja kaže da je bolje djelovati odmah nego kasnije rješavati posljedice?",
-      "answers": [
-        "Bolje spriječiti nego liječiti"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0654c583",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koja riječ nedostaje u poslovici koja nas tješi kada nešto napravimo sa zakašnjenjem: 'Bolje ikad nego...'?",
-      "answers": [
-        "Nikad"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2ea7a416",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove jedna od najpoznatijih protagonistica videoigre StarCraft koja nakon zaraze postaje Queen of Blades (Kraljica oštrica)?",
-      "answers": [
-        "Sarah Kerrigan",
-        "Sara Kerrigan",
-        "Sara Kerigan",
-        "Kerrigan",
-        "Kerigan"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a3447208",
+      "id": "daily-146fc52c",
       "type": "blitz",
       "difficulty": 4,
       "topic": "Film",
-      "question": "Kako se zove lik kojeg usvajaju ubojice iz filmova 'Vrisak' (Scream)?",
+      "question": "Od kojeg je izmišljenog metala napravljen štit Kapetana Amerike?",
       "answers": [
-        "Ghostface",
-        "Gostfejs"
+        "Vibraniuma",
+        "Vibranium",
+        "Vibranijuma",
+        "Vibranija",
+        "Vibranij"
       ],
       "image": null
     },
     {
-      "id": "daily-56a80c69",
+      "id": "daily-7eeff1c9",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Sokotra je otok u Adenskom zaljevu koji pripada kojoj državi?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Raketna kriza na kojem otoku je zamalo dovela do 3. svjetskog rata?",
       "answers": [
-        "Jemenu",
-        "Yemenu",
-        "Jemen",
-        "Yemen",
-        "Yemens"
+        "Kuba",
+        "Cuba",
+        "Kubi",
+        "Cubi",
+        "Cubas",
+        "Kubas"
       ],
       "image": null
     },
     {
-      "id": "daily-59195490",
+      "id": "daily-d4d9486d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji kemijski element ima atomski broj 16?",
+      "topic": "Gaming",
+      "question": "Koja kompanija razvija i izdaje videoigru Dota 2 te upravlja platformom Steam?",
       "answers": [
-        "Sumpor",
-        "Sulfur",
-        "Sulphur"
+        "Valve",
+        "Valve Corporation",
+        "Valv"
       ],
       "image": null
     },
     {
-      "id": "daily-6499c287",
+      "id": "daily-70c9fb69",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Nogometni stadion kojeg se kluba nalazi najbliže vodi Bospora",
+      "answers": [
+        "Besiktasa",
+        "Besiktas",
+        "Bešiktaša",
+        "Bešiktaš"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-08974fde",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Kako se naziva teorija etike koja tvrdi da je moralno ono što donosi najveću sreću najvećem broju ljudi?",
+      "topic": "Znanost",
+      "question": "Kako se naziva operacija računanja brzine promjene funkcije u jednoj točki?",
       "answers": [
-        "Utilitarizam"
+        "Derivacija"
       ],
       "image": null
     },
     {
-      "id": "daily-84c25466",
+      "id": "daily-7ac9b8bc",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Taipei je glavni grad koje države?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Kojeg je sijamskog kralja upoznao 18. predsjednik SAD-a Ulysses S. Grant?",
       "answers": [
-        "Tajvana",
-        "Tajvan",
-        "Taivan",
-        "Taivana",
-        "Tajven",
-        "Tajvena"
+        "Chulalongkorna",
+        "Chulalongkorn",
+        "Čulalongkorna",
+        "Čulalongkorn",
+        "Rama V.",
+        "Rama 5.",
+        "Rama peti",
+        "Rama fifth",
+        "Rama fift"
       ],
       "image": null
     },
     {
-      "id": "daily-93c8ed3e",
+      "id": "daily-f02eba14",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je portugalski moreplovac, zajedno s Tristãom Vazom Teixeirom, povezan s portugalskim otkrićem i naseljavanjem Madeire početkom 15. stoljeća?",
+      "topic": "Nogomet",
+      "question": "Koga je Njemačka pobijedila 7-1 u polufinalu Svjetskog nogometnog prvenstva 2014.g. održanog u Brazilu?",
       "answers": [
-        "João Gonçalves Zarco",
-        "Žoao Gonçalves Zarco",
-        "Zarco",
-        "Žarko",
-        "Žoao Žarko",
-        "Joao Zarco",
-        "Žoao Konklaveš Žarko"
+        "Brazil",
+        "Brasil",
+        "Bra",
+        "Brasilia"
       ],
       "image": null
     },
     {
-      "id": "daily-ff6636fc",
+      "id": "daily-c9af780d",
       "type": "blitz",
       "difficulty": 2,
-      "topic": "Nogomet",
-      "question": "Uz crnu, koja je još boja dominirala njemačkim dresom u polufinalnoj pobjedi 7:1 protiv domaćina Brazila na Svjetskom prvenstvu 2014. godine?",
+      "topic": "Film",
+      "question": "Tko glumi poručnika Petea Mitchella u filmu 'Top Gun: Maverick'?",
       "answers": [
-        "Crvena",
-        "Red",
-        "Rot",
-        "Rote",
-        "Roten",
-        "Rotte"
+        "Tom Cruise",
+        "Tom Kruz",
+        "Cruise",
+        "Kruz"
       ],
       "image": null
     },
     {
-      "id": "daily-ff30d97d",
+      "id": "daily-e045ac99",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se naziva hvatanje lopte u košarci, nakon neuspješnog šuta?",
+      "answers": [
+        "Skok",
+        "Jump",
+        "Džamp",
+        "Džump",
+        "Rebound",
+        "Ribond",
+        "Ribaund",
+        "Rebaund"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-914eea28",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji je prvi dugometražni film u povijesti, koji je potpuno napravljen CGI tehnikom?",
+      "answers": [
+        "Priča o igračkama",
+        "Toy Story",
+        "Toj Stori"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-39804df8",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad Poljske?",
+      "answers": [
+        "Varšava",
+        "Warszawa",
+        "Warsaw"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c7998793",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji optički predmet pomorcima omogućava promatranje udaljenih brodova i obala?",
+      "answers": [
+        "Dalekozor",
+        "Dvogled"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b3bb371",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji kanal brodovi koriste kako bi izravno iz Baltičkog doplovili u Sjeverno more (i obrnuto) bez da plove oko cijelog danskog poluotoka Jutlanda?",
+      "answers": [
+        "Kielski Kanal",
+        "Kielski",
+        "Kilski",
+        "Nord Ostsee",
+        "Nord Ostse",
+        "Nord Ostze",
+        "Nord Ostzi",
+        "Nord Estse",
+        "Nord Estze"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-78b59785",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je španjolski istraživač tijekom kopnene ekspedicije kroz jugoistok današnjih SAD-a 1541.g. postao prvi Europljanin za kojeg pouzdano znamo da je stigao do rijeke Mississippi?",
+      "answers": [
+        "Hernando de Soto",
+        "De Soto",
+        "Soto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b5eb0471",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koji je veliki car Maurijskog Carstva u današnjoj Indiji, nakon krvavog osvajanja Kalinge izrazio kajanje zbog ratnih stradanja te se posvetio širenju budizma i svojih moralnih načela?",
+      "question": "Koji je akadski vladar porazio Lugalzagesija, osvojio Ur, Uruk, Kiš i Lagaš te osnovao prvo veliko carstvo u povijesti?",
       "answers": [
-        "Ašoka Veliki",
-        "Ašok Veliki",
-        "Ašoka",
-        "Ašok",
-        "Ashoka Veliki",
-        "Ashok Veliki",
-        "Ashok",
-        "Ashoka",
-        "Ashoka the Great",
-        "Ašoka d Grejt"
+        "Sargon",
+        "Šaru Kinu",
+        "Šarukinu",
+        "Šargon"
       ],
       "image": null
     },
     {
-      "id": "daily-dbf4498e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "'Šampioni nastavljaju igrati sve dok ne naprave kako treba' je poznata izreka koje legendarne američke tenisačice?",
-      "answers": [
-        "Billie Jean King",
-        "Bili Džin King",
-        "Jean King",
-        "Džin King",
-        "King"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-87228d04",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Prije nego je osnovao Foo Fighters, Dave Grohl je bio bubnjar u kojoj grupi?",
-      "answers": [
-        "Nirvani",
-        "Nirvana"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c442e1b5",
+      "id": "daily-353fcb11",
       "type": "blitz",
       "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji je talijanski književnik napisao Pinokijeve avanture?",
+      "topic": "FloraFauna",
+      "question": "Kako se na kineskom jeziku kaže čaj?",
       "answers": [
-        "Carlo Collodi",
-        "Carlo Lorenzini",
-        "Karlo Kolodi",
-        "Karlo Lorencini",
-        "Collodi",
-        "Kolodi",
-        "Lorenzini",
-        "Lorencini"
+        "Cha",
+        "Ča"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c036fb45",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji francuski destilat iz Gaskonje ima povijest koja seže dalje u prošlost od njegova poznatijeg rođaka iz Cognaca?",
+      "answers": [
+        "Armagnac",
+        "Armanjak",
+        "Armagnak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-52202d29",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "U kojem je sportu obruč, kroz koji se postižu poeni, prema standardnim pravilima postavljen točno 3,05 m iznad parketa, a igra se s pet igrača u momčadi?",
+      "answers": [
+        "Košarka",
+        "Košarci",
+        "Koš",
+        "Basketball",
+        "Basketu",
+        "Basket",
+        "Basketball",
+        "Basketbal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c2a635ca",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Koji je slavni talijanski slikar naslikao 'Rođenje Venerino' i 'Minervu i Kentaura'?",
+      "answers": [
+        "Botticelli",
+        "Botičeli",
+        "Sandro Botticelli",
+        "Sandro Botičeli",
+        "Alessandro di Mariano Filipepi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ab1818c",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko stupnjeva ima puni krug?",
+      "answers": [
+        "360",
+        "Three hundred sixty",
+        "Tri handred siksti",
+        "Tristo šezdeset",
+        "CCCLX"
       ],
       "image": null
     }

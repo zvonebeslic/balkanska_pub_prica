@@ -1,444 +1,438 @@
 {
   "version": 2,
   "date": "2026-10-17",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-e70c8bc6",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Koji napitak potječe od biljke 'Camellia sinensis'?",
-      "answers": [
-        "Čaj"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-43e5a031",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koliko Keplerovih zakona o gibanju planeta poznajemo danas?",
-      "answers": [
-        "3",
-        "Tri",
-        "Three",
-        "Tre",
-        "III",
-        "Drei",
-        "Draj"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a560d99f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove kineski filozof čija učenja čine temelj konfucijanizma?",
-      "answers": [
-        "Konfucije",
-        "Confucius"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9a643552",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je plin odgovoran za mjehuriće u pjenušavom vinu?",
-      "answers": [
-        "Ugljikov dioksid",
-        "Ugljični dioksid",
-        "CO2",
-        "Carbon dioxide",
-        "Karbon dioksid"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c6308069",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Ostalo",
-      "question": "Tko pod drugim jamu kopa, sam u nju.. što?",
-      "answers": [
-        "Upada"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e5b7c446",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji kemijski pribor poznajemo pod imenom Bunsenov i Mekerov?",
-      "answers": [
-        "Plamenik",
-        "Plemenik",
-        "Plamen",
-        "Plemen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-af61a0b4",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "U trojanskom ratu, kako se zvala Hektorova supruga, koja ga je molila da ne odlazi ponovno u bitku jer je strahovala da će ostati udovica?",
-      "answers": [
-        "Andromaha"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c39c5b63",
+      "id": "daily-4ebf98c9",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Koji je planinski vrh na grbu Nepala?",
+      "question": "Glavni grad Trinidada i Tobaga možemo doslovno prevesti kao 'luka španjolske' a originalno se zove kako?",
       "answers": [
-        "Mount Everest",
-        "Everest"
+        "Port of Spain",
+        "Port of Spejn",
+        "Port of Špain",
+        "Port of Špejn"
       ],
       "image": null
     },
     {
-      "id": "daily-4ab9a298",
+      "id": "daily-8f06b8f6",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove glavni antagonist igrice Paper Mario: The Origami King, kralj origamija koji želi cijeli svijet pretvoriti u origami?",
+      "topic": "Moreplovci",
+      "question": "Na Galápagosu postoji vrsta velikih gmazova čija se različitost među otocima posebno isticala. O kojoj je životinji riječ?",
       "answers": [
-        "Olly",
-        "Oli"
+        "Kornjača",
+        "Kornjače",
+        "Turtle",
+        "Turtl"
       ],
       "image": null
     },
     {
-      "id": "daily-49a67e9e",
+      "id": "daily-9fbbb5e8",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koja se srijemska svetica i mučenica, spaljena na lomači za Dioklecijanova progona kršćana, u Zadru slavi kao sv. Stošija?",
+      "answers": [
+        "Anastazija",
+        "Anastasia",
+        "Sv. Anastazija",
+        "Sv. Anastasia"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a89a7f09",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove podserijal videoigre Call of Duty koji uključuje likove poput Alexa Masona i Franka Woodsa?",
+      "topic": "Moreplovci",
+      "question": "Koji je britanski pomorac 1718.g. stigao u Nassau kao kraljevski guverner Bahama te pomilovanjima i uporabom sile okončao vlast tamošnje Gusarske republike?",
       "answers": [
-        "Black Ops",
-        "Blek Ops"
+        "Woodes Rogers",
+        "Woods Rogers",
+        "Vuds Rodžers",
+        "Rogers",
+        "Rodžers"
       ],
       "image": null
     },
     {
-      "id": "daily-829fd75a",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Koja je zemlja pobijedila na Euroviziji s pjesmom 'Euphoria'?",
-      "answers": [
-        "Švedska",
-        "Sweden",
-        "Sviden",
-        "Sverige",
-        "Swe"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9591943d",
+      "id": "daily-4c462c8c",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je britanski povjesničar upozorio na opasnost vlasti poznatom mišlju 'Moć kvari, a apsolutna moć kvari apsolutno'?",
+      "topic": "Zemljopis",
+      "question": "Koje se gorje proteže od Crnog Mora do Kaspijskog Jezera?",
       "answers": [
-        "Lord Acton",
-        "Akton",
-        "Acton",
-        "Lord Akton",
-        "Ekton"
+        "Kavkaz",
+        "Kavkaško",
+        "Kavkazijsko"
       ],
       "image": null
     },
     {
-      "id": "daily-f465b976",
+      "id": "daily-3823bb96",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Nogomet",
-      "question": "Koji je nogometaš postao prvi osvajač Svjetskog prvenstva koji je tijekom svoje karijere nastupao i u Hrvatskoj nogometnoj ligi?",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Zahvaljujući britanskom sustavu odlikovanja, Isaac Newton ispred svog imena ima titulu sa koja tri slova?",
       "answers": [
-        "Dani Olmo",
-        "Olmo",
-        "Deni Olmo"
+        "Sir",
+        "Sr"
       ],
       "image": null
     },
     {
-      "id": "daily-9d1bb4f1",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako su se prezivala braća koja su napisala najpoznatiju verziju o Crvenkapici?",
-      "answers": [
-        "Grimm",
-        "Grim"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-33e771e8",
+      "id": "daily-a83f7f5a",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koji je tvrdi, zaobljeni šešir nastao u Engleskoj sredinom 19. stoljeća, a u hrvatskom se naziva i polucilindar?",
+      "question": "Na kojem je pomalo neočekivanom mjestu Marko Polo piscu Rustichellu iz Pise pripovijedao priče sa svojih azijskih putovanja koje će završiti u njegovu slavnom djelu?",
       "answers": [
-        "Bowler",
-        "Bovler",
-        "Bobcat",
-        "Bob cat",
-        "Bbillycock",
-        "Coke",
-        "Derby",
-        "Derbi",
-        "Kok"
+        "Zatvoru",
+        "Zatvor",
+        "Ćuzi",
+        "Ćuza",
+        "Prison",
+        "Prisonu",
+        "Rpizon",
+        "Prizonu",
+        "Iza rešetaka"
       ],
       "image": null
     },
     {
-      "id": "daily-6f7e70c3",
+      "id": "daily-ebb91288",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "U kojem stoljeću, na mjesto rimskog cara stižu čak tri Gordijana, prvi, drugi i treći?",
+      "topic": "Nogomet",
+      "question": "Na kojem kontinentu se, uz Australiju i Antartiku, nikada nije slavilo jedno od prva tri mjesta na nogometnim SP-ima?",
       "answers": [
-        "3.",
-        "3",
-        "Trećem",
-        "Treće",
-        "3. st",
-        "3 st",
-        "3. Stoljeće",
-        "3 stoljeće",
-        "Tri",
-        "III.",
-        "III",
-        "III stoljeće",
-        "Trećem stoljeću",
-        "Treće stoljeće"
+        "Afrika",
+        "Africi",
+        "Africa",
+        "Africas",
+        "Afrikas",
+        "Afriki"
       ],
       "image": null
     },
     {
-      "id": "daily-381f8f48",
+      "id": "daily-ff6a5c31",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "'S kim si, takav si' upozorava na utjecaj čega na čovjeka?",
-      "answers": [
-        "Društva",
-        "Ekipe",
-        "Kompanije"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6411914e",
-      "type": "blitz",
-      "difficulty": 2,
       "topic": "FloraFauna",
-      "question": "Koje voće je ujedno i dom Spužvaboba Skockanog?",
+      "question": "Kako nazivamo sposobnost nekih vrsta životinja i biljaka, da se izgledom prilagode okolini radi zaštite od prirodnih neprijatelja?",
       "answers": [
-        "Ananas"
+        "Mimikrija"
       ],
-      "image": null,
-      "rarity": "silver"
+      "image": null
     },
     {
-      "id": "daily-f1efb8af",
+      "id": "daily-51732598",
       "type": "blitz",
       "difficulty": 5,
       "topic": "AntickiRim",
-      "question": "Koji je legendarni i jedan od posljednjih latinskih kraljeva Alba Longe, ujedno i djed osnivača Rima, Romula?",
+      "question": "Bitka kod Herakleje se odvijala između Rima i Epira u blizini kojeg današnjeg talijanskog grada?",
       "answers": [
-        "Numitor"
+        "Policoro",
+        "Policora",
+        "Polikoro",
+        "Polikora",
+        "Policoroa",
+        "Polikoroa"
       ],
       "image": null
     },
     {
-      "id": "daily-92ee813e",
+      "id": "daily-86ea1d00",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Tko je bio prvi predsjednik SAD-a koji je uživo fotografiran dok je radio u uredu?",
+      "question": "Kako se zove supruga bivšeg američkog predsjednika Baracka Obame?",
       "answers": [
-        "James Knox Polk",
-        "Knox",
-        "Polk",
-        "Džejms Noks Polk",
-        "Knoks",
-        "Noks",
-        "Džejms Knoks Polk",
-        "James Polk",
-        "Džejms Polk"
+        "Michelle",
+        "Mišel"
       ],
       "image": null
     },
     {
-      "id": "daily-35b9b510",
+      "id": "daily-1bb72b8c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koju vrstu namirnice predstavlja predmet koji Mario u igrici Super Mario Bros. uzima kako bi se povećao i postao Super Mario?",
+      "answers": [
+        "Gljiva",
+        "Gljive",
+        "Mushrooms",
+        "Mušroms",
+        "Mušrums"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4a993fdf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je, tada budući američki predsjednik, bio ranjen u bitci kod South Mountaina 1862.g.?",
+      "answers": [
+        "Rutherford Birchard Hayes",
+        "Hayes",
+        "Heiz",
+        "Hajes",
+        "Hejz",
+        "Hajz"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-311cd72b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "U kojoj je kultnoj igri iz 1984.g. pas doslovno ismijavao igrača kad god bi promašio metu?",
+      "answers": [
+        "Duck Hunt",
+        "Lov na patke",
+        "Dak Hant"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ce7da186",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "U kojem je licu napisana knjiga 'Lovac u žitu' (The Catcher in the Rye), američkog pisca J. D. Salingera?",
+      "question": "Niz od 62 romana pod skupnim nazivom 'Neobična putovanja' (Voyages extraordinaires) napisao je koji francuski pisac?",
+      "answers": [
+        "Jules Verne",
+        "Jul Vern",
+        "Verne",
+        "Vern"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-616bbbd3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je trener jedini u povijesti osvajao domaće nogometno prvenstvo u Rimu, Milanu i Madridu te Torinu (koja je kasnije poništena)?",
+      "answers": [
+        "Fabio Capello",
+        "Fabio Kapelo",
+        "Capello",
+        "Kapelo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6aeeaa60",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kojoj se periodi tj redu, na periodnom sustavu elemenata nalazi vodik?",
       "answers": [
         "Prvom",
         "Prvi",
-        "Prvo",
-        "Prva",
-        "Prv",
-        "1.",
-        "1.st",
+        "Prvog",
+        "Prvomu",
         "1st",
         "1 st",
         "First",
         "Frst",
-        "Jedan",
-        "One",
-        "Von",
         "1",
-        "I.",
-        "I"
+        "I",
+        "1.",
+        "One",
+        "Von"
       ],
       "image": null
     },
     {
-      "id": "daily-3517e2d5",
+      "id": "daily-941199db",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji gusar je najveći neprijatelj Petru Panu?",
+      "answers": [
+        "Kapetan Kuka",
+        "Kuka",
+        "Hook",
+        "Hok",
+        "Huk",
+        "Captain Hook",
+        "Kepten Hok"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-92594320",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se naziva udarac kojim tenisač udara lopticu prije nego što ona odskoči od podloge?",
+      "answers": [
+        "Volej",
+        "Volley"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f69826eb",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliki je zbroj kutova svakog trokuta?",
+      "answers": [
+        "180",
+        "Sto osamdeset"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7fa38b75",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koji je grad 1939.g. bio podijeljen između njemačkih zahtjeva i poljskog pristupa Baltiku, a pod njemačkim imenom Danzig postao jedan od simbola krize koja je prethodila ratu?",
+      "question": "Kako se danas zove najpoznatiji rimski amfiteatar u Italiji, izvornog imena Flavijev amfiteatar?",
       "answers": [
-        "Gdanjsk",
-        "Gdansk"
+        "Kolosej",
+        "Koloseum",
+        "Colosseum"
       ],
       "image": null
     },
     {
-      "id": "daily-bcd0477f",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Kako se zove robot pratitelj Lukea Skywalkera?",
-      "answers": [
-        "R2 D2",
-        "Artoo Detoo",
-        "Erto Deto"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-aac890f8",
+      "id": "daily-4535dbf4",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji bend potpisuje pjesmu 'Stairway to Heaven'?",
+      "topic": "Gaming",
+      "question": "Kako se zove kraljevstvo u kojem se odvija najveći dio prve videoigre Dark Souls?",
       "answers": [
-        "Led Zeppelin",
-        "Led Cepelin"
+        "Lordran"
       ],
       "image": null
     },
     {
-      "id": "daily-5efbe021",
+      "id": "daily-7b250067",
       "type": "blitz",
       "difficulty": 1,
-      "topic": "Film",
-      "question": "Koji glumac je utjelovio lik i djelo kapetana Jacka Sparrowa?",
+      "topic": "svastara",
+      "question": "Koje su dugodlake životinje, prilagođene velikim nadmorskim visinama, putnicima poput Marka Pola bile važan prizor i dio života u planinskim krajevima središnje Azije?",
       "answers": [
-        "Johnny Depp",
-        "Džoni Dep",
-        "Depp",
-        "Dep"
+        "Jak",
+        "Jakovi",
+        "Yaks",
+        "Yakovi",
+        "Yak"
       ],
       "image": null
     },
     {
-      "id": "daily-84330c7a",
+      "id": "daily-16964d31",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Rat sa kojom državom je Ulysses S. Grant opisao kao 'zločin radi kojeg je Bog Ameriku kaznio građanskim ratom'?",
-      "answers": [
-        "Meksikom",
-        "Mexicom",
-        "Meksiko",
-        "Mexico",
-        "Mexikom"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-89dd61ba",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "'Carreira de indija' je bila pomorska ruta koja je polazila na dugačak put iz kojeg portugalskog grada?",
-      "answers": [
-        "Lisabona",
-        "Lisabon",
-        "Lisboa",
-        "Lisboe",
-        "Lisbo"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-564dec0f",
-      "type": "blitz",
-      "difficulty": 3,
+      "difficulty": 2,
       "topic": "Nogomet",
-      "question": "Na kojem se kontinentu nalazi najveći broj stadiona, istanbulskih prvoligaša?",
+      "question": "Prihvaćanje trenerskog mjesta u kojem je klubu koštalo Julena Lopeteguija mjesta španjolskog izbornika samo dva dana prije Svjetskog prvenstva 2018. godine?",
       "answers": [
-        "Europi",
-        "Europa",
-        "Jurop",
-        "Europes",
-        "Jurops"
+        "Real Madrid",
+        "Real Madridu",
+        "Realu",
+        "Madrid",
+        "Madridu",
+        "Reals",
+        "Madrids",
+        "Real"
       ],
       "image": null
     },
     {
-      "id": "daily-fe1d704f",
+      "id": "daily-d0fa8c55",
       "type": "blitz",
       "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se u bejzbolu naziva udarac nakon kojeg lopta napusti dopušteni dio igrališta, a udarač može obići sve baze i osvojiti bod?",
+      "answers": [
+        "Home run",
+        "Houm ran",
+        "Hom ran",
+        "Hom run"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7ff0c990",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja je namirnica u 'Guliverovim putovanjima' postala povod višegodišnjem sukobu između Lilliputa i Belfuscua zbog spora treba li je razbijati s tupog ili šiljastog kraja?",
+      "answers": [
+        "Jajeta",
+        "Jaje",
+        "Jaja",
+        "Egg",
+        "Eggs",
+        "Eg",
+        "Egs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5b33b5ca",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je drevni mezopotamski grad najpoznatiji kao dom legendarnog kralja Gilgameša koji je, prema predaji, opasao taj grad veličanstvenim zidinama i čija se epska priča smatra najstarijim sačuvanim književnim djelom u svijetu?",
+      "answers": [
+        "Uruk",
+        "Unug",
+        "Ereč",
+        "Varga"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb3cf2ab",
+      "type": "blitz",
+      "difficulty": 5,
       "topic": "Zemljopis",
-      "question": "Koji umjetno prokopani kanal, dužine 6,3km, spaja Jonsko sa Egejskim morem?",
+      "question": "Koja valuta je službeno sredstvo plaćanja u Vijetnamu?",
       "answers": [
-        "Korintski Kanal",
-        "Korintski",
-        "Korintov",
-        "Korint",
-        "Corint",
-        "Corinth",
-        "Corinthian",
-        "Korintijan"
+        "Dong"
       ],
       "image": null
     },
     {
-      "id": "daily-a0d96eae",
+      "id": "daily-2fbf29c8",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koliko je topova posada broda HMS Endeavour 1770.g. bacila u more kako bi olakšala brod nakon što se nasukao na Velikom koraljnom grebenu?",
+      "topic": "Znanost",
+      "question": "Koji je satelitski navigacijski sustav Europa razvila kao odgovor na američki GPS?",
       "answers": [
-        "6",
-        "Šest",
-        "VI",
-        "Six",
-        "Siks"
+        "Galileo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-36762dc0",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Julije Saturnin, Bonos i Prokul su bili uzurpatori u rimskom carstvu za vrijeme kojeg cara?",
+      "answers": [
+        "Proba",
+        "Prob",
+        "Probusa",
+        "Probus"
       ],
       "image": null
     }

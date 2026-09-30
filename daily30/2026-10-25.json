@@ -1,450 +1,442 @@
 {
   "version": 2,
   "date": "2026-10-25",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-f5b15da1",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koji film završava rečenicom: 'Louis, mislim da je ovo početak jednog divnog prijateljstva'?",
-      "answers": [
-        "Casablanca",
-        "Kazablanka"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8ec51769",
+      "id": "daily-4e344352",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Koje je ime Thomas Jefferson dao svom imanju u Charlottesvilleu na kojem se i danas nalazi vila, na 260m visokom brdu?",
+      "question": "Dana 20.12. 1803.g. u New Orleansu je podignuta američka zastava a spuštena je čija?",
       "answers": [
-        "Monticello",
-        "Montećelo"
+        "Francuska",
+        "France",
+        "French"
       ],
       "image": null
     },
     {
-      "id": "daily-33c87cc2",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Scrooge je glavni lik u kojem romanu Charlesa Dickensa kojeg tijekom Božićnih praznika posjećuju tri duha: prošlosti, sadašnjosti i budućnosti?",
-      "answers": [
-        "Božićna Priča",
-        "Božićna Pjesma",
-        "A Christmas Carol",
-        "Christmas Carol",
-        "Kristmes Kerol",
-        "Kristmes Karol",
-        "Krismes Kerol",
-        "Krismes Karol"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-80f96331",
+      "id": "daily-bae46cfe",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Po kojem je francuskom fizičaru nazvana jedinica za jakost električne struje?",
+      "topic": "Nogomet",
+      "question": "U kojem je bosansko-hercegovačkom gradu rođen nogometni trener te bivši igrač Sergej Jakirović?",
       "answers": [
-        "Andre Marie Ampereu",
-        "Andre Marie Ampere",
-        "Ampereu",
-        "Ampere",
-        "Amperu",
-        "Amper"
+        "Mostaru",
+        "Mostar"
       ],
       "image": null
     },
     {
-      "id": "daily-e0cfb225",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kad bismo vrijeme mjerili u hercima, koliko bi herca prošlo u jednoj sekundi?",
-      "answers": [
-        "Jedan",
-        "1",
-        "I",
-        "Jedna",
-        "Jedno",
-        "One",
-        "Van",
-        "Von",
-        "Eine",
-        "Ein",
-        "Ajne",
-        "Ajn",
-        "Ajnc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b050fd56",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliko je 3 na četvrtu?",
-      "answers": [
-        "81",
-        "Osamdeset jedan",
-        "Eighty one",
-        "Ejti von",
-        "LXXXI"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4cff94f6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Prvi berberski rat je izazvan jer su berberske države na području današnjih Libije, Alžira, Maroka i Tunisa od SAD-a tražile visoke novčane naknade u zamjenu za čuvanje od gusara, što su amerikanci odbili te se upustili u rat, a u to vrijeme, predsjednik SAD-a je bio tko?",
-      "answers": [
-        "Thomas Jefferson",
-        "Tomas Džeferson",
-        "Jefferson",
-        "Džeferson"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fc83d3cc",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Glazba",
-      "question": "Koji instrument svira Melissa Viviane Jefferson, poznatija kao Lizzo?",
-      "answers": [
-        "Flautu",
-        "Flauta"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-75187eff",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "AntickiRim",
-      "question": "Kako se zvao rimski vojnik koji kopljem probada Isusa na križu?",
-      "answers": [
-        "Longin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9793089b",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Koji je američki pisac stvorio lik i djelo Stuarta Malog?",
-      "answers": [
-        "Elwyn Brooks White",
-        "E. B. Vajt",
-        "E. B. White",
-        "Elvin Bruks Vajt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-85b6d816",
+      "id": "daily-f4b7adf7",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Najviši neosvojeni vrh svijeta, Gangkhar Puensum, nalazi se u kojoj državi?",
+      "question": "Koji otok polineški starosjedioci poznaju kao Rapa Nui?",
       "answers": [
-        "Butan",
-        "Butanu"
+        "Uskršnji Otok",
+        "Uskršnji",
+        "Easter",
+        "Ister",
+        "Pasha",
+        "Paska",
+        "Pascua"
       ],
       "image": null
     },
     {
-      "id": "daily-8bee2e3c",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "'Bože pravde' je ime himne koje balkanske države?",
-      "answers": [
-        "Srbija",
-        "Srbije"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ba16d93a",
+      "id": "daily-ef682b81",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "U koliko je sati, simbolično, 11. studenoga. (novembra) 1918.g., prema dogovorenom primirju koje je simbolično stupilo na snagu 'jedanaestog dana u jedanaestom mjesecu', prestala pucnjava na Zapadnom bojištu?",
+      "topic": "AntickiRim",
+      "question": "U kojem stoljeću se događa velika kriza u rimskom carstvu koja je dovela do 50 godina nestabilnosti i građanskih ratova?",
       "answers": [
-        "11",
-        "Jedanaest",
-        "Eleven",
-        "XI",
-        "Elft",
-        "U 11",
-        "U jedanaest"
+        "3.",
+        "3. st",
+        "3",
+        "Trećem",
+        "Tri",
+        "Treće",
+        "III.",
+        "III",
+        "3. stoljeće",
+        "III. stoljeće",
+        "Treće stoljeće",
+        "Trećem stoljeću"
       ],
       "image": null
     },
     {
-      "id": "daily-058c53f8",
+      "id": "daily-bf386a74",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koja je japanska kompanija razvila arkadnu videoigru Shinobi?",
+      "topic": "Zemljopis",
+      "question": "Koja je europska država jedinu na tom kontinentu čije susjedne zemlje nemaju izlaz na more?",
       "answers": [
-        "Sega"
+        "Lihtenštajn",
+        "Lichtenstein",
+        "Liechtenstein"
       ],
       "image": null
     },
     {
-      "id": "daily-9fb59b2c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "U filmu 'Joker', u kojoj četvrti New Yorka Arthur Fleck pleše stepenicama, koje su kasnije postale turistička atrakcija?",
-      "answers": [
-        "Bronx",
-        "U Bronxu",
-        "Bronks",
-        "U Bronksu",
-        "Bronxu",
-        "Bronksu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-21a30035",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Četiri plemenite kineske biljke su: Bambus, Orhideja, Šljiva i koja još biljka koja cvjeta u jesen?",
-      "answers": [
-        "Krizantema"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a52be9d7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koju je rijeku Napoleonova golema Velika armija prešla u lipnju 1812.g., čime je započeo kobni pohod na Rusiju?",
-      "answers": [
-        "Njemen",
-        "Nemunas",
-        "Nemen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6571c456",
+      "id": "daily-44732ae4",
       "type": "blitz",
       "difficulty": 5,
-      "topic": "Glazba",
-      "question": "Koji je ruski skladatelj iz 19.st napisao operu 'Boris Godunov' i klavirski ciklus 'Slike s izložbe'?",
+      "topic": "Književnost",
+      "question": "Koji je lav pjevajući stvorio Narniju?",
       "answers": [
-        "Modest Petrovič Musorgski",
-        "Petrovič Musorgski",
-        "Modest Musorgski",
-        "Musorgski"
+        "Aslan"
       ],
-      "image": null,
-      "rarity": "golden"
+      "image": null
     },
     {
-      "id": "daily-e1ea7c6e",
+      "id": "daily-12aaa4d9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je košarkaški klub iz Pireja, prepoznatljiv po crveno-bijelim bojama, najveći rival atenskog Panathinaikosa u grčkom 'Derbiju vječnih neprijatelja'?",
+      "answers": [
+        "Olympiacos",
+        "Olimpijakos"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a59416da",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvao brat feničanina Hanibala koji je kao vojskovođa poginuo u bitci na Metauru 207.g. pr. Kr. vodeći feničke vojne snage u pomoć svom bratu koji je tada već prešao Alpe i krenuo na Rim?",
+      "answers": [
+        "Hasdrubal Barka",
+        "Hazdrubal Barka",
+        "Hasdrubal",
+        "Hazdrubal",
+        "Barka",
+        "Barca",
+        "Azrubal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6712f708",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Jedna od najpopularnijih svjetskih bajki, ona o Ivici i Marici, nastala je iz pera koje braće?",
+      "answers": [
+        "Grimm",
+        "Grim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-749b6f5d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Preko koje je rijeke Napoleonova iscrpljena vojska tijekom povlačenja iz Rusije izgradila improvizirane mostove i pod napadima uspjela izbjeći potpuno uništenje?",
+      "answers": [
+        "Berezine",
+        "Berezina"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-532267c0",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koliko dijagonala ima peterokut?",
+      "question": "Koji naziv smije nositi whisky proizveden i odležan u Škotskoj u skladu s tamošnjim zakonskim pravilima?",
+      "answers": [
+        "Scotch",
+        "Škotski",
+        "Skoč",
+        "Skotch",
+        "Skotc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d86a5e6d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji se broj u Morseovoj abecedi skriva iza 5 točki?",
       "answers": [
         "5",
         "Pet",
-        "Fajfive",
+        "Five",
+        "Fajv",
         "V"
       ],
       "image": null
     },
     {
-      "id": "daily-174c1e06",
+      "id": "daily-ef4345d0",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koja je francuska botaničarka, prerušena u muškarca kako bi se mogla ukrcati na brod, postala prva poznata žena koja je oplovila svijet?",
+      "topic": "Nogomet",
+      "question": "Koje ime nosi najveći derbi španjolskog nogometa?",
       "answers": [
-        "Jeanne Baret",
-        "Jeanne Baré",
-        "Jeanne Barret",
-        "Žan Baret",
-        "Baret",
-        "Barret",
-        "Bare",
-        "Baret"
+        "El Clasico",
+        "El Klasiko"
       ],
       "image": null
     },
     {
-      "id": "daily-8eb3cf45",
+      "id": "daily-67aca750",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Film",
-      "question": "Kako se zove planina na koju Frodo mora odnijeti Prsten Moći da bi ga uništio?",
+      "topic": "Sport",
+      "question": "Koje je boje karton kojim sudac u rukometu pokazuje diskvalifikaciju igrača ili službene osobe?",
       "answers": [
-        "Kleta gora",
-        "Mt. Doom",
-        "Mt Doom",
-        "Mountain Doom",
-        "Mont Dum",
-        "Mount Doom"
+        "Crveni",
+        "Crvena",
+        "Red"
       ],
       "image": null
     },
     {
-      "id": "daily-c6f83439",
+      "id": "daily-17a4080c",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Koji je škotski književnik napisao pustolovni roman 'Brodski kuhar' koji je kasnije preimenovan u 'Otok s blagom'?",
+      "question": "U prvoj knjizi, Alisa odlazi u Čudnovati svijet padom kroz zečju rupu, a u drugoj knjizi u takav svijet dospijeva prolaskom kroz što?",
       "answers": [
-        "Robert Louis Stevenson",
-        "Robert Luis Stivenson",
-        "Louis Stevenson",
-        "Luis Stivenson",
-        "Robert Stivenson",
-        "Robert Stevenson",
-        "Stevenson",
-        "Stivenson"
+        "Ogledalo",
+        "Glass",
+        "Glas",
+        "Gles",
+        "Ogledalce",
+        "Špiglo",
+        "Spiegl",
+        "Špigel",
+        "Špigl"
       ],
       "image": null
     },
     {
-      "id": "daily-ba03e2bf",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je nogometaš osvojio Ballon d'Or ispred Ronalda i Griezmanna?",
-      "answers": [
-        "Luka Modrić",
-        "Modrić"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ed5600a5",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koliko metara se pretrči u prvoj atletskoj disciplini koju igrač igra u originalnoj arkadnoj videoigri Track & Field?",
-      "answers": [
-        "100",
-        "Sto",
-        "Hundred",
-        "Handred",
-        "Hundert",
-        "Handert",
-        "Soma",
-        "C",
-        "Stotinu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8f8dbdd1",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Ako bi slavnu Via Appiu prešli u cijelosti, onda bi iz Rima došli u koji grad na jugoistoku Italije?",
-      "answers": [
-        "Brindisi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cb22e55d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Granada i Cadiz su nogometni klubovi u kojoj državi?",
-      "answers": [
-        "Španjolskoj",
-        "Španjolska",
-        "Spains",
-        "Spain",
-        "Spejns",
-        "Spejn",
-        "Spajn",
-        "Espanjol",
-        "Espanyol",
-        "Espanjols",
-        "Espanyols",
-        "Spa",
-        "Esp",
-        "Španija",
-        "Španiji"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c80a7304",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Zemljopis",
-      "question": "Doha je glavni grad koje države?",
-      "answers": [
-        "Katara",
-        "Katra",
-        "Qatar",
-        "Qatars",
-        "Katars",
-        "Katar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1d0ba994",
+      "id": "daily-6e4f5f54",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Na otoku Mactan na Filipinima, Magellan je poginuo u sukobu s lokalnim ratnicima a kako se zvao njihov vođa, koji je u filipinskoj tradiciji postao simbol otpora strancima?",
+      "question": "Na mjestu astečkog Tenochtitlána, grada koji je Cortés osvojio 1521.g., danas se prostire golema metropola. Koja?",
       "answers": [
-        "Lapulapu",
-        "Lapu lapu"
+        "Ciudad de México",
+        "Siudad de Meksiko",
+        "Mexico City",
+        "Meksiko Siti",
+        "Meksiko",
+        "Mehico",
+        "Mexico"
       ],
       "image": null
     },
     {
-      "id": "daily-9b6fa901",
+      "id": "daily-ffe2ca7d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji stručni naziv koristimo za 'zimski san' kod životinja?",
+      "topic": "Gaming",
+      "question": "Kako se zove vitez iz Astorije iz videoigre Dark Souls, poznat po potrazi za vlastitim 'suncem' i frazi 'Praise the Sun'?",
       "answers": [
-        "Hibernacija"
+        "Solaire",
+        "Solaire",
+        "Soler",
+        "Solair"
       ],
       "image": null
     },
     {
-      "id": "daily-31b209af",
+      "id": "daily-f853d4ac",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvala prijestolnica Asirskog Carstva, čije se ruševine danas nalaze pokraj iračkog grada Mosula?",
+      "answers": [
+        "Niniva",
+        "Ninive",
+        "Ninue"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f42bfe11",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva uzak morski prolaz koji povezuje dvije veće vodene površine?",
+      "answers": [
+        "Tjesnac",
+        "Moreuz",
+        "Tesnac"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-51eab108",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Zemljopis",
-      "question": "Koliko krakova ima zvijezda na zastavi Somalije?",
+      "topic": "AntickiRim",
+      "question": "Ruski slikar Karl Bryullov je 1833.g. naslikao posljednje dane kojeg grada?",
       "answers": [
-        "5",
-        "Pet",
-        "V",
-        "Five",
-        "Fajv",
-        "Fumf"
+        "Pompeja",
+        "Pompeji",
+        "Pompeii",
+        "Pompei"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9fa6ef3d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je američki predsjednik glumio u filmovima 'Kraljeva ulica' (Kings Row), 'Laku noć, Bonzo' (Bedtime for Bonzo) i 'Put za Santa Fe' (Santa Fe Trail)?",
+      "answers": [
+        "Ronald Reagan",
+        "Ronald Regan",
+        "Reagan",
+        "Regan",
+        "Rigen",
+        "Rigan",
+        "Regen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2cae8547",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove stariji prijatelj i mentor Nathana Drakea u serijalu videoigara Uncharted, kojeg protagonist najčešće zove Sully?",
+      "answers": [
+        "Victor Sullivan",
+        "Viktor Sullivan",
+        "Sullivan",
+        "Saliven",
+        "Viktor Saliven"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9a608406",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koje kodno ime je Tajna služba dodijelila 39. predsjedniku SAD-a Jimmyju Carteru?",
+      "answers": [
+        "Deacon",
+        "Dikon",
+        "Dekon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-81729df0",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koje kraljevstvo je porazio car Trajan kada je kao plijen sa sobom u Rim odvezao 165 tona zlata i 331 tonu srebra, koje je bilo skriveno ispod rijeke Strei?",
+      "answers": [
+        "Dačko",
+        "Dačane",
+        "Dačansko",
+        "Dacian",
+        "Dakija",
+        "Dakijsko",
+        "Dacia"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-12f6f742",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove serijal platformskih igara koji je 1994.g. na Super Nintendu ponovno snažno popularizirao Donkey Konga, s prvom igrom koju je razvio studio Rare?",
+      "answers": [
+        "Donkey Kong Country",
+        "Donki Kong Kantri",
+        "DKC",
+        "Donki Kong Kontri",
+        "Kong Country",
+        "Kong Kontri"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-02943131",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je britanski brod 1791.g., tijekom povratka iz potrage za pobunjenicima s Bountyja, potonuo na Velikom koraljnom grebenu?",
+      "answers": [
+        "HMS Pandora",
+        "Pandora"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2112e5da",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Ako je polumjer kružnice 5 cm, koliki je promjer?",
+      "answers": [
+        "10",
+        "Ten",
+        "X",
+        "Deset"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3d3e098f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji se broj u broju 'Pi' nalazi na trećem mjestu iza zareza?",
+      "answers": [
+        "1",
+        "Jedan",
+        "One",
+        "Von",
+        "Ein",
+        "Ajn",
+        "I"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-437d3ea9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kojim malim slovom u fizici uvijek označavamo 'vrijeme'?",
+      "answers": [
+        "T",
+        "Te"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-91d3dfde",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je kemičar prvi dokazao da je voda spoj kisika i vodika?",
+      "answers": [
+        "Antoine Lavoisier",
+        "Antoan Lavozije",
+        "Lavoisier",
+        "Lavozije"
       ],
       "image": null
     }

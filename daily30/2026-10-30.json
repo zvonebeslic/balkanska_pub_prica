@@ -1,432 +1,442 @@
 {
   "version": 2,
   "date": "2026-10-30",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-5050666a",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Andrija 'Draš' Katalenić, selo, koje?",
-      "answers": [
-        "Gruntovec"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a8df3972",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Po kojem je crvenkastom drvu, važnom u ranoj trgovini s Portugalcima, Brazil dobio svoje današnje ime?",
-      "answers": [
-        "Pau brasil",
-        "Paubrasilia",
-        "Paubrazilija",
-        "Brazilsko drvo",
-        "Brazilovo drvo",
-        "Brazilwood",
-        "Drvo brazil",
-        "Brazilvud"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4b042b27",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji je američki predsjednik zaslužan za mir na Balkanu i potpisivanje Daytonskog sporazuma?",
-      "answers": [
-        "Bill Clinton",
-        "Bil Klinton",
-        "Clinton",
-        "Klinton"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ebc4e281",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji je francuski znanstvenik u 17. stoljeću, koristeći barometar, proučavao promjene atmosferskog tlaka u Parizu?",
-      "answers": [
-        "Blaise Pascal",
-        "Blejz Paskal",
-        "Pascal",
-        "Paskal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5ff5f6e6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Što se u SAD-u slavi  4. srpnja (jula)?",
-      "answers": [
-        "Dan nezavisnosti",
-        "Dan neovisnosti",
-        "Dan o nezavisnosti",
-        "Dan o neovisnosti",
-        "Nezavisnost",
-        "Neovisnost",
-        "Independence day",
-        "Independnc dej"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f2153c95",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Tko je bio izbornik Njemačke nogometne reprezentacije kada je osvojila SP u Brazilu 2014.g.?",
-      "answers": [
-        "Joachim Low",
-        "Joakim Lev",
-        "Low",
-        "Lev",
-        "Lov"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b16a65ea",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Koja ptica se često povezivala s Jupiterom, vrhovnim rimskim bogom, simbolizirajući njegovu moć i dominaciju?",
-      "answers": [
-        "Orao"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-63003672",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja škotska whisky-regija uz rijeku Spey ima najveću koncentraciju destilerija u toj zemlji, uključujući Glenfiddich i The Macallan?",
-      "answers": [
-        "Speyside",
-        "Spejzajd",
-        "Spejsajd"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-eea297c1",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Tko je napisao pustolovine Toma Sawyera?",
-      "answers": [
-        "Mark Twain",
-        "Mark Tvejn",
-        "Mark Tvajn",
-        "Twain",
-        "Tvejn",
-        "Tvajn",
-        "Samuel Langhorne Clemens",
-        "Langhorne Clemens",
-        "Langhorn Klemens",
-        "Clemens",
-        "Klemens"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a5d226e3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja grana zoologije se bavi proučavanjem kukaca?",
-      "answers": [
-        "Entomologija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fac372d3",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je slikar naslikao dvije slike simboličnih naziva 'drugi i treći Svibnja (Maja) 1808.g.' i na njima uprizorio krvavi ustanak građana Madrida protiv Napoleonove okupacije?",
-      "answers": [
-        "Francisco Goya",
-        "Francisko Goja",
-        "Goya",
-        "Goja",
-        "Fransisco Goya"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cbfb1fdb",
+      "id": "daily-ef26b996",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Tko je autor glazbe za poznati hrvatski mjuzikl Jalta, Jalta iz 1971.?",
+      "topic": "Znanost",
+      "question": "Kako se zove podjela stanice u kojoj nastaju spolne stanice s polovičnim brojem kromosoma?",
       "answers": [
-        "Alfi Kabiljo",
-        "Kabiljo"
+        "Mejoza"
       ],
       "image": null
     },
     {
-      "id": "daily-d1f1147e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "U kojoj afričkoj državi se nalazi višemilijunski grad Douala, rodno mjesto nogometaša Samuela Etoo-a?",
-      "answers": [
-        "Kamerunu",
-        "Kamerun",
-        "Cameroon",
-        "Kameron"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3b11186d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Iako etimološki nisu povezani, koja engleska riječ usko vezana uz vladanje zvuči vrlo slično imenu božanstva od čije su krvi, prema babilonskom epu Enuma Eliš, nastali ljudi?",
-      "answers": [
-        "King"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8ed3f765",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove glavni neprijatelj Ninja kornjača protiv kojeg se bore u Konamijevoj arkadnoj videoigri Teenage Mutant Ninja Turtles?",
-      "answers": [
-        "Shredder",
-        "Šreder"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fbc2f15c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "Koja je glumica utjelovila Maleficent, u istoimenom filmu iz 2014.?",
-      "answers": [
-        "Angelina Jolie",
-        "Anđelina Džoli",
-        "Jolie",
-        "Džoli"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ffe2ca7d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove vitez iz Astorije iz videoigre Dark Souls, poznat po potrazi za vlastitim 'suncem' i frazi 'Praise the Sun'?",
-      "answers": [
-        "Solaire",
-        "Solaire",
-        "Soler",
-        "Solair"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3d256e57",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Kojeg su rimskog cara pisci nazivali 'Vir Rei Publicae Necessarius', odnosno, 'čovjek neophodan rimskoj državi'?",
-      "answers": [
-        "Dioklecijana",
-        "Dioklecijan",
-        "Diocletianus",
-        "Diocletianusa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-607e4e5e",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji je francuski modni dizajner 1947.g. predstavio kolekciju čija je naglašena ženstvena silueta postala poznata pod nazivom 'New Look'?",
-      "answers": [
-        "Christian Dior",
-        "Kristian  Dižor",
-        "Dior",
-        "Dižor",
-        "Dižo",
-        "Dio",
-        "Dihor"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c7ed021b",
+      "id": "daily-c7e25467",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kako se naziva zamišljena crta koja Zemlju dijeli na sjevernu i južnu polutku?",
+      "question": "Koji je španjolski istraživač 1571.g. osnovao Manilu i učinio je središtem španjolske vlasti na Filipinima?",
       "answers": [
-        "Ekvator",
-        "Ecuator",
-        "Ecvator",
-        "Polutnik",
-        "Poluta",
-        "Equator"
+        "Miguel López de Legazpi",
+        "Miguel Lopez de Legazpi",
+        "Migel Lopes de Legaspi",
+        "Legazpi",
+        "Legaspi"
       ],
       "image": null
     },
     {
-      "id": "daily-57ed91cf",
+      "id": "daily-af5d9f3b",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "U kojem se organelu odvija fotosinteza?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Potpisivanjem deklaracije nezavisnosti, koliko se sjevernoameričkih kolonija odvojilo od Velike Britanije?",
       "answers": [
-        "Kloroplastu",
-        "Kloroplast"
+        "13",
+        "13.",
+        "Trinaest",
+        "Trinaestero"
       ],
       "image": null
     },
     {
-      "id": "daily-f06b5948",
+      "id": "daily-815e5c42",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Današnji Mjanmar se nekada prepoznavao pod kojim imenom?",
+      "topic": "Povijest",
+      "question": "Kako se zvao vrhovni bog Babilona koji je, prema epu Enuma Eliš, porazio Tijamat, od njezina tijela stvorio nebo i zemlju te postao kralj bogova?",
       "answers": [
-        "Burma"
+        "Merduk",
+        "Marduk"
       ],
       "image": null
     },
     {
-      "id": "daily-af94735f",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koju vrstu kape možemo pronaći na grbovima Kolumbije, Argentine, Nikaragve te Kube?",
-      "answers": [
-        "Frigijsku",
-        "Frigijska",
-        "Frigija",
-        "Frigias",
-        "Frigijas"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6218b945",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Ako kažemo za nogometaša da je standardni prvotimac, onda on sasvim sigurno ima svoje mjesto među koliko startnih igrača?",
-      "answers": [
-        "11",
-        "Jedanaest",
-        "Jedanest",
-        "Eleven",
-        "XI"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-92d0ec69",
+      "id": "daily-db837386",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove posljednji boss originalne videoigre Dark Souls, nekadašnji gospodar svjetlosti?",
+      "question": "Koji je finski studio razvio prve dvije videoigre Max Payne?",
       "answers": [
-        "Gwyn",
-        "Gvin",
-        "Gven"
+        "Remedy Entertainment",
+        "Remedy",
+        "Remedi"
       ],
       "image": null
     },
     {
-      "id": "daily-c7d22dea",
+      "id": "daily-c4f1026f",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Po kojem je njemačkom fizičaru nazvana mjerna jedinica za frekvenciju?",
+      "topic": "AmerickiPredsjednici",
+      "question": "'Sewardova ludost' nije bolest već pojam koji se veže za kupnju kojeg teritorija?",
       "answers": [
-        "Heinrichu Hertzu",
-        "Heinrich Hertz",
-        "Hajnrihu Hercu",
-        "Hajnrih Herc",
-        "Hertzu",
-        "Hertz",
-        "Hercu",
-        "Herc"
+        "Aljaske",
+        "Aljaska",
+        "Alaska",
+        "Alaske"
       ],
       "image": null
     },
     {
-      "id": "daily-c3446f79",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koje ime dijele prvi komercijalni komunikacijski satelit lansiran 1962.g, koji je omogućio prve transatlantske TV prijenose uživo, i legendarna crno-bijela lopta korištena na FIFA SP-u 1970.g. čiji je kontrastni dizajn (crni pentagoni i bijeli heksagoni) posebno osmišljen kako bi bila jasno vidljiva na tadašnjim crno-bijelim televizorima, do kojih su utakmice dolazile, baš zahvaljujući spomenutim satelitima?",
-      "answers": [
-        "Telstar"
-      ],
-      "image": null,
-      "rarity": "golden"
-    },
-    {
-      "id": "daily-e1248d4d",
+      "id": "daily-7699be90",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "U knjizi 'The BFG', pisca Roalda Dahla, slovo G označava koje fiktivno biće?",
+      "question": "U kojoj se europskoj zemlji nalazi domovina Velike vrhovne vještice, fiktivnog lika iz knjige Roalda Dahla 'Vještice'?",
       "answers": [
-        "Giant",
-        "Džajant",
-        "Džajent",
-        "Džajen",
-        "Diva",
-        "Div",
-        "Gigant",
-        "Giganta"
+        "Norveškoj",
+        "Norveška",
+        "Norways",
+        "Norway",
+        "Norge",
+        "Norg",
+        "Norvejs",
+        "Norvej"
       ],
       "image": null
     },
     {
-      "id": "daily-9b7b4819",
+      "id": "daily-7fa042e5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je znanstveno-fantastična strateška igra iz 1998. postala toliko popularan e-sport u Južnoj Koreji da su se mečevi prenosili na nacionalnoj televiziji?",
+      "answers": [
+        "StarCraft",
+        "Starkraft",
+        "Star Craft",
+        "Star Kraft"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e4ac1d51",
       "type": "blitz",
       "difficulty": 1,
-      "topic": "Glazba",
-      "question": "Tko pjeva pjesme 'Shape of You' i 'Thinking Out Loud'?",
+      "topic": "svastara",
+      "question": "Koji je tip šešira dobio ime prema naslovnoj junakinji drame francuskog pisca Victoriena Sardoua, koju je na pozornici 1882.g. glumila Sarah Bernhardt?",
       "answers": [
-        "Ed Sheeran",
-        "Ed Šeran",
-        "Sheeran",
-        "Šeran"
+        "Fedora"
       ],
       "image": null
     },
     {
-      "id": "daily-9ffda827",
+      "id": "daily-7b81c8b8",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "Glazba",
-      "question": "Pjesme 'Jedan dan' i 'Noćna muzika'  otpjevala je koja hrvatska, vokalno-instrumentalna skupina?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj knjizi glavna junakinja susreće zeca koji uvijek negdje kasni?",
       "answers": [
-        "Dubrovački Trubaduri"
+        "Alisa u Zemlji čudesa",
+        "Alisa i Zemlja čudesa",
+        "Alice in Wonderland",
+        "Alis in vonderlend",
+        "Alice's Adventures in Wonderland",
+        "Alis advenčurs in vonderlend",
+        "Alisa u Wonderlandu",
+        "Alisa u Vanderlendu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ffa25183",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Arheološki dokaz nordijskog boravka u Sjevernoj Americi pronađen je u L'Anse aux Meadowsu a to nalazište je danas na kojem kanadskom otoku?",
+      "answers": [
+        "Newfoundland",
+        "Njufondlendu",
+        "Njufoundlendu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c13f37b5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koju međunarodnu mjernu jedinicu koristimo za induktivitet?",
+      "answers": [
+        "Henri"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b869f98b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja građevinski resurs, uz drvo i metal, igrač može prikupljati u klasičnom Fortnite Battle Royaleu?",
+      "answers": [
+        "Kamen",
+        "Stone",
+        "Ston",
+        "Brick",
+        "Brik"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-34d19c10",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Starorimska cesta Via Gabiniana spajala je Andetrium sa kojim rimskim gradom uz obale Jadrana?",
+      "answers": [
+        "Salonom",
+        "Salona"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-181f1006",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "'Sveto trojstvo' Manchester United čine Sir Bobby Charlton, George Best i tko još?",
+      "answers": [
+        "Denis Law",
+        "Law",
+        "Lov",
+        "Lav"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-793db06e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Godine 1811. serijom potresa jačine 7.2 , 8.2 i 7.4 po Richteru, zabilježeni su najjači potresi u povijesti SAD-a istočno od Stjenjaka, a dogodili su se u blizini kojeg grada, koji ime dijeli s jednom europskom prijestolnicom?",
+      "answers": [
+        "New Madrid",
+        "Nju Madrid",
+        "Novi Madrid",
+        "Novog Madrida",
+        "Madrida",
+        "Madrid"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2102125b",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji talijanski naziv za osobu koja radi za šankom danas širom svijeta prvenstveno povezujemo sa stručnjakom za pripremu espressa i drugih napitaka od kave?",
+      "answers": [
+        "Barista"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-70513003",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kada je Vasco da Gama 1498.g. stigao u Indiju, europske sile već su bile uključene u koji niz sukoba za prevlast nad državama Apeninskog poluotoka, započet 1494.g.?",
+      "answers": [
+        "Talijanski ratovi",
+        "Ratovi za Italiju",
+        "Italian Wars",
+        "Italijanski ratovi",
+        "Talijanski",
+        "Italijanski",
+        "Italinas",
+        "Italijan",
+        "Italijans",
+        "Itals"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-be4e73bd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koju zemlju su Maori nazivali 'Aoteaora'?",
+      "answers": [
+        "Novi Zeland",
+        "Zeland",
+        "Zealand",
+        "Zilend",
+        "Zelend"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3e185ce6",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Zemljopis",
+      "question": "Lan Xang, sa značenjem 'Milijun slonova' bila je kraljevina, koja je postojala od 1353.g. do 1707.g, a nalazila se na prostoru koje današnje države?",
+      "answers": [
+        "Laosa",
+        "Laos",
+        "Lao",
+        "Laoska",
+        "Lhaosa",
+        "Lhaos",
+        "Lhao",
+        "Lhaoska"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f3daff0e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvao najveći i najpoznatiji grad Civilizacije doline Inda, poznat po naprednom urbanističkom planiranju i kanalizacijskom sustavu, u kojem se nalazi i znameniti veliki bazen za kupanje, jedno od najimpresivnijih građevinskih ostvarenja brončanog doba?",
+      "answers": [
+        "Mohenjo Daro",
+        "Mohendžo Daro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1cadf5e1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koja je država 2005.g. prvi put osvojila Davis Cup?",
+      "answers": [
+        "Hrvatska",
+        "Croatia",
+        "Hrvati",
+        "Kroazien",
+        "Kroacija",
+        "Cro",
+        "Hrv",
+        "Rh",
+        "Hr"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1195835e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se u tenisu naziva udarac kod kojeg igrač lopticu udara sa suprotne strane tijela od ruke u kojoj drži reket?",
+      "answers": [
+        "Backhand",
+        "Bekhend",
+        "Bekend",
+        "Bekand",
+        "Bekhand"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-99ad4764",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje glasovito burgundsko vino, proizvedeno iz iznimno malenog vinograda u Vosne-Romanéeu, redovito pripada među najskuplja vina na svijetu?",
+      "answers": [
+        "Romanée Conti",
+        "Romanee Conti",
+        "Romanée Conti",
+        "Romanee Conti",
+        "Romane Konti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6316123b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koja je reprezentacija predvođena generacijom Nikole Karabatića osvojila olimpijska zlata 2008.g. i 2012.g. te niz svjetskih i europskih naslova?",
+      "answers": [
+        "Francuska",
+        "France",
+        "Frenč",
+        "Frenc",
+        "Francuzi",
+        "Franci",
+        "Fra",
+        "Frankreisch",
+        "Frankrajš"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b86eb5e7",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kojim je voćem zla maćeha otrovala Snjeguljicu?",
+      "answers": [
+        "Jabukom",
+        "Jabuka",
+        "Apple",
+        "Aple",
+        "Apl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4378d02f",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji je rimski car započeo zakonom zabranjivati gladijatorske igre od 325.g.?",
+      "answers": [
+        "Konstantin Veliki",
+        "Konstantin 1. Veliki",
+        "Konstantin 1.",
+        "Konstantin 1",
+        "Flavius Valerius Aurelius Constantinus Augustus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-59195490",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element ima atomski broj 16?",
+      "answers": [
+        "Sumpor",
+        "Sulfur",
+        "Sulphur"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c5c95926",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je izraelski kralj ujedinio dvanaest izraelskih plemena, osvojio Jeruzalem i učinio ga prijestolnicom svojega kraljevstva?",
+      "answers": [
+        "David"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b62c32f3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Na prvom svjetskom prvenstvu u nogometu, Urugvaj je osvojio protiv Argentine, a SAD su za treće mjesto pobijedile koga?",
+      "answers": [
+        "Jugoslaviju",
+        "Yugoslavia",
+        "Yugoslaviu",
+        "Yugoslavias",
+        "Jugoslavija"
       ],
       "image": null
     }

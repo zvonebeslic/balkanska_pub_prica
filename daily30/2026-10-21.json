@@ -1,423 +1,434 @@
 {
   "version": 2,
   "date": "2026-10-21",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-4b9bdeff",
+      "id": "daily-72984c29",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Povijest",
+      "question": "Kako se zovu ratovi između Rima i Kartage vođeni od 264. do 146. pr. Kr.?",
+      "answers": [
+        "Punski ratovi",
+        "Punski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a85915e4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tijekom 1. svjetskog rata, Njemci su Meksiku ponudili savez gdje bi im pomogli vratiti teritorij koji su meksikanci izgubili za vrijeme rata sa SAD-om. Sve je počelo sa jednim brzojavom koji je presrela britanska tajna služba a on je ujedno i označio američki ulazak u 1. svjetski rat. Brzojav je ostao zapamćen po kojem prezimenu njemca koji ga je i poslao?",
+      "answers": [
+        "Zimmermann",
+        "Cimerman",
+        "Zimerman",
+        "Zimmermannov",
+        "Cimermanov",
+        "Zimermanov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-79c0a6f2",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "U kojoj se državi odigralo Svjetsko nogometno prvenstvo 2014.g.?",
+      "question": "Koji je nogometni velikan osvajao redom: Svjetsko Prvenstvo, Ballon d'Or, Ligu Prvaka (kao igrač) te Ligu Prvaka (kao trener)?",
       "answers": [
-        "Brazilu",
-        "Brazil",
-        "Brasils",
-        "Brasil",
-        "Bra"
+        "Zinedine Zidane",
+        "Zinedin Zidan",
+        "Zidane",
+        "Zidan"
       ],
       "image": null
     },
     {
-      "id": "daily-7187f967",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koja krilata životinja iz reda kukaca dio života provede i kao gusjenica?",
-      "answers": [
-        "Leptir",
-        "Leptiri"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a79d347b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji instrument svira Saul Hudson, poznatiji kao Slash?",
-      "answers": [
-        "Gitaru",
-        "Gitara",
-        "Električnu gutaru",
-        "Električna gitara"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e758b9b2",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "AntickiRim",
-      "question": "Za vrijeme kojeg rimskog kralja je sagrađen 'Circus Maximus', ogromni hipodrom za utrke dvokolica i gladijatorske borbe?",
-      "answers": [
-        "Tarkvinija 1.",
-        "Tarkvinija I",
-        "Tarkvinije 1.",
-        "Tarkvinije I",
-        "Lucije Tarkvinije 1.",
-        "Lucija Tarkvinija 1.",
-        "Lucije Tarkvinije I",
-        "Lucija Tarkvinija I",
-        "Lucije Tarkvinije Prisk",
-        "Lucius Tarquinius Priscus",
-        "Lucija Tarkvinija Priska",
-        "Lucija Tarkvinija Priska 1.",
-        "Lucija Tarkvinija Priska I",
-        "Lucije Tarkvinije Prisk 1.",
-        "Lucije Tarkvinije Prisk I"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ad18f4c2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "U kojoj se situaciji, prema narodnoj mudrosti, najbolje prepoznaje pravi prijatelj?",
-      "answers": [
-        "U nevolji",
-        "Nevolji",
-        "Nevolja"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-068cc2cd",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "U kojem se američkom gradu nalazi George Washington Masonic National Memorial?",
-      "answers": [
-        "Aleksandriji",
-        "Aleksandrija",
-        "Alexandria",
-        "Alexandriji"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b12169ab",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako se zove fiktivni dječak kojega su odgojili vukovi u bajci 'Knjiga o džungli?",
-      "answers": [
-        "Mowgli",
-        "Mogli",
-        "Movgli"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6035ee38",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Emil, Mali Utorak, Gustav s torbom i Profesor su dječaci koji postaju detektivi u kojem gradu?",
-      "answers": [
-        "Berlinu",
-        "Berlin",
-        "Berlins"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3db30814",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "'La Marseillaise' je himna koje države?",
-      "answers": [
-        "Francuske",
-        "Francuska"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-248d8fc9",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koliko stranica ima deseterokut?",
-      "answers": [
-        "10",
-        "Deset",
-        "Ten",
-        "X"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-90b12bd2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je američki predsjednik tijekom Hladnog rata popularizirao poslovicu 'Vjeruj, ali provjeri', koristeći je u razgovorima o nuklearnom razoružanju sa Sovjetskim Savezom?",
-      "answers": [
-        "Ronald Reagan",
-        "Ronald Regan",
-        "Reagan",
-        "Regan",
-        "Rigen"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0c4f2d66",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja njemačka automobilska marka ima okrugli plavo-bijeli znak čije boje zapravo potječu od Bavarske, iako je popularna legenda znak povezala s rotirajućim avionskim propelerom?",
-      "answers": [
-        "BMW",
-        "B.M.W.",
-        "Be Em Ve",
-        "Bemve"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-3151c3f8",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove velika crvena ptica iz Angry Birdsa, veća i snažnija verzija Reda, posebno učinkovita u rušenju čvrstih konstrukcija?",
-      "answers": [
-        "Terence",
-        "Terens",
-        "Terenc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e84e3d9d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "U koji grad, u Saudijskoj Arabiji je nemuslimanima strogo zabranjen ulazak?",
-      "answers": [
-        "Meka",
-        "Mekka",
-        "Mekha",
-        "Meku",
-        "Mekku",
-        "Mekhu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1c9df6fb",
+      "id": "daily-72088041",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kod kojeg su pacifičkog otoka pronađene olupine brodova Boussole i Astrolabe iz nestale francuske ekspedicije Jean-Françoisa de La Pérousea?",
+      "question": "Kako se naziva slano vodeno prostranstvo koje je manje od oceana?",
       "answers": [
-        "Vanikoro",
-        "Vanikolo"
+        "More",
+        "Sea",
+        "Si"
       ],
       "image": null
     },
     {
-      "id": "daily-aca29370",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove galaksija u kojoj se nalazi Sunčev sustav?",
-      "answers": [
-        "Mliječna staza",
-        "Milky Way",
-        "Milki Vej",
-        "Mliječni Put"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c5d0817d",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Ako pričamo o 4 nebeske kineske životinje, spomenuti ćemo Tigra, Zmaja, Pticu i koga još?",
-      "answers": [
-        "Kornjaču"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7341f037",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Film",
-      "question": "Kako se zove fiktivni otok na kojem se odvija radnja filma 'Duhovi otoka' (The Banshees of Inisherin)?",
-      "answers": [
-        "Inisherin",
-        "Inišerin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8ad6de64",
+      "id": "daily-84330c7a",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Smatra se jednim od prvih nacionalnih parkova na svijetu. Osnovan je 1. ožujka (marta) 1872.g. Zakon o osnivanju potpisao je Ulysses S. Grant, a park se zove kako?",
+      "question": "Rat sa kojom državom je Ulysses S. Grant opisao kao 'zločin radi kojeg je Bog Ameriku kaznio građanskim ratom'?",
       "answers": [
-        "Yellowstone",
-        "Jelovston"
+        "Meksikom",
+        "Mexicom",
+        "Meksiko",
+        "Mexico",
+        "Mexikom"
       ],
       "image": null
     },
     {
-      "id": "daily-33807fca",
+      "id": "daily-a2ef6db3",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koje je najtanje slovo koje možemo složiti.u tetrisu?",
+      "topic": "Nogomet",
+      "question": "U kojoj se državi nalazi stadion Hampden Park koji se zbog sponzorskih obveza zove i Barclays Hampden?",
       "answers": [
-        "I"
+        "Škotskoj",
+        "Škotska",
+        "Scotland",
+        "Scotlands",
+        "Skotlend",
+        "Skotlends",
+        "Scotts",
+        "Skots",
+        "Scot",
+        "Sco"
       ],
       "image": null
     },
     {
-      "id": "daily-560d9c61",
+      "id": "daily-f9d70328",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "U koje se more ulijeva rijeka Odra?",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Četiri međusobno spojena prstena na znaku koje njemačke marke auromobila predstavljaju četiri proizvođača koji su 1932.g. udruženi u Auto Union?",
       "answers": [
-        "Baltičko",
-        "Baltic",
-        "Baltiča",
-        "Baltik"
+        "Audi"
       ],
       "image": null
     },
     {
-      "id": "daily-c6215396",
+      "id": "daily-a6f7b9e4",
       "type": "blitz",
       "difficulty": 2,
       "topic": "AntickiRim",
-      "question": "Koja je drevna boja, dobivena iz morskih puževa, na vrhuncu Rimskog Carstva često vrijedila više od svoje težine u zlatu te postala simbol carske vlasti?",
+      "question": "Koji je katolički svetac i biskup antiohijski bio prognan od strane rimskog cara Trajana te usmrćen u Koloseumu, gdje je bačen lavovima?",
       "answers": [
-        "Tirski purpur",
-        "Tirs purpur",
-        "Purpur"
+        "Ignacije Antiohijski",
+        "Ignacije"
       ],
       "image": null
     },
     {
-      "id": "daily-a428e92f",
+      "id": "daily-44eca6d5",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kojim su nazivom bili poznati japanski piloti koji su u završnim fazama 2. svjetskog rata namjerno usmjeravali zrakoplove prema savezničkim brodovima s ciljem da se zabiju direktno u njih?",
+      "topic": "Sport",
+      "question": "Koja još boja uz bijelu, crnu, plavu i žutu čini standardnu streličarsku metu po pravilima Svjetske streličarske organizacije?",
       "answers": [
-        "Kamikaze",
-        "Kamikaza",
-        "Camicase",
-        "Camikaze",
-        "Kamicaze"
+        "Crvena",
+        "Crveno",
+        "Red",
+        "Crljena"
       ],
       "image": null
     },
     {
-      "id": "daily-f49c176c",
+      "id": "daily-4430faaf",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Koje se slovo u Morseovoj abecedi sastoji od jedne crte?",
+      "question": "Kako nazivamo nestabilni mezon građen od kvarka i antikvarka koji se raspada djelovanjem slabe nuklearne sile?",
       "answers": [
-        "T",
-        "Te"
+        "Kaon",
+        "Kaoni",
+        "Kaons"
       ],
       "image": null
     },
     {
-      "id": "daily-ad6840fe",
+      "id": "daily-3420768f",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Uz obalu koje rijeke su tijekom 4. tisućljeća pr. Kr. nastali a tijekom 3. tisućljeća pr. Kr. dosegli svoj vrhunac, drevni sumerski gradovi Uruk i Ur?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Ulysses S. Grant je bio 18. predsjednik SAD-a a svoje mjesto je pronašao i na dolaru koje nominalne vrijednosti?",
       "answers": [
-        "Eufrat",
-        "Euphrates",
-        "Eufrates",
-        "Euphrat",
-        "Eufrata",
-        "Eufratesa",
-        "Euphratesa",
-        "Euphrata"
+        "50",
+        "Pedeset",
+        "L",
+        "Fifty",
+        "Fifti"
       ],
       "image": null
     },
     {
-      "id": "daily-e73a1746",
+      "id": "daily-f6c968f4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "S kojom državom Kina ima najveću kopnenu granicu dugu 4 677km?",
+      "answers": [
+        "Mongolijom",
+        "Mongolija",
+        "Mongolia",
+        "Mongoliom"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee029554",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kada u pustinji vidimo nešto što zapravo ne postoji , onda doživljavamo koju optičku varku?",
+      "answers": [
+        "Fatamorganu",
+        "Fata morganu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bcd8d54f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Čija linija razdvaja Pakistan od Afganistana?",
+      "answers": [
+        "Durandova",
+        "Durands",
+        "Durends"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3e22a3c7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je hrvatski rukometaš, poznat po broju 10 i nadimku 'rukometni Mozart', 2003.g  s Hrvatskom postao svjetski, a 2004.g. olimpijski prvak?",
+      "answers": [
+        "Ivano Balić",
+        "Balić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a26bd2c8",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U dobro poznatoj bajci braće Grimm, koja životinja pokušava ući u kuću u kojoj se nalazi 7 kozlića?",
+      "answers": [
+        "Vuk",
+        "Wolf",
+        "Volf"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2a3ecfc1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako se zove krvna žila koja odvodi krv iz srca prema tijelu?",
+      "answers": [
+        "Aorta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3386cf9b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove ljudska rasa odnosno frakcija kojom igrač može upravljati uz Zerg i Protoss u strategijskoj videoigri StarCraft?",
+      "answers": [
+        "Terran",
+        "Terrani",
+        "Terrans",
+        "Terans",
+        "Terani",
+        "Teransi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e4082b20",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Prva hidroelektrana na svijetu, ona na slapovima Niagare, prvu je struju isporučila kojem gradu udaljenom oko 40 kilometara od nje?",
+      "answers": [
+        "Buffalu",
+        "Buffalo",
+        "Bufalu",
+        "Bufalo",
+        "Bafalu",
+        "Bafalo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fea9dd69",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Nogomet",
+      "question": "Pod kojim je nadimkom poznatiji brazilski nogometaš koji je proslavio pogodak na Svjetskom prvenstvu 1994. godine oponašajući njihanje bebe u čast rođenja svog sina?",
+      "answers": [
+        "Bebeto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-20d70f76",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Na kopnu preko kojeg je Balboa prešao između Atlantika i Pacifika stoljećima poslije izgrađen je jedan od najvažnijih plovnih putova svijeta. Koji?",
+      "question": "Koja je životinja konkvistadorima služila za brzo putovanje i borbu na kopnu?",
       "answers": [
-        "Panamski kanal",
-        "Panamski",
-        "Panamsko",
-        "Panamas",
-        "Panama"
+        "Konj",
+        "Konji",
+        "Horses",
+        "Hors",
+        "Pferds",
+        "Pferd",
+        "Konjevi"
       ],
       "image": null
     },
     {
-      "id": "daily-d4711259",
+      "id": "daily-04381d69",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Kako se zove tradicionalni dan 26. prosinca (decembra) kada se u Engleskoj igra velik broj nogometnih utakmica?",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Koje slovo je označavalo broj 50 u rimskom carstvu?",
       "answers": [
-        "Boxing Day",
-        "Boksing Dej"
+        "L"
       ],
       "image": null
     },
     {
-      "id": "daily-18fa9084",
+      "id": "daily-dddfbff8",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji plin se oslobađa kao nusprodukt fotosinteze?",
+      "topic": "AntickiRim",
+      "question": "Koji rimski bog je glasnik bogova, te bog trgovine i putovanja?",
       "answers": [
-        "Kisik",
-        "O2"
+        "Merkur"
       ],
       "image": null
     },
     {
-      "id": "daily-5510264d",
+      "id": "daily-0ebd6c75",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Kako joj tepaju, 'Najinteligentnija fotografija ikad uslikana' je ona sa 29 svjetskih znanstvenika koji poziraju fotografu na 5. Solvayevoj konferenciji održanoj 1927.g. Ako danas gledate tu sliku i znate koliko nobelovaca vidite na slici, onda vam je jasno zašto joj tako i tepaju. Koji je to broj nobelovaca na njoj?",
+      "topic": "Zemljopis",
+      "question": "Koji morski tjenac dijeli Maroko od Španjolske?",
       "answers": [
-        "17",
-        "Sedamanest",
-        "XVII",
-        "Sedamnest",
-        "Seventeen",
-        "Seventin"
+        "Giblatar",
+        "Giblatarski",
+        "Giblatars",
+        "Giblatarsko",
+        "Giblatarske"
       ],
       "image": null
     },
     {
-      "id": "daily-616f4b4f",
+      "id": "daily-9036f053",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Na kojem je jeziku spisateljica Astrid Lindgren izvorno napisala knjigu Pipi Duga Čarapa?",
+      "answers": [
+        "Švedskom",
+        "Švedski",
+        "Švedska",
+        "Sweden",
+        "Swedens",
+        "Swedish",
+        "Svidiš",
+        "Sviden",
+        "Svidens",
+        "Svenskom",
+        "Svenski",
+        "Svensko",
+        "Swe",
+        "Sw",
+        "Švedsko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-56c8c5bc",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Film",
-      "question": "Koji je jedini horor film u povijesti koji je osvojio Oscara za najbolji film?",
+      "topic": "Povijest",
+      "question": "U kojem je dvorcu Napoleon u travnju 1814., nakon pada Pariza i odbijanja svojih maršala da nastave rat, potpisao abdikaciju?",
       "answers": [
-        "Kad jaganjci utihnu",
-        "The Silence of the Lambs",
-        "Sajlenc of d lembs"
+        "Fontainebleau",
+        "Fontenblo",
+        "Fontanblu",
+        "Chateau de Fontainebleau",
+        "Šate de Fontenblo",
+        "Dvorac Fontainbleau",
+        "Dvorac Fontenblo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e29fcbe9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je britanski istraživač krenuo prema Južnom polu 1911.g. s ciljem da na njega dođe prvi u povijesti, stigao ondje tek nakon Roalda Amundsena, a zatim sa svojim ljudima stradao tijekom povratka?",
+      "answers": [
+        "Robert Falcon Scott",
+        "Robert Falkon Skot",
+        "Falcon Scott",
+        "Falkon Skot",
+        "Scott",
+        "Skot"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0b82ca51",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Preko kojeg se tjesnaca protežu mostovi koji povezuju europski i azijski dio Istanbula?",
+      "answers": [
+        "Bospor",
+        "Bosphorus",
+        "Bosfor",
+        "Boğaziçi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5a4ae45b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "U svijetu igara, kako se zove protagonist prvog Red Dead Redemptiona, bivši član bande Van der Linde kojeg vlasti prisiljavaju da pronađe svoje nekadašnje suborce?",
+      "answers": [
+        "John Marston",
+        "Džon Marston",
+        "Marston"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-326fff24",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je babilonski kralj 1750.g. pr. Kr. izdao prvi zakonik na svijetu sačinjen od 282 zakona a među njima se nalazila i danas dobro poznata izreka 'oko za oko, zub za zub'?",
+      "answers": [
+        "Hamurabi",
+        "Ammurapi",
+        "Hammurabi",
+        "Hammurapi"
       ],
       "image": null
     }

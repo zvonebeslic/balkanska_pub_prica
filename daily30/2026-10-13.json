@@ -1,441 +1,462 @@
 {
   "version": 2,
   "date": "2026-10-13",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-23137f5d",
+      "id": "daily-ef1ca16e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "San Marino je glavni grad koje države?",
+      "answers": [
+        "San Marino",
+        "San Marina",
+        "Marino",
+        "Marina",
+        "Marinos",
+        "Marinas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-48e46621",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji nogometni klub igra na stadionu koji je poznat pod nadimkom De Kuip, što u prijevodu znači Bačva?",
+      "answers": [
+        "Feyenoord",
+        "Fenjord",
+        "Fevenord",
+        "Fevenjord",
+        "Fejenjord",
+        "Fejenord"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-132d7f20",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Koji veliki kršćanski svetac iz Španjolske biva mučenički ubijen u progonu kršćana pod rimskim carem Valerijanom?",
+      "answers": [
+        "Sv. Lovro",
+        "Lovro",
+        "Lawrence",
+        "Laurence",
+        "Laurentius",
+        "Lovre"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3d15a04d",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Zemljopis",
+      "question": "Sa kojim 'stanom' graniči Rusija?",
+      "answers": [
+        "Kazahstanom",
+        "Kazahstan",
+        "Kazakstanom",
+        "Kazakstan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-44762b48",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koja je država, iako je prije 1. svjetskog rata pripadala Trojnom savezu s Njemačkom i Austro-Ugarskom, 1915.g. promijenila stranu i objavila rat Austro-Ugarskoj?",
+      "answers": [
+        "Italija",
+        "Italy",
+        "Itali",
+        "It",
+        "Ita",
+        "Talijani",
+        "Talians",
+        "Talijanska",
+        "Italijanska",
+        "Italije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cc8fd2f1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Sporazumom u kojem je gradu 1802.g. nakratko uspostavljen mir između Francuske i Velike Britanije a bio je i jedini opći europski mir tijekom Napoleonova uspona?",
+      "answers": [
+        "Amiensu",
+        "Amiens",
+        "Amienu",
+        "Amien"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-08d3a1de",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je američka kompanija razvila popularnu mobilnu videoigru Pokémon GO, objavljenu 2016.g.?",
+      "answers": [
+        "Niantic",
+        "Niantik"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5765bbf8",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Ako sat pokazuje 3:00, koliko stupnjeva ima manji kut između kazaljki?",
+      "question": "Koji škotski željeznički most preko Firth of Fortha, otvoren 1890.g., predstavlja jedno od najpoznatijih djela konzolne mostogradnje?",
       "answers": [
-        "90",
-        "Devedeset",
-        "Ninety",
-        "Najnti",
-        "XC"
+        "Forth Bridge",
+        "Fort Bridž",
+        "Forth",
+        "Fort"
       ],
       "image": null
     },
     {
-      "id": "daily-9931cc6b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Mudra izreka nam govori da čovjek uči dok je što?",
-      "answers": [
-        "Živ",
-        "Live",
-        "Lajv"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0ee8b0c0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koja je prva videoigra ikada odigrana u svemiru, kada ju je ruski kozmonaut 1993. godine ponio na postaju Mir?",
-      "answers": [
-        "Tetris"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-10286ea2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je legendarni njemački nogometaš bio trener njemačke reprezentacije na SP-u 2006.g. te ih odveo do trećeg mjesta na turniru?",
-      "answers": [
-        "Jurgen Klinsmann",
-        "Jurgen Klinsman",
-        "Klinsmann",
-        "Klinsman"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8e850a66",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "U filmu iz 1974., koji mali kapetan, brodom trabakulom prevozi ljude na otoke spašavajući ih od fašističkih snaga?",
-      "answers": [
-        "Mikula",
-        "Mikula mali",
-        "Kapetan Mikula mali"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a3eb587d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "U kojem je velikom povijesnom sukobu smještena radnja videoigre Battlefield 1, objavljene 2016.g.?",
-      "answers": [
-        "Prvi svjetski rat",
-        "Prvi svjetski",
-        "WWI",
-        "World War I",
-        "1. Svjetski",
-        "1. Svj",
-        "Prvi svjetski",
-        "Vorld var 1",
-        "Vorld var von",
-        "Vorld var jedan",
-        "World one",
-        "Vorld von",
-        "1. World",
-        "World 1",
-        "Svjetski prvi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7286bea6",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Film",
-      "question": "U animiranom filmu 'Coco', kako se zove most koji povezuje svijet živih i svijet mrtvih?",
-      "answers": [
-        "Most od latica nevena",
-        "Marigold bridge"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-dffe0b77",
+      "id": "daily-79cb8194",
       "type": "blitz",
       "difficulty": 3,
       "topic": "FloraFauna",
-      "question": "Kako se zove zatvoreni, uglavnom suhi prostor za držanje pauka, kukaca i gmazova?",
+      "question": "Koja je životinja potvrdila nijekanje sv. Petra da pozna Isusa Krista?",
       "answers": [
-        "Terarij",
-        "Terarium"
+        "Pijetao",
+        "Pijevac",
+        "Oroz",
+        "Kokot"
       ],
       "image": null
     },
     {
-      "id": "daily-808b64c8",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Tko je skladao glazbu za film 'Kralj lavova' (The Lion King)?",
-      "answers": [
-        "Hans Zimmer",
-        "Hans Cimer",
-        "Zimmer",
-        "Cimer"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d04a0e7b",
+      "id": "daily-24c7fe66",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koliko igrača više, jedne nogometne utakmice započinje susret u odnosu na broj igrača na početku jedne rukometne utakmice?",
+      "topic": "Moreplovci",
+      "question": "Kako se naziva najdublja poznata točka Marijanske brazde, nazvana po britanskom brodu HMS Challenger čija je ekspedicija ondje 1875.g. mjerila dubinu?",
+      "answers": [
+        "Challengerova dubina",
+        "Challenger",
+        "Čelendžer",
+        "Chsllengers",
+        "Čelendžers"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1d1bfb4d",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je francuz napisao najpoznatiju verziju Mačka u Čizmama?",
+      "answers": [
+        "Charles Perrault",
+        "Šarl Pero",
+        "Čarls Pero",
+        "Perrault",
+        "Pero",
+        "Perot"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d7b60f6f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji broj nosi crna kugla u popularnoj bilijarskoj disciplini 'osmica'?",
       "answers": [
         "8",
         "Osam",
         "Eight",
         "Ejt",
-        "Eit"
+        "VIII"
       ],
       "image": null
     },
     {
-      "id": "daily-7d5fbf8e",
+      "id": "daily-434e91f5",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je škotski književnik, autor slavnog pustolovnog romana 'Otok s blagom' iz 1883.g, stvorio lik Long Johna Silvera i time trajno oblikovao moderni pop-kulturni stereotip o piratima s drvenom nogom?",
+      "answers": [
+        "Robert Louis Stevenson",
+        "Robert Luis Stivenson",
+        "Louis Stevenson",
+        "Luis Stivenson",
+        "Robert Stivenson",
+        "Robert Stevenson",
+        "Stevenson",
+        "Stivenson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-26325b2e",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove planet na kojem se nalazi planina Olympus Mons, najveći vulkan u Sunčevu sustavu?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Sa kojim dvorom legendarnog kralja Arthura se često uspoređuje predsjedništvo JFK-a?",
       "answers": [
-        "Mars"
+        "Camelot",
+        "Kamelot",
+        "Camelots",
+        "Kamelots",
+        "Camelotom",
+        "Kamelotom"
       ],
       "image": null
     },
     {
-      "id": "daily-2e12afa9",
+      "id": "daily-d1a3b639",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koja se boja nalazi u srednjoj okomitoj pruzi zastave Italije?",
+      "question": "Koliko minuta čini četvrtinu sata?",
       "answers": [
-        "Bijela",
-        "Bijele",
-        "White",
-        "Vajt",
-        "Blanco",
-        "Blanko",
-        "Bianco",
-        "Bijanko"
+        "15",
+        "Petnaest",
+        "Fifteen",
+        "Fiftin",
+        "XV"
       ],
       "image": null
     },
     {
-      "id": "daily-3da8c428",
+      "id": "daily-3c4af083",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Kojim prijevoznim sredstvom Fogg i Passepartout prelaze velik dio SAD-a u romanu 'Put oko svijeta u 80 dana'?",
+      "question": "Koja knjiga, od njih 7, koliko ih je napisano o Narniji i zbivanjima u njoj, čitatelju dočarava stvaranje te zemlje od godine prve?",
       "answers": [
-        "Vlakom",
-        "Vlak",
-        "Train",
-        "Trejn",
-        "Črejn",
-        "Lokomotivom",
-        "Lokos",
-        "Locomotive",
-        "Locomotives",
-        "Lokomotivs"
+        "Čarobnjakov nećak",
+        "The Magicians Nephew",
+        "D mađišns nefju",
+        "Mađišns nefju",
+        "Magicians Nephew",
+        "Čarobnjakov Sestrić"
       ],
       "image": null
     },
     {
-      "id": "daily-be3f5564",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kojem se fiktivnom liku nos poveća za svaku laž koju izgovori?",
-      "answers": [
-        "Pinokiju",
-        "Pinokijo",
-        "Pinokiu",
-        "Pinokio",
-        "Pinocchio",
-        "Pinocchiu",
-        "Pinochio",
-        "Pinochiu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f9045201",
+      "id": "daily-dee13b1b",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koju je današnju kompaniju davne 1847.g. osnovao izumitelj dinamo-stroja, trolejbusa, električne lokomotive te električnog dizala?",
+      "topic": "Nogomet",
+      "question": "Koja je država bila domaćin Europskog nogometnog prvenstva 2004.g.?",
       "answers": [
-        "Siemens",
-        "Simens"
+        "Portugal",
+        "Portugol",
+        "Portuguise",
+        "Portugiz",
+        "Portugalci",
+        "Port",
+        "Por"
       ],
       "image": null
     },
     {
-      "id": "daily-e586323c",
+      "id": "daily-48c86d86",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji je pjevač grčko-ciparskog podrijetla bio u bendu Wham!?",
+      "topic": "Sport",
+      "question": "Koji je hrvatski tenisač 2001.g. dobio pozivnicu za Wimbledon, a zatim senzacionalno osvojio cijeli turnir?",
       "answers": [
-        "George Michael",
-        "Džordž Majkl",
-        "Michael",
-        "Majkl",
-        "Georgios Kyriacos Panayiotou"
+        "Goran Ivanišević",
+        "Goran Ivanisevic",
+        "Ivanišević",
+        "Ivanisevic",
+        "Zec"
       ],
       "image": null
     },
     {
-      "id": "daily-0f68cc19",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koje su otočje, za tadašnju Europu jako daleko, portugalci otkrili 1456.g.?",
-      "answers": [
-        "Zelenortske Otoke",
-        "Zelenortske",
-        "Zelenortski",
-        "Capo verde",
-        "Capverde",
-        "Capoverde",
-        "Kapo verde",
-        "Kapoverde",
-        "Kapverdeske",
-        "Kapverdski"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-566245dd",
+      "id": "daily-b6e7661e",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Zemljopis",
-      "question": "Kako se zove glavni grad Malavija?",
+      "topic": "FloraFauna",
+      "question": "Koje tropsko voće bodljikave ljuske iz jugoistočne Azije ima bogat okus ali i jako neugodan miris?",
       "answers": [
-        "Lilongwe",
-        "Lilongve"
+        "Durian",
+        "Durijan"
       ],
       "image": null
     },
     {
-      "id": "daily-c90f09bf",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji je američki predsjednik pokopan sa zastavom konfederacije?",
-      "answers": [
-        "John Tyler",
-        "Tyler",
-        "Džon Tajler",
-        "Džon Tejler",
-        "Tajler",
-        "Tjler",
-        "Tejler",
-        "Tajlr",
-        "Tejlr"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ff525074",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Fermioni su vrsta subatomskih čestica koje grade svu nama poznatu materiju, a ime su dobili po kojem znanstveniku?",
-      "answers": [
-        "Enricu Fermiju",
-        "Enrico Fermi",
-        "Enriku Fermiju",
-        "Enriko Fermi",
-        "Fermiju",
-        "Fermi",
-        "Fermis"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-7f787841",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove poznata biblijska knjiga koja opisuje apokaliptične vizije i kraj vremena?",
-      "answers": [
-        "Otkrivenje",
-        "Apokalipsa",
-        "Knjiga Otkrivenja",
-        "Otkrivenja"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cfe9099c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koliko je, tada budućih američkih predsjednika, 1776.g. potpisalo deklaraciju nezavisnosti?",
-      "answers": [
-        "2",
-        "Dva",
-        "Dvojica",
-        "Oba",
-        "Two",
-        "2."
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c2d208c7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "'Godina bez ljeta' je u ljudskoj povijesti ostala zabilježena kao godina 1816. jer je svugdje u svijetu bila neobično hlada. Tlo je mrzlo i ljeti te je padao snijeg, a sve to zbog velike erupcije jednog indonezijskog vulkana godinu dana ranije, čiji je pepeo svud po zemlji izazvao pomanjkanje sunca. Koji vulkan je to prouzročio?",
-      "answers": [
-        "Tambora"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e68278bc",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvao vrhovni bog neba u akadskom i babilonskom panteonu, čiji je sumerski pandan An?",
-      "answers": [
-        "Anu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a30a416a",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "AntickiRim",
-      "question": "Klodija Lijepa, Skribonija i Livija Drusilla su bile žene kojeg rimskog cara?",
-      "answers": [
-        "Augusta",
-        "August"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ba06d1ab",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Poslovica je davno objasnila da kruha nema bez čega?",
-      "answers": [
-        "Motike",
-        "Motika"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f16bb4c5",
+      "id": "daily-93c8ed3e",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je ratni brod engleskog kralja Henrika VIII. potonuo 1545.g. u morskom prolazu Solent, a velik dio njegova trupa izvađen je 1982.g.?",
+      "question": "Koji je portugalski moreplovac, zajedno s Tristãom Vazom Teixeirom, povezan s portugalskim otkrićem i naseljavanjem Madeire početkom 15. stoljeća?",
       "answers": [
-        "Mary Rose",
-        "Meri Rouz",
-        "Meri Roz",
-        "Meri Ros"
+        "João Gonçalves Zarco",
+        "Žoao Gonçalves Zarco",
+        "Zarco",
+        "Žarko",
+        "Žoao Žarko",
+        "Joao Zarco",
+        "Žoao Konklaveš Žarko"
       ],
       "image": null
     },
     {
-      "id": "daily-dddfbff8",
+      "id": "daily-0ac3c642",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji se američki predsjednik rodio pod imenom Leslie Lynch King Jr.?",
+      "answers": [
+        "Gerald Ford",
+        "Džerald Ford",
+        "Ford"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e5b7c446",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski pribor poznajemo pod imenom Bunsenov i Mekerov?",
+      "answers": [
+        "Plamenik",
+        "Plemenik",
+        "Plamen",
+        "Plemen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c37b945e",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji broj nedostaje: 10, 20, 30, __, 50?",
+      "answers": [
+        "40",
+        "Četrdeset",
+        "Forty",
+        "Forti",
+        "XL"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-097ce26f",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "Koji rimski bog je glasnik bogova, te bog trgovine i putovanja?",
+      "question": "Koje su ptice prema legendi spasile rimljane na brežuljku Kapitoliju, posljednjem uporištu pred naletom Gala i pljačkom Rima 390.g.?",
       "answers": [
-        "Merkur"
+        "Guske"
       ],
       "image": null
     },
     {
-      "id": "daily-5c58b55d",
+      "id": "daily-a761fdda",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Koju rimsku božicu rata i Marsovu sestru su naslikali Guercino, Auguste Rodin i Rembrandt?",
+      "answers": [
+        "Belonu",
+        "Bellona",
+        "Duellona",
+        "Belona",
+        "Bellonu",
+        "Duellonu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ba8f1f10",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koje je prezime nosio njemački zapovjednik Afričkog korpusa Erwin, koji je zbog svojih manevara u sjevernoafričkoj pustinji dobio nadimak 'Pustinjska lisica'?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Od svih američkih predsjednika, najviše potomaka je imao John Tyler, kroz dva plodna braka rodilo mu se koliko djece?",
       "answers": [
-        "Rommel",
-        "Erwin Rommel",
-        "Ervin Romel",
-        "Romel"
+        "15",
+        "Petnaest",
+        "Fifteen",
+        "XV",
+        "Petnaestero"
       ],
       "image": null
     },
     {
-      "id": "daily-79454b94",
+      "id": "daily-5f5ca114",
       "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Koja životinja mijenja boju kože radi kamuflaže, a ima i jako brz jezik?",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koja je SI jedinica za snagu?",
       "answers": [
-        "Kameleon",
-        "Cameleon"
+        "Watt",
+        "Vat",
+        "W"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5dcfee78",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koliko cijevi ima prepoznatljiva sačmarica koju protagonist koristi u serijalu videoigara Doom?",
+      "answers": [
+        "2",
+        "Dvije",
+        "Svi",
+        "Two",
+        "Tvu",
+        "II",
+        "Obe",
+        "Obedvi",
+        "Dvocjevka",
+        "Dvocijevna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d3939c1a",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad Eswatinija?",
+      "answers": [
+        "Mbabane",
+        "Embabane",
+        "Mebabane"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cce51271",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Maksimalan broj igrača na jednoj nogometnoj utakmici je 22, a koji je minimalan broj njih na jednoj utakmici?",
+      "answers": [
+        "14",
+        "Četrnaest",
+        "Četrnest",
+        "Fourteen",
+        "Fortin",
+        "XIV"
       ],
       "image": null
     }

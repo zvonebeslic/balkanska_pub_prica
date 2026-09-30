@@ -1,437 +1,458 @@
 {
   "version": 2,
   "date": "2026-10-26",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-79e06df1",
+      "id": "daily-d806fc3a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kojim je imenom bila poznata velika španjolska kolonijalna upravna jedinica sa središtem u Ciudad de Méxicu, nastala nakon osvajanja Aztečkog Carstva?",
+      "answers": [
+        "Nova Španjolska",
+        "Nueva Espanja",
+        "New Spain",
+        "Nju Spejn",
+        "Nueva España"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-af8c1b8a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kojoj je katedrali pokopan Sir Isaac Newton?",
+      "answers": [
+        "Westminster Abbey",
+        "Westminsterska Opatija",
+        "Vestimnster Abej",
+        "Westminster",
+        "Vestminster",
+        "Westminsters",
+        "Westminsterska",
+        "Vestminsterska",
+        "Sv Petra",
+        "Svetog Petra",
+        "Sv Petar",
+        "Sveti Petar",
+        "Petar",
+        "Petra",
+        "Peters",
+        "Peter",
+        "Piter",
+        "Piters"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2cb334fb",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koji rimski car je dogovorio sramotno primirje s galskim plemenima kojima je pustio da sa sobom ponesu plijen iz opljačkanih rimskih provincija te im nakon toga plaćao i novčanu naknadu?",
+      "answers": [
+        "Trebonijan Gal",
+        "Trebonianus Gallus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b4b8f7ac",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se naziva visoki udarac kojim tenisač pokušava prebaciti protivnika koji se približio mreži?",
+      "answers": [
+        "Lob"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d1b7650c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Washington, Jefferson, Lincoln i Roosevelt, zajedno se nalaze isklesani u liticama koje planine?",
+      "answers": [
+        "Rushmore",
+        "Rašmor",
+        "Rušmor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c164e5a6",
       "type": "blitz",
       "difficulty": 5,
-      "topic": "Glazba",
-      "question": "Emanuel Schikaneder je napisao libreto za koju operu praizvedenu 30.9.1791.?",
+      "topic": "Književnost",
+      "question": "Koji je fiktivni lik zaljubljen u amerikanku Jane Porter?",
       "answers": [
-        "Čarobna frula",
-        "Zauberflöte"
+        "Tarzan",
+        "Tarzans",
+        "Tarzanu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-31b3bf74",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva najveća vrsta slanog vodenog prostranstva na Zemlji?",
+      "answers": [
+        "Ocean",
+        "Okean",
+        "Ošen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-13f4e35c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kojom je troslovnom kraticom bio poznat serijal nogometnih videoigara Pro Evolution Soccer?",
+      "answers": [
+        "PES"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-388813e7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koliko je igrača imala svaka momčad na prvoj košarkaškoj utakmici odigranoj prema Naismithovim pravilima?",
+      "answers": [
+        "9",
+        "Devet",
+        "Nine",
+        "Najn",
+        "IX",
+        "Devetorica",
+        "Devetero"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3e16800f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Tjekom Stogodišnjeg rata, koji je bretonski vojskovođa kao glavni zapovjednik Karla V. Mudrog godinama vodio uspješan rat protiv Engleza i nakon smrti dobio iznimnu čast pokopa u kraljevskoj bazilici Saint-Denis?",
+      "answers": [
+        "Bertrand du Guesclin",
+        "Bertren du Geklan",
+        "Du Guesclin",
+        "Du Geklan",
+        "Geklan",
+        "Guesclin",
+        "Gesklin",
+        "Bertren du Gesklin"
+      ],
+      "image": null,
+      "rarity": "platinum"
+    },
+    {
+      "id": "daily-7150b6bf",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva dugi kaput koji se razvio iz vojne odjeće, a njegov engleski naziv doslovno upućuje na rovove u kojima su ga vojnici nosili tijekom Prvog svjetskog rata?",
+      "answers": [
+        "Trench coat",
+        "Trenčkot",
+        "Trenč",
+        "Trenč kot",
+        "Trench"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c46cbab9",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Kako se u starom rimu zvao bakreni novac srednje veličine?",
+      "answers": [
+        "As"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8da6b264",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove princeza koju vitez Arthur pokušava spasiti u arkadnoj videoigri Ghosts 'n Goblins?",
+      "answers": [
+        "Prin Prin",
+        "Prin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d6973c86",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kako se zovu navijači FK Sarajeva?",
+      "answers": [
+        "Horde Zla",
+        "Horda Zla"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f2d88586",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Tko je na Tiberijevo pitanje 'Zašto ste se pobunili?' odgovorio slavnom rečenicom 'Vi ste Rimljani krivi jer ste umjesto pastirskih pasa poslali vukove da čuvaju vaše stado'?",
+      "answers": [
+        "Baton Dezidijat",
+        "Baton 1. Dezidijat",
+        "Baton I Dezidijat",
+        "Baton",
+        "Dezidijat"
       ],
       "image": null,
       "rarity": "golden"
     },
     {
-      "id": "daily-1a6d0b8d",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Iz bajke braće Grimm doznajemo da je vuk, od ukupno 7 kozlića pojeo njih koliko?",
-      "answers": [
-        "6",
-        "Šest",
-        "Six",
-        "Siks",
-        "VI"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-26cb8cb6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je njemac osvojio svjetsko nogometno prvenstvo kao igrač i kao trener?",
-      "answers": [
-        "Franz Beckenbauer",
-        "Beckenbauer",
-        "Bekenbauer",
-        "Bekenboer"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-353fcb11",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "FloraFauna",
-      "question": "Kako se na kineskom jeziku kaže čaj?",
-      "answers": [
-        "Cha",
-        "Ča"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-bdd4a97e",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Kojoj vrsti drveća pripada divovska Hyperion, stablo visoko preko 115m te ga se smatra i najvišim na svijetu?",
-      "answers": [
-        "Sekvojama",
-        "Sekvoje",
-        "Obalna sekvoja"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-de24bcc7",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Nikola Tesla je rođen u blizini Gospića koji je tada bio pod vladavinom kojeg carstva?",
-      "answers": [
-        "Austrijskog",
-        "Austrija",
-        "Austrijsko",
-        "Austrian",
-        "Austrijan",
-        "Austrians",
-        "Austrijans",
-        "Osterreich",
-        "Osterajh"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a04a2d34",
+      "id": "daily-c51feabb",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Kako se zvao otac boga Anua i jedan od praiskonskih bogova neba u mezopotamskoj mitologiji?",
+      "question": "Na kojem su turskom poluotoku Saveznici 1915.g. iskrcali desetke tisuća vojnika pokušavajući ovladati Dardanelima, otvoriti put prema Rusiji i približiti se Carigradu?",
       "answers": [
-        "Anšar",
-        "Anshar"
+        "Galipolje",
+        "Galipolju",
+        "Galipole",
+        "Galipol"
       ],
       "image": null
     },
     {
-      "id": "daily-510a44d5",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koja je hrvatska dječja tv serija nadahnuta romanom Bijeli Jelen, Vladimira Nazora?",
-      "answers": [
-        "Jelenko"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-b5033063",
+      "id": "daily-84262152",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Koje more se nalazi ispred obale Omana?",
+      "question": "Koja je latinoamerička država svoje ime dobila po zemljinu polutniku?",
       "answers": [
-        "Arapsko More",
-        "Arapsko",
-        "Arabian",
-        "Arab",
-        "Arabs",
-        "Arabijan",
-        "Raebijn",
-        "Arebijan"
+        "Ekvador",
+        "Ecuador",
+        "Ekuador"
       ],
       "image": null
     },
     {
-      "id": "daily-438ed4c1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koja je europska kraljevina financirala prvo veliko putovanje Kristofora Kolumba preko Atlantika?",
-      "answers": [
-        "Španjolska",
-        "Španjolske",
-        "Spains",
-        "Spain",
-        "Spejn",
-        "Spejns",
-        "Špain",
-        "Špejn",
-        "Espanol",
-        "Espanjol",
-        "Espania",
-        "Espanja",
-        "Esp",
-        "Špa",
-        "Spa"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d9f3b2d4",
+      "id": "daily-028bbb7b",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koji broj nastavlja niz 2, 4, 8, 16...?",
+      "question": "Koliko stranica ima trokut?",
       "answers": [
-        "32",
-        "Trideset dva",
-        "XXXII",
-        "Thirty two",
-        "Tirti tvu"
+        "3",
+        "Tri",
+        "Three",
+        "Tre",
+        "III"
       ],
       "image": null
     },
     {
-      "id": "daily-a2393c22",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Na kojem se hrvatskom otoku, odigrala odlučujuća bitka 2. Rimsko - Ilirskog rata?",
-      "answers": [
-        "Hvaru",
-        "Na Hvaru",
-        "Hvar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-78b5cfe9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koju su popularnu mobilnu videoigru danski studiji SYBO Games i Kiloo zajedno razvili i objavili 2012.g.?",
-      "answers": [
-        "Subway Surfers",
-        "Subvej surfers",
-        "Sabvjer surfers",
-        "Subway Surf",
-        "Subvej Surf",
-        "Sabvej Surf"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-030b01cf",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Stari rimski grad Singidunum na području Srbije, se razvio u koji moderan grad današnjice?",
-      "answers": [
-        "Beograd",
-        "Belgrade"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4edddfbe",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koji španjolski naziv za šešir izvan španjolskog govornog područja najčešće povezujemo s tradicionalnim meksičkim šeširom izrazito širokog oboda?",
-      "answers": [
-        "Sombrero"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-769dee50",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Koji je galski poglavica bio vođa galskih plemena u pobuni protiv rimske vlasti na čelu s Julijem Cezarom?",
-      "answers": [
-        "Vercingetoriks",
-        "Vercingetorix"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1d4e7ea5",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koji je vestern Clinta Eastwooda osvojio Oscara za najbolji film, a prati priču ostarjelog revolveraša Munnyja?",
-      "answers": [
-        "Nepomirljivi",
-        "Unforgiven"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-63e00540",
+      "id": "daily-61bbb591",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Koji je trener vodio svoj Arsenal do naslova nogometnih prvaka engleske Premier Lige u sezoni 2003/04?",
+      "question": "Čija nadoknada produžava nogometnu utakmicu nakon 45-e i 90-e minute?",
       "answers": [
-        "Arsene Wenger",
-        "Arsen Venger",
-        "Wenger",
-        "Venger"
+        "Sudačka",
+        "Sudijska",
+        "Sudčeva",
+        "Sučeva",
+        "Sudijina",
+        "Sudija",
+        "Sudac",
+        "Refree",
+        "Refrees",
+        "Refris",
+        "Refri"
       ],
       "image": null
     },
     {
-      "id": "daily-efa6ccb2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Kako se zvao komunistički vojno-politički savez istočnoeuropskih država na čelu sa SSSR-om osnovan 1955.?",
-      "answers": [
-        "Varšavski pakt",
-        "Warszawski pakt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5f956539",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Dioksid kojeg kemijskog elementa čini gotovo 60% mase kontinenata te oko 48% oceanske kore?",
-      "answers": [
-        "Silicija",
-        "Silicij",
-        "Siliciuma",
-        "Silicium",
-        "Silicon",
-        "Silikon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-178ad5bb",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koja je japanska kompanija razvila arkadne videoigre Galaxian, Galaga i Pac-Man?",
-      "answers": [
-        "Namco"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-02994b0d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je francuski književnik u romanu „Dvadeset tisuća milja pod morem” doveo podmornicu Nautilus do Vanikora, mjesta brodoloma La Pérouseove ekspedicije i njezinih brodova Boussole i Astrolabe?",
-      "answers": [
-        "Jules Verne",
-        "Žil Vern",
-        "Jul Vern",
-        "Jules Vern",
-        "Verne",
-        "Vern"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-17298b2d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji je američki predsjednik rođen na imanju zvanom Sinking Spring Farm?",
-      "answers": [
-        "Abraham Lincoln",
-        "Lincoln",
-        "Linkoln"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-48cf897a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koji se zid može pohvaliti sveukupnom dužinom od 21 196km?",
-      "answers": [
-        "Kineski Zid",
-        "Kineski",
-        "Chinese",
-        "Čajnis",
-        "Čajniz",
-        "Great",
-        "Grejt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-31e6bc4b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji je glazbenik srednjeg imena 'Frederick Joseph' poznat i kao 'The Boss'?",
-      "answers": [
-        "Bruce Springsteen",
-        "Brus Springstin",
-        "Springsteen",
-        "Springstin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c33bb3f1",
+      "id": "daily-16eacb1b",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "Kako se zove djevojčica iz romana 'Vlak u snijegu' koja s Ljubanom i Perom u školu ide iz zaseoka Jabukovac?",
+      "question": "Kako se zvao narod sitnih radnika koji su radili u Wonkinoj tvornici čokolade?",
       "answers": [
-        "Draga"
+        "Oompa Loopme",
+        "Oopma Loompa",
+        "Ompa Lompe",
+        "Ompa Lompa",
+        "Oompa Loompas",
+        "Ompa Lompas"
       ],
       "image": null
     },
     {
-      "id": "daily-ac2c878d",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Kojeg je vijetnamca, Lyndon B. Johnson nazvao azijskim Winstonom Churchillom?",
-      "answers": [
-        "Ngo Dinh Diem",
-        "Diem",
-        "Zjem",
-        "Jem",
-        "Diema",
-        "Zjema",
-        "Jema"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-6fc240d6",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove izmišljeni svijet u kojem se odvija najveći dio radnje MMORPG videoigre World of Warcraft?",
-      "answers": [
-        "Azeroth",
-        "Azerot"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-123b50a4",
+      "id": "daily-198583cf",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Arhimed je starogrčki fizičar, astronom i matematičar poznatiji kao Arhimed iz kojeg grada?",
+      "question": "Koji stroj mehaničku energiju pretvara u električnu?",
       "answers": [
-        "Sirakuze",
-        "Sirakuza",
-        "Syracuze",
-        "Syracuza",
-        "Siracuse",
-        "Siracusa"
+        "Generator"
       ],
       "image": null
     },
     {
-      "id": "daily-ed4cb737",
+      "id": "daily-ec1a20f4",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja bajka počinje rečenicom 'bila jednom jedna djevojčica koja je nosila crvenu kapu'?",
+      "answers": [
+        "Crvenkapica",
+        "Little Red Riding Hood",
+        "Litl Red Rajding Hud",
+        "Crvenkrpica"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3c0d7dca",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koji je perzijski vladar nakon pobjede nad egipatskom vojskom u bitci kod Peluzija 525.g. pr. Kr. osvojio Egipat, svrgnuo faraona Psamtika III. i postao prvi perzijski kralj koji je ponio titulu faraona?",
+      "question": "Koji je maurijski car širio budizam po indijskom poluotoku podizanjem stupova s uklesanim ediktima te slanjem misionara, među ostalim i na Šri Lanku?",
       "answers": [
-        "Kambiz II.",
-        "Kambiz 2.",
-        "Kambiz",
-        "Kambiz drugi",
-        "Kambis 2nd"
+        "Ašoka Veliki",
+        "Ašok Veliki",
+        "Ašoka",
+        "Ašok",
+        "Ashoka Veliki",
+        "Ashok Veliki",
+        "Ashok",
+        "Ashoka",
+        "Ashoka the Great",
+        "Ašoka d Grejt"
       ],
       "image": null
+    },
+    {
+      "id": "daily-15074972",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koje je srednje ime, američkog predsjednika Richarda Nixona?",
+      "answers": [
+        "Milhous",
+        "Milhus",
+        "Milhaus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b9f6eb2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se u Dark Soulsu zove resurs koji igrač dobiva pobjeđivanjem neprijatelja, koristi ga za napredovanje, a nakon smrti ga može izgubiti?",
+      "answers": [
+        "Souls",
+        "Soul",
+        "Duše",
+        "Duša"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-55692021",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zvao bogato natovaren brod Mogulskog Carstva čije je zarobljavanje 1695.g. pretvorilo engleskog gusara Henryja Everyja u jednog od najtraženijih ljudi njegova doba?",
+      "answers": [
+        "Ganj i Sawai",
+        "Ganj i Saway",
+        "Gang i Sawai",
+        "Gunsway",
+        "Ganj Sawai",
+        "Ganj i Savaj",
+        "Ganj Savaj",
+        "Gansvej",
+        "Ganj i savai",
+        "Ganj savai",
+        "Ganjsavai",
+        "Ganjsavaj",
+        "Ganj",
+        "Sawai",
+        "Savaji",
+        "Savaj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb0e9b30",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "'Pjesma o Brabantu' je himna koje države?",
+      "answers": [
+        "Belgije",
+        "Belgija",
+        "Belgium",
+        "Belđum",
+        "Beldžum",
+        "Belđium",
+        "Beldžium"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7194a5a3",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva vrsta rukava koji se proteže u jednom komadu sve do ovratnika, a ime je dobila prema britanskom zapovjedniku iz Krimskog rata?",
+      "answers": [
+        "Raglan",
+        "Reglan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6e6398ac",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koje venezuelansko jezero slovi za najveće u Južnoj Americi, iako je s morem povezano ušćem?",
+      "answers": [
+        "Maracaibo",
+        "Marakaibo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c3446f79",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koje ime dijele prvi komercijalni komunikacijski satelit lansiran 1962.g, koji je omogućio prve transatlantske TV prijenose uživo, i legendarna crno-bijela lopta korištena na FIFA SP-u 1970.g. čiji je kontrastni dizajn (crni pentagoni i bijeli heksagoni) posebno osmišljen kako bi bila jasno vidljiva na tadašnjim crno-bijelim televizorima, do kojih su utakmice dolazile, baš zahvaljujući spomenutim satelitima?",
+      "answers": [
+        "Telstar"
+      ],
+      "image": null,
+      "rarity": "golden"
     }
   ]
 }

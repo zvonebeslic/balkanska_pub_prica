@@ -1,168 +1,136 @@
 {
   "version": 2,
   "date": "2026-10-04",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-e314514a",
+      "id": "daily-57f62ee7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koje je boje majica vodećeg biciklista u ukupnom poretku Tour de Francea?",
+      "answers": [
+        "Žuta",
+        "Žute",
+        "Yellow",
+        "Jelov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ebafaa18",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Ako znamo da mu je prezime bilo Gucci, koje je onda bilo ime osnivaču modne kuće Gucci, koji je 1921.g. u Firenci pokrenuo posao iz kojeg će nastati jedan od najpoznatijih talijanskih luksuznih brendova?",
+      "question": "Koje biblijsko ime nosi velika boca Champagnea zapremnine tri litre, odnosno četiri standardne boce?",
       "answers": [
-        "Guccio",
-        "Gučio",
-        "Gučo"
+        "Jeroboam",
+        "Jeroboam boca",
+        "Jeroboam bottle",
+        "Jeroboam"
       ],
       "image": null
     },
     {
-      "id": "daily-2bb1cab6",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Znanost",
-      "question": "Koja grana biologije proučava funkcije živih organizama, organa, tkiva, stanica i molekula?",
-      "answers": [
-        "Fiziologija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5814247a",
+      "id": "daily-d2e8d5d2",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koja se protestantska vjerska struja posebno snažno proširila sjevernim nizozemskim provincijama i dodatno zaoštrila njihov sukob s izrazito katoličkim kraljem španjolske, Filipom II.?",
+      "topic": "Sport",
+      "question": "U kojoj od tri mačevalačke discipline je cijelo tijelo valjana površina za pogodak?",
       "answers": [
-        "Kalvinizam",
-        "Calvinism"
+        "Mač",
+        "Sword",
+        "Sord",
+        "Svord"
       ],
       "image": null
     },
     {
-      "id": "daily-b2f53581",
+      "id": "daily-1b8b3095",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva piće koje se tradicionalno priprema u većoj zdjeli za više osoba, a njegov se naziv često povezuje s hindi riječi za broj pet zbog pet osnovnih sastojaka ranih recepata?",
+      "answers": [
+        "Punch",
+        "Punč",
+        "Punc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c3556a43",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "U kojem filmu glume Brad Pitt i Edward Norton kao osnivači jednog tajnog kluba?",
+      "answers": [
+        "Klub boraca",
+        "Fight Club",
+        "Fajt klub"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-baee8bc0",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U Gulliverovim putovanjima, kako se zovu divlji ljudi nalik životinjama koje Houyhnhnmi smatraju nižom vrstom?",
+      "answers": [
+        "Yahoos",
+        "Jahos",
+        "Jahus",
+        "Yahoo",
+        "Yahoi",
+        "Yahooi",
+        "Yahoosi",
+        "Yahosi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ea6a704f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kojem se mjestu u blizini Gospića rodio svjetski poznati znanstvenik Nikola Tesla?",
+      "answers": [
+        "Smiljan",
+        "Smiljanu",
+        "Smiljans"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0a22c6e2",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Logo tvrtke Apple sugerira da je jabuku netko zagrizao, a kada bismo upitali braću Grimm tko je to bio oni bi sasvim sigurno spomenuli koju ljepoticu?",
+      "answers": [
+        "Snjeguljicu",
+        "Snjeguljica",
+        "Sniw White",
+        "Snov Vajt"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fe2abd51",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koja se mjerna jedinica tradicionalno koristi za brzinu broda, pri čemu jedna jedinica odgovara jednoj nautičkoj milji na sat?",
+      "question": "Kako se naziva portugalska navigacijska tehnika u kojoj se jedrenjak udaljava od afričke ili europske obale i pravi širok luk preko Atlantika kako bi iskoristio povoljnije vjetrove i morske struje?",
       "answers": [
-        "Čvor",
-        "Knot",
-        "Čvorovi",
-        "Knots"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a864b2fa",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Koji njemački grad na rijeci Rajni, stari rimljani osnivaju kao Moguntiacum?",
-      "answers": [
-        "Mainz",
-        "Majnc",
-        "Majc",
-        "Manjc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8e1cc13e",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Koje more su 'zarobili' tjesnaci Bospor i Dardaneli?",
-      "answers": [
-        "Mramorno More",
-        "Mramorno",
-        "Marmara",
-        "Mermera"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ca141d42",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "U kojoj je državi nastala popularna igra Pac Man?",
-      "answers": [
-        "Japanu",
-        "Japan",
-        "Džepen",
-        "Jepen",
-        "Nihonu",
-        "Nihon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-23564a9c",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koji je sumerski bog slatkih voda, mudrosti, stvaranja i obrta pomogao oblikovati čovječanstvo?",
-      "answers": [
-        "Enki",
-        "Ea"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-cce1fd9a",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji je bend snimio album 'A Night at the Opera'?",
-      "answers": [
-        "Queen",
-        "Kuin",
-        "Kvin",
-        "Quin"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-007ff805",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koja oznaka na škotskom whiskyju znači da je proizveden u jednoj destileriji od vode i sladnog ječma, bez miješanja whiskyja iz različitih destilerija?",
-      "answers": [
-        "Single malt",
-        "Singl malt",
-        "Singl melt"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-71bed615",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove pojam iz ekonomije koji opisuje opći rast cijena u gospodarstvu?",
-      "answers": [
-        "Inflacija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-eecfb226",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koji je glumac utjelovio Charlieja Chaplina u biografskom filmu iz 1992. godine?",
-      "answers": [
-        "Robert Downey Jr",
-        "Robert  Dovni Jr",
-        "Downey Jr",
-        "Dovni jr",
-        "Dovni Junior",
-        "Robert John Downey Jr"
+        "Volta do mar",
+        "Volta du mar",
+        "Volta do largo",
+        "Volta do largo",
+        "Volta du largo"
       ],
       "image": null
     },
@@ -178,231 +146,292 @@
       "image": null
     },
     {
-      "id": "daily-c806b267",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je premierligaški klub, u sezoni 2003/04 ostao neporažen, te tako osvojio nogometno prvenstvo sa 26 pobjeda i 12 remija?",
-      "answers": [
-        "Arsenal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-da65e590",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Reprezentacija koje je države gubila u finalima Europskog nogometnog prvenstva 2024.g. i 2020.g.?",
-      "answers": [
-        "Engleske",
-        "Engleska",
-        "England",
-        "Englend",
-        "Inglend",
-        "Englezi",
-        "Eng"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4241c6b5",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Iz kojeg romana potječu likovi Fagin, Artful Dodger i Mr. Bumble?",
-      "answers": [
-        "Oliver Twist",
-        "Oliver Tvist",
-        "Oli Twist",
-        "Oli Tvist",
-        "Olivera Twista",
-        "Olivera Tvista"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2b4e0445",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koju je počasnu titulu, znanstvenik Humphry Davy dobio 1812.g.?",
-      "answers": [
-        "Sir",
-        "Sr"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e6d65585",
+      "id": "daily-b2728d68",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Koji je glavni grad Solomonskih Otoka??",
+      "question": "Koji je glavni grad Čada?",
       "answers": [
-        "Honiara",
-        "Honijara"
+        "N Djamena",
+        "Ndžamena",
+        "N Džamena",
+        "Ndjamena",
+        "Endjamena",
+        "Endžamena",
+        "En Djamena",
+        "En Džamena"
       ],
       "image": null
     },
     {
-      "id": "daily-21115abb",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Glazba",
-      "question": "Koje glazbalo spominjemo nakon električna, akustična, bas i klasična?",
-      "answers": [
-        "Gitara",
-        "Guitar",
-        "Gitar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-8a9a9071",
+      "id": "daily-9241fe3b",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Koji američki predsjednik je na slici 'Lansdowne portrait' iz 1796.g. slikara Gilberta Stuarta?",
+      "topic": "Nogomet",
+      "question": "Radnički Niš i Spartak Subotica su nogometni klubovi u kojoj državi?",
       "answers": [
-        "George Washington",
-        "Washington",
-        "Džordž Vašington",
-        "Vašington"
+        "Srbiji",
+        "Srbija",
+        "Serbia",
+        "Serbii",
+        "Serbija",
+        "Serbija",
+        "Serbs",
+        "Srbs",
+        "Srb"
       ],
       "image": null
     },
     {
-      "id": "daily-6fbd29d7",
+      "id": "daily-c75f4967",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Američki građanski rat je počeo napadom zemalja konfederacije na koju utvrdu u Južnoj Karolini?",
+      "topic": "Nogomet",
+      "question": "Svi znamo da je Maradona 1986.g. zabio 'Božju ruku' , ali malo tko zna na kojem se stadionu to dogodilo. Danas tu igra ekipa Club Americe te meksička reprezentacija, a stadion se zove kako?",
       "answers": [
-        "Fort Sumter",
-        "Sumter",
-        "Suter"
+        "Azteca Stadium",
+        "Estadio Azteca",
+        "Azteca",
+        "Asteka",
+        "Astec",
+        "Aztec",
+        "Astek",
+        "Aztek",
+        "Azteka",
+        "Aztec"
       ],
       "image": null
     },
     {
-      "id": "daily-281806ae",
+      "id": "daily-ae18099b",
       "type": "blitz",
-      "difficulty": 4,
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvao njemački plan invazije na Veliku Britaniju u jeku 2. svjetskog rata koji nikada nije proveden jer Luftwaffe nije uspio osvojiti prevlast u zraku?",
+      "answers": [
+        "Morski lav",
+        "Sea Lion",
+        "Si Lajon",
+        "SeeLowe",
+        "Zileve",
+        "Ziileve"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-188f7cc5",
+      "type": "blitz",
+      "difficulty": 3,
       "topic": "Film",
-      "question": "Kako se zove brod u filmu 'Osmi putnik' (Alien)?",
+      "question": "Radnja kojeg filma se odvija na fiktivnom mjesecu Pandora u zvjezdanom sustavu Alpha Centauri?",
       "answers": [
-        "Nostromo"
+        "Avatar"
       ],
       "image": null
     },
     {
-      "id": "daily-f6a91a17",
+      "id": "daily-5fd36e62",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "'Napoleon prelazi Alpe' je slavno ulje na platnu francuskog slikara Jacques Louisa Davida koje uprizoruje Napoleona na kojoj životinji?",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "U godini 69. Vladala su 4 rimska cara, a koji od njih je za svog života vladao najkraće, točnije, samo 3 mjeseca?",
       "answers": [
-        "Konju",
-        "Na konju",
-        "Konj"
+        "Oton",
+        "Otho",
+        "Oto"
       ],
       "image": null
     },
     {
-      "id": "daily-f58d5722",
+      "id": "daily-f3692973",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je austrijski znanstvenik napisao knjigu 'Što je život?' (What is Life?), u kojoj je govorio kako se zakoni fizike i kemije mogu povezati sa životom i nasljeđivanjem te koja je kasnije postala inspiracijom za pronalazak DNK?",
+      "answers": [
+        "Erwin Schrodinger",
+        "Ervin Šrodinger",
+        "Schrodinger",
+        "Šrodinger"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-3517e2d5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je grad 1939.g. bio podijeljen između njemačkih zahtjeva i poljskog pristupa Baltiku, a pod njemačkim imenom Danzig postao jedan od simbola krize koja je prethodila ratu?",
+      "answers": [
+        "Gdanjsk",
+        "Gdansk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4a1bf12b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "U kojoj je saveznoj državi rođen treći predsjednik SAD-a?",
+      "answers": [
+        "Virginiji",
+        "Virginija",
+        "Virdžiniji",
+        "Virdžinija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-846af309",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koju troslovnu kraticu nosi Svjetsko prvenstvo u rallyju?",
+      "answers": [
+        "WRC",
+        "Veerce",
+        "Ve er ce",
+        "Vrc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2c44ef11",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Kako se naziva gusarska zastava s lubanjom i prekriženim kostima, čiji je izgled imao brojne varijante, ali je postala univerzalni simbol piratstva?",
+      "question": "Koji je španjolski istraživač 1541.g. i 1542.g. predvodio ekspediciju koja je prva preplovila gotovo cijeli tok Amazone, od Anda do Atlantskog oceana?",
       "answers": [
-        "Jolly Roger",
-        "Džoli Rođer"
+        "Francisco de Orellana",
+        "Francisko de Oreljana",
+        "Francisco Orellana",
+        "Francisko Oreljana",
+        "Orellana",
+        "Oreljana"
       ],
       "image": null
     },
     {
-      "id": "daily-141133ef",
+      "id": "daily-fed327c5",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AntickiRim",
-      "question": "Koji grad 1870.g. pada pod vlast kralja Viktora Emanuela II.?",
+      "question": "Burdigala, Durocortorum i Lugdunum su bili rimski gradovi čiju bogatu baštinu danas možemo vidjeti u kojoj državi?",
       "answers": [
-        "Rim",
-        "Rome"
+        "Francuskoj",
+        "Francuska",
+        "U Francuskoj",
+        "Fra",
+        "Frenc",
+        "France"
       ],
       "image": null
     },
     {
-      "id": "daily-c0fea350",
+      "id": "daily-a0d96eae",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Poslovica koja uspoređuje naše postupke sa sjetvom i žetvom kaže: 'Kako siješ, tako ćeš i...'?",
+      "topic": "Moreplovci",
+      "question": "Koliko je topova posada broda HMS Endeavour 1770.g. bacila u more kako bi olakšala brod nakon što se nasukao na Velikom koraljnom grebenu?",
       "answers": [
-        "Žeti"
+        "6",
+        "Šest",
+        "VI",
+        "Six",
+        "Siks"
       ],
       "image": null
     },
     {
-      "id": "daily-2cae8547",
+      "id": "daily-8ed3f765",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Kako se zove stariji prijatelj i mentor Nathana Drakea u serijalu videoigara Uncharted, kojeg protagonist najčešće zove Sully?",
+      "question": "Kako se zove glavni neprijatelj Ninja kornjača protiv kojeg se bore u Konamijevoj arkadnoj videoigri Teenage Mutant Ninja Turtles?",
       "answers": [
-        "Victor Sullivan",
-        "Viktor Sullivan",
-        "Sullivan",
-        "Saliven",
-        "Viktor Saliven"
+        "Shredder",
+        "Šreder"
       ],
       "image": null
     },
     {
-      "id": "daily-a2a25920",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Kako se zove družica te velika ljubavi Robina Hooda iz knjige o njegovim pustolovinama, autora Howarda Pylea?",
-      "answers": [
-        "Marian",
-        "Marijen",
-        "Marion",
-        "Marijon"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e79fda32",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se zove religija koju je utemeljio Siddhartha Gautama, usmjerena na put prosvjetljenja i nirvane?",
-      "answers": [
-        "Budizam"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0f7ddb42",
+      "id": "daily-f3c34c8b",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je francuski kralj navodno smatrao da je Pariz 'vrijedan jedne mise' kada je prelaskom na katoličanstvo učvrstio svoj položaj na prijestolju?",
+      "topic": "Zemljopis",
+      "question": "Koja afrička država, sa izlazom na Indijski Ocean, na svom grbu uprizoruje pijetla sa sjekirom u kandži?",
       "answers": [
-        "Henrik IV.",
-        "Henrik 4.",
-        "Henrik četvrti",
-        "Henrik fourth",
-        "Henrik fort",
-        "Henrik 4th",
-        "Henri IV.",
-        "Henri 4.",
-        "Henri četvrti",
-        "Henri fourth",
-        "Henri fort",
-        "Henri 4th"
+        "Kenija",
+        "Kenya",
+        "Kenja",
+        "Kenia"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0701e2b7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio predsjednik SAD-a u vrijeme kada je Napoleon pobjedio u bitci kod Austerlitza?",
+      "answers": [
+        "Thomas Jefferson",
+        "Tomas Džeferson",
+        "Jefferson",
+        "Džeferson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f8e9ff4c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je kompanija proizvela Commodore 64, jedno od najpopularnijih kućnih računala za igranje videoigara tijekom 1980-ih?",
+      "answers": [
+        "Commodore",
+        "Komodor",
+        "Komodore"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-85d02c4d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja grana zoologije se bavi proučavanjem ptica?",
+      "answers": [
+        "Ornitologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-651e05fb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je portugalski nogometaš osvojio Ligu Prvaka sa Portom 2004.g. i sa Barcelonom 2006.g.?",
+      "answers": [
+        "Deco",
+        "Deko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-274f8a01",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kemijske elemente sa simbolima Na, Mg, K, Ca, Sr i Ba otkrio je koji engleski znanstvenik, jedan od utemeljitelja elektrokemije?",
+      "answers": [
+        "Humphry Davy",
+        "Hampri Dejvi",
+        "Hamfri Dejvi",
+        "Davy",
+        "Dejvi"
       ],
       "image": null
     }

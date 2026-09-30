@@ -1,164 +1,90 @@
 {
   "version": 2,
   "date": "2026-10-05",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-463cb96c",
+      "id": "daily-aca63b17",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Prvo izdanje kojeg je književnog djela iz repertoara Antoina de Saint Exuperyja objavljeno u New Yorku 1943.g. na engleskom i francuskom jeziku?",
+      "answers": [
+        "Mali Princ",
+        "Malog Princa",
+        "Little Prince",
+        "Lidl Princ",
+        "Lidl Prins",
+        "La petit Prince",
+        "Le petit Princ"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fa3030ed",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koja ćorava životinja nastupa u poslovici u kojoj i ona nađe zrno?",
+      "topic": "Povijest",
+      "question": "Napoleon je 1796.g. preuzeo slabo opremljenu i iscrpljenu vojsku, a zatim nizom brzih pobjeda porazio austrijske i sardinske snage u svojem prvom pohodu u kojoj zemlji?",
       "answers": [
-        "Koka",
-        "Kokoš",
-        "Kokica"
+        "Italija",
+        "It",
+        "Italiji",
+        "Italy",
+        "Italys",
+        "Ita",
+        "Itals",
+        "Ital",
+        "Itali",
+        "Italis",
+        "Talijanskoj",
+        "Talijanski",
+        "Talijani"
       ],
       "image": null
     },
     {
-      "id": "daily-a0660b67",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "Ostalo",
-      "question": "Kako se zove religijska knjiga kršćana koja se sastoji od Starog i Novog zavjeta?",
-      "answers": [
-        "Biblija"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2defe612",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Znanost",
-      "question": "11, 12, 19, 20, 38 i dopunski broj 56... ne ne, ovo nisu brojevi sa lota već atomski brojevi kemijskih elemenata koje je otkrio koji čuveni britanac?",
-      "answers": [
-        "Humphry Davy",
-        "Hampri Dejvi",
-        "Hamfri Dejvi",
-        "Davy",
-        "Dejvi"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-e8dc9ae1",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Uz obalu kojeg se današnjeg tuniskog otoka 1560.g. odigrala velika pomorska bitka u kojoj je osmanska flota porazila kršćanski savez?",
-      "answers": [
-        "Đerba",
-        "Djerba",
-        "Jerba",
-        "Džerba",
-        "Djerbe",
-        "Džerbe",
-        "Jerbe"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d410fec9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Sudeći prema izreci, u strahu je najveći koji dio tijela?",
-      "answers": [
-        "Oči",
-        "Oko",
-        "Eyes",
-        "Ajs",
-        "Ese",
-        "Aj"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f6760567",
+      "id": "daily-3c0713c4",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Koliko nula ima bilijun prema hrvatskoj dugoj ljestvici?",
+      "question": "Kojim brojem možemo pomnožiti bilo koji broj, a da broju kojem se dodaje taj broj ne promijenimo vrijednost?",
       "answers": [
-        "12",
-        "Dvanaest",
-        "Twelve",
-        "Tvelv",
-        "XII"
+        "1",
+        "Jedan",
+        "One",
+        "Von",
+        "Ein",
+        "Ajn",
+        "I"
       ],
       "image": null
     },
     {
-      "id": "daily-a8e6fadf",
+      "id": "daily-1dffa9b7",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji je francuz, igrajući za Marseille, osvojio Zlatnu Loptu 1991.g.?",
+      "difficulty": 1,
+      "topic": "FloraFauna",
+      "question": "Koji naziv u pravilu koristimo za životinje koje žive u svom prirodnom staništu, podalje od čovjeka?",
       "answers": [
-        "Jean Pierre Papin",
-        "Žan Pier Papin",
-        "Papin",
-        "Papen"
+        "Divlje životinje",
+        "Divlje"
       ],
       "image": null
     },
     {
-      "id": "daily-84296eef",
+      "id": "daily-c6215396",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koja se pjevačica glazbom počela baviti pod pseudonimom Lizzy Grant a svjetsku slavu stekla pjesmom 'Video Games'?",
-      "answers": [
-        "Lana Del Rey",
-        "Lana Del Rej",
-        "Del Rey",
-        "Del Rej",
-        "Elizabeth Woolridge Grant",
-        "Rey",
-        "Rej"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-65a6744a",
-      "type": "blitz",
-      "difficulty": 4,
+      "difficulty": 2,
       "topic": "AntickiRim",
-      "question": "U rimskoj religiji, od 15 svećenika Flamena, koliko ih je bilo 'velikih'?",
+      "question": "Koja je drevna boja, dobivena iz morskih puževa, na vrhuncu Rimskog Carstva često vrijedila više od svoje težine u zlatu te postala simbol carske vlasti?",
       "answers": [
-        "Tri",
-        "3",
-        "Trojica"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d50e1f14",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Koji je legendarni lik iz Nintendovih videoigara dobio svoj prepoznatljivi izgled dijelom zbog tehničkih ograničenja ranih arkadnih strojeva, pa mu je Shigeru Miyamoto stavio kapu kako ne bi morao detaljno prikazivati i animirati kosu, dok su veliki brkovi pomogli da se njegovo lice i nos jasnije razaznaju na malom broju piksela?",
-      "answers": [
-        "Super Mario",
-        "Mario"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-fd6f2811",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Povijest",
-      "question": "Kako se zove grčki povjesničar koji je opisao Peloponeski rat?",
-      "answers": [
-        "Tukidid",
-        "Thukydides",
-        "Thucydides"
+        "Tirski purpur",
+        "Tirs purpur",
+        "Purpur"
       ],
       "image": null
     },
@@ -174,44 +100,186 @@
       "image": null
     },
     {
-      "id": "daily-3ced8631",
+      "id": "daily-b2c40c49",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Toranj Wardenclyff je poznat po kojem znanstveniku?",
+      "answers": [
+        "Nikoli Tesli",
+        "Nikola Tesla",
+        "Tesla",
+        "Tesli",
+        "Teslas"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-325ddd65",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove žuti kružni lik iz jedne od najpoznatijih arkadnih igara svih vremena, koji prolazeći labirintom jede točkice dok ga progone četiri duha?",
+      "answers": [
+        "Pac Man",
+        "Pacman",
+        "Pekmen",
+        "Pek Men",
+        "Pak Man",
+        "PAC men",
+        "Pakman",
+        "Pakmen",
+        "Pak Men",
+        "Pac Men"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-79258bef",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji bozon prenosi jaku nuklearnu silu?",
+      "answers": [
+        "Gluon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee5aa17a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Koja je utvrda u 1. židovsko - rimskom ratu ostala upamćena po masovnom samoubojstvu njenih branitelja, žena i djece?",
+      "answers": [
+        "Masada",
+        "Mecuda",
+        "Mecada"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0ade2337",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "'Vrata svih naroda' ili Kserksova vrata dao je sagraditi kralj Kserkso I. 475.g. pr. Kr. a predstavaljala su monumentalni ulazni portal u koji drevni perzijski grad?",
+      "question": "Kojeg se starog perzijskog proroka i filozofa smatra osnivačem Mazdaizma?",
       "answers": [
-        "Perzepolis",
-        "Persepolis",
-        "Parsa",
-        "Parsu",
-        "Taht-e Džamšid",
-        "Tahsti Džamšid",
-        "Čehel Minar"
+        "Zaratustra",
+        "Zaratustru",
+        "Zaratuštra",
+        "Zaratuštru",
+        "Zoroaster",
+        "Zoroastera",
+        "Zoroastresa",
+        "Zoroastres",
+        "Zartosht",
+        "Zartost",
+        "Zartoshta",
+        "Zartosta"
       ],
       "image": null
     },
     {
-      "id": "daily-4c6d2f8d",
+      "id": "daily-0c895cd9",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Nogomet",
-      "question": "Kojeg prezimena su bila polubraća koja su igrala jedan protiv drugog na Svjetskom nogometnom prvenstvu 2010.g.? Jedan za Njemačku a drugi za Ganu.",
+      "question": "Falkirk i Aberdeen su nogometni klubovi u kojoj državi?",
       "answers": [
-        "Boateng",
-        "Boteng",
-        "Bateng"
+        "Škotskoj",
+        "Škotska",
+        "Scotland",
+        "Scotlands",
+        "Skotlends",
+        "Skotlend",
+        "Scots",
+        "Skots",
+        "Sco"
       ],
       "image": null
     },
     {
-      "id": "daily-221a085c",
+      "id": "daily-fc005f1d",
       "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Svi znamo da je Mercedes dobio ime po imenu kćeri jednog trgovca automobilima, a kako su se ti otac i kćer prezivali?",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je francuski pisac ostao najviše upamćen po zapisanoj bajci o Pepeljugi?",
       "answers": [
-        "Jellinek",
-        "Jelinek"
+        "Charles Perrault",
+        "Šarl Pero",
+        "Čarls Pero",
+        "Perrault",
+        "Pero",
+        "Perot"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-820ee0a5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja je utjecajna obitelj od 1923.g. većinski vlasnik nogometnog kluba Juventus?",
+      "answers": [
+        "Agnelli",
+        "Anjeli",
+        "Agneli",
+        "Agnjeli",
+        "Ahnjeli",
+        "Anjelli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5635751d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja se afrička pustinja najvećim dijelom proteže kroz Namibiju i Bocvanu?",
+      "answers": [
+        "Kalahari",
+        "Dorsland",
+        "Dorslend",
+        "Kgalagadi",
+        "Kalagadi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b79399dc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "U kojem kalifornijskom gradu umire Warren G. Harding, 29. predsjednik SAD-a",
+      "answers": [
+        "San Francisco",
+        "San Francisko"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1dbb10ab",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Tko je bio prvi hrvat u povijesti koji je osvojio NBA prsten?",
+      "answers": [
+        "Žan Tabak",
+        "Tabak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0b9485a0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove samozvani kralj Dream Landa i jedan od najpoznatijih likova iz serijala videoigara Kirby, prepoznatljiv po velikom drvenom čekiću koji koristi kao oružje?",
+      "answers": [
+        "Dedede",
+        "Dididi",
+        "DDD"
       ],
       "image": null
     },
@@ -230,209 +298,174 @@
       "image": null
     },
     {
-      "id": "daily-cba3a2e4",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "FloraFauna",
-      "question": "Ono što na nebu s'ja visoko, mjesec je il' sivi.. tko?",
-      "answers": [
-        "Sokol"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-d3bf6897",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Koji glumac tumači lik Iron Mana u Marvelovim filmovima?",
-      "answers": [
-        "Robert Downey Jr.",
-        "Robert Dovnej Junior",
-        "Downey Jr.",
-        "Dovnej Junior",
-        "Downey",
-        "Dovni"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c9399d31",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Koji je britanac napisao knjigu o Matildi, nadprosječno pametnoj djevojčici koja ima i telekinetičke sposobnosti?",
-      "answers": [
-        "Roald Dahl",
-        "Rouald Dal",
-        "Roald Dal",
-        "Dahl",
-        "Dal"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-4d1fcb83",
+      "id": "daily-f15db8cc",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Zastava koje države je, zbog crveno bijelih polja koja simboliziraju šahovnicu, jedinstvena u svijetu?",
+      "topic": "AmerickiPredsjednici",
+      "question": "Kojeg su sjevernovijetnamskog vođu, bezuspješno pokušali poraziti Kennedy, Johnson i Nixon, što je dovelo do kasnijeg povlačenja američke vojske iz Vijetnama?",
       "answers": [
-        "Hrvatske",
-        "Hrvatska",
-        "Croatia",
-        "Kroejša",
-        "Croatias",
-        "Kroejšas",
-        "Cro",
-        "Kro",
-        "Hr",
-        "Hrv",
-        "Rh"
+        "Ho Ši Mina",
+        "Ho Chi Minha",
+        "Ho Ši Min",
+        "Ho Chi Minh",
+        "Ši Min",
+        "Ši Mina",
+        "Chi Minha",
+        "Chi Minh",
+        "Min",
+        "Mina",
+        "Minh"
       ],
       "image": null
     },
     {
-      "id": "daily-b2d8521f",
+      "id": "daily-91ea2d66",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je hrvatski centar postao prvi strani igrač primljen u Naismith Memorial Basketball Hall of Fame?",
+      "answers": [
+        "Krešimir Ćosić",
+        "Ćosić"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0fdfaa73",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je američki inženjer bio glavni projektant Golden Gate Bridgea i desetljećima se borio da projekt uopće bude prihvaćen?",
+      "answers": [
+        "Joseph Strauss",
+        "Joseph Baermann Strauss",
+        "Džozef Strauss",
+        "Strauss",
+        "Štraus",
+        "Džozef Štraus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f192163e",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Moreplovci",
-      "question": "Koji je grad na obali Meksičkog zaljeva Hernan Cortés osnovao 1519.g. i preko njegova gradskog vijeća pokušao osigurati zakonitu osnovu za svoj pohod?",
+      "question": "Koji je francuski istraživač i kartograf 1608.g. osnovao Québec, jedno od prvih trajnih francuskih naselja u Kanadi, zbog čega ga često nazivaju ocem Nove Francuske?",
       "answers": [
-        "Veracruz",
-        "Vera Cruz",
-        "Villa Rica de la Vera Cruz",
-        "Vera Kruz",
-        "Verakruz"
+        "Samuel de Champlain",
+        "Samuel Champlain",
+        "Samuel de Šamplen",
+        "Champlain",
+        "Šamplen",
+        "Kamlen",
+        "Šamplain",
+        "Kamplain"
       ],
       "image": null
     },
     {
-      "id": "daily-60ad5eca",
+      "id": "daily-1c541b91",
       "type": "blitz",
-      "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Od koje godine je u uporabi Veliki pečat Sjedinjenih Američkih Država (Great Seal of the US)?",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Koje je sveto drvo Japana u šintoističkoj tradiciji?",
       "answers": [
-        "1782.",
-        "Tisuću sedamsto osamdeset druge",
-        "Tisuću sedamsto osamdeset dva",
-        "MDCCLXXXII"
+        "Sakaki"
       ],
       "image": null
     },
     {
-      "id": "daily-7d2ea5f2",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Glazba",
-      "question": "Koji je glazbenik poznat po hitu 'Rocket Man'?",
-      "answers": [
-        "Elton John",
-        "Elton Džon",
-        "John",
-        "Džon",
-        "Reginald Kenneth Dwight",
-        "Elton Hercules John"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-037f2beb",
+      "id": "daily-b868ad9b",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Najrasprostranjeniji spoj na Zemlji koji sadrži kisik nalazimo u kojoj tekućini?",
+      "question": "Od atoma kojeg plina su sastavljene molekule ozonskog omotača?",
       "answers": [
-        "Vodi",
-        "Voda",
-        "Water",
-        "Vater",
-        "H2O",
-        "Wasser",
-        "Vaser"
+        "Kisika",
+        "Oxygena",
+        "Oksigena",
+        "Oksidžena",
+        "Kisik",
+        "Oxygen",
+        "Oksidžen",
+        "O2",
+        "O",
+        "Kiseonik"
       ],
       "image": null
     },
     {
-      "id": "daily-b6045b0d",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Koji antički rimski pisac i ugledni znanstvenik pogiba u erupciji vulkana Vezuva?",
-      "answers": [
-        "Plinije stariji",
-        "Plinije",
-        "Plinius",
-        "Plinius secundus maior"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a2385366",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Ostalo",
-      "question": "Kako se zove sveta knjiga Judaizma koja obuhvaća Petoknjižje?",
-      "answers": [
-        "Tora",
-        "Torah"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ca8de667",
+      "id": "daily-4241c6b5",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "U kojoj mitskoj zemlji svoje beskrajno djetinjstvo provodi Petar Pan?",
+      "question": "Iz kojeg romana potječu likovi Fagin, Artful Dodger i Mr. Bumble?",
       "answers": [
-        "Nigdjezemska",
-        "Nigdjezemskoj",
-        "Neverlandu",
-        "Neverland",
-        "Neverlands",
-        "Neverlend",
-        "Neverlends",
-        "Neverlendu"
+        "Oliver Twist",
+        "Oliver Tvist",
+        "Oli Twist",
+        "Oli Tvist",
+        "Olivera Twista",
+        "Olivera Tvista"
       ],
       "image": null
     },
     {
-      "id": "daily-36db94c6",
+      "id": "daily-eb6533dd",
       "type": "blitz",
-      "difficulty": 1,
+      "difficulty": 3,
       "topic": "Zemljopis",
-      "question": "Jezero Viktorija i Viktorijini slapovi se nalaze na kojem kontinentu?",
+      "question": "Uskršnji Otok pripada Čileu, a kome pripada Božićni otok?",
       "answers": [
-        "Afrika",
-        "Africi",
-        "Afriki",
-        "Africa",
-        "Africas",
-        "Afrikas"
+        "Australiji",
+        "Australija",
+        "Australias",
+        "Austrejlijas",
+        "Austrajliji",
+        "Austrejliji",
+        "Australii",
+        "Australia",
+        "Austrajlija"
       ],
       "image": null
     },
     {
-      "id": "daily-598b9fb6",
+      "id": "daily-23e7c2c3",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se u serijalu videoigara Assassin's Creed zove uređaj koji omogućuje korisniku proživljavanje genetskih sjećanja svojih predaka?",
+      "topic": "Moreplovci",
+      "question": "Koji je venecijanski putnik u 13. stoljeću stigao do Azije i ostavio opis putovanja koji će stoljećima hraniti europsku maštu o bogatstvima Dalekog istoka?",
       "answers": [
-        "Animus"
+        "Marko Polo",
+        "Marco Polo",
+        "Polo"
       ],
       "image": null
     },
     {
-      "id": "daily-434fdfc6",
+      "id": "daily-883dc2e5",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "U filmu 'Vuk s Wall Streeta', kako se zove tvrtka koju osniva Jordan Belfort?",
+      "answers": [
+        "Stratton Oakmont",
+        "Streton Okmont"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e6c84657",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 46. predsjednik SAD-a, prezimena Biden, potpisao samo inicijalima, dobili bi koja slova?",
+      "topic": "Povijest",
+      "question": "Koja je sumerska božica ljubavi, plodnosti i rata kasnije postala poznata pod akadskim imenom Ištar?",
       "answers": [
-        "JRBJ"
+        "Inana",
+        "Inanna",
+        "Inena",
+        "Inene"
       ],
       "image": null
     }

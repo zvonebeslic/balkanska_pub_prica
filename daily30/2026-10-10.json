@@ -1,452 +1,431 @@
 {
   "version": 2,
   "date": "2026-10-10",
-  "generatedAt": "2026-08-25T18:26:49.235Z",
+  "generatedAt": "2026-09-30T19:59:05.101Z",
   "questionCount": 30,
-  "sourceFileCount": 14,
-  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09",
   "questions": [
     {
-      "id": "daily-ba52d41f",
+      "id": "daily-3b54aba5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Da se rimski car Valens rodio danas, bio bi građanin koje države?",
+      "answers": [
+        "Hrvatske",
+        "Hrvatska",
+        "Croatia",
+        "Croatian",
+        "Hrvat",
+        "Croat",
+        "Hrv",
+        "Cro"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-434fdfc6",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 36. predsjednik SAD-a, prezimena Johnson, potpisao samo inicijalima, dobili bi koja slova?",
+      "question": "Kada bi se 46. predsjednik SAD-a, prezimena Biden, potpisao samo inicijalima, dobili bi koja slova?",
       "answers": [
-        "LBJ"
+        "JRBJ"
       ],
       "image": null
     },
     {
-      "id": "daily-9636508a",
+      "id": "daily-e403e160",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Znanost",
-      "question": "Koji je znanstvenik poznat po formuli E=mc²?",
+      "topic": "Nogomet",
+      "question": "U turskom 'Interkontinentalnom derbiju', koji nogometni klub dolazi sa azijske strane Istanbula?",
       "answers": [
-        "Albert Einstein",
-        "Albert Ajnštajn",
-        "Einstein",
-        "Ajnštajn"
+        "Fenerbahce",
+        "Fener",
+        "Fenerbahče",
+        "Fenerbače"
       ],
       "image": null
     },
     {
-      "id": "daily-af6e32bf",
+      "id": "daily-d4f4140e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove arkadna videoigra iz 1979. kojoj je Namcova Galaga izravni nastavak?",
+      "answers": [
+        "Galaxian",
+        "Galaksijan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-89bb9840",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je košarkaš poznat po broju 23 nakratko napustio NBA i okušao se u profesionalnom bejzbolu?",
+      "answers": [
+        "Michael Jordan",
+        "Majkl Džordan",
+        "Jordan",
+        "Džordan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3640f9be",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad Ekvadora?",
+      "answers": [
+        "Quito",
+        "Kvito",
+        "Kuito"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca8de667",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj mitskoj zemlji svoje beskrajno djetinjstvo provodi Petar Pan?",
+      "answers": [
+        "Nigdjezemska",
+        "Nigdjezemskoj",
+        "Neverlandu",
+        "Neverland",
+        "Neverlands",
+        "Neverlend",
+        "Neverlends",
+        "Neverlendu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bab76e94",
       "type": "blitz",
       "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Koji bend polaže autorska prava na pjesmu 'Mr. Brightside'?",
+      "topic": "FloraFauna",
+      "question": "Koja ptica je najpoznatiji simbol mudrosti i inteligencije, često prikazivan uz Atenu?",
       "answers": [
-        "The Killers",
-        "D Kilers"
+        "Sova"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f0f8bd07",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se zvala sestra Lahmua i jedna od prvih božica rođenih iz Apsua i Tijamat prema babilonskom epu o stvaranju svijeta 'Enuma Eliš'?",
+      "answers": [
+        "Lahamu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0c883eb9",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Nakon što je car Valerijan ubijen, koji je car proglasio edikt o toleranciji, zaustavio progone kršćana i dao crkvi legalan status, koji je trajao do 310.g.?",
+      "answers": [
+        "Galijen",
+        "Gallienus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dc452500",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji po redu starta vozač Formule 1 ako je osvojio pole position?",
+      "answers": [
+        "Prvi",
+        "First",
+        "Frst",
+        "1st",
+        "1",
+        "Jedan",
+        "One",
+        "Von",
+        "Ein",
+        "Ajn",
+        "Erste",
+        "Erst",
+        "I",
+        "1 st",
+        "Najbolji",
+        "Najbrži"
       ],
       "image": null,
-      "rarity": "silver"
+      "rarity": "legendary"
     },
     {
-      "id": "daily-e35e4dd3",
+      "id": "daily-059a43c7",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Koji je antički grčki filozof tradicionalno povezan s paradoksalnom izrekom 'Znam da ništa ne znam', kojom se naglašava svijest o granicama vlastitog znanja?",
+      "topic": "Gaming",
+      "question": "Koji član obitelji Simpson koristi skateboard kao oružje u arkadnoj videoigri The Simpsons?",
       "answers": [
-        "Sokrat",
-        "Socrates",
-        "Sokrates"
+        "Bart"
       ],
       "image": null
     },
     {
-      "id": "daily-31e2dcf3",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Zemljopis",
-      "question": "Iz imena kojeg glavnog grada, u isto vrijeme možemo izvući imena Ana, Anna i Ivor?",
-      "answers": [
-        "Antananarivo",
-        "Antananariva"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-137728a5",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "FloraFauna",
-      "question": "Vrsta kojeg hrasta se nalazi na kovanici od 5 lipa?",
-      "answers": [
-        "Lužnjak",
-        "Hrast lužnjak"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5319807e",
-      "type": "blitz",
-      "difficulty": 5,
-      "topic": "Književnost",
-      "question": "Čije fiktivno dizalo slučajno odlazi u svemir te stižu do svemirskog hotela 'Space Hotel U.S.A'?",
-      "answers": [
-        "Willyja Wonke",
-        "Willy Wonka",
-        "Wonka",
-        "Wonke",
-        "Wonkino",
-        "Wonkas",
-        "Vonkas",
-        "Vonka",
-        "Vonke",
-        "Vonkino",
-        "Vilija Vonke",
-        "Vili Vonka"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-ff3fad45",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Film",
-      "question": "Tko je režirao horor film 'Psycho'?",
-      "answers": [
-        "Alfred Hitchcock",
-        "Alfred Hičkok",
-        "Hitchcock",
-        "Hičkok"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-2cfcfa6b",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koja je Unitedova legenda osvojila Ballon d'Or 1966.g.?",
-      "answers": [
-        "Sir Bobby Charlton",
-        "Bobby Charlton",
-        "Bobi Čarlton",
-        "Charlton",
-        "Čarlton",
-        "Čarton"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-1920bed9",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "FloraFauna",
-      "question": "Koji plin biljke upijaju tijekom fotosinteze?",
-      "answers": [
-        "Ugljikov Dioksid",
-        "CO2",
-        "Ugljični dioksid"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-5dfc674a",
+      "id": "daily-b9f5312f",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Znanost",
-      "question": "Kako se zove matematički pojam za neprekidnu liniju koja spaja beskonačno mnogo točaka bez samopresijecanja i često se koristi za prikaz funkcije?",
+      "question": "Kojeg liječnika i alkemičara smatramo ocem toksikologije zbog izreke 'Doza čini otrov'?",
       "answers": [
-        "Krivulja",
-        "Funkcijska krivulja"
+        "Paracelsusa",
+        "Paracelsus",
+        "Paracelzusa",
+        "Paracelzus"
       ],
       "image": null
     },
     {
-      "id": "daily-00acf362",
+      "id": "daily-5a7b8598",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Nogomet",
-      "question": "Koji nizozemac je zabio 'lob glavom' protiv Španjolske na SP-u u Brazilu, tijekom utakmice u grupnoj fazi natjecanja?",
+      "topic": "Znanost",
+      "question": "Koja je univerzalna oznaka za 'brzinu'?",
       "answers": [
-        "Robin van Persie",
-        "Robin van Persi",
-        "Van Persie",
-        "Van Persi"
+        "V",
+        "Ve"
       ],
       "image": null
     },
     {
-      "id": "daily-d5637179",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Kako se naziva visoki uspravni stup na brodu koji nosi jedra?",
-      "answers": [
-        "Jarbol"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-c4bd6f02",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Zemljopis",
-      "question": "Na kojem se otoku nalaze dva najveća filipinska grada, Manila i Quezon?",
-      "answers": [
-        "Luzon",
-        "Luzonu"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-20e6e6fa",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "AntickiRim",
-      "question": "Koji je germanski plaćenik ubijanjem Romula Augustula zauvijek ugasio zapadno rimsko carstvo?",
-      "answers": [
-        "Odoakar"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-a53d99b5",
-      "type": "blitz",
-      "difficulty": 1,
-      "topic": "svastara",
-      "question": "Koje pokrivalo za glavu ne nastaje kao klasična kapa ili šešir, nego omatanjem dugačkog komada tkanine oko glave, a posebno je poznato kao važan dio tradicije Sikha?",
-      "answers": [
-        "Turban"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-f8fb8d1e",
+      "id": "daily-788a2235",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Gaming",
-      "question": "Koji je pisac fantasy serijala 'A Song of Ice and Fire' sudjelovao u stvaranju pozadinske mitologije svijeta videoigre Elden Ring?",
+      "question": "Kako se zove prva i jedna od najpoznatijih mapa videoigre PUBG, izmišljeni otok na kojem se odvijaju battle royale mečevi?",
       "answers": [
-        "George R. R. Martin",
-        "George Martin",
-        "Džordž R. R. Martin",
-        "Džordž Martin",
-        "Martin"
+        "Erangel",
+        "Erandžel"
       ],
       "image": null
     },
     {
-      "id": "daily-f54143bc",
+      "id": "daily-d079b529",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Mnogi misle da je Moskva najdalja točka do koje su stigla Napoleonova osobna osvajanja. Međutim, koja se bliskoistočna prijestolnica nalazi preko 700 kilometara dalje od Pariza nego Moskva, a Napoleon ju je osvojio 1798.g.?",
+      "answers": [
+        "Kairo",
+        "Cairo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a6fa0f19",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zvala tajanstvena krajnja sjeverna zemlja koju je grčki istraživač Piteja iz Masalije opisao oko 325. godine prije Krista?",
+      "answers": [
+        "Thule",
+        "Tula",
+        "Ultima Thule",
+        "Tule",
+        "Thula"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ccc1964b",
       "type": "blitz",
       "difficulty": 5,
       "topic": "Književnost",
-      "question": "U Gulliverovim putovanjima, glavni protagonist otkriva moćnu državu Lilliput te njen, koji glavni grad?",
+      "question": "Kako se zove konj Don Quijotea?",
       "answers": [
-        "Mildendo"
+        "Rocinante",
+        "Rohinant",
+        "Rohinante",
+        "Rocinant",
+        "Rossinant",
+        "Rissinante",
+        "Rosinante"
       ],
       "image": null
     },
     {
-      "id": "daily-5d27ff6f",
+      "id": "daily-67513f0e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Agripina mlađa je bila žena rimskog cara Klaudija i majka cara Nerona, a uspjela je isposlovati da koji današnji grad, a njen rodni, dobije status kolonije, a po 'koloniji' i danas nosi ime?",
+      "answers": [
+        "Köln",
+        "Koln",
+        "Cologne",
+        "Kolonje",
+        "Keln"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8a9a9071",
       "type": "blitz",
       "difficulty": 3,
       "topic": "AmerickiPredsjednici",
-      "question": "Kada bi se 1. predsjednik SAD-a, prezimena Washington, potpisao samo inicijalima, dobili bi koja slova?",
+      "question": "Koji američki predsjednik je na slici 'Lansdowne portrait' iz 1796.g. slikara Gilberta Stuarta?",
       "answers": [
-        "GW"
+        "George Washington",
+        "Washington",
+        "Džordž Vašington",
+        "Vašington"
       ],
       "image": null
     },
     {
-      "id": "daily-a94c9719",
+      "id": "daily-4f863e1f",
       "type": "blitz",
-      "difficulty": 4,
-      "topic": "Ostalo",
-      "question": "Kako se zove egipatska božica plodnosti, majčinstva i magije, supruga Ozirisa?",
+      "difficulty": 2,
+      "topic": "Znanost",
+      "question": "Kako se zove poznata teorija u biologiji koja objašnjava razvoj vrsta putem prirodne selekcije?",
       "answers": [
-        "Izida",
-        "Isis"
+        "Teorija evolucije",
+        "Evolucija",
+        "Darwinova teorija",
+        "Evolution",
+        "Evolušn"
       ],
       "image": null
     },
     {
-      "id": "daily-b7df146c",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Glazba",
-      "question": "Koji je reper objavio album 'The College Dropout'?",
-      "answers": [
-        "Kanye West",
-        "Kanjei Vest",
-        "West",
-        "Vest",
-        "Kanye Omari West"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-80d88e72",
+      "id": "daily-57431a33",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "Moreplovci",
-      "question": "Koji je portugalski moreplovac 1498.g. stigao u Calicut i tako dovršio ono što je Dias započeo, otvorivši Europljanima pomorski put do Indije oko Afrike?",
+      "topic": "Nogomet",
+      "question": "Koji se nogometni trener nalazi za kormilom Atletico Madrida od 2011.g.?",
       "answers": [
-        "Vasco da Gama",
-        "Vasko da Gama",
-        "Da Gama",
-        "Gama",
-        "De Gama"
+        "Diego Simeone",
+        "Dijego Simeone",
+        "Simeone"
       ],
       "image": null
     },
     {
-      "id": "daily-345c2613",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Povijest",
-      "question": "Koju je oznaku nosio prvi britanski model tenka koji se 1916. pojavio na Sommi, prepoznatljiv po neobičnom romboidnom obliku i gusjenicama koje su se protezale oko gotovo cijelog vozila?",
-      "answers": [
-        "Mark I",
-        "Mark 1.",
-        "Mark one",
-        "Mark jedan",
-        "Mark prvi",
-        "Mark",
-        "Marc I",
-        "Marc 1.",
-        "Marc one",
-        "Marc jedan",
-        "Marc prvi",
-        "Marc"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-977d9939",
+      "id": "daily-48a2d3b1",
       "type": "blitz",
       "difficulty": 1,
       "topic": "svastara",
-      "question": "Kako se naziva tip cipele s remenčićem preko rista, koji je ime dobio prema liku iz američkog stripa s početka 20. stoljeća?",
+      "question": "Koliki je zbroj brojeva na dvije suprotne strane standardne igraće kocke?",
       "answers": [
-        "Mary Jane",
-        "Meri Džejn"
+        "7",
+        "Sedam",
+        "Seven",
+        "VII"
       ],
       "image": null
     },
     {
-      "id": "daily-c1360d1e",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "Film",
-      "question": "Koja je glumica osvojila Oscara za film 'Jadnici' (Les Misérables)?",
-      "answers": [
-        "Anne Hathaway",
-        "Ana Hetvej",
-        "Hathaway",
-        "Hetvej"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-0397be20",
-      "type": "blitz",
-      "difficulty": 4,
-      "topic": "AntickiRim",
-      "question": "Koji je rimski vojskovođa uz pomoć Vizigota, porazio Hune u bitci na Katalunskim poljima 451.g.?",
-      "answers": [
-        "Flavije Aecije",
-        "Aecije",
-        "Flavius Aetius",
-        "Aetius",
-        "Flavijus Aecijus",
-        "Aecijus"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9dd75b9a",
-      "type": "blitz",
-      "difficulty": 2,
-      "topic": "Ostalo",
-      "question": "Kako se naziva blagdan u islamu kojim se obilježava žrtva Abrahamova?",
-      "answers": [
-        "Kurban-bajram",
-        "Eid al-Adha",
-        "Kurban Bajram"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-73e65d21",
+      "id": "daily-9dae3d8d",
       "type": "blitz",
       "difficulty": 3,
-      "topic": "MisliIzrekeCitati",
-      "question": "Astronaut Neil Armstrong je nakon što je stupio nogom na Mjesec 1969.g. izgovorio jednu od najpoznatijih rečenica 20. stoljeća u kojoj spominje mali korak za čovjeka ali i veliki za koga?",
+      "topic": "Moreplovci",
+      "question": "Koji je brod postao poprištem jedne od najpoznatijih pobuna u pomorskoj povijesti kada se 1789. dio posade okrenuo protiv kapetana Williama Bligha?",
       "answers": [
-        "Čovječanstvo",
-        "Humanity",
-        "Hjumeniti",
-        "Humaniti",
-        "Ljudstvo",
-        "Ljude",
-        "People",
-        "Pipl"
+        "Bounty",
+        "Bonti",
+        "Bunti"
       ],
       "image": null
     },
     {
-      "id": "daily-69c652ee",
+      "id": "daily-b9317a04",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koji proces označava prenošenje cvjetnog ili peludnog praha s prašnika na stigmu tučka?",
+      "answers": [
+        "Oprašivanje",
+        "Polinacija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ebc3f23d",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Dvodimenzionalni kod koji je japanska tvrtka Denso Wave razvila 1994.g. za praćenje dijelova u automobilskoj industriji poznat je pod kojom kraticom?",
+      "answers": [
+        "QR",
+        "QR kod",
+        "QR code",
+        "Kju ar",
+        "Q R",
+        "Kju ar kod"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bddda8a2",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Zemljopis",
+      "question": "Mala karipska država Antigva i Barbuda se sastoji od 3 otoka. Prva dva se nalaze u imenu države, a koji je treći, najmanji i nenaseljen otok, vulkanskog porijekla?",
+      "answers": [
+        "Redonda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1044633f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Samo se jedna država može pohvaliti da su čak dva puta njihovi nogometaši zauzeli prve tri pozicije na svečanoj dodjeli Ballon d'Or nagrade. Bilo je to 1972.g. i 1981.g. a država je koja?",
+      "answers": [
+        "Njemačka",
+        "Švabija",
+        "Deutschland",
+        "Dojčland",
+        "Germany",
+        "Džermani",
+        "Njemci",
+        "Švabe"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a7ff9ab7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je košarkaš rekordnih šest puta proglašen najkorisnijim igračem regularne sezone NBA lige?",
+      "answers": [
+        "Kareem Abdul-Jabbar",
+        "Karim abdul džabar",
+        "Jabbar",
+        "Džabar",
+        "Kareem",
+        "Karim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4035f6e6",
       "type": "blitz",
       "difficulty": 3,
       "topic": "Povijest",
-      "question": "Koji je veliki perzijski kralj iz dinastije Ahemenida, ratovao protiv Grka, spalio Atenu ali naposlijetku izgubio rat porazima kod Salamine i Plateje?",
+      "question": "Koji je kanadski grad 1759.g. pao u britanske ruke nakon što su se vojnici generala Jamesa Wolfea tijekom noći popeli uz strme obale rijeke Svetog Lovrijenca i potom porazili Francuze na Abrahamovim ravnicama?",
       "answers": [
-        "Xerkso",
-        "Kserkso",
-        "Xerxo",
-        "Kserxo",
-        "Xerkso prvi",
-        "Kserkso prvi",
-        "Xerxo prvi",
-        "Kserxo prvi",
-        "Xerkso Veliki",
-        "Kserkso Veliki",
-        "Xerxo Veliki",
-        "Kserxo Veliki",
-        "Xerkso I.",
-        "Kserkso I.",
-        "Xerxo I.",
-        "Kserxo I.",
-        "Xerkso 1.",
-        "Kserkso 1.",
-        "Xerxo 1.",
-        "Kserxo 1.",
-        "Xerkso 1. Veliki",
-        "Kserkso 1. Veliki",
-        "Xerxo 1. Veliki",
-        "Kserxo 1. Veliki",
-        "Xerkso Prvi Veliki",
-        "Kserkso Prvi Veliki",
-        "Xerxo Prvi Veliki",
-        "Kserxo Prvi Veliki",
-        "Xerkso First",
-        "Kserkso First",
-        "Xerxo First",
-        "Xerkso 1st",
-        "Kserkso 1st",
-        "Kserxo First"
-      ],
-      "image": null
-    },
-    {
-      "id": "daily-9c9e90f0",
-      "type": "blitz",
-      "difficulty": 3,
-      "topic": "Gaming",
-      "question": "Kako se zove nastavak Need for Speeda iz 2005.g. u kojem igrač napreduje kroz popis 15 najtraženijih uličnih vozača poznat kao Blacklist?",
-      "answers": [
-        "Most Wanted",
-        "Need for Speed Most Wanted",
-        "NFS Most Wanted",
-        "Most Vonted",
-        "Najtraženiji"
+        "Quebec",
+        "Kvebek"
       ],
       "image": null
     }
