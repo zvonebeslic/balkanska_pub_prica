@@ -315,7 +315,7 @@ function mpBotDelay(p,totalSeconds){const mid=(p.base[0]+p.base[1])/2,perQ=mid/3
 const supabaseClient=window.supabase&&typeof window.supabase.createClient==='function'?window.supabase.createClient(SB,KEY):null;
 
 const MP_STATS_BASE='kviztogo_multiplayer_stats_v1',MP_GUEST_IDENTITY='kviztogo_guest_identity_v1',MP_GUEST_SECRET='kviztogo_guest_secret_v1',MP_GUEST_ALIAS='kviztogo_multiplayer_guest_alias_v1';
-let mpIdentityName='',mpIdentityUserId=null,mpIdentityIsGuest=true,mpNameRequired=false,pendingInviteParam=null;
+let mpIdentityName='',mpIdentityUserId=null,mpIdentityIsGuest=true,mpNameRequired=false,pendingInviteParam=null,pendingTurnInviteParam=null;
 function mpTimestamp(d){const p=(v,n=2)=>String(v).padStart(n,'0');return p(d.getDate())+p(d.getMonth()+1)+d.getFullYear()+p(d.getHours())+p(d.getMinutes())+p(d.getSeconds())+p(d.getMilliseconds(),3)}
 function ensureMpGuestIdentity(){
   try{
@@ -708,7 +708,7 @@ async function deferInviteForLater(){
   finally{if(btn)btn.disabled=false}
 }
 
-let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botSeriesMe=0,botSeriesOpp=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,friendInviteShareFlow=false,botPreparing=false,botSessionId=null,historyRenderSignature='',lastEndProcessedMatchKey=null;const questionVotes=new Map();
+let state=null,pollTimer=null,tickTimer=null,botMode=false,bot=null,botQuestions=[],botPos=0,botMe=0,botScore=0,botSeriesMe=0,botSeriesOpp=0,botHistory=[],botRoundTimer=null,botAnswerTimer=null,botStart=0,botQuestionSeconds=6,botMyAnswerSeconds=null,botOppAnswerSeconds=null,botMyChoice=null,botChoice=null,botMeAnswered=false,botOppAnswered=false,friendCode=null,friendInviteShareFlow=false,botPreparing=false,botSessionId=null,turnState=null,turnQuestionStartedAt=null,historyRenderSignature='',lastEndProcessedMatchKey=null;const questionVotes=new Map();
 let mpQuizPlayId=null,mpQuizSessionId=null,mpQuizMatchKey=null,mpQuizUserId=null,mpQuizActiveMs=0,mpQuizLastTickAt=null,mpQuizPageVisible=document.visibilityState==='visible',mpQuizUpdateTimer=null,mpQuizStartPromise=null,mpQuizCompleted=false,mpQuizSavedAnswers=new Set();
 const MP_INVITE_MATCH_KEY='kviztogo_mp_invite_match_v1';
 
@@ -926,11 +926,12 @@ async function api(action,payload={}){let r=await fetch(SB+'/rest/v1/rpc/multipl
 function stopPoll(){clearInterval(pollTimer);pollTimer=null}
 function startPoll(){stopPoll();pollTimer=setInterval(()=>refresh('poll').catch(()=>{}),500)}
 function showLobby(){ $('game').classList.add('hidden');$('lobby').classList.remove('hidden') }
-function showGame(){ $('lobby').classList.add('hidden');$('game').classList.remove('hidden');$('meGame').textContent=state?.me_name||myName();$('oppGame').textContent=state?.opponent_name||bot?.name||t('opponentFound') }
-function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInvitePrompt(true);state=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;botSeriesMe=0;botSeriesOpp=0;historyRenderSignature='';renderSeriesScore(0,0,false);closeMpModePicker();if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
+function showGame(){ $('lobby').classList.add('hidden');$('game').classList.remove('hidden');document.querySelector('#game .history')?.classList.remove('hidden');$('meGame').textContent=state?.me_name||myName();$('oppGame').textContent=state?.opponent_name||bot?.name||t('opponentFound') }
+function resetLobby(){stopPoll();clearInterval(tickTimer);clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInvitePrompt(true);state=null;turnState=null;turnQuestionStartedAt=null;botMode=false;botPreparing=false;friendCode=null;botSessionId=null;botSeriesMe=0;botSeriesOpp=0;historyRenderSignature='';document.querySelector('#game .history')?.classList.remove('hidden');renderSeriesScore(0,0,false);closeMpModePicker();if($('mode-picker-btn'))$('mode-picker-btn').disabled=false;showLobby();$('meMeta').textContent=t('meReady');$('oppName').textContent=t('opponentUnknown');$('oppMeta').textContent=t('opponentNotFound');$('search').innerHTML=esc(t('questionsReady'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('findOpponent');$('find').disabled=false;$('find').onclick=findOpponent;$('friend').textContent=t('playFriends');$('friend').disabled=false;$('friend').onclick=createFriendInvite}
 
 async function findOpponent(){
   if(!mpIdentityName){openMpNameModal(true);return}
+  if(selectedMpGameMode().kind==='turn'){await findTurnOpponent();return}
   if($('find').disabled)return;
   $('find').disabled=true;$('friend').disabled=true;if($('mode-picker-btn'))$('mode-picker-btn').disabled=true;$('find').textContent=t('searchButton');$('oppName').textContent=t('searching');$('oppMeta').textContent=t('checkingQueue');$('meMeta').textContent=t('queue');$('search').textContent=t('searching');
   try{closeMpModePicker();state=await api('join',{name:myName(),recent:recent(),...mpGamePayload()});handle(state);startPoll()}
@@ -939,6 +940,7 @@ async function findOpponent(){
 
 async function createFriendInvite(){
   if(!mpIdentityName){openMpNameModal(true);return}
+  if(selectedMpGameMode().kind==='turn'){await createTurnInvite();return}
   if($('friend').disabled)return;
   $('friend').disabled=true;$('find').disabled=true;if($('mode-picker-btn'))$('mode-picker-btn').disabled=true;$('friend').textContent=t('preparingInvite');$('oppName').textContent=t('waiting');$('oppMeta').textContent=t('friendNotJoined');$('meMeta').textContent=t('preparingInviteMeta');$('search').textContent=t('creatingPrivate');
   try{
