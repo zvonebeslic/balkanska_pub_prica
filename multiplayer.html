@@ -555,6 +555,13 @@ async function registerMultiplayerQuestionShare(){
 }
 async function ensureMultiplayerQuizTracking(matchKey,isBot=false){
   if(!supabaseClient||!matchKey)return null;
+  if(isBot){
+    if(mpQuizPlayId&&!mpQuizCompleted)await finishMultiplayerQuizTracking(false);
+    clearInterval(mpQuizUpdateTimer);mpQuizUpdateTimer=null;
+    mpQuizPlayId=null;mpQuizSessionId=null;mpQuizMatchKey=null;mpQuizUserId=null;
+    mpQuizActiveMs=0;mpQuizLastTickAt=null;mpQuizCompleted=false;mpQuizSavedAnswers=new Set();
+    return null;
+  }
   const sessionId=makeMpQuizSessionId(matchKey);
   if(mpQuizSessionId===sessionId&&mpQuizPlayId)return mpQuizPlayId;
   if(mpQuizStartPromise&&mpQuizSessionId===sessionId)return mpQuizStartPromise;
