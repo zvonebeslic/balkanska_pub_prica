@@ -478,6 +478,8 @@ async function recordMultiplayerResult(matchKey,outcome,isBot=false){
 const MP_GAME_MODE_KEY='kviztogo_mp_game_mode_v1';
 const MP_THEME_RECENT_KEY='kviztogo_mp_theme_recent_v1';
 const MP_ACTIVE_BOTS_KEY='kviztogo_mp_active_bots_v1';
+const MP_BOT_BAG_KEY='kviztogo_mp_bot_bag_v1';
+const MP_BOT_LAST_SKILL_KEY='kviztogo_mp_bot_last_skill_v1';
 let activeServerItems=[],activeRefreshTimer=null,invitePromptTimer=null,invitePromptCode=null,invitePromptDismissedCode=null;
 const MP_GAME_MODES=[
   {id:'q10',kind:'questions',questionLimit:10,winTarget:null,topic:null,hr:'10 pitanja',en:'10 questions'},
@@ -599,6 +601,39 @@ async function resumeServerActive(id){
   }catch(e){console.warn('Aktivni kviz nije nastavljen:',e)}
 }
 function botFromProfile(profile){return{id:profile.id,name:profile.alias,leaderName:profile.leaderName,skill:profile.skill,cons:profile.cons,bias:profile.bias,base:profile.base,accuracy:mpBotAccuracy(profile),answerDelay:()=>mpBotDelay(profile)}}
+function loadBotBag(){
+  try{
+    const bag=JSON.parse(localStorage.getItem(MP_BOT_BAG_KEY)||'[]');
+    return Array.isArray(bag)?bag.filter(id=>MP_BOT_PROFILES.some(p=>p.id===id)):[]
+  }catch{return[]}
+}
+function saveBotBag(bag){try{localStorage.setItem(MP_BOT_BAG_KEY,JSON.stringify(bag||[]))}catch{}}
+function buildBotBag(){
+  let pool=shuffle(MP_BOT_PROFILES.map(p=>p.id));
+  let lastSkill='';try{lastSkill=localStorage.getItem(MP_BOT_LAST_SKILL_KEY)||''}catch{}
+  for(let i=0;i<pool.length;i++){
+    const prevSkill=i===0?lastSkill:(MP_BOT_PROFILES.find(p=>p.id===pool[i-1])?.skill||'');
+    const currentSkill=MP_BOT_PROFILES.find(p=>p.id===pool[i])?.skill||'';
+    if(prevSkill&&currentSkill===prevSkill){
+      const j=pool.findIndex((id,idx)=>idx>i&&(MP_BOT_PROFILES.find(p=>p.id===id)?.skill||'')!==prevSkill);
+      if(j>i)[pool[i],pool[j]]=[pool[j],pool[i]]
+    }
+  }
+  saveBotBag(pool);
+  return pool
+}
+function nextBotProfile(){
+  let bag=loadBotBag();
+  if(!bag.length)bag=buildBotBag();
+  const activeIds=new Set(loadActiveBots().map(x=>x.botId).filter(Boolean));
+  let pickIndex=bag.findIndex(id=>!activeIds.has(id));
+  if(pickIndex<0)pickIndex=0;
+  const [id]=bag.splice(pickIndex,1);
+  saveBotBag(bag);
+  const profile=MP_BOT_PROFILES.find(p=>p.id===id)||MP_BOT_PROFILES[Math.floor(Math.random()*MP_BOT_PROFILES.length)];
+  try{localStorage.setItem(MP_BOT_LAST_SKILL_KEY,profile.skill||'')}catch{}
+  return profile
+}
 async function resumeBotActive(id){
   const item=loadActiveBots().find(x=>x.id===id);if(!item)return;
   if(state?.match_id||['waiting','invite_waiting'].includes(state?.status)||botMode){showMpToast(t('activeBusy'));return}
@@ -1070,7 +1105,7 @@ async function leave(){if(mpQuizPlayId&&!mpQuizCompleted)await finishMultiplayer
 /* AI fallback tek nakon serverovih 5 sekundi traženja. Bot je prikazan kao spreman, a igrač potvrđuje Kreni s kvizom. */
 async function prepareBot(){
   if(botPreparing||botMode)return;botPreparing=true;botMode=true;botSeriesMe=0;botSeriesOpp=0;renderSeriesScore(0,0,false);
-  const profile=MP_BOT_PROFILES[Math.floor(Math.random()*MP_BOT_PROFILES.length)];bot=botFromProfile(profile);
+  const profile=nextBotProfile();bot=botFromProfile(profile);
   $('oppName').textContent=bot.name;$('oppMeta').textContent=t('ready');$('meMeta').textContent=t('waitingYourStart');$('search').innerHTML=esc(t('opponentFound'))+' <span class="ready-mark">✓</span>';$('find').textContent=t('preparingQuestions');$('find').disabled=true;$('friend').disabled=true;
   botQuestions=await loadBotQuestions();botPreparing=false;
   if(botQuestions.length<Math.min(selectedMpGameMode().questionLimit,10)){$('search').textContent=t('questionsLoadError');return}
