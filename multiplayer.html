@@ -1369,7 +1369,7 @@ function renderBot(){
   botQuestionSeconds=questionSeconds(q);const durationMs=botQuestionSeconds*1000;
   $('meScore').textContent=botMe;$('oppScore').textContent=botScore;$('round').textContent=mpRoundLabel(botPos,selectedMpGameMode().questionLimit,selectedMpGameMode().winTarget);$('question').textContent=q.question;$('answers').innerHTML='';
   q.answers.forEach(a=>{let b=document.createElement('button');b.className='answer';b.innerHTML='<b>'+a.key+'.</b> '+esc(a.text);b.onclick=()=>botUserAnswer(a.key,b);$('answers').appendChild(b)});
-  $('status').textContent=t('opponentThinking',{opponent:bot.name});botStart=performance.now();clearInterval(tickTimer);
+  $('status').textContent='';botStart=performance.now();clearInterval(tickTimer);
   const draw=()=>{$('timer').textContent=String(Math.max(0,Math.ceil((durationMs-(performance.now()-botStart))/1000)))};draw();tickTimer=setInterval(draw,200);
   botAnswerTimer=setTimeout(()=>botAnswer(q),mpBotDelay(bot,botQuestionSeconds));botRoundTimer=setTimeout(()=>botClose(q),durationMs)
 }
