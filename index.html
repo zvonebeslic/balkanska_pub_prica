@@ -3208,7 +3208,7 @@ function normalizeExternalLink(value) {
 }
 
 function buildQuizShareUrl(quizId) {
-  const url = new URL(window.location.href);
+  const url = new URL("https://kviztogo.com/");
   url.hash = "";
   url.searchParams.delete("_fresh");
   url.searchParams.set("quiz", String(quizId));
