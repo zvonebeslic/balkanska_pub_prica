@@ -285,7 +285,7 @@ function profileHash(v){let r=2166136261;for(let i=0;i<v.length;i++){r^=v.charCo
 function profileRng(seed){let v=profileHash(seed)||1;return()=>{v+=0x6d2b79f5;let r=v;r=Math.imul(r^(r>>>15),r|1);r^=r+Math.imul(r^(r>>>7),r|61);return((r^(r>>>14))>>>0)/4294967296}}
 function buildMpBotProfiles(){let gi=0,u=0;return LEADER_BOT_NAMES.map((name,i)=>{while(gi<BOT_GROUPS.length-1&&u>=BOT_GROUPS[gi][1]){gi++;u=0}const g=BOT_GROUPS[gi];u++;const r=profileRng('demo-profile:'+i+':'+name.replace(/\d+$/,''));return{id:'demo-'+String(i+1).padStart(3,'0'),leaderName:name,alias:MP_BOT_ALIASES[i],skill:g[0],min:g[2],max:g[3],base:g[4],daypart:Math.floor(r()*10),cons:.35+r()*.6,bias:r()}})}
 const MP_BOT_PROFILES=buildMpBotProfiles();
-const MP_SKILL_ACCURACY={excellent:[.84,.94],veryGood:[.72,.86],average:[.53,.70],sufficient:[.40,.57],bad:[.25,.41],veryBad:[.13,.29]};
+const MP_SKILL_ACCURACY={excellent:[.59,.66],veryGood:[.54,.64],average:[.48,.63],sufficient:[.40,.57],bad:[.25,.41],veryBad:[.13,.29]};
 function mpBotAccuracy(p){const[a,b]=MP_SKILL_ACCURACY[p.skill]||[.45,.65],x=Math.max(0,Math.min(1,.58*p.cons+.42*p.bias));return a+(b-a)*x}
 function questionSeconds(q){const len=Array.from(String(q?.question||'')).length;return 6+Math.max(0,Math.ceil((len-70)/20))}
 function mpBotDelay(p,totalSeconds){const mid=(p.base[0]+p.base[1])/2,perQ=mid/30,speed=Math.max(0,Math.min(1,(perQ-8)/12)),baseFraction=(6100+speed*3000)/10000,spreadFraction=(260+(1-p.cons)*1050)/10000,ms=totalSeconds*1000,raw=ms*(baseFraction+(Math.random()-.5)*2*spreadFraction);return Math.max(Math.round(ms*.42),Math.min(Math.round(ms*.96),Math.round(raw)))}
