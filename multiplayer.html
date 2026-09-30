@@ -835,8 +835,24 @@ function readPendingBotForfeit(){
     return x&&x.matchKey&&Number(x.deadline)>0?x:null
   }catch{return null}
 }
+function finalizeBotQuestionForDisconnect(){
+  const q=botQuestions[botPos];
+  if(!q||!botStart)return;
+  clearTimeout(botRoundTimer);clearTimeout(botAnswerTimer);clearInterval(tickTimer);
+  const existing=botHistory[botPos];
+  if(existing?.interrupted)return;
+  if((existing?.me||botMyChoice)===q.correctKey)botMe=Math.max(0,botMe-1);
+  const entry=existing&&String(existing?.q?.id??'')===String(q.id??'')
+    ?{...existing,me:null,answerSeconds:null,interrupted:true}
+    :{q,me:null,opp:botChoice,answerSeconds:null,opponentAnswerSeconds:botOppAnswerSeconds,interrupted:true};
+  if(existing&&String(existing?.q?.id??'')===String(q.id??''))botHistory[botPos]=entry;
+  else botHistory.push(entry);
+  remember([q.id]);rememberThemeQuestion(q.topic,q.id);
+  botPos=Math.max(botPos+1,botHistory.length);
+}
 function savePendingBotForfeit(){
   if(!botMode||!botSessionId||!bot?.id)return;
+  finalizeBotQuestionForDisconnect();
   const counts=getMultiplayerQuizCounts();
   const pending={
     matchKey:botSessionId,
@@ -1560,7 +1576,7 @@ async function loadBotQuestions(){
 function hash(s){let h=2166136261;for(let ch of s.toLowerCase()){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return(h>>>0).toString(36)}
 function shuffle(a){a=a.slice();for(let i=a.length-1;i;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function beginBotMatch(){
-  botSessionId='multiplayer-bot:'+uuid();void ensureMultiplayerQuizTracking(botSessionId,true);historyRenderSignature='';renderSeriesScore(botSeriesMe,botSeriesOpp,(botSeriesMe+botSeriesOpp)>0);botPos=botMe=botScore=0;botHistory=[];$('history').innerHTML='';$('end').classList.add('hidden');showGame();$('meGame').textContent=myName();$('oppGame').textContent=bot.name;$('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('opponentReady');let end=Date.now()+5000;
+  botSessionId='multiplayer-bot:'+uuid();void ensureMultiplayerQuizTracking(botSessionId,true);historyRenderSignature='';renderSeriesScore(botSeriesMe,botSeriesOpp,(botSeriesMe+botSeriesOpp)>0);botPos=botMe=botScore=0;botHistory=[];botStart=0;$('history').innerHTML='';$('end').classList.add('hidden');showGame();$('meGame').textContent=myName();$('oppGame').textContent=bot.name;$('topic').textContent=t('multiplayer');$('answers').innerHTML='';$('status').textContent=t('opponentReady');let end=Date.now()+5000;
   clearInterval(tickTimer);const draw=()=>{let sec=Math.max(0,Math.ceil((end-Date.now())/1000));$('timer').textContent=String(sec);$('question').innerHTML='<span class="countdown">'+esc(t('questionIn',{sec}))+'</span>';if(sec<=0){clearInterval(tickTimer);renderBot()}};
   draw();tickTimer=setInterval(draw,200)
 }
