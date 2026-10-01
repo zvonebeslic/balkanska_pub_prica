@@ -1,0 +1,432 @@
+{
+  "version": 2,
+  "date": "2026-11-15",
+  "generatedAt": "2026-10-01T01:13:10.229Z",
+  "questionCount": 30,
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-20e0a196",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Tko je pjevač grupe U2?",
+      "answers": [
+        "Bono Vox",
+        "Bono",
+        "Vox",
+        "Voks",
+        "Paul David Hewson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e97b0545",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koje ime je nosio najveći brončani novac kovan za vrijeme rimskog caratva?",
+      "answers": [
+        "Sestercij",
+        "Sestertius",
+        "Sesterac"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4e1b4f62",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je slavni engleski pisac, uz pomoć filantropkinje Angele Burdett-Coutts, osnovao Urania Cottage, dom namijenjen rehabilitaciji i novom početku mladih žena u viktorijanskom Londonu?",
+      "answers": [
+        "Charles Dickens",
+        "Čarls Dikens",
+        "Dickens",
+        "Dikens"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-0cd62ffa",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "FloraFauna",
+      "question": "Kako zovemo ekološki odnos između dva ili više različitih organizama u kojem jedna strana ima korist dok je druga neutralna?",
+      "answers": [
+        "Komenzalizam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5580f73d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Hram u čast kojem rimskom bogu podiže posljednji rimski kralj Tarkvinije 2. Oholi?",
+      "answers": [
+        "Jupiteru",
+        "Jupiter"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-8fdb284c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja znanost proučava primate?",
+      "answers": [
+        "Primatologija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-262d11fe",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Koji je službeni jezik u Brazilu?",
+      "answers": [
+        "Portugalski",
+        "Portugalski jezik",
+        "Portuguese",
+        "Portugiz"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7f1a6aab",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koja se boja, uz crvenu, tradicionalno povezuje s oblogama reketa za stolni tenis?",
+      "answers": [
+        "Crna",
+        "Black",
+        "Blek",
+        "Dark",
+        "Blak",
+        "Crne"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-039dc168",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Oresundski Most povezuje Kopenhagen u Danskoj sa kojim gradom u Švedskoj?",
+      "answers": [
+        "Malmo",
+        "Malme"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-837e7da7",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Koja je najveća planeta u Sunčevu sustavu?",
+      "answers": [
+        "Jupiter"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9d52e39e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove crvenokosa protagonistica videoigara Horizon Zero Dawn i Horizon Forbidden West?",
+      "answers": [
+        "Aloy",
+        "Aloj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fcf35d2e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva trokutasto jedro koje je brodovima omogućavalo učinkovitije jedrenje pod kutom prema vjetru i bilo posebno važno za manevarske sposobnosti karavela?",
+      "answers": [
+        "Latinsko jedro",
+        "Lateensko jedro",
+        "Lateen sail",
+        "Latinsko",
+        "Lateensko",
+        "Lateen",
+        "Latin",
+        "Laten",
+        "Latins",
+        "Lateens"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3be3e24b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Na prvoj međunarodnoj nogometnoj utakmici koja se odigrala 1872.g., sastale su se reprezentacije Engleske i koje još?",
+      "answers": [
+        "Škotske",
+        "Škotska",
+        "Scotland",
+        "Scotlands",
+        "Skotlend",
+        "Skotlends"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4acdac7d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Na čemu se, prema poslovici, najbolje poznaju junaci?",
+      "answers": [
+        "Na muci",
+        "Na muki",
+        "Muci",
+        "Muki",
+        "Muka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ccc8efa5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koja je država napadnuta 1. rujna(septembra) 1939.g. nakon što je Hitler mjesecima zahtijevao teritorijalne ustupke i povratak grada Danziga Njemačkoj?",
+      "answers": [
+        "Poljska",
+        "Poland",
+        "Polend",
+        "Polska",
+        "Pol",
+        "Pl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4c432d86",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je potpisnik američke Deklaracije nezavisnosti 1753.g. dobio prestižnu britansku Copley medalju za istraživanja elektriciteta?",
+      "answers": [
+        "Benjamin Franklin",
+        "Benjamin Frenklin",
+        "Franklin",
+        "Frenklin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c4d7ffe0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "U tenisu, koliko poena najmanje treba osvojiti za pobjedu u standardnom tie-breaku, uz obveznu razliku od dva poena?",
+      "answers": [
+        "7",
+        "Sedam",
+        "Seven",
+        "Sevn",
+        "VII"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d423d269",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kolika je apsolutna vrijednost broja −20?",
+      "answers": [
+        "20",
+        "Dvadeset",
+        "Twenty",
+        "Tventi",
+        "XX"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-774c0845",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 17. predsjednik SAD-a, prezimena Johnson, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "AJ"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-97316678",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tko je napisao knjigu Charlie i tvornica čokolade?",
+      "answers": [
+        "Roald Dahl",
+        "Dahl",
+        "Dal",
+        "Rouald Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9386fb6b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove tvorac lika Sherlocka Holmesa?",
+      "answers": [
+        "Arthur Conan Doyle",
+        "Artur Konan Dojl",
+        "Conan Doyle",
+        "Konan Dojl",
+        "Doyle",
+        "Dojl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5ff5f6e6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Što se u SAD-u slavi  4. srpnja (jula)?",
+      "answers": [
+        "Dan nezavisnosti",
+        "Dan neovisnosti",
+        "Dan o nezavisnosti",
+        "Dan o neovisnosti",
+        "Nezavisnost",
+        "Neovisnost",
+        "Independence day",
+        "Independnc dej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-105c8e16",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element tražimo ako znamo da ga je prvi proizveo Paracelsus, prvi definirao Cavendish a ime mu dao Lavoisier?",
+      "answers": [
+        "Vodik",
+        "Hydrogen",
+        "Hidrogen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e3c152b7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koliko različitih oblika možemo slagati u igrici Tetris?",
+      "answers": [
+        "7",
+        "Seven",
+        "Sedam",
+        "VII"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3ca3a2f2",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Ako tri olovke koštaju 6 €, koliko košta jedna uz jednaku cijenu?",
+      "answers": [
+        "2",
+        "Dva",
+        "Two",
+        "Tvu",
+        "Zwei",
+        "Cvaj",
+        "Oba",
+        "Obadva",
+        "II"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c6b8bb08",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Koje robne marke su samovezujuće tenisice iz filma 'Povratak u budućnost 2' ?",
+      "answers": [
+        "Nike",
+        "Nike mag",
+        "Najk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c7ee04f9",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Koji je film prvi u povijesti zaradio više od 2 milijarde dolara?",
+      "answers": [
+        "Avatar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b7b6cff2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Metan, etan, propan i butan su svi redom koji ugljikovodici?",
+      "answers": [
+        "Alkani",
+        "Alcane",
+        "Alkane",
+        "Alkan",
+        "Alcan",
+        "Alcanes",
+        "Alkanes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-28cd0b0f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Prezime kojeg fiktivnog boksača se koristi i kao službeno sredstvo plaćanja u Panami?",
+      "answers": [
+        "Balboa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-34c23d4b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se naziva glazbeni oblik za orkestar s više stavaka, nastao u klasicizmu, npr. djela Mozarta i Beethovena?",
+      "answers": [
+        "Simfonija"
+      ],
+      "image": null
+    }
+  ]
+}

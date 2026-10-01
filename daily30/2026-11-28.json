@@ -1,0 +1,439 @@
+{
+  "version": 2,
+  "date": "2026-11-28",
+  "generatedAt": "2026-10-01T01:13:10.229Z",
+  "questionCount": 30,
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-fd37849b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Prema legendi, koliko su gradova negdje preko Atlantika navodno osnovali biskupi koji su u 8. stoljeću pobjegli pred muslimanskim osvajanjem Pirenejskog poluotoka, a priče o njihovu golemom bogatstvu kasnije su se povezale s Cíbolom i Quivirom te potaknule brojne ekspedicije u potrazi za zlatom i drugim blagom?",
+      "answers": [
+        "7",
+        "Sedam",
+        "VII",
+        "Seven"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b9d97b82",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zvao rimski bog rata?",
+      "answers": [
+        "Mars"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d3ec9d95",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kojeg se datuma dogodio teroristički napad na Ameriku i WTC?",
+      "answers": [
+        "11.9.",
+        "Jedanaesti devetog",
+        "Jedanaesti rujna",
+        "Jedanaesti rujan",
+        "Jedanaest devet",
+        "Nine eleven",
+        "Najn eleven",
+        "9.11",
+        "11. Rujna",
+        "11.rujna",
+        "11. Septembra",
+        "11.septembar",
+        "Jedanaestog rujna",
+        "Jedanaesti septembra",
+        "Jedanaestog septembra",
+        "Jedanaesti septembar",
+        "Eleventh september",
+        "September eleventh"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8518a85d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja se država proteže od atola Ihavandhippolhu na sjeveru do atola Addu na jugu čineći skupinu od njih 26?",
+      "answers": [
+        "Maldivi",
+        "Maldives"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a938cadd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se u videoigri Fallout zove prijenosno računalo koje se nosi na podlaktici i igraču služi za pregled statistika, inventara, karte i drugih podataka?",
+      "answers": [
+        "Pip Boy",
+        "Pipboj",
+        "Pip Boj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-574aa332",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji je film osvojio Oscara za najbolji animirani film 2024.?",
+      "answers": [
+        "Dječak i čaplja",
+        "The Boy and the Heron",
+        "D Boj end d Hiron"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1375bd51",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji roman kao svoj podnaslov ima 'The Parish Boy's Progress'?",
+      "answers": [
+        "Oliver Twist",
+        "Oliver Tvist",
+        "Oli Twist",
+        "Oli Tvist"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ad18f4c2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "U kojoj se situaciji, prema narodnoj mudrosti, najbolje prepoznaje pravi prijatelj?",
+      "answers": [
+        "U nevolji",
+        "Nevolji",
+        "Nevolja"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1886e1fb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se zove auto-moto utrka izdržljivosti koja traje 24 sata i vozi se u Francuskoj?",
+      "answers": [
+        "24 sata Le Mansa",
+        "Le Mans",
+        "24h Le Mans"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-98836ec5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Koje je utvrđeno galsko naselje Cezar uspio osvojiti 52.g. pr. Kr.?",
+      "answers": [
+        "Avarik",
+        "Avaricum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ab0ddffa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Kojeg se rimskog boga rata smatra Romulovim ocem, pa tako i praocem rimljana?",
+      "answers": [
+        "Marsa",
+        "Mars"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eaedfdc4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja je politička teritorija kod islamskih država jednaka kneževini kod zapadnih država?",
+      "answers": [
+        "Emirat",
+        "Emirati",
+        "Emirate",
+        "Emirates",
+        "Emirejt",
+        "Emirejts"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3b4b68ea",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja se drevna civilizacija Mezopotamije među prvima povezuje s organiziranom proizvodnjom piva, o čemu svjedoče zapisi i himne posvećene božici Ninkasi?",
+      "answers": [
+        "Sumerani",
+        "Sumer",
+        "Sumerci",
+        "Sumers"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5597544e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja se životinja iz reda žarnjaka većinom sastoji od oko 98 % vode, ima želatinozno tijelo te nema mozak, srce, pluća ni krv?",
+      "answers": [
+        "Meduza",
+        "Meduze"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7a00a210",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji se vojskovođa i državnik naziva 'Libertador de la Patria' te 'George Washington Južne Amerike', a uspomena na njega se danas očituje i u imenu jedne države koja se nekoć zvala Gornji Peru?",
+      "answers": [
+        "Simon Bolivar",
+        "Bolivar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bc4dfa08",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Poguban klizeći start na Eduarda da Silvu koji mu je promijenio blistavu karijeru, je 2008.g. u Premier Ligi napravio koji branič Birminghama?",
+      "answers": [
+        "Martin Taylor",
+        "Martin Tejlor",
+        "Taylor",
+        "Tejlor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0eec2dfe",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kako se zove šesterokutna struktura od voska u kojoj pčele pohranjuju med i uzgajaju ličinke?",
+      "answers": [
+        "Saće"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-363eb74e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako se zove jedinica za električnu struju u SI sustavu (Système International d'Unités)?",
+      "answers": [
+        "Amper",
+        "Ampere",
+        "A"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2cb126cc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je životna simulacija objavljena 2000.g. omogućila igračima gradnju kuća i upravljanje svakodnevnim životima virtualnih ljudi?",
+      "answers": [
+        "The Sims",
+        "Sims"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-70220da0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Koja galaksija je udaljena 2,5 milijuna svjetlosnih godina od nas",
+      "answers": [
+        "Andromeda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9c7eb5db",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je legendarni centar osvojio čak 11 NBA naslova kao igrač, više od bilo kojeg drugog košarkaša?",
+      "answers": [
+        "Bill Russell",
+        "Bil Rasel",
+        "Russell",
+        "Rasel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0c772172",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Kako nazivamo skupinu subatomskih čestica građenih od kvarkova koje povezuje jaka nuklearna sila?",
+      "answers": [
+        "Hadroni",
+        "Hadrons",
+        "Hadron"
+      ],
+      "image": null,
+      "rarity": "silver"
+    },
+    {
+      "id": "daily-62eb136d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koji je dominantni planinski vrh na talijansko-švicarskoj granici popeo američki predsjednik Theodore Roosevelt?",
+      "answers": [
+        "Matterhorn",
+        "Materhorn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-055429b0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Prema kojoj je strani svijeta Kristofor Kolumbo 1492. godine krenuo tražeći pomorski put do Azije?",
+      "answers": [
+        "Zapad",
+        "Zapadu",
+        "West",
+        "Vest",
+        "Wests",
+        "Vests"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-46e245d7",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je pisac za djecu u svojoj knjizi osmislio dobroćudnog diva koji u torbu skuplja lijepe snove te ih dijeli djeci dok spavaju, a noćne more uništava?",
+      "answers": [
+        "Roald Dahl",
+        "Dahl",
+        "Dal",
+        "Rouald Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e35e4dd3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je antički grčki filozof tradicionalno povezan s paradoksalnom izrekom 'Znam da ništa ne znam', kojom se naglašava svijest o granicama vlastitog znanja?",
+      "answers": [
+        "Sokrat",
+        "Socrates",
+        "Sokrates"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d4f11ce1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "'Vojnici! S vrha ovih piramida na vas gleda četrdeset stoljeća.'  Slavna je izreka kojeg vojskovođe nakon pobjede kraj piramida 1978.g.?",
+      "answers": [
+        "Napoleona",
+        "Napoleona Bonapartea",
+        "Bonapartea",
+        "Napoleona I. Bonapartea",
+        "Napoleona 1. Bonapartea",
+        "Napoleona prvog Bonapartea",
+        "Napoleona I.",
+        "Napoleona 1.",
+        "Napoleona prvog",
+        "Napoleon",
+        "Napoleon Bonaparte",
+        "Bonaparte",
+        "Napoleon I. Bonaparte",
+        "Napoleon 1. Bonaparte",
+        "Napoleon prvi Bonaparte",
+        "Napoleon I.",
+        "Napoleon 1.",
+        "Napoleon prvi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fcde517a",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Koji je pjevač poznat kao 'The Thin White Duke'?",
+      "answers": [
+        "David Bowie",
+        "Dejvid Bovi",
+        "Bowie",
+        "Bovi",
+        "David Robert Jones"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-957d00a3",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Efekt prema kojem ljudi s malo znanja ili sposobnosti u nekom području mogu precijeniti vlastitu kompetenciju nosi prezimena koja dva psihologa?",
+      "answers": [
+        "Dunning Kruger",
+        "Daning Kruger",
+        "Kruger Dunning",
+        "Kruger Daning",
+        "Daning Krugerov",
+        "Dunning Kurgerov",
+        "Kruger Dunningov",
+        "Kruger Daningov",
+        "Daningov Krugerov",
+        "Krugerov Daningov",
+        "Dunningov Krugerov",
+        "Krugerov Dunningov"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d83bdc00",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Koji je bend 1991. objavio album 'Nevermind'?",
+      "answers": [
+        "Nirvana"
+      ],
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "version": 2,
+  "date": "2026-11-05",
+  "generatedAt": "2026-10-01T01:13:10.229Z",
+  "questionCount": 30,
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-83662650",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "'Vjerujem u vile! Vjerujem, vjerujem!' je poznata izreka iz koje Barrieve bajke?",
+      "answers": [
+        "Petra Pana",
+        "Petar Pan",
+        "Pana",
+        "Pan",
+        "Pans",
+        "Pen",
+        "Pens",
+        "Piter Pen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca40947d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kada je Jacques Louis David slikao svoje remekdjelo s Napoleonom kako prelazi Alpe, onda je na umu imao i to da je Napoleon stigao u Italiju i austrijance pobijedio u bitci kod kojeg mjesta?",
+      "answers": [
+        "Marengo",
+        "Marengoa",
+        "Marenga"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9676fa33",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je kemijski element ime dobio po arapskoj riječi buraq ili perzijskoj riječi burah, koje označavaju mineral boraks?",
+      "answers": [
+        "Bor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fc83d3cc",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Glazba",
+      "question": "Koji instrument svira Melissa Viviane Jefferson, poznatija kao Lizzo?",
+      "answers": [
+        "Flautu",
+        "Flauta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ba06d1ab",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Poslovica je davno objasnila da kruha nema bez čega?",
+      "answers": [
+        "Motike",
+        "Motika"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b6c3791f",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Koji proizvođač automobila stoji iza modela Golf, Passat i Polo?",
+      "answers": [
+        "Volkswagen",
+        "VW",
+        "Wv"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b8c53a72",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Kako se zove fiktivni otok na kojem se odvija radnja filma 'Jurassic Park' Stevena Spielberga?",
+      "answers": [
+        "Isla Nublar",
+        "Nublar",
+        "Otok Oblaka",
+        "Otok Nublar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-63ad6cfc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kojim imenom nazivamo dugački morski rukavac s tri strane okružen kopnom najčešće sa strmim padinama?",
+      "answers": [
+        "Fjord"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6b6a7bb2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Pod kojim je nadimkom poznatiji nogometaš Edson Arantes do Nascimento?",
+      "answers": [
+        "Pele"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cf06222a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Kako se zvala službena lopta Svjetskog nogometnog prvenstva 2010.g. u Juznoafričkoj Republici?",
+      "answers": [
+        "Jabulani",
+        "Džabulani",
+        "Žabulani"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f37a9fcc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "'Zlatna lira s bikovom glavom' jedno je od najstarijih sačuvanih žičanih glazbala na svijetu. Stara je oko 4500 g., izradili su je drevni Sumerani, a pronađena je u Kraljevskim grobnicama na arheološkom nalazištu kojeg nekoć slavnog sumerskog grada?",
+      "answers": [
+        "Ur",
+        "Ura",
+        "Uru",
+        "Urim"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7341f037",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Kako se zove fiktivni otok na kojem se odvija radnja filma 'Duhovi otoka' (The Banshees of Inisherin)?",
+      "answers": [
+        "Inisherin",
+        "Inišerin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9fd749e7",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Titule 'Princeps, Imperator, Caesar i Augustus' su se pripisivale kojim rimskim dužnosnicima?",
+      "answers": [
+        "Carevima",
+        "Car",
+        "Rimskim carevima",
+        "Rimski car"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-282080aa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Gary Lineker je jednom izjavio 'Nogomet je jednostavna igra: 22 čovjeka trče za loptom 90 minuta, a na kraju uvijek pobijede...' Tko?",
+      "answers": [
+        "Njemci",
+        "Švabe",
+        "Njemačka",
+        "Deutschland",
+        "Germani",
+        "Germany",
+        "Džermani",
+        "Džermani",
+        "Ger",
+        "De",
+        "Njem",
+        "Švabija",
+        "Švabska"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8ec40433",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove poznat hrvatski književnik koji je napisao djelo 'Gospoda Glembajevi'?",
+      "answers": [
+        "Miroslav Krleža",
+        "Krleža"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ee8c1cb4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove poznati roman J. R. R. Tolkiena o hobitu koji nosi Prsten moći?",
+      "answers": [
+        "Gospodar prstenova",
+        "Lord of the Rings"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-71bed615",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove pojam iz ekonomije koji opisuje opći rast cijena u gospodarstvu?",
+      "answers": [
+        "Inflacija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-137728a5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Vrsta kojeg hrasta se nalazi na kovanici od 5 lipa?",
+      "answers": [
+        "Lužnjak",
+        "Hrast lužnjak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d0d0f160",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Finale prvog olimpijskog košarkaškog turnira igralo se 1936.g. na otvorenom, po kiši i na blatnjavom terenu, u kojem gradu?",
+      "answers": [
+        "Berlin",
+        "Berlinu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-87f18fb0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Tko je bio prvi rimski car koji je primio sakramenat krštenja?",
+      "answers": [
+        "Konstantin",
+        "Constantin",
+        "Constantinus",
+        "Konstantinus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f1fe241f",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tko se od članova družbe Pere Kvržice onesvijestio u bunaru čisteći ga?",
+      "answers": [
+        "Medo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8f7ac9e4",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Kako se zove alter ego pjevača Davida Bowieja?",
+      "answers": [
+        "Ziggy Stardust",
+        "Zigi Stardust",
+        "Stardust"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-491717f1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 25. predsjednik SAD-a, prezimena McKinley, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "WM"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a8db5be6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove nagrada koja se dodjeljuje za odličja u televizijskoj industriji u SAD-u?",
+      "answers": [
+        "Emmy",
+        "Emi",
+        "Emmy Award",
+        "Emmys",
+        "Emis"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-09d329d2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Nakon što je brod Endurance uništen u antarktičkom ledu, Ernest Shackleton je ostavio većinu svojih ljudi na Elephant Islandu te s petoricom članova posade krenuo malim čamcem preko više od 1.300 km otvorenog mora kako bi pronašao pomoć a uspio je doploviti do kojeg udaljenog otoka?",
+      "answers": [
+        "Južna Georgija",
+        "South Georgija",
+        "Saut Đorđa",
+        "Južna Đorđa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f55193a6",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje mekano i okruglo pokrivalo bez oboda tradicionalno povezujemo s Baskijom i Francuskom, a danas ga nose i brojne vojne postrojbe diljem svijeta?",
+      "answers": [
+        "Beretka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-485b021f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je korejski pomorski zapovjednik u 9. stoljeću osnovao bazu Cheonghaejin i razvio trgovačku mrežu između Koreje, Kine i Japana?",
+      "answers": [
+        "Jang Bogo",
+        "Chang Pogo",
+        "Čang Bogo",
+        "Čang Pogo",
+        "Bogo",
+        "Pogo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-11f8867d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je kemijski element atomskog broja 111 ime dobio po Wilhelmu Rontgenu?",
+      "answers": [
+        "Roentgenij",
+        "Rentgenij",
+        "Rengenij"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d08d6f5f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je kompanija 1981.g. objavila arkadnu videoigru Defender?",
+      "answers": [
+        "Williams",
+        "Vilijams",
+        "Viliams"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-344ae158",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koja se ptica nalazi na trofeju koji osvaja ukupni pobjednik Turneje četiri skakaonice, jednog od najpoznatijih natjecanja u skijaškim skokovima?",
+      "answers": [
+        "Orao",
+        "Orlušina",
+        "Eagle",
+        "Igl",
+        "Eagl",
+        "Egl"
+      ],
+      "image": null
+    }
+  ]
+}

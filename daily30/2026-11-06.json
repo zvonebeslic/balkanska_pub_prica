@@ -1,0 +1,429 @@
+{
+  "version": 2,
+  "date": "2026-11-06",
+  "generatedAt": "2026-10-01T01:13:10.229Z",
+  "questionCount": 30,
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-3e1614e4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Prva termonuklearna odnosno 'hidrogenska' bomba koristila je fuziju izotopa kojeg kemijskog elementa?",
+      "answers": [
+        "Vodika",
+        "Vodik",
+        "Vodikom",
+        "Hidrogenom",
+        "Hidrogen",
+        "Hydrogenom",
+        "Hydrogen",
+        "Hydrogens",
+        "Hidrogens",
+        "Hidrodžen",
+        "Hidrodženom",
+        "Hidrodžens"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1639448e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je proslavljeni hrvatski košarkaš nosio nadimak 'Košarkaši Mozart'?",
+      "answers": [
+        "Dražen Petrović",
+        "Petrović"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f5b15da1",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Koji film završava rečenicom: 'Louis, mislim da je ovo početak jednog divnog prijateljstva'?",
+      "answers": [
+        "Casablanca",
+        "Kazablanka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6efcf824",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Tri mudraca su novorođenom Isusu kao dar donijeli zlato, tamjan i koju još aromatičnu smolu?",
+      "answers": [
+        "Smirnu",
+        "Smirna",
+        "Mira",
+        "Izmirna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-94925fe5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se naziva kazališna umjetnost u kojoj glumci izvode radnju uz unaprijed zapisane melodije i pjesme, često s velikim orkestrom?",
+      "answers": [
+        "Opera"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-edd6546c",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je britanski pisac u jednoj od svojih knjiga izmislio fiktivnog američkog predsjednika Lancelota R. Gilligrassa?",
+      "answers": [
+        "Roald Dahl",
+        "Dahl",
+        "Dal",
+        "Rouald Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-44de4de8",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je njemački izumitelj 1886.g. patentirao Motorwagen, vozilo koje se često smatra prvim praktičnim automobilom pokretanim motorom s unutarnjim izgaranjem?",
+      "answers": [
+        "Karl Benz",
+        "Carl Benz",
+        "Karl Benc",
+        "Benz",
+        "Benc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fb542a1d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'Što me ne ubije, čini me jačim' jedna je od najcitiranijih misli kojeg njemačkog filozofa?",
+      "answers": [
+        "Friedricha Nietzschea",
+        "Fridriha Ničea",
+        "Nietzschea",
+        "Ničea",
+        "Nitčea",
+        "Niečea",
+        "Friedrich Nietzsche",
+        "Fridrih Niče",
+        "Nietzsche",
+        "Niče",
+        "Nitče",
+        "Nieče"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0a281b4a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Od koliko je kvadratnih blokova napravljen svaki oblik koji se pojavljuje u tetrisu?",
+      "answers": [
+        "4",
+        "Četiri",
+        "Four",
+        "For",
+        "IV"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-75453eba",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Sport",
+      "question": "Kako se zove najpoznatija europska nogometna klupska liga koju organizira UEFA?",
+      "answers": [
+        "Liga prvaka",
+        "UEFA Champions League",
+        "Champions League",
+        "Liga Šampiona",
+        "Čempions Lig"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-49d3ebb0",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojem stvarnom gradu 1900. godine kronološki počinje radnja The Chronicles of Narnia?",
+      "answers": [
+        "Londonu",
+        "London",
+        "Londons"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4bbfff7a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je američki predsjednik tijekom Velike depresije u inauguracijskom govoru 1933.g. poručio da je 'jedino čega se moramo bojati sam strah'?",
+      "answers": [
+        "Franklin D. Roosevelt",
+        "FDR",
+        "Frenklin D. Ruzvelt",
+        "Franklin Delano Roosevelt",
+        "Frenklin Delano Ruzvelt",
+        "Delano Roosevelt",
+        "Delano Ruzvelt",
+        "Roosevelt",
+        "Ruzvelt"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-634008ce",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Kako se zove čuveni špijun s kodnim imenom 007?",
+      "answers": [
+        "James Bond",
+        "Džems Bond",
+        "Bond"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-088ba8f8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je danski kralj 1625.g. ušao u Tridesetogodišnji rat želeći pomoći protestantskim snagama i povećati svoj utjecaj u sjevernoj Njemačkoj, ali je nakon niza poraza morao odustati od intervencije?",
+      "answers": [
+        "Kristijan IV.",
+        "Christian IV.",
+        "Kristijan 4.",
+        "Christian 4.",
+        "Kristijan 4th",
+        "Christian 4th",
+        "Kristijan četvrti",
+        "Christian četvrti",
+        "Kristijan fourth",
+        "Christian fourth"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f7d49fbd",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Kako se latinskim nazivom naziva crta iznad rimskog broja koja se u proširenom sustavu rimskih brojeva koristi za označavanje tisućestruke vrijednosti?",
+      "answers": [
+        "Vinculum",
+        "Vinkulum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a29f6ee9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad Kameruna?",
+      "answers": [
+        "Yaoundé",
+        "Jaunde"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-39679617",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Prema kojem je azijskom području zapravo plovila flota moreplovca Pedra Cabrala kada je 1500.g. stigla do Brazila?",
+      "answers": [
+        "Indija",
+        "Indiji",
+        "India",
+        "Indie",
+        "Indii"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8eb32aad",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove roman Georgea Orwella o totalitarnoj državi u kojoj je 'Veliki Brat' stalno prisutan?",
+      "answers": [
+        "1984"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7337e806",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kako se naziva događaj iz 1618.g. u kojem su češki protestantski plemići kroz prozor Praškog dvorca izbacili carske predstavnike i time zapalili iskru rata koji će opustošiti velik dio srednje Europe?",
+      "answers": [
+        "Praška defenestracija",
+        "Defenestration of Prague",
+        "Defenestrejšn of Prag"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-326ba474",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Samo se jednom u povijesti dogodilo da nagrada Ballon d'Or nije dodijeljena, a to je bilo koje godine?",
+      "answers": [
+        "2020",
+        "Dvije tisuće dvadesete",
+        "MMXX",
+        "Two thousand twenty",
+        "Tvu tausend tventi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-46c6dc9e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je postao predsjednik SAD-a nakon ubojstva JFK-a?",
+      "answers": [
+        "Lyndon B. Johnson",
+        "Lindon B. Džonson",
+        "Johnson",
+        "Džonson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c5d0817d",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Ako pričamo o 4 nebeske kineske životinje, spomenuti ćemo Tigra, Zmaja, Pticu i koga još?",
+      "answers": [
+        "Kornjaču"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3ebe1500",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Kojom frazom je Julije Cezar obavijestio rimski senat o munjevitoj pobjedi svoje vojske nad pontskim kraljem Farnakom II.?",
+      "answers": [
+        "Veni Vidi Vici"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e2037e15",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Ostalo",
+      "question": "Kako se zove najpoznatiji dokument koji počinje riječima 'Mi, narodi Ujedinjenih naroda'?",
+      "answers": [
+        "Povelja Ujedinjenih naroda",
+        "Povelja UN",
+        "UN Charter",
+        "Povelja UN-a",
+        "Povelja"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b6e14565",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Iako je samo legenda, pitamo vas, koja ptica u slučaju opasnosti glavu gura u pijesak?",
+      "answers": [
+        "Noj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e6c14781",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove pjesma s kojom je ABBA pobijedila na Euroviziji 1974. godine?",
+      "answers": [
+        "Waterloo",
+        "Vaterlo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1bd60613",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Ako bi sada brojali, koliko bi potpisa delegata pronašli na američkoj deklaraciji nezavisnosti?",
+      "answers": [
+        "56",
+        "Pedeset i šest",
+        "Pedeswt šest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0cb0d81e",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Koja je najuglednija glazbena nagrada u Republici Hrvatskoj?",
+      "answers": [
+        "Porin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2ebfcdd4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji pojam u klasičnoj fizici označava prazan prostor bez bilo kakve materije ili fizikalnih polja?",
+      "answers": [
+        "Vakuum",
+        "Vacuum",
+        "Vakum",
+        "Vacum"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-07a46cf8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Grand Etang je jezero nastalo u krateru ugaslog vulkana, dio je planinskog lanca Saint Catherine a nalazi se na kojoj karipskoj otočnoj državi?",
+      "answers": [
+        "Grenadi",
+        "Grenada"
+      ],
+      "image": null
+    }
+  ]
+}

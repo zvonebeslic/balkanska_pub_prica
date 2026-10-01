@@ -1,0 +1,432 @@
+{
+  "version": 2,
+  "date": "2026-11-12",
+  "generatedAt": "2026-10-01T01:13:10.229Z",
+  "questionCount": 30,
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-910a0ccc",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojem je koncetracijskom logoru umrla Anna Frank?",
+      "answers": [
+        "Bergen Belsen",
+        "Bergen Belzen",
+        "Belsen",
+        "Belzen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b470507a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koliko američkih predsjednika ima registriran patent na izum?",
+      "answers": [
+        "Jedan",
+        "Jedno",
+        "1.",
+        "1",
+        "I",
+        "I.",
+        "One"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f47b89b0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove crveni okruglasti neprijatelj s velikim naočalama u arkadnoj videoigri Dig Dug?",
+      "answers": [
+        "Pooka",
+        "Poka",
+        "Puka"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a03a2189",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Zemljopis",
+      "question": "Grad Haikou je najveći grad na kojem kineskom otoku?",
+      "answers": [
+        "Hainan",
+        "Hajnan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a945965e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Kojeg je francuskog filozofa prosvjetiteljstva proslavila obrana slobode mišljenja, zbog čega mu se često, premda pogrešno, pripisuje misao 'Ne slažem se s onim što govoriš, ali branit ću tvoje pravo da to kažeš'?",
+      "answers": [
+        "Voltaire",
+        "Volter",
+        "François Marie Arouet",
+        "Fransoa Mari Arue",
+        "Arue",
+        "Arouet"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ad73fdf1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koliko igrača nastupa za jedan nogometni klub u jednoj utakmici?",
+      "answers": [
+        "11",
+        "Jedanaest",
+        "Jedanest",
+        "Eleven",
+        "XI"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-51765f8b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "U kojoj se periodi tj redu, na periodnom sustavu elemenata nalazi fosfor?",
+      "answers": [
+        "Trećoj",
+        "Tri",
+        "Treća",
+        "III",
+        "3.",
+        "3",
+        "Third",
+        "3 rd",
+        "3rd",
+        "3oj",
+        "3 oj",
+        "Trećem",
+        "Trećemu",
+        "Three",
+        "Tre"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4e0411e2",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako su Španjolci nazvali legendarnog vladara naroda Muisca koji je prema predaji tijekom obreda bio prekriven zlatnom prašinom, a čije je ime poslije postalo sinonim za izgubljeni grad zlata?",
+      "answers": [
+        "El Dorado",
+        "Eldorado"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5ae8bda1",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Bartolomeo Cristofori je talijanski izrađivač glazbala kojemu se pripisuje izum kojeg, danas popularnog glazbenog instrumenta?",
+      "answers": [
+        "Klavira",
+        "Klavir",
+        "Glasovir",
+        "Glasovira",
+        "Piano"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3443a501",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji su žuti plemeniti metal europski osvajači posebno tražili u Americi?",
+      "answers": [
+        "Zlato",
+        "Gold",
+        "Au",
+        "Aureus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1e8d44b4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove glumac koji je utjelovio originalnog Indianu Jonesa?",
+      "answers": [
+        "Harrison Ford",
+        "Harison Ford",
+        "Ford"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-531bea00",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se naziva pismo starog Egipta koje se sastoji od slikovnih znakova?",
+      "answers": [
+        "Hijeroglifi",
+        "hijeroglifsko pismo",
+        "Hierogliphes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4db80456",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove ploča pronađena u Egiptu koja je pomogla u dešifriranju hijeroglifa jer ima tekst na tri pisma?",
+      "answers": [
+        "Rosettski kamen",
+        "Rosetta Stone",
+        "Rosetski kamen",
+        "Rosetska",
+        "Rosettska"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-87bf87e8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koji je član hip-hop grupe Niggaz Wit Attitudes glumio u filmskoj franšizi Triple X (xXx)?",
+      "answers": [
+        "Ice Cube",
+        "Ajs Kjub",
+        "O'Shea Jackson",
+        "Ošea Džekson",
+        "Jackson",
+        "Džekson"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3bd3dcae",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Kako se zove zlikovac u prvom od filmova 'Umri muški' (Die Hard)?",
+      "answers": [
+        "Hans Gruber",
+        "Gruber"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-80de74c4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Prvu crkvu na svijetu posvećenu Blaženoj Djevici Mariji sagradio je apostol Jakov u Caesaraugusti, starorimskom gradu na čijem području se danas nalazi koji španjolski grad, inače veliko marijansko svetište?",
+      "answers": [
+        "Zaragoza",
+        "Saragossa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eaf3c6ee",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "FloraFauna",
+      "question": "Što je neobrano u jednoj od pjesama Klape Maslina?",
+      "answers": [
+        "Maslina"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1dd81c73",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja japanska riječ označava umjetnost uzgoja minijaturnog drveća?",
+      "answers": [
+        "Bonsai"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dab50988",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove filmska franšiza o hakeru Neo i borbi protiv strojeva u simuliranoj stvarnosti?",
+      "answers": [
+        "Matrix",
+        "Matriks",
+        "The Matrix",
+        "Matriks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3c8ffaa5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se naziva proces prilagodbe organizma na veće nadmorske visine i manjak kisika?",
+      "answers": [
+        "Aklimatizacija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bcecb2ea",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Edward Bulwer-Lytton je bio engleski književnik koji je skovao čuvenu rečenicu prema kojoj je pero moćnije od čega?",
+      "answers": [
+        "Mača",
+        "Mač",
+        "Swords",
+        "Sword",
+        "Svords",
+        "Svord"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-138b29bc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koliko je puta Rafael Nadal osvojio Roland-Garros u muškom singlu?",
+      "answers": [
+        "14",
+        "Četrnaest",
+        "Fourteen",
+        "Fortin",
+        "XIV",
+        "Četrnest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aeef828d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 39. predsjednik SAD-a, prezimena Carter, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "JEC"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e90bbb23",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je japanska kompanija objavila originalnu arkadnu videoigru Space Invaders 1978.g.?",
+      "answers": [
+        "Taito"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f064f508",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Partizanski bombaš, Boško Buha je na filmsko platno prenešen od strane kojeg hrvatskog redatelja?",
+      "answers": [
+        "Branka Bauera",
+        "Branko Bauer",
+        "Bauer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-acee2cea",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Otoci Njazidja, Moheli i Anjouan tvore koju afričku državu?",
+      "answers": [
+        "Komore",
+        "Komori",
+        "Comores",
+        "Comori",
+        "Comore"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c99979a3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojoj su bitki 1346.g. engleski strijelci dugim lukovima desetkovali francuske napade i Edvardu III. donijeli jednu od prvih velikih pobjeda u Stogodišnjem ratu?",
+      "answers": [
+        "Crecy",
+        "Crecy en Ponthieu",
+        "Cressy",
+        "Kresi",
+        "Kreši",
+        "Creši",
+        "Cresi",
+        "Bitka za Crecy",
+        "Battle of Crecy"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-70981ab5",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je škotski ekonomist 1776.g. objavio djelo 'Bogatstvo naroda' i postao jedan od najpoznatijih mislilaca u povijesti ekonomije?",
+      "answers": [
+        "Adam Smith",
+        "Adam Smit",
+        "Smith",
+        "Smit"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fc919207",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Povijest",
+      "question": "Koji je rimski car podijelio Carstvo na istočni i zapadni dio 395. godine?",
+      "answers": [
+        "Teodozije I",
+        "Teodozije Veliki",
+        "Teodezije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b7da7113",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kako se zove fiktivna zemlja divova koju Gulliver na svojim putovanjima posjećuje nakon Lilliputa?",
+      "answers": [
+        "Brobdingnag",
+        "Brobdngan",
+        "Brobdngn"
+      ],
+      "image": null
+    }
+  ]
+}

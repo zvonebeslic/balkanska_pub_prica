@@ -1,0 +1,457 @@
+{
+  "version": 2,
+  "date": "2026-11-29",
+  "generatedAt": "2026-10-01T01:13:10.229Z",
+  "questionCount": 30,
+  "sourceFileCount": 15,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-8d8ca9a6",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Koji je španjolski nogometni klub iz Sorie igrao najelitniju španjolsku ligu samo 4 sezone, a ime je dobio po starom keltiberskom gradu sa istog mjesta, kojeg Rimljani osvajaju 133.g. pr. Kr.?",
+      "answers": [
+        "Numancija",
+        "Numantia"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ec0b277f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se zove grad domaćin ljetnih Olimpijskih igara 2012. godine?",
+      "answers": [
+        "London"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-177fb719",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio 40-i predsjednik SAD-a ali i 33 guverner Kalifornije?",
+      "answers": [
+        "Ronald Reagan",
+        "Ronald Regan",
+        "Reagan",
+        "Regan",
+        "Rigen",
+        "Rigan",
+        "Regen"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d45848e0",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koja se šuma nalazi u engleskoj grofoviji Nottinghamshire te je glavno poprište pustolovina Robina Hooda iz knjige Howarda Pylea?",
+      "answers": [
+        "Sherwoodska šuma",
+        "Sherwoodska",
+        "Sherwood",
+        "Šervudska",
+        "Šervud",
+        "Sherwoods",
+        "Šervuds"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-daae5936",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je igrač zabio najviše golova u povijesti najelitnijeg engleskog razreda nogometa?",
+      "answers": [
+        "Alan Shearer",
+        "Alan Širer",
+        "Shearer",
+        "Širer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-707e3746",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je španjolski svećenik i brodolomac, prethodno godinama zatočen među Majama, Cortésu služio kao prevoditelj između španjolskog i jezika Maja?",
+      "answers": [
+        "Jerónimo de Aguilar",
+        "Žeronimo de Agiljar",
+        "Gerónimo de Aguilar",
+        "Aguilar",
+        "Agilar",
+        "Agiljar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-36d35f16",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Koja se životinja nalazi na kovanici od 5 kuna?",
+      "answers": [
+        "Mrki medvjed"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e378fcce",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje se tradicionalno istočnoeuropsko fermentirano piće može proizvoditi od raženog kruha i može sadržavati vrlo malo alkohola?",
+      "answers": [
+        "Kvass",
+        "Kvas",
+        "Kvasz"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-84fe40bf",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "U imenu serijala nogometnih videoigara poznatog pod kraticom PES, koju riječ označava slovo 'E'?",
+      "answers": [
+        "Evolution",
+        "Evolucija",
+        "Evolušn",
+        "Evolucijon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eae4cd9e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Konstantin II. , Konstancije II, i Konstans I. su bili rimski carevi, ali i sinovi kojeg cara prije njih?",
+      "answers": [
+        "Konstantina",
+        "Konstantin",
+        "Constantina",
+        "Constantin",
+        "Constantinusa",
+        "Constantinus",
+        "Konstantinusa",
+        "Konstantinus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f09b7334",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Koja glumica tumači lik Katniss Everdeen?",
+      "answers": [
+        "Jennifer Lawrence",
+        "Dženifer Lovrenc",
+        "Lawrence",
+        "Lovrenc"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5be5efbd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Diabloov demonski brat koji nosi titulu Lord of Hatred (Gospodar Mržnje) i ima važnu ulogu u videoigri Diablo IV?",
+      "answers": [
+        "Mephisto",
+        "Mefisto"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b903e5b",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se zvao grčki Bog mora?",
+      "answers": [
+        "Posejdon",
+        "Poseidon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-84296eef",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koja se pjevačica glazbom počela baviti pod pseudonimom Lizzy Grant a svjetsku slavu stekla pjesmom 'Video Games'?",
+      "answers": [
+        "Lana Del Rey",
+        "Lana Del Rej",
+        "Del Rey",
+        "Del Rej",
+        "Elizabeth Woolridge Grant",
+        "Rey",
+        "Rej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b6e75da9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "U kojoj je bitki 1757.g. Fridrik II. Hohenzollern s brojčano slabijom vojskom izveo briljantan manevar protiv Francuza i njihovih saveznika te ostvario jednu od najpoznatijih pobjeda svoje vojne karijere?",
+      "answers": [
+        "Bitka kod Rossbacha",
+        "Battle of Rossbach",
+        "Batl.of Rozbah",
+        "Bitka kod Rozbaha",
+        "Rossbacha",
+        "Rozbaha",
+        "Rossbach",
+        "Rozbah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-714d23bb",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Filmski zvučni efekt, prvi put snimljen u filmu 'Udaljeni bubnjevi (Distant Drums) 1951.g., se kao interna šala tonskih majstora ponavlja u stotinama filmova i dan danas a poznat je pod kojim imenom?",
+      "answers": [
+        "Wilhelm Scream",
+        "Wilhelmov vrisak",
+        "Vilhelm Scream",
+        "Vilhelmov vrisak",
+        "Wilhelm",
+        "Vilhelm",
+        "Wilhelmov",
+        "Vilhelmov",
+        "Vilemov",
+        "Vilem"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1d228b80",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Kitovi pod vodom u prosjeku izdrže 20 minuta a dišu kojim organom?",
+      "answers": [
+        "Plućima",
+        "Pluća"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ba27ae43",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Koja je službena valuta u Japanu?",
+      "answers": [
+        "Jen",
+        "Yen",
+        "Japanski Jen",
+        "Japanski Yen",
+        "JPY"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4d6427b7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je hrvatski jedriličar osvojio olimpijsko srebro u klasi Laser u Riju 2016.g.?",
+      "answers": [
+        "Tonči Stipanović",
+        "Stipanović"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e67fb8a9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Mineral beril u zelenom izdanju zovemo smaragd, u modrom izdanju je akvamarin, a u narančastom ga zovemo kako?",
+      "answers": [
+        "Morganit",
+        "Morganite"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9025f6d3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je američki predsjednik tijekom posjeta Zapadnom Berlinu 1963.g. izgovorio čuvene riječi 'Ich bin ein Berliner'?",
+      "answers": [
+        "John F. Kennedy",
+        "Džon F. Kenedi",
+        "John Fitzgerald Kennedy",
+        "Džon Ficgerald Kenedi",
+        "John Kennedy",
+        "Džon Kenedi",
+        "Kennedy",
+        "Kenedi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-df49dca6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Tijekom koje je svemirske misije nastala slavna rečenica 'Houston, we've had a problem', danas jedna od najpoznatijih fraza u povijesti istraživanja svemira?",
+      "answers": [
+        "Apollo 13",
+        "Apolo 13",
+        "Apollo thirteen",
+        "Apolo trtin",
+        "Apollo trinaest",
+        "Apolo trinaest",
+        "Apollo XII",
+        "Apolo XIII",
+        "Apolo",
+        "Apollo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9b7b4819",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Glazba",
+      "question": "Tko pjeva pjesme 'Shape of You' i 'Thinking Out Loud'?",
+      "answers": [
+        "Ed Sheeran",
+        "Ed Šeran",
+        "Sheeran",
+        "Šeran"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9ba02481",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji se naziv koristi za skupinu drevnih božanstava sumerske i kasnije akadskobabilonske mitologije, koja su u moderno doba česta tema pseudoznanstvenih teorija o izvanzemaljcima?",
+      "answers": [
+        "Anunnaki",
+        "Anunaki",
+        "Anunakiji",
+        "Anunnakiji",
+        "Anunakis",
+        "Anunnakis",
+        "Anuna",
+        "Anunaku",
+        "Anunnaku",
+        "Ananaki",
+        "Anannaki",
+        "Dananuna",
+        "Danunana",
+        "Danunakena"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a87c9380",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Zemljopis",
+      "question": "Kamene kugle kulture Diquis, su megalitski spomenici raznih veličina koje su klesali pripadnici istoimenog plemena. Nastajali su od 6-og do 16-og stoljeća a danas su pod UNESCO-ovom zaštitom te turistička atrakcija iz predkolumbovske amerike u kojoj današnjoj državi?",
+      "answers": [
+        "Kostariki",
+        "Kostarika",
+        "Costa Rica",
+        "Kosta Rika",
+        "Costa Rici",
+        "Kosta Riki"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-ecb49cf0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove Atarijeva arkadna videoigra iz 1985.g. u kojoj do četiri igrača istodobno istražuju tamnice pune čudovišta i blaga?",
+      "answers": [
+        "Gauntlet",
+        "Gantlet",
+        "Guntlet"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cf727be1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "U kojoj se današnjoj američkoj saveznoj državi nalazilo područje koje je ekspedicija Francisca Vazqueza de Coronada smatrala legendarnom Quivirom?",
+      "answers": [
+        "Kansas",
+        "Kanzas",
+        "Kansasu",
+        "Kanzasu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-83407566",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Tko je prvi razvio opću teoriju relativnosti?",
+      "answers": [
+        "Albert Einstein",
+        "Albert Ajnštajn",
+        "Einstein",
+        "Ajnštajn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4185362e",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je pisac osmislio Vermicious Knidse tj. Gamadljivu Kljidad, izvanzemaljska bića sposobna mijenjati oblik koja se pojavljuju u romanu Charlie i veličanstveno stakleno dizalo?",
+      "answers": [
+        "Roald Dahl",
+        "Dahl",
+        "Dal",
+        "Rouald Dal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9f9292cf",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Koji je glavni grad, rodno mjesto Pape Franje, ali i rodno mjesto plesa tango?",
+      "answers": [
+        "Buenos Aires",
+        "Buenos Airos"
+      ],
+      "image": null
+    }
+  ]
+}
