@@ -8,6 +8,8 @@
   const SUPABASE_URL = "https://hssfjguysejbosvholqu.supabase.co";
   const SUPABASE_KEY = "sb_publishable_1wlZVov1csReXuZEgcuInA_7F7_gzIy";
   let fallbackClient = null;
+  let registeredGuestKey = null;
+  const MODERATION_REFRESH_MS = 120000;
 
   function uiLang() { return document.documentElement.lang === "en" || localStorage.getItem("kviztogo_lang") === "en" ? "en" : "hr"; }
   function tx(hr, en) { return uiLang() === "en" ? en : hr; }
@@ -67,7 +69,12 @@
     const client = getClient();
     const secret = getOrCreateGuestSecret();
     if (!client || !secret) return null;
-    try { await client.rpc("daily30_register_guest_secret", { p_player_key: identity.playerKey, p_guest_secret: secret }); } catch (_) {}
+    const cacheKey = `${identity.playerKey}:${secret}`;
+    if (registeredGuestKey === cacheKey) return secret;
+    try {
+      const { error } = await client.rpc("daily30_register_guest_secret", { p_player_key: identity.playerKey, p_guest_secret: secret });
+      if (!error) registeredGuestKey = cacheKey;
+    } catch (_) {}
     return secret;
   }
 
@@ -213,6 +220,7 @@
   }
 
   async function refreshUnread() {
+    if (document.visibilityState === "hidden") return;
     try {
       const identity = await getIdentity();
       if (!identity) { setUnreadCount(0); return; }
@@ -314,7 +322,10 @@
     if (!ensureBubble()) { setTimeout(boot, 500); return; }
     ensureModal();
     void refreshUnread();
-    setInterval(refreshUnread, 30000);
+    setInterval(refreshUnread, MODERATION_REFRESH_MS);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") void refreshUnread();
+    });
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot, { once: true });
