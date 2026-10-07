@@ -71,44 +71,19 @@ body.keyboard-active { overflow-anchor: none; padding-bottom: 0; }
 .quiz-card { scroll-margin-top: 92px; }
 
 @media (max-width: 768px) {
-  body.quiz-playing { overflow: hidden; }
+  /* Tijekom igre kviz ostaje na istom mjestu kao početni prozor nakon odabira kviza.
+     Ne pretvaramo ga više u fixed blok kad se otvori tipkovnica. */
+  body.quiz-playing { overflow-x: hidden; }
 
-  /* MOBITEL IGRA: cijeli kviz-blok je iznad tipkovnice, a povijest ide ispod pitanja */
   body.quiz-playing .quiz-main-grid {
-    position: fixed;
-    left: 0.4rem;
-    right: 0.4rem;
-    width: auto;
-    bottom: calc(var(--keyboard-safe-space, 0px) + 0.35rem);
-    z-index: 1200;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-height: calc(var(--visual-height, 100svh) - var(--keyboard-safe-space, 0px) - 72px);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-    padding-bottom: 0.1rem;
-  }
-
-  body.quiz-playing .quiz-card {
-    flex: 0 0 auto;
-    border: 1px solid rgba(47, 128, 255, 0.55);
-    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
-  }
-
-  body.quiz-playing .sidebar-card {
-    flex: 0 0 auto;
-    display: flex;
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
     max-height: none;
-    border: 1px solid rgba(47, 128, 255, 0.35);
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.42);
-  }
-
-  body.quiz-playing .history-list {
-    overflow-y: auto;
-    max-height: 34vh;
-    min-height: 3rem;
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   body.quiz-playing .question-text { font-size: 0.95rem; line-height: 1.38; }
@@ -7369,8 +7344,15 @@ if (!supabaseClient) {
     window.setTimeout(() => {
       updateKeyboardSafeSpace();
       document.body.classList.add("quiz-playing", "keyboard-active");
+      const stableScrollX = window.scrollX;
+      const stableScrollY = window.scrollY;
       input.focus({ preventScroll: true });
-      keepQuizVisibleAboveKeyboard();
+
+      /* Android/iOS mogu pokušati pomaknuti dokument kad se pojavi tipkovnica.
+         Vraćamo isti scroll položaj pa kartica ostaje ondje gdje je bila prije fokusa. */
+      requestAnimationFrame(() => {
+        window.scrollTo({ left: stableScrollX, top: stableScrollY, behavior: "auto" });
+      });
     }, 80);
   }
 
@@ -7452,10 +7434,8 @@ if (!supabaseClient) {
 
   if (window.visualViewport) {
     window.visualViewport.addEventListener("resize", () => {
+      /* Samo osvježi podatke o tipkovnici. Ne pomiči dokument i ne premještaj kviz. */
       updateKeyboardSafeSpace();
-      if (document.body.classList.contains("quiz-playing") || document.body.classList.contains("keyboard-active")) {
-        keepQuizVisibleAboveKeyboard();
-      }
     });
   }
 
@@ -8561,11 +8541,11 @@ if (!supabaseClient) {
         }
       });
 
-      /* MOBITEL FIX: kad se otvori tipkovnica, zadrži cijelu kviz-karticu iznad nje. */
+      /* Fokus ne smije pomicati stranicu niti premještati kviz-karticu. */
       answerInput.addEventListener("focus", () => {
         document.body.classList.add("keyboard-active");
         if (currentQuestion) document.body.classList.add("quiz-playing");
-        keepQuizVisibleAboveKeyboard();
+        updateKeyboardSafeSpace();
       });
 
       answerInput.addEventListener("blur", () => {
