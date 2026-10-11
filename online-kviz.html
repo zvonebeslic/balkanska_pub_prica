@@ -7476,7 +7476,21 @@ if (!supabaseClient) {
 
   async function loadQuestionsFromJson() {
     try {
-      const abcResponsesPromise = Promise.all(ABC_SOURCE_CONFIG.map(source => fetch(source.url)));
+      // Nova tema je opcionalna tijekom prijenosa GitHub -> Hostinger:
+      // nedostajuća datoteka ne smije zaustaviti postojeće načine kviza.
+      const fetchOptionalBrendovi = async url => {
+        try {
+          const response = await fetch(url);
+          if (response.ok) return response;
+        } catch (error) {
+          console.warn("Datoteka Brendovi još nije dostupna:", url, error);
+        }
+        console.warn("Datoteka Brendovi još nije objavljena:", url);
+        return { ok: true, json: async () => [] };
+      };
+      const abcResponsesPromise = Promise.all(ABC_SOURCE_CONFIG.map(source =>
+        source.key === "brendovi" ? fetchOptionalBrendovi(source.url) : fetch(source.url)
+      ));
       const [respBlitz, respFlora, respFilm, respGlazba, respAntickiRim, respAmerickiPredsjednici, respZemljopis, respNogomet, respZnanost, respKnjizevnost, respPovijest, respGaming, respMoreplovci, respSport, respSvastara, respBrendovi] = await Promise.all([
         fetch(QUESTIONS_URL_BLITZ),
         /* STORY PRIVREMENO ISKLJUČEN
@@ -7496,7 +7510,7 @@ if (!supabaseClient) {
         fetch(QUESTIONS_URL_MOREPLOVCI),
         fetch(QUESTIONS_URL_SPORT),
         fetch(QUESTIONS_URL_SVASTARA),
-        fetch(QUESTIONS_URL_BRENDOVI),
+        fetchOptionalBrendovi(QUESTIONS_URL_BRENDOVI),
       ]);
       const abcResponses = await abcResponsesPromise;
 
