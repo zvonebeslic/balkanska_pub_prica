@@ -541,7 +541,8 @@ const MP_GAME_MODES=[
   {id:'t-povijest',kind:'theme',questionLimit:10,winTarget:null,topic:'Povijest',hr:'Povijest',en:'History'},
   {id:'t-gaming',kind:'theme',questionLimit:10,winTarget:null,topic:'Gaming',hr:'Svijet Gaminga',en:'Gaming'},
   {id:'t-moreplovci',kind:'theme',questionLimit:10,winTarget:null,topic:'Moreplovci',hr:'Moreplovci',en:'Seafarers'},
-  {id:'t-sport',kind:'theme',questionLimit:10,winTarget:null,topic:'Sport',hr:'Sport',en:'Sport'}
+  {id:'t-sport',kind:'theme',questionLimit:10,winTarget:null,topic:'Sport',hr:'Sport',en:'Sport'},
+  {id:'t-brendovi',kind:'theme',questionLimit:10,winTarget:null,topic:'Brendovi',hr:'Brendovi',en:'Brands'}
 ];
 function loadSavedMpGameMode(){
   try{
@@ -1554,7 +1555,7 @@ async function prepareBot(){
   $('find').textContent=t('startQuiz');$('find').disabled=false;$('find').onclick=beginBotMatch;setFoundActionsVisible(true)
 }
 async function loadBotQuestions(){
-  const files=['AmerickiPredsjednici','AntickiRim','Film','FloraFauna','Gaming','Glazba','Knjizevnost','Moreplovci','Nogomet','Sport','Svastara','Zemljopis','Znanost','povijest','questions-blitz'];let all=[];
+  const files=['AmerickiPredsjednici','AntickiRim','Film','FloraFauna','Gaming','Glazba','Knjizevnost','Moreplovci','Nogomet','Sport','Svastara','Zemljopis','Znanost','povijest','questions-blitz','Brendovi'];let all=[];
   for(let f of files){try{let r=await fetch('ABC%20pitanja/'+encodeURIComponent(f)+'.json',{cache:'no-store'}),j=await r.json(),a=Array.isArray(j)?j:(j.questions||[]);for(let x of a){if(x?.question&&x.answers&&!Array.isArray(x.answers)&&['A','B','C'].includes(String(x.correct_answer).toUpperCase()))all.push({id:hash((x.topic||f)+'|'+x.question),topic:x.topic||f,question:x.question,correctKey:String(x.correct_answer).toUpperCase(),answers:['A','B','C'].map(k=>({key:k,text:x.answers[k]}))})}}catch{}}
   const mode=selectedMpGameMode(),ban=new Set(recent());
   let eligible=all.filter(q=>!ban.has(q.id));
