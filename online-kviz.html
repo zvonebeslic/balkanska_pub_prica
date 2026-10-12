@@ -7086,6 +7086,9 @@ if (!supabaseClient) {
     return Math.max(0, Math.round(activeQuizActiveMs / 1000));
   }
 
+  // Dnevnih 30 koristi isto aktivno vrijeme kao opca statistika.
+  window.KvizGetActiveQuizDurationSeconds = getActiveQuizDurationSeconds;
+
   function resetActiveQuizTimeTracking() {
     activeQuizActiveMs = 0;
     activeQuizLastTickAt = null;
