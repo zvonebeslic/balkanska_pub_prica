@@ -22,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
-      OPENAI_API_KEY: \${{ secrets.OPENAI_API_KEY }}
-      KVIZTOGO_AI_MODEL: \${{ vars.KVIZTOGO_AI_MODEL || 'gpt-4.1-mini' }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      KVIZTOGO_AI_MODEL: ${{ vars.KVIZTOGO_AI_MODEL || 'gpt-4.1-mini' }}
       AI_DAILY_LIMIT: "24"
     steps:
       - name: Preuzmi JSON baze pitanja
@@ -42,15 +42,15 @@ jobs:
           node scripts/ai-question-agent.mjs --dry-run
 
       - name: Provjeri OpenAI secret
-        if: \${{ env.OPENAI_API_KEY == '' }}
+        if: ${{ env.OPENAI_API_KEY == '' }}
         run: echo "::warning::Nema secret OPENAI_API_KEY. AI pitanja nece nastajati dok ga ne dodas u GitHub Actions secrets."
 
       - name: Generiraj jedno novo neobjavljeno pitanje
-        if: \${{ env.OPENAI_API_KEY != '' }}
+        if: ${{ env.OPENAI_API_KEY != '' }}
         run: node scripts/ai-question-agent.mjs
 
       - name: Spremi pitanje samo u zasebnu AI zbirku
-        if: \${{ env.OPENAI_API_KEY != '' }}
+        if: ${{ env.OPENAI_API_KEY != '' }}
         run: |
           git add ai-pitanja/index.json ai-pitanja/zbirka/
           if git diff --cached --quiet; then
