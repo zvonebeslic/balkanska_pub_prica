@@ -149,7 +149,7 @@ function validate(q, bank, generated) {
   if (!q || typeof q.question !== "string" || typeof q.answer !== "string") return "nema pitanja/odgovora";
   const question = q.question.trim();
   const answer = q.answer.trim();
-  if (question.length < 65 || question.length > 620 || !question.endsWith("?")) return "oblik ili duljina pitanja";
+  if (question.length < 35 || question.length > 620 || !question.endsWith("?")) return "oblik ili duljina pitanja";
   if (answer.length < 1 || answer.length > 150) return "oblik odgovora";
   if (answer.length > 3 && (" " + normalize(question) + " ").includes(" " + normalize(answer) + " ")) return "odgovor je otkriven u pitanju";
   if (q.factual_uncertainty) return "AI nije uspio pouzdano potvrditi činjenicu";
@@ -189,7 +189,7 @@ async function main() {
   const area = pickLeast(Object.keys(topics), index.topicCounts || {});
   const usedFocus = new Set(archive.slice(-75).map(x => x.focus));
   const available = topics[area].filter(t => !usedFocus.has(t));
-  const focus = randomFrom(available.length ? available : topics[area]);
+  const focus = randomInt(5) === 0 ? "slobodno izaberi novu usku, neočekivanu podtemu iz područja " + area + " koja nije na popisu" : randomFrom(available.length ? available : topics[area]);
   const difficulty = Number(pickLeast([1,2,3,4,5],index.difficultyCounts || {}));
   const examples = fewShot(existing);
   const tail = archive.slice(-18).map(x => ({question:x.question,answer:x.answers?.[0]}));
