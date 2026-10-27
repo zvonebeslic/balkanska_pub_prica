@@ -131,7 +131,7 @@ function card(q){
   const el=make("article",undefined,"question");el.dataset.id=q.id;
   const badges=make("div",undefined,"line");
   const status=make("span",statusName(q.status),"chip "+(q.status==="prihvaceno"?"yes":q.status==="odbijeno"?"no":"new"));
-  badges.append(status,make("span",q.topic||"Svaštara","chip"),make("span","Težina "+(q.difficulty||"?"),"chip"),make("span","Stil "+(q.styleId||"?")+"/100","chip"),make("span",dateText(q.createdAt),"hint"));
+  badges.append(status,make("span",q.topic||"Svaštara","chip"),make("span","Težina "+(q.difficulty||"?"),"chip"),make("span","Stil "+(q.styleId||"?")+"/100","chip"),make("span",dateText(q.createdAt),"hint"));if(q.origin==="pocetni-primjer")badges.append(make("span","Početni primjer","chip"));
   el.append(badges,make("h3",q.question||""));
   el.append(make("p","Odgovor: "+(q.answers||[])[0],"answer"));
   if(Array.isArray(q.answers)&&q.answers.length>1)el.append(make("p","Priznati oblici: "+q.answers.slice(1).join(" · "),"hint"));
