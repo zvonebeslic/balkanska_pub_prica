@@ -1,1 +1,192 @@
-[]
+[
+  {
+    "topic": "Glazba",
+    "focus": "povijest glazbene televizije",
+    "difficulty": 3,
+    "styleId": 2,
+    "question": "Kad je MTV 1. kolovoza 1981. počeo emitirati program, prvi spot koji je pustio bio je „Video Killed the Radio Star”. Koji je britanski sastav izveo tu pjesmu?",
+    "answers": [
+      "The Buggles",
+      "Buggles"
+    ],
+    "explanation": "Prvi spot na MTV-ju 1981. bio je „Video Killed the Radio Star” britanskog dua The Buggles.",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/101515-first-video-shown-on-mtv"
+    ],
+    "id": "uvodni-001",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 2",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Tehnologija",
+    "focus": "izumi nadahnuti prirodom",
+    "difficulty": 2,
+    "styleId": 25,
+    "question": "Švicarski inženjer George de Mestral tijekom šetnje primijetio je čičkove zapletene u pseću dlaku. Koji je danas poznati sustav kopčanja razvio nadahnut njihovim sićušnim kukicama?",
+    "answers": [
+      "Čičak-traka",
+      "Čičak traka",
+      "Velcro",
+      "Čičak"
+    ],
+    "explanation": "De Mestral je 1955. patentirao kopčanje kukicama i petljama, poznato pod markom Velcro.",
+    "sources": [
+      "https://www.loc.gov/everyday-mysteries/technology/item/who-came-up-with-the-idea-for-velcro/",
+      "https://www.invent.org/inductees/george-de-mestral"
+    ],
+    "id": "uvodni-002",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 25",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Astronomija",
+    "focus": "rotacija planeta",
+    "difficulty": 2,
+    "styleId": 66,
+    "question": "Za razliku od većine planeta Sunčeva sustava, ovaj se ledeni div okreće gotovo položen na bok, jer mu je os rotacije nagnuta za približno 98 stupnjeva. O kojem je planetu riječ?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uran ima osni nagib od približno 98°, pa izgleda kao da se kotrlja po svojoj orbiti.",
+    "sources": [
+      "https://science.nasa.gov/uranus/"
+    ],
+    "id": "uvodni-003",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 66",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Gastronomija",
+    "focus": "začini biljnog podrijetla",
+    "difficulty": 1,
+    "styleId": 50,
+    "question": "Plod jedne tropske orhideje nakon sušenja i obrade daje prepoznatljivu aromu koja se koristi u sladoledima, kolačima i parfemima. Koji je to začin?",
+    "answers": [
+      "Vanilija",
+      "Vanila",
+      "Vanilla"
+    ],
+    "explanation": "Vanilija potječe od obrađenih plodova orhideje Vanilla planifolia.",
+    "sources": [
+      "https://www.kew.org/plants/vanilla"
+    ],
+    "id": "uvodni-004",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 50",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Književnost",
+    "focus": "književni eksperimenti",
+    "difficulty": 5,
+    "styleId": 31,
+    "question": "Godine 1969. jedan je francuski književnik objavio roman „La Disparition” dug više od tristo stranica, a da pritom nije upotrijebio slovo „e”. O kojem je autoru riječ?",
+    "answers": [
+      "Georges Perec",
+      "Perec",
+      "Žorž Perek"
+    ],
+    "explanation": "Georges Perec napisao je roman kao lipogram bez slova e.",
+    "sources": [
+      "https://journals.phil.muni.cz/erb/article/view/26061"
+    ],
+    "id": "uvodni-005",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 31",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Sport",
+    "focus": "curling i sportska oprema",
+    "difficulty": 5,
+    "styleId": 34,
+    "question": "Za proizvodnju kamenja kojim se igra curling na Olimpijskim igrama koristi se poseban granit s malenog, nenastanjenog škotskog otoka u zaljevu Firth of Clyde. Kako se zove taj otok?",
+    "answers": [
+      "Ailsa Craig",
+      "Ailsa Krejg"
+    ],
+    "explanation": "Granit za olimpijsko curling kamenje dolazi s otoka Ailsa Craig.",
+    "sources": [
+      "https://worldcurling.org/2026/02/olympic-curling-stone-feature/"
+    ],
+    "id": "uvodni-006",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 34",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Likovna umjetnost",
+    "focus": "povijest fotografije",
+    "difficulty": 4,
+    "styleId": 69,
+    "question": "Britanska botaničarka 1843. godine objavila je pionirsku knjigu o morskim algama ilustriranu plavim fotografskim otiscima dobivenima cijanotipijom. Kako se zvala ova pionirka fotografije?",
+    "answers": [
+      "Anna Atkins",
+      "Ana Atkins",
+      "Atkins"
+    ],
+    "explanation": "Anna Atkins objavila je Photographs of British Algae, jedno od prvih fotografijom ilustriranih knjižnih djela.",
+    "sources": [
+      "https://www.nhm.ac.uk/discover/anna-atkins-cyanotypes-the-first-book-of-photographs.html"
+    ],
+    "id": "uvodni-007",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 69",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "neobične životinjske prilagodbe",
+    "difficulty": 2,
+    "styleId": 17,
+    "question": "Koji australski tobolčar proizvodi izmet gotovo kockastog oblika, čime mu oznake teritorija mogu ostati na mjestu bez kotrljanja?",
+    "answers": [
+      "Vombat",
+      "Wombat"
+    ],
+    "explanation": "Vombatov probavni sustav oblikuje izmet u karakteristične kockaste komadiće.",
+    "sources": [
+      "https://www.smithsonianmag.com/smart-news/why-wombats-make-cube-shaped-poos-180970847/"
+    ],
+    "id": "uvodni-008",
+    "createdAt": "2026-10-27T21:29:05.499Z",
+    "origin": "pocetni-primjer",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uvodni primjer formulacije 17",
+    "image": null,
+    "updatedAt": null
+  }
+]
