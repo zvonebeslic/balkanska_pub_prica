@@ -1,0 +1,437 @@
+{
+  "version": 2,
+  "date": "2026-11-10",
+  "generatedAt": "2026-10-27T18:32:12.377Z",
+  "questionCount": 30,
+  "sourceFileCount": 17,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09-or-2026-10",
+  "questions": [
+    {
+      "id": "daily-098eddbc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Kako se službeno zove zeleni robot s antenama koji već godinama služi kao prepoznatljiva maskota operacijskog sustava Android?",
+      "answers": [
+        "The Bot",
+        "D Bot",
+        "Bot"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f16bb4c5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je ratni brod engleskog kralja Henrika VIII. potonuo 1545.g. u morskom prolazu Solent, a velik dio njegova trupa izvađen je 1982.g.?",
+      "answers": [
+        "Mary Rose",
+        "Meri Rouz",
+        "Meri Roz",
+        "Meri Ros"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7c1dc7dd",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj fiktivnoj šumi, nakon prestanka čarolije, nestaje dvor, starješina, domaći i snaha a ostaju samo majka i sin?",
+      "answers": [
+        "Šumi Striborovoj",
+        "Striborovoj",
+        "Stribors",
+        "Stribor",
+        "Stribora"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3f7a3239",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je popularni nadimak hrvatske vaterpolske reprezentacije?",
+      "answers": [
+        "Barakude"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb0273e8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Ljubav prema motociklima pretvorio je u poslovni pothvat suosnivanjem tvrtke ARCH Motorcycle s Gardom Hollingerom koji glumac iz filmova 'Matrix' i 'John Wick'?",
+      "answers": [
+        "Keanu Reeves",
+        "Keanu Rivs",
+        "Kinu Rivs",
+        "Reeves",
+        "Rivs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f5bd294c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Koja poznata kompanija u svom službenom logotipu koristi točno ove četiri boje sa sljedećim HEX kodovima: plava (#4285F4), crvena (#EA4335), žuta (#FBBC05) i zelena (#34A853)?",
+      "answers": [
+        "Google",
+        "Gugl",
+        "Gogle",
+        "Gogl",
+        "Gugle",
+        "Gulugulu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6082283e",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koja je francuska vinska regija dala ime pjenušavom vinu čiji je naziv zaštićen i vezan uz proizvodnju na tom području?",
+      "answers": [
+        "Champagne",
+        "Šampanja",
+        "Šampanjska",
+        "Šampanje"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fc6f7738",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koja je velika mezoamerička civilizacija pružala dugotrajan otpor španjolskom osvajanju Yucatána i susjednih područja?",
+      "answers": [
+        "Maje",
+        "Maya",
+        "Maja",
+        "Majanska",
+        "Mayans",
+        "Majans",
+        "Maye"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c8c580be",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Sa koliko igrača nogometna momčad započinje susret?",
+      "answers": [
+        "11",
+        "Jedanaest",
+        "Eleven",
+        "XI"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5b4c93aa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Koja je američka pjevačica i reperica 2018.g. privukla veliku internetsku pozornost šaljivim videom 'Mooo!', u kojem se pojavljuje u odjeći s kravljim uzorkom?",
+      "answers": [
+        "Doja Cat",
+        "Doža Ket",
+        "Cat",
+        "Ket",
+        "Doja",
+        "Doža",
+        "Amala Ratna Zandile Dlamini",
+        "Zandile",
+        "Dlamini",
+        "Zandile Dlamini"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-26c3e63c",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Zemljopis",
+      "question": "Dugorepi Kvecal je ptica koja obitava u gustim šumama Srednje Amerike, legendarna je sveta ptica naroda Maya a danas se nalazi na grbu koje države?",
+      "answers": [
+        "Guatemale",
+        "Guatemala",
+        "Gvatemale",
+        "Gvatemala"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-c2de6c67",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je asirski kralj osnovao jednu od najstarijih poznatih kraljevskih knjižnica, u kojoj je pronađen Ep o Gilgamešu?",
+      "answers": [
+        "Ašurbanipal",
+        "Aššurbanapli",
+        "Sardanapal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9fd749e7",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Titule 'Princeps, Imperator, Caesar i Augustus' su se pripisivale kojim rimskim dužnosnicima?",
+      "answers": [
+        "Carevima",
+        "Car",
+        "Rimskim carevima",
+        "Rimski car"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-69702fa9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kojim Antilima pripada Barbados?",
+      "answers": [
+        "Malim",
+        "Mali",
+        "Menores",
+        "Petites",
+        "Menor",
+        "Malima",
+        "Little",
+        "Lidl"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-763a28ed",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio prvi predsjednik SAD-a koji je uživo fotografiran dok je radio u uredu?",
+      "answers": [
+        "James Knox Polk",
+        "Knox",
+        "Polk",
+        "Džejms Noks Polk",
+        "Knoks",
+        "Noks",
+        "Džejms Knoks Polk",
+        "James Polk",
+        "Džejms Polk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-38ec88f9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji sport predstavlja osnovnu inspiraciju za gameplay arkadne videoigre Pong?",
+      "answers": [
+        "Stolni tenis",
+        "Tenis stolni",
+        "Table tennis",
+        "Tejbl tenis",
+        "Tennis table",
+        "Tejbl tenis"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-66d56e18",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 3. predsjednik SAD-a, prezimena Jefferson, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "TJ"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-46075a64",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tko je napisao 'Vlak u snijegu'?",
+      "answers": [
+        "Mato Lovrak",
+        "Lovrak"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3b234f35",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Koji je sin glumca Borisa Dvornika od dječjih filmskih uloga stigao do statusa hrvatskog kralja funka, poznatog po plesu, energiji i osebujnom stilu?",
+      "answers": [
+        "Dino Dvornik",
+        "Dino"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b0bb53b3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je Grand Slam turnir prvi na kalendaru svake godine i tradicionalno se održava u Melbourneu?",
+      "answers": [
+        "Australian Open",
+        "Australijen",
+        "Australski",
+        "Australian"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fd37849b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Prema legendi, koliko su gradova negdje preko Atlantika navodno osnovali biskupi koji su u 8. stoljeću pobjegli pred muslimanskim osvajanjem Pirenejskog poluotoka, a priče o njihovu golemom bogatstvu kasnije su se povezale s Cíbolom i Quivirom te potaknule brojne ekspedicije u potrazi za zlatom i drugim blagom?",
+      "answers": [
+        "7",
+        "Sedam",
+        "VII",
+        "Seven"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3218ab48",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Rimska provincija Mauretanija se prostirala teritorijem Alžira i koje još današnje države?",
+      "answers": [
+        "Maroko",
+        "Maroka",
+        "Marocco",
+        "Marocca"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9e683028",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koja nogometna legenda Real Madrida nosi nadimak 'El Buitre'?",
+      "answers": [
+        "Emilio Butragueno",
+        "Emilio Butragenjo",
+        "Butragueno",
+        "Butragenjo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2d512765",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koji bog iz grčke mitologije uskrsava glavnog junaka na početku arkadne videoigre Altered Beast?",
+      "answers": [
+        "Zeus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1acf434f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koju međunarodnu mjernu jedinicu koristimo za električnu vodljivost?",
+      "answers": [
+        "Simens",
+        "Siemens"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8a8f3361",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Latinska riječ 'sonus', koja je sudjelovala u nastanku imena Sony, znači što?",
+      "answers": [
+        "Zvuk",
+        "Sound",
+        "Saund",
+        "Sond"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2db6cf27",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Pred zidinama kojeg se grada 1799.g. zaustavio Napoleonov pohod kroz Siriju, nakon što ni osam napada nije uspjelo slomiti obranu koju su pomagali Britanci?",
+      "answers": [
+        "Akre",
+        "Accra",
+        "Acra",
+        "Akra",
+        "Accre",
+        "Accras",
+        "Akras"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4d4b9ca1",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Znanost",
+      "question": "Kako se zove pojam u kvantnoj mehanici za sustav u kojem su dvije čestice povezane na način da mjerenje jedne trenutačno utječe na stanje druge?",
+      "answers": [
+        "Spregnutost",
+        "Kvantna spregnutost",
+        "Entanglement"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-929c7187",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji je kupaći kostim ime dobio po atolu u pacifičkom oceanu na kojem su amerikanci detonirali prvu hidrogensku bombu, a samo ime kostima, njegov je tvorac odabrao jer je znao da će izazvati istu medijsku 'eksploziju' kao i bomba?",
+      "answers": [
+        "Bikini"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0ed1f7fd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je legendarni njemački nogometaš bio trener njemačke reprezentacije na SP-u 2006.g. te ih odveo do trećeg mjesta na turniru?",
+      "answers": [
+        "Jurgen Klinsmann",
+        "Jurgen Klinsman",
+        "Klinsmann",
+        "Klinsman"
+      ],
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "version": 2,
+  "date": "2026-11-17",
+  "generatedAt": "2026-10-27T18:32:12.377Z",
+  "questionCount": 30,
+  "sourceFileCount": 17,
+  "selectionPolicy": "unique-in-month-and-not-used-in-2026-07-or-2026-08-or-2026-09-or-2026-10",
+  "questions": [
+    {
+      "id": "daily-e68ac69f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "U koji grad, u Saudijskoj Arabiji je nemuslimanima strogo zabranjen ulazak?",
+      "answers": [
+        "Meka",
+        "Mekka",
+        "Mekha",
+        "Meku",
+        "Mekku",
+        "Mekhu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1226cece",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Koji je poznati prehrambeni brend sa zeleno-žutim logotipom dobio ime po njemačkom poduzetniku Carlu Heinrichu, koji je započeo proizvodnju sušenih juha?",
+      "answers": [
+        "Knorr",
+        "Knor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c1ac91c4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Na kojem poluotoku se smjestila država Singapur?",
+      "answers": [
+        "Malajskom poluotoku",
+        "Malajskom",
+        "Malajski",
+        "Malaj",
+        "Malay",
+        "Malays",
+        "Malajs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5a67957e",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji nogometni klub igra svoje utakmice na Olimpijskom stadionu u Londonu, koji je specijalno napravljen za OI 2012.g.?",
+      "answers": [
+        "West Ham",
+        "Vest Hem"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-356d79a6",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koju su djevojku jako duge kose u svojim bajkama spominjala braća Grimm?",
+      "answers": [
+        "Zlatokosa",
+        "Zlatokosu",
+        "Matovilka",
+        "Matovilku",
+        "Rapunzel",
+        "Rapuncel"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-55677752",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Kako se zove glavni grad Laosa?",
+      "answers": [
+        "Vientiane",
+        "Vijentijan",
+        "Vjentjan",
+        "Vjent Jan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9f431af8",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je talijanski književnik napisao Pinokijeve avanture?",
+      "answers": [
+        "Carlo Collodi",
+        "Carlo Lorenzini",
+        "Karlo Kolodi",
+        "Karlo Lorencini",
+        "Collodi",
+        "Kolodi",
+        "Lorenzini",
+        "Lorencini"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-512ed8f7",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "AntickiRim",
+      "question": "Ime kojeg rimskog cara potječe iz grčke mitologije, točnije od heroja grada Megare, Dioklesa?",
+      "answers": [
+        "Dioklecijana",
+        "Dioklecijan",
+        "Diocletianus",
+        "Diocletianusa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-327277b5",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je NBA superstar zbog grčkog odrastanja i nigerijskog podrijetla dobio nadimak 'Greek Freak'?",
+      "answers": [
+        "Giannis Antetokounmpo",
+        "Đijanis Antetokoumpo",
+        "Antetokoumpo",
+        "Antetokounmpo"
+      ],
+      "image": null,
+      "rarity": "gold"
+    },
+    {
+      "id": "daily-e7d05b38",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se zvao Volvoov inženjer koji je razvio sigurnosni pojas u tri točke, izum kojem se pripisuje spašavanje golemog broja života?",
+      "answers": [
+        "Nils Bohlin",
+        "Nils Bolin",
+        "Bohlin",
+        "Bolin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c02ae352",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je sumerski bog slatkih voda, mudrosti, stvaranja i obrta pomogao oblikovati čovječanstvo?",
+      "answers": [
+        "Enki",
+        "Ea"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bc31af58",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove karizmatični vođa bande Van der Linde kojoj pripadaju Arthur Morgan i John Marston u serijalu videoigara Red Dead Redemption?",
+      "answers": [
+        "Dutch van der Linde",
+        "Dutch",
+        "Dač van der Linde",
+        "Dač",
+        "Duč"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3a8d475f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Nogomet",
+      "question": "Lionel Messi je svoj prvi reprezentativni pogodak zabio reprezentaciji koje države?",
+      "answers": [
+        "Hrvatske",
+        "Hrvatska",
+        "Croatia",
+        "Kroatija",
+        "Kroacija",
+        "Cro",
+        "Hr",
+        "Hrv",
+        "RH",
+        "Kroazija",
+        "Croatie",
+        "Kroacije",
+        "Hrvatskoj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0c93fdd6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se u badmintonu naziva snažan napadački udarac kojim se perjanica udara strmo prema dolje?",
+      "answers": [
+        "Smeč",
+        "Smash",
+        "Smeš",
+        "Smaš"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-78aa09a0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Dok se u losangeleskoj banci svađala zbog odbijenog čeka, pozornost budućeg agenta privukla je koja južnoafrička glumica, mnogo prije nego što je osvojila Oscara?",
+      "answers": [
+        "Charlize Theron",
+        "Šarliz Teron",
+        "Theron",
+        "Teron"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f4d0ea1f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "John Wilkes Booth i Lee Harvey Oswald su usmrtili predsjednike koje države?",
+      "answers": [
+        "SAD-a",
+        "Američke",
+        "American",
+        "Sjedinjenih Američkih Država",
+        "Američkih Država",
+        "SAD",
+        "USA-ja",
+        "USA",
+        "United States",
+        "United States of America",
+        "US",
+        "US-a",
+        "Sjedinjenih Država",
+        "States of America",
+        "Junajted Stejts of Amerika",
+        "Stejts of Amerika",
+        "Junajted Stejts",
+        "Ameriken"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6997cf97",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koliko je Nobelovih nagrada dobila Marie Curie?",
+      "answers": [
+        "2",
+        "Dvije",
+        "Dvi",
+        "Two",
+        "Tu",
+        "Tvo",
+        "Tvu",
+        "Zweii",
+        "Cvaj",
+        "Obe",
+        "Obadvije",
+        "Obadvi",
+        "II"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-15cf9488",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 24. predsjednik SAD-a, prezimena Cleveland, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "GC"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-5657e9b4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Ocem atomske bome smatra se J. R. Oppenheimer, a ocem hidrogenske bombe se smatra tko?",
+      "answers": [
+        "Edward Teller",
+        "Edvard Teler",
+        "Edvard Taler",
+        "Teller",
+        "Taler",
+        "Teler"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fbb12878",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Koji je hrvatski košarkaš s 30 poena bio najbolji strijelac Hrvatske u olimpijskom finalu protiv Dream Teama 1992.g.?",
+      "answers": [
+        "Dražen Petrović",
+        "Petrović"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3a08cf76",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Kojim je kodnim nazivom bila poznata velika saveznička operacija iskrcavanja u Normandiji pokrenuta 6. lipnja(juna) 1944.g.?",
+      "answers": [
+        "Overlord"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-78454891",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Tetrika I. i Tetrika II. koji su vladali odmetnutim Galskim carstvom je porazio koji rimski car, kojeg se nazivalo i obnoviteljem carstva?",
+      "answers": [
+        "Aurelijan",
+        "Aurelianus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-88151a07",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se naziva skupina međusobno bliskih otoka?",
+      "answers": [
+        "Otočje",
+        "Arhipelag",
+        "Islands",
+        "Ajlends"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f7a45908",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Jedan od najpoznatijih automobila u povijesti, Volkswagen Golf, prema poznatoj priči ime nije dobio po istoimenom sportu ni Golfskoj struji, već po kojoj životinji koja je pripadala jednom od tadašnjih zaposlenika Volkswagena?",
+      "answers": [
+        "Konj",
+        "Konju",
+        "Konja",
+        "Horse",
+        "Hors",
+        "Pferd",
+        "Pfead"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8aabd354",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "'Za njegove zasluge u unaprijeđenju fizike koje je postigao otkrićem energetskog kvanta' je rečenica koja stoji kao razlog dobivanja Nobelove medalje iz fizike kojeg njemqčkog znanstvenika?",
+      "answers": [
+        "Maxa Plancka",
+        "Max Planck",
+        "Maksa Planka",
+        "Maks Plank",
+        "Plancka",
+        "Planck",
+        "Planka",
+        "Plank",
+        "Plancks",
+        "Planks"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-54583ca4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je nogometni trener vodio Borussiju Dortmund od 2008.g. do 2015.g.?",
+      "answers": [
+        "Jurgen Klopp",
+        "Jurgen Klop",
+        "Klopp",
+        "Klop"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d7896430",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je gusar prije odlaska na more bio imućni vlasnik plantaže, zbog čega je u povijesti ostao poznat pod nadimkom Gentleman Pirate?",
+      "answers": [
+        "Stede Bonnet",
+        "Stid Bonet",
+        "Steed Bonnet",
+        "Bonnet",
+        "Bonet"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2e9b5ab0",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koliko dijagonala ima trokut?",
+      "answers": [
+        "0",
+        "Nula",
+        "Zero",
+        "Null",
+        "Ziro",
+        "Nijednu",
+        "Nikoliko",
+        "Ništa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d4cd6731",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Glazbenu slavu stečenu u grupi Idoli karijerom u oglašavanju i osnivanjem agencije McCann Beograd nadopunio je koji srpski glazbenik i poduzetnik?",
+      "answers": [
+        "Srđan Šaper",
+        "Šaper"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3622f06f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kada je industrija prelazila s 2D grafike na 3D, programeri nisu znali kako riješiti kretanje. Zato je 1996. godine izašla revolucionarna igrica koja je morala izmisliti sustav kontrole kamere u tri dimenzije, a u kojoj je glavni lik prvi put skočio u pravi 3D prostor i tako zauvijek promijenio gaming svijet. Koji je to lik?",
+      "answers": [
+        "Super Mario",
+        "Mario"
+      ],
+      "image": null
+    }
+  ]
+}
