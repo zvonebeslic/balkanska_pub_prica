@@ -1415,7 +1415,15 @@ select option {
     .auth-notice-actions { grid-template-columns: 1fr; }
 }
 
-    </style>
+    
+/* AI redakcija - poseban ulaz, bez utjecaja na kartografske i kviz opcije */
+.ai-question-entry { display:flex; align-items:center; justify-content:center; padding:12px 16px; background:#0c1423; border-bottom:1px solid rgba(148,163,184,.15); }
+.ai-question-entry a { display:inline-flex; align-items:center; justify-content:center; gap:10px; border:1px solid rgba(47,128,255,.65); border-radius:999px; background:rgba(47,128,255,.14); color:#f5f7fb; padding:10px 18px; font-weight:800; text-decoration:none; box-shadow:0 3px 15px rgba(0,0,0,.17); }
+.ai-question-entry a:hover, .ai-question-entry a:focus-visible { background:rgba(47,128,255,.28); outline-color:#2f80ff; }
+.ai-question-entry small { font-size:.76rem; color:#b2c8e9; font-weight:500; }
+@media (max-width:440px) { .ai-question-entry a { font-size:.93rem; } .ai-question-entry small { font-size:.66rem; } }
+
+</style>
 
   <script type="application/ld+json">
 {
@@ -1530,6 +1538,11 @@ select option {
             </button>
         </div>
     </header>
+    <!-- Zasebna zbirka AI nacrta; pitanja ne ulaze u igru prije odobrenja -->
+    <nav class="ai-question-entry" aria-label="AI urednička zbirka">
+      <a href="ai-pitanja.html" aria-label="Otvori AI pitanja i uredničku zbirku"><span aria-hidden="true">🧠</span><span>AI pitanja <small>· Pregled prijedloga</small></span></a>
+    </nav>
+
 
     <!-- ========================================================= -->
     <!-- HERO SLIDER - 4 KLIKABILNE SEKCIJE -->
