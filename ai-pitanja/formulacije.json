@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "opis": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv"
+  },
+  {
+    "id": 2,
+    "opis": "Kreni od povijesne godine i završi identifikacijom događaja"
+  },
+  {
+    "id": 3,
+    "opis": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok"
+  },
+  {
+    "id": 4,
+    "opis": "Kreni od zanimljive zablude i traži stvarnu činjenicu"
+  },
+  {
+    "id": 5,
+    "opis": "Poveži dvije različite industrije zajedničkim imenom"
+  },
+  {
+    "id": 6,
+    "opis": "Opiši predmet iz svakodnevnog života kroz skriveni princip"
+  },
+  {
+    "id": 7,
+    "opis": "Kreni od poznate osobe i traži njezin manje poznat izum"
+  },
+  {
+    "id": 8,
+    "opis": "Predstavi mjesto preko tri neizravna zemljopisna traga"
+  },
+  {
+    "id": 9,
+    "opis": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku"
+  },
+  {
+    "id": 10,
+    "opis": "Usporedi dvije epohe u jednom kratkom pitanju"
+  },
+  {
+    "id": 11,
+    "opis": "Ispričaj kronološki trag i završi traženjem godine"
+  },
+  {
+    "id": 12,
+    "opis": "Postavi pitanje kao iznenađujuću brojčanu usporedbu"
+  },
+  {
+    "id": 13,
+    "opis": "Opiši jedinstven sportski rekord bez otkrivanja sportaša"
+  },
+  {
+    "id": 14,
+    "opis": "Kreni od podrijetla naziva, ali traži predmet ili mjesto"
+  },
+  {
+    "id": 15,
+    "opis": "Složi kratku minipriču iz kuhinje i traži namirnicu"
+  },
+  {
+    "id": 16,
+    "opis": "Opiši glazbeno djelo po neobičnom detalju snimanja"
+  },
+  {
+    "id": 17,
+    "opis": "Opisi životinju ne navodeći njezin najpoznatiji znak"
+  },
+  {
+    "id": 18,
+    "opis": "Ugradi dvije točne činjenice i traži treću poveznicu"
+  },
+  {
+    "id": 19,
+    "opis": "Kreni od filmske scene bez naslova i traži stvarni predmet"
+  },
+  {
+    "id": 20,
+    "opis": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava"
+  },
+  {
+    "id": 21,
+    "opis": "Postavi trag preko starog i modernog naziva iste pojave"
+  },
+  {
+    "id": 22,
+    "opis": "Pitaj što je prvo u nizu povijesnih događaja"
+  },
+  {
+    "id": 23,
+    "opis": "Pitaj što je posljednje u nizu tehnoloških izuma"
+  },
+  {
+    "id": 24,
+    "opis": "Opiši znanstveni pokus, traži materijal korišten u njemu"
+  },
+  {
+    "id": 25,
+    "opis": "Ispričaj otkriće nastalo slučajno i pitaj za izum"
+  },
+  {
+    "id": 26,
+    "opis": "Pitaj o stvarnom značenju riječi koja zvuči varljivo"
+  },
+  {
+    "id": 27,
+    "opis": "Sakrij odgovor u opis simbola na zastavi ili grbu"
+  },
+  {
+    "id": 28,
+    "opis": "Kreni od nadimka osobe i traži njezino pravo ime"
+  },
+  {
+    "id": 29,
+    "opis": "Kreni od stvarnog imena i traži pseudonim"
+  },
+  {
+    "id": 30,
+    "opis": "Prikaži drevni mit i traži odgovarajući pojam"
+  },
+  {
+    "id": 31,
+    "opis": "Kreni od zapaženog književnog lika i traži autora"
+  },
+  {
+    "id": 32,
+    "opis": "Kreni od sporednog lika i traži naslov knjige"
+  },
+  {
+    "id": 33,
+    "opis": "Opiši zgradu kroz njezinu neuobičajenu funkciju"
+  },
+  {
+    "id": 34,
+    "opis": "Poveži prirodni proces i predmet koji ga imitira"
+  },
+  {
+    "id": 35,
+    "opis": "Opiši opremu ne spominjući sport kojem služi"
+  },
+  {
+    "id": 36,
+    "opis": "Kreni od primjene elementa i traži kemijski element"
+  },
+  {
+    "id": 37,
+    "opis": "Opiši fizičko svojstvo i traži predmet iz domaćinstva"
+  },
+  {
+    "id": 38,
+    "opis": "Kreni od jezika pa pitaj koje je značenje posuđenice"
+  },
+  {
+    "id": 39,
+    "opis": "Pitaj za ime broda nakon priče o njegovu putovanju"
+  },
+  {
+    "id": 40,
+    "opis": "Pitaj za otok kroz dvije životinjske ili botaničke značajke"
+  },
+  {
+    "id": 41,
+    "opis": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan"
+  },
+  {
+    "id": 42,
+    "opis": "Kreni od marke proizvoda, ali traži njezina osnivača"
+  },
+  {
+    "id": 43,
+    "opis": "Kreni od povijesti logotipa, ali traži marku"
+  },
+  {
+    "id": 44,
+    "opis": "Kreni od promjene imena grada, traži današnji naziv"
+  },
+  {
+    "id": 45,
+    "opis": "Opiši stari naziv grada, traži državu"
+  },
+  {
+    "id": 46,
+    "opis": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu"
+  },
+  {
+    "id": 47,
+    "opis": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika"
+  },
+  {
+    "id": 48,
+    "opis": "Poveži poznatu rijeku s manje poznatim pritokom"
+  },
+  {
+    "id": 49,
+    "opis": "Opiši morsku struju i traži ocean ili područje"
+  },
+  {
+    "id": 50,
+    "opis": "Kreni od recepta u tri koraka i traži naziv jela"
+  },
+  {
+    "id": 51,
+    "opis": "Postavi pitanje s tri tragova sve preciznija prema kraju"
+  },
+  {
+    "id": 52,
+    "opis": "Kreni od očite asocijacije, no završi nepredvidivim detaljem"
+  },
+  {
+    "id": 53,
+    "opis": "Opisom pravila igre traži naziv društvene igre"
+  },
+  {
+    "id": 54,
+    "opis": "Poveži dva filma kroz istu ulogu ili predmet"
+  },
+  {
+    "id": 55,
+    "opis": "Kreni od pogrešnog književnog autorstva i traži pravog autora"
+  },
+  {
+    "id": 56,
+    "opis": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem"
+  },
+  {
+    "id": 57,
+    "opis": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma"
+  },
+  {
+    "id": 58,
+    "opis": "Poveži slavnu građevinu sa zaboravljenim arhitektom"
+  },
+  {
+    "id": 59,
+    "opis": "Opiši tehničku inovaciju kroz problem koji je riješila"
+  },
+  {
+    "id": 60,
+    "opis": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan"
+  },
+  {
+    "id": 61,
+    "opis": "Postavi pitanje u kojem odgovor predstavlja broj"
+  },
+  {
+    "id": 62,
+    "opis": "Traži točan redoslijed naziva sličnih pojava"
+  },
+  {
+    "id": 63,
+    "opis": "Kreni od poznate pjesme i traži spomenuto mjesto"
+  },
+  {
+    "id": 64,
+    "opis": "Kreni od arheološkog nalaza pa pitaj civilizaciju"
+  },
+  {
+    "id": 65,
+    "opis": "Predstavi povijesnu odluku kroz njezinu posljedicu"
+  },
+  {
+    "id": 66,
+    "opis": "Opiši planet ili mjesec putem neobične karakteristike"
+  },
+  {
+    "id": 67,
+    "opis": "Kreni od meteorološke pojave pa traži njezin naziv"
+  },
+  {
+    "id": 68,
+    "opis": "Opiši alat kroz oblik i netipičnu uporabu"
+  },
+  {
+    "id": 69,
+    "opis": "Prikaži zanimljivost iz povijesti fotografije i traži uređaj"
+  },
+  {
+    "id": 70,
+    "opis": "Započni činjenicom o ljudskom tijelu i pitaj organ"
+  },
+  {
+    "id": 71,
+    "opis": "Opiši medicinski naziv kroz podrijetlo izraza"
+  },
+  {
+    "id": 72,
+    "opis": "Poveži modni detalj s društvenim običajem"
+  },
+  {
+    "id": 73,
+    "opis": "Opiši kozmetičku praksu iz povijesnog razdoblja"
+  },
+  {
+    "id": 74,
+    "opis": "Kreni od znaka u tipografiji i pitaj kako se zove"
+  },
+  {
+    "id": 75,
+    "opis": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj"
+  },
+  {
+    "id": 76,
+    "opis": "Pitaj o etimologiji naziva zanimanja"
+  },
+  {
+    "id": 77,
+    "opis": "Opiši način gradnje i pitaj arhitektonski stil"
+  },
+  {
+    "id": 78,
+    "opis": "Opiši neobičan zakon ili propis i traži državu"
+  },
+  {
+    "id": 79,
+    "opis": "Poveži kulinarsku metodu i znanstveni proces"
+  },
+  {
+    "id": 80,
+    "opis": "Kreni od podrijetla boje ili pigmenta i traži naziv"
+  },
+  {
+    "id": 81,
+    "opis": "Započni stvarnim citatom kraćim od deset riječi i traži autora"
+  },
+  {
+    "id": 82,
+    "opis": "Opiši prvi nastup sporta na Olimpijskim igrama"
+  },
+  {
+    "id": 83,
+    "opis": "Započni medaljom i pitanjem traži njezina osvajača"
+  },
+  {
+    "id": 84,
+    "opis": "Opiši omiljen dječji predmet preko godine nastanka"
+  },
+  {
+    "id": 85,
+    "opis": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla"
+  },
+  {
+    "id": 86,
+    "opis": "Pitaj koja je biljka dala ime nekom proizvodu"
+  },
+  {
+    "id": 87,
+    "opis": "Kreni od razlike originala i adaptacije pa traži naslov"
+  },
+  {
+    "id": 88,
+    "opis": "Poveži povijesnu kartu s modernim mjestom"
+  },
+  {
+    "id": 89,
+    "opis": "Opiši način mjerenja i pitaj naziv ljestvice"
+  },
+  {
+    "id": 90,
+    "opis": "Kreni od logičkog paradoksa i traži znanstveni termin"
+  },
+  {
+    "id": 91,
+    "opis": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta"
+  },
+  {
+    "id": 92,
+    "opis": "Kreni od povijesti nadimka pa traži sportsku momčad"
+  },
+  {
+    "id": 93,
+    "opis": "Opiši simboliku svakodnevnog obreda i traži običaj"
+  },
+  {
+    "id": 94,
+    "opis": "Kreni od osnivanja ustanove i pitaj njezino današnje ime"
+  },
+  {
+    "id": 95,
+    "opis": "Opiši granicu dviju geografskih cjelina i traži prolaz"
+  },
+  {
+    "id": 96,
+    "opis": "Upotrijebi opis zvuka pa traži izvor ili glazbalo"
+  },
+  {
+    "id": 97,
+    "opis": "Prikaži kontrast malog uzroka i velike povijesne posljedice"
+  },
+  {
+    "id": 98,
+    "opis": "Uključi dva neobična broja, ali traži jednostavan pojam"
+  },
+  {
+    "id": 99,
+    "opis": "Završi pitanjem čiji je odgovor poznata kratica"
+  },
+  {
+    "id": 100,
+    "opis": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum"
+  }
+]
