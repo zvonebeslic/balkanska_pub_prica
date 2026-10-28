@@ -1,4 +1,5 @@
 name: KvizToGo AI - novo pitanje
+# Provjera prvog pokretanja nakon postavljanja OPENAI_API_KEY.
 
 on:
   schedule:
