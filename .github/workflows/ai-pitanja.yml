@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY || secrets.OPEN_API_KEY }}
       KVIZTOGO_AI_MODEL: ${{ vars.KVIZTOGO_AI_MODEL || 'gpt-4.1-mini' }}
       AI_DAILY_LIMIT: "24"
     steps:
@@ -44,7 +44,7 @@ jobs:
 
       - name: Provjeri OpenAI secret
         if: ${{ env.OPENAI_API_KEY == '' }}
-        run: echo "::warning::Nema secret OPENAI_API_KEY. AI pitanja nece nastajati dok ga ne dodas u GitHub Actions secrets."
+        run: echo "::warning::Nema secret OPENAI_API_KEY ni OPEN_API_KEY. Dodaj ga u GitHub Repository secrets."
 
       - name: Generiraj jedno novo neobjavljeno pitanje
         if: ${{ env.OPENAI_API_KEY != '' }}
