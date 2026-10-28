@@ -1953,5 +1953,914 @@
     "image": null,
     "updatedAt": null,
     "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0082-20261028",
+    "createdAt": "2026-10-28T05:49:37.405Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "praška defenestracija",
+    "difficulty": 3,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Izbacivanje carskih predstavnika kroz prozor praškoga dvorca 1618. postalo je simboličnim početkom kojega velikog europskog rata?",
+    "answers": [
+      "Tridesetogodišnji rat",
+      "30-godišnji rat"
+    ],
+    "explanation": "Točan odgovor: Tridesetogodišnji rat. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Thirty_Years%27_War"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0083-20261028",
+    "createdAt": "2026-10-28T05:49:37.413Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "vrata suza",
+    "difficulty": 4,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Između Arapskog poluotoka i Roga Afrike nalazi se morski tjesnac čije se arapsko ime često prevodi kao Vrata suza. Kako se zove?",
+    "answers": [
+      "Bab el-Mandeb",
+      "Bab al-Mandab",
+      "Bab el Mandeb"
+    ],
+    "explanation": "Točan odgovor: Bab el-Mandeb. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bab-el-Mandeb"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0084-20261028",
+    "createdAt": "2026-10-28T05:49:37.419Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "fotosinteza pustinjskih sukulenata",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kod kaktusa i nekih drugih sukulenata puči se otvaraju ponajprije noću kako bi biljka manje gubila vodu. Kojom se troslovnom kraticom označava taj tip metabolizma?",
+    "answers": [
+      "CAM",
+      "CAM fotosinteza"
+    ],
+    "explanation": "Točan odgovor: CAM. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crassulacean_acid_metabolism"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0085-20261028",
+    "createdAt": "2026-10-28T05:49:37.422Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "zub nalik rogu",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Jedan arktički kit ima izrazito dug spiralni očnjak koji često izgleda kao rog jednoroga. Kako se naziva taj morski sisavac?",
+    "answers": [
+      "Narval",
+      "Narwhal"
+    ],
+    "explanation": "Točan odgovor: Narval. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0086-20261028",
+    "createdAt": "2026-10-28T05:49:37.426Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "zvuk i kratki bljeskovi",
+    "difficulty": 5,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Kad se mjehurići u tekućini pobuđuju intenzivnim zvučnim valovima, mogu pri kolapsu emitirati kratke bljeskove svjetlosti. Kako se zove ta pojava?",
+    "answers": [
+      "Sonoluminiscencija",
+      "Sonoluminescence"
+    ],
+    "explanation": "Točan odgovor: Sonoluminiscencija. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sonoluminescence"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0087-20261028",
+    "createdAt": "2026-10-28T05:49:37.431Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "zemlja u nazivu elementa",
+    "difficulty": 4,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv kemijskog elementa s atomskim brojem 52 potječe od latinske riječi tellus, što znači Zemlja. O kojem je elementu riječ?",
+    "answers": [
+      "Telur",
+      "Tellurium"
+    ],
+    "explanation": "Točan odgovor: Telur. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tellurium"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0088-20261028",
+    "createdAt": "2026-10-28T05:49:37.436Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "rođendanski paradoks",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko najmanje ljudi mora biti u skupini da bi vjerojatnost kako barem dvoje dijeli isti datum rođendana premašila pedeset posto, uz uobičajene pretpostavke?",
+    "answers": [
+      "23",
+      "Dvadeset tri"
+    ],
+    "explanation": "Točan odgovor: 23. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Birthday_problem"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0089-20261028",
+    "createdAt": "2026-10-28T05:49:37.441Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "jezera tekućih ugljikovodika",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na jednom Saturnovu mjesecu nalaze se jezera i mora ispunjena tekućim metanom i etanom, a iznad njih gusta atmosfera. Koji je to mjesec?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Točan odgovor: Titan. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0090-20261028",
+    "createdAt": "2026-10-28T05:49:37.447Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "kanali unutar kompaktne kosti",
+    "difficulty": 5,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "U kompaktnoj kosti krvne žile i živci prolaze kroz uzdužne kanale unutar osteona, koji nose prezime engleskoga liječnika iz 17. stoljeća. Čije?",
+    "answers": [
+      "Havers",
+      "Clopton Havers",
+      "Haversovi kanali"
+    ],
+    "explanation": "Točan odgovor: Havers. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Haversian_canal"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0091-20261028",
+    "createdAt": "2026-10-28T05:49:37.450Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "prva registrirana dot com domena",
+    "difficulty": 4,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Još 1985. registrirana je prva domena s nastavkom .com, nazvana prema američkom proizvođaču računala. Kako glasi ta domena?",
+    "answers": [
+      "symbolics.com",
+      "Symbolics"
+    ],
+    "explanation": "Točan odgovor: symbolics.com. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Symbolics.com"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0092-20261028",
+    "createdAt": "2026-10-28T05:49:37.456Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "most koji trepće",
+    "difficulty": 5,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Britanski most preko rijeke Tyne zakreće se tako da se prolaz za pješake i luk zajedno naginju poput kapka. U nazivu kojega grada nalazi se ime ovog Milenijskog mosta?",
+    "answers": [
+      "Gateshead"
+    ],
+    "explanation": "Točan odgovor: Gateshead. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gateshead_Millennium_Bridge"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0093-20261028",
+    "createdAt": "2026-10-28T05:49:37.460Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "autor tornjeva Petronas",
+    "difficulty": 4,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Nekada najviše zgrade svijeta, blizanci Petronas u Kuala Lumpuru, projektirao je arhitekt rođen u Argentini. Kako se prezivao?",
+    "answers": [
+      "Pelli",
+      "César Pelli",
+      "Cesar Pelli"
+    ],
+    "explanation": "Točan odgovor: Pelli. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/César_Pelli"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0094-20261028",
+    "createdAt": "2026-10-28T05:49:37.464Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "portret ili tronie",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Vermeerova Djevojka s bisernom naušnicom ne mora prikazivati određenu osobu nego zamišljeni lik s naglašenim izrazom. Kojom se nizozemskom riječi naziva takva slikarska studija?",
+    "answers": [
+      "Tronie"
+    ],
+    "explanation": "Točan odgovor: Tronie. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tronie"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0095-20261028",
+    "createdAt": "2026-10-28T05:49:37.469Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "skupina književnih ograničenja",
+    "difficulty": 5,
+    "styleId": 94,
+    "styleDescription": "Kreni od osnivanja ustanove i pitaj njezino današnje ime",
+    "question": "Raymond Queneau i François Le Lionnais 1960. osnovali su francusku skupinu koja istražuje književnost zasnovanu na matematičkim i jezičnim pravilima. Kojom je kraticom poznata?",
+    "answers": [
+      "Oulipo"
+    ],
+    "explanation": "Točan odgovor: Oulipo. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Oulipo"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0096-20261028",
+    "createdAt": "2026-10-28T05:49:37.472Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "osobni jezični otisak",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U lingvistici postoji naziv za osebujni način govora i izbora riječi karakterističan za pojedinca. Kako se naziva takav osobni jezični sustav?",
+    "answers": [
+      "Idiolekt",
+      "Idiolect"
+    ],
+    "explanation": "Točan odgovor: Idiolekt. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Idiolect"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0097-20261028",
+    "createdAt": "2026-10-28T05:49:37.477Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "glazbalo koje se ne dodiruje",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Izvođač nadzire visinu i glasnoću tona pokretima ruku u zraku pokraj dviju antena, bez dodirivanja instrumenta. Kako se zove to elektroničko glazbalo?",
+    "answers": [
+      "Teremin",
+      "Theremin"
+    ],
+    "explanation": "Točan odgovor: Teremin. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Theremin"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0098-20261028",
+    "createdAt": "2026-10-28T05:49:37.481Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "grof iz Nosferatua",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U nijemom hororu Nosferatu iz 1922. Drakulin je lik preimenovan kako bi se izbjegla izravna uporaba imena iz romana. Kako se zove jezivi grof?",
+    "answers": [
+      "Orlok",
+      "Grof Orlok",
+      "Count Orlok"
+    ],
+    "explanation": "Točan odgovor: Orlok. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Count_Orlok"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0099-20261028",
+    "createdAt": "2026-10-28T05:49:37.486Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "tvorac Zone sumraka",
+    "difficulty": 4,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Antologijska serija Zona sumraka istraživala je ljudske slabosti kroz fantastiku i neočekivane obrate, a njezin je tvorac često osobno najavljivao epizode. Kako se zvao?",
+    "answers": [
+      "Rod Serling",
+      "Serling"
+    ],
+    "explanation": "Točan odgovor: Rod Serling. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rod_Serling"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0100-20261028",
+    "createdAt": "2026-10-28T05:49:37.490Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Videoigre",
+    "focus": "kocka pratitelj u Portalu",
+    "difficulty": 4,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U logičkoj igri Portal jedna posebno označena kocka služi za pritisne ploče i postaje predmet ironične emocionalne privrženosti. Kojim je nazivom poznata?",
+    "answers": [
+      "Weighted Companion Cube",
+      "Companion Cube",
+      "Kocka pratitelj"
+    ],
+    "explanation": "Točan odgovor: Weighted Companion Cube. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Portal_(video_game)"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0101-20261028",
+    "createdAt": "2026-10-28T05:49:37.495Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "olimpijsko navlačenje konopa",
+    "difficulty": 4,
+    "styleId": 82,
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "question": "Na ranim modernim Olimpijskim igrama medalje su se dijelile i u ekipnoj disciplini koja je kasnije nestala iz programa, a pobjednici su povlačili suparnike preko crte. Kojoj?",
+    "answers": [
+      "Navlačenje konopa",
+      "Tug of war"
+    ],
+    "explanation": "Točan odgovor: Navlačenje konopa. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tug_of_war_at_the_Summer_Olympics"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0102-20261028",
+    "createdAt": "2026-10-28T05:49:37.507Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "prvi nadzvučni let",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Pilot koji je 1947. u eksperimentalnom avionu Bell X-1 prvi službeno probio zvučnu barijeru u vodoravnom letu zvao se Chuck. Koje je njegovo prezime?",
+    "answers": [
+      "Yeager",
+      "Chuck Yeager"
+    ],
+    "explanation": "Točan odgovor: Yeager. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chuck_Yeager"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0103-20261028",
+    "createdAt": "2026-10-28T05:49:37.512Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "škotski ručno tkani tvid",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Prema zaštiti oznake podrijetla, Harris Tweed mora se tkati ručno u domovima otočana na škotskom arhipelagu. Kojem?",
+    "answers": [
+      "Vanjski Hebridi",
+      "Outer Hebrides"
+    ],
+    "explanation": "Točan odgovor: Vanjski Hebridi. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Harris_Tweed"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0104-20261028",
+    "createdAt": "2026-10-28T05:49:37.516Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ljepota",
+    "focus": "mirisna tvar iz probave kita",
+    "difficulty": 5,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Jedan od najskupljih tradicionalnih sastojaka parfema može nastati u probavnom sustavu golemoga zubatog kita, a na plažama se nalazi kao voštana tvar. Kako se zove?",
+    "answers": [
+      "Ambra",
+      "Ambergris"
+    ],
+    "explanation": "Točan odgovor: Ambra. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ambergris"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0105-20261028",
+    "createdAt": "2026-10-28T05:49:37.521Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "krupne japanske krušne mrvice",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Za posebno hrskavu koricu japanski kuhari koriste lagane, krupne bijele krušne mrvice koje se razlikuju od običnih sitnih mrvica. Kako se nazivaju?",
+    "answers": [
+      "Panko"
+    ],
+    "explanation": "Točan odgovor: Panko. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Panko"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0106-20261028",
+    "createdAt": "2026-10-28T05:49:37.525Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Brendovi",
+    "focus": "Nintendo i japanske igraće karte",
+    "difficulty": 3,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "Mnogo prije konzola i videoigara, Nintendo je u Kyotu izrađivao tradicionalne japanske igraće karte ukrašene cvjetovima. Kako se te karte zovu?",
+    "answers": [
+      "Hanafuda"
+    ],
+    "explanation": "Točan odgovor: Hanafuda. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hanafuda"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0107-20261028",
+    "createdAt": "2026-10-28T05:49:37.531Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "nordijsko stablo svijeta",
+    "difficulty": 3,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "U nordijskim mitovima Yggdrasil povezuje različite svjetove kao golemo stablo čija krošnja i korijenje obuhvaćaju kozmos. Kojoj se vrsti drveta obično pripisuje?",
+    "answers": [
+      "Jasen",
+      "Ash tree"
+    ],
+    "explanation": "Točan odgovor: Jasen. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yggdrasil"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0108-20261028",
+    "createdAt": "2026-10-28T05:49:37.537Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Filozofija",
+    "focus": "Diogen i keramička posuda",
+    "difficulty": 5,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Za Diogena iz Sinope često kažemo da je stanovao u bačvi, no antički izvori spominju veliku keramičku posudu za skladištenje. Kako se ta posuda naziva?",
+    "answers": [
+      "Pitos",
+      "Pithos"
+    ],
+    "explanation": "Točan odgovor: Pitos. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pithos"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0109-20261028",
+    "createdAt": "2026-10-28T05:49:37.542Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "zaštita od nezakonitog pritvora",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Latinski pravni izraz kojim sud može zatražiti dovođenje pritvorenika radi provjere zakonitosti njegova zadržavanja glasi kako?",
+    "answers": [
+      "Habeas corpus"
+    ],
+    "explanation": "Točan odgovor: Habeas corpus. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Habeas_corpus"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0110-20261028",
+    "createdAt": "2026-10-28T05:49:37.548Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "kameni novac Mikronezije",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Na pacifičkom otoku Yap vrijednost se nekoć čuvala i u golemim kamenim kolutovima s rupom u sredini, koji se nisu morali fizički premještati pri promjeni vlasnika. Kako se taj novac zove?",
+    "answers": [
+      "Rai",
+      "Rai kamenje",
+      "Rai stones"
+    ],
+    "explanation": "Točan odgovor: Rai. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rai_stones"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0111-20261028",
+    "createdAt": "2026-10-28T05:49:37.553Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "plutajuća vulkanska stijena",
+    "difficulty": 3,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Plinovi zarobljeni u naglo ohlađenoj lavi stvaraju vrlo poroznu stijenu koja ponekad može plutati na vodi. Kako se takva stijena naziva?",
+    "answers": [
+      "Plovućac",
+      "Pumice"
+    ],
+    "explanation": "Točan odgovor: Plovućac. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pumice"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0112-20261028",
+    "createdAt": "2026-10-28T05:49:37.558Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "kiša koja ispari prije tla",
+    "difficulty": 4,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Iz oblaka se vide pruge oborine, no kapljice ili kristali nestanu u suhom zraku prije nego što stignu do tla. Kako meteorolozi nazivaju tu pojavu?",
+    "answers": [
+      "Virga"
+    ],
+    "explanation": "Točan odgovor: Virga. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Virga"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0113-20261028",
+    "createdAt": "2026-10-28T05:49:37.563Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "more omeđeno strujama",
+    "difficulty": 4,
+    "styleId": 49,
+    "styleDescription": "Opiši morsku struju i traži ocean ili područje",
+    "question": "Jedno atlantsko more nema klasične kopnene obale jer ga omeđuju oceanske struje i poznato je po velikim nakupinama smeđih algi. Kako se zove?",
+    "answers": [
+      "Sargaško more",
+      "Sargasso Sea"
+    ],
+    "explanation": "Točan odgovor: Sargaško more. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sargasso_Sea"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0114-20261028",
+    "createdAt": "2026-10-28T05:49:37.568Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "japanski popravak keramike zlatom",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Razbijena keramička posuda ne mora skrivati svoje pukotine: u japanskoj tradiciji one se mogu naglasiti lakom i zlatnim prahom. Kako se zove ta vještina?",
+    "answers": [
+      "Kintsugi"
+    ],
+    "explanation": "Točan odgovor: Kintsugi. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kintsugi"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0115-20261028",
+    "createdAt": "2026-10-28T05:49:37.573Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "japansko vezivanje tkanine prije bojenja",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Prije uranjanja u boju tkanina se zaveže, stisne ili presavije tako da nastanu nepravilni bijeli uzorci. Kojim se japanskim nazivom zove skupina tih tehnika?",
+    "answers": [
+      "Shibori",
+      "Šibori"
+    ],
+    "explanation": "Točan odgovor: Shibori. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shibori"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0116-20261028",
+    "createdAt": "2026-10-28T05:49:37.578Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "drvo za proizvodnju pluta",
+    "difficulty": 3,
+    "styleId": 86,
+    "styleDescription": "Pitaj koja je biljka dala ime nekom proizvodu",
+    "question": "Boca se može zatvoriti prirodnim čepom dobivenim od debele kore stabla Quercus suber. Kako se na hrvatskom zove ta vrsta hrasta?",
+    "answers": [
+      "Hrast plutnjak",
+      "Plutnjak"
+    ],
+    "explanation": "Točan odgovor: Hrast plutnjak. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Quercus_suber"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0117-20261028",
+    "createdAt": "2026-10-28T05:49:37.585Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "izvorni naziv igre Pac-Man",
+    "difficulty": 4,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Zbog mogućeg vandaliziranja slova na arkadnom automatu, američka verzija igre Pac-Man dobila je drukčiji naziv od izvorne japanske. Kako je u Japanu isprva glasilo ime?",
+    "answers": [
+      "Puck Man",
+      "Puck-Man"
+    ],
+    "explanation": "Točan odgovor: Puck Man. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pac-Man"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0118-20261028",
+    "createdAt": "2026-10-28T05:49:37.590Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "knjižnični decimalni sustav",
+    "difficulty": 3,
+    "styleId": 94,
+    "styleDescription": "Kreni od osnivanja ustanove i pitaj njezino današnje ime",
+    "question": "Mnogi knjižničari razvrstavaju knjige u deset osnovnih skupina prema sustavu iz 19. stoljeća nazvanom po američkom knjižničaru. Kako mu je bilo prezime?",
+    "answers": [
+      "Dewey",
+      "Melvil Dewey"
+    ],
+    "explanation": "Točan odgovor: Dewey. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dewey_Decimal_Classification"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0119-20261028",
+    "createdAt": "2026-10-28T05:49:37.593Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "učestalost nakon prvog zapažanja",
+    "difficulty": 3,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Nakon što naučimo novu riječ, odjednom nam se čini da je čujemo na svakom koraku. Kako se naziva iluzija poznata i kao fenomen Baader-Meinhof?",
+    "answers": [
+      "Iluzija učestalosti",
+      "Frequency illusion"
+    ],
+    "explanation": "Točan odgovor: Iluzija učestalosti. Provjeriti izvor prije konačne objave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frequency_illusion"
+    ],
+    "image": null,
+    "updatedAt": null,
+    "verification": "za_urednicku_provjeru"
   }
 ]
