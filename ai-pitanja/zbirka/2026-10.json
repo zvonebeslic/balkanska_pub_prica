@@ -5266,5 +5266,255 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0220-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "hetitski kralj na mirovnom sporazumu s Ramzesom II.",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "U sjedištu UN-a čuva se replika drevnoga mirovnog ugovora. Na jednoj je strani bio egipatski faraon Ramzes II., a na drugoj hetitski vladar čije ime tražimo. Tko je bio taj kralj?",
+    "answers": [
+      "Hatušili III.",
+      "Hatušili III",
+      "Hattusili III",
+      "Hattusili III.",
+      "Hatušili",
+      "Hattusili"
+    ],
+    "explanation": "Ugovor između Ramzesa II. i hetitskoga kralja Hatušilija III. jedan je od najstarijih sačuvanih mirovnih sporazuma. Njegova se replika nalazi u sjedištu Ujedinjenih naroda.",
+    "sources": [
+      "https://www.un.org/ungifts/replica-peace-treaty-between-hattusilis-and-ramses-ii"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0221-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "najveće poznato antarktičko jezero ispod ledenog pokrova",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Ne vidi se s površine, nalazi se pod kilometrima antarktičkog leda i nosi isto ime kao obližnja ruska istraživačka postaja. Kako se zove ovo golemo podledeno jezero?",
+    "answers": [
+      "Vostok",
+      "Jezero Vostok",
+      "Lake Vostok"
+    ],
+    "explanation": "Vostok je najveće poznato antarktičko podledeno jezero, skriveno pod oko četiri kilometra leda. Ime dijeli s ruskom istraživačkom postajom na tom području.",
+    "sources": [
+      "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/CryoSat/85_new_subglacial_lakes_detected_below_Antarctica"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0222-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "mesožderna biljka s dvostrukim podražajem zamke",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "U močvarnom tlu siromašnom hranjivim tvarima jedna biljka hvata kukce listovima koji se obično zatvaraju nakon dvaju brzih podražaja osjetljivih dlačica. Koja je to biljka?",
+    "answers": [
+      "Venerina muholovka",
+      "Dionaea muscipula",
+      "Dioneja",
+      "Venerina mušolovka"
+    ],
+    "explanation": "Venerina muholovka koristi osjetljive dlačice u preobraženim listovima. Dva brza električna signala najčešće pokreću zatvaranje zamke, čime biljka izbjegava nepotrebno trošenje energije.",
+    "sources": [
+      "https://www.kew.org/read-and-watch/venus-flytrap-creepy-carnivorous-plant"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0223-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "afrička močvarna ptica koja klepeće golemim kljunom",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "U afričkim močvarama ova ptica može dugo nepomično čekati ribu, a partnerima se oglašava i glasnim klepetanjem kljuna. Kako se naziva vrsta Balaeniceps rex?",
+    "answers": [
+      "Krupnokljuna roda",
+      "Shoebill",
+      "Krupnokljuna roda (shoebill)"
+    ],
+    "explanation": "Krupnokljuna roda, Balaeniceps rex, živi u močvarama središnje i istočne Afrike. Velikim kljunom hvata ribu, a karakteristično klepetanje služi joj i za komunikaciju.",
+    "sources": [
+      "https://animals.sandiegozoo.org/animals/shoebill",
+      "https://www.info.hazu.hr/jedinice/zavod-za-ornitologiju-u-zagrebu/rjecnik-standardnih-hrvatskih-pticjih-naziva/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0224-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Goodyearovo poboljšanje gume pomoću sumpora i topline",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Prirodna guma nekada je na vrućini postajala ljepljiva, a na hladnoći krhka. Charles Goodyear pronašao je način da je sumporom i toplinom učini postojanijom. Kako se naziva taj postupak?",
+    "answers": [
+      "Vulkanizacija",
+      "Vulkaniziranje",
+      "Vulcanization",
+      "Vulkanizacija gume"
+    ],
+    "explanation": "Vulkanizacijom se među polimernim lancima gume stvaraju veze koje poboljšavaju elastičnost i otpornost na promjene temperature. Goodyearovo otkriće iz 1839. otvorilo je put širokoj primjeni gume.",
+    "sources": [
+      "https://cen.acs.org/acs-news/comment/Comment-Lessons-learned-Charles-Goodyear/102/i20"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0225-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "topološka površina bez ruba i bez odvojene unutrašnjosti",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Möbiusova traka ima jednu stranu, ali rub. Njezina još neobičnija topološka rođakinja nema ni rub ni odvojenu unutarnju i vanjsku stranu. Kako se naziva ta površina?",
+    "answers": [
+      "Kleinova boca",
+      "Klein bottle",
+      "Klajnova boca"
+    ],
+    "explanation": "Kleinova boca matematička je neorijentabilna površina bez ruba. U običnom trodimenzionalnom prostoru njezin prikaz mora se presijecati sam sa sobom, iako prava matematička površina nema takav presjek.",
+    "sources": [
+      "https://collection.sciencemuseumgroup.org.uk/objects/co415792/klein-bottle-1995-single-surface-model"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0226-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "prvi potvrđeni međuzvjezdani posjetitelj iz 2017.",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "U listopadu 2017. astronomi su otkrili tijelo čija je putanja pokazala da je došlo izvan Sunčeva sustava. Koje je havajsko ime dobio taj prvi potvrđeni međuzvjezdani posjetitelj?",
+    "answers": [
+      "Oumuamua",
+      "ʻOumuamua",
+      "1I/2017 U1",
+      "1I Oumuamua"
+    ],
+    "explanation": "ʻOumuamua otkriven je 19. listopada 2017. teleskopom Pan-STARRS1 na Havajima. Njegova putanja potvrdila je da potječe iz međuzvjezdanog prostora, a havajsko ime odnosi se na glasnika izdaleka.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/comets/oumuamua/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0227-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "moždano područje važno za proizvodnju govora",
+    "difficulty": 2,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Oštećenje dijela donje čeone vijuge mozga može otežati stvaranje tečnog govora, iako osoba često razumije što joj se govori. Po kojem je francuskom liječniku nazvano to područje?",
+    "answers": [
+      "Broca",
+      "Paul Broca",
+      "Brocino područje",
+      "Brocina zona",
+      "Brocaovo područje"
+    ],
+    "explanation": "Brocino područje dio je čeonog režnja važan za proizvodnju govora i jezika. Njegovo oštećenje može izazvati Brocinu afaziju, s otežanim oblikovanjem riječi i rečenica.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/mesh/68065711"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0228-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "broj pionirki koje su programirale ENIAC",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Prije nego što su programi stali u datoteke, skupina matematičarki upravljala je ENIAC-om prespajanjem kabela i podešavanjem prekidača. Koliko se žena ubraja u njegov izvorni programerski tim?",
+    "answers": [
+      "6",
+      "Šest",
+      "Six"
+    ],
+    "explanation": "Šest pionirki programiralo je ENIAC, među njima Jean Jennings Bartik i Betty Snyder Holberton. Programiranje je zahtijevalo ručno podešavanje sklopki i povezivanje dijelova stroja.",
+    "sources": [
+      "https://penntoday.upenn.edu/news/penns-eniac-worlds-first-electronic-computer-turns-80"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0229-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "sila koja pokreće vodu u ustavama Panamskog kanala",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Brodovi se u ustavama Panamskog kanala podižu desecima metara, no voda za njihovo punjenje ne mora se pumpati. Koja prirodna sila omogućuje njezino pritjecanje iz višeg jezera?",
+    "answers": [
+      "Gravitacija",
+      "Sila teža",
+      "Zemljina gravitacija",
+      "Teža"
+    ],
+    "explanation": "Voda iz jezera Gatún ulazi u komore ustava zahvaljujući gravitaciji. Sustav kanala koristi razliku visina i mrežu kanala za punjenje i pražnjenje komora, bez crpki za taj postupak.",
+    "sources": [
+      "https://pancanal.com/en/design-of-the-locks/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
