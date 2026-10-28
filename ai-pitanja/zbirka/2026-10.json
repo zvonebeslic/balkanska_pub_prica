@@ -5765,5 +5765,127 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0240-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "indonezijsko bojenje tkanine uz zaštitni sloj vrućeg voska",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Obrtnik najprije vrućim voskom iscrta uzorak na tkanini, zatim je uroni u boju, a na kraju vosak ukloni. Kako se zove ova indonezijska tekstilna tehnika uvrštena na UNESCO-ov popis 2009.?",
+    "answers": [
+      "Batik",
+      "Batik tehnika",
+      "Batik bojenje"
+    ],
+    "explanation": "Batik se temelji na zaštiti dijelova tkanine voskom kako boja ne bi prodrla u prekrivene površine. Indonezijski batik uvršten je 2009. na UNESCO-ov popis nematerijalne kulturne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/batik-of-indonesia-a-living-tradition-00170"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0241-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "ime plišanog tigra u stripu Billa Wattersona",
+    "difficulty": 1,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Šestogodišnji Calvin u stripu Billa Wattersona razgovara sa svojim plišanim tigrom kao sa živim prijateljem. Koje ime, preuzeto od engleskog filozofa iz 17. stoljeća, nosi taj tigar?",
+    "answers": [
+      "Hobbes",
+      "Hobs",
+      "Thomas Hobbes"
+    ],
+    "explanation": "Hobbes je Calvinov plišani tigar, koji u dječakovoj mašti oživljava. Bill Watterson dao mu je ime po filozofu Thomasu Hobbesu, dok je Calvin nazvan po Jeanu Calvinu.",
+    "sources": [
+      "https://cartoons.osu.edu/exhibits/exploring-calvin-and-hobbes"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0242-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "budističko učilište Nalanda u indijskoj državi Bihar",
+    "difficulty": 4,
+    "styleId": 94,
+    "styleDescription": "Kreni od osnivanja ustanove i pitaj njezino današnje ime",
+    "question": "U današnjoj indijskoj državi Bihar stoljećima je djelovalo veliko budističko samostansko učilište s knjižnicama i učenjacima iz različitih dijelova Azije. Kako se zove to povijesno središte znanja, danas pod zaštitom UNESCO-a?",
+    "answers": [
+      "Nalanda",
+      "Nālandā",
+      "Nalanda Mahavihara"
+    ],
+    "explanation": "Nalanda Mahavihara bila je važno budističko središte obrazovanja i učenja, osobito od 5. do 13. stoljeća. Arheološki lokalitet upisan je na UNESCO-ov Popis svjetske baštine 2016.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1502"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0243-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "izumitelj staklenke s navojnim poklopcem patentirane 1858.",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Staklenke za zimnicu postale su praktičnije kada je 1858. patentiran navojni grlić s poklopcem koji se može čvrsto zatvoriti. Po kojem se američkom limaru i izumitelju takve staklenke i danas nazivaju?",
+    "answers": [
+      "John Landis Mason",
+      "John Mason",
+      "Mason",
+      "Džon Lejndis Mejson"
+    ],
+    "explanation": "John Landis Mason patentirao je 30. studenoga 1858. staklenku s navojnim grlićem i poklopcem. Naziv Mason jar ostao je u uporabi za staklenke namijenjene konzerviranju hrane.",
+    "sources": [
+      "https://www.smithsonianmag.com/innovation/brief-history-mason-jar-180975546/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0244-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Filozofija",
+    "focus": "Pascalov argument vjere zasnovan na mogućem beskonačnom dobitku",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Jedan filozofski argument ne pokušava dokazati Božje postojanje, nego razmatra isplati li se vjerovati kada bi mogući dobitak bio beskonačan. Kako se naziva taj argument iz Pascalovih Misli?",
+    "answers": [
+      "Pascalova oklada",
+      "Paskalova oklada",
+      "Pascal's Wager",
+      "Pascalova opklada"
+    ],
+    "explanation": "Pascalova oklada argument je iz djela Misli u kojem Blaise Pascal razmatra vjerovanje kroz moguće ishode i očekivanu korist. Riječ je o filozofskom argumentu, a ne dokazu Božjeg postojanja.",
+    "sources": [
+      "https://plato.stanford.edu/entries/pascal-wager/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
