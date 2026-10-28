@@ -5888,5 +5888,614 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0245-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "glineni Kirov cilindar iz Babilona i osvajanje 539. pr. Kr.",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Glineni predmet s klinopisom, pronađen 1879. u Babilonu, bilježi kako je perzijski vladar nakon osvajanja grada 539. pr. Kr. obnavljao svetišta. Kako se zove taj znameniti cilindrični zapis?",
+    "answers": [
+      "Kirov cilindar",
+      "Kirov valjak",
+      "Cyrus Cylinder",
+      "Cilindar Kira Velikog"
+    ],
+    "explanation": "Kirov cilindar nastao je po nalogu perzijskog kralja Kira Velikog nakon osvajanja Babilona. Tekst na babilonskom jeziku govori o njegovoj vlasti i obnovi svetišta; nije izvorno zamišljen kao moderna deklaracija ljudskih prava.",
+    "sources": [
+      "https://www.metmuseum.org/exhibitions/listings/2013/cyrus-cylinder"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0246-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "unutrašnja delta Okavanga u pustinji Kalahari",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Tri traga: nalazi se u Bocvani, poplavljuje tijekom tamošnje sušne sezone, a voda joj se gubi u pijesku Kalaharija umjesto da otječe u more. Kako se zove ta neobična unutrašnja delta?",
+    "answers": [
+      "Delta Okavanga",
+      "Okavango",
+      "Okavango Delta",
+      "Delta rijeke Okavango"
+    ],
+    "explanation": "Delta Okavanga u sjeverozapadnoj Bocvani jedan je od rijetkih velikih sustava unutrašnjih delti bez izlaza na more. Poplavni val rijeke Okavango stiže tijekom sušne sezone, stvarajući velika močvarna staništa.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1432"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0247-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "mikoriza kao simbioza gljive i biljnog korijena",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Lišaj je zajednica gljive i fotosintetskog partnera, ali u šumskom tlu gljiva često razmjenjuje hranjive tvari sa živim korijenom biljke. Kako se naziva ta druga vrsta simbioze?",
+    "answers": [
+      "Mikoriza",
+      "Mycorrhiza",
+      "Mycorrhizae"
+    ],
+    "explanation": "Mikoriza je simbioza korijena biljke i gljive: gljivične niti pomažu biljci upijati vodu i minerale, a biljka gljivi daje organske spojeve nastale fotosintezom. Takvu povezanost ima velik dio kopnenih biljaka.",
+    "sources": [
+      "https://www.kew.org/science/our-science/departments/ecosystem-stewardship/mycorrhizal-ecology"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0248-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "pištoljski račić koji kavitacijskim mjehurićem omamljuje plijen",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Malen morski rak može snažnim trzajem jednoga kliješta stvoriti mjehurić čiji kolaps izaziva glasan prasak i udarni val. Kako se naziva taj neobični račić?",
+    "answers": [
+      "Pištoljski račić",
+      "Rak pištolj",
+      "Pucketavi račić",
+      "Pistol shrimp",
+      "Snapping shrimp"
+    ],
+    "explanation": "Pištoljski račići imaju specijalizirano kliješte koje vrlo brzo zatvaraju. Time u vodi stvaraju kavitacijski mjehurić, a njegov kolaps proizvodi zvuk i udarni val kojim mogu omamiti plijen.",
+    "sources": [
+      "https://www.smithsonianmag.com/smart-news/these-young-shrimp-can-shut-their-claws-as-fast-as-a-speeding-bullet-180981724/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0249-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "aqua regia odnosno kraljevska voda koja otapa zlato",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Latinski naziv aqua regia ne označava običnu vodu, nego vrlo korozivnu smjesu dušične i klorovodične kiseline koja može otopiti i zlato. Kako glasi njezin tradicionalni hrvatski naziv?",
+    "answers": [
+      "Kraljevska voda",
+      "Zlatotopka",
+      "Aqua regia"
+    ],
+    "explanation": "Kraljevska voda naziv je za smjesu koncentrirane dušične i klorovodične kiseline. Njezino djelovanje omogućuje otapanje zlata, koje je otporno na mnoge pojedinačne kiseline; riječ je o iznimno opasnoj laboratorijskoj smjesi.",
+    "sources": [
+      "https://www.chemistryworld.com/podcasts/aqua-regia/3007710.article"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0250-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Eulerov problem sedam mostova i nastanak teorije grafova",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Može li šetač prijeći svaki od sedam mostova nekadašnjeg Königsberga točno jednom? Euler je taj problem 1736. sveo na točke i njihove veze. Koju je matematičku disciplinu time pomogao utemeljiti?",
+    "answers": [
+      "Teorija grafova",
+      "Graph theory"
+    ],
+    "explanation": "Euler je dokazao da tražena šetnja preko svih sedam mostova nije moguća. Promatrajući samo veze između dijelova grada, postavio je temelje teorije grafova, koja danas opisuje mreže i njihove odnose.",
+    "sources": [
+      "https://mathshistory.st-andrews.ac.uk/HistTopics/Topology_in_mathematics/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0251-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Epimetej i Janus kao Saturnovi mjeseci koji razmjenjuju orbite",
+    "difficulty": 5,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Saturnov mjesec Janus dijeli orbitalno područje s još jednim mjesecom; njihova gravitacija približno svake četiri godine zamijeni bližu i dalju putanju. Kako se zove Janusov partner?",
+    "answers": [
+      "Epimetej",
+      "Epimetheus",
+      "Epimeteus"
+    ],
+    "explanation": "Janus i Epimetej nalaze se u koorbitalnoj rezonanciji oko Saturna. Kada se brži unutrašnji mjesec približi drugome, njihovo međudjelovanje uzrokuje zamjenu unutrašnje i vanjske putanje.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/janus/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0252-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Bill English kao graditelj prvog drvenog prototipa računalnog miša",
+    "difficulty": 5,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Douglas Engelbart poznat je po ideji računalnog miša, ali drveni prototip izrađen 1964. u Stanford Research Instituteu sastavio je njegov kolega inženjer. Kako se zvao taj čovjek?",
+    "answers": [
+      "Bill English",
+      "William English",
+      "William K. English"
+    ],
+    "explanation": "Inženjer Bill English izradio je 1964. prvi drveni prototip Engelbartova računalnog miša. Uređaj je koristio dva kotačića za bilježenje pomaka, a sačuvani primjerak nalazi se u Computer History Museumu.",
+    "sources": [
+      "https://computerhistory.org/sri-mouse-mn052024/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0253-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "nizozemska pokretna protupoplavna barijera Maeslantkering",
+    "difficulty": 5,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Dva golema zakretna čelična krila čuvaju plovni put prema Rotterdamu: u slučaju olujnog mora zatvaraju prolaz, pune se vodom i spuštaju. Kako se zove nizozemska protupoplavna barijera dovršena 1997.?",
+    "answers": [
+      "Maeslantkering",
+      "Maeslant Barrier",
+      "Barijera Maeslant",
+      "Maeslantova barijera"
+    ],
+    "explanation": "Maeslantkering kraj Hoek van Hollanda dio je nizozemskog sustava zaštite od poplava. Dva pokretna krila, svako široko oko 210 metara, zatvaraju plovni put kada prijeti velika olujna plima.",
+    "sources": [
+      "https://www.rijkswaterstaat.nl/en/projects/iconic-structures/maeslant-barrier"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0254-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Francisco de Paula del Villar kao prvi arhitekt Sagrade Familije",
+    "difficulty": 4,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Sagrada Família danas je gotovo sinonim za Gaudíja, ali njezin je kamen temeljac 1882. položen prema projektu drugog arhitekta. Tko je osmislio prvotni neogotički projekt barcelonske bazilike?",
+    "answers": [
+      "Francisco de Paula del Villar",
+      "Francisco de Paula del Villar y Lozano",
+      "Francesc de Paula del Villar",
+      "Del Villar"
+    ],
+    "explanation": "Prvotni projekt Sagrade Familije izradio je Francisco de Paula del Villar. Nakon njegova odlaska 1883. vodstvo je preuzeo Antoni Gaudí, koji je građevini dao posve drukčiji arhitektonski smjer.",
+    "sources": [
+      "https://blog.sagradafamilia.org/en/what-would-the-sagrada-familia-be-like-if-gaudi/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0255-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "korejsko pismo hangul objavljeno u Hunminjeongeumu 1446.",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Korejski kralj Sejong dao je 1446. objaviti Hunminjeongeum, tekst koji je predstavio novo pismo namijenjeno lakšem opismenjavanju stanovništva. Kako se to pismo danas najčešće naziva?",
+    "answers": [
+      "Hangul",
+      "Hangeul",
+      "Han-geul",
+      "Han'gŭl"
+    ],
+    "explanation": "Hangul je korejsko pismo koje je kralj Sejong dao razviti u 15. stoljeću. Sustav je dovršen 1443., a njegovo predstavljanje i objašnjenje objavljeno je 1446. u Hunminjeongeumu.",
+    "sources": [
+      "https://www.unesco.org/en/memory-world/hunminjeongum-manuscript"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0256-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "Chamonix kao domaćin prvih Zimskih olimpijskih igara 1924.",
+    "difficulty": 1,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Francusko alpsko mjesto podno Mont Blanca 1924. ugostilo je natjecanje koje je poslije priznato kao prve Zimske olimpijske igre. Koje je to mjesto?",
+    "answers": [
+      "Chamonix",
+      "Chamonix-Mont-Blanc",
+      "Šamoni"
+    ],
+    "explanation": "Chamonix u francuskim Alpama bio je domaćin zimskih sportskih natjecanja 1924. koja su naknadno dobila status prvih Zimskih olimpijskih igara. Sudjelovali su sportaši iz 16 država.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/chamonix-1924-a-legacy-carved-in-snow"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0257-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "saksonska manufaktura porculana Meissen osnovana 1710.",
+    "difficulty": 3,
+    "styleId": 94,
+    "styleDescription": "Kreni od osnivanja ustanove i pitaj njezino današnje ime",
+    "question": "U dvorcu Albrechtsburg 1710. započela je proizvodnja tvrdog porculana u jednoj od prvih europskih manufaktura te vrste. Po kojem je saksonskom gradu ta manufaktura dobila ime?",
+    "answers": [
+      "Meissen",
+      "Meißen",
+      "Majsen"
+    ],
+    "explanation": "Porculanska manufaktura Meissen osnovana je 1710. pod pokroviteljstvom Augusta Snažnog. Postala je pionir europske proizvodnje tvrdog porculana, a kasnije je kao zaštitni znak uvela ukrštene mačeve.",
+    "sources": [
+      "https://www.meissen.com/en/geschichte"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0258-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "indonezijski tempeh od soje fermentirane plijesni Rhizopus",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Zrna soje najprije se namoče i skuhaju, zatim se dodaje kultura plijesni Rhizopus, a nakon fermentacije nastaje čvrsta bijela ploča koja se može rezati i pržiti. Kako se zove taj indonezijski specijalitet?",
+    "answers": [
+      "Tempeh",
+      "Tempe"
+    ],
+    "explanation": "Tempeh je tradicionalna indonezijska hrana dobivena fermentacijom soje s pomoću plijesni roda Rhizopus. Njezine gljivične niti povezuju zrna u kompaktnu cjelinu, koja se zatim priprema na različite načine.",
+    "sources": [
+      "https://www.fao.org/4/t0532e/t0532e10.htm"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0259-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "Bulova i prvi komercijalni televizijski oglas u SAD-u 1941.",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Prije bejzbolske utakmice 1. srpnja 1941. američki su gledatelji na televiziji vidjeli sat postavljen preko karte SAD-a. Koja je urarska marka platila taj pionirski televizijski oglas?",
+    "answers": [
+      "Bulova"
+    ],
+    "explanation": "Bulova je 1. srpnja 1941. oglašavala svoje satove na njujorškoj postaji WNBT, u vrijeme početka komercijalnog televizijskog emitiranja u SAD-u. Oglas je prikazivao sat preko karte države.",
+    "sources": [
+      "https://www.televisionacademy.com/features/news/online-originals/july-1-1941-day-commercial-television-was-born"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0260-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "Fingalova špilja i bazaltni stupovi na škotskom otoku Staffa",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Škotski otok Staffa, pravilni bazaltni stupovi i morski valovi koji odjekuju pod kamenim svodom: kako se zove znamenita špilja koju povezuju ova tri traga?",
+    "answers": [
+      "Fingalova špilja",
+      "Fingal's Cave",
+      "Fingalova pećina"
+    ],
+    "explanation": "Fingalova špilja nalazi se na škotskom otoku Staffa. Morska erozija oblikovala ju je u vulkanskim stijenama čiji su se stupovi razvili hlađenjem bazaltne lave.",
+    "sources": [
+      "https://www.scottishgeologytrust.org/geology/51-best-places/isle-of-staffa/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0261-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "bordoška juha od modre galice i vapna za zaštitu vinove loze",
+    "difficulty": 1,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "Vinogradari su još u 19. stoljeću počeli rabiti sredstvo protiv peronospore dobiveno miješanjem modre galice i vapna. Kako se naziva ta tradicionalna smjesa nazvana po francuskoj vinskoj regiji?",
+    "answers": [
+      "Bordoška juha",
+      "Bordoška smjesa",
+      "Bordeaux mixture"
+    ],
+    "explanation": "Bordoška juha tradicionalni je fungicid na osnovi bakrova sulfata i vapna. Razvijena je u vinogradarstvu područja Bordeauxa, a koristi se za suzbijanje različitih biljnih bolesti.",
+    "sources": [
+      "https://savjetodavna.mps.hr/2007/04/12/priprema-i-pravilna-primjena-bordoske-juhe/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0262-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "Tamagotchi kao japanski digitalni ljubimac iz 1996.",
+    "difficulty": 1,
+    "styleId": 84,
+    "styleDescription": "Opiši omiljen dječji predmet preko godine nastanka",
+    "question": "Godine 1996. u Japanu se pojavila mala elektronička igračka u obliku jajeta: vlasnik je morao hraniti, čistiti i odgajati digitalno stvorenje. Kako se zvala?",
+    "answers": [
+      "Tamagotchi",
+      "Tamagotči",
+      "Tamagoci"
+    ],
+    "explanation": "Tamagotchi je digitalni ljubimac koji je u Japanu predstavljen 23. studenoga 1996. Igrač se brine o virtualnom stvorenju, a njegov razvoj ovisi o načinu njege.",
+    "sources": [
+      "https://tamagotchi-official.com/jp/history/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0263-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Filozofija",
+    "focus": "Stoa Poikile kao atenski oslikani trijem po kojem je nazvan stoicizam",
+    "difficulty": 5,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Zenon Kitijski poučavao je u oslikanom trijemu na atenskoj Agori, a njegovi su sljedbenici upravo po tom mjestu dobili naziv stoici. Kako je glasio grčki naziv toga trijema?",
+    "answers": [
+      "Stoa Poikile",
+      "Stoa Poecile",
+      "Oslikana stoa",
+      "Šarena stoa"
+    ],
+    "explanation": "Stoa Poikile, odnosno Oslikana stoa, bila je atenski trijem u kojem je Zenon Kitijski poučavao. Naziv filozofskog pravca stoicizma potječe od te građevine.",
+    "sources": [
+      "https://iep.utm.edu/stoa/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0264-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "sljepoća zbog nepažnje u pokusu s neprimijećenom gorilom",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Dok broje dodavanja košarkaške lopte, neki gledatelji ne primijete ni osobu u kostimu gorile koja prolazi kadrom. Kako psiholozi nazivaju takav propust opažanja uzrokovan usmjerenom pažnjom?",
+    "answers": [
+      "Sljepoća zbog nepažnje",
+      "Sljepoća uslijed nepažnje",
+      "Sljepoća nepažnje",
+      "Inattentional blindness"
+    ],
+    "explanation": "Sljepoća zbog nepažnje nastaje kada osoba, usredotočena na određeni zadatak, ne opazi neočekivani podražaj koji joj je vidljiv. Pokus Simonsa i Chabrisa s gorilom poznata je demonstracija te pojave.",
+    "sources": [
+      "https://www.apa.org/monitor/apr01/blindness.aspx"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0265-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "Beaufortova ljestvica jakosti vjetra nastala u pomorstvu",
+    "difficulty": 1,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Pomorci su jačinu vjetra dugo procjenjivali prema učinku na jedra i more. Koja ljestvica, nazvana po britanskom admiralu, danas opisuje vjetar stupnjevima od 0 do 12?",
+    "answers": [
+      "Beaufortova ljestvica",
+      "Boforova ljestvica",
+      "Beaufortova skala",
+      "Beaufort scale"
+    ],
+    "explanation": "Francis Beaufort razvio je početkom 19. stoljeća ljestvicu jakosti vjetra kako bi ujednačio pomorske zapise. Danas se njezini stupnjevi povezuju s brzinom vjetra i opaženim stanjem mora.",
+    "sources": [
+      "https://www.metoffice.gov.uk/research/library-and-archive/archive-hidden-treasures/beaufort-scale"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0266-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Korotkovljevi zvukovi pri mjerenju arterijskog tlaka",
+    "difficulty": 4,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Pri mjerenju krvnog tlaka manšetom i stetoskopom čuju se zvukovi koji pomažu odrediti sistolički i dijastolički tlak. Čije prezime nose ti zvukovi, opisani 1905. godine?",
+    "answers": [
+      "Korotkov",
+      "Korotkoff",
+      "Nikolaj Korotkov",
+      "Nikolai Korotkoff"
+    ],
+    "explanation": "Ruski liječnik Nikolaj Korotkov 1905. opisao je zvukove koji nastaju tijekom postupnog otpuštanja manšete za mjerenje krvnog tlaka. Na njima se temelji klasična auskultacijska metoda mjerenja tlaka.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/16340219/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0267-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "ondes Martenot kao elektroničko glazbalo predstavljeno 1928.",
+    "difficulty": 5,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "U Parizu je 1928. predstavljeno elektroničko glazbalo čiji se ton mogao oblikovati pomicanjem prstena uz žicu, a kasniji modeli dobili su i klavijaturu. Kako se zove taj instrument poznat po osebujnom lebdećem zvuku?",
+    "answers": [
+      "Ondes Martenot",
+      "Martenotovi valovi",
+      "Ondes martenot"
+    ],
+    "explanation": "Ondes Martenot razvio je francuski glazbenik Maurice Martenot, a javnosti ga je predstavio 1928. Instrument proizvodi elektroničke tonove, a kasniji modeli omogućuju sviranje klavijaturom i prstenom.",
+    "sources": [
+      "https://www.mim.be/en/collection-piece/ondes-martenot-0"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0268-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "Friedrich Fröbel i uvođenje naziva Kindergarten",
+    "difficulty": 3,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "U 19. stoljeću jedan je njemački pedagog dječju igru stavio u središte ranog odgoja i svoju ustanovu nazvao Kindergarten, odnosno dječji vrt. Kako se zvao taj pedagog?",
+    "answers": [
+      "Friedrich Fröbel",
+      "Friedrich Froebel",
+      "Fröbel",
+      "Froebel",
+      "Fridrih Frebel"
+    ],
+    "explanation": "Friedrich Fröbel pokrenuo je 1837. ustanovu za predškolski odgoj u Bad Blankenburgu i popularizirao naziv Kindergarten. Njegova metoda naglašavala je učenje kroz igru, aktivnosti i samostalno istraživanje.",
+    "sources": [
+      "https://www.ghi-dc.org/fileadmin/publications/Bulletin/bu61.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0269-20261028",
+    "createdAt": "2026-10-28T11:39:16.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "seersucker kao lagana tkanina s naboranim prugama",
+    "difficulty": 1,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Ljetna odijela i košulje često se šivaju od lagane tkanine u kojoj se izmjenjuju glatke i naborane pruge, pa se materijal manje lijepi za kožu. Kako se naziva ta tkanina?",
+    "answers": [
+      "Seersucker",
+      "Sirsaker",
+      "Seersaker"
+    ],
+    "explanation": "Seersucker je lagana tkanina s naizmjenično glatkim i naboranim prugama. Poseban način tkanja stvara reljefnu površinu koja pogoduje prozračnosti ljetne odjeće.",
+    "sources": [
+      "https://cameo.mfa.org/wiki/Seersucker"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
