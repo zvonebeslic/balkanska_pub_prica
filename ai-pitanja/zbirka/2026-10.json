@@ -13162,5 +13162,604 @@
     "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
     "image": null,
     "updatedAt": null
+  },
+  {
+    "topic": "Priroda",
+    "focus": "Hoodoo kameni stupovi u Bryce Canyonu",
+    "difficulty": 4,
+    "styleId": 1,
+    "question": "U Bryce Canyonu voda se smrzava u pukotinama stijena, a erozija od njih postupno oblikuje visoke, nepravilne kamene stupove. Kojim se nazivom označavaju te formacije?",
+    "answers": [
+      "Hoodoo",
+      "Hoodoos",
+      "Hudui",
+      "Hoodoo stupovi"
+    ],
+    "explanation": "Hoodoo je uski kameni stup nastao dugotrajnim trošenjem i erozijom stijena. Nacionalni park Bryce Canyon poznat je po iznimno velikoj koncentraciji tih formacija.",
+    "sources": [
+      "https://www.nps.gov/brca/learn/nature/hoodoos.htm/index.htm"
+    ],
+    "id": "chatgpt1000-0543-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Sport",
+    "focus": "Olimpijski kroket na Igrama u Parizu 1900.",
+    "difficulty": 2,
+    "styleId": 82,
+    "question": "Na pariškim Olimpijskim igrama 1900. igrao se sport u kojem se drvenim čekićima udaraju kugle kroz obruče na travnjaku, no više se nije vratio u olimpijski program. Koji?",
+    "answers": [
+      "Kroket",
+      "Croquet"
+    ],
+    "explanation": "Kroket je bio dio programa Olimpijskih igara u Parizu 1900. godine. Međunarodni olimpijski odbor navodi ga među sportovima koji se poslije nisu vratili na Igre.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/new-sports-take-a-bow"
+    ],
+    "id": "chatgpt1000-0544-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Arhitektura",
+    "focus": "Velika džamija u Djennéu i zemljana arhitektura",
+    "difficulty": 3,
+    "styleId": 33,
+    "question": "U malijskom gradu Djenné stoji monumentalna građevina od sušenih zemljanih opeka, čiji se vanjski sloj tradicionalno obnavlja blatom. Kako se zove ta znamenita vjerska građevina?",
+    "answers": [
+      "Velika džamija u Djennéu",
+      "Velika džamija Djenné",
+      "Great Mosque of Djenné",
+      "Velika džamija u Dženeu",
+      "Velika džamija u Djenneu"
+    ],
+    "explanation": "Velika džamija u Djennéu istaknuti je primjer sahelske zemljane arhitekture. Današnja je građevina obnovljena 1906. i 1907., a žbukanje zemljanim materijalom dio je njezina održavanja.",
+    "sources": [
+      "https://whc.unesco.org/en/list/116",
+      "https://whc.unesco.org/en/urban-heritage-atlas/djenne/"
+    ],
+    "id": "chatgpt1000-0545-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Televizija",
+    "focus": "BBC-jev televizijski početak 1936. u Alexandra Palaceu",
+    "difficulty": 3,
+    "styleId": 8,
+    "question": "BBC je 1936. pokrenuo redovitu televizijsku službu iz londonske palače na uzvisini, poznate i pod nadimkom Ally Pally. Kako se zove ta palača?",
+    "answers": [
+      "Alexandra Palace",
+      "Palača Alexandra",
+      "Alexandra palas"
+    ],
+    "explanation": "BBC-jev televizijski servis započeo je 2. studenoga 1936. iz londonske palače Alexandra Palace, odabrane i zbog položaja pogodnog za odašiljanje signala.",
+    "sources": [
+      "https://downloads.bbc.co.uk/mypension/en/prospero_december_2011.pdf"
+    ],
+    "id": "chatgpt1000-0546-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Biologija",
+    "focus": "Oprašivanje drva Jošue moljcem juke",
+    "difficulty": 3,
+    "styleId": 91,
+    "question": "Drvo Jošua iz pustinje Mojave za oprašivanje ovisi o kukcu koji pri polaganju jaja u cvijet prenosi pelud, a njegove ličinke kasnije pojedu dio sjemenki. O kojem je kukcu riječ?",
+    "answers": [
+      "Moljac juke",
+      "Jukin moljac",
+      "Yucca moth",
+      "Moljac juka"
+    ],
+    "explanation": "Drvo Jošua (Joshua tree) ima specijaliziran odnos s moljcima juke. Oni oprašuju cvjetove, a njihove se ličinke hrane dijelom nastalih sjemenki.",
+    "sources": [
+      "https://home.nps.gov/jotr/learn/nature/jtrees.htm"
+    ],
+    "id": "chatgpt1000-0547-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Medicina",
+    "focus": "Trahom i infekcija bakterijom Chlamydia trachomatis",
+    "difficulty": 3,
+    "styleId": 3,
+    "question": "Ponavljane infekcije očiju mogu s vremenom okrenuti trepavice prema rožnici i uzrokovati sljepoću. Kako se zove bolest koju izaziva bakterija Chlamydia trachomatis?",
+    "answers": [
+      "Trahom",
+      "Trachoma",
+      "Trahoma"
+    ],
+    "explanation": "Trahom je zarazna bolest oka uzrokovana bakterijom Chlamydia trachomatis. Ponovljene infekcije mogu izazvati ožiljke, uvrtanje kapka i trajno oštećenje rožnice.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/trachoma"
+    ],
+    "id": "chatgpt1000-0548-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Književnost",
+    "focus": "Autor češke drame R.U.R. i popularizacija riječi robot",
+    "difficulty": 2,
+    "styleId": 31,
+    "question": "Prije nego što su roboti postali svakodnevna tehnološka tema, pojavili su se u češkoj drami „R.U.R.” iz 1920. Koji je književnik napisao to djelo?",
+    "answers": [
+      "Karel Čapek",
+      "Karel Capek",
+      "Čapek",
+      "Capek"
+    ],
+    "explanation": "Češki književnik Karel Čapek napisao je dramu R.U.R. (Rossumovi univerzalni roboti), koja je svijetu popularizirala riječ robot.",
+    "sources": [
+      "https://www.wired.com/story/wired-guide-to-robots"
+    ],
+    "id": "chatgpt1000-0549-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Inženjerstvo",
+    "focus": "Perzijski kanat kao gravitacijski sustav navodnjavanja",
+    "difficulty": 4,
+    "styleId": 59,
+    "question": "U sušnim dijelovima Irana podzemni tuneli s nizom okomitih okana dovode vodu iz vodonosnika do naselja i polja, bez uporabe crpki. Kako se zove taj drevni sustav?",
+    "answers": [
+      "Kanat",
+      "Qanat",
+      "Karez",
+      "Kariz"
+    ],
+    "explanation": "Kanat (qanat) je sustav blago nagnutih podzemnih tunela kojima voda gravitacijski dolazi iz vodonosnika do mjesta potrošnje. Perzijski kanati uvršteni su na UNESCO-ov popis svjetske baštine.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1506/"
+    ],
+    "id": "chatgpt1000-0550-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "Obrambeni kemijski mlaz kornjaša bombardera",
+    "difficulty": 3,
+    "styleId": 17,
+    "question": "Kad ga napadne grabežljivac, jedan kornjaš u zatku pokreće kemijsku reakciju i u kratkim naletima izbacuje vruć, nadražujući mlaz. Kako se zove taj kukac?",
+    "answers": [
+      "Kornjaš bombarder",
+      "Bombarderski kornjaš",
+      "Bombardier beetle",
+      "Bombardier",
+      "Kornjaš bombaš"
+    ],
+    "explanation": "Kornjaši bombarderi u posebnim komorama miješaju kemikalije i izbacuju zagrijani obrambeni sprej u brzim pulsovima.",
+    "sources": [
+      "https://www.smithsonianmag.com/smart-news/machine-gun-bug-180955150/"
+    ],
+    "id": "chatgpt1000-0551-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "More i ocean",
+    "focus": "Hobotnica wunderpus i prepoznatljive točke na glavi",
+    "difficulty": 5,
+    "styleId": 51,
+    "question": "U plitkim vodama Indonezije živi bakrenosmeđa hobotnica s dugim prugastim krakovima i bijelim točkama na glavi, čiji je raspored jedinstven za svaku jedinku. Pod kojim je neobičnim imenom poznata?",
+    "answers": [
+      "Wunderpus",
+      "Wunderpus photogenicus"
+    ],
+    "explanation": "Wunderpus photogenicus vrsta je hobotnice Indo-malajskog otočja. Bijele točke na glavi omogućuju istraživačima prepoznavanje pojedinih životinja.",
+    "sources": [
+      "https://www.montereybayaquarium.org/animals/animals-a-to-z/wunderpus"
+    ],
+    "id": "chatgpt1000-0552-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Ljepota",
+    "focus": "Vitiligo i gubitak kožnog pigmenta",
+    "difficulty": 1,
+    "styleId": 60,
+    "question": "Na koži se pojavljuju jasno vidljive svijetle ili bijele mrlje jer na tim mjestima nedostaje pigment melanin. Kako se naziva ovo stanje?",
+    "answers": [
+      "Vitiligo"
+    ],
+    "explanation": "Vitiligo je dugotrajno stanje u kojem pojedina područja kože gube melanin jer nema dovoljno funkcionalnih melanocita.",
+    "sources": [
+      "https://www.nhs.uk/conditions/vitiligo/"
+    ],
+    "id": "chatgpt1000-0553-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Videoigre",
+    "focus": "Allan Alcorn kao tvorac arkadne igre Pong",
+    "difficulty": 4,
+    "styleId": 47,
+    "question": "Atarijev Pong iz 1972. počeo je kao zadatak mladom inženjeru, a probni uređaj u kalifornijskom baru ubrzo se napunio kovanicama. Kako se zvao taj inženjer?",
+    "answers": [
+      "Allan Alcorn",
+      "Al Alcorn",
+      "Alan Alcorn",
+      "Alcorn"
+    ],
+    "explanation": "Allan 'Al' Alcorn dizajnirao je Pong za Atari 1972. godine. Prema Computer History Museumu, probni automat u baru Andy Capp's bio je toliko popularan da se spremnik za kovanice zaglavio.",
+    "sources": [
+      "https://www.computerhistory.org/revolution/computer-games/16/183"
+    ],
+    "id": "chatgpt1000-0554-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Astronomija",
+    "focus": "Slani ocean ispod ledene kore Jupiterove Europe",
+    "difficulty": 2,
+    "styleId": 66,
+    "question": "Ispod leda jednog Jupiterova mjeseca vjerojatno se nalazi slani ocean s više vode nego u svim Zemljinim oceanima zajedno. Kako se zove taj mjesec?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "NASA navodi snažne dokaze da Jupiterov mjesec Europa ispod ledene kore ima globalni slani ocean koji bi mogao sadržavati više nego dvostruko veću količinu vode od svih Zemljinih oceana.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/"
+    ],
+    "id": "chatgpt1000-0555-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "Indonezijski tradicijski orkestar gamelan",
+    "difficulty": 2,
+    "styleId": 75,
+    "question": "Gongovi, metalofoni, ksilofoni i bubnjevi u indonezijskom tradicijskom orkestru isprepliću melodije i ritmove. Kako se naziva taj ansambl, upisan i na UNESCO-ov popis?",
+    "answers": [
+      "Gamelan",
+      "Gamelanski orkestar"
+    ],
+    "explanation": "Gamelan je tradicijski indonezijski ansambl udaraljki i drugih glazbala. UNESCO je tu glazbenu praksu uvrstio na popis nematerijalne kulturne baštine 2021. godine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/gamelan-01607"
+    ],
+    "id": "chatgpt1000-0556-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Likovna umjetnost",
+    "focus": "Judith Leyster i spor s Frans Halsom zbog učenika",
+    "difficulty": 5,
+    "styleId": 52,
+    "question": "Jedna nizozemska slikarica iz 17. stoljeća ušla je u spor s Fransom Halsom nakon što je njezin učenik prešao u njegovu radionicu. Kako se zvala ta umjetnica?",
+    "answers": [
+      "Judith Leyster",
+      "Judita Leyster",
+      "Leyster"
+    ],
+    "explanation": "Judith Leyster, članica haarlemskoga slikarskog ceha, 1635. je vodila spor s Fransom Halsom zbog učenika Willema Woutersza koji je napustio njezinu radionicu.",
+    "sources": [
+      "https://www.rijksmuseum.nl/en/stories/themes/judith-leyster/story/judith-leyster-10"
+    ],
+    "id": "chatgpt1000-0557-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Religije i mitologije",
+    "focus": "Okina maska i obredna predstava kazališta Nō",
+    "difficulty": 5,
+    "styleId": 93,
+    "question": "U japanskoj obrednoj predstavi Nō glavni glumac stavlja masku starca i time preuzima ulogu božanstva koje donosi mir i blagostanje. Kako se zove ta predstava i maska?",
+    "answers": [
+      "Okina",
+      "Okina Noh",
+      "Maska Okina"
+    ],
+    "explanation": "U predstavi Okina glavni glumac stavlja masku Okina kako bi utjelovio božanstvo. Obred je povezan sa željama za mirom, sigurnošću i blagostanjem.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/57161"
+    ],
+    "id": "chatgpt1000-0558-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Likovna umjetnost",
+    "focus": "Kelpies kao dvije golema konjska poprsja u Falkirku",
+    "difficulty": 3,
+    "styleId": 46,
+    "question": "Uz kanal u škotskom Falkirku stoje dvije skulpture konjskih glava visoke po 30 metara, nadahnute nekadašnjim radnim konjima. Pod kojim su zajedničkim imenom poznate?",
+    "answers": [
+      "The Kelpies",
+      "Kelpies",
+      "Kelpiji"
+    ],
+    "explanation": "The Kelpies su dvije monumentalne skulpture konjskih glava u Falkirku, visoke približno 30 metara, koje odaju počast radnim konjima škotske prošlosti.",
+    "sources": [
+      "https://www.scottishcanals.co.uk/visit/canals/visit-the-forth-clyde-canal"
+    ],
+    "id": "chatgpt1000-0559-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Tehnologija",
+    "focus": "Utah teapot kao rani referentni 3D model Martina Newella",
+    "difficulty": 4,
+    "styleId": 98,
+    "question": "Martin Newell je 1975. pretvorio jedan običan kuhinjski predmet u trodimenzionalni računalni model koji je postao klasik grafičkih testova. O kojem je predmetu riječ?",
+    "answers": [
+      "Čajnik",
+      "Teapot",
+      "Utah teapot",
+      "Čajnik iz Utaha"
+    ],
+    "explanation": "Martin Newell izradio je 1975. matematički 3D prikaz čajnika, poznat kao Utah teapot, koji je desetljećima služio kao referentni model za računalnu grafiku.",
+    "sources": [
+      "https://s3data.computerhistory.org/core/core-2010-2011.pdf"
+    ],
+    "id": "chatgpt1000-0560-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Obrazovanje",
+    "focus": "Valentin Haüy i prva knjiga s reljefnim slovima za slijepe",
+    "difficulty": 5,
+    "styleId": 56,
+    "question": "U Parizu je 1786. objavljena pionirska knjiga s reljefnim slovima namijenjena slijepim čitateljima, desetljećima prije Brailleova pisma. Koji je francuski pedagog zaslužan za nju?",
+    "answers": [
+      "Valentin Haüy",
+      "Valentin Hauy",
+      "Haüy",
+      "Hauy"
+    ],
+    "explanation": "Valentin Haüy osnovao je školu za slijepu djecu u Parizu i 1786. objavio djelo Essai sur l'éducation des aveugles, jedan od ključnih ranih primjera reljefnog tiska za slijepe.",
+    "sources": [
+      "https://www.perkins.org/first-embossed-book-for-the-blind/"
+    ],
+    "id": "chatgpt1000-0561-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Tehnologija",
+    "focus": "SuperPaint kao rani sustav digitalnog slikanja u Xerox PARC-u",
+    "difficulty": 5,
+    "styleId": 57,
+    "question": "Početkom 1970-ih u Xerox PARC-u nastao je sustav za digitalno crtanje i animaciju koji je koristio memoriju slike te prikazivao milijune boja. Kako se zvao?",
+    "answers": [
+      "SuperPaint",
+      "Super Paint"
+    ],
+    "explanation": "SuperPaint je rani sustav računalne grafike koji su u Xerox PARC-u razvijali Richard Shoup i suradnici. Koristio je frame buffer i mogao prikazivati do 16,7 milijuna boja.",
+    "sources": [
+      "https://www.computerhistory.org/timeline/1972/"
+    ],
+    "id": "chatgpt1000-0562-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "Angklung kao bambusovo glazbalo svirano tresenjem",
+    "difficulty": 4,
+    "styleId": 96,
+    "question": "Nekoliko glazbenika mora surađivati jer svaki primjerak ovog indonezijskog instrumenta od bambusovih cijevi, koji se svira tresenjem, daje samo jedan ton ili akord. Kako se zove?",
+    "answers": [
+      "Angklung"
+    ],
+    "explanation": "Angklung se sastoji od bambusovih cijevi ovješenih u okvir. Svaki instrument proizvodi određeni ton ili akord, pa svirači zajednički izvode melodiju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/angklung-00393"
+    ],
+    "id": "chatgpt1000-0563-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "More i ocean",
+    "focus": "Beebeova i Bartonova batisfera za dubokomorska promatranja",
+    "difficulty": 4,
+    "styleId": 39,
+    "question": "William Beebe je 1930-ih promatrao dubokomorski život iz čelične kugle s prozorima, koju je brod spuštao u ocean na kabelu. Kako se zvao taj ronilački uređaj?",
+    "answers": [
+      "Batisfera",
+      "Bathysphere",
+      "Batisféra"
+    ],
+    "explanation": "Batisfera je čelična sferna ronilica bez vlastitog pogona, projektirana u suradnji Williama Beebea i Otisa Bartona. Njome su 1930-ih ostvarena pionirska izravna promatranja dubokog mora.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/expedition-feature/okeanos-ex2104-features-sargasso-sea/"
+    ],
+    "id": "chatgpt1000-0564-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Tehnologija",
+    "focus": "LUNAR kao sustav za pitanja o analizi mjesečevih stijena",
+    "difficulty": 5,
+    "styleId": 18,
+    "question": "Računalni sustav dovršen 1972. mogao je razumjeti pitanja na engleskom jeziku o kemijskim analizama stijena donesenih s Mjeseca. Koje je kratko ime nosio?",
+    "answers": [
+      "LUNAR",
+      "Lunar"
+    ],
+    "explanation": "LUNAR je bio rani sustav za dohvat informacija prirodnim jezikom, koji su razvijali William Woods, Ron Kaplan i Bonnie Nash-Webber za upite o analizama uzoraka s misije Apollo 11.",
+    "sources": [
+      "https://www.computerhistory.org/timeline/1972/"
+    ],
+    "id": "chatgpt1000-0565-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Videoigre",
+    "focus": "Computer Space kao arkadna igra prije Ponga",
+    "difficulty": 3,
+    "styleId": 22,
+    "question": "Godinu prije Ponga Nolan Bushnell i Ted Dabney razvili su arkadnu svemirsku igru iz 1971., nadahnutu računalnom igrom Spacewar! Kako se zvala?",
+    "answers": [
+      "Computer Space"
+    ],
+    "explanation": "Computer Space iz 1971. bila je rana komercijalna arkadna videoigra koju su razvili Nolan Bushnell i Ted Dabney, nadahnuti igrom Spacewar!, prije nego što je Bushnell osnovao Atari.",
+    "sources": [
+      "https://computerhistory.org/stories/computers-and-games-love-story/"
+    ],
+    "id": "chatgpt1000-0566-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Rijetke teme",
+    "focus": "Ko-omote maska mlade djevojke u japanskom kazalištu Nō",
+    "difficulty": 5,
+    "styleId": 72,
+    "question": "U japanskom kazalištu Nō maska mlade djevojke može imati bijelo lice, nacrtane obrve i crno obojene zube, prema nekadašnjoj aristokratskoj modi. Kako se zove taj tip maske?",
+    "answers": [
+      "Ko-omote",
+      "Ko omote",
+      "Ko-Omote"
+    ],
+    "explanation": "Ko-omote je vrsta maske u kazalištu Nō koja prikazuje mladu djevojku ili nadnaravno biće. Primjerci mogu prikazivati bijelo lice, naslikane obrve i crno obojene zube, prema estetici razdoblja Heian.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/45501"
+    ],
+    "id": "chatgpt1000-0567-20261028",
+    "createdAt": "2026-10-28T23:50:20.667Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "image": null,
+    "updatedAt": null
   }
 ]
