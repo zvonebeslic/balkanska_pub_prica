@@ -5516,5 +5516,254 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0230-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "arhitektonski pravac povezan s izrazom béton brut",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Francuski izraz béton brut znači sirovi beton, čija je neobrađena površina obilježila brojne masivne građevine 20. stoljeća. S kojim se arhitektonskim pravcem osobito povezuje?",
+    "answers": [
+      "Brutalizam",
+      "Brutalistička arhitektura",
+      "Brutalism"
+    ],
+    "explanation": "Brutalizam naglašava iskren prikaz konstrukcije i materijala. Iako nije svaka brutalistička zgrada betonska, sirovi beton béton brut postao je njegov prepoznatljiv znak.",
+    "sources": [
+      "https://www.riba.org/explore/riba-collections/architectural-styles/brutalism-movement/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0231-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "Perecov roman bez slova e",
+    "difficulty": 5,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Francuski pisac Georges Perec 1969. objavio je roman iz kojega je potpuno izbacio najčešći samoglasnik francuskog jezika, slovo E. Kako se zove taj književni eksperiment?",
+    "answers": [
+      "La Disparition",
+      "A Void",
+      "Nestanak"
+    ],
+    "explanation": "La Disparition je lipogram, tekst napisan bez određenog slova. Perec je cijeli roman sastavio bez slova E, a engleski prijevod nosi naslov A Void.",
+    "sources": [
+      "https://www.theguardian.com/books/2009/jan/19/1000-novels-comedy-georges-perec"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0232-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "baletna praizvedba koja je izazvala nered u Parizu 1913.",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Na pariškoj premijeri 29. svibnja 1913. neobični ritmovi Igora Stravinskog i koreografija Vaslava Nižinskog izazvali su žestoke reakcije publike. Koji je balet tada prvi put izveden?",
+    "answers": [
+      "Posvećenje proljeća",
+      "Le Sacre du printemps",
+      "The Rite of Spring",
+      "Sacre du printemps"
+    ],
+    "explanation": "Praizvedba Posvećenja proljeća u Théâtre des Champs-Élysées izazvala je zvižduke, povike i sukobe u publici. Danas se balet ubraja među ključna djela glazbenog modernizma.",
+    "sources": [
+      "https://www.loc.gov/loc/lcib/09078/rite.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0233-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "Kurosawin film nagrađen Zlatnim lavom 1951.",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Akira Kurosawa i Venecijanski filmski festival povezuju se s važnim trenutkom iz 1951. godine, kada je japanski film osvojio Zlatnog lava. Koji je naslov donio tu nagradu?",
+    "answers": [
+      "Rašomon",
+      "Rashomon",
+      "Rashômon",
+      "Rašômon"
+    ],
+    "explanation": "Kurosawin Rashômon osvojio je Zlatnog lava 1951. godine. Festival navodi da je taj uspjeh snažno pridonio međunarodnoj prepoznatljivosti japanske kinematografije.",
+    "sources": [
+      "https://www.labiennale.org/en/history-venice-film-festival"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0234-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "mačevalačko oružje s cijelim tijelom kao valjanom metom",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Za razliku od floreta i sablje, u jednoj disciplini sportskog mačevanja ubod vrhom oružja vrijedi na bilo kojem dijelu protivnikova tijela, uključujući stopala. Kojim se oružjem tada natječu?",
+    "answers": [
+      "Mač",
+      "Épée",
+      "Epee",
+      "Mačem",
+      "Sportski mač"
+    ],
+    "explanation": "U mačevanju mačem, odnosno épéeom, cijelo je tijelo valjana meta. Bodovi se ostvaruju ubodom vrhom, a za razliku od floreta ne primjenjuje se pravilo prednosti napada.",
+    "sources": [
+      "https://olympics.ie/news/introduction-to-fencing/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0235-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Automobili",
+    "focus": "francuski narodni automobil predstavljen 1948. i prozvan patkom",
+    "difficulty": 1,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Na pariškom salonu 1948. predstavljen je skroman Citroën koji je zbog neobična izgleda dobio nadimak Patka. Kojom je kratkom slovno-brojčanom oznakom poznat taj model?",
+    "answers": [
+      "2CV",
+      "Citroën 2CV",
+      "Citroen 2CV",
+      "2 CV"
+    ],
+    "explanation": "Citroën 2CV predstavljen je 7. listopada 1948. godine. Nadimak Patka, odnosno Ente u njemačkom govornom području, nastao je zbog njegova neuobičajenog izgleda.",
+    "sources": [
+      "https://www.media.stellantis.com/de-de/citroen/press/citroen-2cv-die-ente-schrieb-automobilgeschichte-1632573913"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0236-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "putna isprava za izbjeglice bez državljanstva uvedena 1922.",
+    "difficulty": 4,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Nakon Prvog svjetskog rata mnoge izbjeglice nisu mogle dobiti nacionalnu putovnicu. Liga naroda 1922. uvela je međunarodno priznatu putnu ispravu nazvanu po norveškom istraživaču. Kako se zvala?",
+    "answers": [
+      "Nansenova putovnica",
+      "Nansenov pasoš",
+      "Nansen passport",
+      "Nansenov putni list",
+      "Nansenova putna isprava"
+    ],
+    "explanation": "Nansenova putovnica omogućavala je izbjeglicama i osobama bez državljanstva putovanje i pravni status u drugim zemljama. Uvedena je 1922. na poticaj Fridtjofa Nansena.",
+    "sources": [
+      "https://www.unhcr.org/at/geschichte-von-unhcr"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0237-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "prvi kineski papirnati novac jiaozi iz dinastije Song",
+    "difficulty": 5,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Mnogo prije europskih novčanica trgovci u kineskom Sichuanu, za dinastije Song, počeli su koristiti prenosive papirnate potvrde kao novac. Kojim su imenom poznate te rane novčanice?",
+    "answers": [
+      "Jiaozi",
+      "Điaozi",
+      "Jiao zi"
+    ],
+    "explanation": "Jiaozi su se pojavili u Kini potkraj 10. stoljeća kao prenosive novčane potvrde. Guinness ih navodi među prvim primjerima papirnate valute u suvremenom smislu.",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/first-paper-money"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0238-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "okrugle stijenske konkrecije na novozelandskoj plaži Koekohe",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Na novozelandskom Južnom otoku, na plaži Koekohe, more otkriva gotovo kuglaste kamene gromade nastale taloženjem minerala u sedimentu. Pod kojim su imenom poznate te stijene?",
+    "answers": [
+      "Moeraki Boulders",
+      "Moeraki",
+      "Gromade Moeraki",
+      "Kamenje Moeraki"
+    ],
+    "explanation": "Moeraki Boulders velike su sedimentne konkrecije koje erozija oslobađa iz obalnih stijena. Neke su ispucale, a pukotine su im ispunjene kalcitom.",
+    "sources": [
+      "https://teara.govt.nz/en/1966/moeraki-boulders"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0239-20261028",
+    "createdAt": "2026-10-28T10:48:46.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "vrećasti izdanci na donjoj strani olujnih oblaka",
+    "difficulty": 1,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Nakon snažne oluje donja strana oblaka ponekad izgleda kao niz zaobljenih vrećica koje vise prema tlu. Kojim se meteorološkim nazivom označavaju ti oblačni izdanci?",
+    "answers": [
+      "Mammatus",
+      "Mammatus oblaci",
+      "Mamatuse",
+      "Mammatus clouds"
+    ],
+    "explanation": "Mammatus su vrećasti oblici koji vise s donje strane oblaka, često nakovnja kumulonimbusa. Sami po sebi ne znače da će se na tom mjestu pojaviti tornado.",
+    "sources": [
+      "https://www.weather.gov/lmk/cloud_classification"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
