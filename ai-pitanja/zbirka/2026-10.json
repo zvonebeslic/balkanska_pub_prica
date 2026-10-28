@@ -3747,5 +3747,315 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0157-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "pozdravi na Voyagerovim zlatnim pločama",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Dvije letjelice Voyager iz 1977. nose pozdrave sa Zemlje u brojnim jezicima, od akadskog do velškog. Na koliko je različitih jezika snimljen pozdrav na njihovim zlatnim pločama?",
+    "answers": [
+      "55",
+      "Pedeset pet"
+    ],
+    "explanation": "NASA je na zlatne ploče Voyagera 1 i 2 uvrstila govorne pozdrave na 55 jezika, uz glazbu, slike i zvukove Zemlje. Sadržaj je pripremila skupina koju je vodio Carl Sagan.",
+    "sources": [
+      "https://science.nasa.gov/mission/voyager/golden-record-contents/greetings/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0158-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "rimska staklena čaša koja mijenja boju",
+    "difficulty": 5,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Rimska staklena posuda iz 4. stoljeća izgleda zeleno pri jednom osvjetljenju, a crveno kada svjetlost prolazi kroz staklo sa sitnim česticama zlata i srebra. Kako se zove ta čaša, nazvana po tračkom kralju?",
+    "answers": [
+      "Likurgova čaša",
+      "Lycurgus Cup",
+      "Čaša Likurga"
+    ],
+    "explanation": "Likurgova čaša primjer je rimskog dikroičnog stakla. Sitne čestice zlata i srebra mijenjaju način na koji staklo raspršuje i propušta svjetlost, pa se njegova boja naizgled mijenja.",
+    "sources": [
+      "https://www.britishmuseum.org/sites/default/files/2021-05/large_print_guide_room_2a_waddesdon.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0159-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "mangrovski labirint delte Gangesa",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na obali Bengalskog zaljeva, između Indije i Bangladeša, delte Gangesa, Brahmaputre i Meghne tvore golemo područje mangrova u kojem žive i bengalski tigrovi. Kako se zove ta šuma?",
+    "answers": [
+      "Sundarbans",
+      "Sundarbani",
+      "Sundarban"
+    ],
+    "explanation": "Sundarbans je jedno od najvećih povezanih područja mangrovskih šuma na svijetu. Nalazi se u delti velikih južnoazijskih rijeka, a UNESCO ističe njegovu važnost za bioraznolikost.",
+    "sources": [
+      "https://whc.unesco.org/en/list/798/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0160-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "pustinjska biljka sa samo dva lista",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U pustinjama Namibije i Angole raste biljka koja tijekom cijelog života razvija samo dva lista; oni neprestano rastu, troše se i cijepaju na vrhovima. Kako se zove taj neobični rod golosjemenjača?",
+    "answers": [
+      "Welwitschia",
+      "Velvičija",
+      "Welwitschia mirabilis"
+    ],
+    "explanation": "Welwitschia mirabilis razvija dva trajna lista koji mogu dosegnuti veliku duljinu. Kew navodi da pojedini primjerci mogu živjeti dulje od tisuću godina u izrazito sušnim uvjetima.",
+    "sources": [
+      "https://www.kew.org/read-and-watch/living-fossil"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0161-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "dječak u Jennerovu pokusu 1796.",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Edward Jenner 1796. upotrijebio je materijal iz promjene nastale zbog kravljih boginja kako bi iskušao zaštitu od velikih boginja. Kako se zvao osmogodišnji dječak na kojem je proveo taj povijesni pokus?",
+    "answers": [
+      "James Phipps",
+      "Phipps",
+      "Džejms Fips"
+    ],
+    "explanation": "James Phipps bio je dječak kojega je Jenner 1796. inokulirao materijalom iz promjene kravljih boginja na ruci mljekarice Sarah Nelmes. Taj se pokus smatra ključnim korakom u povijesti cijepljenja.",
+    "sources": [
+      "https://www.cdc.gov/smallpox/about/history.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0162-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Filozofija",
+    "focus": "Zhuangzijev san i identitet",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Drevni kineski mislilac Zhuangzi nakon buđenja zapitao se je li on čovjek koji je sanjao da je jedna životinja ili ta životinja sada sanja da je čovjek. Koja je to životinja?",
+    "answers": [
+      "Leptir",
+      "Butterfly"
+    ],
+    "explanation": "Zhuangzijev san o leptiru poznata je daoistička priča o granici između sna i jave te promjenjivosti identiteta. Pitanje je li sanjač čovjek ili leptir ostaje namjerno otvoreno.",
+    "sources": [
+      "https://plato.stanford.edu/entries/zhuangzi/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0163-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "ručno rađeni japanski papir od duda",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Vlakna papirnatog duda namaču se u vodi i razvlače na bambusovu situ, a nastali listovi koriste se za knjige, pregradne stijene i klizna vrata. Kojim se japanskim nazivom zove taj tradicionalni papir?",
+    "answers": [
+      "Washi",
+      "Vaši",
+      "Japanski washi papir"
+    ],
+    "explanation": "Washi je tradicionalni japanski ručno izrađeni papir, često od vlakana papirnatog duda. Njegova se izrada prenosi među obrtnicima, a papir se koristi i u arhitekturi interijera.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/washi-craftsmanship-of-traditional-japanese-hand-made-paper-02291"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0164-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "godina osnutka škole Bauhaus",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Prije preseljenja u Dessau 1925. i Berlin 1932., Walter Gropius u Weimaru je otvorio školu koja je povezivala umjetnost, obrt i industriju. Koje je godine osnovan Bauhaus?",
+    "answers": [
+      "1919",
+      "Tisuću devetsto devetnaeste"
+    ],
+    "explanation": "Bauhaus je osnovao Walter Gropius 1919. u Weimaru. Škola je poslije djelovala u Dessauu i Berlinu, a njezin pristup snažno je utjecao na modernu arhitekturu i dizajn.",
+    "sources": [
+      "https://whc.unesco.org/en/news/1954"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0165-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "neobjavljene Shakespeareove drame u Prvom foliju",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Shakespeareov Prvi folio iz 1623. sačuvao je 36 drama, a dio njih dotad nikada nije bio tiskan. Koliko je drama, uključujući Macbetha i Oluju, prvi put objavljeno upravo u toj zbirci?",
+    "answers": [
+      "18",
+      "Osamnaest"
+    ],
+    "explanation": "Prvi folio objavljen je sedam godina nakon Shakespeareove smrti. Od 36 uključenih drama njih 18 prethodno nije bilo tiskano, pa su zahvaljujući zbirci sačuvane za buduće čitatelje.",
+    "sources": [
+      "https://www.folger.edu/explore/shakespeare-in-print/first-folio/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0166-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "instrument od rotirajućih staklenih zdjelica",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Niz staklenih zdjelica različitih veličina okreće se na zajedničkoj osovini, a svirač vlažnim prstima dodiruje njihove rubove. Kako se zove taj instrument koji je usavršio Benjamin Franklin?",
+    "answers": [
+      "Staklena harmonika",
+      "Glass armonica",
+      "Glass harmonica",
+      "Armonika"
+    ],
+    "explanation": "Staklena harmonika, poznata i kao glass armonica, stvara tonove trenjem vlažnih prstiju o rotirajuće staklene zdjelice. Franklin je svoju izvedbu instrumenta osmislio u 18. stoljeću.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/501781",
+      "https://www.metmuseum.org/de/-/media/files/about-the-met/curatorial-departments/musical-instruments/musicalinstrumentsdeptnarrative-2%2C-d-%2C16%2C-d-%2C22.pdf?hash=CC25F28CCDD4FA57FE99E590D29FC906&sc_lang=en"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0167-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Brendovi",
+    "focus": "izmišljena riječ s dva slova K",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "George Eastman želio je kratko ime koje se lako pamti, a posebno mu se sviđalo slovo K pa je osmislio riječ koja njime počinje i završava. Koji je fotografski brend tako nazvan?",
+    "answers": [
+      "Kodak",
+      "KODAK"
+    ],
+    "explanation": "George Eastman sam je izmislio naziv Kodak, ne preuzevši ga iz postojećeg jezika. Prema njegovu objašnjenju, posebno mu se sviđalo snažno slovo K, kojim ime počinje i završava.",
+    "sources": [
+      "https://www.kodak.com/en/company/page/george-eastman-history/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0168-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "loš novac istiskuje dobar",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Ako dvije vrste kovanica imaju jednaku propisanu vrijednost, ali jedna sadrži više plemenitog metala, ljudi je često čuvaju, a drugom plaćaju. Kojim se ekonomskim zakonom opisuje ta pojava?",
+    "answers": [
+      "Greshamov zakon",
+      "Gresham's law",
+      "Grešamov zakon",
+      "Gresham"
+    ],
+    "explanation": "Greshamov zakon opisuje okolnosti u kojima se novac veće unutarnje vrijednosti povlači iz optjecaja, a lošiji ostaje u plaćanjima. Važna je pretpostavka da im je propisana jednaka nominalna vrijednost.",
+    "sources": [
+      "https://eh.net/encyclopedia/greshams-law/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0169-20261028",
+    "createdAt": "2026-10-28T07:50:58.641Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "obrambeni tornjevi gruzijske Svanetije",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U gruzijskom Kavkazu srednjovjekovne kamene kuće s visokim tornjevima služile su i za život i za obranu. Kako se zove planinska regija čija su sela oko Ushgulija poznata po tim tornjevima?",
+    "answers": [
+      "Svanetija",
+      "Svaneti",
+      "Svanetia"
+    ],
+    "explanation": "Svanetija je planinska regija Gruzije poznata po srednjovjekovnim kućama-tornjevima. UNESCO opisuje kako su te građevine stanovnicima služile za stanovanje, skladištenje i obranu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/709"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
