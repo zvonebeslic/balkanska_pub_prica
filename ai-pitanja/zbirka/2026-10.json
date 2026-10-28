@@ -11948,5 +11948,613 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "topic": "Povijest",
+    "focus": "umjetni otočići i bazaltni grad dinastije Saudeleur na Pohnpeiju",
+    "difficulty": 5,
+    "styleId": 8,
+    "question": "Više od stotinu umjetnih otočića uz Pohnpei, zidovi od bazaltnih stupova i ruševine dinastije Saudeleur kriju koji drevni pacifički grad?",
+    "answers": [
+      "Nan Madol",
+      "Nan-Madol"
+    ],
+    "explanation": "Nan Madol u Mikroneziji obuhvaća više od stotinu umjetnih otočića s megalitskim građevinama iz razdoblja dinastije Saudeleur.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1503"
+    ],
+    "id": "chatgpt1000-0493-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Priroda",
+    "focus": "šesterokutni bazaltni stupovi spomenika Devils Postpile",
+    "difficulty": 3,
+    "styleId": 34,
+    "question": "Pravilni šesterokutni stupovi nastali su hlađenjem i stezanjem lave, a ledenjak ih je poslije razotkrio. Kako se zove kalifornijski nacionalni spomenik u kojem ih možemo vidjeti?",
+    "answers": [
+      "Devils Postpile",
+      "Devil's Postpile",
+      "Đavolji stupovi"
+    ],
+    "explanation": "U Devils Postpileu sporo hlađenje lave stvorilo je pravilne bazaltne stupove, a kasnija ledenjačka erozija otkrila je njihov oblik.",
+    "sources": [
+      "https://www.nps.gov/places/devilspostpile.htm"
+    ],
+    "id": "chatgpt1000-0494-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "zimsko smrzavanje sjevernoameričke šumske žabe",
+    "difficulty": 2,
+    "styleId": 17,
+    "question": "Kad joj se zimi zaustave srce i disanje, ova sjevernoamerička žaba može se u proljeće odlediti i nastaviti život. Kako se naziva ta vrsta?",
+    "answers": [
+      "Šumska žaba",
+      "Wood frog",
+      "Rana sylvatica",
+      "Lithobates sylvaticus"
+    ],
+    "explanation": "Šumska žaba preživljava smrzavanje jer šećeri i drugi zaštitni spojevi pomažu spriječiti stvaranje leda unutar stanica.",
+    "sources": [
+      "https://home.nps.gov/kova/learn/nature/wood-frog.htm"
+    ],
+    "id": "chatgpt1000-0495-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Astronomija",
+    "focus": "Ithaca Chasma na Saturnovu mjesecu Tetidi",
+    "difficulty": 4,
+    "styleId": 66,
+    "question": "Na Saturnovu mjesecu Tetidi proteže se više od tisuću kilometara dug sustav kanjona nazvan po Odisejevu zavičaju. Kako glasi njegovo ime?",
+    "answers": [
+      "Ithaca Chasma",
+      "Ithaka Chasma",
+      "Itaka Chasma",
+      "Kanjon Itaka"
+    ],
+    "explanation": "Ithaca Chasma golem je sustav pukotina na Tetidi, dug više od 1000 kilometara, koji je snimila letjelica Cassini.",
+    "sources": [
+      "https://science.nasa.gov/resource/crater-and-canyon/"
+    ],
+    "id": "chatgpt1000-0496-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Matematika",
+    "focus": "Gabrielov rog konačan volumen i beskonačna površina",
+    "difficulty": 5,
+    "styleId": 90,
+    "question": "Rotacijom krivulje y = 1/x za x od 1 do beskonačnosti nastaje tijelo konačnog volumena, ali beskonačne površine. Kako se zove taj matematički paradoksalni oblik?",
+    "answers": [
+      "Gabrielov rog",
+      "Gabrijelov rog",
+      "Torricellijeva truba",
+      "Torricellijeva trublja",
+      "Gabriel's horn"
+    ],
+    "explanation": "Gabrielov rog, poznat i kao Torricellijeva truba, ima konačan volumen π, dok mu je površina beskonačna.",
+    "sources": [
+      "https://mathworld.wolfram.com/GabrielsHorn.html"
+    ],
+    "id": "chatgpt1000-0497-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Astronomija",
+    "focus": "vodeni led u trajno zasjenjenom Merkurovu krateru Prokofjev",
+    "difficulty": 1,
+    "styleId": 4,
+    "question": "U krateru Prokofjev otkriveni su dokazi vodenog leda koji opstaje u trajnoj sjeni, premda je planet najbliži Suncu. O kojem je planetu riječ?",
+    "answers": [
+      "Merkur",
+      "Mercury"
+    ],
+    "explanation": "NASA-ina letjelica MESSENGER pronašla je dokaze vodenog leda u trajno zasjenjenim dijelovima Merkurova kratera Prokofjev.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/icy-view-of-prokofiev/"
+    ],
+    "id": "chatgpt1000-0498-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Arhitektura",
+    "focus": "Rietveldova kuća Schröder i pomične pregrade De Stijla",
+    "difficulty": 4,
+    "styleId": 77,
+    "question": "Kuća Schröder u Utrechtu iz 1924. može mijenjati raspored prostorija pomičnim pregradama. Koji ju je arhitekt projektirao kao manifest pokreta De Stijl?",
+    "answers": [
+      "Gerrit Rietveld",
+      "Gerrit Thomas Rietveld",
+      "Rietveld"
+    ],
+    "explanation": "Gerrit Thomas Rietveld projektirao je kuću Schröder 1924. godine; njezin prilagodljivi interijer postao je simbol pokreta De Stijl.",
+    "sources": [
+      "https://whc.unesco.org/en/list/965"
+    ],
+    "id": "chatgpt1000-0499-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši način gradnje i pitaj arhitektonski stil",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Likovna umjetnost",
+    "focus": "konveksno zrcalo na Van Eyckovu Portretu Arnolfinijevih",
+    "difficulty": 1,
+    "styleId": 9,
+    "question": "Na Van Eyckovu Portretu Arnolfinijevih u pozadini se vide još dvije osobe, ali ne izravno. U kojem se predmetu odražavaju?",
+    "answers": [
+      "Zrcalo",
+      "Ogledalo",
+      "Konveksno zrcalo",
+      "Okruglo zrcalo"
+    ],
+    "explanation": "Konveksno zrcalo na stražnjem zidu slike odražava dvije malene figure i proširuje prizor izvan naslikanog para.",
+    "sources": [
+      "https://www.metmuseum.org/pt/essays/jan-van-eyck-ca-1390-1441"
+    ],
+    "id": "chatgpt1000-0500-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Sport",
+    "focus": "maratonska udaljenost 42,195 kilometara na OI u Londonu",
+    "difficulty": 2,
+    "styleId": 11,
+    "question": "Današnjih 42,195 kilometara maratona poteklo je od rute između Windsora i kraljevske lože na londonskom stadionu. Na kojim je Olimpijskim igrama prvi put trčana ta duljina?",
+    "answers": [
+      "London 1908.",
+      "London 1908",
+      "Olimpijske igre u Londonu 1908.",
+      "1908."
+    ],
+    "explanation": "Na Olimpijskim igrama u Londonu 1908. maratonska staza iznosila je 26 milja i 385 jardi, odnosno 42,195 kilometara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "id": "chatgpt1000-0501-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Zanati",
+    "focus": "Bayeuxska tapiserija zapravo je vez a ne tkana tapiserija",
+    "difficulty": 2,
+    "styleId": 60,
+    "question": "Naziv Bayeuxske tapiserije vara: njezin približno 70 metara dug prikaz događaja oko bitke kod Hastingsa nije nastao tkanjem. Kojom je tehnikom izrađen?",
+    "answers": [
+      "Vez",
+      "Vezenje",
+      "Vezom",
+      "Tehnikom veza"
+    ],
+    "explanation": "Bayeuxska tapiserija zapravo je dugačak srednjovjekovni vez, a ne tapiserija nastala tkanjem.",
+    "sources": [
+      "https://www.britishmuseum.org/exhibitions/bayeux-tapestry"
+    ],
+    "id": "chatgpt1000-0502-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "More i ocean",
+    "focus": "Ningaloo i sezonska okupljanja kitopsina uz obalni greben",
+    "difficulty": 3,
+    "styleId": 98,
+    "question": "Na zapadnoj obali Australije stotine kitopsina sezonski se okupljaju uz jedan od najduljih grebena smještenih neposredno uz kopno. Kako se zove taj UNESCO-ov obalni krajolik?",
+    "answers": [
+      "Ningaloo",
+      "Ningaloo Coast",
+      "Obala Ningaloo",
+      "Greben Ningaloo"
+    ],
+    "explanation": "UNESCO-ova obala Ningaloo u Zapadnoj Australiji poznata je po obalnom koraljnom grebenu i velikim sezonskim okupljanjima kitopsina.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1369"
+    ],
+    "id": "chatgpt1000-0503-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Vremenske prilike",
+    "focus": "thundersnow grmljavina i munje tijekom snježne oluje",
+    "difficulty": 1,
+    "styleId": 67,
+    "question": "Munje i grmljavina ne moraju pratiti kišu: ponekad se javljaju usred snježne oluje. Kako se na engleskom naziva ta pojava?",
+    "answers": [
+      "Thundersnow",
+      "Grmljavinska snježna oluja",
+      "Snježna grmljavina"
+    ],
+    "explanation": "Thundersnow označava grmljavinsku oluju u kojoj se javlja snijeg, uz munje i grmljavinu.",
+    "sources": [
+      "https://www.nssl.noaa.gov/education/svrwx101/winter/faq/"
+    ],
+    "id": "chatgpt1000-0504-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Kemija",
+    "focus": "Mendelejevljev eka-silicij i otkriće germanija 1886.",
+    "difficulty": 4,
+    "styleId": 10,
+    "question": "Mendelejev je predvidio svojstva još neotkrivenog „eka-silicija”, a 1886. pokazalo se koliko je bio precizan. Koji je kemijski element tada izoliran?",
+    "answers": [
+      "Germanij",
+      "Germanium",
+      "Ge"
+    ],
+    "explanation": "Clemens Winkler izolirao je germanij 1886. godine; njegova svojstva odgovarala su Mendelejevljevu predviđanju za eka-silicij.",
+    "sources": [
+      "https://periodic-table.rsc.org/podcast/32/germanium"
+    ],
+    "id": "chatgpt1000-0505-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Tehnologija",
+    "focus": "Cambridgeova kamera za nadzor posude s kavom",
+    "difficulty": 1,
+    "styleId": 6,
+    "question": "Da se ne bi uzalud šetali hodnikom, računalni stručnjaci u Cambridgeu 1990-ih su jednu od prvih web-kamera usmjerili prema sasvim običnom predmetu. Što su nadzirali?",
+    "answers": [
+      "Posudu s kavom",
+      "Lonac za kavu",
+      "Aparat za kavu",
+      "Kavu",
+      "Coffee pot"
+    ],
+    "explanation": "Kamera u laboratoriju Sveučilišta Cambridge pratila je posudu s kavom kako bi zaposlenici mogli provjeriti ima li kave prije odlaska po nju.",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/114885-first-webcam"
+    ],
+    "id": "chatgpt1000-0506-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Televizija",
+    "focus": "John Logie Baird i televizijska demonstracija 1926.",
+    "difficulty": 2,
+    "styleId": 56,
+    "question": "U londonskom laboratoriju 26. siječnja 1926. javno je demonstrirano prenošenje pokretnih slika iz jedne prostorije u drugu. Koji je škotski pionir televizije to izveo?",
+    "answers": [
+      "John Logie Baird",
+      "John Baird",
+      "Džon Logi Berd",
+      "Baird"
+    ],
+    "explanation": "John Logie Baird 26. siječnja 1926. prikazao je svoj televizijski sustav članovima Kraljevske ustanove u Londonu.",
+    "sources": [
+      "https://blog.scienceandmediamuseum.org.uk/history-of-british-television-timeline/"
+    ],
+    "id": "chatgpt1000-0507-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Pravo i društvo",
+    "focus": "Eleanor Roosevelt i nastanak Opće deklaracije o ljudskim pravima",
+    "difficulty": 2,
+    "styleId": 18,
+    "question": "Kao bivša prva dama SAD-a predvodila je UN-ovu Komisiju za ljudska prava tijekom nastanka Opće deklaracije iz 1948. O kojoj je ženi riječ?",
+    "answers": [
+      "Eleanor Roosevelt",
+      "Eleonora Roosevelt",
+      "Eleanor Ruzvelt"
+    ],
+    "explanation": "Eleanor Roosevelt predsjedala je UN-ovom Komisijom za ljudska prava i imala ključnu ulogu u izradi Opće deklaracije o ljudskim pravima.",
+    "sources": [
+      "https://www.un.org/en/about-us/udhr/drafters-of-the-declaration"
+    ],
+    "id": "chatgpt1000-0508-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Zemljopis",
+    "focus": "UNESCO krajolik Sukur s palačom Hidija i talionicama željeza",
+    "difficulty": 5,
+    "styleId": 51,
+    "question": "Palača poglavara Hidija, terasasta polja i ostatci talionica željeza obilježavaju kulturni krajolik na nigerijsko-kamerunskoj granici. Kako se zove to UNESCO-ovo mjesto?",
+    "answers": [
+      "Sukur",
+      "Kulturni krajolik Sukur",
+      "Sukur Cultural Landscape"
+    ],
+    "explanation": "Sukur u sjeveroistočnoj Nigeriji čuva palaču Hidija, poljoprivredne terase i ostatke povijesne proizvodnje željeza.",
+    "sources": [
+      "https://whc.unesco.org/en/list/938"
+    ],
+    "id": "chatgpt1000-0509-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Inženjerstvo",
+    "focus": "Jacquardov tkalački stan i bušene kartice",
+    "difficulty": 3,
+    "styleId": 59,
+    "question": "Mnogo prije računalnih programa rupice na karticama određivale su koje će se niti podignuti u tkalačkom stanu. Po kojem se francuskom izumitelju naziva taj stroj?",
+    "answers": [
+      "Joseph Marie Jacquard",
+      "Joseph Jacquard",
+      "Jacquard",
+      "Žozef Mari Žakar"
+    ],
+    "explanation": "Joseph Marie Jacquard razvio je mehanizam kojim se tkalački uzorci upravljaju nizom bušenih kartica, pretečom računalnog programiranja.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object-groups/punch-cards"
+    ],
+    "id": "chatgpt1000-0510-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "afro-urugvajska bubnjarska tradicija candombe",
+    "difficulty": 4,
+    "styleId": 20,
+    "question": "U montevidejskim četvrtima Sur, Palermo i Cordón bubnjari se okupljaju oko vatre, a zatim izlaze u ritmičku povorku. Kako se zove ta afro-urugvajska tradicija?",
+    "answers": [
+      "Candombe",
+      "Kandombe"
+    ],
+    "explanation": "Candombe je afro-urugvajska bubnjarska i povorkovna tradicija Montevidea, upisana 2009. na UNESCO-ov popis nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/decisions/4.COM/13.74"
+    ],
+    "id": "chatgpt1000-0511-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Moda",
+    "focus": "ganska tkanina kente i simbolika uzoraka",
+    "difficulty": 5,
+    "styleId": 46,
+    "question": "U Gani se šarene svilene ili pamučne trake spajaju u tkaninu čiji uzorci mogu prenositi poslovice i društvene poruke. Kako se zove ta tradicija upisana na UNESCO-ov popis 2024.?",
+    "answers": [
+      "Kente",
+      "Kente tkanina"
+    ],
+    "explanation": "Kente je tradicionalna ganska tkanina od uskih tkanih traka, a njezine boje, uzorci i nazivi prenose kulturne poruke.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/craftsmanship-of-traditional-woven-textile-kente-02130"
+    ],
+    "id": "chatgpt1000-0512-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Jezik",
+    "focus": "malajska pjesnička forma pantun s rimom ABAB",
+    "difficulty": 5,
+    "styleId": 93,
+    "question": "Na malajskim svadbama i svečanostima može se čuti pjesnička forma od najčešće četiri stiha s rimom ABAB, kojom se osjećaji izražavaju neizravno i uljudno. Kako se zove?",
+    "answers": [
+      "Pantun"
+    ],
+    "explanation": "Pantun je malajska pjesnička i usmena tradicija, najčešće u četverostisima s rimom ABAB, prisutna u svečanim i svakodnevnim prigodama.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/pantun-02274"
+    ],
+    "id": "chatgpt1000-0513-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Film",
+    "focus": "Kabinet doktora Caligarija i scenografija ekspresionizma",
+    "difficulty": 4,
+    "styleId": 52,
+    "question": "U nijemom filmu iz 1920. ukošene, naslikane ulice prate priču o mjesečaru Cesareu i tajanstvenom hipnotizeru. Koji je naslov tog klasika njemačkog ekspresionizma?",
+    "answers": [
+      "Kabinet doktora Caligarija",
+      "Kabinet dr. Caligarija",
+      "Das Cabinet des Dr. Caligari",
+      "The Cabinet of Dr. Caligari",
+      "Kabinet doktora Kaligarija"
+    ],
+    "explanation": "Film Roberta Wienea Kabinet doktora Caligarija iz 1920. proslavio je izobličene kulise i ekspresionistički stil nijemoga filma.",
+    "sources": [
+      "https://www.bfi.org.uk/features/100-years-cabinet-dr-caligari"
+    ],
+    "id": "chatgpt1000-0514-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Gastronomija",
+    "focus": "etiopska injera od fermentiranog tefa",
+    "difficulty": 3,
+    "styleId": 15,
+    "question": "Tijesto od tefa ostavi se da fermentira, a zatim se ispeče velika spužvasta palačinka koja u Etiopiji služi i kao podloga za druga jela. Kako se zove?",
+    "answers": [
+      "Injera",
+      "Indžera",
+      "Inđera"
+    ],
+    "explanation": "Injera je kiseli, spužvasti plosnati kruh od fermentiranog tijesta, tradicionalno pripreman s tefom i poslužen uz etiopska jela.",
+    "sources": [
+      "https://www.smithsonianmag.com/travel/best-vegetarian-foods-of-the-world-13169247/"
+    ],
+    "id": "chatgpt1000-0515-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Medicina",
+    "focus": "godina WHO-ova proglašenja iskorjenjivanja velikih boginja",
+    "difficulty": 1,
+    "styleId": 100,
+    "question": "Posljednji prirodni slučaj velikih boginja zabilježen je 1977. u Somaliji, a WHO je tri godine poslije proglasio bolest iskorijenjenom. Koje je to godine bilo?",
+    "answers": [
+      "1980",
+      "1980.",
+      "Tisuću devetsto osamdesete"
+    ],
+    "explanation": "Svjetska zdravstvena organizacija 1980. službeno je proglasila velike boginje iskorijenjenima nakon posljednjeg prirodnog slučaja 1977.",
+    "sources": [
+      "https://www.who.int/health-topics/smallpox"
+    ],
+    "id": "chatgpt1000-0516-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Ekonomija",
+    "focus": "prve europske papirnate novčanice izdane u Švedskoj 1661.",
+    "difficulty": 3,
+    "styleId": 12,
+    "question": "Kina je papirnati novac koristila stoljećima prije Europe, no europska priča s novčanicama počela je 1661. U kojoj su državi tada prvi put izdane?",
+    "answers": [
+      "Švedska",
+      "Svedska",
+      "Sweden"
+    ],
+    "explanation": "Švedska je 1661. postala prva europska država koja je izdala novčanice, mnogo stoljeća nakon njihove pojave u Kini.",
+    "sources": [
+      "https://www.bankofengland.co.uk/explainers/how-has-money-changed-over-time"
+    ],
+    "id": "chatgpt1000-0517-20261028",
+    "createdAt": "2026-10-28T21:46:02.054Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "image": null,
+    "updatedAt": null
   }
 ]
