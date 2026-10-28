@@ -6497,5 +6497,629 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0270-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "bitka kod Adwe 1896. i etiopska pobjeda nad talijanskom vojskom",
+    "difficulty": 4,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "U ožujku 1896. vojska cara Menelika II. porazila je talijanske kolonijalne snage u bitci koja je postala simbol afričkog otpora. Kako se zove mjesto te povijesne pobjede?",
+    "answers": [
+      "Adwa",
+      "Adva",
+      "Adua",
+      "Bitka kod Adwe"
+    ],
+    "explanation": "Etiopska vojska pobijedila je talijanske snage kod Adwe 1. ožujka 1896. Pobjeda je osigurala priznanje etiopske neovisnosti i postala simbol otpora kolonijalnim osvajanjima.",
+    "sources": [
+      "https://mot.gov.et/about-ethiopia/history/",
+      "https://www.history.com/articles/battle-adwa-ethiopia-africa-colonization"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0271-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "Adamov most od sprudova između Indije i Šri Lanke",
+    "difficulty": 3,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Niz plitkih vapnenačkih sprudova dug približno 48 kilometara povezuje indijski otok Rameswaram sa šrilankanskim Mannarom, između Palkova tjesnaca i Mannarskog zaljeva. Kako se naziva taj prirodni most?",
+    "answers": [
+      "Adamov most",
+      "Adam's Bridge",
+      "Ramin most",
+      "Rama Setu",
+      "Rama Sethu"
+    ],
+    "explanation": "Adamov most, poznat i kao Rama Setu, lanac je plitkih sprudova između Indije i Šri Lanke. Razdvaja Palkov tjesnac od Mannarskog zaljeva, a ESA navodi duljinu od približno 48 kilometara.",
+    "sources": [
+      "https://www.esa.int/ESA_Multimedia/Images/2024/06/Earth_from_Space_Adam_s_Bridge"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0272-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "ginko kao jedini živući predstavnik drevne skupine golosjemenjača",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Listovi mu nalikuju lepezama, a fosilni srodnici živjeli su još u doba dinosaura. Koje se stablo danas naziva živim fosilom jer je jedini preostali predstavnik svoje drevne skupine?",
+    "answers": [
+      "Ginko",
+      "Ginkgo",
+      "Ginkgo biloba",
+      "Ginko biloba"
+    ],
+    "explanation": "Ginkgo biloba jedina je danas živuća vrsta svojega roda i čitavoga reda Ginkgoales. Njegovi lepezasti listovi nalikuju fosilnim listovima starima više od 200 milijuna godina.",
+    "sources": [
+      "https://www.kew.org/read-and-watch/ginkgo-biloba-maidenhair-tree-kew-gardens"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0273-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "satenska vrtlarica koja udvara plavim predmetima",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Mužjak ove australske ptice na tlu gradi prolaz od grančica i pažljivo ga ukrašava plavim čepovima, perjem i cvijećem kako bi privukao ženku. Koja je to ptica?",
+    "answers": [
+      "Satenska vrtlarica",
+      "Satin bowerbird",
+      "Ptilonorhynchus violaceus",
+      "Satenska ptica vrtlarica"
+    ],
+    "explanation": "Mužjak satenske vrtlarice gradi i održava ukrašenu građevinu zvanu bower, koja služi za udvaranje, a ne za gniježđenje. Posebno skuplja plave predmete i pred ženkom izvodi složen ples.",
+    "sources": [
+      "https://australian.museum/learn/animals/birds/satin-bowerbird/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0274-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Courtoisovo otkriće joda iz pepela morskih algi 1811.",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Dok je 1811. obrađivao pepeo morskih algi, Bernard Courtois ugledao je ljubičaste pare koje su se pretvarale u sjajne kristale. Koji je kemijski element tako otkrio?",
+    "answers": [
+      "Jod",
+      "Iodine",
+      "Iod"
+    ],
+    "explanation": "Bernard Courtois slučajno je 1811. otkrio jod pri obradi pepela algi sumpornom kiselinom. Element je dobio ime prema grčkoj riječi za ljubičastu boju njegovih para.",
+    "sources": [
+      "https://periodic-table.rsc.org/element/53/iodine/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0275-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Hardyjev taksi broj koji je Ramanujan povezao s dva zbroja kubova",
+    "difficulty": 5,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Matematičar Hardy smatrao je broj svojega taksija dosadnim, no Ramanujan ga je prepoznao kao najmanji prirodan broj koji se na dva načina može prikazati kao zbroj dvaju pozitivnih kubova. Koji je to broj?",
+    "answers": [
+      "1729",
+      "Tisuću sedamsto dvadeset devet"
+    ],
+    "explanation": "Broj 1729 jednak je 1³ + 12³, ali i 9³ + 10³. Hardy je zapisao poznatu anegdotu o Ramanujanu, pa se 1729 naziva Hardy-Ramanujanovim ili prvim taksi brojem.",
+    "sources": [
+      "https://mathshistory.st-andrews.ac.uk/Biographies/Hardy/quotations/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0276-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "asteroid Bennu i uzorci misije OSIRIS-REx vraćeni 2023.",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "NASA-ina letjelica prikupila je 2020. prašinu s njegove površine, kapsula se vratila na Zemlju 2023., a sam asteroid ima oblik nalik dijamantu. Kako se zove taj asteroid?",
+    "answers": [
+      "Bennu",
+      "101955 Bennu",
+      "Benu"
+    ],
+    "explanation": "OSIRIS-REx prikupio je materijal s Bennua 2020., a kapsula s uzorcima sletjela je u Utah 24. rujna 2023. Uzorci omogućuju proučavanje ranog Sunčeva sustava.",
+    "sources": [
+      "https://science.nasa.gov/mission/osiris-rex/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0277-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Semmelweis i pranje ruku klornim vapnom u rodilištu 1847.",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Nakon uvođenja obveznog pranja ruku otopinom klornog vapna u bečkom rodilištu 1847. smrtnost rodilja naglo je pala. Koji je liječnik potaknuo tu promjenu?",
+    "answers": [
+      "Ignaz Semmelweis",
+      "Semmelweis",
+      "Ignac Semmelweis",
+      "Ignaz Filip Semmelweis"
+    ],
+    "explanation": "Ignaz Semmelweis uveo je dezinfekciju ruku u bečkoj rodilišnoj klinici 1847. i pokazao da se time može znatno smanjiti broj smrti od babinje groznice.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3881728/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0278-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "godina prve SMS poruke Merry Christmas koju je poslao Neil Papworth",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Programer Neil Papworth s računala je poslao poruku 'Merry Christmas' na mobitel kolege u Vodafoneu. Koje se godine dogodio taj prvi SMS?",
+    "answers": [
+      "1992",
+      "1992.",
+      "Tisuću devetsto devedeset druge"
+    ],
+    "explanation": "Neil Papworth poslao je prvi SMS 3. prosinca 1992. kolegi Richardu Jarvisu. Poruka je sadržavala jednostavnu božićnu čestitku, a poslana je s računala.",
+    "sources": [
+      "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0279-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "toplinsko širenje željezne konstrukcije Eiffelova tornja",
+    "difficulty": 4,
+    "styleId": 97,
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "question": "Sunce zagrijava jednu stranu Eiffelova tornja više od drugih, pa se vrh tijekom vedrog dana može malo pomaknuti. Koja fizikalna pojava u metalu uzrokuje to pomicanje?",
+    "answers": [
+      "Toplinsko širenje",
+      "Termičko širenje",
+      "Toplinska dilatacija",
+      "Termička dilatacija"
+    ],
+    "explanation": "Željezo se zagrijavanjem širi, a hlađenjem skuplja. Nejednako zagrijavanje strana Eiffelova tornja može uzrokovati pomicanje njegova vrha u krivulji promjera oko 15 centimetara.",
+    "sources": [
+      "https://www.toureiffel.paris/en/news/history-and-culture/why-does-eiffel-tower-change-size"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0280-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Oscar Niemeyer i javne građevine planirane brazilske prijestolnice",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Urbanist Lúcio Costa osmislio je raspored nove brazilske prijestolnice, dok je drugi stvaralac projektirao njezine prepoznatljive državne građevine. Kako se zvao taj arhitekt?",
+    "answers": [
+      "Oscar Niemeyer",
+      "Niemeyer",
+      "Oskar Nimejer",
+      "Oskar Niemeyer"
+    ],
+    "explanation": "Brasília je nastajala od 1956. do 1960. prema urbanističkom planu Lúcia Coste. Oscar Niemeyer projektirao je mnoge njezine reprezentativne modernističke građevine.",
+    "sources": [
+      "https://whc.unesco.org/en/list/445"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0281-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "prvo izlaganje Picassove Guernice u Španjolskom paviljonu 1937.",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Picassova Guernica prvi je put predstavljena na međunarodnoj izložbi u Parizu 1937., u prostoru koji je zastupao zemlju zahvaćenu građanskim ratom. U čijem je paviljonu bila izložena?",
+    "answers": [
+      "Španjolskom",
+      "Španjolski paviljon",
+      "Paviljon Španjolske",
+      "Španjolska"
+    ],
+    "explanation": "Guernica je 1937. prvi put izložena u Španjolskom paviljonu na međunarodnoj izložbi u Parizu. Slika je postala snažan antiratni simbol.",
+    "sources": [
+      "https://guernica.museoreinasofia.es/en"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0282-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "Sequoyah i slogovno pismo naroda Cherokee",
+    "difficulty": 5,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Početkom 19. stoljeća Sequoyah je bez formalnog školovanja osmislio sustav znakova koji je njegovu narodu omogućio široku pismenost i izdavanje novina. Za koji je indijanski jezik stvorio slogovno pismo?",
+    "answers": [
+      "Cherokee",
+      "Čeroki",
+      "Čiroki",
+      "Cherokee jezik",
+      "Čerokijski jezik"
+    ],
+    "explanation": "Sequoyah je stvorio slogovno pismo za jezik naroda Cherokee. Narod ga je službeno prihvatio 1825., a 1828. počeo je izlaziti dvojezični list na cherokeeju i engleskom.",
+    "sources": [
+      "https://collections.si.edu/search/detail/edanmdm%3Ayt_rSFAq3Z7a2g"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0283-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Cageova skladba od četiri minute i trideset tri sekunde bez odsviranih tonova",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Publika sluša okolne zvukove, a izvođač tijekom tri stavka ne odsvira nijedan ton. Koji je naslov Cageove skladbe iz 1952. zapisan kao trajanje u minutama i sekundama?",
+    "answers": [
+      "4'33\"",
+      "4′33″",
+      "4:33",
+      "Četiri minute i trideset tri sekunde",
+      "Four minutes thirty-three seconds"
+    ],
+    "explanation": "John Cage napisao je 4′33″ 1952. godine. Izvođač ne proizvodi namjerne glazbene tonove, pa zvukovi publike i prostora postaju dio doživljaja djela.",
+    "sources": [
+      "https://johncage.org/kuhns/john-cage-amp-the-new-world-symphony-1"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0284-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "Porterov film iz 1903. s razbojnikom koji puca prema kameri",
+    "difficulty": 4,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Razbojnik podigne revolver i zapuca ravno prema gledatelju, u prizoru koji je mogao biti prikazan na početku ili na kraju projekcije. Kako se zove slavni američki nijemi film iz 1903. o pljački vlaka?",
+    "answers": [
+      "Velika pljačka vlaka",
+      "The Great Train Robbery",
+      "Velika pljačka voza"
+    ],
+    "explanation": "The Great Train Robbery snimljen je 1903. u produkciji Edisonove kompanije, a povezuje se s Edwinom S. Porterom. Poznati krupni plan razbojnika koji puca u kameru mogao se prikazivati na početku ili kraju filma.",
+    "sources": [
+      "https://www.loc.gov/item/00694220",
+      "https://www.loc.gov/static/collections/edison-company-motion-pictures-and-sound-recordings/articles-and-essays/history-of-edison-motion-pictures/fictional-films-dominate.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0285-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "obrazovna dječja serija Sesame Street pokrenuta 1969.",
+    "difficulty": 1,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Godine 1969. na televiziji su se susreli ljudi, šarene lutke i ptica Big Bird kako bi djeca učila slova i brojeve. Kako se zove ta dugovječna američka obrazovna serija?",
+    "answers": [
+      "Sesame Street",
+      "Ulica Sezam",
+      "Sezamova ulica"
+    ],
+    "explanation": "Sesame Street počeo se prikazivati 1969. godine. Serija je spojila zabavu i predškolsko obrazovanje, a osmislila ju je neprofitna organizacija danas poznata kao Sesame Workshop.",
+    "sources": [
+      "https://sesameworkshop.org/about-us/mission-and-history/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0286-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "igračka Mr. Potato Head predstavljena 1952. kao Funny-Face Kit",
+    "difficulty": 1,
+    "styleId": 84,
+    "styleDescription": "Opiši omiljen dječji predmet preko godine nastanka",
+    "question": "Komplet Funny-Face Kit iz 1952. dopuštao je djeci slaganje očiju, nosa i drugih dijelova na glavi lika koji je poslije postao i filmska zvijezda u Priči o igračkama. Kako se zove taj gospodin?",
+    "answers": [
+      "Mr. Potato Head",
+      "Mister Potato Head",
+      "Gospodin Krumpirko",
+      "Gospodin Krumpirova Glava"
+    ],
+    "explanation": "Mr. Potato Head predstavljen je 1952. kao igračka sa zamjenjivim dijelovima lica. Smithsonian čuva primjerak ranog kompleta Funny-Face Kit tvrtke Hassenfeld Bros.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_748919"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0287-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "Spyridon Louis i pobjeda u prvom olimpijskom maratonu 1896.",
+    "difficulty": 3,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Na prvim modernim Olimpijskim igrama u Ateni domaći je trkač slavio u maratonu dugom oko 40 kilometara i postao nacionalni junak. Kako se zvao pobjednik te utrke 1896.?",
+    "answers": [
+      "Spyridon Louis",
+      "Spiridon Luis",
+      "Spiridon Louis",
+      "Spýros Loúis",
+      "Spiros Louis"
+    ],
+    "explanation": "Grk Spyridon Louis osvojio je prvi olimpijski maraton u Ateni 1896. na stazi dugoj približno 40 kilometara. Današnja standardna duljina maratona iznosi 42,195 kilometara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0288-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "Edward Calahan i burzovni ticker iz 1867.",
+    "difficulty": 5,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Prije 1867. burzovne cijene često su prenosili glasnici trčeći između zgrada. Koji je izumitelj razvio uređaj koji ih je potom telegrafski ispisivao na dugoj papirnatoj vrpci?",
+    "answers": [
+      "Edward Calahan",
+      "Edward A. Calahan",
+      "Edward Callahan",
+      "Calahan",
+      "Callahan"
+    ],
+    "explanation": "Edward A. Calahan razvio je burzovni ticker koji je 1867. omogućio brzo telegrafsko ispisivanje cijena dionica. Time je znatno smanjena potreba za glasnicima između burzi i brokerskih ureda.",
+    "sources": [
+      "https://www.smithsonianmag.com/smart-news/the-physical-stock-ticker-is-a-relic-but-its-influence-reverberates-loudly-today-180961092/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0289-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "Sueski kanal na razini mora bez brodskih prevodnica",
+    "difficulty": 2,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Panamski kanal podiže i spušta brodove prevodnicama, ali njegov egipatski pandan spaja Sredozemno i Crveno more na približno istoj razini mora. Kako se zove taj kanal bez prevodnica?",
+    "answers": [
+      "Sueski kanal",
+      "Suecki kanal",
+      "Suez Canal",
+      "Suez"
+    ],
+    "explanation": "Sueski kanal prolazi Egiptom između Port Saida i Sueskog zaljeva. Budući da je kanal na razini mora, za prolazak brodova ne trebaju prevodnice poput onih u Panamskom kanalu.",
+    "sources": [
+      "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalNature.aspx"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0290-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "B. F. Goodrich i nastanak naziva zipper za patentni zatvarač",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Današnji patentni zatvarač poznat je i po engleskoj riječi zipper, koju je popularizirao proizvođač obuće koristeći zatvarače na čizmama. Kako se zvala ta američka tvrtka?",
+    "answers": [
+      "B. F. Goodrich",
+      "BF Goodrich",
+      "Goodrich",
+      "B.F. Goodrich"
+    ],
+    "explanation": "Smithsonian navodi da je proizvođač čizama B. F. Goodrich prvi skovao naziv zipper. Zatvarač se prije šire uporabe u odjeći primjenjivao upravo na obući.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_860486"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0291-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "inćuni kao riblji sastojak Worcestershire umaka",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U umaku Worcestershire miješaju se ocat, melasa, tamarind i začini, ali tradicionalni recept sadrži i jednu malu morsku ribu. Koju?",
+    "answers": [
+      "Inćuni",
+      "Inćun",
+      "Anchovies",
+      "Anchovy"
+    ],
+    "explanation": "Tradicionalni Worcestershire umak sadrži inćune, odnosno anchovies, uz ocat, melasu, tamarind i začine. Zato mnoge klasične verzije nisu prikladne za vegetarijance.",
+    "sources": [
+      "https://www.heinz.com/fr-FR/products/05000111041836-sauce-worcestershire"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0292-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "odabir Greenwichkog početnog meridijana na konferenciji 1884.",
+    "difficulty": 5,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Delegati međunarodne konferencije u Washingtonu 1884. odabrali su zajedničku polaznu crtu za zemljopisnu dužinu. Prema kojem londonskom mjestu danas nazivamo taj nulti meridijan?",
+    "answers": [
+      "Greenwich",
+      "Grinič",
+      "Greenwichki meridijan",
+      "Grinički meridijan"
+    ],
+    "explanation": "Na Međunarodnoj meridijanskoj konferenciji 1884. odabran je meridijan koji prolazi kroz kraljevski opservatorij u Greenwichu. Postao je globalna referenca za zemljopisnu dužinu.",
+    "sources": [
+      "https://www.rmg.co.uk/royal-observatory/attractions/stand-on-prime-meridian-line"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0293-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "Novi Zeland i pravo glasa ženama na parlamentarnim izborima 1893.",
+    "difficulty": 1,
+    "styleId": 78,
+    "styleDescription": "Opiši neobičan zakon ili propis i traži državu",
+    "question": "Godine 1893. jedna je samoupravna država postala prva u svijetu koja je svim odraslim ženama priznala pravo glasa na parlamentarnim izborima. Koja je to država?",
+    "answers": [
+      "Novi Zeland",
+      "New Zealand"
+    ],
+    "explanation": "Novozelandski Izborni zakon stupio je na snagu 19. rujna 1893. Žene su iste godine prvi put glasale na parlamentarnim izborima, što je bio važan korak u povijesti biračkih prava.",
+    "sources": [
+      "https://nzhistory.govt.nz/womens-suffrage-day"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0294-20261028",
+    "createdAt": "2026-10-28T12:42:36.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "Borgesova Babilonska knjižnica sastavljena od šesterokutnih galerija",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Zamislite svemir od beskrajnih šesterokutnih galerija u kojima se nalaze sve moguće knjige, uključujući besmislice i njihove opovrge. Kako se zove Borgesova pripovijetka o takvoj knjižnici?",
+    "answers": [
+      "Babilonska knjižnica",
+      "Babelska knjižnica",
+      "The Library of Babel",
+      "La biblioteca de Babel",
+      "Knjižnica Babel"
+    ],
+    "explanation": "U Borgesovoj pripovijetki Babilonska knjižnica svemir je zamišljen kao mreža šesterokutnih galerija s knjigama koje sadrže sve moguće nizove znakova. Priča propituje granice znanja i smisla.",
+    "sources": [
+      "https://exhibits.lib.lehigh.edu/exhibits/show/imaginary-places/20th-century/borges"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
