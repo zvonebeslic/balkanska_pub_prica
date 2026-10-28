@@ -2862,5 +2862,605 @@
     "image": null,
     "updatedAt": null,
     "verification": "za_urednicku_provjeru"
+  },
+  {
+    "id": "chatgpt1000-0120-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "inkovski zapisi na čvorovima",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U Carstvu Inka podatci su se mogli prenositi bez papira i pisma: različite boje uzica, raspored čvorova i njihovi položaji čuvali su brojčane zapise. Kako se nazivao taj sustav?",
+    "answers": [
+      "Kipu",
+      "Quipu",
+      "Khipu"
+    ],
+    "explanation": "Kipu ili quipu sustav je čvorovanih uzica kojim su Inke bilježile podatke i prenosile poruke. Boje, položaji i vrste čvorova imali su ulogu u zapisu brojeva.",
+    "sources": [
+      "https://www.si.edu/collections/snapshot/quipu"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0121-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "solana kao zrcalo na Altiplanu",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na bolivijskom Altiplanu prostire se golema bijela ravnica koja se za kišnih razdoblja pretvara u prirodno zrcalo neba. Kako se zove ta najveća svjetska slana ravnica?",
+    "answers": [
+      "Salar de Uyuni",
+      "Uyuni",
+      "Salina Uyuni"
+    ],
+    "explanation": "Salar de Uyuni najveća je slana ravnica na Zemlji, nastala nakon isušivanja prapovijesnih jezera. Tanki sloj vode u kišnom razdoblju stvara poznati zrcalni odraz.",
+    "sources": [
+      "https://science.nasa.gov/earth/earth-observatory/an-expanse-of-white-in-bolivia-84853/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0122-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "sukulenti prerušeni u kamenčiće",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U pustinjskim predjelima južne Afrike neke se sićušne biljke sastoje gotovo samo od para mesnatih listova koji izgledaju kao oblutci. Koji je znanstveni naziv toga roda, poznatog kao živo kamenje?",
+    "answers": [
+      "Lithops",
+      "Litops",
+      "Litopsi"
+    ],
+    "explanation": "Lithops je rod sukulenata čiji se parovi zadebljalih listova bojom i oblikom stapaju s okolnim kamenjem. Ta prilagodba pomaže im preživjeti u suhim staništima južne Afrike.",
+    "sources": [
+      "https://pza.sanbi.org/lithops"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0123-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "sisavac s keratinskim oklopom",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kad mu zaprijeti opasnost, ovaj se sisavac može sklupčati u čvrstu kuglu, a njegovo tijelo štite ljuske od istog materijala od kojeg su ljudski nokti. Kako se zove?",
+    "answers": [
+      "Ljuskavac",
+      "Pangolin"
+    ],
+    "explanation": "Ljuskavci ili pangolini sisavci su prekriveni keratinskim ljuskama. Hrane se uglavnom mravima i termitima, a sklupčavanje im služi kao obrana.",
+    "sources": [
+      "https://www.zsl.org/what-we-do/species/pangolins"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0124-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "kapljica koja klizi na sloju pare",
+    "difficulty": 4,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kap vode na umjereno toploj tavi brzo ispari, ali na mnogo toplijoj površini može neočekivano kliziti i dugo opstati jer je odvaja tanki sloj vlastite pare. Čiji efekt promatramo?",
+    "answers": [
+      "Leidenfrostov efekt",
+      "Leidenfrostov učinak",
+      "Leidenfrost",
+      "Leidenfrost effect"
+    ],
+    "explanation": "Leidenfrostov efekt nastaje kada se između kapljice i izrazito vruće podloge stvori izolirajući sloj pare. On usporava prijenos topline i omogućuje kapljici da klizi.",
+    "sources": [
+      "https://physics.aps.org/articles/v14/160"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0125-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "slučajno otkriveni plavi pigment u Berlinu",
+    "difficulty": 4,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Oko 1706. u Berlinu je slučajno nastao snažan plavi pigment koji je poslije zamijenio dio skupih prirodnih plavih boja u slikarstvu. Pod kojim je zemljopisno obojenim nazivom poznat?",
+    "answers": [
+      "Prusko plava",
+      "Pruska plava",
+      "Prussian blue",
+      "Berlinsko plava",
+      "Berlinska plava"
+    ],
+    "explanation": "Prusko plava jedan je od prvih modernih sintetskih pigmenata. Otkriće se povezuje s Johannom Jacobom Diesbachom, a pigment se u europskom slikarstvu proširio tijekom 18. stoljeća.",
+    "sources": [
+      "https://resources.metmuseum.org/resources/metpublications/pdf/AlbertsonCentenoEaker_Metropolitan_Museum_Journal_v_54_2019.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0126-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Eulerova formula za poliedre",
+    "difficulty": 3,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Kod svakog konveksnog poliedra Eulerova formula povezuje broj vrhova V, bridova E i ploha F. Koliko uvijek iznosi izraz V − E + F?",
+    "answers": [
+      "2",
+      "Dva"
+    ],
+    "explanation": "Eulerova formula za konveksne poliedre glasi V − E + F = 2. Primjerice, kocka ima osam vrhova, dvanaest bridova i šest ploha, pa je 8 − 12 + 6 = 2.",
+    "sources": [
+      "https://mathworld.wolfram.com/PolyhedralFormula.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0127-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "ledeni gejziri na Saturnovu mjesecu",
+    "difficulty": 4,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Sonda Cassini snimila je mlazove vodene pare i ledenih čestica koji izbijaju iz pukotina nazvanih tigrove pruge blizu južnog pola jednog Saturnova mjeseca. Kojega?",
+    "answers": [
+      "Enceladus",
+      "Enkelad"
+    ],
+    "explanation": "Na Enceladusu se uz pukotine u području južnog pola nalaze aktivni gejziri. Cassinijeva opažanja povezuju izbačeni materijal s vodom ispod ledene površine.",
+    "sources": [
+      "https://science.nasa.gov/resource/bursting-at-the-seams-the-geyser-basin-of-enceladus/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0128-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "organ s otočićima koji izlučuju inzulin",
+    "difficulty": 2,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "U kojem se ljudskom organu nalaze Langerhansovi otočići, čije beta-stanice izlučuju inzulin, dok ostatak organa sudjeluje i u probavi hrane?",
+    "answers": [
+      "Gušterača",
+      "Pankreas",
+      "Pancreas"
+    ],
+    "explanation": "Langerhansovi otočići nakupine su endokrinih stanica u gušterači. Njihove beta-stanice izlučuju inzulin, a alfa-stanice glukagon.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/mesh/68007515"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0129-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "stvarni kukac u dnevniku računala Mark II",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Inženjeri su 1947. iz jednog releja računala Harvard Mark II uklonili kukca i zalijepili ga u radni dnevnik kao doslovan primjer računalnog buga. Koji je to kukac bio?",
+    "answers": [
+      "Moljac",
+      "Moljac leptir",
+      "Moth"
+    ],
+    "explanation": "U računalu Harvard Mark II pronađen je moljac koji je završio zalijepljen u dnevniku rada. Izraz bug za tehničku pogrešku postojao je i ranije, pa to nije bio njegov prvi nastanak.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_334663"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0130-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "prolaz za ribe preko riječnih brana",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Rijeka je pregrađena, ali lososi ipak mogu uzvodno: niz manjih bazena i prijelaza omogućuje im postupno svladavanje visinske razlike. Kako se naziva takva konstrukcija?",
+    "answers": [
+      "Riblje stube",
+      "Riblje ljestve",
+      "Riblja staza",
+      "Fish ladder"
+    ],
+    "explanation": "Riblje stube omogućuju ribama da obiđu prepreku poput brane i dosegnu uzvodna mrijestilišta. Često se sastoje od niza bazena s manjim visinskim razlikama.",
+    "sources": [
+      "https://www.fisheries.noaa.gov/west-coast/endangered-species-conservation/adult-upstream-passage-west-coast"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0131-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "fasadni element za zasjenjivanje",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Na modernističkoj zgradi niz fiksnih ili pomičnih rebara zaustavlja izravne Sunčeve zrake prije nego što uđu kroz prozore. Kojim se francuskim arhitektonskim nazivom označava taj element?",
+    "answers": [
+      "Brise-soleil",
+      "Brise soleil",
+      "Brisesoleil"
+    ],
+    "explanation": "Brise-soleil naziv je za arhitektonske elemente koji zasjenjuju pročelje i smanjuju izravno Sunčevo zračenje te zagrijavanje unutrašnjosti.",
+    "sources": [
+      "https://www.getty.edu/vow/AATFullDisplay?find=bench&logic=AND&note=&subjectid=300003113"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0132-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "tipografski spoj upitnika i uskličnika",
+    "difficulty": 4,
+    "styleId": 74,
+    "styleDescription": "Kreni od znaka u tipografiji i pitaj kako se zove",
+    "question": "Zamislite da jedno pitanje istodobno izražava čuđenje i nevjericu. Tipograf Martin Speckter 1962. predložio je znak ‽ koji objedinjuje dva poznata interpunkcijska znaka. Kako se zove?",
+    "answers": [
+      "Interrobang"
+    ],
+    "explanation": "Interrobang spaja upitnik i uskličnik u jedan znak ‽. Martin K. Speckter predložio ga je 1962. za retorička i začuđena pitanja.",
+    "sources": [
+      "https://creativepro.com/typetalk-interrobang/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0133-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "značenje nastalo spajanjem dvaju kadrova",
+    "difficulty": 5,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Isto mirno lice glumca gledatelju može djelovati gladno ili tužno, ovisno o tome prikazuje li sljedeći kadar hranu ili prizor žalovanja. Po kojem sovjetskom filmašu taj montažni učinak nosi ime?",
+    "answers": [
+      "Lev Kulešov",
+      "Kulešov",
+      "Lev Kuleshov",
+      "Kuleshov"
+    ],
+    "explanation": "Kulešovljev efekt pokazuje da gledatelj značenje i emociju kadra tumači u odnosu na kadar koji ga okružuje. Nazvan je po sovjetskom filmašu Levu Kulešovu.",
+    "sources": [
+      "https://www.criterion.com/current/posts/777-white-mane-natural-magic"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0134-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Automobili",
+    "focus": "sigurnosne deformacijske zone automobila",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Béla Barényi razvio je sigurnosnu karoseriju u kojoj se prednji i stražnji dijelovi vozila namjerno gužvaju pri sudaru, dok putnička kabina ostaje čvršća. Kako se nazivaju ti dijelovi koji upijaju energiju?",
+    "answers": [
+      "Deformacijske zone",
+      "Zone gužvanja",
+      "Crumple zones",
+      "Zone deformacije"
+    ],
+    "explanation": "Deformacijske zone pretvaraju dio energije sudara u kontrolirano gužvanje karoserije. Mercedes-Benz je 1959. u serijsku proizvodnju uveo sigurnosnu karoseriju povezanu s radom Béle Barényija.",
+    "sources": [
+      "https://group.mercedes-benz.com/company/tradition/company-history/history-esf.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0135-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "kemijska reakcija koja stvara koricu kruha",
+    "difficulty": 3,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "Kad kruh dobije zlatnosmeđu koricu, a pečeno meso razvije složen miris, važnu ulogu ima reakcija između šećera i aminokiselina. Po kojem francuskom kemičaru nosi ime?",
+    "answers": [
+      "Maillard",
+      "Louis Camille Maillard",
+      "Maillardova reakcija",
+      "Majard"
+    ],
+    "explanation": "Maillardova reakcija skup je kemijskih reakcija između reducirajućih šećera i amino-skupina koje pri zagrijavanju stvaraju boju i mnoge mirisne spojeve hrane.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/14969556/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0136-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "pauk pripovjedač iz akan folklora",
+    "difficulty": 4,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "U pričama naroda Akan iz zapadne Afrike lukavi junak, često prikazan kao pauk, nadmudruje snažnije protivnike i povezuje se s pričanjem priča. Kako se zove?",
+    "answers": [
+      "Anansi",
+      "Ananse",
+      "Anancy"
+    ],
+    "explanation": "Anansi ili Ananse junak je akan folklora povezan s paukom, lukavošću i pripovijedanjem. Priče o njemu proširile su se iz zapadne Afrike i na Karibe.",
+    "sources": [
+      "https://www.nhm.ac.uk/discover/ananse.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0137-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "latinski naziv za prijatelja suda",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U pravnom postupku mišljenje može dostaviti i netko tko nije stranka spora, ali ima relevantan interes ili stručnost. Kojim se latinskim izrazom, doslovno prijatelj suda, naziva takav sudionik?",
+    "answers": [
+      "Amicus curiae",
+      "Amikus kurije"
+    ],
+    "explanation": "Amicus curiae znači prijatelj suda. Riječ je o osobi ili organizaciji koja nije stranka u postupku, ali može sudu dostaviti argumente ili stručno mišljenje.",
+    "sources": [
+      "https://website.liicornell.org/wex/amicus_curiae"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0138-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "šesterokutni stupovi nastali hlađenjem lave",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Stijene na irskom Giant's Causewayu izgledaju kao golemo saće jer se lava pri hlađenju stezala i pucala u pravilne stupove. Od koje su vulkanske stijene uglavnom izgrađeni?",
+    "answers": [
+      "Bazalt",
+      "Basalt"
+    ],
+    "explanation": "Bazaltni tokovi pri hlađenju mogu pucati u pravilne, često šesterokutne stupove. Takvo stupasto lučenje vidi se na Giant's Causewayu i drugim vulkanskim lokalitetima.",
+    "sources": [
+      "https://www.usgs.gov/observatories/hvo/news/volcano-watch-columnar-jointing-provides-clues-cooling-history-lava-flows"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0139-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "oblaci koji svijetle nakon zalaska Sunca",
+    "difficulty": 4,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Visoko u mezosferi katkad se vide tanki srebrnoplavi oblaci koji još odražavaju Sunčevu svjetlost dok je tlo već u sumraku. Kako se nazivaju ti noću svijetleći oblaci?",
+    "answers": [
+      "Noktilucentni oblaci",
+      "Noćni svijetleći oblaci",
+      "Noctilucent clouds",
+      "Noćnosvijetleći oblaci"
+    ],
+    "explanation": "Noktilucentni oblaci nastaju vrlo visoko u mezosferi. Najlakše ih je opaziti u sumrak, kada Sunce više ne osvjetljava tlo, ali još obasjava te visoke ledene oblake.",
+    "sources": [
+      "https://www.nesdis.noaa.gov/news/mesospheric-marvel-rare-clouds-spotted-satellite"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0140-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "sloj nagle promjene temperature mora",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "More može biti toplo pri površini, a nekoliko desetaka metara niže znatno hladnije. Kako oceanografi nazivaju prijelazni sloj u kojem temperatura s dubinom naglo pada?",
+    "answers": [
+      "Termoklina",
+      "Termoklin",
+      "Thermocline"
+    ],
+    "explanation": "Termoklina je sloj nagle promjene temperature između toplije površinske i hladnije dubinske vode. Njezina dubina i izraženost ovise o području i godišnjem dobu.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/thermocline.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0141-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "početak dozrijevanja bobica grožđa",
+    "difficulty": 5,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Na trsu se bobice počinju omekšavati, a obojene sorte iz zelene prelaze u crvenu ili tamnoplavu. Kojim francuskim vinogradarskim izrazom nazivamo taj početak dozrijevanja?",
+    "answers": [
+      "Véraison",
+      "Veraison"
+    ],
+    "explanation": "Véraison označava početak dozrijevanja grožđa, kada bobice počinju mijenjati boju i omekšavati. Nakon toga postupno raste sadržaj šećera, a smanjuje se kiselost.",
+    "sources": [
+      "https://extension.oregonstate.edu/catalog/ec-1639-growing-table-grapes"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0142-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "šest točaka Brailleova pisma",
+    "difficulty": 1,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Vojni sustav reljefnog noćnog pisanja imao je dvanaest točaka u ćeliji, ali Louis Braille osmislio je praktičniju ćeliju za čitanje jednim jagodicom prsta. Od koliko se točaka sastoji?",
+    "answers": [
+      "6",
+      "Šest"
+    ],
+    "explanation": "Osnovna Brailleova ćelija ima šest položaja za reljefne točke, raspoređenih u dva stupca po tri. Takav raspored omogućuje prepoznavanje znakova dodirom prsta.",
+    "sources": [
+      "https://www.loc.gov/nls/services-and-resources/informational-publications/about-braille/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0143-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "autorica književnih Mumina",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "U pričama o Muminima susrećemo Mumin-trola, njegovu obitelj i neobične stanovnike doline, a izvorne ilustracije danas čuva i muzej u Tampereu. Koja je finska književnica i umjetnica stvorila taj svijet?",
+    "answers": [
+      "Tove Jansson",
+      "Jansson",
+      "Tove Marika Jansson"
+    ],
+    "explanation": "Tove Jansson bila je finska autorica i umjetnica koja je osmislila Mumine te pisala i ilustrirala njihove priče. Muzej Mumina u Tampereu čuva velik broj njezinih izvornih radova.",
+    "sources": [
+      "https://www.muumimuseo.fi/en/etusivu/the-museum/moomin-collection/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0144-20261028",
+    "createdAt": "2026-10-28T06:40:48.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "plavi fotografski otisak Johna Herschela",
+    "difficulty": 4,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Godine 1842. John Herschel razvio je fotografski postupak u kojem Sunčeva svjetlost i željezove soli stvaraju prepoznatljive bijele motive na plavoj podlozi. Kako se naziva taj postupak?",
+    "answers": [
+      "Cijanotipija",
+      "Cijanotip",
+      "Cyanotype",
+      "Cyanotypy"
+    ],
+    "explanation": "Cijanotipija je fotografski postupak koji je 1842. razvio John Herschel. Nakon izlaganja UV svjetlu i ispiranja vodom nastaje prepoznatljiv plavi otisak, a postupak je poslije korišten i za tehničke nacrte.",
+    "sources": [
+      "https://www.npg.org.uk/collections/explore/glossary-of-art-terms/cyanotype"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
