@@ -238,31 +238,6 @@
     "verification": "za_urednicku_provjeru"
   },
   {
-    "id": "chatgpt1000-0003-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Zemljopis",
-    "focus": "najjužniji rt Afrike",
-    "difficulty": 2,
-    "styleId": 4,
-    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
-    "question": "Rt dobre nade često pogrešno proglašavaju krajnjim jugom afričkog kopna. Kako se zapravo zove rt koji nosi tu geografsku titulu?",
-    "answers": [
-      "Rt Agulhas",
-      "Agulhas",
-      "Cape Agulhas"
-    ],
-    "explanation": "Točan odgovor: Rt Agulhas. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Cape_Agulhas"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
     "id": "chatgpt1000-0004-20261028",
     "createdAt": "2026-10-28T06:00:00.000Z",
     "origin": "chatgpt-serija-1000",
@@ -773,30 +748,6 @@
     "verification": "za_urednicku_provjeru"
   },
   {
-    "id": "chatgpt1000-0025-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Likovna umjetnost",
-    "focus": "pigment iz lapis lazulija",
-    "difficulty": 3,
-    "styleId": 80,
-    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
-    "question": "U srednjovjekovnim rukopisima i renesansnom slikarstvu posebna se plava dobivala mljevenjem dragocjenog lapis lazulija. Kako se taj pigment naziva?",
-    "answers": [
-      "Ultramarin",
-      "Ultramarine"
-    ],
-    "explanation": "Točan odgovor: Ultramarin. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Ultramarine"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
     "id": "chatgpt1000-0026-20261028",
     "createdAt": "2026-10-28T06:00:00.000Z",
     "origin": "chatgpt-serija-1000",
@@ -966,31 +917,6 @@
     "verification": "za_urednicku_provjeru"
   },
   {
-    "id": "chatgpt1000-0033-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Film",
-    "focus": "krik koji se stalno ponavlja",
-    "difficulty": 4,
-    "styleId": 96,
-    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
-    "question": "Generacijama filmskih gledatelja isti se snimljeni krik potajno vraća u pustolovnim i akcijskim filmovima. Pod kojim je muškim imenom taj zvučni efekt poznat?",
-    "answers": [
-      "Wilhelm",
-      "Wilhelmov krik",
-      "Wilhelm scream"
-    ],
-    "explanation": "Točan odgovor: Wilhelm. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Wilhelm_scream"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
     "id": "chatgpt1000-0034-20261028",
     "createdAt": "2026-10-28T06:00:00.000Z",
     "origin": "chatgpt-serija-1000",
@@ -1061,54 +987,6 @@
     "verification": "za_urednicku_provjeru"
   },
   {
-    "id": "chatgpt1000-0037-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Videoigre",
-    "focus": "junakinja Metroida",
-    "difficulty": 3,
-    "styleId": 87,
-    "styleDescription": "Kreni od razlike originala i adaptacije pa traži naslov",
-    "question": "Igrači prve igre Metroid dugo nisu znali tko se skriva ispod oklopa svemirskog lovca na ucjene. Kako se zove junakinja toga serijala?",
-    "answers": [
-      "Samus Aran",
-      "Samus"
-    ],
-    "explanation": "Točan odgovor: Samus Aran. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Samus_Aran"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
-    "id": "chatgpt1000-0038-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Videoigre",
-    "focus": "studio iza Dooma",
-    "difficulty": 3,
-    "styleId": 42,
-    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
-    "question": "Kultni pucački naslov Doom iz 1993. nastao je u američkom studiju čiji se naziv piše s dva mala slova i jednom velikom riječi. Kako se zove studio?",
-    "answers": [
-      "id Software",
-      "id"
-    ],
-    "explanation": "Točan odgovor: id Software. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Id_Software"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
     "id": "chatgpt1000-0039-20261028",
     "createdAt": "2026-10-28T06:00:00.000Z",
     "origin": "chatgpt-serija-1000",
@@ -1151,30 +1029,6 @@
     "explanation": "Točan odgovor: Montreal. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
     "sources": [
       "https://en.wikipedia.org/wiki/Nadia_Comăneci"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
-    "id": "chatgpt1000-0041-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Automobili",
-    "focus": "Toyota model iz 1966",
-    "difficulty": 2,
-    "styleId": 57,
-    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
-    "question": "Toyota je 1966. predstavila model čije ime na latinskom znači mala kruna, a kasnije je postao jedan od najprodavanijih automobila u povijesti. Koji model?",
-    "answers": [
-      "Corolla",
-      "Toyota Corolla"
-    ],
-    "explanation": "Točan odgovor: Corolla. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Toyota_Corolla"
     ],
     "image": null,
     "updatedAt": null,
@@ -1392,30 +1246,6 @@
     "explanation": "Točan odgovor: Kimchi. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
     "sources": [
       "https://en.wikipedia.org/wiki/Kimchi"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
-    "id": "chatgpt1000-0051-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Pića",
-    "focus": "japanski zeleni čaj u prahu",
-    "difficulty": 2,
-    "styleId": 1,
-    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
-    "question": "Umjesto da se listovi čaja samo namaču, u ovaj se zeleni napitak umiješa fino samljeveni prah samog lista. Kako se zove japanski čaj?",
-    "answers": [
-      "Matcha",
-      "Mača"
-    ],
-    "explanation": "Točan odgovor: Matcha. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Matcha"
     ],
     "image": null,
     "updatedAt": null,
@@ -2004,30 +1834,6 @@
     "verification": "za_urednicku_provjeru"
   },
   {
-    "id": "chatgpt1000-0076-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Pop kultura",
-    "focus": "Supermanov rodni planet",
-    "difficulty": 1,
-    "styleId": 30,
-    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
-    "question": "Prije nego što je odrastao na Zemlji kao Clark Kent, junak s plaštem rođen je na izmišljenom planetu kojemu je u stripovima zaprijetilo uništenje. Kako se zove?",
-    "answers": [
-      "Kripton",
-      "Krypton"
-    ],
-    "explanation": "Točan odgovor: Kripton. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Krypton_(comics)"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
     "id": "chatgpt1000-0077-20261028",
     "createdAt": "2026-10-28T06:00:00.000Z",
     "origin": "chatgpt-serija-1000",
@@ -2143,31 +1949,6 @@
     "explanation": "Točan odgovor: Dendrokronologija. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
     "sources": [
       "https://en.wikipedia.org/wiki/Dendrochronology"
-    ],
-    "image": null,
-    "updatedAt": null,
-    "verification": "za_urednicku_provjeru"
-  },
-  {
-    "id": "chatgpt1000-0082-20261028",
-    "createdAt": "2026-10-28T06:00:00.000Z",
-    "origin": "chatgpt-serija-1000",
-    "status": "novo",
-    "type": "blitz",
-    "topic": "Rijetke teme",
-    "focus": "proučavanje starih natpisa",
-    "difficulty": 4,
-    "styleId": 76,
-    "styleDescription": "Pitaj o etimologiji naziva zanimanja",
-    "question": "Proučavanje natpisa uklesanih u kamen, metal ili keramiku pomaže povjesničarima čitati izvore nastale prije tiska. Kako se zove ta pomoćna povijesna znanost?",
-    "answers": [
-      "Epigrafika",
-      "Epigrafija",
-      "Epigraphy"
-    ],
-    "explanation": "Točan odgovor: Epigrafika. Pitanje se oslanja na navedeni povijesni, znanstveni ili kulturni podatak; prije javne objave urednički provjeriti izvor i formulaciju.",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Epigraphy"
     ],
     "image": null,
     "updatedAt": null,
