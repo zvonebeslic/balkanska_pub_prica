@@ -7673,5 +7673,617 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0318-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Perkinov mauvein iz 1856.",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Dok je 1856. pokušavao sintetizirati lijek protiv malarije, mladi William Henry Perkin slučajno je dobio ljubičasto bojilo koje je pokrenulo novu industriju. Kako se zvalo?",
+    "answers": [
+      "Mauvein",
+      "Mauveine",
+      "Perkinova ljubičasta",
+      "Perkin's mauve"
+    ],
+    "explanation": "Perkin je pokušavao proizvesti kinin, ali je iz anilina dobio mauvein, prvo komercijalno sintetsko bojilo. Njegova je ljubičasta boja ubrzo postala modni hit.",
+    "sources": [
+      "https://archives.sciencehistory.org/repositories/3/resources/788"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0319-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Haumein prsten i dva mjeseca",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Iza Neptuna kruži neobično izdužen patuljasti planet s mjesecima Hiʻiaka i Namaka, a 2017. otkriven je i njegov prsten. Kako se zove?",
+    "answers": [
+      "Haumea",
+      "Haumeja"
+    ],
+    "explanation": "Haumea je patuljasti planet Kuiperova pojasa, izrazito izduženog oblika. NASA navodi da je njegov prsten otkriven 2017., a mjeseci nose imena Hiʻiaka i Namaka.",
+    "sources": [
+      "https://science.nasa.gov/image-article/apod-2017-october-17-haumea-of-the-outer-solar-system/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0320-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Hounsfield i računalna tomografija",
+    "difficulty": 2,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Nobelovu nagradu za medicinu 1979. podijelila su dvojica pionira računalne tomografije. Kako se zvao britanski inženjer čiji je uređaj omogućio detaljne presjeke ljudskog tijela?",
+    "answers": [
+      "Godfrey Hounsfield",
+      "Godfrey Newbold Hounsfield",
+      "Hounsfield",
+      "Godfri Haunsfild"
+    ],
+    "explanation": "Godfrey Hounsfield razvio je CT uređaj koji kombinira rendgenska mjerenja iz različitih kutova i računalnu rekonstrukciju presjeka. Nagradu 1979. podijelio je s Allanom Cormackom.",
+    "sources": [
+      "https://www.nobelprize.org/laureate/418"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0321-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "folija s mjehurićima prvotno zamišljena kao tapeta",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Danas njome štitimo pakete, ali Alfred Fielding i Marc Chavannes 1957. nisu namjeravali izrađivati ambalažu. Za kakvu su zidnu oblogu prvotno razvijali foliju s mjehurićima zraka?",
+    "answers": [
+      "Tapete",
+      "Zidne tapete",
+      "Reljefne tapete",
+      "Teksturirane tapete"
+    ],
+    "explanation": "Izumitelji su spajanjem plastičnih zavjesa za tuširanje pokušali dobiti reljefne tapete. Neuspjela zamisao poslije je postala zaštitna ambalaža Bubble Wrap.",
+    "sources": [
+      "https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0322-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "cloisonné pregradni emajl",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Tanke bakrene žice na metalnoj posudi tvore odjeljke koji se pune obojenom staklenom pastom i potom peku. Kako se naziva ova tradicionalna tehnika emajliranja?",
+    "answers": [
+      "Cloisonné",
+      "Cloisonne",
+      "Kloazone",
+      "Pregradni emajl",
+      "Pregrađeni emajl"
+    ],
+    "explanation": "Kod tehnike cloisonné metalne žice tvore pregrade koje zadržavaju emajl. Nakon pečenja i poliranja nastaje ukrasna površina s vidljivim metalnim linijama.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/40612"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0323-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "morski snijeg kao hrana dubokomorskim životinjama",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "U morskim dubinama polako padaju pahuljaste nakupine ostataka planktona, izmeta i drugih organskih čestica. Ta stalna 'oborina' hrani životinje daleko od sunčeve svjetlosti. Kako se naziva?",
+    "answers": [
+      "Morski snijeg",
+      "Marine snow",
+      "Podmorski snijeg"
+    ],
+    "explanation": "Morski snijeg sastoji se od organskih i drugih čestica koje tonu iz površinskih slojeva. NOAA navodi da neke pahulje putuju tjednima prije nego što stignu do dna.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/marinesnow.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0324-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Guimardovi ulazi pariškog metroa",
+    "difficulty": 5,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Valoviti željezni stupovi i biljni motivi na povijesnim ulazima pariškog metroa postali su zaštitni znak secesije. Koji je arhitekt projektirao te prepoznatljive ulaze oko 1900. godine?",
+    "answers": [
+      "Hector Guimard",
+      "Guimard",
+      "Ektor Gimar",
+      "Hektor Gimar"
+    ],
+    "explanation": "Hector Guimard oblikovao je ulaze u pariški Métro u stilu art nouveau. Njegovi lijevanoželjezni biljni ornamenti danas su među simbolima pariške secesije.",
+    "sources": [
+      "https://www.metmuseum.org/fr/toah/ht/10/euwf.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0325-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Colossus i Lorenzove poruke",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Britanski kriptoanalitičari tijekom Drugog svjetskog rata trebali su ubrzati razbijanje poruka šifriranih strojem Lorenz. Kako se zvalo elektroničko računalo iz Bletchley Parka izrađeno za taj zadatak?",
+    "answers": [
+      "Colossus",
+      "Kolosus",
+      "Colossus computer"
+    ],
+    "explanation": "Colossus je koristio tisuće elektroničkih cijevi i čitao podatke s papirnate vrpce. Pomagao je dešifrirati Lorenzove poruke, a nije bio isto što i stroj Bombe za Enigmu.",
+    "sources": [
+      "https://www.tnmoc.org/colossus"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0326-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "Edwin Land i instantna fotografija Polaroid",
+    "difficulty": 1,
+    "styleId": 69,
+    "styleDescription": "Prikaži zanimljivost iz povijesti fotografije i traži uređaj",
+    "question": "Edwin Land 1947. javno je pokazao postupak dobivanja fotografije gotovo odmah nakon snimanja. Pod kojim je poznatim trgovačkim imenom već 1948. stigla kamera koja je to omogućavala?",
+    "answers": [
+      "Polaroid",
+      "Polaroid Land Camera",
+      "Polaroid kamera"
+    ],
+    "explanation": "Landov sustav spajao je negativ, pozitiv i kemijske reagense u jednoj filmskoj jedinici. Prvi komercijalni aparat, Polaroid Model 95, prodavao se od 1948.",
+    "sources": [
+      "https://www.acs.org/education/whatischemistry/landmarks/land-instant-photography.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0327-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Automobili",
+    "focus": "Mary Anderson patent brisača stakla",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Promatrajući vozača tramvaja koji se mučio s pogledom kroz mokro staklo, jedna je Amerikanka osmislila ručno pokretani brisač i patentirala ga 1903. godine. Kako se zvala?",
+    "answers": [
+      "Mary Anderson",
+      "Meri Anderson",
+      "Anderson"
+    ],
+    "explanation": "Mary Anderson dobila je 1903. američki patent za napravu kojom vozač polugom pomiče brisač preko stakla. Uređaj tada nije ostvario komercijalni uspjeh.",
+    "sources": [
+      "https://www.history.com/this-day-in-history/november-10/mary-anderson-patents-windshield-wiper"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0328-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "prvi plinski cestovni semafor 1868.",
+    "difficulty": 1,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Godine 1868. kraj parlamenta postavljen je cestovni signal s pokretnim krakovima i plinskim crvenim i zelenim svjetlima. U kojem je europskom gradu taj rani semafor počeo raditi?",
+    "answers": [
+      "London",
+      "Londin"
+    ],
+    "explanation": "Prvi takav prometni signal postavljen je u Londonu blizu zgrade parlamenta. Osmislio ga je željeznički inženjer John Peake Knight, a upravljao je policajac.",
+    "sources": [
+      "https://www.euronews.com/2018/12/10/150-years-seeing-red-traffic-light-marks-milestone-n943461"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0329-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "vulkanski pepeo u rimskom mortu",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Trajnost brojnih rimskih građevina djelomice se povezuje s dodatkom iz područja oko Rima koji je reagirao s vapnom u mortu. O kojem je vulkanskom materijalu riječ?",
+    "answers": [
+      "Vulkanski pepeo",
+      "Pucolanski pepeo",
+      "Pucolan",
+      "Pozolan",
+      "Pozzolanski pepeo"
+    ],
+    "explanation": "Rimski graditelji koristili su pucolanski vulkanski pepeo, među ostalim iz naslaga Pozzolane Rosse. Njegova reakcija s vapnom pridonijela je čvrstoći i trajnosti morta.",
+    "sources": [
+      "https://onlinelibrary.wiley.com/doi/abs/10.1002/gea.20295"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0330-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "morska vidra s kožnim džepovima",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Dok roni po školjke i ježince, jedan morski sisavac može plijen spremiti u labave nabore kože ispod prednjih nogu, a na površini često koristi kamen kao alat. Koja je to životinja?",
+    "answers": [
+      "Morska vidra",
+      "Sea otter",
+      "Enhydra lutris"
+    ],
+    "explanation": "Morska vidra ispod svakog prednjeg uda ima nabor kože nalik džepu. Ondje može privremeno spremiti plijen, a tvrde školjke razbija kamenom dok pluta na leđima.",
+    "sources": [
+      "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/sea-otter"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0331-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Hildegarda i glazbena drama Ordo Virtutum",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "U 12. stoljeću nastala je glazbena drama Ordo Virtutum, u kojoj se personificirane vrline bore za ljudsku dušu. Koja je benediktinska opatica i skladateljica napisala to djelo?",
+    "answers": [
+      "Hildegarda iz Bingena",
+      "Hildegard von Bingen",
+      "Hildegarda Bingenška",
+      "Hildegard of Bingen",
+      "Hildegarda"
+    ],
+    "explanation": "Hildegarda iz Bingena skladala je Ordo Virtutum oko 1151. godine. Riječ je o srednjovjekovnoj glazbenoj drami u kojoj vrline nastupaju kao alegorijski likovi.",
+    "sources": [
+      "https://www.hildegard.com/product/ordo-virtutum-digital-edition-hildegard-von-bingen/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0332-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "Roundhay Garden Scene 1888.",
+    "difficulty": 5,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "U engleskom Leedsu 1888. snimljena je tek nekoliko sekundi duga vrtna scena koju Guinness vodi kao najstariji sačuvani film. Pod kojim je engleskim naslovom poznata?",
+    "answers": [
+      "Roundhay Garden Scene",
+      "Prizor iz vrta Roundhay",
+      "Roundhay Garden"
+    ],
+    "explanation": "Louis Le Prince snimio je 1888. kratki prizor ljudi u vrtu u četvrti Roundhay. Snimka se često navodi kao najstariji sačuvani film.",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/96657-oldest-film"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0333-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "Morrisov tekstil Strawberry Thief",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Drozdovi koji su krali jagode iz vrta Kelmscott Manora nadahnuli su tekstilni uzorak Strawberry Thief iz 1883. Kojem britanskom dizajneru pripada to djelo?",
+    "answers": [
+      "William Morris",
+      "Vilijam Moris",
+      "Morris"
+    ],
+    "explanation": "William Morris osmislio je Strawberry Thief 1883. godine. Za složeni uzorak s pticama i jagodama koristio je zahtjevnu tehniku tiska s indigom.",
+    "sources": [
+      "https://www.vam.ac.uk/articles/willam-morris-textiles"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0334-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "Kahnemanova i Tverskyjeva teorija prospekta",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Daniel Kahneman i Amos Tversky pokazali su da ljudi dobitke i gubitke ne procjenjuju uvijek prema modelu racionalne očekivane korisnosti. Kako se naziva njihova teorija odlučivanja iz 1979.?",
+    "answers": [
+      "Teorija prospekta",
+      "Prospect theory",
+      "Teorija izgleda",
+      "Teorija perspektive"
+    ],
+    "explanation": "Teorija prospekta opisuje odlučivanje pod rizikom u odnosu na referentnu točku i različito vrednovanje dobitaka i gubitaka. Kahnemanov rad na toj temi pridonio je Nobelovoj nagradi za ekonomiju 2002.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/economic-sciences/2002/press-release/Orne/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0335-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Dracaena cinnabari sokotransko zmajevo drvo",
+    "difficulty": 4,
+    "styleId": 86,
+    "styleDescription": "Pitaj koja je biljka dala ime nekom proizvodu",
+    "question": "Na otoku Sokotri raste stablo kišobranaste krošnje čija se crvena smola naziva 'zmajeva krv'. Kojim se dvočlanim znanstvenim imenom označava ta vrsta?",
+    "answers": [
+      "Dracaena cinnabari",
+      "Dracena cinnabari",
+      "D. cinnabari"
+    ],
+    "explanation": "Dracaena cinnabari endemsko je stablo Sokotre, poznato po neobičnoj krošnji i crvenoj smoli. Kew ga navodi kao prihvaćenu vrstu iz porodice šparogovki.",
+    "sources": [
+      "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A534145-1/general-information"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0336-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "četiri boje za ravninsku kartu",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Matematičari Appel i Haken 1976. uz pomoć računala dokazali su da se svaka ravninska karta može obojiti tako da susjedne regije nisu iste boje. Koliko je boja uvijek dovoljno?",
+    "answers": [
+      "4",
+      "Četiri",
+      "Four",
+      "IV"
+    ],
+    "explanation": "Teorem o četiri boje kaže da su četiri boje dovoljne za svaku ravninsku kartu ako regije sa zajedničkom granicom moraju imati različite boje. Appel i Haken dokazali su ga 1976. uz računalnu pomoć.",
+    "sources": [
+      "https://math.illinois.edu/four-color-fest"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0337-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "Makemake božanstvo i patuljasti planet",
+    "difficulty": 5,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Božanstvo plodnosti s Uskršnjeg otoka posudilo je ime patuljastom planetu iz Kuiperova pojasa, otkrivenom 2005. Kako glasi to zajedničko ime iz rapanujske tradicije i astronomije?",
+    "answers": [
+      "Makemake",
+      "Make Make"
+    ],
+    "explanation": "Patuljasti planet Makemake nazvan je po rapanujskom božanstvu plodnosti. Otkriven je 2005., a pripada ledenim tijelima Kuiperova pojasa.",
+    "sources": [
+      "https://science.nasa.gov/dwarf-planets/makemake/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0338-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "bostonska poplava melase 1919.",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "U Bostonu je 1919. puknuo golemi industrijski spremnik, a val guste tekućine razorio dio četvrti North End i usmrtio 21 osobu. Koja je slatka sirovina preplavila ulice?",
+    "answers": [
+      "Melasa",
+      "Molasses",
+      "Šećerna melasa"
+    ],
+    "explanation": "U siječnju 1919. iz loše izgrađenog spremnika u Bostonu izlilo se oko 2,3 milijuna galona melase. Katastrofa je odnijela 21 život i potaknula preispitivanje sigurnosti gradnje.",
+    "sources": [
+      "https://www.boston.gov/news/100-years-ago-today-molasses-crashes-through-bostons-north-end"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0339-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "pilcrow znak za odlomak",
+    "difficulty": 4,
+    "styleId": 74,
+    "styleDescription": "Kreni od znaka u tipografiji i pitaj kako se zove",
+    "question": "U starim su rukopisima njime odvajali cjeline teksta, a danas ga uređivači teksta mogu prikazati kao znak ¶. Kako se taj simbol posebno naziva u tipografiji?",
+    "answers": [
+      "Pilcrow",
+      "Pilkrou"
+    ],
+    "explanation": "Pilcrow je povijesni znak za odlomak, koji se razvio iz srednjovjekovnih rukopisnih oznaka. Danas je često skriven u tekstu, ali se može uključiti u programima za obradu teksta.",
+    "sources": [
+      "https://www.smithsonianmag.com/arts-culture/the-origin-of-the-pilcrow-aka-the-strange-paragraph-symbol-8610683/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0340-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "parhelij lažno Sunce",
+    "difficulty": 5,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Kad je Sunce nisko, s njegove lijeve ili desne strane mogu se pojaviti sjajne mrlje nastale lomom svjetlosti u kristalima leda. Kako se stručno naziva takvo 'lažno Sunce'?",
+    "answers": [
+      "Parhelij",
+      "Parhelion",
+      "Parhelia",
+      "Sun dog",
+      "Lažno Sunce"
+    ],
+    "explanation": "Parhelij ili sun dog svijetla je mrlja koja se obično pojavljuje približno 22 stupnja lijevo ili desno od Sunca. Nastaje lomom svjetlosti na ledenim kristalima visokih oblaka.",
+    "sources": [
+      "https://www.weather.gov/otx/Sundogs_on_March_122008"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0341-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "sedam slobodnih umijeća trivija i kvadrivija",
+    "difficulty": 1,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Srednjovjekovno obrazovanje dijelilo je slobodna umijeća na trivij s tri jezične discipline i kvadrivij s četiri matematičko-glazbene. Koliko ih je bilo ukupno?",
+    "answers": [
+      "7",
+      "Sedam",
+      "Seven",
+      "VII"
+    ],
+    "explanation": "Sedam slobodnih umijeća činili su gramatika, logika i retorika u triviju te aritmetika, geometrija, glazba i astronomija u kvadriviju.",
+    "sources": [
+      "https://www.cabinet.ox.ac.uk/seven-liberal-arts"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0342-20261028",
+    "createdAt": "2026-10-28T14:48:12.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "piezoelektrični učinak",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Promjena temperature nekih kristala može proizvesti električni naboj, što se naziva piroelektričnošću. Kako se zove srodni učinak kada naboj nastaje njihovim mehaničkim stiskanjem?",
+    "answers": [
+      "Piezoelektrični učinak",
+      "Piezoelektrični efekt",
+      "Piezoelektricitet",
+      "Piezoelectric effect"
+    ],
+    "explanation": "Braća Jacques i Pierre Curie 1880. pokazala su da mehanički pritisak na određene kristale stvara električni naboj. Taj se piezoelektrični učinak koristi u senzorima i kvarcnim uređajima.",
+    "sources": [
+      "https://www.aps.org/apsnews/2014/03/this-month-in-physics-history"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
