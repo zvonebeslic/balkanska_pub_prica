@@ -11333,5 +11333,620 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0468-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Codex Gigas i prikaz vraga u srednjovjekovnom rukopisu",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U Švedskoj nacionalnoj knjižnici čuva se golemi srednjovjekovni rukopis iz Češke, poznat i kao „Đavolja Biblija” zbog ilustracije na cijeloj stranici. Kako glasi njegov latinski naziv?",
+    "answers": [
+      "Codex Gigas",
+      "Kodeks Gigas"
+    ],
+    "explanation": "Codex Gigas nastao je u Češkoj početkom 13. stoljeća. Zbog veličine i znamenite ilustracije vraga poznat je kao Đavolja Biblija, a danas se čuva u Švedskoj nacionalnoj knjižnici.",
+    "sources": [
+      "https://test.manuscripta.se/ms/100500",
+      "https://www.history.com/articles/codex-gigas-devils-bible"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0469-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "Lesoto kao suverena enklava Južnoafričke Republike",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Njegova je prijestolnica Maseru, nema izlaz na more, a čitavu državnu granicu dijeli sa samo jednom državom, Južnoafričkom Republikom. Koja je to afrička država?",
+    "answers": [
+      "Lesoto",
+      "Lesotho",
+      "Kraljevina Lesoto"
+    ],
+    "explanation": "Lesoto je neovisna kraljevina u južnoj Africi, potpuno okružena Južnoafričkom Republikom, s prijestolnicom Maseru.",
+    "sources": [
+      "https://www.cia.gov/the-world-factbook/about/archives/2021/static/ea0c74aefac580c504e5963f32dd28c5/LT-summary.pdf",
+      "https://www.thefactbook.org/lesotho"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0470-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Madagaskarska orhideja Didymoplexis stella-silvae bez listova",
+    "difficulty": 5,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Orhideja Didymoplexis stella-silvae nema listove, energiju dobiva preko gljiva, a njezini bijeli cvjetovi otvaraju se kratko nakon kiše. Na kojem je velikom afričkom otoku otkrivena?",
+    "answers": [
+      "Madagaskar",
+      "Madagascar",
+      "Na Madagaskaru"
+    ],
+    "explanation": "Botaničari iz Kewa opisali su Didymoplexis stella-silvae među novim vrstama s Madagaskara. Ta orhideja nema listove i ovisi o gljivama.",
+    "sources": [
+      "https://www.kew.org/about-us/press-media/2021-new-species-list"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0471-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "Vombat i izmet kockastog oblika",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "U australskoj prirodi jedna zdepasta životinja kopa jazbine i ostavlja gotovo kockaste komadiće izmeta, oblik koji nastaje u njezinim crijevima. O kojem je tobolčaru riječ?",
+    "answers": [
+      "Vombat",
+      "Wombat",
+      "Vombati",
+      "Wombats"
+    ],
+    "explanation": "Vombati su australski tobolčari čiji se izmet oblikuje u neobične kockaste komadiće zahvaljujući različitoj elastičnosti dijelova crijeva.",
+    "sources": [
+      "https://www.nationalgeographic.com/animals/mammals/facts/common-wombat"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0472-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "Triboluminiscencija pri lomljenju kristala šećera",
+    "difficulty": 4,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Ako u posve mračnoj sobi drobimo kristale šećera, katkad možemo zamijetiti sitne bljeskove svjetlosti. Kako se naziva pojava svjetlucanja izazvana trenjem ili lomljenjem materijala?",
+    "answers": [
+      "Triboluminiscencija",
+      "Triboluminescencija",
+      "Triboluminescence"
+    ],
+    "explanation": "Triboluminiscencija je emitiranje svjetlosti pri mehaničkom djelovanju na određene materijale, primjerice pri drobljenju kristala šećera.",
+    "sources": [
+      "https://edu.rsc.org/feature/how-to-make-light-by-crushing-sugar/3007565.article"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0473-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Silicijev aerogel za hvatanje kometne prašine",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Za hvatanje sitnih čestica kometa NASA-ina misija Stardust koristila je proziran, izrazito porozan materijal koji je gotovo sav ispunjen zrakom. Kako se zove taj lagani materijal?",
+    "answers": [
+      "Aerogel",
+      "Silicijev aerogel",
+      "Silika aerogel"
+    ],
+    "explanation": "Aerogel je vrlo lagan porozan materijal. NASA je silicijev aerogel koristila u misiji Stardust za prikupljanje čestica kometa Wild 2.",
+    "sources": [
+      "https://www.jpl.nasa.gov/news/guinness-records-names-jpls-aerogel-worlds-lightest-solid/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0474-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Kochova pahuljica s beskonačnim opsegom i konačnom površinom",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Dodavanjem sve manjih trokuta na rub početnog trokuta nastaje fraktal čiji opseg raste u beskonačnost, iako mu površina ostaje konačna. Kako se naziva ta matematička pahuljica?",
+    "answers": [
+      "Kochova pahuljica",
+      "Kochova snježna pahuljica",
+      "Koch snowflake"
+    ],
+    "explanation": "Kochova pahuljica nastaje ponavljanjem jednostavnog geometrijskog postupka. Njezin opseg nema konačnu granicu, dok površina konvergira konačnoj vrijednosti.",
+    "sources": [
+      "https://gofiguremath.org/fractals/koch-snowflake/koch-snowflake-area/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0475-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Plavi sjaj oko zalazećeg Sunca na Marsu",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Iako je poznat po crvenkastoj površini, na ovom planetu prašina u atmosferi pri zalasku Sunca stvara plavičast sjaj oko Sunčeva diska. O kojem je planetu riječ?",
+    "answers": [
+      "Mars",
+      "Planet Mars"
+    ],
+    "explanation": "NASA-ine snimke pokazuju plavičast sjaj blizu zalazećeg Sunca na Marsu. Sitna prašina u njegovoj atmosferi drukčije raspršuje plavu svjetlost nego što je to slučaj na Zemlji.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/planets/mars/what-does-a-sunrise-sunset-look-like-on-mars/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0476-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Leonard Thompson kao prvi uspješno liječeni pacijent inzulinom",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "U Torontu je 1922. teško bolesni dječak primio jednu od prvih terapija inzulinom, a pročišćeni pripravak ubrzo mu je spasio život. Kako se zvao taj povijesni pacijent?",
+    "answers": [
+      "Leonard Thompson",
+      "Leonard Tompson",
+      "Thompson"
+    ],
+    "explanation": "Leonard Thompson prvi je pacijent uspješno liječen inzulinom u Torontu 1922. Prva injekcija 11. siječnja nije bila dovoljno djelotvorna, a pročišćeni inzulin primio je 23. siječnja.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7773348/",
+      "https://www.rciscience.ca/100-lives/leonard-thompson"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0477-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Chuck Hull i početci stereolitografskog 3D ispisa",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Godine 1983. izradio je rani 3D ispisani predmet stvrdnjavanjem smole ultraljubičastim svjetlom, a poslije suosnovao tvrtku 3D Systems. Kako se zove taj pionir stereolitografije?",
+    "answers": [
+      "Chuck Hull",
+      "Charles Hull",
+      "Charles Chuck Hull"
+    ],
+    "explanation": "Charles „Chuck” Hull razvio je stereolitografiju, izradio prvi 3D ispisani dio 1983. te 1986. suosnovao tvrtku 3D Systems.",
+    "sources": [
+      "https://www.3dsystems.com/press-releases/3d-systems-co-founder-chief-technology-officer-regenerative-medicine-chuck-hull"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0478-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "Michel Virlogeux kao inženjer vijadukta Millau",
+    "difficulty": 5,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Francuski vijadukt Millau premošćuje dolinu Tarna na sedam stupova, a njegov je arhitektonski izgled osmislio Norman Foster. Koji je francuski inženjer razradio osnovni konstrukcijski koncept?",
+    "answers": [
+      "Michel Virlogeux",
+      "Virlogeux",
+      "Mišel Virložo"
+    ],
+    "explanation": "Vijadukt Millau rezultat je suradnje arhitekta Normana Fostera i inženjera Michela Virlogeuxa, autora osnovnog inženjerskog koncepta.",
+    "sources": [
+      "https://citedelarchitecture.fr/fr/oeuvre/viaduc-de-millau-le-tablier-progresse-vers-ses-appuis-0",
+      "https://divisare.com/projects/286859-foster-partners-nigel-young-millau-viaduct"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0479-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Charles Barry i obnova Westminsterske palače nakon požara",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Nakon velikog požara 1834. raspisan je natječaj za novu zgradu britanskog parlamenta. Tko je pobijedio projektom neogotičke Westminsterske palače, uz važnu pomoć A. W. Pugina?",
+    "answers": [
+      "Charles Barry",
+      "Sir Charles Barry",
+      "Čarls Bari"
+    ],
+    "explanation": "Arhitekt Charles Barry pobijedio je na natječaju za obnovu Westminsterske palače, a Augustus Welby Pugin snažno je pridonio njezinu gotičkom oblikovanju i detaljima.",
+    "sources": [
+      "https://www.parliament.uk/about/living-heritage/building/palace/architecture/palacestructure/the-architects/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0480-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "Yves Klein i patentirana nijansa International Klein Blue",
+    "difficulty": 3,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Slikar koji je surađivao s kemičarem kako bi razvio intenzivnu ultramarinsku nijansu IKB njome je prekrivao čitava platna i stvarao otiske tijela. O kojem je umjetniku riječ?",
+    "answers": [
+      "Yves Klein",
+      "Iv Klajn",
+      "Klein"
+    ],
+    "explanation": "Yves Klein razvio je prepoznatljivu nijansu International Klein Blue, poznatu kao IKB, i koristio je u monokromnim slikama i performansima.",
+    "sources": [
+      "https://www.moma.org/collection/works/80103"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0481-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "Mihail Bulgakov i Woland u romanu Majstor i Margarita",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "U romanu „Majstor i Margarita” tajanstveni Woland sa svojom družinom dolazi u Moskvu i izaziva kaos. Koji je ruski pisac stvorio taj književni svijet?",
+    "answers": [
+      "Mihail Bulgakov",
+      "Mikhail Bulgakov",
+      "Bulgakov",
+      "Mihail Afanasjevič Bulgakov"
+    ],
+    "explanation": "Woland je đavao u romanu Majstor i Margarita Mihaila Bulgakova, satiričnom djelu smještenom dijelom u Moskvu.",
+    "sources": [
+      "https://www.penguinrandomhouse.com/books/531360/the-master-and-margarita-by-mikhail-bulgakov-a-newly-revised-translation-by-richard-pevear-and-larissa-volokhonsky-introduction-by-richard-pevear-foreword-by-boris-fishman/9780143108276/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0482-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "Značenje islandskog nastavka dóttir u osobnim imenima",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Islandsko ime Jónsdóttir može otkriti srodstvo, a ne nasljedno obiteljsko prezime. Što na hrvatskom znači nastavak „-dóttir”?",
+    "answers": [
+      "Kći",
+      "Kcer",
+      "Kćer",
+      "Kcerka",
+      "Kćerka"
+    ],
+    "explanation": "U islandskim patronimima i matronimima nastavak -dóttir znači kći, dok -son znači sin; ime roditelja stoji u genitivu.",
+    "sources": [
+      "https://www.mfa.is/publications/legislation/act/2018-01-08-Personal-Names-Act-No.-45-of-17th-May-1996"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0483-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Klarinetski glissando na početku Gershwinove Rapsodije u plavom",
+    "difficulty": 2,
+    "styleId": 96,
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "question": "Gershwinova „Rapsodija u plavom” počinje prepoznatljivim klizanjem tona od niskog prema visokom, glissandom. Koje puhačko glazbalo izvodi taj uvod?",
+    "answers": [
+      "Klarinet",
+      "Clarinet"
+    ],
+    "explanation": "Rhapsody in Blue otvara glasoviti klarinetski glissando, koji je Gershwin prihvatio nakon što ga je na probi izveo klarinetist Ross Gorman.",
+    "sources": [
+      "https://www.indianapolissymphony.org/backstage/program-notes/gershwin-rhapsody-in-blue/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0484-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "Foley kao naknadno stvaranje sinkroniziranih filmskih zvukova",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Šuštanje odjeće i koraci po šljunku u filmu često se naknadno stvaraju pred mikrofonom, sinkronizirano sa slikom, umjesto da se preuzmu sa snimanja. Kako se zove taj postupak nazvan po Jacku Foleyju?",
+    "answers": [
+      "Foley",
+      "Foley tehnika",
+      "Foley efekti",
+      "Foley zvukovi",
+      "Foli"
+    ],
+    "explanation": "Foley je postupak naknadnog izvođenja i snimanja svakodnevnih zvukova, poput koraka i šuštanja, sinkroniziranih s filmskom slikom. Ime je dobio po Jacku Foleyju.",
+    "sources": [
+      "https://www.newyorker.com/magazine/2022/07/04/the-weird-analog-delights-of-foley-sound-effects"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0485-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Videoigre",
+    "focus": "Rotoskopija pokreta u izvornoj videoigri Prince of Persia",
+    "difficulty": 5,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Za igru „Prince of Persia” iz 1989. Jordan Mechner snimao je brata kako trči i skače, pa je njegove pokrete precrtavao kadar po kadar. Kako se zove ta animacijska tehnika?",
+    "answers": [
+      "Rotoskopija",
+      "Rotoscoping",
+      "Rotoskopiranje"
+    ],
+    "explanation": "Jordan Mechner koristio je rotoskopiju, odnosno precrtavanje kadrova snimljenog pokreta, kako bi lik u izvornom Prince of Persia imao uvjerljivu animaciju.",
+    "sources": [
+      "https://www.gamespot.com/articles/prince-of-persia-postmortem/1100-6301654/",
+      "https://filmstories.co.uk/features/turning-back-time-jordan-mechner-on-prince-of-persias-legacy/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0486-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "Charlotte Cooper i olimpijsko zlato u tenisu 1900.",
+    "difficulty": 4,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "U Parizu 1900. jedna je britanska tenisačica osvojila pojedinačno olimpijsko zlato i ušla među prve olimpijske pobjednice u povijesti. Kako se zvala?",
+    "answers": [
+      "Charlotte Cooper",
+      "Charlotte Cooper Sterry",
+      "Šarlot Kuper"
+    ],
+    "explanation": "Charlotte Cooper osvojila je ženski pojedinačni teniski turnir u Parizu 1900., kada su žene prvi put sudjelovale na modernim Olimpijskim igrama.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-first-women-olympians"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0487-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "Brockenski spektar kao golema sjena na magli",
+    "difficulty": 5,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Planinar sa Suncem iza leđa ugleda svoju golemo povećanu sjenu projiciranu na oblak ili maglu, katkad okruženu obojenim prstenovima. Kako se naziva ta pojava prema jednoj njemačkoj planini?",
+    "answers": [
+      "Brockenski spektar",
+      "Brockenov spektar",
+      "Brocken spectre",
+      "Brockenska sablast",
+      "Brockenova sablast"
+    ],
+    "explanation": "Brockenski spektar optička je pojava pri kojoj promatračeva sjena pada na oblak ili maglu te djeluje golemo; ime nosi po planini Brocken.",
+    "sources": [
+      "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0488-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "Srednjooceanski hrptovi kao najdulji planinski sustav",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Najdulji planinski sustav na Zemlji proteže se oko 65.000 kilometara, a više od 90 posto nalazi se pod vodom. Kako se naziva taj globalni lanac podmorskih uzvisina?",
+    "answers": [
+      "Srednjooceanski hrbat",
+      "Sustav srednjooceanskih hrptova",
+      "Srednjooceanski hrptovi",
+      "Mid-ocean ridge",
+      "Srednjooceanski greben"
+    ],
+    "explanation": "Sustav srednjooceanskih hrptova proteže se približno 65.000 kilometara i najvećim je dijelom pod morem, gdje se na divergentnim granicama ploča stvara nova oceanska kora.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/ocean-fact/mid-ocean-ridge/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0489-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "Maat i pero na vagi staroegipatskog suda mrtvima",
+    "difficulty": 1,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "U staroegipatskim prikazima suda mrtvima srce pokojnika uspoređuje se s perom božice istine, pravde i kozmičkog reda. Kako se zove ta božica?",
+    "answers": [
+      "Maat",
+      "Ma'at",
+      "Ma’at"
+    ],
+    "explanation": "Maat je staroegipatska božica istine i kozmičkog reda, a njezino pero simbol je prema kojem se na sudu mrtvima važe srce pokojnika.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/Y_EA48998"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0490-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "Banana Cavendish i genetski jednoliki nasadi",
+    "difficulty": 2,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Velik dio banana u svjetskoj trgovini pripada istoj sorti, čije se biljke vegetativno razmnožavaju i zato su genetski gotovo identične. Kako se zove ta sorta?",
+    "answers": [
+      "Cavendish",
+      "Kavendiš",
+      "Cavendish banana",
+      "Dwarf Cavendish"
+    ],
+    "explanation": "Cavendish je dominantna izvozna sorta banana. Razmnožava se vegetativno pa su mnoge biljke genetski vrlo slične, što ih čini osjetljivima na bolesti.",
+    "sources": [
+      "https://www.kew.org/plants/cavendish-banana"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0491-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "Mochi kao japanski kolačić od tučene ljepljive riže",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Za japansku novogodišnju poslasticu ljepljiva se riža najprije skuha, a zatim dugo tuče drvenim batovima dok ne postane glatka i rastezljiva masa. Kako se zove ta poslastica?",
+    "answers": [
+      "Mochi",
+      "Moči",
+      "Moci"
+    ],
+    "explanation": "Mochi je japanska poslastica od kuhane ljepljive riže koja se tradicionalno tuče u mužaru, posebno uoči Nove godine.",
+    "sources": [
+      "https://www.japan.travel/en/gastronomy/article-auspicious-nutritious-and-delicious/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0492-20261028",
+    "createdAt": "2026-10-28T20:51:23.314Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "Švedska središnja banka kao utemeljitelj nagrade za ekonomiju",
+    "difficulty": 5,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Nagrada za ekonomske znanosti u spomen na Alfreda Nobela nije bila predviđena njegovom oporukom, nego je ustanovljena 1968. godine. Koja ju je švedska institucija osnovala?",
+    "answers": [
+      "Sveriges Riksbank",
+      "Švedska središnja banka",
+      "Svedska sredisnja banka",
+      "Središnja banka Švedske",
+      "Riksbank"
+    ],
+    "explanation": "Sveriges Riksbank, švedska središnja banka, ustanovila je 1968. nagradu za ekonomske znanosti u spomen na Alfreda Nobela, odvojenu od izvornih Nobelovih nagrada.",
+    "sources": [
+      "https://www.nobelprize.org/organization/statutes-for-the-prize-in-economic-sciences/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
