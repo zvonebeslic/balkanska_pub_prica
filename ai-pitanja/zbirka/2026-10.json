@@ -10113,5 +10113,596 @@
     "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0418-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "metalima bogat asteroid (16) Psyche",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Otkriven je 1852., kruži između Marsa i Jupitera, a NASA mu je 2023. poslala letjelicu da istraži njegov neobično velik udio metala. Kako se zove taj asteroid?",
+    "answers": [
+      "Psiha",
+      "Psyche",
+      "16 Psyche",
+      "(16) Psyche"
+    ],
+    "explanation": "Asteroid (16) Psyche sadrži znatan udio metala, a NASA-ina istoimena misija lansirana je 13. listopada 2023. radi istraživanja njegova sastava.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/asteroids/16-psyche/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0419-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "Capgrasov sindrom pogrešnog prepoznavanja",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Osoba prepoznaje lice bliskog člana obitelji, ali čvrsto vjeruje da ga je zamijenio dvojnik. Kako se naziva ovaj sindrom, različit od uobičajenog osjećaja da smo varalice?",
+    "answers": [
+      "Capgrasov sindrom",
+      "Capgrasova zabluda",
+      "Capgras syndrome",
+      "Kapgrasov sindrom"
+    ],
+    "explanation": "Capgrasov sindrom je deluzija pogrešnog prepoznavanja u kojoj osoba vjeruje da je poznatu osobu zamijenio varalica; nije isto što i sindrom varalice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/diseases/capgras-syndrome"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0420-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "astronomski opservatorij Jantar Mantar u Jaipuru",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U indijskom Jaipuru početkom 18. stoljeća nastao je kompleks golemih zidanih instrumenata za praćenje nebeskih tijela, danas na UNESCO-ovu popisu. Kako se zove taj opservatorij?",
+    "answers": [
+      "Jantar Mantar",
+      "Jantar Mantar u Jaipuru",
+      "Džantar Mantar"
+    ],
+    "explanation": "Jantar Mantar u Jaipuru skup je približno dvadeset monumentalnih nepokretnih astronomskih instrumenata, podignutih za promatranja golim okom.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1338/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0421-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "ksenon i grčko značenje imena",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Ramsay i Travers 1898. izolirali su plemeniti plin kojem su dali ime izvedeno iz grčke riječi za stranca. Koji je to element atomskog broja 54?",
+    "answers": [
+      "Ksenon",
+      "Xenon"
+    ],
+    "explanation": "Ksenon, simbol Xe i atomski broj 54, otkriven je 1898. godine; naziv potječe od grčke riječi xenos, stranac.",
+    "sources": [
+      "https://periodic-table.rsc.org/element/54/Xenon"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0422-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Nobelova nagrada za magnetsku rezonanciju 2003.",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Paul Lauterbur i Peter Mansfield podijelili su Nobelovu nagradu za medicinu 2003. zahvaljujući otkrićima koja su omogućila koju metodu snimanja unutrašnjosti tijela?",
+    "answers": [
+      "Magnetska rezonancija",
+      "Magnetna rezonancija",
+      "MRI",
+      "MR",
+      "Snimanje magnetskom rezonancijom"
+    ],
+    "explanation": "Lauterbur i Mansfield nagrađeni su za otkrića vezana uz magnetsku rezonanciju, kojom se dobivaju detaljne slike tkiva bez ionizirajućeg zračenja.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/2003/summary/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0423-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "uzgoj gljiva kod mrava rezača listova",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Mravi rezači nose komadiće lišća u podzemne komore, no ne jedu ih izravno. Što uzgajaju na biljnom materijalu kao glavni izvor hrane?",
+    "answers": [
+      "Gljive",
+      "Gljivu",
+      "Gljivice",
+      "Simbiontske gljive"
+    ],
+    "explanation": "Mravi rezači koriste lišće kao podlogu za uzgoj simbiotskih gljiva, čijim se hranjivim strukturama hrane.",
+    "sources": [
+      "https://www.si.edu/es/object/leaf-cutting-ants-bocas-del-toro-research-station-smithsonian-institute-panama-july-2008%3Ayt_Fmiz6D5-nvQ"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0424-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "prva olimpijska pobjednica u ženskim skijaškim skokovima",
+    "difficulty": 3,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Ženski skijaški skokovi prvi su put ušli u olimpijski program u Sočiju 2014., a povijesno zlato osvojila je njemačka natjecateljica. Kako se zove?",
+    "answers": [
+      "Carina Vogt",
+      "Karina Vogt",
+      "Vogt"
+    ],
+    "explanation": "Carina Vogt osvojila je prvo olimpijsko zlato u ženskim skijaškim skokovima 2014. u Sočiju, ispred Daniele Iraschko-Stolz i Coline Mattel.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/magic-moments-a-glance-back-at-sochi-2014"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0425-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "bazeni izrazito slane vode na morskom dnu",
+    "difficulty": 4,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Na dnu Meksičkog zaljeva istraživači su otkrili prizore nalik jezerima s vlastitim obalama. Kako se nazivaju ti bazeni vode toliko slane da se zbog veće gustoće zadržava odvojeno od okolnog mora?",
+    "answers": [
+      "Slanovodni bazeni",
+      "Bazeni slane vode",
+      "Brine pools",
+      "Brine pool",
+      "Podmorski slani bazeni"
+    ],
+    "explanation": "Brine pools nastaju kada se izrazito koncentrirana salamura zbog veće gustoće skuplja u udubljenjima na morskom dnu, odvojena od okolne morske vode.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/multimedia/daily-image-media-20200917/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0426-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "graupel kao ledena oborina",
+    "difficulty": 4,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Kad se pothlađene kapljice zalede na pahuljici i potpuno prekriju njezinu izvornu strukturu, nastaje mekana bijela oborina nalik sitnoj tuči. Kojim se međunarodnim nazivom označava?",
+    "answers": [
+      "Graupel",
+      "Snježna krupica",
+      "Zrnati snijeg"
+    ],
+    "explanation": "Graupel je nakupina snježnog kristala i brojnih smrznutih pothlađenih kapljica; razlikuje se od tvrde, slojevite tuče.",
+    "sources": [
+      "https://www.usgs.gov/publications/rime-and-graupel-description-and-characterization-revealed-low-temperature-scanning"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0427-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "konferencija Bretton Woods 1944.",
+    "difficulty": 2,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "U srpnju 1944. predstavnici savezničkih zemalja dogovorili su okvir iz kojeg su nastali MMF i Svjetska banka. Po kojem je američkom mjestu taj monetarni sporazum dobio ime?",
+    "answers": [
+      "Bretton Woods",
+      "Breton Vuds",
+      "Breton Woods"
+    ],
+    "explanation": "Konferencija u Bretton Woodsu u saveznoj državi New Hampshire održana je u srpnju 1944. i postavila temelje MMF-a i Svjetske banke.",
+    "sources": [
+      "https://www.imf.org/external/np/exr/center/mm/eng/cc_sub_4.htm"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0428-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "Gideon Sundback i suvremeni patentni zatvarač",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Gideon Sundback 1913. usavršio je dva niza metalnih zubaca koje spaja klizač, a izum se najprije proširio na čizme i torbice za duhan. Koji danas svakodnevni zatvarač opisujemo?",
+    "answers": [
+      "Patentni zatvarač",
+      "Zatvarač na patent",
+      "Ciferšlus",
+      "Rajsferšlus",
+      "Zipper",
+      "Zips"
+    ],
+    "explanation": "Sundbackov sustav međusobno povezanih zubaca i klizača prethodnik je modernog patentnog zatvarača, poznatog i kao ciferšlus.",
+    "sources": [
+      "https://blog.library.si.edu/blog/2010/05/03/the-up-an-down-history-of-the-zipper/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0429-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "Magritteova slika Ovo nije lula",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Na slici iz 1929. ispod naslikane lule stoji natpis 'Ceci n'est pas une pipe', podsjećajući da prikaz nije sam predmet. Koji je belgijski nadrealist njezin autor?",
+    "answers": [
+      "René Magritte",
+      "Rene Magritte",
+      "Magritte",
+      "Rene Magrit",
+      "Rene Magrit"
+    ],
+    "explanation": "René Magritte naslikao je 'Izdaju slika' (La Trahison des images), na kojoj natpis 'Ovo nije lula' razlikuje sliku predmeta od samog predmeta.",
+    "sources": [
+      "https://www.metmuseum.org/fr/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/copley"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0430-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "fado kao lisabonska glazbena tradicija",
+    "difficulty": 1,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U starim lisabonskim četvrtima solo pjevač često nastupa uz portugalsku gitaru, a pjesme nose čežnju i sjetu. Kako se naziva ta glazbena tradicija, upisana na UNESCO-ov popis 2011.?",
+    "answers": [
+      "Fado"
+    ],
+    "explanation": "Fado je portugalska gradska tradicija pjevanja i poezije povezana s Lisabonom, a UNESCO ga je 2011. uvrstio na popis nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/fado-urban-popular-song-of-portugal-00563"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0431-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Veliki Zimbabve i civilizacija Šona",
+    "difficulty": 4,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Monumentalni granitni zidovi bez žbuke, kamene ptice i trgovački tragovi sve do Perzije svjedoče o nekadašnjem afričkom središtu blizu Masvinga. Kako se zove taj srednjovjekovni grad?",
+    "answers": [
+      "Veliki Zimbabve",
+      "Great Zimbabwe",
+      "Veliki Zimbabwe",
+      "Great Zimbabve"
+    ],
+    "explanation": "Veliki Zimbabve bio je važno središte naroda Šona od 11. do 15. stoljeća, poznato po masivnim kamenim ograđenim prostorima i dalekosežnoj trgovini.",
+    "sources": [
+      "https://whc.unesco.org/en/list/364/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0432-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Helicobacter pylori i Nobelova nagrada 2005.",
+    "difficulty": 2,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "Dugo se vjerovalo da čir na želucu ponajprije nastaje zbog stresa i prehrane. Marshall i Warren dokazali su važnu ulogu koje spiralne bakterije te za otkriće dobili Nobela 2005.?",
+    "answers": [
+      "Helicobacter pylori",
+      "H. pylori",
+      "Helikobakter pilori",
+      "Helikobakter pylori"
+    ],
+    "explanation": "Barry Marshall i Robin Warren pokazali su da je Helicobacter pylori važan uzročnik gastritisa i peptičkih ulkusa, zbog čega su 2005. dobili Nobelovu nagradu.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/2005/summary/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0433-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "roman Kindred Octavije Butler i putovanje kroz vrijeme",
+    "difficulty": 5,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Dana iz Kalifornije 1976. iznenada se vraća u robovlasnički Maryland kako bi spašavala dječaka Rufusa, čija je sudbina povezana s njezinim precima. Koji je roman Octavije Butler u pitanju?",
+    "answers": [
+      "Kindred",
+      "Srodstvo"
+    ],
+    "explanation": "U romanu 'Kindred' Octavije E. Butler Dana se više puta vraća u prošlost i suočava s američkim ropstvom te vlastitim obiteljskim podrijetlom.",
+    "sources": [
+      "https://www.penguinrandomhouse.com/books/643834/kindred-by-octavia-e-butler/9780807006924/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0434-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Parker Solar Probe i zaštita od Sunčeve topline",
+    "difficulty": 1,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kako se zove NASA-ina sonda koja se uz toplinski štit od ugljičnih materijala približila Suncu više nego ijedna prethodna letjelica te 2021. proletjela kroz njegovu koronu?",
+    "answers": [
+      "Parker Solar Probe",
+      "Parkerova solarna sonda",
+      "Parkerova sonda",
+      "Parker"
+    ],
+    "explanation": "Parker Solar Probe prva je letjelica koja je izravno prošla kroz Sunčevu koronu, a od ekstremne topline štiti je višeslojni ugljični štit.",
+    "sources": [
+      "https://science.nasa.gov/mission/parker-solar-probe/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0435-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "Qhapaq Ñan cestovna mreža Inka",
+    "difficulty": 5,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Iz Cusca se granala preko andskih prijevoja, pustinja i tropskih dolina, a povezana je mreža dosegla oko 30.000 kilometara. Kako se na kečuanskom naziva ta cestovna mreža Inka?",
+    "answers": [
+      "Qhapaq Ñan",
+      "Qhapaq Nan",
+      "Qhapaq Ñan",
+      "Kapak Njan"
+    ],
+    "explanation": "Qhapaq Ñan naziv je za veliku andsku mrežu cesta koju su Inke proširile za trgovinu, upravu, obranu i prijenos poruka.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1459"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0436-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "službeno proglašenje iskorjenjivanja velikih boginja",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Svjetska zdravstvena skupština 8. svibnja koje je godine službeno proglasila da su velike boginje iskorijenjene, što je postalo prekretnica javnog zdravstva?",
+    "answers": [
+      "1980",
+      "1980.",
+      "1980. godine"
+    ],
+    "explanation": "Svjetska zdravstvena skupština 8. svibnja 1980. službeno je potvrdila globalno iskorjenjivanje velikih boginja.",
+    "sources": [
+      "https://www.who.int/news-room/detail/08-05-2020-commemorating-smallpox-eradication-a-legacy-of-hope-for-covid-19-and-other-diseases"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0437-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "James Webb i druga Lagrangeova točka",
+    "difficulty": 3,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Teleskop James Webb nalazi se oko 1,5 milijuna kilometara od Zemlje i svakih približno 168 dana obilazi područje oko koje Lagrangeove točke sustava Sunce–Zemlja?",
+    "answers": [
+      "L2",
+      "Druga Lagrangeova točka",
+      "Lagrangeova točka L2",
+      "Lagrange 2"
+    ],
+    "explanation": "James Webb ne kruži oko Zemlje poput Hubblea, nego oko Sunca blizu točke L2, u tzv. halo-orbiti čiji ciklus traje oko 168 dana.",
+    "sources": [
+      "https://science.nasa.gov/mission/webb/science-overview/science-explainers/telescope-overview/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0438-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "Cahokia i najveći zemljani humak Monks Mound",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Nedaleko od današnjeg St. Louisa starosjedilački graditelji podigli su zemljanu građevinu visoku oko 30 metara, nazvanu po redovnicima koji su kasnije boravili u blizini. Kako se zove taj humak?",
+    "answers": [
+      "Monks Mound",
+      "Monk's Mound",
+      "Humak redovnika",
+      "Monksov humak"
+    ],
+    "explanation": "Monks Mound u Cahokiji najveći je poznati pretpovijesni zemljani humak u Amerikama, a ime je dobio po kasnijim trapističkim redovnicima.",
+    "sources": [
+      "https://www.nps.gov/articles/000/cahokia-mounds-state-historic-site-world-heritage-site.htm",
+      "https://cahokiamounds.org/mound/mound-38-monks-mound/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0439-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "NASA-in budući rotokopter Dragonfly za Titan",
+    "difficulty": 5,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Nakon malenog marsovskog helikoptera Ingenuity NASA je razvila znatno veći osmorotorni istraživački stroj koji bi trebao letjeti iznad Titanovih dina. Kako se zove ta misija?",
+    "answers": [
+      "Dragonfly",
+      "Dragonfly mission",
+      "Dragonfly misija"
+    ],
+    "explanation": "Dragonfly je NASA-in planirani rotokopter s osam rotora koji bi na Saturnovu mjesecu Titanu trebao istraživati različite lokacije i predbiološku kemiju.",
+    "sources": [
+      "https://science.nasa.gov/mission/dragonfly/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0440-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "DART-ov kinetički udar i promjena orbite Dimorfosa",
+    "difficulty": 1,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Udar letjelice 2022. skratio je obilazak asteroida Dimorfosa oko Didimosa za više od pola sata. Kojom je NASA-inom misijom prvi put namjerno promijenjena putanja nebeskog tijela?",
+    "answers": [
+      "DART",
+      "Double Asteroid Redirection Test",
+      "NASA DART"
+    ],
+    "explanation": "NASA-in DART udario je 26. rujna 2022. u Dimorfos i promijenio njegovo orbitalno razdoblje, potvrđujući načelo kinetičkog skretanja asteroida.",
+    "sources": [
+      "https://www.nasa.gov/news-release/nasa-confirms-dart-mission-impact-changed-asteroids-motion-in-space/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0441-20261028",
+    "createdAt": "2026-10-28T18:50:38.089Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "bizmut i lako taljive protupožarne legure",
+    "difficulty": 5,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "U lako taljivim legurama za protupožarne prskalice koristi se metal atomskog broja 83, prepoznatljiv i po kristalima s prelijevajućim bojama. Koji je to element?",
+    "answers": [
+      "Bizmut",
+      "Bismuth",
+      "Bi"
+    ],
+    "explanation": "Bizmut (Bi, atomski broj 83) ulazi u legure niskog tališta koje se koriste u automatskim protupožarnim sustavima.",
+    "sources": [
+      "https://pubchem.ncbi.nlm.nih.gov/element/Bismuth"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
