@@ -12556,5 +12556,611 @@
     "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
     "image": null,
     "updatedAt": null
+  },
+  {
+    "topic": "Zemljopis",
+    "focus": "istraživačka postaja Port-aux-Français na otočju Kerguelen",
+    "difficulty": 4,
+    "styleId": 8,
+    "question": "U južnom Indijskom oceanu leži francusko otočje s istraživačkom postajom Port-aux-Français, koju opskrbni brod posjećuje ploveći s Réuniona. O kojem je otočju riječ?",
+    "answers": [
+      "Kerguelen",
+      "Kerguelensko otočje",
+      "Kerguelenski otoci",
+      "Kerguelen Islands"
+    ],
+    "explanation": "Port-aux-Français stalna je francuska istraživačka postaja na otočju Kerguelen, dijelu Francuskih južnih i antarktičkih zemalja. Opskrbljuje se brodom Marion Dufresne.",
+    "sources": [
+      "https://taaf.fr/collectivites/presentation-des-territoires/les-iles-australes/"
+    ],
+    "id": "chatgpt1000-0518-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "stepska antilopa sajga s povećanim nosom",
+    "difficulty": 3,
+    "styleId": 17,
+    "question": "U stepama srednje Azije živi antilopa čiji neobično velik i savitljiv nos pomaže filtrirati prašinu iz udahnutog zraka. Kako se zove ta životinja?",
+    "answers": [
+      "Sajga",
+      "Saiga",
+      "Sajga antilopa",
+      "Saiga tatarica"
+    ],
+    "explanation": "Sajga (Saiga tatarica) ima povećanu nosnu šupljinu prilagođenu prašnjavim stepskim staništima, a nos sudjeluje i u prilagodbi udahnutog zraka.",
+    "sources": [
+      "https://zslpublications.onlinelibrary.wiley.com/doi/abs/10.1017/S0952836904005540"
+    ],
+    "id": "chatgpt1000-0519-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Astronomija",
+    "focus": "Haron kao Plutonov veliki plimno zaključani mjesec",
+    "difficulty": 2,
+    "styleId": 66,
+    "question": "Pluton i njegov najveći mjesec stalno su okrenuti istim stranama jedan prema drugome, a taj je mjesec otkriven 1978. Kako se zove?",
+    "answers": [
+      "Haron",
+      "Charon",
+      "Karon"
+    ],
+    "explanation": "Haron je najveći Plutonov mjesec. Zbog međusobnog plimnog zaključavanja oba tijela jedno drugome uvijek pokazuju istu stranu.",
+    "sources": [
+      "https://science.nasa.gov/dwarf-planets/pluto/moons/charon/"
+    ],
+    "id": "chatgpt1000-0520-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Medicina",
+    "focus": "Virginia Apgar i ocjenjivanje stanja novorođenčeta",
+    "difficulty": 2,
+    "styleId": 56,
+    "question": "Koja je američka anesteziologinja 1952. predstavila sustav ocjenjivanja novorođenčeta prema pulsu, disanju, refleksima, mišićnom tonusu i boji kože?",
+    "answers": [
+      "Virginia Apgar",
+      "Virdžinija Apgar",
+      "Apgar"
+    ],
+    "explanation": "Virginia Apgar osmislila je standardiziranu procjenu pet znakova vitalnosti novorođenčeta, danas poznatu kao Apgarina ocjena.",
+    "sources": [
+      "https://www.nlm.nih.gov/exhibition/changing-the-face-of-medicine/physicians/biography_virginia_apgar.html"
+    ],
+    "id": "chatgpt1000-0521-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Inženjerstvo",
+    "focus": "Gateway Arch kao čelični luk u St. Louisu",
+    "difficulty": 2,
+    "styleId": 33,
+    "question": "Na obali Mississippija u St. Louisu uzdiže se čelični luk visok i širok po 192 metra, djelo arhitekta Eera Saarinena. Kako se zove taj spomenik?",
+    "answers": [
+      "Gateway Arch",
+      "The Gateway Arch",
+      "Vrata Zapada",
+      "Luk Gateway"
+    ],
+    "explanation": "Gateway Arch visok je i širok 630 stopa, odnosno približno 192 metra, a projektirao ga je Eero Saarinen kao spomenik američkom širenju prema zapadu.",
+    "sources": [
+      "https://www.nps.gov/jeff/faqs.htm"
+    ],
+    "id": "chatgpt1000-0522-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Arhitektura",
+    "focus": "bahá'í Hram lotosa u New Delhiju",
+    "difficulty": 3,
+    "styleId": 51,
+    "question": "Ima 27 bijelih mramornih latica, devet ulaza i oblik poluotvorenog cvijeta, a u New Delhiju služi kao bahá'í kuća molitve. Kako je poznata ta građevina?",
+    "answers": [
+      "Hram lotosa",
+      "Lotus Temple",
+      "Lotusov hram",
+      "Bahá'í Hram lotosa"
+    ],
+    "explanation": "Bahá'í kuća molitve u New Delhiju poznata je kao Hram lotosa. Arhitekt Fariborz Sahba oblikovao ju je u tri skupine po devet latica.",
+    "sources": [
+      "https://bahaihouseofworship.in/architecture/"
+    ],
+    "id": "chatgpt1000-0523-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Likovna umjetnost",
+    "focus": "Banksyjev novi naslov djelomično uništene slike 2018.",
+    "difficulty": 3,
+    "styleId": 9,
+    "question": "Banksyjeva slika „Girl with Balloon” djelomično je prošla kroz skriveni rezač papira odmah nakon dražbe 2018. Pod kojim je novim naslovom potom postala poznata?",
+    "answers": [
+      "Love Is in the Bin",
+      "Love is in the Bin",
+      "Ljubav je u kanti"
+    ],
+    "explanation": "Nakon događaja na Sotheby'sovoj dražbi djelomično izrezana slika dobila je naslov „Love Is in the Bin” i 2021. ponovno je prodana.",
+    "sources": [
+      "https://www.theguardian.com/artanddesign/2021/oct/14/banksy-auction-record-shredded-painting-love-is-in-the-bin"
+    ],
+    "id": "chatgpt1000-0524-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Književnost",
+    "focus": "Italo Calvino i roman Ako jedne zimske noći neki putnik",
+    "difficulty": 4,
+    "styleId": 18,
+    "question": "U romanu „Ako jedne zimske noći neki putnik” čitatelj postaje lik koji stalno pokušava dovršiti knjigu, ali ga svaki put dočeka druga priča. Tko je autor tog književnog labirinta?",
+    "answers": [
+      "Italo Calvino",
+      "Calvino",
+      "Italo Kalvino"
+    ],
+    "explanation": "Italo Calvino napisao je postmodernistički roman u kojem čitatelj i čitateljica tragaju za nastavkom knjige, a pripovijedanje neprestano mijenja smjer.",
+    "sources": [
+      "https://www.penguin.co.uk/books/357035/if-on-a-winters-night-a-traveller-by-calvino-italo/9781446414330"
+    ],
+    "id": "chatgpt1000-0525-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Jezik",
+    "focus": "inuktitut i kanadsko inuitsko slogovno pismo",
+    "difficulty": 5,
+    "styleId": 21,
+    "question": "Na kanadskom teritoriju Nunavut brojni se tekstovi, uz latinični zapis, mogu čitati i slogovnim znakovima nalik geometrijskim likovima. Koji se inuitski jezik njima zapisuje?",
+    "answers": [
+      "Inuktitut",
+      "Inuktitut jezik"
+    ],
+    "explanation": "Inuktitut je jedan od inuitskih jezika kanadskog Nunavuta, a može se zapisivati slogovnim pismom koje se danas koristi i u računalnim sustavima.",
+    "sources": [
+      "https://www.gov.nu.ca/en/culture-language-heritage-and-art/computer-tools"
+    ],
+    "id": "chatgpt1000-0526-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Film",
+    "focus": "danski filmski manifest Dogme 95",
+    "difficulty": 4,
+    "styleId": 2,
+    "question": "Godine 1995. Lars von Trier i Thomas Vinterberg objavili su filmski manifest koji je zahtijevao snimanje na lokaciji, ručnom kamerom i bez naknadno dodane glazbe. Kako se zvao pokret?",
+    "answers": [
+      "Dogme 95",
+      "Dogma 95",
+      "Dogme95"
+    ],
+    "explanation": "Dogme 95 bio je danski filmski pokret čiji je „zavjet čistoće” ograničavao studijske efekte, rasvjetu i glazbu izvan prizora.",
+    "sources": [
+      "https://www.bfi.org.uk/features/where-begin-with-dogme-95"
+    ],
+    "id": "chatgpt1000-0527-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Televizija",
+    "focus": "BBC-jeva serija The Quatermass Experiment iz 1953.",
+    "difficulty": 5,
+    "styleId": 10,
+    "question": "Znanstvenik Bernard Quatermass pojavio se na BBC-ju 1953., dvije godine prije Hammerove filmske adaptacije o povratku zlokobne svemirske ekspedicije. Kako se zvala izvorna serija?",
+    "answers": [
+      "The Quatermass Experiment",
+      "Quatermass Experiment",
+      "Kvatermasov eksperiment"
+    ],
+    "explanation": "Nigel Kneale napisao je BBC-jevu seriju „The Quatermass Experiment” iz 1953.; Hammer je priču ekranizirao 1955. kao „The Quatermass Xperiment”.",
+    "sources": [
+      "https://www.bfi.org.uk/features/70-years-hammers-quatermass-xperiment-very-british-alien-invasion-movie"
+    ],
+    "id": "chatgpt1000-0528-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Videoigre",
+    "focus": "edukativna računalna igra The Oregon Trail iz 1971.",
+    "difficulty": 3,
+    "styleId": 53,
+    "question": "U edukativnoj računalnoj igri nastaloj 1971. opremate doseljenička kola i putujete prema Pacifiku, odlučujući kako preživjeti bolesti, rijeke i nestašicu hrane. Koja je to igra?",
+    "answers": [
+      "The Oregon Trail",
+      "Oregon Trail"
+    ],
+    "explanation": "„The Oregon Trail” nastao je 1971. kao obrazovna igra za učenike u Minnesoti, a igrači upravljaju putovanjem doseljenika prema Oregonu.",
+    "sources": [
+      "https://www.museumofplay.org/games/the-oregon-trail/"
+    ],
+    "id": "chatgpt1000-0529-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Sport",
+    "focus": "Abebe Bikila i bosonogi olimpijski maraton 1960.",
+    "difficulty": 1,
+    "styleId": 13,
+    "question": "U Rimu 1960. jedan je etiopski atletičar bosonog osvojio olimpijski maraton, a četiri godine poslije obranio zlato u Tokiju. Kako se zvao?",
+    "answers": [
+      "Abebe Bikila",
+      "Bikila Abebe",
+      "Bikila"
+    ],
+    "explanation": "Abebe Bikila pobijedio je u maratonu na Olimpijskim igrama 1960. trčeći bos, a 1964. postao je prvi dvostruki olimpijski pobjednik maratona.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/sporting-highlights-x2424"
+    ],
+    "id": "chatgpt1000-0530-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Promet",
+    "focus": "Gotthardski bazni tunel kao najdulji željeznički tunel",
+    "difficulty": 2,
+    "styleId": 98,
+    "question": "Švicarska je 2016. otvorila željeznički tunel dug oko 57 kilometara, probijen duboko ispod Alpa. Kako se zove taj najdulji željeznički tunel na svijetu?",
+    "answers": [
+      "Gotthardski bazni tunel",
+      "Gotthard Base Tunnel",
+      "Bazni tunel Gotthard",
+      "Gotthard"
+    ],
+    "explanation": "Gotthardski bazni tunel svečano je otvoren 1. lipnja 2016. i sa svojih približno 57 kilometara najdulji je željeznički tunel na svijetu.",
+    "sources": [
+      "https://news.sbb.ch/de/019e72ae-25de-7db5-9dcc-a87bb7d034bb/gotthard-basistunnel-zehn-jahre-schnellere-verbindungen-fuer-die-reisenden-und-effizienterer-gueterverkehr"
+    ],
+    "id": "chatgpt1000-0531-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Moda",
+    "focus": "pašmina kao fina vuna himalajskih koza",
+    "difficulty": 1,
+    "styleId": 46,
+    "question": "Od iznimno fine vune himalajskih koza u Kašmiru se stoljećima izrađuju mekani, cijenjeni šalovi. Kako se naziva ta vrsta vune?",
+    "answers": [
+      "Pašmina",
+      "Pashmina",
+      "Pašmina vuna"
+    ],
+    "explanation": "Pašmina je vrlo fina vuna iz poddlake himalajskih koza, osobito povezana s tradicijom kašmirskih šalova i drugih luksuznih tekstila.",
+    "sources": [
+      "https://www.metmuseum.org/ja/essays/indian-textiles-trade-and-production"
+    ],
+    "id": "chatgpt1000-0532-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Gastronomija",
+    "focus": "japanski nattō od soje fermentirane bakterijom Bacillus subtilis",
+    "difficulty": 4,
+    "styleId": 15,
+    "question": "Sojina zrna skuhaju se pa fermentiraju bakterijom Bacillus subtilis, nakon čega postaju ljepljiva i razviju snažnu aromu. Kako se zove ta japanska namirnica?",
+    "answers": [
+      "Natto",
+      "Nattō",
+      "Nato"
+    ],
+    "explanation": "Nattō je tradicionalna japanska hrana od fermentirane soje. Za fermentaciju se koristi bakterija Bacillus subtilis var. natto.",
+    "sources": [
+      "https://onlinelibrary.wiley.com/doi/full/10.1002/fbe2.12036"
+    ],
+    "id": "chatgpt1000-0533-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Brendovi",
+    "focus": "BIC Cristal i Marcel Bich 1950.",
+    "difficulty": 1,
+    "styleId": 42,
+    "question": "Francuski poduzetnik Marcel Bich 1950. počeo je prodavati jeftinu kemijsku olovku Cristal pod kratkim nazivom izvedenim iz svojeg prezimena. Koji je to brend?",
+    "answers": [
+      "BIC",
+      "Bic"
+    ],
+    "explanation": "Marcel Bich unaprijedio je dizajn kemijske olovke i 1950. u Francuskoj predstavio prvu olovku BIC Cristal.",
+    "sources": [
+      "https://corporate.bic.com/en-us/our-story"
+    ],
+    "id": "chatgpt1000-0534-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Kemija",
+    "focus": "Søren Sørensen i uvođenje pH ljestvice 1909.",
+    "difficulty": 5,
+    "styleId": 47,
+    "question": "Dok je istraživao proteine u Carlsbergovu laboratoriju, jedan je danski kemičar 1909. uveo pH kao način izražavanja kiselosti otopine. Kako se zvao?",
+    "answers": [
+      "Søren Sørensen",
+      "Soren Sorensen",
+      "Søren Peder Lauritz Sørensen",
+      "Sorensen"
+    ],
+    "explanation": "Søren Sørensen, kemičar Carlsbergova laboratorija, uveo je pojam pH 1909. kako bi prikazao koncentraciju vodikovih iona.",
+    "sources": [
+      "https://www.sciencehistory.org/education/scientific-biographies/soren-sorensen/"
+    ],
+    "id": "chatgpt1000-0535-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Ekonomija",
+    "focus": "Triffinova dilema svjetske rezervne valute",
+    "difficulty": 5,
+    "styleId": 90,
+    "question": "Država koja svijetu osigurava rezervnu valutu mora je obilno nuditi, ali time može potkopati povjerenje u njezinu vrijednost. Po kojem je ekonomistu nazvana ta dilema?",
+    "answers": [
+      "Robert Triffin",
+      "Triffin",
+      "Robert Trifin",
+      "Trifin"
+    ],
+    "explanation": "Triffinova dilema opisuje napetost između svjetske potražnje za rezervnom valutom i dugoročne stabilnosti sustava koji se na nju oslanja. Ime je dobila po Robertu Triffinu.",
+    "sources": [
+      "https://www.ecb.europa.eu/press/key/date/2011/html/sp111003.en.html"
+    ],
+    "id": "chatgpt1000-0536-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Automobili",
+    "focus": "Saab 92 kao automobil zrakoplovne tvrtke",
+    "difficulty": 3,
+    "styleId": 57,
+    "question": "Švedski proizvođač zrakoplova 1947. predstavio je svoj prvi automobil, model 92, a dvije godine poslije počeo ga proizvoditi u Trollhättanu. O kojoj je marki riječ?",
+    "answers": [
+      "Saab",
+      "SAAB"
+    ],
+    "explanation": "Saab je izvorno bio zrakoplovni proizvođač. Model Saab 92 prikazan je 1947., a serijska proizvodnja počela je u prosincu 1949.",
+    "sources": [
+      "https://saabcarmuseum.se/en/saabs-historia/"
+    ],
+    "id": "chatgpt1000-0537-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Biologija",
+    "focus": "rod Drosera i ljepljive klopke biljaka mesožderki",
+    "difficulty": 1,
+    "styleId": 91,
+    "question": "Na vlažnom tlu siromašnom hranjivim tvarima raste sitna mesožderka čiji listovi nose sjajne ljepljive kapljice za hvatanje kukaca. Kako se zove taj rod biljaka?",
+    "answers": [
+      "Rosika",
+      "Drosera",
+      "Rosike"
+    ],
+    "explanation": "Rosike (rod Drosera) imaju listove prekrivene žljezdastim dlačicama s ljepljivom tekućinom; uhvaćene kukce razgrađuju probavnim enzimima.",
+    "sources": [
+      "https://www.kew.org/plants/round-leafed-sundew"
+    ],
+    "id": "chatgpt1000-0538-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "More i ocean",
+    "focus": "termohalina cirkulacija i gustoća morske vode",
+    "difficulty": 4,
+    "styleId": 60,
+    "question": "Vjetar pokreće mnoge površinske morske struje, ali dubinsko kruženje vode ovisi o njezinoj gustoći, koju mijenjaju temperatura i slanost. Kako se naziva takva cirkulacija?",
+    "answers": [
+      "Termohalina cirkulacija",
+      "Termohalinska cirkulacija",
+      "Termohalino kruženje",
+      "Thermohaline circulation"
+    ],
+    "explanation": "Termohalina cirkulacija nastaje zbog razlika u gustoći morske vode, uvjetovanih temperaturom i salinitetom, te je dio globalnog oceanskog kruženja.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/conveyor.html"
+    ],
+    "id": "chatgpt1000-0539-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Poljoprivreda",
+    "focus": "repa u norfolškom sustavu plodoreda",
+    "difficulty": 5,
+    "styleId": 65,
+    "question": "U norfolškom sustavu plodoreda uz djetelinu se uvodila korjenasta krmna kultura koja je pomagala smanjiti potrebu za ostavljanjem polja na ugaru. Koja?",
+    "answers": [
+      "Repa",
+      "Stočna repa",
+      "Turnip",
+      "Turnips"
+    ],
+    "explanation": "Norfolški sustav izmjene usjeva koristio je repu i krmne trave poput djeteline, čime je omogućavao intenzivniji uzgoj i hranidbu stoke.",
+    "sources": [
+      "https://historicengland.org.uk/images-books/publications/historic-farmsteads-preliminary-character-statement-east-of-england/historic-farmsteads-east-england-part2/"
+    ],
+    "id": "chatgpt1000-0540-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Pop kultura",
+    "focus": "Peyo i prvo pojavljivanje Štrumpfova 1958.",
+    "difficulty": 1,
+    "styleId": 31,
+    "question": "Mala plava bića koja danas poznajemo kao Štrumpfove prvi put su se pojavila 1958. u belgijskom stripu o Johanu i Pirlouitu. Koji ih je crtač stvorio?",
+    "answers": [
+      "Peyo",
+      "Pejo",
+      "Pierre Culliford"
+    ],
+    "explanation": "Štrumpfovi su se prvi put pojavili 23. listopada 1958. u serijalu o Johanu i Pirlouitu, a njihov je autor bio belgijski crtač Peyo.",
+    "sources": [
+      "https://www.smurf.com/en/news/smurfy-birthday"
+    ],
+    "id": "chatgpt1000-0541-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Rijetke teme",
+    "focus": "McMurdove suhe doline kao antarktički kraj nalik Marsu",
+    "difficulty": 2,
+    "styleId": 4,
+    "question": "Antarktika nije posvuda pod debelim ledenim pokrovom: zapadno od McMurdoova zaljeva nalaze se gotovo gole, iznimno suhe doline koje znanstvenici uspoređuju s Marsom. Kako se zovu?",
+    "answers": [
+      "McMurdove suhe doline",
+      "McMurdo Dry Valleys",
+      "Suhe doline McMurdo",
+      "Dry Valleys"
+    ],
+    "explanation": "McMurdove suhe doline na Antarktici odlikuju se vrlo niskom vlagom i velikim površinama bez snijega i leda, pa služe i kao analogni okoliš za proučavanje Marsa.",
+    "sources": [
+      "https://www.nasa.gov/image-article/dry-valleys-antarctica/"
+    ],
+    "id": "chatgpt1000-0542-20261028",
+    "createdAt": "2026-10-28T22:51:40.630Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "image": null,
+    "updatedAt": null
   }
 ]
