@@ -9500,5 +9500,618 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0393-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "sumerski artefakt iz Ura s prizorima rata i gozbe",
+    "difficulty": 4,
+    "styleId": 64,
+    "question": "U kraljevskim grobnicama drevnog Ura pronađen je mozaikom ukrašen predmet čije se dvije velike strane obično nazivaju „Rat” i „Mir”. Kako se zove taj poznati arheološki nalaz?",
+    "answers": [
+      "Zastava iz Ura",
+      "Standard of Ur",
+      "Standard iz Ura",
+      "Ur Standard"
+    ],
+    "explanation": "Takozvani Standard of Ur sumerski je artefakt ukrašen prizorima vojnog pohoda na jednoj te gozbe i prinosa na drugoj strani. Njegova izvorna namjena nije pouzdano utvrđena.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/image/1613316617"
+    ],
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0394-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "pećinske četvrti Sassi u talijanskoj Basilicati",
+    "difficulty": 3,
+    "styleId": 8,
+    "question": "Basilicata, duboki klanci visoravni Murgia i drevne četvrti Sasso Caveoso i Sasso Barisano tri su traga prema kojem talijanskom gradu, poznatom po nastambama uklesanima u stijenu?",
+    "answers": [
+      "Matera"
+    ],
+    "explanation": "Matera u Basilicati poznata je po povijesnim četvrtima Sassi i crkvama uklesanima u stijene; područje je na UNESCO-ovu Popisu svjetske baštine.",
+    "sources": [
+      "https://whc.unesco.org/en/list/670"
+    ],
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0395-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Barbara McClintock i pokretni dijelovi genoma",
+    "difficulty": 4,
+    "styleId": 47,
+    "question": "Šarene promjene na zrnima kukuruza navele su Barbaru McClintock na zaključak da se neki odsječci genetičkog materijala mogu premještati unutar kromosoma. Kako nazivamo takve pokretne elemente DNK?",
+    "answers": [
+      "Transpozoni",
+      "Transpozon",
+      "Transposable elements",
+      "Pokretni genetički elementi",
+      "Pokretni genetski elementi"
+    ],
+    "explanation": "McClintock je na kukuruzu otkrila genetičke elemente koji mijenjaju položaj u genomu. Danas ih nazivamo transpozonima ili pokretnim genetičkim elementima.",
+    "sources": [
+      "https://www.nobelprize.org/stories/women-who-changed-science/barbara-mcclintock"
+    ],
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0396-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "zvjezdasta krtica i podvodno njušenje mjehurićima",
+    "difficulty": 5,
+    "styleId": 17,
+    "question": "Ovaj močvarni sisavac Sjeverne Amerike gotovo se ne oslanja na vid, a pod vodom može nanjušiti plijen tako što izdahne pa ponovno udahne sitne mjehuriće zraka. Koja je to neobična vrsta krtice?",
+    "answers": [
+      "Zvjezdasta krtica",
+      "Krtica zvjezdonos",
+      "Zvjezdonosa krtica",
+      "Star-nosed mole",
+      "Condylura cristata"
+    ],
+    "explanation": "Zvjezdasta krtica (Condylura cristata) njuši pod vodom vraćanjem izdahnutih mjehurića u nos, a osjetljivi izdanci oko njuške služe joj za dodir.",
+    "sources": [
+      "https://www.amnh.org/explore/news-blogs/star-nosed-mole-scent"
+    ],
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0397-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Plunkettovo slučajno otkriće politetrafluoretilena",
+    "difficulty": 1,
+    "styleId": 25,
+    "question": "Roy Plunkett je 1938. istraživao rashladne plinove, no u spremniku je umjesto očekivanog plina pronašao bijeli, vrlo sklizak polimer. Pod kojim je poznatim trgovačkim imenom taj materijal kasnije prodavan?",
+    "answers": [
+      "Teflon",
+      "PTFE",
+      "Politetrafluoretilen"
+    ],
+    "explanation": "Plunkett je slučajno otkrio politetrafluoretilen, PTFE, koji je zbog kemijske postojanosti i niskog trenja postao poznat pod trgovačkim imenom Teflon.",
+    "sources": [
+      "https://www.sciencehistory.org/education/scientific-biographies/roy-j-plunkett/"
+    ],
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0398-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "magični kvadrat na Dürerovoj Melencoliji I",
+    "difficulty": 3,
+    "styleId": 98,
+    "question": "Na Dürerovoj grafici „Melencolia I” iz 1514. nalazi se magični kvadrat s četiri retka i četiri stupca. Koji se broj dobije zbrajanjem bilo kojeg retka ili stupca tog kvadrata?",
+    "answers": [
+      "34",
+      "Trideset četiri",
+      "Tridesetcetiri"
+    ],
+    "explanation": "Dürerov magični kvadrat veličine 4 × 4 ima jednak zbroj 34 u svakom retku i stupcu; na dnu se nalaze i brojevi 15 i 14, povezani s godinom nastanka.",
+    "sources": [
+      "https://www.metmuseum.org/fr/perspectives/melencolia-i"
+    ],
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0399-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Neptunova Nereida i izrazito izdužena orbita",
+    "difficulty": 5,
+    "styleId": 66,
+    "question": "Gerard Kuiper otkrio je 1949. Neptunov mjesec kojem treba oko 360 zemaljskih dana za obilazak planeta, a njegova je putanja neobično izdužena. Kako se zove taj mjesec?",
+    "answers": [
+      "Nereida",
+      "Nereid"
+    ],
+    "explanation": "Nereidu je otkrio Gerard Kuiper 1949. Njezina iznimno ekscentrična orbita i period od približno 360 dana razlikuju je od mnogih drugih prirodnih satelita.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/nereid/"
+    ],
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0400-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "artemisinin iz slatkog pelina i liječenje malarije",
+    "difficulty": 3,
+    "styleId": 71,
+    "question": "Nobelovka Tu Youyou pronašla je važan lijek protiv malarije istražujući biljku Artemisia annua. Kako se zove djelatna tvar čiji je naziv izveden iz latinskog imena te biljke?",
+    "answers": [
+      "Artemisinin",
+      "Artemizinin",
+      "Artemisinine"
+    ],
+    "explanation": "Artemisinin je antimalarik izoliran iz biljke Artemisia annua. Tu Youyou pridonijela je njegovu otkriću i za taj je rad podijelila Nobelovu nagradu za medicinu 2015.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/2015/advanced-information/"
+    ],
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0401-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "VisiCalc i početak elektroničkih proračunskih tablica",
+    "difficulty": 3,
+    "styleId": 59,
+    "question": "Kad se 1979. pojavio na računalu Apple II, ovaj je program automatski preračunavao tablice i mnogim tvrtkama dao razlog za kupnju osobnog računala. Kako se zvao?",
+    "answers": [
+      "VisiCalc",
+      "Visicalc",
+      "Visible Calculator"
+    ],
+    "explanation": "VisiCalc Daniela Bricklina i Boba Frankstona predstavljen je 1979. i omogućio automatsko preračunavanje vrijednosti u elektroničkim proračunskim tablicama.",
+    "sources": [
+      "https://www.computerhistory.org/tdih/may/11/"
+    ],
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0402-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "prvi kontrolirani let helikoptera na Marsu",
+    "difficulty": 1,
+    "styleId": 56,
+    "question": "Koji je NASA-in mali helikopter 19. travnja 2021. na Marsu izveo prvi kontrolirani let s vlastitim pogonom na nekom drugom planetu?",
+    "answers": [
+      "Ingenuity",
+      "Mars Helicopter Ingenuity"
+    ],
+    "explanation": "Ingenuity je 19. travnja 2021. prvi put poletio u Marsovoj rijetkoj atmosferi. Bio je zamišljen kao tehnološki pokus, a ostvario je ukupno 72 leta.",
+    "sources": [
+      "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+    ],
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0403-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "grad Selimijine džamije arhitekta Sinana",
+    "difficulty": 2,
+    "styleId": 51,
+    "question": "Nekoć je bio osmanska prijestolnica, nalazi se u europskom dijelu današnje Turske, a nad njim se uzdižu četiri minareta Selimijine džamije, remek-djela Mimara Sinana. Koji je to grad?",
+    "answers": [
+      "Edirne",
+      "Jedrene",
+      "Adrianopol",
+      "Adrianople"
+    ],
+    "explanation": "Selimijina džamija, koju je Sinan smatrao svojim najboljim djelom, nalazi se u Edirneu, nekadašnjoj prijestolnici Osmanskog Carstva.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1366/"
+    ],
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0404-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "izvorni izložbeni naslov Constableove slike The Hay Wain",
+    "difficulty": 5,
+    "styleId": 9,
+    "question": "Constableova slika „The Hay Wain” danas je poznata po zaprezi koja prelazi plitku rijeku, no na izložbi Kraljevske akademije 1821. nosila je drugi naslov. Koji?",
+    "answers": [
+      "Landscape: Noon",
+      "Landscape Noon",
+      "Krajolik: Podne",
+      "Krajolik u podne",
+      "Pejzaž: Podne",
+      "Pejzaž u podne"
+    ],
+    "explanation": "John Constable je djelo 1821. izložio kao „Landscape: Noon”. Naziv „The Hay Wain” poslije se ustalio prema zaprežnim kolima prikazanima na slici.",
+    "sources": [
+      "https://www.nationalgallery.org.uk/paintings/john-constable-the-hay-wain/"
+    ],
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0405-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "zviždani govor na kanarskom otoku La Gomera",
+    "difficulty": 2,
+    "styleId": 20,
+    "question": "Stanovnici jednog kanarskog otoka stoljećima prenose poruke zviždanjem koje oponaša španjolski govor, a ta se vještina uči i u školama. Na kojem se otoku razvila tradicija silbo?",
+    "answers": [
+      "La Gomera",
+      "Gomera",
+      "Otok La Gomera"
+    ],
+    "explanation": "Silbo Gomero je zviždani način prenošenja španjolskog govora s kanarskog otoka La Gomera; UNESCO ga je 2009. uvrstio na popis nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/whistled-language-of-the-island-of-la-gomera-canary-islands-the-silbo-gomero-00172"
+    ],
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0406-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "mongolsko grleno pjevanje s istodobnim harmonijskim tonovima",
+    "difficulty": 5,
+    "styleId": 96,
+    "question": "Čuje se duboki neprekinuti ton, a iznad njega gotovo zvižduća melodija, iako pjeva samo jedna osoba. Kako se naziva tradicionalna mongolska tehnika pjevanja s Altaja koju štiti UNESCO?",
+    "answers": [
+      "Khöömei",
+      "Khoomei",
+      "Höömei",
+      "Hoomii",
+      "Hoomi",
+      "Khomei"
+    ],
+    "explanation": "Khöömei je mongolska tehnika grlenog pjevanja u kojoj izvođač istodobno proizvodi osnovni ton i naglašene harmonike koji tvore melodiju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/mongolian-traditional-art-of-khoomei-00396"
+    ],
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0407-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "skladatelj filmske glazbe za Koyaanisqatsi",
+    "difficulty": 3,
+    "styleId": 18,
+    "question": "U eksperimentalnom filmu „Koyaanisqatsi” Godfreyja Reggia iz 1983. izmjenjuju se prizori prirode i ubrzane snimke modernog života. Koji je američki skladatelj napisao njegovu prepoznatljivu glazbu?",
+    "answers": [
+      "Philip Glass",
+      "Filip Glas",
+      "Glass"
+    ],
+    "explanation": "Minimalističku glazbu za Reggiov film „Koyaanisqatsi” skladao je Philip Glass, a film je prvi dio trilogije Qatsi.",
+    "sources": [
+      "https://www.criterion.com/films/28034-koyaanisqatsi"
+    ],
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0408-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "britanska serija The Prisoner i lik Broj šest",
+    "difficulty": 4,
+    "styleId": 52,
+    "question": "Patrick McGoohan glumio je špijuna koji se nakon ostavke budi u idiličnom, ali zatvorenom naselju zvanom Village, gdje mu umjesto imena dodjeljuju broj šest. U kojoj se britanskoj seriji to događa?",
+    "answers": [
+      "The Prisoner",
+      "Prisoner",
+      "Zatvorenik"
+    ],
+    "explanation": "Britanska serija „The Prisoner” (1967.–1968.) prati McGoohanova neimenovanog agenta poznatog kao Number Six, zatočenog u tajanstvenom Villageu.",
+    "sources": [
+      "https://www.bfi.org.uk/features/prisoner-patrick-mcgoohan-50"
+    ],
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0409-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Videoigre",
+    "focus": "ritamska igra o psu reperu PaRappi",
+    "difficulty": 2,
+    "styleId": 84,
+    "question": "U ritamskoj igri za prvi PlayStation iz 1996. pas s kapom uči repati od likova poput Chop Chop Master Oniona kako bi osvojio Sunny Funny. Kako se igra zove?",
+    "answers": [
+      "PaRappa the Rapper",
+      "Parappa the Rapper",
+      "PaRappa"
+    ],
+    "explanation": "„PaRappa the Rapper” izašao je u Japanu 1996. i postao jedan od pionira popularnih ritamskih videoigara.",
+    "sources": [
+      "https://blog.br.playstation.com/2017/04/04/entrevista-a-historia-por-tras-de-parappa-the-rapper/"
+    ],
+    "styleDescription": "Opiši omiljen dječji predmet preko godine nastanka",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0410-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "pobjednica prvog olimpijskog maratona za žene 1984.",
+    "difficulty": 2,
+    "styleId": 83,
+    "question": "Zlatna medalja u Los Angelesu 1984. imala je posebno značenje jer se ženski maraton tada prvi put trčao na Olimpijskim igrama. Koja je američka atletičarka pobijedila?",
+    "answers": [
+      "Joan Benoit",
+      "Joan Benoit Samuelson",
+      "Džoan Benoa"
+    ],
+    "explanation": "Joan Benoit osvojila je zlato na prvom olimpijskom ženskom maratonu, održanom u Los Angelesu 1984. godine.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/a-long-road-to-gender-equality"
+    ],
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0411-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Automobili",
+    "focus": "Citroën DS 19 i hidropneumatski ovjes",
+    "difficulty": 2,
+    "styleId": 6,
+    "question": "Predstavljen 1955., ovaj je francuski automobil zahvaljujući hidropneumatskom ovjesu mogao mijenjati visinu podvozja, a izgledom je podsjećao na leteći tanjur. Koji je to Citroënov model?",
+    "answers": [
+      "Citroën DS",
+      "Citroen DS",
+      "DS",
+      "DS 19",
+      "Citroën DS 19",
+      "Citroen DS 19"
+    ],
+    "explanation": "Citroën DS 19 predstavljen je 1955. i proslavio se aerodinamičnim oblikom te hidropneumatskim ovjesom koji je omogućavao podešavanje visine vozila.",
+    "sources": [
+      "https://www.citroenorigins.com/en/cars/ds"
+    ],
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0412-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "parobrod Great Eastern i polaganje atlantskog kabela",
+    "difficulty": 4,
+    "styleId": 39,
+    "question": "Brunelov golemi parobrod iz 1858. nije ostvario očekivani putnički uspjeh, ali je zbog veličine bio izvrstan za polaganje teškog transatlantskog telegrafskog kabela 1865. i 1866. Kako se zvao?",
+    "answers": [
+      "Great Eastern",
+      "SS Great Eastern",
+      "SS Great Eastern (1858)"
+    ],
+    "explanation": "SS Great Eastern projektirao je Isambard Kingdom Brunel. Nakon komercijalnih neuspjeha u putničkom prometu služio je za polaganje transatlantskog telegrafskog kabela.",
+    "sources": [
+      "https://www.rmg.co.uk/collections/objects/rmgc-object-138012"
+    ],
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0413-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "napuljski pizzaiuolo i tradicionalna izrada pizze",
+    "difficulty": 1,
+    "styleId": 76,
+    "question": "U Napulju se majstor koji ručno priprema tijesto i peče pizzu u krušnoj peći naziva posebnom talijanskom riječju. Koji je naziv tog zanimanja, čiju je vještinu zaštitio UNESCO?",
+    "answers": [
+      "Pizzaiuolo",
+      "Pizzaiolo",
+      "Pica majstor",
+      "Majstor pizze"
+    ],
+    "explanation": "Pizzaiuolo je napuljski majstor pripreme pizze. UNESCO je 2017. upisao umijeće napuljskih pizzaiuola na popis nematerijalne kulturne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/Decisions/12.COM/11.b.17"
+    ],
+    "styleDescription": "Pitaj o etimologiji naziva zanimanja",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0414-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "nordijski brod Naglfar načinjen od noktiju mrtvih",
+    "difficulty": 5,
+    "styleId": 30,
+    "question": "U nordijskim pričama o Ragnaröku prema posljednjoj bitci plovi brod sastavljen od neodrezanih noktiju mrtvih. Kako se zove to jezovito plovilo?",
+    "answers": [
+      "Naglfar",
+      "Naglfari"
+    ],
+    "explanation": "Naglfar je mitski brod iz nordijske predaje, sastavljen od noktiju pokojnika, koji tijekom Ragnaröka prevozi sile neprijateljske bogovima.",
+    "sources": [
+      "https://www.worldhistory.org/article/1836/ten-norse-mythology-facts-you-need-to-know/"
+    ],
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0415-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "termofili i obojeni rubovi vrela Grand Prismatic",
+    "difficulty": 1,
+    "styleId": 91,
+    "question": "U Yellowstoneu se oko vrela Grand Prismatic prostiru žuti, narančasti i zeleni pojasevi. Te boje velikim dijelom stvaraju zajednice mikroorganizama koji uspijevaju na visokim temperaturama. Kako ih zajednički nazivamo?",
+    "answers": [
+      "Termofili",
+      "Termofilni mikroorganizmi",
+      "Termofilne bakterije"
+    ],
+    "explanation": "U toplim zonama Grand Prismatic Springa žive termofilni mikroorganizmi, a njihove zajednice pridonose različitim bojama oko izvora.",
+    "sources": [
+      "https://home.nps.gov/places/000/grand-prismatic-spring.htm"
+    ],
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0416-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "aztečke chinampe kao uzgojne površine na plitkim jezerima",
+    "difficulty": 4,
+    "styleId": 60,
+    "question": "Azteci nisu uzgajali povrće samo na prirodnim obalama jezera. U Xochimilcu su gradili uske umjetne parcele od zemlje i biljnog materijala, okružene kanalima, koje se često pogrešno zovu plutajućim vrtovima. Kako se zovu?",
+    "answers": [
+      "Chinampas",
+      "Chinampa",
+      "Činampa",
+      "Činampe"
+    ],
+    "explanation": "Chinampas su uzdignute umjetne poljoprivredne površine u plitkim jezerima, a ne slobodno plutajuće splavi. Njihovi ostaci sačuvani su u Xochimilcu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/412"
+    ],
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0417-20261028",
+    "createdAt": "2026-10-28T17:51:19.690Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "sejšelska palma coco de mer i rekordno velike sjemenke",
+    "difficulty": 1,
+    "styleId": 12,
+    "question": "Sjeme palme coco de mer može težiti čak 25 kilograma i narasti do pola metra. Na kojem otočju Indijskog oceana prirodno raste ta palma, poznata po najvećim sjemenkama na svijetu?",
+    "answers": [
+      "Sejšeli",
+      "Sejšelsko otočje",
+      "Seychelles",
+      "Sejšelski otoci"
+    ],
+    "explanation": "Palma Lodoicea maldivica, poznata kao coco de mer, raste na Sejšelima i proizvodi najveće i najteže poznate sjemenke, mase do oko 25 kg.",
+    "sources": [
+      "https://www.kew.org/read-and-watch/double-coconut-largest-seed-in-the-world"
+    ],
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "image": null,
+    "updatedAt": null
   }
 ]
