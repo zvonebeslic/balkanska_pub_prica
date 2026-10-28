@@ -4660,5 +4660,611 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0195-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "neodgonetnuti znakovi na drvenim pločicama Rapa Nuija",
+    "difficulty": 5,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na drvenim pločicama s Uskršnjeg otoka sačuvani su nizovi ljudskih, ptičjih i drugih znakova koje istraživači još nisu pouzdano pročitali. Kako se naziva taj zagonetni sustav znakova?",
+    "answers": [
+      "Rongorongo",
+      "Rongo-rongo"
+    ],
+    "explanation": "Rongorongo je sustav znakova s Rapa Nuija, sačuvan na malobrojnim drvenim predmetima. Unatoč brojnim pokušajima tumačenja, njegovo čitanje nije općeprihvaćeno.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/E_Oc1903-150"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0196-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "azerbajdžanska eksklava između Armenije Irana i Turske",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Ima autonomnu upravu, graniči s Armenijom, Iranom i Turskom, ali nema kopnenu vezu s ostatkom države kojoj pripada. Koja se azerbajdžanska eksklava krije iza tih tragova?",
+    "answers": [
+      "Nahičevan",
+      "Nahčivan",
+      "Nakhchivan",
+      "Naxçıvan",
+      "Nakhichevan"
+    ],
+    "explanation": "Nahičevan je autonomna republika Azerbajdžana odvojena od njegova glavnoga teritorija Armenijom. Graniči i s Iranom te ima kratku granicu s Turskom.",
+    "sources": [
+      "https://snl.no/Nakhitsjevan"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0197-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "južnoamerička ptica čiji ptići imaju kandže na krilima",
+    "difficulty": 5,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Ptići ove južnoameričke ptice kandžama na krilima mogu se penjati po granama, dok odrasle jedinke biljno lišće probavljaju uz pomoć fermentacije. O kojoj je ptici riječ?",
+    "answers": [
+      "Hoacin",
+      "Hoatzin",
+      "Opisthocomus hoazin",
+      "Hoazin"
+    ],
+    "explanation": "Hoacin je neobična južnoamerička ptica s razvijenim voljkom u kojem mikroorganizmi pomažu razgraditi biljnu hranu. Mladunci imaju kandže na krilima kojima se pridržavaju za granje.",
+    "sources": [
+      "https://mhn.tournai.be/opisthocomiformes"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0198-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "lantanid nazvan po patuljastom planetu Ceresu",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Jedan je lantanid dobio ime po nebeskom tijelu Ceres, otkrivenom 1801. godine, koje je pak nazvano po rimskoj božici žita. O kojem je kemijskom elementu riječ?",
+    "answers": [
+      "Cerij",
+      "Cerium"
+    ],
+    "explanation": "Cerij ima simbol Ce i atomski broj 58. Ime je dobio po Ceresu, tada smatranom asteroidom, koji je otkriven neposredno prije identificiranja elementa.",
+    "sources": [
+      "https://periodic-table.rsc.org/element/58/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0199-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "prva znamenka jedan u Benfordovoj raspodjeli",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "U mnogim skupovima stvarnih brojčanih podataka prva je znamenka 1 mnogo češća od 9, a pojavljuje se u približno 30 posto vrijednosti. Čiji zakon opisuje tu neobičnu raspodjelu?",
+    "answers": [
+      "Benfordov zakon",
+      "Benford",
+      "Benford's law",
+      "Benfordov"
+    ],
+    "explanation": "Benfordov zakon opisuje raspodjelu prvih značajnih znamenaka u mnogim, ali ne svim, stvarnim skupovima podataka. Za prvu znamenku 1 predviđa vjerojatnost približno 30,1 posto.",
+    "sources": [
+      "https://mathworld.wolfram.com/BenfordsLaw.html",
+      "https://xlinux.nist.gov/dads/HTML/benfordslaw.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0200-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "planet kojem je zvjezdani dan dulji od godine",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Jednom planetu Sunčeva sustava za okret oko vlastite osi trebaju približno 243 zemaljska dana, a za obilazak Sunca samo 225. Koji planet ima tako neobično dug zvjezdani dan?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se oko osi okreće vrlo sporo i retrogradno. Njezin zvjezdani dan traje oko 243 zemaljska dana, a godina oko 225, iako je Sunčev dan na Veneri kraći.",
+    "sources": [
+      "https://www.esa.int/Science_Exploration/Space_Science/Venus_Express/Venusian_geography"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0201-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "rotirajuće dizalo za brodove između dvaju škotskih kanala",
+    "difficulty": 4,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Umjesto niza starih prevodnica, dva škotska kanala od 2002. povezuje golemo rotirajuće dizalo koje podiže i spušta čitave brodove u vodenim koritima. Kako se zove ta konstrukcija?",
+    "answers": [
+      "Falkirk Wheel",
+      "Falkirško kolo",
+      "Falkirkovo kolo",
+      "Falkirk"
+    ],
+    "explanation": "Falkirk Wheel jedinstveno je rotirajuće dizalo za brodove koje povezuje kanale Forth and Clyde i Union. Otvoreno je 2002. i omogućuje savladavanje velike visinske razlike.",
+    "sources": [
+      "https://www.scottishcanals.co.uk/visit/canals/visit_falkirk_wheel"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0202-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "anamorfna lubanja na Holbeinovim Ambasadorima",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "U prednjem planu Holbeinove slike Ambasadori iz 1533. nalazi se neobičan izduženi oblik koji postaje prepoznatljiv tek kada ga pogledamo iz kosog kuta. Koji se predmet tada otkriva?",
+    "answers": [
+      "Lubanja",
+      "Ljudska lubanja",
+      "Mrtvačka lubanja"
+    ],
+    "explanation": "Hans Holbein Mlađi naslikao je anamorfnu lubanju koja se izravno čini izobličenom, a iz posebnog kuta poprima pravi oblik. Ona je simbol prolaznosti života.",
+    "sources": [
+      "https://www.nationalgallery.org.uk/paintings/catalogues/foister-2024/the-ambassadors"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0203-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "tipografski znak nastao spajanjem latinskog et",
+    "difficulty": 2,
+    "styleId": 74,
+    "styleDescription": "Kreni od znaka u tipografiji i pitaj kako se zove",
+    "question": "Znak & potječe od spajanja slova latinske riječi et, a njegov se engleski naziv razvio iz izraza 'and per se and'. Kako glasi taj naziv?",
+    "answers": [
+      "Ampersand",
+      "Amperzand"
+    ],
+    "explanation": "Ampersand je znak & koji predstavlja veznik i. Oblik se razvio iz latinske ligature et, a naziv iz nekadašnjeg načina izgovaranja znaka na kraju engleske abecede.",
+    "sources": [
+      "https://www.dictionary.com/articles/ampersand"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0204-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "naslov prve epizode serije Doctor Who iz 1963",
+    "difficulty": 4,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Dvoje učitelja 23. studenoga 1963. u prvoj epizodi serije Doctor Who slijede učenicu Susan do neobične policijske kabine. Kojim je izvornim naslovom započela ova dugovječna serija?",
+    "answers": [
+      "An Unearthly Child"
+    ],
+    "explanation": "An Unearthly Child prva je epizoda serije Doctor Who, emitirana 23. studenoga 1963. godine. U njoj se prvi put pojavljuju Doktor, Susan i vremenski stroj TARDIS.",
+    "sources": [
+      "https://www.doctorwho.tv/stories/an-unearthly-child"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0205-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "maratonac diskvalificiran zbog vožnje automobilom 1904",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Na olimpijskom maratonu u St. Louisu 1904. jedan je trkač prvi ušao u cilj, no otkrilo se da je dio staze prevalio automobilom. Kako se zvao taj diskvalificirani Amerikanac?",
+    "answers": [
+      "Fred Lorz",
+      "Frederick Lorz",
+      "Lorz"
+    ],
+    "explanation": "Fred Lorz napustio je dio maratonske staze i vozio se automobilom, pa je nakon povratka na stazu stigao prvi. Diskvalificiran je, a službeni pobjednik bio je Thomas Hicks.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-strange-case-of-the-st-louis-1904-marathon"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0206-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "ime prve londonske podzemne željeznice iz 1863",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Prva podzemna željeznica na svijetu otvorena je u Londonu 10. siječnja 1863., između tadašnjeg Bishop's Roada i Farringdon Streeta. Kako se zvala ta željeznica?",
+    "answers": [
+      "Metropolitan Railway",
+      "Metropolitan",
+      "Metropolitanska željeznica"
+    ],
+    "explanation": "Metropolitan Railway počela je voziti 1863. između Paddingtona i Farringdon Streeta. Bila je početak mreže iz koje je nastao današnji londonski Underground.",
+    "sources": [
+      "https://unvis.it/tfl.gov.uk/corporate/about-tfl/culture-and-heritage/londons-transport-a-history/london-underground/a-brief-history-of-the-underground"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0207-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "metalni obruči koji su podupirali široke viktorijanske suknje",
+    "difficulty": 2,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "Kad su sredinom 19. stoljeća suknje postajale sve šire, brojne teške podsuknje zamijenila je lakša konstrukcija od čeličnih obruča. Kako se nazivala ta potpora ispod haljine?",
+    "answers": [
+      "Krinolina",
+      "Krinolin",
+      "Crinoline",
+      "Krinalina"
+    ],
+    "explanation": "Krinolina s obručima postala je popularna oko 1856. godine. Čelični prstenovi držali su široku siluetu suknje bez mnoštva teških slojeva tkanine.",
+    "sources": [
+      "https://www.vam.ac.uk/articles/corsets-crinolines-and-bustles-fashionable-victorian-underwear"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0208-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "japanski fugu i riba koja sadrži tetrodotoksin",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Japanski naziv fugu ne označava začin ni način kuhanja, nego ribu koja zbog mogućeg tetrodotoksina zahtijeva posebno pažljivu pripremu. O kojoj je ribi riječ?",
+    "answers": [
+      "Napuhača",
+      "Riba napuhača",
+      "Napuhače",
+      "Pufferfish",
+      "Puffer fish"
+    ],
+    "explanation": "Fugu je japanski naziv za ribu napuhaču. Neke njezine vrste i organi mogu sadržavati snažan neurotoksin tetrodotoksin, zbog čega je promet takvom ribom strogo nadziran.",
+    "sources": [
+      "https://www.fda.gov/international-programs/cooperative-arrangements/fda-japan-exchange-letters-regarding-puffer-fish"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0209-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "broj crvenih njuški tučka u jednom cvijetu šafrana",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Za samo gram dragocjenog začina šafrana potrebno je ubrati mnoštvo cvjetova vrste Crocus sativus. Koliko crvenih njuški tučka daje svaki pojedini cvijet?",
+    "answers": [
+      "3",
+      "Tri",
+      "Three"
+    ],
+    "explanation": "Svaki cvijet pravog šafrana ima tri crvene njuške tučka koje se ručno beru i suše. Zbog malog prinosa po cvijetu proizvodnja začina zahtijeva mnogo rada.",
+    "sources": [
+      "https://www.uvm.edu/extension/news/saffron-worlds-most-expensive-spice"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0210-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "prirodni japanski lak dobiven iz soka drveta",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Japanski majstori stoljećima su kutijice, posude i namještaj premazivali tankim slojevima prirodnog laka dobivenog iz soka određenih stabala. Kojim se japanskim nazivom taj lak označava?",
+    "answers": [
+      "Urushi",
+      "Uruši"
+    ],
+    "explanation": "Urushi je tradicionalni azijski lak dobiven iz biljnog soka. Nanosi se u tankim slojevima koji očvršćuju i stvaraju izdržljivu zaštitnu i ukrasnu površinu.",
+    "sources": [
+      "https://resources.metmuseum.org/resources/metpublications/pdf/The_Care_and_Handling_of_Art_Objects_Practices_in_The_Metropolitan_Museum_of_Art_2019.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0211-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "predmet koji je Walter Hunt patentirao 1849",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Jedan mali izum Waltera Hunta iz 1849. savija metalnu žicu u oprugu i skriva oštri vrh u zaštitnoj kopči. Koji predmet iz kućne i krojačke uporabe opisujemo?",
+    "answers": [
+      "Sigurnosna igla",
+      "Ziherica",
+      "Safety pin"
+    ],
+    "explanation": "Walter Hunt patentirao je 1849. suvremeni oblik sigurnosne igle. Njezin opružni dio i zaštitni zatvarač omogućuju pričvršćivanje tkanine bez izloženog oštrog vrha.",
+    "sources": [
+      "https://www.history.com/this-day-in-history/April-10/safety-pin-patented-walter-hunt"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0212-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "igra Elizabeth Magie koja je prethodila Monopolu",
+    "difficulty": 4,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "Elizabeth Magie osmislila je društvenu igru u kojoj kupnja zemljišta, najamnine i bogatstvo igrača služe kao lekcija o ekonomskim nejednakostima. Kako se zvala ta prethodnica Monopola?",
+    "answers": [
+      "The Landlord's Game",
+      "Landlord's Game",
+      "Igra zemljoposjednika"
+    ],
+    "explanation": "Elizabeth Magie patentirala je The Landlord's Game početkom 20. stoljeća kako bi prikazala posljedice zemljišnog monopola. Ta je igra jedan od ključnih prethodnika kasnijeg Monopola.",
+    "sources": [
+      "https://www.history.com/articles/monopoly-game-inventor-elizabeth-magie"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0213-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "pariški teološki kolegij iz 1257 koji je dao ime Sorboni",
+    "difficulty": 2,
+    "styleId": 94,
+    "styleDescription": "Kreni od osnivanja ustanove i pitaj njezino današnje ime",
+    "question": "Pariški teološki kolegij koji je 1257. dobio kraljevsko priznanje s vremenom je ime dao jednom od najpoznatijih simbola francuskog visokog obrazovanja. Pod kojim ga imenom danas poznajemo?",
+    "answers": [
+      "Sorbona",
+      "Sorbonne",
+      "La Sorbonne"
+    ],
+    "explanation": "Kolegij koji je osnovao teolog Robert de Sorbon postao je poznat kao Sorbona. Njegovo se ime poslije povezalo s pariškom sveučilišnom tradicijom.",
+    "sources": [
+      "https://www.sorbonne-universite.fr/en/university/about-us/history"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0214-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "iluzija sluha kada pokreti usana mijenjaju čuti slog",
+    "difficulty": 4,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Na snimci usne oblikuju slog 'ga', a zvučnik reproducira 'ba'. Neki gledatelji ipak čuju 'da', iako taj slog nije u zvuku. Kako se zove ta iluzija spajanja vida i sluha?",
+    "answers": [
+      "McGurkov efekt",
+      "McGurk efekt",
+      "McGurk effect",
+      "McGurkova iluzija"
+    ],
+    "explanation": "McGurkov efekt pokazuje da percepcija govora uključuje i gledanje usana. Neusklađeni vidni i slušni signali mogu stvoriti doživljaj trećeg sloga.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/31264593/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4091305/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0215-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "naziv zemljanog mirisa nakon kiše skovan 1964",
+    "difficulty": 3,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Nakon prve kiše na suhom tlu širi se prepoznatljiv zemljani miris. Australski istraživači Isabel Joy Bear i Richard Thomas dali su mu 1964. poseban naziv. Koji?",
+    "answers": [
+      "Petrikor",
+      "Petrichor"
+    ],
+    "explanation": "Petrikor je naziv za karakterističan miris koji prati vlaženje prethodno suhog tla i stijena. Istraživači CSIRO-a Bear i Thomas uveli su taj pojam u radu objavljenom 1964.",
+    "sources": [
+      "https://www.csiro.au/en/news/All/Articles/2015/March/the-smell-of-rain-how-our-scientists-invented-a-new-word"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0216-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "klavijaturno glazbalo s metalnim pločicama u Orašaru",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Ima klavijaturu nalik klavirskoj, ali čekićići udaraju metalne pločice umjesto žica. Čajkovski je njegov zvonki zvuk istaknuo u Plesu šećerne vile iz Orašara. Koje je to glazbalo?",
+    "answers": [
+      "Čelesta",
+      "Celesta",
+      "Celeste"
+    ],
+    "explanation": "Čelesta je klavijaturno udaraljkaško glazbalo koje proizvodi ton udaranjem metalnih pločica. U Orašaru je Čajkovski njezin nježan zvuk upotrijebio za Ples šećerne vile.",
+    "sources": [
+      "https://www.brb.org.uk/stories/heavenly-tunes-of-the-nutcracker"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0217-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Videoigre",
+    "focus": "izvorni japanski podnaslov prve igre The Legend of Zelda",
+    "difficulty": 5,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Na japanskom pakiranju prve igre The Legend of Zelda iz 1986. stajao je dodatni fantazijski podnaslov koji se nije zadržao kao ime serijala. Kako je glasio?",
+    "answers": [
+      "The Hyrule Fantasy",
+      "Hyrule Fantasy"
+    ],
+    "explanation": "Prva The Legend of Zelda u Japanu je nosila i podnaslov The Hyrule Fantasy. Autori su razmišljali da se budući serijal zove tim imenom, ali se ustalio naslov The Legend of Zelda.",
+    "sources": [
+      "https://www.nintendo.com/en-gb/News/2016/November/Nintendo-Classic-Mini-NES-special-interview-Volume-4-The-Legend-of-Zelda-1160048.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0218-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "pasoliki astečki bog povezan s podzemljem i večernjom zvijezdom",
+    "difficulty": 5,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "U mitologiji naroda Mexica pasoliki bog povezuje se s putovanjem duša u podzemlje i s Venerom kao večernjom zvijezdom. Ime kojega božanstva tražimo?",
+    "answers": [
+      "Xolotl",
+      "Šolotl",
+      "Ksolotl"
+    ],
+    "explanation": "Xolotl je astečko božanstvo povezano sa smrću, psima i vođenjem duša kroz podzemlje. U nekim predajama povezuje se s večernjom zvijezdom i Quetzalcóatlovim blizanaštvom.",
+    "sources": [
+      "https://art.thewalters.org/object/2009.20.148/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0219-20261028",
+    "createdAt": "2026-10-28T09:48:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "cambridgeška prva web-kamera pratila aparat za kavu",
+    "difficulty": 2,
+    "styleId": 97,
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "question": "Prva web-kamera na Cambridgeu 1991. nije nastala radi nadzora prometa ni sigurnosti. Istraživači su samo željeli izbjeći bespotrebno hodanje do jednog uređaja kad je prazan. Kojeg?",
+    "answers": [
+      "Aparat za kavu",
+      "Aparat za filter kavu",
+      "Lonac za kavu",
+      "Posuda s kavom",
+      "Kuhalo za kavu",
+      "Coffee pot"
+    ],
+    "explanation": "U računalnom laboratoriju Sveučilišta u Cambridgeu kamera je pokazivala koliko kave ima u aparatu u prostoriji Trojan Room. Sustav je počeo raditi na lokalnoj mreži 1991. i postao rani primjer web-kamere.",
+    "sources": [
+      "https://www.cl.cam.ac.uk/news/2021/09-29-antiques-code-show/",
+      "https://www.cai.cam.ac.uk/news/caian-coffee-pot-and-webcam-award-winning-combination"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
