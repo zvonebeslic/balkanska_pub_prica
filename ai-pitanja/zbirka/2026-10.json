@@ -8285,5 +8285,610 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0335-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Saturnov tamni retrogradni mjesec Feba",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Cassini je 2004. izbliza snimio neobično taman Saturnov mjesec koji obilazi planet suprotno smjeru većine velikih satelita. Kako se taj mjesec zove?",
+    "answers": [
+      "Feba",
+      "Phoebe"
+    ],
+    "explanation": "Feba (Phoebe) jedan je od Saturnovih nepravilnih mjeseca. Njegova retrogradna orbita i tamna površina upućuju na mogućnost da je gravitacijski zarobljen objekt iz vanjskog dijela Sunčeva sustava.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/phoebe/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0336-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "crveni električni bljeskovi iznad oluja",
+    "difficulty": 4,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Iznad snažnih grmljavinskih oblaka kamere ponekad uhvate kratkotrajne crvenkaste bljeskove nalik meduzama, mnogo više od običnih munja. Kako se nazivaju ti atmosferski električni fenomeni?",
+    "answers": [
+      "Crveni spritovi",
+      "Spritovi",
+      "Sprites",
+      "Red sprites",
+      "Crveni spriteovi"
+    ],
+    "explanation": "Crveni spritovi vrsta su prolaznih svjetlosnih pojava visoko iznad grmljavinskih oblaka. Najčešće su povezani sa snažnim pozitivnim udarima munje prema tlu.",
+    "sources": [
+      "https://www.nssl.noaa.gov/education/svrwx101/lightning/types/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0337-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "egipatska ritualna zvečka božice Hator",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "U drevnim egipatskim obredima svećenici su tresli metalnim šipkama opremljeno glazbalo, često ukrašeno likom božice Hator. Kako se zvala ta ritualna zvečka?",
+    "answers": [
+      "Sistrum",
+      "Sistra",
+      "Sistr"
+    ],
+    "explanation": "Sistrum je udaraljkaško glazbalo koje proizvodi zveckanje pri tresenju. U egipatskoj je religiji bilo povezano s božicom Hator, zaštitnicom glazbe i radosti.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/553063"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0338-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "egipatska fajansa od kvarca",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Plavozelene egipatske figurice i amuleti često nisu izrađeni od obične gline: njihova jezgra pretežno je kvarcna, a površina sjajno glazirana. Kako se naziva taj drevni materijal?",
+    "answers": [
+      "Egipatska fajansa",
+      "Fajansa",
+      "Egyptian faience"
+    ],
+    "explanation": "Egipatska fajansa nastajala je od smjese bogate kvarcom, alkalnih soli i mineralnih bojila. Bakreni spojevi davali su joj karakterističnu tirkiznu glazuru.",
+    "sources": [
+      "https://www.metmuseum.org/ko/essays/egyptian-faience-technology-and-production"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0339-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "kapilarno podizanje vode kroz papir",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kada rub papirnatog ručnika dotakne vodu, vlaga se može penjati kroz njegova vlakna i protiv sile teže. Kako se naziva taj fizikalni učinak?",
+    "answers": [
+      "Kapilarnost",
+      "Kapilarno djelovanje",
+      "Kapilarni učinak",
+      "Kapilarni efekt"
+    ],
+    "explanation": "Kapilarnost nastaje zajedničkim djelovanjem prianjanja vode uz površine i međusobnog privlačenja molekula vode. Zbog toga se voda širi kroz uske pore papirnatog ručnika.",
+    "sources": [
+      "https://www.usgs.gov/water-science-school/science/capillary-action-and-water"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0340-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "vulkanski blatni tok lahar",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Erupcija može otopiti snijeg na vulkanu i pokrenuti razoran tok vode, blata i stijena niz riječne doline. Kojom se riječju indonezijskog podrijetla naziva takav tok?",
+    "answers": [
+      "Lahar",
+      "Lahari"
+    ],
+    "explanation": "Lahar je brz tok vulkanskog materijala pomiješanog s vodom. Može nastati tijekom erupcije, ali i nakon nje, primjerice kad obilne kiše isperu nestabilne naslage pepela.",
+    "sources": [
+      "https://www.usgs.gov/observatories/cvo/science/lahars-most-threatening-volcanic-hazard-cascades"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0341-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "grafička tehnika mezzotinta",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Graver može najprije ohrapaviti čitavu metalnu ploču tako da bi otisak bio gotovo crn, a zatim struganjem stvarati svjetlije tonove. Kako se naziva ta grafička tehnika?",
+    "answers": [
+      "Mezzotinta",
+      "Mezzotint",
+      "Mezotinta",
+      "Crna manira"
+    ],
+    "explanation": "Mezzotinta je tehnika dubokog tiska koja oblikuje sliku prijelazima svjetla i sjene. Za razliku od klasičnog linijskog bakropisa, polazi od hrapave, tamne površine ploče.",
+    "sources": [
+      "https://www.metmuseum.org/ja/essays/the-printed-image-in-the-west-mezzotint"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0342-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "Edmond Albius i ručno oprašivanje vanilije",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Na otoku Réunion 1841. dvanaestogodišnji porobljeni dječak otkrio je kako ručno oprašiti cvijet vanilije, što je omogućilo njezin masovniji uzgoj izvan Meksika. Kako se zvao?",
+    "answers": [
+      "Edmond Albius",
+      "Edmond",
+      "Albius"
+    ],
+    "explanation": "Edmond Albius razvio je postupak ručnog oprašivanja vanilije uklanjanjem prepreke između prašnika i njuške tučka. Njegova metoda omogućila je širenje plantažnog uzgoja vanilije.",
+    "sources": [
+      "https://www.smithsonianmag.com/travel/the-bittersweet-beginnings-of-vanilla-can-traced-back-far-flung-isle-reunion-180986580/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0343-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Kaprekarova konstanta za četveroznamenkaste brojeve",
+    "difficulty": 4,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Poredaj znamenke četveroznamenkastog broja silazno i uzlazno pa oduzmi manji od većeg. Ponavljanjem postupka, uz čuvanje vodećih nula, gotovo uvijek stižeš do istog broja. Kojeg?",
+    "answers": [
+      "6174",
+      "Šest tisuća sto sedamdeset četiri"
+    ],
+    "explanation": "Kaprekarova konstanta iznosi 6174. Za četveroznamenkasti početni broj čije znamenke nisu sve jednake postupak dolazi do nje u najviše sedam koraka, uz očuvanje četiriju znamenki.",
+    "sources": [
+      "https://mathworld.wolfram.com/KaprekarsConstant.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0344-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "olimpijske medalje za umjetnička djela",
+    "difficulty": 1,
+    "styleId": 82,
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "question": "Na Olimpijskim igrama u Stockholmu 1912. medalje nisu osvajali samo sportaši: dodjeljivale su se i za arhitekturu, književnost, glazbu, slikarstvo te koju još umjetnost?",
+    "answers": [
+      "Kiparstvo",
+      "Skulptura",
+      "Skulpturu",
+      "Kiparstvu"
+    ],
+    "explanation": "Olimpijska umjetnička natjecanja prvi su put održana 1912. u pet disciplina, uključujući kiparstvo. Medalje za umjetnička djela dodjeljivale su se sve do Igara 1948.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/a-meeting-of-muscles-and-minds"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0345-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "vođa Taipinškog ustanka Hong Xiuquan",
+    "difficulty": 5,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Kineski učitelj koji je sebe smatrao Isusovim mlađim bratom 1851. proglasio je Nebesko kraljevstvo velikog mira i poveo jedan od najkrvavijih ustanaka 19. stoljeća. Kako se zvao?",
+    "answers": [
+      "Hong Xiuquan",
+      "Hung Hsiu-Ch’üan",
+      "Hung Hsiu-Chuan",
+      "Hong Siučuan"
+    ],
+    "explanation": "Hong Xiuquan bio je vjerski vođa Taipinškog ustanka protiv dinastije Qing. Njegovo Nebesko kraljevstvo velikog mira sa središtem u Nanjingu propalo je 1864.",
+    "sources": [
+      "https://enciklopedija.hr/clanak/hung-hsiu-chuan"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0346-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "palimpsest kao ponovno iskorišten rukopis",
+    "difficulty": 4,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Na starom pergamentu ili drugoj podlozi jedan se zapis katkad briše kako bi se preko njega napisao novi, a tragovi prvoga ostaju vidljivi. Kako se naziva takav rukopis?",
+    "answers": [
+      "Palimpsest",
+      "Palimpsestus",
+      "Palimpsestni rukopis"
+    ],
+    "explanation": "Palimpsest je rukopisna podloga koja je ponovno iskorištena za pisanje. Stariji tekst može ostati djelomično čitljiv, što takve predmete čini važnima za povijest pisma i književnosti.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/Y_EA65933"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0347-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ljepota",
+    "focus": "košenila kao izvor crvenog pigmenta",
+    "difficulty": 2,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Crvena boja koja se povijesno koristila i u kozmetici dobivala se od sitnih kukaca, među njima i vrste s područja Ararata. Kako se naziva taj izvor karminskog pigmenta?",
+    "answers": [
+      "Košenila",
+      "Cochineal",
+      "Košenil",
+      "Košenilja"
+    ],
+    "explanation": "Košenila je naziv za kukce iz kojih se dobivaju crvena bojila, uključujući karminske pigmente. Armenska košenila Porphyrophora hamelii povijesno se koristila na području Araratske nizine.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/W_2016-6046-1-1"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0348-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Laennec i izum stetoskopa",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Francuski liječnik René Laennec 1816. smotao je papir u cijev kako bi mogao slušati otkucaje srca bez prislanjanja uha na pacijentova prsa. Koji je medicinski instrument tako nastao?",
+    "answers": [
+      "Stetoskop",
+      "Stethoscope"
+    ],
+    "explanation": "Laennec je prvo koristio smotani papir, a zatim razvio drveni monauralni stetoskop. Izum je promijenio način liječničkog osluškivanja srca i pluća.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_1416429"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0349-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "hipoksija i morske mrtve zone",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Kad se u priobalju namnože alge, njihovo razlaganje može potrošiti toliko kisika da ribe napuste područje i nastane takozvana mrtva zona. Kako se stručno naziva manjak kisika u vodi?",
+    "answers": [
+      "Hipoksija",
+      "Hypoxia"
+    ],
+    "explanation": "Hipoksija označava smanjenu količinu otopljenog kisika u vodi. U morima se često javlja nakon pretjeranog dotoka hranjivih tvari i razgradnje velikih količina algi.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/deadzone.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0350-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "apokaliptični roman Posljednji čovjek iz 1826.",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "U romanu Posljednji čovjek iz 1826. globalna pošast gotovo uništava čovječanstvo, a napisala ga je autorica koja je prethodno stvorila Frankensteina. Kako se zvala?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley",
+      "Meri Šeli",
+      "Shelley"
+    ],
+    "explanation": "Mary Shelley objavila je roman The Last Man 1826. godine. Djelo zamišlja budućnost opustošenu pandemijom i pripada ranim primjerima apokaliptične književnosti.",
+    "sources": [
+      "https://exhibitions.library.vanderbilt.edu/scifi/item/the-last-man/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0351-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "Zajoncov efekt pukog izlaganja",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Čak i bez novih informacija o nekom neutralnom simbolu, ljudi ga nakon više susreta često počnu više voljeti. Kako se naziva psihološki učinak koji je proučavao Robert Zajonc?",
+    "answers": [
+      "Efekt pukog izlaganja",
+      "Učinak pukog izlaganja",
+      "Mere-exposure effect",
+      "Efekt samog izlaganja"
+    ],
+    "explanation": "Efekt pukog izlaganja opisuje porast sklonosti prema podražaju nakon ponavljanog susreta s njime. Robert Zajonc pokazao je da se taj učinak može javiti i bez svjesnog prepoznavanja podražaja.",
+    "sources": [
+      "https://dictionary.apa.org/mere-exposure-effect"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0352-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "australski dugometražni film o Nedu Kellyju iz 1906.",
+    "difficulty": 4,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Dok su se početkom 20. stoljeća filmovi uglavnom mjerili minutama, australski naslov iz 1906. trajao je više od sata i pratio odmetnika Neda Kellyja. Kako glasi njegov izvorni naslov?",
+    "answers": [
+      "The Story of the Kelly Gang",
+      "Story of the Kelly Gang",
+      "Priča o Kellyjevoj bandi",
+      "Priča o bandi Kelly"
+    ],
+    "explanation": "The Story of the Kelly Gang iz 1906. često se smatra prvim dugometražnim igranim filmom. Snimljen je u Australiji, a danas su sačuvani samo dijelovi izvornog filma.",
+    "sources": [
+      "https://www.acmi.net.au/works/100581--the-story-of-the-kelly-gang/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0353-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "tokijski Nakagin Capsule Tower iz 1972.",
+    "difficulty": 5,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U Tokiju je 1972. dovršena zgrada Kisha Kurokawe sastavljena od dvaju tornjeva na koje je pričvršćeno 140 zamjenjivih stambenih modula. Kako se zvala ta ikona metabolističke arhitekture?",
+    "answers": [
+      "Nakagin Capsule Tower",
+      "Nakagin",
+      "Nakagin Kapuseru Tawa",
+      "Toranj Nakagin"
+    ],
+    "explanation": "Nakagin Capsule Tower bio je jedan od najpoznatijih primjera japanskog arhitektonskog metabolizma. Modularne kapsule bile su zamišljene za zamjenu, ali ta se zamisao nije ostvarila prije rušenja tornja 2022.",
+    "sources": [
+      "https://mobile-api.moma.org/artists/6967-kisho-kurokawa"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0354-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "apostille ovjera javnih isprava za inozemstvo",
+    "difficulty": 3,
+    "styleId": 78,
+    "styleDescription": "Opiši neobičan zakon ili propis i traži državu",
+    "question": "Prema Haškoj konvenciji iz 1961. međunarodna uporaba određenih javnih isprava pojednostavnjena je posebnom potvrdom umjesto dugog postupka diplomatske legalizacije. Kako se zove ta potvrda?",
+    "answers": [
+      "Apostille",
+      "Apostil",
+      "Apostila",
+      "Apostille potvrda"
+    ],
+    "explanation": "Apostille je standardizirana potvrda o vjerodostojnosti potpisa, pečata ili svojstva potpisnika javne isprave. Predviđena je Haškom konvencijom od 5. listopada 1961.",
+    "sources": [
+      "https://www.hcch.net/en/instruments/conventions/specialised-sections/apostille/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0355-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Brendovi",
+    "focus": "George Eastman i izmišljeno ime Kodak",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "George Eastman želio je naziv svoje fotografske marke koji počinje i završava slovom K, pa je 1888. registrirao riječ koju je sam izmislio. Koju?",
+    "answers": [
+      "Kodak"
+    ],
+    "explanation": "Naziv Kodak nije nastao od starije riječi ni kratice. George Eastman sam ga je oblikovao jer mu se slovo K činilo snažnim i upečatljivim.",
+    "sources": [
+      "https://www.kodak.com/en/company/page/george-eastman-history/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0356-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Metcalfeovo imenovanje Etherneta",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Dok je 1973. u Xeroxovu istraživačkom centru razvijao način umrežavanja računala, Bob Metcalfe nazvao je tehnologiju prema nekadašnjem zamišljenom mediju za širenje svjetlosti. Kako se ona zove?",
+    "answers": [
+      "Ethernet",
+      "Eternet"
+    ],
+    "explanation": "Bob Metcalfe u memorandumu iz svibnja 1973. upotrijebio je naziv Ethernet. Aludirao je na nekadašnji pojam etera kao sveprisutnog medija, a s Davidom Boggsom razvio je mrežnu tehnologiju.",
+    "sources": [
+      "https://www.computerhistory.org/revolution/networking/19/381"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0357-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "Mary Anning i fosili ihtiosaura",
+    "difficulty": 1,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Na engleskoj obali kod Lyme Regisa početkom 19. stoljeća jedna je sakupljačica fosila pronalazila ostatke ihtiosaura i drugih izumrlih životinja. Kako se zvala ta pionirka paleontologije?",
+    "answers": [
+      "Mary Anning",
+      "Meri Aning",
+      "Anning"
+    ],
+    "explanation": "Mary Anning bila je važna istraživačica fosila iz Lyme Regisa. Njezini nalazi ihtiosaura pomogli su razvoju ranog znanstvenog razumijevanja izumrlih morskih gmazova.",
+    "sources": [
+      "https://makingscience.royalsociety.org/items/pt_73_8_16"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0358-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Sunčeva korona toplija od fotosfere",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Vidljiva Sunčeva površina ima oko 5500 °C, ali njegov vanjski atmosferski sloj doseže i milijune stupnjeva. Kako se naziva taj neobično vrući sloj?",
+    "answers": [
+      "Korona",
+      "Sunčeva korona",
+      "Corona"
+    ],
+    "explanation": "Sunčeva korona vanjski je sloj Sunčeve atmosfere. Premda je udaljenija od jezgre od fotosfere, temperatura joj može doseći oko dva milijuna stupnjeva Celzija.",
+    "sources": [
+      "https://science.nasa.gov/sun/facts/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0359-20261028",
+    "createdAt": "2026-10-28T15:47:47.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "gejzerit taložen iz termalne vode",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Oko vrućih izvora i gejzira iz vode se pri hlađenju taloži silicijev dioksid, gradeći svijetle tvrde naslage i terase. Kako se naziva taj karakteristični talog?",
+    "answers": [
+      "Gejzerit",
+      "Geyserite",
+      "Silicijski sinter",
+      "Silicijski tuf"
+    ],
+    "explanation": "Gejzerit je silicijski sinter koji se izlučuje iz vode gejzira i vrućih izvora. U početku često sadrži amorfni silicijev dioksid sličan opalu.",
+    "sources": [
+      "https://www.usgs.gov/news/geysers-what-exactly-are-they-made"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
