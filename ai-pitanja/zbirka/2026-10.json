@@ -14372,5 +14372,595 @@
     "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
     "image": null,
     "updatedAt": null
+  },
+  {
+    "topic": "Astronomija",
+    "focus": "nebeski disk iz Nebre i brončanodobni prikazi neba",
+    "difficulty": 4,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Na brončanom disku starom oko 3600 godina zlatnim su umetcima prikazani nebeski motivi. Pronađen je u njemačkoj Saskoj-Anhaltu, a ime nosi po obližnjem gradu. Kako se zove taj znameniti arheološki nalaz?",
+    "answers": [
+      "Nebeski disk iz Nebre",
+      "Disk iz Nebre",
+      "Nebra Sky Disc",
+      "Nebrinski nebeski disk"
+    ],
+    "explanation": "Brončani nebeski disk iz Nebre zakopan je prije približno 3600 godina blizu grada Nebre. Zlatni motivi svjedoče o brončanodobnom poznavanju nebeskih pojava.",
+    "sources": [
+      "https://www.unesco.org/es/memory-world/nebra-sky-disc"
+    ],
+    "id": "chatgpt1000-0593-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Povijest",
+    "focus": "anglosaksonski brodski ukop otkriven 1939. u Suffolku",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Godine 1939. Basil Brown u engleskom Suffolku otkrio je tragove velikog broda zakopanog pod humkom. U grobnoj komori pronađeni su raskošni anglosaksonski predmeti, među njima i glasovita kaciga. Kako se zove to nalazište?",
+    "answers": [
+      "Sutton Hoo"
+    ],
+    "explanation": "Sutton Hoo je anglosaksonsko groblje s brodskim ukopom. Basil Brown 1939. otkrio je grobnu komoru, a nalazi uključuju prepoznatljivu kacigu i brojne dragocjenosti.",
+    "sources": [
+      "https://www.nationaltrust.org.uk/visit/suffolk/sutton-hoo/history-of-archaeology-at-sutton-hoo"
+    ],
+    "id": "chatgpt1000-0594-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Arhitektura",
+    "focus": "Rani-ki-Vav kao indijski stepenasti zdenac i obrnuti hram",
+    "difficulty": 5,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U indijskom Patanu pod zemlju se spušta građevina iz 11. stoljeća, zamišljena kao obrnuti hram posvećen vodi. Ima sedam razina stuba i stotine isklesanih likova. Kako se zove taj znameniti stepenasti zdenac?",
+    "answers": [
+      "Rani-ki-Vav",
+      "Rani ki Vav",
+      "Raniki Vav"
+    ],
+    "explanation": "Rani-ki-Vav u Gujaratu izgrađen je kao monumentalni stepenasti zdenac i spomenik vladaru. UNESCO ističe sedam razina i bogatu skulpturalnu dekoraciju.",
+    "sources": [
+      "https://whc.unesco.org/en/list/922"
+    ],
+    "id": "chatgpt1000-0595-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Zemljopis",
+    "focus": "Sigiriya i kraljevska citadela na Lavljem kamenu",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Usred šrilankanske džungle uzdiže se stijena visoka oko 180 metara, s ostacima kraljevske prijestolnice iz 5. stoljeća. Do vrha su nekoć vodile stube kroz golema lavlja vrata. Kako se zove to mjesto?",
+    "answers": [
+      "Sigiriya",
+      "Sigirija"
+    ],
+    "explanation": "Sigiriya je stjenovita citadela na Šri Lanki, povezana s kraljem Kassapom I. Poznata je kao Lavlja stijena, a nalazi se na UNESCO-ovu popisu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/202"
+    ],
+    "id": "chatgpt1000-0596-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Likovna umjetnost",
+    "focus": "budističke zidne slike u špiljama Ajanta",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Na zidovima špilja u indijskoj Maharashtri sačuvane su budističke slike i skulpture, nastajale od posljednjih stoljeća prije Krista do razdoblja Gupta. Kako se zove taj špiljski kompleks?",
+    "answers": [
+      "Ajanta",
+      "Špilje Ajanta",
+      "Adžanta"
+    ],
+    "explanation": "Špilje Ajanta čuvaju budističke zidne slike i skulpture iz više razdoblja. UNESCO ih smatra važnim remek-djelima budističke umjetnosti.",
+    "sources": [
+      "https://whc.unesco.org/en/list/242"
+    ],
+    "id": "chatgpt1000-0597-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Rijetke teme",
+    "focus": "Newgrange i osvjetljavanje grobne komore za zimskog suncostaja",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Irska, grobnica s dugim hodnikom i jutro oko 21. prosinca: kroz mali otvor iznad ulaza Sunčeva svjetlost tada prodire sve do unutarnje komore. Kako se zove taj prapovijesni spomenik?",
+    "answers": [
+      "Newgrange",
+      "Nju Grejndž",
+      "Nju Grejndz"
+    ],
+    "explanation": "Newgrange u irskom kompleksu Brú na Bóinne ima otvor iznad ulaza koji pri izlasku Sunca oko zimskog suncostaja propušta svjetlost u grobnu komoru.",
+    "sources": [
+      "https://heritageireland.ie/visit/https-heritageireland-ie-winter-solstice/"
+    ],
+    "id": "chatgpt1000-0598-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Obrazovanje",
+    "focus": "Skara Brae kao neolitičko naselje u Orkneyima",
+    "difficulty": 4,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Dok su u Egiptu tek nastajale velike piramide, na škotskim Orkneyima već je postojalo naselje čiji su kameni ostaci danas dio UNESCO-ove baštine zajedno s Maeshoweom i Brodgarom. Kako se zove to naselje?",
+    "answers": [
+      "Skara Brae",
+      "Skara Brej"
+    ],
+    "explanation": "Skara Brae je neolitičko naselje u Orkneyima. Zajedno s Maeshoweom i megalitskim krugovima dio je lokaliteta Heart of Neolithic Orkney.",
+    "sources": [
+      "https://whc.unesco.org/en/list/514"
+    ],
+    "id": "chatgpt1000-0599-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Priroda",
+    "focus": "oslobađanje ugljikova dioksida iz kamerunskog jezera Nyos 1986.",
+    "difficulty": 4,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "U Kamerunu je 1986. iz kraterskog jezera naglo izbio oblak ugljikova dioksida koji je ugušio gotovo 1800 ljudi u okolnim dolinama. Kako se zove jezero povezano s tom rijetkom prirodnom katastrofom?",
+    "answers": [
+      "Nyos",
+      "Jezero Nyos",
+      "Nios"
+    ],
+    "explanation": "Jezero Nyos 21. kolovoza 1986. oslobodilo je velik oblak CO₂. Teži od zraka, plin se spustio u okolne doline i izazvao masovno gušenje.",
+    "sources": [
+      "https://science.nasa.gov/earth/earth-observatory/lake-nyos-cameroon-86244/"
+    ],
+    "id": "chatgpt1000-0600-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "saola kao rijetko govedo otkriveno u Vijetnamu 1992.",
+    "difficulty": 5,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Znanstvenici su 1992. u šumama uz granicu Vijetnama i Laosa otkrili dotad nepoznatog velikog sisavca iz porodice šupljorožaca. Zbog iznimne rijetkosti prozvan je i azijskim jednorogom. Kako se zove?",
+    "answers": [
+      "Saola",
+      "Pseudoryx nghetinhensis"
+    ],
+    "explanation": "Saola je iznimno rijedak šumski sisavac otkriven 1992. u Vijetnamu. Pripada porodici šupljorožaca i živi na području Anamitskog gorja.",
+    "sources": [
+      "https://www.wwf.or.jp/eng/activities/1665.html",
+      "https://www.wwf.de/themen-projekte/artenlexikon/saola"
+    ],
+    "id": "chatgpt1000-0601-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Biologija",
+    "focus": "tuatara kao jedini živući predstavnik reda Rhynchocephalia",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Izgleda poput guštera, ali nije gušter: novozelandski gmaz posljednji je živući predstavnik drevnog reda Rhynchocephalia. Kako se zove ta životinja?",
+    "answers": [
+      "Tuatara",
+      "Tuatara gušter",
+      "Sphenodon"
+    ],
+    "explanation": "Tuatara je endemski novozelandski gmaz, jedini preživjeli predstavnik reda Rhynchocephalia, evolucijski odvojenog od pravih guštera.",
+    "sources": [
+      "https://www.doc.govt.nz/nature/native-animals/reptiles-and-frogs/tuatara"
+    ],
+    "id": "chatgpt1000-0602-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "aye-aye lemur i dodatni pseudo-palac",
+    "difficulty": 4,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Madagaskarski noćni primat poznat je po neobično izduženom srednjem prstu, a istraživači su mu otkrili i dodatni mali 'palac' za hvatanje grana. Koji je to lemur?",
+    "answers": [
+      "Aye-aye",
+      "Aye aye",
+      "Aj-aj",
+      "Daubentonia madagascariensis"
+    ],
+    "explanation": "Aye-aye ima izrazito izdužen srednji prst i dodatni pseudo-palac. Ta posebnost njegove šake opisana je u istraživanju objavljenom 2019.",
+    "sources": [
+      "https://www.smithsonianmag.com/science-nature/extra-thumb-discovered-aye-aye-lemurs-giving-these-primates-six-fingers-180973379/"
+    ],
+    "id": "chatgpt1000-0603-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "arktička čigra i seoba između polova",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Jedna morska ptica tijekom godišnje selidbe putuje od arktičkih područja do voda uz Antarktiku i natrag, a pojedine praćene jedinke prelete desetke tisuća kilometara. Kako se zove ta ptica?",
+    "answers": [
+      "Arktička čigra",
+      "Polarna čigra",
+      "Sterna paradisaea",
+      "Arctic tern"
+    ],
+    "explanation": "Arktička čigra poznata je po iznimno dugoj seobi između sjevernih gnijezdilišta i antarktičkih mora. Praćene jedinke prevalile su gotovo 96.000 kilometara u jednoj godini.",
+    "sources": [
+      "https://www.audubon.org/news/how-tern-broke-record-longest-known-migration"
+    ],
+    "id": "chatgpt1000-0604-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "pansori kao korejsko pripovijedanje pjevača uz bubanj",
+    "difficulty": 5,
+    "styleId": 96,
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "question": "Jedan glas izmjenjuje pjevanje, govor i glumu, dok ga prati samo bubnjar; cijela izvedba može trajati satima. Kako se zove korejska tradicija epskog glazbenog pripovijedanja?",
+    "answers": [
+      "Pansori",
+      "Pan-sori"
+    ],
+    "explanation": "Pansori je korejski žanr u kojem pjevač pripovijeda i glumi uz pratnju jednog bubnjara. UNESCO ga je uvrstio u nematerijalnu kulturnu baštinu.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/pansori-epic-chant-00070"
+    ],
+    "id": "chatgpt1000-0605-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Pop kultura",
+    "focus": "talchum kao korejsko maskirano plesno kazalište",
+    "difficulty": 5,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Maskirani izvođači kroz ples, glazbu i dijalog ismijavaju društvenu hijerarhiju, a publika sudjeluje povicima i reakcijama. Kako se zove ta korejska kazališna tradicija?",
+    "answers": [
+      "Talchum",
+      "Talčum"
+    ],
+    "explanation": "Talchum je korejska tradicija maskiranoga plesnog kazališta s društvenom satirom i aktivnim sudjelovanjem publike, na UNESCO-ovu popisu od 2022.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/talchum-mask-dance-drama-in-the-republic-of-korea-01742"
+    ],
+    "id": "chatgpt1000-0606-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "bećarac i nadmetanje desetercima uz tamburaše",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Za razliku od dalmatinskog klapskog višeglasja, u slavonskoj se tradiciji pjevači nadmeću dosjetljivim desetercima uz tamburaše. Kako se zove taj glazbeni oblik?",
+    "answers": [
+      "Bećarac",
+      "Becarac"
+    ],
+    "explanation": "Bećarac je tradicijsko pjevanje istočne Hrvatske, osobito Slavonije, Baranje i Srijema, u kojem se izvođači nadmeću stihovima uz tamburašku pratnju.",
+    "sources": [
+      "https://ich.unesco.org/en/rl/bearac-singing-and-playing-from-eastern-croatia-00358"
+    ],
+    "id": "chatgpt1000-0607-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Zanati",
+    "focus": "licitarsko srce kao tradicijski ukrašeni medenjak",
+    "difficulty": 1,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "U sjevernoj Hrvatskoj obojeni se medenjaci ukrašavaju porukama i malenim zrcalcima, a najpoznatiji oblik daruje se kao znak ljubavi. Kako se zove taj ukrašeni medenjak?",
+    "answers": [
+      "Licitar",
+      "Licitarsko srce",
+      "Licitarska srca"
+    ],
+    "explanation": "Licitar je ukrašeni medenjak sjeverne Hrvatske. Izrada licitara od 2010. nalazi se na UNESCO-ovu popisu nematerijalne kulturne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/gingerbread-craft-from-northern-croatia-00356"
+    ],
+    "id": "chatgpt1000-0608-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "sardinski canto a tenore s četiri tradicionalna glasa",
+    "difficulty": 5,
+    "styleId": 85,
+    "styleDescription": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla",
+    "question": "Na Sardiniji četiri muškarca pjevaju u tijesnom krugu, a glasovi se nazivaju boche, mesu boche, contra i bassu. Kako se zove ta tradicija višeglasnog pjevanja?",
+    "answers": [
+      "Canto a tenore",
+      "Cantu a tenore",
+      "Cantu a tenòre"
+    ],
+    "explanation": "Canto a tenore je sardinska pastoralna tradicija četveroglasnog pjevanja s karakterističnim dubokim grlenim glasovima.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/canto-a-tenore-sardinian-pastoral-culture-00165"
+    ],
+    "id": "chatgpt1000-0609-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Književnost",
+    "focus": "Manas kao prvi junak kirgiske epske trilogije",
+    "difficulty": 4,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Kirgiska epska trilogija prati tri naraštaja junaka: drugi je Semetej, a treći Sejtek. Kako se zove prvi junak, čije ime nosi i najpoznatiji dio te usmene tradicije?",
+    "answers": [
+      "Manas"
+    ],
+    "explanation": "Manas, Semetey i Seytek čine kirgisku epsku trilogiju, koju prenose usmeni pripovjedači. Prvi i središnji junak zove se Manas.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/kyrgyz-epic-trilogy-manas-semetey-seytek-00876"
+    ],
+    "id": "chatgpt1000-0610-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Arhitektura",
+    "focus": "Mont-Saint-Michel kao benediktinska opatija na plimnom otočiću",
+    "difficulty": 1,
+    "styleId": 77,
+    "styleDescription": "Opiši način gradnje i pitaj arhitektonski stil",
+    "question": "Na stjenovitom otočiću između Normandije i Bretanje uzdiže se srednjovjekovna benediktinska opatija okružena golemim plimnim plićacima. Kako se zove to francusko mjesto?",
+    "answers": [
+      "Mont-Saint-Michel",
+      "Mont Saint Michel"
+    ],
+    "explanation": "Mont-Saint-Michel je otočić s benediktinskom opatijom posvećenom arkanđelu Mihaelu, na području snažnih morskih mijena.",
+    "sources": [
+      "https://whc.unesco.org/fr/list/80"
+    ],
+    "id": "chatgpt1000-0611-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Inženjerstvo",
+    "focus": "prapovijesne alpske sojenice na drvenim stupovima",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Na obalama alpskih jezera prapovijesne su zajednice gradile nastambe na stupovima kako bi se prilagodile vlažnom i poplavnom tlu. Kojim se hrvatskim nazivom obično zovu takve kuće?",
+    "answers": [
+      "Sojenice",
+      "Kuće na sojenicama",
+      "Kuće na stupovima"
+    ],
+    "explanation": "Sojenice su nastambe podignute na stupovima. UNESCO štiti skupinu od 111 prapovijesnih nalazišta takvih naselja oko Alpa.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1363/"
+    ],
+    "id": "chatgpt1000-0612-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Književnost",
+    "focus": "Sonnets from the Portuguese Elizabeth Barrett Browning",
+    "difficulty": 3,
+    "styleId": 55,
+    "styleDescription": "Kreni od pogrešnog književnog autorstva i traži pravog autora",
+    "question": "Naslov 'Soneti s portugalskoga' zvuči kao zbirka prijevoda, no pjesme su zapravo nastale iz tajne ljubavne veze dvoje engleskih pjesnika i objavljene su 1850. Tko ih je napisao?",
+    "answers": [
+      "Elizabeth Barrett Browning",
+      "Elizabeth Barrett",
+      "Elizabet Baret Brauning"
+    ],
+    "explanation": "Elizabeth Barrett Browning napisala je Sonete s portugalskoga tijekom udvaranja Roberta Browninga. Naslov je sugerirao prijevod, iako su pjesme bile izvorne.",
+    "sources": [
+      "https://www.poetryfoundation.org/poets/elizabeth-barrett-browning"
+    ],
+    "id": "chatgpt1000-0613-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Sport",
+    "focus": "konjaničko natjecanje gađanja alke u Sinju",
+    "difficulty": 1,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U kojem se hrvatskom gradu već stoljećima održava viteško natjecanje u kojem konjanici u galopu kopljem gađaju viseći željezni prsten?",
+    "answers": [
+      "Sinj",
+      "Sinju"
+    ],
+    "explanation": "Sinjska alka je tradicionalno viteško konjaničko natjecanje u Sinju, nastalo 1715. i povezano s lokalnom poviješću.",
+    "sources": [
+      "https://ich.unesco.org/en/patronage-reporting-00493"
+    ],
+    "id": "chatgpt1000-0614-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Gastronomija",
+    "focus": "washoku kao japanska tradicijska kultura prehrane",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Za novogodišnji stol pripremaju se simbolična jela od riže, ribe i povrća, a UNESCO je tu tradiciju prehrane poznatu kao washoku uvrstio na svoj popis 2013. Uz koju je državu vezana?",
+    "answers": [
+      "Japan",
+      "Japana"
+    ],
+    "explanation": "Washoku je japanska tradicijska kultura prehrane, osobito vidljiva u novogodišnjim obrocima i poštovanju sezonskih namirnica.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/washoku-traditional-dietary-cultures-of-the-Japanese-in-particular-for-the-celebration-of-New-Year-00869"
+    ],
+    "id": "chatgpt1000-0615-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "armenski duduk izrađen od mareličina drva",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Tijelo ovog armenskog puhačkog glazbala najčešće je od mareličina drva, a njegov dvostruki jezičak stvara topao, pomalo nazalan ton. Kako se zove?",
+    "answers": [
+      "Duduk",
+      "Armenski duduk"
+    ],
+    "explanation": "Duduk je armensko puhačko glazbalo s dvostrukim jezičkom, tradicionalno izrađeno od mareličina drva. UNESCO štiti njegovu glazbenu tradiciju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/duduk-and-its-music-00092"
+    ],
+    "id": "chatgpt1000-0616-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Religije i mitologije",
+    "focus": "meksički ritual Voladores i spuštanje s visokog stupa",
+    "difficulty": 3,
+    "styleId": 93,
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "question": "Četvorica sudionika vezana konopima kruže i polako se spuštaju s visokog stupa, dok peti na vrhu svira flautu i bubanj. Kako se naziva taj meksički obred povezan s plodnošću i četiri strane svijeta?",
+    "answers": [
+      "Voladores",
+      "Ritual Voladores",
+      "Danza de los Voladores"
+    ],
+    "explanation": "Ritual Voladores posebno je povezan s narodom Totonac u Meksiku. Četvorica se spuštaju na konopima, a peti izvodi glazbenu zazivnu pratnju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/ritual-ceremony-of-the-voladores-00175"
+    ],
+    "id": "chatgpt1000-0617-20261029",
+    "createdAt": "2026-10-29T01:51:01.705Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
   }
 ]
