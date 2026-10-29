@@ -17397,5 +17397,619 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0718-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "promjena boje jezera Hillier na otoku Middle Island",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na australskom otoku Middle Island nalazi se jezero nekoć poznato po jarkoružičastoj vodi, čija je boja izblijedjela nakon obilnih kiša 2022. Kako se zove?",
+    "answers": [
+      "Hillier",
+      "Jezero Hillier",
+      "Lake Hillier"
+    ],
+    "explanation": "Jezero Hillier u Zapadnoj Australiji desetljećima je bilo poznato po ružičastoj vodi, no promjene slanosti nakon kiša 2022. privremeno su mu promijenile izgled.",
+    "sources": [
+      "https://www.westernaustralia.com/au/plan-my-trip/planning-tools/travel-stories/the-amazing-pink-lakes-of-western-australia"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0719-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "naprezanja u staklenim kapima princa Ruperta",
+    "difficulty": 4,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Zadebljani dio ove staklene kapi može podnijeti snažan udarac, ali lom njezina tankog repa izaziva naglo rasprskavanje. Po kojem je princu dobila ime?",
+    "answers": [
+      "Rupert",
+      "Princ Rupert",
+      "Princ Rupert od Rajne",
+      "Prince Rupert"
+    ],
+    "explanation": "Kap princa Ruperta nastaje naglim hlađenjem rastaljenog stakla. Tlačna naprezanja štite njezinu glavu, dok lom repa oslobađa unutarnja naprezanja.",
+    "sources": [
+      "https://doi.org/10.1073/pnas.2202856119"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0720-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "teorem o četiri boje i bojenje karata",
+    "difficulty": 4,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Godine 1976. računalno je potkrijepljen dokaz da se svaka ravninska karta može obojiti tako da susjedne države ne dijele boju. Koliko je različitih boja uvijek dovoljno?",
+    "answers": [
+      "4",
+      "Četiri",
+      "4 boje",
+      "Četiri boje"
+    ],
+    "explanation": "Teorem o četiri boje dokazuje da su za svaku ravninsku kartu dovoljne najviše četiri boje ako područja sa zajedničkim rubom moraju biti različito obojena. Dokaz su dali Kenneth Appel i Wolfgang Haken.",
+    "sources": [
+      "https://doi.org/10.1090/noti2781"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0721-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Santiago Ramón y Cajal i neuronska teorija",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Nobelovu nagradu za medicinu 1906. podijelio je s Camillom Golgijem, a svojim detaljnim crtežima živčanih stanica pomogao je utemeljiti neuronsku teoriju. Koji je to španjolski znanstvenik?",
+    "answers": [
+      "Santiago Ramón y Cajal",
+      "Santiago Ramon y Cajal",
+      "Ramón y Cajal",
+      "Ramon y Cajal",
+      "Cajal"
+    ],
+    "explanation": "Santiago Ramón y Cajal proučavao je strukturu živčanog sustava i pokazao važnost pojedinačnih neurona; s Golgijem je podijelio Nobelovu nagradu 1906.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/1906/cajal/article/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0722-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Moshe Safdie i stambeni kompleks Habitat 67",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Stambeni kompleks Habitat 67 u Montrealu izgleda kao gomila betonskih kocki s terasama, a proslavio se na svjetskoj izložbi 1967. Tko ga je projektirao?",
+    "answers": [
+      "Moshe Safdie",
+      "Safdie",
+      "Moše Safdi",
+      "Moše Safdie"
+    ],
+    "explanation": "Moshe Safdie osmislio je Habitat 67 kao modularni stambeni kompleks za Expo 67 u Montrealu, nadovezujući se na svoj studentski projekt.",
+    "sources": [
+      "https://www.mtl.org/en/experience/revolutionary-montreal-icon-habitat-67"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0723-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "japanska Priča o rezaču bambusa i princeza Kaguya",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Starac u svjetlećoj stabljici bambusa nalazi sićušnu djevojčicu koja odraste u princezu Kaguyu i na kraju se vrati na Mjesec. Kako se zove stara japanska priča o njezinu pronalasku?",
+    "answers": [
+      "Priča o rezaču bambusa",
+      "Pripovijest o rezaču bambusa",
+      "Taketori monogatari",
+      "Taketori Monogatari",
+      "The Tale of the Bamboo Cutter"
+    ],
+    "explanation": "Taketori monogatari, odnosno Priča o rezaču bambusa, rano je japansko prozno djelo o princezi Kaguyi, koju rezač bambusa pronalazi u svjetlećoj stabljici.",
+    "sources": [
+      "https://www.loc.gov/item/2021667427/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0724-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Mars u Holstovoj orkestralnoj sviti Planeti",
+    "difficulty": 1,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "U Holstovoj orkestralnoj sviti Planeti jedan stavak nosi podnaslov 'Donositelj rata', dok je Venera 'Donositeljica mira'. Kojem je planetu pripisan rat?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Gustav Holst u sviti Planeti naslovio je prvi stavak Mars, donositelj rata, a drugi Venera, donositeljica mira.",
+    "sources": [
+      "https://lpo.org.uk/recording/holst-the-planets/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0725-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "nijemi znanstvenofantastični film Metropolis",
+    "difficulty": 2,
+    "styleId": 87,
+    "styleDescription": "Kreni od razlike originala i adaptacije pa traži naslov",
+    "question": "Fritz Lang je 1927. snimio nijemi film u kojem radnici žive duboko pod zemljom, dok bogati stanovnici uživaju u futurističkim neboderima. Kako se zove taj film?",
+    "answers": [
+      "Metropolis",
+      "Metropola"
+    ],
+    "explanation": "Metropolis (1927.) njemački je nijemi znanstvenofantastični film Fritza Langa o klasno podijeljenom futurističkom gradu.",
+    "sources": [
+      "https://player.bfi.org.uk/subscription/film/watch-metropolis-1927-online"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0726-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "Jim Henson i nastanak Muppeta",
+    "difficulty": 1,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Godine 1955. za kratku emisiju Sam and Friends izrađivao je lutke od tkanine, među kojima je bio i rani Kermit. Koji je američki lutkar kasnije proslavio Muppete?",
+    "answers": [
+      "Jim Henson",
+      "James Henson",
+      "Henson",
+      "Džim Henson"
+    ],
+    "explanation": "Jim Henson stvorio je Muppete i još 1955. u emisiji Sam and Friends predstavio ranu inačicu Kermita.",
+    "sources": [
+      "https://www.americanhistory.si.edu/explore/exhibitions/entertainment-nation/explore-online/muppets"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0727-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "Arijadnina nit i Tezejev izlazak iz labirinta",
+    "difficulty": 1,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Tezej je nakon pobjede nad Minotaurom uspio pronaći izlaz iz labirinta zahvaljujući klupku niti. Koja mu je kretska princeza dala tu nit?",
+    "answers": [
+      "Arijadna",
+      "Ariadna",
+      "Ariadne"
+    ],
+    "explanation": "Prema grčkom mitu, Arijadna je Tezeju dala nit kojom je označio put kroz labirint i nakon pobjede nad Minotaurom pronašao izlaz.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/245585"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0728-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Gail Halvorsen i slatkiši tijekom berlinske zračne opskrbe",
+    "difficulty": 4,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Tijekom berlinske blokade jedan je američki pilot djeci bacao čokolade na malenim padobranima, zbog čega je prozvan 'Candy Bomber'. Kako se prezivao?",
+    "answers": [
+      "Halvorsen",
+      "Gail Halvorsen",
+      "Gail Seymour Halvorsen"
+    ],
+    "explanation": "Pilot Gail Halvorsen 1948. počeo je tijekom berlinske zračne opskrbe bacati slatkiše na padobrančićima, pa je dobio nadimak Candy Bomber.",
+    "sources": [
+      "https://airandspace.si.edu/stories/editorial/friends-forever"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0729-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Banach-Tarskijev paradoks i udvostručavanje kugle",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "U jednom matematičkom paradoksu čvrsta se kugla rastavlja na konačno mnogo neobičnih skupova točaka koji se mogu presložiti u dvije jednako velike kugle. Čija dva prezimena nosi?",
+    "answers": [
+      "Banach-Tarski",
+      "Banach-Tarskijev paradoks",
+      "Banach Tarski",
+      "Banach i Tarski",
+      "Banač-Tarski"
+    ],
+    "explanation": "Banach-Tarskijev paradoks matematički je rezultat koji se oslanja na aksiom izbora. Njegovi dijelovi nisu obični fizički komadi s mjerljivim volumenom.",
+    "sources": [
+      "https://mathworld.wolfram.com/Banach-TarskiParadox.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0730-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Florence Nightingale i dijagram uzroka smrtnosti u Krimskom ratu",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Krimski rat, podaci o smrtnosti britanskih vojnika i obojeni kružni sektori tri su traga do pionirke sestrinstva koja je statistikom zagovarala bolju higijenu. Tko je ona?",
+    "answers": [
+      "Florence Nightingale",
+      "Florens Najtingejl",
+      "Florence Nightingejl",
+      "Nightingale"
+    ],
+    "explanation": "Florence Nightingale koristila je polarne površinske dijagrame kako bi prikazala uzroke smrti vojnika i zagovarala sanitarne reforme.",
+    "sources": [
+      "https://www.historiamedica.org/sources/nightingale-polar-area-diagram/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0731-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "mole poblano kao meksički umak od čilija i čokolade",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Preprži sušene čilije, dodaj začine, sjemenke i malo čokolade pa sve pretvori u gusti umak uz piletinu. Koji poznati specijalitet iz meksičke Pueble pripremaš?",
+    "answers": [
+      "Mole poblano",
+      "Mole Poblano",
+      "Poblanski mole"
+    ],
+    "explanation": "Mole poblano tradicionalni je umak iz Pueble koji spaja različite vrste čilija, začine, sjemenke i čokoladu te se često poslužuje uz piletinu.",
+    "sources": [
+      "https://www.gob.mx/agricultura%7Cpuebla/articulos/mole-poblano-una-tradicion-con-orgullo"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0732-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "Avesta kao zbirka svetih tekstova zoroastrizma",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "U staroperzijskoj vjerskoj tradiciji molitve, himne i obredni tekstovi sačuvani su na avestičkom jeziku. Kako se zove glavna zbirka svetih tekstova zoroastrizma?",
+    "answers": [
+      "Avesta",
+      "Zend-Avesta",
+      "Zend Avesta"
+    ],
+    "explanation": "Avesta je glavna zbirka svetih tekstova zoroastrizma, a njezini dijelovi uključuju Jasnu, Jašte i Vendidad.",
+    "sources": [
+      "https://nationalblacklibrary.org/library/sacred-texts/zoroastrian/avesta"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0733-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Filozofija",
+    "focus": "Buridanov magarac i neodlučnost između jednakih izbora",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Životinja stoji između dviju jednako privlačnih hrpa sijena i, prema zamišljenom paradoksu, ne uspijeva izabrati nijednu. Po kojem se srednjovjekovnom filozofu naziva taj magarac?",
+    "answers": [
+      "Buridan",
+      "Jean Buridan",
+      "Ivan Buridan",
+      "Buridanov magarac"
+    ],
+    "explanation": "Buridanov magarac ilustrira problem izbora između jednakih mogućnosti. Priča je kasnije povezana s Jeanom Buridanom, iako se ne nalazi u njegovim sačuvanim djelima.",
+    "sources": [
+      "https://plato.stanford.edu/entries/buridan/",
+      "https://www.philosophyprofessor.com/thought-experiments/buridans-ass/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0734-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "francuski Građanski zakonik iz 1804.",
+    "difficulty": 2,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Ujednačavanje građanskog prava u Francuskoj 1804. stvorilo je zakonik koji je snažno utjecao i na pravne sustave drugih država. Po kojem je vladaru poslije dobio poznato ime?",
+    "answers": [
+      "Napoleon",
+      "Napoleon Bonaparte",
+      "Napoleon I.",
+      "Napoleon I"
+    ],
+    "explanation": "Francuski Code civil proglašen je 21. ožujka 1804., a 1807. dobio je ime Code Napoléon po Napoleonu Bonaparteu.",
+    "sources": [
+      "https://www.assemblee-nationale.fr/dyn/histoire-et-patrimoine/consulat-et-premier-empire/la-codification-juridique"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0735-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "krvavi slap na antarktičkom ledenjaku Taylor",
+    "difficulty": 4,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Iz bijelog antarktičkog ledenjaka povremeno curi crvenkasta slana voda, čiju boju stvaraju spojevi željeza u dodiru sa zrakom. Kako se naziva taj neobični slap?",
+    "answers": [
+      "Krvavi slap",
+      "Blood Falls",
+      "Krvavi slapovi"
+    ],
+    "explanation": "Blood Falls na ledenjaku Taylor nastaje istjecanjem vrlo slane vode bogate željezom, koje oksidacijom poprima crvenkastu boju.",
+    "sources": [
+      "https://www.helmholtz.de/en/newsroom/article/why-do-the-blood-falls-bleed/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0736-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "brinicle i ledeni stalaktit ispod morskog leda",
+    "difficulty": 5,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Ispod antarktičkog morskog leda može rasti ledena cijev nalik stalaktitu, nastala kada se izrazito hladna salamura spušta i smrzava okolnu morsku vodu. Kako se zove?",
+    "answers": [
+      "Brinicle",
+      "Brinikl",
+      "Ledeni stalaktit",
+      "Slani ledeni stalaktit"
+    ],
+    "explanation": "Brinicle je podvodna ledena cijev koja raste prema dnu mora oko hladnog, gustog toka salamure istisnute pri stvaranju morskog leda.",
+    "sources": [
+      "https://www.theguardian.com/news/2023/feb/16/brinicles-icy-fingers-of-death-antarctic-ocean"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0737-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "marketarija od tankih drvenih furnira",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Na komodi iz 18. stoljeća cvjetovi i geometrijski uzorci nisu naslikani, nego složeni od sitnih komada tankog drvenog furnira. Kako se zove ta dekorativna stolarska tehnika?",
+    "answers": [
+      "Marketarija",
+      "Marqueterie",
+      "Marquetry",
+      "Marketrija"
+    ],
+    "explanation": "Marketarija (marquetry) tehnika je ukrašavanja namještaja slaganjem komadića različitih furnira u slike i uzorke.",
+    "sources": [
+      "https://www.wallacecollection.org/explore/explore-in-depth/riesener/the-designs-materials-and-techniques/rieseners-marquetry/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0738-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "tradicionalni sustav sadnje tri sestre",
+    "difficulty": 2,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "U tradiciji nekih sjevernoameričkih starosjedilačkih naroda kukuruz podupire grah, a široki listovi treće biljke čuvaju vlagu u tlu. Koja biljka upotpunjuje 'tri sestre'?",
+    "answers": [
+      "Tikva",
+      "Tikve",
+      "Bundeva",
+      "Bundeve",
+      "Buča",
+      "Buče"
+    ],
+    "explanation": "Tri sestre čine kukuruz, grah i tikva odnosno bundeva: grah veže dušik, kukuruz pruža potporu, a tikva prekriva tlo.",
+    "sources": [
+      "https://www.nal.usda.gov/collections/stories/three-sisters"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0739-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "grad u kojem se čuva bista Nefertiti",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Slavna obojena bista egipatske kraljice Nefertiti, pronađena 1912. u Amarni, danas je jedna od najvećih atrakcija muzeja Neues Museum. U kojem se gradu čuva?",
+    "answers": [
+      "Berlin",
+      "U Berlinu"
+    ],
+    "explanation": "Bista Nefertiti nalazi se u berlinskom Neues Museumu, kamo je vraćena nakon obnove i ponovnog otvorenja muzeja 2009.",
+    "sources": [
+      "https://www.smb.museum/en/museums-institutions/aegyptisches-museum-und-papyrussammlung/collection-research/bust-of-nefertiti/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0740-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ljepota",
+    "focus": "Mum kao rani komercijalni dezodorans",
+    "difficulty": 5,
+    "styleId": 73,
+    "styleDescription": "Opiši kozmetičku praksu iz povijesnog razdoblja",
+    "question": "Godine 1888. na američkom se tržištu pojavio jedan od prvih brendiranih dezodoransa, u obliku kreme koja se nanosila prstima. Koje je kratko ime nosio taj proizvod?",
+    "answers": [
+      "Mum",
+      "MUM"
+    ],
+    "explanation": "Mum je 1888. patentiran kao rani brendirani dezodorans, a izvorno se prodavao kao voštana krema za nanošenje na kožu.",
+    "sources": [
+      "https://www.si.edu/spotlight/health-hygiene-and-beauty/alleviating-body-odors"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0741-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "Veliki smog u Londonu 1952.",
+    "difficulty": 1,
+    "styleId": 97,
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "question": "Hladnoća, izgaranje ugljena i gotovo nepomičan zrak u prosincu 1952. izazvali su smrtonosan smog koji je potaknuo strože propise o čistoći zraka. Koji je grad bio pogođen?",
+    "answers": [
+      "London",
+      "Londona"
+    ],
+    "explanation": "Veliki londonski smog trajao je od 5. do 9. prosinca 1952., a nakon katastrofe Ujedinjeno Kraljevstvo donijelo je Zakon o čistom zraku 1956.",
+    "sources": [
+      "https://www.rmets.org/metmatters/65-years-great-smog"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0742-20261029",
+    "createdAt": "2026-10-29T06:52:43.636Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "The Landlord's Game Elizabeth Magie kao prethodnica Monopola",
+    "difficulty": 4,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "Elizabeth Magie osmislila je društvenu igru s kupnjom zemljišta, najamninama i poljem 'Go to Jail', želeći upozoriti na posljedice monopola. Kako se zvala ta prethodnica Monopola?",
+    "answers": [
+      "The Landlord's Game",
+      "Landlord's Game",
+      "Landlords Game",
+      "Igra zemljoposjednika"
+    ],
+    "explanation": "Elizabeth Magie patentirala je The Landlord's Game 1904. kako bi prikazala ekonomske posljedice monopola; njezina je igra prethodila Monopolu.",
+    "sources": [
+      "https://www.womenshistory.org/articles/monopolys-lost-female-inventor"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
