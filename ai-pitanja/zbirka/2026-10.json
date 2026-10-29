@@ -22745,5 +22745,148 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0937-20261029",
+    "createdAt": "2026-10-29T14:51:51.451Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Arp 220, infracrveno sjajna galaksija nastala spajanjem dviju spiralnih",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na oko 250 milijuna svjetlosnih godina od nas dvije spiralne galaktike stapaju se u sustav koji u infracrvenom dijelu spektra zrači snagom većom od bilijun Sunaca. Kojom je oznakom poznat taj objekt?",
+    "answers": [
+      "Arp 220",
+      "Arp-220"
+    ],
+    "explanation": "Arp 220 ultraluminiozna je infracrvena galaksija nastala spajanjem dviju spiralnih galaktika, a NASA ju je snimila teleskopom James Webb.",
+    "sources": [
+      "https://science.nasa.gov/missions/webb/webb-captures-the-spectacular-galactic-merger-arp-220/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0938-20261029",
+    "createdAt": "2026-10-29T14:51:51.451Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "cajón, afroperuansko udaraljkaško glazbalo u obliku kutije",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Svirač sjedi na drvenoj kutiji i dlanovima udara po njezinoj prednjoj plohi. To glazbalo afroperuanskog podrijetla proširilo se daleko izvan svoje domovine. Kako se zove?",
+    "answers": [
+      "Cajón",
+      "Cajon",
+      "Kahon"
+    ],
+    "explanation": "Cajón je udaraljkaško glazbalo afroperuanskog podrijetla, u obliku drvene kutije na kojoj svirač sjedi i udara po prednjoj plohi.",
+    "sources": [
+      "https://www.unesco.org/creativity/en/policy-monitoring-platform/rafael-santa-cruz-and-arguedas-world-international-festivals"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0939-20261029",
+    "createdAt": "2026-10-29T14:51:51.451Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Wadi Al-Hitan, egipatsko nalazište fosilnih kitova s ostacima stražnjih udova",
+    "difficulty": 4,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "U egipatskoj pustinji nisu pronađeni samo fosili kopnenih životinja: na jednom UNESCO-ovu nalazištu sačuvani su kosturi drevnih kitova s ostacima stražnjih udova. Kako se zove ta „Dolina kitova”?",
+    "answers": [
+      "Wadi Al-Hitan",
+      "Wadi al Hitan",
+      "Wadi al-Hitan",
+      "Vadi al-Hitan"
+    ],
+    "explanation": "Wadi Al-Hitan u zapadnoj egipatskoj pustinji čuva fosile ranih kitova, uključujući oblike koji su još imali ostatke stražnjih udova.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1186/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0940-20261029",
+    "createdAt": "2026-10-29T14:51:51.451Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Skellig Michael, irski otočni samostan s kamenim ćelijama",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Na strmom atlantskom otočiću zapadno od Irske redovnici su stoljećima živjeli u kamenim ćelijama nalik košnicama, do kojih vode uske stube. Kako se zove taj otok?",
+    "answers": [
+      "Skellig Michael",
+      "Sceilg Mhichíl",
+      "Sceilg Mhichil"
+    ],
+    "explanation": "Skellig Michael, odnosno Sceilg Mhichíl, otočić je s ostacima ranosrednjovjekovnog samostana zapadno od irskog poluotoka Iveragh.",
+    "sources": [
+      "https://whc.unesco.org/en/list/757/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0941-20261029",
+    "createdAt": "2026-10-29T14:51:51.451Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "Osun, jorupska božica rijeke i plodnosti",
+    "difficulty": 3,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U nigerijskom gradu Osogbu održava se godišnja procesija kroz svetu šumu uz rijeku, među svetištima i kipovima posvećenima jednoj jorupskoj božici plodnosti. Kako se zove ta božica?",
+    "answers": [
+      "Osun",
+      "Oshun",
+      "Ošun"
+    ],
+    "explanation": "Sveta šuma Osun-Osogbo u Nigeriji povezana je s jorupskom božicom rijeke i plodnosti Osun, kojoj je posvećen i godišnji festival.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1118/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0942-20261029",
+    "createdAt": "2026-10-29T14:51:51.451Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "El Apóstol, argentinski animirani dugometražni film iz 1917.",
+    "difficulty": 4,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Mnogo prije Disneyjeve „Snjeguljice” 1917. u Argentini nastao je dugometražni animirani film s političkom satirom o predsjedniku Yrigoyenu. Kako se zvao taj pionirski film?",
+    "answers": [
+      "El Apóstol",
+      "El Apostol"
+    ],
+    "explanation": "El Apóstol, film Quirina Cristianija iz 1917., smatra se prvim dugometražnim animiranim filmom; nastao je u Argentini.",
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/first-full-length-cartoon"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
