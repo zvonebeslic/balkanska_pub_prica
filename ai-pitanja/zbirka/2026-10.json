@@ -23489,5 +23489,609 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0968-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "lasersko daljinsko snimanje",
+    "difficulty": 1,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Umjesto radiovalova ovaj sustav šalje laserske impulse i iz njihova povratka izrađuje precizne trodimenzionalne karte terena. Kojom se kratkom kraticom naziva?",
+    "answers": [
+      "Lidar",
+      "LiDAR",
+      "LIDAR"
+    ],
+    "explanation": "Lidar je kratica od Light Detection and Ranging; udaljenost mjeri povratkom laserskih impulsa.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/lidar.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0969-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "najveći aktivni vulkan na Zemlji",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Havajski naziv mu znači „Duga planina”, a golemi štitasti vulkan prekriva više od polovice otoka Hawaiʻi. Kako se zove taj najveći aktivni vulkan na Zemlji?",
+    "answers": [
+      "Mauna Loa"
+    ],
+    "explanation": "Mauna Loa znači Duga planina; USGS je navodi kao najveći aktivni vulkan na Zemlji.",
+    "sources": [
+      "https://www.usgs.gov/volcanoes/mauna-loa"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0970-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "zavjetrinska suhoća planina",
+    "difficulty": 1,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Vlažan zrak na jednoj strani planine donosi kišu, dok se na drugoj strani spušta suši zrak i oborina je znatno manje. Kako se naziva takvo sušno područje iza planinske prepreke?",
+    "answers": [
+      "Kišna sjena",
+      "Kisna sjena",
+      "Rain shadow"
+    ],
+    "explanation": "Kišna sjena nastaje na zavjetrinskoj strani planinskog lanca, gdje obično padne znatno manje kiše.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/appendix/weather-glossary-r"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0971-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "udaljeni izvor dugoperiodičnih kometa",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Daleko iza Kuiperova pojasa astronomi pretpostavljaju golemu, približno kuglastu skupinu ledenih tijela iz koje dolaze mnogi dugoperiodični kometi. Kako se naziva taj oblak?",
+    "answers": [
+      "Oortov oblak",
+      "Oort cloud",
+      "Oblak Oorta"
+    ],
+    "explanation": "Jan Oort je 1950. predložio postojanje daleke kuglaste zalihe kometnih tijela, danas poznate kao Oortov oblak.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/oort-cloud/facts/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0972-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "velško naseljavanje argentinske Patagonije",
+    "difficulty": 1,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Godine 1865. brodom Mimosa preko Atlantika je doplovilo 153 velških doseljenika, a njihovi potomci i danas čuvaju velški jezik. U kojoj su se regiji Argentine nastanili?",
+    "answers": [
+      "Patagonija",
+      "Patagonia",
+      "Argentinska Patagonija"
+    ],
+    "explanation": "Velški doseljenici stigli su 1865. u Patagoniju, gdje se dio velške jezične i kulturne baštine očuvao.",
+    "sources": [
+      "https://www.visitwales.com/info/history-heritage-and-traditions/family-ancestry-and-genealogy-tours-wales"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0973-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "strukturna boja leptirovih krila",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Krila ovih tropskih leptira blistaju plavom bojom iako njihove sitne ljuskice ne duguju taj sjaj plavom pigmentu, nego načinu na koji odbijaju svjetlost. Kojem rodu pripadaju?",
+    "answers": [
+      "Morpho",
+      "Morfo",
+      "Morpho leptiri"
+    ],
+    "explanation": "Plavi sjaj leptira roda Morpho posljedica je mikroskopske strukture ljuskica njihovih krila.",
+    "sources": [
+      "https://www.si.edu/collections/snapshot/beautiful-blue-morpho"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0974-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "prva olimpijska prisega sportaša",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Na otvaranju Ljetnih olimpijskih igara 1920. prvi je put izgovorena olimpijska prisega sportaša, uz prvo podizanje olimpijske zastave. Koji je belgijski grad bio domaćin tih Igara?",
+    "answers": [
+      "Antwerpen",
+      "Antwerp",
+      "Anvers"
+    ],
+    "explanation": "Na Igrama u Antwerpenu 1920. prvi su put uvedeni olimpijska prisega sportaša i podizanje olimpijske zastave.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/antwerp-1920-a-symbol-of-peace-unity-and-strength"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0975-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "nepalska tradicija žive božice",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U dolini Kathmandua djevojčica odabrana prema tradicionalnim pravilima može biti štovana kao „živa božica” i stanovati u posebnoj palači. Kojim je imenom poznata ta djevojčica?",
+    "answers": [
+      "Kumari",
+      "Kumari Devi"
+    ],
+    "explanation": "Kumari je naziv za živu božicu u nepalskoj tradiciji, osobito poznatoj u dolini Kathmandua.",
+    "sources": [
+      "https://whc.unesco.org/document/180606"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0976-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "vulkanske erupcije Eolskog otočja",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Vulkanolozi razlikuju vulkanski i strombolijski tip erupcije, nazvane po dvama otocima Eolskog otočja. Ako se prvi naziva Vulcano, kako se zove drugi?",
+    "answers": [
+      "Stromboli"
+    ],
+    "explanation": "Nazivi vulkanski i strombolijski tip erupcije potječu od vulkana na eolskim otocima Vulcano i Stromboli.",
+    "sources": [
+      "https://whc.unesco.org/en/list/908/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0977-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "titanov kozlac i golemi cvat",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Naziv „cvijet leš” često zavarava: golema smrdljiva struktura ove biljke sa Sumatre zapravo je cvat, a ne jedan cvijet. Kako se zove biljka poznata po najvećem nerazgranatom cvatu?",
+    "answers": [
+      "Titanov kozlac",
+      "Titan arum",
+      "Amorphophallus titanum",
+      "Titanov amorfofalus"
+    ],
+    "explanation": "Amorphophallus titanum, poznat kao titan arum ili titanov kozlac, stvara najveći nerazgranati cvat na svijetu.",
+    "sources": [
+      "https://www.kew.org/plants/titan-arum"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0978-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "norveški vulkanski otok u Južnom oceanu",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U Južnom oceanu leži izolirani vulkanski otok čiji su strmi rubovi gotovo nepristupačni, a najveći dio površine pokrivaju ledenjaci. Iako je vrlo daleko od Europe, pripada Norveškoj. Koji je to otok?",
+    "answers": [
+      "Otok Bouvet",
+      "Bouvet",
+      "Bouvetøya",
+      "Bouvetov otok"
+    ],
+    "explanation": "Bouvetøya je norveški vulkanski otok u Južnom oceanu, približno 89 posto prekriven ledenjacima.",
+    "sources": [
+      "https://npolar.no/en/themes/bouvetoya/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0979-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "islandski parlament osnovan 930.",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Još 930. godine na Þingvelliru počelo se okupljati islandsko opće vijeće, koje je poslije postalo središnja parlamentarna ustanova zemlje. Kako se zove taj parlament?",
+    "answers": [
+      "Alþingi",
+      "Althing",
+      "Althingi",
+      "Alting"
+    ],
+    "explanation": "Islandski Alþingi osnovan je 930. na Þingvelliru i smatra se najstarijom islandskom nacionalnom ustanovom.",
+    "sources": [
+      "https://www.althingi.is/dansk/om-altinget/altinget---islands-aeldste-institution/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0980-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "povijesni kineski sustav unutarnjih kanala",
+    "difficulty": 3,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Kinesko je Carstvo stoljećima prevozilo žito između sjevera i juga mrežom umjetnih vodenih putova koja je povezala pet velikih riječnih slivova. Kako se naziva taj povijesni kanalni sustav?",
+    "answers": [
+      "Veliki kanal",
+      "Kineski Veliki kanal",
+      "Grand Canal",
+      "Veliki kineski kanal",
+      "Da Yunhe"
+    ],
+    "explanation": "Kineski Veliki kanal nastajao je stoljećima i povezao je pet velikih riječnih slivova u sustav dug više od 2000 kilometara.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1443"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0981-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "divovske kornjače koraljnog atola",
+    "difficulty": 3,
+    "styleId": 40,
+    "styleDescription": "Pitaj za otok kroz dvije životinjske ili botaničke značajke",
+    "question": "Na ovom udaljenom atolu u Indijskom oceanu nalaze se četiri glavna koraljna otoka oko lagune i najveća prirodna populacija divovskih kopnenih kornjača. Kako se zove atol?",
+    "answers": [
+      "Aldabra",
+      "Atol Aldabra",
+      "Aldabra Atoll"
+    ],
+    "explanation": "Aldabra je atol Sejšela poznat po najvećoj samoodrživoj populaciji divovskih kopnenih kornjača.",
+    "sources": [
+      "https://whc.unesco.org/en/list/185"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0982-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "stromatoliti i dugonzi u australskom zaljevu",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Na zapadnoj obali Australije ovaj je zaljev poznat po živim stromatolitima, prostranim livadama morske cvjetnice i dugonzima. Pod kojim je engleskim imenom upisan na UNESCO-ov popis?",
+    "answers": [
+      "Shark Bay",
+      "Zaljev morskih pasa"
+    ],
+    "explanation": "Shark Bay u zapadnoj Australiji čuva stromatolite, velike podmorske livade i važnu populaciju dugonga.",
+    "sources": [
+      "https://whc.unesco.org/en/list/578/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0983-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "neolitičke kuće s pristupom preko krova",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U neolitičkom naselju na području današnje Turske kuće su bile zbijene jedna uz drugu bez ulica, pa se u mnoge ulazilo kroz otvore na krovu. Kako se zove to nalazište?",
+    "answers": [
+      "Çatalhöyük",
+      "Catalhoyuk",
+      "Çatal Höyük",
+      "Catal Hoyuk"
+    ],
+    "explanation": "Çatalhöyük je neolitičko naselje u Anatoliji s gusto spojenim kućama i pristupom preko krovova.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1405/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0984-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "armenski kameni spomenici s križevima",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Armenski klesari izrađuju uspravne kamene spomenike s bogato uklesanim križem, biljnim motivima i često simbolom vječnosti. Kako se naziva takav spomenik?",
+    "answers": [
+      "Hačkar",
+      "Khachkar",
+      "Hačkari",
+      "Khachkars"
+    ],
+    "explanation": "Hačkar je armenski kameni spomenik s uklesanim križem i ukrasnim motivima; UNESCO štiti tradiciju njegove izrade.",
+    "sources": [
+      "https://ich.unesco.org/en/Decisions/5.COM/6.1"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0985-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "runski spomenici danskog kralja Haralda Plavozubog",
+    "difficulty": 4,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Kralj Harald Plavozubi dao je u 10. stoljeću podići runski kamen kojim se pohvalio ujedinjenjem Danaca i njihovim prihvaćanjem kršćanstva. U kojem se danskom mjestu nalazi taj spomenik?",
+    "answers": [
+      "Jelling",
+      "Jeling"
+    ],
+    "explanation": "Veliki runski kamen u Jellingu dao je podići Harald Bluetooth, a natpis spominje Dansku, Norvešku i pokrštavanje Danaca.",
+    "sources": [
+      "https://whc.unesco.org/en/list/697/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0986-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "prapovijesni podzemni kompleks na Malti",
+    "difficulty": 4,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "U malteškom gradu Paoli otkriven je podzemni prapovijesni kompleks s tri razine isklesanih odaja, korišten kao nekropola. Kako se naziva taj UNESCO-ov spomenik?",
+    "answers": [
+      "Ħal Saflieni",
+      "Hal Saflieni",
+      "Hipogej Ħal Saflieni",
+      "Hypogeum of Hal Saflieni"
+    ],
+    "explanation": "Ħal Saflieni je prapovijesni malteški hipogej s tri podzemne razine i pogrebnom namjenom.",
+    "sources": [
+      "https://whc.unesco.org/en/list/130/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0987-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "zagonetni rimski dvanaesterostrani predmet",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Brončani rimski predmet ima dvanaest peterokutnih strana s otvorima različitih veličina i kuglice na vrhovima. Arheolozi još ne znaju čemu je služio. Kako se naziva?",
+    "answers": [
+      "Rimski dodekaedar",
+      "Dodekaedar",
+      "Rimski dodekahedron",
+      "Roman dodecahedron",
+      "Dodekahedron"
+    ],
+    "explanation": "Rimski dodekaedri šuplji su brončani predmeti s dvanaest peterokutnih strana; njihova je namjena nepoznata.",
+    "sources": [
+      "https://www.english-heritage.org.uk/visit/places/corbridge-roman-town-hadrians-wall/dodecahedron-exhibition/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0988-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "etruščanska keramika crna kroz cijelu stijenku",
+    "difficulty": 5,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Etruščanske posude mogu izgledati kao crni metal, no njihova tamna boja nije tek premaz: nastaje tijekom pečenja i prodire kroz cijelu stijenku. Kako se naziva ta vrsta keramike?",
+    "answers": [
+      "Bucchero",
+      "Bukero",
+      "Bucchero keramika"
+    ],
+    "explanation": "Bucchero je etruščanska keramika čija crna boja prožima glinu zbog posebnih uvjeta pečenja.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/251482"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0989-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "najstariji sačuvani otisak pokretnim metalnim slovima",
+    "difficulty": 5,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Više od sedamdeset godina prije Gutenbergove Biblije, 1377. u korejskom Cheongjuu tiskana je budistička knjiga pokretnim metalnim slovima. Pod kojim je kratkim imenom poznata?",
+    "answers": [
+      "Jikji",
+      "Džikdži",
+      "Jikji simche yojeol"
+    ],
+    "explanation": "Jikji je korejska budistička knjiga tiskana metalnim pokretnim slovima 1377., najstariji sačuvani primjer takvog tiska.",
+    "sources": [
+      "https://www.unesco.org/en/memory-world/baegun-hwasang-chorok-buljo-jikji-simche-yojeol-volii-second-volume-anthology-great-buddhist-priests?hub=915"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0990-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "zakretanje smjera morskih struja s dubinom",
+    "difficulty": 5,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Vjetar pokreće površinu mora, ali zbog trenja i Coriolisova učinka svaki dublji sloj teče sporije i pod drukčijim kutom, tvoreći zakrivljeni profil strujanja. Kako se naziva taj model?",
+    "answers": [
+      "Ekmanova spirala",
+      "Ekman spiral",
+      "Ekmanova spiralna struja"
+    ],
+    "explanation": "Ekmanova spirala opisuje postupno zakretanje i slabljenje morskog strujanja s dubinom pod djelovanjem trenja i Coriolisove sile.",
+    "sources": [
+      "https://oceanservice.noaa.gov/education/tutorial_currents/04currents4.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0991-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "optički fenomen slojeva u labradoritu",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Duginasti bljeskovi labradorita nisu isto što i pigmentna boja: svjetlost se interferencijom odbija od tankih unutarnjih slojeva kristala. Kako se posebno naziva taj optički fenomen?",
+    "answers": [
+      "Labradorescencija",
+      "Labradorescence",
+      "Labradorescenca"
+    ],
+    "explanation": "Labradorescencija je igra promjenjivih boja na labradoritu uzrokovana interferencijom svjetlosti na tankim unutarnjim slojevima.",
+    "sources": [
+      "https://archive.gia.edu/gems-gemology-summary-guide-to-phenomenal-gems"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0992-20261029",
+    "createdAt": "2026-10-29T16:50:03.816Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "sveto brdo napatske kulture uz Nil",
+    "difficulty": 5,
+    "styleId": 88,
+    "styleDescription": "Poveži povijesnu kartu s modernim mjestom",
+    "question": "U sjevernom Sudanu, u povijesnoj Nubiji, brdo okruženo hramovima i piramidama bilo je važno svetište napatskih vladara kraljevstva Kuš. Kako se zove to brdo?",
+    "answers": [
+      "Gebel Barkal",
+      "Jebel Barkal",
+      "Džebel Barkal",
+      "Djebel Barkal"
+    ],
+    "explanation": "Gebel Barkal je sveto brdo u Sudanu, s hramovima i spomenicima napatske i meroitske kulture kraljevstva Kuš.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1073/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
