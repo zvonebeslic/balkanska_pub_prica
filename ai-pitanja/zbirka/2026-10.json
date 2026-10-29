@@ -19234,5 +19234,614 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0793-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "haenyeo, roniteljice s otoka Jeju",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Bez boca s kisikom, uz zadržavanje daha i skupljanje školjkaša, žene s južnokorejskog otoka Jeju čuvaju stoljetnu pomorsku tradiciju. Kako se nazivaju te roniteljice?",
+    "answers": [
+      "Haenyeo",
+      "Haenyo",
+      "Henyeo"
+    ],
+    "explanation": "Haenyeo su žene roniteljice s otoka Jeju koje bez boca s kisikom sakupljaju morske plodove. UNESCO je njihovu kulturu upisao 2016.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/culture-of-jeju-haenyeo-women-divers-01068"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0794-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "lov škampa na konjima u Oostduinkerkeu",
+    "difficulty": 3,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U kojem belgijskom obalnom mjestu ribari još koriste snažne konje koji kroz plićak vuku mreže za škampe, prema tradiciji zaštićenoj UNESCO-om?",
+    "answers": [
+      "Oostduinkerke",
+      "Ostduinkerke"
+    ],
+    "explanation": "U Oostduinkerkeu ribari na brabantskim konjima vuku mreže kroz plićak. UNESCO je tradiciju uvrstio na svoj popis 2013.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/shrimp-fishing-on-horseback-in-oostduinkerke-00673"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0795-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "krater Stickney na Fobosu",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na Marsovu mjesecu Fobosu nalazi se golem udarni krater nazvan po supruzi astronoma koji je otkrio oba Marsova mjeseca. Kako se zove taj krater?",
+    "answers": [
+      "Stickney",
+      "Krater Stickney",
+      "Stickney Crater"
+    ],
+    "explanation": "Krater Stickney najveći je krater na Fobosu; ime nosi po Chloe Angeline Stickney Hall, supruzi otkrivača Marsovih mjeseca Asapha Halla.",
+    "sources": [
+      "https://science.nasa.gov/mars/moons/phobos/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0796-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "kambodžansko kazalište sjena Sbek Thom",
+    "difficulty": 4,
+    "styleId": 87,
+    "styleDescription": "Kreni od razlike originala i adaptacije pa traži naslov",
+    "question": "Kmerska inačica Ramayane, Reamker, prikazuje se i kroz kambodžansko kazalište sjena s kožnim figurama visokima do dva metra. Koji naziv nosi ta scenska tradicija?",
+    "answers": [
+      "Sbek Thom",
+      "Sbek-thom"
+    ],
+    "explanation": "Sbek Thom tradicionalno je kmersko kazalište sjena s velikim, neartikuliranim kožnim figurama; predstave se često temelje na epu Reamker.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/sbek-thom-khmer-shadow-theatre-00108"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0797-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "gruzijsko hrvanje chidaoba",
+    "difficulty": 3,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Borci u odjeći chokha izvode bacanja uz zvukove zurne i bubnja doli, a natjecanje se ponekad završava narodnim plesom. Kako se zove ta gruzijska hrvačka tradicija?",
+    "answers": [
+      "Chidaoba",
+      "Čidaoba"
+    ],
+    "explanation": "Chidaoba je tradicionalno gruzijsko hrvanje koje povezuje borilačke zahvate, posebnu odjeću, glazbu i ples.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/chidaoba-wrestling-in-georgia-01371"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0798-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "lončarstvo Zlakusa s glinom i kalcitom",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "U jednom selu zapadne Srbije majstori miješaju glinu s kalcitom i na ručnom kolu oblikuju neglazirane posude za pripremu hrane. Po kojem se selu naziva to UNESCO-om priznato lončarstvo?",
+    "answers": [
+      "Zlakusa",
+      "Zlakusi",
+      "Zlakuse"
+    ],
+    "explanation": "Lončarstvo Zlakuse koristi mješavinu gline i kalcita, ručno pokretano kolo i izradu neglaziranih posuda za kuhanje.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/zlakusa-pottery-making-hand-wheel-pottery-making-in-the-village-of-zlakusa-01466"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0799-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "filete porteño, ukrasno slikarstvo Buenos Airesa",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Šarene vitice, ukrasna slova i portreti na autobusima Buenos Airesa nisu tek reklame, nego posebna slikarska tradicija. Kako se zove taj argentinski stil ukrašavanja?",
+    "answers": [
+      "Filete porteño",
+      "Filete porteno",
+      "Fileteado porteño",
+      "Fileteado porteno"
+    ],
+    "explanation": "Filete porteño razvijen je u Buenos Airesu kao ornamentalno slikarstvo s jarkim bojama i dekorativnim natpisima, često na vozilima i trgovinama.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/filete-porteo-in-buenos-aires-a-traditional-painting-technique-01069"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0800-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "azerbajdžanska svilena marama kelaghayi",
+    "difficulty": 4,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "Svila, drveni pečati i boje koje se biraju prema svadbama ili žalovanju obilježja su tradicionalne azerbajdžanske ženske marame. Kako se ona zove?",
+    "answers": [
+      "Kelaghayi",
+      "Kelagayi",
+      "Kalaghayi",
+      "Kelağayı"
+    ],
+    "explanation": "Kelaghayi je tradicionalna azerbajdžanska svilena marama, obojena i ukrašena drvenim pečatima; boje i uzorci nose društvenu simboliku.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/traditional-art-and-symbolism-of-kelaghayi-making-and-wearing-women-s-silk-headscarves-00669"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0801-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "festival hrvanja u ulju Kırkpınar",
+    "difficulty": 2,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "U turskom Edirneu hrvači se prije borbe namažu uljem, odjenu kožne hlače i natječu za zlatni pojas. Kako se zove taj tradicionalni festival?",
+    "answers": [
+      "Kırkpınar",
+      "Kirkpinar",
+      "Kırkpinar",
+      "Kirkpınar"
+    ],
+    "explanation": "Kırkpınar je tradicionalni festival hrvanja u ulju u Edirneu. Hrvači, poznati kao pehlivani, natječu se za naslov i zlatni pojas.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/krkpnar-oil-wrestling-festival-00386"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0802-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ljepota",
+    "focus": "francuski grad Grasse i parfumerstvo",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U južnoj Francuskoj stoljećima se uzgajaju mirisne biljke, destiliraju esencije i stvaraju parfemi. Koji je grad središte te tradicije, čije je umijeće priznato na UNESCO-ovu popisu?",
+    "answers": [
+      "Grasse",
+      "Gras"
+    ],
+    "explanation": "Grasse i okolna regija Pays de Grasse poznati su po uzgoju biljaka za parfeme, obradi mirisnih sirovina i sastavljanju parfemskih kompozicija.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/the-skills-related-to-perfume-in-pays-de-grasse-the-cultivation-of-perfume-plants-the-knowledge-and-processing-of-natural-raw-materials-and-the-art-of-perfume-composition-01207"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0803-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "peruanski travnati most Q'eswachaka",
+    "difficulty": 4,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "U peruanskim Andama zajednice svake godine iznova pletu viseći most od trave iznad rijeke Apurímac, čuvajući inkaške tehnike gradnje. Kako se zove taj most?",
+    "answers": [
+      "Q'eswachaka",
+      "Q’eswachaka",
+      "Qeswachaka",
+      "Q'eswachaka most"
+    ],
+    "explanation": "Q’eswachaka je tradicionalni viseći most od biljnih užadi iznad rijeke Apurímac; zajednice ga obnavljaju svake godine uz obrede.",
+    "sources": [
+      "https://ich.unesco.org/fr/RL/les-connaissances-savoir-faire-et-rituels-lies-a-la-renovation-annuelle-du-pont-q-eswachaka-00594"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0804-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "zmijanjski vez tamnoplavim koncem",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Geometrijski motivi i tamnoplava nit povezuju nošnju, ručnike i druge tekstilne predmete iz sela oko Banje Luke. Kako se zove ova tradicija veza upisana na UNESCO-ov popis?",
+    "answers": [
+      "Zmijanjski vez",
+      "Zmijanje vez",
+      "Zmijanje embroidery"
+    ],
+    "explanation": "Zmijanjski vez tradicionalna je tehnika vezenja iz Bosne i Hercegovine prepoznatljiva po tamnoplavom koncu i geometrijskim motivima.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/zmijanje-embroidery-00990"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0805-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "tuniška pasta harissa",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Osušene ljute papričice samelju se s češnjakom, korijandrom i solju u pastu koju tuniške obitelji čuvaju u staklenkama. Koji je to začin?",
+    "answers": [
+      "Harissa",
+      "Harisa"
+    ],
+    "explanation": "Harissa je tuniška pasta od ljutih papričica, često s češnjakom, korijandrom i soli; njezina priprema dio je UNESCO-ove nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/harissa-knowledge-skills-and-culinary-and-social-practices-01710"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0806-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "ukrajinsko ukrašeno jaje pysanka",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Voskom se na ljusci jajeta zaštite uzorci, a zatim se jaje boji u više slojeva kako bi nastali šareni simboli. Kako se zove tako ukrašeno jaje u ukrajinskoj tradiciji?",
+    "answers": [
+      "Pysanka",
+      "Pisanka",
+      "Pysanky"
+    ],
+    "explanation": "Pysanka je tradicionalno ukrajinsko ukrašeno jaje izrađeno tehnikom zaštite voskom i višestrukog bojenja; uzorci nose simbolična značenja.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/pysanka-ukrainian-tradition-and-art-of-decorating-eggs-02134"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0807-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "kineski tisak pokretnim drvenim znakovima u Rui'anu",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Za razliku od rezbarenja cijele stranice u jednoj ploči, majstori u kineskom Rui'anu slažu zasebne drvene znakove koje nakon tiska mogu ponovno upotrijebiti. Koju tradicionalnu tiskarsku tehniku održavaju?",
+    "answers": [
+      "Tisak pokretnim drvenim slovima",
+      "Tisak pomičnim drvenim slovima",
+      "Tisak pokretnim drvenim znakovima",
+      "Wooden movable-type printing",
+      "Drveni pokretni slog"
+    ],
+    "explanation": "U Rui'anu se drveni pokretni znakovi slažu u tiskarsku formu, a nakon tiska rastavljaju i ponovno koriste, osobito za rodoslovlja.",
+    "sources": [
+      "https://ich.unesco.org/en/USL/wooden-movable-type-printing-of-china-00322"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0808-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "urarsko umijeće francusko-švicarske Jure",
+    "difficulty": 5,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Mehanički satovi i automati oživljavaju uz pomoć opruga i zupčanika. U kojem se planinskom lancu uz francusko-švicarsku granicu posebno njeguje urarsko umijeće koje štiti UNESCO?",
+    "answers": [
+      "Jura",
+      "Jursko gorje",
+      "Jura Mountains",
+      "Jurske planine"
+    ],
+    "explanation": "Umijeće mehaničkog urarstva i umjetničke mehanike posebno je razvijeno u području Jurskog gorja na granici Švicarske i Francuske.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/craftsmanship-of-mechanical-watchmaking-and-art-mechanics-01560"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0809-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Yoshinori Ohsumi i mehanizmi autofagije",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Istražujući stanice kvasca, japanski biolog razjasnio je kako stanice razgrađuju i recikliraju vlastite dijelove. Tko je za ta otkrića 2016. dobio Nobelovu nagradu za medicinu?",
+    "answers": [
+      "Yoshinori Ohsumi",
+      "Jošinori Osumi",
+      "Ohsumi",
+      "Osumi",
+      "Jošinori Ohsumi"
+    ],
+    "explanation": "Yoshinori Ohsumi dobio je Nobelovu nagradu za fiziologiju ili medicinu 2016. za otkrića mehanizama autofagije.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/2016/advanced-information/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0810-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "hafnij i latinsko ime Kopenhagena",
+    "difficulty": 4,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Kontrolne šipke koje upijaju neutrone i izolacijski slojevi u mikročipovima koriste metal čiji naziv potječe od latinskog imena Kopenhagena. Koji je to element?",
+    "answers": [
+      "Hafnij",
+      "Hafnium",
+      "Hf"
+    ],
+    "explanation": "Hafnij je kemijski element atomskog broja 72, nazvan prema Hafniji, latinskom imenu Kopenhagena; koristi se u kontrolnim šipkama i elektronici.",
+    "sources": [
+      "https://periodic-table.rsc.org/element/72/Hafnium"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0811-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Titanovo more Kraken Mare",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na Saturnovu Titanu nalazi se more tekućeg metana i etana koje NASA po površini uspoređuje s Kaspijskim i Gornjim jezerom zajedno. Kako se zove to najveće Titanovo more?",
+    "answers": [
+      "Kraken Mare",
+      "Krakenovo more"
+    ],
+    "explanation": "Kraken Mare najveće je poznato more na Titanu, a sastoji se od tekućih ugljikovodika, uglavnom metana i etana.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/titans-north/",
+      "https://science.nasa.gov/resource/dark-lakes-on-a-bright-landscape-annotated/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0812-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Merkurov udarni bazen Caloris",
+    "difficulty": 5,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Sonda MESSENGER 2008. snimila je Merkurov udarni bazen promjera oko 1550 kilometara, čije ime podsjeća na toplinu. Kako se naziva taj golemi bazen?",
+    "answers": [
+      "Caloris",
+      "Bazen Caloris",
+      "Caloris Basin"
+    ],
+    "explanation": "Caloris je jedan od najvećih udarnih bazena Sunčeva sustava, promjera oko 1550 km; detaljno ga je snimila sonda MESSENGER.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/mercurys-caloris-basin-one-of-the-largest-impact-basins-in-the-solar-system/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0813-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "Norsk Hydro i industrijska proizvodnja gnojiva",
+    "difficulty": 5,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Početkom 20. stoljeća hidroelektrane kod Rjukana i Notoddena omogućile su proizvodnju umjetnog gnojiva iz dušika u zraku. Koja je norveška tvrtka razvila taj industrijski kompleks?",
+    "answers": [
+      "Norsk Hydro",
+      "Norsk-Hydro",
+      "NorskHydro"
+    ],
+    "explanation": "Industrijski kompleks Rjukan–Notodden izgradila je tvrtka Norsk Hydro kako bi električnu energiju koristila za proizvodnju umjetnih gnojiva iz atmosferskog dušika.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1486"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0814-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Head-Smashed-In Buffalo Jump, prapovijesni lov bizona",
+    "difficulty": 5,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Prije tisuća godina lovci su u današnjoj Alberti usmjeravali krda bizona preko litice, a meso obrađivali u logorima ispod nje. Kako se zove UNESCO-ovo nalazište koje čuva tragove takva lova?",
+    "answers": [
+      "Head-Smashed-In Buffalo Jump",
+      "Head Smashed In Buffalo Jump",
+      "Head-Smashed-In"
+    ],
+    "explanation": "Head-Smashed-In Buffalo Jump nalazište je u kanadskoj Alberti koje svjedoči o gotovo šest tisućljeća zajedničkog lova na bizone tjeranjem preko litice.",
+    "sources": [
+      "https://whc.unesco.org/en/list/158"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0815-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "nordijska klinker gradnja brodova",
+    "difficulty": 2,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Od vikinških vremena do današnjih nordijskih ribarskih brodica održala se tehnika u kojoj se daske drvenog trupa preklapaju i pričvršćuju zakovicama. Kako se naziva takva gradnja?",
+    "answers": [
+      "Klinker gradnja",
+      "Klinker",
+      "Clinker",
+      "Clinker-built",
+      "Preklopna gradnja brodova",
+      "Preklopna oplata"
+    ],
+    "explanation": "Nordijska klinker gradnja brodova koristi preklopljene daske oplate povezane zakovicama, drvenim klinovima ili užetom; UNESCO štiti tu tradiciju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/nordic-clinker-boat-traditions-01686"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0816-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Borromejski prstenovi i teorija čvorova",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Tri su prstena zajedno povezana, ali nijedan par zasebno nije isprepleten: ukloni li se jedan, ostala se dva razdvoje. Kako se u matematici naziva taj raspored?",
+    "answers": [
+      "Borromejski prstenovi",
+      "Boromejski prstenovi",
+      "Borromean rings",
+      "Borromeovi prstenovi"
+    ],
+    "explanation": "Borromejski prstenovi primjer su Brunnijeve veze: sva su tri prstena povezana, ali nijedan pojedinačni par nije.",
+    "sources": [
+      "https://mathworld.wolfram.com/BorromeanRings.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0817-20261029",
+    "createdAt": "2026-10-29T09:45:26.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "Ponzova optička iluzija i perspektiva",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Na crtežu željezničkih tračnica dvije jednako duge vodoravne crte mogu izgledati različito dugačke zbog linija koje se u daljini približavaju. Po kojem se prezimenu naziva ta optička varka?",
+    "answers": [
+      "Ponzo",
+      "Ponzova iluzija",
+      "Ponzo iluzija",
+      "Ponzova varka"
+    ],
+    "explanation": "Ponzova iluzija nastaje kada konvergentne linije perspektive utječu na procjenu duljine dviju jednakih crta.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7297846/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
