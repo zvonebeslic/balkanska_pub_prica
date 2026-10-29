@@ -19843,5 +19843,619 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0818-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Kušitski kraljevski grad Meroë",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U današnjem Sudanu, između Nila i rijeke Atbare, ostali su piramidalni grobovi vladara drevnog Kuša. Koji je grad bio njihovo kraljevsko središte?",
+    "answers": [
+      "Meroë",
+      "Meroe",
+      "Meroe u Sudanu"
+    ],
+    "explanation": "Meroë je bio kraljevski grad Kušitskoga Kraljevstva, a okolne piramide služile su kao kraljevske grobnice.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1336/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0819-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "Endemi arhipelaga Sokotra",
+    "difficulty": 2,
+    "styleId": 40,
+    "styleDescription": "Pitaj za otok kroz dvije životinjske ili botaničke značajke",
+    "question": "Na jednom jemenskom otočju uz Adenski zaljev čak 95 posto vrsta kopnenih puževa ne živi nigdje drugdje na Zemlji. Koje je to otočje?",
+    "answers": [
+      "Sokotra",
+      "Socotra",
+      "Arhipelag Sokotra",
+      "Otočje Sokotra"
+    ],
+    "explanation": "UNESCO navodi da je 95 % vrsta kopnenih puževa arhipelaga Sokotra endemično, kao i 90 % vrsta gmazova.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1263/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0820-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Dijatomeje i silicijske stijenke",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Pod mikroskopom izgledaju kao sićušne ukrašene staklene kutijice, a zapravo su jednostanične alge čije su stanične stijenke građene od silicijeva dioksida. Kako se zovu?",
+    "answers": [
+      "Dijatomeje",
+      "Dijatomejske alge",
+      "Diatoms",
+      "Diatome"
+    ],
+    "explanation": "Dijatomeje su jednostanične alge sa silicijskim stijenkama; važan su dio slatkovodnog i morskog fitoplanktona.",
+    "sources": [
+      "https://www.epa.gov/national-aquatic-resource-surveys/indicators-sediment-diatoms"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0821-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Paradoks beskonačno popunjenog hotela",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "U zamišljenom hotelu beskonačno je soba i sve su zauzete, ali novi gost ipak može prenoćiti ako se svaki stanar preseli u sljedeću sobu. Kako se zove taj paradoks?",
+    "answers": [
+      "Hilbertov hotel",
+      "Hilbertov paradoks hotela",
+      "Hilbertov paradoks velikog hotela",
+      "Hilbert's Hotel"
+    ],
+    "explanation": "Hilbertov hotel ilustrira da prebrojivo beskonačan skup može imati jednako mnogo elemenata kao njegov pravi podskup.",
+    "sources": [
+      "https://arxiv.org/abs/2303.11007"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0822-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Helmholtzov instrument za pregled očne pozadine",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Hermann von Helmholtz 1851. razvio je instrument kojim liječnik uz pomoć svjetlosti može pregledati unutrašnjost oka. Kako se taj instrument naziva?",
+    "answers": [
+      "Oftalmoskop",
+      "Ophthalmoscope"
+    ],
+    "explanation": "Oftalmoskop je omogućio izravno promatranje unutrašnjosti oka; Helmholtz ga je razvio 1851. godine.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_1067293"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0823-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Seviljski Metropol Parasol",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Šest golemih drvenih 'gljiva' natkriva trg u Sevilli, dok su ispod njih tržnica i arheološki muzej. Koji je službeni naziv te suvremene konstrukcije?",
+    "answers": [
+      "Metropol Parasol",
+      "Metropol Parasols",
+      "Las Setas",
+      "Las Setas de Sevilla"
+    ],
+    "explanation": "Metropol Parasol djelo je arhitektonskog ureda J. Mayer H.; obuhvaća tržnicu, muzej i povišenu šetnicu.",
+    "sources": [
+      "https://www.metalocus.es/en/news/metropol-parasol"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0824-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Švedska nyckelharpa s drvenim tipkama",
+    "difficulty": 5,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Svira se gudalom, ali visina tona ne mijenja se pritiskanjem žice prstima, nego drvenim tipkama s malim klinovima. Koje je to tradicionalno švedsko glazbalo?",
+    "answers": [
+      "Nyckelharpa",
+      "Nikelharpa",
+      "Nickelharpa"
+    ],
+    "explanation": "Nyckelharpa je švedsko gudačko glazbalo s tipkama koje zaustavljaju žice na određenoj visini tona.",
+    "sources": [
+      "https://www.nyckelharpa.org/about/what-is-a-nyckelharpa/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0825-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "Finski pesäpallo s okomitim bacanjem",
+    "difficulty": 3,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U ovoj finskoj inačici bejzbola bacač stoji pokraj udarača i lopticu baca gotovo okomito uvis, umjesto prema njemu. Kako se zove sport?",
+    "answers": [
+      "Pesäpallo",
+      "Pesapallo",
+      "Finski bejzbol",
+      "Finski baseball"
+    ],
+    "explanation": "Pesäpallo je finski sport s palicom i lopticom, poznat po okomitom bacanju i drukčijem rasporedu baza.",
+    "sources": [
+      "https://pattu.fi/pattu-in-english/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0826-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Automobili",
+    "focus": "Aerodinamični model Tatra 77 iz 1934.",
+    "difficulty": 4,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Godine 1934., dok su mnogi automobili još imali uglate karoserije, jedna je čehoslovačka tvornica predstavila zaobljeni model sa stražnjim motorom. Koji je to model marke Tatra?",
+    "answers": [
+      "Tatra 77",
+      "Tatra T77",
+      "T77"
+    ],
+    "explanation": "Tatra 77 predstavljena je 1934. kao pionirski aerodinamični osobni automobil, sa stražnje smještenim motorom.",
+    "sources": [
+      "https://plasy.ntm.cz/pro-navstevniky/aktuality/21-3-2024-ntm-prezentuje-restaurovany-vuz-tatra-77a-zroku-1937",
+      "https://www.tatra.cz/data/files/TATRA-TRUCKS-company-profile-web-CZ-2.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0827-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "Tamni kriokonit na ledenjacima",
+    "difficulty": 5,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Tamni prah na ledenjaku upija Sunčevu toplinu i polako tone u led, stvarajući rupice s vodom. Kako se naziva taj sloj mineralnih čestica i organske tvari?",
+    "answers": [
+      "Kriokonit",
+      "Cryoconite",
+      "Kryokonit"
+    ],
+    "explanation": "Kriokonit je tamni sediment na ledu, sastavljen od mineralnih i organskih čestica; snižava refleksiju svjetlosti i potiče topljenje.",
+    "sources": [
+      "https://www.jpl.nasa.gov/images/pia26409-cryoconite-holes-on-matanuska-glacier/",
+      "https://polarpedia.eu/en/cryconite/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0828-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "Izoglosa kao granica jezične osobine",
+    "difficulty": 5,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Na dijalektološkoj karti crta odvaja krajeve u kojima se različito izgovara isti glas ili upotrebljava druga riječ. Kako se naziva takva jezična granica?",
+    "answers": [
+      "Izoglosa",
+      "Isogloss",
+      "Izoglos"
+    ],
+    "explanation": "Izoglosa označuje geografsku granicu rasprostranjenosti određene jezične osobine, primjerice izgovora ili riječi.",
+    "sources": [
+      "https://www.cambridge.org/core/books/abs/dialectology/boundaries/A703255AC95D1891F0D3592D609FC60C"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0829-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "Foraminifere kao mikrofosili",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Sićušni morski protisti, najčešće veličine između desetinke i jednog milimetra, ostavljaju ljušturice kojima geolozi proučavaju stare sedimente i klimu. Kako se zovu?",
+    "answers": [
+      "Foraminifere",
+      "Foraminifera",
+      "Foraminiferi",
+      "Foraminiferani"
+    ],
+    "explanation": "Foraminifere su morski protisti s ljušturicama; njihovi fosili služe za određivanje starosti stijena i rekonstrukciju klime.",
+    "sources": [
+      "https://naturalhistory.si.edu/research/paleobiology/collections-overview/cushman-foraminifera-collection"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0830-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "Potlač i darivanje na sjeverozapadnoj obali Amerike",
+    "difficulty": 4,
+    "styleId": 93,
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "question": "Na pacifičkoj obali Sjeverne Amerike domaćin svečanom gozbom i velikim dijeljenjem darova pokazuje ugled i potvrđuje društvene veze. Kako se zove taj obred?",
+    "answers": [
+      "Potlač",
+      "Potlatch",
+      "Potlach"
+    ],
+    "explanation": "Potlač je svečanost darivanja među starosjedilačkim zajednicama sjeverozapadne pacifičke obale, povezana s ugledom i društvenim odnosima.",
+    "sources": [
+      "https://postalmuseum.si.edu/exhibition/the-american-indian-in-postage-stamps-american-indian-lifeways/the-potlatch-give-away"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0831-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Dezmosomi kao stanične zakovice",
+    "difficulty": 5,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Stanice kože drže se na okupu zahvaljujući spojevima koji nalikuju sitnim zakovicama i povezuju njihove unutarnje proteinske niti. Kako se zovu ti međustanični spojevi?",
+    "answers": [
+      "Dezmosomi",
+      "Desmosomi",
+      "Desmosomes",
+      "Desmosome"
+    ],
+    "explanation": "Dezmosomi su čvrsti međustanični spojevi koji povezuju mreže intermedijarnih filamenata susjednih stanica.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK26857/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0832-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "Geoglifi peruanske pustinje Nasca",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Kolibri, pauk i dugačke ravne linije u pustinji Nasca nisu naslikani na platnu, nego oblikovani na površini tla. Kojim se stručnim nazivom označuju takvi veliki prikazi?",
+    "answers": [
+      "Geoglifi",
+      "Geoglif",
+      "Geoglyphs",
+      "Geoglyph"
+    ],
+    "explanation": "Geoglifi su veliki crteži ili oblici izvedeni na tlu; linije Nasce i Palpe poznati su primjeri.",
+    "sources": [
+      "https://whc.unesco.org/fr/list/700/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0833-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "Kromatofori glavonožaca",
+    "difficulty": 3,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Sipa može u trenu promijeniti boju kože jer se u njoj šire i skupljaju pigmentne vrećice. Kako se nazivaju stanice koje omogućuju tu promjenu?",
+    "answers": [
+      "Kromatofori",
+      "Kromatofor",
+      "Chromatophores",
+      "Chromatophore"
+    ],
+    "explanation": "Kromatofori su pigmentne stanice u koži glavonožaca; širenje i skupljanje pigmentnih vrećica mijenja vidljivu boju.",
+    "sources": [
+      "https://ocean.si.edu/ocean-life/invertebrates/how-octopuses-and-squids-change-color"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0834-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Telomeraza i zaštitni završeci kromosoma",
+    "difficulty": 3,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Nobelova nagrada za medicinu 2009. povezana je s enzimom koji obnavlja zaštitne završetke kromosoma. Kako se taj enzim naziva?",
+    "answers": [
+      "Telomeraza",
+      "Telomerase"
+    ],
+    "explanation": "Telomeraza produljuje telomernu DNA; otkrića o telomerima i tom enzimu nagrađena su Nobelovom nagradom 2009.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/2009/advanced-information/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0835-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "Američka pika i zalihe suhe trave",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Na planinskim siparima mali rođak kunića skuplja i suši travu u hrpicama za zimu, premda izgledom mnoge podsjeća na glodavca. Koja je to životinja?",
+    "answers": [
+      "Pika",
+      "Američka pika",
+      "American pika",
+      "Ochotona princeps"
+    ],
+    "explanation": "Američka pika pripada redu dvojezubaca, srodna je kunićima i zečevima te skuplja zalihe vegetacije.",
+    "sources": [
+      "https://www.nps.gov/thingstodo/pikas.htm"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0836-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Zapadnoafrička kora s 21 žicom",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Zapadnoafrički pripovjedači i glazbenici jali sviraju glazbalo s 21 žicom i velikim rezonatorom od tikve. Koje glazbalo povezuje ta dva detalja?",
+    "answers": [
+      "Kora",
+      "Kora glazbalo",
+      "Kora instrument"
+    ],
+    "explanation": "Kora je zapadnoafričko glazbalo s 21 žicom i rezonatorom od tikve, povezano s tradicijom glazbenika jali.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/501115"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0837-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "Kelp kao smeđa alga koja gradi podvodne šume",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Izgledaju poput podvodnog drveća, ali nisu kopnene biljke: ove velike smeđe alge tvore guste šume u hladnijim priobalnim morima. Kako se skupno nazivaju?",
+    "answers": [
+      "Kelp",
+      "Kelpi",
+      "Kelp alge",
+      "Velike smeđe alge kelp"
+    ],
+    "explanation": "Kelp su velike smeđe alge koje rastu u hladnim, hranjivim tvarima bogatim vodama i stvaraju podvodne šume.",
+    "sources": [
+      "https://sanctuaries.noaa.gov/visit/ecosystems/kelpdesc.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0838-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "Pteropodi i zakiseljavanje mora",
+    "difficulty": 5,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Znanstvenici su otkrili da se ljušturice sitnih slobodnoplutajućih morskih puževa otapaju u zakiseljenoj oceanskoj vodi. Kako se naziva ta skupina, poznata i kao morski leptiri?",
+    "answers": [
+      "Pteropodi",
+      "Pteropoda",
+      "Pteropods",
+      "Morski leptiri"
+    ],
+    "explanation": "Pteropodi su mali pelagički puževi, a zakiseljavanje mora može otapati njihove tanke ljušturice.",
+    "sources": [
+      "https://www.noaa.gov/noaa-led-researchers-discover-ocean-acidity-dissolving-shells-tiny-snails-us-west-coast"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0839-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "Koraljni polip i izgradnja grebena",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Nije biljka, ima lovke i živi u koloniji. Milijuni takvih sitnih životinja talože vapnenačke kosture od kojih nastaju grebeni. Kako se naziva jedna takva životinja?",
+    "answers": [
+      "Koraljni polip",
+      "Polip koralja",
+      "Koraljni polipi",
+      "Coral polyp"
+    ],
+    "explanation": "Koraljni polipi su sitne životinje; kameni koralji izlučuju kostur od kalcijeva karbonata koji postupno gradi greben.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/coralmadeof.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0840-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "Adinkra simboli na tkaninama naroda Asante",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Na tkaninama naroda Asante u Gani simboli se otiskuju pečatima izrezbarenim od tikve, a motivi prenose poruke i društvena značenja. Kako se zove ta tradicija ukrašavanja?",
+    "answers": [
+      "Adinkra",
+      "Adinkra tkanina",
+      "Adinkra simboli"
+    ],
+    "explanation": "Adinkra je tradicija simboličkih motiva na tkanini među narodima Akan, osobito Asante; znakovi se često utiskuju pečatima.",
+    "sources": [
+      "https://africa.si.edu/collection/object/nmafa_2010-10-399"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0841-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "Vikinška strateška igra hnefatafl",
+    "difficulty": 5,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "Na vikinškoj igraćoj ploči jedna strana brani kralja i pokušava ga izvesti iz okruženja, a brojčano nadmoćna strana nastoji ga zarobiti. Kako se zove ta nordijska igra?",
+    "answers": [
+      "Hnefatafl",
+      "Hnefatavl",
+      "Hnefatafl igra"
+    ],
+    "explanation": "Hnefatafl je povijesna nordijska strateška igra s asimetričnim stranama; različite rekonstrukcije pravila imaju različite ciljne rubove.",
+    "sources": [
+      "https://www.norrkopingsstadsmuseum.se/kalendarium/spela-vikingaspel/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0842-20261029",
+    "createdAt": "2026-10-29T10:46:03.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Japanska bambusova flauta shakuhachi",
+    "difficulty": 4,
+    "styleId": 96,
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "question": "Zvuk daha i bambusa nekad je bio dio meditacije japanskih redovnika komusō. Kako se zove uspravna flauta koju su svirali u razdoblju Edo?",
+    "answers": [
+      "Shakuhachi",
+      "Šakuhači",
+      "Shakuhachi flauta"
+    ],
+    "explanation": "Shakuhachi je japanska uzdužna bambusova flauta, povijesno povezana s meditativnom praksom redovnika komusō.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/503063",
+      "https://museostrumentimusicali.cultura.gov.it/strum/shakuhachi-flauto-a-imboccatura-terminale/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
