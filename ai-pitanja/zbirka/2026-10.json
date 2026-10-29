@@ -22888,5 +22888,606 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0943-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "Seiichi Miyake i japanske taktilne ploče",
+    "difficulty": 4,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Žute reljefne ploče s točkama i uzdužnim crtama danas upozoravaju slijepe i slabovidne osobe na rubove perona i usmjeravaju ih pločnicima. U japanskoj Okayami prvi su put službeno postavljene 1967. godine, a koji ih je izumitelj osmislio?",
+    "answers": [
+      "Seiichi Miyake",
+      "Miyake",
+      "Seiiči Mijake"
+    ],
+    "explanation": "Japanski izumitelj Seiichi Miyake razvio je taktilne blokove tenji; Okayama ih je uvela 18. ožujka 1967., a kasnije su postali važan standard pristupačnosti.",
+    "sources": [
+      "https://japanupclose.web-japan.org/tech/t20211008_1.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0944-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Automobili",
+    "focus": "Lancia Lambda i samonosiva karoserija iz 1922.",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Godine 1922. jedan je talijanski automobil odbacio uobičajeni odvojeni okvir karoserije, dobio samonosivu konstrukciju, neovisni prednji ovjes i kompaktan V4 motor. Koji je Lanci(j)in model donio te novosti?",
+    "answers": [
+      "Lancia Lambda",
+      "Lambda",
+      "Lanča Lambda"
+    ],
+    "explanation": "Lancia Lambda predstavljena je 1922. kao pionir serijske samonosive karoserije, s neovisnim prednjim ovjesom i uskokutnim V4 motorom.",
+    "sources": [
+      "https://www.media.stellantis.com/em-en/heritage-hub-italy/press/fca-at-milano-autoclassica-1-2-1"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0945-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "rijeka Kawarau i početak komercijalnog bungee jumpinga",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "A. J. Hackett i Henry van Asch 1988. otvorili su na Novom Zelandu prvo komercijalno mjesto za bungee jumping, skakanjem s visećeg mosta visokog 43 metra iznad rijeke. Kako se zove ta rijeka, po kojoj je nazvan i most?",
+    "answers": [
+      "Kawarau",
+      "Rijeka Kawarau",
+      "Kawarau River"
+    ],
+    "explanation": "Prvi komercijalni bungee jumping započeo je 1988. na mostu Kawarau kraj Queenstowna, iznad istoimene rijeke.",
+    "sources": [
+      "https://tohuwhenua.nz/regions/otago/kawarau-suspension-bridge/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0946-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "neuspjeli prvi let Ariane 5 zbog softverske pogreške",
+    "difficulty": 3,
+    "styleId": 97,
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "question": "Programska pogreška u sustavu navođenja pretvorila je 1996. prvi let europskog raketnog nosača u katastrofu: letjelica je izgubila podatke o položaju i raspala se nedugo nakon polijetanja. O kojem je nosaču riječ?",
+    "answers": [
+      "Ariane 5",
+      "Ariane-5",
+      "Ariane 501"
+    ],
+    "explanation": "Prvi let rakete Ariane 5, oznake 501, završio je 4. lipnja 1996. neuspjehom zbog projektnih i specifikacijskih pogrešaka u softveru inercijalnog referentnog sustava.",
+    "sources": [
+      "https://www.esa.int/Newsroom/Press_Releases/Ariane_501_-_Presentation_of_Inquiry_Board_report"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0947-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "litofon, glazbalo od ugođenih kamenih ploča",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Nema žice ni zračni stupac: glazbenik udara po odabranim kamenim pločama ili blokovima, a različiti komadi kamena daju različite tonove. Kako se naziva takvo glazbalo, poznato u više kultura svijeta?",
+    "answers": [
+      "Litofon",
+      "Lithophone",
+      "Litophone"
+    ],
+    "explanation": "Litofon je udaraljkaško glazbalo od zvonkim kamenih elemenata; primjeri takvih instrumenata nalaze se u različitim dijelovima svijeta.",
+    "sources": [
+      "https://www.metmuseum.org/de/perspectives/sounds-of-stone"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0948-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Lübeck kao kraljica Hanze",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Sjevernonjemački grad osnovan u 12. stoljeću proslavio se trgovinom na Baltiku, ciglenom arhitekturom i monumentalnim vratima Holstentor. Koji je grad zbog vodeće uloge u srednjovjekovnoj trgovačkoj mreži nosio nadimak „kraljica Hanze”?",
+    "answers": [
+      "Lübeck",
+      "Lubeck",
+      "Libek"
+    ],
+    "explanation": "Lübeck je bio glavno trgovačko središte Hanze i često se naziva njezinom kraljicom; njegova stara gradska jezgra nalazi se na UNESCO-ovu popisu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/272"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0949-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "hygge kao danski pojam ugode i zajedništva",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Udobnost nije isto što i osjećaj prisnosti: Danci imaju riječ za opuštenu večer uz svijeće, razgovor i zadovoljstvo malim stvarima, bez obzira na luksuz. Kojom riječju nazivaju taj poseban ugođaj?",
+    "answers": [
+      "Hygge",
+      "Hige"
+    ],
+    "explanation": "Danski pojam hygge obuhvaća ugodu, zajedništvo i uživanje u jednostavnim trenucima; ne prevodi se potpuno samo kao udobnost.",
+    "sources": [
+      "https://www.visitcopenhagen.dk/node/1369"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0950-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "Hohokam i drevni kanali Sonorske pustinje",
+    "difficulty": 5,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "U sušnoj dolini današnjeg Phoenixa jedna je kultura stoljećima kopala duge kanale iz rijeka Salt i Gila, pretvarajući pustinjski krajolik u poljoprivredno područje. Kojim se arheološkim nazivom označava ta kultura američkog jugozapada?",
+    "answers": [
+      "Hohokam",
+      "Hohokami"
+    ],
+    "explanation": "Kultura Hohokam razvila je iznimno složenu mrežu kanala za navodnjavanje uz rijeke Salt i Gila u današnjoj Arizoni.",
+    "sources": [
+      "https://home.nps.gov/articles/hohokam-culture.htm"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0951-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "geocaching nakon poboljšanja civilnog GPS-a 2000.",
+    "difficulty": 1,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Kad je civilni GPS 2000. postao precizniji, Dave Ulmer sakrio je u Oregonu spremnik i na internetu objavio njegove koordinate. Kako se danas zove svjetska igra u kojoj sudionici pomoću koordinata traže skrivene spremnike?",
+    "answers": [
+      "Geocaching",
+      "Geokešing",
+      "Geo caching"
+    ],
+    "explanation": "Prvi geocache postavio je Dave Ulmer 3. svibnja 2000. blizu Beavercreeka u Oregonu, nakon poboljšanja dostupne GPS preciznosti.",
+    "sources": [
+      "https://www.geocaching.com/blog/2025/05/celebrating-25-years-of-geocaching-milestones/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0952-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "geosmin, organski spoj mirisa vlažne zemlje",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Ime mu je izvedeno iz grčkih riječi za zemlju i miris, no nije naziv tla, nego organski spoj koji proizvode i bakterije u tlu. Ljudski nos prepoznaje ga u iznimno malim količinama, osobito nakon kiše. Kako se zove taj spoj?",
+    "answers": [
+      "Geosmin",
+      "Geozmin"
+    ],
+    "explanation": "Geosmin je hlapljivi organski spoj zemljanog mirisa koji proizvode određeni mikroorganizmi, među njima aktinomiceti; pridonosi mirisu nakon kiše.",
+    "sources": [
+      "https://www.acs.org/content/dam/acsorg/education/students/highschool/chemistryclubs/infographics/petrichor-the-smell-of-rain.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0953-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "metilživa kao uzrok bolesti Minamata",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Stanovnici japanskog ribarskog područja razvili su teška neurološka oštećenja nakon konzumacije lokalne ribe i školjkaša onečišćenih industrijskim otpadom. Koji je otrovni organski spoj žive bio glavni uzrok bolesti poznate kao Minamata?",
+    "answers": [
+      "Metilživa",
+      "Metil-živa",
+      "Methylmercury"
+    ],
+    "explanation": "Bolest Minamata posljedica je trovanja metilživom koja se nakupljala u ribama i školjkašima u onečišćenom zaljevu.",
+    "sources": [
+      "https://iris.who.int/bitstream/handle/10665/345443/9789289055888-eng.pdf",
+      "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0954-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "Tabula Peutingeriana kao izdužena karta rimskih cesta",
+    "difficulty": 5,
+    "styleId": 88,
+    "styleDescription": "Poveži povijesnu kartu s modernim mjestom",
+    "question": "U Austrijskoj nacionalnoj knjižnici čuva se srednjovjekovna kopija neobične rimske karte sastavljene od jedanaest pergamentnih dijelova. Umjesto vjernih oblika kontinenata prikazuje cestovne veze Carstva, gotovo kao današnja karta metroa. Kako se naziva?",
+    "answers": [
+      "Tabula Peutingeriana",
+      "Peutingerova karta",
+      "Peutingerova ploča",
+      "Peutingerova tabula"
+    ],
+    "explanation": "Tabula Peutingeriana jedina je sačuvana karta mreže rimskog javnog cestovnog sustava cursus publicus, poznata iz srednjovjekovne kopije koja se čuva u Beču.",
+    "sources": [
+      "https://www.unesco.at/en/communication/documentary-heritage/memory-of-the-world-in-austria/tabula-peutingeriana"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0955-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Pioneer 10 i pločica s porukom izvanzemaljcima",
+    "difficulty": 1,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Na NASA-inoj sondi lansiranoj 1972. otputovala je metalna pločica s crtežima muškarca i žene te oznakom položaja našeg Sunčeva sustava. Koja je sonda prva ponijela tu poruku mogućim izvanzemaljskim pronalazačima?",
+    "answers": [
+      "Pioneer 10",
+      "Pioneer-10",
+      "Pionir 10"
+    ],
+    "explanation": "Pioneer 10 lansiran je 1972. s pločicom koju je osmislio Carl Sagan i koja prikazuje ljude i položaj našeg podrijetla; pločicu je ponio i kasniji Pioneer 11.",
+    "sources": [
+      "https://science.nasa.gov/resource/pioneer-plaque/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0956-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "nestali panel Pravedni suci s Gentskog oltara",
+    "difficulty": 5,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Gentski oltar braće van Eyck slavan je po prizoru Poklonstva mističnom Jaganjcu, ali jedna je njegova priča nalik detektivskom romanu. Godine 1934. ukradena su dva panela; jedan je vraćen, a drugi još nedostaje. Kako se zove izgubljeni panel?",
+    "answers": [
+      "Pravedni suci",
+      "Pravični suci",
+      "The Just Judges",
+      "Just Judges"
+    ],
+    "explanation": "S Gentskog oltara 1934. ukradeni su paneli Sveti Ivan Krstitelj i Pravedni suci. Prvi je vraćen, dok se izvornom panelu Pravedni suci i dalje ne zna mjesto.",
+    "sources": [
+      "https://visit.gent.be/en/see-do/ghent-altarpiece"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0957-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "Butan i bruto nacionalna sreća",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Dok se države često uspoređuju po bruto domaćem proizvodu, jedna je himalajska kraljevina još sedamdesetih godina prošlog stoljeća počela promicati „bruto nacionalnu sreću” kao razvojnu filozofiju. O kojoj je državi riječ?",
+    "answers": [
+      "Butan",
+      "Bhutan"
+    ],
+    "explanation": "Butan je razvio filozofiju bruto nacionalne sreće pod četvrtim kraljem Jigmeom Singyeom Wangchuckom, naglašavajući kvalitetu života i održivi razvoj.",
+    "sources": [
+      "https://www.mfa.gov.bt/rbedelhi/bhutan-at-glance/gross-national-happiness/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0958-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "odjeća naroda Ainu od vlakana kore brijesta",
+    "difficulty": 4,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "Na sjeveru Japana tradicionalne su haljine i ogrtači nastajali i od vlakana kore brijesta, s geometrijskim ukrasima oko ovratnika i rukava. Kojem autohtonom narodu Hokkaida pripada ta tekstilna tradicija?",
+    "answers": [
+      "Ainu",
+      "Aini",
+      "Narod Ainu"
+    ],
+    "explanation": "Ainu su autohtoni stanovnici Hokkaida i susjednih područja, a njihova tradicionalna odjeća uključuje tkanine od vlakana brijestove kore.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/51082"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0959-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "John Venn i dijagrami skupova iz 1880.",
+    "difficulty": 2,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Euler je već u 18. stoljeću crtao krugove za prikaz logičkih odnosa, a 1880. jedan je britanski logičar objavio sustav dijagrama koji danas nosi njegovo prezime. O kojem je matematičaru riječ?",
+    "answers": [
+      "John Venn",
+      "Venn",
+      "Džon Ven"
+    ],
+    "explanation": "John Venn objavio je 1880. rad o dijagramskom prikazu iskaza i zaključivanja, po kojem su poznati Vennovi dijagrami.",
+    "sources": [
+      "https://philpapers.org/versions/VENOTD"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0960-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace i algoritam za Bernoullijeve brojeve",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Ada Lovelace je 1843. uz opis Babbageova analitičkog stroja priložila algoritam koji je trebao računati jednu poznatu matematičku vrstu brojeva. Kako se zovu ti brojevi, nazvani po švicarskoj matematičkoj obitelji?",
+    "answers": [
+      "Bernoullijevi brojevi",
+      "Bernulijevi brojevi",
+      "Bernoulli numbers"
+    ],
+    "explanation": "Ada Lovelace u bilješkama uz analitički stroj opisala je algoritam za računanje Bernoullijevih brojeva, važan u povijesti programiranja.",
+    "sources": [
+      "https://www.hsm.ox.ac.uk/imagining-ai"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0961-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "Naica i golemi kristali gipsa",
+    "difficulty": 2,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "U meksičkoj špilji povezanoj s rudnikom Naica, oko 300 metara pod zemljom, pronađeni su kristali dugi i do 12 metara. Od kojeg su minerala, čija je prozirna varijanta selenit, izgrađeni ti divovski kristali?",
+    "answers": [
+      "Gips",
+      "Sadra",
+      "Gypsum"
+    ],
+    "explanation": "Divovski kristali u Naici građeni su od gipsa, hidratiziranog kalcijeva sulfata; selenit je njegova prozirna kristalna varijanta.",
+    "sources": [
+      "https://pubs.acs.org/doi/10.1021/acscentsci.8b00906"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0962-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "Tlaloc kao astečki bog kiše",
+    "difficulty": 3,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Na prikazima starih Asteka često ima velike oči obrubljene prstenovima i istaknute očnjake, a povezan je s kišom koja hrani usjeve. Kako se zove to božanstvo, čiji su lik izrađivali i na kamenim maskama?",
+    "answers": [
+      "Tlaloc",
+      "Tláloc",
+      "Tlalok"
+    ],
+    "explanation": "Tlaloc je mezoamerički, osobito astečki bog kiše, često prepoznatljiv po prstenastim očima i istaknutim zubima na prikazima.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/313255"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0963-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "Laurence Sterne i crna stranica u Tristramu Shandyju",
+    "difficulty": 5,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Svećenik Yorick u jednom romanu iz 18. stoljeća dobiva neobičan književni oproštaj: cijela je stranica tiskana crnom bojom. Koji je englesko-irski književnik uvrstio taj eksperiment u roman o Tristramu Shandyju?",
+    "answers": [
+      "Laurence Sterne",
+      "Sterne",
+      "Lorens Stern"
+    ],
+    "explanation": "Laurence Sterne u romanu Život i mišljenja Tristrama Shandyja koristi crnu stranicu u znak žalosti za Yorickom, jedan od slavnih tipografskih eksperimenata književnosti.",
+    "sources": [
+      "https://www.laurencesternetrust.org.uk/collection-highlights-categories/the-black-page/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0964-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "efekt vrata i zaboravljanje pri ulasku u novu prostoriju",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kreneš u drugu sobu po neku stvar, prijeđeš prag i odjednom zaboraviš što si tražio. Istraživanja pokazuju da promjena prostorije može djelovati kao granica između mentalnih epizoda. Kako se naziva taj psihološki fenomen?",
+    "answers": [
+      "Efekt vrata",
+      "Doorway effect",
+      "Efekt prolaska kroz vrata",
+      "Efekt dovratnika"
+    ],
+    "explanation": "Istraživanja Gabriela Radvanskog pokazala su da prelazak kroz vrata može otežati prisjećanje prethodne namjere jer um obrađuje prijelaz kao granicu događaja.",
+    "sources": [
+      "https://news.nd.edu/news/walking-through-doorways-causes-forgetting-new-research-shows/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0965-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "Opabinia iz Burgess Shalea s rilom i plivaćim režnjevima",
+    "difficulty": 5,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Među kambrijskim fosilima kanadskog Burgess Shalea nalazi se životinja s nizom bočnih plivaćih režnjeva i dugim savitljivim prednjim rilom koje završava hvataljkom. Kako se zove taj neobični izumrli rod?",
+    "answers": [
+      "Opabinia",
+      "Opabinija"
+    ],
+    "explanation": "Opabinia je kambrijski organizam iz Burgess Shalea s plivaćim režnjevima, hvataljkom na kraju dugog rilca i pet očiju.",
+    "sources": [
+      "https://burgess-shale.rom.on.ca/parks-canada/visit/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0966-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "yakhchal kao perzijska građevina za čuvanje leda",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U iranskom Meybodu stoji velika stožasta građevina od opeke s debelim zidovima i podzemnim spremištem. Prije električnih hladnjaka služila je čuvanju zimskog leda tijekom pustinjskog ljeta. Kako se naziva takva tradicionalna perzijska ledenica?",
+    "answers": [
+      "Yakhchal",
+      "Yakhchāl",
+      "Jakčal",
+      "Jahčal"
+    ],
+    "explanation": "Yakhchal je tradicionalna perzijska ledenica; masivni zidovi i podzemna jama omogućavali su pohranu leda za toplije mjesece.",
+    "sources": [
+      "https://www.lonelyplanet.com/points-of-interest/meybod-yakhchal/1563559"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0967-20261029",
+    "createdAt": "2026-10-29T15:46:32.053Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "Sagnacov efekt i prstenasti laserski žiroskop",
+    "difficulty": 4,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Prstenasti laserski žiroskop može mjeriti okretanje bez klasičnog mehaničkog rotora: dvije svjetlosne zrake putuju suprotnim smjerovima, a pri rotaciji nastaje razlika u vremenu njihova obilaska. Kako se naziva efekt na kojem se temelji to mjerenje?",
+    "answers": [
+      "Sagnacov efekt",
+      "Sagnac efekt",
+      "Sagnac effect",
+      "Sagnacov učinak"
+    ],
+    "explanation": "Sagnacov efekt opisuje razliku u vremenu odnosno fazi za valove koji obilaze zatvorenu putanju u suprotnim smjerovima kada se sustav okreće; koristi se u prstenastim žiroskopima.",
+    "sources": [
+      "https://tf.nist.gov/general/pdf/711.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
