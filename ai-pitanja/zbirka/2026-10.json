@@ -18627,5 +18627,612 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0768-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "Amesova soba i privid promjene veličine",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Osoba u jednom kutu izgleda golemo, a u drugom sićušno, iako nije promijenila visinu. Kako se naziva iskrivljena prostorija koja stvara takvu optičku varku?",
+    "answers": [
+      "Amesova soba",
+      "Ames room",
+      "Amesova prostorija"
+    ],
+    "explanation": "Amesova soba ima namjerno iskrivljenu geometriju; promatraču iz određenog kuta osobe u različitim dijelovima izgledaju nesrazmjerno velike.",
+    "sources": [
+      "https://www.exploratorium.edu/sites/default/files/pdfs/00000346.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0769-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "seiche kao oscilacija vode u jezeru",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Nakon oluje voda u velikom jezeru može se satima njihati od jedne obale do druge, iako nije riječ o morskoj plimi. Kako se naziva to osciliranje razine vode?",
+    "answers": [
+      "Seiche",
+      "Sejš",
+      "Seiš"
+    ],
+    "explanation": "Seiche je oscilacija vode u jezeru ili drugom zatvorenom odnosno poluzatvorenom vodenom bazenu, često potaknuta vjetrom i promjenama tlaka.",
+    "sources": [
+      "https://www.glerl.noaa.gov/blog/2025/07/18/june-21-2025-storm-causes-significant-meteotsunami-and-seiche-on-lake-superior/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0770-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Selaginella lepidophylla i ponovno otvaranje nakon suše",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Kad nastupi suša, njezine se stabljike smotaju u kuglu, a nakon dodavanja vode ponovno rašire. Koji je znanstveni naziv biljke poznate i kao lažna jerihonska ruža?",
+    "answers": [
+      "Selaginella lepidophylla",
+      "Selaginella lepidofila",
+      "S. lepidophylla"
+    ],
+    "explanation": "Selaginella lepidophylla pustinjska je biljka koja smotanjem štiti unutarnje dijelove od suše i topline te se ponovno otvara nakon vlaženja.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/25623361/",
+      "https://mpns.science.kew.org/mpns-portal/drugDetail?drugName=false+rose+of+jericho&filter=&fuzzy=false&nameType=all&query="
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0771-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "električna jegulja Electrophorus voltai i 860 volti",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Jedna amazonska vrsta ove ribe može proizvesti električni udar od čak 860 volti, a unatoč imenu nije prava jegulja. Kako je uobičajeno nazivamo?",
+    "answers": [
+      "Električna jegulja",
+      "Elektricna jegulja",
+      "Electric eel"
+    ],
+    "explanation": "Vrsta Electrophorus voltai pripada skupini električnih jegulja i može proizvesti udar od 860 volti; taksonomski nije prava jegulja.",
+    "sources": [
+      "https://www.si.edu/es/newsdesk/releases/smithsonian-scientists-triple-number-known-electric-eel-species",
+      "https://www.nationalzoo.si.edu/animals/electric-eel"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0772-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "Glaucus atlanticus i obrana žarnim stanicama plijena",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Pluta na morskoj površini okrenut trbuhom prema nebu, a žarne stanice svojih otrovnih plijenova koristi za vlastitu obranu. Kako se zove ovaj neobični morski puž?",
+    "answers": [
+      "Glaucus atlanticus",
+      "Plavi zmaj",
+      "Plavi morski zmaj",
+      "Blue dragon"
+    ],
+    "explanation": "Glaucus atlanticus morski je puž koji pluta zahvaljujući plinom ispunjenoj vrećici i zadržava žarne stanice plijena za obranu.",
+    "sources": [
+      "https://publications.australian.museum/blog/science/sea-slug-saga-2016-sleek-geeks-science-winner/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0773-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Nepenthes rajah i golemi vrčevi na Borneu",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na planinama Bornea raste mesožderka čiji golemi vrčevi hvataju kukce, a povremeno čak i štakore. Koju vrstu roda Nepenthes opisujemo?",
+    "answers": [
+      "Nepenthes rajah",
+      "N. rajah",
+      "Rajah"
+    ],
+    "explanation": "Nepenthes rajah endemska je vrsta s Bornea, poznata po vrlo velikim vrčevima u kojima su povremeno pronađeni i mali sisavci.",
+    "sources": [
+      "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A603791-1/general-information"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0774-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "Magnusov učinak na rotirajućoj lopti",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Nogometna lopta nakon udarca s rotacijom skreće s pravocrtne putanje zbog strujanja zraka i razlike tlakova. Kako se zove taj fizički učinak?",
+    "answers": [
+      "Magnusov efekt",
+      "Magnusov učinak",
+      "Magnus effect"
+    ],
+    "explanation": "Magnusov učinak objašnjava bočnu aerodinamičku silu na rotirajuće tijelo koje se giba kroz fluid, primjerice na zakrivljenoj putanji lopte.",
+    "sources": [
+      "https://www.grc.nasa.gov/WWW/K-12/FoilSim/Manual/fsim000y.htm"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0775-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "Casimirova sila između nenabijenih ploča u vakuumu",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Dvije nenabijene metalne ploče u vakuumu mogu se privlačiti kad su vrlo blizu, zbog kvantnih fluktuacija elektromagnetskog polja. Po kojem je nizozemskom fizičaru nazvan taj učinak?",
+    "answers": [
+      "Hendrik Casimir",
+      "Casimir",
+      "Hendrik Brugt Gerhard Casimir",
+      "Casimirov efekt"
+    ],
+    "explanation": "Casimirova sila kvantni je učinak koji se očituje između bliskih površina; naziv nosi po Hendriku Casimiru.",
+    "sources": [
+      "https://physics.aps.org/articles/v12/s26"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0776-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "Seebeckov učinak i termoelektrični napon",
+    "difficulty": 5,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kad između dvaju spojeva različitih vodiča postoji temperaturna razlika, može nastati električni napon. Po kojem je fizičaru nazvan taj termoelektrični učinak?",
+    "answers": [
+      "Thomas Johann Seebeck",
+      "Seebeck",
+      "Seebeckov efekt",
+      "Seebeckov učinak"
+    ],
+    "explanation": "Seebeckov učinak pretvara temperaturnu razliku u električni napon, što je osnova termoelektričnih mjerenja i uređaja.",
+    "sources": [
+      "https://www.nist.gov/image/seebeck-coefficient-diagram"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0777-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Zipfov zakon i poredak učestalosti riječi",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "U velikom tekstu druga najčešća riječ pojavljuje se približno upola rjeđe od prve, a treća oko tri puta rjeđe. Čiji zakon opisuje takav odnos učestalosti i poretka?",
+    "answers": [
+      "Zipfov zakon",
+      "Zipf",
+      "Zipf's law",
+      "Zakon Zipfa"
+    ],
+    "explanation": "Zipfov zakon približno povezuje učestalost riječi s njezinim rangom: frekvencija je obrnuto razmjerna rangu.",
+    "sources": [
+      "https://mathworld.wolfram.com/ZipfsLaw.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0778-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Simpsonov paradoks i obrat statističke povezanosti",
+    "difficulty": 5,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Jedan je postupak uspješniji u svakoj od dviju skupina zasebno, ali nakon spajanja podataka drugi izgleda uspješniji. Kako se zove taj statistički paradoks?",
+    "answers": [
+      "Simpsonov paradoks",
+      "Simpson's paradox",
+      "Simpsonov efekt"
+    ],
+    "explanation": "Simpsonov paradoks nastaje kad se povezanost između varijabli promijeni ili obrne nakon razdvajanja ili spajanja podataka u podskupine.",
+    "sources": [
+      "https://plato.stanford.edu/entries/paradox-simpson/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0779-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "nocebo kao štetan učinak negativnog očekivanja",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Osoba može osjetiti neugodne simptome samo zato što očekuje nuspojave tretmana, čak i bez djelovanja aktivne tvari. Kako se naziva taj učinak, suprotan placebu?",
+    "answers": [
+      "Nocebo",
+      "Nocebo efekt",
+      "Nocebo učinak"
+    ],
+    "explanation": "Nocebo je negativna reakcija povezana s očekivanjima, sugestijom ili prethodnim iskustvom, a ne nužno s farmakološkim djelovanjem.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3401955/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0780-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "IKEA efekt i precjenjivanje vlastitog rada",
+    "difficulty": 1,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Kad sami sastavimo policu, često je cijenimo više nego istu takvu koju je sastavio netko drugi. Koji psihološki učinak nosi ime poznatog švedskog lanca namještaja?",
+    "answers": [
+      "IKEA efekt",
+      "IKEA effect",
+      "Ikein efekt"
+    ],
+    "explanation": "IKEA efekt naziv je za sklonost da vlastiti uspješno dovršeni rad procjenjujemo vrjednijim nego usporedive gotove proizvode.",
+    "sources": [
+      "https://dash.harvard.edu/entities/publication/73120378-ce76-6bd4-e053-0100007fdf3b"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0781-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Shepardov ton i iluzija beskonačnog uspona",
+    "difficulty": 4,
+    "styleId": 96,
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "question": "Slušamo niz tonova koji se naizgled neprestano penje, premda se nakon jedne oktave vraća na početak. Kako se zove ova slušna iluzija?",
+    "answers": [
+      "Shepardov ton",
+      "Shepard tone",
+      "Shepardovi tonovi",
+      "Shepardova ljestvica"
+    ],
+    "explanation": "Shepardovi tonovi složeni su od oktavno razmaknutih komponenti koje stvaraju privid beskonačnog rasta ili pada visine tona.",
+    "sources": [
+      "https://musicweb.ucsd.edu/~trsmyth/stream175/Shepard_Tones.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0782-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "BBC-jev Ceefax kao prva teletekstna usluga",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Još 1974. BBC je omogućio gledateljima da na televizoru otvaraju stranice s vijestima, sportom i vremenskom prognozom. Kako se zvala ta pionirska teletekstna usluga?",
+    "answers": [
+      "Ceefax",
+      "BBC Ceefax"
+    ],
+    "explanation": "Ceefax je BBC-jeva teletekstna usluga pokrenuta 23. rujna 1974., koja je prikazivala tekstualne informacije preko televizijskog signala.",
+    "sources": [
+      "https://bbc.com.im/articles/cvg360rr91zo"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0783-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "Flatland Edwina Abbotta i pripovjedač Kvadrat",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Pripovjedač je Kvadrat koji živi u dvodimenzionalnom društvu, sve dok mu Kugla ne pokaže da postoji i treća dimenzija. Kako se zove knjiga Edwina Abbotta iz 1884.?",
+    "answers": [
+      "Flatland",
+      "Flatland: A Romance of Many Dimensions",
+      "Ravnolandija"
+    ],
+    "explanation": "Edwin Abbott Abbott objavio je 1884. satirični roman Flatland pod pseudonimom A Square, istražujući geometriju i društvene hijerarhije.",
+    "sources": [
+      "https://mathshistory.st-andrews.ac.uk/Biographies/Abbott/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0784-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "Bloomova taksonomija i razine kognitivnih procesa",
+    "difficulty": 3,
+    "styleId": 94,
+    "styleDescription": "Kreni od osnivanja ustanove i pitaj njezino današnje ime",
+    "question": "Pamćenje, razumijevanje, primjena, analiza, vrednovanje i stvaranje čine šest razina poznatog modela obrazovnih ciljeva. Po kojem je psihologu model dobio ime?",
+    "answers": [
+      "Benjamin Bloom",
+      "Bloom",
+      "Bloomova taksonomija"
+    ],
+    "explanation": "Bloomova taksonomija razvrstava obrazovne ciljeve; u revidiranoj verziji šest kognitivnih procesa završava stvaranjem.",
+    "sources": [
+      "https://cft.vanderbilt.edu/wp-content/uploads/sites/59/BloomsTaxonomy-mary-forehand.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0785-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "terra preta kao antropogeno amazonsko tamno tlo",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "U Amazoniji se na mjestima drevnih naselja nalazi neobično plodna crna zemlja, obogaćena organskim ostacima i ugljenom. Kojim se portugalskim nazivom naziva to tlo?",
+    "answers": [
+      "Terra preta",
+      "Amazonian dark earth",
+      "Amazonska crna zemlja"
+    ],
+    "explanation": "Terra preta antropogeno je tamno i plodno amazonsko tlo, nastalo dugotrajnim ljudskim djelovanjem i nakupljanjem organske tvari i ugljena.",
+    "sources": [
+      "https://onlinelibrary.wiley.com/doi/10.1002/gea.21647"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0786-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "House of Leaves i kuća veća iznutra nego izvana",
+    "difficulty": 5,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kuća je iznutra veća nego izvana, a stranice romana ispunjavaju neobične fusnote i raspored teksta. Koji je američki pisac stvorio roman House of Leaves?",
+    "answers": [
+      "Mark Z. Danielewski",
+      "Mark Danielewski",
+      "Danielewski"
+    ],
+    "explanation": "Mark Z. Danielewski autor je romana House of Leaves iz 2000., poznatog po nemogućoj arhitekturi kuće i eksperimentalnoj tipografiji.",
+    "sources": [
+      "https://www.penguinrandomhouse.com/books/36526/house-of-leaves-by-mark-z-danielewski/9780375420528/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0787-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "torii kao ulaz u šintoističko svetište",
+    "difficulty": 1,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Na ulazu u mnoga japanska šintoistička svetišta stoje vrata bez krila koja označavaju prijelaz iz svakodnevnog u sveto. Kako se zovu?",
+    "answers": [
+      "Torii",
+      "Torii vrata",
+      "Tori"
+    ],
+    "explanation": "Torii označava granicu svetog prostora šintoističkog svetišta, za razliku od ulaznih vrata sanmon na budističkim hramovima.",
+    "sources": [
+      "https://www.japan.travel/en/guide/shrine-and-temple-traditions/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0788-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "ikat i bojenje niti prije tkanja",
+    "difficulty": 4,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Uzorci na ovoj tkanini nastaju tako što se dijelovi niti vežu i štite od boje još prije tkanja, pa rubovi motiva djeluju blago zamućeno. Kako se zove ta tehnika?",
+    "answers": [
+      "Ikat",
+      "Ikat tkanje",
+      "Ikat tehnika"
+    ],
+    "explanation": "Ikat je tehnika rezervnog bojenja pređe prije tkanja; vezani dijelovi niti ostaju neobojeni i stvaraju karakteristične uzorke.",
+    "sources": [
+      "https://es.unesco.org/silkroad/sites/default/files/knowledge-bank-article/vol_V%20silk%20road_applied%20arts%2C%20textiles%20and%20carpets%20BIS.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0789-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Casa da Música u Portu arhitekta Rema Koolhaasa",
+    "difficulty": 2,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Rem Koolhaas projektirao je u Portu koncertnu dvoranu nepravilna, kristalasta oblika, otvorenu 2005. godine. Kako se zove ta građevina?",
+    "answers": [
+      "Casa da Música",
+      "Casa da Musica",
+      "Kuća glazbe u Portu"
+    ],
+    "explanation": "Casa da Música otvorena je u Portu 15. travnja 2005.; projekt Rema Koolhaasa i OMA-e odabran je na međunarodnom natječaju.",
+    "sources": [
+      "https://casadamusica.com/en/building/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0790-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "brodski lift Strépy-Thieu i 73,15 metara visinske razlike",
+    "difficulty": 5,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Dvije goleme vodene kade u Belgiji prenose brodove preko visinske razlike od 73,15 metara na Kanalu du Centre. Kako se zove taj brodski lift?",
+    "answers": [
+      "Strépy-Thieu",
+      "Strepy-Thieu",
+      "Strépy Thieu",
+      "Strepy Thieu"
+    ],
+    "explanation": "Strépy-Thieu brodski je lift na belgijskom Kanalu du Centre koji u jednom prijenosu svladava 73,15 metara visinske razlike.",
+    "sources": [
+      "https://infrastructures.wallonie.be/pouvoirs-locaux/nos-thematiques/voies-deau/le-reseau-hydraulique/les-voies-navigables/les-ouvrages-de-franchissement/ascenseurs-funiculaires.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0791-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "švicarski sport hornussen i disk nouss",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U jednoj švicarskoj ekipnoj igri napadači šalju mali disk daleko u polje, a suparnici ga pokušavaju zaustaviti velikim pločama prije pada. Kako se zove taj sport?",
+    "answers": [
+      "Hornussen",
+      "Hornus"
+    ],
+    "explanation": "Hornussen je tradicionalni švicarski ekipni sport u kojem se disk Nouss udara u polje, a obrana ga presreće posebnim pločama.",
+    "sources": [
+      "https://www.myswitzerland.com/en-us/planning/about-switzerland/custom-and-tradition/hornussen-where-the-nouss-flies-from-the-ramp-and-into-the-playing-field/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0792-20261029",
+    "createdAt": "2026-10-29T08:49:15.373Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Religije i mitologije",
+    "focus": "dakhma odnosno kula tišine u zoroastrijskoj tradiciji",
+    "difficulty": 4,
+    "styleId": 93,
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "question": "U zoroastrijskoj tradiciji pokojnika se nekoć izlagalo prirodnim elementima na kružnoj uzdignutoj građevini, umjesto da ga se pokopa. Kako se naziva takva građevina?",
+    "answers": [
+      "Dakhma",
+      "Dakhmah",
+      "Kula tišine",
+      "Tower of Silence"
+    ],
+    "explanation": "Dakhma ili kula tišine zoroastrijska je pogrebna građevina na kojoj se tijelo izlagalo, što je bilo povezano s vjerovanjem u čistoću prirodnih elemenata.",
+    "sources": [
+      "https://www.iranicaonline.org/articles/parsi-communities-ii-in-calcutta/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
