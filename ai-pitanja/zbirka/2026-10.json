@@ -20457,5 +20457,623 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0843-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Vodena paprat Azolla i simbiotska fiksacija dušika",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na azijskim rižinim poljima sitna vodena paprat može obogatiti tlo dušikom zahvaljujući cijanobakterijama koje žive u njezinim listovima. Kako se zove ta paprat?",
+    "answers": [
+      "Azolla",
+      "Azola"
+    ],
+    "explanation": "Azolla je rod plutajućih vodenih paprati koje žive u simbiozi s cijanobakterijama sposobnima vezati atmosferski dušik. Zato se tradicionalno koriste kao zeleno gnojivo u uzgoju riže.",
+    "sources": [
+      "https://www.jstage.jst.go.jp/article/jssm/20/0/20_KJ00008102784/_article"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0844-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "Barkhausenov efekt i skokovi magnetskih domena",
+    "difficulty": 5,
+    "styleId": 96,
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "question": "Zavojnica oko željezne jezgre spojena na pojačalo počne pucketati kada joj se približi magnet: magnetske se domene ne preusmjeravaju glatko, nego u skokovima. Kako se naziva taj efekt?",
+    "answers": [
+      "Barkhausenov efekt",
+      "Barkhausenov učinak",
+      "Barkhausen effect",
+      "Barkhausenov šum"
+    ],
+    "explanation": "Heinrich Barkhausen 1919. je pomoću zavojnice i pojačala registrirao kratke skokove magnetizacije feromagnetskog materijala, čujne kao pucketanje.",
+    "sources": [
+      "https://maglabweb.magnet.fsu.edu/magnet-academy/watch-play/interactive-tutorials/barkhausen-effect/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0845-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Aperiodična pločica šešir otkrivena 2023.",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Matematičari su 2023. predstavili trinaesterokutnu pločicu kojom se ravnina može popločati bez ponavljajućeg uzorka. Kojim su je svakodnevnim predmetom prozvali?",
+    "answers": [
+      "Šešir",
+      "Sesir",
+      "Hat",
+      "The hat"
+    ],
+    "explanation": "Aperiodična monotila koju je otkrio David Smith i matematički obradio tim Craiga Kaplana dobila je nadimak 'hat', odnosno šešir. Ima 13 stranica i ne dopušta periodično popločavanje.",
+    "sources": [
+      "https://cs.uwaterloo.ca/news/trick-of-the-hat-finding-the-elusive-einstein-tile"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0846-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Francuski predinternetski sustav Minitel",
+    "difficulty": 3,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Dok je World Wide Web još bio daleka budućnost, Francuzi su već 1980-ih preko terminala s tipkovnicom pregledavali imenike, rezervirali karte i razmjenjivali poruke. Kako se zvao taj sustav?",
+    "answers": [
+      "Minitel",
+      "Minitel sustav"
+    ],
+    "explanation": "Francuski Minitel bio je mrežni videoteksni sustav koji se proširio od 1982. godine. Korisnici su preko posebnih terminala pristupali informacijama i uslugama.",
+    "sources": [
+      "https://collection.sciencemuseumgroup.org.uk/objects/co447955/alcatel-minitel-communication-terminal-france-1983"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0847-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Jemenski grad Shibam i višekatnice od opeke",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U jemenskom Hadramautu, uz nekadašnji karavanski put, kuće od sušene opeke penju se i do sedam katova. Koji se utvrđeni grad zato naziva 'Manhattanom pustinje'?",
+    "answers": [
+      "Shibam",
+      "Šibam",
+      "Sibam"
+    ],
+    "explanation": "Stari utvrđeni Shibam u dolini Hadramaut poznat je po visokim kućama od sušene zemljane opeke. UNESCO ga ističe kao rani primjer vertikalnog urbanizma.",
+    "sources": [
+      "https://whc.unesco.org/en/list/192/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0848-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "Sei Shōnagon i japanska Knjiga uzglavlja",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Japanska dvorska dama Sei Shōnagon oko 1000. godine bilježila je popise, dojmove i sitne prizore života na dvoru. Pod kojim je naslovom poznata njezina zbirka?",
+    "answers": [
+      "Knjiga uzglavlja",
+      "Zapisi pod uzglavljem",
+      "The Pillow Book",
+      "Makura no Sōshi",
+      "Makura no Soshi",
+      "Makura no Soši"
+    ],
+    "explanation": "'The Pillow Book' (Makura no Sōshi) zbirka je opažanja, popisa i anegdota Sei Shōnagon iz japanskog razdoblja Heian, dovršena približno 1002. godine.",
+    "sources": [
+      "https://www.worldhistory.org/The_Pillow_Book/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0849-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "Prvi Eurosong u Luganu 1956.",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na prvom Eurosongu svaka je od sedam država poslala po dvije pjesme, a glasovi žirija ostali su tajni. Koje je godine održano to natjecanje u Luganu?",
+    "answers": [
+      "1956",
+      "1956."
+    ],
+    "explanation": "Prvi Eurovision Song Contest održan je 24. svibnja 1956. u švicarskom Luganu, sa sedam država i ukupno četrnaest pjesama.",
+    "sources": [
+      "https://www.eurovision.com/eurovision-song-contest/lugano-1956/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0850-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "Sepak takraw i pletena lopta preko mreže",
+    "difficulty": 3,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Preko mreže leti tradicionalno pletena lopta od ratana, a igrači je prebacuju nogama, glavom i tijelom, ali ne rukama. Kako se zove ovaj sport jugoistočne Azije?",
+    "answers": [
+      "Sepak takraw",
+      "Sepaktakraw",
+      "Sepak-takraw",
+      "Takraw"
+    ],
+    "explanation": "Sepak takraw igra se preko mreže s loptom tradicionalno pletenom od ratana, a danas i od sintetičkih vlakana. U standardnoj ekipnoj inačici svaka strana ima tri igrača.",
+    "sources": [
+      "https://sepak-takraw.co.uk/BSTA_how_to_play.htm"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0851-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pića",
+    "focus": "Korejski slatki napitak od riže sikhye",
+    "difficulty": 4,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U Koreji se kuhana riža pomiješa sa sladnom vodom i ostavi da nastane sladak napitak koji se često poslužuje nakon jela ili za blagdane. Kako se zove taj tradicionalni napitak?",
+    "answers": [
+      "Sikhye",
+      "Shikhye",
+      "Sikhe",
+      "Sikhje",
+      "Sik-hye"
+    ],
+    "explanation": "Sikhye (식혜) korejski je slatki napitak od riže i ječmenog slada. Enzimi iz slada pretvaraju dio rižina škroba u šećere.",
+    "sources": [
+      "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=181&vcontsId=180000"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0852-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Brendovi",
+    "focus": "Brkati lik u logotipu Bialettija",
+    "difficulty": 2,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Talijanske reklame iz 1950-ih proslavile su brkatog čovječuljka na osmerokutnom kuhalu za kavu Moka Express. Koja je marka taj lik pretvorila u svoj zaštitni znak?",
+    "answers": [
+      "Bialetti",
+      "Bialeti"
+    ],
+    "explanation": "Brkati lik 'L'omino con i baffi' pojavio se 1953. kao dio vizualnog identiteta Bialettija, proizvođača kuhala Moka Express koje je Alfonso Bialetti osmislio 1933.",
+    "sources": [
+      "https://www.bialetti.co.nz/pages/the-famous-moka"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0853-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "Hugo Grotius i rasprava Mare Liberum",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Portugal je nekoć polagao pravo na daleke pomorske putove, no 1609. objavljena je rasprava 'Mare Liberum' koja je zagovarala slobodu plovidbe i trgovine. Koji ju je nizozemski pravnik napisao?",
+    "answers": [
+      "Hugo Grotius",
+      "Grotius",
+      "Hugo de Groot",
+      "Huig de Groot",
+      "Hugo Grotije"
+    ],
+    "explanation": "Hugo Grotius objavio je 1609. 'Mare Liberum' ('Slobodno more'), raspravu koja je postala važan temelj ideje slobode mora u međunarodnom pravu.",
+    "sources": [
+      "https://iep.utm.edu/grotius/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0854-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "Tally štapići i požar Westminstera 1834.",
+    "difficulty": 4,
+    "styleId": 97,
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "question": "Kad su 1834. u Londonu spaljivali odbačene drvene potvrde o porezima, požar je zahvatio stari Westminster. Kako su se zvali ti štapići s urezima koji su stoljećima služili za bilježenje iznosa?",
+    "answers": [
+      "Tally sticks",
+      "Tally stick",
+      "Tally štapići",
+      "Računski štapići",
+      "Štapići s urezima"
+    ],
+    "explanation": "Engleska državna riznica stoljećima je upotrebljavala drvene 'tally sticks' s urezima za financijske zapise. Spaljivanje odbačenih primjeraka 1834. izazvalo je požar stare Westminsterske palače.",
+    "sources": [
+      "https://collection.sciencemuseumgroup.org.uk/objects/co60506/medieval-exchequer-tally-sticks-exchequer-tallies"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0855-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Vremenske prilike",
+    "focus": "Morning Glory valjkasti oblaci iznad zaljeva Carpentaria",
+    "difficulty": 3,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Iznad australskog zaljeva Carpentaria povremeno putuju golemi valjkasti oblaci, dugački i stotinama kilometara, osobito od rujna do studenoga. Kojim su engleskim nazivom poznati?",
+    "answers": [
+      "Morning Glory",
+      "Morning Glory cloud",
+      "Morning Glory clouds",
+      "Oblak Morning Glory"
+    ],
+    "explanation": "Morning Glory rijetka je vrsta valjkastog oblaka koja se razmjerno redovito javlja nad zaljevom Carpentaria u australskom proljeću.",
+    "sources": [
+      "https://media.bom.gov.au/social/blog/2272/whats-the-science-behind-these-spectacular-weather-photos/-8023-42d2-b941-3ca967ae9f14"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0856-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "Crni pušači na oceanskom dnu",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Na oceanskom dnu iz mineralnih dimnjaka izbija vrela voda koja u dodiru s hladnim morem stvara tamne oblake sitnih sulfida. Kako se nazivaju ti hidrotermalni izvori?",
+    "answers": [
+      "Crni pušači",
+      "Crni pusaci",
+      "Black smokers",
+      "Crni dimnjaci"
+    ],
+    "explanation": "'Black smokers', odnosno crni pušači, hidrotermalni su dimnjaci u kojima se iz vruće vode pri miješanju s hladnom morskom vodom izdvajaju tamne čestice metalnih sulfida.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/vents.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0857-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "Kvinkunks kao raspored pet točaka",
+    "difficulty": 5,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Latinski korijen 'quinque' upućuje na broj pet, a na kockici ga vidimo kao četiri točke u kutovima i petu u sredini. Kako se stručnim nazivom zove taj raspored?",
+    "answers": [
+      "Kvinkunks",
+      "Kvinkunx",
+      "Quincunx",
+      "Kvinkunksni raspored"
+    ],
+    "explanation": "Quincunx je raspored pet točaka ili predmeta s četiri na uglovima kvadrata i jednim u sredini, kao na strani kockice označenoj brojem pet.",
+    "sources": [
+      "https://www.collinsdictionary.com/dictionary/english/quincunx"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0858-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "Ultrazvučna komunikacija nizinskog prugastog tenreka",
+    "difficulty": 5,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Mali madagaskarski sisavac može proizvoditi ultrazvučne signale trljanjem posebnih struktura na leđima, premda izgledom pomalo podsjeća na ježa. Koja je to životinja?",
+    "answers": [
+      "Nizinski prugasti tenrek",
+      "Prugasti tenrek",
+      "Lowland streaked tenrec",
+      "Hemicentetes semispinosus"
+    ],
+    "explanation": "Nizinski prugasti tenrek (Hemicentetes semispinosus) proizvodi ultrazvučne zvukove trljanjem skupine specijaliziranih bodlji na leđima, što se naziva stridulacijom.",
+    "sources": [
+      "https://www.nhm.ac.uk/discover/the-weird-world-of-tenrecs.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0859-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "Prigušivač njihanja od 660 tona u neboderu Taipei 101",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Unutar jednog nebodera visi zlatna čelična kugla mase 660 tona i promjera oko 5,5 metara, čije njihanje ublažava pomicanje zgrade za jakog vjetra. U kojem se neboderu nalazi?",
+    "answers": [
+      "Taipei 101",
+      "Taipei101",
+      "Tajpej 101",
+      "Tajpei 101"
+    ],
+    "explanation": "Taipei 101 ima vidljiv maseni prigušivač njihanja, čeličnu kuglu tešku 660 tona koja uz hidraulične prigušivače stabilizira zgradu.",
+    "sources": [
+      "https://www.taipei-101.com.tw/en/observatory/feature"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0860-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "Bidriware kao srebrni intarzijski rad na tamnoj leguri",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "U indijskom Bidaru majstori u tamnu leguru cinka i bakra umeću tanke srebrne žice, pa posude dobivaju sjajne motive na crnoj podlozi. Kako se zove taj tradicionalni zanat?",
+    "answers": [
+      "Bidriware",
+      "Bidri",
+      "Bidri rad",
+      "Bidri craft"
+    ],
+    "explanation": "Bidriware je tradicija ukrašavanja metalnih predmeta iz Bidara u Karnataki. U potamnjenu leguru na bazi cinka umeću se srebrni motivi.",
+    "sources": [
+      "https://handicrafts.nic.in/crafts/All_Crafts/Craft_Categories/Metal/Other_Metal/Bidriware/BidriwareWebPage.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0861-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "Flettnerovi rotori za pomoćni pogon brodova",
+    "difficulty": 4,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Na nekim teretnim brodovima umjesto klasičnih jedara stoje visoki cilindri koji se okreću i zahvaljujući Magnusovu učinku pomažu pogonu. Kako se nazivaju?",
+    "answers": [
+      "Flettnerovi rotori",
+      "Flettnerov rotor",
+      "Flettner rotors",
+      "Flettner rotor",
+      "Rotorska jedra",
+      "Rotor sails"
+    ],
+    "explanation": "Flettnerovi rotori rotirajući su vertikalni cilindri koji pri bočnom vjetru stvaraju pogonsku silu zahvaljujući Magnusovu učinku, smanjujući potrošnju goriva broda.",
+    "sources": [
+      "https://greenvoyage2050.imo.org/technology/flettner-rotors/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0862-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "Japanska tkanina za zamatanje furoshiki",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kvadratna tkanina može zamijeniti papir za darove ili vrećicu: dovoljno ju je preklopiti i svezati oko predmeta. Kako se zove ta japanska tradicija zamatanja?",
+    "answers": [
+      "Furoshiki",
+      "Furošiki",
+      "Furoshiki zamatanje"
+    ],
+    "explanation": "Furoshiki je japanska tradicija višekratnog zamatanja i nošenja predmeta tkaninom, koju je japansko Ministarstvo okoliša promoviralo kao zamjenu za jednokratnu ambalažu.",
+    "sources": [
+      "https://www.env.go.jp/en/earth/tm6/060511.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0863-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Luminol i plava kemiluminiscencija tragova krvi",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na mjestu zločina gotovo nevidljivi tragovi krvi pod određenim uvjetima mogu zasvijetliti plavkasto nakon prskanja kemijskim reagensom. Kako se zove taj reagens?",
+    "answers": [
+      "Luminol"
+    ],
+    "explanation": "Luminol pri oksidaciji može emitirati plavu svjetlost, a hemoglobin u krvi katalizira reakciju. Test je osjetljiv, ali nije posve specifičan za krv.",
+    "sources": [
+      "https://www.acs.org/pressroom/presspacs/2017/acs-presspac-may-31-2017/detecting-bloodstains-with-an-antimalarial-compound.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0864-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Filozofija",
+    "focus": "Sorites paradoks hrpe i neodređene granice pojmova",
+    "difficulty": 4,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Jedno zrno pijeska nije hrpa, a dodavanje samo jednog zrna naizgled ne bi smjelo ništa promijeniti. Koji se antički paradoks krije u tom razmišljanju?",
+    "answers": [
+      "Sorites",
+      "Paradoks sorites",
+      "Sorites paradoks",
+      "Paradoks hrpe",
+      "Sorites paradox"
+    ],
+    "explanation": "Sorites, poznat i kao paradoks hrpe, pokazuje teškoću određivanja oštre granice nejasnih pojmova poput 'hrpe' ili 'ćelavosti'.",
+    "sources": [
+      "https://plato.stanford.edu/entries/sorites-paradox/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0865-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "Kanun kao trapezasta citra s polugama za ugađanje",
+    "difficulty": 4,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Na Bliskom istoku svirač trza žice trapezastog glazbala s malenim polugama kojima tijekom izvedbe može mijenjati visinu tona. Kako se zove to glazbalo?",
+    "answers": [
+      "Kanun",
+      "Qanun",
+      "Kānūn",
+      "Qānūn",
+      "Kanun glazbalo"
+    ],
+    "explanation": "Qānūn ili kanun trapezasto je trzalačko glazbalo iz porodice citri. Male poluge omogućuju brze promjene visine tona potrebne u tradiciji makama.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/500957"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0866-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Obrazovanje",
+    "focus": "Loris Malaguzzi i pristup Reggio Emilia",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Talijanski grad Reggio Emilia, dječji ateljei i ideja o 'stotinu jezika' izražavanja tri su traga do kojeg pedagoga, važnog za tamošnji pristup ranom obrazovanju?",
+    "answers": [
+      "Loris Malaguzzi",
+      "Malaguzzi",
+      "Loris Malaguzi"
+    ],
+    "explanation": "Loris Malaguzzi snažno je oblikovao obrazovni pristup Reggio Emilia, koji naglašava dječje istraživanje, suradnju, kreativnost i mnoge načine izražavanja.",
+    "sources": [
+      "https://www.reggiochildren.it/en/reggio-emilia-approach/loris-malaguzzi/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0867-20261029",
+    "createdAt": "2026-10-29T11:52:10.372Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "Dallol i ekstremno kiseli izvori u depresiji Danakil",
+    "difficulty": 5,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "U etiopskoj depresiji Danakil izvori temperature do 108 °C stvaraju žute, zelene i crvene slane bazene, a izmjerene vrijednosti pH mogu biti čak negativne. Kako se zove taj hidrotermalni lokalitet?",
+    "answers": [
+      "Dallol",
+      "Dalol"
+    ],
+    "explanation": "Dallol je iznimno vruć, slan i kiseo hidrotermalni sustav u etiopskoj depresiji Danakil. Boje bazena povezane su s kemijskim promjenama otopljenog željeza.",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/30801049/"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
