@@ -18011,5 +18011,621 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0743-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Aapravasi Ghat i ugovorni radnici na Mauricijusu",
+    "difficulty": 4,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Nakon ukidanja ropstva britanska je uprava na Mauricijusu prihvaćala radnike pod ugovorom, ponajviše iz Indije. Kako se zove povijesni prihvatni kompleks u Port Louisu, danas pod zaštitom UNESCO-a?",
+    "answers": [
+      "Aapravasi Ghat",
+      "Aapravasi",
+      "Aapravasi Ghat Immigration Depot"
+    ],
+    "explanation": "Aapravasi Ghat bio je prihvatni kompleks za radnike pod ugovorom u Port Louisu. Kroz sustav je tijekom 19. i početkom 20. stoljeća prošlo gotovo pola milijuna radnika iz Indije.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1227"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0744-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "turska umjetnost mramoriranja papira ebru",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Umjetnik kaplje pigmente na zgusnutu tekućinu, oblikuje šare pa ih prenosi na papir. Kako se zove tradicionalna turska tehnika ukrašavanja koja se koristila i pri uvezivanju knjiga?",
+    "answers": [
+      "Ebru",
+      "Ebru tehnika",
+      "Turski ebru"
+    ],
+    "explanation": "Ebru je turska umjetnost mramoriranja papira: pigmenti plutaju na pripremljenoj tekućini, a oblikovani se uzorak prenosi na papir.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/ebru-turkish-art-of-marbling-00644"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0745-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "grenlandski morski pas i datiranje očne leće",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Starost mu se procjenjuje datiranjem bjelančevina očne leće, a neke jedinke mogu živjeti stoljećima. Koji morski pas iz hladnih sjevernih voda slovi kao najdugovječniji kralježnjak?",
+    "answers": [
+      "Grenlandski morski pas",
+      "Grenlandski pas",
+      "Greenland shark",
+      "Somniosus microcephalus"
+    ],
+    "explanation": "Grenlandski morski pas može doživjeti više stoljeća. NOAA navodi da je najveća jedinka u jednom istraživanju procijenjena na između 272 i 512 godina.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/greenland-shark.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0746-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "Kibbleova vaga i ostvarivanje definicije kilograma",
+    "difficulty": 5,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Uređaj koji elektromagnetskom silom uravnotežuje težinu mase omogućuje precizno mjerenje povezano s Planckovom konstantom. Kako se zove ta vaga, važna za suvremenu definiciju kilograma?",
+    "answers": [
+      "Kibbleova vaga",
+      "Kibbleova ravnoteža",
+      "Kibble balance",
+      "Kiblova vaga",
+      "Kibble vaga"
+    ],
+    "explanation": "Kibbleova vaga uspoređuje mehaničke i električne veličine te omogućuje ostvarivanje jedinice mase na temelju fiksne vrijednosti Planckove konstante.",
+    "sources": [
+      "https://www.nist.gov/si-redefinition/kilogram/kilogram-kibble-balance"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0747-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "rimski grad Volubilis u Maroku",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U sjevernoj Africi, nedaleko od Meknesa, stoje rimski mozaici i slavoluk nekadašnjeg grada podno planine Zerhoun. Kako se zove to marokansko arheološko nalazište?",
+    "answers": [
+      "Volubilis",
+      "Volubilis u Maroku"
+    ],
+    "explanation": "Volubilis je arheološko nalazište u Maroku s bogatim rimskim ostacima, mozaicima i tragovima ranijih i kasnijih civilizacija.",
+    "sources": [
+      "https://whc.unesco.org/en/list/836/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0748-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "godina prve objave slike sjene crne rupe u M87",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Event Horizon Telescope snimio je sjenu supermasivne crne rupe u galaksiji M87, a rezultat je postao svjetska znanstvena vijest. Koje je godine javnosti predstavljena ta prva slika?",
+    "answers": [
+      "2019",
+      "2019.",
+      "2019. godina"
+    ],
+    "explanation": "Prva slika sjene crne rupe u galaksiji M87 predstavljena je 10. travnja 2019. u suradnji teleskopa Event Horizon Telescope.",
+    "sources": [
+      "https://www.esa.int/gsp/ACT/news/2019-04-10-eht_blackholeshadow/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0749-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "saudijska zidna umjetnost Al-Qatt Al-Asiri",
+    "difficulty": 5,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Šareni geometrijski ornamenti na unutarnjim zidovima kuća u saudijskoj regiji Asir tradicionalno su djelo žena. Kako se naziva ta umjetnost, uvrštena na UNESCO-ov popis nematerijalne baštine?",
+    "answers": [
+      "Al-Qatt Al-Asiri",
+      "Al Qatt Al Asiri",
+      "Al-Qatt",
+      "Qatt Al-Asiri",
+      "Al Qatt"
+    ],
+    "explanation": "Al-Qatt Al-Asiri tradicionalna je ženska umjetnost oslikavanja unutarnjih zidova u regiji Asir u Saudijskoj Arabiji, s geometrijskim i simboličkim motivima.",
+    "sources": [
+      "https://ich.unesco.org/en/decisions/12.COM/11.B.27"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0750-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "plava krv potkovnjača i medicinski testovi",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Za razliku od ljudske, krv morskih potkovnjača sadrži pigment s bakrom, a njezine stanice pomažu otkriti bakterijsku kontaminaciju lijekova. Koje je boje ta krv?",
+    "answers": [
+      "Plava",
+      "Plave boje",
+      "Plavkasta"
+    ],
+    "explanation": "Krv potkovnjača plava je zbog hemocijanina koji sadrži bakar, a njezini amebociti koriste se za otkrivanje bakterijskih endotoksina.",
+    "sources": [
+      "https://ocean.si.edu/ocean-life/invertebrates/creature-feature-amazing-horseshoe-crab"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0751-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "crvena i bijela nit u običaju martenice",
+    "difficulty": 1,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "U Bugarskoj se prvoga ožujka daruju i nose niti koje simboliziraju dolazak proljeća. Koje su dvije boje tradicionalno isprepletene u martenici?",
+    "answers": [
+      "Crvena i bijela",
+      "Bijela i crvena",
+      "Crveno-bijela",
+      "Crvena bijela",
+      "Bijelo-crvena"
+    ],
+    "explanation": "Martenica, odnosno martenitsa, proljetni je ukras od crvene i bijele niti; srodni običaji postoje u više zemalja jugoistočne Europe.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/cultural-practices-associated-with-the-1st-of-march-01287"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0752-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "kružni ples xòe naroda Tai u Vijetnamu",
+    "difficulty": 4,
+    "styleId": 93,
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "question": "Na proslavama naroda Tai u Vijetnamu sudionici oblikuju krug, hvataju se za ruke i usklađeno plešu u znak zajedništva. Kako se zove taj tradicionalni ples?",
+    "answers": [
+      "Xòe",
+      "Xoe",
+      "Xòe ples",
+      "Ples xòe"
+    ],
+    "explanation": "Xòe je tradicionalni ples naroda Tai u Vijetnamu, poznat i po kružnom obliku koji izražava zajedništvo i sklad.",
+    "sources": [
+      "https://ich.unesco.org/es/RL/arte-de-la-danza-xoe-del-pueblo-tai-en-viet-nam-01575"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0753-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "sokolarstvo kao vještina rada s pticama grabljivicama",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koja se tradicionalna vještina, danas i na UNESCO-ovu popisu, prakticira s kožnom rukavicom, mamcem i posebno treniranom pticom grabljivicom?",
+    "answers": [
+      "Sokolarstvo",
+      "Sokolarenje",
+      "Falconry"
+    ],
+    "explanation": "Sokolarstvo je tradicionalna vještina uzgoja, treniranja i letenja s pticama grabljivicama, izvorno povezana s lovom.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01708"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0754-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Neptunov tamni nepravilni mjesec Proteus",
+    "difficulty": 5,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Voyager 2 otkrio je 1989. tamni, nepravilno oblikovan Neptunov mjesec, nazvan po grčkom morskom božanstvu koje mijenja obličje. Koji je to mjesec?",
+    "answers": [
+      "Proteus",
+      "Protej",
+      "Neptunov Proteus"
+    ],
+    "explanation": "Proteus je jedan od većih Neptunovih mjeseca. Voyager 2 otkrio ga je 1989., a ime nosi po grčkom morskom bogu promjenjiva lika.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/proteus/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0755-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "norveški rudarski grad Røros i bakar",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Drvene kuće, rudnici bakra koji su radili više od tri stoljeća i oštra norveška klima tri su traga do kojeg UNESCO-ova rudarskog grada?",
+    "answers": [
+      "Røros",
+      "Roros",
+      "Röros"
+    ],
+    "explanation": "Røros je norveški rudarski grad osnovan u 17. stoljeću, s tradicijom eksploatacije bakra koja je trajala do 1977.",
+    "sources": [
+      "https://whc.unesco.org/en/list/55"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0756-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pića",
+    "focus": "belgijska kultura piva kao UNESCO-ova nematerijalna baština",
+    "difficulty": 1,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Pivo je mnogima prva asocijacija na jednu europsku državu, ali UNESCO je 2016. zaštitio i čitavu kulturu njegove proizvodnje i uživanja. O kojoj je državi riječ?",
+    "answers": [
+      "Belgija",
+      "Belgije",
+      "Belgium",
+      "Kraljevina Belgija"
+    ],
+    "explanation": "UNESCO je 2016. uvrstio kulturu piva u Belgiji na Reprezentativni popis nematerijalne kulturne baštine čovječanstva.",
+    "sources": [
+      "https://ich.unesco.org/fr/RL/la-culture-de-la-biere-en-belgique-01062"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0757-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "rotterdamska modernistička tvornica Van Nelle",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U Rotterdamu je 1920-ih izgrađen tvornički kompleks staklenih pročelja za preradu kave, čaja i duhana, danas pod UNESCO-ovom zaštitom. Koje ime nosi ta tvornica?",
+    "answers": [
+      "Van Nellefabriek",
+      "Van Nelle",
+      "Tvornica Van Nelle",
+      "Van Nelle Factory"
+    ],
+    "explanation": "Van Nellefabriek u Rotterdamu primjer je modernističke industrijske arhitekture s velikim staklenim pročeljima.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1441/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0758-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "japanski rudnik srebra Iwami Ginzan",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "U 16. i 17. stoljeću japansko srebro stizalo je iz velikog rudarskog područja na otoku Honshu. Iz obalnih luka izvozilo se i prema Koreji i Kini. Kako se zove taj UNESCO-ov rudnik?",
+    "answers": [
+      "Iwami Ginzan",
+      "Iwami Ginzan Silver Mine",
+      "Rudnik Iwami Ginzan"
+    ],
+    "explanation": "Iwami Ginzan na jugozapadu Honshua povijesno je rudarsko područje srebra koje je imalo važnu ulogu u trgovini istočne Azije.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1246"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0759-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "prosopagnozija i teškoće prepoznavanja lica",
+    "difficulty": 3,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Osoba uredno vidi oči, nos i usta, ali teško prepoznaje čak i poznata lica pa se oslanja na glas. Kojim se nazivom, izvedenim iz grčkih riječi za lice i neprepoznavanje, označava to stanje?",
+    "answers": [
+      "Prosopagnozija",
+      "Prosopagnosia",
+      "Prozopagnozija",
+      "Sljepoća za lica"
+    ],
+    "explanation": "Prosopagnozija je poremećaj prepoznavanja lica, iako osoba može normalno vidjeti njihove pojedinačne dijelove.",
+    "sources": [
+      "https://www.nhs.uk/conditions/face-blindness/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0760-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Diels-Alderova cikloadicija i Nobelova nagrada 1950.",
+    "difficulty": 4,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Sinteza koja se često opisuje kao cikloadicija [4+2] donijela je 1950. Nobelovu nagradu dvojici njemačkih kemičara. Kojim dvama prezimenima nazivamo tu reakciju?",
+    "answers": [
+      "Diels-Alder",
+      "Diels Alder",
+      "Diels i Alder",
+      "Diels-Alderova reakcija",
+      "Diels Alderova reakcija"
+    ],
+    "explanation": "Otto Diels i Kurt Alder nagrađeni su Nobelovom nagradom za kemiju 1950. za otkriće i razvoj dienske sinteze, poznate kao Diels-Alderova reakcija.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/chemistry/1950/summary/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0761-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "dinastija Torwa i prijestolnica Khami",
+    "difficulty": 5,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Arheolozi su u Khamiju, nedaleko od Bulawaya, pronašli dokaze o trgovini s Europom i Kinom. Koja je dinastija ondje imala prijestolnicu nakon slabljenja Velikog Zimbabvea?",
+    "answers": [
+      "Torwa",
+      "Dinastija Torwa",
+      "Torva",
+      "Torwa dynasty"
+    ],
+    "explanation": "Khami je bio prijestolnica dinastije Torwa nakon propadanja Velikog Zimbabvea; nalazi pokazuju široke trgovačke veze.",
+    "sources": [
+      "https://whc.unesco.org/en/list/365/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0762-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "Walter Gropius i tvornica Fagus u Alfeldu",
+    "difficulty": 1,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Tvornica Fagus u Alfeldu, poznata po velikim staklenim pročeljima koja su najavila modernizam, proslavila je budućeg osnivača Bauhausa. Kako se zvao taj arhitekt?",
+    "answers": [
+      "Walter Gropius",
+      "Gropius",
+      "Valter Gropius",
+      "Walter Adolf Gropius"
+    ],
+    "explanation": "Walter Gropius projektirao je kompleks tvornice Fagus, jedno od ranih znamenitih ostvarenja modernističke arhitekture.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1368"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0763-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "Poverty Point i prapovijesni zemljani humci u Louisiani",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Pet humaka i šest koncentričnih polueliptičnih zemljanih grebena čine prapovijesni kompleks Poverty Point u dolini donjeg Mississippija. U kojoj se američkoj saveznoj državi nalazi?",
+    "answers": [
+      "Louisiana",
+      "Luizijana",
+      "Lujzijana",
+      "State of Louisiana"
+    ],
+    "explanation": "Poverty Point je prapovijesni kompleks monumentalnih zemljanih građevina u američkoj saveznoj državi Louisiani.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1435/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0764-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "vijetnamska dvorska glazba Nha Nhac",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "U Vijetnamu je 'elegantna glazba' stoljećima pratila krunidbe, pogrebe i dvorske svečanosti. Kojim se dvjema vijetnamskim riječima naziva ta glazbena tradicija?",
+    "answers": [
+      "Nha Nhac",
+      "Nhã nhạc",
+      "Nhã Nhạc",
+      "Nha nhac"
+    ],
+    "explanation": "Nha Nhac doslovno znači elegantna glazba, a označava vijetnamsku dvorsku glazbenu tradiciju povezanu s državnim ceremonijama.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/nha-nhac-vietnamese-court-music-00074"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0765-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "okinavsko glazbeno kazalište kumiodori",
+    "difficulty": 3,
+    "styleId": 87,
+    "styleDescription": "Kreni od razlike originala i adaptacije pa traži naslov",
+    "question": "Na Okinawi je nastalo glazbeno kazalište koje povezuje otočnu tradiciju s japanskim nōom i kabukijem te kineskim utjecajima. Kako se zove ta scenska umjetnost?",
+    "answers": [
+      "Kumiodori",
+      "Kumi odori",
+      "Kumi-odori"
+    ],
+    "explanation": "Kumiodori je tradicijsko glazbeno kazalište Okinave koje spaja lokalnu glazbu i ples s japanskim i kineskim scenskim utjecajima.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/kumiodori-traditional-okinawan-musical-theatre-00405"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0766-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "prapovijesno poljoprivredno nalazište Kuk u Papui Novoj Gvineji",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "U močvarama gorja Papue Nove Gvineje arheolozi su pronašli tragove nasipa i odvodnih jaraka, svjedočanstvo tisućljeća lokalne poljoprivrede. Kako se zove to nalazište?",
+    "answers": [
+      "Kuk",
+      "Kuk Early Agricultural Site",
+      "Nalazište Kuk"
+    ],
+    "explanation": "Kuk je prapovijesno poljoprivredno nalazište u Papui Novoj Gvineji s dokazima dugotrajne, neovisno razvijene poljoprivrede.",
+    "sources": [
+      "https://whc.unesco.org/en/list/887"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0767-20261029",
+    "createdAt": "2026-10-29T07:40:09.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "nigerijski kulturni krajolik Sukur i palača Hidi",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U Nigeriji se na istom lokalitetu susreću terasirana polja i ostaci nekadašnjih talionica željeza, a iznad sela stoji palača poglavara Hidi. Kako se zove taj kulturni krajolik?",
+    "answers": [
+      "Sukur",
+      "Sukur Cultural Landscape",
+      "Kulturni krajolik Sukur"
+    ],
+    "explanation": "Sukur je kulturni krajolik u sjeveroistočnoj Nigeriji, poznat po terasastim poljima, palači Hidi i povijesti taljenja željeza.",
+    "sources": [
+      "https://whc.unesco.org/en/list/938"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
