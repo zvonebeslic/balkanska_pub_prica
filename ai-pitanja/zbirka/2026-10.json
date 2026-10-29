@@ -15560,5 +15560,630 @@
     "type": "blitz",
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0643-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "povijesni hidraulički sustav u iranskom Shushtaru",
+    "difficulty": 5,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Rijeka Karun u Iranu stoljećima je napajala sustav brana, kanala i mlinova koji je UNESCO zaštitio 2009. Po kojem je gradu nazvan taj povijesni hidraulički sustav?",
+    "answers": [
+      "Shushtar",
+      "Šuštar",
+      "Šuštarov sustav",
+      "Shushtar Historical Hydraulic System"
+    ],
+    "explanation": "Povijesni hidraulički sustav Shushtar obuhvaća kanale, brane i mlinove na rijeci Karun. UNESCO ga je uvrstio na Popis svjetske baštine 2009.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1315"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0644-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pop kultura",
+    "focus": "materijal srednjovjekovnih šahovskih figura s otoka Lewis",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Na škotskom otoku Lewis 1831. pronađene su srednjovjekovne šahovske figure s neobično izražajnim licima. Od bjelokosti koje životinje izrađene su mnoge od njih?",
+    "answers": [
+      "Morž",
+      "Morža",
+      "Morževa bjelokost",
+      "Morževe bjelokosti",
+      "Walrus"
+    ],
+    "explanation": "Mnoge Lewisove šahovske figure, nastale oko 1150.–1200., rezbarene su od morževe bjelokosti; British Museum čuva primjerke iz tog nalaza.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/H_1831-1101-78"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0645-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "organizacija u kojoj je nastao World Wide Web",
+    "difficulty": 1,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Tim Berners-Lee razvio je World Wide Web radi razmjene informacija među znanstvenicima, a prva mrežna stranica radila je na njegovu računalu. U kojoj je europskoj organizaciji radio?",
+    "answers": [
+      "CERN",
+      "Europska organizacija za nuklearna istraživanja",
+      "European Organization for Nuclear Research"
+    ],
+    "explanation": "Tim Berners-Lee izumio je World Wide Web 1989. u CERN-u. Prva mrežna stranica ondje je predstavljala sam projekt WWW.",
+    "sources": [
+      "https://home.cern/science/computing/the-birth-of-the-web"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0646-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Brendovi",
+    "focus": "prvi proizvod skeniran UPC barkodom 1974.",
+    "difficulty": 1,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Na blagajni trgovine u Ohiju 1974. prvi je put skeniran UPC barkod na pakiranju žvakaćih guma. Kako se zvala ta guma s okusom voća?",
+    "answers": [
+      "Juicy Fruit",
+      "Wrigley's Juicy Fruit",
+      "Wrigleys Juicy Fruit",
+      "Wrigley Juicy Fruit"
+    ],
+    "explanation": "Prvi proizvod očitan komercijalnim UPC skenerom 26. lipnja 1974. u Troyu u Ohiju bilo je pakiranje Wrigley's Juicy Fruit žvakaćih guma.",
+    "sources": [
+      "https://americanhistory.si.edu/ja/collections/object/nmah_892778"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0647-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "četiri karavanska grada pod zaštitom UNESCO-a",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Ouadane, Chinguetti, Tichitt i Oualata stoljećima su bili postaje karavana zapadne Sahare. U kojoj se današnjoj afričkoj državi nalaze ta četiri UNESCO-ova grada?",
+    "answers": [
+      "Mauritanija",
+      "Mauritaniji",
+      "Mauritania"
+    ],
+    "explanation": "Ouadane, Chinguetti, Tichitt i Oualata četiri su povijesna trgovačka i vjerska središta u Mauritaniji, upisana na UNESCO-ov Popis svjetske baštine.",
+    "sources": [
+      "https://whc.unesco.org/en/list/750"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0648-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "tradicionalni omanski kanali za navodnjavanje aflaj",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "U sušnim krajevima Omana voda se stoljećima razvodila gravitacijom, a njezina raspodjela određivala se i prema astronomskim opažanjima. Kojim se zajedničkim nazivom zovu ti kanalski sustavi?",
+    "answers": [
+      "Aflaj",
+      "Falaj",
+      "Afladž",
+      "Faladž"
+    ],
+    "explanation": "Aflaj je množina od falaj, naziva za tradicionalne omanske sustave navodnjavanja. Pet takvih sustava čini UNESCO-ovu zaštićenu cjelinu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1207/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0649-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Pravo i društvo",
+    "focus": "prvi nacionalni spomenik Sjedinjenih Država",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Theodore Roosevelt 1906. proglasio je prvi nacionalni spomenik SAD-a, neobičnu kamenu formaciju svetu mnogim domorodačkim narodima. Kako se zove taj toranj u Wyomingu?",
+    "answers": [
+      "Devils Tower",
+      "Devil's Tower",
+      "Đavolji toranj",
+      "Đavolja kula",
+      "Devils Tower National Monument"
+    ],
+    "explanation": "Devils Tower u Wyomingu postao je prvi nacionalni spomenik SAD-a 24. rujna 1906. proglasom predsjednika Theodorea Roosevelta.",
+    "sources": [
+      "https://www.nationalparks.org/explore/parks/devils-tower-national-monument"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0650-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "harapski grad Dholavira na otoku Khadir",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Na sušnom otoku Khadir u indijskom Gujaratu pronađeni su ostaci harapskoga grada s utvrdama i iznimnim sustavom spremnika vode. Kako se zove to arheološko nalazište?",
+    "answers": [
+      "Dholavira",
+      "Dholaviri",
+      "Dholavira Harappan City"
+    ],
+    "explanation": "Dholavira je jedan od najbolje očuvanih gradova harapske civilizacije. Posebno se ističe sustav prikupljanja i čuvanja vode.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1645"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0651-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "modul Rosette koji je sletio na komet",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Europska letjelica Rosetta 2014. poslala je na komet 67P mali modul koji je nakon prvog dodira dvaput odskočio. Kako se zvao taj modul?",
+    "answers": [
+      "Philae",
+      "Filae",
+      "Filaj",
+      "Philae lander"
+    ],
+    "explanation": "Modul Philae 12. studenoga 2014. prvi je ostvario meko slijetanje na komet. Zbog slabog prianjanja dvaput je odskočio prije zaustavljanja.",
+    "sources": [
+      "https://www.jpl.nasa.gov/news/rosettas-comet-lander-landed-three-times/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0652-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Priroda",
+    "focus": "vulkanski otok Surtsey kao prirodni laboratorij",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Nedaleko od Islanda erupcije su od 1963. do 1967. stvorile novi otok koji se od nastanka štiti kao prirodni laboratorij naseljavanja života. Kako se zove?",
+    "answers": [
+      "Surtsey",
+      "Surtsej"
+    ],
+    "explanation": "Surtsey je vulkanski otok južno od Islanda, nastao erupcijama između 1963. i 1967. Njegova zaštita omogućuje proučavanje naseljavanja biljaka i životinja.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1267"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0653-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Rijetke teme",
+    "focus": "glineni disk iz minojske palače Festos",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na Kreti je 1908. pronađen glineni disk s 241 utisnutim znakom raspoređenim u spiralu, čije značenje još nije pouzdano odgonetnuto. Kako se naziva taj nalaz?",
+    "answers": [
+      "Disk iz Festosa",
+      "Festoski disk",
+      "Disk iz Phaistosa",
+      "Phaistos Disc",
+      "Phaistoski disk",
+      "Faistoski disk"
+    ],
+    "explanation": "Disk iz Festosa pronađen je 1908. u minojskoj palači Festos. Njegovi spiralno raspoređeni znakovi još nisu općeprihvaćeno protumačeni.",
+    "sources": [
+      "https://heraklionmuseum.gr/en/exhibit/the-phaistos-disc/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0654-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "Anna Atkins i prva fotografski ilustrirana knjiga",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Botaničarka je 1843. počela izdavati knjigu o britanskim algama ilustriranu plavim otiscima dobivenima bez fotoaparata. Kako se zvala ta pionirka fotografije?",
+    "answers": [
+      "Anna Atkins",
+      "Ana Atkins",
+      "Anna Atkinsová"
+    ],
+    "explanation": "Anna Atkins izrađivala je cijanotipije algi stavljanjem uzoraka na fotoosjetljiv papir. Njezina knjiga Photographs of British Algae prva je fotografski ilustrirana knjiga.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/286656"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0655-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "australski tobolčar kvoka s otoka Rottnest",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Na otoku Rottnest živi mali australski tobolčar zaobljenih ušiju i kratkog repa, koji se može čak popeti na stablo. Kako se zove?",
+    "answers": [
+      "Kvoka",
+      "Quokka",
+      "Kvočka",
+      "Setonix brachyurus"
+    ],
+    "explanation": "Kvoka (quokka) mali je australski tobolčar iz porodice klokana. Živi i na otoku Rottnest, a unatoč građi može se penjati po drveću.",
+    "sources": [
+      "https://australian.museum/learn/animals/mammals/quokka/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0656-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "novozelandska četinjača kauri",
+    "difficulty": 3,
+    "styleId": 40,
+    "styleDescription": "Pitaj za otok kroz dvije životinjske ili botaničke značajke",
+    "question": "Sjeverni otok Novog Zelanda dom je golemoj četinjači Agathis australis, poznatoj po debelom deblu i velikim kuglastim češerima. Kojim je kratkim imenom zovu?",
+    "answers": [
+      "Kauri",
+      "Kauri stablo",
+      "Novozelandski kauri"
+    ],
+    "explanation": "Kauri (Agathis australis) endemična je četinjača Novog Zelanda, osobito sjevernog dijela Sjevernog otoka. Poznata je po golemu deblu.",
+    "sources": [
+      "https://www.nzpcn.org.nz/flora/species/agathis-australis/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0657-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "amazonska riba arapaima koja udiše zrak",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Jedna od najvećih amazonskih slatkovodnih riba udiše atmosferski zrak zahvaljujući prilagođenom plivaćem mjehuru koji djeluje poput pluća. Kojim je imenom poznata?",
+    "answers": [
+      "Arapaima",
+      "Arapaima gigas",
+      "Pirarucu",
+      "Paiche",
+      "Piraruću"
+    ],
+    "explanation": "Arapaima je velika amazonska riba koja može udisati atmosferski zrak pomoću prilagođenog plivaćeg mjehura. U Brazilu je poznata i kao pirarucu.",
+    "sources": [
+      "https://nationalzoo.si.edu/animals/arapaima"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0658-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "zajednička UNESCO-ova baština pripreme kuskusa",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Alžir, Mauritanija, Maroko i Tunis 2020. zajednički su zaštitili na UNESCO-ovu popisu običaje pripreme jela od sitnih zrnaca krupice. O kojem je jelu riječ?",
+    "answers": [
+      "Kuskus",
+      "Couscous",
+      "Kus-kus",
+      "Kus kus"
+    ],
+    "explanation": "UNESCO je 2020. uvrstio znanja i običaje pripreme i konzumacije kuskusa kao zajedničku nematerijalnu baštinu četiriju sjevernoafričkih država.",
+    "sources": [
+      "https://www.unesco.org/en/articles/unescos-inscription-couscous-traditions-example-international-cultural-cooperation"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0659-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "mongolsko gudaće glazbalo morin khuur",
+    "difficulty": 5,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Dvije žice od konjske dlake, gudalo i rezbarena konjska glava na vrhu vrata obilježja su kojeg tradicionalnog mongolskog glazbala?",
+    "answers": [
+      "Morin khuur",
+      "Morin huur",
+      "Morin hur",
+      "Morin khur",
+      "Morin-khuur"
+    ],
+    "explanation": "Morin khuur tradicionalno je mongolsko gudaće glazbalo s dvije žice, a na vrhu vrata ima rezbarenu konjsku glavu. UNESCO štiti njegovu glazbenu tradiciju.",
+    "sources": [
+      "https://www.unesco.org/archives/multimedia/document-3754"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0660-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "Keatonov nijemi film General iz 1926.",
+    "difficulty": 3,
+    "styleId": 87,
+    "styleDescription": "Kreni od razlike originala i adaptacije pa traži naslov",
+    "question": "U Keatonovoj nijemoj komediji iz 1926. strojevođa usred Američkog građanskog rata juri za otetom lokomotivom. Koji film nosi upravo ime te lokomotive?",
+    "answers": [
+      "General",
+      "The General",
+      "Film General",
+      "General (1926)"
+    ],
+    "explanation": "The General (1926.) nijema je komedija Bustera Keatona i Clydea Bruckmana. Naslov se odnosi na lokomotivu koju glavni lik pokušava vratiti.",
+    "sources": [
+      "https://www.bfi.org.uk/film/136a6211-90d9-5d18-b047-7967deac8bab/the-general"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0661-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "povratak kriketa na Olimpijske igre 2028.",
+    "difficulty": 1,
+    "styleId": 82,
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "question": "Na Olimpijskim igrama u Parizu 1900. igrao se sport koji se u Los Angelesu 2028. vraća u formatu T20. O kojem je sportu riječ?",
+    "answers": [
+      "Kriket",
+      "Cricket"
+    ],
+    "explanation": "Kriket je bio na olimpijskom programu u Parizu 1900., a Međunarodni olimpijski odbor odobrio je njegov povratak na Igre u Los Angelesu 2028.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/ioc-session-approves-la28-s-proposal-for-five-additional-sports"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0662-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Perkinovo slučajno otkriće mauveina",
+    "difficulty": 5,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Pokušavajući dobiti lijek protiv malarije, osamnaestogodišnji William Perkin 1856. slučajno je otkrio prvu komercijalnu sintetsku ljubičastu boju. Kako se ona zove?",
+    "answers": [
+      "Mauvein",
+      "Mauveine",
+      "Perkinova ljubičasta",
+      "Perkin's mauve",
+      "Anilinska ljubičasta",
+      "Mauve"
+    ],
+    "explanation": "William Henry Perkin slučajno je otkrio mauvein dok je pokušavao sintetizirati kinin. Otkriće iz 1856. pokrenulo je industriju sintetskih boja.",
+    "sources": [
+      "https://www.sciencehistory.org/education/scientific-biographies/william-henry-perkin/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0663-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Benfordov zakon raspodjele prvih znamenki",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "U mnogim skupovima stvarnih brojčanih podataka početna znamenka 1 pojavljuje se oko 30 % vremena, znatno češće od devetke. Koji zakon opisuje tu pojavu?",
+    "answers": [
+      "Benfordov zakon",
+      "Benford's law",
+      "Benford law",
+      "Zakon prve znamenke",
+      "Benfordov zakon prve znamenke"
+    ],
+    "explanation": "Benfordov zakon opisuje neravnomjernu raspodjelu početnih znamenki u mnogim prirodnim skupovima podataka; znamenka 1 pojavljuje se oko 30,1 % vremena.",
+    "sources": [
+      "https://mathworld.wolfram.com/BenfordsLaw.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0664-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "japanski rezbareni uteg netsuke za kimono",
+    "difficulty": 4,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "Uz tradicionalni japanski kimono male su se kutijice vješale o pojas, a ukrasni rezbareni uteg držao je njihovu vrpcu na mjestu. Kako se zove taj predmet?",
+    "answers": [
+      "Netsuke",
+      "Netsuke privjesak",
+      "Necuke"
+    ],
+    "explanation": "Netsuke je ukrasni privjesak odnosno uteg koji je pridržavao posudice inrō i druge viseće predmete pričvršćene za pojas kimona.",
+    "sources": [
+      "https://www.metmuseum.org/es/essays/netsuke-from-fashion-fobs-to-coveted-collectibles"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0665-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Ekonomija",
+    "focus": "Elinor Ostrom prva dobitnica Nobelove nagrade za ekonomiju",
+    "difficulty": 2,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Prva žena koja je 2009. dobila Nobelovu nagradu za ekonomske znanosti proučavala je kako zajednice upravljaju šumama i pašnjacima. Tko je ona?",
+    "answers": [
+      "Elinor Ostrom",
+      "E. Ostrom",
+      "Elinor K. Ostrom"
+    ],
+    "explanation": "Elinor Ostrom 2009. postala je prva žena dobitnica nagrade za ekonomske znanosti, za istraživanja upravljanja zajedničkim dobrima.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/164465-ostrom-williamson-interview-transcript/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0666-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "James Lind i liječenje skorbuta agrumima",
+    "difficulty": 1,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Kirurg James Lind 1747. na brodu Salisbury usporedio je šest načina liječenja skorbuta. Koja je skupina voća pokazala najbrži oporavak?",
+    "answers": [
+      "Agrumi",
+      "Citrusi",
+      "Naranče i limuni",
+      "Limuni i naranče",
+      "Citrusno voće",
+      "Agrumi naranče i limuni"
+    ],
+    "explanation": "U Lindovu pokusu na dvanaestorici mornara najbrže su se oporavili oni koji su dobivali naranče i limune, odnosno agrume.",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC539665/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0667-20261029",
+    "createdAt": "2026-10-29T03:48:50.027Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "More i ocean",
+    "focus": "oceanografska jedinica sverdrup",
+    "difficulty": 5,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Za protok morskih struja oceanografi koriste jedinicu jednaku milijunu kubnih metara vode u sekundi. Kako se zove ta jedinica?",
+    "answers": [
+      "Sverdrup",
+      "Sverdrup (Sv)",
+      "Sv",
+      "Sverdrup jedinica"
+    ],
+    "explanation": "Sverdrup (Sv) jedinica je volumnog protoka u oceanografiji. Jedan sverdrup odgovara milijunu kubnih metara vode u sekundi.",
+    "sources": [
+      "https://www.aoml.noaa.gov/phod/floridacurrent/data_access.php"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
