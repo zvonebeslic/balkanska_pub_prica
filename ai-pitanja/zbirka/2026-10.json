@@ -14962,5 +14962,603 @@
     "type": "blitz",
     "image": null,
     "updatedAt": null
+  },
+  {
+    "topic": "Gastronomija",
+    "focus": "armenski tanki kruh lavash",
+    "difficulty": 1,
+    "styleId": 15,
+    "question": "Tijesto od brašna i vode razvuče se u tanak list i prilijepi na unutarnju stijenku glinene peći. Koji se tradicionalni armenski kruh tako priprema?",
+    "answers": [
+      "Lavaš",
+      "Lavash",
+      "Lavaš kruh"
+    ],
+    "explanation": "Lavaš je tradicionalni tanki armenski kruh. Tijesto se razvalja, razvuče na posebnom jastuku i peče na stijenci glinene peći.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/lavash-the-preparation-meaning-and-appearance-of-traditional-bread-as-an-expression-of-culture-in-armenia-00985?RL=00985"
+    ],
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "id": "chatgpt1000-0618-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Ljepota",
+    "focus": "indonezijska wellness tradicija jamu",
+    "difficulty": 1,
+    "styleId": 73,
+    "question": "U Indoneziji se generacijama prenosi tradicija biljnih pripravaka za zdravlje i dobrobit, koju je UNESCO zaštitio 2023. Pod kojim je kratkim imenom poznata?",
+    "answers": [
+      "Jamu",
+      "Džamu"
+    ],
+    "explanation": "Jamu je indonezijska tradicija biljnih pripravaka i skrbi o dobrobiti, upisana 2023. na UNESCO-ov popis nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/state/indonesia-ID?lang=en"
+    ],
+    "styleDescription": "Opiši kozmetičku praksu iz povijesnog razdoblja",
+    "id": "chatgpt1000-0619-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Moda",
+    "focus": "kebaya kao tradicijska odjeća jugoistočne Azije",
+    "difficulty": 1,
+    "styleId": 72,
+    "question": "Pripijena tradicionalna bluza koja se nosi u više zemalja jugoistočne Azije dala je ime odjevnoj tradiciji upisanoj 2024. na UNESCO-ov popis. Kako glasi to ime?",
+    "answers": [
+      "Kebaya",
+      "Kebaja"
+    ],
+    "explanation": "Kebaya je tradicionalni odjevni predmet i povezana praksa odijevanja jugoistočne Azije, uvrštena na UNESCO-ov popis 2024.",
+    "sources": [
+      "https://ich.unesco.org/en/state/indonesia-ID?lang=en"
+    ],
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "id": "chatgpt1000-0620-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Sport",
+    "focus": "indonezijska borilačka tradicija pencak silat",
+    "difficulty": 1,
+    "styleId": 35,
+    "question": "Borba, samoobrana i stilizirani pokreti spajaju se u indonezijskoj tradiciji koju je UNESCO uvrstio na svoj popis 2019. Kako se zove ta borilačka vještina?",
+    "answers": [
+      "Pencak Silat",
+      "Pencak-Silat",
+      "Penčak silat"
+    ],
+    "explanation": "Pencak Silat je indonezijska borilačka tradicija, a UNESCO je njezine tradicije uvrstio na popis nematerijalne kulturne baštine 2019.",
+    "sources": [
+      "https://ich.unesco.org/en/state/indonesia-ID?lang=en"
+    ],
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "id": "chatgpt1000-0621-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Pop kultura",
+    "focus": "saman kao indonezijska plesna tradicija",
+    "difficulty": 1,
+    "styleId": 20,
+    "question": "Skupina plesača sjedi u zbijenim redovima i izvodi usklađene pokrete i udarce dlanovima. Koji je indonezijski ples UNESCO uvrstio na popis ugrožene baštine 2011.?",
+    "answers": [
+      "Saman",
+      "Saman ples",
+      "Ples Saman"
+    ],
+    "explanation": "Saman je tradicionalni ples iz Indonezije, upisan 2011. na UNESCO-ov popis nematerijalne baštine kojoj je potrebna hitna zaštita.",
+    "sources": [
+      "https://ich.unesco.org/en/state/indonesia-ID?lang=en"
+    ],
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "id": "chatgpt1000-0622-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Arhitektura",
+    "focus": "etiopske crkve isklesane u stijeni",
+    "difficulty": 2,
+    "styleId": 8,
+    "question": "U etiopskim planinama jedanaest srednjovjekovnih crkava isklesano je iz same stijene, a mjesto se povezuje s idejom 'novog Jeruzalema'. Koji je to grad?",
+    "answers": [
+      "Lalibela",
+      "Lalibella"
+    ],
+    "explanation": "Lalibela u Etiopiji poznata je po jedanaest monolitnih crkava isklesanih iz stijene, važnom hodočasničkom središtu etiopskog kršćanstva.",
+    "sources": [
+      "https://whc.unesco.org/en/list/18"
+    ],
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "id": "chatgpt1000-0623-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "afrička mbira s metalnim jezičcima",
+    "difficulty": 2,
+    "styleId": 75,
+    "question": "Metalni jezičci pričvršćeni su na drvenu ploču, a svirač ih trza palčevima. Koje tradicijsko glazbalo Malavija i Zimbabvea opisujemo?",
+    "answers": [
+      "Mbira",
+      "Sansi",
+      "Sanza",
+      "Mbira/Sansi"
+    ],
+    "explanation": "Mbira, poznata i kao sansi ili sanza, tradicijsko je glazbalo s metalnim jezičcima. Njegova izrada i sviranje dio su UNESCO-ove baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/art-of-crafting-and-playing-mbirasanza-01541"
+    ],
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "id": "chatgpt1000-0624-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Astronomija",
+    "focus": "egzoplanet koji obilazi dvije zvijezde",
+    "difficulty": 2,
+    "styleId": 66,
+    "question": "Na jednom plinovitom egzoplanetu na nebu bi se vidjele dvije zvijezde, pa ga NASA uspoređuje s Tatooineom iz Ratova zvijezda. Kojom je oznakom poznat?",
+    "answers": [
+      "Kepler-16b",
+      "Kepler 16b",
+      "Kepler-16 b"
+    ],
+    "explanation": "Kepler-16b otkriven je 2011. i kruži oko dvojne zvijezde. NASA ga navodi kao poznati primjer planeta s dva sunca.",
+    "sources": [
+      "https://science.nasa.gov/exoplanet-catalog/kepler-16b/"
+    ],
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "id": "chatgpt1000-0625-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "kazahstanska dombra i skladbe kuy",
+    "difficulty": 2,
+    "styleId": 96,
+    "question": "Kruškoliko tijelo, dug vrat i samo dvije žice obilježavaju glazbalo na kojem se u Kazahstanu izvode skladbe zvane kuy. Kako se zove?",
+    "answers": [
+      "Dombra",
+      "Dombyra",
+      "Dombira"
+    ],
+    "explanation": "Dombra je kazahstansko dugovrato trzalačko glazbalo s dvije žice. Tradicija izvođenja skladbi kuy upisana je na UNESCO-ov popis.",
+    "sources": [
+      "https://ich.unesco.org/en/decisions/9.COM/10.23"
+    ],
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "id": "chatgpt1000-0626-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Inženjerstvo",
+    "focus": "pinisi kao tradicija gradnje brodova",
+    "difficulty": 2,
+    "styleId": 59,
+    "question": "Na indonezijskom otoku Sulawesiju majstori njeguju tradiciju gradnje drvenih jedrenjaka koju je UNESCO zaštitio 2017. Koji naziv nosi ta brodograditeljska vještina?",
+    "answers": [
+      "Pinisi",
+      "Phinisi"
+    ],
+    "explanation": "Pinisi je tradicija brodogradnje u južnom Sulawesiju u Indoneziji, upisana 2017. na UNESCO-ov popis nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/state/indonesia-ID?lang=en"
+    ],
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "id": "chatgpt1000-0627-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Zanati",
+    "focus": "papuanska pletena torba noken",
+    "difficulty": 3,
+    "styleId": 1,
+    "question": "Od biljnih vlakana stanovnici Papue izrađuju mrežaste torbe kojima prenose urod, drva, pa čak i malu djecu. Koje ime nosi ovaj rukotvorni predmet?",
+    "answers": [
+      "Noken",
+      "Noken torba"
+    ],
+    "explanation": "Noken je ručno pletena ili čvorana torba od biljnih vlakana u indonezijskoj Papui, zaštićena kao nematerijalna baština kojoj je potrebna hitna zaštita.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/noken-multifunctional-knotted-or-woven-bag-handcraft-of-the-people-of-papua-00619"
+    ],
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "id": "chatgpt1000-0628-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Kemija",
+    "focus": "Stephanie Kwolek i razvoj kevlara",
+    "difficulty": 3,
+    "styleId": 7,
+    "question": "U laboratoriju DuPonta jedna je kemičarka tražila čvršća sintetička vlakna i otkrila polimerni materijal od kojeg je nastao kevlar. Kako se prezivala?",
+    "answers": [
+      "Kwolek",
+      "Stephanie Kwolek",
+      "Stephanie Louise Kwolek"
+    ],
+    "explanation": "Stephanie Kwolek istraživala je polimere s tekućekristalnim svojstvima i pridonijela razvoju vlakna Kevlar, poznatog po velikoj čvrstoći.",
+    "sources": [
+      "https://www.invent.org/inductees/stephanie-louise-kwolek"
+    ],
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "id": "chatgpt1000-0629-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Životinje",
+    "focus": "binturong i miris kokica",
+    "difficulty": 3,
+    "styleId": 17,
+    "question": "Na engleskom ga zovu 'medvjeđa mačka', iako nije ni medvjed ni mačka. Ima hvatajući rep, a miris mu podsjeća na kokice s maslacem. Koji je to azijski sisavac?",
+    "answers": [
+      "Binturong",
+      "Arctictis binturong"
+    ],
+    "explanation": "Binturong pripada porodici cibetki. Njegov karakterističan miris povezan je s kemijskim spojem koji daje aromu i kokicama.",
+    "sources": [
+      "https://nationalzoo.si.edu/animals/binturong"
+    ],
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "id": "chatgpt1000-0630-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Vremenske prilike",
+    "focus": "valovi potaknuti naglim promjenama atmosferskog tlaka",
+    "difficulty": 3,
+    "styleId": 60,
+    "question": "Visok val može stići na obalu i bez podmorskog potresa, kada ga pokrenu brze promjene tlaka zraka povezane s olujom. Kako se naziva takva pojava?",
+    "answers": [
+      "Meteotsunami",
+      "Meteo tsunami",
+      "Meteorološki tsunami",
+      "Meteocunami"
+    ],
+    "explanation": "Meteotsunami je val potaknut atmosferskim poremećajima, najčešće brzim promjenama tlaka tijekom oluja, a obalni oblik reljefa može ga pojačati.",
+    "sources": [
+      "https://www.noaa.gov/explainers/science-behind-tsunamis"
+    ],
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "id": "chatgpt1000-0631-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Pića",
+    "focus": "gruzijska glinena posuda za fermentaciju vina",
+    "difficulty": 3,
+    "styleId": 50,
+    "question": "Grožđani sok s kožicama i sjemenkama ostavlja se da fermentira u velikoj jajolikoj glinenoj posudi zakopanoj u zemlju. Kako Gruzijci nazivaju tu posudu?",
+    "answers": [
+      "Qvevri",
+      "Kvevri",
+      "Kvevri posuda"
+    ],
+    "explanation": "Qvevri je tradicionalna gruzijska glinena posuda za fermentaciju i čuvanje vina, a metoda proizvodnje vina njome zaštićena je UNESCO-ovim popisom.",
+    "sources": [
+      "https://ich.unesco.org/en/decisions/8.COM/8.13"
+    ],
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "id": "chatgpt1000-0632-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Film",
+    "focus": "Lotte Reiniger i najstariji sačuvani animirani dugometražni film",
+    "difficulty": 4,
+    "styleId": 9,
+    "question": "Lotte Reiniger 1926. oživjela je ručno izrezane siluete u najstarijem sačuvanom dugometražnom animiranom filmu. Kako glasi naslov koji spominje jednog princa?",
+    "answers": [
+      "Avanture princa Ahmeda",
+      "Avanture princa Achmeda",
+      "The Adventures of Prince Achmed",
+      "Die Abenteuer des Prinzen Achmed"
+    ],
+    "explanation": "Film Lotte Reiniger iz 1926. godine, The Adventures of Prince Achmed, najstariji je sačuvani dugometražni animirani film, izrađen tehnikom animacije silueta.",
+    "sources": [
+      "https://www.bfi.org.uk/lists/10-great-films-1926"
+    ],
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "id": "chatgpt1000-0633-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Povijest",
+    "focus": "Nisa kao središte Partskog Carstva",
+    "difficulty": 4,
+    "styleId": 64,
+    "question": "Dvije tvrđave kraj današnjeg Ašgabata čuvaju ostatke nekadašnjeg središta carstva koje je stoljećima bilo velik suparnik Rimu. Kako se zvao taj drevni partski grad?",
+    "answers": [
+      "Nisa",
+      "Nissa",
+      "Stara Nisa"
+    ],
+    "explanation": "Nisa, danas u Turkmenistanu, bila je važno rano središte Partskog Carstva. Dvije tvrđave stare i nove Nise nalaze se na UNESCO-ovu popisu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1242"
+    ],
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "id": "chatgpt1000-0634-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Moda",
+    "focus": "beduinska tradicija tkanja Al Sadu",
+    "difficulty": 4,
+    "styleId": 46,
+    "question": "Beduinske tkalje na vodoravnim stanovima izrađuju čvrste tkanine s geometrijskim uzorcima, često u crvenoj, crnoj i bijeloj boji. Kako se naziva ta arapska tradicija?",
+    "answers": [
+      "Al Sadu",
+      "Sadu",
+      "Al-Sadu"
+    ],
+    "explanation": "Al Sadu je tradicionalno beduinsko tkanje na vodoravnim tkalačkim stanovima. UNESCO ga navodi kao nematerijalnu baštinu.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/traditional-weaving-of-al-sadu-02158"
+    ],
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "id": "chatgpt1000-0635-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Medicina",
+    "focus": "Gerty Cori i Nobelova nagrada za metabolizam glikogena",
+    "difficulty": 4,
+    "styleId": 56,
+    "question": "Godine 1947. znanstvenica rođena u Pragu postala je prva žena s Nobelovom nagradom za fiziologiju ili medicinu, nakon istraživanja metabolizma šećera. Kako se zvala?",
+    "answers": [
+      "Gerty Cori",
+      "Gerty Theresa Cori",
+      "Gerti Kori",
+      "Gerty Radnitz Cori"
+    ],
+    "explanation": "Gerty Cori podijelila je 1947. Nobelovu nagradu za fiziologiju ili medicinu. S Carlom Corijem proučavala je pretvorbu i skladištenje šećera u organizmu.",
+    "sources": [
+      "https://www.nobelprize.org/womenwhochangedscience/stories/gerty-cori"
+    ],
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "id": "chatgpt1000-0636-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Biologija",
+    "focus": "stablo mutuba i izrada tkanine od kore",
+    "difficulty": 4,
+    "styleId": 51,
+    "question": "U južnoj Ugandi obrtnici skidaju unutarnju koru stabla vrste Ficus natalensis, omekšavaju je drvenim batovima i pretvaraju u obrednu tkaninu. Kojim lokalnim imenom nazivaju to stablo?",
+    "answers": [
+      "Mutuba",
+      "Stablo mutuba",
+      "Drvo mutuba"
+    ],
+    "explanation": "Mutuba je lokalni naziv za stablo Ficus natalensis. Njegova se kora u tradiciji naroda Baganda obrađuje u tkaninu bez klasičnog tkanja.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/barkcloth-making-in-uganda-00139"
+    ],
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "id": "chatgpt1000-0637-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Zemljopis",
+    "focus": "oštri vapnenački krš Tsingy na Madagaskaru",
+    "difficulty": 5,
+    "styleId": 91,
+    "question": "Na Madagaskaru se putnik može naći pred gotovo neprohodnom 'šumom' oštrih vapnenačkih šiljaka, osobito u području Bemaraha. Kojim lokalnim nazivom poznajemo taj krški krajolik?",
+    "answers": [
+      "Tsingy",
+      "Cingi",
+      "Tsingy krš"
+    ],
+    "explanation": "Tsingy je naziv za oštre vapnenačke oblike na Madagaskaru. Krajolik Bemaraha obilježavaju visoki krški šiljci i duboki usjeci.",
+    "sources": [
+      "https://whc.unesco.org/en/list/494"
+    ],
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "id": "chatgpt1000-0638-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Sport",
+    "focus": "kirgiska konjička igra kok boru",
+    "difficulty": 5,
+    "styleId": 53,
+    "question": "Dvije momčadi na konjima nastoje prenijeti predmet zvan ulak u protivnički cilj. Nekad je to bila kozja strvina, a danas se koristi i zamjena. Kako se zove ta kirgiska igra?",
+    "answers": [
+      "Kok boru",
+      "Kok-boru",
+      "Kök börü"
+    ],
+    "explanation": "Kok boru tradicionalna je kirgiska konjička igra dviju momčadi. Njezina je praksa uvrštena na UNESCO-ov popis nematerijalne baštine 2017.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/kok-boru-traditional-horse-game-01294"
+    ],
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "id": "chatgpt1000-0639-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Religije i mitologije",
+    "focus": "megalitski hramovi Ġgantija na Gozu",
+    "difficulty": 5,
+    "styleId": 18,
+    "question": "Na malteškom otoku Gozo sačuvana su dva golema pretpovijesna hrama, među najstarijim samostojećim kamenim građevinama svijeta. Kako se zove taj hramovni sklop?",
+    "answers": [
+      "Ġgantija",
+      "Ggantija",
+      "Gigantija"
+    ],
+    "explanation": "Ġgantija je megalitski hramovni kompleks na otoku Gozo, dio UNESCO-ove cjeline Megalitski hramovi Malte.",
+    "sources": [
+      "https://whc.unesco.org/en/list/132/"
+    ],
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "id": "chatgpt1000-0640-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Rijetke teme",
+    "focus": "javanska izvedbena umjetnost Reog Ponorogo",
+    "difficulty": 5,
+    "styleId": 93,
+    "question": "Na Javi se u svečanim nastupima pojavljuje golema maska lavlje glave s raskošnim perjem, povezana s tradicijom grada Ponoroga. Kako se zove ta izvedbena umjetnost?",
+    "answers": [
+      "Reog Ponorogo",
+      "Reog",
+      "Reog iz Ponoroga"
+    ],
+    "explanation": "Reog Ponorogo javanska je izvedbena tradicija iz Indonezije. UNESCO ju je 2024. uvrstio na popis baštine kojoj je potrebna hitna zaštita.",
+    "sources": [
+      "https://ich.unesco.org/en/state/indonesia-ID?lang=en"
+    ],
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "id": "chatgpt1000-0641-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "topic": "Glazba",
+    "focus": "kolintang u zajedničkom UNESCO-ovu upisu s balafonom",
+    "difficulty": 5,
+    "styleId": 85,
+    "question": "U zajedničkom UNESCO-ovu upisu iz 2024. zapadnoafrički balafon povezan je s jednim indonezijskim tradicijskim glazbalom od drvenih udaraljki. Kako se ono zove?",
+    "answers": [
+      "Kolintang",
+      "Kulintang",
+      "Kolintang instrument"
+    ],
+    "explanation": "UNESCO je 2024. uvrstio kulturne prakse povezane s balafonom i kolintangom, obuhvaćajući zapadnoafričke zemlje i Indoneziju.",
+    "sources": [
+      "https://ich.unesco.org/en/state/indonesia-ID?lang=en"
+    ],
+    "styleDescription": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla",
+    "id": "chatgpt1000-0642-20261029",
+    "createdAt": "2026-10-29T02:50:51.609Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "image": null,
+    "updatedAt": null
   }
 ]
