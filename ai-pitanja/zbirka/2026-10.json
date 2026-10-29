@@ -16185,5 +16185,610 @@
     ],
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0668-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Povijest",
+    "focus": "islandsko-britanski Bakalarski ratovi zbog ribolovnog pojasa",
+    "difficulty": 4,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Kad je Island 1975. proširio ribolovni pojas na 200 nautičkih milja, zaoštrio se posljednji od takozvanih Bakalarskih ratova. S kojom se državom sukobio?",
+    "answers": [
+      "Ujedinjeno Kraljevstvo",
+      "Velika Britanija",
+      "Britanija",
+      "UK"
+    ],
+    "explanation": "Bakalarski ratovi bili su niz sporova Islanda i Ujedinjenog Kraljevstva oko prava ribolova. Posljednji sukob izbio je nakon islandskog proširenja ribolovnog pojasa 1975. godine.",
+    "sources": [
+      "https://www.theguardian.com/business/2025/dec/10/archive-1975-iceland-opens-fire-on-british-vessel"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0669-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "njemačka eksklava Büsingen okružena Švicarskom",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Pripada Njemačkoj, nalazi se uz Rajnu, a do ostatka vlastite države ne može se kopnom bez prelaska švicarske granice. Kako se zove ova neobična općina kod Schaffhausena?",
+    "answers": [
+      "Büsingen am Hochrhein",
+      "Büsingen",
+      "Busingen am Hochrhein",
+      "Busingen"
+    ],
+    "explanation": "Büsingen am Hochrhein njemačka je općina u Baden-Württembergu, potpuno okružena švicarskim teritorijem, odnosno njemačka eksklava.",
+    "sources": [
+      "https://www.buesingen.de/de/Freizeit-Tourismus/Exklavenweg"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0670-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "divovski lopoč Victoria kao nadahnuće za Crystal Palace",
+    "difficulty": 4,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Snažna rebra golemih listova lopoča Victoria često se navode kao nadahnuće Josephu Paxtonu. Koju je londonsku izložbenu građevinu iz 1851. projektirao taj arhitekt?",
+    "answers": [
+      "Crystal Palace",
+      "Kristalna palača",
+      "Kristalna palaca",
+      "The Crystal Palace"
+    ],
+    "explanation": "Joseph Paxton projektirao je Crystal Palace za Veliku izložbu 1851. Kew navodi da se građa lista divovskog lopoča Victoria smatra jednim od nadahnuća za njegovu konstrukciju.",
+    "sources": [
+      "https://www.kew.org/kew-gardens/whats-in-the-gardens/waterlily-house"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0671-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Životinje",
+    "focus": "meduza Turritopsis dohrnii koja se vraća u stadij polipa",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Umjesto uobičajenog starenja, ova sitna meduza u određenim okolnostima može ponovno prijeći iz odraslog oblika u stadij polipa. Kako se zove vrsta prozvana 'besmrtnom meduzom'?",
+    "answers": [
+      "Turritopsis dohrnii",
+      "Besmrtna meduza",
+      "Immortal jellyfish"
+    ],
+    "explanation": "Turritopsis dohrnii može preokrenuti svoj životni ciklus i vratiti se u raniji stadij polipa. Nadimak 'besmrtna' ne znači da je otporna na predatore ili bolesti.",
+    "sources": [
+      "https://www.nhm.ac.uk/discover/immortal-jellyfish-secret-to-cheating-death.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0672-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "Magdeburške polukugle i dokaz atmosferskog tlaka",
+    "difficulty": 3,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Otto von Guericke ispumpao je zrak iz dviju spojenih bakrenih polovica kugle, a 1656. ni šesnaest konja nije ih uspjelo razdvojiti. Kako se zove taj poznati pokusni pribor?",
+    "answers": [
+      "Magdeburške polukugle",
+      "Magdeburške hemisfere",
+      "Magdeburške polulopte",
+      "Magdeburg hemispheres"
+    ],
+    "explanation": "Magdeburške polukugle demonstrirale su snagu atmosferskog tlaka: nakon ispumpavanja zraka tlak izvana čvrsto je držao polovice zajedno.",
+    "sources": [
+      "https://www.technoseum.de/fileadmin/media/pdf/mupaed-material/_Elementa-1_English_complete.pdf"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0673-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "nitinol kao legura nikla i titana s pamćenjem oblika",
+    "difficulty": 5,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Ova legura nikla i titana, nazvana i po američkom mornaričkom laboratoriju, može se nakon deformacije zagrijavanjem vratiti u zadani oblik. Kako se zove?",
+    "answers": [
+      "Nitinol",
+      "NiTiNOL",
+      "Nitinol 55",
+      "55-Nitinol"
+    ],
+    "explanation": "Nitinol je legura nikla i titana s efektom pamćenja oblika. Naziv povezuje Ni, Ti i kraticu NOL za Naval Ordnance Laboratory.",
+    "sources": [
+      "https://spinoff.nasa.gov/node/10821",
+      "https://ntrs.nasa.gov/citations/19720022818"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0674-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Matematika",
+    "focus": "Reuleauxov trokut kao krivulja stalne širine",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Iako ima tri zaobljena vrha i nije krug, ovaj lik između bilo koje dvije paralelne potporne crte uvijek ima jednaku širinu. Kako se naziva?",
+    "answers": [
+      "Reuleauxov trokut",
+      "Reuleaux trokut",
+      "Reuleaux triangle",
+      "Reuleauxov trokut konstantne širine"
+    ],
+    "explanation": "Reuleauxov trokut nastaje od triju kružnih lukova nad jednakostraničnim trokutom. To je poznata krivulja stalne širine, iako nije kružnica.",
+    "sources": [
+      "https://mathworld.wolfram.com/ReuleauxTriangle.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0675-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "egzoplanet WASP-76b i moguća kiša željeza",
+    "difficulty": 5,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na dnevnoj strani ovog vrelog egzoplaneta željezo isparava, a na hladnijoj noćnoj strani moglo bi se kondenzirati u metalnu kišu. Koja je oznaka tog planeta?",
+    "answers": [
+      "WASP-76b",
+      "WASP-76 b",
+      "WASP 76b"
+    ],
+    "explanation": "Promatranja ESO-ova teleskopa pokazala su nejednaku raspodjelu željezne pare na WASP-76b, što je u skladu s mogućom kondenzacijom željeza na noćnoj strani.",
+    "sources": [
+      "https://www.eso.org/public/unitedkingdom/news/eso2005/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0676-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Willem Einthoven i strunski galvanometar za EKG",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Njegov strunski galvanometar omogućio je preciznije bilježenje električne aktivnosti srca. Za taj doprinos elektrokardiografiji dobio je Nobelovu nagradu za medicinu 1924. Tko je on?",
+    "answers": [
+      "Willem Einthoven",
+      "Einthoven",
+      "Vilhelm Einthoven"
+    ],
+    "explanation": "Willem Einthoven razvio je strunski galvanometar i znatno unaprijedio elektrokardiografiju, za što je 1924. dobio Nobelovu nagradu za fiziologiju ili medicinu.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/1924/einthoven/facts/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0677-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "raspored QWERTY na pisaćem stroju Sholes i Glidden",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Raspored tipaka koji danas koristimo na računalima postojao je već na Remingtonovu pisaćem stroju iz 1874. Po kojih je šest početnih slova gornjeg reda dobio ime?",
+    "answers": [
+      "QWERTY",
+      "Qwerty raspored",
+      "QWERTY raspored tipaka"
+    ],
+    "explanation": "Sholes & Gliddenov pisaći stroj, koji je Remington prodavao od 1874., koristio je raspored QWERTY, nazvan po prvih šest slova gornjeg slovnog reda.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_850542"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0678-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Inženjerstvo",
+    "focus": "japanski željeznički tunel Seikan ispod tjesnaca Tsugaru",
+    "difficulty": 3,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Od 1988. željeznica prolazi ispod tjesnaca Tsugaru kroz tunel dug 53,85 kilometara, povezujući Honshu i Hokkaido. Kako se zove taj japanski tunel?",
+    "answers": [
+      "Seikan",
+      "Tunel Seikan",
+      "Seikan Tunnel",
+      "Seikanski tunel"
+    ],
+    "explanation": "Seikan je željeznički tunel otvoren u ožujku 1988., dug 53,85 km, koji povezuje japanske otoke Honshu i Hokkaido ispod tjesnaca Tsugaru.",
+    "sources": [
+      "https://web-japan.org/atlas/architecture/arc02.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0679-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "službeno ime londonskog tornja sa zvonom Big Ben od 2012",
+    "difficulty": 1,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Big Ben zapravo je ime velikog zvona, a ne samog londonskog tornja. Kako se od 2012. službeno zove toranj Westminsterske palače u kojem zvono visi?",
+    "answers": [
+      "Elizabeth Tower",
+      "Elizabetin toranj",
+      "Toranj Elizabete II.",
+      "Toranj Elizabeth"
+    ],
+    "explanation": "Londonski Clock Tower preimenovan je 2012. u Elizabeth Tower povodom dijamantnog jubileja kraljice Elizabete II. Big Ben ime je velikog zvona u tornju.",
+    "sources": [
+      "https://www.parliament.uk/business/news/news-by-year/2012/june/clock-tower-to-be-renamed-elizabeth-tower/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0680-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "nadimak The Bean za Kapoorovu skulpturu Cloud Gate",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Anish Kapoor oblikovao je čikaški Cloud Gate kao golemu zrcalnu skulpturu u kojoj se odražava gradski horizont. Pod kojim je jednostavnim nadimkom poznata?",
+    "answers": [
+      "The Bean",
+      "Bean",
+      "Zrno graha",
+      "Grah"
+    ],
+    "explanation": "Cloud Gate u čikaškom Millennium Parku skulptura je Anisha Kapoora od poliranog nehrđajućeg čelika. Zbog oblika popularno je zovu The Bean, odnosno 'grah'.",
+    "sources": [
+      "https://chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0681-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Književnost",
+    "focus": "Ukifune u završnim poglavljima Pripovijesti o Genjiju",
+    "difficulty": 5,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U završnim poglavljima japanske Pripovijesti o Genjiju, za ovu polusestru princeza iz Ujija zanimaju se Kaoru i princ Niou. Kako se zove junakinja njihova ljubavnog trokuta?",
+    "answers": [
+      "Ukifune"
+    ],
+    "explanation": "Ukifune je lik iz kasnijih poglavlja Pripovijesti o Genjiju, polusestra princeza iz Ujija i središnja figura ljubavnog trokuta s Kaoruom i princom Niouom.",
+    "sources": [
+      "https://www.metmuseum.org/exhibitions/listings/2019/tale-of-genji/places-and-people"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0682-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Jezik",
+    "focus": "engleski naziv tittle za točku iznad malog i i j",
+    "difficulty": 5,
+    "styleId": 74,
+    "styleDescription": "Kreni od znaka u tipografiji i pitaj kako se zove",
+    "question": "Točkica iznad malih slova i i j u engleskoj tipografskoj terminologiji ima vlastiti naziv. Koja je to riječ?",
+    "answers": [
+      "Tittle"
+    ],
+    "explanation": "Tittle je engleski naziv za malu točku ili sličan znak, osobito točkicu iznad malih slova i i j.",
+    "sources": [
+      "https://www.dictionary.com/articles/tittle"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0683-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "pjesma Au clair de la lune na zvučnom zapisu iz 1860",
+    "difficulty": 4,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Kad je 2008. oživljen zvučni zapis Édouarda-Léona Scotta iz 1860., čuo se početak koje francuske dječje pjesme o mjesečini i prijatelju Pierrotu?",
+    "answers": [
+      "Au clair de la lune",
+      "Au Clair de la Lune"
+    ],
+    "explanation": "Scott de Martinville 9. travnja 1860. fonautografom je zabilježio dio pjesme Au clair de la lune. Istraživači First Sounds uspjeli su taj zapis reproducirati 2008.",
+    "sources": [
+      "https://www.firstsounds.org/sounds/scott.php",
+      "https://www.firstsounds.org/faq/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0684-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Film",
+    "focus": "nadimak Bruce za mehaničkog morskog psa iz Ralja",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Mehanički morski pas iz Spielbergovih 'Ralja' imao je ime koje nosi i sačuvani model u muzeju američke filmske akademije. Koje?",
+    "answers": [
+      "Bruce",
+      "Brus"
+    ],
+    "explanation": "Mehanički morski pas iz filma Ralje (Jaws, 1975.) dobio je nadimak Bruce. Sačuvani model punih dimenzija nalazi se u zbirci Academy Museuma.",
+    "sources": [
+      "https://www.academymuseum.org/en/collection/bruce-the-shark-jaws"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0685-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Televizija",
+    "focus": "PBS-ov dokumentarni serijal An American Family iz 1973",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "PBS je 1973. u dvanaest epizoda pratio stvarni život obitelji Loud iz Kalifornije, godinama prije današnjih realityja. Kako se zvao taj pionirski dokumentarni serijal?",
+    "answers": [
+      "An American Family",
+      "Američka obitelj"
+    ],
+    "explanation": "An American Family, prikazan na PBS-u 1973., dokumentirao je svakodnevicu obitelji Loud u dvanaest epizoda i smatra se važnim prethodnikom reality televizije.",
+    "sources": [
+      "https://www.pbs.org/about/about-pbs/blogs/news/an-american-family-anniversary-edition/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0686-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Videoigre",
+    "focus": "skriveni potpis Warrena Robinetta u Atarijevoj igri Adventure",
+    "difficulty": 3,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Warren Robinett sakrio je u jednu igru za Atari 2600 tajnu sobu s natpisom 'Created by Warren Robinett', čuveno rano uskrsno jaje u videoigrama. Kako se igra zove?",
+    "answers": [
+      "Adventure",
+      "Atari Adventure"
+    ],
+    "explanation": "U igri Adventure za Atari 2600 programer Warren Robinett skrio je sobu s vlastitim potpisom jer autori tada često nisu dobivali javne zasluge za igre.",
+    "sources": [
+      "https://atarionline.org/adventure-easter-egg"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0687-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Sport",
+    "focus": "olimpijske medalje Tokija 2020 izrađene od reciklirane elektronike",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Za koje su Olimpijske igre medalje izrađene od metala prikupljenih recikliranjem milijuna starih mobitela i drugih elektroničkih uređaja?",
+    "answers": [
+      "Tokio 2020",
+      "Tokyo 2020",
+      "Olimpijske igre u Tokiju 2020",
+      "Tokio",
+      "Tokyo"
+    ],
+    "explanation": "Medalje za Olimpijske igre Tokio 2020 izrađene su od recikliranih plemenitih metala iz doniranih mobitela i drugih elektroničkih uređaja.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/tokyo-2020-sustainable-games-for-a-sustainable-society"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0688-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Automobili",
+    "focus": "Mazda RX-7 iz 1978 i rotacijski Wankelov motor",
+    "difficulty": 2,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Mazda je 1978. predstavila sportski automobil s rotacijskim motorom koji je postao jedan od njezinih najprepoznatljivijih modela. Koja je njegova oznaka?",
+    "answers": [
+      "RX-7",
+      "Mazda RX-7",
+      "Savanna RX-7",
+      "Mazda Savanna RX-7"
+    ],
+    "explanation": "Prva Mazda Savanna RX-7 predstavljena je 1978. i koristila je Mazdin rotacijski motor, tehnologiju koju je marka razvijala još od modela Cosmo Sport.",
+    "sources": [
+      "https://newsroom.mazda.com/en/publicity/release/2023/202310/231030b.html"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0689-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Promet",
+    "focus": "viseća željeznica Schwebebahn u Wuppertalu od 1901",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Umjesto da zauzme prostor na tlu, gradska željeznica od 1901. većim dijelom visi iznad rijeke Wupper. U kojem se njemačkom gradu nalazi?",
+    "answers": [
+      "Wuppertal",
+      "Vuppertal"
+    ],
+    "explanation": "Wuppertalska viseća željeznica, Schwebebahn, otvorena je 1901. i najvećim dijelom trase od oko 13 kilometara prometuje iznad rijeke Wupper.",
+    "sources": [
+      "https://schwebebahn.de/en/neuigkeiten/125-years-of-the-wuppertal-suspension-railway-celebrating-a-moving-history"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0690-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "zoot suit i predimenzionirana odijela četrdesetih godina",
+    "difficulty": 2,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "Široke hlače sužene pri gležnju, predimenzionirani sako i dugačak lanac bili su zaštitni znak kojeg američkog odjevnog stila iz 1940-ih, povezanog i s nemirima u Los Angelesu?",
+    "answers": [
+      "Zoot suit",
+      "Zoot odijelo",
+      "Zoot-suit"
+    ],
+    "explanation": "Zoot suit bio je raskošno krojen stil odijela, popularan među jazzovskim i manjinskim zajednicama, a postao je simbol napetosti tijekom Zoot Suit Riotsa 1943.",
+    "sources": [
+      "https://www.smithsonianmag.com/arts-culture/brief-history-zoot-suit-180958507/"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0691-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "rimska tjestenina cacio e pepe od sira i crnog papra",
+    "difficulty": 1,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Skuhaj tjesteninu, umiješaj naribani Pecorino Romano s malo škrobne vode i dodaj crni papar. Koje si klasično rimsko jelo pripremio?",
+    "answers": [
+      "Cacio e pepe",
+      "Spaghetti cacio e pepe",
+      "Pasta cacio e pepe"
+    ],
+    "explanation": "Cacio e pepe tradicionalna je rimska tjestenina s ovčjim sirom Pecorino Romano i crnim paprom; škrobna voda pomaže stvoriti kremasti umak.",
+    "sources": [
+      "https://www.turismoroma.it/en/1042013-spaghetti-cacio-e-pepe"
+    ],
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt1000-0692-20261029",
+    "createdAt": "2026-10-29T04:41:57.000Z",
+    "origin": "chatgpt-serija-1000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Psihologija",
+    "focus": "iluzija gumene ruke i osjećaj vlasništva nad tuđim predmetom",
+    "difficulty": 3,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Kad se skrivena prava ruka i vidljiva gumena ruka istodobno dodiruju, čovjek može osjetiti da je gumena njegova. Kako se naziva ova perceptivna varka?",
+    "answers": [
+      "Iluzija gumene ruke",
+      "Rubber hand illusion",
+      "Iluzija gumene šake"
+    ],
+    "explanation": "U iluziji gumene ruke usklađeni vidni i dodirni podražaji mogu navesti mozak da gumenu ruku privremeno doživi kao dio vlastitog tijela.",
+    "sources": [
+      "https://doi.org/10.1038/35784"
+    ],
+    "image": null,
+    "updatedAt": null
   }
 ]
