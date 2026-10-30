@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-00188-20261031",
+    "createdAt": "2026-10-30T23:35:44.000Z",
+    "updatedAt": "2026-10-30T23:35:44.000Z",
+    "topic": "Kemija",
+    "focus": "mineral koji daje plavu boju stijeni lapis lazuli",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Lapis lazuli nije jedan mineral, nego stijena koja može sadržavati kalcit i pirit. Koji je njezin glavni plavi mineral, zaslužan za boju zbog koje su je stoljećima cijenili slikari i zlatari?",
+    "answers": [
+      "Lazurit",
+      "Lazurite"
+    ],
+    "explanation": "Lapis lazuli je stijena sastavljena od više minerala, a njezinu intenzivnu plavu boju ponajprije daje lazurit. Od lapisa se tradicionalno dobivao pigment prirodni ultramarin.",
+    "sources": [
+      "https://www.metmuseum.org/de/exhibitions/cycladic-art/glossary"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
