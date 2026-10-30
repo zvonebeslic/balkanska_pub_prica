@@ -1,14 +1,15 @@
 {
   "version": 1,
-  "total": 1189,
+  "total": 1192,
   "months": [
-    "2026-10"
+    "2026-10",
+    "2026-10-chatgpt-00182-00184"
   ],
   "styleCounts": {
-    "1": 29,
+    "1": 30,
     "2": 12,
     "3": 16,
-    "4": 19,
+    "4": 20,
     "5": 1,
     "6": 21,
     "7": 7,
@@ -21,7 +22,7 @@
     "14": 21,
     "15": 20,
     "16": 2,
-    "17": 31,
+    "17": 32,
     "18": 37,
     "19": 2,
     "20": 13,
@@ -107,10 +108,10 @@
     "Književnost": 27,
     "Sport": 40,
     "Likovna umjetnost": 42,
-    "Životinje": 49,
+    "Životinje": 50,
     "Povijest": 54,
     "Zemljopis": 44,
-    "Biologija": 38,
+    "Biologija": 39,
     "Fizika": 24,
     "Kemija": 35,
     "Matematika": 32,
@@ -139,17 +140,17 @@
     "Pop kultura": 19,
     "Obrazovanje": 18,
     "Psihologija": 17,
-    "Rijetke teme": 24,
+    "Rijetke teme": 25,
     "Videoigre": 17,
     "Ekologija": 1,
     "Meteorologija": 1
   },
   "difficultyCounts": {
-    "1": 154,
-    "2": 242,
+    "1": 155,
+    "2": 243,
     "3": 295,
-    "4": 286,
+    "4": 287,
     "5": 212
   },
-  "updatedAt": "2026-10-30T14:44:21.219Z"
+  "updatedAt": "2026-10-30T17:00:00.000Z"
 }
