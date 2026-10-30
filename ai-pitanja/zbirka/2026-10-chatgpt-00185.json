@@ -1,0 +1,28 @@
+[
+  {
+    "id": "chatgpt10000-00185-20261030",
+    "createdAt": "2026-10-30T20:35:33.000Z",
+    "updatedAt": "2026-10-30T20:35:33.000Z",
+    "topic": "Tehnologija",
+    "focus": "fotografski postupak dagerotipija na posrebrenoj bakrenoj ploči",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Fotografija iz 19. stoljeća nije uvijek nastajala na papiru: jedan rani postupak davao je jedinstvenu sliku na posrebrenoj bakrenoj ploči. Kako se nazivao taj postupak, javno predstavljen 1839. godine?",
+    "answers": [
+      "Dagerotipija",
+      "Dagerotip",
+      "Daguerreotype",
+      "Dagerotipni postupak"
+    ],
+    "explanation": "Dagerotipija, nazvana po Louisu Daguerreu, fotografski je postupak objavljen 1839. godine. Svaka je slika bila jedinstveni pozitiv na posrebrenoj bakrenoj ploči.",
+    "sources": [
+      "https://collection.sciencemuseumgroup.org.uk/objects/co9002977/whole-plate-folding-daguerreotype-camera",
+      "https://www.americanhistory.si.edu/de/collections/object/nmah_554839"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
