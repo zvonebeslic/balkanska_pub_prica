@@ -1,0 +1,29 @@
+[
+  {
+    "id": "chatgpt10000-00186-20261030",
+    "createdAt": "2026-10-30T21:37:09.000Z",
+    "updatedAt": "2026-10-30T21:37:09.000Z",
+    "topic": "Glazba",
+    "focus": "mehanički klavir kao inspiracija za Lamarr-Antheilov sustav mijenjanja frekvencija",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Hollywoodska glumica Hedy Lamarr i skladatelj George Antheil osmislili su sustav za otežavanje ometanja radijskih signala. Njihov patent spominje papirnate vrpce i čak 88 promjena frekvencije. Koje je glazbalo, poznato po automatskom sviranju pomoću perforiranih vrpci, nadahnulo taj mehanizam?",
+    "answers": [
+      "Mehanički klavir",
+      "Pianola",
+      "Sam svirajući klavir",
+      "Player piano",
+      "Automatski klavir"
+    ],
+    "explanation": "Antheil je zamislio uporabu papirnatih vrpci kakve pokreću mehanički klavir. Patent Lamarr i Antheila iz 1942. predviđao je sinkronizirano mijenjanje radijskih frekvencija, s do 88 promjena, prema broju klavirskih tipki.",
+    "sources": [
+      "https://invention.si.edu/invention-stories/movie-star-some-player-pianos-and-torpedoes",
+      "https://sova.si.edu/record/nmah.ac.1590"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
