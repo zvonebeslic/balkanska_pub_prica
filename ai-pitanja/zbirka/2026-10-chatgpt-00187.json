@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-00187-20261030",
+    "createdAt": "2026-10-30T22:38:11.000Z",
+    "updatedAt": "2026-10-30T22:38:11.000Z",
+    "topic": "More i ocean",
+    "focus": "naziv za najmanje opasne komade ledenjaka u pomorskoj klasifikaciji",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Pomorci razlikuju veće odlomljene komade ledenjaka, poznate kao 'bergy bits', od još manjih, koji katkad jedva vire iz mora i mogu biti veličine kamiona. Kojim ih engleskim nazivom označavaju?",
+    "answers": [
+      "Growler",
+      "Growlers"
+    ],
+    "explanation": "Prema američkoj NOAA-i, growler je mali komad plutajućeg ledenjačkog leda koji iznad površine strši manje od približno jednog metra. Veći komadi nazivaju se bergy bits.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/icebergs-max",
+      "https://oceanservice.noaa.gov/facts/iceberg.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
