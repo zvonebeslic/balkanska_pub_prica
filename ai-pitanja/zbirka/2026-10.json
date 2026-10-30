@@ -27519,5 +27519,749 @@
     "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
     "image": null,
     "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00127-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Fizika",
+    "focus": "podzemni japanski neutrinski detektor s 50 tisuća tona vode",
+    "difficulty": 5,
+    "styleId": 51,
+    "question": "Tisuću metara pod zemljom u japanskom rudniku nalazi se golemi spremnik s 50.000 tona vode, a tisuće osjetljivih 'očiju' traže bljeskove nastale prolaskom čestica. Kako se zove taj poznati detektor neutrina?",
+    "answers": [
+      "Super-Kamiokande",
+      "Super Kamiokande",
+      "SuperK",
+      "Super-K"
+    ],
+    "explanation": "Super-Kamiokande u rudniku Kamioka opaža neutrine pomoću Čerenkovljeve svjetlosti u vodi; spremnik sadrži oko 50.000 tona vode.",
+    "sources": [
+      "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/outline/"
+    ],
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00128-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Kemija",
+    "focus": "Carolyn Bertozzi i Nobelova nagrada za bioortogonalnu kemiju",
+    "difficulty": 3,
+    "styleId": 18,
+    "question": "Godine 2022. Nobelovu nagradu za kemiju podijelili su Barry Sharpless, Morten Meldal i znanstvenica koja je razvijala reakcije moguće čak i unutar živih stanica. Kako se preziva ta treća dobitnica?",
+    "answers": [
+      "Bertozzi",
+      "Carolyn Bertozzi",
+      "Carolyn R. Bertozzi",
+      "Karolin Bertoci"
+    ],
+    "explanation": "Carolyn R. Bertozzi podijelila je Nobelovu nagradu 2022. za razvoj klik-kemije i bioortogonalne kemije.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/chemistry/2022/summary/"
+    ],
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00129-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Jupiterov mjesec Amalthea s kraterima Pan i Gaea",
+    "difficulty": 4,
+    "styleId": 66,
+    "question": "Na snimci letjelice Galileo iz 1996. vidi se izduženi Jupiterov mjesec s velikim kraterom Pan, širokim oko 90 kilometara, i manjim kraterom Gaea. Kako se zove taj mjesec?",
+    "answers": [
+      "Amalteja",
+      "Amalthea",
+      "Amaltea"
+    ],
+    "explanation": "NASA-ina letjelica Galileo snimila je Amalteju, mali unutarnji Jupiterov mjesec; na njemu su krateri Pan i Gaea.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/galileos-first-image-of-amalthea/"
+    ],
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00130-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Luna 3 i prve fotografije suprotne strane Mjeseca",
+    "difficulty": 2,
+    "styleId": 22,
+    "question": "Godine 1959. čovječanstvo je prvi put vidjelo fotografije strane Mjeseca koja nam je sa Zemlje skrivena. Koja je sovjetska letjelica poslala te snimke?",
+    "answers": [
+      "Luna 3",
+      "Luna-3",
+      "Lunik 3",
+      "Lunik III"
+    ],
+    "explanation": "Sovjetska Luna 3 u listopadu 1959. prva je snimila i na Zemlju poslala fotografije udaljene strane Mjeseca.",
+    "sources": [
+      "https://science.nasa.gov/resource/first-photo-of-the-lunar-far-side/"
+    ],
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00131-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "stvarni moljac u dnevniku računala Mark II iz 1947.",
+    "difficulty": 2,
+    "styleId": 4,
+    "question": "Izraz 'bug' za tehničku pogrešku postojao je i prije računala. No 1947. inženjeri su u releju računala Mark II pronašli stvarnu životinju i zalijepili je u dnevnik. Koju?",
+    "answers": [
+      "Moljac",
+      "Moljca",
+      "Noćni leptir",
+      "Moth"
+    ],
+    "explanation": "U računalu Harvard Mark II pronađen je moljac; sačuvani dnevnik iz 1947. izložen je u Smithsonianu. Izraz 'bug' bio je stariji od tog događaja.",
+    "sources": [
+      "https://www.si.edu/object/log-book-computer-bug%3Anmah_334663"
+    ],
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00132-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "fonautograf i zvučni zapis Au clair de la lune iz 1860.",
+    "difficulty": 4,
+    "styleId": 59,
+    "question": "Pjesma 'Au clair de la lune' zabilježena je još 1860. kao crta na papiru, ali tadašnji uređaj nije mogao reproducirati snimljeni glas. Kako se zvao taj preteča fonografa?",
+    "answers": [
+      "Fonautograf",
+      "Phonautograph",
+      "Fonoautograf"
+    ],
+    "explanation": "Édouard-Léon Scott de Martinville zapisao je glas 1860. fonautografom, koji je bilježio zvučne vibracije na podlozi, ali nije služio za reprodukciju.",
+    "sources": [
+      "https://firstsounds.org/sounds/scott.php"
+    ],
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00133-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "mađarski cimbalom sa žicama koje se udaraju batićima",
+    "difficulty": 3,
+    "styleId": 75,
+    "question": "U mađarskoj tradicijskoj glazbi svira se veliko trapezasto žičano glazbalo po čijim se žicama udara malim batićima. Pod kojim je nazivom poznato to glazbalo?",
+    "answers": [
+      "Cimbalom",
+      "Cimbal",
+      "Cimbale",
+      "Cymbalom"
+    ],
+    "explanation": "Cimbalom je žičano glazbalo s udaranim žicama, povezano s mađarskom glazbenom tradicijom; primjerak je u zbirci Metropolitana.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/504386"
+    ],
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00134-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "kineski sheng i metalni slobodni jezičci u bambusovim cijevima",
+    "difficulty": 3,
+    "styleId": 96,
+    "question": "Niz bambusovih cijevi nalik sklopljenim krilima feniksa može odsvirati više tonova istodobno, a zvuk stvaraju slobodni metalni jezičci. Kako se zove to kinesko puhačko glazbalo?",
+    "answers": [
+      "Sheng",
+      "Šeng",
+      "Shêng"
+    ],
+    "explanation": "Sheng je kinesko usno glazbalo sa slobodnim jezičcima; bambusove cijevi simboliziraju krila feniksa.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/503632"
+    ],
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00135-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Eileen Gray i vila E-1027 na Azurnoj obali",
+    "difficulty": 4,
+    "styleId": 58,
+    "question": "Modernistička vila E-1027 na francuskoj Azurnoj obali desetljećima je bila pogrešno pripisivana muškim arhitektima, a Le Corbusier joj je oslikao zidove. Koja je irska dizajnerica bila njezina glavna autorica?",
+    "answers": [
+      "Eileen Gray",
+      "Eileen Grey",
+      "Ajlin Grej",
+      "Gray"
+    ],
+    "explanation": "Eileen Gray projektirala je vilu E-1027 uz Jeana Badovicija; njezin je autorski doprinos dugo bio zanemarivan.",
+    "sources": [
+      "https://www.archdaily.com/965672/eileen-greys-controversial-e-1027-villa-is-restored-and-open-to-the-public"
+    ],
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00136-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Shigeru Ban i skloništa od kartonskih cijevi",
+    "difficulty": 3,
+    "styleId": 97,
+    "question": "Nakon potresa privremeni domovi mogu nastati i od kartonskih cijevi, a temelji čak od sanduka za pivo ispunjenih pijeskom. Koji je japanski arhitekt, dobitnik Pritzkerove nagrade 2014., poznat po takvim rješenjima?",
+    "answers": [
+      "Shigeru Ban",
+      "Šigeru Ban",
+      "Ban"
+    ],
+    "explanation": "Shigeru Ban projektirao je skloništa i crkve od papirnatih cijevi za područja pogođena katastrofama te dobio Pritzkerovu nagradu 2014.",
+    "sources": [
+      "https://www.pritzkerprize.com/laureates/2014"
+    ],
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00137-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Lina Bo Bardi i viseća zgrada muzeja MASP",
+    "difficulty": 4,
+    "styleId": 33,
+    "question": "Na aveniji Paulista u São Paulu golemi stakleno-betonski muzej djeluje kao da lebdi nad otvorenim javnim prostorom. Koja je arhitektica projektirala zgradu MASP-a, otvorenu na toj lokaciji 1968.?",
+    "answers": [
+      "Lina Bo Bardi",
+      "Bo Bardi",
+      "Lina Bo-Bardi"
+    ],
+    "explanation": "Lina Bo Bardi projektirala je kultnu zgradu Muzeja umjetnosti São Paula (MASP), preseljenu na Avenidu Paulista 1968.",
+    "sources": [
+      "https://masp.org.br/en/about"
+    ],
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00138-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Louis Sullivan i maksima form ever follows function",
+    "difficulty": 2,
+    "styleId": 81,
+    "question": "'Form ever follows function' glasovita je misao iz eseja o visokim uredskim zgradama objavljenog 1896. Koji je američki arhitekt napisao taj esej?",
+    "answers": [
+      "Louis Sullivan",
+      "Luis Sullivan",
+      "Sullivan",
+      "Louis H. Sullivan"
+    ],
+    "explanation": "Louis H. Sullivan formulirao je načelo da oblik slijedi funkciju u eseju The Tall Office Building Artistically Considered iz 1896.",
+    "sources": [
+      "https://textbookofarchitecture.com/rule/form-follows-function"
+    ],
+    "styleDescription": "Započni stvarnim citatom kraćim od deset riječi i traži autora",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00139-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Brendovi",
+    "focus": "crveni prijenosni pisaći stroj Olivetti Valentine",
+    "difficulty": 3,
+    "styleId": 1,
+    "question": "Zamišljen kao prijenosni predmet koji će pratiti pjesnike i izvan ureda, jarkocrveni pisaći stroj Ettorea Sottsassa i Perryja Kinga postao je dizajnerska ikona. Koje je ime nosio taj model tvrtke Olivetti?",
+    "answers": [
+      "Valentine",
+      "Olivetti Valentine",
+      "Valentine Portable Typewriter"
+    ],
+    "explanation": "Valentine je prijenosni pisaći stroj koji su za Olivetti oblikovali Ettore Sottsass i Perry King krajem 1960-ih.",
+    "sources": [
+      "https://www.sfmoma.org/artwork/2004.185.A-B/"
+    ],
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00140-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Likovna umjetnost",
+    "focus": "Akari svjetlosne skulpture Isamua Noguchija",
+    "difficulty": 3,
+    "styleId": 14,
+    "question": "Isamu Noguchi od 1951. oblikovao je svjetiljke od japanskog washi papira i bambusa, smatrajući ih i uporabnim predmetima i skulpturama. Kako se zove ta serija čije ime na japanskom znači svjetlost?",
+    "answers": [
+      "Akari",
+      "Akari Light Sculptures",
+      "Akari svjetiljke"
+    ],
+    "explanation": "Akari je naziv Noguchijevih svjetlosnih skulptura od washi papira i bambusa, nastalih od 1951. godine.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/485657"
+    ],
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00141-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "Mondrianove haljine Yvesa Saint Laurenta iz 1965.",
+    "difficulty": 2,
+    "styleId": 9,
+    "question": "Crne mrežaste linije i plohe crvene, plave, žute i bijele boje s Mondrianovih slika 1965. preselile su se na slavne koktel-haljine. Koji ih je francuski modni kreator osmislio?",
+    "answers": [
+      "Yves Saint Laurent",
+      "Saint Laurent",
+      "YSL",
+      "Iv Sen Loran"
+    ],
+    "explanation": "Yves Saint Laurent 1965. je kreirao haljine nadahnute apstraktnim slikama Pieta Mondriana.",
+    "sources": [
+      "https://museeyslparis.com/en/stories/la-revolution-mondrian"
+    ],
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00142-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Moda",
+    "focus": "Pleats Please Isseyja Miyakea i trajno plisiranje gotove odjeće",
+    "difficulty": 3,
+    "styleId": 60,
+    "question": "Umjesto da prvo plisira tkaninu, japanski dizajner izradio bi odjevni predmet znatno veći, pa ga toplinom trajno naborao. Kako se zove njegova modna linija predstavljena 1993.?",
+    "answers": [
+      "Pleats Please",
+      "Pleats Please Issey Miyake",
+      "Plits Pliz"
+    ],
+    "explanation": "Issey Miyake pokrenuo je liniju Pleats Please 1993.; plisiranje se provodi nakon krojenja i šivanja odjeće.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/678868"
+    ],
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00143-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Svakodnevica",
+    "focus": "Earle Dickson i samoljepljivi flaster Band-Aid",
+    "difficulty": 2,
+    "styleId": 6,
+    "question": "Supruga jednog zaposlenika Johnson & Johnsona često se porezala pri kuhanju. On je spojio gazu i ljepljivu traku te stvorio proizvod poznat po kojem trgovačkom nazivu?",
+    "answers": [
+      "Band-Aid",
+      "Band Aid",
+      "Bandaid",
+      "Band-Aid flaster"
+    ],
+    "explanation": "Earle Dickson osmislio je samoljepljivi zavoj koji je Johnson & Johnson počeo prodavati pod imenom Band-Aid.",
+    "sources": [
+      "https://www.invent.org/inductees/earle-dickson"
+    ],
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00144-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "László Bíró i kemijska olovka s rotirajućom kuglicom",
+    "difficulty": 1,
+    "styleId": 47,
+    "question": "Novinar iz Budimpešte primijetio je da se tiskarska tinta brzo suši, ali je pregusta za nalivpero. Razvio je pisaljku s kuglicom na vrhu. Kako se prezivao taj izumitelj?",
+    "answers": [
+      "Bíró",
+      "Biro",
+      "László Bíró",
+      "Laszlo Biro",
+      "Laslo Biro"
+    ],
+    "explanation": "László Bíró razvio je modernu kemijsku olovku čija kuglica prenosi tintu iz spremnika na papir.",
+    "sources": [
+      "https://www.invent.org/inductees/laszlo-josef-biro"
+    ],
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00145-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Tehnologija",
+    "focus": "Josephine Cochrane i prvi praktični stroj za pranje posuđa",
+    "difficulty": 2,
+    "styleId": 56,
+    "question": "Kad je primijetila da se njezino fino posuđe oštećuje pri ručnom pranju, jedna je Amerikanka razvila stroj koji ga pere mlazovima vode. Koja je izumiteljica 1886. dobila patent za taj praktični uređaj?",
+    "answers": [
+      "Josephine Cochrane",
+      "Josephine Cochran",
+      "Josephine Garis Cochran",
+      "Džozefin Kokran",
+      "Cochran",
+      "Cochrane"
+    ],
+    "explanation": "Josephine Garis Cochran patentirala je 1886. praktičan stroj za pranje posuđa koji je koristio tlak vode umjesto ribanja.",
+    "sources": [
+      "https://www.invent.org/inductees/josephine-garis-cochran"
+    ],
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00146-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Medicina",
+    "focus": "Alice Ball i kemijska obrada ulja čaulmugre za liječenje lepre",
+    "difficulty": 5,
+    "styleId": 52,
+    "question": "Ulje jednog tropskog stabla dugo se nanosilo na kožu oboljelih od lepre, ali slabo se upijalo. Mlada kemičarka na Havajima pretvorila je njegove sastojke u oblik prikladan za injekciju. Kako se zvala?",
+    "answers": [
+      "Alice Ball",
+      "Alice Augusta Ball",
+      "Alis Bol"
+    ],
+    "explanation": "Alice Augusta Ball razvila je metodu priprave topljivih estera masnih kiselina ulja čaulmugre, važnu u povijesti liječenja Hansenove bolesti.",
+    "sources": [
+      "https://www.acs.org/education/whatischemistry/landmarks/alice-ball.html"
+    ],
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00147-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Cecilia Payne-Gaposchkin i kemijski sastav zvijezda",
+    "difficulty": 4,
+    "styleId": 4,
+    "question": "Kad se vjerovalo da zvijezde imaju kemijski sastav sličan Zemljinu, mlada je znanstvenica 1925. pokazala da u njima prevladavaju vodik i helij. Kako se zvala ta astronomkinja?",
+    "answers": [
+      "Cecilia Payne",
+      "Cecilia Payne-Gaposchkin",
+      "Sesilija Pejn",
+      "Payne-Gaposchkin",
+      "Cecilia Payne Gaposchkin"
+    ],
+    "explanation": "Cecilia Payne-Gaposchkin zaključila je na temelju spektara da zvijezdama dominiraju vodik i helij, što je tada bilo revolucionarno.",
+    "sources": [
+      "https://www.aps.org/apsnews/2015/01/cecilia-payne-gaposchkin-universe-changed"
+    ],
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00148-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Vera Rubin i neočekivano ravne rotacijske krivulje galaksija",
+    "difficulty": 3,
+    "styleId": 91,
+    "question": "Zvijezde na rubovima spiralnih galaksija gibale su se brže nego što je vidljiva tvar mogla objasniti. Koja je astronomkinja s Kentom Fordom istraživala te rotacijske krivulje i dala ključne dokaze za tamnu tvar?",
+    "answers": [
+      "Vera Rubin",
+      "Vera C. Rubin",
+      "Rubin",
+      "Vera Rubina"
+    ],
+    "explanation": "Vera Rubin i Kent Ford istraživali su rotaciju galaksija; gotovo ravne krivulje pružile su snažne dokaze za nevidljivu tamnu tvar.",
+    "sources": [
+      "https://carnegiescience.edu/news/vera-rubin-opening-doors-dark-matter-and-women-stem"
+    ],
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00149-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Astronomija",
+    "focus": "Henrietta Swan Leavitt i veza perioda i sjaja cefeida",
+    "difficulty": 5,
+    "styleId": 18,
+    "question": "Što dulje jedna vrsta promjenjivih zvijezda pulsira, to je veći njezin stvarni sjaj. Koja je astronomkinja s Harvarda otkrila tu vezu i time otvorila put mjerenju udaljenosti galaksija?",
+    "answers": [
+      "Henrietta Swan Leavitt",
+      "Henrietta Leavitt",
+      "Leavitt",
+      "Henrijeta Levit"
+    ],
+    "explanation": "Henrietta Swan Leavitt otkrila je vezu perioda i luminoziteta cefeida, ključnu za mjerenje kozmičkih udaljenosti.",
+    "sources": [
+      "https://www.lindahall.org/about/news/scientist-of-the-day/henrietta-swan-leavitt/"
+    ],
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00150-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Arhitektura",
+    "focus": "Kizhi Pogost i dvije drvene crkve na jezeru Onega",
+    "difficulty": 4,
+    "styleId": 33,
+    "question": "Na otoku u ruskom jezeru Onega stoje dvije drvene crkve s mnoštvom kupola i zvonikom. UNESCO posebno ističe predaju o crkvi sagrađenoj sjekirom, bez čavala. Kako se zove taj arhitektonski sklop?",
+    "answers": [
+      "Kizhi Pogost",
+      "Kiži Pogost",
+      "Kizhi",
+      "Kiži",
+      "Kiži pogost"
+    ],
+    "explanation": "Kizhi Pogost je UNESCO-ov kompleks na otoku Kizhi u jezeru Onega; crkva Preobraženja poznata je po drvenoj gradnji i legendi o gradnji bez čavala.",
+    "sources": [
+      "https://whc.unesco.org/en/list/544"
+    ],
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00151-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zemljopis",
+    "focus": "kineska dolina Jiuzhaigou i višebojna krška jezera",
+    "difficulty": 4,
+    "styleId": 8,
+    "question": "U kineskoj pokrajini Sichuan niz bistrih jezera mijenja nijanse od tirkizne do zelene i ljubičaste, a između njih padaju slapovi preko vapnenačkih terasa. Kako se zove ta UNESCO-ova dolina?",
+    "answers": [
+      "Jiuzhaigou",
+      "Dolina Jiuzhaigou",
+      "Jiuzhaigou Valley",
+      "Điudžajgou"
+    ],
+    "explanation": "Jiuzhaigou u Sichuanu poznat je po obojenim jezerima, slapovima i krškim oblicima te je na UNESCO-ovu popisu svjetske baštine.",
+    "sources": [
+      "https://whc.unesco.org/en/list/637"
+    ],
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00152-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Biologija",
+    "focus": "Margarita Salas i DNA polimeraza bakteriofaga phi29",
+    "difficulty": 5,
+    "styleId": 24,
+    "question": "Istraživanja španjolske znanstvenice Margarite Salas na bakteriofagu phi29 dala su enzim koji može iz vrlo malo uzorka vrlo učinkovito umnožavati DNA. Koji se enzim, nazvan po tom virusu, koristi u takvim postupcima?",
+    "answers": [
+      "Phi29 DNA polimeraza",
+      "DNA polimeraza phi29",
+      "Polimeraza phi29",
+      "Phi29 polimeraza",
+      "φ29 DNA polimeraza"
+    ],
+    "explanation": "DNA polimeraza bakteriofaga phi29 poznata je po visokoj procesivnosti i vjernosti kopiranja, a rad Margarite Salas bio je ključan za njezinu primjenu.",
+    "sources": [
+      "https://grupos.eez.csic.es/imili/wp-content/uploads/2025/05/microdiscoverer-hero-margarita-salas.pdf"
+    ],
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00153-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Poljoprivreda",
+    "focus": "fonio kao drevna zapadnoafrička žitarica",
+    "difficulty": 3,
+    "styleId": 15,
+    "question": "U sjevernoj Gani sitno se zrnje skuha za kašu ili posluži slično kus-kusu, a ova se drevna žitarica uzgaja i na siromašnim tlima zapadne Afrike. Kako se zove?",
+    "answers": [
+      "Fonio",
+      "Fonio proso",
+      "Fonio žitarica"
+    ],
+    "explanation": "Fonio je tradicionalna zapadnoafrička žitarica; FAO opisuje njegovu važnost za prehranu i uzgoj u Gani.",
+    "sources": [
+      "https://www.fao.org/newsroom/story/cultivating-fonio-cultivating-traditions/"
+    ],
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00154-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Gastronomija",
+    "focus": "bottarga kao soljena i sušena riblja ikra",
+    "difficulty": 3,
+    "styleId": 79,
+    "question": "Na Sardiniji se ikra cipla posoli, preša i suši, a zatim nariba preko tjestenine kao snažan morski začin. Pod kojim je talijanskim nazivom poznata ta delicija?",
+    "answers": [
+      "Bottarga",
+      "Botarga",
+      "Butarga"
+    ],
+    "explanation": "Bottarga je soljena, prešana i sušena riblja ikra, osobito cijenjena na Sardiniji, gdje se često priprema od cipla.",
+    "sources": [
+      "https://www.theguardian.com/travel/2017/jun/04/sardinia-bottarga-carbonara-dish-pasta-fish-meal"
+    ],
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00155-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Glazba",
+    "focus": "velški crwth sa šest žica i gudalom",
+    "difficulty": 5,
+    "styleId": 98,
+    "question": "Jedno staro velško glazbalo imalo je šest žica, a sačuvani primjerak iz 1742. nalazi se u muzeju u Walesu. Svira se gudalom, no nije violina. Kako se zove?",
+    "answers": [
+      "Crwth",
+      "Krwth",
+      "Crowd",
+      "Cruth"
+    ],
+    "explanation": "Crwth je tradicionalno velško gudačko glazbalo sa šest žica; primjerak iz 1742. čuva Museum Wales.",
+    "sources": [
+      "https://museum.wales/collections/online/object/04ed7758-dae7-3ba8-9a47-96269174597e/Crwth/"
+    ],
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "image": null,
+    "updatedAt": null
+  },
+  {
+    "id": "chatgpt10000-00156-20261030",
+    "createdAt": "2026-10-30T13:50:58.167Z",
+    "origin": "chatgpt-serija-10000",
+    "status": "novo",
+    "type": "blitz",
+    "topic": "Zanati",
+    "focus": "hanji tradicionalni korejski papir od dudove kore",
+    "difficulty": 3,
+    "styleId": 46,
+    "question": "Za jedan tradicionalni papir majstori obrađuju vlakna kore papirnatog duda, a gotovi listovi koriste se za knjige, kaligrafiju i umjetnost. Kako se zove taj korejski papir?",
+    "answers": [
+      "Hanji",
+      "Handži",
+      "Korejski hanji"
+    ],
+    "explanation": "Hanji je tradicionalni korejski ručno izrađen papir od vlakana papirnatog duda, poznat po čvrstoći i kulturnoj uporabi.",
+    "sources": [
+      "https://jsma.uoregon.edu/sites/default/files/2025-08/fluid-continuity-gallery-guide-eng-web-062025.pdf"
+    ],
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "image": null,
+    "updatedAt": null
   }
 ]
