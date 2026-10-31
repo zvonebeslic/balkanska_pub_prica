@@ -1,0 +1,50 @@
+[
+  {
+    "id": "chatgpt10000-00189-20261031",
+    "createdAt": "2026-10-31T00:41:04.000Z",
+    "updatedAt": "2026-10-31T00:41:04.000Z",
+    "topic": "Zanati",
+    "focus": "crna dekorativna ispuna graviranog metala",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Na srednjovjekovnom srebrnom nakitu urezani se ukrasi mogu ispuniti crnom smjesom metalnih sulfida koja se zagrijavanjem učvrsti u udubinama. Kako se zove ta zlatarska tehnika?",
+    "answers": [
+      "Nijelo",
+      "Niello"
+    ],
+    "explanation": "Nijelo je tamna smjesa metalnih sulfida koja se taljenjem učvršćuje u ugraviranim udubinama metalne površine, stvarajući kontrastni ukras.",
+    "sources": [
+      "https://resources.metmuseum.org/resources/metpublications/pdf/Islamic_Jewelry_in_The_Metropolitan_Museum_of_Art.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00190-20261031",
+    "createdAt": "2026-10-31T00:41:04.000Z",
+    "updatedAt": "2026-10-31T00:41:04.000Z",
+    "topic": "Astronomija",
+    "focus": "naziv najdulje tigrove pruge na Enceladu",
+    "difficulty": 5,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Na Saturnovu mjesecu Enceladu pukotine zvane tigrove pruge izbacuju ledene čestice. Najdulja od četiriju glavnih pukotina duga je oko 175 kilometara i nosi ime bliskoistočne prijestolnice. Kako glasi njezin službeni naziv?",
+    "answers": [
+      "Baghdad Sulcus",
+      "Bagdadski sulkus",
+      "Bagdadska brazda"
+    ],
+    "explanation": "NASA navodi da je Baghdad Sulcus najdulja od četiri velike pukotine na Enceladu, duga približno 175 km. Nazivi tih pukotina preuzeti su iz Tisuću i jedne noći.",
+    "sources": [
+      "https://science.nasa.gov/resource/baghdad-sulcus-in-3-d/",
+      "https://science.nasa.gov/resource/arabian-sulci/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
