@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-00405-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Sport",
+    "focus": "Prvi pobjednik modernih OI",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Na prvim modernim Olimpijskim igrama Amerikanac je osvojio troskok i postao prvi olimpijski pobjednik novog doba. Kako se prezivao taj atletičar?",
+    "answers": [
+      "Connolly",
+      "James Connolly"
+    ],
+    "explanation": "James Connolly osvojio je troskok u Ateni 1896.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-1896-125-years-of-shared-olympic-values"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00406-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Povijest",
+    "focus": "Godina prvih modernih OI",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "U Ateni je 1896. obnovljeno veliko međunarodno natjecanje antičkih korijena. Koje je godine održano prvo izdanje modernih Olimpijskih igara?",
+    "answers": [
+      "1896"
+    ],
+    "explanation": "Moderne Olimpijske igre prvi su put održane 1896. u Ateni.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-1896-125-years-of-shared-olympic-values"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00407-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Nishiki-e višebojni drvorez",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Japanski drvorezi u više boja od 1765. mogli su se tiskati zasebnim drvenim matricama. Kako se zovu takvi višebojni otisci?",
+    "answers": [
+      "Nishiki-e",
+      "Nišiki-e"
+    ],
+    "explanation": "Nishiki-e naziv je za japanske višebojne drvoreze.",
+    "sources": [
+      "https://www.metmuseum.org/it/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00408-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Zemljopis",
+    "focus": "Estuarij kao prijelazna voda",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Rijeka donosi slatku vodu, more slanu, a u zaštićenom zaljevu nastaje njihova mješavina. Kako se zove takvo prijelazno obalno područje?",
+    "answers": [
+      "Estuarij",
+      "Estuary"
+    ],
+    "explanation": "Estuarij je područje miješanja slatke i slane vode.",
+    "sources": [
+      "https://coast.noaa.gov/estuaries/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00409-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Astronomija",
+    "focus": "Neptun otkriven matematikom",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Galileo ga je zabilježio kao zvijezdu, a otkriven je tek 1846. nakon matematičkih predviđanja. Koji je to planet?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "Neptun je pronađen na temelju izračuna Le Verriera.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00410-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Fizika",
+    "focus": "Venerin atmosferski tlak",
+    "difficulty": 3,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na površini jednog planeta tlak je približno 93 puta veći nego na Zemljinoj morskoj razini. O kojem je planetu riječ?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venerina gusta atmosfera stvara vrlo velik tlak.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00411-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Matematika",
+    "focus": "Neptunov orbitalni period",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Jedan obilazak Neptuna oko Sunca traje otprilike koliko zemaljskih godina, ako je 2011. dovršio prvi od otkrića 1846.?",
+    "answers": [
+      "165",
+      "165 godina"
+    ],
+    "explanation": "Neptunova orbitalna godina traje približno 165 zemaljskih godina.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00412-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Glazba",
+    "focus": "Merkurovi krateri imenovani po umjetnicima",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na površini Merkura nalaze se krateri nazvani po umjetnicima, uključujući skladatelja Rahmanjinova. Na kojem su planetu ti krateri?",
+    "answers": [
+      "Merkur",
+      "Mercury"
+    ],
+    "explanation": "Merkurovi krateri često nose imena preminulih umjetnika.",
+    "sources": [
+      "https://science.nasa.gov/mercury/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00413-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Religije i mitologije",
+    "focus": "Zeus kao zaštitnik Olimpije",
+    "difficulty": 1,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Stari Grci su u Olimpiji održavali igre u čast vrhovnog boga, čiji se sveti gaj nalazio uz stadion. Kojeg boga?",
+    "answers": [
+      "Zeus",
+      "Zeusa"
+    ],
+    "explanation": "Olimpija je bila važno Zeusovo svetište.",
+    "sources": [
+      "https://www.olympics.com/ioc/ancient-olympic-games/history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00414-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "More i ocean",
+    "focus": "Bočata voda",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "U laguni se miješaju riječne i morske vode. Kako nazivamo vodu koja po slanosti stoji između slatke i morske?",
+    "answers": [
+      "Bočata voda",
+      "Bočata"
+    ],
+    "explanation": "Bočata voda ima srednju slanost zbog miješanja slatke i slane vode.",
+    "sources": [
+      "https://coast.noaa.gov/estuaries/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
