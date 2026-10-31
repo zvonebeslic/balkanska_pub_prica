@@ -35,7 +35,7 @@ const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
 let db,project=null,position={r:0,s:0,i:0},revealed=false,showBoard=false,timerUntil=0;
 let channel=null,saveTimer=null,toastTimer=null,stageMode=new URLSearchParams(location.search).get("stage")==="1";
-let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home";
+let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
 const itemAt=(r,s,i,p=project)=>p?.rounds?.[r]?.sections?.[s]?.items?.[i];
 function baseItem(){return {question:"",answer:"",answer2:"",options:["","",""],correct:"A",truth:"Točno",five:["","","","",""],min:"",max:"",note:"",mediaId:"",mediaName:"",mediaType:"",mediaUrl:""};}
@@ -118,7 +118,10 @@ function ensureChannel(){
  };
  if(stageMode)channel.postMessage({type:"hello"});
 }
-function pushStage(){if(channel&&!stageMode&&project)channel.postMessage({type:"state",quiz:project,position,revealed,showBoard,timerUntil});}
+function pushStage(){
+ if(channel&&!stageMode&&project)channel.postMessage({type:"state",quiz:project,position,revealed,showBoard,timerUntil});
+ if(!stageMode&&project&&window.KTGSync?.isHost())window.KTGSync.broadcastHost(sharedSlide());
+}
 function roundMax(r){return ROUNDS[r].sections.reduce((sum,s,si)=>sum+Array.from({length:s.count},(_,i)=>pointsFor(r,si,i)).reduce((a,b)=>a+b,0),0);}
 function labelItem(r,s,i){
  const code=ROUNDS[r].sections[s].code;
@@ -353,6 +356,138 @@ async function importQuiz(file){
   localStorage.setItem("kviztogo_live_id",copy.id);ensureChannel();await refreshSelect();renderAll();toast("Uvezen je novi kviz.");
  }catch(e){toast("Uvoz nije uspio: "+e.message,true);}
 }
+
+// Sharing across devices uses ephemeral Supabase Realtime messages, never database records.
+function sharedSlide(){
+ if(!project)return null;
+ const sect=ROUNDS[position.r]?.sections[position.s],q=itemAt(position.r,position.s,position.i);
+ if(!sect||!q)return null;
+ const choiceList=sect.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+t):
+  sect.code==="vjerovali"?["Točno","Netočno"]:[];
+ return {
+  kind:"ktg-slide",title:project.title||"Kviz Općeg Znanja",
+  section:ROUNDS[position.r].name+" · "+sect.name,
+  label:labelItem(position.r,position.s,position.i)+" · "+pointsFor(position.r,position.s,position.i)+" bodova",
+  question:q.question?.trim()||"Pitanje još nije upisano.",
+  choices:choiceList,
+  correct:revealed?(sect.code==="abc"?q.correct:sect.code==="vjerovali"?q.truth:""):"",
+  answer:revealed?createAnswer(position.r,position.s,position.i,q):"",
+  revealed,showBoard,
+  board:showBoard?sortedTeams().map(t=>({name:t.name,score:total(t)})):[],
+  mediaUrl:q.mediaUrl?String(q.mediaUrl):"",
+  mediaMissing:!!q.mediaId&&!q.mediaUrl,
+  total:positions().length,
+  index:positions().findIndex(x=>x.r===position.r&&x.s===position.s&&x.i===position.i)+1,
+  clockEnd:timerUntil||0
+ };
+}
+function sharedMedia(root,slide){
+ const holder=root.querySelector(".screen-media");if(!holder||!slide)return;
+ if(slide.mediaUrl){
+  const embed=youtubeEmbed(slide.mediaUrl);
+  if(embed){
+   const frame=document.createElement("iframe");frame.src=embed;frame.title="Video";frame.allow="fullscreen; autoplay; encrypted-media";frame.allowFullscreen=true;
+   frame.style.cssText="width:min(85vw,700px);height:clamp(160px,28vh,350px);border:0;border-radius:9px";holder.append(frame);return;
+  }
+  const url=safeUrl(slide.mediaUrl);if(!url)return;
+  const type=/\.(mp3|ogg|wav|m4a)(\?|$)/i.test(url)?"audio":/\.(mp4|webm|mov)(\?|$)/i.test(url)?"video":"img";
+  const el=document.createElement(type);el.src=url;if(type==="img"){el.alt="Slika uz pitanje";}else{el.controls=true;el.preload="metadata";}
+  holder.append(el);
+ }else if(slide.mediaMissing){
+  const p=document.createElement("p");p.className="muted tiny";p.textContent="Prilog je lokalno spremljen. Za prikaz na drugom uređaju dodaj mrežnu poveznicu na medij u uređivaču.";holder.append(p);
+ }
+}
+function renderSharedSlide(root,slide){
+ if(!root||!slide||slide.kind!=="ktg-slide")return;
+ if(slide.showBoard){
+  const rows=(slide.board||[]).map((t,i)=>'<tr><td>'+(i+1)+'. '+esc(t.name)+'</td><td>'+Number(t.score||0).toLocaleString("hr-HR")+'</td></tr>').join("");
+  root.innerHTML='<div class="screen-inner"><div class="screen-head">'+esc(slide.title)+'</div><div class="screen-title">🏆 Ljestvica ekipa</div><table class="stage-leaderboard"><tbody>'+rows+'</tbody></table></div>';
+  return;
+ }
+ const question=String(slide.question||"");
+ const choices=(slide.choices||[]).map(t=>{
+  const isCorrect=slide.revealed&&slide.correct&&String(t).startsWith(slide.correct+(t.includes(")")?")":""));
+  return '<span class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</span>';
+ }).join("");
+ root.innerHTML='<div class="screen-inner"><div class="screen-head">'+esc(slide.section||"")+'</div>'+
+  '<div class="screen-title '+(question.length>280?"extra-long":question.length>135?"long":"")+'">'+esc(question)+'</div>'+
+  (choices?'<div class="screen-choices">'+choices+'</div>':"")+
+  '<div class="screen-media"></div>'+
+  (slide.revealed?'<div class="screen-answer">✓ '+esc(slide.answer||"Odgovor nije upisan.")+'</div>':"")+
+  '<div class="screen-foot">'+esc(slide.label||"")+'</div></div>';
+ sharedMedia(root,slide);
+}
+function pairingForCurrentQuiz(){
+ if(!project||!window.KTGSync)throw Error("Povezivanje nije dostupno.");
+ const storageKey="ktg-room-"+project.id;
+ let info;try{info=JSON.parse(localStorage.getItem(storageKey)||"null");}catch{}
+ if(!info||!KTGSync.validRoom(info.room)||!(/^[0-9a-f]{48}$/.test(info.secret||""))){
+  info={room:KTGSync.genRoom(),secret:KTGSync.genSecret()};
+  localStorage.setItem(storageKey,JSON.stringify(info));
+ }
+ return info;
+}
+function audienceUrl(room){return new URL("kviz-uzivo.html?stage=1&room="+encodeURIComponent(room),location.href).href;}
+function controllerUrl(room,secret){return new URL("kviz-uzivo.html?remote="+encodeURIComponent(room)+"&auth="+encodeURIComponent(secret),location.href).href;}
+function startPairing(){
+ if(!project||!window.KTGSync)throw Error("Za povezivanje uređaja potrebna je dostupna internetska usluga.");
+ const info=pairingForCurrentQuiz();pairing=info;
+ $("pairPanel").hidden=false;
+ $("roomCode").textContent=info.room;
+ $("audienceLink").value=audienceUrl(info.room);
+ $("controlLink").value=controllerUrl(info.room,info.secret);
+ KTGSync.startHost({
+  room:info.room,controlSecret:info.secret,getState:sharedSlide,
+  onStatus:s=>$("pairStatus").textContent=s,
+  onCommand:action=>{
+   if(action==="next")changePosition(1);
+   else if(action==="previous")changePosition(-1);
+   else if(action==="reveal")changeReveal();
+   else if(action==="board"){showBoard=!showBoard;renderAll();}
+  }
+ });
+}
+function endPairing(){
+ if(window.KTGSync)KTGSync.stop();
+ pairing=null;
+ if($("pairPanel"))$("pairPanel").hidden=true;
+}
+function connectAudience(room){
+ $("editorApp").hidden=true;$("stageApp").hidden=false;
+ $("stageCanvas").textContent="Povezujem ekran za publiku…";
+ KTGSync.startAudience({
+  room,onState:slide=>{renderSharedSlide($("stageCanvas"),slide);timerUntil=slide.clockEnd||0;},
+  onStatus:status=>{if(status!=="Povezano")$("stageCanvas").textContent=status;}
+ });
+ setInterval(refreshClocks,250);
+}
+function connectRemoteController(room,secret){
+ $("homeScreen").hidden=true;$("hostScreen").hidden=true;
+ $("editScreen").hidden=true;$("manageScreen").hidden=true;$("remoteScreen").hidden=false;
+ $("topHome").hidden=true;
+ $("remotePreview").innerHTML='<div class="screen"><div class="screen-inner">Čekam prvo pitanje…</div></div>';
+ KTGSync.startController({
+  room,controlSecret:secret,
+  onState:slide=>{
+   $("remotePreview").innerHTML='<div class="screen"></div>';
+   renderSharedSlide($("remotePreview").firstElementChild,slide);
+   $("remoteReveal").textContent=slide.revealed?"Sakrij odgovor":"Prikaži odgovor";
+   $("remotePrev").disabled=slide.index<=1;
+   $("remoteNext").disabled=slide.index>=slide.total;
+  },
+  onStatus:s=>$("remoteStatus").textContent=s
+ });
+ $("remotePrev").addEventListener("click",()=>KTGSync.sendCommand("previous"));
+ $("remoteNext").addEventListener("click",()=>KTGSync.sendCommand("next"));
+ $("remoteReveal").addEventListener("click",()=>KTGSync.sendCommand("reveal"));
+}
+async function copyLink(id){
+ const input=$(id);
+ if(!input?.value)return;
+ try{await navigator.clipboard.writeText(input.value);toast("Poveznica kopirana.");}
+ catch{input.focus();input.select();toast("Označena poveznica. Kopiraj je ručno.");}
+}
+
 function bindEditor(){
  $("topHome").addEventListener("click",()=>showView("home"));
  $("startBtn").addEventListener("click",()=>showView("host"));
