@@ -1,0 +1,118 @@
+[
+  {
+    "id": "chatgpt10000-00209-20261031",
+    "createdAt": "2026-10-31T13:00:00.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Anna Atkins knjiga Photographs of British Algae",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Botaničarka je od 1843. objavljivala knjigu o britanskim algama, a svaku je stranicu ilustrirala fotografskim otiskom bez fotoaparata. Kako se prezivala ta pionirka fotografskih knjiga?",
+    "answers": [
+      "Atkins",
+      "Anna Atkins"
+    ],
+    "explanation": "Anna Atkins izrađivala je cijanotipije algi za knjigu Photographs of British Algae, započetu 1843.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/286656"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T13:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00210-20261031",
+    "createdAt": "2026-10-31T13:00:00.000Z",
+    "topic": "Tehnologija",
+    "focus": "Cijanotipija fotografski postupak modrih otisaka",
+    "difficulty": 3,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Arhitekti su nekada umnožavali nacrte u karakterističnoj plavoj boji, a Anna Atkins istim je postupkom izrađivala slike algi. Kako se zove taj fotografski postupak?",
+    "answers": [
+      "Cijanotipija",
+      "Cyanotype",
+      "Cyanotypy"
+    ],
+    "explanation": "Cijanotipija je fotografski postupak plavih otisaka koji je izumio John Herschel 1842.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/285421"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T13:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00211-20261031",
+    "createdAt": "2026-10-31T13:00:00.000Z",
+    "topic": "Promet",
+    "focus": "Penny-farthing bicikl s velikim prednjim kotačem",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Nekadašnji bicikl s golemim prednjim i sićušnim stražnjim kotačem dobio je engleski nadimak prema dvama novčićima različite veličine. Koji je to nadimak?",
+    "answers": [
+      "Penny-farthing",
+      "Penny farthing",
+      "Peni farting"
+    ],
+    "explanation": "Naziv penny-farthing uspoređuje dva nejednaka kotača s dvama britanskim novčićima.",
+    "sources": [
+      "https://americanhistory.si.edu/explore/stories/bicycles-have-changed-fellowship-remains"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T13:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00212-20261031",
+    "createdAt": "2026-10-31T13:00:00.000Z",
+    "topic": "Povijest",
+    "focus": "Sigurnosni bicikl dva kotača jednake veličine",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kad su krajem 19. stoljeća bicikli s dva kotača jednake veličine počeli potiskivati opasne modele s golemim prednjim kotačem, dobili su naziv koji ističe njihovu glavnu prednost. Kako se zvao taj tip bicikla?",
+    "answers": [
+      "Sigurnosni bicikl",
+      "Safety bicycle"
+    ],
+    "explanation": "Sigurnosni bicikl imao je dva približno jednaka kotača i bio je sigurniji od visokih bicikala.",
+    "sources": [
+      "https://americanhistory.si.edu/de/collections/object/nmah_843087"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T13:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00213-20261031",
+    "createdAt": "2026-10-31T13:00:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Kraken Mare najveće more na Titanu",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na jednom Saturnovu mjesecu radarska karta prikazuje Ligeia Mare, Punga Mare i najveće more koje nosi ime mitskog morskog čudovišta. Kako se zove to najveće more?",
+    "answers": [
+      "Kraken Mare"
+    ],
+    "explanation": "Kraken Mare najveće je poznato more na Saturnovu mjesecu Titanu, ispunjeno tekućim ugljikovodicima.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/titans-north/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T13:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
