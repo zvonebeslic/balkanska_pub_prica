@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-00201-20261031",
+    "topic": "Astronomija",
+    "focus": "Venerina rotacija traje 243 zemaljska dana, a obilazak Sunca 225",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedan okret oko vlastite osi traje oko 243 zemaljska dana, dok mu za obilazak Sunca treba samo 225, pa mu je rotacijski dan dulji od godine?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se iznimno sporo okreće oko svoje osi: rotacija traje oko 243 zemaljska dana, a obilazak Sunca približno 225 dana. To se odnosi na rotacijski, a ne Sunčev dan.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "createdAt": "2026-10-31T09:35:00.000Z",
+    "updatedAt": "2026-10-31T09:35:00.000Z",
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00202-20261031",
+    "topic": "Likovna umjetnost",
+    "focus": "Dagerotipija kao jedinstvena fotografija na posrebrenoj bakrenoj ploči bez negativa",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Prije nego što su fotografi mogli umnažati slike s negativa, portreti su se izrađivali na posrebrenim bakrenim pločama, a svaki je bio jedinstven primjerak. Kako se zvao taj fotografski postupak objavljen 1839. godine?",
+    "answers": [
+      "Dagerotipija",
+      "Daguerreotype",
+      "Dagerotip"
+    ],
+    "explanation": "Dagerotipija, nazvana po Louisu Daguerreu, stvara jedinstvenu fotografsku sliku na metalnoj ploči, bez negativa. Javnosti je predstavljena 1839. godine.",
+    "sources": [
+      "https://www.si.edu/object/photograph-louis-jacques-mande-daguerre%3Anmah_554754"
+    ],
+    "createdAt": "2026-10-31T09:35:00.000Z",
+    "updatedAt": "2026-10-31T09:35:00.000Z",
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
