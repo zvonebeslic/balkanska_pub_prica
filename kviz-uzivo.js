@@ -456,9 +456,18 @@ function endPairing(){
 function connectAudience(room){
  $("editorApp").hidden=true;$("stageApp").hidden=false;
  $("stageCanvas").textContent="Povezujem ekran za publiku…";
+ let lastSlide="";
  KTGSync.startAudience({
-  room,onState:slide=>{renderSharedSlide($("stageCanvas"),slide);timerUntil=slide.clockEnd||0;},
-  onStatus:status=>{if(status!=="Povezano")$("stageCanvas").textContent=status;}
+  room,
+  onState:slide=>{
+   const signature=JSON.stringify(slide);
+   if(signature!==lastSlide){renderSharedSlide($("stageCanvas"),slide);lastSlide=signature;}
+   timerUntil=slide.clockEnd||0;
+  },
+  onStatus:status=>{
+   if(status==="Povezano"&&!lastSlide)$("stageCanvas").textContent="Ekran je povezan. Čekam voditelja kviza…";
+   else if(status!=="Povezano"){$("stageCanvas").textContent=status;lastSlide="";}
+  }
  });
  setInterval(refreshClocks,250);
 }
@@ -467,16 +476,25 @@ function connectRemoteController(room,secret){
  $("editScreen").hidden=true;$("manageScreen").hidden=true;$("remoteScreen").hidden=false;
  $("topHome").hidden=true;
  $("remotePreview").innerHTML='<div class="screen"><div class="screen-inner">Čekam prvo pitanje…</div></div>';
+ let lastSlide="";
  KTGSync.startController({
   room,controlSecret:secret,
   onState:slide=>{
-   $("remotePreview").innerHTML='<div class="screen"></div>';
-   renderSharedSlide($("remotePreview").firstElementChild,slide);
+   const signature=JSON.stringify(slide);
+   if(signature!==lastSlide){
+    $("remotePreview").innerHTML='<div class="screen"></div>';
+    renderSharedSlide($("remotePreview").firstElementChild,slide);
+    lastSlide=signature;
+   }
+   $("remoteStatus").textContent="Upravljanje aktivnim kvizom · "+slide.index+" / "+slide.total;
    $("remoteReveal").textContent=slide.revealed?"Sakrij odgovor":"Prikaži odgovor";
    $("remotePrev").disabled=slide.index<=1;
    $("remoteNext").disabled=slide.index>=slide.total;
   },
-  onStatus:s=>$("remoteStatus").textContent=s
+  onStatus:s=>{
+   $("remoteStatus").textContent=s==="Povezano"?"Spojeno na sustav. Čekam aktivnog voditelja…":s;
+   if(s!=="Povezano")lastSlide="";
+  }
  });
  $("remotePrev").addEventListener("click",()=>KTGSync.sendCommand("previous"));
  $("remoteNext").addEventListener("click",()=>KTGSync.sendCommand("next"));
