@@ -1,0 +1,240 @@
+[
+  {
+    "id": "chatgpt10000-00435-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Sport",
+    "focus": "Chamonix 1924 naknadno priznat 1926",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Natjecanje u francuskim Alpama održano je 1924. kao Tjedan zimskih sportova, a tek 1926. priznato kao prve Zimske olimpijske igre. Koji je grad bio domaćin?",
+    "answers": [
+      "Chamonix",
+      "Chamonix-Mont-Blanc"
+    ],
+    "explanation": "Prve Zimske olimpijske igre održane su 1924. u Chamonixu, a status su dobile retroaktivno 1926.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/when-were-the-first-olympic-winter-games-held"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00436-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Vremenske prilike",
+    "focus": "Beaufortova ljestvica iz brodskih jedara",
+    "difficulty": 3,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Pomorci su nekoć jačinu vjetra procjenjivali prema tome koliko jedara brod može nositi. Po kojem se britanskom časniku zove ljestvica od 0 do 12?",
+    "answers": [
+      "Beaufort",
+      "Francis Beaufort"
+    ],
+    "explanation": "Francis Beaufort razvio je ljestvicu za opis djelovanja vjetra, izvorno vezanu uz jedrenjake.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/waves/jetstream-max-wind-and-sea-scales"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00437-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Astronomija",
+    "focus": "Venera rotacija 243 dana godina 225",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedan okret oko vlastite osi traje oko 243 zemaljska dana, a obilazak Sunca samo oko 225?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se okreće toliko sporo da joj je siderički dan dulji od godine.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00438-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Egipatsko plavilo prvi sintetski pigment",
+    "difficulty": 4,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Drevni majstori miješali su pijesak, vapno i bakreni spoj pa ih pekli kako bi dobili jedan od prvih umjetnih pigmenata. Kako nazivamo taj intenzivno plavi pigment?",
+    "answers": [
+      "Egipatsko plavilo",
+      "Egipatska plava",
+      "Egyptian blue"
+    ],
+    "explanation": "Egipatsko plavilo dobivalo se zagrijavanjem sastojaka s bakrom u peći.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/568012"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00439-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Tehnologija",
+    "focus": "Prvi UPC skenirani proizvod Wrigley žvakaća",
+    "difficulty": 2,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Kad je 1974. u supermarketu u Ohiju prvi put uspješno očitan UPC kod na blagajni, koji je proizvod bio u pakiranju?",
+    "answers": [
+      "Žvakaće gume",
+      "Žvakaća guma",
+      "Wrigley's žvakaće gume",
+      "Žvake"
+    ],
+    "explanation": "Prva skenirana kupnja s UPC kodom bilo je pakiranje Wrigleyjevih žvakaćih guma.",
+    "sources": [
+      "https://americanhistory.si.edu/ne/collections/object/nmah_892778"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00440-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Gastronomija",
+    "focus": "Nikstamalizacija kukuruza lužinom",
+    "difficulty": 4,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "Tortilje se tradicionalno pripremaju od kukuruza koji se prije mljevenja obrađuje lužnatom vodom, često s vapnom. Kako se zove taj meksički postupak?",
+    "answers": [
+      "Nikstamalizacija",
+      "Nixtamalization",
+      "Nixtamalizacija"
+    ],
+    "explanation": "Nikstamalizacija poboljšava preradu i prehrambenu vrijednost kukuruza.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/traditional-mexican-cuisine-ancestral-ongoing-community-culture-the-michihuahuan-pyramid-00400"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00441-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Povijest",
+    "focus": "Kamen iz Rosette tri pisma",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Jedan egipatski natpis pronađen 1799. sadrži tekst na tri pisma i pomogao je u čitanju hijeroglifa. Po kojem je mjestu nazvan taj kamen?",
+    "answers": [
+      "Rosetta",
+      "Rašid",
+      "Rashid"
+    ],
+    "explanation": "Kamen iz Rosette nosi isti tekst u trima pismima, što je pomoglo dešifriranju hijeroglifa.",
+    "sources": [
+      "https://www.britishmuseum.org/commercial/filming/filming-location-egyptian-sculpture-gallery"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00442-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Zanati",
+    "focus": "Egipatska fajansa kvarcna masa",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Sitni egipatski amuleti blistali su tirkiznom glazurom, iako nisu bili izrađeni od dragog kamena. Kako se zove materijal na bazi kvarca i alkalnih soli od kojeg su ih pravili?",
+    "answers": [
+      "Egipatska fajansa",
+      "Fajansa",
+      "Egyptian faience"
+    ],
+    "explanation": "Egipatska fajansa je glazirani materijal s kvarcnom osnovom, a ne klasična glinena keramika.",
+    "sources": [
+      "https://www.metmuseum.org/fr/essays/egyptian-faience-technology-and-production"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00443-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Poljoprivreda",
+    "focus": "Chinampas umjetni otočići uzgoj",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U jezerskim područjima Meksika poljoprivrednici su stvarali plodne uzdignute parcele okružene kanalima. Kako se zovu te tradicionalne parcele?",
+    "answers": [
+      "Chinampas",
+      "Činampas",
+      "Chinampa",
+      "Činampa"
+    ],
+    "explanation": "Chinampas su umjetno oblikovane poljoprivredne površine u jezerskim područjima Meksika.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/traditional-mexican-cuisine-ancestral-ongoing-community-culture-the-michihuahuan-pyramid-00400"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00444-20261031",
+    "createdAt": "2026-10-31T22:36:12.000Z",
+    "updatedAt": "2026-10-31T22:36:12.000Z",
+    "topic": "Sport",
+    "focus": "Charles Jewtraw prvo zimsko olimpijsko zlato",
+    "difficulty": 4,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Na prvim Zimskim olimpijskim igrama 1924. prvo je zlato dodijeljeno za 500 metara brzog klizanja. Koji ga je Amerikanac osvojio?",
+    "answers": [
+      "Charles Jewtraw",
+      "Jewtraw"
+    ],
+    "explanation": "Charles Jewtraw osvojio je prvo zlato Zimskih olimpijskih igara u Chamonixu.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/sporting-highlights-x7903"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
