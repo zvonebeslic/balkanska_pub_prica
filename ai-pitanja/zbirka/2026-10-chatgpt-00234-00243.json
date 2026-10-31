@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-00234-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Europa orbitalna rezonancija Io Ganimed",
+    "difficulty": 4,
+    "styleId": 62,
+    "styleDescription": "Traži točan redoslijed naziva sličnih pojava",
+    "question": "Ako Ganimed napravi jedan krug oko Jupitera, Europa napravi dva, a koji mjesec za to vrijeme napravi četiri kruga?",
+    "answers": [
+      "Io"
+    ],
+    "explanation": "Orbitalna rezonancija Io–Europa–Ganimed iznosi 4:2:1.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00235-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Biologija",
+    "focus": "Europa podledeni ocean kemijska energija",
+    "difficulty": 3,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na Jupiterovu mjesecu Europi mogući život ne bi mogao računati na Sunčevu svjetlost ispod ledene kore. Kojim bi se procesima, umjesto fotosintezom, mogao opskrbljivati energijom?",
+    "answers": [
+      "Kemijskim reakcijama",
+      "Kemijske reakcije",
+      "Kemosintezom",
+      "Kemosinteza"
+    ],
+    "explanation": "NASA ističe da bi život ispod leda mogao ovisiti o kemijskim reakcijama, a ne fotosintezi.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00236-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Fizika",
+    "focus": "Plimno zagrijavanje Jupiterova mjeseca Io",
+    "difficulty": 4,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Na jednom Jupiterovu mjesecu stijene se izdižu i spuštaju čak do stotinjak metara zbog promjenjivih gravitacijskih sila. Koji je to vulkanski mjesec?",
+    "answers": [
+      "Io"
+    ],
+    "explanation": "Jupiter i susjedni mjeseci plimnim silama deformiraju Io i zagrijavaju njegovu unutrašnjost.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/io/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00237-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Akv tinta smola i kiselina grafička tehnika",
+    "difficulty": 4,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Grafičar posipa metalnu ploču finom smolom, zagrijava je i uranja u kiselinu kako bi dobio nijanse nalik akvarelu. Kako se zove ta tehnika dubokog tiska?",
+    "answers": [
+      "Akvatinta",
+      "Aquatint"
+    ],
+    "explanation": "Akvatinta stvara tonske površine pomoću zrnaca smole i jetkanja metalne ploče.",
+    "sources": [
+      "https://www.metmuseum.org/zh/essays/the-printed-image-in-the-west-aquatint"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00238-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Zanati",
+    "focus": "Ukiyo-e poravnanje otisaka oznake kento",
+    "difficulty": 5,
+    "styleId": 68,
+    "styleDescription": "Opiši alat kroz oblik i netipičnu uporabu",
+    "question": "Japanski drvorez u više boja zahtijeva da svaki novi otisak sjedne na isto mjesto. Što se urezuje na rubove drvenih blokova kako bi se boje točno poravnale?",
+    "answers": [
+      "Registracijski urezi",
+      "Urezi za poravnanje",
+      "Oznake za poravnanje",
+      "Kento"
+    ],
+    "explanation": "Na drvenim blokovima izrađuju se dva poravnavajuća ureza, poznata kao kento.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00239-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Priroda",
+    "focus": "Tsunami brzina ovisi o dubini oceana",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Tsunami usred oceana može juriti brzinom zrakoplova, a blizu obale usporava. Koja osobina mora najviše određuje brzinu njegova vala?",
+    "answers": [
+      "Dubina mora",
+      "Dubina vode",
+      "Dubina oceana"
+    ],
+    "explanation": "Brzina tsunamija ovisi o dubini vode; u plićaku se val usporava i raste.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/tsunami.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00240-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "More i ocean",
+    "focus": "Tsunami pogrešan naziv plimni val",
+    "difficulty": 2,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Premda ga ljudi katkad zovu 'plimnim valom', golemi val izazvan podmorskim potresom zapravo nema veze s plimom. Kako se pravilno naziva?",
+    "answers": [
+      "Tsunami",
+      "Cunami"
+    ],
+    "explanation": "Tsunami nastaje najčešće zbog podmorskih potresa, a naziv plimni val zavarava.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/tsunami.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00241-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Povijest",
+    "focus": "Voyager 1 ulazak u međuzvjezdani prostor",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Letjelica lansirana 1977. prva je 2012. ušla u međuzvjezdani prostor. Kako se zove ta NASA-ina sonda?",
+    "answers": [
+      "Voyager 1",
+      "Vojadžer 1"
+    ],
+    "explanation": "Voyager 1 prešao je heliopauzu 2012. godine.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00242-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Tehnologija",
+    "focus": "Jupiterovi prsteni Voyager 1 otkriće 1979",
+    "difficulty": 3,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Jedna svemirska letjelica 1979. otkrila je da i Jupiter ima prstenove, premda su mnogo slabije vidljivi od Saturnovih. Koja?",
+    "answers": [
+      "Voyager 1",
+      "Vojadžer 1"
+    ],
+    "explanation": "NASA-in Voyager 1 otkrio je Jupiterove prstenove 1979.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00243-20261031",
+    "createdAt": "2026-10-31T15:30:00.000Z",
+    "updatedAt": "2026-10-31T15:30:00.000Z",
+    "topic": "Religije i mitologije",
+    "focus": "Io grčka mitologija preobrazba u kravu",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Jupiterov vulkanski mjesec nosi ime junakinje grčkog mita koju je Zeus pretvorio u kravu. Kako se zvala?",
+    "answers": [
+      "Io"
+    ],
+    "explanation": "Mitološka Io bila je žena koju je Zeus pretvorio u kravu; po njoj je nazvan Jupiterov mjesec.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/io/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
