@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-00207-20261031",
+    "createdAt": "2026-10-31T11:00:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Japet Saturnov mjesec s tamnom i svijetlom hemisferom",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Kad je Cassini promatrao jedan Saturnov mjesec, vidio je da je jedna njegova hemisfera gotovo crna, a druga znatno svjetlija. Kako se zove taj neobični mjesec?",
+    "answers": [
+      "Japet",
+      "Iapetus",
+      "Japetus"
+    ],
+    "explanation": "Saturnov mjesec Japet ima izrazito tamnu vodeću i svijetlu stražnju hemisferu, što potvrđuju snimke misije Cassini.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/iapetus/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T11:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00208-20261031",
+    "createdAt": "2026-10-31T11:00:00.000Z",
+    "topic": "Zanati",
+    "focus": "Kintsugi japanski popravak keramike zlatnim lakom",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "U Japanu se razbijena keramička zdjela ponekad ne popravlja skrivajući pukotine, nego se one naglašavaju zlatom. Kojim se nazivom označava ta tehnika?",
+    "answers": [
+      "Kintsugi",
+      "Kincugi"
+    ],
+    "explanation": "Kintsugi je japanska tehnika popravljanja keramike lakom sa zlatom, pri kojoj popravljene pukotine postaju vidljiv dio predmeta.",
+    "sources": [
+      "https://www.metmuseum.org/fr/exhibitions/the-infinite-artistry-of-japanese-ceramics"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T11:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
