@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-00395-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Pluton i Haron međusobno plimno zaključani",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Pluton i njegov najveći mjesec uvijek okreću iste strane jedan prema drugome. Kako se zove taj mjesec?",
+    "answers": [
+      "Haron",
+      "Charon"
+    ],
+    "explanation": "Haron i Pluton međusobno su plimno zaključani.",
+    "sources": [
+      "https://science.nasa.gov/moon/tidal-locking/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00396-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Fizika",
+    "focus": "Plimno zaključavanje kao sinkronizacija rotacije",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Mjesec se okrene oko svoje osi upravo jednom tijekom obilaska Zemlje. Kako se naziva ta vrsta rotacije?",
+    "answers": [
+      "Sinkrona rotacija",
+      "Sinkronizirana rotacija"
+    ],
+    "explanation": "Sinkrona rotacija razlog je što sa Zemlje vidimo gotovo uvijek istu Mjesečevu stranu.",
+    "sources": [
+      "https://science.nasa.gov/moon/tidal-locking/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00397-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Zemljopis",
+    "focus": "Prosječna udaljenost Mjeseca od Zemlje",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Kad biste između Zemlje i Mjeseca slagali Zemljine kugle, stalo bi ih približno trideset. Kolika je prosječna udaljenost između njihovih središta u kilometrima, zaokružena na tisuću?",
+    "answers": [
+      "384000",
+      "384 tisuće",
+      "384.000"
+    ],
+    "explanation": "NASA navodi prosječnu udaljenost od približno 384 399 kilometara.",
+    "sources": [
+      "https://science.nasa.gov/moon/moon-phases/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00398-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Priroda",
+    "focus": "Dva dnevna ciklusa plime",
+    "difficulty": 2,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Na većini svjetskih obala u jednom danu nastupe dvije visoke i dvije niske vode. Koliko otprilike sati prođe između dviju uzastopnih visokih voda?",
+    "answers": [
+      "12",
+      "12 sati",
+      "oko 12 sati"
+    ],
+    "explanation": "Razmak je nešto veći od 12 sati, u prosjeku oko 12 sati i 25 minuta.",
+    "sources": [
+      "https://science.nasa.gov/moon/tides/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00399-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Kemija",
+    "focus": "Vodik iz Sunčeva vjetra i lunarna voda",
+    "difficulty": 4,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na Mjesečevoj površini dio sastojaka za stvaranje vode može stići iz Sunčeva vjetra. Koji kemijski element donose te nabijene čestice?",
+    "answers": [
+      "Vodik",
+      "H"
+    ],
+    "explanation": "Protoni iz Sunčeva vjetra mogu doprinijeti nastanku hidroksila i molekula vode na Mjesecu.",
+    "sources": [
+      "https://science.nasa.gov/moon/solar-wind/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00400-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Biologija",
+    "focus": "Potencijalni ocean ispod Europe",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Ispod ledene kore Jupiterova mjeseca Europe možda se skriva globalni ocean. Je li on, prema znanstvenim pretpostavkama, sladak ili slan?",
+    "answers": [
+      "Slan",
+      "Slana voda",
+      "Slani ocean"
+    ],
+    "explanation": "NASA navodi dokaze i modele koji upućuju na slani ocean ispod Europe.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/ocean-worlds/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00401-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Tehnologija",
+    "focus": "Cassini i istraživanje Encelada",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Snimala je Saturnove prstenove, istraživala Titan i prolazila kroz mlazove Enceladovih gejzira. Kako se zvala ta svemirska letjelica?",
+    "answers": [
+      "Cassini",
+      "Cassini-Huygens"
+    ],
+    "explanation": "Cassini je proučavao Saturnov sustav i otkrio važne podatke o Enceladu.",
+    "sources": [
+      "https://science.nasa.gov/missions/cassini/the-moon-with-the-plume/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00402-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Matematika",
+    "focus": "Omjer orbitalnih perioda Io Europa Ganimed",
+    "difficulty": 4,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "U poznatoj rezonanciji Jupiterovih mjeseca Io napravi četiri obilaska dok Ganimed napravi koliko?",
+    "answers": [
+      "1",
+      "Jedan"
+    ],
+    "explanation": "Io, Europa i Ganimed povezani su orbitalnom rezonancijom 4:2:1.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00403-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "More i ocean",
+    "focus": "Plima pri prvoj četvrti Mjeseca",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Za vrijeme prve i posljednje Mjesečeve četvrti Sunčeve i Mjesečeve plimne sile djelomično se poništavaju. Jesu li tada razlike između visoke i niske vode veće ili manje?",
+    "answers": [
+      "Manje",
+      "Manje razlike",
+      "Manja"
+    ],
+    "explanation": "Tada nastupaju slabije plime, odnosno manji raspon razine mora.",
+    "sources": [
+      "https://science.nasa.gov/moon/tides/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00404-20261031",
+    "createdAt": "2026-10-31T19:35:00.000Z",
+    "updatedAt": "2026-10-31T19:35:00.000Z",
+    "topic": "Povijest",
+    "focus": "Godina objave NASA-ine fotografije rotacije Mjeseca",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Mjesec se ipak okreće oko svoje osi. Koliko punih okretaja oko osi napravi tijekom jednog obilaska Zemlje?",
+    "answers": [
+      "1",
+      "Jedan"
+    ],
+    "explanation": "Mjesec napravi jedan okretaj oko osi po jednoj orbiti, što se naziva sinkrona rotacija.",
+    "sources": [
+      "https://science.nasa.gov/resource/the-moons-rotation/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
