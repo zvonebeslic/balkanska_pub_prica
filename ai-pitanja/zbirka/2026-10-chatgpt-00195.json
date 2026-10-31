@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-00195-20261031",
+    "createdAt": "2026-10-31T04:36:17.000Z",
+    "updatedAt": "2026-10-31T04:36:17.000Z",
+    "topic": "Priroda",
+    "focus": "Retikulit, vulkanska stijena koja tone unatoč izrazitoj poroznosti",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Plovućac može plutati zbog zarobljenih mjehurića plina, no njegova iznimno lagana, mrežasta vulkanska srodnica često tone jer su joj šupljine međusobno povezane i propuštaju vodu. Kako se zove ta neobična stijena?",
+    "answers": [
+      "Retikulit",
+      "Reticulite"
+    ],
+    "explanation": "Retikulit je iznimno porozna vrsta vulkanskog materijala s međusobno povezanim šupljinama. Premda je vrlo lagan, voda ulazi u otvorenu mrežu pora pa brzo tone, za razliku od mnogih komada plovućca sa zatvorenim mjehurićima.",
+    "sources": [
+      "https://www.usgs.gov/observatories/hvo/news/volcano-watch-almost-nothing-enough-reticulite-helps-measure-depth-kilaueas",
+      "https://pubs.usgs.gov/gip/hawaii/page41.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
