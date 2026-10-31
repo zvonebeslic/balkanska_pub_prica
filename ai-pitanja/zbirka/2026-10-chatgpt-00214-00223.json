@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-00214-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Moda",
+    "focus": "Gideon Sundback patent zatvarač",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Čizme su dobile metalni zatvarač čiji su se zupci međusobno spajali, a njegov je izumitelj 1917. dobio američki patent. Kako se prezivao taj švedsko-američki inženjer?",
+    "answers": [
+      "Sundback",
+      "Gideon Sundback"
+    ],
+    "explanation": "Gideon Sundback razvio je moderni razdvojivi patentni zatvarač, patentiran 1917.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_860486"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00215-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Brendovi",
+    "focus": "Wrigley prva skenirana UPC roba",
+    "difficulty": 2,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Na blagajni trgovine u Ohiju 1974. laserski je čitač prvi put očitao UPC kod na pakiranju proizvoda jedne poznate marke žvakaćih guma. Koje?",
+    "answers": [
+      "Wrigley",
+      "Wrigley's",
+      "Wrigleys"
+    ],
+    "explanation": "Prva kupnja zabilježena UPC skenerom bilo je pakiranje Wrigley's žvakaćih guma.",
+    "sources": [
+      "https://www.si.edu/object/supermarket-scanner%3Anmah_892778"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00216-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "More i ocean",
+    "focus": "Sargaško more bez kopnenih granica",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na karti Atlantika tražimo more čije obale nisu kopno: granice mu crtaju morske struje, a površinom plutaju smeđe alge. Kako se zove?",
+    "answers": [
+      "Sargaško more",
+      "Sargassovo more",
+      "Sargasso Sea"
+    ],
+    "explanation": "Sargaško more jedino je more omeđeno isključivo morskim strujama.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/sargassosea.html"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00217-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Sport",
+    "focus": "Olimpijska zastava prvi put igre Antwerpen 1920",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Olimpijski krugovi prvi su put zavijorili na samim Igrama 1920., zajedno s uvođenjem prisege sportaša. U kojem belgijskom gradu?",
+    "answers": [
+      "Antwerpen",
+      "Antwerp",
+      "Anvers"
+    ],
+    "explanation": "Olimpijska zastava i prisega sportaša prvi su put na Igrama predstavljene u Antwerpenu 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/antwerp-1920-a-symbol-of-peace-unity-and-strength"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00218-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Povijest",
+    "focus": "Potezanje užeta olimpijski sport do 1920",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na olimpijskim su igrama nekoć momčadi pobjeđivale povlačeći protivnike preko crte, a disciplina je posljednji put bila na programu 1920. O kojem je natjecanju riječ?",
+    "answers": [
+      "Potezanje užeta",
+      "Povlačenje užeta",
+      "Tug of war"
+    ],
+    "explanation": "Potezanje užeta bilo je olimpijska disciplina od 1900. do 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/new-sports-take-a-bow"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00219-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Johann Gottfried Galle opažanje Neptuna 1846",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Francuski matematičar Le Verrier izračunao je gdje bi se trebao nalaziti nepoznati planet, a astronom u Berlinu ga je 1846. pronašao već prve noći potrage. Kako se prezivao taj astronom?",
+    "answers": [
+      "Galle",
+      "Johann Gottfried Galle"
+    ],
+    "explanation": "Johann Gottfried Galle opazio je Neptun 1846. na temelju Le Verrierovih proračuna.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00220-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Religije i mitologije",
+    "focus": "Venetia Burney ime Pluton",
+    "difficulty": 3,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Jedanaestogodišnja djevojčica iz Oxforda 1930. predložila je ime novootkrivenog nebeskog tijela prema rimskom bogu podzemlja. Kako se zvala?",
+    "answers": [
+      "Venetia Burney",
+      "Venetia",
+      "Venetia Phair"
+    ],
+    "explanation": "Venetia Burney predložila je naziv Pluton 1930. kao jedanaestogodišnjakinja.",
+    "sources": [
+      "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00221-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Književnost",
+    "focus": "Uranovi mjeseci Shakespeareovi likovi",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Ofelija i Puck ne dijele samo pozornicu engleske književnosti: njihova imena nose i dva mjeseca istog planeta. Kojeg?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Mjeseci Urana, među njima Ofelija i Puck, nazvani su po književnim likovima.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/moons/facts/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00222-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Biologija",
+    "focus": "Pneumatociste mjehurići alge sargassum",
+    "difficulty": 5,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Smeđa alga sargassum pluta na površini zahvaljujući malenim plinom ispunjenim mjehurićima nalik bobicama. Kako se stručnim nazivom zovu te strukture?",
+    "answers": [
+      "Pneumatociste",
+      "Pneumatocista",
+      "Pneumatocysts"
+    ],
+    "explanation": "Pneumatociste su plinom ispunjene strukture koje algama Sargassum omogućuju plutanje.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/ocean-fact/sargassum/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00223-20261031",
+    "createdAt": "2026-10-31T14:00:00.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Lajvardina perzijska glazura",
+    "difficulty": 5,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Na iranskoj keramici iz doba Ilkanida nalazimo tamnoplavu glazuru ukrašenu zlatnim listićima. Naziv te tehnike potječe od perzijske riječi za lapis lazuli. Kako glasi?",
+    "answers": [
+      "Lajvardina"
+    ],
+    "explanation": "Lajvardina je luksuzna vrsta iranske keramičke glazure iz ilkanidskog razdoblja.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/449019"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T14:00:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
