@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-00374-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Astronomija",
+    "focus": "Pulsar",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva brzo rotirajuća neutronska zvijezda čije snopove zračenja opažamo kao pravilne impulse?",
+    "answers": [
+      "Pulsar"
+    ],
+    "explanation": "Pulsari su rotirajuće neutronske zvijezde.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pulsar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00375-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Tehnologija",
+    "focus": "ENIAC",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koje je rano američko elektroničko računalo iz 1940-ih poznato po tisućama vakuumskih cijevi i ogromnoj veličini?",
+    "answers": [
+      "ENIAC"
+    ],
+    "explanation": "ENIAC je bio elektroničko digitalno računalo opće namjene.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ENIAC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00376-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Arhitektura",
+    "focus": "Fallingwater",
+    "difficulty": 3,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Kako se zove kuća Franka Lloyda Wrighta u Pennsylvaniji izgrađena iznad vodopada?",
+    "answers": [
+      "Fallingwater",
+      "Kuća na slapovima"
+    ],
+    "explanation": "Wright je projektirao Fallingwater za obitelj Kaufmann.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fallingwater"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00377-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Životinje",
+    "focus": "Pangolin",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji je sisavac prekriven keratinskim ljuskama i pri opasnosti se može sklupčati u kuglu?",
+    "answers": [
+      "Pangolin",
+      "Ljuskavac"
+    ],
+    "explanation": "Pangolini su jedini živi sisavci s takvim velikim rožnatim ljuskama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pangolin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00378-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Sfumato",
+    "difficulty": 5,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Kako se zove slikarski postupak mekih prijelaza bez oštrih obrisa, poznat s Leonardovih portreta?",
+    "answers": [
+      "Sfumato"
+    ],
+    "explanation": "Sfumato stvara postupne, magličaste prijelaze tonova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sfumato"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00379-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Gastronomija",
+    "focus": "Ghee",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se naziva pročišćeni maslac čest u kuhinjama Indijskog potkontinenta?",
+    "answers": [
+      "Ghee",
+      "Gi"
+    ],
+    "explanation": "Ghee nastaje uklanjanjem vode i mliječnih čestica iz maslaca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ghee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00380-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Pravo i društvo",
+    "focus": "Ombudsman",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva neovisni dužnosnik koji prima pritužbe građana na rad javnih tijela?",
+    "answers": [
+      "Ombudsman",
+      "Pučki pravobranitelj"
+    ],
+    "explanation": "Ombudsman je institucija nadzora i zaštite prava građana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ombudsman"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00381-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Promet",
+    "focus": "Maglev",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kako se naziva tehnologija vlakova koji lebde iznad vodilice zahvaljujući magnetskim silama?",
+    "answers": [
+      "Maglev",
+      "Magnetska levitacija"
+    ],
+    "explanation": "Maglev smanjuje kontakt i trenje između vlaka i pruge.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maglev"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00382-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Videoigre",
+    "focus": "Pong",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja je Atari-jeva arkadna igra iz 1972. simulirala stolni tenis s dvije pomične palice i lopticom?",
+    "answers": [
+      "Pong"
+    ],
+    "explanation": "Pong je jedna od prvih komercijalno uspješnih videoigara.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pong"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00383-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Religije i mitologije",
+    "focus": "Ikar",
+    "difficulty": 5,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Koji je mitski mladić letio krilima od perja i voska te pao kad se približio Suncu?",
+    "answers": [
+      "Ikar",
+      "Icarus"
+    ],
+    "explanation": "Ikar je u grčkoj mitologiji sin Dedala.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Icarus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
