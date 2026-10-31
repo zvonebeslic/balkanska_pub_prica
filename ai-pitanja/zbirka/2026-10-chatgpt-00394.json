@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-00394-20261031",
+    "createdAt": "2026-10-31T18:40:48.000Z",
+    "updatedAt": "2026-10-31T18:40:48.000Z",
+    "topic": "Astronomija",
+    "focus": "Enceladus kao izvor Saturnova E-prstena",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Saturnov E-prsten sastavljen je od sitnih ledenih čestica, a letjelica Cassini otkrila je da njegov materijal velikim dijelom dolazi iz gejzira jednog ledenog mjeseca. Kojeg?",
+    "answers": [
+      "Enceladus",
+      "Enkelad"
+    ],
+    "explanation": "Gejziri na južnom polu Encelada izbacuju led i vodenu paru, a dio čestica hrani Saturnov E-prsten.",
+    "sources": [
+      "https://science.nasa.gov/mission/cassini/science/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
