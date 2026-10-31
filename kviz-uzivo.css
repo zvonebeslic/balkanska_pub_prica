@@ -174,3 +174,26 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 @media(max-width:850px){.editor-layout{grid-template-columns:1fr}.editor-layout .sidebar{position:static;max-height:360px}.tools-grid{grid-template-columns:1fr}}
 @media(max-width:650px){.home-intro{flex-direction:column;text-align:center;gap:10px;padding-top:0}.home-intro p{margin:12px auto 0}.home-actions{grid-template-columns:1fr;gap:10px}.home-action{min-height:82px}.top-caption small{display:none}.host-controls{grid-template-columns:1fr 1fr}.host-controls #revealBtn{grid-column:1/-1;grid-row:1}.host-controls button{min-height:50px;font-size:15px}.host-display .screen-title{font-size:clamp(15px,4.3vw,30px)}.studio-actions{width:100%}.studio-actions button{flex:1}.stage-screen{padding:88px 12px 18px}.stage-screen .screen-inner{padding:14px;gap:12px;border-width:3px}.stage-screen .screen-title{font-size:clamp(23px,5vw,35px)}.stage-screen .screen-title.long{font-size:clamp(19px,4.5vw,30px)}.stage-screen .screen-title.extra-long{font-size:clamp(16px,3.8vw,26px)}.stage-badge img{width:83px}.manager-buttons button{min-width:130px}}
 @media(max-height:600px) and (min-width:800px){.stage-screen{padding-top:65px;padding-bottom:20px}.stage-screen .screen-title{font-size:clamp(23px,3vw,45px)}.stage-screen .screen-title.extra-long{font-size:clamp(18px,1.8vw,29px)}.stage-screen .screen-media img,.stage-screen .screen-media video{max-height:22vh}}
+
+/* Povezivanje TV-a i daljinsko upravljanje s mobitela ili laptopa */
+.join-audience{max-width:640px;margin:26px auto 5px;padding:15px 20px;border:1px dashed #355879;border-radius:16px;background:#091d2e;text-align:center}
+.join-audience p{margin:3px 0 12px;color:#b4cde1;font-size:14px}
+.join-line{display:flex;justify-content:center;gap:10px;align-items:center}
+.join-line input{max-width:240px;text-align:center;letter-spacing:.13em;text-transform:uppercase;font-size:16px;font-weight:900}
+.join-line button{white-space:nowrap}
+.pair-panel{background:#11263c;border:1px solid #2f80ff;border-radius:18px;padding:17px 20px;margin:0 auto 18px;max-width:1100px;box-shadow:0 15px 40px #0003}
+.pair-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:18px;flex-wrap:wrap}
+.pair-data{display:grid;grid-template-columns:minmax(110px,.6fr) minmax(220px,1fr) minmax(220px,1fr);gap:13px}
+.pair-data>div{background:#0a1a2d;border:1px solid #2c4664;border-radius:13px;padding:13px;min-width:0;display:grid;align-content:start;gap:8px}
+.pair-data input{font-size:12px}
+.pair-data button{padding:8px 11px;font-size:13px}
+.room-code{font-size:clamp(22px,2.7vw,34px);letter-spacing:.09em;color:#5dbeff;font-variant-numeric:tabular-nums}
+.remote-screen{max-width:940px;margin:0 auto;padding:clamp(20px,4vw,55px) 18px}
+.remote-screen h1{font-size:clamp(23px,4vw,41px);margin:0 0 8px}
+.remote-preview{margin:20px auto 6px}
+.remote-preview .screen{aspect-ratio:16/9;min-height:unset;max-height:62vh;border:3px solid transparent;background:linear-gradient(#03111d,#03111d) padding-box,linear-gradient(110deg,#1674ff 0%,#0eebe6 52%,#14e058 100%) border-box;border-radius:14px}
+.remote-preview .screen-title{font-size:clamp(16px,2.6vw,31px)}
+.remote-preview .screen-answer{font-size:clamp(15px,2vw,29px)}
+.remote-preview .screen-media img,.remote-preview .screen-media video{max-height:24vh}
+@media(max-width:850px){.pair-data{grid-template-columns:1fr 1fr}.pair-data>div:first-child{grid-column:1/-1}}
+@media(max-width:540px){.join-line{flex-direction:column}.join-line input,.join-line button{max-width:none;width:100%}.pair-data{grid-template-columns:1fr}.pair-data>div:first-child{grid-column:auto}.room-code{font-size:26px}.remote-preview .screen-title{font-size:clamp(15px,4.5vw,28px)}}
