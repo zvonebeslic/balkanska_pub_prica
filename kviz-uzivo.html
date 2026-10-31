@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
 <meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=4">
+<link rel="stylesheet" href="kviz-uzivo.css?v=5">
 </head>
 <body>
 <div id="editorApp">
@@ -33,6 +33,11 @@
       <button id="newBtn" type="button" class="home-action"><span class="action-icon">＋</span><span><strong>Novi kviz</strong><small>Otvori uređivač krugova i pitanja</small></span><span>→</span></button>
       <button id="manageBtn" type="button" class="home-action"><span class="action-icon">☷</span><span><strong>Moji kvizovi</strong><small>Otvori, uvezi, izvezi ili obriši</small></span><span>→</span></button>
     </div>
+    <div class="join-audience">
+      <p>Želiš otvoriti ekran za publiku na TV-u ili drugom uređaju?</p>
+      <div class="join-line"><input type="text" id="joinRoom" maxlength="12" autocomplete="off" autocapitalize="characters" placeholder="Kod prikaza, npr. K8R3T9XP" aria-label="Kod ekrana za publiku">
+      <button type="button" id="joinAudience" class="primary">📺 Spoji ekran</button></div>
+    </div>
     <p class="home-hint" id="saveStatus">Učitavam spremljene kvizove…</p>
   </section>
 
@@ -45,10 +50,21 @@
       </div>
       <div class="studio-actions">
         <button id="stageBtn" type="button" class="success">▣ Prikaz za publiku</button>
+        <button id="pairBtn" type="button" class="primary">📱 Poveži TV / mobitel</button>
         <button id="openEditorBtn" type="button">✎ Uredi pitanja</button>
         <button id="hostManageBtn" type="button">☷ Kvizovi</button>
       </div>
     </div>
+    <section class="pair-panel" id="pairPanel" hidden>
+      <div class="pair-heading"><strong>🔗 Povezani uređaji</strong><span id="pairStatus" class="muted">Nije povezano</span></div>
+      <p class="muted tiny">TV otvara ekran za publiku, a mobitel ili laptop mogu upravljati kvizom. Potrebna je internetska veza.</p>
+      <div class="pair-data">
+        <div><span class="eyebrow">KOD ZA TV</span><strong class="room-code" id="roomCode">--------</strong></div>
+        <div><span class="eyebrow">POVEZNICA ZA PUBLIKU</span><input type="text" id="audienceLink" readonly><button type="button" id="copyAudience">Kopiraj vezu</button></div>
+        <div><span class="eyebrow">UPRAVLJANJE S DRUGOG UREĐAJA</span><input type="text" id="controlLink" readonly><button type="button" id="copyControl">Kopiraj privatnu vezu</button></div>
+      </div>
+      <p class="muted tiny">Privatnu poveznicu za upravljanje šalji samo voditelju. Publika dobiva isključivo kod ili poveznicu za ekran.</p>
+    </section>
     <div class="host-display"><div class="screen" id="previewPane"></div></div>
     <nav class="host-controls" aria-label="Upravljanje pitanjima">
       <button id="prevBtn" type="button">← Prethodno</button>
@@ -78,6 +94,19 @@
       </details>
     </div>
     <p class="host-hint">Na projektoru nema kontrola. Ovdje klikni „Prikaži odgovor” da se odgovor pojavi i publici. Novim klikom ga sakrij.</p>
+  </section>
+
+  <section id="remoteScreen" class="remote-screen" hidden>
+    <span class="eyebrow">DALJINSKO UPRAVLJANJE</span>
+    <h1>🎤 Kontrola s mobitela ili laptopa</h1>
+    <p id="remoteStatus" class="muted">Povezujem se s glavnim voditeljskim uređajem…</p>
+    <div class="remote-preview" id="remotePreview"></div>
+    <nav class="host-controls">
+      <button type="button" id="remotePrev">← Prethodno</button>
+      <button type="button" id="remoteReveal" class="success">Prikaži odgovor</button>
+      <button type="button" id="remoteNext" class="primary">Sljedeće →</button>
+    </nav>
+    <p class="muted tiny">Glavni uređaj na kojem je otvoren kviz mora ostati uključen i povezan na internet.</p>
   </section>
 
   <section id="editScreen" class="edit-screen" hidden>
@@ -119,6 +148,7 @@
   <div class="stage-clock-wrap"><span class="clock" id="stageClock"></span></div>
 </div>
 <div id="toast" role="status" hidden></div>
-<script src="kviz-uzivo.js?v=4" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
+<script src="kviz-uzivo.js?v=5" defer></script>
 </body>
 </html>
