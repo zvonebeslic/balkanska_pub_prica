@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total": 1206,
+  "total": 1208,
   "months": [
     "2026-10",
     "2026-10-chatgpt-00182-00184",
@@ -14,18 +14,19 @@
     "2026-10-chatgpt-00193-00194",
     "2026-10-chatgpt-00195",
     "2026-10-chatgpt-00196-00197",
-    "2026-10-chatgpt-00198"
+    "2026-10-chatgpt-00198",
+    "2026-10-chatgpt-00199-00200"
   ],
   "styleCounts": {
     "1": 31,
-    "2": 12,
+    "2": 13,
     "3": 16,
     "4": 20,
     "5": 1,
     "6": 22,
     "7": 7,
     "8": 39,
-    "9": 26,
+    "9": 27,
     "10": 11,
     "11": 9,
     "12": 27,
@@ -118,12 +119,12 @@
     "Gastronomija": 31,
     "Književnost": 27,
     "Sport": 40,
-    "Likovna umjetnost": 43,
+    "Likovna umjetnost": 44,
     "Životinje": 50,
     "Povijest": 54,
     "Zemljopis": 44,
     "Biologija": 39,
-    "Fizika": 24,
+    "Fizika": 25,
     "Kemija": 37,
     "Matematika": 32,
     "Medicina": 36,
@@ -158,10 +159,10 @@
   },
   "difficultyCounts": {
     "1": 155,
-    "2": 244,
-    "3": 301,
+    "2": 245,
+    "3": 302,
     "4": 292,
     "5": 214
   },
-  "updatedAt": "2026-10-31T07:09:00.000Z"
+  "updatedAt": "2026-10-31T08:15:00.000Z"
 }
