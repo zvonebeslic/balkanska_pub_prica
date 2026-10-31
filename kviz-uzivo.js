@@ -71,6 +71,7 @@ async function makeExampleQuiz(){
  return quiz;
 }
 async function installExampleQuiz(){
+ endPairing();
  if(!stageMode&&project)await persist();
  const quiz=await makeExampleQuiz();
  await persist(quiz);
@@ -498,8 +499,20 @@ function bindEditor(){
  $("backHostManage").addEventListener("click",()=>showView("host"));
  $("manageOpenBtn").addEventListener("click",()=>showView("host"));
  $("manageEditBtn").addEventListener("click",()=>showView("edit"));
+ $("pairBtn").addEventListener("click",()=>{
+  try{startPairing();toast("Poveži TV pomoću koda, a mobitel privatnom poveznicom.");}
+  catch(e){toast(e.message,true);}
+ });
+ $("copyAudience").addEventListener("click",()=>copyLink("audienceLink"));
+ $("copyControl").addEventListener("click",()=>copyLink("controlLink"));
+ $("joinAudience").addEventListener("click",()=>{
+  const room=$("joinRoom").value.trim().toUpperCase();
+  if(!window.KTGSync?.validRoom(room)){toast("Upiši kod od 8 znakova s voditeljskog ekrana.",true);return;}
+  location.href=audienceUrl(room);
+ });
+ $("joinRoom").addEventListener("keydown",e=>{if(e.key==="Enter")$("joinAudience").click();});
  $("quizSelect").addEventListener("change",async e=>{
-  clearTimeout(saveTimer);await persist();const q=await storeGet("quizzes",e.target.value);if(!q)return;
+  endPairing();clearTimeout(saveTimer);await persist();const q=await storeGet("quizzes",e.target.value);if(!q)return;
   project=q;localStorage.setItem("kviztogo_live_id",q.id);position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;ensureChannel();renderAll();
  });
  $("exampleBtn").addEventListener("click",async()=>{
@@ -509,13 +522,13 @@ function bindEditor(){
   finally{button.disabled=false;}
  });
  $("newBtn").addEventListener("click",async()=>{
-  clearTimeout(saveTimer);await persist();
+  endPairing();clearTimeout(saveTimer);await persist();
   project=createQuiz();await persist();localStorage.setItem("kviztogo_live_id",project.id);
   position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;ensureChannel();await refreshSelect();renderAll();showView("edit");toast("Novi prazni kviz je spreman.");
  });
  $("deleteBtn").addEventListener("click",async()=>{
   if(!project||!confirm("Trajno obrisati kviz „"+project.title+"” na ovom uređaju?"))return;
-  clearTimeout(saveTimer);const id=project.id;await storeDelete("quizzes",id);const all=await storeAll("quizzes");
+  endPairing();clearTimeout(saveTimer);const id=project.id;await storeDelete("quizzes",id);const all=await storeAll("quizzes");
   project=all[0]||createQuiz();if(!all.length)await persist();localStorage.setItem("kviztogo_live_id",project.id);
   position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;ensureChannel();await refreshSelect();renderAll();toast("Kviz je obrisan.");
  });
@@ -540,7 +553,8 @@ function bindEditor(){
  $("revealBtn").addEventListener("click",changeReveal);
  $("scoresBtn").addEventListener("click",()=>{showBoard=!showBoard;renderAll();$("scoresBtn").textContent=showBoard?"Vrati pitanje":"🏆 Prikaži ljestvicu";});
  $("stageBtn").addEventListener("click",()=>{
-  if(!project)return;const w=window.open("kviz-uzivo.html?stage=1&id="+encodeURIComponent(project.id),"_blank");
+  if(!project)return;const target=pairing?audienceUrl(pairing.room):"kviz-uzivo.html?stage=1&id="+encodeURIComponent(project.id);
+  const w=window.open(target,"_blank");
   if(!w)toast("Preglednik je blokirao novi prozor. Dopusti skočne prozore.",true);
   else {persist().catch(()=>{});setTimeout(pushStage,600);setTimeout(pushStage,1500);}
  });
@@ -562,6 +576,11 @@ function bindEditor(){
 }
 async function init(){
  try{
+  const params=new URLSearchParams(location.search);
+  const room=String(params.get("room")||"").toUpperCase();
+  const remote=String(params.get("remote")||"").toUpperCase();
+  if(stageMode&&room){connectAudience(room);return;}
+  if(remote){connectRemoteController(remote,params.get("auth")||"");return;}
   db=await openDB();
   const all=await storeAll("quizzes");
   let wanted=new URLSearchParams(location.search).get("id")||localStorage.getItem("kviztogo_live_id");
