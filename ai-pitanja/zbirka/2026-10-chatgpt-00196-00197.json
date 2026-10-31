@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-00196-20261031",
+    "createdAt": "2026-10-31T06:36:00.000Z",
+    "updatedAt": "2026-10-31T06:36:00.000Z",
+    "topic": "Promet",
+    "focus": "Pomorski periskop i uporaba zrcala pod kutom 45 stupnjeva",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Dva zrcala postavljena pod kutom od 45 stupnjeva mogu omogućiti pogled preko prepreke, a složenija inačica istog uređaja omogućuje posadi podmornice promatranje površine. Kako se zove taj optički uređaj?",
+    "answers": [
+      "Periskop",
+      "Periscope"
+    ],
+    "explanation": "Jednostavni periskop preusmjerava svjetlost pomoću dvaju zrcala, a podmorničke inačice koriste složenije optičke sustave. Primjenjivao se i za promatranje iz rovova.",
+    "sources": [
+      "https://www.history.navy.mil/content/dam/museums/undersea/education/Reflecting%20Light%20and%20Periscopes.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00197-20261031",
+    "createdAt": "2026-10-31T06:36:00.000Z",
+    "updatedAt": "2026-10-31T06:36:00.000Z",
+    "topic": "Gastronomija",
+    "focus": "Sferifikacija, jestive kuglice od tekućine pomoću alginata i kalcija",
+    "difficulty": 3,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "U modernoj kuhinji sok može postati mnoštvo sitnih kuglica nalik kavijaru: kapljice s alginatom u kupelji s kalcijem dobiju tanku gelastu opnu, dok im sredina ostaje tekuća. Kako se naziva taj postupak?",
+    "answers": [
+      "Sferifikacija",
+      "Spherification"
+    ],
+    "explanation": "Sferifikacija koristi reakciju alginata i kalcijevih iona za stvaranje tanke membrane oko tekućine. Primjenjuje se u molekularnoj gastronomiji.",
+    "sources": [
+      "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/technology-edu/resources/technology-and-living/STEM06_Molecular_Gastronomy_Eng.pdf",
+      "https://chem.libretexts.org/Courses/University_of_North_Carolina_Charlotte/CHEM_2141%3A__Survey_of_Physical_Chemistry/08%3A_Optional-_Special_topics/8.01%3A_Chemistry_of_Cooking_%28Rodriguez-Velazquez%29/8.1.01%3A_Thickening_and_Concentrating_Flavors/8.1.1.07%3A_Non-traditional_thickeners"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
