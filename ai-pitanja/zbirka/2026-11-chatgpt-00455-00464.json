@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-00455-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan je otkrio Huygens 1655",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Nizozemski znanstvenik Christiaan Huygens otkrio je 1655. najveći Saturnov mjesec. Kako se zove taj mjesec?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Huygens je otkrio Titan 25. ožujka 1655.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00456-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Cloisonné pečenje oko 800 C",
+    "difficulty": 4,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Obojena staklena pasta u metalnim pregradama tradicionalno se više puta peče pri približno kojoj temperaturi: 80, 800 ili 1800 °C?",
+    "answers": [
+      "800",
+      "800 °C",
+      "800 stupnjeva",
+      "800 stupnjeva Celzija"
+    ],
+    "explanation": "Metropolitan Museum opisuje pečenje cloisonné emajla na oko 800 °C.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/40608"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00457-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Sport",
+    "focus": "Mačevanje ženska olimpijska premijera 1924",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na Olimpijskim igrama 1896. natjecali su se muškarci u mačevanju. Koje su se godine prvi put natjecale i žene u tom sportu?",
+    "answers": [
+      "1924",
+      "1924."
+    ],
+    "explanation": "Žensko mačevanje pojavilo se na Olimpijskim igrama 1924.",
+    "sources": [
+      "https://www.olympics.com/ioc/international-fencing-federation"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00458-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Tehnologija",
+    "focus": "Babbage Analitički stroj bušene kartice",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji je način unošenja uputa, preuzet iz svijeta tkalačkih stanova, Babbage predvidio za svoj Analitički stroj?",
+    "answers": [
+      "Bušene kartice",
+      "Perforirane kartice",
+      "Kartice s rupicama"
+    ],
+    "explanation": "Analitički stroj trebao je koristiti bušene kartice, po uzoru na Jacquardov tkalački stan.",
+    "sources": [
+      "https://www.computerhistory.org/babbage/adalovelace"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00459-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Videoigre i igre",
+    "focus": "En passant pravo samo sljedeći potez",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Šahist može uzeti pješaka 'u prolazu', ali ako odmah odigra neki drugi potez, koliko mu još poteza ostaje za to posebno uzimanje?",
+    "answers": [
+      "Nijedan",
+      "0",
+      "Nula"
+    ],
+    "explanation": "Pravo na en passant nestaje ako se ne iskoristi odmah u sljedećem potezu.",
+    "sources": [
+      "https://support.chess.com/en/articles/8557558-what-is-en-passant-it-s-not-an-illegal-pawn-move"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00460-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Književnost",
+    "focus": "Kigo sezonska riječ u haikuu",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U tradicionalnom japanskom haikuu riječ koja priziva određeno godišnje doba ima poseban naziv. Koji?",
+    "answers": [
+      "Kigo"
+    ],
+    "explanation": "Kigo je sezonska riječ koja pjesmu povezuje s godišnjim dobom.",
+    "sources": [
+      "https://snl.no/haiku"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00461-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Životinje",
+    "focus": "Hemocijanin hobotnice bakar",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Krv hobotnice plava je zbog proteina koji veže kisik uz pomoć kojeg metala?",
+    "answers": [
+      "Bakar",
+      "Bakra",
+      "Cu"
+    ],
+    "explanation": "Hemocijanin sadrži bakar, za razliku od hemoglobina koji sadrži željezo.",
+    "sources": [
+      "https://www.discoverwildlife.com/animal-facts/marine-animals/octopuses-have-three-hearts"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00462-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto najniža točka oko 1400 m",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "U jednoj afričkoj državi čak je i najniža točka na oko 1400 metara nadmorske visine. O kojoj je državi, potpuno okruženoj JAR-om, riječ?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto ima iznimno visoku najnižu točku, oko 1400 metara.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00463-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Jezik i pismo",
+    "focus": "Braille 63 neprazna uzorka",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Ako se šest položaja u Brailleovoj ćeliji može podići ili ostati ravno, koliko različitih nepraznih kombinacija postoji?",
+    "answers": [
+      "63",
+      "Šezdeset tri"
+    ],
+    "explanation": "Šest binarnih položaja daje 64 kombinacije, od kojih je jedna prazna.",
+    "sources": [
+      "https://www.loc.gov/nls/services-and-resources/informational-publications/about-braille/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00464-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Uran predložen naziv Georgium Sidus",
+    "difficulty": 5,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "William Herschel htio je novootkriveni planet nazvati 'Georgium Sidus' u čast kojeg britanskog kralja?",
+    "answers": [
+      "George III.",
+      "George III",
+      "Đuro III.",
+      "Juraj III."
+    ],
+    "explanation": "Herschel je predložio ime u čast kralja Georgea III., no planet je nazvan Uran.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
