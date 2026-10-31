@@ -75,7 +75,9 @@ input[type=file]{padding:7px}
 .stage-screen{flex:1;min-height:0;overflow:auto;display:flex;align-items:stretch;justify-content:center}
 .stage-screen .screen-inner{padding:2% 6%;gap:2vh}
 .stage-screen .screen-head{font-size:clamp(17px,2.3vw,33px)}
-.stage-screen .screen-title{font-size:clamp(30px,4vw,72px)}
+.stage-screen .screen-title{font-size:clamp(30px,4vw,72px);max-width:1400px}
+.stage-screen .screen-title.long{font-size:clamp(23px,2.7vw,44px);max-width:1450px}
+.stage-screen .screen-title.extra-long{font-size:clamp(19px,2.05vw,33px);max-width:1500px}
 .stage-screen .screen-answer{font-size:clamp(28px,3vw,58px)}
 .stage-screen .screen-choice{font-size:clamp(20px,2vw,35px);padding:12px 24px}
 .stage-screen .screen-media img,.stage-screen .screen-media video{max-height:42vh}
