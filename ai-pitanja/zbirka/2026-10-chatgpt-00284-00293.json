@@ -27,7 +27,7 @@
     "id": "chatgpt10000-00285-20261031",
     "createdAt": "2026-10-31T16:06:00.000Z",
     "updatedAt": "2026-10-31T16:06:00.000Z",
-    "topic": "Film",
+    "topic": "Životinje",
     "focus": "Sputnik 2 pas Laika",
     "difficulty": 1,
     "styleId": 17,
@@ -143,21 +143,20 @@
     "id": "chatgpt10000-00290-20261031",
     "createdAt": "2026-10-31T16:06:00.000Z",
     "updatedAt": "2026-10-31T16:06:00.000Z",
-    "topic": "Svakodnevica",
-    "focus": "prvi laserski barkod blagajna 1974",
-    "difficulty": 2,
-    "styleId": 25,
-    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
-    "question": "Na blagajni u Ohiju 1974. laserski snop prvi je put pročitao oznaku na pakiranju žvakaćih guma. Koji sustav označavanja proizvoda tada je debitirao?",
+    "topic": "Medicina",
+    "focus": "bifurkirana igla kampanja velikih boginja",
+    "difficulty": 3,
+    "styleId": 68,
+    "styleDescription": "Opiši alat kroz oblik i netipičnu uporabu",
+    "question": "U kampanji protiv velikih boginja liječnici su rabili posebnu iglu s dva vrška koja je trošila mnogo manje cjepiva. Kako se naziva ta igla?",
     "answers": [
-      "Barkod",
-      "Bar kod",
-      "UPC",
-      "Crtični kod"
+      "Bifurkirana igla",
+      "Dvokraka igla",
+      "Bifurcated needle"
     ],
-    "explanation": "Prvi UPC kod u trgovini očitan je 1974. godine.",
+    "explanation": "Dvokraka, bifurkirana igla omogućila je učinkovitije cijepljenje uz manju količinu cjepiva.",
     "sources": [
-      "https://americanhistory.si.edu/ne/collections/object/nmah_892778"
+      "https://www.who.int/news-room/feature-stories/detail/smallpox-vaccines"
     ],
     "image": null,
     "type": "blitz",
