@@ -1,0 +1,53 @@
+[
+  {
+    "id": "chatgpt10000-00199-20261031",
+    "createdAt": "2026-10-31T08:15:00.000Z",
+    "updatedAt": "2026-10-31T08:15:00.000Z",
+    "topic": "Fizika",
+    "focus": "Foucaultovo njihalo i dokaz Zemljine rotacije 1851.",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Godine 1851. u pariškom Panteonu njihalo obješeno o dugačko uže pokazivalo je kako se ravnina njegova njihanja polako mijenja u odnosu na pod. Kojim je nazivom poznat taj pokusni uređaj koji zorno pokazuje rotaciju Zemlje?",
+    "answers": [
+      "Foucaultovo njihalo",
+      "Fukoovo njihalo",
+      "Foucaultov pendulum",
+      "Foucault pendulum"
+    ],
+    "explanation": "Francuski fizičar Léon Foucault 1851. postavio je veliko njihalo u pariškom Panteonu. Prividno zakretanje ravnine njihanja u odnosu na tlo posljedica je Zemljine rotacije.",
+    "sources": [
+      "https://www.larousse.fr/encyclopedie/animations/Pendule_de_Foucault/1100996"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00200-20261031",
+    "createdAt": "2026-10-31T08:15:00.000Z",
+    "updatedAt": "2026-10-31T08:15:00.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Cijanotipija i plavi fotografski otisci iz 19. stoljeća",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Fotografski otisci Eadwearda Muybridgea sačuvani u Smithsonianu imaju prepoznatljivu duboku plavu boju. Kojim se nazivom zove fotografski postupak kojim su izrađeni ti plavi probni otisci?",
+    "answers": [
+      "Cijanotipija",
+      "Cyanotype",
+      "Cyanotypy",
+      "Cijanotip"
+    ],
+    "explanation": "Cijanotipija je fotografski postupak koji daje plave otiske. Smithsonian čuva Muybridgeove cijanotipijske probne otiske nastale tijekom istraživanja kretanja ljudi i životinja 1880-ih.",
+    "sources": [
+      "https://www.si.edu/object/nmah_1344339",
+      "https://siarchives.si.edu/collections/siris_arc_308081"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
