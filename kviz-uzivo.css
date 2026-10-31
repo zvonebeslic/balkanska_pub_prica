@@ -94,3 +94,83 @@ input[type=file]{padding:7px}
 .stage-top button{font-size:12px;padding:6px 10px}
 @media(max-width:1180px){.layout{grid-template-columns:minmax(200px,245px) 1fr}.preview{grid-column:2;position:static}.sidebar{grid-row:1/3}}
 @media(max-width:750px){.stage-controls{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:8px}.stage-controls button{font-size:13px;min-height:43px;padding:7px}.layout{grid-template-columns:1fr}.sidebar{position:static;max-height:none;grid-row:auto}.preview{grid-column:auto}.rowfields{grid-template-columns:1fr}.toolbar label{min-width:100%}.stage-top{padding:7px 10px}.stage-top button{padding:4px 7px}.stage-screen .screen-title{font-size:clamp(21px,6vw,40px)}.stage-screen .screen-answer{font-size:clamp(21px,5.5vw,36px)}.stage-screen .screen-media img,.stage-screen .screen-media video{max-height:31vh}}
+
+
+/* KvizToGo Studio 2: jednostavan početni zaslon, voditeljska kontrola i čisti projektor */
+body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 48%,#06101b 100%);min-height:100vh}
+.top{min-height:82px;padding:9px clamp(16px,3.5vw,50px);background:#040c15;border-bottom:1px solid #18364f;justify-content:flex-start}
+.brand-mark{display:inline-flex;align-items:center;width:92px;height:65px;overflow:hidden;text-decoration:none}
+.brand-mark img{width:90px;height:auto;object-fit:contain;max-height:83px;transform:scale(.8);transform-origin:center}
+.top-caption{font-size:14px;letter-spacing:.13em;font-weight:900;color:#d8e8ff}
+.top-caption small{font-size:11px;font-weight:600;letter-spacing:0;color:#8faec7}
+#topHome{margin-left:auto}
+.subtle{border-color:#34536c;background:#10243a}
+.eyebrow{display:inline-block;margin-bottom:7px;font-size:11px;font-weight:850;letter-spacing:.16em;color:#61beff}
+.home-screen,.host-screen,.edit-screen,.manage-screen{max-width:1360px;margin:0 auto;padding:clamp(18px,4vw,45px) clamp(16px,3.2vw,40px) 65px}
+.home-screen{max-width:1040px}
+.home-intro{display:flex;align-items:center;justify-content:center;gap:clamp(20px,5vw,65px);padding:18px 0 35px}
+.home-intro img{width:clamp(110px,19vw,180px);height:auto;flex:none;object-fit:contain;border-radius:20px}
+.home-intro h1{margin:0;font-size:clamp(30px,5vw,63px);line-height:1.08;letter-spacing:-.055em}
+.home-intro h1 span{color:#66c2ff}
+.home-intro p{max-width:510px;color:#b7cbe0;margin:18px 0 0;font-size:clamp(14px,1.55vw,17px)}
+.home-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.home-action{min-height:104px;border:1px solid #3b5776;border-radius:17px;padding:17px 19px;background:#132840;text-align:left;display:flex;align-items:center;gap:16px;color:white;box-shadow:0 8px 34px #0004}
+.home-action:hover,.home-action:focus-visible{background:#1b395a;transform:translateY(-1px)}
+.home-action>span:nth-child(2){flex:1;display:grid;gap:2px}
+.home-action strong{font-size:clamp(16px,1.7vw,21px)}
+.home-action small{font-size:12px;color:#acc5df;font-weight:500}
+.home-action .action-icon{display:grid;place-items:center;background:#163a5f;border:1px solid #365f8e;border-radius:12px;width:47px;height:47px;flex:none;font-size:21px}
+.main-action{border-color:#2f80ff;background:linear-gradient(115deg,#103e7a,#143a54)}
+.main-action .action-icon{background:#1860a3}
+.home-hint{text-align:center;margin:22px auto;color:#95afc9;font-size:12px}
+.studio-header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.studio-header h1{margin:0;font-size:clamp(25px,3vw,41px);letter-spacing:-.035em}
+.studio-header p{margin:4px 0}
+.studio-actions{display:flex;gap:8px;flex-wrap:wrap}
+.host-display{max-width:1100px;margin:auto;border:1px solid #244b78;background:#051320;border-radius:20px;padding:9px;box-shadow:0 20px 70px #0009}
+.host-display .screen{aspect-ratio:16/9;max-height:70vh;min-height:unset;border:3px solid transparent;border-radius:13px;background:linear-gradient(#03111d,#03111d) padding-box,linear-gradient(110deg,#1674ff 0%,#0eebe6 52%,#14e058 100%) border-box}
+.host-display .screen-inner{padding:4% 5%;gap:2%;justify-content:center}
+.host-display .screen-head{color:#62bdff;font-size:clamp(11px,1.3vw,18px)}
+.host-display .screen-title{font-size:clamp(16px,2.8vw,38px);line-height:1.32}
+.host-display .screen-answer{font-size:clamp(16px,2vw,30px)}
+.host-controls{display:grid;grid-template-columns:minmax(140px,1fr) minmax(200px,1.35fr) minmax(140px,1fr);gap:13px;max-width:1100px;margin:17px auto}
+.host-controls button{min-height:58px;font-size:clamp(15px,1.9vw,22px);border-radius:14px}
+.host-controls #revealBtn{background:#13764a;border-color:#2dcf86}
+.host-controls #nextBtn{background:#1458bd}
+.host-extras{max-width:1100px;margin:12px auto;display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.host-count{font-weight:800;color:#9ab4d1}
+.host-hint{max-width:1100px;margin:10px auto;color:#8099b1;font-size:12px}
+.tools-panel{border:1px solid #324e66;border-radius:12px;background:#12283e;width:100%;margin-top:7px}
+.tools-panel>summary{cursor:pointer;padding:11px 15px;font-weight:800}
+.tools-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(290px,1.2fr);gap:24px;padding:14px}
+.tools-grid h3{margin:0 0 8px}
+.tools-grid .controls label{min-width:115px;max-width:170px}
+.tools-grid #teamScores{max-height:240px;overflow:auto}
+.editor-layout{display:grid;grid-template-columns:minmax(230px,300px) minmax(0,1fr);gap:17px;align-items:start}
+.editor-layout .sidebar{position:sticky;top:12px;max-height:calc(100vh - 120px)}
+.editor-layout .editing{padding:clamp(16px,3vw,28px)}
+.quiz-title-field{margin-bottom:23px}
+.manager-card{background:#13263d;border:1px solid #385472;border-radius:19px;padding:clamp(16px,3vw,28px);max-width:750px;margin:auto}
+.manager-card>label{margin-bottom:18px}
+.manager-buttons{display:flex;flex-wrap:wrap;gap:11px}
+.manager-buttons button{flex:1;min-width:145px;min-height:49px}
+#stageApp{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 15%,#083044 0%,#03151d 55%,#020a11 100%);display:flex;align-items:stretch;justify-content:center}
+.stage-badge{position:absolute;right:clamp(14px,2.5vw,42px);top:clamp(12px,2vw,28px);z-index:2;pointer-events:none}
+.stage-badge img{width:clamp(84px,9vw,128px);height:auto;mix-blend-mode:screen;border-radius:12px}
+.stage-screen{flex:1;min-height:0;padding:clamp(75px,10vh,124px) clamp(17px,3.5vw,76px) clamp(24px,4vh,50px);display:flex;justify-content:center;align-items:stretch;overflow:hidden}
+.stage-screen .screen-inner{border:5px solid transparent;border-radius:clamp(16px,3vw,38px);background:linear-gradient(#04131e,#04131e) padding-box,linear-gradient(110deg,#1674ff 0%,#00d4f4 51%,#0be252 100%) border-box;box-shadow:0 20px 80px #0008;width:100%;max-width:1720px;padding:clamp(18px,3vw,65px);display:flex;align-items:center;justify-content:center;gap:clamp(9px,1.8vh,26px);overflow-y:auto}
+.stage-screen .screen-head{font-size:clamp(12px,1.25vw,23px);letter-spacing:.13em;color:#65c3ff}
+.stage-screen .screen-title{font-size:clamp(27px,3.15vw,60px);line-height:1.27;max-width:1460px;text-wrap:balance}
+.stage-screen .screen-title.long{font-size:clamp(24px,2.4vw,41px)}
+.stage-screen .screen-title.extra-long{font-size:clamp(20px,1.9vw,33px)}
+.stage-screen .screen-answer{color:#b5ffd0;background:#0a3524;border:2px solid #18b76a;border-radius:13px;padding:clamp(8px,1.4vw,22px) clamp(14px,2vw,36px);font-size:clamp(22px,2.5vw,46px)}
+.stage-screen .screen-media img,.stage-screen .screen-media video{max-height:33vh}
+.stage-screen .screen-media audio{width:min(70vw,700px)}
+.stage-screen .screen-choice{font-size:clamp(17px,1.65vw,28px);padding:10px 18px}
+.stage-screen .screen-foot{font-size:clamp(12px,1vw,19px);color:#6b98b9}
+.stage-clock-wrap{position:absolute;top:12px;left:25px;z-index:2}
+.stage-clock-wrap .clock{font-size:clamp(16px,2vw,27px)}
+.stage-controls,.stage-top,.stage-foot{display:none!important}
+@media(max-width:850px){.editor-layout{grid-template-columns:1fr}.editor-layout .sidebar{position:static;max-height:360px}.tools-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.home-intro{flex-direction:column;text-align:center;gap:10px;padding-top:0}.home-intro p{margin:12px auto 0}.home-actions{grid-template-columns:1fr;gap:10px}.home-action{min-height:82px}.top-caption small{display:none}.host-controls{grid-template-columns:1fr 1fr}.host-controls #revealBtn{grid-column:1/-1;grid-row:1}.host-controls button{min-height:50px;font-size:15px}.host-display .screen-title{font-size:clamp(15px,4.3vw,30px)}.studio-actions{width:100%}.studio-actions button{flex:1}.stage-screen{padding:88px 12px 18px}.stage-screen .screen-inner{padding:14px;gap:12px;border-width:3px}.stage-screen .screen-title{font-size:clamp(23px,5vw,35px)}.stage-screen .screen-title.long{font-size:clamp(19px,4.5vw,30px)}.stage-screen .screen-title.extra-long{font-size:clamp(16px,3.8vw,26px)}.stage-badge img{width:83px}.manager-buttons button{min-width:130px}}
+@media(max-height:600px) and (min-width:800px){.stage-screen{padding-top:65px;padding-bottom:20px}.stage-screen .screen-title{font-size:clamp(23px,3vw,45px)}.stage-screen .screen-title.extra-long{font-size:clamp(18px,1.8vw,29px)}.stage-screen .screen-media img,.stage-screen .screen-media video{max-height:22vh}}
