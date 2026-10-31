@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-00193-20261031",
+    "createdAt": "2026-10-31T03:44:42.000Z",
+    "updatedAt": "2026-10-31T03:44:42.000Z",
+    "topic": "Brendovi",
+    "focus": "Prvo komercijalno skeniranje UPC koda 1974.",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "U supermarketu u američkom Ohiu 26. lipnja 1974. jedan je proizvod ušao u povijest kao prvi kupljen uz očitavanje UPC crtičnog koda. Bila je to žvakaća guma koje marke?",
+    "answers": [
+      "Wrigley's",
+      "Wrigley",
+      "Wrigleys"
+    ],
+    "explanation": "U trgovini Marsh u Troyu u Ohiu prvo UPC skeniranje pri kupnji obavljeno je na pakiranju žvakaćih guma Wrigley's.",
+    "sources": [
+      "https://www.si.edu/object/supermarket-scanner%3Anmah_892778"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00194-20261031",
+    "createdAt": "2026-10-31T03:44:42.000Z",
+    "updatedAt": "2026-10-31T03:44:42.000Z",
+    "topic": "Kemija",
+    "focus": "Geosmin i zemljasti miris vode",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Naziv mu dolazi od grčkih riječi za zemlju i miris, a ovaj spoj koji stvaraju pojedine bakterije može vodi dati izrazito zemljast miris čak i u vrlo malim koncentracijama. Kako se zove?",
+    "answers": [
+      "Geosmin"
+    ],
+    "explanation": "Geosmin je organski spoj karakteristična zemljastog mirisa koji mogu proizvoditi aktinomiceti i cijanobakterije; USGS ga navodi kao čest uzrok mirisa i okusa vode.",
+    "sources": [
+      "https://www.usgs.gov/labs/ohio-water-microbiology-laboratory/taste-and-odor-issues",
+      "https://www.usgs.gov/publications/method-analysis-and-quality-assurance-practices-us-geological-survey-organic"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
