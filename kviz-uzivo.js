@@ -18,7 +18,7 @@ const ROUNDS=[
   {code:"vjerovali",name:"VJEROVALI ILI NE",desc:"Pitanja s ponuđenim točno ili netočno odgovorima / 0,5 boda za svaki točan odgovor.",count:4,points:.5},
   {code:"stihovi",name:"NE ZABORAVI STIHOVE",desc:"Nadopuni stihove poznate pjesme / 1 bod za točan odgovor.",count:1,points:1}
  ]},
- {name:"3. KRUG",stated:34,sections:[
+ {name:"3. KRUG",stated:35,sections:[
   {code:"kocka",name:"KOCKA JE BAČENA",desc:"Točno +1; točno i zaokruženo +2; netočno i zaokruženo −1; bez odgovora ili netočno bez zaokruživanja 0.",count:5,points:2},
   {code:"procjena",name:"PITANJE PROCJENE",desc:"Broj procjene mora biti unutar zadanih granica / 2 boda za pogodak unutar procjene.",count:1,points:2},
   {code:"vizualni",name:"VIZUALNI DIO",desc:"Pitanja uz slike ili video / 1 bod za svaki točan odgovor.",count:4,points:1},
@@ -32,6 +32,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const uid=()=>typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():"ktg-"+Date.now()+"-"+Math.random().toString(36).slice(2);
 const DBNAME="kviztogo-live-editor-v1";
+const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
 let db,project=null,position={r:0,s:0,i:0},revealed=false,showBoard=false,timerUntil=0;
 let channel=null,saveTimer=null,toastTimer=null,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 let activeUrls={},mediaSeq={},lastPreviewKey="";
@@ -49,6 +50,37 @@ const pointsFor=(r,s,i)=>{
  if(c.code==="gameset")return [.5,1,2,.5,1,2][i];
  return c.points;
 };
+async function makeExampleQuiz(){
+ const parts=await Promise.all(SAMPLE_PARTS.map(async path=>{
+  const response=await fetch(path+"?v=1",{cache:"no-store"});
+  if(!response.ok)throw Error("Datoteka primjera nije dostupna: "+path+" ("+response.status+")");
+  return response.json();
+ }));
+ const quiz=createQuiz();
+ quiz.title="Kviz Općeg Znanja 1";
+ quiz.sampleSource="Prvi kviz dostavljen za KvizToGo Kviz uživo";
+ for(let r=0;r<ROUNDS.length;r++){
+  const sections=parts[r]?.sections;
+  if(parts[r]?.round!==r+1||!Array.isArray(sections)||sections.length!==ROUNDS[r].sections.length)throw Error("Primjer nema sve rubrike u "+(r+1)+". krugu.");
+  for(let s=0;s<sections.length;s++){
+   const items=sections[s],expected=ROUNDS[r].sections[s].count;
+   if(!Array.isArray(items)||items.length!==expected)throw Error("Neispravan broj pitanja u rubrici "+ROUNDS[r].sections[s].name);
+   quiz.rounds[r].sections[s].items=items.map(item=>({...baseItem(),...item}));
+  }
+ }
+ return quiz;
+}
+async function installExampleQuiz(){
+ if(!stageMode&&project)await persist();
+ const quiz=await makeExampleQuiz();
+ await persist(quiz);
+ project=quiz;position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;
+ localStorage.setItem("kviztogo_live_id",project.id);
+ ensureChannel();await refreshSelect();renderAll();
+ $("revealBtn").textContent="Otkrij odgovor";
+ $("scoresBtn").textContent="🏆 Prikaži ljestvicu";
+ toast("Kviz Općeg Znanja 1 učitan je sa svim pitanjima i odgovorima. Možeš uređivati svoju kopiju.");
+}
 function openDB(){return new Promise((resolve,reject)=>{
  const req=indexedDB.open(DBNAME,1);
  req.onupgradeneeded=()=>{const x=req.result;if(!x.objectStoreNames.contains("quizzes"))x.createObjectStore("quizzes",{keyPath:"id"});if(!x.objectStoreNames.contains("assets"))x.createObjectStore("assets",{keyPath:"id"});};
@@ -206,7 +238,7 @@ function renderScreen(root,kind){
  const title=q.question?.trim()|| (c.code==="asocijacija"&&position.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje.");
  const choices=c.code==="abc"?'<div class="screen-choices">'+(q.options||[]).map((a,k)=>'<div class="screen-choice'+(revealed&&q.correct===["A","B","C"][k]?" correct":"")+'">'+["A","B","C"][k]+") "+esc(a||"…")+'</div>').join("")+'</div>':c.code==="vjerovali"?'<div class="screen-choices"><div class="screen-choice'+(revealed&&q.truth==="Točno"?" correct":"")+'">Točno</div><div class="screen-choice'+(revealed&&q.truth==="Netočno"?" correct":"")+'">Netočno</div></div>':"";
  root.innerHTML='<div class="screen-inner"><div class="screen-head">'+esc(ROUNDS[position.r].name+' · '+c.name)+'</div>'+
-  '<div class="screen-title">'+esc(title)+'</div>'+choices+'<div class="screen-media"></div>'+
+  '<div class="screen-title '+(title.length>280?'extra-long':title.length>135?'long':'')+'">'+esc(title)+'</div>'+choices+'<div class="screen-media"></div>'+
   (revealed?'<div class="screen-answer">✓ '+esc(ans||"Odgovor još nije upisan.")+'</div>':"")+
   '<div class="screen-foot">'+esc(labelItem(position.r,position.s,position.i))+' · '+pointsFor(position.r,position.s,position.i)+' bodova</div></div>';
  attachMedia(root.querySelector(".screen-media"),q,kind).catch(()=>{});
@@ -302,6 +334,11 @@ function bindEditor(){
   clearTimeout(saveTimer);await persist();const q=await storeGet("quizzes",e.target.value);if(!q)return;
   project=q;localStorage.setItem("kviztogo_live_id",q.id);position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;ensureChannel();renderAll();
  });
+ $("exampleBtn").addEventListener("click",async()=>{
+  const button=$("exampleBtn");button.disabled=true;button.textContent="Učitavam primjer…";
+  try{await installExampleQuiz();}catch(e){toast("Ne mogu učitati primjer: "+e.message,true);}
+  finally{button.disabled=false;button.textContent="📚 Učitaj Kviz Općeg Znanja 1";}
+ });
  $("newBtn").addEventListener("click",async()=>{
   clearTimeout(saveTimer);await persist();
   project=createQuiz();await persist();localStorage.setItem("kviztogo_live_id",project.id);
@@ -367,7 +404,10 @@ async function init(){
    if(!project){$("stageCanvas").textContent="Nema spremljenog kviza na ovom uređaju.";return;}
    ensureChannel();renderStage();
   }else{
-   if(!project){project=createQuiz();await persist();}
+   if(!project){
+    try{project=await makeExampleQuiz();await persist();}
+    catch(e){project=createQuiz();await persist();toast("Primjer još nije dostupan: "+e.message,true);}
+   }
    localStorage.setItem("kviztogo_live_id",project.id);
    bindEditor();ensureChannel();await refreshSelect();renderAll();
    $("saveStatus").textContent="✓ Spremljeno na ovom uređaju";
