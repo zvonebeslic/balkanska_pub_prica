@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-00314-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Encelad",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem Saturnovu mjesecu letjelica Cassini otkrila je mlazove vodene pare koji izbijaju iz pukotina oko južnog pola?",
+    "answers": [
+      "Encelad",
+      "Enceladus"
+    ],
+    "explanation": "Encelad izbacuje ledene čestice i vodenu paru iz južnih pukotina.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00315-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Medicina",
+    "focus": "stremen",
+    "difficulty": 2,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Koja je najmanja kost u ljudskom tijelu, smještena u srednjem uhu?",
+    "answers": [
+      "Stremen",
+      "Stapes"
+    ],
+    "explanation": "Stremen je najmanja kost čovjeka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stapes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00316-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "sfumato",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Kako se zove slikarska tehnika mekih, gotovo neprimjetnih prijelaza tonova koju povezujemo s Leonardom da Vincijem?",
+    "answers": [
+      "Sfumato"
+    ],
+    "explanation": "Sfumato stvara mekane prijelaze između svjetla i sjene.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sfumato"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00317-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Ekonomija",
+    "focus": "jen",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koja se valuta u Japanu označava znakom ¥?",
+    "answers": [
+      "Jen",
+      "Yen",
+      "Japanski jen"
+    ],
+    "explanation": "Jen je službena japanska valuta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Japanese_yen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00318-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Psihologija",
+    "focus": "Stroopov efekt",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Kada je riječ 'plavo' otisnuta crvenom bojom, imenovanje boje tinte sporije je od čitanja riječi. Kako se zove taj efekt?",
+    "answers": [
+      "Stroopov efekt",
+      "Stroopov učinak"
+    ],
+    "explanation": "Stroopov efekt pokazuje interferenciju automatiziranog čitanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stroop_effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00319-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Poljoprivreda",
+    "focus": "šafran",
+    "difficulty": 1,
+    "styleId": 86,
+    "styleDescription": "Pitaj koja je biljka dala ime nekom proizvodu",
+    "question": "Koji skupocjeni začin nastaje sušenjem njuški tučka cvijeta vrste Crocus sativus?",
+    "answers": [
+      "Šafran",
+      "Safran"
+    ],
+    "explanation": "Šafran se dobiva od njuški tučka šafranova cvijeta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Saffron"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00320-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Inženjerstvo",
+    "focus": "Arhimedov vijak",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kako se naziva drevni uređaj za podizanje vode koji koristi zavojnicu unutar cijevi?",
+    "answers": [
+      "Arhimedov vijak",
+      "Archimedes screw"
+    ],
+    "explanation": "Arhimedov vijak prenosi vodu rotacijom spiralnog mehanizma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Archimedes%27_screw"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00321-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Televizija",
+    "focus": "The Twilight Zone",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koja je američka antologijska serija Roda Serlinga iz 1959. poznata po neobičnim pričama i iznenadnim obratima?",
+    "answers": [
+      "Zona sumraka",
+      "The Twilight Zone"
+    ],
+    "explanation": "The Twilight Zone antologijska je serija koju je stvorio Rod Serling.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Twilight_Zone_(1959_TV_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00322-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Zanati",
+    "focus": "filigran",
+    "difficulty": 4,
+    "styleId": 68,
+    "styleDescription": "Opiši alat kroz oblik i netipičnu uporabu",
+    "question": "Kako se naziva zlatarska tehnika izrade ukrasa od tankih metalnih žica, često savijenih u spirale?",
+    "answers": [
+      "Filigran",
+      "Filigree"
+    ],
+    "explanation": "Filigran koristi fine metalne žice u ukrasnim uzorcima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Filigree"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00323-20261031",
+    "createdAt": "2026-10-31T16:46:00.000Z",
+    "updatedAt": "2026-10-31T16:46:00.000Z",
+    "topic": "Priroda",
+    "focus": "stalagmit",
+    "difficulty": 5,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Kako nazivamo špiljski sigasti stup koji raste od poda prema stropu?",
+    "answers": [
+      "Stalagmit"
+    ],
+    "explanation": "Stalagmit nastaje taloženjem minerala na podu špilje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stalagmite"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
