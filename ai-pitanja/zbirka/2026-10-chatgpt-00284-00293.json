@@ -1,0 +1,239 @@
+[
+  {
+    "id": "chatgpt10000-00284-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Explorer 1 prvi američki satelit",
+    "difficulty": 2,
+    "styleId": 23,
+    "styleDescription": "Pitaj što je posljednje u nizu tehnoloških izuma",
+    "question": "Sovjetski Sputnik poletio je 1957., a SAD je 31. siječnja 1958. lansirao svoj prvi uspješni satelit. Kako se zvao?",
+    "answers": [
+      "Explorer 1",
+      "Explorer I",
+      "Eksplorer 1"
+    ],
+    "explanation": "Explorer 1 bio je prvi uspješni američki umjetni satelit.",
+    "sources": [
+      "https://www.jpl.nasa.gov/missions/explorer-1/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00285-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Film",
+    "focus": "Sputnik 2 pas Laika",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Samo mjesec nakon prvog Sputnika, Sovjeti su u studenom 1957. poslali psa u orbitu. Kako se zvao?",
+    "answers": [
+      "Lajka",
+      "Laika"
+    ],
+    "explanation": "Pas Lajka letio je u Sputniku 2 u studenom 1957.",
+    "sources": [
+      "https://www.nasa.gov/history/dawn-of-the-space-age/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00286-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Inženjerstvo",
+    "focus": "Juno 1 raketa Explorer 1",
+    "difficulty": 4,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Prvi uspješni američki satelit Explorer 1 u orbitu je odnijela raketa izvedena iz Jupiter-C. Pod kojim je imenom poznata ta četverostupanjska raketa?",
+    "answers": [
+      "Juno I",
+      "Juno 1",
+      "Juno-I"
+    ],
+    "explanation": "Raketa Juno I, preinačeni Jupiter-C, lansirala je Explorer 1.",
+    "sources": [
+      "https://science.nasa.gov/mission/explorer-1/about/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00287-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Gastronomija",
+    "focus": "tom yum kung tajlandska juha UNESCO",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U tajlandskom loncu mirišu limunska trava i aromatični začini, a glavni sastojak su škampi. Kako se zove tradicionalna juha upisana 2024. na UNESCO-ov popis?",
+    "answers": [
+      "Tom yum kung",
+      "Tom yam kung",
+      "Tomyum kung",
+      "Tom yum goong"
+    ],
+    "explanation": "Tomyum Kung tajlandska je juha od škampa čija je tradicija upisana na UNESCO-ov popis.",
+    "sources": [
+      "https://www.unesco.org/en/articles/food-and-intangible-heritage-flavourful-relationship"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00288-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Povijest",
+    "focus": "NACA prethodnik NASA",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Američka svemirska agencija NASA nastala je 1958. iz starije ustanove za aeronautička istraživanja. Koja je bila kratica te prethodnice?",
+    "answers": [
+      "NACA"
+    ],
+    "explanation": "NACA je bila prethodnica NASA-e.",
+    "sources": [
+      "https://www.nasa.gov/history/dawn-of-the-space-age/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00289-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Obrazovanje",
+    "focus": "International Geophysical Year 1957 1958",
+    "difficulty": 5,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Međunarodni znanstveni pothvat od srpnja 1957. do prosinca 1958. potaknuo je lansiranje prvih satelita. Koja je njegova engleska kratica?",
+    "answers": [
+      "IGY"
+    ],
+    "explanation": "International Geophysical Year poznata je pod kraticom IGY.",
+    "sources": [
+      "https://www.nasa.gov/history/americas-first-satellite-established-foothold-in-space/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00290-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Svakodnevica",
+    "focus": "prvi laserski barkod blagajna 1974",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Na blagajni u Ohiju 1974. laserski snop prvi je put pročitao oznaku na pakiranju žvakaćih guma. Koji sustav označavanja proizvoda tada je debitirao?",
+    "answers": [
+      "Barkod",
+      "Bar kod",
+      "UPC",
+      "Crtični kod"
+    ],
+    "explanation": "Prvi UPC kod u trgovini očitan je 1974. godine.",
+    "sources": [
+      "https://americanhistory.si.edu/ne/collections/object/nmah_892778"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00291-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Zanati",
+    "focus": "ikat dvostruki bojanje osnova i potka",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kod običnog ikata prije tkanja veže se i boji jedna skupina niti, a kod posebno zahtjevne inačice i osnova i potka. Kako se zove ta inačica?",
+    "answers": [
+      "Dvostruki ikat",
+      "Double ikat"
+    ],
+    "explanation": "Dvostruki ikat koristi obojene niti osnove i potke.",
+    "sources": [
+      "https://www.metmuseum.org/ja/essays/indian-textiles-trade-and-production"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00292-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Pravo i društvo",
+    "focus": "NASA osnovana 1958 Eisenhower",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Američki predsjednik potpisao je 29. srpnja 1958. zakon kojim je osnovana NASA. O kojem je predsjedniku riječ?",
+    "answers": [
+      "Dwight D. Eisenhower",
+      "Dwight Eisenhower",
+      "Eisenhower",
+      "Ajzenhauer"
+    ],
+    "explanation": "Eisenhower je potpisao zakon o osnivanju NASA-e 1958.",
+    "sources": [
+      "https://science.nasa.gov/mission/explorer-1/about/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00293-20261031",
+    "createdAt": "2026-10-31T16:06:00.000Z",
+    "updatedAt": "2026-10-31T16:06:00.000Z",
+    "topic": "Tehnologija",
+    "focus": "prvi NASA satelit Pioneer 1",
+    "difficulty": 4,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Explorer 1 bio je prvi američki satelit, ali je lansiran prije osnutka NASA-e. Koja je letjelica u listopadu 1958. prva poletjela pod upravom nove agencije?",
+    "answers": [
+      "Pioneer 1",
+      "Pioneer I",
+      "Pionir 1"
+    ],
+    "explanation": "Pioneer 1 bila je prva letjelica lansirana pod NASA-inom upravom.",
+    "sources": [
+      "https://www.nasa.gov/history/60-years-ago-nasa-launches-its-first-satellite/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
