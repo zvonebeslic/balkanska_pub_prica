@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00364-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Povijest",
+    "focus": "Pobuna na Bountyju",
+    "difficulty": 1,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Na kojem je britanskom brodu 1789. izbila pobuna protiv zapovjednika Williama Bligha?",
+    "answers": [
+      "Bounty",
+      "HMS Bounty"
+    ],
+    "explanation": "Pobuna se dogodila na plovidbi Tihim oceanom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00365-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Zemljopis",
+    "focus": "Gibraltarski tjesnac",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koji morski prolaz odvaja Europu od Afrike i povezuje Sredozemno more s Atlantikom?",
+    "answers": [
+      "Gibraltarski tjesnac",
+      "Gibraltar"
+    ],
+    "explanation": "Prolaz se nalazi između Španjolske i Maroka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00366-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Biologija",
+    "focus": "Bioluminiscencija",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva sposobnost nekih organizama da kemijskom reakcijom sami proizvode svjetlost?",
+    "answers": [
+      "Bioluminiscencija",
+      "Bioluminescence"
+    ],
+    "explanation": "Takvo svjetlo stvaraju krijesnice i mnogi morski organizmi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bioluminescence"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00367-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Glazba",
+    "focus": "Didgeridoo",
+    "difficulty": 4,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Koje tradicionalno australsko puhačko glazbalo ima oblik duge šuplje drvene cijevi?",
+    "answers": [
+      "Didgeridoo",
+      "Didžeridu"
+    ],
+    "explanation": "Didgeridoo je glazbalo dijela australskih Aboridžina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Didgeridoo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00368-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Kemija",
+    "focus": "Selen",
+    "difficulty": 5,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element, nazvan prema grčkoj božici Mjeseca, nosi simbol Se?",
+    "answers": [
+      "Selen",
+      "Selenium"
+    ],
+    "explanation": "Selen je ime dobio prema grčkoj riječi za Mjesec.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Selenium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00369-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Sport",
+    "focus": "Curling",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom sportu igrači guraju granitno kamenje po ledu prema kružnoj meti?",
+    "answers": [
+      "Curling",
+      "Karling"
+    ],
+    "explanation": "Četkanjem leda utječe se na klizanje kamena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00370-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Književnost",
+    "focus": "Don Quijote",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Koji Cervantesov junak zamjenjuje vjetrenjače za divove i putuje sa Sančom Panzom?",
+    "answers": [
+      "Don Quijote",
+      "Don Kihot",
+      "Don Quixote"
+    ],
+    "explanation": "Don Quijote je središnji lik Cervantesova romana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Don_Quixote"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00371-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Medicina",
+    "focus": "Bubnjić",
+    "difficulty": 3,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Koja tanka opna razdvaja vanjski slušni kanal od srednjeg uha i titra pod utjecajem zvuka?",
+    "answers": [
+      "Bubnjić",
+      "Bubna opna"
+    ],
+    "explanation": "Bubnjić prenosi zvučne vibracije na slušne koščice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Eardrum"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00372-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Film",
+    "focus": "Građanin Kane",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koji film Orsona Wellesa iz 1941. započinje smrću magnata čija je posljednja riječ Rosebud?",
+    "answers": [
+      "Građanin Kane",
+      "Citizen Kane"
+    ],
+    "explanation": "Rosebud je središnja zagonetka filma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Citizen_Kane"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00373-20261031",
+    "createdAt": "2026-10-31T17:40:44.000Z",
+    "updatedAt": "2026-10-31T17:40:44.000Z",
+    "topic": "Matematika",
+    "focus": "Zlatni rez",
+    "difficulty": 5,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Koji omjer približno iznosi 1,618 i označava se grčkim slovom fi?",
+    "answers": [
+      "Zlatni rez",
+      "Zlatni omjer"
+    ],
+    "explanation": "Zlatni rez je iracionalni broj približno jednak 1,618.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Golden_ratio"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
