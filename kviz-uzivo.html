@@ -70,7 +70,13 @@
     <div class="topactions"><button id="stageFullscreen" type="button">⛶ Cijeli zaslon</button><button id="stageClose" type="button">Zatvori prikaz</button></div>
   </header>
   <div class="stage-screen" id="stageCanvas"></div>
-  <footer class="stage-foot">KvizToGo · Kviz Općeg Znanja</footer>
+  <nav class="stage-controls" aria-label="Kontrole kviza uživo">
+    <button id="stagePrev" type="button">← Prethodno</button>
+    <button id="stageReveal" type="button" class="success">✓ Otkrij odgovor</button>
+    <button id="stageNext" type="button" class="primary">Sljedeće →</button>
+    <button id="stageBoard" type="button">🏆 Ljestvica</button>
+  </nav>
+  <footer class="stage-foot">KvizToGo · Kviz Općeg Znanja · Tipke: ← → i razmaknica</footer>
 </div>
 <div id="toast" role="status" hidden></div>
 <script src="kviz-uzivo.js" defer></script>
