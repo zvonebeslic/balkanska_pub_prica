@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-00192-20261031",
+    "createdAt": "2026-10-31T02:36:22.000Z",
+    "updatedAt": "2026-10-31T02:36:22.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Eadweard Muybridge i fotografsko istraživanje pokreta",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Više od 20.000 negativa i nizovi od čak 24 fotoaparata poslužili su jednom pioniru fotografije da u 19. stoljeću rastavi ljudski i životinjski pokret na pojedinačne kadrove. O kojem je fotografu riječ?",
+    "answers": [
+      "Eadweard Muybridge",
+      "Edward Muybridge",
+      "Muybridge"
+    ],
+    "explanation": "Eadweard Muybridge snimao je ljude i životinje u pokretu na Sveučilištu Pennsylvania od 1884. do 1886. Smithsonian navodi više od 20.000 negativa te nizove od 12 do 24 fotoaparata za snimanje pokreta.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_1848277"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
