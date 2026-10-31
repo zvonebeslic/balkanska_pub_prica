@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-00244-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Povijest",
+    "focus": "Devils Tower prvi nacionalni spomenik SAD 1906",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "U rujnu 1906. Theodore Roosevelt zaštitio je neobičnu stijenu u Wyomingu kao prvi američki nacionalni spomenik. Kako se zove ta stijena?",
+    "answers": [
+      "Devils Tower",
+      "Đavolja kula"
+    ],
+    "explanation": "Devils Tower proglašen je prvim nacionalnim spomenikom SAD-a 24. rujna 1906.",
+    "sources": [
+      "https://www.nps.gov/articles/lee-story-proclamation.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00245-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Zemljopis",
+    "focus": "Sargaško more granice morske struje",
+    "difficulty": 3,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Jedno more nema obalu koja bi mu ocrtavala granice: omeđuju ga Golfska, Sjevernoatlantska, Kanarska i Sjevernoekvatorska struja. Kako se zove?",
+    "answers": [
+      "Sargaško more",
+      "Sargasso Sea"
+    ],
+    "explanation": "Sargaško more omeđuju oceanske struje sjevernog Atlantika.",
+    "sources": [
+      "https://www.noaa.gov/gc-international-section/marine-protected-areas-mpas-sargasso-sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00246-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Biologija",
+    "focus": "Sargassum plinski mjehurići pneumatociste",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Smeđa morska alga ostaje na površini zahvaljujući sitnim mjehurićima plina koji nalikuju bobicama. Kako se stručno zovu ti plovci?",
+    "answers": [
+      "Pneumatociste",
+      "Pneumatocista",
+      "Pneumatocysts"
+    ],
+    "explanation": "Plinom ispunjene pneumatociste daju algama roda Sargassum uzgon.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/ocean-fact/sargassum/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00247-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Triton retrogradna putanja Neptun",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Najveći mjesec jednoga ledenog diva obilazi planet u smjeru suprotnom njegovoj rotaciji, što upućuje na davno gravitacijsko zarobljavanje. Kako se zove taj mjesec?",
+    "answers": [
+      "Triton"
+    ],
+    "explanation": "Triton je veliki Neptunov mjesec s retrogradnom orbitom.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00248-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Književnost",
+    "focus": "Uranovi mjeseci Shakespeare Alexander Pope",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Miranda, Titanija i Oberon nisu samo književni likovi: njihova su imena završila i na nebu. Oko kojeg planeta kruže mjeseci nazvani po Shakespeareovim i Popeovim likovima?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranovi mjeseci dobivaju imena po likovima iz djela Shakespearea i Alexandera Popea.",
+    "sources": [
+      "https://science.nasa.gov/uranus/moons/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00249-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Arhitektura",
+    "focus": "rimska štukatura vapno gips reljef",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Rimski graditelji od vapna ili gipsa, pijeska i vode oblikovali su reljefne vijence, stupove i ukrase. Kako nazivamo takvu dekorativnu žbuku?",
+    "answers": [
+      "Štukatura",
+      "Stuko",
+      "Stucco"
+    ],
+    "explanation": "Štukatura se oblikuje u reljefne arhitektonske ukrase.",
+    "sources": [
+      "https://www.metmuseum.org/ko/essays/roman-stuccowork"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00250-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Zanati",
+    "focus": "drvorez visoki tisak otiskivanje izdignutih dijelova",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Za razliku od bakroreza, kod ove grafičke tehnike otiskuju se izdignuti dijelovi drvene ploče, dok se ostatak izrezuje. Kako se zove?",
+    "answers": [
+      "Drvorez",
+      "Ksilografija",
+      "Woodcut"
+    ],
+    "explanation": "Drvorez je tehnika visokog tiska s izdignutih dijelova drvenog bloka.",
+    "sources": [
+      "https://www.metmuseum.org/ja/essays/the-printed-image-in-the-west-woodcut"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00251-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "More i ocean",
+    "focus": "Atlantik najslaniji ocean",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Od pet oceanskih bazena jedan u prosjeku ima najveću slanost površinske vode. Koji je to ocean?",
+    "answers": [
+      "Atlantski ocean",
+      "Atlantik"
+    ],
+    "explanation": "Prema NOAA-i, Atlantik je u prosjeku najslaniji oceanski bazen.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/sea-water"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00252-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "bakrorez burin ručno urezivanje metala",
+    "difficulty": 4,
+    "styleId": 68,
+    "styleDescription": "Opiši alat kroz oblik i netipičnu uporabu",
+    "question": "Grafičar čeličnim alatom zakošenog vrha izravno urezuje linije u bakrenu ploču, bez pomoći kiseline. Kako se naziva taj alat?",
+    "answers": [
+      "Burin",
+      "Graversko dlijeto",
+      "Graverski nož"
+    ],
+    "explanation": "Burin je oštar alat kojim se urezuju linije pri izradi gravura.",
+    "sources": [
+      "https://www.metmuseum.org/pt/perspectives/materials-and-techniques-printmaking-engraving"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00253-20261031",
+    "createdAt": "2026-10-31T15:40:00.000Z",
+    "updatedAt": "2026-10-31T15:40:00.000Z",
+    "topic": "Rijetke teme",
+    "focus": "Levallois metoda unaprijed oblikovan kameni odbojak",
+    "difficulty": 5,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Prapovijesni majstor pažljivo priprema jezgru kremena kako bi posljednjim udarcem dobio odbojak unaprijed određenog oblika. Kako se zove ta paleolitička tehnika?",
+    "answers": [
+      "Levallois",
+      "Levaloa",
+      "Levalloisova tehnika"
+    ],
+    "explanation": "Levalloisova tehnika podrazumijeva plansku pripremu kamene jezgre.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/573093"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
