@@ -1,0 +1,96 @@
+[
+  {
+    "id": "chatgpt10000-00203-20261031",
+    "createdAt": "2026-10-31T10:45:00.000Z",
+    "topic": "Astronomija",
+    "focus": "Uranov nagib osi 97,77 stupnjeva",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji planet Sunčeva sustava zbog nagiba osi od gotovo 98 stupnjeva izgleda kao da se kotrlja po svojoj putanji oko Sunca?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranova os rotacije nagnuta je oko 97,77 stupnjeva, zbog čega se okreće gotovo položen na bok.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T10:45:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00204-20261031",
+    "createdAt": "2026-10-31T10:45:00.000Z",
+    "topic": "More i ocean",
+    "focus": "Termoklina nagli pad temperature s dubinom",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Roniocu temperatura mora isprva gotovo ne pada, a zatim se u razmjerno tankom sloju naglo smanjuje. Kako se naziva taj prijelazni sloj između toplije površinske i hladnije dubinske vode?",
+    "answers": [
+      "Termoklina",
+      "Thermocline"
+    ],
+    "explanation": "Termoklina je sloj u kojem temperatura vode brzo opada s povećanjem dubine.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/thermocline.html"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T10:45:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00205-20261031",
+    "createdAt": "2026-10-31T10:45:00.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Cloisonné emajl omeđen metalnim žicama",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Na kineskoj ukrasnoj posudi tanke metalne žice oblikuju pretince koji se pune obojenom staklenom pastom i zatim peku. Kojim je francuskim nazivom poznata ta tehnika emajliranja?",
+    "answers": [
+      "Cloisonné",
+      "Cloisonne",
+      "Kloazone"
+    ],
+    "explanation": "Cloisonné je tehnika u kojoj se metalnim pregradama odvajaju polja ispunjena emajlom.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/40608"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T10:45:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00206-20261031",
+    "createdAt": "2026-10-31T10:45:00.000Z",
+    "topic": "Povijest",
+    "focus": "William Herschel otkrio Uran 1781",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Astronom je 1781. promatrao objekt koji je isprva smatrao kometom, a pokazalo se da je otkrio novi planet. Kako se prezivao taj astronom?",
+    "answers": [
+      "Herschel",
+      "William Herschel",
+      "Vilijam Heršel"
+    ],
+    "explanation": "William Herschel otkrio je Uran 1781. godine, prvo ga pogrešno tumačeći kao komet ili zvijezdu.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "updatedAt": "2026-10-31T10:45:00.000Z",
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
