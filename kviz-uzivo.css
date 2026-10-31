@@ -83,10 +83,14 @@ input[type=file]{padding:7px}
 .stage-screen .screen-media img,.stage-screen .screen-media video{max-height:42vh}
 .stage-screen .screen-foot{font-size:clamp(13px,1.5vw,24px)}
 .stage-screen .screen-choices{gap:1vw}
+.stage-controls{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:12px 18px;background:#0c1b2e;border-top:1px solid #34506e}
+.stage-controls button{font-size:clamp(14px,1.5vw,19px);min-height:46px;padding:9px 24px;border-radius:12px}
+.stage-controls .primary{font-weight:900}
+.stage-controls button:disabled{opacity:.35}
 .stage-foot{padding:5px 16px;text-align:center;color:#7087a4;font-size:12px;background:#04080f}
 .stage-leaderboard{max-width:950px;width:100%;font-size:clamp(20px,3vw,42px);border-collapse:collapse}
 .stage-leaderboard td{border-bottom:1px solid #2d435d;padding:12px}
 .stage-leaderboard td:last-child{text-align:right;color:#9ae2b3;font-weight:900}
 .stage-top button{font-size:12px;padding:6px 10px}
 @media(max-width:1180px){.layout{grid-template-columns:minmax(200px,245px) 1fr}.preview{grid-column:2;position:static}.sidebar{grid-row:1/3}}
-@media(max-width:750px){.layout{grid-template-columns:1fr}.sidebar{position:static;max-height:none;grid-row:auto}.preview{grid-column:auto}.rowfields{grid-template-columns:1fr}.toolbar label{min-width:100%}.stage-top{padding:7px 10px}.stage-top button{padding:4px 7px}.stage-screen .screen-title{font-size:clamp(21px,6vw,40px)}.stage-screen .screen-answer{font-size:clamp(21px,5.5vw,36px)}.stage-screen .screen-media img,.stage-screen .screen-media video{max-height:31vh}}
+@media(max-width:750px){.stage-controls{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:8px}.stage-controls button{font-size:13px;min-height:43px;padding:7px}.layout{grid-template-columns:1fr}.sidebar{position:static;max-height:none;grid-row:auto}.preview{grid-column:auto}.rowfields{grid-template-columns:1fr}.toolbar label{min-width:100%}.stage-top{padding:7px 10px}.stage-top button{padding:4px 7px}.stage-screen .screen-title{font-size:clamp(21px,6vw,40px)}.stage-screen .screen-answer{font-size:clamp(21px,5.5vw,36px)}.stage-screen .screen-media img,.stage-screen .screen-media video{max-height:31vh}}
