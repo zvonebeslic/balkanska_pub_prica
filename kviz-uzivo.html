@@ -5,80 +5,120 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
-<meta name="description" content="Uređivač kvizova uživo s pitanjima, odgovorima, medijima i prikazom za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=2">
+<meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
+<link rel="stylesheet" href="kviz-uzivo.css?v=4">
 </head>
 <body>
 <div id="editorApp">
   <header class="top">
-    <a class="logo" href="index.html">Kviz<span class="to">To</span><span class="go">Go</span></a>
-    <div class="topactions">
-      <a class="btn" href="ai-pitanja.html">🧠 AI pitanja</a>
-      <a class="btn" href="index.html">← Početna</a>
-      <button class="primary" id="stageBtn" type="button">▣ Otvori ekran za publiku</button>
+    <a class="brand-mark" href="index.html" aria-label="KvizToGo">
+      <img src="kviz-uzivo-logo.webp" width="90" height="84" alt="KvizToGo, originalni logo s kartom i upitnikom">
+    </a>
+    <span class="top-caption">KVIZ UŽIVO <small>· voditeljski studio</small></span>
+    <button id="topHome" type="button" class="subtle">⌂ Početak</button>
+  </header>
+
+  <section id="homeScreen" class="home-screen">
+    <div class="home-intro">
+      <img src="kviz-uzivo-logo.webp" alt="KvizToGo" width="186" height="174">
+      <div>
+        <span class="eyebrow">STUDIO ZA PUB KVIZOVE</span>
+        <h1>Vodi kviz.<br><span>Publika samo gleda.</span></h1>
+        <p>Jednostavno upravljanje pitanjima i odgovorima. Poseban prikaz za TV ili projektor.</p>
+      </div>
     </div>
-  </header>
-  <section class="welcome">
-    <div><h1>Kviz uživo 🎤</h1><p>Tri kruga, 19 rubrika. Slike, zvuk i video. Jedan ekran za voditelja, drugi za publiku.</p></div>
-    <span class="badge" id="saveStatus">Učitavam spremljene kvizove…</span>
+    <div class="home-actions">
+      <button id="startBtn" type="button" class="home-action main-action"><span class="action-icon">▶</span><span><strong>Nastavi kviz</strong><small id="homeQuizTitle">Posljednji otvoreni kviz</small></span><span>→</span></button>
+      <button id="exampleBtn" type="button" class="home-action"><span class="action-icon">📚</span><span><strong>Učitaj ogledni kviz</strong><small>Kviz Općeg Znanja 1 · 3 kruga</small></span><span>→</span></button>
+      <button id="newBtn" type="button" class="home-action"><span class="action-icon">＋</span><span><strong>Novi kviz</strong><small>Otvori uređivač krugova i pitanja</small></span><span>→</span></button>
+      <button id="manageBtn" type="button" class="home-action"><span class="action-icon">☷</span><span><strong>Moji kvizovi</strong><small>Otvori, uvezi, izvezi ili obriši</small></span><span>→</span></button>
+    </div>
+    <p class="home-hint" id="saveStatus">Učitavam spremljene kvizove…</p>
   </section>
-  <section class="toolbar" aria-label="Upravljanje kvizovima">
-    <label>Odaberi kviz <select id="quizSelect" aria-label="Spremljeni kvizovi"></select></label>
-    <button id="newBtn" type="button" class="success">+ Novi kviz</button>
-    <button id="exampleBtn" type="button" class="primary">📚 Učitaj Kviz Općeg Znanja 1</button>
-    <button id="deleteBtn" type="button" class="danger">Obriši kviz</button>
-    <button id="exportBtn" type="button">↓ Izvezi kviz i medije</button>
-    <button id="importBtn" type="button">↑ Uvezi kviz</button>
-    <input type="file" id="importFile" accept=".json,application/json" hidden>
+
+  <section id="hostScreen" class="host-screen" hidden>
+    <div class="studio-header">
+      <div>
+        <span class="eyebrow">VODITELJSKA KONTROLA</span>
+        <h1 id="hostQuizTitle">Kviz Općeg Znanja</h1>
+        <p id="hostQuestionLabel" class="muted">1. krug · pitanje 1</p>
+      </div>
+      <div class="studio-actions">
+        <button id="stageBtn" type="button" class="success">▣ Prikaz za publiku</button>
+        <button id="openEditorBtn" type="button">✎ Uredi pitanja</button>
+        <button id="hostManageBtn" type="button">☷ Kvizovi</button>
+      </div>
+    </div>
+    <div class="host-display"><div class="screen" id="previewPane"></div></div>
+    <nav class="host-controls" aria-label="Upravljanje pitanjima">
+      <button id="prevBtn" type="button">← Prethodno</button>
+      <button id="revealBtn" type="button" class="success">Prikaži odgovor</button>
+      <button id="nextBtn" type="button" class="primary">Sljedeće →</button>
+    </nav>
+    <div class="host-extras">
+      <button id="scoresBtn" type="button">🏆 Prikaži ljestvicu</button>
+      <span class="host-count" id="hostCounter">1 / 70</span>
+      <details class="tools-panel"><summary>⏱ Timer i bodovi ekipa</summary>
+        <div class="tools-grid">
+          <div>
+            <div class="controls">
+              <label>Timer (sekunde)<select id="timerSeconds"><option value="30">30</option><option value="60" selected>60</option><option value="90">90</option><option value="120">120</option><option value="180">180</option></select></label>
+              <button id="timerStart" type="button">▶ Pokreni</button>
+              <button id="timerStop" type="button">■ Zaustavi</button>
+              <span class="clock" id="editorClock">01:00</span>
+            </div>
+          </div>
+          <div>
+            <h3>Bodovi ekipa</h3>
+            <div class="teams"><input id="teamName" type="text" placeholder="Ime nove ekipe"><button id="addTeam" type="button">+ Dodaj</button></div>
+            <div id="teamScores"></div>
+            <button id="resetScores" type="button" class="danger">Poništi sve bodove</button>
+          </div>
+        </div>
+      </details>
+    </div>
+    <p class="host-hint">Na projektoru nema kontrola. Ovdje klikni „Prikaži odgovor” da se odgovor pojavi i publici. Novim klikom ga sakrij.</p>
   </section>
-  <div class="layout">
-    <aside class="panel sidebar"><h2>Krugovi i rubrike</h2><div id="nav"></div></aside>
-    <main class="panel editing">
-      <div class="warning" id="scoreNotice">U oglednom kvizu unesena su sva pitanja i rješenja. Fotografije uz vizualni dio, fotografija nogometaša i glazbeni isječci još nisu učitani jer nisu dostavljene datoteke. Procjena od 9000 godina treba dogovorene granice bodovanja.</div>
-      <label style="margin-bottom:18px">Naziv kviza <input id="quizTitle" placeholder="Npr. Kviz Općeg Znanja 1" maxlength="120"></label>
-      <div id="questionEdit"></div>
-      <div class="navigator">
-        <button id="prevBtn" type="button">← Prethodno</button>
-        <button id="revealBtn" type="button" class="success">Otkrij odgovor</button>
-        <button id="nextBtn" type="button" class="primary">Sljedeće →</button>
-        <button id="scoresBtn" type="button">🏆 Prikaži ljestvicu</button>
+
+  <section id="editScreen" class="edit-screen" hidden>
+    <div class="studio-header">
+      <div><span class="eyebrow">UREĐIVANJE</span><h1>Krugovi i pitanja</h1><p class="muted">Slike, audio i video dodaju se uz pojedino pitanje.</p></div>
+      <button id="backHostEdit" type="button" class="primary">← Kontrola kviza</button>
+    </div>
+    <div class="editor-layout">
+      <aside class="panel sidebar"><h2>Krugovi i rubrike</h2><div id="nav"></div></aside>
+      <main class="panel editing">
+        <label class="quiz-title-field">Naziv kviza <input id="quizTitle" placeholder="Npr. Kviz Općeg Znanja 2" maxlength="120"></label>
+        <div id="questionEdit"></div>
+      </main>
+    </div>
+  </section>
+
+  <section id="manageScreen" class="manage-screen" hidden>
+    <div class="studio-header">
+      <div><span class="eyebrow">SPREMLJENI KVIZOVI</span><h1>Moji kvizovi</h1><p class="muted">Kvizovi se čuvaju u pregledniku ovog uređaja. Izvezi ih za sigurnosnu kopiju.</p></div>
+      <button id="backHostManage" type="button" class="primary">← Kontrola kviza</button>
+    </div>
+    <div class="manager-card">
+      <label>Odaberi kviz <select id="quizSelect" aria-label="Spremljeni kvizovi"></select></label>
+      <div class="manager-buttons">
+        <button id="manageOpenBtn" type="button" class="success">▶ Otvori kviz</button>
+        <button id="manageEditBtn" type="button">✎ Uredi kviz</button>
+        <button id="exportBtn" type="button">↓ Izvezi s medijima</button>
+        <button id="importBtn" type="button">↑ Uvezi kviz</button>
+        <button id="deleteBtn" type="button" class="danger">Obriši kviz</button>
       </div>
-    </main>
-    <section class="panel preview">
-      <h2>Pregled ekrana za publiku</h2>
-      <div class="screen" id="previewPane"></div>
-      <p class="muted tiny">Prikaz se sinkronizira s otvorenim ekranom za publiku na istom uređaju i u istom pregledniku.</p>
-      <div class="controls">
-        <label style="max-width:145px">Timer (sekunde)<select id="timerSeconds"><option value="30">30</option><option value="60" selected>60</option><option value="90">90</option><option value="120">120</option><option value="180">180</option></select></label>
-        <button id="timerStart" type="button">▶ Pokreni timer</button>
-        <button id="timerStop" type="button">■ Zaustavi</button>
-        <span class="clock" id="editorClock">01:00</span>
-      </div>
-      <div class="scoretools">
-        <h3>Bodovi ekipa</h3>
-        <div class="teams"><input id="teamName" type="text" placeholder="Ime nove ekipe"><button id="addTeam" type="button">+ Dodaj</button></div>
-        <div id="teamScores"></div>
-        <div class="team-controls"><button id="resetScores" type="button" class="danger">Poništi sve bodove</button></div>
-      </div>
-    </section>
-  </div>
+      <input type="file" id="importFile" accept=".json,application/json" hidden>
+    </div>
+  </section>
 </div>
+
 <div id="stageApp" hidden>
-  <header class="stage-top">
-    <span class="logo">Kviz<span class="to">To</span><span class="go">Go</span></span>
-    <span id="stageClock" class="clock"></span>
-    <div class="topactions"><button id="stageFullscreen" type="button">⛶ Cijeli zaslon</button><button id="stageClose" type="button">Zatvori prikaz</button></div>
-  </header>
+  <div class="stage-badge"><img src="kviz-uzivo-logo.webp" width="112" height="105" alt="KvizToGo"></div>
   <div class="stage-screen" id="stageCanvas"></div>
-  <nav class="stage-controls" aria-label="Kontrole kviza uživo">
-    <button id="stagePrev" type="button">← Prethodno</button>
-    <button id="stageReveal" type="button" class="success">✓ Otkrij odgovor</button>
-    <button id="stageNext" type="button" class="primary">Sljedeće →</button>
-    <button id="stageBoard" type="button">🏆 Ljestvica</button>
-  </nav>
-  <footer class="stage-foot">KvizToGo · Kviz Općeg Znanja · Tipke: ← → i razmaknica</footer>
+  <div class="stage-clock-wrap"><span class="clock" id="stageClock"></span></div>
 </div>
 <div id="toast" role="status" hidden></div>
-<script src="kviz-uzivo.js?v=2" defer></script>
+<script src="kviz-uzivo.js?v=4" defer></script>
 </body>
 </html>
