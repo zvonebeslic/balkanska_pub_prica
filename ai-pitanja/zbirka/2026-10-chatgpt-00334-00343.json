@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-00334-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Životinje",
+    "focus": "narval",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima dugačak spiralni kljovasti zub zbog kojeg ga zovu morskim jednorogom?",
+    "answers": [
+      "Narval",
+      "Narwhal"
+    ],
+    "explanation": "Narvalov dugi kljovasti izdanak zapravo je zub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00335-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Fizika",
+    "focus": "Bernoullijevo načelo",
+    "difficulty": 2,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Koje načelo opisuje vezu između brzine strujanja fluida i njegova tlaka u idealiziranom toku?",
+    "answers": [
+      "Bernoullijevo načelo",
+      "Bernoullijev princip"
+    ],
+    "explanation": "Bernoullijevo načelo povezuje tlak, brzinu i visinu strujanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bernoulli%27s_principle"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00336-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Film",
+    "focus": "Nosferatu",
+    "difficulty": 3,
+    "styleId": 87,
+    "styleDescription": "Kreni od razlike originala i adaptacije pa traži naslov",
+    "question": "Koji njemački nijemi horor iz 1922. s grofom Orlokom predstavlja neovlaštenu adaptaciju Drakule?",
+    "answers": [
+      "Nosferatu"
+    ],
+    "explanation": "Nosferatu F. W. Murnaua nastao je prema Stokerovu Drakuli.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nosferatu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00337-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Matematika",
+    "focus": "Fibonaccijev niz",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji niz počinje 0, 1, 1, 2, 3, 5, 8, a svaki novi član zbroj je prethodna dva?",
+    "answers": [
+      "Fibonaccijev niz",
+      "Fibonacci niz",
+      "Fibonaccijev slijed"
+    ],
+    "explanation": "U Fibonaccijevu nizu svaki član zbroj je prethodna dva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fibonacci_sequence"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00338-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Promet",
+    "focus": "Orient Express",
+    "difficulty": 5,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koji je legendarni međunarodni vlak počeo voziti 1883. i povezivao Pariz s Istanbulom različitim rutama?",
+    "answers": [
+      "Orient Express",
+      "Orijent ekspres"
+    ],
+    "explanation": "Orient Express poznat je povijesni luksuzni vlak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Orient_Express"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00339-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Jezik",
+    "focus": "esperanto",
+    "difficulty": 1,
+    "styleId": 94,
+    "styleDescription": "Kreni od osnivanja ustanove i pitaj njezino današnje ime",
+    "question": "Koji je planski međunarodni jezik 1887. predstavio Ludwik Zamenhof?",
+    "answers": [
+      "Esperanto"
+    ],
+    "explanation": "Zamenhof je objavio osnove esperanta 1887.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Esperanto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00340-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "More i ocean",
+    "focus": "Marijanska brazda",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Kako se zove najdublja oceanska brazda na Zemlji, u zapadnom Tihom oceanu?",
+    "answers": [
+      "Marijanska brazda",
+      "Marijanski jarak",
+      "Mariana Trench"
+    ],
+    "explanation": "Marijanska brazda sadrži najdublju poznatu točku oceana.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/oceandepth.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00341-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Religije i mitologije",
+    "focus": "Fenrir",
+    "difficulty": 3,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Kako se u nordijskoj mitologiji zove golemi vuk kojemu je suđeno progutati Odina tijekom Ragnaröka?",
+    "answers": [
+      "Fenrir"
+    ],
+    "explanation": "Fenrir je mitski vuk koji u Ragnaröku ubija Odina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fenrir"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00342-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth Harald",
+    "difficulty": 4,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Bežična tehnologija Bluetooth ime je dobila po nadimku kojeg danskog kralja iz 10. stoljeća?",
+    "answers": [
+      "Harald Modrozubi",
+      "Harald Bluetooth",
+      "Harald I."
+    ],
+    "explanation": "Bluetooth nosi ime kralja Haralda Modrozubog.",
+    "sources": [
+      "https://www.bluetooth.com/about-us/bluetooth-origin/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00343-20261031",
+    "createdAt": "2026-10-31T16:50:00.000Z",
+    "updatedAt": "2026-10-31T16:50:00.000Z",
+    "topic": "Moda",
+    "focus": "batik",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Kako se naziva indonezijska tehnika ukrašavanja tkanine pri kojoj vosak štiti dijelove od boje?",
+    "answers": [
+      "Batik"
+    ],
+    "explanation": "Batik koristi vosak kao zaštitu pri bojenju tekstila.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/indonesian-batik-00170"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
