@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-00304-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Životinje",
+    "focus": "aksolotl",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac poznat po vanjskim škrgama može obnoviti izgubljene udove?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po regeneraciji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00305-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Fizika",
+    "focus": "Dopplerov efekt",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Zašto sirena vozila u prolazu zvuči više dok se približava, a niže dok se udaljava? Navedite naziv pojave.",
+    "answers": [
+      "Dopplerov efekt",
+      "Dopplerov učinak"
+    ],
+    "explanation": "Dopplerov efekt opisuje promjenu opažene frekvencije zbog gibanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Doppler_effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00306-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Film",
+    "focus": "Metropolis Fritz Lang",
+    "difficulty": 3,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je redatelj snimio njemački nijemi znanstvenofantastični film 'Metropolis' iz 1927.?",
+    "answers": [
+      "Fritz Lang",
+      "Lang"
+    ],
+    "explanation": "Fritz Lang režirao je Metropolis.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Metropolis_(1927_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00307-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Matematika",
+    "focus": "Möbiusova vrpca",
+    "difficulty": 4,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se naziva ploha koju dobijemo kada papirnatu traku jednom poluokrenemo pa joj spojimo krajeve?",
+    "answers": [
+      "Möbiusova vrpca",
+      "Mobiusova vrpca",
+      "Möbiusova traka"
+    ],
+    "explanation": "Möbiusova vrpca ima samo jednu stranu i jedan rub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/M%C3%B6bius_strip"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00308-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Promet",
+    "focus": "Panamski kanal",
+    "difficulty": 5,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koji kanal otvoren 1914. skraćuje plovidbu između Atlantika i Pacifika kroz Srednju Ameriku?",
+    "answers": [
+      "Panamski kanal",
+      "Panama Canal"
+    ],
+    "explanation": "Panamski kanal povezuje Atlantski i Tihi ocean.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Panama_Canal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00309-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ koja se jednako čita slijeva nadesno i zdesna nalijevo, primjerice 'radar'?",
+    "answers": [
+      "Palindrom",
+      "Palindrome"
+    ],
+    "explanation": "Palindrom se jednako čita u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00310-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "More i ocean",
+    "focus": "Sargaško more",
+    "difficulty": 2,
+    "styleId": 49,
+    "styleDescription": "Opiši morsku struju i traži ocean ili područje",
+    "question": "Koje more u Atlantiku nema kopnenih obala, nego mu granice određuju morske struje?",
+    "answers": [
+      "Sargaško more",
+      "Sargasso Sea"
+    ],
+    "explanation": "Sargaško more omeđeno je oceanskim strujama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sargasso_Sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00311-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Religije i mitologije",
+    "focus": "Anubis",
+    "difficulty": 3,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Koje egipatsko božanstvo s glavom šakala povezujemo s mumificiranjem i zaštitom mrtvih?",
+    "answers": [
+      "Anubis"
+    ],
+    "explanation": "Anubis je staroegipatski bog povezan s pogrebnim obredima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anubis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00312-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Tehnologija",
+    "focus": "QR kod",
+    "difficulty": 4,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koju dvodimenzionalnu oznaku razvijenu 1994. možemo očitati kamerom mobitela, a ime joj znači 'brzi odgovor'?",
+    "answers": [
+      "QR kod",
+      "QR code"
+    ],
+    "explanation": "QR je kratica za Quick Response.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00313-20261031",
+    "createdAt": "2026-10-31T16:44:00.000Z",
+    "updatedAt": "2026-10-31T16:44:00.000Z",
+    "topic": "Moda",
+    "focus": "keper",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Kako se naziva vrsta tkanja s prepoznatljivim dijagonalnim rebrima, karakteristična za traper?",
+    "answers": [
+      "Keper",
+      "Twill"
+    ],
+    "explanation": "Keper ili twill tkanje stvara dijagonalne linije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Twill"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
