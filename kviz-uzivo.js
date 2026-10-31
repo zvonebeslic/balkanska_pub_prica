@@ -115,6 +115,7 @@ function ensureChannel(){
    if(stageMode){
      if(m.type==="state"&&m.quiz?.id===project.id){project=m.quiz;position=m.position||position;revealed=!!m.revealed;showBoard=!!m.showBoard;timerUntil=m.timerUntil||0;renderStage();}
    }else if(m.type==="hello")pushStage();
+   else if(m.type==="control"&&["previous","next","reveal","board"].includes(m.action))applyPresentationControl(m.action);
  };
  if(stageMode)channel.postMessage({type:"hello"});
 }
@@ -257,7 +258,14 @@ function renderAll(){
  }else renderStage();
  pushStage();
 }
-function renderStage(){renderScreen($("stageCanvas"),"stage");refreshClocks();}
+function renderStage(){
+ renderScreen($("stageCanvas"),"stage");refreshClocks();
+ const arr=positions(),idx=arr.findIndex(v=>v.r===position.r&&v.s===position.s&&v.i===position.i);
+ $("stagePrev").disabled=idx<=0;
+ $("stageNext").disabled=idx>=arr.length-1;
+ $("stageReveal").textContent=revealed?"Sakrij odgovor":"✓ Otkrij odgovor";
+ $("stageBoard").textContent=showBoard?"Vrati pitanje":"🏆 Ljestvica";
+}
 function selectPosition(r,s,i){
  if(!itemAt(r,s,i))return;
  position={r,s,i};revealed=false;showBoard=false;renderAll();
@@ -267,6 +275,22 @@ function changePosition(delta){
  const p=arr[idx+delta];if(p)selectPosition(p.r,p.s,p.i);else toast(delta>0?"Stigao si do kraja kviza.":"Ovo je prvo pitanje.");
 }
 function changeReveal(){showBoard=false;revealed=!revealed;renderAll();$("revealBtn").textContent=revealed?"Sakrij odgovor":"Otkrij odgovor";}
+function applyPresentationControl(action){
+ if(!project)return;
+ if(action==="next")changePosition(1);
+ else if(action==="previous")changePosition(-1);
+ else if(action==="reveal")changeReveal();
+ else if(action==="board"){showBoard=!showBoard;renderAll();}
+ if(!stageMode){
+  $("revealBtn").textContent=revealed?"Sakrij odgovor":"Otkrij odgovor";
+  $("scoresBtn").textContent=showBoard?"Vrati pitanje":"🏆 Prikaži ljestvicu";
+ }
+}
+function stageControl(action){
+ if(!stageMode)return;
+ applyPresentationControl(action);
+ if(channel)channel.postMessage({type:"control",action});
+}
 async function uploadMedia(e){
  const f=e.target.files?.[0];if(!f)return;
  if(!/^(image|audio|video)\//.test(f.type)){toast("Odaberi sliku, audio ili video datoteku.",true);return;}
@@ -401,6 +425,16 @@ async function init(){
    $("editorApp").hidden=true;$("stageApp").hidden=false;
    $("stageFullscreen").addEventListener("click",()=>{if(!document.fullscreenElement)$("stageApp").requestFullscreen?.().catch(()=>{});else document.exitFullscreen?.();});
    $("stageClose").addEventListener("click",()=>window.close());
+   $("stagePrev").addEventListener("click",()=>stageControl("previous"));
+   $("stageNext").addEventListener("click",()=>stageControl("next"));
+   $("stageReveal").addEventListener("click",()=>stageControl("reveal"));
+   $("stageBoard").addEventListener("click",()=>stageControl("board"));
+   document.addEventListener("keydown",e=>{
+    if(e.target.closest("button,input,textarea,select,audio,video"))return;
+    if(e.key==="ArrowRight"){e.preventDefault();stageControl("next");}
+    else if(e.key==="ArrowLeft"){e.preventDefault();stageControl("previous");}
+    else if(e.code==="Space"){e.preventDefault();stageControl("reveal");}
+   });
    if(!project){$("stageCanvas").textContent="Nema spremljenog kviza na ovom uređaju.";return;}
    ensureChannel();renderStage();
   }else{
