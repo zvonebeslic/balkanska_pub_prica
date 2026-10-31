@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-00324-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Povijest",
+    "focus": "Magna Carta",
+    "difficulty": 1,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Koji je dokument engleski kralj Ivan bez Zemlje prihvatio 1215. kod Runnymedea?",
+    "answers": [
+      "Magna Carta",
+      "Velika povelja sloboda"
+    ],
+    "explanation": "Magna Carta iz 1215. ograničila je neke kraljevske ovlasti.",
+    "sources": [
+      "https://www.bl.uk/magna-carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00325-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Zemljopis",
+    "focus": "Lesoto",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička država u cijelosti okružena teritorijem Južnoafričke Republike?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je enklavna država unutar Južnoafričke Republike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00326-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Biologija",
+    "focus": "lišaj",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji organizam nastaje trajnom zajednicom gljive i fotosintetskog partnera, često alge ili cijanobakterije?",
+    "answers": [
+      "Lišaj",
+      "Lichen"
+    ],
+    "explanation": "Lišaj je simbiotska zajednica gljive i fotosintetskog partnera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lichen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00327-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Glazba",
+    "focus": "oboa",
+    "difficulty": 4,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Koje drveno puhačko glazbalo s dvostrukim jezičkom obično daje ton za ugađanje orkestra?",
+    "answers": [
+      "Oboa",
+      "Oboe"
+    ],
+    "explanation": "Oboa tradicionalno daje referentni ton orkestru.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Oboe"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00328-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Sport",
+    "focus": "dekatlon",
+    "difficulty": 5,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojoj atletskoj disciplini natjecatelji skupljaju bodove kroz deset različitih disciplina?",
+    "answers": [
+      "Desetoboj",
+      "Dekatlon",
+      "Decathlon"
+    ],
+    "explanation": "Desetoboj se sastoji od deset atletskih disciplina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Decathlon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00329-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Kemija",
+    "focus": "volfram",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal simbolom W podsjeća na naziv wolfram, a ima najviše talište među čistim metalima?",
+    "answers": [
+      "Volfram",
+      "Wolfram",
+      "Tungsten"
+    ],
+    "explanation": "Volfram ima iznimno visoko talište, oko 3422 °C.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00330-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Književnost",
+    "focus": "Gregor Samsa",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kako se zove trgovački putnik koji se u Kafkinoj 'Preobrazbi' jednoga jutra budi pretvoren u golemo kukcoliko stvorenje?",
+    "answers": [
+      "Gregor Samsa",
+      "Gregor"
+    ],
+    "explanation": "Gregor Samsa glavni je lik Kafkine Preobrazbe.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Metamorphosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00331-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Arhitektura",
+    "focus": "kupola Panteona",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koja rimska građevina iz Hadrijanova doba ima slavnu betonsku kupolu s kružnim otvorom zvanim okulus?",
+    "answers": [
+      "Panteon",
+      "Pantheon"
+    ],
+    "explanation": "Rimski Panteon ima kupolu s okulusom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pantheon,_Rome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00332-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Videoigre",
+    "focus": "Pac-Man",
+    "difficulty": 4,
+    "styleId": 84,
+    "styleDescription": "Opiši omiljen dječji predmet preko godine nastanka",
+    "question": "Koja arkadna igra iz 1980. prati žutog junaka koji jede točkice i bježi od duhova?",
+    "answers": [
+      "Pac-Man",
+      "Pacman"
+    ],
+    "explanation": "Pac-Man je arkadna igra Namca iz 1980.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pac-Man"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00333-20261031",
+    "createdAt": "2026-10-31T16:48:00.000Z",
+    "updatedAt": "2026-10-31T16:48:00.000Z",
+    "topic": "Gastronomija",
+    "focus": "kimchi",
+    "difficulty": 5,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se zove korejski fermentirani prilog koji se često priprema od kineskog kupusa i čilija?",
+    "answers": [
+      "Kimchi",
+      "Kimči"
+    ],
+    "explanation": "Kimchi je tradicionalna korejska fermentirana hrana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
