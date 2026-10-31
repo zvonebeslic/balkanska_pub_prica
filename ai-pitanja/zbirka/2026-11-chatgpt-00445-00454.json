@@ -1,0 +1,239 @@
+[
+  {
+    "id": "chatgpt10000-00445-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Astronomija",
+    "focus": "Uran nagib osi 97,77 stupnjeva",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Planet kojemu je os rotacije nagnuta gotovo 98 stupnjeva izgleda kao da se kotrlja oko Sunca. Koji je to planet?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranova os nagnuta je 97,77 stupnjeva prema ravnini putanje.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00446-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Cloisonné pregrade od metalne žice",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Majstor na metalnoj posudi oblikuje sitne pregrade od bakrene žice i puni ih obojenom staklenom pastom. Kako se zove ova tehnika emajliranja?",
+    "answers": [
+      "Cloisonné",
+      "Cloisonne",
+      "Kloazone"
+    ],
+    "explanation": "Cloisonné se prepoznaje po metalnim pregradama koje razdvajaju polja emajla.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/40608"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00447-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Sport",
+    "focus": "Mačevanje tri vrste oružja",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Floret, mač i sablja tri su natjecateljske vrste oružja u kojem olimpijskom sportu?",
+    "answers": [
+      "Mačevanje",
+      "Macevanje"
+    ],
+    "explanation": "Olimpijsko mačevanje ima tri discipline prema vrsti oružja.",
+    "sources": [
+      "https://www.olympics.com/ioc/international-fencing-federation"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00448-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace Bernoullijevi brojevi",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Kći pjesnika Byrona opisala je niz koraka za izračun Bernoullijevih brojeva na zamišljenom Analitičkom stroju. Kako se zvala?",
+    "answers": [
+      "Ada Lovelace",
+      "Augusta Ada Lovelace",
+      "Ada Byron"
+    ],
+    "explanation": "Ada Lovelace objavila je 1843. algoritamski opis u bilješkama o Babbageovu stroju.",
+    "sources": [
+      "https://www.computerhistory.org/babbage/adalovelace"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00449-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Videoigre i igre",
+    "focus": "En passant uzimanje pješaka",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U šahu postoji potez čiji francuski naziv znači 'u prolazu': pješak uzima suparničkog pješaka koji je upravo preskočio napadnuto polje. Kako se zove?",
+    "answers": [
+      "En passant",
+      "An pasan",
+      "U prolazu"
+    ],
+    "explanation": "En passant dopušten je samo odmah nakon suparnikova pomaka pješaka za dva polja.",
+    "sources": [
+      "https://support.chess.com/en/articles/8557558-what-is-en-passant-it-s-not-an-illegal-pawn-move"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00450-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Književnost",
+    "focus": "Haiku obrazac 5 7 5 mora",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Tri stiha, ritam 5–7–5 i kratka slika iz prirode obilježja su kojeg japanskog pjesničkog oblika?",
+    "answers": [
+      "Haiku",
+      "Hajku"
+    ],
+    "explanation": "Tradicionalni haiku raspoređuje 17 mora u tri retka.",
+    "sources": [
+      "https://snl.no/haiku"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00451-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Životinje",
+    "focus": "Hobotnica tri srca",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Dva srca šalju krv prema škrgama, a treće prema ostatku tijela. O kojem osmerokrakom morskom beskralježnjaku govorimo?",
+    "answers": [
+      "Hobotnica",
+      "Octopus"
+    ],
+    "explanation": "Hobotnice imaju dva škržna i jedno sistemsko srce.",
+    "sources": [
+      "https://www.discoverwildlife.com/animal-facts/marine-animals/octopuses-have-three-hearts"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00452-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto potpuno okružen JAR",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Jedina država koja graniči s planinskim kraljevstvom Lesoto ujedno ga okružuje sa svih strana. Koja je to država?",
+    "answers": [
+      "Južnoafrička Republika",
+      "JAR",
+      "Južna Afrika"
+    ],
+    "explanation": "Lesoto je enklava unutar Južnoafričke Republike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00453-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Jezik i pismo",
+    "focus": "Brailleova ćelija šest točaka",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Osnovna ćelija pisma koje se čita dodirom ima šest položaja za ispupčene točke. Po kojem je prezimenu poznato to pismo?",
+    "answers": [
+      "Braille",
+      "Brailleovo pismo",
+      "Brajevo pismo",
+      "Brailleovo"
+    ],
+    "explanation": "Klasična Brailleova ćelija ima šest točaka raspoređenih u dva stupca.",
+    "sources": [
+      "https://www.loc.gov/nls/services-and-resources/informational-publications/about-braille/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00454-20261101",
+    "createdAt": "2026-11-01T00:39:31+01:00",
+    "updatedAt": "2026-11-01T00:39:31+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Herschel otkrio Uran 1781",
+    "difficulty": 3,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Godine 1781. astronom je otkrio planet koji je isprva smatrao kometom, a kasnije ga pokušao nazvati po kralju Georgeu III. Koje je njegovo prezime?",
+    "answers": [
+      "Herschel",
+      "William Herschel",
+      "Vilijam Heršel"
+    ],
+    "explanation": "William Herschel otkrio je Uran 1781. godine.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
