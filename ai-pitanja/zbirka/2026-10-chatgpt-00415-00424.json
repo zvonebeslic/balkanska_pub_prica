@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-00415-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Sport",
+    "focus": "Spiridon Louis prvi maratonski pobjednik",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Grčki trkač koji je 1896. pobijedio u prvom olimpijskom maratonu dijelio je ime s kojim poznatim junakom? Traži se njegovo prezime.",
+    "answers": [
+      "Louis",
+      "Spiridon Louis",
+      "Spyridon Louis"
+    ],
+    "explanation": "Spiridon Louis pobijedio je na maratonu prvih modernih Igara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00416-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Povijest",
+    "focus": "Vlasnici kočija olimpijski pobjednici",
+    "difficulty": 4,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Na antičkim Olimpijskim igrama pobjednike utrka kočija nisu nužno proglašavali vozačima. Tko je službeno dobivao pobjednički vijenac?",
+    "answers": [
+      "Vlasnik kočije",
+      "Vlasnici kočija",
+      "Vlasnik zaprege"
+    ],
+    "explanation": "Pobjednik je bio vlasnik zaprege, što je omogućilo i pobjede ženama.",
+    "sources": [
+      "https://www.olympics.com/ioc/ancient-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00417-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Likovna umjetnost",
+    "focus": "Kalendari prvi nishiki-e otisci",
+    "difficulty": 4,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "U Japanu su prvi višebojni otisci nishiki-e iz 1765. služili kao luksuzni predmeti za razmjenu. Koju su svakodnevnu stvar prikazivali?",
+    "answers": [
+      "Kalendare",
+      "Kalendar"
+    ],
+    "explanation": "Prvi višebojni nishiki-e otisci bili su kalendari za imućne naručitelje.",
+    "sources": [
+      "https://www.metmuseum.org/it/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00418-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Astronomija",
+    "focus": "Godina prolaska Voyagera 2 pokraj Neptuna",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Neptun je otkriven 1846. zahvaljujući računu i teleskopu. Koje je godine njegov prvi i dosad jedini bliski posjet obavila sonda Voyager 2?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Voyager 2 proletio je pokraj Neptuna 1989.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00419-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Kemija",
+    "focus": "Metan boja Neptuna",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Plavičasta boja Neptuna djelomice nastaje jer plin u atmosferi upija crvene dijelove Sunčeve svjetlosti. Koji plin?",
+    "answers": [
+      "Metan",
+      "CH4"
+    ],
+    "explanation": "Metan apsorbira crveno svjetlo, što pridonosi plavkastoj boji planeta.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00420-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Geografija",
+    "focus": "Gustoća slane morske vode",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na putu od oceana prema rijeci naišli ste na obalno područje u kojem se miješaju dvije vrste vode. Koji je od ta dva sastojka obično gušći?",
+    "answers": [
+      "Morska voda",
+      "Slana voda"
+    ],
+    "explanation": "Slana morska voda u pravilu je gušća od slatke vode pri sličnim uvjetima.",
+    "sources": [
+      "https://coast.noaa.gov/estuaries/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00421-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Tehnologija",
+    "focus": "Zasebna matrica za boju drvoreza",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "U 18. stoljeću japanski su grafičari umjesto ručnog bojenja otisaka koristili više drvenih ploča. Čemu je služila svaka dodatna ploča?",
+    "answers": [
+      "Za drugu boju",
+      "Za novu boju",
+      "Za pojedinu boju"
+    ],
+    "explanation": "Višebojni drvorez koristi različite matrice za različite boje.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/55751"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00422-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Religije i mitologije",
+    "focus": "Maslina olimpijski vijenac",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "U antičkoj Olimpiji pobjednički su vijenci rezani s drveta posvećenog Zeusu. Koja je to mediteranska biljka?",
+    "answers": [
+      "Maslina",
+      "Maslinovo drvo"
+    ],
+    "explanation": "Vijenci su se izrađivali od grančica Zeusove svete masline.",
+    "sources": [
+      "https://www.olympics.com/ioc/ancient-olympic-games/history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00423-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Matematika",
+    "focus": "Neptunova godina kraća od Plutonove",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Tijekom 248 zemaljskih godina Pluton napravi jedan obilazak Sunca. Koliko približno traje Neptunova godina u odnosu na Plutonovu: kraće ili dulje?",
+    "answers": [
+      "Kraće",
+      "Kratko",
+      "Kraća"
+    ],
+    "explanation": "Neptunova godina traje oko 165, a Plutonova oko 248 zemaljskih godina.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00424-20261031",
+    "createdAt": "2026-10-31T20:39:15.000Z",
+    "updatedAt": "2026-10-31T20:39:15.000Z",
+    "topic": "Promet",
+    "focus": "Plivanje otvoreno more Atena 1896",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Na prvim modernim Igrama plivače su za utrku na 1200 metara brodom odvozili na otvoreno more, odakle su plivali prema obali. U kojoj se državi to događalo?",
+    "answers": [
+      "Grčka",
+      "Grčkoj",
+      "Greece"
+    ],
+    "explanation": "Plivačke utrke na Igrama u Ateni 1896. održavale su se na otvorenom moru.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-1896-125-years-of-shared-olympic-values"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
