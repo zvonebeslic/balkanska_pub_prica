@@ -85,6 +85,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const uid=()=>typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():"ktg-"+Date.now()+"-"+Math.random().toString(36).slice(2);
 const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
+const VOL_ONE_CLEANUP_KEY="ktg-keep-only-vol1-2026-11-01";
 let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false,publishTargetRound=0;
 let channel=null,saveTimer=null,toastTimer=null,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
@@ -142,6 +143,30 @@ function storeGet(store,id){return new Promise((resolve,reject)=>{const t=db.tra
 function storeAll(store){return new Promise((resolve,reject)=>{const t=db.transaction(store,"readonly");const q=t.objectStore(store).getAll();q.onsuccess=()=>resolve(q.result||[]);q.onerror=()=>reject(q.error);});}
 function storePut(store,value){return new Promise((resolve,reject)=>{const t=db.transaction(store,"readwrite");t.objectStore(store).put(value);t.oncomplete=resolve;t.onerror=()=>reject(t.error||new Error("Spremanje nije uspjelo"));});}
 function storeDelete(store,key){return new Promise((resolve,reject)=>{const t=db.transaction(store,"readwrite");t.objectStore(store).delete(key);t.oncomplete=resolve;t.onerror=()=>reject(t.error);});}
+// Vol. 1 is stored in this browser's IndexedDB. Keep the edited copy, not a new
+// template; remove other saved quizzes only after a recognizable Vol. 1 is found.
+function isVolOneQuiz(q){
+ const title=String(q?.title||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+ const isNamedVolOne=/\bkviz\s+opceg\s+znanja\s*(?:(?:vol(?:umen)?|br)\.?\s*)?1\b/.test(title)||
+  /\bkviz\s+opceg\s+znanja\s*vol\.?\s*1\b/.test(title);
+ if(isNamedVolOne||String(q?.sampleSource||"").includes("Prvi kviz dostavljen za KvizToGo"))return true;
+ const section=q?.rounds?.[1]?.sections?.[4]?.items;
+ return Array.isArray(section)&&
+  /Veneri/i.test(String(section[0]?.question||""))&&
+  /Australija/i.test(String(section[1]?.question||""));
+}
+async function keepOnlyVolOne(all,wantedId){
+ if(localStorage.getItem(VOL_ONE_CLEANUP_KEY)==="complete")return {all,selected:null,deleted:0};
+ const candidates=all.filter(isVolOneQuiz);
+ if(!candidates.length)return {all,selected:null,deleted:0,notFound:all.length>0};
+ // Preserve the currently selected Vol. 1 if present, otherwise the most recently edited one.
+ const selected=candidates.find(q=>q.id===wantedId)||
+  [...candidates].sort((a,b)=>(Number(b.updatedAt)||0)-(Number(a.updatedAt)||0))[0];
+ const extra=all.filter(q=>q.id!==selected.id);
+ for(const old of extra)await storeDelete("quizzes",old.id);
+ localStorage.setItem(VOL_ONE_CLEANUP_KEY,"complete");
+ return {all:[selected],selected,deleted:extra.length};
+}
 function toast(text,bad=false){const el=$("toast");el.textContent=text;el.style.background=bad?"#723242":"#24425e";el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,4200);}
 function scheduleSave(){if(stageMode||!project)return;$("saveStatus").textContent="Spremam promjene…";clearTimeout(saveTimer);saveTimer=setTimeout(()=>persist().catch(e=>toast("Greška spremanja: "+e.message,true)),450);}
 async function persist(p=project){if(!p)return;p.updatedAt=Date.now();await storePut("quizzes",p);if(!stageMode)$("saveStatus").textContent="✓ Spremljeno na ovom uređaju";}
@@ -1041,9 +1066,14 @@ async function init(){
   if(stageMode&&room){connectAudience(room);return;}
   if(remote){connectRemoteController(remote,params.get("auth")||"");return;}
   db=await openDB();
-  const all=await storeAll("quizzes");
+  let all=await storeAll("quizzes");
   let wanted=new URLSearchParams(location.search).get("id")||localStorage.getItem("kviztogo_live_id");
-  project=all.find(x=>x.id===wanted)||all[0]||null;
+  let cleanup={deleted:0};
+  if(!stageMode){
+   cleanup=await keepOnlyVolOne(all,wanted);
+   all=cleanup.all;
+  }
+  project=cleanup.selected||all.find(x=>x.id===wanted)||all[0]||null;
   if(stageMode){
    $("editorApp").hidden=true;$("stageApp").hidden=false;
    // Publika vidi samo pitanje, odgovor kada je otkriven i logo.
@@ -1056,7 +1086,10 @@ async function init(){
    }
    localStorage.setItem("kviztogo_live_id",project.id);
    bindEditor();ensureChannel();await refreshSelect();renderAll();showView("home");
-   $("saveStatus").textContent="✓ Spremljeno na ovom uređaju";
+   $("saveStatus").textContent=cleanup.deleted?
+    "✓ Vol. 1 sačuvan, uklonjeno ostalih kvizova: "+cleanup.deleted:
+    "✓ Spremljeno na ovom uređaju";
+   if(cleanup.notFound)toast("Vol. 1 nije pouzdano prepoznat. Radi sigurnosti drugi kvizovi nisu obrisani.",true);
   }
  }catch(e){toast("Ne mogu otvoriti lokalnu bazu: "+e.message,true);if(stageMode)$("stageCanvas").textContent="Greška: "+e.message;else $("saveStatus").textContent="Spremanje nije dostupno"; }
 }
