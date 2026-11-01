@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-00488-20261101",
+    "createdAt": "2026-11-01T04:43:45+01:00",
+    "updatedAt": "2026-11-01T04:43:45+01:00",
+    "topic": "Biologija",
+    "focus": "Lišaj simbioza gljive i fotosintetskog partnera",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na stijeni raste organizam koji je zapravo zajednica gljive i alge ili cijanobakterije. Kako se zove taj neobični stanar?",
+    "answers": [
+      "Lišaj",
+      "Lisaj"
+    ],
+    "explanation": "Lišajevi su zajednice gljive i fotosintetskog partnera, često alge ili cijanobakterije.",
+    "sources": [
+      "https://www.larousse.fr/encyclopedie/divers/lichen/65818"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00489-20261101",
+    "createdAt": "2026-11-01T04:43:45+01:00",
+    "updatedAt": "2026-11-01T04:43:45+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Ukiyo-e japanski prikazi plutajućeg svijeta",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Japanski izraz za 'slike plutajućeg svijeta' označava umjetnost drvoreza s prizorima kabuki glumaca, gradskog života i krajolika. Koji je to izraz?",
+    "answers": [
+      "Ukiyo-e",
+      "Ukijo-e",
+      "Ukiyo e"
+    ],
+    "explanation": "Ukiyo-e se razvio u Japanu tijekom razdoblja Edo, a osobito je poznat po drvorezima.",
+    "sources": [
+      "https://www.treccani.it/enciclopedia/ukiyo-e/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
