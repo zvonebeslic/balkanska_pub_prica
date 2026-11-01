@@ -46,20 +46,19 @@ jobs:
           print("Recent deployments:",[(x["id"],x["sha"][:12],x.get("environment")) for x in deployments[:12]])
           matches=[x for x in deployments if x.get("sha")==blocked and x.get("environment")=="github-pages"]
           print("Matches for blocked SHA:",[(x["id"],x.get("created_at")) for x in matches])
-          if len(matches)<2:
-              print("No newer matching successful deployment exists. Preserving production.")
+          if len(matches)!=1 or matches[0]["id"]!=7470617564:
+              print("Expected only the precise last blocking record. No changes made.")
               sys.exit(1)
-          # Remove only the OLD matching record. Keep the newer successful deployment.
-          oldest=min(matches,key=lambda x:x["created_at"])
-          newer=[x for x in matches if x["id"]!=oldest["id"]]
-          safe=False
-          for item in newer:
-              code,sts=call("GET",f"/deployments/{item['id']}/statuses?per_page=1")
-              if code==200 and sts and sts[0].get("state")=="success":safe=True
-          if not safe:
-              print("No newer successful deployment; preserving old deployment.")
+          # Preserve a previously successful publication as a fallback.
+          fallback=next((x for x in deployments if x.get("id")==7470585379 and x.get("environment")=="github-pages"),None)
+          if not fallback:
+              print("Previously successful fallback record missing. No changes made.")
               sys.exit(1)
-          deployment_id=oldest["id"]
+          code,fallback_states=call("GET",f"/deployments/{fallback['id']}/statuses?per_page=1")
+          if code!=200 or not fallback_states or fallback_states[0].get("state")!="success":
+              print("No confirmed healthy historical publication to retain. No changes made.")
+              sys.exit(1)
+          deployment_id=matches[0]["id"]
           code,states=call("GET",f"/deployments/{deployment_id}/statuses?per_page=5")
           print("Blocked deployment ID:",deployment_id,"Latest status:",(states or [{}])[0].get("state") if isinstance(states,list) else None)
           if code!=200 or not isinstance(states,list):sys.exit(1)
