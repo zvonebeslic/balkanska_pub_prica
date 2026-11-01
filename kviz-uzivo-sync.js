@@ -83,6 +83,7 @@
   transmit("command",{action,secret});
  }
  function isHost(){return role==="host";}
+ function isConnected(){return connected;}
  function room(){return activeRoom;}
- window.KTGSync={genRoom,genSecret,startHost,startAudience,startController,broadcastHost,sendCommand,stop,isHost,room,validRoom};
+ window.KTGSync={genRoom,genSecret,startHost,startAudience,startController,broadcastHost,sendCommand,stop,isHost,isConnected,room,validRoom};
 })();
