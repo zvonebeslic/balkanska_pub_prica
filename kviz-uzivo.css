@@ -542,18 +542,3 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 }
 .slide--section .rubric-example-group .ktg-gold{color:#bd9c63!important}
 
-
-/* TV connects to the host's room; clear instructions prevent generating a second room. */
-.join-audience .join-title{display:block;font-size:clamp(18px,2vw,25px);font-weight:850;margin:2px 0 9px;color:#eaf5ff}
-.join-audience p{font-size:clamp(14px,1.55vw,18px);line-height:1.45}
-.join-audience strong:not(.join-title){color:#e3f6ff}
-.pair-panel .pair-guide{
- margin:13px 0 10px;
- padding:10px 13px;
- border-left:3px solid #4baddc;
- color:#e2eefb;
- background:#142d46;
- font-size:clamp(13px,1.3vw,17px);
- line-height:1.45;
-}
-.pair-panel .pair-guide strong{color:#fff}
