@@ -51,8 +51,9 @@ const SECTION_EXAMPLES={
 const WELCOME_RULES=[
  "Kviz se igra u 3 kruga.",
  "Mobitele utišajte i spremite. Tijekom kruga nije dopušteno njihovo korištenje.",
- "Tijekom kruga nema izlaska iz prostorije ni odlaska na WC. Pauze su između krugova.",
- "Pratite upute voditelja i poštujte ostale ekipe."
+ "Tijekom kruga nema izlaska van ni odlaska na WC. Pauze su između krugova.",
+ "Poštujte ostale ekipe i prijavite ako vidite da netko krši pravila.",
+ "Prvo upozorenje: −10 bodova. Drugo upozorenje: diskvalifikacija."
 ];
 const currentSlide=()=>SLIDES[Math.max(0,Math.min(slideIndex,SLIDES.length-1))];
 
@@ -460,7 +461,7 @@ function sharedSlide(){
    board:leaderboardRows(r)};
  }
  if(slide.kind==="welcome")return {
-  ...base,title:"Dobrodošli!",subtitle:project.title||"Kviz Općeg Znanja",
+  ...base,title:"Dobrodošli!",subtitle:"Kviz općeg znanja vol. 1",
   rules:WELCOME_RULES,maxPoints:ROUNDS.reduce((sum,_,r)=>sum+roundMax(r),0),
   roundPoints:ROUNDS.map((_,r)=>roundMax(r)),ending:"Sretno svima!"
  };
