@@ -427,25 +427,47 @@ async function importQuiz(file){
 // Sharing across devices uses ephemeral Supabase Realtime messages, never database records.
 function sharedSlide(){
  if(!project)return null;
- const sect=ROUNDS[position.r]?.sections[position.s],q=itemAt(position.r,position.s,position.i);
- if(!sect||!q)return null;
- const choiceList=sect.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+t):
-  sect.code==="vjerovali"?["Točno","Netočno"]:[];
+ const slide=currentSlide(),base={
+  kind:"ktg-slide",
+  slideType:slide.kind,
+  quizTitle:project.title||"Kviz Općeg Znanja",
+  index:slideIndex+1,total:SLIDES.length,
+  revealed:false,showBoard:showBoard||slide.kind==="score"
+ };
+ if(showBoard||slide.kind==="score"){
+  const r=slide.r??0;
+  return {...base,slideType:"score",roundIndex:r,
+   scoreTitle:"Ljestvica nakon "+(r+1)+". kruga",
+   board:leaderboardRows(r)};
+ }
+ if(slide.kind==="welcome")return {
+  ...base,title:"Dobrodošli!",subtitle:project.title||"Kviz Općeg Znanja",
+  rules:WELCOME_RULES,maxPoints:ROUNDS.reduce((sum,_,r)=>sum+roundMax(r),0),
+  roundPoints:ROUNDS.map((_,r)=>roundMax(r)),ending:"Sretno svima!"
+ };
+ if(slide.kind==="round")return {
+  ...base,roundName:ROUNDS[slide.r].name,
+  maxPoints:roundMax(slide.r),sectionsCount:ROUNDS[slide.r].sections.length
+ };
+ const section=ROUNDS[slide.r].sections[slide.s];
+ if(slide.kind==="section")return {
+  ...base,roundName:ROUNDS[slide.r].name,sectionTitle:section.name,
+  description:section.desc,example:SECTION_EXAMPLES[section.code]||"",
+  sectionPoints:Array.from({length:section.count},(_,i)=>pointsFor(slide.r,slide.s,i)).reduce((a,b)=>a+b,0)
+ };
+ const q=itemAt(slide.r,slide.s,slide.i);
+ if(!q)return base;
  return {
-  kind:"ktg-slide",title:project.title||"Kviz Općeg Znanja",
-  section:ROUNDS[position.r].name+" · "+sect.name,
-  label:labelItem(position.r,position.s,position.i)+" · "+pointsFor(position.r,position.s,position.i)+" bodova",
-  question:q.question?.trim()||"Pitanje još nije upisano.",
-  choices:choiceList,
-  correct:revealed?(sect.code==="abc"?q.correct:sect.code==="vjerovali"?q.truth:""):"",
-  answer:revealed?createAnswer(position.r,position.s,position.i,q):"",
-  revealed,showBoard,
-  board:showBoard?sortedTeams().map(t=>({name:t.name,score:total(t)})):[],
+  ...base,slideType:"question",roundName:ROUNDS[slide.r].name,
+  sectionTitle:section.name,
+  question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
+  choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
+   section.code==="vjerovali"?["Točno","Netočno"]:[],
+  correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
+  answer:revealed?createAnswer(slide.r,slide.s,slide.i,q):"",
+  revealed,showBoard:false,
   mediaUrl:q.mediaUrl?String(q.mediaUrl):"",
-  mediaMissing:!!q.mediaId&&!q.mediaUrl,
-  total:positions().length,
-  index:positions().findIndex(x=>x.r===position.r&&x.s===position.s&&x.i===position.i)+1,
-  clockEnd:timerUntil||0
+  mediaMissing:!!q.mediaId&&!q.mediaUrl
  };
 }
 function sharedMedia(root,slide){
@@ -464,25 +486,73 @@ function sharedMedia(root,slide){
   const p=document.createElement("p");p.className="muted tiny";p.textContent="Prilog je lokalno spremljen. Za prikaz na drugom uređaju dodaj mrežnu poveznicu na medij u uređivaču.";holder.append(p);
  }
 }
-function renderSharedSlide(root,slide){
+function renderSharedSlide(root,slide,options={}){
  if(!root||!slide||slide.kind!=="ktg-slide")return;
- if(slide.showBoard){
-  const rows=(slide.board||[]).map((t,i)=>'<tr><td>'+(i+1)+'. '+esc(t.name)+'</td><td>'+Number(t.score||0).toLocaleString("hr-HR")+'</td></tr>').join("");
-  root.innerHTML='<div class="screen-inner"><div class="screen-head">'+esc(slide.title)+'</div><div class="screen-title">🏆 Ljestvica ekipa</div><table class="stage-leaderboard"><tbody>'+rows+'</tbody></table></div>';
+ const type=slide.slideType||"question";
+ const textNumber=n=>Number(n||0).toLocaleString("hr-HR",{maximumFractionDigits:2});
+ const inner=(cls,body)=>'<div class="screen-inner slide-content '+cls+'">'+body+'</div>';
+ if(options.localMedia&&type!=="question"){
+  releaseMedia(options.mediaKind);
+  mediaSeq[options.mediaKind]=(mediaSeq[options.mediaKind]||0)+1;
+ }
+ if(type==="welcome"){
+  const rules=(slide.rules||[]).map(rule=>'<li>'+esc(rule)+'</li>').join("");
+  root.innerHTML=inner("slide--welcome",
+   '<div class="slide-center"><div class="slide-kicker">KVIZTOGO · PUB KVIZ</div>'+
+   '<div class="slide-hero">'+esc(slide.title||"Dobrodošli!")+'</div>'+
+   '<div class="slide-subtitle">'+esc(slide.subtitle||"Kviz Općeg Znanja")+'</div>'+
+   '<div class="welcome-summary">3 kruga · maksimalno '+textNumber(slide.maxPoints)+' bodova</div>'+
+   '<ul class="welcome-rules">'+rules+'</ul>'+
+   '<div class="slide-goodluck">'+esc(slide.ending||"Sretno svima!")+'</div></div>');
+  return;
+ }
+ if(type==="round"){
+  root.innerHTML=inner("slide--round",
+   '<div class="slide-center"><div class="slide-kicker">SLJEDEĆI KRUG</div>'+
+   '<div class="slide-hero">'+esc(slide.roundName||"KRUG")+'</div>'+
+   '<div class="slide-subtitle">Maksimalno '+textNumber(slide.maxPoints)+' bodova</div>'+
+   '<div class="slide-rule-meta">'+esc(slide.sectionsCount||"")+' rubrika</div></div>');
+  return;
+ }
+ if(type==="section"){
+  root.innerHTML=inner("slide--section",
+   '<div class="slide-center"><div class="slide-kicker">'+esc(slide.roundName||"")+' · NOVA RUBRIKA</div>'+
+   '<div class="slide-hero rubric-hero">'+esc(slide.sectionTitle||"Rubrika")+'</div>'+
+   '<div class="rubric-description">'+esc(slide.description||"")+'</div>'+
+   (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':"")+'</div>');
+  return;
+ }
+ if(type==="score"){
+  const heads='<thead><tr><th>Ekipa</th><th>1. krug</th><th>2. krug</th><th>3. krug</th><th>Ukupno</th></tr></thead>';
+  const rows=(slide.board||[]).map((t,i)=>
+   '<tr><th scope="row">'+(i+1)+'. '+esc(t.name)+'</th>'+
+   (t.rounds||[]).map(v=>'<td>'+(v===null||v===undefined?'—':textNumber(v))+'</td>').join("")+
+   '<td class="stage-total">'+textNumber(t.score)+'</td></tr>').join("");
+  root.innerHTML=inner("slide--score",
+   '<div class="slide-kicker">REZULTATI · '+esc(slide.quizTitle||"KvizToGo")+'</div>'+
+   '<div class="score-heading">🏆 '+esc(slide.scoreTitle||"Ljestvica")+'</div>'+
+   '<div class="stage-leaderboard-wrap"><table class="stage-leaderboard">'+heads+'<tbody>'+
+   (rows||'<tr><td colspan="5" class="empty-board">Bodovi ekipa još nisu upisani.</td></tr>')+
+   '</tbody></table></div>');
   return;
  }
  const question=String(slide.question||"");
  const choices=(slide.choices||[]).map(t=>{
-  const isCorrect=slide.revealed&&slide.correct&&String(t).startsWith(slide.correct+(t.includes(")")?")":""));
-  return '<span class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</span>';
+  const isCorrect=!!slide.revealed&&!!slide.correct&&
+   (String(t).startsWith(slide.correct+")")||String(t)===slide.correct);
+  return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
  }).join("");
- root.innerHTML='<div class="screen-inner"><div class="screen-head">'+esc(slide.section||"")+'</div>'+
-  '<div class="screen-title '+(question.length>280?"extra-long":question.length>135?"long":"")+'">'+esc(question)+'</div>'+
+ root.innerHTML=inner("slide--question",
+  '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong></div>'+
+  '<div class="screen-body"><div class="screen-title '+(question.length>280?"extra-long":question.length>135?"long":"")+'">'+esc(question)+'</div>'+
   (choices?'<div class="screen-choices">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
-  (slide.revealed?'<div class="screen-answer">✓ '+esc(slide.answer||"Odgovor nije upisan.")+'</div>':"")+
-  '<div class="screen-foot">'+esc(slide.label||"")+'</div></div>';
- sharedMedia(root,slide);
+  (slide.revealed?'<div class="screen-answer">✓ '+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
+  '</div>');
+ if(options.localMedia){
+  const current=currentSlide(),q=current.kind==="question"?itemAt(current.r,current.s,current.i):null;
+  if(q)attachMedia(root.querySelector(".screen-media"),q,options.mediaKind).catch(()=>{});
+ }else sharedMedia(root,slide);
 }
 function pairingForCurrentQuiz(){
  if(!project||!window.KTGSync)throw Error("Povezivanje nije dostupno.");
