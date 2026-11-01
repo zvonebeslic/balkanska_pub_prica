@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
 <meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=33">
+<link rel="stylesheet" href="kviz-uzivo.css?v=34">
 </head>
 <body>
 <div id="editorApp">
@@ -79,6 +79,13 @@
       <button id="firstSlideBtn" type="button">↺ Vrati na prvo</button>
       <button id="nextBtn" type="button" class="primary">Sljedeće →</button>
     </nav>
+    <div class="question-size-controls" aria-label="Veličina teksta pitanja">
+      <span class="question-size-label">Slova pitanja</span>
+      <button id="questionSmaller" type="button" aria-label="Smanji slova pitanja">A−</button>
+      <span id="questionSizeValue" class="question-size-value">100 %</span>
+      <button id="questionLarger" type="button" aria-label="Povećaj slova pitanja">A+</button>
+      <button id="questionSizeReset" type="button" title="Vrati prilagodljivu zadanu veličinu">Automatski</button>
+    </div>
     <div class="host-extras">
       <button id="scoresBtn" type="button">🏆 Prikaži ljestvicu</button>
       <span class="host-count" id="hostCounter">Slajd 1</span>
@@ -125,6 +132,13 @@
       <button type="button" id="remoteReveal" class="success">Prikaži odgovor</button>
       <button type="button" id="remoteNext" class="primary">Sljedeće →</button>
     </nav>
+    <div class="question-size-controls remote-question-size" aria-label="Veličina slova pitanja">
+      <span class="question-size-label">Slova pitanja</span>
+      <button type="button" id="remoteQuestionSmaller" aria-label="Smanji slova pitanja">A−</button>
+      <span class="question-size-value" id="remoteQuestionSizeValue">100 %</span>
+      <button type="button" id="remoteQuestionLarger" aria-label="Povećaj slova pitanja">A+</button>
+      <button type="button" id="remoteQuestionAuto">Automatski</button>
+    </div>
     <p class="muted tiny">Glavni uređaj na kojem je otvoren kviz mora ostati uključen i povezan na internet.</p>
   </section>
 
@@ -167,7 +181,7 @@
   </div>
 <div id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
-<script src="kviz-uzivo-sync.js?v=4" defer></script>
-<script src="kviz-uzivo.js?v=53" defer></script>
+<script src="kviz-uzivo-sync.js?v=5" defer></script>
+<script src="kviz-uzivo.js?v=54" defer></script>
 </body>
 </html>
