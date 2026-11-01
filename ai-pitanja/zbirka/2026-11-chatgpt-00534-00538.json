@@ -1,0 +1,120 @@
+[
+  {
+    "id": "chatgpt10000-00534-20261101",
+    "createdAt": "2026-11-01T14:44:03+01:00",
+    "updatedAt": "2026-11-01T14:44:03+01:00",
+    "topic": "Zanati",
+    "focus": "Tradicionalni japanski papir od vlakana papirnatog duda",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Na japanskim kliznim vratima i pregradama često se nalazi ručno izrađen papir od vlakana papirnatog duda. Kako se naziva taj tradicionalni papir?",
+    "answers": [
+      "Washi",
+      "Vaši"
+    ],
+    "explanation": "Washi se ručno izrađuje od biljnih vlakana i koristi za pisanje i unutarnje pregrade.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/washi-craftsmanship-of-traditional-japanese-hand-made-paper-02291"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00535-20261101",
+    "createdAt": "2026-11-01T14:44:03+01:00",
+    "updatedAt": "2026-11-01T14:44:03+01:00",
+    "topic": "Astronomija",
+    "focus": "Venerin dan dulji od godine",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedna rotacija oko vlastite osi traje oko 243 zemaljska dana, dulje od njegova obilaska Sunca koji traje oko 225 dana?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se oko osi okreće iznimno sporo, a njezina godina traje kraće od jedne rotacije.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00536-20261101",
+    "createdAt": "2026-11-01T14:44:03+01:00",
+    "updatedAt": "2026-11-01T14:44:03+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Poentilizam i slikarske točkice",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Georges Seurat nije miješao sve boje na paleti: nizao je sitne obojene točkice koje se stapaju u oku promatrača. Kako se naziva ta slikarska tehnika?",
+    "answers": [
+      "Poentilizam",
+      "Pointilizam",
+      "Pointillism"
+    ],
+    "explanation": "Poentilizam je tehnika slikanja sitnim odvojenim točkama boje, povezana sa Seuratom.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/georges-seurat-1859-1891-and-neo-impressionism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00537-20261101",
+    "createdAt": "2026-11-01T14:44:03+01:00",
+    "updatedAt": "2026-11-01T14:44:03+01:00",
+    "topic": "Sport",
+    "focus": "Masa kamena za curling",
+    "difficulty": 3,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "U zimskom sportu igrači četkama usmjeravaju granitni kamen prema središtu krugova. Koliko približno kilograma ima natjecateljski kamen od 44 funte?",
+    "answers": [
+      "20",
+      "20 kg",
+      "Dvadeset",
+      "19,96"
+    ],
+    "explanation": "Svjetska curling federacija navodi masu kamena od 44 funte, odnosno oko 19,96 kg.",
+    "sources": [
+      "https://www.olympics.com/ioc/world-curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00538-20261101",
+    "createdAt": "2026-11-01T14:44:03+01:00",
+    "updatedAt": "2026-11-01T14:44:03+01:00",
+    "topic": "Povijest",
+    "focus": "Godina posljednje izložbe impresionista i pojave naziva neoimpresionizam",
+    "difficulty": 4,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na posljednjoj izložbi impresionista Georges Seurat predstavio je 'Nedjeljno poslijepodne na otoku La Grande Jatte', a kritičar Félix Fénéon upotrijebio je naziv neoimpresionizam. Koje je to bilo godine?",
+    "answers": [
+      "1886",
+      "1886."
+    ],
+    "explanation": "Osma i posljednja izložba impresionista održana je 1886., kada se pojavljuje naziv neoimpresionizam.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/georges-seurat-1859-1891-and-neo-impressionism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
