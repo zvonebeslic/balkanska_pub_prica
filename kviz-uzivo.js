@@ -8,7 +8,7 @@ const ROUNDS=[
   {code:"kvizoznalac",name:"KVIZOZNALAC",desc:"Pitanje za pitanjem / 1 bod za svaki točan odgovor.",count:6,points:1},
   {code:"kaladont",name:"KA - LA - DONT",desc:"Zadnja dva slova prvog odgovora su prva dva slova idućeg odgovora / 1 bod za svaki točan odgovor.",count:5,points:1},
   {code:"jucer",name:"JUČER, DANAS, SUTRA",desc:"Pitanja o aktualnostima / 1 bod za svaki točan odgovor.",count:3,points:1},
-  {code:"pjevaj",name:"PJEVAJ MI PJEVAJ",desc:"Prepoznaj ime izvođača i ime pjesme / 1 bod za svaki točan odgovor (1a i 1b).",count:1,points:2}
+  {code:"pjevaj",name:"PJEVAJ MI PJEVAJ",desc:"Prepoznaj ime izvođača i ime pjesme / 1 bod za svaki točan odgovor (1a. Ime pjesme / 1b. Ime izvođača).",count:1,points:2}
  ]},
  {name:"2. KRUG",stated:29,sections:[
   {code:"slovo",name:"SVE NA SLOVO",desc:"Svaki točan odgovor počinje istim slovom / 1 bod za svaki točan odgovor.",count:6,points:1},
