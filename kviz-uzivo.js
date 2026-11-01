@@ -573,11 +573,8 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  const question=String(slide.question||"");
- // Balanced continuous scale: short questions are calmer, long questions stay readable.
- // Keep the same adaptive size for the ABC options on stage, host and remote.
- const questionChars=[...question.trim()].length;
- const reduction=Math.min(1.90,Math.max(0,questionChars-55)*0.0057);
- const questionStyle='--q-reduce:'+reduction.toFixed(3)+'vw;--q-reduce-preview:'+(reduction*0.55).toFixed(3)+'vw;--q-reduce-mobile:'+(reduction*0.85).toFixed(3)+'vw';
+ // Every question has a fixed font size for its screen, regardless of character count.
+ // The CSS also keeps ABC options at that same size.
  const choices=(slide.choices||[]).map(t=>{
   const isCorrect=!!slide.revealed&&!!slide.correct&&
    (String(t).startsWith(slide.correct+")")||String(t)===slide.correct);
@@ -585,7 +582,7 @@ function renderSharedSlide(root,slide,options={}){
  }).join("");
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong></div>'+
-  '<div class="screen-body" style="'+questionStyle+'"><div class="screen-title question-adaptive">'+esc(question)+'</div>'+
+  '<div class="screen-body"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
