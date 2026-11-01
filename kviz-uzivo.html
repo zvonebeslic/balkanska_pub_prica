@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
 <meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=5">
+<link rel="stylesheet" href="kviz-uzivo.css?v=7">
 </head>
 <body>
 <div id="editorApp">
@@ -73,27 +73,21 @@
     </nav>
     <div class="host-extras">
       <button id="scoresBtn" type="button">🏆 Prikaži ljestvicu</button>
-      <span class="host-count" id="hostCounter">1 / 70</span>
-      <details class="tools-panel"><summary>⏱ Timer i bodovi ekipa</summary>
-        <div class="tools-grid">
-          <div>
-            <div class="controls">
-              <label>Timer (sekunde)<select id="timerSeconds"><option value="30">30</option><option value="60" selected>60</option><option value="90">90</option><option value="120">120</option><option value="180">180</option></select></label>
-              <button id="timerStart" type="button">▶ Pokreni</button>
-              <button id="timerStop" type="button">■ Zaustavi</button>
-              <span class="clock" id="editorClock">01:00</span>
-            </div>
-          </div>
-          <div>
-            <h3>Bodovi ekipa</h3>
-            <div class="teams"><input id="teamName" type="text" placeholder="Ime nove ekipe"><button id="addTeam" type="button">+ Dodaj</button></div>
-            <div id="teamScores"></div>
-            <button id="resetScores" type="button" class="danger">Poništi sve bodove</button>
-          </div>
-        </div>
-      </details>
+      <span class="host-count" id="hostCounter">Slajd 1</span>
     </div>
-    <p class="host-hint">Na projektoru nema kontrola. Ovdje klikni „Prikaži odgovor” da se odgovor pojavi i publici. Novim klikom ga sakrij.</p>
+    <section class="score-editor" aria-label="Unos bodova i ljestvica">
+      <div class="score-editor-head">
+        <div><span class="eyebrow">BODOVI EKIPA</span><h2>Ljestvica po krugovima</h2></div>
+        <div class="teams"><input id="teamName" type="text" placeholder="Naziv ekipe" maxlength="60"><button id="addTeam" type="button" class="success">+ Dodaj ekipu</button></div>
+      </div>
+      <p class="muted tiny">Unesi osvojene bodove za svaki krug. Ljestvica se automatski prikazuje nakon svakog kruga, a promjene su odmah vidljive i publici.</p>
+      <div id="roundScores" class="round-scores"></div>
+      <details class="tools-panel" id="detailsScores"><summary>Detaljno bodovanje pojedinačnih pitanja (neobavezno)</summary>
+        <div id="teamScores"></div>
+      </details>
+      <button id="resetScores" type="button" class="danger">Poništi sve bodove</button>
+    </section>
+    <p class="host-hint">Na projektoru nema kontrola. Prvo ide dobrodošlica, zatim najave krugova i rubrika. Odgovor se otkriva samo na slajdu pitanja; na kraju svakog kruga dolazi ljestvica.</p>
   </section>
 
   <section id="remoteScreen" class="remote-screen" hidden>
@@ -145,11 +139,10 @@
 <div id="stageApp" hidden>
   <div class="stage-badge"><img src="kviz-uzivo-logo.webp" width="112" height="105" alt="KvizToGo"></div>
   <div class="stage-screen" id="stageCanvas"></div>
-  <div class="stage-clock-wrap"><span class="clock" id="stageClock"></span></div>
-</div>
+  </div>
 <div id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
 <script src="kviz-uzivo-sync.js?v=1" defer></script>
-<script src="kviz-uzivo.js?v=6" defer></script>
+<script src="kviz-uzivo.js?v=7" defer></script>
 </body>
 </html>
