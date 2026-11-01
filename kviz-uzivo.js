@@ -610,10 +610,18 @@ function renderSharedSlide(root,slide,options={}){
  // Each short underline represents one letter; spaces between groups are words.
  const lyricLengths=slide.sectionCode==="stihovi"&&Array.isArray(slide.lyricWordLengths)?
   slide.lyricWordLengths.filter(n=>Number.isInteger(n)&&n>0&&n<=120):[];
+ // The correct letters arrive only when the presenter reveals the answer.
+ // Derive them from the existing revealed answer so no lyrics leak early.
+ const lyricLetters=slide.sectionCode==="stihovi"&&slide.revealed?
+  String(slide.answer||"").trim().split(/\\s+/u)
+   .map(word=>word.match(/[\\p{L}\\p{N}]/gu)||[]).filter(word=>word.length>0):[];
  const lyricBlanks=slide.sectionCode!=="stihovi"?"":lyricLengths.length?
-  '<div class="lyric-blanks" role="img" aria-label="'+lyricLengths.length+' riječi: '+lyricLengths.join(", ")+' slova">'+
-   lyricLengths.map(length=>'<span class="lyric-word" aria-hidden="true">'+
-    '<span class="lyric-letter"></span>'.repeat(length)+'</span>').join("")+'</div>':
+  '<div class="lyric-blanks'+(slide.revealed?' lyric-blanks-revealed':'')+'" role="img" aria-label="'+
+   (slide.revealed&&lyricLetters.length?esc(slide.answer):lyricLengths.length+' riječi: '+lyricLengths.join(", ")+' slova')+'">'+
+   lyricLengths.map((length,wordIndex)=>'<span class="lyric-word" aria-hidden="true">'+
+    Array.from({length},(_,letterIndex)=>'<span class="lyric-letter">'+
+     (slide.revealed?esc(lyricLetters[wordIndex]?.[letterIndex]||""):"")+'</span>').join("")+
+    '</span>').join("")+'</div>':
   '<div class="lyric-blanks-missing">Za prikaz crtica prvo upiši odgovor u uređivaču.</div>';
  // Every question has a fixed font size for its screen, regardless of character count.
  // The CSS also keeps ABC options at that same size.
@@ -628,7 +636,7 @@ function renderSharedSlide(root,slide,options={}){
   lyricBlanks+
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
-  (slide.revealed?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
+  (slide.revealed&&slide.sectionCode!=="stihovi"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
   '</div>');
  if(options.localMedia){
   const current=currentSlide(),q=current.kind==="question"?itemAt(current.r,current.s,current.i):null;
