@@ -536,7 +536,7 @@ function renderSharedSlide(root,slide,options={}){
  }
  if(type==="section"){
   root.innerHTML=inner("slide--section",
-   '<div class="slide-center"><div class="slide-kicker">'+esc(slide.roundName||"")+' · NOVA RUBRIKA</div>'+
+   '<div class="slide-center">'+
    '<div class="slide-hero rubric-hero">'+esc(slide.sectionTitle||"Rubrika")+'</div>'+
    '<div class="rubric-description">'+esc(slide.description||"")+'</div>'+
    (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':"")+'</div>');
