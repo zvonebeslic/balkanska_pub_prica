@@ -561,6 +561,10 @@ function renderSharedSlide(root,slide,options={}){
    slide.sectionCode==="slovo"?
    '<div class="rubric-examples" aria-label="Primjer odgovora na slovo P">'+
     '<div class="rubric-example-group">(<span class="ktg-gold" style="color:#bd9c63">P</span>ortugal, <span class="ktg-gold" style="color:#bd9c63">P</span>ortret, <span class="ktg-gold" style="color:#bd9c63">P</span>alma, <span class="ktg-gold" style="color:#bd9c63">P</span>ištolj, <span class="ktg-gold" style="color:#bd9c63">P</span>luton, <span class="ktg-gold" style="color:#bd9c63">P</span>ayPal)</div>'+
+   '</div>':
+   slide.sectionCode==="premetaljka"?
+   '<div class="rubric-examples" aria-label="Primjer premetaljke">'+
+    '<div class="rubric-example-group">(Primjer: Smol Jackie Chan - <span class="ktg-gold">Michael Jackson</span>)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
