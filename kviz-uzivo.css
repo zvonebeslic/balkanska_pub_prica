@@ -133,7 +133,7 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 .host-display .screen-answer{font-size:clamp(16px,2vw,30px)}
 .host-controls{display:grid;grid-template-columns:minmax(140px,1fr) minmax(200px,1.35fr) minmax(140px,1fr);gap:13px;max-width:1100px;margin:17px auto}
 .host-controls button{min-height:58px;font-size:clamp(15px,1.9vw,22px);border-radius:14px}
-.host-controls #revealBtn{background:#13764a;border-color:#2dcf86}
+.host-controls #firstSlideBtn{background:#234767;border-color:#4883ad}
 .host-controls #nextBtn{background:#1458bd}
 .host-extras{max-width:1100px;margin:12px auto;display:flex;align-items:center;gap:15px;flex-wrap:wrap}
 .host-count{font-weight:800;color:#9ab4d1}
@@ -168,7 +168,7 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 .stage-screen .screen-foot{font-size:clamp(12px,1vw,19px);color:#6b98b9}
 .stage-controls,.stage-top,.stage-foot{display:none!important}
 @media(max-width:850px){.editor-layout{grid-template-columns:1fr}.editor-layout .sidebar{position:static;max-height:360px}.tools-grid{grid-template-columns:1fr}}
-@media(max-width:650px){.home-intro{flex-direction:column;text-align:center;gap:10px;padding-top:0}.home-intro p{margin:12px auto 0}.home-actions{grid-template-columns:1fr;gap:10px}.home-action{min-height:82px}.top-caption small{display:none}.host-controls{grid-template-columns:1fr 1fr}.host-controls #revealBtn{grid-column:1/-1;grid-row:1}.host-controls button{min-height:50px;font-size:15px}.host-display .screen-title{font-size:clamp(15px,4.3vw,30px)}.studio-actions{width:100%}.studio-actions button{flex:1}.stage-screen{padding:88px 12px 18px}.stage-screen .screen-inner{padding:14px;gap:12px;border-width:3px}.stage-screen .screen-title{font-size:clamp(23px,5vw,35px)}.stage-screen .screen-title.long{font-size:clamp(19px,4.5vw,30px)}.stage-screen .screen-title.extra-long{font-size:clamp(16px,3.8vw,26px)}.stage-badge img{width:83px}.manager-buttons button{min-width:130px}}
+@media(max-width:650px){.home-intro{flex-direction:column;text-align:center;gap:10px;padding-top:0}.home-intro p{margin:12px auto 0}.home-actions{grid-template-columns:1fr;gap:10px}.home-action{min-height:82px}.top-caption small{display:none}.host-controls{grid-template-columns:1fr 1fr}.host-controls #firstSlideBtn{grid-column:1/-1;grid-row:1}.host-controls button{min-height:50px;font-size:15px}.host-display .screen-title{font-size:clamp(15px,4.3vw,30px)}.studio-actions{width:100%}.studio-actions button{flex:1}.stage-screen{padding:88px 12px 18px}.stage-screen .screen-inner{padding:14px;gap:12px;border-width:3px}.stage-screen .screen-title{font-size:clamp(23px,5vw,35px)}.stage-screen .screen-title.long{font-size:clamp(19px,4.5vw,30px)}.stage-screen .screen-title.extra-long{font-size:clamp(16px,3.8vw,26px)}.stage-badge img{width:83px}.manager-buttons button{min-width:130px}}
 @media(max-height:600px) and (min-width:800px){.stage-screen{padding-top:65px;padding-bottom:20px}.stage-screen .screen-title{font-size:clamp(23px,3vw,45px)}.stage-screen .screen-title.extra-long{font-size:clamp(18px,1.8vw,29px)}.stage-screen .screen-media img,.stage-screen .screen-media video{max-height:22vh}}
 
 /* Povezivanje TV-a i daljinsko upravljanje s mobitela ili laptopa */
@@ -543,32 +543,75 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 .slide--section .rubric-example-group .ktg-gold{color:#bd9c63!important}
 
 
-/* Voditeljski prikaz: tekst pitanja ne smije biti odrezan u malom 16:9 okviru.
-   Samo lokalni pregled raste s visinom sadržaja; TV i daljinski ostaju isti. */
+
+/* Veliki, ali FIKSNI voditeljski okvir: dužina pitanja ne pomiče navigaciju.
+   Duži tekst se pomiče unutar okvira, dok publika zadržava svoj zaseban prikaz. */
 .host-display .screen{
  aspect-ratio:auto;
- height:auto;
- min-height:clamp(360px,54vw,660px);
+ height:clamp(460px,66vh,720px);
+ min-height:0;
  max-height:none;
- overflow:visible;
+ overflow:hidden;
  align-items:stretch;
 }
 .host-display .screen-inner.slide-content{
- min-height:inherit;
- height:auto;
- overflow:visible;
+ min-height:0;
+ height:100%;
+ max-height:100%;
  flex:1 1 auto;
+ overflow-y:auto;
+}
+.host-display .screen-inner.slide--question{
+ justify-content:flex-start;
+ overflow:hidden;
 }
 .host-display .screen-inner.slide--question .screen-body{
- min-height:min-content;
- flex:1 0 auto;
- overflow:visible;
+ min-height:0;
+ max-height:100%;
+ flex:1 1 auto;
+ overflow-y:auto;
+ overflow-x:hidden;
+ justify-content:flex-start;
+ padding:clamp(10px,1.4vh,18px) 4px 18px;
+ scrollbar-width:thin;
+ scrollbar-color:#47749a transparent;
+}
+.host-display .screen-inner.slide--question .screen-body>*{
+ flex-shrink:0;
 }
 .host-display .screen-inner.slide--question .screen-title{
  max-width:100%;
  overflow-wrap:anywhere;
 }
+.host-controls #firstSlideBtn{
+ background:#234767;
+ border-color:#4883ad;
+}
+.host-answer-toggle{
+ max-width:1100px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:12px;
+ margin:6px auto 18px;
+ padding:12px 16px;
+ border:1px solid #355879;
+ border-radius:12px;
+ background:#10263b;
+ color:#e1edf8;
+ font-size:clamp(14px,1.3vw,18px);
+ font-weight:700;
+ cursor:pointer;
+}
+.host-answer-toggle input[type="checkbox"]{
+ width:22px;
+ height:22px;
+ min-width:22px;
+ accent-color:#29ba85;
+ cursor:pointer;
+}
 @media(max-width:650px){
- .host-display .screen{min-height:clamp(350px,85vw,520px)}
+ .host-display .screen{height:clamp(430px,67vh,590px)}
  .host-display .screen-inner.slide--question{padding:20px 16px}
+ .host-answer-toggle{justify-content:flex-start}
 }
