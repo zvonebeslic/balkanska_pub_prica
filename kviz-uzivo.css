@@ -388,3 +388,61 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 @media(max-height:600px) and (min-width:800px){
  #stageApp{--frame-top:65px;--corner-logo-width:clamp(100px,9vw,130px);--corner-logo-rise:clamp(46px,4.5vw,60px)}
 }
+
+
+/* KvizToGo · stalna prigušeno-zlatna boja otkrivenih odgovora i poveznica */
+:root{--ktg-answer-gold:#bd9c63}
+.ktg-gold{color:var(--ktg-answer-gold);font-weight:950}
+.rubric-examples{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ gap:clamp(12px,2vh,24px);
+ width:100%;
+ max-width:1440px;
+ margin-top:clamp(8px,1.6vh,22px);
+}
+.rubric-example-group{
+ width:100%;
+ text-align:center;
+ font-size:clamp(19px,1.95vw,37px);
+ line-height:1.38;
+ font-weight:700;
+ color:#edf3fb;
+ text-wrap:balance;
+ overflow-wrap:normal;
+}
+.stage-screen .rubric-example-group{font-size:clamp(21px,2.15vw,41px)}
+.host-display .rubric-example-group{font-size:clamp(13px,1.55vw,24px)}
+.remote-preview .rubric-example-group{font-size:clamp(12px,1.35vw,22px)}
+.screen-answer,
+.stage-screen .screen-answer,
+.host-display .screen-answer,
+.remote-preview .screen-answer{
+ color:var(--ktg-answer-gold);
+ background:none;
+ border:0;
+ border-radius:0;
+ outline:none;
+ box-shadow:none;
+ padding:0;
+ font-weight:950;
+ text-shadow:0 2px 14px rgba(130,95,42,.17);
+}
+/* Točni A/B/C odgovori dobivaju samo zlatna slova, bez zelenog obruba. */
+.screen-choice.correct,
+.stage-screen .screen-choice.correct,
+.host-display .screen-choice.correct,
+.remote-preview .screen-choice.correct{
+ color:var(--ktg-answer-gold);
+ border-color:#3e5a7a;
+ background:#162e49;
+}
+@media(max-width:730px){
+ .stage-screen .rubric-example-group{font-size:clamp(18px,3.5vw,29px)}
+}
+@media(max-height:650px) and (min-width:750px){
+ .stage-screen .rubric-example-group{font-size:clamp(17px,1.75vw,28px)}
+ .rubric-examples{gap:8px;margin-top:6px}
+}
