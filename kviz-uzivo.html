@@ -71,13 +71,17 @@
     </div>
     <nav class="host-controls" aria-label="Upravljanje pitanjima">
       <button id="prevBtn" type="button">← Prethodno</button>
-      <button id="revealBtn" type="button" class="success">Prikaži odgovor</button>
+      <button id="firstSlideBtn" type="button">↺ Vrati na prvo</button>
       <button id="nextBtn" type="button" class="primary">Sljedeće →</button>
     </nav>
     <div class="host-extras">
       <button id="scoresBtn" type="button">🏆 Prikaži ljestvicu</button>
       <span class="host-count" id="hostCounter">Slajd 1</span>
     </div>
+    <label class="host-answer-toggle" for="autoShowAnswers">
+      <input id="autoShowAnswers" type="checkbox">
+      <span>Prikazuj pitanja s prikazanim odgovorima</span>
+    </label>
     <section class="score-editor" aria-label="Unos bodova i ljestvica">
       <div class="score-editor-head">
         <div><span class="eyebrow">BODOVI EKIPA</span><h2>Ljestvica po krugovima</h2></div>
