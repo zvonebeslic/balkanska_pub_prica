@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
 <meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=32">
+<link rel="stylesheet" href="kviz-uzivo.css?v=33">
 </head>
 <body>
 <div id="editorApp">
@@ -92,8 +92,21 @@
         <div><span class="eyebrow">BODOVI EKIPA</span><h2>Ljestvica po krugovima</h2></div>
         <div class="teams"><input id="teamName" type="text" placeholder="Naziv ekipe" maxlength="60"><button id="addTeam" type="button" class="success">+ Dodaj ekipu</button></div>
       </div>
-      <p class="muted tiny">Unesi osvojene bodove za svaki krug. Ljestvica se automatski prikazuje nakon svakog kruga, a promjene su odmah vidljive i publici.</p>
+      <p class="muted tiny">Unesi bodove za svaki krug. Publika ne vidi izmjene dok ne klikneš na objavu ljestvice.</p>
       <div id="roundScores" class="round-scores"></div>
+      <div class="publish-controls">
+        <label for="publishRound">Ljestvica nakon kruga
+          <select id="publishRound" aria-label="Odaberi krug za objavu">
+            <option value="0">1. krug</option><option value="1">2. krug</option><option value="2">3. krug</option>
+          </select>
+        </label>
+        <div class="publish-buttons">
+          <button id="publishAllBtn" type="button" class="success">Objavi sve</button>
+          <button id="publishGradualBtn" type="button" class="primary">Objavi postupno</button>
+        </div>
+        <p id="publishStatus" class="muted tiny" aria-live="polite">Rezultati nisu objavljeni.</p>
+        <p class="muted tiny">„Objavi postupno” na prvi klik prikazuje posljednje mjesto, a svaki sljedeći klik otkriva mjesto iznad.</p>
+      </div>
       <details class="tools-panel" id="detailsScores"><summary>Detaljno bodovanje pojedinačnih pitanja (neobavezno)</summary>
         <div id="teamScores"></div>
       </details>
@@ -155,6 +168,6 @@
 <div id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
 <script src="kviz-uzivo-sync.js?v=4" defer></script>
-<script src="kviz-uzivo.js?v=51" defer></script>
+<script src="kviz-uzivo.js?v=52" defer></script>
 </body>
 </html>
