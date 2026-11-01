@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-00609-20261101",
+    "createdAt": "2026-11-01T22:44:19+01:00",
+    "updatedAt": "2026-11-01T22:44:19+01:00",
+    "topic": "Povijest",
+    "focus": "Inka sustav evidencije čvorovima quipu",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kad bi činovnik carstva Inka trebao zabilježiti količine bez papira i tinte, mogao je upotrijebiti obojene uzice s čvorovima. Kako se zvao taj sustav bilježenja?",
+    "answers": [
+      "Quipu",
+      "Khipu",
+      "Kipu"
+    ],
+    "explanation": "Quipu je sustav uzica i čvorova kojim su Inke vodile evidenciju i prenosile podatke.",
+    "sources": [
+      "https://www.si.edu/collections/snapshot/quipu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00610-20261101",
+    "createdAt": "2026-11-01T22:44:19+01:00",
+    "updatedAt": "2026-11-01T22:44:19+01:00",
+    "topic": "Kemija",
+    "focus": "Talk kao najmekši mineral Mohsove ljestvice",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Dijamant zauzima deseto mjesto na Mohsovoj ljestvici tvrdoće, a koji mineral stoji na suprotnom kraju, s vrijednošću jedan?",
+    "answers": [
+      "Talk",
+      "Talc"
+    ],
+    "explanation": "Talk je referentni mineral tvrdoće 1 na Mohsovoj ljestvici, dok dijamant ima vrijednost 10.",
+    "sources": [
+      "https://www.nps.gov/articles/mohs-hardness-scale.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
