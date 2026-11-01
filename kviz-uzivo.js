@@ -411,7 +411,7 @@ function renderScores(){
   teams.map(t=>'<tr><td>'+esc(t.name)+'</td><td><select data-team="'+esc(t.id)+'">'+allowed.map(v=>'<option value="'+v+'"'+(Number(t.scores?.[k]||0)===v?' selected':'')+'>'+fmt(v)+'</option>').join("")+'</select></td><td>'+fmt(total(t))+'</td></tr>').join("")+'</tbody></table>'+
   '<p class="muted tiny">Ako ručno upišeš bodove za krug iznad, taj unos ima prednost pred zbrojem pojedinačnih pitanja. Obriši unos za povratak na automatski zbroj.</p>';
 }
-function renderAll(){
+function renderAll(draftScoresOnly=false){
  if(!project)return;
  if(!stageMode){
   $("quizTitle").value=project.title||"";
@@ -419,7 +419,8 @@ function renderAll(){
   updateStudio();
   updatePublishControls();
  }else renderStage();
- pushStage();
+ // Unpublished score edits stay in the editor; never broadcast them to audience screens.
+ if(!draftScoresOnly)pushStage();
 }
 function renderStage(){renderScreen($("stageCanvas"),"stage");}
 function updateStudio(){
@@ -501,7 +502,7 @@ function removeMedia(){const q=itemAt(position.r,position.s,position.i);q.mediaI
 async function addTeam(){
  const name=$("teamName").value.trim();if(!name)return;
  if(project.teams.some(t=>t.name.toLowerCase()===name.toLowerCase())){toast("Ekipa s tim imenom već postoji.",true);return;}
- project.teams.push({id:uid(),name,scores:{},roundScores:{}});$("teamName").value="";scheduleSave();renderAll();
+ project.teams.push({id:uid(),name,scores:{},roundScores:{}});$("teamName").value="";scheduleSave();renderAll(true);
 }
 function validateImported(raw){
  if(!raw||!Array.isArray(raw.rounds)||raw.rounds.length!==ROUNDS.length)throw Error("Datoteka nema tri tražena kruga.");
@@ -960,7 +961,7 @@ function bindEditor(){
  $("publishGradualBtn").addEventListener("click",()=>publishBoard(publishTargetRound,"gradual"));
  $("addTeam").addEventListener("click",addTeam);
  $("teamName").addEventListener("keydown",e=>{if(e.key==="Enter")addTeam();});
- $("teamScores").addEventListener("change",e=>{const el=e.target.closest("select[data-team]");if(!el)return;const t=project.teams.find(x=>x.id===el.dataset.team);if(!t)return;t.scores[keyOf(position.r,position.s,position.i)]=Number(el.value);scheduleSave();renderAll();});
+ $("teamScores").addEventListener("change",e=>{const el=e.target.closest("select[data-team]");if(!el)return;const t=project.teams.find(x=>x.id===el.dataset.team);if(!t)return;t.scores[keyOf(position.r,position.s,position.i)]=Number(el.value);scheduleSave();renderAll(true);});
  $("roundScores").addEventListener("change",e=>{
   const input=e.target.closest("input[data-round-team]");if(!input)return;
   const team=project.teams.find(x=>x.id===input.dataset.roundTeam);
@@ -973,16 +974,16 @@ function bindEditor(){
   }
   team.roundScores=team.roundScores||{};
   if(value==="")delete team.roundScores[r];else team.roundScores[r]=Number(value);
-  scheduleSave();renderAll();
+  scheduleSave();renderAll(true);
  });
  $("roundScores").addEventListener("click",e=>{
   const btn=e.target.closest("button[data-remove-team]");if(!btn)return;
   const t=project.teams.find(x=>x.id===btn.dataset.removeTeam);
   if(!t||!confirm("Ukloniti ekipu "+t.name+"?"))return;
   project.teams=project.teams.filter(x=>x.id!==t.id);
-  scheduleSave();renderAll();
+  scheduleSave();renderAll(true);
  });
- $("resetScores").addEventListener("click",()=>{if(!confirm("Poništiti sve bodove svih ekipa?"))return;project.teams.forEach(t=>{t.scores={};t.roundScores={};});scheduleSave();renderAll();});
+ $("resetScores").addEventListener("click",()=>{if(!confirm("Poništiti sve bodove svih ekipa?"))return;project.teams.forEach(t=>{t.scores={};t.roundScores={};});scheduleSave();renderAll(true);});
  document.addEventListener("keydown",e=>{
   if(currentView!=="host"||e.target.closest("input,textarea,select,button"))return;
   if(e.key==="ArrowRight"){e.preventDefault();changePosition(1);}
