@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-00509-20261101",
+    "createdAt": "2026-11-01T08:39:00+01:00",
+    "updatedAt": "2026-11-01T08:39:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranovi mjeseci imenovani po likovima Shakespearea i Alexandera Popea",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Miranda i Titanija nisu samo književna imena: dva su prirodna satelita planeta čiji mjeseci nose imena likova iz Shakespeareovih i Popeovih djela. Kojeg planeta?",
+    "answers": [
+      "Uran",
+      "Uranus",
+      "Urana"
+    ],
+    "explanation": "Za razliku od većine planetarnih mjeseca, Uranovi sateliti dobili su imena po likovima iz djela Williama Shakespearea i Alexandera Popea.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
