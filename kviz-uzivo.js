@@ -469,7 +469,9 @@ function sharedSlide(){
  };
  if(slide.kind==="round")return {
   ...base,roundName:ROUNDS[slide.r].name,
-  maxPoints:roundMax(slide.r),sectionsCount:ROUNDS[slide.r].sections.length
+  maxPoints:roundMax(slide.r),
+  questionCount:ROUNDS[slide.r].sections.reduce((total,section)=>total+section.count,0),
+  sectionsCount:ROUNDS[slide.r].sections.length
  };
  const section=ROUNDS[slide.r].sections[slide.s];
  if(slide.kind==="section")return {
@@ -533,6 +535,7 @@ function renderSharedSlide(root,slide,options={}){
   root.innerHTML=inner("slide--round",
    '<div class="slide-center">'+
    '<div class="slide-hero">'+esc(slide.roundName||"KRUG")+'</div>'+
+   (Number.isInteger(slide.questionCount)?'<div class="rubric-question-count">('+slide.questionCount+' pitanja)</div>':'')+
    '<div class="slide-subtitle">Maksimalno '+textNumber(slide.maxPoints)+' bodova</div>'+
    '<div class="slide-rule-meta">'+esc(slide.sectionsCount||"")+' rubrika</div></div>');
   return;
