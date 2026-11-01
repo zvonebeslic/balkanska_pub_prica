@@ -44,7 +44,7 @@ const SLIDES=[
 const SECTION_EXAMPLES={
  povezano:"Primjer: odgovore mogu povezivati ista boja, zanimanje ili skriveni zajednički pojam.",
  kaladont:"", // Rich Kaladont example is rendered directly, never in the old boxed format.
- slovo:"Primjer: ako je zadano slovo M, svi točni odgovori počinju slovom M.",
+ slovo:"", // Rich all-on-P example is rendered using the same unboxed rubric style.
  abecedalica:"Primjer slijeda: A, B, C... Svaki sljedeći odgovor dolazi abecedno iza prethodnog.",
  gameset:"U svakoj seriji tri pitanja donose redom 0,5, 1 i 2 boda."
 };
@@ -545,6 +545,10 @@ function renderSharedSlide(root,slide,options={}){
    kaladontSlide?
    '<div class="rubric-examples" aria-label="Povezana posljednja i prva dva slova">'+
     '<div class="rubric-example-group">(Trok<span class="ktg-gold" style="color:#bd9c63">ut</span> - <span class="ktg-gold" style="color:#bd9c63">Ut</span>akmi<span class="ktg-gold" style="color:#bd9c63">ca</span> - <span class="ktg-gold" style="color:#bd9c63">Ca</span>nber<span class="ktg-gold" style="color:#bd9c63">ra</span> - <span class="ktg-gold" style="color:#bd9c63">Ra</span>zlom<span class="ktg-gold" style="color:#bd9c63">ak</span> - <span class="ktg-gold" style="color:#bd9c63">Ak</span>ropola)</div>'+
+   '</div>':
+   slide.sectionCode==="slovo"?
+   '<div class="rubric-examples" aria-label="Primjer odgovora na slovo P">'+
+    '<div class="rubric-example-group">(<span class="ktg-gold" style="color:#bd9c63">P</span>ortugal, <span class="ktg-gold" style="color:#bd9c63">P</span>ortret, <span class="ktg-gold" style="color:#bd9c63">P</span>alma, <span class="ktg-gold" style="color:#bd9c63">P</span>ištolj, <span class="ktg-gold" style="color:#bd9c63">P</span>luton, <span class="ktg-gold" style="color:#bd9c63">P</span>ayPal)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
