@@ -38,6 +38,7 @@ const SLIDES=[
    {kind:"section",r,s:si},
    ...Array.from({length:section.count},(_,i)=>({kind:"question",r,s:si,i}))
   ]),
+  ...(r===ROUNDS.length-1?[{kind:"thanks",r}]:[]),
   {kind:"score",r}
  ])
 ];
@@ -360,6 +361,7 @@ function updateStudio(){
   slide.kind==="round"?ROUNDS[slide.r].name+" · početak kruga":
   slide.kind==="section"?ROUNDS[slide.r].name+" · "+ROUNDS[slide.r].sections[slide.s].name+" · najava rubrike":
   slide.kind==="score"?ROUNDS[slide.r].name+" · ljestvica":
+  slide.kind==="thanks"?"Završetak · Hvala vam na igri":
   ROUNDS[slide.r].name+" · "+ROUNDS[slide.r].sections[slide.s].name+
    (ROUNDS[slide.r].sections[slide.s].code==="gameset"?" · "+(Math.floor(slide.i/3)+1)+". serija, "+(slide.i%3+1)+". pitanje":"");
  $("homeQuizTitle").textContent=project.title||"Bez naziva";
@@ -503,6 +505,9 @@ function sharedSlide(){
   questionCount:ROUNDS[slide.r].sections.reduce((total,section)=>total+section.count,0),
   sectionsCount:ROUNDS[slide.r].sections.length
  };
+ if(slide.kind==="thanks")return {
+  ...base,title:"Hvala vam na igri!",website:"KvizToGo.com"
+ };
  const section=ROUNDS[slide.r].sections[slide.s];
  if(slide.kind==="section")return {
   ...base,roundName:ROUNDS[slide.r].name,sectionTitle:rubricDisplayName(section.name),
@@ -564,6 +569,14 @@ function renderSharedSlide(root,slide,options={}){
    '<div class="welcome-summary">3 kruga · maksimalno '+textNumber(slide.maxPoints)+' bodova</div>'+
    '<ul class="welcome-rules">'+rules+'</ul>'+
    '<div class="slide-goodluck">'+esc(slide.ending||"Sretno svima!")+'</div></div>');
+  return;
+ }
+ if(type==="thanks"){
+  root.innerHTML=inner("slide--thanks",
+   '<div class="slide-center">'+
+   '<div class="slide-hero thanks-hero">'+esc(slide.title||"Hvala vam na igri!")+'</div>'+
+   '<div class="thanks-website">'+esc(slide.website||"KvizToGo.com")+'</div>'+
+   '</div>');
   return;
  }
  if(type==="round"){
