@@ -565,6 +565,11 @@ function renderSharedSlide(root,slide,options={}){
    slide.sectionCode==="premetaljka"?
    '<div class="rubric-examples" aria-label="Primjer premetaljke">'+
     '<div class="rubric-example-group">(Primjer: Ten Elite Brains - <span class="ktg-gold">Albert Einstein</span>)</div>'+
+   '</div>':
+   slide.sectionCode==="asocijacija"?
+   '<div class="rubric-examples rubric-association-examples" aria-label="Dva primjera asocijacija">'+
+    '<div class="rubric-example-group">(Primjer: Smiljan, izmjenična struja, zavojnica, golubovi = <span class="ktg-gold">Nikola Tesla</span>)</div>'+
+    '<div class="rubric-example-group">(Primjer 2: pijesak, vrijeme, staklene komore, preokretanje = <span class="ktg-gold">pješčani sat</span>)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
@@ -574,6 +579,7 @@ function renderSharedSlide(root,slide,options={}){
    '<div class="rubric-description">'+esc(slide.description||"")+'</div>'+
    (slide.sectionCode==="pjevaj"?'<div class="rubric-song-note">(1a. Ime pjesme / 1b. Ime izvođača)</div>':"")+
    (slide.sectionCode==="abc"?'<div class="rubric-instruction">Zaokruži slovo na pitanju za odgovor koji misliš da je točan.</div>':"")+
+   (slide.sectionCode==="asocijacija"?'<div class="rubric-association-note">Konačno rješenje može biti bilo što.</div>':"")+
    (specialExamples|| (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':""))+'</div>');
   return;
  }
