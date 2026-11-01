@@ -672,3 +672,25 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 @media(max-width:730px){
  .stage-screen .rubric-song-note{font-size:clamp(16px,3.4vw,26px)}
 }
+
+/* Examples on the Asocijacija introduction slide, in all display modes. */
+.rubric-association-note{
+ color:#d8e8ff;
+ font-weight:800;
+ font-size:clamp(18px,1.9vw,34px);
+ line-height:1.25;
+ text-align:center;
+}
+.rubric-association-examples{gap:clamp(8px,1.2vh,16px);margin-top:clamp(4px,.8vh,12px)}
+.rubric-association-examples .rubric-example-group{
+ font-size:clamp(18px,1.65vw,32px);
+ line-height:1.3;
+}
+.host-display .rubric-association-note{font-size:clamp(14px,1.4vw,23px)}
+.host-display .rubric-association-examples .rubric-example-group{font-size:clamp(13px,1.2vw,20px)}
+.remote-preview .rubric-association-note{font-size:clamp(13px,1.2vw,20px)}
+.remote-preview .rubric-association-examples .rubric-example-group{font-size:clamp(12px,1.1vw,18px)}
+@media(max-width:730px){
+ .stage-screen .rubric-association-note{font-size:clamp(17px,3.5vw,27px)}
+ .stage-screen .rubric-association-examples .rubric-example-group{font-size:clamp(16px,3.2vw,25px)}
+}
