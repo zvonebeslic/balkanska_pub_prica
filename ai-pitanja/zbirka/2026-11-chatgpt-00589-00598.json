@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-00589-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Jezik",
+    "focus": "Znak & nastao spajanjem slova et",
+    "difficulty": 2,
+    "styleId": 74,
+    "styleDescription": "Kreni od znaka u tipografiji i pitaj kako se zove",
+    "question": "U tipografiji znak & nije nastao kao crtež sidra ili osmice, nego spajanjem dvaju slova latinske riječi za 'i'. Kako se taj znak naziva?",
+    "answers": [
+      "Ampersand",
+      "Et znak"
+    ],
+    "explanation": "Naziv ampersand odnosi se na znak &; oblik se razvio iz ligature latinskog et.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ampersand"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00590-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Biologija",
+    "focus": "Lišaj kao simbioza gljive i fotosintetskog partnera",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Na kamenju i kori stabala raste organizam koji zapravo udružuje gljivu s algom ili cijanobakterijom. Kojim ga zajedničkim nazivom poznajemo?",
+    "answers": [
+      "Lišaj",
+      "Lišajevi"
+    ],
+    "explanation": "Lišajevi su simbiotske zajednice gljive i fotosintetskog partnera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lichen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00591-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Glazba",
+    "focus": "Teremin bez dodirivanja instrumenta",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Glazbenik pomiče ruke oko dviju antena, a ton i glasnoća mijenjaju se bez dodirivanja instrumenta. Koje je to elektroničko glazbalo?",
+    "answers": [
+      "Teremin",
+      "Theremin"
+    ],
+    "explanation": "Teremin se svira promjenom položaja ruku u elektromagnetskim poljima antena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Theremin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00592-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Fizika",
+    "focus": "Foucaultovo njihalo dokazuje rotaciju Zemlje",
+    "difficulty": 3,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "U pariškom Panthéonu 1851. dugo je njihalo pokazivalo prividno okretanje ravnine njihanja. Koju je kretnju našeg planeta taj pokus učinio vidljivom?",
+    "answers": [
+      "Rotacija Zemlje",
+      "Zemljina rotacija",
+      "Okretanje Zemlje oko osi"
+    ],
+    "explanation": "Foucaultovo njihalo pokazuje Zemljinu rotaciju kroz promjenu ravnine njihanja u odnosu na tlo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Foucault_pendulum"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00593-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Gastronomija",
+    "focus": "Kimchi fermentirano korejsko povrće",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kupus ili rotkvica začinjeni čilijem i drugim dodacima fermentiraju se u jelo koje se u Koreji poslužuje gotovo uz svaki obrok. Kako se zove?",
+    "answers": [
+      "Kimchi",
+      "Kimči"
+    ],
+    "explanation": "Kimchi je korejsko fermentirano povrće, često od kineskog kupusa ili rotkvice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00594-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Matematika",
+    "focus": "Brajistokrona najbrži spust krivuljom",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Kuglica koja se pod gravitacijom spušta između dviju točaka ne stiže najbrže po ravnoj kosini, nego po posebnoj krivulji. Kako se zove krivulja najbržeg spusta?",
+    "answers": [
+      "Brahistokrona",
+      "Brachistochrone",
+      "Brajistokrona"
+    ],
+    "explanation": "Brahistokrona je krivulja najkraćeg vremena spuštanja u idealiziranom gravitacijskom polju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Brachistochrone_curve"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00595-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto potpuno okružen Južnom Afrikom",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Jedna afrička kraljevina nema izlaz na more, a do bilo koje druge države mora se proći kroz Južnoafričku Republiku. Koja je to kraljevina?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je enklavirana država u potpunosti okružena Južnoafričkom Republikom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00596-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod razvijen u tvrtki Denso Wave",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Japanska tvrtka Denso Wave razvila je 1994. dvodimenzionalni kod koji danas skeniramo kamerom za jelovnike i poveznice. Koja se dva slova nalaze u njegovu nazivu?",
+    "answers": [
+      "QR"
+    ],
+    "explanation": "QR je kratica od Quick Response; kod je razvijen 1994. u Denso Waveu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00597-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Povijest",
+    "focus": "Mansa Musa hodočašće u Meku",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Vladar Malijskog Carstva iz 14. stoljeća na putu prema Meki proslavio se raskošnom pratnjom i dijeljenjem zlata. Kako se zvao?",
+    "answers": [
+      "Mansa Musa",
+      "Musa I.",
+      "Musa I"
+    ],
+    "explanation": "Mansa Musa bio je vladar Malijskog Carstva poznat po hodočašću u Meku 1324.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mansa_Musa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00598-20261101",
+    "createdAt": "2026-11-01T20:43:57+01:00",
+    "updatedAt": "2026-11-01T20:43:57+01:00",
+    "topic": "Psihologija",
+    "focus": "Stroopov učinak boje riječi",
+    "difficulty": 4,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Kad riječ 'PLAVO' napišemo crvenom bojom, teže je brzo izgovoriti boju tinte nego pročitati samu riječ. Po kojem se psihologu naziva taj učinak?",
+    "answers": [
+      "Stroop",
+      "John Ridley Stroop",
+      "Stroopov"
+    ],
+    "explanation": "Stroopov učinak pokazuje interferenciju automatskog čitanja pri imenovanju boje ispisa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stroop_effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
