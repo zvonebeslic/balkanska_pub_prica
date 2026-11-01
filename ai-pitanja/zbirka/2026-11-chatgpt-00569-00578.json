@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-00569-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Povijest",
+    "focus": "Tri pisma na kamenu iz Rosette",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Na kamenu pronađenom 1799. isti je dekret zapisan hijeroglifima, demotskim pismom i još jednim pismom koje je olakšalo dešifriranje. Kojim?",
+    "answers": [
+      "Grčkim",
+      "Starogrčkim",
+      "Grčko pismo"
+    ],
+    "explanation": "Poznavanje starogrčkoga omogućilo je usporedbu triju zapisa.",
+    "sources": [
+      "https://www.britishmuseum.org/sites/default/files/2020-03/10010%20Hamlyn%206%2B%20Ancient%20Egypt%20PDF.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00570-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Životinje",
+    "focus": "Aksolotlovo zadržavanje ličinačkih obilježja",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Meksički aksolotl može se razmnožavati iako cijeli život zadržava vanjske škrge i druga obilježja ličinke. Kako se naziva ta pojava?",
+    "answers": [
+      "Neotenija",
+      "Neoteny"
+    ],
+    "explanation": "Neotenija je spolna zrelost uz zadržavanje mladenačkih obilježja.",
+    "sources": [
+      "https://www.mnhn.fr/fr/axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00571-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Glazba",
+    "focus": "Bandoneon kao instrument tanga",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "U tangu se čuje glazbalo s mijehom i tipkama, posebno vezano uz glazbu područja Río de la Plate. Kako se zove?",
+    "answers": [
+      "Bandoneon",
+      "Bandoneón"
+    ],
+    "explanation": "UNESCO ističe bandoneon kao prepoznatljivo glazbalo tanga.",
+    "sources": [
+      "https://ich.unesco.org/en/assistances/the-bandoneon-sound-of-tango-01634"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00572-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Zemljopis",
+    "focus": "Nacionalni park s gejzirom Old Faithful",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Gejzir Old Faithful ime je dobio zbog relativno predvidljivih erupcija. U kojem se američkom nacionalnom parku nalazi?",
+    "answers": [
+      "Yellowstone",
+      "Yellowstone nacionalni park",
+      "Nacionalni park Yellowstone"
+    ],
+    "explanation": "Old Faithful jedan je od najpoznatijih gejzira Yellowstonea.",
+    "sources": [
+      "https://www.nps.gov/articles/old-faithful-geyser.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00573-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Sport",
+    "focus": "Prvi moderni olimpijski pobjednik",
+    "difficulty": 4,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Prvog dana Igara u Ateni 1896. Amerikanac James Connolly osvojio je prvo zlato modernih Olimpijskih igara. U kojoj atletskoj disciplini?",
+    "answers": [
+      "Troskok",
+      "Triple jump"
+    ],
+    "explanation": "Connolly je pobijedio u troskoku 6. travnja 1896.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-1896-the-revival-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00574-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Biologija",
+    "focus": "Regeneracija aksolotla",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Ovaj meksički vodozemac može obnoviti udove, dijelove srca pa čak i kralježničnu moždinu. Kako se zove?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl",
+      "Ambystoma mexicanum"
+    ],
+    "explanation": "Aksolotl je važan model u istraživanju regeneracije tkiva.",
+    "sources": [
+      "https://www.mbl.edu/research/research-organisms/axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00575-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Ples",
+    "focus": "Dvije države zajednički upisale tango u UNESCO",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Argentina je 2009. s još jednom državom zajednički upisala tango na UNESCO-ov popis nematerijalne baštine. Kojom?",
+    "answers": [
+      "Urugvaj",
+      "Uruguay"
+    ],
+    "explanation": "Tango se razvio u gradskim sredinama Buenos Airesa i Montevidea.",
+    "sources": [
+      "https://ich.unesco.org/en/rl/tango-00258"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00576-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Priroda",
+    "focus": "Gejzir koji je dobio ime 1870.",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Članovi ekspedicije Washburn 1870. nazvali su jedan gejzir zbog njegova pouzdanog ritma erupcija. Koji je to gejzir?",
+    "answers": [
+      "Old Faithful"
+    ],
+    "explanation": "Naziv Old Faithful odnosi se na redovitost erupcija, iako razmaci variraju.",
+    "sources": [
+      "https://www.nps.gov/articles/old-faithful-geyser.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00577-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Medicina",
+    "focus": "Aksolotlova regeneracija bez ožiljaka",
+    "difficulty": 5,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Znanstvenici proučavaju meksičkog vodozemca čiji obnovljeni udovi mogu izrasti bez trajnih ožiljaka. Koja je životinja njihov model?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl"
+    ],
+    "explanation": "Aksolotl regenerira više dijelova tijela bez tipičnog ožiljkavanja.",
+    "sources": [
+      "https://www.mbl.edu/research/research-organisms/axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00578-20261101",
+    "createdAt": "2026-11-01T18:43:49+01:00",
+    "updatedAt": "2026-11-01T18:43:49+01:00",
+    "topic": "Religije i mitologije",
+    "focus": "Božanstvo kojem su posvećene antičke Olimpijske igre",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Antičke Olimpijske igre u Olimpiji bile su dio vjerske svetkovine posvećene kojem vrhovnom grčkom bogu?",
+    "answers": [
+      "Zeus",
+      "Zevs"
+    ],
+    "explanation": "Igre su bile povezane sa svetištem Zeusa u Olimpiji.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-1896-the-revival-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
