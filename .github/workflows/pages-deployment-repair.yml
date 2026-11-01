@@ -45,9 +45,12 @@ jobs:
               sys.exit(1)
           print("Recent deployments:",[(x["id"],x["sha"][:12],x.get("environment")) for x in deployments[:12]])
           matches=[x for x in deployments if x.get("sha")==blocked and x.get("environment")=="github-pages"]
-          if len(matches)!=1:
-              print("Expected exactly one deployment for blocked SHA; matches:",len(matches),". No changes made.")
-              sys.exit(1)
+          print("Matches for blocked sha:",[(x["id"],x.get("created_at")) for x in matches])
+          for item in matches:
+              code,states=call("GET",f"/deployments/{item['id']}/statuses?per_page=8")
+              print("Deployment",item["id"],"states:",[(x.get("state"),x.get("created_at")) for x in (states or [])] if isinstance(states,list) else code)
+          print("Diagnostic only. No records changed.")
+          sys.exit(0)
           deployment_id=matches[0]["id"]
           code,states=call("GET",f"/deployments/{deployment_id}/statuses?per_page=5")
           print("Blocked deployment ID:",deployment_id,"Latest status:",(states or [{}])[0].get("state") if isinstance(states,list) else None)
