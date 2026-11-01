@@ -85,7 +85,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const uid=()=>typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():"ktg-"+Date.now()+"-"+Math.random().toString(36).slice(2);
 const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
-let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false;
+let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false,publishTargetRound=0;
 let channel=null,saveTimer=null,toastTimer=null,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
@@ -167,6 +167,64 @@ function leaderboardRows(through=2){
  return sortedTeams(through).map(t=>({
   name:t.name,rounds:[0,1,2].map(r=>r<=through?roundScore(t,r):null),score:total(t,through)
  }));
+}
+// Results for the audience are frozen at publication time. Draft edits never update a published board.
+function publishedBoard(r){
+ const board=project?.publishedBoards?.[r];
+ return board&&Array.isArray(board.rows)?board:null;
+}
+function publicBoard(r){
+ const board=publishedBoard(r);
+ if(!board)return {board:[],boardPending:true,boardHiddenCount:0,boardTotal:0};
+ const all=board.rows,shown=board.mode==="gradual"?
+  Math.min(all.length,Math.max(0,Number(board.revealedCount)||0)):all.length;
+ return {
+  board:all.slice(all.length-shown).map((row,i)=>({
+   name:row.name,rounds:row.rounds,score:row.score,rank:all.length-shown+i+1
+  })),
+  boardPending:false,boardHiddenCount:all.length-shown,boardTotal:all.length
+ };
+}
+function publishBoard(r,mode){
+ if(!project||!Number.isInteger(r)||r<0||r>=ROUNDS.length)return;
+ const teams=project.teams||[];
+ if(!teams.length){toast("Prvo dodaj barem jednu ekipu.",true);return;}
+ const existing=publishedBoard(r);
+ if(mode==="gradual"&&existing?.mode==="gradual"&&existing.revealedCount<existing.rows.length){
+  existing.revealedCount+=1;
+ }else{
+  // Start a fresh snapshot only on a new publication; never reorder mid-reveal.
+  project.publishedBoards=project.publishedBoards||{};
+  project.publishedBoards[r]={
+   mode,rows:leaderboardRows(r),revealedCount:mode==="gradual"?1:teams.length
+  };
+ }
+ publishTargetRound=r;
+ scheduleSave();
+ const scoreIndex=SLIDES.findIndex(slide=>slide.kind==="score"&&slide.r===r);
+ if(scoreIndex>=0&&slideIndex!==scoreIndex)setSlideIndex(scoreIndex);
+ else {showBoard=false;renderAll();}
+ const state=publishedBoard(r);
+ toast(mode==="all"?"Objavljena je cijela ljestvica za "+(r+1)+". krug.":
+  "Otkriveno "+state.revealedCount+" / "+state.rows.length+" ekipa, od posljednjeg mjesta.");
+}
+function updatePublishControls(){
+ if(stageMode||!project)return;
+ const selector=$("publishRound"),status=$("publishStatus"),all=$("publishAllBtn"),step=$("publishGradualBtn");
+ if(!selector||!status||!all||!step)return;
+ selector.value=String(publishTargetRound);
+ const board=publishedBoard(publishTargetRound),n=project.teams?.length||0;
+ all.disabled=step.disabled=!n;
+ if(!board){
+  status.textContent="Nije objavljeno. Publika ne vidi upisane bodove.";
+ }else if(board.mode==="gradual"){
+  status.textContent="Postupno objavljeno: "+board.revealedCount+" / "+board.rows.length+
+   " ekipa, od posljednjeg mjesta. Novi upisi neće se prikazati prije nove objave.";
+ }else{
+  status.textContent="Objavljeno: "+board.rows.length+" ekipa. Naknadne izmjene neće se prikazati prije ponovne objave.";
+ }
+ step.textContent=board?.mode==="gradual"&&board.revealedCount<board.rows.length?
+  "Objavi sljedeće mjesto ↑":"Objavi postupno";
 }
 function ensureChannel(){
  if(!("BroadcastChannel" in window)||!project)return;
@@ -359,6 +417,7 @@ function renderAll(){
   $("quizTitle").value=project.title||"";
   renderNav();renderEditor();renderScores();renderScreen($("previewPane"),"preview");
   updateStudio();
+  updatePublishControls();
  }else renderStage();
  pushStage();
 }
@@ -407,6 +466,7 @@ function setSlideIndex(next){
  }
  slideIndex=next;
  const slide=currentSlide();
+ if(Number.isInteger(slide.r))publishTargetRound=slide.r;
  if(slide.kind==="question")position={r:slide.r,s:slide.s,i:slide.i};
  else if(slide.kind==="section")position={r:slide.r,s:slide.s,i:0};
  else if(slide.kind==="round")position={r:slide.r,s:0,i:0};
@@ -501,7 +561,7 @@ function sharedSlide(){
   const r=slide.r??0;
   return {...base,slideType:"score",roundIndex:r,
    scoreTitle:"Ljestvica nakon "+(r+1)+". kruga",
-   board:leaderboardRows(r)};
+   ...publicBoard(r)};
  }
  if(slide.kind==="welcome")return {
   ...base,title:"Dobrodošli!",subtitle:"Kviz općeg znanja vol. 1",
@@ -656,16 +716,21 @@ function renderSharedSlide(root,slide,options={}){
  }
  if(type==="score"){
   const heads='<thead><tr><th>Ekipa</th><th>1. krug</th><th>2. krug</th><th>3. krug</th><th>Ukupno</th></tr></thead>';
+  const hiddenCount=Math.max(0,Math.floor(Number(slide.boardHiddenCount)||0));
+  const placeholders=Array.from({length:hiddenCount},(_,i)=>
+   '<tr class="board-concealed"><th scope="row">'+(i+1)+'. ???</th><td colspan="4">Čeka se otkrivanje</td></tr>').join("");
   const rows=(slide.board||[]).map((t,i)=>
-   '<tr><th scope="row">'+(i+1)+'. '+esc(t.name)+'</th>'+
+   '<tr><th scope="row">'+esc(t.rank||hiddenCount+i+1)+'. '+esc(t.name)+'</th>'+
    (t.rounds||[]).map(v=>'<td>'+(v===null||v===undefined?'—':textNumber(v))+'</td>').join("")+
    '<td class="stage-total">'+textNumber(t.score)+'</td></tr>').join("");
+  const pending=!!slide.boardPending;
   root.innerHTML=inner("slide--score",
    '<div class="slide-kicker">REZULTATI · '+esc(slide.quizTitle||"KvizToGo")+'</div>'+
    '<div class="score-heading">🏆 '+esc(slide.scoreTitle||"Ljestvica")+'</div>'+
-   '<div class="stage-leaderboard-wrap"><table class="stage-leaderboard">'+heads+'<tbody>'+
-   (rows||'<tr><td colspan="5" class="empty-board">Bodovi ekipa još nisu upisani.</td></tr>')+
-   '</tbody></table></div>');
+   (pending?'<div class="board-pending">Čekamo objavu rezultata…</div>':
+    '<div class="stage-leaderboard-wrap"><table class="stage-leaderboard">'+heads+'<tbody>'+
+    (placeholders+rows||'<tr><td colspan="5" class="empty-board">Nema ekipa za prikaz.</td></tr>')+
+    '</tbody></table></div>'));
   return;
  }
  const question=String(slide.question||"");
@@ -887,6 +952,12 @@ function bindEditor(){
   if(!w)toast("Preglednik je blokirao novi prozor. Dopusti skočne prozore.",true);
   else {persist().catch(()=>{});setTimeout(pushStage,600);setTimeout(pushStage,1500);}
  });
+ $("publishRound").addEventListener("change",e=>{
+  const r=Number(e.target.value);
+  if(Number.isInteger(r)&&r>=0&&r<ROUNDS.length){publishTargetRound=r;updatePublishControls();}
+ });
+ $("publishAllBtn").addEventListener("click",()=>publishBoard(publishTargetRound,"all"));
+ $("publishGradualBtn").addEventListener("click",()=>publishBoard(publishTargetRound,"gradual"));
  $("addTeam").addEventListener("click",addTeam);
  $("teamName").addEventListener("keydown",e=>{if(e.key==="Enter")addTeam();});
  $("teamScores").addEventListener("change",e=>{const el=e.target.closest("select[data-team]");if(!el)return;const t=project.teams.find(x=>x.id===el.dataset.team);if(!t)return;t.scores[keyOf(position.r,position.s,position.i)]=Number(el.value);scheduleSave();renderAll();});
