@@ -853,3 +853,25 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 .board-concealed{color:#7697ac}
 .board-concealed th,.board-concealed td{font-weight:500!important;color:#7697ac!important}
 @media(max-width:650px){.publish-controls{align-items:stretch;flex-direction:column}.publish-buttons button{flex:1}.publish-controls label{justify-content:space-between;width:100%}}
+
+/* Promjenjiva veličina teksta samo za pitanje i ABC opcije, na svim povezanim ekranima. */
+.question-size-controls{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;margin:12px auto 0;padding:10px 14px;max-width:max-content;background:#0b2033;border:1px solid #345d79;border-radius:14px}
+.question-size-label{font-size:14px;font-weight:750;color:#d6eafa;margin-right:5px}
+.question-size-controls button{min-width:55px;padding:8px 13px;font-weight:850}
+.question-size-controls button:disabled{opacity:.36;cursor:not-allowed}
+.question-size-value{min-width:55px;text-align:center;font-size:14px;font-weight:850;font-variant-numeric:tabular-nums;color:#8df0c4}
+.remote-question-size{max-width:100%;margin:12px auto}
+.stage-screen .screen-title.question-fixed,
+.stage-screen .screen-choices.abc-choices .screen-choice{font-size:calc(clamp(42px,3.1vw,62px) * var(--question-scale,1))}
+.host-display .screen-title.question-fixed,
+.host-display .screen-choices.abc-choices .screen-choice{font-size:calc(clamp(20px,2.65vw,38px) * var(--question-scale,1))}
+.remote-preview .screen-title.question-fixed,
+.remote-preview .screen-choices.abc-choices .screen-choice{font-size:calc(clamp(18px,2.45vw,34px) * var(--question-scale,1))}
+@media(max-width:730px){
+ .stage-screen .screen-title.question-fixed,.stage-screen .screen-choices.abc-choices .screen-choice{font-size:calc(clamp(22px,6.8vw,32px) * var(--question-scale,1))}
+ .host-display .screen-title.question-fixed,.host-display .screen-choices.abc-choices .screen-choice{font-size:calc(clamp(17px,4.9vw,24px) * var(--question-scale,1))}
+ .remote-preview .screen-title.question-fixed,.remote-preview .screen-choices.abc-choices .screen-choice{font-size:calc(clamp(16px,4.7vw,23px) * var(--question-scale,1))}
+}
+@media(max-height:650px) and (min-width:750px){
+ .stage-screen .screen-title.question-fixed,.stage-screen .screen-choices.abc-choices .screen-choice{font-size:calc(clamp(30px,2.9vw,55px) * var(--question-scale,1))}
+}
