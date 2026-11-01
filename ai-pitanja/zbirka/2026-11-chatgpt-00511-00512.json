@@ -1,0 +1,51 @@
+[
+  {
+    "id": "chatgpt10000-00511-20261101",
+    "createdAt": "2026-11-01T10:42:27+01:00",
+    "updatedAt": "2026-11-01T10:42:27+01:00",
+    "topic": "Matematika",
+    "focus": "Jednostrana ploha nastala poluokretom papirnate vrpce",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kad papirnatu vrpcu prije spajanja krajeva zakrenemo za pola kruga, nastane ploha po kojoj olovka može obići obje naizgled odvojene strane bez prelaska preko ruba. Kako se zove ta vrpca?",
+    "answers": [
+      "Möbiusova vrpca",
+      "Mobiusova vrpca",
+      "Mebiusova vrpca",
+      "Möbiusova traka",
+      "Mobiusova traka"
+    ],
+    "explanation": "Poluokret od 180 stupnjeva pretvara spojenu vrpcu u neorijentabilnu plohu sa samo jednom stranom i jednim rubom.",
+    "sources": [
+      "https://lexique.netmath.ca/en/mobius-strip"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00512-20261101",
+    "createdAt": "2026-11-01T10:42:27+01:00",
+    "updatedAt": "2026-11-01T10:42:27+01:00",
+    "topic": "Književnost",
+    "focus": "Japanski trostih s tradicionalnim ritmom 5-7-5",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U japanskoj poeziji priroda često stane u samo tri retka, tradicionalno raspoređena u ritmu 5, 7 i 5 mora. Kako se naziva taj pjesnički oblik?",
+    "answers": [
+      "Haiku",
+      "Haiku pjesma"
+    ],
+    "explanation": "Tradicionalni haiku ima tri dijela i ukupno 17 mora, što nije uvijek isto što i 17 slogova u drugim jezicima.",
+    "sources": [
+      "https://snl.no/haiku"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
