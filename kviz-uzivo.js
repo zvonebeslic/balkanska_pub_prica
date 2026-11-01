@@ -768,10 +768,12 @@ function sharedSlide(){
   questionScale:questionScale(q.questionScale),
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
+  optionImages:section.code==="abc"&&Array.isArray(q.optionImages)?q.optionImages:[],
   correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
   answer:revealed?createAnswer(slide.r,slide.s,slide.i,q):"",
   truthExplanation:revealed&&section.code==="vjerovali"?String(q.note||"").trim():"",
-  associationExplanation:revealed?putinExplanation:"",
+  associationExplanation:revealed&&section.code==="asocijacija"&&slide.i===4?
+   String(q.explanation||putinExplanation||"").trim():"",
   estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
   mediaUrl:q.mediaUrl?String(q.mediaUrl):"",
@@ -922,9 +924,19 @@ function renderSharedSlide(root,slide,options={}){
   '<div class="lyric-blanks-missing">Za prikaz crtica prvo upiši odgovor u uređivaču.</div>';
  // Every question has a fixed font size for its screen, regardless of character count.
  // The CSS also keeps ABC options at that same size.
- const choices=(slide.choices||[]).map(t=>{
+ const imageChoices=slide.sectionCode==="abc"&&Array.isArray(slide.optionImages)&&slide.optionImages.length===3;
+ const choices=(slide.choices||[]).map((t,i)=>{
   const isCorrect=!!slide.revealed&&!!slide.correct&&
    (String(t).startsWith(slide.correct+")")||String(t)===slide.correct);
+  if(imageChoices){
+   const letter=["A","B","C"][i]||"";
+   const img=safeUrl(slide.optionImages[i]||"");
+   const name=String(t).replace(/^[ABC]\)\s*/,"");
+   return '<div class="screen-choice image-choice'+(isCorrect?" correct":"")+'">'+
+    '<strong class="image-choice-letter">'+letter+'</strong>'+
+    (img?'<img src="'+esc(img)+'" alt="Slika ponuđenog zviježđa '+letter+'" loading="eager">':'<span>Slika nije dostupna</span>')+
+    (slide.revealed?'<span class="image-choice-revealed">'+esc(name)+'</span>':"")+'</div>';
+  }
   return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
  }).join("");
  root.innerHTML=inner("slide--question",
@@ -932,7 +944,7 @@ function renderSharedSlide(root,slide,options={}){
    (questionProgress?'<div class="rubric-question-progress">'+esc(questionProgress)+'</div>':"")+'</div>'+
   '<div class="screen-body" style="--question-scale:'+fontScale+'"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
   lyricBlanks+
-  (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
+  (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+(imageChoices?" image-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed&&slide.sectionCode!=="stihovi"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
   (slide.revealed&&slide.sectionCode==="vjerovali"&&slide.truthExplanation?
