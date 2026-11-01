@@ -322,7 +322,7 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 #stageApp .stage-badge{
  top:auto;
  bottom:calc(var(--frame-bottom) + 15px);
- right:calc(max(var(--frame-side), (100vw - 1720px) / 2) + 15px);
+ right:max(calc(var(--frame-side) + 15px), calc(50vw - 845px));
  width:clamp(60px,6vw,96px);
  z-index:4;
  pointer-events:none;
