@@ -542,3 +542,33 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 }
 .slide--section .rubric-example-group .ktg-gold{color:#bd9c63!important}
 
+
+/* Voditeljski prikaz: tekst pitanja ne smije biti odrezan u malom 16:9 okviru.
+   Samo lokalni pregled raste s visinom sadržaja; TV i daljinski ostaju isti. */
+.host-display .screen{
+ aspect-ratio:auto;
+ height:auto;
+ min-height:clamp(360px,54vw,660px);
+ max-height:none;
+ overflow:visible;
+ align-items:stretch;
+}
+.host-display .screen-inner.slide-content{
+ min-height:inherit;
+ height:auto;
+ overflow:visible;
+ flex:1 1 auto;
+}
+.host-display .screen-inner.slide--question .screen-body{
+ min-height:min-content;
+ flex:1 0 auto;
+ overflow:visible;
+}
+.host-display .screen-inner.slide--question .screen-title{
+ max-width:100%;
+ overflow-wrap:anywhere;
+}
+@media(max-width:650px){
+ .host-display .screen{min-height:clamp(350px,85vw,520px)}
+ .host-display .screen-inner.slide--question{padding:20px 16px}
+}
