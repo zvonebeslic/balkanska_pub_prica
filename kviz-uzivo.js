@@ -515,6 +515,7 @@ function sharedSlide(){
  return {
   ...base,slideType:"question",roundName:ROUNDS[slide.r].name,
   sectionTitle:rubricDisplayName(section.name),sectionCode:section.code,
+  rubricQuestion:slide.i+1,rubricQuestionCount:section.count,
   seriesNumber:section.code==="gameset"?Math.floor(slide.i/3)+1:0,
   seriesQuestion:section.code==="gameset"?(slide.i%3)+1:0,
   lyricWordLengths:section.code==="stihovi"?lyricWordLengths(q.answer):[],
@@ -635,6 +636,10 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  const question=String(slide.question||"");
+ const questionProgress=slide.sectionCode==="gameset"&&slide.seriesNumber&&slide.seriesQuestion?
+  slide.seriesNumber+". SERIJA · PITANJE "+slide.seriesQuestion+"/3":
+  Number.isInteger(slide.rubricQuestion)&&Number.isInteger(slide.rubricQuestionCount)&&slide.rubricQuestionCount>0?
+   "PITANJE "+slide.rubricQuestion+"/"+slide.rubricQuestionCount:"";
  // Keep the lyric blanks on BOTH presenter and audience views, before AND after reveal.
  // Each short underline represents one letter; spaces between groups are words.
  const lyricLengths=slide.sectionCode==="stihovi"&&Array.isArray(slide.lyricWordLengths)?
@@ -661,8 +666,7 @@ function renderSharedSlide(root,slide,options={}){
  }).join("");
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong>'+
-   (slide.sectionCode==="gameset"&&slide.seriesNumber&&slide.seriesQuestion?
-    '<div class="gameset-question-series">'+slide.seriesNumber+'. SERIJA · PITANJE '+slide.seriesQuestion+'/3</div>':"")+'</div>'+
+   (questionProgress?'<div class="rubric-question-progress">'+esc(questionProgress)+'</div>':"")+'</div>'+
   '<div class="screen-body"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
   lyricBlanks+
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
