@@ -539,3 +539,25 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
   font-size:clamp(19px,calc(5vw - var(--q-reduce,0vw)),76px);
  }
 }
+
+
+/* Rubric example reset: Kaladont uses EXACTLY Povezano's layout and font.
+   Neutralize the legacy boxed example in every host, TV and remote view. */
+.slide--section .rubric-example,
+.slide--section .rubric-examples,
+.slide--section .rubric-example-group{
+ background:transparent!important;
+ border:0!important;
+ box-shadow:none!important;
+ outline:0!important;
+ border-radius:0;
+}
+.slide--section .rubric-example{padding:0!important;max-width:1440px;color:#edf3fb}
+.slide--section .rubric-examples{padding:0!important}
+.slide--section .rubric-example-group{
+ padding:0!important;
+ font-family:inherit;
+ font-weight:700;
+ text-align:center;
+}
+.slide--section .rubric-example-group .ktg-gold{color:#bd9c63!important}
