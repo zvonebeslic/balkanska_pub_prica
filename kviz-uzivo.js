@@ -200,10 +200,15 @@ function renderNav(){
  const root=$("nav");root.innerHTML=ROUNDS.map((r,ri)=>{
   const sum=roundMax(ri);
   return '<details '+(position.r===ri?'open':'')+'><summary>'+esc(r.name)+' <span class="tiny muted">· '+sum+' bodova</span></summary>'+r.sections.map((s,si)=>{
-    return '<div class="rubric"><strong>'+esc((si+1)+". "+s.name)+'</strong><div class="slotlist">'+Array.from({length:s.count},(_,i)=>{
+    const slotButton=i=>{
       const item=itemAt(ri,si,i),active=position.r===ri&&position.s===si&&position.i===i;
-      return '<button type="button" class="slot'+(active?' active':'')+(item?.question?.trim()?' filled':'')+'" data-r="'+ri+'" data-s="'+si+'" data-i="'+i+'" aria-label="'+esc(s.name+" "+labelItem(ri,si,i))+'">'+esc(labelItem(ri,si,i))+'</button>';
-    }).join("")+'</div></div>';
+      return '<button type="button" class="slot'+(active?' active':'')+(item?.question?.trim()?' filled':'')+'" data-r="'+ri+'" data-s="'+si+'" data-i="'+i+'" aria-label="'+esc(s.name+" "+labelItem(ri,si,i))+'">'+esc(s.code==="gameset"?(i%3+1)+".":labelItem(ri,si,i))+'</button>';
+    };
+    const buttons=s.code==="gameset"?
+      [0,1].map(series=>'<div class="gameset-series-nav"><span class="gameset-series-caption">'+(series+1)+'. serija</span><div class="slotlist">'+
+       Array.from({length:3},(_,i)=>slotButton(series*3+i)).join("")+'</div></div>').join(""):
+      '<div class="slotlist">'+Array.from({length:s.count},(_,i)=>slotButton(i)).join("")+'</div>';
+    return '<div class="rubric"><strong>'+esc((si+1)+". "+s.name)+'</strong>'+buttons+'</div>';
   }).join("")+'</details>';
  }).join("");
 }
@@ -355,7 +360,8 @@ function updateStudio(){
   slide.kind==="round"?ROUNDS[slide.r].name+" · početak kruga":
   slide.kind==="section"?ROUNDS[slide.r].name+" · "+ROUNDS[slide.r].sections[slide.s].name+" · najava rubrike":
   slide.kind==="score"?ROUNDS[slide.r].name+" · ljestvica":
-  ROUNDS[slide.r].name+" · "+ROUNDS[slide.r].sections[slide.s].name;
+  ROUNDS[slide.r].name+" · "+ROUNDS[slide.r].sections[slide.s].name+
+   (ROUNDS[slide.r].sections[slide.s].code==="gameset"?" · "+(Math.floor(slide.i/3)+1)+". serija, "+(slide.i%3+1)+". pitanje":"");
  $("homeQuizTitle").textContent=project.title||"Bez naziva";
  $("hostQuizTitle").textContent=project.title||"Kviz Općeg Znanja";
  $("hostQuestionLabel").textContent=label;
@@ -509,6 +515,8 @@ function sharedSlide(){
  return {
   ...base,slideType:"question",roundName:ROUNDS[slide.r].name,
   sectionTitle:rubricDisplayName(section.name),sectionCode:section.code,
+  seriesNumber:section.code==="gameset"?Math.floor(slide.i/3)+1:0,
+  seriesQuestion:section.code==="gameset"?(slide.i%3)+1:0,
   lyricWordLengths:section.code==="stihovi"?lyricWordLengths(q.answer):[],
   question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
@@ -652,7 +660,9 @@ function renderSharedSlide(root,slide,options={}){
   return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
  }).join("");
  root.innerHTML=inner("slide--question",
-  '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong></div>'+
+  '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong>'+
+   (slide.sectionCode==="gameset"&&slide.seriesNumber&&slide.seriesQuestion?
+    '<div class="gameset-question-series">'+slide.seriesNumber+'. SERIJA · PITANJE '+slide.seriesQuestion+'/3</div>':"")+'</div>'+
   '<div class="screen-body"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
   lyricBlanks+
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
