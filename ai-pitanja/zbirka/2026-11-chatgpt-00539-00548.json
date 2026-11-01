@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-00539-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Astronomija",
+    "focus": "Retrogradna putanja Tritona",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Neptunov najveći mjesec kruži suprotno smjeru rotacije svojega planeta, a astronomi smatraju da je možda zarobljen iz Kuiperova pojasa. Kako se zove taj mjesec?",
+    "answers": [
+      "Triton"
+    ],
+    "explanation": "Triton ima retrogradnu orbitu, što upućuje na moguće gravitacijsko zarobljavanje.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00540-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Priroda",
+    "focus": "Izvor Saturnova E prstena",
+    "difficulty": 4,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Sitne ledene čestice koje izbacuju gejziri jednog Saturnova mjeseca hrane njegov široki E prsten. Koji je to mjesec?",
+    "answers": [
+      "Encelad",
+      "Enceladus"
+    ],
+    "explanation": "NASA navodi da čestice iz Enceladovih mlazova stvaraju Saturnov E prsten.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00541-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Povijest",
+    "focus": "Razmak otkrića Neptuna i Tritona",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "William Lassell otkrio je Triton 10. listopada 1846., koliko dana nakon otkrića planeta oko kojeg taj mjesec kruži?",
+    "answers": [
+      "17",
+      "Sedamnaest",
+      "17 dana"
+    ],
+    "explanation": "Triton je otkriven samo 17 dana nakon Neptuna.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00542-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Sport",
+    "focus": "Prvi pobjednik modernog olimpijskog maratona",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Na prvim modernim Olimpijskim igrama u Ateni 1896. domaći je trkač slavio u maratonu dugom oko 40 kilometara. Kako se prezivao?",
+    "answers": [
+      "Louis",
+      "Luis"
+    ],
+    "explanation": "Grk Spiridon Louis osvojio je prvi olimpijski maraton 1896.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00543-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Godina osnivanja MOO-a",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na pariškom kongresu na kojem je prihvaćena obnova Olimpijskih igara osnovan je i Međunarodni olimpijski odbor. Koje se godine to dogodilo?",
+    "answers": [
+      "1894",
+      "1894."
+    ],
+    "explanation": "Međunarodni olimpijski odbor osnovan je 1894. na poticaj Pierrea de Coubertina.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/who-was-pierre-de-coubertin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00544-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Zanati",
+    "focus": "Naziv tradicije lova s treniranim pticama grabljivicama",
+    "difficulty": 1,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Nekada način pribavljanja hrane, danas je i kulturna baština: lov uz pomoć posebno treniranih sokolova i drugih grabljivica. Kako se naziva ta vještina?",
+    "answers": [
+      "Sokolarstvo",
+      "Falconry"
+    ],
+    "explanation": "Sokolarstvo je višestoljetna praksa treniranja ptica grabljivica za lov.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01708"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00545-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Gastronomija",
+    "focus": "Kimjang zajednička priprema zimnice",
+    "difficulty": 4,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U Koreji se obitelji i susjedi tradicionalno okupljaju na zajedničkoj pripremi velikih količina fermentiranog povrća za zimu, u običaju zvanom kimjang. Koje jelo pripremaju?",
+    "answers": [
+      "Kimchi",
+      "Kimči"
+    ],
+    "explanation": "Kimjang je zajednička sezonska priprema kimchija.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-01063"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00546-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Promet",
+    "focus": "Povezanost pivarstva i astronomije",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Britanski astronom William Lassell novac za teleskope stekao je poslovanjem u jednoj prehrambenoj industriji. Koje je piće proizvodio njegov posao?",
+    "answers": [
+      "Pivo",
+      "Beer"
+    ],
+    "explanation": "Lassell je bogatstvo iz pivarskog posla koristio za financiranje teleskopa.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00547-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Matematika",
+    "focus": "Duljina olimpijskog maratona 1896",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Prvi olimpijski maraton 1896. nije bio današnjih 42,195 kilometara. Koliko je otprilike kilometara iznosila atenska ruta od Maratona do stadiona?",
+    "answers": [
+      "40",
+      "40 km",
+      "Četrdeset"
+    ],
+    "explanation": "Prva olimpijska maratonska ruta bila je duga približno 40 kilometara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00548-20261101",
+    "createdAt": "2026-11-01T15:35:22+01:00",
+    "updatedAt": "2026-11-01T15:35:22+01:00",
+    "topic": "Biologija",
+    "focus": "Glavni plin Tritonove atmosfere",
+    "difficulty": 4,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Na Neptunovu mjesecu Tritonu toliko je hladno da se najveći dio plina njegove rijetke atmosfere može nataložiti kao mraz. O kojem je plinu riječ?",
+    "answers": [
+      "Dušik",
+      "Nitrogen",
+      "N2"
+    ],
+    "explanation": "Tritonova rijetka atmosfera pretežno se sastoji od dušika.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
