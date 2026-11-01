@@ -1,0 +1,27 @@
+[
+  {
+    "id": "chatgpt10000-00533-20261101",
+    "createdAt": "2026-11-01T13:37:55+01:00",
+    "updatedAt": "2026-11-01T13:37:55+01:00",
+    "topic": "Astronomija",
+    "focus": "Plimno zagrijavanje Jupiterova mjeseca Io",
+    "difficulty": 3,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na Jupiterovu mjesecu Io stotine vulkana neprestano obnavljaju površinu. Koja vrsta zagrijavanja, nastala gravitacijskim rastezanjem tijekom obilaska Jupitera, pokreće taj vulkanizam?",
+    "answers": [
+      "Plimno zagrijavanje",
+      "Plimno grijanje",
+      "Zagrijavanje plimnim silama",
+      "Tidal heating"
+    ],
+    "explanation": "Jupiterova gravitacija te utjecaj Europe i Ganimeda neprestano deformiraju Io, a trenje unutar njegove građe proizvodi toplinu.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/io/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
