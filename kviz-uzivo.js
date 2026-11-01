@@ -594,7 +594,7 @@ function renderSharedSlide(root,slide,options={}){
    '</div>':
    slide.sectionCode==="abecedalica"?
    '<div class="rubric-examples" aria-label="Primjer abecednog redoslijeda">'+
-    '<div class="rubric-example-group">(Primjer: Luka Modrić, Ljubljana, Maori, Nigdjezemska, Njuškalo)</div>'+
+    '<div class="rubric-example-group">(Primjer: <span class="ktg-gold">L</span>uka Modrić, <span class="ktg-gold">L</span>jubljana, <span class="ktg-gold">M</span>aori, <span class="ktg-gold">N</span>igdjezemska, <span class="ktg-gold">N</span>juškalo)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
