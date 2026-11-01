@@ -112,7 +112,7 @@ async function makeExampleQuiz(){
   return response.json();
  }));
  const quiz=createQuiz();
- quiz.title="Kviz Općeg Znanja 1";
+ quiz.title="Kviz Općeg Znanja Vol. 1";
  quiz.sampleSource="Prvi kviz dostavljen za KvizToGo Kviz uživo";
  for(let r=0;r<ROUNDS.length;r++){
   const sections=parts[r]?.sections;
@@ -168,7 +168,7 @@ async function installExampleQuiz(){
  localStorage.setItem("kviztogo_live_id",project.id);
  ensureChannel();await refreshSelect();renderAll();
  $("scoresBtn").textContent="🏆 Prikaži ljestvicu";
- toast("Kviz Općeg Znanja 1 učitan je sa svim pitanjima i odgovorima. Možeš uređivati svoju kopiju.");
+ toast("Kviz Općeg Znanja Vol. 1 učitan je sa svim pitanjima i odgovorima. Možeš uređivati svoju kopiju.");
 }
 function openDB(){return new Promise((resolve,reject)=>{
  const req=indexedDB.open(DBNAME,2);
@@ -190,6 +190,18 @@ function isVolOneQuiz(q){
  return Array.isArray(section)&&
   /Veneri/i.test(String(section[0]?.question||""))&&
   /Australija/i.test(String(section[1]?.question||""));
+}
+async function normalizeVolOneTitles(){
+ const all=await storeAll("quizzes");
+ let renamed=0;
+ for(const quiz of all){
+  if(!isVolOneQuiz(quiz)||quiz.title==="Kviz Općeg Znanja Vol. 1")continue;
+  // Keep the original quiz ID, questions, images, scoring and dates untouched.
+  quiz.title="Kviz Općeg Znanja Vol. 1";
+  await storePut("quizzes",quiz);
+  renamed++;
+ }
+ return renamed;
 }
 async function keepOnlyVolOne(all,wantedId){
  if(localStorage.getItem(VOL_ONE_CLEANUP_KEY)==="complete")return {all,selected:null,deleted:0};
@@ -1206,7 +1218,13 @@ async function init(){
     all=await storeAll("quizzes");
    }catch(error){console.warn("Vol. 2 nije učitan:",error);}
   }
-  project=cleanup.selected||all.find(x=>x.id===wanted)||all[0]||null;
+  if(!stageMode){
+   // Normalize existing saved Vol. 1 on every open, even if its old cleanup already ran.
+   // The title change is idempotent and never creates or overwrites the quiz's contents.
+   await normalizeVolOneTitles();
+   all=await storeAll("quizzes");
+  }
+  project=all.find(x=>x.id===(cleanup.selected?.id||wanted))||all[0]||null;
   if(stageMode){
    $("editorApp").hidden=true;$("stageApp").hidden=false;
    // Publika vidi samo pitanje, odgovor kada je otkriven i logo.
