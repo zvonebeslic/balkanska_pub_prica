@@ -85,7 +85,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const uid=()=>typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():"ktg-"+Date.now()+"-"+Math.random().toString(36).slice(2);
 const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
-let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false;
+let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false;
 let channel=null,saveTimer=null,toastTimer=null,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
@@ -130,7 +130,6 @@ async function installExampleQuiz(){
  project=quiz;position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;
  localStorage.setItem("kviztogo_live_id",project.id);
  ensureChannel();await refreshSelect();renderAll();
- $("revealBtn").textContent="Prikaži odgovor";
  $("scoresBtn").textContent="🏆 Prikaži ljestvicu";
  toast("Kviz Općeg Znanja 1 učitan je sa svim pitanjima i odgovorima. Možeš uređivati svoju kopiju.");
 }
@@ -345,8 +344,8 @@ function updateStudio(){
  $("hostCounter").textContent="Slajd "+(slideIndex+1)+" / "+SLIDES.length;
  $("prevBtn").disabled=slideIndex<=0;
  $("nextBtn").disabled=slideIndex>=SLIDES.length-1;
- $("revealBtn").disabled=slide.kind!=="question"||showBoard;
- $("revealBtn").textContent=revealed?"Sakrij odgovor":"Prikaži odgovor";
+ $("firstSlideBtn").disabled=slideIndex===0&&!showBoard;
+ $("autoShowAnswers").checked=autoShowAnswers;
  $("scoresBtn").disabled=slide.kind==="score";
  $("scoresBtn").textContent=showBoard?"Vrati slajd":"🏆 Prikaži ljestvicu";
 }
@@ -374,7 +373,7 @@ function setSlideIndex(next){
   const last=ROUNDS[slide.r].sections.length-1,items=ROUNDS[slide.r].sections[last].count;
   position={r:slide.r,s:last,i:items-1};
  }else position={r:0,s:0,i:0};
- revealed=false;showBoard=false;renderAll();
+ revealed=autoShowAnswers&&slide.kind==="question";showBoard=false;renderAll();
 }
 function selectPosition(r,s,i){
  if(!itemAt(r,s,i))return;
@@ -384,7 +383,10 @@ function selectPosition(r,s,i){
 function changePosition(delta){setSlideIndex(slideIndex+delta);}
 function changeReveal(){
  if(currentSlide().kind!=="question"||showBoard)return;
- revealed=!revealed;renderAll();
+ revealed=!revealed;
+ // A manual hide from the remote / keyboard switches off auto-reveal too.
+ if(autoShowAnswers&&!revealed)autoShowAnswers=false;
+ renderAll();
 }
 async function uploadMedia(e){
  const f=e.target.files?.[0];if(!f)return;
@@ -741,7 +743,12 @@ function bindEditor(){
  $("questionEdit").addEventListener("change",changeField);
  $("prevBtn").addEventListener("click",()=>changePosition(-1));
  $("nextBtn").addEventListener("click",()=>changePosition(1));
- $("revealBtn").addEventListener("click",changeReveal);
+ $("firstSlideBtn").addEventListener("click",()=>{if(slideIndex!==0||showBoard)setSlideIndex(0);});
+ $("autoShowAnswers").addEventListener("change",e=>{
+  autoShowAnswers=e.target.checked;
+  if(currentSlide().kind==="question")revealed=autoShowAnswers;
+  renderAll();
+ });
  $("scoresBtn").addEventListener("click",()=>{if(currentSlide().kind==="score")return;showBoard=!showBoard;renderAll();});
  $("stageBtn").addEventListener("click",()=>{
   if(!project)return;const target=pairing?audienceUrl(pairing.room):"kviz-uzivo.html?stage=1&id="+encodeURIComponent(project.id);
