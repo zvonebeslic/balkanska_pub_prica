@@ -263,13 +263,13 @@ function createAnswer(r,s,i,q){
 // provided Guinness example can have empty fields, so honor the confirmed range.
 function estimateAcceptedRange(q){
  let min=String(q.min??"").trim(),max=String(q.max??"").trim();
- if(!min&&!max&&/Guinness/i.test(q.question||"")&&/^9\\s?000(?:\\s+godina)?$/i.test(String(q.answer||"").trim())){
+ if(!min&&!max&&/Guinness/i.test(q.question||"")&&/^9\s?000(?:\s+godina)?$/i.test(String(q.answer||"").trim())){
   min="8000";max="10000";
  }
  if(min===""||max==="")return "";
  const format=value=>{
   const n=Number(value);
-  return Number.isFinite(n)?n.toLocaleString("hr-HR",{maximumFractionDigits:6}).replace(/\\./g," "):value;
+  return Number.isFinite(n)?n.toLocaleString("hr-HR",{maximumFractionDigits:6}).replace(/\./g," "):value;
  };
  return "("+format(min)+" – "+format(max)+")";
 }
