@@ -598,26 +598,34 @@ function renderSharedSlide(root,slide,options={}){
 }
 function pairingForCurrentQuiz(){
  if(!project||!window.KTGSync)throw Error("Povezivanje nije dostupno.");
- const storageKey="ktg-room-"+project.id;
- let info;try{info=JSON.parse(localStorage.getItem(storageKey)||"null");}catch{}
- if(!info||!KTGSync.validRoom(info.room)||!(/^[0-9a-f]{48}$/.test(info.secret||""))){
-  info={room:KTGSync.genRoom(),secret:KTGSync.genSecret()};
-  localStorage.setItem(storageKey,JSON.stringify(info));
- }
- return info;
+ // Each live session has its own code. Reopening the panel during the same
+ // session keeps the code, but a new tab/session never resurrects yesterday's.
+ if(pairing&&KTGSync.validRoom(pairing.room)&&/^[0-9a-f]{48}$/.test(pairing.secret||""))return pairing;
+ return {room:KTGSync.genRoom(),secret:KTGSync.genSecret()};
 }
 function audienceUrl(room){return new URL("kviz-uzivo.html?stage=1&room="+encodeURIComponent(room),location.href).href;}
 function controllerUrl(room,secret){return new URL("kviz-uzivo.html?remote="+encodeURIComponent(room)+"&auth="+encodeURIComponent(secret),location.href).href;}
 function startPairing(){
  if(!project||!window.KTGSync)throw Error("Za povezivanje uređaja potrebna je dostupna internetska usluga.");
+ const alreadyHosting=!!pairing&&KTGSync.isHost();
  const info=pairingForCurrentQuiz();pairing=info;
  $("pairPanel").hidden=false;
  $("roomCode").textContent=info.room;
  $("audienceLink").value=audienceUrl(info.room);
  $("controlLink").value=controllerUrl(info.room,info.secret);
+ if(alreadyHosting)return; // Do not interrupt TV when opening pairing again.
+ const peers=new Set();
+ const updateStatus=()=>{
+  const names=[peers.has("audience")?"TV spojen":null,peers.has("controller")?"Mobitel za upravljanje spojen":null].filter(Boolean);
+  $("pairStatus").textContent=names.length?names.join(" · "):"Soba je aktivna. Čekam TV...";
+ };
  KTGSync.startHost({
   room:info.room,controlSecret:info.secret,getState:sharedSlide,
-  onStatus:s=>$("pairStatus").textContent=s,
+  onStatus:s=>{
+   if(s==="Povezano")updateStatus();
+   else {peers.clear();$("pairStatus").textContent=s;}
+  },
+  onPeer:role=>{if(role==="audience"||role==="controller"){peers.add(role);updateStatus();}},
   onCommand:action=>{
    if(action==="next")changePosition(1);
    else if(action==="previous")changePosition(-1);
