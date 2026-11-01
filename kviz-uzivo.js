@@ -607,7 +607,7 @@ function audienceUrl(room){return new URL("kviz-uzivo.html?stage=1&room="+encode
 function controllerUrl(room,secret){return new URL("kviz-uzivo.html?remote="+encodeURIComponent(room)+"&auth="+encodeURIComponent(secret),location.href).href;}
 function startPairing(){
  if(!project||!window.KTGSync)throw Error("Za povezivanje uređaja potrebna je dostupna internetska usluga.");
- const alreadyHosting=!!pairing&&KTGSync.isHost();
+ const alreadyHosting=!!pairing&&KTGSync.isHost()&&KTGSync.isConnected();
  const info=pairingForCurrentQuiz();pairing=info;
  $("pairPanel").hidden=false;
  $("roomCode").textContent=info.room;
