@@ -564,7 +564,7 @@ function renderSharedSlide(root,slide,options={}){
    '</div>':
    slide.sectionCode==="premetaljka"?
    '<div class="rubric-examples" aria-label="Primjer premetaljke">'+
-    '<div class="rubric-example-group">(Primjer: Smol Jackie Chan - <span class="ktg-gold">Michael Jackson</span>)</div>'+
+    '<div class="rubric-example-group">(Primjer: Ten Elite Brains - <span class="ktg-gold">Albert Einstein</span>)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
