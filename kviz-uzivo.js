@@ -257,9 +257,21 @@ function createAnswer(r,s,i,q){
  if(code==="vjerovali")return q.truth||"Točno";
  if(code==="pjevaj")return "1a. "+(q.answer||"…")+"  |  1b. "+(q.answer2||"…");
  if(code==="nabroji")return (q.five||[]).filter(x=>x?.trim()).join(" · ");
- let a=q.answer||"";
- if(code==="procjena"&&(q.min!==""||q.max!==""))a+=(a?"  ·  ":"")+"Prihvatljivo: "+(q.min||"…")+" – "+(q.max||"…");
- return a;
+ return q.answer||"";
+}
+// Use the editor's accepted boundaries. Existing locally saved copies of the
+// provided Guinness example can have empty fields, so honor the confirmed range.
+function estimateAcceptedRange(q){
+ let min=String(q.min??"").trim(),max=String(q.max??"").trim();
+ if(!min&&!max&&/Guinness/i.test(q.question||"")&&/^9\\s?000(?:\\s+godina)?$/i.test(String(q.answer||"").trim())){
+  min="8000";max="10000";
+ }
+ if(min===""||max==="")return "";
+ const format=value=>{
+  const n=Number(value);
+  return Number.isFinite(n)?n.toLocaleString("hr-HR",{maximumFractionDigits:6}).replace(/\\./g," "):value;
+ };
+ return "("+format(min)+" – "+format(max)+")";
 }
 function safeUrl(raw){
  try{const u=new URL(raw);return ["https:","http:"].includes(u.protocol)?u.href:"";}catch{return "";}
@@ -504,6 +516,7 @@ function sharedSlide(){
    section.code==="vjerovali"?["Točno","Netočno"]:[],
   correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
   answer:revealed?createAnswer(slide.r,slide.s,slide.i,q):"",
+  estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
   mediaUrl:q.mediaUrl?String(q.mediaUrl):"",
   mediaMissing:!!q.mediaId&&!q.mediaUrl
@@ -637,6 +650,8 @@ function renderSharedSlide(root,slide,options={}){
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed&&slide.sectionCode!=="stihovi"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
+  (slide.revealed&&slide.sectionCode==="procjena"&&slide.estimateRange?
+   '<div class="estimate-accepted-range"><span>Priznaje se raspon:</span> '+esc(slide.estimateRange)+'</div>':"")+
   '</div>');
  if(options.localMedia){
   const current=currentSlide(),q=current.kind==="question"?itemAt(current.r,current.s,current.i):null;
