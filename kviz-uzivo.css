@@ -753,3 +753,27 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  font-weight:950;
  text-align:center;
 }
+
+/* Third round, Pitanje procjene: reveal the accepted scoring range
+   directly below the correct answer on both presenter and audience. */
+.estimate-accepted-range{
+ display:flex;
+ flex-wrap:wrap;
+ align-items:center;
+ justify-content:center;
+ column-gap:.4em;
+ row-gap:.12em;
+ max-width:95%;
+ color:#d7eaff;
+ text-align:center;
+ font-size:clamp(18px,2vw,36px);
+ font-weight:800;
+ line-height:1.22;
+}
+.estimate-accepted-range span{font-weight:650;color:#b7d1ea}
+.host-display .estimate-accepted-range{font-size:clamp(15px,1.6vw,25px)}
+.remote-preview .estimate-accepted-range{font-size:clamp(14px,1.4vw,22px)}
+@media(max-width:730px){
+ .stage-screen .estimate-accepted-range{font-size:clamp(17px,4vw,29px)}
+ .host-display .estimate-accepted-range{font-size:clamp(14px,3vw,22px)}
+}
