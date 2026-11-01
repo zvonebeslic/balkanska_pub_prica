@@ -1,0 +1,429 @@
+{
+  "version": 2,
+  "date": "2026-12-28",
+  "generatedAt": "2026-11-01T00:59:21.071Z",
+  "questionCount": 30,
+  "sourceFileCount": 17,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-9a33f614",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koji je sin Hamilkara Barke, osim Hanibala, također bio jedan od glavnih kartaških vojskovođa u Drugom punskom ratu protiv Rimljana?",
+      "answers": [
+        "Mago Barka",
+        "Mago",
+        "Magon Barka",
+        "Mago Barca",
+        "Magon Barca",
+        "Magon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6f6cff28",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se naziva konjička disciplina u kojoj konj izvodi precizno određene kretnje prema uputama jahača?",
+      "answers": [
+        "Dresura",
+        "Dresure",
+        "Dresiranje",
+        "Dresaža"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dedc66d1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Pomorskom sukobu između Francuske i SAD-a 1798.g. zvanom 'Kvazi rat', prethodila je afera u kojoj su tri francuska agenta tražila mito od amerikanaca za pregovore o miru. Njih trojica su zabilježena u povijesti sa koja tri slova kojima je nazvana i sama ta afera?",
+      "answers": [
+        "XYZ"
+      ],
+      "image": null,
+      "rarity": "golden"
+    },
+    {
+      "id": "daily-3a25e08c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je trener osvojio Svjetsko nogometno prvenstvo s Italijom 2006.g.?",
+      "answers": [
+        "Marcello Lippi",
+        "Marcelo Lipi",
+        "Lippi",
+        "Lipi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-712d6ba8",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Rimski je car Emilijan vladao svega 2 mjeseca, svrgnuo je cara Trebonija Gala, bio ubijen od svoje vojske u Spoletiumu a rodio se na najvećem Tuniškom otoku, koji se zove kako?",
+      "answers": [
+        "Djerba",
+        "Đerba",
+        "Džerba",
+        "Girba",
+        "Gerba"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1227a28b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Koja je hollywoodska glumica nakon humanitarnog rada i posvojenja sina iz Kambodže 2005.g. dobila i kambodžansko državljanstvo?",
+      "answers": [
+        "Angelina Jolie",
+        "Anđelina Džoli",
+        "Jolie",
+        "Džoli"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-df49dca6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Tijekom koje je svemirske misije nastala slavna rečenica 'Houston, we've had a problem', danas jedna od najpoznatijih fraza u povijesti istraživanja svemira?",
+      "answers": [
+        "Apollo 13",
+        "Apolo 13",
+        "Apollo thirteen",
+        "Apolo trtin",
+        "Apollo trinaest",
+        "Apolo trinaest",
+        "Apollo XII",
+        "Apolo XIII",
+        "Apolo",
+        "Apollo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-30f2f0f2",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "AntickiRim",
+      "question": "Kako bi stari rimljani napisali broj '410'?",
+      "answers": [
+        "CDX"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-494f0796",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Film",
+      "question": "Andrija 'Draš' Katalenić, selo, koje?",
+      "answers": [
+        "Gruntovec"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fd6f2811",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Povijest",
+      "question": "Kako se zove grčki povjesničar koji je opisao Peloponeski rat?",
+      "answers": [
+        "Tukidid",
+        "Thukydides",
+        "Thucydides"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c2b86f2d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove grčka božica mudrosti i ratne taktike?",
+      "answers": [
+        "Atena",
+        "Athena"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fc9c1148",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Film",
+      "question": "Koji glumac utjelovljuje lik i djelo Indiane Jonesa?",
+      "answers": [
+        "Harrison Ford",
+        "Harison Ford",
+        "Ford"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-84ba1dcd",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Glazba",
+      "question": "Koji instrument svira Yo-Yo Ma, Amerikanac, kineskog podrijetla, rođen u Parizu?",
+      "answers": [
+        "Čelo",
+        "Violončelo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-203ce439",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je francuski matematičar i astronom, autor djela Nebeska mehanika, od Napoleona dobio titulu Markiza?",
+      "answers": [
+        "Pierre Simon Laplace",
+        "Pjer Simon Laplas",
+        "Laplace",
+        "Laplas",
+        "Laplac",
+        "Leplec"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca50b16c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kada bi se 1. predsjednik SAD-a, prezimena Washington, potpisao samo inicijalima, dobili bi koja slova?",
+      "answers": [
+        "GW"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-160b79d5",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva tradicionalni škotski odjevni predmet nalik suknji, najčešće izrađen od tartana i povijesno povezan sa škotskim Highlandom?",
+      "answers": [
+        "Kilt"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d7efb124",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Koji je ruski skladatelj napisao glazbu za balete Labuđe jezero i Orašar?",
+      "answers": [
+        "Petar Iljič Čajkovski",
+        "Iljič Čajkovski",
+        "Petar Čajkovski",
+        "Čajkovski"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8e69f811",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove proces trošenja stijena i tla uslijed djelovanja vode, vjetra i leda?",
+      "answers": [
+        "Erozija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-76190331",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koje veliko jezero dijele Albanija i Crna Gora?",
+      "answers": [
+        "Skadarsko Jezero",
+        "Skadarsko",
+        "Skadar",
+        "Skadars"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4c2fdafc",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove glavni antagonist i vozač na vrhu Blacklista u videoigri Need for Speed: Most Wanted iz 2005.g.?",
+      "answers": [
+        "Razor",
+        "Rejzor",
+        "Clarence Callahan",
+        "Klarens Kalahan",
+        "Callahan",
+        "Kalahan"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e2843e23",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Iz koje je engleske luke Robinson Crusoe isplovio na svoje prvo putovanje, ni ne sluteći da se kući neće vratiti idućih 28 godina?",
+      "answers": [
+        "Hull",
+        "Hal"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c4f10010",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je portugalski zapovjednik 1505.g. postao prvi potkralj Portugalske Indije?",
+      "answers": [
+        "Francisco de Almeida",
+        "Francisco Almeida",
+        "Francisko de Almeida",
+        "Almeida",
+        "De Almeida",
+        "Almejda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d86a5e6d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji se broj u Morseovoj abecedi skriva iza 5 točki?",
+      "answers": [
+        "5",
+        "Pet",
+        "Five",
+        "Fajv",
+        "V"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e478e779",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Po ISO-u, 'DJF' je kratica za valutu koja se koristi u kojoj državi?",
+      "answers": [
+        "Džibuti",
+        "Djibuti",
+        "Đibuti",
+        "Dibuti",
+        "Djibouti",
+        "Jibuti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-00acab90",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koji indijski napitak nastaje kuhanjem crnog čaja s mlijekom i mješavinom aromatičnih začina poput kardamoma, cimeta, klinčića i đumbira?",
+      "answers": [
+        "Masala chai",
+        "Masala čaj",
+        "Masala caj",
+        "Masala",
+        "Mašala čaj",
+        "Mašala"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a4fb30ae",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Na kojoj životinji je Isus ujahao u Jeruzalem?",
+      "answers": [
+        "Magarcu",
+        "Magarac",
+        "Na magarcu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-35373e98",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Koji je talijanski proizvođač tjestenine prepoznatljiv po plavim kutijama s crvenim ovalnim logotipom, a potječe iz grada Parme?",
+      "answers": [
+        "Barilla",
+        "Barila"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ecdd76f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zvala kartica koja se kod konzola poput prvog PlayStationa koristila za spremanje napretka u videoigrama?",
+      "answers": [
+        "Memory Card",
+        "Memori Kard",
+        "Memorijska",
+        "Memori",
+        "Memory"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9f141bfc",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Tko je napisao pustolovine Toma Sawyera?",
+      "answers": [
+        "Mark Twain",
+        "Mark Tvejn",
+        "Mark Tvajn",
+        "Twain",
+        "Tvejn",
+        "Tvajn",
+        "Samuel Langhorne Clemens",
+        "Langhorne Clemens",
+        "Langhorn Klemens",
+        "Clemens",
+        "Klemens"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2b8915b4",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koji je nekadašnji saveznik Francisca Pizarra u osvajanju Carstva Inka poslije postao njegov suparnik te predvodio ranu španjolsku ekspediciju u Čile, gdje nije pronašao bogatstvo kojem se nadao?",
+      "answers": [
+        "Diego de Almagro",
+        "Diego Almagro",
+        "Almagro"
+      ],
+      "image": null
+    }
+  ]
+}

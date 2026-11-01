@@ -1,0 +1,447 @@
+{
+  "version": 2,
+  "date": "2026-12-23",
+  "generatedAt": "2026-11-01T00:59:21.071Z",
+  "questionCount": 30,
+  "sourceFileCount": 17,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-17e25f71",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se na engleskom jeziku kaže poslovica 'Bolje spriječiti nego liječiti'?",
+      "answers": [
+        "Prevention is better than cure",
+        "Better save than cure",
+        "Beter sejv dan kjur"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2c80d1d1",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se naziva politički sustav u kojem vlast proizlazi iz naroda putem izbora i predstavnika?",
+      "answers": [
+        "Demokracija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-055d455f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kojim se zajedničkim imenom nazivaju svi padajući dijelovi u tetrisu?",
+      "answers": [
+        "Tetromine",
+        "Tetromineos",
+        "Tetrominos",
+        "Tetromini",
+        "Tetromin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-fae5788d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove škola čarobnjaštva koju pohađa Harry Potter?",
+      "answers": [
+        "Hogwarts",
+        "Hogvarts",
+        "Hogwarts School"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4bccfc9d",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Koje su britanske konjske utrke, koje se održavaju još od početka 18. stoljeća, postale poznate i po strogom kodeksu odijevanja te raskošnim i neobičnim šeširima posjetitelja?",
+      "answers": [
+        "Royal Ascot",
+        "Ascot",
+        "Askot"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f948d5a3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Po kojem je znanstveniku nazvano 'njihalo' (kolijevka) koje se sastoji od 5 ili više metalnih kuglica koje u nizu, vise o niti te čije vanjske kuglice prenose silu jedna na drugu, preko onih u sredini?",
+      "answers": [
+        "Isaacu Newtonu",
+        "Isaku Njutnu",
+        "Isaac Newton",
+        "Isak Njutn",
+        "Newton",
+        "Njutn",
+        "Newtonu",
+        "Njutnu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9ea6d6ae",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U Verne-ovom romanu 'Put oko svijeta u 80 dana', tijekom putovanja kroz Indiju, koje su životinje korištene za prijevoz nakon što željeznička pruga nije bila dovršena?",
+      "answers": [
+        "Slonovi",
+        "Sloni",
+        "Slon",
+        "Elephants",
+        "Elephant",
+        "Elefants",
+        "Elefant",
+        "Elefanti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c7534da1",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "KnjigaSlika",
+      "question": "U kojem se gradu nalazi svjetski poznati muzej Louvre?",
+      "answers": [
+        "Pariz",
+        "Paris"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8c1e62d7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio jedini američki predsjednik koji je bio kvalificirani podmorničar?",
+      "answers": [
+        "Jimmy Carter",
+        "Džimi Karter",
+        "Carter",
+        "Karter"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a6fa0f19",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kako se zvala tajanstvena krajnja sjeverna zemlja koju je grčki istraživač Piteja iz Masalije opisao oko 325. godine prije Krista?",
+      "answers": [
+        "Thule",
+        "Tula",
+        "Ultima Thule",
+        "Tule",
+        "Thula"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-60f0bce1",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Struktura Richat u Mauritaniji, velika je kružna geološka formacija promjera oko 40-50 km a poznata je i kao 'oko' koje pustinje?",
+      "answers": [
+        "Sahare",
+        "Sahara"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-8118eb28",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Koja je svjetski poznata lutka još 1965. godine dobila svoju astronautsku verziju, čak četiri godine prije nego što je Neil Armstrong postao prvi čovjek koji je kročio na Mjesec?",
+      "answers": [
+        "Barbie",
+        "Barbi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7abb38d0",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Kod kojeg mjesta car Valens doživljava veliki poraz od vizigota gdje i sam pogiba, a ta bitka je nagovijestila skori pad zapadnog rimskog carstva?",
+      "answers": [
+        "Hadrijanopola",
+        "Hadrijanopol",
+        "Adrianopola",
+        "Adrianopol",
+        "Hadrianopolisa",
+        "Hadrianopolis",
+        "Drinopolja",
+        "Drinopolje",
+        "Adrianopolisa",
+        "Adrianopolis"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-53d8b6a5",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "Koji je zaljev u Sydneyu poznat po tome što je istraživaču Jamesu Cooku ponudio obilje novih biljnih vrsta?",
+      "answers": [
+        "Botany bay",
+        "Botani bej",
+        "Botani zaljev"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2f8e3bdd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je 1843.g. izradio dagerotip šestog američkog predsjednika, John Quincy Adamsa?",
+      "answers": [
+        "Philip Haas",
+        "Haas",
+        "Filip Has",
+        "Has",
+        "Hes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2eadd881",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Za koje su glazbalo napisana '4 godišnja doba', ciklus od 4 koncerta Antonija Vivaldija?",
+      "answers": [
+        "Violinu",
+        "Violina",
+        "Viola",
+        "Violu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-52b2b4be",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FloraFauna",
+      "question": "Ime koje životinje usko vežemo uz alkoholnu halucinaciju te kompjuter i tastaturu?",
+      "answers": [
+        "Miš",
+        "Miša"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bb0eaaef",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Tijekom prve francuske revolucije i Napoleonovih ratova, protivničke sile su ukupno sklopile koliko vojnih koalicija?",
+      "answers": [
+        "7",
+        "Sedam",
+        "Seven",
+        "VII",
+        "Sevn",
+        "Ziben",
+        "Zieben"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-906ed91b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Sustav video-tehnologije koji u nogometu pomaže sucu da sudi fer i korektnu utakmicu se skraćeno zove VAR, a slovo R označava koju riječ?",
+      "answers": [
+        "Referee",
+        "Refri",
+        "Refre",
+        "Referi",
+        "Refre",
+        "Sudac",
+        "Suca",
+        "Suci",
+        "Sudci",
+        "Sudca",
+        "Refrees",
+        "Refres",
+        "Refris"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d297092c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji kemijski element ima kraticu 'Ne'?",
+      "answers": [
+        "Neon",
+        "Nion"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e16c1a5a",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Film",
+      "question": "Kako se zove ludi znanstvenik sijede kose iz 'Povratka u budućnost'?",
+      "answers": [
+        "Doc Brown",
+        "Emmett Brown",
+        "Dr. Emmett Brown",
+        "Emmett Lathrop Brown",
+        "Dok Brovn",
+        "Emet brovn",
+        "Emet latrop brovn"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-edb01dab",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "'Homo homini lupus', odnosno 'Čovjek je čovjeku vuk', potječe još iz antike. Koji ju je rimski komediograf zapisao stoljećima prije nego što ju je proslavio Thomas Hobbes?",
+      "answers": [
+        "Plaut",
+        "Plautus"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ee99b08",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Pobjedu na Eurosongu 2007.g. i majčinstvo ostvareno uz pomoć surogat-majke krajem 2023.g., kada je dobila sina Marija, u svojoj biografiji ima koja srpska pjevačica?",
+      "answers": [
+        "Marija Šerifović",
+        "Šerifović"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a98600aa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kojom disciplinom završava triatlon?",
+      "answers": [
+        "Trčanjem",
+        "Trčanje",
+        "Running",
+        "Raning",
+        "Run",
+        "Ran",
+        "Trkom",
+        "Utrkom"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c206bc82",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Uz koje otočje su rimljani porazili kartažane i njihovu mornaricu i time okončali 1. Punski rat?",
+      "answers": [
+        "Egadsko otočje",
+        "Egadsko",
+        "Egadski otoci"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f89d6d0d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Koju su poznatu švicarsku čokoladu Theodor Tobler i Emil Baumann osmislili 1908. godine u Bernu?",
+      "answers": [
+        "Toblerone"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9a4fbaf8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se naziva servis nakon kojeg protivnik ne uspije ni dodirnuti lopticu?",
+      "answers": [
+        "As",
+        "Ace",
+        "Ejs"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f260b5af",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Koje robne marke su samovezujuće tenisice iz filma 'Povratak u budućnost 2' ?",
+      "answers": [
+        "Nike",
+        "Nike mag",
+        "Najk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ec84e4a3",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Zemljopis",
+      "question": "Na kojem se poluotoku nalazi Španjolska?",
+      "answers": [
+        "Pirinejskom",
+        "Pirinejski",
+        "Iberskom",
+        "Iberski",
+        "Iberijski",
+        "Iberijskom",
+        "Ibers",
+        "Iberian",
+        "Iberians",
+        "Iberijan",
+        "Ajberijan",
+        "Ajbers",
+        "Iber",
+        "Hibers"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f133c281",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Kako se zove legendarni izgubljeni grad koji Nathan Drake traži u videoigri Uncharted 2: Among Thieves?",
+      "answers": [
+        "Shambhala",
+        "Šambala"
+      ],
+      "image": null
+    }
+  ]
+}

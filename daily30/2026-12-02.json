@@ -1,0 +1,410 @@
+{
+  "version": 2,
+  "date": "2026-12-02",
+  "generatedAt": "2026-11-01T00:59:21.071Z",
+  "questionCount": 30,
+  "sourceFileCount": 17,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-036ca036",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Film",
+      "question": "Koji animirani studio je stvorio 'Priču o igračkama'?",
+      "answers": [
+        "Pixar",
+        "Piksar"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1a54a53b",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "KnjigaSlika",
+      "question": "Završite niz.. N, Na, No, Ni, Ne, ...?",
+      "answers": [
+        "Na"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b0bdb894",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Koja je američka glumica i pjevačica 1995.g. osnovala New York Restoration Project, koristeći celebrity utjecaj za obnovu gradskih parkova i vrtova?",
+      "answers": [
+        "Bette Midler",
+        "Bete Midler",
+        "Beti Midler",
+        "Midler"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-531bea00",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "KnjigaSlika",
+      "question": "Kako se naziva pismo starog Egipta koje se sastoji od slikovnih znakova?",
+      "answers": [
+        "Hijeroglifi",
+        "hijeroglifsko pismo",
+        "Hierogliphes"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-084d6c7b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AntickiRim",
+      "question": "Kako nazivamo proces širenja rimskog jezika, prava, kulture i načina života na osvojene narode?",
+      "answers": [
+        "Romanizam"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-04878d41",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "FloraFauna",
+      "question": "Plod kojeg drveta najviše podsjeća na ljudski mozak?",
+      "answers": [
+        "Oraha",
+        "Orah",
+        "Drvo Oraha",
+        "Orašak",
+        "Oraška"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-aab61352",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove američka televizijska serija koju su zajedno osmislili i režirali Larry David i Jerry Seinfeld?",
+      "answers": [
+        "Seinfeld",
+        "Seinfild"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d4dd30b3",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Povijest",
+      "question": "Koja je sumerska božica ljubavi, plodnosti i rata kasnije postala poznata pod akadskim imenom Ištar?",
+      "answers": [
+        "Inana",
+        "Inanna",
+        "Inena",
+        "Inene"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6834f5f1",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "AntickiRim",
+      "question": "Nastavi redoslijed: August, Tiberije, Kaligula pa tko onda?",
+      "answers": [
+        "Klaudije"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4b903e5b",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Ostalo",
+      "question": "Kako se zvao grčki Bog mora?",
+      "answers": [
+        "Posejdon",
+        "Poseidon"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bf743053",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Znanost",
+      "question": "Koji je kemijski simbol za željezo?",
+      "answers": [
+        "Fe"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9c96d7f8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Koja država je svojim većim dijelom sačinjena od poldera, tj. hidrološke umjetne depresije okružene branama?",
+      "answers": [
+        "Nizozemska",
+        "Holandija",
+        "Holand",
+        "Holend",
+        "Oranje",
+        "Nederland",
+        "Nederlanden"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f321331d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Nadopunite: 'Dok jednom ne smrkne, drugom ne...'?",
+      "answers": [
+        "Svane",
+        "Nesvane",
+        "Ne svane"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-2d9ba58d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Pepsijev kružni znak kombinira crvenu, bijelu i koju treću boju?",
+      "answers": [
+        "Plavu",
+        "Plava",
+        "Blue",
+        "Blu"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-acd02078",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Politika",
+      "question": "Koje je godine Hrvatska postala članica Europske unije?",
+      "answers": [
+        "2013",
+        "Dvije tisuće trinaest"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-eb7288a7",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Merseyside Derby je engleski nogometni derbi koji se igra između Liverpoola i kojeg još kluba?",
+      "answers": [
+        "Evertona",
+        "Everton"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c93e99fb",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Sport",
+      "question": "Kako se zove sport u kojem se natjecatelji bore u ringu koristeći udarce rukama sa specijalnim rukavicama?",
+      "answers": [
+        "Boks",
+        "Boxing",
+        "Boksing"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-1c9df6fb",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Kod kojeg su pacifičkog otoka pronađene olupine brodova Boussole i Astrolabe iz nestale francuske ekspedicije Jean-Françoisa de La Pérousea?",
+      "answers": [
+        "Vanikoro",
+        "Vanikolo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b27421aa",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Smaragd je zeleni oblik minerala berila, a kako nazivamo njegovu modru inačicu?",
+      "answers": [
+        "Akvamarin",
+        "Aquamarin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ff5cd78d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Netflix je prije streaminga filmove korisnicima slao poštom, a na kojem su se nosaču nalazili?",
+      "answers": [
+        "DVD",
+        "DVD-u",
+        "DVD diskovima",
+        "DVD-ovima"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ed6356b1",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Koji je popularni fiktivni lik iz dječjih priča u originalnoj verziji priče završio obješen o drvo od strane Lisice i Mačka, dvojice razbojnika? Iako je pisac prvotno zamislio tragičan kraj, zbog velikog broja šokiranih čitatelja i djece bio je primoran promijeniti završetak i nastaviti priču sretnijim sa krajem.",
+      "answers": [
+        "Pinokijo",
+        "Pinokio",
+        "Pinocchio",
+        "Pinochio"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-d65278af",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Rimski je vojskovođa Julije Cezar svoju brzu vojnu pobjedu kod Zele 47.g. pr. Kr. opisao čuvenim riječima 'Veni, Vidi, ... ,  što?",
+      "answers": [
+        "Vici",
+        "Pobjedih",
+        "Pobjedi",
+        "Pobjeda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-ca8f2121",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kako se naziva broj koji ima točno dva pozitivna djelitelja?",
+      "answers": [
+        "Prost broj",
+        "Prosti",
+        "Prost"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-02a0c821",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Zemljopis",
+      "question": "Ringit je službeno sredstvo plaćanja u kojoj državi?",
+      "answers": [
+        "Maleziji",
+        "Malezija",
+        "Malaysia",
+        "Malejza",
+        "Malejža",
+        "Malaysiji",
+        "Malejziji",
+        "Malejžiji"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-56256e1f",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Ako je x + 5 = 10, koliko je x?",
+      "answers": [
+        "5",
+        "Pet",
+        "Five",
+        "Fajv",
+        "V"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6bcd4bfd",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Glazba",
+      "question": "Koja se pjevačica glazbom počela baviti pod pseudonimom Lizzy Grant a svjetsku slavu stekla pjesmom 'Video Games'?",
+      "answers": [
+        "Lana Del Rey",
+        "Lana Del Rej",
+        "Del Rey",
+        "Del Rej",
+        "Elizabeth Woolridge Grant",
+        "Rey",
+        "Rej"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-bcb4350b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Kako se zvala žena koja je prva obnašala dužnost 'FLOTUS'-a",
+      "answers": [
+        "Martha Washington",
+        "Martha",
+        "Marta Vašington",
+        "Marta"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-142d3de0",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Uz protuteroriste koja još suprotstavljena strana čini osnovu većine mečeva u serijalu videoigara Counter-Strike?",
+      "answers": [
+        "Teroristi",
+        "Terrorists",
+        "Terorists"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b867fc05",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Koja je Splićanka baletne papučice zamijenila mikrofonom u Magazinu, a poslije kao solo zvijezda napunila i splitsku Spaladium Arenu?",
+      "answers": [
+        "Jelena Rozga",
+        "Rozga"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a8db5be6",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove nagrada koja se dodjeljuje za odličja u televizijskoj industriji u SAD-u?",
+      "answers": [
+        "Emmy",
+        "Emi",
+        "Emmy Award",
+        "Emmys",
+        "Emis"
+      ],
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "version": 2,
+  "date": "2026-12-09",
+  "generatedAt": "2026-11-01T00:59:21.071Z",
+  "questionCount": 30,
+  "sourceFileCount": 17,
+  "selectionPolicy": "unique-in-month-and-not-used-in-previous-month",
+  "questions": [
+    {
+      "id": "daily-d7150640",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Znanost",
+      "question": "Koji je britanski teorijski fizičar zbog paralize mišića s okolinom pričao pomoću računalnog sintetizatora glasa?",
+      "answers": [
+        "Stephen Hawking",
+        "Stiven Hovking",
+        "Stefen Hovking",
+        "Hawking",
+        "Hovking",
+        "Havking",
+        "Hoking",
+        "Hokins"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7fce9a57",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Koji je glumac posudio glas lavu Mufasi i u originalu i u remakeu 'Kralj Lavova'?",
+      "answers": [
+        "James Earl Jones",
+        "Džejms Erl Džons",
+        "Earl Jones",
+        "Erl Džons",
+        "Jones",
+        "Džons",
+        "James Jones",
+        "Džejms Džons"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-4ce11574",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Znanost",
+      "question": "Kako se kaže za broj koji je djeljiv samo s 1 i samim sobom?",
+      "answers": [
+        "Prost broj",
+        "Prosti"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-67652412",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Glazba",
+      "question": "Tko je osvojio Euroviziju 2024. s pjesmom 'The Code'?",
+      "answers": [
+        "Nemo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e414f272",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je brazilac proglašen najboljim igračem finala svjetskog nogometnog prvenstva 2002.g.?",
+      "answers": [
+        "Ronaldo Nazario",
+        "Ronaldo",
+        "Nazario"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-69b0851f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Showbiz",
+      "question": "Kazalište Ulysses na Brijunima, poznato po ljetnim predstavama i brojnim slavnim gostima, suosnovao je koji međunarodno poznati glumac?",
+      "answers": [
+        "Rade Šerbedžija",
+        "Šerbedžija"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-769c1322",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "U igri Super Mario, Mario najčešće spašava princezu Peach, a kako se zvala djevojka koju je spašavao od Donkey Konga u originalnoj arkadnoj igri iz 1981.g.?",
+      "answers": [
+        "Pauline",
+        "Polin",
+        "Paulina",
+        "Paulin"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-3d6ac9f9",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Brendovi",
+      "question": "Koja je danas svjetski poznata platforma za iznajmljivanje smještaja nastala 2007. godine u San Franciscu, kada su njezini osnivači odlučili gostima ponuditi spavanje na zračnim madracima u vlastitom stanu?",
+      "answers": [
+        "Airbnb",
+        "Erbienbi",
+        "Airbienbi",
+        "Air b n b",
+        "Air bnb",
+        "Air bienbi",
+        "Er bienbi"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-0eb923b5",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "U kojoj se europskoj državi odvija većina radnje romana 'Don Quijote'?",
+      "answers": [
+        "Španjolska",
+        "Spain",
+        "Espania",
+        "Espanol",
+        "Španija",
+        "Španjolskoj",
+        "Španiji",
+        "Spains",
+        "Spejn",
+        "Spejns",
+        "Espanols",
+        "Espanji",
+        "Espaniji",
+        "Espanja",
+        "Špejn",
+        "Špejns",
+        "Esp",
+        "Spa",
+        "Špa"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b4d3694b",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "MisliIzrekeCitati",
+      "question": "Koji je francuski filozof u drami 'Iza zatvorenih vrata' napisao čuvenu rečenicu 'Pakao, to su drugi'?",
+      "answers": [
+        "Jean-Paul Sartre",
+        "Žan Paul Sartr",
+        "Sartre",
+        "Sartr"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-9df16224",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Nogomet",
+      "question": "Koji je trener odveo Porto do osvajanja Lige Prvaka 2004.g.?",
+      "answers": [
+        "Jose Mourinho",
+        "Hoze Murinjo",
+        "Mourinho",
+        "Murinjo"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-59347640",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "FloraFauna",
+      "question": "U bitki kod Peluzija 525. pr. Kr. Perzijanci su pobijedili Egipćane noseći sa sobom koje današnje kućne ljubimce?",
+      "answers": [
+        "Mačke",
+        "Mačku",
+        "Cat",
+        "Cats",
+        "Ket",
+        "Kets"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-41bacac8",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Zemljopis",
+      "question": "Najviši vulkan u Europi pripada Španjolskoj, nalazi se na Kanarima, visok je 3718m a zove se kako?",
+      "answers": [
+        "Teide",
+        "Tejde",
+        "Teida",
+        "Tejda"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-08d3a1de",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Gaming",
+      "question": "Koja je američka kompanija razvila popularnu mobilnu videoigru Pokémon GO, objavljenu 2016.g.?",
+      "answers": [
+        "Niantic",
+        "Niantik"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-f02593df",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "KnjigaSlika",
+      "question": "Kako se zove vrsta rečenice koja završava upitnikom?",
+      "answers": [
+        "Upitna rečenica",
+        "upitna"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-b7769a4d",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Ostalo",
+      "question": "Kako se zove nordijski bog groma?",
+      "answers": [
+        "Thor",
+        "Tor"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-cb839144",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "FloraFauna",
+      "question": "Iz koje biljke dobivamo prirodni lateks?",
+      "answers": [
+        "Kaučukovca",
+        "Brazilski kaučukovac",
+        "Kaučuka",
+        "Kaučuk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-23fe1fed",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Književnost",
+      "question": "Kraljicu koje boje, uz bijelu, Alisa susreće u svojoj pustolovini s one strane ogledala?",
+      "answers": [
+        "Crvenu",
+        "Crvena",
+        "Red",
+        "Rot",
+        "Roten",
+        "Rote"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7662b54f",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Tko je bio Nixonov savjetnik za nacionalnu sigurnost, a kasnije i državni tajnik?",
+      "answers": [
+        "Henry Kissinger",
+        "Henri Kisindžer",
+        "Kissinger",
+        "Kisindžer"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-240e385b",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "Zemljopis",
+      "question": "Koja rijeka svoje posljednje kilometre prije ušća provodi kao granica između Rumunjske i Ukrajine?",
+      "answers": [
+        "Dunav",
+        "Donao",
+        "Donau"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-e45a7d33",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Sport",
+      "question": "Kako se u karateu naziva unaprijed određeni slijed tehnika protiv zamišljenih protivnika?",
+      "answers": [
+        "Kate",
+        "Kata",
+        "Cate",
+        "Cata"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-706b6d5a",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "Moreplovci",
+      "question": "Koje se jezero u današnjoj Kolumbiji povezuje s obredima naroda Muisca, prinošenjem predmeta od zlata i nastankom legende o El Doradu?",
+      "answers": [
+        "Guatavita",
+        "Gvatavita"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-13512248",
+      "type": "blitz",
+      "difficulty": 4,
+      "topic": "Povijest",
+      "question": "Koje ime dijele majka Aleksandra Velikog i četverogodišnje razdoblje u antičkoj Grčkoj",
+      "answers": [
+        "Olimpijada"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-6e5c8204",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "Kojim su imenom Marko Polo i drugi srednjovjekovni Europljani nazivali sjevernu Kinu, preuzevši naziv povezan s narodom Kitana?",
+      "answers": [
+        "Cathay",
+        "Kataj"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-93bfab1a",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "svastara",
+      "question": "'Formacija izgubljenog čovjeka' je ceremonijalna formacija koju izvode koja vojna sredstva?",
+      "answers": [
+        "Zrakoplovi",
+        "Avioni",
+        "Planes",
+        "Plejns",
+        "Airplanes",
+        "Erplejns",
+        "Helikopteri",
+        "Helikopters",
+        "Helicopters",
+        "Avions",
+        "Letjelice",
+        "Flyings",
+        "Flajings",
+        "Flyers",
+        "Flajers"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-7ced993c",
+      "type": "blitz",
+      "difficulty": 3,
+      "topic": "AmerickiPredsjednici",
+      "question": "Koje ime dijele vođa indijanskog plemena Sauka koji se predao američkoj vojsci u ratu 1832.g. te helikopteri američke vojske koji su pali u Somaliji 1993.g.?",
+      "answers": [
+        "Crni Jastreb",
+        "Black Hawk",
+        "Blek Hok",
+        "Blek Hovk"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-c1cd1c33",
+      "type": "blitz",
+      "difficulty": 2,
+      "topic": "FilmGlazba",
+      "question": "Kako se zove animirana serija o obitelji iz Springfieda čiji je otac Homer?",
+      "answers": [
+        "Simpsoni",
+        "The Simpsons"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-a7d77af5",
+      "type": "blitz",
+      "difficulty": 1,
+      "topic": "Povijest",
+      "question": "Koja je njemačka vladarska dinastija neprekidno vladala Bavarskom od 1180. do 1918. godine, ukupno 738 godina?",
+      "answers": [
+        "Wittelsbach",
+        "Vitelsbah"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-78025aad",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "Film",
+      "question": "Kako se zove zlikovac u prvom od filmova 'Umri muški' (Die Hard)?",
+      "answers": [
+        "Hans Gruber",
+        "Gruber"
+      ],
+      "image": null
+    },
+    {
+      "id": "daily-dd263dca",
+      "type": "blitz",
+      "difficulty": 5,
+      "topic": "AntickiRim",
+      "question": "Koji rimski car u svojim zadnjim sekundama života izgovara čuvene riječi 'Kakav umjetnik umire!'?",
+      "answers": [
+        "Neron",
+        "Nero"
+      ],
+      "image": null
+    }
+  ]
+}
