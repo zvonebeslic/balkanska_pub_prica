@@ -1,0 +1,240 @@
+[
+  {
+    "id": "chatgpt10000-00579-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Povijest",
+    "focus": "Inka bilježenje podataka čvorovima",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "U carstvu Inka popisi i brojčani podaci mogli su putovati bez papira: na obojenim uzicama raspoređivali su se čvorovi. Kako se zvao taj sustav zapisa?",
+    "answers": [
+      "Kipu",
+      "Quipu",
+      "Khipu"
+    ],
+    "explanation": "Kipu je sustav uzica i čvorova kojima su Inke bilježile podatke.",
+    "sources": [
+      "https://www.si.edu/collections/snapshot/quipu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00580-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Kemija",
+    "focus": "Opsidijan kao prirodno vulkansko staklo",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Od ove vulkanske tvari, nastale vrlo brzim hlađenjem lave, izrađivali su se oštri vrhovi strijela i noževi. Koje je ime tog prirodnog stakla?",
+    "answers": [
+      "Opsidijan",
+      "Obsidijan",
+      "Obsidian"
+    ],
+    "explanation": "Opsidijan nema pravilnu kristalnu strukturu, a pri lomljenju daje vrlo oštre rubove.",
+    "sources": [
+      "https://www.nps.gov/places/000/obsidian-cliff.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00581-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Matisseov linorez Begonias I",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Henri Matisse izradio je 1938. grafiku 'Begonias I' rezanjem matrice od materijala poznatog i s podova. Kako se zove ta grafička tehnika?",
+    "answers": [
+      "Linorez",
+      "Linogravura",
+      "Linocut"
+    ],
+    "explanation": "Muzej Metropolitan vodi Matisseovu grafiku kao linorez (linocut).",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/492864"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00582-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Moda",
+    "focus": "Japanska rezbarena kopča netsuke",
+    "difficulty": 4,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Sitne japanske rezbarije od drva ili bjelokosti nekad su služile i kao kopče za predmete obješene o pojas kimona. Kojim se nazivom poznaju?",
+    "answers": [
+      "Netsuke",
+      "Necuke"
+    ],
+    "explanation": "Netsuke su mali japanski rezbareni predmeti povezani s tradicionalnom odjećom.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/60314"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00583-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Zemljopis",
+    "focus": "Stupovi hoodoo u Bryce Canyonu",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U američkom parku Bryce Canyon mraz i kiša iz stijena oblikuju uske tornjeve nalik kamenim figurama. Koji se engleski naziv koristi za te stupove?",
+    "answers": [
+      "Hoodoo",
+      "Hoodoos",
+      "Hudu"
+    ],
+    "explanation": "Hoodoo je izolirani erozijski stup nastao trošenjem sedimentnih stijena.",
+    "sources": [
+      "https://www.nps.gov/brca/learn/nature/hoodoos.htm/index.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00584-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Astronomija",
+    "focus": "Metanska mora Saturnova Titana",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Na Zemlji su mora od vode, no na jednom Saturnovu mjesecu postoje jezera i mora tekućeg metana. O kojem je mjesecu riječ?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Sonda Cassini snimila je metanska jezera i mora blizu Titanova sjevernog pola.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/titans-northern-polar-clouds/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00585-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Tehnologija",
+    "focus": "Broj vakuumskih cijevi računala ENIAC",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Računalo ENIAC iz 1940-ih zauzimalo je prostoriju i za rad koristilo približno koliko tisuća elektronskih cijevi?",
+    "answers": [
+      "18",
+      "18 tisuća",
+      "18000",
+      "18.000"
+    ],
+    "explanation": "ENIAC je sadržavao oko 18.000 vakuumskih cijevi.",
+    "sources": [
+      "https://www.computerhistory.org/revolution/digital-logic/12/271/1342"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00586-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Sport",
+    "focus": "Duljina prvog modernog olimpijskog maratona",
+    "difficulty": 4,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Maraton danas iznosi 42,195 km, ali utrka na prvim modernim Olimpijskim igrama 1896. bila je kraća. Koliko je približno kilometara bila duga?",
+    "answers": [
+      "40",
+      "40 km",
+      "Četrdeset"
+    ],
+    "explanation": "Prvi olimpijski maraton u Ateni bio je dug oko 40 kilometara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00587-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Izumitelj čičak-trake po uzoru na čičak",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Šetnja sa psom i sjemenke koje se lijepe za krzno potaknule su nastanak čičak-trake. Kako se prezivao švicarski inženjer George koji ju je osmislio?",
+    "answers": [
+      "De Mestral",
+      "Mestral",
+      "George de Mestral"
+    ],
+    "explanation": "George de Mestral proučio je kukice na plodovima čička i razvio zatvarač s kukicama i petljama.",
+    "sources": [
+      "https://invention.si.edu/invention-stories/george-de-mestral-velcror-inventor"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00588-20261101",
+    "createdAt": "2026-11-01T19:39:02+01:00",
+    "updatedAt": "2026-11-01T19:39:02+01:00",
+    "topic": "Zanati",
+    "focus": "Ugo da Carpi višebojni drvorez",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Talijanski grafičar Ugo da Carpi u 16. stoljeću usavršavao je višebojni drvorez kojim se tiskalo iz više matrica. Kako se zove tehnika čiji naziv doslovno znači 'svijetlo-tamno'?",
+    "answers": [
+      "Chiaroscuro",
+      "Kjaroskuro",
+      "Kjaroskuro drvorez"
+    ],
+    "explanation": "Chiaroscuro drvorez koristi više drvenih matrica za različite tonske vrijednosti.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/337700"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
