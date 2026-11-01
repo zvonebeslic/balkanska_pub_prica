@@ -8,7 +8,7 @@ const ROUNDS=[
   {code:"kvizoznalac",name:"KVIZOZNALAC",desc:"Pitanje za pitanjem / 1 bod za svaki točan odgovor.",count:6,points:1},
   {code:"kaladont",name:"KA - LA - DONT",desc:"Zadnja dva slova prvog odgovora su prva dva slova idućeg odgovora / 1 bod za svaki točan odgovor.",count:5,points:1},
   {code:"jucer",name:"JUČER, DANAS, SUTRA",desc:"Pitanja o aktualnostima / 1 bod za svaki točan odgovor.",count:3,points:1},
-  {code:"pjevaj",name:"PJEVAJ MI PJEVAJ",desc:"Prepoznaj ime izvođača i ime pjesme / 1 bod za svaki točan odgovor (1a. Ime pjesme / 1b. Ime izvođača).",count:1,points:2}
+  {code:"pjevaj",name:"PJEVAJ MI PJEVAJ",desc:"Prepoznaj ime izvođača i ime pjesme / 1 bod za svaki točan odgovor.",count:1,points:2}
  ]},
  {name:"2. KRUG",stated:29,sections:[
   {code:"slovo",name:"SVE NA SLOVO",desc:"Svaki točan odgovor počinje istim slovom / 1 bod za svaki točan odgovor.",count:6,points:1},
@@ -568,6 +568,7 @@ function renderSharedSlide(root,slide,options={}){
    (Number.isInteger(slide.sectionQuestionCount)&&slide.sectionQuestionCount>0?
     '<div class="rubric-question-count">('+slide.sectionQuestionCount+' '+(slide.sectionQuestionCount===1?'pitanje':'pitanja')+')</div>':'')+
    '<div class="rubric-description">'+esc(slide.description||"")+'</div>'+
+   (slide.sectionCode==="pjevaj"?'<div class="rubric-song-note">(1a. Ime pjesme / 1b. Ime izvođača)</div>':"")+
    (slide.sectionCode==="abc"?'<div class="rubric-instruction">Zaokruži slovo na pitanju za odgovor koji misliš da je točan.</div>':"")+
    (specialExamples|| (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':""))+'</div>');
   return;
