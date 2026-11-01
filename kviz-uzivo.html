@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
 <meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=7">
+<link rel="stylesheet" href="kviz-uzivo.css?v=8">
 </head>
 <body>
 <div id="editorApp">
@@ -65,7 +65,10 @@
       </div>
       <p class="muted tiny">Privatnu poveznicu za upravljanje šalji samo voditelju. Publika dobiva isključivo kod ili poveznicu za ekran.</p>
     </section>
-    <div class="host-display"><div class="screen" id="previewPane"></div></div>
+    <div class="host-display">
+      <img src="kviz-uzivo-logo.webp" class="host-preview-logo" alt="" aria-hidden="true">
+      <div class="screen" id="previewPane"></div>
+    </div>
     <nav class="host-controls" aria-label="Upravljanje pitanjima">
       <button id="prevBtn" type="button">← Prethodno</button>
       <button id="revealBtn" type="button" class="success">Prikaži odgovor</button>
@@ -143,6 +146,6 @@
 <div id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
 <script src="kviz-uzivo-sync.js?v=1" defer></script>
-<script src="kviz-uzivo.js?v=7" defer></script>
+<script src="kviz-uzivo.js?v=8" defer></script>
 </body>
 </html>
