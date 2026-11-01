@@ -573,12 +573,11 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  const question=String(slide.question||"");
- // Prvih 55 znakova bez smanjivanja; zatim za svakih novih 10 znakova jedan korak manje.
- // Koraci su blaži kod vrlo dugih pitanja, da font ne postane nečitljiv.
+ // Balanced continuous scale: short questions are calmer, long questions stay readable.
+ // Keep the same adaptive size for the ABC options on stage, host and remote.
  const questionChars=[...question.trim()].length;
- const questionStep=Math.max(0,Math.ceil((questionChars-55)/10));
- const reduction=Math.min(questionStep,11)*0.28+Math.max(0,questionStep-11)*0.06;
- const questionStyle='--q-reduce:'+reduction.toFixed(2)+'vw;--q-reduce-preview:'+(reduction*0.55).toFixed(2)+'vw';
+ const reduction=Math.min(1.90,Math.max(0,questionChars-55)*0.0057);
+ const questionStyle='--q-reduce:'+reduction.toFixed(3)+'vw;--q-reduce-preview:'+(reduction*0.55).toFixed(3)+'vw;--q-reduce-mobile:'+(reduction*0.85).toFixed(3)+'vw';
  const choices=(slide.choices||[]).map(t=>{
   const isCorrect=!!slide.revealed&&!!slide.correct&&
    (String(t).startsWith(slide.correct+")")||String(t)===slide.correct);
