@@ -613,8 +613,8 @@ function renderSharedSlide(root,slide,options={}){
  // The correct letters arrive only when the presenter reveals the answer.
  // Derive them from the existing revealed answer so no lyrics leak early.
  const lyricLetters=slide.sectionCode==="stihovi"&&slide.revealed?
-  String(slide.answer||"").trim().split(/\\s+/u)
-   .map(word=>word.match(/[\\p{L}\\p{N}]/gu)||[]).filter(word=>word.length>0):[];
+  String(slide.answer||"").trim().split(/\s+/u)
+   .map(word=>word.match(/[\p{L}\p{N}]/gu)||[]).filter(word=>word.length>0):[];
  const lyricBlanks=slide.sectionCode!=="stihovi"?"":lyricLengths.length?
   '<div class="lyric-blanks'+(slide.revealed?' lyric-blanks-revealed':'')+'" role="img" aria-label="'+
    (slide.revealed&&lyricLetters.length?esc(slide.answer):lyricLengths.length+' riječi: '+lyricLengths.join(", ")+' slova')+'">'+
