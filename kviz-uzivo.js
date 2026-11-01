@@ -28,12 +28,39 @@ const ROUNDS=[
   {code:"gameset",name:"GAME, SET, MATCH",desc:"Dvije serije po tri pitanja: lako 0,5 boda, srednje 1 bod, teško 2 boda.",count:6,points:2}
  ]}
 ];
+
+// Redoslijed projekcije: dobrodošlica, najava kruga, najava rubrike, pitanja, ljestvica.
+const SLIDES=[
+ {kind:"welcome"},
+ ...ROUNDS.flatMap((round,r)=>[
+  {kind:"round",r},
+  ...round.sections.flatMap((section,si)=>[
+   {kind:"section",r,s:si},
+   ...Array.from({length:section.count},(_,i)=>({kind:"question",r,s:si,i}))
+  ]),
+  {kind:"score",r}
+ ])
+];
+const SECTION_EXAMPLES={
+ povezano:"Primjer: odgovore mogu povezivati ista boja, zanimanje ili skriveni zajednički pojam.",
+ kaladont:"Primjer: MORE → REČENICA. Zadnja dva slova prvog odgovora započinju sljedeći.",
+ slovo:"Primjer: ako je zadano slovo M, svi točni odgovori počinju slovom M.",
+ abecedalica:"Primjer slijeda: A, B, C... Svaki sljedeći odgovor dolazi abecedno iza prethodnog.",
+ gameset:"U svakoj seriji tri pitanja donose redom 0,5, 1 i 2 boda."
+};
+const WELCOME_RULES=[
+ "Kviz se igra u 3 kruga.",
+ "Mobitele utišajte i spremite. Tijekom kruga nije dopušteno njihovo korištenje.",
+ "Tijekom kruga nema izlaska iz prostorije ni odlaska na WC. Pauze su između krugova.",
+ "Pratite upute voditelja i poštujte ostale ekipe."
+];
+const currentSlide=()=>SLIDES[Math.max(0,Math.min(slideIndex,SLIDES.length-1))];
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const uid=()=>typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():"ktg-"+Date.now()+"-"+Math.random().toString(36).slice(2);
 const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
-let db,project=null,position={r:0,s:0,i:0},revealed=false,showBoard=false,timerUntil=0;
+let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false;
 let channel=null,saveTimer=null,toastTimer=null,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
@@ -105,8 +132,18 @@ function scoreAllowed(r,s,i){
  if(c==="pjevaj")return [0,1,2];
  return [0,pointsFor(r,s,i)];
 }
-function total(team){return Object.values(team.scores||{}).reduce((a,b)=>a+(Number(b)||0),0);}
-function sortedTeams(){return [...(project?.teams||[])].sort((a,b)=>total(b)-total(a)||a.name.localeCompare(b.name,"hr"));}
+function roundScore(team,r){
+ const stored=team?.roundScores?.[r];
+ if(stored!==null&&stored!==undefined&&stored!==""&&Number.isFinite(Number(stored)))return Number(stored);
+ return Object.entries(team?.scores||{}).reduce((sum,[key,value])=>key.startsWith(r+"-")?sum+(Number(value)||0):sum,0);
+}
+function total(team,through=2){return [0,1,2].filter(r=>r<=through).reduce((sum,r)=>sum+roundScore(team,r),0);}
+function sortedTeams(through=2){return [...(project?.teams||[])].sort((a,b)=>total(b,through)-total(a,through)||a.name.localeCompare(b.name,"hr"));}
+function leaderboardRows(through=2){
+ return sortedTeams(through).map(t=>({
+  name:t.name,rounds:[0,1,2].map(r=>r<=through?roundScore(t,r):null),score:total(t,through)
+ }));
+}
 function ensureChannel(){
  if(!("BroadcastChannel" in window)||!project)return;
  if(channel){channel.close();channel=null;}
@@ -114,13 +151,13 @@ function ensureChannel(){
  channel.onmessage=async event=>{
    const m=event.data||{};
    if(stageMode){
-     if(m.type==="state"&&m.quiz?.id===project.id){project=m.quiz;position=m.position||position;revealed=!!m.revealed;showBoard=!!m.showBoard;timerUntil=m.timerUntil||0;renderStage();}
+     if(m.type==="state"&&m.quiz?.id===project.id){project=m.quiz;position=m.position||position;slideIndex=Number.isInteger(m.slideIndex)?Math.max(0,Math.min(m.slideIndex,SLIDES.length-1)):slideIndex;revealed=!!m.revealed;showBoard=!!m.showBoard;renderStage();}
    }else if(m.type==="hello")pushStage();
  };
  if(stageMode)channel.postMessage({type:"hello"});
 }
 function pushStage(){
- if(channel&&!stageMode&&project)channel.postMessage({type:"state",quiz:project,position,revealed,showBoard,timerUntil});
+ if(channel&&!stageMode&&project)channel.postMessage({type:"state",quiz:project,position,slideIndex,revealed,showBoard});
  if(!stageMode&&project&&window.KTGSync?.isHost())window.KTGSync.broadcastHost(sharedSlide());
 }
 function roundMax(r){return ROUNDS[r].sections.reduce((sum,s,si)=>sum+Array.from({length:s.count},(_,i)=>pointsFor(r,si,i)).reduce((a,b)=>a+b,0),0);}
