@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-00510-20261101",
+    "createdAt": "2026-11-01T09:41:00+01:00",
+    "updatedAt": "2026-11-01T09:41:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Sljedeći prolazak Venere preko Sunčeva diska nakon 2012.",
+    "difficulty": 4,
+    "styleId": 100,
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "question": "Nakon što je 2012. posljednji put prešla preko Sunčeva diska gledano sa Zemlje, Venera će isti rijetki prizor ponoviti tek u kojoj godini 22. stoljeća?",
+    "answers": [
+      "2117",
+      "2117."
+    ],
+    "explanation": "Tranziti Venere dolaze u parovima razmaknutima osam godina; nakon 2004. i 2012. sljedeći je 2117.",
+    "sources": [
+      "https://science.nasa.gov/resource/2012-venus-transit/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
