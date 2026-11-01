@@ -528,7 +528,7 @@ function renderSharedSlide(root,slide,options={}){
  }
  if(type==="round"){
   root.innerHTML=inner("slide--round",
-   '<div class="slide-center"><div class="slide-kicker">SLJEDEĆI KRUG</div>'+
+   '<div class="slide-center">'+
    '<div class="slide-hero">'+esc(slide.roundName||"KRUG")+'</div>'+
    '<div class="slide-subtitle">Maksimalno '+textNumber(slide.maxPoints)+' bodova</div>'+
    '<div class="slide-rule-meta">'+esc(slide.sectionsCount||"")+' rubrika</div></div>');
