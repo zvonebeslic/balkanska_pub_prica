@@ -303,3 +303,88 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .stage-screen .welcome-rules li{font-size:clamp(13px,1.3vw,21px)}
  .stage-screen .rubric-description{font-size:clamp(19px,1.7vw,29px)}
 }
+
+
+/* KvizToGo 2026-11-01: previous luminous frame, logo cutting across its top border */
+#stageApp{
+ --frame-top:clamp(75px,10vh,124px);
+ --frame-side:clamp(17px,3.5vw,76px);
+ --corner-logo-width:clamp(120px,10.8vw,182px);
+ --corner-logo-rise:clamp(53px,5.5vw,90px);
+}
+#stageApp .stage-screen{
+ position:relative;
+ padding-top:var(--frame-top);
+ padding-right:var(--frame-side);
+ padding-left:var(--frame-side);
+}
+/* Interrupt the gradient line under the transparent logo, not with a dark rectangle. */
+#stageApp .stage-screen::after{
+ content:"";
+ position:absolute;
+ z-index:3;
+ pointer-events:none;
+ top:var(--frame-top);
+ right:calc(var(--frame-side) + 12px);
+ width:calc(var(--corner-logo-width) + 3px);
+ height:6px;
+ background:#04131e;
+}
+#stageApp .stage-badge{
+ top:calc(var(--frame-top) - var(--corner-logo-rise));
+ right:calc(var(--frame-side) + 12px);
+ width:var(--corner-logo-width);
+ z-index:4;
+}
+#stageApp .stage-badge img{
+ display:block;
+ width:100%;
+ height:auto;
+ max-width:none;
+ border-radius:0;
+ mix-blend-mode:screen;
+ filter:drop-shadow(0 5px 12px rgba(0,0,0,.25));
+}
+#stageApp .stage-badge img.logo-cutout{
+ mix-blend-mode:normal;
+ filter:drop-shadow(0 8px 18px rgba(0,0,0,.5));
+}
+.host-display{position:relative}
+.host-display .host-preview-logo{
+ position:absolute;
+ top:-33px;
+ right:30px;
+ z-index:4;
+ width:104px;
+ height:auto;
+ border:0;
+ mix-blend-mode:screen;
+ pointer-events:none;
+}
+.host-display .host-preview-logo.logo-cutout{
+ mix-blend-mode:normal;
+ filter:drop-shadow(0 3px 8px #0009);
+}
+/* Do not force 'ili', 'ne', and other lowercase letters into uppercase. */
+.slide--question .screen-head{
+ text-transform:none;
+ letter-spacing:normal;
+}
+.slide--question .screen-head strong{
+ text-transform:none;
+ letter-spacing:.015em;
+ font-variant:normal;
+}
+.slide--section .rubric-hero{
+ text-transform:none;
+ font-variant:normal;
+ letter-spacing:-.027em;
+}
+@media(max-width:650px){
+ #stageApp{--frame-top:88px;--frame-side:12px;--corner-logo-width:94px;--corner-logo-rise:43px}
+ #stageApp .stage-screen::after{height:4px;width:calc(var(--corner-logo-width) + 2px)}
+ .host-display .host-preview-logo{top:-24px;right:18px;width:72px}
+}
+@media(max-height:600px) and (min-width:800px){
+ #stageApp{--frame-top:65px;--corner-logo-width:clamp(100px,9vw,130px);--corner-logo-rise:clamp(46px,4.5vw,60px)}
+}
