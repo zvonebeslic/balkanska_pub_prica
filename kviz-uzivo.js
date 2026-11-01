@@ -152,6 +152,39 @@ function isVolTwoQuiz(q){
  const title=String(q?.title||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
  return /\bkviz\s+opceg\s+znanja\s*(?:(?:vol(?:umen)?|br)\.?\s*)?2\b/.test(title);
 }
+function isAutoVolTwoImage(url){
+ const value=String(url||"");
+ return /^https:\/\/zvonebeslic\.github\.io\/balkanska_pub_prica\/kviz-uzivo-vol2-(?:zvijezde|outline)-[1-4]\.svg(?:[?#].*)?$/i.test(value)||
+  value==="https://upload.wikimedia.org/wikipedia/commons/a/aa/Bartolomeu-Dias-217x300.jpg";
+}
+async function clearAutoVolTwoImages(){
+ const quizzes=await storeAll("quizzes");
+ let cleaned=0;
+ for(const quiz of quizzes){
+  if(!isVolTwoQuiz(quiz))continue;
+  let changed=false;
+  for(const round of quiz.rounds||[])for(const section of round.sections||[])for(const q of section.items||[]){
+   if(isAutoVolTwoImage(q.mediaUrl)){
+    // Do not touch mediaId, which may refer to a picture uploaded by the presenter.
+    q.mediaUrl="";
+    changed=true;
+   }
+   if(Array.isArray(q.optionImages)){
+    const next=q.optionImages.map(u=>isAutoVolTwoImage(u)?"":u);
+    if(next.some((u,i)=>u!==q.optionImages[i])){
+     if(next.every(u=>!u))delete q.optionImages;
+     else q.optionImages=next;
+     changed=true;
+    }
+   }
+  }
+  if(changed){
+   await storePut("quizzes",quiz);
+   cleaned++;
+  }
+ }
+ return cleaned;
+}
 async function ensureVolTwoQuiz(){
  const existing=(await storeAll("quizzes")).find(isVolTwoQuiz);
  if(existing)return false; // Keep saved edits, answers, media and team data.
@@ -1215,6 +1248,7 @@ async function init(){
   if(!stageMode){
    try{
     await ensureVolTwoQuiz();
+    await clearAutoVolTwoImages(); // Also fix Vol. 2 copies saved before this update.
     all=await storeAll("quizzes");
    }catch(error){console.warn("Vol. 2 nije učitan:",error);}
   }
