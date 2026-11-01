@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total": 1541,
+  "total": 1546,
   "months": [
     "2026-10",
     "2026-10-chatgpt-00182-00184",
@@ -58,7 +58,8 @@
     "2026-11-chatgpt-00511-00512",
     "2026-11-chatgpt-00513-00522",
     "2026-11-chatgpt-00523-00532",
-    "2026-11-chatgpt-00533"
+    "2026-11-chatgpt-00533",
+    "2026-11-chatgpt-00534-00538"
   ],
   "styleCounts": {
     "1": 40,
@@ -69,10 +70,10 @@
     "6": 26,
     "7": 9,
     "8": 54,
-    "9": 32,
+    "9": 33,
     "10": 12,
-    "11": 20,
-    "12": 42,
+    "11": 21,
+    "12": 43,
     "13": 5,
     "14": 27,
     "15": 24,
@@ -105,7 +106,7 @@
     "42": 3,
     "43": 3,
     "45": 1,
-    "46": 56,
+    "46": 57,
     "47": 37,
     "49": 4,
     "50": 12,
@@ -154,20 +155,20 @@
     "95": 11,
     "96": 10,
     "97": 11,
-    "98": 27,
+    "98": 28,
     "99": 6,
     "100": 4
   },
   "topicCounts": {
     "Glazba": 63,
     "Tehnologija": 59,
-    "Astronomija": 85,
+    "Astronomija": 86,
     "Gastronomija": 39,
     "Književnost": 41,
-    "Sport": 61,
-    "Likovna umjetnost": 68,
+    "Sport": 62,
+    "Likovna umjetnost": 69,
     "Životinje": 57,
-    "Povijest": 77,
+    "Povijest": 78,
     "Zemljopis": 59,
     "Biologija": 51,
     "Fizika": 32,
@@ -193,7 +194,7 @@
     "Vremenske prilike": 28,
     "More i ocean": 45,
     "Svakodnevica": 17,
-    "Zanati": 45,
+    "Zanati": 46,
     "Poljoprivreda": 29,
     "Pop kultura": 20,
     "Obrazovanje": 20,
@@ -211,10 +212,10 @@
   },
   "difficultyCounts": {
     "1": 194,
-    "2": 346,
-    "3": 390,
-    "4": 360,
+    "2": 349,
+    "3": 391,
+    "4": 361,
     "5": 251
   },
-  "updatedAt": "2026-11-01T13:37:55+01:00"
+  "updatedAt": "2026-11-01T14:44:03+01:00"
 }
