@@ -868,3 +868,29 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 .history-table th:nth-child(2){text-align:left}
 .history-table td:last-child{font-weight:900;color:#8df0c4}
 .history-empty{padding:28px;background:#12273c;border:1px solid #315372;border-radius:14px;color:#d2e5f5;text-align:center}
+
+/* Vol. 2 ABC zviježđa: A/B/C are unlabeled visual options until reveal. */
+.screen-choices.image-choices{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+ width:min(100%,1480px);align-items:stretch;gap:clamp(6px,1.1vw,18px);
+}
+.screen-choices.image-choices .image-choice{
+ min-width:0;display:flex;flex-direction:column;align-items:center;
+ gap:clamp(4px,.8vh,12px);padding:clamp(6px,1vw,14px);
+ background:#09253a;border:2px solid #386480;border-radius:15px;
+ font-size:clamp(15px,1.2vw,24px)!important;
+}
+.screen-choices.image-choices .image-choice.correct{border-color:#bd9c63;background:#153c44}
+.image-choice-letter{color:#d7efff;font-size:clamp(19px,1.7vw,33px);line-height:1}
+.image-choice img{display:block;max-width:100%;width:100%;height:auto;max-height:min(35vh,270px);object-fit:contain;border-radius:9px}
+.image-choice-revealed{font-size:clamp(12px,1.1vw,22px);font-weight:900;color:#bd9c63;line-height:1.18;text-align:center}
+.host-display .image-choice-letter,.remote-preview .image-choice-letter{font-size:18px}
+.host-display .image-choice img,.remote-preview .image-choice img{max-height:120px}
+.host-display .image-choice-revealed,.remote-preview .image-choice-revealed{font-size:12px}
+@media(max-width:680px){
+ .screen-choices.image-choices{gap:4px}
+ .screen-choices.image-choices .image-choice{padding:4px}
+ .image-choice-letter{font-size:18px}
+ .image-choice img{max-height:21vh}
+ .image-choice-revealed{font-size:11px}
+}
