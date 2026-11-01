@@ -575,7 +575,8 @@ function renderSharedSlide(root,slide,options={}){
   root.innerHTML=inner("slide--thanks",
    '<div class="slide-center">'+
    '<div class="slide-hero thanks-hero">'+esc(slide.title||"Hvala vam na igri!")+'</div>'+
-   '<div class="thanks-website">'+esc(slide.website||"KvizToGo.com")+'</div>'+
+   '<div class="thanks-website" aria-label="'+esc(slide.website||"KvizToGo.com")+'">'+
+    '<span class="thanks-kviz">Kviz</span><span class="thanks-to">To</span><span class="thanks-go">Go</span><span class="thanks-dotcom">.com</span></div>'+
    '</div>');
   return;
  }
