@@ -45,8 +45,7 @@ const SECTION_EXAMPLES={
  povezano:"Primjer: odgovore mogu povezivati ista boja, zanimanje ili skriveni zajednički pojam.",
  kaladont:"", // Rich Kaladont example is rendered directly, never in the old boxed format.
  slovo:"", // Rich all-on-P example is rendered using the same unboxed rubric style.
- abecedalica:"Primjer slijeda: A, B, C... Svaki sljedeći odgovor dolazi abecedno iza prethodnog.",
- gameset:"U svakoj seriji tri pitanja donose redom 0,5, 1 i 2 boda."
+ abecedalica:"Primjer slijeda: A, B, C... Svaki sljedeći odgovor dolazi abecedno iza prethodnog."
 };
 const WELCOME_RULES=[
  "Kviz se igra u 3 kruga.",
