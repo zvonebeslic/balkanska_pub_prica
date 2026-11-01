@@ -34,7 +34,7 @@
   }).on("broadcast",{event:"state"},event=>{
    if(role!=="host"&&event.payload&&event.payload.kind==="ktg-slide")callbacks.onState?.(event.payload);
   }).on("broadcast",{event:"command"},event=>{
-   if(role==="host"&&secret&&event.payload?.secret===secret&&["next","previous","reveal","board"].includes(event.payload.action)){
+   if(role==="host"&&secret&&event.payload?.secret===secret&&["next","previous","reveal","board","font-smaller","font-larger","font-auto"].includes(event.payload.action)){
     callbacks.onCommand?.(event.payload.action);
    }
   });
@@ -71,7 +71,7 @@
   if(connected)transmit("state",slide);
  }
  function sendCommand(action){
-  if(role!=="controller"||!secret||!["next","previous","reveal","board"].includes(action))return;
+  if(role!=="controller"||!secret||!["next","previous","reveal","board","font-smaller","font-larger","font-auto"].includes(action))return;
   if(!connected){status("Nema veze. Provjeri internet.");return;}
   transmit("command",{action,secret});
  }
