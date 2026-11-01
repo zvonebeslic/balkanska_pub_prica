@@ -29,8 +29,12 @@
   if(!validRoom(room))throw Error("Kod mora imati 8 znakova.");
   stop();role=roleName;activeRoom=room.toUpperCase();callbacks=handlers||{};
   channel=client.channel("ktg-stage-"+activeRoom,{config:{broadcast:{self:false,ack:true}}});
-  channel.on("broadcast",{event:"hello"},()=>{
-   if(role==="host"&&latest)transmit("state",latest);
+  channel.on("broadcast",{event:"hello"},event=>{
+   if(role==="host"){
+    const device=event.payload?.device;
+    if(device==="audience"||device==="controller")callbacks.onPeer?.(device);
+    if(latest)transmit("state",latest);
+   }
   }).on("broadcast",{event:"state"},event=>{
    if(role!=="host"&&event.payload&&event.payload.kind==="ktg-slide")callbacks.onState?.(event.payload);
   }).on("broadcast",{event:"command"},event=>{
@@ -49,21 +53,24 @@
   });
   status("Spajanje…");
  }
- function startHost({room,controlSecret,getState,onStatus,onCommand}){
+ function startHost({room,controlSecret,getState,onStatus,onPeer,onCommand}){
   if(!validRoom(room))throw Error("Neispravan kod sobe.");
-  subscribe(room,"host",{onStatus,onCommand});
+  subscribe(room,"host",{onStatus,onPeer,onCommand});
   secret=controlSecret;
   latest=getState?.()||null;
   if(connected&&latest)transmit("state",latest);
-  broadcastTick=setInterval(()=>{if(role==="host"&&connected&&latest)transmit("state",latest);},14000);
+  broadcastTick=setInterval(()=>{if(role==="host"&&connected&&latest)transmit("state",latest);},10000);
  }
  function startAudience({room,onState,onStatus}){
   subscribe(room,"audience",{onState,onStatus});
+  // An audience joining before the host must still be discovered later.
+  broadcastTick=setInterval(()=>{if(role==="audience"&&connected)transmit("hello",{device:"audience"});},10000);
  }
  function startController({room,controlSecret,onState,onStatus}){
   if(!/^[0-9a-f]{48}$/.test(controlSecret||""))throw Error("Privatna voditeljska poveznica nije valjana.");
   subscribe(room,"controller",{onState,onStatus});
   secret=controlSecret;
+  broadcastTick=setInterval(()=>{if(role==="controller"&&connected)transmit("hello",{device:"controller"});},10000);
  }
  function broadcastHost(slide){
   if(role!=="host")return;
