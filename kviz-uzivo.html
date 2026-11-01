@@ -34,7 +34,8 @@
       <button id="manageBtn" type="button" class="home-action"><span class="action-icon">☷</span><span><strong>Moji kvizovi</strong><small>Otvori, uvezi, izvezi ili obriši</small></span><span>→</span></button>
     </div>
     <div class="join-audience">
-      <p>Želiš otvoriti ekran za publiku na TV-u ili drugom uređaju?</p>
+      <strong class="join-title">📺 Ovaj uređaj je TV ili projektor?</strong>
+      <p>Na voditeljskom mobitelu pokreni povezivanje. <strong>Kod prikazan na mobitelu upiši ovdje.</strong> Na TV-u nemoj otvarati zasebnu voditeljsku sobu.</p>
       <div class="join-line"><input type="text" id="joinRoom" maxlength="12" autocomplete="off" autocapitalize="characters" placeholder="Kod prikaza, npr. K8R3T9XP" aria-label="Kod ekrana za publiku">
       <button type="button" id="joinAudience" class="primary">📺 Spoji ekran</button></div>
     </div>
@@ -57,7 +58,8 @@
     </div>
     <section class="pair-panel" id="pairPanel" hidden>
       <div class="pair-heading"><strong>🔗 Povezani uređaji</strong><span id="pairStatus" class="muted">Nije povezano</span></div>
-      <p class="muted tiny">TV otvara ekran za publiku, a mobitel ili laptop mogu upravljati kvizom. Potrebna je internetska veza.</p>
+      <p class="pair-guide">Na TV-u otvori početnu stranicu kviza, pa u polje „Spoji ekran” upiši <strong>ovaj kod s mobitela</strong>. Na TV-u nemoj ponovno pritiskati „Poveži TV / mobitel”, jer to stvara drugu sobu.</p>
+      <p class="muted tiny">TV prikazuje slajdove, a voditeljski mobitel ili laptop njima upravlja. Za povezivanje je potreban internet.</p>
       <div class="pair-data">
         <div><span class="eyebrow">KOD ZA TV</span><strong class="room-code" id="roomCode">--------</strong></div>
         <div><span class="eyebrow">POVEZNICA ZA PUBLIKU</span><input type="text" id="audienceLink" readonly><button type="button" id="copyAudience">Kopiraj vezu</button></div>
@@ -145,7 +147,7 @@
   </div>
 <div id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
-<script src="kviz-uzivo-sync.js?v=1" defer></script>
-<script src="kviz-uzivo.js?v=21" defer></script>
+<script src="kviz-uzivo-sync.js?v=2" defer></script>
+<script src="kviz-uzivo.js?v=22" defer></script>
 </body>
 </html>
