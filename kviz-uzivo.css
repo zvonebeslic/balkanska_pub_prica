@@ -787,3 +787,20 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 @media(max-width:730px){
  .stage-screen .rubric-question-progress{font-size:clamp(16px,3.8vw,24px)}
 }
+
+/* Završni slajd: hvala neposredno prije posljednje ljestvice. */
+.slide--thanks .slide-center{gap:clamp(18px,3vh,42px)}
+.slide--thanks .thanks-hero{max-width:1100px;text-align:center}
+.slide--thanks .thanks-website{
+ color:#bd9c63;
+ font-weight:950;
+ font-size:clamp(24px,3.15vw,57px);
+ letter-spacing:.035em;
+ line-height:1.2;
+ overflow-wrap:anywhere;
+}
+.host-display .slide--thanks .thanks-website{font-size:clamp(17px,2.25vw,32px)}
+.remote-preview .slide--thanks .thanks-website{font-size:clamp(16px,2vw,28px)}
+@media(max-width:730px){
+ .stage-screen .slide--thanks .thanks-website{font-size:clamp(19px,5vw,35px)}
+}
