@@ -305,36 +305,27 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 }
 
 
-/* KvizToGo 2026-11-01: previous luminous frame, logo cutting across its top border */
+/* Presenter has no floating logo. Audience logo sits just inside the bottom-right
+   edge of the uninterrupted luminous frame, including on extra-wide screens. */
 #stageApp{
  --frame-top:clamp(75px,10vh,124px);
  --frame-side:clamp(17px,3.5vw,76px);
- --corner-logo-width:clamp(120px,10.8vw,182px);
- --corner-logo-rise:clamp(53px,5.5vw,90px);
+ --frame-bottom:clamp(24px,4vh,50px);
 }
 #stageApp .stage-screen{
  position:relative;
  padding-top:var(--frame-top);
  padding-right:var(--frame-side);
+ padding-bottom:var(--frame-bottom);
  padding-left:var(--frame-side);
 }
-/* Interrupt the gradient line under the transparent logo, not with a dark rectangle. */
-#stageApp .stage-screen::after{
- content:"";
- position:absolute;
- z-index:3;
- pointer-events:none;
- top:var(--frame-top);
- right:calc(var(--frame-side) + 12px);
- width:calc(var(--corner-logo-width) + 3px);
- height:6px;
- background:#04131e;
-}
 #stageApp .stage-badge{
- top:calc(var(--frame-top) - var(--corner-logo-rise));
- right:calc(var(--frame-side) + 12px);
- width:var(--corner-logo-width);
+ top:auto;
+ bottom:calc(var(--frame-bottom) + 15px);
+ right:calc(max(var(--frame-side), (100vw - 1720px) / 2) + 15px);
+ width:clamp(60px,6vw,96px);
  z-index:4;
+ pointer-events:none;
 }
 #stageApp .stage-badge img{
  display:block;
@@ -350,21 +341,6 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  filter:drop-shadow(0 8px 18px rgba(0,0,0,.5));
 }
 .host-display{position:relative}
-.host-display .host-preview-logo{
- position:absolute;
- top:-33px;
- right:30px;
- z-index:4;
- width:104px;
- height:auto;
- border:0;
- mix-blend-mode:screen;
- pointer-events:none;
-}
-.host-display .host-preview-logo.logo-cutout{
- mix-blend-mode:normal;
- filter:drop-shadow(0 3px 8px #0009);
-}
 /* Do not force 'ili', 'ne', and other lowercase letters into uppercase. */
 .slide--question .screen-head{
  text-transform:none;
@@ -381,12 +357,12 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  letter-spacing:-.027em;
 }
 @media(max-width:650px){
- #stageApp{--frame-top:88px;--frame-side:12px;--corner-logo-width:94px;--corner-logo-rise:43px}
- #stageApp .stage-screen::after{height:4px;width:calc(var(--corner-logo-width) + 2px)}
- .host-display .host-preview-logo{top:-24px;right:18px;width:72px}
+ #stageApp{--frame-top:88px;--frame-side:12px;--frame-bottom:18px}
+ #stageApp .stage-badge{width:60px;right:calc(var(--frame-side) + 10px);bottom:calc(var(--frame-bottom) + 10px)}
 }
 @media(max-height:600px) and (min-width:800px){
- #stageApp{--frame-top:65px;--corner-logo-width:clamp(100px,9vw,130px);--corner-logo-rise:clamp(46px,4.5vw,60px)}
+ #stageApp{--frame-top:65px;--frame-bottom:20px}
+ #stageApp .stage-badge{width:clamp(52px,5vw,72px);bottom:calc(var(--frame-bottom) + 10px)}
 }
 
 
