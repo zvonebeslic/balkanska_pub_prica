@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-00559-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptunov prvi obilazak Sunca nakon otkrića",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Otkriće planeta dogodilo se 1846., a njegov prvi puni obilazak Sunca od tada završio je tek 2011. O kojem je planetu riječ?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "Neptunu za jedan obilazak Sunca treba oko 165 zemaljskih godina.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00560-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Kemija",
+    "focus": "Metan i boja Urana",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na jednom ledenom divu plin u atmosferi upija crveni dio Sunčeve svjetlosti pa planet izgleda plavozeleno. Koji plin stvara taj učinak?",
+    "answers": [
+      "Metan",
+      "Methane",
+      "CH4"
+    ],
+    "explanation": "Metan apsorbira crvenu svjetlost i pridonosi Uranovoj plavozelenoj boji.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00561-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Povijest",
+    "focus": "Egipatska fajansa na bazi kvarca",
+    "difficulty": 5,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Iako naziv sugerira keramiku, staroegipatska fajansa nije bila izrađena prvenstveno od gline. Koji je mineral činio najveći dio njezine mase?",
+    "answers": [
+      "Kvarc",
+      "Quartz",
+      "Kremen"
+    ],
+    "explanation": "Egipatska fajansa izrađivala se pretežno od usitnjenog kvarca odnosno pijeska.",
+    "sources": [
+      "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/the-art-of-ancient-egypt.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00562-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Fizika",
+    "focus": "Saturnova prosječna gustoća",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Kad bismo imali dovoljno golem spremnik vode, koji bi planet zbog prosječne gustoće manje od vode mogao plutati u njemu?",
+    "answers": [
+      "Saturn"
+    ],
+    "explanation": "Saturnova prosječna gustoća približno je dvije trećine gustoće vode.",
+    "sources": [
+      "https://science.nasa.gov/resource/gas-giant-interiors-2003/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00563-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Zemljopis",
+    "focus": "Kuiperov pojas iza Neptuna",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Daleko iza osmog planeta proteže se prstenasto područje ledenih tijela u kojem se nalazi i Pluton. Kako se naziva?",
+    "answers": [
+      "Kuiperov pojas",
+      "Kuiper belt",
+      "Kajperov pojas"
+    ],
+    "explanation": "Kuiperov pojas područje je ledenih tijela izvan Neptunove orbite.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00564-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Egipatski plavi pigment",
+    "difficulty": 4,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Drevni Egipćani zagrijavali su pijesak, natron i bakreni spoj kako bi dobili umjetni pigment. Koju su boju tako proizvodili?",
+    "answers": [
+      "Plavu",
+      "Plava",
+      "Plavu boju"
+    ],
+    "explanation": "Tako je nastajao pigment poznat kao egipatska plava.",
+    "sources": [
+      "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/the-art-of-ancient-egypt.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00565-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Meteorologija",
+    "focus": "Neptunovi nadzvučni vjetrovi",
+    "difficulty": 3,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Vjetrovi na ovom planetu dosežu više od 2000 km/h, iako prima vrlo malo Sunčeve energije. Koji je to planet?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "NASA opisuje Neptun kao najvjetrovitiji planet Sunčeva sustava.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00566-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Biologija",
+    "focus": "Mogućnost života u Europinu oceanu",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Ledena kora jednog Jupiterova mjeseca skriva ocean koji je važna meta potrage za mogućim životom. Kako se zove taj mjesec?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "NASA navodi ocean pod Europinom ledenom korom kao potencijalno pogodno okruženje.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00567-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Matematika",
+    "focus": "Omjer rezonancije Neptuna i Plutona",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Dok Neptun napravi tri obilaska Sunca, Pluton ih napravi dva. Kojim se omjerom, redom Pluton prema Neptunu, izražava ta orbitalna rezonancija?",
+    "answers": [
+      "2:3",
+      "2/3",
+      "Dva prema tri"
+    ],
+    "explanation": "Plutonova i Neptunova gibanja nalaze se u rezonanciji 2:3.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00568-20261101",
+    "createdAt": "2026-11-01T17:41:31+01:00",
+    "updatedAt": "2026-11-01T17:41:31+01:00",
+    "topic": "Tehnologija",
+    "focus": "Voyager 2 kod Neptuna",
+    "difficulty": 3,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Godine 1989. jedna je svemirska letjelica proletjela pokraj Neptuna i snimila njegovu Veliku tamnu pjegu. Kako se zvala?",
+    "answers": [
+      "Voyager 2",
+      "Vojadžer 2"
+    ],
+    "explanation": "Voyager 2 jedina je letjelica koja je izbliza istražila Neptun.",
+    "sources": [
+      "https://science.nasa.gov/mission/voyager/fact-sheet/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
