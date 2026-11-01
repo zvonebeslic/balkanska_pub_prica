@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00465-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Povijest",
+    "focus": "Rosetta Stone tri pisma",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je kamen, pronađen 1799. u Egiptu, omogućio usporedbu hijeroglifa s grčkim tekstom?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rozetski kamen",
+      "Rosetta Stone"
+    ],
+    "explanation": "Na ploči je isti dekret zapisan različitim pismima.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/Y_EA24"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00466-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bospor povezuje Crno i Mramorno more",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koji tjesnac dijeli europski i azijski dio Istanbula te spaja Crno i Mramorno more?",
+    "answers": [
+      "Bospor",
+      "Bosphorus",
+      "Bosforski tjesnac"
+    ],
+    "explanation": "Bospor prolazi kroz Istanbul i povezuje dva mora.",
+    "sources": [
+      "https://www.britannica.com/place/Bosporus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00467-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Biologija",
+    "focus": "Mikoriza simbioza gljiva korijenja",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Gljiva biljci olakšava upijanje minerala, a zauzvrat dobiva šećere. Kako se naziva njihova veza na razini korijena?",
+    "answers": [
+      "Mikoriza",
+      "Mycorrhiza"
+    ],
+    "explanation": "Mikoriza je simbioza gljive i korijena biljke.",
+    "sources": [
+      "https://www.britannica.com/science/mycorrhiza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00468-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Matematika",
+    "focus": "Eulerova karakteristika konveksnog poliedra",
+    "difficulty": 4,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Kocka ima osam vrhova, dvanaest bridova i šest ploha. Koliko iznosi broj vrhova minus broj bridova plus broj ploha?",
+    "answers": [
+      "2",
+      "Dva"
+    ],
+    "explanation": "Eulerova karakteristika konveksnog poliedra iznosi dva.",
+    "sources": [
+      "https://mathworld.wolfram.com/EulerCharacteristic.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00469-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Glazba",
+    "focus": "Oboa daje ton za ugađanje orkestra",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Prije početka simfonijskog koncerta jedan puhački instrument obično daje ton A prema kojem se ugađa orkestar. Koji?",
+    "answers": [
+      "Oboa",
+      "Oboe"
+    ],
+    "explanation": "Oboa često daje referentni ton za orkestralno ugađanje.",
+    "sources": [
+      "https://www.britannica.com/art/oboe"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00470-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Književnost",
+    "focus": "Kapetan Nemo podmornica Nautilus",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kapetan Nemo u romanu Julesa Vernea putuje podmornicom koja dijeli ime s morskim glavonošcem. Kako se ona zove?",
+    "answers": [
+      "Nautilus",
+      "Nautil"
+    ],
+    "explanation": "Nautilus je podmornica u romanu Dvadeset tisuća milja pod morem.",
+    "sources": [
+      "https://www.britannica.com/topic/Twenty-Thousand-Leagues-Under-the-Sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00471-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Kemija",
+    "focus": "Volfram simbol W",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "U žarnim nitima klasičnih žarulja koristio se metal čiji kemijski simbol W potječe od naziva wolfram. Koji je hrvatski naziv tog elementa?",
+    "answers": [
+      "Volfram",
+      "Wolfram"
+    ],
+    "explanation": "Volfram ima visoko talište i kemijski simbol W.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/74/tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00472-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Sport",
+    "focus": "Maraton službena duljina 42.195 km",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Trkači na maratonu ne završavaju nakon 42 kilometra: koliko još metara moraju prijeći do službene duljine utrke?",
+    "answers": [
+      "195",
+      "195 metara"
+    ],
+    "explanation": "Maraton je dug 42 kilometra i 195 metara.",
+    "sources": [
+      "https://worldathletics.org/disciplines/road-running/marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00473-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kratica quick response",
+    "difficulty": 1,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Kvadratni kod koji mobitel očitava kamerom poznat je kao QR kod. Koje dvije engleske riječi skrivaju slova QR?",
+    "answers": [
+      "Quick Response"
+    ],
+    "explanation": "QR znači Quick Response, odnosno brzi odgovor.",
+    "sources": [
+      "https://www.qrcode.com/en/about/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00474-20261101",
+    "createdAt": "2026-11-01T01:40:51+01:00",
+    "updatedAt": "2026-11-01T01:40:51+01:00",
+    "topic": "Umjetnost",
+    "focus": "Freska pigment na svježoj žbuci",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Za razliku od slikanja na suhom zidu, ova tehnika nanosi pigment na još vlažnu žbuku. Kako se zove?",
+    "answers": [
+      "Freska",
+      "Fresco"
+    ],
+    "explanation": "Kod prave freske pigment se veže sa žbukom dok se ona suši.",
+    "sources": [
+      "https://www.britannica.com/art/fresco-painting"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
