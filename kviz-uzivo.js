@@ -598,8 +598,8 @@ function renderSharedSlide(root,slide,options={}){
    '</div>':
    slide.sectionCode==="gameover"?
    '<div class="rubric-examples" aria-label="Dva primjera igre Game Over Time">'+
-    '<div class="rubric-example-group">(Primjer: Deep <span class="ktg-gold">Purple</span> - <span class="ktg-gold">Purple</span> Rain = Deep <span class="ktg-gold">Purple</span> Rain)</div>'+
-    '<div class="rubric-example-group">(Michael <span class="ktg-gold">Owen</span> - <span class="ktg-gold">Owen</span> Wilson = Michael <span class="ktg-gold">Owen</span> Wilson)</div>'+
+    '<div class="rubric-example-group" style="color:#bd9c63">(Primjer: Deep <span class="ktg-gold">Purple</span> - <span class="ktg-gold">Purple</span> Rain = Deep <span class="ktg-gold">Purple</span> Rain)</div>'+
+    '<div class="rubric-example-group" style="color:#bd9c63">(Michael <span class="ktg-gold">Owen</span> - <span class="ktg-gold">Owen</span> Wilson = Michael <span class="ktg-gold">Owen</span> Wilson)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
