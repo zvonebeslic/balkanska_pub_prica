@@ -43,7 +43,7 @@ const SLIDES=[
 ];
 const SECTION_EXAMPLES={
  povezano:"Primjer: odgovore mogu povezivati ista boja, zanimanje ili skriveni zajednički pojam.",
- kaladont:"Primjer: MORE → REČENICA. Zadnja dva slova prvog odgovora započinju sljedeći.",
+ kaladont:"(Trokut - Utakmica - Canberra - Razlomak - Akropola)",
  slovo:"Primjer: ako je zadano slovo M, svi točni odgovori počinju slovom M.",
  abecedalica:"Primjer slijeda: A, B, C... Svaki sljedeći odgovor dolazi abecedno iza prethodnog.",
  gameset:"U svakoj seriji tri pitanja donose redom 0,5, 1 i 2 boda."
