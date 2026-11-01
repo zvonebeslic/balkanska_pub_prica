@@ -85,6 +85,8 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const uid=()=>typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():"ktg-"+Date.now()+"-"+Math.random().toString(36).slice(2);
 const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
+const VOL_TWO_PARTS=["kviz-uzivo-vol2-1.json","kviz-uzivo-vol2-2.json","kviz-uzivo-vol2-3.json"];
+const VOL_TWO_SOURCE="KvizToGo-Vol-2-2026-11";
 const VOL_ONE_CLEANUP_KEY="ktg-keep-only-vol1-2026-11-01";
 let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false,publishTargetRound=0;
 let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode=new URLSearchParams(location.search).get("stage")==="1";
@@ -122,6 +124,40 @@ async function makeExampleQuiz(){
   }
  }
  return quiz;
+}
+async function makeVolTwoQuiz(){
+ const parts=await Promise.all(VOL_TWO_PARTS.map(async path=>{
+  const response=await fetch(path+"?v=1",{cache:"no-store"});
+  if(!response.ok)throw Error("Dio Vol. 2 nije dostupan: "+path+" ("+response.status+")");
+  return response.json();
+ }));
+ const quiz=createQuiz();
+ quiz.title="Kviz Općeg Znanja Vol. 2";
+ quiz.sampleSource=VOL_TWO_SOURCE;
+ for(let r=0;r<ROUNDS.length;r++){
+  const sections=parts[r]?.sections;
+  if(parts[r]?.round!==r+1||!Array.isArray(sections)||sections.length!==ROUNDS[r].sections.length)
+   throw Error("Vol. 2 nema sve rubrike u "+(r+1)+". krugu.");
+  for(let s=0;s<sections.length;s++){
+   const items=sections[s],expected=ROUNDS[r].sections[s].count;
+   if(!Array.isArray(items)||items.length!==expected)
+    throw Error("Vol. 2 ima neispravan broj pitanja u rubrici "+ROUNDS[r].sections[s].name);
+   quiz.rounds[r].sections[s].items=items.map(item=>({...baseItem(),...item}));
+  }
+ }
+ return quiz;
+}
+function isVolTwoQuiz(q){
+ if(q?.sampleSource===VOL_TWO_SOURCE)return true;
+ const title=String(q?.title||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+ return /\bkviz\s+opceg\s+znanja\s*(?:(?:vol(?:umen)?|br)\.?\s*)?2\b/.test(title);
+}
+async function ensureVolTwoQuiz(){
+ const existing=(await storeAll("quizzes")).find(isVolTwoQuiz);
+ if(existing)return false; // Keep saved edits, answers, media and team data.
+ const vol2=await makeVolTwoQuiz();
+ await persist(vol2);
+ return true;
 }
 async function installExampleQuiz(){
  endPairing();
@@ -162,10 +198,13 @@ async function keepOnlyVolOne(all,wantedId){
  // Preserve the currently selected Vol. 1 if present, otherwise the most recently edited one.
  const selected=candidates.find(q=>q.id===wantedId)||
   [...candidates].sort((a,b)=>(Number(b.updatedAt)||0)-(Number(a.updatedAt)||0))[0];
- const extra=all.filter(q=>q.id!==selected.id);
+ // A previously saved Vol. 2 is also allowed; never delete it during the old
+ // Vol. 1-only migration when a device first opens the updated studio.
+ const kept=all.filter(q=>q.id===selected.id||isVolTwoQuiz(q));
+ const extra=all.filter(q=>!kept.some(keep=>keep.id===q.id));
  for(const old of extra)await storeDelete("quizzes",old.id);
  localStorage.setItem(VOL_ONE_CLEANUP_KEY,"complete");
- return {all:[selected],selected,deleted:extra.length};
+ return {all:kept,selected,deleted:extra.length};
 }
 function toast(text,bad=false){const el=$("toast");el.textContent=text;el.style.background=bad?"#723242":"#24425e";el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,4200);}
 function scheduleSave(){if(stageMode||!project)return;$("saveStatus").textContent="Spremam promjene…";clearTimeout(saveTimer);saveTimer=setTimeout(()=>persist().catch(e=>toast("Greška spremanja: "+e.message,true)),450);}
@@ -688,7 +727,7 @@ function sharedSlide(){
    ...publicBoard(r)};
  }
  if(slide.kind==="welcome")return {
-  ...base,title:"Dobrodošli!",subtitle:"Kviz općeg znanja vol. 1",
+  ...base,title:"Dobrodošli!",subtitle:project.title||"Kviz općeg znanja",
   rules:WELCOME_RULES,maxPoints:ROUNDS.reduce((sum,_,r)=>sum+roundMax(r),0),
   roundPoints:ROUNDS.map((_,r)=>roundMax(r)),ending:"Sretno svima!"
  };
@@ -1148,6 +1187,12 @@ async function init(){
   if(!stageMode){
    cleanup=await keepOnlyVolOne(all,wanted);
    all=cleanup.all;
+  }
+  if(!stageMode){
+   try{
+    await ensureVolTwoQuiz();
+    all=await storeAll("quizzes");
+   }catch(error){console.warn("Vol. 2 nije učitan:",error);}
   }
   project=cleanup.selected||all.find(x=>x.id===wanted)||all[0]||null;
   if(stageMode){
