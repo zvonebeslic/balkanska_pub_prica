@@ -480,3 +480,57 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
   font-size:clamp(19px,calc(5vw - var(--q-reduce,0vw)),76px);
  }
 }
+
+
+/* ABC: ponuđeni odgovori veličinom prate pitanje, zadržavaju svoj postojeći izgled i font. */
+.slide--section .rubric-instruction{
+ max-width:1120px;
+ margin-top:clamp(8px,1.6vh,18px);
+ color:#c8e1f5;
+ font-weight:750;
+ font-size:clamp(19px,1.9vw,35px);
+ line-height:1.35;
+ text-wrap:balance;
+}
+.screen-choices.abc-choices{
+ display:flex;
+ flex-wrap:wrap;
+ width:100%;
+ justify-content:center;
+ align-items:center;
+ gap:clamp(8px,1vw,18px);
+}
+.screen-choices.abc-choices .screen-choice{
+ line-height:1.2;
+ font-weight:700;
+ white-space:normal;
+ overflow-wrap:anywhere;
+}
+.stage-screen .screen-choices.abc-choices .screen-choice{
+ font-size:clamp(22px,calc(6.1vw - var(--q-reduce,0vw)),116px);
+}
+.host-display .screen-choices.abc-choices .screen-choice{
+ font-size:clamp(15px,calc(3.9vw - var(--q-reduce-preview,0vw)),67px);
+}
+.remote-preview .screen-choices.abc-choices .screen-choice{
+ font-size:clamp(15px,calc(3.6vw - var(--q-reduce-preview,0vw)),58px);
+}
+.host-display .rubric-instruction{font-size:clamp(14px,1.55vw,23px)}
+.remote-preview .rubric-instruction{font-size:clamp(12px,1.3vw,22px)}
+@media(max-width:730px){
+ .stage-screen .screen-choices.abc-choices .screen-choice{
+  font-size:clamp(17px,calc(7.5vw - var(--q-reduce,0vw)),57px);
+ }
+ .host-display .screen-choices.abc-choices .screen-choice{
+  font-size:clamp(14px,calc(4.3vw - var(--q-reduce-preview,0vw)),32px);
+ }
+ .remote-preview .screen-choices.abc-choices .screen-choice{
+  font-size:clamp(14px,calc(4.5vw - var(--q-reduce-preview,0vw)),32px);
+ }
+ .stage-screen .rubric-instruction{font-size:clamp(17px,3vw,29px)}
+}
+@media(max-height:650px) and (min-width:750px){
+ .stage-screen .screen-choices.abc-choices .screen-choice{
+  font-size:clamp(19px,calc(5vw - var(--q-reduce,0vw)),76px);
+ }
+}
