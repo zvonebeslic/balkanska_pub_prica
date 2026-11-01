@@ -597,8 +597,8 @@ function renderSharedSlide(root,slide,options={}){
    '</div>':
    slide.sectionCode==="asocijacija"?
    '<div class="rubric-examples rubric-association-examples" aria-label="Dva primjera asocijacija">'+
-    '<div class="rubric-example-group">(Primjer: Smiljan, izmjenična struja, zavojnica, golubovi = <span class="ktg-gold">Nikola Tesla</span>)</div>'+
-    '<div class="rubric-example-group">(Primjer 2: pijesak, vrijeme, staklene komore, preokretanje = <span class="ktg-gold">pješčani sat</span>)</div>'+
+    '<div class="rubric-example-group">(Primjer: Smiljan, Struja, New York, Golubovi = <span class="ktg-gold">Nikola Tesla</span>)</div>'+
+    '<div class="rubric-example-group">(Primjer 2: Pijesak, Tourbillion, Ruka, Big Ben = <span class="ktg-gold">Sat</span>)</div>'+
    '</div>':
    slide.sectionCode==="abecedalica"?
    '<div class="rubric-examples" aria-label="Primjer abecednog redoslijeda">'+
