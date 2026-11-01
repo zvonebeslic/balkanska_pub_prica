@@ -479,7 +479,7 @@ function sharedSlide(){
  if(!q)return base;
  return {
   ...base,slideType:"question",roundName:ROUNDS[slide.r].name,
-  sectionTitle:rubricDisplayName(section.name),
+  sectionTitle:rubricDisplayName(section.name),sectionCode:section.code,
   question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
@@ -544,6 +544,7 @@ function renderSharedSlide(root,slide,options={}){
    '<div class="slide-center">'+
    '<div class="slide-hero rubric-hero">'+esc(slide.sectionTitle||"Rubrika")+'</div>'+
    '<div class="rubric-description">'+esc(slide.description||"")+'</div>'+
+   (slide.sectionCode==="abc"?'<div class="rubric-instruction">Zaokruži slovo na pitanju za odgovor koji misliš da je točan.</div>':"")+
    (specialExamples|| (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':""))+'</div>');
   return;
  }
@@ -575,8 +576,8 @@ function renderSharedSlide(root,slide,options={}){
  }).join("");
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong></div>'+
-  '<div class="screen-body"><div class="screen-title question-adaptive" style="'+questionStyle+'">'+esc(question)+'</div>'+
-  (choices?'<div class="screen-choices">'+choices+'</div>':"")+
+  '<div class="screen-body" style="'+questionStyle+'"><div class="screen-title question-adaptive">'+esc(question)+'</div>'+
+  (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
   '</div>');
