@@ -777,3 +777,13 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .stage-screen .estimate-accepted-range{font-size:clamp(17px,4vw,29px)}
  .host-display .estimate-accepted-range{font-size:clamp(14px,3vw,22px)}
 }
+
+/* GAME, SET, MATCH: two clearly separated series of questions 1–3. */
+.gameset-series-nav{margin:7px 0 12px}
+.gameset-series-caption{display:block;margin:0 0 6px;color:#bd9c63;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.07em}
+.gameset-question-series{color:#bd9c63;font-weight:900;font-size:clamp(18px,1.65vw,30px);line-height:1.25;letter-spacing:.04em}
+.host-display .gameset-question-series{font-size:clamp(13px,1.25vw,22px)}
+.remote-preview .gameset-question-series{font-size:clamp(12px,1.2vw,20px)}
+@media(max-width:730px){
+ .stage-screen .gameset-question-series{font-size:clamp(16px,3.8vw,24px)}
+}
