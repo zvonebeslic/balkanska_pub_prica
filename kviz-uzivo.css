@@ -446,3 +446,37 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .stage-screen .rubric-example-group{font-size:clamp(17px,1.75vw,28px)}
  .rubric-examples{gap:8px;margin-top:6px}
 }
+
+
+/* Fino, kontinuirano postepeno smanjenje pitanja po broju znakova:
+   puna veličina do 55 znakova; svakih novih 10 znakova = jedan korak manje.
+   Jednako pravilo za projektor, pregled voditelja i daljinsko upravljanje. */
+.stage-screen .screen-title.question-adaptive{
+ font-size:clamp(22px,calc(6.1vw - var(--q-reduce,0vw)),116px);
+ line-height:1.18;
+}
+.host-display .screen-title.question-adaptive{
+ font-size:clamp(15px,calc(3.9vw - var(--q-reduce-preview,0vw)),67px);
+ line-height:1.2;
+}
+.remote-preview .screen-title.question-adaptive{
+ font-size:clamp(15px,calc(3.6vw - var(--q-reduce-preview,0vw)),58px);
+ line-height:1.2;
+}
+@media(max-width:730px){
+ .stage-screen .screen-title.question-adaptive{
+  font-size:clamp(17px,calc(7.5vw - var(--q-reduce,0vw)),57px);
+  line-height:1.21;
+ }
+ .host-display .screen-title.question-adaptive{
+  font-size:clamp(14px,calc(4.3vw - var(--q-reduce-preview,0vw)),32px);
+ }
+ .remote-preview .screen-title.question-adaptive{
+  font-size:clamp(14px,calc(4.5vw - var(--q-reduce-preview,0vw)),32px);
+ }
+}
+@media(max-height:650px) and (min-width:750px){
+ .stage-screen .screen-title.question-adaptive{
+  font-size:clamp(19px,calc(5vw - var(--q-reduce,0vw)),76px);
+ }
+}
