@@ -595,6 +595,11 @@ function renderSharedSlide(root,slide,options={}){
    slide.sectionCode==="abecedalica"?
    '<div class="rubric-examples" aria-label="Primjer abecednog redoslijeda">'+
     '<div class="rubric-example-group">(Primjer: <span class="ktg-gold">L</span>uka Modrić, <span class="ktg-gold">L</span>jubljana, <span class="ktg-gold">M</span>aori, <span class="ktg-gold">N</span>igdjezemska, <span class="ktg-gold">N</span>juškalo)</div>'+
+   '</div>':
+   slide.sectionCode==="gameover"?
+   '<div class="rubric-examples" aria-label="Dva primjera igre Game Over Time">'+
+    '<div class="rubric-example-group">(Primjer: Deep <span class="ktg-gold">Purple</span> - <span class="ktg-gold">Purple</span> Rain = Deep <span class="ktg-gold">Purple</span> Rain)</div>'+
+    '<div class="rubric-example-group">(Michael <span class="ktg-gold">Owen</span> - <span class="ktg-gold">Owen</span> Wilson = Michael <span class="ktg-gold">Owen</span> Wilson)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
