@@ -562,6 +562,12 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  const question=String(slide.question||"");
+ // Prvih 55 znakova bez smanjivanja; zatim za svakih novih 10 znakova jedan korak manje.
+ // Koraci su blaži kod vrlo dugih pitanja, da font ne postane nečitljiv.
+ const questionChars=[...question.trim()].length;
+ const questionStep=Math.max(0,Math.ceil((questionChars-55)/10));
+ const reduction=Math.min(questionStep,11)*0.28+Math.max(0,questionStep-11)*0.06;
+ const questionStyle='--q-reduce:'+reduction.toFixed(2)+'vw;--q-reduce-preview:'+(reduction*0.55).toFixed(2)+'vw';
  const choices=(slide.choices||[]).map(t=>{
   const isCorrect=!!slide.revealed&&!!slide.correct&&
    (String(t).startsWith(slide.correct+")")||String(t)===slide.correct);
@@ -569,7 +575,7 @@ function renderSharedSlide(root,slide,options={}){
  }).join("");
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong></div>'+
-  '<div class="screen-body"><div class="screen-title '+(question.length>155?"extra-long":question.length>70?"long":"")+'">'+esc(question)+'</div>'+
+  '<div class="screen-body"><div class="screen-title question-adaptive" style="'+questionStyle+'">'+esc(question)+'</div>'+
   (choices?'<div class="screen-choices">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
