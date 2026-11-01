@@ -526,6 +526,14 @@ function sharedSlide(){
  };
  const q=itemAt(slide.r,slide.s,slide.i);
  if(!q)return base;
+ // Retain the explanation for older saved copies of this specific example quiz.
+ // Only show it when all four original clues still match.
+ const putinClues=section.code==="asocijacija"&&slide.i===4&&
+  String(q.answer||"").trim().toLocaleLowerCase("hr-HR")==="vladimir putin"&&
+  ["kgb","kremlj","judo","dresden"].every((answer,i)=>
+   String(itemAt(slide.r,slide.s,i)?.answer||"").trim().toLocaleLowerCase("hr-HR")===answer);
+ const putinExplanation=putinClues?
+  String(q.explanation||"KGB – radio je u toj službi; Kremlj – predsjednička rezidencija; Judo – ima crni pojas; Dresden – ondje je službovao za KGB.").trim():"";
  return {
   ...base,slideType:"question",roundName:ROUNDS[slide.r].name,
   sectionTitle:rubricDisplayName(section.name),sectionCode:section.code,
@@ -538,6 +546,7 @@ function sharedSlide(){
    section.code==="vjerovali"?["Točno","Netočno"]:[],
   correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
   answer:revealed?createAnswer(slide.r,slide.s,slide.i,q):"",
+  associationExplanation:revealed?putinExplanation:"",
   estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
   mediaUrl:q.mediaUrl?String(q.mediaUrl):"",
@@ -695,6 +704,8 @@ function renderSharedSlide(root,slide,options={}){
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed&&slide.sectionCode!=="stihovi"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
+  (slide.revealed&&slide.sectionCode==="asocijacija"&&slide.associationExplanation?
+   '<div class="association-answer-note">('+esc(slide.associationExplanation)+')</div>':"")+
   (slide.revealed&&slide.sectionCode==="procjena"&&slide.estimateRange?
    '<div class="estimate-accepted-range"><span>Priznaje se raspon:</span> '+esc(slide.estimateRange)+'</div>':"")+
   '</div>');
