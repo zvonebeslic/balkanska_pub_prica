@@ -539,7 +539,7 @@ function renderSharedSlide(root,slide,options={}){
  }).join("");
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong></div>'+
-  '<div class="screen-body"><div class="screen-title '+(question.length>280?"extra-long":question.length>135?"long":"")+'">'+esc(question)+'</div>'+
+  '<div class="screen-body"><div class="screen-title '+(question.length>155?"extra-long":question.length>70?"long":"")+'">'+esc(question)+'</div>'+
   (choices?'<div class="screen-choices">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed?'<div class="screen-answer">✓ '+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
