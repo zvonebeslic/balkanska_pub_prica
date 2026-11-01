@@ -1,0 +1,74 @@
+[
+  {
+    "id": "chatgpt10000-00475-20261101",
+    "createdAt": "2026-11-01T02:39:42+01:00",
+    "updatedAt": "2026-11-01T02:39:42+01:00",
+    "topic": "More i ocean",
+    "focus": "Ambra nastaje u probavnom sustavu ulješure",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Pomorci su je pronalazili na obali, a parfumeri su je nekoć skupo plaćali. Koja mirisna tvar nastaje u probavnom sustavu ulješure?",
+    "answers": [
+      "Ambra",
+      "Ambergris",
+      "Siva ambra"
+    ],
+    "explanation": "Ambra je rijetka voštana tvar povezana s neprobavljenim ostacima plijena ulješure.",
+    "sources": [
+      "https://www.nhm.ac.uk/discover/what-is-ambergris.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00476-20261101",
+    "createdAt": "2026-11-01T02:39:42+01:00",
+    "updatedAt": "2026-11-01T02:39:42+01:00",
+    "topic": "Povijest",
+    "focus": "Inke quipu čvorovi za evidenciju",
+    "difficulty": 3,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Umjesto pisanih znamenaka, službenici Inka mogli su voditi evidenciju čvorovima na visećim uzicama. Kako se zvao taj sustav?",
+    "answers": [
+      "Kipu",
+      "Quipu",
+      "Khipu"
+    ],
+    "explanation": "Kipu je sustav uzica i čvorova za bilježenje podataka u Andama.",
+    "sources": [
+      "https://www.ljmu.ac.uk/-/media/files/ljmu/teaching-and-learning-academy/projects/curriculum-enhancements-24-25/inca-quipus.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00477-20261101",
+    "createdAt": "2026-11-01T02:39:42+01:00",
+    "updatedAt": "2026-11-01T02:39:42+01:00",
+    "topic": "Astronomija",
+    "focus": "Astrolab drevni instrument za mjerenje položaja zvijezda",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Danas nam položaj zvijezda prikazuje aplikacija, a nekoć se za mjerenje njihove visine rabio metalni instrument s kružnom skalom. Kako se zvao?",
+    "answers": [
+      "Astrolab",
+      "Astrolabe",
+      "Astrolabij"
+    ],
+    "explanation": "Astrolab se stoljećima koristio u astronomiji i navigaciji.",
+    "sources": [
+      "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Astrolabe"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
