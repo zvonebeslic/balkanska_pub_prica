@@ -841,3 +841,15 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 @media(max-width:730px){
  .stage-screen .truth-answer-note{font-size:clamp(14px,3vw,23px)}
 }
+
+/* Published leaderboard: private draft inputs are isolated from the audience projection. */
+.publish-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin:18px 0 12px;padding:16px;border:1px solid #39617d;background:#0b1c2e;border-radius:14px}
+.publish-controls label{display:flex;align-items:center;gap:10px;color:#d9eafa;font-weight:750}
+.publish-controls select{min-width:118px;background:#071d31;color:#fff;border:1px solid #487a99;border-radius:10px;padding:10px}
+.publish-buttons{display:flex;flex-wrap:wrap;gap:10px}
+.publish-buttons button{font-weight:850;padding:12px 18px}
+.publish-controls p{flex-basis:100%;margin:0}
+.board-pending{font-size:clamp(21px,3vw,50px);font-weight:750;color:#a9c6db;text-align:center;padding:clamp(20px,5vh,70px) 10px}
+.board-concealed{color:#7697ac}
+.board-concealed th,.board-concealed td{font-weight:500!important;color:#7697ac!important}
+@media(max-width:650px){.publish-controls{align-items:stretch;flex-direction:column}.publish-buttons button{flex:1}.publish-controls label{justify-content:space-between;width:100%}}
