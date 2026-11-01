@@ -258,6 +258,15 @@ function lyricWordLengths(answer){
 }
 function createAnswer(r,s,i,q){
  const code=ROUNDS[r].sections[s].code;
+ // Show the keyboard connection for the original sample even in older,
+ // locally saved copies created before the annotations were added to JSON.
+ if(r===0&&s===0&&code==="povezano"){
+  const original=["Hamit Altıntop","Space Invaders","Francesco Petrarca","USS Enterprise"];
+  const key=["alt","Space","esc","enter"];
+  const answer=String(q.answer||"").trim();
+  if(original[i]&&(answer===original[i]||answer===original[i]+" ("+key[i]+")"))
+   return original[i]+" ("+key[i]+")";
+ }
  if(code==="abc")return (q.correct||"A")+") "+(q.options?.[["A","B","C"].indexOf(q.correct)]||"");
  if(code==="vjerovali")return q.truth||"Točno";
  if(code==="pjevaj")return "1a. "+(q.answer||"…")+"  |  1b. "+(q.answer2||"…");
