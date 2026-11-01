@@ -240,7 +240,7 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 .slide--question .screen-head span{font-size:clamp(13px,1.2vw,23px);font-weight:600;color:#80aeca}
 .slide--question .screen-head strong{font-size:clamp(20px,2vw,37px);font-weight:950;line-height:1.2;letter-spacing:.09em}
 .screen-body{width:100%;min-height:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(12px,1.8vh,25px);overflow-y:auto;padding:clamp(12px,2vh,24px) 0}
-.stage-screen .screen-title{font-size:clamp(43px,5.6vw,108px);line-height:1.18;max-width:1500px;font-weight:950;text-wrap:balance}
+.stage-screen .screen-title{font-size:clamp(45px,6.1vw,116px);line-height:1.18;max-width:1500px;font-weight:950;text-wrap:balance}
 .stage-screen .screen-title.long{font-size:clamp(31px,4.1vw,78px);line-height:1.22}
 .stage-screen .screen-title.extra-long{font-size:clamp(25px,3.0vw,57px);line-height:1.25}
 .stage-screen .screen-answer{font-size:clamp(25px,2.9vw,57px);line-height:1.22;max-width:95%;overflow-wrap:anywhere}
