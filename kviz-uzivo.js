@@ -267,28 +267,34 @@ async function attachMedia(host,q,kind){
 }
 function renderScreen(root,kind){
  if(!root||!project)return;
- const c=ROUNDS[position.r].sections[position.s],q=itemAt(position.r,position.s,position.i);
- if(!q)return;
- if(showBoard){
-  releaseMedia(kind);mediaSeq[kind]=(mediaSeq[kind]||0)+1;
-  const teams=sortedTeams();
-  root.innerHTML='<div class="screen-inner"><div class="screen-head">'+esc(project.title)+'</div><div class="screen-title">🏆 Ljestvica ekipa</div><table class="stage-leaderboard"><tbody>'+teams.map((t,i)=>'<tr><td>'+(i+1)+'. '+esc(t.name)+'</td><td>'+total(t).toLocaleString("hr-HR")+'</td></tr>').join("")+'</tbody></table></div>';
-  return;
- }
- const ans=createAnswer(position.r,position.s,position.i,q);
- const title=q.question?.trim()|| (c.code==="asocijacija"&&position.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje.");
- const choices=c.code==="abc"?'<div class="screen-choices">'+(q.options||[]).map((a,k)=>'<div class="screen-choice'+(revealed&&q.correct===["A","B","C"][k]?" correct":"")+'">'+["A","B","C"][k]+") "+esc(a||"…")+'</div>').join("")+'</div>':c.code==="vjerovali"?'<div class="screen-choices"><div class="screen-choice'+(revealed&&q.truth==="Točno"?" correct":"")+'">Točno</div><div class="screen-choice'+(revealed&&q.truth==="Netočno"?" correct":"")+'">Netočno</div></div>':"";
- root.innerHTML='<div class="screen-inner"><div class="screen-head">'+esc(ROUNDS[position.r].name+' · '+c.name)+'</div>'+
-  '<div class="screen-title '+(title.length>280?'extra-long':title.length>135?'long':'')+'">'+esc(title)+'</div>'+choices+'<div class="screen-media"></div>'+
-  (revealed?'<div class="screen-answer">✓ '+esc(ans||"Odgovor još nije upisan.")+'</div>':"")+
-  '<div class="screen-foot">'+esc(labelItem(position.r,position.s,position.i))+' · '+pointsFor(position.r,position.s,position.i)+' bodova</div></div>';
- attachMedia(root.querySelector(".screen-media"),q,kind).catch(()=>{});
+ renderSharedSlide(root,sharedSlide(),{localMedia:true,mediaKind:kind});
 }
 function renderScores(){
- const teams=sortedTeams(),root=$("teamScores"),k=keyOf(position.r,position.s,position.i),allowed=scoreAllowed(position.r,position.s,position.i);
- if(!teams.length){root.innerHTML='<p class="muted tiny">Dodaj ekipu za bodovanje tijekom kviza.</p>';return;}
- root.innerHTML='<table class="scoreboard"><thead><tr><th>Ekipa</th><th>Ovo pitanje</th><th>Ukupno</th><th></th></tr></thead><tbody>'+
- teams.map(t=>'<tr><td>'+esc(t.name)+'</td><td><select data-team="'+esc(t.id)+'">'+allowed.map(v=>'<option value="'+v+'"'+(Number(t.scores?.[k]||0)===v?' selected':'')+'>'+v.toLocaleString("hr-HR")+'</option>').join("")+'</select></td><td>'+total(t).toLocaleString("hr-HR")+'</td><td><button type="button" class="danger" data-remove-team="'+esc(t.id)+'" aria-label="Ukloni ekipu '+esc(t.name)+'">×</button></td></tr>').join("")+'</tbody></table>';
+ const teams=sortedTeams(),root=$("teamScores"),overview=$("roundScores");
+ const k=keyOf(position.r,position.s,position.i),allowed=scoreAllowed(position.r,position.s,position.i);
+ if(!teams.length){
+  root.innerHTML='<p class="muted tiny">Nema ekipa. Dodaj prvu ekipu iznad.</p>';
+  overview.innerHTML='<p class="muted">Dodaj ekipu kako bi mogao unositi bodove i prikazati ljestvicu.</p>';
+  return;
+ }
+ const fmt=n=>Number(n).toLocaleString("hr-HR",{maximumFractionDigits:2});
+ overview.innerHTML='<div class="score-scroll"><table class="scoreboard round-score-table"><thead><tr><th>Ekipa</th>'+
+  [0,1,2].map(r=>'<th>'+(r+1)+'. krug <small> / '+roundMax(r)+'</small></th>').join("")+
+  '<th>Ukupno</th><th></th></tr></thead><tbody>'+
+  teams.map(t=>'<tr><th scope="row">'+esc(t.name)+'</th>'+
+   [0,1,2].map(r=>{
+    const manual=t.roundScores?.[r],hasManual=manual!==null&&manual!==undefined&&manual!=="";
+    const inferred=roundScore({...t,roundScores:{}},r);
+    return '<td><input type="number" inputmode="decimal" step="0.5" min="'+(r===2?-5:0)+'" max="'+roundMax(r)+'"'+
+     ' data-round-team="'+esc(t.id)+'" data-round="'+r+'" value="'+(hasManual?esc(manual):'')+'" placeholder="'+fmt(inferred)+'"'+
+     ' aria-label="'+esc(t.name+' '+(r+1)+'. krug')+'"></td>';
+   }).join("")+
+   '<td class="score-total">'+fmt(total(t))+'</td>'+
+   '<td><button class="danger" type="button" data-remove-team="'+esc(t.id)+'" aria-label="Ukloni ekipu '+esc(t.name)+'">×</button></td></tr>').join("")+
+  '</tbody></table></div>';
+ root.innerHTML='<table class="scoreboard"><thead><tr><th>Ekipa</th><th>Ovo pitanje</th><th>Ukupno</th></tr></thead><tbody>'+
+  teams.map(t=>'<tr><td>'+esc(t.name)+'</td><td><select data-team="'+esc(t.id)+'">'+allowed.map(v=>'<option value="'+v+'"'+(Number(t.scores?.[k]||0)===v?' selected':'')+'>'+fmt(v)+'</option>').join("")+'</select></td><td>'+fmt(total(t))+'</td></tr>').join("")+'</tbody></table>'+
+  '<p class="muted tiny">Ako ručno upišeš bodove za krug iznad, taj unos ima prednost pred zbrojem pojedinačnih pitanja. Obriši unos za povratak na automatski zbroj.</p>';
 }
 function renderAll(){
  if(!project)return;
@@ -299,18 +305,25 @@ function renderAll(){
  }else renderStage();
  pushStage();
 }
-function renderStage(){renderScreen($("stageCanvas"),"stage");refreshClocks();}
+function renderStage(){renderScreen($("stageCanvas"),"stage");}
 function updateStudio(){
  if(stageMode||!project)return;
- const arr=positions(),idx=arr.findIndex(v=>v.r===position.r&&v.s===position.s&&v.i===position.i);
+ const slide=currentSlide();
+ const label=slide.kind==="welcome"?"Dobrodošli · pravila i početak":
+  slide.kind==="round"?ROUNDS[slide.r].name+" · početak kruga":
+  slide.kind==="section"?ROUNDS[slide.r].name+" · "+ROUNDS[slide.r].sections[slide.s].name+" · najava rubrike":
+  slide.kind==="score"?ROUNDS[slide.r].name+" · ljestvica":
+  ROUNDS[slide.r].name+" · "+ROUNDS[slide.r].sections[slide.s].name;
  $("homeQuizTitle").textContent=project.title||"Bez naziva";
  $("hostQuizTitle").textContent=project.title||"Kviz Općeg Znanja";
- $("hostQuestionLabel").textContent=ROUNDS[position.r].name+" · "+ROUNDS[position.r].sections[position.s].name+" · "+labelItem(position.r,position.s,position.i);
- $("hostCounter").textContent=(idx+1)+" / "+arr.length;
- $("prevBtn").disabled=idx<=0;
- $("nextBtn").disabled=idx>=arr.length-1;
+ $("hostQuestionLabel").textContent=label;
+ $("hostCounter").textContent="Slajd "+(slideIndex+1)+" / "+SLIDES.length;
+ $("prevBtn").disabled=slideIndex<=0;
+ $("nextBtn").disabled=slideIndex>=SLIDES.length-1;
+ $("revealBtn").disabled=slide.kind!=="question"||showBoard;
  $("revealBtn").textContent=revealed?"Sakrij odgovor":"Prikaži odgovor";
- $("scoresBtn").textContent=showBoard?"Vrati pitanje":"🏆 Prikaži ljestvicu";
+ $("scoresBtn").disabled=slide.kind==="score";
+ $("scoresBtn").textContent=showBoard?"Vrati slajd":"🏆 Prikaži ljestvicu";
 }
 function showView(view){
  if(stageMode)return;
@@ -323,15 +336,31 @@ function showView(view){
  if(view==="manage")refreshSelect().catch(e=>toast(e.message,true));
  window.scrollTo(0,0);
 }
+function setSlideIndex(next){
+ if(next<0||next>=SLIDES.length){
+  toast(next<0?"Ovo je prvi slajd.":"Stigao si do kraja kviza.");return;
+ }
+ slideIndex=next;
+ const slide=currentSlide();
+ if(slide.kind==="question")position={r:slide.r,s:slide.s,i:slide.i};
+ else if(slide.kind==="section")position={r:slide.r,s:slide.s,i:0};
+ else if(slide.kind==="round")position={r:slide.r,s:0,i:0};
+ else if(slide.kind==="score"){
+  const last=ROUNDS[slide.r].sections.length-1,items=ROUNDS[slide.r].sections[last].count;
+  position={r:slide.r,s:last,i:items-1};
+ }else position={r:0,s:0,i:0};
+ revealed=false;showBoard=false;renderAll();
+}
 function selectPosition(r,s,i){
  if(!itemAt(r,s,i))return;
- position={r,s,i};revealed=false;showBoard=false;renderAll();
+ const idx=SLIDES.findIndex(sl=>sl.kind==="question"&&sl.r===r&&sl.s===s&&sl.i===i);
+ if(idx>=0)setSlideIndex(idx);
 }
-function changePosition(delta){
- const arr=positions(),idx=arr.findIndex(v=>v.r===position.r&&v.s===position.s&&v.i===position.i);
- const p=arr[idx+delta];if(p)selectPosition(p.r,p.s,p.i);else toast(delta>0?"Stigao si do kraja kviza.":"Ovo je prvo pitanje.");
+function changePosition(delta){setSlideIndex(slideIndex+delta);}
+function changeReveal(){
+ if(currentSlide().kind!=="question"||showBoard)return;
+ revealed=!revealed;renderAll();
 }
-function changeReveal(){showBoard=false;revealed=!revealed;renderAll();}
 async function uploadMedia(e){
  const f=e.target.files?.[0];if(!f)return;
  if(!/^(image|audio|video)\//.test(f.type)){toast("Odaberi sliku, audio ili video datoteku.",true);return;}
