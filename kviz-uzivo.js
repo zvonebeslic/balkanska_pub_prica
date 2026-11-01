@@ -43,7 +43,7 @@ const SLIDES=[
 ];
 const SECTION_EXAMPLES={
  povezano:"Primjer: odgovore mogu povezivati ista boja, zanimanje ili skriveni zajednički pojam.",
- kaladont:"(Trokut - Utakmica - Canberra - Razlomak - Akropola)",
+ kaladont:"", // Rich Kaladont example is rendered directly, never in the old boxed format.
  slovo:"Primjer: ako je zadano slovo M, svi točni odgovori počinju slovom M.",
  abecedalica:"Primjer slijeda: A, B, C... Svaki sljedeći odgovor dolazi abecedno iza prethodnog.",
  gameset:"U svakoj seriji tri pitanja donose redom 0,5, 1 i 2 boda."
@@ -535,14 +535,16 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  if(type==="section"){
+  // Recognize the rubric also from its visible title: remote displays may receive older slide data.
+  const kaladontSlide=slide.sectionCode==="kaladont"||/KA\s*-\s*LA\s*-\s*DONT/i.test(slide.sectionTitle||"");
   const specialExamples=slide.sectionCode==="povezano"?
    '<div class="rubric-examples" aria-label="Primjeri poveznica">'+
     '<div class="rubric-example-group">(Pan<span class="ktg-gold">dora</span>, El <span class="ktg-gold">Dora</span>do, <span class="ktg-gold">Dora</span> Kurpić, Dia<span class="ktg-gold">dora</span>)</div>'+
     '<div class="rubric-example-group">(<span class="ktg-gold">Lovac</span> u žitu, <span class="ktg-gold">Kralj</span>evstvo nebesko, Turopoljski <span class="ktg-gold">top</span>, Nilski <span class="ktg-gold">konj</span>)</div>'+
    '</div>':
-   slide.sectionCode==="kaladont"?
+   kaladontSlide?
    '<div class="rubric-examples" aria-label="Povezana posljednja i prva dva slova">'+
-    '<div class="rubric-example-group">(Trok<span class="ktg-gold">ut</span> - <span class="ktg-gold">Ut</span>akmi<span class="ktg-gold">ca</span> - <span class="ktg-gold">Ca</span>nber<span class="ktg-gold">ra</span> - <span class="ktg-gold">Ra</span>zlom<span class="ktg-gold">ak</span> - <span class="ktg-gold">Ak</span>ropola)</div>'+
+    '<div class="rubric-example-group">(Trok<span class="ktg-gold" style="color:#bd9c63">ut</span> - <span class="ktg-gold" style="color:#bd9c63">Ut</span>akmi<span class="ktg-gold" style="color:#bd9c63">ca</span> - <span class="ktg-gold" style="color:#bd9c63">Ca</span>nber<span class="ktg-gold" style="color:#bd9c63">ra</span> - <span class="ktg-gold" style="color:#bd9c63">Ra</span>zlom<span class="ktg-gold" style="color:#bd9c63">ak</span> - <span class="ktg-gold" style="color:#bd9c63">Ak</span>ropola)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
