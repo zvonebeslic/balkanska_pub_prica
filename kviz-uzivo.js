@@ -87,7 +87,7 @@ const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
 const VOL_ONE_CLEANUP_KEY="ktg-keep-only-vol1-2026-11-01";
 let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false,publishTargetRound=0;
-let channel=null,saveTimer=null,toastTimer=null,stageMode=new URLSearchParams(location.search).get("stage")==="1";
+let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
 const itemAt=(r,s,i,p=project)=>p?.rounds?.[r]?.sections?.[s]?.items?.[i];
@@ -135,8 +135,8 @@ async function installExampleQuiz(){
  toast("Kviz Općeg Znanja 1 učitan je sa svim pitanjima i odgovorima. Možeš uređivati svoju kopiju.");
 }
 function openDB(){return new Promise((resolve,reject)=>{
- const req=indexedDB.open(DBNAME,1);
- req.onupgradeneeded=()=>{const x=req.result;if(!x.objectStoreNames.contains("quizzes"))x.createObjectStore("quizzes",{keyPath:"id"});if(!x.objectStoreNames.contains("assets"))x.createObjectStore("assets",{keyPath:"id"});};
+ const req=indexedDB.open(DBNAME,2);
+ req.onupgradeneeded=()=>{const x=req.result;if(!x.objectStoreNames.contains("quizzes"))x.createObjectStore("quizzes",{keyPath:"id"});if(!x.objectStoreNames.contains("assets"))x.createObjectStore("assets",{keyPath:"id"});if(!x.objectStoreNames.contains("history"))x.createObjectStore("history",{keyPath:"id"});};
  req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);
 });}
 function storeGet(store,id){return new Promise((resolve,reject)=>{const t=db.transaction(store,"readonly");const q=t.objectStore(store).get(id);q.onsuccess=()=>resolve(q.result);q.onerror=()=>reject(q.error);});}
@@ -170,6 +170,67 @@ async function keepOnlyVolOne(all,wantedId){
 function toast(text,bad=false){const el=$("toast");el.textContent=text;el.style.background=bad?"#723242":"#24425e";el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,4200);}
 function scheduleSave(){if(stageMode||!project)return;$("saveStatus").textContent="Spremam promjene…";clearTimeout(saveTimer);saveTimer=setTimeout(()=>persist().catch(e=>toast("Greška spremanja: "+e.message,true)),450);}
 async function persist(p=project){if(!p)return;p.updatedAt=Date.now();await storePut("quizzes",p);if(!stageMode)$("saveStatus").textContent="✓ Spremljeno na ovom uređaju";}
+function playedDate(time){
+ const timestamp=Number(time);
+ if(!Number.isFinite(timestamp)||timestamp<=0)return "Datum nije poznat";
+ return new Intl.DateTimeFormat("hr-HR",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"}).format(new Date(timestamp));
+}
+function startPlayedSession(){
+ if(!project||stageMode)return;
+ if(!project.playSession||project.playSession.completedAt){
+  project.playSession={id:uid(),startedAt:Date.now(),completedAt:null};
+  // A finished run can be replayed; preserve all question edits and score data.
+  scheduleSave();
+ }
+}
+async function archiveIfFinished(r){
+ if(r!==2||!project||archivingSession)return;
+ const final=publishedBoard(2);
+ if(!final||!final.rows?.length)return;
+ if(final.mode==="gradual"&&Number(final.revealedCount)<final.rows.length)return;
+ const current=project;
+ if(!current.playSession?.id){
+  current.playSession={id:uid(),startedAt:Date.now(),completedAt:null};
+ }
+ const session=current.playSession;
+ if(session.completedAt)return;
+ archivingSession=true;
+ try{
+  const completedAt=Date.now();
+  await storePut("history",{
+   id:session.id,quizId:current.id,
+   title:current.title||"Kviz Općeg Znanja",
+   startedAt:session.startedAt||completedAt,
+   completedAt,
+   teams:final.rows.map(row=>({name:row.name,rounds:row.rounds,score:row.score}))
+  });
+  session.completedAt=completedAt;
+  if(project===current)scheduleSave();
+  toast("Kviz je spremljen u povijest s datumom i završnom ljestvicom.");
+ }catch(error){toast("Povijest nije spremljena: "+error.message,true);}
+ finally{archivingSession=false;}
+}
+async function renderHistory(){
+ const container=$("historyList");
+ if(!container||!db)return;
+ const entries=(await storeAll("history")).sort((a,b)=>(Number(b.completedAt)||0)-(Number(a.completedAt)||0));
+ if(!entries.length){
+  container.innerHTML='<p class="history-empty">Još nema završenih kvizova. Prvi zapis nastaje nakon objave konačne ljestvice 3. kruga.</p>';
+  return;
+ }
+ const fmt=v=>Number(v||0).toLocaleString("hr-HR",{maximumFractionDigits:2});
+ container.innerHTML=entries.map(entry=>{
+  const teams=Array.isArray(entry.teams)?entry.teams:[];
+  return '<details class="history-entry"><summary><span><strong>'+esc(entry.title||"Kviz općeg znanja")+'</strong>'+
+   '<small>'+esc(playedDate(entry.completedAt))+' · '+teams.length+' ekipa</small></span><span class="history-expand">Pogledaj poredak</span></summary>'+
+   (teams.length?'<div class="history-table-wrap"><table class="history-table"><thead><tr><th>Mjesto</th><th>Ekipa</th><th>1. krug</th><th>2. krug</th><th>3. krug</th><th>Ukupno</th></tr></thead><tbody>'+
+    teams.map((team,i)=>'<tr><td>'+(i+1)+'.</td><th scope="row">'+esc(team.name)+'</th>'+
+     [0,1,2].map(r=>'<td>'+fmt(team.rounds?.[r])+'</td>').join("")+
+     '<td>'+fmt(team.score)+'</td></tr>').join("")+'</tbody></table></div>':
+    '<p class="muted">Nema spremljenih rezultata ekipa.</p>')+
+   '</details>';
+ }).join("");
+}
 function scoreAllowed(r,s,i){
  const c=ROUNDS[r].sections[s].code;
  if(c==="kocka")return [-1,0,1,2];
@@ -232,6 +293,7 @@ function publishBoard(r,mode){
  const state=publishedBoard(r);
  toast(mode==="all"?"Objavljena je cijela ljestvica za "+(r+1)+". krug.":
   "Otkriveno "+state.revealedCount+" / "+state.rows.length+" ekipa, od posljednjeg mjesta.");
+ archiveIfFinished(r).catch(error=>toast("Povijest nije spremljena: "+error.message,true));
 }
 function updatePublishControls(){
  if(stageMode||!project)return;
@@ -484,12 +546,13 @@ function updateStudio(){
 function showView(view){
  if(stageMode)return;
  currentView=view;
- const ids={home:"homeScreen",host:"hostScreen",edit:"editScreen",manage:"manageScreen"};
+ const ids={home:"homeScreen",host:"hostScreen",edit:"editScreen",manage:"manageScreen",history:"historyScreen"};
  for(const [key,id] of Object.entries(ids))$(id).hidden=key!==view;
  $("topHome").hidden=view==="home";
  if(view==="host"||view==="edit")renderAll();
  else if(view==="home")updateStudio();
  if(view==="manage")refreshSelect().catch(e=>toast(e.message,true));
+ if(view==="history")renderHistory().catch(e=>toast("Ne mogu učitati povijest: "+e.message,true));
  window.scrollTo(0,0);
 }
 function setSlideIndex(next){
@@ -936,13 +999,15 @@ async function copyLink(id){
 
 function bindEditor(){
  $("topHome").addEventListener("click",()=>showView("home"));
- $("startBtn").addEventListener("click",()=>showView("host"));
+ $("startBtn").addEventListener("click",()=>{startPlayedSession();showView("host");});
  $("manageBtn").addEventListener("click",()=>showView("manage"));
+ $("historyBtn").addEventListener("click",()=>showView("history"));
+ $("backHostHistory").addEventListener("click",()=>showView("home"));
  $("hostManageBtn").addEventListener("click",()=>showView("manage"));
  $("openEditorBtn").addEventListener("click",()=>showView("edit"));
  $("backHostEdit").addEventListener("click",()=>showView("host"));
  $("backHostManage").addEventListener("click",()=>showView("host"));
- $("manageOpenBtn").addEventListener("click",()=>showView("host"));
+ $("manageOpenBtn").addEventListener("click",()=>{startPlayedSession();showView("host");});
  $("manageEditBtn").addEventListener("click",()=>showView("edit"));
  $("pairBtn").addEventListener("click",()=>{
   try{startPairing();toast("Poveži TV pomoću koda, a mobitel privatnom poveznicom.");}
