@@ -539,6 +539,10 @@ function renderSharedSlide(root,slide,options={}){
    '<div class="rubric-examples" aria-label="Primjeri poveznica">'+
     '<div class="rubric-example-group">(Pan<span class="ktg-gold">dora</span>, El <span class="ktg-gold">Dora</span>do, <span class="ktg-gold">Dora</span> Kurpić, Dia<span class="ktg-gold">dora</span>)</div>'+
     '<div class="rubric-example-group">(<span class="ktg-gold">Lovac</span> u žitu, <span class="ktg-gold">Kralj</span>evstvo nebesko, Turopoljski <span class="ktg-gold">top</span>, Nilski <span class="ktg-gold">konj</span>)</div>'+
+   '</div>':
+   slide.sectionCode==="kaladont"?
+   '<div class="rubric-examples" aria-label="Povezana posljednja i prva dva slova">'+
+    '<div class="rubric-example-group">(Trok<span class="ktg-gold">ut</span> - <span class="ktg-gold">Ut</span>akmi<span class="ktg-gold">ca</span> - <span class="ktg-gold">Ca</span>nber<span class="ktg-gold">ra</span> - <span class="ktg-gold">Ra</span>zlom<span class="ktg-gold">ak</span> - <span class="ktg-gold">Ak</span>ropola)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
