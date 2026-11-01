@@ -529,7 +529,7 @@ function renderSharedSlide(root,slide,options={}){
  if(type==="welcome"){
   const rules=(slide.rules||[]).map(rule=>'<li>'+esc(rule)+'</li>').join("");
   root.innerHTML=inner("slide--welcome",
-   '<div class="slide-center"><div class="slide-kicker">KVIZTOGO · PUB KVIZ</div>'+
+   '<div class="slide-center"><div class="slide-kicker">KVIZTOGO · KVIZ OPĆEG ZNANJA</div>'+
    '<div class="slide-hero">'+esc(slide.title||"Dobrodošli!")+'</div>'+
    '<div class="slide-subtitle">'+esc(slide.subtitle||"Kviz Općeg Znanja")+'</div>'+
    '<div class="welcome-summary">3 kruga · maksimalno '+textNumber(slide.maxPoints)+' bodova</div>'+
