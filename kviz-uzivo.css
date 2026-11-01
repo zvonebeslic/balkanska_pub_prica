@@ -694,3 +694,45 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .stage-screen .rubric-association-note{font-size:clamp(17px,3.5vw,27px)}
  .stage-screen .rubric-association-examples .rubric-example-group{font-size:clamp(16px,3.2vw,25px)}
 }
+
+/* Ne zaboravi stihove: one underline per letter, clear gaps between words.
+   Visible on host, remote and audience screens regardless of answer reveal. */
+.lyric-blanks{
+ width:100%;
+ display:flex;
+ flex-wrap:wrap;
+ align-items:center;
+ justify-content:center;
+ column-gap:clamp(20px,2.2vw,44px);
+ row-gap:clamp(12px,1.4vh,20px);
+ padding:10px 4px;
+ font-size:clamp(24px,2.7vw,52px);
+ line-height:1;
+}
+.lyric-word{
+ display:inline-flex;
+ flex-wrap:nowrap;
+ justify-content:center;
+ align-items:flex-end;
+ gap:.14em;
+ white-space:nowrap;
+ max-width:100%;
+}
+.lyric-letter{
+ display:block;
+ flex:0 0 .55em;
+ width:.55em;
+ height:.72em;
+ border-bottom:max(2px,.055em) solid #edf5ff;
+}
+.lyric-blanks-missing{
+ color:#e3c4a0;
+ font-size:clamp(14px,1.5vw,21px);
+}
+.host-display .lyric-blanks{font-size:clamp(19px,2vw,35px);column-gap:clamp(15px,1.7vw,28px)}
+.remote-preview .lyric-blanks{font-size:clamp(16px,1.8vw,30px);column-gap:clamp(12px,1.5vw,24px)}
+@media(max-width:730px){
+ .stage-screen .lyric-blanks{font-size:clamp(20px,5.1vw,33px);column-gap:18px}
+ .host-display .lyric-blanks{font-size:clamp(18px,4.7vw,27px);column-gap:15px}
+ .remote-preview .lyric-blanks{font-size:clamp(15px,3.8vw,23px);column-gap:12px}
+}
