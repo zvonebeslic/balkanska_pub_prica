@@ -538,7 +538,7 @@ function renderSharedSlide(root,slide,options={}){
   const specialExamples=slide.sectionCode==="povezano"?
    '<div class="rubric-examples" aria-label="Primjeri poveznica">'+
     '<div class="rubric-example-group">(Pan<span class="ktg-gold">dora</span>, El <span class="ktg-gold">Dora</span>do, <span class="ktg-gold">Dora</span> Kurpić, Dia<span class="ktg-gold">dora</span>)</div>'+
-    '<div class="rubric-example-group">(Lovac u žitu, Kraljevstvo nebesko, Turopoljski top, Nilski konj)</div>'+
+    '<div class="rubric-example-group">(<span class="ktg-gold">Lovac</span> u žitu, <span class="ktg-gold">Kralj</span>evstvo nebesko, Turopoljski <span class="ktg-gold">top</span>, Nilski <span class="ktg-gold">konj</span>)</div>'+
    '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
