@@ -405,6 +405,11 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 }
 .rubric-example-group{
  width:100%;
+ background:transparent;
+ border:0;
+ box-shadow:none;
+ outline:0;
+ padding:0;
  text-align:center;
  font-size:clamp(19px,1.95vw,37px);
  line-height:1.38;
