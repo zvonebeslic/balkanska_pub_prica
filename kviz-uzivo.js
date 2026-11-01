@@ -475,6 +475,7 @@ function sharedSlide(){
  if(slide.kind==="section")return {
   ...base,roundName:ROUNDS[slide.r].name,sectionTitle:rubricDisplayName(section.name),
   sectionCode:section.code,description:section.desc,example:SECTION_EXAMPLES[section.code]||"",
+  sectionQuestionCount:section.count,
   sectionPoints:Array.from({length:section.count},(_,i)=>pointsFor(slide.r,slide.s,i)).reduce((a,b)=>a+b,0)
  };
  const q=itemAt(slide.r,slide.s,slide.i);
@@ -555,6 +556,8 @@ function renderSharedSlide(root,slide,options={}){
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
    '<div class="slide-hero rubric-hero">'+esc(slide.sectionTitle||"Rubrika")+'</div>'+
+   (Number.isInteger(slide.sectionQuestionCount)&&slide.sectionQuestionCount>0?
+    '<div class="rubric-question-count">('+slide.sectionQuestionCount+' '+(slide.sectionQuestionCount===1?'pitanje':'pitanja')+')</div>':'')+
    '<div class="rubric-description">'+esc(slide.description||"")+'</div>'+
    (slide.sectionCode==="abc"?'<div class="rubric-instruction">Zaokruži slovo na pitanju za odgovor koji misliš da je točan.</div>':"")+
    (specialExamples|| (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':""))+'</div>');
