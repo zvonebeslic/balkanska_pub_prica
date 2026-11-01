@@ -55,6 +55,30 @@ const WELCOME_RULES=[
  "Pratite upute voditelja i poštujte ostale ekipe."
 ];
 const currentSlide=()=>SLIDES[Math.max(0,Math.min(slideIndex,SLIDES.length-1))];
+
+/* Only display typography changes here: original rubric names and descriptions remain untouched. */
+const RUBRIC_DISPLAY_NAMES={
+ "POVEZANO (NE)ZNANJE":"Povezano (ne)znanje",
+ "KVIZOZNALAC":"KvizoZnalac",
+ "KA - LA - DONT":"Ka - La - Dont",
+ "JUČER, DANAS, SUTRA":"Jučer, danas, sutra",
+ "PJEVAJ MI PJEVAJ":"Pjevaj mi pjevaj",
+ "SVE NA SLOVO":"Sve na slovo",
+ "BODOLOVAC":"Bodolovac",
+ "PREMETALJKA":"Premetaljka",
+ "ASOCIJACIJA":"Asocijacija",
+ "VJEROVALI ILI NE":"Vjerovali ili ne",
+ "NE ZABORAVI STIHOVE":"Ne zaboravi stihove",
+ "KOCKA JE BAČENA":"Kocka je bačena",
+ "PITANJE PROCJENE":"Pitanje procjene",
+ "VIZUALNI DIO":"Vizualni dio",
+ "ABECEDALICA":"Abecedalica",
+ "GAME OVER TIME":"Game Over Time",
+ "NABROJI IH SVE...":"Nabroji ih sve...",
+ "GAME, SET, MATCH":"Game, Set, Match"
+};
+const rubricDisplayName=name=>RUBRIC_DISPLAY_NAMES[name]||name;
+
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const uid=()=>typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():"ktg-"+Date.now()+"-"+Math.random().toString(36).slice(2);
@@ -446,7 +470,7 @@ function sharedSlide(){
  };
  const section=ROUNDS[slide.r].sections[slide.s];
  if(slide.kind==="section")return {
-  ...base,roundName:ROUNDS[slide.r].name,sectionTitle:section.name,
+  ...base,roundName:ROUNDS[slide.r].name,sectionTitle:rubricDisplayName(section.name),
   description:section.desc,example:SECTION_EXAMPLES[section.code]||"",
   sectionPoints:Array.from({length:section.count},(_,i)=>pointsFor(slide.r,slide.s,i)).reduce((a,b)=>a+b,0)
  };
@@ -454,7 +478,7 @@ function sharedSlide(){
  if(!q)return base;
  return {
   ...base,slideType:"question",roundName:ROUNDS[slide.r].name,
-  sectionTitle:section.name,
+  sectionTitle:rubricDisplayName(section.name),
   question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
@@ -766,4 +790,40 @@ async function init(){
   }
  }catch(e){toast("Ne mogu otvoriti lokalnu bazu: "+e.message,true);if(stageMode)$("stageCanvas").textContent="Greška: "+e.message;else $("saveStatus").textContent="Spremanje nije dostupno"; }
 }
+
+/**
+ * Original image has a dark rectangle baked into the pixels.
+ * Keep its exact icon/lettering while turning only the near-black backdrop transparent.
+ * The source is same-origin; a canvas is used instead of approximating the logo with new art.
+ */
+function cutOutLogoBackground(){
+ const logos=[...document.querySelectorAll('img[src="kviz-uzivo-logo.webp"]')];
+ if(!logos.length)return;
+ const original=new Image();
+ original.onload=()=>{
+  try{
+   const canvas=document.createElement("canvas");
+   canvas.width=original.naturalWidth;canvas.height=original.naturalHeight;
+   if(!canvas.width||!canvas.height)return;
+   const ctx=canvas.getContext("2d",{willReadFrequently:true});
+   if(!ctx)return;
+   ctx.drawImage(original,0,0);
+   const image=ctx.getImageData(0,0,canvas.width,canvas.height),pixels=image.data;
+   const background=[1,22,34];
+   for(let n=0;n<pixels.length;n+=4){
+    const r=pixels[n],g=pixels[n+1],b=pixels[n+2];
+    const alpha=Math.min(1,Math.max(0,(Math.max(r,g,b)-36)/62));
+    if(alpha<=.02){pixels[n+3]=0;continue;}
+    for(let k=0;k<3;k++)pixels[n+k]=Math.max(0,Math.min(255,Math.round((pixels[n+k]-(1-alpha)*background[k])/alpha)));
+    pixels[n+3]=Math.round(255*alpha);
+   }
+   ctx.putImageData(image,0,0);
+   const transparent=canvas.toDataURL("image/png");
+   logos.forEach(logo=>{logo.src=transparent;logo.classList.add("logo-cutout");});
+  }catch(error){console.warn("Logo ostaje izvoran:",error);}
+ };
+ original.src="kviz-uzivo-logo.webp";
+}
+
+cutOutLogoBackground();
 init();
