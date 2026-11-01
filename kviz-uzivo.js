@@ -449,6 +449,12 @@ function updateStudio(){
  $("autoShowAnswers").checked=autoShowAnswers;
  $("scoresBtn").disabled=slide.kind==="score";
  $("scoresBtn").textContent=showBoard?"Vrati slajd":"🏆 Prikaži ljestvicu";
+ const canSize=slide.kind==="question"&&!showBoard;
+ const size=canSize?questionScale(itemAt(slide.r,slide.s,slide.i)?.questionScale):1;
+ $("questionSmaller").disabled=!canSize||size<=0.7;
+ $("questionLarger").disabled=!canSize||size>=1.5;
+ $("questionSizeReset").disabled=!canSize||size===1;
+ $("questionSizeValue").textContent=Math.round(size*100)+" %";
 }
 function showView(view){
  if(stageMode)return;
@@ -488,6 +494,24 @@ function changeReveal(){
  revealed=!revealed;
  // A manual hide from the remote / keyboard switches off auto-reveal too.
  if(autoShowAnswers&&!revealed)autoShowAnswers=false;
+ renderAll();
+}
+// Independent font size for every question, persisted with its other quiz data.
+function questionScale(value){
+ const n=Number(value);
+ return Number.isFinite(n)&&n>=0.7&&n<=1.5?Math.round(n*10)/10:1;
+}
+function changeQuestionSize(action){
+ const slide=currentSlide();
+ if(!project||slide.kind!=="question"||showBoard)return;
+ const q=itemAt(slide.r,slide.s,slide.i);
+ if(!q)return;
+ const current=questionScale(q.questionScale);
+ const next=action==="reset"?1:
+  Math.max(0.7,Math.min(1.5,Math.round((current+(action==="larger"?0.1:-0.1))*10)/10));
+ if(next===current)return;
+ q.questionScale=next;
+ scheduleSave();
  renderAll();
 }
 async function uploadMedia(e){
@@ -603,6 +627,7 @@ function sharedSlide(){
   seriesQuestion:section.code==="gameset"?(slide.i%3)+1:0,
   lyricWordLengths:section.code==="stihovi"?lyricWordLengths(q.answer):[],
   question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
+  questionScale:questionScale(q.questionScale),
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
   correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
@@ -735,6 +760,7 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  const question=String(slide.question||"");
+ const fontScale=questionScale(slide.questionScale);
  const questionProgress=slide.sectionCode==="gameset"&&slide.seriesNumber&&slide.seriesQuestion?
   slide.seriesNumber+". SERIJA · PITANJE "+slide.seriesQuestion+"/3":
   Number.isInteger(slide.rubricQuestion)&&Number.isInteger(slide.rubricQuestionCount)&&slide.rubricQuestionCount>0?
@@ -766,7 +792,7 @@ function renderSharedSlide(root,slide,options={}){
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong>'+
    (questionProgress?'<div class="rubric-question-progress">'+esc(questionProgress)+'</div>':"")+'</div>'+
-  '<div class="screen-body"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
+  '<div class="screen-body" style="--question-scale:'+fontScale+'"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
   lyricBlanks+
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
@@ -809,6 +835,9 @@ function startPairing(){
    if(action==="next")changePosition(1);
    else if(action==="previous")changePosition(-1);
    else if(action==="reveal")changeReveal();
+   else if(action==="font-smaller")changeQuestionSize("smaller");
+   else if(action==="font-larger")changeQuestionSize("larger");
+   else if(action==="font-auto")changeQuestionSize("reset");
    else if(action==="board"){showBoard=!showBoard;renderAll();}
   }
  });
@@ -852,6 +881,12 @@ function connectRemoteController(room,secret){
    $("remoteStatus").textContent="Upravljanje aktivnim kvizom · "+slide.index+" / "+slide.total;
    $("remoteReveal").textContent=slide.revealed?"Sakrij odgovor":"Prikaži odgovor";
    $("remoteReveal").disabled=slide.slideType!=="question"||slide.showBoard;
+   const canChangeSize=slide.slideType==="question"&&!slide.showBoard;
+   const size=questionScale(slide.questionScale);
+   $("remoteQuestionSmaller").disabled=!canChangeSize||size<=0.7;
+   $("remoteQuestionLarger").disabled=!canChangeSize||size>=1.5;
+   $("remoteQuestionAuto").disabled=!canChangeSize||size===1;
+   $("remoteQuestionSizeValue").textContent=Math.round(size*100)+" %";
    $("remotePrev").disabled=slide.index<=1;
    $("remoteNext").disabled=slide.index>=slide.total;
   },
@@ -863,6 +898,9 @@ function connectRemoteController(room,secret){
  $("remotePrev").addEventListener("click",()=>KTGSync.sendCommand("previous"));
  $("remoteNext").addEventListener("click",()=>KTGSync.sendCommand("next"));
  $("remoteReveal").addEventListener("click",()=>KTGSync.sendCommand("reveal"));
+ $("remoteQuestionSmaller").addEventListener("click",()=>KTGSync.sendCommand("font-smaller"));
+ $("remoteQuestionLarger").addEventListener("click",()=>KTGSync.sendCommand("font-larger"));
+ $("remoteQuestionAuto").addEventListener("click",()=>KTGSync.sendCommand("font-auto"));
 }
 async function copyLink(id){
  const input=$(id);
@@ -941,6 +979,9 @@ function bindEditor(){
   if(index>=0)setSlideIndex(index);
  });
  $("firstSlideBtn").addEventListener("click",()=>{if(slideIndex!==0||showBoard)setSlideIndex(0);});
+ $("questionSmaller").addEventListener("click",()=>changeQuestionSize("smaller"));
+ $("questionLarger").addEventListener("click",()=>changeQuestionSize("larger"));
+ $("questionSizeReset").addEventListener("click",()=>changeQuestionSize("reset"));
  $("autoShowAnswers").addEventListener("change",e=>{
   autoShowAnswers=e.target.checked;
   if(currentSlide().kind==="question")revealed=autoShowAnswers;
