@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-00549-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Astronomija",
+    "focus": "Led u trajno zasjenjenim kraterima Merkura",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Najbliži planet Suncu ima mjesta na kojima se led može očuvati milijunima godina, iako je ostatak površine izložen žestokoj vrućini. O kojem je planetu riječ?",
+    "answers": [
+      "Merkur",
+      "Mercury"
+    ],
+    "explanation": "U trajno zasjenjenim polarnim kraterima Merkura temperature mogu biti dovoljno niske za vodeni led.",
+    "sources": [
+      "https://science.nasa.gov/mercury/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00550-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Gastronomija",
+    "focus": "Japanska tradicija washoku",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Na UNESCO-ovu popisu od 2013. nalazi se tradicija pripreme i zajedničkog blagovanja japanske hrane, posebno važna za Novu godinu. Kojim je japanskim nazivom poznata?",
+    "answers": [
+      "Washoku",
+      "Vašoku"
+    ],
+    "explanation": "Washoku obuhvaća znanja, običaje i poštovanje prema prirodi povezane s japanskom prehranom.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/washoku-traditional-dietary-cultures-of-the-japanese-notably-for-the-new-year-00869"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00551-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Glazba",
+    "focus": "Tri sastavnice flamenca",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Španjolska tradicija spaja cante, baile i toque, odnosno pjevanje, ples i instrumentalnu pratnju. O kojoj je umjetničkoj tradiciji riječ?",
+    "answers": [
+      "Flamenco",
+      "Flamenko"
+    ],
+    "explanation": "Flamenco spaja pjevanje, ples i sviranje, a srce mu je Andaluzija.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00552-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Sport",
+    "focus": "Antički pankration",
+    "difficulty": 3,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U antičkoj Olimpiji natjecatelji su kombinirali hrvanje i udarce, a među rijetkim zabranama bili su ugrizi i kopanje očiju. Kako se zvala ta disciplina?",
+    "answers": [
+      "Pankration",
+      "Pankracij",
+      "Pankratij"
+    ],
+    "explanation": "Pankration je bila starogrčka borilačka disciplina s vrlo malo ograničenja.",
+    "sources": [
+      "https://www.olympics.com/ioc/ancient-olympic-games/pankration"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00553-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Povijest",
+    "focus": "Olimpijsko primirje ekecheiria",
+    "difficulty": 5,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Grci su posebnim primirjem omogućavali sportašima i gledateljima siguran put na antičke igre. Kako se na starogrčkom zvalo to primirje?",
+    "answers": [
+      "Ekecheiria",
+      "Ekeheirija",
+      "Ekecheira"
+    ],
+    "explanation": "Ekecheiria je naziv za olimpijsko primirje, obnovljeno u modernom olimpijskom pokretu.",
+    "sources": [
+      "https://www.olympics.com/ioc/olympic-truce"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00554-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Tehnologija",
+    "focus": "Podloga dagerotipije",
+    "difficulty": 3,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Rani fotografski postupak iz 1839. nije stvarao slike na papiru, nego na bakrenoj ploči prevučenoj jednim plemenitim metalom. Kojim?",
+    "answers": [
+      "Srebro",
+      "Srebrom"
+    ],
+    "explanation": "Dagerotipije su nastajale na bakrenim pločama presvučenima srebrom.",
+    "sources": [
+      "https://www.metmuseum.org/exhibitions/listings/2003/french-daguerreotypes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00555-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Nishiki-e višebojni japanski otisci",
+    "difficulty": 5,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Japanski grafičari od 1765. mogli su izrađivati bogato obojene otiske pomoću više zasebnih drvenih matrica. Kako se zovu takvi višebojni otisci?",
+    "answers": [
+      "Nishiki-e",
+      "Nišiki-e"
+    ],
+    "explanation": "Nishiki-e su višebojni drvorezi za koje se koristila posebna matrica za svaku boju.",
+    "sources": [
+      "https://www.metmuseum.org/it/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00556-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Prva olimpijska zastava na Igrama",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Pet olimpijskih krugova bilo je osmišljeno prije Prvog svjetskog rata, ali se zastava prvi put zavijorila na samim Igrama tek 1920. U kojem gradu?",
+    "answers": [
+      "Antwerpen",
+      "Antwerp",
+      "Anvers"
+    ],
+    "explanation": "Olimpijska zastava prvi je put podignuta na Igrama u Antwerpenu 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/antwerp-1920-a-symbol-of-peace-unity-and-strength"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00557-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Glazbena povijest",
+    "focus": "Skladatelj olimpijske himne",
+    "difficulty": 4,
+    "styleId": 85,
+    "styleDescription": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla",
+    "question": "Na prvim modernim Igrama 1896. zbor i orkestri izveli su himnu na stihove Kostisa Palamasa. Koji je grčki skladatelj napisao glazbu?",
+    "answers": [
+      "Spiros Samaras",
+      "Spyros Samaras",
+      "Spyridon Samaras",
+      "Samaras"
+    ],
+    "explanation": "Glazbu olimpijske himne skladao je Spyros Samaras, a tekst Kostis Palamas.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-olympic-anthem-is-born"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00558-20261101",
+    "createdAt": "2026-11-01T16:38:32+01:00",
+    "updatedAt": "2026-11-01T16:38:32+01:00",
+    "topic": "Arhitektura",
+    "focus": "Nadimak atenskog Panatenejskog stadiona",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Stadion obnovljen za Olimpijske igre 1896. zbog svojeg mramora nosi grčki nadimak koji znači 'lijepi mramor'. Koji?",
+    "answers": [
+      "Kallimarmaro",
+      "Kalimarmaro"
+    ],
+    "explanation": "Panatenejski stadion poznat je kao Kallimarmaro zbog mramora upotrijebljenog u obnovi.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/panathenaic-stadium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
