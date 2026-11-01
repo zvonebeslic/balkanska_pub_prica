@@ -205,7 +205,10 @@ async function archiveIfFinished(r){
    teams:final.rows.map(row=>({name:row.name,rounds:row.rounds,score:row.score}))
   });
   session.completedAt=completedAt;
-  if(project===current)scheduleSave();
+  if(project===current){
+   scheduleSave();
+   updatePublishControls();
+  }
   toast("Kviz je spremljen u povijest s datumom i završnom ljestvicom.");
  }catch(error){toast("Povijest nije spremljena: "+error.message,true);}
  finally{archivingSession=false;}
@@ -276,6 +279,10 @@ function publishBoard(r,mode){
  const teams=project.teams||[];
  if(!teams.length){toast("Prvo dodaj barem jednu ekipu.",true);return;}
  const existing=publishedBoard(r);
+ if(mode==="gradual"&&r===2&&existing?.mode==="gradual"&&
+    existing.revealedCount>=existing.rows.length&&project.playSession?.completedAt){
+  toast("Sva mjesta završne ljestvice već su objavljena.");return;
+ }
  if(mode==="gradual"&&existing?.mode==="gradual"&&existing.revealedCount<existing.rows.length){
   existing.revealedCount+=1;
  }else{
@@ -310,8 +317,12 @@ function updatePublishControls(){
  }else{
   status.textContent="Objavljeno: "+board.rows.length+" ekipa. Naknadne izmjene neće se prikazati prije ponovne objave.";
  }
- step.textContent=board?.mode==="gradual"&&board.revealedCount<board.rows.length?
-  "Objavi sljedeće mjesto ↑":"Objavi postupno";
+ const completedGradual=publishTargetRound===2&&board?.mode==="gradual"&&
+  board.revealedCount>=board.rows.length&&!!project.playSession?.completedAt;
+ step.disabled=step.disabled||completedGradual;
+ step.textContent=completedGradual?"Sva mjesta objavljena ✓":
+  board?.mode==="gradual"&&board.revealedCount<board.rows.length?
+   "Objavi sljedeće mjesto ↑":"Objavi postupno";
 }
 function ensureChannel(){
  if(!("BroadcastChannel" in window)||!project)return;
