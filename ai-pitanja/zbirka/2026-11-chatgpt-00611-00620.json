@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-00611-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Priroda",
+    "focus": "Fumarola kao otvor iz kojeg izlazi para",
+    "difficulty": 2,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Na padini vulkana čuje se šištanje, ali umjesto lave iz otvora izlaze para i plinovi. Kako se naziva takav otvor?",
+    "answers": [
+      "Fumarola",
+      "Fumarole"
+    ],
+    "explanation": "Fumarole su vulkanski otvori kroz koje izlaze para i plinovi.",
+    "sources": [
+      "https://www.nps.gov/yell/learn/nature/hydrothermal-features.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00612-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Zanati",
+    "focus": "Nishiki-e višebojni japanski drvorez",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Japanski su grafičari od 1765. izrađivali raskošne višebojne otiske pomoću zasebnih drvenih ploča za različite boje. Kako se zove taj tip otiska?",
+    "answers": [
+      "Nishiki-e",
+      "Nishikie",
+      "Nišiki-e"
+    ],
+    "explanation": "Nishiki-e označava višebojni drvorez koji se razvio u razdoblju Edo.",
+    "sources": [
+      "https://www.metmuseum.org/it/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00613-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Promet",
+    "focus": "Sigurnosni bicikl s jednakim kotačima",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Prije bicikala s dva približno jednaka kotača ulicama su se vozili modeli s golemim prednjim i sitnim stražnjim kotačem. Kojim su engleskim nadimkom bili poznati?",
+    "answers": [
+      "Penny-farthing",
+      "Penny farthing"
+    ],
+    "explanation": "Nadimak penny-farthing uspoređuje dva kotača s britanskim kovanicama različite veličine.",
+    "sources": [
+      "https://americanhistory.si.edu/explore/stories/bicycles-have-changed-fellowship-remains"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00614-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Astronomija",
+    "focus": "Herschelov prvotni naziv za Uran",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "William Herschel želio je novootkriveni planet nazvati Georgium Sidus u čast britanskog kralja, no koje je ime na kraju prihvaćeno?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Planet otkriven 1781. dobio je ime Uran, a ne Herschelov predloženi naziv.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00615-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Hans Burgkmair i chiaroscuro drvorez",
+    "difficulty": 5,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Njemački umjetnik Hans Burgkmair oko 1509. razvio je drvorez s dodatnim pločama za tonske vrijednosti. Kojom se talijanskom riječi naziva taj svjetlosno-sjenoviti postupak?",
+    "answers": [
+      "Chiaroscuro",
+      "Kjaroskuro"
+    ],
+    "explanation": "Chiaroscuro drvorez koristi zasebne ploče za obrise i tonove.",
+    "sources": [
+      "https://www.metmuseum.org/es/essays/the-printed-image-in-the-west-woodcut"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00616-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Povijest",
+    "focus": "Antwerpen kao domaćin Olimpijskih igara 1920.",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Nakon Prvog svjetskog rata Olimpijske igre 1920. održane su u belgijskom lučkom gradu koji je bio simbol obnove i mira. U kojem gradu?",
+    "answers": [
+      "Antwerpen",
+      "Antwerp",
+      "Anvers"
+    ],
+    "explanation": "Antwerpen je bio domaćin Olimpijskih igara 1920. godine.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/a-symbol-of-hope"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00617-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Geologija",
+    "focus": "Sedreni talog termalnih terasa",
+    "difficulty": 3,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "U Mammoth Hot Springsu voda iz podzemlja oslobađa ugljikov dioksid i taloži kalcijev karbonat u svijetle terase. Koja se stijena ondje stvara?",
+    "answers": [
+      "Travertin",
+      "Sedra",
+      "Travertine"
+    ],
+    "explanation": "Travertin nastaje taloženjem kalcijeva karbonata iz termalne vode.",
+    "sources": [
+      "https://www.nps.gov/yell/learn/nature/hydrothermal-features.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00618-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Književnost",
+    "focus": "Genji i poglavlje Evening Faces",
+    "difficulty": 4,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U četvrtom poglavlju japanskog klasika princ upoznaje ženu koja mu preko sluge šalje lepezu s cvijetom. Koje je djelo u pitanju?",
+    "answers": [
+      "Priča o Genjiju",
+      "Genji monogatari",
+      "The Tale of Genji"
+    ],
+    "explanation": "Prizor s lepezom pripada četvrtom poglavlju Priče o Genjiju.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/671032"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00619-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Tehnologija",
+    "focus": "Prva letjelica uz Uran",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Godine 1986. samo je jedna svemirska letjelica prošla pokraj Urana i snimila njegove mjesece. Kako se zvala?",
+    "answers": [
+      "Voyager 2",
+      "Vojadžer 2"
+    ],
+    "explanation": "Voyager 2 jedina je letjelica koja je izbliza istražila Uran.",
+    "sources": [
+      "https://science.nasa.gov/uranus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00620-20261101",
+    "createdAt": "2026-11-01T23:37:21+01:00",
+    "updatedAt": "2026-11-01T23:37:21+01:00",
+    "topic": "Arhitektura",
+    "focus": "Gejzirit kao silicijski talog",
+    "difficulty": 5,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Za razliku od karbonatnog travertina, čvrsti talog oko nekih gejzira Yellowstonea nastaje od silicijeva dioksida. Kako se naziva taj talog?",
+    "answers": [
+      "Gejzirit",
+      "Geyserite"
+    ],
+    "explanation": "Gejzirit je silicijski talog koji se nakuplja oko gejzira.",
+    "sources": [
+      "https://www.nps.gov/features/yell/ofvec/exhibits/science/mountain/mountain4.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
