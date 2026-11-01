@@ -102,10 +102,10 @@ async function installExampleQuiz(){
  if(!stageMode&&project)await persist();
  const quiz=await makeExampleQuiz();
  await persist(quiz);
- project=quiz;position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;
+ project=quiz;position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;
  localStorage.setItem("kviztogo_live_id",project.id);
  ensureChannel();await refreshSelect();renderAll();
- $("revealBtn").textContent="Otkrij odgovor";
+ $("revealBtn").textContent="Prikaži odgovor";
  $("scoresBtn").textContent="🏆 Prikaži ljestvicu";
  toast("Kviz Općeg Znanja 1 učitan je sa svim pitanjima i odgovorima. Možeš uređivati svoju kopiju.");
 }
@@ -373,12 +373,7 @@ function removeMedia(){const q=itemAt(position.r,position.s,position.i);q.mediaI
 async function addTeam(){
  const name=$("teamName").value.trim();if(!name)return;
  if(project.teams.some(t=>t.name.toLowerCase()===name.toLowerCase())){toast("Ekipa s tim imenom već postoji.",true);return;}
- project.teams.push({id:uid(),name,scores:{}});$("teamName").value="";scheduleSave();renderScores();pushStage();
-}
-function refreshClocks(){
- const sec=timerUntil?Math.max(0,Math.ceil((timerUntil-Date.now())/1000)):null;
- const text=sec===null?"":String(Math.floor(sec/60)).padStart(2,"0")+":"+String(sec%60).padStart(2,"0");
- if(stageMode)$("stageClock").textContent=text;else $("editorClock").textContent=text||String($("timerSeconds").value/60|0).padStart(2,"0")+":"+String(Number($("timerSeconds").value)%60).padStart(2,"0");
+ project.teams.push({id:uid(),name,scores:{},roundScores:{}});$("teamName").value="";scheduleSave();renderAll();
 }
 function validateImported(raw){
  if(!raw||!Array.isArray(raw.rounds)||raw.rounds.length!==ROUNDS.length)throw Error("Datoteka nema tri tražena kruga.");
@@ -419,7 +414,7 @@ async function importQuiz(file){
    const blob=await (await fetch(a.data)).blob(),id=uid();await storePut("assets",{id,name:a.name||"Prilog",type:blob.type,blob});remap[old]=id;
   }
   walkItems(copy,item=>{item.mediaId=remap[item.mediaId]||"";});
-  await persist(copy);clearTimeout(saveTimer);project=copy;position={r:0,s:0,i:0};revealed=false;showBoard=false;
+  endPairing();await persist(copy);clearTimeout(saveTimer);project=copy;position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;
   localStorage.setItem("kviztogo_live_id",copy.id);ensureChannel();await refreshSelect();renderAll();toast("Uvezen je novi kviz.");
  }catch(e){toast("Uvoz nije uspio: "+e.message,true);}
 }
@@ -598,14 +593,12 @@ function connectAudience(room){
   onState:slide=>{
    const signature=JSON.stringify(slide);
    if(signature!==lastSlide){renderSharedSlide($("stageCanvas"),slide);lastSlide=signature;}
-   timerUntil=slide.clockEnd||0;
   },
   onStatus:status=>{
    if(status==="Povezano"&&!lastSlide)$("stageCanvas").textContent="Ekran je povezan. Čekam voditelja kviza…";
    else if(status!=="Povezano"){$("stageCanvas").textContent=status;lastSlide="";}
   }
  });
- setInterval(refreshClocks,250);
 }
 function connectRemoteController(room,secret){
  $("homeScreen").hidden=true;$("hostScreen").hidden=true;
@@ -624,6 +617,7 @@ function connectRemoteController(room,secret){
    }
    $("remoteStatus").textContent="Upravljanje aktivnim kvizom · "+slide.index+" / "+slide.total;
    $("remoteReveal").textContent=slide.revealed?"Sakrij odgovor":"Prikaži odgovor";
+   $("remoteReveal").disabled=slide.slideType!=="question"||slide.showBoard;
    $("remotePrev").disabled=slide.index<=1;
    $("remoteNext").disabled=slide.index>=slide.total;
   },
@@ -667,7 +661,7 @@ function bindEditor(){
  $("joinRoom").addEventListener("keydown",e=>{if(e.key==="Enter")$("joinAudience").click();});
  $("quizSelect").addEventListener("change",async e=>{
   endPairing();clearTimeout(saveTimer);await persist();const q=await storeGet("quizzes",e.target.value);if(!q)return;
-  project=q;localStorage.setItem("kviztogo_live_id",q.id);position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;ensureChannel();renderAll();
+  project=q;localStorage.setItem("kviztogo_live_id",q.id);position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;ensureChannel();renderAll();
  });
  $("exampleBtn").addEventListener("click",async()=>{
   const button=$("exampleBtn");button.disabled=true;
@@ -678,13 +672,13 @@ function bindEditor(){
  $("newBtn").addEventListener("click",async()=>{
   endPairing();clearTimeout(saveTimer);await persist();
   project=createQuiz();await persist();localStorage.setItem("kviztogo_live_id",project.id);
-  position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;ensureChannel();await refreshSelect();renderAll();showView("edit");toast("Novi prazni kviz je spreman.");
+  position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;ensureChannel();await refreshSelect();renderAll();showView("edit");toast("Novi prazni kviz je spreman.");
  });
  $("deleteBtn").addEventListener("click",async()=>{
   if(!project||!confirm("Trajno obrisati kviz „"+project.title+"” na ovom uređaju?"))return;
   endPairing();clearTimeout(saveTimer);const id=project.id;await storeDelete("quizzes",id);const all=await storeAll("quizzes");
   project=all[0]||createQuiz();if(!all.length)await persist();localStorage.setItem("kviztogo_live_id",project.id);
-  position={r:0,s:0,i:0};revealed=false;showBoard=false;timerUntil=0;ensureChannel();await refreshSelect();renderAll();toast("Kviz je obrisan.");
+  position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;ensureChannel();await refreshSelect();renderAll();toast("Kviz je obrisan.");
  });
  $("importBtn").addEventListener("click",()=>$("importFile").click());
  $("importFile").addEventListener("change",e=>{importQuiz(e.target.files[0]);e.target.value="";});
@@ -705,7 +699,7 @@ function bindEditor(){
  $("prevBtn").addEventListener("click",()=>changePosition(-1));
  $("nextBtn").addEventListener("click",()=>changePosition(1));
  $("revealBtn").addEventListener("click",changeReveal);
- $("scoresBtn").addEventListener("click",()=>{showBoard=!showBoard;renderAll();$("scoresBtn").textContent=showBoard?"Vrati pitanje":"🏆 Prikaži ljestvicu";});
+ $("scoresBtn").addEventListener("click",()=>{if(currentSlide().kind==="score")return;showBoard=!showBoard;renderAll();});
  $("stageBtn").addEventListener("click",()=>{
   if(!project)return;const target=pairing?audienceUrl(pairing.room):"kviz-uzivo.html?stage=1&id="+encodeURIComponent(project.id);
   const w=window.open(target,"_blank");
@@ -714,12 +708,29 @@ function bindEditor(){
  });
  $("addTeam").addEventListener("click",addTeam);
  $("teamName").addEventListener("keydown",e=>{if(e.key==="Enter")addTeam();});
- $("teamScores").addEventListener("change",e=>{const el=e.target.closest("select[data-team]");if(!el)return;const t=project.teams.find(x=>x.id===el.dataset.team);if(!t)return;t.scores[keyOf(position.r,position.s,position.i)]=Number(el.value);scheduleSave();renderScores();pushStage();});
- $("teamScores").addEventListener("click",e=>{const el=e.target.closest("button[data-remove-team]");if(!el)return;const t=project.teams.find(x=>x.id===el.dataset.removeTeam);if(!t||!confirm("Ukloniti ekipu "+t.name+"?"))return;project.teams=project.teams.filter(x=>x.id!==t.id);scheduleSave();renderScores();pushStage();});
- $("resetScores").addEventListener("click",()=>{if(!confirm("Poništiti sve bodove svih ekipa?"))return;project.teams.forEach(t=>t.scores={});scheduleSave();renderScores();pushStage();});
- $("timerStart").addEventListener("click",()=>{timerUntil=Date.now()+Number($("timerSeconds").value)*1000;refreshClocks();pushStage();});
- $("timerStop").addEventListener("click",()=>{timerUntil=0;refreshClocks();pushStage();});
- $("timerSeconds").addEventListener("change",refreshClocks);
+ $("teamScores").addEventListener("change",e=>{const el=e.target.closest("select[data-team]");if(!el)return;const t=project.teams.find(x=>x.id===el.dataset.team);if(!t)return;t.scores[keyOf(position.r,position.s,position.i)]=Number(el.value);scheduleSave();renderAll();});
+ $("roundScores").addEventListener("change",e=>{
+  const input=e.target.closest("input[data-round-team]");if(!input)return;
+  const team=project.teams.find(x=>x.id===input.dataset.roundTeam);
+  if(!team)return;
+  const r=Number(input.dataset.round),value=input.value.trim();
+  if(!Number.isInteger(r)||r<0||r>2)return;
+  if(value!==""&&(!Number.isFinite(Number(value))||Number(value)<(r===2?-5:0)||Number(value)>roundMax(r))){
+   toast("Bodovi za "+(r+1)+". krug moraju biti između "+(r===2?-5:0)+" i "+roundMax(r)+".",true);
+   renderScores();return;
+  }
+  team.roundScores=team.roundScores||{};
+  if(value==="")delete team.roundScores[r];else team.roundScores[r]=Number(value);
+  scheduleSave();renderAll();
+ });
+ $("roundScores").addEventListener("click",e=>{
+  const btn=e.target.closest("button[data-remove-team]");if(!btn)return;
+  const t=project.teams.find(x=>x.id===btn.dataset.removeTeam);
+  if(!t||!confirm("Ukloniti ekipu "+t.name+"?"))return;
+  project.teams=project.teams.filter(x=>x.id!==t.id);
+  scheduleSave();renderAll();
+ });
+ $("resetScores").addEventListener("click",()=>{if(!confirm("Poništiti sve bodove svih ekipa?"))return;project.teams.forEach(t=>{t.scores={};t.roundScores={};});scheduleSave();renderAll();});
  document.addEventListener("keydown",e=>{
   if(currentView!=="host"||e.target.closest("input,textarea,select,button"))return;
   if(e.key==="ArrowRight"){e.preventDefault();changePosition(1);}
@@ -753,7 +764,6 @@ async function init(){
    bindEditor();ensureChannel();await refreshSelect();renderAll();showView("home");
    $("saveStatus").textContent="✓ Spremljeno na ovom uređaju";
   }
-  setInterval(refreshClocks,250);
  }catch(e){toast("Ne mogu otvoriti lokalnu bazu: "+e.message,true);if(stageMode)$("stageCanvas").textContent="Greška: "+e.message;else $("saveStatus").textContent="Spremanje nije dostupno"; }
 }
 init();
