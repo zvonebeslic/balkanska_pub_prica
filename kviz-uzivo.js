@@ -241,7 +241,7 @@ function renderEditor(){
   '<div class="question-meta"><span class="badge">'+esc(ROUNDS[r].name)+'</span><span class="badge">'+(s+1)+'. rubrika</span><span class="badge">'+esc(labelItem(r,s,i))+'</span><span class="badge">do '+pointsFor(r,s,i)+' bodova</span></div>'+
   '<h2>'+esc(c.name)+'</h2><p class="description">'+esc(c.desc)+'</p>'+
   '<div class="fieldset">'+field("question",titleLabel,q.question,{type:"textarea",placeholder:"Ovdje napiši pitanje koje će publika vidjeti…"})+
-  answerFields+field("note","Napomena za voditelja (nije vidljiva publici)",q.note,{type:"textarea"})+
+  answerFields+field("note",c.code==="vjerovali"?"Objašnjenje ispod točnog odgovora (vidljivo nakon otkrivanja)":"Napomena za voditelja (nije vidljiva publici)",q.note,{type:"textarea"})+
   '<label>Dodaj sliku, audio ili video<input id="mediaInput" type="file" accept="image/*,audio/*,video/*"></label>'+
   '<div class="media-status">'+mediaStatus+'</div>'+
   field("mediaUrl","Ili zalijepi javnu poveznicu na sliku, audio ili video",q.mediaUrl,{placeholder:"https://... (podržan i YouTube)"})+
@@ -546,6 +546,7 @@ function sharedSlide(){
    section.code==="vjerovali"?["Točno","Netočno"]:[],
   correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
   answer:revealed?createAnswer(slide.r,slide.s,slide.i,q):"",
+  truthExplanation:revealed&&section.code==="vjerovali"?String(q.note||"").trim():"",
   associationExplanation:revealed?putinExplanation:"",
   estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
@@ -704,6 +705,8 @@ function renderSharedSlide(root,slide,options={}){
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed&&slide.sectionCode!=="stihovi"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
+  (slide.revealed&&slide.sectionCode==="vjerovali"&&slide.truthExplanation?
+   '<div class="truth-answer-note">('+esc(slide.truthExplanation)+')</div>':"")+
   (slide.revealed&&slide.sectionCode==="asocijacija"&&slide.associationExplanation?
    '<div class="association-answer-note">('+esc(slide.associationExplanation)+')</div>':"")+
   (slide.revealed&&slide.sectionCode==="procjena"&&slide.estimateRange?
