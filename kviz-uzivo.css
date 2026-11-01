@@ -658,3 +658,17 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .host-round-jump{gap:7px}
  .host-round-jump button{padding:9px 5px;min-height:46px;font-size:14px}
 }
+
+/* Two scoring parts for the first-round song recognition rubric. */
+.rubric-song-note{
+ color:#c8e4fb;
+ font-size:clamp(17px,1.65vw,31px);
+ font-weight:750;
+ text-align:center;
+ line-height:1.25;
+}
+.host-display .rubric-song-note{font-size:clamp(14px,1.4vw,22px)}
+.remote-preview .rubric-song-note{font-size:clamp(13px,1.25vw,20px)}
+@media(max-width:730px){
+ .stage-screen .rubric-song-note{font-size:clamp(16px,3.4vw,26px)}
+}
