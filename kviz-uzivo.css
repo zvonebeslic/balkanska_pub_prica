@@ -615,3 +615,17 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .host-display .screen-inner.slide--question{padding:20px 16px}
  .host-answer-toggle{justify-content:flex-start}
 }
+
+/* Number of questions directly under each rubric heading in every round. */
+.rubric-question-count{
+ font-weight:800;
+ font-size:clamp(21px,2.05vw,39px);
+ line-height:1.18;
+ color:#c8e4fb;
+ text-align:center;
+}
+.host-display .rubric-question-count{font-size:clamp(16px,1.55vw,25px)}
+.remote-preview .rubric-question-count{font-size:clamp(14px,1.35vw,22px)}
+@media(max-width:730px){
+ .stage-screen .rubric-question-count{font-size:clamp(18px,3.6vw,27px)}
+}
