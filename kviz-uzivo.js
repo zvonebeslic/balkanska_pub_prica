@@ -244,6 +244,13 @@ function renderEditor(){
  $("mediaInput").addEventListener("change",uploadMedia);
  const remove=$("removeMedia");if(remove)remove.addEventListener("click",removeMedia);
 }
+// For "Ne zaboravi stihove", share ONLY word/letter counts before reveal,
+ // never the hidden lyrics themselves.
+function lyricWordLengths(answer){
+ return String(answer||"").trim().split(/\s+/u)
+  .map(word=>(word.match(/[\p{L}\p{N}]/gu)||[]).length)
+  .filter(length=>length>0);
+}
 function createAnswer(r,s,i,q){
  const code=ROUNDS[r].sections[s].code;
  if(code==="abc")return (q.correct||"A")+") "+(q.options?.[["A","B","C"].indexOf(q.correct)]||"");
@@ -491,6 +498,7 @@ function sharedSlide(){
  return {
   ...base,slideType:"question",roundName:ROUNDS[slide.r].name,
   sectionTitle:rubricDisplayName(section.name),sectionCode:section.code,
+  lyricWordLengths:section.code==="stihovi"?lyricWordLengths(q.answer):[],
   question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
@@ -598,6 +606,15 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  const question=String(slide.question||"");
+ // Keep the lyric blanks on BOTH presenter and audience views, before AND after reveal.
+ // Each short underline represents one letter; spaces between groups are words.
+ const lyricLengths=slide.sectionCode==="stihovi"&&Array.isArray(slide.lyricWordLengths)?
+  slide.lyricWordLengths.filter(n=>Number.isInteger(n)&&n>0&&n<=120):[];
+ const lyricBlanks=slide.sectionCode!=="stihovi"?"":lyricLengths.length?
+  '<div class="lyric-blanks" role="img" aria-label="'+lyricLengths.length+' riječi: '+lyricLengths.join(", ")+' slova">'+
+   lyricLengths.map(length=>'<span class="lyric-word" aria-hidden="true">'+
+    '<span class="lyric-letter"></span>'.repeat(length)+'</span>').join("")+'</div>':
+  '<div class="lyric-blanks-missing">Za prikaz crtica prvo upiši odgovor u uređivaču.</div>';
  // Every question has a fixed font size for its screen, regardless of character count.
  // The CSS also keeps ABC options at that same size.
  const choices=(slide.choices||[]).map(t=>{
@@ -608,6 +625,7 @@ function renderSharedSlide(root,slide,options={}){
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong></div>'+
   '<div class="screen-body"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
+  lyricBlanks+
   (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+'">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
   (slide.revealed?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
