@@ -27,18 +27,19 @@
         <p>Jednostavno upravljanje pitanjima i odgovorima. Poseban prikaz za TV ili projektor.</p>
       </div>
     </div>
+    <div class="join-audience">
+      <strong class="join-title">📺 Ovaj uređaj je TV ili projektor?</strong>
+      <p>Na voditeljskom mobitelu pokreni povezivanje. <strong>Kod prikazan na mobitelu upiši ovdje.</strong> Na TV-u nemoj otvarati zasebnu voditeljsku sobu.</p>
+      <div class="join-line"><input type="text" id="joinRoom" maxlength="12" autocomplete="off" autocapitalize="characters" placeholder="Kod s mobitela" aria-label="Kod ekrana za publiku">
+      <button type="button" id="joinAudience" class="primary">📺 Spoji ovaj TV</button></div>
+    </div>
     <div class="home-actions">
       <button id="startBtn" type="button" class="home-action main-action"><span class="action-icon">▶</span><span><strong>Nastavi kviz</strong><small id="homeQuizTitle">Posljednji otvoreni kviz</small></span><span>→</span></button>
       <button id="exampleBtn" type="button" class="home-action"><span class="action-icon">📚</span><span><strong>Učitaj ogledni kviz</strong><small>Kviz Općeg Znanja 1 · 3 kruga</small></span><span>→</span></button>
       <button id="newBtn" type="button" class="home-action"><span class="action-icon">＋</span><span><strong>Novi kviz</strong><small>Otvori uređivač krugova i pitanja</small></span><span>→</span></button>
       <button id="manageBtn" type="button" class="home-action"><span class="action-icon">☷</span><span><strong>Moji kvizovi</strong><small>Otvori, uvezi, izvezi ili obriši</small></span><span>→</span></button>
     </div>
-    <div class="join-audience">
-      <strong class="join-title">📺 Ovaj uređaj je TV ili projektor?</strong>
-      <p>Na voditeljskom mobitelu pokreni povezivanje. <strong>Kod prikazan na mobitelu upiši ovdje.</strong> Na TV-u nemoj otvarati zasebnu voditeljsku sobu.</p>
-      <div class="join-line"><input type="text" id="joinRoom" maxlength="12" autocomplete="off" autocapitalize="characters" placeholder="Kod prikaza, npr. K8R3T9XP" aria-label="Kod ekrana za publiku">
-      <button type="button" id="joinAudience" class="primary">📺 Spoji ekran</button></div>
-    </div>
+
     <p class="home-hint" id="saveStatus">Učitavam spremljene kvizove…</p>
   </section>
 
