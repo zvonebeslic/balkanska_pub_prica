@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-00478-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Povijest",
+    "focus": "Rosettski kamen tri pisma",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je kameni nalaz iz Egipta omogućio usporedbu istog teksta na grčkom, demotskom i hijeroglifskom pismu?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rosettski kamen",
+      "Rosetta Stone"
+    ],
+    "explanation": "Na kamenu je isti dekret zapisan na tri načina, što je pomoglo dešifriranju hijeroglifa.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/Y_EA24"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00479-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Biologija",
+    "focus": "Mikoriza simbioza gljive i korijena",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kad gljiva biljci olakšava upijanje vode i minerala, a zauzvrat prima šećere, kako se zove ta zajednica?",
+    "answers": [
+      "Mikoriza",
+      "Mycorrhiza"
+    ],
+    "explanation": "Mikoriza je simbiotska veza gljiva i korijena biljaka.",
+    "sources": [
+      "https://www.britannica.com/science/mycorrhiza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00480-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Glazba",
+    "focus": "Sitar indijsko trzalačko glazbalo",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Ravi Shankar proslavio je indijsko glazbalo s dugim vratom i rezonantnim žicama, koje je nadahnulo i neke rock-glazbenike. Kako se zove?",
+    "answers": [
+      "Sitar"
+    ],
+    "explanation": "Sitar je indijsko žičano glazbalo koje se svira trzanjem.",
+    "sources": [
+      "https://www.britannica.com/art/sitar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00481-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Kemija",
+    "focus": "Obsidijan vulkansko staklo",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Pra-povijesni majstori izrađivali su iznimno oštre oštrice od crnog prirodnog stakla nastalog brzim hlađenjem lave. Koji je to materijal?",
+    "answers": [
+      "Opsidijan",
+      "Obsidijan",
+      "Obsidian"
+    ],
+    "explanation": "Opsidijan nastaje naglim hlađenjem lave, bez stvaranja velikih kristala.",
+    "sources": [
+      "https://www.britannica.com/science/obsidian"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00482-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Sport",
+    "focus": "Biatlon skijanje i streljaštvo",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom sportu natjecatelj između dionica skijaškog trčanja mora pogoditi mete puškom?",
+    "answers": [
+      "Biatlon",
+      "Biathlon"
+    ],
+    "explanation": "Biatlon kombinira skijaško trčanje i gađanje iz puške.",
+    "sources": [
+      "https://www.britannica.com/sports/biathlon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00483-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Književnost",
+    "focus": "Haiku 5 7 5 slogova",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Tradicionalni japanski stih često se opisuje rasporedom slogova 5, 7 i 5. Kako se zove ta kratka pjesnička forma?",
+    "answers": [
+      "Haiku",
+      "Haiku pjesma"
+    ],
+    "explanation": "Haiku je japanska pjesnička forma tradicionalno povezana s obrascem 5–7–5.",
+    "sources": [
+      "https://www.britannica.com/art/haiku"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00484-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto enklava Južne Afrike",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Ova planinska afrička kraljevina nema izlaz na more i sa svih je strana okružena jednom jedinom državom. Koja je to kraljevina?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je potpuno okružen Južnoafričkom Republikom.",
+    "sources": [
+      "https://www.britannica.com/place/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00485-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod izumljen u Japanu",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kvadratići koji se mogu očitati kamerom prvotno su razvijeni za praćenje dijelova u automobilskoj industriji. Koja je dvoslovna kratica u njihovu nazivu?",
+    "answers": [
+      "QR"
+    ],
+    "explanation": "QR znači Quick Response, a kod je razvila tvrtka Denso Wave.",
+    "sources": [
+      "https://www.qrcode.com/en/history/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00486-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Pointilizam slikanje točkama",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Georges Seurat gradio je prizore mnoštvom sitnih obojenih točaka koje se stapaju u oku promatrača. Kako se naziva taj slikarski postupak?",
+    "answers": [
+      "Pointilizam",
+      "Poentilizam",
+      "Pointillism"
+    ],
+    "explanation": "Pointilizam gradi vizualne cjeline od zasebnih točaka boje.",
+    "sources": [
+      "https://www.britannica.com/art/pointillism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00487-20261101",
+    "createdAt": "2026-11-01T03:38:17+01:00",
+    "updatedAt": "2026-11-01T03:38:17+01:00",
+    "topic": "Medicina",
+    "focus": "Stapes najmanja kost",
+    "difficulty": 3,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "U srednjem uhu nalazi se najmanja kost ljudskog tijela, čiji naziv podsjeća na dio jahaće opreme. Kako se zove?",
+    "answers": [
+      "Stremen",
+      "Stapes",
+      "Stremenska kost"
+    ],
+    "explanation": "Stremen je jedna od triju slušnih koščica srednjeg uha.",
+    "sources": [
+      "https://www.britannica.com/science/stapes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
