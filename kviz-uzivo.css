@@ -807,3 +807,20 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 @media(max-width:730px){
  .stage-screen .slide--thanks .thanks-website{font-size:clamp(19px,5vw,35px)}
 }
+
+/* Asocijacija: veza svakog traga s konačnim odgovorom, tek nakon otkrivanja. */
+.association-answer-note{
+ max-width:min(96%,1300px);
+ color:#ceddec;
+ font-size:clamp(14px,1.45vw,25px);
+ font-weight:650;
+ line-height:1.35;
+ text-align:center;
+ text-wrap:balance;
+ overflow-wrap:anywhere;
+}
+.host-display .association-answer-note{font-size:clamp(12px,1.3vw,19px)}
+.remote-preview .association-answer-note{font-size:clamp(12px,1.2vw,19px)}
+@media(max-width:730px){
+ .stage-screen .association-answer-note{font-size:clamp(14px,3vw,23px)}
+}
