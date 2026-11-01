@@ -472,7 +472,7 @@ function sharedSlide(){
  const section=ROUNDS[slide.r].sections[slide.s];
  if(slide.kind==="section")return {
   ...base,roundName:ROUNDS[slide.r].name,sectionTitle:rubricDisplayName(section.name),
-  description:section.desc,example:SECTION_EXAMPLES[section.code]||"",
+  sectionCode:section.code,description:section.desc,example:SECTION_EXAMPLES[section.code]||"",
   sectionPoints:Array.from({length:section.count},(_,i)=>pointsFor(slide.r,slide.s,i)).reduce((a,b)=>a+b,0)
  };
  const q=itemAt(slide.r,slide.s,slide.i);
@@ -535,11 +535,16 @@ function renderSharedSlide(root,slide,options={}){
   return;
  }
  if(type==="section"){
+  const specialExamples=slide.sectionCode==="povezano"?
+   '<div class="rubric-examples" aria-label="Primjeri poveznica">'+
+    '<div class="rubric-example-group">(Pan<span class="ktg-gold">dora</span>, El <span class="ktg-gold">Dora</span>do, <span class="ktg-gold">Dora</span> Kurpić, Dia<span class="ktg-gold">dora</span>)</div>'+
+    '<div class="rubric-example-group">(Lovac u žitu, Kraljevstvo nebesko, Turopoljski top, Nilski konj)</div>'+
+   '</div>':"";
   root.innerHTML=inner("slide--section",
    '<div class="slide-center">'+
    '<div class="slide-hero rubric-hero">'+esc(slide.sectionTitle||"Rubrika")+'</div>'+
    '<div class="rubric-description">'+esc(slide.description||"")+'</div>'+
-   (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':"")+'</div>');
+   (specialExamples|| (slide.example?'<div class="rubric-example">'+esc(slide.example)+'</div>':""))+'</div>');
   return;
  }
  if(type==="score"){
@@ -567,7 +572,7 @@ function renderSharedSlide(root,slide,options={}){
   '<div class="screen-body"><div class="screen-title '+(question.length>155?"extra-long":question.length>70?"long":"")+'">'+esc(question)+'</div>'+
   (choices?'<div class="screen-choices">'+choices+'</div>':"")+
   '<div class="screen-media"></div>'+
-  (slide.revealed?'<div class="screen-answer">✓ '+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
+  (slide.revealed?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
   '</div>');
  if(options.localMedia){
   const current=currentSlide(),q=current.kind==="question"?itemAt(current.r,current.s,current.i):null;
