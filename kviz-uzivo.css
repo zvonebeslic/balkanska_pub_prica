@@ -736,3 +736,20 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .host-display .lyric-blanks{font-size:clamp(18px,4.7vw,27px);column-gap:15px}
  .remote-preview .lyric-blanks{font-size:clamp(15px,3.8vw,23px);column-gap:12px}
 }
+
+/* Letter-by-letter lyric reveal on the existing blanks; the layout stays fixed. */
+.lyric-letter{
+ display:flex;
+ align-items:flex-end;
+ justify-content:center;
+ box-sizing:border-box;
+ flex:0 0 .7em;
+ width:.7em;
+ height:1.15em;
+ padding-bottom:.07em;
+}
+.lyric-blanks-revealed .lyric-letter{
+ color:var(--ktg-answer-gold, #bd9c63);
+ font-weight:950;
+ text-align:center;
+}
