@@ -342,6 +342,12 @@ function updateStudio(){
  $("hostQuizTitle").textContent=project.title||"Kviz Općeg Znanja";
  $("hostQuestionLabel").textContent=label;
  $("hostCounter").textContent="Slajd "+(slideIndex+1)+" / "+SLIDES.length;
+ // Highlight the current round on the presenter screen only.
+ $("hostRoundJump").querySelectorAll("button[data-round-index]").forEach(button=>{
+  const active=slide.r===Number(button.dataset.roundIndex);
+  button.classList.toggle("active",active);
+  button.setAttribute("aria-pressed",active?"true":"false");
+ });
  $("prevBtn").disabled=slideIndex<=0;
  $("nextBtn").disabled=slideIndex>=SLIDES.length-1;
  $("firstSlideBtn").disabled=slideIndex===0&&!showBoard;
@@ -749,6 +755,14 @@ function bindEditor(){
  $("questionEdit").addEventListener("change",changeField);
  $("prevBtn").addEventListener("click",()=>changePosition(-1));
  $("nextBtn").addEventListener("click",()=>changePosition(1));
+ $("hostRoundJump").addEventListener("click",e=>{
+  const button=e.target.closest("button[data-round-index]");
+  if(!button)return;
+  const round=Number(button.dataset.roundIndex);
+  if(!Number.isInteger(round)||round<0||round>=ROUNDS.length)return;
+  const index=SLIDES.findIndex(slide=>slide.kind==="round"&&slide.r===round);
+  if(index>=0)setSlideIndex(index);
+ });
  $("firstSlideBtn").addEventListener("click",()=>{if(slideIndex!==0||showBoard)setSlideIndex(0);});
  $("autoShowAnswers").addEventListener("change",e=>{
   autoShowAnswers=e.target.checked;
