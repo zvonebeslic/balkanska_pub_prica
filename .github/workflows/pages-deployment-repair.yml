@@ -45,13 +45,21 @@ jobs:
               sys.exit(1)
           print("Recent deployments:",[(x["id"],x["sha"][:12],x.get("environment")) for x in deployments[:12]])
           matches=[x for x in deployments if x.get("sha")==blocked and x.get("environment")=="github-pages"]
-          print("Matches for blocked sha:",[(x["id"],x.get("created_at")) for x in matches])
-          for item in matches:
-              code,states=call("GET",f"/deployments/{item['id']}/statuses?per_page=8")
-              print("Deployment",item["id"],"states:",[(x.get("state"),x.get("created_at")) for x in (states or [])] if isinstance(states,list) else code)
-          print("Diagnostic only. No records changed.")
-          sys.exit(0)
-          deployment_id=matches[0]["id"]
+          print("Matches for blocked SHA:",[(x["id"],x.get("created_at")) for x in matches])
+          if len(matches)<2:
+              print("No newer matching successful deployment exists. Preserving production.")
+              sys.exit(1)
+          # Remove only the OLD matching record. Keep the newer successful deployment.
+          oldest=min(matches,key=lambda x:x["created_at"])
+          newer=[x for x in matches if x["id"]!=oldest["id"]]
+          safe=False
+          for item in newer:
+              code,sts=call("GET",f"/deployments/{item['id']}/statuses?per_page=1")
+              if code==200 and sts and sts[0].get("state")=="success":safe=True
+          if not safe:
+              print("No newer successful deployment; preserving old deployment.")
+              sys.exit(1)
+          deployment_id=oldest["id"]
           code,states=call("GET",f"/deployments/{deployment_id}/statuses?per_page=5")
           print("Blocked deployment ID:",deployment_id,"Latest status:",(states or [{}])[0].get("state") if isinstance(states,list) else None)
           if code!=200 or not isinstance(states,list):sys.exit(1)
