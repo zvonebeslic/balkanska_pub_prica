@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-00716-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Povijest",
+    "focus": "Riječ na kamenu iz 196. pr. Kr.",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Na ploči iz doba Ptolemeja V. isti je dekret uklesan hijeroglifima, demotskim pismom i grčkim. Kako nazivamo taj ključ za čitanje drevnog Egipta?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rozetski kamen",
+      "Rosetta Stone"
+    ],
+    "explanation": "Kamen iz Rosette pronađen je 1799., a usporedba triju zapisa pomogla je dešifriranju hijeroglifa.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/egypt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00717-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "More i ocean",
+    "focus": "Sargaško more bez kopnene obale",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U Atlantiku postoji more koje umjesto obale omeđuju morske struje, a ime duguje plutajućim smeđim algama. Koje?",
+    "answers": [
+      "Sargaško more",
+      "Sargasko more",
+      "Sargasso Sea"
+    ],
+    "explanation": "Sargaško more jedino je more bez kopnene granice; omeđuju ga struje sjevernoatlantskog vrtloga.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/sargassosea.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00718-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Sport",
+    "focus": "Zabluda o bojama olimpijskih krugova",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Plavi, žuti, crni, zeleni i crveni olimpijski krugovi simboliziraju zajedništvo kontinenata, ali njihove boje ne pripadaju pojedinim kontinentima. Koliko je krugova?",
+    "answers": [
+      "5",
+      "Pet"
+    ],
+    "explanation": "MOO izričito navodi da pojedine boje ne predstavljaju pojedine kontinente.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/olympic-symbol-and-identity/what-is-the-meaning-of-the-olympic-rings"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00719-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Ples",
+    "focus": "Dvije države na UNESCO-ovoj prijavi tanga",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Buenos Aires i Montevideo dijele glazbu i ples koji je 2009. na UNESCO-ov popis upisan zajedničkom prijavom Argentine i Urugvaja. Koji ples?",
+    "answers": [
+      "Tango"
+    ],
+    "explanation": "Tango je zajednička nematerijalna baština Argentine i Urugvaja, nastala u području Río de la Plate.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/tango-00258"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00720-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Seuratov naziv za točkastu slikarsku tehniku",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Georges Seurat slagao je sitne dodire čistih boja kako bi se optički spojile u oku promatrača. Kako se naziva tehnika po francuskoj riječi za točku?",
+    "answers": [
+      "Poentilizam",
+      "Pointilizam",
+      "Pointillism"
+    ],
+    "explanation": "Seuratova metoda poznata je kao poentilizam, premda je sam više volio naziv divizionizam.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/459117"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00721-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Geologija",
+    "focus": "Plutajuća vulkanska stijena",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Iz vulkana izlazi toliko plinom prošarana stijena da pojedini komadi mogu plutati na vodi. Kako se naziva ta lagana stijena?",
+    "answers": [
+      "Plovućac",
+      "Plovucac",
+      "Plavac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac ima mnoštvo šupljina nastalih izlaskom plinova iz magme pa može biti manje gustoće od vode.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00722-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Astronomija",
+    "focus": "Tekući ugljikovodici na Titanu",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Zemaljska jezera pune se vodom, no Cassinijev radar na Saturnovu mjesecu Titanu otkrio je jezera drugih tekućina. Koji je ugljikovodik, uz etan, njihov sastojak?",
+    "answers": [
+      "Metan",
+      "Methane"
+    ],
+    "explanation": "Na hladnom Titanu metan i etan mogu ostati tekući, a voda je ondje smrznuta.",
+    "sources": [
+      "https://science.nasa.gov/resource/lakes-on-titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00723-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Tehnologija",
+    "focus": "Graditelj prvog drvenog računalnog miša",
+    "difficulty": 5,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Douglas Engelbart osmislio je računalni miš, ali prvi drveni prototip izradio je njegov suradnik u SRI-ju. Kako se zvao taj inženjer?",
+    "answers": [
+      "Bill English",
+      "William English"
+    ],
+    "explanation": "Bill English izradio je drveni prototip miša prema Engelbartovoj zamisli.",
+    "sources": [
+      "https://computerhistory.org/sri-mouse-mn052024/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00724-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Životinje",
+    "focus": "Tri srca glavonožaca",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Dvije pumpe šalju krv prema škrgama, a treća je tjera tijelom. Koliko srca imaju hobotnice?",
+    "answers": [
+      "3",
+      "Tri"
+    ],
+    "explanation": "Glavonošci imaju dva škržna i jedno sustavno srce.",
+    "sources": [
+      "https://ocean.si.edu/ocean-life/invertebrates/octopuses-squids-and-relatives"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00725-20261102",
+    "createdAt": "2026-11-02T12:36:28+01:00",
+    "updatedAt": "2026-11-02T12:36:28+01:00",
+    "topic": "Moda",
+    "focus": "Morski puž i antička purpurna boja",
+    "difficulty": 4,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Skupocjena antička ljubičasta boja za tkanine nije nastajala iz cvijeća, nego iz morskog mekušca. Kako se zove rod puževa iz kojih se dobivala?",
+    "answers": [
+      "Murex",
+      "Mureks"
+    ],
+    "explanation": "Puževi roda Murex bili su izvor dragocjene purpurne boje u antičkom Sredozemlju.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/248676"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
