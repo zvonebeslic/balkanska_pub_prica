@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-00803-20261102",
+    "createdAt": "2026-11-02T23:41:42+01:00",
+    "updatedAt": "2026-11-02T23:41:42+01:00",
+    "topic": "Književnost",
+    "focus": "Prva dobitnica Nobelove nagrade za književnost 1909.",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Godine 1909. Nobelovu nagradu za književnost prvi je put osvojila žena. Kako se zvala ta švedska književnica?",
+    "answers": [
+      "Selma Lagerlöf",
+      "Selma Lagerlof",
+      "Lagerlöf"
+    ],
+    "explanation": "Selma Lagerlöf postala je 1909. prva žena nagrađena Nobelovom nagradom za književnost.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/literature/1909/summary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00804-20261102",
+    "createdAt": "2026-11-02T23:41:42+01:00",
+    "updatedAt": "2026-11-02T23:41:42+01:00",
+    "topic": "Astronomija",
+    "focus": "Tekući metan i etan u Titanovim jezerima",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem Saturnovu mjesecu rijeke i jezera ne puni voda, nego uglavnom tekući metan i etan?",
+    "answers": [
+      "Titan",
+      "Titanu"
+    ],
+    "explanation": "Na Titanu, Saturnovu najvećem mjesecu, postoje stabilna površinska jezera i mora ugljikovodika.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
