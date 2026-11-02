@@ -4,7 +4,7 @@
 const ROUNDS=[
  {name:"1. KRUG",stated:24,sections:[
   {code:"povezano",name:"POVEZANO (NE)ZNANJE",desc:"Svaki odgovor je povezan s ostalima na neki način / 1 bod za svaki točan odgovor.",count:4,points:1},
-  {code:"abc",name:"A, B ili C",desc:"Jednostavna pitalica sa slikama i ponuđenim odgovorima / 1 bod za svaki točan odgovor.",count:4,points:1},
+  {code:"abc",name:"A, B ili C",desc:"Jednostavna pitalica sa ponuđenim odgovorima / 1 bod za svaki točan odgovor.",count:4,points:1},
   {code:"kvizoznalac",name:"KVIZOZNALAC",desc:"Pitanje za pitanjem / 1 bod za svaki točan odgovor.",count:6,points:1},
   {code:"kaladont",name:"KA - LA - DONT",desc:"Zadnja dva slova prvog odgovora su prva dva slova idućeg odgovora / 1 bod za svaki točan odgovor.",count:5,points:1},
   {code:"jucer",name:"JUČER, DANAS, SUTRA",desc:"Pitanja o aktualnostima / 1 bod za svaki točan odgovor.",count:3,points:1},
