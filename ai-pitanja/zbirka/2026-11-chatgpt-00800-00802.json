@@ -1,0 +1,72 @@
+[
+  {
+    "id": "chatgpt10000-00800-20261102",
+    "createdAt": "2026-11-02T22:38:11+01:00",
+    "updatedAt": "2026-11-02T22:38:11+01:00",
+    "topic": "Astronomija",
+    "focus": "Venerin dan dulji od godine",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem planetu jedna rotacija traje oko 243 zemaljska dana, a obilazak Sunca samo 225 dana?",
+    "answers": [
+      "Venera",
+      "Veneri"
+    ],
+    "explanation": "Venera se oko osi okreće sporije nego što obilazi Sunce.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00801-20261102",
+    "createdAt": "2026-11-02T22:38:11+01:00",
+    "updatedAt": "2026-11-02T22:38:11+01:00",
+    "topic": "Sport",
+    "focus": "Broj pera u badminton loptici",
+    "difficulty": 3,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Za badminton se koristi pernata loptica čiji se standardni vijenac sastoji od koliko pera?",
+    "answers": [
+      "16",
+      "Šesnaest"
+    ],
+    "explanation": "Tradicionalna natjecateljska pernata loptica ima 16 pera.",
+    "sources": [
+      "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=158773&parentDocumentId=71295&skipCopyright=true&skipWatermark=true"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00802-20261102",
+    "createdAt": "2026-11-02T22:38:11+01:00",
+    "updatedAt": "2026-11-02T22:38:11+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Podjela Nobelove nagrade za fiziku 1903.",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Marie i Pierre Curie podijelili su polovicu Nobelove nagrade za fiziku 1903. Tko je dobio drugu polovicu za otkriće spontane radioaktivnosti?",
+    "answers": [
+      "Henri Becquerel",
+      "Antoine Henri Becquerel",
+      "Becquerel"
+    ],
+    "explanation": "Becquerelu je pripala polovica nagrade, a supružnicima Curie po četvrtina.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/physics/1903/summary/?print=1"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
