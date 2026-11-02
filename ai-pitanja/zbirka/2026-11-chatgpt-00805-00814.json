@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-00805-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Astronomija",
+    "focus": "Merkurov Sunčev dan traje 176 zemaljskih dana",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Ako na jednom planetu od izlaska do sljedećeg izlaska Sunca prođe čak 176 zemaljskih dana, a njegova godina traje samo 88, o kojem je planetu riječ?",
+    "answers": [
+      "Merkur",
+      "Merkuru"
+    ],
+    "explanation": "Merkur se oko Sunca okrene za 88 zemaljskih dana, ali njegov Sunčev dan traje 176.",
+    "sources": [
+      "https://science.nasa.gov/mercury/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00806-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Astronomija",
+    "focus": "Oortov oblak na rubu Sunčeva sustava",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Nijedna ga letjelica još nije izravno snimila, a zamišljen je kao golema sferna ljuska ledenih tijela daleko iza Neptuna. Kako se zove?",
+    "answers": [
+      "Oortov oblak",
+      "Oortov oblak kometa"
+    ],
+    "explanation": "Oortov oblak predviđena je udaljena sferna populacija ledenih tijela.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00807-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Medicina",
+    "focus": "Behringov serum protiv difterije",
+    "difficulty": 3,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Tisuće života spašene su zahvaljujući serumskoj terapiji za koju je Emil von Behring 1901. dobio prvu Nobelovu nagradu za medicinu. Protiv koje bolesti?",
+    "answers": [
+      "Difterija",
+      "Difterije"
+    ],
+    "explanation": "Behring je nagrađen za serumsku terapiju, posebno njezinu primjenu protiv difterije.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/list/the-very-first-nobel-prizes/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00808-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Kemija",
+    "focus": "Van 't Hoff i osmotski tlak",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Prvi dobitnik Nobela za kemiju Jacobus van 't Hoff objašnjavao je kako otopine djeluju na prolazak otapala kroz polupropusnu membranu. Koji je tlak u središtu tog objašnjenja?",
+    "answers": [
+      "Osmotski tlak",
+      "Osmotski"
+    ],
+    "explanation": "Van 't Hoff je u Nobelovu predavanju obrađivao osmotski tlak i kemijsku ravnotežu.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/list/the-very-first-nobel-prizes/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00809-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Povijest",
+    "focus": "Henri Dunant i Crveni križ",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Jedan od dvojice prvih nobelovaca za mir 1901. ujedno je osnivač međunarodnog pokreta prepoznatljivog po crvenom križu. Kako se prezivao?",
+    "answers": [
+      "Dunant",
+      "Henri Dunant",
+      "Henry Dunant"
+    ],
+    "explanation": "Henri Dunant podijelio je prvu Nobelovu nagradu za mir s Frédéricom Passyjem.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/list/the-very-first-nobel-prizes/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00810-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Sport",
+    "focus": "Prvi olimpijski prisega sportaša Antwerpen 1920",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Na Igrama 1920. prvi je put podignuta olimpijska zastava i sportaš je položio olimpijsku prisegu. Koji je belgijski grad bio domaćin?",
+    "answers": [
+      "Antwerpen",
+      "Antwerp",
+      "Anvers"
+    ],
+    "explanation": "Antwerpen 1920. uveo je olimpijsku zastavu i prisegu sportaša.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/antwerp-1920-a-symbol-of-peace-unity-and-strength"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00811-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Tehnologija",
+    "focus": "Mariner 10 prvi posjet Merkuru",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Prije MESSENGER-a, prvi svemirski posjetitelj Merkura bio je NASA-in istraživački brod s brojem 10 u nazivu. Kako se zvao?",
+    "answers": [
+      "Mariner 10",
+      "Mariner deset"
+    ],
+    "explanation": "Mariner 10 bio je prva letjelica koja je posjetila Merkur.",
+    "sources": [
+      "https://science.nasa.gov/mercury/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00812-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Književnost",
+    "focus": "Sully Prudhomme prvi Nobel za književnost",
+    "difficulty": 4,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Prvi Nobel za književnost 1901. nije pripao Tolstoju. Kojem je francuskom pjesniku, koji je prvotno želio postati inženjer, pripao?",
+    "answers": [
+      "Sully Prudhomme",
+      "Prudhomme",
+      "René François Armand Prudhomme"
+    ],
+    "explanation": "Sully Prudhomme dobio je prvu Nobelovu nagradu za književnost.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/list/the-very-first-nobel-prizes/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00813-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Fizika",
+    "focus": "Heliosfera i Sunčev vjetar",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Nevidljivi mjehur oko našeg planetarnog sustava oblikuje tok nabijenih čestica sa Sunca. Kako nazivamo taj golemi prostor Sunčeva utjecaja?",
+    "answers": [
+      "Heliosfera",
+      "Heliosferu"
+    ],
+    "explanation": "Heliosferu stvara Sunčev vjetar, tok nabijenih čestica koji se širi od Sunca.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00814-20261103",
+    "createdAt": "2026-11-03T00:37:03+01:00",
+    "updatedAt": "2026-11-03T00:37:03+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Godina prvog dodjeljivanja Nobelovih nagrada",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Alfred Nobel oporuku je potpisao 1895., a prve su nagrade uručene šest godina poslije. Koje godine?",
+    "answers": [
+      "1901"
+    ],
+    "explanation": "Prve Nobelove nagrade uručene su 10. prosinca 1901.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/list/the-very-first-nobel-prizes/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
