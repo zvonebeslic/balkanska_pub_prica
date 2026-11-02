@@ -1133,15 +1133,16 @@ function renderSharedSlide(root,slide,options={}){
    const img=/^data:image\/jpeg;base64,[a-zA-Z0-9+/=]{1,44000}$/.test(raw)?raw:safeUrl(raw);
    const name=String(t).replace(/^[ABC]\)\s*/,"");
    return '<div class="screen-choice image-choice'+(isCorrect?" correct":"")+'">'+
-    '<strong class="image-choice-letter">'+letter+'</strong>'+
+    '<div class="image-choice-heading"><strong class="image-choice-letter">'+letter+')</strong>'+
+    (!slide.abcHideNames||slide.revealed?'<span class="image-choice-caption'+(isCorrect?" image-choice-revealed":"")+'">'+esc(name)+'</span>':"")+'</div>'+
     (img?'<img src="'+esc(img)+'" alt="Slika ponuđenog odgovora '+letter+'" loading="eager">':'<span class="image-choice-placeholder">Slika '+letter+' još nije učitana</span>')+
-    (!slide.abcHideNames||slide.revealed?'<span class="image-choice-caption'+(slide.revealed?" image-choice-revealed":"")+'">'+esc(name)+'</span>':"")+'</div>';
+    '</div>';
   }
   return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
  }).join("");
  const singleImage=hasSingleQuestionImage(slide);
  const answerMarkup=
-  (slide.revealed&&slide.sectionCode!=="stihovi"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
+  (slide.revealed&&slide.sectionCode!=="stihovi"&&slide.sectionCode!=="abc"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
   (slide.revealed&&slide.sectionCode==="vjerovali"&&slide.truthExplanation?
    '<div class="truth-answer-note">('+esc(slide.truthExplanation)+')</div>':"")+
   (slide.revealed&&slide.sectionCode==="asocijacija"&&slide.associationExplanation?
