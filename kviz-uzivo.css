@@ -998,3 +998,57 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .stage-screen .has-single-image .screen-title.question-fixed{font-size:calc(clamp(20px,4.8vw,31px) * var(--question-scale,1))}
  .host-display .has-single-image .screen-title.question-fixed{font-size:calc(clamp(17px,4.1vw,24px) * var(--question-scale,1))}
 }
+
+/* Live quiz image balance: readable question first, supporting photo second.
+   Applies to the single-picture layout (e.g. Altıntop), not picture-choice rounds. */
+@media(min-width:651px){
+ .slide--question .screen-body.has-single-image{
+  grid-template-columns:minmax(0,1.95fr) minmax(0,.9fr);
+  column-gap:clamp(12px,2vw,34px);
+ }
+ .slide--question .has-single-image .screen-media img{
+  max-width:90%;
+  max-height:min(37vh,390px);
+ }
+ .stage-screen .has-single-image .screen-title.question-fixed{
+  font-size:calc(clamp(34px,2.45vw,48px) * var(--question-scale,1));
+  line-height:1.17;
+ }
+ .host-display .has-single-image .screen-title.question-fixed{
+  font-size:calc(clamp(23px,2.35vw,34px) * var(--question-scale,1));
+  line-height:1.18;
+ }
+ .remote-preview .has-single-image .screen-title.question-fixed{
+  font-size:calc(clamp(18px,2vw,28px) * var(--question-scale,1));
+  line-height:1.2;
+ }
+ .host-display .has-single-image .screen-media img{
+  max-height:min(34vh,300px);
+ }
+ .remote-preview .has-single-image .screen-media img{
+  max-height:min(25vh,200px);
+ }
+}
+@media(min-width:651px) and (max-height:650px){
+ .stage-screen .has-single-image .screen-title.question-fixed{
+  font-size:calc(clamp(30px,2.2vw,42px) * var(--question-scale,1));
+  line-height:1.15;
+ }
+ .slide--question .has-single-image .screen-media img{
+  max-height:34vh;
+ }
+}
+@media(max-width:650px){
+ .slide--question .has-single-image .screen-media img{
+  max-width:85%;
+  max-height:25vh;
+ }
+ .stage-screen .has-single-image .screen-title.question-fixed{
+  font-size:calc(clamp(24px,5.4vw,34px) * var(--question-scale,1));
+  line-height:1.2;
+ }
+ .host-display .has-single-image .screen-title.question-fixed{
+  font-size:calc(clamp(20px,4.5vw,27px) * var(--question-scale,1));
+  line-height:1.2;
+ }
+}
