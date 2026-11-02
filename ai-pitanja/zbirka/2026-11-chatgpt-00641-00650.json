@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00641-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Glazba",
+    "focus": "Edisonov fonograf 1877",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Edison je 1877. iznenadio javnost uređajem koji nije samo bilježio zvuk nego ga je mogao i ponovno reproducirati. Kako se zvao taj uređaj?",
+    "answers": [
+      "Fonograf",
+      "Phonograph"
+    ],
+    "explanation": "Fonograf je utiskivao zvučni zapis u kositrenu foliju na valjku.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_855475"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00642-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Kemija",
+    "focus": "Voltin stup cink bakar",
+    "difficulty": 3,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "U Voltinom stupu iz 1800. između pločica dvaju metala stajala je tkanina natopljena slanom vodom. Uz bakar, koji je metal činio drugi dio para?",
+    "answers": [
+      "Cink",
+      "Zn"
+    ],
+    "explanation": "Alessandro Volta slagao je parove bakra i cinka odvojene vlažnom tkaninom.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_703289"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00643-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Videoigre",
+    "focus": "Magnavox Odyssey 1972",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "U prodaju je 1972. stigla konzola s korijenima u prototipu Brown Box Ralpha Baera. Pod kojim je imenom prodavana?",
+    "answers": [
+      "Magnavox Odyssey",
+      "Odyssey"
+    ],
+    "explanation": "Magnavox je 1972. izdao Odyssey, izveden iz Baerova prototipa.",
+    "sources": [
+      "https://www.americanhistory.si.edu/explore/topics/invention-and-innovation"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00644-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Povijest",
+    "focus": "Morseov prvi telegrafski prototip",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Prije nego što je električnim signalima povezao Washington i Baltimore, slikar je 1837. izradio prototip telegrafskog odašiljača. Kako se prezivao?",
+    "answers": [
+      "Morse",
+      "Samuel Morse"
+    ],
+    "explanation": "Samuel Morse radio je na odašiljaču s Alfredom Vailom i drugim suradnicima.",
+    "sources": [
+      "https://americanhistory.si.edu/pt/collections/object/nmah_1192941"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00645-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Fizika",
+    "focus": "Atwoodov stroj 1784",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Dva utega povezana koncem preko kolotura u učionici demonstriraju ubrzano gibanje. Po kojem je matematičaru nazvan taj stroj iz 1784.?",
+    "answers": [
+      "Atwood",
+      "George Atwood"
+    ],
+    "explanation": "George Atwood opisao je uređaj za proučavanje zakona gibanja 1784.",
+    "sources": [
+      "https://www.americanhistory.si.edu/pt/collections/object/nmah_1865665"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00646-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Sport",
+    "focus": "Volito koturaljke pet kotača",
+    "difficulty": 4,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Model Volito iz 1823. imao je pet drvenih kotačića u jednom redu, većih u sredini radi lakšeg skretanja. Koji je rekvizit bio?",
+    "answers": [
+      "Koturaljke",
+      "Role",
+      "Rolšue"
+    ],
+    "explanation": "Volito je bio rani model koturaljki s kotačima različitih veličina.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_335014"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00647-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Robotika",
+    "focus": "Salisburyjeva robotska šaka",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Robotska šaka Salisbury iz 1980-ih imala je dvanaest zateznih kabela. Koliko je imala prstiju?",
+    "answers": [
+      "3",
+      "Tri"
+    ],
+    "explanation": "Tri prsta s po tri zgloba pokretalo je dvanaest kabela.",
+    "sources": [
+      "https://americanhistory.si.edu/collections/object/nmah_1863634"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00648-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Svakodnevica",
+    "focus": "Mastova mišolovka patent",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "John Mast izradio je poznatu opružnu mišolovku 1899., ali patent je dobio četiri godine poslije. Koje godine?",
+    "answers": [
+      "1903",
+      "1903."
+    ],
+    "explanation": "Smithsonian navodi da je Mastova zamka iz 1899. patentirana 1903.",
+    "sources": [
+      "https://www.americanhistory.si.edu/pt/collections/object/nmah_323700"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00649-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Promet",
+    "focus": "Montgolfierov let ovca patka pijetao",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na demonstraciji leta balonom u Versaillesu 1783. putovali su ovca, patka i još jedna domaća ptica. Koja?",
+    "answers": [
+      "Pijetao",
+      "Pevac"
+    ],
+    "explanation": "U balonu braće Montgolfier bili su ovca, patka i pijetao.",
+    "sources": [
+      "https://airandspace.si.edu/collection-objects/ornithopter/nasm_A19690354002"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00650-20261102",
+    "createdAt": "2026-11-02T02:37:21+01:00",
+    "updatedAt": "2026-11-02T02:37:21+01:00",
+    "topic": "Tehnologija",
+    "focus": "Edisonova demonstracija žarulje 1879",
+    "difficulty": 2,
+    "styleId": 100,
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "question": "Na Silvestrovo koje godine Edison je u Menlo Parku javnosti pokazao svoj sustav električne rasvjete?",
+    "answers": [
+      "1879",
+      "1879."
+    ],
+    "explanation": "Javna demonstracija praktične rasvjete u Menlo Parku održana je 31. prosinca 1879.",
+    "sources": [
+      "https://americanhistory.si.edu/explore/exhibitions/lighting-a-revolution"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
