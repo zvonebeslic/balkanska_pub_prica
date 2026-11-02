@@ -1,0 +1,72 @@
+[
+  {
+    "id": "chatgpt10000-00671-20261102",
+    "createdAt": "2026-11-02T05:43:11+01:00",
+    "updatedAt": "2026-11-02T05:43:11+01:00",
+    "topic": "Glazba",
+    "focus": "Flamenco tri sastavnice cante baile toque",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U jednoj tradiciji pjesma je cante, ples baile, a sviranje toque. Kako se zove ta umjetnost čije je središte Andaluzija?",
+    "answers": [
+      "Flamenco",
+      "Flamenko"
+    ],
+    "explanation": "Flamenco spaja pjevanje, ples i instrumentalnu pratnju, a 2010. upisan je na UNESCO-ov popis.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00672-20261102",
+    "createdAt": "2026-11-02T05:43:11+01:00",
+    "updatedAt": "2026-11-02T05:43:11+01:00",
+    "topic": "Ples",
+    "focus": "Katalonski ljudski tornjevi castells",
+    "difficulty": 3,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Na katalonskim svečanostima skupine ljudi grade višekatne tornjeve vlastitim tijelima. Kojim se katalonskim nazivom zovu ti tornjevi?",
+    "answers": [
+      "Castells",
+      "Castell",
+      "Kastelji"
+    ],
+    "explanation": "Castells su katalonski ljudski tornjevi, na UNESCO-ovu popisu od 2010.",
+    "sources": [
+      "https://ich.unesco.org/en/state/spain-ES"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00673-20261102",
+    "createdAt": "2026-11-02T05:43:11+01:00",
+    "updatedAt": "2026-11-02T05:43:11+01:00",
+    "topic": "Povijest",
+    "focus": "Godina upisa flamenca na UNESCO",
+    "difficulty": 2,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Flamenco i katalonski ljudski tornjevi uvršteni su iste godine na UNESCO-ov popis nematerijalne baštine. Koje?",
+    "answers": [
+      "2010",
+      "2010."
+    ],
+    "explanation": "Obje su tradicije na UNESCO-ov popis upisane 2010. godine.",
+    "sources": [
+      "https://ich.unesco.org/en/state/spain-ES"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
