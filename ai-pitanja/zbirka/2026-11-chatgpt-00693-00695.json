@@ -1,0 +1,70 @@
+[
+  {
+    "id": "chatgpt10000-00693-20261102",
+    "createdAt": "2026-11-02T08:54:15+01:00",
+    "updatedAt": "2026-11-02T08:54:15+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Prva poštanska marka Penny Black",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Na prvoj poštanskoj marki iz 1840. nalazio se profil kraljice Viktorije, a vrijedila je jedan peni. Pod kojim je engleskim nazivom poznata ta marka?",
+    "answers": [
+      "Penny Black"
+    ],
+    "explanation": "Penny Black bila je britanska marka puštena u promet 1840., prepoznatljiva po crnoj boji i Viktorijinu profilu.",
+    "sources": [
+      "https://postalmuseum.si.edu/exhibition/the-queen%E2%80%99s-own-postal-reforms-that-transformed-the-mail/the-worlds-first-postage-stamps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00694-20261102",
+    "createdAt": "2026-11-02T08:54:15+01:00",
+    "updatedAt": "2026-11-02T08:54:15+01:00",
+    "topic": "Zanati",
+    "focus": "Egipatska fajansa i kvarc",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Drevni Egipćani izrađivali su sjajne plavozelene amulete od materijala koji, unatoč nazivu, nije obična glinena keramika. Koji mineral čini glavninu njegove jezgre?",
+    "answers": [
+      "Kvarc",
+      "Quartz"
+    ],
+    "explanation": "Egipatska fajansa ima jezgru pretežno od usitnjenog kvarca, uz alkalne soli i glazuru.",
+    "sources": [
+      "https://www.metmuseum.org/fr/essays/egyptian-faience-technology-and-production"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00695-20261102",
+    "createdAt": "2026-11-02T08:54:15+01:00",
+    "updatedAt": "2026-11-02T08:54:15+01:00",
+    "topic": "Povijest",
+    "focus": "Prve savezne američke poštanske marke 1847.",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na prvim općim poštanskim markama SAD-a iz 1847. jedan je lik bio George Washington. Koji se drugi američki velikan nalazio na marki od pet centi?",
+    "answers": [
+      "Benjamin Franklin",
+      "Franklin"
+    ],
+    "explanation": "Američka pošta izdala je 1847. marku od pet centi s Benjaminom Franklinom i od deset centi s Washingtonom.",
+    "sources": [
+      "https://postalmuseum.si.edu/us-postal-stamps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
