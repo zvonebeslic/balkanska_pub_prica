@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-00740-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Geologija",
+    "focus": "Lahar, vulkanski blatni tok",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Na indonezijskom znači tok vulkanskog blata, a može se sručiti niz obronke i kada vulkan ne eruptira. Kako se naziva ova opasna mješavina vode i vulkanskog materijala?",
+    "answers": [
+      "Lahar"
+    ],
+    "explanation": "Lahari mogu nastati i nakon obilnih kiša na vulkanskom pepelu.",
+    "sources": [
+      "https://www.usgs.gov/publications/lahar-river-volcanic-mud-and-debris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00741-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Vremenske prilike",
+    "focus": "Pijavica nad vodom",
+    "difficulty": 2,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Vrtložni stup zraka koji se nad morem spušta do površine vode nije običan val ni morska struja. Kojim ga hrvatskim nazivom zovemo?",
+    "answers": [
+      "Pijavica",
+      "Morska pijavica"
+    ],
+    "explanation": "Pijavica je vrtložni stup zraka nad vodom, a može nastati i pri mirnijem vremenu.",
+    "sources": [
+      "https://oceantoday.noaa.gov/waterspouts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00742-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Tesere u mozaiku",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Bizantski majstor slaže sliku od stotina sitnih obojenih komadića stakla, katkad sa zlatnim listićima. Kako se zovu pojedinačni komadići mozaika?",
+    "answers": [
+      "Tesere",
+      "Tesera",
+      "Tesserae"
+    ],
+    "explanation": "Tesere su pojedinačni komadići stakla, kamena ili drugih materijala u mozaiku.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/708074"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00743-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Glazba",
+    "focus": "Cante u flamencu",
+    "difficulty": 3,
+    "styleId": 38,
+    "styleDescription": "Kreni od jezika pa pitaj koje je značenje posuđenice",
+    "question": "U andaluzijskom flamencu 'baile' je ples, a 'toque' sviranje. Koja je od te tri sastavnice označena riječju 'cante'?",
+    "answers": [
+      "Pjevanje",
+      "Pjev",
+      "Vokalna izvedba"
+    ],
+    "explanation": "Cante je pjevačka sastavnica flamenca, uz ples i instrumentalnu pratnju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00744-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranovi sateliti književni likovi",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Za razliku od većine planetarnih mjeseca nazvanih po antičkim božanstvima, mjeseci jednog ledenog diva nose imena likova Shakespearea i Alexandera Popea. Kojeg planeta?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranovi mjeseci nazivaju se po likovima iz djela Shakespearea i Popea.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00745-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Povijest",
+    "focus": "Fotografski studio Morsea i Drapera",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Izumitelj telegrafa Samuel Morse vodio je s Johnom Draperom jedan od prvih američkih fotografskih studija. U kojem se gradu nalazio njihov studio s kraja 1830-ih?",
+    "answers": [
+      "New York",
+      "New York City",
+      "Njujork"
+    ],
+    "explanation": "Morse i Draper vodili su fotografski studio na području današnjeg kampusa NYU-a.",
+    "sources": [
+      "https://americanhistory.si.edu/pt/collections/object/nmah_555140"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00746-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Andaluzija kao srce flamenca",
+    "difficulty": 1,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Gitara, udarci petama i snažan glas spojeni su u flamencu. Koja se španjolska pokrajina smatra njegovim glavnim zavičajem?",
+    "answers": [
+      "Andaluzija",
+      "Andalusia"
+    ],
+    "explanation": "Andaluzija je središnja regija flamenca, uz korijene i u Murciji i Extremaduri.",
+    "sources": [
+      "https://www.unesco.org/archives/multimedia/document-1696-eng-2"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00747-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Fizika",
+    "focus": "Uranov metan i boja",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Za plavozelenu boju Urana presudan je plin koji upija crveni dio Sunčeve svjetlosti. Koji je to plin?",
+    "answers": [
+      "Metan",
+      "Methane",
+      "CH4"
+    ],
+    "explanation": "Metan u atmosferi apsorbira crvenu svjetlost, pa Uran izgleda plavozeleno.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00748-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Priroda",
+    "focus": "Rainier i opasnost od lahara",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Snijeg, led i nestabilne stijene čine ovaj američki vulkan posebno opasnim zbog blatnih tokova, a uzdiže se iznad okolice Seattlea. Kako se zove?",
+    "answers": [
+      "Mount Rainier",
+      "Rainier",
+      "Planina Rainier"
+    ],
+    "explanation": "Rainier je osobito izložen laharima zbog leda, vode i oslabljenih stijena.",
+    "sources": [
+      "https://www.usgs.gov/volcanoes/mount-rainier/science/lahars-and-debris-flows-mount-rainier"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00749-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Hillotype rane fotografije u boji",
+    "difficulty": 5,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Svećenik Levi Hill sredinom 19. stoljeća eksperimentirao je s vrlo složenim postupkom ranih fotografija u boji. Kako se zovu njegove ploče, čije primjerke čuva Smithsonian?",
+    "answers": [
+      "Hillotype",
+      "Hillotypes",
+      "Hilotip"
+    ],
+    "explanation": "Hillotype je naziv za rane fotografije u boji Levija Hilla.",
+    "sources": [
+      "https://americanhistory.si.edu/de/collections/object/nmah_1349688"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
