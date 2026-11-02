@@ -94,7 +94,7 @@ const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
 const itemAt=(r,s,i,p=project)=>p?.rounds?.[r]?.sections?.[s]?.items?.[i];
-function baseItem(){return {question:"",answer:"",answer2:"",options:["","",""],correct:"A",truth:"Točno",five:["","","","",""],min:"",max:"",note:"",mediaId:"",mediaName:"",mediaType:"",mediaUrl:""};}
+function baseItem(){return {question:"",answer:"",answer2:"",options:["","",""],correct:"A",optionMediaIds:["","",""],optionMediaNames:["","",""],optionImages:[],abcHideNames:false,truth:"Točno",five:["","","","",""],min:"",max:"",note:"",mediaId:"",mediaName:"",mediaType:"",mediaUrl:""};}
 function createQuiz(){
  return {id:uid(),title:"Kviz Općeg Znanja",updatedAt:Date.now(),teams:[],
  rounds:ROUNDS.map(r=>({sections:r.sections.map(s=>({items:Array.from({length:s.count},()=>baseItem())}))}))};
@@ -464,9 +464,19 @@ function renderEditor(){
  if(!q)return;
  let answerFields="";
  if(c.code==="abc"){
-  answerFields='<div class="choices">'+["A","B","C"].map((letter,k)=>'<label class="choice"><span>'+letter+'</span><input data-option="'+k+'" value="'+esc(q.options?.[k]||"")+'" placeholder="Odgovor '+letter+'"></label>').join("")+'</div>';
-  answerFields+='<label>Točan odgovor <select data-field="correct">'+["A","B","C"].map(v=>'<option value="'+v+'"'+(q.correct===v?' selected':'')+'>'+v+'</option>').join("")+'</select></label>';
- }else if(c.code==="vjerovali"){
+  answerFields='<div class="abc-image-editor">'+["A","B","C"].map((letter,k)=>{
+   const hasFile=!!q.optionMediaIds?.[k],hasLink=!!q.optionImages?.[k];
+   const filename=hasFile?q.optionMediaNames?.[k]||"Učitana slika":hasLink?"Slika s poveznice":"Još nema slike";
+   return '<div class="abc-option-editor">'+
+    '<label class="choice"><span>'+letter+'</span><input data-option="'+k+'" value="'+esc(q.options?.[k]||"")+'" placeholder="Odgovor '+letter+'"></label>'+
+    '<div class="abc-option-file-row"><label class="abc-upload-label">📷 '+(hasFile||hasLink?"Zamijeni":"Dodaj")+' sliku '+letter+
+     '<input type="file" accept="image/*" data-option-image-upload="'+k+'" aria-label="Učitaj sliku za odgovor '+letter+'"></label>'+
+     '<span class="abc-option-filename">'+esc(filename)+'</span>'+
+     (hasFile||hasLink?'<button type="button" class="danger abc-remove-image" data-option-image-remove="'+k+'">Ukloni</button>':"")+
+    '</div></div>';
+  }).join("")+'</div>';
+  answerFields+='<label class="abc-hide-names-label"><input type="checkbox" data-abc-hide-names'+(q.abcHideNames?' checked':'')+'> Sakrij nazive ponuđenih odgovora dok se ne otkrije rješenje (za prepoznavanje po slikama)</label>';
+  answerFields+='<label>Točan odgovor <select data-field="correct">'+["A","B","C"].map(v=>'<option value="'+v+'"'+(q.correct===v?' selected':'')+'>'+v+'</option>').join("")+'</select></label>'; }else if(c.code==="vjerovali"){
   answerFields='<label>Točan odgovor <select data-field="truth"><option value="Točno"'+(q.truth==="Točno"?' selected':'')+'>Točno</option><option value="Netočno"'+(q.truth==="Netočno"?' selected':'')+'>Netočno</option></select></label>';
  }else if(c.code==="pjevaj"){
   answerFields=field("answer","1a. Izvođač",q.answer)+field("answer2","1b. Pjesma",q.answer2);
@@ -489,6 +499,12 @@ function renderEditor(){
   '</div>';
  $("mediaInput").addEventListener("change",uploadMedia);
  const remove=$("removeMedia");if(remove)remove.addEventListener("click",removeMedia);
+ if(c.code==="abc"){
+  $("questionEdit").querySelectorAll("[data-option-image-upload]").forEach(input=>
+   input.addEventListener("change",e=>uploadABCOptionImage(e,Number(input.dataset.optionImageUpload))));
+  $("questionEdit").querySelectorAll("[data-option-image-remove]").forEach(button=>
+   button.addEventListener("click",()=>removeABCOptionImage(Number(button.dataset.optionImageRemove))));
+ }
 }
 // For "Ne zaboravi stihove", share ONLY word/letter counts before reveal,
  // never the hidden lyrics themselves.
@@ -760,6 +776,33 @@ function changeQuestionSize(action){
  scheduleSave();
  renderAll();
 }
+async function uploadABCOptionImage(event,index){
+ const file=event.target.files?.[0];
+ if(!file||!Number.isInteger(index)||index<0||index>2)return;
+ if(!file.type.startsWith("image/")){toast("Za A, B i C možeš dodavati samo slike.",true);return;}
+ if(file.size>30*1024*1024){toast("Slika je veća od 30 MB. Odaberi manju datoteku.",true);return;}
+ const q=itemAt(position.r,position.s,position.i);
+ if(!q||ROUNDS[position.r]?.sections?.[position.s]?.code!=="abc")return;
+ const id=uid();
+ try{
+  await storePut("assets",{id,name:file.name,type:file.type,blob:file});
+  q.optionMediaIds=Array.from({length:3},(_,i)=>q.optionMediaIds?.[i]||"");
+  q.optionMediaNames=Array.from({length:3},(_,i)=>q.optionMediaNames?.[i]||"");
+  q.optionImages=Array.from({length:3},(_,i)=>q.optionImages?.[i]||"");
+  q.optionMediaIds[index]=id;q.optionMediaNames[index]=file.name;q.optionImages[index]="";
+  scheduleSave();
+  if(itemAt(position.r,position.s,position.i)===q){renderEditor();renderScreen($("previewPane"),"preview");pushStage();}
+  toast("Spremljena je slika za odgovor "+["A","B","C"][index]+".");
+ }catch(error){toast("Slika nije spremljena: "+error.message,true);}
+}
+function removeABCOptionImage(index){
+ if(!Number.isInteger(index)||index<0||index>2)return;
+ const q=itemAt(position.r,position.s,position.i);if(!q)return;
+ if(Array.isArray(q.optionMediaIds))q.optionMediaIds[index]="";
+ if(Array.isArray(q.optionMediaNames))q.optionMediaNames[index]="";
+ if(Array.isArray(q.optionImages))q.optionImages[index]="";
+ scheduleSave();renderEditor();renderScreen($("previewPane"),"preview");pushStage();
+}
 async function uploadMedia(e){
  const f=e.target.files?.[0];if(!f)return;
  if(!/^(image|audio|video)\//.test(f.type)){toast("Odaberi sliku, audio ili video datoteku.",true);return;}
@@ -789,7 +832,10 @@ async function exportQuiz(){
  try{
   $("exportBtn").disabled=true;toast("Pripremam izvoz s medijima…");
   const copy=structuredClone(project),assets={};const ids=new Set();
-  walkItems(copy,q=>{if(q.mediaId)ids.add(q.mediaId);});
+  walkItems(copy,q=>{
+   if(q.mediaId)ids.add(q.mediaId);
+   for(const id of q.optionMediaIds||[])if(id)ids.add(id);
+  });
   for(const id of ids){
    const a=await storeGet("assets",id);if(!a?.blob)continue;
    if(a.blob.size>50*1024*1024&&!confirm("Datoteka "+a.name+" ima više od 50 MB. Izvoz JSON-a s videom može biti vrlo velik. Nastaviti?")){throw Error("Izvoz je otkazan.");}
@@ -812,7 +858,10 @@ async function importQuiz(file){
    if(!a||typeof a.data!=="string"||!/^data:(image|audio|video)\//.test(a.data))continue;
    const blob=await (await fetch(a.data)).blob(),id=uid();await storePut("assets",{id,name:a.name||"Prilog",type:blob.type,blob});remap[old]=id;
   }
-  walkItems(copy,item=>{item.mediaId=remap[item.mediaId]||"";});
+  walkItems(copy,item=>{
+   item.mediaId=remap[item.mediaId]||"";
+   if(Array.isArray(item.optionMediaIds))item.optionMediaIds=item.optionMediaIds.map(id=>remap[id]||"");
+  });
   endPairing();await persist(copy);clearTimeout(saveTimer);project=copy;position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;
   localStorage.setItem("kviztogo_live_id",copy.id);ensureChannel();await refreshSelect();renderAll();toast("Uvezen je novi kviz.");
  }catch(e){toast("Uvoz nije uspio: "+e.message,true);}
@@ -1262,6 +1311,12 @@ function bindEditor(){
  };
  $("questionEdit").addEventListener("input",changeField);
  $("questionEdit").addEventListener("change",changeField);
+ $("questionEdit").addEventListener("change",e=>{
+  if(!e.target.matches("[data-abc-hide-names]"))return;
+  const q=itemAt(position.r,position.s,position.i);if(!q)return;
+  q.abcHideNames=e.target.checked;
+  scheduleSave();renderScreen($("previewPane"),"preview");pushStage();
+ });
  $("prevBtn").addEventListener("click",()=>changePosition(-1));
  $("nextBtn").addEventListener("click",()=>changePosition(1));
  $("hostRoundJump").addEventListener("click",e=>{
