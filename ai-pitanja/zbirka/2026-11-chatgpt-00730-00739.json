@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-00730-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "More i ocean",
+    "focus": "Termoklina kao temperaturni prijelaz",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Ronioc prolazi kroz sloj u kojem temperatura mora naglo pada, iako je iznad njega voda dobro izmiješana i topla. Kako oceanografi nazivaju taj prijelazni sloj?",
+    "answers": [
+      "Termoklina",
+      "Thermocline"
+    ],
+    "explanation": "Termoklina odvaja topliju površinsku od hladnije dubinske vode; u njoj temperatura brzo pada s dubinom.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/thermocline.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00731-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Glazba",
+    "focus": "Gruzijsko tradicijsko višeglasno pjevanje",
+    "difficulty": 3,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "UNESCO štiti tradiciju višeglasnog pjevanja koja uključuje svanetske složene glasove i kahetinski dijalog iznad basa. U kojoj je kavkaskoj državi ta tradicija posebno važna?",
+    "answers": [
+      "Gruzija",
+      "Georgia"
+    ],
+    "explanation": "Gruzijska tradicijska polifonija ima više regionalnih oblika i uvrštena je u UNESCO-ovu nematerijalnu baštinu.",
+    "sources": [
+      "https://ich.unesco.org/en/projects/safeguarding-and-promotion-of-georgian-traditional-polyphony-00005"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00732-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Geologija",
+    "focus": "Špiljski stalagmit raste od tla",
+    "difficulty": 1,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Ako u špilji pogledate prema podu i ugledate kameni šiljak koji raste prema stropu, gledate stalaktit ili stalagmit? Napišite točan naziv.",
+    "answers": [
+      "Stalagmit"
+    ],
+    "explanation": "Stalagmit se gradi na špiljskom podu taloženjem minerala iz vode koja kaplje odozgo.",
+    "sources": [
+      "https://www.usgs.gov/media/images/carlsbad-caverns-stalactites"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00733-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Japanski ukiyo-e i plutajući svijet",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Naziv japanske umjetnosti drvoreza i slika iz razdoblja Edo doslovno se povezuje s 'plutajućim svijetom'. Koji je to naziv?",
+    "answers": [
+      "Ukiyo-e",
+      "Ukiyo e",
+      "Ukiyoe"
+    ],
+    "explanation": "Ukiyo-e označava slike plutajućeg svijeta, često povezane s urbanim životom Edo Japana.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/78596"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00734-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Sport",
+    "focus": "Olimpijsko povlačenje užeta",
+    "difficulty": 2,
+    "styleId": 82,
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "question": "Na Olimpijskim igrama 1900. natjecatelji su osvajali medalje i u disciplini koja danas češće pripada školskim igrama: dvije ekipe vuku isti konop. Koji je to sport?",
+    "answers": [
+      "Povlačenje užeta",
+      "Natezanje konopa",
+      "Natezanje užeta"
+    ],
+    "explanation": "Povlačenje užeta bilo je na olimpijskom programu od Pariza 1900., a posljednji put 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/new-sports-take-a-bow"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00735-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bill English i prvi računalni miš",
+    "difficulty": 4,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Douglas Engelbart poznat je po računalnom mišu, ali tko je 1964. izradio njegov prvi drveni prototip u laboratoriju SRI?",
+    "answers": [
+      "Bill English",
+      "William English"
+    ],
+    "explanation": "Računalni inženjer Bill English konstruirao je 1964. prvi miš od sekvojina drva prema Engelbartovoj zamisli.",
+    "sources": [
+      "https://computerhistory.org/sri-mouse-mn052024/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00736-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Zemljopis",
+    "focus": "Sokotra kao UNESCO-ovo otočje Jemena",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem otočju u blizini Adenskog zaljeva rastu neobična stabla zmajeve krvi, a čak 37 posto biljnih vrsta ne nalazi se nigdje drugdje na svijetu?",
+    "answers": [
+      "Sokotra",
+      "Socotra",
+      "Otočje Sokotra"
+    ],
+    "explanation": "Sokotra je otočje poznato po velikom broju endemskih biljaka i stablu zmajeve krvi.",
+    "sources": [
+      "https://whc.unesco.org/fr/list/1263/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00737-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Astronomija",
+    "focus": "Titanova jezera metana",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem Saturnovu mjesecu kiša može puniti jezera tekućeg metana i etana, umjesto vode kakvu poznajemo na Zemlji?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan ima stabilna jezera i mora ugljikovodika, osobito u blizini sjevernog pola.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/titans-north/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00738-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Ekologija",
+    "focus": "Izbjeljivanje koralja i simbiotske alge",
+    "difficulty": 4,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koralj nakon dugotrajne morske vrućine izgubi boju, ali nije nužno mrtav. Koje organizme iz svojeg tkiva pritom izbacuje?",
+    "answers": [
+      "Alge",
+      "Simbiotske alge",
+      "Zooksantele",
+      "Zooxanthellae"
+    ],
+    "explanation": "Toplinski stres može potaknuti koralje da izbace simbiotske alge koje im daju boju i velik dio hrane.",
+    "sources": [
+      "https://oceanservice.noaa.gov/education/tutorial_corals/media/supp_coral08b.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00739-20261102",
+    "createdAt": "2026-11-02T16:37:27+01:00",
+    "updatedAt": "2026-11-02T16:37:27+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranov gotovo vodoravan nagib osi",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Kad bi se planeti Sunčeva sustava kotrljali po stazi, koji bi najviše nalikovao lopti položnoj na bok jer mu je os rotacije nagnuta gotovo 98 stupnjeva?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranova os rotacije nagnuta je oko 97,8 stupnjeva, zbog čega se doima kao da se okreće na boku.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
