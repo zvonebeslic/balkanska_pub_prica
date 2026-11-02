@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-00631-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Obrazovanje",
+    "focus": "Brailleova ćelija od šest točaka",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Kad bi svako mjesto u jednoj standardnoj Brailleovoj ćeliji bilo ili ispupčeno ili prazno, koliko bi mjesta za točkice ta ćelija imala?",
+    "answers": [
+      "6",
+      "Šest"
+    ],
+    "explanation": "Standardna Brailleova ćelija ima dva stupca po tri mjesta.",
+    "sources": [
+      "https://www.loc.gov/exhibits/louis-braille/overview.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00632-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "More i ocean",
+    "focus": "Koraljni polipi kao životinje",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Izgledaju kao podvodni vrtovi, ali graditelji koraljnih grebena nisu biljke. Kojoj velikoj skupini živih bića pripadaju koralji?",
+    "answers": [
+      "Životinje",
+      "Životinjama"
+    ],
+    "explanation": "Koralji su životinje žarnjaci, često u kolonijama polipa.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/ocean-fact/coral-animal/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00633-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Geologija",
+    "focus": "Plutajući vulkanski plovućac",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Vulkanska stijena puna sitnih šupljina može plutati po vodi, a ljudi je koriste i za uklanjanje tvrde kože. Kako je nazivamo?",
+    "answers": [
+      "Plovućac",
+      "Plovucac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac nastaje hlađenjem plinovima prožete magme te može imati manju gustoću od vode.",
+    "sources": [
+      "https://www.usgs.gov/media/images/rocks-sink-or-float"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00634-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Gastronomija",
+    "focus": "Kimjang korejska priprema zimnice",
+    "difficulty": 3,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U kasnu jesen korejske se obitelji okupljaju kako bi zajedno pripremile i podijelile velike količine fermentiranog povrća za zimu. Kako se zove taj običaj s UNESCO-ova popisa?",
+    "answers": [
+      "Kimjang",
+      "Gimjang"
+    ],
+    "explanation": "Kimjang je zajednička priprema i dijeljenje kimchija, upisana 2013. na UNESCO-ov popis.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/kimjang-00881"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00635-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Seuratov divizionizam",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Slikar Georges Seurat radije je koristio jedan naziv za razdvajanje boja u male susjedne poteze, premda ga publika veže uz pointilizam. Koji je njegov omiljeni naziv?",
+    "answers": [
+      "Divizionizam",
+      "Divisionism"
+    ],
+    "explanation": "Seurat je preferirao termin divizionizam za optičko miješanje razdvojenih dodira boje.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/459117"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00636-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Sport",
+    "focus": "Atenski prvi olimpijski maraton 1896",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Prvi olimpijski maraton 1896. imao je približno 40 kilometara, a pobjednik je bio domaći trkač. Kako se prezivao taj Grk?",
+    "answers": [
+      "Louis",
+      "Spiridon Louis",
+      "Spiros Louis",
+      "Spyridon Louis"
+    ],
+    "explanation": "Spyridon Louis pobijedio je na maratonu prvih modernih Olimpijskih igara u Ateni.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00637-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranov nesuđeni naziv Georgium Sidus",
+    "difficulty": 4,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "William Herschel htio je planet otkriven 1781. nazvati Georgium Sidus u čast britanskog kralja. Koje je ime taj planet naposljetku dobio?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Naziv Uran prevladao je nad Herschelovim prijedlogom u čast Georgea III.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00638-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Jezik",
+    "focus": "Brailleovo nadahnuće Barbierovim noćnim pismom",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Francuski časnik Charles Barbier osmislio je noćno pismo s dvanaest mjesta za reljefne točke, a njegov je sustav pojednostavio koji petnaestogodišnji izumitelj?",
+    "answers": [
+      "Louis Braille",
+      "Braille",
+      "Luj Braj"
+    ],
+    "explanation": "Braille je Barbierovu ideju prilagodio u čitljiv sustav od šest točaka.",
+    "sources": [
+      "https://www.loc.gov/exhibits/louis-braille/overview.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00639-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Priroda",
+    "focus": "Koraljni skelet kalcijev karbonat",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Sitni koraljni polipi iz morske vode izdvajaju tvar od koje nastaju čvrsti kosturi grebena. Koji je kemijski spoj glavna građa tih kostura?",
+    "answers": [
+      "Kalcijev karbonat",
+      "CaCO3",
+      "Kalcijev karbonat (CaCO3)"
+    ],
+    "explanation": "Grebenotvorni koralji talože kalcijev karbonat kao zaštitni skelet.",
+    "sources": [
+      "https://www.fisheries.noaa.gov/corals"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00640-20261102",
+    "createdAt": "2026-11-02T01:36:56+01:00",
+    "updatedAt": "2026-11-02T01:36:56+01:00",
+    "topic": "Povijest",
+    "focus": "Maratonska duljina na Olimpijskim igrama 1908",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Duljina od 42,195 kilometara prvi je put korištena na olimpijskom maratonu u Londonu. Koje su godine održane te Igre?",
+    "answers": [
+      "1908",
+      "1908."
+    ],
+    "explanation": "Londonski olimpijski maraton 1908. utrčao je u povijest s današnjom standardnom duljinom.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/olympic-marathon-innovations"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
