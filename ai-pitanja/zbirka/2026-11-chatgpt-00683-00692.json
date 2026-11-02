@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-00683-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Astronomija",
+    "focus": "Venerin prividni izlazak Sunca",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na planetu na kojem Sunce izlazi na zapadu i zalazi na istoku dan je dulji od godine. Koji je to planet?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se vrti retrogradno; jedna rotacija traje oko 243, a obilazak Sunca 225 zemaljskih dana.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00684-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Životinje",
+    "focus": "Pangolinov obrambeni oklop",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kad se ovaj sisavac osjeti ugroženim, sklupča se u kuglu prekrivenu rožnatim ljuskama. O kojoj je životinji riječ?",
+    "answers": [
+      "Pangolin",
+      "Ljuskavac"
+    ],
+    "explanation": "Pangolini imaju keratinske ljuske koje služe kao zaštita od grabežljivaca.",
+    "sources": [
+      "https://www.zsl.org/what-we-do/species/pangolins"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00685-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Priroda",
+    "focus": "Momentna magnituda potresa",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Richterova ljestvica ostala je slavna, no za vrlo snažne potrese seizmolozi radije koriste mjeru označenu Mw. Kako se zove?",
+    "answers": [
+      "Momentna magnituda",
+      "Magnituda momenta"
+    ],
+    "explanation": "Momentna magnituda temelji se na seizmičkom momentu i pouzdanija je za velike potrese.",
+    "sources": [
+      "https://www.usgs.gov/faqs/moment-magnitude-richter-scale-what-are-different-magnitude-scales-and-why-are-there-so-many"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00686-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Leonardov slikarski sfumato",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Na Leonardovim portretima rubovi lica ne izgledaju nacrtani crtom, nego kao da nestaju u izmaglici. Koji je naziv tog slikarskog postupka?",
+    "answers": [
+      "Sfumato"
+    ],
+    "explanation": "Sfumato stvara meke prijelaze između svjetla i sjene bez oštrih obrisa.",
+    "sources": [
+      "https://www.metmuseum.org/zh/essays/leonardo-da-vinci-1452-1519"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00687-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Jezik",
+    "focus": "Neobično ime Venerina kvazisatelita",
+    "difficulty": 4,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Dječji poster i pogrešno pročitana oznaka 2002 VE doveli su do službenog imena jednog Venerina kvazisatelita 2024. Kako glasi ime?",
+    "answers": [
+      "Zoozve"
+    ],
+    "explanation": "Ime Zoozve nastalo je pogrešnim čitanjem rukom ispisane oznake 2002 VE.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00688-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Fizika",
+    "focus": "Energija potresa i jedinica magnitude",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Dva potresa razlikuju se za samo jednu jedinicu magnitude, no snažniji oslobađa približno koliko puta više energije?",
+    "answers": [
+      "32",
+      "Trideset dva",
+      "32 puta"
+    ],
+    "explanation": "Porast magnitude za jedan znači približno 32 puta veću oslobođenu energiju.",
+    "sources": [
+      "https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00689-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Biologija",
+    "focus": "Materijal pangolinovih ljusaka",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Ljuske pangolina nisu od kosti; građene su od iste bjelančevine koja čini naše nokte. Koja je to bjelančevina?",
+    "answers": [
+      "Keratin"
+    ],
+    "explanation": "Pangolinove ljuske čini keratin, bjelančevina prisutna i u ljudskim noktima.",
+    "sources": [
+      "https://www.zsl.org/what-we-do/species/pangolins"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00690-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Povijest",
+    "focus": "Richterova ljestvica i njezin autor",
+    "difficulty": 2,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Tridesetih godina 20. stoljeća jedan je kalifornijski seizmolog razvio poznatu logaritamsku ljestvicu potresa. Koje je njegovo prezime?",
+    "answers": [
+      "Richter",
+      "Charles Richter"
+    ],
+    "explanation": "Charles F. Richter uveo je koncept magnitude potresa 1935. godine.",
+    "sources": [
+      "https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00691-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Umjetnost",
+    "focus": "Talijanski izraz za svjetlo i tamu",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U slikarstvu se dramatična igra svijetlih i tamnih dijelova opisuje talijanskim izrazom koji doslovno spaja svjetlo i tamu. Kojim?",
+    "answers": [
+      "Chiaroscuro",
+      "Kjaroskuro"
+    ],
+    "explanation": "Chiaroscuro je postupak oblikovanja volumena kontrastom svjetla i sjene.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/360059"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00692-20261102",
+    "createdAt": "2026-11-02T07:41:18+01:00",
+    "updatedAt": "2026-11-02T07:41:18+01:00",
+    "topic": "Geologija",
+    "focus": "Ljestvica intenziteta potresa prema učincima",
+    "difficulty": 4,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Jedan potres ima jednu magnitudu, ali različite stupnjeve trešnje u različitim gradovima. Kojom se poznatom ljestvicom opisuje takav intenzitet prema opaženim učincima?",
+    "answers": [
+      "Mercallijeva ljestvica",
+      "Merkalijeva ljestvica",
+      "Mercalli"
+    ],
+    "explanation": "Mercallijeva ljestvica procjenjuje lokalni intenzitet na temelju trešnje i štete.",
+    "sources": [
+      "https://www.usgs.gov/faqs/what-difference-between-earthquake-magnitude-and-earthquake-intensity-what-modified-mercalli?items_per_page=6&page=0"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
