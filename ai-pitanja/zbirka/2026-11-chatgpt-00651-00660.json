@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-00651-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera retrogradna rotacija",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Na kojem bi planetu Sunce prividno izlazilo na zapadu, jer se planet okreće suprotno od Zemlje?",
+    "answers": [
+      "Venera"
+    ],
+    "explanation": "Venera ima retrogradnu rotaciju, pa se Sunce na njezinu nebu prividno kreće od zapada prema istoku.",
+    "sources": [
+      "https://spaceplace.nasa.gov/all-about-venus/en/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00652-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Vremenske prilike",
+    "focus": "Beaufortova ljestvica 1806",
+    "difficulty": 3,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Pomorci su nekoć jačinu vjetra procjenjivali prema tome koliko jedara brod može nositi. Po kojem se admiralu danas zove ljestvica jačine vjetra?",
+    "answers": [
+      "Beaufort",
+      "Francis Beaufort"
+    ],
+    "explanation": "Francis Beaufort 1806. bilježio je ljestvicu koja je poslije prilagođena brzini vjetra.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/waves/jetstream-max-wind-and-sea-scales"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00653-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Zanati",
+    "focus": "Kintsugi zlatni lak",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U jednoj japanskoj tehnici razbijena zdjela ne skriva pukotine: popravak ih namjerno ističe zlatom. Kako se naziva ta tehnika?",
+    "answers": [
+      "Kintsugi"
+    ],
+    "explanation": "Kintsugi je japanska umjetnost popravljanja keramike lakom i zlatom.",
+    "sources": [
+      "https://www.metmuseum.org/pt/exhibitions/the-infinite-artistry-of-japanese-ceramics"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00654-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Jezik",
+    "focus": "Silbo Gomero zviždani govor",
+    "difficulty": 4,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Na kanarskom otoku La Gomera stanovnici mogu prenositi španjolske poruke preko dolina bez izgovaranja riječi. Kako se zove njihov tradicionalni zviždani govor?",
+    "answers": [
+      "Silbo Gomero",
+      "Silbo"
+    ],
+    "explanation": "Silbo Gomero prenosi glasove španjolskog jezika zvižducima i nalazi se na UNESCO-ovu popisu.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/whistled-language-of-the-island-of-la-gomera-canary-islands-the-silbo-gomero-00172"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00655-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Medicina",
+    "focus": "Iskorjenjivanje velikih boginja 1980",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Posljednji prirodni slučaj velikih boginja zabilježen je 1977., a Svjetska zdravstvena organizacija tri godine poslije proglasila je njihovo iskorjenjivanje. Koje godine?",
+    "answers": [
+      "1980",
+      "1980."
+    ],
+    "explanation": "WHO je 1980. službeno proglasio velike boginje iskorijenjenima.",
+    "sources": [
+      "https://www.who.int/health-topics/smallpox"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00656-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Lapis lazuli plavi pigment Afganistan",
+    "difficulty": 4,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Dragocjena plava boja za stare umjetnike nastajala je iz kamena koji se povijesno dopremao iz današnjeg Afganistana. Kako se zove taj poludragi kamen?",
+    "answers": [
+      "Lapis lazuli",
+      "Lapis"
+    ],
+    "explanation": "Lapis lazuli sadrži lazurit, mineral iz kojeg se dobivao skupocjeni plavi pigment.",
+    "sources": [
+      "https://www.metmuseum.org/de/exhibitions/cycladic-art/glossary"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00657-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Priroda",
+    "focus": "Stalagmit raste s poda",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "U špilji jedna vapnenačka siga visi sa stropa, a druga raste s poda prema njoj. Kako se naziva ova druga?",
+    "answers": [
+      "Stalagmit"
+    ],
+    "explanation": "Stalagmit nastaje taloženjem minerala na špiljskom podu, za razliku od stalaktita.",
+    "sources": [
+      "https://www.usgs.gov/media/images/carlsbad-caverns-stalactites"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00658-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Sport",
+    "focus": "Badminton loptica 16 pera",
+    "difficulty": 3,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Perasta loptica za badminton može letjeti brže od 400 km/h. Koliko pera ima standardna natjecateljska loptica?",
+    "answers": [
+      "16",
+      "Šesnaest"
+    ],
+    "explanation": "Olimpijski vodič navodi da natjecateljska perasta loptica sadrži 16 pera.",
+    "sources": [
+      "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=158773&parentDocumentId=71295&skipCopyright=true&skipWatermark=true"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00659-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Moda",
+    "focus": "Indonezijski batik vosak",
+    "difficulty": 2,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "Majstor na tkaninu nanosi vrući vosak kako boja ne bi prodrla u određene dijelove uzorka. Koju tradicionalnu indonezijsku tehniku koristi?",
+    "answers": [
+      "Batik"
+    ],
+    "explanation": "U batiku vosak štiti odabrane dijelove tkanine pri bojenju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/batik-00170"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00660-20261102",
+    "createdAt": "2026-11-02T03:40:39+01:00",
+    "updatedAt": "2026-11-02T03:40:39+01:00",
+    "topic": "Povijest",
+    "focus": "Dagerotipija metalna ploča",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Fotografija iz sredine 19. stoljeća izrađena je kao jedinstveni pozitiv na posrebrenoj bakrenoj ploči, a ne na papiru. Kojom je tehnikom nastala?",
+    "answers": [
+      "Dagerotipija",
+      "Daguerreotype",
+      "Dagerotip"
+    ],
+    "explanation": "Dagerotipija je rani fotografski postupak kojim je nastajala jedinstvena slika na posrebrenoj bakrenoj ploči.",
+    "sources": [
+      "https://americanhistory.si.edu/explore/stories/part-1-philadelphia-snapshot-when-daguerreotypes-were-new"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
