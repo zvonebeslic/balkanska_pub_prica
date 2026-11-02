@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-00727-20261102",
+    "createdAt": "2026-11-02T15:02:11+01:00",
+    "updatedAt": "2026-11-02T15:02:11+01:00",
+    "topic": "Priroda",
+    "focus": "Plutajuća vulkanska stijena plovućac",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Većina kamenja u vodi tone, no jedna vulkanska stijena prepuna mjehurića plina može plutati. Kako se na hrvatskom zove ta stijena?",
+    "answers": [
+      "Plovućac",
+      "Plovucac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac je porozna vulkanska stijena male gustoće, nastala hlađenjem plinovima bogate magme.",
+    "sources": [
+      "https://www.usgs.gov/media/images/rocks-sink-or-float"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
