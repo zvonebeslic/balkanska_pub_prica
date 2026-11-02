@@ -1084,3 +1084,104 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .screen-choices.image-choices .image-choice .image-choice-caption{font-size:11px}
  .screen-choices.image-choices .image-choice-placeholder{min-height:45px;font-size:11px}
 }
+
+/* ABC pitanja: tri ponuđena odgovora u jednom redu. U svakom stupcu
+   tekst A/B/C je iznad njegove slike, i kad se rješenje otkrije. */
+.slide--question .screen-choices.abc-choices{
+ display:grid;
+ grid-template-columns:repeat(3,minmax(0,1fr));
+ align-items:stretch;
+ justify-content:stretch;
+ width:100%;
+ max-width:1560px;
+ gap:clamp(6px,1.15vw,20px);
+}
+.slide--question .screen-choices.abc-choices>.screen-choice{
+ min-width:0;
+ box-sizing:border-box;
+ overflow-wrap:anywhere;
+}
+.slide--question .screen-choices.abc-choices.image-choices .image-choice{
+ display:flex;
+ flex-direction:column;
+ justify-content:flex-start;
+ align-items:center;
+ gap:clamp(7px,1.3vh,17px);
+ min-width:0;
+ padding:clamp(7px,1.05vw,18px);
+}
+.slide--question .abc-choices.image-choices .image-choice-heading{
+ display:flex;
+ flex-wrap:wrap;
+ align-items:center;
+ justify-content:center;
+ align-content:center;
+ gap:clamp(4px,.6vw,11px);
+ min-height:clamp(48px,6vh,90px);
+ width:100%;
+ text-align:center;
+ line-height:1.18;
+}
+.slide--question .abc-choices.image-choices .image-choice-letter{
+ flex:none;
+ font-size:clamp(18px,1.7vw,32px);
+ color:#f3f8ff;
+}
+.slide--question .abc-choices.image-choices .image-choice-caption{
+ flex:0 1 auto;
+ min-width:0;
+ font-size:clamp(17px,1.7vw,32px);
+ line-height:1.2;
+ text-align:center;
+ font-weight:750;
+ color:#f3f8ff;
+}
+.slide--question .abc-choices.image-choices .image-choice img{
+ width:100%;
+ height:auto;
+ object-fit:contain;
+ max-height:min(36vh,350px);
+}
+.slide--question .abc-choices.image-choices .image-choice.correct{
+ border-color:#bd9c63;
+ background:#15323f;
+}
+.slide--question .abc-choices.image-choices .image-choice.correct .image-choice-heading .image-choice-caption,
+.slide--question .abc-choices.image-choices .image-choice.correct .image-choice-heading .image-choice-letter{
+ color:var(--ktg-answer-gold,#d7b66a);
+}
+.host-display .abc-choices.image-choices .image-choice-heading,
+.remote-preview .abc-choices.image-choices .image-choice-heading{min-height:42px}
+.host-display .abc-choices.image-choices .image-choice img,
+.remote-preview .abc-choices.image-choices .image-choice img{max-height:190px}
+.host-display .abc-choices.image-choices .image-choice-letter,
+.host-display .abc-choices.image-choices .image-choice-caption,
+.remote-preview .abc-choices.image-choices .image-choice-letter,
+.remote-preview .abc-choices.image-choices .image-choice-caption{
+ font-size:clamp(12px,1.3vw,21px);
+}
+@media(min-width:840px){
+ .abc-image-editor{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+ .abc-option-editor .choice{flex-wrap:wrap}
+}
+@media(max-width:650px){
+ .slide--question .screen-choices.abc-choices{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:4px;
+ }
+ .slide--question .screen-choices.abc-choices>.screen-choice{
+  padding:4px;
+  min-width:0;
+ }
+ .slide--question .abc-choices.image-choices .image-choice-heading{
+  min-height:42px;
+  gap:3px;
+ }
+ .slide--question .abc-choices.image-choices .image-choice-letter,
+ .slide--question .abc-choices.image-choices .image-choice-caption{
+  font-size:clamp(11px,2.7vw,17px);
+ }
+ .slide--question .abc-choices.image-choices .image-choice img{
+  max-height:24vh;
+ }
+}
