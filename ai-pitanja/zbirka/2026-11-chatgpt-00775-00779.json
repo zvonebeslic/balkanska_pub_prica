@@ -1,0 +1,121 @@
+[
+  {
+    "id": "chatgpt10000-00775-20261102",
+    "createdAt": "2026-11-02T19:39:08+01:00",
+    "updatedAt": "2026-11-02T19:39:08+01:00",
+    "topic": "Povijest",
+    "focus": "Šah Džahan naručio Taj Mahal",
+    "difficulty": 2,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji je mogulski vladar dao podići mramorni Taj Mahal u spomen na svoju suprugu, umjesto da ga gradi kao kraljevsku palaču?",
+    "answers": [
+      "Šah Džahan",
+      "Shah Jahan",
+      "Šahdžahan"
+    ],
+    "explanation": "Šah Džahan naručio je mauzolej u Agri u spomen na Mumtaz Mahal.",
+    "sources": [
+      "https://whc.unesco.org/en/list/252"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00776-20261102",
+    "createdAt": "2026-11-02T19:39:08+01:00",
+    "updatedAt": "2026-11-02T19:39:08+01:00",
+    "topic": "Arheologija",
+    "focus": "Bayon u Angkor Thomu",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U drevnom Angkor Thomu nalazi se hram poznat po brojnim isklesanim licima na tornjevima. Kako se zove taj hram?",
+    "answers": [
+      "Bayon",
+      "Bajon"
+    ],
+    "explanation": "Bayon je jedan od prepoznatljivih hramova kompleksa Angkor.",
+    "sources": [
+      "https://whc.unesco.org/en/list/668"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00777-20261102",
+    "createdAt": "2026-11-02T19:39:08+01:00",
+    "updatedAt": "2026-11-02T19:39:08+01:00",
+    "topic": "Arhitektura",
+    "focus": "Casa Vicens kao Gaudijevo djelo",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Park Güell i Casa Batlló poznati su, no na UNESCO-ovu popisu Gaudíjevih djela nalazi se i kuća čije ime završava prezimenom Vicens. Kako glasi njezin puni naziv?",
+    "answers": [
+      "Casa Vicens",
+      "Kuća Vicens"
+    ],
+    "explanation": "Casa Vicens jedno je od sedam dobara uključenih u UNESCO-ovu cjelinu Gaudíjevih djela.",
+    "sources": [
+      "https://whc.unesco.org/en/list/320"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00778-20261102",
+    "createdAt": "2026-11-02T19:39:08+01:00",
+    "updatedAt": "2026-11-02T19:39:08+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Versailles rezidencija Luja XIV do XVI",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je francuska kraljevska rezidencija od Luja XIV. do Luja XVI. služila kao uzor europskim dvorovima, a proslavila se i golemim vrtovima?",
+    "answers": [
+      "Versailles",
+      "Versaj",
+      "Versajska palača",
+      "Dvorac Versailles"
+    ],
+    "explanation": "Versailles je bio glavno sjedište francuskih kraljeva i arhitektonski uzor europskim dvorovima.",
+    "sources": [
+      "https://whc.unesco.org/en/list/83"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00779-20261102",
+    "createdAt": "2026-11-02T19:39:08+01:00",
+    "updatedAt": "2026-11-02T19:39:08+01:00",
+    "topic": "Zemljopis",
+    "focus": "Nadmorska visina Machu Picchua",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Ako se penjete do drevnoga grada Inka Machu Picchua, jeste li bliže visini od 430, 1430 ili 2430 metara nad morem? Odgovorite brojem.",
+    "answers": [
+      "2430",
+      "2.430",
+      "2430 metara"
+    ],
+    "explanation": "UNESCO navodi da se Machu Picchu nalazi na 2430 metara nadmorske visine.",
+    "sources": [
+      "https://whc.unesco.org/en/list/274"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
