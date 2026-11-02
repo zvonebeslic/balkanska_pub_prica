@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00706-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Astronomija",
+    "focus": "Oortov oblak i kometi",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji hipotetski golemi oblak ledenih tijela okružuje Sunčev sustav daleko iza Kuiperova pojasa?",
+    "answers": [
+      "Oortov oblak",
+      "Oortov oblak kometa"
+    ],
+    "explanation": "Oortov oblak nije izravno opažen; njegovo postojanje zaključuje se iz putanja kometa.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00707-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Zemljopis",
+    "focus": "Položaj Sunčeva sustava u galaksiji",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Sunce nije u središtu Mliječne staze: kako se zove mali spiralni ogranak u kojem se nalazi naš Sunčev sustav?",
+    "answers": [
+      "Orionov krak",
+      "Orionov ogranak",
+      "Orionov rukavac"
+    ],
+    "explanation": "NASA opisuje Sunčev sustav u Orionovu ogranku, između većih krakova Strijelca i Perzeja.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00708-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Fizika",
+    "focus": "Brzina bijega sa Zemlje",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Za bijeg iz Zemljina gravitacijskog polja bez dodatnog pogona potrebna je početna brzina od približno koliko kilometara u sekundi, zanemarimo li atmosferu?",
+    "answers": [
+      "11,2",
+      "11.2",
+      "11,2 km/s",
+      "11.2 km/s"
+    ],
+    "explanation": "NASA-in pregled planetarnih podataka navodi brzinu bijega sa Zemlje oko 11,2 km/s.",
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00709-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Matematika",
+    "focus": "Omjer promjera Zemlje i Mjeseca",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Promjer Mjeseca iznosi približno četvrtinu promjera Zemlje. Koliko je puta, zaokruženo na cijeli broj, Zemljin promjer veći?",
+    "answers": [
+      "4",
+      "Četiri"
+    ],
+    "explanation": "NASA navodi promjere Zemlje 12.756 km i Mjeseca 3.475 km, omjer oko 3,67.",
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00710-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Povijest",
+    "focus": "Godina redefinicije planeta",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Godine kada je Pluton prestao biti službeno klasificiran kao planet, koliko je planeta ostalo u Sunčevu sustavu?",
+    "answers": [
+      "8",
+      "Osam"
+    ],
+    "explanation": "Međunarodna astronomska unija usvojila je definiciju 2006., nakon čega je ostalo osam planeta.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/planets/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00711-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Kemija",
+    "focus": "Glavni udio mase Sunca",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kad bi se sva masa Sunčeva sustava stavila na vagu, koja bi zvijezda činila više od 99 posto ukupne mase?",
+    "answers": [
+      "Sunce"
+    ],
+    "explanation": "Sunce sadrži više od 99 posto mase Sunčeva sustava.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00712-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Geologija",
+    "focus": "Stjenoviti planeti",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Plinoviti divovi nemaju čvrstu površinu poput Zemlje. Koja su četiri planeta Sunčeva sustava stjenovita? Navedite onaj najbliži Suncu.",
+    "answers": [
+      "Merkur",
+      "Mercury"
+    ],
+    "explanation": "Merkur, Venera, Zemlja i Mars stjenoviti su planeti; Merkur je najbliži Suncu.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/planets/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00713-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Tehnologija",
+    "focus": "Voyager 2 i međuzvjezdani prostor",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Voyager 1 ušao je u međuzvjezdani prostor 2012. godine. Koje je godine to učinio Voyager 2?",
+    "answers": [
+      "2018"
+    ],
+    "explanation": "NASA navodi da je Voyager 2 ušao u međuzvjezdani prostor 2018. godine.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00714-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Jezik",
+    "focus": "Podrijetlo riječi solarni",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Od koje latinske riječi za Sunce potječe izraz 'solarni'?",
+    "answers": [
+      "Sol",
+      "Solis"
+    ],
+    "explanation": "Naziv solarni dolazi od latinske riječi sol, u genitivu solis.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00715-20261102",
+    "createdAt": "2026-11-02T10:40:40+01:00",
+    "updatedAt": "2026-11-02T10:40:40+01:00",
+    "topic": "Priroda",
+    "focus": "Podrijetlo Kuiperova pojasa",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Iza putanje kojeg planeta nalazi se Kuiperov pojas, prostrana regija ledenih tijela?",
+    "answers": [
+      "Neptun",
+      "Neptuna"
+    ],
+    "explanation": "Kuiperov pojas nalazi se iza Neptunove orbite.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
