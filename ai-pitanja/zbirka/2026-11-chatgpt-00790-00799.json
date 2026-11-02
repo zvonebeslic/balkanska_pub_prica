@@ -1,0 +1,242 @@
+[
+  {
+    "id": "chatgpt10000-00790-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Arhitektura",
+    "focus": "Glavni arhitekt Taj Mahala",
+    "difficulty": 4,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Taj Mahal poznat je kao spomenik ljubavi, no tko je prema UNESCO-u bio njegov glavni arhitekt?",
+    "answers": [
+      "Ustad Ahmad Lahori",
+      "Ustad-Ahmad Lahori",
+      "Ahmad Lahori"
+    ],
+    "explanation": "UNESCO navodi Ustad-Ahmada Lahorija kao glavnog arhitekta Taj Mahala.",
+    "sources": [
+      "https://whc.unesco.org/en/list/252"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00791-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Povijest",
+    "focus": "Vladar koji je naručio Taj Mahal",
+    "difficulty": 1,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Između 1631. i 1648. u Agri je podignut mauzolej od bijelog mramora. Koji ga je mogulski car dao izgraditi u spomen na suprugu?",
+    "answers": [
+      "Šah Džahan",
+      "Shah Jahan",
+      "Šahdžahan"
+    ],
+    "explanation": "Mogulski car Šah Džahan naručio je Taj Mahal za Mumtaz Mahal.",
+    "sources": [
+      "https://whc.unesco.org/en/list/252"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00792-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Uređenje Versailleske dvorane ogledala",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kraljevska palača nedaleko od Pariza proslavila se dvoranom ogledala i raskošnim vrtovima. Kako se zove ta palača?",
+    "answers": [
+      "Versailles",
+      "Versaj",
+      "Versajska palača",
+      "Dvorac Versailles"
+    ],
+    "explanation": "Versailles je bio glavna rezidencija francuskih kraljeva od Luja XIV. do Luja XVI.",
+    "sources": [
+      "https://whc.unesco.org/en/list/83"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00793-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Zemljopis",
+    "focus": "Država Samarkanda",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Grad na Putu svile, nekadašnji Afrasiab, čuva Registan i zvjezdarnicu Ulugbega. U kojoj se današnjoj državi nalazi?",
+    "answers": [
+      "Uzbekistan",
+      "Uzbekistanu"
+    ],
+    "explanation": "Samarkand se nalazi u Uzbekistanu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/603"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00794-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Astronomija",
+    "focus": "Zvjezdarnica Ulugbega",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U kojem je srednjoazijskom gradu iz 15. stoljeća sačuvana zvjezdarnica Ulugbega, uz medrese na Registanu?",
+    "answers": [
+      "Samarkand",
+      "Samarqand"
+    ],
+    "explanation": "Ulugbegova zvjezdarnica jedna je od znamenitosti Samarkanda.",
+    "sources": [
+      "https://whc.unesco.org/en/list/603"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00795-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Broj Gaudijevih UNESCO dobara",
+    "difficulty": 3,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Park Güell, Casa Batlló i dijelovi Sagrade Famílije pripadaju UNESCO-ovu skupu djela istog arhitekta. Koliko je ukupno dobara u tom skupu?",
+    "answers": [
+      "7",
+      "Sedam"
+    ],
+    "explanation": "UNESCO-ov upis Djela Antonija Gaudíja obuhvaća sedam dobara.",
+    "sources": [
+      "https://whc.unesco.org/en/list/320"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00796-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Arheologija",
+    "focus": "Carstvo hramova Angkora",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Ruševine Angkor Wata i hrama Bayon svjedoče o moći kojeg nekadašnjeg carstva jugoistočne Azije?",
+    "answers": [
+      "Kmersko Carstvo",
+      "Kmersko carstvo",
+      "Carstvo Kmera",
+      "Khmer Empire"
+    ],
+    "explanation": "Angkor je bio središte Kmerskog Carstva.",
+    "sources": [
+      "https://whc.unesco.org/en/list/668"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00797-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Matematika",
+    "focus": "Površina arheološkog parka Angkor",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "UNESCO za arheološki park Angkor navodi površinu od približno 40, 400 ili 4.000 četvornih kilometara?",
+    "answers": [
+      "400",
+      "400 km2",
+      "400 km²"
+    ],
+    "explanation": "Arheološki park Angkor obuhvaća približno 400 km².",
+    "sources": [
+      "https://whc.unesco.org/en/list/668"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00798-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Francuski kraljevi u Versaillesu",
+    "difficulty": 2,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Od Luja XIV. do kojeg je Luja Versailles služio kao glavna rezidencija francuskih kraljeva?",
+    "answers": [
+      "Luj XVI.",
+      "Luj 16.",
+      "Luj XVI",
+      "Louis XVI"
+    ],
+    "explanation": "Versailles je bio glavna kraljevska rezidencija do vladavine Luja XVI.",
+    "sources": [
+      "https://whc.unesco.org/en/list/83"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00799-20261102",
+    "createdAt": "2026-11-02T21:43:23+01:00",
+    "updatedAt": "2026-11-02T21:43:23+01:00",
+    "topic": "Religije i mitologije",
+    "focus": "Hram Bayon",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Angkor Wat poznat je po velikom hramu, ali u Angkor Thomu nalazi se drugi hram s obiljem kiparskih ukrasa. Kako se zove?",
+    "answers": [
+      "Bayon",
+      "Hram Bayon",
+      "Bajon"
+    ],
+    "explanation": "Bayon je znameniti hram u kompleksu Angkor Thom.",
+    "sources": [
+      "https://whc.unesco.org/en/list/668"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
