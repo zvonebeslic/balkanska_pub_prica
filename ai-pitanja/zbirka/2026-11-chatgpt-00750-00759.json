@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-00750-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "Washoku japanska prehrambena kultura",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "UNESCO je 2013. zaštitio japansku prehrambenu tradiciju koja osobito dolazi do izražaja pri novogodišnjim obiteljskim obrocima. Kojim se japanskim nazivom označava?",
+    "answers": [
+      "Washoku",
+      "Vašoku"
+    ],
+    "explanation": "Washoku obuhvaća znanja, običaje i pripremu tradicionalne japanske hrane.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/washoku-traditional-dietary-cultures-of-the-japanese-notably-for-the-celebration-of-new-year-00869"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00751-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Arheologija",
+    "focus": "Ahu ceremonijalne platforme Rapa Nui",
+    "difficulty": 5,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Na Uskršnjem otoku golemi kameni likovi predaka stoje na uzdignutim pravokutnim ceremonijalnim platformama. Kako se na jeziku Rapa Nui zovu te platforme?",
+    "answers": [
+      "Ahu"
+    ],
+    "explanation": "Ahu su ceremonijalne platforme na kojima su podizani kipovi moai.",
+    "sources": [
+      "https://whc.unesco.org/en/list/715"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00752-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Io plimno zagrijavanje",
+    "difficulty": 4,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Jupiterova gravitacija, zajedno s utjecajem Europe i Ganimeda, stalno savija jedan njegov mjesec i zagrijava mu unutrašnjost. Koji je taj izrazito vulkanski aktivan mjesec?",
+    "answers": [
+      "Io"
+    ],
+    "explanation": "Plimne sile zagrijavaju Io i održavaju stotine njegovih vulkana.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/io/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00753-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Biologija",
+    "focus": "Izbjeljivanje koralja gubitak algi",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koralj nakon dugotrajnog zagrijavanja mora može izgubiti boju jer izbacuje svoje mikroskopske partnere. Koju skupinu organizama izbacuje iz tkiva?",
+    "answers": [
+      "Alge",
+      "Simbiozne alge",
+      "Zooxanthellae",
+      "Zooksantele"
+    ],
+    "explanation": "Izbacivanjem simbioznih algi koralji ostaju bez dijela hrane i obojenja.",
+    "sources": [
+      "https://sanctuaries.noaa.gov/vr/flower-garden-banks/bleached-brain-coral/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00754-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Povijest",
+    "focus": "Skareb od ametista u Egiptu",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "U egipatskom Srednjem kraljevstvu izrađivali su amulete u obliku kukca, a primjerak iz grobnice kod Lishta u Metropolitanskom muzeju isklesan je od ametista. Koji kukac?",
+    "answers": [
+      "Skarabej",
+      "Balegar",
+      "Skarab"
+    ],
+    "explanation": "Skarabej je bio čest oblik egipatskih amuleta; sačuvani su primjerci od ametista.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/545049"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00755-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Rapa Nui državna pripadnost",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Do njegovih golemih kamenih kipova stiže se preko Tihog oceana, oko 3700 kilometara od južnoameričke obale. Kojoj državi pripada Uskršnji otok?",
+    "answers": [
+      "Čile",
+      "Chile"
+    ],
+    "explanation": "Uskršnji otok ili Rapa Nui pripada Čileu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/715"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00756-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "More i ocean",
+    "focus": "Koraljni polipi fotosinteza",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Iako su koralji životinje, velik dio hrane u plitkom toplom moru dobivaju zahvaljujući fotosintezi. Tko im u tkivu obavlja taj posao?",
+    "answers": [
+      "Simbiozne alge",
+      "Alge",
+      "Zooksantele",
+      "Zooxanthellae"
+    ],
+    "explanation": "Simbiozne alge u tkivu koralja fotosintezom proizvode hranjive tvari.",
+    "sources": [
+      "https://sanctuaries.noaa.gov/vr/flower-garden-banks/bleached-brain-coral/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00757-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Moai materijal vulkanski tuf",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Veliki kipovi predaka na Rapa Nuiju nisu većinom klesani od granita: za većinu je korištena mekša stijena nastala od vulkanskog pepela. Koja?",
+    "answers": [
+      "Vulkanski tuf",
+      "Tuf"
+    ],
+    "explanation": "Većina moaija isklesana je iz vulkanskog tufa.",
+    "sources": [
+      "https://whc.unesco.org/en/list/715"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00758-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Kultura",
+    "focus": "Flamenco UNESCO upis 2010",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Andaluzijska umjetnost koja spaja cante, baile i toque uvrštena je na UNESCO-ov popis nematerijalne baštine koje godine?",
+    "answers": [
+      "2010",
+      "2010."
+    ],
+    "explanation": "Flamenco je na UNESCO-ov reprezentativni popis upisan 2010. godine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00759-20261102",
+    "createdAt": "2026-11-02T16:45:00+01:00",
+    "updatedAt": "2026-11-02T16:45:00+01:00",
+    "topic": "Geologija",
+    "focus": "Rapa Nui alat toki od bazalta",
+    "difficulty": 5,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Graditelji kamenih divova na Uskršnjem otoku klesali su vulkanski tuf pijucima koje su zvali toki. Od koje su tvrđe vulkanske stijene izrađivali te alate?",
+    "answers": [
+      "Bazalt",
+      "Basalt"
+    ],
+    "explanation": "UNESCO navodi da su toki pijuci izrađivani od tvrdog bazalta.",
+    "sources": [
+      "https://whc.unesco.org/en/list/715"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
