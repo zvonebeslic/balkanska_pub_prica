@@ -1,0 +1,212 @@
+[
+  {
+    "id": "chatgpt10000-00674-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Gastronomija",
+    "focus": "Washoku i novogodišnja japanska prehrambena tradicija",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U Japanu se za Novu godinu pripremaju simbolična jela, a poštovanje prirode i sezonskih namirnica temelj je prehrambene tradicije upisane na UNESCO-ov popis 2013. Kako se zove ta tradicija?",
+    "answers": [
+      "Washoku",
+      "Vašoku"
+    ],
+    "explanation": "Washoku obuhvaća znanja i običaje japanske prehrane, osobito novogodišnje pripreme.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/washoku-traditional-dietary-cultures-of-the-japanese-notably-for-the-new-year-00869"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00675-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Sport",
+    "focus": "Prvi grad domaćin Olimpijskih igara mladih",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Marina Bay, poznati veliki panoramski kotač i ljetni sportski susret 2010. Tri su traga za grad koji je ugostio prve Olimpijske igre mladih. Koji?",
+    "answers": [
+      "Singapur",
+      "Singapore"
+    ],
+    "explanation": "Prve ljetne Olimpijske igre mladih održane su 2010. u Singapuru.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/10-years-on-the-legacies-of-singapore-2010"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00676-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Povijest",
+    "focus": "Godina osnutka Međunarodnog olimpijskog odbora",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na pariškoj Sorbonni Pierre de Coubertin potaknuo je obnovu Olimpijskih igara, a 23. lipnja osnovan je MOO. Koje se godine to dogodilo?",
+    "answers": [
+      "1894",
+      "1894."
+    ],
+    "explanation": "Međunarodni olimpijski odbor osnovan je 23. lipnja 1894. u Parizu.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/millions-join-celebrations-as-nocs-mark-olympic-day-around-the-world"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00677-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Dan obilježavanja Olimpijskog dana",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Međunarodni olimpijski odbor osnovan je 23. lipnja 1894. Koji je dan i mjesec zbog toga odabran za Olimpijski dan?",
+    "answers": [
+      "23. lipnja",
+      "23 lipnja",
+      "23.6.",
+      "23. 6."
+    ],
+    "explanation": "Olimpijski dan obilježava se 23. lipnja, na obljetnicu osnivanja MOO-a.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/millions-join-celebrations-as-nocs-mark-olympic-day-around-the-world"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00678-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Biologija",
+    "focus": "Ptice grabljivice u sokolarstvu",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Naziv drevne lovne vještine sugerira jednu pticu, ali u njoj se uz sokolove mogu trenirati i orlovi te jastrebovi. Koja je to vještina?",
+    "answers": [
+      "Sokolarstvo",
+      "Falconry"
+    ],
+    "explanation": "Sokolarstvo uključuje dresuru i let različitih ptica grabljivica, ne samo sokolova.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01708"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00679-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Obrazovanje",
+    "focus": "Prvo održavanje Olimpijskog dana",
+    "difficulty": 3,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "MOO je osnovan 1894., ali Olimpijski dan prvi se put proslavio tek nakon Drugog svjetskog rata. Koje godine?",
+    "answers": [
+      "1948",
+      "1948."
+    ],
+    "explanation": "Prvo obilježavanje Olimpijskog dana održano je 23. lipnja 1948.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/millions-join-celebrations-as-nocs-mark-olympic-day-around-the-world"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00680-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Košarka",
+    "focus": "Međunarodni debi košarke 3 na 3 na Olimpijskim igrama mladih",
+    "difficulty": 3,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Na prvim Olimpijskim igrama mladih 2010. međunarodno je debitirao brži format sporta s jednim košem i po troje igrača u ekipi. Koji format?",
+    "answers": [
+      "3x3 košarka",
+      "Košarka 3x3",
+      "Basket 3x3"
+    ],
+    "explanation": "Format košarke 3x3 predstavljen je na međunarodnoj olimpijskoj sceni u Singapuru 2010.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/10-years-on-the-legacies-of-singapore-2010"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00681-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Kultura",
+    "focus": "Japanski novogodišnji kolači od tučene riže",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Pripremajući se za japansku Novu godinu, obitelji tuku kuhanu ljepljivu rižu kako bi dobile tradicionalne kolačiće. Kako se oni zovu?",
+    "answers": [
+      "Mochi",
+      "Moči"
+    ],
+    "explanation": "Mochi su kolači od tučene ljepljive riže povezani s japanskim običajima.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/washoku-traditional-dietary-cultures-of-the-japanese-notably-for-the-new-year-00869"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00682-20261102",
+    "createdAt": "2026-11-02T06:41:12+01:00",
+    "updatedAt": "2026-11-02T06:41:12+01:00",
+    "topic": "Olimpizam",
+    "focus": "Godina prve zimske olimpijade",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Prve ljetne Olimpijske igre modernog doba održane su 1896., a zimska inačica pojavila se gotovo tri desetljeća poslije. Koje godine?",
+    "answers": [
+      "1924",
+      "1924."
+    ],
+    "explanation": "Prve Zimske olimpijske igre održane su 1924.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/10-years-on-the-legacies-of-singapore-2010"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
