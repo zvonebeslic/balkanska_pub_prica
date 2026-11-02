@@ -90,6 +90,7 @@ const VOL_TWO_SOURCE="KvizToGo-Vol-2-2026-11";
 const VOL_ONE_CLEANUP_KEY="ktg-keep-only-vol1-2026-11-01";
 let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false,publishTargetRound=0;
 let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode=new URLSearchParams(location.search).get("stage")==="1";
+const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
 const itemAt=(r,s,i,p=project)=>p?.rounds?.[r]?.sections?.[s]?.items?.[i];
@@ -541,6 +542,68 @@ function youtubeEmbed(raw){
  }catch{}
  return "";
 }
+// Local photos never leave IndexedDB in their original form. The presenter creates
+// a compact JPEG preview that fits even the smallest Supabase Realtime broadcast tier.
+const TV_IMAGE_MAX_CHARS=132000; // under the 256 KB Free tier payload limit
+function convertImageForTv(blob){
+ return new Promise((resolve,reject)=>{
+  const objectUrl=URL.createObjectURL(blob),img=new Image();
+  const cleanup=()=>URL.revokeObjectURL(objectUrl);
+  img.onerror=()=>{cleanup();reject(new Error("Slika nije podržana u ovom pregledniku."));};
+  img.onload=()=>{
+   try{
+    if(!img.naturalWidth||!img.naturalHeight)throw Error("Slika nema valjane dimenzije.");
+    let maxEdge=1200,smallest="";
+    for(let pass=0;pass<6;pass++){
+     const scale=Math.min(1,maxEdge/Math.max(img.naturalWidth,img.naturalHeight));
+     const canvas=document.createElement("canvas");
+     canvas.width=Math.max(1,Math.round(img.naturalWidth*scale));
+     canvas.height=Math.max(1,Math.round(img.naturalHeight*scale));
+     const ctx=canvas.getContext("2d");
+     if(!ctx)throw Error("Preglednik ne može pripremiti sliku.");
+     ctx.fillStyle="#ffffff";ctx.fillRect(0,0,canvas.width,canvas.height);
+     ctx.drawImage(img,0,0,canvas.width,canvas.height);
+     for(const quality of [.84,.7,.56,.42,.3,.22]){
+      const data=canvas.toDataURL("image/jpeg",quality);
+      if(data.length<TV_IMAGE_MAX_CHARS){cleanup();resolve(data);return;}
+      if(!smallest||data.length<smallest.length)smallest=data;
+     }
+     maxEdge=Math.round(maxEdge*.78);
+    }
+    throw Error("Slika je prevelika za TV prijenos.");
+   }catch(e){cleanup();reject(e);}
+  };
+  img.src=objectUrl;
+ });
+}
+function tvImageFor(mediaId){
+ if(!mediaId||stageMode)return "";
+ if(tvImageCache.has(mediaId))return tvImageCache.get(mediaId);
+ if(tvImagePending.has(mediaId)||tvImageErrors.has(mediaId))return "";
+ tvImagePending.add(mediaId);
+ const startingQuiz=project?.id;
+ const refreshIfCurrent=()=>{
+  if(!project||project.id!==startingQuiz||!window.KTGSync?.isHost())return;
+  const slide=currentSlide(),q=slide.kind==="question"?itemAt(slide.r,slide.s,slide.i):null;
+  if(q?.mediaId===mediaId)pushStage();
+ };
+ storeGet("assets",mediaId).then(asset=>{
+  if(!asset?.blob||!(asset.type||asset.blob.type||"").startsWith("image/"))
+   throw Error("Spremljeni prilog nije čitljiva slika.");
+  return convertImageForTv(asset.blob);
+ }).then(data=>{
+  tvImageCache.set(mediaId,data);
+  // Bound the cache while avoiding repeated image conversions within one quiz.
+  if(tvImageCache.size>25)tvImageCache.delete(tvImageCache.keys().next().value);
+  refreshIfCurrent();
+ }).catch(error=>{
+  tvImageErrors.add(mediaId);
+  console.warn("TV slika:",error);
+  toast("Slika se ne može poslati na TV: "+error.message,true);
+  refreshIfCurrent();
+ }).finally(()=>tvImagePending.delete(mediaId));
+ return "";
+}
 function releaseMedia(kind){if(activeUrls[kind]){URL.revokeObjectURL(activeUrls[kind]);delete activeUrls[kind];}}
 async function attachMedia(host,q,kind){
  const seq=(mediaSeq[kind]||0)+1;mediaSeq[kind]=seq;releaseMedia(kind);
@@ -702,7 +765,7 @@ async function uploadMedia(e){
  if(!/^(image|audio|video)\//.test(f.type)){toast("Odaberi sliku, audio ili video datoteku.",true);return;}
  if(f.size>250*1024*1024){toast("Datoteka je veća od 250 MB. Koristi manji video ili poveznicu.",true);return;}
  const q=itemAt(position.r,position.s,position.i),id=uid();
- try{await storePut("assets",{id,name:f.name,type:f.type,blob:f});q.mediaId=id;q.mediaName=f.name;q.mediaType=f.type;scheduleSave();renderEditor();renderScreen($("previewPane"),"preview");pushStage();toast("Medij spremljen na ovom uređaju.");}
+ try{await storePut("assets",{id,name:f.name,type:f.type,blob:f});q.mediaId=id;q.mediaName=f.name;q.mediaType=f.type;scheduleSave();renderEditor();renderScreen($("previewPane"),"preview");pushStage();toast(f.type.startsWith("image/")?"Slika spremljena. Automatski se prilagođava prikazu na TV-u.":"Medij spremljen na ovom uređaju.");}
  catch(err){toast("Medij nije spremljen: "+err.message,true);}
 }
 function removeMedia(){const q=itemAt(position.r,position.s,position.i);q.mediaId="";q.mediaName="";q.mediaType="";scheduleSave();renderAll();}
@@ -794,6 +857,8 @@ function sharedSlide(){
  };
  const q=itemAt(slide.r,slide.s,slide.i);
  if(!q)return base;
+ const imageIsLocal=!!q.mediaId&&(!q.mediaType||String(q.mediaType).startsWith("image/"));
+ const tvImage=imageIsLocal?tvImageFor(q.mediaId):"";
  // Retain the explanation for older saved copies of this specific example quiz.
  // Only show it when all four original clues still match.
  const putinClues=section.code==="asocijacija"&&slide.i===4&&
@@ -821,12 +886,23 @@ function sharedSlide(){
    String(q.explanation||putinExplanation||"").trim():"",
   estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
-  mediaUrl:q.mediaUrl?String(q.mediaUrl):"",
-  mediaMissing:!!q.mediaId&&!q.mediaUrl
+  mediaData:tvImage,
+  mediaUrl:imageIsLocal?"":(q.mediaUrl?String(q.mediaUrl):""),
+  mediaMissing:!!q.mediaId&&!tvImage&&(!q.mediaUrl||imageIsLocal),
+  mediaPreparing:imageIsLocal&&!tvImage&&!tvImageErrors.has(q.mediaId),
+  mediaError:imageIsLocal&&tvImageErrors.has(q.mediaId)
  };
 }
 function sharedMedia(root,slide){
  const holder=root.querySelector(".screen-media");if(!holder||!slide)return;
+ if(typeof slide.mediaData==="string"&&slide.mediaData.length<TV_IMAGE_MAX_CHARS&&
+    /^data:image\/jpeg;base64,[a-zA-Z0-9+/=]+$/.test(slide.mediaData)){
+  const img=document.createElement("img");
+  img.src=slide.mediaData;
+  img.alt="Slika uz pitanje";
+  holder.append(img);
+  return;
+ }
  if(slide.mediaUrl){
   const embed=youtubeEmbed(slide.mediaUrl);
   if(embed){
@@ -838,7 +914,11 @@ function sharedMedia(root,slide){
   const el=document.createElement(type);el.src=url;if(type==="img"){el.alt="Slika uz pitanje";}else{el.controls=true;el.preload="metadata";}
   holder.append(el);
  }else if(slide.mediaMissing){
-  const p=document.createElement("p");p.className="muted tiny";p.textContent="Prilog je lokalno spremljen. Za prikaz na drugom uređaju dodaj mrežnu poveznicu na medij u uređivaču.";holder.append(p);
+  const p=document.createElement("p");p.className="muted tiny";
+  p.textContent=slide.mediaError?"Slika nije dostupna za TV. Pokušaj ponovno učitati datoteku u uređivaču.":
+   slide.mediaPreparing?"Pripremam sliku za TV…":
+   "Audio i video datoteke spremljene lokalno nisu dostupne na drugom uređaju. Koristi mrežnu poveznicu.";
+  holder.append(p);
  }
 }
 function renderSharedSlide(root,slide,options={}){
