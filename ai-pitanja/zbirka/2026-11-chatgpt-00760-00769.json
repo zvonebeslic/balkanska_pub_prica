@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00760-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Zanati",
+    "focus": "Gruzijska glinena posuda qvevri",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U Gruziji se mošt tradicionalno ostavlja da fermentira u velikoj jajolikoj glinenoj posudi, često ukopanoj u zemlju. Kako se zove ta posuda?",
+    "answers": [
+      "Qvevri",
+      "Kvevri"
+    ],
+    "explanation": "Qvevri služi fermentaciji, dozrijevanju i čuvanju vina.",
+    "sources": [
+      "https://ich.unesco.org/en/decisions/8.COM/8.13"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00761-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Sport",
+    "focus": "Gruzijsko hrvanje chidaoba",
+    "difficulty": 4,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Natjecatelji izlaze u arenu uz zvukove zurne i bubnja doli, a njihovo tradicionalno hrvanje UNESCO je zaštitio 2018. Kako se zove taj gruzijski sport?",
+    "answers": [
+      "Chidaoba",
+      "Čidaoba"
+    ],
+    "explanation": "Chidaoba spaja hrvanje, glazbu, ples i tradicionalnu odjeću.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/chidaoba-wrestling-in-georgia-01371"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00762-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Kultura",
+    "focus": "Zmijanjski vez UNESCO",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Plavi vez iz okolice Banje Luke, nazvan po povijesnoj oblasti u zapadnoj Bosni, dio je UNESCO-ove nematerijalne baštine. Kako se naziva?",
+    "answers": [
+      "Zmijanjski vez",
+      "Zmijanje vez"
+    ],
+    "explanation": "Zmijanjski vez tradicionalna je tehnika vezenja iz Bosne i Hercegovine.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00763-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Moda",
+    "focus": "Kelaghayi svilene marame",
+    "difficulty": 4,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "U Azerbajdžanu se tradicionalne ženske svilene marame ukrašavaju simboličnim motivima, a vještina njihove izrade upisana je na UNESCO-ov popis 2014. Kako se zovu?",
+    "answers": [
+      "Kelaghayi",
+      "Kelağayı",
+      "Kelagayi"
+    ],
+    "explanation": "Kelaghayi je tradicionalna azerbajdžanska svilena marama.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00764-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Gastronomija",
+    "focus": "Armenski lavash",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Tijesto se vrlo tanko razvuče i peče u tradicionalnoj peći; taj kruh ima posebno mjesto u armenskim obiteljskim obredima. Kako se zove?",
+    "answers": [
+      "Lavaš",
+      "Lavash"
+    ],
+    "explanation": "Lavaš je tanki tradicionalni kruh čija je priprema u Armeniji na UNESCO-ovu popisu.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00765-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Ples",
+    "focus": "Kopachkata ples Dramche",
+    "difficulty": 5,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U selu Dramche u Sjevernoj Makedoniji njeguje se brzi zajednički ples čiji je naziv 2014. ušao na UNESCO-ov popis. Kako se zove?",
+    "answers": [
+      "Kopachkata",
+      "Kopačkata"
+    ],
+    "explanation": "Kopachkata je tradicionalni društveni ples iz sela Dramche.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00766-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Glazba",
+    "focus": "Mađarski csardas",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Ime mađarskog plesa s naizmjeničnim sporijim i bržim dijelovima potječe od riječi za gostionicu. Koji je to ples, čija je tradicija na UNESCO-ovu popisu od 2024.?",
+    "answers": [
+      "Čardaš",
+      "Csárdás",
+      "Csardas"
+    ],
+    "explanation": "Čardaš je mađarski ples čija je tradicija uvrštena na UNESCO-ov popis.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00767-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Gastronomija",
+    "focus": "Estonski Mulgi puder",
+    "difficulty": 4,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Krumpir se kuha s ječmom i pretvara u gustu kašu. Kako se zove ovo tradicionalno jelo estonske regije Mulgimaa, zaštićeno na UNESCO-ovu popisu 2024.?",
+    "answers": [
+      "Mulgi puder"
+    ],
+    "explanation": "Mulgi puder je estonska kaša od krumpira i ječma.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00768-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Religije i mitologije",
+    "focus": "Perzijska svečanost Mehregan",
+    "difficulty": 5,
+    "styleId": 93,
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "question": "U Iranu i Tadžikistanu obilježava se drevna jesenska svečanost povezana sa zahvalnošću i zajedništvom, upisana na UNESCO-ov popis 2024. Kako se zove?",
+    "answers": [
+      "Mehregan",
+      "Mehragan"
+    ],
+    "explanation": "Mehregan je tradicionalna svečanost iranskoga kulturnog kruga.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00769-20261102",
+    "createdAt": "2026-11-02T17:42:23+01:00",
+    "updatedAt": "2026-11-02T17:42:23+01:00",
+    "topic": "Glazba",
+    "focus": "Srednjoazijski rubab",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Drveno tijelo, žice i tradicija sviranja koja povezuje Afganistan, Iran, Tadžikistan i Uzbekistan: kako se zove glazbalo čija je izrada i sviranje zaštićeno 2024.?",
+    "answers": [
+      "Rubab",
+      "Rabab"
+    ],
+    "explanation": "Rubab odnosno rabab tradicionalno je žičano glazbalo.",
+    "sources": [
+      "https://ich.unesco.org/en/lists?display=maps&domain=02"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
