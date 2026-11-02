@@ -887,6 +887,7 @@ function sharedSlide(){
   estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
   mediaData:tvImage,
+  mediaType:imageIsLocal?"image/jpeg":String(q.mediaType||""),
   mediaUrl:imageIsLocal?"":(q.mediaUrl?String(q.mediaUrl):""),
   mediaMissing:!!q.mediaId&&!tvImage&&(!q.mediaUrl||imageIsLocal),
   mediaPreparing:imageIsLocal&&!tvImage&&!tvImageErrors.has(q.mediaId),
@@ -920,6 +921,16 @@ function sharedMedia(root,slide){
    "Audio i video datoteke spremljene lokalno nisu dostupne na drugom uređaju. Koristi mrežnu poveznicu.";
   holder.append(p);
  }
+}
+// Only picture-based slides use the side-by-side question layout.
+// Keep audio/video, image-choice groups, and slides without a photo unchanged.
+function hasSingleQuestionImage(slide){
+ if(slide.sectionCode==="abc"&&Array.isArray(slide.optionImages)&&slide.optionImages.length===3)return false;
+ if(typeof slide.mediaData==="string"&&slide.mediaData.startsWith("data:image/"))return true;
+ if(String(slide.mediaType||"").startsWith("image/"))return true;
+ const url=safeUrl(slide.mediaUrl||"");
+ if(!url||youtubeEmbed(url))return false;
+ return !/\.(?:mp3|ogg|wav|m4a|mp4|webm|mov|m3u8)(?:[?#]|$)/i.test(url);
 }
 function renderSharedSlide(root,slide,options={}){
  if(!root||!slide||slide.kind!=="ktg-slide")return;
@@ -1064,20 +1075,26 @@ function renderSharedSlide(root,slide,options={}){
   }
   return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
  }).join("");
- root.innerHTML=inner("slide--question",
-  '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong>'+
-   (questionProgress?'<div class="rubric-question-progress">'+esc(questionProgress)+'</div>':"")+'</div>'+
-  '<div class="screen-body" style="--question-scale:'+fontScale+'"><div class="screen-title question-fixed">'+esc(question)+'</div>'+
-  lyricBlanks+
-  (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+(imageChoices?" image-choices":"")+'">'+choices+'</div>':"")+
-  '<div class="screen-media"></div>'+
+ const singleImage=hasSingleQuestionImage(slide);
+ const answerMarkup=
   (slide.revealed&&slide.sectionCode!=="stihovi"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
   (slide.revealed&&slide.sectionCode==="vjerovali"&&slide.truthExplanation?
    '<div class="truth-answer-note">('+esc(slide.truthExplanation)+')</div>':"")+
   (slide.revealed&&slide.sectionCode==="asocijacija"&&slide.associationExplanation?
    '<div class="association-answer-note">('+esc(slide.associationExplanation)+')</div>':"")+
   (slide.revealed&&slide.sectionCode==="procjena"&&slide.estimateRange?
-   '<div class="estimate-accepted-range"><span>Priznaje se raspon:</span> '+esc(slide.estimateRange)+'</div>':"")+
+   '<div class="estimate-accepted-range"><span>Priznaje se raspon:</span> '+esc(slide.estimateRange)+'</div>':"");
+ root.innerHTML=inner("slide--question",
+  '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong>'+
+   (questionProgress?'<div class="rubric-question-progress">'+esc(questionProgress)+'</div>':"")+'</div>'+
+  '<div class="screen-body'+(singleImage?' has-single-image':'')+'" style="--question-scale:'+fontScale+'">'+
+  (singleImage?'<div class="question-copy">':"")+
+  '<div class="screen-title question-fixed">'+esc(question)+'</div>'+
+  lyricBlanks+
+  (choices?'<div class="screen-choices'+(slide.sectionCode==="abc"?" abc-choices":"")+(imageChoices?" image-choices":"")+'">'+choices+'</div>':"")+
+  (singleImage?answerMarkup+'</div>':"")+
+  '<div class="screen-media"></div>'+
+  (!singleImage?answerMarkup:"")+
   '</div>');
  if(options.localMedia){
   const current=currentSlide(),q=current.kind==="question"?itemAt(current.r,current.s,current.i):null;
