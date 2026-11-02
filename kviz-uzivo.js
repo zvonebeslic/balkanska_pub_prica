@@ -561,7 +561,9 @@ function youtubeEmbed(raw){
 // Local photos never leave IndexedDB in their original form. The presenter creates
 // a compact JPEG preview that fits even the smallest Supabase Realtime broadcast tier.
 const TV_IMAGE_MAX_CHARS=132000; // under the 256 KB Free tier payload limit
-function convertImageForTv(blob){
+const TV_ABC_IMAGE_MAX_CHARS=42000; // three pictures stay below the message size limit
+const TV_ABC_MAIN_MAX_CHARS=60000; // still leaves room if the question itself has a picture
+function convertImageForTv(blob,maxChars=TV_IMAGE_MAX_CHARS){
  return new Promise((resolve,reject)=>{
   const objectUrl=URL.createObjectURL(blob),img=new Image();
   const cleanup=()=>URL.revokeObjectURL(objectUrl);
@@ -570,7 +572,7 @@ function convertImageForTv(blob){
    try{
     if(!img.naturalWidth||!img.naturalHeight)throw Error("Slika nema valjane dimenzije.");
     let maxEdge=1200,smallest="";
-    for(let pass=0;pass<6;pass++){
+    for(let pass=0;pass<8;pass++){
      const scale=Math.min(1,maxEdge/Math.max(img.naturalWidth,img.naturalHeight));
      const canvas=document.createElement("canvas");
      canvas.width=Math.max(1,Math.round(img.naturalWidth*scale));
@@ -581,7 +583,7 @@ function convertImageForTv(blob){
      ctx.drawImage(img,0,0,canvas.width,canvas.height);
      for(const quality of [.84,.7,.56,.42,.3,.22]){
       const data=canvas.toDataURL("image/jpeg",quality);
-      if(data.length<TV_IMAGE_MAX_CHARS){cleanup();resolve(data);return;}
+      if(data.length<maxChars){cleanup();resolve(data);return;}
       if(!smallest||data.length<smallest.length)smallest=data;
      }
      maxEdge=Math.round(maxEdge*.78);
@@ -592,32 +594,34 @@ function convertImageForTv(blob){
   img.src=objectUrl;
  });
 }
-function tvImageFor(mediaId){
+function tvImageFor(mediaId,maxChars=TV_IMAGE_MAX_CHARS){
  if(!mediaId||stageMode)return "";
- if(tvImageCache.has(mediaId))return tvImageCache.get(mediaId);
- if(tvImagePending.has(mediaId)||tvImageErrors.has(mediaId))return "";
- tvImagePending.add(mediaId);
+ const cacheKey=mediaId+":"+maxChars;
+ if(tvImageCache.has(cacheKey))return tvImageCache.get(cacheKey);
+ if(tvImagePending.has(cacheKey)||tvImageErrors.has(cacheKey))return "";
+ tvImagePending.add(cacheKey);
  const startingQuiz=project?.id;
  const refreshIfCurrent=()=>{
-  if(!project||project.id!==startingQuiz||!window.KTGSync?.isHost())return;
+  if(!project||project.id!==startingQuiz)return;
   const slide=currentSlide(),q=slide.kind==="question"?itemAt(slide.r,slide.s,slide.i):null;
-  if(q?.mediaId===mediaId)pushStage();
+  if(!q||(q.mediaId!==mediaId&&!q.optionMediaIds?.includes(mediaId)))return;
+  if(q.optionMediaIds?.includes(mediaId)&&!stageMode)renderScreen($("previewPane"),"preview");
+  if(window.KTGSync?.isHost())pushStage();
  };
  storeGet("assets",mediaId).then(asset=>{
   if(!asset?.blob||!(asset.type||asset.blob.type||"").startsWith("image/"))
    throw Error("Spremljeni prilog nije čitljiva slika.");
-  return convertImageForTv(asset.blob);
+  return convertImageForTv(asset.blob,maxChars);
  }).then(data=>{
-  tvImageCache.set(mediaId,data);
-  // Bound the cache while avoiding repeated image conversions within one quiz.
-  if(tvImageCache.size>25)tvImageCache.delete(tvImageCache.keys().next().value);
+  tvImageCache.set(cacheKey,data);
+  if(tvImageCache.size>60)tvImageCache.delete(tvImageCache.keys().next().value);
   refreshIfCurrent();
  }).catch(error=>{
-  tvImageErrors.add(mediaId);
+  tvImageErrors.add(cacheKey);
   console.warn("TV slika:",error);
   toast("Slika se ne može poslati na TV: "+error.message,true);
   refreshIfCurrent();
- }).finally(()=>tvImagePending.delete(mediaId));
+ }).finally(()=>tvImagePending.delete(cacheKey));
  return "";
 }
 function releaseMedia(kind){if(activeUrls[kind]){URL.revokeObjectURL(activeUrls[kind]);delete activeUrls[kind];}}
@@ -907,7 +911,14 @@ function sharedSlide(){
  const q=itemAt(slide.r,slide.s,slide.i);
  if(!q)return base;
  const imageIsLocal=!!q.mediaId&&(!q.mediaType||String(q.mediaType).startsWith("image/"));
- const tvImage=imageIsLocal?tvImageFor(q.mediaId):"";
+ const hasABCOptionImages=section.code==="abc"&&
+  (!!q.optionMediaIds?.some(Boolean)||!!q.optionImages?.some(Boolean));
+ const mainBudget=hasABCOptionImages?TV_ABC_MAIN_MAX_CHARS:TV_IMAGE_MAX_CHARS;
+ const tvImage=imageIsLocal?tvImageFor(q.mediaId,mainBudget):"";
+ const optionImages=hasABCOptionImages?Array.from({length:3},(_,i)=>{
+  const localId=q.optionMediaIds?.[i];
+  return localId?tvImageFor(localId,TV_ABC_IMAGE_MAX_CHARS):String(q.optionImages?.[i]||"");
+ }):[];
  // Retain the explanation for older saved copies of this specific example quiz.
  // Only show it when all four original clues still match.
  const putinClues=section.code==="asocijacija"&&slide.i===4&&
@@ -927,7 +938,9 @@ function sharedSlide(){
   questionScale:questionScale(q.questionScale),
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
-  optionImages:section.code==="abc"&&Array.isArray(q.optionImages)?q.optionImages:[],
+  optionImages,
+  optionMediaIds:section.code==="abc"?(q.optionMediaIds||[]).slice(0,3):[],
+  abcHideNames:section.code==="abc"&&!!q.abcHideNames,
   correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
   answer:revealed?createAnswer(slide.r,slide.s,slide.i,q):"",
   truthExplanation:revealed&&section.code==="vjerovali"?String(q.note||"").trim():"",
@@ -939,8 +952,8 @@ function sharedSlide(){
   mediaType:imageIsLocal?"image/jpeg":String(q.mediaType||""),
   mediaUrl:imageIsLocal?"":(q.mediaUrl?String(q.mediaUrl):""),
   mediaMissing:!!q.mediaId&&!tvImage&&(!q.mediaUrl||imageIsLocal),
-  mediaPreparing:imageIsLocal&&!tvImage&&!tvImageErrors.has(q.mediaId),
-  mediaError:imageIsLocal&&tvImageErrors.has(q.mediaId)
+  mediaPreparing:imageIsLocal&&!tvImage&&!tvImageErrors.has(q.mediaId+":"+mainBudget),
+  mediaError:imageIsLocal&&tvImageErrors.has(q.mediaId+":"+mainBudget)
  };
 }
 function sharedMedia(root,slide){
@@ -1109,18 +1122,20 @@ function renderSharedSlide(root,slide,options={}){
   '<div class="lyric-blanks-missing">Za prikaz crtica prvo upiši odgovor u uređivaču.</div>';
  // Every question has a fixed font size for its screen, regardless of character count.
  // The CSS also keeps ABC options at that same size.
- const imageChoices=slide.sectionCode==="abc"&&Array.isArray(slide.optionImages)&&slide.optionImages.length===3;
+ const imageChoices=slide.sectionCode==="abc"&&Array.isArray(slide.optionImages)&&slide.optionImages.length===3&&
+  (slide.optionImages.some(Boolean)||slide.optionMediaIds?.some(Boolean));
  const choices=(slide.choices||[]).map((t,i)=>{
   const isCorrect=!!slide.revealed&&!!slide.correct&&
    (String(t).startsWith(slide.correct+")")||String(t)===slide.correct);
   if(imageChoices){
    const letter=["A","B","C"][i]||"";
-   const img=safeUrl(slide.optionImages[i]||"");
+   const raw=String(slide.optionImages[i]||"");
+   const img=/^data:image\/jpeg;base64,[a-zA-Z0-9+/=]{1,44000}$/.test(raw)?raw:safeUrl(raw);
    const name=String(t).replace(/^[ABC]\)\s*/,"");
    return '<div class="screen-choice image-choice'+(isCorrect?" correct":"")+'">'+
     '<strong class="image-choice-letter">'+letter+'</strong>'+
-    (img?'<img src="'+esc(img)+'" alt="Slika ponuđenog zviježđa '+letter+'" loading="eager">':'<span>Slika nije dostupna</span>')+
-    (slide.revealed?'<span class="image-choice-revealed">'+esc(name)+'</span>':"")+'</div>';
+    (img?'<img src="'+esc(img)+'" alt="Slika ponuđenog odgovora '+letter+'" loading="eager">':'<span class="image-choice-placeholder">Slika '+letter+' još nije učitana</span>')+
+    (!slide.abcHideNames||slide.revealed?'<span class="image-choice-caption'+(slide.revealed?" image-choice-revealed":"")+'">'+esc(name)+'</span>':"")+'</div>';
   }
   return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
  }).join("");
