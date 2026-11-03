@@ -1518,6 +1518,160 @@ function endPairing(){
  pairing=null;
  if($("pairPanel"))$("pairPanel").hidden=true;
 }
+// TV audio is decoded only on the audience device, never on the presentation slide.
+// The playback element stays outside stageCanvas so a slide re-render cannot stop it.
+const audienceSong={
+ key:"",client:"",media:null,objectUrl:"",source:"",pieces:[],next:0,total:null,
+ type:"audio/mpeg",timer:null,retries:0,pending:null,loaded:false,blocked:false
+};
+let audienceDeferredControl=null;
+function reportAudienceAudio(message){
+ if(!audienceSong.key)return;
+ window.KTGSync?.reportSongStatus?.({key:audienceSong.key,message});
+}
+function resetAudienceSong(){
+ if(audienceSong.timer){clearTimeout(audienceSong.timer);audienceSong.timer=null;}
+ if(audienceSong.media){
+  audienceSong.media.pause();
+  audienceSong.media.removeAttribute("src");
+  audienceSong.media.load();
+  audienceSong.media.remove();
+ }
+ if(audienceSong.objectUrl)URL.revokeObjectURL(audienceSong.objectUrl);
+ Object.assign(audienceSong,{
+  key:"",media:null,objectUrl:"",source:"",pieces:[],next:0,total:null,
+  type:"audio/mpeg",timer:null,retries:0,pending:null,loaded:false,blocked:false
+ });
+ const unlock=$("tvSoundUnlock");if(unlock)unlock.hidden=true;
+}
+function requestAudienceSongPiece(){
+ if(audienceSong.source!=="local"||!audienceSong.key||!audienceSong.client||audienceSong.loaded)return;
+ const {key,client,next}=audienceSong;
+ if(audienceSong.timer)clearTimeout(audienceSong.timer);
+ KTGSync.requestSongChunk({key,client,index:next}).catch(()=>{});
+ audienceSong.timer=setTimeout(()=>{
+  if(key!==audienceSong.key||next!==audienceSong.next)return;
+  audienceSong.retries++;
+  if(audienceSong.retries>9){
+   audienceSong.timer=null;
+   reportAudienceAudio("Prijenos pjesme prekinut. Osvježi TV prikaz za ponovni pokušaj.");
+   return;
+  }
+  requestAudienceSongPiece();
+ },2800);
+}
+function makeAudienceAudio(src,kind,key){
+ if(key!==audienceSong.key)return;
+ const audio=document.createElement(kind?.startsWith("video/")?"video":"audio");
+ audio.preload="auto";audio.controls=false;audio.hidden=true;
+ audio.setAttribute("aria-hidden","true");
+ audio.addEventListener("error",()=>{
+  if(audienceSong.media===audio)reportAudienceAudio("TV ne može otvoriti glazbenu datoteku.");
+ });
+ audio.addEventListener("ended",()=>{
+  if(audienceSong.media===audio)reportAudienceAudio("Isječak je završio na TV-u.");
+ });
+ audio.src=src;
+ $("stageApp").append(audio);
+ audienceSong.media=audio;
+ audienceSong.loaded=true;
+ audio.load();
+ reportAudienceAudio("TV je primio pjesmu. Spremno za reprodukciju.");
+ if(audienceSong.pending){
+  const pending=audienceSong.pending;audienceSong.pending=null;
+  applyAudienceSongControl(pending);
+ }
+}
+function receiveAudienceSongChunk(chunk){
+ if(!chunk||chunk.key!==audienceSong.key||chunk.client!==audienceSong.client||
+   audienceSong.source!=="local"||chunk.index!==audienceSong.next)return;
+ if(audienceSong.timer){clearTimeout(audienceSong.timer);audienceSong.timer=null;}
+ if(chunk.error){
+  reportAudienceAudio("Pjesma nije dostupna: "+String(chunk.error).slice(0,150));
+  return;
+ }
+ if(!Number.isInteger(chunk.total)||chunk.total<1||chunk.total>1311||
+    typeof chunk.data!=="string"||chunk.data.length>68000||
+    !/^[A-Za-z0-9+/]*={0,2}$/.test(chunk.data)){
+  reportAudienceAudio("Primljena je neispravna glazbena datoteka.");return;
+ }
+ if(audienceSong.total!==null&&audienceSong.total!==chunk.total)return;
+ audienceSong.total=chunk.total;
+ audienceSong.type=/^(audio|video)\/[\w.+-]+$/.test(chunk.type||"")?chunk.type:"audio/mpeg";
+ let raw;
+ try{raw=atob(chunk.data);}catch{return;}
+ const bytes=new Uint8Array(raw.length);
+ for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
+ audienceSong.pieces.push(bytes);
+ audienceSong.next++;
+ audienceSong.retries=0;
+ if(audienceSong.next<audienceSong.total){
+  if(audienceSong.next%15===0)
+   reportAudienceAudio("TV preuzima pjesmu: "+Math.round(audienceSong.next*100/audienceSong.total)+" %.");
+  requestAudienceSongPiece();
+  return;
+ }
+ const key=audienceSong.key;
+ const blob=new Blob(audienceSong.pieces,{type:audienceSong.type});
+ audienceSong.pieces=[];
+ audienceSong.objectUrl=URL.createObjectURL(blob);
+ makeAudienceAudio(audienceSong.objectUrl,audienceSong.type,key);
+}
+async function playAudienceSong(){
+ const audio=audienceSong.media;
+ if(!audio)return;
+ try{
+  await audio.play();
+  if(audio!==audienceSong.media){audio.pause();return;}
+  audienceSong.blocked=false;
+  $("tvSoundUnlock").hidden=true;
+  reportAudienceAudio("Pjesma se reproducira na TV-u.");
+ }catch(error){
+  if(audio!==audienceSong.media)return;
+  audienceSong.blocked=true;
+  const unlock=$("tvSoundUnlock");
+  if(unlock)unlock.hidden=false;
+  reportAudienceAudio(error?.name==="NotAllowedError"?
+   "TV traži jedan klik na Uključi zvuk (zaštita preglednika).":
+   "TV nije uspio pokrenuti pjesmu: "+String(error?.message||"nepoznata pogreška").slice(0,100));
+ }
+}
+function applyAudienceSongControl(control){
+ if(!control?.key)return;
+ if(control.key!==audienceSong.key){audienceDeferredControl=control;return;}
+ const audio=audienceSong.media;
+ if(!audio){
+  audienceSong.pending=control;return;
+ }
+ const action=control.action;
+ if(!["play","pause","restart","stop"].includes(action))return;
+ if(action==="pause"){audio.pause();return;}
+ if(action==="stop"){audio.pause();audio.currentTime=0;return;}
+ if(action==="restart"){audio.pause();audio.currentTime=0;}
+ else if(Number.isFinite(control.position)&&control.position>=0&&audio.readyState>=1){
+  // A late-joining TV catches up when playback has already started.
+  audio.currentTime=control.position;
+ }
+ playAudienceSong();
+}
+function setAudienceSongSlide(slide){
+ const wanted=slide?.slideType==="question"&&slide.musicAudio?String(slide.musicKey||""):"";
+ if(!wanted){if(audienceSong.key)resetAudienceSong();return;}
+ if(wanted===audienceSong.key)return;
+ resetAudienceSong();
+ audienceSong.key=wanted;
+ audienceSong.client=KTGSync.genRoom()+KTGSync.genRoom();
+ audienceSong.source=slide.musicSource;
+ const deferred=audienceDeferredControl;
+ if(deferred?.key===wanted){audienceDeferredControl=null;audienceSong.pending=deferred;}
+ if(slide.musicSource==="local"){
+  reportAudienceAudio("TV preuzima pjesmu s voditeljskog uređaja…");
+  requestAudienceSongPiece();
+ }else if(slide.musicSource==="remote"&&safeUrl(slide.musicUrl)){
+  makeAudienceAudio(safeUrl(slide.musicUrl),"audio/mpeg",wanted);
+ }else reportAudienceAudio("Za ovu pjesmu potrebna je učitana audio datoteka ili izravna poveznica.");
+}
+
 function connectAudience(room){
  $("editorApp").hidden=true;$("stageApp").hidden=false;
  $("stageCanvas").textContent="Povezujem ekran za publiku…";
@@ -1526,13 +1680,19 @@ function connectAudience(room){
   room,
   onState:slide=>{
    const signature=JSON.stringify(slide);
-   if(signature!==lastSlide){renderSharedSlide($("stageCanvas"),slide);lastSlide=signature;}
+   if(signature!==lastSlide){
+    renderSharedSlide($("stageCanvas"),slide);lastSlide=signature;
+    setAudienceSongSlide(slide);
+   }
   },
+  onSongChunk:chunk=>receiveAudienceSongChunk(chunk),
+  onSongControl:command=>applyAudienceSongControl(command),
   onStatus:status=>{
    if(status==="Povezano"&&!lastSlide)$("stageCanvas").textContent="Ekran je povezan. Čekam voditelja kviza…";
-   else if(status!=="Povezano"){$("stageCanvas").textContent=status;lastSlide="";}
+   else if(status!=="Povezano"){$("stageCanvas").textContent=status;lastSlide="";resetAudienceSong();}
   }
  });
+ $("tvSoundUnlock").addEventListener("click",()=>playAudienceSong());
 }
 function connectRemoteController(room,secret){
  $("homeScreen").hidden=true;$("hostScreen").hidden=true;
