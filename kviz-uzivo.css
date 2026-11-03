@@ -1258,3 +1258,25 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
  .song-player-buttons{gap:6px}
  .song-player-buttons button{min-height:43px;flex:1 1 calc(50% - 6px);font-size:14px;padding:8px 7px}
 }
+
+/* TV plays music without player controls. Browsers that block autoplay require
+   one deliberate tap to unlock audio; the button then disappears. */
+.tv-sound-unlock{
+ position:fixed;
+ z-index:500;
+ inset:auto 18px 20px auto;
+ width:auto;max-width:calc(100vw - 36px);
+ padding:14px 23px;
+ min-height:52px;
+ color:#071c29;
+ border:2px solid #a0dcf4;
+ border-radius:14px;
+ background:#8befc7;
+ box-shadow:0 8px 28px #0009;
+ font-weight:900;
+ font-size:clamp(16px,2vw,22px);
+ cursor:pointer;
+}
+.tv-sound-unlock[hidden]{display:none!important}
+.tv-sound-unlock:focus-visible{outline:3px solid white;outline-offset:3px}
+@media(max-width:650px){.tv-sound-unlock{left:18px;right:18px;bottom:18px;text-align:center}}
