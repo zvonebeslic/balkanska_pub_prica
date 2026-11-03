@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-01240-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Arhitektura",
+    "focus": "Sagrada Família arhitekt Gaudí",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koji je katalonski arhitekt najpoznatiji po radu na bazilici Sagrada Família u Barceloni?",
+    "answers": [
+      "Antoni Gaudí",
+      "Gaudí",
+      "Antoni Gaudi",
+      "Gaudi"
+    ],
+    "explanation": "Gaudí je od 1883. vodio projekt bazilike i posvetio mu posljednje godine života.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01241-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Kemija",
+    "focus": "Bronca legura bakra i kositra",
+    "difficulty": 1,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koji se metal tradicionalno dodaje bakru da bi nastala bronca?",
+    "answers": [
+      "Kositar",
+      "Kalaj"
+    ],
+    "explanation": "Bronca je tradicionalno legura bakra i kositra.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bronze"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01242-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine engleski kralj Ivan bez Zemlje prihvatio Magnu Cartu u Runnymedeu?",
+    "answers": [
+      "1215"
+    ],
+    "explanation": "Magna Carta zapečaćena je 1215. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01243-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Sport",
+    "focus": "Badminton pernati projektil",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem se reketnom sportu umjesto loptice koristi pernati projektil nazvan shuttlecock?",
+    "answers": [
+      "Badminton"
+    ],
+    "explanation": "Badminton se igra pernatim ili sintetičkim projektilom preko mreže.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Badminton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01244-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Jezik",
+    "focus": "Boustrophedon smjer pisanja",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva drevni način pisanja u kojem redovi naizmjence idu slijeva nadesno pa zdesna nalijevo?",
+    "answers": [
+      "Bustrofedon",
+      "Boustrophedon"
+    ],
+    "explanation": "Naziv dolazi od grčkog izraza za kretanje vola pri oranju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Boustrophedon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01245-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Geologija",
+    "focus": "Mohsova tvrdoća dijamant 10",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji mineral ima vrijednost 10 na Mohsovoj ljestvici tvrdoće?",
+    "answers": [
+      "Dijamant"
+    ],
+    "explanation": "Dijamant je referentni mineral najviše tvrdoće na Mohsovoj ljestvici.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mohs_scale"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01246-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Umjetnost",
+    "focus": "Veliki val kod Kanagawe autor Hokusai",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je japanski umjetnik izradio drvorez Veliki val kod Kanagawe?",
+    "answers": [
+      "Hokusai",
+      "Katsushika Hokusai"
+    ],
+    "explanation": "Hokusaijev drvorez dio je ciklusa Trideset šest pogleda na planinu Fuji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01247-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Medicina",
+    "focus": "Stetoskop Laennec",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je francuski liječnik 1816. izumio stetoskop?",
+    "answers": [
+      "René Laennec",
+      "Laennec",
+      "Rene Laennec"
+    ],
+    "explanation": "Laennec je razvio prvi stetoskop kako bi slušao zvukove prsnog koša.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ren%C3%A9_Laennec"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01248-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "More i ocean",
+    "focus": "Sargaško more bez kopnenih obala",
+    "difficulty": 3,
+    "styleId": 49,
+    "styleDescription": "Opiši morsku struju i traži ocean ili područje",
+    "question": "Koje more u sjevernom Atlantiku nema kopnene obale, nego mu granice određuju oceanske struje?",
+    "answers": [
+      "Sargaško more",
+      "Sargasso Sea"
+    ],
+    "explanation": "Sargaško more omeđeno je sustavom atlantskih struja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sargasso_Sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01249-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Mitologija",
+    "focus": "Nordijski bog Tyr i Fenrir",
+    "difficulty": 4,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Koji je nordijski bog izgubio ruku kada su bogovi okovali vuka Fenrira?",
+    "answers": [
+      "Tyr",
+      "Týr",
+      "Tir"
+    ],
+    "explanation": "Týr je stavio ruku u Fenrirova usta kao jamstvo i izgubio je pri vezivanju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/T%C3%BDr"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
