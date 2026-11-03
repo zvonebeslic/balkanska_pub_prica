@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-01041-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Kemija",
+    "focus": "Polonij ime",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je radioaktivni element Marie Curie nazvala prema svojoj domovini Poljskoj?",
+    "answers": [
+      "Polonij",
+      "Polonium"
+    ],
+    "explanation": "Ime polonij potječe od latinskog naziva za Poljsku.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01042-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Povijest medicine",
+    "focus": "Radij izolacija",
+    "difficulty": 4,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine Marie Curie predstavila doktorski rad u kojem je opisala izolaciju radijeva klorida?",
+    "answers": [
+      "1903"
+    ],
+    "explanation": "Doktorsku disertaciju predstavila je 25. lipnja 1903.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01043-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Znanstvenici",
+    "focus": "Becquerel Nobel",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Tko je 1903. dijelio Nobelovu nagradu za fiziku s bračnim parom Curie, zahvaljujući otkriću spontane radioaktivnosti?",
+    "answers": [
+      "Henri Becquerel",
+      "Antoine Henri Becquerel",
+      "Becquerel"
+    ],
+    "explanation": "Becquerel je dobio polovicu Nobelove nagrade 1903.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01044-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Fizika",
+    "focus": "Nobel Curie 1903 kategorija",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Marie Curie svoju je prvu Nobelovu nagradu dobila za fiziku ili kemiju?",
+    "answers": [
+      "Fiziku",
+      "Fizika"
+    ],
+    "explanation": "Prva Nobelova nagrada Marie Curie bila je za fiziku 1903.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01045-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Kemija",
+    "focus": "Nobel Curie 1911 kategorija",
+    "difficulty": 2,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Za koju je znanost Marie Curie 1911. dobila svoju drugu Nobelovu nagradu?",
+    "answers": [
+      "Kemija",
+      "Kemiju"
+    ],
+    "explanation": "Drugu Nobelovu nagradu dobila je za kemiju 1911.",
+    "sources": [
+      "https://www.nobelprize.org/womenwhochangedscience/stories/marie-curie."
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01046-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Povijest obrazovanja",
+    "focus": "Curie Sorbonne",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem je pariškom sveučilištu Marie Curie razvijala znanstvenu karijeru i gdje je Pierre dobio profesorsko mjesto?",
+    "answers": [
+      "Sorbonne",
+      "Sorbona"
+    ],
+    "explanation": "Pierre je 1904. dobio katedru na Sorbonnei.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01047-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Matematika u kemiji",
+    "focus": "Radij 1903 masa",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Približno koliko je grama gotovo čistog radijeva klorida Marie Curie uspjela izolirati nakon tisuća kristalizacija: 0,1, 10 ili 100?",
+    "answers": [
+      "0,1",
+      "0.1",
+      "Jedna desetina grama"
+    ],
+    "explanation": "Iz više tona sirovine izolirala je oko jednog decigrama.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01048-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Biografije",
+    "focus": "Curie rođenje Varšava",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem je gradu rođena buduća dvostruka nobelovka Marie Skłodowska-Curie?",
+    "answers": [
+      "Varšava",
+      "Warszawa",
+      "Warsaw"
+    ],
+    "explanation": "Marie Skłodowska rođena je 1867. u Varšavi.",
+    "sources": [
+      "https://www.nobelprize.org/womenwhochangedscience/stories/marie-curie."
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01049-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Curie doktorski odbor Moissan",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je francuski kemičar, kasniji nobelovac iz 1906., bio u povjerenstvu za doktorat Marie Curie 1903.?",
+    "answers": [
+      "Henri Moissan",
+      "Moissan"
+    ],
+    "explanation": "Moissan je bio član komisije koja je ocjenjivala Curieinu disertaciju.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01050-20261103",
+    "createdAt": "2026-11-03T12:43:37+01:00",
+    "updatedAt": "2026-11-03T12:43:37+01:00",
+    "topic": "Kemijski elementi",
+    "focus": "Radij kemijski simbol",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji je kemijski simbol radija, elementa koji su istraživali Marie i Pierre Curie?",
+    "answers": [
+      "Ra"
+    ],
+    "explanation": "Kemijski simbol radija je Ra.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
