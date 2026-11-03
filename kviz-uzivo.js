@@ -87,7 +87,7 @@ const DBNAME="kviztogo-live-editor-v1";
 const SAMPLE_PARTS=["kviz-uzivo-primjer-1.json","kviz-uzivo-primjer-2.json","kviz-uzivo-primjer-3.json"];
 const VOL_TWO_PARTS=["kviz-uzivo-vol2-1.json","kviz-uzivo-vol2-2.json","kviz-uzivo-vol2-3.json"];
 const VOL_TWO_SOURCE="KvizToGo-Vol-2-2026-11";
-const VOL_ONE_CLEANUP_KEY="ktg-keep-only-vol1-2026-11-01";
+const LIBRARY_CLEANUP_KEY="ktg-library-two-only-2026-11-03";
 let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard=false,autoShowAnswers=false,publishTargetRound=0;
 let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
@@ -196,13 +196,13 @@ async function ensureVolTwoQuiz(){
 async function installExampleQuiz(){
  endPairing();
  if(!stageMode&&project)await persist();
- const quiz=await makeExampleQuiz();
- await persist(quiz);
+ let quiz=(await storeAll("quizzes")).find(isVolOneQuiz);
+ if(!quiz){quiz=await makeExampleQuiz();await persist(quiz);}
  project=quiz;position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;
  localStorage.setItem("kviztogo_live_id",project.id);
  ensureChannel();await refreshSelect();renderAll();
  $("scoresBtn").textContent="🏆 Prikaži ljestvicu";
- toast("Kviz Općeg Znanja Vol. 1 učitan je sa svim pitanjima i odgovorima. Možeš uređivati svoju kopiju.");
+ toast("Otvoren je postojeći Kviz Općeg Znanja Vol. 1, bez stvaranja kopije.");
 }
 function openDB(){return new Promise((resolve,reject)=>{
  const req=indexedDB.open(DBNAME,2);
@@ -237,24 +237,77 @@ async function normalizeVolOneTitles(){
  }
  return renamed;
 }
-async function keepOnlyVolOne(all,wantedId){
- if(localStorage.getItem(VOL_ONE_CLEANUP_KEY)==="complete")return {all,selected:null,deleted:0};
- const candidates=all.filter(isVolOneQuiz);
- if(!candidates.length)return {all,selected:null,deleted:0,notFound:all.length>0};
- // Preserve the currently selected Vol. 1 if present, otherwise the most recently edited one.
- const selected=candidates.find(q=>q.id===wantedId)||
-  [...candidates].sort((a,b)=>(Number(b.updatedAt)||0)-(Number(a.updatedAt)||0))[0];
- // A previously saved Vol. 2 is also allowed; never delete it during the old
- // Vol. 1-only migration when a device first opens the updated studio.
- const kept=all.filter(q=>q.id===selected.id||isVolTwoQuiz(q));
- const extra=all.filter(q=>!kept.some(keep=>keep.id===q.id));
- for(const old of extra)await storeDelete("quizzes",old.id);
- localStorage.setItem(VOL_ONE_CLEANUP_KEY,"complete");
- return {all:kept,selected,deleted:extra.length};
+// A quiz is a library entry only if it is one of the two installed volumes,
+// or was explicitly added via "Spremi novi kviz" / import after cleanup.
+function quizHasSavedImages(quiz){
+ let count=0;
+ for(const round of quiz?.rounds||[])for(const section of round.sections||[])for(const item of section.items||[]){
+  if(item.mediaId||item.mediaUrl)count++;
+  count+=(item.optionMediaIds||[]).filter(Boolean).length;
+  count+=(item.optionImages||[]).filter(Boolean).length;
+ }
+ return count;
+}
+function chooseVolume(candidates,wantedId){
+ // Prefer the existing selected copy if it contains media, otherwise prefer
+ // the richest copy, to avoid deleting a volume containing manually added pictures.
+ return [...candidates].sort((a,b)=>
+  (quizHasSavedImages(b)-quizHasSavedImages(a))||
+  (Number(b.id===wantedId)-Number(a.id===wantedId))||
+  ((Number(b.updatedAt)||0)-(Number(a.updatedAt)||0)))[0]||null;
+}
+async function cleanQuizLibrary(all,wantedId){
+ const firstCleanup=localStorage.getItem(LIBRARY_CLEANUP_KEY)!=="complete";
+ const vol1=chooseVolume(all.filter(isVolOneQuiz),wantedId);
+ const vol2=chooseVolume(all.filter(q=>!isVolOneQuiz(q)&&isVolTwoQuiz(q)),wantedId);
+ const keeps=[vol1,vol2].filter(Boolean);
+ if(!firstCleanup){
+  // Future quizzes are kept ONLY when the user explicitly saved/imported them.
+  for(const quiz of all){
+   if(quiz.libraryAdded===true&&!keeps.some(q=>q.id===quiz.id)&&!isVolOneQuiz(quiz)&&!isVolTwoQuiz(quiz))
+    keeps.push(quiz);
+  }
+ }
+ const keepIds=new Set(keeps.map(q=>q.id));
+ const extras=all.filter(q=>!keepIds.has(q.id));
+ for(const quiz of extras)await storeDelete("quizzes",quiz.id);
+ // This versioned reset runs once; all later launches continue to prune
+ // stray auto-created entries while retaining newly saved/imported quizzes.
+ localStorage.setItem(LIBRARY_CLEANUP_KEY,"complete");
+ return {all:keeps,selected:keeps.find(q=>q.id===wantedId)||vol1||vol2||null,deleted:extras.length};
 }
 function toast(text,bad=false){const el=$("toast");el.textContent=text;el.style.background=bad?"#723242":"#24425e";el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,4200);}
-function scheduleSave(){if(stageMode||!project)return;$("saveStatus").textContent="Spremam promjene…";clearTimeout(saveTimer);saveTimer=setTimeout(()=>persist().catch(e=>toast("Greška spremanja: "+e.message,true)),450);}
-async function persist(p=project){if(!p)return;p.updatedAt=Date.now();await storePut("quizzes",p);if(!stageMode)$("saveStatus").textContent="✓ Spremljeno na ovom uređaju";}
+function scheduleSave(){
+ if(stageMode||!project)return;
+ if(project.unsavedDraft){$("saveStatus").textContent="Novi kviz još nije spremljen.";return;}
+ $("saveStatus").textContent="Spremam promjene…";
+ clearTimeout(saveTimer);
+ saveTimer=setTimeout(()=>persist().catch(e=>toast("Greška spremanja: "+e.message,true)),450);
+}
+async function persist(p=project){
+ if(!p||p.unsavedDraft)return false;
+ p.updatedAt=Date.now();
+ await storePut("quizzes",p);
+ if(!stageMode)$("saveStatus").textContent="✓ Spremljeno na ovom uređaju";
+ return true;
+}
+async function saveDraftAsNewQuiz(){
+ if(!project?.unsavedDraft)return;
+ const title=String(project.title||"").trim();
+ if(!title||title==="Kviz Općeg Znanja"){
+  toast("Prvo upiši naziv novog kviza.",true);
+  $("quizTitle").focus();
+  return;
+ }
+ project.title=title;
+ project.libraryAdded=true;
+ delete project.unsavedDraft;
+ await persist();
+ localStorage.setItem("kviztogo_live_id",project.id);
+ await refreshSelect();
+ renderAll();
+ toast("Novi kviz je dodan u Moje kvizove.");
+}
 function playedDate(time){
  const timestamp=Number(time);
  if(!Number.isFinite(timestamp)||timestamp<=0)return "Datum nije poznat";
@@ -436,7 +489,7 @@ function labelItem(r,s,i){
 async function refreshSelect(){
  const all=(await storeAll("quizzes")).sort((a,b)=>b.updatedAt-a.updatedAt);
  const sel=$("quizSelect");sel.replaceChildren(...all.map(q=>new Option(q.title||"Bez naziva",q.id)));
- if(project)sel.value=project.id;
+ sel.value=all.some(q=>q.id===project?.id)?project.id:(all[0]?.id||"");
 }
 function renderNav(){
  const root=$("nav");root.innerHTML=ROUNDS.map((r,ri)=>{
@@ -679,6 +732,7 @@ function renderScores(){
 function renderAll(draftScoresOnly=false){
  if(!project)return;
  if(!stageMode){
+  $("saveNewQuizBtn").hidden=!project.unsavedDraft;
   $("quizTitle").value=project.title||"";
   renderNav();renderEditor();renderScores();renderScreen($("previewPane"),"preview");
   updateStudio();
@@ -856,6 +910,7 @@ async function importQuiz(file){
  try{
   const payload=JSON.parse(await file.text());const q=payload.quiz||payload;validateImported(q);
   const copy=structuredClone(q);copy.id=uid();copy.title=(q.title||"Uvezeni kviz")+" (uvoz)";copy.updatedAt=Date.now();
+  copy.libraryAdded=true;delete copy.unsavedDraft;
   copy.teams=Array.isArray(copy.teams)?copy.teams:[];for(const t of copy.teams){t.id=uid();t.scores=t.scores||{};}
   const imported=payload.assets||{},remap={};
   for(const [old,a] of Object.entries(imported)){
@@ -1302,13 +1357,22 @@ function bindEditor(){
  });
  $("newBtn").addEventListener("click",async()=>{
   endPairing();clearTimeout(saveTimer);await persist();
-  project=createQuiz();await persist();localStorage.setItem("kviztogo_live_id",project.id);
-  position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;ensureChannel();await refreshSelect();renderAll();showView("edit");toast("Novi prazni kviz je spreman.");
+  project=createQuiz();project.unsavedDraft=true;
+  position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;
+  ensureChannel();renderAll();showView("edit");
+  toast("Novi kviz je nacrt. Dodaje se u Moje kvizove tek nakon gumba Spremi novi kviz.");
  });
+ $("saveNewQuizBtn").addEventListener("click",()=>saveDraftAsNewQuiz().catch(e=>toast("Spremanje nije uspjelo: "+e.message,true)));
  $("deleteBtn").addEventListener("click",async()=>{
-  if(!project||!confirm("Trajno obrisati kviz „"+project.title+"” na ovom uređaju?"))return;
+  if(!project||project.unsavedDraft)return;
+  if(isVolOneQuiz(project)||isVolTwoQuiz(project)){
+   toast("Vol. 1 i Vol. 2 ostaju u Moji kvizovi i ne mogu se obrisati.",true);return;
+  }
+  if(!confirm("Trajno obrisati kviz „"+project.title+"” na ovom uređaju?"))return;
   endPairing();clearTimeout(saveTimer);const id=project.id;await storeDelete("quizzes",id);const all=await storeAll("quizzes");
-  project=all[0]||createQuiz();if(!all.length)await persist();localStorage.setItem("kviztogo_live_id",project.id);
+  project=all.find(isVolOneQuiz)||all.find(isVolTwoQuiz)||all[0]||null;
+  if(!project){toast("Nema spremljenih kvizova.",true);return;}
+  localStorage.setItem("kviztogo_live_id",project.id);
   position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;ensureChannel();await refreshSelect();renderAll();toast("Kviz je obrisan.");
  });
  $("importBtn").addEventListener("click",()=>$("importFile").click());
@@ -1396,7 +1460,7 @@ function bindEditor(){
   else if(e.key==="ArrowLeft"){e.preventDefault();changePosition(-1);}
   else if(e.code==="Space"){e.preventDefault();changeReveal();}
  });
- window.addEventListener("beforeunload",()=>{if(saveTimer&&project)storePut("quizzes",project).catch(()=>{});});
+ window.addEventListener("beforeunload",()=>{if(saveTimer&&project&&!project.unsavedDraft)storePut("quizzes",project).catch(()=>{});});
 }
 async function init(){
  try{
@@ -1407,44 +1471,46 @@ async function init(){
   if(remote){connectRemoteController(remote,params.get("auth")||"");return;}
   db=await openDB();
   let all=await storeAll("quizzes");
-  let wanted=new URLSearchParams(location.search).get("id")||localStorage.getItem("kviztogo_live_id");
+  const wanted=params.get("id")||localStorage.getItem("kviztogo_live_id");
   let cleanup={deleted:0};
   if(!stageMode){
-   cleanup=await keepOnlyVolOne(all,wanted);
+   cleanup=await cleanQuizLibrary(all,wanted);
    all=cleanup.all;
-  }
-  if(!stageMode){
+   // Install only the two canonical volumes if either is genuinely missing.
+   if(!all.some(isVolOneQuiz)){
+    try{const vol1=await makeExampleQuiz();await persist(vol1);}
+    catch(error){console.warn("Vol. 1 nije učitan:",error);}
+   }
    try{
     await ensureVolTwoQuiz();
-    await clearAutoVolTwoImages(); // Also fix Vol. 2 copies saved before this update.
-    all=await storeAll("quizzes");
+    await clearAutoVolTwoImages();
    }catch(error){console.warn("Vol. 2 nije učitan:",error);}
-  }
-  if(!stageMode){
-   // Normalize existing saved Vol. 1 on every open, even if its old cleanup already ran.
-   // The title change is idempotent and never creates or overwrites the quiz's contents.
    await normalizeVolOneTitles();
    all=await storeAll("quizzes");
   }
-  project=all.find(x=>x.id===(cleanup.selected?.id||wanted))||all[0]||null;
+  project=all.find(x=>x.id===(cleanup.selected?.id||wanted))||
+    all.find(isVolOneQuiz)||all.find(isVolTwoQuiz)||all[0]||null;
   if(stageMode){
    $("editorApp").hidden=true;$("stageApp").hidden=false;
-   // Publika vidi samo pitanje, odgovor kada je otkriven i logo.
    if(!project){$("stageCanvas").textContent="Nema spremljenog kviza na ovom uređaju.";return;}
    ensureChannel();renderStage();
   }else{
    if(!project){
-    try{project=await makeExampleQuiz();await persist();}
-    catch(e){project=createQuiz();await persist();toast("Primjer još nije dostupan: "+e.message,true);}
+    $("saveStatus").textContent="Nije moguće učitati Vol. 1 ili Vol. 2.";
+    toast("Vol. 1 i Vol. 2 nisu dostupni. Osvježi stranicu.",true);
+    return;
    }
    localStorage.setItem("kviztogo_live_id",project.id);
    bindEditor();ensureChannel();await refreshSelect();renderAll();showView("home");
    $("saveStatus").textContent=cleanup.deleted?
-    "✓ Vol. 1 sačuvan, uklonjeno ostalih kvizova: "+cleanup.deleted:
-    "✓ Spremljeno na ovom uređaju";
-   if(cleanup.notFound)toast("Vol. 1 nije pouzdano prepoznat. Radi sigurnosti drugi kvizovi nisu obrisani.",true);
+    "✓ Ostavljeni Vol. 1 i Vol. 2. Uklonjeno suvišnih kvizova: "+cleanup.deleted:
+    "✓ U Moji kvizovi spremaju se samo izričito dodani kvizovi.";
   }
- }catch(e){toast("Ne mogu otvoriti lokalnu bazu: "+e.message,true);if(stageMode)$("stageCanvas").textContent="Greška: "+e.message;else $("saveStatus").textContent="Spremanje nije dostupno"; }
+ }catch(e){
+  toast("Ne mogu otvoriti lokalnu bazu: "+e.message,true);
+  if(stageMode)$("stageCanvas").textContent="Greška: "+e.message;
+  else $("saveStatus").textContent="Spremanje nije dostupno";
+ }
 }
 
 /**
