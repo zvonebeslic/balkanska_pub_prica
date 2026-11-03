@@ -93,6 +93,8 @@ let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode
 const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const songPlayer={key:"",media:null,objectUrl:"",loading:false,message:"",sourceType:"",tvStatus:"",tvReady:false};
+const pictureSizeDrafts=new Map();
+let hostImageSelection="main";
 let songControlSequence=0;
 const SONG_CHUNK_BYTES=48000,SONG_MAX_BYTES=60*1024*1024;
 const songTransferCache={key:"",blob:null,type:""};
@@ -583,16 +585,60 @@ function pictureScale(value){
  return value===undefined||value===null||value===""||!Number.isFinite(n)?100:
   Math.max(10,Math.min(300,Math.round(n)));
 }
+// Image size adjustments are LIVE previews only until explicitly saved.
+// No draft is ever put into the quiz object, IndexedDB, export, or quiz preload.
+function pictureDraftKey(r,s,i,scope,index=-1){
+ return String(project?.id||"")+"/"+r+"/"+s+"/"+i+"/"+scope+"/"+index;
+}
+function savedPictureScale(q,scope,index=-1){
+ return pictureScale(scope==="option"?q?.optionMediaScales?.[index]:q?.mediaScale);
+}
+function previewPictureScale(q,r,s,i,scope,index=-1){
+ const key=pictureDraftKey(r,s,i,scope,index);
+ return pictureSizeDrafts.has(key)?pictureSizeDrafts.get(key):savedPictureScale(q,scope,index);
+}
+function pictureHasUnsavedSize(q,r,s,i,scope,index=-1){
+ return previewPictureScale(q,r,s,i,scope,index)!==savedPictureScale(q,scope,index);
+}
+function discardPictureSizeDrafts(){
+ pictureSizeDrafts.clear();
+ hostImageSelection="main";
+}
+function pictureTargetsFor(slide){
+ if(!project||slide?.kind!=="question")return [];
+ const q=itemAt(slide.r,slide.s,slide.i);
+ if(!q)return [];
+ const targets=[];
+ const picture=!!q.mediaId&&(!q.mediaType||String(q.mediaType).startsWith("image/"))||
+  (!!q.mediaUrl&&!!safeUrl(q.mediaUrl)&&!youtubeEmbed(q.mediaUrl)&&
+   !/\.(?:mp3|ogg|wav|m4a|mp4|webm|mov|m3u8)(?:[?#]|$)/i.test(q.mediaUrl));
+ if(picture)targets.push({value:"main",scope:"main",index:-1,label:"Slika pitanja"});
+ if(ROUNDS[slide.r]?.sections?.[slide.s]?.code==="abc"){
+  for(let i=0;i<3;i++){
+   if(q.optionMediaIds?.[i]||q.optionImages?.[i])
+    targets.push({value:"option:"+i,scope:"option",index:i,label:"Slika "+["A","B","C"][i]});
+  }
+ }
+ return targets;
+}
+function selectedPictureTarget(slide=currentSlide()){
+ const choices=pictureTargetsFor(slide);
+ return choices.find(x=>x.value===hostImageSelection)||choices[0]||null;
+}
 function pictureScaleEditor(scope,value,index=-1){
  const label=scope==="option"?"Slika "+["A","B","C"][index]:"Slika pitanja";
  const key='data-picture-scope="'+scope+'"'+(index>=0?' data-picture-index="'+index+'"':"");
- const size=pictureScale(value);
+ const q=itemAt(position.r,position.s,position.i);
+ const size=previewPictureScale(q,position.r,position.s,position.i,scope,index);
+ const dirty=pictureHasUnsavedSize(q,position.r,position.s,position.i,scope,index);
  return '<div class="media-scale-controls" role="group" aria-label="Veličina: '+label+'" '+key+'>'+
   '<span class="media-scale-title">Veličina slike</span>'+
   '<button type="button" data-picture-change="-1" aria-label="Smanji '+label+' za 1 %">−</button>'+
   '<output class="media-scale-value" aria-live="polite">'+size+'%</output>'+
   '<button type="button" data-picture-change="1" aria-label="Povećaj '+label+' za 1 %">+</button>'+
   '<button type="button" class="media-scale-reset" data-picture-reset="1" aria-label="Vrati '+label+' na 100 %">100%</button>'+
+  '<button type="button" class="media-scale-save" data-picture-save="1"'+(dirty?"":" disabled")+' aria-label="Trajno spremi veličinu slike">✓ Spremi veličinu</button>'+
+  '<span class="media-scale-hint">'+(dirty?"Privremeno, nije spremljeno":"Spremljeno")+'</span>'+
   '</div>';
 }
 function applyPictureScale(img,value){
@@ -600,30 +646,101 @@ function applyPictureScale(img,value){
  img.style.transform="scale("+(pictureScale(value)/100)+")";
  img.style.transformOrigin="center center";
 }
-function updatePictureScale(event){
- const button=event.target.closest("button[data-picture-change],button[data-picture-reset]");
+function changePictureDraft(q,r,s,i,scope,index,newSize){
+ const key=pictureDraftKey(r,s,i,scope,index);
+ const original=savedPictureScale(q,scope,index);
+ const next=pictureScale(newSize);
+ if(next===original)pictureSizeDrafts.delete(key);
+ else pictureSizeDrafts.set(key,next);
+}
+async function commitPictureSize(q,r,s,i,scope,index){
+ const key=pictureDraftKey(r,s,i,scope,index);
+ if(!pictureSizeDrafts.has(key))return;
+ const value=pictureSizeDrafts.get(key),old=savedPictureScale(q,scope,index);
+ if(scope==="option"){
+  q.optionMediaScales=Array.from({length:3},(_,n)=>savedPictureScale(q,"option",n));
+  q.optionMediaScales[index]=value;
+ }else q.mediaScale=value;
+ // Saving is explicit. If storage fails, restore the original size and draft.
+ try{
+  const result=await persist();
+  if(result===false)throw Error("Najprije spremi novi kviz.");
+  pictureSizeDrafts.delete(key);
+  toast("Veličina slike spremljena: "+value+"%.");
+ }catch(error){
+  if(scope==="option")q.optionMediaScales[index]=old;
+  else q.mediaScale=old;
+  pictureSizeDrafts.set(key,value);
+  toast("Veličina nije spremljena: "+error.message,true);
+ }
+}
+async function updatePictureScale(event){
+ const button=event.target.closest("button[data-picture-change],button[data-picture-reset],button[data-picture-save]");
  if(!button)return;
  const controls=button.closest(".media-scale-controls");
  if(!controls)return;
  const q=itemAt(position.r,position.s,position.i);
  if(!q)return;
- const option=controls.dataset.pictureScope==="option";
- const index=Number(controls.dataset.pictureIndex);
- if(option&&(!Number.isInteger(index)||index<0||index>2))return;
- const original=option?pictureScale(q.optionMediaScales?.[index]):pictureScale(q.mediaScale);
- const delta=Number(button.dataset.pictureChange||0);
- const changed=button.dataset.pictureReset!==undefined?100:pictureScale(original+delta);
- if(changed===original)return;
- if(option){
-  q.optionMediaScales=Array.from({length:3},(_,i)=>pictureScale(q.optionMediaScales?.[i]));
-  q.optionMediaScales[index]=changed;
- }else q.mediaScale=changed;
- const output=controls.querySelector(".media-scale-value");
- if(output)output.textContent=changed+"%";
- scheduleSave();
+ const scope=controls.dataset.pictureScope==="option"?"option":"main";
+ const index=scope==="option"?Number(controls.dataset.pictureIndex):-1;
+ if(scope==="option"&&(!Number.isInteger(index)||index<0||index>2))return;
+ if(button.hasAttribute("data-picture-save")){
+  await commitPictureSize(q,position.r,position.s,position.i,scope,index);
+ }else{
+  const current=previewPictureScale(q,position.r,position.s,position.i,scope,index);
+  const next=button.hasAttribute("data-picture-reset")?100:current+Number(button.dataset.pictureChange||0);
+  changePictureDraft(q,position.r,position.s,position.i,scope,index,next);
+ }
+ renderEditor();
+ renderScreen($("previewPane"),"preview");
+ updateStudio();
+ pushStage();
+}
+function refreshHostPictureSizeControls(){
+ const panel=$("imageSizeControls");
+ if(!panel)return;
+ const slide=currentSlide(),target=!showBoard?selectedPictureTarget(slide):null;
+ panel.hidden=!target;
+ if(!target)return;
+ const opts=pictureTargetsFor(slide);
+ const select=$("imageSizeTarget"),q=itemAt(slide.r,slide.s,slide.i);
+ const desired=opts.map(x=>x.value).join("|");
+ if(select.dataset.options!==desired){
+  select.replaceChildren(...opts.map(x=>new Option(x.label,x.value)));
+  select.dataset.options=desired;
+ }
+ select.value=target.value;
+ select.hidden=opts.length<=1;
+ const value=previewPictureScale(q,slide.r,slide.s,slide.i,target.scope,target.index);
+ const saved=savedPictureScale(q,target.scope,target.index);
+ $("imageSizeValue").textContent=value+"%";
+ $("imageSmaller").disabled=value<=10;
+ $("imageLarger").disabled=value>=300;
+ $("imageSizeReset").disabled=value===100;
+ $("imageSizeSave").disabled=value===saved;
+ $("imageSizeState").textContent=value===saved?"Spremljeno":"Privremeno, klikni Spremi";
+}
+function adjustHostPictureSize(action){
+ const slide=currentSlide(),target=selectedPictureTarget(slide);
+ if(!target||showBoard)return;
+ const q=itemAt(slide.r,slide.s,slide.i);
+ const current=previewPictureScale(q,slide.r,slide.s,slide.i,target.scope,target.index);
+ const next=action==="reset"?100:current+(action==="up"?1:-1);
+ changePictureDraft(q,slide.r,slide.s,slide.i,target.scope,target.index,next);
+ refreshHostPictureSizeControls();
  renderScreen($("previewPane"),"preview");
  pushStage();
 }
+async function saveHostPictureSize(){
+ const slide=currentSlide(),target=selectedPictureTarget(slide);
+ if(!target||showBoard)return;
+ const q=itemAt(slide.r,slide.s,slide.i);
+ await commitPictureSize(q,slide.r,slide.s,slide.i,target.scope,target.index);
+ renderScreen($("previewPane"),"preview");
+ refreshHostPictureSizeControls();
+ pushStage();
+}
+
 function renderEditor(){
  const r=position.r,s=position.s,i=position.i,c=ROUNDS[r].sections[s],q=itemAt(r,s,i);
  if(!q)return;
@@ -797,7 +914,7 @@ function tvImageFor(mediaId,maxChars=TV_IMAGE_MAX_CHARS){
  return "";
 }
 function releaseMedia(kind){if(activeUrls[kind]){URL.revokeObjectURL(activeUrls[kind]);delete activeUrls[kind];}}
-async function attachMedia(host,q,kind){
+async function attachMedia(host,q,kind,displaySize){
  const seq=(mediaSeq[kind]||0)+1;mediaSeq[kind]=seq;releaseMedia(kind);
  if(!host)return;host.replaceChildren();
  let url="",type="";
@@ -815,7 +932,7 @@ async function attachMedia(host,q,kind){
  const el=document.createElement(type.startsWith("audio/")?"audio":type.startsWith("video/")?"video":"img");
  el.src=url;el.setAttribute("aria-label","Medijski prilog pitanja");
  if(el.tagName==="AUDIO"||el.tagName==="VIDEO"){el.controls=true;el.preload="metadata";}
- else{el.alt="Ilustracija uz pitanje";applyPictureScale(el,q.mediaScale);}
+ else{el.alt="Ilustracija uz pitanje";applyPictureScale(el,displaySize??q.mediaScale);}
  host.append(el);
 }
 // Music playback belongs exclusively to the presenter. The audience sees no
@@ -1160,10 +1277,13 @@ function updateStudio(){
  $("questionLarger").disabled=!canSize||size>=1.5;
  $("questionSizeReset").disabled=!canSize||size===1;
  $("questionSizeValue").textContent=Math.round(size*100)+" %";
+ refreshHostPictureSizeControls();
  updateSongPlayer();
 }
 function showView(view){
  if(stageMode)return;
+ const discarded=currentView!==view&&pictureSizeDrafts.size>0;
+ if(currentView!==view)discardPictureSizeDrafts();
  if(view!=="host"&&songPlayer.media){
   songPlayer.media.pause();
   if(pairing&&window.KTGSync?.isHost())KTGSync.broadcastSongControl({
@@ -1180,12 +1300,14 @@ function showView(view){
  else if(view==="home")updateStudio();
  if(view==="manage")refreshSelect().catch(e=>toast(e.message,true));
  if(view==="history")renderHistory().catch(e=>toast("Ne mogu učitati povijest: "+e.message,true));
+ if(discarded&&view!=="host"&&view!=="edit")pushStage();
  window.scrollTo(0,0);
 }
 function setSlideIndex(next){
  if(next<0||next>=SLIDES.length){
   toast(next<0?"Ovo je prvi slajd.":"Stigao si do kraja kviza.");return;
  }
+ if(next!==slideIndex)discardPictureSizeDrafts();
  slideIndex=next;
  const slide=currentSlide();
  if(Number.isInteger(slide.r))publishTargetRound=slide.r;
@@ -1390,8 +1512,9 @@ function sharedSlide(atIndex=slideIndex,preload=false){
   lyricWordLengths:section.code==="stihovi"?lyricWordLengths(q.answer):[],
   question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
   questionScale:questionScale(q.questionScale),
-  mediaScale:pictureScale(q.mediaScale),
-  optionMediaScales:section.code==="abc"?Array.from({length:3},(_,i)=>pictureScale(q.optionMediaScales?.[i])):[],
+  mediaScale:preload?pictureScale(q.mediaScale):previewPictureScale(q,slide.r,slide.s,slide.i,"main"),
+  optionMediaScales:section.code==="abc"?Array.from({length:3},(_,i)=>
+   preload?pictureScale(q.optionMediaScales?.[i]):previewPictureScale(q,slide.r,slide.s,slide.i,"option",i)):[],
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
   optionImages,
@@ -1617,6 +1740,8 @@ function renderSharedSlide(root,slide,options={}){
   return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
  }).join("");
  const singleImage=hasSingleQuestionImage(slide);
+ const imageZoomClass=singleImage&&pictureScale(slide.mediaScale)>=175?" zoom-image-xl":
+  singleImage&&pictureScale(slide.mediaScale)>=125?" zoom-image-large":"";
  const answerMarkup=
   (slide.revealed&&slide.sectionCode!=="stihovi"&&slide.sectionCode!=="abc"?'<div class="screen-answer">'+esc(slide.answer||"Odgovor još nije upisan.")+'</div>':"")+
   (slide.revealed&&slide.sectionCode==="vjerovali"&&slide.truthExplanation?
@@ -1628,7 +1753,7 @@ function renderSharedSlide(root,slide,options={}){
  root.innerHTML=inner("slide--question",
   '<div class="screen-head"><span>'+esc(slide.roundName||"")+'</span><strong>'+esc(slide.sectionTitle||"")+'</strong>'+
    (questionProgress?'<div class="rubric-question-progress">'+esc(questionProgress)+'</div>':"")+'</div>'+
-  '<div class="screen-body'+(singleImage?' has-single-image':'')+'" style="--question-scale:'+fontScale+'">'+
+  '<div class="screen-body'+(singleImage?' has-single-image'+imageZoomClass:'')+'" style="--question-scale:'+fontScale+'">'+
   (singleImage?'<div class="question-copy">':"")+
   '<div class="screen-title question-fixed">'+esc(question)+'</div>'+
   lyricBlanks+
@@ -1639,7 +1764,7 @@ function renderSharedSlide(root,slide,options={}){
   '</div>');
  if(options.localMedia){
   const current=currentSlide(),q=current.kind==="question"?itemAt(current.r,current.s,current.i):null;
-  if(q&&!slide.musicAudio)attachMedia(root.querySelector(".screen-media"),q,options.mediaKind).catch(()=>{});
+  if(q&&!slide.musicAudio)attachMedia(root.querySelector(".screen-media"),q,options.mediaKind,slide.mediaScale).catch(()=>{});
   else{
    // Invalidate a previous asynchronous media load; song sound is controlled below the host screen.
    releaseMedia(options.mediaKind);
@@ -2278,6 +2403,7 @@ function bindEditor(){
  });
  $("joinRoom").addEventListener("keydown",e=>{if(e.key==="Enter")$("joinAudience").click();});
  $("quizSelect").addEventListener("change",async e=>{
+  discardPictureSizeDrafts();
   endPairing();clearTimeout(saveTimer);await persist();const q=await storeGet("quizzes",e.target.value);if(!q)return;
   project=q;localStorage.setItem("kviztogo_live_id",q.id);position={r:0,s:0,i:0};slideIndex=0;revealed=false;showBoard=false;ensureChannel();renderAll();
  });
@@ -2344,6 +2470,17 @@ function bindEditor(){
  $("questionSmaller").addEventListener("click",()=>changeQuestionSize("smaller"));
  $("questionLarger").addEventListener("click",()=>changeQuestionSize("larger"));
  $("questionSizeReset").addEventListener("click",()=>changeQuestionSize("reset"));
+ $("imageSmaller").addEventListener("click",()=>adjustHostPictureSize("down"));
+ $("imageLarger").addEventListener("click",()=>adjustHostPictureSize("up"));
+ $("imageSizeReset").addEventListener("click",()=>adjustHostPictureSize("reset"));
+ $("imageSizeSave").addEventListener("click",()=>saveHostPictureSize());
+ $("imageSizeTarget").addEventListener("change",e=>{
+  discardPictureSizeDrafts();
+  hostImageSelection=e.target.value;
+  refreshHostPictureSizeControls();
+  renderScreen($("previewPane"),"preview");
+  pushStage();
+ });
  $("songPlay").addEventListener("click",()=>controlSongPlayer("play"));
  $("songPause").addEventListener("click",()=>controlSongPlayer("pause"));
  $("songRestart").addEventListener("click",()=>controlSongPlayer("restart"));
