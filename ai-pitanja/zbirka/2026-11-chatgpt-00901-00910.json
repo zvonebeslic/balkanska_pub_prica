@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-00901-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Tehnologija",
+    "focus": "prvi UPC sken žvakaće gume 1974",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koji je proizvod 1974. u supermarketu u američkom Ohiju postao prvi artikl očitan UPC laserskim skenerom?",
+    "answers": [
+      "Žvakaća guma",
+      "Žvakaće gume",
+      "Paketić žvakaćih guma"
+    ],
+    "explanation": "Prvi skenirani proizvod bio je paketić Wrigley's žvakaćih guma.",
+    "sources": [
+      "https://www.si.edu/object/supermarket-scanner%3Anmah_892778"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00902-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Geologija",
+    "focus": "plutajuća vulkanska stijena plovućac",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja je vulkanska stijena toliko prožeta mjehurićima plina da njezini komadi mogu plutati na vodi?",
+    "answers": [
+      "Plovućac",
+      "Plavac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac nastaje hlađenjem pjenaste magme, a zatvorene šupljine smanjuju gustoću.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00903-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "ultramarin od lapis lazulija",
+    "difficulty": 3,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Slikari su nekoć skupo plaćali intenzivnu plavu boju dobivenu usitnjavanjem lapis lazulija. Kako se zove taj pigment?",
+    "answers": [
+      "Ultramarin",
+      "Ultramarinska plava"
+    ],
+    "explanation": "Prirodni ultramarin dobivao se iz lapis lazulija, dok je sintetska inačica razvijena u 19. stoljeću.",
+    "sources": [
+      "https://www.metmuseum.org/ko/perspectives/juan-gris-two-collages-cup-glasses-and-bottle-and-flowers"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00904-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranov neobičan nagib osi",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Jedan planet Sunčeva sustava kotrlja se oko Sunca gotovo na boku, s osi vrtnje nagnutom oko 98 stupnjeva. Koji?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranova os vrtnje nagnuta je oko 97,77 stupnjeva, što uzrokuje ekstremna godišnja doba.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00905-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Fizika",
+    "focus": "plava LED Nobel 2014",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Crvene i zelene diode već su postojale, ali za učinkovitu bijelu LED rasvjetu nedostajala je treća boja. Za koju je boju dioda dodijeljen Nobel za fiziku 2014.?",
+    "answers": [
+      "Plava",
+      "Plavu",
+      "Plave diode",
+      "Plava LED"
+    ],
+    "explanation": "Akasaki, Amano i Nakamura nagrađeni su za učinkovite plave svjetleće diode.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/physics/2014/press-release/-/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00906-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Biologija",
+    "focus": "mehanizam popravka DNA Nobel 2015",
+    "difficulty": 4,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "UV-zrake mogu oštetiti nasljedni materijal, ali stanice imaju molekularnu 'radionicu' koja ispravlja štetu. Koja je molekula u središtu istraživanja nagrađenih Nobelom za kemiju 2015.?",
+    "answers": [
+      "DNA",
+      "DNK",
+      "Deoksiribonukleinska kiselina"
+    ],
+    "explanation": "Lindahl, Modrich i Sancar otkrili su mehanizme kojima stanice popravljaju oštećenja DNA.",
+    "sources": [
+      "https://www.nature.com/collections/wqswtxswtg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00907-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Povijest tehnologije",
+    "focus": "UPC skener mjesto Troy Ohio",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Godina je 1974., trgovina Marsh uvodi lasersko očitavanje cijena, a prvi skenirani artikl su žvakaće gume. U kojoj se američkoj saveznoj državi nalazi grad Troy gdje se to dogodilo?",
+    "answers": [
+      "Ohio",
+      "Ohajo"
+    ],
+    "explanation": "Prvi UPC sken u supermarketu zabilježen je u Troyu, savezna država Ohio.",
+    "sources": [
+      "https://americanhistory.si.edu/ja/collections/object/nmah_892778"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00908-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Zanati",
+    "focus": "lapis lazuli rudnici Afganistan",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Plavi kamen lapis lazuli davao je dragocjeni slikarski pigment, a njegovo povijesno glavno nalazište bilo je u dolini rijeke Kokche. U kojoj današnjoj državi?",
+    "answers": [
+      "Afganistan",
+      "Afghanistan"
+    ],
+    "explanation": "Metropolitan Museum navodi dolinu Kokche u Afganistanu kao glavno povijesno područje vađenja lapis lazulija.",
+    "sources": [
+      "https://www.metmuseum.org/fr/exhibitions/cycladic-art/glossary"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00909-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Herschel prvotno Uran komet",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Kada je William Herschel 1781. otkrio nebesko tijelo koje danas zovemo Uran, za kakvu ga je vrstu objekta u početku smatrao?",
+    "answers": [
+      "Komet",
+      "Kometom"
+    ],
+    "explanation": "Herschel je Uran isprva smatrao kometom ili zvijezdom, prije nego što je prihvaćen kao planet.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00910-20261103",
+    "createdAt": "2026-11-03T09:35:33+01:00",
+    "updatedAt": "2026-11-03T09:35:33+01:00",
+    "topic": "Kemija",
+    "focus": "element galij nitrid plava LED",
+    "difficulty": 5,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "U izradi učinkovitih plavih LED dioda ključan je poluvodič galijev nitrid. Koji se kemijski element uz dušik nalazi u njegovu sastavu?",
+    "answers": [
+      "Galij",
+      "Gallium"
+    ],
+    "explanation": "Galijev nitrid ima kemijsku formulu GaN, a bio je ključan za razvoj plavih LED dioda.",
+    "sources": [
+      "https://www.aps.org/apsnews/2014/10/2014-nobel-prize-in-physics-for-blue-leds"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
