@@ -1733,38 +1733,116 @@ function resetAudienceSong(){
  });
  const unlock=$("tvSoundUnlock");if(unlock)unlock.hidden=true;
 }
-function sendAudienceSongRequest(index,retry=0){
- const song=audienceSong;
+// Dedicated background transfer. The active song player is separate so a
+// presenter can change slides without cancelling the quiz's preloading.
+const tvAudioPreload={queue:[],active:null,cache:new Map(),bytes:0,maxBytes:120*1024*1024,total:0,finished:0};
+function clearQuizAudioPreload(){
+ if(tvAudioPreload.active){
+  for(const x of tvAudioPreload.active.inflight.values())clearTimeout(x.timer);
+  tvAudioPreload.active.inflight.clear();
+ }
+ tvAudioPreload.active=null;
+ tvAudioPreload.queue=[];
+ tvAudioPreload.total=0;tvAudioPreload.finished=0;
+}
+function cachePreloadedAudio(key,blob,type){
+ if(!blob||blob.size>tvAudioPreload.maxBytes)return;
+ if(tvAudioPreload.cache.has(key))return;
+ while(tvAudioPreload.bytes+blob.size>tvAudioPreload.maxBytes&&tvAudioPreload.cache.size){
+  const [k,entry]=tvAudioPreload.cache.entries().next().value;
+  if(entry.url)URL.revokeObjectURL(entry.url);
+  tvAudioPreload.cache.delete(k);tvAudioPreload.bytes-=entry.blob.size;
+ }
+ tvAudioPreload.cache.set(key,{blob,type,url:""});
+ tvAudioPreload.bytes+=blob.size;
+}
+function tvCachedMediaUrl(key){
+ const item=tvAudioPreload.cache.get(key);
+ if(!item)return "";
+ if(!item.url)item.url=URL.createObjectURL(item.blob);
+ return item.url;
+}
+function advanceQuizAudioPreload(){
+ if(tvAudioPreload.active)return;
+ while(tvAudioPreload.queue.length){
+  const entry=tvAudioPreload.queue.shift();
+  if(!entry?.key)continue;
+  if(tvAudioPreload.cache.has(entry.key)){tvAudioPreload.finished++;continue;}
+  tvAudioPreload.active={
+   key:entry.key,client:randomPreloadClient(),source:"local",
+   chunks:[],next:0,received:0,total:null,
+   inflight:new Map(),type:entry.type||"audio/mpeg",
+   failed:false,lastProgress:0,loaded:false
+  };
+  requestAudienceSongPiece(tvAudioPreload.active);
+  break;
+ }
+ reportQuizPreloadProgress(true);
+}
+function startQuizAudioPreload(items){
+ clearQuizAudioPreload();
+ const list=(items||[]).filter(x=>x?.key&&x.source==="local");
+ tvAudioPreload.total=list.length;
+ tvAudioPreload.queue=list.filter(x=>!tvAudioPreload.cache.has(x.key));
+ tvAudioPreload.finished=list.length-tvAudioPreload.queue.length;
+ // Online media is hinted to the browser cache, but remains hosted at its URL.
+ for(const entry of (items||[]).filter(x=>x?.source==="remote"&&safeUrl(x.url))){
+  try{
+   const link=document.createElement("link");
+   link.rel="preload";link.as="audio";link.href=safeUrl(entry.url);
+   document.head.append(link);
+  }catch{}
+ }
+ advanceQuizAudioPreload();
+}
+function finishQuizAudioPreload(song,blob){
+ if(tvAudioPreload.active!==song)return;
+ tvAudioPreload.active=null;
+ tvAudioPreload.finished++;
+ if(blob){
+  cachePreloadedAudio(song.key,blob,song.type);
+  if(audienceSong.key===song.key&&!audienceSong.media){
+   const src=tvCachedMediaUrl(song.key);
+   if(src)makeAudienceAudio(src,song.type,song.key);
+  }
+ }else if(audienceSong.key===song.key&&!audienceSong.media){
+  reportAudienceAudio("TV nije mogao unaprijed učitati pjesmu. Otvori pitanje ponovno.");
+ }
+ advanceQuizAudioPreload();
+}
+
+function sendAudienceSongRequest(index,retry=0,song=audienceSong){
  if(song.source!=="local"||!song.key||song.loaded||song.failed||
     song.chunks[index]||song.inflight.has(index))return;
  const {key,client}=song;
  const timer=setTimeout(()=>{
-  const active=audienceSong.inflight.get(index);
-  if(audienceSong.key!==key||!active||active.timer!==timer)return;
-  audienceSong.inflight.delete(index);
+  const active=song.inflight.get(index);
+  if(song.key!==key||(!Object.is(song,audienceSong)&&tvAudioPreload.active!==song)||
+     !active||active.timer!==timer)return;
+  song.inflight.delete(index);
   if(retry>=SONG_RETRY_LIMIT){
-   audienceSong.failed=true;
-   for(const a of audienceSong.inflight.values())clearTimeout(a.timer);
-   audienceSong.inflight.clear();
-   reportAudienceAudio("TV nije primio cijelu pjesmu. Provjeri vezu i ponovno otvori glazbeno pitanje.");
+   song.failed=true;
+   for(const a of song.inflight.values())clearTimeout(a.timer);
+   song.inflight.clear();
+   if(song===audienceSong)reportAudienceAudio("TV nije primio cijelu pjesmu. Provjeri vezu.");
+   else finishQuizAudioPreload(song,null);
    return;
   }
-  sendAudienceSongRequest(index,retry+1);
+  sendAudienceSongRequest(index,retry+1,song);
  },SONG_REQUEST_TIMEOUT_MS);
  song.inflight.set(index,{timer,retry});
  KTGSync.requestSongChunk({key,client,index}).catch(()=>{});
 }
-function requestAudienceSongPiece(){
- const song=audienceSong;
+function requestAudienceSongPiece(song=audienceSong){
  if(song.source!=="local"||!song.key||song.loaded||song.failed)return;
  // Until we know the number of pieces, request only index 0.
  if(song.total===null){
-  if(!song.inflight.has(0)&&!song.chunks[0])sendAudienceSongRequest(0);
+  if(!song.inflight.has(0)&&!song.chunks[0])sendAudienceSongRequest(0,0,song);
   return;
  }
  while(song.inflight.size<SONG_PARALLEL_CHUNKS&&song.next<song.total){
   const index=song.next++;
-  if(!song.chunks[index])sendAudienceSongRequest(index);
+  if(!song.chunks[index])sendAudienceSongRequest(index,0,song);
  }
 }
 function makeAudienceAudio(src,kind,key){
@@ -1805,7 +1883,10 @@ function makeAudienceAudio(src,kind,key){
  }
 }
 function receiveAudienceSongChunk(chunk){
- const song=audienceSong;
+ const song=chunk?.key===audienceSong.key&&chunk?.client===audienceSong.client?
+  audienceSong:tvAudioPreload.active;
+ if(!song)return;
+ const background=song!==audienceSong;
  if(!chunk||chunk.key!==song.key||chunk.client!==song.client||
     song.source!=="local"||song.loaded||song.failed||
     !Number.isInteger(chunk.index)||chunk.index<0||chunk.index>1300||
@@ -1817,7 +1898,8 @@ function receiveAudienceSongChunk(chunk){
   song.failed=true;
   for(const x of song.inflight.values())clearTimeout(x.timer);
   song.inflight.clear();
-  reportAudienceAudio("Pjesma nije dostupna: "+String(chunk.error).slice(0,150));
+  if(background)finishQuizAudioPreload(song,null);
+  else reportAudienceAudio("Pjesma nije dostupna: "+String(chunk.error).slice(0,150));
   return;
  }
  if(!Number.isInteger(chunk.total)||chunk.total<1||chunk.total>1311||
@@ -1825,13 +1907,20 @@ function receiveAudienceSongChunk(chunk){
     typeof chunk.data!=="string"||chunk.data.length>68000||
     !/^[A-Za-z0-9+/]*={0,2}$/.test(chunk.data)){
   song.failed=true;
-  reportAudienceAudio("Primljena je neispravna glazbena datoteka.");return;
+  if(background)finishQuizAudioPreload(song,null);
+  else reportAudienceAudio("Primljena je neispravna glazbena datoteka.");
+  return;
  }
  if(song.total!==null&&song.total!==chunk.total)return;
  song.total=chunk.total;
  song.type=/^(audio|video)\/[\w.+-]+$/.test(chunk.type||"")?chunk.type:"audio/mpeg";
  let raw;
- try{raw=atob(chunk.data);}catch{song.failed=true;reportAudienceAudio("Neuspjelo dekodiranje glazbenog isječka.");return;}
+ try{raw=atob(chunk.data);}catch{
+  song.failed=true;
+  if(background)finishQuizAudioPreload(song,null);
+  else reportAudienceAudio("Neuspjelo dekodiranje glazbenog isječka.");
+  return;
+ }
  const bytes=new Uint8Array(raw.length);
  for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
  song.chunks[chunk.index]=bytes;
@@ -1840,20 +1929,26 @@ function receiveAudienceSongChunk(chunk){
   const percent=Math.floor(100*song.received/song.total);
   if(percent>=song.lastProgress+10||song.received===1){
    song.lastProgress=percent;
-   reportAudienceAudio("TV preuzima pjesmu: "+percent+" %.");
+   if(!background)reportAudienceAudio("TV preuzima pjesmu: "+percent+" %.");
   }
-  requestAudienceSongPiece();
+  requestAudienceSongPiece(song);
   return;
  }
  // Entire file arrived, regardless of network delivery order.
  for(let i=0;i<song.total;i++){
-  if(!song.chunks[i]){song.failed=true;reportAudienceAudio("Dio glazbenog isječka nedostaje.");return;}
+  if(!song.chunks[i]){
+   song.failed=true;
+   if(background)finishQuizAudioPreload(song,null);
+   else reportAudienceAudio("Dio glazbenog isječka nedostaje.");
+   return;
+  }
  }
  const key=song.key;
  const blob=new Blob(song.chunks,{type:song.type});
  song.chunks=[];
  for(const x of song.inflight.values())clearTimeout(x.timer);
  song.inflight.clear();
+ if(background){finishQuizAudioPreload(song,blob);return;}
  song.objectUrl=URL.createObjectURL(blob);
  makeAudienceAudio(song.objectUrl,song.type,key);
 }
@@ -1915,8 +2010,16 @@ function setAudienceSongSlide(slide){
  const deferred=audienceDeferredControl;
  if(deferred?.key===wanted){audienceDeferredControl=null;audienceSong.pending=deferred;}
  if(slide.musicSource==="local"){
-  reportAudienceAudio("TV preuzima pjesmu s voditeljskog uređaja…");
-  requestAudienceSongPiece();
+  const src=tvCachedMediaUrl(wanted);
+  if(src){
+   audienceSong.objectUrl=""; // Shared cache owns its object URL.
+   makeAudienceAudio(src,tvAudioPreload.cache.get(wanted).type,wanted);
+  }else if(tvAudioPreload.active?.key===wanted){
+   reportAudienceAudio("TV unaprijed preuzima ovu pjesmu…");
+  }else{
+   reportAudienceAudio("TV preuzima pjesmu s voditeljskog uređaja…");
+   requestAudienceSongPiece();
+  }
  }else if(slide.musicSource==="remote"&&safeUrl(slide.musicUrl)){
   makeAudienceAudio(safeUrl(slide.musicUrl),"audio/mpeg",wanted);
  }else reportAudienceAudio("Za ovu pjesmu potrebna je učitana audio datoteka ili izravna poveznica.");
