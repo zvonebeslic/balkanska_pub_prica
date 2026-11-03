@@ -37,6 +37,14 @@
    }
   }).on("broadcast",{event:"state"},event=>{
    if(role!=="host"&&event.payload&&event.payload.kind==="ktg-slide")callbacks.onState?.(event.payload);
+  }).on("broadcast",{event:"quiz-preload-manifest"},event=>{
+   if(role==="audience"&&event.payload?.generation)callbacks.onPreloadManifest?.(event.payload);
+  }).on("broadcast",{event:"quiz-preload-request"},event=>{
+   if(role==="host"&&event.payload?.generation)callbacks.onPreloadRequest?.(event.payload);
+  }).on("broadcast",{event:"quiz-preload-slide"},event=>{
+   if(role==="audience"&&event.payload?.generation)callbacks.onPreloadSlide?.(event.payload);
+  }).on("broadcast",{event:"quiz-preload-status"},event=>{
+   if(role==="host"&&event.payload?.generation)callbacks.onPreloadStatus?.(event.payload);
   }).on("broadcast",{event:"song-request"},event=>{
    if(role==="host"&&event.payload?.key&&event.payload?.client&&Number.isSafeInteger(event.payload?.index))
     callbacks.onSongRequest?.(event.payload);
@@ -62,16 +70,16 @@
   });
   status("Spajanje…");
  }
- function startHost({room,controlSecret,getState,onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello}){
+ function startHost({room,controlSecret,getState,onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello,onPreloadRequest,onPreloadStatus}){
   if(!validRoom(room))throw Error("Neispravan kod sobe.");
-  subscribe(room,"host",{onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello});
+  subscribe(room,"host",{onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello,onPreloadRequest,onPreloadStatus});
   secret=controlSecret;
   latest=getState?.()||null;
   if(connected&&latest)transmit("state",latest);
   broadcastTick=setInterval(()=>{if(role==="host"&&connected&&latest)transmit("state",latest);},14000);
  }
- function startAudience({room,onState,onStatus,onSongChunk,onSongControl}){
-  subscribe(room,"audience",{onState,onStatus,onSongChunk,onSongControl});
+ function startAudience({room,onState,onStatus,onSongChunk,onSongControl,onPreloadManifest,onPreloadSlide}){
+  subscribe(room,"audience",{onState,onStatus,onSongChunk,onSongControl,onPreloadManifest,onPreloadSlide});
  }
  function startController({room,controlSecret,onState,onStatus}){
   if(!/^[0-9a-f]{48}$/.test(controlSecret||""))throw Error("Privatna voditeljska poveznica nije valjana.");
@@ -98,7 +106,11 @@
   if(connected)transmit("song-control",payload);
  }
  function reportSongStatus(payload){if(role!=="audience")return;transmit("song-status",payload);}
+ function sendPreloadManifest(payload){if(role!=="host")return Promise.resolve(false);return transmit("quiz-preload-manifest",payload);}
+ function requestPreloadSlide(payload){if(role!=="audience")return Promise.resolve(false);return transmit("quiz-preload-request",payload);}
+ function sendPreloadSlide(payload){if(role!=="host")return Promise.resolve(false);return transmit("quiz-preload-slide",payload);}
+ function reportPreloadStatus(payload){if(role!=="audience")return Promise.resolve(false);return transmit("quiz-preload-status",payload);}
  function isHost(){return role==="host";}
  function room(){return activeRoom;}
- window.KTGSync={genRoom,genSecret,startHost,startAudience,startController,broadcastHost,sendCommand,stop,isHost,room,validRoom,requestSongChunk,sendSongChunk,broadcastSongControl,reportSongStatus};
+ window.KTGSync={genRoom,genSecret,startHost,startAudience,startController,broadcastHost,sendCommand,stop,isHost,room,validRoom,requestSongChunk,sendSongChunk,broadcastSongControl,reportSongStatus,sendPreloadManifest,requestPreloadSlide,sendPreloadSlide,reportPreloadStatus};
 })();
