@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00835-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Fizika",
+    "focus": "Einsteinova Nobelova nagrada za fotoelektrični učinak",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Za koje je otkriće, a ne za teoriju relativnosti, Albert Einstein dobio Nobelovu nagradu za fiziku za 1921.?",
+    "answers": [
+      "Fotoelektrični učinak",
+      "Fotoelektrični efekt"
+    ],
+    "explanation": "Nobelov odbor posebno je istaknuo zakon fotoelektričnog učinka.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/physics/1921/einstein/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00836-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Sport",
+    "focus": "Prvi olimpijski pobjednik modernog doba",
+    "difficulty": 4,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Amerikanac James Connolly prvi je 1896. osvojio olimpijsko zlato modernog doba. U kojoj atletskoj disciplini?",
+    "answers": [
+      "Troskok",
+      "Trostruki skok"
+    ],
+    "explanation": "Connolly je u Ateni 1896. pobijedio u troskoku.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-1896-the-revival-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00837-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Arhitektura",
+    "focus": "Generalife kao ladanjska rezidencija emira",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Uz Alhambru u Granadi nalaze se vrtovi nekadašnje ladanjske rezidencije nasridskih emira. Kako se zove ta rezidencija?",
+    "answers": [
+      "Generalife"
+    ],
+    "explanation": "Generalife je bio ladanjski kompleks emira, istočno od Alhambre.",
+    "sources": [
+      "https://whc.unesco.org/en/list/314/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00838-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Glazba",
+    "focus": "Skladatelj olimpijske himne",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Stihove prve olimpijske himne napisao je Kostis Palamas. Koji je grčki skladatelj uglazbio himnu izvedenu u Ateni 1896.?",
+    "answers": [
+      "Spyros Samaras",
+      "Spiros Samaras",
+      "Spyridon Samaras"
+    ],
+    "explanation": "Glazbu je skladao Spyros Samaras, a tekst Kostis Palamas.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-olympic-anthem-is-born"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00839-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Povijest",
+    "focus": "Godina osnutka Međunarodnog olimpijskog odbora",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Dvije godine prije prvih modernih Olimpijskih igara u Ateni, u Parizu je osnovan MOO. Koje je to bilo godine?",
+    "answers": [
+      "1894"
+    ],
+    "explanation": "Međunarodni olimpijski odbor osnovan je 1894.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/who-was-pierre-de-coubertin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00840-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Astronomija",
+    "focus": "Temperaturna razlika Merkura između dana i noći",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Danju se površina ovog planeta može zagrijati na 430 °C, a noću ohladiti na oko −180 °C. O kojem je planetu riječ?",
+    "answers": [
+      "Merkur",
+      "Mercury"
+    ],
+    "explanation": "Merkur nema gustu atmosferu koja bi zadržavala toplinu.",
+    "sources": [
+      "https://science.nasa.gov/mercury/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00841-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Zemljopis",
+    "focus": "Rijeka koja razdvaja brežuljke Alhambre i Albayzina",
+    "difficulty": 5,
+    "styleId": 48,
+    "styleDescription": "Poveži poznatu rijeku s manje poznatim pritokom",
+    "question": "UNESCO opisuje Alhambru i Albayzín na dvama brežuljcima Granade koje razdvaja koja rijeka?",
+    "answers": [
+      "Darro",
+      "Rijeka Darro"
+    ],
+    "explanation": "Rijeka Darro protječe između dviju povijesnih cjelina.",
+    "sources": [
+      "https://whc.unesco.org/en/list/314/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00842-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Književnost",
+    "focus": "Pjesnik koji je napisao tekst olimpijske himne",
+    "difficulty": 4,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Grčki pjesnik napisao je stihove olimpijske himne prvi put izvedene 1896., a glazbu je skladao Spyros Samaras. Kako se zvao pjesnik?",
+    "answers": [
+      "Kostis Palamas",
+      "Kostas Palamas"
+    ],
+    "explanation": "Autor stihova olimpijske himne bio je Kostis Palamas.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-olympic-anthem-is-born"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00843-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Tehnologija",
+    "focus": "NASA Magellan i radarsko kartiranje Venere",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Gusti oblaci skrivaju površinu Venere od običnih kamera. Kojom je metodom NASA-ina sonda Magellan kartirala njezinu površinu?",
+    "answers": [
+      "Radarom",
+      "Radar",
+      "Radarskim snimanjem"
+    ],
+    "explanation": "Magellan je radarom mapirao površinu ispod oblaka.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00844-20261103",
+    "createdAt": "2026-11-03T03:42:17+01:00",
+    "updatedAt": "2026-11-03T03:42:17+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Srce Pierre de Coubertina pokopano u Olimpiji",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Osnivač modernih Olimpijskih igara umro je u Ženevi, ali mu je srce prema vlastitoj želji položeno u grčkoj Olimpiji. Tko je bio taj čovjek?",
+    "answers": [
+      "Pierre de Coubertin",
+      "Pjer de Kuberten",
+      "Coubertin"
+    ],
+    "explanation": "Srce Pierrea de Coubertina počiva u spomeniku u Olimpiji.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/who-was-pierre-de-coubertin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
