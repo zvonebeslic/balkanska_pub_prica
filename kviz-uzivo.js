@@ -94,7 +94,7 @@ const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const songPlayer={key:"",media:null,objectUrl:"",loading:false,message:"",sourceType:"",tvStatus:"",tvReady:false};
 const pictureSizeDrafts=new Map();
-let hostImageSelection="main";
+let hostImageSelection="main",localStageImagePreview=null;
 let songControlSequence=0;
 const SONG_CHUNK_BYTES=48000,SONG_MAX_BYTES=60*1024*1024;
 const songTransferCache={key:"",blob:null,type:""};
@@ -524,6 +524,7 @@ function ensureChannel(){
   }
   if(stageMode){
    if(m.type==="state"&&m.quiz?.id===project.id){
+    localStageImagePreview=m.imagePreview||null;
     // An older state notification must not restore removed team standings.
     if(Number(m.quiz.scoreResetVersion||0)<Number(project.scoreResetVersion||0)){
      m.quiz.teams=[];m.quiz.publishedBoards={};m.quiz.playSession=null;
@@ -538,10 +539,18 @@ function ensureChannel(){
  if(stageMode)channel.postMessage({type:"hello"});
 }
 function pushStage(){
- if(channel&&!stageMode&&project)channel.postMessage({type:"state",quiz:project,position,slideIndex,revealed,showBoard});
- if(!stageMode&&project&&window.KTGSync?.isHost()){
+ if(stageMode||!project)return;
+ const liveSlide=sharedSlide();
+ if(channel)channel.postMessage({
+  type:"state",quiz:project,position,slideIndex,revealed,showBoard,
+  imagePreview:liveSlide?.slideType==="question"?{
+   index:liveSlide.index,mediaScale:liveSlide.mediaScale,
+   optionMediaScales:liveSlide.optionMediaScales
+  }:null
+ });
+ if(window.KTGSync?.isHost()){
   sendQuizPreloadManifest();
-  window.KTGSync.broadcastHost(sharedSlide());
+  window.KTGSync.broadcastHost(liveSlide);
  }
 }
 function roundMax(r){return ROUNDS[r].sections.reduce((sum,s,si)=>sum+Array.from({length:s.count},(_,i)=>pointsFor(r,si,i)).reduce((a,b)=>a+b,0),0);}
@@ -1244,7 +1253,16 @@ function renderAll(draftScoresOnly=false){
  // Unpublished score edits stay in the editor; never broadcast them to audience screens.
  if(!draftScoresOnly)pushStage();
 }
-function renderStage(){renderScreen($("stageCanvas"),"stage");}
+function renderStage(){
+ const live=sharedSlide();
+ if(stageMode&&localStageImagePreview&&live?.slideType==="question"&&
+    localStageImagePreview.index===live.index){
+  live.mediaScale=pictureScale(localStageImagePreview.mediaScale);
+  live.optionMediaScales=Array.isArray(localStageImagePreview.optionMediaScales)?
+   localStageImagePreview.optionMediaScales.map(pictureScale):live.optionMediaScales;
+ }
+ renderSharedSlide($("stageCanvas"),live,{localMedia:true,mediaKind:"stage"});
+}
 function updateStudio(){
  if(stageMode||!project)return;
  const slide=currentSlide();
