@@ -444,6 +444,35 @@ function publishBoard(r,mode){
   "Otkriveno "+state.revealedCount+" / "+state.rows.length+" ekipa, od posljednjeg mjesta.");
  archiveIfFinished(r).catch(error=>toast("Povijest nije spremljena: "+error.message,true));
 }
+// Reset the LIVE results, including scoreboard snapshots that were already published.
+// Quiz questions and media remain intact; older completed sessions in the archive remain.
+function clearGameScoreState(revision=Date.now()){
+ if(!project)return;
+ project.teams=[];
+ project.publishedBoards={};
+ project.playSession=null;
+ project.scoreResetVersion=revision;
+}
+async function resetCurrentGameScores(){
+ if(!project||stageMode||!confirm("Obrisati SVE ekipe, bodove i objavljene ljestvice ovog kviza na svim povezanim prikazima? Ova se radnja ne može poništiti."))return;
+ const current=project,previousSessionId=current.playSession?.id;
+ clearTimeout(saveTimer);
+ clearGameScoreState(Date.now());
+ $("teamName").value="";
+ // Clear both the host preview and live TV right away, even while the score
+ // slide is still selected. Score slides then show "Čekamo objavu rezultata".
+ renderAll();
+ if(channel)channel.postMessage({type:"score-reset",quizId:current.id,revision:current.scoreResetVersion});
+ try{
+  await persist(current);
+  // Delete only the current game's archived snapshot, if one exists. Older
+  // completed quiz nights are separate records and stay in history.
+  if(previousSessionId)await storeDelete("history",previousSessionId);
+  toast("Ekipe, bodovi i objavljene ljestvice obrisani su na svim prikazima.");
+ }catch(error){
+  toast("Reset je prikazan, ali spremanje nije uspjelo: "+error.message,true);
+ }
+}
 function updatePublishControls(){
  if(stageMode||!project)return;
  const selector=$("publishRound"),status=$("publishStatus"),all=$("publishAllBtn"),step=$("publishGradualBtn");
@@ -471,10 +500,31 @@ function ensureChannel(){
  if(channel){channel.close();channel=null;}
  channel=new BroadcastChannel("kviztogo-live-"+project.id);
  channel.onmessage=async event=>{
-   const m=event.data||{};
-   if(stageMode){
-     if(m.type==="state"&&m.quiz?.id===project.id){project=m.quiz;position=m.position||position;slideIndex=Number.isInteger(m.slideIndex)?Math.max(0,Math.min(m.slideIndex,SLIDES.length-1)):slideIndex;revealed=!!m.revealed;showBoard=!!m.showBoard;renderStage();}
-   }else if(m.type==="hello")pushStage();
+  const m=event.data||{};
+  if(m.type==="score-reset"&&m.quizId===project?.id&&
+     Number(m.revision)>Number(project.scoreResetVersion||0)){
+   clearGameScoreState(m.revision);
+   if(stageMode)renderStage();
+   else{
+    clearTimeout(saveTimer);
+    $("teamName").value="";
+    renderAll();
+    persist().catch(error=>toast("Reset nije spremljen: "+error.message,true));
+   }
+   return;
+  }
+  if(stageMode){
+   if(m.type==="state"&&m.quiz?.id===project.id){
+    // An older state notification must not restore removed team standings.
+    if(Number(m.quiz.scoreResetVersion||0)<Number(project.scoreResetVersion||0)){
+     m.quiz.teams=[];m.quiz.publishedBoards={};m.quiz.playSession=null;
+     m.quiz.scoreResetVersion=project.scoreResetVersion;
+    }
+    project=m.quiz;position=m.position||position;
+    slideIndex=Number.isInteger(m.slideIndex)?Math.max(0,Math.min(m.slideIndex,SLIDES.length-1)):slideIndex;
+    revealed=!!m.revealed;showBoard=!!m.showBoard;renderStage();
+   }
+  }else if(m.type==="hello")pushStage();
  };
  if(stageMode)channel.postMessage({type:"hello"});
 }
@@ -1982,7 +2032,7 @@ function bindEditor(){
   project.teams=project.teams.filter(x=>x.id!==t.id);
   scheduleSave();renderAll(true);
  });
- $("resetScores").addEventListener("click",()=>{if(!confirm("Poništiti sve bodove svih ekipa?"))return;project.teams.forEach(t=>{t.scores={};t.roundScores={};});scheduleSave();renderAll(true);});
+ $("resetScores").addEventListener("click",()=>resetCurrentGameScores());
  document.addEventListener("keydown",e=>{
   if(currentView!=="host"||e.target.closest("input,textarea,select,button"))return;
   if(e.key==="ArrowRight"){e.preventDefault();changePosition(1);}
