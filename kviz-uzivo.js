@@ -92,7 +92,10 @@ let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard
 let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
-const songPlayer={key:"",media:null,objectUrl:"",loading:false,message:"",sourceType:""};
+const songPlayer={key:"",media:null,objectUrl:"",loading:false,message:"",sourceType:"",tvStatus:""};
+let songControlSequence=0;
+const SONG_CHUNK_BYTES=48000,SONG_MAX_BYTES=60*1024*1024;
+const songTransferCache={key:"",blob:null,type:""};
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
 const itemAt=(r,s,i,p=project)=>p?.rounds?.[r]?.sections?.[s]?.items?.[i];
 function baseItem(){return {question:"",answer:"",answer2:"",options:["","",""],correct:"A",optionMediaIds:["","",""],optionMediaNames:["","",""],optionImages:[],abcHideNames:false,truth:"Točno",five:["","","","",""],min:"",max:"",note:"",mediaId:"",mediaName:"",mediaType:"",mediaUrl:"",mediaScale:100,optionMediaScales:[100,100,100]};}
@@ -771,6 +774,45 @@ function songSourceType(q){
  if(/\.(?:mp4|webm|mov)(?:[?#]|$)/i.test(url))return "video";
  return "audio";
 }
+function songKeyFor(slide,q){
+ return project.id+"/"+slide.r+"/"+slide.s+"/"+slide.i+"/"+(q?.mediaId||"")+"/"+(q?.mediaUrl||"")+"/"+songSourceType(q);
+}
+async function handleSongRequest(request){
+ const active=activeSongSlide();
+ if(!active||!pairing||!window.KTGSync?.isHost())return;
+ const {q,slide}=active,key=songKeyFor(slide,q);
+ if(key!==request.key||!q?.mediaId)return;
+ const index=request.index;
+ if(!Number.isSafeInteger(index)||index<0||index>1300||
+    !/^[A-HJ-NP-Z2-9]{8,24}$/.test(request.client||""))return;
+ try{
+  if(songTransferCache.key!==key){
+   const asset=await storeGet("assets",q.mediaId);
+   if(!asset?.blob||!/^(audio|video)\//.test(asset.type||asset.blob.type||""))
+    throw Error("Audio datoteka nije dostupna.");
+   if(asset.blob.size>SONG_MAX_BYTES)throw Error("Datoteka je prevelika za prijenos na TV (najviše 60 MB).");
+   songTransferCache.key=key;songTransferCache.blob=asset.blob;
+   songTransferCache.type=asset.type||asset.blob.type;
+  }
+  const blob=songTransferCache.blob;
+  const total=Math.max(1,Math.ceil(blob.size/SONG_CHUNK_BYTES));
+  if(index>=total)return;
+  const bytes=new Uint8Array(await blob.slice(index*SONG_CHUNK_BYTES,(index+1)*SONG_CHUNK_BYTES).arrayBuffer());
+  // A 48 KB slice becomes about 64 KB of Base64, under Realtime message limits.
+  const data=btoa(String.fromCharCode(...bytes));
+  if(!activeSongSlide()||songKeyFor(activeSongSlide().slide,activeSongSlide().q)!==key)return;
+  await KTGSync.sendSongChunk({key,client:request.client,index,total,
+   type:songTransferCache.type,data});
+ }catch(error){
+  await KTGSync.sendSongChunk({key,client:request.client,index,error:String(error.message||error).slice(0,180)});
+ }
+}
+function songTVStatus(payload){
+ const active=activeSongSlide();
+ if(!active||payload.key!==songKeyFor(active.slide,active.q))return;
+ songPlayer.tvStatus=String(payload.message||"").slice(0,200);
+ refreshSongButtons();
+}
 function activeSongSlide(){
  if(!project||stageMode||showBoard)return null;
  const slide=currentSlide();
@@ -791,8 +833,9 @@ function refreshSongButtons(){
  $("songStop").disabled=!ready;
  const duration=ready&&Number.isFinite(media.duration)?musicTime(media.duration):"–:––";
  $("songTime").textContent=musicTime(ready?media.currentTime:0)+" / "+duration;
- $("songPlayerStatus").textContent=songPlayer.loading?"Učitavam glazbeni isječak…":
-   songPlayer.message||(ready?(media.paused?"Spremno za reprodukciju.":"Pjesma se reproducira."):"Dodaj audio datoteku u uređivaču.");
+ $("songPlayerStatus").textContent=(songPlayer.tvStatus&&pairing?songPlayer.tvStatus+" · ":"")+
+   (songPlayer.loading?"Učitavam glazbeni isječak…":
+   songPlayer.message||(ready?(media.paused?"Spremno za reprodukciju.":"Pjesma se reproducira."):"Dodaj audio datoteku u uređivaču."));
 }
 function clearSongPlayer(){
  const media=songPlayer.media;
@@ -835,6 +878,7 @@ async function loadSongPlayer(key,q,kind){
   $("songPlayerPanel").append(player);
   songPlayer.media=player;
   songPlayer.loading=false;
+  player.muted=!!pairing&&!!window.KTGSync?.isHost();
   player.src=src;
   player.load();
   refreshSongButtons();
@@ -853,11 +897,13 @@ function updateSongPlayer(){
  if(!active){if(songPlayer.key)clearSongPlayer();return;}
  const {slide,q}=active;
  const type=songSourceType(q);
- const key=project.id+"/"+slide.r+"/"+slide.s+"/"+slide.i+"/"+(q?.mediaId||"")+"/"+(q?.mediaUrl||"")+"/"+type;
+ const key=songKeyFor(slide,q);
  if(key===songPlayer.key){refreshSongButtons();return;}
  clearSongPlayer();
  songPlayer.key=key;
  songPlayer.sourceType=type;
+ songPlayer.tvStatus="";
+ songTransferCache.key="";songTransferCache.blob=null;songTransferCache.type="";
  if(type==="none"){
   songPlayer.message="U uređivaču ovog pitanja dodaj audioisječak pjesme.";
  }else if(type==="youtube"){
@@ -872,6 +918,13 @@ async function controlSongPlayer(action){
  const media=songPlayer.media;
  if(!media||songPlayer.loading)return;
  try{
+  if(pairing&&window.KTGSync?.isHost()){
+   media.muted=true;
+   KTGSync.broadcastSongControl({
+    key:songPlayer.key,action,position:action==="restart"||action==="stop"?0:(Number(media.currentTime)||0),
+    sequence:++songControlSequence
+   });
+  }else media.muted=false;
   if(action==="play"){await media.play();}
   else if(action==="pause"){media.pause();}
   else if(action==="restart"){media.pause();media.currentTime=0;await media.play();}
@@ -1193,6 +1246,9 @@ function sharedSlide(){
   estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
   musicAudio:isSongRubric(section.code)&&songSourceType(q)!=="none",
+  musicKey:isSongRubric(section.code)?songKeyFor(slide,q):"",
+  musicSource:isSongRubric(section.code)?(q.mediaId?"local":songSourceType(q)==="youtube"?"youtube":songSourceType(q)==="none"?"none":"remote"):"none",
+  musicUrl:isSongRubric(section.code)&&!q.mediaId&&songSourceType(q)!=="youtube"?safeUrl(q.mediaUrl):"",
   mediaData:tvImage,
   mediaType:imageIsLocal?"image/jpeg":String(q.mediaType||""),
   mediaUrl:imageIsLocal?"":(q.mediaUrl?String(q.mediaUrl):""),
@@ -1442,6 +1498,8 @@ function startPairing(){
  KTGSync.startHost({
   room:info.room,controlSecret:info.secret,getState:sharedSlide,
   onStatus:s=>$("pairStatus").textContent=s,
+  onSongRequest:request=>handleSongRequest(request),
+  onSongStatus:status=>songTVStatus(status),
   onCommand:action=>{
    if(action==="next")changePosition(1);
    else if(action==="previous")changePosition(-1);
@@ -1452,8 +1510,10 @@ function startPairing(){
    else if(action==="board"){showBoard=!showBoard;renderAll();}
   }
  });
+ if(songPlayer.media)songPlayer.media.muted=true;
 }
 function endPairing(){
+ if(songPlayer.media)songPlayer.media.muted=false;
  if(window.KTGSync)KTGSync.stop();
  pairing=null;
  if($("pairPanel"))$("pairPanel").hidden=true;
