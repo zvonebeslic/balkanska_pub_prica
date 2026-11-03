@@ -1,0 +1,141 @@
+[
+  {
+    "id": "chatgpt10000-00895-20261103",
+    "createdAt": "2026-11-03T08:44:11+01:00",
+    "updatedAt": "2026-11-03T08:44:11+01:00",
+    "topic": "Fizika",
+    "focus": "Einstein Nobel fotoelektrični učinak",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Za teoriju relativnosti često mu pripisuju Nobela, no za objašnjenje kojeg učinka Albert Einstein zapravo je dobio Nobelovu nagradu za fiziku za 1921. godinu?",
+    "answers": [
+      "Fotoelektrični učinak",
+      "Fotoelektrični efekt"
+    ],
+    "explanation": "Nagrada je istaknula zakon fotoelektričnog učinka, a ne teoriju relativnosti.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/physics/1921/summary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00896-20261103",
+    "createdAt": "2026-11-03T08:44:11+01:00",
+    "updatedAt": "2026-11-03T08:44:11+01:00",
+    "topic": "Kemija",
+    "focus": "Polonij ime domovine",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Marie Curie nazvala je jedan od otkrivenih elemenata po svojoj domovini. O kojem je elementu riječ?",
+    "answers": [
+      "Polonij",
+      "Polonium"
+    ],
+    "explanation": "Polonij je nazvan u čast Poljske, domovine Marie Skłodowske-Curie.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00897-20261103",
+    "createdAt": "2026-11-03T08:44:11+01:00",
+    "updatedAt": "2026-11-03T08:44:11+01:00",
+    "topic": "Medicina",
+    "focus": "Chain Florey penicilin 1945",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Alexander Fleming podijelio je Nobelovu nagradu za medicinu 1945. s Ernstom Chainom i kojim još znanstvenikom, zaslužnim za razvoj primjene penicilina?",
+    "answers": [
+      "Howard Florey",
+      "Florey",
+      "Howard Walter Florey"
+    ],
+    "explanation": "Fleming, Chain i Florey zajedno su nagrađeni za penicilin i njegovo ljekovito djelovanje.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/1945/summary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00898-20261103",
+    "createdAt": "2026-11-03T08:44:11+01:00",
+    "updatedAt": "2026-11-03T08:44:11+01:00",
+    "topic": "Književnost",
+    "focus": "Hemingway Nobel 1954",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Pisac romana Starac i more dobio je Nobelovu nagradu za književnost 1954. Kako se prezivao?",
+    "answers": [
+      "Hemingway",
+      "Ernest Hemingway"
+    ],
+    "explanation": "Ernest Hemingway dobio je nagradu za pripovjedačko umijeće i utjecaj na suvremeni stil.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/literature/1954/summary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00899-20261103",
+    "createdAt": "2026-11-03T08:44:11+01:00",
+    "updatedAt": "2026-11-03T08:44:11+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "King Nobel mir 1964",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine Martin Luther King Jr. dobio Nobelovu nagradu za mir za nenasilnu borbu za građanska prava?",
+    "answers": [
+      "1964"
+    ],
+    "explanation": "King je Nobelovu nagradu za mir dobio 1964. godine.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/peace/1964/summary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00900-20261103",
+    "createdAt": "2026-11-03T08:44:11+01:00",
+    "updatedAt": "2026-11-03T08:44:11+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Marie Curie dva znanstvena Nobela",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko je različitih znanstvenih kategorija Nobelove nagrade osvojila Marie Curie, do danas jedina osoba s takvim postignućem?",
+    "answers": [
+      "2",
+      "Dvije",
+      "Dva"
+    ],
+    "explanation": "Nagrađena je za fiziku 1903. i kemiju 1911.",
+    "sources": [
+      "https://www.nobelprize.org/womenwhochangedscience/stories/marie-curie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
