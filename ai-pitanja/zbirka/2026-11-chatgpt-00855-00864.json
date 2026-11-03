@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00855-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Geologija",
+    "focus": "Divov pločnik bazalt",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na obali Sjeverne Irske priroda je složila oko 40.000 kamenih stupova nalik golemom popločanom putu. Od koje su vulkanske stijene ti stupovi?",
+    "answers": [
+      "Bazalt",
+      "Bazalta"
+    ],
+    "explanation": "Stupovi Divova pločnika nastali su hlađenjem bazaltne lave.",
+    "sources": [
+      "https://whc.unesco.org/en/list/369/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00856-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Arheologija",
+    "focus": "Moai ceremonijalne platforme ahu",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Na Rapa Nuiju kameni kipovi moai često stoje na ceremonijalnim platformama. Kako se na lokalnom jeziku zovu te platforme?",
+    "answers": [
+      "Ahu"
+    ],
+    "explanation": "Ahu su kamene ceremonijalne platforme na kojima su postavljani kipovi predaka.",
+    "sources": [
+      "https://whc.unesco.org/en/list/715"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00857-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Biologija",
+    "focus": "Archaeoceti evolucija kitova",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "U egipatskoj Dolini kitova fosili pokazuju životinje koje su već plivale morem, ali su još gubile stražnje udove. Koja se današnja skupina sisavaca razvila iz tih kopnenih predaka?",
+    "answers": [
+      "Kitovi",
+      "Kit"
+    ],
+    "explanation": "Fosili drevnih kitova Archaeoceti svjedoče o prijelazu kopnenih sisavaca u morski život.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1186/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00858-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Jantar Mantar Jaipur",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U indijskom Jaipuru stoje golemi zidani instrumenti kojima su prije teleskopa precizno pratili položaje nebeskih tijela. Kako se zove taj povijesni opservatorij?",
+    "answers": [
+      "Jantar Mantar",
+      "Džantar Mantar"
+    ],
+    "explanation": "Jantar Mantar je astronomski kompleks iz ranog 18. stoljeća.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1338"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00859-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Povijest",
+    "focus": "Vikinzi Newfoundland",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U 11. stoljeću europski moreplovci izgradili su naselje L’Anse aux Meadows na otoku Newfoundland. Kojem su narodu pripadali?",
+    "answers": [
+      "Vikinzi",
+      "Vikinzima",
+      "Nordijci"
+    ],
+    "explanation": "Naselje je najraniji potvrđeni dokaz europske prisutnosti u Sjevernoj Americi.",
+    "sources": [
+      "https://whc.unesco.org/en/list/4"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00860-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Kemija",
+    "focus": "Marie Curie Nobel kemija 1911",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Osam godina nakon Nobelove nagrade za fiziku Marie Curie osvojila je još jednu, za otkrića povezana s radijem i polonijem. Koje godine?",
+    "answers": [
+      "1911"
+    ],
+    "explanation": "Marie Curie dobila je Nobelovu nagradu za kemiju 1911. godine.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/chemistry/1911/summary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00861-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Zemljopis",
+    "focus": "Rapa Nui država",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Otok s kipovima moai leži tisućama kilometara od južnoameričke obale, ali politički pripada kojoj državi?",
+    "answers": [
+      "Čile",
+      "Cile",
+      "Chile"
+    ],
+    "explanation": "Uskršnji otok odnosno Rapa Nui dio je Čilea.",
+    "sources": [
+      "https://whc.unesco.org/en/list/715"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00862-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Vikinška radionica kovačnica",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Arheolozi su u vikinškom naselju L’Anse aux Meadows pronašli tri nastambe, četiri radionice i jedan objekt za obradu željeza. Kako nazivamo takvu radionicu?",
+    "answers": [
+      "Kovačnica",
+      "Kovacka radionica"
+    ],
+    "explanation": "Među osam građevina nalazi se i kovačnica, što potvrđuje obradu željeza.",
+    "sources": [
+      "https://whc.unesco.org/en/list/4"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00863-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Priroda",
+    "focus": "Divov pločnik 40000",
+    "difficulty": 3,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Sjevernoirski Divov pločnik djeluje kao slagalica od šesterokuta. Otprilike koliko bazaltnih stupova čini tu UNESCO-ovu prirodnu znamenitost?",
+    "answers": [
+      "40000",
+      "40 000",
+      "Četrdeset tisuća"
+    ],
+    "explanation": "UNESCO navodi oko 40.000 bazaltnih stupova.",
+    "sources": [
+      "https://whc.unesco.org/en/list/369/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00864-20261103",
+    "createdAt": "2026-11-03T05:42:16+01:00",
+    "updatedAt": "2026-11-03T05:42:16+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Moai materijal vulkanski tuf",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Većina divovskih kipova moai na Rapa Nuiju isklesana je iz razmjerno mekane vulkanske stijene, a ne iz granita. Koja je to stijena?",
+    "answers": [
+      "Tuf",
+      "Vulkanski tuf"
+    ],
+    "explanation": "UNESCO opisuje moai isklesane uglavnom iz žutosmeđeg vulkanskog tufa.",
+    "sources": [
+      "https://whc.unesco.org/en/list/715"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
