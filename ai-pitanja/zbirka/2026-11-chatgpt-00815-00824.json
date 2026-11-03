@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-00815-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Astronomija",
+    "focus": "Enceladusovi gejziri hrane Saturnov E-prsten",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Saturnov mjesec svojim mlazovima leda i vodene pare opskrbljuje materijalom planetov E-prsten?",
+    "answers": [
+      "Enceladus"
+    ],
+    "explanation": "Enceladusovi ledeni mlazovi izbacuju čestice koje dopunjuju Saturnov E-prsten.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00816-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Fizika",
+    "focus": "Einsteinova Nobelova nagrada i fotoelektrični efekt",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Einstein je Nobelovu nagradu za 1921. dobio ponajprije za objašnjenje koje pojave, a ne za teoriju relativnosti?",
+    "answers": [
+      "Fotoelektrični efekt",
+      "Fotoelektrični učinak"
+    ],
+    "explanation": "Nobelovo obrazloženje posebno ističe zakon fotoelektričnog efekta.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/physics/1921/einstein/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00817-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Povijest",
+    "focus": "Prvi olimpijski let bijelih golubova",
+    "difficulty": 4,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Na kojim su Olimpijskim igrama prvi put tijekom ceremonije pušteni bijeli golubovi kao simbol mira? Navedite grad domaćina.",
+    "answers": [
+      "Antwerpen",
+      "Antwerp",
+      "Anvers"
+    ],
+    "explanation": "Bijeli golubovi, olimpijska zastava i prisega debitirali su u Antwerpenu 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/antwerp-1920-a-symbol-of-peace-unity-and-strength"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00818-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Kultura",
+    "focus": "Sokolarstvo na UNESCO-ovu popisu",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojoj se tradicijskoj vještini ptice grabljivice uvježbavaju za lov, a UNESCO je štiti kao živu ljudsku baštinu?",
+    "answers": [
+      "Sokolarstvo",
+      "Sokolarenje"
+    ],
+    "explanation": "Sokolarstvo uključuje uzgoj, obuku i letenje s pticama grabljivicama.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01708"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00819-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Kemija",
+    "focus": "Sastav Enceladusovih mlazova",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Cassini je u mlazovima jednog Saturnova mjeseca pronašao soli i organske molekule. Koja tekućina čini osnovu njegova podzemnog oceana?",
+    "answers": [
+      "Voda",
+      "Slana voda"
+    ],
+    "explanation": "Enceladus pod ledenom korom ima ocean slane vode.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00820-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Matematika",
+    "focus": "Enceladusova orbitalna rezonancija s Dionom",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Dok Saturnov mjesec Diona napravi jedan krug oko planeta, Enceladus napravi koliko krugova?",
+    "answers": [
+      "2",
+      "Dva"
+    ],
+    "explanation": "Enceladus i Diona nalaze se u orbitalnoj rezonanciji 2 prema 1.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00821-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Tehnologija",
+    "focus": "Webbovo opažanje golemog mlaza Enceladusa",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koji je svemirski teleskop 2023. zabilježio mlaz vodene pare s Enceladusa dug više od 9.000 kilometara?",
+    "answers": [
+      "James Webb",
+      "Svemirski teleskop James Webb",
+      "Webb",
+      "JWST"
+    ],
+    "explanation": "Teleskop James Webb opažao je iznimno velik mlaz vodene pare s Enceladusa.",
+    "sources": [
+      "https://science.nasa.gov/missions/webb/webb-maps-surprisingly-large-plume-jetting-from-saturns-moon-enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00822-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Sport",
+    "focus": "Broj država na Olimpijskim igrama Antwerpen 1920",
+    "difficulty": 2,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Na Olimpijskim igrama u Antwerpenu 1920. sudjelovalo je 2.626 sportaša iz koliko država?",
+    "answers": [
+      "29",
+      "Dvadeset devet"
+    ],
+    "explanation": "MOO navodi 2.626 sportaša iz 29 država.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/antwerp-1920-a-symbol-of-peace-unity-and-strength"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00823-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Biologija",
+    "focus": "Sokolarstvo i skupina životinja",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Sokolar lovi uz pomoć sokola, jastreba ili orla. Kojoj skupini kralježnjaka pripadaju sve te životinje?",
+    "answers": [
+      "Ptice",
+      "Pticama"
+    ],
+    "explanation": "Sokoli, jastrebovi i orlovi ptice su grabljivice.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01708"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00824-20261103",
+    "createdAt": "2026-11-03T01:40:34+01:00",
+    "updatedAt": "2026-11-03T01:40:34+01:00",
+    "topic": "Priroda",
+    "focus": "Tigrove pruge na Enceladusu",
+    "difficulty": 5,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Na Enceladusu izraz 'tigrove pruge' ne opisuje životinju, nego četiri velike strukture na južnom polu. Što su one?",
+    "answers": [
+      "Pukotine",
+      "Pukotine u ledu",
+      "Rasjedi"
+    ],
+    "explanation": "Tako se neformalno nazivaju pukotine u ledenoj kori iz kojih izlaze mlazovi.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
