@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-01151-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koja bežična tehnologija za povezivanje uređaja nosi ime po danskom kralju Haraldu Modrozubom?",
+    "answers": [
+      "Bluetooth"
+    ],
+    "explanation": "Naziv simbolizira povezivanje, a znak spaja dvije rune.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01152-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Arheologija",
+    "focus": "Terakotna vojska",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Tisuće glinenih vojnika u prirodnoj veličini pronađene su uz mauzolej prvog kineskog cara. Kako se zove ta vojska?",
+    "answers": [
+      "Terakotna vojska",
+      "Vojska od terakote"
+    ],
+    "explanation": "Figure su povezane s grobnicom Qin Shi Huanga.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Terracotta_Army"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01153-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Gastronomija",
+    "focus": "Kimchi",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji korejski prilog najčešće nastaje fermentiranjem začinjenog kineskog kupusa ili rotkve?",
+    "answers": [
+      "Kimchi",
+      "Kimči"
+    ],
+    "explanation": "Kimchi je važan dio korejske prehrambene tradicije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01154-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Matematika",
+    "focus": "Eulerovi mostovi Königsberga",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Problem sedam mostova Königsberga pomogao je nastanku koje matematičke discipline koja proučava vrhove i bridove?",
+    "answers": [
+      "Teorija grafova"
+    ],
+    "explanation": "Euler je pokazao zašto nije moguće proći svih sedam mostova po jednom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01155-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Životinje",
+    "focus": "Narval",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima dugačak spiralni kljovasti zub, zbog kojeg ga nazivaju morskim jednorogom?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Kljova je najčešće izduženi lijevi gornji očnjak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01156-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Freska",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se zove slikarska tehnika u kojoj se pigment nanosi na još vlažnu žbuku zida?",
+    "answers": [
+      "Freska"
+    ],
+    "explanation": "Boja se veže uz podlogu tijekom sušenja žbuke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fresco"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01157-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Povijest",
+    "focus": "Hanza",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji savez trgovačkih gradova srednjovjekovne sjeverne Europe povezujemo s Lübeckom i trgovinom na Baltiku?",
+    "answers": [
+      "Hanza",
+      "Hanzeatska liga"
+    ],
+    "explanation": "Hanza je povezivala trgovačke gradove i njihove interese.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hanseatic_League"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01158-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Glazba",
+    "focus": "Didgeridoo",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Koje tradicionalno australsko puhačko glazbalo proizvodi dubok neprekidan zvuk i često se izrađuje od izdubljenog drva?",
+    "answers": [
+      "Didgeridoo",
+      "Didžeridu"
+    ],
+    "explanation": "Svirači mogu održavati ton kružnim disanjem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Didgeridoo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01159-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bajkalsko jezero",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koje sibirsko jezero drži rekord najdubljeg slatkovodnog jezera na svijetu?",
+    "answers": [
+      "Bajkalsko jezero",
+      "Bajkal"
+    ],
+    "explanation": "Njegova najveća dubina iznosi približno 1642 metra.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lake_Baikal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01160-20261103",
+    "createdAt": "2026-11-03T15:38:05+01:00",
+    "updatedAt": "2026-11-03T15:38:05+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Magna Carta",
+    "difficulty": 3,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Koji je dokument engleski kralj Ivan Bez Zemlje prihvatio 1215. nakon pritiska pobunjenih baruna?",
+    "answers": [
+      "Magna Carta",
+      "Velika povelja sloboda"
+    ],
+    "explanation": "Dokument je postao simbol ograničavanja kraljevske vlasti.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
