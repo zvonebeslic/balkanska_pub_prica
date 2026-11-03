@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-01220-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Astronomija",
+    "focus": "Venerin zvjezdani dan dulji od godine",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedna rotacija oko vlastite osi traje dulje od njegova obilaska Sunca?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se oko osi okrene za približno 243 zemaljska dana, a Sunce obiđe za 225.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01221-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Geologija",
+    "focus": "Plutanje plovućca",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja vulkanska stijena, prepuna mjehurića plina, može plutati na vodi iako je kamen?",
+    "answers": [
+      "Plovućac",
+      "Plavac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac nastaje hlađenjem pjenaste magme; šupljine mu mogu sniziti gustoću ispod gustoće vode.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01222-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Jezik",
+    "focus": "Zviždani jezik La Gomere",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Na kanarskom otoku La Gomeri ljudi mogu prenositi španjolske rečenice zviždanjem. Kako se zove taj UNESCO-om zaštićen način sporazumijevanja?",
+    "answers": [
+      "Silbo Gomero",
+      "Silbo"
+    ],
+    "explanation": "Silbo Gomero kodira glasove španjolskog jezika zvižducima i uči se u školama otoka.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/whistled-language-of-the-island-of-la-gomera-canary-islands-the-silbo-gomero-00172"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01223-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Filatelija",
+    "focus": "Penny Black prva poštanska marka",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Prva svjetska ljepljiva poštanska marka iz 1840. prikazivala je kraljicu Viktoriju. Pod kojim je dvjema engleskim riječima poznata?",
+    "answers": [
+      "Penny Black"
+    ],
+    "explanation": "Britanska Penny Black puštena je u promet 1840. i vrijedila je jedan peni.",
+    "sources": [
+      "https://postalmuseum.si.edu/exhibition/the-queen%E2%80%99s-own-postal-reforms-that-transformed-the-mail/the-worlds-first-postage-stamps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01224-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Fotografija",
+    "focus": "Metalna podloga dagerotipije",
+    "difficulty": 4,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Na kakvoj se metalnoj ploči dobivala slika u postupku dagerotipije: bakrenoj presvučenoj kojim plemenitim metalom?",
+    "answers": [
+      "Srebro",
+      "Srebrom"
+    ],
+    "explanation": "Dagerotipija stvara pozitiv na bakrenoj ploči čija je površina posrebrena.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/296310"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01225-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Olimpizam",
+    "focus": "Prvi olimpijac koji je izrekao prisegu",
+    "difficulty": 5,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je belgijski sportaš na otvaranju Igara u Antwerpenu 1920. prvi u povijesti izgovorio olimpijsku prisegu?",
+    "answers": [
+      "Victor Boin",
+      "Boin",
+      "Viktor Boin"
+    ],
+    "explanation": "Mačevalac i vaterpolist Victor Boin prvi je izrekao olimpijsku prisegu 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/pledging-fair-play"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01226-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Kemija",
+    "focus": "Metan i etan u Titanovim jezerima",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Zemaljska jezera uglavnom su vodena. Koji je ugljikovodik, uz etan, glavna tekućina u jezerima Saturnova Titana?",
+    "answers": [
+      "Metan",
+      "Methane"
+    ],
+    "explanation": "Na Titanu niske temperature dopuštaju postojanje jezera tekućeg metana i etana.",
+    "sources": [
+      "https://science.nasa.gov/resource/lakes-on-titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01227-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Dvije različite Nobelove znanstvene kategorije Marie Curie",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Marie Curie osvojila je Nobelovu nagradu za fiziku 1903. Koja joj je druga znanstvena disciplina donijela Nobela 1911.?",
+    "answers": [
+      "Kemija",
+      "Kemiju"
+    ],
+    "explanation": "Drugu Nobelovu nagradu Marie Curie dobila je 1911. za kemiju.",
+    "sources": [
+      "https://www.nobelprize.org/womenwhochangedscience/stories/marie-curie."
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01228-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Umjetnički obrt",
+    "focus": "Lajvardina iranska keramika",
+    "difficulty": 5,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji se naziv za raskošno pozlaćenu iransku keramiku iz doba Ilkanida izvodi iz perzijske riječi za lapis lazuli?",
+    "answers": [
+      "Lajvardina"
+    ],
+    "explanation": "Lajvardina je vrsta keramike s oslikanim i pozlaćenim ukrasima, nazvana prema perzijskom nazivu plavog kamena.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/449019"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01229-20261103",
+    "createdAt": "2026-11-03T20:40:35+01:00",
+    "updatedAt": "2026-11-03T20:40:35+01:00",
+    "topic": "Astronautika",
+    "focus": "Godina sljedećeg prolaska Venere preko Sunca",
+    "difficulty": 4,
+    "styleId": 100,
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "question": "Posljednji prolazak Venere preko Sunčeva diska bio je 2012. Koje će se godine dogoditi sljedeći?",
+    "answers": [
+      "2117"
+    ],
+    "explanation": "NASA navodi da će sljedeći tranzit Venere nakon 2012. nastupiti 2117.",
+    "sources": [
+      "https://science.nasa.gov/resource/2012-venus-transit/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
