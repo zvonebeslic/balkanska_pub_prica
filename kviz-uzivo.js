@@ -834,11 +834,79 @@ function songSourceType(q){
 function songKeyFor(slide,q){
  return project.id+"/"+slide.r+"/"+slide.s+"/"+slide.i+"/"+(q?.mediaId||"")+"/"+(q?.mediaUrl||"")+"/"+songSourceType(q);
 }
+// The preload revision covers quiz text and attachments, but not live scores.
+function quizPreloadGeneration(){
+ if(!project)return "";
+ const data=JSON.stringify([project.id,project.title,project.rounds]);
+ let hash=2166136261;
+ for(let i=0;i<data.length;i++){hash^=data.charCodeAt(i);hash=Math.imul(hash,16777619);}
+ return project.id+"/"+(hash>>>0).toString(36);
+}
+function quizPreloadSongs(){
+ const songs=[];
+ for(let i=0;i<SLIDES.length;i++){
+  const slide=SLIDES[i];if(slide.kind!=="question")continue;
+  const q=itemAt(slide.r,slide.s,slide.i),section=ROUNDS[slide.r].sections[slide.s];
+  if(!isSongRubric(section.code)||["none","youtube"].includes(songSourceType(q)))continue;
+  songs.push({key:songKeyFor(slide,q),source:q.mediaId?"local":"remote",
+   url:q.mediaId?"":safeUrl(q.mediaUrl||""),type:q.mediaType||"",index:i});
+ }
+ return songs;
+}
+let lastPreloadAnnounced="";
+function sendQuizPreloadManifest(force=false){
+ if(!project||!pairing||!window.KTGSync?.isHost())return;
+ const generation=quizPreloadGeneration();
+ if(!force&&lastPreloadAnnounced===generation)return;
+ lastPreloadAnnounced=generation;
+ KTGSync.sendPreloadManifest({generation,total:SLIDES.length,songs:quizPreloadSongs()}).catch(()=>{});
+}
+async function ensurePreloadImage(id,budget){
+ if(!id)return;
+ const key=id+":"+budget;
+ if(tvImageCache.has(key)||tvImageErrors.has(key))return;
+ try{
+  const asset=await storeGet("assets",id);
+  if(!asset?.blob||!(asset.type||asset.blob.type||"").startsWith("image/"))return;
+  const data=await convertImageForTv(asset.blob,budget);
+  if(data)tvImageCache.set(key,data);
+ }catch(error){console.warn("TV preloading image:",error);}
+}
+async function handleQuizPreloadRequest(message){
+ if(!pairing||!window.KTGSync?.isHost()||!project||
+  message?.generation!==quizPreloadGeneration())return;
+ const index=Number(message.index);
+ if(!Number.isInteger(index)||index<0||index>=SLIDES.length||
+    !/^[A-HJ-NP-Z2-9]{8,24}$/.test(message.client||""))return;
+ const sl=SLIDES[index];
+ if(sl.kind==="question"){
+  const q=itemAt(sl.r,sl.s,sl.i),abc=ROUNDS[sl.r].sections[sl.s].code==="abc";
+  const options=abc&&!!q.optionMediaIds?.some(Boolean);
+  const images=[];
+  if(q.mediaId&&(!q.mediaType||String(q.mediaType).startsWith("image/")))
+   images.push([q.mediaId,options?TV_ABC_MAIN_MAX_CHARS:TV_IMAGE_MAX_CHARS]);
+  if(abc)for(const id of q.optionMediaIds||[])if(id)images.push([id,TV_ABC_IMAGE_MAX_CHARS]);
+  await Promise.all(images.map(([id,size])=>ensurePreloadImage(id,size)));
+ }
+ if(message.generation!==quizPreloadGeneration())return;
+ const slide=sharedSlide(index,true);
+ KTGSync.sendPreloadSlide({generation:message.generation,client:message.client,index,slide}).catch(()=>{});
+}
+function songLookup(key){
+ if(!project||typeof key!=="string")return null;
+ for(const slide of SLIDES){
+  if(slide.kind!=="question")continue;
+  const q=itemAt(slide.r,slide.s,slide.i);
+  if(q?.mediaId&&isSongRubric(ROUNDS[slide.r].sections[slide.s].code)&&
+    songKeyFor(slide,q)===key)return {slide,q};
+ }
+ return null;
+}
+
 async function handleSongRequest(request){
- const active=activeSongSlide();
- if(!active||!pairing||!window.KTGSync?.isHost())return;
- const {q,slide}=active,key=songKeyFor(slide,q);
- if(key!==request.key||!q?.mediaId)return;
+ const found=songLookup(request?.key);
+ if(!found||!pairing||!window.KTGSync?.isHost())return;
+ const {q,slide}=found,key=songKeyFor(slide,q);
  const index=request.index;
  if(!Number.isSafeInteger(index)||index<0||index>1300||
     !/^[A-HJ-NP-Z2-9]{8,24}$/.test(request.client||""))return;
@@ -857,7 +925,7 @@ async function handleSongRequest(request){
   const bytes=new Uint8Array(await blob.slice(index*SONG_CHUNK_BYTES,(index+1)*SONG_CHUNK_BYTES).arrayBuffer());
   // A 48 KB slice becomes about 64 KB of Base64, under Realtime message limits.
   const data=btoa(String.fromCharCode(...bytes));
-  if(!activeSongSlide()||songKeyFor(activeSongSlide().slide,activeSongSlide().q)!==key)return;
+  if(!songLookup(key)||!pairing||!window.KTGSync?.isHost())return;
   await KTGSync.sendSongChunk({key,client:request.client,index,total,
    type:songTransferCache.type,data});
  }catch(error){
@@ -1249,17 +1317,20 @@ async function importQuiz(file){
 }
 
 // Sharing across devices uses ephemeral Supabase Realtime messages, never database records.
-function sharedSlide(){
+function sharedSlide(atIndex=slideIndex,preload=false){
  if(!project)return null;
- const slide=currentSlide(),base={
+ const slide=SLIDES[Math.max(0,Math.min(atIndex,SLIDES.length-1))];
+ const isRevealed=!preload&&revealed,boardVisible=!preload&&showBoard;
+ const base={
   kind:"ktg-slide",
   slideType:slide.kind,
   quizTitle:project.title||"Kviz Općeg Znanja",
   scoreResetVersion:Number(project.scoreResetVersion||0),
-  index:slideIndex+1,total:SLIDES.length,
-  revealed:false,showBoard:showBoard||slide.kind==="score"
+  index:atIndex+1,total:SLIDES.length,
+  preloadGeneration:quizPreloadGeneration(),
+  revealed:false,showBoard:boardVisible||slide.kind==="score"
  };
- if(showBoard||slide.kind==="score"){
+ if(boardVisible||slide.kind==="score"){
   const r=slide.r??0;
   return {...base,slideType:"score",roundIndex:r,
    scoreTitle:"Ljestvica nakon "+(r+1)+". kruga",
@@ -1321,17 +1392,18 @@ function sharedSlide(){
   optionImages,
   optionMediaIds:section.code==="abc"?(q.optionMediaIds||[]).slice(0,3):[],
   abcHideNames:section.code==="abc"&&!!q.abcHideNames,
-  correct:revealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
-  answer:revealed?createAnswer(slide.r,slide.s,slide.i,q):"",
-  truthExplanation:revealed&&section.code==="vjerovali"?String(q.note||"").trim():"",
-  associationExplanation:revealed&&section.code==="asocijacija"&&slide.i===4?
+  correct:isRevealed?(section.code==="abc"?q.correct:section.code==="vjerovali"?q.truth:""):"",
+  answer:isRevealed?createAnswer(slide.r,slide.s,slide.i,q):"",
+  truthExplanation:isRevealed&&section.code==="vjerovali"?String(q.note||"").trim():"",
+  associationExplanation:isRevealed&&section.code==="asocijacija"&&slide.i===4?
    String(q.explanation||putinExplanation||"").trim():"",
-  estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
-  revealed,showBoard:false,
+  estimateRange:isRevealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
+  isRevealed,showBoard:false,
   musicAudio:isSongRubric(section.code)&&songSourceType(q)!=="none",
   musicKey:isSongRubric(section.code)?songKeyFor(slide,q):"",
   musicSource:isSongRubric(section.code)?(q.mediaId?"local":songSourceType(q)==="youtube"?"youtube":songSourceType(q)==="none"?"none":"remote"):"none",
   musicUrl:isSongRubric(section.code)&&!q.mediaId&&songSourceType(q)!=="youtube"?safeUrl(q.mediaUrl):"",
+  preloadMediaId:imageIsLocal?q.mediaId:"",
   mediaData:tvImage,
   mediaType:imageIsLocal?"image/jpeg":String(q.mediaType||""),
   mediaUrl:imageIsLocal?"":(q.mediaUrl?String(q.mediaUrl):""),
@@ -1578,10 +1650,21 @@ function startPairing(){
  $("roomCode").textContent=info.room;
  $("audienceLink").value=audienceUrl(info.room);
  $("controlLink").value=controllerUrl(info.room,info.secret);
+ lastPreloadAnnounced="";
  KTGSync.startHost({
-  room:info.room,controlSecret:info.secret,getState:sharedSlide,
+  room:info.room,controlSecret:info.secret,getState:()=>sharedSlide(),
   onStatus:s=>$("pairStatus").textContent=s==="Povezano"?"Veza spremna. Čekam TV…":s,
-  onAudienceHello:()=>{$("pairStatus").textContent="TV je povezan.";},
+  onAudienceHello:()=>{
+   $("pairStatus").textContent="TV je povezan. Pripremam cijeli kviz…";
+   sendQuizPreloadManifest(true);
+  },
+  onPreloadRequest:request=>handleQuizPreloadRequest(request),
+  onPreloadStatus:progress=>{
+   if(progress.generation!==quizPreloadGeneration())return;
+   const n=Number(progress.loaded)||0,total=Number(progress.total)||SLIDES.length;
+   $("pairStatus").textContent=n>=total?"TV je pripremio kviz ("+total+" slajdova).":
+    "TV priprema kviz: "+n+" / "+total+" slajdova.";
+  },
   onSongRequest:request=>handleSongRequest(request),
   onSongStatus:status=>songTVStatus(status),
   onCommand:action=>{
