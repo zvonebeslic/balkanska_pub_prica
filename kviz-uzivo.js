@@ -1533,7 +1533,7 @@ function endPairing(){
 // The playback element stays outside stageCanvas so a slide re-render cannot stop it.
 const audienceSong={
  key:"",client:"",media:null,objectUrl:"",source:"",pieces:[],next:0,total:null,
- type:"audio/mpeg",timer:null,retries:0,pending:null,loaded:false,blocked:false
+ type:"audio/mpeg",timer:null,retries:0,pending:null,pendingSeek:null,loaded:false,blocked:false
 };
 let audienceDeferredControl=null;
 function reportAudienceAudio(message){
@@ -1551,7 +1551,7 @@ function resetAudienceSong(){
  if(audienceSong.objectUrl)URL.revokeObjectURL(audienceSong.objectUrl);
  Object.assign(audienceSong,{
   key:"",media:null,objectUrl:"",source:"",pieces:[],next:0,total:null,
-  type:"audio/mpeg",timer:null,retries:0,pending:null,loaded:false,blocked:false
+  type:"audio/mpeg",timer:null,retries:0,pending:null,pendingSeek:null,loaded:false,blocked:false
  });
  const unlock=$("tvSoundUnlock");if(unlock)unlock.hidden=true;
 }
@@ -1576,6 +1576,14 @@ function makeAudienceAudio(src,kind,key){
  const audio=document.createElement(kind?.startsWith("video/")?"video":"audio");
  audio.preload="auto";audio.controls=false;audio.hidden=true;
  audio.setAttribute("aria-hidden","true");
+ audio.addEventListener("loadedmetadata",()=>{
+  if(audienceSong.media===audio&&Number.isFinite(audienceSong.pendingSeek)){
+   const desired=audienceSong.pendingSeek;
+   audienceSong.pendingSeek=null;
+   try{audio.currentTime=Number.isFinite(audio.duration)&&audio.duration>0?
+    Math.min(desired,Math.max(0,audio.duration-.15)):desired;}catch{}
+  }
+ });
  audio.addEventListener("error",()=>{
   if(audienceSong.media===audio)reportAudienceAudio("TV ne može otvoriti glazbenu datoteku.");
  });
@@ -1639,10 +1647,11 @@ async function playAudienceSong(){
   reportAudienceAudio("Pjesma se reproducira na TV-u.");
  }catch(error){
   if(audio!==audienceSong.media)return;
-  audienceSong.blocked=true;
+  const needsClick=error?.name==="NotAllowedError";
+  audienceSong.blocked=needsClick;
   const unlock=$("tvSoundUnlock");
-  if(unlock)unlock.hidden=false;
-  reportAudienceAudio(error?.name==="NotAllowedError"?
+  if(unlock)unlock.hidden=!needsClick;
+  reportAudienceAudio(needsClick?
    "TV traži jedan klik na Uključi zvuk (zaštita preglednika).":
    "TV nije uspio pokrenuti pjesmu: "+String(error?.message||"nepoznata pogreška").slice(0,100));
  }
@@ -1659,13 +1668,15 @@ function applyAudienceSongControl(control){
  if(action==="pause"){audio.pause();return;}
  if(action==="stop"){audio.pause();audio.currentTime=0;return;}
  if(action==="restart"){audio.pause();audio.currentTime=0;}
- else if(Number.isFinite(control.position)&&control.position>=0&&audio.readyState>=1){
+ else if(Number.isFinite(control.position)&&control.position>=0){
   // A late-joining TV catches up after media transfer or reconnect.
   const elapsed=Number.isFinite(control.sentAt)?
    Math.max(0,Math.min(600,(Date.now()-control.sentAt)/1000)):0;
   const position=control.position+elapsed;
-  if(Number.isFinite(audio.duration)&&audio.duration>0)audio.currentTime=Math.min(position,Math.max(0,audio.duration-.15));
-  else audio.currentTime=position;
+  if(audio.readyState>=1){
+   if(Number.isFinite(audio.duration)&&audio.duration>0)audio.currentTime=Math.min(position,Math.max(0,audio.duration-.15));
+   else audio.currentTime=position;
+  }else audienceSong.pendingSeek=position;
  }
  playAudienceSong();
 }
