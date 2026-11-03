@@ -1280,3 +1280,52 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
 .tv-sound-unlock[hidden]{display:none!important}
 .tv-sound-unlock:focus-visible{outline:3px solid white;outline-offset:3px}
 @media(max-width:650px){.tv-sound-unlock{left:18px;right:18px;bottom:18px;text-align:center}}
+
+/* Compact question header: round left, rubric centered, question count right.
+   Applies uniformly to TV, host preview and connected remote preview. */
+.slide--question .screen-head{
+ display:grid;
+ grid-template-columns:minmax(0,1fr) minmax(0,2.4fr) minmax(0,1fr);
+ grid-template-rows:auto;
+ column-gap:clamp(5px,1.2vw,18px);
+ row-gap:0;
+ align-items:center;
+ justify-content:stretch;
+ justify-items:stretch;
+ padding-bottom:clamp(5px,.65vh,9px);
+ min-height:0;
+ text-align:center;
+}
+.slide--question .screen-head>span{
+ grid-column:1;
+ justify-self:start;
+ text-align:left;
+ min-width:0;
+}
+.slide--question .screen-head>strong{
+ grid-column:2;
+ justify-self:center;
+ text-align:center;
+ min-width:0;
+ overflow-wrap:anywhere;
+}
+.slide--question .screen-head>.rubric-question-progress{
+ grid-column:3;
+ justify-self:end;
+ text-align:right;
+ min-width:0;
+}
+.stage-screen .screen-inner.slide--question{
+ padding-top:clamp(8px,.8vw,16px);
+}
+.host-display .screen-inner.slide--question,
+.remote-preview .screen-inner.slide--question{
+ padding-top:clamp(7px,.8vw,14px);
+}
+@media(max-width:730px){
+ .slide--question .screen-head{
+  grid-template-columns:minmax(0,1fr) minmax(0,2.3fr) minmax(0,1fr);
+  column-gap:4px;
+  padding-bottom:5px;
+ }
+}
