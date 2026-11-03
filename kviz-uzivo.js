@@ -94,7 +94,7 @@ const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
 const itemAt=(r,s,i,p=project)=>p?.rounds?.[r]?.sections?.[s]?.items?.[i];
-function baseItem(){return {question:"",answer:"",answer2:"",options:["","",""],correct:"A",optionMediaIds:["","",""],optionMediaNames:["","",""],optionImages:[],abcHideNames:false,truth:"Točno",five:["","","","",""],min:"",max:"",note:"",mediaId:"",mediaName:"",mediaType:"",mediaUrl:""};}
+function baseItem(){return {question:"",answer:"",answer2:"",options:["","",""],correct:"A",optionMediaIds:["","",""],optionMediaNames:["","",""],optionImages:[],abcHideNames:false,truth:"Točno",five:["","","","",""],min:"",max:"",note:"",mediaId:"",mediaName:"",mediaType:"",mediaUrl:"",mediaScale:100,optionMediaScales:[100,100,100]};}
 function createQuiz(){
  return {id:uid(),title:"Kviz Općeg Znanja",updatedAt:Date.now(),teams:[],
  rounds:ROUNDS.map(r=>({sections:r.sections.map(s=>({items:Array.from({length:s.count},()=>baseItem())}))}))};
@@ -512,6 +512,54 @@ function field(name,label,value,opts={}){
  const attr=' data-field="'+esc(name)+'"';
  return '<label>'+esc(label)+(type==="textarea"?'<textarea'+attr+extra+'>'+esc(value)+'</textarea>':'<input'+attr+extra+' value="'+esc(value)+'"'+(opts.inputType?' type="'+esc(opts.inputType)+'"':'')+'>')+'</label>';
 }
+// Picture zoom is saved PER QUESTION, independently of the playback session.
+// Old Vol. 1/2 questions do not have these fields; they default to 100%.
+function pictureScale(value){
+ const n=Number(value);
+ return value===undefined||value===null||value===""||!Number.isFinite(n)?100:
+  Math.max(10,Math.min(300,Math.round(n)));
+}
+function pictureScaleEditor(scope,value,index=-1){
+ const label=scope==="option"?"Slika "+["A","B","C"][index]:"Slika pitanja";
+ const key='data-picture-scope="'+scope+'"'+(index>=0?' data-picture-index="'+index+'"':"");
+ const size=pictureScale(value);
+ return '<div class="media-scale-controls" role="group" aria-label="Veličina: '+label+'" '+key+'>'+
+  '<span class="media-scale-title">Veličina slike</span>'+
+  '<button type="button" data-picture-change="-1" aria-label="Smanji '+label+' za 1 %">−</button>'+
+  '<output class="media-scale-value" aria-live="polite">'+size+'%</output>'+
+  '<button type="button" data-picture-change="1" aria-label="Povećaj '+label+' za 1 %">+</button>'+
+  '<button type="button" class="media-scale-reset" data-picture-reset="1" aria-label="Vrati '+label+' na 100 %">100%</button>'+
+  '</div>';
+}
+function applyPictureScale(img,value){
+ if(!img||img.tagName!=="IMG")return;
+ img.style.transform="scale("+(pictureScale(value)/100)+")";
+ img.style.transformOrigin="center center";
+}
+function updatePictureScale(event){
+ const button=event.target.closest("button[data-picture-change],button[data-picture-reset]");
+ if(!button)return;
+ const controls=button.closest(".media-scale-controls");
+ if(!controls)return;
+ const q=itemAt(position.r,position.s,position.i);
+ if(!q)return;
+ const option=controls.dataset.pictureScope==="option";
+ const index=Number(controls.dataset.pictureIndex);
+ if(option&&(!Number.isInteger(index)||index<0||index>2))return;
+ const original=option?pictureScale(q.optionMediaScales?.[index]):pictureScale(q.mediaScale);
+ const delta=Number(button.dataset.pictureChange||0);
+ const changed=button.dataset.pictureReset!==undefined?100:pictureScale(original+delta);
+ if(changed===original)return;
+ if(option){
+  q.optionMediaScales=Array.from({length:3},(_,i)=>pictureScale(q.optionMediaScales?.[i]));
+  q.optionMediaScales[index]=changed;
+ }else q.mediaScale=changed;
+ const output=controls.querySelector(".media-scale-value");
+ if(output)output.textContent=changed+"%";
+ scheduleSave();
+ renderScreen($("previewPane"),"preview");
+ pushStage();
+}
 function renderEditor(){
  const r=position.r,s=position.s,i=position.i,c=ROUNDS[r].sections[s],q=itemAt(r,s,i);
  if(!q)return;
@@ -526,7 +574,9 @@ function renderEditor(){
      '<input type="file" accept="image/*" data-option-image-upload="'+k+'" aria-label="Učitaj sliku za odgovor '+letter+'"></label>'+
      '<span class="abc-option-filename">'+esc(filename)+'</span>'+
      (hasFile||hasLink?'<button type="button" class="danger abc-remove-image" data-option-image-remove="'+k+'">Ukloni</button>':"")+
-    '</div></div>';
+    '</div>'+
+    (hasFile||hasLink?pictureScaleEditor("option",q.optionMediaScales?.[k],k):"")+
+    '</div>';
   }).join("")+'</div>';
   answerFields+='<label class="abc-hide-names-label"><input type="checkbox" data-abc-hide-names'+(q.abcHideNames?' checked':'')+'> Sakrij nazive ponuđenih odgovora dok se ne otkrije rješenje (za prepoznavanje po slikama)</label>';
   answerFields+='<label>Točan odgovor <select data-field="correct">'+["A","B","C"].map(v=>'<option value="'+v+'"'+(q.correct===v?' selected':'')+'>'+v+'</option>').join("")+'</select></label>'; }else if(c.code==="vjerovali"){
@@ -541,6 +591,10 @@ function renderEditor(){
  if(c.code==="procjena")answerFields+='<div class="rowfields">'+field("min","Donja prihvatljiva granica",q.min,{inputType:"number"})+field("max","Gornja prihvatljiva granica",q.max,{inputType:"number"})+'</div>';
  const titleLabel=c.code==="asocijacija"&&i===4?"Asocijacija za konačno rješenje":"Tekst pitanja";
  const mediaStatus=q.mediaId?'<span class="badge">📎 '+esc(q.mediaName||"Datoteka")+'</span><button type="button" id="removeMedia" class="danger">Ukloni datoteku</button>':"<span class='muted tiny'>Nema učitane datoteke</span>";
+ const isPhoto=!!q.mediaId&&(!q.mediaType||String(q.mediaType).startsWith("image/"))||
+  (!!q.mediaUrl&&!!safeUrl(q.mediaUrl)&&!youtubeEmbed(q.mediaUrl)&&
+   !/\.(?:mp3|ogg|wav|m4a|mp4|webm|mov|m3u8)(?:[?#]|$)/i.test(q.mediaUrl));
+ const photoScaleControls=isPhoto?pictureScaleEditor("main",q.mediaScale):"";
  $("questionEdit").innerHTML=
   '<div class="question-meta"><span class="badge">'+esc(ROUNDS[r].name)+'</span><span class="badge">'+(s+1)+'. rubrika</span><span class="badge">'+esc(labelItem(r,s,i))+'</span><span class="badge">do '+pointsFor(r,s,i)+' bodova</span></div>'+
   '<h2>'+esc(c.name)+'</h2><p class="description">'+esc(c.desc)+'</p>'+
@@ -548,6 +602,7 @@ function renderEditor(){
   answerFields+field("note",c.code==="vjerovali"?"Objašnjenje ispod točnog odgovora (vidljivo nakon otkrivanja)":"Napomena za voditelja (nije vidljiva publici)",q.note,{type:"textarea"})+
   '<label>Dodaj sliku, audio ili video<input id="mediaInput" type="file" accept="image/*,audio/*,video/*"></label>'+
   '<div class="media-status">'+mediaStatus+'</div>'+
+  photoScaleControls+
   field("mediaUrl","Ili zalijepi javnu poveznicu na sliku, audio ili video",q.mediaUrl,{placeholder:"https://... (podržan i YouTube)"})+
   '</div>';
  $("mediaInput").addEventListener("change",uploadMedia);
@@ -695,7 +750,8 @@ async function attachMedia(host,q,kind){
  }else return;
  const el=document.createElement(type.startsWith("audio/")?"audio":type.startsWith("video/")?"video":"img");
  el.src=url;el.setAttribute("aria-label","Medijski prilog pitanja");
- if(el.tagName==="AUDIO"||el.tagName==="VIDEO"){el.controls=true;el.preload="metadata";}else el.alt="Ilustracija uz pitanje";
+ if(el.tagName==="AUDIO"||el.tagName==="VIDEO"){el.controls=true;el.preload="metadata";}
+ else{el.alt="Ilustracija uz pitanje";applyPictureScale(el,q.mediaScale);}
  host.append(el);
 }
 function renderScreen(root,kind){
@@ -991,6 +1047,8 @@ function sharedSlide(){
   lyricWordLengths:section.code==="stihovi"?lyricWordLengths(q.answer):[],
   question:q.question?.trim()||(section.code==="asocijacija"&&slide.i===4?"Koje je konačno rješenje?":"Ovdje upiši pitanje."),
   questionScale:questionScale(q.questionScale),
+  mediaScale:pictureScale(q.mediaScale),
+  optionMediaScales:section.code==="abc"?Array.from({length:3},(_,i)=>pictureScale(q.optionMediaScales?.[i])):[],
   choices:section.code==="abc"?(q.options||[]).map((t,i)=>["A","B","C"][i]+") "+(t||"…")):
    section.code==="vjerovali"?["Točno","Netočno"]:[],
   optionImages,
@@ -1018,6 +1076,7 @@ function sharedMedia(root,slide){
   const img=document.createElement("img");
   img.src=slide.mediaData;
   img.alt="Slika uz pitanje";
+  applyPictureScale(img,slide.mediaScale);
   holder.append(img);
   return;
  }
@@ -1029,7 +1088,9 @@ function sharedMedia(root,slide){
   }
   const url=safeUrl(slide.mediaUrl);if(!url)return;
   const type=/\.(mp3|ogg|wav|m4a)(\?|$)/i.test(url)?"audio":/\.(mp4|webm|mov)(\?|$)/i.test(url)?"video":"img";
-  const el=document.createElement(type);el.src=url;if(type==="img"){el.alt="Slika uz pitanje";}else{el.controls=true;el.preload="metadata";}
+  const el=document.createElement(type);el.src=url;
+  if(type==="img"){el.alt="Slika uz pitanje";applyPictureScale(el,slide.mediaScale);}
+  else{el.controls=true;el.preload="metadata";}
   holder.append(el);
  }else if(slide.mediaMissing){
   const p=document.createElement("p");p.className="muted tiny";
@@ -1190,7 +1251,7 @@ function renderSharedSlide(root,slide,options={}){
    return '<div class="screen-choice image-choice'+(isCorrect?" correct":"")+'">'+
     '<div class="image-choice-heading"><strong class="image-choice-letter">'+letter+')</strong>'+
     (!slide.abcHideNames||slide.revealed?'<span class="image-choice-caption'+(isCorrect?" image-choice-revealed":"")+'">'+esc(name)+'</span>':"")+'</div>'+
-    (img?'<img src="'+esc(img)+'" alt="Slika ponuđenog odgovora '+letter+'" loading="eager">':'<span class="image-choice-placeholder">Slika '+letter+' još nije učitana</span>')+
+    (img?'<div class="image-choice-viewport"><img src="'+esc(img)+'" alt="Slika ponuđenog odgovora '+letter+'" loading="eager" style="--image-scale:'+(pictureScale(slide.optionMediaScales?.[i])/100)+'"></div>':'<span class="image-choice-placeholder">Slika '+letter+' još nije učitana</span>')+
     '</div>';
   }
   return '<div class="screen-choice'+(isCorrect?" correct":"")+'">'+esc(t)+'</div>';
@@ -1391,6 +1452,7 @@ function bindEditor(){
  };
  $("questionEdit").addEventListener("input",changeField);
  $("questionEdit").addEventListener("change",changeField);
+ $("questionEdit").addEventListener("click",updatePictureScale);
  $("questionEdit").addEventListener("change",e=>{
   if(!e.target.matches("[data-abc-hide-names]"))return;
   const q=itemAt(position.r,position.s,position.i);if(!q)return;
