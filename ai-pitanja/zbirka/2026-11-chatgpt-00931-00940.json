@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-00931-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptun otkriven matematičkim predviđanjem",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Astronomi su 1846. pronašli planet na mjestu koje su matematičari predvidjeli zbog nepravilnosti Uranove putanje. Koji planet?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "Neptun je otkriven teleskopom nakon matematičkog predviđanja njegove pozicije.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00932-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Moda",
+    "focus": "Jacob Davis bakrene zakovice traperica",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Krojač Jacob Davis s Levijem Straussom 1873. patentirao je ojačavanje radničkih hlača kojim malim metalnim dijelovima?",
+    "answers": [
+      "Zakovice",
+      "Bakrene zakovice",
+      "Zakovicama"
+    ],
+    "explanation": "Bakrene zakovice ojačavale su mjesta na kojima su se hlače najlakše parale.",
+    "sources": [
+      "https://www.si.edu/collections/snapshot/levi-strauss-jeans"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00933-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Geologija",
+    "focus": "Richterova ljestvica amplituda faktor deset",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Ako potres magnitude 6 usporedimo s potresom magnitude 5 na Richterovoj ljestvici, koliko je puta veća izmjerena amplituda valova?",
+    "answers": [
+      "10",
+      "Deset",
+      "10 puta"
+    ],
+    "explanation": "Svaki cijeli stupanj Richterove magnitude odgovara deset puta većoj amplitudi.",
+    "sources": [
+      "https://www.usgs.gov/media/images/richterscalegif"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00934-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Sport",
+    "focus": "prve Zimske olimpijske igre Chamonix",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem su francuskom alpskom mjestu pod Mont Blancom 1924. održane prve Zimske olimpijske igre?",
+    "answers": [
+      "Chamonix",
+      "Chamonix-Mont-Blanc",
+      "Šamoni"
+    ],
+    "explanation": "Chamonix je 1924. ugostio prvo izdanje Zimskih olimpijskih igara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/chamonix-1924-the-olympic-winter-games-are-born"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00935-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Arheologija",
+    "focus": "Veliki Zimbabve narod Shona",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Monumentalni kameni grad Veliki Zimbabve, razvijen između 11. i 15. stoljeća, svjedoči o graditeljstvu kojeg naroda?",
+    "answers": [
+      "Shona",
+      "Šona",
+      "Narod Shona"
+    ],
+    "explanation": "UNESCO ruševine povezuje s civilizacijom naroda Shona.",
+    "sources": [
+      "https://whc.unesco.org/en/list/364"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00936-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Životinje",
+    "focus": "sokolarstvo tradicionalni trening ptica grabljivica",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "UNESCO štiti tradiciju u kojoj čovjek trenira sokolove i druge ptice grabljivice za lov. Kako se zove ta vještina?",
+    "answers": [
+      "Sokolarstvo",
+      "Sokolarenje"
+    ],
+    "explanation": "Sokolarstvo je tradicija duga više tisućljeća, danas i dio nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01708"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00937-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Fizika",
+    "focus": "Einstein Nobel fotoelektrični učinak",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Einstein nije dobio Nobelovu nagradu za relativnost. Za objašnjenje kojeg učinka dobio je Nobelovu nagradu za fiziku 1921.?",
+    "answers": [
+      "Fotoelektrični učinak",
+      "Fotoelektrični efekt"
+    ],
+    "explanation": "Nobelova nagrada istaknula je Einsteinov zakon fotoelektričnog učinka.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/physics/1921/summary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00938-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "dagerotipija posrebrena bakrena ploča",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Prve dagerotipije bile su jedinstvene fotografije na bakrenim pločama prevučenima kojim plemenitim metalom?",
+    "answers": [
+      "Srebro",
+      "Srebrom"
+    ],
+    "explanation": "Dagerotipije su nastajale na uglačanim posrebrenim bakrenim pločama.",
+    "sources": [
+      "https://www.metmuseum.org/it/essays/the-daguerreian-era-and-early-american-photography-on-paper-1839-1860"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00939-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Ples",
+    "focus": "flamenco cante baile toque",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Cante, baile i toque tri su sastavnice koje UNESCO povezuje s kojim andaluzijskim umjetničkim izrazom?",
+    "answers": [
+      "Flamenco",
+      "Flamenko"
+    ],
+    "explanation": "Flamenco spaja pjevanje, ples i instrumentalnu pratnju.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00940-20261103",
+    "createdAt": "2026-11-03T10:41:58+01:00",
+    "updatedAt": "2026-11-03T10:41:58+01:00",
+    "topic": "Povijest",
+    "focus": "Khami trgovački centar nakon Velikog Zimbabvea",
+    "difficulty": 5,
+    "styleId": 45,
+    "styleDescription": "Opiši stari naziv grada, traži državu",
+    "question": "Ruševine grada Khami, nekadašnjeg trgovačkog središta dinastije Torwa, danas su UNESCO-ova baština u kojoj afričkoj državi?",
+    "answers": [
+      "Zimbabve",
+      "Zimbabwe"
+    ],
+    "explanation": "Khami se nalazi pokraj Bulawaya u Zimbabveu i naslijedio je Veliki Zimbabve kao središte moći.",
+    "sources": [
+      "https://whc.unesco.org/en/list/365/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
