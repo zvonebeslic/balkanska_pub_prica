@@ -1922,6 +1922,128 @@ function setAudienceSongSlide(slide){
  }else reportAudienceAudio("Za ovu pjesmu potrebna je učitana audio datoteka ili izravna poveznica.");
 }
 
+// A TV keeps an unrevealed version of every slide and its preloaded pictures.
+// The host's live state still controls WHICH slide appears and when answers appear.
+const quizTvPreload={
+ generation:"",client:"",total:0,loaded:new Map(),pending:new Map(),
+ next:0,received:0,skipped:0,failed:new Set(),songs:[],lastStatus:0
+};
+let lastAudienceLiveSlide=null,lastManifestRequest=0;
+function randomPreloadClient(){
+ const alphabet="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+ return Array.from({length:16},()=>alphabet[Math.floor(Math.random()*alphabet.length)]).join("");
+}
+function requestPreloadManifestIfNeeded(slide){
+ const gen=slide?.preloadGeneration;
+ if(!gen||quizTvPreload.generation===gen)return;
+ if(Date.now()-lastManifestRequest<2500)return;
+ lastManifestRequest=Date.now();
+ KTGSync.requestPreloadManifest().catch(()=>{});
+}
+function clearQuizPreload(){
+ for(const item of quizTvPreload.pending.values())clearTimeout(item.timer);
+ quizTvPreload.pending.clear();
+ quizTvPreload.loaded.clear();quizTvPreload.failed.clear();
+ quizTvPreload.generation="";quizTvPreload.total=0;quizTvPreload.next=0;
+ quizTvPreload.received=0;quizTvPreload.skipped=0;quizTvPreload.songs=[];
+}
+function tvPreloadPicture(src){
+ if(!src||typeof src!=="string"||src.length>300000)return;
+ if(!src.startsWith("data:image/")&&!safeUrl(src))return;
+ try{const img=new Image();img.src=src;}catch{}
+}
+function enrichTvSlide(slide){
+ if(!slide||slide.slideType!=="question")return slide;
+ const saved=quizTvPreload.loaded.get(slide.index-1);
+ if(!saved||slide.preloadGeneration!==quizTvPreload.generation||
+   saved.question!==slide.question)return slide;
+ const updated={...slide};
+ if(!updated.mediaData&&saved.mediaData&&
+   updated.preloadMediaId&&updated.preloadMediaId===saved.preloadMediaId){
+  updated.mediaData=saved.mediaData;
+  updated.mediaMissing=false;updated.mediaPreparing=false;updated.mediaError=false;
+ }
+ if(Array.isArray(saved.optionImages)&&Array.isArray(updated.optionImages)){
+  updated.optionImages=updated.optionImages.map((url,index)=>{
+   if(url)return url;
+   if(updated.optionMediaIds?.[index]&&
+      updated.optionMediaIds[index]===saved.optionMediaIds?.[index])
+    return saved.optionImages[index]||"";
+   return "";
+  });
+ }
+ return updated;
+}
+function reportQuizPreloadProgress(){
+ if(!quizTvPreload.generation)return;
+ const count=quizTvPreload.received+quizTvPreload.skipped;
+ if(count!==quizTvPreload.total&&count-quizTvPreload.lastStatus<10)return;
+ quizTvPreload.lastStatus=count;
+ KTGSync.reportPreloadStatus({generation:quizTvPreload.generation,
+  loaded:quizTvPreload.received,total:quizTvPreload.total,
+  failed:quizTvPreload.skipped}).catch(()=>{});
+}
+function requestQuizPreloadSlide(index,retry=0){
+ const state=quizTvPreload;
+ if(index<0||index>=state.total||state.loaded.has(index)||state.pending.has(index))return;
+ const generation=state.generation,client=state.client;
+ const timer=setTimeout(()=>{
+  const entry=state.pending.get(index);
+  if(state.generation!==generation||!entry||entry.timer!==timer)return;
+  state.pending.delete(index);
+  if(retry>=5){
+   state.failed.add(index);state.skipped++;
+   reportQuizPreloadProgress();queueQuizPreloadRequests();return;
+  }
+  requestQuizPreloadSlide(index,retry+1);
+ },9000);
+ state.pending.set(index,{timer,retry});
+ KTGSync.requestPreloadSlide({generation,client,index}).catch(()=>{});
+}
+function queueQuizPreloadRequests(){
+ const state=quizTvPreload;
+ if(!state.generation||!state.total)return;
+ while(state.pending.size<3&&state.next<state.total){
+  const index=state.next++;
+  if(state.loaded.has(index)||state.failed.has(index))continue;
+  requestQuizPreloadSlide(index);
+ }
+}
+function receiveQuizPreloadManifest(manifest){
+ if(!manifest?.generation||!Number.isInteger(manifest.total)||
+    manifest.total<1||manifest.total>500)return;
+ if(quizTvPreload.generation===manifest.generation)return;
+ clearQuizPreload();
+ const state=quizTvPreload;
+ state.generation=manifest.generation;
+ state.total=manifest.total;
+ state.client=randomPreloadClient();
+ state.songs=Array.isArray(manifest.songs)?manifest.songs.slice(0,50):[];
+ state.next=0;state.received=0;state.skipped=0;
+ startQuizAudioPreload(state.songs);
+ queueQuizPreloadRequests();
+}
+function receiveQuizPreloadSlide(packet){
+ const state=quizTvPreload;
+ if(packet?.generation!==state.generation||packet.client!==state.client||
+   !Number.isInteger(packet.index)||!state.pending.has(packet.index)||
+   !packet.slide||packet.slide.kind!=="ktg-slide")return;
+ const entry=state.pending.get(packet.index);
+ clearTimeout(entry.timer);state.pending.delete(packet.index);
+ const slide=packet.slide;
+ if(slide.index!==packet.index+1||slide.preloadGeneration!==state.generation)return;
+ state.loaded.set(packet.index,slide);state.received++;
+ if(slide.mediaData)tvPreloadPicture(slide.mediaData);
+ if(slide.mediaUrl&&/\.(?:png|jpe?g|webp|gif|avif)(?:[?#]|$)/i.test(slide.mediaUrl))
+  tvPreloadPicture(slide.mediaUrl);
+ for(const url of slide.optionImages||[])tvPreloadPicture(url);
+ if(lastAudienceLiveSlide?.index===slide.index&&lastAudienceLiveSlide?.slideType==="question"){
+  renderSharedSlide($("stageCanvas"),enrichTvSlide(lastAudienceLiveSlide));
+ }
+ reportQuizPreloadProgress();
+ queueQuizPreloadRequests();
+}
+
 function connectAudience(room){
  $("editorApp").hidden=true;$("stageApp").hidden=false;
  $("stageCanvas").textContent="Povezujem ekran za publiku…";
@@ -1929,20 +2051,27 @@ function connectAudience(room){
  KTGSync.startAudience({
   room,
   onState:slide=>{
+   requestPreloadManifestIfNeeded(slide);
    const version=Number(slide.scoreResetVersion||0);
    if(version<lastScoreResetVersion)return; // Late pre-reset state must not restore teams on TV.
    lastScoreResetVersion=Math.max(lastScoreResetVersion,version);
    const signature=JSON.stringify(slide);
    if(signature!==lastSlide){
-    renderSharedSlide($("stageCanvas"),slide);lastSlide=signature;
+    lastAudienceLiveSlide=slide;
+    renderSharedSlide($("stageCanvas"),enrichTvSlide(slide));lastSlide=signature;
     setAudienceSongSlide(slide);
    }
   },
+  onPreloadManifest:manifest=>receiveQuizPreloadManifest(manifest),
+  onPreloadSlide:packet=>receiveQuizPreloadSlide(packet),
   onSongChunk:chunk=>receiveAudienceSongChunk(chunk),
   onSongControl:command=>applyAudienceSongControl(command),
   onStatus:status=>{
    if(status==="Povezano"&&!lastSlide)$("stageCanvas").textContent="Ekran je povezan. Čekam voditelja kviza…";
-   else if(status!=="Povezano"){$("stageCanvas").textContent=status;lastSlide="";resetAudienceSong();}
+   else if(status!=="Povezano"){
+    $("stageCanvas").textContent=status;lastSlide="";lastAudienceLiveSlide=null;
+    resetAudienceSong();clearQuizPreload();clearQuizAudioPreload();
+   }
   }
  });
  $("tvSoundUnlock").addEventListener("click",()=>playAudienceSong());
