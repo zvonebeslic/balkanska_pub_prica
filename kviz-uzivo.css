@@ -1329,3 +1329,34 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
   padding-bottom:5px;
  }
 }
+
+/* Live picture size controls with explicit save, next to the question font controls. */
+.image-live-size-controls{margin-top:8px;max-width:min(100%,1040px);gap:8px}
+.image-live-size-controls[hidden]{display:none!important}
+.image-live-size-controls #imageSizeTarget{max-width:140px;min-height:37px;border-radius:9px;background:#13334a;border:1px solid #477795;color:#e1f2fa;font-weight:750;padding:6px 8px}
+.image-live-size-controls #imageSizeTarget[hidden]{display:none!important}
+.image-live-size-controls #imageSmaller,.image-live-size-controls #imageLarger{min-width:45px;font-size:23px}
+.image-live-size-controls #imageSizeReset{min-width:54px;font-size:13px}
+.image-live-size-controls #imageSizeSave{min-width:146px;background:#16865b;color:#fff;font-size:13px;white-space:nowrap}
+.image-live-size-controls #imageSizeSave:not(:disabled):hover{background:#24a875}
+.image-live-size-controls .image-size-status{flex-basis:100%;text-align:center;color:#a2c4d8;font-size:12px;font-weight:700}
+.image-live-size-controls #imageSizeSave:disabled{opacity:.35;cursor:not-allowed}
+.media-scale-controls .media-scale-save{font-size:12px;min-width:120px;background:#16865b}
+.media-scale-controls .media-scale-save:disabled{opacity:.35;cursor:not-allowed}
+.media-scale-controls .media-scale-hint{font-size:11px;color:#acd0e6;white-space:nowrap}
+.abc-option-editor .media-scale-controls .media-scale-save{min-width:100%;min-height:34px}
+.abc-option-editor .media-scale-controls .media-scale-hint{flex-basis:100%;text-align:center}
+/* Give enlarged single photographs more room beside the question while retaining the original layout for 100%. */
+@media(min-width:651px){
+ .slide--question .screen-body.has-single-image.zoom-image-large{grid-template-columns:minmax(0,1.35fr) minmax(0,1.4fr)}
+ .slide--question .screen-body.has-single-image.zoom-image-xl{grid-template-columns:minmax(0,1fr) minmax(0,1.7fr)}
+ .slide--question .has-single-image.zoom-image-large .screen-media img{max-height:min(51vh,550px);max-width:100%}
+ .slide--question .has-single-image.zoom-image-xl .screen-media img{max-height:min(59vh,650px);max-width:100%}
+}
+@media(max-width:650px){
+ .image-live-size-controls{max-width:100%;padding:9px;gap:6px}
+ .image-live-size-controls button{padding:8px 9px;min-width:38px}
+ .image-live-size-controls #imageSizeSave{min-width:120px}
+ .slide--question .has-single-image.zoom-image-large .screen-media img,
+ .slide--question .has-single-image.zoom-image-xl .screen-media img{max-height:43vh;max-width:100%}
+}
