@@ -1563,6 +1563,9 @@ const audienceSong={
  pending:null,pendingSeek:null,loaded:false,blocked:false
 };
 let audienceDeferredControl=null;
+// Reuse the SAME hidden media element between song questions. Some TV/Safari
+// browsers remember the user's sound permission only for that element.
+let audiencePersistentMedia=null;
 function reportAudienceAudio(message){
  if(!audienceSong.key)return;
  window.KTGSync?.reportSongStatus?.({key:audienceSong.key,message});
@@ -1574,7 +1577,8 @@ function resetAudienceSong(){
   audienceSong.media.pause();
   audienceSong.media.removeAttribute("src");
   audienceSong.media.load();
-  audienceSong.media.remove();
+  // Do not remove the hidden element. Reuse it for the next song so TV
+  // autoplay permission from the first user click continues to apply.
  }
  if(audienceSong.objectUrl)URL.revokeObjectURL(audienceSong.objectUrl);
  Object.assign(audienceSong,{
@@ -1620,25 +1624,32 @@ function requestAudienceSongPiece(){
 }
 function makeAudienceAudio(src,kind,key){
  if(key!==audienceSong.key)return;
- const audio=document.createElement(kind?.startsWith("video/")?"video":"audio");
- audio.preload="auto";audio.controls=false;audio.hidden=true;
- audio.setAttribute("aria-hidden","true");
- audio.addEventListener("loadedmetadata",()=>{
-  if(audienceSong.media===audio&&Number.isFinite(audienceSong.pendingSeek)){
-   const desired=audienceSong.pendingSeek;
-   audienceSong.pendingSeek=null;
-   try{audio.currentTime=Number.isFinite(audio.duration)&&audio.duration>0?
-    Math.min(desired,Math.max(0,audio.duration-.15)):desired;}catch{}
-  }
- });
- audio.addEventListener("error",()=>{
-  if(audienceSong.media===audio)reportAudienceAudio("TV ne može otvoriti glazbenu datoteku.");
- });
- audio.addEventListener("ended",()=>{
-  if(audienceSong.media===audio)reportAudienceAudio("Isječak je završio na TV-u.");
- });
+ const tag=kind?.startsWith("video/")?"video":"audio";
+ let audio=audiencePersistentMedia;
+ if(!audio||String(audio.tagName||"").toLowerCase()!==tag){
+  if(audio){audio.pause();audio.remove();}
+  audio=document.createElement(tag);
+  audio.preload="auto";audio.controls=false;audio.hidden=true;
+  audio.setAttribute("aria-hidden","true");
+  audio.addEventListener("loadedmetadata",()=>{
+   if(audienceSong.media===audio&&Number.isFinite(audienceSong.pendingSeek)){
+    const desired=audienceSong.pendingSeek;
+    audienceSong.pendingSeek=null;
+    try{audio.currentTime=Number.isFinite(audio.duration)&&audio.duration>0?
+     Math.min(desired,Math.max(0,audio.duration-.15)):desired;}catch{}
+   }
+  });
+  audio.addEventListener("error",()=>{
+   if(audienceSong.media===audio)reportAudienceAudio("TV ne može otvoriti glazbenu datoteku.");
+  });
+  audio.addEventListener("ended",()=>{
+   if(audienceSong.media===audio)reportAudienceAudio("Isječak je završio na TV-u.");
+  });
+  $("stageApp").append(audio);
+  audiencePersistentMedia=audio;
+ }
+ audio.pause();
  audio.src=src;
- $("stageApp").append(audio);
  audienceSong.media=audio;
  audienceSong.loaded=true;
  audio.load();
