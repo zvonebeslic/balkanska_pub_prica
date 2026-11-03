@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chatgpt10000-01071-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bajkal",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koje sibirsko jezero slovi za najdublje na svijetu?",
+    "answers": [
+      "Bajkal",
+      "Bajkalsko jezero"
+    ],
+    "explanation": "Bajkal je najdublje jezero svijeta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lake_Baikal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01072-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Životinje",
+    "focus": "Narval",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kod kojeg arktičkog kita duga spiralna kljova zapravo predstavlja izduženi zub?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalova kljova je zub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01073-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Umjetnost",
+    "focus": "Poentilizam",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Koja slikarska tehnika gradi prizore mnoštvom sitnih točaka boje?",
+    "answers": [
+      "Poentilizam",
+      "Pointilizam"
+    ],
+    "explanation": "Poentilizam koristi točke boje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pointillism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01074-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Medicina",
+    "focus": "Gušterača",
+    "difficulty": 5,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Koji organ proizvodi hormon inzulin?",
+    "answers": [
+      "Gušterača",
+      "Pankreas"
+    ],
+    "explanation": "Beta-stanice gušterače proizvode inzulin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pancreas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01075-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ koja se jednako čita u oba smjera?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom je simetričan niz znakova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01076-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Gastronomija",
+    "focus": "Miso",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavna sirovina japanske fermentirane paste miso?",
+    "answers": [
+      "Soja"
+    ],
+    "explanation": "Miso se tradicionalno dobiva fermentacijom soje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Miso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01077-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Saturnov mjesec ima gustu atmosferu i jezera tekućeg metana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan ima jezera ugljikovodika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01078-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Arhitektura",
+    "focus": "Okulus",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove kružni otvor na vrhu kupole rimskog Panteona?",
+    "answers": [
+      "Okulus",
+      "Oculus"
+    ],
+    "explanation": "Okulus propušta svjetlost kroz kupolu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pantheon,_Rome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01079-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris",
+    "difficulty": 5,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "Koja igra iz 1984. traži slaganje padajućih oblika od četiri kvadrata?",
+    "answers": [
+      "Tetris"
+    ],
+    "explanation": "Tetris se temelji na tetrominima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tetris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01080-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine engleski kralj Ivan pristao na Magnu Cartu?",
+    "answers": [
+      "1215"
+    ],
+    "explanation": "Magna Carta izdana je 1215.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
