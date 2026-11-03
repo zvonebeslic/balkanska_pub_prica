@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-01171-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Kemija",
+    "focus": "Vulkanizacija",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Zašto automobilska guma ne postaje ljepljiva čim zatopli? Koji postupak povezivanja polimernih lanaca sumporom povećava elastičnost i trajnost kaučuka?",
+    "answers": [
+      "Vulkanizacija"
+    ],
+    "explanation": "Vulkanizacija stvara poprečne veze među polimernim lancima kaučuka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vulcanization"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01172-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička država potpuno okružena Južnoafričkom Republikom, a čitav njezin teritorij leži iznad 1000 metara nadmorske visine?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je enklava unutar Južnoafričke Republike i ima izrazito visoku prosječnu nadmorsku visinu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01173-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Glazba",
+    "focus": "Teremin",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na kojem glazbenom instrumentu izvođač mijenja visinu i glasnoću tona pokretima ruku u zraku, bez dodirivanja instrumenta?",
+    "answers": [
+      "Teremin",
+      "Theremin"
+    ],
+    "explanation": "Teremin koristi elektromagnetska polja i dvije antene za kontrolu zvuka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Theremin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01174-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Povijest",
+    "focus": "Kipu",
+    "difficulty": 4,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Inke nisu vodile brojčane zapise slovima: podatke su bilježile čvorovima na obojenim uzicama. Kako se zove taj sustav?",
+    "answers": [
+      "Kipu",
+      "Quipu",
+      "Khipu"
+    ],
+    "explanation": "Kipu je sustav uzica i čvorova korišten za evidenciju u carstvu Inka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Quipu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01175-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Biologija",
+    "focus": "Mikoriza",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva simbioza gljive i korijena biljke, u kojoj gljiva pomaže upijati vodu i minerale, a biljka joj daje organske tvari?",
+    "answers": [
+      "Mikoriza"
+    ],
+    "explanation": "Mikoriza je vrlo česta simbioza korijena biljaka i gljiva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mycorrhiza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01176-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Matematika",
+    "focus": "Möbiusova vrpca",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Papirnatu traku zakrenemo za pola okreta pa spojimo krajeve. Koju matematičku plohu sa samo jednom stranom smo dobili?",
+    "answers": [
+      "Möbiusova vrpca",
+      "Mobiusova vrpca",
+      "Möbiusova traka",
+      "Mobiusova traka"
+    ],
+    "explanation": "Möbiusova vrpca neorijentabilna je ploha s jednim rubom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/M%C3%B6bius_strip"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01177-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Film",
+    "focus": "Foley",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U filmskoj postprodukciji umjetnik šuška tkaninom, lupa cipelama i lomi povrće kako bi ponovno stvorio zvukove radnji. Kako se naziva ta tehnika?",
+    "answers": [
+      "Foley",
+      "Foley efekt",
+      "Foley tehnika"
+    ],
+    "explanation": "Foley je snimanje i sinkronizacija zvučnih efekata s radnjom na ekranu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Foley_(filmmaking)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01178-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Sport",
+    "focus": "Keirin",
+    "difficulty": 4,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojoj biciklističkoj disciplini natjecatelji u početnim krugovima prate motocikl koji postupno ubrzava, a zatim sprintaju do cilja?",
+    "answers": [
+      "Keirin"
+    ],
+    "explanation": "Keirin je disciplina utrka na velodromu, nastala u Japanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Keirin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01179-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Sfumato",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove slikarska tehnika mekih prijelaza bez oštrih obrisa, osobito povezana s Leonardom da Vincijem?",
+    "answers": [
+      "Sfumato"
+    ],
+    "explanation": "Sfumato daje dojam izmaglice i suptilnog prijelaza svjetla u sjenu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sfumato"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01180-20261103",
+    "createdAt": "2026-11-03T16:37:49+01:00",
+    "updatedAt": "2026-11-03T16:37:49+01:00",
+    "topic": "Astronomija",
+    "focus": "Rocheova granica",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Kako se naziva udaljenost od planeta unutar koje plimne sile mogu rastrgati satelit ako ga na okupu drži samo vlastita gravitacija?",
+    "answers": [
+      "Rocheova granica",
+      "Rocheov limit"
+    ],
+    "explanation": "Rocheova granica određuje približnu udaljenost na kojoj plimne sile nadvladaju samogravitaciju tijela.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Roche_limit"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
