@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
 <meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=41">
+<link rel="stylesheet" href="kviz-uzivo.css?v=42">
 </head>
 <body>
 <div id="editorApp">
@@ -86,6 +86,17 @@
       <button id="questionLarger" type="button" aria-label="Povećaj slova pitanja">A+</button>
       <button id="questionSizeReset" type="button" title="Vrati prilagodljivu zadanu veličinu">Automatski</button>
     </div>
+    <section id="songPlayerPanel" class="song-player-panel" aria-label="Kontrole glazbenog isjecka" hidden>
+      <div class="song-player-head"><strong>Glazbeni isjecak</strong><span id="songTime">0:00 / --:--</span></div>
+      <div class="song-player-buttons">
+        <button id="songPlay" type="button" class="success" disabled>Pokreni</button>
+        <button id="songPause" type="button" disabled>Pauza</button>
+        <button id="songRestart" type="button" disabled>Od pocetka</button>
+        <button id="songStop" type="button" class="danger" disabled>Zaustavi</button>
+      </div>
+      <p id="songPlayerStatus" class="song-player-status" aria-live="polite">Dodaj glazbeni isjecak u uredivacu.</p>
+      <p class="song-player-hint">Zvuk se reproducira na voditeljskom uredaju; za TV ili razglas spoji njegov zvucni izlaz.</p>
+    </section>
     <div class="host-extras">
       <button id="scoresBtn" type="button">🏆 Prikaži ljestvicu</button>
       <span class="host-count" id="hostCounter">Slajd 1</span>
@@ -190,6 +201,6 @@
 <div id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
 <script src="kviz-uzivo-sync.js?v=5" defer></script>
-<script src="kviz-uzivo.js?v=66" defer></script>
+<script src="kviz-uzivo.js?v=67" defer></script>
 </body>
 </html>
