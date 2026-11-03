@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-01260-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Arhitektura",
+    "focus": "Kupola Firentinske katedrale Brunelleschi",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koji je renesansni graditelj osmislio veliku kupolu firentinske katedrale Santa Maria del Fiore?",
+    "answers": [
+      "Filippo Brunelleschi",
+      "Brunelleschi"
+    ],
+    "explanation": "Brunelleschi je razvio inovativnu konstrukciju dvostruke kupole.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Filippo_Brunelleschi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01261-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Kemija",
+    "focus": "Teflon PTFE",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koja je četveroslovna kratica za polimer poznat pod trgovačkim nazivom teflon?",
+    "answers": [
+      "PTFE"
+    ],
+    "explanation": "Teflon je trgovački naziv za politetrafluoretilen, PTFE.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Polytetrafluoroethylene"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01262-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Povijest",
+    "focus": "Hastings 1066 Normani",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "U kojoj je bitci 1066. Vilim Osvajač porazio engleskog kralja Harolda II.?",
+    "answers": [
+      "Bitka kod Hastingsa",
+      "Hastings"
+    ],
+    "explanation": "Normanska pobjeda kod Hastingsa otvorila je put osvajanju Engleske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Battle_of_Hastings"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01263-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Sport",
+    "focus": "Tour de France žuta majica",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koja boja majice označava vodećeg biciklista u ukupnom poretku Tour de Francea?",
+    "answers": [
+      "Žuta",
+      "Žuta boja"
+    ],
+    "explanation": "Žuta majica dodjeljuje se vodećem u generalnom plasmanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yellow_jersey"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01264-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Jezik",
+    "focus": "Esperanto tvorac Zamenhof",
+    "difficulty": 3,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je liječnik 1887. predstavio planski jezik esperanto?",
+    "answers": [
+      "Ludwik Zamenhof",
+      "L. L. Zamenhof",
+      "Zamenhof"
+    ],
+    "explanation": "Zamenhof je objavio temelje esperanta u knjizi Unua Libro.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/L._L._Zamenhof"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01265-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Geologija",
+    "focus": "Bazalt vulkanska stijena",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja tamna magmatska stijena čini najveći dio oceanske kore?",
+    "answers": [
+      "Bazalt"
+    ],
+    "explanation": "Bazalt je česta vulkanska stijena oceanskog dna.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Basalt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01266-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Umjetnost",
+    "focus": "Guernica Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je slikar 1937. stvorio monumentalnu antiratnu sliku Guernica?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je naslikao Guernicu kao odgovor na bombardiranje baskijskog grada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01267-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Medicina",
+    "focus": "Inzulin gušterača",
+    "difficulty": 1,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Koji organ u ljudskom tijelu proizvodi hormon inzulin?",
+    "answers": [
+      "Gušterača",
+      "Pankreas"
+    ],
+    "explanation": "Beta-stanice Langerhansovih otočića gušterače izlučuju inzulin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pancreas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01268-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "More i ocean",
+    "focus": "Marijanska brazda Tihi ocean",
+    "difficulty": 2,
+    "styleId": 49,
+    "styleDescription": "Opiši morsku struju i traži ocean ili područje",
+    "question": "U kojem se oceanu nalazi Marijanska brazda, najdublji poznati dio svjetskog oceana?",
+    "answers": [
+      "Tihi ocean",
+      "Pacifik"
+    ],
+    "explanation": "Marijanska brazda nalazi se u zapadnom dijelu Tihog oceana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mariana_Trench"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01269-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Mitologija",
+    "focus": "Perzefona Had podzemlje",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Koju je božicu prema grčkom mitu Had odveo u podzemni svijet, a njezin povratak povezan je s godišnjim dobima?",
+    "answers": [
+      "Perzefona",
+      "Persephone"
+    ],
+    "explanation": "Perzefona dio godine provodi s Hadom, a dio s majkom Demetrom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Persephone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
