@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-01181-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Životinje",
+    "focus": "Aksolotl",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac i nakon spolne zrelosti zadržava vanjske škrge, a poznat je i po regeneraciji udova?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl"
+    ],
+    "explanation": "Aksolotl je neotenični daždevnjak koji zadržava mladenačke značajke i u odrasloj dobi.",
+    "sources": [
+      "https://www.mnhn.fr/fr/axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01182-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Povijest",
+    "focus": "Kamen iz Rosette",
+    "difficulty": 3,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Na kojem su slavnom egipatskom kamenu isti dekret zapisali hijeroglifima, demotskim i grčkim pismom, što je pomoglo odgonetnuti hijeroglife?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Kamen iz Rozete",
+      "Rosetta Stone"
+    ],
+    "explanation": "Pronađen 1799., kamen je omogućio usporedbu grčkog teksta s egipatskim pismima.",
+    "sources": [
+      "https://www.britishmuseumshoponline.org/rosetta-stone-silk-scarf-black.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01183-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Jezik",
+    "focus": "Silbo Gomero",
+    "difficulty": 4,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Na kojem kanarskom otoku djeca uče sustav zviždanja kojim se mogu prenositi rečenice na španjolskom, poznat kao Silbo Gomero?",
+    "answers": [
+      "La Gomera",
+      "Gomera"
+    ],
+    "explanation": "UNESCO je 2009. uvrstio zviždani jezik otoka La Gomera na popis nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/whistled-language-of-the-island-of-la-gomera-canary-islands-the-silbo-gomero-00172"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01184-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Medicina",
+    "focus": "Iskorjenjivanje velikih boginja",
+    "difficulty": 2,
+    "styleId": 100,
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "question": "Koje je godine Svjetska zdravstvena skupština službeno proglasila velike boginje iskorijenjenima?",
+    "answers": [
+      "1980",
+      "1980."
+    ],
+    "explanation": "Svjetska zdravstvena skupština usvojila je službenu deklaraciju 8. svibnja 1980.",
+    "sources": [
+      "https://www.who.int/news/item/08-05-2020-commemorating-smallpox-eradication-a-legacy-of-hope-for-covid-19-and-other-diseases"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01185-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bill English i računalni miš",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Douglas Engelbart zamislio je računalni miš, ali koji je inženjer 1964. izradio njegov prvi drveni prototip?",
+    "answers": [
+      "Bill English",
+      "William English"
+    ],
+    "explanation": "Bill English izradio je prototip računalnog miša u laboratoriju SRI-ja.",
+    "sources": [
+      "https://computerhistory.org/sri-mouse-mn052024/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01186-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Geologija",
+    "focus": "Plovućac",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Većina kamenja tone, no jedna vulkanska stijena zbog mnoštva šupljina može plutati na vodi. Kako se zove?",
+    "answers": [
+      "Plovućac",
+      "Plovucac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac je porozna vulkanska stijena čija je ukupna gustoća često manja od gustoće vode.",
+    "sources": [
+      "https://www.usgs.gov/media/images/rocks-sink-or-float"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01187-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Ukiyo-e",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "U japanskoj umjetnosti razdoblja Edo višebojni drvorezi izrađivali su se zasebnim drvenim blokom za svaku boju. Kako se zove umjetnički pravac poznat po tim grafikama?",
+    "answers": [
+      "Ukiyo-e",
+      "Ukiyo e"
+    ],
+    "explanation": "Ukiyo-e obuhvaća japanske slike i grafike, među kojima su posebno poznati višebojni drvorezi.",
+    "sources": [
+      "https://www.metmuseum.org/fr/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01188-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera i trajanje rotacije",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedan okret oko vlastite osi traje oko 243 zemaljska dana, dulje od njegove godine od približno 225 dana?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se oko osi okreće vrlo sporo, a oko Sunca obiđe za približno 225 zemaljskih dana.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01189-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Sport",
+    "focus": "Skip u curlingu",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U curlingu prvi baca lead, zatim second i third. Kako se naziva kapetan momčadi koji u pravilu baca posljednji?",
+    "answers": [
+      "Skip"
+    ],
+    "explanation": "Skip je kapetan četveročlane curling momčadi i baca posljednje kamenove.",
+    "sources": [
+      "https://www.olympics.com/ioc/world-curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01190-20261103",
+    "createdAt": "2026-11-03T17:41:00+01:00",
+    "updatedAt": "2026-11-03T17:41:00+01:00",
+    "topic": "Zanati",
+    "focus": "Drvorez u boji",
+    "difficulty": 5,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Japanski majstori višebojnog tiska morali su precizno poravnati otiske različitih blokova. Koji se osnovni materijal rezao kako bi nastale tiskarske matrice?",
+    "answers": [
+      "Drvo",
+      "Drvena ploča",
+      "Drvene ploče"
+    ],
+    "explanation": "Za japanske drvoreze umjetnikova slika prenosila se na drveni blok, često od trešnjina drva, koji se potom rezbario.",
+    "sources": [
+      "https://www.metmuseum.org/fr/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
