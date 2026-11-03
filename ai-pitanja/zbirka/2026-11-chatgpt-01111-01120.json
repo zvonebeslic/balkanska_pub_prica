@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-01111-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bab el-Mandeb",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji tjesnac između Jemena i Džibutija povezuje Crveno more s Adenskim zaljevom?",
+    "answers": [
+      "Bab el-Mandeb",
+      "Bab al-Mandab"
+    ],
+    "explanation": "Arapski naziv znači Vrata suza.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bab-el-Mandeb"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01112-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Biologija",
+    "focus": "Mikoriza",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva korisna zajednica gljive i korijena biljke?",
+    "answers": [
+      "Mikoriza"
+    ],
+    "explanation": "Gljiva pomaže u unosu minerala, a biljka je opskrbljuje šećerima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mycorrhiza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01113-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Književnost",
+    "focus": "Baskervilleski pas",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem romanu Sherlock Holmes istražuje prokletstvo obitelji koju navodno progoni golemi pas?",
+    "answers": [
+      "Baskervilleski pas",
+      "Pas Baskervilleovih"
+    ],
+    "explanation": "Roman je napisao Arthur Conan Doyle.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Hound_of_the_Baskervilles"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01114-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Matematika",
+    "focus": "Möbiusova vrpca",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Papirnatu traku zakrenemo za pola okreta pa spojimo krajeve. Kako se zove nastala ploha sa samo jednom stranom?",
+    "answers": [
+      "Möbiusova vrpca",
+      "Mobiusova vrpca"
+    ],
+    "explanation": "Ta neorijentabilna ploha ima samo jedan rub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Möbius_strip"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01115-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Glazba",
+    "focus": "Bolero",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja Ravelova skladba iz 1928. gotovo cijelo vrijeme ponavlja melodiju uz sve glasniji orkestar?",
+    "answers": [
+      "Bolero",
+      "Boléro"
+    ],
+    "explanation": "Boléro je poznat po dugom crescendu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Boléro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01116-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Sport",
+    "focus": "Fosbury flop",
+    "difficulty": 4,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Kako se naziva tehnika skoka u vis leđima preko letvice, proslavljena na Olimpijskim igrama 1968.?",
+    "answers": [
+      "Fosbury flop",
+      "Fosburyjev flop"
+    ],
+    "explanation": "Dick Fosbury osvojio je zlato u Mexico Cityju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fosbury_flop"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01117-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Povijest",
+    "focus": "Tordesillas",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "U kojem je španjolskom gradu 1494. sklopljen sporazum o podjeli prekooceanskih interesnih zona Portugala i Kastilje?",
+    "answers": [
+      "Tordesillas"
+    ],
+    "explanation": "Sporazum je poznat kao Ugovor iz Tordesillasa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01118-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Kemija",
+    "focus": "Volfram",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol W prema nazivu wolfram?",
+    "answers": [
+      "Volfram",
+      "Wolfram"
+    ],
+    "explanation": "Engleski naziv elementa je tungsten.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01119-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Film",
+    "focus": "Metropolis",
+    "difficulty": 3,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji njemački nijemi znanstvenofantastični film Fritza Langa iz 1927. prikazuje futuristički grad podijeljen po klasama?",
+    "answers": [
+      "Metropolis"
+    ],
+    "explanation": "Film je klasik ekspresionističke kinematografije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Metropolis_(1927_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01120-20261103",
+    "createdAt": "2026-11-03T14:37:44+01:00",
+    "updatedAt": "2026-11-03T14:37:44+01:00",
+    "topic": "Životinje",
+    "focus": "Okapi",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji šumski sisavac iz Konga ima prugaste noge nalik zebrama, a najbliži mu je srodnik žirafa?",
+    "answers": [
+      "Okapi"
+    ],
+    "explanation": "Okapi pripada porodici žirafa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
