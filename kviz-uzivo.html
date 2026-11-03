@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Kviz uživo | KvizToGo</title>
 <meta name="description" content="Upravljanje pub kvizovima uživo uz odvojeni prikaz za publiku.">
-<link rel="stylesheet" href="kviz-uzivo.css?v=44">
+<link rel="stylesheet" href="kviz-uzivo.css?v=45">
 </head>
 <body>
 <div id="editorApp">
@@ -85,6 +85,16 @@
       <span id="questionSizeValue" class="question-size-value">100 %</span>
       <button id="questionLarger" type="button" aria-label="Povećaj slova pitanja">A+</button>
       <button id="questionSizeReset" type="button" title="Vrati prilagodljivu zadanu veličinu">Automatski</button>
+    </div>
+    <div id="imageSizeControls" class="question-size-controls image-live-size-controls" aria-label="Veličina slike na kvizu" hidden>
+      <span class="question-size-label">Slika</span>
+      <select id="imageSizeTarget" aria-label="Odaberi sliku za povećavanje"></select>
+      <button id="imageSmaller" type="button" aria-label="Smanji sliku za jedan posto">−</button>
+      <output id="imageSizeValue" class="question-size-value" aria-live="polite">100%</output>
+      <button id="imageLarger" type="button" aria-label="Povećaj sliku za jedan posto">+</button>
+      <button id="imageSizeReset" type="button" title="Privremeno vrati sliku na 100 posto">100%</button>
+      <button id="imageSizeSave" type="button" class="primary" disabled>✓ Spremi veličinu</button>
+      <small id="imageSizeState" class="image-size-status">Spremljeno</small>
     </div>
     <section id="songPlayerPanel" class="song-player-panel" aria-label="Kontrole glazbenog isječka" hidden>
       <div class="song-player-head"><strong>Glazbeni isječak</strong><span id="songTime">0:00 / –:––</span></div>
@@ -202,6 +212,6 @@
 <div id="toast" role="status" hidden></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0"></script>
 <script src="kviz-uzivo-sync.js?v=8" defer></script>
-<script src="kviz-uzivo.js?v=73" defer></script>
+<script src="kviz-uzivo.js?v=74" defer></script>
 </body>
 </html>
