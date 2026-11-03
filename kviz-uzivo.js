@@ -92,7 +92,7 @@ let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard
 let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
-const songPlayer={key:"",media:null,objectUrl:"",loading:false,message:"",sourceType:"",tvStatus:""};
+const songPlayer={key:"",media:null,objectUrl:"",loading:false,message:"",sourceType:"",tvStatus:"",tvReady:false};
 let songControlSequence=0;
 const SONG_CHUNK_BYTES=48000,SONG_MAX_BYTES=60*1024*1024;
 const songTransferCache={key:"",blob:null,type:""};
@@ -811,6 +811,10 @@ function songTVStatus(payload){
  const active=activeSongSlide();
  if(!active||payload.key!==songKeyFor(active.slide,active.q))return;
  songPlayer.tvStatus=String(payload.message||"").slice(0,200);
+ if(/TV je primio pjesmu|Pjesma se reproducira na TV-u/.test(songPlayer.tvStatus))
+  songPlayer.tvReady=true;
+ else if(/nije dostupna|ne može|prekinut|neispravna|neuspjelo|nedostaje/.test(songPlayer.tvStatus.toLowerCase()))
+  songPlayer.tvReady=false;
  refreshSongButtons();
 }
 function activeSongSlide(){
@@ -827,15 +831,19 @@ function refreshSongButtons(){
  const panel=$("songPlayerPanel");
  if(!panel||panel.hidden)return;
  const media=songPlayer.media,ready=!!media&&!!media.src&&!songPlayer.loading;
- $("songPlay").disabled=!ready;
+ const paired=!!pairing&&!!window.KTGSync?.isHost();
+ const tvReady=!paired||songPlayer.tvReady;
+ $("songPlay").disabled=!ready||!tvReady;
  $("songPause").disabled=!ready||!!media.paused;
- $("songRestart").disabled=!ready;
+ $("songRestart").disabled=!ready||!tvReady;
  $("songStop").disabled=!ready;
  const duration=ready&&Number.isFinite(media.duration)?musicTime(media.duration):"–:––";
  $("songTime").textContent=musicTime(ready?media.currentTime:0)+" / "+duration;
- $("songPlayerStatus").textContent=(songPlayer.tvStatus&&pairing?songPlayer.tvStatus+" · ":"")+
-   (songPlayer.loading?"Učitavam glazbeni isječak…":
-   songPlayer.message||(ready?(media.paused?"Spremno za reprodukciju.":"Pjesma se reproducira."):"Dodaj audio datoteku u uređivaču."));
+ const localStatus=songPlayer.loading?"Učitavam glazbeni isječak…":
+  songPlayer.message||(ready?(media.paused?"Spremno za reprodukciju.":"Pjesma se reproducira."):"Dodaj audio datoteku u uređivaču.");
+ $("songPlayerStatus").textContent=paired?
+  (songPlayer.tvStatus||"Čekam TV da preuzme pjesmu. Pokreni će biti dostupno kad TV bude spreman."):
+  localStatus;
 }
 function clearSongPlayer(){
  const media=songPlayer.media;
@@ -847,6 +855,8 @@ function clearSongPlayer(){
  songPlayer.loading=false;
  songPlayer.message="";
  songPlayer.sourceType="";
+ songPlayer.tvStatus="";
+ songPlayer.tvReady=false;
  songPlayer.media=null;
  if(media){
   media.pause();
@@ -907,6 +917,7 @@ function updateSongPlayer(){
  songPlayer.key=key;
  songPlayer.sourceType=type;
  songPlayer.tvStatus="";
+ songPlayer.tvReady=false;
  songTransferCache.key="";songTransferCache.blob=null;songTransferCache.type="";
  if(type==="none"){
   songPlayer.message="U uređivaču ovog pitanja dodaj audioisječak pjesme.";
@@ -921,6 +932,9 @@ function updateSongPlayer(){
 async function controlSongPlayer(action){
  const media=songPlayer.media;
  if(!media||songPlayer.loading)return;
+ if((action==="play"||action==="restart")&&pairing&&window.KTGSync?.isHost()&&!songPlayer.tvReady){
+  songPlayer.message="TV još preuzima pjesmu.";refreshSongButtons();return;
+ }
  try{
   if(pairing&&window.KTGSync?.isHost()){
    media.muted=true;
@@ -1508,7 +1522,8 @@ function startPairing(){
  $("controlLink").value=controllerUrl(info.room,info.secret);
  KTGSync.startHost({
   room:info.room,controlSecret:info.secret,getState:sharedSlide,
-  onStatus:s=>$("pairStatus").textContent=s,
+  onStatus:s=>$("pairStatus").textContent=s==="Povezano"?"Veza spremna. Čekam TV…":s,
+  onAudienceHello:()=>{$("pairStatus").textContent="TV je povezan.";},
   onSongRequest:request=>handleSongRequest(request),
   onSongStatus:status=>songTVStatus(status),
   onCommand:action=>{
@@ -1521,10 +1536,16 @@ function startPairing(){
    else if(action==="board"){showBoard=!showBoard;renderAll();}
   }
  });
+ songPlayer.tvStatus="";
+ songPlayer.tvReady=false;
  if(songPlayer.media)songPlayer.media.muted=true;
+ refreshSongButtons();
 }
 function endPairing(){
  if(songPlayer.media)songPlayer.media.muted=false;
+ songPlayer.tvStatus="";
+ songPlayer.tvReady=false;
+ refreshSongButtons();
  if(window.KTGSync)KTGSync.stop();
  pairing=null;
  if($("pairPanel"))$("pairPanel").hidden=true;
