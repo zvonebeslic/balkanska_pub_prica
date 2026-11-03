@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-01320-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine engleski kralj Ivan bez Zemlje pristao na Magnu Cartu?",
+    "answers": [
+      "1215"
+    ],
+    "explanation": "Magna Carta potvrđena je 1215. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01321-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Zemljopis",
+    "focus": "Beringov prolaz kontinenti",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koji morski prolaz razdvaja Aljasku od Čukotke i time Aziju od Sjeverne Amerike?",
+    "answers": [
+      "Beringov prolaz"
+    ],
+    "explanation": "Beringov prolaz povezuje Arktički ocean s Beringovim morem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bering_Strait"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01322-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Književnost",
+    "focus": "Frankenstein Mary Shelley",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska književnica napisala roman Frankenstein, objavljen 1818. godine?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "explanation": "Mary Shelley objavila je Frankenstein 1818.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frankenstein"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01323-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Astronomija",
+    "focus": "Halley komet 76 godina",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji je komet poznat po povratku u blizinu Sunca približno svakih 76 godina?",
+    "answers": [
+      "Halleyjev komet",
+      "Halley"
+    ],
+    "explanation": "Halleyjev komet periodički se vraća kroz unutarnji Sunčev sustav.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Halley%27s_Comet"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01324-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Gastronomija",
+    "focus": "tempura prženje tijesto",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se naziva japanski način pripreme povrća ili morskih plodova u laganom tijestu, prženih u dubokom ulju?",
+    "answers": [
+      "Tempura"
+    ],
+    "explanation": "Tempura je poznata japanska tehnika prženja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tempura"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01325-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Glazba",
+    "focus": "sitar indijsko glazbalo",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Koje indijsko trzalačko glazbalo dugog vrata i rezonantnih žica proslavio je Ravi Shankar?",
+    "answers": [
+      "Sitar"
+    ],
+    "explanation": "Ravi Shankar bio je međunarodno poznat virtuoz na sitaru.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sitar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01326-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Sport",
+    "focus": "decathlon deset disciplina",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko disciplina obuhvaća atletski desetoboj?",
+    "answers": [
+      "10",
+      "Deset"
+    ],
+    "explanation": "Desetoboj se sastoji od deset atletskih disciplina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Decathlon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01327-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Biologija",
+    "focus": "tardigrada vodeni medvjed",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koje mikroskopske životinje nazivamo i vodenim medvjedićima, a poznate su po sposobnosti preživljavanja ekstremnih uvjeta?",
+    "answers": [
+      "Dugoživci",
+      "Tardigrade",
+      "Tardigrada"
+    ],
+    "explanation": "Dugoživci mogu preživjeti nepovoljne uvjete u stanju kriptobioze.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tardigrade"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01328-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Film",
+    "focus": "Akira Kurosawa Sedam samuraja",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je japanski redatelj snimio film Sedam samuraja iz 1954. godine?",
+    "answers": [
+      "Akira Kurosawa",
+      "Kurosawa"
+    ],
+    "explanation": "Sedam samuraja jedan je od najutjecajnijih Kurosawinih filmova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Seven_Samurai"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01329-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Matematika",
+    "focus": "Eulerovi mostovi Königsberg",
+    "difficulty": 4,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Koji je matematičar riješio problem sedam mostova Königsberga i time postavio temelje teorije grafova?",
+    "answers": [
+      "Leonhard Euler",
+      "Euler"
+    ],
+    "explanation": "Euler je 1736. matematički obradio problem königsberških mostova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Seven_Bridges_of_Königsberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
