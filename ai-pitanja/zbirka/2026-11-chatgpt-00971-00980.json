@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-00971-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Arhitektura",
+    "focus": "Taj Mahal Agra",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se indijskom gradu nalazi Taj Mahal, mauzolej od bijelog mramora?",
+    "answers": [
+      "Agra"
+    ],
+    "explanation": "Taj Mahal nalazi se u Agri.",
+    "sources": [
+      "https://whc.unesco.org/en/list/252"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00972-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Povijest",
+    "focus": "Angkor Kmeri",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Koje je carstvo ostavilo golemi kompleks hramova Angkor u današnjoj Kambodži?",
+    "answers": [
+      "Kmersko Carstvo",
+      "Kmeri",
+      "Kmersko"
+    ],
+    "explanation": "Angkor je bio središte Kmerskog Carstva.",
+    "sources": [
+      "https://whc.unesco.org/en/list/668"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00973-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Zemljopis",
+    "focus": "Galapagos Ekvador",
+    "difficulty": 1,
+    "styleId": 40,
+    "styleDescription": "Pitaj za otok kroz dvije životinjske ili botaničke značajke",
+    "question": "Kojoj državi pripada otočje Galápagos, slavno po divovskim kornjačama?",
+    "answers": [
+      "Ekvador",
+      "Ecuador"
+    ],
+    "explanation": "Galápagos je ekvadorsko otočje u Tihom oceanu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00974-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Arheologija",
+    "focus": "Stonehenge Avebury",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je britanski prapovijesni spomenik, zajedno s Aveburyjem, upisan na UNESCO-ov popis svjetske baštine?",
+    "answers": [
+      "Stonehenge"
+    ],
+    "explanation": "Stonehenge i Avebury zajednički su obuhvaćeni UNESCO-ovim dobrom.",
+    "sources": [
+      "https://whc.unesco.org/en/list/373"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00975-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Ekologija",
+    "focus": "Sundarbans mangrove",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "U kojem nacionalnom parku na delti Gangesa i Brahmaputre mangrove tvore dom bengalskom tigru?",
+    "answers": [
+      "Sundarbans",
+      "Nacionalni park Sundarbans"
+    ],
+    "explanation": "Sundarbans je prostrana mangrovska šuma u delti velikih rijeka.",
+    "sources": [
+      "https://whc.unesco.org/en/list/452"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00976-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Umjetnost",
+    "focus": "Gaudi Park Guell",
+    "difficulty": 2,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Koji je katalonski arhitekt projektirao Park Güell i kuću Casa Milà u Barceloni?",
+    "answers": [
+      "Antoni Gaudí",
+      "Antoni Gaudi",
+      "Gaudí",
+      "Gaudi"
+    ],
+    "explanation": "Oba su djela dio UNESCO-ove cjeline Gaudíjevih ostvarenja.",
+    "sources": [
+      "https://whc.unesco.org/en/list/320"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00977-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Religije i mitologije",
+    "focus": "Borobudur budizam",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kojoj religiji pripada golemi stupasti hram Borobudur na indonezijskom otoku Javi?",
+    "answers": [
+      "Budizam",
+      "Budističkoj"
+    ],
+    "explanation": "Borobudur je znameniti budistički hram.",
+    "sources": [
+      "https://whc.unesco.org/en/list/592"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00978-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Priroda",
+    "focus": "Surtsey erupcija",
+    "difficulty": 4,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Koji je islandski otok nastao vulkanskom erupcijom 1963. i postao prirodni laboratorij kolonizacije živog svijeta?",
+    "answers": [
+      "Surtsey"
+    ],
+    "explanation": "Surtsey je nastao erupcijom 1963. i ostao zaštićen za znanstvena istraživanja.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1267"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00979-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Kultura",
+    "focus": "Meteora samostani",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se zove grčko područje poznato po pravoslavnim samostanima smještenima na vrhovima visokih stijena?",
+    "answers": [
+      "Meteora"
+    ],
+    "explanation": "Samostani Meteore podignuti su na strmim stijenama Tesalije.",
+    "sources": [
+      "https://whc.unesco.org/en/list/455"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00980-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Promet",
+    "focus": "Darjeeling himalajska željeznica",
+    "difficulty": 4,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kako se zove indijska brdska željeznica čija je povijesna trasa dio UNESCO-ova dobra Mountain Railways of India, a povezuje Siliguri i poznato čajno odredište?",
+    "answers": [
+      "Darjeeling Himalayan Railway",
+      "Darjeelinška himalajska željeznica"
+    ],
+    "explanation": "Darjeeling Himalayan Railway jedna je od povijesnih planinskih željeznica Indije.",
+    "sources": [
+      "https://whc.unesco.org/en/list/944"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
