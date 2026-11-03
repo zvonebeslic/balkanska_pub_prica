@@ -1751,7 +1751,10 @@ function setAudienceSongSlide(slide){
  if(wanted===audienceSong.key)return;
  resetAudienceSong();
  audienceSong.key=wanted;
- audienceSong.client=KTGSync.genRoom()+KTGSync.genRoom();
+ // The transfer ID is only a routing token, not a security secret. Avoid
+ // requiring Web Crypto on older smart-TV browsers.
+ const alphabet="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+ audienceSong.client=Array.from({length:16},()=>alphabet[Math.floor(Math.random()*alphabet.length)]).join("");
  audienceSong.source=slide.musicSource;
  const deferred=audienceDeferredControl;
  if(deferred?.key===wanted){audienceDeferredControl=null;audienceSong.pending=deferred;}
