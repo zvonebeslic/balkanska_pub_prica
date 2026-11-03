@@ -1531,9 +1531,15 @@ function endPairing(){
 }
 // TV audio is decoded only on the audience device, never on the presentation slide.
 // The playback element stays outside stageCanvas so a slide re-render cannot stop it.
+// Parallel chunk transport: low-latency, out-of-order safe, and independently
+// retried. No audio file is stored remotely; the TV receives it in its memory.
+const SONG_PARALLEL_CHUNKS=6;
+const SONG_REQUEST_TIMEOUT_MS=4500;
+const SONG_RETRY_LIMIT=8;
 const audienceSong={
- key:"",client:"",media:null,objectUrl:"",source:"",pieces:[],next:0,total:null,
- type:"audio/mpeg",timer:null,retries:0,pending:null,pendingSeek:null,loaded:false,blocked:false
+ key:"",client:"",media:null,objectUrl:"",source:"",chunks:[],next:0,received:0,
+ total:null,inflight:new Map(),type:"audio/mpeg",failed:false,lastProgress:0,
+ pending:null,pendingSeek:null,loaded:false,blocked:false
 };
 let audienceDeferredControl=null;
 function reportAudienceAudio(message){
@@ -1541,7 +1547,8 @@ function reportAudienceAudio(message){
  window.KTGSync?.reportSongStatus?.({key:audienceSong.key,message});
 }
 function resetAudienceSong(){
- if(audienceSong.timer){clearTimeout(audienceSong.timer);audienceSong.timer=null;}
+ for(const attempt of audienceSong.inflight.values())clearTimeout(attempt.timer);
+ audienceSong.inflight.clear();
  if(audienceSong.media){
   audienceSong.media.pause();
   audienceSong.media.removeAttribute("src");
@@ -1550,26 +1557,45 @@ function resetAudienceSong(){
  }
  if(audienceSong.objectUrl)URL.revokeObjectURL(audienceSong.objectUrl);
  Object.assign(audienceSong,{
-  key:"",media:null,objectUrl:"",source:"",pieces:[],next:0,total:null,
-  type:"audio/mpeg",timer:null,retries:0,pending:null,pendingSeek:null,loaded:false,blocked:false
+  key:"",client:"",media:null,objectUrl:"",source:"",chunks:[],next:0,
+  received:0,total:null,inflight:new Map(),type:"audio/mpeg",
+  failed:false,lastProgress:0,pending:null,pendingSeek:null,loaded:false,blocked:false
  });
  const unlock=$("tvSoundUnlock");if(unlock)unlock.hidden=true;
 }
-function requestAudienceSongPiece(){
- if(audienceSong.source!=="local"||!audienceSong.key||!audienceSong.client||audienceSong.loaded)return;
- const {key,client,next}=audienceSong;
- if(audienceSong.timer)clearTimeout(audienceSong.timer);
- KTGSync.requestSongChunk({key,client,index:next}).catch(()=>{});
- audienceSong.timer=setTimeout(()=>{
-  if(key!==audienceSong.key||next!==audienceSong.next)return;
-  audienceSong.retries++;
-  if(audienceSong.retries>9){
-   audienceSong.timer=null;
-   reportAudienceAudio("Prijenos pjesme prekinut. Osvježi TV prikaz za ponovni pokušaj.");
+function sendAudienceSongRequest(index,retry=0){
+ const song=audienceSong;
+ if(song.source!=="local"||!song.key||song.loaded||song.failed||
+    song.chunks[index]||song.inflight.has(index))return;
+ const {key,client}=song;
+ const timer=setTimeout(()=>{
+  const active=audienceSong.inflight.get(index);
+  if(audienceSong.key!==key||!active||active.timer!==timer)return;
+  audienceSong.inflight.delete(index);
+  if(retry>=SONG_RETRY_LIMIT){
+   audienceSong.failed=true;
+   for(const a of audienceSong.inflight.values())clearTimeout(a.timer);
+   audienceSong.inflight.clear();
+   reportAudienceAudio("TV nije primio cijelu pjesmu. Provjeri vezu i ponovno otvori glazbeno pitanje.");
    return;
   }
-  requestAudienceSongPiece();
- },2800);
+  sendAudienceSongRequest(index,retry+1);
+ },SONG_REQUEST_TIMEOUT_MS);
+ song.inflight.set(index,{timer,retry});
+ KTGSync.requestSongChunk({key,client,index}).catch(()=>{});
+}
+function requestAudienceSongPiece(){
+ const song=audienceSong;
+ if(song.source!=="local"||!song.key||song.loaded||song.failed)return;
+ // Until we know the number of pieces, request only index 0.
+ if(song.total===null){
+  if(!song.inflight.has(0)&&!song.chunks[0])sendAudienceSongRequest(0);
+  return;
+ }
+ while(song.inflight.size<SONG_PARALLEL_CHUNKS&&song.next<song.total){
+  const index=song.next++;
+  if(!song.chunks[index])sendAudienceSongRequest(index);
+ }
 }
 function makeAudienceAudio(src,kind,key){
  if(key!==audienceSong.key)return;
@@ -1602,39 +1628,57 @@ function makeAudienceAudio(src,kind,key){
  }
 }
 function receiveAudienceSongChunk(chunk){
- if(!chunk||chunk.key!==audienceSong.key||chunk.client!==audienceSong.client||
-   audienceSong.source!=="local"||chunk.index!==audienceSong.next)return;
- if(audienceSong.timer){clearTimeout(audienceSong.timer);audienceSong.timer=null;}
+ const song=audienceSong;
+ if(!chunk||chunk.key!==song.key||chunk.client!==song.client||
+    song.source!=="local"||song.loaded||song.failed||
+    !Number.isInteger(chunk.index)||chunk.index<0||chunk.index>1300||
+    song.chunks[chunk.index]||!song.inflight.has(chunk.index))return;
+ const attempt=song.inflight.get(chunk.index);
+ clearTimeout(attempt.timer);
+ song.inflight.delete(chunk.index);
  if(chunk.error){
+  song.failed=true;
+  for(const x of song.inflight.values())clearTimeout(x.timer);
+  song.inflight.clear();
   reportAudienceAudio("Pjesma nije dostupna: "+String(chunk.error).slice(0,150));
   return;
  }
  if(!Number.isInteger(chunk.total)||chunk.total<1||chunk.total>1311||
+    chunk.index>=chunk.total||
     typeof chunk.data!=="string"||chunk.data.length>68000||
     !/^[A-Za-z0-9+/]*={0,2}$/.test(chunk.data)){
+  song.failed=true;
   reportAudienceAudio("Primljena je neispravna glazbena datoteka.");return;
  }
- if(audienceSong.total!==null&&audienceSong.total!==chunk.total)return;
- audienceSong.total=chunk.total;
- audienceSong.type=/^(audio|video)\/[\w.+-]+$/.test(chunk.type||"")?chunk.type:"audio/mpeg";
+ if(song.total!==null&&song.total!==chunk.total)return;
+ song.total=chunk.total;
+ song.type=/^(audio|video)\/[\w.+-]+$/.test(chunk.type||"")?chunk.type:"audio/mpeg";
  let raw;
- try{raw=atob(chunk.data);}catch{return;}
+ try{raw=atob(chunk.data);}catch{song.failed=true;reportAudienceAudio("Neuspjelo dekodiranje glazbenog isječka.");return;}
  const bytes=new Uint8Array(raw.length);
  for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
- audienceSong.pieces.push(bytes);
- audienceSong.next++;
- audienceSong.retries=0;
- if(audienceSong.next<audienceSong.total){
-  if(audienceSong.next%15===0)
-   reportAudienceAudio("TV preuzima pjesmu: "+Math.round(audienceSong.next*100/audienceSong.total)+" %.");
+ song.chunks[chunk.index]=bytes;
+ song.received++;
+ if(song.received<song.total){
+  const percent=Math.floor(100*song.received/song.total);
+  if(percent>=song.lastProgress+10||song.received===1){
+   song.lastProgress=percent;
+   reportAudienceAudio("TV preuzima pjesmu: "+percent+" %.");
+  }
   requestAudienceSongPiece();
   return;
  }
- const key=audienceSong.key;
- const blob=new Blob(audienceSong.pieces,{type:audienceSong.type});
- audienceSong.pieces=[];
- audienceSong.objectUrl=URL.createObjectURL(blob);
- makeAudienceAudio(audienceSong.objectUrl,audienceSong.type,key);
+ // Entire file arrived, regardless of network delivery order.
+ for(let i=0;i<song.total;i++){
+  if(!song.chunks[i]){song.failed=true;reportAudienceAudio("Dio glazbenog isječka nedostaje.");return;}
+ }
+ const key=song.key;
+ const blob=new Blob(song.chunks,{type:song.type});
+ song.chunks=[];
+ for(const x of song.inflight.values())clearTimeout(x.timer);
+ song.inflight.clear();
+ song.objectUrl=URL.createObjectURL(blob);
+ makeAudienceAudio(song.objectUrl,song.type,key);
 }
 async function playAudienceSong(){
  const audio=audienceSong.media;
