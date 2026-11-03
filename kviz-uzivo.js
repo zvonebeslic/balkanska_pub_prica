@@ -537,7 +537,10 @@ function ensureChannel(){
 }
 function pushStage(){
  if(channel&&!stageMode&&project)channel.postMessage({type:"state",quiz:project,position,slideIndex,revealed,showBoard});
- if(!stageMode&&project&&window.KTGSync?.isHost())window.KTGSync.broadcastHost(sharedSlide());
+ if(!stageMode&&project&&window.KTGSync?.isHost()){
+  sendQuizPreloadManifest();
+  window.KTGSync.broadcastHost(sharedSlide());
+ }
 }
 function roundMax(r){return ROUNDS[r].sections.reduce((sum,s,si)=>sum+Array.from({length:s.count},(_,i)=>pointsFor(r,si,i)).reduce((a,b)=>a+b,0),0);}
 function labelItem(r,s,i){
@@ -1658,6 +1661,7 @@ function startPairing(){
    $("pairStatus").textContent="TV je povezan. Pripremam cijeli kviz…";
    sendQuizPreloadManifest(true);
   },
+  onPreloadHello:()=>sendQuizPreloadManifest(true),
   onPreloadRequest:request=>handleQuizPreloadRequest(request),
   onPreloadStatus:progress=>{
    if(progress.generation!==quizPreloadGeneration())return;
