@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-01290-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Životinje",
+    "focus": "aksolotl regeneracija",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac zadržava vanjske škrge i kao odrasla jedinka te može regenerirati izgubljene udove?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl"
+    ],
+    "explanation": "Aksolotl je neotenični daždevnjak poznat po regeneraciji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01291-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Arhitektura",
+    "focus": "Sagrada Familia Gaudi",
+    "difficulty": 1,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Koji je katalonski arhitekt najpoznatiji po radu na barcelonskoj bazilici Sagrada Família?",
+    "answers": [
+      "Antoni Gaudí",
+      "Gaudi",
+      "Antoni Gaudi"
+    ],
+    "explanation": "Gaudí je veći dio karijere posvetio toj bazilici.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Antoni_Gaudí"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01292-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Medicina",
+    "focus": "stremen najmanja kost",
+    "difficulty": 2,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Koja se slušna koščica u srednjem uhu smatra najmanjom kosti ljudskog tijela?",
+    "answers": [
+      "Stremen",
+      "Stapes"
+    ],
+    "explanation": "Stremen prenosi vibracije na unutarnje uho.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stapes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01293-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod Japan Denso",
+    "difficulty": 3,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja dvoslovna kratica označuje dvodimenzionalni kod razvijen u Japanu 1994. za brzo očitavanje podataka?",
+    "answers": [
+      "QR"
+    ],
+    "explanation": "QR je kratica za Quick Response.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01294-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Sport",
+    "focus": "biatlon skijanje pucanje",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom sportu natjecatelji kombiniraju skijaško trčanje i gađanje puškom?",
+    "answers": [
+      "Biatlon"
+    ],
+    "explanation": "Biatlon spaja izdržljivost i precizno gađanje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Biathlon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01295-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Hokusai veliki val",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je japanski umjetnik izradio drvorez Veliki val kod Kanagawe?",
+    "answers": [
+      "Katsushika Hokusai",
+      "Hokusai"
+    ],
+    "explanation": "Veliki val dio je serije Trideset šest pogleda na Fuji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01296-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Jezik",
+    "focus": "pangram sva slova",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva rečenica koja sadrži sva slova određene abecede barem jednom?",
+    "answers": [
+      "Pangram"
+    ],
+    "explanation": "Pangrami služe i za ispitivanje fontova i tipkovnica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pangram"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01297-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Promet",
+    "focus": "Panamski kanal Atlantik Pacifik",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koji je umjetni plovni put otvoren 1914. znatno skratio pomorsku rutu između Atlantskog i Tihog oceana?",
+    "answers": [
+      "Panamski kanal"
+    ],
+    "explanation": "Panamski kanal prolazi kroz Panamu i povezuje oceanske plovidbene putove.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Panama_Canal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01298-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Mitologija",
+    "focus": "Anansi pauk",
+    "difficulty": 4,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Kako se zove lukavi pauk iz zapadnoafričkih, osobito akanijskih narodnih priča?",
+    "answers": [
+      "Anansi"
+    ],
+    "explanation": "Anansi je poznat kao varalica i pripovjedački lik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anansi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01299-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Fizika",
+    "focus": "Dopplerov učinak sirena",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji učinak objašnjava zašto zvuk sirene vozila u prolazu mijenja visinu tona dok nam se vozilo približava i udaljava?",
+    "answers": [
+      "Dopplerov učinak",
+      "Dopplerov efekt"
+    ],
+    "explanation": "Relativno gibanje izvora i slušatelja mijenja opaženu frekvenciju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Doppler_effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
