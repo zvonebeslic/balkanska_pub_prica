@@ -37,6 +37,8 @@
    }
   }).on("broadcast",{event:"state"},event=>{
    if(role!=="host"&&event.payload&&event.payload.kind==="ktg-slide")callbacks.onState?.(event.payload);
+  }).on("broadcast",{event:"quiz-preload-hello"},event=>{
+   if(role==="host")callbacks.onPreloadHello?.();
   }).on("broadcast",{event:"quiz-preload-manifest"},event=>{
    if(role==="audience"&&event.payload?.generation)callbacks.onPreloadManifest?.(event.payload);
   }).on("broadcast",{event:"quiz-preload-request"},event=>{
@@ -70,9 +72,9 @@
   });
   status("Spajanje…");
  }
- function startHost({room,controlSecret,getState,onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello,onPreloadRequest,onPreloadStatus}){
+ function startHost({room,controlSecret,getState,onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello,onPreloadRequest,onPreloadStatus,onPreloadHello}){
   if(!validRoom(room))throw Error("Neispravan kod sobe.");
-  subscribe(room,"host",{onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello,onPreloadRequest,onPreloadStatus});
+  subscribe(room,"host",{onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello,onPreloadRequest,onPreloadStatus,onPreloadHello});
   secret=controlSecret;
   latest=getState?.()||null;
   if(connected&&latest)transmit("state",latest);
@@ -106,11 +108,12 @@
   if(connected)transmit("song-control",payload);
  }
  function reportSongStatus(payload){if(role!=="audience")return;transmit("song-status",payload);}
+ function requestPreloadManifest(){if(role!=="audience")return Promise.resolve(false);return transmit("quiz-preload-hello",{});}
  function sendPreloadManifest(payload){if(role!=="host")return Promise.resolve(false);return transmit("quiz-preload-manifest",payload);}
  function requestPreloadSlide(payload){if(role!=="audience")return Promise.resolve(false);return transmit("quiz-preload-request",payload);}
  function sendPreloadSlide(payload){if(role!=="host")return Promise.resolve(false);return transmit("quiz-preload-slide",payload);}
  function reportPreloadStatus(payload){if(role!=="audience")return Promise.resolve(false);return transmit("quiz-preload-status",payload);}
  function isHost(){return role==="host";}
  function room(){return activeRoom;}
- window.KTGSync={genRoom,genSecret,startHost,startAudience,startController,broadcastHost,sendCommand,stop,isHost,room,validRoom,requestSongChunk,sendSongChunk,broadcastSongControl,reportSongStatus,sendPreloadManifest,requestPreloadSlide,sendPreloadSlide,reportPreloadStatus};
+ window.KTGSync={genRoom,genSecret,startHost,startAudience,startController,broadcastHost,sendCommand,stop,isHost,room,validRoom,requestSongChunk,sendSongChunk,broadcastSongControl,reportSongStatus,requestPreloadManifest,sendPreloadManifest,requestPreloadSlide,sendPreloadSlide,reportPreloadStatus};
 })();
