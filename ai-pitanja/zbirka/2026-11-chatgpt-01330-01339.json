@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-01330-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Povijest",
+    "focus": "Behistunski natpis tri jezika",
+    "difficulty": 4,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Na stijeni u današnjem Iranu Darije I. ostavio je tekst na staroperzijskom, elamskom i babilonskom jeziku. Kako se naziva taj natpis, važan za dešifriranje klinopisa?",
+    "answers": [
+      "Behistunski natpis",
+      "Natpis iz Behistuna",
+      "Behistun"
+    ],
+    "explanation": "Trojezični natpis Darija I. pomogao je znanstvenicima čitati klinopis.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Behistun_Inscription"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01331-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Fotografija",
+    "focus": "camera obscura projekcija",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Zamračena soba s malim otvorom na zidu može na suprotnom zidu prikazati obrnutu sliku vanjskog svijeta. Kako se latinski naziva taj optički uređaj?",
+    "answers": [
+      "Camera obscura",
+      "Kamera opskura"
+    ],
+    "explanation": "Svjetlosne zrake kroz mali otvor projiciraju obrnuti prizor, načelo poznato prije fotografije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Camera_obscura"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01332-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "sfumato meki prijelazi",
+    "difficulty": 3,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Na portretu nema oštre granice između osvijetljenog obraza i sjene, kao da se konture rastapaju u dimu. Kojom se talijanskom riječju naziva ta slikarska tehnika?",
+    "answers": [
+      "Sfumato"
+    ],
+    "explanation": "Sfumato stvara mekane prijelaze tonova bez oštrih obrisa; poznat je iz Leonardovih slika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sfumato"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01333-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Povijest Amerike",
+    "focus": "quipu čvorovi Inka",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Kad je carstvu Inka trebalo voditi evidenciju, nizovi uzica različitih boja i čvorova služili su za bilježenje podataka. Kako se zvao taj sustav?",
+    "answers": [
+      "Quipu",
+      "Kipu",
+      "Khipu"
+    ],
+    "explanation": "Kipu je sustav čvorovanih uzica koji se u Andama koristio za bilježenje brojčanih i drugih podataka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Quipu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01334-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "mehanizam Antikitera zupčanici",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U olupini antičkog broda pronađen je brončani sklop zupčanika koji je mogao prikazivati astronomske cikluse. Po kojem se grčkom otoku naziva taj mehanizam?",
+    "answers": [
+      "Antikitera",
+      "Antikythera"
+    ],
+    "explanation": "Mehanizam s Antikitere dobio je ime po otoku blizu kojeg je otkriven u brodolomu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01335-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Botanika",
+    "focus": "filotaksija raspored listova",
+    "difficulty": 5,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Spiralni raspored listova na stabljici može se opisivati matematičkim uzorcima. Kako se u botanici naziva proučavanje rasporeda listova?",
+    "answers": [
+      "Filotaksija",
+      "Phyllotaxis"
+    ],
+    "explanation": "Filotaksija opisuje obrasce rasporeda listova na biljnoj osi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Phyllotaxis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01336-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Meteorologija",
+    "focus": "izobare jednaki tlak",
+    "difficulty": 2,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Na sinoptičkoj karti vremena zakrivljene crte povezuju mjesta s jednakim atmosferskim tlakom. Kako se zovu te crte?",
+    "answers": [
+      "Izobare",
+      "Izobara"
+    ],
+    "explanation": "Izobare spajaju točke jednakog tlaka i pomažu prikazati raspored ciklona i anticiklona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isobar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01337-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Promet",
+    "focus": "semafor zastavice signalizacija",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Prije radijske veze mornari su poruke mogli slati položajima dviju ručnih zastavica. Kako se zove takav sustav vizualne signalizacije?",
+    "answers": [
+      "Semafor",
+      "Zastavični semafor",
+      "Semaforska signalizacija"
+    ],
+    "explanation": "Zastavični semafor kodira slova položajem zastavica koje promatra druga osoba.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Semaphore"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01338-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Kemija",
+    "focus": "košenil karmin kukac",
+    "difficulty": 4,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Crveni pigment karmin, označen i kao E120, tradicionalno se dobiva od sićušnih kukaca koji žive na kaktusima. Kako se nazivaju ti kukci?",
+    "answers": [
+      "Košenil",
+      "Košenila",
+      "Cochineal"
+    ],
+    "explanation": "Od ženki kukca Dactylopius coccus dobiva se karminska kiselina za crvenu boju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cochineal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01339-20261103",
+    "createdAt": "2026-11-03T23:42:59+01:00",
+    "updatedAt": "2026-11-03T23:42:59+01:00",
+    "topic": "Jezik i pismo",
+    "focus": "brajica šest točkica",
+    "difficulty": 1,
+    "styleId": 84,
+    "styleDescription": "Opiši omiljen dječji predmet preko godine nastanka",
+    "question": "Jedno slovo može stati u polje od šest ispupčenih točkica koje se čitaju vrhovima prstiju. Kako se naziva to pismo?",
+    "answers": [
+      "Brajica",
+      "Brailleovo pismo",
+      "Brailleovo pismo",
+      "Braille"
+    ],
+    "explanation": "Osnovna ćelija brajice ima šest položaja za reljefne točkice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Braille"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
