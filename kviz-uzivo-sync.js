@@ -29,8 +29,9 @@
   if(!validRoom(room))throw Error("Kod mora imati 8 znakova.");
   stop();role=roleName;activeRoom=room.toUpperCase();callbacks=handlers||{};
   channel=client.channel("ktg-stage-"+activeRoom,{config:{broadcast:{self:false,ack:true}}});
-  channel.on("broadcast",{event:"hello"},()=>{
+  channel.on("broadcast",{event:"hello"},event=>{
    if(role==="host"){
+    if(event.payload?.device==="audience")callbacks.onAudienceHello?.();
     if(latest)transmit("state",latest);
     if(lastSongControl)transmit("song-control",lastSongControl);
    }
@@ -61,9 +62,9 @@
   });
   status("Spajanje…");
  }
- function startHost({room,controlSecret,getState,onStatus,onCommand,onSongRequest,onSongStatus}){
+ function startHost({room,controlSecret,getState,onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello}){
   if(!validRoom(room))throw Error("Neispravan kod sobe.");
-  subscribe(room,"host",{onStatus,onCommand,onSongRequest,onSongStatus});
+  subscribe(room,"host",{onStatus,onCommand,onSongRequest,onSongStatus,onAudienceHello});
   secret=controlSecret;
   latest=getState?.()||null;
   if(connected&&latest)transmit("state",latest);
