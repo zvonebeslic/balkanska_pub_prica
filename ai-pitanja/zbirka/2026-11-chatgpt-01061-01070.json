@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-01061-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička država potpuno okružena Južnoafričkom Republikom?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je enklava unutar Južnoafričke Republike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01062-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Biologija",
+    "focus": "Lišaj",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva simbioza gljive s algom ili cijanobakterijom koja često raste na stijenama?",
+    "answers": [
+      "Lišaj"
+    ],
+    "explanation": "Lišajevi su simbiotske zajednice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lichen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01063-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Književnost",
+    "focus": "Preobrazba",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj se Kafkinoj pripovijetki Gregor Samsa probudi preobražen u kukca?",
+    "answers": [
+      "Preobrazba",
+      "Metamorfoza"
+    ],
+    "explanation": "Gregor Samsa protagonist je Preobrazbe.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Metamorphosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01064-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Matematika",
+    "focus": "Prosti broj 2",
+    "difficulty": 4,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji je jedini paran prost broj?",
+    "answers": [
+      "2",
+      "Dva"
+    ],
+    "explanation": "Svi ostali parni brojevi djeljivi su s dva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Prime_number"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01065-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Glazba",
+    "focus": "Oboa",
+    "difficulty": 5,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Koje glazbalo tradicionalno daje referentni ton za ugađanje simfonijskog orkestra?",
+    "answers": [
+      "Oboa"
+    ],
+    "explanation": "Oboa tradicionalno daje ton A.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Oboe"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01066-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Sport",
+    "focus": "Desetoboj",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko disciplina obuhvaća atletski desetoboj?",
+    "answers": [
+      "10",
+      "Deset"
+    ],
+    "explanation": "Desetoboj ima deset disciplina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Decathlon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01067-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Kemija",
+    "focus": "Bronca",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koji je metal uz bakar tradicionalni sastojak bronce?",
+    "answers": [
+      "Kositar"
+    ],
+    "explanation": "Bronca je legura bakra i kositra.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bronze"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01068-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Film",
+    "focus": "Sedam samuraja",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je redatelj snimio Sedam samuraja 1954. godine?",
+    "answers": [
+      "Akira Kurosawa",
+      "Kurosawa"
+    ],
+    "explanation": "Akira Kurosawa režirao je film.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Seven_Samurai"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01069-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR",
+    "difficulty": 4,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja kratica dolazi od engleskog izraza Quick Response, a označava vrstu dvodimenzionalnog koda?",
+    "answers": [
+      "QR"
+    ],
+    "explanation": "QR znači Quick Response.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01070-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Povijest",
+    "focus": "Rosetta",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je slavni kamen s tekstom na tri pisma pomogao dešifriranju hijeroglifa?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rozetski kamen"
+    ],
+    "explanation": "Kamen iz Rosette nosi tekst na tri pisma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rosetta_Stone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
