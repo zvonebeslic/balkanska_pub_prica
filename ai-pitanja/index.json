@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total": 2038,
+  "total": 2048,
   "months": [
     "2026-10",
     "2026-10-chatgpt-00182-00184",
@@ -117,7 +117,8 @@
     "2026-11-chatgpt-00991-01000",
     "2026-11-chatgpt-01001-01010",
     "2026-11-chatgpt-01011-01020",
-    "2026-11-chatgpt-01021-01030"
+    "2026-11-chatgpt-01021-01030",
+    "2026-11-chatgpt-01031-01040"
   ],
   "styleCounts": {
     "1": 55,
@@ -125,15 +126,15 @@
     "3": 29,
     "4": 47,
     "5": 1,
-    "6": 31,
+    "6": 33,
     "7": 16,
-    "8": 97,
+    "8": 98,
     "9": 45,
     "10": 19,
-    "11": 48,
-    "12": 72,
+    "11": 49,
+    "12": 75,
     "13": 7,
-    "14": 44,
+    "14": 45,
     "15": 29,
     "16": 3,
     "17": 49,
@@ -145,7 +146,7 @@
     "23": 2,
     "24": 17,
     "25": 21,
-    "26": 43,
+    "26": 45,
     "27": 1,
     "28": 3,
     "29": 2,
@@ -235,7 +236,7 @@
     "Matematika": 52,
     "Medicina": 51,
     "Inženjerstvo": 47,
-    "Arhitektura": 68,
+    "Arhitektura": 69,
     "Jezik": 33,
     "Film": 30,
     "Televizija": 22,
@@ -262,8 +263,8 @@
     "Videoigre": 23,
     "Ekologija": 4,
     "Meteorologija": 2,
-    "Geografija": 1,
-    "Arheologija": 15,
+    "Geografija": 2,
+    "Arheologija": 16,
     "Antika": 2,
     "Videoigre i igre": 2,
     "Jezik i pismo": 2,
@@ -290,14 +291,21 @@
     "Dizajn": 1,
     "Povijest sporta": 1,
     "Geografija sporta": 1,
-    "Povijest kulture": 1
+    "Povijest kulture": 1,
+    "Etnologija": 1,
+    "Kiparstvo": 1,
+    "Povijest graditeljstva": 1,
+    "Povijest Japana": 1,
+    "Arheološki alati": 1,
+    "Zaštita baštine": 1,
+    "Materijali": 1
   },
   "difficultyCounts": {
     "1": 225,
     "2": 495,
-    "3": 544,
-    "4": 475,
-    "5": 299
+    "3": 548,
+    "4": 478,
+    "5": 302
   },
   "updatedAt": "2026-11-03T12:43:37+01:00"
 }
