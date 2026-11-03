@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-00981-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Povijest",
+    "focus": "Pompeji Vezuv",
+    "difficulty": 1,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Erupcija kojeg je vulkana 79. godine zatrpala Pompeje i Herkulanej?",
+    "answers": [
+      "Vezuv",
+      "Vesuvius"
+    ],
+    "explanation": "Vezuv je 79. godine zatrpao rimske gradove.",
+    "sources": [
+      "https://whc.unesco.org/en/list/829"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00982-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Zemljopis",
+    "focus": "Kotor Crna Gora",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se državi nalazi povijesni grad Kotor, okružen strmim planinama i zaljevom?",
+    "answers": [
+      "Crna Gora",
+      "Montenegro"
+    ],
+    "explanation": "Kotor se nalazi u Crnoj Gori.",
+    "sources": [
+      "https://whc.unesco.org/en/list/125"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00983-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Arhitektura",
+    "focus": "Sagrada Familia Gaudi",
+    "difficulty": 2,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Koji je arhitekt najpoznatiji po dugotrajnoj gradnji bazilike Sagrada Família u Barceloni?",
+    "answers": [
+      "Antoni Gaudí",
+      "Antoni Gaudi",
+      "Gaudi"
+    ],
+    "explanation": "Gaudí je oblikovao prepoznatljiv izgled bazilike.",
+    "sources": [
+      "https://whc.unesco.org/en/list/320"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00984-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Biologija",
+    "focus": "Aldabra divovske kornjače",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji atol na Sejšelima čuva jednu od najvećih svjetskih populacija divovskih kopnenih kornjača?",
+    "answers": [
+      "Aldabra",
+      "Atol Aldabra"
+    ],
+    "explanation": "Aldabra je poznata po divovskim kornjačama.",
+    "sources": [
+      "https://whc.unesco.org/en/list/185"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00985-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Glazba",
+    "focus": "Beč Mozart Salzburg",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se austrijskom gradu rodio Wolfgang Amadeus Mozart, a povijesna jezgra danas je pod zaštitom UNESCO-a?",
+    "answers": [
+      "Salzburg"
+    ],
+    "explanation": "Mozart je rođen u Salzburgu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/784"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00986-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Umjetnost",
+    "focus": "Altamira paleolitske slike",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "U kojoj se španjolskoj špilji nalaze slavne paleolitske slike bizona, otkrivene u 19. stoljeću?",
+    "answers": [
+      "Altamira",
+      "Špilja Altamira"
+    ],
+    "explanation": "Altamira je poznata po prapovijesnim prikazima bizona.",
+    "sources": [
+      "https://whc.unesco.org/en/list/310"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00987-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Poljoprivreda",
+    "focus": "Filipini rižine terase Ifugao",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se zove filipinska pokrajina čije su drevne rižine terase na UNESCO-ovu popisu svjetske baštine?",
+    "answers": [
+      "Ifugao"
+    ],
+    "explanation": "Rižine terase filipinskih Kordiljera povezane su s narodom i pokrajinom Ifugao.",
+    "sources": [
+      "https://whc.unesco.org/en/list/722"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00988-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Religije i mitologije",
+    "focus": "Delphi Apolon",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Kojem je grčkom bogu bilo posvećeno glasovito proročište u Delfima?",
+    "answers": [
+      "Apolon",
+      "Apollo"
+    ],
+    "explanation": "Delfsko proročište pripadalo je Apolonovu svetištu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/393"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00989-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Forth Bridge željeznički",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koju vrstu prometa služi škotski most Forth Bridge, golema čelična konzolna konstrukcija iz 19. stoljeća?",
+    "answers": [
+      "Željeznički promet",
+      "Željeznica",
+      "Vlakovi"
+    ],
+    "explanation": "Forth Bridge je željeznički most preko zaljeva Firth of Forth.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1485"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-00990-20261103",
+    "createdAt": "2026-11-03T11:38:52+01:00",
+    "updatedAt": "2026-11-03T11:38:52+01:00",
+    "topic": "Ekonomija",
+    "focus": "Valencia Lonja de la Seda",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove povijesna zgrada burze svile u Valenciji, danas pod zaštitom UNESCO-a?",
+    "answers": [
+      "La Lonja de la Seda",
+      "Lonja de la Seda",
+      "Burza svile"
+    ],
+    "explanation": "La Lonja de la Seda gotička je zgrada nekadašnje trgovine svilom.",
+    "sources": [
+      "https://whc.unesco.org/en/list/782"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
