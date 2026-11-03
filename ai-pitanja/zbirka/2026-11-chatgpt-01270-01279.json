@@ -1,0 +1,227 @@
+[
+  {
+    "id": "chatgpt10000-01270-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Zemljopis",
+    "focus": "Titicaca Peru Bolivija",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na granici kojih dviju južnoameričkih država nalazi se jezero Titicaca?",
+    "answers": [
+      "Peru i Bolivija",
+      "Bolivija i Peru"
+    ],
+    "explanation": "Titicaca leži na granici Perua i Bolivije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lake_Titicaca"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01271-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Biologija",
+    "focus": "Fotosinteza klorofil pigment",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji zeleni pigment omogućuje biljkama apsorpciju svjetlosti potrebne za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil upija svjetlost i sudjeluje u fotosintezi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01272-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Književnost",
+    "focus": "Gulliver Liliput",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove zemlja sićušnih ljudi koju posjećuje Lemuel Gulliver u Swiftovu romanu?",
+    "answers": [
+      "Liliput",
+      "Lilliput"
+    ],
+    "explanation": "Liliput je prva izmišljena zemlja u Gulliverovim putovanjima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lilliput_and_Blefuscu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01273-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Povijest",
+    "focus": "Pompeji Vezuv 79",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Erupcija kojeg je vulkana 79. godine zatrpala Pompeje?",
+    "answers": [
+      "Vezuv",
+      "Vesuvius"
+    ],
+    "explanation": "Erupcija Vezuva 79. uništila je Pompeje i Herkulanej.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01274-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Matematika",
+    "focus": "Pitagorin poučak hipotenuza",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove najdulja stranica pravokutnog trokuta, nasuprot pravom kutu?",
+    "answers": [
+      "Hipotenuza"
+    ],
+    "explanation": "Hipotenuza je stranica nasuprot kutu od 90 stupnjeva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hypotenuse"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01275-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Gastronomija",
+    "focus": "Paella Valencia",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Iz koje španjolske pokrajine potječe jelo od riže poznato kao paella?",
+    "answers": [
+      "Valencija",
+      "Valencia"
+    ],
+    "explanation": "Paella je tradicionalno jelo valencijskog područja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paella"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01276-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Glazba",
+    "focus": "Jazz New Orleans",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji se američki grad smatra jednim od ključnih mjesta nastanka jazza početkom 20. stoljeća?",
+    "answers": [
+      "New Orleans"
+    ],
+    "explanation": "New Orleans bio je važan centar ranog jazza.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jazz"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01277-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Tehnologija",
+    "focus": "Prvo računalo ENIAC elektroničko",
+    "difficulty": 3,
+    "styleId": 23,
+    "styleDescription": "Pitaj što je posljednje u nizu tehnoloških izuma",
+    "question": "Koja je četveroslovna kratica imena ranog američkog elektroničkog računala dovršenog 1945. i javno predstavljenog 1946.?",
+    "answers": [
+      "ENIAC"
+    ],
+    "explanation": "ENIAC je bio jedno od prvih elektroničkih digitalnih računala opće namjene.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ENIAC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01278-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Životinje",
+    "focus": "Koala torbar",
+    "difficulty": 1,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Koji australski tobolčar pretežno jede listove eukaliptusa, iako ga često pogrešno nazivaju medvjedom?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koala je tobolčar, a ne medvjed.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01279-20261103",
+    "createdAt": "2026-11-03T21:43:41+01:00",
+    "updatedAt": "2026-11-03T21:43:41+01:00",
+    "topic": "Film",
+    "focus": "Građanin Kane Orson Welles",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je režirao film Građanin Kane iz 1941. i u njemu odigrao naslovnu ulogu?",
+    "answers": [
+      "Orson Welles",
+      "Welles"
+    ],
+    "explanation": "Welles je režirao film i glumio Charlesa Fostera Kanea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Citizen_Kane"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
