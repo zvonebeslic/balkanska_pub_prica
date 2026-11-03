@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-01300-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Geologija",
+    "focus": "Mohsova ljestvica tvrdoće",
+    "difficulty": 2,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Na kojoj se ljestvici tvrdoće minerala talk nalazi na 1, a dijamant na 10?",
+    "answers": [
+      "Mohsova ljestvica",
+      "Mohsova skala"
+    ],
+    "explanation": "Mohsova ljestvica uspoređuje otpornost minerala na grebanje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mohs_scale_of_mineral_hardness"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01301-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Povijest",
+    "focus": "Rosetta kamen hijeroglifi",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Koji je kamen s istim tekstom na trima pismima pomogao u dešifriranju egipatskih hijeroglifa?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Kamen iz Rozete",
+      "Rosettski kamen"
+    ],
+    "explanation": "Natpisi na kamenu omogućili su usporedbu pisama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rosetta_Stone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01302-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Zemljopis",
+    "focus": "Salar de Uyuni Bolivija",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se južnoameričkoj državi nalazi golema slana ravnica Salar de Uyuni?",
+    "answers": [
+      "Bolivija"
+    ],
+    "explanation": "Salar de Uyuni najveća je slana ravnica na svijetu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Salar_de_Uyuni"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01303-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Glazba",
+    "focus": "didgeridoo Aboridžini",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Kako se zove tradicionalno australsko puhačko glazbalo koje proizvodi dubok kontinuiran zvuk?",
+    "answers": [
+      "Didgeridoo",
+      "Didžeridu"
+    ],
+    "explanation": "Didgeridoo je tradicionalno glazbalo australskih Aboridžina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Didgeridoo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01304-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Kemija",
+    "focus": "volfram simbol W",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol W, izveden iz njegova alternativnog imena wolfram?",
+    "answers": [
+      "Volfram",
+      "Wolfram"
+    ],
+    "explanation": "Volfram ima atomski broj 74 i vrlo visoko talište.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01305-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Književnost",
+    "focus": "Italo Calvino nevidljivi gradovi",
+    "difficulty": 4,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem romanu Itala Calvina Marko Polo opisuje izmišljene gradove Kublaj-kanu?",
+    "answers": [
+      "Nevidljivi gradovi",
+      "Invisible Cities"
+    ],
+    "explanation": "Calvinov roman sastavljen je od opisa zamišljenih gradova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Invisible_Cities"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01306-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan metanska jezera",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Saturnov mjesec ima jezera i mora tekućeg metana i etana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan ima gustu atmosferu i površinska ugljikovodična jezera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01307-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Gastronomija",
+    "focus": "kimchi fermentirani kupus",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se zove korejski fermentirani prilog, često od kineskog kupusa i ljutih začina?",
+    "answers": [
+      "Kimchi",
+      "Kimči"
+    ],
+    "explanation": "Kimchi je važan dio korejske prehrambene tradicije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01308-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Sport",
+    "focus": "curling kamen led",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem olimpijskom sportu igrači guraju granitne kamene po ledu prema kružnoj meti?",
+    "answers": [
+      "Curling",
+      "Karling"
+    ],
+    "explanation": "Curling se igra kamenovima i metlama na ledu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01309-20261103",
+    "createdAt": "2026-11-03T22:44:26+01:00",
+    "updatedAt": "2026-11-03T22:44:26+01:00",
+    "topic": "Film",
+    "focus": "Metropolis Fritz Lang",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je redatelj snimio njemački znanstvenofantastični nijemi film Metropolis iz 1927.?",
+    "answers": [
+      "Fritz Lang",
+      "Lang"
+    ],
+    "explanation": "Metropolis je jedan od ključnih filmova njemačkog ekspresionizma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Metropolis_(1927_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
