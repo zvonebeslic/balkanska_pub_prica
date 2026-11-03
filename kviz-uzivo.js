@@ -1839,7 +1839,10 @@ function startPairing(){
    else if(action==="font-smaller")changeQuestionSize("smaller");
    else if(action==="font-larger")changeQuestionSize("larger");
    else if(action==="font-auto")changeQuestionSize("reset");
-   else if(action==="board"){showBoard=!showBoard;renderAll();}
+   else if(action==="board"){
+    if(!showBoard)discardPictureSizeDrafts();
+    showBoard=!showBoard;renderAll();
+   }
   }
  });
  songPlayer.tvStatus="";
@@ -2508,7 +2511,11 @@ function bindEditor(){
   if(currentSlide().kind==="question")revealed=autoShowAnswers;
   renderAll();
  });
- $("scoresBtn").addEventListener("click",()=>{if(currentSlide().kind==="score")return;showBoard=!showBoard;renderAll();});
+ $("scoresBtn").addEventListener("click",()=>{
+  if(currentSlide().kind==="score")return;
+  if(!showBoard)discardPictureSizeDrafts();
+  showBoard=!showBoard;renderAll();
+ });
  $("stageBtn").addEventListener("click",()=>{
   if(!project)return;const target=pairing?audienceUrl(pairing.room):"kviz-uzivo.html?stage=1&id="+encodeURIComponent(project.id);
   const w=window.open(target,"_blank");
