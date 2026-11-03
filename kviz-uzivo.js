@@ -901,7 +901,8 @@ function songLookup(key){
  for(const slide of SLIDES){
   if(slide.kind!=="question")continue;
   const q=itemAt(slide.r,slide.s,slide.i);
-  if(q?.mediaId&&/^(audio|video)\//.test(String(q.mediaType||""))&&
+  if(q?.mediaId&&(/^(audio|video)\//.test(String(q.mediaType||""))||
+      (isSongRubric(ROUNDS[slide.r].sections[slide.s].code)&&!q.mediaType))&&
     songKeyFor(slide,q)===key)return {slide,q};
  }
  return null;
@@ -1402,7 +1403,7 @@ function sharedSlide(atIndex=slideIndex,preload=false){
   associationExplanation:isRevealed&&section.code==="asocijacija"&&slide.i===4?
    String(q.explanation||putinExplanation||"").trim():"",
   estimateRange:isRevealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
-  isRevealed,showBoard:false,
+  revealed:isRevealed,showBoard:false,
   musicAudio:isSongRubric(section.code)&&songSourceType(q)!=="none",
   musicKey:isSongRubric(section.code)?songKeyFor(slide,q):"",
   musicSource:isSongRubric(section.code)?(q.mediaId?"local":songSourceType(q)==="youtube"?"youtube":songSourceType(q)==="none"?"none":"remote"):"none",
