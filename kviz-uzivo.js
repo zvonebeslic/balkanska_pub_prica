@@ -839,6 +839,10 @@ function refreshSongButtons(){
 }
 function clearSongPlayer(){
  const media=songPlayer.media;
+ if(songPlayer.key&&pairing&&window.KTGSync?.isHost()){
+  KTGSync.broadcastSongControl({key:songPlayer.key,action:"stop",position:0,
+   sequence:++songControlSequence,sentAt:Date.now()});
+ }
  songPlayer.key="";
  songPlayer.loading=false;
  songPlayer.message="";
@@ -922,7 +926,7 @@ async function controlSongPlayer(action){
    media.muted=true;
    KTGSync.broadcastSongControl({
     key:songPlayer.key,action,position:action==="restart"||action==="stop"?0:(Number(media.currentTime)||0),
-    sequence:++songControlSequence
+    sequence:++songControlSequence,sentAt:Date.now()
    });
   }else media.muted=false;
   if(action==="play"){await media.play();}
@@ -1016,7 +1020,14 @@ function updateStudio(){
 }
 function showView(view){
  if(stageMode)return;
- if(view!=="host"&&songPlayer.media){songPlayer.media.pause();refreshSongButtons();}
+ if(view!=="host"&&songPlayer.media){
+  songPlayer.media.pause();
+  if(pairing&&window.KTGSync?.isHost())KTGSync.broadcastSongControl({
+   key:songPlayer.key,action:"pause",position:Number(songPlayer.media.currentTime)||0,
+   sequence:++songControlSequence,sentAt:Date.now()
+  });
+  refreshSongButtons();
+ }
  currentView=view;
  const ids={home:"homeScreen",host:"hostScreen",edit:"editScreen",manage:"manageScreen",history:"historyScreen"};
  for(const [key,id] of Object.entries(ids))$(id).hidden=key!==view;
@@ -1649,8 +1660,12 @@ function applyAudienceSongControl(control){
  if(action==="stop"){audio.pause();audio.currentTime=0;return;}
  if(action==="restart"){audio.pause();audio.currentTime=0;}
  else if(Number.isFinite(control.position)&&control.position>=0&&audio.readyState>=1){
-  // A late-joining TV catches up when playback has already started.
-  audio.currentTime=control.position;
+  // A late-joining TV catches up after media transfer or reconnect.
+  const elapsed=Number.isFinite(control.sentAt)?
+   Math.max(0,Math.min(600,(Date.now()-control.sentAt)/1000)):0;
+  const position=control.position+elapsed;
+  if(Number.isFinite(audio.duration)&&audio.duration>0)audio.currentTime=Math.min(position,Math.max(0,audio.duration-.15));
+  else audio.currentTime=position;
  }
  playAudienceSong();
 }
