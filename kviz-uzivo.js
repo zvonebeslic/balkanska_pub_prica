@@ -92,6 +92,7 @@ let db,project=null,position={r:0,s:0,i:0},slideIndex=0,revealed=false,showBoard
 let channel=null,saveTimer=null,toastTimer=null,archivingSession=false,stageMode=new URLSearchParams(location.search).get("stage")==="1";
 const tvImageCache=new Map(),tvImagePending=new Set(),tvImageErrors=new Set();
 let activeUrls={},mediaSeq={},lastPreviewKey="",currentView="home",pairing=null;
+const songPlayer={key:"",media:null,objectUrl:"",loading:false,message:"",sourceType:""};
 const keyOf=(r,s,i)=>r+"-"+s+"-"+i;
 const itemAt=(r,s,i,p=project)=>p?.rounds?.[r]?.sections?.[s]?.items?.[i];
 function baseItem(){return {question:"",answer:"",answer2:"",options:["","",""],correct:"A",optionMediaIds:["","",""],optionMediaNames:["","",""],optionImages:[],abcHideNames:false,truth:"Točno",five:["","","","",""],min:"",max:"",note:"",mediaId:"",mediaName:"",mediaType:"",mediaUrl:"",mediaScale:100,optionMediaScales:[100,100,100]};}
@@ -754,6 +755,134 @@ async function attachMedia(host,q,kind){
  else{el.alt="Ilustracija uz pitanje";applyPictureScale(el,q.mediaScale);}
  host.append(el);
 }
+// Music playback belongs exclusively to the presenter. The audience sees no
+// player bar, seeking line, Play button, or local-asset warning on song slides.
+function isSongRubric(code){return code==="pjevaj"||code==="stihovi";}
+function songSourceType(q){
+ if(!q)return "none";
+ if(q.mediaId){
+  const mime=String(q.mediaType||"");
+  return mime.startsWith("image/")?"none":mime.startsWith("video/")?"video":"audio";
+ }
+ const url=safeUrl(q.mediaUrl||"");
+ if(!url)return "none";
+ if(youtubeEmbed(url))return "youtube";
+ if(/\.(?:jpe?g|png|gif|webp|avif|bmp|svg)(?:[?#]|$)/i.test(url))return "none";
+ if(/\.(?:mp4|webm|mov)(?:[?#]|$)/i.test(url))return "video";
+ return "audio";
+}
+function activeSongSlide(){
+ if(!project||stageMode||showBoard)return null;
+ const slide=currentSlide();
+ if(slide.kind!=="question"||!isSongRubric(ROUNDS[slide.r]?.sections?.[slide.s]?.code))return null;
+ return {slide,q:itemAt(slide.r,slide.s,slide.i)};
+}
+function musicTime(seconds){
+ const n=Number.isFinite(seconds)&&seconds>=0?Math.floor(seconds):0;
+ return Math.floor(n/60)+":"+String(n%60).padStart(2,"0");
+}
+function refreshSongButtons(){
+ const panel=$("songPlayerPanel");
+ if(!panel||panel.hidden)return;
+ const media=songPlayer.media,ready=!!media&&!!media.src&&!songPlayer.loading;
+ $("songPlay").disabled=!ready;
+ $("songPause").disabled=!ready||!!media.paused;
+ $("songRestart").disabled=!ready;
+ $("songStop").disabled=!ready;
+ const duration=ready&&Number.isFinite(media.duration)?musicTime(media.duration):"–:––";
+ $("songTime").textContent=musicTime(ready?media.currentTime:0)+" / "+duration;
+ $("songPlayerStatus").textContent=songPlayer.loading?"Učitavam glazbeni isječak…":
+   songPlayer.message||(ready?(media.paused?"Spremno za reprodukciju.":"Pjesma se reproducira."):"Dodaj audio datoteku u uređivaču.");
+}
+function clearSongPlayer(){
+ const media=songPlayer.media;
+ songPlayer.key="";
+ songPlayer.loading=false;
+ songPlayer.message="";
+ songPlayer.sourceType="";
+ songPlayer.media=null;
+ if(media){
+  media.pause();
+  media.removeAttribute("src");
+  media.load();
+  media.remove();
+ }
+ if(songPlayer.objectUrl){URL.revokeObjectURL(songPlayer.objectUrl);songPlayer.objectUrl="";}
+}
+async function loadSongPlayer(key,q,kind){
+ try{
+  let src="";
+  if(q.mediaId){
+   const asset=await storeGet("assets",q.mediaId);
+   if(songPlayer.key!==key)return;
+   if(!asset?.blob||!/^(audio|video)\//.test(asset.type||asset.blob.type||"")){
+    throw Error("Ovaj prilog nije audio ili video datoteka. Učitaj glazbeni isječak.");
+   }
+   src=URL.createObjectURL(asset.blob);
+   songPlayer.objectUrl=src;
+  }else src=safeUrl(q.mediaUrl);
+  if(songPlayer.key!==key)return;
+  if(!src)throw Error("Nevaljana poveznica na glazbeni isječak.");
+  const player=document.createElement(kind==="video"?"video":"audio");
+  player.preload="metadata";player.hidden=true;player.controls=false;
+  player.setAttribute("aria-hidden","true");
+  player.addEventListener("playing",()=>{if(songPlayer.media===player){songPlayer.message="";refreshSongButtons();}});
+  player.addEventListener("pause",()=>{if(songPlayer.media===player)refreshSongButtons();});
+  player.addEventListener("timeupdate",()=>{if(songPlayer.media===player)refreshSongButtons();});
+  player.addEventListener("loadedmetadata",()=>{if(songPlayer.media===player)refreshSongButtons();});
+  player.addEventListener("ended",()=>{if(songPlayer.media===player){songPlayer.message="Isječak je završio.";refreshSongButtons();}});
+  player.addEventListener("error",()=>{if(songPlayer.media===player){songPlayer.message="Zvuk nije moguće učitati. Provjeri datoteku ili poveznicu.";refreshSongButtons();}});
+  $("songPlayerPanel").append(player);
+  songPlayer.media=player;
+  songPlayer.loading=false;
+  player.src=src;
+  player.load();
+  refreshSongButtons();
+ }catch(error){
+  if(songPlayer.key!==key)return;
+  songPlayer.loading=false;
+  songPlayer.message=error.message||"Zvuk nije moguće učitati.";
+  refreshSongButtons();
+ }
+}
+function updateSongPlayer(){
+ const panel=$("songPlayerPanel");
+ if(!panel)return;
+ const active=activeSongSlide();
+ panel.hidden=!active;
+ if(!active){if(songPlayer.key)clearSongPlayer();return;}
+ const {slide,q}=active;
+ const type=songSourceType(q);
+ const key=project.id+"/"+slide.r+"/"+slide.s+"/"+slide.i+"/"+(q?.mediaId||"")+"/"+(q?.mediaUrl||"")+"/"+type;
+ if(key===songPlayer.key){refreshSongButtons();return;}
+ clearSongPlayer();
+ songPlayer.key=key;
+ songPlayer.sourceType=type;
+ if(type==="none"){
+  songPlayer.message="U uređivaču ovog pitanja dodaj audioisječak pjesme.";
+ }else if(type==="youtube"){
+  songPlayer.message="YouTube se ne može kontrolirati ovim tipkama. Učitaj audio datoteku ili dodaj izravnu poveznicu na MP3/MP4.";
+ }else{
+  songPlayer.loading=true;
+  loadSongPlayer(key,q,type);
+ }
+ refreshSongButtons();
+}
+async function controlSongPlayer(action){
+ const media=songPlayer.media;
+ if(!media||songPlayer.loading)return;
+ try{
+  if(action==="play"){await media.play();}
+  else if(action==="pause"){media.pause();}
+  else if(action==="restart"){media.pause();media.currentTime=0;await media.play();}
+  else if(action==="stop"){media.pause();media.currentTime=0;}
+  songPlayer.message="";
+ }catch(error){
+  songPlayer.message="Reprodukcija nije uspjela: "+(error.message||"provjeri zvučni izlaz.");
+ }
+ refreshSongButtons();
+}
+
 function renderScreen(root,kind){
  if(!root||!project)return;
  renderSharedSlide(root,sharedSlide(),{localMedia:true,mediaKind:kind});
@@ -830,9 +959,11 @@ function updateStudio(){
  $("questionLarger").disabled=!canSize||size>=1.5;
  $("questionSizeReset").disabled=!canSize||size===1;
  $("questionSizeValue").textContent=Math.round(size*100)+" %";
+ updateSongPlayer();
 }
 function showView(view){
  if(stageMode)return;
+ if(view!=="host"&&songPlayer.media){songPlayer.media.pause();refreshSongButtons();}
  currentView=view;
  const ids={home:"homeScreen",host:"hostScreen",edit:"editScreen",manage:"manageScreen",history:"historyScreen"};
  for(const [key,id] of Object.entries(ids))$(id).hidden=key!==view;
@@ -1061,6 +1192,7 @@ function sharedSlide(){
    String(q.explanation||putinExplanation||"").trim():"",
   estimateRange:revealed&&section.code==="procjena"?estimateAcceptedRange(q):"",
   revealed,showBoard:false,
+  musicAudio:isSongRubric(section.code)&&songSourceType(q)!=="none",
   mediaData:tvImage,
   mediaType:imageIsLocal?"image/jpeg":String(q.mediaType||""),
   mediaUrl:imageIsLocal?"":(q.mediaUrl?String(q.mediaUrl):""),
@@ -1071,6 +1203,7 @@ function sharedSlide(){
 }
 function sharedMedia(root,slide){
  const holder=root.querySelector(".screen-media");if(!holder||!slide)return;
+ if(slide.musicAudio)return; // Playback controls and audio are never exposed to the audience.
  if(typeof slide.mediaData==="string"&&slide.mediaData.length<TV_IMAGE_MAX_CHARS&&
     /^data:image\/jpeg;base64,[a-zA-Z0-9+/=]+$/.test(slide.mediaData)){
   const img=document.createElement("img");
@@ -1279,7 +1412,12 @@ function renderSharedSlide(root,slide,options={}){
   '</div>');
  if(options.localMedia){
   const current=currentSlide(),q=current.kind==="question"?itemAt(current.r,current.s,current.i):null;
-  if(q)attachMedia(root.querySelector(".screen-media"),q,options.mediaKind).catch(()=>{});
+  if(q&&!slide.musicAudio)attachMedia(root.querySelector(".screen-media"),q,options.mediaKind).catch(()=>{});
+  else{
+   // Invalidate a previous asynchronous media load; song sound is controlled below the host screen.
+   releaseMedia(options.mediaKind);
+   mediaSeq[options.mediaKind]=(mediaSeq[options.mediaKind]||0)+1;
+  }
  }else sharedMedia(root,slide);
 }
 function pairingForCurrentQuiz(){
@@ -1473,6 +1611,10 @@ function bindEditor(){
  $("questionSmaller").addEventListener("click",()=>changeQuestionSize("smaller"));
  $("questionLarger").addEventListener("click",()=>changeQuestionSize("larger"));
  $("questionSizeReset").addEventListener("click",()=>changeQuestionSize("reset"));
+ $("songPlay").addEventListener("click",()=>controlSongPlayer("play"));
+ $("songPause").addEventListener("click",()=>controlSongPlayer("pause"));
+ $("songRestart").addEventListener("click",()=>controlSongPlayer("restart"));
+ $("songStop").addEventListener("click",()=>controlSongPlayer("stop"));
  $("autoShowAnswers").addEventListener("change",e=>{
   autoShowAnswers=e.target.checked;
   if(currentSlide().kind==="question")revealed=autoShowAnswers;
