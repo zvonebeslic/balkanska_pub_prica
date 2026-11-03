@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-01200-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Astronomija",
+    "focus": "Metan u atmosferi Urana",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Autorska formulacija prema stilu 36",
+    "question": "Koji plin u atmosferi Urana upija crveni dio Sunčeve svjetlosti i pridonosi njegovoj plavozelenoj boji?",
+    "answers": [
+      "Metan"
+    ],
+    "explanation": "Metan apsorbira crvene valne duljine, pa u reflektiranoj svjetlosti prevladavaju plavi i zeleni tonovi.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01201-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Sport",
+    "focus": "Olimpijsko potezanje užeta",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Autorska formulacija prema stilu 22",
+    "question": "Koja je ekipna disciplina, danas česta na školskim igrama, bila olimpijski sport sve do Igara u Antwerpenu 1920.?",
+    "answers": [
+      "Potezanje užeta",
+      "Natezanje užeta"
+    ],
+    "explanation": "Potezanje užeta bilo je na olimpijskom programu od 1900. do 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/new-sports-take-a-bow"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01202-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Monetova slika i ime impresionizma",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Autorska formulacija prema stilu 9",
+    "question": "Koja je Monetova slika izložena 1874. dala ime čitavom slikarskom pokretu, isprva kao podrugljiv naziv?",
+    "answers": [
+      "Impresija, izlazak sunca",
+      "Impression, Sunrise",
+      "Impresija izlazećeg sunca"
+    ],
+    "explanation": "Naziv impresionizam proizašao je iz kritike Monetove slike Impression, Sunrise.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/claude-monet-1840-1926"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01203-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Povijest umjetnosti",
+    "focus": "Prva izložba impresionista 1874",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Autorska formulacija prema stilu 11",
+    "question": "Koje su godine Monet, Degas, Renoir i njihovi istomišljenici priredili znamenitu neovisnu parišku izložbu?",
+    "answers": [
+      "1874"
+    ],
+    "explanation": "Neovisna izložba iz 1874. postala je početak javne povijesti impresionizma.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/claude-monet-1840-1926"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01204-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Planetarna fizika",
+    "focus": "Rezonancija Io Europa Ganimed",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Autorska formulacija prema stilu 12",
+    "question": "Ako Ganimed obiđe Jupiter jednom, Europa ga u njihovoj orbitalnoj rezonanciji obiđe dvaput. Koliko ga puta za to vrijeme obiđe Io?",
+    "answers": [
+      "4",
+      "Četiri"
+    ],
+    "explanation": "U orbitalnoj rezonanciji Io, Europa i Ganimed imaju omjer obilazaka 4:2:1.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01205-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Moda",
+    "focus": "Pariz kao prijestolnica mode 19 stoljeća",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Autorska formulacija prema stilu 8",
+    "question": "Koji je europski grad od sredine 1860-ih do sredine 1880-ih postao središte moderne mode, robnih kuća i modnih časopisa?",
+    "answers": [
+      "Pariz",
+      "Paris"
+    ],
+    "explanation": "Pariz je u drugoj polovici 19. stoljeća predvodio razvoj modne industrije i odijevanja.",
+    "sources": [
+      "https://www.metmuseum.org/exhibitions/listings/2013/impressionism-fashion-modernity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01206-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Promet",
+    "focus": "Voyager 2 Uran 1986",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Autorska formulacija prema stilu 11",
+    "question": "Koje je godine Voyager 2 proletio pokraj Urana, snimivši planet iz neposredne blizine?",
+    "answers": [
+      "1986"
+    ],
+    "explanation": "Voyager 2 približio se Uranu 24. siječnja 1986.",
+    "sources": [
+      "https://science.nasa.gov/mission/voyager/fact-sheet/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01207-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Zemljopis",
+    "focus": "Normandija Monetovo odrastanje",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Autorska formulacija prema stilu 8",
+    "question": "U kojoj je povijesnoj francuskoj regiji odrastao Claude Monet, koji je kasnije često slikao njezinu obalu?",
+    "answers": [
+      "Normandija",
+      "Normandy"
+    ],
+    "explanation": "Monet je odrastao u Normandiji i slikao obalne prizore tog područja.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/claude-monet-1840-1926"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01208-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Književnost",
+    "focus": "Baudelaire i moda impresionista",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Autorska formulacija prema stilu 18",
+    "question": "Koji je francuski pjesnik, autor Cvjetova zla, među umjetnicima i piscima koje Met povezuje s fascinacijom modernom modom 19. stoljeća?",
+    "answers": [
+      "Charles Baudelaire",
+      "Baudelaire"
+    ],
+    "explanation": "Met navodi Baudelairea među piscima zainteresiranima za modu i modernitet.",
+    "sources": [
+      "https://www.metmuseum.org/exhibitions/listings/2013/impressionism-fashion-modernity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01209-20261103",
+    "createdAt": "2026-11-03T19:38:46+01:00",
+    "updatedAt": "2026-11-03T19:38:46+01:00",
+    "topic": "Astronautika",
+    "focus": "Jedina sonda Uran",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Autorska formulacija prema stilu 56",
+    "question": "Koja je svemirska letjelica prva i zasad jedina izbliza istražila Uran?",
+    "answers": [
+      "Voyager 2",
+      "Voyager II"
+    ],
+    "explanation": "Voyager 2 jedina je letjelica koja je izbliza posjetila Uran.",
+    "sources": [
+      "https://science.nasa.gov/mission/voyager/fact-sheet/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
