@@ -336,8 +336,10 @@ async function archiveIfFinished(r){
  }
  const session=current.playSession;
  if(session.completedAt)return;
+ const scoreRevision=Number(current.scoreResetVersion||0);
  archivingSession=true;
  try{
+  if(current.playSession!==session||Number(current.scoreResetVersion||0)!==scoreRevision)return;
   const completedAt=Date.now();
   await storePut("history",{
    id:session.id,quizId:current.id,
@@ -346,6 +348,11 @@ async function archiveIfFinished(r){
    completedAt,
    teams:final.rows.map(row=>({name:row.name,rounds:row.rounds,score:row.score}))
   });
+  // A reset during the archive write must not leave resurrected standings.
+  if(current.playSession!==session||Number(current.scoreResetVersion||0)!==scoreRevision){
+   await storeDelete("history",session.id);
+   return;
+  }
   session.completedAt=completedAt;
   if(project===current){
    scheduleSave();
