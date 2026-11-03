@@ -850,7 +850,8 @@ function quizPreloadSongs(){
  for(let i=0;i<SLIDES.length;i++){
   const slide=SLIDES[i];if(slide.kind!=="question")continue;
   const q=itemAt(slide.r,slide.s,slide.i),section=ROUNDS[slide.r].sections[slide.s];
-  if(!isSongRubric(section.code)||["none","youtube"].includes(songSourceType(q)))continue;
+  const localMedia=!!q?.mediaId&&/^(audio|video)\//.test(String(q.mediaType||""));
+  if(!localMedia&&(!isSongRubric(section.code)||["none","youtube"].includes(songSourceType(q))))continue;
   songs.push({key:songKeyFor(slide,q),source:q.mediaId?"local":"remote",
    url:q.mediaId?"":safeUrl(q.mediaUrl||""),type:q.mediaType||"",index:i});
  }
@@ -900,7 +901,7 @@ function songLookup(key){
  for(const slide of SLIDES){
   if(slide.kind!=="question")continue;
   const q=itemAt(slide.r,slide.s,slide.i);
-  if(q?.mediaId&&isSongRubric(ROUNDS[slide.r].sections[slide.s].code)&&
+  if(q?.mediaId&&/^(audio|video)\//.test(String(q.mediaType||""))&&
     songKeyFor(slide,q)===key)return {slide,q};
  }
  return null;
@@ -1407,6 +1408,8 @@ function sharedSlide(atIndex=slideIndex,preload=false){
   musicSource:isSongRubric(section.code)?(q.mediaId?"local":songSourceType(q)==="youtube"?"youtube":songSourceType(q)==="none"?"none":"remote"):"none",
   musicUrl:isSongRubric(section.code)&&!q.mediaId&&songSourceType(q)!=="youtube"?safeUrl(q.mediaUrl):"",
   preloadMediaId:imageIsLocal?q.mediaId:"",
+  preloadAssetKey:!imageIsLocal&&q.mediaId&&/^(audio|video)\//.test(String(q.mediaType||""))?
+   songKeyFor(slide,q):"",
   mediaData:tvImage,
   mediaType:imageIsLocal?"image/jpeg":String(q.mediaType||""),
   mediaUrl:imageIsLocal?"":(q.mediaUrl?String(q.mediaUrl):""),
@@ -1418,6 +1421,15 @@ function sharedSlide(atIndex=slideIndex,preload=false){
 function sharedMedia(root,slide){
  const holder=root.querySelector(".screen-media");if(!holder||!slide)return;
  if(slide.musicAudio)return; // Playback controls and audio are never exposed to the audience.
+ if(slide.preloadAssetKey){
+  const url=tvCachedMediaUrl(slide.preloadAssetKey);
+  if(url){
+   const video=String(slide.mediaType||"").startsWith("video/");
+   const el=document.createElement(video?"video":"audio");
+   el.src=url;el.controls=true;el.preload="auto";holder.append(el);
+   return;
+  }
+ }
  if(typeof slide.mediaData==="string"&&slide.mediaData.length<TV_IMAGE_MAX_CHARS&&
     /^data:image\/jpeg;base64,[a-zA-Z0-9+/=]+$/.test(slide.mediaData)){
   const img=document.createElement("img");
@@ -1443,7 +1455,7 @@ function sharedMedia(root,slide){
   const p=document.createElement("p");p.className="muted tiny";
   p.textContent=slide.mediaError?"Slika nije dostupna za TV. Pokušaj ponovno učitati datoteku u uređivaču.":
    slide.mediaPreparing?"Pripremam sliku za TV…":
-   "Audio i video datoteke spremljene lokalno nisu dostupne na drugom uređaju. Koristi mrežnu poveznicu.";
+   "TV još preuzima prilog. Ako se ne pojavi, provjeri vezu i veličinu datoteke.";
   holder.append(p);
  }
 }
@@ -1666,8 +1678,13 @@ function startPairing(){
   onPreloadStatus:progress=>{
    if(progress.generation!==quizPreloadGeneration())return;
    const n=Number(progress.loaded)||0,total=Number(progress.total)||SLIDES.length;
-   $("pairStatus").textContent=n>=total?"TV je pripremio kviz ("+total+" slajdova).":
-    "TV priprema kviz: "+n+" / "+total+" slajdova.";
+   const mediaLoaded=Number(progress.mediaLoaded)||0,mediaTotal=Number(progress.mediaTotal)||0;
+   const completed=n>=total&&mediaLoaded>=mediaTotal;
+   $("pairStatus").textContent=completed&&!(Number(progress.failed)||0)?
+    "TV je unaprijed pripremio cijeli kviz.":
+    "TV priprema: "+n+"/"+total+" slajdova, "+mediaLoaded+"/"+mediaTotal+
+    " medijskih priloga"+(progress.failed?" (dio nije dostupan)":"")+".";
+
   },
   onSongRequest:request=>handleSongRequest(request),
   onSongStatus:status=>songTVStatus(status),
@@ -1789,7 +1806,8 @@ function startQuizAudioPreload(items){
  for(const entry of (items||[]).filter(x=>x?.source==="remote"&&safeUrl(x.url))){
   try{
    const link=document.createElement("link");
-   link.rel="preload";link.as="audio";link.href=safeUrl(entry.url);
+   link.rel="preload";link.as=String(entry.type||"").startsWith("video/")?"video":"audio";
+   link.href=safeUrl(entry.url);
    document.head.append(link);
   }catch{}
  }
@@ -1802,8 +1820,12 @@ function finishQuizAudioPreload(song,blob){
  if(blob){
   cachePreloadedAudio(song.key,blob,song.type);
   if(audienceSong.key===song.key&&!audienceSong.media){
-   const src=tvCachedMediaUrl(song.key);
+   const src=tvCachedMediaUrl(song.key)||URL.createObjectURL(blob);
+   if(!tvAudioPreload.cache.has(song.key))audienceSong.objectUrl=src;
    if(src)makeAudienceAudio(src,song.type,song.key);
+  }else if(lastAudienceLiveSlide?.preloadAssetKey===song.key&&
+           !lastAudienceLiveSlide.musicAudio){
+   renderSharedSlide($("stageCanvas"),enrichTvSlide(lastAudienceLiveSlide));
   }
  }else if(audienceSong.key===song.key&&!audienceSong.media){
   reportAudienceAudio("TV nije mogao unaprijed učitati pjesmu. Otvori pitanje ponovno.");
@@ -2077,14 +2099,16 @@ function enrichTvSlide(slide){
  }
  return updated;
 }
-function reportQuizPreloadProgress(){
+function reportQuizPreloadProgress(force=false){
  if(!quizTvPreload.generation)return;
  const count=quizTvPreload.received+quizTvPreload.skipped;
- if(count!==quizTvPreload.total&&count-quizTvPreload.lastStatus<10)return;
+ if(!force&&count!==quizTvPreload.total&&count-quizTvPreload.lastStatus<10)return;
  quizTvPreload.lastStatus=count;
  KTGSync.reportPreloadStatus({generation:quizTvPreload.generation,
   loaded:quizTvPreload.received,total:quizTvPreload.total,
-  failed:quizTvPreload.skipped}).catch(()=>{});
+  failed:quizTvPreload.skipped,
+  mediaLoaded:tvAudioPreload.finished,
+  mediaTotal:tvAudioPreload.total}).catch(()=>{});
 }
 function requestQuizPreloadSlide(index,retry=0){
  const state=quizTvPreload;
