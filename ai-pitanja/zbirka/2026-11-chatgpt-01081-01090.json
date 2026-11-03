@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-01081-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Geologija",
+    "focus": "Plovućac",
+    "difficulty": 3,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Koja je porozna vulkanska stijena toliko lagana da može plutati na vodi?",
+    "answers": [
+      "Plovućac",
+      "Plavac"
+    ],
+    "explanation": "Plovućac nastaje iz plinovima bogate lave.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pumice"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01082-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Moda",
+    "focus": "Denim",
+    "difficulty": 4,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Od imena kojeg francuskog grada potječe izraz denim?",
+    "answers": [
+      "Nîmes",
+      "Nimes"
+    ],
+    "explanation": "Naziv se povezuje s izrazom serge de Nîmes.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Denim"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01083-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Psihologija",
+    "focus": "Stroop",
+    "difficulty": 5,
+    "styleId": 90,
+    "styleDescription": "Kreni od logičkog paradoksa i traži znanstveni termin",
+    "question": "Kako se zove učinak koji otežava imenovanje boje tinte kada riječ označava drugu boju?",
+    "answers": [
+      "Stroopov učinak",
+      "Stroop efekt"
+    ],
+    "explanation": "Čitanje riječi ometa imenovanje boje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stroop_effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01084-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Mitologija",
+    "focus": "Anubis",
+    "difficulty": 1,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Koji egipatski bog balzamiranja često ima glavu šakala?",
+    "answers": [
+      "Anubis"
+    ],
+    "explanation": "Anubis je povezan s mumifikacijom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anubis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01085-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Fizika",
+    "focus": "Prizma",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji optički predmet može bijelu svjetlost razložiti u spektar boja?",
+    "answers": [
+      "Prizma"
+    ],
+    "explanation": "Prizma različito lomi različite valne duljine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Prism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01086-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Glazba",
+    "focus": "Teremin",
+    "difficulty": 3,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Koje se elektroničko glazbalo svira bez fizičkog dodirivanja?",
+    "answers": [
+      "Teremin",
+      "Theremin"
+    ],
+    "explanation": "Tereminom se upravlja položajem ruku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Theremin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01087-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Ekonomija",
+    "focus": "Jen",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja je valuta Japana?",
+    "answers": [
+      "Jen",
+      "Yen"
+    ],
+    "explanation": "Jen je japanska valuta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Japanese_yen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01088-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Promet",
+    "focus": "Crna kutija",
+    "difficulty": 5,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koje su boje avionski snimači leta, unatoč nadimku crna kutija?",
+    "answers": [
+      "Narančasta",
+      "Narančaste"
+    ],
+    "explanation": "Snimači su upadljivo narančasti radi lakšeg pronalaska.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Flight_recorder"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01089-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Biologija",
+    "focus": "Mimikrija",
+    "difficulty": 1,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Kako se naziva pojava kada jedna vrsta izgledom oponaša drugu?",
+    "answers": [
+      "Mimikrija"
+    ],
+    "explanation": "Mimikrija može pružati zaštitu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mimicry"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01090-20261103",
+    "createdAt": "2026-11-03T13:37:07+01:00",
+    "updatedAt": "2026-11-03T13:37:07+01:00",
+    "topic": "Književnost",
+    "focus": "Sancho Panza",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kako se zove Don Quijoteov vjerni pratitelj koji jaše magarca?",
+    "answers": [
+      "Sancho Panza",
+      "Sančo Pansa"
+    ],
+    "explanation": "Sancho Panza prati Don Quijotea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sancho_Panza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
