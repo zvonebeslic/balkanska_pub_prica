@@ -1255,6 +1255,7 @@ function sharedSlide(){
   kind:"ktg-slide",
   slideType:slide.kind,
   quizTitle:project.title||"Kviz Općeg Znanja",
+  scoreResetVersion:Number(project.scoreResetVersion||0),
   index:slideIndex+1,total:SLIDES.length,
   revealed:false,showBoard:showBoard||slide.kind==="score"
  };
@@ -1837,10 +1838,13 @@ function setAudienceSongSlide(slide){
 function connectAudience(room){
  $("editorApp").hidden=true;$("stageApp").hidden=false;
  $("stageCanvas").textContent="Povezujem ekran za publiku…";
- let lastSlide="";
+ let lastSlide="",lastScoreResetVersion=0;
  KTGSync.startAudience({
   room,
   onState:slide=>{
+   const version=Number(slide.scoreResetVersion||0);
+   if(version<lastScoreResetVersion)return; // Late pre-reset state must not restore teams on TV.
+   lastScoreResetVersion=Math.max(lastScoreResetVersion,version);
    const signature=JSON.stringify(slide);
    if(signature!==lastSlide){
     renderSharedSlide($("stageCanvas"),slide);lastSlide=signature;
@@ -1861,10 +1865,13 @@ function connectRemoteController(room,secret){
  $("editScreen").hidden=true;$("manageScreen").hidden=true;$("remoteScreen").hidden=false;
  $("topHome").hidden=true;
  $("remotePreview").innerHTML='<div class="screen"><div class="screen-inner">Čekam prvo pitanje…</div></div>';
- let lastSlide="";
+ let lastSlide="",lastScoreResetVersion=0;
  KTGSync.startController({
   room,controlSecret:secret,
   onState:slide=>{
+   const version=Number(slide.scoreResetVersion||0);
+   if(version<lastScoreResetVersion)return;
+   lastScoreResetVersion=Math.max(lastScoreResetVersion,version);
    const signature=JSON.stringify(slide);
    if(signature!==lastSlide){
     $("remotePreview").innerHTML='<div class="screen"></div>';
