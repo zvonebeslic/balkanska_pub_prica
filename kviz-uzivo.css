@@ -1185,3 +1185,47 @@ body{background:radial-gradient(ellipse 110% 70% at 70% -15%,#103149 0%,#081522 
   max-height:24vh;
  }
 }
+
+/* Persistent per-question image size controls (1% steps, 100% by default). */
+.media-scale-controls{
+ display:flex;
+ flex-wrap:wrap;
+ align-items:center;
+ gap:8px;
+ padding:10px 12px;
+ border:1px solid #35607c;
+ background:#102d42;
+ border-radius:12px;
+ margin:8px 0;
+}
+.media-scale-title{font-size:13px;font-weight:800;color:#b6dbf2;margin-right:auto}
+.media-scale-controls button{
+ display:inline-flex;align-items:center;justify-content:center;
+ min-width:38px;min-height:37px;
+ border-radius:9px;border:1px solid #4b88aa;
+ background:#1c4c68;color:white;font-size:21px;font-weight:850;
+ padding:3px 9px;cursor:pointer;
+}
+.media-scale-controls button:hover{background:#296789}
+.media-scale-controls button:focus-visible{outline:3px solid #86d0ff;outline-offset:2px}
+.media-scale-controls .media-scale-reset{font-size:12px;min-width:49px;padding-inline:8px}
+.media-scale-value{
+ min-width:58px;text-align:center;font-size:16px;font-weight:900;
+ color:#8af0c1;font-variant-numeric:tabular-nums;
+}
+.abc-option-editor .media-scale-controls{margin:0;padding:8px;gap:5px}
+.abc-option-editor .media-scale-title{flex-basis:100%;margin:0;font-size:12px}
+.abc-option-editor .media-scale-controls button{min-height:32px;min-width:32px;padding-inline:6px}
+.abc-option-editor .media-scale-controls .media-scale-reset{min-width:42px}
+.abc-option-editor .media-scale-value{min-width:48px;font-size:14px}
+
+/* Keep zoomed A/B/C pictures within their own answer card, on host and TV. */
+.screen-choices.image-choices .image-choice-viewport{
+ display:flex;align-items:center;justify-content:center;
+ width:100%;max-width:100%;min-height:0;
+ border-radius:9px;overflow:hidden;
+}
+.screen-choices.image-choices .image-choice-viewport img{
+ transform:scale(var(--image-scale,1));
+ transform-origin:center center;
+}
