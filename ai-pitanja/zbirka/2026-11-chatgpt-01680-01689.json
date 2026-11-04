@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-1680-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Povijest",
+    "focus": "Rosetta kamen",
+    "difficulty": 3,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Koji je kamen s istim tekstom u trima pismima omogućio napredak u čitanju egipatskih hijeroglifa?",
+    "answers": [
+      "Kamen iz Rosette"
+    ],
+    "explanation": "Natpis sadrži hijeroglifski, demotski i grčki tekst.",
+    "sources": [
+      "https://www.britannica.com/topic/Rosetta-Stone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1681-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bospor tjesnac",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji tjesnac razdvaja europski i azijski dio Istanbula?",
+    "answers": [
+      "Bospor"
+    ],
+    "explanation": "Bospor povezuje Crno i Mramorno more.",
+    "sources": [
+      "https://www.britannica.com/place/Bosporus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1682-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Biologija",
+    "focus": "Klorofil",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji zeleni pigment u biljkama upija svjetlost potrebnu za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil je ključan za pretvaranje svjetlosne energije.",
+    "sources": [
+      "https://www.britannica.com/science/chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1683-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Matematika",
+    "focus": "Eulerovi mostovi Königsberg",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je matematičar problem sedam mostova Königsberga pretvorio u temeljni primjer teorije grafova?",
+    "answers": [
+      "Leonhard Euler"
+    ],
+    "explanation": "Euler je 1736. analizirao mogućnost obilaska svih mostova.",
+    "sources": [
+      "https://www.britannica.com/biography/Leonhard-Euler"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1684-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Književnost",
+    "focus": "Nautilus kapetan Nemo",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem romanu Julesa Vernea podmornicom Nautilus zapovijeda kapetan Nemo?",
+    "answers": [
+      "Dvadeset tisuća milja pod morem"
+    ],
+    "explanation": "Verneov roman prati putovanje podmornicom Nautilus.",
+    "sources": [
+      "https://www.britannica.com/topic/Twenty-Thousand-Leagues-Under-the-Sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1685-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Kemija",
+    "focus": "Živa simbol Hg",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji tekući metal na sobnoj temperaturi ima kemijski simbol Hg?",
+    "answers": [
+      "Živa"
+    ],
+    "explanation": "Simbol Hg potječe od latinskog hydrargyrum.",
+    "sources": [
+      "https://www.britannica.com/science/mercury-chemical-element"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1686-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Sport",
+    "focus": "Curling kamen",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom sportu igrači guraju granitno kamenje prema kružnoj meti na ledu?",
+    "answers": [
+      "Curling"
+    ],
+    "explanation": "Metla se koristi za utjecaj na klizanje kamena.",
+    "sources": [
+      "https://olympics.com/en/sports/curling/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1687-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Glazba",
+    "focus": "Teremin instrument",
+    "difficulty": 4,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Na kojem se elektroničkom glazbalu svira pomicanjem ruku kroz zrak, bez dodirivanja instrumenta?",
+    "answers": [
+      "Teremin"
+    ],
+    "explanation": "Položaj ruku mijenja visinu i glasnoću tona.",
+    "sources": [
+      "https://www.britannica.com/art/theremin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1688-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Astronomija",
+    "focus": "Enceladus gejziri",
+    "difficulty": 4,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Saturnov ledeni mjesec izbacuje mlazove vodene pare iz pukotina blizu južnog pola?",
+    "answers": [
+      "Enceladus"
+    ],
+    "explanation": "Sonda Cassini promatrala je njegove ledene gejzire.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1689-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Freska mokra žbuka",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se naziva slikarska tehnika u kojoj se pigment nanosi na svježu vlažnu žbuku?",
+    "answers": [
+      "Freska"
+    ],
+    "explanation": "Boja se veže za podlogu dok se žbuka suši.",
+    "sources": [
+      "https://www.britannica.com/art/fresco-painting"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
