@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-1530-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Arheologija",
+    "focus": "kamen iz Rosette grčki tekst",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je jezik, uz dva oblika egipatskog pisma, uklesan na kamenu iz Rosette i pomogao pri dešifriranju hijeroglifa?",
+    "answers": [
+      "Starogrčki",
+      "Grčki",
+      "Stari grčki"
+    ],
+    "explanation": "Poznati dekret iz 196. pr. Kr. ponavlja tekst hijeroglifima, demotskim pismom i starogrčkim.",
+    "sources": [
+      "https://www.britishmuseum.org/sites/default/files/2019-11/Visit_guide_self_directed_visits_2014.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1531-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Astronomija",
+    "focus": "retrogradna rotacija Venere izlazak Sunca",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Na kojem planetu Sunce izlazi na zapadu i zalazi na istoku jer se okreće suprotno od Zemlje?",
+    "answers": [
+      "Venera",
+      "Veneri",
+      "Venus"
+    ],
+    "explanation": "Venera ima retrogradnu rotaciju i jedan njezin okret traje dulje od obilaska oko Sunca.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1532-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Povijest",
+    "focus": "rukopisi Timbuktua Mali",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se afričkoj državi čuvaju povijesni rukopisi grada Timbuktua, dragocjena ostavština tamošnjih učenjaka?",
+    "answers": [
+      "Mali",
+      "Republika Mali"
+    ],
+    "explanation": "UNESCO pomaže očuvati arapske rukopise u javnim i privatnim zbirkama Timbuktua.",
+    "sources": [
+      "https://www.unesco.org/en/articles/mali-timbuktu-manuscripts"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1533-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Medicina",
+    "focus": "posljednji prirodni slučaj velikih boginja Somalija",
+    "difficulty": 4,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "U kojoj je afričkoj državi 1977. zabilježen posljednji poznati prirodni slučaj velikih boginja?",
+    "answers": [
+      "Somalija",
+      "Somalia"
+    ],
+    "explanation": "WHO navodi Somaliju 1977. kao posljednje prirodno žarište prije globalnog iskorjenjivanja.",
+    "sources": [
+      "https://www.who.int/health-topics/smallpox"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1534-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Geologija",
+    "focus": "gejzir Old Faithful park",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U kojem se američkom nacionalnom parku nalazi gejzir Old Faithful, poznat po razmjerno pravilnim erupcijama?",
+    "answers": [
+      "Yellowstone",
+      "Nacionalni park Yellowstone"
+    ],
+    "explanation": "Gejzir se nalazi u gornjem gejzirskom bazenu Yellowstonea.",
+    "sources": [
+      "https://www.usgs.gov/media/images/old-faithful-0"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1535-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Sport",
+    "focus": "prvi moderni olimpijski pobjednik James Connolly",
+    "difficulty": 5,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je američki atletičar 6. travnja 1896. pobjedom u troskoku postao prvi olimpijski prvak modernog doba?",
+    "answers": [
+      "James Connolly",
+      "Connolly",
+      "James Brendan Connolly"
+    ],
+    "explanation": "Na prvim modernim Igrama u Ateni Connolly je osvojio troskok i ušao u povijest.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-1896-the-revival-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1536-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Biologija",
+    "focus": "koraljni polipi žarnjaci",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koralji izgledaju poput biljaka ili stijena, ali kojoj skupini živih bića zapravo pripadaju?",
+    "answers": [
+      "Životinje",
+      "Životinjama"
+    ],
+    "explanation": "Koraljni polipi su životinje iz koljena žarnjaka, a ne biljke.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/ocean-fact/coral-animal/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1537-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Seurat naziv tehnike točkice",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva slikarska tehnika u kojoj sitne točke čistih boja izdaleka stvaraju dojam pomiješanih nijansi?",
+    "answers": [
+      "Poentilizam",
+      "Pointilizam",
+      "Pointillism"
+    ],
+    "explanation": "Georges Seurat koristio je optičko miješanje boja sitnim točkama, tehniku zvanu poentilizam.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/459117"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1538-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace ime programskog jezika",
+    "difficulty": 3,
+    "styleId": 5,
+    "styleDescription": "Poveži dvije različite industrije zajedničkim imenom",
+    "question": "Koji programski jezik dijeli ime s matematičarkom Lovelace, pionirkom programiranja?",
+    "answers": [
+      "Ada"
+    ],
+    "explanation": "Programski jezik Ada nazvan je po Adi Lovelace, koja je opisivala postupke za Babbageov stroj.",
+    "sources": [
+      "https://www.computerhistory.org/tdih/december/10/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1539-20261104",
+    "createdAt": "2026-11-04T07:38:06+01:00",
+    "updatedAt": "2026-11-04T07:38:06+01:00",
+    "topic": "Glazba",
+    "focus": "teremin antena instrument",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji elektronički instrument iz 20. stoljeća prepoznajemo po dvjema antenama uz koje izvođač pomiče ruke?",
+    "answers": [
+      "Teremin",
+      "Theremin"
+    ],
+    "explanation": "Teremin mijenja visinu i glasnoću tona pomicanjem ruku uz antene, bez tipki.",
+    "sources": [
+      "https://www.si.edu/es/object/theremin%3Anmah_606437"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
