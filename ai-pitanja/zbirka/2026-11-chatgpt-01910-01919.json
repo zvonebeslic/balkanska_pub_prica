@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-1910-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Životinje",
+    "focus": "Okapijevo srodstvo",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Iako ima pruge poput zebre, koja je visoka afrička životinja najbliži živući srodnik okapija?",
+    "answers": [
+      "Žirafa",
+      "Žirafe"
+    ],
+    "explanation": "Okapi i žirafa pripadaju istoj porodici žirafa.",
+    "sources": [
+      "https://animals.sandiegozoo.org/animals/okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1911-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Književnost",
+    "focus": "Tradicionalni haiku",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja japanska pjesnička forma tradicionalno ima tri stiha s rasporedom 5, 7 i 5 zvukovnih jedinica?",
+    "answers": [
+      "Haiku"
+    ],
+    "explanation": "Tradicionalni haiku raspoređuje 17 mora u tri stiha.",
+    "sources": [
+      "https://snl.no/haiku"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1912-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Arheologija",
+    "focus": "Rozetski kamen tri pisma",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je slavni egipatski nalaz pomogao dešifrirati hijeroglife jer je isti dekret sadržavao na grčkom, demotskom i hijeroglifskom pismu?",
+    "answers": [
+      "Rozetski kamen",
+      "Kamen iz Rosette",
+      "Rosetta Stone"
+    ],
+    "explanation": "Tri inačice dekreta omogućile su usporedbu pisama.",
+    "sources": [
+      "https://www.worldhistory.org/Rosetta_Stone/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1913-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Astronomija",
+    "focus": "Venerin izlazak Sunca",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Na kojem planetu Sunce, zbog retrogradne vrtnje, izlazi na zapadu i zalazi na istoku?",
+    "answers": [
+      "Venera",
+      "Veneri"
+    ],
+    "explanation": "Venera se okreće u smjeru suprotnom od većine planeta.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1914-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Povijest",
+    "focus": "Angkorsko carstvo",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Čije je srednjovjekovno carstvo ostavilo hramove Angkor Wat i Bayon u današnjoj Kambodži?",
+    "answers": [
+      "Kmersko carstvo",
+      "Kmeri",
+      "Kmerskog carstva",
+      "Khmer Empire"
+    ],
+    "explanation": "Angkor je bio središte kmerske države.",
+    "sources": [
+      "https://whc.unesco.org/en/list/668/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1915-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Biologija",
+    "focus": "Okapijev jezik",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji prugasti šumski sisavac iz Konga dugim tamnim jezikom skida lišće s grana, baš poput svojeg rođaka žirafe?",
+    "answers": [
+      "Okapi"
+    ],
+    "explanation": "Okapijev hvatajući jezik prilagođen je brštenju.",
+    "sources": [
+      "https://animals.sandiegozoo.org/animals/okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1916-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Jezik",
+    "focus": "Demotsko pismo",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se zove staroegipatsko pismo za svakodnevnu uporabu koje zauzima srednji pojas Rozetskoga kamena?",
+    "answers": [
+      "Demotsko pismo",
+      "Demotski"
+    ],
+    "explanation": "Demotski zapis nalazi se između hijeroglifa i grčkog teksta.",
+    "sources": [
+      "https://www.worldhistory.org/Rosetta_Stone/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1917-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Zemljopis",
+    "focus": "Angkor provincija",
+    "difficulty": 5,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se kambodžanskoj pokrajini nalazi arheološki kompleks Angkor, poznat po hramovima i drevnim rezervoarima?",
+    "answers": [
+      "Siem Reap"
+    ],
+    "explanation": "Angkor se nalazi u pokrajini Siem Reap.",
+    "sources": [
+      "https://whc.unesco.org/en/list/668/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1918-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Fizika",
+    "focus": "Venerin zvjezdani dan",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedan okret oko osi traje približno 243 zemaljska dana, dulje od njegova obilaska Sunca?",
+    "answers": [
+      "Venera",
+      "Veneri"
+    ],
+    "explanation": "Venerina rotacija traje 243, a ophod oko Sunca 225 zemaljskih dana.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1919-20261104",
+    "createdAt": "2026-11-04T23:37:33+01:00",
+    "updatedAt": "2026-11-04T23:37:33+01:00",
+    "topic": "Umjetnost",
+    "focus": "Hram Bayon",
+    "difficulty": 5,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Angkor Thom krije hram poznat po brojnim isklesanim licima. Kako se zove taj hram?",
+    "answers": [
+      "Bayon",
+      "Bajon",
+      "Bayon Temple"
+    ],
+    "explanation": "Bayon je jedan od najpoznatijih hramova Angkora.",
+    "sources": [
+      "https://whc.unesco.org/en/list/668/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
