@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-1660-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je dokument engleski kralj Ivan Bez Zemlje prihvatio 1215. pod pritiskom baruna?",
+    "answers": [
+      "Magna Carta"
+    ],
+    "explanation": "Velika povelja ograničila je određene kraljeve ovlasti.",
+    "sources": [
+      "https://www.britannica.com/topic/Magna-Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1661-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto enklava",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička kraljevina sa svih strana okružena Južnoafričkom Republikom?",
+    "answers": [
+      "Lesoto"
+    ],
+    "explanation": "Lesoto je suverena enklava u južnoj Africi.",
+    "sources": [
+      "https://www.britannica.com/place/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1662-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Biologija",
+    "focus": "Lišajevi simbioza",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji organizmi nastaju u trajnoj zajednici gljive i fotosintetskog partnera?",
+    "answers": [
+      "Lišajevi"
+    ],
+    "explanation": "Gljiva živi u simbiozi s algom ili cijanobakterijom.",
+    "sources": [
+      "https://www.britannica.com/science/lichen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1663-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Matematika",
+    "focus": "Fibonaccijev niz",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U kojem nizu svaki sljedeći član nastaje zbrajanjem prethodna dva, počevši od 0 i 1?",
+    "answers": [
+      "Fibonaccijev niz"
+    ],
+    "explanation": "Početak niza glasi 0, 1, 1, 2, 3, 5.",
+    "sources": [
+      "https://www.britannica.com/science/Fibonacci-number"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1664-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Književnost",
+    "focus": "Gregor Samsa",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je književnik napisao Preobrazbu, priču o Gregoru Samsi koji se budi kao golemi kukac?",
+    "answers": [
+      "Franz Kafka"
+    ],
+    "explanation": "Preobrazba je Kafkina novela objavljena 1915.",
+    "sources": [
+      "https://www.britannica.com/topic/The-Metamorphosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1665-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Kemija",
+    "focus": "Bronca slitina",
+    "difficulty": 1,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koja se slitina tradicionalno dobiva miješanjem bakra i kositra?",
+    "answers": [
+      "Bronca"
+    ],
+    "explanation": "Bronca je slitina čija je osnovna komponenta bakar.",
+    "sources": [
+      "https://www.britannica.com/technology/bronze-alloy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1666-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Sport",
+    "focus": "Biatlon sportovi",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji zimski sport spaja skijaško trčanje i gađanje puškom?",
+    "answers": [
+      "Biatlon"
+    ],
+    "explanation": "Natjecatelji izmjenjuju skijaške dionice i streljačke serije.",
+    "sources": [
+      "https://olympics.com/en/sports/biathlon/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1667-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Glazba",
+    "focus": "Oboa dvostruki jezičak",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koje drveno puhačko glazbalo s dvostrukim jezičkom često daje ton za ugađanje orkestra?",
+    "answers": [
+      "Oboa"
+    ],
+    "explanation": "Oboa ima prodoran i stabilan ton pogodan za ugađanje.",
+    "sources": [
+      "https://www.britannica.com/art/oboe"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1668-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan Saturn atmosfera",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Saturnov mjesec ima gustu atmosferu i jezera tekućih ugljikovodika?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titanova površina ima jezera metana i etana.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1669-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Pointilizam Seurat",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Kako se naziva slikarska tehnika gradnje prizora sitnim točkama boje, povezana s Georgesom Seuratom?",
+    "answers": [
+      "Pointilizam"
+    ],
+    "explanation": "Optičko miješanje točaka boje stvara dojam cjelovite slike.",
+    "sources": [
+      "https://www.britannica.com/art/pointillism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
