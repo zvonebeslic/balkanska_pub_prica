@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-1610-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Povijest",
+    "focus": "Rosetta Stone tri pisma",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na kojem su kamenu iz 196. pr. Kr. isti tekst zapisali hijeroglifima, demotskim i grčkim pismom?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rosettski kamen",
+      "Rosetta Stone"
+    ],
+    "explanation": "Trojezični natpis bio je ključ za dešifriranje egipatskih hijeroglifa.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/Y_EA24"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1611-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Matematika",
+    "focus": "Eulerov broj e",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja matematička konstanta, približno 2,71828, služi kao baza prirodnog logaritma?",
+    "answers": [
+      "Eulerov broj",
+      "e",
+      "Napierova konstanta"
+    ],
+    "explanation": "Broj e pojavljuje se u kontinuiranom rastu i eksponencijalnim funkcijama.",
+    "sources": [
+      "https://mathworld.wolfram.com/e.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1612-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace Bernoullijevi brojevi",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je matematičarka u bilješkama o Babbageovu analitičkom stroju opisala algoritam za Bernoullijeve brojeve?",
+    "answers": [
+      "Ada Lovelace",
+      "Ada Byron",
+      "Augusta Ada King"
+    ],
+    "explanation": "Njezine bilješke često se navode kao rani primjer računalnog programa.",
+    "sources": [
+      "https://www.computerhistory.org/babbage/adalovelace/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1613-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto okružen Južnom Afrikom",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička država potpuno okružena Južnoafričkom Republikom, a glavni joj je grad Maseru?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je enklavska država unutar teritorija Južnoafričke Republike.",
+    "sources": [
+      "https://www.cia.gov/the-world-factbook/countries/lesotho/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1614-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Kemija",
+    "focus": "Volfram simbol W",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element ima simbol W, izveden iz naziva wolfram, i koristi se za izradu vrlo otpornih niti?",
+    "answers": [
+      "Volfram",
+      "Tungsten"
+    ],
+    "explanation": "Volfram ima iznimno visoko talište među metalima.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/74/tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1615-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Biologija",
+    "focus": "Lišajevi simbioza",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji organizmi nastaju dugotrajnom zajednicom gljive i fotosintetskog partnera, često rastući i na golim stijenama?",
+    "answers": [
+      "Lišajevi",
+      "Lišaj",
+      "Lichens"
+    ],
+    "explanation": "Lišaj je simbiotski sustav gljive i alge ili cijanobakterije.",
+    "sources": [
+      "https://www.britannica.com/science/lichen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1616-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Glazba",
+    "focus": "Theremin bez dodira",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji elektronički instrument svirač kontrolira pokretima ruku uz dvije antene, bez fizičkog dodirivanja?",
+    "answers": [
+      "Teremin",
+      "Theremin"
+    ],
+    "explanation": "Promjene položaja ruku utječu na visinu tona i glasnoću.",
+    "sources": [
+      "https://www.britannica.com/art/theremin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1617-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Književnost",
+    "focus": "Moby Dick brod Pequod",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove kitolovac kojim kapetan Ahab progoni bijelog kita u Melvilleovu romanu 'Moby Dick'?",
+    "answers": [
+      "Pequod",
+      "Pekod"
+    ],
+    "explanation": "Pequod je brod na kojem Ishmael pripovijeda Ahabovu opsesivnu potragu.",
+    "sources": [
+      "https://www.gutenberg.org/ebooks/2701"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1618-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Sport",
+    "focus": "Prvi svjetski kup Urugvaj 1930",
+    "difficulty": 1,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koja je država osvojila prvo Svjetsko prvenstvo u nogometu 1930., pobijedivši Argentinu u finalu?",
+    "answers": [
+      "Urugvaj",
+      "Uruguay"
+    ],
+    "explanation": "Urugvaj je bio domaćin i prvi svjetski prvak.",
+    "sources": [
+      "https://www.fifa.com/tournaments/mens/worldcup/1930uruguay"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1619-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan metanska jezera",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem Saturnovu mjesecu postoje jezera i mora tekućeg metana i etana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titanova hladna površina omogućuje stabilne tekuće ugljikovodike.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
