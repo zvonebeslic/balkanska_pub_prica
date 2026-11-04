@@ -1,0 +1,241 @@
+[
+  {
+    "id": "chatgpt10000-1830-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa kao Jupiterov mjesec",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Ispod ledene kore Europe možda se krije ocean s više vode nego u svim Zemljinim oceanima. Oko kojeg planeta kruži Europa?",
+    "answers": [
+      "Jupiter",
+      "Jupitera"
+    ],
+    "explanation": "Europa je Jupiterov ledeni mjesec s dokazima o podzemnom slanom oceanu.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1831-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Geologija",
+    "focus": "Vrtača u krškom krajoliku",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kad podzemna voda otapa vapnenac i tlo se uruši u udubinu bez površinskog otjecanja, kako se naziva takav krški oblik?",
+    "answers": [
+      "Vrtača",
+      "Vrtaca",
+      "Ponorina"
+    ],
+    "explanation": "Vrtače nastaju u topljivim stijenama, osobito vapnencu.",
+    "sources": [
+      "https://www.usgs.gov/faqs/what-a-sinkhole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1832-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Biologija",
+    "focus": "Simbioza u lišaju",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Lišaj izgleda kao jedna biljka, ali zapravo nastaje suradnjom gljive i kojeg fotosintetskog partnera?",
+    "answers": [
+      "Alge",
+      "Alga",
+      "Cijanobakterije",
+      "Alge ili cijanobakterije"
+    ],
+    "explanation": "Lišaji su zajednice gljiva i alga ili cijanobakterija.",
+    "sources": [
+      "https://home.nps.gov/grte/learn/nature/lichen.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1833-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Medicina",
+    "focus": "Rod komaraca prenositelja malarije",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Malariju prenose zaražene ženke komaraca iz kojeg roda, a ne komarci svih vrsta?",
+    "answers": [
+      "Anopheles",
+      "Anofeles"
+    ],
+    "explanation": "Parazite malarije prenose ženke komaraca roda Anopheles.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/malaria"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1834-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Ples",
+    "focus": "Španjolska regija kao srce flamenka",
+    "difficulty": 1,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Koja je južna španjolska regija kolijevka flamenka, umjetnosti koja spaja pjevanje, ples i gitaru?",
+    "answers": [
+      "Andaluzija",
+      "Andaluziji"
+    ],
+    "explanation": "UNESCO navodi Andaluziju kao središte flamenka.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1835-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Atletika",
+    "focus": "Pobjednik prvog olimpijskog maratona 1896.",
+    "difficulty": 5,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Na prvim modernim Olimpijskim igrama 1896. domaći je trkač pobijedio u maratonu dugom oko 40 km. Kako se zvao taj Grk?",
+    "answers": [
+      "Spiridon Luis",
+      "Spyridon Louis",
+      "Spiridon Louis",
+      "Spyrídon Loúis"
+    ],
+    "explanation": "Spyridon Louis pobijedio je u atenskom maratonu 1896.",
+    "sources": [
+      "https://www.olympics.com/cio/news/le-premier-marathon-olympique-de-l-ere-moderne"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1836-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Planetologija",
+    "focus": "Debljina ledene kore Europe",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "NASA procjenjuje da ledena kora Jupiterova mjeseca Europe ima otprilike 15 do koliko kilometara debljine?",
+    "answers": [
+      "25",
+      "25 kilometara",
+      "25 km"
+    ],
+    "explanation": "Procjene debljine Europine kore kreću se oko 15–25 kilometara.",
+    "sources": [
+      "https://science.nasa.gov/mission/europa-clipper/mission-faq/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1837-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Ekologija",
+    "focus": "Lišaji kao pokazatelji onečišćenja zraka",
+    "difficulty": 3,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Zbog osjetljivosti na onečišćenje, prisutnost ili nestanak lišaja često služi kao pokazatelj kakvoće čega?",
+    "answers": [
+      "Zraka",
+      "Kvalitete zraka",
+      "Kakvoće zraka"
+    ],
+    "explanation": "Lišaji upijaju onečišćivala iz okoliša i koriste se kao bioindikatori zraka.",
+    "sources": [
+      "https://home.nps.gov/grte/learn/nature/lichen.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1838-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Epidemiologija",
+    "focus": "Uzročnik malarije kao rod parazita",
+    "difficulty": 4,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Anopheles prenosi malariju, ali je ne uzrokuje sam komarac. Kako se zove rod jednostaničnih parazita koji izaziva bolest?",
+    "answers": [
+      "Plasmodium",
+      "Plazmodij",
+      "Plazmodium"
+    ],
+    "explanation": "Malariju uzrokuju paraziti roda Plasmodium.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/malaria"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1839-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Povijest sporta",
+    "focus": "Izvorna duljina maratona na Igrama 1896.",
+    "difficulty": 3,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Današnji maraton ima 42,195 km, ali atenski olimpijski maraton 1896. bio je kraći. Koliko je kilometara otprilike iznosila njegova staza?",
+    "answers": [
+      "40",
+      "40 kilometara",
+      "40 km"
+    ],
+    "explanation": "Prvi olimpijski maraton vodio je od Maratona do Atene na oko 40 km.",
+    "sources": [
+      "https://www.olympics.com/cio/news/le-premier-marathon-olympique-de-l-ere-moderne"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
