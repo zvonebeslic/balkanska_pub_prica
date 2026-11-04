@@ -1,0 +1,28 @@
+[
+  {
+    "id": "chatgpt10000-1920-20261105",
+    "createdAt": "2026-11-05T00:38:20+01:00",
+    "updatedAt": "2026-11-05T00:38:20+01:00",
+    "topic": "Matematika",
+    "focus": "Möbiusova vrpca jedna strana i jedan rub",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Papirnatu traku zakrenete za pola okreta i spojite joj krajeve. Olovkom sada možete prijeći cijelom površinom bez prelaska preko ruba. Kako se zove tako dobivena matematička ploha?",
+    "answers": [
+      "Möbiusova vrpca",
+      "Mobiusova vrpca",
+      "Möbiusova traka",
+      "Mobiusova traka",
+      "Möbius strip"
+    ],
+    "explanation": "Poluokret prije spajanja krajeva stvara plohu sa samo jednom stranom i jednim rubom.",
+    "sources": [
+      "https://www.collinsdictionary.com/dictionary/english/mobius-strip"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
