@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-1820-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Naziv ekosustava miješanja riječne i morske vode",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Rijeka završava put, ali njezina voda još nije sasvim morska: kako se naziva prijelazno područje gdje se riječna i morska voda miješaju?",
+    "answers": [
+      "Estuarij",
+      "Estuar"
+    ],
+    "explanation": "Estuarij je obalni ekosustav pod utjecajem riječne i morske vode.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/estuary.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1821-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Hidrologija",
+    "focus": "Povremeni mlaz termalne vode iz tla",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Iz tla povremeno šiklja stup vruće vode i pare, pa nakon erupcije nastupa zatišje. Kako se zove takav izvor?",
+    "answers": [
+      "Gejzir",
+      "Geyser"
+    ],
+    "explanation": "Gejzir je termalni izvor s povremenim izbacivanjem vode.",
+    "sources": [
+      "https://www.usgs.gov/publications/geysers"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1822-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Medicina",
+    "focus": "Godina službene eradikacije velikih boginja",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Posljednji prirodni slučaj velikih boginja zabilježen je 1977., a Svjetska zdravstvena skupština službeno je proglasila njihovo iskorjenjivanje koje godine?",
+    "answers": [
+      "1980"
+    ],
+    "explanation": "Svjetska zdravstvena skupština potvrdila je eradikaciju 8. svibnja 1980.",
+    "sources": [
+      "https://www.who.int/news/item/08-05-2020-commemorating-smallpox-eradication-a-legacy-of-hope-for-covid-19-and-other-diseases"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1823-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Etnologija",
+    "focus": "Indonezijsko lutkarsko kazalište sjena",
+    "difficulty": 4,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Na Javi se iza osvijetljenog platna pokreću izrezbarene kožne lutke, a njihove sjene pričaju epove. Koji je zajednički naziv te indonezijske kazališne tradicije?",
+    "answers": [
+      "Wayang",
+      "Vajang"
+    ],
+    "explanation": "Wayang uključuje kazalište lutaka i sjena, osobito wayang kulit.",
+    "sources": [
+      "https://www.unesco.org/archives/multimedia/document-3759"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1824-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Ekologija",
+    "focus": "Cijanobakterije stabiliziraju pustinjsku koru",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Na pustinjskoj površini tamna živa pokorica sprječava eroziju; njezini glavni graditelji nekad su se nazivali modrozelenim algama. Koji su to organizmi?",
+    "answers": [
+      "Cijanobakterije",
+      "Cyanobacteria"
+    ],
+    "explanation": "Cijanobakterije povezuju čestice tla i mogu vezati atmosferski dušik.",
+    "sources": [
+      "https://home.nps.gov/nabr/learn/nature/soils.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1825-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Grafika",
+    "focus": "Višebojni japanski drvorez i broj matrica",
+    "difficulty": 4,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Majstor japanskog višebojnog drvoreza za svaku boju rezbari zasebnu matricu. Od kojeg se materijala tradicionalno izrađuju te matrice?",
+    "answers": [
+      "Drvo",
+      "Drveta"
+    ],
+    "explanation": "U ukiyo-e grafici različite boje otiskuju se s odvojenih drvenih blokova.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1826-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Epidemiologija",
+    "focus": "Zadnja zemlja s prirodnim velikim boginjama",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Posljednji poznati prirodni slučaj velikih boginja zabilježen je 1977. u Merki. U kojoj se afričkoj državi nalazi taj grad?",
+    "answers": [
+      "Somalija",
+      "Somaliji"
+    ],
+    "explanation": "Posljednji prirodni slučaj zabilježen je u Somaliji 1977.",
+    "sources": [
+      "https://www.who.int/news-room/events/detail/2020/05/08/default-calendar/commemorating-the-40th-anniversary-of-smallpox-eradication"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1827-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Oceanografija",
+    "focus": "Naziv bočate vode",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se jednim pridjevom naziva voda koja je slanija od riječne, ali manje slana od tipične morske vode?",
+    "answers": [
+      "Bočata",
+      "Bocata"
+    ],
+    "explanation": "Bočata voda nastaje miješanjem slatke i slane vode, primjerice u estuarijima.",
+    "sources": [
+      "https://oceanservice.noaa.gov/education/tutorial_estuaries/est01_whatis.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1828-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Povijest medicine",
+    "focus": "Prvo uspješno cjepivo Edwarda Jennera",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Protiv koje je bolesti Edward Jenner 1796. razvio prvo uspješno cjepivo, koristeći opažanja o kravljim boginjama?",
+    "answers": [
+      "Velike boginje",
+      "Variola",
+      "Velikih boginja"
+    ],
+    "explanation": "Jenner je iskoristio zaštitu povezanu s kravljim boginjama kako bi spriječio velike boginje.",
+    "sources": [
+      "https://www.who.int/emergencies/situations/smallpox"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1829-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Tiskarstvo",
+    "focus": "Registracija višebojnog japanskog drvoreza",
+    "difficulty": 5,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Na japanskom drvorezu svaka boja dolazi s druge matrice. Koja je osnovna svrha dvaju urezanih oznaka na rubu matrice?",
+    "answers": [
+      "Poravnanje otisaka",
+      "Poravnavanje papira",
+      "Registracija boja",
+      "Usklađivanje boja"
+    ],
+    "explanation": "Oznake omogućuju precizno poravnanje papira pri otiskivanju više boja.",
+    "sources": [
+      "https://www.metmuseum.org/de/essays/woodblock-prints-in-the-ukiyo-e-style"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
