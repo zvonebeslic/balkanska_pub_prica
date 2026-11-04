@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-1690-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Arhitektura",
+    "focus": "Gaudi Sagrada Familia",
+    "difficulty": 2,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Koji je katalonski arhitekt najpoznatiji po projektu bazilike Sagrada Família u Barceloni?",
+    "answers": [
+      "Antoni Gaudí"
+    ],
+    "explanation": "Gaudí je vodio radove na bazilici od 1883.",
+    "sources": [
+      "https://www.britannica.com/biography/Antoni-Gaudi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1691-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Film",
+    "focus": "Metropolis Fritz Lang",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji je redatelj snimio nijemi znanstvenofantastični film Metropolis iz 1927.?",
+    "answers": [
+      "Fritz Lang"
+    ],
+    "explanation": "Metropolis je znameniti film njemačkog ekspresionizma.",
+    "sources": [
+      "https://www.britannica.com/biography/Fritz-Lang"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1692-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Medicina",
+    "focus": "Stetoskop Laennec",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je francuski liječnik početkom 19. stoljeća izumio stetoskop?",
+    "answers": [
+      "René Laennec"
+    ],
+    "explanation": "Laennec je 1816. razvio rani stetoskop.",
+    "sources": [
+      "https://www.britannica.com/biography/Rene-Laennec"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1693-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR code Japan",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koja vrsta dvodimenzionalnog koda, izvorno razvijena u Japanu, pohranjuje podatke u crno-bijelu kvadratnu mrežu?",
+    "answers": [
+      "QR kod"
+    ],
+    "explanation": "QR znači Quick Response.",
+    "sources": [
+      "https://www.britannica.com/technology/QR-Code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1694-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Životinje",
+    "focus": "Okapi srodstvo žirafa",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji šumski sisavac iz Konga ima prugaste noge nalik zebrama, ali mu je najbliži živi srodnik žirafa?",
+    "answers": [
+      "Okapi"
+    ],
+    "explanation": "Okapi i žirafa pripadaju porodici Giraffidae.",
+    "sources": [
+      "https://www.britannica.com/animal/okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1695-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Jezik",
+    "focus": "Esperanto Zamenhof",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je planski međunarodni jezik 1887. predstavio L. L. Zamenhof?",
+    "answers": [
+      "Esperanto"
+    ],
+    "explanation": "Zamenhof je objavio temeljnu knjižicu pod pseudonimom Dr. Esperanto.",
+    "sources": [
+      "https://www.britannica.com/topic/Esperanto-language"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1696-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Gastronomija",
+    "focus": "Kimchi kupus",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove korejski fermentirani prilog koji se često priprema od kineskog kupusa i čilija?",
+    "answers": [
+      "Kimchi"
+    ],
+    "explanation": "Kimchi je tradicionalna fermentirana korejska hrana.",
+    "sources": [
+      "https://www.britannica.com/topic/kimchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1697-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Geologija",
+    "focus": "Mohsova ljestvica",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojoj se ljestvici tvrdoće minerala dijamant nalazi na desetom stupnju?",
+    "answers": [
+      "Mohsova ljestvica"
+    ],
+    "explanation": "Mohsova ljestvica temelji se na otpornosti na grebanje.",
+    "sources": [
+      "https://www.britannica.com/science/Mohs-hardness"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1698-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Religije i mitologije",
+    "focus": "Odin gavrani",
+    "difficulty": 3,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Kako se zove nordijski bog kojeg u mitovima prate gavrani Huginn i Muninn?",
+    "answers": [
+      "Odin"
+    ],
+    "explanation": "Gavrani mu donose vijesti iz svijeta.",
+    "sources": [
+      "https://www.britannica.com/topic/Odin-Norse-deity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1699-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Fizika",
+    "focus": "Arhimedov zakon",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Po kojem je starogrčkom učenjaku nazvan zakon uzgona koji ovisi o težini istisnute tekućine?",
+    "answers": [
+      "Arhimed"
+    ],
+    "explanation": "Arhimedov zakon opisuje uzgon uronjenog tijela.",
+    "sources": [
+      "https://www.britannica.com/science/Archimedes-principle"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
