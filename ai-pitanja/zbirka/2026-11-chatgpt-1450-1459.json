@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-1450-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Astronomija",
+    "focus": "Galilejevi mjeseci planet",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Na kojem se planetu nalaze četiri velika mjeseca koje je promatrao Galileo, među njima Io i Europa?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Galilejevi mjeseci Io, Europa, Ganimed i Kalisto kruže oko Jupitera.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/moons/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1451-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Zemljopis",
+    "focus": "Oortov oblak lokacija",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva golemi hipotetski oblak ledenih tijela koji okružuje Sunčev sustav daleko iza Kuiperova pojasa?",
+    "answers": [
+      "Oortov oblak"
+    ],
+    "explanation": "Oortov oblak nije izravno snimljen, a pretpostavlja se iz putanja kometa.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1452-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Fizika",
+    "focus": "Sunčeva diferencijalna rotacija",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Na Sunčevu ekvatoru jedan okret traje oko 25 dana, a na polovima 36. Kako se zove takva nejednaka vrtnja?",
+    "answers": [
+      "Diferencijalna rotacija"
+    ],
+    "explanation": "Sunčeva plazma ne rotira jednako na svim širinama.",
+    "sources": [
+      "https://science.nasa.gov/sun/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1453-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Povijest",
+    "focus": "prve moderne olimpijske igre godina",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine u Ateni održano prvo izdanje obnovljenih modernih Olimpijskih igara?",
+    "answers": [
+      "1896"
+    ],
+    "explanation": "Pierre de Coubertin potaknuo je obnovu, a Igre su održane 1896.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/what-is-the-origin-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1454-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Antika",
+    "focus": "pankration zabranjeni zahvati",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Koja je radnja, osim ugriza, bila zabranjena u antičkom pankrationu?",
+    "answers": [
+      "Kopanje očiju",
+      "Vađenje očiju"
+    ],
+    "explanation": "Pankration je imao malo zabrana, među njima ugrize i napade na oči.",
+    "sources": [
+      "https://www.olympics.com/ioc/ancient-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1455-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Sport",
+    "focus": "Julien Alfred država",
+    "difficulty": 3,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Koja je država osvojila svoje prvo olimpijsko zlato u Parizu 2024. zahvaljujući sprinterici Julien Alfred?",
+    "answers": [
+      "Sveta Lucija",
+      "Saint Lucia"
+    ],
+    "explanation": "Julien Alfred osvojila je zlato na 100 metara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/paris-2024-record-breaking-olympic-games-on-and-off-the-field"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1456-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Atletika",
+    "focus": "Zatopek tri zlata 1952",
+    "difficulty": 3,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je čehoslovački trkač u Helsinkiju 1952. osvojio zlata na 5000 m, 10000 m i u maratonu?",
+    "answers": [
+      "Emil Zátopek",
+      "Emil Zatopek",
+      "Zatopek"
+    ],
+    "explanation": "Zátopek je jedini osvojio sve tri discipline na istim Igrama.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/from-major-sports-events-to-rock-concerts-the-legacy-of-helsinki-1952-lives-on"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1457-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Arheologija",
+    "focus": "Petra Nabatejci",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Koji je drevni narod u stijeni isklesao velik dio grada Petre, nekadašnjeg karavanskog središta?",
+    "answers": [
+      "Nabatejci"
+    ],
+    "explanation": "Petra je bila prijestolnica Nabatejaca na trgovačkim putovima.",
+    "sources": [
+      "https://whc.unesco.org/en/list/326"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1458-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Arhitektura",
+    "focus": "Machu Picchu civilizacija",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kojoj je južnoameričkoj civilizaciji pripadala planinska citadela Machu Picchu?",
+    "answers": [
+      "Inke",
+      "Inka"
+    ],
+    "explanation": "Machu Picchu jedan je od najpoznatijih ostataka inkanske civilizacije.",
+    "sources": [
+      "https://whc.unesco.org/en/list/274"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1459-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Medicina",
+    "focus": "R21 bolest",
+    "difficulty": 2,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Protiv koje bolesti WHO preporučuje dječje cjepivo R21/Matrix-M?",
+    "answers": [
+      "Malarija",
+      "Malarije"
+    ],
+    "explanation": "R21/Matrix-M drugo je cjepivo protiv malarije koje je preporučio WHO.",
+    "sources": [
+      "https://www.who.int/news/item/02-10-2023-who-recommends-r21-matrix-m-vaccine-for-malaria-prevention-in-updated-advice-on-immunization"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
