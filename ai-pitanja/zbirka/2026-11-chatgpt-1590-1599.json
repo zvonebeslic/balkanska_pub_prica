@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-1590-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Ganimed mitološki peharnik",
+    "difficulty": 4,
+    "styleId": 30,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Po kojem je mitološkom mladiću, Zeusovu peharniku na Olimpu, nazvan najveći Jupiterov mjesec?",
+    "answers": [
+      "Ganimed",
+      "Ganymede"
+    ],
+    "explanation": "Mitološki Ganimed posluživao je piće olimpijskim bogovima.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1591-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Sport",
+    "focus": "olimpijada Pierre de Coubertin 1894",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koji je francuski barun 1894. pokrenuo obnovu Olimpijskih igara?",
+    "answers": [
+      "Pierre de Coubertin",
+      "Coubertin",
+      "Pjer de Kuberten"
+    ],
+    "explanation": "Coubertin je inicirao obnovu modernih Olimpijskih igara.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/what-is-the-origin-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1592-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Kultura",
+    "focus": "flamenco UNESCO 2010",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koje je godine flamenko uvršten na UNESCO-ov popis nematerijalne kulturne baštine?",
+    "answers": [
+      "2010"
+    ],
+    "explanation": "Flamenko je uvršten 2010. godine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1593-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Matematika",
+    "focus": "magnituda razlika dva stupnja amplituda",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Potres magnitude 8 na seizmogramu ima približno koliko puta veću amplitudu od potresa magnitude 6?",
+    "answers": [
+      "100",
+      "Sto"
+    ],
+    "explanation": "Razlika od dva stupnja na logaritamskoj ljestvici znači stostruku amplitudu.",
+    "sources": [
+      "https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1594-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Životinje",
+    "focus": "gepard pjege kamuflaža",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Jesu li crne pjege geparda ponajprije korisne za prikrivanje u travi ili za hlađenje tijela?",
+    "answers": [
+      "Prikrivanje",
+      "Kamuflaža",
+      "Kamuflaza"
+    ],
+    "explanation": "Pjege razbijaju obris tijela i pomažu kamuflaži.",
+    "sources": [
+      "https://nationalzoo.si.edu/animals/news/why-do-cheetahs-have-spots-and-other-cheetah-facts"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1595-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "lajvardina keramika crvena bijela boja",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Na keramičkoj zdjeli lajvardina iz Metropolitana zlatni kvadratići dopunjeni su dvjema bojama oslikavanja. Koje su to boje?",
+    "answers": [
+      "Crvena i bijela",
+      "Bijela i crvena"
+    ],
+    "explanation": "Muzej opisuje crvene i bijele detalje preko zlatnih ukrasa.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/449019"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1596-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Biologija",
+    "focus": "mravojed znanstveni naziv tridactyla",
+    "difficulty": 5,
+    "styleId": 26,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Latinski naziv velikog mravojeda glasi Myrmecophaga tridactyla. Koja riječ označava njegov rod?",
+    "answers": [
+      "Myrmecophaga"
+    ],
+    "explanation": "Myrmecophaga je rod, a tridactyla oznaka vrste.",
+    "sources": [
+      "https://www.nationalzoo.si.edu/animals/giant-anteater"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1597-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Sport",
+    "focus": "Pariz 2024 prvo zlato Dominika",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Kojoj je karipskoj državi Thea LaFond u Parizu 2024. donijela prvo olimpijsko zlato?",
+    "answers": [
+      "Dominika",
+      "Dominica"
+    ],
+    "explanation": "Dominika je prvo zlato osvojila u ženskom troskoku.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/paris-2024-record-breaking-olympic-games-on-and-off-the-field"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1598-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Triton smrznuti dušik kora",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koji plin, u smrznutom stanju, prekriva velik dio površine Neptunova mjeseca Tritona?",
+    "answers": [
+      "Dušik",
+      "Dusik",
+      "Nitrogen"
+    ],
+    "explanation": "Tritonova je kora prekrivena smrznutim dušikom.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1599-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Geologija",
+    "focus": "Alaska 1964 trajanje podrhtavanja",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koliko je približno minuta trajalo snažno podrhtavanje tla u velikom potresu na Aljasci 1964.?",
+    "answers": [
+      "4,5",
+      "4.5",
+      "Četiri i pol",
+      "Cetiri i pol"
+    ],
+    "explanation": "USGS navodi da je snažno podrhtavanje trajalo oko četiri i pol minute.",
+    "sources": [
+      "https://www.usgs.gov/centers/alaska-science-center/science/1964-great-alaska-earthquake-and-tsunami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
