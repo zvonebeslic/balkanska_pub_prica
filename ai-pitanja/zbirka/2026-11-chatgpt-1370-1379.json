@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-01370-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Geologija",
+    "focus": "Mohsova ljestvica talk",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji mineral ima tvrdoću 1 na Mohsovoj ljestvici i najmekši je referentni mineral?",
+    "answers": [
+      "Talk",
+      "Talc"
+    ],
+    "explanation": "Talk je početna točka Mohsove ljestvice tvrdoće.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mohs_scale"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01371-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Književnost",
+    "focus": "Borges Aleph priča",
+    "difficulty": 4,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji argentinski pisac u pripovijetci Aleph opisuje točku iz koje se istodobno mogu vidjeti sva mjesta svemira?",
+    "answers": [
+      "Jorge Luis Borges",
+      "Borges"
+    ],
+    "explanation": "Aleph je jedna od najpoznatijih Borgesovih pripovijedaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Aleph_(short_story)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01372-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Fizika",
+    "focus": "Dopplerov učinak sirena",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji učinak objašnjava zašto se ton sirene vozila mijenja dok se vozilo približava i udaljava?",
+    "answers": [
+      "Dopplerov učinak",
+      "Dopplerov efekt"
+    ],
+    "explanation": "Promjena opažene frekvencije nastaje zbog relativnog gibanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Doppler_effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01373-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Zemljopis",
+    "focus": "Beringov prolaz kontinenti",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji morski prolaz razdvaja Aziju i Sjevernu Ameriku između Rusije i Aljaske?",
+    "answers": [
+      "Beringov prolaz",
+      "Beringov tjesnac"
+    ],
+    "explanation": "Beringov prolaz povezuje Arktički ocean i Beringovo more.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bering_Strait"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01374-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Glazba",
+    "focus": "sitar Ravi Shankar",
+    "difficulty": 3,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kojem je indijskom žičanom glazbalu svjetsku slavu stekao Ravi Shankar?",
+    "answers": [
+      "Sitar"
+    ],
+    "explanation": "Ravi Shankar bio je jedan od najpoznatijih svirača sitara.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ravi_Shankar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01375-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Kemija",
+    "focus": "lakmus lišajevi",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koje su organizme ljudi tradicionalno koristili za dobivanje lakmusa, pokazatelja kiselosti?",
+    "answers": [
+      "Lišajevi",
+      "Lišaj"
+    ],
+    "explanation": "Lakmus se tradicionalno dobiva iz određenih vrsta lišajeva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Litmus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01376-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Sport",
+    "focus": "maraton duljina 42.195 km",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko kilometara iznosi službena duljina maratona, zaokružena na tri decimale?",
+    "answers": [
+      "42,195",
+      "42.195"
+    ],
+    "explanation": "Standardna maratonska udaljenost iznosi 42 195 metara.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01377-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Povijest",
+    "focus": "Rosetta kamen tri pisma",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je pronađeni kameni spomenik s istim tekstom u tri zapisa omogućio ključan napredak u čitanju hijeroglifa?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rozetski kamen",
+      "Rosetta Stone"
+    ],
+    "explanation": "Tekst je zapisan hijeroglifima, demotskim i grčkim pismom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rosetta_Stone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01378-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Astronomija",
+    "focus": "Oortov oblak kometi",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva hipotetski daleki rezervoar ledenih tijela oko Sunčeva sustava, moguć izvor dugoperiodičnih kometa?",
+    "answers": [
+      "Oortov oblak"
+    ],
+    "explanation": "Oortov oblak nazvan je po astronomu Janu Oortu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Oort_cloud"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01379-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Gastronomija",
+    "focus": "agar iz algi",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje se sredstvo za želiranje dobiva iz crvenih algi i često koristi kao biljna zamjena za želatinu?",
+    "answers": [
+      "Agar",
+      "Agar-agar"
+    ],
+    "explanation": "Agar se dobiva iz staničnih stijenki nekih crvenih algi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Agar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
