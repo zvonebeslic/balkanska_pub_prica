@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-1640-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Psihologija",
+    "focus": "Stroopov efekt boje",
+    "difficulty": 4,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Kako se naziva pojava kad nam je teže imenovati boju tinte ako riječ označava neku drugu boju?",
+    "answers": [
+      "Stroopov efekt"
+    ],
+    "explanation": "Automatsko čitanje ometa imenovanje boje.",
+    "sources": [
+      "https://www.britannica.com/science/Stroop-effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1641-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Obrazovanje",
+    "focus": "Braille šest točaka",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koliko točaka sadrži osnovna ćelija Brailleova pisma?",
+    "answers": [
+      "6"
+    ],
+    "explanation": "Osnovna ćelija sastoji se od dvije kolone po tri točke.",
+    "sources": [
+      "https://www.britannica.com/topic/Braille"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1642-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Poljoprivreda",
+    "focus": "Filipinske rižine terase UNESCO",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj su državi rižine terase Kordiljera koje je UNESCO uvrstio na popis svjetske baštine?",
+    "answers": [
+      "Filipini"
+    ],
+    "explanation": "Terase su primjer tradicionalne poljoprivrede u planinama Luzona.",
+    "sources": [
+      "https://whc.unesco.org/en/list/722/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1643-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Moda",
+    "focus": "Levi Strauss zakovice 1873",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je poduzetnik s Jacobom Davisom 1873. patentirao hlače ojačane metalnim zakovicama?",
+    "answers": [
+      "Levi Strauss"
+    ],
+    "explanation": "Patent je postao važan za razvoj traperica.",
+    "sources": [
+      "https://www.levistrauss.com/2019/05/20/the-birth-of-blue-jeans/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1644-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Pravo i društvo",
+    "focus": "Magna Carta 1215",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Kako se zove povelja koju je engleski kralj Ivan Bez Zemlje prihvatio 1215. kod Runnymedea?",
+    "answers": [
+      "Magna Carta"
+    ],
+    "explanation": "Povelja je ograničila određene kraljevske ovlasti.",
+    "sources": [
+      "https://www.bl.uk/magna-carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1645-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Meteorologija",
+    "focus": "Beaufortova ljestvica",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koja ljestvica jačine vjetra nosi ime britanskog admirala?",
+    "answers": [
+      "Beaufortova ljestvica"
+    ],
+    "explanation": "Povezuje brzinu vjetra s njegovim opaženim učincima.",
+    "sources": [
+      "https://www.metoffice.gov.uk/weather/guides/coast-and-sea/beaufort-scale"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1646-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Marie Curie dva Nobela",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je znanstvenica dobila Nobelovu nagradu za fiziku 1903. i kemiju 1911.?",
+    "answers": [
+      "Marie Curie"
+    ],
+    "explanation": "Nagrađena je za istraživanja radioaktivnosti i otkrića elemenata.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1647-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Kartografija",
+    "focus": "Mercator loksodrome",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je kartograf dao ime projekciji na kojoj se linije stalnog navigacijskog kursa prikazuju pravcima?",
+    "answers": [
+      "Gerard Mercator"
+    ],
+    "explanation": "Mercatorova projekcija korisna je u pomorskoj navigaciji.",
+    "sources": [
+      "https://www.britannica.com/biography/Gerardus-Mercator"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1648-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Eiffelov toranj 1889",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Za koju je godinu Svjetske izložbe u Parizu izgrađen Eiffelov toranj?",
+    "answers": [
+      "1889"
+    ],
+    "explanation": "Toranj je podignut za parišku izložbu 1889.",
+    "sources": [
+      "https://www.toureiffel.paris/en/the-monument/history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1649-20261104",
+    "createdAt": "2026-11-04T11:37:53+01:00",
+    "updatedAt": "2026-11-04T11:37:53+01:00",
+    "topic": "Filozofija",
+    "focus": "Diogen Aleksandar sunce",
+    "difficulty": 3,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je antički filozof, prema anegdoti, zamolio Aleksandra Velikog da mu se makne sa sunca?",
+    "answers": [
+      "Diogen"
+    ],
+    "explanation": "Priča ilustrira njegovu neovisnost o bogatstvu i moći.",
+    "sources": [
+      "https://www.britannica.com/biography/Diogenes-Greek-philosopher"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
