@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-1470-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Astronomija",
+    "focus": "Triton retrogradna orbita",
+    "difficulty": 4,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Neptunov veliki mjesec kruži retrogradno, suprotno smjeru vrtnje planeta?",
+    "answers": [
+      "Triton"
+    ],
+    "explanation": "Triton je veliki retrogradni satelit Neptuna.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/moons/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1471-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Zemljopis",
+    "focus": "Kuiperov pojas",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se zove pojas ledenih malih tijela iza Neptunove orbite u kojem se nalazi i Pluton?",
+    "answers": [
+      "Kuiperov pojas"
+    ],
+    "explanation": "Kuiperov pojas proteže se izvan Neptunove putanje.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1472-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Fizika",
+    "focus": "Sunčeva korona",
+    "difficulty": 3,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Kako se naziva najudaljeniji sloj Sunčeve atmosfere, vidljiv tijekom potpune pomrčine?",
+    "answers": [
+      "Korona",
+      "Sunčeva korona"
+    ],
+    "explanation": "Korona je vrlo razrijeđen vanjski sloj Sunčeve atmosfere.",
+    "sources": [
+      "https://science.nasa.gov/sun/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1473-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Povijest",
+    "focus": "Olimpija Peloponez",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem je grčkom poluotoku ležala antička Olimpija, mjesto održavanja drevnih Igara?",
+    "answers": [
+      "Peloponez",
+      "Peloponeski poluotok"
+    ],
+    "explanation": "Olimpija se nalazi na sjeverozapadu Peloponeza.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/what-is-the-origin-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1474-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Antika",
+    "focus": "himantes boks",
+    "difficulty": 5,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Kako su se zvale kožne trake kojima su antički boksači omatali šake?",
+    "answers": [
+      "Himantes",
+      "Himanti"
+    ],
+    "explanation": "Trake himantes služile su učvršćivanju zapešća i prstiju.",
+    "sources": [
+      "https://www.olympics.com/ioc/ancient-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1475-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Sport",
+    "focus": "Adriana Ruano trap",
+    "difficulty": 4,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojoj je streljačkoj disciplini Adriana Ruano Oliva osvojila prvo olimpijsko zlato Gvatemale 2024.?",
+    "answers": [
+      "Trap",
+      "Trap gađanje"
+    ],
+    "explanation": "Ruano Oliva slavila je u ženskom trapu u Parizu.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/paris-2024-record-breaking-olympic-games-on-and-off-the-field"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1476-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Atletika",
+    "focus": "Zatopek prvi maraton",
+    "difficulty": 3,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "U kojoj je disciplini Emil Zátopek 1952. debitirao i odmah osvojio olimpijsko zlato?",
+    "answers": [
+      "Maraton"
+    ],
+    "explanation": "U maratonu je nastupio prvi put i pobijedio.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/from-major-sports-events-to-rock-concerts-the-legacy-of-helsinki-1952-lives-on"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1477-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Arheologija",
+    "focus": "Petra trgovačko raskrižje",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koji je pustinjski grad bio važno trgovačko raskrižje između Crvenog i Mrtvog mora?",
+    "answers": [
+      "Petra"
+    ],
+    "explanation": "Petra je povezivala trgovinu Arabije, Egipta i Sirije.",
+    "sources": [
+      "https://whc.unesco.org/en/list/326"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1478-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Arhitektura",
+    "focus": "Machu Picchu stoljeće",
+    "difficulty": 3,
+    "styleId": 100,
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "question": "U kojem je stoljeću podignut glavni kompleks Machu Picchua?",
+    "answers": [
+      "15. stoljeće",
+      "15",
+      "XV. stoljeće"
+    ],
+    "explanation": "UNESCO gradnju smješta u petnaesto stoljeće.",
+    "sources": [
+      "https://whc.unesco.org/en/list/274"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1479-20261104",
+    "createdAt": "2026-11-04T03:43:50+01:00",
+    "updatedAt": "2026-11-04T03:43:50+01:00",
+    "topic": "Medicina",
+    "focus": "R21 WHO organizacija",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja je organizacija 2023. preporučila R21/Matrix-M kao drugo cjepivo protiv malarije?",
+    "answers": [
+      "WHO",
+      "Svjetska zdravstvena organizacija"
+    ],
+    "explanation": "Preporuku je objavila Svjetska zdravstvena organizacija.",
+    "sources": [
+      "https://www.who.int/news/item/02-10-2023-who-recommends-r21-matrix-m-vaccine-for-malaria-prevention-in-updated-advice-on-immunization"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
