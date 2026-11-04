@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-01380-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Umjetnost",
+    "focus": "Hokusai veliki val Kanagawa",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je japanski umjetnik autor drvoreza Veliki val kod Kanagawe?",
+    "answers": [
+      "Katsushika Hokusai",
+      "Hokusai"
+    ],
+    "explanation": "Veliki val dio je serije Trideset šest pogleda na Fuji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01381-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Biologija",
+    "focus": "mitohondrij ATP",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji stanični organel proizvodi velik dio ATP-a tijekom aerobnog staničnog disanja?",
+    "answers": [
+      "Mitohondrij",
+      "Mitohondriji"
+    ],
+    "explanation": "Mitohondriji pretvaraju energiju hranjivih tvari u ATP.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01382-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Tehnologija",
+    "focus": "ENIAC elektroničko računalo",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je američko elektroničko računalo javno predstavljeno 1946. i zauzimalo cijelu prostoriju?",
+    "answers": [
+      "ENIAC"
+    ],
+    "explanation": "ENIAC je bio rano elektroničko digitalno računalo opće namjene.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ENIAC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01383-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Životinje",
+    "focus": "okapi srodnik žirafe",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koja prugonoga šumska životinja iz Konga, nalik križancu zebre i žirafe, pripada porodici žirafa?",
+    "answers": [
+      "Okapi"
+    ],
+    "explanation": "Okapi je najbliži živući srodnik žirafe.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01384-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Matematika",
+    "focus": "Fibonacci niz 1 1 2 3",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koje prezime nosi niz u kojem je svaki sljedeći član zbroj prethodna dva, primjerice 1, 1, 2, 3, 5?",
+    "answers": [
+      "Fibonacci",
+      "Fibonaccijev niz"
+    ],
+    "explanation": "Fibonaccijev niz slijedi pravilo zbrajanja dvaju prethodnika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fibonacci_sequence"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01385-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Povijest",
+    "focus": "Hammurabijev zakonik Babilon",
+    "difficulty": 2,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Uz kojeg je babilonskog kralja vezan slavni zakonik uklesan na kamenoj steli?",
+    "answers": [
+      "Hamurabi",
+      "Hammurabi"
+    ],
+    "explanation": "Hamurabijev zakonik jedan je od poznatih drevnih zakonika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01386-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Film",
+    "focus": "Nosferatu Murnau",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je njemački redatelj 1922. snimio nijemi horor Nosferatu?",
+    "answers": [
+      "Friedrich Wilhelm Murnau",
+      "F. W. Murnau",
+      "Murnau"
+    ],
+    "explanation": "Murnauov Nosferatu klasik je njemačkog ekspresionističkog filma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nosferatu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01387-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Zemljopis",
+    "focus": "Viktorijini slapovi Zambezi",
+    "difficulty": 2,
+    "styleId": 48,
+    "styleDescription": "Poveži poznatu rijeku s manje poznatim pritokom",
+    "question": "Na kojoj se afričkoj rijeci nalaze Viktorijini slapovi, na granici Zambije i Zimbabvea?",
+    "answers": [
+      "Zambezi"
+    ],
+    "explanation": "Viktorijini slapovi nastaju na rijeci Zambezi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Victoria_Falls"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01388-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Kemija",
+    "focus": "bakar patina zelena",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koji metal na krovovima i kipovima s vremenom često razvija zelenkastu patinu?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Zelenkasta patina nastaje kemijskim promjenama površine bakra.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01389-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Arhitektura",
+    "focus": "Sagrada Familia Gaudi",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koji je katalonski arhitekt najpoznatiji po projektu bazilike Sagrada Família u Barceloni?",
+    "answers": [
+      "Antoni Gaudí",
+      "Antoni Gaudi",
+      "Gaudi"
+    ],
+    "explanation": "Gaudí je desetljećima radio na projektu Sagrade Famílije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
