@@ -1,0 +1,238 @@
+[
+  {
+    "id": "chatgpt10000-1810-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "More i ocean",
+    "focus": "Povratna struja kroz procjep u pješčanom sprudu",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na plaži su valovi lijevo i desno, ali uski pojas između njih izgleda mirnije i odvlači vodu prema pučini. Kako se zove ta opasna morska struja?",
+    "answers": [
+      "Povratna struja",
+      "Rip current"
+    ],
+    "explanation": "Povratna struja teče od obale prema otvorenom moru i ne vuče kupača okomito prema dnu.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/rip-currents"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1811-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Definicija svjetlosne godine",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Unatoč imenu, svjetlosna godina nije mjera vremena. Koju fizikalnu veličinu zapravo mjeri?",
+    "answers": [
+      "Udaljenost",
+      "Duljina",
+      "Duzina"
+    ],
+    "explanation": "Svjetlosna godina udaljenost je koju svjetlost prijeđe u vakuumu tijekom godine.",
+    "sources": [
+      "https://science.nasa.gov/exoplanets/what-is-a-light-year/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1812-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Oceanografija",
+    "focus": "Termoklina kao temperaturni prijelaz",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Ronilac prolazi kroz sloj mora u kojem temperatura naglo pada s dubinom. Kako oceanografi nazivaju taj prijelazni sloj?",
+    "answers": [
+      "Termoklina",
+      "Thermocline"
+    ],
+    "explanation": "Termoklina razdvaja topliju površinsku miješanu vodu od hladnijih dubina.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/thermocline.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1813-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Planetologija",
+    "focus": "Retrogradni izlazak Sunca na Veneri",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na Zemlji Sunce prividno izlazi na istoku. Na kojem bi planetu, zbog njegove retrogradne vrtnje, izlazilo na zapadu?",
+    "answers": [
+      "Venera",
+      "Veneri",
+      "Venus"
+    ],
+    "explanation": "Venera se okreće suprotno od većine planeta pa je prividno gibanje Sunca obrnuto.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1814-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Fotografija",
+    "focus": "Izumitelj cijanotipije 1842.",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Plave fotografske otiske iz 19. stoljeća poznajemo kao cijanotipije. Koji ih je britanski astronom razvio 1842. godine?",
+    "answers": [
+      "John Herschel",
+      "Herschel",
+      "Sir John Herschel"
+    ],
+    "explanation": "John Herschel razvio je postupak s fotosenzitivnim željeznim spojevima.",
+    "sources": [
+      "https://www.si.edu/object/photographic-history-collection-cyanotypes%3Anmah_1343353"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1815-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Umjetnički obrt",
+    "focus": "Pregrade od žice u tehnici cloisonné",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kod koje se emajlirske tehnike obojena staklena pasta nanosi u male odjeljke omeđene tankim metalnim žicama?",
+    "answers": [
+      "Cloisonné",
+      "Cloisonne",
+      "Kloazone"
+    ],
+    "explanation": "U tehnici cloisonné metalne pregrade oblikuju uzorak i odvajaju boje emajla.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/40612"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1816-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Geologija",
+    "focus": "Mineralizacija fosilnog drva",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Drvo iz drevne šume sačuvalo je oblik i godove, ali njegove su stanice tijekom milijuna godina ispunili ili zamijenili minerali. Kako nazivamo takvo drvo?",
+    "answers": [
+      "Okamenjeno drvo",
+      "Petrificirano drvo",
+      "Fosilizirano drvo"
+    ],
+    "explanation": "Podzemna voda donosi minerale, često silicijev dioksid, koji očuvaju strukturu drva.",
+    "sources": [
+      "https://www.nps.gov/places/giant-logs-trail-stop-1.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1817-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Seizmologija",
+    "focus": "Naziv točke na površini iznad hipocentra",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Žarište potresa nalazi se u dubini Zemlje. Kako se zove točka na površini neposredno iznad njega?",
+    "answers": [
+      "Epicentar"
+    ],
+    "explanation": "Epicentar je površinska projekcija hipocentra, odnosno žarišta potresa.",
+    "sources": [
+      "https://pubs.usgs.gov/gip/earthq1/earthqkgip.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1818-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Geofizika",
+    "focus": "Granica dubokih potresa",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Prema USGS-ovoj podjeli, potresi se smatraju dubokima ako im je žarište dublje od koliko kilometara?",
+    "answers": [
+      "300",
+      "300 kilometara",
+      "300 km"
+    ],
+    "explanation": "USGS plitke potrese svrstava do 70 km, srednje do 300 km, a duboke od 300 do 700 km.",
+    "sources": [
+      "https://www.usgs.gov/programs/earthquake-hazards/determining-depth-earthquake"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1819-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Povijest fotografije",
+    "focus": "Cijanotipija u arhitektonskim nacrtima",
+    "difficulty": 3,
+    "styleId": 5,
+    "styleDescription": "Poveži dvije različite industrije zajedničkim imenom",
+    "question": "Engleski izraz blueprint potječe od nekadašnjih kopija nacrta karakteristične boje. Koje su boje bili ti nacrti?",
+    "answers": [
+      "Plave",
+      "Plava",
+      "Plavi"
+    ],
+    "explanation": "Cijanotipija je omogućila jednostavno umnažanje nacrta u prepoznatljivoj plavoj boji.",
+    "sources": [
+      "https://www.si.edu/object/photographic-history-collection-cyanotypes%3Anmah_1343353"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
