@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-1520-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Zanati",
+    "focus": "washi japanski papir",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koji se japanski naziv koristi za tradicionalni ručno izrađeni papir od vlakana papirnate murve, često upotrebljavan i za pomične pregrade?",
+    "answers": [
+      "Washi",
+      "Vaši"
+    ],
+    "explanation": "Vlakna se namakanjem i prosijavanjem pretvaraju u čvrst ručno rađen papir.",
+    "sources": [
+      "https://ich.unesco.org/en/decisions/9.COM/10.22"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1521-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Sport",
+    "focus": "maraton kraljevska loža 1908",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je atletska disciplina dobila današnju duljinu od 42,195 kilometara nakon prilagodbe staze za Olimpijske igre u Londonu 1908.?",
+    "answers": [
+      "Maraton"
+    ],
+    "explanation": "Staza je prilagođena startu kod Windsora i cilju ispred kraljevske lože.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1522-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Geologija",
+    "focus": "plutajući plovućac",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Većina kamenja tone, ali koja porozna vulkanska stijena zbog mnoštva plinskih šupljina može plutati na vodi?",
+    "answers": [
+      "Plovućac",
+      "Plovučac",
+      "Pumice"
+    ],
+    "explanation": "Zatvoreni mjehurići plina mogu sniziti gustoću stijene ispod gustoće vode.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1523-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "ultramarin lapis lazuli",
+    "difficulty": 4,
+    "styleId": 80,
+    "styleDescription": "Kreni od podrijetla boje ili pigmenta i traži naziv",
+    "question": "Slikari su nekoć skupocjeni plavi pigment ultramarin dobivali mljevenjem kojeg poludragog kamena?",
+    "answers": [
+      "Lapis lazuli",
+      "Lazurit"
+    ],
+    "explanation": "Prirodni ultramarin proizvodio se od lapisa lazulija; sintetska zamjena pojavila se u 19. stoljeću.",
+    "sources": [
+      "https://www.metmuseum.org/ko/perspectives/juan-gris-two-collages-cup-glasses-and-bottle-and-flowers"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1524-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Astronomija",
+    "focus": "Uran mjeseci Shakespeare",
+    "difficulty": 4,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Dok su brojni planetarni mjeseci nazvani po antičkim bogovima, mjeseci kojeg planeta nose imena likova iz djela Shakespearea i Alexandera Popea?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "NASA navodi da su Uranovi mjeseci imenovani po književnim likovima tih autora.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1525-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Životinje",
+    "focus": "hobotnica tri srca",
+    "difficulty": 2,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Koja morska životinja s osam krakova ima čak tri srca, a pripada glavonošcima?",
+    "answers": [
+      "Hobotnica"
+    ],
+    "explanation": "Dva srca potiskuju krv prema škrgama, a jedno kroz ostatak tijela.",
+    "sources": [
+      "https://www.si.edu/newsdesk/releases/what-name-smithsonian-s-national-zoo-opens-octopus-naming-public-vote"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1526-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera dan duži od godine",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedna rotacija traje približno 243 zemaljska dana, a obilazak Sunca samo 225?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se okreće toliko sporo da joj je siderički dan dulji od godine.",
+    "sources": [
+      "https://spaceplace.nasa.gov/all-about-venus/en/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1527-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Povijest sporta",
+    "focus": "Dorando Pietri diskvalifikacija 1908",
+    "difficulty": 5,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Talijanski trkač prvi je prošao ciljem olimpijskog maratona 1908., ali je diskvalificiran jer su mu suci pomogli ustati. Kako se zvao?",
+    "answers": [
+      "Dorando Pietri",
+      "Pietri"
+    ],
+    "explanation": "Izmorenom Pietriju pružena je pomoć na stadionu, zbog čega nije priznat pobjednikom.",
+    "sources": [
+      "https://oscnewsletter.olympics.com/article/34/hidden-treasures_lang%3Den.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1528-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Jezik",
+    "focus": "glavonošci značenje",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Naziv glavonošci doslovno upućuje na dva dijela tijela. Koji je, uz glavu, drugi dio spomenut u tom nazivu?",
+    "answers": [
+      "Noga",
+      "Noge"
+    ],
+    "explanation": "Grčki korijeni cephalo i podos znače glava i stopalo odnosno noga.",
+    "sources": [
+      "https://nationalzoo.si.edu/news/what-name-smithsonians-national-zoo-opens-octopus-naming-public-vote"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1529-20261104",
+    "createdAt": "2026-11-04T06:37:06+01:00",
+    "updatedAt": "2026-11-04T06:37:06+01:00",
+    "topic": "Povijest",
+    "focus": "Olimpijske igre London 1908 Rim",
+    "difficulty": 4,
+    "styleId": 97,
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "question": "Koji je grad preuzeo organizaciju Olimpijskih igara 1908. nakon što je Rim odustao od domaćinstva?",
+    "answers": [
+      "London"
+    ],
+    "explanation": "London je u kratkom roku zamijenio Rim kao domaćin Igara 1908.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/london-1908-a-short-notice-replacement-for-rome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
