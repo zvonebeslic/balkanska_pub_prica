@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-01390-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Astronomija",
+    "focus": "Io Jupiter vulkani",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji je Jupiterov mjesec najvulkanski aktivnije tijelo Sunčeva sustava?",
+    "answers": [
+      "Io"
+    ],
+    "explanation": "Plimno zagrijavanje pokreće snažnu vulkansku aktivnost Ija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Io_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01391-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Jezik",
+    "focus": "onomatopeja oponašanje zvuka",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove stilska figura kojom riječi oponašaju zvukove, primjerice kukuriku ili bum?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je glasovno oponašanje zvuka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01392-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Povijest",
+    "focus": "Pompeji Vezuv 79",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Erupcija kojeg vulkana 79. godine zatrpala je Pompeje i Herkulanej?",
+    "answers": [
+      "Vezuv",
+      "Vesuvius"
+    ],
+    "explanation": "Vezuv je erupcijom 79. godine uništio više rimskih naselja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mount_Vesuvius"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01393-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Životinje",
+    "focus": "kljunar jaja sisavac",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji australski sisavac ima pačji kljun, polaže jaja i pripada jednootvorima?",
+    "answers": [
+      "Kljunar",
+      "Čudnovati kljunaš",
+      "Platypus"
+    ],
+    "explanation": "Kljunar je jedan od rijetkih sisavaca koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01394-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Sport",
+    "focus": "šah en passant",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji se francuski izraz u šahu koristi za posebno uzimanje pješaka neposredno nakon njegova pomaka za dva polja?",
+    "answers": [
+      "En passant",
+      "U prolazu"
+    ],
+    "explanation": "En passant dopušten je samo neposredno nakon određenog poteza suparničkog pješaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/En_passant"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01395-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Glazba",
+    "focus": "Bolero Ravel",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je francuski skladatelj napisao Boléro, djelo poznato po dugom ponavljanju jedne melodijske ideje uz rast orkestracije?",
+    "answers": [
+      "Maurice Ravel",
+      "Ravel"
+    ],
+    "explanation": "Ravelov Boléro praizveden je 1928.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bol%C3%A9ro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01396-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Biologija",
+    "focus": "Darwinove zebe Galapagos",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na kojem je otočju Charles Darwin promatrao ptice čije su različite vrste kasnije postale poznat primjer evolucijske prilagodbe?",
+    "answers": [
+      "Galapagos",
+      "Galápagos",
+      "Otočje Galápagos"
+    ],
+    "explanation": "Galapagoške zebe poznate su po raznolikosti oblika kljunova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Darwin%27s_finches"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01397-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth Harald Plavozubi",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je skandinavskom kralju nazvana bežična tehnologija Bluetooth?",
+    "answers": [
+      "Harald Plavozubi",
+      "Harald Bluetooth",
+      "Harald I."
+    ],
+    "explanation": "Bluetooth je nazvan po danskom kralju Haraldu Plavozubom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01398-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Književnost",
+    "focus": "Kafka Preobrazba Gregor Samsa",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj se pripovijetci Franza Kafke Gregor Samsa budi preobražen u golema kukca?",
+    "answers": [
+      "Preobrazba",
+      "Metamorfoza",
+      "Die Verwandlung"
+    ],
+    "explanation": "Gregor Samsa glavni je lik Kafkine Preobrazbe.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Metamorphosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01399-20261104",
+    "createdAt": "2026-11-04T01:37:47+01:00",
+    "updatedAt": "2026-11-04T01:37:47+01:00",
+    "topic": "Geologija",
+    "focus": "bazalt vulkanska stijena",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja tamna vulkanska stijena čini velik dio oceanske kore i nastaje hlađenjem lave?",
+    "answers": [
+      "Bazalt"
+    ],
+    "explanation": "Bazalt je česta magmatska stijena oceanske kore.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Basalt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
