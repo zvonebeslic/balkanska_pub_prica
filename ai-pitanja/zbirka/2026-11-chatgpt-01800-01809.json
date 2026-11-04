@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-1800-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Geologija",
+    "focus": "Lahar i vulkanski tokovi",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji naziv javanskog podrijetla označava bujicu vode, pepela i kamenja koja može juriti niz obronke vulkana čak i bez erupcije?",
+    "answers": [
+      "Lahar"
+    ],
+    "explanation": "Lahar je vulkanski blatni tok koji može nastati i nakon obilne kiše.",
+    "sources": [
+      "https://www.usgs.gov/publications/lahar-river-volcanic-mud-and-debris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1801-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Pomorstvo",
+    "focus": "Definicija nautičke milje",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko točno metara iznosi jedna međunarodna nautička milja, jedinica koju koriste pomorci i piloti?",
+    "answers": [
+      "1852"
+    ],
+    "explanation": "Međunarodna nautička milja standardizirana je na 1852 metra.",
+    "sources": [
+      "https://marine.weather.gov/glossary.php?word=nautical+mile"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1802-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Mineralogija",
+    "focus": "Plutajući vulkanski kamen",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Nije svaki kamen osuđen na potonuće: koja izrazito porozna vulkanska stijena može plutati na vodi zahvaljujući mjehurićima plina?",
+    "answers": [
+      "Plovućac",
+      "Plovucac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac je vulkanska stijena s brojnim šupljinama nastalim iz plinova.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1803-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Arheologija",
+    "focus": "Datiranje prema godovima",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Arheolog pronađe staru drvenu gredu i uspoređuje uzorke njezinih godova s poznatim nizovima. Kako se zove metoda takvog datiranja?",
+    "answers": [
+      "Dendrokronologija"
+    ],
+    "explanation": "Dendrokronologija uspoređuje godišnje prstenove rasta stabala.",
+    "sources": [
+      "https://www.nps.gov/tont/learn/nature/dendrochronology.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1804-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Astronomija",
+    "focus": "Titanova ugljikovodična jezera",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na Zemlji jezera uglavnom sadrže vodu, a na kojem Saturnovu mjesecu postoje jezera tekućeg metana i etana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Cassini je radarom otkrio jezera ugljikovodika na Titanu.",
+    "sources": [
+      "https://science.nasa.gov/resource/lakes-on-titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1805-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Jezik i pismo",
+    "focus": "Brailleova ćelija",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko točkica ima osnovna ćelija Brailleova pisma iz koje se slažu znakovi za čitanje dodirom?",
+    "answers": [
+      "6",
+      "Šest",
+      "Sest"
+    ],
+    "explanation": "Brailleova ćelija ima šest mjesta za izdignute točke u dva stupca.",
+    "sources": [
+      "https://www.loc.gov/nls/services-and-resources/informational-publications/about-braille/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1806-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Fotografija",
+    "focus": "Herschelov plavi fotografski postupak",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je fotografski postupak John Herschel izumio 1842., a kasnije je poslužio i za izradu karakterističnih plavih nacrta?",
+    "answers": [
+      "Cijanotipija",
+      "Cyanotype",
+      "Cijanotip"
+    ],
+    "explanation": "Cijanotipija stvara plave otiske pomoću željeznih soli osjetljivih na svjetlo.",
+    "sources": [
+      "https://www.si.edu/object/photographic-history-collection-cyanotypes%3Anmah_1343353"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1807-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Biologija",
+    "focus": "Bioluminiscencija",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Krijesnica i neka dubokomorska bića proizvode vlastitu svjetlost kemijskim reakcijama. Kako se zove ta pojava?",
+    "answers": [
+      "Bioluminiscencija"
+    ],
+    "explanation": "Bioluminiscencija je emitiranje svjetlosti nastale reakcijama u živim organizmima.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/biolum.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1808-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Umjetnički obrt",
+    "focus": "Cloisonné emajl",
+    "difficulty": 5,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Kako se naziva tehnika ukrašavanja metalnih predmeta u kojoj tanke žičane pregrade oblikuju polja koja se zatim ispunjavaju obojenim emajlom?",
+    "answers": [
+      "Cloisonné",
+      "Cloisonne",
+      "Kloazone"
+    ],
+    "explanation": "U tehnici cloisonné pregrade od metalne žice omeđuju polja obojenog emajla.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/40724"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1809-20261104",
+    "createdAt": "2026-11-04T20:38:41+01:00",
+    "updatedAt": "2026-11-04T20:38:41+01:00",
+    "topic": "Povijest fotografije",
+    "focus": "Autor cijanotipije",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je britanski astronom, sin astronoma Williama, 1842. otkrio postupak cijanotipije koji je kasnije korišten za plave tehničke nacrte?",
+    "answers": [
+      "John Herschel",
+      "Sir John Herschel"
+    ],
+    "explanation": "John Herschel osmislio je cijanotipiju 1842. godine.",
+    "sources": [
+      "https://www.si.edu/object/photographic-history-collection-cyanotypes%3Anmah_1343353"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
