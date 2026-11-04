@@ -1,0 +1,240 @@
+[
+  {
+    "id": "chatgpt10000-1600-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera Sunce izlazak zapad",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem planetu Sunce izlazi na zapadu, a zalazi na istoku, jer se vrti suprotno od Zemlje?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se okreće retrogradno, pa je prividno gibanje Sunca obrnuto.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1601-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Sport",
+    "focus": "olimpijski prstenovi Antwerpen 1920",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "U kojem su belgijskom gradu olimpijski krugovi na zastavi prvi put prikazani na samim Olimpijskim igrama 1920.?",
+    "answers": [
+      "Antwerpen",
+      "Antwerp",
+      "Anvers"
+    ],
+    "explanation": "Olimpijska zastava debitirala je na Igrama u Antwerpenu 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/olympic-rings"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1602-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Hokusai Fuji veliki val",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja se japanska planina, iako sićušna u pozadini, vidi ispod golemog vala na Hokusaiovu slavnom drvorezu?",
+    "answers": [
+      "Fuji",
+      "Fudži",
+      "Fujiyama",
+      "Fudžijama"
+    ],
+    "explanation": "Hokusai je perspektivom smjestio Fuji pod zakrivljeni vrh vala.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/45434"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1603-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Geologija",
+    "focus": "plutajući vulkanski plovućac",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja porozna vulkanska stijena može plutati na vodi zbog mnoštva mjehurića plina u svojoj strukturi?",
+    "answers": [
+      "Plovućac",
+      "Plovucac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac može imati gustoću manju od vode zbog velikog udjela šupljina.",
+    "sources": [
+      "https://www.usgs.gov/media/images/rocks-sink-or-float"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1604-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Biologija",
+    "focus": "pandin lažni palac kost",
+    "difficulty": 4,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Divovska panda bambus hvata 'lažnim palcem'. Koja se kost zapravo povećala i preuzela ulogu tog prsta?",
+    "answers": [
+      "Zapešćna kost",
+      "Kost zapešća",
+      "Kost zapesca",
+      "Radijalna sezamoidna kost"
+    ],
+    "explanation": "Pandin pseudopalac tvori izdužena kost zapešća, a ne pravi dodatni prst.",
+    "sources": [
+      "https://www.nationalzoo.si.edu/animals/giant-panda"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1605-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera siderički dan 243",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Ako na Veneri jedna rotacija traje 243 zemaljska dana, a obilazak Sunca 225, što je ondje dulje: dan rotacije ili godina?",
+    "answers": [
+      "Dan",
+      "Dan rotacije",
+      "Rotacija"
+    ],
+    "explanation": "Venerina rotacija traje dulje od njezina obilaska oko Sunca.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1606-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Sport",
+    "focus": "olimpijski prstenovi ne odgovaraju kontinentima",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Plavi, žuti, crni, zeleni i crveni olimpijski krugovi: je li točno da svaki pojedini krug službeno označava određeni kontinent?",
+    "answers": [
+      "Ne",
+      "Nije",
+      "Netočno"
+    ],
+    "explanation": "MOO navodi da pet krugova predstavlja jedinstvo kontinenata, ali boje nisu dodijeljene pojedinačnim kontinentima.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/olympic-symbol-and-identity/what-is-the-meaning-of-the-olympic-rings"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1607-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Umjetnost",
+    "focus": "Hokusai veliki val tehnika drvorez",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Hokusaijev Veliki val kod Kanagawe često nazivamo slikom, ali kojom je grafičkom tehnikom zapravo izrađen?",
+    "answers": [
+      "Drvorez",
+      "Otisak s drvene ploče",
+      "Otisak s drvene ploce"
+    ],
+    "explanation": "Djelo je višebojni otisak s drvenih ploča, a ne ulje na platnu.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/45434"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1608-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Geologija",
+    "focus": "retikulit potone za razliku od plovućca",
+    "difficulty": 5,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Plovućac često pluta, ali njegova ekstremno porozna srodna vulkanska tvar, čiji su mjehurići međusobno povezani, brzo tone. Kako se zove?",
+    "answers": [
+      "Retikulit",
+      "Reticulite"
+    ],
+    "explanation": "Retikulit ima povezane šupljine koje propuštaju vodu, zbog čega brzo tone.",
+    "sources": [
+      "https://www.usgs.gov/observatories/hvo/news/volcano-watch-almost-nothing-enough-reticulite-helps-measure-depth-kilaueas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1609-20261104",
+    "createdAt": "2026-11-04T10:43:51+01:00",
+    "updatedAt": "2026-11-04T10:43:51+01:00",
+    "topic": "Životinje",
+    "focus": "panda prehrana bambus",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koju biljku divovska panda jede gotovo isključivo u divljini, premda pripada porodici medvjeda?",
+    "answers": [
+      "Bambus"
+    ],
+    "explanation": "Smithsonian navodi da se divlje divovske pande gotovo isključivo hrane bambusom.",
+    "sources": [
+      "https://www.nationalzoo.si.edu/animals/giant-panda-faqs"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
