@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-01440-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Povijest tehnologije",
+    "focus": "Antikitera analogno računalo",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Antički predmet pronađen kod Antikitere često se naziva najstarijim poznatim primjerom koje vrste računala?",
+    "answers": [
+      "Analogno računalo",
+      "Analognog računala"
+    ],
+    "explanation": "Mehanički zupčanici analogno su prikazivali astronomske cikluse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01441-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Povijest Amerike",
+    "focus": "quipu španjolsko osvajanje",
+    "difficulty": 3,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Dolaskom osvajača iz koje europske države započinje kolonijalno razdoblje u kojem je uporaba inkanskog quipua potiskivana?",
+    "answers": [
+      "Španjolska",
+      "Španjolske"
+    ],
+    "explanation": "Španjolsko osvajanje promijenilo je administrativne prakse Anda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Quipu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01442-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Astronomija",
+    "focus": "astrolab visina zvijezde",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koju kutnu veličinu iznad obzora astronom može izmjeriti astrolabom promatrajući zvijezdu?",
+    "answers": [
+      "Visinu",
+      "Kutnu visinu",
+      "Elevaciju"
+    ],
+    "explanation": "Astrolab omogućuje mjerenje kutne visine nebeskog tijela.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Astrolabe"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01443-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Optika",
+    "focus": "camera obscura naopako",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Ako naopako projicirana slika stabla nastane u tamnoj komori, gdje će se na projekciji pojaviti njegov vrh?",
+    "answers": [
+      "Dolje",
+      "Na dnu",
+      "Pri dnu"
+    ],
+    "explanation": "Zrake se križaju u otvoru pa se gornji dio prizora projicira dolje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Camera_obscura"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01444-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Povijest",
+    "focus": "Foucault Pantheon Pariz",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj je pariškoj građevini Foucault 1851. javnosti pokazao svoje golemo njihalo?",
+    "answers": [
+      "Panteon",
+      "Panthéon",
+      "Pariški Panteon"
+    ],
+    "explanation": "Slavna demonstracija održana je u pariškom Panteonu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Foucault_pendulum"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01445-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Ekologija",
+    "focus": "mangrove štite obalu",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Od kojeg djelovanja valova i struja mangrove svojim gustim korijenjem pomažu zaštititi tropske obale?",
+    "answers": [
+      "Erozije",
+      "Obalne erozije"
+    ],
+    "explanation": "Korijenje zadržava sediment i ublažava eroziju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mangrove"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01446-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Biologija",
+    "focus": "hobotnica mekušac",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Hobotnica je glavonožac, no kojoj široj skupini beskralježnjaka pripada zajedno s puževima i školjkašima?",
+    "answers": [
+      "Mekušci",
+      "Mekušac",
+      "Mollusca"
+    ],
+    "explanation": "Glavonošci su razred mekušaca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Octopus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01447-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Povijest matematike",
+    "focus": "Arhimed kugla valjak grob",
+    "difficulty": 5,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Koja dva geometrijska tijela prema predaji Arhimed je želio prikazati na svojem nadgrobnom spomeniku?",
+    "answers": [
+      "Kugla i valjak",
+      "Valjak i kugla"
+    ],
+    "explanation": "Odnos obujma kugle i opisanog valjka smatrao je velikim otkrićem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Archimedes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01448-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Kemija",
+    "focus": "kromatografija plinska mobilna faza",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "U plinskoj kromatografiji mobilna faza nije tekućina. U kojem je agregacijskom stanju?",
+    "answers": [
+      "Plinovitom",
+      "Plin",
+      "Plinovito"
+    ],
+    "explanation": "U plinskoj kromatografiji nosač je plin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chromatography"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-01449-20261104",
+    "createdAt": "2026-11-04T02:43:53+01:00",
+    "updatedAt": "2026-11-04T02:43:53+01:00",
+    "topic": "Umjetnost",
+    "focus": "origami modularni",
+    "difficulty": 4,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva vrsta origamija u kojoj se više zasebno savijenih papirnatih jedinica spaja u jednu konstrukciju?",
+    "answers": [
+      "Modularni origami"
+    ],
+    "explanation": "Modularni origami slaže strukture od više papirnatih modula.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Origami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
