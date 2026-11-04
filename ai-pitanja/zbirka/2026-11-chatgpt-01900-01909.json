@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-1900-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Astronomija",
+    "focus": "Tritonova retrogradna orbita",
+    "difficulty": 1,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji veliki Neptunov mjesec obilazi svoj planet u suprotnom smjeru od njegove vrtnje?",
+    "answers": [
+      "Triton"
+    ],
+    "explanation": "Triton ima retrogradnu orbitu oko Neptuna.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/moons/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1901-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Povijest",
+    "focus": "Mafra kralj osnivač",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je portugalski kralj u 18. stoljeću zamislio monumentalni kompleks Mafra?",
+    "answers": [
+      "Ivan V.",
+      "João V",
+      "Ivan Peti"
+    ],
+    "explanation": "Kralj João V zamislio je kompleks 1711. godine.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1573"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1902-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Arhitektura",
+    "focus": "Petra isklesani grad",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji je drevni grad djelomice građen, a djelomice izravno isklesan u stijenama?",
+    "answers": [
+      "Petra"
+    ],
+    "explanation": "Petra je spoj građene i u stijenu uklesane arhitekture.",
+    "sources": [
+      "https://whc.unesco.org/en/list/326/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1903-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Zemljopis",
+    "focus": "Mafra blizina Lisabona",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Otprilike koliko kilometara sjeverozapadno od Lisabona leži kraljevski kompleks Mafra?",
+    "answers": [
+      "30",
+      "30 km",
+      "Trideset"
+    ],
+    "explanation": "UNESCO navodi udaljenost od oko 30 kilometara.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1573"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1904-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Arheologija",
+    "focus": "Stonehenge razdoblje gradnje",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "U kojem je prapovijesnom razdoblju, uz neolitik, nastajao kompleks Stonehengea i Aveburyja?",
+    "answers": [
+      "Brončano doba",
+      "Brončano"
+    ],
+    "explanation": "Spomenici su nastajali kroz neolitik i brončano doba.",
+    "sources": [
+      "https://whc.unesco.org/en/list/373/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1905-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Književnost",
+    "focus": "Uranovi mjeseci i pjesništvo",
+    "difficulty": 1,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Uz Shakespeareove drame, iz djela kojeg engleskog pjesnika potječu imena nekih Uranovih mjeseca?",
+    "answers": [
+      "Alexander Pope",
+      "Aleksandar Pope"
+    ],
+    "explanation": "NASA navodi Alexandera Popea kao drugi književni izvor tih imena.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/moons/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1906-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Petra brane",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koje su građevine, uz kanale i cisterne, stanovnici Petre koristili za usmjeravanje sezonskih voda?",
+    "answers": [
+      "Brane",
+      "Brana"
+    ],
+    "explanation": "Nabatejci su gradili brane radi kontrole bujičnih voda.",
+    "sources": [
+      "https://whc.unesco.org/en/list/326/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1907-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Mafra talijanski uzori",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Iz koje su europske zemlje potjecali barokni umjetnički uzori kojima se nadahnuo kralj João V pri gradnji Mafre?",
+    "answers": [
+      "Italija",
+      "Italije"
+    ],
+    "explanation": "Kralj je preuzeo rimske i talijanske barokne uzore.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1573"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1908-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Fizika",
+    "focus": "Sunce udio mase",
+    "difficulty": 4,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Otprilike koliki postotak mase Sunčeva sustava otpada na Sunce: 50, 90 ili gotovo 100 posto?",
+    "answers": [
+      "Gotovo 100 posto",
+      "99,8 posto",
+      "99.8 posto"
+    ],
+    "explanation": "Sunce sadrži približno 99,8 posto mase Sunčeva sustava.",
+    "sources": [
+      "https://science.nasa.gov/sun/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1909-20261104",
+    "createdAt": "2026-11-04T22:35:31+01:00",
+    "updatedAt": "2026-11-04T22:35:31+01:00",
+    "topic": "Kultura",
+    "focus": "Jeruzalemski Zid plača",
+    "difficulty": 5,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se naziva poznati zid u jeruzalemskom Starom gradu, važan u židovskoj tradiciji?",
+    "answers": [
+      "Zid plača",
+      "Zapadni zid",
+      "Western Wall"
+    ],
+    "explanation": "UNESCO ističe Zid plača među važnim znamenitostima Staroga grada.",
+    "sources": [
+      "https://whc.unesco.org/fr/list/148"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
