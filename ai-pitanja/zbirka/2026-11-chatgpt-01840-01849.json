@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-1840-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Kartografija",
+    "focus": "Batimetrija kao mjerenje podvodnog reljefa",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Topografija opisuje reljef kopna. Kako se zove njezin podvodni pandan koji mjeri dubine i oblik morskog dna?",
+    "answers": [
+      "Batimetrija",
+      "Bathymetry"
+    ],
+    "explanation": "Batimetrija opisuje dubine i oblike dna mora, rijeka i jezera.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/bathymetry.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1841-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Mineralogija",
+    "focus": "Opsidijan kao vulkansko staklo",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja crna vulkanska tvar nastaje tako brzim hlađenjem lave da kristali ne stignu narasti, a nekoć je služila za izradu oštrica?",
+    "answers": [
+      "Opsidijan",
+      "Obsidijan",
+      "Obsidian"
+    ],
+    "explanation": "Opsidijan je prirodno vulkansko staklo s vrlo oštrim lomnim rubovima.",
+    "sources": [
+      "https://www.usgs.gov/observatories/yvo/news/yellowstones-tool-making-lava-flows"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1842-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Duljina Merkurove godine",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Dok na Zemlji čekamo 365 dana, najbliži planet Suncu obiđe ga za samo koliko zemaljskih dana?",
+    "answers": [
+      "88",
+      "88 dana"
+    ],
+    "explanation": "Merkur obiđe Sunce za približno 88 zemaljskih dana.",
+    "sources": [
+      "https://science.nasa.gov/Mercury/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1843-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Povijest tehnologije",
+    "focus": "Edisonov prvi fonograf i godina",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "U kojoj je godini Thomas Edison predstavio fonograf koji je mogao i snimiti i ponovno reproducirati zvuk?",
+    "answers": [
+      "1877"
+    ],
+    "explanation": "Edisonov fonograf iz 1877. zapisivao je vibracije na metalnu foliju.",
+    "sources": [
+      "https://www.si.edu/object/edison-tin-foil-phonograph%3Anmah_855475"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1844-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Glazba",
+    "focus": "Bandoneon u tangu",
+    "difficulty": 3,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koje je glazbalo s mijehom i tipkama postalo prepoznatljiv glas argentinskog i urugvajskog tanga?",
+    "answers": [
+      "Bandoneon",
+      "Bandoneón"
+    ],
+    "explanation": "Bandoneon je simboličan instrument glazbene tradicije tanga.",
+    "sources": [
+      "https://ich.unesco.org/en/assistances/the-bandoneon-sound-of-tango-01634"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1845-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Botanika",
+    "focus": "Mangrove kao drveće slanih obala",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja skupina obalnih stabala raste u slanoj ili bočatoj vodi, a isprepletenim korijenjem štiti obalu od erozije?",
+    "answers": [
+      "Mangrove",
+      "Mangrova"
+    ],
+    "explanation": "Mangrove podnose slanu vodu i stabiliziraju obalne sedimente.",
+    "sources": [
+      "https://home.nps.gov/subjects/oceans/mangroves.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1846-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Geografija",
+    "focus": "Gradovi podrijetla tanga",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Tango je nastao u gradovima Buenos Airesu i još kojem glavnom gradu na drugoj obali Río de la Plate?",
+    "answers": [
+      "Montevideo"
+    ],
+    "explanation": "UNESCO povezuje razvoj tanga s Buenos Airesom i Montevideom.",
+    "sources": [
+      "https://ich.unesco.org/en/decisions/4.COM/13.01"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1847-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Pomorstvo",
+    "focus": "Izobate na karti morskog dna",
+    "difficulty": 4,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Na batimetrijskoj karti crte spajaju točke jednake dubine. Kako se nazivaju takve podvodne izolinije?",
+    "answers": [
+      "Izobate",
+      "Izobata"
+    ],
+    "explanation": "Izobate su dubinske konture, odnosno linije jednakih dubina.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/bathymetry.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1848-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Zoologija",
+    "focus": "Mangrove kao sklonište mladih riba",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Korijenje mangrova usporava valove i skriva mlade ribe. Koja je njegova važna ekološka uloga za riblje populacije?",
+    "answers": [
+      "Rasadnik",
+      "Prirodni rasadnik",
+      "Mrijestilište",
+      "Stanište mladih riba"
+    ],
+    "explanation": "Podvodno korijenje mangrova pruža zaklon mnogim mladim ribama.",
+    "sources": [
+      "https://home.nps.gov/viis/learn/nature/mangroves.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1849-20261104",
+    "createdAt": "2026-11-04T21:45:00+01:00",
+    "updatedAt": "2026-11-04T21:45:00+01:00",
+    "topic": "Povijest izuma",
+    "focus": "Materijal Edisonova prvog zvučnog zapisa",
+    "difficulty": 5,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Edisonov fonograf iz 1877. urezao je zvuk na tanki metalni omotač valjka. Od kojeg je materijala bio taj omotač?",
+    "answers": [
+      "Kositar",
+      "Kositarna folija",
+      "Staniol"
+    ],
+    "explanation": "Prvi fonograf bilježio je zvuk utiskivanjem u tanku kositrenu foliju.",
+    "sources": [
+      "https://www.americanhistory.si.edu/collections/object/nmah_855475"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
