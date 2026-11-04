@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-1550-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Ganimed magnetsko polje",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koji je jedini poznati prirodni satelit Sunčeva sustava s vlastitim magnetskim poljem?",
+    "answers": [
+      "Ganimed",
+      "Ganymede"
+    ],
+    "explanation": "Ganimed ima vlastitu magnetosferu i polarne svjetlosti.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1551-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Povijest",
+    "focus": "prve moderne olimpijske igre Atena",
+    "difficulty": 1,
+    "styleId": 2,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "U kojem su gradu 1896. održane prve Olimpijske igre modernog doba?",
+    "answers": [
+      "Atena",
+      "Ateni",
+      "Athens"
+    ],
+    "explanation": "Moderne igre obnovljene su 1896. u Ateni.",
+    "sources": [
+      "https://www.olympics.com/ioc/faq/history-and-origin-of-the-games/what-is-the-origin-of-the-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1552-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Glazba",
+    "focus": "flamenco cante",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "U flamenku se ples naziva baile, sviranje toque, a kako se naziva pjevanje?",
+    "answers": [
+      "Cante"
+    ],
+    "explanation": "Cante je vokalna sastavnica flamenka.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/flamenco-00363"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1553-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Geologija",
+    "focus": "magnituda porast amplitude deset puta",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Ako se magnituda potresa poveća s 5 na 6, koliko se puta poveća izmjerena amplituda na seizmogramu?",
+    "answers": [
+      "10",
+      "Deset",
+      "Deset puta"
+    ],
+    "explanation": "Povećanje magnitude za jedan stupanj znači deset puta veću amplitudu.",
+    "sources": [
+      "https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1554-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Zoologija",
+    "focus": "gepard poluuvlačive kandže",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koja velika mačka ima kandže koje se ne uvlače potpuno, što joj pomaže pri naglom ubrzanju?",
+    "answers": [
+      "Gepard",
+      "Cheetah"
+    ],
+    "explanation": "Gepardove poluuvlačive kandže povećavaju prianjanje pri trčanju.",
+    "sources": [
+      "https://nationalzoo.si.edu/animals/news/why-do-cheetahs-have-spots-and-other-cheetah-facts"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1555-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "lajvardina iranska keramika",
+    "difficulty": 5,
+    "styleId": 14,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koji naziv nosi raskošna iranska tehnika ukrašavanja keramike zlatnim listićima i plavom glazurom, izveden iz perzijske riječi za lapis lazuli?",
+    "answers": [
+      "Lajvardina"
+    ],
+    "explanation": "Lajvardina je vrsta glazirane keramike iz ilkanidskog Irana.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/449019"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1556-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Životinje",
+    "focus": "mravojed ljepljivi jezik",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koji južnoamerički sisavac hvata mrave i termite jezikom dugim i do 60 centimetara?",
+    "answers": [
+      "Veliki mravojed",
+      "Mravojed"
+    ],
+    "explanation": "Veliki mravojed ima vrlo dug jezik prekriven ljepljivom slinom.",
+    "sources": [
+      "https://www.nationalzoo.si.edu/animals/giant-anteater"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1557-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Sport",
+    "focus": "olimpijsko zlato Dominika troskok 2024",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Thea LaFond donijela je Dominici prvo olimpijsko zlato u Parizu 2024. U kojoj atletskoj disciplini?",
+    "answers": [
+      "Troskok",
+      "Troskoku",
+      "Triple jump"
+    ],
+    "explanation": "LaFond je osvojila zlato u ženskom troskoku.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/paris-2024-record-breaking-olympic-games-on-and-off-the-field"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1558-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Triton matični planet",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Koji planet ima najveći mjesec nazvan Triton, poznat po retrogradnoj putanji?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "Triton kruži oko Neptuna suprotno smjeru njegove vrtnje.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1559-20261104",
+    "createdAt": "2026-11-04T09:45:00+01:00",
+    "updatedAt": "2026-11-04T09:45:00+01:00",
+    "topic": "Prirodne katastrofe",
+    "focus": "potres Alaska 1964 magnituda",
+    "difficulty": 4,
+    "styleId": 11,
+    "styleDescription": "Autorska formulacija s neizravnim tragom i jednoznačnim odgovorom",
+    "question": "Kolika je bila magnituda velikog potresa na Aljasci 1964., drugog najjačeg instrumentalno zabilježenog potresa?",
+    "answers": [
+      "9,2",
+      "9.2"
+    ],
+    "explanation": "Potres u području Prince William Sounda imao je magnitudu 9,2.",
+    "sources": [
+      "https://www.usgs.gov/centers/alaska-science-center/science/1964-great-alaska-earthquake-and-tsunami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
