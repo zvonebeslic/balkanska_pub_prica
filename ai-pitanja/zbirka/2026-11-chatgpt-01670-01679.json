@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-1670-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Arhitektura",
+    "focus": "Kupola Panteona",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koja rimska građevina ima slavnu betonsku kupolu s kružnim otvorom, okulusom?",
+    "answers": [
+      "Panteon"
+    ],
+    "explanation": "Okulus je središnji otvor na kupoli rimskog Panteona.",
+    "sources": [
+      "https://www.britannica.com/topic/Pantheon-building-Rome-Italy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1671-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Film",
+    "focus": "Nosferatu 1922",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koji nijemi film F. W. Murnaua iz 1922. prikazuje grofa Orloka, vampira nadahnutog Drakulom?",
+    "answers": [
+      "Nosferatu"
+    ],
+    "explanation": "Film je klasik njemačkog ekspresionizma.",
+    "sources": [
+      "https://www.britannica.com/topic/Nosferatu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1672-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Medicina",
+    "focus": "Inzulin gušterača",
+    "difficulty": 1,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Koji hormon gušterače pomaže stanicama preuzimati glukozu iz krvi?",
+    "answers": [
+      "Inzulin"
+    ],
+    "explanation": "Inzulin snižava razinu glukoze u krvi.",
+    "sources": [
+      "https://www.britannica.com/science/insulin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1673-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Tehnologija",
+    "focus": "HTTP kratica",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja četveroslovna kratica označava protokol kojim preglednik dohvaća web-stranice?",
+    "answers": [
+      "HTTP"
+    ],
+    "explanation": "HTTP znači Hypertext Transfer Protocol.",
+    "sources": [
+      "https://www.w3.org/Protocols/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1674-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Životinje",
+    "focus": "Aksolotl regeneracija",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac poznat po vanjskim škrgama može regenerirati izgubljene udove?",
+    "answers": [
+      "Aksolotl"
+    ],
+    "explanation": "Aksolotl je neotenični daždevnjak s iznimnom regeneracijom.",
+    "sources": [
+      "https://www.britannica.com/animal/axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1675-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom definicija",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ koja se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer je riječ 'radar'.",
+    "sources": [
+      "https://www.britannica.com/art/palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1676-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Gastronomija",
+    "focus": "Miso fermentacija",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja se japanska pasta za juhu tradicionalno proizvodi fermentacijom soje uz pomoć kojija?",
+    "answers": [
+      "Miso"
+    ],
+    "explanation": "Miso nastaje fermentacijom soje, često uz rižu ili ječam.",
+    "sources": [
+      "https://www.britannica.com/topic/miso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1677-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Geologija",
+    "focus": "Plovućac",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja je porozna vulkanska stijena toliko lagana da neki njezini komadi mogu plutati na vodi?",
+    "answers": [
+      "Plovućac"
+    ],
+    "explanation": "Mjehurići plina stvaraju izrazito poroznu strukturu.",
+    "sources": [
+      "https://www.britannica.com/science/pumice"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1678-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Religije i mitologije",
+    "focus": "Anubis šakal",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Koji je egipatski bog balzamiranja prikazivan s glavom šakala?",
+    "answers": [
+      "Anubis"
+    ],
+    "explanation": "Anubis je povezan s mumifikacijom i svijetom mrtvih.",
+    "sources": [
+      "https://www.britannica.com/topic/Anubis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1679-20261104",
+    "createdAt": "2026-11-04T13:44:32+01:00",
+    "updatedAt": "2026-11-04T13:44:32+01:00",
+    "topic": "Fizika",
+    "focus": "Dopplerov efekt",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva promjena opažene frekvencije zvuka kada se izvor i slušatelj međusobno gibaju?",
+    "answers": [
+      "Dopplerov efekt"
+    ],
+    "explanation": "Zbog tog učinka sirena vozila mijenja visinu tona pri prolasku.",
+    "sources": [
+      "https://www.britannica.com/science/Doppler-effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
