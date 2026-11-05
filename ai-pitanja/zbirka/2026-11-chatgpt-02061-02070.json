@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-2061-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Zemljopis",
+    "focus": "Sukur kulturni krajolik Nigerija granica Kamerun",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kulturni krajolik Sukur s terasastim poljima, kamenim stazama i ostacima željezara nalazi se uz granicu Kameruna u kojoj državi?",
+    "answers": [
+      "Nigerija",
+      "Nigeria"
+    ],
+    "explanation": "Sukur je UNESCO-ov kulturni krajolik na sjeveroistoku Nigerije uz Kamerun.",
+    "sources": [
+      "https://whc.unesco.org/en/list/938"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2062-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Astronomija",
+    "focus": "Enceladus Saturn mjesec gejziri",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji Saturnov mjesec iz pukotina na južnom polu izbacuje mlazove vodene pare i ledenih čestica u svemir?",
+    "answers": [
+      "Encelad",
+      "Enceladus"
+    ],
+    "explanation": "Enceladovi gejziri izbacuju vodu iz područja iznad podzemnog oceana.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2063-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Oceanografija",
+    "focus": "termohalina cirkulacija temperatura slanost",
+    "difficulty": 5,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva globalno gibanje oceanskih voda koje pokreću razlike u gustoći uzrokovane temperaturom i slanošću?",
+    "answers": [
+      "termohalina cirkulacija",
+      "termohalinska cirkulacija"
+    ],
+    "explanation": "Termohalina cirkulacija nastaje zbog razlika u temperaturi i slanosti morske vode.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/circulations"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2064-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Speleologija",
+    "focus": "stalagmit raste s poda špilje",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "U špilji jedan vapnenački ukras visi sa stropa, a drugi raste od poda prema gore. Kako se zove ovaj drugi?",
+    "answers": [
+      "stalagmit"
+    ],
+    "explanation": "Stalagmit raste na podu špilje od kapljica vode koje talože minerale.",
+    "sources": [
+      "https://www.usgs.gov/media/images/lehman-cave-11"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2065-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Glazba",
+    "focus": "Cremona izrada violina UNESCO 2012",
+    "difficulty": 3,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U kojem talijanskom gradu UNESCO od 2012. štiti tradicionalnu ručnu izradu violina, viola i violončela?",
+    "answers": [
+      "Cremona",
+      "Kremona"
+    ],
+    "explanation": "Tradicionalno graditeljstvo gudačkih instrumenata u Cremoni dio je UNESCO-ove nematerijalne baštine.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/traditional-violin-craftsmanship-in-cremona-00719"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2066-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Olimpizam",
+    "focus": "povlačenje užeta olimpijski sport do 1920",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji je nekadašnji olimpijski sport, u kojem se dvije ekipe nadmeću povlačenjem konopa, posljednji put bio na programu Igara 1920.?",
+    "answers": [
+      "povlačenje užeta",
+      "povlačenje konopa",
+      "tug of war"
+    ],
+    "explanation": "Povlačenje užeta bilo je olimpijska disciplina od 1900. do 1920.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/new-sports-take-a-bow"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2067-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Promet",
+    "focus": "sigurnosni bicikl dva jednaka kotača lanac",
+    "difficulty": 2,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Koji je naziv dobio tip bicikla s dva približno jednaka kotača i lančanim pogonom, koji je potkraj 19. stoljeća zamijenio opasni bicikl s golemim prednjim kotačem?",
+    "answers": [
+      "sigurnosni bicikl",
+      "safety bicycle"
+    ],
+    "explanation": "Sigurnosni bicikl imao je dva manja kotača slične veličine i lančani prijenos.",
+    "sources": [
+      "https://www.si.edu/spotlight/si-bikes/si-bikes-safety"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2068-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Medicina",
+    "focus": "skorbut nedostatak vitamina C",
+    "difficulty": 1,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Mornari su nekoć na dugim putovanjima obolijevali od skorbuta. Nedostatak kojeg vitamina uzrokuje tu bolest?",
+    "answers": [
+      "vitamin C",
+      "C vitamin",
+      "askorbinska kiselina"
+    ],
+    "explanation": "Skorbut nastaje zbog dugotrajnog teškog nedostatka vitamina C.",
+    "sources": [
+      "https://www.who.int/publications-detail-redirect/WHO-NHD-99.11"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2069-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Umjetnički obrt",
+    "focus": "kobalt plava glazura japanski porculan",
+    "difficulty": 4,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element daje karakterističnu plavu boju podglazurnom ukrasu brojnih porculanskih predmeta?",
+    "answers": [
+      "kobalt",
+      "cobalt"
+    ],
+    "explanation": "Pigmenti na bazi kobalta daju plavu boju keramičkim ukrasima.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/689729"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2070-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Etnologija",
+    "focus": "sokolarstvo UNESCO ptice grabljivice",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Kako se zove tradicionalna vještina dresure i lova s pticama grabljivicama, koju UNESCO štiti kao nematerijalnu baštinu?",
+    "answers": [
+      "sokolarstvo"
+    ],
+    "explanation": "Sokolarstvo je višestoljetna praksa treniranja sokolova i drugih grabljivica.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/falconry-a-living-human-heritage-01708"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
