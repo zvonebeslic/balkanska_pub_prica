@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-2141-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Jezik",
+    "focus": "Silbo Gomero zviždani govor",
+    "difficulty": 3,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Na kanarskom otoku La Gomeri učenici uče prenositi španjolske rečenice zviždanjem preko dolina. Kako se zove taj tradicionalni način sporazumijevanja?",
+    "answers": [
+      "Silbo Gomero",
+      "Silbo"
+    ],
+    "explanation": "UNESCO je taj zviždani govor upisao na popis nematerijalne baštine 2009.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/whistled-language-of-the-island-of-la-gomera-canary-islands-the-silbo-gomero-00172"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2142-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Geologija",
+    "focus": "Plovućac poroznost",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koja vulkanska stijena, puna mjehurića nastalih izlaskom plinova iz magme, može plutati na vodi iako je kamen?",
+    "answers": [
+      "Plovućac",
+      "Plovučac",
+      "Pumice"
+    ],
+    "explanation": "Plovućac je toliko porozan da mu je gustoća često manja od gustoće vode.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2143-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Zemljopis",
+    "focus": "Sargaško more granice",
+    "difficulty": 3,
+    "styleId": 49,
+    "styleDescription": "Opiši morsku struju i traži ocean ili područje",
+    "question": "Koje more nema nijednu kopnenu obalu, nego mu granice u sjevernom Atlantiku određuju morske struje?",
+    "answers": [
+      "Sargaško more",
+      "Sargasko more"
+    ],
+    "explanation": "Sargaško more omeđuju oceanske struje unutar sjevernoatlantskog suptropskog vrtloga.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex2104-features-sargasso-sea-media-map/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2144-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace glazba računalstvo",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je matematičarka još 1843. predvidjela da bi Babbageov zamišljeni stroj mogao obrađivati i glazbu, a ne samo brojeve?",
+    "answers": [
+      "Ada Lovelace",
+      "Ada Lavlejs",
+      "Augusta Ada Lovelace"
+    ],
+    "explanation": "U bilješkama o analitičkom stroju Lovelace je prepoznala mogućnost obrade simbola i glazbe.",
+    "sources": [
+      "https://www.computerhistory.org/babbage/adalovelace"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2145-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Sport",
+    "focus": "Maraton 1908 udaljenost",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na kojim su Olimpijskim igrama maratonci prvi put trčali danas standardnih 42 kilometra i 195 metara? Navedite grad i godinu.",
+    "answers": [
+      "London 1908",
+      "London 1908.",
+      "London 1908 godine"
+    ],
+    "explanation": "U Londonu 1908. trasa je prilagođena startu kod Windsora i cilju pred kraljevskom ložom.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2146-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Povijest sporta",
+    "focus": "Spiridon Louis Atena 1896",
+    "difficulty": 3,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Prvi olimpijski maraton modernoga doba 1896. završio je grčkim slavljem. Kako se prezivao pobjednik Spiridon?",
+    "answers": [
+      "Louis",
+      "Luis",
+      "Louïs"
+    ],
+    "explanation": "Spiridon Louis pobijedio je u maratonu na prvim modernim Olimpijskim igrama u Ateni.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2147-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera retrogradna rotacija",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Na kojem se planetu Sunce, gledano s površine i zanemarimo li guste oblake, prividno kreće od zapada prema istoku zbog obrnutog smjera vrtnje planeta?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se okreće u smjeru suprotnom od većine planeta, uključujući Zemlju.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/venus-from-mariner-10/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2148-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Svemirska tehnologija",
+    "focus": "Mariner 10 gravitacijska asistencija",
+    "difficulty": 5,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koja je NASA-ina letjelica 1974. pri prolasku pokraj Venere prvi put iskoristila gravitacijsku asistenciju za promjenu putanje prema drugom planetu?",
+    "answers": [
+      "Mariner 10",
+      "Mariner-10"
+    ],
+    "explanation": "Mariner 10 gravitacijom Venere promijenio je putanju kako bi stigao do Merkura.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/venus-from-mariner-10/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2149-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Oceanografija",
+    "focus": "Sargassum plutajuće alge",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kako se zove rod smeđih algi po kojem je nazvano jedino more bez kopnenih granica, a čiji plutajući spletovi služe mladim morskim kornjačama kao zaklon?",
+    "answers": [
+      "Sargassum",
+      "Sargasum"
+    ],
+    "explanation": "Alge roda Sargassum stvaraju plutajuća staništa u Sargaškom moru.",
+    "sources": [
+      "https://www.noaa.gov/gc-international-section/marine-protected-areas-mpas-sargasso-sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2150-20261105",
+    "createdAt": "2026-11-05T15:35:14+01:00",
+    "updatedAt": "2026-11-05T15:35:14+01:00",
+    "topic": "Vulkanologija",
+    "focus": "Retikulit otvoreni mjehurići",
+    "difficulty": 5,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Iznimno lagana vulkanska stijena može ipak potonuti jer su joj šupljine međusobno otvorene pa ih ispuni voda. Kako se naziva ta osobito porozna vrsta vulkanskog materijala?",
+    "answers": [
+      "Retikulit",
+      "Reticulite"
+    ],
+    "explanation": "Retikulit ima povezane šupljine zbog kojih voda lako prodire, za razliku od mnogih uzoraka plovućca.",
+    "sources": [
+      "https://www.usgs.gov/observatories/hvo/news/volcano-watch-almost-nothing-enough-reticulite-helps-measure-depth-kilaueas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
