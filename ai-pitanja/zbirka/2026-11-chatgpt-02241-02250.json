@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-2241-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Glazba",
+    "focus": "Freddie Mercury rođeno ime",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Prije nego što je postao Freddie Mercury i glas grupe Queen, pod kojim je imenom rođen 1946. na Zanzibaru?",
+    "answers": [
+      "Farrokh Bulsara",
+      "Farrokh Bomi Bulsara"
+    ],
+    "explanation": "Službena biografija Queena navodi Farrokha Bulsaru kao njegovo izvorno ime.",
+    "sources": [
+      "https://www.queenonline.com/freddie_mercury"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2242-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Sport",
+    "focus": "Bolt olimpijski 200 m Peking 2008",
+    "difficulty": 2,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Koji je jamajčanski sprinter na Olimpijskim igrama u Pekingu 2008. osvojio zlato na 200 metara s tadašnjim svjetskim rekordom 19,30 sekundi?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Bolt je u Pekingu osvojio zlato na 200 metara uz svjetski rekord 19,30.",
+    "sources": [
+      "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=848280&parentDocumentId=848278&skipCopyright=true&skipWatermark=true"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2243-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Mona Lisa podloga drvo topola",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Mona Lisa nije naslikana na platnu. Od kojeg je drveta ploča na kojoj je Leonardo naslikao slavni portret?",
+    "answers": [
+      "Topola",
+      "Topole",
+      "Topolovo drvo"
+    ],
+    "explanation": "Louvre navodi da je Mona Lisa naslikana na ploči od topolova drva.",
+    "sources": [
+      "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2244-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Astronomija",
+    "focus": "Olympus Mons planet",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem se planetu nalazi Olympus Mons, najveći poznati vulkan Sunčeva sustava?",
+    "answers": [
+      "Mars",
+      "Marsu"
+    ],
+    "explanation": "NASA potvrđuje da se Olympus Mons nalazi na Marsu.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/olympus-mons/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2245-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Medicina",
+    "focus": "Malarija rod komarca Anopheles",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Ženke komaraca kojeg roda prenose parazite koji uzrokuju malariju?",
+    "answers": [
+      "Anopheles",
+      "Anofeles"
+    ],
+    "explanation": "WHO navodi da malariju prenose zaražene ženke komaraca roda Anopheles.",
+    "sources": [
+      "https://www.who.int/health-topics/malaria"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2246-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Film",
+    "focus": "Kum Oscar najbolji film",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji je kriminalistički film iz 1972. s Marlonom Brandom osvojio Oscara za najbolji film na dodjeli 1973. godine?",
+    "answers": [
+      "Kum",
+      "The Godfather"
+    ],
+    "explanation": "Film The Godfather osvojio je Oscara za najbolji film na 45. dodjeli.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/45th_Academy_Awards"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2247-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Povijest umjetnosti",
+    "focus": "Zvjezdana noć mjesec nastanka",
+    "difficulty": 4,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Vincent van Gogh naslikao je Zvjezdanu noć 1889. godine. U kojem mjesecu te godine, prema muzejskom katalogu, nastaje slika?",
+    "answers": [
+      "Lipanj",
+      "U lipnju",
+      "6",
+      "Šesti mjesec"
+    ],
+    "explanation": "Metropolitan Museum of Art datira Zvjezdanu noć u lipanj 1889.",
+    "sources": [
+      "https://www.metmuseum.org/it/exhibitions/van-gogh-cypresses"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2248-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Glazbena povijest",
+    "focus": "Queen prethodni naziv Smile",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Brian May i Roger Taylor svirali su u sastavu koji je Freddie Mercury potaknuo da promijeni ime u Queen. Kako se taj raniji sastav zvao?",
+    "answers": [
+      "Smile"
+    ],
+    "explanation": "Službena biografija Freddieja Mercuryja navodi da je bend Smile preimenovan u Queen.",
+    "sources": [
+      "https://freddiemercury.com/bio/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2249-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Biologija",
+    "focus": "Malarija parazit Plasmodium",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Malariju prenose komarci roda Anopheles, no bolest zapravo uzrokuju jednostanični paraziti kojeg roda?",
+    "answers": [
+      "Plasmodium",
+      "Plazmodij"
+    ],
+    "explanation": "WHO navodi parazite roda Plasmodium kao uzročnike malarije.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/malaria"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2250-20261105",
+    "createdAt": "2026-11-05T20:39:50+01:00",
+    "updatedAt": "2026-11-05T20:39:50+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Svadba u Kani slikar",
+    "difficulty": 3,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Nasuprot Mona Lisi u najvećoj dvorani Louvrea visi golema slika Svadba u Kani. Koji ju je venecijanski slikar naslikao?",
+    "answers": [
+      "Paolo Veronese",
+      "Veronese",
+      "Paolo Caliari"
+    ],
+    "explanation": "Louvre pripisuje Svadbu u Kani Paolu Caliariju, poznatom kao Veronese.",
+    "sources": [
+      "https://www.louvre.fr/en/explore/visitor-trails/the-louvre-s-masterpieces/a-superstar-and-a-wedding-crowd"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
