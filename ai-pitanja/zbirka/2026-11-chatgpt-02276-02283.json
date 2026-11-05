@@ -1,0 +1,190 @@
+[
+  {
+    "id": "chatgpt10000-2276-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA pobjeda Eurosong 1974 Waterloo",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je švedska grupa pjesmom „Waterloo” 1974. osvojila Eurosong u Brightonu?",
+    "answers": [
+      "ABBA",
+      "Abba"
+    ],
+    "explanation": "Pobjeda grupe ABBA u Brightonu otvorila joj je put prema svjetskoj slavi.",
+    "sources": [
+      "https://www.eurovision.com/stories/waterloo-at-50-revisiting-abbas-charge-to-eurovision-victory-in-1974/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2277-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Nogomet",
+    "focus": "Iniesta jedini gol finala SP 2010",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Tko je u 116. minuti finala Svjetskog nogometnog prvenstva 2010. zabio jedini pogodak protiv Nizozemske?",
+    "answers": [
+      "Andrés Iniesta",
+      "Andres Iniesta",
+      "Iniesta"
+    ],
+    "explanation": "Iniesta je pogotkom u produžetku donio Španjolskoj prvi naslov svjetskog prvaka.",
+    "sources": [
+      "https://www.fifa.com/es/articles/asi-fue-la-final-andres-iniesta-en-la-copa-mundial-fifa-sudafrica-2010"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2278-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan jezera tekućeg metana",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Na kojem Saturnovu mjesecu postoje jezera u kojima se umjesto vode nalazi tekući metan?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan ima toliko hladnu površinu da metan i etan ondje mogu tvoriti jezera.",
+    "sources": [
+      "https://www.nasa.gov/image-article/titans-lakes/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2279-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "Dalí Corpus Hypercubus 1954",
+    "difficulty": 4,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je slikar 1954. prikazao raspeće ispred geometrijskog hiperkuba na slici „Corpus Hypercubus”?",
+    "answers": [
+      "Salvador Dalí",
+      "Salvador Dali",
+      "Dalí",
+      "Dali"
+    ],
+    "explanation": "Dalí je na slici povezao kršćansku ikonografiju s geometrijom četvrte dimenzije.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/488880"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2280-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Film",
+    "focus": "Titanic 11 Oscara 1998",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Film „Titanic” na dodjeli Oscara 1998. osvojio je koliko zlatnih kipića?",
+    "answers": [
+      "11",
+      "jedanaest"
+    ],
+    "explanation": "Titanic je osvojio 11 Oscara, čime je izjednačio tadašnji rekord filma Ben-Hur.",
+    "sources": [
+      "https://www.oscars.org/oscars/ceremonies/1998/memorable-moments"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2281-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Medicina",
+    "focus": "Antibiotici djeluju na bakterije ne viruse",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Na koju skupinu uzročnika infekcija djeluju antibiotici: bakterije ili viruse?",
+    "answers": [
+      "bakterije",
+      "bakterija",
+      "na bakterije"
+    ],
+    "explanation": "Antibiotici se koriste protiv bakterijskih infekcija, a ne djeluju na viruse.",
+    "sources": [
+      "https://www.who.int/europe/news-room/fact-sheets/item/antimicrobial-resistance"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2282-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Jupiter Velika crvena pjega oluja",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Velika crvena pjega na Jupiteru zapravo je golema atmosferska što?",
+    "answers": [
+      "oluja",
+      "anticiklonska oluja",
+      "anticiklona"
+    ],
+    "explanation": "Velika crvena pjega dugovječna je oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/jupiters-great-red-spot/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2283-20261106",
+    "createdAt": "2026-11-06T00:37:00+01:00",
+    "updatedAt": "2026-11-06T00:37:00+01:00",
+    "topic": "Glazba i film",
+    "focus": "My Heart Will Go On Oscar 1998 film",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Iz kojeg je filma pjesma „My Heart Will Go On”, nagrađena Oscarom za najbolju izvornu pjesmu 1998.?",
+    "answers": [
+      "Titanic",
+      "Titanik"
+    ],
+    "explanation": "Pjesma Jamesa Hornera i Willa Jenningsa osvojila je Oscara kao dio filma Titanic.",
+    "sources": [
+      "https://www.oscars.org/oscars/ceremonies/1998"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
