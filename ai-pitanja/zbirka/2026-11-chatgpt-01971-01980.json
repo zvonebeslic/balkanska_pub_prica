@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-1971-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Povijest",
+    "focus": "Mansa Musa hodočašće",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Vladar Malijskog Carstva u 14. stoljeću tijekom hodočašća u Meku dijelio je toliko zlata da je ostao simbol nevjerojatnog bogatstva. Kako se zvao?",
+    "answers": [
+      "Mansa Musa",
+      "Musa I."
+    ],
+    "explanation": "Mansa Musa vladao je Malijskim Carstvom i proslavio se hodočašćem 1324.",
+    "sources": [
+      "https://www.britannica.com/biography/Musa-I-of-Mali"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1972-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Zemljopis",
+    "focus": "Jezero Titicaca",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koje veliko andsko jezero dijele Peru i Bolivija, a na njemu plove tradicionalni čamci od trske totora?",
+    "answers": [
+      "Titicaca",
+      "jezero Titicaca"
+    ],
+    "explanation": "Titicaca se nalazi na visoravni Altiplano na granici Perua i Bolivije.",
+    "sources": [
+      "https://www.britannica.com/place/Lake-Titicaca"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1973-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Astronomija",
+    "focus": "Enceladovi gejziri",
+    "difficulty": 4,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "S kojeg Saturnova ledenog mjeseca iz pukotina blizu južnog pola izbijaju mlazovi vodene pare i ledenih čestica?",
+    "answers": [
+      "Encelad",
+      "Enceladus"
+    ],
+    "explanation": "Cassini je otkrio gejzire na Enceladu.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1974-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Glazba",
+    "focus": "Sitar u indijskoj glazbi",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koje indijsko žičano glazbalo s dugim vratom i rezonantnim žicama svira Ravi Shankar?",
+    "answers": [
+      "sitar"
+    ],
+    "explanation": "Ravi Shankar popularizirao je sitar izvan Indije.",
+    "sources": [
+      "https://www.britannica.com/art/sitar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1975-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Arhimedov vijak",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koji uređaj, nazvan po antičkom grčkom učenjaku, spiralnim okretanjem podiže vodu na višu razinu?",
+    "answers": [
+      "Arhimedov vijak",
+      "Arhimedova pumpa"
+    ],
+    "explanation": "Arhimedov vijak služi za podizanje vode ili rasutih materijala.",
+    "sources": [
+      "https://www.britannica.com/technology/Archimedes-screw"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1976-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Književnost",
+    "focus": "Borgesova knjižnica Babel",
+    "difficulty": 4,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj Borgesovoj pripovijetci beskrajna knjižnica sastavljena od šesterokutnih prostorija sadrži sve moguće knjige?",
+    "answers": [
+      "Babilonska knjižnica",
+      "Knjižnica Babilona",
+      "The Library of Babel",
+      "La biblioteca de Babel"
+    ],
+    "explanation": "Borgesova priča zamišlja svemir kao golemu knjižnicu.",
+    "sources": [
+      "https://www.britannica.com/biography/Jorge-Luis-Borges"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1977-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Promet",
+    "focus": "Transsibirska željeznica kraj",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji grad na ruskom Dalekom istoku, uz Japansko more, istočni je kraj glavne Transsibirske željeznice?",
+    "answers": [
+      "Vladivostok"
+    ],
+    "explanation": "Glavna Transsibirska željeznica povezuje Moskvu i Vladivostok.",
+    "sources": [
+      "https://www.britannica.com/topic/Trans-Siberian-Railroad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1978-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Botanika",
+    "focus": "Baobab i skladištenje vode",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koje afričko drvo, poznato po golemom deblu i krošnji nalik korijenju, u tkivima može pohraniti velike količine vode?",
+    "answers": [
+      "baobab"
+    ],
+    "explanation": "Baobabi imaju debela debla prilagođena sušnim uvjetima.",
+    "sources": [
+      "https://www.britannica.com/plant/baobab-tree-genus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1979-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Film",
+    "focus": "Rashomon Akira Kurosawa",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "U kojem Kurosawinu filmu iz 1950. isti zločin dobiva međusobno proturječne iskaze svjedoka?",
+    "answers": [
+      "Rašomon",
+      "Rashomon"
+    ],
+    "explanation": "Rashomon je poznat po prikazu nepouzdanih, suprotstavljenih perspektiva.",
+    "sources": [
+      "https://www.britannica.com/topic/Rashomon-film-by-Kurosawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1980-20261105",
+    "createdAt": "2026-11-05T04:37:04+01:00",
+    "updatedAt": "2026-11-05T04:37:04+01:00",
+    "topic": "Ekonomija",
+    "focus": "Greshamov zakon",
+    "difficulty": 5,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji ekonomski zakon sažima tvrdnja da loš novac istiskuje dobar kada oba imaju istu nominalnu vrijednost?",
+    "answers": [
+      "Greshamov zakon",
+      "Grešamov zakon"
+    ],
+    "explanation": "Greshamov zakon opisuje povlačenje kvalitetnijeg novca iz optjecaja.",
+    "sources": [
+      "https://www.britannica.com/money/Greshams-law"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
