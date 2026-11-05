@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-2251-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Sport",
+    "focus": "Prva olimpijska desetka gimnastika",
+    "difficulty": 2,
+    "styleId": 83,
+    "styleDescription": "Započni medaljom i pitanjem traži njezina osvajača",
+    "question": "Koja je rumunjska gimnastičarka na Igrama u Montrealu 1976. prva u olimpijskoj povijesti dobila savršenu ocjenu 10,0?",
+    "answers": [
+      "Nadia Comăneci",
+      "Nadia Comaneci",
+      "Comaneci"
+    ],
+    "explanation": "Nadia Comăneci prvu je savršenu desetku dobila na dvovisinskim ručama.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/montreal-celebrates-30th-anniversary-of-1976-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2252-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Olimpizam",
+    "focus": "Montreal 1976 prvi ženski rukomet",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Na kojim su Olimpijskim igrama žene prvi put nastupile u rukometu, košarci i veslanju?",
+    "answers": [
+      "Montreal 1976",
+      "Montreal",
+      "Olimpijske igre u Montrealu"
+    ],
+    "explanation": "Ženska natjecanja u sva tri sporta uvedena su na Igrama u Montrealu 1976.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/montreal-celebrates-30th-anniversary-of-1976-olympic-games"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2253-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptun prva matematički predviđena planeta",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koji je planet otkriven 1846. nakon što su matematičari izračunali gdje ga treba tražiti na nebu?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "Neptun je prvi planet otkriven zahvaljujući matematičkim predviđanjima.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2254-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Povijest astronomije",
+    "focus": "Triton otkrivač William Lassell",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji je britanski astronom 1846., samo 17 dana nakon otkrića Neptuna, otkrio njegov najveći mjesec Triton?",
+    "answers": [
+      "William Lassell",
+      "Lassell",
+      "Vilijam Lasel"
+    ],
+    "explanation": "William Lassell otkrio je Triton 10. listopada 1846.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2255-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Glazba",
+    "focus": "Adele album 21 Grammy 2012",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je album Adele, nazvan po njezinoj dobi tijekom snimanja, osvojio Grammy za album godine 2012.?",
+    "answers": [
+      "21",
+      "Twenty One"
+    ],
+    "explanation": "Adelein album 21 nagrađen je Grammyjem za album godine 2012.",
+    "sources": [
+      "https://www.grammy.com/awards/categories/album-of-the-year/2012/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2256-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Pop kultura",
+    "focus": "Rolling in the Deep Grammy pjesma godine",
+    "difficulty": 3,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je pjesma Adele osvojila Grammy za pjesmu godine 2012., a nalazi se na albumu 21?",
+    "answers": [
+      "Rolling in the Deep"
+    ],
+    "explanation": "Rolling in the Deep osvojila je Grammy za pjesmu godine 2012.",
+    "sources": [
+      "https://www.grammy.com/news/adele-21-10-year-anniversary/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2257-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Umjetnost",
+    "focus": "Veliki val kod Kanagawe slikar",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je japanski umjetnik stvorio poznati drvorez Veliki val kod Kanagawe, dio serije Trideset šest pogleda na Fuji?",
+    "answers": [
+      "Katsushika Hokusai",
+      "Hokusai",
+      "Kacušika Hokusai"
+    ],
+    "explanation": "Hokusai je izradio Veliki val oko 1830.–1832.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/45434"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2258-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Veliki val pigment prusko plava",
+    "difficulty": 4,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji je plavi pigment, tada novost u Japanu, Hokusai koristio za svoj poznati Veliki val kod Kanagawe?",
+    "answers": [
+      "Prusko plava",
+      "Pruska plava",
+      "Berlinsko modrilo"
+    ],
+    "explanation": "Analiza Metropolitana potvrđuje uporabu prusko plave, uz indigo.",
+    "sources": [
+      "https://www.metmuseum.org/ja/essays/hokusai-great-wave"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2259-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Kemija",
+    "focus": "Polonij ime država",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojoj je državi Marie Curie nazvala kemijski element polonij, otkriven 1898.?",
+    "answers": [
+      "Poljska",
+      "Poljskoj"
+    ],
+    "explanation": "Polonij je nazvan po Poljskoj, domovini Marie Curie.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2260-20261105",
+    "createdAt": "2026-11-05T21:43:55+01:00",
+    "updatedAt": "2026-11-05T21:43:55+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Marie Curie radij 1898",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji su radioaktivni element Marie i Pierre Curie otkrili 1898. uz polonij, a ime mu potječe od latinske riječi za zraku?",
+    "answers": [
+      "Radij",
+      "Radium"
+    ],
+    "explanation": "Bračni par Curie 1898. otkrio je polonij i radij.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
