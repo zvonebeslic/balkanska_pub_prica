@@ -1,0 +1,239 @@
+[
+  {
+    "id": "chatgpt10000-2261-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera rotacija dulja od obilaska Sunca",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedan okret oko vlastite osi traje dulje od obilaska oko Sunca?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Veneri za rotaciju trebaju oko 243 zemaljska dana, a za obilazak Sunca oko 225.",
+    "sources": [
+      "https://spaceplace.nasa.gov/all-about-venus/en/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2262-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Frida Kahlo autoportret s majmunom 1938",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je meksička slikarica na autoportretu iz 1938. prikazala i svojeg ljubimca majmuna?",
+    "answers": [
+      "Frida Kahlo",
+      "Frida Kalo",
+      "Kahlo"
+    ],
+    "explanation": "Autoportret s majmunom iz 1938. prikazuje Fridu Kahlo i njezina ljubimca.",
+    "sources": [
+      "https://buffaloakg.org/artworks/1966910-self-portrait-monkey"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2263-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Medicina",
+    "focus": "Inzulin 51 aminokiselina",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji hormon gušterače sastoji se od 51 aminokiseline i ključan je za regulaciju glukoze u krvi?",
+    "answers": [
+      "Inzulin",
+      "Insulin"
+    ],
+    "explanation": "Inzulin je peptidni hormon s dva lanca koji ukupno sadrže 51 aminokiselinu.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/mesh/68007328"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2264-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Sport",
+    "focus": "Bolt prvo olimpijsko zlato 2008 Peking",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "U kojem je gradu Usain Bolt osvojio svoja prva olimpijska zlata na 100 i 200 metara?",
+    "answers": [
+      "Peking",
+      "Beijing",
+      "Pekingu"
+    ],
+    "explanation": "Bolt je oba naslova osvojio na Olimpijskim igrama u Pekingu 2008.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/beijing-builds-on-stadium-success-by-adding-to-2008-s-architectural-legacy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2265-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Astronautika",
+    "focus": "Mariner 2 prvi prelet Venere",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koja je NASA-ina letjelica 1962. prva uspješno proletjela pokraj drugog planeta, Venere?",
+    "answers": [
+      "Mariner 2",
+      "Mariner II",
+      "Mariner dva"
+    ],
+    "explanation": "Mariner 2 proletio je pokraj Venere 14. prosinca 1962.",
+    "sources": [
+      "https://science.nasa.gov/venus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2266-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Umjetnost",
+    "focus": "Frida Kahlo dvije Fride 1939",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Kako se zove poznata slika Fride Kahlo iz 1939. na kojoj sjede dvije verzije same slikarice?",
+    "answers": [
+      "Dvije Fride",
+      "Las dos Fridas",
+      "The Two Fridas"
+    ],
+    "explanation": "Dvije Fride dvostruki je autoportret iz 1939.",
+    "sources": [
+      "https://www.philamuseum.org/exhibitions/frida-kahlo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2267-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Geografija svemira",
+    "focus": "Olympus Mons planet",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se planetu nalazi golemi vulkan Olympus Mons, viši od Mount Everesta?",
+    "answers": [
+      "Mars",
+      "Marsu"
+    ],
+    "explanation": "Olympus Mons najveći je poznati vulkan u Sunčevu sustavu.",
+    "sources": [
+      "https://science.nasa.gov/image-article/apod-2023-april-4-olympus-mons-largest-volcano-in-the-solar-system/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2268-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Povijest umjetnosti",
+    "focus": "Frida Kahlo okvir kupnja 1939",
+    "difficulty": 4,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koji je materijal podloge upotrijebila Frida Kahlo za autoportret 'The Frame' iz 1938., danas u Centru Pompidou?",
+    "answers": [
+      "Aluminij",
+      "Aluminijska ploča",
+      "Aluminium"
+    ],
+    "explanation": "Centre Pompidou navodi ulje na aluminiju kao tehniku djela.",
+    "sources": [
+      "https://www.centrepompidou.fr/en/ressources/oeuvre/EaZN1kV"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2269-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Planetologija",
+    "focus": "Venera atmosfera ugljikov dioksid",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koji plin u gustoj atmosferi Venere najviše pridonosi njezinu snažnom stakleničkom učinku?",
+    "answers": [
+      "Ugljikov dioksid",
+      "CO2",
+      "Ugljični dioksid"
+    ],
+    "explanation": "Venerina atmosfera bogata je ugljikovim dioksidom, koji zadržava toplinu.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2270-20261105",
+    "createdAt": "2026-11-05T22:44:54+01:00",
+    "updatedAt": "2026-11-05T22:44:54+01:00",
+    "topic": "Olimpizam",
+    "focus": "Bolt Rio 2016 treći naslov 100 m",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je sprinter u Riju 2016. treći put zaredom postao olimpijski prvak na 100 metara?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt",
+      "Jusein Bolt"
+    ],
+    "explanation": "Bolt je pobijedio na 100 metara 2008., 2012. i 2016.",
+    "sources": [
+      "https://www.olympics.com/cio/news/bolt-confirms-status-as-greatest-sprinter-in-history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
