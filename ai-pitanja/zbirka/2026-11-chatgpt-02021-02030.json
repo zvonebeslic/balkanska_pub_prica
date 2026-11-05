@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-2021-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Mineralogija",
+    "focus": "topaz Mohsova tvrdoća osam",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Mineral koji se na Mohsovoj ljestvici nalazi između kvarca i korunda ima tvrdoću 8. Kako se zove?",
+    "answers": [
+      "topaz"
+    ],
+    "explanation": "Topaz ima tvrdoću 8, kvarc 7, a korund 9.",
+    "sources": [
+      "https://pubs.usgs.gov/gip/gemstones/mineral.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2022-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Fotografija",
+    "focus": "dagerotipija jedinstvena slika bez negativa",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Rani fotografski postupak iz 1839. stvarao je jedinstvenu sliku na posrebrenoj bakrenoj ploči, bez negativa. Kako se zvao?",
+    "answers": [
+      "dagerotipija",
+      "daguerreotype",
+      "dagerotip"
+    ],
+    "explanation": "Dagerotipija je stvarala pojedinačne slike na metalnim pločama; nije bilo negativa za umnožavanje.",
+    "sources": [
+      "https://www.americanhistory.si.edu/collections/object/nmah_554754"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2023-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Medicina",
+    "focus": "variola posljednji prirodni slučaj Somalija 1977",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "U kojoj je afričkoj državi 1977. zabilježen posljednji prirodni slučaj velikih boginja?",
+    "answers": [
+      "Somalija",
+      "Somalia"
+    ],
+    "explanation": "WHO navodi Somaliju kao mjesto posljednjeg prirodnog slučaja 1977., prije globalnog iskorjenjivanja.",
+    "sources": [
+      "https://www.who.int/emergencies/situations/smallpox"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2024-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Oceanografija",
+    "focus": "Sargaško more bez kopnene obale",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koje je more jedinstveno po tome što mu granice određuju oceanske struje, a ne obale kopna?",
+    "answers": [
+      "Sargaško more",
+      "Sargasko more",
+      "Sargasso Sea"
+    ],
+    "explanation": "Sargaško more u Atlantiku omeđuju sustavi oceanskih struja, a ne kopnene obale.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/sargassosea.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2025-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Arheologija",
+    "focus": "klinasto pismo klinasti otisci u glini",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Pisari drevne Mezopotamije utiskivali su znakove nalik klinovima u vlažnu glinu. Kako nazivamo to pismo?",
+    "answers": [
+      "klinasto pismo",
+      "klinopis"
+    ],
+    "explanation": "Klinasto pismo razvilo se iz ranijih slikovnih znakova u Mezopotamiji.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/328932"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2026-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Telekomunikacije",
+    "focus": "Morseov telegraf točke crtice",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "U starom telegrafskom uredu operater sluša kratke i duge signale koji predstavljaju slova. Čiji sustav kodiranja koristi?",
+    "answers": [
+      "Morseov kod",
+      "Morseova abeceda",
+      "Morse"
+    ],
+    "explanation": "Morseov sustav koristi kratke i duge signale, poznate kao točke i crtice.",
+    "sources": [
+      "https://www.loc.gov/collections/samuel-morse-papers/articles-and-essays/collection-highlights/invention-of-the-telegraph/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2027-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Jezik",
+    "focus": "Silbo Gomero zviždani govor La Gomera",
+    "difficulty": 4,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Na kanarskom otoku La Gomera poruke se prenose zviždanjem, a tradicija je od 2009. pod zaštitom UNESCO-a. Kako se zove taj način govora?",
+    "answers": [
+      "Silbo Gomero",
+      "Silbo"
+    ],
+    "explanation": "Silbo Gomero zvižducima prenosi glasove španjolskog jezika i dio je nematerijalne baštine.",
+    "sources": [
+      "https://www.unesco.org/archives/multimedia/document-370"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2028-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Zanati",
+    "focus": "Jacquard tkalački stan bušene kartice",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je francuski izumitelj povezao bušene kartice s upravljanjem uzorcima na tkalačkom stanu, desetljećima prije računala?",
+    "answers": [
+      "Joseph Marie Jacquard",
+      "Joseph Jacquard",
+      "Jacquard",
+      "Žozef Žakar"
+    ],
+    "explanation": "Jacquardov dodatak tkalačkom stanu koristio je niz bušenih kartica za upravljanje uzorkom tkanja.",
+    "sources": [
+      "https://americanhistory.si.edu/es/collections/object-groups/punch-cards"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2029-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera rotacija 243 dana revolucija 225 dana",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedan okret oko osi traje dulje od jednog obilaska oko Sunca: oko 243 naspram 225 zemaljskih dana?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera se oko osi okrene za približno 243 zemaljska dana, a Sunce obiđe za približno 225.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2030-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Galileo otkriće Europe Jupiterov mjesec 1610",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Galileo je 1610. otkrio četiri velika Jupiterova mjeseca. Koji od njih NASA danas istražuje misijom Clipper zbog mogućeg oceana ispod leda?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "Europa je jedan od Galilejevih mjeseca; misija Europa Clipper proučava uvjete ispod njezine ledene kore.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
