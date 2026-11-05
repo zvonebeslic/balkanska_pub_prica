@@ -1,0 +1,239 @@
+[
+  {
+    "id": "chatgpt10000-1921-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "More i ocean",
+    "focus": "Uska morska struja prema pučini",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na plaži vidite uzak pojas vode koji se između valova brzo vraća od obale prema otvorenom moru. Kako se naziva ta opasna struja?",
+    "answers": [
+      "povratna struja",
+      "rip struja",
+      "rip current"
+    ],
+    "explanation": "Povratna struja teče od obale prema pučini i može odnijeti plivača daleko od obale.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/ocean/rip-currents"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1922-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Geologija",
+    "focus": "Plovućac pluta zbog mjehurića",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja vulkanska stijena puna sitnih plinskih šupljina može plutati na vodi, pa se koristi i za uklanjanje tvrde kože?",
+    "answers": [
+      "plovućac",
+      "plovučac",
+      "pumice"
+    ],
+    "explanation": "Plovućac nastaje hlađenjem pjenaste magme; brojni mjehurići smanjuju njegovu gustoću.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1923-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Povijest",
+    "focus": "Nabatejci kao graditelji Petre",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Njihov karavanski grad Petra povezivao je Arabiju, Egipat i Siriju, a brojne građevine uklesali su u stijenu. Koji je drevni narod sagradio taj grad?",
+    "answers": [
+      "Nabatejci",
+      "Nabatejaca",
+      "Nabataeans"
+    ],
+    "explanation": "Petra je bila prijestolnica Nabatejaca, trgovačkog naroda poznatog po karavanskim putovima.",
+    "sources": [
+      "https://whc.unesco.org/en/list/326/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1924-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Književnost",
+    "focus": "Eiji Yoshikawa krater na Merkuru",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na Merkuru postoji krater Yoshikawa, nazvan po književniku poznatom po povijesnim romanima. Iz koje je države bio taj književnik?",
+    "answers": [
+      "Japan",
+      "Japana"
+    ],
+    "explanation": "Krater Yoshikawa dobio je ime po japanskom romanopiscu Eijiju Yoshikawi.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/yoshikawa-crater/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1925-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Poljoprivreda",
+    "focus": "Ifugao terase usjev",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Na strmim obroncima filipinskog Luzona narod Ifugao već stoljećima održava terasasta, navodnjavana polja. Koja se žitarica ondje tradicionalno uzgaja?",
+    "answers": [
+      "riža",
+      "rižu",
+      "rice"
+    ],
+    "explanation": "Terasasta polja Ifugao služe tradicionalnom uzgoju riže uz složeno navodnjavanje.",
+    "sources": [
+      "https://whc.unesco.org/en/list/722"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1926-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Astronomija",
+    "focus": "Crvena aurora atomarni kisik",
+    "difficulty": 4,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Zelenu i crvenu polarnu svjetlost mogu stvarati pobuđeni atomi istog elementa u atmosferi. Kojeg?",
+    "answers": [
+      "kisik",
+      "oxygen"
+    ],
+    "explanation": "Pobuđeni kisik na različitim visinama može zračiti zelenom ili crvenom svjetlošću.",
+    "sources": [
+      "https://science.nasa.gov/sun/auroras/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1927-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Seizmologija",
+    "focus": "Hipocentar i epicentar",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Epicentar potresa označava točku na Zemljinoj površini. Kako se zove točka u njezinoj unutrašnjosti gdje potres zapravo započinje?",
+    "answers": [
+      "hipocentar",
+      "žarište potresa",
+      "hipocentre",
+      "hypocenter"
+    ],
+    "explanation": "Hipocentar je početak pucanja stijena u dubini, a epicentar je točka na površini iznad njega.",
+    "sources": [
+      "https://www.usgs.gov/glossary/earthquake-hazards-program"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1928-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Mineralogija",
+    "focus": "Retikulit potone unatoč poroznosti",
+    "difficulty": 5,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Za razliku od običnog plovućca, ova iznimno porozna vulkanska tvorevina s međusobno povezanim šupljinama brzo tone u vodi. Kako se naziva?",
+    "answers": [
+      "retikulit",
+      "reticulite"
+    ],
+    "explanation": "Retikulit je vrlo lagana vulkanska mrežasta struktura, ali zbog propusnih povezanih šupljina tone.",
+    "sources": [
+      "https://www.usgs.gov/observatories/hvo/news/volcano-watch-almost-nothing-enough-reticulite-helps-measure-depth-kilaueas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1929-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Petra podzemne spremnice vode",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Nabatejci su u sušnoj Petri skupljali kišnicu kanalima i spremali je u velike spremnike, često uklesane u stijenu. Kako nazivamo takve spremnike vode?",
+    "answers": [
+      "cisterne",
+      "cisterna",
+      "nakapnice"
+    ],
+    "explanation": "Petra je imala razgranat sustav kanala, brana i cisterni za čuvanje sezonskih oborina.",
+    "sources": [
+      "https://whc.unesco.org/en/list/326/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-1930-20261105",
+    "createdAt": "2026-11-05T01:37:26+01:00",
+    "updatedAt": "2026-11-05T01:37:26+01:00",
+    "topic": "Zemljopis",
+    "focus": "Luzon otok rižinih terasa",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se filipinskom otoku nalaze glasovite rižine terase Kordiljera, koje su oblikovale generacije naroda Ifugao?",
+    "answers": [
+      "Luzon",
+      "Luzonu"
+    ],
+    "explanation": "UNESCO-ove terase nalaze se u filipinskim Kordiljerima na sjevernom otoku Luzonu.",
+    "sources": [
+      "https://whc.unesco.org/en/list/722"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
