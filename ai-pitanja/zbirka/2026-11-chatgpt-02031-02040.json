@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-2031-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Sport",
+    "focus": "olimpijski maraton London 1908 standard 42,195",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na Olimpijskim igrama u kojem je gradu 1908. prvi put istrčana maratonska dionica od 42,195 kilometara?",
+    "answers": [
+      "London"
+    ],
+    "explanation": "Na Igrama 1908. u Londonu maraton je dobio duljinu koja je kasnije postala standardna.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/the-inaugural-modern-olympic-marathon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2032-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Arhitektura",
+    "focus": "Göbekli Tepe T stupovi lovci sakupljači",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se arheološkom nalazištu u današnjoj Turskoj nalaze monumentalni kameni stupovi u obliku slova T, podignuti još u 10. tisućljeću prije Krista?",
+    "answers": [
+      "Göbekli Tepe",
+      "Gobekli Tepe"
+    ],
+    "explanation": "Göbekli Tepe sadrži megalitske građevine lovaca-sakupljača iz razdoblja oko 9600.–8200. pr. Kr.",
+    "sources": [
+      "https://whc.unesco.org/en/list/1572"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2033-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Zoologija",
+    "focus": "koraljni polip životinja žarnjak",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koraljni greben izgleda kao kamen ili biljka, ali grade ga kolonije sićušnih životinja. Kako se zove jedna takva jedinka?",
+    "answers": [
+      "polip",
+      "koraljni polip"
+    ],
+    "explanation": "Koraljni polipi pripadaju žarnjacima i kod tvrdih koralja izlučuju vapnenački kostur.",
+    "sources": [
+      "https://oceanexplorer.noaa.gov/ocean-fact/coral-animal/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2034-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Povijest izuma",
+    "focus": "čičak traka George de Mestral kukice",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Švicarski inženjer George de Mestral proučavao je čičke koji su se zalijepili za psa. Koji je poznati zatvarač iz toga razvio?",
+    "answers": [
+      "čičak traka",
+      "čičak",
+      "Velcro"
+    ],
+    "explanation": "Kukice biljnih čičaka inspirirale su de Mestralov zatvarač s kukicama i petljama.",
+    "sources": [
+      "https://invention.si.edu/invention-stories/george-de-mestral-velcror-inventor"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2035-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Biografije",
+    "focus": "Marie Curie Nobel 1903 1911 dvije znanosti",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je znanstvenica osvojila Nobelovu nagradu za fiziku 1903., a zatim za kemiju 1911. godine?",
+    "answers": [
+      "Marie Curie",
+      "Marija Kiri",
+      "Maria Skłodowska Curie"
+    ],
+    "explanation": "Marie Curie dobila je Nobela iz fizike 1903. i kemije 1911.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/physics/facts-on-the-nobel-prize-in-physics/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2036-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Kemija",
+    "focus": "polonij naziv prema Poljskoj",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je radioaktivni element Marie Curie nazvala prema svojoj domovini Poljskoj?",
+    "answers": [
+      "polonij",
+      "polonium"
+    ],
+    "explanation": "Curie je ime polonij predložila u čast Poljske, svoje domovine.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2037-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Gastronomija",
+    "focus": "napuljski pizzaiuolo UNESCO 2017",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Umijeće pizzaiuola, majstora pripreme i pečenja pizze, 2017. je ušlo na UNESCO-ov popis. Iz kojeg talijanskog grada potječe?",
+    "answers": [
+      "Napulj",
+      "Napoli",
+      "Naples"
+    ],
+    "explanation": "UNESCO štiti umijeće napuljskih pizzaiuola, tradicionalnih majstora pizze.",
+    "sources": [
+      "https://ich.unesco.org/en/RL/art-of-neapolitan-pizzaiolo-00722"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2038-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Geologija",
+    "focus": "plovućac vulkanska stijena pluta",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koja porozna vulkanska stijena zbog mnoštva plinskih šupljina može plutati na vodi?",
+    "answers": [
+      "plovućac",
+      "plavac",
+      "pumice"
+    ],
+    "explanation": "Plovućac je lagana, šupljikava vulkanska stijena koja može imati manju gustoću od vode.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/pumice.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2039-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Astronomija",
+    "focus": "Halley komet povratak 76 godina",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji poznati komet, nazvan po astronomu koji je predvidio njegov povratak, obiđe Sunce približno svakih 76 godina?",
+    "answers": [
+      "Halleyjev komet",
+      "Halley",
+      "Halejev komet"
+    ],
+    "explanation": "Halleyjev komet ima orbitalno razdoblje od približno 76 godina.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/comets/1p-halley/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2040-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Povijest tehnologije",
+    "focus": "Babbage kartice Jacquard računalni stroj",
+    "difficulty": 5,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je britanski matematičar zamislio da se bušene kartice, kakve su upravljale Jacquardovim tkalačkim stanom, koriste i za upravljanje računskim strojem?",
+    "answers": [
+      "Charles Babbage",
+      "Babbage",
+      "Čarls Bebidž"
+    ],
+    "explanation": "Charles Babbage razmatrao je primjenu bušenih kartica u svojem analitičkom stroju.",
+    "sources": [
+      "https://americanhistory.si.edu/es/collections/object-groups/punch-cards"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
