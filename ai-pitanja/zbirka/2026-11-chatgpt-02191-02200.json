@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-2191-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Matematika",
+    "focus": "Fibonaccijev niz zbroj susjeda",
+    "difficulty": 2,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koji broj dolazi sljedeći u nizu 1, 1, 2, 3, 5, 8, 13, ako je svaki novi član zbroj prethodna dva?",
+    "answers": [
+      "21",
+      "Dvadeset jedan"
+    ],
+    "explanation": "Sljedeći član Fibonaccijeva niza iznosi 8 + 13 = 21.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fibonacci_sequence"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2192-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Povijest pisma",
+    "focus": "Klinasto pismo glinena pločica",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Koje se staro mezopotamsko pismo utiskivalo trskom u vlažnu glinu, ostavljajući znakove nalik klinovima?",
+    "answers": [
+      "Klinasto pismo",
+      "Klinopis"
+    ],
+    "explanation": "Klinasto pismo nastalo je u drevnoj Mezopotamiji i zapisivalo se na pločicama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cuneiform"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2193-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Gastronomija",
+    "focus": "Marcipan bademova masa",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Od mljevenih badema i šećera izrađuju se slatke figurice, često u obliku voća. Kako se zove ta masa?",
+    "answers": [
+      "Marcipan"
+    ],
+    "explanation": "Marcipan je slastičarska masa kojoj su osnovni sastojci bademi i šećer.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Marzipan"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2194-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Borilački sportovi",
+    "focus": "Aikido osnivač Ueshiba",
+    "difficulty": 4,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koju je japansku borilačku vještinu u 20. stoljeću razvio Morihei Ueshiba, s naglaskom na preusmjeravanje napadačeve sile?",
+    "answers": [
+      "Aikido"
+    ],
+    "explanation": "Morihei Ueshiba osnivač je aikida.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aikido"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2195-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Ekologija",
+    "focus": "Lišaj simbioza gljive alge",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja organizacijska zajednica može rasti na golim stijenama, a sastoji se od gljive i fotosintetskog partnera poput alge?",
+    "answers": [
+      "Lišaj",
+      "Lisaj"
+    ],
+    "explanation": "Lišajevi su simbiotske zajednice gljiva i algi ili cijanobakterija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lichen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2196-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Kemija",
+    "focus": "Kromatografija razdvajanje boja",
+    "difficulty": 3,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Kad se kap tinte stavi na papir pa je voda razvuče u više obojenih pruga, koju metodu razdvajanja smjese promatramo?",
+    "answers": [
+      "Kromatografija",
+      "Papirna kromatografija"
+    ],
+    "explanation": "Sastojci smjese putuju različitim brzinama kroz nepokretnu podlogu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chromatography"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2197-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Inženjerstvo",
+    "focus": "Njihalo period oscilacije",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove uteg obješen na nit koji se pravilno njiše i zato je stoljećima služio za regulaciju rada satova?",
+    "answers": [
+      "Njihalo",
+      "Klatno"
+    ],
+    "explanation": "Pravilno titranje njihala iskorišteno je u mehaničkim satovima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pendulum"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2198-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Muzeji",
+    "focus": "Diorama trodimenzionalni prikaz",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove muzejski prikaz koji pomoću modela, pozadine i osvjetljenja stvara dojam prizora iz prirode ili povijesti?",
+    "answers": [
+      "Diorama"
+    ],
+    "explanation": "Diorame prikazuju prizore kombiniranjem trodimenzionalnih modela i scenografije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Diorama"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2199-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Moda",
+    "focus": "Batik vosak i bojenje",
+    "difficulty": 3,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koja tehnika ukrašavanja tkanine, osobito povezana s Indonezijom, koristi vosak da određeni dijelovi ostanu neobojeni pri uranjanju u boju?",
+    "answers": [
+      "Batik"
+    ],
+    "explanation": "Batik se temelji na zaštiti odabranih dijelova tkanine voskom prije bojenja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Batik"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2200-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "More i ocean",
+    "focus": "Nautilus komore ljušture",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji živi glavonožac s vanjskom spiralnom ljušturom regulira uzgon pomoću niza komora unutar svoje kućice?",
+    "answers": [
+      "Nautilus",
+      "Indijska lađica",
+      "Ladica"
+    ],
+    "explanation": "Nautilus održava uzgon plinom i tekućinom u komorama ljušture.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nautilus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
