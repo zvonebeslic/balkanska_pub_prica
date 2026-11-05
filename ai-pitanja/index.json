@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total": 3283,
+  "total": 3291,
   "months": [
     "2026-10",
     "2026-10-chatgpt-00182-00184",
@@ -243,27 +243,28 @@
     "2026-11-chatgpt-02241-02250",
     "2026-11-chatgpt-02251-02260",
     "2026-11-chatgpt-02261-02270",
-    "2026-11-chatgpt-02271-02275"
+    "2026-11-chatgpt-02271-02275",
+    "2026-11-chatgpt-02276-02283"
   ],
   "styleCounts": {
-    "1": 92,
+    "1": 93,
     "2": 31,
     "3": 50,
-    "4": 88,
+    "4": 90,
     "5": 3,
     "6": 74,
     "7": 39,
     "8": 184,
-    "9": 73,
+    "9": 74,
     "10": 32,
     "11": 97,
-    "12": 139,
-    "13": 20,
+    "12": 140,
+    "13": 21,
     "14": 72,
     "15": 50,
     "16": 14,
     "17": 94,
-    "18": 157,
+    "18": 159,
     "19": 4,
     "20": 50,
     "21": 36,
@@ -345,9 +346,9 @@
     "100": 10
   },
   "topicCounts": {
-    "Glazba": 122,
+    "Glazba": 123,
     "Tehnologija": 108,
-    "Astronomija": 204,
+    "Astronomija": 206,
     "Gastronomija": 78,
     "Književnost": 85,
     "Sport": 148,
@@ -359,11 +360,11 @@
     "Fizika": 87,
     "Kemija": 99,
     "Matematika": 91,
-    "Medicina": 83,
+    "Medicina": 84,
     "Inženjerstvo": 60,
     "Arhitektura": 110,
     "Jezik": 56,
-    "Film": 51,
+    "Film": 52,
     "Televizija": 22,
     "Automobili": 11,
     "Promet": 50,
@@ -402,7 +403,7 @@
     "Košarka": 1,
     "Kultura": 22,
     "Olimpizam": 7,
-    "Umjetnost": 31,
+    "Umjetnost": 32,
     "Botanika": 11,
     "Povijest umjetnosti": 12,
     "Građevinarstvo": 1,
@@ -476,14 +477,16 @@
     "Vulkanologija": 1,
     "Povijest pisma": 1,
     "Borilački sportovi": 1,
-    "Muzeji": 1
+    "Muzeji": 1,
+    "Nogomet": 1,
+    "Glazba i film": 1
   },
   "difficultyCounts": {
-    "1": 364,
-    "2": 886,
-    "3": 922,
-    "4": 695,
+    "1": 365,
+    "2": 891,
+    "3": 923,
+    "4": 696,
     "5": 406
   },
-  "updatedAt": "2026-11-05T23:37:35+01:00"
+  "updatedAt": "2026-11-06T00:37:00+01:00"
 }
