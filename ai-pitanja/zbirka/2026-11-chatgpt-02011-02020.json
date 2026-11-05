@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-2011-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Vremenske prilike",
+    "focus": "anemometar mjerenje brzine vjetra",
+    "difficulty": 2,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Koji meteorološki instrument, često s rotirajućim čašicama, mjeri brzinu vjetra?",
+    "answers": [
+      "anemometar"
+    ],
+    "explanation": "Anemometar mjeri brzinu vjetra, dok vjetrokaz pokazuje njegov smjer.",
+    "sources": [
+      "https://media.nationalgeographic.org/assets/activity/assets/measuring-weather-with-tools-1.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2012-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Astronomija",
+    "focus": "astrolab mjerenje visine zvijezda",
+    "difficulty": 3,
+    "styleId": 69,
+    "styleDescription": "Prikaži zanimljivost iz povijesti fotografije i traži uređaj",
+    "question": "Pomorac prije GPS-a određuje visinu zvijezde iznad horizonta starinskom kružnom spravom. Kako se zove taj instrument?",
+    "answers": [
+      "astrolab"
+    ],
+    "explanation": "Astrolab se koristio za mjerenje visine nebeskih tijela i navigaciju.",
+    "sources": [
+      "https://www.enciklopedija.hr/clanak/astrolab"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2013-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Svakodnevica",
+    "focus": "gnomon sunčani sat sjena",
+    "difficulty": 3,
+    "styleId": 74,
+    "styleDescription": "Kreni od znaka u tipografiji i pitaj kako se zove",
+    "question": "Kako se zove štapić ili izbočeni dio sunčanog sata čija sjena pokazuje vrijeme?",
+    "answers": [
+      "gnomon"
+    ],
+    "explanation": "Gnomon baca sjenu na označenu plohu sunčanog sata.",
+    "sources": [
+      "https://brockhaus.de/ecs/enzy/article/gnomon-astronomie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2014-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Fizika",
+    "focus": "aneroidni barometar bez tekućine",
+    "difficulty": 4,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Živin barometar ima stupac tekućine. Kako se naziva barometar koji tlak mjeri bez tekućine, deformacijom metalne komore?",
+    "answers": [
+      "aneroidni barometar",
+      "aneroid"
+    ],
+    "explanation": "Aneroidni barometar koristi deformaciju zatvorene metalne komore pod promjenom tlaka.",
+    "sources": [
+      "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Barometer"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2015-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "More i ocean",
+    "focus": "gnomonska projekcija veliki krug",
+    "difficulty": 5,
+    "styleId": 88,
+    "styleDescription": "Poveži povijesnu kartu s modernim mjestom",
+    "question": "Na kojoj kartografskoj projekciji najkraća ruta između dviju točaka na kugli, odnosno luk velike kružnice, izgleda kao pravac?",
+    "answers": [
+      "gnomonska projekcija",
+      "gnomonička projekcija"
+    ],
+    "explanation": "Gnomonska projekcija preslikava velike kružnice u pravce.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gnomonic_projection"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2016-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Tehnologija",
+    "focus": "psihrometar dva termometra",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Jedan termometar ima suhu, a drugi vlažnu kuglicu. Kako se zove uređaj koji iz razlike njihovih očitanja određuje vlagu zraka?",
+    "answers": [
+      "psihrometar"
+    ],
+    "explanation": "Isparavanje hladi vlažnu kuglicu; razlika temperatura služi za određivanje vlažnosti.",
+    "sources": [
+      "https://media.nationalgeographic.org/assets/activity/assets/measuring-weather-with-tools-1.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2017-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Zemljopis",
+    "focus": "astrolab geografska širina",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Prije satelitske navigacije moreplovci su visinu Sunca i zvijezda mjerili astrolabom. Koju su geografsku koordinatu tako mogli odrediti?",
+    "answers": [
+      "geografska širina",
+      "širina"
+    ],
+    "explanation": "Visina nebeskih tijela pomaže u određivanju geografske širine.",
+    "sources": [
+      "https://www.enciklopedija.hr/clanak/astrolab"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2018-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Povijest",
+    "focus": "aneroid barometar bez žive",
+    "difficulty": 2,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "U starim meteorološkim postajama jedna vrsta barometra koristila je živu. Koji je metal bio u toj tekućoj cijevi?",
+    "answers": [
+      "živa",
+      "merkur"
+    ],
+    "explanation": "Klasični barometar s tekućinom koristio je živu zbog njezine velike gustoće.",
+    "sources": [
+      "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Barometer"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2019-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Matematika",
+    "focus": "sunčani sat rotacija zemlje",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Ako Zemlja napravi približno 360 stupnjeva rotacije u 24 sata, koliko stupnjeva odgovara jednom satu?",
+    "answers": [
+      "15",
+      "petnaest",
+      "15 stupnjeva"
+    ],
+    "explanation": "360 podijeljeno s 24 iznosi 15 stupnjeva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sundial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2020-20261105",
+    "createdAt": "2026-11-05T06:36:35+01:00",
+    "updatedAt": "2026-11-05T06:36:35+01:00",
+    "topic": "Priroda",
+    "focus": "kišomjer oborina milimetri",
+    "difficulty": 1,
+    "styleId": 68,
+    "styleDescription": "Opiši alat kroz oblik i netipičnu uporabu",
+    "question": "U vrtu stoji cilindrična posuda s mjernom ljestvicom. Kojim instrumentom meteorolog bilježi količinu pale kiše?",
+    "answers": [
+      "kišomjer",
+      "pluviometar",
+      "ombrometar"
+    ],
+    "explanation": "Kišomjer prikuplja oborinu, a njezina se količina najčešće iskazuje u milimetrima.",
+    "sources": [
+      "https://media.nationalgeographic.org/assets/activity/assets/measuring-weather-with-tools-1.pdf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
