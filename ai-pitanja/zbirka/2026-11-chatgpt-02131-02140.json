@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-2131-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptun matematičko predviđanje",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je planet 1846. pronađen zahvaljujući matematičkom predviđanju njegova položaja, prije nego što je potvrđen teleskopom?",
+    "answers": [
+      "Neptun"
+    ],
+    "explanation": "Le Verrier je izračunao položaj nepoznatog planeta, a Galle ga je zatim opažao.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2132-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Povijest astronomije",
+    "focus": "Uran Herschel 1781",
+    "difficulty": 2,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "William Herschel je 1781. mislio da je pronašao komet. Koji je planet zapravo otkrio?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Herschelovo otkriće iz 1781. kasnije je priznato kao novi planet.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2133-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Književnost",
+    "focus": "Uranovi mjeseci Shakespeare Pope",
+    "difficulty": 4,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Dok većina planetarnih satelita nosi mitološka imena, mjeseci kojeg planeta nazvani su prema likovima Shakespearea i Alexandera Popea?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "NASA navodi književne likove kao posebnost imenovanja Uranovih mjeseca.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2134-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Fizika",
+    "focus": "Metan plava boja Urana",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji plin u Uranovoj atmosferi upija crveni dio Sunčeve svjetlosti i pridonosi njegovoj plavozelenoj boji?",
+    "answers": [
+      "Metan"
+    ],
+    "explanation": "Metan apsorbira crvenu svjetlost pa planet izgleda plavozeleno.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2135-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Matematika",
+    "focus": "Neptun rezonancija Pluton 3 2",
+    "difficulty": 5,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Za svaka tri obilaska Neptuna oko Sunca, Pluton napravi dva. Kojim se omjerom, zapisanim kao dva broja, opisuje ta orbitalna rezonancija?",
+    "answers": [
+      "3:2",
+      "3 prema 2",
+      "Tri prema dva"
+    ],
+    "explanation": "Orbitalna rezonancija 3:2 sprječava bliske susrete dvaju tijela.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2136-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Geografija svemira",
+    "focus": "Orionov krak položaj Sunca",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Između krakova Strijelca i Perzeja nalazi se manji dio Mliječne staze u kojem putuje Sunce. Kako se zove taj krak?",
+    "answers": [
+      "Orionov krak",
+      "Orionov ogranak",
+      "Orion Spur"
+    ],
+    "explanation": "Sunčev sustav nalazi se u Orionovu kraku Mliječne staze.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/solar-system-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2137-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Pluton reklasifikacija 2006",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine Međunarodna astronomska unija usvojila definiciju planeta nakon koje je Pluton svrstan među patuljaste planete?",
+    "answers": [
+      "2006"
+    ],
+    "explanation": "Nova definicija usvojena je 2006. godine.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/planets/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2138-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Planetologija",
+    "focus": "Venera najtopliji planet",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Merkur je najbliži Suncu, ali nije najtopliji planet. Koji planet zbog guste atmosfere ima višu prosječnu temperaturu?",
+    "answers": [
+      "Venera"
+    ],
+    "explanation": "Venerin snažan staklenički učinak podiže temperaturu iznad Merkurove.",
+    "sources": [
+      "https://science.nasa.gov/resource/solar-system-temperatures/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2139-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Astronautika",
+    "focus": "Voyager 2 Neptun 1989",
+    "difficulty": 3,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koja je svemirska letjelica 1989. prva proletjela pokraj Neptuna i snimila njegove oblake i oluje?",
+    "answers": [
+      "Voyager 2",
+      "Voyager II"
+    ],
+    "explanation": "Voyager 2 jedina je letjelica koja je dosad proletjela pokraj Neptuna.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2140-20261105",
+    "createdAt": "2026-11-05T14:37:20+01:00",
+    "updatedAt": "2026-11-05T14:37:20+01:00",
+    "topic": "Kemija",
+    "focus": "Ledeni divovi voda metan amonijak",
+    "difficulty": 4,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Voda, metan i amonijak važni su sastojci dubokih slojeva Urana i Neptuna. Kako se zajednički nazivaju ta dva planeta, za razliku od plinovitih divova Jupitera i Saturna?",
+    "answers": [
+      "Ledeni divovi",
+      "Ledeni giganti"
+    ],
+    "explanation": "Uran i Neptun klasificiraju se kao ledeni divovi.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/planets/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
