@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-2161-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Umjetnost",
+    "focus": "Origami savijanje papira",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se zove japanska umjetnost u kojoj se od jednog lista papira savijanjem izrađuju ždralovi, cvjetovi i drugi oblici?",
+    "answers": [
+      "Origami"
+    ],
+    "explanation": "Tradicionalni origami oblikuje papir presavijanjem, često bez rezanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Origami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2162-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Telekomunikacije",
+    "focus": "Semafor vizualno signaliziranje",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Prije radija poruke su se prenosile i položajima zastavica ili pokretnih krakova na tornjevima. Kako se zove takav sustav optičkog signaliziranja?",
+    "answers": [
+      "Semafor",
+      "Semaforska signalizacija"
+    ],
+    "explanation": "Semaforski sustavi kodiraju znakove položajem krakova ili zastavica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Semaphore"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2163-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Matematika",
+    "focus": "Abakus računanje kuglicama",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove računalo bez struje na kojem se brojevi prikazuju pomicanjem kuglica po šipkama ili žicama?",
+    "answers": [
+      "Abakus",
+      "Računaljka"
+    ],
+    "explanation": "Abakus omogućuje aritmetičke operacije pomicanjem brojačkih elemenata.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Abacus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2164-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Tiskarstvo",
+    "focus": "Litografija masnoća voda",
+    "difficulty": 3,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koja se grafička tehnika temelji na tome da se masnoća i voda odbijaju, a prvotno se izvodila na ravnoj kamenoj ploči?",
+    "answers": [
+      "Litografija",
+      "Kamenotisak"
+    ],
+    "explanation": "Litografija iskorištava različito ponašanje masnih i vodenih površina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lithography"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2165-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Geometrija",
+    "focus": "Möbiusova vrpca jedna strana",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Ako papirnatu traku prije spajanja krajeva zakrenemo za pola okreta, dobit ćemo plohu sa samo jednom stranom. Čije ime nosi ta vrpca?",
+    "answers": [
+      "Möbius",
+      "Mobius",
+      "Möbiusova vrpca",
+      "Mobiusova vrpca"
+    ],
+    "explanation": "Möbiusova vrpca neorijentabilna je ploha s jednim rubom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/M%C3%B6bius_strip"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2166-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Povijest tehnologije",
+    "focus": "Sunčani sat gnomon",
+    "difficulty": 2,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Na kojem starom uređaju sjena štapića, zvanog gnomon, pokazuje doba dana?",
+    "answers": [
+      "Sunčani sat",
+      "Sunčani časovnik"
+    ],
+    "explanation": "Sunčani sat očitava vrijeme prema položaju Sunčeve sjene.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sundial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2167-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Jezik i pismo",
+    "focus": "Braille šest točaka",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji sustav čitanja i pisanja za slijepe osobe gradi znakove od kombinacija ispupčenih točaka, najčešće u ćeliji od šest mjesta?",
+    "answers": [
+      "Brailleovo pismo",
+      "Braille",
+      "Brajevo pismo"
+    ],
+    "explanation": "Osnovna Brailleova ćelija ima dva stupca s po tri položaja točaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Braille"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2168-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Geologija",
+    "focus": "Permafrost dvije godine",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se zove tlo koje ostaje na temperaturi od nula stupnjeva ili nižoj najmanje dvije uzastopne godine, čak i kad mu se površina ljeti otopi?",
+    "answers": [
+      "Permafrost",
+      "Trajno smrznuto tlo"
+    ],
+    "explanation": "Permafrost označava dugotrajno smrznuto tlo, ne nužno trajni snježni pokrivač.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Permafrost"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2169-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Životinje",
+    "focus": "Aksolotl regeneracija udova",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac cijeli život često zadržava vanjske škrge, a znanstvenicima je poznat po regeneraciji udova?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak s izraženom neotenijom i sposobnošću regeneracije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2170-20261105",
+    "createdAt": "2026-11-05T16:40:43+01:00",
+    "updatedAt": "2026-11-05T16:40:43+01:00",
+    "topic": "Pop kultura",
+    "focus": "Geocaching GPS skriveni spremnici",
+    "difficulty": 2,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "Kako se zove igra u kojoj sudionici pomoću GPS koordinata traže skrivene kutijice, upisuju se u dnevnik i često ostavljaju sitne predmete?",
+    "answers": [
+      "Geocaching",
+      "Geokešing"
+    ],
+    "explanation": "Geocaching spaja navigaciju i potragu za skrivenim spremnicima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geocaching"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
