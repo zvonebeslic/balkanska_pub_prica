@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-2211-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Povijest",
+    "focus": "Klinasto pismo i Mezopotamija",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koja je drevna civilizacija razvila klinasto pismo na glinenim pločicama, mnogo prije nastanka latinice?",
+    "answers": [
+      "Sumerani",
+      "Sumerci"
+    ],
+    "explanation": "Klinasto pismo pojavilo se u Sumeru u južnoj Mezopotamiji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cuneiform"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2212-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Glazba",
+    "focus": "Teremin i elektromagnetsko polje",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Na kojem se glazbalu visina tona i glasnoća mijenjaju pomicanjem ruku oko dviju antena, bez dodirivanja instrumenta?",
+    "answers": [
+      "Teremin",
+      "Theremin"
+    ],
+    "explanation": "Teremin reagira na položaj ruku u elektromagnetskom polju antena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Theremin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2213-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Matematika",
+    "focus": "Fibonaccijev niz broj nakon 34",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Ako niz počinje 0, 1, 1, 2, 3, 5 i nastavlja se zbrajanjem prethodna dva člana, koji broj dolazi neposredno nakon 34?",
+    "answers": [
+      "55",
+      "Pedeset pet"
+    ],
+    "explanation": "Nakon 21 i 34 slijedi 55 jer je 21 + 34 = 55.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fibonacci_sequence"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2214-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Zoologija",
+    "focus": "Nautilus i glavonošci",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Iako nosi spiralnu vanjsku kućicu, kojoj skupini mekušaca pripada nautilus, zajedno s hobotnicama i lignjama?",
+    "answers": [
+      "Glavonošci",
+      "Glavonošcima",
+      "Cephalopoda"
+    ],
+    "explanation": "Nautilus je glavonožac, iako za razliku od hobotnice ima vanjsku ljušturu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nautilus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2215-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Sport",
+    "focus": "Pankration antičke olimpijske igre",
+    "difficulty": 3,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Koje su antičke igre u svoj program 648. pr. Kr. uvele pankration, borilačku disciplinu koja spaja hrvanje i udarce?",
+    "answers": [
+      "Olimpijske igre",
+      "Antičke olimpijske igre"
+    ],
+    "explanation": "Pankration je postao olimpijska disciplina na antičkim Igrama 648. pr. Kr.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pankration"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2216-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Umjetnost",
+    "focus": "Litografija i Alois Senefelder",
+    "difficulty": 4,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je njemački izumitelj krajem 18. stoljeća razvio litografiju, tehniku tiska koja iskorištava odbijanje vode i masnoće?",
+    "answers": [
+      "Alois Senefelder",
+      "Senefelder"
+    ],
+    "explanation": "Alois Senefelder izumio je litografiju 1796. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lithography"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2217-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Biologija",
+    "focus": "Lišaj i fotosintetski partner",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U lišaju gljiva živi u zajednici s organizmom koji fotosintezom stvara hranu. Koja je zelena skupina organizama najčešći takav partner?",
+    "answers": [
+      "Alge",
+      "Alga",
+      "Zelene alge"
+    ],
+    "explanation": "Lišajevi često sadrže zelene alge, a neki cijanobakterije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lichen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2218-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Fizika",
+    "focus": "Möbiusova vrpca rub",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko rubova ima Möbiusova vrpca, nastala kada se papirnata traka prije spajanja krajeva zakrene za pola okreta?",
+    "answers": [
+      "1",
+      "Jedan"
+    ],
+    "explanation": "Möbiusova vrpca ima jednu plohu i samo jedan neprekinuti rub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/M%C3%B6bius_strip"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2219-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Kultura",
+    "focus": "Batik podrijetlo Indonezija",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U kojoj je današnjoj otočnoj državi posebno razvijena tradicija batika, ukrašavanja tkanine voskom prije bojenja?",
+    "answers": [
+      "Indonezija",
+      "Indoneziji"
+    ],
+    "explanation": "Indonezijski batik poznat je po razrađenim uzorcima i uporabi voska.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Batik"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2220-20261105",
+    "createdAt": "2026-11-05T18:39:24+01:00",
+    "updatedAt": "2026-11-05T18:39:24+01:00",
+    "topic": "Tehnologija",
+    "focus": "Geocaching i GPS",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji satelitski navigacijski sustav najčešće pomaže sudionicima geocachinga pronaći skrivene spremnike na otvorenom?",
+    "answers": [
+      "GPS",
+      "Global Positioning System"
+    ],
+    "explanation": "Geocaching se temelji na koordinatama koje se pronalaze GPS uređajem ili telefonom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geocaching"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
