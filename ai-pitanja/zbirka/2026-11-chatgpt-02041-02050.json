@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-2041-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Planetologija",
+    "focus": "Uran os rotacije gotovo 90 stupnjeva",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji se planet zbog nagiba osi od gotovo 90 stupnjeva oko Sunca prividno kotrlja na boku?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranova os rotacije gotovo je položena u ravninu njegove putanje.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2042-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Povijest Amerike",
+    "focus": "Machu Picchu Inke grad 15 stoljeće",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Grad Inka s kamenim terasama i građevinama na oko 2430 metara visine postao je svjetski poznat 1911. Kako se zove?",
+    "answers": [
+      "Machu Picchu",
+      "Maču Pikču"
+    ],
+    "explanation": "Machu Picchu je znameniti grad Inka iz 15. stoljeća u peruanskim Andama.",
+    "sources": [
+      "https://whc.unesco.org/en/list/274"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2043-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Epidemiologija",
+    "focus": "Anopheles ženka prenosi malariju",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Malariju prenose ženke komaraca iz kojeg roda, čije ime počinje slovom A?",
+    "answers": [
+      "Anopheles",
+      "anofeles"
+    ],
+    "explanation": "Malariju šire zaražene ženke komaraca roda Anopheles.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/malaria"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2044-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Seizmologija",
+    "focus": "subdukcija nastanak tsunamija",
+    "difficulty": 4,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Kad se na dodiru tektonskih ploča morsko dno naglo podigne i pomakne golemu masu vode, koja opasna pojava nastaje?",
+    "answers": [
+      "tsunami",
+      "cunami"
+    ],
+    "explanation": "Naglo okomito pomicanje morskog dna može pokrenuti tsunami.",
+    "sources": [
+      "https://www.noaa.gov/jetstream/tsunamis/tsunami-generation-earthquakes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2045-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Moda",
+    "focus": "Gideon Sundback moderni patent patent zatvarač",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Čiji je patentni model iz 1915. unaprijedio metalne zupce zatvarača koji danas nalazimo na jaknama i hlačama?",
+    "answers": [
+      "Gideon Sundback",
+      "Sundback"
+    ],
+    "explanation": "Gideon Sundback razvio je važnu inačicu suvremenog patentnog zatvarača.",
+    "sources": [
+      "https://www.si.edu/object/sundbacks-modern-slide-zipper-patent-model-1915%3Anmah_860486"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2046-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Geofizika",
+    "focus": "vatreni prsten ocean Pacifik",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Oko kojeg se oceana proteže takozvani Vatreni prsten, pojas čestih potresa i vulkana?",
+    "answers": [
+      "Tihi ocean",
+      "Pacifik",
+      "Pacific"
+    ],
+    "explanation": "Vatreni prsten povezan je s granicama tektonskih ploča oko Tihog oceana.",
+    "sources": [
+      "https://www.usgs.gov/media/images/ring-fire"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2047-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Hokusai Veliki val Fuji u pozadini",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji se japanski umjetnik potpisuje pod drvorezom Veliki val kod Kanagawe, na kojem se u pozadini vidi Fuji?",
+    "answers": [
+      "Katsushika Hokusai",
+      "Hokusai",
+      "Kacušika Hokusai"
+    ],
+    "explanation": "Hokusaijev Veliki val nastao je oko 1830.–1832. kao dio serije pogleda na Fuji.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/56353"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2048-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Astronautika",
+    "focus": "Voyager 1 međuzvjezdani prostor 2012",
+    "difficulty": 4,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koja je NASA-ina letjelica lansirana 1977. prva ušla u međuzvjezdani prostor 2012. godine?",
+    "answers": [
+      "Voyager 1",
+      "Vojadžer 1"
+    ],
+    "explanation": "Voyager 1 prešao je heliopauzu u kolovozu 2012. godine.",
+    "sources": [
+      "https://science.nasa.gov/mission/voyager/voyager-1/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2049-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Ekologija",
+    "focus": "koraljni grebeni 25 posto morskih vrsta",
+    "difficulty": 4,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koraljni grebeni pokrivaju manje od 1 % oceanskog dna, a podupiru približno koliki udio svih morskih organizama: 5 %, 25 % ili 75 %?",
+    "answers": [
+      "25 %",
+      "25 posto",
+      "četvrtinu",
+      "25"
+    ],
+    "explanation": "Prema NOAA-i koraljni grebeni podupiru oko četvrtine morskih organizama.",
+    "sources": [
+      "https://www.fisheries.noaa.gov/corals"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2050-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Povijest umjetnosti",
+    "focus": "Hokusai prusko plava boja Veliki val",
+    "difficulty": 5,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji je plavi pigment, uvezen u Japan, Hokusai koristio za snažnu boju svojeg Velikog vala?",
+    "answers": [
+      "prusko plava",
+      "pruska plava",
+      "Prussian blue"
+    ],
+    "explanation": "Za Veliki val upotrijebljen je prusko plavi pigment koji je tada bio novost u japanskom tisku.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/45434"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
