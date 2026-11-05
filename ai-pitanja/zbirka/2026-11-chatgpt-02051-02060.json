@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-2051-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Arhitektura",
+    "focus": "Generalife vrtovi uz Alhambru Granada",
+    "difficulty": 4,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se zove povijesni kompleks vrtova i nekadašnje ljetne rezidencije emira, smješten istočno od Alhambre u Granadi?",
+    "answers": [
+      "Generalife"
+    ],
+    "explanation": "Generalife je nekadašnja ladanjska rezidencija s vrtovima uz Alhambru.",
+    "sources": [
+      "https://whc.unesco.org/en/list/314"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2052-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Biologija",
+    "focus": "bioluminiscencija stvaranje svjetla u organizmu",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva sposobnost krijesnica i mnogih dubokomorskih životinja da kemijskim reakcijama same proizvode svjetlost?",
+    "answers": [
+      "bioluminiscencija",
+      "bioluminescencija"
+    ],
+    "explanation": "Bioluminiscencija je emisija svjetlosti nastala kemijskom reakcijom u živom organizmu.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/biolum.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2053-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Medicina",
+    "focus": "bjesnoća psi 99 posto prijenosa",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koja domaća životinja, prema WHO-u, uzrokuje oko 99 % smrtnih slučajeva ljudske bjesnoće prijenosom virusa?",
+    "answers": [
+      "pas",
+      "psi"
+    ],
+    "explanation": "Psi su glavni izvor prijenosa bjesnoće na ljude u svijetu.",
+    "sources": [
+      "https://www.who.int/data/gho/data/themes/topics/rabies"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2054-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Glazbena povijest",
+    "focus": "Edison fonograf limena folija 1877",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koji je uređaj Thomas Edison izumio 1877. da bi zvuk prvi put mogao ne samo zabilježiti nego i reproducirati?",
+    "answers": [
+      "fonograf",
+      "phonograph"
+    ],
+    "explanation": "Edisonov fonograf zapisivao je vibracije zvuka u foliju na valjku i mogao ih reproducirati.",
+    "sources": [
+      "https://americanhistory.si.edu/explore/exhibitions/americas-listening/online/edisons-talking-machine"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2055-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Povijest Egipta",
+    "focus": "Velika sfinga Giza faraon Kefren",
+    "difficulty": 4,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "S kojim se faraonom, graditeljem druge velike piramide u Gizi, najčešće povezuje Velika sfinga?",
+    "answers": [
+      "Kefren",
+      "Khafre",
+      "Hafra"
+    ],
+    "explanation": "Velika sfinga u Gizi tradicionalno se povezuje s faraonom Kefrenom.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/544475"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2056-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Planetarna geologija",
+    "focus": "Olympus Mons najveći vulkan Mars",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se planetu uzdiže Olympus Mons, najveći poznati vulkan Sunčeva sustava?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Olympus Mons golemi je štitasti vulkan na Marsu.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/olympus-mons/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2057-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Petrologija",
+    "focus": "bazalt većina oceanskog dna",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koja tamna vulkanska stijena, bogata željezom i magnezijem, gradi najveći dio oceanskog dna?",
+    "answers": [
+      "bazalt",
+      "basalt"
+    ],
+    "explanation": "Bazalt je česta vulkanska stijena i temelj velikog dijela oceanske kore.",
+    "sources": [
+      "https://volcanoes.usgs.gov/volcanic_ash/glossary/basalt.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2058-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Povijest medicine",
+    "focus": "Fleming Nobel penicilin 1945",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Za otkriće kojeg je antibiotika Alexander Fleming 1945. podijelio Nobelovu nagradu za medicinu?",
+    "answers": [
+      "penicilin",
+      "penicillin"
+    ],
+    "explanation": "Fleming je nagrađen za otkriće penicilina i njegov učinak na liječenje infekcija.",
+    "sources": [
+      "https://www.nobelprize.org/prizes/medicine/1945/fleming/lecture/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2059-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Meteorologija",
+    "focus": "Beaufortova ljestvica jačine vjetra",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koja ljestvica od 0 do 12, nazvana po britanskom admiralu, opisuje jačinu vjetra prema njegovim učincima?",
+    "answers": [
+      "Beaufortova ljestvica",
+      "Beaufort",
+      "Boforova ljestvica"
+    ],
+    "explanation": "Francis Beaufort razvio je ljestvicu vjetra koja se prvotno temeljila na učinku na jedra.",
+    "sources": [
+      "https://noaa.gov/node/10167"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2060-20261105",
+    "createdAt": "2026-11-05T07:41:29+01:00",
+    "updatedAt": "2026-11-05T07:41:29+01:00",
+    "topic": "Kazalište",
+    "focus": "Opera dei Pupi sicilijanske lutke",
+    "difficulty": 5,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Kako se zove tradicionalno sicilijansko lutkarsko kazalište s pričama o srednjovjekovnim vitezovima, uvršteno na UNESCO-ov popis?",
+    "answers": [
+      "Opera dei Pupi",
+      "opera dei pupi"
+    ],
+    "explanation": "Opera dei Pupi je sicilijansko lutkarsko kazalište nastalo početkom 19. stoljeća.",
+    "sources": [
+      "https://ich.unesco.org/es/RL/el-teatro-de-marionetas-siciliano-opera-dei-pupi-00011"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
