@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-2354-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Videoigre",
+    "focus": "Pac-Man četiri duha",
+    "difficulty": 2,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "U kojoj arkadnoj igri iz 1980. igrač skuplja točkice u labirintu dok ga progone četiri šarena duha?",
+    "answers": [
+      "Pac-Man",
+      "Pac Man"
+    ],
+    "explanation": "Namcova igra Pac-Man objavljena je 1980., a duhovi se zovu Blinky, Pinky, Inky i Clyde.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pac-Man"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2355-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Književnost",
+    "focus": "Tolkien Sauron Jedinstveni prsten",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem Tolkienovu djelu Sauron nastoji povratiti Jedinstveni prsten, a Frodo ga mora uništiti?",
+    "answers": [
+      "Gospodar prstenova",
+      "The Lord of the Rings"
+    ],
+    "explanation": "Gospodar prstenova Tolkienov je roman o putovanju hobita i uništenju Jedinstvenog prstena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2356-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Zemljopis",
+    "focus": "Machu Picchu civilizacija Inka",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Koja je južnoamerička civilizacija sagradila kameni grad Machu Picchu u današnjem Peruu?",
+    "answers": [
+      "Inke",
+      "Inka",
+      "civilizacija Inka"
+    ],
+    "explanation": "Machu Picchu izgrađen je u doba Carstva Inka u Andama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Machu_Picchu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2357-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Životinje",
+    "focus": "flamingo ružičasta boja karotenoidi",
+    "difficulty": 2,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Koje ptice svoju prepoznatljivu ružičastu boju velikim dijelom duguju pigmentima iz hrane, poput račića i algi?",
+    "answers": [
+      "Flamingosi",
+      "Flamingo",
+      "Plamenci",
+      "Plamenac"
+    ],
+    "explanation": "Karotenoidni pigmenti iz prehrane utječu na ružičasto perje plamenaca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Flamingo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2358-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Film",
+    "focus": "Povratak u budućnost DeLorean vremeplov",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Automobil DeLorean pretvoren u vremeplov postao je zaštitni znak kojeg filmskog serijala s Martyjem McFlyjem?",
+    "answers": [
+      "Povratak u budućnost",
+      "Back to the Future"
+    ],
+    "explanation": "DeLorean je vremeplov u filmskom serijalu Povratak u budućnost.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_the_Future"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2359-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Glazba",
+    "focus": "Coldplay album Parachutes",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "S kojeg je debitantskog albuma britanskog sastava Coldplay pjesma 'Yellow' iz 2000. godine?",
+    "answers": [
+      "Parachutes"
+    ],
+    "explanation": "Parachutes je debitantski album Coldplaya iz 2000., na kojem je i Yellow.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Coldplay"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2360-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza kisik",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji se plin oslobađa pri fotosintezi kada biljke koriste svjetlost za stvaranje organskih tvari?",
+    "answers": [
+      "Kisik",
+      "O2"
+    ],
+    "explanation": "U fotosintezi koja oslobađa kisik molekule vode izvor su oslobođenog kisika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2361-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Sport",
+    "focus": "šah rokada kralj top",
+    "difficulty": 2,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "Kako se u šahu zove poseban potez u kojem se u istom potezu pomiču kralj i top?",
+    "answers": [
+      "Rokada"
+    ],
+    "explanation": "Rokada je jedini standardni šahovski potez u kojem se pomiču dvije vlastite figure.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chess"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2362-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO danski izraz leg godt",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv kojeg poznatog proizvođača kockica potječe od danskog izraza 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "Naziv LEGO nastao je skraćivanjem danskog izraza leg godt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/LEGO"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2363-20261106",
+    "createdAt": "2026-11-06T08:45:54+01:00",
+    "updatedAt": "2026-11-06T08:45:54+01:00",
+    "topic": "Medicina",
+    "focus": "penicilin gljivica Penicillium",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Iz koje je skupine mikroorganizama izvorno dobiven penicilin, antibiotik povezan s otkrićem Alexandera Fleminga?",
+    "answers": [
+      "Plijesni",
+      "Plijesan",
+      "Gljivice",
+      "Gljive"
+    ],
+    "explanation": "Penicilin je izvorno izoliran iz plijesni roda Penicillium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Penicillin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
