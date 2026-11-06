@@ -1,0 +1,241 @@
+[
+  {
+    "id": "chatgpt10000-2324-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Tehnologija",
+    "focus": "Prvi UPC sken Wrigley Juicy Fruit 1974",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji je proizvod 1974. u američkom supermarketu prvi prošao kroz blagajnu uz očitavanje UPC barkoda?",
+    "answers": [
+      "Žvakaća guma",
+      "Žvakaće gume",
+      "Wrigley's Juicy Fruit",
+      "Juicy Fruit"
+    ],
+    "explanation": "Bila je to kutija žvakaćih guma Wrigley's Juicy Fruit u trgovini u Troyu u Ohiju.",
+    "sources": [
+      "https://www.history.com/this-day-in-history/June-26/barcode-scanner-invention-first-use"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2325-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace Bernoullijevi brojevi analitički stroj",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je matematičarka, kći pjesnika Lorda Byrona, 1843. opisala algoritam za Babbageov analitički stroj?",
+    "answers": [
+      "Ada Lovelace",
+      "Ada Byron",
+      "Augusta Ada Lovelace"
+    ],
+    "explanation": "Ada Lovelace često se naziva prvom računalnom programerkom zbog algoritma za analitički stroj.",
+    "sources": [
+      "https://www.nationalgeographic.com/history/history-magazine/article/this-countess-of-computing-wrote-the-first-computer-program"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2326-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Životinje",
+    "focus": "Kljunaš sisavac koji polaže jaja",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima kljun nalik pačjem i, za razliku od većine sisavaca, polaže jaja?",
+    "answers": [
+      "Čudnovati kljunaš",
+      "Kljunaš",
+      "Platipus"
+    ],
+    "explanation": "Kljunaš je jednootvorni sisavac koji polaže jaja, kao i ješci.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/platypus.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2327-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa Jupiterov mjesec podledeni ocean",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Pod ledenom korom kojeg Jupiterova mjeseca znanstvenici pretpostavljaju ocean s više vode nego u svim Zemljinim oceanima zajedno?",
+    "answers": [
+      "Europa",
+      "Europe"
+    ],
+    "explanation": "NASA-ini podaci upućuju na velik slani ocean ispod Europine ledene kore.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2328-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Sport",
+    "focus": "Ptičje gnijezdo Olimpijske igre Peking 2008",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U kojem je gradu stadion poznat kao Ptičje gnijezdo bio središte Ljetnih olimpijskih igara 2008.?",
+    "answers": [
+      "Peking",
+      "Beijing",
+      "Pejking"
+    ],
+    "explanation": "Nacionalni stadion u Pekingu ugostio je ceremonije i atletiku na Igrama 2008.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/beijing-builds-on-stadium-success-by-adding-to-2008-s-architectural-legacy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2329-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Glazba",
+    "focus": "Papageno opera Čarobna frula",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojoj Mozartovoj operi nastupa Papageno, ptičar koji sanja o ljubavi i družici Papageni?",
+    "answers": [
+      "Čarobna frula",
+      "Die Zauberflöte",
+      "The Magic Flute"
+    ],
+    "explanation": "Papageno je jedan od glavnih likova Mozartove opere Čarobna frula iz 1791.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Magic_Flute"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2330-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Književnost",
+    "focus": "Miss Marple selo St Mary Mead",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako se zove izmišljeno englesko selo u kojem živi detektivka gospođica Marple iz romana Agathe Christie?",
+    "answers": [
+      "St. Mary Mead",
+      "St Mary Mead",
+      "Saint Mary Mead"
+    ],
+    "explanation": "St. Mary Mead je izmišljeno selo povezano s likom Jane Marple.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/St_Mary_Mead"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2331-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Povijest tehnologije",
+    "focus": "George Laurer dizajn UPC koda",
+    "difficulty": 3,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koji je IBM-ov inženjer oblikovao pravokutni UPC barkod koji je prihvaćen kao standard 1973. godine?",
+    "answers": [
+      "George Laurer",
+      "George J. Laurer",
+      "Laurer"
+    ],
+    "explanation": "George Laurer razvio je poznati pravokutni UPC simbol, naslanjajući se na raniji rad Woodlanda i Silvera.",
+    "sources": [
+      "https://www.history.com/articles/upc-barcode-invention-ibm-laurer"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2332-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Svemirska tehnologija",
+    "focus": "Europa Clipper lansiranje 2024",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine NASA lansirala letjelicu Europa Clipper radi istraživanja Jupiterova ledenog mjeseca?",
+    "answers": [
+      "2024",
+      "2024."
+    ],
+    "explanation": "Europa Clipper lansirana je 14. listopada 2024. radi istraživanja uvjeta pogodnih za život.",
+    "sources": [
+      "https://science.nasa.gov/blogs/europa-clipper/2024/10/14/nasas-europa-clipper-mission-investigating-an-ocean-world-2/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2333-20261106",
+    "createdAt": "2026-11-06T05:44:25+01:00",
+    "updatedAt": "2026-11-06T05:44:25+01:00",
+    "topic": "Povijest",
+    "focus": "Ada Lovelace otac Lord Byron",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je engleski romantičarski pjesnik bio otac matematičarke Ade Lovelace?",
+    "answers": [
+      "Lord Byron",
+      "George Gordon Byron",
+      "Byron"
+    ],
+    "explanation": "Ada Lovelace bila je kći pjesnika Georgea Gordona Byrona.",
+    "sources": [
+      "https://www.nationalgeographic.com/history/history-magazine/article/this-countess-of-computing-wrote-the-first-computer-program"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
