@@ -1,0 +1,237 @@
+[
+  {
+    "id": "chatgpt10000-2284-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Književnost",
+    "focus": "Poirot belgijsko podrijetlo",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Hercule Poirot u romanima Agathe Christie često rješava zločine u Engleskoj, ali iz koje zemlje potječe taj detektiv?",
+    "answers": [
+      "Belgija",
+      "Belgije"
+    ],
+    "explanation": "Poirot je belgijski detektiv kojega je Christie osmislila tijekom Prvog svjetskog rata.",
+    "sources": [
+      "https://www.agathachristie.com/en/characters/hercule-poirot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2285-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Sport",
+    "focus": "Phelps ukupno olimpijskih medalja",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Michael Phelps osvojio je 23 olimpijska zlata, ali koliko je ukupno olimpijskih medalja osvojio u karijeri?",
+    "answers": [
+      "28",
+      "dvadeset osam"
+    ],
+    "explanation": "Uz 23 zlata osvojio je tri srebra i dvije bronce.",
+    "sources": [
+      "https://ishof.org/honoree/michael-phelps/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2286-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Film",
+    "focus": "Cabaret osam Oscara 1973",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na dodjeli Oscara 1973. 'Kum' je proglašen najboljim filmom, no koji je mjuzikl te večeri osvojio čak osam Oscara?",
+    "answers": [
+      "Cabaret",
+      "Kabaret"
+    ],
+    "explanation": "Mjuzikl Cabaret osvojio je osam nagrada, uključujući Oscara za režiju Boba Fossea.",
+    "sources": [
+      "https://www.oscars.org/oscars/ceremonies/embed/1973"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2287-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Van Gogh Cypresses 1889",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar 1889. naslikao djelo 'Cypresses', prikazujući visoka tamna stabla tijekom boravka u Saint-Rémyju?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh",
+      "Vinsent van Gog"
+    ],
+    "explanation": "Van Goghova slika 'Cypresses' iz 1889. danas je u zbirci Metropolitana.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/437980"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2288-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Medicina",
+    "focus": "Anopheles komarac prijenos malarije",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Ženke kojeg roda komaraca prenose parazite koji uzrokuju malariju?",
+    "answers": [
+      "Anopheles",
+      "Anofeles"
+    ],
+    "explanation": "Malariju uzrokuju paraziti Plasmodium koje prenose zaražene ženke komaraca roda Anopheles.",
+    "sources": [
+      "https://www.who.int/health-topics/malaria"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2289-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera rotacija 243 zemaljska dana",
+    "difficulty": 3,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koji se planet oko svoje osi okrene za približno 243 zemaljska dana, iako mu godina traje samo oko 225 dana?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venerina rotacija sporija je od obilaska oko Sunca.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2290-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Povijest filma",
+    "focus": "Brando Oscar Kum 1973",
+    "difficulty": 2,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji je glumac osvojio Oscara za glavnu mušku ulogu u filmu 'Kum' na dodjeli 1973. godine?",
+    "answers": [
+      "Marlon Brando",
+      "Brando"
+    ],
+    "explanation": "Brando je nagrađen za ulogu Vita Corleonea u filmu 'Kum'.",
+    "sources": [
+      "https://www.oscars.org/oscars/ceremonies/embed/1973"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2291-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Književni likovi",
+    "focus": "Poirot prvi roman Styles 1920",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "U kojem se romanu iz 1920. godine prvi put pojavljuje detektiv Hercule Poirot?",
+    "answers": [
+      "The Mysterious Affair at Styles",
+      "Tajanstveni događaj u Stylesu",
+      "Tajanstvena afera u Stylesu"
+    ],
+    "explanation": "Agatha Christie predstavila je Poirota u svom prvom objavljenom romanu.",
+    "sources": [
+      "https://www.agathachristie.com/en/characters/hercule-poirot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2292-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Sport",
+    "focus": "Phelps osam zlata Peking 2008",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je plivač na Olimpijskim igrama u Pekingu 2008. osvojio osam zlatnih medalja?",
+    "answers": [
+      "Michael Phelps",
+      "Majkl Felps",
+      "Phelps"
+    ],
+    "explanation": "Phelps je u Pekingu osvojio osam zlata i srušio rekord Marka Spitza.",
+    "sources": [
+      "https://ishof.org/honoree/michael-phelps/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2293-20261106",
+    "createdAt": "2026-11-06T01:44:00+01:00",
+    "updatedAt": "2026-11-06T01:44:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "Van Gogh Cypresses muzej Met",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U kojem se njujorškom muzeju danas nalazi Van Goghova slika 'Cypresses' iz 1889. godine?",
+    "answers": [
+      "Metropolitan Museum of Art",
+      "Metropolitan",
+      "The Met",
+      "Metropolitanski muzej umjetnosti"
+    ],
+    "explanation": "Slika 'Cypresses' dio je zbirke Metropolitan Museum of Art u New Yorku.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/437980"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
