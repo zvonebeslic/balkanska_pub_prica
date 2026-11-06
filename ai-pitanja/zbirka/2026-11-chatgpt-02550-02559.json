@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-2550-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie Ziggy Stardust",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je britanski glazbenik stvorio scenski lik Ziggyja Stardusta?",
+    "answers": [
+      "David Bowie",
+      "Bowie"
+    ],
+    "explanation": "Ziggy Stardust bio je Bowiejev glazbeni alter ego.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_Bowie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2551-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Sport",
+    "focus": "Michael Schumacher sedam naslova F1",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je njemački vozač Formule 1 osvojio sedam naslova svjetskog prvaka, od kojih pet zaredom s Ferrarijem?",
+    "answers": [
+      "Michael Schumacher",
+      "Schumacher"
+    ],
+    "explanation": "Schumacher je osvojio naslove 1994., 1995. i od 2000. do 2004.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Michael_Schumacher"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2552-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Film",
+    "focus": "Jurassic Park Steven Spielberg",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je redatelj snimio film Jurski park iz 1993. godine?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Spielberg je režirao filmsku adaptaciju romana Michaela Crichtona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2553-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Književnost",
+    "focus": "Victor Hugo Jadnici",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman Jadnici, u kojem pratimo Jeana Valjeana?",
+    "answers": [
+      "Victor Hugo",
+      "Hugo"
+    ],
+    "explanation": "Victor Hugo objavio je Jadnike 1862. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Les_Misérables"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2554-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lisabon rijeka Tejo",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na ušću koje rijeke u Atlantski ocean leži portugalski glavni grad Lisabon?",
+    "answers": [
+      "Tejo",
+      "Tagus",
+      "Tajo"
+    ],
+    "explanation": "Lisabon leži uz estuarij rijeke Tejo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tagus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2555-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Životinje",
+    "focus": "flamingo ružičasta boja karotenoidi",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja ptica prepoznatljive ružičaste boje dobiva pigment iz hrane bogate karotenoidima?",
+    "answers": [
+      "Flamingo",
+      "Plamenac"
+    ],
+    "explanation": "Plamenci ružičastu boju dobivaju iz pigmenata u prehrani.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Flamingo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2556-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Kemija",
+    "focus": "helij He baloni",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se plemeniti plin oznake He koristi za punjenje balona koji lebde?",
+    "answers": [
+      "Helij"
+    ],
+    "explanation": "Helij je lakši od zraka i nezapaljiv.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Helium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2557-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Medicina",
+    "focus": "kardiologija srce",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove medicinska grana koja se bavi bolestima srca i krvožilnog sustava?",
+    "answers": [
+      "Kardiologija"
+    ],
+    "explanation": "Kardiologija proučava i liječi bolesti srca i krvnih žila.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cardiology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2558-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod Japan Denso Wave",
+    "difficulty": 3,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koja vrsta dvodimenzionalnog koda, izvorno razvijena za praćenje dijelova u automobilskoj industriji, danas se očitava mobitelom?",
+    "answers": [
+      "QR kod",
+      "QR code"
+    ],
+    "explanation": "QR kod razvila je tvrtka Denso Wave u Japanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2559-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Gastronomija",
+    "focus": "humus slanutak",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Od koje se mahunarke priprema bliskoistočni namaz humus, uz tahini i limun?",
+    "answers": [
+      "Slanutak",
+      "Leblebija"
+    ],
+    "explanation": "Osnova humusa je kuhani i usitnjeni slanutak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
