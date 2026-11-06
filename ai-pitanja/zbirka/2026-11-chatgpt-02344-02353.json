@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-2344-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Glazba",
+    "focus": "Queen album A Night at the Opera",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je britanski rock sastav objavio album 'A Night at the Opera' s pjesmom 'Bohemian Rhapsody'?",
+    "answers": [
+      "Queen"
+    ],
+    "explanation": "Album iz 1975. uključuje pjesmu Bohemian Rhapsody.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/A_Night_at_the_Opera_(Queen_album)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2345-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Sport",
+    "focus": "tenis Wimbledon podloga",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kakvoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava"
+    ],
+    "explanation": "Wimbledon je jedini Grand Slam turnir koji se igra na travi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2346-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Film",
+    "focus": "Matrix lik Neo glumac",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji glumac u filmu 'Matrix' iz 1999. tumači lik Nea?",
+    "answers": [
+      "Keanu Reeves"
+    ],
+    "explanation": "Keanu Reeves igra Thomasa Andersona, poznatijeg kao Neo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2347-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ pisac",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski književnik i pilot napisao 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "explanation": "Saint-Exupéry objavio je Malog princa 1943.",
+    "sources": [
+      "https://www.britannica.com/biography/Antoine-de-Saint-Exupery"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2348-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bosporski tjesnac Istanbul",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koji tjesnac prolazi kroz Istanbul i razdvaja europski od azijskog dijela grada?",
+    "answers": [
+      "Bospor"
+    ],
+    "explanation": "Bospor povezuje Crno i Mramorno more.",
+    "sources": [
+      "https://www.britannica.com/place/Bosporus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2349-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Kemija",
+    "focus": "natrij simbol Na",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element označavamo simbolom Na, a njegov klorid svakodnevno koristimo kao kuhinjsku sol?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": "Natrijev klorid kemijski je naziv kuhinjske soli.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/11/sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2350-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Životinje",
+    "focus": "koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski tobolčar najveći dio prehrane temelji na listovima eukaliptusa?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koale se hrane uglavnom lišćem eukaliptusa.",
+    "sources": [
+      "https://www.britannica.com/animal/koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2351-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Tehnologija",
+    "focus": "WWW Tim Berners-Lee",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je britanski informatičar u CERN-u osmislio World Wide Web?",
+    "answers": [
+      "Tim Berners-Lee"
+    ],
+    "explanation": "Tim Berners-Lee predložio je World Wide Web 1989.",
+    "sources": [
+      "https://home.cern/science/computing/birth-web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2352-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Povijest",
+    "focus": "Berlinski zid 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, simbol podjele Njemačke tijekom Hladnog rata?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://www.britannica.com/topic/Berlin-Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2353-20261106",
+    "createdAt": "2026-11-06T07:42:21+01:00",
+    "updatedAt": "2026-11-06T07:42:21+01:00",
+    "topic": "Gastronomija",
+    "focus": "guacamole avokado",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Od kojeg se voća priprema meksički umak guacamole, često uz dodatak limete i luka?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Osnovni sastojak guacamolea zgnječeni je avokado.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
