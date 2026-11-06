@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-2410-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Glazba",
+    "focus": "Adele album 21",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je britanska pjevačica objavila albume 19, 21, 25 i 30?",
+    "answers": [
+      "Adele"
+    ],
+    "explanation": "Naslovi njezinih studijskih albuma označavaju dob u određenom razdoblju života.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adele"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2411-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps olimpijska odličja",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je američki plivač osvojio rekordne 23 olimpijske zlatne medalje?",
+    "answers": [
+      "Michael Phelps"
+    ],
+    "explanation": "Phelps je najuspješniji olimpijac po broju zlatnih medalja.",
+    "sources": [
+      "https://olympics.com/en/athletes/michael-phelps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2412-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Film",
+    "focus": "Forrest Gump Tom Hanks",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji glumac sjedi na klupi i pripovijeda svoj život u filmu Forrest Gump iz 1994.?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Tom Hanks glumi naslovnog junaka u filmu Roberta Zemeckisa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2413-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Književnost",
+    "focus": "Sherlock Holmes Watson",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se preziva liječnik koji je prijatelj i česti pripovjedač pustolovina Sherlocka Holmesa?",
+    "answers": [
+      "Watson"
+    ],
+    "explanation": "Doktor John Watson Holmesov je prijatelj i suradnik.",
+    "sources": [
+      "https://www.britannica.com/topic/Dr-Watson"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2414-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Zemljopis",
+    "focus": "Madagaskar Indijski ocean",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se oceanu nalazi Madagaskar, veliki otok uz istočnu obalu Afrike?",
+    "answers": [
+      "Indijski ocean"
+    ],
+    "explanation": "Madagaskar leži u Indijskom oceanu, istočno od Mozambika.",
+    "sources": [
+      "https://www.britannica.com/place/Madagascar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2415-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Kemija",
+    "focus": "bakar simbol Cu",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal, često korišten za električne vodiče, u periodnom sustavu nosi oznaku Cu?",
+    "answers": [
+      "bakar"
+    ],
+    "explanation": "Cu dolazi od latinskog naziva cuprum.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/29/copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2416-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Biologija",
+    "focus": "kaktus bodlje listovi",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koje su biljke poznate po mesnatim stabljikama koje skladište vodu, a mnogima su listovi preobraženi u bodlje?",
+    "answers": [
+      "kaktusi"
+    ],
+    "explanation": "Brojni kaktusi imaju prilagodbe koje smanjuju gubitak vode.",
+    "sources": [
+      "https://www.britannica.com/plant/cactus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2417-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine osmanska vojska Mehmeda II. osvojila Carigrad?",
+    "answers": [
+      "1453"
+    ],
+    "explanation": "Pad Carigrada 1453. označio je kraj Bizantskog Carstva.",
+    "sources": [
+      "https://www.britannica.com/event/Fall-of-Constantinople-1453"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2418-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Tehnologija",
+    "focus": "HTML kratica",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se kratica od četiri slova koristi za jezik kojim se označava struktura internetskih stranica?",
+    "answers": [
+      "HTML"
+    ],
+    "explanation": "HTML znači HyperText Markup Language.",
+    "sources": [
+      "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2419-20261106",
+    "createdAt": "2026-11-06T14:40:30+01:00",
+    "updatedAt": "2026-11-06T14:40:30+01:00",
+    "topic": "Gastronomija",
+    "focus": "mozzarella talijanski sir",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se talijanski sir često koristi na pizzi Margheriti, a tradicionalno se može proizvoditi od bivoljeg mlijeka?",
+    "answers": [
+      "mozzarella"
+    ],
+    "explanation": "Mozzarella di bufala izrađuje se od mlijeka vodenih bivolica.",
+    "sources": [
+      "https://www.britannica.com/topic/mozzarella"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
