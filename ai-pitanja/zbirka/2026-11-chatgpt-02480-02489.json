@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-2480-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Glazba",
+    "focus": "Queen Bohemian Rhapsody šestominutna pjesma",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je britanski rock sastav 1975. objavio pjesmu Bohemian Rhapsody, poznatu po izmjeni balade, opere i rocka?",
+    "answers": [
+      "Queen",
+      "Kvin"
+    ],
+    "explanation": "Bohemian Rhapsody objavljena je 1975. na albumu A Night at the Opera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2481-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Sport",
+    "focus": "rukomet sedmerac udaljenost",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "S koliko se metara u rukometu izvodi kazneni udarac poznat kao sedmerac?",
+    "answers": [
+      "7",
+      "sedam",
+      "7 metara"
+    ],
+    "explanation": "Kazneni udarac izvodi se s linije udaljene sedam metara od gola.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Handball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2482-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Film",
+    "focus": "The Truman Show Jim Carrey Truman Burbank",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem filmu Jim Carrey glumi Trumana Burbanka, čovjeka koji ne zna da je njegov život televizijski program?",
+    "answers": [
+      "Trumanov show",
+      "The Truman Show",
+      "Truman Show"
+    ],
+    "explanation": "Film Petera Weira iz 1998. prati čovjeka koji živi u umjetno stvorenom televizijskom svijetu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Truman_Show"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2483-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Književnost",
+    "focus": "Anne Shirley Anne of Green Gables autorica",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je kanadska književnica stvorila lik maštovite Anne Shirley iz romana Anne of Green Gables?",
+    "answers": [
+      "Lucy Maud Montgomery",
+      "L. M. Montgomery",
+      "Lucy Montgomery"
+    ],
+    "explanation": "Lucy Maud Montgomery objavila je roman Anne of Green Gables 1908. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anne_of_Green_Gables"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2484-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Zemljopis",
+    "focus": "Gibraltarski tjesnac Atlantik Sredozemlje",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji morski prolaz između Europe i Afrike povezuje Atlantski ocean sa Sredozemnim morem?",
+    "answers": [
+      "Gibraltarski tjesnac",
+      "Gibraltar",
+      "Gibraltarski prolaz"
+    ],
+    "explanation": "Gibraltarski tjesnac odvaja Pirenejski poluotok od sjeverne Afrike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2485-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Životinje",
+    "focus": "merkat stražar kolonija",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji mali afrički sisavac iz porodice mungosa često stoji uspravno na straži dok ostatak skupine traži hranu?",
+    "answers": [
+      "Merkat",
+      "Meerkat",
+      "Surikata"
+    ],
+    "explanation": "Merkati žive u društvenim skupinama i koriste stražare za upozoravanje na opasnost.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Meerkat"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2486-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Kemija",
+    "focus": "neon plemeniti plin svjetleće reklame",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji plemeniti plin kemijskog simbola Ne daje karakterističnu crvenonarančastu svjetlost u reklamnim cijevima?",
+    "answers": [
+      "Neon"
+    ],
+    "explanation": "Električno pražnjenje kroz neonski plin stvara crvenonarančasti sjaj.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2487-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Medicina",
+    "focus": "neurologija živčani sustav",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove medicinska specijalnost koja se bavi bolestima mozga, leđne moždine i živaca?",
+    "answers": [
+      "Neurologija"
+    ],
+    "explanation": "Neurologija proučava i liječi poremećaje živčanog sustava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neurology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2488-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO danske kockice",
+    "difficulty": 1,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Koja danska marka igračaka poznata po plastičnim kockicama nosi ime nastalo od izraza leg godt?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "Naziv LEGO potječe od danskih riječi leg godt, što znači igraj se dobro.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/LEGO"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2489-20261106",
+    "createdAt": "2026-11-06T19:36:29+01:00",
+    "updatedAt": "2026-11-06T19:36:29+01:00",
+    "topic": "Gastronomija",
+    "focus": "pesto genovese bosiljak pinjoli",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Bosiljak, pinjoli, češnjak, tvrdi sir i maslinovo ulje sastojci su kojeg zelenog umaka iz Ligurije?",
+    "answers": [
+      "Pesto",
+      "Pesto genovese"
+    ],
+    "explanation": "Pesto alla genovese tradicionalni je umak iz Genove, obično pripremljen od bosiljka i navedenih sastojaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
