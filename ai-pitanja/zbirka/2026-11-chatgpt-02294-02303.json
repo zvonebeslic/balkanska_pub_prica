@@ -1,0 +1,243 @@
+[
+  {
+    "id": "chatgpt10000-2294-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Astronomija",
+    "focus": "Uran otkriven teleskopom 1781",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koji je planet William Herschel otkrio 1781. godine, čime je postao prvi planet otkriven pomoću teleskopa?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "William Herschel 1781. otkrio je Uran, isprva misleći da promatra komet ili zvijezdu.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2295-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Sport",
+    "focus": "Kipchoge dva uzastopna maratonska zlata",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je kenijski maratonac osvojio olimpijska zlata u maratonu u Riju 2016. i Tokiju 2020.?",
+    "answers": [
+      "Eliud Kipchoge",
+      "Kipchoge"
+    ],
+    "explanation": "Eliud Kipchoge osvojio je dva uzastopna olimpijska maratona.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/olympic-champion-eliud-kipchoge-ready-to-give-back-to-the-next-generation-as-dakar-2026-global-ambassador"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2296-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Medicina",
+    "focus": "gušterača proizvodi inzulin",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji organ proizvodi hormon inzulin, važan za regulaciju šećera u krvi?",
+    "answers": [
+      "Gušterača",
+      "Pankreas",
+      "Gušteraca"
+    ],
+    "explanation": "Inzulin nastaje u gušterači, a njegov nedostatak ili neučinkovitost povezan je s dijabetesom.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/diabetes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2297-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Van Gogh Pšenično polje s čempresima 1889",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je 1889. naslikao 'Pšenično polje s čempresima', čija se verzija čuva u njujorškom Metropolitanskom muzeju?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh",
+      "Vincent Willem van Gogh"
+    ],
+    "explanation": "Metropolitan Museum of Art čuva Van Goghovu sliku Wheat Field with Cypresses iz 1889.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/436535"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2298-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Astronomija",
+    "focus": "metan Uran plavozelena boja",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koji plin u Uranovoj atmosferi apsorbira crveni dio svjetlosti i pridonosi njegovoj plavozelenoj boji?",
+    "answers": [
+      "Metan",
+      "Methane",
+      "CH4"
+    ],
+    "explanation": "Metan apsorbira crvenu svjetlost pa se Uran promatraču čini plavozelenim.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2299-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Sport",
+    "focus": "Kipchoge povijesni maraton ispod 2 sata Beč",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem je europskom gradu Eliud Kipchoge 2019. pretrčao maratonsku udaljenost za manje od dva sata u posebno organiziranom izazovu?",
+    "answers": [
+      "Beč",
+      "Bec",
+      "Vienna"
+    ],
+    "explanation": "Kipchoge je 2019. u Beču trčao 1:59:40 u neslužbenom rekordnom izazovu.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/olympic-champion-eliud-kipchoge-ready-to-give-back-to-the-next-generation-as-dakar-2026-global-ambassador"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2300-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Medicina",
+    "focus": "dijabetes tip 1 svakodnevni inzulin",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Kod kojeg tipa dijabetesa tijelo prestaje proizvoditi inzulin, pa oboljeli trebaju nadomjesni inzulin?",
+    "answers": [
+      "Tip 1",
+      "Dijabetes tipa 1",
+      "Šećerna bolest tipa 1",
+      "1"
+    ],
+    "explanation": "Dijabetes tipa 1 autoimuna je bolest kod koje tijelo prestaje proizvoditi inzulin.",
+    "sources": [
+      "https://www.who.int/news-room/questions-and-answers/item/diabetes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2301-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Met muzej Van Gogh slika čempresi",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "U kojem se njujorškom muzeju nalazi Van Goghova slika 'Pšenično polje s čempresima' iz 1889.?",
+    "answers": [
+      "Metropolitan Museum of Art",
+      "Metropolitan",
+      "The Met",
+      "Metropolitanski muzej umjetnosti"
+    ],
+    "explanation": "Djelo je dio zbirke Metropolitan Museum of Art u New Yorku.",
+    "sources": [
+      "https://www.metmuseum.org/art/collection/search/436535"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2302-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Astronomija",
+    "focus": "Uran orbitalni period 84 godine",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko otprilike zemaljskih godina traje jedna Uranova godina, odnosno njegov obilazak oko Sunca?",
+    "answers": [
+      "84",
+      "84 godine",
+      "Osamdeset četiri"
+    ],
+    "explanation": "Uran obiđe Sunce za približno 84 zemaljske godine.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2303-20261106",
+    "createdAt": "2026-11-06T02:41:23+01:00",
+    "updatedAt": "2026-11-06T02:41:23+01:00",
+    "topic": "Sport",
+    "focus": "Kipchoge olimpijska bronca 5000 Atena",
+    "difficulty": 4,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Prije olimpijskih maratonskih zlata Eliud Kipchoge osvojio je broncu u Ateni 2004. Na kojoj atletskoj udaljenosti?",
+    "answers": [
+      "5000 metara",
+      "5000 m",
+      "5 km",
+      "Pet tisuća metara"
+    ],
+    "explanation": "Kipchoge je u Ateni 2004. osvojio broncu u utrci na 5000 metara.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/olympic-champion-eliud-kipchoge-ready-to-give-back-to-the-next-generation-as-dakar-2026-global-ambassador"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
