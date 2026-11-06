@@ -1,0 +1,209 @@
+[
+  {
+    "id": "chatgpt10000-2369-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Glazba",
+    "focus": "João Gilberto bossa nova",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je brazilski pjevač i gitarist, uz Antônija Carlosa Jobima, bio jedan od ključnih začetnika bossa nove?",
+    "answers": [
+      "João Gilberto",
+      "Joao Gilberto"
+    ],
+    "explanation": "Njegovo tiho pjevanje i ritmička gitara oblikovali su prepoznatljiv zvuk bossa nove.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jo%C3%A3o_Gilberto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2370-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Tehnologija",
+    "focus": "Hedy Lamarr skakanje frekvencija",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je holivudska glumica sa skladateljem Georgeom Antheilom patentirala sustav mijenjanja radijskih frekvencija?",
+    "answers": [
+      "Hedy Lamarr"
+    ],
+    "explanation": "Hedy Lamarr i George Antheil patentirali su 1942. sustav frekvencijskog skakanja za komunikaciju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hedy_Lamarr"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2371-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Književnost",
+    "focus": "Mary Shelley Frankenstein",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je književnica napisala roman Frankenstein, prvi put objavljen 1818. godine?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "explanation": "Mary Shelley napisala je Frankenstein ili moderni Prometej, roman o znanstveniku i njegovu stvorenju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mary_Shelley"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2372-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Životinje",
+    "focus": "kapibara najveći glodavac",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji južnoamerički poluvodeni sisavac nosi titulu najvećeg živućeg glodavca?",
+    "answers": [
+      "Kapibara",
+      "Capybara"
+    ],
+    "explanation": "Kapibara je najveći živući glodavac, a često boravi uz rijeke i močvare.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Capybara"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2373-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Povijest",
+    "focus": "Enigma rotorski stroj",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kako se zvao njemački rotorski stroj za šifriranje poruka koji su saveznici nastojali razbiti tijekom Drugoga svjetskog rata?",
+    "answers": [
+      "Enigma",
+      "Enigma stroj"
+    ],
+    "explanation": "Enigma je bila obitelj elektromehaničkih strojeva za šifriranje, poznata po ratnoj uporabi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Enigma_machine"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2374-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Zemljopis",
+    "focus": "Sueski kanal Sredozemno Crveno",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koji kanal omogućuje brodovima putovanje iz Sredozemnog u Crveno more bez obilaska Afrike?",
+    "answers": [
+      "Sueski kanal",
+      "Suecki kanal",
+      "Suez Canal"
+    ],
+    "explanation": "Sueski kanal u Egiptu povezuje Sredozemno i Crveno more.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Suez_Canal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2375-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt 100 metara Berlin 2009",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter 2009. u Berlinu postavio svjetski rekord na 100 metara od 9,58 sekundi?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Usain Bolt istrčao je 100 metara za 9,58 sekundi na Svjetskom prvenstvu u Berlinu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2376-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris Aleksej Pažitnov",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je sovjetski programer 1984. osmislio videoigru Tetris?",
+    "answers": [
+      "Aleksej Pažitnov",
+      "Alexey Pajitnov",
+      "Alexey Pazhitnov"
+    ],
+    "explanation": "Aleksej Pažitnov osmislio je Tetris 1984. dok je radio u Moskvi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tetris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2377-20261106",
+    "createdAt": "2026-11-06T10:41:46+01:00",
+    "updatedAt": "2026-11-06T10:41:46+01:00",
+    "topic": "Biologija",
+    "focus": "Penicillium plijesan sir",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zove rod plijesni čije se vrste koriste pri proizvodnji sireva poput roqueforta i camemberta?",
+    "answers": [
+      "Penicillium"
+    ],
+    "explanation": "Pojedine vrste roda Penicillium sudjeluju u dozrijevanju plemenitih sireva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Penicillium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
