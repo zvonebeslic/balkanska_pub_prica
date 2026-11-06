@@ -26,20 +26,19 @@
     "id": "chatgpt10000-2471-20261106",
     "createdAt": "2026-11-06T18:42:22+01:00",
     "updatedAt": "2026-11-06T18:42:22+01:00",
-    "topic": "Nogomet",
-    "focus": "Lev Yashin Crni pauk nadimak",
+    "topic": "Sport",
+    "focus": "curling granitni kamen led",
     "difficulty": 2,
-    "styleId": 28,
-    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
-    "question": "Kojeg su legendarnog sovjetskog vratara zvali Crni pauk, a 1963. osvojio je Zlatnu loptu?",
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom olimpijskom sportu natjecatelji klize granitnim kamenjem po ledu prema kružnoj meti?",
     "answers": [
-      "Lev Jašin",
-      "Lev Yashin",
-      "Jašin"
+      "Curling",
+      "Karling"
     ],
-    "explanation": "Lev Jašin jedini je vratar koji je osvojio Zlatnu loptu.",
+    "explanation": "U curlingu ekipe usmjeravaju granitne kamene prema ciljnom krugu na ledu.",
     "sources": [
-      "https://en.wikipedia.org/wiki/Lev_Yashin"
+      "https://en.wikipedia.org/wiki/Curling"
     ],
     "image": null,
     "type": "blitz",
@@ -122,17 +121,18 @@
     "createdAt": "2026-11-06T18:42:22+01:00",
     "updatedAt": "2026-11-06T18:42:22+01:00",
     "topic": "Životinje",
-    "focus": "narval zub kljova",
+    "focus": "kiviji ptice Novi Zeland",
     "difficulty": 2,
     "styleId": 17,
     "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
-    "question": "Koji arktički kit ima dugačku spiralnu kljovu koja je zapravo izduženi zub?",
+    "question": "Koja novozelandska ptica ne može letjeti, ima dugačak kljun i dijeli ime s poznatim voćem?",
     "answers": [
-      "Narval"
+      "Kivi",
+      "Kiwi"
     ],
-    "explanation": "Narvalova kljova razvija se iz zuba, najčešće u mužjaka.",
+    "explanation": "Kiviji su neleteće ptice endemske za Novi Zeland.",
     "sources": [
-      "https://en.wikipedia.org/wiki/Narwhal"
+      "https://en.wikipedia.org/wiki/Kiwi_(bird)"
     ],
     "image": null,
     "type": "blitz",
