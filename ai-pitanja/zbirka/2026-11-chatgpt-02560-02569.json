@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-2560-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Televizija",
+    "focus": "Friends Central Perk",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove humoristična serija u kojoj se šestero prijatelja redovito okuplja u kafiću Central Perk?",
+    "answers": [
+      "Prijatelji",
+      "Friends"
+    ],
+    "explanation": "Central Perk poznati je kafić iz serije Prijatelji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2561-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Nogomet",
+    "focus": "Zinedine Zidane finale SP 1998",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je francuski nogometaš postigao dva gola glavom u finalu Svjetskog prvenstva 1998. protiv Brazila?",
+    "answers": [
+      "Zinedine Zidane",
+      "Zidane"
+    ],
+    "explanation": "Zidane je zabio dvaput u francuskoj pobjedi 3:0.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zinedine_Zidane"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2562-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215 Ivan bez Zemlje",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je engleski kralj 1215. prihvatio Magnu Cartu pod pritiskom velikaša?",
+    "answers": [
+      "Ivan bez Zemlje",
+      "John",
+      "Kralj Ivan"
+    ],
+    "explanation": "Kralj Ivan prihvatio je povelju 1215. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2563-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Claude Monet lopoči",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je francuski impresionist naslikao poznatu seriju slika lopoča?",
+    "answers": [
+      "Claude Monet",
+      "Monet"
+    ],
+    "explanation": "Monet je godinama slikao lopoče iz vrta u Givernyju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2564-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Astronomija",
+    "focus": "Saturn Titan najveći mjesec",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Kako se zove najveći Saturnov mjesec, poznat po gustoj atmosferi i jezerima ugljikovodika?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov prirodni satelit.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2565-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza kloroplasti",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zovu stanične organele u kojima biljke obavljaju fotosintezu?",
+    "answers": [
+      "Kloroplasti",
+      "Kloroplast"
+    ],
+    "explanation": "Kloroplasti sadrže klorofil i mjesto su fotosinteze.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chloroplast"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2566-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Videoigre",
+    "focus": "Super Mario brat Luigi",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove Marijev brat u Nintendovim videoigrama?",
+    "answers": [
+      "Luigi",
+      "Luidži"
+    ],
+    "explanation": "Luigi je Marijev brat i čest partner u igrama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Luigi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2567-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Jezik",
+    "focus": "onomatopeja oponašanje zvukova",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ ili izraz koji oponaša zvuk, poput 'kuc-kuc' ili 'mijau'?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je glasovno oponašanje zvukova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2568-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Brendovi",
+    "focus": "Adidas osnivač Adolf Dassler",
+    "difficulty": 2,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "Koji je njemački poduzetnik osnovao sportsku marku Adidas?",
+    "answers": [
+      "Adolf Dassler",
+      "Adi Dassler"
+    ],
+    "explanation": "Adi Dassler osnovao je Adidas 1949. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adidas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2569-20261107",
+    "createdAt": "2026-11-07T00:39:49+01:00",
+    "updatedAt": "2026-11-07T00:39:49+01:00",
+    "topic": "Priroda",
+    "focus": "stalaktit strop špilje",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se zove špiljski sige koji raste prema dolje sa stropa?",
+    "answers": [
+      "Stalaktit"
+    ],
+    "explanation": "Stalaktiti nastaju taloženjem minerala s vode koja kaplje sa stropa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stalactite"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
