@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-2520-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt 100 metara Berlin 2009",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je jamajčanski sprinter 2009. u Berlinu postavio svjetski rekord na 100 metara od 9,58 sekundi?",
+    "answers": [
+      "Usain Bolt"
+    ],
+    "explanation": "Boltov rekord od 9,58 sekundi postavljen je na SP-u u Berlinu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2521-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Serije",
+    "focus": "House MD Gregory House Hugh Laurie",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji britanski glumac tumači dr. Gregoryja Housea u američkoj medicinskoj seriji?",
+    "answers": [
+      "Hugh Laurie"
+    ],
+    "explanation": "Hugh Laurie glumio je Housea tijekom osam sezona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/House_(TV_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2522-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Povijest",
+    "focus": "Tutankamon grobnica Howard Carter 1922",
+    "difficulty": 2,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Koji je arheolog 1922. otkrio grobnicu faraona Tutankamona?",
+    "answers": [
+      "Howard Carter"
+    ],
+    "explanation": "Carter je vodio iskapanje grobnice u Dolini kraljeva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Howard_Carter"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2523-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Umjetnost",
+    "focus": "Djevojka s bisernom naušnicom Vermeer",
+    "difficulty": 3,
+    "styleId": 40,
+    "styleDescription": "Pitaj za otok kroz dvije životinjske ili botaničke značajke",
+    "question": "Koji je nizozemski slikar autor Djevojke s bisernom naušnicom?",
+    "answers": [
+      "Johannes Vermeer"
+    ],
+    "explanation": "Vermeerova slika nastala je oko 1665.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2524-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Astronomija",
+    "focus": "Mars Olympus Mons vulkan",
+    "difficulty": 2,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Na kojem se planetu nalazi golemi štitasti vulkan Olympus Mons?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Olympus Mons nalazi se na Marsu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Olympus_Mons"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2525-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza klorofil",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Kako se zove zeleni pigment koji biljkama omogućuje upijanje svjetlosti za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost potrebnu za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2526-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris Aleksej Pažitnov",
+    "difficulty": 1,
+    "styleId": 49,
+    "styleDescription": "Opiši morsku struju i traži ocean ili područje",
+    "question": "Koji je sovjetski programer 1984. osmislio videoigru Tetris?",
+    "answers": [
+      "Aleksej Pažitnov"
+    ],
+    "explanation": "Aleksej Pažitnov stvorio je Tetris 1984.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alexey_Pajitnov"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2527-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Mitologija",
+    "focus": "grčka božica mudrosti Atena",
+    "difficulty": 3,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Koja je grčka božica mudrosti i zaštitnica istoimenog grada?",
+    "answers": [
+      "Atena"
+    ],
+    "explanation": "Atena je božica mudrosti i zaštitnica Atene.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Athena"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2528-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom čitanje obostrano",
+    "difficulty": 2,
+    "styleId": 55,
+    "styleDescription": "Kreni od pogrešnog književnog autorstva i traži pravog autora",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'potop'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2529-20261106",
+    "createdAt": "2026-11-06T21:41:06+01:00",
+    "updatedAt": "2026-11-06T21:41:06+01:00",
+    "topic": "Brendovi",
+    "focus": "IKEA osnivač Ingvar Kamprad",
+    "difficulty": 2,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Koji je švedski poduzetnik osnovao IKEA-u 1943. godine?",
+    "answers": [
+      "Ingvar Kamprad"
+    ],
+    "explanation": "Kamprad je IKEA-u osnovao kao tinejdžer.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ingvar_Kamprad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
