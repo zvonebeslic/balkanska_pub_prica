@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-2620-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Take On Me norveški bend",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je norveški sastav svjetski hit 'Take On Me' proslavio i animiranim videospotom?",
+    "answers": [
+      "a-ha"
+    ],
+    "explanation": "Norveški trio a-ha objavio je hit 1985.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Take_On_Me"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2621-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Sport",
+    "focus": "košarkaški šut slobodno bacanje udaljenost",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Kako se u košarci naziva neometani pokušaj postizanja jednog poena s linije nakon određenih prekršaja?",
+    "answers": [
+      "Slobodno bacanje"
+    ],
+    "explanation": "Uspješno slobodno bacanje vrijedi jedan poen.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Free_throw"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2622-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Film",
+    "focus": "film Jurski park redatelj",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je režirao i 'Ralje' i filmski hit 'Jurski park' iz 1993.?",
+    "answers": [
+      "Steven Spielberg"
+    ],
+    "explanation": "Spielberg je režirao oba filma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Steven_Spielberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2623-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Književnost",
+    "focus": "roman Grof Monte Cristo autor",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski pisac stvorio Edmonda Dantèsa, junaka romana 'Grof Monte Cristo'?",
+    "answers": [
+      "Alexandre Dumas"
+    ],
+    "explanation": "Alexandre Dumas stariji autor je romana o osveti Edmonda Dantèsa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2624-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Mongolije Ulan Bator",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji glavni grad Mongolije leži u dolini rijeke Tuul?",
+    "answers": [
+      "Ulan Bator"
+    ],
+    "explanation": "Ulan Bator, odnosno Ulaanbaatar, glavni je grad Mongolije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ulaanbaatar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2625-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Životinje",
+    "focus": "narval kit zub kljova",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji morski sisavac arktičkih voda ima dugačak spiralni zub koji nalikuje rogu jednoroga?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalov izduženi zub najčešće je lijevi gornji očnjak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2626-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Kemija",
+    "focus": "simbol srebra Ag",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Ag, izveden iz latinskog naziva argentum?",
+    "answers": [
+      "Srebro"
+    ],
+    "explanation": "Ag je kemijski simbol srebra.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2627-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Medicina",
+    "focus": "dermatologija koža",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se naziva medicinska specijalnost koja proučava i liječi bolesti kože?",
+    "answers": [
+      "Dermatologija"
+    ],
+    "explanation": "Dermatologija je grana medicine posvećena koži i njezinim bolestima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2628-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth naziv Harald Plavozubi",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je danskom kralju, poznatom kao Plavozubi, nazvana bežična tehnologija Bluetooth?",
+    "answers": [
+      "Harald Bluetooth"
+    ],
+    "explanation": "Bluetooth je dobio ime po kralju Haraldu Plavozubom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2629-20261107",
+    "createdAt": "2026-11-07T04:41:49+01:00",
+    "updatedAt": "2026-11-07T04:41:49+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu talijanski desert mascarpone",
+    "difficulty": 1,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Koji se talijanski desert priprema od piškota natopljenih kavom i kreme s mascarponeom?",
+    "answers": [
+      "Tiramisu"
+    ],
+    "explanation": "Tiramisu je talijanski desert s kavom, piškotama i mascarponeom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
