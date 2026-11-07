@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-2680-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Sport",
+    "focus": "maraton 42.195 kilometara",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko kilometara iznosi službena duljina maratonske utrke?",
+    "answers": [
+      "42,195"
+    ],
+    "explanation": "Maraton iznosi 42 kilometra i 195 metara.",
+    "sources": [
+      "https://www.britannica.com/sports/marathon-race"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2681-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Televizija",
+    "focus": "serija The Office Dunder Mifflin",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove američka humoristična serija smještena u urede izmišljene tvrtke Dunder Mifflin?",
+    "answers": [
+      "The Office"
+    ],
+    "explanation": "Američka verzija serije The Office prati zaposlenike tvrtke Dunder Mifflin.",
+    "sources": [
+      "https://www.nbc.com/the-office/about"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2682-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Povijest",
+    "focus": "Magellan ekspedicija Elcano dovršetak",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji je moreplovac dovršio prvo oplovljavanje svijeta nakon Magellanove smrti?",
+    "answers": [
+      "Juan Sebastián Elcano"
+    ],
+    "explanation": "Elcano je 1522. doveo brod Victoria natrag u Španjolsku.",
+    "sources": [
+      "https://www.britannica.com/biography/Juan-Sebastian-del-Cano"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2683-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Astronomija",
+    "focus": "Galaksija Andromeda M31",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je velika spiralna galaksija poznata i pod oznakom M31, naš galaktički susjed?",
+    "answers": [
+      "Andromeda"
+    ],
+    "explanation": "Andromeda je velika spiralna galaksija u Lokalnoj skupini.",
+    "sources": [
+      "https://science.nasa.gov/asset/hubble/andromeda-galaxy-m31/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2684-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Gastronomija",
+    "focus": "humus slanutak",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavni sastojak bliskoistočnog namaza humusa?",
+    "answers": [
+      "Slanutak"
+    ],
+    "explanation": "Humus se tradicionalno priprema od kuhanog slanutka i tahinija.",
+    "sources": [
+      "https://www.britannica.com/topic/hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2685-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom čitanje oba smjera",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://www.britannica.com/art/palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2686-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Brendovi",
+    "focus": "IKEA Švedska osnivanje",
+    "difficulty": 1,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "U kojoj je europskoj državi nastao lanac namještaja IKEA?",
+    "answers": [
+      "Švedska"
+    ],
+    "explanation": "IKEA je osnovana u Švedskoj 1943.",
+    "sources": [
+      "https://www.ikea.com/global/en/our-business/how-we-work/ikea-history/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2687-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Fizika",
+    "focus": "Isaac Newton prizma spektar",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji je znanstvenik pokusima s prizmom pokazao da se bijela svjetlost može rastaviti na spektar boja?",
+    "answers": [
+      "Isaac Newton"
+    ],
+    "explanation": "Newton je proučavao disperziju svjetlosti kroz prizmu.",
+    "sources": [
+      "https://www.britannica.com/biography/Isaac-Newton/Optics"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2688-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Pop kultura",
+    "focus": "Super Mario brat Luigi",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove Marijev brat u Nintendovoj seriji videoigara Super Mario?",
+    "answers": [
+      "Luigi"
+    ],
+    "explanation": "Luigi je Marijev brat i čest igrivi lik.",
+    "sources": [
+      "https://www.nintendo.com/us/store/characters/luigi/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2689-20261107",
+    "createdAt": "2026-11-07T08:43:22+01:00",
+    "updatedAt": "2026-11-07T08:43:22+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza klorofil",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji zeleni pigment biljkama omogućuje upijanje svjetlosti potrebne za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost koja pokreće fotosintezu.",
+    "sources": [
+      "https://www.britannica.com/science/chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
