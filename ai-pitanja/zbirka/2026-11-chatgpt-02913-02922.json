@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-2913-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie Ziggy Stardust",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "David Robert Jones postao je svjetski poznat pod kojim umjetničkim imenom?",
+    "answers": [
+      "David Bowie",
+      "Bowie"
+    ],
+    "explanation": "David Robert Jones umjetnički je poznat kao David Bowie.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_Bowie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2914-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Sport",
+    "focus": "Tour de France žuta majica",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koje je boje majica koju nosi vodeći biciklist u ukupnom poretku Tour de Francea?",
+    "answers": [
+      "žuta",
+      "žute"
+    ],
+    "explanation": "Žuta majica označava vodećeg u ukupnom poretku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yellow_jersey"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2915-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Film",
+    "focus": "Gospodar prstenova Gollum prsten",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem filmskom serijalu stvorenje Gollum opsesivno govori o svojem 'dragocjenom'?",
+    "answers": [
+      "Gospodar prstenova",
+      "The Lord of the Rings"
+    ],
+    "explanation": "Gollum je lik Tolkienova Gospodara prstenova i filmskih adaptacija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2916-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Književnost",
+    "focus": "Hamlet Ofelija Shakespeare",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao tragediju 'Hamlet' u kojoj se pojavljuju Ofelija i Klaudije?",
+    "answers": [
+      "William Shakespeare",
+      "Shakespeare"
+    ],
+    "explanation": "Hamlet je Shakespeareova tragedija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hamlet"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2917-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Zemljopis",
+    "focus": "Kilimandžaro Tanzanija",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se afričkoj državi uzdiže Kilimandžaro, najviša planina kontinenta?",
+    "answers": [
+      "Tanzanija"
+    ],
+    "explanation": "Kilimandžaro se nalazi u Tanzaniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2918-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Životinje",
+    "focus": "kljunar jaja sisavac",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac s kljunom nalik pačjem polaže jaja?",
+    "answers": [
+      "čudnovati kljunaš",
+      "kljunaš"
+    ],
+    "explanation": "Čudnovati kljunaš jedan je od sisavaca koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2919-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Fizika",
+    "focus": "Isaac Newton gravitacija jabuka",
+    "difficulty": 1,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koja sila drži Mjesec u orbiti oko Zemlje i uzrokuje pad jabuke sa stabla?",
+    "answers": [
+      "gravitacija",
+      "sila teža"
+    ],
+    "explanation": "Gravitacija je međudjelovanje tijela s masom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gravity"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2920-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija oči",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva medicinska specijalnost koja se bavi bolestima oka i vidom?",
+    "answers": [
+      "oftalmologija"
+    ],
+    "explanation": "Oftalmologija proučava i liječi bolesti oka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2921-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Gastronomija",
+    "focus": "sushi nori alga",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se naziv koristi za sušenu jestivu morsku algu kojom se često omataju sushi rolice?",
+    "answers": [
+      "nori"
+    ],
+    "explanation": "Nori je jestiva alga koja se koristi u japanskoj kuhinji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nori"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2922-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Povijest",
+    "focus": "Napoleon progonstvo Sveta Helena",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem je atlantskom otoku Napoleon proveo posljednje godine života nakon Waterlooa?",
+    "answers": [
+      "Sveta Helena",
+      "Saint Helena"
+    ],
+    "explanation": "Napoleon je umro u progonstvu na Svetoj Heleni.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Saint_Helena"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
