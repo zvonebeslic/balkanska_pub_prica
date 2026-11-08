@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-3213-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Televizija",
+    "focus": "Walter White serija",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj televizijskoj seriji profesor kemije Walter White postaje proizvođač metamfetamina?",
+    "answers": [
+      "Breaking Bad",
+      "Na putu prema dolje"
+    ],
+    "explanation": "Walter White glavni je lik serije Breaking Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3214-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Astronomija",
+    "focus": "planet s Velikom crvenom pjegom",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem se planetu nalazi golema oluja poznata kao Velika crvena pjega?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Velika crvena pjega dugotrajna je oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Red_Spot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3215-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Jezik",
+    "focus": "naziv za riječ istog značenja",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako nazivamo riječ koja ima isto ili vrlo slično značenje kao neka druga riječ?",
+    "answers": [
+      "Sinonim",
+      "Istoznačnica"
+    ],
+    "explanation": "Sinonimi su riječi istoga ili bliskoga značenja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Synonym"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3216-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "autor Zvjezdane noći",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je 1889. naslikao 'Zvjezdanu noć', sliku s vrtložnim noćnim nebom?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Vincent van Gogh naslikao je Zvjezdanu noć 1889.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3217-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Medicina",
+    "focus": "naziv za nedostatak željeza i hemoglobina",
+    "difficulty": 2,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Koji se medicinski naziv koristi za stanje smanjene koncentracije hemoglobina u krvi, često povezano s nedostatkom željeza?",
+    "answers": [
+      "Anemija",
+      "Slabokrvnost"
+    ],
+    "explanation": "Anemija označava sniženu koncentraciju hemoglobina, a nedostatak željeza čest je uzrok.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anemia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3218-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Videoigre",
+    "focus": "protagonistica Tomb Raider",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koja je pustolovka i arheologinja glavna junakinja serijala videoigara Tomb Raider?",
+    "answers": [
+      "Lara Croft",
+      "Lara"
+    ],
+    "explanation": "Lara Croft glavni je lik serijala Tomb Raider.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lara_Croft"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3219-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Brendovi",
+    "focus": "proizvođač PlayStationa",
+    "difficulty": 1,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Koja je japanska tvrtka 1994. lansirala prvu konzolu PlayStation?",
+    "answers": [
+      "Sony"
+    ],
+    "explanation": "Sony je razvio i lansirao PlayStation u Japanu 1994.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/PlayStation_(console)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3220-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Sport",
+    "focus": "olimpijski sport s flore tom i sabljom",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem se olimpijskom sportu natječe s floretom, mačem i sabljom?",
+    "answers": [
+      "Mačevanje"
+    ],
+    "explanation": "Floret, mač i sablja tri su discipline sportskog mačevanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fencing"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3221-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Povijest",
+    "focus": "žena faraon Hatšepsut",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koja je vladarica 18. egipatske dinastije prikazivana i s tradicionalnom faraonskom bradom?",
+    "answers": [
+      "Hatšepsut",
+      "Hatshepsut"
+    ],
+    "explanation": "Hatšepsut je vladala kao faraon u 18. dinastiji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hatshepsut"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3222-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Koja je SI jedinica električnog otpora nazvana po njemačkom fizičaru Georgu Simonu?",
+    "answers": [
+      "Om",
+      "Ohm"
+    ],
+    "explanation": "Om (Ω) jedinica je električnog otpora, nazvana po Georgu Simonu Ohmu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
