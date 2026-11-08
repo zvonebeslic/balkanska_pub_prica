@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-3113-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Sport",
+    "focus": "košarkaški NBA trofej",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Kako se zove sjevernoamerička profesionalna košarkaška liga u kojoj igraju Lakersi i Celticsi?",
+    "answers": [
+      "NBA",
+      "National Basketball Association"
+    ],
+    "explanation": "NBA je vodeća profesionalna košarkaška liga Sjeverne Amerike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/National_Basketball_Association"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3114-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Serije",
+    "focus": "grad serije Prijatelji",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "U kojem američkom gradu žive glavni likovi humoristične serije 'Prijatelji'?",
+    "answers": [
+      "New York",
+      "New York City"
+    ],
+    "explanation": "Radnja serije Friends smještena je u New York.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3115-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Povijest",
+    "focus": "pad Bastille",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je pariška utvrda i zatvor napadnuta 14. srpnja 1789., u događaju koji simbolizira početak Francuske revolucije?",
+    "answers": [
+      "Bastille",
+      "Bastilja"
+    ],
+    "explanation": "Pad Bastille postao je simbol Francuske revolucije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Storming_of_the_Bastille"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3116-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Biljke",
+    "focus": "začin šafran",
+    "difficulty": 3,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Od koje se cvjetnice dobiva skupi začin šafran, skupljanjem njezinih crvenih njuški tučka?",
+    "answers": [
+      "Šafran",
+      "Crocus sativus"
+    ],
+    "explanation": "Začin potječe od biljke Crocus sativus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Saffron"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3117-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja SI jedinica električnog otpora nosi ime njemačkog fizičara Georga Ohma?",
+    "answers": [
+      "Om",
+      "Ohm"
+    ],
+    "explanation": "Simbol jedinice je grčko slovo omega.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3118-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Svemir",
+    "focus": "najveći Saturnov mjesec",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove najveći Saturnov mjesec, poznat po gustoj atmosferi i jezerima metana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov prirodni satelit.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3119-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Brendovi",
+    "focus": "logo ugrizena jabuka",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koja tehnološka tvrtka koristi znak ugrizene jabuke?",
+    "answers": [
+      "Apple"
+    ],
+    "explanation": "Apple je poznat po proizvodima iPhone i Mac.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Apple_Inc."
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3120-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3121-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Glazba",
+    "focus": "pjevač pjesme Billie Jean",
+    "difficulty": 1,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Koji je američki pjevač objavio hit 'Billie Jean' na albumu Thriller?",
+    "answers": [
+      "Michael Jackson"
+    ],
+    "explanation": "Pjesma je objavljena na albumu Thriller iz 1982.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Billie_Jean"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3122-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Sport",
+    "focus": "teniska zemljana podloga",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji se Grand Slam turnir tradicionalno igra na zemljanoj podlozi u Parizu?",
+    "answers": [
+      "Roland Garros",
+      "French Open",
+      "Otvoreno prvenstvo Francuske"
+    ],
+    "explanation": "Turnir se igra u kompleksu Stade Roland-Garros.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_Open"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
