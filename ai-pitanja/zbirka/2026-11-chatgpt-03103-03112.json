@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-3103-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Dancing Queen",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koja je švedska skupina proslavila pjesmu 'Dancing Queen'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "Pjesma je objavljena 1976. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ABBA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3104-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Camp Nou",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji je katalonski nogometni klub domaćin stadiona Camp Nou?",
+    "answers": [
+      "Barcelona",
+      "FC Barcelona"
+    ],
+    "explanation": "Camp Nou povijesni je stadion FC Barcelone.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Camp_Nou"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3105-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Film",
+    "focus": "redatelj Jurskog parka",
+    "difficulty": 2,
+    "styleId": 5,
+    "styleDescription": "Poveži dvije različite industrije zajedničkim imenom",
+    "question": "Tko je režirao originalni film 'Jurski park' iz 1993. godine?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Spielberg je ekranizirao roman Michaela Crichtona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3106-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana 1984",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji je pisac stvorio distopijski svijet Velikog Brata u romanu '1984.'?",
+    "answers": [
+      "George Orwell",
+      "Orwell"
+    ],
+    "explanation": "Roman je objavljen 1949. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3107-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Portugala",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "U kojem se europskom glavnom gradu nalazi toranj Belém, na obali rijeke Tejo?",
+    "answers": [
+      "Lisabon",
+      "Lisboa"
+    ],
+    "explanation": "Toranj Belém jedan je od simbola Lisabona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bel%C3%A9m_Tower"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3108-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Životinje",
+    "focus": "najveća živuća ptica",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička ptica najveća među svim danas živućim pticama?",
+    "answers": [
+      "Noj",
+      "Afrički noj"
+    ],
+    "explanation": "Noj ne leti, ali je iznimno brz trkač.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Common_ostrich"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3109-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Kemija",
+    "focus": "simbol natrija",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji kemijski element ima simbol Na, izveden iz latinskog naziva natrium?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": "Natrij je alkalijski metal atomskog broja 11.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3110-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Medicina",
+    "focus": "kardiologija",
+    "difficulty": 1,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Koja se medicinska specijalizacija bavi bolestima srca i krvnih žila?",
+    "answers": [
+      "Kardiologija"
+    ],
+    "explanation": "Kardiologija proučava i liječi bolesti srca i krvožilnog sustava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cardiology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3111-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Weba",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koji je britanski informatičar predložio World Wide Web dok je radio u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee"
+    ],
+    "explanation": "Prijedlog World Wide Weba iznio je 1989. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3112-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Umjetnost",
+    "focus": "autor Zvjezdane noći",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji je nizozemski slikar naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Slika je nastala tijekom njegova boravka u Saint-Rémyju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
