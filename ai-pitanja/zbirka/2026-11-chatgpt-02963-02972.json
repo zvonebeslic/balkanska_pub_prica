@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-2963-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Glazba",
+    "focus": "Freddie Mercury Farrokh Bulsara",
+    "difficulty": 3,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Pod kojim je umjetničkim imenom postao poznat pjevač rođen kao Farrokh Bulsara?",
+    "answers": [
+      "Freddie Mercury"
+    ],
+    "explanation": "Frontmen Queena rođen je pod imenom Farrokh Bulsara.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Freddie_Mercury"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2964-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Nogomet",
+    "focus": "Maracanã Rio de Janeiro",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se brazilskom gradu nalazi slavni stadion Maracanã?",
+    "answers": [
+      "Rio de Janeiro"
+    ],
+    "explanation": "Maracanã je stadion u Rio de Janeiru.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2965-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Televizija",
+    "focus": "Stranger Things Hawkins",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se izmišljenom američkom gradu odvija najveći dio radnje serije 'Stranger Things'?",
+    "answers": [
+      "Hawkins"
+    ],
+    "explanation": "Hawkins je izmišljeni grad u Indiani.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stranger_Things"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2966-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Povijest",
+    "focus": "Berlinski zid 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, što je postalo simbol kraja podjele Njemačke?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2967-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu mascarpone",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je talijanski kremasti sir jedan od ključnih sastojaka tiramisua?",
+    "answers": [
+      "mascarpone"
+    ],
+    "explanation": "Mascarpone se tradicionalno koristi u kremi tiramisua.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2968-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Astronomija",
+    "focus": "Saturn Titan najveći mjesec",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove najveći Saturnov prirodni satelit, poznat po gustoj atmosferi?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov mjesec.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2969-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom čitanje unatrag",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo, zanemarimo li razmake?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2970-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza kloroplasti",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "U kojim se staničnim organelima biljaka uglavnom odvija fotosinteza?",
+    "answers": [
+      "kloroplasti"
+    ],
+    "explanation": "Kloroplasti sadrže klorofil i omogućuju fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chloroplast"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2971-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Politika",
+    "focus": "UN sjedište New York",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U kojem se američkom gradu nalazi glavno sjedište Ujedinjenih naroda?",
+    "answers": [
+      "New York"
+    ],
+    "explanation": "Glavno sjedište UN-a nalazi se na Manhattanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2972-20261108",
+    "createdAt": "2026-11-08T08:44:03+01:00",
+    "updatedAt": "2026-11-08T08:44:03+01:00",
+    "topic": "Brendovi",
+    "focus": "Adidas tri pruge",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koji sportski brend prepoznajemo po znaku s tri paralelne pruge?",
+    "answers": [
+      "Adidas"
+    ],
+    "explanation": "Tri pruge prepoznatljiv su zaštitni znak Adidasa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adidas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
