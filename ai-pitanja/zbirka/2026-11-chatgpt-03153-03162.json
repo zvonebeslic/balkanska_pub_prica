@@ -72,17 +72,19 @@
     "createdAt": "2026-11-08T19:40:31+01:00",
     "updatedAt": "2026-11-08T19:40:31+01:00",
     "topic": "Književnost",
-    "focus": "autor romana Ime ruže",
+    "focus": "autor romana Grof Monte Cristo",
     "difficulty": 2,
     "styleId": 31,
     "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
-    "question": "Tko je napisao povijesni kriminalistički roman 'Ime ruže', čiji je glavni istražitelj franjevac William od Baskervillea?",
+    "question": "Koji je francuski pisac stvorio Edmonda Dantèsa, junaka romana 'Grof Monte Cristo'?",
     "answers": [
-      "Umberto Eco"
+      "Alexandre Dumas",
+      "Alexandre Dumas otac",
+      "Aleksandar Dima"
     ],
-    "explanation": "Roman Umberta Eca objavljen je 1980. godine.",
+    "explanation": "Alexandre Dumas stariji objavio je roman u nastavcima od 1844. do 1846. godine.",
     "sources": [
-      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+      "https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo"
     ],
     "image": null,
     "type": "blitz",
