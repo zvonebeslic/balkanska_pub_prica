@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-2993-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Glazba",
+    "focus": "Smetana ciklus Moja domovina Vltava",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je češki skladatelj u ciklusu 'Moja domovina' glazbom opisao tok rijeke Vltave?",
+    "answers": [
+      "Bedřich Smetana",
+      "Smetana",
+      "Bedrich Smetana"
+    ],
+    "explanation": "Simfonijska pjesma 'Vltava' druga je od šest skladbi ciklusa 'Má vlast'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Moldau"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2994-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Tehnologija",
+    "focus": "Hedy Lamarr George Antheil frekvencijsko skakanje",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je hollywoodska glumica s Georgeom Antheilom patentirala sustav promjene radijskih frekvencija za sigurniju komunikaciju?",
+    "answers": [
+      "Hedy Lamarr",
+      "Lamarr"
+    ],
+    "explanation": "Hedy Lamarr i George Antheil 1942. dobili su patent za sustav frekvencijskog skakanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hedy_Lamarr"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2995-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Književnost",
+    "focus": "Mary Shelley Frankenstein prezime autorice",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je književnica napisala 'Frankensteina', roman u kojem znanstvenik stvara živo biće?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley",
+      "Shelley"
+    ],
+    "explanation": "Mary Shelley napisala je roman 'Frankenstein; ili moderni Prometej'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mary_Shelley"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2996-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Botanika",
+    "focus": "obalna sekvoja najviša vrsta stabla",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kojoj vrsti stabla pripadaju najviša poznata živa stabla na Zemlji, uključujući Hyperion u Kaliforniji?",
+    "answers": [
+      "Obalna sekvoja",
+      "Sequoia sempervirens",
+      "sekvoja"
+    ],
+    "explanation": "Obalna sekvoja (Sequoia sempervirens) doseže najveće zabilježene visine među živim stablima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sequoia_sempervirens"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2997-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Gastronomija",
+    "focus": "ratatouille povrtno jelo Provansa",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Patlidžan, tikvice, rajčica i paprika često završe u kojem tradicionalnom provansalskom povrtnom jelu?",
+    "answers": [
+      "Ratatouille",
+      "ratatuj"
+    ],
+    "explanation": "Ratatouille je jelo od pirjanog povrća povezano s Provansom i Nicom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ratatouille"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2998-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Zemljopis",
+    "focus": "Canberra kompromis Sydney Melbourne",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je australski glavni grad izgrađen kao zasebno središte između konkurentskih metropola Sydneya i Melbournea?",
+    "answers": [
+      "Canberra",
+      "Kanbera"
+    ],
+    "explanation": "Canberra je izabrana za saveznu prijestolnicu Australije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Canberra"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2999-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Kultura",
+    "focus": "origami japansko savijanje papira",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove japanska umjetnost savijanja papira u likove poput ždrala, bez potrebe za crtanjem?",
+    "answers": [
+      "Origami"
+    ],
+    "explanation": "Origami je tradicionalna umjetnost oblikovanja papira presavijanjem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Origami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3000-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Kemija",
+    "focus": "zemnoalkalijski metali druga skupina",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "U koju skupinu periodnog sustava, uz kalcij i barij, spada magnezij?",
+    "answers": [
+      "Zemnoalkalijski metali",
+      "zemnoalkalijske metale",
+      "2. skupina",
+      "druga skupina"
+    ],
+    "explanation": "Magnezij, kalcij i barij pripadaju drugoj skupini, zemnoalkalijskim metalima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alkaline_earth_metal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3001-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Književnost",
+    "focus": "Saint Exupery pilot nestanak 1944",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je francuski pisac, autor 'Malog princa', nestao tijekom izviđačkog leta 1944. godine?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Saint-Exupéry",
+      "Antoine de Saint Exupery"
+    ],
+    "explanation": "Antoine de Saint-Exupéry bio je pisac i pilot koji je nestao u Drugom svjetskom ratu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3002-20261108",
+    "createdAt": "2026-11-08T11:42:50+01:00",
+    "updatedAt": "2026-11-08T11:42:50+01:00",
+    "topic": "Kultura",
+    "focus": "kirigami razlika origami rezanje papira",
+    "difficulty": 3,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Za razliku od origamija, koja japanska tehnika oblikovanja papira dopušta i rezanje škarama?",
+    "answers": [
+      "Kirigami"
+    ],
+    "explanation": "Kirigami kombinira presavijanje i rezanje papira.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Origami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
