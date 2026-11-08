@@ -1,0 +1,227 @@
+[
+  {
+    "id": "chatgpt10000-2903-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453 Osmanlije",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Godine 1453. osmanska vojska osvojila je prijestolnicu Bizantskog Carstva. Koji je to grad?",
+    "answers": [
+      "Carigrad",
+      "Konstantinopol",
+      "Constantinople"
+    ],
+    "explanation": "Carigrad je osvojen 1453. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2904-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Nogomet",
+    "focus": "Real Madrid Santiago Bernabeu stadion",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem stadionu u španjolskoj prijestolnici domaće utakmice igra Real Madrid?",
+    "answers": [
+      "Santiago Bernabéu",
+      "Bernabeu"
+    ],
+    "explanation": "Santiago Bernabéu domaći je stadion Real Madrida.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Santiago_Bernabéu_Stadium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2905-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Televizija",
+    "focus": "The Simpsons Springfield Homer",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Homer, Marge, Bart, Lisa i Maggie žive u Springfieldu. Kako se zove animirana serija?",
+    "answers": [
+      "Simpsoni",
+      "The Simpsons"
+    ],
+    "explanation": "Obitelj Simpson protagonisti su serije The Simpsons.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Simpsons"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2906-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera najtopliji planet",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Merkur je bliži Suncu, ali koji je planet Sunčeva sustava najtopliji zbog snažnog stakleničkog učinka?",
+    "answers": [
+      "Venera"
+    ],
+    "explanation": "Venera ima najvišu prosječnu površinsku temperaturu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Venus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2907-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Dali Postojanost pamcenja satovi",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nadrealistički slikar naslikao mekane, rastopljene satove na slici 'Postojanost pamćenja'?",
+    "answers": [
+      "Salvador Dalí",
+      "Dali"
+    ],
+    "explanation": "Salvador Dalí autor je Postojanosti pamćenja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Persistence_of_Memory"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2908-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Biologija",
+    "focus": "mitoza dioba stanica",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako se naziva dioba jezgre stanice pri kojoj nastaju dvije genetski jednake jezgre?",
+    "answers": [
+      "mitoza"
+    ],
+    "explanation": "Mitoza raspodjeljuje duplicirane kromosome u dvije jezgre.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2909-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Brendovi",
+    "focus": "Nike grcka božica pobjede",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji sportski brend dijeli ime s grčkom božicom pobjede?",
+    "answers": [
+      "Nike"
+    ],
+    "explanation": "Nike je ime grčke božice pobjede.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nike,_Inc."
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2910-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Jezik",
+    "focus": "onomatopeja oponašanje zvuka",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ poput 'bum', 'mijau' ili 'kukuriku' koja oponaša zvuk?",
+    "answers": [
+      "onomatopeja"
+    ],
+    "explanation": "Onomatopeja je jezično oponašanje zvukova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2911-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris Aleksej Pazitnov",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koju je slavnu videoigru sa slagalicama od padajućih geometrijskih oblika osmislio Aleksej Pažitnov?",
+    "answers": [
+      "Tetris"
+    ],
+    "explanation": "Aleksej Pažitnov osmislio je Tetris 1984.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tetris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2912-20261108",
+    "createdAt": "2026-11-08T05:36:29+01:00",
+    "updatedAt": "2026-11-08T05:36:29+01:00",
+    "topic": "Priroda",
+    "focus": "gejzir vruća voda erupcija",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako nazivamo prirodni izvor koji povremeno izbacuje stup vruće vode i pare?",
+    "answers": [
+      "gejzir"
+    ],
+    "explanation": "Gejzir povremeno eruptira zbog podzemne topline i tlaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geyser"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
