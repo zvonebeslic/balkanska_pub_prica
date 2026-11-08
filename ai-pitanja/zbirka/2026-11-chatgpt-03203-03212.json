@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-3203-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Glazba",
+    "focus": "izvođač pjesme Purple Rain",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je američki glazbenik objavio album i pjesmu 'Purple Rain' 1984. godine?",
+    "answers": [
+      "Prince"
+    ],
+    "explanation": "Prince je 1984. objavio album Purple Rain.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Prince_(musician)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3204-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Sport",
+    "focus": "nadimak košarkaša Shaquille O'Neal",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je legendarni NBA centar poznat pod nadimkom Shaq?",
+    "answers": [
+      "Shaquille O'Neal",
+      "Shaquille ONeal",
+      "Shaq"
+    ],
+    "explanation": "Shaquille O'Neal osvojio je četiri NBA naslova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shaquille_O%27Neal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3205-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Pulp Fiction",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je redatelj 1994. snimio film 'Pakleni šund' (Pulp Fiction)?",
+    "answers": [
+      "Quentin Tarantino",
+      "Tarantino"
+    ],
+    "explanation": "Quentin Tarantino režirao je film Pulp Fiction.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pulp_Fiction"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3206-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Zločin i kazna",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Raskoljnikov je središnji lik romana 'Zločin i kazna'. Tko je njegov autor?",
+    "answers": [
+      "Fjodor Dostojevski",
+      "Fjodor Mihajlovič Dostojevski",
+      "Dostojevski"
+    ],
+    "explanation": "Roman je napisao Fjodor Dostojevski.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3207-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Islanda",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji glavni grad leži na jugozapadu Islanda i smatra se najsjevernijim glavnim gradom suverene države?",
+    "answers": [
+      "Reykjavik",
+      "Reykjavík"
+    ],
+    "explanation": "Reykjavík je glavni grad Islanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Reykjav%C3%ADk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3208-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Kemija",
+    "focus": "element u olovci grafit",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Grafit u običnoj olovci jedan je od oblika kojeg kemijskog elementa?",
+    "answers": [
+      "Ugljik",
+      "Karbon"
+    ],
+    "explanation": "Grafit je alotropski oblik ugljika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Graphite"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3209-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Biologija",
+    "focus": "oprašivanje pčele",
+    "difficulty": 1,
+    "styleId": 91,
+    "styleDescription": "Ispričaj kratku istinitu situaciju iz prirode bez očitog raspleta",
+    "question": "Kako se naziva prijenos peluda s prašnika na njušku tučka cvijeta, u kojem često sudjeluju pčele?",
+    "answers": [
+      "Oprašivanje",
+      "Polinacija"
+    ],
+    "explanation": "Oprašivanje je prijenos peluda potreban za oplodnju mnogih cvjetnica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pollination"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3210-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Tehnologija",
+    "focus": "značenje kratice URL",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se troslovna kratica koristi za adresu mrežnog resursa, primjerice web-stranice?",
+    "answers": [
+      "URL"
+    ],
+    "explanation": "URL znači Uniform Resource Locator.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/URL"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3211-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Povijest",
+    "focus": "prvi čovjek na Mjesecu",
+    "difficulty": 1,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Tko je 1969. prvi zakoračio na površinu Mjeseca tijekom misije Apollo 11?",
+    "answers": [
+      "Neil Armstrong",
+      "Armstrong"
+    ],
+    "explanation": "Neil Armstrong prvi je hodao Mjesecom 20. srpnja 1969. po američkom vremenu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neil_Armstrong"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3212-20261108",
+    "createdAt": "2026-11-08T23:35:46+01:00",
+    "updatedAt": "2026-11-08T23:35:46+01:00",
+    "topic": "Gastronomija",
+    "focus": "glavni sastojak guacamole",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Od kojeg se ploda priprema meksički umak guacamole, uz dodatke poput limete i luka?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Avokado je osnovni sastojak guacamolea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
