@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3013-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Glazba",
+    "focus": "Adele album 21 Rolling in the Deep",
+    "difficulty": 1,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Na kojem se albumu Adele nalazi hit 'Rolling in the Deep'?",
+    "answers": [
+      "21"
+    ],
+    "explanation": "Album 21 objavljen je 2011. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/21_(Adele_album)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3014-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt Jamajka 100 metara",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Iz koje države dolazi sprinter Usain Bolt, svjetski rekorder na 100 i 200 metara?",
+    "answers": [
+      "Jamajka"
+    ],
+    "explanation": "Bolt je jamajčanski atletičar i višestruki olimpijski pobjednik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3015-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Serije",
+    "focus": "The Office Michael Scott Dunder Mifflin",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove američka humoristična serija u kojoj Michael Scott vodi podružnicu tvrtke Dunder Mifflin?",
+    "answers": [
+      "The Office"
+    ],
+    "explanation": "Američka serija smještena je u izmišljenu tvrtku za prodaju papira.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3016-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Povijest",
+    "focus": "Magellan ekspedicija prvi obilazak Zemlje Elcano",
+    "difficulty": 3,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koji je pomorac dovršio prvo putovanje oko svijeta nakon smrti Ferdinanda Magellana?",
+    "answers": [
+      "Juan Sebastián Elcano"
+    ],
+    "explanation": "Elcano je 1522. doveo brod Victoria natrag u Španjolsku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Juan_Sebastián_Elcano"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3017-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa Jupiterov mjesec ocean",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji Jupiterov mjesec, nazvan po liku iz grčke mitologije, ispod ledene kore vjerojatno skriva ocean?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "Europa je jedan od četiri velika Galilejeva Jupiterova mjeseca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Europa_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3018-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Gastronomija",
+    "focus": "pesto Genova bosiljak",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se talijanski umak tradicionalno priprema od bosiljka, pinjola, češnjaka, sira i maslinova ulja?",
+    "answers": [
+      "Pesto"
+    ],
+    "explanation": "Pesto alla genovese potječe iz Ligurije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3019-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Biologija",
+    "focus": "mitoza dioba stanica",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove dioba stanične jezgre pri kojoj nastaju dvije genetski jednake jezgre?",
+    "answers": [
+      "Mitoza"
+    ],
+    "explanation": "Mitoza je ključna za rast i obnovu tkiva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3020-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Jezik",
+    "focus": "onomatopeja oponašanje zvuka",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ koja svojim zvukom oponaša šum, glasanje ili neki drugi zvuk, primjerice 'kukuriku'?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je glasovno oponašanje zvukova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3021-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Brendovi",
+    "focus": "IKEA Ingvar Kamprad Švedska",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je švedski lanac namještaja osnovao Ingvar Kamprad 1943. godine?",
+    "answers": [
+      "IKEA"
+    ],
+    "explanation": "Naziv IKEA nastao je od inicijala osnivača i naziva mjesta njegova odrastanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/IKEA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3022-20261108",
+    "createdAt": "2026-11-08T12:42:54+01:00",
+    "updatedAt": "2026-11-08T12:42:54+01:00",
+    "topic": "Fizika",
+    "focus": "Dopplerov efekt zvuk sirena",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva promjena opažene frekvencije zvuka kada se izvor i slušatelj međusobno gibaju, primjerice kod sirene vozila?",
+    "answers": [
+      "Dopplerov efekt"
+    ],
+    "explanation": "Dopplerov efekt javlja se kod valova pri relativnom gibanju izvora i promatrača.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Doppler_effect"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
