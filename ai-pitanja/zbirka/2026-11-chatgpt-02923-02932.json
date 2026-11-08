@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-2923-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Glazba",
+    "focus": "Daft Punk francuski duo",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji francuski elektronički duo nastupa s prepoznatljivim robotskim kacigama?",
+    "answers": [
+      "Daft Punk"
+    ],
+    "explanation": "Daft Punk francuski je elektronički duo poznat po robotskom vizualnom identitetu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Daft_Punk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2924-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Nogomet",
+    "focus": "Andrés Iniesta gol SP 2010",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Tko je zabio pobjednički pogodak Španjolske u produžetku finala Svjetskog prvenstva 2010.?",
+    "answers": [
+      "Andrés Iniesta",
+      "Iniesta"
+    ],
+    "explanation": "Iniesta je postigao jedini pogodak finala protiv Nizozemske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_final"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2925-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Film",
+    "focus": "Sam u kući Kevin McCallister",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se preziva dječak Kevin kojeg obitelj slučajno ostavi kod kuće u božićnoj komediji iz 1990.?",
+    "answers": [
+      "McCallister"
+    ],
+    "explanation": "Kevin McCallister glavni je lik filma Sam u kući.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Home_Alone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2926-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Književnost",
+    "focus": "Pipi Duga Čarapa konj",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja književna junakinja živi u Vili Vilekuli s majmunčićem i konjem?",
+    "answers": [
+      "Pipi Duga Čarapa",
+      "Pippi Longstocking",
+      "Pipi"
+    ],
+    "explanation": "Pipi Duga Čarapa junakinja je romana Astrid Lindgren.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pippi_Longstocking"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2927-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Povijest",
+    "focus": "Pad Carigrada 1453",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine osmanska vojska Mehmeda II. osvojila Carigrad?",
+    "answers": [
+      "1453"
+    ],
+    "explanation": "Carigrad je pao pod osmansku vlast 1453. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2928-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Zemljopis",
+    "focus": "Kilimandžaro Tanzanija",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se afričkoj državi nalazi Kilimandžaro, najviša planina Afrike?",
+    "answers": [
+      "Tanzanija",
+      "Tanzania"
+    ],
+    "explanation": "Kilimandžaro se nalazi u Tanzaniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2929-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Životinje",
+    "focus": "Ornitorink polaže jaja",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima kljun nalik pačjem i, umjesto da rađa žive mlade, polaže jaja?",
+    "answers": [
+      "čudnovati kljunaš",
+      "kljunaš",
+      "ornitorink",
+      "platypus"
+    ],
+    "explanation": "Čudnovati kljunaš pripada sisavcima jednootvorima koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2930-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Kemija",
+    "focus": "Zlato kemijski simbol Au",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element u periodnom sustavu ima oznaku Au?",
+    "answers": [
+      "zlato"
+    ],
+    "explanation": "Au je kemijski simbol zlata, od latinskog aurum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gold"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2931-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Medicina",
+    "focus": "Oftalmologija oči",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se naziva medicinska grana koja se bavi očima, vidom i očnim bolestima?",
+    "answers": [
+      "oftalmologija"
+    ],
+    "explanation": "Oftalmologija proučava i liječi bolesti oka i vidnog sustava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-2932-20261108",
+    "createdAt": "2026-11-08T06:41:12+01:00",
+    "updatedAt": "2026-11-08T06:41:12+01:00",
+    "topic": "Tehnologija",
+    "focus": "Tim Berners-Lee World Wide Web",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar zaslužan za izum World Wide Weba u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Berners-Lee",
+      "Tim Berners Lee"
+    ],
+    "explanation": "Tim Berners-Lee osmislio je World Wide Web krajem 1980-ih.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
