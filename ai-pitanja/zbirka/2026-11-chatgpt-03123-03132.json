@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-3123-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Film",
+    "focus": "lik Jack Sparrow",
+    "difficulty": 1,
+    "styleId": 23,
+    "styleDescription": "Pitaj što je posljednje u nizu tehnoloških izuma",
+    "question": "Koji glumac tumači kapetana Jacka Sparrowa u filmskom serijalu 'Pirati s Kariba'?",
+    "answers": [
+      "Johnny Depp"
+    ],
+    "explanation": "Depp je utjelovio Jacka Sparrowa u više nastavaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jack_Sparrow"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3124-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Književnost",
+    "focus": "autor Malog princa",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji je francuski pilot i pisac autor 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Antoine de Saint Exupery",
+      "Saint-Exupéry"
+    ],
+    "explanation": "Djelo je prvi put objavljeno 1943. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3125-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Geografija",
+    "focus": "najveći grčki otok",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Kako se zove najveći grčki otok, poznat po palači u Knososu?",
+    "answers": [
+      "Kreta",
+      "Crete"
+    ],
+    "explanation": "Kreta je najveći otok Grčke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crete"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3126-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Povijest",
+    "focus": "prvi čovjek na Mjesecu",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji je astronaut prvi zakoračio na Mjesec tijekom misije Apollo 11?",
+    "answers": [
+      "Neil Armstrong",
+      "Armstrong"
+    ],
+    "explanation": "Armstrong je na Mjesec stupio 20. srpnja 1969. po UTC-u.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neil_Armstrong"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3127-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Životinje",
+    "focus": "životinja koja gradi brane",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koji glodavac gradi brane i nastambe na rijekama, koristeći granje i blato?",
+    "answers": [
+      "Dabar"
+    ],
+    "explanation": "Dabrovi preoblikuju vodena staništa gradnjom brana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Beaver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3128-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Kemija",
+    "focus": "kemijska formula amonijaka",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji plin oštrog mirisa ima kemijsku formulu NH3?",
+    "answers": [
+      "Amonijak"
+    ],
+    "explanation": "Amonijak je spoj dušika i vodika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ammonia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3129-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Svakodnevica",
+    "focus": "talijansko jelo rižoto",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Kako se zove talijansko jelo od riže koja se postupno kuha uz dodavanje temeljca?",
+    "answers": [
+      "Rižoto",
+      "Risotto"
+    ],
+    "explanation": "Rižoto se često priprema s rižom sorte arborio.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Risotto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3130-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Videoigre",
+    "focus": "junak serijala Zelda",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Kako se zove glavni igrivi junak većine igara iz serijala The Legend of Zelda?",
+    "answers": [
+      "Link"
+    ],
+    "explanation": "Zelda je najčešće ime princeze, a junak se zove Link.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3131-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Politika",
+    "focus": "sjedište Europskog parlamenta",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "U kojem francuskom gradu Europski parlament održava redovite plenarne sjednice?",
+    "answers": [
+      "Strasbourg",
+      "Strasbur"
+    ],
+    "explanation": "Strasbourg je službeno sjedište Europskog parlamenta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/European_Parliament"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3132-20261108",
+    "createdAt": "2026-11-08T17:36:38+01:00",
+    "updatedAt": "2026-11-08T17:36:38+01:00",
+    "topic": "Matematika",
+    "focus": "zbroj kutova trokuta",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Koliki je zbroj unutarnjih kutova trokuta u euklidskoj geometriji, izražen u stupnjevima?",
+    "answers": [
+      "180",
+      "180 stupnjeva"
+    ],
+    "explanation": "Unutarnji kutovi svakog euklidskog trokuta zbrajaju se u 180 stupnjeva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Triangle"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
