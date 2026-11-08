@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3033-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Tehnologija",
+    "focus": "Android Google mobilni OS",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove Googleov operacijski sustav koji pokreće mnoge pametne telefone?",
+    "answers": [
+      "Android"
+    ],
+    "explanation": "Android je operacijski sustav temeljen na Linuxu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Android_(operating_system)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3034-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Životinje",
+    "focus": "flamingo ružičasta pigmenti",
+    "difficulty": 2,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koja je dugonoga ptica ružičaste boje zahvaljujući pigmentima iz hrane?",
+    "answers": [
+      "Flamingo"
+    ],
+    "explanation": "Karotenoidi iz prehrane utječu na boju perja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Flamingo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3035-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptun osmi planet",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koji je osmi planet Sunčeva sustava, gledano od Sunca?",
+    "answers": [
+      "Neptun"
+    ],
+    "explanation": "Neptun je najudaljeniji od osam planeta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neptune"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3036-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Umjetnost",
+    "focus": "Guernica Picasso",
+    "difficulty": 3,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "Tko je naslikao antiratno djelo 'Guernica'?",
+    "answers": [
+      "Pablo Picasso"
+    ],
+    "explanation": "Picasso je Guernicu naslikao 1937.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3037-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Medicina",
+    "focus": "anemija manjak hemoglobina",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se medicinski naziva stanje smanjene koncentracije hemoglobina u krvi?",
+    "answers": [
+      "Anemija"
+    ],
+    "explanation": "Anemija smanjuje sposobnost krvi da prenosi kisik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anemia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3038-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Glazba",
+    "focus": "Tina Turner Proud Mary",
+    "difficulty": 3,
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Koja je pjevačica, poznata kao kraljica rock'n'rolla, proslavila svoju izvedbu pjesme 'Proud Mary'?",
+    "answers": [
+      "Tina Turner"
+    ],
+    "explanation": "Turner je pjesmu izvodila s Ikeom Turnerom i kasnije solo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tina_Turner"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3039-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Serije",
+    "focus": "Friends Central Perk",
+    "difficulty": 1,
+    "styleId": 74,
+    "styleDescription": "Kreni od znaka u tipografiji i pitaj kako se zove",
+    "question": "Kako se zove kafić u kojem se često sastaju junaci serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk je izmišljeni njujorški kafić.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3040-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Povijest",
+    "focus": "Gutenberg tiskarski stroj",
+    "difficulty": 2,
+    "styleId": 81,
+    "styleDescription": "Započni stvarnim citatom kraćim od deset riječi i traži autora",
+    "question": "Koji se njemački izumitelj povezuje s razvojem europskog tiska pomičnim metalnim slovima?",
+    "answers": [
+      "Johannes Gutenberg"
+    ],
+    "explanation": "Gutenberg je unaprijedio tisak u 15. stoljeću.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Johannes_Gutenberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3041-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Jezik",
+    "focus": "sinonim riječi slično značenje",
+    "difficulty": 3,
+    "styleId": 88,
+    "styleDescription": "Poveži povijesnu kartu s modernim mjestom",
+    "question": "Kako nazivamo riječi istog ili vrlo sličnog značenja?",
+    "answers": [
+      "Sinonimi"
+    ],
+    "explanation": "Primjer su riječi sretan i radostan u mnogim kontekstima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Synonym"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3042-20261108",
+    "createdAt": "2026-11-08T13:38:38+01:00",
+    "updatedAt": "2026-11-08T13:38:38+01:00",
+    "topic": "Fizika",
+    "focus": "amper jakost struje",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koja je SI jedinica električne struje?",
+    "answers": [
+      "Amper"
+    ],
+    "explanation": "Amper nosi oznaku A.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ampere"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
