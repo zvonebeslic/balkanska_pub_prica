@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-3363-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Glazba",
+    "focus": "Nina Simone - Feeling Good",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je američka pjevačica i pijanistica proslavila svoju izvedbu pjesme Feeling Good iz 1965.?",
+    "answers": [
+      "Nina Simone"
+    ],
+    "explanation": "Nina Simone snimila je poznatu verziju pjesme Feeling Good 1965.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nina_Simone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3364-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Nogomet",
+    "focus": "Ajax - Amsterdam",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Amsterdam, Johan Cruyff Arena i crveno-bijeli dresovi: koji nizozemski nogometni klub povezuje ove tragove?",
+    "answers": [
+      "Ajax",
+      "AFC Ajax"
+    ],
+    "explanation": "Ajax je nogometni klub iz Amsterdama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/AFC_Ajax"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3365-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Film",
+    "focus": "Casablanca - Humphrey Bogart",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "U kojem klasiku iz 1942. Humphrey Bogart glumi Ricka Blainea, vlasnika noćnog kluba?",
+    "answers": [
+      "Casablanca",
+      "Kazablanka"
+    ],
+    "explanation": "Bogart glumi Ricka u filmu Casablanca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Casablanca_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3366-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Književnost",
+    "focus": "Heidi - Johanna Spyri",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je švicarska spisateljica napisala dječji roman Heidi?",
+    "answers": [
+      "Johanna Spyri",
+      "Spyri"
+    ],
+    "explanation": "Johanna Spyri autorica je romana Heidi iz 1881.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Johanna_Spyri"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3367-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Životinje",
+    "focus": "narval - kljova",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima dugačak spiralni zub koji mu je donio nadimak morski jednorog?",
+    "answers": [
+      "narval",
+      "narwhal"
+    ],
+    "explanation": "Narvalova karakteristična kljova zapravo je izduženi zub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3368-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Kemija",
+    "focus": "natrij - simbol Na",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Na, izveden iz latinskog naziva natrium?",
+    "answers": [
+      "natrij"
+    ],
+    "explanation": "Na je kemijski simbol natrija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3369-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Povijest",
+    "focus": "kamen iz Rosette - hijeroglifi",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koji je slavni kameni nalaz s tekstom na tri pisma pomogao znanstvenicima odgonetnuti egipatske hijeroglife?",
+    "answers": [
+      "kamen iz Rosette",
+      "Kamen iz Rosette",
+      "Rosetta Stone"
+    ],
+    "explanation": "Kamen iz Rosette sadrži tekst na hijeroglifima, demotskom i starogrčkom pismu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rosetta_Stone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3370-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Tehnologija",
+    "focus": "Linux - Linus Torvalds",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je finski programer 1991. započeo razvoj jezgre operacijskog sustava Linux?",
+    "answers": [
+      "Linus Torvalds",
+      "Torvalds"
+    ],
+    "explanation": "Linus Torvalds pokrenuo je projekt jezgre Linux 1991.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Linus_Torvalds"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3371-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija - oči",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva grana medicine koja se bavi bolestima oka i vidnog sustava?",
+    "answers": [
+      "oftalmologija"
+    ],
+    "explanation": "Oftalmologija je medicinska specijalnost posvećena očima i vidu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3372-20261109",
+    "createdAt": "2026-11-09T09:48:49+01:00",
+    "updatedAt": "2026-11-09T09:48:49+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu - mascarpone",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji talijanski desert u slojevima obično spaja piškote namočene u kavu, mascarpone i kakao?",
+    "answers": [
+      "tiramisu",
+      "tiramisù"
+    ],
+    "explanation": "Tiramisu je talijanski desert od piškota, kave i kreme s mascarponeom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
