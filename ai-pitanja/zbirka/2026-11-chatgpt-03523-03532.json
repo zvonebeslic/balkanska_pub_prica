@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3523-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Glazba",
+    "focus": "Nina Simone - Feeling Good",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je američka pjevačica proslavila svoju izvedbu pjesme 'Feeling Good' na albumu 'I Put a Spell on You'?",
+    "answers": [
+      "Nina Simone"
+    ],
+    "explanation": "Nina Simone snimila je poznatu izvedbu pjesme 1965.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Feeling_Good"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3524-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Nogomet",
+    "focus": "Celtic - Glasgow",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem škotskom gradu domaće utakmice igra nogometni klub Celtic?",
+    "answers": [
+      "Glasgow"
+    ],
+    "explanation": "Celtic FC osnovan je i djeluje u Glasgowu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Celtic_F.C."
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3525-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Film",
+    "focus": "Amélie - Montmartre",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se pariškoj četvrti odvija velik dio radnje filma 'Amélie' iz 2001.?",
+    "answers": [
+      "Montmartre"
+    ],
+    "explanation": "Amélie radi u kafiću na Montmartreu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3526-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Književnost",
+    "focus": "Dorian Gray - Oscar Wilde",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman 'Slika Doriana Graya', u kojem portret stari umjesto glavnog junaka?",
+    "answers": [
+      "Oscar Wilde"
+    ],
+    "explanation": "Oscar Wilde autor je romana iz 1890.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3527-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Namib - Afrika",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se kontinentu nalazi pustinja Namib, poznata po visokim crvenim dinama uz Atlantik?",
+    "answers": [
+      "Afrika"
+    ],
+    "explanation": "Pustinja Namib prostire se uz atlantsku obalu južne Afrike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Namib"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3528-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Životinje",
+    "focus": "Aksolotl - vodozemac",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac može zadržati vanjske škrge i u odrasloj dobi te obnavljati izgubljene udove?",
+    "answers": [
+      "Aksolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po neoteniji i regeneraciji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3529-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Kemija",
+    "focus": "Galij - taljenje",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se kemijski element sa simbolom Ga može rastaliti na dlanu jer mu je talište oko 30 °C?",
+    "answers": [
+      "Galij"
+    ],
+    "explanation": "Galij se tali pri približno 29,8 °C.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gallium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3530-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta - 1215",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine engleski kralj Ivan Bez Zemlje prihvatio Magnu Cartu?",
+    "answers": [
+      "1215"
+    ],
+    "explanation": "Magna Carta prvi je put izdana 1215. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3531-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Linux - Tux",
+    "difficulty": 2,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Koja je životinja prikazana u maskoti Tux, simbolu Linuxa?",
+    "answers": [
+      "Pingvin"
+    ],
+    "explanation": "Tux je pingvin koji služi kao maskota Linuxa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tux_(mascot)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3532-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Medicina",
+    "focus": "Oftalmologija - oči",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove grana medicine koja se bavi bolestima oka i vida?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija proučava i liječi bolesti očiju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
