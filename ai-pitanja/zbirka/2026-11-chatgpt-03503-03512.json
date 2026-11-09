@@ -1,0 +1,225 @@
+[
+  {
+    "id": "chatgpt10000-3503-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Glazba",
+    "focus": "Tina Turner - Proud Mary",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je pjevačica proslavila energičnu obradu pjesme 'Proud Mary' sa svojim tadašnjim suprugom Ikeom?",
+    "answers": [
+      "Tina Turner"
+    ],
+    "explanation": "Tina Turner i Ike Turner izvodili su poznatu verziju pjesme 'Proud Mary'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Proud_Mary"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3504-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Nogomet",
+    "focus": "Ajax - Amsterdam",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem nizozemskom gradu svoje domaće utakmice igra nogometni klub Ajax?",
+    "answers": [
+      "Amsterdam"
+    ],
+    "explanation": "Ajax je nogometni klub iz Amsterdama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/AFC_Ajax"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3505-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Film",
+    "focus": "Forrest Gump - Tom Hanks",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je glumac osvojio Oscara za glavnu ulogu u filmu 'Forrest Gump'?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Tom Hanks glumio je Forresta Gumpa i osvojio Oscara za tu ulogu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3506-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Književnost",
+    "focus": "Pinokio - Carlo Collodi",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je talijanski književnik napisao priču o drvenom lutku Pinokiju?",
+    "answers": [
+      "Carlo Collodi",
+      "Collodi"
+    ],
+    "explanation": "Carlo Collodi autor je romana o Pinokiju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Adventures_of_Pinocchio"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3507-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Dunav - Bratislava",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja europska prijestolnica leži na Dunavu, neposredno uz granice Austrije i Mađarske?",
+    "answers": [
+      "Bratislava"
+    ],
+    "explanation": "Bratislava je glavni grad Slovačke na Dunavu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bratislava"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3508-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Životinje",
+    "focus": "Narval - kljova",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji je morski sisavac poznat po dugoj spiralnoj kljovi zbog koje ga nazivaju morskim jednorogom?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narval ima karakterističan izduženi zub nalik kljovi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3509-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Kemija",
+    "focus": "Natrij - simbol Na",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji kemijski element ima simbol Na, a njegov se spoj s klorom nalazi u kuhinjskoj soli?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": "Natrij ima kemijski simbol Na, a natrijev klorid je kuhinjska sol.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3510-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Povijest",
+    "focus": "Titanic - 1912",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine na prvom putovanju potonuo putnički brod Titanic?",
+    "answers": [
+      "1912"
+    ],
+    "explanation": "Titanic je potonuo u travnju 1912. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titanic"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3511-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth - Harald Modrozubi",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je danskom kralju, čiji nadimak znači Modrozubi, nazvana bežična tehnologija Bluetooth?",
+    "answers": [
+      "Harald Modrozubi",
+      "Harald Bluetooth",
+      "Harald I."
+    ],
+    "explanation": "Bluetooth je dobio ime po kralju Haraldu Modrozubom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3512-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Medicina",
+    "focus": "Oftalmologija - oči",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva medicinska specijalnost koja se bavi bolestima oka i vida?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija je grana medicine posvećena očima i vidu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
