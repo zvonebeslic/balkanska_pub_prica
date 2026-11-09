@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3533-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Sport",
+    "focus": "Curling - metla",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem se zimskom sportu igrači koriste četkama kako bi utjecali na kretanje kamena po ledu?",
+    "answers": [
+      "Curling"
+    ],
+    "explanation": "U curlingu se led četka ispred klizajućeg kamena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3534-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Televizija",
+    "focus": "The Office - Dunder Mifflin",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove izmišljena tvrtka za prodaju papira u američkoj seriji 'The Office'?",
+    "answers": [
+      "Dunder Mifflin"
+    ],
+    "explanation": "Dunder Mifflin izmišljena je tvrtka u seriji The Office.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dunder_Mifflin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3535-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "Claude Monet - Lopoči",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je impresionistički slikar stvorio poznati ciklus slika 'Lopoči' nadahnut vrtom u Givernyju?",
+    "answers": [
+      "Claude Monet"
+    ],
+    "explanation": "Monet je desetljećima slikao lopoče iz svojega vrta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Water_Lilies_(Monet_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3536-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera - dan i godina",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem planetu Sunčeva sustava jedan okret oko osi traje dulje od obilaska oko Sunca?",
+    "answers": [
+      "Venera"
+    ],
+    "explanation": "Venerin siderički dan traje oko 243, a godina oko 225 zemaljskih dana.",
+    "sources": [
+      "https://science.nasa.gov/venus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3537-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "Gnocchi - njoki",
+    "difficulty": 1,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se nazivaju mali talijanski valjušci koji se često pripremaju od krumpira i brašna?",
+    "answers": [
+      "Njoki"
+    ],
+    "explanation": "Njoki su valjušci od tijesta, često s krumpirom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gnocchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3538-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Videoigre",
+    "focus": "Sonic - jež",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kojoj životinjskoj vrsti pripada plavi Sega lik Sonic?",
+    "answers": [
+      "Jež"
+    ],
+    "explanation": "Sonic the Hedgehog plavi je antropomorfni jež.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3539-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Jezik",
+    "focus": "Onomatopeja - zvuk",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ koja svojim zvukom oponaša ono što označava, primjerice 'kuc-kuc'?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je glasovno oponašanje zvukova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3540-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Brendovi",
+    "focus": "Adidas - tri pruge",
+    "difficulty": 1,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Koji je sportski brend posebno prepoznatljiv po motivu triju paralelnih pruga?",
+    "answers": [
+      "Adidas"
+    ],
+    "explanation": "Tri pruge zaštitni su znak Adidasa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adidas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3541-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Biologija",
+    "focus": "Mikoriza - gljive korijen",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva simbioza gljive i korijena biljke, korisna za upijanje hranjivih tvari?",
+    "answers": [
+      "Mikoriza"
+    ],
+    "explanation": "Mikoriza je simbiotska veza gljive i biljnog korijena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mycorrhiza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3542-20261109",
+    "createdAt": "2026-11-09T21:39:00+01:00",
+    "updatedAt": "2026-11-09T21:39:00+01:00",
+    "topic": "Promet",
+    "focus": "Shinkansen - Japan",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se naziva japanska mreža brzih vlakova poznata i pod nadimkom 'vlak-metak'?",
+    "answers": [
+      "Shinkansen"
+    ],
+    "explanation": "Shinkansen je japanska mreža brzih željeznica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shinkansen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
