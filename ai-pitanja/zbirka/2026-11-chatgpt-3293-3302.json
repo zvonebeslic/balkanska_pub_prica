@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3293-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Glazba",
+    "focus": "pjevačica Rolling in the Deep",
+    "difficulty": 1,
+    "styleId": 63,
+    "styleDescription": "Kreni od poznate pjesme i traži spomenuto mjesto",
+    "question": "Koja je britanska pjevačica proslavila pjesmu Rolling in the Deep?",
+    "answers": [
+      "Adele"
+    ],
+    "explanation": "Adele je objavila Rolling in the Deep kao singl s albuma 21.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rolling_in_the_Deep"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3294-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida godina",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, simbol kraja podjele njemačkoga glavnog grada?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3295-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Titanic",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je režirao filmski hit Titanic iz 1997.?",
+    "answers": [
+      "James Cameron"
+    ],
+    "explanation": "James Cameron režirao je Titanic.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3296-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Zemljopis",
+    "focus": "najveća pustinja Afrike",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja se pustinja prostire preko velikog dijela sjeverne Afrike?",
+    "answers": [
+      "Sahara"
+    ],
+    "explanation": "Sahara je golema vruća pustinja sjeverne Afrike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sahara"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3297-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Medicina",
+    "focus": "bradikardija",
+    "difficulty": 3,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se stručnim nazivom naziva neuobičajeno usporen srčani ritam?",
+    "answers": [
+      "Bradikardija"
+    ],
+    "explanation": "Bradikardija je usporen srčani ritam.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bradycardia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3298-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Književnost",
+    "focus": "autor Procesa",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman Proces, čiji je glavni lik Josef K.?",
+    "answers": [
+      "Franz Kafka"
+    ],
+    "explanation": "Franz Kafka autor je romana Proces.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Trial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3299-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Životinje",
+    "focus": "jedini leteći sisavci",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je skupina sisavaca jedina sposobna za aktivan let?",
+    "answers": [
+      "Šišmiši"
+    ],
+    "explanation": "Šišmiši su jedini sisavci sposobni za pravi aktivni let.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bat"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3300-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Matematika",
+    "focus": "broj stranica šesterokuta",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko stranica ima pravilni šesterokut?",
+    "answers": [
+      "6"
+    ],
+    "explanation": "Šesterokut je mnogokut sa šest stranica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hexagon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3301-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Moda",
+    "focus": "materijal traperica",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koja se čvrsta pamučna tkanina najčešće koristi za izradu traperica?",
+    "answers": [
+      "Denim"
+    ],
+    "explanation": "Denim je čvrsta tkanina od koje se izrađuju traperice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Denim"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3302-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Astronomija",
+    "focus": "crveni planet",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji planet Sunčeva sustava zbog željeznih oksida na površini zovemo Crvenim planetom?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Marsovu crvenkastu boju uzrokuju željezni oksidi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mars"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
