@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3273-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Thriller",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je pjevač 1982. objavio album Thriller?",
+    "answers": [
+      "Michael Jackson"
+    ],
+    "explanation": "Michael Jackson objavio je album Thriller 1982.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Thriller_(album)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3274-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Sport",
+    "focus": "nadimak Crveni vragovi",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koju nogometnu reprezentaciju često nazivaju Crvenim vragovima?",
+    "answers": [
+      "Belgija"
+    ],
+    "explanation": "Belgijska reprezentacija nosi nadimak Crveni vragovi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Belgium_national_football_team"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3275-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Film",
+    "focus": "glavni lik Forrest Gump",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji glumac tumači naslovni lik u filmu Forrest Gump iz 1994.?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Tom Hanks osvojio je Oscara za naslovnu ulogu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3276-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Književnost",
+    "focus": "autorica Harry Potter",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska književnica stvorila lik Harryja Pottera?",
+    "answers": [
+      "J. K. Rowling"
+    ],
+    "explanation": "J. K. Rowling autorica je serijala o Harryju Potteru.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/J._K._Rowling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3277-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Maroka",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Casablanca je najveći grad Maroka, ali koji je njegov glavni grad?",
+    "answers": [
+      "Rabat"
+    ],
+    "explanation": "Rabat je glavni grad Maroka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rabat"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3278-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Životinje",
+    "focus": "najveća živuća mačka",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je najveća danas živuća vrsta divlje mačke?",
+    "answers": [
+      "Tigar"
+    ],
+    "explanation": "Tigar je najveća živuća vrsta mačke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiger"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3279-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol Na",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se kemijski element skriva iza oznake Na?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": "Na je kemijski simbol natrija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3280-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Povijest",
+    "focus": "prvi čovjek na Mjesecu",
+    "difficulty": 1,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Tko je 1969. prvi zakoračio na površinu Mjeseca?",
+    "answers": [
+      "Neil Armstrong"
+    ],
+    "explanation": "Neil Armstrong prvi je čovjek koji je stupio na Mjesec.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neil_Armstrong"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3281-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Tehnologija",
+    "focus": "kratica CPU",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja troslovna kratica označava središnju procesorsku jedinicu računala?",
+    "answers": [
+      "CPU"
+    ],
+    "explanation": "CPU znači central processing unit.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Central_processing_unit"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3282-20261109",
+    "createdAt": "2026-11-09T04:36:50+01:00",
+    "updatedAt": "2026-11-09T04:36:50+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija",
+    "difficulty": 2,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove medicinska grana koja se bavi očima i bolestima vida?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija proučava oko i njegove bolesti.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
