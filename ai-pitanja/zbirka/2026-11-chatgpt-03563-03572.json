@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3563-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Televizija",
+    "focus": "Breaking Bad - Walter White",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Kako se preziva srednjoškolski profesor kemije Walter iz serije 'Breaking Bad'?",
+    "answers": [
+      "White"
+    ],
+    "explanation": "Glavni lik serije zove se Walter White.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3564-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Zvjezdana noć - Van Gogh",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "explanation": "Van Gogh naslikao je djelo tijekom boravka u Saint-Rémyju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3565-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Gastronomija",
+    "focus": "Guacamole - avokado",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje je voće glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Guacamole se tradicionalno priprema od zgnječenog avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3566-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Brendovi",
+    "focus": "IKEA - Švedska",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "U kojoj je europskoj državi osnovan lanac trgovina namještajem IKEA?",
+    "answers": [
+      "Švedska"
+    ],
+    "explanation": "IKEA je osnovana u Švedskoj 1943.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/IKEA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3567-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Biologija",
+    "focus": "Fotosinteza - klorofil",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove zeleni pigment u biljkama koji upija svjetlost potrebnu za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost u fotosintezi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3568-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Politika",
+    "focus": "Ujedinjeni narodi - New York",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se američkom gradu nalazi glavno sjedište Ujedinjenih naroda?",
+    "answers": [
+      "New York"
+    ],
+    "explanation": "Sjedište UN-a nalazi se na Manhattanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3569-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Pop kultura",
+    "focus": "Harry Potter - Hogwarts",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove škola čarobnjaštva koju pohađa Harry Potter?",
+    "answers": [
+      "Hogwarts"
+    ],
+    "explanation": "Hogwarts je čarobnjačka škola iz serijala.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hogwarts"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3570-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Fizika",
+    "focus": "Isaac Newton - gravitacija",
+    "difficulty": 1,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji je engleski znanstvenik formulirao zakon univerzalne gravitacije?",
+    "answers": [
+      "Isaac Newton"
+    ],
+    "explanation": "Newton je opisao univerzalnu gravitaciju u djelu Principia.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isaac_Newton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3571-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Glazba",
+    "focus": "Daft Punk - Francuska",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Iz koje zemlje potječe elektronički duo Daft Punk?",
+    "answers": [
+      "Francuska"
+    ],
+    "explanation": "Daft Punk nastao je u Parizu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Daft_Punk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3572-20261109",
+    "createdAt": "2026-11-09T23:38:46+01:00",
+    "updatedAt": "2026-11-09T23:38:46+01:00",
+    "topic": "Sport",
+    "focus": "Wimbledon - tenis",
+    "difficulty": 1,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Uz koji se sport veže poznati turnir Wimbledon?",
+    "answers": [
+      "Tenis"
+    ],
+    "explanation": "Wimbledon je jedan od četiri Grand Slam turnira u tenisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
