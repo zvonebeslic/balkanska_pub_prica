@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-3233-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Glazba",
+    "focus": "izvođač pjesme Smooth Operator",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je pjevačica, rođena u Nigeriji, svojim prepoznatljivim glasom proslavila hit 'Smooth Operator' iz 1984.?",
+    "answers": [
+      "Sade",
+      "Sade Adu"
+    ],
+    "explanation": "Sade Adu predvodi sastav Sade, a Smooth Operator nalazi se na albumu Diamond Life.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Smooth_Operator"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3234-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Nogomet",
+    "focus": "klub iz grada Bergama",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji talijanski nogometni klub iz Bergama domaće utakmice igra u crno-plavim dresovima i nosi nadimak La Dea?",
+    "answers": [
+      "Atalanta",
+      "Atalanta BC"
+    ],
+    "explanation": "Atalanta Bergamasca Calcio klub je iz Bergama, a La Dea znači Božica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Atalanta_BC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3235-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Film",
+    "focus": "lik kojeg glumi Robin Williams u Jumanjiju",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U filmu 'Jumanji' iz 1995. dječak ostaje zarobljen u društvenoj igri i izlazi iz nje kao odrastao čovjek. Koji glumac tumači odraslog Alana Parrisha?",
+    "answers": [
+      "Robin Williams"
+    ],
+    "explanation": "Robin Williams igra odraslog Alana Parrisha u filmu Jumanji iz 1995.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jumanji_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3236-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Mali princ",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Pilot koji u pustinji susreće dječaka s drugog planeta pripovijeda priču iz kojeg poznatog književnog djela?",
+    "answers": [
+      "Mali princ",
+      "Le Petit Prince"
+    ],
+    "explanation": "Mali princ je novela Antoinea de Saint-Exupéryja objavljena 1943.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3237-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 48,
+    "styleDescription": "Poveži poznatu rijeku s manje poznatim pritokom",
+    "question": "Ako brodom prođete ispod Lančanog mosta u Budimpešti, kojom velikom europskom rijekom plovite?",
+    "answers": [
+      "Dunav",
+      "Danube"
+    ],
+    "explanation": "Lančani most povezuje Budim i Peštu preko Dunava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sz%C3%A9chenyi_Chain_Bridge"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3238-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Biologija",
+    "focus": "biljka od koje se dobiva vanilija",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Mirisna mahuna od koje nastaje prirodna vanilija plod je biljke iz koje poznate porodice cvjetnica?",
+    "answers": [
+      "Orhideje",
+      "Orhideja",
+      "Orchidaceae"
+    ],
+    "explanation": "Vanilla planifolia vrsta je orhideje čiji se plodovi koriste za proizvodnju vanilije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vanilla_planifolia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3239-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol volframa",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Žarna nit klasične žarulje izrađivala se od metala iznimno visokog tališta čiji je kemijski simbol W. Koji je to metal?",
+    "answers": [
+      "Volfram",
+      "Tungsten"
+    ],
+    "explanation": "Volfram ima kemijski simbol W, prema nazivu wolfram, i vrlo visoko talište.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3240-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Povijest",
+    "focus": "prva žena premijerka Ujedinjenog Kraljevstva",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koja je političarka 1979. postala prva žena na čelu britanske vlade, a ostala poznata pod nadimkom Željezna Lady?",
+    "answers": [
+      "Margaret Thatcher",
+      "Margaret Hilda Thatcher"
+    ],
+    "explanation": "Margaret Thatcher bila je britanska premijerka od 1979. do 1990.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Margaret_Thatcher"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3241-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Tehnologija",
+    "focus": "značenje kratice RAM",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kad računalu ponestane radne memorije, često uspori. Koje tri engleske riječi stoje iza kratice RAM?",
+    "answers": [
+      "Random Access Memory"
+    ],
+    "explanation": "RAM znači Random Access Memory, odnosno memorija s nasumičnim pristupom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Random-access_memory"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3242-20261109",
+    "createdAt": "2026-11-09T01:36:37+01:00",
+    "updatedAt": "2026-11-09T01:36:37+01:00",
+    "topic": "Medicina",
+    "focus": "medicinski naziv za gubitak njuha",
+    "difficulty": 3,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se u medicini naziva potpuni gubitak osjeta mirisa, koji se može pojaviti nakon infekcije ili ozljede?",
+    "answers": [
+      "Anosmija",
+      "Anosmia"
+    ],
+    "explanation": "Anosmija označava gubitak sposobnosti osjećanja mirisa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anosmia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
