@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chatgpt10000-3433-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps - plivanje",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem je sportu Michael Phelps osvojio rekordni broj olimpijskih zlatnih medalja?",
+    "answers": [
+      "Plivanje"
+    ],
+    "explanation": "Phelps je američki olimpijski plivač.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Michael_Phelps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3434-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Serije",
+    "focus": "Friends - Central Perk",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove kafić u kojem se često sastaje šest prijatelja iz serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk je omiljeno okupljalište likova serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3435-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Umjetnost",
+    "focus": "Guernica - Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski slikar naslikao 'Guernicu'?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je Guernicu naslikao 1937.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3436-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Astronomija",
+    "focus": "Mars - Olympus Mons",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se planetu nalazi golemi vulkan Olympus Mons?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Olympus Mons nalazi se na Marsu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Olympus_Mons"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3437-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Gastronomija",
+    "focus": "Guacamole - avokado",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je plod glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Guacamole se priprema prvenstveno od avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3438-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Brendovi",
+    "focus": "Adidas - tri pruge",
+    "difficulty": 1,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Koja je sportska marka poznata po motivu triju pruga?",
+    "answers": [
+      "Adidas"
+    ],
+    "explanation": "Tri pruge prepoznatljiv su zaštitni znak Adidasa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adidas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3439-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Biologija",
+    "focus": "Klorofil - zelena boja",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji biljni pigment upija svjetlost potrebnu za fotosintezu i daje listovima zelenu boju?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil sudjeluje u apsorpciji svjetlosti tijekom fotosinteze.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3440-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom - čitanje unatrag",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom ima isti slijed znakova u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3441-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Politika",
+    "focus": "Ujedinjeni narodi - 1945",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koja je međunarodna organizacija osnovana 1945. radi promicanja mira i suradnje među državama?",
+    "answers": [
+      "Ujedinjeni narodi",
+      "UN",
+      "OUN"
+    ],
+    "explanation": "Ujedinjeni narodi osnovani su 1945.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/United_Nations"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3442-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft - Mojang",
+    "difficulty": 2,
+    "styleId": 23,
+    "styleDescription": "Pitaj što je posljednje u nizu tehnoloških izuma",
+    "question": "Koji je švedski studio izvorno razvio videoigru Minecraft?",
+    "answers": [
+      "Mojang",
+      "Mojang Studios"
+    ],
+    "explanation": "Minecraft je izvorno razvio Mojang.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mojang_Studios"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
