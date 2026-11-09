@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3393-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Glazba",
+    "focus": "Daft Punk - francuski elektronički duo",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je francuski elektronički duo poznat po kacigama i hitu Get Lucky?",
+    "answers": [
+      "Daft Punk"
+    ],
+    "explanation": "Duo Daft Punk objavio je Get Lucky 2013.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Daft_Punk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3394-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Nogomet",
+    "focus": "Borussia Dortmund - Signal Iduna Park",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji njemački nogometni klub domaće utakmice igra na stadionu Signal Iduna Park?",
+    "answers": [
+      "Borussia Dortmund"
+    ],
+    "explanation": "Signal Iduna Park domaći je stadion Borussije Dortmund.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Borussia_Dortmund"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3395-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Film",
+    "focus": "Jurski park - Steven Spielberg",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je režirao filmski hit Jurski park iz 1993. godine?",
+    "answers": [
+      "Steven Spielberg"
+    ],
+    "explanation": "Steven Spielberg režirao je Jurski park.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3396-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Književnost",
+    "focus": "Pipi Duga Čarapa - Astrid Lindgren",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je švedska književnica stvorila lik Pipi Duge Čarape?",
+    "answers": [
+      "Astrid Lindgren"
+    ],
+    "explanation": "Astrid Lindgren autorica je priča o Pipi Dugoj Čarapi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Astrid_Lindgren"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3397-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Zemljopis",
+    "focus": "Petra - Jordan",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se današnjoj državi nalazi drevni grad Petra, poznat po pročeljima isklesanima u stijeni?",
+    "answers": [
+      "Jordan"
+    ],
+    "explanation": "Petra je arheološki lokalitet u Jordanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Petra"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3398-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Životinje",
+    "focus": "Flamingo - ružičasta boja - prehrana",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koje ptice duguju svoju prepoznatljivu ružičastu boju pigmentima iz hrane koju jedu?",
+    "answers": [
+      "Flamingosi"
+    ],
+    "explanation": "Karotenoidi iz hrane pridonose ružičastoj boji flamingosa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Flamingo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3399-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Kemija",
+    "focus": "Volfram - simbol W",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol W i često se koristi za žarne niti?",
+    "answers": [
+      "Volfram"
+    ],
+    "explanation": "Simbol W potječe od naziva wolfram.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3400-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Povijest",
+    "focus": "Pad Berlinskog zida - 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine pao Berlinski zid, jedan od najpoznatijih simbola Hladnog rata?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je u studenome 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3401-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Medicina",
+    "focus": "Stetoskop - slušanje srca",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove instrument kojim liječnik sluša rad srca i pluća?",
+    "answers": [
+      "Stetoskop"
+    ],
+    "explanation": "Stetoskop služi za auskultaciju, odnosno slušanje zvukova iz tijela.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stethoscope"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3402-20261109",
+    "createdAt": "2026-11-09T12:38:22+01:00",
+    "updatedAt": "2026-11-09T12:38:22+01:00",
+    "topic": "Tehnologija",
+    "focus": "USB - Universal Serial Bus",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se troslovna kratica koristi za standard povezivanja uređaja čije puno ime glasi Universal Serial Bus?",
+    "answers": [
+      "USB"
+    ],
+    "explanation": "USB znači Universal Serial Bus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/USB"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
