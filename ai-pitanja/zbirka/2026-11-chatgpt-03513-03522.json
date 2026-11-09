@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chatgpt10000-3513-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Sport",
+    "focus": "Tour de France - žuta majica",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koje je boje majica koju nosi vodeći biciklist u ukupnom poretku Tour de Francea?",
+    "answers": [
+      "Žuta",
+      "Žute"
+    ],
+    "explanation": "Žuta majica označava vodećeg u ukupnom poretku Tour de Francea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yellow_jersey"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3514-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Televizija",
+    "focus": "Friends - Central Perk",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se zove kafić u kojem se često okupljaju likovi serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk je kafić iz serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Central_Perk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3515-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "Michelangelo - David",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je renesansni umjetnik isklesao poznati mramorni kip Davida u Firenci?",
+    "answers": [
+      "Michelangelo",
+      "Michelangelo Buonarroti"
+    ],
+    "explanation": "Michelangelo je autor slavnog kipa Davida.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3516-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Mars - Olympus Mons",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se planetu nalazi golemi vulkan Olympus Mons?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Olympus Mons je veliki štitasti vulkan na Marsu.",
+    "sources": [
+      "https://science.nasa.gov/mars/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3517-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "Tiramisu - mascarpone",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je talijanski kremasti sir ključan sastojak tradicionalnog tiramisua?",
+    "answers": [
+      "Mascarpone"
+    ],
+    "explanation": "Mascarpone se koristi u kremi za tiramisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3518-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom - čitanje",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom zadržava isti slijed znakova u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3519-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO - Danska",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Iz koje države potječe proizvođač kockica LEGO?",
+    "answers": [
+      "Danska",
+      "Danske"
+    ],
+    "explanation": "LEGO je osnovan u Danskoj.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3520-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Biljke",
+    "focus": "Suncokret - heliotropizam",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je visoka biljka poznata po velikoj žutoj cvjetnoj glavi i sjemenkama iz kojih se dobiva jestivo ulje?",
+    "answers": [
+      "Suncokret"
+    ],
+    "explanation": "Suncokret je uljarica prepoznatljiva po velikoj cvjetnoj glavi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Common_sunflower"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3521-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Fizika",
+    "focus": "Newton - sila",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Po kojem je znanstveniku nazvana SI jedinica za silu?",
+    "answers": [
+      "Isaac Newton",
+      "Newton"
+    ],
+    "explanation": "Newton je SI jedinica sile nazvana po Isaacu Newtonu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton_(unit)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3522-20261109",
+    "createdAt": "2026-11-09T20:39:00+01:00",
+    "updatedAt": "2026-11-09T20:39:00+01:00",
+    "topic": "Pop-kultura",
+    "focus": "Pokémon - Pikachu",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji je žuti Pokémon poznat po električnim napadima i prijateljstvu s Ashom Ketchumom?",
+    "answers": [
+      "Pikachu"
+    ],
+    "explanation": "Pikachu je električni Pokémon i Ashov najpoznatiji suputnik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pikachu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
