@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-3543-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie - Ziggy Stardust",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koji je britanski glazbenik nastupao pod scenskim alter egom Ziggy Stardust?",
+    "answers": [
+      "David Bowie",
+      "Bowie"
+    ],
+    "explanation": "Ziggy Stardust bio je Bowiejev izmišljeni rock-lik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ziggy_Stardust_(character)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3544-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Nogomet",
+    "focus": "Nottingham Forest - Brian Clough",
+    "difficulty": 3,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je engleski klub pod vodstvom Briana Clougha osvojio Kup prvaka 1979. i 1980. godine?",
+    "answers": [
+      "Nottingham Forest",
+      "Nottingham"
+    ],
+    "explanation": "Nottingham Forest osvojio je dva uzastopna europska naslova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nottingham_Forest_F.C."
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3545-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Film",
+    "focus": "Amélie - Montmartre",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se pariškoj četvrti uglavnom odvija radnja filma 'Amélie' iz 2001. godine?",
+    "answers": [
+      "Montmartre"
+    ],
+    "explanation": "Amélie radi u kafiću na Montmartreu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3546-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Književnost",
+    "focus": "Moby-Dick - kapetan Ahab",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kako se zove kapetan broda Pequod opsjednut lovom na bijelog kita u romanu 'Moby-Dick'?",
+    "answers": [
+      "Ahab",
+      "Kapetan Ahab"
+    ],
+    "explanation": "Ahab je kapetan Pequoda u romanu Hermana Melvillea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Captain_Ahab"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3547-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto - enklava",
+    "difficulty": 2,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koja je afrička država u potpunosti okružena teritorijem Južnoafričke Republike?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je suverena enklava unutar Južnoafričke Republike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3548-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Životinje",
+    "focus": "Okapi - srodnik žirafe",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja životinja iz šuma DR Konga ima prugaste noge nalik zebrinima, ali joj je najbliži živući srodnik žirafa?",
+    "answers": [
+      "Okapi"
+    ],
+    "explanation": "Okapi pripada porodici žirafa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3549-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Kemija",
+    "focus": "Galij - talište",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se metal kemijskog simbola Ga može rastopiti već na toplini ljudskog dlana?",
+    "answers": [
+      "Galij",
+      "Gallium"
+    ],
+    "explanation": "Galij se tali na približno 29,8 °C.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gallium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3550-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Povijest",
+    "focus": "Rosetta Stone - hijeroglifi",
+    "difficulty": 2,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koji je poznati kamen s natpisima na tri pisma pomogao u dešifriranju egipatskih hijeroglifa?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rozetski kamen",
+      "Rosetta Stone"
+    ],
+    "explanation": "Kamen iz Rosette sadržava tekst na hijeroglifima, demotskom i grčkom pismu.",
+    "sources": [
+      "https://www.britishmuseum.org/collection/object/Y_EA24"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3551-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Tehnologija",
+    "focus": "Linux - Linus Torvalds",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je finski programer 1991. započeo razvoj jezgre operacijskog sustava Linux?",
+    "answers": [
+      "Linus Torvalds",
+      "Torvalds"
+    ],
+    "explanation": "Torvalds je objavio početak rada na Linuxu 1991.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Linus_Torvalds"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3552-20261109",
+    "createdAt": "2026-11-09T22:38:22+01:00",
+    "updatedAt": "2026-11-09T22:38:22+01:00",
+    "topic": "Medicina",
+    "focus": "Oftalmologija - oko",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove grana medicine koja se bavi bolestima oka i vida?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija je medicinska specijalnost za oči i vid.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
