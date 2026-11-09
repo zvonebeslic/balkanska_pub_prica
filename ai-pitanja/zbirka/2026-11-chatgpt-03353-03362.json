@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-3353-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Sport",
+    "focus": "biatlon - dvije discipline",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koji zimski sport u jednoj utrci spaja skijaško trčanje i gađanje puškom?",
+    "answers": [
+      "biatlon"
+    ],
+    "explanation": "Biatlon povezuje skijaško trčanje i streljaštvo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Biathlon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3354-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Serije",
+    "focus": "The Office - Dunder Mifflin",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojoj se humorističnoj seriji radnja odvija u podružnici izmišljene papirne tvrtke Dunder Mifflin?",
+    "answers": [
+      "The Office",
+      "U uredu"
+    ],
+    "explanation": "Američka serija The Office prati zaposlenike Dunder Mifflina u Scrantonu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3355-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Dali - Postojanost pamćenja",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski nadrealist naslikao Postojanost pamćenja, djelo s mekanim satovima?",
+    "answers": [
+      "Salvador Dalí",
+      "Salvador Dali",
+      "Dali",
+      "Dalí"
+    ],
+    "explanation": "Salvador Dalí naslikao je Postojanost pamćenja 1931.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Persistence_of_Memory"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3356-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan - Saturnov mjesec",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove najveći Saturnov prirodni satelit, poznat po gustoj atmosferi?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov mjesec i ima gustu atmosferu.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3357-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Gastronomija",
+    "focus": "humus - slanutak",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavni sastojak bliskoistočnog namaza humusa?",
+    "answers": [
+      "slanutak",
+      "slanutka"
+    ],
+    "explanation": "Humus se tradicionalno priprema od kuhanog slanutka i tahinija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3358-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Biologija",
+    "focus": "klorofil - zeleni pigment",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji biljni pigment upija svjetlost za fotosintezu i daje mnogim listovima zelenu boju?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Klorofil je ključni pigment u procesu fotosinteze.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3359-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Videoigre",
+    "focus": "Portal - Aperture Science",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojoj videoigri igrač rješava prostorne zagonetke pomoću uređaja koji otvara dva povezana portala?",
+    "answers": [
+      "Portal"
+    ],
+    "explanation": "Portal je Valveova logička videoigra iz 2007.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Portal_(video_game)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3360-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Politika",
+    "focus": "Nelson Mandela - Južna Afrika",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je borac protiv apartheida 1994. postao prvi crni predsjednik Južnoafričke Republike?",
+    "answers": [
+      "Nelson Mandela",
+      "Mandela"
+    ],
+    "explanation": "Nelson Mandela izabran je za predsjednika JAR-a 1994.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nelson_Mandela"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3361-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom - čitanje u oba smjera",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Palindrom ima isti redoslijed znakova pri čitanju u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3362-20261109",
+    "createdAt": "2026-11-09T08:42:35+01:00",
+    "updatedAt": "2026-11-09T08:42:35+01:00",
+    "topic": "Brendovi",
+    "focus": "Lego - Danska",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "U kojoj je europskoj državi nastala tvrtka LEGO, poznata po kockicama za slaganje?",
+    "answers": [
+      "Danska",
+      "Danskoj"
+    ],
+    "explanation": "LEGO je osnovan u danskom Billundu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
