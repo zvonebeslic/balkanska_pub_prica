@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-3313-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Književnost",
+    "focus": "Agatha Christie - Hercule Poirot",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska spisateljica stvorila detektiva Herculea Poirota i gospođicu Marple?",
+    "answers": [
+      "Agatha Christie",
+      "Agata Kristi"
+    ],
+    "explanation": "Agatha Christie autorica je detektivskih romana s Poirotom i Miss Marple.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Agatha_Christie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3314-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Frida Kahlo - autoportreti",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je meksička slikarica poznata po autoportretima i braku sa slikarom Diegom Riverom?",
+    "answers": [
+      "Frida Kahlo",
+      "Frida Kalo"
+    ],
+    "explanation": "Frida Kahlo poznata je po autoportretima i simboličkim prikazima vlastitog života.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frida_Kahlo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3315-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Medicina",
+    "focus": "inzulin - gušterača",
+    "difficulty": 2,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Koji hormon koji stvara gušterača pomaže stanicama preuzimati glukozu iz krvi?",
+    "answers": [
+      "inzulin",
+      "insulin"
+    ],
+    "explanation": "Inzulin regulira metabolizam glukoze i luče ga beta-stanice gušterače.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Insulin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3316-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris - tvorac",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je sovjetski programer 1984. osmislio igru Tetris?",
+    "answers": [
+      "Aleksej Pažitnov",
+      "Alexey Pajitnov",
+      "Aleksej Pazitnov"
+    ],
+    "explanation": "Tetris je 1984. stvorio Aleksej Pažitnov.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tetris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3317-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Sport",
+    "focus": "odbojka - libero",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Kako se u odbojci naziva specijalizirani obrambeni igrač koji nosi dres drukčije boje?",
+    "answers": [
+      "libero"
+    ],
+    "explanation": "Libero je obrambeni specijalist u odbojci, prepoznatljiv po kontrastnom dresu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3318-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Gastronomija",
+    "focus": "pesto genovese - bosiljak",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je aromatična biljka glavni zeleni sastojak tradicionalnog pesta genovese?",
+    "answers": [
+      "bosiljak",
+      "bazilika"
+    ],
+    "explanation": "Tradicionalni pesto genovese priprema se s bosiljkom, pinjolima, sirom, češnjakom i maslinovim uljem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3319-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Povijest",
+    "focus": "Pompeji - Vezuv",
+    "difficulty": 1,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Erupcija kojeg je vulkana 79. godine zatrpala rimski grad Pompeje?",
+    "answers": [
+      "Vezuv",
+      "Vesuvius"
+    ],
+    "explanation": "Pompeji su stradali u erupciji Vezuva 79. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pompeii"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3320-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera - najtopliji planet",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Merkur je najbliži Suncu, ali koji je planet zapravo najtopliji u Sunčevu sustavu?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venerina gusta atmosfera stvara snažan staklenički učinak i čini je najtoplijim planetom.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3321-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA - Waterloo Eurovizija",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "S kojom je pjesmom švedska skupina ABBA pobijedila na Eurosongu 1974.?",
+    "answers": [
+      "Waterloo"
+    ],
+    "explanation": "ABBA je pobijedila na Eurosongu 1974. pjesmom Waterloo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ABBA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3322-20261109",
+    "createdAt": "2026-11-09T06:43:18+01:00",
+    "updatedAt": "2026-11-09T06:43:18+01:00",
+    "topic": "Zemljopis",
+    "focus": "Pompeji - regija Kampanija",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se talijanskoj regiji nalaze antički Pompeji i grad Napulj?",
+    "answers": [
+      "Kampanija",
+      "Campania"
+    ],
+    "explanation": "Pompeji i Napulj nalaze se u južnotalijanskoj regiji Kampaniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pompeii"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
