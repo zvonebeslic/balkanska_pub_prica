@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-3443-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Glazba",
+    "focus": "Nirvana - Kurt Cobain",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Tko je bio glavni pjevač i gitarist grupe Nirvana?",
+    "answers": [
+      "Kurt Cobain",
+      "Cobain"
+    ],
+    "explanation": "Cobain je bio frontmen Nirvane.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kurt_Cobain"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3444-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Nogomet",
+    "focus": "Camp Nou - Barcelona",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koji nogometni klub svoje domaće utakmice tradicionalno igra na stadionu Camp Nou?",
+    "answers": [
+      "Barcelona",
+      "FC Barcelona"
+    ],
+    "explanation": "Camp Nou je stadion FC Barcelone.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Camp_Nou"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3445-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Film",
+    "focus": "Forrest Gump - Tom Hanks",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji glumac tumači naslovnog junaka filma 'Forrest Gump'?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Tom Hanks glumi Forresta Gumpa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3446-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Književnost",
+    "focus": "Sherlock Holmes - Watson",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se preziva liječnik i prijatelj Sherlocka Holmesa koji pripovijeda o mnogim njegovim slučajevima?",
+    "answers": [
+      "Watson",
+      "John Watson"
+    ],
+    "explanation": "Doktor John Watson Holmesov je prijatelj i suradnik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dr._Watson"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3447-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Zemljopis",
+    "focus": "Sahara - Afrika",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se kontinentu prostire pustinja Sahara?",
+    "answers": [
+      "Afrika"
+    ],
+    "explanation": "Sahara je najveća vruća pustinja svijeta i nalazi se u Africi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sahara"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3448-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Životinje",
+    "focus": "Hobotnica - osam krakova",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji morski mekušac ima osam krakova i može izbaciti tintu radi obrane?",
+    "answers": [
+      "Hobotnica"
+    ],
+    "explanation": "Hobotnice su glavonošci s osam krakova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Octopus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3449-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Fizika",
+    "focus": "Newton - sila",
+    "difficulty": 2,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Po kojem je znanstveniku nazvana SI jedinica sile?",
+    "answers": [
+      "Isaac Newton",
+      "Newton"
+    ],
+    "explanation": "Njutn (N) SI je jedinica sile.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton_(unit)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3450-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta - Ivan bez Zemlje",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji je engleski kralj 1215. prihvatio Magnu Cartu?",
+    "answers": [
+      "Ivan bez Zemlje",
+      "Ivan I.",
+      "John"
+    ],
+    "explanation": "Kralj Ivan pristao je na Magnu Cartu 1215.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3451-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Tehnologija",
+    "focus": "WWW - Tim Berners-Lee",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar osmislio World Wide Web?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Berners-Lee"
+    ],
+    "explanation": "Tim Berners-Lee razvio je World Wide Web u CERN-u.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3452-20261109",
+    "createdAt": "2026-11-09T14:40:26+01:00",
+    "updatedAt": "2026-11-09T14:40:26+01:00",
+    "topic": "Medicina",
+    "focus": "Insulin - gušterača",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji organ proizvodi hormon inzulin?",
+    "answers": [
+      "Gušterača",
+      "Pankreas"
+    ],
+    "explanation": "Inzulin luče beta-stanice gušterače.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pancreas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
