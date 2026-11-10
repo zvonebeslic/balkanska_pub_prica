@@ -321,6 +321,7 @@ const supabaseClient=window.supabase&&typeof window.supabase.createClient==='fun
 
 const MP_STATS_BASE='kviztogo_multiplayer_stats_v1',MP_GUEST_IDENTITY='kviztogo_guest_identity_v1',MP_GUEST_SECRET='kviztogo_guest_secret_v1',MP_GUEST_ALIAS='kviztogo_multiplayer_guest_alias_v1';
 let mpIdentityName='',mpIdentityUserId=null,mpIdentityIsGuest=true,mpNameRequired=false,pendingInviteParam=null,pendingTurnInviteParam=null;
+let mpAccessToken='',mpAccessExpiresAt=0;
 function mpTimestamp(d){const p=(v,n=2)=>String(v).padStart(n,'0');return p(d.getDate())+p(d.getMonth()+1)+d.getFullYear()+p(d.getHours())+p(d.getMinutes())+p(d.getSeconds())+p(d.getMilliseconds(),3)}
 function ensureMpGuestIdentity(){
   try{
@@ -365,13 +366,14 @@ async function loadMpIdentity(){
         let name=user.user_metadata?.username||user.user_metadata?.full_name||user.user_metadata?.name||user.email?.split('@')[0]||'Kvizoman';
         try{const q=await supabaseClient.from('profiles').select('username').eq('id',user.id).maybeSingle();if(q.data?.username)name=q.data.username}catch{}
         mpIdentityIsGuest=false;mpIdentityUserId=user.id;mpIdentityName=String(name||'Kvizoman').trim().slice(0,24);
+        mpAccessToken=data.session.access_token||'';mpAccessExpiresAt=Number(data.session.expires_at||0)*1000;
         try{localStorage.setItem('kviztogo_username',mpIdentityName)}catch{}
         try{await supabaseClient.rpc('daily30_claim_name',{p_player_key:'user:'+user.id,p_user_id:user.id,p_player_name:mpIdentityName})}catch{}
         syncMpIdentityUi();return mpIdentityName
       }
     }catch(e){console.warn('Profilno ime nije učitano:',e)}
   }
-  mpIdentityIsGuest=true;mpIdentityUserId=null;
+  mpIdentityIsGuest=true;mpIdentityUserId=null;mpAccessToken='';mpAccessExpiresAt=0;
   const identity=ensureMpGuestIdentity();
   if(identity.displayName&&!isLegacyAutoMpAlias(identity)){
     const existingName=String(identity.displayName).trim().slice(0,20);
@@ -1240,7 +1242,32 @@ document.addEventListener('visibilitychange',()=>{
   if(mpQuizPlayId&&!mpQuizCompleted)void updateMultiplayerQuizTracking()
 });
 
-async function api(action,payload={}){let r=await fetch(SB+'/rest/v1/rpc/multiplayer_v3',{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify({p_token:token(),p_action:action,p_payload:payload})});if(!r.ok)throw new Error(await r.text());return r.json()}
+async function api(action,payload={}){
+  const headers={apikey:KEY,'Content-Type':'application/json'};
+  let requestPayload=payload;
+  if(mpIdentityIsGuest){
+    if(['join','create_invite','join_invite','rename','turn_create_random','turn_create_invite','turn_join_invite'].includes(action)){
+      const identity=ensureMpGuestIdentity(),secret=getOrCreateMpGuestSecret();
+      if(!secret)throw new Error('Potvrda identiteta gosta nije uspjela.');
+      requestPayload={...payload,guest_id:identity.id,guest_secret:secret};
+    }
+  }else{
+    if(!supabaseClient)throw new Error('Prijava nije dostupna.');
+    if(!mpAccessToken||Date.now()>mpAccessExpiresAt-60000){
+      const {data,error}=await supabaseClient.auth.getSession();
+      if(error||!data?.session?.access_token)throw new Error('Prijava je istekla.');
+      mpAccessToken=data.session.access_token;
+      mpAccessExpiresAt=Number(data.session.expires_at||0)*1000;
+    }
+    headers.Authorization='Bearer '+mpAccessToken;
+  }
+  const r=await fetch(SB+'/rest/v1/rpc/multiplayer_v3',{
+    method:'POST',headers,
+    body:JSON.stringify({p_token:token(),p_action:action,p_payload:requestPayload})
+  });
+  if(!r.ok)throw new Error(await r.text());
+  return r.json()
+}
 function stopPoll(){clearInterval(pollTimer);pollTimer=null}
 function startPoll(){stopPoll();pollTimer=setInterval(()=>refresh('poll').catch(()=>{}),500)}
 function showLobby(){ $('game').classList.add('hidden');$('lobby').classList.remove('hidden') }
@@ -1813,7 +1840,7 @@ window.addEventListener('pagehide',()=>{
     saveRealDisconnectHint(state);
     fetch(SB+'/rest/v1/rpc/multiplayer_v3',{
       method:'POST',
-      headers:{apikey:KEY,'Content-Type':'application/json'},
+      headers:{apikey:KEY,'Content-Type':'application/json',...(mpAccessToken?{Authorization:'Bearer '+mpAccessToken}:{})},
       body:JSON.stringify({p_token:token(),p_action:'disconnect',p_payload:{match_id:state.match_id}}),
       keepalive:true
     }).catch(()=>{});
@@ -1822,7 +1849,7 @@ window.addEventListener('pagehide',()=>{
   if(!friendInviteShareFlow&&!state?.match_id&&(state?.status==='invite_waiting'||state?.status==='waiting')){
     fetch(SB+'/rest/v1/rpc/multiplayer_v3',{
       method:'POST',
-      headers:{apikey:KEY,'Content-Type':'application/json'},
+      headers:{apikey:KEY,'Content-Type':'application/json',...(mpAccessToken?{Authorization:'Bearer '+mpAccessToken}:{})},
       body:JSON.stringify({p_token:token(),p_action:'leave',p_payload:{}}),
       keepalive:true
     }).catch(()=>{})
