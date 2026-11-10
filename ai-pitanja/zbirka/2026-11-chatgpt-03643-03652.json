@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-3643-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa - Jupiterov mjesec",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji planet obilazi ledeni mjesec Europa, ispod čije se kore vjerojatno nalazi ocean?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Europa je jedan od velikih Jupiterovih mjeseca.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3644-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt - Berlin 2009",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Za koliko je sekundi Usain Bolt istrčao svjetski rekord na 100 metara u Berlinu 2009.?",
+    "answers": [
+      "9,58",
+      "9.58",
+      "9,58 sekundi"
+    ],
+    "explanation": "Bolt je na Svjetskom prvenstvu 2009. istrčao 9,58 sekundi.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/jesse-owens-usain-bolt-evolution-100m-world-record"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3645-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA - švedsko podrijetlo",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Iz koje zemlje dolazi pop-grupa ABBA, pobjednik Eurosonga 1974.?",
+    "answers": [
+      "Švedska",
+      "Švedske"
+    ],
+    "explanation": "ABBA je švedska pop-grupa.",
+    "sources": [
+      "https://eurovision.tv/participant/abba"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3646-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Književnost",
+    "focus": "Frankenstein - Victor",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kako se zove znanstvenik koji u romanu Mary Shelley stvara živo biće od mrtve tvari?",
+    "answers": [
+      "Victor Frankenstein",
+      "Viktor Frankenstein",
+      "Frankenstein"
+    ],
+    "explanation": "Victor Frankenstein ime je znanstvenika u romanu.",
+    "sources": [
+      "https://www.britannica.com/topic/Frankenstein-novel-by-Shelley"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3647-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Zemljopis",
+    "focus": "Madagaskar - glavni grad",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je glavni grad otočne države Madagaskar?",
+    "answers": [
+      "Antananarivo"
+    ],
+    "explanation": "Antananarivo je glavni grad Madagaskara.",
+    "sources": [
+      "https://www.britannica.com/place/Madagascar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3648-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Kemija",
+    "focus": "Bakar - atomski broj",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji atomski broj u periodnom sustavu ima bakar, element oznake Cu?",
+    "answers": [
+      "29"
+    ],
+    "explanation": "Bakar ima 29 protona u jezgri.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/29/copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3649-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Povijest",
+    "focus": "Apollo 11 - Eagle",
+    "difficulty": 3,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Kako se zvao lunarni modul Apolla 11 koji je 1969. spustio Armstronga i Aldrina na Mjesec?",
+    "answers": [
+      "Eagle",
+      "Orao"
+    ],
+    "explanation": "Lunarni modul Apollo 11 nosio je ime Eagle.",
+    "sources": [
+      "https://www.nasa.gov/mission/apollo-11/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3650-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Biologija",
+    "focus": "Klorofil - zelena boja",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koje je boje pigment klorofil, ključan za upijanje svjetlosti u fotosintezi?",
+    "answers": [
+      "Zelene",
+      "Zelena"
+    ],
+    "explanation": "Klorofil je zeleni fotosintetski pigment.",
+    "sources": [
+      "https://www.britannica.com/science/chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3651-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Gastronomija",
+    "focus": "Pesto - pinjoli",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se orašasti plodovi tradicionalno usitnjavaju s bosiljkom, češnjakom i sirom za pesto genovese?",
+    "answers": [
+      "Pinjoli",
+      "Pinjol"
+    ],
+    "explanation": "Pinjoli su tradicionalni sastojak pesta genovese.",
+    "sources": [
+      "https://www.britannica.com/topic/pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3652-20261110",
+    "createdAt": "2026-11-10T05:38:55+01:00",
+    "updatedAt": "2026-11-10T05:38:55+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa - ledena površina",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji Jupiterov mjesec ima ledenu površinu ispresijecanu tamnim pukotinama i mogući podzemni ocean?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "NASA opisuje Europinu ledenu koru i mogući slani ocean.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
