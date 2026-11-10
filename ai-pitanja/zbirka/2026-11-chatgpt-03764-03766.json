@@ -1,0 +1,71 @@
+[
+  {
+    "id": "chatgpt10000-3764-20261110",
+    "createdAt": "2026-11-10T23:41:23+01:00",
+    "updatedAt": "2026-11-10T23:41:23+01:00",
+    "topic": "Sport",
+    "focus": "Težina kamena za curling",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko približno kilograma teži natjecateljski kamen kojim se igra curling?",
+    "answers": [
+      "20",
+      "20 kg",
+      "oko 20 kilograma"
+    ],
+    "explanation": "Prema Međunarodnom olimpijskom odboru kamen teži 44 funte, odnosno 19,96 kg.",
+    "sources": [
+      "https://www.olympics.com/ioc/world-curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3765-20261110",
+    "createdAt": "2026-11-10T23:41:23+01:00",
+    "updatedAt": "2026-11-10T23:41:23+01:00",
+    "topic": "Sport",
+    "focus": "Broj igrača u curling ekipi",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko igrača ima jedna ekipa u standardnom ekipnom curlingu?",
+    "answers": [
+      "4",
+      "četiri"
+    ],
+    "explanation": "U standardnom ekipnom curlingu nastupaju četiri igrača po ekipi.",
+    "sources": [
+      "https://www.olympics.com/ioc/world-curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3766-20261110",
+    "createdAt": "2026-11-10T23:41:23+01:00",
+    "updatedAt": "2026-11-10T23:41:23+01:00",
+    "topic": "Sport",
+    "focus": "Naziv kapetana u curlingu",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se na engleskom naziva kapetan ekipe u curlingu koji u pravilu baca posljednji?",
+    "answers": [
+      "skip"
+    ],
+    "explanation": "Skip je kapetan curling ekipe i baca posljednji u uobičajenom redoslijedu.",
+    "sources": [
+      "https://www.olympics.com/ioc/world-curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
