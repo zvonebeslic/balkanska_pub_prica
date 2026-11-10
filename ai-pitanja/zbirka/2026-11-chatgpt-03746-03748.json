@@ -1,0 +1,75 @@
+[
+  {
+    "id": "chatgpt10000-3746-20261110",
+    "createdAt": "2026-11-10T20:20:00+01:00",
+    "updatedAt": "2026-11-10T20:20:00+01:00",
+    "topic": "Povijest medicine",
+    "focus": "Flemingovo otkriće lizozima",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je antibakterijski enzim Alexander Fleming otkrio 1921., nekoliko godina prije penicilina?",
+    "answers": [
+      "Lizozim",
+      "Lysozyme"
+    ],
+    "explanation": "Fleming je 1921. otkrio lizozim, enzim koji se nalazi i u suzama i slini.",
+    "sources": [
+      "https://unvis.it/www.britannica.com/biography/Alexander-Fleming"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3747-20261110",
+    "createdAt": "2026-11-10T20:20:00+01:00",
+    "updatedAt": "2026-11-10T20:20:00+01:00",
+    "topic": "Arhitektura",
+    "focus": "Eiffelov toranj - broj željeznih dijelova",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Od približno koliko pojedinačnih metalnih dijelova sastoji se konstrukcija Eiffelova tornja: 1.800, 18.000 ili 180.000?",
+    "answers": [
+      "18.000",
+      "18000",
+      "oko 18000",
+      "18 tisuća"
+    ],
+    "explanation": "Konstrukcija je sastavljena od više od 18.000 zasebno pripremljenih željeznih elemenata.",
+    "sources": [
+      "https://www.history.com/articles/eiffel-tower"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3748-20261110",
+    "createdAt": "2026-11-10T20:20:00+01:00",
+    "updatedAt": "2026-11-10T20:20:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Mona Lisa - podloga slike",
+    "difficulty": 3,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Na kojoj je podlozi Leonardo da Vinci naslikao Mona Lisu: platnu, topolovoj dasci ili bakrenoj ploči?",
+    "answers": [
+      "Topolovoj dasci",
+      "Topolova daska",
+      "Drvenoj ploči od topole",
+      "Topola"
+    ],
+    "explanation": "Mona Lisa naslikana je uljem na ploči od topolova drva, a ne na platnu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mona_Lisa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
