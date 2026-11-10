@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-3613-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Glazba",
+    "focus": "Sade Adu - Smooth Operator",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja pjevačica, rođena u Nigeriji, predvodi sastav poznat po hitu 'Smooth Operator'?",
+    "answers": [
+      "Sade",
+      "Sade Adu"
+    ],
+    "explanation": "Sade Adu glavna je pjevačica grupe Sade.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sade_(singer)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3614-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Nogomet",
+    "focus": "Sevilla FC - Europska liga",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji španjolski klub nosi rekord po broju osvojenih naslova UEFA Europske lige?",
+    "answers": [
+      "Sevilla",
+      "Sevilla FC"
+    ],
+    "explanation": "Sevilla je najuspješniji klub u povijesti tog natjecanja.",
+    "sources": [
+      "https://www.uefa.com/uefaeuropaleague/history/winners/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3615-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Film",
+    "focus": "Whiplash - bubnjevi",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koji glazbeni instrument svira ambiciozni student Andrew Neiman u filmu 'Whiplash'?",
+    "answers": [
+      "Bubnjevi",
+      "Bubanj"
+    ],
+    "explanation": "Andrew je mladi jazz bubnjar.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Whiplash_(2014_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3616-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Književnost",
+    "focus": "Rebecca - Daphne du Maurier",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska književnica napisala roman 'Rebecca', prema kojem je Hitchcock snimio film?",
+    "answers": [
+      "Daphne du Maurier",
+      "Daphne Du Maurier"
+    ],
+    "explanation": "Roman Rebecca objavljen je 1938. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rebecca_(novel)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3617-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Mekong - Vijetnam",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Delta koje velike azijske rijeke zauzima znatan dio južnog Vijetnama?",
+    "answers": [
+      "Mekong"
+    ],
+    "explanation": "Mekong se ulijeva u Južnokinesko more razgranatom deltom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mekong"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3618-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Životinje",
+    "focus": "Kivi - ptica Novog Zelanda",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja novozelandska ptica ne leti, a ime dijeli sa zelenim voćem?",
+    "answers": [
+      "Kivi",
+      "Kiwi"
+    ],
+    "explanation": "Kiviji su skupina neletećih ptica endemskih za Novi Zeland.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3619-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Kemija",
+    "focus": "Volfram - simbol W",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol W i često se koristio za žarne niti žarulja?",
+    "answers": [
+      "Volfram",
+      "Tungsten"
+    ],
+    "explanation": "Volfram ima visoko talište i simbol W.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3620-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Povijest",
+    "focus": "Magellan - Elcano",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je moreplovac dovršio prvo oplovljavanje Zemlje nakon Magellanove smrti?",
+    "answers": [
+      "Juan Sebastián Elcano",
+      "Elcano",
+      "Juan Sebastian Elcano"
+    ],
+    "explanation": "Elcano je 1522. doveo brod Victoriju natrag u Španjolsku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Juan_Sebasti%C3%A1n_Elcano"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3621-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Mozilla Firefox - preglednik",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove internetski preglednik čiji logotip prikazuje stiliziranu lisicu oko globusa?",
+    "answers": [
+      "Firefox",
+      "Mozilla Firefox"
+    ],
+    "explanation": "Firefox je internetski preglednik koji razvija Mozilla.",
+    "sources": [
+      "https://www.mozilla.org/en-US/firefox/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3622-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Medicina",
+    "focus": "Ortopedija - lokomotorni sustav",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se medicinska specijalnost bavi bolestima i ozljedama kostiju, zglobova i mišića?",
+    "answers": [
+      "Ortopedija"
+    ],
+    "explanation": "Ortopedija proučava i liječi poremećaje mišićno-koštanog sustava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Orthopedic_surgery"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
