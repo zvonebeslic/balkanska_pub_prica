@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-3633-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA - Waterloo",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je švedska grupa pobijedila na Eurosongu 1974. pjesmom 'Waterloo'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "ABBA je pobjedom s pjesmom Waterloo stekla međunarodnu slavu.",
+    "sources": [
+      "https://eurovision.tv/participant/abba"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3634-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps - plivanje",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je američki plivač osvojio rekordne 23 olimpijske zlatne medalje?",
+    "answers": [
+      "Michael Phelps",
+      "Phelps"
+    ],
+    "explanation": "Michael Phelps osvojio je 23 olimpijska zlata.",
+    "sources": [
+      "https://olympics.com/en/athletes/michael-phelps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3635-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Film",
+    "focus": "Jurski park - Spielberg",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je režirao film 'Jurski park' iz 1993. godine?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Steven Spielberg režirao je Jurski park.",
+    "sources": [
+      "https://www.britannica.com/topic/Jurassic-Park-film-by-Spielberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3636-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Književnost",
+    "focus": "Frankenstein - Mary Shelley",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je spisateljica stvorila lik Victora Frankensteina i njegova stvorenja?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "explanation": "Mary Shelley autorica je romana Frankenstein.",
+    "sources": [
+      "https://www.britannica.com/topic/Frankenstein-novel-by-Shelley"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3637-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Zemljopis",
+    "focus": "Madagaskar - Indijski ocean",
+    "difficulty": 1,
+    "styleId": 40,
+    "styleDescription": "Pitaj za otok kroz dvije životinjske ili botaničke značajke",
+    "question": "U kojem se oceanu nalazi veliki afrički otok Madagaskar?",
+    "answers": [
+      "Indijski ocean",
+      "Indijskom oceanu"
+    ],
+    "explanation": "Madagaskar leži u Indijskom oceanu istočno od Afrike.",
+    "sources": [
+      "https://www.britannica.com/place/Madagascar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3638-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Kemija",
+    "focus": "Bakar - Cu",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Cu, izveden iz latinskog naziva cuprum?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Cu je kemijski simbol bakra.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/29/copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3639-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Povijest",
+    "focus": "Apollo 11 - 1969",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje su godine ljudi prvi put sletjeli na Mjesec tijekom misije Apollo 11?",
+    "answers": [
+      "1969",
+      "1969."
+    ],
+    "explanation": "Apollo 11 sletio je na Mjesec u srpnju 1969.",
+    "sources": [
+      "https://www.nasa.gov/mission/apollo-11/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3640-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Biologija",
+    "focus": "Fotosinteza - klorofil",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zove zeleni pigment koji biljkama omogućuje upijanje svjetlosti za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost potrebnu za fotosintezu.",
+    "sources": [
+      "https://www.britannica.com/science/chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3641-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Tehnologija",
+    "focus": "USB - Universal Serial Bus",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja je troslovna kratica za standard povezivanja uređaja čiji puni naziv glasi Universal Serial Bus?",
+    "answers": [
+      "USB"
+    ],
+    "explanation": "USB je kratica za Universal Serial Bus.",
+    "sources": [
+      "https://www.usb.org/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3642-20261110",
+    "createdAt": "2026-11-10T04:40:35+01:00",
+    "updatedAt": "2026-11-10T04:40:35+01:00",
+    "topic": "Gastronomija",
+    "focus": "Pesto - bosiljak",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je aromatična zelena biljka glavni sastojak tradicionalnog genovskog pesta?",
+    "answers": [
+      "Bosiljak",
+      "Bosiljka"
+    ],
+    "explanation": "Tradicionalni pesto alla genovese priprema se s bosiljkom.",
+    "sources": [
+      "https://www.britannica.com/topic/pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
