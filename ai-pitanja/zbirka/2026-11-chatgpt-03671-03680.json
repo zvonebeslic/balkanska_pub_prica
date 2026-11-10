@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3671-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Glazba",
+    "focus": "Björk - Island",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Iz koje otočne europske države dolazi pjevačica Björk?",
+    "answers": [
+      "Island"
+    ],
+    "explanation": "Björk je islandska pjevačica poznata po eksperimentalnoj pop-glazbi.",
+    "sources": [
+      "https://www.britannica.com/biography/Bjork"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3672-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Nogomet",
+    "focus": "Copa Libertadores - Južna Amerika",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove najvažnije klupsko nogometno natjecanje Južne Amerike, svojevrsni pandan europskoj Ligi prvaka?",
+    "answers": [
+      "Copa Libertadores"
+    ],
+    "explanation": "Copa Libertadores vodeće je južnoameričko klupsko natjecanje.",
+    "sources": [
+      "https://www.conmebol.com/conmebol-libertadores/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3673-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Film",
+    "focus": "Matrix - crvena pilula",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koju boju pilule Neo odabire u filmu Matrix kako bi spoznao istinu o svijetu?",
+    "answers": [
+      "Crvenu"
+    ],
+    "explanation": "Neo odabire crvenu pilulu koju mu nudi Morpheus.",
+    "sources": [
+      "https://www.britannica.com/topic/The-Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3674-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Književnost",
+    "focus": "Gulliver - Jonathan Swift",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je irski književnik napisao satirični roman Gulliverova putovanja?",
+    "answers": [
+      "Jonathan Swift"
+    ],
+    "explanation": "Swift je autor Gulliverovih putovanja objavljenih 1726.",
+    "sources": [
+      "https://www.britannica.com/biography/Jonathan-Swift"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3675-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Zemljopis",
+    "focus": "La Paz - Bolivija",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se južnoameričkoj državi nalazi La Paz, sjedište vlade smješteno visoko u Andama?",
+    "answers": [
+      "Bolivija"
+    ],
+    "explanation": "La Paz je sjedište bolivijske vlade, dok je Sucre ustavni glavni grad.",
+    "sources": [
+      "https://www.britannica.com/place/La-Paz-Bolivia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3676-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Životinje",
+    "focus": "Narval - kljova",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima dugačak spiralni zub zbog kojeg ga zovu morskim jednorogom?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalova karakteristična kljova zapravo je izduženi zub.",
+    "sources": [
+      "https://www.britannica.com/animal/narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3677-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Kemija",
+    "focus": "Bronca - bakar i kositar",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koja se legura tradicionalno dobiva miješanjem bakra i kositra, a po njoj je nazvano jedno prapovijesno doba?",
+    "answers": [
+      "Bronca"
+    ],
+    "explanation": "Bronca je legura bakra i kositra.",
+    "sources": [
+      "https://www.britannica.com/technology/bronze-alloy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3678-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Medicina",
+    "focus": "Dermatologija - koža",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove grana medicine koja se bavi bolestima kože?",
+    "answers": [
+      "Dermatologija"
+    ],
+    "explanation": "Dermatologija proučava i liječi bolesti kože.",
+    "sources": [
+      "https://www.britannica.com/science/dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3679-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera - rotacija",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem planetu Sunčeva sustava jedan okret oko vlastite osi traje dulje od obilaska oko Sunca?",
+    "answers": [
+      "Venera"
+    ],
+    "explanation": "Venera se oko osi okrene za približno 243 zemaljska dana, a oko Sunca obiđe za oko 225.",
+    "sources": [
+      "https://science.nasa.gov/venus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3680-20261110",
+    "createdAt": "2026-11-10T07:43:22+01:00",
+    "updatedAt": "2026-11-10T07:43:22+01:00",
+    "topic": "Gastronomija",
+    "focus": "Tiramisu - mascarpone",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se talijanski kremasti sir najčešće koristi za pripremu deserta tiramisu?",
+    "answers": [
+      "Mascarpone"
+    ],
+    "explanation": "Mascarpone je ključan sastojak tradicionalnog tiramisua.",
+    "sources": [
+      "https://www.britannica.com/topic/tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
