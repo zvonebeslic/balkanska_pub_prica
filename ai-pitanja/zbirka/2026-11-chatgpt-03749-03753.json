@@ -1,0 +1,120 @@
+[
+  {
+    "id": "chatgpt10000-3749-20261110",
+    "createdAt": "2026-11-10T21:39:29+01:00",
+    "updatedAt": "2026-11-10T21:39:29+01:00",
+    "topic": "Sport",
+    "focus": "Prva olimpijska košarka 1936.",
+    "difficulty": 2,
+    "styleId": 82,
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "question": "Koje su godine košarkaši prvi put zaigrali na Olimpijskim igrama u Berlinu?",
+    "answers": [
+      "1936",
+      "1936."
+    ],
+    "explanation": "Košarka je debitirala na Olimpijskim igrama u Berlinu 1936.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/massachusetts-the-unlikely-birthplace-of-basketball-and-volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3750-20261110",
+    "createdAt": "2026-11-10T21:39:29+01:00",
+    "updatedAt": "2026-11-10T21:39:29+01:00",
+    "topic": "Sport",
+    "focus": "Košarkaške košare za breskve",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koje su se košare koristile kao prvi koševi kada je James Naismith 1891. predstavio košarku?",
+    "answers": [
+      "Košare za breskve",
+      "Košara za breskve",
+      "Breskve"
+    ],
+    "explanation": "Prvi koševi bile su košare za breskve pričvršćene na suprotnim krajevima dvorane.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/massachusetts-the-unlikely-birthplace-of-basketball-and-volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3751-20261110",
+    "createdAt": "2026-11-10T21:39:29+01:00",
+    "updatedAt": "2026-11-10T21:39:29+01:00",
+    "topic": "Sport",
+    "focus": "Prvotna košarkaška pravila",
+    "difficulty": 3,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko je izvornih pravila košarke James Naismith objavio početkom 1892. godine?",
+    "answers": [
+      "13",
+      "Trinaest"
+    ],
+    "explanation": "Naismithovih 13 pravila objavljeno je u školskim novinama Springfield Collegea 15. siječnja 1892.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/massachusetts-the-unlikely-birthplace-of-basketball-and-volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3752-20261110",
+    "createdAt": "2026-11-10T21:39:29+01:00",
+    "updatedAt": "2026-11-10T21:39:29+01:00",
+    "topic": "Astronomija",
+    "focus": "Mariner 2 prvi prelet Venere",
+    "difficulty": 3,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koji je planet 1962. preletjela sonda Mariner 2, postavši prva letjelica koja je uspješno posjetila drugi planet?",
+    "answers": [
+      "Venera",
+      "Veneru",
+      "Venus"
+    ],
+    "explanation": "NASA-in Mariner 2 preletio je Veneru 14. prosinca 1962.",
+    "sources": [
+      "https://science.nasa.gov/venus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3753-20261110",
+    "createdAt": "2026-11-10T21:39:29+01:00",
+    "updatedAt": "2026-11-10T21:39:29+01:00",
+    "topic": "Astronomija",
+    "focus": "Venerini oblaci sumporne kiseline",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Od koje su kiseline najvećim dijelom sastavljene guste kapljice u oblacima Venere?",
+    "answers": [
+      "Sumporna kiselina",
+      "Sumporne kiseline",
+      "H2SO4"
+    ],
+    "explanation": "Oblaci Venere sadrže kapljice sumporne kiseline, dok atmosferom dominira ugljikov dioksid.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
