@@ -1,0 +1,227 @@
+[
+  {
+    "id": "chatgpt10000-3754-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranov ekstremni nagib osi",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji se planet Sunčeva sustava okreće gotovo položen na bok, s osi nagnutom oko 98 stupnjeva?",
+    "answers": [
+      "Uran"
+    ],
+    "explanation": "Uranova os rotacije nagnuta je oko 97,77 stupnjeva u odnosu na ravninu njegove putanje.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3755-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranova godina",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedna godina traje približno 84 zemaljske godine?",
+    "answers": [
+      "Uran"
+    ],
+    "explanation": "Uranu je za jedan obilazak Sunca potrebno približno 84 zemaljske godine.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3756-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranova plavozelena boja",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koji plin u Uranovoj atmosferi apsorbira crveni dio svjetlosti i pridonosi njegovoj plavozelenoj boji?",
+    "answers": [
+      "Metan"
+    ],
+    "explanation": "Metan apsorbira crveni dio Sunčeve svjetlosti, a plavi se dio odbija.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3757-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Herschelovo otkriće Urana",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je astronom 1781. otkrio Uran, isprva misleći da je riječ o kometu ili zvijezdi?",
+    "answers": [
+      "William Herschel",
+      "Vilijam Heršel",
+      "Herschel"
+    ],
+    "explanation": "William Herschel otkrio je Uran 1781. godine.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3758-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranovi mjeseci književni likovi",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Mjeseci kojeg planeta nose imena likova iz djela Williama Shakespearea i Alexandera Popea?",
+    "answers": [
+      "Uran"
+    ],
+    "explanation": "Uranovi mjeseci jedinstveni su po imenima preuzetima iz književnih djela.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3759-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranov naziv po božanstvu",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je grčkom božanstvu neba nazvan sedmi planet od Sunca?",
+    "answers": [
+      "Uran",
+      "Ouranos"
+    ],
+    "explanation": "Planet Uran nazvan je po grčkom bogu neba.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3760-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranovo otkriće teleskopom",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji je planet prvi otkriven pomoću teleskopa, 1781. godine?",
+    "answers": [
+      "Uran"
+    ],
+    "explanation": "Uran je prvi planet otkriven teleskopskim promatranjem.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3761-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranov susret s Voyagerom",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine sonda Voyager 2 proletjela pokraj Urana?",
+    "answers": [
+      "1986",
+      "1986."
+    ],
+    "explanation": "Voyager 2 proletio je pokraj Urana 1986. godine.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3762-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uran kao ledeni div",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Je li Uran plinoviti ili ledeni div prema suvremenoj klasifikaciji planeta?",
+    "answers": [
+      "Ledeni div",
+      "Ledeni"
+    ],
+    "explanation": "Uran se zajedno s Neptunom klasificira kao ledeni div.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3763-20261110",
+    "createdAt": "2026-11-10T22:40:16+01:00",
+    "updatedAt": "2026-11-10T22:40:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Uranov položaj od Sunca",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je sedmi planet od Sunca?",
+    "answers": [
+      "Uran"
+    ],
+    "explanation": "Uran je sedmi planet Sunčeva sustava.",
+    "sources": [
+      "https://science.nasa.gov/uranus/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
