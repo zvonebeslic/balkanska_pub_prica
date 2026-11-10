@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-3742-20261110",
+    "createdAt": "2026-11-10T19:00:00+01:00",
+    "updatedAt": "2026-11-10T19:00:00+01:00",
+    "topic": "Arhitektura",
+    "focus": "Santiago Calatrava - obnova atenskog Olimpijskog stadiona",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koji je španjolski arhitekt projektirao obnovu krova Olimpijskog stadiona u Ateni za Igre 2004.?",
+    "answers": [
+      "Santiago Calatrava",
+      "Calatrava"
+    ],
+    "explanation": "Santiago Calatrava projektirao je obnovu krova atenskog Olimpijskog stadiona uoči Igara 2004.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athens-2004-olympic-stadium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3743-20261110",
+    "createdAt": "2026-11-10T19:00:00+01:00",
+    "updatedAt": "2026-11-10T19:00:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Velika crvena pjega - priroda pojave na Jupiteru",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Je li Jupiterova Velika crvena pjega vulkan, krater ili golema atmosferska oluja?",
+    "answers": [
+      "Oluja",
+      "Atmosferska oluja",
+      "Golema oluja"
+    ],
+    "explanation": "Velika crvena pjega dugotrajna je golema oluja u Jupiterovoj atmosferi, a ne krater ni vulkan.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/the-great-red-spot/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
