@@ -1,0 +1,93 @@
+[
+  {
+    "id": "chatgpt10000-3733-20261110",
+    "createdAt": "2026-11-10T15:00:00+01:00",
+    "updatedAt": "2026-11-10T15:00:00+01:00",
+    "topic": "Glazba",
+    "focus": "Abbey Road - posljednji snimljeni album Beatlesa",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je album Beatlesa iz 1969. bio posljednji koji su zajedno snimili, iako je Let It Be objavljen poslije njega?",
+    "answers": [
+      "Abbey Road"
+    ],
+    "explanation": "Abbey Road objavljen je 1969., a Let It Be 1970., premda je većinom snimljen ranije.",
+    "sources": [
+      "https://www.thebeatles.com/abbey-road"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3734-20261110",
+    "createdAt": "2026-11-10T15:00:00+01:00",
+    "updatedAt": "2026-11-10T15:00:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Frida Kahlo - autoportreti",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je meksička slikarica, supruga Diega Rivere, poznata po brojnim autoportretima u kojima je prikazivala vlastitu bol i život?",
+    "answers": [
+      "Frida Kahlo",
+      "Frida Kalo"
+    ],
+    "explanation": "Frida Kahlo poznata je po autoportretima koji istražuju osobni identitet, iskustva i bol.",
+    "sources": [
+      "https://www.fridakahlo.org/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3735-20261110",
+    "createdAt": "2026-11-10T15:00:00+01:00",
+    "updatedAt": "2026-11-10T15:00:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptun - najjači planetarni vjetrovi",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem planetu Sunčeva sustava vjetrovi mogu dosegnuti oko 2.000 kilometara na sat, što ih čini najbržima među planetima?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "NASA navodi da su na Neptunu izmjereni iznimno snažni vjetrovi, do približno 2.000 km/h.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3736-20261110",
+    "createdAt": "2026-11-10T15:00:00+01:00",
+    "updatedAt": "2026-11-10T15:00:00+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps - 23 olimpijska zlata",
+    "difficulty": 2,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko je olimpijskih zlatnih medalja tijekom karijere osvojio američki plivač Michael Phelps?",
+    "answers": [
+      "23",
+      "dvadeset tri"
+    ],
+    "explanation": "Phelps je osvojio 23 zlata i ukupno 28 olimpijskih medalja.",
+    "sources": [
+      "https://apnews.com/article/554b748553d20b3b5f228ab695acbdd3"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
