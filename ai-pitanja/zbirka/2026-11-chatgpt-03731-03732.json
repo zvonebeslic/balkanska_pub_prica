@@ -1,0 +1,48 @@
+[
+  {
+    "id": "chatgpt10000-3731-20261110",
+    "createdAt": "2026-11-10T14:00:00+01:00",
+    "updatedAt": "2026-11-10T14:00:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan - atmosferski dušik",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem Saturnovu mjesecu atmosfera sadrži približno 95 posto dušika, a na površini postoje jezera tekućeg metana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je Saturnov najveći mjesec, s atmosferom u kojoj prevladava dušik i jezerima metana i etana.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3732-20261110",
+    "createdAt": "2026-11-10T14:00:00+01:00",
+    "updatedAt": "2026-11-10T14:00:00+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt - tri olimpijska zlata na 100 metara",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter osvojio olimpijsko zlato na 100 metara tri puta zaredom, 2008., 2012. i 2016. godine?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt",
+      "Jusein Bolt"
+    ],
+    "explanation": "Bolt je osvojio naslov olimpijskog prvaka na 100 metara u Pekingu, Londonu i Riju.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/bolt-confirms-status-as-greatest-sprinter-in-history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
