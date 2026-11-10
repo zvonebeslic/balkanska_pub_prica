@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-3603-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt - Jamajka",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Iz koje države dolazi sprinter Usain Bolt, višestruki olimpijski pobjednik na 100 i 200 metara?",
+    "answers": [
+      "Jamajka",
+      "Jamaica"
+    ],
+    "explanation": "Bolt je jedan od najuspješnijih sprintera u povijesti.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3604-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Televizija",
+    "focus": "Breaking Bad - Walter White",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se preziva srednjoškolski profesor kemije Walter, glavni lik serije 'Breaking Bad'?",
+    "answers": [
+      "White",
+      "Walter White"
+    ],
+    "explanation": "Walter White glavni je lik serije Breaking Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3605-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Zvjezdana noć - Vincent van Gogh",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh",
+      "Vincent Willem van Gogh"
+    ],
+    "explanation": "Zvjezdana noć jedno je od njegovih najpoznatijih djela.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3606-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan - Saturnov mjesec",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji najveći Saturnov mjesec ima gustu atmosferu i jezera tekućih ugljikovodika?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov prirodni satelit.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3607-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "Guacamole - avokado",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje je voće glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Guacamole se priprema prvenstveno od zgnječenog avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3608-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Brendovi",
+    "focus": "IKEA - Švedska",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "U kojoj je europskoj državi nastao lanac trgovina namještajem IKEA?",
+    "answers": [
+      "Švedska",
+      "Svedska"
+    ],
+    "explanation": "IKEA je osnovana u Švedskoj 1943. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/IKEA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3609-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom - čitanje u oba smjera",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3610-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Biologija",
+    "focus": "Fotosinteza - klorofil",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji zeleni pigment biljkama omogućuje upijanje svjetlosti potrebne za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil je glavni pigment fotosinteze u zelenim biljkama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3611-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Politika",
+    "focus": "Nelson Mandela - Južnoafrička Republika",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koje je države Nelson Mandela postao predsjednik 1994. godine nakon prvih općih demokratskih izbora?",
+    "answers": [
+      "Južnoafrička Republika",
+      "Juznoafricka Republika",
+      "JAR",
+      "Južna Afrika"
+    ],
+    "explanation": "Mandela je 1994. postao predsjednik Južnoafričke Republike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nelson_Mandela"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3612-20261110",
+    "createdAt": "2026-11-10T02:40:00+01:00",
+    "updatedAt": "2026-11-10T02:40:00+01:00",
+    "topic": "Videoigre",
+    "focus": "Super Mario - Nintendo",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja japanska tvrtka stoji iza videoigara o brkatom vodoinstalateru Mariju?",
+    "answers": [
+      "Nintendo"
+    ],
+    "explanation": "Mario je jedan od najpoznatijih Nintendovih likova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mario_(franchise)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
