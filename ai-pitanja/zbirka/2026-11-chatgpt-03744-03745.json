@@ -1,0 +1,47 @@
+[
+  {
+    "id": "chatgpt10000-3744-20261110",
+    "createdAt": "2026-11-10T19:15:00+01:00",
+    "updatedAt": "2026-11-10T19:15:00+01:00",
+    "topic": "Sport",
+    "focus": "mintonette - izvorni naziv odbojke",
+    "difficulty": 2,
+    "styleId": 21,
+    "question": "Koji se danas popularan sport pri nastanku 1895. godine zvao mintonette?",
+    "answers": [
+      "Odbojka",
+      "Volleyball"
+    ],
+    "explanation": "William G. Morgan osmislio je 1895. igru mintonette, koja je ubrzo preimenovana u odbojku.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/volleyball-a-brief-history"
+    ],
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3745-20261110",
+    "createdAt": "2026-11-10T19:15:00+01:00",
+    "updatedAt": "2026-11-10T19:15:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Enceladus - opskrba Saturnova E-prstena",
+    "difficulty": 3,
+    "styleId": 34,
+    "question": "Koji Saturnov mjesec svojim ledenim mlazovima opskrbljuje planetov E-prsten?",
+    "answers": [
+      "Enceladus"
+    ],
+    "explanation": "Mlazovi ledenih čestica s Encelada izvor su velikog dijela materijala Saturnova E-prstena.",
+    "sources": [
+      "https://science.nasa.gov/mission/cassini/science/rings/"
+    ],
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
