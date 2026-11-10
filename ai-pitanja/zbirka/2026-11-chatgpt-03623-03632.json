@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-3623-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Sport",
+    "focus": "Wimbledon - travnata podloga",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kojoj se podlozi tradicionalno igra teniski Grand Slam Wimbledon?",
+    "answers": [
+      "Trava",
+      "Travnata podloga",
+      "Travnjaku"
+    ],
+    "explanation": "Wimbledon je jedini Grand Slam koji se igra na travi.",
+    "sources": [
+      "https://www.wimbledon.com/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3624-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Televizija",
+    "focus": "The Office - Dunder Mifflin",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove tvrtka za prodaju papira u kojoj rade likovi američke serije 'The Office'?",
+    "answers": [
+      "Dunder Mifflin"
+    ],
+    "explanation": "Serija prati zaposlenike fiktivne tvrtke Dunder Mifflin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dunder_Mifflin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3625-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Guernica - Pablo Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je slikar stvorio monumentalnu antiratnu sliku 'Guernica'?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je naslikao Guernicu 1937. godine.",
+    "sources": [
+      "https://www.museoreinasofia.es/en/collection/artwork/guernica"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3626-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Halleyjev komet - period",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji se poznati komet vraća u blizinu Sunca otprilike svakih 76 godina?",
+    "answers": [
+      "Halleyjev komet",
+      "Halley",
+      "Halleyev komet"
+    ],
+    "explanation": "Orbitalni period Halleyjeva kometa iznosi približno 76 godina.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/comets/1p-halley/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3627-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "Kimchi - Koreja",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove korejski prilog od fermentiranog povrća, najčešće kineskog kupusa?",
+    "answers": [
+      "Kimchi",
+      "Kimči"
+    ],
+    "explanation": "Kimchi je tradicionalno korejsko fermentirano jelo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3628-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Brendovi",
+    "focus": "Adidas - tri pruge",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koji je sportski brend poznat po znaku s tri paralelne pruge?",
+    "answers": [
+      "Adidas"
+    ],
+    "explanation": "Tri pruge zaštitni su znak Adidasa.",
+    "sources": [
+      "https://www.adidas-group.com/en/about/history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3629-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Jezik",
+    "focus": "Onomatopeja - oponašanje zvukova",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se u jeziku naziva riječ koja oponaša zvuk, primjerice 'kuc-kuc' ili 'mijau'?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je glasovno oponašanje zvukova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3630-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Biologija",
+    "focus": "Mitohondrij - energija",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji se stanični organel često naziva 'elektranom stanice' zbog proizvodnje ATP-a?",
+    "answers": [
+      "Mitohondrij",
+      "Mitohondriji"
+    ],
+    "explanation": "Mitohondriji proizvode velik dio staničnog ATP-a.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3631-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Politika",
+    "focus": "Ujedinjeni narodi - New York",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U kojem se američkom gradu nalazi glavno sjedište Ujedinjenih naroda?",
+    "answers": [
+      "New York",
+      "New York City"
+    ],
+    "explanation": "Sjedište UN-a nalazi se na Manhattanu.",
+    "sources": [
+      "https://www.un.org/en/about-us/un-headquarters"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3632-20261110",
+    "createdAt": "2026-11-10T03:38:00+01:00",
+    "updatedAt": "2026-11-10T03:38:00+01:00",
+    "topic": "Videoigre",
+    "focus": "Sonic - Sega",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je japanska tvrtka stvorila plavog ježa Sonica kao maskotu svojih videoigara?",
+    "answers": [
+      "Sega"
+    ],
+    "explanation": "Sonic je dugogodišnja maskota Sege.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
