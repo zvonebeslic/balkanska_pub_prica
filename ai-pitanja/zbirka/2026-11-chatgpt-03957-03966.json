@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3957-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Glazba",
+    "focus": "Bob Marley reggae",
+    "difficulty": 3,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je jamajčanski glazbenik poznat po pjesmama 'No Woman, No Cry' i 'Three Little Birds'?",
+    "answers": [
+      "Bob Marley"
+    ],
+    "explanation": "Bob Marley jedan je od najpoznatijih izvođača reggaea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bob_Marley"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3958-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Nogomet",
+    "focus": "Diego Maradona Argentina",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je argentinski nogometaš postigao slavni pogodak 'Božjom rukom' protiv Engleske 1986.?",
+    "answers": [
+      "Diego Maradona"
+    ],
+    "explanation": "Maradona je taj pogodak postigao na SP-u 1986.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Diego_Maradona"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3959-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Film",
+    "focus": "Gospodar prstenova Gandalf",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove čarobnjak sa sivim šeširom i štapom koji prati družinu u 'Gospodaru prstenova'?",
+    "answers": [
+      "Gandalf"
+    ],
+    "explanation": "Gandalf je čarobnjak u Tolkienovu svijetu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gandalf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3960-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Umjetnost",
+    "focus": "Michelangelo David",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je renesansni umjetnik isklesao mramorni kip Davida izložen u Firenci?",
+    "answers": [
+      "Michelangelo"
+    ],
+    "explanation": "Michelangelov David nastao je početkom 16. stoljeća.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3961-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Astronomija",
+    "focus": "Jupiter Velika crvena pjega",
+    "difficulty": 3,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Na kojem se planetu nalazi dugotrajna oluja poznata kao Velika crvena pjega?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Velika crvena pjega je golema oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Red_Spot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3962-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Gastronomija",
+    "focus": "Sushi nori",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove jestiva morska alga koja se često koristi za omatanje sushi rolica?",
+    "answers": [
+      "Nori"
+    ],
+    "explanation": "Nori je sušena alga koja se koristi u japanskoj kuhinji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nori"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3963-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Biologija",
+    "focus": "Klorofil zelena boja",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji pigment biljkama daje karakterističnu zelenu boju i sudjeluje u fotosintezi?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3964-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Povijest",
+    "focus": "Napoleon Waterloo",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Kod kojeg je belgijskog mjesta Napoleon doživio konačni vojni poraz 1815.?",
+    "answers": [
+      "Waterloo"
+    ],
+    "explanation": "Bitka kod Waterlooa završila je Napoleonovim porazom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Battle_of_Waterloo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3965-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Jezik",
+    "focus": "Onomatopeja",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove stilska figura kojom se riječima oponašaju zvukovi, primjerice 'kuc-kuc'?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je oponašanje zvukova riječima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3966-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Pop kultura",
+    "focus": "Pokémon Pikachu",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je žuti električni Pokémon najpoznatiji pratitelj Asha Ketchuma u animiranoj seriji?",
+    "answers": [
+      "Pikachu"
+    ],
+    "explanation": "Pikachu je Ashov prepoznatljivi Pokémon.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pikachu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
