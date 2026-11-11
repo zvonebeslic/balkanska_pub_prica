@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chatgpt10000-3847-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Glazba",
+    "focus": "Glavni vokal grupe Nirvana",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je glazbenik bio pjevač i gitarist grunge sastava Nirvana?",
+    "answers": [
+      "Kurt Cobain"
+    ],
+    "explanation": "Kurt Cobain bio je frontmen grupe Nirvana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kurt_Cobain"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3848-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Televizija",
+    "focus": "Kafić iz serije Prijatelji",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove kafić u kojem se često okuplja šest glavnih likova serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk izmišljeni je njujorški kafić iz serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3849-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Nogomet",
+    "focus": "Stadion FC Barcelone",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove slavni stadion nogometnog kluba Barcelona?",
+    "answers": [
+      "Camp Nou",
+      "Spotify Camp Nou"
+    ],
+    "explanation": "Camp Nou dugogodišnji je domaći stadion Barcelone.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Camp_Nou"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3850-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Astronomija",
+    "focus": "Najveći planet Sunčeva sustava",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji je planet Sunčeva sustava najveći po promjeru?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Jupiter je najveći planet Sunčeva sustava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jupiter"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3851-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Autor Mona Lise",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je renesansni umjetnik naslikao portret poznat kao Mona Lisa?",
+    "answers": [
+      "Leonardo da Vinci",
+      "Leonardo"
+    ],
+    "explanation": "Mona Lisa djelo je Leonarda da Vincija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mona_Lisa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3852-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Životinje",
+    "focus": "Najbrža kopnena životinja",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je velika mačka poznata po iznimno brzom sprintu i crnim prugama od očiju prema njušci?",
+    "answers": [
+      "Gepard"
+    ],
+    "explanation": "Gepard je najbrža kopnena životinja na kratkim udaljenostima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cheetah"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3853-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Jezik",
+    "focus": "Značenje riječi palindrom",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom se jednako čita u oba smjera, uz uobičajeno zanemarivanje razmaka i interpunkcije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3854-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Gastronomija",
+    "focus": "Glavni sastojak guacamolea",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je plod glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Guacamole je tradicionalni meksički umak od avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3855-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Fizika",
+    "focus": "Mjerna jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se SI jedinica električnog otpora označava grčkim slovom omega?",
+    "answers": [
+      "Om",
+      "Ohm"
+    ],
+    "explanation": "Om je SI jedinica električnog otpora, nazvana po Georgu Ohmu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3856-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Povijest",
+    "focus": "Prva žena na mjestu premijerke Ujedinjenog Kraljevstva",
+    "difficulty": 2,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koja je političarka 1979. postala prva premijerka Ujedinjenog Kraljevstva?",
+    "answers": [
+      "Margaret Thatcher",
+      "Margaret Tačer"
+    ],
+    "explanation": "Margaret Thatcher postala je britanska premijerka 1979. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Margaret_Thatcher"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
