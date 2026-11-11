@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3937-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Glazba",
+    "focus": "Freddie Mercury i Queen",
+    "difficulty": 1,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koji je britanski rock-sastav imao Freddieja Mercuryja kao glavnog pjevača?",
+    "answers": [
+      "Queen"
+    ],
+    "explanation": "Freddie Mercury bio je frontmen sastava Queen.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Queen_(band)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3938-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Nogomet",
+    "focus": "Camp Nou Barcelona",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koji je katalonski nogometni klub desetljećima igrao domaće utakmice na stadionu Camp Nou?",
+    "answers": [
+      "Barcelona"
+    ],
+    "explanation": "Camp Nou je stadion kluba FC Barcelona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/FC_Barcelona"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3939-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Film",
+    "focus": "Shrek i DreamWorks",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Kako se zove zeleni ogr iz animiranog filma DreamWorksa iz 2001.?",
+    "answers": [
+      "Shrek"
+    ],
+    "explanation": "Shrek je naslovni lik animiranog filma iz 2001.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shrek"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3940-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Slikarstvo",
+    "focus": "Zvjezdana noć",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar autor slike 'Zvjezdana noć' iz 1889.?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "explanation": "Van Gogh naslikao je Zvjezdanu noć 1889.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3941-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Astronomija",
+    "focus": "Saturnovi prstenovi",
+    "difficulty": 3,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Koji je planet Sunčeva sustava posebno prepoznatljiv po svojim velikim prstenovima od leda i čestica?",
+    "answers": [
+      "Saturn"
+    ],
+    "explanation": "Saturnov sustav prstenova najupadljiviji je među planetima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Saturn"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3942-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Gastronomija",
+    "focus": "Tiramisu mascarpone",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je talijanski kremasti sir tipičan sastojak deserta tiramisu?",
+    "answers": [
+      "Mascarpone"
+    ],
+    "explanation": "Mascarpone se koristi u kremi za tiramisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3943-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Biologija",
+    "focus": "Mitohondrij ATP",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koja stanična organela u eukariotskim stanicama proizvodi velik dio ATP-a tijekom staničnog disanja?",
+    "answers": [
+      "Mitohondrij"
+    ],
+    "explanation": "Mitohondriji imaju ključnu ulogu u stvaranju ATP-a.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3944-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Povijest",
+    "focus": "Kleopatra i Egipat",
+    "difficulty": 2,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Kojom je drevnom državom vladala Kleopatra VII., posljednja aktivna vladarica iz dinastije Ptolemejevića?",
+    "answers": [
+      "Egipat"
+    ],
+    "explanation": "Kleopatra VII. bila je vladarica ptolemejskog Egipta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cleopatra"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3945-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom zadržava isti redoslijed znakova pri čitanju u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3946-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Televizija",
+    "focus": "Prijatelji Central Perk",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove kafić u kojem se često okuplja šest glavnih likova serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk je poznato okupljalište likova iz serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
