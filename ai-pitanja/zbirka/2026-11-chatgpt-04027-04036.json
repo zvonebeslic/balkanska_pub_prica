@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-4027-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris tvorac Aleksej Pažitnov",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Tko je 1984. osmislio računalnu igru Tetris?",
+    "answers": [
+      "Aleksej Pažitnov",
+      "Alexey Pajitnov",
+      "Aleksej Pajitnov"
+    ],
+    "explanation": "Tetris je 1984. osmislio sovjetski programer Aleksej Pažitnov.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tetris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4028-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Sport",
+    "focus": "odbojka libero dres",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem sportu igrač zvan libero nosi dres različite boje od svojih suigrača?",
+    "answers": [
+      "odbojka"
+    ],
+    "explanation": "Libero je specijalizirani obrambeni igrač u odbojci.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4029-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Frida Kahlo Plava kuća",
+    "difficulty": 3,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se naziva kuća u Coyoacánu u kojoj je živjela Frida Kahlo, a danas je njezin muzej?",
+    "answers": [
+      "Plava kuća",
+      "Casa Azul",
+      "La Casa Azul"
+    ],
+    "explanation": "Fridina obiteljska kuća poznata je kao La Casa Azul.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frida_Kahlo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4030-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Kultura",
+    "focus": "origami savijanje papira",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva japanska umjetnost savijanja papira u različite oblike?",
+    "answers": [
+      "origami"
+    ],
+    "explanation": "Origami je umjetnost oblikovanja papira savijanjem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Origami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4031-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "sushi nori alge",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove jestiva morska alga u listovima kojom se često omata sushi?",
+    "answers": [
+      "nori"
+    ],
+    "explanation": "Nori su sušene jestive alge koje se koriste u pripremi makizushija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sushi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4032-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Marie Curie dva Nobela",
+    "difficulty": 2,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko je Nobelovih nagrada osvojila Marie Curie?",
+    "answers": [
+      "2",
+      "dvije",
+      "dva"
+    ],
+    "explanation": "Marie Curie dobila je Nobelovu nagradu za fiziku 1903. i kemiju 1911.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Marie_Curie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4033-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Biologija",
+    "focus": "klorofil zelena boja",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji pigment biljkama daje zelenu boju i sudjeluje u fotosintezi?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Klorofil upija svjetlost potrebnu za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4034-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "USB kratica Universal Serial Bus",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja troslovna kratica označava standard Universal Serial Bus za povezivanje uređaja?",
+    "answers": [
+      "USB"
+    ],
+    "explanation": "USB je standard za povezivanje i napajanje elektroničkih uređaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/USB"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4035-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Glazba",
+    "focus": "Beatles bubnjar Ringo Starr",
+    "difficulty": 1,
+    "styleId": 85,
+    "styleDescription": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla",
+    "question": "Koji je član Beatlesa najpoznatiji kao bubnjar grupe?",
+    "answers": [
+      "Ringo Starr",
+      "Ringo"
+    ],
+    "explanation": "Ringo Starr bio je bubnjar Beatlesa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Beatles"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4036-20261111",
+    "createdAt": "2026-11-11T18:38:00+01:00",
+    "updatedAt": "2026-11-11T18:38:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Machu Picchu država Peru",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se južnoameričkoj državi nalazi drevni grad Inka Machu Picchu?",
+    "answers": [
+      "Peru"
+    ],
+    "explanation": "Machu Picchu nalazi se u peruanskim Andama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Machu_Picchu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
