@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-4117-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Glazba",
+    "focus": "Amy Winehouse Back to Black",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album je jedan od najpoznatijih radova Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4118-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Nogomet",
+    "focus": "Luka Modrić Zlatna lopta 2018",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je hrvatski veznjak 2018. osvojio Zlatnu loptu, prekinuvši niz Messija i Ronalda?",
+    "answers": [
+      "Luka Modrić",
+      "Modrić",
+      "Luka Modric"
+    ],
+    "explanation": "Luka Modrić osvojio je Ballon d'Or 2018.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/2018_Ballon_d%27Or"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4119-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Film",
+    "focus": "Jurassic Park Spielberg 1993",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je redatelj snimio film 'Jurski park' iz 1993. godine?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Spielberg je režirao film prema romanu Michaela Crichtona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4120-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Književnost",
+    "focus": "Gospodar muha William Golding",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman 'Gospodar muha', u kojem skupina dječaka ostaje na pustom otoku?",
+    "answers": [
+      "William Golding",
+      "Golding"
+    ],
+    "explanation": "William Golding objavio je roman 1954.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4121-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Zemljopis",
+    "focus": "Madagaskar glavni grad Antananarivo",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je glavni grad Madagaskara, smješten u unutrašnjosti tog velikog afričkog otoka?",
+    "answers": [
+      "Antananarivo"
+    ],
+    "explanation": "Antananarivo je glavni i najveći grad Madagaskara.",
+    "sources": [
+      "https://www.britannica.com/place/Antananarivo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4122-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Kemija",
+    "focus": "Helij baloni plin",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se plemeniti plin koristi za punjenje balona koji lebde jer je lakši od zraka?",
+    "answers": [
+      "Helij",
+      "Helium"
+    ],
+    "explanation": "Helij je lakši od zraka i nezapaljiv.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/2/helium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4123-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt Jamajka sprint",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter osvojio olimpijska zlata na 100 i 200 metara u Pekingu 2008.?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Bolt je u Pekingu osvojio oba pojedinačna sprinterska zlata.",
+    "sources": [
+      "https://www.olympics.com/en/athletes/usain-bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4124-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Televizija",
+    "focus": "Prijatelji Central Perk",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove kafić u kojem se često okuplja šest glavnih likova serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk je omiljeno okupljalište likova serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4125-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Biologija",
+    "focus": "Mitohondrij stanična energija",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji se stanični organel često naziva 'elektranom stanice' jer proizvodi većinu ATP-a?",
+    "answers": [
+      "Mitohondrij",
+      "Mitohondriji"
+    ],
+    "explanation": "Mitohondriji sudjeluju u staničnom disanju i stvaranju ATP-a.",
+    "sources": [
+      "https://www.britannica.com/science/mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4126-20261112",
+    "createdAt": "2026-11-12T00:38:45+01:00",
+    "updatedAt": "2026-11-12T00:38:45+01:00",
+    "topic": "Gastronomija",
+    "focus": "Tiramisu mascarpone",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je talijanski kremasti sir ključan za tradicionalni desert tiramisu?",
+    "answers": [
+      "Mascarpone"
+    ],
+    "explanation": "Mascarpone je važan sastojak kreme za tiramisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
