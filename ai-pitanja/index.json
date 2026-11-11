@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total": 4816,
+  "total": 4826,
   "months": [
     "2026-10",
     "2026-10-chatgpt-00182-00184",
@@ -405,11 +405,12 @@
     "2026-11-chatgpt-03777-03786",
     "2026-11-chatgpt-03787-03796",
     "2026-11-chatgpt-03797-03806",
-    "2026-11-chatgpt-03807-03816"
+    "2026-11-chatgpt-03807-03816",
+    "2026-11-chatgpt-03817-03826"
   ],
   "styleCounts": {
-    "1": 109,
-    "2": 49,
+    "1": 112,
+    "2": 56,
     "3": 60,
     "4": 107,
     "5": 6,
@@ -510,25 +511,25 @@
     "100": 10
   },
   "topicCounts": {
-    "Glazba": 252,
-    "Tehnologija": 195,
+    "Glazba": 253,
+    "Tehnologija": 196,
     "Astronomija": 297,
     "Gastronomija": 134,
-    "Književnost": 192,
-    "Sport": 266,
-    "Likovna umjetnost": 168,
+    "Književnost": 193,
+    "Sport": 267,
+    "Likovna umjetnost": 169,
     "Životinje": 170,
     "Povijest": 276,
-    "Zemljopis": 245,
-    "Biologija": 151,
+    "Zemljopis": 246,
+    "Biologija": 152,
     "Fizika": 110,
-    "Kemija": 185,
+    "Kemija": 186,
     "Matematika": 94,
-    "Medicina": 167,
+    "Medicina": 168,
     "Inženjerstvo": 61,
     "Arhitektura": 113,
     "Jezik": 87,
-    "Film": 156,
+    "Film": 157,
     "Televizija": 52,
     "Automobili": 11,
     "Promet": 52,
@@ -659,7 +660,16 @@
     "2": 1717,
     "3": 1146,
     "4": 708,
-    "5": 406
+    "5": 406,
+    "8": 1,
+    "9": 2,
+    "17": 1,
+    "22": 1,
+    "29": 1,
+    "31": 1,
+    "36": 1,
+    "56": 1,
+    "71": 1
   },
-  "updatedAt": "2026-11-11T04:39:48+01:00"
+  "updatedAt": "2026-11-11T05:36:43+01:00"
 }
