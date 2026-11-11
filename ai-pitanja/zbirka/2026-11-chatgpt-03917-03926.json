@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-3917-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Glazba",
+    "focus": "Björk i Island",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koja islandska pjevačica, poznata po albumima 'Debut' i 'Homogenic', nastupa pod svojim imenom bez prezimena?",
+    "answers": [
+      "Björk",
+      "Bjork"
+    ],
+    "explanation": "Björk Guðmundsdóttir objavila je albume Debut i Homogenic.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bj%C3%B6rk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3918-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Film",
+    "focus": "Hayao Miyazaki i Spirited Away",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je japanski redatelj animiranih filmova režirao 'Avanture male Chihiro' (Spirited Away)?",
+    "answers": [
+      "Hayao Miyazaki",
+      "Miyazaki"
+    ],
+    "explanation": "Film Spirited Away režirao je Hayao Miyazaki.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3919-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Životinje",
+    "focus": "Kapibara najveći glodavac",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji južnoamerički poluvodeni sisavac drži titulu najvećeg živućeg glodavca?",
+    "answers": [
+      "Kapibara",
+      "Capybara"
+    ],
+    "explanation": "Kapibara je najveća danas živuća vrsta glodavaca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Capybara"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3920-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Fizika",
+    "focus": "Barometar tlak zraka",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kojim se instrumentom mjeri atmosferski tlak, važan i u prognoziranju vremena?",
+    "answers": [
+      "Barometar"
+    ],
+    "explanation": "Barometar je instrument za mjerenje atmosferskog tlaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Barometer"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3921-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Književnost",
+    "focus": "Hobit Bilbo Baggins",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je pisac stvorio hobita Bilba Bagginsa, glavnog lika romana 'Hobit'?",
+    "answers": [
+      "J. R. R. Tolkien",
+      "J.R.R. Tolkien",
+      "Tolkien",
+      "John Ronald Reuel Tolkien"
+    ],
+    "explanation": "Tolkien je napisao roman The Hobbit.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Hobbit"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3922-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Zemljopis",
+    "focus": "Baku Kaspijsko jezero",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji glavni grad Azerbajdžana leži na zapadnoj obali Kaspijskog jezera?",
+    "answers": [
+      "Baku"
+    ],
+    "explanation": "Baku je glavni grad Azerbajdžana na obali Kaspijskog jezera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Baku"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3923-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Kemija",
+    "focus": "Volfram simbol W",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal, često korišten za žarne niti starih žarulja, ima kemijski simbol W?",
+    "answers": [
+      "Volfram",
+      "Wolfram",
+      "Tungsten"
+    ],
+    "explanation": "Kemijski simbol W označava volfram, odnosno tungsten.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3924-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Sport",
+    "focus": "Mačevanje floret",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem se olimpijskom sportu koristi oružje zvano floret?",
+    "answers": [
+      "Mačevanje"
+    ],
+    "explanation": "Floret je jedno od triju oružja u sportskom mačevanju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Foil_(fencing)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3925-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Medicina",
+    "focus": "Dermatologija koža",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se grana medicine bavi bolestima kože, kose i noktiju?",
+    "answers": [
+      "Dermatologija"
+    ],
+    "explanation": "Dermatologija proučava i liječi bolesti kože i njezinih dodataka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3926-20261111",
+    "createdAt": "2026-11-11T11:36:55+01:00",
+    "updatedAt": "2026-11-11T11:36:55+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod Japan",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je dvodimenzionalni kod, izvorno razvijen za praćenje automobilskih dijelova u Japanu, danas čest na jelovnicima i ulaznicama?",
+    "answers": [
+      "QR kod",
+      "QR-kod",
+      "QR code"
+    ],
+    "explanation": "QR kod razvila je japanska tvrtka Denso Wave 1994. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
