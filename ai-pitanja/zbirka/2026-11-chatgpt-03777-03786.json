@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-3777-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Glazba",
+    "focus": "Izvođač Bohemian Rhapsody",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koja je britanska rock skupina snimila pjesmu 'Bohemian Rhapsody'?",
+    "answers": [
+      "Queen"
+    ],
+    "explanation": "Queen je objavio Bohemian Rhapsody 1975. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3778-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Televizija",
+    "focus": "Grad obitelji Simpson",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem izmišljenom američkom gradu žive Homer, Marge, Bart, Lisa i Maggie?",
+    "answers": [
+      "Springfield"
+    ],
+    "explanation": "Radnja serije Simpsoni odvija se u izmišljenom Springfieldu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Springfield_(The_Simpsons)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3779-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Književnost",
+    "focus": "Pratitelj Don Quijotea",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove vjerni štitonoša koji prati Don Quijotea u Cervantesovu romanu?",
+    "answers": [
+      "Sancho Panza",
+      "Sancho"
+    ],
+    "explanation": "Sancho Panza prati Don Quijotea u njegovim pustolovinama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sancho_Panza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3780-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Zemljopis",
+    "focus": "Mora koja spaja Sueski kanal",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Sueski kanal spaja Sredozemno more s kojim drugim morem?",
+    "answers": [
+      "Crveno more",
+      "Crvenim morem"
+    ],
+    "explanation": "Sueski kanal povezuje Sredozemno i Crveno more.",
+    "sources": [
+      "https://www.larousse.fr/encyclopedie/divers/Suez/145440"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3781-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Biologija",
+    "focus": "Zeleni pigment fotosinteze",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zove zeleni biljni pigment koji upija svjetlost potrebnu za fotosintezu?",
+    "answers": [
+      "klorofil",
+      "chlorophyll"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost tijekom fotosinteze.",
+    "sources": [
+      "https://www.lernhelfer.de/schuelerlexikon/chemie-abitur/artikel/fotosynthesepigmente"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3782-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Film",
+    "focus": "Glumac Freddieja Mercuryja",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je glumac utjelovio Freddieja Mercuryja u filmu 'Bohemian Rhapsody' iz 2018.?",
+    "answers": [
+      "Rami Malek",
+      "Malek"
+    ],
+    "explanation": "Rami Malek glumi Freddieja Mercuryja u biografskom filmu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3783-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Povijest",
+    "focus": "Godina otvaranja Sueskog kanala",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine svečano otvoren Sueski kanal, važna prečica između Europe i Azije?",
+    "answers": [
+      "1869"
+    ],
+    "explanation": "Sueski kanal otvoren je 1869. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isthmus_of_Suez"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3784-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Jezik",
+    "focus": "Značenje španjolske riječi panza",
+    "difficulty": 3,
+    "styleId": 38,
+    "styleDescription": "Kreni od jezika pa pitaj koje je značenje posuđenice",
+    "question": "Što na španjolskom znači riječ 'panza' iz imena Sancho Panza?",
+    "answers": [
+      "trbuh",
+      "stomak"
+    ],
+    "explanation": "Španjolska riječ panza znači trbuh.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sancho_Panza"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3785-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Pop kultura",
+    "focus": "Autor Simpsonovih",
+    "difficulty": 2,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "Koji je američki crtač osmislio animiranu obitelj Simpson?",
+    "answers": [
+      "Matt Groening",
+      "Groening"
+    ],
+    "explanation": "Matt Groening autor je Simpsonovih.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Springfield_(The_Simpsons)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3786-20261111",
+    "createdAt": "2026-11-11T01:40:28+01:00",
+    "updatedAt": "2026-11-11T01:40:28+01:00",
+    "topic": "Kemija",
+    "focus": "Metal u molekuli klorofila",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se metal nalazi u središtu molekule klorofila?",
+    "answers": [
+      "magnezij",
+      "Mg"
+    ],
+    "explanation": "Magnezij je središnji metalni atom u strukturi klorofila.",
+    "sources": [
+      "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
