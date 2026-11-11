@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3887-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Glazba",
+    "focus": "Pjesma Dancing Queen",
+    "difficulty": 1,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Koja švedska grupa izvodi hit 'Dancing Queen'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "ABBA je objavila pjesmu 1976.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ABBA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3888-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Film",
+    "focus": "Lik Jack Sparrow",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji glumac glumi kapetana Jacka Sparrowa u filmskom serijalu Pirati s Kariba?",
+    "answers": [
+      "Johnny Depp"
+    ],
+    "explanation": "Johnny Depp tumači Jacka Sparrowa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jack_Sparrow"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3889-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Nogomet",
+    "focus": "Klub San Siro",
+    "difficulty": 1,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji milanski nogometni klub dijeli stadion San Siro s Interom?",
+    "answers": [
+      "AC Milan"
+    ],
+    "explanation": "AC Milan i Inter igraju na istom stadionu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3890-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Književnost",
+    "focus": "Autor Hobita",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je britanski pisac napisao roman 'Hobit'?",
+    "answers": [
+      "J. R. R. Tolkien"
+    ],
+    "explanation": "Tolkien je autor Hobita i Gospodara prstenova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Hobbit"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3891-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Zemljopis",
+    "focus": "Glavni grad Kanade",
+    "difficulty": 1,
+    "styleId": 38,
+    "styleDescription": "Kreni od jezika pa pitaj koje je značenje posuđenice",
+    "question": "Koji je glavni grad Kanade, smješten u pokrajini Ontario?",
+    "answers": [
+      "Ottawa"
+    ],
+    "explanation": "Ottawa je glavni grad Kanade.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ottawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3892-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Kemija",
+    "focus": "Simbol bakra",
+    "difficulty": 1,
+    "styleId": 45,
+    "styleDescription": "Opiši stari naziv grada, traži državu",
+    "question": "Koji kemijski element ima simbol Cu?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Cu potječe od latinskoga cuprum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3893-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Životinje",
+    "focus": "Najbrža kopnena životinja",
+    "difficulty": 1,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Koja je mačka poznata kao najbrža kopnena životinja?",
+    "answers": [
+      "Gepard"
+    ],
+    "explanation": "Gepard postiže vrlo velike brzine u kratkom sprintu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cheetah"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3894-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Tehnologija",
+    "focus": "Osnivač Microsofta",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "S kojim je Paulom Allenom Bill Gates osnovao koju softversku tvrtku?",
+    "answers": [
+      "Microsoft"
+    ],
+    "explanation": "Gates i Allen osnovali su Microsoft 1975.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Microsoft"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3895-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Umjetnost",
+    "focus": "Autor Mona Lise",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji je renesansni umjetnik naslikao Mona Lisu?",
+    "answers": [
+      "Leonardo da Vinci"
+    ],
+    "explanation": "Leonardo je autor portreta Mona Lise.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mona_Lisa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3896-20261111",
+    "createdAt": "2026-11-11T10:40:20+01:00",
+    "updatedAt": "2026-11-11T10:40:20+01:00",
+    "topic": "Medicina",
+    "focus": "Značenje dermatologije",
+    "difficulty": 1,
+    "styleId": 73,
+    "styleDescription": "Opiši kozmetičku praksu iz povijesnog razdoblja",
+    "question": "Koja grana medicine proučava i liječi bolesti kože?",
+    "answers": [
+      "Dermatologija"
+    ],
+    "explanation": "Dermatologija je medicinska specijalnost posvećena koži.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
