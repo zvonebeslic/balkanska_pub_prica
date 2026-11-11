@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-4077-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Sport",
+    "focus": "Tour de France žuta majica",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koje je boje majica koju na Tour de Franceu nosi vodeći vozač ukupnog poretka?",
+    "answers": [
+      "Žuta",
+      "Zuta"
+    ],
+    "explanation": "Točan odgovor je Žuta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yellow_jersey"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4078-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Umjetnost",
+    "focus": "Guernica Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski slikar naslikao antiratnu sliku 'Guernica' 1937. godine?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Točan odgovor je Pablo Picasso.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4079-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa Jupiterov mjesec",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji Jupiterov mjesec, nazvan po liku iz grčke mitologije, ispod ledene kore skriva ocean?",
+    "answers": [
+      "Europa",
+      "Jupiterova Europa"
+    ],
+    "explanation": "Točan odgovor je Europa.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/moons/europa/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4080-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Gastronomija",
+    "focus": "Tiramisu mascarpone",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je kremasti talijanski sir važan sastojak klasičnog tiramisua?",
+    "answers": [
+      "Mascarpone",
+      "Maskarpone"
+    ],
+    "explanation": "Točan odgovor je Mascarpone.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4081-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom riječ unatrag",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom",
+      "Palindrome"
+    ],
+    "explanation": "Točan odgovor je Palindrom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4082-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Videoigre",
+    "focus": "Pac-Man duhovi labirint",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojoj arkadnoj videoigri iz 1980. žuti lik jede točkice u labirintu i bježi od duhova?",
+    "answers": [
+      "Pac-Man",
+      "Pacman"
+    ],
+    "explanation": "Točan odgovor je Pac-Man.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pac-Man"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4083-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Politika",
+    "focus": "Angela Merkel njemačka kancelarka",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koja je političarka bila njemačka kancelarka od 2005. do 2021. godine?",
+    "answers": [
+      "Angela Merkel",
+      "Merkel"
+    ],
+    "explanation": "Točan odgovor je Angela Merkel.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Angela_Merkel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4084-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Biljke",
+    "focus": "Baobab zadebljano deblo",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koje je afričko stablo prepoznatljivo po golemom deblu koje može pohranjivati vodu?",
+    "answers": [
+      "Baobab",
+      "Adansonija"
+    ],
+    "explanation": "Točan odgovor je Baobab.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adansonia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4085-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Fizika",
+    "focus": "Newton jedinica sile",
+    "difficulty": 1,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Koja je SI jedinica sile dobila ime po engleskom znanstveniku koji je opisao zakone gibanja?",
+    "answers": [
+      "Njutn",
+      "Newton"
+    ],
+    "explanation": "Točan odgovor je Njutn.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton_(unit)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4086-20261111",
+    "createdAt": "2026-11-11T21:39:11+01:00",
+    "updatedAt": "2026-11-11T21:39:11+01:00",
+    "topic": "Brendovi",
+    "focus": "Lego danska igračka",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji danski brend kockica za slaganje nosi ime nastalo od izraza 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "Točan odgovor je LEGO.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
