@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3997-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Televizija",
+    "focus": "Friends Central Perk",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove kafić u kojem se redovito okuplja šest prijatelja iz serije Prijatelji?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk omiljeno je okupljalište likova serije Friends.",
+    "sources": [
+      "https://www.britannica.com/topic/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3998-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Nogomet",
+    "focus": "Messi Argentina SP 2022",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koju je reprezentaciju kao kapetan predvodio Lionel Messi do naslova svjetskog prvaka 2022.?",
+    "answers": [
+      "Argentina"
+    ],
+    "explanation": "Argentina je osvojila Svjetsko prvenstvo 2022. u Kataru.",
+    "sources": [
+      "https://www.fifa.com/tournaments/mens/worldcup/qatar2022"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3999-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Mona Lisa autor",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je renesansni umjetnik naslikao Mona Lisu?",
+    "answers": [
+      "Leonardo da Vinci"
+    ],
+    "explanation": "Mona Lisa djelo je Leonarda da Vincija.",
+    "sources": [
+      "https://www.britannica.com/topic/Mona-Lisa-painting"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4000-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Medicina",
+    "focus": "inzulin gušterača",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji organ proizvodi inzulin, hormon koji regulira razinu glukoze u krvi?",
+    "answers": [
+      "gušterača"
+    ],
+    "explanation": "Beta-stanice gušterače proizvode inzulin.",
+    "sources": [
+      "https://www.britannica.com/science/insulin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4001-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Astronomija",
+    "focus": "Mars crveni planet",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji planet Sunčeva sustava zbog oksida željeza na površini nosi nadimak Crveni planet?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Željezni oksidi daju Marsovoj površini crvenkastu boju.",
+    "sources": [
+      "https://science.nasa.gov/mars/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4002-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom definicija",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Palindrom zadržava isti redoslijed znakova pri čitanju u oba smjera.",
+    "sources": [
+      "https://www.britannica.com/art/palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4003-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Videoigre",
+    "focus": "Mario brat",
+    "difficulty": 1,
+    "styleId": 52,
+    "styleDescription": "Kreni od očite asocijacije, no završi nepredvidivim detaljem",
+    "question": "Kako se zove Mariov brat, prepoznatljiv po zelenoj odjeći u Nintendovim igrama?",
+    "answers": [
+      "Luigi"
+    ],
+    "explanation": "Luigi je Mariov brat i čest lik u serijalu Super Mario.",
+    "sources": [
+      "https://www.nintendo.com/us/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4004-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza klorofil",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji zeleni pigment biljkama omogućuje upijanje svjetlosti za fotosintezu?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Klorofil upija svjetlosnu energiju potrebnu za fotosintezu.",
+    "sources": [
+      "https://www.britannica.com/science/chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4005-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Politika",
+    "focus": "UN sjedište",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U kojem se američkom gradu nalazi glavno sjedište Ujedinjenih naroda?",
+    "answers": [
+      "New York"
+    ],
+    "explanation": "Glavno sjedište UN-a nalazi se u New Yorku.",
+    "sources": [
+      "https://www.un.org/en/about-us/un-headquarters"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4006-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Fizika",
+    "focus": "brzina svjetlosti vakuum",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko približno kilometara u sekundi prijeđe svjetlost u vakuumu?",
+    "answers": [
+      "300000"
+    ],
+    "explanation": "Brzina svjetlosti u vakuumu približno je 299.792 km/s.",
+    "sources": [
+      "https://www.britannica.com/science/speed-of-light"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
