@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4017-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie Ziggy Stardust",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koji je britanski glazbenik nastupao pod alter egom Ziggy Stardust?",
+    "answers": [
+      "David Bowie"
+    ],
+    "explanation": "Bowie je stvorio scenski lik Ziggy Stardust.",
+    "sources": [
+      "https://www.britannica.com/biography/David-Bowie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4018-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Nogomet",
+    "focus": "Diego Maradona Napoli",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koji je argentinski nogometaš 1980-ih postao ikona talijanskog Napolija?",
+    "answers": [
+      "Diego Maradona"
+    ],
+    "explanation": "Maradona je igrao za Napoli od 1984. do 1991.",
+    "sources": [
+      "https://www.britannica.com/biography/Diego-Maradona"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4019-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Film",
+    "focus": "Jurassic Park Steven Spielberg",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je režirao film Jurski park iz 1993. godine?",
+    "answers": [
+      "Steven Spielberg"
+    ],
+    "explanation": "Spielberg je režirao Jurassic Park.",
+    "sources": [
+      "https://www.britannica.com/biography/Steven-Spielberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4020-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Književnost",
+    "focus": "Franz Kafka Preobrazba Gregor Samsa",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem se književnom djelu Gregor Samsa budi preobražen u golemog kukca?",
+    "answers": [
+      "Preobrazba"
+    ],
+    "explanation": "Gregor Samsa glavni je lik Kafkine Preobrazbe.",
+    "sources": [
+      "https://www.britannica.com/topic/The-Metamorphosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4021-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lisabon rijeka Tejo",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na ušću koje se rijeke u Atlantik nalazi portugalski glavni grad Lisabon?",
+    "answers": [
+      "Tejo"
+    ],
+    "explanation": "Lisabon se nalazi uz estuarij rijeke Tejo (Tagus).",
+    "sources": [
+      "https://www.britannica.com/place/Lisbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4022-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Životinje",
+    "focus": "aksalotl meksički daždevnjak",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kako se zove meksički vodozemac poznat po tome što i kao odrasla jedinka zadržava vanjske škrge?",
+    "answers": [
+      "aksolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po neoteniji.",
+    "sources": [
+      "https://www.britannica.com/animal/axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4023-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Kemija",
+    "focus": "natrij kemijski simbol Na",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Na i nalazi se u kuhinjskoj soli?",
+    "answers": [
+      "natrij"
+    ],
+    "explanation": "Natrij je jedan od elemenata natrijeva klorida.",
+    "sources": [
+      "https://www.britannica.com/science/sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4024-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Televizija",
+    "focus": "Breaking Bad Walter White",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se preziva profesor kemije Walter iz serije Breaking Bad?",
+    "answers": [
+      "White"
+    ],
+    "explanation": "Walter White glavni je lik serije Breaking Bad.",
+    "sources": [
+      "https://www.britannica.com/topic/Breaking-Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4025-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "Claude Monet impresionizam",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je francuski slikar naslikao djelo Impresija, izlazak sunca, po kojem je impresionizam dobio ime?",
+    "answers": [
+      "Claude Monet"
+    ],
+    "explanation": "Monetova slika dala je ime impresionističkom pokretu.",
+    "sources": [
+      "https://www.britannica.com/biography/Claude-Monet"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4026-20261111",
+    "createdAt": "2026-11-11T17:37:00+01:00",
+    "updatedAt": "2026-11-11T17:37:00+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija oči",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove medicinska grana koja se bavi očima i bolestima vida?",
+    "answers": [
+      "oftalmologija"
+    ],
+    "explanation": "Oftalmologija proučava i liječi bolesti oka.",
+    "sources": [
+      "https://www.britannica.com/science/ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
