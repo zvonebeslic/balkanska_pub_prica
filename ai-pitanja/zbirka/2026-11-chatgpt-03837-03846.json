@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-3837-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Glazba",
+    "focus": "Nadimak kralj rock and rolla",
+    "difficulty": 1,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je američki pjevač poznat pod nadimkom Kralj rock and rolla?",
+    "answers": [
+      "Elvis Presley",
+      "Elvis"
+    ],
+    "explanation": "Elvis Presley stekao je nadimak Kralj rock and rolla.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Elvis_Presley"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3838-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Film",
+    "focus": "Redatelj filma E.T.",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je redatelj 1982. godine predstavio filmskog izvanzemaljca E.T.-ja?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Steven Spielberg režirao je film E.T. the Extra-Terrestrial.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3839-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Sport",
+    "focus": "Sportska oprema za badminton",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem sportu igrači reketima prebacuju pernatu lopticu preko mreže?",
+    "answers": [
+      "Badminton"
+    ],
+    "explanation": "Badminton se igra reketima i posebnom pernatom ili sintetičkom lopticom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Badminton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3840-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Književnost",
+    "focus": "Autor romana Životinjska farma",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao satirični roman 'Životinjska farma', u kojem životinje preuzimaju vlast na farmi?",
+    "answers": [
+      "George Orwell",
+      "Orwell"
+    ],
+    "explanation": "George Orwell objavio je Životinjsku farmu 1945. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Animal_Farm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3841-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Zemljopis",
+    "focus": "Glavni grad Portugala",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji europski glavni grad leži na rijeci Tejo, nedaleko od njezina ušća u Atlantik?",
+    "answers": [
+      "Lisabon",
+      "Lisboa"
+    ],
+    "explanation": "Lisabon je glavni grad Portugala i nalazi se na rijeci Tejo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lisbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3842-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Kemija",
+    "focus": "Simbol kemijskog elementa zlata",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji plemeniti metal u periodnom sustavu nosi oznaku Au?",
+    "answers": [
+      "Zlato"
+    ],
+    "explanation": "Kemijski simbol Au potječe od latinskog naziva aurum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gold"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3843-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Biologija",
+    "focus": "Zeleni pigment biljaka",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zove zeleni pigment kojim biljke upijaju svjetlost potrebnu za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil je pigment važan za hvatanje svjetlosne energije u fotosintezi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3844-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Tehnologija",
+    "focus": "Značenje kratice USB",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koje se tri engleske riječi kriju iza računalne kratice USB?",
+    "answers": [
+      "Universal Serial Bus"
+    ],
+    "explanation": "USB znači Universal Serial Bus, standard za povezivanje uređaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/USB"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3845-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Povijest",
+    "focus": "Pad Berlinskog zida",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica kroz Berlinski zid, jedan od simbola Hladnog rata?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3846-20261111",
+    "createdAt": "2026-11-11T07:41:14+01:00",
+    "updatedAt": "2026-11-11T07:41:14+01:00",
+    "topic": "Medicina",
+    "focus": "Naziv za povišenu tjelesnu temperaturu",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji se medicinski naziv koristi za vrućicu, odnosno povišenu tjelesnu temperaturu?",
+    "answers": [
+      "Pireksija",
+      "Febrilitet"
+    ],
+    "explanation": "Pireksija je stručni naziv za vrućicu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fever"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
