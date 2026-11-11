@@ -1,0 +1,236 @@
+[
+  {
+    "id": "chatgpt10000-3787-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Glazba",
+    "focus": "Album pjesme Rolling in the Deep",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na kojem se Adeleinu albumu iz 2011. nalazi hit 'Rolling in the Deep'?",
+    "answers": [
+      "21"
+    ],
+    "explanation": "Pjesma je uvodni singl s albuma 21.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rolling_in_the_Deep"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3788-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Film",
+    "focus": "Glumac Neo u Matrixu",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U filmu 'Matrix' iz 1999. godine, koji glumac tumači Nea?",
+    "answers": [
+      "Keanu Reeves",
+      "Keanu Charles Reeves"
+    ],
+    "explanation": "Keanu Reeves glumi Thomasa Andersona, poznatog kao Neo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3789-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Zemljopis",
+    "focus": "Država Kilimandžara",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se afričkoj državi uzdiže Kilimandžaro, najviša planina kontinenta?",
+    "answers": [
+      "Tanzanija",
+      "Tanzania"
+    ],
+    "explanation": "Kilimandžaro se nalazi u sjeveroistočnoj Tanzaniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kilimanjaro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3790-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Umjetnost",
+    "focus": "Domovina Fride Kahlo",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Iz koje zemlje potječe slikarica Frida Kahlo, poznata po upečatljivim autoportretima?",
+    "answers": [
+      "Meksiko",
+      "Mexico"
+    ],
+    "explanation": "Frida Kahlo rođena je u Coyoacánu, u današnjem Ciudad de Méxicu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frida_Kahlo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3791-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Kemija",
+    "focus": "Latinski naziv natrija",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element nosi simbol Na, izveden iz naziva natrium?",
+    "answers": [
+      "natrij",
+      "sodium"
+    ],
+    "explanation": "Na je kemijski simbol natrija, elementa atomskog broja 11.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3792-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Tehnologija",
+    "focus": "Izumitelj World Wide Weba",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski znanstvenik razvio World Wide Web radeći u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee",
+      "Timothy Berners-Lee"
+    ],
+    "explanation": "Tim Berners-Lee osmislio je World Wide Web 1989. u CERN-u.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/World_Wide_Web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3793-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Književnost",
+    "focus": "Autor Malog princa",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski pisac i pilot autor 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Antoine de Saint Exupery",
+      "Saint-Exupéry"
+    ],
+    "explanation": "Antoine de Saint-Exupéry napisao je Malog princa, objavljenog 1943.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3794-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Gastronomija",
+    "focus": "Začin od mljevenih paprika",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se crveni začin dobiva sušenjem i mljevenjem plodova paprike?",
+    "answers": [
+      "mljevena paprika",
+      "paprika",
+      "paprika u prahu"
+    ],
+    "explanation": "Paprika kao začin nastaje mljevenjem osušenih paprika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paprika"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3795-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Biologija",
+    "focus": "Plin koji biljke oslobađaju fotosintezom",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji plin nastaje i oslobađa se tijekom fotosinteze kada se voda razgrađuje uz pomoć svjetlosti?",
+    "answers": [
+      "kisik",
+      "oxygen",
+      "O2"
+    ],
+    "explanation": "Pri fotosintezi iz vode nastaje molekularni kisik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3796-20261111",
+    "createdAt": "2026-11-11T02:39:34+01:00",
+    "updatedAt": "2026-11-11T02:39:34+01:00",
+    "topic": "Film",
+    "focus": "Boja pilule kojom Neo upoznaje istinu",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koju boju pilule Neo odabire u 'Matrixu' kako bi saznao istinu o svijetu?",
+    "answers": [
+      "crvenu",
+      "crvena",
+      "crvenu pilulu"
+    ],
+    "explanation": "Neo odabire crvenu pilulu koju mu nudi Morpheus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
