@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-3827-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Glazba",
+    "focus": "Album Back to Black",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album Back to Black proslavio je britansku soul pjevačicu Amy Winehouse.",
+    "sources": [
+      "https://www.britannica.com/biography/Amy-Winehouse"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3828-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Nogomet",
+    "focus": "Nadimak reprezentacije Italije",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koju europsku nogometnu reprezentaciju navijači zovu Azzurri, odnosno Plavi?",
+    "answers": [
+      "Italija",
+      "Italiju",
+      "Talijanska reprezentacija"
+    ],
+    "explanation": "Azzurri je nadimak talijanske nogometne reprezentacije.",
+    "sources": [
+      "https://www.fifa.com/en/teams"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3829-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Film",
+    "focus": "Glumica Hermiona Granger",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja glumica tumači Hermionu Granger u filmskom serijalu Harry Potter?",
+    "answers": [
+      "Emma Watson"
+    ],
+    "explanation": "Emma Watson glumila je Hermionu u filmskim adaptacijama romana J. K. Rowling.",
+    "sources": [
+      "https://www.britannica.com/biography/Emma-Watson"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3830-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Književnost",
+    "focus": "Autor romana Sto godina samoće",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Roman 'Sto godina samoće' prati obitelj Buendía. Tko ga je napisao?",
+    "answers": [
+      "Gabriel García Márquez",
+      "Gabriel Garcia Marquez"
+    ],
+    "explanation": "Gabriel García Márquez objavio je roman 1967. godine.",
+    "sources": [
+      "https://www.britannica.com/biography/Gabriel-Garcia-Marquez"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3831-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Zemljopis",
+    "focus": "Rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja velika europska rijeka razdvaja Budim i Peštu?",
+    "answers": [
+      "Dunav"
+    ],
+    "explanation": "Dunav prolazi kroz Budimpeštu i razdvaja njezina dva povijesna dijela.",
+    "sources": [
+      "https://www.britannica.com/place/Budapest"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3832-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Kemija",
+    "focus": "Element u hemoglobinu",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element u hemoglobinu omogućuje vezanje kisika?",
+    "answers": [
+      "Željezo",
+      "Fe"
+    ],
+    "explanation": "Hemoglobin sadrži željezo u hemskoj skupini koja veže kisik.",
+    "sources": [
+      "https://www.britannica.com/science/hemoglobin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3833-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Životinje",
+    "focus": "Sisavac koji polaže jaja",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima pačji kljun, živi uz vodu i polaže jaja?",
+    "answers": [
+      "Čudnovati kljunaš",
+      "Kljunaš",
+      "Platipus"
+    ],
+    "explanation": "Čudnovati kljunaš pripada jednootvornim sisavcima koji polažu jaja.",
+    "sources": [
+      "https://www.britannica.com/animal/platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3834-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Tehnologija",
+    "focus": "Izumitelj Bluetooth imena",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je skandinavskom kralju nazvana bežična tehnologija Bluetooth?",
+    "answers": [
+      "Harald Bluetooth",
+      "Harald Plavozubi",
+      "Harald I. Plavozubi",
+      "Harald Plavi Zub"
+    ],
+    "explanation": "Bluetooth je dobio ime po danskom kralju Haraldu Plavozubom.",
+    "sources": [
+      "https://www.bluetooth.com/about-us/bluetooth-origin/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3835-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Umjetnost",
+    "focus": "Slikar Guernice",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je naslikao monumentalnu antiratnu sliku 'Guernica' 1937. godine?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je Guernicu naslikao kao odgovor na bombardiranje baskijskoga grada.",
+    "sources": [
+      "https://www.museoreinasofia.es/en/collection/artwork/guernica"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3836-20261111",
+    "createdAt": "2026-11-11T06:44:47+01:00",
+    "updatedAt": "2026-11-11T06:44:47+01:00",
+    "topic": "Medicina",
+    "focus": "Stručni naziv za kratkovidnost",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se stručnim nazivom naziva kratkovidnost, pri kojoj udaljeni predmeti izgledaju mutno?",
+    "answers": [
+      "Miopija",
+      "Myopia"
+    ],
+    "explanation": "Miopija je refrakcijska pogreška oka pri kojoj se udaljeni predmeti ne vide jasno.",
+    "sources": [
+      "https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/nearsightedness-myopia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
