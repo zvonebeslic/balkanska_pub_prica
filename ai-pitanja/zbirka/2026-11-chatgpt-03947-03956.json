@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3947-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie Ziggy Stardust",
+    "difficulty": 3,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je britanski glazbenik stvorio scenski alter ego Ziggy Stardust?",
+    "answers": [
+      "David Bowie"
+    ],
+    "explanation": "Ziggy Stardust bio je Bowiejev scenski lik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_Bowie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3948-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Sport",
+    "focus": "Wimbledon trava",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kojoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava"
+    ],
+    "explanation": "Wimbledon je jedini Grand Slam koji se igra na travi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3949-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Film",
+    "focus": "Forrest Gump Tom Hanks",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji glumac tumači naslovnog junaka filma 'Forrest Gump' iz 1994.?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Tom Hanks osvojio je Oscara za ulogu Forresta Gumpa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3950-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Književnost",
+    "focus": "Pipi Duga Čarapa",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je švedska književnica stvorila lik Pipi Duge Čarape?",
+    "answers": [
+      "Astrid Lindgren"
+    ],
+    "explanation": "Astrid Lindgren autorica je priča o Pipi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pippi_Longstocking"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3951-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Zemljopis",
+    "focus": "Mrtvo more Jordan",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koje se izrazito slano jezero nalazi između Jordana i Izraela odnosno Zapadne obale?",
+    "answers": [
+      "Mrtvo more"
+    ],
+    "explanation": "Mrtvo more je slano jezero na Bliskom istoku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dead_Sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3952-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Kemija",
+    "focus": "Bakar Cu",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Cu i često se koristi za električne vodiče?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Cu je simbol bakra, dobrog vodiča električne struje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3953-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Životinje",
+    "focus": "Pingvini Antarktika",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja skupina ptica, poznata po uspravnom hodu i plivanju, obuhvaća carskog i adelijskog predstavnika?",
+    "answers": [
+      "Pingvini"
+    ],
+    "explanation": "Carski i adelijski pingvini žive na Antarktici.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Penguin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3954-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je engleski dokument kralj Ivan bez Zemlje prihvatio 1215. godine pod pritiskom baruna?",
+    "answers": [
+      "Magna Carta"
+    ],
+    "explanation": "Magna Carta je povelja iz 1215. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3955-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Tehnologija",
+    "focus": "Linux Linus Torvalds",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je finski programer 1991. započeo razvoj jezgre operacijskog sustava Linux?",
+    "answers": [
+      "Linus Torvalds"
+    ],
+    "explanation": "Linus Torvalds pokrenuo je razvoj jezgre Linuxa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Linus_Torvalds"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3956-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Medicina",
+    "focus": "Inzulin gušterača",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji hormon gušterače pomaže stanicama preuzimati glukozu iz krvi?",
+    "answers": [
+      "Inzulin"
+    ],
+    "explanation": "Inzulin sudjeluje u regulaciji glukoze u krvi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Insulin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
