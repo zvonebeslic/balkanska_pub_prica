@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3817-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Glazba",
+    "focus": "Pjevač grupe U2",
+    "difficulty": 29,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji irski pjevač, pravim imenom Paul Hewson, predvodi rock sastav U2?",
+    "answers": [
+      "Bono"
+    ],
+    "explanation": "Paul David Hewson nastupa pod imenom Bono kao pjevač grupe U2.",
+    "sources": [
+      "https://www.britannica.com/biography/Bono"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3818-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Film",
+    "focus": "Redatelj filma E.T.",
+    "difficulty": 9,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Tko je režirao film 'E.T. the Extra-Terrestrial' iz 1982. godine?",
+    "answers": [
+      "Steven Spielberg"
+    ],
+    "explanation": "Steven Spielberg režirao je znanstvenofantastični film E.T.",
+    "sources": [
+      "https://www.britannica.com/biography/Steven-Spielberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3819-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Sport",
+    "focus": "Prvi pobjednik nogometnog SP-a",
+    "difficulty": 22,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koja je reprezentacija osvojila prvo Svjetsko prvenstvo u nogometu 1930. godine?",
+    "answers": [
+      "Urugvaj"
+    ],
+    "explanation": "Urugvaj je 1930. kao domaćin osvojio prvo svjetsko nogometno prvenstvo.",
+    "sources": [
+      "https://www.fifa.com/tournaments/mens/worldcup/1930uruguay"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3820-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Književnost",
+    "focus": "Autor romana Proces",
+    "difficulty": 31,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je pisac napisao roman 'Proces', u kojem je glavni lik Josef K.?",
+    "answers": [
+      "Franz Kafka"
+    ],
+    "explanation": "Franz Kafka autor je romana Proces, objavljenog nakon njegove smrti.",
+    "sources": [
+      "https://www.britannica.com/biography/Franz-Kafka"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3821-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Zemljopis",
+    "focus": "Glavni grad Kanade",
+    "difficulty": 8,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kanada ima Toronto, Montreal i Vancouver, no koji je njezin glavni grad?",
+    "answers": [
+      "Ottawa"
+    ],
+    "explanation": "Ottawa je glavni grad Kanade.",
+    "sources": [
+      "https://www.britannica.com/place/Ottawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3822-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Kemija",
+    "focus": "Simbol srebra",
+    "difficulty": 36,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji kemijski element ima simbol Ag, izveden iz latinske riječi argentum?",
+    "answers": [
+      "srebro"
+    ],
+    "explanation": "Ag je kemijski simbol srebra.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/47/silver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3823-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Biologija",
+    "focus": "Najveći sisavac",
+    "difficulty": 17,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji je morski sisavac najveća poznata životinja koja je ikada živjela na Zemlji?",
+    "answers": [
+      "plavetni kit"
+    ],
+    "explanation": "Plavetni kit najveća je poznata životinja po masi.",
+    "sources": [
+      "https://www.britannica.com/animal/blue-whale"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3824-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Tehnologija",
+    "focus": "Izumitelj World Wide Weba",
+    "difficulty": 56,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je britanski informatičar 1989. u CERN-u predložio sustav iz kojeg je nastao World Wide Web?",
+    "answers": [
+      "Tim Berners-Lee"
+    ],
+    "explanation": "Tim Berners-Lee predložio je World Wide Web u CERN-u.",
+    "sources": [
+      "https://home.cern/science/computing/birth-web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3825-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Autor Guernice",
+    "difficulty": 9,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je španjolski slikar 1937. naslikao antiratno djelo 'Guernica'?",
+    "answers": [
+      "Pablo Picasso"
+    ],
+    "explanation": "Picasso je Guernicu naslikao kao reakciju na bombardiranje baskijskog grada.",
+    "sources": [
+      "https://www.museoreinasofia.es/en/collection/artwork/guernica"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3826-20261111",
+    "createdAt": "2026-11-11T05:36:43+01:00",
+    "updatedAt": "2026-11-11T05:36:43+01:00",
+    "topic": "Medicina",
+    "focus": "Naziv za manjak vitamina C",
+    "difficulty": 71,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Kako se naziva bolest uzrokovana dugotrajnim nedostatkom vitamina C, nekoć česta među pomorcima?",
+    "answers": [
+      "skorbut"
+    ],
+    "explanation": "Skorbut nastaje zbog nedostatka vitamina C.",
+    "sources": [
+      "https://www.britannica.com/science/scurvy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
