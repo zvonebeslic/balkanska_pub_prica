@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-3797-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Književnost",
+    "focus": "Ofelijin otac u Hamletu",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove otac Ofelije i Laerta u Shakespeareovu 'Hamletu'?",
+    "answers": [
+      "Polonije",
+      "Polonius"
+    ],
+    "explanation": "Polonije je kraljevski savjetnik i otac Ofelije i Laerta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophelia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3798-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Umjetnost",
+    "focus": "Autor slike Ofelija",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je engleski slikar 1852. naslikao poznatu 'Ofeliju' kako pluta među cvijećem?",
+    "answers": [
+      "John Everett Millais",
+      "Millais"
+    ],
+    "explanation": "Prerafaelitski slikar John Everett Millais naslikao je Ofeliju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophelia_(Millais)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3799-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Glazba",
+    "focus": "Pjevačica pjesme Waka Waka",
+    "difficulty": 1,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koja je kolumbijska pjevačica izvela hit 'Waka Waka (This Time for Africa)' za SP 2010.?",
+    "answers": [
+      "Shakira",
+      "Shakira Isabel Mebarak Ripoll"
+    ],
+    "explanation": "Shakira je snimila službenu pjesmu Svjetskog prvenstva 2010.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Waka_Waka_(This_Time_for_Africa)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3800-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Sport",
+    "focus": "Sport Roland Garros",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem se sportu natjecatelji bore za naslov na pariškom Roland-Garrosu?",
+    "answers": [
+      "tenis"
+    ],
+    "explanation": "Roland-Garros jedan je od četiri teniska Grand Slam turnira.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_Open"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3801-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Film",
+    "focus": "Redatelj filma Titanic 1997",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je režirao film 'Titanic' iz 1997., s Leonardom DiCaprijem i Kate Winslet?",
+    "answers": [
+      "James Cameron",
+      "Cameron"
+    ],
+    "explanation": "James Cameron režirao je i napisao scenarij filma Titanic.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3802-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Zemljopis",
+    "focus": "Grad Akropola",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Iznad kojeg se europskog glavnog grada uzdiže antička Akropola s Partenonom?",
+    "answers": [
+      "Atena",
+      "Athens"
+    ],
+    "explanation": "Partenon se nalazi na atenskoj Akropoli u Grčkoj.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Acropolis_of_Athens"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3803-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Biologija",
+    "focus": "Životinja aksolotl",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac može obnoviti izgubljene udove i često zadržava ličinke značajke cijeli život?",
+    "answers": [
+      "aksolotl",
+      "axolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po regeneraciji i neoteniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3804-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Kemija",
+    "focus": "Element simbol Fe",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal, glavni sastojak čelika, ima kemijski simbol Fe?",
+    "answers": [
+      "željezo",
+      "gvožđe",
+      "iron"
+    ],
+    "explanation": "Fe potječe od latinskog naziva ferrum, a označava željezo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Iron"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3805-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Tehnologija",
+    "focus": "Značenje kratice GPS",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se tri engleska izraza kriju iza kratice GPS, sustava za satelitsko određivanje položaja?",
+    "answers": [
+      "Global Positioning System"
+    ],
+    "explanation": "GPS znači Global Positioning System.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3806-20261111",
+    "createdAt": "2026-11-11T03:38:11+01:00",
+    "updatedAt": "2026-11-11T03:38:11+01:00",
+    "topic": "Medicina",
+    "focus": "Stručni naziv za ubrzan rad srca",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se medicinski naziva ubrzan rad srca, odnosno povećana frekvencija otkucaja?",
+    "answers": [
+      "tahikardija",
+      "tachycardia"
+    ],
+    "explanation": "Tahikardija označava povećanu frekvenciju srca, u odraslih u mirovanju obično iznad 100/min.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tachycardia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
