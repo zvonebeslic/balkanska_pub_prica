@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3987-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Glazba",
+    "focus": "Freddie Mercury rodno ime",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koje je bilo rođeno ime pjevača grupe Queen, Freddieja Mercuryja?",
+    "answers": [
+      "Farrokh Bulsara"
+    ],
+    "explanation": "Freddie Mercury rođen je kao Farrokh Bulsara.",
+    "sources": [
+      "https://www.britannica.com/biography/Freddie-Mercury"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3988-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Sport",
+    "focus": "maraton duljina",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko kilometara iznosi službena duljina maratona?",
+    "answers": [
+      "42,195"
+    ],
+    "explanation": "Maraton se trči na 42 kilometra i 195 metara.",
+    "sources": [
+      "https://www.britannica.com/sports/marathon-race"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3989-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Film",
+    "focus": "Matrix Neo glumac",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji glumac tumači Nea u filmu Matrix iz 1999.?",
+    "answers": [
+      "Keanu Reeves"
+    ],
+    "explanation": "Keanu Reeves glumi Thomasa Andersona, poznatog kao Neo.",
+    "sources": [
+      "https://www.britannica.com/topic/The-Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3990-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Književnost",
+    "focus": "Dorian Gray autor",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je irski pisac napisao roman Slika Doriana Graya?",
+    "answers": [
+      "Oscar Wilde"
+    ],
+    "explanation": "Oscar Wilde autor je romana iz 1890.",
+    "sources": [
+      "https://www.britannica.com/topic/The-Picture-of-Dorian-Gray"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3991-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Zemljopis",
+    "focus": "Kilimandžaro država",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se afričkoj državi nalazi planina Kilimandžaro?",
+    "answers": [
+      "Tanzanija"
+    ],
+    "explanation": "Kilimandžaro se nalazi u sjeveroistočnoj Tanzaniji.",
+    "sources": [
+      "https://www.britannica.com/place/Kilimanjaro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3992-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Kemija",
+    "focus": "natrij simbol",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Na, izveden iz latinskog naziva natrium?",
+    "answers": [
+      "natrij"
+    ],
+    "explanation": "Na je kemijski simbol natrija.",
+    "sources": [
+      "https://www.britannica.com/science/sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3993-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Životinje",
+    "focus": "pingvin car najveći",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je najveća živuća vrsta pingvina?",
+    "answers": [
+      "carski pingvin"
+    ],
+    "explanation": "Carski pingvin najveća je živuća vrsta pingvina.",
+    "sources": [
+      "https://www.britannica.com/animal/emperor-penguin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3994-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Tehnologija",
+    "focus": "Linux tvorac",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je finski programer započeo razvoj jezgre Linux 1991. godine?",
+    "answers": [
+      "Linus Torvalds"
+    ],
+    "explanation": "Linus Torvalds pokrenuo je razvoj Linuxove jezgre.",
+    "sources": [
+      "https://www.britannica.com/biography/Linus-Torvalds"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3995-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Povijest",
+    "focus": "Berlinski zid pad",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica kroz Berlinski zid, što je postalo simbol kraja podjele Njemačke?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://www.britannica.com/topic/Berlin-Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3996-20261111",
+    "createdAt": "2026-11-11T15:35:05+01:00",
+    "updatedAt": "2026-11-11T15:35:05+01:00",
+    "topic": "Gastronomija",
+    "focus": "humus slanutak",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavni sastojak bliskoistočnog namaza humusa?",
+    "answers": [
+      "slanutak"
+    ],
+    "explanation": "Humus se tradicionalno priprema od kuhanog slanutka.",
+    "sources": [
+      "https://www.britannica.com/topic/hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
