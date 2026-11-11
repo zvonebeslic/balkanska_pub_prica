@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-3927-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA i Waterloo",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je švedska grupa pobijedila na Eurosongu 1974. pjesmom 'Waterloo'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "ABBA je pobjedom s pjesmom Waterloo stekla međunarodnu slavu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ABBA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3928-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Film",
+    "focus": "Christopher Nolan i Inception",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Tko je režirao znanstvenofantastični film 'Početak' (Inception) iz 2010.?",
+    "answers": [
+      "Christopher Nolan"
+    ],
+    "explanation": "Christopher Nolan režirao je Inception.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Inception"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3929-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt i Jamajka",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koju je državu na olimpijskim atletskim stazama predstavljao sprinter Usain Bolt?",
+    "answers": [
+      "Jamajka"
+    ],
+    "explanation": "Bolt je višestruki olimpijski pobjednik iz Jamajke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3930-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Književnost",
+    "focus": "Gavran Edgar Allan Poe",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je američki književnik napisao pjesmu 'Gavran' (The Raven)?",
+    "answers": [
+      "Edgar Allan Poe"
+    ],
+    "explanation": "Poeova pjesma The Raven objavljena je 1845.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Raven"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3931-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lisabon i Tejo",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na ušću koje se rijeke nalazi portugalski glavni grad Lisabon?",
+    "answers": [
+      "Tejo"
+    ],
+    "explanation": "Lisabon leži uz estuarij rijeke Tejo (Tagus).",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tagus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3932-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Kemija",
+    "focus": "Helij baloni",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se plemeniti plin često koristi za punjenje balona jer je lakši od zraka i nezapaljiv?",
+    "answers": [
+      "Helij"
+    ],
+    "explanation": "Helij je lagan i kemijski inertan plin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Helium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3933-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Životinje",
+    "focus": "Koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Lišće kojeg roda drveća čini glavninu prehrane koala?",
+    "answers": [
+      "Eukaliptus"
+    ],
+    "explanation": "Koale se pretežno hrane listovima eukaliptusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3934-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Povijest",
+    "focus": "Pad Berlinskog zida",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, simbolički označivši kraj podjele grada?",
+    "answers": [
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3935-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Tehnologija",
+    "focus": "Nintendo Super Mario",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove brkati vodoinstalater koji je postao zaštitno lice Nintendovih videoigara?",
+    "answers": [
+      "Mario"
+    ],
+    "explanation": "Mario je jedan od najpoznatijih Nintendovih likova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mario"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-3936-20261111",
+    "createdAt": "2026-11-11T12:39:34+01:00",
+    "updatedAt": "2026-11-11T12:39:34+01:00",
+    "topic": "Medicina",
+    "focus": "Oftalmologija",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se medicinska specijalizacija bavi bolestima oka i vida?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija je grana medicine posvećena očima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
