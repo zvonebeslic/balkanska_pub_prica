@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4097-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Sport",
+    "focus": "Wimbledon travnata podloga",
+    "difficulty": 1,
+    "styleId": 97,
+    "styleDescription": "Prikaži kontrast malog uzroka i velike povijesne posljedice",
+    "question": "Na kakvoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava"
+    ],
+    "explanation": "Trava je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4098-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Umjetnost",
+    "focus": "Zvjezdana noć Van Gogh",
+    "difficulty": 1,
+    "styleId": 98,
+    "styleDescription": "Uključi dva neobična broja, ali traži jednostavan pojam",
+    "question": "Koji je nizozemski slikar naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "explanation": "Vincent van Gogh je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4099-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Kemija",
+    "focus": "Kemijski simbol kalija",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koji kemijski element ima simbol K, izveden iz latinskog naziva kalium?",
+    "answers": [
+      "Kalij"
+    ],
+    "explanation": "Kalij je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4100-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Astronomija",
+    "focus": "Mars Olympus Mons",
+    "difficulty": 2,
+    "styleId": 100,
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "question": "Na kojem se planetu nalazi golemi vulkan Olympus Mons?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Mars je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Olympus_Mons"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4101-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Medicina",
+    "focus": "Oftalmologija oči",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja se medicinska specijalizacija bavi bolestima i zdravljem očiju?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4102-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Televizija",
+    "focus": "Friends Central Perk",
+    "difficulty": 1,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Kako se zove kafić u kojem se često okupljaju likovi serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4103-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Politika",
+    "focus": "Ujedinjeni narodi New York",
+    "difficulty": 1,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "U kojem se američkom gradu nalazi sjedište Ujedinjenih naroda?",
+    "answers": [
+      "New York"
+    ],
+    "explanation": "New York je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4104-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom čitanje",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4105-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Brendovi",
+    "focus": "Lego Danska",
+    "difficulty": 1,
+    "styleId": 5,
+    "styleDescription": "Poveži dvije različite industrije zajedničkim imenom",
+    "question": "Iz koje europske države potječe proizvođač igračaka LEGO?",
+    "answers": [
+      "Danska"
+    ],
+    "explanation": "Danska je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4106-20261111",
+    "createdAt": "2026-11-11T22:41:51+01:00",
+    "updatedAt": "2026-11-11T22:41:51+01:00",
+    "topic": "Fizika",
+    "focus": "Newton zakon inercije",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se naziva svojstvo tijela da se opire promjeni svojega stanja gibanja?",
+    "answers": [
+      "Inercija"
+    ],
+    "explanation": "Inercija je točan odgovor.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Inertia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
