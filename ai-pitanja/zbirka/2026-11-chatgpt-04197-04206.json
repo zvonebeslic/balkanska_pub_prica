@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-4197-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Africa benda Toto",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je američki rock-sastav snimio hit Africa, objavljen 1982. godine?",
+    "answers": [
+      "Toto"
+    ],
+    "explanation": "Africa je pjesma sastava Toto s albuma Toto IV.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Africa_(Toto_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4198-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Nogomet",
+    "focus": "prvi osvajač svjetskog prvenstva 1930",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koja je reprezentacija 1930. na domaćem terenu osvojila prvo Svjetsko nogometno prvenstvo?",
+    "answers": [
+      "Urugvaj",
+      "Uruguay"
+    ],
+    "explanation": "Urugvaj je u finalu prvog SP-a pobijedio Argentinu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4199-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Film",
+    "focus": "glumica glavne uloge u filmu Erin Brockovich",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Julia Roberts osvojila je Oscara za glavnu ulogu u filmu iz 2000. o kojoj stvarnoj aktivistici?",
+    "answers": [
+      "Erin Brockovich",
+      "Erin Brokovič"
+    ],
+    "explanation": "Roberts je glumila Erin Brockovich u istoimenom filmu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Erin_Brockovich_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4200-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Ime ruže",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je talijanski pisac napisao povijesni kriminalistički roman Ime ruže?",
+    "answers": [
+      "Umberto Eco",
+      "Eco"
+    ],
+    "explanation": "Roman Ime ruže objavljen je 1980. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4201-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Zemljopis",
+    "focus": "država u kojoj je Kilimandžaro",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se afričkoj državi uzdiže Kilimandžaro, najviša planina kontinenta?",
+    "answers": [
+      "Tanzanija",
+      "Tanzania"
+    ],
+    "explanation": "Kilimandžaro se nalazi na sjeveroistoku Tanzanije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4202-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Biologija",
+    "focus": "proces preobrazbe gusjenice u leptira",
+    "difficulty": 1,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako nazivamo razvojnu preobrazbu tijekom koje gusjenica postaje leptir?",
+    "answers": [
+      "metamorfoza",
+      "preobrazba"
+    ],
+    "explanation": "Metamorfoza označava veliku promjenu oblika tijekom razvoja životinje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Metamorphosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4203-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol natrija",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element ima simbol Na, izveden iz latinskog naziva natrium?",
+    "answers": [
+      "natrij",
+      "sodium"
+    ],
+    "explanation": "Simbol Na dolazi od latinskog imena natrium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4204-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Weba",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar 1989. u CERN-u predložio sustav koji će postati World Wide Web?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee",
+      "Berners-Lee"
+    ],
+    "explanation": "Tim Berners-Lee predložio je WWW dok je radio u CERN-u.",
+    "sources": [
+      "https://home.cern/science/computing/birth-web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4205-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Umjetnost",
+    "focus": "autor slike Djevojka s bisernom naušnicom",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar naslikao Djevojku s bisernom naušnicom?",
+    "answers": [
+      "Johannes Vermeer",
+      "Vermeer"
+    ],
+    "explanation": "Slika Djevojka s bisernom naušnicom pripisuje se Johannesu Vermeeru.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4206-20261112",
+    "createdAt": "2026-11-12T08:42:52+01:00",
+    "updatedAt": "2026-11-12T08:42:52+01:00",
+    "topic": "Medicina",
+    "focus": "naziv za mjerenje električne aktivnosti srca",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove pretraga koja elektrodama bilježi električnu aktivnost srca, često skraćena kao EKG?",
+    "answers": [
+      "elektrokardiografija",
+      "EKG",
+      "elektrokardiogram"
+    ],
+    "explanation": "Elektrokardiografija je postupak bilježenja električne aktivnosti srca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Electrocardiography"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
