@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-4187-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Glazba",
+    "focus": "instrument u pjesmi Baker Street",
+    "difficulty": 2,
+    "styleId": 75,
+    "styleDescription": "Opiši glazbalo kroz konstrukciju, ne navodeći njegovu obitelj",
+    "question": "Koje puhačko glazbalo izvodi prepoznatljiv riff u pjesmi Baker Street Gerryja Raffertyja?",
+    "answers": [
+      "saksofon"
+    ],
+    "explanation": "Saksofonski riff jedna je od glavnih prepoznatljivosti pjesme Baker Street.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Baker_Street_(song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4188-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Sport",
+    "focus": "sport s kamenom i metlama",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom sportu igrači guraju kamen po ledu, a suigrači metlama utječu na njegovo klizanje?",
+    "answers": [
+      "curling",
+      "karling"
+    ],
+    "explanation": "Curling se igra kamenjem na ledenoj podlozi, uz metenje ispred kamena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4189-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Grand Budapest Hotel",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao film Grand Budapest Hotel iz 2014. godine?",
+    "answers": [
+      "Wes Anderson",
+      "Anderson"
+    ],
+    "explanation": "Wes Anderson režirao je film The Grand Budapest Hotel.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4190-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Književnost",
+    "focus": "lik kapetan Nemo",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem romanu Julesa Vernea kapetan Nemo zapovijeda podmornicom Nautilus?",
+    "answers": [
+      "Dvadeset tisuća milja pod morem",
+      "20 000 milja pod morem",
+      "20 tisuća milja pod morem"
+    ],
+    "explanation": "Kapetan Nemo upravlja Nautilusom u romanu Dvadeset tisuća milja pod morem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Seas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4191-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "država grada Cusca",
+    "difficulty": 1,
+    "styleId": 45,
+    "styleDescription": "Opiši stari naziv grada, traži državu",
+    "question": "U kojoj se južnoameričkoj državi nalazi grad Cusco, nekadašnje središte Carstva Inka?",
+    "answers": [
+      "Peru"
+    ],
+    "explanation": "Cusco se nalazi u Peruu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cusco"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4192-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Kemija",
+    "focus": "element simbola Sn",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Sn, izveden iz latinskog naziva stannum?",
+    "answers": [
+      "kositar"
+    ],
+    "explanation": "Kemijski simbol kositra Sn dolazi od latinskog stannum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4193-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Biologija",
+    "focus": "proces biljaka pri kojem nastaje kisik",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zove proces kojim zelene biljke uz pomoć svjetlosti proizvode šećere i oslobađaju kisik?",
+    "answers": [
+      "fotosinteza"
+    ],
+    "explanation": "Fotosinteza pretvara svjetlosnu energiju u kemijsku, uz oslobađanje kisika kod biljaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4194-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "kratica GPS",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja se troslovna kratica koristi za satelitski sustav globalnog pozicioniranja?",
+    "answers": [
+      "GPS"
+    ],
+    "explanation": "GPS je kratica za Global Positioning System.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4195-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "autor skulpture Mislilac",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je francuski kipar izradio poznatu skulpturu Mislilac?",
+    "answers": [
+      "Auguste Rodin",
+      "Rodin"
+    ],
+    "explanation": "Auguste Rodin autor je skulpture Mislilac.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Thinker"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4196-20261112",
+    "createdAt": "2026-11-12T07:40:00+01:00",
+    "updatedAt": "2026-11-12T07:40:00+01:00",
+    "topic": "Medicina",
+    "focus": "medicinski naziv za povišeni krvni tlak",
+    "difficulty": 2,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kojim medicinskim nazivom označavamo trajno povišen arterijski krvni tlak?",
+    "answers": [
+      "hipertenzija",
+      "arterijska hipertenzija"
+    ],
+    "explanation": "Hipertenzija je naziv za povišen krvni tlak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hypertension"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
