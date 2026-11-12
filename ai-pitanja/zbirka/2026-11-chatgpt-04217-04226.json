@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-4217-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Nogomet",
+    "focus": "klub s nadimkom Stara dama",
+    "difficulty": 2,
+    "styleId": 92,
+    "styleDescription": "Kreni od povijesti nadimka pa traži sportsku momčad",
+    "question": "Koji talijanski nogometni klub nosi nadimak Stara dama?",
+    "answers": [
+      "Juventus",
+      "Juventus FC"
+    ],
+    "explanation": "La Vecchia Signora poznati je nadimak Juventusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Juventus_FC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4218-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Astronomija",
+    "focus": "planet s Velikom crvenom pjegom",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem planetu Sunčeva sustava već stoljećima promatramo Veliku crvenu pjegu?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Velika crvena pjega golema je oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Red_Spot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4219-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Jezik",
+    "focus": "naziv za riječ istog značenja",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako u jezikoslovlju nazivamo riječ istog ili vrlo sličnog značenja kao neka druga riječ?",
+    "answers": [
+      "sinonim"
+    ],
+    "explanation": "Sinonimi imaju jednako ili blisko značenje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Synonym"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4220-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Umjetnost",
+    "focus": "autor slike Zvjezdana noć",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar 1889. naslikao Zvjezdanu noć?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Van Gogh naslikao je Zvjezdanu noć tijekom boravka u Saint-Rémyju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4221-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Tehnologija",
+    "focus": "kratica GPS",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja troslovna kratica označava satelitski sustav za određivanje položaja, često korišten u navigaciji?",
+    "answers": [
+      "GPS"
+    ],
+    "explanation": "GPS je kratica od Global Positioning System.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4222-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Medicina",
+    "focus": "stručni naziv za povišen krvni tlak",
+    "difficulty": 2,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Koji medicinski naziv koristimo za trajno povišen arterijski krvni tlak?",
+    "answers": [
+      "hipertenzija",
+      "arterijska hipertenzija"
+    ],
+    "explanation": "Hipertenzija označava povišen krvni tlak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hypertension"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4223-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Glazba",
+    "focus": "pjevač benda U2",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Pod kojim je kratkim umjetničkim imenom poznat glavni pjevač irskog benda U2?",
+    "answers": [
+      "Bono"
+    ],
+    "explanation": "Paul David Hewson poznat je kao Bono.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bono"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4224-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Videoigre",
+    "focus": "brkati vodoinstalater Nintendo",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Crvena kapa, brkovi i spašavanje princeze Peach: koji je to lik iz videoigara?",
+    "answers": [
+      "Mario",
+      "Super Mario"
+    ],
+    "explanation": "Mario je Nintendov lik poznat iz serijala Super Mario.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mario"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4225-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Fizika",
+    "focus": "mjerna jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Koja SI jedinica električnog otpora nosi ime njemačkog fizičara Georga Simona?",
+    "answers": [
+      "om",
+      "ohm"
+    ],
+    "explanation": "Jedinica om dobila je ime po Georgu Simonu Ohmu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4226-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Brendovi",
+    "focus": "osnivač IKEA-e",
+    "difficulty": 3,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "Koji je švedski poduzetnik osnovao IKEA-u 1943. kao sedamnaestogodišnjak?",
+    "answers": [
+      "Ingvar Kamprad",
+      "Kamprad"
+    ],
+    "explanation": "Ingvar Kamprad osnovao je IKEA-u 1943.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ingvar_Kamprad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
