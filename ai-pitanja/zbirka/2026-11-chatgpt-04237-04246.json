@@ -1,0 +1,225 @@
+[
+  {
+    "id": "chatgpt10000-4237-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Glazba",
+    "focus": "pjevačica albuma Back to Black",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koja je britanska pjevačica objavila album „Back to Black” 2006.?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album Back to Black drugi je studijski album Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4238-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Sport",
+    "focus": "sport Simone Biles",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Simone Biles osvojila je brojne olimpijske medalje. U kojem sportu?",
+    "answers": [
+      "sportska gimnastika",
+      "gimnastika"
+    ],
+    "explanation": "Simone Biles američka je gimnastičarka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Simone_Biles"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4239-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Film",
+    "focus": "glumac Indiane Jonesa",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Han Solo i Indiana Jones dva su njegova najpoznatija lika. O kojem je glumcu riječ?",
+    "answers": [
+      "Harrison Ford"
+    ],
+    "explanation": "Harrison Ford glumio je oba filmska lika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Harrison_Ford"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4240-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Mali princ",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Pilot susreće dječaka s drugog planeta u „Malom princu”. Tko je napisao to djelo?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Antoine de Saint Exupery"
+    ],
+    "explanation": "Mali princ djelo je francuskog književnika i pilota.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4241-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Zemljopis",
+    "focus": "država jezera Bled",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se državi nalazi jezero Bled, poznato po otočiću s crkvom?",
+    "answers": [
+      "Slovenija"
+    ],
+    "explanation": "Bledsko jezero nalazi se u sjeverozapadnoj Sloveniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lake_Bled"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4242-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Kemija",
+    "focus": "simbol kalija",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element, važan za rad mišića, u periodnom sustavu ima oznaku K?",
+    "answers": [
+      "kalij"
+    ],
+    "explanation": "K je simbol kalija, izveden iz latinskoga kalium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4243-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Televizija",
+    "focus": "ime kafića u Prijateljima",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove kafić u kojem se često okuplja šest glavnih likova serije „Prijatelji”?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk izmišljeni je njujorški kafić iz serije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Central_Perk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4244-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Biologija",
+    "focus": "biljni pigment klorofil",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji zeleni pigment biljkama omogućuje upijanje svjetlosti za fotosintezu?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost važnu za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4245-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine počelo otvaranje Berlinskog zida, simbola podjele Njemačke?",
+    "answers": [
+      "1989.",
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4246-20261112",
+    "createdAt": "2026-11-12T11:37:11+01:00",
+    "updatedAt": "2026-11-12T11:37:11+01:00",
+    "topic": "Gastronomija",
+    "focus": "podrijetlo paelle",
+    "difficulty": 1,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Iz koje europske države potječe jelo paella, tradicionalno pripremano s rižom?",
+    "answers": [
+      "Španjolska"
+    ],
+    "explanation": "Paella potječe iz španjolske Valencije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paella"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
