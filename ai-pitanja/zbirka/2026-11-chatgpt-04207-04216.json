@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-4207-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Glazba",
+    "focus": "pjevačica hita Wuthering Heights",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je britanska pjevačica 1978. objavila hit Wuthering Heights?",
+    "answers": [
+      "Kate Bush"
+    ],
+    "explanation": "Pjesma je bila njezin debitantski singl.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wuthering_Heights_(song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4208-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Sport",
+    "focus": "košarkaški klub Chicago Bulls",
+    "difficulty": 1,
+    "styleId": 92,
+    "styleDescription": "Kreni od povijesti nadimka pa traži sportsku momčad",
+    "question": "Koji je NBA klub s Michaelom Jordanom osvojio šest naslova prvaka tijekom 1990-ih?",
+    "answers": [
+      "Chicago Bulls",
+      "Bullsi"
+    ],
+    "explanation": "Bullsi su naslove osvojili 1991.–1993. i 1996.–1998.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chicago_Bulls"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4209-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Titanic 1997",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je režirao filmski spektakl Titanic iz 1997. godine?",
+    "answers": [
+      "James Cameron",
+      "Cameron"
+    ],
+    "explanation": "James Cameron napisao je i režirao Titanic.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4210-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Književnost",
+    "focus": "autorica romana Ponos i predrasude",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je engleska književnica stvorila likove Elizabeth Bennet i gospodina Darcyja?",
+    "answers": [
+      "Jane Austen",
+      "Austen"
+    ],
+    "explanation": "Oboje su likovi romana Ponos i predrasude.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pride_and_Prejudice"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4211-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Portugala",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se europskom glavnom gradu nalazi poznata četvrt Alfama i toranj Belém?",
+    "answers": [
+      "Lisabon",
+      "Lisboa"
+    ],
+    "explanation": "Alfama i toranj Belém nalaze se u Lisabonu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lisbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4212-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Životinje",
+    "focus": "najveći živući sisavac",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja morska životinja može narasti dulje od 25 metara i najveći je živući sisavac?",
+    "answers": [
+      "plavetni kit",
+      "plavi kit"
+    ],
+    "explanation": "Plavetni kit najveća je poznata živuća životinja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Blue_whale"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4213-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol zlata",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji plemeniti metal ima kemijski simbol Au, izveden iz latinskog aurum?",
+    "answers": [
+      "zlato"
+    ],
+    "explanation": "Au je kemijski simbol zlata.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gold"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4214-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Televizija",
+    "focus": "grad radnje serije Prijatelji",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem američkom gradu žive Rachel, Ross, Monica i ostali glavni likovi serije Prijatelji?",
+    "answers": [
+      "New York",
+      "New York City"
+    ],
+    "explanation": "Radnja serije Friends smještena je u New York.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4215-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica kroz Berlinski zid, jedan od simbola Hladnog rata?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4216-20261112",
+    "createdAt": "2026-11-12T09:38:07+01:00",
+    "updatedAt": "2026-11-12T09:38:07+01:00",
+    "topic": "Gastronomija",
+    "focus": "glavni sastojak guacamolea",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje je zeleno voće osnovni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "avokado"
+    ],
+    "explanation": "Guacamole se tradicionalno priprema od avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
