@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-4360-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Glazba",
+    "focus": "Björk album Debut 1993",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je islandska pjevačica 1993. objavila soloalbum 'Debut', nakon rada u sastavu The Sugarcubes?",
+    "answers": [
+      "Björk",
+      "Bjork"
+    ],
+    "explanation": "Björk je 1993. objavila album Debut, jedan od ključnih naslova svoje solo karijere.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bj%C3%B6rk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4361-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Film",
+    "focus": "Spirited Away Chihiro roditelji svinje",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojem animiranom filmu djevojčica Chihiro pokušava spasiti roditelje pretvorene u svinje?",
+    "answers": [
+      "Spirited Away",
+      "Avanture male Chihiro",
+      "Sen to Chihiro no kamikakushi"
+    ],
+    "explanation": "Radnja filma Spirited Away prati Chihiro u svijetu duhova nakon preobrazbe njezinih roditelja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4362-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Književnost",
+    "focus": "Agatha Christie pseudonim Mary Westmacott",
+    "difficulty": 3,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Pod kojim je pseudonimom Agatha Christie objavljivala romane koji nisu bili detektivski?",
+    "answers": [
+      "Mary Westmacott"
+    ],
+    "explanation": "Christie je šest romana izvan detektivskog žanra objavila kao Mary Westmacott.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Agatha_Christie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4363-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Životinje",
+    "focus": "ljuskavac keratinske ljuske",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji je sisavac prekriven velikim keratinskim ljuskama, a u opasnosti se može sklupčati u kuglu?",
+    "answers": [
+      "ljuskavac",
+      "pangolin"
+    ],
+    "explanation": "Ljuskavci su sisavci čije ljuske sadrže keratin, a sklupčavanje im je obrambena strategija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pangolin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4364-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Fizika",
+    "focus": "seizmometar mjerenje podrhtavanja",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koji instrument registrira gibanje tla, pa znanstvenicima pomaže analizirati potrese?",
+    "answers": [
+      "seizmometar",
+      "seizmograf"
+    ],
+    "explanation": "Seizmometar mjeri gibanje tla; seizmograf označuje uređaj koji ga bilježi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Seismometer"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4365-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Gastronomija",
+    "focus": "paella podrijetlo Valencija",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Iz koje španjolske regije potječe jelo paella, poznato po riži pripremljenoj u širokoj plitkoj tavi?",
+    "answers": [
+      "Valencija",
+      "Valencijska zajednica",
+      "Valencia"
+    ],
+    "explanation": "Paella je tradicionalno jelo povezano s Valencijom u istočnoj Španjolskoj.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paella"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4366-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Kemija",
+    "focus": "Marie Curie Nobel kemija 1911",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine Marie Curie dobila Nobelovu nagradu za kemiju, osam godina nakon nagrade za fiziku?",
+    "answers": [
+      "1911"
+    ],
+    "explanation": "Marie Curie dobila je Nobelovu nagradu za fiziku 1903., a za kemiju 1911.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Marie_Curie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4367-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Zemljopis",
+    "focus": "Kilimandžaro vulkanski vrh Uhuru",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se zove najviši vrh Kilimandžara, smješten na vulkanskom konusu Kibo?",
+    "answers": [
+      "Uhuru",
+      "Uhuru Peak"
+    ],
+    "explanation": "Uhuru Peak najviša je točka Kilimandžara, na konusu Kibo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mount_Kilimanjaro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4368-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Sport",
+    "focus": "Serena Williams Australian Open 2017 trudna",
+    "difficulty": 3,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koja je tenisačica osvojila Australian Open 2017. dok je bila trudna s prvim djetetom?",
+    "answers": [
+      "Serena Williams",
+      "Serena Vilijams"
+    ],
+    "explanation": "Serena Williams osvojila je Australian Open 2017. tijekom rane trudnoće.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Serena_Williams"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4369-20261112",
+    "createdAt": "2026-11-12T21:38:42+01:00",
+    "updatedAt": "2026-11-12T21:38:42+01:00",
+    "topic": "Sport",
+    "focus": "curling četkanje ispred kamena",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom sportu igrači četkama utječu na klizanje granitnog kamena prema kružnoj meti?",
+    "answers": [
+      "curling",
+      "karling"
+    ],
+    "explanation": "U curlingu se kamen gura po ledu, a četkanje utječe na njegovu putanju i brzinu.",
+    "sources": [
+      "https://www.olympics.com/ioc/world-curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
