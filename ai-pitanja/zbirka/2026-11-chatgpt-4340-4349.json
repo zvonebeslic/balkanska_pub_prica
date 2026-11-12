@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4340-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Jolene Dolly Parton",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je country pjevačica 1973. snimila pjesmu 'Jolene'?",
+    "answers": [
+      "Dolly Parton"
+    ],
+    "explanation": "Točan odgovor je Dolly Parton.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jolene_(song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4341-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Sport",
+    "focus": "košarkaški klub Chicago Bulls šest NBA naslova",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koja je NBA momčad tijekom 1990-ih osvojila šest naslova s Michaelom Jordanom?",
+    "answers": [
+      "Chicago Bulls"
+    ],
+    "explanation": "Točan odgovor je Chicago Bulls.",
+    "sources": [
+      "https://www.nba.com/bulls/history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4342-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Film",
+    "focus": "film The Truman Show Jim Carrey",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U kojem filmu Jim Carrey glumi čovjeka čiji je cijeli život zapravo televizijska emisija?",
+    "answers": [
+      "The Truman Show"
+    ],
+    "explanation": "Točan odgovor je The Truman Show.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Truman_Show"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4343-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Književnost",
+    "focus": "roman Proces Franz Kafka",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je pisac autor romana 'Proces' o Josefu K.?",
+    "answers": [
+      "Franz Kafka"
+    ],
+    "explanation": "Točan odgovor je Franz Kafka.",
+    "sources": [
+      "https://www.britannica.com/biography/Franz-Kafka"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4344-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Slovenije Ljubljana",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji europski glavni grad leži na rijeci Ljubljanici?",
+    "answers": [
+      "Ljubljana"
+    ],
+    "explanation": "Točan odgovor je Ljubljana.",
+    "sources": [
+      "https://www.britannica.com/place/Ljubljana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4345-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Životinje",
+    "focus": "žirafa najviša kopnena životinja",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji je sisavac najviša danas živuća kopnena životinja?",
+    "answers": [
+      "žirafa"
+    ],
+    "explanation": "Točan odgovor je žirafa.",
+    "sources": [
+      "https://www.britannica.com/animal/giraffe"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4346-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Kemija",
+    "focus": "zlato kemijski simbol Au",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji plemeniti metal u periodnom sustavu ima oznaku Au?",
+    "answers": [
+      "zlato"
+    ],
+    "explanation": "Točan odgovor je zlato.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/79/gold"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4347-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Tehnologija",
+    "focus": "World Wide Web Tim Berners Lee",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je britanski informatičar izumio World Wide Web radeći u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee"
+    ],
+    "explanation": "Točan odgovor je Tim Berners-Lee.",
+    "sources": [
+      "https://home.cern/science/computing/birth-web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4348-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, što je postalo simbol kraja podjele Njemačke?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Točan odgovor je 1989.",
+    "sources": [
+      "https://www.britannica.com/topic/Berlin-Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4349-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Gastronomija",
+    "focus": "japansko jelo sushi riža",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva japansko jelo čija je osnova posebno pripremljena riža začinjena octom?",
+    "answers": [
+      "sushi"
+    ],
+    "explanation": "Točan odgovor je sushi.",
+    "sources": [
+      "https://www.britannica.com/topic/sushi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
