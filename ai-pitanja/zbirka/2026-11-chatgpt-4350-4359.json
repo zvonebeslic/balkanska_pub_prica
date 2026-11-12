@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4350-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Televizija",
+    "focus": "serija Breaking Bad Walter White",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U kojoj televizijskoj seriji profesor kemije Walter White počinje proizvoditi metamfetamin?",
+    "answers": [
+      "Breaking Bad"
+    ],
+    "explanation": "Točan odgovor je Breaking Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4351-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Camp Nou Barcelona",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se zove poznati stadion nogometnog kluba Barcelona?",
+    "answers": [
+      "Camp Nou"
+    ],
+    "explanation": "Točan odgovor je Camp Nou.",
+    "sources": [
+      "https://www.fcbarcelona.com/en/club/facilities/spotify-camp-nou"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4352-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Astronomija",
+    "focus": "Jupiter Velika crvena pjega",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na kojem planetu Sunčeva sustava nalazi se Velika crvena pjega?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Točan odgovor je Jupiter.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4353-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "slika Zvjezdana noć Van Gogh",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je nizozemski slikar naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "explanation": "Točan odgovor je Vincent van Gogh.",
+    "sources": [
+      "https://www.moma.org/collection/works/79802"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4354-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza klorofil",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove zeleni pigment koji biljkama omogućuje upijanje svjetlosti za fotosintezu?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Točan odgovor je klorofil.",
+    "sources": [
+      "https://www.britannica.com/science/chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4355-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Medicina",
+    "focus": "stetoskop slušanje srca",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se zove medicinski instrument kojim liječnik sluša rad srca i pluća?",
+    "answers": [
+      "stetoskop"
+    ],
+    "explanation": "Točan odgovor je stetoskop.",
+    "sources": [
+      "https://www.britannica.com/science/stethoscope"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4356-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom čitanje u oba smjera",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Točan odgovor je palindrom.",
+    "sources": [
+      "https://www.britannica.com/art/palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4357-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft kreator Markus Persson",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je švedski programer, poznat kao Notch, izvorno stvorio igru Minecraft?",
+    "answers": [
+      "Markus Persson"
+    ],
+    "explanation": "Točan odgovor je Markus Persson.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Markus_Persson"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4358-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Fizika",
+    "focus": "Newton jedinica sile",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Po kojem je znanstveniku nazvana SI jedinica sile?",
+    "answers": [
+      "Isaac Newton"
+    ],
+    "explanation": "Točan odgovor je Isaac Newton.",
+    "sources": [
+      "https://www.britannica.com/science/newton-unit-of-force"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4359-20261112",
+    "createdAt": "2026-11-12T20:38:20+01:00",
+    "updatedAt": "2026-11-12T20:38:20+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO danska tvrtka",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Iz koje države potječe proizvođač kockica LEGO?",
+    "answers": [
+      "Danska"
+    ],
+    "explanation": "Točan odgovor je Danska.",
+    "sources": [
+      "https://www.lego.com/en-us/aboutus/lego-group/the-lego-group-history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
