@@ -1,0 +1,70 @@
+[
+  {
+    "id": "chatgpt10000-4267-20261112",
+    "createdAt": "2026-11-12T12:39:08+01:00",
+    "updatedAt": "2026-11-12T12:39:08+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "NASA-ina matematičarka Katherine Johnson",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je matematičarka, prikazana u filmu „Skrivene figure”, računala putanje za NASA-ine svemirske misije?",
+    "answers": [
+      "Katherine Johnson"
+    ],
+    "explanation": "Katherine Johnson radila je izračune putanja za NASA-ine misije, a njezin je rad prikazan u filmu Skrivene figure.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Katherine_Johnson"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4268-20261112",
+    "createdAt": "2026-11-12T12:39:08+01:00",
+    "updatedAt": "2026-11-12T12:39:08+01:00",
+    "topic": "Film",
+    "focus": "Hedy Lamarr i frekvencijsko skakanje",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je holivudska glumica sa skladateljem Georgeom Antheilom razvila sustav promjene radijskih frekvencija za sigurniju komunikaciju?",
+    "answers": [
+      "Hedy Lamarr"
+    ],
+    "explanation": "Hedy Lamarr i George Antheil patentirali su sustav frekvencijskog skakanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hedy_Lamarr"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4269-20261112",
+    "createdAt": "2026-11-12T12:39:08+01:00",
+    "updatedAt": "2026-11-12T12:39:08+01:00",
+    "topic": "Arhitektura",
+    "focus": "Sagrada Família u Barceloni",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove barcelonska bazilika koju je Antoni Gaudí pretvorio u svoje najpoznatije životno djelo?",
+    "answers": [
+      "Sagrada Família",
+      "Sagrada Familia",
+      "Sveta obitelj"
+    ],
+    "explanation": "Sagrada Família bazilika je u Barceloni neraskidivo povezana s arhitektom Antonijem Gaudíjem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
