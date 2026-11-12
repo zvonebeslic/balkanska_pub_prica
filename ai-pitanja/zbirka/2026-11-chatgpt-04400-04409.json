@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-4400-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt 100 200 metara",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter postavio svjetske rekorde na 100 i 200 metara 2009. godine?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Točan odgovor je Usain Bolt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4401-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Televizija",
+    "focus": "Breaking Bad Walter White kemija",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojoj televizijskoj seriji nastavnik kemije Walter White počinje proizvoditi metamfetamin?",
+    "answers": [
+      "Breaking Bad",
+      "Na putu prema dolje"
+    ],
+    "explanation": "Točan odgovor je Breaking Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4402-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215 Engleska",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Kako se naziva povelja koju je engleski kralj Ivan bez Zemlje prihvatio 1215. godine?",
+    "answers": [
+      "Magna Carta",
+      "Velika povelja sloboda"
+    ],
+    "explanation": "Točan odgovor je Magna Carta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4403-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Astronomija",
+    "focus": "Ganimed najveći mjesec Jupiter",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji je Jupiterov prirodni satelit najveći mjesec u Sunčevu sustavu?",
+    "answers": [
+      "Ganimed",
+      "Ganymede"
+    ],
+    "explanation": "Točan odgovor je Ganimed.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ganymede_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4404-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu mascarpone desert",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji talijanski desert obično spaja piškote natopljene kavom, mascarpone i kakao?",
+    "answers": [
+      "Tiramisu"
+    ],
+    "explanation": "Točan odgovor je Tiramisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4405-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom čitanje unatrag",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Točan odgovor je Palindrom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4406-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Biljke",
+    "focus": "baobab deblo Afrika",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koje afričko stablo ima golemo deblo koje može pohranjivati vodu, a često ga nazivaju stablom života?",
+    "answers": [
+      "Baobab"
+    ],
+    "explanation": "Točan odgovor je Baobab.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adansonia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4407-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO Danska kockice",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koja danska tvrtka, osnovana 1932., proizvodi poznate plastične kockice za slaganje?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "Točan odgovor je LEGO.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4408-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Fizika",
+    "focus": "Isaac Newton prizma bijela svjetlost",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji je znanstvenik pokusima s prizmom pokazao da se bijela svjetlost sastoji od različitih boja?",
+    "answers": [
+      "Isaac Newton",
+      "Newton"
+    ],
+    "explanation": "Točan odgovor je Isaac Newton.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isaac_Newton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4409-20261113",
+    "createdAt": "2026-11-13T00:38:56+01:00",
+    "updatedAt": "2026-11-13T00:38:56+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft Mojang blokovi",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U kojoj videoigri igrači grade i istražuju svijet sastavljen od kockastih blokova, uz Creeper kao prepoznatljivog neprijatelja?",
+    "answers": [
+      "Minecraft"
+    ],
+    "explanation": "Točan odgovor je Minecraft.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Minecraft"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
