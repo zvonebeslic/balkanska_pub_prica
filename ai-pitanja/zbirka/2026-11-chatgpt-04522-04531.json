@@ -1,0 +1,224 @@
+[
+  {
+    "id": "chatgpt10000-4522-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Sport",
+    "focus": "broj igrača u odbojci",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koliko igrača jedne ekipe istodobno igra na terenu u dvoranskoj odbojci?",
+    "answers": [
+      "6",
+      "šest"
+    ],
+    "explanation": "Na terenu je šest igrača po ekipi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4523-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Televizija",
+    "focus": "lik Eleven",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "U kojoj seriji djevojčica Eleven ima telekinetičke sposobnosti?",
+    "answers": [
+      "Stranger Things"
+    ],
+    "explanation": "Eleven je jedan od glavnih likova serije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stranger_Things"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4524-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koje je godine pao Berlinski zid?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Granica u Berlinu otvorena je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4525-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Astronomija",
+    "focus": "planet s najizraženijim prstenovima",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je planet poznat po velikom sustavu sjajnih prstenova?",
+    "answers": [
+      "Saturn"
+    ],
+    "explanation": "Saturnovi prstenovi pretežno su građeni od ledenih čestica.",
+    "sources": [
+      "https://science.nasa.gov/saturn/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4526-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Gastronomija",
+    "focus": "glavni sastojak humusa",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavni sastojak tradicionalnog humusa?",
+    "answers": [
+      "slanutak"
+    ],
+    "explanation": "Humus se priprema od kuhanog slanutka i tahinija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4527-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Videoigre",
+    "focus": "glavni lik Zelda igara",
+    "difficulty": 1,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Kako se zove junak kojim igrač najčešće upravlja u serijalu „The Legend of Zelda”?",
+    "answers": [
+      "Link"
+    ],
+    "explanation": "Link je protagonist većine igara u serijalu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4528-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kako se naziva riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Primjer je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4529-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je SI jedinica električnog otpora?",
+    "answers": [
+      "om",
+      "ohm"
+    ],
+    "explanation": "Om nosi oznaku Ω.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4530-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Biljke",
+    "focus": "začin od osušene kore",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji se začin dobiva od osušene unutarnje kore stabala roda Cinnamomum?",
+    "answers": [
+      "cimet"
+    ],
+    "explanation": "Cimet se proizvodi od kore nekoliko srodnih vrsta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cinnamon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4531-20261113",
+    "createdAt": "2026-11-13T10:44:01+01:00",
+    "updatedAt": "2026-11-13T10:44:01+01:00",
+    "topic": "Pop kultura",
+    "focus": "ime lutke Barbie",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Koje je puno ime poznate lutke Barbie?",
+    "answers": [
+      "Barbara Millicent Roberts"
+    ],
+    "explanation": "Barbie je predstavljena 1959. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Barbie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
