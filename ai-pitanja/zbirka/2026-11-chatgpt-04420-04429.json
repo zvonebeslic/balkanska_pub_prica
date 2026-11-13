@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-4420-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Glazba",
+    "focus": "teremin instrument bez dodira",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koje elektroničko glazbalo svirač kontrolira pomicanjem ruku u blizini dviju antena, bez dodirivanja instrumenta?",
+    "answers": [
+      "teremin",
+      "theremin"
+    ],
+    "explanation": "Teremin mijenja visinu i glasnoću tona položajem ruku u elektromagnetskom polju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Theremin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4421-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Umjetnost",
+    "focus": "Hokusai Veliki val kod Kanagawe",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je japanski umjetnik izradio slavni drvorez „Veliki val kod Kanagawe”?",
+    "answers": [
+      "Katsushika Hokusai",
+      "Hokusai"
+    ],
+    "explanation": "Hokusai je autor drvoreza iz serije Trideset šest pogleda na planinu Fuji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4422-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace Bernoullijevi brojevi",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je matematičarka u 19. stoljeću opisala algoritam za Bernoullijeve brojeve namijenjen Analitičkom stroju?",
+    "answers": [
+      "Ada Lovelace",
+      "Ada Byron"
+    ],
+    "explanation": "Ada Lovelace objavila je bilješke o Babbageovu Analitičkom stroju s poznatim algoritmom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ada_Lovelace"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4423-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Gastronomija",
+    "focus": "kimchi fermentirani kupus",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Na korejskom stolu često se poslužuje ljutkasti fermentirani kupus. Kako se zove taj tradicionalni prilog?",
+    "answers": [
+      "kimchi",
+      "kimči"
+    ],
+    "explanation": "Kimchi je korejsko jelo od fermentiranog povrća, često kineskog kupusa i začina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kimchi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4424-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Astronomija",
+    "focus": "Enceladus gejziri Saturn",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Na kojem Saturnovu mjesecu svemirska letjelica Cassini otkrila je mlazove vodene pare i leda koji izbijaju iz južnog pola?",
+    "answers": [
+      "Enceladus"
+    ],
+    "explanation": "Enceladus izbacuje materijal iz pukotina u ledenoj kori, što upućuje na podzemni ocean.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/enceladus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4425-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Sport",
+    "focus": "snooker maksimalni break 147",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko bodova vrijedi maksimalni standardni break u snookeru, kada se naizmjenično ubacuju crvene i crna pa sve boje?",
+    "answers": [
+      "147",
+      "sto četrdeset sedam"
+    ],
+    "explanation": "Maksimalni standardni break u snookeru iznosi 147 bodova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maximum_break"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4426-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Književnost",
+    "focus": "Kapetan Nemo Nautilus",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove podmornica kojom zapovijeda kapetan Nemo u romanu „Dvadeset tisuća milja pod morem”?",
+    "answers": [
+      "Nautilus"
+    ],
+    "explanation": "Nautilus je izmišljena podmornica iz romana Julesa Vernea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nautilus_(fictional_submarine)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4427-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Zemljopis",
+    "focus": "Dardanelski tjesnac Egejsko Mramorno",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji tjesnac povezuje Egejsko s Mramornim morem i razdvaja europski od azijskog dijela Turske?",
+    "answers": [
+      "Dardaneli",
+      "Dardanelski tjesnac"
+    ],
+    "explanation": "Dardaneli su morski prolaz između Egejskog i Mramornog mora.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dardanelles"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4428-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmoskop pregled očne pozadine",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kojim instrumentom liječnik promatra mrežnicu i druge strukture očne pozadine?",
+    "answers": [
+      "oftalmoskop"
+    ],
+    "explanation": "Oftalmoskop služi za pregled unutrašnjosti oka, uključujući mrežnicu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmoscopy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4429-20261113",
+    "createdAt": "2026-11-13T02:38:28+01:00",
+    "updatedAt": "2026-11-13T02:38:28+01:00",
+    "topic": "Film",
+    "focus": "Rashomon Akira Kurosawa",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je japanski redatelj snimio film „Rašomon” iz 1950., poznat po različitim prikazima istog događaja?",
+    "answers": [
+      "Akira Kurosawa",
+      "Kurosawa"
+    ],
+    "explanation": "Kurosawin Rašomon istražuje nepouzdana svjedočanstva o jednom događaju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rashomon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
