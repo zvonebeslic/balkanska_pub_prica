@@ -136,17 +136,17 @@
     "createdAt": "2026-11-13T08:46:38+01:00",
     "updatedAt": "2026-11-13T08:46:38+01:00",
     "topic": "Tehnologija",
-    "focus": "izumitelj World Wide Weba",
+    "focus": "protokol HTTPS",
     "difficulty": 2,
     "styleId": 59,
     "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
-    "question": "Koji je britanski informatičar osmislio World Wide Web radeći u CERN-u?",
+    "question": "Koja kratica označava sigurnu, šifriranu inačicu protokola HTTP koju često vidimo na početku web-adrese?",
     "answers": [
-      "Tim Berners-Lee"
+      "HTTPS"
     ],
-    "explanation": "Tim Berners-Lee predložio je sustav World Wide Web 1989. u CERN-u.",
+    "explanation": "HTTPS je HTTP preko šifrirane veze, najčešće uz TLS.",
     "sources": [
-      "https://home.cern/science/computing/birth-web"
+      "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS"
     ],
     "image": null,
     "type": "blitz",
@@ -180,17 +180,17 @@
     "createdAt": "2026-11-13T08:46:38+01:00",
     "updatedAt": "2026-11-13T08:46:38+01:00",
     "topic": "Astronomija",
-    "focus": "najveći Saturnov mjesec",
+    "focus": "mjesec s aktivnim vulkanima Io",
     "difficulty": 2,
     "styleId": 66,
     "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
-    "question": "Koji je najveći Saturnov mjesec, poznat po gustoj atmosferi i jezerima ugljikovodika?",
+    "question": "Koji Jupiterov mjesec poznajemo kao vulkanski najaktivnije tijelo Sunčeva sustava?",
     "answers": [
-      "Titan"
+      "Io"
     ],
-    "explanation": "Titan je najveći Saturnov mjesec, a na njegovoj površini nalaze se jezera tekućeg metana i etana.",
+    "explanation": "Jupiterov mjesec Io ima brojne aktivne vulkane zbog snažnog plimnog zagrijavanja.",
     "sources": [
-      "https://science.nasa.gov/saturn/moons/titan/"
+      "https://science.nasa.gov/jupiter/moons/io/"
     ],
     "image": null,
     "type": "blitz",
