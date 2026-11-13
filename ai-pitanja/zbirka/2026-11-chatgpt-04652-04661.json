@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4652-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Glazba",
+    "focus": "album Rumours grupe Fleetwood Mac",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je britansko-američki sastav 1977. objavio album Rumours?",
+    "answers": [
+      "Fleetwood Mac"
+    ],
+    "explanation": "Album Rumours jedan je od najpoznatijih albuma grupe Fleetwood Mac.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rumours"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4653-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Nogomet",
+    "focus": "Euro 2004 prvak Grčka",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koja je reprezentacija iznenađujuće osvojila Europsko nogometno prvenstvo 2004. u Portugalu?",
+    "answers": [
+      "Grčka"
+    ],
+    "explanation": "Grčka je u finalu pobijedila domaćina Portugal rezultatom 1:0.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/UEFA_Euro_2004"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4654-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Amélie",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao francuski film Amélie iz 2001. godine?",
+    "answers": [
+      "Jean-Pierre Jeunet"
+    ],
+    "explanation": "Jean-Pierre Jeunet režirao je romantičnu komediju Amélie.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4655-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Majstor i Margarita",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Woland, Margarita i Majstor likovi su romana kojeg ruskog književnika?",
+    "answers": [
+      "Mihail Bulgakov"
+    ],
+    "explanation": "Mihail Bulgakov autor je romana Majstor i Margarita.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Master_and_Margarita"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4656-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja velika europska rijeka razdvaja Budim i Peštu?",
+    "answers": [
+      "Dunav"
+    ],
+    "explanation": "Dunav protječe kroz Budimpeštu i razdvaja njezine povijesne dijelove.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Danube"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4657-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Životinje",
+    "focus": "narvalov kljov",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji arktički kit poznat je po dugom spiralnom kljovu koji je zapravo izduženi zub?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalov kljov najčešće je izduženi lijevi gornji očnjak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4658-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol volframa",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element ima simbol W, izveden iz naziva wolfram?",
+    "answers": [
+      "Volfram"
+    ],
+    "explanation": "Volfram, poznat i kao tungsten, u periodnom sustavu ima simbol W.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4659-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Weba",
+    "difficulty": 1,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar osmislio World Wide Web radeći u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee"
+    ],
+    "explanation": "Tim Berners-Lee predložio je sustav World Wide Web 1989. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4660-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Umjetnost",
+    "focus": "skulptura David Michelangelo",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je renesansni umjetnik isklesao mramornog Davida izloženog u Firenci?",
+    "answers": [
+      "Michelangelo"
+    ],
+    "explanation": "Michelangelo je izradio skulpturu David početkom 16. stoljeća.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_(Michelangelo)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4661-20261113",
+    "createdAt": "2026-11-13T19:43:07+01:00",
+    "updatedAt": "2026-11-13T19:43:07+01:00",
+    "topic": "Medicina",
+    "focus": "medicinski naziv tahikardija",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kojim medicinskim izrazom nazivamo ubrzan rad srca?",
+    "answers": [
+      "Tahikardija"
+    ],
+    "explanation": "Tahikardija označava srčanu frekvenciju bržu od uobičajene, ovisno o dobi i okolnostima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tachycardia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
