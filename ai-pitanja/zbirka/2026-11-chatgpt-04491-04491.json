@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-4491-20261113",
+    "createdAt": "2026-11-13T07:35:13+01:00",
+    "updatedAt": "2026-11-13T07:35:13+01:00",
+    "topic": "Sport",
+    "focus": "tri oružja u mačevanju",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Floret, mač i sablja tri su natjecateljska oružja u kojem olimpijskom sportu?",
+    "answers": [
+      "mačevanje"
+    ],
+    "explanation": "Mačevanje se na Olimpijskim igrama održava u disciplinama floreta, mača i sablje.",
+    "sources": [
+      "https://www.olympics.com/ioc/international-fencing-federation"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
