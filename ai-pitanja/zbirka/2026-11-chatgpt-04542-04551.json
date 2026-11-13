@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-4542-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Take On Me",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je norveški sastav snimio hit „Take On Me”?",
+    "answers": [
+      "a-ha",
+      "A-ha"
+    ],
+    "explanation": "Točan odgovor: a-ha.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Take_On_Me"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4543-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Nogomet",
+    "focus": "strijelac ruka Božja",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je argentinski nogometaš 1986. postigao pogodak poznat kao „Božja ruka”?",
+    "answers": [
+      "Diego Maradona",
+      "Maradona"
+    ],
+    "explanation": "Točan odgovor: Diego Maradona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_hand_of_God"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4544-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Film",
+    "focus": "redatelj Jurski park",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao izvorni film „Jurski park” iz 1993.?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Točan odgovor: Steven Spielberg.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4545-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Književnost",
+    "focus": "autor Malog princa",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski pisac napisao „Malog princa”?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Antoine de Saint Exupery",
+      "Saint-Exupéry"
+    ],
+    "explanation": "Točan odgovor: Antoine de Saint-Exupéry.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4546-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Kemija",
+    "focus": "simbol kalija",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol K, izveden iz latinskog naziva kalium?",
+    "answers": [
+      "kalij",
+      "kalija"
+    ],
+    "explanation": "Točan odgovor: Kalij.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4547-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Životinje",
+    "focus": "najveći kopneni sisavac",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je životinja najveći danas živući kopneni sisavac?",
+    "answers": [
+      "afrički slon",
+      "africki slon",
+      "slon"
+    ],
+    "explanation": "Točan odgovor: Afrički slon.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/African_bush_elephant"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4548-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Web",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar izumio World Wide Web dok je radio u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee"
+    ],
+    "explanation": "Točan odgovor: Tim Berners-Lee.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4549-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Slikarstvo",
+    "focus": "slikar Zvjezdana noć",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je naslikao „Zvjezdanu noć” 1889. godine?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Točan odgovor: Vincent van Gogh.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4550-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Portugala",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji europski glavni grad leži na rijeci Tejo, nedaleko od njezina ušća u Atlantik?",
+    "answers": [
+      "Lisabon",
+      "Lisboa"
+    ],
+    "explanation": "Točan odgovor: Lisabon.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lisbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4551-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Medicina",
+    "focus": "medicinski naziv povišen tlak",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se medicinskim nazivom zove trajno povišen krvni tlak?",
+    "answers": [
+      "hipertenzija",
+      "arterijska hipertenzija"
+    ],
+    "explanation": "Točan odgovor: Hipertenzija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hypertension"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
