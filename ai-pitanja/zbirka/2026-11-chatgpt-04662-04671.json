@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4662-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Glazba",
+    "focus": "pjevačica albuma Back to Black",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je britanska pjevačica objavila album Back to Black 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Back to Black njezin je drugi studijski album.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Amy_Winehouse"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4663-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Borussije Dortmund",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Na kojem stadionu svoje domaće utakmice igra Borussia Dortmund?",
+    "answers": [
+      "Signal Iduna Park"
+    ],
+    "explanation": "Stadion je poznat i pod tradicionalnim imenom Westfalenstadion.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Westfalenstadion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4664-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Parazit",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je južnokorejski redatelj snimio film Parazit, dobitnika Oscara za najbolji film?",
+    "answers": [
+      "Bong Joon-ho"
+    ],
+    "explanation": "Parazit je osvojio Oscara za najbolji film 2020. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Parasite_(2019_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4665-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Književnost",
+    "focus": "roman Zločin i kazna",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Raskoljnikov je glavni lik kojeg romana Fjodora Dostojevskog?",
+    "answers": [
+      "Zločin i kazna"
+    ],
+    "explanation": "Raskoljnikov je središnji lik romana iz 1866. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4666-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Slovenije",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji grad na Ljubljanici glavni je grad Slovenije?",
+    "answers": [
+      "Ljubljana"
+    ],
+    "explanation": "Ljubljana je najveći grad i glavni grad Slovenije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4667-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Životinje",
+    "focus": "najveća živuća mačka",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je najveća živuća vrsta iz porodice mačaka?",
+    "answers": [
+      "Tigar"
+    ],
+    "explanation": "Tigar je najveća današnja vrsta mačaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiger"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4668-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol srebra",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal ima kemijski simbol Ag, prema latinskom argentum?",
+    "answers": [
+      "Srebro"
+    ],
+    "explanation": "Ag je simbol za srebro u periodnom sustavu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4669-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Televizija",
+    "focus": "kafić Central Perk",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U kojoj se američkoj humorističnoj seriji prijatelji redovito sastaju u kafiću Central Perk?",
+    "answers": [
+      "Prijatelji"
+    ],
+    "explanation": "Central Perk je prepoznatljivo okupljalište likova serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4670-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine počelo otvaranje Berlinskog zida, simbola podjele Njemačke?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4671-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Medicina",
+    "focus": "eritrociti",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zovu krvne stanice koje zahvaljujući hemoglobinu prenose kisik?",
+    "answers": [
+      "Eritrociti"
+    ],
+    "explanation": "Eritrociti su crvene krvne stanice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Red_blood_cell"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
