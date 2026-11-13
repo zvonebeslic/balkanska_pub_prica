@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-4552-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Sport",
+    "focus": "teniski turnir Wimbledon",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koji se Grand Slam turnir tradicionalno igra na travnatoj podlozi u Londonu?",
+    "answers": [
+      "Wimbledon"
+    ],
+    "explanation": "Točan odgovor: Wimbledon.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4553-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Televizija",
+    "focus": "lik Sheldon Cooper",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj se humorističnoj seriji pojavljuje fizičar Sheldon Cooper?",
+    "answers": [
+      "Teorija velikog praska",
+      "The Big Bang Theory"
+    ],
+    "explanation": "Točan odgovor: Teorija velikog praska.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Big_Bang_Theory"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4554-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine pao Berlinski zid, simbol podjele Njemačke?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Točan odgovor: 1989..",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4555-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Astronomija",
+    "focus": "crveni planet",
+    "difficulty": 1,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Koji planet Sunčeva sustava nazivamo Crvenim planetom?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Točan odgovor: Mars.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mars"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4556-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Gastronomija",
+    "focus": "glavni sastojak guacamole",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Od kojeg se ploda priprema meksički umak guacamole?",
+    "answers": [
+      "avokado",
+      "avokada"
+    ],
+    "explanation": "Točan odgovor: Avokado.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4557-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 38,
+    "styleDescription": "Kreni od jezika pa pitaj koje je značenje posuđenice",
+    "question": "Koja je SI jedinica električnog otpora, nazvana po njemačkom fizičaru?",
+    "answers": [
+      "om",
+      "ohm"
+    ],
+    "explanation": "Točan odgovor: Om.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4558-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Jezik",
+    "focus": "znanost o podrijetlu riječi",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove proučavanje podrijetla i povijesti riječi?",
+    "answers": [
+      "etimologija"
+    ],
+    "explanation": "Točan odgovor: Etimologija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Etymology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4559-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Videoigre",
+    "focus": "vodoinstalater Nintendo",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove Nintendov junak s crvenom kapom, brat Luigija?",
+    "answers": [
+      "Mario",
+      "Super Mario"
+    ],
+    "explanation": "Točan odgovor: Mario.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mario"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4560-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Botanika",
+    "focus": "biljka začin šafran",
+    "difficulty": 3,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Od kojeg se roda cvjetnica dobiva začin šafran, iz osušenih njuški tučka?",
+    "answers": [
+      "šafran",
+      "Crocus",
+      "krokus"
+    ],
+    "explanation": "Točan odgovor: Šafran (Crocus sativus).",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crocus_sativus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4561-20261113",
+    "createdAt": "2026-11-13T12:39:04+01:00",
+    "updatedAt": "2026-11-13T12:39:04+01:00",
+    "topic": "Politika",
+    "focus": "prva premijerka Ujedinjenog Kraljevstva",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koja je političarka 1979. postala prva žena na čelu britanske vlade?",
+    "answers": [
+      "Margaret Thatcher",
+      "Thatcher"
+    ],
+    "explanation": "Točan odgovor: Margaret Thatcher.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Margaret_Thatcher"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
