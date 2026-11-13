@@ -1,0 +1,227 @@
+[
+  {
+    "id": "chatgpt10000-4562-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je britanska pjevačica objavila album „Back to Black” 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album je drugi studijski album Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4563-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Sport",
+    "focus": "olimpijska disciplina skeleton",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom sportu natjecatelj leži potrbuške na malim sanjkama i spušta se ledenom stazom glavom naprijed?",
+    "answers": [
+      "skeleton"
+    ],
+    "explanation": "Skeleton se razlikuje od sanjkanja po položaju tijela i smjeru vožnje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Skeleton_(sport)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4564-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Književnost",
+    "focus": "lik Atticus Finch",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem se romanu Harper Lee pojavljuje odvjetnik Atticus Finch?",
+    "answers": [
+      "Ubiti pticu rugalicu",
+      "To Kill a Mockingbird"
+    ],
+    "explanation": "Atticus Finch važan je lik romana Harper Lee iz 1960.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4565-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja velika europska rijeka dijeli Budimpeštu na Budim i Peštu?",
+    "answers": [
+      "Dunav"
+    ],
+    "explanation": "Dunav prolazi kroz glavni grad Mađarske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Danube"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4566-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Kemija",
+    "focus": "metal tekući na sobnoj temperaturi",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji je metal pri uobičajenoj sobnoj temperaturi tekuć i u periodnom sustavu nosi simbol Hg?",
+    "answers": [
+      "živa",
+      "ziva"
+    ],
+    "explanation": "Živa je metal kemijskog simbola Hg.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mercury_(element)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4567-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Film",
+    "focus": "redatelj Spirited Away",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je japanski redatelj potpisao animirani film „Avanture male Chihiro” (Spirited Away)?",
+    "answers": [
+      "Hayao Miyazaki",
+      "Miyazaki"
+    ],
+    "explanation": "Hayao Miyazaki režirao je animirani film iz 2001.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4568-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Životinje",
+    "focus": "sisavac koji polaže jaja",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima pačji kljun, pliva i polaže jaja?",
+    "answers": [
+      "čudnovati kljunaš",
+      "kljunaš",
+      "platipus"
+    ],
+    "explanation": "Čudnovati kljunaš jedan je od sisavaca jednootvora.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4569-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Tehnologija",
+    "focus": "kratica GPS",
+    "difficulty": 1,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja troslovna kratica označava satelitski sustav za određivanje položaja, često korišten u navigaciji?",
+    "answers": [
+      "GPS"
+    ],
+    "explanation": "GPS znači Global Positioning System.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4570-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine započelo otvaranje Berlinskog zida, događaj koji je simbolizirao kraj podjele grada?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4571-20261113",
+    "createdAt": "2026-11-13T13:42:30+01:00",
+    "updatedAt": "2026-11-13T13:42:30+01:00",
+    "topic": "Medicina",
+    "focus": "naziv za proučavanje kože",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove grana medicine koja se bavi bolestima kože?",
+    "answers": [
+      "dermatologija"
+    ],
+    "explanation": "Dermatologija je medicinska specijalnost posvećena koži.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
