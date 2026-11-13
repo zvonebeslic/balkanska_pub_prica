@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-4702-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black Amy Winehouse",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album je jedan od najpoznatijih radova Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Amy_Winehouse"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4703-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Nogomet",
+    "focus": "Andres Iniesta gol finale 2010",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Tko je postigao pobjednički pogodak za Španjolsku u finalu Svjetskog prvenstva 2010.?",
+    "answers": [
+      "Andrés Iniesta",
+      "Andres Iniesta",
+      "Iniesta"
+    ],
+    "explanation": "Iniesta je zabio u produžetku protiv Nizozemske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_final"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4704-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Film",
+    "focus": "redatelj Inception Christopher Nolan",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je redatelj snimio film 'Početak' (Inception) s Leonardom DiCaprijem?",
+    "answers": [
+      "Christopher Nolan",
+      "Nolan"
+    ],
+    "explanation": "Nolan je napisao i režirao film iz 2010.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Inception"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4705-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Književnost",
+    "focus": "roman Stranac Albert Camus",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Tko je napisao roman 'Stranac' čiji je glavni lik Meursault?",
+    "answers": [
+      "Albert Camus",
+      "Camus"
+    ],
+    "explanation": "Roman je objavljen 1942. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Stranger_(Camus_novel)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4706-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Kanade Ottawa",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Toronto je najveći kanadski grad, ali koji je grad glavni grad Kanade?",
+    "answers": [
+      "Ottawa",
+      "Otava"
+    ],
+    "explanation": "Ottawa je savezna prijestolnica Kanade.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ottawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4707-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Životinje",
+    "focus": "najveći kopneni sisavac afrički slon",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je životinja najveći danas živući kopneni sisavac?",
+    "answers": [
+      "afrički slon",
+      "africki slon",
+      "slon"
+    ],
+    "explanation": "Afrički savanski slon najveća je živuća kopnena životinja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/African_bush_elephant"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4708-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Kemija",
+    "focus": "kemijska formula kuhinjske soli NaCl",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koja je kemijska formula obične kuhinjske soli?",
+    "answers": [
+      "NaCl",
+      "natrijev klorid"
+    ],
+    "explanation": "Kuhinjska sol sastoji se od natrijevih i kloridnih iona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium_chloride"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4709-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Televizija",
+    "focus": "lik Walter White Breaking Bad",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove profesor kemije koji postaje proizvođač metamfetamina u seriji 'Breaking Bad'?",
+    "answers": [
+      "Walter White",
+      "Volter Vajt"
+    ],
+    "explanation": "Waltera Whitea glumi Bryan Cranston.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4710-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, simbol kraja podjele grada?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4711-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Medicina",
+    "focus": "naziv za manjak crvenih krvnih stanica anemija",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se medicinskim nazivom zove stanje smanjenog broja eritrocita ili hemoglobina?",
+    "answers": [
+      "anemija",
+      "slabokrvnost"
+    ],
+    "explanation": "Anemija smanjuje sposobnost krvi da prenosi kisik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anemia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
