@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chatgpt10000-4480-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Glazba",
+    "focus": "Nirvana Nevermind",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je američki rock sastav 1991. objavio album „Nevermind”?",
+    "answers": [
+      "Nirvana"
+    ],
+    "explanation": "Nevermind sadrži pjesmu Smells Like Teen Spirit.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nevermind"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4481-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Nogomet",
+    "focus": "Maracanã Rio de Janeiro",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se brazilskom gradu nalazi stadion Maracanã?",
+    "answers": [
+      "Rio de Janeiro",
+      "Rio"
+    ],
+    "explanation": "Maracanã je jedan od najpoznatijih nogometnih stadiona na svijetu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maracan%C3%A3_Stadium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4482-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Televizija",
+    "focus": "Friends Central Perk",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove kafić u kojem se često okuplja šest glavnih likova serije „Prijatelji”?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk izmišljeni je njujorški kafić u seriji Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4483-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, simboličan početak njegova pada?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid počeo se otvarati 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4484-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Astronomija",
+    "focus": "Velika crvena pjega Jupiter",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem se planetu nalazi golema oluja poznata kao Velika crvena pjega?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Velika crvena pjega dugovječna je oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Red_Spot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4485-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Životinje",
+    "focus": "koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski tobolčar većinu prehrane temelji na lišću eukaliptusa?",
+    "answers": [
+      "koala"
+    ],
+    "explanation": "Koale su specijalizirane za prehranu lišćem eukaliptusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4486-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Gastronomija",
+    "focus": "paella Valencija",
+    "difficulty": 2,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Iz koje španjolske regije potječe jelo paella?",
+    "answers": [
+      "Valencija",
+      "Valencijska zajednica"
+    ],
+    "explanation": "Paella se tradicionalno povezuje s Valencijom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paella"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4487-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ radar.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4488-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Fizika",
+    "focus": "Newton jedinica sile",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je znanstveniku nazvana SI jedinica sile?",
+    "answers": [
+      "Isaac Newton",
+      "Newton"
+    ],
+    "explanation": "Njutan je izvedena SI jedinica sile.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton_(unit)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4489-20261113",
+    "createdAt": "2026-11-13T06:35:19+01:00",
+    "updatedAt": "2026-11-13T06:35:19+01:00",
+    "topic": "Videoigre",
+    "focus": "Sonic Sega jež",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove plavi jež, maskota tvrtke Sega, koji trči kroz videoigre?",
+    "answers": [
+      "Sonic",
+      "Sonic the Hedgehog"
+    ],
+    "explanation": "Sonic je debitirao kao lik videoigre 1991.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
