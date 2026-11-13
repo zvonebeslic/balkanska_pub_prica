@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4642-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Anfield",
+    "difficulty": 1,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Na kojem stadionu Liverpool igra svoje domaće utakmice od osnutka kluba 1892.?",
+    "answers": [
+      "Anfield"
+    ],
+    "explanation": "Točan odgovor je Anfield.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anfield"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4643-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Televizija",
+    "focus": "serija Breaking Bad",
+    "difficulty": 1,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "U kojoj seriji profesor kemije Walter White postaje proizvođač metamfetamina?",
+    "answers": [
+      "Breaking Bad"
+    ],
+    "explanation": "Točan odgovor je Breaking Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4644-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Umjetnost",
+    "focus": "slika Djevojka s bisernom naušnicom",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar naslikao Djevojku s bisernom naušnicom?",
+    "answers": [
+      "Johannes Vermeer"
+    ],
+    "explanation": "Točan odgovor je Johannes Vermeer.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4645-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Astronomija",
+    "focus": "planet Uran otkriće",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je planet William Herschel otkrio 1781. godine?",
+    "answers": [
+      "Uran"
+    ],
+    "explanation": "Točan odgovor je Uran.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Uranus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4646-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza klorofil",
+    "difficulty": 1,
+    "styleId": 23,
+    "styleDescription": "Pitaj što je posljednje u nizu tehnoloških izuma",
+    "question": "Kako se zove zeleni pigment koji biljkama omogućuje apsorpciju svjetlosti za fotosintezu?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Točan odgovor je klorofil.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4647-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Točan odgovor je palindrom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4648-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Fizika",
+    "focus": "mjerna jedinica otpora",
+    "difficulty": 3,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Po kojem je fizičaru nazvana SI jedinica električnog otpora?",
+    "answers": [
+      "Georg Simon Ohm"
+    ],
+    "explanation": "Točan odgovor je Georg Simon Ohm.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4649-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Medicina",
+    "focus": "očna šarenica",
+    "difficulty": 1,
+    "styleId": 44,
+    "styleDescription": "Kreni od promjene imena grada, traži današnji naziv",
+    "question": "Kako se zove obojeni dio oka koji regulira veličinu zjenice?",
+    "answers": [
+      "šarenica"
+    ],
+    "explanation": "Točan odgovor je šarenica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Iris_(anatomy)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4650-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Brendovi",
+    "focus": "osnivač IKEA",
+    "difficulty": 3,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koji je švedski poduzetnik osnovao IKEA-u 1943. godine?",
+    "answers": [
+      "Ingvar Kamprad"
+    ],
+    "explanation": "Točan odgovor je Ingvar Kamprad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ingvar_Kamprad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4651-20261113",
+    "createdAt": "2026-11-13T18:45:03+01:00",
+    "updatedAt": "2026-11-13T18:45:03+01:00",
+    "topic": "Videoigre",
+    "focus": "lik Lara Croft",
+    "difficulty": 1,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Kako se zove arheologinja i pustolovka iz serijala videoigara Tomb Raider?",
+    "answers": [
+      "Lara Croft"
+    ],
+    "explanation": "Točan odgovor je Lara Croft.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lara_Croft"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
