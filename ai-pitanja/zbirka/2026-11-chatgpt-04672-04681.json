@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4672-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Sport",
+    "focus": "teniski Grand Slam Wimbledon",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koji se teniski Grand Slam tradicionalno igra na travnatoj podlozi u Londonu?",
+    "answers": [
+      "Wimbledon"
+    ],
+    "explanation": "Wimbledon se igra na travnatim terenima All England Cluba.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4673-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Astronomija",
+    "focus": "najveći Saturnov mjesec",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kako se zove najveći Saturnov prirodni satelit, poznat po gustoj atmosferi?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov mjesec.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4674-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Gastronomija",
+    "focus": "glavni sastojak guacamolea",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje je voće glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Guacamole se tradicionalno priprema od zgnječenog avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4675-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "slika Zvjezdana noć",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je naslikao Zvjezdanu noć 1889. godine?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "explanation": "Zvjezdana noć jedna je od najpoznatijih Van Goghovih slika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4676-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Videoigre",
+    "focus": "lik Lara Croft",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je pustolovna serija videoigara poznata po arheologinji Lari Croft?",
+    "answers": [
+      "Tomb Raider"
+    ],
+    "explanation": "Lara Croft glavni je lik serijala Tomb Raider.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tomb_Raider"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4677-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako nazivamo proces kojim biljke uz svjetlost stvaraju organske tvari iz ugljikova dioksida i vode?",
+    "answers": [
+      "Fotosinteza"
+    ],
+    "explanation": "Fotosintezom biljke pretvaraju svjetlosnu energiju u kemijsku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4678-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Koja je SI jedinica električnog otpora nazvana po Georgu Ohmu?",
+    "answers": [
+      "Om"
+    ],
+    "explanation": "Električni otpor mjeri se u omima, oznaka Ω.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4679-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4680-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Politika",
+    "focus": "sjedište Europskog parlamenta",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem francuskom gradu Europski parlament održava redovite plenarne sjednice?",
+    "answers": [
+      "Strasbourg"
+    ],
+    "explanation": "Strasbourg je službeno sjedište Europskog parlamenta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/European_Parliament"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4681-20261113",
+    "createdAt": "2026-11-13T20:44:23+01:00",
+    "updatedAt": "2026-11-13T20:44:23+01:00",
+    "topic": "Brendovi",
+    "focus": "osnivač IKEA-e",
+    "difficulty": 3,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "Koji je švedski poduzetnik osnovao IKEA-u 1943. godine?",
+    "answers": [
+      "Ingvar Kamprad"
+    ],
+    "explanation": "Kamprad je IKEA-u osnovao kao mladi poduzetnik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ingvar_Kamprad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
