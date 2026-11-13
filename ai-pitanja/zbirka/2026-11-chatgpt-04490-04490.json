@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-4490-20261113",
+    "createdAt": "2026-11-13T07:35:13+01:00",
+    "updatedAt": "2026-11-13T07:35:13+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera: duljina rotacije i godine",
+    "difficulty": 3,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Na kojem planetu jedan okret oko vlastite osi traje dulje od obilaska oko Sunca?",
+    "answers": [
+      "Venera"
+    ],
+    "explanation": "Veneri treba oko 243 zemaljska dana za rotaciju, a oko 225 dana za obilazak oko Sunca.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
