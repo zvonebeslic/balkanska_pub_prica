@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-4592-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie i Ziggy Stardust",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koji je britanski glazbenik 1972. predstavio lik Ziggyja Stardusta?",
+    "answers": [
+      "David Bowie",
+      "Bowie"
+    ],
+    "explanation": "Ziggy Stardust bio je Bowiejev scenski alter ego.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ziggy_Stardust_(character)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4593-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Sport",
+    "focus": "Jim Thorpe 1912.",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Tko je 1912. u Stockholmu osvojio olimpijsko zlato i u petoboju i u desetoboju?",
+    "answers": [
+      "Jim Thorpe",
+      "James Thorpe",
+      "Thorpe"
+    ],
+    "explanation": "MOO ga priznaje jedinim osvajačem zlata u obje discipline na tim Igrama.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/ioc-to-display-the-name-of-jim-thorpe-as-sole-stockholm-1912-pentathlon-and-decathlon-gold-medallist"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4594-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Spirited Away",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je režirao japanski animirani film 'Avanture male Chihiro'?",
+    "answers": [
+      "Hayao Miyazaki",
+      "Miyazaki",
+      "Hajao Mijazaki"
+    ],
+    "explanation": "Miyazaki je režirao film studija Ghibli iz 2001.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4595-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Zemljopis",
+    "focus": "država glavnog grada Tbilisija",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kroz koji se glavni grad proteže rijeka Kura, a u njegovoj staroj jezgri nalaze se sumporne kupelji?",
+    "answers": [
+      "Tbilisi",
+      "Tiflis"
+    ],
+    "explanation": "Tbilisi je glavni grad Gruzije i poznat je po sumpornim kupeljima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tbilisi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4596-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Ime ruže",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je talijanski književnik napisao povijesni kriminalistički roman 'Ime ruže'?",
+    "answers": [
+      "Umberto Eco",
+      "Eco"
+    ],
+    "explanation": "Umberto Eco objavio je roman 1980.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4597-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol kositra",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal ima kemijski simbol Sn, izveden iz latinske riječi stannum?",
+    "answers": [
+      "kositar"
+    ],
+    "explanation": "Kositar je kemijski element atomskog broja 50.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4598-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Televizija",
+    "focus": "serija The Office Dunder Mifflin",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U kojoj humorističnoj seriji zaposlenici rade za papirničku tvrtku Dunder Mifflin?",
+    "answers": [
+      "The Office",
+      "U uredu"
+    ],
+    "explanation": "Dunder Mifflin izmišljena je tvrtka u američkoj seriji The Office.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4599-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Biologija",
+    "focus": "životinjska skupina glavonošci",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kojoj skupini mekušaca pripadaju hobotnice, lignje i sipe?",
+    "answers": [
+      "glavonošci",
+      "glavonošcima",
+      "Cephalopoda"
+    ],
+    "explanation": "Sve tri skupine pripadaju razredu glavonožaca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cephalopod"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4600-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Weba",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je britanski informatičar u CERN-u osmislio World Wide Web?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee",
+      "Berners-Lee"
+    ],
+    "explanation": "Berners-Lee predložio je sustav World Wide Web 1989.",
+    "sources": [
+      "https://home.cern/science/computing/birth-web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4601-20261113",
+    "createdAt": "2026-11-13T15:44:44+01:00",
+    "updatedAt": "2026-11-13T15:44:44+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert tiramisu",
+    "difficulty": 1,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Koji talijanski desert obično spaja piškote natopljene kavom, mascarpone i kakao?",
+    "answers": [
+      "tiramisu"
+    ],
+    "explanation": "Tiramisu je talijanski slojeviti desert.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
