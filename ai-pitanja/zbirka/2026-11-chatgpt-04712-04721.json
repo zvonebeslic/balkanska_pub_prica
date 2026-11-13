@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-4712-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps olimpijsko plivanje",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je američki plivač osvojio rekordne 23 zlatne olimpijske medalje?",
+    "answers": [
+      "Michael Phelps",
+      "Majkl Felps",
+      "Phelps"
+    ],
+    "explanation": "Phelps ima ukupno 28 olimpijskih medalja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Michael_Phelps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4713-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Astronomija",
+    "focus": "crveni planet Mars",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji planet Sunčeva sustava zbog željeznih oksida na površini zovemo Crvenim planetom?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Željezni oksidi daju Marsovu tlu crvenkastu boju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mars"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4714-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Gastronomija",
+    "focus": "guacamole avokado",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje je voće glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "avokado",
+      "avocado"
+    ],
+    "explanation": "Guacamole se tradicionalno priprema od zgnječenog avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4715-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Guernica Pablo Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski slikar autor antiratne slike 'Guernica'?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je sliku naslikao 1937. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4716-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Videoigre",
+    "focus": "vodoinstalater Mario Nintendo",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji Nintendov lik s crvenom kapom često spašava princezu Peach?",
+    "answers": [
+      "Mario",
+      "Super Mario"
+    ],
+    "explanation": "Mario je protagonist Nintendove serije platformskih igara.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mario"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4717-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza klorofil",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove zeleni pigment koji biljkama omogućuje upijanje svjetlosti za fotosintezu?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost potrebnu za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4718-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora om",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja je SI jedinica električnog otpora, nazvana po njemačkom fizičaru?",
+    "answers": [
+      "om",
+      "ohm",
+      "Ω"
+    ],
+    "explanation": "Om je nazvan po Georgu Simonu Ohmu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4719-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom čitanje u oba smjera",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4720-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO podrijetlo Danska",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Iz koje europske države potječe proizvođač kockica LEGO?",
+    "answers": [
+      "Danska",
+      "Danske"
+    ],
+    "explanation": "LEGO je osnovan u danskom Billundu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4721-20261113",
+    "createdAt": "2026-11-13T23:42:45+01:00",
+    "updatedAt": "2026-11-13T23:42:45+01:00",
+    "topic": "Arhitektura",
+    "focus": "Taj Mahal Agra",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se indijskom gradu nalazi mauzolej Taj Mahal?",
+    "answers": [
+      "Agra",
+      "Agri"
+    ],
+    "explanation": "Taj Mahal izgrađen je u Agri u 17. stoljeću.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Taj_Mahal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
