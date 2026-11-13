@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-4532-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Glazba",
+    "focus": "pjevačica albuma Back to Black",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Koja je britanska pjevačica objavila album „Back to Black” 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album je jedan od njezinih najpoznatijih radova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4533-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Nogomet",
+    "focus": "klub stadion San Siro",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koja dva milanska nogometna kluba dijele stadion San Siro?",
+    "answers": [
+      "Inter i Milan",
+      "AC Milan i Inter",
+      "Milan i Inter"
+    ],
+    "explanation": "Stadion Giuseppe Meazza dom je Intera i Milana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4534-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Whiplash",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao film „Whiplash” iz 2014. o ambicioznom jazz-bubnjaru?",
+    "answers": [
+      "Damien Chazelle"
+    ],
+    "explanation": "Chazelle je napisao i režirao film.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Whiplash_(2014_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4535-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Književnost",
+    "focus": "roman Sto godina samoće",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je kolumbijski nobelovac napisao roman „Sto godina samoće”?",
+    "answers": [
+      "Gabriel García Márquez",
+      "Gabriel Garcia Marquez"
+    ],
+    "explanation": "Roman je objavljen 1967. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4536-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Namibije",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Windhoek je glavni grad koje afričke države?",
+    "answers": [
+      "Namibija",
+      "Namibije"
+    ],
+    "explanation": "Windhoek je glavni i najveći grad Namibije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Windhoek"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4537-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Kemija",
+    "focus": "simbol kositra",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Sn, izveden iz latinskoga naziva stannum?",
+    "answers": [
+      "kositar"
+    ],
+    "explanation": "Sn je kemijski simbol kositra.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4538-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Biologija",
+    "focus": "proces transpiracije",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva proces kojim biljka gubi vodu u obliku vodene pare, ponajviše kroz puči listova?",
+    "answers": [
+      "transpiracija"
+    ],
+    "explanation": "Transpiracija je isparavanje vode iz nadzemnih dijelova biljke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Transpiration"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4539-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Medicina",
+    "focus": "medicinski naziv za kratkovidnost",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji stručni naziv koristimo za kratkovidnost, kada se udaljeni predmeti vide mutno?",
+    "answers": [
+      "miopija",
+      "myopia"
+    ],
+    "explanation": "Miopija je refrakcijska pogreška oka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Myopia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4540-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Tehnologija",
+    "focus": "značenje kratice GPS",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koje tri engleske riječi čine kraticu GPS, sustava za satelitsko određivanje položaja?",
+    "answers": [
+      "Global Positioning System"
+    ],
+    "explanation": "GPS je kratica za Global Positioning System.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4541-20261113",
+    "createdAt": "2026-11-13T11:38:05+01:00",
+    "updatedAt": "2026-11-13T11:38:05+01:00",
+    "topic": "Umjetnost",
+    "focus": "autor skulpture Mislilac",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je francuski kipar izradio poznatu skulpturu „Mislilac”?",
+    "answers": [
+      "Auguste Rodin",
+      "Rodin"
+    ],
+    "explanation": "Rodinov Mislilac izvorno je bio zamišljen u sklopu Vrata pakla.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Thinker"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
