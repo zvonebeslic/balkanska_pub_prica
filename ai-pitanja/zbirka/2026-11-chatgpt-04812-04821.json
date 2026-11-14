@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-4812-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace i analitički stroj",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je matematičarka iz 19. stoljeća napisala bilješke s algoritmom za Babbageov analitički stroj?",
+    "answers": [
+      "Ada Lovelace",
+      "Ada Bajron"
+    ],
+    "explanation": "Ada Lovelace objavila je bilješke o analitičkom stroju s algoritmom za Bernoullijeve brojeve.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ada_Lovelace"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4813-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Književnost",
+    "focus": "Frankenstein autorica 1818",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je britanska književnica 1818. objavila roman 'Frankenstein'?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "explanation": "Mary Shelley autorica je romana Frankenstein, prvi put objavljenog 1818.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frankenstein"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4814-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Životinje",
+    "focus": "flamingo ružičasta boja prehrana",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Ružičasta boja perja flaminga potječe od pigmenata koje unose hranom. Kako se zovu ti pigmenti?",
+    "answers": [
+      "karotenoidi",
+      "karotenoidni pigmenti"
+    ],
+    "explanation": "Karotenoidi iz hrane doprinose ružičastoj boji flamingova perja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Flamingo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4815-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Glazba",
+    "focus": "Queen Bohemian Rhapsody 1975",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koji je britanski rock-sastav 1975. objavio pjesmu 'Bohemian Rhapsody'?",
+    "answers": [
+      "Queen"
+    ],
+    "explanation": "Bohemian Rhapsody singl je sastava Queen iz 1975.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4816-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto okružen Južnom Afrikom",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička država u cijelosti okružena teritorijem Južnoafričke Republike?",
+    "answers": [
+      "Lesoto",
+      "Lesotho"
+    ],
+    "explanation": "Lesoto je enklava potpuno okružena Južnoafričkom Republikom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4817-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Film",
+    "focus": "Spirited Away redatelj",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Tko je režirao japanski animirani film 'Avanture male Chihiro' iz 2001.?",
+    "answers": [
+      "Hayao Miyazaki",
+      "Hajao Mijazaki"
+    ],
+    "explanation": "Hayao Miyazaki režirao je Spirited Away iz 2001.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4818-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Kemija",
+    "focus": "natrij kemijski simbol Na",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element nosi simbol Na, izveden iz latinskog naziva natrium?",
+    "answers": [
+      "natrij"
+    ],
+    "explanation": "Simbol Na označava natrij.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4819-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt 100 metara svjetski rekord 9.58",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter 2009. istrčao 100 metara za rekordnih 9,58 sekundi?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Usain Bolt postavio je svjetski rekord na 100 metara u Berlinu 2009.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4820-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu mascarpone",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je talijanski kremasti sir važan sastojak klasičnog tiramisua?",
+    "answers": [
+      "mascarpone",
+      "maskarpone"
+    ],
+    "explanation": "Mascarpone je ključan sastojak kreme za tiramisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4821-20261114",
+    "createdAt": "2026-11-14T06:43:00+01:00",
+    "updatedAt": "2026-11-14T06:43:00+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215 Ivan Bez Zemlje",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je engleski kralj 1215. prihvatio dokument poznat kao Magna Carta?",
+    "answers": [
+      "Ivan Bez Zemlje",
+      "John Lackland",
+      "kralj Ivan"
+    ],
+    "explanation": "Engleski kralj Ivan prihvatio je Magnu Cartu 1215.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
