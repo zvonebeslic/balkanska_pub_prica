@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4862-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Glazba",
+    "focus": "Nirvana album Nevermind",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove Nirvanin album iz 1991. s pjesmom 'Smells Like Teen Spirit'?",
+    "answers": [
+      "Nevermind"
+    ],
+    "explanation": "Nevermind je drugi studijski album Nirvane.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nevermind"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4863-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion San Siro grad",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se talijanskom gradu nalazi stadion San Siro, dom Intera i Milana?",
+    "answers": [
+      "Milano"
+    ],
+    "explanation": "San Siro nalazi se u Milanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4864-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Film",
+    "focus": "film Matrix crvena pilula",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojem filmu iz 1999. Morpheus nudi Neu izbor između crvene i plave pilule?",
+    "answers": [
+      "Matrix"
+    ],
+    "explanation": "Prizor s pilulama pojavljuje se u filmu Matrix.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4865-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ autor",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski pisac i pilot napisao 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "explanation": "Saint-Exupéry objavio je Malog princa 1943.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4866-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Zemljopis",
+    "focus": "najveći otok Sredozemlja",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je najveći otok u Sredozemnom moru?",
+    "answers": [
+      "Sicilija"
+    ],
+    "explanation": "Sicilija je najveći otok Sredozemlja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sicily"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4867-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza oslobađa kisik",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji plin biljke uglavnom otpuštaju kao nusproizvod fotosinteze?",
+    "answers": [
+      "kisik"
+    ],
+    "explanation": "Tijekom fotosinteze iz vode nastaje molekularni kisik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4868-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Povijest",
+    "focus": "Napoleon Waterloo 1815",
+    "difficulty": 1,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Kod kojeg je belgijskog mjesta Napoleon doživio konačni poraz 1815. godine?",
+    "answers": [
+      "Waterloo"
+    ],
+    "explanation": "Bitka kod Waterlooa okončala je Napoleonovu vladavinu Sto dana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Battle_of_Waterloo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4869-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Tehnologija",
+    "focus": "WWW Tim Berners Lee",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar osmislio World Wide Web tijekom rada u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee"
+    ],
+    "explanation": "Berners-Lee predložio je web 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4870-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Umjetnost",
+    "focus": "Mona Lisa muzej",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "U kojem se pariškom muzeju čuva Leonardo da Vincijeva 'Mona Lisa'?",
+    "answers": [
+      "Louvre"
+    ],
+    "explanation": "Mona Lisa izložena je u Louvreu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mona_Lisa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4871-20261114",
+    "createdAt": "2026-11-14T08:36:17+01:00",
+    "updatedAt": "2026-11-14T08:36:17+01:00",
+    "topic": "Gastronomija",
+    "focus": "sushi nori alga",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove jestiva morska alga koja se često koristi za omatanje sushi rolica?",
+    "answers": [
+      "nori"
+    ],
+    "explanation": "Nori su sušeni listovi algi za pripremu sushija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nori"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
