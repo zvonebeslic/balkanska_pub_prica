@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4882-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Sport",
+    "focus": "tenis Grand Slam Wimbledon podloga",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na kojoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava"
+    ],
+    "explanation": "Wimbledon je jedini Grand Slam turnir koji se igra na travi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4883-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Astronomija",
+    "focus": "najveći planet Jupiter",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koji je planet Sunčeva sustava najveći po promjeru?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Jupiter je najveći planet Sunčeva sustava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jupiter"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4884-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "slikar Zvjezdana noć Van Gogh",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je naslikao 'Zvjezdanu noć', jedno od najpoznatijih djela postimpresionizma?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "explanation": "Van Gogh naslikao je 'Zvjezdanu noć' 1889. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4885-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Gastronomija",
+    "focus": "japansko jelo sushi riža",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje japansko jelo temelji se na posebno pripremljenoj zakiseljenoj riži, često uz ribu ili povrće?",
+    "answers": [
+      "Sushi"
+    ],
+    "explanation": "Sushi je jelo čiji je ključni sastojak začinjena riža.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sushi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4886-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Videoigre",
+    "focus": "Nintendo lik Luigi brat",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove Mariov brat, prepoznatljiv po zelenoj odjeći u Nintendovim igrama?",
+    "answers": [
+      "Luigi"
+    ],
+    "explanation": "Luigi je Mariov brat i čest lik serijala Super Mario.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Luigi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4887-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora om",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "U kojoj se SI jedinici mjeri električni otpor?",
+    "answers": [
+      "Om"
+    ],
+    "explanation": "Om (Ω) je SI jedinica električnog otpora.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4888-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom riječ obrnuto",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4889-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Politika",
+    "focus": "sjedište Europskog parlamenta Strasbourg",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem francuskom gradu Europski parlament održava redovite plenarne sjednice?",
+    "answers": [
+      "Strasbourg"
+    ],
+    "explanation": "Strasbourg je službeno sjedište Europskog parlamenta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/European_Parliament"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4890-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Brendovi",
+    "focus": "lego Danska porijeklo",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Iz koje europske države potječe proizvođač kockica LEGO?",
+    "answers": [
+      "Danska"
+    ],
+    "explanation": "LEGO je osnovan u danskom Billundu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4891-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Botanika",
+    "focus": "suncokret latinski Helianthus",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja je biljka poznata po velikoj žutoj cvatnoj glavici i sjemenkama od kojih se proizvodi jestivo ulje?",
+    "answers": [
+      "Suncokret"
+    ],
+    "explanation": "Suncokret je uljarica iz roda Helianthus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Common_sunflower"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
