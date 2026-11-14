@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-4752-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Sport",
+    "focus": "tenis Wimbledon travnata podloga",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji se od četiri Grand Slam teniska turnira tradicionalno igra na travi?",
+    "answers": [
+      "Wimbledon"
+    ],
+    "explanation": "Wimbledon je Grand Slam turnir s travnatom podlogom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4753-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Astronomija",
+    "focus": "planet Neptun plava boja",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji je osmi planet od Sunca, prepoznatljiv po plavoj boji i snažnim vjetrovima?",
+    "answers": [
+      "Neptun",
+      "Neptune"
+    ],
+    "explanation": "Neptun je najudaljeniji od osam planeta Sunčeva sustava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neptune"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4754-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Umjetnost",
+    "focus": "slika Zvjezdana noć Van Gogh",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je naslikao 'Zvjezdanu noć', poznato djelo s vrtložnim noćnim nebom?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Vincent van Gogh naslikao je Zvjezdanu noć 1889.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4755-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth naziv Harald Plavozubi",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je danskom kralju, poznatom po nadimku Plavozubi, nazvana tehnologija Bluetooth?",
+    "answers": [
+      "Harald Bluetooth",
+      "Harald Plavozubi",
+      "Harald I."
+    ],
+    "explanation": "Naziv Bluetooth potječe od kralja Haralda Bluetootha.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4756-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert tiramisu",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji talijanski desert obično spaja piškote natopljene kavom, mascarpone i kakao?",
+    "answers": [
+      "tiramisu"
+    ],
+    "explanation": "Tiramisu je desert s kavom, mascarponeom i piškotama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4757-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza kloroplasti",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zovu biljne stanične organele u kojima se odvija fotosinteza?",
+    "answers": [
+      "kloroplasti",
+      "kloroplast"
+    ],
+    "explanation": "Kloroplasti sadrže klorofil i omogućuju fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chloroplast"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4758-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Fizika",
+    "focus": "Newton jedinica sile",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je znanstveniku nazvana SI jedinica sile?",
+    "answers": [
+      "Isaac Newton",
+      "Newton"
+    ],
+    "explanation": "Njutn (N) SI je jedinica sile nazvana po Isaacu Newtonu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton_(unit)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4759-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom riječ unatrag",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Palindrom je izraz koji zadržava isti slijed znakova u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4760-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft Creeper",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojoj se popularnoj videoigri pojavljuje zeleno stvorenje Creeper koje eksplodira kad se približi igraču?",
+    "answers": [
+      "Minecraft"
+    ],
+    "explanation": "Creeper je jedno od prepoznatljivih stvorenja u Minecraftu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Minecraft"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4761-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Politika",
+    "focus": "UN sjedište New York",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se američkom gradu nalazi glavno sjedište Ujedinjenih naroda?",
+    "answers": [
+      "New York",
+      "New York City"
+    ],
+    "explanation": "Sjedište UN-a nalazi se na Manhattanu u New Yorku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
