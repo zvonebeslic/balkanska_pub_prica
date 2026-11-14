@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-4872-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black Amy Winehouse",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je britanska pjevačica 2006. objavila album 'Back to Black'?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album 'Back to Black' drugi je studijski album Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Amy_Winehouse"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4873-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Nogomet",
+    "focus": "prvi osvajač svjetskog prvenstva 1930",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koja je reprezentacija osvojila prvo Svjetsko prvenstvo u nogometu, održano 1930. godine?",
+    "answers": [
+      "Urugvaj"
+    ],
+    "explanation": "Urugvaj je 1930. u finalu pobijedio Argentinu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4874-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma E.T.",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je redatelj snimio film 'E.T. the Extra-Terrestrial' iz 1982.?",
+    "answers": [
+      "Steven Spielberg"
+    ],
+    "explanation": "Spielberg je režirao film o prijateljstvu dječaka i izvanzemaljca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4875-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Književnost",
+    "focus": "roman Mali princ autor",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je napisao književno djelo 'Mali princ'?",
+    "answers": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "explanation": "Francuski pisac i pilot objavio je 'Malog princa' 1943.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4876-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja velika europska rijeka dijeli Budimpeštu na Budim i Peštu?",
+    "answers": [
+      "Dunav"
+    ],
+    "explanation": "Dunav protječe kroz glavni grad Mađarske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Danube"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4877-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Životinje",
+    "focus": "sisavac koji polaže jaja kljunaš",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima kljun nalik pačjem i polaže jaja?",
+    "answers": [
+      "Kljunaš"
+    ],
+    "explanation": "Kljunaš pripada jednootvorima, sisavcima koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4878-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Kemija",
+    "focus": "simbol kalija K",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element ima simbol K, izveden iz latinskog naziva kalium?",
+    "answers": [
+      "Kalij"
+    ],
+    "explanation": "Kemijski simbol kalija je K.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4879-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Televizija",
+    "focus": "serija Breaking Bad Walter White",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojoj televizijskoj seriji profesor kemije Walter White počinje proizvoditi metamfetamin?",
+    "answers": [
+      "Breaking Bad"
+    ],
+    "explanation": "Walter White glavni je lik američke serije 'Breaking Bad'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4880-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, simbol podjele istočnog i zapadnog dijela grada?",
+    "answers": [
+      "1989."
+    ],
+    "explanation": "Otvaranje prijelaza kroz Berlinski zid dogodilo se 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4881-20261114",
+    "createdAt": "2026-11-14T09:44:57+01:00",
+    "updatedAt": "2026-11-14T09:44:57+01:00",
+    "topic": "Medicina",
+    "focus": "kardiolog srce",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se naziva liječnik specijalist koji se bavi bolestima srca i krvnih žila?",
+    "answers": [
+      "Kardiolog"
+    ],
+    "explanation": "Kardiologija je grana medicine posvećena srcu i krvnim žilama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cardiology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
