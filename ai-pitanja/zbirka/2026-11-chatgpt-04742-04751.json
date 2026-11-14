@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-4742-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black Amy Winehouse",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse",
+      "Winehouse"
+    ],
+    "explanation": "Album Back to Black proslavio je Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4743-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion San Siro Milano",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji milanski stadion dijele nogometni klubovi Inter i Milan?",
+    "answers": [
+      "San Siro",
+      "Giuseppe Meazza",
+      "Stadio Giuseppe Meazza"
+    ],
+    "explanation": "San Siro poznat je i pod službenim imenom Giuseppe Meazza.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4744-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Film",
+    "focus": "film Whiplash bubnjar",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojem filmu iz 2014. mladi jazz-bubnjar pokušava zadovoljiti iznimno strogog profesora glazbe?",
+    "answers": [
+      "Whiplash"
+    ],
+    "explanation": "Film Whiplash režirao je Damien Chazelle.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Whiplash_(2014_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4745-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Književnost",
+    "focus": "roman Mali princ Antoine de Saint Exupéry",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je francuski pisac stvorio književnog Malog princa?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Saint-Exupéry",
+      "Antoine de Saint Exupery"
+    ],
+    "explanation": "Mali princ prvi je put objavljen 1943.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4746-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka Dunav Budimpešta",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja europska rijeka dijeli Budimpeštu na Budim i Peštu?",
+    "answers": [
+      "Dunav",
+      "Danube"
+    ],
+    "explanation": "Dunav prolazi kroz glavni grad Mađarske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Danube"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4747-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Životinje",
+    "focus": "kljunar sisavac jaja",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima pačji kljun i polaže jaja?",
+    "answers": [
+      "kljunar",
+      "čudnovati kljunaš",
+      "platipus"
+    ],
+    "explanation": "Kljunar pripada jednootvornim sisavcima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4748-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol kalij K",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji se kemijski element krije iza simbola K u periodnom sustavu?",
+    "answers": [
+      "kalij",
+      "potassium"
+    ],
+    "explanation": "Simbol K potječe od latinskog naziva kalium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4749-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Serije",
+    "focus": "serija Breaking Bad Walter White",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojoj seriji profesor kemije Walter White počinje proizvoditi metamfetamin?",
+    "answers": [
+      "Breaking Bad"
+    ],
+    "explanation": "Walter White glavni je lik serije Breaking Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4750-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine pao Berlinski zid, jedan od najpoznatijih simbola Hladnog rata?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-4751-20261114",
+    "createdAt": "2026-11-14T02:36:49+01:00",
+    "updatedAt": "2026-11-14T02:36:49+01:00",
+    "topic": "Medicina",
+    "focus": "dermatologija koža",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se naziva medicinska specijalnost koja se bavi bolestima kože?",
+    "answers": [
+      "dermatologija"
+    ],
+    "explanation": "Dermatologija proučava kožu i njezine bolesti.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
