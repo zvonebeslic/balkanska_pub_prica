@@ -1,0 +1,235 @@
+[
+  {
+    "id": "chatgpt10000-5132-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Sputnik 2 letjelica pas Lajka 1957",
+    "difficulty": 2,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Kako se zvala sovjetska svemirska letjelica koja je 1957. ponijela kujicu Lajku u Zemljinu orbitu?",
+    "answers": [
+      "Sputnik 2",
+      "Sputnik-2"
+    ],
+    "explanation": "Lajka je u orbitu poletjela na letjelici Sputnik 2.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Laika"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5133-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Casa Azul Frida Kahlo muzej Coyoacan",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove plava kuća u meksičkom Coyoacánu u kojoj je živjela Frida Kahlo, a danas je muzej?",
+    "answers": [
+      "Casa Azul",
+      "La Casa Azul",
+      "Plava kuća"
+    ],
+    "explanation": "Casa Azul, odnosno Plava kuća, povezana je sa životom Fride Kahlo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frida_Kahlo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5134-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris Aleksej Pažitnov autor 1984",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je sovjetski programer 1984. osmislio slagalicu Tetris?",
+    "answers": [
+      "Aleksej Pažitnov",
+      "Alexey Pajitnov",
+      "Alexei Pajitnov"
+    ],
+    "explanation": "Tetris je osmislio Aleksej Pažitnov.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tetris"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5135-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Medicina",
+    "focus": "penicilin Alexander Fleming otkriće plijesan",
+    "difficulty": 1,
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koji je antibiotik proizašao iz otkrića Alexandera Fleminga nakon što je opazio djelovanje plijesni na bakterije?",
+    "answers": [
+      "Penicilin",
+      "Penicillin"
+    ],
+    "explanation": "Flemingovo opažanje otvorilo je put razvoju penicilina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Penicillin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5136-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA ime inicijali četiri člana",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv kojeg švedskog pop-sastava nastao je od početnih slova imena Agnetha, Björn, Benny i Anni-Frid?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "Ime ABBA sastavljeno je od početnih slova imena četvero članova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/ABBA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5137-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Životinje",
+    "focus": "hobotnica tri srca",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji morski mekušac ima osam krakova, tri srca i plavu krv?",
+    "answers": [
+      "Hobotnica",
+      "Octopus"
+    ],
+    "explanation": "Hobotnice imaju tri srca, a hemocijanin njihovoj krvi daje plavkastu boju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Octopus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5138-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Književnost",
+    "focus": "Don Quijote vjetrenjače Cervantes",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman u kojem vitez Don Quijote napada vjetrenjače misleći da su divovi?",
+    "answers": [
+      "Miguel de Cervantes",
+      "Cervantes",
+      "Miguel de Cervantes Saavedra"
+    ],
+    "explanation": "Miguel de Cervantes autor je Don Quijotea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Don_Quixote"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5139-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Sport",
+    "focus": "odbojka William Morgan izum 1895",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji je američki sportski instruktor 1895. osmislio igru koju danas poznajemo kao odbojku?",
+    "answers": [
+      "William G. Morgan",
+      "William Morgan"
+    ],
+    "explanation": "William G. Morgan osmislio je odbojku 1895. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5140-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza ugljikov dioksid ulaz",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji plin biljke uzimaju iz zraka kako bi tijekom fotosinteze stvarale šećere?",
+    "answers": [
+      "Ugljikov dioksid",
+      "CO2",
+      "CO₂"
+    ],
+    "explanation": "U fotosintezi se ugljikov dioksid koristi za izgradnju organskih molekula.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5141-20261115",
+    "createdAt": "2026-11-15T08:43:00+01:00",
+    "updatedAt": "2026-11-15T08:43:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "kroasan lisnato tijesto maslac laminiranje",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje pecivo u obliku polumjeseca dobiva slojeve višestrukim preklapanjem tijesta i maslaca?",
+    "answers": [
+      "Kroasan",
+      "Croissant"
+    ],
+    "explanation": "Kroasan je lisnato dizano pecivo karakterističnih slojeva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Croissant"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
