@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5226-20261115",
+    "createdAt": "2026-11-15T17:35:39+01:00",
+    "updatedAt": "2026-11-15T17:35:39+01:00",
+    "topic": "Kemija",
+    "focus": "polonij ime prema Poljskoj",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je radioaktivni element Marie Curie nazvala prema svojoj domovini Poljskoj?",
+    "answers": [
+      "Polonij",
+      "Polonium"
+    ],
+    "explanation": "Polonij je dobio ime po Poljskoj.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Marie_Curie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
