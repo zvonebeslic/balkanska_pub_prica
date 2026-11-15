@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5171-20261115",
+    "createdAt": "2026-11-15T11:44:37+01:00",
+    "updatedAt": "2026-11-15T11:44:37+01:00",
+    "topic": "Gastronomija",
+    "focus": "japanski miso fermentirana soja",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Koja se japanska pasta od fermentirane soje često koristi za pripremu istoimene juhe?",
+    "answers": [
+      "Miso",
+      "Miso pasta"
+    ],
+    "explanation": "Miso je fermentirana pasta tradicionalno korištena u japanskoj kuhinji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Miso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
