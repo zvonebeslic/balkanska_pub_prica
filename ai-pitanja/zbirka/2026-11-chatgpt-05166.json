@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5166-20261115",
+    "createdAt": "2026-11-15T11:44:37+01:00",
+    "updatedAt": "2026-11-15T11:44:37+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka Dunav Bratislava",
+    "difficulty": 2,
+    "styleId": 48,
+    "styleDescription": "Poveži poznatu rijeku s manje poznatim pritokom",
+    "question": "Koja velika europska rijeka protječe kroz Bratislavu, Budimpeštu i Beograd?",
+    "answers": [
+      "Dunav",
+      "Danube"
+    ],
+    "explanation": "Dunav prolazi kroz sva tri navedena glavna grada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Danube"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
