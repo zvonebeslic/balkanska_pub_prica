@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-5242-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine engleski kralj Ivan bez Zemlje pristao na dokument Magna Carta?",
+    "answers": [
+      "1215"
+    ],
+    "explanation": "Magna Carta izdana je 1215. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5243-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Astronomija",
+    "focus": "Halleyjev komet period",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji poznati periodični komet nosi ime astronoma koji je predvidio njegov povratak 1758. godine?",
+    "answers": [
+      "Halleyjev komet"
+    ],
+    "explanation": "Edmond Halley izračunao je periodičnost kometa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Halley%27s_Comet"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5244-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Književnost",
+    "focus": "Gospodar muha William Golding",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je britanski književnik napisao roman 'Gospodar muha', o dječacima na pustom otoku?",
+    "answers": [
+      "William Golding"
+    ],
+    "explanation": "Goldingov roman Lord of the Flies objavljen je 1954.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5245-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Kemija",
+    "focus": "bronca bakar kositar",
+    "difficulty": 2,
+    "styleId": 46,
+    "styleDescription": "Postavi pitanje o materijalu kroz njegovu kulturnu uporabu",
+    "question": "Koja je legura tradicionalno sastavljena ponajprije od bakra i kositra?",
+    "answers": [
+      "bronca"
+    ],
+    "explanation": "Bronca je legura bakra, najčešće s kositrom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bronze"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5246-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Umjetnost",
+    "focus": "Mona Lisa Louvre",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "U kojem se pariškom muzeju čuva Leonardova 'Mona Lisa'?",
+    "answers": [
+      "Louvre"
+    ],
+    "explanation": "Mona Lisa izložena je u pariškom Louvreu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mona_Lisa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5247-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Sport",
+    "focus": "Tour de France žuta majica",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koje je boje majica vodećeg vozača u ukupnom poretku Tour de Francea?",
+    "answers": [
+      "žuta"
+    ],
+    "explanation": "Žuta majica označava vodećeg u ukupnom poretku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yellow_jersey"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5248-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Biologija",
+    "focus": "mitohondrij stanična energija",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koju staničnu organelu često nazivamo 'elektranom stanice' zbog njezine uloge u stvaranju ATP-a?",
+    "answers": [
+      "mitohondrij"
+    ],
+    "explanation": "Mitohondriji stvaraju velik dio ATP-a aerobnim disanjem.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5249-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Televizija",
+    "focus": "Breaking Bad Walter White kemija",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koju je školsku nastavnu disciplinu predavao Walter White prije nego što se upustio u kriminal u seriji 'Breaking Bad'?",
+    "answers": [
+      "kemiju"
+    ],
+    "explanation": "Walter White bio je profesor kemije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5250-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Fizika",
+    "focus": "Newton jedinica sila",
+    "difficulty": 1,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Koja SI jedinica sile nosi ime engleskog fizičara koji je formulirao zakone gibanja?",
+    "answers": [
+      "njutn"
+    ],
+    "explanation": "Njutn (N) je SI jedinica sile.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton_(unit)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5251-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Pop kultura",
+    "focus": "Pokémon Pikachu električni",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji žuti Pokémon s crvenim obrazima koristi električne napade i prati Asha u animiranoj seriji?",
+    "answers": [
+      "Pikachu"
+    ],
+    "explanation": "Pikachu je električni Pokémon.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pikachu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
