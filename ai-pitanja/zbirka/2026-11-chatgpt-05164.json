@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5164-20261115",
+    "createdAt": "2026-11-15T11:44:37+01:00",
+    "updatedAt": "2026-11-15T11:44:37+01:00",
+    "topic": "Sport",
+    "focus": "košarkaški šut za tri poena",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko bodova u košarci vrijedi uspješan šut iza linije za tri poena?",
+    "answers": [
+      "3",
+      "Tri"
+    ],
+    "explanation": "Pogodak iza linije za tri poena vrijedi tri boda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Three-point_field_goal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
