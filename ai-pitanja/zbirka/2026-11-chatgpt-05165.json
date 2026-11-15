@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5165-20261115",
+    "createdAt": "2026-11-15T11:44:37+01:00",
+    "updatedAt": "2026-11-15T11:44:37+01:00",
+    "topic": "Književnost",
+    "focus": "roman Frankenstein Mary Shelley",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska književnica napisala roman 'Frankenstein' objavljen 1818. godine?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "explanation": "Mary Shelley autorica je romana Frankenstein.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frankenstein"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
