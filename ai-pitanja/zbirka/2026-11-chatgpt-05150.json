@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5150-20261115",
+    "createdAt": "2026-11-15T09:44:26+01:00",
+    "updatedAt": "2026-11-15T09:44:26+01:00",
+    "topic": "Pića",
+    "focus": "matcha japanski zeleni čaj prah",
+    "difficulty": 1,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se zove fino mljeveni japanski zeleni čaj čiji se prah umuti u vodi, a ne samo namače poput listića?",
+    "answers": [
+      "Matcha",
+      "Mača"
+    ],
+    "explanation": "Matcha je zeleni čaj u prahu koji se miješa s vodom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Matcha"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
