@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5157-20261115",
+    "createdAt": "2026-11-15T10:35:23+01:00",
+    "updatedAt": "2026-11-15T10:35:23+01:00",
+    "topic": "Biologija",
+    "focus": "klorofil pigment",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zove zeleni pigment kojim biljke apsorbiraju svjetlost potrebnu za fotosintezu?",
+    "answers": [
+      "Klorofil",
+      "Chlorophyll"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost i ključan je za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
