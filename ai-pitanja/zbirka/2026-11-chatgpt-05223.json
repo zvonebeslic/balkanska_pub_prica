@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5223-20261115",
+    "createdAt": "2026-11-15T17:35:39+01:00",
+    "updatedAt": "2026-11-15T17:35:39+01:00",
+    "topic": "Glazba",
+    "focus": "operna dionica Bohemian Rhapsody",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja Queenova pjesma iz 1975. spaja baladu, opernu dionicu i hard rock?",
+    "answers": [
+      "Bohemian Rhapsody",
+      "Boemska rapsodija"
+    ],
+    "explanation": "Pjesma Bohemian Rhapsody izmjenjuje više glazbenih stilova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
