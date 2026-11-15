@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5169-20261115",
+    "createdAt": "2026-11-15T11:44:37+01:00",
+    "updatedAt": "2026-11-15T11:44:37+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR code quick response",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Što označavaju slova QR u nazivu QR koda?",
+    "answers": [
+      "Quick Response",
+      "Brzi odgovor"
+    ],
+    "explanation": "QR je kratica za Quick Response.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
