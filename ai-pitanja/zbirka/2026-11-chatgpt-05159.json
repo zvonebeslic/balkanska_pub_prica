@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5159-20261115",
+    "createdAt": "2026-11-15T10:35:23+01:00",
+    "updatedAt": "2026-11-15T10:35:23+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR code Denso Wave",
+    "difficulty": 3,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja dvoslovna kratica označava dvodimenzionalni kod koji je 1994. razvila tvrtka Denso Wave?",
+    "answers": [
+      "QR",
+      "QR kod"
+    ],
+    "explanation": "QR je kratica od Quick Response.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
