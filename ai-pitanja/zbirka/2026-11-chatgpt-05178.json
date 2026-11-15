@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-5178-20261115",
+    "createdAt": "2026-11-15T12:43:16+01:00",
+    "updatedAt": "2026-11-15T12:43:16+01:00",
+    "topic": "Životinje",
+    "focus": "koala prehrana eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski tobolčar najveći dio prehrane temelji na listovima eukaliptusa?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koale se uglavnom hrane lišćem eukaliptusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
