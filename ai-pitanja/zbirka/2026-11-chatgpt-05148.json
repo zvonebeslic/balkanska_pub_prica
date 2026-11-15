@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5148-20261115",
+    "createdAt": "2026-11-15T09:44:26+01:00",
+    "updatedAt": "2026-11-15T09:44:26+01:00",
+    "topic": "Tehnologija",
+    "focus": "Morseova abeceda točke crtice",
+    "difficulty": 1,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Kojim se sustavom kratkih i dugih signala, odnosno točaka i crtica, tradicionalno prenose slova u telegrafiji?",
+    "answers": [
+      "Morseova abeceda",
+      "Morseov kod",
+      "Morse code"
+    ],
+    "explanation": "Morseov kod prikazuje znakove nizovima kratkih i dugih signala.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Morse_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
