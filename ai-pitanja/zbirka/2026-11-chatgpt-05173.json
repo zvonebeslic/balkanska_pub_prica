@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-5173-20261115",
+    "createdAt": "2026-11-15T12:43:16+01:00",
+    "updatedAt": "2026-11-15T12:43:16+01:00",
+    "topic": "Film",
+    "focus": "glumica Amélie Poulain",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koja francuska glumica tumači naslovnu junakinju filma 'Amélie' iz 2001.?",
+    "answers": [
+      "Audrey Tautou"
+    ],
+    "explanation": "Audrey Tautou glumi Amélie Poulain.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
