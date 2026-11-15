@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-5112-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie Space Oddity BBC Apollo 11",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koju je pjesmu Davida Bowieja BBC koristio tijekom televizijskog praćenja slijetanja Apolla 11 na Mjesec?",
+    "answers": [
+      "Space Oddity"
+    ],
+    "explanation": "BBC je tijekom prijenosa slijetanja Apolla 11 koristio Bowiejevu pjesmu objavljenu u srpnju 1969.",
+    "sources": [
+      "https://www.smithsonianmag.com/blogs/air-space-museum/2023/07/11/ground-control-to-major-tom-how-david-bowie-soundtracked-the-moon-landing/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5113-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Biologija",
+    "focus": "Jane Goodall Gombe uporaba alata čimpanze",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koje je životinje Jane Goodall promatrala u Gombeu kada je dokumentirala njihovu uporabu alata?",
+    "answers": [
+      "Čimpanze",
+      "Čimpanza",
+      "Chimpanzees"
+    ],
+    "explanation": "Goodall je u Tanzaniji istraživala divlje čimpanze i njihovo korištenje alata.",
+    "sources": [
+      "https://www.reuters.com/business/environment/wildlife-advocate-primate-expert-jane-goodall-dies-91-2025-10-01/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5114-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera retrogradna rotacija",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji se planet, poznat po iznimno gustoj atmosferi, oko svoje osi okreće u suprotnom smjeru od većine planeta?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Venera ima sporu retrogradnu rotaciju.",
+    "sources": [
+      "https://science.nasa.gov/venus/venus-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5115-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Atletika",
+    "focus": "Usain Bolt Berlin 2009 200 metara 19,19",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Za koliko je sekundi Usain Bolt pretrčao 200 metara kada je 2009. u Berlinu postavio svjetski rekord?",
+    "answers": [
+      "19,19",
+      "19.19",
+      "19,19 sekundi"
+    ],
+    "explanation": "Bolt je 2009. u Berlinu postavio rekord na 200 metara rezultatom 19,19 sekundi.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athletics-all-track-and-field-world-records-at-a-glance"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5116-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie pravo ime David Jones",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Pjevač poznat kao David Bowie rođen je s kojim prezimenom?",
+    "answers": [
+      "Jones",
+      "Džouns"
+    ],
+    "explanation": "David Bowie rođen je kao David Robert Jones.",
+    "sources": [
+      "https://www.davidbowie.com/about"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5117-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera temperatura toplija od Merkura",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji je planet topliji od Merkura iako je udaljeniji od Sunca?",
+    "answers": [
+      "Venera",
+      "Venus"
+    ],
+    "explanation": "Zbog snažnog stakleničkog učinka Venera je najtopliji planet.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/temperatures-across-our-solar-system/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5118-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt 100 metara 9,58 Berlin",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter 2009. u Berlinu istrčao 100 metara za 9,58 sekundi?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Usain Bolt postavio je svjetski rekord na 100 metara u Berlinu.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/jesse-owens-usain-bolt-evolution-100m-world-record"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5119-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Povijest znanosti",
+    "focus": "Jane Goodall početak Gombe istraživanja 1960",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine Jane Goodall započela svoje dugogodišnje istraživanje čimpanza u Gombeu?",
+    "answers": [
+      "1960",
+      "1960."
+    ],
+    "explanation": "Istraživanje divljih čimpanza u Gombeu započela je 1960. godine.",
+    "sources": [
+      "https://www.reuters.com/business/environment/wildlife-advocate-primate-expert-jane-goodall-dies-91-2025-10-01/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5120-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Glazba",
+    "focus": "Space Oddity astronaut Major Tom",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kako se zove izmišljeni astronaut iz Bowiejeve pjesme 'Space Oddity'?",
+    "answers": [
+      "Major Tom",
+      "Tom",
+      "Bojnik Tom"
+    ],
+    "explanation": "Glavni lik pjesme Space Oddity izmišljeni je astronaut Major Tom.",
+    "sources": [
+      "https://www.smithsonianmag.com/blogs/air-space-museum/2023/07/11/ground-control-to-major-tom-how-david-bowie-soundtracked-the-moon-landing/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5121-20261115",
+    "createdAt": "2026-11-15T06:39:01+01:00",
+    "updatedAt": "2026-11-15T06:39:01+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera Mariner 2 prvi prelet planeta 1962",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koja je NASA-ina letjelica 1962. prva uspješno proletjela pokraj drugog planeta?",
+    "answers": [
+      "Mariner 2",
+      "Mariner II"
+    ],
+    "explanation": "Mariner 2 proletio je pokraj Venere 14. prosinca 1962.",
+    "sources": [
+      "https://science.nasa.gov/venus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
