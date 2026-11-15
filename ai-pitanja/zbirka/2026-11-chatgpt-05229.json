@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5229-20261115",
+    "createdAt": "2026-11-15T17:35:39+01:00",
+    "updatedAt": "2026-11-15T17:35:39+01:00",
+    "topic": "Gastronomija",
+    "focus": "pinjoli u pestu alla genovese",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se orašasti plodovi tradicionalno dodaju bosiljku, češnjaku i siru u pesto alla genovese?",
+    "answers": [
+      "Pinjoli",
+      "Pinjol"
+    ],
+    "explanation": "Pinjoli su tradicionalan sastojak genovskog pesta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
