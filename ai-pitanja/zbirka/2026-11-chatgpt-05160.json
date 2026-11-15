@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5160-20261115",
+    "createdAt": "2026-11-15T10:35:23+01:00",
+    "updatedAt": "2026-11-15T10:35:23+01:00",
+    "topic": "Životinje",
+    "focus": "pingvin car najveća vrsta",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je najveća živuća vrsta pingvina, poznata po razmnožavanju tijekom antarktičke zime?",
+    "answers": [
+      "Carski pingvin",
+      "Car pingvin",
+      "Emperor penguin"
+    ],
+    "explanation": "Carski pingvin najveća je današnja vrsta pingvina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Emperor_penguin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
