@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5155-20261115",
+    "createdAt": "2026-11-15T10:35:23+01:00",
+    "updatedAt": "2026-11-15T10:35:23+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ autor",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski književnik napisao 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Antoine de Saint Exupery",
+      "Saint-Exupéry"
+    ],
+    "explanation": "Antoine de Saint-Exupéry autor je pripovijesti Mali princ.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
