@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5230-20261115",
+    "createdAt": "2026-11-15T17:35:39+01:00",
+    "updatedAt": "2026-11-15T17:35:39+01:00",
+    "topic": "Astronomija",
+    "focus": "retrogradna rotacija Venere",
+    "difficulty": 2,
+    "styleId": 41,
+    "styleDescription": "Objasni pogrešno uvriježeni naziv i pitaj za ispravan",
+    "question": "Na kojem planetu Sunce prividno izlazi na zapadu zbog retrogradne rotacije?",
+    "answers": [
+      "Venera",
+      "Veneri",
+      "Venus"
+    ],
+    "explanation": "Venera se okreće u smjeru suprotnom od Zemlje.",
+    "sources": [
+      "https://spaceplace.nasa.gov/all-about-venus/en/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
