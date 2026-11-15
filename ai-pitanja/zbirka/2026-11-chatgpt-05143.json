@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-5143-20261115",
+    "createdAt": "2026-11-15T09:44:26+01:00",
+    "updatedAt": "2026-11-15T09:44:26+01:00",
+    "topic": "Film",
+    "focus": "Grand Budapest Hotel redatelj Wes Anderson",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je režirao film 'The Grand Budapest Hotel' iz 2014., poznat po simetričnim kadrovima i osebujnim bojama?",
+    "answers": [
+      "Wes Anderson"
+    ],
+    "explanation": "Wes Anderson redatelj je filma 'The Grand Budapest Hotel'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
