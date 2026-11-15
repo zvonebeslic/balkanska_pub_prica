@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-5179-20261115",
+    "createdAt": "2026-11-15T12:43:16+01:00",
+    "updatedAt": "2026-11-15T12:43:16+01:00",
+    "topic": "Tehnologija",
+    "focus": "programski jezik Python Guido van Rossum",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je programski jezik krajem 1980-ih počeo razvijati Guido van Rossum?",
+    "answers": [
+      "Python"
+    ],
+    "explanation": "Guido van Rossum stvorio je Python.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Python_(programming_language)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
