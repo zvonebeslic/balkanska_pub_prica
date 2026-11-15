@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5176-20261115",
+    "createdAt": "2026-11-15T12:43:16+01:00",
+    "updatedAt": "2026-11-15T12:43:16+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Mongolije",
+    "difficulty": 2,
+    "styleId": 45,
+    "styleDescription": "Opiši stari naziv grada, traži državu",
+    "question": "U kojem se glavnom gradu Mongolije nalazi trg Sükhbaatar?",
+    "answers": [
+      "Ulan Bator",
+      "Ulaanbaatar",
+      "Ulan-Bator"
+    ],
+    "explanation": "Trg Sükhbaatar nalazi se u Ulaanbaataru.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/S%C3%BCkhbaatar_Square"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
