@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5227-20261115",
+    "createdAt": "2026-11-15T17:35:39+01:00",
+    "updatedAt": "2026-11-15T17:35:39+01:00",
+    "topic": "Književnost",
+    "focus": "Shelob pauk Gospodar prstenova",
+    "difficulty": 3,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove golema paučica koja napada Froda na putu prema Mordoru?",
+    "answers": [
+      "Shelob",
+      "Šeloba",
+      "Šelob"
+    ],
+    "explanation": "Shelob je golema paučica iz Tolkienova Gospodara prstenova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
