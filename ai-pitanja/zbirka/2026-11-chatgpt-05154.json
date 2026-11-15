@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5154-20261115",
+    "createdAt": "2026-11-15T10:35:23+01:00",
+    "updatedAt": "2026-11-15T10:35:23+01:00",
+    "topic": "Film",
+    "focus": "Matrix Neo glumac",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je glumac utjelovio Nea u filmskoj trilogiji 'Matrix'?",
+    "answers": [
+      "Keanu Reeves",
+      "Reeves"
+    ],
+    "explanation": "Keanu Reeves glumio je Thomasa Andersona, poznatog kao Neo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
