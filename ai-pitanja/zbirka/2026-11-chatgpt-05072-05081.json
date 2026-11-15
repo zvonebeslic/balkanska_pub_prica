@@ -1,0 +1,238 @@
+[
+  {
+    "id": "chatgpt10000-5072-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Glazba",
+    "focus": "Aretha Franklin nadimak kraljica soula",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koja je američka pjevačica poznata pod nadimkom 'Kraljica soula', a proslavila je pjesmu 'Respect'?",
+    "answers": [
+      "Aretha Franklin",
+      "Areta Frenklin"
+    ],
+    "explanation": "Aretha Franklin proslavila se snažnim soul vokalom i izvedbom pjesme Respect.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aretha_Franklin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5073-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Književnost",
+    "focus": "Agatha Christie belgijski detektiv Poirot",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska spisateljica stvorila belgijskog detektiva Herculea Poirota?",
+    "answers": [
+      "Agatha Christie",
+      "Agata Kristi"
+    ],
+    "explanation": "Hercule Poirot jedan je od najpoznatijih likova kriminalističkih romana Agathe Christie.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Agatha_Christie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5074-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Životinje",
+    "focus": "čudnovati kljunaš polaže jaja",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima kljun nalik pačjem i, za razliku od većine sisavaca, polaže jaja?",
+    "answers": [
+      "čudnovati kljunaš",
+      "kljunaš",
+      "platipus"
+    ],
+    "explanation": "Čudnovati kljunaš pripada jednootvorima, skupini sisavaca koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5075-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Povijest",
+    "focus": "kamen iz Rosette hijeroglifi",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je arheološki nalaz s tekstom na trima pismima bio ključan za dešifriranje egipatskih hijeroglifa?",
+    "answers": [
+      "Kamen iz Rosette",
+      "Rozetski kamen",
+      "Rosetta Stone"
+    ],
+    "explanation": "Kamen iz Rosette sadrži isti dekret zapisan hijeroglifima, demotskim i grčkim pismom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rosetta_Stone"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5076-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Astronomija",
+    "focus": "Olympus Mons vulkan na Marsu",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se planetu nalazi Olympus Mons, golemi vulkan viši od Mount Everesta?",
+    "answers": [
+      "Mars",
+      "Marsu"
+    ],
+    "explanation": "Olympus Mons najveći je poznati vulkan Sunčeva sustava i nalazi se na Marsu.",
+    "sources": [
+      "https://science.nasa.gov/resource/odysseys-themis-views-olympus-mons/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5077-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Kemija",
+    "focus": "Marie Curie radij i polonij",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je znanstvenica sa suprugom Pierreom otkrila polonij i radij?",
+    "answers": [
+      "Marie Curie",
+      "Marija Curie",
+      "Marija Sklodowska Curie"
+    ],
+    "explanation": "Marie i Pierre Curie otkrili su polonij i radij 1898. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Marie_Curie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5078-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Književnost",
+    "focus": "Franz Kafka Preobrazba Gregor Samsa",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U čijoj se pripovijetki 'Preobrazba' Gregor Samsa jednog jutra budi preobražen u golema kukca?",
+    "answers": [
+      "Franz Kafka",
+      "Kafka"
+    ],
+    "explanation": "Preobrazba je jedno od najpoznatijih djela Franza Kafke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Metamorphosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5079-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bajkalsko jezero najdublje",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koje sibirsko jezero drži rekord najdubljeg slatkovodnog jezera na svijetu?",
+    "answers": [
+      "Bajkalsko jezero",
+      "Bajkal",
+      "Baikal"
+    ],
+    "explanation": "Bajkalsko jezero u Rusiji najdublje je jezero na Zemlji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lake_Baikal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5080-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Film",
+    "focus": "Alfred Hitchcock Psiho 1960",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je redatelj snimio triler 'Psiho' iz 1960., poznat po sceni pod tušem?",
+    "answers": [
+      "Alfred Hitchcock",
+      "Hičkok",
+      "Hitchcock"
+    ],
+    "explanation": "Alfred Hitchcock režirao je film Psycho iz 1960.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Psycho_(1960_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5081-20261115",
+    "createdAt": "2026-11-15T02:40:14+01:00",
+    "updatedAt": "2026-11-15T02:40:14+01:00",
+    "topic": "Sport",
+    "focus": "Michael Jordan Chicago Bulls šest naslova",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je košarkaš s Chicago Bullsima osvojio šest NBA naslova tijekom 1990-ih?",
+    "answers": [
+      "Michael Jordan",
+      "Majkl Džordan",
+      "Jordan"
+    ],
+    "explanation": "Michael Jordan osvojio je šest NBA prvenstava s Chicago Bullsima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Michael_Jordan"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
