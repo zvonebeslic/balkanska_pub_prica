@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5222-20261115",
+    "createdAt": "2026-11-15T17:35:39+01:00",
+    "updatedAt": "2026-11-15T17:35:39+01:00",
+    "topic": "Film",
+    "focus": "Chihiro ime djevojčice u Spirited Away",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove djevojčica koja u animiranom filmu 'Spirited Away' dospijeva u svijet duhova?",
+    "answers": [
+      "Chihiro",
+      "Čihiro",
+      "Chihiro Ogino"
+    ],
+    "explanation": "Glavna junakinja filma je Chihiro Ogino.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
