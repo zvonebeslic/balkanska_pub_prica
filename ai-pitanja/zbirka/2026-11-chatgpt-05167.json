@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5167-20261115",
+    "createdAt": "2026-11-15T11:44:37+01:00",
+    "updatedAt": "2026-11-15T11:44:37+01:00",
+    "topic": "Kemija",
+    "focus": "natrij simbol Na",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol Na i sastavni je dio kuhinjske soli?",
+    "answers": [
+      "Natrij",
+      "Sodium"
+    ],
+    "explanation": "Na je simbol natrija, a kuhinjska sol je natrijev klorid.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
