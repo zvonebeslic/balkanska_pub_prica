@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-5231-20261115",
+    "createdAt": "2026-11-15T17:35:39+01:00",
+    "updatedAt": "2026-11-15T17:35:39+01:00",
+    "topic": "Atletika",
+    "focus": "Bolt 9,58 Berlin 2009",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter 2009. u Berlinu istrčao 100 metara za 9,58 sekundi?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt",
+      "Jusein Bolt"
+    ],
+    "explanation": "Usain Bolt postavio je svjetski rekord na 100 metara u Berlinu.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/from-jesse-owens-to-usain-bolt-evolution-100m-world-record"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
