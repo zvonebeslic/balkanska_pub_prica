@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-5232-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO naziv leg godt",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji danski proizvođač igračaka ime duguje izrazu 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO"
+    ],
+    "explanation": "Ime LEGO izvedeno je iz danskih riječi leg godt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5233-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Sport",
+    "focus": "šahovska figura skakač",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Koja se šahovska figura kreće u obliku slova L i jedina može preskakati druge figure?",
+    "answers": [
+      "skakač"
+    ],
+    "explanation": "Skakač se kreće dva polja u jednom smjeru i jedno okomito.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Knight_(chess)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5234-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Glazba",
+    "focus": "Nirvana album Nevermind",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Na omotu albuma 'Nevermind' iz 1991. beba pliva prema novčanici. Koji ga je rock-sastav objavio?",
+    "answers": [
+      "Nirvana"
+    ],
+    "explanation": "Nevermind je drugi studijski album Nirvane.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nevermind"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5235-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Film",
+    "focus": "Forrest Gump glumac Tom Hanks",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je glumio naslovnog junaka filma 'Forrest Gump' iz 1994. godine?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Tom Hanks tumačio je Forresta Gumpa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5236-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom riječ",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Palindrom zadržava isti redoslijed znakova pri obrnutom čitanju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5237-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lesoto enklava Južna Afrika",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja je afrička država sa svih strana okružena Južnoafričkom Republikom?",
+    "answers": [
+      "Lesoto"
+    ],
+    "explanation": "Lesoto je enklavska država unutar Južnoafričke Republike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lesotho"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5238-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija oči",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Koja se grana medicine bavi dijagnostikom i liječenjem bolesti očiju?",
+    "answers": [
+      "oftalmologija"
+    ],
+    "explanation": "Oftalmologija je medicinska specijalnost posvećena očima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5239-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Gastronomija",
+    "focus": "guacamole avokado",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje je voće glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "avokado"
+    ],
+    "explanation": "Guacamole se tradicionalno priprema od zgnječenog avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5240-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Tehnologija",
+    "focus": "JPEG kratica fotografije",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja se četveroslovna kratica koristi za popularan format komprimiranih digitalnih fotografija, nazvan po skupini stručnjaka koja ga je razvila?",
+    "answers": [
+      "JPEG"
+    ],
+    "explanation": "JPEG znači Joint Photographic Experts Group.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/JPEG"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-5241-20261115",
+    "createdAt": "2026-11-15T18:41:13+01:00",
+    "updatedAt": "2026-11-15T18:41:13+01:00",
+    "topic": "Životinje",
+    "focus": "aksolotl regeneracija udova",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac može obnoviti izgubljene udove, a često cijeli život zadržava vanjske škrge?",
+    "answers": [
+      "aksolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po neoteniji i regeneraciji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
