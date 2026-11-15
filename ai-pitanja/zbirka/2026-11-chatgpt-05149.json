@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5149-20261115",
+    "createdAt": "2026-11-15T09:44:26+01:00",
+    "updatedAt": "2026-11-15T09:44:26+01:00",
+    "topic": "Sport",
+    "focus": "Paavo Nurmi leteći Finac devet zlata",
+    "difficulty": 3,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je finski dugoprugaš, poznat kao 'Leteći Finac', osvojio devet olimpijskih zlatnih medalja tijekom 1920-ih?",
+    "answers": [
+      "Paavo Nurmi",
+      "Nurmi"
+    ],
+    "explanation": "Paavo Nurmi osvojio je devet olimpijskih zlata u atletici.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paavo_Nurmi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
