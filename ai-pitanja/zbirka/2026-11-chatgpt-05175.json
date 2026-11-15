@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-5175-20261115",
+    "createdAt": "2026-11-15T12:43:16+01:00",
+    "updatedAt": "2026-11-15T12:43:16+01:00",
+    "topic": "Književnost",
+    "focus": "roman Proces Josef K",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je pisac stvorio Josefa K., junaka romana 'Proces'?",
+    "answers": [
+      "Franz Kafka",
+      "Kafka"
+    ],
+    "explanation": "Josef K. glavni je lik Kafkina romana Proces.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Trial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
