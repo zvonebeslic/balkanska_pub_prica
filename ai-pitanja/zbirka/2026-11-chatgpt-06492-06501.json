@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-6492-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Glazba",
+    "focus": "Gloria Gaynor I Will Survive",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je američka pjevačica proslavila disko hit 'I Will Survive' iz 1978.?",
+    "answers": [
+      "Gloria Gaynor",
+      "Gaynor"
+    ],
+    "explanation": "Gloria Gaynor izvela je disko klasik 'I Will Survive'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/I_Will_Survive"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6493-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps plivanje 23 olimpijska zlata",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je američki plivač tijekom karijere osvojio čak 23 olimpijske zlatne medalje?",
+    "answers": [
+      "Michael Phelps",
+      "Phelps"
+    ],
+    "explanation": "Michael Phelps osvojio je 23 olimpijska zlata.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Michael_Phelps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6494-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Film",
+    "focus": "Forrest Gump kutija čokoladnih bombona",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojem filmu iz 1994. naslovni junak uspoređuje život s kutijom čokoladnih bombona?",
+    "answers": [
+      "Forrest Gump"
+    ],
+    "explanation": "Poznata usporedba izgovorena je u filmu 'Forrest Gump'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6495-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Književnost",
+    "focus": "Gavran Edgar Allan Poe",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je američki književnik napisao pjesmu 'Gavran', poznatu po ponavljanju riječi 'Nevermore'?",
+    "answers": [
+      "Edgar Allan Poe",
+      "Poe"
+    ],
+    "explanation": "Edgar Allan Poe objavio je pjesmu 'The Raven' 1845.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Raven"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6496-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Zemljopis",
+    "focus": "Madagaskar Mozambički kanal",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji veliki otok od istočne obale Afrike odvaja Mozambički kanal?",
+    "answers": [
+      "Madagaskar",
+      "Madagascar"
+    ],
+    "explanation": "Mozambički kanal odvaja Madagaskar od afričkog kopna.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mozambique_Channel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6497-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Kemija",
+    "focus": "Helij baloni",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se plemeniti plin često koristi za punjenje balona koji lebde, jer je lakši od zraka i nezapaljiv?",
+    "answers": [
+      "Helij",
+      "Helium"
+    ],
+    "explanation": "Helij je lakši od zraka i ne gori.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Helium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6498-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Televizija",
+    "focus": "Friends Central Perk",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "U kojem se njujorškom kafiću često sastaju likovi serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk izmišljeni je kafić iz serije 'Friends'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Central_Perk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6499-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Djevojka s bisernom naušnicom Vermeer",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar autor slike 'Djevojka s bisernom naušnicom'?",
+    "answers": [
+      "Johannes Vermeer",
+      "Vermeer"
+    ],
+    "explanation": "Johannes Vermeer naslikao je 'Djevojku s bisernom naušnicom'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6500-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Medicina",
+    "focus": "Stetoskop slušanje srca",
+    "difficulty": 1,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Kako se zove medicinski instrument kojim liječnik sluša otkucaje srca i zvukove disanja?",
+    "answers": [
+      "Stetoskop"
+    ],
+    "explanation": "Stetoskop služi auskultaciji srca i pluća.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stethoscope"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6501-20261116",
+    "createdAt": "2026-11-16T20:37:47+01:00",
+    "updatedAt": "2026-11-16T20:37:47+01:00",
+    "topic": "Gastronomija",
+    "focus": "Hummus slanutak",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavni sastojak namaza hummus, uz tahini, limun i češnjak?",
+    "answers": [
+      "Slanutak",
+      "čičerika",
+      "leblebija"
+    ],
+    "explanation": "Hummus se tradicionalno priprema od kuhanog slanutka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
