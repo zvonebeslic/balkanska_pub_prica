@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-6342-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Umjetnost",
+    "focus": "Picasso Guernica",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski slikar naslikao 'Guernicu' 1937. godine?",
+    "answers": [
+      "Pablo Picasso"
+    ],
+    "explanation": "Točan odgovor: Pablo Picasso.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6343-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine pao Berlinski zid?",
+    "answers": [
+      "1989."
+    ],
+    "explanation": "Točan odgovor: 1989..",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6344-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Životinje",
+    "focus": "koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Lišćem kojeg stabla uglavnom se hrani australska koala?",
+    "answers": [
+      "Eukaliptus"
+    ],
+    "explanation": "Točan odgovor: Eukaliptus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6345-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Tehnologija",
+    "focus": "Linux Linus Torvalds",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je finski programer pokrenuo razvoj jezgre Linuxa 1991. godine?",
+    "answers": [
+      "Linus Torvalds"
+    ],
+    "explanation": "Točan odgovor: Linus Torvalds.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Linus_Torvalds"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6346-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako se naziva riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Točan odgovor: Palindrom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6347-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Medicina",
+    "focus": "inzulin gušterača",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji organ proizvodi hormon inzulin?",
+    "answers": [
+      "Gušterača"
+    ],
+    "explanation": "Točan odgovor: Gušterača.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pancreas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6348-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Glazba",
+    "focus": "Adele Rolling in the Deep",
+    "difficulty": 1,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je britanska pjevačica objavila pjesmu 'Rolling in the Deep'?",
+    "answers": [
+      "Adele"
+    ],
+    "explanation": "Točan odgovor: Adele.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rolling_in_the_Deep"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6349-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Sport",
+    "focus": "tenis Wimbledon trava",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na kojoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava"
+    ],
+    "explanation": "Točan odgovor: Trava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6350-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Fizika",
+    "focus": "Isaac Newton gravitacija",
+    "difficulty": 1,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji se engleski fizičar povezuje sa zakonom univerzalne gravitacije?",
+    "answers": [
+      "Isaac Newton"
+    ],
+    "explanation": "Točan odgovor: Isaac Newton.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isaac_Newton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6351-20261116",
+    "createdAt": "2026-11-16T03:39:10+01:00",
+    "updatedAt": "2026-11-16T03:39:10+01:00",
+    "topic": "Brendovi",
+    "focus": "Lego Danska",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Iz koje europske države potječe proizvođač igračaka LEGO?",
+    "answers": [
+      "Danska"
+    ],
+    "explanation": "Točan odgovor: Danska.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
