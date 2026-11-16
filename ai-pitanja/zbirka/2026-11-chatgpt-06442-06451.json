@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-6442-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Glazba",
+    "focus": "Daft Punk album Random Access Memories",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je francuski elektronički duo objavio album 'Random Access Memories' s hitom 'Get Lucky'?",
+    "answers": [
+      "Daft Punk"
+    ],
+    "explanation": "Album je objavljen 2013.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Random_Access_Memories"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6443-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Nogomet",
+    "focus": "Luka Modrić Zlatna lopta 2018",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je hrvatski veznjak osvojio Zlatnu loptu 2018. godine?",
+    "answers": [
+      "Luka Modrić",
+      "Modrić",
+      "Luka Modric"
+    ],
+    "explanation": "Modrić je 2018. osvojio Ballon d'Or.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/2018_Ballon_d%27Or"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6444-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Film",
+    "focus": "Spirited Away Studio Ghibli",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "U kojem animiranom filmu djevojčica Chihiro završava u svijetu duhova i radi u kupalištu?",
+    "answers": [
+      "Spirited Away",
+      "Avanture male Chihiro",
+      "Sen to Chihiro no kamikakushi"
+    ],
+    "explanation": "Film je režirao Hayao Miyazaki.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6445-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Književnost",
+    "focus": "George Orwell Životinjska farma",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao alegorijski roman 'Životinjska farma', u kojem životinje preuzimaju vlast na farmi?",
+    "answers": [
+      "George Orwell",
+      "Orwell",
+      "Eric Arthur Blair"
+    ],
+    "explanation": "Orwell je roman objavio 1945.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Animal_Farm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6446-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka Dunav Budimpešta",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja velika europska rijeka dijeli Budimpeštu na Budim i Peštu?",
+    "answers": [
+      "Dunav",
+      "Danube"
+    ],
+    "explanation": "Dunav protječe kroz mađarski glavni grad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Budapest"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6447-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Kemija",
+    "focus": "bakar kemijski simbol Cu",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal, često korišten za električne vodiče, u periodnom sustavu ima simbol Cu?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Simbol Cu potječe od latinskog cuprum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6448-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Životinje",
+    "focus": "pingvin car najveća vrsta",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je najveća danas živuća vrsta pingvina, poznata po razmnožavanju tijekom antarktičke zime?",
+    "answers": [
+      "Carski pingvin",
+      "Emperor penguin"
+    ],
+    "explanation": "Carski pingvin najveći je živući pingvin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Emperor_penguin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6449-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Nintendo Game Boy 1989",
+    "difficulty": 2,
+    "styleId": 84,
+    "styleDescription": "Opiši omiljen dječji predmet preko godine nastanka",
+    "question": "Koju je Nintendovu prijenosnu igraću konzolu, predstavljenu 1989., proslavila i igra Tetris?",
+    "answers": [
+      "Game Boy",
+      "Nintendo Game Boy"
+    ],
+    "explanation": "Game Boy je predstavljen 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Game_Boy"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6450-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Salvador Dalí Postojanost pamćenja",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Na kojoj se slici Salvadora Dalíja iz 1931. pojavljuju poznati meki, rastopljeni satovi?",
+    "answers": [
+      "Postojanost pamćenja",
+      "The Persistence of Memory"
+    ],
+    "explanation": "Nadrealistička slika nastala je 1931.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Persistence_of_Memory"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6451-20261116",
+    "createdAt": "2026-11-16T15:55:00+01:00",
+    "updatedAt": "2026-11-16T15:55:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "mozzarella mlijeko bivolica",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Od mlijeka koje se životinje tradicionalno proizvodi mozzarella di bufala?",
+    "answers": [
+      "Bivolica",
+      "Vodeni bivol",
+      "Bivolice"
+    ],
+    "explanation": "Mozzarella di bufala proizvodi se od mlijeka vodenih bivolica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Buffalo_mozzarella"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
