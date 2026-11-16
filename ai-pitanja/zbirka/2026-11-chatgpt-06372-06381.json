@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-6372-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA Waterloo 1974",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koja je švedska grupa pobijedila na Eurosongu 1974. pjesmom 'Waterloo'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "Pobjeda u Brightonu otvorila je put međunarodnom uspjehu grupe.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Waterloo_(ABBA_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6373-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Film",
+    "focus": "Jurski park Spielberg",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je redatelj snimio i 'E.T.-ja' i 'Jurski park'?",
+    "answers": [
+      "Steven Spielberg"
+    ],
+    "explanation": "Spielberg je režirao oba poznata filma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Steven_Spielberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6374-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Sport",
+    "focus": "Tenis Roland Garros podloga",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kakvoj se podlozi igra teniski Grand Slam Roland-Garros?",
+    "answers": [
+      "Zemlja"
+    ],
+    "explanation": "Roland-Garros poznat je po zemljanim terenima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_Open"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6375-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ Saint Exupery",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski pisac i pilot autor 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "explanation": "Mali princ prvi je put objavljen 1943. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6376-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Zemljopis",
+    "focus": "Ljubljana rijeka Ljubljanica",
+    "difficulty": 2,
+    "styleId": 48,
+    "styleDescription": "Poveži poznatu rijeku s manje poznatim pritokom",
+    "question": "Koja rijeka protječe kroz središte Ljubljane i ispod njezinih poznatih mostova?",
+    "answers": [
+      "Ljubljanica"
+    ],
+    "explanation": "Ljubljanica prolazi kroz slovensku prijestolnicu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljanica"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6377-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Kemija",
+    "focus": "Srebro simbol Ag",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element, čest u nakitu, nosi simbol Ag?",
+    "answers": [
+      "Srebro"
+    ],
+    "explanation": "Simbol Ag potječe od latinskog naziva argentum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6378-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Biologija",
+    "focus": "Mitohondrij ATP",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji stanični organel često nazivamo 'elektranom stanice' jer sudjeluje u proizvodnji ATP-a?",
+    "answers": [
+      "Mitohondrij"
+    ],
+    "explanation": "Mitohondriji imaju važnu ulogu u staničnom disanju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6379-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Televizija",
+    "focus": "Prijatelji Central Perk",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove kafić u kojem se često okuplja šest glavnih likova serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk jedno je od najprepoznatljivijih mjesta u seriji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6380-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Gastronomija",
+    "focus": "Pesto bosiljak",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je aromatična zelena biljka glavni sastojak klasičnog genovskog pesta?",
+    "answers": [
+      "Bosiljak"
+    ],
+    "explanation": "Pesto alla genovese tradicionalno se priprema s bosiljkom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6381-20261116",
+    "createdAt": "2026-11-16T06:36:27+01:00",
+    "updatedAt": "2026-11-16T06:36:27+01:00",
+    "topic": "Povijest",
+    "focus": "Berlinski zid 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, simbolično označivši kraj podjele grada?",
+    "answers": [
+      "1989."
+    ],
+    "explanation": "Pad Berlinskog zida dogodio se 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
