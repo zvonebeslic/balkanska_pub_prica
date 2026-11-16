@@ -1,0 +1,120 @@
+[
+  {
+    "id": "chatgpt10000-6422-20261116",
+    "createdAt": "2026-11-16T14:04:53+01:00",
+    "updatedAt": "2026-11-16T14:04:53+01:00",
+    "topic": "Astronomija",
+    "focus": "Olympus Mons najveći vulkan",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji se golemi vulkan na Marsu smatra najvećim poznatim vulkanom Sunčeva sustava?",
+    "answers": [
+      "Olympus Mons",
+      "Olimp Mons"
+    ],
+    "explanation": "Olympus Mons je golemi štitasti vulkan na Marsu.",
+    "sources": [
+      "https://www.jpl.nasa.gov/images/pia00300-olympus-mons/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6423-20261116",
+    "createdAt": "2026-11-16T14:04:53+01:00",
+    "updatedAt": "2026-11-16T14:04:53+01:00",
+    "topic": "Astronomija",
+    "focus": "Olympus Mons planet",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem planetu nalazi se vulkan Olympus Mons?",
+    "answers": [
+      "Mars",
+      "Na Marsu"
+    ],
+    "explanation": "Olympus Mons nalazi se na Marsu.",
+    "sources": [
+      "https://science.nasa.gov/photojournal/olympus-mons/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6424-20261116",
+    "createdAt": "2026-11-16T14:04:53+01:00",
+    "updatedAt": "2026-11-16T14:04:53+01:00",
+    "topic": "Astronomija",
+    "focus": "Olympus Mons tip vulkana",
+    "difficulty": 3,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Olympus Mons nastao je izlijevanjem razmjerno tekuće lave i ima široke blage padine. Kojoj vrsti vulkana pripada?",
+    "answers": [
+      "Štitasti vulkan",
+      "Štitastom vulkanu",
+      "Štitasti"
+    ],
+    "explanation": "Olympus Mons je štitasti vulkan.",
+    "sources": [
+      "https://science.nasa.gov/image-article/apod-1997-september-15-olympus-mons-on-mars-the-largest-volcano/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6425-20261116",
+    "createdAt": "2026-11-16T14:04:53+01:00",
+    "updatedAt": "2026-11-16T14:04:53+01:00",
+    "topic": "Sport",
+    "focus": "svjetski rekord 100 metara 9.58",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko je sekundi iznosio Boltov svjetski rekord na 100 metara postavljen 2009. u Berlinu?",
+    "answers": [
+      "9,58",
+      "9.58",
+      "9,58 sekundi"
+    ],
+    "explanation": "Usain Bolt istrčao je 100 metara za 9,58 sekundi.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athletics-all-track-and-field-world-records-at-a-glance"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6426-20261116",
+    "createdAt": "2026-11-16T14:04:53+01:00",
+    "updatedAt": "2026-11-16T14:04:53+01:00",
+    "topic": "Sport",
+    "focus": "svjetski rekord 200 metara 19.19",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Na Svjetskom prvenstvu 2009. Bolt je postavio i rekord na 200 metara. Koliko je iznosio?",
+    "answers": [
+      "19,19",
+      "19.19",
+      "19,19 sekundi"
+    ],
+    "explanation": "Svjetski rekord na 200 metara iznosi 19,19 sekundi.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/athletics-all-track-and-field-world-records-at-a-glance"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
