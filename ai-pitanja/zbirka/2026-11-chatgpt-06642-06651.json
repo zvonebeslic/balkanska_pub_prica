@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-6642-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Jolene Dolly Parton",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je američka country pjevačica 1973. snimila pjesmu 'Jolene'?",
+    "answers": [
+      "Dolly Parton"
+    ],
+    "explanation": "Pjesmu 'Jolene' napisala je i snimila Dolly Parton.",
+    "sources": [
+      "https://www.britannica.com/biography/Dolly-Parton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6643-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Sport",
+    "focus": "olimpijski simbol pet krugova",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koliko međusobno povezanih krugova čini olimpijski simbol?",
+    "answers": [
+      "5",
+      "Pet"
+    ],
+    "explanation": "Olimpijski simbol sastoji se od pet povezanih krugova.",
+    "sources": [
+      "https://olympics.com/ioc/olympic-rings"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6644-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Film",
+    "focus": "film Amelie glavni lik",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove francuski film iz 2001. u kojem Audrey Tautou glumi maštovitu parišku konobaricu?",
+    "answers": [
+      "Amélie",
+      "Amelie"
+    ],
+    "explanation": "Film 'Amélie' režirao je Jean-Pierre Jeunet.",
+    "sources": [
+      "https://www.britannica.com/topic/Amelie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6645-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Književnost",
+    "focus": "roman Životinjska farma Orwell",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je britanski pisac u alegorijskom romanu 'Životinjska farma' prikazao pobunu domaćih životinja?",
+    "answers": [
+      "George Orwell",
+      "Orwell"
+    ],
+    "explanation": "George Orwell autor je 'Životinjske farme'.",
+    "sources": [
+      "https://www.britannica.com/biography/George-Orwell"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6646-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Zemljopis",
+    "focus": "planina Kilimandžaro Tanzanija",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se afričkoj državi uzdiže Kilimandžaro, najviša planina kontinenta?",
+    "answers": [
+      "Tanzanija",
+      "Tanzania"
+    ],
+    "explanation": "Kilimandžaro se nalazi u Tanzaniji.",
+    "sources": [
+      "https://www.britannica.com/place/Mount-Kilimanjaro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6647-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza oslobađanje kisika",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji plin biljke oslobađaju tijekom fotosinteze, a potreban nam je za disanje?",
+    "answers": [
+      "Kisik",
+      "Oxygen"
+    ],
+    "explanation": "Fotosinteza uz korištenje svjetlosti može oslobađati kisik.",
+    "sources": [
+      "https://www.britannica.com/science/photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6648-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth ime Harald Plavozubi",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je povijesnom danskom kralju nazvana bežična tehnologija Bluetooth?",
+    "answers": [
+      "Harald Plavozubi",
+      "Harald Bluetooth",
+      "Harald I."
+    ],
+    "explanation": "Naziv Bluetooth potječe od nadimka kralja Haralda Bluetootha.",
+    "sources": [
+      "https://www.bluetooth.com/about-us/bluetooth-origin/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6649-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Astronomija",
+    "focus": "planet Mars Olympus Mons",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem se planetu nalazi Olympus Mons, jedan od najvećih vulkana Sunčeva sustava?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Olympus Mons golemi je štitasti vulkan na Marsu.",
+    "sources": [
+      "https://science.nasa.gov/mars/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6650-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Gastronomija",
+    "focus": "japansko jelo sushi riža",
+    "difficulty": 1,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Koje japansko jelo prepoznajemo po posebno pripremljenoj zakiseljenoj riži, često posluženoj uz ribu?",
+    "answers": [
+      "Sushi",
+      "Suši"
+    ],
+    "explanation": "Temelj sushija je zakiseljena riža.",
+    "sources": [
+      "https://www.britannica.com/topic/sushi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6651-20261117",
+    "createdAt": "2026-11-17T11:38:06+01:00",
+    "updatedAt": "2026-11-17T11:38:06+01:00",
+    "topic": "Umjetnost",
+    "focus": "slika Zvjezdana noć Van Gogh",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar 1889. naslikao 'Zvjezdanu noć', s vrtložnim noćnim nebom?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "'Zvjezdana noć' nastala je 1889. godine.",
+    "sources": [
+      "https://www.moma.org/collection/works/79802"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
