@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-6632-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Televizija",
+    "focus": "serija The Office Dunder Mifflin",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koja se američka humoristična serija odvija u podružnici izmišljene papirne tvrtke Dunder Mifflin?",
+    "answers": [
+      "The Office",
+      "Ured"
+    ],
+    "explanation": "Dunder Mifflin središnja je tvrtka američke serije The Office.",
+    "sources": [
+      "https://www.britannica.com/topic/The-Office-American-television-series"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6633-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Sport",
+    "focus": "košarkaški šut za tri poena",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Koliko bodova vrijedi uspješan koš postignut iza linije za tri poena?",
+    "answers": [
+      "3",
+      "Tri"
+    ],
+    "explanation": "Koš izvan linije za tri poena vrijedi tri boda.",
+    "sources": [
+      "https://www.britannica.com/sports/basketball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6634-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom naziv",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom se jednako čita u oba smjera.",
+    "sources": [
+      "https://www.britannica.com/art/palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6635-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Glazba",
+    "focus": "pjevač grupe U2 Bono",
+    "difficulty": 1,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji irski pjevač, pravim imenom Paul Hewson, predvodi rock-sastav U2?",
+    "answers": [
+      "Bono",
+      "Bono Vox"
+    ],
+    "explanation": "Paul David Hewson poznat je pod umjetničkim imenom Bono.",
+    "sources": [
+      "https://www.britannica.com/biography/Bono"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6636-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Film",
+    "focus": "film Jurski park redatelj",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je redatelj snimio film 'Jurski park' iz 1993. i 'Ralje' iz 1975.?",
+    "answers": [
+      "Steven Spielberg",
+      "Stiven Spilberg"
+    ],
+    "explanation": "Oba filma režirao je Steven Spielberg.",
+    "sources": [
+      "https://www.britannica.com/biography/Steven-Spielberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6637-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Zemljopis",
+    "focus": "država glavni grad Reykjavík",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja otočna država ima glavni grad Reykjavík i nalazi se na srednjoatlantskom hrptu?",
+    "answers": [
+      "Island",
+      "Iceland"
+    ],
+    "explanation": "Reykjavík je glavni grad Islanda.",
+    "sources": [
+      "https://www.britannica.com/place/Iceland"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6638-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Književnost",
+    "focus": "autor Don Quijote Cervantes",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman o vitezu Don Quijoteu i njegovu pratitelju Sanchu Panzi?",
+    "answers": [
+      "Miguel de Cervantes",
+      "Cervantes",
+      "Miguel Cervantes"
+    ],
+    "explanation": "Miguel de Cervantes autor je romana Don Quijote.",
+    "sources": [
+      "https://www.britannica.com/biography/Miguel-de-Cervantes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6639-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Životinje",
+    "focus": "panda prehrana bambus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja crno-bijela vrsta medvjeda najveći dio prehrane temelji na bambusu?",
+    "answers": [
+      "Velika panda",
+      "Panda",
+      "Divovska panda"
+    ],
+    "explanation": "Velika panda uglavnom se hrani bambusom.",
+    "sources": [
+      "https://www.britannica.com/animal/giant-panda"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6640-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol zlato Au",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji plemeniti metal nosi kemijski simbol Au, izveden iz latinskog aurum?",
+    "answers": [
+      "Zlato",
+      "Gold"
+    ],
+    "explanation": "Simbol Au pripada zlatu.",
+    "sources": [
+      "https://www.britannica.com/science/gold-chemical-element"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6641-20261117",
+    "createdAt": "2026-11-17T10:38:10+01:00",
+    "updatedAt": "2026-11-17T10:38:10+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, događaj koji je postao simbol završetka podjele Europe?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://www.britannica.com/topic/Berlin-Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
