@@ -1,0 +1,202 @@
+[
+  {
+    "id": "chatgpt10000-6672-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Smooth Criminal Michael Jackson",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je pjevač 1987. objavio pjesmu 'Smooth Criminal'?",
+    "answers": [
+      "Michael Jackson"
+    ],
+    "explanation": "Točan odgovor: Michael Jackson.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6673-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Sport",
+    "focus": "košarka slobodno bacanje bod",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko bodova vrijedi uspješno slobodno bacanje u košarci?",
+    "answers": [
+      "Jedan"
+    ],
+    "explanation": "Točan odgovor: Jedan.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6674-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Film",
+    "focus": "film Matrix crvena plava pilula",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojem filmu Neo bira između crvene i plave pilule?",
+    "answers": [
+      "Matrix"
+    ],
+    "explanation": "Točan odgovor: Matrix.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6675-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Književnost",
+    "focus": "roman Jane Eyre Charlotte Bronte",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska književnica napisala roman 'Jane Eyre'?",
+    "answers": [
+      "Charlotte Brontë"
+    ],
+    "explanation": "Točan odgovor: Charlotte Brontë.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6676-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Zemljopis",
+    "focus": "grad Reykjavik glavni grad Islanda",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je glavni grad Islanda?",
+    "answers": [
+      "Reykjavík"
+    ],
+    "explanation": "Točan odgovor: Reykjavík.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6677-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Životinje",
+    "focus": "ptica kivi Novi Zeland",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja neletačica s Novog Zelanda dijeli ime sa zelenim voćem?",
+    "answers": [
+      "Kivi"
+    ],
+    "explanation": "Točan odgovor: Kivi.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6678-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Kemija",
+    "focus": "simbol Fe željezo",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se kemijski element krije iza oznake Fe?",
+    "answers": [
+      "Željezo"
+    ],
+    "explanation": "Točan odgovor: Željezo.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6679-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Tehnologija",
+    "focus": "format PDF Portable Document Format",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja troslovna kratica označava format dokumenta koji čuva izgled stranice pri dijeljenju?",
+    "answers": [
+      "PDF"
+    ],
+    "explanation": "Točan odgovor: PDF.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6680-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Povijest",
+    "focus": "pad Bastilje 1789",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine osvojena Bastilja, simboličan početak Francuske revolucije?",
+    "answers": [
+      "1789"
+    ],
+    "explanation": "Točan odgovor: 1789.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6681-20261117",
+    "createdAt": "2026-11-17T14:35:35+01:00",
+    "updatedAt": "2026-11-17T14:35:35+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert cannoli Sicilija",
+    "difficulty": 3,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se zove sicilijanska slastica od hrskave cjevčice punjene slatkom ricottom?",
+    "answers": [
+      "Cannoli"
+    ],
+    "explanation": "Točan odgovor: Cannoli.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
