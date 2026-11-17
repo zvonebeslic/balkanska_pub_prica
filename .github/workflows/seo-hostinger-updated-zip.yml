@@ -1,0 +1,30 @@
+name: KvizToGo Hostinger SEO Updated ZIP
+on:
+  push:
+    branches:
+      - seo-hostinger-export-copy-updated-20261117
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package updated SEO pages for Hostinger
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p hostinger-upload
+          cp online-kviz.html sitemap.xml hostinger-upload/
+          cp blitz-kviz.html abc-kviz.html dnevnih-30.html tematski-kvizovi.html hostinger-upload/
+          cp kviz-*.html hostinger-upload/
+          rm -f hostinger-upload/kviz-uzivo.html
+          test "$(find hostinger-upload -maxdepth 1 -type f | wc -l)" -eq 21
+          if grep -Riq 'besplat' hostinger-upload/*.html; then echo "SEO copy still contains forbidden wording" >&2; exit 1; fi
+          if ! grep -q 'Primjer pitanja' hostinger-upload/kviz-glazba.html; then echo "Example question missing" >&2; exit 1; fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kviztogo-seo-azurirano-21-datoteka
+          path: hostinger-upload/
+          retention-days: 7
+          if-no-files-found: error
