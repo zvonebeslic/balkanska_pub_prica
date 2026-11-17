@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-6602-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Glazba",
+    "focus": "hit Dancing in the Dark Bruce Springsteen",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji američki glazbenik izvodi pjesmu 'Dancing in the Dark' s albuma Born in the U.S.A.?",
+    "answers": [
+      "Bruce Springsteen"
+    ],
+    "explanation": "Pjesma je objavljena 1984. na albumu Born in the U.S.A.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dancing_in_the_Dark_(Bruce_Springsteen_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6603-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Sport",
+    "focus": "tenis Roland Garros Rafael Nadal 14 titula",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je tenisač osvojio rekordnih 14 pojedinačnih naslova na Roland-Garrosu?",
+    "answers": [
+      "Rafael Nadal"
+    ],
+    "explanation": "Nadal je četrnaest puta osvojio pojedinačni turnir u Parizu.",
+    "sources": [
+      "https://www.rolandgarros.com/en-us/players/rafael-nadal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6604-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Film",
+    "focus": "film E.T. Spielberg izvanzemaljac",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je redatelj snimio film 'E.T. the Extra-Terrestrial' iz 1982.?",
+    "answers": [
+      "Steven Spielberg"
+    ],
+    "explanation": "Steven Spielberg režirao je znanstvenofantastični film E.T.",
+    "sources": [
+      "https://www.britannica.com/topic/ET-The-Extra-Terrestrial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6605-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Književnost",
+    "focus": "roman Proces Josef K Kafka",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman 'Proces', u kojem je glavni lik Josef K.?",
+    "answers": [
+      "Franz Kafka"
+    ],
+    "explanation": "Franz Kafka autor je romana Proces.",
+    "sources": [
+      "https://www.britannica.com/topic/The-Trial-novel-by-Kafka"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6606-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "tjesnac Gibraltar Afrika Europa",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji morski prolaz razdvaja Španjolsku i Maroko te povezuje Atlantik sa Sredozemljem?",
+    "answers": [
+      "Gibraltarski tjesnac"
+    ],
+    "explanation": "Gibraltarski tjesnac povezuje Atlantski ocean i Sredozemno more.",
+    "sources": [
+      "https://www.britannica.com/place/Strait-of-Gibraltar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6607-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Životinje",
+    "focus": "koala prehrana eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski tobolčar gotovo cijeli život provodi na drveću eukaliptusa i hrani se njegovim lišćem?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koale se uglavnom hrane listovima eukaliptusa.",
+    "sources": [
+      "https://www.britannica.com/animal/koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6608-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Kemija",
+    "focus": "simbol Fe željezo",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji se kemijski element skriva iza simbola Fe, izvedenog iz latinske riječi ferrum?",
+    "answers": [
+      "Željezo"
+    ],
+    "explanation": "Fe je kemijski simbol željeza.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/26/iron"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6609-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Televizija",
+    "focus": "serija Friends Central Perk",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj se humorističnoj seriji šest prijatelja često okuplja u kafiću Central Perk?",
+    "answers": [
+      "Prijatelji"
+    ],
+    "explanation": "Central Perk je omiljeno okupljalište likova serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6610-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, simbolično označivši kraj podjele grada?",
+    "answers": [
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://www.britannica.com/topic/Berlin-Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6611-20261117",
+    "createdAt": "2026-11-17T07:39:00+01:00",
+    "updatedAt": "2026-11-17T07:39:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "pesto bosiljak Genova",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je aromatična biljka glavni zeleni sastojak tradicionalnog genovskog pesta?",
+    "answers": [
+      "Bosiljak"
+    ],
+    "explanation": "Pesto alla genovese tradicionalno se priprema s bosiljkom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
