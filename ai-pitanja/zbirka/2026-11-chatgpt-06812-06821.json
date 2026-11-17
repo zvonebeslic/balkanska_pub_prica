@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-6812-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Povijest",
+    "focus": "prva poštanska marka Penny Black",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koje je godine Velika Britanija izdala poštansku marku Penny Black, prvu takve vrste na svijetu?",
+    "answers": [
+      "1840.",
+      "1840"
+    ],
+    "explanation": "Penny Black izdana je 1. svibnja 1840.",
+    "sources": [
+      "https://postalmuseum.si.edu/about/press/national-postal-museum-to-display-rare-philatelic-gem"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6813-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Astronomija",
+    "focus": "metan i plava boja Neptuna",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji plin u atmosferi Neptuna upija crvenu svjetlost i pridonosi njegovoj plavoj boji?",
+    "answers": [
+      "Metan"
+    ],
+    "explanation": "Metan apsorbira crveni dio Sunčeve svjetlosti.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6814-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Književnost",
+    "focus": "Sancho Panza pratitelj Don Quijotea",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove vjerni štitonoša Don Quijotea koji ga prati na magarcu?",
+    "answers": [
+      "Sancho Panza",
+      "Sančo Pansa",
+      "Sancho"
+    ],
+    "explanation": "Sancho Panza jedan je od glavnih likova Cervantesova romana.",
+    "sources": [
+      "https://www.cambridge.org/core/journals/bjpsych-advances/article/cervantes-and-don-quixote-de-la-mancha/F2BCFE3AC531DC4F57038EB7C2E80F8E"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6815-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Povijest",
+    "focus": "prve američke poštanske marke Franklin Washington",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koje su dvije osobe prikazane na prvim državnim poštanskim markama SAD-a iz 1847.?",
+    "answers": [
+      "Benjamin Franklin i George Washington",
+      "Franklin i Washington",
+      "George Washington i Benjamin Franklin"
+    ],
+    "explanation": "Prve američke marke prikazivale su Franklina na pet centi i Washingtona na deset centi.",
+    "sources": [
+      "https://about.usps.com/who/profile/history/stamps-postcards.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6816-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptunovi prstenovi Webb 2022",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koji je svemirski teleskop 2022. snimio najjasniji prikaz Neptunovih prstenova u više od 30 godina?",
+    "answers": [
+      "James Webb",
+      "Svemirski teleskop James Webb",
+      "Webb",
+      "JWST"
+    ],
+    "explanation": "Webbova infracrvena kamera snimila je Neptunove prstenove 2022.",
+    "sources": [
+      "https://www.nasa.gov/image-article/neptune-shows-off-rings-near-infrared-light/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6817-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Povijest",
+    "focus": "Penny Red zamjena Penny Black",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako se zvala crvena britanska marka koja je 1841. zamijenila crnu Penny Black?",
+    "answers": [
+      "Penny Red"
+    ],
+    "explanation": "Penny Red uvedena je 10. veljače 1841.",
+    "sources": [
+      "https://postalmuseum.si.edu/exhibition/the-queen%E2%80%99s-own-postal-reforms-that-transformed-the-mail/introducing-the-penny-red"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6818-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptun Voyager 2 1989",
+    "difficulty": 2,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koja je svemirska letjelica 1989. proletjela pokraj Neptuna i snimila njegove prstenove?",
+    "answers": [
+      "Voyager 2"
+    ],
+    "explanation": "Voyager 2 proletio je pokraj Neptuna 1989.",
+    "sources": [
+      "https://www.nasa.gov/image-article/neptune-shows-off-rings-near-infrared-light/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6819-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Povijest",
+    "focus": "prva poštanska marka portret kraljice Viktorije",
+    "difficulty": 2,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Čiji je portret bio otisnut na britanskoj marki Penny Black iz 1840.?",
+    "answers": [
+      "Kraljica Viktorija",
+      "Viktorija",
+      "Queen Victoria"
+    ],
+    "explanation": "Na marki Penny Black prikazan je profil kraljice Viktorije.",
+    "sources": [
+      "https://postalmuseum.si.edu/exhibition/the-queen%E2%80%99s-own-postal-reforms-that-transformed-the-mail-the-worlds-first-postage-stamps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6820-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Astronomija",
+    "focus": "Uran i Neptun različita plava boja",
+    "difficulty": 3,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji je od dva ledena diva, Uran ili Neptun, obično svjetlije plave boje zbog debljeg sloja izmaglice?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Deblji sloj izmaglice čini Uran bljeđim od Neptuna.",
+    "sources": [
+      "https://science.nasa.gov/solar-system/planets/neptune/why-uranus-and-neptune-are-different-colors/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6821-20261118",
+    "createdAt": "2026-11-18T00:42:07+01:00",
+    "updatedAt": "2026-11-18T00:42:07+01:00",
+    "topic": "Povijest",
+    "focus": "Rowland Hill reforma poštarine",
+    "difficulty": 3,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji je britanski reformator 1837. predložio jedinstvenu poštarinu i plaćanje poštanskim markama?",
+    "answers": [
+      "Rowland Hill",
+      "Sir Rowland Hill"
+    ],
+    "explanation": "Hill je predložio reformu koja je dovela do prvih poštanskih maraka.",
+    "sources": [
+      "https://about.usps.com/who/profile/history/stamps-postcards.htm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
