@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-6612-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Jolene Dolly Parton",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je country pjevačica 1973. snimila pjesmu 'Jolene'?",
+    "answers": [
+      "Dolly Parton"
+    ],
+    "explanation": "Pjesmu Jolene napisala je i snimila Dolly Parton.",
+    "sources": [
+      "https://www.britannica.com/biography/Dolly-Parton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6613-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Film",
+    "focus": "film Spirited Away redatelj Miyazaki",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je japanski redatelj snimio animirani film 'Avanture male Chihiro'?",
+    "answers": [
+      "Hayao Miyazaki"
+    ],
+    "explanation": "Film je poznat i pod engleskim naslovom Spirited Away.",
+    "sources": [
+      "https://www.britannica.com/biography/Miyazaki-Hayao"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6614-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Sport",
+    "focus": "olimpijska sprava karike gimnastika",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem se sportu natjecatelji na karikama ocjenjuju za elemente snage i izvedbu?",
+    "answers": [
+      "Gimnastika"
+    ],
+    "explanation": "Karike su sprava muške sportske gimnastike.",
+    "sources": [
+      "https://www.britannica.com/sports/gymnastics"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6615-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Peru Lima",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se južnoameričkom glavnom gradu nalazi povijesni trg Plaza Mayor, središte nekadašnje španjolske kolonijalne uprave?",
+    "answers": [
+      "Lima"
+    ],
+    "explanation": "Lima je glavni grad Perua.",
+    "sources": [
+      "https://www.britannica.com/place/Lima"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6616-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ pisac Saint Exupery",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski pisac i pilot napisao 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "explanation": "Mali princ objavljen je 1943. godine.",
+    "sources": [
+      "https://www.britannica.com/biography/Antoine-de-Saint-Exupery"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6617-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Životinje",
+    "focus": "čudnovati kljunaš jaja sisavac",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima kljun nalik pačjem i polaže jaja?",
+    "answers": [
+      "Čudnovati kljunaš"
+    ],
+    "explanation": "Kljunaš pripada jednootvorima, sisavcima koji polažu jaja.",
+    "sources": [
+      "https://www.britannica.com/animal/platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6618-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215 Engleska",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je engleski kralj 1215. prihvatio Magnu Cartu pod pritiskom pobunjenih velikaša?",
+    "answers": [
+      "Ivan Bez Zemlje"
+    ],
+    "explanation": "Kralj Ivan prihvatio je povelju u Runnymedeu.",
+    "sources": [
+      "https://www.britannica.com/topic/Magna-Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6619-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Kemija",
+    "focus": "element helij sunce ime",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji je kemijski element dobio ime prema grčkoj riječi za Sunce jer je najprije prepoznat u Sunčevu spektru?",
+    "answers": [
+      "Helij"
+    ],
+    "explanation": "Naziv helij izveden je iz grčkog helios, Sunce.",
+    "sources": [
+      "https://www.britannica.com/science/helium-chemical-element"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6620-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Tehnologija",
+    "focus": "GPS kratica global positioning system",
+    "difficulty": 1,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koja se troslovna kratica koristi za satelitski sustav određivanja položaja na Zemlji?",
+    "answers": [
+      "GPS"
+    ],
+    "explanation": "GPS znači Global Positioning System.",
+    "sources": [
+      "https://www.gps.gov/systems/gps/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6621-20261117",
+    "createdAt": "2026-11-17T08:41:41+01:00",
+    "updatedAt": "2026-11-17T08:41:41+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Guernica Picasso slika",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski slikar naslikao antiratno djelo 'Guernica' 1937. godine?",
+    "answers": [
+      "Pablo Picasso"
+    ],
+    "explanation": "Picasso je naslikao Guernicu kao reakciju na bombardiranje baskijskoga grada.",
+    "sources": [
+      "https://www.britannica.com/topic/Guernica-by-Picasso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
