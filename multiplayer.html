@@ -8,8 +8,6 @@
   <meta name="description" content="Igraj KvizToGo multiplayer kviz 1 na 1. Pronađi protivnika ili pozovi prijatelja/icu, biraj 10, 20 ili 30 pitanja, utrku do bodova ili tematski kviz.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://kviztogo.com/multiplayer.html">
-<link rel="alternate" hreflang="hr" href="https://kviztogo.com/multiplayer.html">
-<link rel="alternate" hreflang="en" href="https://kviztogo.com/en/multiplayer-quiz.html">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="KvizToGo">
@@ -222,8 +220,7 @@
 <script>
 'use strict';
 const LANG_KEY='kviztogo_lang';
-const mpLangFromUrl=new URLSearchParams(window.location.search).get('lang');
-let currentLang=(mpLangFromUrl==='en'||mpLangFromUrl==='hr')?mpLangFromUrl:(localStorage.getItem(LANG_KEY)==='en'?'en':'hr');
+let currentLang=localStorage.getItem(LANG_KEY)==='en'?'en':'hr';
 const I18N={
 hr:{
 pageTitle:'Multiplayer kviz 1 na 1 | KvizToGo',back:'Natrag',languageToEnglish:'Promijeni jezik na engleski',languageToCroatian:'Promijeni jezik na hrvatski',
