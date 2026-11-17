@@ -1,0 +1,25 @@
+name: KvizToGo Hostinger SEO ZIP
+on:
+  push:
+    branches:
+      - seo-hostinger-export-20261117
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble files for Hostinger
+        run: |
+          mkdir -p hostinger-upload
+          cp online-kviz.html sitemap.xml hostinger-upload/
+          cp blitz-kviz.html abc-kviz.html dnevnih-30.html tematski-kvizovi.html hostinger-upload/
+          cp kviz-*.html hostinger-upload/
+          test "$(find hostinger-upload -maxdepth 1 -type f | wc -l)" -eq 21
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kviztogo-hostinger-seo-21-datoteka
+          path: hostinger-upload/
+          retention-days: 7
+          if-no-files-found: error
