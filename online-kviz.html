@@ -17,6 +17,8 @@
   <!-- SEO osnovno -->
   <meta name="description" content="Rješavaj tisuće kviz pitanja u besplatnom online kvizu. Biraj tematska pitanja, Blitz 60 sekundi ili igru bez vremenskog ograničenja i testiraj znanje.">
   <link rel="canonical" href="https://kviztogo.com/online-kviz.html">
+<link rel="alternate" hreflang="hr" href="https://kviztogo.com/online-kviz.html">
+<link rel="alternate" hreflang="en" href="https://kviztogo.com/en/online-quiz.html">
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -3794,7 +3796,9 @@ if (!supabaseClient) {
 
 /* ------------------ LANGUAGE ------------------ */
   const LANG_KEY = "kviztogo_lang";
-  let currentLang = localStorage.getItem(LANG_KEY) || "hr";
+  const languageFromUrl = new URLSearchParams(window.location.search).get("lang");
+  let currentLang = (languageFromUrl === "hr" || languageFromUrl === "en")
+    ? languageFromUrl : (localStorage.getItem(LANG_KEY) || "hr");
 
   const I18N = {
     hr: {
