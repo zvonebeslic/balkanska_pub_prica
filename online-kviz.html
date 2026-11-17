@@ -7326,6 +7326,24 @@ if (!supabaseClient) {
     await initPlayerExperience();
     window.KvizDaily30?.setPlayerContext?.(playerIdentity);
     await window.KvizDaily30?.initOnline?.();
+    // SEO ulaz: odaberi postojeci nacin ili temu samo ako je URL parametar izricito zadan.
+    const entryParams = new URLSearchParams(window.location.search);
+    const entryMode = entryParams.get("mode");
+    const entryTopic = entryParams.get("topic");
+    const entryAbcTopic = entryParams.get("abc_topic");
+    const allowedEntryModes = {
+      blitz60: '.mode-pill[data-mode="blitz60"]',
+      relax: '.mode-pill[data-mode="relax"]',
+      daily30: '.mode-pill[data-mode="daily30"]',
+      abc_blitz: '.abc-option[data-abc-mode="abc_blitz"]',
+      abc_relax: '.abc-option[data-abc-mode="abc_relax"]'
+    };
+    const entryTarget = entryAbcTopic
+      ? [...document.querySelectorAll(".abc-option[data-abc-topic]")].find(b => b.dataset.abcTopic === entryAbcTopic)
+      : entryTopic
+        ? [...document.querySelectorAll(".themed-topic[data-topic]")].find(b => b.dataset.topic === entryTopic)
+        : (Object.prototype.hasOwnProperty.call(allowedEntryModes, entryMode) ? document.querySelector(allowedEntryModes[entryMode]) : null);
+    if (entryTarget) entryTarget.click();
     window.KvizLeaderboards?.refreshAll?.();
   });
 
