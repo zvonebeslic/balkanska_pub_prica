@@ -1,0 +1,217 @@
+[
+  {
+    "id": "chatgpt10000-6862-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Sport",
+    "focus": "tri oružja sportskog mačevanja",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U olimpijskom mačevanju koriste se floret i sablja. Kako se zove treće oružje?",
+    "answers": [
+      "Mač",
+      "Epee",
+      "Épée"
+    ],
+    "explanation": "Treće oružje je mač (épée).",
+    "sources": [
+      "https://www.olympics.com/ioc/international-fencing-federation"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6863-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Astronomija",
+    "focus": "Saturnov mjesec s jezerima metana",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Na kojem Saturnovu mjesecu postoje jezera tekućeg metana i etana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan ima jezera i mora tekućih ugljikovodika.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6864-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Književnost",
+    "focus": "autorica romana Frankenstein",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska književnica napisala roman 'Frankenstein'?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "explanation": "Mary Shelley autorica je romana Frankenstein iz 1818. godine.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6865-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Glazba",
+    "focus": "sastav pjesme Bitter Sweet Symphony",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Pjesma 'Bitter Sweet Symphony' iz 1997. postala je zaštitni znak kojeg britanskog rock-sastava?",
+    "answers": [
+      "The Verve",
+      "Verve"
+    ],
+    "explanation": "The Verve objavio je pjesmu na albumu Urban Hymns.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6866-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Nogomet",
+    "focus": "prvi afrički četvrtfinalist SP-a",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koja je afrička reprezentacija na Svjetskom nogometnom prvenstvu 1990. prva s tog kontinenta stigla do četvrtfinala?",
+    "answers": [
+      "Kamerun",
+      "Cameroon"
+    ],
+    "explanation": "Kamerun je 1990. u Italiji stigao do četvrtfinala.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6867-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Film",
+    "focus": "lik Maximus u Gladijatoru",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove rimski vojskovođa kojeg Russell Crowe glumi u filmu 'Gladijator' iz 2000.?",
+    "answers": [
+      "Maximus",
+      "Maksim",
+      "Maximus Decimus Meridius"
+    ],
+    "explanation": "Russell Crowe tumači Maximusa Decimusa Meridiusa.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6868-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Biologija",
+    "focus": "proces pretvaranja punoglavca u žabu",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako se naziva razvojna preobrazba tijekom koje punoglavac postaje odrasla žaba?",
+    "answers": [
+      "Metamorfoza",
+      "Preobrazba"
+    ],
+    "explanation": "Metamorfoza označava promjenu građe tijela tijekom razvoja.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6869-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Zemljopis",
+    "focus": "tjesnac između Španjolske i Maroka",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji morski prolaz odvaja Španjolsku od Maroka i povezuje Atlantik sa Sredozemnim morem?",
+    "answers": [
+      "Gibraltarski tjesnac",
+      "Gibraltar",
+      "Gibraltarski prolaz"
+    ],
+    "explanation": "Gibraltarski tjesnac povezuje Atlantski ocean i Sredozemno more.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6870-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Tehnologija",
+    "focus": "format slike PNG",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se troslovna kratica koristi za slikovni format koji podržava prozirnost i kompresiju bez gubitaka?",
+    "answers": [
+      "PNG"
+    ],
+    "explanation": "PNG je slikovni format s kompresijom bez gubitaka i podrškom za prozirnost.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6871-20261118",
+    "createdAt": "2026-11-18T05:40:24+01:00",
+    "updatedAt": "2026-11-18T05:40:24+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert panna cotta",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Ako u talijanskom restoranu naručiš desert od zaslađenog vrhnja koje se stegne želatinom, što si naručio?",
+    "answers": [
+      "Panna cotta",
+      "Panakota"
+    ],
+    "explanation": "Panna cotta talijanski je desert od vrhnja i sredstva za želiranje.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
