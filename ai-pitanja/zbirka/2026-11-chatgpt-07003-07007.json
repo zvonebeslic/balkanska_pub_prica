@@ -1,0 +1,122 @@
+[
+  {
+    "id": "chatgpt10000-7003-20261118",
+    "createdAt": "2026-11-18T22:37:09+01:00",
+    "updatedAt": "2026-11-18T22:37:09+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Jolene Dolly Parton",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je country pjevačica 1973. snimila pjesmu 'Jolene', u kojoj moli drugu ženu da joj ne preotme partnera?",
+    "answers": [
+      "Dolly Parton",
+      "Doli Parton"
+    ],
+    "explanation": "Dolly Parton napisala je i snimila Jolene, objavljenu 1973.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jolene_(song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7004-20261118",
+    "createdAt": "2026-11-18T22:37:09+01:00",
+    "updatedAt": "2026-11-18T22:37:09+01:00",
+    "topic": "Film",
+    "focus": "redatelj Spirited Away",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao japanski animirani film 'Avanture male Chihiro' (Spirited Away), nagrađen Oscarom?",
+    "answers": [
+      "Hayao Miyazaki",
+      "Hajao Mijazaki",
+      "Miyazaki"
+    ],
+    "explanation": "Hayao Miyazaki režirao je film Spirited Away iz 2001.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7005-20261118",
+    "createdAt": "2026-11-18T22:37:09+01:00",
+    "updatedAt": "2026-11-18T22:37:09+01:00",
+    "topic": "Književnost",
+    "focus": "autor roman Stranac",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Roman 'Stranac', čiji je glavni lik Meursault, napisao je koji francuski književnik?",
+    "answers": [
+      "Albert Camus",
+      "Alber Kami",
+      "Camus"
+    ],
+    "explanation": "Albert Camus objavio je roman Stranac 1942.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Stranger_(Camus_novel)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7006-20261118",
+    "createdAt": "2026-11-18T22:37:09+01:00",
+    "updatedAt": "2026-11-18T22:37:09+01:00",
+    "topic": "Sport",
+    "focus": "tenis Roland Garros zemlja",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Na kakvoj se podlozi tradicionalno igra teniski Grand Slam Roland-Garros?",
+    "answers": [
+      "Zemlja",
+      "Zemljana podloga",
+      "Crvena zemlja",
+      "Clay"
+    ],
+    "explanation": "Roland-Garros poznat je po zemljanim terenima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_Open"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7007-20261118",
+    "createdAt": "2026-11-18T22:37:09+01:00",
+    "updatedAt": "2026-11-18T22:37:09+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Mongolije",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je glavni grad Mongolije smješten u dolini rijeke Tuul?",
+    "answers": [
+      "Ulan Bator",
+      "Ulaanbaatar",
+      "Ulanbator"
+    ],
+    "explanation": "Ulaanbaatar glavni je i najveći grad Mongolije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ulaanbaatar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
