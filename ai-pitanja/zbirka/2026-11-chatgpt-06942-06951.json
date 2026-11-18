@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-6942-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black producent",
+    "difficulty": 3,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je producent surađivao s Amy Winehouse na hitu 'Rehab' s albuma 'Back to Black'?",
+    "answers": [
+      "Mark Ronson"
+    ],
+    "explanation": "Mark Ronson producirao je Rehab.",
+    "sources": [
+      "https://www.britannica.com/biography/Amy-Winehouse"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6943-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Sport",
+    "focus": "prva olimpijska medalja snowboard",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "U kojem je zimskom sportu Ross Rebagliati 1998. osvojio prvo olimpijsko zlato u veleslalomu?",
+    "answers": [
+      "Snowboard",
+      "Snowboarding",
+      "Daskanje na snijegu"
+    ],
+    "explanation": "Snowboard je olimpijski debitirao u Naganu 1998.",
+    "sources": [
+      "https://olympics.com/en/sports/snowboard/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6944-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Film",
+    "focus": "film o Truman Burbanku",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Jim Carrey glumi čovjeka čiji je cijeli život potajno televizijski program. Koji je to film?",
+    "answers": [
+      "Trumanov show",
+      "The Truman Show",
+      "Truman Show"
+    ],
+    "explanation": "Film The Truman Show objavljen je 1998.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Truman_Show"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6945-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja europska rijeka dijeli Budimpeštu na Budim i Peštu?",
+    "answers": [
+      "Dunav",
+      "Danube"
+    ],
+    "explanation": "Dunav protječe kroz mađarski glavni grad.",
+    "sources": [
+      "https://www.britannica.com/place/Danube-River"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6946-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Književnost",
+    "focus": "lik kapetan Nemo",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kako se zove tajanstveni kapetan podmornice Nautilus u romanu 'Dvadeset tisuća milja pod morem'?",
+    "answers": [
+      "Nemo",
+      "Kapetan Nemo"
+    ],
+    "explanation": "Kapetan Nemo lik je Julesa Vernea.",
+    "sources": [
+      "https://www.britannica.com/topic/Twenty-Thousand-Leagues-Under-the-Sea"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6947-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Životinje",
+    "focus": "životinja koja gradi brane",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji glodavac obara stabla i gradi brane na potocima?",
+    "answers": [
+      "Dabar",
+      "Dabrovi"
+    ],
+    "explanation": "Dabrovi mijenjaju vodene ekosustave gradnjom brana.",
+    "sources": [
+      "https://www.britannica.com/animal/beaver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6948-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Kemija",
+    "focus": "kemijska formula sode bikarbone",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji je uobičajeni kuhinjski naziv za natrijev hidrogenkarbonat, NaHCO₃?",
+    "answers": [
+      "Soda bikarbona",
+      "Soda za pečenje"
+    ],
+    "explanation": "Natrijev hidrogenkarbonat koristi se kao sredstvo za dizanje tijesta.",
+    "sources": [
+      "https://www.britannica.com/science/sodium-bicarbonate"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6949-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Weba",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar osmislio World Wide Web radeći u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee"
+    ],
+    "explanation": "Tim Berners-Lee predložio je World Wide Web 1989.",
+    "sources": [
+      "https://home.cern/science/computing/birth-web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6950-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine osmanska vojska Mehmeda II. osvojila Carigrad?",
+    "answers": [
+      "1453",
+      "1453."
+    ],
+    "explanation": "Osvajanje Carigrada 1453. označilo je kraj Bizantskog Carstva.",
+    "sources": [
+      "https://www.britannica.com/event/Fall-of-Constantinople-1453"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6951-20261118",
+    "createdAt": "2026-11-18T13:38:34+01:00",
+    "updatedAt": "2026-11-18T13:38:34+01:00",
+    "topic": "Gastronomija",
+    "focus": "japanska juha miso",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove japanska juha koja se priprema s fermentiranom pastom od soje i često poslužuje uz tofu?",
+    "answers": [
+      "Miso",
+      "Miso juha"
+    ],
+    "explanation": "Miso juha tradicionalno koristi miso pastu.",
+    "sources": [
+      "https://www.britannica.com/topic/miso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
