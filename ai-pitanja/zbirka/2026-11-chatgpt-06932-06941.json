@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-6932-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Astronomija",
+    "focus": "nagib osi rotacije Urana",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji se planet zbog nagiba osi od gotovo 98 stupnjeva okreće gotovo 'na boku'?",
+    "answers": [
+      "Uran",
+      "Uranus"
+    ],
+    "explanation": "Uranova os rotacije izrazito je nagnuta u odnosu na ravninu njegove putanje.",
+    "sources": [
+      "https://science.nasa.gov/uranus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6933-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Sport",
+    "focus": "tri vrste oružja u mačevanju",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem se olimpijskom sportu natječe s floretom, mačem i sabljom?",
+    "answers": [
+      "Mačevanje"
+    ],
+    "explanation": "Floret, mač i sablja tri su discipline sportskog mačevanja.",
+    "sources": [
+      "https://www.olympics.com/ioc/international-fencing-federation"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6934-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Književnost",
+    "focus": "pisac romana Mali princ",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao priču o dječaku koji napušta svoj maleni asteroid i upoznaje lisicu?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Saint-Exupéry",
+      "Antoine de Saint Exupery"
+    ],
+    "explanation": "Antoine de Saint-Exupéry autor je Malog princa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6935-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Wonderwall izvođač",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je britanski bend 1995. objavio hit 'Wonderwall' na albumu '(What's the Story) Morning Glory?'?",
+    "answers": [
+      "Oasis"
+    ],
+    "explanation": "Wonderwall je jedna od najpoznatijih pjesama grupe Oasis.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wonderwall_(song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6936-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Film",
+    "focus": "glumac Indiana Jones",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Tko je utjelovio Indianu Jonesa u filmu 'Otimači izgubljenog kovčega' iz 1981.?",
+    "answers": [
+      "Harrison Ford",
+      "Ford"
+    ],
+    "explanation": "Harrison Ford glumio je arheologa Indianu Jonesa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Raiders_of_the_Lost_Ark"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6937-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Zemljopis",
+    "focus": "država u kojoj je grad Porto",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Grad Porto leži uz rijeku Douro i poznat je po vinu koje nosi njegovo ime. U kojoj je državi?",
+    "answers": [
+      "Portugal",
+      "Portugalu"
+    ],
+    "explanation": "Porto je grad u sjevernom Portugalu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Porto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6938-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Kemija",
+    "focus": "simbol kemijskog elementa željeza",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Ako na laboratorijskom uzorku piše Fe, o kojem je kemijskom elementu riječ?",
+    "answers": [
+      "Željezo",
+      "Zeljezo"
+    ],
+    "explanation": "Fe je kemijski simbol željeza, izveden iz latinskog ferrum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Iron"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6939-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Biologija",
+    "focus": "pčele oprašivanje cvijeća",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se naziva prijenos peluda s prašnika na njušku tučka cvijeta?",
+    "answers": [
+      "Oprašivanje",
+      "Oprasivanje"
+    ],
+    "explanation": "Oprašivanje je prijenos peluda na ženski reproduktivni dio cvijeta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pollination"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6940-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Tehnologija",
+    "focus": "kratica URL",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja se troslovna kratica koristi za adresu internetske stranice, primjerice onu koja počinje s https://?",
+    "answers": [
+      "URL"
+    ],
+    "explanation": "URL znači Uniform Resource Locator, odnosno adresu resursa na mreži.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/URL"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6941-20261118",
+    "createdAt": "2026-11-18T12:37:44+01:00",
+    "updatedAt": "2026-11-18T12:37:44+01:00",
+    "topic": "Gastronomija",
+    "focus": "glavni sastojak guacamolea",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U zdjelici meksičkog umaka guacamole zgnječi se voće zelene unutrašnjosti. Koje?",
+    "answers": [
+      "Avokado",
+      "Avocado"
+    ],
+    "explanation": "Avokado je osnovni sastojak umaka guacamole.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
