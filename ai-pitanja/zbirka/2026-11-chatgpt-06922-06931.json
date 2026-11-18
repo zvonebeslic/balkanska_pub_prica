@@ -1,0 +1,233 @@
+[
+  {
+    "id": "chatgpt10000-6922-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Jolene izvođačica",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je country pjevačica 1973. snimila pjesmu 'Jolene'?",
+    "answers": [
+      "Dolly Parton",
+      "Parton"
+    ],
+    "explanation": "Dolly Parton napisala je i snimila pjesmu Jolene.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jolene_(song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6923-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Sport",
+    "focus": "košarka trica udaljenost vrijednost",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koliko bodova donosi uspješan šut iza linije za tri poena u košarci?",
+    "answers": [
+      "3",
+      "tri",
+      "3 boda"
+    ],
+    "explanation": "Pogodak izvan linije za tri poena vrijedi tri boda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Three-point_field_goal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6924-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Film",
+    "focus": "film Casablanca lik Rick Blaine",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem filmskom klasiku Humphrey Bogart glumi vlasnika lokala Ricka Blainea?",
+    "answers": [
+      "Casablanca",
+      "Kazablanka"
+    ],
+    "explanation": "Humphrey Bogart igra Ricka Blainea u filmu Casablanca iz 1942.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Casablanca_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6925-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Estonije",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na obali Finskog zaljeva nalazi se Tallinn, glavni grad koje baltičke države?",
+    "answers": [
+      "Estonija",
+      "Estonije"
+    ],
+    "explanation": "Tallinn je glavni grad Estonije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tallinn"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6926-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Književnost",
+    "focus": "roman Zločin i kazna protagonist",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Kako se preziva student Rodion, glavni lik romana 'Zločin i kazna'?",
+    "answers": [
+      "Raskoljnikov",
+      "Raskolnikov"
+    ],
+    "explanation": "Rodion Raskoljnikov glavni je lik romana Fjodora Dostojevskog.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6927-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Životinje",
+    "focus": "aksalotl vodozemac",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac poznat po vanjskim škrgama može obnoviti izgubljene udove?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl",
+      "Aksalotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po regeneraciji udova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6928-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol bakra",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji se metal u periodnom sustavu skriva iza simbola Cu?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Cu je kemijski simbol bakra, izveden iz latinskog cuprum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6929-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Povijest",
+    "focus": "pad Bastille godina",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine pariška tvrđava Bastille osvojena tijekom Francuske revolucije?",
+    "answers": [
+      "1789",
+      "1789."
+    ],
+    "explanation": "Bastille je osvojena 14. srpnja 1789.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Storming_of_the_Bastille"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6930-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj programski jezik Python",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je nizozemski programer stvorio programski jezik Python?",
+    "answers": [
+      "Guido van Rossum",
+      "Van Rossum"
+    ],
+    "explanation": "Guido van Rossum započeo je razvoj Pythona krajem 1980-ih.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guido_van_Rossum"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6931-20261118",
+    "createdAt": "2026-11-18T11:41:18+01:00",
+    "updatedAt": "2026-11-18T11:41:18+01:00",
+    "topic": "Gastronomija",
+    "focus": "humus osnovni sastojak",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavni sastojak bliskoistočnog namaza humusa?",
+    "answers": [
+      "Slanutak",
+      "Slani grah"
+    ],
+    "explanation": "Humus se tradicionalno priprema od kuhanog slanutka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
