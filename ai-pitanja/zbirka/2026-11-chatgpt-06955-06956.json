@@ -1,0 +1,49 @@
+[
+  {
+    "id": "chatgpt10000-6955-20261118",
+    "createdAt": "2026-11-18T15:39:45+01:00",
+    "updatedAt": "2026-11-18T15:39:45+01:00",
+    "topic": "Sport",
+    "focus": "broj igrača u dvoranskoj odbojci",
+    "difficulty": 1,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "U košarci je na parketu pet igrača po momčadi. Koliko ih istodobno igra za jednu momčad u dvoranskoj odbojci?",
+    "answers": [
+      "6",
+      "Šest",
+      "Šest igrača"
+    ],
+    "explanation": "U standardnoj dvoranskoj odbojci na terenu je šest igrača svake momčadi.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/how-to-play-volleyball-rules-game-court-about-match-set-smash-spike"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6956-20261118",
+    "createdAt": "2026-11-18T15:39:45+01:00",
+    "updatedAt": "2026-11-18T15:39:45+01:00",
+    "topic": "Astronomija",
+    "focus": "Marsov mjesec Fobos i krater Stickney",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji Marsov mjesec nosi golemi krater Stickney i obiđe Crveni planet otprilike tri puta dnevno?",
+    "answers": [
+      "Fobos",
+      "Phobos"
+    ],
+    "explanation": "Fobos je veći Marsov mjesec, s velikim kraterom Stickney i vrlo kratkim orbitalnim periodom.",
+    "sources": [
+      "https://science.nasa.gov/mars/moons/phobos/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
