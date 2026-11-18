@@ -1,0 +1,215 @@
+[
+  {
+    "id": "chatgpt10000-6852-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Kultura",
+    "focus": "japanska vještina savijanja papira",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva japanska vještina oblikovanja figura savijanjem papira, često u obliku ždrala?",
+    "answers": [
+      "Origami"
+    ],
+    "explanation": "Origami je japanska tradicija savijanja papira.",
+    "sources": [
+      "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202112/202112_01_en.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6853-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Nogomet",
+    "focus": "trofej Copa Libertadores",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koje južnoameričko klupsko natjecanje u nogometu nosi ime u čast osloboditelja kontinenta?",
+    "answers": [
+      "Copa Libertadores",
+      "Libertadores"
+    ],
+    "explanation": "Copa Libertadores vodeće je južnoameričko klupsko natjecanje.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6854-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Amélie",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je francuski redatelj snimio film 'Amélie' iz 2001. godine?",
+    "answers": [
+      "Jean-Pierre Jeunet",
+      "Jeunet"
+    ],
+    "explanation": "Jean-Pierre Jeunet režirao je film Amélie.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6855-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Nothing Compares 2 U",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je irska pjevačica proslavila pjesmu 'Nothing Compares 2 U' početkom 1990-ih?",
+    "answers": [
+      "Sinéad O'Connor",
+      "Sinead OConnor",
+      "Sinead O'Connor"
+    ],
+    "explanation": "Sinéad O'Connor objavila je poznatu izvedbu pjesme koju je napisao Prince.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6856-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Kako se zove medicinska grana koja se bavi očima i bolestima vida?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija proučava i liječi bolesti oka.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6857-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Kemija",
+    "focus": "legura bronca",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koju leguru najčešće čine bakar i kositar, a po njoj je nazvano jedno pretpovijesno doba?",
+    "answers": [
+      "Bronca",
+      "Bronza"
+    ],
+    "explanation": "Bronca je legura čiji su tradicionalni glavni sastojci bakar i kositar.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6858-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Zemljopis",
+    "focus": "grad Petra",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se današnjoj državi nalazi drevni grad Petra, poznat po pročeljima isklesanima u stijeni?",
+    "answers": [
+      "Jordan",
+      "Jordanija",
+      "U Jordanu"
+    ],
+    "explanation": "Petra je arheološki lokalitet u Jordanu.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6859-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Tehnologija",
+    "focus": "tipkovni prečac Ctrl Z",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koju radnju u većini računalnih programa izvršava kombinacija tipki Ctrl i Z?",
+    "answers": [
+      "Poništi",
+      "Poništavanje",
+      "Undo",
+      "Poništi zadnju radnju"
+    ],
+    "explanation": "Ctrl+Z uobičajeni je prečac za poništavanje posljednje radnje.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6860-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Životinje",
+    "focus": "narvalov kljovasti zub",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima dugačak spiralni zub zbog kojega ga nazivaju morskim jednorogom?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalov spiralni kljovasti izdanak zapravo je izduženi zub.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6861-20261118",
+    "createdAt": "2026-11-18T04:35:42+01:00",
+    "updatedAt": "2026-11-18T04:35:42+01:00",
+    "topic": "Književnost",
+    "focus": "roman Ime ruže",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je talijanski književnik napisao povijesni roman 'Ime ruže'?",
+    "answers": [
+      "Umberto Eco",
+      "Eco"
+    ],
+    "explanation": "Umberto Eco objavio je roman Ime ruže 1980. godine.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
