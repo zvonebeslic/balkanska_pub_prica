@@ -1,0 +1,232 @@
+[
+  {
+    "id": "chatgpt10000-7023-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Valerie izvođač The Zutons",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je britanski sastav prvi objavio pjesmu 'Valerie', koju je kasnije proslavila Amy Winehouse?",
+    "answers": [
+      "The Zutons",
+      "Zutons"
+    ],
+    "explanation": "Pjesma 'Valerie' izvorno je singl sastava The Zutons iz 2006.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Valerie_(The_Zutons_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7024-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Film",
+    "focus": "film The Truman Show glavni glumac",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "U kojem filmu Jim Carrey glumi čovjeka čiji je cijeli život zapravo televizijski reality show?",
+    "answers": [
+      "The Truman Show",
+      "Trumanov show"
+    ],
+    "explanation": "Jim Carrey glumi Trumana Burbanka u filmu 'The Truman Show'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Truman_Show"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7025-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Književnost",
+    "focus": "roman Životinjska farma svinja Napoleon",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem romanu Georgea Orwella svinja Napoleon postupno preuzima vlast nad ostalim životinjama?",
+    "answers": [
+      "Životinjska farma",
+      "Animal Farm"
+    ],
+    "explanation": "Napoleon je jedan od glavnih likova Orwellove 'Životinjske farme'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Animal_Farm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7026-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Sport",
+    "focus": "tenis Davis Cup muška reprezentativna natjecanja",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se zove poznato međunarodno ekipno natjecanje muških teniskih reprezentacija?",
+    "answers": [
+      "Davis Cup",
+      "Davisov kup"
+    ],
+    "explanation": "Davis Cup međunarodno je ekipno natjecanje u muškom tenisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Davis_Cup"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7027-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Zemljopis",
+    "focus": "država glavni grad Ljubljana rijeka Ljubljanica",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se državi nalazi Ljubljana, grad kroz koji protječe Ljubljanica?",
+    "answers": [
+      "Slovenija",
+      "Republika Slovenija"
+    ],
+    "explanation": "Ljubljana je glavni grad Slovenije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7028-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Povijest",
+    "focus": "povijesni Berlinski zid pad 1989",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, čime je simbolično započelo njegovo rušenje?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7029-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol natrij Na",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se kemijski element skriva iza simbola Na, izvedenog iz latinskog naziva natrium?",
+    "answers": [
+      "Natrij",
+      "Sodium"
+    ],
+    "explanation": "Simbol Na označava natrij.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7030-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Televizija",
+    "focus": "serija The Office Dunder Mifflin",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Papir, ured i šef Michael Scott: u kojoj se humorističnoj seriji pojavljuje tvrtka Dunder Mifflin?",
+    "answers": [
+      "The Office",
+      "Ured"
+    ],
+    "explanation": "Dunder Mifflin izmišljena je tvrtka u američkoj seriji 'The Office'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7031-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Umjetnost",
+    "focus": "slika Zvjezdana noć Van Gogh",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Vincent van Gogh naslikao je 'Zvjezdanu noć' 1889.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7032-20261119",
+    "createdAt": "2026-11-19T00:45:02+01:00",
+    "updatedAt": "2026-11-19T00:45:02+01:00",
+    "topic": "Gastronomija",
+    "focus": "japansko jelo okonomiyaki palačinka",
+    "difficulty": 3,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kupus, tijesto i dodaci po izboru peku se na ploči: kako se zove ovo japansko jelo nalik slanoj palačinki?",
+    "answers": [
+      "Okonomiyaki",
+      "Okonomijaki"
+    ],
+    "explanation": "Okonomiyaki je japansko jelo na bazi tijesta i kupusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okonomiyaki"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
