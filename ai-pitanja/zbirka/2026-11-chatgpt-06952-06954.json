@@ -1,0 +1,72 @@
+[
+  {
+    "id": "chatgpt10000-6952-20261118",
+    "createdAt": "2026-11-18T14:41:12+01:00",
+    "updatedAt": "2026-11-18T14:41:12+01:00",
+    "topic": "Astronomija",
+    "focus": "retrogradna putanja Tritona",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji najveći Neptunov mjesec obilazi svoj planet u smjeru suprotnom od njegove rotacije?",
+    "answers": [
+      "Triton"
+    ],
+    "explanation": "Triton ima retrogradnu orbitu i vjerojatno je zarobljen objekt Kuiperova pojasa.",
+    "sources": [
+      "https://science.nasa.gov/neptune/moons/triton/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6953-20261118",
+    "createdAt": "2026-11-18T14:41:12+01:00",
+    "updatedAt": "2026-11-18T14:41:12+01:00",
+    "topic": "Sport",
+    "focus": "bodovanje u badmintonu",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "U badmintonu se gem u pravilu igra do 21 boda. Kolika najmanja razlika u bodovima mora postojati za pobjedu prije rezultata 29:29?",
+    "answers": [
+      "2",
+      "Dva",
+      "Dva boda"
+    ],
+    "explanation": "Pobjednik mora imati dva boda prednosti, osim pri rezultatu 29:29 kada sljedeći bod odlučuje.",
+    "sources": [
+      "https://www.olympics.com/ioc/news/badminton-evolution-historical-glimpse-sport-over-decades"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6954-20261118",
+    "createdAt": "2026-11-18T14:41:12+01:00",
+    "updatedAt": "2026-11-18T14:41:12+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptunovo trajanje godine",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Kad bi rođendan slavio tek nakon svakog punog obilaska Neptuna oko Sunca, otprilike koliko bi zemaljskih godina čekao?",
+    "answers": [
+      "165",
+      "165 godina",
+      "Oko 165"
+    ],
+    "explanation": "Jedna Neptunova godina traje približno 165 zemaljskih godina.",
+    "sources": [
+      "https://science.nasa.gov/neptune/neptune-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
