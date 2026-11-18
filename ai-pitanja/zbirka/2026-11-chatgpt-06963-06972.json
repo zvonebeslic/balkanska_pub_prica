@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-6963-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Dancing in the Dark Brucea Springsteena",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji američki glazbenik pjeva hit 'Dancing in the Dark' s albuma 'Born in the U.S.A.'?",
+    "answers": [
+      "Bruce Springsteen"
+    ],
+    "explanation": "Pjesma je objavljena na Springsteenovu albumu iz 1984.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dancing_in_the_Dark_(Bruce_Springsteen_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6964-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Grand Budapest Hotel",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao film 'The Grand Budapest Hotel' iz 2014. godine?",
+    "answers": [
+      "Wes Anderson"
+    ],
+    "explanation": "Wes Anderson redatelj je filma The Grand Budapest Hotel.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6965-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Ime ruže",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao povijesni kriminalistički roman 'Ime ruže', smješten u srednjovjekovni samostan?",
+    "answers": [
+      "Umberto Eco"
+    ],
+    "explanation": "Ime ruže prvi je roman talijanskog pisca Umberta Eca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6966-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, simbolično označivši kraj podjele grada?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6967-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Novog Zelanda Wellington",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Auckland je najveći grad Novog Zelanda, no koji je njegov glavni grad?",
+    "answers": [
+      "Wellington"
+    ],
+    "explanation": "Wellington je glavni grad Novog Zelanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wellington"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6968-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Životinje",
+    "focus": "ptica kiwi Novi Zeland",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja novozelandska ptica ne leti, ima dugačak kljun i ime dijeli s poznatim voćem?",
+    "answers": [
+      "Kivi"
+    ],
+    "explanation": "Kivi je neletačica endemična za Novi Zeland.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6969-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Kemija",
+    "focus": "simbol natrija Na",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Kuhinjska sol sadrži klorid kojeg kemijskog elementa sa simbolom Na?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": "Natrijev klorid kemijski je naziv kuhinjske soli.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium_chloride"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6970-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Weba",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar u CERN-u osmislio World Wide Web?",
+    "answers": [
+      "Tim Berners-Lee"
+    ],
+    "explanation": "Tim Berners-Lee predložio je World Wide Web 1989. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6971-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "autor slike Krik",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je norveški slikar naslikao čuveni 'Krik'?",
+    "answers": [
+      "Edvard Munch"
+    ],
+    "explanation": "Krik je jedno od najpoznatijih djela Edvarda Muncha.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Scream"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6972-20261118",
+    "createdAt": "2026-11-18T18:43:10+01:00",
+    "updatedAt": "2026-11-18T18:43:10+01:00",
+    "topic": "Sport",
+    "focus": "zemlja porijekla juda",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Iz koje zemlje potječe borilački sport judo, koji je razvio Jigoro Kano?",
+    "answers": [
+      "Japan"
+    ],
+    "explanation": "Judo je nastao u Japanu krajem 19. stoljeća.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Judo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
