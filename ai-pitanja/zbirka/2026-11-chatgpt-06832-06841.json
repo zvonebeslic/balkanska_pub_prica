@@ -1,0 +1,218 @@
+[
+  {
+    "id": "chatgpt10000-6832-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Frida Kahlo i meksički autoportreti",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je meksička slikarica, poznata po autoportretima, bila u braku s muralistom Diegom Riverom?",
+    "answers": [
+      "Frida Kahlo",
+      "Frida Kalo"
+    ],
+    "explanation": "Frida Kahlo bila je meksička slikarica i supruga Diega Rivere.",
+    "sources": [
+      "https://www.moma.org/artists/2963-frida-kahlo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6833-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Glazba",
+    "focus": "reggae i jamajčanska glazba",
+    "difficulty": 1,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Koji je glazbeni žanr, povezan s Jamajkom i Bobom Marleyjem, prepoznatljiv po naglašenim udarcima izvan osnovnih doba?",
+    "answers": [
+      "Reggae",
+      "Rege"
+    ],
+    "explanation": "Reggae se razvio na Jamajci i povezuje se s Bobom Marleyjem.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6834-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Film",
+    "focus": "lik Forrest Gump",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji filmski lik iz naslova filma iz 1994. sjedi na klupi i prepričava svoj život neznancima?",
+    "answers": [
+      "Forrest Gump",
+      "Forest Gump"
+    ],
+    "explanation": "Forrest Gump glavni je lik istoimenog filma.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6835-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Sport",
+    "focus": "teniska podloga Wimbledon",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kakvoj se prirodnoj podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava",
+      "Travnat teren",
+      "Travnata podloga"
+    ],
+    "explanation": "Wimbledon je poznat po travnatim terenima.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6836-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Književnost",
+    "focus": "lik Kapetan Nemo",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem romanu Julesa Vernea kapetan Nemo plovi podmornicom Nautilus?",
+    "answers": [
+      "Dvadeset tisuća milja pod morem",
+      "20 000 milja pod morem",
+      "20000 milja pod morem"
+    ],
+    "explanation": "Nemo i Nautilus ključni su lik i plovilo romana.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6837-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Islanda",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kako se zove najsjeverniji glavni grad neke suverene države, smješten na Islandu?",
+    "answers": [
+      "Reykjavík",
+      "Reykjavik"
+    ],
+    "explanation": "Reykjavík je glavni grad Islanda.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6838-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza i kloroplasti",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koje biljne stanične organele pretvaraju svjetlosnu energiju u kemijsku tijekom fotosinteze?",
+    "answers": [
+      "Kloroplasti",
+      "Kloroplast"
+    ],
+    "explanation": "Fotosinteza u biljnim stanicama odvija se u kloroplastima.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6839-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Tehnologija",
+    "focus": "tipkovnički prečac Ctrl Z",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koja se radnja u većini računalnih programa izvršava pritiskom tipki Ctrl i Z?",
+    "answers": [
+      "Poništi",
+      "Poništavanje",
+      "Undo",
+      "Vrati prethodnu radnju"
+    ],
+    "explanation": "Ctrl+Z uobičajeni je prečac za poništavanje posljednje radnje.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6840-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, simbolično označivši kraj podjele Berlina?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6841-20261118",
+    "createdAt": "2026-11-18T02:43:53+01:00",
+    "updatedAt": "2026-11-18T02:43:53+01:00",
+    "topic": "Gastronomija",
+    "focus": "japanski wasabi",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove zelena, izrazito ljuta pasta koja se tradicionalno poslužuje uz sushi?",
+    "answers": [
+      "Wasabi",
+      "Vasabi"
+    ],
+    "explanation": "Wasabi je japanski začin od biljke Eutrema japonicum; komercijalne zamjene često sadrže hren.",
+    "sources": [],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
