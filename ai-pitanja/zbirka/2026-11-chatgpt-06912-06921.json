@@ -1,0 +1,234 @@
+[
+  {
+    "id": "chatgpt10000-6912-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black producent",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je producent s Amy Winehouse radio na hitu 'Rehab' i velikom dijelu albuma 'Back to Black'?",
+    "answers": [
+      "Mark Ronson",
+      "Ronson"
+    ],
+    "explanation": "Mark Ronson producirao je pjesmu Rehab.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rehab_(Amy_Winehouse_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6913-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion San Siro klubovi",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja dva milanska nogometna kluba dijele stadion San Siro?",
+    "answers": [
+      "Inter i Milan",
+      "AC Milan i Inter",
+      "Milan i Inter"
+    ],
+    "explanation": "Stadion Giuseppe Meazza dom je Intera i AC Milana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6914-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Film",
+    "focus": "film Arrival redatelj",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao znanstvenofantastični film 'Dolazak' (Arrival) iz 2016.?",
+    "answers": [
+      "Denis Villeneuve",
+      "Villeneuve"
+    ],
+    "explanation": "Denis Villeneuve režirao je film Arrival.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Arrival_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6915-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Književnost",
+    "focus": "roman Mali princ autor",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je francuski pisac i pilot napisao 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Saint-Exupéry",
+      "Antoine de Saint Exupery"
+    ],
+    "explanation": "Mali princ objavljen je 1943. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6916-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koja rijeka razdvaja Budim i Peštu, dvije povijesne cjeline Budimpešte?",
+    "answers": [
+      "Dunav"
+    ],
+    "explanation": "Dunav protječe kroz Budimpeštu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Budapest"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6917-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Životinje",
+    "focus": "okapi srodnost žirafa",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Iako ima prugaste noge nalik zebrama, kojoj je životinji okapi najbliži živući srodnik?",
+    "answers": [
+      "Žirafi",
+      "Žirafa"
+    ],
+    "explanation": "Okapi i žirafa jedini su živući pripadnici porodice žirafa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6918-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Kemija",
+    "focus": "simbol volframa",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji metal ima kemijski simbol W, prema nazivu wolfram?",
+    "answers": [
+      "Volfram",
+      "Wolfram",
+      "Tungsten"
+    ],
+    "explanation": "W je simbol kemijskog elementa volframa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6919-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Televizija",
+    "focus": "serija The Office Scranton",
+    "difficulty": 3,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "U kojem američkom gradu radi podružnica tvrtke Dunder Mifflin u američkoj seriji 'The Office'?",
+    "answers": [
+      "Scranton"
+    ],
+    "explanation": "Radnja američke serije The Office smještena je u Scranton u Pennsylvaniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6920-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Medicina",
+    "focus": "naziv za gubitak njuha",
+    "difficulty": 3,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se medicinskim nazivom zove potpuni gubitak osjeta mirisa?",
+    "answers": [
+      "Anosmija",
+      "Anosmia"
+    ],
+    "explanation": "Anosmija označava gubitak osjeta mirisa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anosmia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-6921-20261118",
+    "createdAt": "2026-11-18T10:36:00+01:00",
+    "updatedAt": "2026-11-18T10:36:00+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215 kralj",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koji je engleski kralj 1215. pristao na Veliku povelju sloboda (Magna Carta)?",
+    "answers": [
+      "Ivan Bez Zemlje",
+      "Ivan",
+      "John"
+    ],
+    "explanation": "Magna Carta povezana je s vladavinom engleskog kralja Ivana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
