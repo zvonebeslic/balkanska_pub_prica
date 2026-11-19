@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7274-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Glazba",
+    "focus": "izvođač pjesme Smooth Operator",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je britanska pjevačica sa svojim sastavom 1984. proslavila pjesmu 'Smooth Operator'?",
+    "answers": [
+      "Sade",
+      "Sade Adu"
+    ],
+    "explanation": "Sade je pjevačica sastava Sade, koji je objavio pjesmu Smooth Operator.",
+    "sources": [
+      "https://www.britannica.com/biography/Sade"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7275-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Sport",
+    "focus": "sport s izrazom birdie",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "U kojem sportu igrač ostvaruje 'birdie' kada završi rupu jednim udarcem manje od para?",
+    "answers": [
+      "Golf"
+    ],
+    "explanation": "Birdie u golfu znači rezultat jedan udarac ispod para na rupi.",
+    "sources": [
+      "https://www.britannica.com/sports/golf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7276-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Film",
+    "focus": "glumica glavne uloge u filmu Erin Brockovich",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je glumica osvojila Oscara za glavnu ulogu u filmu 'Erin Brockovich'?",
+    "answers": [
+      "Julia Roberts"
+    ],
+    "explanation": "Julia Roberts osvojila je Oscara za najbolju glavnu glumicu za Erin Brockovich.",
+    "sources": [
+      "https://www.oscars.org/oscars/ceremonies/2001"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7277-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Gospodar muha",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Ralph i Piggy dječaci su iz romana 'Gospodar muha'. Tko je napisao taj roman?",
+    "answers": [
+      "William Golding",
+      "Golding"
+    ],
+    "explanation": "William Golding autor je romana Gospodar muha.",
+    "sources": [
+      "https://www.britannica.com/topic/Lord-of-the-Flies"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7278-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Zemljopis",
+    "focus": "grad na ušću rijeke Tejo",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji europski glavni grad leži na ušću rijeke Tejo u Atlantski ocean?",
+    "answers": [
+      "Lisabon",
+      "Lisbon"
+    ],
+    "explanation": "Lisabon je glavni grad Portugala na estuariju rijeke Tejo.",
+    "sources": [
+      "https://www.britannica.com/place/Lisbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7279-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Kemija",
+    "focus": "element u grafitnoj olovci",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Iako je zovemo običnom olovkom, njezina mina najčešće sadrži grafit. Od kojeg je kemijskog elementa grafit građen?",
+    "answers": [
+      "Ugljik",
+      "Carbon"
+    ],
+    "explanation": "Grafit je jedan od alotropskih oblika ugljika.",
+    "sources": [
+      "https://www.britannica.com/science/graphite-carbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7280-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Životinje",
+    "focus": "životinja koja proizvodi bisere",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji morski mekušac može oko stranog tijela stvarati slojeve sedefa i tako oblikovati biser?",
+    "answers": [
+      "Kamenica",
+      "Biserna kamenica",
+      "Oyster"
+    ],
+    "explanation": "Biseri nastaju taloženjem sedefa u određenih mekušaca, uključujući biserne kamenice.",
+    "sources": [
+      "https://www.britannica.com/science/pearl-gem"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7281-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Povijest",
+    "focus": "brod Mayflower",
+    "difficulty": 2,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Kako se zvao brod kojim je 1620. skupina engleskih doseljenika doplovila do obala današnjeg Massachusettsa?",
+    "answers": [
+      "Mayflower"
+    ],
+    "explanation": "Mayflower je 1620. prevezao skupinu engleskih doseljenika u Sjevernu Ameriku.",
+    "sources": [
+      "https://www.britannica.com/topic/Mayflower-ship"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7282-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Tehnologija",
+    "focus": "značenje kratice PDF",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji se engleski izraz krije iza kratice PDF, poznatog formata elektroničkih dokumenata?",
+    "answers": [
+      "Portable Document Format"
+    ],
+    "explanation": "PDF znači Portable Document Format.",
+    "sources": [
+      "https://www.adobe.com/acrobat/about-adobe-pdf.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7283-20261119",
+    "createdAt": "2026-11-19T22:44:28+01:00",
+    "updatedAt": "2026-11-19T22:44:28+01:00",
+    "topic": "Gastronomija",
+    "focus": "glavni sastojak humusa",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U zdjelici su tahini, limun i maslinovo ulje, ali bez koje mahunarke nema klasičnog humusa?",
+    "answers": [
+      "Slanutak",
+      "Leblebija",
+      "Chickpea"
+    ],
+    "explanation": "Humus se tradicionalno priprema od kuhanog slanutka i tahinija.",
+    "sources": [
+      "https://www.britannica.com/topic/hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
