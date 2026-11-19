@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7244-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Dreams sastav Fleetwood Mac",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je sastav objavio pjesmu 'Dreams' na albumu 'Rumours' 1977. godine?",
+    "answers": [
+      "Fleetwood Mac"
+    ],
+    "explanation": "Dreams je pjesma Fleetwood Maca sa slavnog albuma Rumours.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dreams_(Fleetwood_Mac_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7245-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion San Siro dva milanska kluba",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Inter i Milan desetljećima dijele stadion koji je poznat pod kojim imenom?",
+    "answers": [
+      "San Siro",
+      "Giuseppe Meazza",
+      "Stadio Giuseppe Meazza"
+    ],
+    "explanation": "San Siro je poznat i kao stadion Giuseppe Meazza.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7246-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Cinema Paradiso",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Film 'Cinema Paradiso' osvojio je Oscara za najbolji strani film. Tko ga je režirao?",
+    "answers": [
+      "Giuseppe Tornatore"
+    ],
+    "explanation": "Talijanski redatelj Giuseppe Tornatore režirao je Cinema Paradiso.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cinema_Paradiso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7247-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Ime ruže",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Franjevac William od Baskervillea istražuje tajanstvene smrti u romanu 'Ime ruže'. Tko je autor?",
+    "answers": [
+      "Umberto Eco"
+    ],
+    "explanation": "Ime ruže roman je talijanskog književnika Umberta Eca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7248-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka koja protječe kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja europska rijeka prolazi kroz Beč, Bratislavu, Budimpeštu i Beograd?",
+    "answers": [
+      "Dunav",
+      "Danube"
+    ],
+    "explanation": "Dunav protječe kroz sva četiri glavna grada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Danube"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7249-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol za srebro Ag",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Na nakitu se često susreće oznaka Ag. Koji kemijski element nosi taj simbol?",
+    "answers": [
+      "Srebro"
+    ],
+    "explanation": "Ag dolazi od latinskog naziva argentum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7250-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Životinje",
+    "focus": "sisavac koji polaže jaja kljunaš",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac polaže jaja i ima kljun nalik pačjem?",
+    "answers": [
+      "Kljunaš",
+      "Čudnovati kljunaš",
+      "Platypus"
+    ],
+    "explanation": "Kljunaš je jedno od malobrojnih živućih sisavaca koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7251-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Povijest",
+    "focus": "godina pada Carigrada",
+    "difficulty": 3,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine osmanska vojska Mehmeda II. osvojila Carigrad?",
+    "answers": [
+      "1453",
+      "1453."
+    ],
+    "explanation": "Pad Carigrada dogodio se 29. svibnja 1453.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7252-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Tehnologija",
+    "focus": "računalni jezik JavaScript",
+    "difficulty": 2,
+    "styleId": 59,
+    "styleDescription": "Opiši tehničku inovaciju kroz problem koji je riješila",
+    "question": "Koji se programski jezik često koristi u pregledniku kako bi web-stranice reagirale na klikove i unos korisnika?",
+    "answers": [
+      "JavaScript",
+      "JS"
+    ],
+    "explanation": "JavaScript je standardni skriptni jezik interaktivnih web-stranica.",
+    "sources": [
+      "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7253-20261119",
+    "createdAt": "2026-11-19T19:42:02+01:00",
+    "updatedAt": "2026-11-19T19:42:02+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert panna cotta",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Vrhnje, šećer i želatina pretvaraju se u nježan talijanski desert koji se često poslužuje s voćnim umakom. Kako se zove?",
+    "answers": [
+      "Panna cotta",
+      "Panakota"
+    ],
+    "explanation": "Panna cotta talijanski je desert od zaslađenog vrhnja koje se učvršćuje želatinom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Panna_cotta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
