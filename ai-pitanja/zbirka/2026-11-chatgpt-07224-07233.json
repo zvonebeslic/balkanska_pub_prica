@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7224-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Zombie The Cranberries",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji irski rock sastav izvodi pjesmu 'Zombie' iz 1994. godine?",
+    "answers": [
+      "The Cranberries",
+      "Cranberries"
+    ],
+    "explanation": "Pjesma 'Zombie' objavljena je na albumu No Need to Argue.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Zombie_(The_Cranberries_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7225-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Borussia Dortmund",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem stadionu svoje domaće utakmice igra Borussia Dortmund, poznata po velikoj žutoj tribini?",
+    "answers": [
+      "Signal Iduna Park",
+      "Westfalenstadion"
+    ],
+    "explanation": "Stadion je poznat i pod povijesnim imenom Westfalenstadion.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Westfalenstadion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7226-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Jurski park",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao prvi film 'Jurski park' iz 1993. godine?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Steven Spielberg režirao je film Jurassic Park iz 1993.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7227-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Sto godina samoće",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je kolumbijski nobelovac napisao roman 'Sto godina samoće'?",
+    "answers": [
+      "Gabriel García Márquez",
+      "Gabriel Garcia Marquez",
+      "García Márquez"
+    ],
+    "explanation": "Roman je jedno od najpoznatijih djela Gabriela Garcíje Márqueza.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7228-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Zemljopis",
+    "focus": "država grad Valparaíso",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se južnoameričkoj državi nalazi lučki grad Valparaíso, nedaleko od Santiaga?",
+    "answers": [
+      "Čile",
+      "Chile"
+    ],
+    "explanation": "Valparaíso je značajna čileanska luka na Tihom oceanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Valpara%C3%ADso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7229-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol srebra Ag",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji kemijski element u periodnom sustavu nosi simbol Ag, izveden iz latinskog naziva argentum?",
+    "answers": [
+      "Srebro"
+    ],
+    "explanation": "Ag je simbol srebra, od latinskog argentum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Silver"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7230-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Životinje",
+    "focus": "najveći živući glodavac",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja južnoamerička životinja, česta uz rijeke i močvare, nosi titulu najvećeg živućeg glodavca?",
+    "answers": [
+      "Kapibara",
+      "Capybara"
+    ],
+    "explanation": "Kapibara je najveći živući glodavac.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Capybara"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7231-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Povijest",
+    "focus": "Napoleon poraz Waterloo",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Kod kojeg je belgijskog mjesta Napoleon doživio konačni vojni poraz 1815. godine?",
+    "answers": [
+      "Waterloo"
+    ],
+    "explanation": "Bitka kod Waterlooa vođena je 18. lipnja 1815.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Battle_of_Waterloo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7232-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Tehnologija",
+    "focus": "programski jezik JavaScript Brendan Eich",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je programer 1995. razvio jezik JavaScript tijekom rada u Netscapeu?",
+    "answers": [
+      "Brendan Eich"
+    ],
+    "explanation": "Brendan Eich stvorio je JavaScript u Netscapeu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Brendan_Eich"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7233-20261119",
+    "createdAt": "2026-11-19T18:38:31+01:00",
+    "updatedAt": "2026-11-19T18:38:31+01:00",
+    "topic": "Gastronomija",
+    "focus": "japanska juha miso",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove japanska juha čija je osnova fermentirana pasta od soje, često poslužena uz tofu?",
+    "answers": [
+      "Miso juha",
+      "Miso"
+    ],
+    "explanation": "Miso juha priprema se od miso paste i temeljca dashi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Miso_soup"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
