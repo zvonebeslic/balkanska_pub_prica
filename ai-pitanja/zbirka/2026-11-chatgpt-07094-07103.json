@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7094-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Televizija",
+    "focus": "Friends Central Perk",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Šest prijatelja, stanovi na Manhattanu i kafić Central Perk: koju američku humorističnu seriju opisujemo?",
+    "answers": [
+      "Prijatelji",
+      "Friends"
+    ],
+    "explanation": "Central Perk kultni je kafić serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7095-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa Jupiter mjesec",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Ledena površina i mogući podzemni ocean obilježja su Europe, prirodnog satelita kojeg planeta?",
+    "answers": [
+      "Jupiter",
+      "Jupitera"
+    ],
+    "explanation": "Europa je jedan od Jupiterovih velikih mjeseca.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/moons/europa/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7096-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Medicina",
+    "focus": "dermatolog koža",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Grčka riječ 'derma' znači koža. Kako se zove liječnik specijalist za bolesti kože?",
+    "answers": [
+      "Dermatolog",
+      "Dermatologinja"
+    ],
+    "explanation": "Dermatologija je medicinska specijalnost koja proučava kožu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7097-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Guernica Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Slika 'Guernica' nastala je kao reakcija na bombardiranje baskijskog grada 1937. Tko ju je naslikao?",
+    "answers": [
+      "Pablo Picasso",
+      "Pikaso"
+    ],
+    "explanation": "Picasso je naslikao Guernicu 1937.",
+    "sources": [
+      "https://www.museoreinasofia.es/en/collection/artwork/guernica"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7098-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris Aleksej Pažitnov",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je sovjetski programer 1984. osmislio videoigru Tetris?",
+    "answers": [
+      "Aleksej Pažitnov",
+      "Alexey Pajitnov",
+      "Alexey Pazhitnov"
+    ],
+    "explanation": "Tetris je osmislio Aleksej Pažitnov.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alexey_Pajitnov"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7099-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Brendovi",
+    "focus": "IKEA Ingvar Kamprad",
+    "difficulty": 2,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "Koji je švedski poduzetnik osnovao IKEA-u 1943. kao tinejdžer?",
+    "answers": [
+      "Ingvar Kamprad"
+    ],
+    "explanation": "Ingvar Kamprad osnovao je IKEA-u 1943.",
+    "sources": [
+      "https://www.ikea.com/global/en/our-business/in-brief/ikea-history/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7100-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom riječ",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom ima isti niz znakova u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7101-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Nogomet",
+    "focus": "Maradona Napoli",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Diego Maradona osvojio je s Napolijem dva naslova prvaka Italije. U kojem je talijanskom gradu taj klub?",
+    "answers": [
+      "Napulj",
+      "Napoli"
+    ],
+    "explanation": "SSC Napoli klub je iz Napulja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/SSC_Napoli"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7102-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza kloroplast",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji stanični organel u biljkama sadrži klorofil i mjesto je fotosinteze?",
+    "answers": [
+      "Kloroplast"
+    ],
+    "explanation": "Kloroplasti omogućuju fotosintezu u biljnim stanicama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chloroplast"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7103-20261119",
+    "createdAt": "2026-11-19T06:38:46+01:00",
+    "updatedAt": "2026-11-19T06:38:46+01:00",
+    "topic": "Promet",
+    "focus": "Orient Express Pariz Istanbul",
+    "difficulty": 3,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koji je slavni luksuzni vlak, prvi put pokrenut 1883., povezivao zapadnu Europu s Carigradom?",
+    "answers": [
+      "Orient Express",
+      "Orijent ekspres"
+    ],
+    "explanation": "Orient Express povijesna je međunarodna željeznička linija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Orient_Express"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
