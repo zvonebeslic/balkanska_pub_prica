@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-7184-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Take Me Out",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji škotski indie rock sastav izvodi hit 'Take Me Out' iz 2004.?",
+    "answers": [
+      "Franz Ferdinand"
+    ],
+    "explanation": "Sastav Franz Ferdinand objavio je pjesmu na istoimenom albumu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Take_Me_Out_(song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7185-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Film",
+    "focus": "film The Grand Budapest Hotel",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "U kojem filmu Wesa Andersona Ralph Fiennes glumi hotelskog conciergea Gustavea H.?",
+    "answers": [
+      "The Grand Budapest Hotel",
+      "Grand Budapest Hotel"
+    ],
+    "explanation": "Ralph Fiennes glumi Gustavea H. u filmu iz 2014.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7186-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Nogomet",
+    "focus": "klub Atalanta",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji talijanski nogometni klub iz Bergama nosi nadimak La Dea?",
+    "answers": [
+      "Atalanta",
+      "Atalanta BC"
+    ],
+    "explanation": "Atalanta iz Bergama poznata je pod nadimkom La Dea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Atalanta_BC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7187-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Književnost",
+    "focus": "roman Ime ruže",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je talijanski književnik napisao roman 'Ime ruže'?",
+    "answers": [
+      "Umberto Eco",
+      "Eco"
+    ],
+    "explanation": "Umberto Eco autor je romana iz 1980.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7188-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka Po",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koja najduža talijanska rijeka protječe kroz Torino i ulijeva se u Jadransko more?",
+    "answers": [
+      "Po",
+      "Pad"
+    ],
+    "explanation": "Po je najduža rijeka Italije i utječe u Jadran.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Po_(river)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7189-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Biologija",
+    "focus": "biljka aloe vera",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Iz koje se sukulentne biljke dobiva gel često korišten u kozmetici nakon sunčanja?",
+    "answers": [
+      "Aloe vera",
+      "aloja",
+      "aloe"
+    ],
+    "explanation": "Gel aloe vere koristi se u kozmetičkim pripravcima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aloe_vera"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7190-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Kako se zove povelja koju je engleski kralj Ivan bez Zemlje prihvatio 1215. godine?",
+    "answers": [
+      "Magna Carta",
+      "Velika povelja sloboda"
+    ],
+    "explanation": "Magna Carta dogovorena je 1215. u Runnymedeu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7191-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja vrsta dvodimenzionalnog koda obično ima tri velika kvadratna orijentacijska uzorka u kutovima?",
+    "answers": [
+      "QR kod",
+      "QR code"
+    ],
+    "explanation": "QR kod ima karakteristične uzorke za prepoznavanje položaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7192-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Astronomija",
+    "focus": "mjesec Enceladus",
+    "difficulty": 4,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji Saturnov mjesec izbacuje mlazove vodene pare i ledenih čestica iz područja južnog pola?",
+    "answers": [
+      "Enceladus"
+    ],
+    "explanation": "Enceladus ima aktivne ledene gejzire.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Enceladus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7193-20261119",
+    "createdAt": "2026-11-19T14:41:07+01:00",
+    "updatedAt": "2026-11-19T14:41:07+01:00",
+    "topic": "Gastronomija",
+    "focus": "jelo shakshuka",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove jelo od jaja poširanih u umaku od rajčice i paprike, popularno u sjevernoj Africi?",
+    "answers": [
+      "Shakshuka",
+      "šakšuka"
+    ],
+    "explanation": "Shakshuka je jelo s jajima u začinjenom umaku od rajčice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shakshouka"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
