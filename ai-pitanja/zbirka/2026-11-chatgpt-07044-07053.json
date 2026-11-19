@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-7044-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA Waterloo Eurosong 1974",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Švedski sastav ABBA pobijedio je 1974. na Eurosongu pjesmom 'Waterloo'. U kojem se gradu održalo to natjecanje?",
+    "answers": [
+      "Brighton"
+    ],
+    "explanation": "Natjecanje za pjesmu Eurovizije 1974. održano je u Brightonu u Engleskoj.",
+    "sources": [
+      "https://eurovision.tv/event/brighton-1974"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7045-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Film",
+    "focus": "Spirited Away redatelj",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Film 'Avanture male Chihiro' osvojio je Oscara za najbolji animirani film. Koji ga je japanski redatelj režirao?",
+    "answers": [
+      "Hayao Miyazaki",
+      "Miyazaki"
+    ],
+    "explanation": "Hayao Miyazaki režirao je animirani film Spirited Away.",
+    "sources": [
+      "https://www.oscars.org/oscars/ceremonies/2003"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7046-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Sport",
+    "focus": "Wimbledon podloga",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kojoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava",
+      "Travnata podloga"
+    ],
+    "explanation": "Wimbledon se igra na travnatim terenima.",
+    "sources": [
+      "https://www.wimbledon.com/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7047-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Književnost",
+    "focus": "Sherlock Holmes Watson autor",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Doktor Watson pomaže Sherlocku Holmesu u rješavanju zagonetnih slučajeva. Tko je napisao priče o tom detektivu?",
+    "answers": [
+      "Arthur Conan Doyle",
+      "Conan Doyle"
+    ],
+    "explanation": "Arthur Conan Doyle stvorio je lik Sherlocka Holmesa.",
+    "sources": [
+      "https://www.britannica.com/topic/Sherlock-Holmes"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7048-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Zemljopis",
+    "focus": "Dunav Bratislava Budimpešta",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Bratislava i Budimpešta leže na istoj velikoj europskoj rijeci. Kojoj?",
+    "answers": [
+      "Dunav"
+    ],
+    "explanation": "Dunav protječe kroz Bratislavu i Budimpeštu.",
+    "sources": [
+      "https://www.britannica.com/place/Danube-River"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7049-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Kemija",
+    "focus": "bakar električni vodiči",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se metal, kemijskog simbola Cu, često koristi za električne vodiče i vodovodne cijevi?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Bakar je dobar vodič električne energije i ima simbol Cu.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/29/copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7050-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Životinje",
+    "focus": "koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski tobolčar najveći dio prehrane temelji na lišću eukaliptusa?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koale su tobolčari koji se hrane pretežno eukaliptusovim lišćem.",
+    "sources": [
+      "https://www.britannica.com/animal/koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7051-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida godina",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Berlinski zid počeo se rušiti nakon otvaranja granice u studenome koje godine?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://www.britannica.com/topic/Berlin-Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7052-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR code značenje",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Što označavaju slova QR u nazivu dvodimenzionalnog koda koji se skenira mobitelom?",
+    "answers": [
+      "Quick Response",
+      "Brzi odgovor"
+    ],
+    "explanation": "QR je kratica za Quick Response.",
+    "sources": [
+      "https://www.qrcode.com/en/about/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7053-20261119",
+    "createdAt": "2026-11-19T03:40:33+01:00",
+    "updatedAt": "2026-11-19T03:40:33+01:00",
+    "topic": "Umjetnost",
+    "focus": "Mona Lisa Louvre",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "U kojem se pariškom muzeju čuva Leonardova 'Mona Lisa'?",
+    "answers": [
+      "Louvre",
+      "Muzej Louvre"
+    ],
+    "explanation": "Mona Lisa dio je zbirke muzeja Louvre.",
+    "sources": [
+      "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
