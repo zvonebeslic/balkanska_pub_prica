@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7114-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black Amy Winehouse",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Album 'Back to Black' iz 2006. sadrži pjesmu 'Rehab'. Koja ga je britanska pjevačica objavila?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album je objavila Amy Winehouse 2006.",
+    "sources": [
+      "https://www.britannica.com/biography/Amy-Winehouse"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7115-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Parazit Bong Joon-ho",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Južnokorejski film 'Parazit' osvojio je Oscara za najbolji film 2020. Tko ga je režirao?",
+    "answers": [
+      "Bong Joon-ho",
+      "Bong Joon Ho"
+    ],
+    "explanation": "Bong Joon-ho režirao je film 'Parazit' (2019.).",
+    "sources": [
+      "https://www.oscars.org/oscars/ceremonies/2020"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7116-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka koja protječe kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Prolazi kroz Beč, Bratislavu i Budimpeštu prije nego što stigne do Crnog mora. Koja je to rijeka?",
+    "answers": [
+      "Dunav",
+      "Danube"
+    ],
+    "explanation": "Dunav povezuje nekoliko europskih glavnih gradova.",
+    "sources": [
+      "https://www.britannica.com/place/Danube-River"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7117-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Sto godina samoće",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Obitelj Buendía i izmišljeni grad Macondo obilježavaju roman 'Sto godina samoće'. Tko ga je napisao?",
+    "answers": [
+      "Gabriel García Márquez",
+      "Gabriel Garcia Marquez"
+    ],
+    "explanation": "Gabriel García Márquez autor je romana 'Sto godina samoće'.",
+    "sources": [
+      "https://www.britannica.com/biography/Gabriel-Garcia-Marquez"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7118-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Sport",
+    "focus": "olimpijski sport curling",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem zimskom olimpijskom sportu natjecatelji guraju granitno kamenje po ledu, a suigrači četkama utječu na njegovo kretanje?",
+    "answers": [
+      "Curling",
+      "Karling"
+    ],
+    "explanation": "Curling se igra na ledu uz kamenje i četke.",
+    "sources": [
+      "https://olympics.com/en/sports/curling/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7119-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol kalija K",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Latinski naziv 'kalium' dao je kemijskom elementu simbol K. Kako taj element nazivamo na hrvatskom?",
+    "answers": [
+      "Kalij"
+    ],
+    "explanation": "Kalij je kemijski element sa simbolom K.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/19/potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7120-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Životinje",
+    "focus": "najveća vrsta mačke tigar",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je najveća živuća vrsta divlje mačke, poznata po životu u Aziji i samotnjačkom lovu?",
+    "answers": [
+      "Tigar"
+    ],
+    "explanation": "Tigar je najveća živuća vrsta mačke.",
+    "sources": [
+      "https://www.britannica.com/animal/tiger"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7121-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Web Tim Berners-Lee",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski računalni znanstvenik u CERN-u 1989. predložio sustav iz kojeg je nastao World Wide Web?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee"
+    ],
+    "explanation": "Tim Berners-Lee osmislio je World Wide Web u CERN-u.",
+    "sources": [
+      "https://home.cern/science/computing/birth-web"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7122-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "slika Djevojka s bisernom naušnicom",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Na poznatoj slici Johannesa Vermeera djevojka se osvrće prema promatraču. Koji komad nakita nosi u naslovu djela?",
+    "answers": [
+      "Biserna naušnica",
+      "Naušnica",
+      "Biserna nausnica"
+    ],
+    "explanation": "Slika je poznata kao 'Djevojka s bisernom naušnicom'.",
+    "sources": [
+      "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7123-20261119",
+    "createdAt": "2026-11-19T08:42:00+01:00",
+    "updatedAt": "2026-11-19T08:42:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Jupiterova Velika crvena pjega",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Velika crvena pjega golema je oluja u atmosferi kojeg planeta Sunčeva sustava?",
+    "answers": [
+      "Jupiter",
+      "Jupitera"
+    ],
+    "explanation": "Velika crvena pjega dugotrajna je oluja na Jupiteru.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/jupiter-facts/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
