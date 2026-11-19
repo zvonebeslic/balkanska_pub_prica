@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-7164-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Smooth Criminal",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koji je pjevač u spotu za 'Smooth Criminal' izveo prepoznatljiv nagib tijela prema naprijed?",
+    "answers": [
+      "Michael Jackson"
+    ],
+    "explanation": "Točan odgovor je Michael Jackson.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Smooth_Criminal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7165-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Amélie",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Francuska konobarica Amélie mijenja živote ljudi oko sebe u filmu iz 2001. Tko je režirao taj film?",
+    "answers": [
+      "Jean-Pierre Jeunet"
+    ],
+    "explanation": "Točan odgovor je Jean-Pierre Jeunet.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7166-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Sport",
+    "focus": "teniska podloga Roland Garros",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kakvoj se podlozi tradicionalno igra teniski turnir Roland-Garros?",
+    "answers": [
+      "Zemlja"
+    ],
+    "explanation": "Točan odgovor je Zemlja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_Open"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7167-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Književnost",
+    "focus": "lik Atticus Finch",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "U romanu 'Ubiti pticu rugalicu' Atticus Finch brani optuženog muškarca na sudu. Tko je napisao roman?",
+    "answers": [
+      "Harper Lee"
+    ],
+    "explanation": "Točan odgovor je Harper Lee.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7168-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Estonije",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Stari grad ovog baltičkog glavnog grada poznat je po srednjovjekovnim zidinama, a država mu je Estonija. Koji je to grad?",
+    "answers": [
+      "Tallinn"
+    ],
+    "explanation": "Točan odgovor je Tallinn.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tallinn"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7169-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza klorofil",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji zeleni pigment u biljkama upija svjetlost potrebnu za fotosintezu?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Točan odgovor je Klorofil.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7170-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Povijest",
+    "focus": "pad Bastille",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koja je pariška utvrda i zatvor osvojena 14. srpnja 1789., u događaju koji je postao simbol Francuske revolucije?",
+    "answers": [
+      "Bastille"
+    ],
+    "explanation": "Točan odgovor je Bastille.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Storming_of_the_Bastille"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7171-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja se dvoslovna kratica koristi za dvodimenzionalni kod koji mobitel može očitati kamerom?",
+    "answers": [
+      "QR"
+    ],
+    "explanation": "Točan odgovor je QR.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7172-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert tiramisu",
+    "difficulty": 1,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Piškote se natope kavom, slože s kremom od mascarponea i pospu kakaom. Koji talijanski desert nastaje?",
+    "answers": [
+      "Tiramisu"
+    ],
+    "explanation": "Točan odgovor je Tiramisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7173-20261119",
+    "createdAt": "2026-11-19T12:43:05+01:00",
+    "updatedAt": "2026-11-19T12:43:05+01:00",
+    "topic": "Astronomija",
+    "focus": "Jupiterov mjesec Europa",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Jupiterov mjesec ispod ledene kore vjerojatno skriva globalni ocean i nosi ime lika iz grčke mitologije?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "Točan odgovor je Europa.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/moons/europa/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
