@@ -26,17 +26,17 @@
     "createdAt": "2026-11-19T10:35:16+01:00",
     "updatedAt": "2026-11-19T10:35:16+01:00",
     "topic": "Film",
-    "focus": "redatelj filma Grand Budapest Hotel",
+    "focus": "redatelj filma Arrival",
     "difficulty": 2,
     "styleId": 18,
     "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
-    "question": "Ralph Fiennes glumi gospodina Gustavea u filmu 'The Grand Budapest Hotel'. Tko je režirao taj film?",
+    "question": "Znanstvenica Louise Banks pokušava razumjeti jezik izvanzemaljaca u filmu 'Arrival' iz 2016. Tko ga je režirao?",
     "answers": [
-      "Wes Anderson"
+      "Denis Villeneuve"
     ],
-    "explanation": "Film iz 2014. režirao je Wes Anderson.",
+    "explanation": "Znanstvenofantastični film 'Arrival' režirao je Denis Villeneuve.",
     "sources": [
-      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+      "https://en.wikipedia.org/wiki/Arrival_(film)"
     ],
     "image": null,
     "type": "blitz",
@@ -116,17 +116,17 @@
     "createdAt": "2026-11-19T10:35:16+01:00",
     "updatedAt": "2026-11-19T10:35:16+01:00",
     "topic": "Kemija",
-    "focus": "kemijski simbol Sn",
+    "focus": "kemijski simbol Sb",
     "difficulty": 2,
     "styleId": 14,
     "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
-    "question": "Kemijski simbol Sn potječe od latinskog naziva 'stannum'. Koji metal označava?",
+    "question": "Kemijski simbol Sb potječe od latinskog naziva 'stibium'. Koji element označava?",
     "answers": [
-      "Kositar"
+      "Antimon"
     ],
-    "explanation": "Sn je simbol za kositar, od latinskog stannum.",
+    "explanation": "Antimon ima kemijski simbol Sb, prema latinskom nazivu stibium.",
     "sources": [
-      "https://en.wikipedia.org/wiki/Tin"
+      "https://en.wikipedia.org/wiki/Antimony"
     ],
     "image": null,
     "type": "blitz",
@@ -160,18 +160,18 @@
     "createdAt": "2026-11-19T10:35:16+01:00",
     "updatedAt": "2026-11-19T10:35:16+01:00",
     "topic": "Povijest",
-    "focus": "pad Berlinskog zida",
+    "focus": "Revolucija karanfila u Portugalu",
     "difficulty": 1,
-    "styleId": 11,
-    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
-    "question": "Koje je godine otvoren Berlinski zid, što je postalo simbolom kraja podjele istočne i zapadne Njemačke?",
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Godine 1974. vojnim prevratom u Portugalu okončana je dugogodišnja diktatura. Po kojem je cvijetu taj događaj dobio ime?",
     "answers": [
-      "1989",
-      "1989."
+      "Karanfil",
+      "Karanfilu"
     ],
-    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "explanation": "Revolucija karanfila 25. travnja 1974. otvorila je put demokraciji u Portugalu.",
     "sources": [
-      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+      "https://en.wikipedia.org/wiki/Carnation_Revolution"
     ],
     "image": null,
     "type": "blitz",
