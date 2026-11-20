@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7478-20261120",
+    "createdAt": "2026-11-20T15:35:47+01:00",
+    "updatedAt": "2026-11-20T15:35:47+01:00",
+    "topic": "Tehnologija",
+    "focus": "Ada Lovelace prvi program",
+    "difficulty": 2,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je matematičarka u 19. stoljeću opisala algoritam za Babbageov analitički stroj, zbog čega se često naziva prvom programerkom?",
+    "answers": [
+      "Ada Lovelace",
+      "Augusta Ada Lovelace"
+    ],
+    "explanation": "Ada Lovelace napisala je opis algoritma za izračun Bernoullijevih brojeva na analitičkom stroju.",
+    "sources": [
+      "https://www.unesco.org/es/virtual-science-museum/women-science/ada-lovelace"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
