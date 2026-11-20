@@ -6,9 +6,9 @@
     "topic": "Glazba",
     "focus": "pjesma Take Me Out Franz Ferdinand",
     "difficulty": 2,
-    "styleId": 63,
-    "styleDescription": "Kreni od poznate pjesme i traži spomenuto mjesto",
-    "question": "Koji škotski bend izvodi hit 'Take Me Out' iz 2004. godine?",
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je škotski bend objavio album prvijenac 2004. godine, s kojeg dolazi i hit 'Take Me Out'?",
     "answers": [
       "Franz Ferdinand"
     ],
@@ -52,9 +52,9 @@
     "topic": "Film",
     "focus": "film Trumanov show glavni lik Jim Carrey",
     "difficulty": 2,
-    "styleId": 54,
-    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
-    "question": "U kojem filmu Jim Carrey glumi čovjeka koji ne zna da je njegov svakodnevni život televizijski program?",
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Koji film iz 1998. prikazuje naizgled običan gradić, skriveni televizijski studio i Jima Carreyja u glavnoj ulozi?",
     "answers": [
       "Trumanov show",
       "The Truman Show"
@@ -77,12 +77,13 @@
     "difficulty": 2,
     "styleId": 31,
     "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
-    "question": "Koji književni junak živi na asteroidu B-612 i brine se o svojoj ruži?",
+    "question": "Tko je napisao priču o dječaku s asteroida B-612 koji se brine o svojoj ruži?",
     "answers": [
-      "Mali princ",
-      "Le Petit Prince"
+      "Antoine de Saint-Exupéry",
+      "Antoine de Saint Exupery",
+      "Saint-Exupéry"
     ],
-    "explanation": "Mali princ glavni je lik djela Antoinea de Saint-Exupéryja.",
+    "explanation": "Antoine de Saint-Exupéry autor je Malog princa, čiji junak dolazi s asteroida B-612.",
     "sources": [
       "https://en.wikipedia.org/wiki/The_Little_Prince"
     ],
@@ -122,7 +123,7 @@
     "difficulty": 3,
     "styleId": 17,
     "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
-    "question": "Koji meksički vodozemac, poznat po vanjskim škrgama, može regenerirati izgubljene udove?",
+    "question": "Koji meksički vodozemac, poznat po sposobnosti regeneracije izgubljenih udova, cijeli život može zadržati ličinačke značajke?",
     "answers": [
       "aksolotl",
       "axolotl"
@@ -143,9 +144,9 @@
     "topic": "Kemija",
     "focus": "natrijev bikarbonat soda bikarbona",
     "difficulty": 1,
-    "styleId": 38,
-    "styleDescription": "Kreni od jezika pa pitaj koje je značenje posuđenice",
-    "question": "Koji je svakodnevni naziv za natrijev hidrogenkarbonat, bijeli prah koji se koristi i pri pečenju kolača?",
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva natrijev hidrogenkarbonat, tvar čiji naziv podsjeća na gazirano piće, ali se koristi i za dizanje tijesta?",
     "answers": [
       "soda bikarbona",
       "soda bikarbonat"
@@ -189,13 +190,13 @@
     "topic": "Tehnologija",
     "focus": "Bluetooth naziv kralj Harald Plavozubi",
     "difficulty": 3,
-    "styleId": 14,
-    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
-    "question": "Po kojem je danskom kralju iz 10. stoljeća nazvana bežična tehnologija Bluetooth?",
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koje je ime nosio danski kralj iz 10. stoljeća s nadimkom Plavozubi, po kojem je nazvana tehnologija Bluetooth?",
     "answers": [
-      "Harald Plavozubi",
-      "Harald Bluetooth",
-      "Harald I. Plavozubi"
+      "Harald",
+      "Harald I.",
+      "Harald Plavozubi"
     ],
     "explanation": "Naziv Bluetooth potječe od nadimka danskog kralja Haralda Plavozubog.",
     "sources": [
@@ -215,7 +216,7 @@
     "difficulty": 3,
     "styleId": 50,
     "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
-    "question": "Kako se zovu sicilijanske pržene kuglice od riže, često punjene ragùom ili sirom?",
+    "question": "Skuhajte rižu, napunite je ragùom ili sirom, pa oblikovane kuglice panirajte i ispržite. Koji ste sicilijanski specijalitet pripremili?",
     "answers": [
       "arancini",
       "arancine"
