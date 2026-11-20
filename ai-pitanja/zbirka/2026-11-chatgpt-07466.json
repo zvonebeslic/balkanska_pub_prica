@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7466-20261120",
+    "createdAt": "2026-11-20T14:38:52+01:00",
+    "updatedAt": "2026-11-20T14:38:52+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Parasite",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je južnokorejski redatelj snimio film 'Parazit' (Parasite), dobitnika Oscara za najbolji film?",
+    "answers": [
+      "Bong Joon-ho",
+      "Bong Joon Ho"
+    ],
+    "explanation": "Bong Joon-ho režirao je film Parasite iz 2019.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Parasite_(2019_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
