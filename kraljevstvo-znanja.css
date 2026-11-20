@@ -48,3 +48,125 @@ button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.
 @media(max-width:620px){.shape-tool{padding:.7rem}.shape-choices{grid-template-columns:repeat(2,minmax(0,1fr))}
   .shape-choice{min-height:45px;font-size:.75rem}.realm-label{max-width:150px;font-size:10px;padding:4px 7px}
   .realm-label small{font-size:9px}}
+
+/* ─────────── KRALJEVSTVO ZNANJA / COMMAND EDITION ─────────── */
+:root{--bg:#070d19;--card:#101e33;--soft:#0a1728;--blue:#438cfb;--green:#39dc98;--muted:#adbad0;--border:rgba(137,170,207,.24);--white:#f4f9ff}
+body{background:
+ radial-gradient(ellipse 60% 32% at 50% -5%,rgba(46,111,225,.23),transparent),
+ radial-gradient(ellipse 42% 34% at 95% 22%,rgba(33,178,137,.09),transparent),
+ linear-gradient(165deg,#07101f 0%,#091323 40%,#060d18 100%);background-attachment:fixed}
+.site-header{background:rgba(4,10,20,.96);border-bottom:1px solid rgba(96,165,250,.22);box-shadow:0 8px 35px rgba(0,0,0,.38)}
+.header-circle{background:linear-gradient(135deg,#19345c,#0a162b);border:1px solid #4070aa80;box-shadow:inset 0 1px #ffffff18}
+.header-circle:hover{border-color:#7bc4ff;box-shadow:0 0 18px #428cfb35}
+.page{width:min(1290px,calc(100% - 1.25rem));padding-bottom:3rem}
+.intro{position:relative;isolation:isolate;margin:.8rem 0 .65rem;padding:1.65rem .75rem 1.1rem}
+.intro:before{content:"";position:absolute;inset:0;z-index:-1;border-radius:24px;
+ background:radial-gradient(ellipse at 50% 0%,#3d76d921,transparent 64%)}
+.eyebrow{display:inline-flex;padding:.36rem .85rem;border-radius:999px;background:#4187e91c;
+ border:1px solid #5793ed63;color:#bfd8ff;font-size:.69rem;letter-spacing:.19em}
+.intro h1{font-size:clamp(2rem,6vw,4.4rem);font-weight:1000;letter-spacing:-.055em;line-height:1.02;
+ text-transform:uppercase;text-shadow:0 5px 28px #000c;margin:.75rem 0 .4rem}
+.intro h1 span{color:#6cf4b1;text-shadow:0 0 25px #37d18d42}
+.intro p{font-size:clamp(.79rem,1.35vw,1rem);color:#c9d6e9;max-width:730px;line-height:1.65}
+.battle-motto{font-size:.68rem;letter-spacing:.21em;color:#9fbce7;font-weight:950;text-transform:uppercase;margin-top:.65rem}
+.map-panel{border:1px solid #639be775;border-radius:22px;background:#07111e;
+ box-shadow:0 0 0 1px #8db7f718,0 18px 54px #0009,0 0 55px #2f80ff16;overflow:hidden}
+.map-top{padding:.9rem 1rem;background:linear-gradient(100deg,#152e4f,#0d1f34 70%,#11342e);
+ border-bottom:1px solid #77bbff44;gap:1rem}
+.map-top strong{font-size:.9rem;font-weight:1000;letter-spacing:.06em;text-transform:uppercase;color:#eff7ff}
+.map-top small{display:block;margin-top:.3rem;color:#adc9e8;font-size:.72rem;line-height:1.35}
+.map-actions{flex-wrap:wrap;justify-content:flex-end}
+.map-actions .minor{background:rgba(60,126,215,.17);border:1px solid #629df071;color:#eaf4ff}
+.map-actions .minor:hover{background:rgba(72,148,245,.3)}
+#kingdom-map{height:clamp(410px,65vh,780px);border-top:1px solid #ffffff0c;filter:saturate(1.09)}
+.map-bottom{padding:.7rem 1rem;background:linear-gradient(90deg,#101e33,#0b1a2b);
+ border-top:1px solid #537cac56;color:#b9d4ee;font-weight:800}
+.leaflet-container .leaflet-control-zoom a{background:#11233a;color:#e8f4ff;border-color:#4573ac}
+.leaflet-container .leaflet-control-zoom a:hover{background:#244675;color:#fff}
+.leaflet-container .leaflet-control-attribution{background:rgba(7,14,26,.85);color:#d3dfeb}
+.realm-map-pin{background:transparent;border:0!important}
+.realm-map-pin span{position:absolute;display:inline-block;transform:translate(-50%,-190%);
+ color:#fff;border:1px solid var(--realm-color);border-left:3px solid var(--realm-color);
+ border-radius:7px;padding:4px 7px;background:#071427e6;font-size:10px;font-weight:950;white-space:nowrap;
+ letter-spacing:.06em;text-shadow:0 1px 3px #000;box-shadow:0 3px 13px #000b}
+.territory-ink-holder{background:transparent!important;border:0!important}
+.territory-ink{position:absolute;top:0;left:0;transform:translate(-50%,-50%);
+ pointer-events:auto;cursor:pointer;display:block;width:max-content;white-space:nowrap;
+ font-size:var(--ink-size);font-family:Georgia,"Times New Roman",serif;font-weight:900;
+ letter-spacing:var(--ink-space);line-height:1.05;text-align:center;
+ color:#fff7dc;text-transform:uppercase;filter:drop-shadow(0 1px 2px #03080a);
+}
+.territory-ink span{display:inline-block;transform:scaleX(var(--ink-scale));transform-origin:center center;
+ padding:.06em .12em;white-space:nowrap;
+ -webkit-text-stroke:.65px #080f20;text-shadow:
+  0 2px 2px #05090d,1px 0 1px #03070d,-1px 0 1px #03070d,0 0 9px #000c,0 0 15px var(--kingdom-ink)}
+.territory-ink:hover span{color:#fff;filter:drop-shadow(0 0 9px var(--kingdom-ink))}
+.realm-overview{gap:.7rem;margin:1rem 0}
+.stat-card,.realm-identity{position:relative;overflow:hidden;min-height:128px;padding:1.05rem .75rem;
+ border:1px solid #6b94c45e;border-radius:18px;
+ background:linear-gradient(152deg,#1d3452,#0d1d32 72%);box-shadow:inset 0 1px #ffffff13,0 11px 24px #0005}
+.stat-card::before,.realm-identity::before{content:"";position:absolute;inset:0 0 auto;height:2px;
+ background:linear-gradient(90deg,transparent,#4998fcba,transparent)}
+.realm-identity{border-color:#59e5a17a;background:linear-gradient(145deg,#163e43,#0f253a 62%,#11283b)}
+.realm-identity::before{background:linear-gradient(90deg,transparent,#62efa8,transparent)}
+.stat-card span,.realm-identity span{font-size:.66rem;letter-spacing:.13em;color:#bad1eb}
+.stat-card strong{font-size:clamp(1.18rem,3vw,2.2rem);font-weight:1000}
+.realm-identity strong{font-size:clamp(1rem,2.7vw,2rem);font-weight:1000;line-height:1.1}
+.realm-identity b{font-size:clamp(1.18rem,2.5vw,2rem);font-weight:1000;color:#81ffd0;text-shadow:0 0 20px #36e0a53b}
+.stat-card:hover{background:linear-gradient(150deg,#274e7a,#132942)}
+.play-card{border:1px solid #5e9aef70;background:radial-gradient(ellipse at 50% 0%,#2d589a52,transparent 90%),linear-gradient(135deg,#1a314f,#0c1c31);
+ padding:1.6rem 1rem;box-shadow:0 12px 34px #0007}
+.play-card h2{font-size:clamp(1.02rem,2.4vw,1.4rem);font-weight:1000;letter-spacing:.01em}
+.play-card p{font-size:.84rem}
+.play-card .primary{font-size:clamp(.88rem,1.4vw,1.06rem);letter-spacing:.035em;padding:.95rem 1.5rem;
+ background:linear-gradient(105deg,#2888ef,#295ac7);border-color:#7cb9ff;
+ box-shadow:0 7px 25px #297afe55,inset 0 1px #ffffff50}
+.play-card .primary:not(:disabled):hover{background:linear-gradient(115deg,#439cff,#326de1);
+ box-shadow:0 9px 32px #3b8cff90;transform:translateY(-1px)}
+.ready.on{border-color:#7fffbc;background:#2fdc9740;color:#baffdd;box-shadow:0 0 17px #36e0a444}
+.create-panel,.actions-card,.notifications,.tips,.shape-tool{border:1px solid #517fb457;
+ background:linear-gradient(145deg,#14263e,#0d1a2b);box-shadow:0 9px 24px #0005}
+.create-panel,.notifications{padding:1.25rem}
+.create-panel h2,.actions-card h2,.notifications h2{font-size:1.04rem;font-weight:1000;letter-spacing:.025em}
+.shape-tool{padding:1rem 1.15rem;border-color:#6da8ff70}
+.shape-title strong{font-size:1rem;letter-spacing:.025em}
+.shape-choice{background:linear-gradient(140deg,#0d1e35,#0a162a);border-color:#50729a9c;
+ transition:transform .17s,border-color .17s,box-shadow .17s}
+.shape-choice:hover{transform:translateY(-2px)}
+.shape-choice.selected{background:linear-gradient(120deg,#2e65aa,#174371);border-color:#dcf0ff;
+ box-shadow:0 0 0 2px #3b82f67d,0 0 26px #3b82f63d}
+.expand-panel{background:linear-gradient(135deg,#173454,#10263d)}
+.directions button{font-weight:950;background:linear-gradient(130deg,#2e59934d,#193c6666);
+ border:1px solid #5a9aee;min-height:45px}
+.directions button:hover{background:#376aab}
+.dialog-backdrop{backdrop-filter:blur(6px)}
+.dialog{background:linear-gradient(155deg,#193653,#0b1a2c 70%);border:1px solid #75b6ffbd;
+ box-shadow:0 30px 85px #000d,0 0 40px #418bf429}
+.dialog-top{padding-bottom:.8rem;border-bottom:1px solid #83b5f03e}
+.dialog-top h2{font-size:1.25rem;font-weight:1000;color:#ecf6ff}
+.option,.member,.notifications #mail-list>div,.notifications #requests-list>div{background:#0b1d33;border-color:#6084b160}
+.option:hover{border-color:#8dbdff;background:#18385f}
+.primary,.secondary,.minor,.shape-choice,.stat-card{transition:transform .18s,box-shadow .18s,border-color .18s,background .18s}
+@media(max-width:620px){
+ .intro{padding:1rem .3rem .6rem}.intro h1{font-size:clamp(1.65rem,7vw,2.7rem)}
+ .intro p{font-size:.75rem}.battle-motto{font-size:.55rem;letter-spacing:.14em}
+ .map-top{padding:.7rem}.map-top small{font-size:.62rem}
+ #kingdom-map{height:clamp(390px,62vh,660px)}
+ .realm-overview{gap:.32rem}.stat-card,.realm-identity{padding:.6rem .3rem;min-height:102px}
+ .stat-card strong{font-size:clamp(.94rem,3.8vw,1.3rem)}
+ .realm-identity strong{font-size:clamp(.86rem,3.1vw,1.18rem)}
+ .realm-identity b{font-size:clamp(1rem,3.8vw,1.35rem)}
+ .stat-card span,.realm-identity span{font-size:.49rem}
+ .play-card{padding:1.05rem .7rem}
+}
+@media(prefers-reduced-motion:reduce){
+ .primary,.secondary,.minor,.shape-choice,.stat-card{transition:none!important}
+ .play-card .primary:not(:disabled):hover,.shape-choice:hover{transform:none}
+}
+
+/* Povezivanje s preciznim središtem ćelije: slova se šire lijevo i desno od iste točke. */
+.territory-ink{left:0;top:0;width:0;max-width:none!important;height:0;
+ transform:none;overflow:visible;display:block}
+.territory-ink span{position:absolute;left:0;top:0;display:block;width:max-content;
+ transform:translate(-50%,-50%) scaleX(var(--ink-scale));transform-origin:center;
+ text-align:center;will-change:auto}
