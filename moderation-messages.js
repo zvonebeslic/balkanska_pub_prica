@@ -189,6 +189,14 @@
 
   function closeInbox() { document.getElementById(MODAL_ID)?.classList.remove("open"); }
 
+  // Obavijesti o članstvu Kraljevstava stižu i u postojeći KvizToGo inbox.
+  // Kraljevi zahtjevi za pridruživanje ostaju isključivo na podstranici igre.
+  function kingdomInboxCredentials() {
+    const guest = getGuestIdentity();
+    const secret = guest?.id ? getOrCreateGuestSecret() : null;
+    return { p_guest_id: guest?.id || null, p_guest_secret: secret || null };
+  }
+
   async function loadMessages(identity) {
     const client = getClient();
     if (!client || !identity) return [];
@@ -196,12 +204,36 @@
       ? await client.rpc("moderation_get_guest_messages_secure", { p_player_key: identity.playerKey, p_guest_secret: await ensureGuestSecretRegistered(identity) })
       : await client.rpc("moderation_get_my_messages");
     if (result.error) throw result.error;
-    return Array.isArray(result.data) ? result.data : [];
+    const messages = Array.isArray(result.data) ? result.data : [];
+    try {
+      const creds = kingdomInboxCredentials();
+      if (creds.p_guest_id || !identity.isGuest) {
+        const kz = await client.rpc("kz_state", creds);
+        if (!kz.error) {
+          for (const item of (kz.data?.mail || [])) messages.push({
+            id: "kz:" + item.id,
+            title: "Kvadrati znanja",
+            body: item.body,
+            created_at: item.at,
+            is_read: item.read,
+            message_type: "kz_membership"
+          });
+        }
+      }
+    } catch (_) { /* korisnik možda još nije ušao u novu igru */ }
+    return messages.sort((a,b) => new Date(b.created_at) - new Date(a.created_at));
   }
 
   async function markRead(identity, id) {
     const client = getClient();
     if (!client || !identity || !id) return false;
+    if (String(id).startsWith("kz:")) {
+      const { data, error } = await client.rpc("kz_read_mail", {
+        ...kingdomInboxCredentials(), p_mail_id: String(id).slice(3)
+      });
+      if (error) throw error;
+      return data === true;
+    }
     const result = identity.isGuest
       ? await client.rpc("moderation_mark_guest_message_read_secure", { p_id: id, p_player_key: identity.playerKey, p_guest_secret: await ensureGuestSecretRegistered(identity) })
       : await client.rpc("moderation_mark_my_message_read", { p_id: id });
