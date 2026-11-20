@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7469-20261120",
+    "createdAt": "2026-11-20T14:38:52+01:00",
+    "updatedAt": "2026-11-20T14:38:52+01:00",
+    "topic": "Biologija",
+    "focus": "biljka mesožderka venerina muholovka",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja biljka mesožderka zatvara svoje nazubljene listove kada kukac dotakne osjetljive dlačice?",
+    "answers": [
+      "venerina muholovka",
+      "Dionaea muscipula"
+    ],
+    "explanation": "Venerina muholovka lovi male životinje zamkom od preobraženih listova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Venus_flytrap"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
