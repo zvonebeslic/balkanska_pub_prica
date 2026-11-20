@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7354-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Glazba",
+    "focus": "izvođač pjesme Come On Eileen",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je britanski sastav proslavio pjesmu 'Come On Eileen' 1982. godine?",
+    "answers": [
+      "Dexys Midnight Runners",
+      "Dexys"
+    ],
+    "explanation": "Pjesma je veliki hit sastava Dexys Midnight Runners.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Come_On_Eileen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7355-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Borussije Dortmund",
+    "difficulty": 2,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Na kojem stadionu domaće utakmice igra Borussia Dortmund, poznata po velikoj žutoj tribini?",
+    "answers": [
+      "Signal Iduna Park",
+      "Westfalenstadion"
+    ],
+    "explanation": "Stadion je poznat i pod povijesnim imenom Westfalenstadion.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Westfalenstadion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7356-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Amélie",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao francuski film 'Amélie' iz 2001. godine?",
+    "answers": [
+      "Jean-Pierre Jeunet",
+      "Jeunet"
+    ],
+    "explanation": "Jean-Pierre Jeunet režirao je film Amélie.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7357-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Ime ruže",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman 'Ime ruže', smješten u srednjovjekovni samostan?",
+    "answers": [
+      "Umberto Eco",
+      "Eco"
+    ],
+    "explanation": "Umberto Eco objavio je roman 1980. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7358-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Zemljopis",
+    "focus": "država s gradom Valparaíso",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojoj se južnoameričkoj državi nalazi lučki grad Valparaíso, nedaleko od Santiaga?",
+    "answers": [
+      "Čile",
+      "Chile"
+    ],
+    "explanation": "Valparaíso je važan čileanski lučki grad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Valpara%C3%ADso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7359-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Kemija",
+    "focus": "element simbola Sn",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se metal, često korišten u lemljenju, u periodnom sustavu označava simbolom Sn?",
+    "answers": [
+      "Kositar"
+    ],
+    "explanation": "Simbol Sn dolazi od latinskog naziva stannum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7360-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Životinje",
+    "focus": "najveći živući glodavac",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji južnoamerički sisavac, često viđen uz vodu, najveći je živući glodavac?",
+    "answers": [
+      "Kapibara",
+      "Capybara"
+    ],
+    "explanation": "Kapibara je najveći živući glodavac.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Capybara"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7361-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Povijest",
+    "focus": "godina pada Berlinskog zida",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, što je postalo simbol kraja podjele Njemačke?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7362-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Tehnologija",
+    "focus": "značenje kratice RAM",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Kako glasi engleski naziv računalne memorije poznate pod kraticom RAM?",
+    "answers": [
+      "Random Access Memory"
+    ],
+    "explanation": "RAM znači Random Access Memory.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Random-access_memory"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7363-20261120",
+    "createdAt": "2026-11-20T05:41:34+01:00",
+    "updatedAt": "2026-11-20T05:41:34+01:00",
+    "topic": "Gastronomija",
+    "focus": "japanski umak od fermentirane soje",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se tamni umak dobiva fermentacijom soje i često poslužuje uz sushi?",
+    "answers": [
+      "Sojin umak",
+      "Shoyu",
+      "Shōyu"
+    ],
+    "explanation": "Sojin umak tradicionalni je fermentirani začin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Soy_sauce"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
