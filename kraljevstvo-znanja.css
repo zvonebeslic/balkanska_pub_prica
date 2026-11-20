@@ -163,3 +163,10 @@ body{background:
  .primary,.secondary,.minor,.shape-choice,.stat-card{transition:none!important}
  .play-card .primary:not(:disabled):hover,.shape-choice:hover{transform:none}
 }
+
+/* Povezivanje s preciznim središtem ćelije: slova se šire lijevo i desno od iste točke. */
+.territory-ink{left:0;top:0;width:0;max-width:none!important;height:0;
+ transform:none;overflow:visible;display:block}
+.territory-ink span{position:absolute;left:0;top:0;display:block;width:max-content;
+ transform:translate(-50%,-50%) scaleX(var(--ink-scale));transform-origin:center;
+ text-align:center;will-change:auto}
