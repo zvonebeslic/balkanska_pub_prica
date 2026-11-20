@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7471-20261120",
+    "createdAt": "2026-11-20T14:38:52+01:00",
+    "updatedAt": "2026-11-20T14:38:52+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja vrsta dvodimenzionalnog koda može se očitati kamerom mobitela, a ime joj dolazi od engleskog izraza za brz odgovor?",
+    "answers": [
+      "QR kod",
+      "QR code"
+    ],
+    "explanation": "QR znači Quick Response.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
