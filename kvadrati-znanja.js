@@ -198,7 +198,7 @@
         const sw = ll(x,y), ne = ll(x+1,y+1);
         L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]], {
           color: k.color, weight: 0.35, fillColor: k.color,
-          fillOpacity: 0.60, interactive: true
+          fillOpacity: 0.60, interactive: true, renderer: map._kzCanvasRenderer
         }).on("click", event => {
           L.DomEvent.stopPropagation(event);
           if (c.k === own && current?.kingdom?.role === "kralj") {
@@ -223,6 +223,7 @@
       minZoom:2,maxZoom:22,maxNativeZoom:19,attribution:'&copy; OpenStreetMap'
     }).addTo(map);
     tilesLayer = L.layerGroup().addTo(map);
+    map._kzCanvasRenderer = L.canvas({ padding: .1 });
     labelsLayer = L.layerGroup().addTo(map);
     let timer;
     map.on("moveend zoomend", () => {
@@ -278,6 +279,7 @@
   }
   async function placeSpawn() {
     if (Number(current?.kingdom?.bank)<20) {toast("Na kontu trebaš 20 m².");return;}
+    if (!confirm("Potvrđuješ postavljanje teritorija na svojoj trenutnoj GPS lokaciji? Ta će lokacija biti vidljiva na javnoj karti.")) return;
     try {
       $("spawn-btn").disabled=true;
       const gps=await getGPS();
@@ -347,10 +349,21 @@
         if (b.dataset.answer===out.correct_key) b.classList.add("correct");
         else if (b.dataset.answer===key && !out.correct) b.classList.add("wrong");
       });
+      const lastCorrect = (current.game?.questions || []).filter(q => q.correct).length + (out.correct ? 1 : 0);
+      const lastEarned = (current.game?.questions || []).reduce((sum,q) => sum + Number(q.earned || 0), 0) + Number(out.earned || 0);
       const next=document.createElement("button");
       next.className="primary";
       next.textContent=out.finished ? "Pogledaj rezultat" : "Sljedeće pitanje →";
-      next.onclick=async()=>{await reloadState();renderQuiz();};
+      next.onclick=async()=>{
+        await reloadState();
+        if (out.finished) {
+          modal("Partija završena",'<p class="quiz-question">Točnih odgovora: '+lastCorrect+'/5</p>'+
+            '<p>Osvojeno '+formatArea(lastEarned)+' za tvoje kraljevstvo.</p>'+
+            '<p>Sljedeća pitanja bit će dostupna četiri sata nakon završetka ove partije.</p>'+
+            '<button id="quiz-finish" class="primary">Povratak kraljevstvu</button>');
+          $("quiz-finish").onclick=closeModal;
+        } else renderQuiz();
+      };
       result.append(next);
     }catch(e){toast(e.message);buttons.forEach(b=>b.disabled=false);}
   }
