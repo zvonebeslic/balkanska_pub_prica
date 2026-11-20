@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-7472-20261120",
+    "createdAt": "2026-11-20T14:38:52+01:00",
+    "updatedAt": "2026-11-20T14:38:52+01:00",
+    "topic": "Astronomija",
+    "focus": "Saturnov mjesec Titan",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji je najveći Saturnov mjesec poznat po gustoj atmosferi i jezerima tekućih ugljikovodika?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je Saturnov najveći prirodni satelit.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
