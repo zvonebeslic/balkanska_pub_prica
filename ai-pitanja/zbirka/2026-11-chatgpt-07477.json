@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7477-20261120",
+    "createdAt": "2026-11-20T15:35:47+01:00",
+    "updatedAt": "2026-11-20T15:35:47+01:00",
+    "topic": "Životinje",
+    "focus": "aksolotl regeneracija udova",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac poznat po vanjskim škrgama može obnoviti izgubljene udove?",
+    "answers": [
+      "aksolotl",
+      "axolotl"
+    ],
+    "explanation": "Aksolotl je meksički daždevnjak koji može regenerirati izgubljene udove.",
+    "sources": [
+      "https://www.nationalgeographic.com/animals/amphibians/facts/axolotl/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
