@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7563-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Glazba",
+    "focus": "Smooth Criminal izvođač",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Tko je 1987. na albumu 'Bad' objavio pjesmu 'Smooth Criminal'?",
+    "answers": [
+      "Michael Jackson",
+      "Jackson"
+    ],
+    "explanation": "Pjesma je s albuma Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Smooth_Criminal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7564-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Sport",
+    "focus": "odbojka libero",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem sportu igrač zvan libero nosi dres drukčije boje od suigrača?",
+    "answers": [
+      "Odbojka",
+      "odbojci"
+    ],
+    "explanation": "Libero je specijalizirani obrambeni igrač.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Volleyball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7565-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Film",
+    "focus": "Grand Budapest Hotel redatelj",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Pastelne boje, izmišljena Zubrowka i neobičan hotel: tko je režirao film 'Grand Budapest Hotel'?",
+    "answers": [
+      "Wes Anderson",
+      "Anderson"
+    ],
+    "explanation": "Wes Anderson režirao je film iz 2014.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7566-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Književnost",
+    "focus": "Ime ruže autor",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je talijanski književnik napisao roman 'Ime ruže', smješten u srednjovjekovni samostan?",
+    "answers": [
+      "Umberto Eco",
+      "Eco"
+    ],
+    "explanation": "Umberto Eco objavio je roman 1980.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7567-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Zemljopis",
+    "focus": "Ljubljanica Ljubljana",
+    "difficulty": 2,
+    "styleId": 48,
+    "styleDescription": "Poveži poznatu rijeku s manje poznatim pritokom",
+    "question": "Koja rijeka protječe kroz središte Ljubljane ispod njezinih poznatih mostova?",
+    "answers": [
+      "Ljubljanica"
+    ],
+    "explanation": "Ljubljanica prolazi kroz glavni grad Slovenije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljanica"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7568-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Životinje",
+    "focus": "okapi srodnik žirafe",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji je šumski sisavac iz Konga srodnik žirafe, premda mu prugaste noge podsjećaju na zebru?",
+    "answers": [
+      "Okapi"
+    ],
+    "explanation": "Okapi pripada porodici žirafa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7569-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Kemija",
+    "focus": "volfram W",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima oznaku W i koristio se u žarnim nitima klasičnih žarulja?",
+    "answers": [
+      "Volfram",
+      "tungsten"
+    ],
+    "explanation": "Oznaka W potječe od naziva wolfram.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7570-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Povijest",
+    "focus": "brod Victoria 1522",
+    "difficulty": 3,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Kako se zvao jedini brod Magellanove ekspedicije koji se 1522. vratio u Španjolsku nakon oplovljavanja svijeta?",
+    "answers": [
+      "Victoria",
+      "Viktorija"
+    ],
+    "explanation": "Victoria je dovršila putovanje pod Elcanovim zapovjedništvom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Victoria_(ship)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7571-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth kralj Harald",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je danskom kralju, poznatom po nadimku Plavozubi, nazvana tehnologija Bluetooth?",
+    "answers": [
+      "Harald Bluetooth",
+      "Harald Plavozubi",
+      "Harald I."
+    ],
+    "explanation": "Naziv potječe od Haralda Plavozubog.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7572-20261120",
+    "createdAt": "2026-11-20T23:37:54+01:00",
+    "updatedAt": "2026-11-20T23:37:54+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu mascarpone",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Piškote natopljene kavom i kremu od mascarponea slažemo u koji talijanski desert?",
+    "answers": [
+      "Tiramisu"
+    ],
+    "explanation": "Tiramisu se priprema od piškota, kave i kreme.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
