@@ -383,7 +383,7 @@
       const end=new Date(m.cooldown_until||0).getTime();
       const ready=end<=Date.now();
       const record=(m.last10||[]).map(g=>'<li>'+dateTime(g.at)+': '+g.correct+' točnih / '+
-        g.wrong+' netočnih · '+formatArea(g.earned)+'</li>').join("");
+        g.wrong+' netočnih · '+formatArea(g.earned)+' · '+Number(g.seconds||0)+' s</li>').join("");
       const n=m.total_correct+m.total_wrong;
       return '<article class="member"><b>'+safe(m.name)+'</b> · '+roleName(m.role)+
         '<div class="member-meta">'+(ready?"Pitanja spremna":"Cooldown do "+dateTime(m.cooldown_until))+
