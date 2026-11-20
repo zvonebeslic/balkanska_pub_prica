@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7476-20261120",
+    "createdAt": "2026-11-20T15:35:47+01:00",
+    "updatedAt": "2026-11-20T15:35:47+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Guernica Picassova slika",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je slikar 1937. stvorio monumentalnu antiratnu sliku 'Guernica'?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je Guernicu naslikao 1937., nakon bombardiranja baskijskoga grada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_%28Picasso%29"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
