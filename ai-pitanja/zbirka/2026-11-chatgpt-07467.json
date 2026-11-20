@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7467-20261120",
+    "createdAt": "2026-11-20T14:38:52+01:00",
+    "updatedAt": "2026-11-20T14:38:52+01:00",
+    "topic": "Književnost",
+    "focus": "roman Sto godina samoće",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je kolumbijski nobelovac napisao roman 'Sto godina samoće'?",
+    "answers": [
+      "Gabriel García Márquez",
+      "Gabriel Garcia Marquez"
+    ],
+    "explanation": "Gabriel García Márquez autor je romana Sto godina samoće.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
