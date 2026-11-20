@@ -19,7 +19,7 @@ Status: razvojna verzija igre, podstranica `kvadrati-znanja.html`.
 Stranica: `kvadrati-znanja.html`, `kvadrati-znanja.css`, `kvadrati-znanja.js`.
 Poveznica je dodana na vrh `online-kviz.html`, a stranica u `sitemap.xml`.
 
-Sve `kz_*` tablice i pristupne funkcije su odvojene. Ne upisuju ništa u postojeće `quiz_plays`, `quiz_answers`, `daily30`, `player_progress` ili druge postojeće statistike. Autorizirani su Supabase Auth profili i gostujući ID plus 256-bitna tajna iz postojećeg `localStorage` identiteta. Sva promjena bodova/teritorija provodi se transakcijski, na PostgreSQL poslužitelju. Pravila ne smiju biti implementirana isključivo u frontend JavaScriptu.
+Sve `kz_*` tablice i pristupne funkcije su odvojene. Za svaku partiju se zasebno spremaju i `duration_seconds` (sekunde igranja). Ne upisuju ništa u postojeće `quiz_plays`, `quiz_answers`, `daily30`, `player_progress` ili druge postojeće statistike. Autorizirani su Supabase Auth profili i gostujući ID plus 256-bitna tajna iz postojećeg `localStorage` identiteta. Sva promjena bodova/teritorija provodi se transakcijski, na PostgreSQL poslužitelju. Pravila ne smiju biti implementirana isključivo u frontend JavaScriptu.
 
 Baza je inicijalno napunjena s **6844 deduplicirana ABC pitanja iz 17 datoteka**. Za naknadno dodavanje novih pitanja pokrenuti `scripts/sync-kvadrati-abc.mjs` s **tajnim SERVICE_ROLE ključem samo u sigurnom terminalu**; skripta čuva dodijeljene ID-jeve, povijest i sve odigrane partije.
 
@@ -30,7 +30,7 @@ Baza je inicijalno napunjena s **6844 deduplicirana ABC pitanja iz 17 datoteka**
 3. Uređaj bez profila može trajno izgubiti pristup ako obriše lokalnu pohranu. Profilna prijava veže postojeći gostujući identitet uz Supabase Auth. **Prethodno odvojeni računi ne spajaju se automatski**.
 4. Prije omogućavanja masovnog javnog igranja obaviti pregled na mobitelu i računalu, testirati GPS dopuštenja, pozivnice, valjanost poziva i konkurentne napade. U ovoj implementaciji testirane su SQL/RPC transakcije, ali nije obavljen potpuni test preglednikom na objavljenom Hostingeru.
 5. Mapa prikazuje najviše 8000 pojedinačnih ćelija u trenutačnom visoko uvećanom izrezu; na nižoj razini prikazuje nazive kraljevstava. Za veliko opterećenje planirati poslužiteljske agregirane geometrije ili vektorske pločice.
-6. U PostgreSQL su četiri migracije **već primijenjene** na projektu `hssfjguysejbosvholqu`; u spremištu su spremljene radi verzioniranja — ne pokretati ih bez provjere postojeće migracijske povijesti. Nema dodatnih naplatnih Supabase projekata.
+6. U PostgreSQL su pet migracija **već primijenjene** na projektu `hssfjguysejbosvholqu`; u spremištu su spremljene radi verzioniranja — ne pokretati ih bez provjere postojeće migracijske povijesti. Nema dodatnih naplatnih Supabase projekata.
 
 ## Provjere
 
