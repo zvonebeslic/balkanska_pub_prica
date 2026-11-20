@@ -212,7 +212,7 @@
         if (!kz.error) {
           for (const item of (kz.data?.mail || [])) messages.push({
             id: "kz:" + item.id,
-            title: "Kvadrati znanja",
+            title: "Kraljevstvo Znanja",
             body: item.body,
             created_at: item.at,
             is_read: item.read,

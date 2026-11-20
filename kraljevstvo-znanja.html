@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <title>Kraljevstvo Znanja – osvoji kraljevstvo kvizom | KvizToGo</title>
+  <meta name="description" content="Odgovaraj na pet ABC pitanja, skupljaj kvadrate znanja i širi kraljevstvo na živoj karti. Novo igranje svaka četiri sata.">
+  <link rel="canonical" href="https://kviztogo.com/kraljevstvo-znanja.html">
+  <link rel="icon" href="images/KvizToGo-online-kviz-pitanja.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="kraljevstvo-znanja.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-side"><a class="header-circle" href="online-kviz.html" aria-label="Online kviz">←</a></div>
+  <a href="/" class="brand-logo" aria-label="KvizToGo početna"><span class="logo-kviz">Kviz</span><span class="logo-to">To</span><span class="logo-go">Go</span></a>
+  <div class="header-side header-right"><a class="header-circle" href="profil.html" aria-label="Moj profil">♙</a></div>
+</header>
+<main class="page">
+  <div class="intro"><span class="eyebrow">KvizToGo • strateška igra znanja</span><h1>Kraljevstvo <span>Znanja</span></h1>
+    <p>Odgovaraj na ABC pitanja, osvajaj stvarni teritorij i gradi svoje kraljevstvo na karti. Odaberi oblik širenja i brani osvojene granice.</p>
+  </div>
+  <section class="map-panel">
+    <div class="map-top"><div><strong>Živa karta kraljevstava</strong><small id="map-hint">Jasne bijelo obrubljene granice vidiš na povećanju 18+; dodirni svoj teren za širenje.</small></div>
+      <div class="map-actions"><button id="gps-btn" class="minor">⌖ Moj GPS</button><button id="refresh-btn" class="minor">↻ Osvježi</button></div>
+    </div>
+    <div id="kingdom-map" role="application" aria-label="Interaktivna karta kvadrata znanja"></div>
+    <div class="map-bottom"><span id="map-count">Učitavanje kraljevstava…</span><span id="gps-status">GPS se traži samo za novo uporište</span></div>
+    <section id="expand-panel" class="expand-panel hidden" aria-label="Širenje kraljevstva">
+      <div class="expand-head"><b>Širenje s odabrane granice</b><button id="expand-close" class="mini-close" aria-label="Zatvori">×</button></div>
+      <p id="expand-location">Odaberi smjer, oblik i koliko m² trošiš.</p>
+      <div class="expand-controls"><div class="directions"><button data-dir="N">↑ Sjever</button><button data-dir="W">← Zapad</button><button data-dir="E">Istok →</button><button data-dir="S">↓ Jug</button></div>
+        <label>Slobodni teren: 3–20 m²<input type="number" id="expand-size" min="3" max="20" value="20"></label>
+      </div>
+      <small>Napad ili obrana: s konta se oduzima 20 m², osvoji se 8 m². Svaki potez mora dodirivati tvoju granicu.</small>
+    </section>
+  </section>
+  <section id="shape-tool" class="shape-tool hidden" aria-label="Oblik osvajanja teritorija">
+    <p class="shape-title"><strong>Odaberi oblik zemljišta</strong><small>Vrijedi za prvo GPS uporište, proširenja i napade</small></p>
+    <div class="shape-choices" role="group" aria-label="Odaberi geometrijski oblik">
+      <button type="button" class="shape-choice selected" data-shape="blok" aria-pressed="true"><span class="shape-glyph" aria-hidden="true">▦</span> Blok</button>
+      <button type="button" class="shape-choice" data-shape="traka" aria-pressed="false"><span class="shape-glyph" aria-hidden="true">━━</span> Traka</button>
+      <button type="button" class="shape-choice" data-shape="kut" aria-pressed="false"><span class="shape-glyph" aria-hidden="true">└</span> L-oblik</button>
+      <button type="button" class="shape-choice" data-shape="cikcak" aria-pressed="false"><span class="shape-glyph" aria-hidden="true">〰</span> Cik-cak</button>
+    </div>
+    <p id="shape-help" class="shape-help">Zbijeni blok: širina i dubina su približno jednake.</p>
+  </section>
+  <section class="play-card">
+    <div class="play-card-head"><h2>Pet pitanja. Svaka četiri sata.</h2><span id="ready-pill" class="ready">PRIPREMA</span></div>
+    <p id="game-desc">Za svaki točan odgovor osvajaš najmanje 20 m². Pitanja se ne ponavljaju istom igraču.</p>
+    <button id="play-btn" class="primary" disabled>Pokreni 5 ABC pitanja</button>
+    <p id="cooldown" class="countdown" aria-live="polite"></p>
+    <p id="account-warning" class="account-warning">Preporuka: <a href="login.html">napravi profil</a>. Bez profila gubitkom podataka preglednika možeš izgubiti pristup kraljevstvu.</p>
+  </section>
+  <section class="realm-overview">
+    <button id="members-box" class="stat-card"><span>ČLANOVI</span><strong id="members-total">— / 5</strong><small>Dodirni za statistiku</small></button>
+    <div class="realm-identity"><span>KRALJEVSTVO</span><strong id="realm-name">Još nemaš kraljevstvo</strong><b id="realm-area">0 m²</b><small id="realm-role">Za početak odaberi ime i boju</small></div>
+    <button id="bank-box" class="stat-card bank"><span>KVADRATI NA KONTU</span><strong id="bank-count">0 m²</strong><small id="boost-caption">Dodirni za boost</small></button>
+  </section>
+  <section id="create-panel" class="create-panel hidden">
+    <h2>Osnuj svoje kraljevstvo</h2><p>Odaberi ime s popisa i boju koja ostaje zauvijek. Promjenu imena bit će moguće zatražiti naknadno uz naknadu od 20 € (plaćanje još nije uključeno).</p>
+    <div class="form-grid"><label>Ime kraljevstva<input id="realm-search" type="search" autocomplete="off" placeholder="Pretraži 2300 imena…"><small id="realm-found">Upiši dio imena ili odaberi s popisa.</small><select id="realm-choice"><option value="">Odaberi ime…</option></select></label><label>Boja kraljevstva (ne može se promijeniti)<input id="realm-color" type="color" value="#2f80ff"></label></div>
+    <button id="create-btn" class="primary">Osnuj kraljevstvo</button>
+    <p class="help-note">Prvi teritorij postavlja se iz GPS lokacije nakon što prikupiš 20 m² igrajući pitanja.</p>
+  </section>
+  <section class="actions-card" id="realm-actions">
+    <div><h2>Upravljanje kraljevstvom</h2><p id="action-help">Za članstvo drugog kraljevstva dodirni njegov naziv na karti. Za širenje trebaš biti kralj kvizaš.</p></div>
+    <button id="spawn-btn" class="secondary hidden">⌖ Postavi teritorij na GPS-u</button>
+    <button id="leave-btn" class="secondary hidden">Napusti kraljevstvo</button>
+  </section>
+  <section id="requests-panel" class="notifications hidden"><h2>Zahtjevi za pristup <span id="request-count"></span></h2><div id="requests-list"></div></section>
+  <section class="notifications"><h2>✉ Sandučić kraljevstva</h2><div id="mail-list" class="empty-note">Nema novih obavijesti.</div></section>
+  <section class="tips"><strong>Kralj kvizaš</strong> raspoređuje osvojene kvadrate; <strong>vojvoda kvizaš</strong> i <strong>tri vojnika kvizaša</strong> sudjeluju u prikupljanju. Najviše pet igrača po kraljevstvu. Za strategiju se dogovorite u vlastitoj WhatsApp, Signal ili drugoj grupi — dopisivanja unutar igre nema.</section>
+</main>
+<div id="dialog-backdrop" class="dialog-backdrop hidden" role="presentation">
+  <section id="dialog" class="dialog" role="dialog" aria-modal="true" aria-label="Kraljevstvo Znanja">
+    <div class="dialog-top"><h2 id="dialog-title">Kraljevstvo Znanja</h2><button id="dialog-close" class="mini-close" aria-label="Zatvori">×</button></div>
+    <div id="dialog-body"></div>
+  </section>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.10"></script>
+<script src="kraljevstvo-znanja.js" defer></script>
+</body>
+</html>
