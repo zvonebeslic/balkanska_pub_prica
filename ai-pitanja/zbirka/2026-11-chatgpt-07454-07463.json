@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-7454-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Astronomija",
+    "focus": "Saturnov mjesec Titan",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji je najveći Saturnov mjesec, poznat po gustoj atmosferi?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov mjesec.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7455-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove medicinska grana koja proučava i liječi bolesti oka?",
+    "answers": [
+      "oftalmologija"
+    ],
+    "explanation": "Oftalmologija se bavi očima i vidom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7456-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion San Siro",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja dva milanska nogometna kluba dijele stadion San Siro?",
+    "answers": [
+      "Inter i Milan"
+    ],
+    "explanation": "Inter i AC Milan koriste stadion Giuseppe Meazza.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7457-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Umjetnost",
+    "focus": "slika Zvjezdana noć",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je naslikao 'Zvjezdanu noć', čije se nebo kovitla iznad usnulog mjesta?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "explanation": "Vincent van Gogh naslikao je Zvjezdanu noć 1889.",
+    "sources": [
+      "https://www.moma.org/collection/works/79802"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7458-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Jezik",
+    "focus": "onomatopeja",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ koja oponaša zvuk, poput 'kuc-kuc' ili 'mijau'?",
+    "answers": [
+      "onomatopeja"
+    ],
+    "explanation": "Onomatopeja je oponašanje zvukova riječima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7459-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koja je SI jedinica električnog otpora, nazvana po njemačkom fizičaru?",
+    "answers": [
+      "om"
+    ],
+    "explanation": "Om je SI jedinica električnog otpora.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7460-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Brendovi",
+    "focus": "logo Lacoste",
+    "difficulty": 1,
+    "styleId": 27,
+    "styleDescription": "Sakrij odgovor u opis simbola na zastavi ili grbu",
+    "question": "Koja modna marka ima krokodila kao svoj prepoznatljivi logotip?",
+    "answers": [
+      "Lacoste"
+    ],
+    "explanation": "Lacoste je poznat po logotipu krokodila.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lacoste"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7461-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Serije",
+    "focus": "lik Walter White",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj televizijskoj seriji profesor kemije Walter White počinje proizvoditi metamfetamin?",
+    "answers": [
+      "Breaking Bad"
+    ],
+    "explanation": "Walter White glavni je lik serije Breaking Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7462-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Biologija",
+    "focus": "mitohondrij",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koja se stanična organela često opisuje kao 'elektrana stanice' zbog proizvodnje ATP-a?",
+    "answers": [
+      "mitohondrij"
+    ],
+    "explanation": "Mitohondriji proizvode većinu ATP-a u eukariotskim stanicama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7463-20261120",
+    "createdAt": "2026-11-20T13:44:56+01:00",
+    "updatedAt": "2026-11-20T13:44:56+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Kako se zove povelja koju je engleski kralj Ivan Bez Zemlje prihvatio 1215. godine?",
+    "answers": [
+      "Magna Carta"
+    ],
+    "explanation": "Magna Carta donesena je 1215.",
+    "sources": [
+      "https://www.bl.uk/magna-carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
