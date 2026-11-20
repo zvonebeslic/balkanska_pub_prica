@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-7434-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Valerie Marka Ronsona i Amy Winehouse",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je britanski producent objavio hit-verziju pjesme 'Valerie' s vokalom Amy Winehouse na albumu 'Version'?",
+    "answers": [
+      "Mark Ronson"
+    ],
+    "explanation": "Mark Ronson objavio je obradu pjesme Valerie s Amy Winehouse 2007.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Valerie_(The_Zutons_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7435-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Nogomet",
+    "focus": "trofej Copa Libertadores",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove najvažnije godišnje klupsko nogometno natjecanje Južne Amerike, pandan europskoj Ligi prvaka?",
+    "answers": [
+      "Copa Libertadores"
+    ],
+    "explanation": "Copa Libertadores najvažnije je južnoameričko klupsko natjecanje pod okriljem CONMEBOL-a.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Copa_Libertadores"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7436-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Whiplash",
+    "difficulty": 3,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "'Whiplash' i 'La La Land' dva su hvaljena filma kojeg američkog redatelja?",
+    "answers": [
+      "Damien Chazelle"
+    ],
+    "explanation": "Damien Chazelle režirao je oba filma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Damien_Chazelle"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7437-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Književnost",
+    "focus": "autorica romana Frankenstein",
+    "difficulty": 2,
+    "styleId": 55,
+    "styleDescription": "Kreni od pogrešnog književnog autorstva i traži pravog autora",
+    "question": "Čudovište iz romana 'Frankenstein' često zasjeni svoju autoricu. Kako se ona zvala?",
+    "answers": [
+      "Mary Shelley"
+    ],
+    "explanation": "Mary Shelley napisala je roman Frankenstein; or, The Modern Prometheus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mary_Shelley"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7438-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Slovenije Ljubljana",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Zmajski most, Tromostovje i rijeka Ljubljanica prepoznatljivi su simboli kojeg europskog glavnog grada?",
+    "answers": [
+      "Ljubljana"
+    ],
+    "explanation": "Ljubljana je glavni grad Slovenije, a navedene znamenitosti nalaze se u njezinu središtu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7439-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Kemija",
+    "focus": "metal volfram i simbol W",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal, kemijskog simbola W, ima iznimno visoko talište i nekada se često koristio za žarne niti žarulja?",
+    "answers": [
+      "Volfram"
+    ],
+    "explanation": "Volfram, poznat i kao tungsten, ima simbol W i vrlo visoko talište.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7440-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Životinje",
+    "focus": "životinja okapi",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji šumski sisavac iz središnje Afrike ima prugaste noge nalik zebrinima, a najbliži mu je živi srodnik žirafa?",
+    "answers": [
+      "Okapi"
+    ],
+    "explanation": "Okapi pripada porodici žirafa i živi u šumama Demokratske Republike Kongo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okapi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7441-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine engleski kralj Ivan bez Zemlje pristao na povelju Magna Carta?",
+    "answers": [
+      "1215"
+    ],
+    "explanation": "Magna Carta izdana je 1215. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7442-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth ime Harald Plavozubi",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Bežična tehnologija Bluetooth dobila je ime po kojem nadimku danskog kralja Haralda I.?",
+    "answers": [
+      "Plavozubi"
+    ],
+    "explanation": "Bluetooth je nazvan po Haraldu Plavozubom (Harald Bluetooth).",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7443-20261120",
+    "createdAt": "2026-11-20T12:44:48+01:00",
+    "updatedAt": "2026-11-20T12:44:48+01:00",
+    "topic": "Gastronomija",
+    "focus": "japanska juha miso",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U japanskoj kuhinji pasta od fermentirane soje često se miješa s temeljcem dashi. Kako se zove tako dobivena juha?",
+    "answers": [
+      "Miso juha"
+    ],
+    "explanation": "Miso juha priprema se od dashija i miso paste.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Miso_soup"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
