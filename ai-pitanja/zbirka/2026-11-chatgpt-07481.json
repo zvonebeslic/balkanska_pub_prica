@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-7481-20261120",
+    "createdAt": "2026-11-20T15:35:47+01:00",
+    "updatedAt": "2026-11-20T15:35:47+01:00",
+    "topic": "Film",
+    "focus": "Dorothyne cipelice u filmu Čarobnjak iz Oza",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koje su boje Dorothyne čarobne cipelice u filmu 'Čarobnjak iz Oza' iz 1939., premda su u knjizi srebrne?",
+    "answers": [
+      "crvene",
+      "rubin crvene",
+      "rubinske"
+    ],
+    "explanation": "Za filmsku verziju cipelice su postale rubincrvene kako bi se istaknule u Technicoloru.",
+    "sources": [
+      "https://americanhistory.si.edu/press/fact-sheets/dorothys-ruby-slippers"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
