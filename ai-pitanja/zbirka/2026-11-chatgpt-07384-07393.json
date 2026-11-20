@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-7384-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Glazba",
+    "focus": "pjevač hita Never Gonna Give You Up",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Pjesma 'Never Gonna Give You Up' postala je internetska šala poznata kao rickrolling. Koji ju je britanski pjevač snimio?",
+    "answers": [
+      "Rick Astley"
+    ],
+    "explanation": "Rick Astley objavio je pjesmu 1987. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Never_Gonna_Give_You_Up"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7385-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Sport",
+    "focus": "sport u kojem se igrači dodavanjem lopte nastoje približiti obruču",
+    "difficulty": 2,
+    "styleId": 53,
+    "styleDescription": "Opisom pravila igre traži naziv društvene igre",
+    "question": "U kojem se sportu na terenu istodobno nalazi po pet igrača svake momčadi, a pogodak izvan luka vrijedi tri boda?",
+    "answers": [
+      "Košarka"
+    ],
+    "explanation": "U košarci momčadi imaju po pet igrača na parketu, a trica vrijedi tri boda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Basketball"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7386-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Život je lijep",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao i odigrao glavnu ulogu u talijanskom filmu 'Život je lijep' iz 1997. godine?",
+    "answers": [
+      "Roberto Benigni"
+    ],
+    "explanation": "Benigni je režirao i glumio u filmu La vita è bella.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Life_Is_Beautiful"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7387-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Književnost",
+    "focus": "autorica romana Ponos i predrasude",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Elizabeth Bennet i gospodin Darcy likovi su iz romana 'Ponos i predrasude'. Tko je njegova autorica?",
+    "answers": [
+      "Jane Austen"
+    ],
+    "explanation": "Jane Austen napisala je roman Pride and Prejudice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pride_and_Prejudice"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7388-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Estonije",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je baltički glavni grad poznat po očuvanoj srednjovjekovnoj jezgri i nalazi se na obali Finskog zaljeva?",
+    "answers": [
+      "Tallinn"
+    ],
+    "explanation": "Tallinn je glavni grad Estonije na Finskom zaljevu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tallinn"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7389-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol natrija",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Kuhinjska sol sadrži natrijev klorid. Kojim se dvoslovnim kemijskim simbolom označava natrij?",
+    "answers": [
+      "Na"
+    ],
+    "explanation": "Kemijski simbol natrija Na potječe od latinskog naziva natrium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7390-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Životinje",
+    "focus": "najveća danas živuća vrsta pingvina",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je najveća živuća vrsta pingvina, prepoznatljiva po žutim oznakama na vratu i glavi?",
+    "answers": [
+      "Carski pingvin"
+    ],
+    "explanation": "Carski pingvin najveća je živuća vrsta pingvina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Emperor_penguin"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7391-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Povijest",
+    "focus": "godina prvog slijetanja ljudi na Mjesec",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje su godine astronauti misije Apollo 11 prvi put zakoračili na površinu Mjeseca?",
+    "answers": [
+      "1969."
+    ],
+    "explanation": "Neil Armstrong i Buzz Aldrin sletjeli su na Mjesec 1969.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Apollo_11"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7392-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Tehnologija",
+    "focus": "značenje kratice GPS",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja se troslovna kratica koristi za satelitski sustav koji omogućuje određivanje položaja i navigaciju?",
+    "answers": [
+      "GPS"
+    ],
+    "explanation": "GPS je kratica za Global Positioning System.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7393-20261120",
+    "createdAt": "2026-11-20T08:41:54+01:00",
+    "updatedAt": "2026-11-20T08:41:54+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert od kave i mascarponea",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Piškote natopljene kavom, mascarpone i kakao slojevi su kojeg poznatog talijanskog deserta?",
+    "answers": [
+      "Tiramisu"
+    ],
+    "explanation": "Tiramisu je talijanski desert s piškotama, kavom i mascarponeom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
