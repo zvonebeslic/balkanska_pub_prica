@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-7314-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Glazba",
+    "focus": "pjevačica pjesme Back to Black",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album Back to Black objavila je Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7315-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Nogomet",
+    "focus": "nadimak nogometne reprezentacije Japana",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koju azijsku nogometnu reprezentaciju navijači često nazivaju 'Samurai Blue'?",
+    "answers": [
+      "Japan",
+      "Japana"
+    ],
+    "explanation": "Samurai Blue nadimak je japanske muške nogometne reprezentacije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Japan_national_football_team"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7316-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Film",
+    "focus": "redatelj trilogije Gospodar prstenova",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je novozelandski redatelj režirao filmsku trilogiju 'Gospodar prstenova'?",
+    "answers": [
+      "Peter Jackson",
+      "Jackson"
+    ],
+    "explanation": "Peter Jackson režirao je filmsku trilogiju Gospodar prstenova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7317-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Lovac u žitu",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je američki književnik napisao roman 'Lovac u žitu'?",
+    "answers": [
+      "J. D. Salinger",
+      "Jerome David Salinger",
+      "Salinger"
+    ],
+    "explanation": "J. D. Salinger napisao je The Catcher in the Rye.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Catcher_in_the_Rye"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7318-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Novog Zelanda",
+    "difficulty": 1,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koji je glavni grad Novog Zelanda, iako je Auckland njegov najveći grad?",
+    "answers": [
+      "Wellington"
+    ],
+    "explanation": "Wellington je glavni grad Novog Zelanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wellington"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7319-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol kalija",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element nosi simbol K u periodnom sustavu?",
+    "answers": [
+      "Kalij"
+    ],
+    "explanation": "Simbol K označava kalij, prema latinskom nazivu kalium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7320-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Životinje",
+    "focus": "sisavac koji leti aktivnim letom",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je skupina sisavaca jedina sposobna za pravi aktivni let?",
+    "answers": [
+      "Šišmiši",
+      "Šišmiš"
+    ],
+    "explanation": "Šišmiši su jedini sisavci sposobni za održivi aktivni let.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bat"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7321-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Povijest",
+    "focus": "godina prvog slijetanja ljudi na Mjesec",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine posada Apolla 11 prvi put spustila ljude na Mjesec?",
+    "answers": [
+      "1969",
+      "1969."
+    ],
+    "explanation": "Neil Armstrong i Buzz Aldrin sletjeli su na Mjesec u srpnju 1969.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Apollo_11"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7322-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Tehnologija",
+    "focus": "značenje kratice HTML",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Koji se označni jezik skriva iza kratice HTML?",
+    "answers": [
+      "HyperText Markup Language",
+      "Hypertext Markup Language"
+    ],
+    "explanation": "HTML je kratica za HyperText Markup Language.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/HTML"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7323-20261120",
+    "createdAt": "2026-11-20T02:42:28+01:00",
+    "updatedAt": "2026-11-20T02:42:28+01:00",
+    "topic": "Gastronomija",
+    "focus": "sir u grčkoj salati",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se bijeli grčki sir tradicionalno dodaje grčkoj salati?",
+    "answers": [
+      "Feta",
+      "Feta sir"
+    ],
+    "explanation": "Feta je tradicionalni sir u grčkoj salati.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Greek_salad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
