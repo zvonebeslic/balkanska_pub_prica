@@ -9,7 +9,7 @@
   const client = window.supabase?.createClient(API_URL, API_KEY);
   let identity = null, current = null, kingdoms = [], cells = [], map = null, tilesLayer, borderLayer, labelsLayer;
   let focusCell = null, mapLoading = false, mapRevision = 0, dialogQuiz = false;
-  let selectedShape = "blok";
+  let selectedShape = "blok", realmCatalog = [];
   const shapeDescriptions = {
     blok: "Zbijeni blok: širina i dubina su približno jednake.",
     traka: "Ravna traka: osvajanje se proteže u odabranom smjeru.",
@@ -118,11 +118,26 @@
     renderDashboard();
     return current;
   }
+  function filterRealmCatalog() {
+    const select = $("realm-choice");
+    const query = $("realm-search").value.trim().toLocaleLowerCase("hr");
+    const matching = query
+      ? realmCatalog.filter(n => n.toLocaleLowerCase("hr").includes(query))
+      : realmCatalog;
+    const visible = matching.slice(0, 180);
+    const previous = select.value;
+    select.innerHTML = '<option value="">Odaberi ime…</option>' +
+      visible.map(n => '<option value="' + safe(n) + '">' + safe(n) + '</option>').join("");
+    if (visible.includes(previous)) select.value = previous;
+    $("realm-found").textContent = matching.length
+      ? "Prikazano " + visible.length + " od " + matching.length +
+        " dostupnih naziva" + (matching.length > visible.length ? " — pretraži za više." : ".")
+      : "Nema imena za taj pojam. Pokušaj drugu riječ.";
+  }
   async function reloadCatalog() {
     const names = await rpc("kz_catalog");
-    const select = $("realm-choice");
-    select.innerHTML = '<option value="">Odaberi ime…</option>' +
-      (names || []).map(n => '<option value="' + safe(n) + '">' + safe(n) + '</option>').join("");
+    realmCatalog = Array.isArray(names) ? names : [];
+    filterRealmCatalog();
   }
   function renderDashboard() {
     const k = current?.kingdom;
@@ -547,6 +562,7 @@
     $("refresh-btn").addEventListener("click",async()=>{await reloadState();await reloadMap();});
     $("play-btn").addEventListener("click",play);
     $("create-btn").addEventListener("click",createKingdom);
+    $("realm-search").addEventListener("input",filterRealmCatalog);
     $("spawn-btn").addEventListener("click",placeSpawn);
     $("leave-btn").addEventListener("click",leaveKingdom);
     $("members-box").addEventListener("click",renderMembers);
