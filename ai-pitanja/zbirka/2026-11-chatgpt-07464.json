@@ -1,0 +1,24 @@
+[
+  {
+    "id": "chatgpt10000-7464-20261120",
+    "createdAt": "2026-11-20T14:38:52+01:00",
+    "updatedAt": "2026-11-20T14:38:52+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album Back to Black objavljen je 2006.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
