@@ -211,6 +211,73 @@
   function cellOwner(x,y) {
     return cells.find(c => Number(c.x) === x && Number(c.y) === y)?.k || null;
   }
+
+  // Položaj naziva određuje se IZ STVARNIH ćelija teritorija, a ne iz osnivačke GPS točke.
+  // Za svako kraljevstvo pronalazi se najdulji vodoravni pojas sa sigurnom marginom
+  // iznad i ispod slova. Time ime ostaje unutar zemlje i pri nepravilnim oblicima.
+  function drawTerritoryLabels(grid, byId) {
+    const zoom = map.getZoom();
+    const pxPerMetre = 256 * Math.pow(2,zoom) / (2*Math.PI*R);
+    const owners = new Map();
+    for (const c of cells) {
+      if (!owners.has(c.k)) owners.set(c.k, []);
+      owners.get(c.k).push([Number(c.x),Number(c.y)]);
+    }
+    for (const [id, positions] of owners) {
+      const kingdom = byId.get(id);
+      if (!kingdom || !positions.length) continue;
+      const total = Math.max(1, Number(kingdom.area) || positions.length);
+      // Stvarna površina određuje stil; vidljiva geometrija ograničava širinu.
+      const size = Math.min(34, Math.max(8, 7 + 4.1*Math.log10(total)));
+      const letter = Math.min(7, Math.max(.3, .5 + 1.4*Math.log10(total)));
+      const lines = new Map();
+      for (const [x,y] of positions) {
+        if (!lines.has(y)) lines.set(y, []);
+        lines.get(y).push(x);
+      }
+      let best = null;
+      for (const [y,row] of lines) {
+        row.sort((a,b)=>a-b);
+        let start = row[0], end = row[0];
+        const evaluate = (a,b) => {
+          const width = b-a+1;
+          if (width<2) return;
+          const cx = Math.floor((a+b)/2);
+          // Vertikalni prostor za dvosmjerno iscrtavanje slova.
+          let top = 0, bottom = 0;
+          while (top<24 && grid.get(cx+":"+(y+top+1)) === id) top++;
+          while (bottom<24 && grid.get(cx+":"+(y-bottom-1)) === id) bottom++;
+          const room = Math.min(top,bottom);
+          const score = width * Math.min(1,(room+1)/2) + Math.min(top,bottom)*1.8;
+          if (!best || score>best.score) best={x:cx,y,width,room,score};
+        };
+        for (let i=1;i<row.length;i++) {
+          if (row[i]===end+1) end=row[i];
+          else {evaluate(start,end);start=end=row[i];}
+        }
+        evaluate(start,end);
+      }
+      if (!best) continue;
+      const widthPx = Math.max(0,(best.width-1.4)*pxPerMetre);
+      const heightPx = Math.max(0,(best.room*2+1)*pxPerMetre);
+      const actualFont = Math.min(size, Math.max(7,heightPx*.56));
+      // Tekst se samostalno sužava, ali ga nikad ne širimo izvan granica.
+      const length = [...kingdom.name].length;
+      const measured = length*(actualFont*.63+letter);
+      const scale = Math.min(1.35, widthPx / Math.max(1,measured));
+      if (actualFont < 7 || scale < .36 || widthPx < 22 || heightPx < 9) continue;
+      const center = ll(best.x+.5,best.y+.5);
+      const label = '<div class="territory-ink" style="--kingdom-ink:' + safe(kingdom.color) +
+        ';--ink-size:' + actualFont.toFixed(2) + 'px;--ink-space:' + letter.toFixed(2) +
+        'px;--ink-scale:' + scale.toFixed(3) + ';max-width:' + Math.floor(widthPx) +
+        'px" title="' + safe(kingdom.name) + '"><span>' + safe(kingdom.name) + '</span></div>';
+      L.marker([center.lat,center.lng],{
+        icon:L.divIcon({className:"territory-ink-holder",html:label,iconSize:[1,1],iconAnchor:[0,0]}),
+        keyboard:false,zIndexOffset:700
+      }).on("click",()=>showKingdom(kingdom)).addTo(labelsLayer);
+    }
+  }
+
   function drawMap() {
     labelsLayer.clearLayers();
     borderLayer.clearLayers();
@@ -219,23 +286,24 @@
     const detailed = map.getZoom() >= 18;
     const byId = new Map(kingdoms.map(k => [k.id,k]));
 
-    // Na širokom prikazu 1 m² nije vidljiv u mjerilu: jasna oznaka položaja.
-    // Na uvećanoj karti crta se stvaran rub između vlasnika ćelija.
-    for (const k of kingdoms) {
-      if (k.anchor_x == null || k.anchor_y == null || Number(k.area) < 1) continue;
-      const center = ll(Number(k.anchor_x),Number(k.anchor_y));
-      const spacing = Math.min(0.17, Math.max(0, Math.log10(Number(k.area) + 1) / 24));
-      const html = '<div class="realm-label" style="--realm-color:' + safe(k.color) +
-        ';letter-spacing:' + spacing + 'rem"><span>' + safe(k.name) +
-        '</span><small>' + safe(formatArea(k.area)) + '</small></div>';
-      if (!detailed) {
-        L.circleMarker([center.lat,center.lng], {
-          radius: 11, color: "#ffffff", weight: 3.5, fillColor: k.color,
-          fillOpacity: .95, interactive: true, renderer: map._kzCanvasRenderer
+    if (!detailed) {
+      // Na regionalnom prikazu stvarni kvadrat od 1 m² ne može biti čitljiv:
+      // čuva se precizna oznaka položaja bez glumljenja većeg teritorija.
+      for (const k of kingdoms) {
+        if (k.anchor_x == null || k.anchor_y == null || Number(k.area) < 1) continue;
+        const center = ll(Number(k.anchor_x), Number(k.anchor_y));
+        L.circleMarker([center.lat, center.lng], {
+          radius: 7.5, color: "#fff", weight: 2.8, fillColor: k.color,
+          fillOpacity: 0.96, renderer: map._kzCanvasRenderer
+        }).on("click", () => showKingdom(k)).addTo(labelsLayer);
+        L.marker([center.lat, center.lng], {
+          icon: L.divIcon({
+            className: "realm-map-pin",
+            html: '<span style="--realm-color:' + safe(k.color) + '">' + safe(k.name) + '</span>',
+            iconSize: [1,1], iconAnchor: [0,0]
+          })
         }).on("click", () => showKingdom(k)).addTo(labelsLayer);
       }
-      L.marker([center.lat,center.lng], { icon: L.divIcon({className:"",html,iconSize:[1,1]}) })
-        .on("click", () => showKingdom(k)).addTo(labelsLayer);
     }
 
     if (detailed) {
@@ -269,6 +337,7 @@
         if (grid.get(x+":"+(y-1)) !== c.k) edge(c.k,"H",y,x);
         if (grid.get(x+":"+(y+1)) !== c.k) edge(c.k,"H",y+1,x);
       }
+      drawTerritoryLabels(grid, byId);
       for (const [key, offsets] of outline) {
         const [id, axis, fixedStr] = key.split("|");
         const k = byId.get(id);
@@ -294,6 +363,9 @@
         paint(begin,last);
       }
     }
+    $("map-hint").textContent = detailed
+      ? "Nazivi su ucrtani unutar vlastitih granica. Povećaj kartu za sitne teritorije."
+      : "Ovdje vidiš lokacije. Povećaj na 18+ za stvarne granice i nazive unutar zemlje.";
     $("map-count").textContent = kingdoms.length + " kraljevstava · " +
       (detailed ? cells.length + " m² u prikazu · bijelo obrubljeni rubovi su granice" :
       "obojene oznake prikazuju položaj; uvećaj na 18+ za stvarne granice");
