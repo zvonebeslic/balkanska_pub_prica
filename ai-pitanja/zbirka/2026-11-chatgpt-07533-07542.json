@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-7533-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Africa Toto",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je američki rock sastav snimio hit 'Africa', objavljen na albumu 'Toto IV'?",
+    "answers": [
+      "Toto"
+    ],
+    "explanation": "Sastav Toto objavio je pjesmu Africa 1982.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Africa_(Toto_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7534-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Sport",
+    "focus": "pravila odbojke libero",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "U kojem ekipnom sportu igrač nazvan libero nosi dres drukčije boje i specijaliziran je za obranu?",
+    "answers": [
+      "Odbojka"
+    ],
+    "explanation": "Libero je specijalizirani obrambeni igrač u odbojci.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Libero_(volleyball)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7535-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Film",
+    "focus": "film The Grand Budapest Hotel redatelj",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao film 'Grand Budapest Hotel' iz 2014., poznat po simetričnim kadrovima i osebujnom vizualnom stilu?",
+    "answers": [
+      "Wes Anderson"
+    ],
+    "explanation": "Wes Anderson režirao je film The Grand Budapest Hotel.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7536-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Književnost",
+    "focus": "roman Ime ruže autor",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Franjevački redovnik William od Baskervillea istražuje tajanstvena ubojstva u samostanu. Kako se zove roman u kojem se to događa?",
+    "answers": [
+      "Ime ruže"
+    ],
+    "explanation": "Ime ruže roman je Umberta Eca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7537-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Zemljopis",
+    "focus": "država glavni grad Kigali",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kigali je glavni grad koje afričke države, poznate i kao zemlja tisuću brežuljaka?",
+    "answers": [
+      "Ruanda"
+    ],
+    "explanation": "Kigali je glavni grad Ruande.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kigali"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7538-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Životinje",
+    "focus": "narval zub kljova",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima dugačku spiralnu kljovu koja je zapravo izduženi zub?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalova kljova razvija se iz zuba.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7539-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Kemija",
+    "focus": "bakar latinski cuprum",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal, čiji simbol Cu potječe od latinskog 'cuprum', često nalazimo u električnim vodičima?",
+    "answers": [
+      "Bakar"
+    ],
+    "explanation": "Bakar dobro provodi električnu energiju i ima simbol Cu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7540-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine osmanska vojska Mehmeda II. osvojila Carigrad i okončala Bizantsko Carstvo?",
+    "answers": [
+      "1453"
+    ],
+    "explanation": "Carigrad je osvojen 29. svibnja 1453.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7541-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Tehnologija",
+    "focus": "HTML značenje kratice",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koja kratica označava jezik za označavanje sadržaja mrežnih stranica, čiji naziv na engleskom glasi HyperText Markup Language?",
+    "answers": [
+      "HTML"
+    ],
+    "explanation": "HTML je standardni označni jezik za web-stranice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/HTML"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7542-20261120",
+    "createdAt": "2026-11-20T21:36:14+01:00",
+    "updatedAt": "2026-11-20T21:36:14+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu mascarpone",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji se talijanski desert tradicionalno priprema od piškota namočenih u kavu, mascarponea i kakaa?",
+    "answers": [
+      "Tiramisu"
+    ],
+    "explanation": "Tiramisu je talijanski desert s kavom i mascarponeom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
