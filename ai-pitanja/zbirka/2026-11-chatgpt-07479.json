@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chatgpt10000-7479-20261120",
+    "createdAt": "2026-11-20T15:35:47+01:00",
+    "updatedAt": "2026-11-20T15:35:47+01:00",
+    "topic": "Književnost",
+    "focus": "Hercule Poirot belgijski detektiv",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je književnica osmislila belgijskog detektiva Herculea Poirota, poznatog po brkovima i 'malim sivim stanicama'?",
+    "answers": [
+      "Agatha Christie",
+      "Agata Kristi"
+    ],
+    "explanation": "Agatha Christie stvorila je lik Herculea Poirota.",
+    "sources": [
+      "https://www.agathachristie.com/en/characters/hercule-poirot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
