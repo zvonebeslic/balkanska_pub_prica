@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chatgpt10000-7480-20261120",
+    "createdAt": "2026-11-20T15:35:47+01:00",
+    "updatedAt": "2026-11-20T15:35:47+01:00",
+    "topic": "Automobili",
+    "focus": "prvi prvak Formule 1 1950",
+    "difficulty": 3,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Tko je 1950. postao prvi svjetski prvak Formule 1, vozeći za Alfa Romeo?",
+    "answers": [
+      "Giuseppe Farina",
+      "Nino Farina",
+      "Giuseppe Nino Farina"
+    ],
+    "explanation": "Giuseppe 'Nino' Farina osvojio je prvo prvenstvo Formule 1 1950. godine.",
+    "sources": [
+      "https://www.formula1.com/en/information/drivers-hall-of-fame-nino-farina.42vZMEuSei8avz76yMDHpf"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
