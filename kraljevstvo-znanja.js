@@ -450,18 +450,19 @@
     if(owners.includes(own))return {text:"Ovdje već imaš teritorij — pomakni blok.",kind:"own"};
     if(owners.length>1 || (owners.length&&nearby.length<20))
       return {text:"Djelomično zauzet stari blok — nedostupan.",kind:"blocked"};
-    // Izvan uporišta novi blok i napad moraju dodirivati tvoju granicu.
-    if (Number(current?.kingdom?.area||0)>0 && !cursorSpawnMode) {
-      const touching=cells.some(c=>{
-        if(c.k!==own)return false;
-        const x=Number(c.x),y=Number(c.y);
-        return (x===b.x-1&&y>=b.y&&y<=b.y+3) ||
-          (x===b.x+5&&y>=b.y&&y<=b.y+3) ||
-          (y===b.y-1&&x>=b.x&&x<=b.x+4) ||
-          (y===b.y+4&&x>=b.x&&x<=b.x+4);
-      });
-      if(!touching)return {text:"Odaberi Novo uporište za udaljeno područje.",kind:"unconnected"};
-    }
+    const touching=cells.some(c=>{
+      if(c.k!==own)return false;
+      const x=Number(c.x),y=Number(c.y);
+      return (x===b.x-1&&y>=b.y&&y<=b.y+3) ||
+        (x===b.x+5&&y>=b.y&&y<=b.y+3) ||
+        (y===b.y-1&&x>=b.x&&x<=b.x+4) ||
+        (y===b.y+4&&x>=b.x&&x<=b.x+4);
+    });
+    // Uporišta mogu biti udaljena, napadi ne mogu preskakati obranu.
+    if(owners.length===1 && !touching)
+      return {text:"Za napad se mora dodirivati tvoje kraljevstvo.",kind:"unconnected"};
+    if(Number(current?.kingdom?.area||0)>0&&!cursorSpawnMode&&!touching)
+      return {text:"Odaberi Novo uporište za udaljeno područje.",kind:"unconnected"};
     if(owners.length===1)return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 40 m².",kind:"attack"};
     return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
   }
