@@ -9,7 +9,7 @@
   const client = window.supabase?.createClient(API_URL, API_KEY);
   let identity = null, current = null, kingdoms = [], cells = [], map = null, tilesLayer, borderLayer, labelsLayer;
   let mapLoading = false, mapRevision = 0, dialogQuiz = false;
-  let cursor = null, cursorGps = null, previewLayer = null, blockGridLayer = null, previewBusy = false;
+  let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
   const alignBlock = (x,y) => ({x: Math.floor(x/5)*5, y: Math.floor(y/4)*4});
   const previewCentre = b => ll(b.x+2.5,b.y+2);
   const BLOCK_AREA = 20;
@@ -141,19 +141,21 @@
     $("create-panel").classList.toggle("hidden", !!k);
     $("spawn-btn").classList.toggle("hidden", !isKing);
     $("joystick-panel").classList.toggle("hidden", !isKing);
-    $("spawn-btn").textContent = "⌖ GPS blok";
+    $("spawn-btn").textContent = (Number(k?.area) || 0) === 0 ? "♜ Prvi blok" : "♜ Novo uporište";
     $("spawn-btn").title = (Number(k?.area) || 0) === 0 ?
-      "Odredi početni blok preko GPS lokacije" : "Odredi novo udaljeno uporište preko GPS lokacije";
+      "Odaberi početni blok u središtu karte" : "Odaberi novo udaljeno uporište u središtu karte";
     $("spawn-btn").disabled = !isKing;
+    $("choose-map-center").disabled = !isKing;
     if (isKing && !cursor && k.anchor_x != null) {
       const point = alignBlock(Number(k.anchor_x),Number(k.anchor_y));
       cursor = {x:point.x+5,y:point.y};
     }
+    if (!isKing) { cursor = null; cursorSpawnMode = false; }
     if (isKing) updateCursorPreview();
     $("leave-btn").classList.toggle("hidden", !k);
     $("leave-btn").textContent = isKing ? "Predaj krunu / Zatvori kraljevstvo" : "Napusti kraljevstvo";
     $("action-help").textContent = isKing ?
-      "Upravljaj zelenim blokom od 20 m² strelicama ispod karte. Potvrdi osvajanje gumbom." :
+      "Pomakni stvarnu kartu gdje želiš, klikni „Odaberi mjesto” i joystickom postavi blok od 20 m²." :
       k ? "Prikupljaš kvadrate znanja za zajednički konto. Kralj raspoređuje teritorij." :
       "Osnuj kraljevstvo ili dodirni drugo kraljevstvo na karti i zatraži članstvo.";
     renderRequests();
@@ -357,8 +359,8 @@
     if(detailed)drawBlockGrid();
     updateCursorPreview();
     $("map-hint").textContent = detailed
-      ? "Nazivi su ucrtani unutar vlastitih granica. Povećaj kartu za sitne teritorije."
-      : "Ovdje vidiš lokacije. Povećaj na 18+ za stvarne granice i nazive unutar zemlje.";
+      ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
+      : "Pomakni kartu na željeno područje i klikni „Odaberi mjesto”. GPS nije potreban.";
     $("map-count").textContent = kingdoms.length + " kraljevstava · " +
       (detailed ? cells.length + " m² u prikazu · bijelo obrubljeni rubovi su granice" :
       "obojene oznake prikazuju položaj; uvećaj na 18+ za stvarne granice");
@@ -406,26 +408,19 @@
       }
     });
   }
-  async function getGPS() {
-    if (!navigator.geolocation) throw Error("Ovaj preglednik ne podržava GPS.");
-    if (!window.isSecureContext) throw Error("GPS zahtijeva HTTPS.");
-    return new Promise((resolve,reject) => {
-      navigator.geolocation.getCurrentPosition(
-        pos => resolve({lat:pos.coords.latitude,lon:pos.coords.longitude,accuracy:pos.coords.accuracy}),
-        err => reject(Error("GPS nije dostupan: " + err.message)),
-        { enableHighAccuracy:true, maximumAge:0, timeout:18000 }
-      );
-    });
-  }
-  async function showGPS() {
-    try {
-      $("gps-status").textContent="Tražim GPS lokaciju…";
-      const pos=await getGPS();
-      const desc = "GPS ±" + Math.round(pos.accuracy) + " m";
-      $("gps-status").textContent = desc;
-      map.setView([pos.lat,pos.lon],19);
-      toast(desc + " · Osvježena tvoja lokacija.");
-    } catch(e){$("gps-status").textContent="GPS nije potvrđen";toast(e.message);}
+
+  // Zemljopisni položaj određuje se na vidljivoj karti (bez GPS dozvole).
+  function chooseMapCentre(remote=false) {
+    if (current?.kingdom?.role !== "kralj") return toast("Samo kralj može postavljati blokove.");
+    const centre=map.getCenter();
+    const projected=xy(centre.lat,centre.lng);
+    cursor=alignBlock(projected.x,projected.y);
+    cursorSpawnMode=remote || Number(current.kingdom.area||0)===0;
+    if (map.getZoom()<19) map.setView(previewCentre(cursor),20);
+    else map.panTo(previewCentre(cursor));
+    updateCursorPreview();
+    toast(cursorSpawnMode ? "Odabrano uporište. Strelicama namjesti blok pa pritisni POSTAVI." :
+      "Odabrano središte karte. Novi blok mora dodirivati tvoju granicu.");
   }
   // Mreža je globalno poravnata: svaka pločica uvijek zauzima 5 × 4 = 20 m².
   function drawBlockGrid(grid) {
@@ -448,13 +443,25 @@
     }
   }
   function blockStatus(b) {
-    if(!b)return {text:"Odredi GPS položaj ili pomakni strelice.",kind:"unknown"};
+    if(!b)return {text:"Pomakni kartu i odaberi mjesto.",kind:"unknown"};
     const nearby = cells.filter(c=>Number(c.x)>=b.x&&Number(c.x)<b.x+5&&Number(c.y)>=b.y&&Number(c.y)<b.y+4);
     const owners = [...new Set(nearby.map(c=>c.k))];
     const own = current?.kingdom?.id;
     if(owners.includes(own))return {text:"Ovdje već imaš teritorij — pomakni blok.",kind:"own"};
     if(owners.length>1 || (owners.length&&nearby.length<20))
       return {text:"Djelomično zauzet stari blok — nedostupan.",kind:"blocked"};
+    // Izvan uporišta novi blok i napad moraju dodirivati tvoju granicu.
+    if (Number(current?.kingdom?.area||0)>0 && !cursorSpawnMode) {
+      const touching=cells.some(c=>{
+        if(c.k!==own)return false;
+        const x=Number(c.x),y=Number(c.y);
+        return (x===b.x-1&&y>=b.y&&y<=b.y+3) ||
+          (x===b.x+5&&y>=b.y&&y<=b.y+3) ||
+          (y===b.y-1&&x>=b.x&&x<=b.x+4) ||
+          (y===b.y+4&&x>=b.x&&x<=b.x+4);
+      });
+      if(!touching)return {text:"Odaberi Novo uporište za udaljeno područje.",kind:"unconnected"};
+    }
     if(owners.length===1)return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 40 m².",kind:"attack"};
     return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
   }
@@ -465,17 +472,17 @@
     const label=$("cursor-status");
     const isKing=current?.kingdom?.role==="kralj";
     if(!isKing || !cursor) {
-      if(label)label.textContent=isKing?"Odredi GPS lokaciju ili pomakni joystick.":"";
+      if(label)label.textContent=isKing?"Odaberi mjesto na karti.":"";
       if(btn)btn.disabled=true;
       return;
     }
     const status=blockStatus(cursor);
     const bank=Number(current?.kingdom?.bank||0);
     const cost=status.kind==="attack"?40:20;
-    const valid=!["own","blocked"].includes(status.kind)&&bank>=cost;
+    const valid=["free","attack"].includes(status.kind)&&bank>=cost;
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 40 m²":
       status.kind==="free"?"Slobodan blok · 20 m²":
-      status.kind==="own"?"Već osvojeno": "Blok je zauzet";
+      status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":"Blok je zauzet";
     if(label && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
@@ -494,52 +501,31 @@
     }).addTo(previewLayer);
     $("cursor-coords").textContent=cursor.x+" · "+cursor.y;
   }
+
   function moveCursor(direction) {
     if(current?.kingdom?.role!=="kralj")return;
-    if(!cursor) {
-      const k=current.kingdom;
-      if(k.anchor_x==null) return toast("Prvo odredi početnu GPS lokaciju.");
-      cursor=alignBlock(Number(k.anchor_x),Number(k.anchor_y));
-    }
+    if(!cursor){ chooseMapCentre(false);if(!cursor)return; }
     const dir={N:[0,4],S:[0,-4],E:[5,0],W:[-5,0]}[direction];
     if(!dir)return;
-    if(cursorGps)cursorGps=null; // Nakon ručnog pomicanja vrijede samo spojene granice.
     cursor={x:cursor.x+dir[0],y:cursor.y+dir[1]};
     map.setView(previewCentre(cursor),Math.max(map.getZoom(),19));
     updateCursorPreview();
   }
-  async function placeSpawn() {
-    if(current?.kingdom?.role!=="kralj")return;
-    try {
-      $("spawn-btn").disabled=true;
-      const gps=await getGPS();
-      if(gps.accuracy>100)throw Error("GPS nije dovoljno precizan.");
-      const p=xy(gps.lat,gps.lon);
-      cursor=alignBlock(p.x,p.y);
-      cursorGps=gps;
-      map.setView(previewCentre(cursor),20);
-      toast("GPS blok je odabran. Potvrdi gumbom ZAUZMI BLOK.");
-      await reloadMap();
-    }catch(e){toast(e.message);}
-    finally {$("spawn-btn").disabled=false;updateCursorPreview();}
-  }
+  function placeSpawn(){chooseMapCentre(true);}
   async function saveBlock() {
     if(!cursor || previewBusy ||current?.kingdom?.role!=="kralj")return;
     const status=blockStatus(cursor);
     const cost=status.kind==="attack"?40:20;
-    if(["own","blocked"].includes(status.kind)||Number(current.kingdom.bank)<cost)
+    if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
-    if(!cursorGps && Number(current.kingdom.area)===0)
-      return toast("Prvi blok mora biti potvrđen tvojom GPS lokacijom.");
     const question=status.kind==="attack"?"Napasti i preuzeti cijeli suparnički blok od 20 m² za 40 m² s konta?":
       "Zauzeti odabrani blok od 20 m² za 20 m² s konta?";
     if(!confirm(question))return;
     previewBusy=true;$("claim-block").disabled=true;
     try{
-      const params={p_x:cursor.x,p_y:cursor.y,p_spawn:!!cursorGps};
-      if(cursorGps)Object.assign(params,{p_lat:cursorGps.lat,p_lon:cursorGps.lon,p_accuracy:cursorGps.accuracy});
+      const params={p_x:cursor.x,p_y:cursor.y,p_spawn:cursorSpawnMode||Number(current.kingdom.area||0)===0};
       const result=await rpc("kz_place_block",args(params));
-      cursorGps=null;
+      cursorSpawnMode=false;
       cursor={x:cursor.x+5,y:cursor.y};
       toast((result.attack?"⚔ Osvojen tuđi blok! ":"✓ Osvojen novi blok! ")+
         formatArea(result.added)+" · trošak "+formatArea(result.spent));
@@ -891,7 +877,7 @@
     }catch(e){toast(e.message);}
   }
   function bind() {
-    $("gps-btn").addEventListener("click",showGPS);
+    $("choose-map-center").addEventListener("click",()=>chooseMapCentre(false));
     $("refresh-btn").addEventListener("click",async()=>{await reloadState();await reloadMap();});
     $("play-btn").addEventListener("click",play);
     $("history-open").addEventListener("click",showFullHistory);
