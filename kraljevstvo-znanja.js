@@ -291,13 +291,13 @@
         if (k.anchor_x == null || k.anchor_y == null || Number(k.area) < 1) continue;
         const center = ll(Number(k.anchor_x), Number(k.anchor_y));
         L.circleMarker([center.lat, center.lng], {
-          radius: 7.5, color: "#fff", weight: 2.8, fillColor: k.color,
+          radius: 8.5, color: "#e9c77b", weight: 3.2, fillColor: k.color,
           fillOpacity: 0.96, renderer: map._kzCanvasRenderer
         }).on("click", () => showKingdom(k)).addTo(labelsLayer);
         L.marker([center.lat, center.lng], {
           icon: L.divIcon({
             className: "realm-map-pin",
-            html: '<span style="--realm-color:' + safe(k.color) + '">' + safe(k.name) + '</span>',
+            html: '<span style="--realm-color:' + safe(k.color) + '">♛ '+ safe(k.name) + '</span>',
             iconSize: [1,1], iconAnchor: [0,0]
           })
         }).on("click", () => showKingdom(k)).addTo(labelsLayer);
@@ -318,7 +318,7 @@
         if (!k) continue;
         const sw = ll(x,y), ne = ll(x+1,y+1);
         L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]], {
-          stroke: false, fillColor: k.color, fillOpacity: 0.72,
+          stroke: false, fillColor: k.color, fillOpacity: 0.58,
           interactive: true, renderer: map._kzCanvasRenderer
         }).on("click", event => {
           L.DomEvent.stopPropagation(event);
@@ -343,9 +343,9 @@
           const points = axis === "H"
             ? [ll(a,fixed),ll(b+1,fixed)]
             : [ll(fixed,a),ll(fixed,b+1)];
-          // Tamni kontrastni rub + bijeli razdjelnik + kraljevska boja.
-          for (const [color,weight] of [["#08101f",8],["#ffffff",5.3],[k.color,3.1]]) {
-            L.polyline(points,{color,weight,opacity:1,interactive:false,
+          // Zlatna kartografska granica, suptilan sjaj u boji kraljevstva.
+          for (const [color,weight,opacity] of [[k.color,12,.23],["#071622",8.7,1],["#e6c981",5.2,.96],[k.color,3.1,1]]) {
+            L.polyline(points,{color,weight,opacity,interactive:false,
               lineCap:"round",lineJoin:"round",renderer:map._kzCanvasRenderer}).addTo(borderLayer);
           }
         };
@@ -437,7 +437,7 @@
     for(let x=left;x<=right;x+=5)for(let y=bottom;y<=top;y+=4) {
       const corner=ll(x,y),other=ll(x+5,y+4);
       L.rectangle([[corner.lat,corner.lng],[other.lat,other.lng]],{
-        color:"#c9e5fe",weight:.9,opacity:.42,fill:false,interactive:false,
+        color:"#e8d29c",weight:.85,opacity:.45,fill:false,interactive:false,
         renderer:map._kzCanvasRenderer
       }).addTo(blockGridLayer);
     }
@@ -492,12 +492,12 @@
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
     L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
-      color:valid?"#e5fff0":"#ffda83",weight:4,
-      fillColor:valid?"#49fa9a":"#ff9e6d",fillOpacity:.46,
-      dashArray:valid?"9 5":"4 6",interactive:false
+      color:valid?"#d3ffda":"#ffcf83",weight:4.3,
+      fillColor:valid?"#34ed9d":"#ff9e6d",fillOpacity:.44,
+      dashArray:valid?"8 4":"4 6",interactive:false
     }).addTo(previewLayer);
     L.marker(previewCentre(cursor),{interactive:false,
-      icon:L.divIcon({className:"cursor-badge",html:"<b>+20 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
+      icon:L.divIcon({className:"cursor-badge",html:"<b>♜ 20 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
     }).addTo(previewLayer);
     $("cursor-coords").textContent=cursor.x+" · "+cursor.y;
   }
