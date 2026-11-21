@@ -252,3 +252,66 @@ body{background:
  .joystick-meta #cursor-status{font-size:9px}
  .joystick-meta .joy-gps{font-size:10px;min-height:26px}
 }
+
+/* Pitanja: isti sadržaj i tok kao Online kviz — rezultati, povijest, glasovi i primjedbe. */
+.dialog.kz-quiz-dialog{width:min(1030px,100%);max-height:min(94dvh,1000px);padding:clamp(.85rem,2vw,1.35rem)}
+.kz-quiz-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);gap:1rem;align-items:start}
+.kz-question-area{min-width:0;padding:.7rem;background:linear-gradient(140deg,#11243d,#0a1c30);
+ border:1px solid #598ce26e;border-radius:16px}
+.kz-question-area .quiz-progress{color:#9fc7ff;font-size:.79rem;letter-spacing:.06em}
+.kz-question-area .quiz-question{font-size:clamp(1.06rem,1.7vw,1.32rem)!important;line-height:1.5}
+.kz-answer-list .option{margin:.55rem 0;border-color:#698aaa69;font-size:.88rem}
+.kz-history{min-width:0;max-height:65dvh;overflow:auto;padding:.75rem;border:1px solid #5d85a967;
+ border-radius:15px;background:#0a1a2d}
+.kz-history h3{margin:0 0 .65rem;font-size:.95rem;color:#e9f6ff}
+.kz-current-score{padding:.5rem .6rem;border-radius:10px;background:#1f416260;color:#aeffcf;
+ font-weight:900;font-size:.86rem;margin-bottom:.6rem}
+.kz-history-item{background:#0c2339;border:1px solid #53789e75;border-radius:12px;
+ padding:.75rem;margin:.6rem 0}
+.kz-history-item.correct{border-left:3px solid #42df96}
+.kz-history-item.incorrect{border-left:3px solid #f87171}
+.kz-history-q{font-weight:800;font-size:.82rem;line-height:1.45}
+.kz-history-q span{color:#a8c5e8}
+.kz-history-status{font-size:.74rem;color:#e5eefa;margin:.5rem 0}
+.kz-history-options{display:grid;gap:4px;margin:.5rem 0}
+.kz-history-option{font-size:.74rem;color:#a9bed5;line-height:1.35;border-radius:7px;padding:.28rem .45rem}
+.kz-history-option.correct{background:#15b46c2e;color:#a9ffd2;font-weight:850}
+.kz-history-option.selected:not(.correct){background:#ed657222;color:#ffc0c7}
+.kz-history-tools{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin-top:.65rem}
+.kz-vote{min-width:34px;min-height:31px;background:#ffffff10;border:1px solid #8ca5bd66;
+ color:white;border-radius:9px;cursor:pointer;font-size:1rem}
+.kz-vote.selected{background:#2997f455;border-color:#88c8ff}
+.kz-vote:disabled{opacity:.6}
+.kz-feedback-toggle,.kz-feedback-send{background:#23598c80;border:1px solid #5eacff99;
+ color:#eef7ff;font-weight:850;font-size:.71rem;border-radius:10px;padding:.5rem .65rem;cursor:pointer}
+.kz-feedback-box{position:relative;display:grid;gap:.6rem;margin-top:.75rem;padding:.8rem;
+ border-radius:12px;border:1px solid #4a98e283;background:#112c48}
+.kz-feedback-box b{font-size:.78rem;line-height:1.4;padding-right:1.1rem}
+.kz-feedback-box textarea{width:100%;min-height:92px;resize:vertical;
+ border:1px solid #577da2;border-radius:9px;background:#081a2e;color:#fff;
+ padding:.65rem;font-size:16px}
+.kz-feedback-close{position:absolute;right:.4rem;top:.3rem;background:transparent;color:#fff;
+ border:0;font-size:1.2rem;cursor:pointer}
+.kz-feedback-note{font-size:.71rem;color:#b5cde0}
+.kz-feedback-note.success{color:#92f8bc}.kz-feedback-note.error{color:#ff9da3}
+.kz-outcome-good{border-left:4px solid #34d399;color:#a7ffce}
+.kz-outcome-bad{border-left:4px solid #f87171;color:#ffd0d0}
+.kz-final-score{text-align:center;display:flex;align-items:center;justify-content:center;
+ flex-direction:column;gap:.4rem;margin:1rem auto;padding:1.4rem;border:1px solid #59cfa57c;
+ border-radius:16px;background:linear-gradient(120deg,#173856,#123934)}
+.kz-final-score strong{font-size:clamp(2.2rem,6vw,4rem);color:#daffe9;line-height:1}
+.kz-final-score b{font-size:1.4rem;color:#71edac}
+.kz-final-score span{font-size:.77rem;color:#bcd2e5}
+.kz-quiz-actions,.kingdom-quiz-shortcuts{display:flex;align-items:center;justify-content:center;
+ gap:.55rem;flex-wrap:wrap;margin:.65rem 0}
+.kingdom-quiz-shortcuts small{font-size:.69rem;color:#a4c7df}
+.kz-quiz-actions button{min-height:39px}
+.kz-history-game{margin:.7rem 0;border:1px solid #57799e6b;border-radius:12px;
+ padding:.6rem;background:#112740}
+.kz-history-game summary{font-weight:850;color:#f2f8ff;cursor:pointer;font-size:.83rem}
+@media(max-width:710px){
+ .dialog.kz-quiz-dialog{width:100%;max-height:95dvh;padding:.7rem}
+ .kz-quiz-layout{grid-template-columns:1fr;gap:.6rem}
+ .kz-history{max-height:37dvh}
+ .kz-question-area{padding:.55rem}
+}
