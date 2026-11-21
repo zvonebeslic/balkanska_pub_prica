@@ -1,0 +1,227 @@
+[
+  {
+    "id": "chatgpt10000-7673-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Glazba",
+    "focus": "Adele Rolling in the Deep",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja je britanska pjevačica objavila hit 'Rolling in the Deep' na albumu '21'?",
+    "answers": [
+      "Adele"
+    ],
+    "explanation": "Rolling in the Deep nalazi se na albumu 21 pjevačice Adele.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rolling_in_the_Deep"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7674-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Nogomet",
+    "focus": "Luka Modrić Zlatna lopta 2018",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je hrvatski veznjak 2018. osvojio Zlatnu loptu, prekinuvši niz Messija i Ronalda?",
+    "answers": [
+      "Luka Modrić",
+      "Modrić"
+    ],
+    "explanation": "Luka Modrić osvojio je Ballon d'Or 2018.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/2018_Ballon_d%27Or"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7675-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Film",
+    "focus": "Forrest Gump Tom Hanks",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Tko glumi naslovnog junaka filma 'Forrest Gump' iz 1994.?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Tom Hanks tumači Forresta Gumpa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7676-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ Antoine de Saint-Exupéry",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski pisac i pilot napisao 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Saint-Exupéry"
+    ],
+    "explanation": "Mali princ objavljen je 1943. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7677-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Lisabon rijeka Tejo",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na ušću koje rijeke leži portugalski glavni grad Lisabon?",
+    "answers": [
+      "Tejo",
+      "Tagus",
+      "Tajo"
+    ],
+    "explanation": "Lisabon leži uz ušće rijeke Tejo u Atlantski ocean.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tagus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7678-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Životinje",
+    "focus": "narval kljova",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima dugačak spiralni zub zbog kojeg ga nazivaju morskim jednorogom?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalova kljova zapravo je izduženi zub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7679-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Kemija",
+    "focus": "helij baloni",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Kojim se plemenitim plinom pune baloni koji lebde, a nije zapaljiv poput vodika?",
+    "answers": [
+      "Helij"
+    ],
+    "explanation": "Helij je lakši od zraka i kemijski slabo reaktivan.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Helium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7680-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, simbol podjele grada tijekom Hladnog rata?",
+    "answers": [
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7681-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Nintendo Super Mario",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koja japanska tvrtka stoji iza serijala videoigara 'Super Mario'?",
+    "answers": [
+      "Nintendo"
+    ],
+    "explanation": "Super Mario jedan je od najpoznatijih Nintendovih serijala.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Super_Mario"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7682-20261121",
+    "createdAt": "2026-11-21T08:50:00+01:00",
+    "updatedAt": "2026-11-21T08:50:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "humus slanutak",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je mahunarka glavni sastojak bliskoistočnog namaza humusa?",
+    "answers": [
+      "Slanutak",
+      "Leblebija"
+    ],
+    "explanation": "Humus se tradicionalno priprema od kuhanog slanutka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
