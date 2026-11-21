@@ -23,11 +23,14 @@
     <div class="battle-motto">✦ Osvajaj znanjem &nbsp;•&nbsp; Vladaj kartom &nbsp;•&nbsp; Brani granice ✦</div>
   </div>
   <section class="map-panel">
-    <div class="map-top"><div><strong>⚔ Teritorijalna karta · uživo</strong><small id="map-hint">Jedan blok = 20 m² · joystick je unutar karte, a Postavi je u sredini.</small></div>
-      <div class="map-actions"><button id="gps-btn" class="minor">⌖ Moj GPS</button><button id="refresh-btn" class="minor">↻ Osvježi</button></div>
+    <div class="map-top"><div><strong>♛ Kraljevska karta · uživo</strong><small id="map-hint">Stvarna zemljopisna karta · fantasy teritoriji · odaberi bilo koje mjesto, bez GPS-a.</small></div>
+      <div class="map-actions"><button id="choose-map-center" class="minor map-place-action">✥ Odaberi mjesto</button><button id="refresh-btn" class="minor">↻ Osvježi</button></div>
     </div>
     <div class="map-stage">
-      <div id="kingdom-map" role="application" aria-label="Interaktivna karta Kraljevstva Znanja"></div>
+      <div id="kingdom-map" role="application" aria-label="Stvarna geografska karta s fantasy prikazom teritorija"></div>
+      <div class="fantasy-map-crest" aria-hidden="true"><span>♛</span><strong>KRALJEVSKA ZEMLJA</strong><small>ZNANJE JE MOĆ</small></div>
+      <div class="fantasy-map-compass" aria-hidden="true"><span class="compass-n">S</span><span class="compass-w">Z</span><span class="compass-rose">✦</span><span class="compass-e">I</span><span class="compass-s">J</span></div>
+      <div class="fantasy-map-plaque" aria-hidden="true"><span>◆ 1 BLOK</span><strong>20 m²</strong></div>
       <section id="joystick-panel" class="joystick-panel hidden" aria-label="Upravljanje blokom na karti">
         <div class="joystick-dpad" role="group" aria-label="Pomakni blok i postavi ga">
           <button type="button" data-joy="N" class="joy-up" aria-label="Pomakni blok sjeverno" title="Sjever">▲</button>
@@ -37,13 +40,13 @@
           <button type="button" data-joy="S" class="joy-down" aria-label="Pomakni blok južno" title="Jug">▼</button>
         </div>
         <div class="joystick-meta">
-          <span id="cursor-status" aria-live="polite">Odredi GPS blok ili pomakni strelice.</span>
+          <span id="cursor-status" aria-live="polite">Pomakni kartu pa klikni „Odaberi mjesto”.</span>
           <span id="cursor-coords" class="hidden">—</span>
-          <button type="button" id="spawn-btn" class="joy-gps hidden">⌖ GPS</button>
+          <button type="button" id="spawn-btn" class="joy-gps hidden">♜ Novo uporište</button>
         </div>
       </section>
     </div>
-    <div class="map-bottom"><span id="map-count">Učitavanje kraljevstava…</span><span id="gps-status">GPS se traži samo za novo uporište</span></div>
+    <div class="map-bottom"><span id="map-count">Učitavanje kraljevstava…</span><span id="gps-status">Pomakni kartu i odaberi mjesto · GPS nije potreban</span></div>
   </section>
     <section class="play-card">
     <div class="play-card-head"><h2>⚡ Deset pitanja. Svaka četiri sata.</h2><span id="ready-pill" class="ready">PRIPREMA</span></div>
@@ -65,7 +68,7 @@
     <h2>Osnuj svoje kraljevstvo</h2><p>Odaberi ime s popisa i boju koja ostaje zauvijek. Promjenu imena bit će moguće zatražiti naknadno uz naknadu od 20 € (plaćanje još nije uključeno).</p>
     <div class="form-grid"><label>Ime kraljevstva<input id="realm-search" type="search" autocomplete="off" placeholder="Pretraži 2300 imena…"><small id="realm-found">Upiši dio imena ili odaberi s popisa.</small><select id="realm-choice"><option value="">Odaberi ime…</option></select></label><label>Boja kraljevstva (ne može se promijeniti)<input id="realm-color" type="color" value="#2f80ff"></label></div>
     <button id="create-btn" class="primary">Osnuj kraljevstvo</button>
-    <p class="help-note">Prvi teritorij postavlja se iz GPS lokacije nakon što prikupiš 40 m² igrajući pitanja.</p>
+    <p class="help-note">Prvi blok od 20 m² postavi na mjesto koje odabereš na karti. GPS nije potreban.</p>
   </section>
   <section class="actions-card" id="realm-actions">
     <div><h2>Upravljanje kraljevstvom</h2><p id="action-help">Za članstvo drugog kraljevstva dodirni njegov naziv na karti. Za širenje trebaš biti kralj kvizaš.</p></div>
