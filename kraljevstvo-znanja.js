@@ -368,7 +368,6 @@
     const zoom=map.getZoom();
     const size=map.getSize();
     const isSmall=size.x<420;
-    const scale=size.x/Math.max(1,window.devicePixelRatio||1);
     // Likovi se prikazuju na malom broju položaja u vidljivom dijelu karte.
     // Na velikom zumu ne predstavljaju stvarne objekte na tim koordinatama.
     const scenes=[
