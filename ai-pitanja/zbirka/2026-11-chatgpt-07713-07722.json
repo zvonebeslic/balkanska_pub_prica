@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-7713-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt Jamajka",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter osvojio olimpijska zlata na 100 i 200 metara na trima uzastopnim Igrama?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Bolt je pobijedio na obje discipline 2008., 2012. i 2016.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7714-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Serije",
+    "focus": "Breaking Bad Walter White",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj televizijskoj seriji profesor kemije Walter White počinje proizvoditi metamfetamin?",
+    "answers": [
+      "Breaking Bad",
+      "Na putu prema dolje"
+    ],
+    "explanation": "Breaking Bad prati preobrazbu Waltera Whitea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Breaking_Bad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7715-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "Guernica Pablo Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski slikar naslikao monumentalnu antiratnu sliku 'Guernica' 1937. godine?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je naslikao Guernicu kao reakciju na bombardiranje baskijskog grada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7716-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Medicina",
+    "focus": "stetoskop slušanje srca",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se zove liječnički instrument kojim se slušaju zvukovi srca i pluća?",
+    "answers": [
+      "Stetoskop"
+    ],
+    "explanation": "Stetoskop se koristi za auskultaciju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stethoscope"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7717-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Kemija",
+    "focus": "helium baloni",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se plemeniti plin, lakši od zraka i nezapaljiv, često koristi za punjenje letećih balona?",
+    "answers": [
+      "Helij",
+      "Helium"
+    ],
+    "explanation": "Helij je plemeniti plin manje gustoće od zraka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Helium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7718-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft creeper",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj popularnoj videoigri igrač može susresti zelenog eksplozivnog neprijatelja zvanog Creeper?",
+    "answers": [
+      "Minecraft"
+    ],
+    "explanation": "Creeper je jedan od prepoznatljivih neprijatelja Minecrafta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Minecraft"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7719-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Biljke",
+    "focus": "suncokret Helianthus",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja biljka nosi velike žute cvatove, a njezine se sjemenke koriste za proizvodnju jestivog ulja?",
+    "answers": [
+      "Suncokret"
+    ],
+    "explanation": "Suncokret se uzgaja i kao uljarica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Common_sunflower"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7720-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Fizika",
+    "focus": "Newton gravitacija jabuka",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji se engleski fizičar tradicionalno povezuje s pričom o jabuci koja ga je potaknula na razmišljanje o gravitaciji?",
+    "answers": [
+      "Isaac Newton",
+      "Newton"
+    ],
+    "explanation": "Priča o jabuci povezuje se s Newtonovim razmišljanjem o gravitaciji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isaac_Newton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7721-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Politika",
+    "focus": "Nelson Mandela Južna Afrika",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Tko je 1994. postao prvi crni predsjednik Južnoafričke Republike nakon ukidanja apartheida?",
+    "answers": [
+      "Nelson Mandela",
+      "Mandela"
+    ],
+    "explanation": "Mandela je izabran za predsjednika 1994. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nelson_Mandela"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7722-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom riječ",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom je niz koji ostaje isti pri obrnutom čitanju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
