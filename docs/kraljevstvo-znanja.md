@@ -41,3 +41,12 @@ Baza je inicijalno napunjena s **6844 deduplicirana ABC pitanja iz 17 datoteka**
 ## Preimenovanje i kompatibilnost
 
 Nova glavna adresa igre je `kraljevstvo-znanja.html`. Stara `kvadrati-znanja.html` zadržana je kao preusmjeravanje. Tehnički `kz_*` nazivi baze i stari migracijski zapisi namjerno su sačuvani zbog kompatibilnosti. Novi RPC `kz_place` prihvaća dodatni neobavezni argument `p_shape` (zadano `blok`).
+
+## Pravila od 21. studenoga 2026. — joystick i blokovi
+
+- **Dvostruke nagrade za buduće točne odgovore:** prije 500 m² svaki točan odgovor vrijedi **40 m²**, a uz boost kralj dobiva **60 m²**, vojvoda **50 m²**, vojnik **44 m²**. Prag boosta ostaje **500 m²**. Raniji rezultati nisu retroaktivno mijenjani.
+- **Svjetska mreža od fiksnih blokova veličine 5 × 4 metra = 20 m².** U jednom potezu može se položiti samo **jedan puni blok**. Ispod karte nalaze se četiri strelice za pomicanje zelenkastog pregleda bloka u koracima od jednog bloka. Nema postavljanja izravnim dodirom karte: potvrda je zaseban gumb.
+- **Zauzimanje slobodnog bloka** troši **20 m²** banke i dodaje **20 m²** teritorija. **Napad** na potpuno zauzet suparnički blok troši **40 m²** i prenosi **20 m²** protivniku. Djelomično zauzet stari blok ne može se napasti.
+- Svaki novi kopneni blok (osim GPS uporišta) mora **rubom dodirivati** postojeću zemlju istog kraljevstva. Udaljeno uporište bira se stvarnim GPS pozicioniranjem, potom se potvrđuje.
+- Raniji kvadrati 1 m², postojeća zemljišta, članstva, područja, saldi i statistike ostaju netaknuti. Novi poslužiteljski RPC je kz_place_block; stari javni kz_place zaključan je protiv zaobilaženja novih pravila.
+- GPS preciznost preglednika ne dokazuje stvarnu fizičku lokaciju; prije ozbiljne javne igre ostaje potreban anti-spoofing.

@@ -8,25 +8,12 @@
   const $ = (id) => document.getElementById(id);
   const client = window.supabase?.createClient(API_URL, API_KEY);
   let identity = null, current = null, kingdoms = [], cells = [], map = null, tilesLayer, borderLayer, labelsLayer;
-  let focusCell = null, mapLoading = false, mapRevision = 0, dialogQuiz = false;
-  let selectedShape = "blok", realmCatalog = [];
-  const shapeDescriptions = {
-    blok: "Zbijeni blok: širina i dubina su približno jednake.",
-    traka: "Ravna traka: osvajanje se proteže u odabranom smjeru.",
-    kut: "L-oblik: dvije okomite grane spajaju se na početnom kvadratu.",
-    cikcak: "Cik-cak: povezani kvadrati tvore vijugavi pojas."
-  };
-  function setShape(shape) {
-    if (!shapeDescriptions[shape]) return;
-    selectedShape = shape;
-    document.querySelectorAll("[data-shape]").forEach(b => {
-      const active = b.dataset.shape === shape;
-      b.classList.toggle("selected", active);
-      b.setAttribute("aria-pressed", String(active));
-    });
-    $("shape-help").textContent = shapeDescriptions[shape] +
-      " Odabrani oblik vrijedi i za GPS uporište i za širenje.";
-  }
+  let mapLoading = false, mapRevision = 0, dialogQuiz = false;
+  let cursor = null, cursorGps = null, previewLayer = null, blockGridLayer = null, previewBusy = false;
+  const alignBlock = (x,y) => ({x: Math.floor(x/5)*5, y: Math.floor(y/4)*4});
+  const previewCentre = b => ll(b.x+2.5,b.y+2);
+  const BLOCK_AREA = 20;
+  let realmCatalog = [];
   let toastTimer, refreshTimer;
 
   const safe = (v) => String(v ?? "").replace(/[&<>"']/g, c =>
@@ -151,14 +138,19 @@
     $("boost-caption").textContent = k?.area >= 500 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje na 500 m²";
     $("create-panel").classList.toggle("hidden", !!k);
     $("spawn-btn").classList.toggle("hidden", !isKing);
-    $("shape-tool").classList.toggle("hidden", !isKing);
+    $("joystick-panel").classList.toggle("hidden", !isKing);
     $("spawn-btn").textContent = (Number(k?.area) || 0) === 0 ?
-      "⌖ Postavi prvih 20 m² s GPS-a" : "⌖ Novo GPS uporište";
-    $("spawn-btn").disabled = !isKing || Number(k?.bank) < 20;
+      "⌖ Odredi prvi GPS blok" : "⌖ Odredi udaljeni GPS blok";
+    $("spawn-btn").disabled = !isKing;
+    if (isKing && !cursor && k.anchor_x != null) {
+      const point = alignBlock(Number(k.anchor_x),Number(k.anchor_y));
+      cursor = {x:point.x+5,y:point.y};
+    }
+    if (isKing) updateCursorPreview();
     $("leave-btn").classList.toggle("hidden", !k);
     $("leave-btn").textContent = isKing ? "Predaj krunu / Zatvori kraljevstvo" : "Napusti kraljevstvo";
     $("action-help").textContent = isKing ?
-      "Klikni vlastiti kvadrat na jako uvećanoj karti i odaberi smjer. Novo, udaljeno uporište traži GPS." :
+      "Upravljaj zelenim blokom od 20 m² strelicama ispod karte. Potvrdi osvajanje gumbom." :
       k ? "Prikupljaš kvadrate znanja za zajednički konto. Kralj raspoređuje teritorij." :
       "Osnuj kraljevstvo ili dodirni drugo kraljevstvo na karti i zatraži članstvo.";
     renderRequests();
@@ -281,6 +273,7 @@
   function drawMap() {
     labelsLayer.clearLayers();
     borderLayer.clearLayers();
+    if (blockGridLayer) blockGridLayer.clearLayers();
     tilesLayer.clearLayers();
     const own = current?.kingdom?.id;
     const detailed = map.getZoom() >= 18;
@@ -324,12 +317,7 @@
           interactive: true, renderer: map._kzCanvasRenderer
         }).on("click", event => {
           L.DomEvent.stopPropagation(event);
-          if (c.k === own && current?.kingdom?.role === "kralj") {
-            focusCell = {x,y};
-            $("expand-panel").classList.remove("hidden");
-            $("expand-location").textContent = "Odabrani kvadrat: " + x + ", " + y +
-              " · Na kontu " + formatArea(current.kingdom.bank);
-          } else showKingdom(k);
+          showKingdom(k); // Karta služi samo za pregled; pomicanje i osvajanje su na joysticku.
         }).addTo(tilesLayer);
 
         if (grid.get((x-1)+":"+y) !== c.k) edge(c.k,"V",x,y);
@@ -363,6 +351,8 @@
         paint(begin,last);
       }
     }
+    if(detailed)drawBlockGrid();
+    updateCursorPreview();
     $("map-hint").textContent = detailed
       ? "Nazivi su ucrtani unutar vlastitih granica. Povećaj kartu za sitne teritorije."
       : "Ovdje vidiš lokacije. Povećaj na 18+ za stvarne granice i nazive unutar zemlje.";
@@ -378,14 +368,16 @@
     }).addTo(map);
     map._kzCanvasRenderer = L.canvas({ padding: .1 });
     tilesLayer = L.layerGroup().addTo(map);
+    blockGridLayer = L.layerGroup().addTo(map);
     borderLayer = L.layerGroup().addTo(map);
     labelsLayer = L.layerGroup().addTo(map);
+    previewLayer = L.layerGroup().addTo(map);
     let timer;
     map.on("moveend zoomend", () => {
       clearTimeout(timer);
       timer=setTimeout(reloadMap,240);
     });
-    map.on("click",() => $("expand-panel").classList.add("hidden"));
+    map.on("click",() => {});
     reloadMap();
   }
   function showKingdom(k) {
@@ -432,39 +424,120 @@
       toast(desc + " · Osvježena tvoja lokacija.");
     } catch(e){$("gps-status").textContent="GPS nije potvrđen";toast(e.message);}
   }
+  // Mreža je globalno poravnata: svaka pločica uvijek zauzima 5 × 4 = 20 m².
+  function drawBlockGrid(grid) {
+    if (!blockGridLayer || map.getZoom()<19) return;
+    const bounds=map.getBounds();
+    const sw=xy(bounds.getSouth(),bounds.getWest()),ne=xy(bounds.getNorth(),bounds.getEast());
+    const left=Math.floor(Math.min(sw.x,ne.x)/5)*5;
+    const right=Math.floor(Math.max(sw.x,ne.x)/5)*5;
+    const bottom=Math.floor(Math.min(sw.y,ne.y)/4)*4;
+    const top=Math.floor(Math.max(sw.y,ne.y)/4)*4;
+    const estimated=(Math.floor((right-left)/5)+1)*(Math.floor((top-bottom)/4)+1);
+    // Ne stvaraj tisuće DOM/Canvas elemenata pri malom zumiranju.
+    if(estimated>950)return;
+    for(let x=left;x<=right;x+=5)for(let y=bottom;y<=top;y+=4) {
+      const corner=ll(x,y),other=ll(x+5,y+4);
+      L.rectangle([[corner.lat,corner.lng],[other.lat,other.lng]],{
+        color:"#c9e5fe",weight:.9,opacity:.42,fill:false,interactive:false,
+        renderer:map._kzCanvasRenderer
+      }).addTo(blockGridLayer);
+    }
+  }
+  function blockStatus(b) {
+    if(!b)return {text:"Odredi GPS položaj ili pomakni strelice.",kind:"unknown"};
+    const nearby = cells.filter(c=>Number(c.x)>=b.x&&Number(c.x)<b.x+5&&Number(c.y)>=b.y&&Number(c.y)<b.y+4);
+    const owners = [...new Set(nearby.map(c=>c.k))];
+    const own = current?.kingdom?.id;
+    if(owners.includes(own))return {text:"Ovdje već imaš teritorij — pomakni blok.",kind:"own"};
+    if(owners.length>1 || (owners.length&&nearby.length<20))
+      return {text:"Djelomično zauzet stari blok — nedostupan.",kind:"blocked"};
+    if(owners.length===1)return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 40 m².",kind:"attack"};
+    return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
+  }
+  function updateCursorPreview() {
+    if (!map || !previewLayer) return;
+    previewLayer.clearLayers();
+    const btn=$("claim-block");
+    const label=$("cursor-status");
+    const isKing=current?.kingdom?.role==="kralj";
+    if(!isKing || !cursor) {
+      if(label)label.textContent=isKing?"Odredi GPS lokaciju ili pomakni joystick.":"";
+      if(btn)btn.disabled=true;
+      return;
+    }
+    const status=blockStatus(cursor);
+    const bank=Number(current?.kingdom?.bank||0);
+    const cost=status.kind==="attack"?40:20;
+    const valid=!["own","blocked"].includes(status.kind)&&bank>=cost;
+    if(label)label.textContent=status.text + (bank<cost?" Na kontu nema dovoljno m².":"");
+    if(btn) {
+      btn.disabled=!valid;
+      btn.textContent=status.kind==="attack"?"⚔ OSVOJI TUĐI BLOK (40 m²)":"✓ ZAUZMI BLOK (20 m²)";
+    }
+    const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
+    L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
+      color:valid?"#e5fff0":"#ffda83",weight:4,
+      fillColor:valid?"#49fa9a":"#ff9e6d",fillOpacity:.46,
+      dashArray:valid?"9 5":"4 6",interactive:false
+    }).addTo(previewLayer);
+    L.marker(previewCentre(cursor),{interactive:false,
+      icon:L.divIcon({className:"cursor-badge",html:"<b>+20 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
+    }).addTo(previewLayer);
+    $("cursor-coords").textContent=cursor.x+" · "+cursor.y;
+  }
+  function moveCursor(direction) {
+    if(current?.kingdom?.role!=="kralj")return;
+    if(!cursor) {
+      const k=current.kingdom;
+      if(k.anchor_x==null) return toast("Prvo odredi početnu GPS lokaciju.");
+      cursor=alignBlock(Number(k.anchor_x),Number(k.anchor_y));
+    }
+    const dir={N:[0,4],S:[0,-4],E:[5,0],W:[-5,0]}[direction];
+    if(!dir)return;
+    if(cursorGps)cursorGps=null; // Nakon ručnog pomicanja vrijede samo spojene granice.
+    cursor={x:cursor.x+dir[0],y:cursor.y+dir[1]};
+    map.setView(previewCentre(cursor),Math.max(map.getZoom(),19));
+    updateCursorPreview();
+  }
   async function placeSpawn() {
-    if (Number(current?.kingdom?.bank)<20) {toast("Na kontu trebaš 20 m².");return;}
-    if (!confirm("Potvrđuješ postavljanje teritorija na svojoj trenutnoj GPS lokaciji? Ta će lokacija biti vidljiva na javnoj karti.")) return;
+    if(current?.kingdom?.role!=="kralj")return;
     try {
       $("spawn-btn").disabled=true;
       const gps=await getGPS();
-      if (gps.accuracy>100) throw Error("GPS je preslab (±"+Math.round(gps.accuracy)+" m). Pokušaj na otvorenom.");
-      const out=await rpc("kz_place",args({
-        p_spawn:true,p_lat:gps.lat,p_lon:gps.lon,p_accuracy:gps.accuracy,p_size:20,p_shape:selectedShape
-      }));
-      toast((out.attack ? "Osvojen suparnički teren: " : "Postavljen teritorij: ") +
-        formatArea(out.added) + " za " + formatArea(out.spent) + ".");
-      const {lat,lon}=gps;
-      map.setView([lat,lon],20);
-      await reloadState(); await reloadMap();
-    } catch(e){toast(e.message);}
-    finally { $("spawn-btn").disabled=false; tick(); }
-  }
-  async function expand(direction) {
-    if (!focusCell) return toast("Dodirni jedan od svojih kvadrata na granici.");
-    const size = Number($("expand-size").value);
-    if (!Number.isInteger(size) || size<3 || size>20) return toast("Odaberi od 3 do 20 m².");
-    try {
-      document.querySelectorAll("[data-dir]").forEach(b=>b.disabled=true);
-      const out=await rpc("kz_place",args({
-        p_from_x:focusCell.x,p_from_y:focusCell.y,p_direction:direction,p_size:size,p_spawn:false,p_shape:selectedShape
-      }));
-      toast(out.attack ? "Okrašaj! Preuzeto 8 m² za 20 m² s konta." :
-        "Kraljevstvo je prošireno za " + formatArea(out.added) + ".");
-      $("expand-panel").classList.add("hidden");
-      await reloadState(); await reloadMap();
+      if(gps.accuracy>100)throw Error("GPS nije dovoljno precizan.");
+      const p=xy(gps.lat,gps.lon);
+      cursor=alignBlock(p.x,p.y);
+      cursorGps=gps;
+      map.setView(previewCentre(cursor),20);
+      toast("GPS blok je odabran. Potvrdi gumbom ZAUZMI BLOK.");
+      await reloadMap();
     }catch(e){toast(e.message);}
-    finally{document.querySelectorAll("[data-dir]").forEach(b=>b.disabled=false);}
+    finally {$("spawn-btn").disabled=false;updateCursorPreview();}
+  }
+  async function saveBlock() {
+    if(!cursor || previewBusy ||current?.kingdom?.role!=="kralj")return;
+    const status=blockStatus(cursor);
+    const cost=status.kind==="attack"?40:20;
+    if(["own","blocked"].includes(status.kind)||Number(current.kingdom.bank)<cost)
+      return toast("Odabrani blok nije moguće zauzeti.");
+    if(!cursorGps && Number(current.kingdom.area)===0)
+      return toast("Prvi blok mora biti potvrđen tvojom GPS lokacijom.");
+    const question=status.kind==="attack"?"Napasti i preuzeti cijeli suparnički blok od 20 m² za 40 m² s konta?":
+      "Zauzeti odabrani blok od 20 m² za 20 m² s konta?";
+    if(!confirm(question))return;
+    previewBusy=true;$("claim-block").disabled=true;
+    try{
+      const params={p_x:cursor.x,p_y:cursor.y,p_spawn:!!cursorGps};
+      if(cursorGps)Object.assign(params,{p_lat:cursorGps.lat,p_lon:cursorGps.lon,p_accuracy:cursorGps.accuracy});
+      const result=await rpc("kz_place_block",args(params));
+      cursorGps=null;
+      cursor={x:cursor.x+5,y:cursor.y};
+      toast((result.attack?"⚔ Osvojen tuđi blok! ":"✓ Osvojen novi blok! ")+
+        formatArea(result.added)+" · trošak "+formatArea(result.spent));
+      await reloadState();await reloadMap();
+    }catch(e){toast(e.message);}
+    finally{previewBusy=false;updateCursorPreview();}
   }
   function renderQuiz() {
     const game=current?.game;
@@ -488,7 +561,7 @@
       ["A","B","C"].map(key =>
       '<button class="option" data-answer="'+key+'">'+key+') '+safe(options[key]||"")+'</button>').join('')+
       '<p class="member-meta">Za točan odgovor +'+
-      (current?.kingdom?.area>=500?(current.kingdom.role==="kralj"?30:current.kingdom.role==="vojvoda"?25:22):20)+
+      (current?.kingdom?.area>=500?(current.kingdom.role==="kralj"?60:current.kingdom.role==="vojvoda"?50:44):40)+
       ' m².</p><p id="answer-result" aria-live="polite"></p>');
     document.querySelectorAll("[data-answer]").forEach(btn=>btn.addEventListener("click",() => submitAnswer(game.id,pending.position,btn.dataset.answer)));
   }
@@ -565,8 +638,8 @@
     const enabled=(current?.kingdom?.area||0)>=500;
     modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 500 m².')+'</p>'+
       '<p>Dok kraljevstvo ima najmanje 500 m², svaki točan odgovor donosi:</p>'+
-      '<p><b>Kralj kvizaš: 30 m²</b><br><b>Vojvoda kvizaš: 25 m²</b><br><b>Vojnik kvizaš: 22 m²</b></p>'+
-      '<p>Ispod 500 m² svi ponovno dobivaju 20 m². Širenje na slobodno područje troši 3–20 m² po potezu, a napad ili obrana troše 20 m² za osvajanje 8 m².</p>');
+      '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
+      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m², a napad na puni tuđi blok 40 m² za osvajanje 20 m².</p>');
   }
   function renderRequests() {
     const list=current?.requests||[];
@@ -636,13 +709,14 @@
     $("create-btn").addEventListener("click",createKingdom);
     $("realm-search").addEventListener("input",filterRealmCatalog);
     $("spawn-btn").addEventListener("click",placeSpawn);
+    $("claim-block").addEventListener("click",saveBlock);
+    document.querySelectorAll("[data-joy]").forEach(b=>b.addEventListener("click",()=>moveCursor(b.dataset.joy)));
     $("leave-btn").addEventListener("click",leaveKingdom);
     $("members-box").addEventListener("click",renderMembers);
     $("bank-box").addEventListener("click",boostInfo);
-    $("expand-close").addEventListener("click",()=> $("expand-panel").classList.add("hidden"));
-    document.querySelectorAll("[data-dir]").forEach(b=>b.addEventListener("click",()=>expand(b.dataset.dir)));
-    document.querySelectorAll("[data-shape]").forEach(b=>b.addEventListener("click",()=>setShape(b.dataset.shape)));
-    setShape("blok");
+
+
+
     $("dialog-close").addEventListener("click",closeModal);
     $("dialog-backdrop").addEventListener("click",e=>{if(e.target===$("dialog-backdrop"))closeModal();});
     document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
@@ -661,7 +735,7 @@
     await reloadMap();
     if (current?.kingdom?.anchor_x != null) {
       const p=ll(Number(current.kingdom.anchor_x),Number(current.kingdom.anchor_y));
-      map.setView([p.lat,p.lng],17);
+      map.setView([p.lat,p.lng],20);
     }
     setInterval(tick,1000);
     refreshTimer=setInterval(async()=>{
