@@ -216,3 +216,39 @@ body{background:
  .joystick-dpad{width:min(100%,218px)}
  .joystick-claim{padding:.85rem}
 }
+
+/* Mali joystick položen izravno preko karte, bez zasebne velike sekcije. */
+.map-stage{position:relative;isolation:isolate}
+.joystick-panel{position:absolute;z-index:850;bottom:14px;left:14px;display:flex;flex-direction:column;
+ align-items:flex-start;gap:7px;margin:0;padding:7px;width:fit-content;max-width:min(94%,250px);
+ background:rgba(7,21,35,.88);border:1px solid rgba(103,232,174,.8);border-radius:17px;
+ backdrop-filter:blur(11px);box-shadow:0 9px 28px #000b,0 0 17px #22c98730}
+.joystick-dpad{width:136px;height:136px;aspect-ratio:1;gap:3px;margin:0;padding:5px;
+ grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));
+ border:0;border-radius:15px;background:linear-gradient(135deg,rgba(21,58,79,.65),rgba(6,23,41,.85));
+ box-shadow:inset 0 1px 9px #0009}
+.joystick-dpad button{min-height:0;width:100%;height:100%;padding:0;min-width:0;
+ border-radius:10px;font-size:18px;line-height:1;display:grid;place-items:center;
+ box-shadow:inset 0 1px #fff3,0 2px 7px #0006}
+.joystick-dpad .joy-place{grid-area:centre;border:1.5px solid #aeffda;
+ background:linear-gradient(145deg,#178b62,#086a4d);color:white;font-size:10px;
+ font-weight:1000;letter-spacing:-.04em;padding:2px;box-shadow:0 2px 8px #20da8d55}
+.joystick-dpad .joy-place:disabled{opacity:.54;background:#274844;border-color:#688981}
+.joystick-dpad .joy-place:not(:disabled):active{background:#27c68d}
+.joystick-meta{display:flex;flex-direction:column;gap:5px;width:100%;max-width:220px;align-items:stretch;
+ background:transparent;border:0;padding:0}
+.joystick-meta #cursor-status{margin:0;font-size:10px;line-height:1.3;color:#d8ffe9;
+ font-weight:800;min-height:0;max-width:200px;text-wrap:balance}
+.joystick-meta .joy-gps{display:block;min-height:28px;border-radius:9px;border:1px solid #79c7ffb0;
+ background:#164c72e6;color:#fff;font-size:11px;font-weight:850;padding:4px 8px;cursor:pointer}
+.joystick-meta .joy-gps.hidden{display:none}
+.joystick-panel .joy-up,.joystick-panel .joy-down,.joystick-panel .joy-left,.joystick-panel .joy-right{touch-action:manipulation}
+@media(max-width:620px){
+ .joystick-panel{left:8px;bottom:9px;padding:5px;border-radius:13px;gap:4px;max-width:172px}
+ .joystick-dpad{width:114px;height:114px;padding:4px;gap:2px}
+ .joystick-dpad button{font-size:15px;border-radius:8px}
+ .joystick-dpad .joy-place{font-size:9px}
+ .joystick-meta{max-width:150px}
+ .joystick-meta #cursor-status{font-size:9px}
+ .joystick-meta .joy-gps{font-size:10px;min-height:26px}
+}
