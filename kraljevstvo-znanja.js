@@ -52,11 +52,13 @@
     node.disabled = !!busy;
   }
   function modal(title, body) {
+    $("dialog").classList.remove("kz-quiz-dialog");
     $("dialog-title").textContent = title;
     $("dialog-body").innerHTML = body;
     $("dialog-backdrop").classList.remove("hidden");
   }
   function closeModal() {
+    $("dialog").classList.remove("kz-quiz-dialog");
     if (dialogQuiz && current?.game) {
       // Neriješena pitanja ostaju spremljena i nastavljaju se pri povratku.
     }
@@ -170,14 +172,14 @@
     $("ready-pill").classList.toggle("on", !!ready);
     $("ready-pill").textContent = game ? "U TIJEKU" : ready ? "SPREMNO" : "ČEKANJE";
     $("play-btn").disabled = !ready;
-    $("play-btn").textContent = game ? "Nastavi 5 ABC pitanja" : "Pokreni 5 ABC pitanja";
+    $("play-btn").textContent = game ? "Nastavi 10 ABC pitanja" : "Pokreni 10 ABC pitanja";
     const hh = String(Math.floor(wait / 3600000)).padStart(2, "0");
     const mm = String(Math.floor(wait % 3600000 / 60000)).padStart(2, "0");
     const ss = String(Math.floor(wait % 60000 / 1000)).padStart(2, "0");
     $("cooldown").textContent = !current.kingdom ? "Najprije pronađi kraljevstvo." :
       game ? "Igra je započeta — dovrši preostala pitanja." :
       wait ? "Nova pitanja za " + hh + ":" + mm + ":" + ss :
-      "Pitanja su spremna. Novo odbrojavanje počinje tek nakon svih 5 odgovora.";
+      "Pitanja su spremna. Novo odbrojavanje počinje tek nakon svih 10 odgovora.";
   }
   async function reloadMap() {
     if (!map) return;
@@ -545,61 +547,241 @@
     }catch(e){toast(e.message);}
     finally{previewBusy=false;updateCursorPreview();}
   }
-  function renderQuiz() {
+
+  // Isti obrasci povijesti, reakcija i primjedbi kao u glavnom Online kvizu.
+  function answerLabel(q,key) {
+    return key && q?.options ? (q.options[key] || key) : "—";
+  }
+  function completedPart(questions,game) {
+    const correct=questions.filter(q=>q.correct).length;
+    const earned=questions.reduce((sum,q)=>sum+Number(q.earned||0),0);
+    modal("Rezultati & povijest",'<div class="kz-final-score"><strong>'+correct+' / '+questions.length+
+      '</strong><span>točnih odgovora</span><b>+'+formatArea(earned)+'</b></div>'+
+      '<p>Sljedećih 10 pitanja dostupno je četiri sata nakon završetka ove partije.</p>'+
+      '<div class="kz-quiz-actions"><button class="secondary" id="kz-share-result">📤 Podijeli rezultat</button>'+
+      '<button class="secondary" id="kz-download-history">📥 Preuzmi povijest PNG</button></div>'+
+      '<section class="kz-history"><h3>Odigrana povijest</h3><div id="kz-history-list"></div></section>'+
+      '<button id="quiz-finish" class="primary">Povratak kraljevstvu</button>');
+    $("dialog").classList.add("kz-quiz-dialog");
+    $("quiz-finish").onclick=closeModal;
+    $("kz-share-result").onclick=()=>sharePlayed(questions,correct);
+    $("kz-download-history").onclick=()=>downloadPlayed(questions,correct);
+    renderHistory(questions,game?.id);
+  }
+  function historyRow(q,gameId) {
+    const correctKey=q.correct_key;
+    const answered=q.choice!=null;
+    const status=answered?(q.correct?"✓ Točno":"✗ Netočno"):"Još nije odgovoreno";
+    return '<article class="kz-history-item '+(q.correct?"correct":"incorrect")+'">'+
+      '<div class="kz-history-q"><span>ABC · '+q.position+'.</span> '+safe(q.prompt)+'</div>'+
+      '<div class="kz-history-status">'+safe(status)+(answered?' · Tvoj odgovor: <b>'+
+       safe(q.choice)+" · "+safe(answerLabel(q,q.choice))+'</b>':'')+'</div>'+
+      '<div class="kz-history-options">'+["A","B","C"].map(key=>
+        '<div class="kz-history-option '+(key===correctKey?"correct ":"")+
+        (key===q.choice?"selected ":"")+'">'+
+        (key===correctKey?"✓ ":key===q.choice?"✗ ":"○ ")+key+') '+safe(answerLabel(q,key))+'</div>').join("")+
+      '</div><div class="kz-history-tools">'+
+      '<button type="button" class="kz-vote" data-vote="like" data-game="'+safe(gameId)+
+      '" data-pos="'+q.position+'" aria-label="Sviđa mi se pitanje">👍</button>'+
+      '<button type="button" class="kz-vote" data-vote="dislike" data-game="'+safe(gameId)+
+      '" data-pos="'+q.position+'" aria-label="Ne sviđa mi se pitanje">👎</button>'+
+      '<button type="button" class="kz-feedback-toggle">Pohvale/primjedbe</button>'+
+      '</div><div class="kz-feedback-box hidden">'+
+      '<button type="button" class="kz-feedback-close" aria-label="Zatvori primjedbu">×</button>'+
+      '<b>Pronašli ste grešku ili možete poboljšati pitanje?</b>'+
+      '<textarea maxlength="2000" rows="3" placeholder="Napiši primjedbu, ispravak ili prijedlog..."></textarea>'+
+      '<button type="button" class="kz-feedback-send">Pošalji</button>'+
+      '<small class="kz-feedback-note">Poruka se šalje KvizToGo timu.</small></div></article>';
+  }
+  function bindHistory(list,questions,gameId) {
+    list.querySelectorAll(".kz-history-item").forEach((item,i)=>{
+      const q=questions[i];
+      const toggler=item.querySelector(".kz-feedback-toggle");
+      const box=item.querySelector(".kz-feedback-box");
+      toggler.onclick=()=>box.classList.toggle("hidden");
+      item.querySelector(".kz-feedback-close").onclick=()=>box.classList.add("hidden");
+      item.querySelectorAll(".kz-vote").forEach(button=>{
+        button.onclick=async()=>{
+          const all=item.querySelectorAll(".kz-vote");
+          all.forEach(b=>b.disabled=true);
+          try {
+            const ok=await rpc("kz_vote",args({p_game_id:gameId,p_position:q.position,p_vote:button.dataset.vote}));
+            if(ok){button.classList.add("selected");toast("Ocjena pitanja je spremljena.");}
+            else toast("Ovo si pitanje već ocijenio/la.");
+          }catch(e){toast(e.message);all.forEach(b=>b.disabled=false);}
+        };
+      });
+      const send=item.querySelector(".kz-feedback-send");
+      send.onclick=async()=>{
+        const message=item.querySelector("textarea").value.trim();
+        const note=item.querySelector(".kz-feedback-note");
+        if(!message){note.textContent="Prvo napiši poruku.";note.classList.add("error");return;}
+        send.disabled=true;note.textContent="Šaljem...";
+        try{
+          const {data,error}=await client.functions.invoke("send-quiz-feedback",{
+            body:{
+              username:current?.player?.name||"Anonimno",
+              questionId:q.id||null,question:q.prompt,
+              correctAnswer:answerLabel(q,q.correct_key),
+              topic:(q.source||"").replace(/\.json$/i,""),
+              questionType:"abc",quizMode:"kraljevstvo_znanja",
+              quizPlayId:null,sessionId:"kz:"+gameId,
+              message,language:"hr",pageUrl:window.location.href
+            }
+          });
+          if(error)throw error;
+          if(!data?.ok)throw Error(data?.error||"Slanje nije potvrđeno.");
+          item.querySelector("textarea").value="";
+          note.classList.remove("error");note.classList.add("success");
+          note.textContent="Hvala! Tvoja poruka je uspješno zaprimljena.";
+        }catch(e){
+          note.classList.add("error");note.textContent="Poruka nije poslana. Pokušaj ponovno.";
+          console.warn("Kraljevstvo Znanja feedback",e);
+        }finally{send.disabled=false;}
+      };
+    });
+  }
+  function renderHistory(questions,gameId){
+    const list=$("kz-history-list");
+    if(!list)return;
+    const answered=questions.filter(q=>q.choice!=null);
+    list.innerHTML=answered.length?answered.map(q=>historyRow(q,gameId)).join(""):
+      '<p class="member-meta">Još nema odgovorenih pitanja u ovoj partiji.</p>';
+    if(answered.length)bindHistory(list,answered,gameId);
+  }
+  function renderQuiz(){
     const game=current?.game;
-    if (!game) return;
+    if(!game)return;
     dialogQuiz=true;
-    const pending = game.questions.find(q => q.choice == null);
-    const answered=game.questions.filter(q=>q.choice != null).length;
-    if (!pending) {
-      const correct=game.questions.filter(q=>q.correct).length;
-      const earned=game.questions.reduce((sum,q)=>sum+Number(q.earned||0),0);
-      modal("Partija završena",'<p class="quiz-question">Točnih odgovora: '+correct+'/5</p>' +
-        '<p>Osvojeno ' + formatArea(earned) + ' za tvoje kraljevstvo.</p>' +
-        '<button id="quiz-finish" class="primary">Povratak kraljevstvu</button>');
-      $("quiz-finish").addEventListener("click",async()=>{closeModal();await reloadState();});
-      return;
-    }
-    const options=pending.options||{};
-    modal("ABC · Kraljevstvo Znanja",'<div class="quiz-progress">PITANJE '+pending.position+' / 5 · '+answered+' riješeno</div>'+
+    const pending=game.questions.find(q=>q.choice==null);
+    if(!pending){completedPart(game.questions,game);return;}
+    const answered=game.questions.filter(q=>q.choice!=null).length;
+    modal("ABC · Kraljevstvo Znanja",
+      '<div class="kz-quiz-layout"><section class="kz-question-area">'+
+      '<div class="quiz-progress">PITANJE '+pending.position+' / 10 · '+answered+' riješeno</div>'+
       '<p class="quiz-question">'+safe(pending.prompt)+'</p>'+
       (pending.image?'<img class="question-image" src="'+safe(pending.image)+'" alt="Slika uz pitanje">':'')+
-      ["A","B","C"].map(key =>
-      '<button class="option" data-answer="'+key+'">'+key+') '+safe(options[key]||"")+'</button>').join('')+
-      '<p class="member-meta">Za točan odgovor +'+
+      '<div class="kz-answer-list">'+["A","B","C"].map(key=>
+        '<button class="option" data-answer="'+key+'">'+key+') '+safe(pending.options?.[key]||"")+'</button>').join("")+'</div>'+
+      '<p class="member-meta">Točan odgovor vrijedi +'+
       (current?.kingdom?.area>=500?(current.kingdom.role==="kralj"?60:current.kingdom.role==="vojvoda"?50:44):40)+
-      ' m².</p><p id="answer-result" aria-live="polite"></p>');
-    document.querySelectorAll("[data-answer]").forEach(btn=>btn.addEventListener("click",() => submitAnswer(game.id,pending.position,btn.dataset.answer)));
+      ' m².</p><div id="answer-result" aria-live="polite"></div></section>'+
+      '<aside class="kz-history"><h3>Rezultati & povijest</h3>'+
+      '<div class="kz-current-score">✓ '+game.questions.filter(q=>q.correct).length+
+      ' / '+answered+' točnih</div><div id="kz-history-list"></div></aside></div>');
+    $("dialog").classList.add("kz-quiz-dialog");
+    renderHistory(game.questions,game.id);
+    document.querySelectorAll("[data-answer]").forEach(btn=>
+      btn.onclick=()=>submitAnswer(game.id,pending.position,btn.dataset.answer));
   }
-  async function submitAnswer(gameId,number,key) {
+  async function submitAnswer(gameId,number,key){
     const buttons=[...document.querySelectorAll("[data-answer]")];
     buttons.forEach(b=>b.disabled=true);
-    try {
+    try{
       const out=await rpc("kz_answer",args({p_game_id:gameId,p_number:number,p_choice:key}));
-      const message = out.correct ? "Točno! +" + formatArea(out.earned) : "Netočno! Točan odgovor: " + out.correct_key;
-      const result=$("answer-result");
-      result.innerHTML='<div class="outcome">'+safe(message)+'</div>';
-      buttons.forEach(b => {
-        if (b.dataset.answer===out.correct_key) b.classList.add("correct");
-        else if (b.dataset.answer===key && !out.correct) b.classList.add("wrong");
+      const q=current.game.questions.find(x=>x.position===number);
+      if(q){q.choice=key;q.correct=out.correct;q.correct_key=out.correct_key;q.earned=out.earned;}
+      const message=out.correct?"✓ Točno! +"+formatArea(out.earned):
+        "✗ Netočno! Točno: "+out.correct_key+") "+answerLabel(q,out.correct_key);
+      $("answer-result").innerHTML='<div class="outcome '+(out.correct?"kz-outcome-good":"kz-outcome-bad")+'">'+safe(message)+'</div>';
+      buttons.forEach(b=>{
+        if(b.dataset.answer===out.correct_key)b.classList.add("correct");
+        else if(b.dataset.answer===key&&!out.correct)b.classList.add("wrong");
       });
-      const lastCorrect = (current.game?.questions || []).filter(q => q.correct).length + (out.correct ? 1 : 0);
-      const lastEarned = (current.game?.questions || []).reduce((sum,q) => sum + Number(q.earned || 0), 0) + Number(out.earned || 0);
+      renderHistory(current.game.questions,gameId);
       const next=document.createElement("button");
-      next.className="primary";
-      next.textContent=out.finished ? "Pogledaj rezultat" : "Sljedeće pitanje →";
+      next.className="primary";next.textContent=out.finished?"Pogledaj rezultat i povijest":"Sljedeće pitanje →";
       next.onclick=async()=>{
-        await reloadState();
-        if (out.finished) {
-          modal("Partija završena",'<p class="quiz-question">Točnih odgovora: '+lastCorrect+'/5</p>'+
-            '<p>Osvojeno '+formatArea(lastEarned)+' za tvoje kraljevstvo.</p>'+
-            '<p>Sljedeća pitanja bit će dostupna četiri sata nakon završetka ove partije.</p>'+
-            '<button id="quiz-finish" class="primary">Povratak kraljevstvu</button>');
-          $("quiz-finish").onclick=closeModal;
-        } else renderQuiz();
+        if(out.finished){
+          const snapshot=current.game.questions.map(q=>({...q}));
+          await reloadState();
+          completedPart(snapshot,{id:gameId});
+        } else {
+          await reloadState();renderQuiz();
+        }
       };
-      result.append(next);
+      $("answer-result").append(next);
     }catch(e){toast(e.message);buttons.forEach(b=>b.disabled=false);}
+  }
+  async function showFullHistory(){
+    try{
+      const games=await rpc("kz_history",args());
+      modal("Odigrana povijest",'<p>Posljednjih 12 partija · pohvale, primjedbe i 👍 👎 kao na Online kvizu.</p>'+
+        '<div id="kz-all-history"></div><button class="secondary" id="kz-history-close">Zatvori</button>');
+      $("dialog").classList.add("kz-quiz-dialog");
+      $("kz-history-close").onclick=closeModal;
+      const wrapper=$("kz-all-history");
+      if(!games?.length){wrapper.innerHTML='<p>Još nema završenih partija.</p>';return;}
+      games.forEach((g,i)=>{
+        const section=document.createElement("section");
+        section.className="kz-history-game";
+        section.innerHTML='<details '+(i===0?"open":"")+'><summary>'+
+          safe(dateTime(g.at))+' · '+g.correct+'/'+(g.questions?.length||10)+
+          ' točnih · +'+safe(formatArea(g.earned))+'</summary>'+
+          '<div class="kz-history-list"></div></details>';
+        wrapper.append(section);
+        const list=section.querySelector(".kz-history-list");
+        const answered=(g.questions||[]).filter(q=>q.choice!=null);
+        list.innerHTML=answered.map(q=>historyRow(q,g.id)).join("");
+        bindHistory(list,answered,g.id);
+      });
+    }catch(e){toast(e.message);}
+  }
+  function paintWrapped(ctx,text,x,y,maxWidth,lineHeight){
+    const words=String(text||"").split(/\s+/);let line="";
+    for(const word of words){
+      const next=line?line+" "+word:word;
+      if(ctx.measureText(next).width>maxWidth&&line){
+        ctx.fillText(line,x,y);y+=lineHeight;line=word;
+      }else line=next;
+    }
+    if(line){ctx.fillText(line,x,y);y+=lineHeight;}
+    return y;
+  }
+  async function makeHistoryImage(questions,correct){
+    // PNG kao na Online kvizu, bez ovisnosti o vanjskim servisima.
+    const canvas=document.createElement("canvas");
+    canvas.width=900;canvas.height=Math.max(600,170+questions.length*270);
+    const ctx=canvas.getContext("2d");
+    ctx.fillStyle="#0b1527";ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle="#68e8b1";ctx.font="bold 33px system-ui";
+    ctx.fillText("KRALJEVSTVO ZNANJA",42,62);
+    ctx.fillStyle="#e7f3ff";ctx.font="23px system-ui";
+    ctx.fillText("Rezultat: "+correct+"/"+questions.length+" točnih",42,107);
+    let y=159;
+    for(const q of questions){
+      ctx.fillStyle="#d7e8f8";ctx.font="bold 19px system-ui";
+      y=paintWrapped(ctx,q.position+". "+q.prompt,42,y,810,28)+5;
+      ctx.font="16px system-ui";
+      for(const key of ["A","B","C"]){
+        ctx.fillStyle=key===q.correct_key?"#78ecaf":key===q.choice&&!q.correct?"#ff9f9f":"#adc5dd";
+        y=paintWrapped(ctx,key+") "+answerLabel(q,key),65,y,790,23)+3;
+      }
+      y+=18;
+    }
+    // Prilagodi visinu u novom canvasu bez gubitka već iscrtanog sadržaja.
+    const trimmed=document.createElement("canvas");trimmed.width=canvas.width;
+    trimmed.height=Math.min(canvas.height,Math.max(240,Math.ceil(y+35)));
+    trimmed.getContext("2d").drawImage(canvas,0,0);
+    return await new Promise((resolve,reject)=>
+      trimmed.toBlob(blob=>blob?resolve(blob):reject(Error("PNG nije moguće izraditi")),"image/png"));
+  }
+  async function downloadPlayed(questions,correct){
+    try{
+      const blob=await makeHistoryImage(questions,correct);
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement("a");a.href=url;a.download="kraljevstvo-znanja-povijest.png";
+      a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);
+    }catch(e){toast(e.message);}
+  }
+  async function sharePlayed(questions,correct){
+    try{
+      const blob=await makeHistoryImage(questions,correct);
+      const file=new File([blob],"kraljevstvo-znanja-povijest.png",{type:"image/png"});
+      if(navigator.canShare?.({files:[file]})&&navigator.share)await navigator.share({
+        files:[file],title:"Kraljevstvo Znanja",text:"Osvojio/la sam "+correct+"/"+questions.length+" točnih!"});
+      else await downloadPlayed(questions,correct);
+    }catch(e){if(e.name!=="AbortError")toast(e.message);}
   }
   async function play() {
     try {
@@ -712,6 +894,7 @@
     $("gps-btn").addEventListener("click",showGPS);
     $("refresh-btn").addEventListener("click",async()=>{await reloadState();await reloadMap();});
     $("play-btn").addEventListener("click",play);
+    $("history-open").addEventListener("click",showFullHistory);
     $("create-btn").addEventListener("click",createKingdom);
     $("realm-search").addEventListener("input",filterRealmCatalog);
     $("spawn-btn").addEventListener("click",placeSpawn);
