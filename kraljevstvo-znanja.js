@@ -8,29 +8,12 @@
   const $ = (id) => document.getElementById(id);
   const client = window.supabase?.createClient(API_URL, API_KEY);
   let identity = null, current = null, kingdoms = [], cells = [], map = null, tilesLayer, borderLayer, labelsLayer;
-  let focusCell = null, mapLoading = false, mapRevision = 0, dialogQuiz = false;
+  let mapLoading = false, mapRevision = 0, dialogQuiz = false;
   let cursor = null, cursorGps = null, previewLayer = null, blockGridLayer = null, previewBusy = false;
   const alignBlock = (x,y) => ({x: Math.floor(x/5)*5, y: Math.floor(y/4)*4});
   const previewCentre = b => ll(b.x+2.5,b.y+2);
   const BLOCK_AREA = 20;
-  let selectedShape = "blok", realmCatalog = [];
-  const shapeDescriptions = {
-    blok: "Zbijeni blok: širina i dubina su približno jednake.",
-    traka: "Ravna traka: osvajanje se proteže u odabranom smjeru.",
-    kut: "L-oblik: dvije okomite grane spajaju se na početnom kvadratu.",
-    cikcak: "Cik-cak: povezani kvadrati tvore vijugavi pojas."
-  };
-  function setShape(shape) {
-    if (!shapeDescriptions[shape]) return;
-    selectedShape = shape;
-    document.querySelectorAll("[data-shape]").forEach(b => {
-      const active = b.dataset.shape === shape;
-      b.classList.toggle("selected", active);
-      b.setAttribute("aria-pressed", String(active));
-    });
-    $("shape-help").textContent = shapeDescriptions[shape] +
-      " Odabrani oblik vrijedi i za GPS uporište i za širenje.";
-  }
+  let realmCatalog = [];
   let toastTimer, refreshTimer;
 
   const safe = (v) => String(v ?? "").replace(/[&<>"']/g, c =>
@@ -155,7 +138,6 @@
     $("boost-caption").textContent = k?.area >= 500 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje na 500 m²";
     $("create-panel").classList.toggle("hidden", !!k);
     $("spawn-btn").classList.toggle("hidden", !isKing);
-    $("shape-tool").classList.add("hidden");
     $("joystick-panel").classList.toggle("hidden", !isKing);
     $("spawn-btn").textContent = (Number(k?.area) || 0) === 0 ?
       "⌖ Odredi prvi GPS blok" : "⌖ Odredi udaljeni GPS blok";
