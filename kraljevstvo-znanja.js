@@ -139,8 +139,9 @@
     $("create-panel").classList.toggle("hidden", !!k);
     $("spawn-btn").classList.toggle("hidden", !isKing);
     $("joystick-panel").classList.toggle("hidden", !isKing);
-    $("spawn-btn").textContent = (Number(k?.area) || 0) === 0 ?
-      "⌖ Odredi prvi GPS blok" : "⌖ Odredi udaljeni GPS blok";
+    $("spawn-btn").textContent = "⌖ GPS blok";
+    $("spawn-btn").title = (Number(k?.area) || 0) === 0 ?
+      "Odredi početni blok preko GPS lokacije" : "Odredi novo udaljeno uporište preko GPS lokacije";
     $("spawn-btn").disabled = !isKing;
     if (isKing && !cursor && k.anchor_x != null) {
       const point = alignBlock(Number(k.anchor_x),Number(k.anchor_y));
@@ -470,10 +471,15 @@
     const bank=Number(current?.kingdom?.bank||0);
     const cost=status.kind==="attack"?40:20;
     const valid=!["own","blocked"].includes(status.kind)&&bank>=cost;
-    if(label)label.textContent=status.text + (bank<cost?" Na kontu nema dovoljno m².":"");
+    if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 40 m²":
+      status.kind==="free"?"Slobodan blok · 20 m²":
+      status.kind==="own"?"Već osvojeno": "Blok je zauzet";
+    if(label && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
-      btn.textContent=status.kind==="attack"?"⚔ OSVOJI TUĐI BLOK (40 m²)":"✓ ZAUZMI BLOK (20 m²)";
+      btn.textContent="POSTAVI";
+      btn.title=status.kind==="attack"?"Napad: potroši 40 m² za suparnički blok od 20 m²":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
     L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
