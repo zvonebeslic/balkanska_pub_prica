@@ -315,3 +315,144 @@ body{background:
  .kz-history{max-height:37dvh}
  .kz-question-area{padding:.55rem}
 }
+
+
+/* ━━━━━ FANTASY KARTOGRAFIJA: stvarni OpenStreetMap ispod ilustriranog HUD-a ━━━━━ */
+:root{--royal-gold:#d8b76d;--royal-light:#f6dea2;--royal-emerald:#2be6a0;--royal-ink:#061522}
+body{background:
+ radial-gradient(ellipse 54% 38% at 50% 1%,#167d8560,transparent 72%),
+ radial-gradient(ellipse 48% 36% at 100% 52%,#c4a25d18,transparent 77%),
+ repeating-linear-gradient(145deg,transparent 0 75px,#d6ab4b05 76px,transparent 78px),
+ linear-gradient(170deg,#031120,#071a27 50%,#03131d)!important}
+.site-header{background:linear-gradient(120deg,#030f1cee,#071d29f5,#04101dee);
+ border-bottom:1px solid #cfae6d75;box-shadow:0 6px 22px #0009}
+.brand-logo{filter:drop-shadow(0 2px 5px #000)}
+.intro:before{background:
+ radial-gradient(ellipse at 50% 0%,#24b88a27,transparent 63%),
+ radial-gradient(ellipse at 50% 100%,#bc963114,transparent 45%)}
+.intro h1{font-family:Georgia,"Times New Roman",serif;font-weight:900;
+ font-size:clamp(2rem,5vw,4.2rem);letter-spacing:.045em;text-transform:uppercase;
+ color:#f6dca1;text-shadow:0 2px 0 #67441c,0 5px 18px #000b,0 0 27px #be9b4d57}
+.intro h1 span{color:#80f5c4;text-shadow:0 0 15px #18ba7585,0 2px 2px #021510}
+.eyebrow{background:#172c31a6;border:1px solid #c7a76a87;color:#e8ce91}
+.battle-motto{color:#e8cd94}
+.map-panel{position:relative;border:2px solid #bea065b0;border-radius:23px;
+ background:linear-gradient(#152b31,#071925);
+ box-shadow:0 0 0 3px #082432,0 0 0 4px #956d3870,
+ inset 0 0 18px #d0a35522,0 20px 48px #000c,0 0 40px #138e6750}
+.map-panel:before{content:"✦";position:absolute;top:0;left:10px;z-index:1;
+ font-size:14px;color:#efddaa;text-shadow:0 0 8px #ecc96b}
+.map-top{background:linear-gradient(95deg,#0a2734,#173b40 50%,#092b31);
+ border-bottom:2px solid #b99c5a8a;position:relative;padding:.85rem 1rem}
+.map-top:after{content:"✦";position:absolute;right:12px;bottom:0;
+ color:#f0d18f;font-size:14px;opacity:.7}
+.map-top strong{font-family:Georgia,"Times New Roman",serif;color:#f4daa0;
+ letter-spacing:.07em;font-size:clamp(.8rem,2vw,1.04rem);text-shadow:0 2px 4px #000}
+.map-top small{color:#b6d6c8}
+.map-actions .minor{border:1px solid #d1ba779a;color:#f9e9c1;
+ background:linear-gradient(160deg,#28505d,#122c3b);
+ border-radius:999px;font-weight:850;box-shadow:inset 0 1px 0 #ffffff25,0 3px 10px #0005}
+.map-actions .minor:disabled{opacity:.45}
+.map-actions .minor:not(:disabled):hover{background:#235a55;border-color:#ecdfa9}
+.map-stage{position:relative;isolation:isolate;overflow:hidden;
+ background:#0a1e29}
+.map-stage:after{content:"";position:absolute;inset:0;z-index:700;
+ pointer-events:none;box-shadow:inset 0 0 0 2px #edcf8d57,inset 0 0 35px #03101de0,
+ inset 0 0 95px #0716269c;
+ background:
+ radial-gradient(ellipse at 50% 48%,transparent 42%,#0616243c 94%),
+ linear-gradient(to bottom,#03142165 0%,transparent 24%,transparent 72%,#03142166 100%);
+}
+#kingdom-map{height:clamp(420px,66vh,780px);background:#16303b}
+#kingdom-map .leaflet-tile-pane{filter:saturate(.82) sepia(.17) hue-rotate(8deg) brightness(.78) contrast(1.18)}
+#kingdom-map .leaflet-control-zoom{border:1px solid #d9be7cbb;border-radius:8px;box-shadow:0 4px 12px #0009}
+#kingdom-map .leaflet-control-zoom a{background:#082d36e8;color:#f2d894;border-color:#bea66a}
+#kingdom-map .leaflet-control-zoom a:hover{background:#246154;color:#fff4cf}
+#kingdom-map .leaflet-control-attribution{background:#041421d9;color:#b0cbc7}
+#kingdom-map .leaflet-control-attribution a{color:#f1d69b}
+.fantasy-map-crest,.fantasy-map-compass,.fantasy-map-plaque{
+ position:absolute;pointer-events:none;z-index:820;user-select:none}
+.fantasy-map-crest{left:50%;top:8px;transform:translateX(-50%);text-align:center;
+ min-width:155px;padding:5px 15px 7px;border:1px solid #edce8580;border-radius:4px 4px 14px 14px;
+ background:linear-gradient(180deg,#08252ce8,#07242fcd);
+ box-shadow:inset 0 1px #ffe7a93d,0 4px 17px #0009,0 0 17px #d6b46920}
+.fantasy-map-crest span{display:block;font-size:20px;line-height:.9;color:#f7d889;
+ text-shadow:0 2px 7px #e2b85e85}
+.fantasy-map-crest strong{display:block;font-family:Georgia,"Times New Roman",serif;
+ color:#f5dd9e;font-size:9px;letter-spacing:.18em;white-space:nowrap}
+.fantasy-map-crest small{display:block;color:#66dfad;font-size:7px;letter-spacing:.24em;margin-top:2px}
+.fantasy-map-compass{right:14px;top:12px;width:73px;height:73px;border:1px solid #c4a261ad;
+ border-radius:50%;background:radial-gradient(circle,#073a36ba 0%,#081d2bcc 65%,#031a25b8 100%);
+ box-shadow:inset 0 0 0 3px #071d2a,inset 0 0 0 4px #d5b36372,0 3px 13px #0009;
+ color:#f8d38f;display:grid;grid-template-areas:". north ." "west rose east" ". south .";
+ grid-template-columns:1fr 1.25fr 1fr;grid-template-rows:1fr 1.3fr 1fr;
+ align-items:center;justify-items:center;font-size:10px;font-family:Georgia,serif;font-weight:900}
+.compass-n{grid-area:north}.compass-w{grid-area:west}.compass-e{grid-area:east}.compass-s{grid-area:south}
+.compass-rose{grid-area:rose;font-size:28px;color:#f3d491;text-shadow:0 0 12px #d8b467}
+.fantasy-map-plaque{right:11px;bottom:12px;min-width:110px;display:grid;gap:3px;
+ text-align:center;padding:8px 12px;border:1px solid #dfc17f91;border-radius:9px;
+ background:linear-gradient(120deg,#062e2de8,#071d2ceb);box-shadow:0 5px 17px #0009}
+.fantasy-map-plaque span{font-size:9px;letter-spacing:.13em;color:#e5d3aa;font-weight:850}
+.fantasy-map-plaque strong{font-family:Georgia,serif;font-size:19px;color:#79ffbd;
+ text-shadow:0 0 12px #35d996a3}
+.map-bottom{border-top:2px solid #bea3627c;background:linear-gradient(90deg,#071e2a,#113437,#071d2d);
+ color:#d8ddb7;letter-spacing:.02em}
+.realm-map-pin span{font-family:Georgia,serif;border:1px solid #d7b879;
+ border-left:3px solid var(--realm-color);background:linear-gradient(130deg,#081a2ef0,#0a3436ee);
+ color:#f9e4ac;box-shadow:0 4px 13px #000c,0 0 9px #b9904e55;
+ padding:5px 9px;letter-spacing:.06em;text-shadow:0 1px 2px #000}
+.territory-ink{font-family:Georgia,"Times New Roman",serif;color:#ffedbd;
+ filter:drop-shadow(0 2px 2px #000)}
+.territory-ink span{-webkit-text-stroke:.7px #09232c;
+ text-shadow:0 0 2px #000,0 2px 4px #000e,0 0 11px #ffe6a185,0 0 15px var(--kingdom-ink)}
+.cursor-badge b{font-family:Georgia,serif;border-color:#fcdb90;
+ background:linear-gradient(130deg,#0b5a3c,#072b2e);
+ color:#e5ffe8;text-shadow:0 0 5px #36ffaf;
+ box-shadow:0 0 11px #5cffa69b,0 2px 6px #000a}
+.joystick-panel{z-index:880;border:1px solid #dbbd7f;
+ background:linear-gradient(140deg,#051c27f0,#123d3df2 52%,#061a2dec);
+ box-shadow:0 0 0 2px #092a2f,0 9px 28px #000e,0 0 19px #d4b16735;
+ border-radius:50% 50% 14px 14px;padding:7px}
+.joystick-dpad{border:2px solid #dabb7a88;border-radius:50%;
+ background:radial-gradient(circle at 45% 43%,#14645a,#0b3443 60%,#051523 96%);
+ box-shadow:inset 0 0 17px #010d1fdc,inset 0 2px 3px #ffd78845,0 0 10px #62e2a337}
+.joystick-dpad button{background:linear-gradient(155deg,#215e61,#0b273e);
+ border:1px solid #c9b7849c;color:#b4fff0;border-radius:50% 50% 12px 12px;
+ text-shadow:0 0 8px #71f8ce;font-size:19px}
+.joystick-dpad button:active{background:#239474;box-shadow:0 0 17px #4bfbd17a}
+.joystick-dpad .joy-place{background:radial-gradient(circle at 33% 25%,#4ae6a8,#11734e 53%,#064c34 95%);
+ border:2px solid #ecdd9d;border-radius:50%;font-size:9px;color:#ffffe6;
+ box-shadow:inset 0 2px #bfffe35e,0 0 14px #3ff7a88a,0 3px 9px #000e;
+ text-shadow:0 2px 2px #07301a}
+.joystick-dpad .joy-place:not(:disabled):hover{box-shadow:0 0 19px #3cf5a4cc}
+.joystick-meta .joy-gps{border:1px solid #d3b77f;background:linear-gradient(110deg,#153e45,#0b2539);
+ color:#f0dfb2;box-shadow:inset 0 1px #ffffff2e}
+.stat-card,.realm-identity{border-color:#b79e676b;box-shadow:inset 0 1px #f4deae25,0 9px 28px #0009}
+.stat-card::before,.realm-identity::before{background:linear-gradient(90deg,transparent,#dfc27ab5,transparent)}
+.realm-identity{background:linear-gradient(145deg,#194c41,#0a2532 64%,#1b3939)}
+.realm-identity strong{font-family:Georgia,serif;color:#e9d5a0;letter-spacing:.02em}
+.realm-identity b{color:#7cfab8}
+.play-card{border-color:#af966582;background:linear-gradient(130deg,#11283d,#123b36,#0c2337)}
+.play-card h2,.create-panel h2,.actions-card h2{font-family:Georgia,serif;color:#f2dca8}
+.play-card .primary:not(:disabled){background:linear-gradient(120deg,#137b65,#148d6b);border-color:#d8c684;
+ box-shadow:0 6px 19px #159e7559}
+@media(max-width:620px){
+ #kingdom-map{height:clamp(415px,62vh,690px)}
+ .map-top{padding:.65rem .6rem}
+ .map-top strong{font-size:.76rem}
+ .map-top small{font-size:.62rem}
+ .fantasy-map-crest{top:7px;min-width:130px;padding:5px 8px 6px}
+ .fantasy-map-crest strong{font-size:8px}
+ .fantasy-map-crest span{font-size:16px}
+ .fantasy-map-compass{top:9px;right:9px;width:59px;height:59px;font-size:8px}
+ .compass-rose{font-size:22px}
+ .fantasy-map-plaque{right:8px;bottom:9px;min-width:90px;padding:7px 8px}
+ .fantasy-map-plaque strong{font-size:16px}
+ .fantasy-map-plaque span{font-size:8px}
+ .joystick-panel{padding:5px;border-radius:50% 50% 12px 12px}
+ .joystick-dpad button{font-size:15px}
+ .joystick-dpad .joy-place{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){
+ .joystick-dpad button{transition:none!important}
+}
