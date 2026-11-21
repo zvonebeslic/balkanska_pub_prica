@@ -344,7 +344,6 @@
         if (grid.get(x+":"+(y+1)) !== c.k) edge(c.k,"H",y+1,x);
       }
       drawTerritoryLabels(grid, byId);
-      drawBlockGrid(grid);
       for (const [key, offsets] of outline) {
         const [id, axis, fixedStr] = key.split("|");
         const k = byId.get(id);
@@ -370,6 +369,7 @@
         paint(begin,last);
       }
     }
+    if(detailed)drawBlockGrid();
     updateCursorPreview();
     $("map-hint").textContent = detailed
       ? "Nazivi su ucrtani unutar vlastitih granica. Povećaj kartu za sitne teritorije."
@@ -386,8 +386,8 @@
     }).addTo(map);
     map._kzCanvasRenderer = L.canvas({ padding: .1 });
     tilesLayer = L.layerGroup().addTo(map);
-    borderLayer = L.layerGroup().addTo(map);
     blockGridLayer = L.layerGroup().addTo(map);
+    borderLayer = L.layerGroup().addTo(map);
     labelsLayer = L.layerGroup().addTo(map);
     previewLayer = L.layerGroup().addTo(map);
     let timer;
@@ -444,17 +444,21 @@
   }
   // Mreža je globalno poravnata: svaka pločica uvijek zauzima 5 × 4 = 20 m².
   function drawBlockGrid(grid) {
-    if (!blockGridLayer || map.getZoom()<19 || !cells.length) return;
-    const seen = new Set();
-    const owners = new Map(kingdoms.map(k=>[k.id,k]));
-    for(const c of cells) {
-      const b=alignBlock(Number(c.x),Number(c.y));
-      const key=b.x+":"+b.y;
-      if(seen.has(key))continue;seen.add(key);
-      const sw=ll(b.x,b.y),ne=ll(b.x+5,b.y+4);
-      L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
-        color:"#dceeff",weight:1.7,opacity:.75,fill:false,interactive:false,
-        dashArray:"5 5",renderer:map._kzCanvasRenderer
+    if (!blockGridLayer || map.getZoom()<19) return;
+    const bounds=map.getBounds();
+    const sw=xy(bounds.getSouth(),bounds.getWest()),ne=xy(bounds.getNorth(),bounds.getEast());
+    const left=Math.floor(Math.min(sw.x,ne.x)/5)*5;
+    const right=Math.floor(Math.max(sw.x,ne.x)/5)*5;
+    const bottom=Math.floor(Math.min(sw.y,ne.y)/4)*4;
+    const top=Math.floor(Math.max(sw.y,ne.y)/4)*4;
+    const estimated=(Math.floor((right-left)/5)+1)*(Math.floor((top-bottom)/4)+1);
+    // Ne stvaraj tisuće DOM/Canvas elemenata pri malom zumiranju.
+    if(estimated>950)return;
+    for(let x=left;x<=right;x+=5)for(let y=bottom;y<=top;y+=4) {
+      const corner=ll(x,y),other=ll(x+5,y+4);
+      L.rectangle([[corner.lat,corner.lng],[other.lat,other.lng]],{
+        color:"#c9e5fe",weight:.9,opacity:.42,fill:false,interactive:false,
+        renderer:map._kzCanvasRenderer
       }).addTo(blockGridLayer);
     }
   }
@@ -546,6 +550,7 @@
       if(cursorGps)Object.assign(params,{p_lat:cursorGps.lat,p_lon:cursorGps.lon,p_accuracy:cursorGps.accuracy});
       const result=await rpc("kz_place_block",args(params));
       cursorGps=null;
+      cursor={x:cursor.x+5,y:cursor.y};
       toast((result.attack?"⚔ Osvojen tuđi blok! ":"✓ Osvojen novi blok! ")+
         formatArea(result.added)+" · trošak "+formatArea(result.spent));
       await reloadState();await reloadMap();
@@ -727,7 +732,6 @@
     $("leave-btn").addEventListener("click",leaveKingdom);
     $("members-box").addEventListener("click",renderMembers);
     $("bank-box").addEventListener("click",boostInfo);
-    $("expand-close").addEventListener("click",()=> $("expand-panel").classList.add("hidden"));
 
 
 
@@ -749,7 +753,7 @@
     await reloadMap();
     if (current?.kingdom?.anchor_x != null) {
       const p=ll(Number(current.kingdom.anchor_x),Number(current.kingdom.anchor_y));
-      map.setView([p.lat,p.lng],17);
+      map.setView([p.lat,p.lng],20);
     }
     setInterval(tick,1000);
     refreshTimer=setInterval(async()=>{
