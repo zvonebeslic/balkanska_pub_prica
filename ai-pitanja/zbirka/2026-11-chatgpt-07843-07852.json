@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-7843-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Glazba",
+    "focus": "Amy Winehouse Back to Black",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska pjevačica snimila album 'Back to Black'?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album Back to Black objavljen je 2006.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7844-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Nogomet",
+    "focus": "Andrés Iniesta gol 2010",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Tko je postigao pobjednički pogodak Španjolske u finalu Svjetskog prvenstva 2010.?",
+    "answers": [
+      "Andrés Iniesta",
+      "Iniesta"
+    ],
+    "explanation": "Iniesta je zabio u produžetku protiv Nizozemske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_final"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7845-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Film",
+    "focus": "Gladiator Maximus Russell Crowe",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji glumac tumači Maximusa u filmu 'Gladijator' iz 2000.?",
+    "answers": [
+      "Russell Crowe"
+    ],
+    "explanation": "Russell Crowe glumio je rimskog generala Maximusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gladiator_(2000_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7846-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Televizija",
+    "focus": "Breaking Bad Walter White kemija",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji predmet predaje Walter White prije nego što počne proizvoditi metamfetamin u seriji 'Breaking Bad'?",
+    "answers": [
+      "Kemiju",
+      "Kemija"
+    ],
+    "explanation": "Walter White je srednjoškolski profesor kemije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7847-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Književnost",
+    "focus": "Don Quijote Miguel de Cervantes",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je napisao roman 'Don Quijote'?",
+    "answers": [
+      "Miguel de Cervantes",
+      "Cervantes"
+    ],
+    "explanation": "Miguel de Cervantes autor je slavnog španjolskog romana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Don_Quixote"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7848-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Zemljopis",
+    "focus": "Reykjavik Island glavni grad",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji je glavni grad Islanda?",
+    "answers": [
+      "Reykjavík",
+      "Reykjavik"
+    ],
+    "explanation": "Reykjavík je glavni i najveći grad Islanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Reykjav%C3%ADk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7849-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Životinje",
+    "focus": "hobotnica tri srca",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja morska životinja s osam krakova ima tri srca?",
+    "answers": [
+      "Hobotnica",
+      "Hobotnice"
+    ],
+    "explanation": "Hobotnice imaju dva škržna i jedno sustavno srce.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Octopus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7850-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Kemija",
+    "focus": "Au zlato simbol",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji kemijski element nosi simbol Au?",
+    "answers": [
+      "Zlato"
+    ],
+    "explanation": "Simbol Au potječe od latinske riječi aurum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gold"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7851-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine Osmansko Carstvo osvojilo Carigrad?",
+    "answers": [
+      "1453.",
+      "1453"
+    ],
+    "explanation": "Carigrad je pao 29. svibnja 1453.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7852-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Tehnologija",
+    "focus": "Tim Berners-Lee World Wide Web",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji je britanski informatičar osmislio World Wide Web u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee"
+    ],
+    "explanation": "Berners-Lee predložio je web 1989. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
