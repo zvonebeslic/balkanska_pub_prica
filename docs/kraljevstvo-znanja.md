@@ -67,3 +67,11 @@ Nova glavna adresa igre je `kraljevstvo-znanja.html`. Stara `kvadrati-znanja.htm
 - **GPS više nije potreban** za prvo ili udaljeno uporište. Pomičeš kartu (drag/pan), klikneš „Odaberi mjesto” i centar karte postaje kandidat; pri odabiru se karta približava na detaljan prikaz 20 m². Strelice pomiču 5×4 m, POSTAVI potvrđuje potez. Za odvojeno udaljeno uporište koristi se posebna komanda „Novo uporište”.
 - Server-side RPC `kz_place_block` uklonio je obveznu provjeru GPS koordinata, ali i dalje potvrđuje ulogu kralja, poravnanje na globalnu mrežu, dostupno stanje na kontu, pravo vlasništva, atomsku promjenu 20 m² i zabranu preklapanja. **Napad uvijek mora dodirivati teritorij napadača**; opcija udaljenog uporišta ne može preskočiti obranu.
 - Stari povijesni dijelovi ovog dokumenta (posebno GPS upute iz ranijih verzija) više se ne odnose na aktualnu igru.
+
+## 21. studenoga 2026. — živi animirani likovi na stvarnoj karti
+
+- Zadržani su postojeća stvarna geografska karta, blokovi od 20 m², napadi, bodovanje, kraljevstva i sva pitanja.
+- Dodan je mali lagani dekorativni sloj originalnih **SVG karikatura** iznad Leaflet karte: **zmaj** leti, maše krilima i povremeno bljuje vatru, **vitez** hoda i njiše mač, **sova** trepće i pomiče krila, **čarobnjak** maše štapom, a **kraljevske zastave** vijore na stvarnim koordinatama osvojenih kraljevstava.
+- Animacije su izvedene CSS keyframeovima, bez videodatoteka, učestalog JavaScript animacijskog petljanja ili dodatnih biblioteka; broj likova ograničen je prema zoomu i širini zaslona. Likovi nemaju sudar, ne blokiraju dodir po karti i ne utječu na teritorij.
+- Na vrhu karte je gumb **Živi svijet: UKLJ./ISKLJ.**. Izbor se čuva u lokalnom pregledniku; medijska postavka `prefers-reduced-motion` zaustavlja gibanje likova.
+- Likovi raspoređeni po vidljivom kadru **nisu stvarne geografske lokacije životinja ili ljudi**; zastave se vežu uz geografski položaj pripadnog kraljevstva. Potpuni preglednički E2E test još nije proveden.
