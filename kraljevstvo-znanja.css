@@ -456,3 +456,89 @@ body{background:
 @media(prefers-reduced-motion:reduce){
  .joystick-dpad button{transition:none!important}
 }
+
+
+/* ━━━ ŽIVI FANTASY SVIJET: originalne SVG karikature iznad stvarne Leaflet karte ━━━ */
+.map-actions .life-toggle{
+  border-color:#47dba9a8;
+  color:#e4fff0;
+  background:linear-gradient(135deg,#0c6759,#15494a 62%,#11283e);
+  box-shadow:inset 0 1px #bbffe039,0 0 13px #35dc9955;
+  transition:background .18s,border-color .18s,box-shadow .18s;
+}
+.map-actions .life-toggle[aria-pressed="false"]{
+  border-color:#b5a77c70;
+  background:linear-gradient(140deg,#18303b,#152735);
+  color:#b9c6c2;
+  box-shadow:none;
+}
+.map-actions .life-toggle:focus-visible{outline:3px solid #8bffbc;outline-offset:2px}
+.kz-life-marker{pointer-events:none!important;background:transparent!important;
+  border:0!important;overflow:visible!important;contain:layout}
+.kz-life-figure{position:absolute;left:0;top:0;display:block;
+  width:82px;height:95px;transform:translate(-50%,-50%);
+  pointer-events:none!important;user-select:none;
+  filter:drop-shadow(0 7px 5px #000a) drop-shadow(0 0 6px #8dffd650)}
+.kz-life-figure .kz-life-motion{display:block;width:100%;height:100%;transform-origin:50% 80%}
+.kz-life-figure svg{display:block;width:100%;height:100%;overflow:visible;
+  shape-rendering:geometricPrecision}
+.kz-life-dragon{width:91px;height:88px}
+.kz-life-knight{width:77px;height:93px}
+.kz-life-owl{width:76px;height:86px}
+.kz-life-wizard{width:73px;height:90px}
+.kz-life-banner{width:42px;height:60px;filter:drop-shadow(0 4px 4px #0009)}
+/* Animacija samo kroz CSS transform/opacity: bez JS intervala, bez utjecaja na kartu. */
+.kz-life-dragon .kz-life-motion{animation:kz-dragon-hover 3.1s ease-in-out infinite}
+.kz-life-dragon .life-wing-left{transform-origin:49% 43%;animation:kz-wing-left .9s ease-in-out infinite alternate}
+.kz-life-dragon .life-wing-right{transform-origin:56% 43%;animation:kz-wing-right .9s ease-in-out infinite alternate}
+.kz-life-dragon .life-flame{transform-origin:85% 57%;animation:kz-life-flame 1.8s ease-in-out infinite}
+.kz-life-knight .kz-life-motion{animation:kz-knight-walk 3.8s ease-in-out infinite}
+.kz-life-knight .life-leg-left{transform-origin:41% 72%;animation:kz-foot-left .75s ease-in-out infinite alternate}
+.kz-life-knight .life-leg-right{transform-origin:62% 72%;animation:kz-foot-right .75s ease-in-out infinite alternate}
+.kz-life-knight .life-sword{transform-origin:70% 65%;animation:kz-sword-swing 2.7s ease-in-out infinite}
+.kz-life-knight .life-cape{transform-origin:42% 52%;animation:kz-cape-flutter 1.8s ease-in-out infinite alternate}
+.kz-life-owl .kz-life-motion{animation:kz-owl-nod 4.4s ease-in-out infinite}
+.kz-life-owl .life-blink{transform-origin:54% 43%;animation:kz-owl-blink 5.4s ease-in-out infinite}
+.kz-life-owl .life-owl-wing-left{transform-origin:31% 59%;animation:kz-owl-wave 2.8s ease-in-out infinite alternate}
+.kz-life-owl .life-owl-wing-right{transform-origin:76% 59%;animation:kz-owl-wave 2.8s ease-in-out infinite alternate-reverse}
+.kz-life-wizard .kz-life-motion{animation:kz-wizard-cast 4s ease-in-out infinite}
+.kz-life-wizard .life-wizard-arm{transform-origin:72% 62%;animation:kz-sword-swing 3.2s ease-in-out infinite}
+.kz-life-wizard .life-star{transform-origin:87% 15%;animation:kz-star-glow 2.1s ease-in-out infinite}
+.kz-life-banner .life-flag{transform-origin:22% 30%;animation:kz-flag-wave 2.2s ease-in-out infinite}
+@keyframes kz-dragon-hover{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+@keyframes kz-wing-left{from{transform:rotate(-12deg) scaleX(.92)}to{transform:rotate(16deg) scaleX(1.05)}}
+@keyframes kz-wing-right{from{transform:rotate(12deg) scaleX(.92)}to{transform:rotate(-16deg) scaleX(1.05)}}
+@keyframes kz-life-flame{0%,20%,80%,100%{opacity:.18;transform:scale(.45)}45%,55%{opacity:1;transform:scale(1)}}
+@keyframes kz-knight-walk{0%,100%{transform:translateX(-10px) translateY(0)}50%{transform:translateX(10px) translateY(-3px)}}
+@keyframes kz-foot-left{from{transform:rotate(-17deg)}to{transform:rotate(20deg)}}
+@keyframes kz-foot-right{from{transform:rotate(20deg)}to{transform:rotate(-17deg)}}
+@keyframes kz-sword-swing{0%,65%,100%{transform:rotate(0)}80%{transform:rotate(-13deg)}}
+@keyframes kz-cape-flutter{from{transform:rotate(-4deg)}to{transform:rotate(6deg)}}
+@keyframes kz-owl-nod{0%,100%{transform:rotate(0) translateY(0)}40%{transform:rotate(8deg) translateY(-3px)}60%{transform:rotate(-4deg) translateY(-5px)}}
+@keyframes kz-owl-blink{0%,41%,43%,85%,87%,100%{transform:scaleY(1)}42%,86%{transform:scaleY(.1)}}
+@keyframes kz-owl-wave{from{transform:rotate(-7deg)}to{transform:rotate(10deg)}}
+@keyframes kz-wizard-cast{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes kz-star-glow{0%,100%{opacity:.65;transform:rotate(-8deg) scale(.8)}50%{opacity:1;transform:rotate(16deg) scale(1.14)}}
+@keyframes kz-flag-wave{0%,100%{transform:skewY(1deg) scaleX(1)}50%{transform:skewY(-6deg) scaleX(.82)}}
+@media(max-width:620px){
+ .map-actions .life-toggle{font-size:.65rem;padding:6px 9px}
+ .kz-life-dragon{width:68px;height:68px}
+ .kz-life-knight{width:59px;height:75px}
+ .kz-life-owl{width:57px;height:69px}
+ .kz-life-wizard{width:55px;height:71px}
+ .kz-life-banner{width:34px;height:52px}
+}
+@media(prefers-reduced-motion:reduce){
+ .kz-life-figure .kz-life-motion,
+ .kz-life-figure .life-wing,
+ .kz-life-figure .life-flame,
+ .kz-life-figure .life-leg,
+ .kz-life-figure .life-sword,
+ .kz-life-figure .life-cape,
+ .kz-life-figure .life-blink,
+ .kz-life-figure .life-owl-wing-left,
+ .kz-life-figure .life-owl-wing-right,
+ .kz-life-figure .life-wizard-arm,
+ .kz-life-figure .life-star,
+ .kz-life-figure .life-flag{animation:none!important}
+}
