@@ -4,9 +4,9 @@ Status: razvojna verzija igre, podstranica `kraljevstvo-znanja.html`.
 
 ## Pravila
 
-- Svaki igrač dobiva **5 novih ABC pitanja**, iz jedinstvene kombinirane baze. `kz_seen` bilježi ID svakog dodijeljenog pitanja — nema ponavljanja pojedincu, ni pri prijelazu u drugo kraljevstvo.
+- Svaki igrač dobiva **10 novih ABC pitanja**, iz jedinstvene kombinirane baze. `kz_seen` bilježi ID svakog dodijeljenog pitanja — nema ponavljanja pojedincu, ni pri prijelazu u drugo kraljevstvo.
 - Točan odgovor donosi **20 m²** u zajednički saldo. Pri površini kraljevstva **najmanje 500 m²**, kralj dobiva **30**, vojvoda **25**, vojnik **22 m²**; po padu ispod praga vraća se 20.
-- Odgovor na peto pitanje postavlja sljedeću dostupnost na **4 sata nakon završetka**. Neizigrana pitanja se ne gomilaju, a prekinuta partija može se nastaviti.
+- Odgovor na deseto pitanje postavlja sljedeću dostupnost na **4 sata nakon završetka**. Neizigrana pitanja se ne gomilaju, a prekinuta partija može se nastaviti.
 - Maksimalno **5 članova**: kralj, jedan vojvoda i tri vojnika. Prvi prihvaćeni član automatski postaje vojvoda. Kralj može promijeniti vojvodu ili predati krunu.
 - Kralj koristi zajednički saldo i jedini postavlja teritorij. **3–20 m²** po kliku na granicu uz trošak iste količine, na prvoj GPS lokaciji **20 m²**. Prije svakog osvajanja bira se **blok, traka, L-oblik ili cik-cak**, koji se računa kao točno odgovarajući broj povezanih ćelija. Oblik je isti za GPS uporišta, proširenje i napade.
 - **Napad i obrana**: trošak 20 m² s konta, zauzima se 8 m² suparničkog teritorija (i oduzima 8 m² branitelju). Broje se stvarne 1 m² ćelije u globalnoj sfernoj ekvivalentnoj projekciji.
@@ -50,3 +50,12 @@ Nova glavna adresa igre je `kraljevstvo-znanja.html`. Stara `kvadrati-znanja.htm
 - Svaki novi kopneni blok (osim GPS uporišta) mora **rubom dodirivati** postojeću zemlju istog kraljevstva. Udaljeno uporište bira se stvarnim GPS pozicioniranjem, potom se potvrđuje.
 - Raniji kvadrati 1 m², postojeća zemljišta, članstva, područja, saldi i statistike ostaju netaknuti. Novi poslužiteljski RPC je kz_place_block; stari javni kz_place zaključan je protiv zaobilaženja novih pravila.
 - GPS preciznost preglednika ne dokazuje stvarnu fizičku lokaciju; prije ozbiljne javne igre ostaje potreban anti-spoofing.
+
+## 21. studenoga 2026. — kviz kao Online kviz
+
+- **10 novih, nikad prije dodijeljenih ABC pitanja po partiji**. Hlađenje počinje **4 sata nakon desetog odgovora**. Starije partije od pet pitanja ostaju u povijesti; eventualna nedovršena stara partija proširuje se s pet na deset novih pitanja.
+- Izvor je **isti skup JSON datoteka ABC pitanja** koje koristi Online kviz, uvezen u tablicu `kz_questions`. Uvoz je snimka podataka; za novododana ili izmijenjena pitanja pokreće se `scripts/sync-kvadrati-abc.mjs` s povjerljivim ključem iz sigurnog terminala (nije automatska sinkronizacija).
+- Prozor pitanja sada prikazuje ABC odgovore, redoslijed, rezultat, **povijest točnih i netočnih odgovora s označenim rješenjima**, ocjene **👍 / 👎**, obrazac **Pohvale/primjedbe**, rezultate, **PNG povijesti** i **dijeljenje** na podržanim uređajima.
+- Ocjene se poslužiteljskom provjerom identiteta, odigranog pitanja i jedinstvenog glasa šalju u **istu tablicu `quiz_question_votes` kao Online kviz**, s oznakom `kraljevstvo_znanja`. Primjedbe se šalju kroz postojeću Supabase Edge Function `send-quiz-feedback`. Nema dvostrukog glasanja istog igrača za isto pitanje.
+- Povijest zadnjih 12 završenih partija dostupna je kroz `kz_history`; u aktivnoj partiji točni odgovor skriven je do trenutka odgovaranja. Nakon potvrđenog odgovora povijest je čitljiva.
+- Testirano u SQL transakciji s poništavanjem: 10 novih pitanja, odgovor 1–10, završetak tek na 10, dohvat povijesti i odbijanje dvostrukog glasa. Potpuni preglednički E2E još nije obavljen.
