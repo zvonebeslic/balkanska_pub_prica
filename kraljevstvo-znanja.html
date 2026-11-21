@@ -23,33 +23,29 @@
     <div class="battle-motto">✦ Osvajaj znanjem &nbsp;•&nbsp; Vladaj kartom &nbsp;•&nbsp; Brani granice ✦</div>
   </div>
   <section class="map-panel">
-    <div class="map-top"><div><strong>⚔ Teritorijalna karta · uživo</strong><small id="map-hint">Jedan blok = 20 m² · osvajanje joystickom ispod karte.</small></div>
+    <div class="map-top"><div><strong>⚔ Teritorijalna karta · uživo</strong><small id="map-hint">Jedan blok = 20 m² · joystick je unutar karte, a Postavi je u sredini.</small></div>
       <div class="map-actions"><button id="gps-btn" class="minor">⌖ Moj GPS</button><button id="refresh-btn" class="minor">↻ Osvježi</button></div>
     </div>
-    <div id="kingdom-map" role="application" aria-label="Interaktivna karta kvadrata znanja"></div>
+    <div class="map-stage">
+      <div id="kingdom-map" role="application" aria-label="Interaktivna karta Kraljevstva Znanja"></div>
+      <section id="joystick-panel" class="joystick-panel hidden" aria-label="Upravljanje blokom na karti">
+        <div class="joystick-dpad" role="group" aria-label="Pomakni blok i postavi ga">
+          <button type="button" data-joy="N" class="joy-up" aria-label="Pomakni blok sjeverno" title="Sjever">▲</button>
+          <button type="button" data-joy="W" class="joy-left" aria-label="Pomakni blok zapadno" title="Zapad">◀</button>
+          <button type="button" id="claim-block" class="joy-place" disabled aria-label="Postavi blok" title="Postavi odabrani blok">POSTAVI</button>
+          <button type="button" data-joy="E" class="joy-right" aria-label="Pomakni blok istočno" title="Istok">▶</button>
+          <button type="button" data-joy="S" class="joy-down" aria-label="Pomakni blok južno" title="Jug">▼</button>
+        </div>
+        <div class="joystick-meta">
+          <span id="cursor-status" aria-live="polite">Odredi GPS blok ili pomakni strelice.</span>
+          <span id="cursor-coords" class="hidden">—</span>
+          <button type="button" id="spawn-btn" class="joy-gps hidden">⌖ GPS</button>
+        </div>
+      </section>
+    </div>
     <div class="map-bottom"><span id="map-count">Učitavanje kraljevstava…</span><span id="gps-status">GPS se traži samo za novo uporište</span></div>
   </section>
-  <section id="joystick-panel" class="joystick-panel hidden" aria-label="Upravljanje osvajanjem jednog bloka">
-    <div class="joystick-intro"><span class="joystick-tag">🟢 PREGLED OSVAJANJA</span><h2>Upravljaj blokom od 20 m²</h2>
-      <p>Strelicama pomiči zeleni blok po karti. Jedan klik pomiče ga točno za jedan blok. Karta ne osvaja zemljište dodirom — samo gumbom za potvrdu.</p></div>
-    <div class="joystick-main">
-      <div class="joystick-dpad" role="group" aria-label="Joystick pomicanje bloka">
-        <button type="button" data-joy="N" class="joy-up" aria-label="Pomakni blok sjeverno">▲</button>
-        <button type="button" data-joy="W" class="joy-left" aria-label="Pomakni blok zapadno">◀</button>
-        <span class="joy-centre">✥</span>
-        <button type="button" data-joy="E" class="joy-right" aria-label="Pomakni blok istočno">▶</button>
-        <button type="button" data-joy="S" class="joy-down" aria-label="Pomakni blok južno">▼</button>
-      </div>
-      <div class="joystick-claim">
-        <span class="joystick-location">ODABRANI BLOK <b id="cursor-coords">—</b></span>
-        <p id="cursor-status" aria-live="polite">Odredi GPS lokaciju ili pomakni blok strelicama.</p>
-        <button type="button" id="spawn-btn" class="secondary hidden">⌖ Odredi prvi GPS blok</button>
-        <button type="button" id="claim-block" class="primary" disabled>✓ ZAUZMI BLOK (20 m²)</button>
-        <small>Slobodan blok košta 20 m². Napad na cijeli tuđi blok košta 40 m² i prenosi 20 m². Novi udaljeni teritorij počinje s GPS-a.</small>
-      </div>
-    </div>
-  </section>
-  <section class="play-card">
+    <section class="play-card">
     <div class="play-card-head"><h2>⚡ Pet pitanja. Svaka četiri sata.</h2><span id="ready-pill" class="ready">PRIPREMA</span></div>
     <p id="game-desc">Za svaki točan odgovor osvajaš najmanje 40 m². Pitanja se ne ponavljaju istom igraču.</p>
     <button id="play-btn" class="primary" disabled>Pokreni 5 ABC pitanja</button>
