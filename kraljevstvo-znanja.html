@@ -43,6 +43,7 @@
       <div class="joystick-claim">
         <span class="joystick-location">ODABRANI BLOK <b id="cursor-coords">—</b></span>
         <p id="cursor-status" aria-live="polite">Odredi GPS lokaciju ili pomakni blok strelicama.</p>
+        <button type="button" id="spawn-btn" class="secondary hidden">⌖ Odredi prvi GPS blok</button>
         <button type="button" id="claim-block" class="primary" disabled>✓ ZAUZMI BLOK (20 m²)</button>
         <small>Slobodan blok košta 20 m². Napad na cijeli tuđi blok košta 40 m² i prenosi 20 m². Novi udaljeni teritorij počinje s GPS-a.</small>
       </div>
@@ -68,7 +69,6 @@
   </section>
   <section class="actions-card" id="realm-actions">
     <div><h2>Upravljanje kraljevstvom</h2><p id="action-help">Za članstvo drugog kraljevstva dodirni njegov naziv na karti. Za širenje trebaš biti kralj kvizaš.</p></div>
-    <button id="spawn-btn" class="secondary hidden">⌖ Postavi teritorij na GPS-u</button>
     <button id="leave-btn" class="secondary hidden">Napusti kraljevstvo</button>
   </section>
   <section id="requests-panel" class="notifications hidden"><h2>Zahtjevi za pristup <span id="request-count"></span></h2><div id="requests-list"></div></section>
