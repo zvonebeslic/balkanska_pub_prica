@@ -1,0 +1,227 @@
+[
+  {
+    "id": "chatgpt10000-7723-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Glazba",
+    "focus": "Adele album 25 Hello",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Na kojem je albumu britanske pjevačice Adele iz 2015. objavljena pjesma 'Hello'?",
+    "answers": [
+      "25"
+    ],
+    "explanation": "Album 25 objavljen je 2015. i sadrži singl Hello.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/25_(Adele_album)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7724-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps plivanje olimpijske medalje",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je američki plivač osvojio rekordne 23 zlatne olimpijske medalje?",
+    "answers": [
+      "Michael Phelps",
+      "Phelps"
+    ],
+    "explanation": "Michael Phelps osvojio je 23 olimpijska zlata.",
+    "sources": [
+      "https://www.olympics.com/en/athletes/michael-phelps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7725-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Film",
+    "focus": "Wes Anderson Grand Budapest Hotel",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je redatelj snimio film 'The Grand Budapest Hotel' iz 2014., poznat po simetričnim kadrovima i pastelnoj estetici?",
+    "answers": [
+      "Wes Anderson"
+    ],
+    "explanation": "The Grand Budapest Hotel režirao je Wes Anderson.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7726-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Književnost",
+    "focus": "George Orwell Životinjska farma",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je engleski pisac napisao alegorijski roman 'Životinjska farma', u kojem životinje preuzimaju vlast na imanju?",
+    "answers": [
+      "George Orwell",
+      "Orwell"
+    ],
+    "explanation": "Životinjska farma roman je Georgea Orwella objavljen 1945.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Animal_Farm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7727-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Ljubljana Tromostovje",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se europskom glavnom gradu nalazi Tromostovje, skupina triju mostova preko Ljubljanice?",
+    "answers": [
+      "Ljubljana",
+      "Ljubljani"
+    ],
+    "explanation": "Tromostovje se nalazi u središtu Ljubljane.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Triple_Bridge"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7728-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Biologija",
+    "focus": "klorofil zelena boja listova",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji pigment biljkama daje zelenu boju i sudjeluje u upijanju svjetlosti tijekom fotosinteze?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil je pigment važan za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7729-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan najveći Saturnov mjesec",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kako se zove najveći Saturnov prirodni satelit, poznat po gustoj atmosferi i jezerima tekućih ugljikovodika?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov mjesec i ima gustu atmosferu.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7730-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Povijest",
+    "focus": "Berlinski zid pad 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, što je postalo simbol kraja podjele Njemačke?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7731-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth bežična tehnologija",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se naziva bežična tehnologija kratkog dometa kojom slušalice povezujemo s mobitelom bez kabela?",
+    "answers": [
+      "Bluetooth"
+    ],
+    "explanation": "Bluetooth je standard bežične komunikacije kratkog dometa.",
+    "sources": [
+      "https://www.bluetooth.com/learn-about-bluetooth/tech-overview/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7732-20261121",
+    "createdAt": "2026-11-21T09:00:00+01:00",
+    "updatedAt": "2026-11-21T09:00:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "hummus slanutak tahini",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Slanutak, tahini, limunov sok i češnjak usitne se u kremasti namaz. Kako se zove to jelo?",
+    "answers": [
+      "Humus",
+      "Hummus"
+    ],
+    "explanation": "Humus je namaz na bazi slanutka i tahinija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
