@@ -5,12 +5,12 @@ Status: razvojna verzija igre, podstranica `kraljevstvo-znanja.html`.
 ## Pravila
 
 - Svaki igrač dobiva **10 novih ABC pitanja**, iz jedinstvene kombinirane baze. `kz_seen` bilježi ID svakog dodijeljenog pitanja — nema ponavljanja pojedincu, ni pri prijelazu u drugo kraljevstvo.
-- Točan odgovor donosi **20 m²** u zajednički saldo. Pri površini kraljevstva **najmanje 500 m²**, kralj dobiva **30**, vojvoda **25**, vojnik **22 m²**; po padu ispod praga vraća se 20.
+- Točan odgovor donosi **40 m²** u zajednički saldo. Pri površini kraljevstva **najmanje 500 m²**, kralj dobiva **60**, vojvoda **50**, vojnik **44 m²**; po padu ispod praga vraća se 40.
 - Odgovor na deseto pitanje postavlja sljedeću dostupnost na **4 sata nakon završetka**. Neizigrana pitanja se ne gomilaju, a prekinuta partija može se nastaviti.
 - Maksimalno **5 članova**: kralj, jedan vojvoda i tri vojnika. Prvi prihvaćeni član automatski postaje vojvoda. Kralj može promijeniti vojvodu ili predati krunu.
-- Kralj koristi zajednički saldo i jedini postavlja teritorij. **3–20 m²** po kliku na granicu uz trošak iste količine, na prvoj GPS lokaciji **20 m²**. Prije svakog osvajanja bira se **blok, traka, L-oblik ili cik-cak**, koji se računa kao točno odgovarajući broj povezanih ćelija. Oblik je isti za GPS uporišta, proširenje i napade.
-- **Napad i obrana**: trošak 20 m² s konta, zauzima se 8 m² suparničkog teritorija (i oduzima 8 m² branitelju). Broje se stvarne 1 m² ćelije u globalnoj sfernoj ekvivalentnoj projekciji.
-- Novo odvojeno uporište stvara se jedino pomoću geolokacije uređaja. Daljnje širenje radi se iz postojećeg teritorija bez preskakanja.
+- Kralj koristi zajednički saldo i jedini postavlja teritorij. **Jedan potez = jedan blok od 20 m² (5 × 4 metra)**. Slobodan blok košta 20 m², a puni suparnički blok košta 40 m². Blok se odabire i pomiče joystickom **unutar karte**, a potvrđuje središnjim gumbom POSTAVI.
+- **Napad**: trošak 40 m² s konta za puni tuđi blok od 20 m², koji prelazi u vlasništvo napadača. Napad mora dodirivati postojeću granicu napadača. Stari djelomično zauzeti blok nije moguće napasti.
+- **GPS nije potreban.** Pomakni stvarnu geografsku kartu na željeno područje, klikni „Odaberi mjesto”, prilagodi zelenkasti blok joystickom i pritisni POSTAVI. Novo udaljeno uporište bira se opcijom „Novo uporište”. Za obično širenje i napad vrijedi dodir vlastite granice.
 - Odabir boje je trajan; ime se bira iz kataloga od **2300 jedinstvenih i tematski raznolikih imena**. Planirana naplata promjene imena 20 € **nije implementirana**.
 - Zahtjev za pridruživanjem šalje se klikom na kraljevstvo. Zahtjev vidi samo kralj na stranici igre; rezultat stiže članu i u zajednički KvizToGo sandučić.
 
@@ -59,3 +59,11 @@ Nova glavna adresa igre je `kraljevstvo-znanja.html`. Stara `kvadrati-znanja.htm
 - Ocjene se poslužiteljskom provjerom identiteta, odigranog pitanja i jedinstvenog glasa šalju u **istu tablicu `quiz_question_votes` kao Online kviz**, s oznakom `kraljevstvo_znanja`. Primjedbe se šalju kroz postojeću Supabase Edge Function `send-quiz-feedback`. Nema dvostrukog glasanja istog igrača za isto pitanje.
 - Povijest zadnjih 12 završenih partija dostupna je kroz `kz_history`; u aktivnoj partiji točni odgovor skriven je do trenutka odgovaranja. Nakon potvrđenog odgovora povijest je čitljiva.
 - Testirano u SQL transakciji s poništavanjem: 10 novih pitanja, odgovor 1–10, završetak tek na 10, dohvat povijesti i odbijanje dvostrukog glasa. Potpuni preglednički E2E još nije obavljen.
+
+## 21. studenoga 2026. — stvarna karta u fantasy stilu, bez GPS-a
+
+- Zadržana je prava geografska podloga **OpenStreetMap** i Leaflet s geografski točnim položajima, zumiranjem i pomicajem. Novo fantasy oblikovanje preko postojeće karte obuhvaća zagasite terenske boje, zlatno-smaragdne obrube kraljevstava, velike kartografske natpise, grb, kompas, zlatni HUD, elegantniji joystick i zelenu oznaku bloka.
+- Ovo je **stiliziranje postojeće zemljopisne karte**, a ne zamjena za statičnu ilustraciju niti automatski generirani srednjovjekovni reljef s crtanom šumom, planinama i dvorcima iz konceptne slike.
+- **GPS više nije potreban** za prvo ili udaljeno uporište. Pomičeš kartu (drag/pan), klikneš „Odaberi mjesto” i centar karte postaje kandidat; pri odabiru se karta približava na detaljan prikaz 20 m². Strelice pomiču 5×4 m, POSTAVI potvrđuje potez. Za odvojeno udaljeno uporište koristi se posebna komanda „Novo uporište”.
+- Server-side RPC `kz_place_block` uklonio je obveznu provjeru GPS koordinata, ali i dalje potvrđuje ulogu kralja, poravnanje na globalnu mrežu, dostupno stanje na kontu, pravo vlasništva, atomsku promjenu 20 m² i zabranu preklapanja. **Napad uvijek mora dodirivati teritorij napadača**; opcija udaljenog uporišta ne može preskočiti obranu.
+- Stari povijesni dijelovi ovog dokumenta (posebno GPS upute iz ranijih verzija) više se ne odnose na aktualnu igru.
