@@ -43,8 +43,7 @@ begin
  end if;
  return jsonb_build_object('correct',v_correct,'correct_key',v_right,'earned',v_earned,
    'finished',p_number=5,'cooldown_until',v_cool);
-end $function$
-
+end $function$;
 
 create or replace function public.kz_place_block(
  p_guest_id uuid,p_guest_secret text,p_x bigint,p_y bigint,
