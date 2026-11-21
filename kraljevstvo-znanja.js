@@ -106,6 +106,7 @@
   }
   async function reloadState() {
     current = await rpc("kz_state", args());
+    window.dispatchEvent(new CustomEvent("kz:state", {detail:{state:current}}));
     renderDashboard();
     return current;
   }
@@ -201,6 +202,7 @@
       const data = await rpc("kz_map", params);
       if (rev !== mapRevision) return;
       kingdoms = data.kingdoms || [];
+      window.dispatchEvent(new CustomEvent("kz:kingdoms", {detail:{kingdoms}}));
       cells = data.cells || [];
       drawMap();
     } catch (error) {
@@ -513,6 +515,7 @@
     labelsLayer = L.layerGroup().addTo(map);
     previewLayer = L.layerGroup().addTo(map);
     lifeLayer = L.layerGroup().addTo(map);
+    window.dispatchEvent(new CustomEvent("kz:map-ready", {detail:{map}}));
     let timer;
     map.on("moveend zoomend", () => {
       clearTimeout(timer);
