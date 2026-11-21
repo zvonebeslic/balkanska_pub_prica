@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#070d19">
   <title>Kraljevstvo Znanja – osvoji kraljevstvo kvizom | KvizToGo</title>
-  <meta name="description" content="Odgovaraj na pet ABC pitanja, skupljaj kvadrate znanja i širi kraljevstvo na živoj karti. Novo igranje svaka četiri sata.">
+  <meta name="description" content="Odgovaraj na pet ABC pitanja, skupljaj dvostruko više m² i širi kraljevstvo na živoj karti. Novo igranje svaka četiri sata.">
   <link rel="canonical" href="https://kviztogo.com/kraljevstvo-znanja.html">
   <link rel="icon" href="images/KvizToGo-online-kviz-pitanja.png">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -19,37 +19,38 @@
 </header>
 <main class="page">
   <div class="intro"><span class="eyebrow">KvizToGo • strateška igra znanja</span><h1>Kraljevstvo <span>Znanja</span></h1>
-    <p>Odgovaraj na ABC pitanja, osvajaj stvarni teritorij i gradi svoje kraljevstvo na karti. Odaberi oblik širenja i brani osvojene granice.</p>
+    <p>Odgovaraj na ABC pitanja, osvajaj stvarni teritorij i gradi svoje kraljevstvo na karti. Pomicanjem jednog bloka širi granice i brani osvojeni teritorij.</p>
     <div class="battle-motto">✦ Osvajaj znanjem &nbsp;•&nbsp; Vladaj kartom &nbsp;•&nbsp; Brani granice ✦</div>
   </div>
   <section class="map-panel">
-    <div class="map-top"><div><strong>⚔ Teritorijalna karta · uživo</strong><small id="map-hint">Nazivi rastu unutar osvojenih granica i šire se s kraljevstvom.</small></div>
+    <div class="map-top"><div><strong>⚔ Teritorijalna karta · uživo</strong><small id="map-hint">Jedan blok = 20 m² · osvajanje joystickom ispod karte.</small></div>
       <div class="map-actions"><button id="gps-btn" class="minor">⌖ Moj GPS</button><button id="refresh-btn" class="minor">↻ Osvježi</button></div>
     </div>
     <div id="kingdom-map" role="application" aria-label="Interaktivna karta kvadrata znanja"></div>
     <div class="map-bottom"><span id="map-count">Učitavanje kraljevstava…</span><span id="gps-status">GPS se traži samo za novo uporište</span></div>
-    <section id="expand-panel" class="expand-panel hidden" aria-label="Širenje kraljevstva">
-      <div class="expand-head"><b>Širenje s odabrane granice</b><button id="expand-close" class="mini-close" aria-label="Zatvori">×</button></div>
-      <p id="expand-location">Odaberi smjer, oblik i koliko m² trošiš.</p>
-      <div class="expand-controls"><div class="directions"><button data-dir="N">↑ Sjever</button><button data-dir="W">← Zapad</button><button data-dir="E">Istok →</button><button data-dir="S">↓ Jug</button></div>
-        <label>Slobodni teren: 3–20 m²<input type="number" id="expand-size" min="3" max="20" value="20"></label>
-      </div>
-      <small>Napad ili obrana: s konta se oduzima 20 m², osvoji se 8 m². Svaki potez mora dodirivati tvoju granicu.</small>
-    </section>
   </section>
-  <section id="shape-tool" class="shape-tool hidden" aria-label="Oblik osvajanja teritorija">
-    <p class="shape-title"><strong>Odaberi oblik zemljišta</strong><small>Vrijedi za prvo GPS uporište, proširenja i napade</small></p>
-    <div class="shape-choices" role="group" aria-label="Odaberi geometrijski oblik">
-      <button type="button" class="shape-choice selected" data-shape="blok" aria-pressed="true"><span class="shape-glyph" aria-hidden="true">▦</span> Blok</button>
-      <button type="button" class="shape-choice" data-shape="traka" aria-pressed="false"><span class="shape-glyph" aria-hidden="true">━━</span> Traka</button>
-      <button type="button" class="shape-choice" data-shape="kut" aria-pressed="false"><span class="shape-glyph" aria-hidden="true">└</span> L-oblik</button>
-      <button type="button" class="shape-choice" data-shape="cikcak" aria-pressed="false"><span class="shape-glyph" aria-hidden="true">〰</span> Cik-cak</button>
+  <section id="joystick-panel" class="joystick-panel hidden" aria-label="Upravljanje osvajanjem jednog bloka">
+    <div class="joystick-intro"><span class="joystick-tag">🟢 PREGLED OSVAJANJA</span><h2>Upravljaj blokom od 20 m²</h2>
+      <p>Strelicama pomiči zeleni blok po karti. Jedan klik pomiče ga točno za jedan blok. Karta ne osvaja zemljište dodirom — samo gumbom za potvrdu.</p></div>
+    <div class="joystick-main">
+      <div class="joystick-dpad" role="group" aria-label="Joystick pomicanje bloka">
+        <button type="button" data-joy="N" class="joy-up" aria-label="Pomakni blok sjeverno">▲</button>
+        <button type="button" data-joy="W" class="joy-left" aria-label="Pomakni blok zapadno">◀</button>
+        <span class="joy-centre">✥</span>
+        <button type="button" data-joy="E" class="joy-right" aria-label="Pomakni blok istočno">▶</button>
+        <button type="button" data-joy="S" class="joy-down" aria-label="Pomakni blok južno">▼</button>
+      </div>
+      <div class="joystick-claim">
+        <span class="joystick-location">ODABRANI BLOK <b id="cursor-coords">—</b></span>
+        <p id="cursor-status" aria-live="polite">Odredi GPS lokaciju ili pomakni blok strelicama.</p>
+        <button type="button" id="claim-block" class="primary" disabled>✓ ZAUZMI BLOK (20 m²)</button>
+        <small>Slobodan blok košta 20 m². Napad na cijeli tuđi blok košta 40 m² i prenosi 20 m². Novi udaljeni teritorij počinje s GPS-a.</small>
+      </div>
     </div>
-    <p id="shape-help" class="shape-help">Zbijeni blok: širina i dubina su približno jednake.</p>
   </section>
   <section class="play-card">
     <div class="play-card-head"><h2>⚡ Pet pitanja. Svaka četiri sata.</h2><span id="ready-pill" class="ready">PRIPREMA</span></div>
-    <p id="game-desc">Za svaki točan odgovor osvajaš najmanje 20 m². Pitanja se ne ponavljaju istom igraču.</p>
+    <p id="game-desc">Za svaki točan odgovor osvajaš najmanje 40 m². Pitanja se ne ponavljaju istom igraču.</p>
     <button id="play-btn" class="primary" disabled>Pokreni 5 ABC pitanja</button>
     <p id="cooldown" class="countdown" aria-live="polite"></p>
     <p id="account-warning" class="account-warning">Preporuka: <a href="login.html">napravi profil</a>. Bez profila gubitkom podataka preglednika možeš izgubiti pristup kraljevstvu.</p>
@@ -63,7 +64,7 @@
     <h2>Osnuj svoje kraljevstvo</h2><p>Odaberi ime s popisa i boju koja ostaje zauvijek. Promjenu imena bit će moguće zatražiti naknadno uz naknadu od 20 € (plaćanje još nije uključeno).</p>
     <div class="form-grid"><label>Ime kraljevstva<input id="realm-search" type="search" autocomplete="off" placeholder="Pretraži 2300 imena…"><small id="realm-found">Upiši dio imena ili odaberi s popisa.</small><select id="realm-choice"><option value="">Odaberi ime…</option></select></label><label>Boja kraljevstva (ne može se promijeniti)<input id="realm-color" type="color" value="#2f80ff"></label></div>
     <button id="create-btn" class="primary">Osnuj kraljevstvo</button>
-    <p class="help-note">Prvi teritorij postavlja se iz GPS lokacije nakon što prikupiš 20 m² igrajući pitanja.</p>
+    <p class="help-note">Prvi teritorij postavlja se iz GPS lokacije nakon što prikupiš 40 m² igrajući pitanja.</p>
   </section>
   <section class="actions-card" id="realm-actions">
     <div><h2>Upravljanje kraljevstvom</h2><p id="action-help">Za članstvo drugog kraljevstva dodirni njegov naziv na karti. Za širenje trebaš biti kralj kvizaš.</p></div>
