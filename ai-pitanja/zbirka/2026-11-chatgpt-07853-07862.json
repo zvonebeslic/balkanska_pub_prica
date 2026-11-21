@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-7853-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Glazba",
+    "focus": "ABBA Waterloo Eurosong 1974",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "S kojom je pjesmom ABBA pobijedila na Eurosongu 1974.?",
+    "answers": [
+      "Waterloo"
+    ],
+    "explanation": "Švedska skupina ABBA pobijedila je pjesmom Waterloo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Waterloo_(ABBA_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7854-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Sport",
+    "focus": "Serena Williams tenis Grand Slam",
+    "difficulty": 2,
+    "styleId": 12,
+    "styleDescription": "Postavi pitanje kao iznenađujuću brojčanu usporedbu",
+    "question": "Koja je američka tenisačica osvojila 23 pojedinačna Grand Slam naslova u Open eri?",
+    "answers": [
+      "Serena Williams",
+      "Serena"
+    ],
+    "explanation": "Serena Williams osvojila je 23 Grand Slam pojedinačna naslova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Serena_Williams"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7855-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Film",
+    "focus": "Jurassic Park Spielberg redatelj",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je režirao film 'Jurski park' iz 1993.?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Spielberg je režirao filmsku adaptaciju romana Michaela Crichtona.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7856-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Književnost",
+    "focus": "Hobit Bilbo Baggins",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove hobit koji u Tolkienovu romanu odlazi na putovanje s trinaestoricom patuljaka?",
+    "answers": [
+      "Bilbo Baggins",
+      "Bilbo"
+    ],
+    "explanation": "Bilbo Baggins glavni je junak romana Hobit.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Hobbit"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7857-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Zvjezdana noć Van Gogh",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je slikar naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Vincent van Gogh naslikao je Zvjezdanu noć tijekom boravka u Saint-Rémyju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7858-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Astronomija",
+    "focus": "Jupiter Velika crvena pjega",
+    "difficulty": 1,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Na kojem se planetu nalazi Velika crvena pjega, golema oluja?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Velika crvena pjega dugotrajna je oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Red_Spot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7859-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Medicina",
+    "focus": "inzulin gušterača",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji organ proizvodi hormon inzulin?",
+    "answers": [
+      "Gušterača",
+      "Gušteraču",
+      "Pankreas"
+    ],
+    "explanation": "Beta-stanice gušterače luče inzulin.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pancreas"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7860-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom riječ",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ koja se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom je niz znakova koji je isti u oba smjera čitanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7861-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Gastronomija",
+    "focus": "guacamole avokado",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koje je voće glavni sastojak meksičkog umaka guacamole?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Guacamole je umak na bazi avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7862-20261121",
+    "createdAt": "2026-11-21T21:41:25+01:00",
+    "updatedAt": "2026-11-21T21:41:25+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft creeper",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se u igri Minecraft zove zeleno neprijateljsko stvorenje koje eksplodira?",
+    "answers": [
+      "Creeper"
+    ],
+    "explanation": "Creeper je jedno od najprepoznatljivijih stvorenja u Minecraftu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Creeper_(Minecraft)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
