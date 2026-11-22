@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8003-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Glazba",
+    "focus": "Eurythmics Annie Lennox",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "U kojem je synth-pop duu Annie Lennox pjevala uz Davea Stewarta?",
+    "answers": [
+      "Eurythmics"
+    ],
+    "explanation": "Lennox i Stewart činili su Eurythmics.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Eurythmics"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8004-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Sport",
+    "focus": "Wimbledon trava",
+    "difficulty": 1,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Na kojoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava"
+    ],
+    "explanation": "Wimbledon je Grand Slam na travnatoj podlozi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8005-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Film",
+    "focus": "Spirited Away Studio Ghibli",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji japanski animacijski studio stoji iza filma 'Avanture male Chihiro'?",
+    "answers": [
+      "Studio Ghibli"
+    ],
+    "explanation": "Film je producirao Studio Ghibli.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Studio_Ghibli"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8006-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Umjetnost",
+    "focus": "Frida Kahlo Meksiko",
+    "difficulty": 2,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Iz koje je države potjecala slikarica Frida Kahlo, poznata po autoportretima?",
+    "answers": [
+      "Meksiko"
+    ],
+    "explanation": "Frida Kahlo bila je meksička slikarica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frida_Kahlo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8007-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Zemljopis",
+    "focus": "Petra Jordan",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "U kojoj se državi nalazi drevni grad Petra, poznat po pročeljima uklesanim u stijene?",
+    "answers": [
+      "Jordan"
+    ],
+    "explanation": "Petra je arheološki lokalitet u Jordanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Petra"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8008-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Biologija",
+    "focus": "Mitoza stanična dioba",
+    "difficulty": 2,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Kako se naziva proces diobe jezgre kojim nastaju dvije genetski jednake jezgre?",
+    "answers": [
+      "Mitoza"
+    ],
+    "explanation": "Mitoza je važna za rast i obnovu tkiva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitosis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8009-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan Saturn",
+    "difficulty": 2,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Koji planet ima mjesec Titan, poznat po gustoj atmosferi i jezerima metana?",
+    "answers": [
+      "Saturn"
+    ],
+    "explanation": "Titan je najveći Saturnov mjesec.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8010-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Medicina",
+    "focus": "Oftalmologija oči",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Koja se medicinska grana bavi očima i njihovim bolestima?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija se bavi zdravljem očiju i vida.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8011-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Kultura",
+    "focus": "Origami Japan",
+    "difficulty": 1,
+    "styleId": 78,
+    "styleDescription": "Opiši neobičan zakon ili propis i traži državu",
+    "question": "Kako se naziva japanska umjetnost savijanja papira bez rezanja?",
+    "answers": [
+      "Origami"
+    ],
+    "explanation": "Origami je tradicionalna umjetnost oblikovanja papira.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Origami"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8012-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Tehnologija",
+    "focus": "GPS satelitska navigacija",
+    "difficulty": 2,
+    "styleId": 85,
+    "styleDescription": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla",
+    "question": "Koja kratica označava satelitski sustav za određivanje položaja, često korišten u navigaciji?",
+    "answers": [
+      "GPS"
+    ],
+    "explanation": "GPS je Global Positioning System.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
