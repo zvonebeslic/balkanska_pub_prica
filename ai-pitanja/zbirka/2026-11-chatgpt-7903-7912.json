@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-7903-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Glazba",
+    "focus": "Amy Winehouse Back to Black",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Kako se zove album Amy Winehouse iz 2006. na kojem su pjesme 'Rehab' i 'You Know I'm No Good'?",
+    "answers": [
+      "Back to Black"
+    ],
+    "explanation": "Back to Black drugi je studijski album Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7904-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Nogomet",
+    "focus": "Leicester Premier League 2016",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je engleski klub senzacionalno osvojio Premier ligu u sezoni 2015./16.?",
+    "answers": [
+      "Leicester City",
+      "Leicester"
+    ],
+    "explanation": "Leicester City osvojio je naslov engleskog prvaka 2016.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7905-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Film",
+    "focus": "Grand Budapest Hotel Wes Anderson",
+    "difficulty": 2,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Koji je redatelj snimio film 'Grand Budapest Hotel' iz 2014.?",
+    "answers": [
+      "Wes Anderson"
+    ],
+    "explanation": "Wes Anderson režirao je film The Grand Budapest Hotel.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7906-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Književnost",
+    "focus": "Heidi Johanna Spyri",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je švicarska književnica napisala dječji roman 'Heidi'?",
+    "answers": [
+      "Johanna Spyri",
+      "Spyri"
+    ],
+    "explanation": "Johanna Spyri autorica je romana Heidi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Heidi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7907-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Poljubac Gustav Klimt",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Čiji je zlatni slikarski 'Poljubac' jedno od najpoznatijih djela bečke secesije?",
+    "answers": [
+      "Gustav Klimt",
+      "Klimt"
+    ],
+    "explanation": "Gustav Klimt naslikao je Poljubac 1907.–1908.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Kiss_(Klimt)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7908-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Astronomija",
+    "focus": "Neptun otkriće 1846",
+    "difficulty": 3,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji je planet Sunčeva sustava otkriven 1846. nakon matematičkih predviđanja njegova položaja?",
+    "answers": [
+      "Neptun"
+    ],
+    "explanation": "Neptun je opažen 1846. na temelju prethodnih proračuna.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neptune"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7909-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Medicina",
+    "focus": "Dermatolog koža",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove liječnik specijalist za bolesti kože?",
+    "answers": [
+      "Dermatolog",
+      "Dermatologinja"
+    ],
+    "explanation": "Dermatologija je medicinska specijalnost koja se bavi kožom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7910-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Gastronomija",
+    "focus": "Pesto Genovese bosiljak",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koja je aromatična biljka glavni sastojak tradicionalnog zelenog pesta alla genovese?",
+    "answers": [
+      "Bosiljak"
+    ],
+    "explanation": "Pesto alla genovese tradicionalno se priprema s bosiljkom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7911-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Videoigre",
+    "focus": "Tetris Aleksej Pažitnov",
+    "difficulty": 3,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koji je sovjetski programer osmislio videoigru Tetris 1984.?",
+    "answers": [
+      "Aleksej Pažitnov",
+      "Alexey Pajitnov",
+      "Pajitnov"
+    ],
+    "explanation": "Aleksej Pažitnov osmislio je Tetris 1984.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alexey_Pajitnov"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7912-20261122",
+    "createdAt": "2026-11-22T01:35:54+01:00",
+    "updatedAt": "2026-11-22T01:35:54+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO danski leg godt",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv kojeg danskog proizvođača igračaka potječe od izraza 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "Ime LEGO potječe od danskih riječi leg godt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
