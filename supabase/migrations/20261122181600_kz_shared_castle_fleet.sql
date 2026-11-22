@@ -102,8 +102,11 @@ BEGIN
     RAISE EXCEPTION 'Za borbu se najprije pridruži kraljevstvu.';
   END IF;
   SELECT count(*) INTO v_count FROM public.kz_kingdoms;
-  IF p_castle_id IS NULL OR p_castle_id < 0 OR p_castle_id >= 201 + least(v_count, 1000) THEN
-    RAISE EXCEPTION 'Dvorac nije aktivan.';
+  IF p_castle_id IS NULL OR NOT (
+    (p_castle_id BETWEEN 0 AND (200 + least(v_count,1000)))
+    OR (p_castle_id BETWEEN 2000 AND 13199)
+  ) THEN
+    RAISE EXCEPTION 'Čuvar nije aktivan.';
   END IF;
   SELECT generation,hp INTO v_gen,v_hp FROM public.kz_castle_state WHERE castle_id=p_castle_id;
   IF NOT FOUND THEN v_gen:=0;v_hp:=100;END IF;
