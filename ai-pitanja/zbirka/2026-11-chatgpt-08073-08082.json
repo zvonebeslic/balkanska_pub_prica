@@ -1,0 +1,227 @@
+[
+  {
+    "id": "chatgpt10000-8073-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Dancing Queen ABBA",
+    "difficulty": 1,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je švedski sastav snimio hit 'Dancing Queen'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "Pjesma je objavljena 1976. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dancing_Queen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8074-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Nogomet",
+    "focus": "nogometni klub stadion Anfield",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem stadionu svoje domaće utakmice igra Liverpool FC?",
+    "answers": [
+      "Anfield"
+    ],
+    "explanation": "Anfield je dugogodišnji domaći stadion Liverpoola.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anfield"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8075-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Film",
+    "focus": "film Coco Pixar Meksiko Dan mrtvih",
+    "difficulty": 2,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojem Pixarovu animiranom filmu dječak Miguel odlazi u svijet mrtvih?",
+    "answers": [
+      "Coco"
+    ],
+    "explanation": "Coco prati Miguela i njegovu obitelj u priči povezanoj s Danom mrtvih.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Coco_(2017_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8076-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Književnost",
+    "focus": "autorica romana Frankenstein Mary Shelley",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koja je književnica napisala roman 'Frankenstein'?",
+    "answers": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "explanation": "Mary Shelley objavila je Frankenstein 1818. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frankenstein"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8077-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Portugala Lisabon",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji europski glavni grad leži na ušću rijeke Tejo u Atlantski ocean?",
+    "answers": [
+      "Lisabon",
+      "Lisboa"
+    ],
+    "explanation": "Lisabon je glavni grad Portugala na rijeci Tejo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lisbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8078-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Životinje",
+    "focus": "životinja narval kljova",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji je morski sisavac poznat po dugoj spiralnoj kljovi koja je zapravo zub?",
+    "answers": [
+      "Narval",
+      "Narwhal"
+    ],
+    "explanation": "Narvalova kljova izduženi je zub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8079-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol natrij Na",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji kemijski element ima simbol Na, izveden iz latinskog naziva natrium?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": "Na je kemijski simbol natrija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8080-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida godina",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvoren Berlinski zid, jedan od simbola hladnoratovske podjele Europe?",
+    "answers": [
+      "1989.",
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8081-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Tehnologija",
+    "focus": "programski jezik Python ime Monty Python",
+    "difficulty": 2,
+    "styleId": 5,
+    "styleDescription": "Poveži dvije različite industrije zajedničkim imenom",
+    "question": "Po kojoj je britanskoj komičarskoj skupini nazvan programski jezik Python?",
+    "answers": [
+      "Monty Python"
+    ],
+    "explanation": "Guido van Rossum nadahnuo se nazivom komičarske skupine Monty Python.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Python_(programming_language)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8082-20261122",
+    "createdAt": "2026-11-22T12:40:31+01:00",
+    "updatedAt": "2026-11-22T12:40:31+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert tiramisu mascarpone",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kako se zove talijanski desert od piškota natopljenih kavom i kreme s mascarponeom?",
+    "answers": [
+      "Tiramisu",
+      "Tiramisù"
+    ],
+    "explanation": "Tiramisu se tradicionalno priprema s kavom, piškotama i mascarponeom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
