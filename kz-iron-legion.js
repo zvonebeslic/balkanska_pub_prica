@@ -2,12 +2,12 @@
  * Balkan 5000, ostatak Europe 2000, 6 drugih kontinenata po 700.
  * UKUPNO 11200, lokalno deterministički raspoređeno uz gradove i postaje.
  * Na karti se stvaraju samo vidljivi čuvari nakon zuma 12.
- * Svi dijele 1 rasterizirani WebP atlas (9 kadrova), bez SVG-a/GLB-a.
+ * Svi dijele 1 rasterizirani WebP atlas (40 kadrova; 8 x 5), bez SVG-a/GLB-a.
  */
 (function(){
   "use strict";
   const MIN_ZOOM=12, FRAMES=40,FRAME_MS=105;
-  let FW=224,FH=224;
+  let FW=224,FH=224,ACTIVE_FRAMES=40,SPRITE_COLS=8;
   const EARTH=6371.0088, D2R=Math.PI/180, MAX_MOBILE=18, MAX_DESKTOP=36;
   // Raspored je namjerno vezan uz kopnene gradove i istraživačke postaje.
   // Četvrti podatak je približni polumjer disperzije u kilometrima.
@@ -270,9 +270,9 @@
   };
   function iconSize(p){
     const z=map.getZoom(),mobile=map.getSize().x<550;
-    if(z<18)return mobile?42:59;
+    if(z<18)return mobile?64:80;
     const mpp=156543.033928*Math.cos(p.lat*D2R)/Math.pow(2,z);
-    return Math.max(45,Math.min(205,Math.round(Math.sqrt(80)/Math.max(.001,mpp))));
+    return Math.max(mobile?64:72,Math.min(210,Math.round(Math.sqrt(80)/Math.max(.001,mpp))));
   }
   function icon(w){
     return L.divIcon({className:"kz-iron-marker",
@@ -312,12 +312,12 @@
     const node=entry.marker.getElement()?.querySelector("canvas");
     if(!node||!sprite)return;
     const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const n=reduced?0:Math.floor((time+entry.id*173)% (FRAMES*FRAME_MS)/FRAME_MS);
+    const n=reduced?0:Math.floor((time+entry.id*173)% (ACTIVE_FRAMES*FRAME_MS)/FRAME_MS);
     if(n===entry.frame)return;
     const context=node.getContext("2d",{alpha:true});
     if(!context)return;
     context.clearRect(0,0,FW,FH);
-    context.drawImage(sprite,n*FW,0,FW,FH,0,0,FW,FH);
+    context.drawImage(sprite,(n%SPRITE_COLS)*FW,Math.floor(n/SPRITE_COLS)*FH,FW,FH,0,0,FW,FH);
     entry.frame=n;
   }
   function refresh(){
@@ -387,32 +387,17 @@
     pane.parentNode?.appendChild(pane);
     const img=new Image();
     img.onload=()=>{
-      // Primarni format: četrdeset zasebno renderiranih 192×192 kadrova.
-      // Povratna kompatibilnost: iz starog 9-kadrovnog atlasa generira se
-      // jednokratno 40 međukadrova. Nakon zamjene izvornog WebP-a koristi
-      // se svih 40 originalnih renderiranih kadrova, bez interpoliranja.
-      if(img.naturalWidth===192*40&&img.naturalHeight===192){
-        FW=192;FH=192;sprite=img;
+      // Novi 40-kadrovni atlas: 8 stupaca × 5 redova, 224 px po kadru.
+      // Ne miješamo dva prozirna kadra: alpha blending je prethodno
+      // stvarao bljeskanje i dvostruke rubove na silueti.
+      if(img.naturalWidth===224*8&&img.naturalHeight===224*5){
+        FW=224;FH=224;ACTIVE_FRAMES=40;SPRITE_COLS=8;sprite=img;
       }else if(img.naturalWidth===224*9&&img.naturalHeight===224){
-        FW=224;FH=224;
-        const temp=document.createElement("canvas");
-        temp.width=FW*FRAMES;temp.height=FH;
-        const ctx=temp.getContext("2d",{alpha:true});
-        if(!ctx)return;
-        for(let i=0;i<FRAMES;i++){
-          const phase=i*9/FRAMES;
-          const from=Math.floor(phase),to=(from+1)%9,blend=phase-from;
-          ctx.globalAlpha=1-blend;
-          ctx.drawImage(img,from*FW,0,FW,FH,i*FW,0,FW,FH);
-          if(blend>0){
-            ctx.globalAlpha=blend;
-            ctx.drawImage(img,to*FW,0,FW,FH,i*FW,0,FW,FH);
-          }
-        }
-        ctx.globalAlpha=1;
-        sprite=temp;
+        // Sigurna rezervna varijanta prikazuje 9 izvornih poza bez
+        // lažnih, poluprozirnih međukadrova.
+        FW=224;FH=224;ACTIVE_FRAMES=9;SPRITE_COLS=9;sprite=img;
       }else{
-        console.warn("KZ: robot atlas must contain 40 frames of 192 px or legacy 9 frames of 224 px");return;
+        console.warn("KZ: atlas Sir Željeznika mora biti 8×5 (40) ili 9×1 (9)");return;
       }
       ready=true;
       map.on("moveend zoomend",()=>{
