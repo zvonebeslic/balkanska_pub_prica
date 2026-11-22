@@ -33,3 +33,25 @@
 .kz-fleet-next{border-color:#e1b36b;background:#6f5531;text-align:center}
 @media(max-width:450px){.kz-fleet-card{padding:16px}.kz-fleet-card h2{font-size:20px}}
 @media(prefers-reduced-motion:reduce){.kz-fleet-figure{animation:none!important}}
+
+
+/* GPS borba: pitanja se ne prikazuju dok korisnik ne odabere napad. */
+.kz-fleet-quota,.kz-fleet-gps-status{
+  margin:10px 0;font-size:13px;line-height:1.4;color:#e5ddc2;
+}
+.kz-fleet-gps-status{min-height:21px;color:#afefcf}
+.kz-fleet-gps-enable,.kz-fleet-attack{
+  width:100%;display:block;padding:12px;margin:9px 0;border-radius:11px;
+  border:1px solid #d3b877;background:#2a4a57;color:#f5f5eb;
+  font:750 14px/1.25 system-ui,-apple-system,sans-serif;
+  cursor:pointer;text-align:center;
+}
+.kz-fleet-gps-enable:hover:not(:disabled){background:#345b66}
+.kz-fleet-attack{background:#82602e;border-color:#f3cf84;color:#fff4d8}
+.kz-fleet-attack:hover:not(:disabled){background:#987039}
+.kz-fleet-attack:disabled,.kz-fleet-gps-enable:disabled{
+  opacity:.48;cursor:not-allowed;
+}
+.kz-fleet-attack:focus-visible,.kz-fleet-gps-enable:focus-visible{
+  outline:3px solid #baf5e4;outline-offset:2px;
+}
