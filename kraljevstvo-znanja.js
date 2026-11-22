@@ -364,40 +364,11 @@
     }).addTo(lifeLayer);
   }
   function paintLivingWorld() {
-    if(!lifeLayer || !map)return;
+    if (!lifeLayer || !map) return;
     lifeLayer.clearLayers();
-    if(!lifeEnabled)return;
-    const zoom=map.getZoom();
-    const size=map.getSize();
-    const isSmall=size.x<420;
-    // Likovi se prikazuju na malom broju položaja u vidljivom dijelu karte.
-    // Na velikom zumu ne predstavljaju stvarne objekte na tim koordinatama.
-    const scenes=[
-      ["dragon",.77,.33],
-      ["knight",.71,.73],
-      ["owl",.22,.47],
-      ["wizard",.40,.72]
-    ];
-    let count=zoom>=18?(isSmall?2:3):isSmall?3:4;
-    if(zoom<=3)count=Math.min(count,2);
-    for(const [kind,x,y] of scenes.slice(0,count)){
-      const pt=L.point(size.x*x,size.y*y);
-      const location=map.containerPointToLatLng(pt);
-      lifeMarker(kind,location);
-    }
-    // Kraljevske zastave vezane su uz stvarne koordinate postojećeg teritorija.
-    if(zoom<=17){
-      let flags=0;
-      const viewport=map.getBounds();
-      for(const k of kingdoms){
-        if(flags>=5)break;
-        if(!k.anchor_x && k.anchor_x!==0 || k.anchor_y==null || Number(k.area)<20)continue;
-        const point=ll(Number(k.anchor_x),Number(k.anchor_y));
-        if(!viewport.contains([point.lat,point.lng]))continue;
-        lifeMarker("banner",[point.lat,point.lng],k.color);
-        flags++;
-      }
-    }
+    // Spriteovi su rasterizirani WebP kadrovi (bez SVG prikaza).
+    // Ovo ostavlja izvorne teritorije, borbe i markere nepromijenjenima.
+    window.KZWorldSprites?.refresh(map, lifeEnabled);
   }
   function toggleLivingWorld() {
     lifeEnabled=!lifeEnabled;
