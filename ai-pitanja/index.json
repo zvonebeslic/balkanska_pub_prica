@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total": 8222,
+  "total": 8232,
   "months": [
     "2026-10",
     "2026-10-chatgpt-00182-00184",
@@ -816,7 +816,8 @@
     "2026-11-chatgpt-08183-08192",
     "2026-11-chatgpt-8193-8202",
     "2026-11-chatgpt-8203-8212",
-    "2026-11-chatgpt-8213-8222"
+    "2026-11-chatgpt-8213-8222",
+    "2026-11-chatgpt-08223-08232"
   ],
   "styleCounts": {
     "1": 179,
@@ -842,16 +843,16 @@
     "21": 73,
     "22": 73,
     "23": 15,
-    "24": 46,
-    "25": 69,
-    "26": 328,
-    "27": 29,
-    "28": 47,
-    "29": 42,
-    "30": 69,
-    "31": 318,
-    "32": 155,
-    "33": 120,
+    "24": 47,
+    "25": 70,
+    "26": 329,
+    "27": 30,
+    "28": 48,
+    "29": 43,
+    "30": 70,
+    "31": 319,
+    "32": 156,
+    "33": 121,
     "34": 171,
     "35": 141,
     "36": 213,
@@ -921,17 +922,17 @@
     "100": 12
   },
   "topicCounts": {
-    "Glazba": 554,
-    "Tehnologija": 405,
-    "Astronomija": 476,
-    "Gastronomija": 330,
-    "Književnost": 469,
+    "Glazba": 555,
+    "Tehnologija": 406,
+    "Astronomija": 477,
+    "Gastronomija": 331,
+    "Književnost": 470,
     "Sport": 502,
     "Likovna umjetnost": 223,
     "Životinje": 360,
-    "Povijest": 467,
-    "Zemljopis": 497,
-    "Biologija": 270,
+    "Povijest": 468,
+    "Zemljopis": 498,
+    "Biologija": 271,
     "Fizika": 153,
     "Kemija": 397,
     "Matematika": 95,
@@ -939,7 +940,7 @@
     "Inženjerstvo": 61,
     "Arhitektura": 118,
     "Jezik": 141,
-    "Film": 436,
+    "Film": 437,
     "Televizija": 123,
     "Automobili": 12,
     "Promet": 53,
@@ -1053,7 +1054,7 @@
     "Povijest pisma": 1,
     "Borilački sportovi": 1,
     "Muzeji": 1,
-    "Nogomet": 194,
+    "Nogomet": 195,
     "Glazba i film": 1,
     "Povijest filma": 1,
     "Književni likovi": 1,
@@ -1069,9 +1070,9 @@
     "Gaming": 3
   },
   "difficultyCounts": {
-    "1": 1830,
-    "2": 3605,
-    "3": 1622,
+    "1": 1831,
+    "2": 3610,
+    "3": 1626,
     "4": 719,
     "5": 406,
     "8": 1,
@@ -1084,5 +1085,5 @@
     "56": 1,
     "71": 1
   },
-  "updatedAt": "2026-11-22T21:38:30+01:00"
+  "updatedAt": "2026-11-22T22:36:46+01:00"
 }
