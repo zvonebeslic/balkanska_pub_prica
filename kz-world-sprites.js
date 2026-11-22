@@ -61,7 +61,7 @@
     if(!enabled||map.getZoom()>=18)return;
     const viewport=map.getSize();
     const small=viewport.x<480;
-    const width=small?47:70,height=Math.round(width*1.125);
+    const width=small?47:70,height=Math.round(width*(hasNine?128/98:1.125));
     cast.forEach(c=>{
       const pixel=L.point(viewport.x*c.x,viewport.y*c.y);
       const location=map.containerPointToLatLng(pixel);
