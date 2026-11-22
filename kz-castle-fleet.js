@@ -138,6 +138,9 @@
   if(nextId!==201)throw Error("KZ: očekivano je 201 početni dvorac, dobiveno "+nextId);
   const MAX_EXTRA=1000;
   function castle(id){
+    if(id>=2000&&id<13200){
+      return window.KZIronLegion?.info(id)||{id:id,name:"Sir Željeznik",region:"svijet"};
+    }
     if(id<SEEDS.length)return SEEDS[id];
     const seed=SEEDS[id%SEEDS.length];
     const p=go(seed,hash(id,303)*360,3+hash(id,309)*18);
@@ -311,11 +314,13 @@
       statusError=false;
       const next=new Map();
       data.states.forEach(function(x){
-        if(Number.isInteger(x.id)&&x.id>=0&&x.id<1201)next.set(x.id,x);
+        if(Number.isInteger(x.id)&&x.id>=0&&x.id<13200)next.set(x.id,x);
       });
       state=next;
       kingdomCount=Math.max(0,Math.floor(Number(data.kingdoms)||0));
       if(Number.isFinite(Number(data.now)))timeOffset=Number(data.now)-Date.now();
+      window.dispatchEvent(new CustomEvent("kz:guardian-status",
+        {detail:{states:data.states}}));
       setVisible();
     }catch(e){
       if(!statusError){console.warn("KZ dvorci – stanje:",e);statusError=true;}
@@ -327,6 +332,11 @@
     state.set(id,{...prev,id:id, generation:Number(result.generation)||0,
       hp:Number(result.hp)||100,born_at:Number(result.born_at)||realClock()});
     if(result.defeated)cache.clear();
+    if(id>=2000&&id<13200){
+      window.dispatchEvent(new CustomEvent("kz:guardian-state",
+        {detail:{state:{id:id,generation:Number(result.generation)||0,
+          hp:Number(result.hp)||100,born_at:Number(result.born_at)||realClock()}}}));
+    }
     setVisible();
   }
   function ensureDialog(){
@@ -362,6 +372,8 @@
     if(!ready)return;
     ensureDialog();
     selected=id;dialog.hidden=false;
+    dialog.querySelector("#kz-fleet-title").textContent=
+      id>=2000?"⚔️ Borba protiv Sir Željeznika":"⚔️ Opsada dvorca";
     renderHP(id,state.get(id)?.hp??100);
     challenge(id);
   }
@@ -449,6 +461,7 @@
     count:()=>total(),regions:()=>GROUPS.map(g=>g[0]),
     visibleCount:()=>visible.size,
     locate:(id,t)=>calculate(id,t||realClock()),
+    openFight:(id)=>{if(Number.isInteger(id)&&id>=2000&&id<13200)openFight(id);},
     refresh:()=>{loadStatus();setVisible();}
   };
 })();
