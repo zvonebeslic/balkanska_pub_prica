@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8263-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Astronomija",
+    "focus": "Marsov mjesec Fobos",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove veći od dvaju prirodnih Marsovih satelita?",
+    "answers": [
+      "Fobos"
+    ],
+    "explanation": "Fobos je veći i bliži Marsu od Deimosa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Phobos_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8264-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Televizija",
+    "focus": "serija Breaking Bad Walter White zanimanje",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji predmet predaje Walter White prije nego što postane proizvođač metamfetamina u seriji 'Breaking Bad'?",
+    "answers": [
+      "Kemiju"
+    ],
+    "explanation": "Walter White u početku radi kao srednjoškolski profesor kemije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8265-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "slika Krik autor",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je norveški slikar autor slavne slike 'Krik'?",
+    "answers": [
+      "Edvard Munch"
+    ],
+    "explanation": "Munch je izradio više verzija motiva Krik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Scream"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8266-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Medicina",
+    "focus": "oftalmologija oko",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove medicinska specijalizacija koja se bavi očima i bolestima vida?",
+    "answers": [
+      "Oftalmologija"
+    ],
+    "explanation": "Oftalmologija proučava i liječi bolesti oka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ophthalmology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8267-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza kloroplast",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "U kojim se staničnim organelima zelenih biljaka odvija fotosinteza?",
+    "answers": [
+      "Kloroplasti"
+    ],
+    "explanation": "Kloroplasti sadrže klorofil i omogućuju fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chloroplast"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8268-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom definicija",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako nazivamo riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom se jednako čita u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8269-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft Creeper",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kako se zove zeleno neprijateljsko stvorenje u Minecraftu koje se približi igraču i eksplodira?",
+    "answers": [
+      "Creeper"
+    ],
+    "explanation": "Creeper je prepoznatljivo eksplozivno čudovište u Minecraftu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Creeper_(Minecraft)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8270-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO danska marka",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koja danska marka plastičnih kockica ime duguje izrazu 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO"
+    ],
+    "explanation": "Naziv LEGO izveden je iz danskog izraza leg godt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8271-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Po kojem je fizičaru nazvana SI jedinica električnog otpora, om?",
+    "answers": [
+      "Georg Ohm"
+    ],
+    "explanation": "Jedinica om nosi ime njemačkog fizičara Georga Ohma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Georg_Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8272-20261123",
+    "createdAt": "2026-11-23T00:35:14+01:00",
+    "updatedAt": "2026-11-23T00:35:14+01:00",
+    "topic": "Nogomet",
+    "focus": "nogometni stadion Camp Nou",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Koji je španjolski nogometni klub domaćin stadiona Camp Nou?",
+    "answers": [
+      "Barcelona"
+    ],
+    "explanation": "Camp Nou je domaći stadion FC Barcelone.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Camp_Nou"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
