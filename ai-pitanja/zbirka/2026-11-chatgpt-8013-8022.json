@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8013-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Glazba",
+    "focus": "Daft Punk kacige",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Francuski elektronički duo koji je nastupao s robotskim kacigama zvao se kako?",
+    "answers": [
+      "Daft Punk"
+    ],
+    "explanation": "Dvojac su činili Thomas Bangalter i Guy-Manuel de Homem-Christo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Daft_Punk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8014-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Nogomet",
+    "focus": "Panenka jedanaesterac",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Kako se prezivao čehoslovački nogometaš po kojem je nazvan lagano potkopani jedanaesterac?",
+    "answers": [
+      "Panenka"
+    ],
+    "explanation": "Antonín Panenka izveo je slavni jedanaesterac na Euru 1976.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anton%C3%ADn_Panenka"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8015-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Film",
+    "focus": "Cinema Paradiso redatelj",
+    "difficulty": 3,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Koji je talijanski redatelj snimio film 'Cinema Paradiso'?",
+    "answers": [
+      "Giuseppe Tornatore"
+    ],
+    "explanation": "Tornatore je režirao film iz 1988.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cinema_Paradiso"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8016-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Književnost",
+    "focus": "Heidi autorica",
+    "difficulty": 3,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Tko je napisao roman o djevojčici Heidi koja živi u švicarskim Alpama?",
+    "answers": [
+      "Johanna Spyri"
+    ],
+    "explanation": "Švicarska književnica objavila je Heidi 1880.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Johanna_Spyri"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8017-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Zemljopis",
+    "focus": "Tallinn glavni grad",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "U kojoj je baltičkoj državi Tallinn glavni grad?",
+    "answers": [
+      "Estonija"
+    ],
+    "explanation": "Tallinn je glavni grad Estonije.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tallinn"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8018-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Životinje",
+    "focus": "kljunar sisavac",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji australski sisavac polaže jaja i ima kljun nalik pačjem?",
+    "answers": [
+      "Kljunar"
+    ],
+    "explanation": "Kljunar je jedno od rijetkih živućih sisavaca koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8019-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Kemija",
+    "focus": "natrij simbol",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji kemijski element ima simbol Na, izveden iz latinskog naziva natrium?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": "Kemijski simbol natrija je Na.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8020-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Povijest",
+    "focus": "Magellan ekspedicija dovršetak",
+    "difficulty": 4,
+    "styleId": 20,
+    "styleDescription": "Upoznaj čitatelja s lokalnim običajem i pitaj gdje se održava",
+    "question": "Koji je pomorac nakon Magellanove smrti doveo brod Victoriju natrag u Španjolsku i dovršio prvo oplovljavanje svijeta?",
+    "answers": [
+      "Juan Sebastián Elcano"
+    ],
+    "explanation": "Elcano je zapovijedao Victorijom na završetku putovanja 1522.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Juan_Sebasti%C3%A1n_Elcano"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8021-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Tehnologija",
+    "focus": "Linux pingvin maskota",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako se zove pingvin koji služi kao maskota Linuxa?",
+    "answers": [
+      "Tux"
+    ],
+    "explanation": "Tux je službena maskota jezgre Linux.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tux_(mascot)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8022-20261122",
+    "createdAt": "2026-11-22T08:36:26+01:00",
+    "updatedAt": "2026-11-22T08:36:26+01:00",
+    "topic": "Gastronomija",
+    "focus": "pesto Genova",
+    "difficulty": 2,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koji talijanski umak od bosiljka, pinjola, sira i maslinova ulja potječe iz Ligurije?",
+    "answers": [
+      "Pesto"
+    ],
+    "explanation": "Pesto alla genovese tradicionalni je ligurski umak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
