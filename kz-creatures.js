@@ -1,21 +1,21 @@
-/* KvizToGo — 10 detaljnih SVG bića uz vlastito Kraljevstvo Znanja.
+/* KvizToGo — 10 pre-renderiranih animiranih WebP bića uz Kraljevstvo Znanja.
  * PROTOTIP: borbe i 24 h čekanja čuvaju se isključivo u localStorageu.
  * Nema kupnje, obrade plaćanja ni promjena u Supabase bazi.
- * Originalne SVG datoteke gubitaka su spakirane u kz-creatures-art.js.
+ * Atlas je trokadrovni WebP rasterski render, zapakiran u kz-sprite-atlas.js.
  */
 (() => {
   "use strict";
   const CREATURES = [
-    {id:"dvosova-nocnica",name:"Dvosova Noćnica",type:"Dvoglava sova",max:120,area:50,dx:-120,dy:76},
-    {id:"sir-zeljeznik",name:"Sir Željeznik",type:"Vitez robot",max:180,area:70,dx:-64,dy:113},
-    {id:"rogozmaj",name:"Rogozmaj",type:"Jednorogi zmaj",max:170,area:70,dx:28,dy:115},
-    {id:"galoplam",name:"Galoplam",type:"Zmajokonj",max:160,area:70,dx:116,dy:68},
-    {id:"morskokril",name:"Morskokril",type:"Vodena ptica",max:110,area:50,dx:-122,dy:-19,water:true},
-    {id:"neboperka",name:"Neboperka",type:"Leteća riba",max:100,area:50,dx:124,dy:-34,water:true},
-    {id:"koracgrad",name:"Koračgrad",type:"Hodajući dvorac",max:320,area:150,dx:-61,dy:-112},
-    {id:"mrakotrag",name:"Mrakotrag",type:"Sjena sjene",max:140,area:50,dx:32,dy:-115},
-    {id:"starokorijen",name:"Starokorijen",type:"Drevno drvo",max:260,area:100,dx:111,dy:-108},
-    {id:"rumenpuf",name:"Rumenpuf",type:"Rozi oblak",max:90,area:50,dx:-9,dy:-47}
+    {id:"dvosova-nocnica",name:"Kraljevski vitez",type:"Oklopljeni vitez",max:120,area:50,dx:-120,dy:76},
+    {id:"sir-zeljeznik",name:"Sir Željeznik",type:"Parni robot",max:180,area:70,dx:-64,dy:113},
+    {id:"rogozmaj",name:"Rogozmaj",type:"Crveni zmaj",max:170,area:70,dx:28,dy:115},
+    {id:"galoplam",name:"Kapetan Galoplam",type:"Gusarski kapetan",max:160,area:70,dx:116,dy:68},
+    {id:"morskokril",name:"Kristalni pauk",type:"Mehanički pauk",max:110,area:50,dx:-122,dy:-19,water:true},
+    {id:"neboperka",name:"Neboperka",type:"Leteći brod",max:100,area:50,dx:124,dy:-34,water:true},
+    {id:"koracgrad",name:"Koračgrad",type:"Mehanički hodajući dvorac",max:320,area:150,dx:-61,dy:-112},
+    {id:"mrakotrag",name:"Čarobnjak Mrakotrag",type:"Čarobnjak",max:140,area:50,dx:32,dy:-115},
+    {id:"starokorijen",name:"Starokorijen",type:"Šumski div",max:260,area:100,dx:111,dy:-108},
+    {id:"rumenpuf",name:"Proždrljiva škrinja",type:"Živa škrinja",max:90,area:50,dx:-9,dy:-47}
   ];
   const Q = [
     ["Koji planet zovemo Crvenim planetom?","Mars","Venera","Merkur",0],
@@ -61,7 +61,7 @@
   ];
   const COOL=24*60*60*1000, LIMIT=20, R=6371007.181, K=Math.sqrt(3)/2;
   let map=null, layer=null, realms=[], owner=null, anchor=null, player="guest", point=null, watch=null, active=null;
-  let art={}, graphicsReady=false, initialized=false;
+  let art={}, frames={}, activeFrameLayers=[], frameIndex=0, frameTicker=null, graphicsReady=false, initialized=false;
   const $=id=>document.getElementById(id);
   const esc=v=>String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
   const ll=(x,y)=>({lat:Math.asin(y*K/R)*180/Math.PI,lng:x/(R*K)*180/Math.PI});
@@ -90,23 +90,46 @@
     }
     return p;
   }
-  async function unpackArt(){
-    try{
-      if(!window.KZ_CREATURE_SVG_PACK||typeof DecompressionStream!=="function")
-        throw Error("Preglednik ne podržava raspakiravanje SVG ilustracija");
-      const raw=atob(window.KZ_CREATURE_SVG_PACK);
-      const bytes=new Uint8Array(raw.length);
-      for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
-      const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
-      const decoded=JSON.parse(await new Response(stream).text());
+  /* Iscrtavanje rasterskih kadrova iz kompaktno zapakiranog WebP atlasa.
+     Samo pri pokretanju izreži sva 3 kadra za svako biće; animacija mijenja
+     gotove slike bez 3D renderiranja ili izvođenja SVG-a. */
+  function unpackArt(){
+    if(!window.KZ_SPRITE_ATLAS){console.warn("Kraljevstvo: WebP atlas nije učitan.");return;}
+    const image=new Image();
+    image.onload=()=>{
+      const cw=Math.floor(image.naturalWidth/15);
+      const ch=Math.floor(image.naturalHeight/2);
+      if(cw<1||ch<1)return;
+      const indices={"koracgrad":0,"sir-zeljeznik":1,"mrakotrag":2,
+        "rogozmaj":3,"starokorijen":4,"neboperka":5,
+        "dvosova-nocnica":6,"galoplam":7,"rumenpuf":8,"morskokril":9};
       for(const c of CREATURES){
-        if(!decoded[c.id]||!decoded[c.id].startsWith("<svg"))
-          throw Error("Nedostaje SVG: "+c.id);
-        art[c.id]=URL.createObjectURL(new Blob([decoded[c.id]],{type:"image/svg+xml"}));
+        const i=indices[c.id],col=i%5,row=Math.floor(i/5);
+        frames[c.id]=[];
+        for(let k=0;k<3;k++){
+          const cv=document.createElement("canvas");
+          cv.width=cw;cv.height=ch;
+          const context=cv.getContext("2d");
+          context.drawImage(image,(col*3+k)*cw,row*ch,cw,ch,0,0,cw,ch);
+          frames[c.id].push(cv.toDataURL("image/png"));
+        }
+        art[c.id]=frames[c.id][1];
       }
       graphicsReady=true;
       draw();
-    }catch(e){console.warn("KvizToGo SVG likovi:",e)}
+      if(!frameTicker && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+        frameTicker=window.setInterval(()=>{
+          if(document.hidden||!activeFrameLayers.length)return;
+          frameIndex=(frameIndex+1)%3;
+          for(const entry of activeFrameLayers){
+            const node=entry.layer.getElement();
+            if(node)node.src=frames[entry.id][frameIndex];
+          }
+        },260);
+      }
+    };
+    image.onerror=()=>console.warn("Kraljevstvo: WebP sprite atlas nije moguće prikazati.");
+    image.src="data:image/webp;base64,"+window.KZ_SPRITE_ATLAS;
   }
   function mount(m){
     if(map||!window.L)return;
@@ -126,12 +149,14 @@
   function draw(){
     if(!map||!layer)return;
     layer.clearLayers();
+    activeFrameLayers=[];
     if(!anchor||!graphicsReady||map.getZoom()<18)return;
     for(const c of CREATURES){
       c.pos=offset(anchor,c.dx,c.dy);
-      L.imageOverlay(art[c.id],bounds(c.pos,c.area),{
+      const spriteLayer=L.imageOverlay(art[c.id],bounds(c.pos,c.area),{
         interactive:true,alt:c.name,className:"kz-creature-image"
       }).on("click",e=>{L.DomEvent.stopPropagation(e);open(c)}).addTo(layer);
+      activeFrameLayers.push({id:c.id,layer:spriteLayer});
       if(map.getZoom()>=19){
         const p=progress(c);
         const plate='<div class="kz-creature-name"><b>'+esc(c.name)+'</b><small>♥ '+p.hp+'/'+c.max+'</small></div>';
