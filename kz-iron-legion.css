@@ -1,0 +1,23 @@
+/* Sir Željeznik: 11 200 nepokretnih kopnenih čuvara, vidljivih samo na velikom zumu.
+   Dijele jedan 9-kadrovni WebP atlas, čime broj figura ne opterećuje mobitele. */
+#kingdom-map .leaflet-pane.kz-iron-pane{
+  z-index:1600!important;
+  pointer-events:none!important;
+}
+#kingdom-map .kz-iron-marker{
+  background:transparent!important;
+  border:0!important;
+  pointer-events:auto!important;
+  cursor:pointer;
+  touch-action:manipulation;
+}
+#kingdom-map .kz-iron-canvas{
+  display:block;
+  width:100%;height:100%;
+  pointer-events:none;
+  image-rendering:auto;
+  filter:drop-shadow(0 2px 3px rgba(13,18,25,.4));
+}
+@media(prefers-reduced-motion:reduce){
+  #kingdom-map .kz-iron-canvas{animation:none!important}
+}
