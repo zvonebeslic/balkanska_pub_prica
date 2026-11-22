@@ -45,6 +45,8 @@
       crossorigin=""
     />
 
+
+    <link rel="stylesheet" href="assets/map-fantasy/map-fantasy.css?v=1">
     <style>
 /* ========================================================= */
 /* 01 RESET I OSNOVNE POSTAVKE */
@@ -1920,6 +1922,7 @@ select option {
 
     <!-- Supabase JS (v2) -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script defer src="assets/map-fantasy/map-fantasy.js?v=1"></script>
 
     <script>
 /* ----------------- KONFIG ----------------- */
@@ -3155,6 +3158,8 @@ function initMap() {
   }).addTo(map);
 
   markersLayer = L.layerGroup().addTo(map);
+  // Lagani dekorativni sloj, ne ometa kviz-markere.
+  window.KvizToGoFantasy?.init(map);
 }
 
 /* helper za custom pin ikone */
