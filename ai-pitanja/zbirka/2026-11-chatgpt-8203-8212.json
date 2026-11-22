@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-8203-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Astronomija",
+    "focus": "planet s Velikom crvenom pjegom",
+    "difficulty": 1,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Na kojem se planetu nalazi golema oluja poznata kao Velika crvena pjega?",
+    "answers": [
+      "Jupiter",
+      "Jupiteru"
+    ],
+    "explanation": "Velika crvena pjega dugotrajna je oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8204-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Sport",
+    "focus": "sport Roland Garros",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "U kojem se sportu natjecatelji bore za naslov na turniru Roland-Garros?",
+    "answers": [
+      "tenis",
+      "tenisu"
+    ],
+    "explanation": "Roland-Garros jedan je od četiri Grand Slam turnira u tenisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_Open"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8205-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Televizija",
+    "focus": "grad radnje serije Prijatelji",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "U kojem se američkom gradu uglavnom odvija radnja serije 'Prijatelji'?",
+    "answers": [
+      "New York",
+      "New Yorku"
+    ],
+    "explanation": "Prijatelji prate skupinu prijatelja koji žive u New Yorku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8206-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Slikarstvo",
+    "focus": "slikar Zvjezdane noći",
+    "difficulty": 3,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Tko je naslikao 'Zvjezdanu noć' 1889. godine?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Vincent van Gogh naslikao je The Starry Night.",
+    "sources": [
+      "https://www.moma.org/collection/works/79802"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8207-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Medicina",
+    "focus": "stručni naziv za ubrzan rad srca",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se medicinski naziva ubrzan rad srca, odnosno povišena srčana frekvencija?",
+    "answers": [
+      "tahikardija"
+    ],
+    "explanation": "Tahikardija označava ubrzanu srčanu frekvenciju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tachycardia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8208-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Biologija",
+    "focus": "proces kojim biljke stvaraju šećer uz svjetlost",
+    "difficulty": 2,
+    "styleId": 57,
+    "styleDescription": "Postavi pitanje o nečemu što se javilo nakon navedenog izuma",
+    "question": "Kako se naziva proces kojim biljke uz pomoć svjetlosti proizvode šećere?",
+    "answers": [
+      "fotosinteza"
+    ],
+    "explanation": "Fotosintezom se svjetlosna energija pretvara u kemijsku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Photosynthesis"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8209-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Jezik",
+    "focus": "jezik romana Don Quijote",
+    "difficulty": 1,
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Na kojem je jeziku Miguel de Cervantes izvorno napisao 'Don Quijotea'?",
+    "answers": [
+      "španjolski",
+      "španjolskom"
+    ],
+    "explanation": "Don Quijote izvorno je napisan na španjolskom jeziku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Don_Quixote"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8210-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Videoigre",
+    "focus": "Nintendo lik s brkovima i crvenom kapom",
+    "difficulty": 3,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove Nintendov junak s brkovima i crvenom kapom koji često spašava princezu Peach?",
+    "answers": [
+      "Mario",
+      "Super Mario"
+    ],
+    "explanation": "Mario je jedan od najpoznatijih Nintendovih likova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mario"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8211-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Brendovi",
+    "focus": "osnivač IKEA-e",
+    "difficulty": 2,
+    "styleId": 78,
+    "styleDescription": "Opiši neobičan zakon ili propis i traži državu",
+    "question": "Koji je švedski poduzetnik osnovao IKEA-u 1943. godine?",
+    "answers": [
+      "Ingvar Kamprad"
+    ],
+    "explanation": "Ingvar Kamprad osnovao je IKEA-u kao mladi poduzetnik.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ingvar_Kamprad"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8212-20261122",
+    "createdAt": "2026-11-22T20:41:22+01:00",
+    "updatedAt": "2026-11-22T20:41:22+01:00",
+    "topic": "Fizika",
+    "focus": "jedinica električnog otpora",
+    "difficulty": 2,
+    "styleId": 85,
+    "styleDescription": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla",
+    "question": "Koja je SI jedinica električnog otpora nazvana po njemačkom fizičaru Georgu Simonu Ohmu?",
+    "answers": [
+      "om",
+      "ohm"
+    ],
+    "explanation": "Električni otpor mjeri se u omima (Ω).",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
