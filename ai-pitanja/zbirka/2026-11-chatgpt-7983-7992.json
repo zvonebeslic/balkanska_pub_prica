@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-7983-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Glazba",
+    "focus": "Björk Island",
+    "difficulty": 2,
+    "styleId": 82,
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "question": "Iz koje zemlje dolazi pjevačica Björk, poznata po eksperimentalnoj pop-glazbi?",
+    "answers": [
+      "Island"
+    ],
+    "explanation": "Björk je islandska glazbenica.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Björk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7984-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Sport",
+    "focus": "Tour de France žuta majica",
+    "difficulty": 1,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Koje je boje majica vodećeg biciklista u ukupnom poretku Tour de Francea?",
+    "answers": [
+      "Žuta"
+    ],
+    "explanation": "Žuta majica označava vodećeg u ukupnom poretku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/General_classification_in_the_Tour_de_France"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7985-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Televizija",
+    "focus": "Stranger Things Hawkins",
+    "difficulty": 2,
+    "styleId": 96,
+    "styleDescription": "Upotrijebi opis zvuka pa traži izvor ili glazbalo",
+    "question": "Kako se zove izmišljeni gradić u Indiani u kojem se odvija najveći dio serije 'Stranger Things'?",
+    "answers": [
+      "Hawkins"
+    ],
+    "explanation": "Radnja serije smještena je u izmišljeni Hawkins.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stranger_Things"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7986-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Slikarstvo",
+    "focus": "Claude Monet Impresija izlazak sunca",
+    "difficulty": 3,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koji je slikar naslikao 'Impresiju, izlazak sunca', djelo po kojem je impresionizam dobio ime?",
+    "answers": [
+      "Claude Monet"
+    ],
+    "explanation": "Monetova slika dala je naziv impresionističkom pokretu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Impression,_Sunrise"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7987-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa Jupiter mjesec",
+    "difficulty": 2,
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Oko kojeg planeta kruži ledeni mjesec Europa, za koji se pretpostavlja da ima podzemni ocean?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Europa je jedan od velikih Jupiterovih mjeseca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Europa_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7988-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Medicina",
+    "focus": "Dermatologija koža",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Kako se naziva medicinska specijalnost koja se bavi bolestima kože?",
+    "answers": [
+      "Dermatologija"
+    ],
+    "explanation": "Dermatologija proučava i liječi bolesti kože.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7989-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Jezik",
+    "focus": "Palindrom riječ",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Primjer palindroma je 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7990-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Povijest",
+    "focus": "Magellan Elcano oplovljavanje",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je dovršio prvo oplovljavanje Zemlje nakon Magellanove smrti?",
+    "answers": [
+      "Juan Sebastián Elcano"
+    ],
+    "explanation": "Elcano je 1522. doveo ekspediciju natrag u Španjolsku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Juan_Sebastián_Elcano"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7991-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Brendovi",
+    "focus": "Lego Danska",
+    "difficulty": 1,
+    "styleId": 38,
+    "styleDescription": "Kreni od jezika pa pitaj koje je značenje posuđenice",
+    "question": "U kojoj je državi nastao proizvođač kockica LEGO?",
+    "answers": [
+      "Danska"
+    ],
+    "explanation": "LEGO je osnovan u danskom Billundu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-7992-20261122",
+    "createdAt": "2026-11-22T07:41:24+01:00",
+    "updatedAt": "2026-11-22T07:41:24+01:00",
+    "topic": "Biljke",
+    "focus": "Baobab deblo voda",
+    "difficulty": 2,
+    "styleId": 45,
+    "styleDescription": "Opiši stari naziv grada, traži državu",
+    "question": "Koje afričko drvo s golemim deblom može pohranjivati velike količine vode?",
+    "answers": [
+      "Baobab"
+    ],
+    "explanation": "Baobabi imaju debla prilagođena pohrani vode.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adansonia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
