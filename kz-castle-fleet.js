@@ -6,7 +6,7 @@
 (function(){
   "use strict";
   const SPEED_KM_SEC=1/1800, EARTH_KM=6371.0088, RAD=Math.PI/180;
-  const FRAME_W=224, FRAME_H=240, FRAMES=9, MIN_ZOOM=12, GAIT_MS=310;
+  const FRAME_W=192, FRAME_H=192, FRAMES=40, MIN_ZOOM=12, GAIT_MS=70;
   const MAX_RENDER_MOBILE=26, MAX_RENDER_DESKTOP=44;
   const START_EPOCH=Date.UTC(2026,10,22,17,0,0); // ista pocetna vremenska referenca za sve igrace
   const WAYPOINTS=[[0,0],[200,0],[400,0],[500,0],[525,22],[550,-22],
@@ -211,7 +211,7 @@
   function makeIcon(w){
     const h=Math.round(w*FRAME_H/FRAME_W);
     return L.divIcon({className:"kz-fleet-marker",
-      html:'<canvas class="kz-fleet-figure" width="224" height="240" aria-hidden="true"></canvas>',
+      html:'<canvas class="kz-fleet-figure" width="192" height="192" aria-hidden="true"></canvas>',
       iconSize:[w,h],iconAnchor:[Math.round(w/2),Math.round(h*.88)]});
   }
   function drawFrame(entry,trip){
@@ -278,7 +278,12 @@
     const now=realClock();
     visible.forEach(function(item,id){
       const trip=calculate(id,now);
-      item.marker.setLatLng([trip.point.lat,trip.point.lng]);
+      // Zemljopisna putanja: osvježi položaj svakih 0,4 s.
+      // Animacija: samostalnih 40 kadrova, bez obzira na brzinu putovanja.
+      if(!item.lastMoved || now-item.lastMoved>=400){
+        item.marker.setLatLng([trip.point.lat,trip.point.lng]);
+        item.lastMoved=now;
+      }
       drawFrame(item,trip);
     });
   }
@@ -580,7 +585,7 @@
       setupButton();
       loadStatus();
       setVisible();
-      frameTimer=setInterval(tick,400);
+      frameTimer=setInterval(tick,70);
       statusTimer=setInterval(loadStatus,8000);
       setInterval(setVisible,7000);
     };
