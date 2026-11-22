@@ -15,22 +15,27 @@
     {name:"Živa škrinja",x:.51,y:.79,index:8},
     {name:"Kristalni pauk",x:.83,y:.73,index:9}
   ];
+  const hasNine = Boolean(window.KZ_SPRITE_ATLAS_9);
+  const atlas = window.KZ_SPRITE_ATLAS_9 || window.KZ_SPRITE_ATLAS;
+  const frameCount = hasNine ? 9 : 3;
   let map=null,layer=null,nodes=[],enabled=true,frame=1,clock=null;
   function position(index,k){
+    if(hasNine) return (index/9*100).toFixed(5)+"% "+(k/8*100).toFixed(5)+"%";
     const col=index%5,row=Math.floor(index/5);
     return ((col*3+k)/14*100).toFixed(5)+"% "+(row*100)+"%";
   }
   function init(m){
-    if(map||!window.KZ_SPRITE_ATLAS)return;
+    if(map||!atlas)return;
     map=m;
     const pane=map.createPane("kzRasterSpritePane");
-    pane.style.zIndex="410";
+    // Last visual layer above kingdom blocks and territory borders; decorative only.
+    pane.style.zIndex="1350";
     pane.style.pointerEvents="none";
     const style=document.createElement("style");
     style.textContent=".kz-raster-marker{background:transparent!important;border:0!important;pointer-events:none!important;}" +
       ".kz-raster-figure{display:block;width:100%;height:100%;background-image:url('data:image/webp;base64,"+
-      window.KZ_SPRITE_ATLAS+
-      "');background-repeat:no-repeat;background-size:1500% 200%;filter:drop-shadow(0 3px 3px #0009);pointer-events:none;}" +
+      atlas+
+      "');background-repeat:no-repeat;background-size:" + (hasNine ? "1000% 900%" : "1500% 200%") + ";filter:drop-shadow(0 3px 3px #0009);pointer-events:none;}" +
       "@media(prefers-reduced-motion:reduce){.kz-raster-figure{transition:none!important}}";
     document.head.appendChild(style);
     layer=L.layerGroup().addTo(map);
@@ -38,16 +43,16 @@
     if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
       clock=window.setInterval(()=>{
         if(document.hidden||!enabled||!nodes.length)return;
-        frame=(frame+1)%3;
+        frame=(frame+1)%frameCount;
         nodes.forEach(entry=>{
           if(entry.node&&entry.node.isConnected)
             entry.node.style.backgroundPosition=position(entry.index,frame);
         });
-      },260);
+      },hasNine ? 180 : 260);
     }
   }
   function refresh(m,on){
-    if(!m||!window.L||!window.KZ_SPRITE_ATLAS)return;
+    if(!m||!window.L||!atlas)return;
     init(m);
     if(!layer)return;
     enabled=Boolean(on);
