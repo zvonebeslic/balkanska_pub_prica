@@ -1,10 +1,9 @@
-/* Kraljevstvo Znanja: 10 rasteriziranih WebP likova iz 3D-renderiranog atlasa.
+/* Kraljevstvo Znanja: 9 rasteriziranih WebP likova iz 3D-renderiranog atlasa.
    Pre-rendered sprites, tri kadra po liku. Ne koristi SVG ni WebGL.
    Dekorativni sloj ne dira stvarne teritorije, krugove kviza ni borbe. */
 (function(){
   "use strict";
   const cast=[
-    {name:"Hodajući dvorac",x:.15,y:.20,index:0},
     {name:"Parni robot",x:.37,y:.12,index:1},
     {name:"Čarobnjak",x:.62,y:.22,index:2},
     {name:"Crveni zmaj",x:.83,y:.13,index:3},
