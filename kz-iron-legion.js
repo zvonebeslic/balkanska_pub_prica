@@ -248,6 +248,13 @@
   function posFor(id,gen){
     const base=byId.get(id)?.point;
     if(!base)return null;
+    // Poslužitelj određuje novu točku nakon poraza: svi igrači
+    // vide istog čuvara na istim koordinatama.
+    const server=states.get(id);
+    if(server?.start_lat!=null && server?.start_lng!=null &&
+       Number.isFinite(Number(server.start_lat)) &&
+       Number.isFinite(Number(server.start_lng)))
+      return {lat:Number(server.start_lat),lng:Number(server.start_lng)};
     if(!gen)return base;
     const p=dest(base,hash(id,gen*101)*360,.8+hash(id,gen*991)*4);
     p.lat=Math.max(-84.85,Math.min(84.85,p.lat));
