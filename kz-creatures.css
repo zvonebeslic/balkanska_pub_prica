@@ -1,6 +1,10 @@
 /* KvizToGo — ilustrirani čuvari na Leaflet karti.
    Njihova veličina određena je u m² u JS-u, ne CSS pikselima. */
-.kz-creature-image{cursor:pointer;filter:drop-shadow(0 1px 2px #081b3299)}
+.kz-creature-image{cursor:pointer;pointer-events:auto!important;filter:drop-shadow(0 1px 2px #081b3299)}
+/* Zasebni, najvisi sloj karikatura. Ostali dijelovi karte ostaju interaktivni. */
+.kz-creature-top-pane{z-index:1450!important;pointer-events:none!important}
+.kz-creature-top-pane .kz-creature-image{pointer-events:auto!important}
+.kz-creature-top-pane .kz-creature-label{pointer-events:none!important}
 .kz-creature-label{background:transparent!important;border:0!important;pointer-events:none!important;overflow:visible!important}
 .kz-creature-name{position:absolute;transform:translate(-50%,-100%);display:block;min-width:106px;text-align:center;white-space:nowrap;padding:4px 7px;border:1px solid #caaa70;border-radius:10px;color:#fff3d5;background:#12253be9;box-shadow:0 2px 8px #0008;font:650 11px/1.3 system-ui,sans-serif}
 .kz-creature-name small{display:block;color:#ffa5a5;font-size:10px}
