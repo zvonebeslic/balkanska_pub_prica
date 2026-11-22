@@ -44,11 +44,17 @@
   }
   // Zajednički RPC za napade na putujuće dvorce; koristi postojeći
   // KZ gostujući/autentificirani identitet, bez drugog Supabase klijenta.
+  // Pitanja i nagrade: provjera GPS-a i 50 pokušaja po danu na poslužitelju.
   window.KZCastleRPC = {
     status: () => rpc("kz_castle_status"),
-    challenge: (castleId) => rpc("kz_castle_challenge", args({p_castle_id:castleId})),
-    answer: (challengeId, choice) => rpc("kz_castle_answer",
-      args({p_challenge_id:challengeId,p_choice:choice}))
+    quota: () => rpc("kz_guardian_quota", args()),
+    challenge: (guardianId, fix) => rpc("kz_guardian_challenge", args({
+      p_guardian_id:guardianId,p_lat:fix.lat,p_lng:fix.lng,p_accuracy:fix.accuracy
+    })),
+    answer: (challengeId, choice, fix) => rpc("kz_guardian_answer", args({
+      p_challenge_id:challengeId,p_choice:choice,
+      p_lat:fix.lat,p_lng:fix.lng,p_accuracy:fix.accuracy
+    }))
   };
 
   function toast(message) {
@@ -1000,6 +1006,8 @@
     $("choose-map-center").addEventListener("click",()=>chooseMapCentre(false));
     $("refresh-btn").addEventListener("click",async()=>{await reloadState();await reloadMap();});
     $("map-life-toggle").addEventListener("click",toggleLivingWorld);
+    // Kada je čuvar pobijeđen, osvježi i prikaz zajedničkog konta kraljevstva.
+    window.addEventListener("kz:guardian-reward",()=>reloadState().catch(console.warn));
     $("play-btn").addEventListener("click",play);
     $("history-open").addEventListener("click",showFullHistory);
     $("create-btn").addEventListener("click",createKingdom);
