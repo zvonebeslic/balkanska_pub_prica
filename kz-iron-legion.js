@@ -7,7 +7,7 @@
 (function(){
   "use strict";
   const MIN_ZOOM=12, FW=224,FH=224,FRAMES=9,FRAME_MS=470;
-  const EARTH=6371.0088, D2R=Math.PI/180, MAX_MOBILE=30, MAX_DESKTOP=56;
+  const EARTH=6371.0088, D2R=Math.PI/180, MAX_MOBILE=18, MAX_DESKTOP=36;
   // Raspored je namjerno vezan uz kopnene gradove i istraživačke postaje.
   // Četvrti podatak je približni polumjer disperzije u kilometrima.
   const REGIONS=[
