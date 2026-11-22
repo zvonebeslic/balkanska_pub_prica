@@ -61,7 +61,7 @@
   ];
   const COOL=24*60*60*1000, LIMIT=20, R=6371007.181, K=Math.sqrt(3)/2;
   let map=null, layer=null, realms=[], owner=null, anchor=null, player="guest", point=null, watch=null, active=null;
-  let art={}, frames={}, activeFrameLayers=[], frameIndex=0, frameTicker=null, graphicsReady=false, initialized=false;
+  let art={}, frames={}, activeFrameLayers=[], frameIndex=0, frameTicker=null, graphicsReady=false, initialized=false, spriteFrameCount=3;
   const $=id=>document.getElementById(id);
   const esc=v=>String(v??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
   const ll=(x,y)=>({lat:Math.asin(y*K/R)*180/Math.PI,lng:x/(R*K)*180/Math.PI});
@@ -94,11 +94,14 @@
      Samo pri pokretanju izreži sva 3 kadra za svako biće; animacija mijenja
      gotove slike bez 3D renderiranja ili izvođenja SVG-a. */
   function unpackArt(){
-    if(!window.KZ_SPRITE_ATLAS){console.warn("Kraljevstvo: WebP atlas nije učitan.");return;}
+    const hasNine=Boolean(window.KZ_SPRITE_ATLAS_9);
+    const source=window.KZ_SPRITE_ATLAS_9||window.KZ_SPRITE_ATLAS;
+    if(!source){console.warn("Kraljevstvo: WebP atlas nije učitan.");return;}
+    spriteFrameCount=hasNine?9:3;
     const image=new Image();
     image.onload=()=>{
-      const cw=Math.floor(image.naturalWidth/15);
-      const ch=Math.floor(image.naturalHeight/2);
+      const cw=Math.floor(image.naturalWidth/(hasNine?10:15));
+      const ch=Math.floor(image.naturalHeight/(hasNine?9:2));
       if(cw<1||ch<1)return;
       const indices={"koracgrad":0,"sir-zeljeznik":1,"mrakotrag":2,
         "rogozmaj":3,"starokorijen":4,"neboperka":5,
@@ -106,34 +109,41 @@
       for(const c of CREATURES){
         const i=indices[c.id],col=i%5,row=Math.floor(i/5);
         frames[c.id]=[];
-        for(let k=0;k<3;k++){
+        for(let k=0;k<spriteFrameCount;k++){
           const cv=document.createElement("canvas");
           cv.width=cw;cv.height=ch;
           const context=cv.getContext("2d");
-          context.drawImage(image,(col*3+k)*cw,row*ch,cw,ch,0,0,cw,ch);
+          const sx=hasNine?i*cw:(col*3+k)*cw;
+          const sy=hasNine?k*ch:row*ch;
+          context.drawImage(image,sx,sy,cw,ch,0,0,cw,ch);
           frames[c.id].push(cv.toDataURL("image/png"));
         }
-        art[c.id]=frames[c.id][1];
+        art[c.id]=frames[c.id][0];
       }
       graphicsReady=true;
       draw();
       if(!frameTicker && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
         frameTicker=window.setInterval(()=>{
           if(document.hidden||!activeFrameLayers.length)return;
-          frameIndex=(frameIndex+1)%3;
+          frameIndex=(frameIndex+1)%spriteFrameCount;
           for(const entry of activeFrameLayers){
             const node=entry.layer.getElement();
             if(node)node.src=frames[entry.id][frameIndex];
           }
-        },260);
+        },hasNine?180:260);
       }
     };
     image.onerror=()=>console.warn("Kraljevstvo: WebP sprite atlas nije moguće prikazati.");
-    image.src="data:image/webp;base64,"+window.KZ_SPRITE_ATLAS;
+    image.src="data:image/webp;base64,"+source;
   }
   function mount(m){
     if(map||!window.L)return;
-    map=m;layer=L.layerGroup().addTo(map);
+    map=m;
+    // Most-forward Leaflet pane, above the grid, territories, labels and decorative sprites.
+    const top=map.getPane("kzCreatureTopPane")||map.createPane("kzCreatureTopPane");
+    top.style.zIndex="1450";
+    top.style.pointerEvents="none"; // only the creatures themselves are clickable
+    layer=L.layerGroup().addTo(map);
     map.on("zoomend",draw);
     panel();
     setAnchor();
@@ -154,13 +164,13 @@
     for(const c of CREATURES){
       c.pos=offset(anchor,c.dx,c.dy);
       const spriteLayer=L.imageOverlay(art[c.id],bounds(c.pos,c.area),{
-        interactive:true,alt:c.name,className:"kz-creature-image"
+        pane:"kzCreatureTopPane",interactive:true,alt:c.name,className:"kz-creature-image"
       }).on("click",e=>{L.DomEvent.stopPropagation(e);open(c)}).addTo(layer);
       activeFrameLayers.push({id:c.id,layer:spriteLayer});
       if(map.getZoom()>=19){
         const p=progress(c);
         const plate='<div class="kz-creature-name"><b>'+esc(c.name)+'</b><small>♥ '+p.hp+'/'+c.max+'</small></div>';
-        L.marker([c.pos.lat,c.pos.lng],{interactive:false,icon:L.divIcon({
+        L.marker([c.pos.lat,c.pos.lng],{pane:"kzCreatureTopPane",interactive:false,icon:L.divIcon({
           className:"kz-creature-label",html:plate,iconSize:[0,0],iconAnchor:[0,-5]
         })}).addTo(layer);
       }
