@@ -42,6 +42,15 @@
     if (error) throw Error(error.message || "Pogreška poslužitelja");
     return data;
   }
+  // Zajednički RPC za napade na putujuće dvorce; koristi postojeći
+  // KZ gostujući/autentificirani identitet, bez drugog Supabase klijenta.
+  window.KZCastleRPC = {
+    status: () => rpc("kz_castle_status"),
+    challenge: (castleId) => rpc("kz_castle_challenge", args({p_castle_id:castleId})),
+    answer: (challengeId, choice) => rpc("kz_castle_answer",
+      args({p_challenge_id:challengeId,p_choice:choice}))
+  };
+
   function toast(message) {
     const node = $("toast");
     node.textContent = message;
