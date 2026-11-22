@@ -1,0 +1,223 @@
+[
+  {
+    "id": "chatgpt10000-8113-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Glazba",
+    "focus": "hit Rolling in the Deep",
+    "difficulty": 1,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja je britanska pjevačica snimila hit 'Rolling in the Deep'?",
+    "answers": [
+      "Adele"
+    ],
+    "explanation": "Pjesma se nalazi na albumu '21'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adele"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8114-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Nogomet",
+    "focus": "nadimak kluba Stara dama",
+    "difficulty": 1,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji talijanski nogometni klub nosi nadimak 'Stara dama'?",
+    "answers": [
+      "Juventus"
+    ],
+    "explanation": "Juventus je poznat i kao La Vecchia Signora.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Juventus_FC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8115-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Inception",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao znanstvenofantastični film 'Početak' (Inception) iz 2010.?",
+    "answers": [
+      "Christopher Nolan"
+    ],
+    "explanation": "Nolan je napisao i režirao film.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Inception"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8116-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Proces",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je književnik napisao roman 'Proces' o Josefu K.?",
+    "answers": [
+      "Franz Kafka"
+    ],
+    "explanation": "Roman je objavljen nakon autorove smrti.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Trial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8117-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Portugala",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem se europskom glavnom gradu nalazi četvrt Alfama i toranj Belém?",
+    "answers": [
+      "Lisabon"
+    ],
+    "explanation": "Oba su poznata obilježja portugalske prijestolnice.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lisbon"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8118-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Životinje",
+    "focus": "životinja aksolotl",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji vodozemac iz Meksika zadržava vanjske škrge i u odrasloj dobi?",
+    "answers": [
+      "Aksolotl"
+    ],
+    "explanation": "Aksolotl je neotenični daždevnjak.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8119-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol kalija",
+    "difficulty": 1,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji kemijski element ima simbol K, prema latinskom nazivu kalium?",
+    "answers": [
+      "Kalij"
+    ],
+    "explanation": "Kalij je alkalijski metal.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8120-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je grad 1453. osvojio osmanski sultan Mehmed II., čime je završilo Bizantsko Carstvo?",
+    "answers": [
+      "Carigrad",
+      "Konstantinopol"
+    ],
+    "explanation": "Osmansko osvajanje označilo je kraj Bizantskog Carstva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8121-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Tehnologija",
+    "focus": "operacijski sustav Android",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji se Googleov mobilni operacijski sustav naziva po humanoidnom robotu?",
+    "answers": [
+      "Android"
+    ],
+    "explanation": "Android je mobilna softverska platforma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Android_(operating_system)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8122-20261122",
+    "createdAt": "2026-11-22T15:38:08+01:00",
+    "updatedAt": "2026-11-22T15:38:08+01:00",
+    "topic": "Gastronomija",
+    "focus": "japansko jelo tempura",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Kako se zove japanski način pripreme povrća i morskih plodova u laganom prženom tijestu?",
+    "answers": [
+      "Tempura"
+    ],
+    "explanation": "Tempura je poznato japansko jelo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tempura"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
