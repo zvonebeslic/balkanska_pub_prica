@@ -13,6 +13,6 @@ Sve nove fantasy ikone izrađuju se s **točno 40 kadrova** po jednom liku. To v
 ## Stanje dvaju početnih likova
 
 - **Hodajući dvorac:** na GitHub je spremljen puni 40-kadrovni, 192×192 WebP atlas i odgovarajući player.
-- **Sir Željeznik:** player je pripremljen za 40-kadrovni, 192×192 WebP. Dok se ne prenese novi izvorni atlas, kod iz starog 9-kadrovnog atlasa računa 40 prijelaznih međukadrova. To je kompatibilna prijelazna varijanta, **nije isto** što i 40 zasebno renderiranih kadrova.
+- **Sir Željeznik:** učitava se novi 40-kadrovni WebP atlas `kz-sir-zeljeznik-optical-40.js`, složen kao **8 stupaca × 5 redova** od 224×224 px. Svaki kadar se prikazuje samostalno, bez preklapanja dviju poluprozirnih slika (uzrok bljeskanja). Prijelazne poze dobivene su **optičkim deformiranjem iz postojećih 9 ključnih poza**, stoga nije riječ o 40 ručno ili 3D-renderiranih izvornika. Za konačnu animaciju lik treba rigirati i izrenderirati 40 stvarnih, dosljednih poza.
 
 Za buduće likove ne koristiti privremenu interpolaciju kao konačan asset.
