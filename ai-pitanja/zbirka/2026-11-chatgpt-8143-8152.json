@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-8143-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black",
+    "difficulty": 1,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album je osvojio Grammy za najbolji pop vokalni album.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8144-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Signal Iduna Park",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Na kojem stadionu domaće utakmice igra Borussia Dortmund?",
+    "answers": [
+      "Signal Iduna Park",
+      "Westfalenstadion"
+    ],
+    "explanation": "Stadion je poznat i pod povijesnim imenom Westfalenstadion.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Westfalenstadion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8145-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Film",
+    "focus": "lik Forrest Gump",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je glumac utjelovio Forresta Gumpa u istoimenom filmu iz 1994.?",
+    "answers": [
+      "Tom Hanks"
+    ],
+    "explanation": "Za tu je ulogu osvojio Oscara za najboljega glumca.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Forrest_Gump"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8146-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Književnost",
+    "focus": "roman Mali princ",
+    "difficulty": 3,
+    "styleId": 23,
+    "styleDescription": "Pitaj što je posljednje u nizu tehnoloških izuma",
+    "question": "Na kojem se planetu, prema priči, rodio Mali princ prije putovanja na Zemlju?",
+    "answers": [
+      "B-612",
+      "B 612",
+      "asteroid B-612"
+    ],
+    "explanation": "Mali princ dolazi s malenog asteroida B-612.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8147-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Islanda",
+    "difficulty": 2,
+    "styleId": 30,
+    "styleDescription": "Prikaži drevni mit i traži odgovarajući pojam",
+    "question": "Kako se zove glavni i najveći grad Islanda?",
+    "answers": [
+      "Reykjavík",
+      "Reykjavik"
+    ],
+    "explanation": "Reykjavík je na jugozapadnoj obali Islanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Reykjav%C3%ADk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8148-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Životinje",
+    "focus": "vrsta aksolotl",
+    "difficulty": 3,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Koji je meksički vodozemac poznat po zadržavanju ličinačkih obilježja i sposobnosti obnavljanja udova?",
+    "answers": [
+      "aksolotl",
+      "axolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po neoteniji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8149-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Kemija",
+    "focus": "formula kuhinjske soli",
+    "difficulty": 1,
+    "styleId": 44,
+    "styleDescription": "Kreni od promjene imena grada, traži današnji naziv",
+    "question": "Koja je kemijska formula obične kuhinjske soli?",
+    "answers": [
+      "NaCl"
+    ],
+    "explanation": "Kuhinjska sol natrijev je klorid.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium_chloride"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8150-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Kako se zove povelja koju je engleski kralj Ivan bez Zemlje prihvatio 1215. godine?",
+    "answers": [
+      "Magna Carta",
+      "Magna Carta Libertatum"
+    ],
+    "explanation": "Povelja je postala simbol ograničenja kraljevske vlasti.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8151-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "programski jezik Python",
+    "difficulty": 2,
+    "styleId": 58,
+    "styleDescription": "Poveži slavnu građevinu sa zaboravljenim arhitektom",
+    "question": "Koji je programski jezik dobio ime po britanskoj komičarskoj skupini Monty Python?",
+    "answers": [
+      "Python"
+    ],
+    "explanation": "Guido van Rossum nazvao ga je po Monty Pythonu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Python_(programming_language)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8152-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "japansko jelo okonomiyaki",
+    "difficulty": 3,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Kako se zove japansko slano jelo nalik palačinki, često pripremljeno s kupusom?",
+    "answers": [
+      "okonomiyaki"
+    ],
+    "explanation": "Naziv se približno odnosi na pripremu po vlastitom ukusu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Okonomiyaki"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
