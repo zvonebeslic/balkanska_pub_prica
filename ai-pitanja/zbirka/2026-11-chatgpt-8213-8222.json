@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8213-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Dancing Queen",
+    "difficulty": 1,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je švedski sastav izveo hit 'Dancing Queen'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "Pjesma je objavljena 1976. i postala jedan od najvećih hitova sastava.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dancing_Queen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8214-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Nogomet",
+    "focus": "prvi osvajač SP 1930",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Koja je reprezentacija osvojila prvo svjetsko nogometno prvenstvo 1930. godine?",
+    "answers": [
+      "Urugvaj"
+    ],
+    "explanation": "Urugvaj je kao domaćin pobijedio Argentinu u finalu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8215-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Titanic 1997",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Tko je režirao filmski hit 'Titanic' iz 1997. godine?",
+    "answers": [
+      "James Cameron"
+    ],
+    "explanation": "Cameron je napisao scenarij i režirao film.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8216-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Zločin i kazna",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji je ruski pisac autor romana 'Zločin i kazna'?",
+    "answers": [
+      "Fjodor Dostojevski"
+    ],
+    "explanation": "Roman je prvi put objavljen 1866. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8217-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Kanade",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Toronto je najveći kanadski grad, ali koji je glavni grad Kanade?",
+    "answers": [
+      "Ottawa"
+    ],
+    "explanation": "Ottawa je sjedište savezne vlasti Kanade.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ottawa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8218-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Životinje",
+    "focus": "sisavac koji polaže jaja",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji australski sisavac ima pačji kljun i polaže jaja?",
+    "answers": [
+      "Čudnovati kljunaš"
+    ],
+    "explanation": "Čudnovati kljunaš pripada jednootvorima, sisavcima koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8219-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol zlata",
+    "difficulty": 1,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Koji se kemijski element skriva iza oznake Au?",
+    "answers": [
+      "Zlato"
+    ],
+    "explanation": "Oznaka Au potječe od latinske riječi aurum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gold"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8220-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453",
+    "difficulty": 2,
+    "styleId": 38,
+    "styleDescription": "Kreni od jezika pa pitaj koje je značenje posuđenice",
+    "question": "Koje je godine Osmansko Carstvo osvojilo Carigrad?",
+    "answers": [
+      "1453."
+    ],
+    "explanation": "Pad Carigrada 1453. označio je kraj Bizantskog Carstva.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8221-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Weba",
+    "difficulty": 2,
+    "styleId": 39,
+    "styleDescription": "Pitaj za ime broda nakon priče o njegovu putovanju",
+    "question": "Koji je britanski informatičar osmislio World Wide Web radeći u CERN-u?",
+    "answers": [
+      "Tim Berners-Lee"
+    ],
+    "explanation": "Predložio je sustav World Wide Web 1989. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8222-20261122",
+    "createdAt": "2026-11-22T21:38:30+01:00",
+    "updatedAt": "2026-11-22T21:38:30+01:00",
+    "topic": "Gastronomija",
+    "focus": "osnovni sastojak guacamolea",
+    "difficulty": 1,
+    "styleId": 40,
+    "styleDescription": "Pitaj za otok kroz dvije životinjske ili botaničke značajke",
+    "question": "Bez kojeg voća ne bi bilo tradicionalnog meksičkog umaka guacamole?",
+    "answers": [
+      "Avokado"
+    ],
+    "explanation": "Guacamole se tradicionalno priprema od zgnječenog avokada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guacamole"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
