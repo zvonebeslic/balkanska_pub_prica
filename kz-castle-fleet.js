@@ -167,9 +167,10 @@
       ? Number(server.route_bearing) : hash(c.id+1,gen*479+1)*360;
     // Na polovima uglavnom idi prema ekvatoru kako Web Mercator
     // ne bi sakrio dvorce iza granice prikaza karte (oko ±85°).
-    const baseBearing=Math.abs(start.lat)>70
-      ? (start.lat>0?180:0)+(hash(c.id,gen+429)-.5)*92
-      : initial;
+    const baseBearing=server?.route_bearing!=null ? initial :
+      Math.abs(start.lat)>70
+        ? (start.lat>0?180:0)+(hash(c.id,gen+429)-.5)*92
+        : initial;
     const b=norm(baseBearing+cycle*7*(c.id%2===0?1:-1));
     const stops=WAYPOINTS.map(function(t){
       const p=go(start,b,t[0]);return t[1]?go(p,b+90,t[1]):p;
