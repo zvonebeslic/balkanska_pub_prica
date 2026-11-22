@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8163-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Smooth Criminal",
+    "difficulty": 2,
+    "styleId": 63,
+    "styleDescription": "Kreni od poznate pjesme i traži spomenuto mjesto",
+    "question": "U hitu 'Smooth Criminal' Michael Jackson više puta pita je li sve u redu s kojom ženom?",
+    "answers": [
+      "Annie"
+    ],
+    "explanation": "Ponavljani stih 'Annie, are you OK?' dio je refrena.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Smooth_Criminal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8164-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Nogomet",
+    "focus": "nadimak La Vecchia Signora",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji talijanski nogometni klub nosi nadimak 'Stara dama' (La Vecchia Signora)?",
+    "answers": [
+      "Juventus"
+    ],
+    "explanation": "Torinski Juventus desetljećima je poznat po tom nadimku.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Juventus_FC"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8165-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Film",
+    "focus": "filmski lik Amélie Poulain",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Konobarica iz pariškog Montmartrea potajno mijenja živote ljudi oko sebe u kojem francuskom filmu iz 2001.?",
+    "answers": [
+      "Amélie"
+    ],
+    "explanation": "Film Jean-Pierrea Jeuneta prati Amélie Poulain.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8166-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Književnost",
+    "focus": "lik kapetan Nemo",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koji je francuski književnik stvorio kapetana Nema, zapovjednika podmornice Nautilus?",
+    "answers": [
+      "Jules Verne"
+    ],
+    "explanation": "Nemo se pojavljuje u romanu 'Dvadeset tisuća milja pod morem'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Captain_Nemo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8167-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Zemljopis",
+    "focus": "grad Samarkand",
+    "difficulty": 3,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na Putu svile, uz poznati trg Registan, nalazi se Samarkand. U kojoj je današnjoj državi taj grad?",
+    "answers": [
+      "Uzbekistan"
+    ],
+    "explanation": "Samarkand je jedan od povijesnih gradova Uzbekistana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Samarkand"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8168-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Životinje",
+    "focus": "ptica kivi",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koja je novozelandska ptica neletačica aktivna uglavnom noću i ima nosnice pri vrhu dugačkog kljuna?",
+    "answers": [
+      "kivi"
+    ],
+    "explanation": "Kiviji su endemske ptice Novog Zelanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8169-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski element brom",
+    "difficulty": 3,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji je nemetal na sobnoj temperaturi crvenosmeđa tekućina, a njegovi spojevi nekada su se koristili u fotografiji?",
+    "answers": [
+      "brom"
+    ],
+    "explanation": "Brom je jedan od rijetkih elemenata koji su tekući pri sobnoj temperaturi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bromine"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8170-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Povijest",
+    "focus": "prvi čovjek na Južnom polu",
+    "difficulty": 3,
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Čija je ekspedicija prva stigla na geografski Južni pol, u prosincu 1911.?",
+    "answers": [
+      "Roald Amundsen"
+    ],
+    "explanation": "Norveška ekspedicija stigla je prije britanske ekspedicije Roberta Scotta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Roald_Amundsen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8171-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Tehnologija",
+    "focus": "kratica USB",
+    "difficulty": 1,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Kako glasi troslovna kratica za standard 'Universal Serial Bus', kojim povezujemo mnoge računalne uređaje?",
+    "answers": [
+      "USB"
+    ],
+    "explanation": "USB označava standard povezivanja i komunikacije uređaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/USB"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8172-20261122",
+    "createdAt": "2026-11-22T17:40:48+01:00",
+    "updatedAt": "2026-11-22T17:40:48+01:00",
+    "topic": "Gastronomija",
+    "focus": "umak pesto genovese",
+    "difficulty": 2,
+    "styleId": 50,
+    "styleDescription": "Kreni od recepta u tri koraka i traži naziv jela",
+    "question": "Bosiljak, pinjoli, češnjak, tvrdi sir i maslinovo ulje: koji se poznati talijanski umak priprema od tih sastojaka?",
+    "answers": [
+      "pesto"
+    ],
+    "explanation": "Pesto alla genovese tradicionalno se priprema od navedenih sastojaka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pesto"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
