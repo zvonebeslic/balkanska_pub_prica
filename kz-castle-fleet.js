@@ -349,6 +349,66 @@
     }
     setVisible();
   }
+  // GPS dozvola traži se tek nakon klika igrača.
+  // Izvor lokacije je browser Geolocation API; poslužitelj ne vjeruje
+  // koordinatama čuvara iz klijenta i ponovno izračunava njihov položaj.
+  let quotaLeft=null,busy=false;
+  function monsterPosition(id){
+    if(id>=2000&&id<13200)return window.KZIronLegion?.location(id)||null;
+    return calculate(id,realClock()).point;
+  }
+  function currentFix(){
+    if(selected===null||!gps||Date.now()-gps.at>25000||
+      gps.accuracy>150||gps.accuracy<0)return null;
+    const pos=monsterPosition(selected);
+    if(!pos||dist(pos,gps)>1)return null;
+    return {lat:gps.lat,lng:gps.lng,accuracy:gps.accuracy};
+  }
+  function eligibility(){
+    if(!dialog||dialog.hidden)return;
+    const here=monsterPosition(selected);
+    const target=here&&gps?Math.round(dist(here,gps)*1000):null;
+    const gpsLine=dialog.querySelector(".kz-fleet-gps-status");
+    let status=gpsStatus;
+    if(gps&&Date.now()-gps.at>25000)status="GPS je zastario. Čekam novo očitanje.";
+    else if(gps&&gps.accuracy>150)status="GPS je neprecizan ("+Math.round(gps.accuracy)+" m).";
+    else if(gps&&target!==null)
+      status=target<=1000
+        ?"✅ U krugu si za napad: "+target+" m od čuvara."
+        :"🔒 Udaljenost "+target+" m. Priđi na 1 km ili manje.";
+    gpsLine.textContent=status;
+    const good=!!currentFix();
+    const attack=dialog.querySelector(".kz-fleet-attack");
+    attack.disabled=!good||busy||quotaLeft===0||!!activeChallenge;
+    if(!good&&activeChallenge){
+      activeChallenge=null;
+      dialog.querySelector(".kz-fleet-question").replaceChildren();
+      message("Izašao si iz kruga ili je GPS zastario. Napad je prekinut.");
+    }
+  }
+  function stopGPS(){
+    if(gpsWatch!==null && navigator.geolocation)navigator.geolocation.clearWatch(gpsWatch);
+    gpsWatch=null;gps=null;gpsStatus="GPS nije uključen.";
+  }
+  function startGPS(){
+    if(!navigator.geolocation){gpsStatus="Uređaj ne podržava GPS.";eligibility();return;}
+    if(!window.isSecureContext){gpsStatus="GPS zahtijeva HTTPS.";eligibility();return;}
+    if(gpsWatch!==null)return;
+    gpsStatus="Tražim preciznu GPS lokaciju…";eligibility();
+    gpsWatch=navigator.geolocation.watchPosition(
+      position=>{
+        gps={lat:position.coords.latitude,lng:position.coords.longitude,
+          accuracy:position.coords.accuracy,at:position.timestamp};
+        gpsStatus="GPS uključen.";eligibility();
+      },
+      err=>{
+        gps=null;gpsStatus="GPS: "+err.message;
+        if(gpsWatch!==null){navigator.geolocation.clearWatch(gpsWatch);gpsWatch=null;}
+        eligibility();
+      },
+      {enableHighAccuracy:true,maximumAge:0,timeout:16000}
+    );
+  }
   function ensureDialog(){
     if(dialog)return;
     dialog=document.createElement("div");
@@ -356,76 +416,126 @@
     dialog.setAttribute("role","presentation");
     dialog.innerHTML='<div class="kz-fleet-card" role="dialog" aria-modal="true" aria-labelledby="kz-fleet-title">'+
       '<button class="kz-fleet-close" type="button" aria-label="Zatvori">×</button>'+
-      '<h2 id="kz-fleet-title">⚔️ Opsada dvorca</h2>'+
+      '<h2 id="kz-fleet-title">⚔️ Čuvar znanja</h2>'+
       '<p class="kz-fleet-description"></p>'+
       '<div class="kz-fleet-health"><span></span></div>'+
+      '<p class="kz-fleet-quota">Dnevni pokušaji: — / 50</p>'+
+      '<p class="kz-fleet-gps-status" aria-live="polite">GPS nije uključen.</p>'+
+      '<button class="kz-fleet-gps-enable" type="button">📍 Uključi GPS</button>'+
+      '<button class="kz-fleet-attack" type="button" disabled>⚔️ Napadni znanjem</button>'+
       '<p class="kz-fleet-message" aria-live="polite"></p>'+
       '<div class="kz-fleet-question"></div>'+
-      '<button class="kz-fleet-next" type="button" hidden>Sljedeće pitanje</button>'+
       '</div>';
     document.body.appendChild(dialog);
     dialog.querySelector(".kz-fleet-close").addEventListener("click",closeFight);
     dialog.addEventListener("click",e=>{if(e.target===dialog)closeFight();});
     document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!dialog.hidden)closeFight();});
-    dialog.querySelector(".kz-fleet-next").addEventListener("click",()=>challenge(selected));
+    dialog.querySelector(".kz-fleet-gps-enable").addEventListener("click",startGPS);
+    dialog.querySelector(".kz-fleet-attack").addEventListener("click",()=>challenge(selected));
   }
-  function closeFight(){if(dialog)dialog.hidden=true;selected=null;}
+  function closeFight(){
+    if(dialog)dialog.hidden=true;
+    selected=null;activeChallenge=null;busy=false;stopGPS();
+  }
   function message(t){if(dialog)dialog.querySelector(".kz-fleet-message").textContent=t;}
+  function quotaMessage(){
+    if(!dialog)return;
+    dialog.querySelector(".kz-fleet-quota").textContent=
+      "Preostali dnevni pokušaji: "+(quotaLeft===null?"—":quotaLeft)+
+      " / 50 · obnova u 00:00 (Sarajevo)";
+  }
   function renderHP(id,hp){
     if(!dialog)return;
-    const c=castle(id);
+    const c=castle(id),reward=id>=2000?20:80;
     dialog.querySelector(".kz-fleet-description").textContent=
-      c.name+" · "+c.region+" · život: "+hp+"/100 · 5 točnih pogodaka za pobjedu";
-    dialog.querySelector(".kz-fleet-health span").style.width=Math.max(0,Math.min(100,hp))+"%";
+      c.name+" · "+c.region+" · HP "+hp+"/100 · nagrada "+
+      (reward/20)+" kvadrat"+(reward===20?"":"a")+" ("+reward+
+      " m²) na konto kraljevstva za završni pogodak.";
+    dialog.querySelector(".kz-fleet-health span").style.width=
+      Math.max(0,Math.min(100,hp))+"%";
   }
   function openFight(id){
     if(!ready)return;
-    ensureDialog();
-    selected=id;dialog.hidden=false;
-    dialog.querySelector("#kz-fleet-title").textContent=
-      id>=2000?"⚔️ Borba protiv Sir Željeznika":"⚔️ Opsada dvorca";
+    ensureDialog();stopGPS();
+    selected=id;activeChallenge=null;busy=false;quotaLeft=null;dialog.hidden=false;
+    dialog.querySelector("#kz-fleet-title").textContent=id>=2000
+      ?"⚔️ Sir Željeznik":"⚔️ Hodajući dvorac";
+    dialog.querySelector(".kz-fleet-question").replaceChildren();
     renderHP(id,state.get(id)?.hp??100);
-    challenge(id);
+    quotaMessage();
+    message("Za napad uključi GPS i priđi na najviše 1 km od čuvara. Pitanja dolaze iz zajedničke baze.");
+    eligibility();
+    window.KZCastleRPC?.quota?.().then(q=>{
+      if(selected!==id)return;
+      quotaLeft=Math.max(0,Number(q.remaining)||0);
+      quotaMessage();eligibility();
+    }).catch(err=>{
+      if(selected===id)message(err.message||"Ne mogu provjeriti pokušaje.");
+    });
   }
   async function challenge(id){
-    if(!dialog||selected!==id)return;
-    const question=dialog.querySelector(".kz-fleet-question");
-    const next=dialog.querySelector(".kz-fleet-next");
-    next.hidden=true;question.replaceChildren();message("Pripremam zajedničko pitanje…");
-    if(!window.KZCastleRPC?.challenge){message("Veza s igrom nije spremna.");return;}
+    if(id===null||selected!==id||busy||activeChallenge)return;
+    const fix=currentFix();
+    if(!fix){eligibility();return;}
+    if(quotaLeft===0){message("Potrošeno je 50 dnevnih pokušaja.");return;}
+    busy=true;eligibility();message("Učitavam pitanje iz zajedničke baze…");
     try{
-      const q=await window.KZCastleRPC.challenge(id);
+      const q=await window.KZCastleRPC.challenge(id,fix);
       if(selected!==id)return;
-      renderHP(id,Number(q.hp)||100);
-      message("Točan odgovor oduzima 20 HP. Svi igrači dijele isti HP dvorca.");
-      const title=document.createElement("p");title.className="kz-fleet-prompt";
-      title.textContent=q.prompt||"Pitanje nije dostupno.";
-      question.appendChild(title);
-      for(const choice of ["A","B","C"]){
-        const b=document.createElement("button");
-        b.type="button";b.className="kz-fleet-choice";
-        b.textContent=choice+") "+String(q.options?.[choice]||"");
-        b.addEventListener("click",()=>answer(id,q.challenge_id,choice));
-        question.appendChild(b);
+      if(Number.isFinite(Number(q.remaining))){
+        quotaLeft=Number(q.remaining);quotaMessage();
       }
-    }catch(e){message(e.message||"Ne mogu učitati pitanje.");next.hidden=false;}
+      renderHP(id,Number(q.hp)??100);
+      if(!currentFix()){
+        message("U međuvremenu si izašao iz GPS kruga. Pitanje je prekinuto.");
+        return;
+      }
+      activeChallenge=q.challenge_id;
+      const box=dialog.querySelector(".kz-fleet-question");
+      box.replaceChildren();
+      const title=document.createElement("p");title.className="kz-fleet-prompt";
+      title.textContent=q.prompt||"Pitanje nije dostupno.";box.appendChild(title);
+      ["A","B","C"].forEach(choice=>{
+        const button=document.createElement("button");button.type="button";
+        button.className="kz-fleet-choice";
+        button.textContent=choice+") "+String(q.options?.[choice]||"");
+        button.addEventListener("click",()=>answer(id,q.challenge_id,choice));
+        box.appendChild(button);
+      });
+      message("Odgovori dok si unutar 1 km. Svaki točan pogodak oduzima 20 HP.");
+    }catch(e){if(selected===id)message(e.message||"Ne mogu učitati pitanje.");}
+    finally{busy=false;eligibility();}
   }
   async function answer(id,cid,choice){
-    if(selected!==id)return;
-    const question=dialog.querySelector(".kz-fleet-question");
-    question.querySelectorAll("button").forEach(b=>b.disabled=true);
-    message("Provjeravam odgovor…");
+    if(selected!==id||activeChallenge!==cid||busy)return;
+    const fix=currentFix();
+    if(!fix){
+      eligibility();message("GPS više nije unutar 1 km. Napad je prekinut.");return;
+    }
+    busy=true;dialog.querySelectorAll(".kz-fleet-choice").forEach(b=>b.disabled=true);
+    message("Provjeravam odgovor i GPS…");
     try{
-      const res=await window.KZCastleRPC.answer(cid,choice);
+      const res=await window.KZCastleRPC.answer(cid,choice,fix);
       if(selected!==id)return;
-      layerState(id,res);
-      renderHP(id,Number(res.hp)||100);
-      question.replaceChildren();
-      if(res.stale)message("Drugi su igrači već porazili taj dvorac. Nova generacija je stigla!");
-      else if(res.defeated)message("🏰 Dvorac je pobijeđen! Nova generacija se odmah pojavila na drugoj putanji.");
-      else message(res.correct?"✅ Točno! Dvorac je izgubio 20 HP.":"❌ Netočno. Zdravlje dvorca ostaje isto.");
-      dialog.querySelector(".kz-fleet-next").hidden=false;
-    }catch(e){message(e.message||"Odgovor nije prihvaćen.");dialog.querySelector(".kz-fleet-next").hidden=false;}
+      layerState(id,res);activeChallenge=null;
+      quotaLeft=Math.max(0,Number(res.remaining)||0);
+      quotaMessage();renderHP(id,Number(res.hp)??100);
+      dialog.querySelector(".kz-fleet-question").replaceChildren();
+      if(res.stale)message("Drugi igrači već su porazili ovu generaciju. Novi čuvar je stigao.");
+      else if(res.defeated){
+        const amt=Number(res.reward_m2)||0;
+        message("🏆 Zadnji točan pogodak! Tvoje kraljevstvo dobiva "+amt+
+          " m² na konto. Odmah se pojavio novi čuvar.");
+        if(amt>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",
+          {detail:{reward_m2:amt,guardian_id:id}}));
+      }else message(res.correct?"✅ Točno! Čuvar je izgubio 20 HP.":"❌ Netočno. Nema oduzimanja HP-a.");
+    }catch(e){
+      if(selected===id){
+        message(e.message||"Odgovor nije prihvaćen.");
+        // Dopusti ponovni pokušaj istog pitanja samo ako je GPS opet valjan.
+        dialog.querySelectorAll(".kz-fleet-choice").forEach(b=>b.disabled=false);
+      }
+    }finally{busy=false;eligibility();}
   }
   function mount(m){
     if(map||!m||!window.L||!window.KZ_ROAMING_CASTLE_WEBP)return;
