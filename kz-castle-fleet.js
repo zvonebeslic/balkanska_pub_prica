@@ -156,7 +156,7 @@
     const key=c.id+":"+gen+":"+cycle;
     if(cache.has(key))return cache.get(key);
     const start=spawn(c,gen),b=norm(hash(c.id+1,gen*479+1)*360+
-      cycle*(3+hash(c.id,cycle+519)*8)*(hash(c.id+5,cycle)&1?-1:1));
+      cycle*(3+hash(c.id,cycle+519)*8)*(hash(c.id+5,cycle)>.5?-1:1));
     const stops=WAYPOINTS.map(function(t){
       const p=go(start,b,t[0]);return t[1]?go(p,b+90,t[1]):p;
     });
