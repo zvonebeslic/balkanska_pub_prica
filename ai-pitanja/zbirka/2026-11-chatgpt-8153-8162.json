@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chatgpt10000-8153-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Astronomija",
+    "focus": "mjesec Titan",
+    "difficulty": 1,
+    "styleId": 72,
+    "styleDescription": "Poveži modni detalj s društvenim običajem",
+    "question": "Kako se zove Saturnov najveći prirodni satelit, poznat po gustoj atmosferi?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan ima gustu atmosferu bogatu dušikom.",
+    "sources": [
+      "https://science.nasa.gov/saturn/moons/titan/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8154-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Sport",
+    "focus": "teniski Grand Slam Roland Garros",
+    "difficulty": 2,
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "Na kojoj se podlozi tradicionalno igra teniski turnir Roland-Garros?",
+    "answers": [
+      "zemlja",
+      "zemljana podloga",
+      "crvena zemlja"
+    ],
+    "explanation": "Pariški Grand Slam igra se na zemljanim terenima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/French_Open"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8155-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Televizija",
+    "focus": "serija Breaking Bad",
+    "difficulty": 2,
+    "styleId": 86,
+    "styleDescription": "Pitaj koja je biljka dala ime nekom proizvodu",
+    "question": "Koji je nastavnik kemije postao proizvođač metamfetamina u seriji 'Breaking Bad'?",
+    "answers": [
+      "Walter White"
+    ],
+    "explanation": "Lik glumi Bryan Cranston.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8156-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Umjetnost",
+    "focus": "slika Djevojka s bisernom naušnicom",
+    "difficulty": 3,
+    "styleId": 93,
+    "styleDescription": "Opiši simboliku svakodnevnog obreda i traži običaj",
+    "question": "Koji je nizozemski slikar autor 'Djevojke s bisernom naušnicom'?",
+    "answers": [
+      "Johannes Vermeer",
+      "Vermeer"
+    ],
+    "explanation": "Djelo se čuva u muzeju Mauritshuis u Haagu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8157-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Medicina",
+    "focus": "pojam tahikardija",
+    "difficulty": 2,
+    "styleId": 100,
+    "styleDescription": "Završi pitanjem čiji je odgovor troznamenkasti ili četveroznamenkasti datum",
+    "question": "Kako se medicinski naziva ubrzan rad srca?",
+    "answers": [
+      "tahikardija"
+    ],
+    "explanation": "Tahikardija označava srčani ritam brži od uobičajenoga.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tachycardia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8158-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Biologija",
+    "focus": "biljni pigment klorofil",
+    "difficulty": 3,
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koji zeleni pigment biljkama omogućuje apsorpciju svjetlosti za fotosintezu?",
+    "answers": [
+      "klorofil"
+    ],
+    "explanation": "Klorofil apsorbira svjetlost potrebnu za fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8159-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "palindrom"
+    ],
+    "explanation": "Primjer palindroma je riječ 'radar'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8160-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Videoigre",
+    "focus": "lik Lara Croft",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "Kako se zove arheologinja i protagonistica serijala videoigara 'Tomb Raider'?",
+    "answers": [
+      "Lara Croft"
+    ],
+    "explanation": "Lara Croft prvi se put pojavila u igri iz 1996.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lara_Croft"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8161-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Brendovi",
+    "focus": "logotip Michelin",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koja marka automobilskih guma ima maskotu poznatu kao Bibendum?",
+    "answers": [
+      "Michelin"
+    ],
+    "explanation": "Bibendum je prepoznatljivi čovječuljak sastavljen od guma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Michelin_Man"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8162-20261122",
+    "createdAt": "2026-11-22T16:38:00+01:00",
+    "updatedAt": "2026-11-22T16:38:00+01:00",
+    "topic": "Fizika",
+    "focus": "mjerna jedinica otpora",
+    "difficulty": 3,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Po kojem je fizičaru nazvana SI jedinica električnog otpora, om?",
+    "answers": [
+      "Georg Simon Ohm",
+      "Ohm"
+    ],
+    "explanation": "Jedinica om nosi ime njemačkog fizičara Georga Simona Ohma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Georg_Ohm"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
