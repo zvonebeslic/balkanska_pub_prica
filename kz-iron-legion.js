@@ -6,7 +6,8 @@
  */
 (function(){
   "use strict";
-  const MIN_ZOOM=12, FW=224,FH=224,FRAMES=9,FRAME_MS=470;
+  const MIN_ZOOM=12, FRAMES=40,FRAME_MS=105;
+  let FW=224,FH=224;
   const EARTH=6371.0088, D2R=Math.PI/180, MAX_MOBILE=18, MAX_DESKTOP=36;
   // Raspored je namjerno vezan uz kopnene gradove i istraživačke postaje.
   // Četvrti podatak je približni polumjer disperzije u kilometrima.
@@ -275,7 +276,7 @@
   }
   function icon(w){
     return L.divIcon({className:"kz-iron-marker",
-      html:'<canvas class="kz-iron-canvas" width="224" height="224" aria-hidden="true"></canvas>',
+      html:'<canvas class="kz-iron-canvas" width="'+FW+'" height="'+FH+'" aria-hidden="true"></canvas>',
       iconSize:[w,w],iconAnchor:[w/2,w*.90]});
   }
   function generation(id){return Number(states.get(id)?.generation)||0;}
@@ -386,10 +387,34 @@
     pane.parentNode?.appendChild(pane);
     const img=new Image();
     img.onload=()=>{
-      if(img.naturalWidth!==FW*FRAMES||img.naturalHeight!==FH){
-        console.warn("KZ: invalid 9-frame robot atlas dimensions");return;
+      // Primarni format: četrdeset zasebno renderiranih 192×192 kadrova.
+      // Povratna kompatibilnost: iz starog 9-kadrovnog atlasa generira se
+      // jednokratno 40 međukadrova. Nakon zamjene izvornog WebP-a koristi
+      // se svih 40 originalnih renderiranih kadrova, bez interpoliranja.
+      if(img.naturalWidth===192*40&&img.naturalHeight===192){
+        FW=192;FH=192;sprite=img;
+      }else if(img.naturalWidth===224*9&&img.naturalHeight===224){
+        FW=224;FH=224;
+        const temp=document.createElement("canvas");
+        temp.width=FW*FRAMES;temp.height=FH;
+        const ctx=temp.getContext("2d",{alpha:true});
+        if(!ctx)return;
+        for(let i=0;i<FRAMES;i++){
+          const phase=i*9/FRAMES;
+          const from=Math.floor(phase),to=(from+1)%9,blend=phase-from;
+          ctx.globalAlpha=1-blend;
+          ctx.drawImage(img,from*FW,0,FW,FH,i*FW,0,FW,FH);
+          if(blend>0){
+            ctx.globalAlpha=blend;
+            ctx.drawImage(img,to*FW,0,FW,FH,i*FW,0,FW,FH);
+          }
+        }
+        ctx.globalAlpha=1;
+        sprite=temp;
+      }else{
+        console.warn("KZ: robot atlas must contain 40 frames of 192 px or legacy 9 frames of 224 px");return;
       }
-      sprite=img;ready=true;
+      ready=true;
       map.on("moveend zoomend",()=>{
         clearTimeout(pendingRefresh);
         pendingRefresh=setTimeout(refresh,90);
