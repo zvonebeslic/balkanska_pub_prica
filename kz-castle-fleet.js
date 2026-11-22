@@ -329,6 +329,19 @@
       window.dispatchEvent(new CustomEvent("kz:guardian-status",
         {detail:{states:data.states}}));
       setVisible();
+      // Ponoć Europe/Sarajevo automatski obnavlja 50 pokušaja
+      // čak i ako je igrač ostavio borbu otvorenom.
+      if(dialog&&!dialog.hidden&&quotaResetAt>0&&realClock()>=quotaResetAt){
+        quotaResetAt=0;quotaLeft=null;activeChallenge=null;
+        dialog.querySelector(".kz-fleet-question").replaceChildren();
+        quotaMessage();message("Novi dan: obnavljam 50 pokušaja.");
+        window.KZCastleRPC?.quota?.().then(q=>{
+          if(!dialog||dialog.hidden)return;
+          quotaLeft=Math.max(0,Number(q.remaining)||0);
+          quotaResetAt=Number(q.resets_at)||0;
+          quotaMessage();eligibility();
+        }).catch(e=>message(e.message||"Ne mogu obnoviti dnevne pokušaje."));
+      }
     }catch(e){
       if(!statusError){console.warn("KZ dvorci – stanje:",e);statusError=true;}
     }finally{fetching=false;}
@@ -353,7 +366,7 @@
   // GPS dozvola traži se tek nakon klika igrača.
   // Izvor lokacije je browser Geolocation API; poslužitelj ne vjeruje
   // koordinatama čuvara iz klijenta i ponovno izračunava njihov položaj.
-  let quotaLeft=null,busy=false;
+  let quotaLeft=null,busy=false,quotaResetAt=0;
   function monsterPosition(id){
     if(id>=2000&&id<13200)return window.KZIronLegion?.location(id)||null;
     return calculate(id,realClock()).point;
@@ -469,6 +482,7 @@
     window.KZCastleRPC?.quota?.().then(q=>{
       if(selected!==id)return;
       quotaLeft=Math.max(0,Number(q.remaining)||0);
+      quotaResetAt=Number(q.resets_at)||0;
       quotaMessage();eligibility();
     }).catch(err=>{
       if(selected===id)message(err.message||"Ne mogu provjeriti pokušaje.");
