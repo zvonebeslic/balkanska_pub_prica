@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-8243-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Dancing Queen izvođač",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Koji je švedski sastav 1976. objavio hit 'Dancing Queen'?",
+    "answers": [
+      "ABBA"
+    ],
+    "explanation": "Dancing Queen jedan je od najvećih hitova sastava ABBA.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dancing_Queen"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8244-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Sport",
+    "focus": "olimpijski sport curling",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U kojem se zimskom olimpijskom sportu kamen klizi po ledu, dok suigrači četkama utječu na njegovu putanju?",
+    "answers": [
+      "Curling",
+      "Karling"
+    ],
+    "explanation": "Curling se igra granitnim kamenjem i četkama na ledenoj podlozi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Curling"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8245-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Film",
+    "focus": "film Spirited Away redatelj",
+    "difficulty": 3,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je režirao animirani film 'Avanture male Chihiro' (Spirited Away), dobitnika Oscara za najbolji animirani film?",
+    "answers": [
+      "Hayao Miyazaki",
+      "Miyazaki"
+    ],
+    "explanation": "Hayao Miyazaki režirao je film studija Ghibli iz 2001.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Spirited_Away"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8246-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Slovenije Ljubljana",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Kroz koji glavni grad protječe rijeka Ljubljanica, a iznad starog dijela grada uzdiže se srednjovjekovni dvorac?",
+    "answers": [
+      "Ljubljana",
+      "Ljubljanu"
+    ],
+    "explanation": "Ljubljanica prolazi kroz slovensku prijestolnicu Ljubljanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8247-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Književnost",
+    "focus": "roman Ime ruže autor",
+    "difficulty": 3,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Redovnik William od Baskervillea istražuje tajanstvene smrti u romanu 'Ime ruže'. Tko je njegov autor?",
+    "answers": [
+      "Umberto Eco",
+      "Eco"
+    ],
+    "explanation": "Umberto Eco napisao je roman Ime ruže.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8248-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Biologija",
+    "focus": "mitohondrij proizvodnja ATP",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji stanični organel često nazivamo 'elektranom stanice' jer u njemu nastaje najveći dio ATP-a tijekom aerobnog disanja?",
+    "answers": [
+      "Mitohondrij",
+      "Mitohondriji"
+    ],
+    "explanation": "Mitohondriji sudjeluju u staničnom disanju i stvaranju ATP-a.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8249-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Povijest",
+    "focus": "Magna Carta 1215 kralj Ivan",
+    "difficulty": 3,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Godine 1215. engleski kralj Ivan bez Zemlje prihvatio je koji dokument koji je ograničio kraljevsku samovolju?",
+    "answers": [
+      "Magna Carta",
+      "Velika povelja sloboda"
+    ],
+    "explanation": "Magna Carta izdana je 1215. za vladavine kralja Ivana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Magna_Carta"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8250-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Tehnologija",
+    "focus": "QR kod izum Denso Wave",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv kojeg dvodimenzionalnog koda dolazi od engleskog izraza 'Quick Response'?",
+    "answers": [
+      "QR kod",
+      "QR"
+    ],
+    "explanation": "QR je kratica za Quick Response; kod je razvijen u Japanu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QR_code"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8251-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Kemija",
+    "focus": "natrijev bikarbonat soda bikarbona",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Kad u receptu piše 'soda bikarbona', koji se kemijski spoj zapravo dodaje tijestu?",
+    "answers": [
+      "Natrijev hidrogenkarbonat",
+      "Natrijev bikarbonat",
+      "NaHCO3"
+    ],
+    "explanation": "Soda bikarbona uobičajen je naziv za natrijev hidrogenkarbonat.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium_bicarbonate"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8252-20261122",
+    "createdAt": "2026-11-22T23:41:43+01:00",
+    "updatedAt": "2026-11-22T23:41:43+01:00",
+    "topic": "Astronomija",
+    "focus": "Jupiterov mjesec Europa ocean",
+    "difficulty": 3,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji Jupiterov mjesec ima ledenu površinu ispod koje znanstvenici očekuju globalni ocean tekuće vode?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "Europa je ledeni Jupiterov mjesec s dokazima za podzemni ocean.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/moons/europa/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
