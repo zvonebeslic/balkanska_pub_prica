@@ -6,7 +6,7 @@
 (function(){
   "use strict";
   const SPEED_KM_SEC=1/1800, EARTH_KM=6371.0088, RAD=Math.PI/180;
-  const FRAME_W=224, FRAME_H=240, FRAMES=9, MIN_ZOOM=12;
+  const FRAME_W=224, FRAME_H=240, FRAMES=9, MIN_ZOOM=12, GAIT_MS=310;
   const MAX_RENDER_MOBILE=26, MAX_RENDER_DESKTOP=44;
   const START_EPOCH=Date.UTC(2026,10,22,17,0,0); // ista pocetna vremenska referenca za sve igrace
   const WAYPOINTS=[[0,0],[200,0],[400,0],[500,0],[525,22],[550,-22],
@@ -147,6 +147,7 @@
     return {id:id,name:seed.name,region:seed.region,lat:p.lat,lng:p.lng};
   }
   let map=null,sprite=null,pane=null,enabled=true,ready=false,selected=null;
+  let gps=null,gpsWatch=null,activeChallenge=null,gpsStatus="GPS nije uključen.";
   let state=new Map(),kingdomCount=0,timeOffset=0,visible=new Map();
   let refreshTimer=0,statusTimer=0,frameTimer=0,fetching=false,button=null,dialog=null;
   let statusError=false,cache=new Map(),baseRouteCache=new Map();
@@ -158,15 +159,18 @@
   function makeRoute(c,gen,cycle){
     const key=c.id+":"+gen+":"+cycle;
     if(cache.has(key))return cache.get(key);
-    const start=spawn(c,gen);
-    const initial=hash(c.id+1,gen*479+1)*360;
+    const server=state.get(c.id);
+    const start=Number.isFinite(Number(server?.start_lat)) && server?.start_lat!==null &&
+      Number.isFinite(Number(server?.start_lng)) && server?.start_lng!==null
+      ? {lat:Number(server.start_lat),lng:Number(server.start_lng)} : spawn(c,gen);
+    const initial=server?.route_bearing!==null && Number.isFinite(Number(server?.route_bearing))
+      ? Number(server.route_bearing) : hash(c.id+1,gen*479+1)*360;
     // Na polovima uglavnom idi prema ekvatoru kako Web Mercator
     // ne bi sakrio dvorce iza granice prikaza karte (oko ±85°).
     const baseBearing=Math.abs(start.lat)>70
       ? (start.lat>0?180:0)+(hash(c.id,gen+429)-.5)*92
       : initial;
-    const b=norm(baseBearing+
-      cycle*(3+hash(c.id,cycle+519)*8)*(hash(c.id+5,cycle)>.5?-1:1));
+    const b=norm(baseBearing+cycle*7*(c.id%2===0?1:-1));
     const stops=WAYPOINTS.map(function(t){
       const p=go(start,b,t[0]);return t[1]?go(p,b+90,t[1]):p;
     });
@@ -212,8 +216,10 @@
   function drawFrame(entry,trip){
     const cv=entry.marker.getElement()?.querySelector("canvas");
     if(!cv)return;
+    // Hod je samostalna animacija: 9 kadrova u 2,8 s bez obzira
+    // putuje li dvorac 1 km za 30 min ili trenutno stoji.
     const frame=window.matchMedia("(prefers-reduced-motion: reduce)").matches?
-      0:Math.floor(trip.walk/5)%FRAMES;
+      0:Math.floor((Date.now()+trip.id*137)/GAIT_MS)%FRAMES;
     const mirror=Math.sin(trip.bearing*RAD)<-.1;
     if(entry.frame===frame&&entry.mirror===mirror)return;
     const ctx=cv.getContext("2d",{alpha:true});
@@ -330,12 +336,16 @@
     if(!result||Number(result.castle_id)!==id)return;
     const prev=state.get(id)||{};
     state.set(id,{...prev,id:id, generation:Number(result.generation)||0,
-      hp:Number(result.hp)||100,born_at:Number(result.born_at)||realClock()});
+      hp:Number(result.hp)||100,born_at:Number(result.born_at)||realClock(),
+      start_lat:result.start_lat??prev.start_lat??null,
+      start_lng:result.start_lng??prev.start_lng??null,
+      route_bearing:result.route_bearing??prev.route_bearing??null});
     if(result.defeated)cache.clear();
     if(id>=2000&&id<13200){
       window.dispatchEvent(new CustomEvent("kz:guardian-state",
         {detail:{state:{id:id,generation:Number(result.generation)||0,
-          hp:Number(result.hp)||100,born_at:Number(result.born_at)||realClock()}}}));
+          hp:Number(result.hp)||100,born_at:Number(result.born_at)||realClock(),
+          start_lat:result.start_lat??null,start_lng:result.start_lng??null}}}));
     }
     setVisible();
   }
