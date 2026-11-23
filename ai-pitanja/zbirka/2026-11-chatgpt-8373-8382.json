@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-8373-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Glazba",
+    "focus": "David Bowie Ziggy Stardust",
+    "difficulty": 2,
+    "styleId": 29,
+    "styleDescription": "Kreni od stvarnog imena i traži pseudonim",
+    "question": "Pod kojim je umjetničkim imenom David Robert Jones postao svjetska rock zvijezda?",
+    "answers": [
+      "David Bowie",
+      "Bowie"
+    ],
+    "explanation": "David Robert Jones koristio je umjetničko ime David Bowie.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_Bowie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8374-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Nogomet",
+    "focus": "Maracanazo Urugvaj",
+    "difficulty": 3,
+    "styleId": 65,
+    "styleDescription": "Predstavi povijesnu odluku kroz njezinu posljedicu",
+    "question": "Poraz domaćina Brazila na Maracani 1950. dobio je nadimak 'Maracanazo'. Koja je reprezentacija pobijedila Brazil?",
+    "answers": [
+      "Urugvaj",
+      "Uruguay"
+    ],
+    "explanation": "Urugvaj je pobijedio Brazil 2:1 u završnoj utakmici SP-a 1950.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maracanazo"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8375-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Film",
+    "focus": "Jurski park Spielberg",
+    "difficulty": 1,
+    "styleId": 54,
+    "styleDescription": "Poveži dva filma kroz istu ulogu ili predmet",
+    "question": "Tko je režirao 'Jurski park' iz 1993. i 'Ralje' iz 1975.?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Spielberg je režirao oba filma.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Steven_Spielberg"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8376-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ ruža",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojoj se knjizi dječak s malog planeta brine za ružu i susreće lisicu?",
+    "answers": [
+      "Mali princ",
+      "Le Petit Prince",
+      "The Little Prince"
+    ],
+    "explanation": "Mali princ djelo je Antoinea de Saint-Exupéryja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8377-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Zemljopis",
+    "focus": "Madagaskar Mozambički kanal",
+    "difficulty": 2,
+    "styleId": 95,
+    "styleDescription": "Opiši granicu dviju geografskih cjelina i traži prolaz",
+    "question": "Koji morski kanal odvaja otok Madagaskar od afričkog kopna?",
+    "answers": [
+      "Mozambički kanal",
+      "Mozambique Channel"
+    ],
+    "explanation": "Mozambički kanal dio je Indijskog oceana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mozambique_Channel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8378-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Životinje",
+    "focus": "koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski tobolčar najveći dio prehrane temelji na listovima eukaliptusa?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koale se hrane pretežno lišćem eukaliptusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8379-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Kemija",
+    "focus": "živa tekući metal",
+    "difficulty": 2,
+    "styleId": 37,
+    "styleDescription": "Opiši fizičko svojstvo i traži predmet iz domaćinstva",
+    "question": "Koji je metal pri uobičajenoj sobnoj temperaturi tekuć i nekad se koristio u toplomjerima?",
+    "answers": [
+      "Živa",
+      "Merkur",
+      "Mercury"
+    ],
+    "explanation": "Živa je metal koji je tekuć pri sobnoj temperaturi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mercury_(element)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8380-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Povijest",
+    "focus": "Berlinski zid 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Prosvjedi i političke promjene u Istočnoj Europi otvorili su put rušenju Berlinskog zida. Koje se godine dogodilo njegovo otvaranje?",
+    "answers": [
+      "1989.",
+      "1989"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8381-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Tehnologija",
+    "focus": "USB kratica",
+    "difficulty": 2,
+    "styleId": 99,
+    "styleDescription": "Završi pitanjem čiji je odgovor poznata kratica",
+    "question": "Koja troslovna kratica označava standard 'Universal Serial Bus' za povezivanje uređaja?",
+    "answers": [
+      "USB"
+    ],
+    "explanation": "USB znači Universal Serial Bus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/USB"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8382-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Gastronomija",
+    "focus": "sushi nori alga",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "Na bambusovoj podlozi rižu i nadjev zamotaš u tamni list jestive alge. Kako se zove ta alga?",
+    "answers": [
+      "Nori"
+    ],
+    "explanation": "Nori je naziv za jestive sušene alge koje se koriste u sushiju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nori"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
