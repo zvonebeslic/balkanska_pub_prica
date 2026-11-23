@@ -297,75 +297,7 @@
 
   // Ručno crtani, originalni SVG likovi, bez vanjskih animacijskih biblioteka.
   // Ovaj sloj je samo dekoracija i ne sudjeluje u osvajanjima ili GPS-u.
-  const lifeSprites = {
-    dragon: '<svg viewBox="0 0 110 104" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+
-      '<ellipse cx="54" cy="95" rx="32" ry="6" fill="#061723" opacity=".35"/>'+
-      '<g class="life-wing life-wing-left"><path d="M53 43Q19 3 5 30L2 52Q19 39 23 62L44 60Z" fill="#24a99b" stroke="#0b4e50" stroke-width="3"/><path d="M50 44L8 32M43 59L22 50" stroke="#a5f9ba" stroke-width="2" fill="none"/></g>'+
-      '<g class="life-wing life-wing-right"><path d="M62 40Q92 2 108 26L107 55Q93 39 90 61L66 59Z" fill="#249b92" stroke="#0a4a4b" stroke-width="3"/><path d="M65 44L100 29M67 58L93 47" stroke="#91e6b1" stroke-width="2" fill="none"/></g>'+
-      '<path d="M40 68Q13 84 26 94Q8 95 12 82Q14 60 43 56Z" fill="#0e9e75" stroke="#07564b" stroke-width="3"/>'+
-      '<ellipse cx="56" cy="64" rx="29" ry="30" fill="#1cbb81" stroke="#065e53" stroke-width="3"/>'+
-      '<ellipse cx="60" cy="73" rx="15" ry="18" fill="#b8f0ab"/>'+
-      '<path d="M33 43L26 23L45 35L53 20L65 38L83 24L82 46" fill="#e7b75a" stroke="#9e7532" stroke-width="2"/>'+
-      '<ellipse cx="57" cy="43" rx="26" ry="22" fill="#2ed79a" stroke="#07534a" stroke-width="3"/>'+
-      '<ellipse cx="69" cy="47" rx="18" ry="12" fill="#28c58d"/>'+
-      '<circle cx="49" cy="41" r="6" fill="#f2fff1"/><circle cx="51" cy="41" r="3" fill="#102a33"/>'+
-      '<circle cx="76" cy="49" r="2.5" fill="#0b6358"/><path d="M80 55q-7 7-15 0" stroke="#084f48" stroke-width="2.5" fill="none"/>'+
-      '<path d="M39 86l-10 9 14-2M70 87l5 8 12-3" stroke="#064e49" stroke-width="5" stroke-linecap="round" fill="none"/>'+
-      '<g class="life-flame"><path d="M91 52Q111 43 103 61Q111 57 107 71Q89 70 85 62Z" fill="#f7b84c" stroke="#e77e29" stroke-width="2"/><path d="M97 56q12 5 5 13" fill="#ffed9a"/></g>'+
-      '</svg>',
-    knight: '<svg viewBox="0 0 100 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+
-      '<ellipse cx="53" cy="103" rx="30" ry="6" fill="#071323" opacity=".4"/>'+
-      '<path class="life-cape" d="M31 47Q7 56 23 97L55 90L72 55Z" fill="#195f94" stroke="#0c335f" stroke-width="3"/>'+
-      '<g class="life-leg life-leg-left"><path d="M39 82L35 98L26 102" stroke="#abbccd" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M23 101h18" stroke="#19263e" stroke-width="9" stroke-linecap="round"/></g>'+
-      '<g class="life-leg life-leg-right"><path d="M61 83L66 98L79 100" stroke="#aab9c9" stroke-width="11" stroke-linecap="round" fill="none"/><path d="M62 102h21" stroke="#19263e" stroke-width="9" stroke-linecap="round"/></g>'+
-      '<rect x="31" y="47" width="40" height="43" rx="13" fill="#b4cbd6" stroke="#345671" stroke-width="3"/>'+
-      '<path d="M41 53L61 53L64 86L40 86Z" fill="#5d87a0"/><path d="M51 56v23M43 69h16" stroke="#e9d18d" stroke-width="5"/>'+
-      '<g class="life-sword"><path d="M75 46L92 12" stroke="#d7eaff" stroke-width="5"/><path d="M85 33l-15-7" stroke="#e9bd64" stroke-width="5" stroke-linecap="round"/><path d="M75 43l-10 22" stroke="#d8dde4" stroke-width="9" stroke-linecap="round"/></g>'+
-      '<path d="M31 51l-12 15" stroke="#c4d4dc" stroke-width="11" stroke-linecap="round"/>'+
-      '<path d="M16 55q-14 12 6 29q18-12 10-25Z" fill="#e4c675" stroke="#6b5b3b" stroke-width="3"/>'+
-      '<path d="M27 32q-2-24 23-25q26 0 24 25l-3 19H32Z" fill="#c0d1dc" stroke="#3f5e70" stroke-width="3"/>'+
-      '<path d="M43 15L48 2L55 16" fill="#e9bd61" stroke="#9f753d" stroke-width="2"/>'+
-      '<path d="M31 28L71 28L67 44L35 44Z" fill="#466b7e"/><path d="M40 34h23" stroke="#102e3b" stroke-width="7" stroke-linecap="round"/>'+
-      '<circle cx="45" cy="34" r="2" fill="#e3f9ff"/><circle cx="57" cy="34" r="2" fill="#e3f9ff"/>'+
-      '</svg>',
-    owl: '<svg viewBox="0 0 105 111" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+
-      '<ellipse cx="54" cy="101" rx="27" ry="6" fill="#091c1d" opacity=".36"/>'+
-      '<path d="M18 95h71" stroke="#6e4e36" stroke-width="8" stroke-linecap="round"/>'+
-      '<path d="M30 39L27 15L46 26L55 15L70 26L86 14L83 44" fill="#a65e36" stroke="#65391e" stroke-width="3"/>'+
-      '<ellipse cx="56" cy="61" rx="35" ry="39" fill="#ab6a3f" stroke="#6a4429" stroke-width="3"/>'+
-      '<ellipse cx="55" cy="69" rx="25" ry="26" fill="#e5b779"/>'+
-      '<g class="life-owl-wing-left"><path d="M27 53Q2 44 16 84Q29 94 34 70Z" fill="#825033" stroke="#663b29" stroke-width="2"/></g>'+
-      '<g class="life-owl-wing-right"><path d="M79 53Q102 45 93 83Q81 95 76 70Z" fill="#825033" stroke="#663b29" stroke-width="2"/></g>'+
-      '<ellipse cx="43" cy="46" rx="17" ry="19" fill="#fff0cf"/><ellipse cx="68" cy="46" rx="17" ry="19" fill="#fff0cf"/>'+
-      '<g class="life-blink"><circle cx="44" cy="48" r="7" fill="#2f483f"/><circle cx="68" cy="48" r="7" fill="#2f483f"/><circle cx="46" cy="45" r="2.5" fill="#fff"/><circle cx="70" cy="45" r="2.5" fill="#fff"/></g>'+
-      '<path d="M50 57l6 10l7-10Z" fill="#edba57" stroke="#8b673b" stroke-width="2"/>'+
-      '<path d="M43 92v9M68 92v9" stroke="#d1a54d" stroke-width="5"/>'+
-      '</svg>',
-    wizard: '<svg viewBox="0 0 102 113" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+
-      '<ellipse cx="49" cy="105" rx="30" ry="6" fill="#071420" opacity=".3"/>'+
-      '<path d="M27 55Q19 74 14 100L86 100Q71 65 70 55" fill="#745cb7" stroke="#453576" stroke-width="3"/>'+
-      '<path d="M48 55v43" stroke="#ead2a0" stroke-width="4"/><path d="M21 94h58" stroke="#b292d7" stroke-width="3"/>'+
-      '<path class="life-wizard-arm" d="M67 63L82 50" stroke="#a77acc" stroke-width="13" stroke-linecap="round"/>'+
-      '<path d="M84 48L88 6" stroke="#7b5537" stroke-width="5" stroke-linecap="round"/>'+
-      '<path class="life-star" d="M88 3l4 9l10 4l-10 4l-4 9l-4-9l-10-4l10-4Z" fill="#fcdf88" stroke="#d6a541" stroke-width="1.5"/>'+
-      '<circle cx="49" cy="41" r="24" fill="#f3cfaa" stroke="#9c6851" stroke-width="3"/>'+
-      '<path d="M32 47Q27 83 49 85Q69 79 68 46Q61 61 51 55Q39 63 32 47Z" fill="#f3f3f5" stroke="#a8c6df" stroke-width="2"/>'+
-      '<circle cx="40" cy="43" r="3" fill="#27313d"/><circle cx="57" cy="43" r="3" fill="#27313d"/>'+
-      '<path d="M40 53q9 5 16 0" stroke="#9c6650" stroke-width="2" fill="none"/>'+
-      '<path d="M17 36Q38 6 51 -1Q68 3 81 35Z" fill="#553a9c" stroke="#d3b4f5" stroke-width="3"/>'+
-      '<ellipse cx="49" cy="34" rx="38" ry="8" fill="#7d5ac9" stroke="#d3b4f5" stroke-width="3"/>'+
-      '<circle cx="54" cy="21" r="5" fill="#f5d37b"/>'+
-      '</svg>',
-    banner: '<svg viewBox="0 0 76 101" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+
-      '<ellipse cx="37" cy="94" rx="24" ry="5" fill="#05111b" opacity=".3"/>'+
-      '<path d="M17 91V7" stroke="#d9bc79" stroke-width="6" stroke-linecap="round"/>'+
-      '<path class="life-flag" d="M21 12Q43 2 62 15L72 38Q43 33 21 45Z" fill="var(--life-color,#49d99e)" stroke="#f7dea8" stroke-width="3"/>'+
-      '<path d="M25 23L34 20L42 23L42 33L34 40L26 34Z" fill="#f6e7b9" stroke="#846638" stroke-width="1.2"/>'+
-      '<path d="M34 22v13M28 28h12" stroke="#bb8e40" stroke-width="2"/>'+
-      '<path d="M7 93h25" stroke="#d9bc79" stroke-width="6" stroke-linecap="round"/>'+
-      '<circle cx="17" cy="5" r="5" fill="#efd78b"/>'+
-      '</svg>'
-  };
+  const lifeSprites = window.KZWorldRegistry.svgSprites;
 
   function lifeMarker(kind, latitudeLongitude, color) {
     const art=lifeSprites[kind];
