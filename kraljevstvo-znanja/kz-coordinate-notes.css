@@ -52,3 +52,11 @@
   .kz-note-shortcuts button{flex:1}
   .kz-note-item{flex-wrap:wrap}.kz-note-item-actions{flex-direction:row}
 }
+
+/* Novi gumb ne smije gurati kartu izvan zaslona na mobitelu. */
+.map-top{flex-wrap:wrap}
+.map-top .map-actions{flex-wrap:wrap;justify-content:flex-end;min-width:0}
+@media(max-width:620px){
+  .map-top .map-actions{width:100%;justify-content:center;gap:.3rem}
+  .map-top .map-actions .minor{font-size:.65rem;padding:.38rem .5rem}
+}
