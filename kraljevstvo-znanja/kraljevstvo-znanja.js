@@ -297,25 +297,11 @@
 
   // Ručno crtani, originalni SVG likovi, bez vanjskih animacijskih biblioteka.
   // Ovaj sloj je samo dekoracija i ne sudjeluje u osvajanjima ili GPS-u.
-  const lifeSprites = window.KZWorldRegistry.svgSprites;
-
-  function lifeMarker(kind, latitudeLongitude, color) {
-    const art=lifeSprites[kind];
-    if(!art || !lifeLayer)return;
-    const html='<span class="kz-life-figure kz-life-'+kind+
-      '" style="--life-color:'+safe(color||"#48ddb0")+'">'+
-      '<span class="kz-life-motion">'+art+'</span></span>';
-    return L.marker(latitudeLongitude,{
-      icon:L.divIcon({className:"kz-life-marker",html,iconSize:[1,1],iconAnchor:[0,0]}),
-      interactive:false,keyboard:false,zIndexOffset:820
-    }).addTo(lifeLayer);
-  }
   function paintLivingWorld() {
     if (!lifeLayer || !map) return;
     lifeLayer.clearLayers();
-    // Spriteovi su rasterizirani WebP kadrovi (bez SVG prikaza).
-    // Ovo ostavlja izvorne teritorije, borbe i markere nepromijenjenima.
-    window.KZWorldSprites?.refresh(map, lifeEnabled);
+    // Ostala su samo tri posebna sustava: šume, dvorci i Željezni.
+    // Njihovi moduli samostalno prate uključivanje "Živog svijeta".
   }
   function toggleLivingWorld() {
     lifeEnabled=!lifeEnabled;
