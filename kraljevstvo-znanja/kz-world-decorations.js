@@ -8,7 +8,7 @@
   if(!registry)return;
   const KINDS=["dragon","knight","owl","wizard","banner"];
   const LAT_STEP=0.10,LON_STEP=0.14,MIN_ZOOM=10,MAX_ZOOM=18;
-  const loaded=new Map(),visible=new Map();
+  const loaded=new Map(),visible=new Map(),requested=new Set();
   let map=null,layer=null,pane=null,enabled=true,raf=0,refreshTimer=0,prevPaint=0;
 
   function hash(a,b){
@@ -63,11 +63,30 @@
     results.sort((a,b)=>a.rank-b.rank);
     return results;
   }
+  function ensureSprites(){
+    // Do not decode 40 MB of decoration frames while viewing the whole planet.
+    if(!map||!enabled||map.getZoom()<MIN_ZOOM||map.getZoom()>MAX_ZOOM)return;
+    for(const kind of KINDS){
+      if(requested.has(kind))continue;
+      const source=registry.source(kind);
+      if(!source)continue;
+      requested.add(kind);
+      const img=new Image();
+      img.onload=()=>{
+        if(!registry.layout(kind,img))return;
+        loaded.set(kind,img);
+        refresh(map,enabled);
+      };
+      img.onerror=()=>console.warn("KZ: 80-kadrovna dekoracija nije dostupna: "+kind);
+      img.src=source;
+    }
+  }
   function refresh(m,on){
     if(m&&!map)mount(m);
     if(!map||!layer)return;
     enabled=on!==false;
     const zoom=map.getZoom();
+    ensureSprites();
     if(!enabled||zoom<MIN_ZOOM||zoom>MAX_ZOOM){
       for(const entry of visible.values())layer.removeLayer(entry.marker);
       visible.clear();
@@ -114,18 +133,6 @@
     pane.style.zIndex="1200";
     pane.style.pointerEvents="none";
     layer=L.layerGroup().addTo(map);
-    for(const kind of KINDS){
-      const source=registry.source(kind);
-      if(!source)continue;
-      const img=new Image();
-      img.onload=()=>{
-        if(!registry.layout(kind,img))return;
-        loaded.set(kind,img);
-        refresh(map,enabled);
-      };
-      img.onerror=()=>console.warn("KZ: 80-kadrovna dekoracija nije dostupna: "+kind);
-      img.src=source;
-    }
     map.on("moveend zoomend",()=>{
       clearTimeout(refreshTimer);
       refreshTimer=setTimeout(()=>refresh(map,enabled),100);
