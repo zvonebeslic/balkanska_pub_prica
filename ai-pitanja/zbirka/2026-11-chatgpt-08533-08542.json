@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8533-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Smooth Criminal",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "U čijoj pjesmi 'Smooth Criminal' iz 1987. čujemo pitanje je li Annie dobro?",
+    "answers": [
+      "Michael Jackson"
+    ],
+    "explanation": "Michael Jackson je pjesmu objavio na albumu Bad.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Smooth_Criminal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8534-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion Anfield",
+    "difficulty": 1,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji engleski nogometni klub igra domaće utakmice na stadionu Anfield?",
+    "answers": [
+      "Liverpool"
+    ],
+    "explanation": "Liverpool igra na Anfieldu od osnutka kluba 1892.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anfield"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8535-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Film",
+    "focus": "film Truman Show glavni lik",
+    "difficulty": 2,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Jim Carrey glumi čovjeka koji ne zna da mu je čitav život televizijska emisija. Kako se zove taj film?",
+    "answers": [
+      "Trumanov show"
+    ],
+    "explanation": "The Truman Show premijerno je prikazan 1998.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Truman_Show"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8536-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Književnost",
+    "focus": "roman Ime ruže autor",
+    "difficulty": 3,
+    "styleId": 42,
+    "styleDescription": "Kreni od marke proizvoda, ali traži njezina osnivača",
+    "question": "Tko je napisao povijesni detektivski roman 'Ime ruže', smješten u srednjovjekovni samostan?",
+    "answers": [
+      "Umberto Eco"
+    ],
+    "explanation": "Talijanski književnik Umberto Eco objavio je roman 1980.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8537-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka kroz Budimpeštu",
+    "difficulty": 1,
+    "styleId": 49,
+    "styleDescription": "Opiši morsku struju i traži ocean ili područje",
+    "question": "Na obalama koje rijeke leže Budim i Pešta, dvije povijesne polovice Budimpešte?",
+    "answers": [
+      "Dunav"
+    ],
+    "explanation": "Dunav protječe kroz glavni grad Mađarske.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Budapest"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8538-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Životinje",
+    "focus": "ptica kiwi Novi Zeland",
+    "difficulty": 2,
+    "styleId": 56,
+    "styleDescription": "Postavi pitanje u obliku tko je bio prvi, s preciznim kriterijem",
+    "question": "Koja novozelandska ptica ne leti, a po njoj je nastao i nadimak za stanovnike te zemlje?",
+    "answers": [
+      "Kivi"
+    ],
+    "explanation": "Kivi je endemska ptica Novog Zelanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kiwi_(bird)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8539-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Kemija",
+    "focus": "simbol kemijskog elementa Fe",
+    "difficulty": 1,
+    "styleId": 63,
+    "styleDescription": "Kreni od poznate pjesme i traži spomenuto mjesto",
+    "question": "Kada na nalazu ili u kemijskoj formuli vidite oznaku Fe, o kojem je metalu riječ?",
+    "answers": [
+      "Željezo"
+    ],
+    "explanation": "Fe dolazi od latinskog naziva ferrum.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Iron"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8540-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Povijest",
+    "focus": "Napoleon progonstvo Elba",
+    "difficulty": 3,
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Na koji je sredozemni otok Napoleon bio prognan 1814., prije svojeg povratka na vlast?",
+    "answers": [
+      "Elba"
+    ],
+    "explanation": "Napoleon je 1815. napustio Elbu i započeo razdoblje Sto dana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Elba"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8541-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth ime kralj Harald",
+    "difficulty": 3,
+    "styleId": 77,
+    "styleDescription": "Opiši način gradnje i pitaj arhitektonski stil",
+    "question": "Po kojem je danskom kralju iz 10. stoljeća nazvana bežična tehnologija Bluetooth?",
+    "answers": [
+      "Harald Modrozubi"
+    ],
+    "explanation": "Naziv Bluetooth potječe od nadimka kralja Haralda I.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8542-20261123",
+    "createdAt": "2026-11-23T16:37:03+01:00",
+    "updatedAt": "2026-11-23T16:37:03+01:00",
+    "topic": "Gastronomija",
+    "focus": "osnovni sastojak humusa",
+    "difficulty": 1,
+    "styleId": 84,
+    "styleDescription": "Opiši omiljen dječji predmet preko godine nastanka",
+    "question": "Koja je mahunarka glavni sastojak namaza humus, uz tahini, limun i češnjak?",
+    "answers": [
+      "Slanutak"
+    ],
+    "explanation": "Humus se tradicionalno priprema od kuhanog slanutka.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
