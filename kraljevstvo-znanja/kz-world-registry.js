@@ -112,8 +112,14 @@
     const jitterLon=(hash(id,g+311)-.5)*.65;
     const jitterLat=(hash(id,g+717)-.5)*.65;
     const sinLat=-edge+(cell[0]+.5+jitterLat)*2*edge/rows;
-    return {lat:Math.asin(sinLat)*180/Math.PI,
+    const point={lat:Math.asin(sinLat)*180/Math.PI,
       lng:-180+(cell[1]+.5+jitterLon)*360/cols};
+    // Jitter ne smije gurnuti kopnenu ikonu preko ruba konture.
+    if(!isLand(point.lng,point.lat)){
+      return {lat:Math.asin(-edge+(cell[0]+.5)*2*edge/rows)*180/Math.PI,
+        lng:-180+(cell[1]+.5)*360/cols};
+    }
+    return point;
   }
   function info(id){return TYPES[id]||null;}
   function source(id){
