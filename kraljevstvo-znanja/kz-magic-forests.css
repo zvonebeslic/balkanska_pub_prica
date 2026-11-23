@@ -1,5 +1,5 @@
 /* Čarobna šuma — SAMO originalni druidov video i poster, bez emoji stabala.
- * Svaki originalni objekt rezervira 3 x 5 kvadrata = 300 m².
+ * Svaki objekt zauzima 4 x 5 blokova = 20 kvadrata = 400 m².
  */
 #kingdom-map .leaflet-pane.kz-forest-pane{
   z-index:1260!important;pointer-events:none!important;
@@ -11,14 +11,15 @@
   text-align:center;user-select:none;
 }
 #kingdom-map .kz-forest-mini-frame{
-  display:block;position:relative;width:100%;aspect-ratio:400/346;
+  display:block;position:relative;width:100%;height:100%;aspect-ratio:auto;
   pointer-events:none;overflow:visible!important;
   filter:drop-shadow(0 3px 4px rgba(5,15,10,.65));
 }
 #kingdom-map .kz-forest-mini-image,
 #kingdom-map .kz-forest-mini-video{
   position:absolute;inset:0;width:100%;height:100%;
-  object-fit:contain;pointer-events:none!important;
+  /* Ispunjava svih 20 blokova, umjesto dosadašnje trake od 9-15. */
+  object-fit:fill;pointer-events:none!important;
   border:0;background:transparent!important;
 }
 #kingdom-map .kz-forest-mini-video{z-index:1}
@@ -39,7 +40,7 @@
 #kingdom-map .kz-forest-pane video,
 #kingdom-map .kz-forest-pane img{
   background:transparent!important;pointer-events:none;
-  image-rendering:auto;object-fit:contain;
+  image-rendering:auto;object-fit:fill;
 }
 .map-actions .kz-world-locate{white-space:nowrap}
 @media(max-width:620px){
