@@ -1,22 +1,50 @@
-/* Čarobne šume: 15 blokova (300 m²) u zajedničkoj svjetskoj mreži. */
-#kingdom-map .leaflet-pane.kz-forest-pane{z-index:1260!important;pointer-events:none!important}
+/* Čarobna šuma — SAMO originalni druidov video i poster, bez emoji stabala.
+ * Svaki originalni objekt rezervira 3 x 5 kvadrata = 300 m².
+ */
+#kingdom-map .leaflet-pane.kz-forest-pane{
+  z-index:1260!important;pointer-events:none!important;
+}
 #kingdom-map .kz-forest-map-marker{
-  background:transparent!important;border:0!important;pointer-events:auto!important;
-  cursor:pointer;text-align:center;overflow:visible;
+  background:transparent!important;border:0!important;
+  pointer-events:auto!important;cursor:pointer;
+  box-shadow:none!important;overflow:visible!important;
+  text-align:center;user-select:none;
 }
-#kingdom-map .kz-forest-map-emoji{
-  display:block;font-size:25px;line-height:34px;white-space:nowrap;
-  letter-spacing:-11px;transform:translateX(-6px);
-  filter:drop-shadow(0 3px 4px rgba(0,12,8,.75));
+#kingdom-map .kz-forest-mini-frame{
+  display:block;position:relative;width:100%;aspect-ratio:400/346;
+  pointer-events:none;overflow:visible!important;
+  filter:drop-shadow(0 3px 4px rgba(5,15,10,.65));
 }
+#kingdom-map .kz-forest-mini-image,
+#kingdom-map .kz-forest-mini-video{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:contain;pointer-events:none!important;
+  border:0;background:transparent!important;
+}
+#kingdom-map .kz-forest-mini-video{z-index:1}
 #kingdom-map .kz-forest-map-name{
-  display:block;width:max-content;max-width:125px;margin:0 auto;padding:2px 6px;
-  border-radius:6px;background:rgba(7,39,31,.92);border:1px solid #9bd6ab;
-  color:#eaffdc;font:700 10px/1.3 system-ui,sans-serif;
-  opacity:0;transform:translateY(-4px);
+  display:block;position:relative;z-index:3;
+  width:max-content;max-width:135px;margin:1px auto 0;
+  padding:3px 7px;border-radius:7px;
+  color:#f1ffe5;background:rgba(7,38,25,.94);
+  border:1px solid rgba(147,216,153,.8);
+  font:700 10px/1.28 system-ui,sans-serif;
+  opacity:0;transform:translateY(-3px);
+  box-shadow:0 2px 5px rgba(0,0,0,.32);
 }
 #kingdom-map .kz-forest-map-marker:hover .kz-forest-map-name,
-#kingdom-map .kz-forest-map-marker:focus-within .kz-forest-map-name{opacity:1}
-#kingdom-map .kz-forest-pane video{background:transparent!important;pointer-events:none!important}
+#kingdom-map .kz-forest-map-marker:focus-within .kz-forest-map-name{
+  opacity:1;
+}
+#kingdom-map .kz-forest-pane video,
+#kingdom-map .kz-forest-pane img{
+  background:transparent!important;pointer-events:none;
+  image-rendering:auto;
+}
 .map-actions .kz-world-locate{white-space:nowrap}
-@media(max-width:620px){.map-actions .kz-world-locate{font-size:.65rem;padding:6px 9px}}
+@media(max-width:620px){
+  .map-actions .kz-world-locate{font-size:.65rem;padding:6px 9px}
+}
+@media(prefers-reduced-motion:reduce){
+  #kingdom-map .kz-forest-mini-video{display:none!important}
+}
