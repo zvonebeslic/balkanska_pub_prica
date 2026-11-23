@@ -1,0 +1,228 @@
+[
+  {
+    "id": "chatgpt10000-8323-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Astronomija",
+    "focus": "Venera najtopliji planet",
+    "difficulty": 2,
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Iako je Merkur bliži Suncu, koji je planet zbog snažnog stakleničkog učinka najtopliji u Sunčevu sustavu?",
+    "answers": [
+      "Venera",
+      "Veneri"
+    ],
+    "explanation": "Venera ima najvišu prosječnu temperaturu površine među planetima.",
+    "sources": [
+      "https://science.nasa.gov/venus/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8324-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Sport",
+    "focus": "badminton loptica perje",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "U kojem se sportu reketom udara lagana loptica s pernatim ili sintetičkim stošcem?",
+    "answers": [
+      "Badminton"
+    ],
+    "explanation": "Badminton se igra reketom i posebnom lopticom, odnosno shuttlecockom.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Badminton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8325-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Televizija",
+    "focus": "Simpsoni Springfield",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "U kojem izmišljenom američkom gradu žive Homer, Marge, Bart, Lisa i Maggie?",
+    "answers": [
+      "Springfield"
+    ],
+    "explanation": "Obitelj Simpson živi u izmišljenom Springfieldu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Simpsons"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8326-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Guernica Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski umjetnik naslikao antiratnu 'Guernicu' 1937. godine?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "'Guernicu' je naslikao Pablo Picasso.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8327-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Medicina",
+    "focus": "stetoskop slušanje",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji liječnički instrument omogućuje slušanje srčanih tonova i disanja?",
+    "answers": [
+      "Stetoskop"
+    ],
+    "explanation": "Stetoskop služi auskultaciji, odnosno slušanju zvukova unutar tijela.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stethoscope"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8328-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Biologija",
+    "focus": "DNK dvostruka uzvojnica",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koja molekula pohranjuje nasljedne upute, a najpoznatija je po strukturi dvostruke uzvojnice?",
+    "answers": [
+      "DNK",
+      "DNA",
+      "Deoksiribonukleinska kiselina"
+    ],
+    "explanation": "DNK je nositelj nasljednih informacija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/DNA"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8329-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Jezik",
+    "focus": "onomatopeja zvuk",
+    "difficulty": 2,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Kako se naziva riječ poput 'bum' ili 'kuc-kuc' koja oponaša zvuk?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je glasovno oponašanje zvukova.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8330-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Videoigre",
+    "focus": "Super Mario brat Luigi",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Mario nosi crvenu kapu, a njegov brat zelenu. Kako se zove taj brat?",
+    "answers": [
+      "Luigi"
+    ],
+    "explanation": "Luigi je Marijev brat u Nintendovim igrama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Luigi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8331-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Brendovi",
+    "focus": "Lego danska tvrtka",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koji danski proizvođač igračaka ima ime nastalo od izraza 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "Naziv LEGO izveden je iz danskog izraza 'leg godt'.",
+    "sources": [
+      "https://www.lego.com/en-us/aboutus/lego-group/the-lego-group-history"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8332-20261123",
+    "createdAt": "2026-11-23T03:40:19+01:00",
+    "updatedAt": "2026-11-23T03:40:19+01:00",
+    "topic": "Fizika",
+    "focus": "prizma disperzija bijele svjetlosti",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koji prozirni optički predmet može razložiti bijelu svjetlost na spektar boja?",
+    "answers": [
+      "Prizma",
+      "Optička prizma"
+    ],
+    "explanation": "Prizma zbog disperzije može razložiti bijelu svjetlost na različite boje.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dispersive_prism"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
