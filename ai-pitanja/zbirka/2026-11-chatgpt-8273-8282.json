@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8273-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Glazba",
+    "focus": "album Back to Black izvođačica",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Koja je britanska pjevačica objavila album 'Back to Black' 2006. godine?",
+    "answers": [
+      "Amy Winehouse"
+    ],
+    "explanation": "Album Back to Black drugi je studijski album Amy Winehouse.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_Black"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8274-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Nogomet",
+    "focus": "nadimak El Niño napadač",
+    "difficulty": 2,
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Koji je španjolski napadač, poznat kao 'El Niño', igrao za Liverpool i Chelsea?",
+    "answers": [
+      "Fernando Torres"
+    ],
+    "explanation": "Fernando Torres nosio je nadimak El Niño.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fernando_Torres"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8275-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Film",
+    "focus": "film Matrix crvena plava pilula",
+    "difficulty": 1,
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "U kojem filmu Morpheus Neu nudi izbor između crvene i plave pilule?",
+    "answers": [
+      "Matrix"
+    ],
+    "explanation": "Scena s dvjema pilulama pojavljuje se u filmu The Matrix iz 1999.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8276-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Proces",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je napisao roman 'Proces' o Josefu K. i njegovu neobičnom suđenju?",
+    "answers": [
+      "Franz Kafka"
+    ],
+    "explanation": "Proces je roman Franza Kafke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Trial"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8277-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Zemljopis",
+    "focus": "tjesnac Gibraltar oceani",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji morski prolaz odvaja Španjolsku od Maroka i spaja Atlantik sa Sredozemnim morem?",
+    "answers": [
+      "Gibraltarski tjesnac"
+    ],
+    "explanation": "Gibraltarski tjesnac povezuje Atlantski ocean i Sredozemno more.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Strait_of_Gibraltar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8278-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Životinje",
+    "focus": "morski sisavac narval kljova",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji arktički kit ima izduženi zub koji može izgledati poput roga jednoroga?",
+    "answers": [
+      "Narval"
+    ],
+    "explanation": "Narvalova kljova zapravo je produženi zub.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Narwhal"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8279-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Kemija",
+    "focus": "element simbol W",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji metal, poznat po vrlo visokom talištu, ima kemijski simbol W?",
+    "answers": [
+      "Volfram"
+    ],
+    "explanation": "Volfram, odnosno tungsten, ima simbol W.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8280-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Povijest",
+    "focus": "egipatska kraljica posljednja Ptolemej",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koja je egipatska vladarica bila posljednja aktivna vladarica Ptolemejske dinastije?",
+    "answers": [
+      "Kleopatra VII."
+    ],
+    "explanation": "Kleopatra VII. bila je posljednja aktivna vladarica ptolemejskog Egipta.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cleopatra"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8281-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Tehnologija",
+    "focus": "tipkovnica raspored QWERTY",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Kojih šest slova čine početak gornjeg slovnog reda najraširenijeg rasporeda tipkovnice?",
+    "answers": [
+      "QWERTY"
+    ],
+    "explanation": "Naziv QWERTY dolazi od prvih šest tipki gornjeg slovnog reda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/QWERTY"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8282-20261123",
+    "createdAt": "2026-11-23T01:40:49+01:00",
+    "updatedAt": "2026-11-23T01:40:49+01:00",
+    "topic": "Gastronomija",
+    "focus": "talijanski desert tiramisu mascarpone",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U kojem se talijanskom desertu obično slažu piškote natopljene kavom i krema s mascarponeom?",
+    "answers": [
+      "Tiramisu"
+    ],
+    "explanation": "Tiramisu se priprema s piškotama, kavom i kremom na bazi mascarponea.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
