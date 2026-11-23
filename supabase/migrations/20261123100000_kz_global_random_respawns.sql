@@ -109,6 +109,6 @@ BEGIN
     'start_lat',v_state.start_lat,'start_lng',v_state.start_lng,
     'route_bearing',v_state.route_bearing);
 END;
-$function$
+$function$;
 
 COMMIT;
