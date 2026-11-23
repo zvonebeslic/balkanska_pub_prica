@@ -14,8 +14,8 @@ Ovo je zasebna podmapa unutar postojećeg repozitorija KvizToGo, **nije drugi ho
 ## Veze s glavnim KvizToGo
 - `/online-kviz.html` vodi u igru preko `/kraljevstvo-znanja/`.
 - Stare adrese `/kraljevstvo-znanja.html` i `/kvadrati-znanja.html` ostaju kompatibilna preusmjeravanja.
-- `<base href="/">` čuva relativne linkove prema zajedničkim stranicama i slikama u korijenu.
-- Svi lokalni moduli igre učitavaju se apsolutnim putanjama `/kraljevstvo-znanja/...`.
+- Nema `<base href="/">`: veze na glavne KvizToGo stranice i slike koriste `../`, tako da rade i na GitHub Pages repozitorijskoj putanji.
+- Svi lokalni moduli igre učitavaju se relativno (`./naziv-datoteke`), bez pretpostavke o korijenu domene.
 - Podaci ostaju u istom Supabase projektu; promjena putanje ne mijenja `localStorage` origin ni postojeće identifikatore.
 
 ## Baza podataka
