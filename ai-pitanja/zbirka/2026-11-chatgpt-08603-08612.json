@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-8603-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Glazba",
+    "focus": "grupa Gorillaz virtualni sastav",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Damon Albarn pjeva u Blur, a zajedno s Jamiejem Hewlettom stvorio je koji virtualni glazbeni sastav?",
+    "answers": [
+      "Gorillaz"
+    ],
+    "explanation": "Gorillaz su virtualni bend koji su osnovali Damon Albarn i Jamie Hewlett.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gorillaz"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8604-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Nogomet",
+    "focus": "stadion San Siro Milano",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Na kojem se milanskom stadionu tradicionalno igraju domaće utakmice Intera i Milana?",
+    "answers": [
+      "San Siro",
+      "Giuseppe Meazza",
+      "Stadio Giuseppe Meazza"
+    ],
+    "explanation": "San Siro poznat je i pod službenim nazivom Giuseppe Meazza.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/San_Siro"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8605-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Film",
+    "focus": "redatelj filma Grand Budapest Hotel",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Pastelni hotel, neobični kadrovi i vratar Gustave H. obilježavaju film 'Grand Budapest Hotel'. Tko ga je režirao?",
+    "answers": [
+      "Wes Anderson"
+    ],
+    "explanation": "Wes Anderson režirao je film iz 2014. godine.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8606-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Književnost",
+    "focus": "autor romana Ime ruže",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Franjevac William od Baskervillea istražuje smrti u samostanu. Tko je napisao roman 'Ime ruže'?",
+    "answers": [
+      "Umberto Eco"
+    ],
+    "explanation": "Umberto Eco autor je povijesnog kriminalističkog romana.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Name_of_the_Rose"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8607-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Slovenije Ljubljana",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Zmajski most, rijeka Ljubljanica i Tromostovje tragovi su za koji europski glavni grad?",
+    "answers": [
+      "Ljubljana"
+    ],
+    "explanation": "Sve tri znamenitosti nalaze se u Ljubljani.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8608-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Životinje",
+    "focus": "kljunar sisavac polaže jaja",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski sisavac ima kljun nalik pačjem i, umjesto da rađa žive mlade, polaže jaja?",
+    "answers": [
+      "Kljunar",
+      "Čudnovati kljunaš",
+      "Platypus"
+    ],
+    "explanation": "Kljunar je jedno od rijetkih živućih sisavaca koji polažu jaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Platypus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8609-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Kemija",
+    "focus": "kemijski simbol kalija K",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Latinski naziv kalium krije se iza kojeg kemijskog simbola u periodnom sustavu?",
+    "answers": [
+      "K"
+    ],
+    "explanation": "Simbol kalija K potječe od naziva kalium.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Potassium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8610-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 1,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Zid je dijelio Berlin desetljećima, a otvorene granice izazvale su slavlje u studenome koje godine?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8611-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth naziv Harald Plavozubi",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Bežična tehnologija Bluetooth ime je dobila po nadimku kojeg skandinavskog kralja?",
+    "answers": [
+      "Harald Plavozubi",
+      "Harald Bluetooth",
+      "Harald I."
+    ],
+    "explanation": "Naziv Bluetooth odnosi se na Haralda Plavozubog.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bluetooth"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8612-20261123",
+    "createdAt": "2026-11-23T20:43:29+01:00",
+    "updatedAt": "2026-11-23T20:43:29+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisu mascarpone",
+    "difficulty": 1,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U talijanskom desertu tiramisu slojevi piškota natopljenih kavom spajaju se s kremom od kojeg poznatog sira?",
+    "answers": [
+      "Mascarpone"
+    ],
+    "explanation": "Mascarpone je ključni sastojak klasične kreme za tiramisu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
