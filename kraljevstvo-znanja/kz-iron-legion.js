@@ -6,8 +6,7 @@
   const ICON=window.KZWorldRegistry.info("iron"),MIN_ZOOM=ICON.minZoom;
   const FW=ICON.frameWidth,FH=ICON.frameHeight,D2R=Math.PI/180;
   const MAX_MOBILE=ICON.mobileLimit,MAX_DESKTOP=ICON.desktopLimit;
-  // Raspored je namjerno vezan uz kopnene gradove i istraživačke postaje.
-  // Četvrti podatak je približni polumjer disperzije u kilometrima.
+  // Raspored slijedi globalne 5 × 4 m kvadrate i regionalne kvote.
   const RENDER_TOTAL=11200;
   // Za sve čuvare vrijedi ista globalna raspršena mreža iz kataloga.
   // Stable ids 2000..13199. All clients calculate the same 11200 positions.
@@ -22,7 +21,7 @@
   }
   for(let id=2000;id<13200;id++){
     const p=window.KZWorldRegistry.pointFor(id,0);
-    const guard={id:id,group:"Svijet",hub:"",point:p};
+    const guard={id:id,group:window.KZWorldRegistry.regionName(id),hub:"",point:p};
     guards.push(guard);byId.set(id,guard);addToIndex(guard);
   }
   if(guards.length!==RENDER_TOTAL)throw Error("Sir Željeznik: pogrešan broj čuvara");
@@ -41,10 +40,10 @@
   }
   let map=null,pane=null,sprite=null,ready=false,visible=new Map(),enabled=true;
   let pendingRefresh=0,clock=0;
-  const COUNT_BY_REGION={Svijet:RENDER_TOTAL};
+  const COUNT_BY_REGION=window.KZWorldRegistry.regionQuotas();
   const info=id=>{
     const g=byId.get(id);
-    return g?{id:id,name:"Sir Željeznik",region:"Svijet",lat:posFor(id,generation(id)).lat,lng:posFor(id,generation(id)).lng}:null;
+    return g?{id:id,name:"Sir Željeznik",region:g.group,lat:posFor(id,generation(id)).lat,lng:posFor(id,generation(id)).lng}:null;
   };
   function iconSize(p){
     const z=map.getZoom(),mobile=map.getSize().x<550;
