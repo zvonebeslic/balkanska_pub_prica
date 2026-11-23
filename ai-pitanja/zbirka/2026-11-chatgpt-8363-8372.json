@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-8363-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Astronomija",
+    "focus": "Titan Saturnov mjesec",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Saturnov mjesec ima gustu atmosferu i jezera tekućeg metana i etana?",
+    "answers": [
+      "Titan"
+    ],
+    "explanation": "Titan je najveći Saturnov mjesec.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titan_(moon)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8364-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Sport",
+    "focus": "tenis tie-break",
+    "difficulty": 1,
+    "styleId": 60,
+    "styleDescription": "Opiši suptilnu razliku dvaju srodnih pojmova, pa traži jedan",
+    "question": "Kako se u tenisu naziva posebna igra koja obično odlučuje set kada je rezultat u gemovima 6:6?",
+    "answers": [
+      "Tie-break",
+      "Tiebreak",
+      "Tajbrejk"
+    ],
+    "explanation": "Tie-break se koristi za odlučivanje mnogih setova pri 6:6.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiebreaker"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8365-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Televizija",
+    "focus": "Prijatelji Central Perk",
+    "difficulty": 1,
+    "styleId": 33,
+    "styleDescription": "Opiši zgradu kroz njezinu neuobičajenu funkciju",
+    "question": "Kako se zove kafić u kojem se često okuplja šest glavnih likova serije 'Prijatelji'?",
+    "answers": [
+      "Central Perk"
+    ],
+    "explanation": "Central Perk je izmišljeni kafić iz serije Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8366-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Munch Krik",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je norveški slikar stvorio čuvenu sliku 'Krik', s likom koji drži ruke uz lice?",
+    "answers": [
+      "Edvard Munch",
+      "Munch"
+    ],
+    "explanation": "Edvard Munch autor je Krika.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Scream"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8367-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Medicina",
+    "focus": "stetoskop slušanje",
+    "difficulty": 1,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Kako se zove liječnički instrument kojim se slušaju zvukovi srca i pluća?",
+    "answers": [
+      "Stetoskop"
+    ],
+    "explanation": "Stetoskop služi auskultaciji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stethoscope"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8368-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Biologija",
+    "focus": "klorofil zelena boja",
+    "difficulty": 1,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji biljni pigment upija svjetlost za fotosintezu i daje mnogim listovima zelenu boju?",
+    "answers": [
+      "Klorofil"
+    ],
+    "explanation": "Klorofil sudjeluje u fotosintezi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chlorophyll"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8369-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ ili niz znakova koji se jednako čita slijeva nadesno i zdesna nalijevo, poput 'radar'?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom ima isti slijed znakova u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8370-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Videoigre",
+    "focus": "Pac-Man duhovi",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Koji žuti lik u arkadnoj igri iz 1980. skuplja točkice u labirintu i izbjegava duhove?",
+    "answers": [
+      "Pac-Man",
+      "Pacman"
+    ],
+    "explanation": "Pac-Man je glavni lik istoimene arkadne igre.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pac-Man"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8371-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Brendovi",
+    "focus": "Lego danski naziv",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv koje danske marke kockica dolazi od izraza 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "LEGO je nastao od danskog izraza leg godt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8372-20261123",
+    "createdAt": "2026-11-23T06:39:21+01:00",
+    "updatedAt": "2026-11-23T06:39:21+01:00",
+    "topic": "Fizika",
+    "focus": "Newton jedinica sile",
+    "difficulty": 1,
+    "styleId": 89,
+    "styleDescription": "Opiši način mjerenja i pitaj naziv ljestvice",
+    "question": "Koja je SI jedinica sile nazvana po engleskom fizičaru koji je formulirao zakone gibanja?",
+    "answers": [
+      "Njutn",
+      "Newton",
+      "N"
+    ],
+    "explanation": "Newton (N) SI je jedinica sile.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton_(unit)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
