@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total": 8492,
+  "total": 8502,
   "months": [
     "2026-10",
     "2026-10-chatgpt-00182-00184",
@@ -843,7 +843,8 @@
     "2026-11-chatgpt-08453-08462",
     "2026-11-chatgpt-08463-08472",
     "2026-11-chatgpt-08473-08482",
-    "2026-11-chatgpt-08483-08492"
+    "2026-11-chatgpt-08483-08492",
+    "2026-11-chatgpt-08493-08502"
   ],
   "styleCounts": {
     "1": 190,
@@ -945,20 +946,21 @@
     "97": 16,
     "98": 40,
     "99": 41,
-    "100": 12
+    "100": 12,
+    "undefined": 10
   },
   "topicCounts": {
-    "Glazba": 572,
-    "Tehnologija": 422,
+    "Glazba": 573,
+    "Tehnologija": 423,
     "Astronomija": 489,
-    "Gastronomija": 345,
-    "Književnost": 486,
+    "Gastronomija": 346,
+    "Književnost": 487,
     "Sport": 518,
-    "Likovna umjetnost": 233,
+    "Likovna umjetnost": 234,
     "Životinje": 375,
-    "Povijest": 484,
-    "Zemljopis": 515,
-    "Biologija": 282,
+    "Povijest": 485,
+    "Zemljopis": 516,
+    "Biologija": 283,
     "Fizika": 162,
     "Kemija": 410,
     "Matematika": 95,
@@ -966,7 +968,7 @@
     "Inženjerstvo": 61,
     "Arhitektura": 118,
     "Jezik": 150,
-    "Film": 453,
+    "Film": 454,
     "Televizija": 132,
     "Automobili": 12,
     "Promet": 53,
@@ -1080,7 +1082,7 @@
     "Povijest pisma": 1,
     "Borilački sportovi": 1,
     "Muzeji": 1,
-    "Nogomet": 206,
+    "Nogomet": 207,
     "Glazba i film": 1,
     "Povijest filma": 1,
     "Književni likovi": 1,
@@ -1097,19 +1099,23 @@
   },
   "difficultyCounts": {
     "1": 1924,
-    "2": 3749,
+    "2": 3750,
     "3": 1654,
     "4": 719,
     "5": 406,
-    "8": 1,
-    "9": 2,
-    "17": 1,
+    "6": 1,
+    "8": 2,
+    "9": 3,
+    "13": 1,
+    "15": 1,
+    "17": 2,
+    "18": 2,
     "22": 1,
     "29": 1,
-    "31": 1,
+    "31": 2,
     "36": 1,
     "56": 1,
     "71": 1
   },
-  "updatedAt": "2026-11-23T13:41:48+01:00"
+  "updatedAt": "2026-11-23T14:42:17+01:00"
 }
