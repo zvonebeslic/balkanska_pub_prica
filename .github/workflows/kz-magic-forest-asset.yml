@@ -1,0 +1,58 @@
+name: KZ - sastavi Čarobnu šumu WebM
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "kraljevstvo-znanja/media/forest-payload/manifest.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kz-magic-forest-video
+  cancel-in-progress: false
+
+jobs:
+  install-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reconstruct optimized transparent WebM, check size and SHA-256
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64,hashlib,json
+          root=Path('kraljevstvo-znanja/media')
+          payload=root/'forest-payload'
+          meta=json.loads((payload/'manifest.json').read_text())
+          parts=[(payload/f'part-{i:02d}.txt').read_text().strip() for i in range(meta['parts'])]
+          data=base64.b64decode(''.join(parts), validate=True)
+          assert len(data)==meta['size_bytes'],('size',len(data))
+          assert hashlib.sha256(data).hexdigest()==meta['sha256'],'hash mismatch'
+          assert data[:4]==bytes.fromhex('1a45dfa3'),'not WebM (EBML)'
+          outfile=root/'carobna-suma-300m2.webm'
+          outfile.write_bytes(data)
+          print('Verified:',outfile,len(data),'bytes')
+          PY
+      - name: Validate VP9 transparent video and create WebP poster
+        run: |
+          ffprobe -v error -show_entries format=duration -show_entries stream=codec_name,width,height -of json kraljevstvo-znanja/media/carobna-suma-300m2.webm
+          ffmpeg -v error -y -i kraljevstvo-znanja/media/carobna-suma-300m2.webm -frames:v 1 -c:v libwebp -q:v 85 kraljevstvo-znanja/media/carobna-suma-300m2-poster.webp
+          test -s kraljevstvo-znanja/media/carobna-suma-300m2-poster.webp
+      - name: Commit verified forest media
+        run: |
+          git config user.name "KZ world asset builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add kraljevstvo-znanja/media/carobna-suma-300m2.webm kraljevstvo-znanja/media/carobna-suma-300m2-poster.webp
+          if git diff --cached --quiet; then
+            echo 'Already up to date'
+            exit 0
+          fi
+          git commit -m "KZ: transparent animated magic forest and static poster [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
