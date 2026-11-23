@@ -26,13 +26,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install raster and vector tools
+      - name: Install raster tools
         run: |
-          python -m pip install --disable-pip-version-check 'numpy==2.2.6' 'opencv-python-headless==4.12.0.88' 'Pillow==11.2.1' 'CairoSVG==2.8.2'
-      - name: Generate seven 80-frame sprite atlases
+          python -m pip install --disable-pip-version-check 'numpy==2.2.6' 'opencv-python-headless==4.12.0.88' 'Pillow==11.2.1'
+      - name: Generate castle and iron 80-frame sprite atlases
         run: python scripts/build-kz-80-frames.py
       - name: Validate atlas dimensions and number of frames
         run: |
@@ -48,27 +45,17 @@ jobs:
               im=Image.open(io.BytesIO(base64.b64decode(value)))
               assert im.size==(10*size,8*size),(filename,im.size)
               print('Validated:',filename,im.size)
-          source=(root/'kz-small-world-80.js').read_text()
-          text=source.split('Object.freeze(',1)[1].rsplit(');',1)[0]
-          sprites=json.loads(text)
-          assert set(sprites)=={'dragon','knight','owl','wizard','banner'}
-          for key,value in sprites.items():
-              assert value.startswith('data:image/webp;base64,')
-              im=Image.open(io.BytesIO(base64.b64decode(value.split(',',1)[1])))
-              assert im.size==(1600,1280),(key,im.size)
-              print('Validated:',key,im.size)
           PY
       - name: Commit only generated 80-frame atlases
         run: |
           git config user.name "KvizToGo sprite builder"
           git config user.email "actions@users.noreply.github.com"
           git add kraljevstvo-znanja/kz-roaming-castle-atlas-80.js \
-                  kraljevstvo-znanja/kz-sir-zeljeznik-80.js \
-                  kraljevstvo-znanja/kz-small-world-80.js
+                  kraljevstvo-znanja/kz-sir-zeljeznik-80.js
           if git diff --cached --quiet; then
             echo "Assets already up-to-date"
             exit 0
           fi
-          git commit -m "KZ: seven verified 80-frame animation atlases [skip ci]"
+          git commit -m "KZ: castle and iron 80-frame atlases [skip ci]"
           git pull --rebase origin main
           git push origin HEAD:main
