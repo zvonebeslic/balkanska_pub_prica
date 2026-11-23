@@ -1,4 +1,4 @@
-/* Kraljevstvo znanja — Čarobne šume (400 m² = 20 blokova po 5 x 4 m).
+/* Kraljevstvo znanja — Čarobne šume (500 m² = 25 blokova po 5 x 4 m).
  * 200 Balkan, 20 Njemačka, 20 ostatak Europe, 20 na svakom od ostalih
  * pet naseljenih kontinenata te jedna Antarktika = 341 trajna lokacija.
  *
@@ -10,7 +10,7 @@
   "use strict";
   const world=window.KZWorldRegistry;
   if(!world)return;
-  const PLOT=Object.freeze({columns:4,rows:5,widthM:20,heightM:20,areaM2:400});
+  const PLOT=Object.freeze({columns:5,rows:5,widthM:25,heightM:20,areaM2:500});
   const VIDEO_URL="./media/carobna-suma-300m2.webm?v=2";
   const REGIONS=Object.freeze([
     {name:"Balkan",count:200,index:0,box:[13.3,29.0,35.0,46.9],spacingKm:24},
@@ -145,7 +145,7 @@
         zoom<17?(mobile?67:79):(mobile?78:96);
       return {width:side,height:Math.round(side*346/400)};
     }
-    // Pri stvarnoj veličini uvijek baš 4 x 5 službenih blokova 5 x 4 m.
+    // Pri stvarnoj veličini uvijek baš 5 x 5 službenih blokova 5 x 4 m.
     const sw=map.latLngToLayerPoint(L.latLng(forest.bounds[0]));
     const ne=map.latLngToLayerPoint(L.latLng(forest.bounds[1]));
     return {
@@ -159,7 +159,7 @@
       html:'<span class="kz-forest-mini-frame">'+
         '<img class="kz-forest-mini-image" src="'+POSTER_URL+
         '" alt="" loading="lazy" decoding="async"></span>'+
-        '<span class="kz-forest-map-name">Čarobna šuma · 400 m²</span>',
+        '<span class="kz-forest-map-name">Čarobna šuma · 500 m²</span>',
       iconSize:[size.width,size.height],
       iconAnchor:[size.width/2,size.height/2]
     });
@@ -263,7 +263,7 @@
         const marker=L.marker([forest.lat,forest.lng],{
           icon:originalForestIcon(size),
           pane:"kzForestPane",keyboard:false,interactive:true,
-          bubblingMouseEvents:false,title:"Čarobna šuma · 400 m²"
+          bubblingMouseEvents:false,title:"Čarobna šuma · 500 m²"
         }).on("click",event=>{
           L.DomEvent.stopPropagation(event);
           flyTo(forest);
