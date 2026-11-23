@@ -18,8 +18,9 @@
 #kingdom-map .kz-forest-mini-image,
 #kingdom-map .kz-forest-mini-video{
   position:absolute;inset:0;width:100%;height:100%;
-  /* Ispunjava svih 20 blokova, umjesto dosadašnje trake od 9-15. */
-  object-fit:fill;pointer-events:none!important;
+  /* Cuvaj izvorni omjer ilustracije i videa; geografskih 5 x 5 blokova
+     ostaju rezervirani, bez vertikalnog rastezanja Web Mercator projekcijom. */
+  object-fit:contain;object-position:center center;pointer-events:none!important;
   border:0;background:transparent!important;
 }
 #kingdom-map .kz-forest-mini-video{z-index:1}
@@ -40,7 +41,7 @@
 #kingdom-map .kz-forest-pane video,
 #kingdom-map .kz-forest-pane img{
   background:transparent!important;pointer-events:none;
-  image-rendering:auto;object-fit:fill;
+  image-rendering:auto;object-fit:contain;object-position:center center;
 }
 .map-actions .kz-world-locate{white-space:nowrap}
 @media(max-width:620px){
