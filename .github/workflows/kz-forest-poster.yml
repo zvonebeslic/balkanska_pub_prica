@@ -1,0 +1,48 @@
+name: KZ - poster iz stvarne animirane čarobne šume
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "kraljevstvo-znanja/media/carobna-suma-300m2.webm"
+      - ".github/workflows/kz-forest-poster.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kz-forest-real-video-poster
+  cancel-in-progress: false
+
+jobs:
+  poster:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Validate the uploaded real WebM and its alpha channel
+        run: |
+          test -s kraljevstvo-znanja/media/carobna-suma-300m2.webm
+          ffprobe -v error -show_entries stream=codec_name,width,height:stream_tags=ALPHA_MODE -show_entries format=duration -of json kraljevstvo-znanja/media/carobna-suma-300m2.webm
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('kraljevstvo-znanja/media/carobna-suma-300m2.webm')
+          assert p.read_bytes()[:4]==bytes.fromhex('1a45dfa3')
+          print('OK genuine animated WebM:',p.stat().st_size,'bytes')
+          PY
+      - name: Export static preview from the same video
+        run: |
+          ffmpeg -v error -y -c:v libvpx-vp9 -i kraljevstvo-znanja/media/carobna-suma-300m2.webm -frames:v 1 -c:v libwebp -q:v 90 -pix_fmt yuva420p kraljevstvo-znanja/media/carobna-suma-300m2-poster.webp
+          test -s kraljevstvo-znanja/media/carobna-suma-300m2-poster.webp
+      - name: Commit accurate thumbnail
+        run: |
+          git config user.name "KZ world asset builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add kraljevstvo-znanja/media/carobna-suma-300m2-poster.webp
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "KZ: real forest video poster (not emoji trees) [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
