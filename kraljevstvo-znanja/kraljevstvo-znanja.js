@@ -512,6 +512,19 @@
         color:"#e8d29c",weight:.85,opacity:.45,fill:false,interactive:false,
         renderer:map._kzCanvasRenderer
       }).addTo(blockGridLayer);
+      // Pri izrazito bliskom zumu svaki pojedini kvadrat diskretno nosi X/Y.
+      // Pri daljem zumu ostaje samo mala oznaka središta karte.
+      if(map.getZoom()>=21 && estimated<=175){
+        const center=ll(x+2.5,y+2);
+        L.marker([center.lat,center.lng],{
+          icon:L.divIcon({
+            className:"kz-grid-xy-label",
+            html:"X "+Math.floor(x/5)+"<span>Y "+Math.floor(y/4)+"</span>",
+            iconSize:[68,20],iconAnchor:[34,10]
+          }),
+          interactive:false,keyboard:false
+        }).addTo(blockGridLayer);
+      }
     }
   }
   function blockStatus(b) {
