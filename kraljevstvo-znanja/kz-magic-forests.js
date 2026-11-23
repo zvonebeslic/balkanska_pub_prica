@@ -1,4 +1,4 @@
-/* Kraljevstvo znanja — Čarobne šume (300 m² = 15 blokova po 5 x 4 m).
+/* Kraljevstvo znanja — Čarobne šume (400 m² = 20 blokova po 5 x 4 m).
  * 200 Balkan, 20 Njemačka, 20 ostatak Europe, 20 na svakom od ostalih
  * pet naseljenih kontinenata te jedna Antarktika = 341 trajna lokacija.
  *
@@ -10,7 +10,7 @@
   "use strict";
   const world=window.KZWorldRegistry;
   if(!world)return;
-  const PLOT=Object.freeze({columns:3,rows:5,widthM:15,heightM:20,areaM2:300});
+  const PLOT=Object.freeze({columns:4,rows:5,widthM:20,heightM:20,areaM2:400});
   const VIDEO_URL="./media/carobna-suma-300m2.webm?v=2";
   const REGIONS=Object.freeze([
     {name:"Balkan",count:200,index:0,box:[13.3,29.0,35.0,46.9],spacingKm:24},
@@ -70,8 +70,9 @@
     const southwest=world.worldGridCorner(x,y);
     const northeast=world.worldGridCorner(x+PLOT.columns,y+PLOT.rows);
     const center=world.pointFromBlock({
-      x:x+Math.floor(PLOT.columns/2),
-      y:y+Math.floor(PLOT.rows/2)
+      // Frakcijski indeks znači geometrijsko središte i kod parnog broja stupaca.
+      x:x+(PLOT.columns-1)/2,
+      y:y+(PLOT.rows-1)/2
     });
     return {x:x,y:y,point:center,bounds:[[southwest.lat,southwest.lng],
       [northeast.lat,northeast.lng]]};
@@ -144,7 +145,7 @@
         zoom<17?(mobile?67:79):(mobile?78:96);
       return {width:side,height:Math.round(side*346/400)};
     }
-    // Pri stvarnoj veličini uvijek baš 3 x 5 službenih blokova 5 x 4 m.
+    // Pri stvarnoj veličini uvijek baš 4 x 5 službenih blokova 5 x 4 m.
     const sw=map.latLngToLayerPoint(L.latLng(forest.bounds[0]));
     const ne=map.latLngToLayerPoint(L.latLng(forest.bounds[1]));
     return {
@@ -158,9 +159,9 @@
       html:'<span class="kz-forest-mini-frame">'+
         '<img class="kz-forest-mini-image" src="'+POSTER_URL+
         '" alt="" loading="lazy" decoding="async"></span>'+
-        '<span class="kz-forest-map-name">Čarobna šuma · 300 m²</span>',
+        '<span class="kz-forest-map-name">Čarobna šuma · 400 m²</span>',
       iconSize:[size.width,size.height],
-      iconAnchor:[size.width/2,Math.round(size.height*.82)]
+      iconAnchor:[size.width/2,size.height/2]
     });
   }
   function applySize(item,size){
@@ -172,7 +173,7 @@
       el.style.width=size.width+"px";
       el.style.height=size.height+"px";
       el.style.marginLeft=-Math.round(size.width/2)+"px";
-      el.style.marginTop=-Math.round(size.height*.82)+"px";
+      el.style.marginTop=-Math.round(size.height/2)+"px";
     }
     item.width=size.width;
     item.height=size.height;
@@ -262,7 +263,7 @@
         const marker=L.marker([forest.lat,forest.lng],{
           icon:originalForestIcon(size),
           pane:"kzForestPane",keyboard:false,interactive:true,
-          bubblingMouseEvents:false,title:"Čarobna šuma · 300 m²"
+          bubblingMouseEvents:false,title:"Čarobna šuma · 400 m²"
         }).on("click",event=>{
           L.DomEvent.stopPropagation(event);
           flyTo(forest);
