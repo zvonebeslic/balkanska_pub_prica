@@ -5,8 +5,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Glazba",
     "focus": "hit Take On Me norveški sastav",
-    "difficulty": 18,
-    "styleDescription": "",
+    "difficulty": 2,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
     "question": "Koji je norveški sastav postao svjetski poznat zahvaljujući hitu 'Take On Me' i njegovu animiranom spotu?",
     "answers": [
       "a-ha"
@@ -18,7 +18,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 18
   },
   {
     "id": "chatgpt10000-8494-20261123",
@@ -26,8 +27,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Nogomet",
     "focus": "Svjetsko prvenstvo 2010 pobjednik",
-    "difficulty": 13,
-    "styleDescription": "",
+    "difficulty": 1,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
     "question": "Koja je reprezentacija osvojila Svjetsko nogometno prvenstvo 2010. pogotkom Andrésa Inieste u finalu?",
     "answers": [
       "Španjolska"
@@ -39,7 +40,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 13
   },
   {
     "id": "chatgpt10000-8495-20261123",
@@ -47,8 +49,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Film",
     "focus": "Shrek magarac prijatelj",
-    "difficulty": 17,
-    "styleDescription": "",
+    "difficulty": 1,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
     "question": "Koja životinja postaje najpričljiviji prijatelj zelenog ogra Shreka u istoimenom animiranom filmu?",
     "answers": [
       "Magarac"
@@ -60,7 +62,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 17
   },
   {
     "id": "chatgpt10000-8496-20261123",
@@ -68,8 +71,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Književnost",
     "focus": "Hobit Bilbo Baggins",
-    "difficulty": 31,
-    "styleDescription": "",
+    "difficulty": 2,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
     "question": "Kako se zove hobit kojega Gandalf poziva na pustolovinu s trinaestoricom patuljaka u Tolkienovu romanu 'Hobit'?",
     "answers": [
       "Bilbo Baggins"
@@ -81,7 +84,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 31
   },
   {
     "id": "chatgpt10000-8497-20261123",
@@ -89,8 +93,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Likovna umjetnost",
     "focus": "Guernica Picasso",
-    "difficulty": 9,
-    "styleDescription": "",
+    "difficulty": 2,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
     "question": "Koji je španjolski slikar 1937. naslikao 'Guernicu', snažan prikaz stradanja u ratu?",
     "answers": [
       "Pablo Picasso"
@@ -102,7 +106,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 9
   },
   {
     "id": "chatgpt10000-8498-20261123",
@@ -110,8 +115,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Zemljopis",
     "focus": "Machu Picchu država",
-    "difficulty": 8,
-    "styleDescription": "",
+    "difficulty": 1,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
     "question": "U kojoj se južnoameričkoj državi nalaze ruševine inkanskoga grada Machu Picchua?",
     "answers": [
       "Peru"
@@ -123,7 +128,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 8
   },
   {
     "id": "chatgpt10000-8499-20261123",
@@ -131,8 +137,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Biologija",
     "focus": "fotosinteza kloroplasti",
-    "difficulty": 6,
-    "styleDescription": "",
+    "difficulty": 2,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
     "question": "Kako se nazivaju stanične strukture u kojima biljke obavljaju fotosintezu?",
     "answers": [
       "Kloroplasti"
@@ -144,7 +150,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 6
   },
   {
     "id": "chatgpt10000-8500-20261123",
@@ -152,8 +159,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Tehnologija",
     "focus": "Nintendo Switch konzola",
-    "difficulty": 18,
-    "styleDescription": "",
+    "difficulty": 2,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
     "question": "Koja je Nintendova igraća konzola iz 2017. poznata po tome što se može koristiti i kao ručni uređaj i uz televizor?",
     "answers": [
       "Nintendo Switch"
@@ -165,7 +172,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 18
   },
   {
     "id": "chatgpt10000-8501-20261123",
@@ -174,7 +182,7 @@
     "topic": "Povijest",
     "focus": "Napoleon Waterloo 1815",
     "difficulty": 2,
-    "styleDescription": "",
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
     "question": "Kod kojeg je belgijskog mjesta Napoleon doživio konačni vojni poraz 1815. godine?",
     "answers": [
       "Waterloo"
@@ -186,7 +194,8 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 2
   },
   {
     "id": "chatgpt10000-8502-20261123",
@@ -194,8 +203,8 @@
     "updatedAt": "2026-11-23T14:42:17+01:00",
     "topic": "Gastronomija",
     "focus": "guacamole avokado",
-    "difficulty": 15,
-    "styleDescription": "",
+    "difficulty": 1,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
     "question": "Koje je voće glavni sastojak meksičkog umaka guacamole?",
     "answers": [
       "Avokado"
@@ -207,6 +216,7 @@
     "image": null,
     "type": "blitz",
     "status": "novo",
-    "origin": "chatgpt-serija-10000"
+    "origin": "chatgpt-serija-10000",
+    "styleId": 15
   }
 ]
