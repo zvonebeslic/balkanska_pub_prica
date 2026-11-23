@@ -423,9 +423,8 @@
   function updateMapXY() {
     if(!map)return;
     const center=map.getCenter();
-    const projected=xy(center.lat,center.lng);
-    // Brojevi označavaju GLOBALNE INDEKSE 5 × 4 m kvadrata (ne GPS stupnjeve).
-    const gridX=Math.floor(projected.x/5),gridY=Math.floor(projected.y/4);
+    // Isti centralni X/Y kvadrat koristi se za teritorij i za svakog čuvara.
+    const {x:gridX,y:gridY}=window.KZWorldRegistry.blockFor(center.lat,center.lng);
     const element=$("kz-map-xy");
     if(element)element.textContent="X "+gridX+" · Y "+gridY;
   }
