@@ -308,7 +308,7 @@
     try{localStorage.setItem("kz_animated_world_v1",lifeEnabled?"on":"off");}catch(_){}
     const btn=$("map-life-toggle");
     if(btn){
-      btn.textContent=lifeEnabled?"🐉 Živi svijet: UKLJ.":"🐉 Živi svijet: ISKLJ.";
+      btn.textContent=lifeEnabled?"🌲 Živi svijet: UKLJ.":"🌲 Živi svijet: ISKLJ.";
       btn.setAttribute("aria-pressed",String(lifeEnabled));
       btn.title=lifeEnabled?"Isključi animirane likove":"Uključi animirane likove";
     }
@@ -978,7 +978,7 @@
   }
   async function init() {
     const btn=$("map-life-toggle");
-    btn.textContent=lifeEnabled?"🐉 Živi svijet: UKLJ.":"🐉 Živi svijet: ISKLJ.";
+    btn.textContent=lifeEnabled?"🌲 Živi svijet: UKLJ.":"🌲 Živi svijet: ISKLJ.";
     btn.setAttribute("aria-pressed",String(lifeEnabled));
     bind();
     if (!client) throw Error("Supabase nije učitan. Provjeri vezu.");
