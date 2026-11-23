@@ -7,13 +7,13 @@
   "use strict";
   const TYPES=Object.freeze({
     castle:Object.freeze({
-      id:"castle",label:"Hodajući dvorac",atlasKey:"KZ_ROAMING_CASTLE_WEBP",
+      id:"castle",label:"Hodajući dvorac",atlasPath:"./media/hodajuci-dvorac-80.webp?v=1",
       frameWidth:192,frameHeight:192,targetFrames:80,
       sourceFormat:"webp",periodMs:2667,
       mobileLimit:26,desktopLimit:44,minZoom:12,moves:true
     }),
     iron:Object.freeze({
-      id:"iron",label:"Sir Željeznik",atlasKey:"KZ_IRON_ROBOT_ATLAS",
+      id:"iron",label:"Sir Željeznik",atlasPath:"./media/sir-zeljezni-80.webp?v=1",
       frameWidth:224,frameHeight:224,targetFrames:80,
       sourceFormat:"webp",periodMs:2667,
       mobileLimit:18,desktopLimit:36,minZoom:12,moves:false
@@ -252,7 +252,7 @@
   function source(id){
     const type=info(id);
     if(!type)return null;
-    return window[type.atlasKey]||null;
+    return type.atlasPath||null;
   }
   // Jedan renderer za sve vrste: kompatibilan i sa 40 i s 80
   // STVARNIH WebP kadrova, bez dupliciranja i miješanja alfa kanala.
