@@ -126,11 +126,51 @@
     const type=info(id);
     return type?window[type.atlasKey]||null:null;
   }
+  // Jedan renderer za sve vrste: kompatibilan i sa 40 i s 80
+  // STVARNIH WebP kadrova, bez dupliciranja i miješanja alfa kanala.
+  const layouts=new WeakMap();
+  function layout(id,img){
+    if(!img)return null;
+    const cached=layouts.get(img);
+    if(cached)return cached;
+    const type=info(id);
+    if(!type)return null;
+    const columns=img.naturalWidth/type.frameWidth;
+    const rows=img.naturalHeight/type.frameHeight;
+    const total=columns*rows;
+    if(!Number.isInteger(columns)||!Number.isInteger(rows)||
+       ![40,80].includes(total) && !(id==="iron"&&total===9))return null;
+    const result={columns:columns,rows:rows,total:total,
+      width:type.frameWidth,height:type.frameHeight};
+    layouts.set(img,result);
+    return result;
+  }
+  function frameAt(id,img,time,instanceId){
+    const type=info(id),sheet=layout(id,img);
+    if(!type||!sheet)return 0;
+    if(window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches)return 0;
+    const timeOffset=(instanceId||0)*173;
+    const phase=((time+timeOffset)%type.periodMs+type.periodMs)%type.periodMs;
+    return Math.floor(phase/type.periodMs*sheet.total)%sheet.total;
+  }
+  function paint(id,img,canvas,frame,flip){
+    const sheet=layout(id,img);
+    if(!sheet||!canvas)return false;
+    const ctx=canvas.getContext("2d",{alpha:true});
+    if(!ctx)return false;
+    const n=Math.max(0,frame%sheet.total);
+    ctx.clearRect(0,0,sheet.width,sheet.height);
+    ctx.save();
+    if(flip){ctx.translate(sheet.width,0);ctx.scale(-1,1);}
+    ctx.drawImage(img,(n%sheet.columns)*sheet.width,
+      Math.floor(n/sheet.columns)*sheet.height,
+      sheet.width,sheet.height,0,0,sheet.width,sheet.height);
+    ctx.restore();
+    return true;
+  }
   window.KZWorldRegistry=Object.freeze({
     types:TYPES,info:info,source:source,pointFor:pointFor,
-    isLand:isLand,prepare:prepare,
-    // Priprema za buduće stvarne atlase s 80 jedinstvenih kadrova.
-    // Nikad ne predstavljamo dupliciranih 40 kadrova kao 80 novih.
-    actualFrames:(id)=>info(id)?.sourceFrames||0
+    isLand:isLand,prepare:prepare,layout:layout,frameAt:frameAt,paint:paint,
+    actualFrames:(id,img)=>layout(id,img)?.total||info(id)?.sourceFrames||0
   });
 })();
