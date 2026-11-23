@@ -1,0 +1,222 @@
+[
+  {
+    "id": "chatgpt10000-8583-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Astronomija",
+    "focus": "Mars najveći vulkan Olympus Mons",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem se planetu nalazi Olympus Mons, najveći poznati vulkan u Sunčevu sustavu?",
+    "answers": [
+      "Mars"
+    ],
+    "explanation": "Olympus Mons golemi je štitasti vulkan na Marsu.",
+    "sources": [
+      "https://science.nasa.gov/mars/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8584-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Sport",
+    "focus": "tenis Wimbledon travnata podloga",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kakvoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava"
+    ],
+    "explanation": "Wimbledon je Grand Slam turnir koji se igra na travi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wimbledon_Championships"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8585-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Televizija",
+    "focus": "Breaking Bad Walter White zanimanje",
+    "difficulty": 2,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Prije nego što počne proizvoditi metamfetamin, koji predmet u školi predaje Walter White iz serije 'Breaking Bad'?",
+    "answers": [
+      "Kemija"
+    ],
+    "explanation": "Walter White profesor je kemije u srednjoj školi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8586-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Mona Lisa muzej Louvre",
+    "difficulty": 1,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "U kojem se pariškom muzeju čuva Leonardova 'Mona Lisa'?",
+    "answers": [
+      "Louvre"
+    ],
+    "explanation": "Mona Lisa izložena je u pariškom Louvreu.",
+    "sources": [
+      "https://www.louvre.fr/en/explore/the-palace/mona-lisa"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8587-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Medicina",
+    "focus": "medicinski pojam dermatologija koža",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se naziva medicinska grana koja se bavi bolestima kože, kose i noktiju?",
+    "answers": [
+      "Dermatologija"
+    ],
+    "explanation": "Dermatologija je specijalnost za kožu i njezine pridatke.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8588-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Videoigre",
+    "focus": "Super Mario brat Luigi",
+    "difficulty": 1,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "Kako se zove Marijev brat u Nintendovim igrama, prepoznatljiv po zelenoj odjeći?",
+    "answers": [
+      "Luigi"
+    ],
+    "explanation": "Luigi je Marijev brat i čest igrivi lik serijala.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Luigi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8589-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Jezik",
+    "focus": "palindrom riječ čita isto",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva riječ ili izraz koji se jednako čita slijeva nadesno i zdesna nalijevo?",
+    "answers": [
+      "Palindrom"
+    ],
+    "explanation": "Palindrom zadržava isti slijed znakova u oba smjera.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Palindrome"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8590-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Fizika",
+    "focus": "Newton zakon gravitacije jabuka",
+    "difficulty": 1,
+    "styleId": 47,
+    "styleDescription": "Napravi povijesnu anegdotu od dvije rečenice i pitaj za sudionika",
+    "question": "Koji se engleski znanstvenik tradicionalno povezuje s pričom o jabuci koja ga je potaknula na razmišljanje o gravitaciji?",
+    "answers": [
+      "Isaac Newton"
+    ],
+    "explanation": "Priča o jabuci vezana je uz Newtonova razmišljanja o gravitaciji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Isaac_Newton"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8591-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Brendovi",
+    "focus": "Nike logotip Swoosh",
+    "difficulty": 2,
+    "styleId": 43,
+    "styleDescription": "Kreni od povijesti logotipa, ali traži marku",
+    "question": "Koja marka sportske opreme koristi logotip nazvan 'Swoosh'?",
+    "answers": [
+      "Nike"
+    ],
+    "explanation": "Swoosh je prepoznatljiv znak tvrtke Nike.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Swoosh"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8592-20261123",
+    "createdAt": "2026-11-23T18:37:25+01:00",
+    "updatedAt": "2026-11-23T18:37:25+01:00",
+    "topic": "Biologija",
+    "focus": "mitohondrij proizvodnja ATP",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji stanični organel često zovu 'elektranom stanice' jer sudjeluje u stvaranju ATP-a?",
+    "answers": [
+      "Mitohondrij"
+    ],
+    "explanation": "Mitohondriji stvaraju velik dio ATP-a u eukariotskim stanicama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
