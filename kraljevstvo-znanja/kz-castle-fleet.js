@@ -42,7 +42,7 @@
       return window.KZIronLegion?.info(id)||{id:id,name:"Sir Željeznik",region:"Svijet"};
     }
     const p=window.KZWorldRegistry.pointFor(id,0);
-    return {id:id,name:"Hodajući dvorac",region:"Svijet",lat:p.lat,lng:p.lng};
+    return {id:id,name:"Hodajući dvorac",region:window.KZWorldRegistry.regionName(id),lat:p.lat,lng:p.lng};
   }
   let map=null,sprite=null,pane=null,enabled=true,ready=false,selected=null;
   let gps=null,gpsWatch=null,activeChallenge=null,gpsStatus="GPS nije uključen.";
