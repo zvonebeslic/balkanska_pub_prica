@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chatgpt10000-8523-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Glazba",
+    "focus": "Bohemian Rhapsody Queen",
+    "difficulty": "Queen je objavio Bohemian Rhapsody na albumu A Night at the Opera.",
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koji je britanski rock-sastav objavio pjesmu 'Bohemian Rhapsody' 1975.?",
+    "answers": [
+      "Queen"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8524-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Nogomet",
+    "focus": "Maradona Božja ruka protivnik",
+    "difficulty": "Pogodak je postignut u četvrtfinalu SP-a 1986. protiv Engleske.",
+    "styleId": 64,
+    "styleDescription": "Kreni od arheološkog nalaza pa pitaj civilizaciju",
+    "question": "Protiv koje je reprezentacije Diego Maradona 1986. postigao pogodak poznat kao 'Božja ruka'?",
+    "answers": [
+      "Engleska"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Argentina_v_England_(1986_FIFA_World_Cup)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8525-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Film",
+    "focus": "Matrix Neo glumac",
+    "difficulty": "Keanu Reeves utjelovio je Thomasa Andersona, odnosno Nea.",
+    "styleId": 67,
+    "styleDescription": "Kreni od meteorološke pojave pa traži njezin naziv",
+    "question": "Koji glumac igra Nea u znanstvenofantastičnom filmu 'Matrix'?",
+    "answers": [
+      "Keanu Reeves"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Matrix"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8526-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Književnost",
+    "focus": "Mali princ lisica autor",
+    "difficulty": "Saint-Exupéry objavio je Malog princa 1943.",
+    "styleId": 70,
+    "styleDescription": "Započni činjenicom o ljudskom tijelu i pitaj organ",
+    "question": "Koji je francuski književnik i pilot napisao 'Malog princa'?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Antoine de Saint Exupery"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Little_Prince"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8527-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Zemljopis",
+    "focus": "Bosporski tjesnac mora",
+    "difficulty": "Bospor prolazi kroz Istanbul.",
+    "styleId": 73,
+    "styleDescription": "Opiši kozmetičku praksu iz povijesnog razdoblja",
+    "question": "Koji tjesnac povezuje Crno more s Mramornim morem?",
+    "answers": [
+      "Bospor",
+      "Bosporski tjesnac"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bosporus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8528-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Životinje",
+    "focus": "najbrža kopnena životinja",
+    "difficulty": "Gepard postiže iznimno velike brzine u kratkom sprintu.",
+    "styleId": 76,
+    "styleDescription": "Pitaj o etimologiji naziva zanimanja",
+    "question": "Koja je velika mačka poznata kao najbrža kopnena životinja?",
+    "answers": [
+      "Gepard"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cheetah"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8529-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Kemija",
+    "focus": "kemijska formula vode",
+    "difficulty": "Molekula vode sastoji se od dva atoma vodika i jednog kisika.",
+    "styleId": 79,
+    "styleDescription": "Poveži kulinarsku metodu i znanstveni proces",
+    "question": "Koja je kemijska formula vode?",
+    "answers": [
+      "H2O",
+      "H₂O"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Water"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8530-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Povijest",
+    "focus": "prvi čovjek na Mjesecu",
+    "difficulty": "Armstrong je prvi stupio na Mjesec tijekom misije Apollo 11.",
+    "styleId": 82,
+    "styleDescription": "Opiši prvi nastup sporta na Olimpijskim igrama",
+    "question": "Kako se zvao astronaut koji je prvi zakoračio na Mjesec 1969.?",
+    "answers": [
+      "Neil Armstrong"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Neil_Armstrong"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8531-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Tehnologija",
+    "focus": "izumitelj World Wide Web",
+    "difficulty": "Berners-Lee predložio je WWW 1989. godine.",
+    "styleId": 85,
+    "styleDescription": "Postavi pitanje o dijelu glazbenog ili kazališnog ansambla",
+    "question": "Tko je u CERN-u razvio koncept World Wide Weba 1989.?",
+    "answers": [
+      "Tim Berners-Lee",
+      "Tim Berners Lee"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8532-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Gastronomija",
+    "focus": "sushi nori alga",
+    "difficulty": "Nori je sušena jestiva morska alga.",
+    "styleId": 88,
+    "styleDescription": "Poveži povijesnu kartu s modernim mjestom",
+    "question": "Kako se naziva jestiva alga koja se često koristi za omatanje sushi rolica?",
+    "answers": [
+      "Nori"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nori"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
