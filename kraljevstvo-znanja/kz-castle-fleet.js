@@ -8,6 +8,7 @@
   const SPEED_KM_SEC=1/1800, EARTH_KM=6371.0088, RAD=Math.PI/180;
   const ICON=window.KZWorldRegistry.info("castle");
   const FRAME_W=ICON.frameWidth, FRAME_H=ICON.frameHeight, MIN_ZOOM=ICON.minZoom;
+  const OVERVIEW_ZOOM=6; // Small animated castles remain visible while browsing regions.
   const MAX_RENDER_MOBILE=26, MAX_RENDER_DESKTOP=44;
   const START_EPOCH=Date.UTC(2026,10,22,17,0,0); // ista pocetna vremenska referenca za sve igrace
   const WAYPOINTS=[[0,0],[200,0],[400,0],[500,0],[525,22],[550,-22],
@@ -101,13 +102,14 @@
   function widthFor(pos){
     if(!map)return 65;
     const z=map.getZoom(),phone=map.getSize().x<560;
+    if(z<MIN_ZOOM)return phone?28:36;
     if(z<18)return phone?57:76;
     const mpp=156543.033928*Math.cos(pos.lat*RAD)/Math.pow(2,z);
     return Math.max(20,Math.min(260,Math.round(Math.sqrt(80)/Math.max(.01,mpp))));
   }
-  function makeIcon(w){
+  function makeIcon(w,overview=false){
     const h=Math.round(w*FRAME_H/FRAME_W);
-    return L.divIcon({className:"kz-fleet-marker",
+    return L.divIcon({className:"kz-fleet-marker"+(overview?" kz-fleet-overview":""),
       html:'<canvas class="kz-fleet-figure" width="192" height="192" aria-hidden="true"></canvas>',
       iconSize:[w,h],iconAnchor:[Math.round(w/2),Math.round(h*.88)]});
   }
@@ -124,7 +126,7 @@
   function setVisible(){
     if(!map||!ready)return;
     const z=map.getZoom();
-    if(!enabled||z<MIN_ZOOM){visible.forEach(v=>map.removeLayer(v.marker));visible.clear();return;}
+    if(!enabled||z<OVERVIEW_ZOOM){visible.forEach(v=>map.removeLayer(v.marker));visible.clear();updateButton();return;}
     const now=realClock();
     const bounds=map.getBounds().pad(.22);
     const center=map.getCenter(),matches=[];
@@ -136,7 +138,10 @@
       }
     }
     matches.sort((a,b)=>a.fromCenter-b.fromCenter);
-    const limit=map.getSize().x<560?MAX_RENDER_MOBILE:MAX_RENDER_DESKTOP;
+    // At overview zoom keep the animated miniatures sparse and legible.
+    const overview=z<MIN_ZOOM;
+    const limit=overview?(map.getSize().x<560?14:24):
+      (map.getSize().x<560?MAX_RENDER_MOBILE:MAX_RENDER_DESKTOP);
     const keep=new Set();
     matches.slice(0,limit).forEach(function(a){
       keep.add(a.id);
@@ -144,17 +149,25 @@
       if(!item){
         const w=widthFor(a.trip.point);
         const m=L.marker([a.trip.point.lat,a.trip.point.lng],{
-          icon:makeIcon(w),pane:"kzFleetPane",interactive:true,
+          icon:makeIcon(w,overview),pane:"kzFleetPane",interactive:true,
           keyboard:true,bubblingMouseEvents:false,zIndexOffset:1000,
           alt:"Hodajući dvorac "+(a.id+1)
-        }).on("click",function(e){L.DomEvent.stopPropagation(e);openFight(a.id);}).addTo(map);
-        item={marker:m,frame:-1,mirror:null,width:w};
+        }).on("click",function(e){
+          L.DomEvent.stopPropagation(e);
+          // Overviews only navigate. Never allow fighting before the proper GPS check.
+          if(map.getZoom()<MIN_ZOOM){
+            const trip=calculate(a.id,realClock());
+            map.flyTo([trip.point.lat,trip.point.lng],MIN_ZOOM+1,{duration:1.1});
+          }else openFight(a.id);
+        }).addTo(map);
+        item={marker:m,frame:-1,mirror:null,width:w,overview:overview};
         visible.set(a.id,item);
       }
       item.marker.setLatLng([a.trip.point.lat,a.trip.point.lng]);
       const w=widthFor(a.trip.point);
-      if(w!==item.width){
-        item.marker.setIcon(makeIcon(w));item.width=w;item.frame=-1;item.mirror=null;
+      if(w!==item.width||item.overview!==overview){
+        item.marker.setIcon(makeIcon(w,overview));
+        item.width=w;item.overview=overview;item.frame=-1;item.mirror=null;
       }
       drawFrame(item,a.trip);
     });
@@ -164,7 +177,7 @@
     updateButton();
   }
   function tick(){
-    if(!ready||document.hidden||!enabled||map.getZoom()<MIN_ZOOM)return;
+    if(!ready||document.hidden||!enabled||map.getZoom()<OVERVIEW_ZOOM)return;
     const now=realClock();
     const z=map.getZoom();
     // Pri dalekom zumu subpikselni pomaci ne znače ništa, a troše CPU.
@@ -183,7 +196,7 @@
   function updateButton(){
     if(!button)return;
     button.textContent="🏰 Dvorci ("+total()+")";
-    button.title="Povećaj kartu za susret s hodajućim dvorcima; "+visible.size+" trenutačno prikazano";
+    button.title="Pronađi hodajući dvorac; "+visible.size+" vidljivo na karti. Borba je moguća tek iz blizine.";
   }
   function nearestToCenter(){
     const c=map.getCenter(),now=realClock();
