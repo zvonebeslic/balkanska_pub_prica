@@ -128,14 +128,28 @@
   function canvasIcon(){
     return L.divIcon({
       className:"kz-forest-map-marker",
-      html:'<span class="kz-forest-map-emoji" aria-hidden="true">🌲</span>'+
+      html:'<span class="kz-forest-map-emoji" aria-hidden="true">🌲🌳🌲</span>'+
         '<span class="kz-forest-map-name">Čarobna šuma</span>',
       iconSize:[60,48],iconAnchor:[30,37]
     });
   }
-  function flyTo(forest){
+  function flyTo(forest,detail=false){
     if(!map)return;
-    map.flyTo([forest.lat,forest.lng],Math.max(VIDEO_ZOOM,map.getZoom()),{duration:1.15});
+    // Gumb pokazuje oznaku, a klik na oznaku prikazuje površinu 300 m².
+    const zoom=detail?VIDEO_ZOOM:VIDEO_ZOOM-1;
+    map.flyTo([forest.lat,forest.lng],Math.max(zoom,map.getZoom()),{duration:1.15});
+  }
+  function focusNearest(){
+    if(!map)return;
+    const toggle=document.getElementById("map-life-toggle");
+    if(toggle?.getAttribute("aria-pressed")==="false")toggle.click();
+    const center=map.getCenter();
+    let nearest=null,best=Infinity;
+    for(const forest of all()){
+      const distance=distanceKm(forest,center);
+      if(distance<best){best=distance;nearest=forest;}
+    }
+    if(nearest)flyTo(nearest);
   }
   function removeMarkers(){
     if(!layer)return;
@@ -200,7 +214,7 @@
           bubblingMouseEvents:false,title:"Čarobna šuma · 300 m²"
         }).on("click",(ev)=>{
           L.DomEvent.stopPropagation(ev);
-          flyTo(forest);
+          flyTo(forest,true);
         }).addTo(layer);
         markers.set(forest.id,marker);
       }
@@ -230,7 +244,18 @@
     pane=map.getPane("kzForestPane")||map.createPane("kzForestPane");
     pane.style.zIndex="1260";
     layer=L.layerGroup().addTo(map);
-    enabled=document.getElementById("map-life-toggle")?.getAttribute("aria-pressed")!=="false";
+    const toggle=document.getElementById("map-life-toggle");
+    enabled=toggle?.getAttribute("aria-pressed")!=="false";
+    toggle?.addEventListener("click",()=>{
+      enabled=toggle.getAttribute("aria-pressed")!=="false";
+      refresh();
+    });
+    const button=document.getElementById("kz-forest-button");
+    if(button){
+      button.textContent="🌲 Šume ("+all().length+")";
+      button.title="Pronađi najbližu čarobnu šumu (svaka 300 m²)";
+      button.addEventListener("click",focusNearest);
+    }
     map.on("moveend zoomend",()=>{
       clearTimeout(showTimer);
       showTimer=setTimeout(()=>refresh(),90);
