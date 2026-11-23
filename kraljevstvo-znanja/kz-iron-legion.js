@@ -4,6 +4,7 @@
 (function(){
   "use strict";
   const ICON=window.KZWorldRegistry.info("iron"),MIN_ZOOM=ICON.minZoom;
+  const OVERVIEW_ZOOM=6; // Udaljene minijature poput hodajućih dvoraca.
   const FW=ICON.frameWidth,FH=ICON.frameHeight,D2R=Math.PI/180;
   const MAX_MOBILE=ICON.mobileLimit,MAX_DESKTOP=ICON.desktopLimit;
   // Raspored slijedi globalne 5 × 4 m kvadrate i regionalne kvote.
@@ -47,18 +48,19 @@
   };
   function iconSize(p){
     const z=map.getZoom(),mobile=map.getSize().x<550;
+    if(z<MIN_ZOOM)return mobile?30:36;
     if(z<18)return mobile?64:80;
     const mpp=156543.033928*Math.cos(p.lat*D2R)/Math.pow(2,z);
     return Math.max(mobile?64:72,Math.min(210,Math.round(Math.sqrt(80)/Math.max(.001,mpp))));
   }
-  function icon(w){
-    return L.divIcon({className:"kz-iron-marker",
+  function icon(w,overview=false){
+    return L.divIcon({className:"kz-iron-marker"+(overview?" kz-iron-overview":""),
       html:'<canvas class="kz-iron-canvas" width="'+FW+'" height="'+FH+'" aria-hidden="true"></canvas>',
       iconSize:[w,w],iconAnchor:[w/2,w*.90]});
   }
   function generation(id){return Number(states.get(id)?.generation)||0;}
   function visibleCandidates(){
-    if(!map||map.getZoom()<MIN_ZOOM)return [];
+    if(!map||map.getZoom()<OVERVIEW_ZOOM)return [];
     const b=map.getBounds().pad(.18);
     const sw=b.getSouthWest(),ne=b.getNorthEast();
     const south=Math.floor((sw.lat+90)*2),north=Math.floor((ne.lat+90)*2);
@@ -98,11 +100,13 @@
     if(!map||!ready)return;
     const toggle=document.getElementById("map-life-toggle");
     enabled=!toggle||toggle.getAttribute("aria-pressed")!=="false";
-    if(!enabled||map.getZoom()<MIN_ZOOM){
+    if(!enabled||map.getZoom()<OVERVIEW_ZOOM){
       visible.forEach(entry=>map.removeLayer(entry.marker));
       visible.clear();return;
     }
-    const cap=map.getSize().x<550?MAX_MOBILE:MAX_DESKTOP;
+    const overview=map.getZoom()<MIN_ZOOM;
+    const mobile=map.getSize().x<550;
+    const cap=overview?(mobile?14:24):(mobile?MAX_MOBILE:MAX_DESKTOP);
     const matches=visibleCandidates().slice(0,cap),keep=new Set();
     const now=Date.now();
     matches.forEach(match=>{
@@ -111,21 +115,28 @@
       let entry=visible.get(match.id);
       if(!entry){
         const marker=L.marker([match.point.lat,match.point.lng],{
-          pane:"kzIronPane",icon:icon(width),interactive:true,
+          pane:"kzIronPane",icon:icon(width,overview),interactive:true,
           keyboard:true,bubblingMouseEvents:false,
           alt:"Sir Željeznik"
         }).on("click",e=>{
           L.DomEvent.stopPropagation(e);
+          // Na udaljenom zumu samo približi, bez GPS borbe.
+          if(map.getZoom()<MIN_ZOOM){
+            const point=posFor(match.id,generation(match.id));
+            if(point)map.flyTo([point.lat,point.lng],MIN_ZOOM+1,{duration:1.1});
+            return;
+          }
           window.KZCastleFleet?.openFight(match.id);
         }).addTo(map);
-        entry={id:match.id,marker:marker,frame:-1,width:width,generation:gen};
+        entry={id:match.id,marker:marker,frame:-1,width:width,generation:gen,overview:overview};
         visible.set(match.id,entry);
       }else if(entry.generation!==gen){
         entry.marker.setLatLng([match.point.lat,match.point.lng]);
         entry.generation=gen;
       }
-      if(entry.width!==width){
-        entry.marker.setIcon(icon(width));entry.width=width;entry.frame=-1;
+      if(entry.width!==width||entry.overview!==overview){
+        entry.marker.setIcon(icon(width,overview));
+        entry.width=width;entry.overview=overview;entry.frame=-1;
       }
       frameDraw(entry,now);
     });
@@ -162,9 +173,36 @@
     rebuildSpatialIndex();
     refresh();
   }
+  function focusNearest(){
+    if(!map)return;
+    const toggle=document.getElementById("map-life-toggle");
+    if(toggle?.getAttribute("aria-pressed")==="false")toggle.click();
+    const center=map.getCenter();
+    let nearest=null,best=Infinity;
+    for(const guard of guards){
+      const point=posFor(guard.id,generation(guard.id));
+      if(!point)continue;
+      const lat=(point.lat-center.lat)*111.195;
+      const delta=Math.abs(point.lng-center.lng);
+      const lon=Math.min(delta,360-delta)*111.195*
+        Math.cos((point.lat+center.lat)*D2R/2);
+      const distance=lat*lat+lon*lon;
+      if(distance<best){best=distance;nearest=point;}
+    }
+    if(nearest)map.flyTo([nearest.lat,nearest.lng],
+      Math.max(MIN_ZOOM+1,map.getZoom()),{duration:1.15});
+  }
+  function setupButton(){
+    const button=document.getElementById("kz-iron-button");
+    if(!button)return;
+    button.textContent="⚙️ Sir Željeznik ("+guards.length.toLocaleString("hr-HR")+")";
+    button.title="Pronađi najbližeg Sir Željeznog; na udaljenom zumu vidljive su minijature";
+    button.addEventListener("click",focusNearest);
+  }
   function mount(m){
     if(map||!m||!window.L||!window.KZWorldRegistry.source('iron'))return;
     map=m;
+    setupButton();
     pane=map.getPane("kzIronPane")||map.createPane("kzIronPane");
     pane.classList.add("kz-iron-pane");
     pane.style.zIndex="1600";
