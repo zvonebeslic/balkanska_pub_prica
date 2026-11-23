@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-8633-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Astronomija",
+    "focus": "Velika crvena pjega Jupiter",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Na kojem planetu Sunčeva sustava stoljećima opažamo golemu oluju poznatu kao Velika crvena pjega?",
+    "answers": [
+      "Jupiter"
+    ],
+    "explanation": "Velika crvena pjega golema je oluja u Jupiterovoj atmosferi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Red_Spot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8634-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Sport",
+    "focus": "košarka slobodno bacanje jedan bod",
+    "difficulty": 1,
+    "styleId": 61,
+    "styleDescription": "Postavi pitanje u kojem odgovor predstavlja broj",
+    "question": "Koliko bodova u košarci vrijedi uspješno izvedeno slobodno bacanje?",
+    "answers": [
+      "1",
+      "Jedan",
+      "1 bod"
+    ],
+    "explanation": "Svako pogođeno slobodno bacanje vrijedi jedan bod.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Free_throw"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8635-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Televizija",
+    "focus": "serija Friends kafić Central Perk",
+    "difficulty": 1,
+    "styleId": 51,
+    "styleDescription": "Postavi pitanje s tri tragova sve preciznija prema kraju",
+    "question": "Šest prijatelja, stanovi na Manhattanu i kafić Central Perk: o kojoj je američkoj humorističnoj seriji riječ?",
+    "answers": [
+      "Prijatelji",
+      "Friends"
+    ],
+    "explanation": "Central Perk je poznato okupljalište likova u seriji Friends.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8636-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Guernica Pablo Picasso",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je španjolski slikar 1937. naslikao monumentalnu antiratnu sliku 'Guernica'?",
+    "answers": [
+      "Pablo Picasso",
+      "Picasso"
+    ],
+    "explanation": "Picasso je naslikao Guernicu 1937. kao reakciju na bombardiranje baskijskog grada.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8637-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Medicina",
+    "focus": "dermatologija koža",
+    "difficulty": 1,
+    "styleId": 71,
+    "styleDescription": "Opiši medicinski naziv kroz podrijetlo izraza",
+    "question": "Kako se zove medicinska grana koja proučava i liječi bolesti kože?",
+    "answers": [
+      "Dermatologija"
+    ],
+    "explanation": "Dermatologija se bavi kožom i njezinim bolestima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dermatology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8638-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Videoigre",
+    "focus": "Minecraft creeper",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koje zeleno neprijateljsko biće iz Minecrafta tiho prilazi igraču i eksplodira?",
+    "answers": [
+      "Creeper",
+      "Kriper"
+    ],
+    "explanation": "Creeper je prepoznatljivo eksplozivno stvorenje u Minecraftu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Creeper_(Minecraft)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8639-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Jezik",
+    "focus": "onomatopeja oponašanje zvukova",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se naziva stilski postupak kojim riječi oponašaju zvukove, primjerice 'bum' ili 'kuc-kuc'?",
+    "answers": [
+      "Onomatopeja"
+    ],
+    "explanation": "Onomatopeja je oponašanje zvukova jezičnim sredstvima.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Onomatopoeia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8640-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Fizika",
+    "focus": "prizma disperzija svjetlosti",
+    "difficulty": 2,
+    "styleId": 24,
+    "styleDescription": "Opiši znanstveni pokus, traži materijal korišten u njemu",
+    "question": "Koji prozirni optički predmet može razložiti bijelu svjetlost na spektar boja?",
+    "answers": [
+      "Prizma",
+      "Optička prizma"
+    ],
+    "explanation": "Disperzija u prizmi razdvaja svjetlost različitih valnih duljina.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Prism_(optics)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8641-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO Danska igračke",
+    "difficulty": 1,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Koja danska marka igračaka nosi ime nastalo od riječi 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO",
+      "Lego"
+    ],
+    "explanation": "Naziv LEGO izveden je iz danskog izraza leg godt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8642-20261123",
+    "createdAt": "2026-11-23T21:37:37+01:00",
+    "updatedAt": "2026-11-23T21:37:37+01:00",
+    "topic": "Biologija",
+    "focus": "mitohondrij stanična energija",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Koji stanični organel proizvodi najveći dio ATP-a tijekom aerobnog staničnog disanja?",
+    "answers": [
+      "Mitohondrij",
+      "Mitohondriji"
+    ],
+    "explanation": "Mitohondriji su glavno mjesto aerobne proizvodnje ATP-a u eukariotskim stanicama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mitochondrion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
