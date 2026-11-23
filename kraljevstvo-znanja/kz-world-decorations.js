@@ -10,6 +10,7 @@
   const LAT_STEP=0.10,LON_STEP=0.14,MIN_ZOOM=10,MAX_ZOOM=18;
   const loaded=new Map(),visible=new Map(),requested=new Set();
   let map=null,layer=null,pane=null,enabled=true,raf=0,refreshTimer=0,prevPaint=0;
+  let bundleRequested=false;
 
   function hash(a,b){
     let x=(Math.imul(a+0x9e3779b9,1664525)^Math.imul(b+19,1013904223))|0;
@@ -66,6 +67,18 @@
   function ensureSprites(){
     // Do not decode 40 MB of decoration frames while viewing the whole planet.
     if(!map||!enabled||map.getZoom()<MIN_ZOOM||map.getZoom()>MAX_ZOOM)return;
+    // Large encoded atlas is loaded only when little creatures may be visible.
+    if(!window.KZ_SMALL_80){
+      if(bundleRequested)return;
+      bundleRequested=true;
+      const script=document.createElement("script");
+      script.src="./kz-small-world-80.js?v=80";
+      script.async=true;
+      script.onload=()=>{ensureSprites();refresh(map,enabled);};
+      script.onerror=()=>{console.warn("KZ: 80-frame small world atlas is unavailable");};
+      document.head.appendChild(script);
+      return;
+    }
     for(const kind of KINDS){
       if(requested.has(kind))continue;
       const source=registry.source(kind);
