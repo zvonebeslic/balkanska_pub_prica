@@ -557,3 +557,10 @@ body{background:
   font:400 7px/9px ui-monospace,SFMono-Regular,Consolas,monospace;
   white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.45);user-select:none}
 #kingdom-map .kz-grid-xy-label span{display:block}
+
+/* Živi svijet: jedan 80-kadrovni atlas po vrsti, bez interaktivnog preklapanja karte. */
+#kingdom-map .kz-small-80-marker{background:transparent!important;border:0!important;
+  pointer-events:none!important;box-shadow:none!important}
+#kingdom-map .kz-small-80-canvas{width:100%;height:100%;display:block;
+  pointer-events:none!important;image-rendering:auto;
+  filter:drop-shadow(0 1px 1px rgba(7,15,22,.45))}
