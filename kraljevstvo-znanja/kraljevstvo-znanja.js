@@ -57,6 +57,14 @@
     }))
   };
 
+  // Samo koordinatne RPC operacije; postojeći identitet ostaje privatno u ovoj skripti.
+  window.KZCoordinateRPC = (name, extra = {}) => {
+    if (!["kz_coord_list","kz_coord_save","kz_coord_delete"].includes(name)) {
+      throw Error("Nepoznata operacija koordinata.");
+    }
+    return rpc(name, args(extra));
+  };
+
   function toast(message) {
     const node = $("toast");
     node.textContent = message;
