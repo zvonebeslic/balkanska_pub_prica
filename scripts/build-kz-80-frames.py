@@ -159,6 +159,8 @@ def change_transform(root: ET.Element, class_name: str,
 
 
 def create_pose(original: str, kind: str, i: int) -> Image.Image:
+    # SVG CSS variables are resolved by browsers, not by CairoSVG.
+    original = original.replace('var(--life-color,#49d99e)', '#49d99e')
     root = ET.fromstring(original)
     t = 2 * math.pi * i / FRAMES
     swing = math.sin(t)
