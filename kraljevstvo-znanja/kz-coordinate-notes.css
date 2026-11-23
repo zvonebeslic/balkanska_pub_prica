@@ -1,0 +1,54 @@
+/* Stalni, diskretni geometrijski centar karte (ista tocka kao X/Y brojac). */
+.kz-map-crosshair{position:absolute;left:50%;top:50%;width:25px;height:25px;z-index:815;
+  transform:translate(-50%,-50%);pointer-events:none;user-select:none;opacity:.62;
+  filter:drop-shadow(0 1px 2px rgba(0,0,0,.65))}
+.kz-map-crosshair::before,.kz-map-crosshair::after{content:"";position:absolute;
+  left:50%;top:50%;transform:translate(-50%,-50%);
+  background:rgba(240,247,228,.76);border-radius:1px}
+.kz-map-crosshair::before{width:1px;height:25px}
+.kz-map-crosshair::after{width:25px;height:1px}
+.kz-map-crosshair span{position:absolute;z-index:2;left:50%;top:50%;
+  transform:translate(-50%,-50%);width:5px;height:5px;border:1px solid rgba(254,246,216,.9);
+  background:rgba(16,34,30,.8);border-radius:50%;box-shadow:0 0 0 2px #06232170}
+/* Spremanja su male oznake, bez zaklanjanja velikih animiranih objekata. */
+.kz-saved-coord-icon{background:none;border:0;pointer-events:auto}
+.kz-saved-coord-glyph{display:grid;place-items:center;width:23px;height:23px;
+  border:1px solid #f6dd9f;border-radius:50% 50% 50% 2px;
+  transform:rotate(-45deg);background:linear-gradient(135deg,#674d24,#193d42);
+  color:#fff5c5;font-size:15px;font-weight:900;box-shadow:0 2px 8px #000b}
+.kz-saved-coord-glyph::first-letter{transform:rotate(45deg)}
+.kz-note-popup{font:13px/1.4 system-ui,sans-serif;color:#1a2630;max-width:230px}
+.kz-note-popup b{display:block;font-size:14px}.kz-note-popup small{display:block;color:#52606b;font-size:11px;margin:3px 0}
+.kz-note-popup p{margin:4px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.kz-note-panel{display:grid;gap:.75rem}
+.kz-note-panel .kz-note-muted{margin:0;color:#a7c4ce;font-size:.76rem;line-height:1.5}
+#kz-note-form{display:grid;gap:.7rem}
+#kz-note-form label{display:block;font-size:.76rem;font-weight:850;color:#e1d3a8}
+#kz-note-form input,#kz-note-form textarea{display:block;width:100%;margin-top:.3rem;
+  padding:.65rem;border:1px solid #69929c9e;border-radius:10px;background:#0c2430;
+  color:#f8fafc;font:inherit;font-size:16px;min-width:0}
+#kz-note-form textarea{resize:vertical}
+.kz-note-fields{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.kz-note-shortcuts{display:flex;gap:.5rem;flex-wrap:wrap}
+.kz-note-shortcuts button,.kz-note-item-actions button,.kz-note-heading button{cursor:pointer;
+  border:1px solid #d8be7c7d;border-radius:9px;background:#244752;color:#ffefc7;
+  padding:.48rem .65rem;font-size:.73rem;font-weight:850}
+.kz-note-heading{display:flex;justify-content:space-between;align-items:center;gap:.5rem;
+  margin-top:.4rem;padding-top:.7rem;border-top:1px solid #c1a0695c}
+.kz-note-heading h3{font-size:.86rem;color:#f4dca7;margin:0}
+#kz-note-list{display:grid;gap:.5rem;max-height:230px;overflow:auto}
+.kz-note-item{display:flex;justify-content:space-between;gap:.6rem;padding:.65rem;
+  background:#091f2cc7;border:1px solid #5583835c;border-radius:10px}
+.kz-note-item-text{min-width:0;overflow-wrap:anywhere;font-size:.75rem}
+.kz-note-item-text b{display:block;color:#fff1d1}.kz-note-item-text small{display:block;
+  margin-top:.25rem;color:#9cc7c8;font-family:ui-monospace,monospace}
+.kz-note-item-text p{margin:.3rem 0 0;white-space:pre-wrap;line-height:1.45}
+.kz-note-item-actions{display:flex;flex-direction:column;gap:.35rem;align-items:stretch;flex-shrink:0}
+.kz-note-item-actions .kz-note-delete{border-color:#b78383;color:#ffd5d5;background:#59333377}
+@media(max-width:620px){
+  .kz-map-crosshair{width:19px;height:19px;opacity:.52}
+  .kz-map-crosshair::before{height:19px}
+  .kz-map-crosshair::after{width:19px}
+  .kz-note-shortcuts button{flex:1}
+  .kz-note-item{flex-wrap:wrap}.kz-note-item-actions{flex-direction:row}
+}
