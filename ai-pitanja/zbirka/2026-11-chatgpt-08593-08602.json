@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-8593-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Glazba",
+    "focus": "hit Valerie originalni izvođač The Zutons",
+    "difficulty": 2,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Amy Winehouse proslavila je obradu pjesme 'Valerie' s Markom Ronsonom. Koji je britanski sastav prvi objavio tu pjesmu 2006.?",
+    "answers": [
+      "The Zutons"
+    ],
+    "explanation": "Pjesmu Valerie prvi je objavio sastav The Zutons 2006., a Winehouse ju je kasnije popularizirala.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Valerie_(The_Zutons_song)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8594-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Nogomet",
+    "focus": "Euro 1992 Danska zamjena Jugoslavija",
+    "difficulty": 2,
+    "styleId": 3,
+    "styleDescription": "Opiši posljedicu bez spominjanja uzroka, pa pitaj za uzrok",
+    "question": "Koja je reprezentacija osvojila Europsko nogometno prvenstvo 1992. nakon što je na turnir ušla kao zamjena za isključenu Jugoslaviju?",
+    "answers": [
+      "Danska"
+    ],
+    "explanation": "Danska je osvojila Euro 1992. pobijedivši Njemačku u finalu.",
+    "sources": [
+      "https://www.uefa.com/uefaeuro/history/seasons/1992/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8595-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Film",
+    "focus": "film Amélie pariški Montmartre",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Pariški Montmartre, kafić Deux Moulins i neobična djevojka koja potajno usrećuje druge: koji je to francuski film iz 2001.?",
+    "answers": [
+      "Amélie",
+      "Amelie",
+      "Čudesna sudbina Amélie Poulain"
+    ],
+    "explanation": "Film Jeana-Pierrea Jeuneta prati Amélie Poulain u pariškom Montmartreu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Am%C3%A9lie"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8596-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Književnost",
+    "focus": "roman Rebecca autorica Daphne du Maurier",
+    "difficulty": 3,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "U romanu 'Rebecca' nova supruga Maxima de Wintera živi u sjeni pokojne Rebecce. Tko je napisao taj roman?",
+    "answers": [
+      "Daphne du Maurier",
+      "Daphne Du Maurier"
+    ],
+    "explanation": "Daphne du Maurier objavila je roman Rebecca 1938. godine.",
+    "sources": [
+      "https://www.britannica.com/topic/Rebecca-novel-by-du-Maurier"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8597-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Zemljopis",
+    "focus": "rijeka Douro Porto Portugal",
+    "difficulty": 2,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Vinska dolina, grad Porto i ušće u Atlantski ocean: o kojoj je rijeci na Pirenejskom poluotoku riječ?",
+    "answers": [
+      "Douro",
+      "Duero"
+    ],
+    "explanation": "Douro, u Španjolskoj poznat kao Duero, protječe kroz Porto i ulijeva se u Atlantik.",
+    "sources": [
+      "https://www.britannica.com/place/Douro-River"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8598-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Životinje",
+    "focus": "aksolotl regeneracija udova",
+    "difficulty": 2,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji meksički vodozemac, poznat po sposobnosti regeneracije udova, često cijeli život zadržava obilježja ličinke?",
+    "answers": [
+      "Aksolotl",
+      "Axolotl"
+    ],
+    "explanation": "Aksolotl je daždevnjak poznat po neoteniji i regeneraciji.",
+    "sources": [
+      "https://www.britannica.com/animal/axolotl"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8599-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Kemija",
+    "focus": "volfram žarna nit žarulja",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se kemijski element sa simbolom W zbog vrlo visokog tališta tradicionalno koristi za žarne niti žarulja?",
+    "answers": [
+      "Volfram",
+      "Wolfram",
+      "Tungsten"
+    ],
+    "explanation": "Volfram ima iznimno visoko talište i koristio se u žarnim nitima.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/74/tungsten"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8600-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Tehnologija",
+    "focus": "Mozilla Firefox crvena panda ime",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Ime kojeg internetskog preglednika doslovno znači 'vatrena lisica', iako se tim engleskim nazivom može označavati i crvena panda?",
+    "answers": [
+      "Firefox",
+      "Mozilla Firefox"
+    ],
+    "explanation": "Firefox je naziv Mozilla internetskog preglednika; 'firefox' može označavati crvenu pandu.",
+    "sources": [
+      "https://www.mozilla.org/en-US/firefox/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8601-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Povijest",
+    "focus": "Bostonska čajanka 1773",
+    "difficulty": 2,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Godine 1773. kolonisti su u jednoj američkoj luci bacili sanduke čaja u more u znak prosvjeda protiv britanske porezne politike. Kako nazivamo taj događaj?",
+    "answers": [
+      "Bostonska čajanka",
+      "Boston Tea Party"
+    ],
+    "explanation": "Bostonska čajanka bila je prosvjed u Bostonu 16. prosinca 1773.",
+    "sources": [
+      "https://www.britannica.com/event/Boston-Tea-Party"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8602-20261123",
+    "createdAt": "2026-11-23T19:35:16+01:00",
+    "updatedAt": "2026-11-23T19:35:16+01:00",
+    "topic": "Astronomija",
+    "focus": "Europa Jupiter mjesec podledeni ocean",
+    "difficulty": 2,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji Jupiterov mjesec ima ledenu površinu ispod koje znanstvenici očekuju globalni ocean tekuće vode?",
+    "answers": [
+      "Europa"
+    ],
+    "explanation": "Europa je Jupiterov ledeni mjesec s dokazima o podzemnom oceanu.",
+    "sources": [
+      "https://science.nasa.gov/jupiter/moons/europa/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
