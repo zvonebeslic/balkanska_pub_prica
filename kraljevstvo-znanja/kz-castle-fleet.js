@@ -11,95 +11,8 @@
   const START_EPOCH=Date.UTC(2026,10,22,17,0,0); // ista pocetna vremenska referenca za sve igrace
   const WAYPOINTS=[[0,0],[200,0],[400,0],[500,0],[525,22],[550,-22],
     [575,22],[600,0],[800,0],[1000,0]];
-  const BALKAN=[
-    ["Sarajevo",43.8563,18.4131],["Banja Luka",44.7722,17.1910],
-    ["Mostar",43.3438,17.8078],["Trebinje",42.7119,18.3436],
-    ["Tuzla",44.5384,18.6762],["Zagreb",45.8150,15.9819],
-    ["Split",43.5081,16.4402],["Rijeka",45.3271,14.4422],
-    ["Osijek",45.5550,18.6955],["Dubrovnik",42.6507,18.0944],
-    ["Ljubljana",46.0569,14.5058],["Maribor",46.5547,15.6459],
-    ["Beograd",44.7866,20.4489],["Novi Sad",45.2671,19.8335],
-    ["Niš",43.3209,21.8958],["Podgorica",42.4304,19.2594],
-    ["Kotor",42.4247,18.7712],["Skopje",41.9981,21.4254],
-    ["Ohrid",41.1231,20.8016],["Tirana",41.3275,19.8187],
-    ["Priština",42.6629,21.1655],["Sofija",42.6977,23.3219],
-    ["Plovdiv",42.1354,24.7453],["Solun",40.6401,22.9444],
-    ["Atena",37.9838,23.7275]
-  ];
-  const GROUPS=[
-    ["Njemačka",[
-      ["Berlin",52.5200,13.4050],["München",48.1372,11.5755],
-      ["Hamburg",53.5511,9.9937],["Köln",50.9375,6.9603],
-      ["Frankfurt",50.1109,8.6821],["Stuttgart",48.7758,9.1829],
-      ["Düsseldorf",51.2277,6.7735],["Leipzig",51.3397,12.3731],
-      ["Dresden",51.0504,13.7373],["Nürnberg",49.4521,11.0767]
-    ]],
-    ["Austrija",[
-      ["Beč",48.2082,16.3738],["Salzburg",47.8095,13.0550],
-      ["Graz",47.0707,15.4395],["Linz",48.3069,14.2858],
-      ["Innsbruck",47.2692,11.4041],["Klagenfurt",46.6247,14.3053],
-      ["Bregenz",47.5031,9.7471],["St. Pölten",48.2047,15.6256],
-      ["Eisenstadt",47.8457,16.5233],["Villach",46.6111,13.8558]
-    ]],
-    ["Sjeverna Amerika",[
-      ["New York",40.7128,-74.0060],["Los Angeles",34.0522,-118.2437],
-      ["Chicago",41.8781,-87.6298],["Miami",25.7617,-80.1918],
-      ["Toronto",43.6532,-79.3832],["Vancouver",49.2827,-123.1207],
-      ["Ciudad de México",19.4326,-99.1332],["Monterrey",25.6866,-100.3161],
-      ["Havana",23.1136,-82.3666],["Anchorage",61.2181,-149.9003]
-    ]],
-    ["Južna Amerika",[
-      ["Buenos Aires",-34.6037,-58.3816],["Santiago",-33.4489,-70.6693],
-      ["Lima",-12.0464,-77.0428],["Bogotá",4.7110,-74.0721],
-      ["Rio de Janeiro",-22.9068,-43.1729],["São Paulo",-23.5505,-46.6333],
-      ["Quito",-0.1807,-78.4678],["Montevideo",-34.9011,-56.1645],
-      ["La Paz",-16.4897,-68.1193],["Caracas",10.4806,-66.9036]
-    ]],
-    ["Azija",[
-      ["Tokio",35.6762,139.6503],["Seul",37.5665,126.9780],
-      ["Peking",39.9042,116.4074],["Delhi",28.6139,77.2090],
-      ["Mumbai",19.0760,72.8777],["Bangkok",13.7563,100.5018],
-      ["Jakarta",-6.2088,106.8456],["Singapur",1.3521,103.8198],
-      ["Hanoi",21.0285,105.8542],["Manila",14.5995,120.9842]
-    ]],
-    ["Europa",[
-      ["Pariz",48.8566,2.3522],["London",51.5074,-0.1278],
-      ["Madrid",40.4168,-3.7038],["Rim",41.9028,12.4964],
-      ["Varšava",52.2297,21.0122],["Prag",50.0755,14.4378],
-      ["Amsterdam",52.3676,4.9041],["Stockholm",59.3293,18.0686],
-      ["Oslo",59.9139,10.7522],["Helsinki",60.1699,24.9384]
-    ]],
-    ["Afrika",[
-      ["Kairo",30.0444,31.2357],["Lagos",6.5244,3.3792],
-      ["Nairobi",-1.2921,36.8219],["Cape Town",-33.9249,18.4241],
-      ["Johannesburg",-26.2041,28.0473],["Adis Abeba",8.9806,38.7578],
-      ["Casablanca",33.5731,-7.5898],["Dakar",14.7167,-17.4677],
-      ["Tunis",36.8065,10.1815],["Accra",5.6037,-0.1870]
-    ]],
-    ["Antarktika",[
-      ["McMurdo",-77.8419,166.6863],["Palmer",-64.774,-64.053],
-      ["Rothera",-67.568,-68.125],["Casey",-66.283,110.527],
-      ["Davis",-68.576,77.968],["Mawson",-67.602,62.875],
-      ["Neumayer III",-70.678,-8.274],["Concordia",-75.100,123.350],
-      ["Vostok",-78.4667,106.8333],["Halley VI",-75.581,-26.568]
-    ]],
-    ["Australija",[
-      ["Sydney",-33.8688,151.2093],["Melbourne",-37.8136,144.9631],
-      ["Brisbane",-27.4698,153.0251],["Perth",-31.9505,115.8605],
-      ["Adelaide",-34.9285,138.6007],["Darwin",-12.4634,130.8456],
-      ["Hobart",-42.8821,147.3272],["Canberra",-35.2809,149.1300],
-      ["Cairns",-16.9186,145.7781],["Alice Springs",-23.6980,133.8807]
-    ]],
-    ["Arktik",[
-      ["Longyearbyen",78.2232,15.6469],["Ny-Ålesund",78.924,11.931],
-      ["Tromsø",69.6492,18.9553],["Murmansk",68.9585,33.0827],
-      ["Kiruna",67.8558,20.2253],["Resolute",74.6973,-94.8297],
-      ["Utqiaġvik",71.2906,-156.7886],["Arctic Bay",73.037,-85.152],
-      ["Norilsk",69.3535,88.2027],["Tiksi",71.644,128.879]
-    ]]
-  ];
-  const SEEDS=[{id:0,name:"Banja Luka",region:"Balkan",lat:44.7722,lng:17.1910}];
-  let nextId=1;
+  // Globalni položaji dolaze samo iz jednog kataloga, bez popisa gradova.
+  const MAX_EXTRA=1000;
   function hash(a,b){
     let x=(Math.imul(a+0x9e3779b9,1664525) ^ Math.imul(b+17,1013904223))|0;
     x=Math.imul(x^(x>>>16),0x7feb352d);
@@ -123,28 +36,12 @@
     return norm(Math.atan2(Math.sin(z)*Math.cos(y),
       Math.cos(x)*Math.sin(y)-Math.sin(x)*Math.cos(y)*Math.cos(z))/RAD);
   }
-  BALKAN.forEach(function(item,cityIndex){
-    for(let k=0;k<4;k++){
-      const id=nextId++;
-      const p=go({lat:item[1],lng:item[2]},hash(id,21)*360,2+hash(id,31)*14);
-      SEEDS.push({id:id,name:item[0],region:"Balkan",lat:p.lat,lng:p.lng});
-    }
-  });
-  GROUPS.forEach(function(group){
-    group[1].forEach(function(item){
-      SEEDS.push({id:nextId++,name:item[0],region:group[0],lat:item[1],lng:item[2]});
-    });
-  });
-  if(nextId!==201)throw Error("KZ: očekivano je 201 početni dvorac, dobiveno "+nextId);
-  const MAX_EXTRA=1000;
   function castle(id){
     if(id>=2000&&id<13200){
-      return window.KZIronLegion?.info(id)||{id:id,name:"Sir Željeznik",region:"svijet"};
+      return window.KZIronLegion?.info(id)||{id:id,name:"Sir Željeznik",region:"Svijet"};
     }
-    if(id<SEEDS.length)return SEEDS[id];
-    const seed=SEEDS[id%SEEDS.length];
-    const p=go(seed,hash(id,303)*360,3+hash(id,309)*18);
-    return {id:id,name:seed.name,region:seed.region,lat:p.lat,lng:p.lng};
+    const p=window.KZWorldRegistry.pointFor(id,0);
+    return {id:id,name:"Hodajući dvorac",region:"Svijet",lat:p.lat,lng:p.lng};
   }
   let map=null,sprite=null,pane=null,enabled=true,ready=false,selected=null;
   let gps=null,gpsWatch=null,activeChallenge=null,gpsStatus="GPS nije uključen.";
@@ -153,8 +50,7 @@
   let statusError=false,cache=new Map(),baseRouteCache=new Map();
   const total=()=>201+Math.min(MAX_EXTRA,kingdomCount);
   function spawn(c,gen){
-    if(!gen)return {lat:c.lat,lng:c.lng};
-    return go(c,hash(c.id,gen*33)*360,6+hash(c.id,gen*77)*22);
+    return window.KZWorldRegistry.pointFor(c.id,gen);
   }
   function makeRoute(c,gen,cycle){
     const key=c.id+":"+gen+":"+cycle;
@@ -278,9 +174,9 @@
     const now=realClock();
     visible.forEach(function(item,id){
       const trip=calculate(id,now);
-      // Zemljopisna putanja: osvježi položaj svakih 0,4 s.
+      // Položaj osvježavamo približno 60 puta u sekundi; animacijski atlas ostaje izvoran.
       // Animacija: samostalnih 40 kadrova, bez obzira na brzinu putovanja.
-      if(!item.lastMoved || now-item.lastMoved>=400){
+      if(!item.lastMoved || now-item.lastMoved>=16){
         item.marker.setLatLng([trip.point.lat,trip.point.lng]);
         item.lastMoved=now;
       }
@@ -585,7 +481,13 @@
       setupButton();
       loadStatus();
       setVisible();
-      frameTimer=setInterval(tick,70);
+      // requestAnimationFrame sprječava nepravilne intervale i nepotreban rad u pozadini.
+      let lastPaint=0;
+      const animate=(time)=>{
+        frameTimer=requestAnimationFrame(animate);
+        if(time-lastPaint>=1000/60){lastPaint=time;tick();}
+      };
+      frameTimer=requestAnimationFrame(animate);
       statusTimer=setInterval(loadStatus,8000);
       setInterval(setVisible,7000);
     };
@@ -598,7 +500,7 @@
     if(ready)setVisible();
   });
   window.KZCastleFleet={
-    count:()=>total(),regions:()=>GROUPS.map(g=>g[0]),
+    count:()=>total(),regions:()=>["Globalni raspored"],
     visibleCount:()=>visible.size,
     locate:(id,t)=>calculate(id,t||realClock()),
     openFight:(id)=>{if(Number.isInteger(id)&&id>=2000&&id<13200)openFight(id);},
