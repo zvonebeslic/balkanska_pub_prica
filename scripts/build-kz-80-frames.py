@@ -1,35 +1,26 @@
 #!/usr/bin/env python3
-"""Build seven genuine 80-image RGBA sprite atlases for Kraljevstvo znanja.
+"""Build 80-frame RGBA sprite atlases for the two retained Kraljevstvo znanja guardians.
 
-Raster characters: original 40 frames + 40 motion-compensated optical-flow
-in-between renders, one in-between for each original transition including
-the loop seam. Not a copy/paste or plain alpha crossfade.
-
-SVG characters: 80 unique vector poses rasterized at full per-frame quality.
-One frame atlas per type, used by all instances of that type.
+Walking castle and Sir Željezni: each 40 original frames plus 40 optical-flow
+midpoints, including the loop transition. The Magic Forest is separately
+supplied as a video; deleted decorative characters are not regenerated.
 """
 from __future__ import annotations
 import base64
 import io
 import json
-import math
 import re
-import subprocess
-from copy import deepcopy
 from pathlib import Path
-from xml.etree import ElementTree as ET
 
 import cv2
 import numpy as np
 from PIL import Image
-import cairosvg
 
 ROOT = Path(__file__).resolve().parent.parent
 GAME = ROOT / "kraljevstvo-znanja"
 FRAMES = 80
 COLS = 10
 ROWS = 8
-SMALL_SIZE = 160
 
 OLD_RASTER = {
     "castle": ("kz-roaming-castle-atlas.js", "kz-roaming-castle-atlas-80.js",
@@ -138,104 +129,8 @@ def build_raster():
         print(f"OK {kind}: 80 frames, 10x8 x {px}px; {unique} unique; {len(data):,} chars")
 
 
-def original_svgs() -> dict[str, str]:
-    node = """
-        global.window = {};
-        require('./kraljevstvo-znanja/kz-world-registry.js');
-        process.stdout.write(JSON.stringify(window.KZWorldRegistry.svgSprites));
-    """
-    out = subprocess.check_output(["node", "-e", node], cwd=ROOT, text=True)
-    return json.loads(out)
-
-
-def change_transform(root: ET.Element, class_name: str,
-                     transform: str | None = None, opacity: float | None = None):
-    for el in root.iter():
-        if class_name in el.attrib.get("class", "").split():
-            if transform is not None:
-                el.set("transform", transform)
-            if opacity is not None:
-                el.set("opacity", f"{opacity:.5f}")
-
-
-def create_pose(original: str, kind: str, i: int) -> Image.Image:
-    # SVG CSS variables are resolved by browsers, not by CairoSVG.
-    original = original.replace('var(--life-color,#49d99e)', '#49d99e')
-    root = ET.fromstring(original)
-    t = 2 * math.pi * i / FRAMES
-    swing = math.sin(t)
-    wing = math.sin(2 * t)
-    float_y = 0.9 * math.sin(t - 0.5)
-    # Keep painted floor shadow stationary; animate body above it.
-    children = list(root)
-    if children:
-        body = ET.Element("{http://www.w3.org/2000/svg}g")
-        body.set("transform", f"translate(0 {float_y:.5f})")
-        for child in children[1:]:
-            root.remove(child)
-            body.append(child)
-        root.append(body)
-    if kind == "dragon":
-        change_transform(root, "life-wing-left", f"rotate({-8+21*wing:.5f} 49 48)")
-        change_transform(root, "life-wing-right", f"rotate({8-21*wing:.5f} 64 47)")
-        # Smooth intermittent breath of fire, not an abrupt flashing frame.
-        pulse = max(0.0, math.sin(t - 0.9)) ** 3
-        change_transform(root, "life-flame",
-                         f"translate({2*pulse:.4f} 0) scale({1+0.13*pulse:.4f} 1)",
-                         0.05 + 0.95 * pulse)
-    elif kind == "knight":
-        change_transform(root, "life-leg-left", f"rotate({11*swing:.4f} 41 83)")
-        change_transform(root, "life-leg-right", f"rotate({-11*swing:.4f} 62 84)")
-        change_transform(root, "life-sword", f"rotate({-12+16*math.sin(t+0.6):.4f} 76 48)")
-        change_transform(root, "life-cape", f"rotate({2.8*math.sin(t-0.9):.4f} 48 52)")
-    elif kind == "owl":
-        change_transform(root, "life-owl-wing-left", f"rotate({-5+17*wing:.4f} 32 55)")
-        change_transform(root, "life-owl-wing-right", f"rotate({5-17*wing:.4f} 77 56)")
-        blink_phase = i % 80
-        blink = 1.0 - 0.92 * max(0, 1-abs(blink_phase-63)/3)
-        change_transform(root, "life-blink", f"translate(0 {48*(1-blink):.5f}) scale(1 {blink:.5f})")
-    elif kind == "wizard":
-        change_transform(root, "life-wizard-arm", f"rotate({14*swing:.5f} 68 62)")
-        change_transform(root, "life-star", f"rotate({i*4.5:.4f} 88 16)",
-                         0.7+0.3*abs(math.sin(2*t)))
-    elif kind == "banner":
-        change_transform(root, "life-flag",
-                         f"translate({3*math.sin(t):.5f} 0) "
-                         f"translate(21 0) scale({1-0.07*math.cos(2*t):.5f} 1) translate(-21 0)")
-    else:
-        raise ValueError("Unknown vector character " + kind)
-    png = cairosvg.svg2png(bytestring=ET.tostring(root),
-                           output_width=SMALL_SIZE, output_height=SMALL_SIZE)
-    image = Image.open(io.BytesIO(png)).convert("RGBA")
-    return image
-
-
-def build_vectors():
-    svgs = original_svgs()
-    expected = ["dragon", "knight", "owl", "wizard", "banner"]
-    if not all(name in svgs for name in expected):
-        raise ValueError("Expected all five SVG character source drawings")
-    output: dict[str, str] = {}
-    for kind in expected:
-        images = [create_pose(svgs[kind], kind, i) for i in range(FRAMES)]
-        unique = len({frame.tobytes() for frame in images})
-        if unique < 75:
-            raise ValueError(f"{kind}: only {unique} distinct poses")
-        output[kind] = webp_data(compose(images, SMALL_SIZE))
-        print(f"OK {kind}: 80 unique SVG-rendered poses, 10x8 x {SMALL_SIZE}px")
-    dest = GAME / "kz-small-world-80.js"
-    dest.write_text(
-        "/* Five original illustrated species, 80 unique RGBA frames each, "
-        "10x8, 160x160. Generated from the central SVG catalog. */\n"
-        + "window.KZ_SMALL_80 = Object.freeze("
-        + json.dumps(output, ensure_ascii=False, separators=(",", ":"))
-        + ");\n", encoding="utf-8")
-    print(f"OK {dest.name}: {dest.stat().st_size:,} bytes")
-
-
 def main():
     build_raster()
-    build_vectors()
 
 
 if __name__ == "__main__":
