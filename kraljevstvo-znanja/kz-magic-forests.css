@@ -1,5 +1,5 @@
 /* Čarobna šuma — SAMO originalni druidov video i poster, bez emoji stabala.
- * Svaki objekt zauzima 4 x 5 blokova = 20 kvadrata = 400 m².
+ * Svaki objekt zauzima 5 x 5 blokova = 25 kvadrata = 500 m².
  */
 #kingdom-map .leaflet-pane.kz-forest-pane{
   z-index:1260!important;pointer-events:none!important;
