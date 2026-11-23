@@ -8,15 +8,35 @@
   const TYPES=Object.freeze({
     castle:Object.freeze({
       id:"castle",label:"Hodajući dvorac",atlasKey:"KZ_ROAMING_CASTLE_WEBP",
-      frameWidth:192,frameHeight:192,columns:40,sourceFrames:40,
-      targetFrames:80,sourceFormat:"webp",periodMs:2800,
+      frameWidth:192,frameHeight:192,targetFrames:80,
+      sourceFormat:"webp",periodMs:2667,
       mobileLimit:26,desktopLimit:44,minZoom:12,moves:true
     }),
     iron:Object.freeze({
       id:"iron",label:"Sir Željeznik",atlasKey:"KZ_IRON_ROBOT_ATLAS",
-      frameWidth:224,frameHeight:224,columns:8,sourceFrames:40,
-      targetFrames:80,sourceFormat:"webp",periodMs:4200,
+      frameWidth:224,frameHeight:224,targetFrames:80,
+      sourceFormat:"webp",periodMs:2667,
       mobileLimit:18,desktopLimit:36,minZoom:12,moves:false
+    }),
+    dragon:Object.freeze({
+      id:"dragon",label:"Zmaj",atlasKey:"KZ_SMALL_80",
+      frameWidth:160,frameHeight:160,targetFrames:80,periodMs:2400,minZoom:10,moves:false
+    }),
+    knight:Object.freeze({
+      id:"knight",label:"Vitez",atlasKey:"KZ_SMALL_80",
+      frameWidth:160,frameHeight:160,targetFrames:80,periodMs:2667,minZoom:10,moves:false
+    }),
+    owl:Object.freeze({
+      id:"owl",label:"Sova",atlasKey:"KZ_SMALL_80",
+      frameWidth:160,frameHeight:160,targetFrames:80,periodMs:3200,minZoom:10,moves:false
+    }),
+    wizard:Object.freeze({
+      id:"wizard",label:"Čarobnjak",atlasKey:"KZ_SMALL_80",
+      frameWidth:160,frameHeight:160,targetFrames:80,periodMs:2667,minZoom:10,moves:false
+    }),
+    banner:Object.freeze({
+      id:"banner",label:"Zastava",atlasKey:"KZ_SMALL_80",
+      frameWidth:160,frameHeight:160,targetFrames:80,periodMs:2400,minZoom:10,moves:false
     })
   });
   // Pojednostavljene kopnene siluete. Ovdje je jedino mjesto
@@ -316,7 +336,9 @@
   function info(id){return TYPES[id]||null;}
   function source(id){
     const type=info(id);
-    return type?window[type.atlasKey]||null:null;
+    if(!type)return null;
+    if(type.atlasKey==="KZ_SMALL_80")return window.KZ_SMALL_80?.[id]||null;
+    return window[type.atlasKey]||null;
   }
   // Jedan renderer za sve vrste: kompatibilan i sa 40 i s 80
   // STVARNIH WebP kadrova, bez dupliciranja i miješanja alfa kanala.
@@ -331,7 +353,8 @@
     const rows=img.naturalHeight/type.frameHeight;
     const total=columns*rows;
     if(!Number.isInteger(columns)||!Number.isInteger(rows)||
-       ![40,80].includes(total) && !(id==="iron"&&total===9))return null;
+       (total!==80 && !(id==="castle"&&total===40) &&
+        !(id==="iron"&&(total===40||total===9))))return null;
     const result={columns:columns,rows:rows,total:total,
       width:type.frameWidth,height:type.frameHeight};
     layouts.set(img,result);
@@ -365,6 +388,6 @@
     blockFor:blockFor,pointFromBlock:pointFromBlock,regionFor:regionFor,
     regionName:regionName,regionQuotas:quotas,regionNames:REGION_NAMES,
     isLand:isLand,prepare:prepare,layout:layout,frameAt:frameAt,paint:paint,
-    actualFrames:(id,img)=>layout(id,img)?.total||info(id)?.sourceFrames||0
+    actualFrames:(id,img)=>layout(id,img)?.total||0
   });
 })();
