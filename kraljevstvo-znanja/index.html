@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./kz-castle-fleet.css?v=2">
   <link rel="stylesheet" href="./kz-iron-legion.css?v=4">
   <link rel="stylesheet" href="./kz-magic-forests.css?v=7">
+  <link rel="stylesheet" href="./kz-coordinate-notes.css?v=1">
 </head>
 <body>
 <header class="site-header">
@@ -27,10 +28,11 @@
   </div>
   <section class="map-panel">
     <div class="map-top"><div><strong>♛ Kraljevska karta · uživo</strong><small id="map-hint">Stvarna zemljopisna karta · fantasy teritoriji · odaberi bilo koje mjesto, bez GPS-a.</small></div>
-      <div class="map-actions"><button type="button" id="map-life-toggle" class="minor life-toggle" aria-pressed="true" title="Uključi ili isključi animirane likove na karti">🌲 Živi svijet: UKLJ.</button><button type="button" id="kz-forest-button" class="minor kz-world-locate" title="Pronađi najbližu čarobnu šumu">🌲 Šume (341)</button><button type="button" id="kz-iron-button" class="minor kz-world-locate" title="Pronađi najbližeg Sir Željeznog">⚙️ Sir Željeznik (11.200)</button><button id="choose-map-center" class="minor map-place-action">✥ Odaberi mjesto</button><button id="refresh-btn" class="minor">↻ Osvježi</button></div>
+      <div class="map-actions"><button type="button" id="map-life-toggle" class="minor life-toggle" aria-pressed="true" title="Uključi ili isključi animirane likove na karti">🌲 Živi svijet: UKLJ.</button><button type="button" id="kz-forest-button" class="minor kz-world-locate" title="Pronađi najbližu čarobnu šumu">🌲 Šume (341)</button><button type="button" id="kz-iron-button" class="minor kz-world-locate" title="Pronađi najbližeg Sir Željeznog">⚙️ Sir Željeznik (11.200)</button><button type="button" id="kz-coordinate-bookmarks" class="minor" title="Upiši, pronađi i spremi koordinate svojega kraljevstva">⌖ Koordinate</button><button id="choose-map-center" class="minor map-place-action">✥ Odaberi mjesto</button><button id="refresh-btn" class="minor">↻ Osvježi</button></div>
     </div>
     <div class="map-stage">
       <div id="kingdom-map" role="application" aria-label="Stvarna geografska karta s fantasy prikazom teritorija"></div>
+      <div class="kz-map-crosshair" aria-hidden="true"><span></span></div>
       <div id="kz-map-xy" class="kz-map-xy" aria-label="Koordinate kvadrata u središtu karte">X — · Y —</div>
       <div class="fantasy-map-crest" aria-hidden="true"><span>♛</span><strong>KRALJEVSKA ZEMLJA</strong><small>ZNANJE JE MOĆ</small></div>
       <div class="fantasy-map-compass" aria-hidden="true"><span class="compass-n">S</span><span class="compass-w">Z</span><span class="compass-rose">✦</span><span class="compass-e">I</span><span class="compass-s">J</span></div>
@@ -98,6 +100,7 @@
 <script src="./kz-castle-fleet.js?v=82" defer></script>
 <script src="./kz-sir-zeljeznik-80.js?v=80" defer></script>
 <script src="./kz-iron-legion.js?v=81" defer></script>
-<script src="./kraljevstvo-znanja.js?v=7" defer></script>
+<script src="./kz-coordinate-notes.js?v=1" defer></script>
+<script src="./kraljevstvo-znanja.js?v=8" defer></script>
 </body>
 </html>
