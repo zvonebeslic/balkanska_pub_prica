@@ -32,6 +32,15 @@ Pokrenuti workflow `.github/workflows/kz-80-frame-atlases.yml` ili lokalno `pyth
 
 Prilikom dodavanja nove vrste lika: registrirati jednu vrstu i izvor grafike u katalogu; svi primjerci koriste isti atlas i zajednički renderer. Ne umnažati slike za svaki primjerak, niti unositi tisuće gradskih koordinata ručno.
 
+
+## Čarobne šume — stvarni animirani video (23. 11. 2026.)
+
+- **Odobrena ilustracija i pokreti:** ista detaljna izometrijska šuma s druidom uz kotao, potokom, slapovima, životinjama i čarobnim svjetlima kao u korisničkom videopregledu. Ne zamjenjivati s emoji drvećem, proceduralno generiranim stablima ni nekim drugim motivom.
+- **Medij:** `media/carobna-suma-300m2.webm`, transparentni VP9 s 4 s animacije, optimiziran na 400 × 346 px (20 fps) za prikaz na karti. `media/carobna-suma-300m2-poster.webp` izveden je iz prvog kadra tog istog videa; automatizirana izrada je u `.github/workflows/kz-forest-poster.yml`.
+- **Količina:** 341 trajna položaja: Balkan 200; Njemačka 20; ostatak Europe 20; Azija 20; Afrika 20; Sjeverna Amerika 20; Južna Amerika 20; Australija/Oceanija 20; Antarktika 1. Za svaki položaj koristi se ista URL datoteka, bez kopija videa po lokaciji.
+- **Mjerilo:** svaka šuma zauzima 3 × 5 globalnih kvadrata po 20 m², tj. točno **300 m²** (15 × 20 m). Položaj je deterministički odabran na kopnu; ne mijenja teritorij kraljevstava.
+- **Prikaz:** na regionalnoj karti vide se minijature **stvarnog motiva iz videa**, nikada samo 🌲🌳🌲. Najbliže minijature mogu se animirati pri srednjem zumu; na zumu 19+ prikazuje se geografski vezani video, najviše 2 aktivna dekodera na mobitelu odnosno 4 na većem zaslonu. Video je utišan, ponavlja se u petlji i ne blokira klikove na teritorij. Kada je WebM nepodržan, pokazuje se poster stvarne šume.
+
 ## Veze s glavnim KvizToGo
 - `/online-kviz.html` vodi u igru preko `/kraljevstvo-znanja/`.
 - Stare adrese `/kraljevstvo-znanja.html` i `/kvadrati-znanja.html` ostaju kompatibilna preusmjeravanja.
