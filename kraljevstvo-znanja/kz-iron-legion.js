@@ -1,30 +1,15 @@
-/* KvizToGo — Sir Željeznik: stalni (neputujući) animirani čuvari.
- * Balkan 5000, ostatak Europe 2000, 6 drugih kontinenata po 700.
- * UKUPNO 11200, lokalno deterministički raspoređeno uz gradove i postaje.
- * Na karti se stvaraju samo vidljivi čuvari nakon zuma 12.
- * Svi dijele 1 rasterizirani WebP atlas (40 kadrova; 8 x 5), bez SVG-a/GLB-a.
+/* Kraljevstvo znanja — globalno raspoređeni čuvari iz zajedničkog kataloga.
+ * Samo vidljivi čuvari se iscrtavaju; 40/80 stvarnih WebP kadrova.
  */
 (function(){
   "use strict";
-  const MIN_ZOOM=12, FRAMES=40,FRAME_MS=105;
-  let FW=224,FH=224,ACTIVE_FRAMES=40,SPRITE_COLS=8;
-  const EARTH=6371.0088, D2R=Math.PI/180, MAX_MOBILE=18, MAX_DESKTOP=36;
+  const ICON=window.KZWorldRegistry.info("iron"),MIN_ZOOM=ICON.minZoom;
+  const FW=ICON.frameWidth,FH=ICON.frameHeight,D2R=Math.PI/180;
+  const MAX_MOBILE=ICON.mobileLimit,MAX_DESKTOP=ICON.desktopLimit;
   // Raspored je namjerno vezan uz kopnene gradove i istraživačke postaje.
   // Četvrti podatak je približni polumjer disperzije u kilometrima.
   const RENDER_TOTAL=11200;
   // Za sve čuvare vrijedi ista globalna raspršena mreža iz kataloga.
-  function hash(a,b){
-    let x=(Math.imul(a+0x9e3779b9,1664525)^Math.imul(b+19,1013904223))|0;
-    x=Math.imul(x^(x>>>16),0x7feb352d);
-    x=Math.imul(x^(x>>>15),0x846ca68b);
-    return ((x^(x>>>16))>>>0)/4294967296;
-  }
-  function dest(p,deg,km){
-    const d=km/EARTH,a=p.lat*D2R,l=p.lng*D2R,b=deg*D2R;
-    const y=Math.asin(Math.max(-1,Math.min(1,Math.sin(a)*Math.cos(d)+Math.cos(a)*Math.sin(d)*Math.cos(b))));
-    const x=l+Math.atan2(Math.sin(b)*Math.sin(d)*Math.cos(a),Math.cos(d)-Math.sin(a)*Math.sin(y));
-    return {lat:y/D2R,lng:((x/D2R+540)%360)-180};
-  }
   // Stable ids 2000..13199. All clients calculate the same 11200 positions.
   const guards=[],byId=new Map(),cells=new Map(),states=new Map();
   function cellKey(p){
@@ -102,16 +87,13 @@
     return result;
   }
   function frameDraw(entry,time){
-    const node=entry.marker.getElement()?.querySelector("canvas");
-    if(!node||!sprite)return;
-    const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const n=reduced?0:Math.floor((time+entry.id*173)% (ACTIVE_FRAMES*FRAME_MS)/FRAME_MS);
-    if(n===entry.frame)return;
-    const context=node.getContext("2d",{alpha:true});
-    if(!context)return;
-    context.clearRect(0,0,FW,FH);
-    context.drawImage(sprite,(n%SPRITE_COLS)*FW,Math.floor(n/SPRITE_COLS)*FH,FW,FH,0,0,FW,FH);
-    entry.frame=n;
+    const canvas=entry.marker.getElement()?.querySelector("canvas");
+    if(!canvas||!sprite)return;
+    const frame=window.KZWorldRegistry.frameAt("iron",sprite,time,entry.id);
+    if(frame===entry.frame)return;
+    if(window.KZWorldRegistry.paint("iron",sprite,canvas,frame,false)){
+      entry.frame=frame;
+    }
   }
   function refresh(){
     if(!map||!ready)return;
@@ -182,7 +164,7 @@
     refresh();
   }
   function mount(m){
-    if(map||!m||!window.L||!window.KZ_IRON_ROBOT_ATLAS)return;
+    if(map||!m||!window.L||!window.KZWorldRegistry.source('iron'))return;
     map=m;
     pane=map.getPane("kzIronPane")||map.createPane("kzIronPane");
     pane.classList.add("kz-iron-pane");
@@ -191,18 +173,10 @@
     pane.parentNode?.appendChild(pane);
     const img=new Image();
     img.onload=()=>{
-      // Novi 40-kadrovni atlas: 8 stupaca × 5 redova, 224 px po kadru.
-      // Ne miješamo dva prozirna kadra: alpha blending je prethodno
-      // stvarao bljeskanje i dvostruke rubove na silueti.
-      if(img.naturalWidth===224*8&&img.naturalHeight===224*5){
-        FW=224;FH=224;ACTIVE_FRAMES=40;SPRITE_COLS=8;sprite=img;
-      }else if(img.naturalWidth===224*9&&img.naturalHeight===224){
-        // Sigurna rezervna varijanta prikazuje 9 izvornih poza bez
-        // lažnih, poluprozirnih međukadrova.
-        FW=224;FH=224;ACTIVE_FRAMES=9;SPRITE_COLS=9;sprite=img;
-      }else{
-        console.warn("KZ: atlas Sir Željeznika mora biti 8×5 (40) ili 9×1 (9)");return;
+      if(!window.KZWorldRegistry.layout("iron",img)){
+        console.warn("KZ: Sir Željeznik očekuje atlas od 40 ili 80 pravih kadrova");return;
       }
+      sprite=img;
       ready=true;
       map.on("moveend zoomend",()=>{
         clearTimeout(pendingRefresh);
@@ -223,7 +197,7 @@
       clock=requestAnimationFrame(animate);
     };
     img.onerror=()=>console.warn("KZ: Sir Željeznik sprite atlas not available");
-    img.src=window.KZ_IRON_ROBOT_ATLAS;
+    img.src=window.KZWorldRegistry.source('iron');
   }
   window.addEventListener("kz:map-ready",e=>mount(e.detail?.map));
   window.addEventListener("kz:guardian-status",e=>onStatus(e.detail?.states));
