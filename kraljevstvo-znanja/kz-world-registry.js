@@ -360,10 +360,11 @@
     layouts.set(img,result);
     return result;
   }
+  const reducedMotion=window.matchMedia?.("(prefers-reduced-motion: reduce)");
   function frameAt(id,img,time,instanceId){
     const type=info(id),sheet=layout(id,img);
     if(!type||!sheet)return 0;
-    if(window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches)return 0;
+    if(reducedMotion?.matches)return 0;
     const timeOffset=(instanceId||0)*173;
     const phase=((time+timeOffset)%type.periodMs+type.periodMs)%type.periodMs;
     return Math.floor(phase/type.periodMs*sheet.total)%sheet.total;
