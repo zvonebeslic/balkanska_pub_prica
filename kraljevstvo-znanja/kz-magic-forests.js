@@ -242,7 +242,10 @@
     if(map||!m||!window.L)return;
     map=m;
     pane=map.getPane("kzForestPane")||map.createPane("kzForestPane");
+    pane.classList.add("kz-forest-pane");
     pane.style.zIndex="1260";
+    pane.style.pointerEvents="none"; // Video ne smije blokirati klikove na kartu.
+    pane.parentNode?.appendChild(pane);
     layer=L.layerGroup().addTo(map);
     const toggle=document.getElementById("map-life-toggle");
     enabled=toggle?.getAttribute("aria-pressed")!=="false";
