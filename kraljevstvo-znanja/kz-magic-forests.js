@@ -102,7 +102,7 @@
         ))continue;
         const plot=plotFromPoint(lat,lon),key=plot.x+":"+plot.y;
         if(used.has(key))continue;
-        if(existing.some(v=>distanceKm(v.point,plot.point)<region.spacingKm))continue;
+        if(existing.some(v=>distanceKm(v,plot.point)<region.spacingKm))continue;
         const forest=Object.freeze({
           id:nextId++,region:region.name,areaM2:PLOT.areaM2,
           blockX:plot.x,blockY:plot.y,
