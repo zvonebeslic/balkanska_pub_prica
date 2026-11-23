@@ -221,7 +221,7 @@
       const trip=nearestToCenter();
       if(trip)map.flyTo([trip.point.lat,trip.point.lng],Math.max(MIN_ZOOM,map.getZoom()),{duration:1.2});
     });
-    actions.appendChild(button);updateButton();
+    actions.insertBefore(button,document.getElementById("kz-forest-button")||document.getElementById("choose-map-center"));updateButton();
   }
   async function loadStatus(){
     if(fetching||!window.KZCastleRPC?.status)return;
