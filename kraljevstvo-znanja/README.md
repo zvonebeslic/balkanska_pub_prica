@@ -7,7 +7,7 @@ Ovo je zasebna podmapa unutar postojećeg repozitorija KvizToGo, **nije drugi ho
 - Glavna logika: [kraljevstvo-znanja.js](kraljevstvo-znanja.js).
 - Stilovi: [kraljevstvo-znanja.css](kraljevstvo-znanja.css).
 - Živi čuvari: `kz-castle-fleet.js`, `kz-iron-legion.js` i pripadajući CSS.
-- Aktivni animirani atlasi: `kz-roaming-castle-atlas-80.js`, `kz-sir-zeljeznik-80.js` te WebM Čarobne šume.
+- Aktivni mediji su u [media/](media/): `hodajuci-dvorac-80.webp`, `sir-zeljezni-80.webp`, `carobna-suma-300m2.webm` i njezin `carobna-suma-300m2-poster.webp`.
 - Povijesni, **neaktivni** prototipovi u [legacy/](legacy/); ne učitavati bez migracije na GPS i nova pravila.
 - Dokumentacija u [docs/](docs/).
 
@@ -15,7 +15,7 @@ Ovo je zasebna podmapa unutar postojećeg repozitorija KvizToGo, **nije drugi ho
 ## Jedan katalog za sve likove (23. 11. 2026.)
 
 - **Katalog dva preostala atlasna lika:** `kz-world-registry.js` sadrži samo `castle` i `iron`, njihove dimenzije, izvore, animaciju i zajedničku globalnu mrežu 5 × 4 m. Treća i jedina dodatna vrsta je Čarobna šuma u `kz-magic-forests.js`.
-- **Aktivna su samo dva WebP atlasa:** `kz-roaming-castle-atlas-80.js` i `kz-sir-zeljeznik-80.js`, svaki zajednički svim primjercima svoje vrste. Čarobna šuma koristi jedinstveni prozirni WebM s posterom. Izvorni atlasi dvorca i Željeznika s 40 kadrova sačuvani su za regeneraciju.
+- **Aktivna su samo dva WebP atlasa:** `media/hodajuci-dvorac-80.webp` i `media/sir-zeljezni-80.webp`, svaki zajednički svim primjercima svoje vrste. Čarobna šuma koristi `media/carobna-suma-300m2.webm` i `media/carobna-suma-300m2-poster.webp`. Izvorni 40-kadrovski atlasi dvorca i Željeznika čuvaju se u glavnoj mapi igre kao ulazi za generator, ali se ne učitavaju na stranici. Stari 80-kadrovski `.js` atlasi nisu više potrebni niti su aktivni.
 - **Jedan zajednički Canvas renderer:** `KZWorldRegistry.layout/frameAt/paint`. Dinamički prepoznaje izvorne atlase s 40 ili 80 **stvarnih** kadrova (u mreži poput 10 × 8 za 80). Kod dvorca i Željeznika više nema odvojenih postupaka za rezanje i crtanje kadrova.
 - **Preostale su točno tri vrste objekata:** Hodajući dvorac, Sir Željezni i Čarobna šuma. Dvorac i Željezni imaju po 80 kadrova (40 originalnih + 40 interpoliranih) u zasebnim 10 × 8 WebP atlasima. Šuma koristi 4-sekundni animirani WebM. Uklonjeni su zmaj, vitez, sova, čarobnjak, zastava, njihove SVG definicije, CSS animacije, zasebni dekorativni sloj i zajednički atlas.
 - **Početni raspored po stvarnim kvadratima:** Svi likovi nalaze se u središtu jednog globalno poravnatog kvadrata 5 × 4 m, istog kakav igra koristi za teritorije. Nasumični uzorci uz minimalni razmak smanjuju gomilanje; nema vezanja za gradove. Početni X/Y ID kvadrata jedinstven je za svih 12 401 mogućih likova. Svi preglednici dobivaju iste početne koordinate.
@@ -28,7 +28,7 @@ Ovo je zasebna podmapa unutar postojećeg repozitorija KvizToGo, **nije drugi ho
 
 ## Automatska izrada 80 kadrova
 
-Pokrenuti workflow `.github/workflows/kz-80-frame-atlases.yml` ili lokalno `python scripts/build-kz-80-frames.py` uz Pillow, numpy i OpenCV. Workflow proizvodi i provjerava **samo dva aktivna atlasa**, za dvorac i Željeznika. Obnovu pet uklonjenih manjih vrsta automatizacija više ne izvodi.
+Pokrenuti workflow `../.github/workflows/kz-80-frame-atlases.yml` ili lokalno iz korijena repozitorija `python kraljevstvo-znanja/scripts/build-80-frame-atlases.py` uz Pillow, numpy i OpenCV. Workflow proizvodi i provjerava **samo dva aktivna atlasa**, za dvorac i Željeznika. Obnovu pet uklonjenih manjih vrsta automatizacija više ne izvodi.
 
 Nove vrste ne aktivirati automatski: trenutačno su odobrene samo Čarobna šuma, Sir Željezni i Hodajući dvorac. Svi primjerci koriste zajedničke medijske resurse i globalnu mrežu, bez dupliciranja slika po lokaciji.
 
@@ -43,7 +43,7 @@ Nove vrste ne aktivirati automatski: trenutačno su odobrene samo Čarobna šuma
 
 ## Veze s glavnim KvizToGo
 - `/online-kviz.html` vodi u igru preko `/kraljevstvo-znanja/`.
-- Stare adrese `/kraljevstvo-znanja.html` i `/kvadrati-znanja.html` ostaju kompatibilna preusmjeravanja.
+- Stare adrese `/kraljevstvo-znanja.html` i `/kvadrati-znanja.html` ostaju **samo dva mala HTML preusmjeravanja** u korijenu. Sva aktivna programska logika, stilovi, slike, animacije i alati za Kraljevstvo nalaze se u `kraljevstvo-znanja/`.
 - Nema `<base href="/">`: veze na glavne KvizToGo stranice i slike koriste `../`, tako da rade i na GitHub Pages repozitorijskoj putanji.
 - Svi lokalni moduli igre učitavaju se relativno (`./naziv-datoteke`), bez pretpostavke o korijenu domene.
 - Podaci ostaju u istom Supabase projektu; promjena putanje ne mijenja `localStorage` origin ni postojeće identifikatore.
