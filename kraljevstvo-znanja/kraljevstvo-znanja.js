@@ -420,6 +420,15 @@
       (detailed ? cells.length + " m² u prikazu · bijelo obrubljeni rubovi su granice" :
       "obojene oznake prikazuju položaj; uvećaj na 18+ za stvarne granice");
   }
+  function updateMapXY() {
+    if(!map)return;
+    const center=map.getCenter();
+    const projected=xy(center.lat,center.lng);
+    // Brojevi označavaju GLOBALNE INDEKSE 5 × 4 m kvadrata (ne GPS stupnjeve).
+    const gridX=Math.floor(projected.x/5),gridY=Math.floor(projected.y/4);
+    const element=$("kz-map-xy");
+    if(element)element.textContent="X "+gridX+" · Y "+gridY;
+  }
   function initMap() {
     if (!window.L) throw Error("Karta Leaflet nije učitana");
     map = L.map("kingdom-map",{zoomControl:true,worldCopyJump:false}).setView([43.5,17.3],7);
@@ -433,11 +442,18 @@
     labelsLayer = L.layerGroup().addTo(map);
     previewLayer = L.layerGroup().addTo(map);
     lifeLayer = L.layerGroup().addTo(map);
+    updateMapXY();
     window.dispatchEvent(new CustomEvent("kz:map-ready", {detail:{map}}));
     let timer;
     map.on("moveend zoomend", () => {
       clearTimeout(timer);
       timer=setTimeout(reloadMap,240);
+    });
+    // Oznaka slijedi kartu dok je korisnik povlači, bez ažuriranja DOM-a 60x/s.
+    let xyFrame=0;
+    map.on("move zoom",()=>{
+      if(xyFrame)return;
+      xyFrame=requestAnimationFrame(()=>{xyFrame=0;updateMapXY();});
     });
     map.on("click",() => {});
     reloadMap();
