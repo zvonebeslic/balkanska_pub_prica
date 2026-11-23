@@ -54,3 +54,12 @@ Supabase migracije i sjeme čuvara **namjerno** ostaju u standardnim lokacijama
 
 ## Sigurno održavanje
 Mijenjajte kod unutar ove mape. Korijenske datoteke ostatka KvizToGo ne treba dirati osim kad dodajete novu navigacijsku poveznicu. Provjerite navigaciju, JS i CSS, povratak na online kviz, GPS dijalog i Supabase povezivanje nakon objave na Hostingeru.
+
+
+## Rudnik znanja — transparentni WebM (23. 11. 2026.)
+
+- Rudnik znanja koristi `media/rudnik-znanja-3s.webm` (3 s, VP9 s alfa kanalom, 640 × 512 px) i statični `media/rudnik-znanja-poster.webp` dobiven iz prvog kadra. **Nije SVG** i ne koristi CSS animaciju cijelog objekta.
+- Vodeni kotač se okreće, voda teče, teret dizalice se pomiče, a kristali i svjetla pulsiraju, bez prekrajanja ilustracije i glavnog natpisa.
+- `kz-knowledge-mines.js` i `.css` izolirani su u mapi Kraljevstva; isti način učitavanja videa i postera te ograničenja dekodera kao kod Čarobne šume.
+- Ukupno **341 rudnik**, u istim regionalnim omjerima kao šume (200 Balkan, 20 Njemačka, 20 ostatak Europe, po 20 Azija, Afrika, Sjeverna i Južna Amerika te Australija/Oceanija, 1 Antarktika), na drugim, determinističkim položajima. Izbjegnuto je preklapanje položaja sa šumama do 5 km.
+- Svaki rudnik zauzima **500 m²**, istih 5 × 5 globalnih blokova 5 × 4 m kao Čarobna šuma. Gumb „⛏️ Rudnici” pronalazi najbliži objekt; gumb „Živi svijet” uključuje/isključuje i rudnike.

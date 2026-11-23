@@ -1,0 +1,52 @@
+/* Rudnik znanja — SAMO originalni rudnički video i poster, bez emoji stabala.
+ * Svaki objekt zauzima 5 x 5 blokova = 25 kvadrata = 500 m².
+ */
+#kingdom-map .leaflet-pane.kz-mine-pane{
+  z-index:1290!important;pointer-events:none!important;
+}
+#kingdom-map .kz-mine-map-marker{
+  background:transparent!important;border:0!important;
+  pointer-events:auto!important;cursor:pointer;
+  box-shadow:none!important;overflow:visible!important;
+  text-align:center;user-select:none;
+}
+#kingdom-map .kz-mine-mini-frame{
+  display:block;position:relative;width:100%;height:100%;aspect-ratio:auto;
+  pointer-events:none;overflow:visible!important;
+  filter:drop-shadow(0 3px 4px rgba(5,15,10,.65));
+}
+#kingdom-map .kz-mine-mini-image,
+#kingdom-map .kz-mine-mini-video{
+  position:absolute;inset:0;width:100%;height:100%;
+  /* Cuvaj izvorni omjer ilustracije i videa; geografskih 5 x 5 blokova
+     ostaju rezervirani, bez vertikalnog rastezanja Web Mercator projekcijom. */
+  object-fit:contain;object-position:center center;pointer-events:none!important;
+  border:0;background:transparent!important;
+}
+#kingdom-map .kz-mine-mini-video{z-index:1}
+#kingdom-map .kz-mine-map-name{
+  display:block;position:relative;z-index:3;
+  width:max-content;max-width:135px;margin:1px auto 0;
+  padding:3px 7px;border-radius:7px;
+  color:#fff0c8;background:rgba(48,30,13,.94);
+  border:1px solid rgba(239,195,108,.82);
+  font:700 10px/1.28 system-ui,sans-serif;
+  opacity:0;transform:translateY(-3px);
+  box-shadow:0 2px 5px rgba(0,0,0,.32);
+}
+#kingdom-map .kz-mine-map-marker:hover .kz-mine-map-name,
+#kingdom-map .kz-mine-map-marker:focus-within .kz-mine-map-name{
+  opacity:1;
+}
+#kingdom-map .kz-mine-pane video,
+#kingdom-map .kz-mine-pane img{
+  background:transparent!important;pointer-events:none;
+  image-rendering:auto;object-fit:contain;object-position:center center;
+}
+.map-actions .kz-world-locate{white-space:nowrap}
+@media(max-width:620px){
+  .map-actions .kz-world-locate{font-size:.65rem;padding:6px 9px}
+}
+@media(prefers-reduced-motion:reduce){
+  #kingdom-map .kz-mine-mini-video{display:none!important}
+}
