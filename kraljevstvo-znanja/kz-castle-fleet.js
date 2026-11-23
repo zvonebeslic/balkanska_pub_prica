@@ -6,7 +6,8 @@
 (function(){
   "use strict";
   const SPEED_KM_SEC=1/1800, EARTH_KM=6371.0088, RAD=Math.PI/180;
-  const FRAME_W=192, FRAME_H=192, FRAMES=40, MIN_ZOOM=12, GAIT_MS=70;
+  const ICON=window.KZWorldRegistry.info("castle");
+  const FRAME_W=ICON.frameWidth, FRAME_H=ICON.frameHeight, MIN_ZOOM=ICON.minZoom;
   const MAX_RENDER_MOBILE=26, MAX_RENDER_DESKTOP=44;
   const START_EPOCH=Date.UTC(2026,10,22,17,0,0); // ista pocetna vremenska referenca za sve igrace
   const WAYPOINTS=[[0,0],[200,0],[400,0],[500,0],[525,22],[550,-22],
@@ -111,21 +112,14 @@
       iconSize:[w,h],iconAnchor:[Math.round(w/2),Math.round(h*.88)]});
   }
   function drawFrame(entry,trip){
-    const cv=entry.marker.getElement()?.querySelector("canvas");
-    if(!cv)return;
-    // Hod je samostalna animacija: 9 kadrova u 2,8 s bez obzira
-    // putuje li dvorac 1 km za 30 min ili trenutno stoji.
-    const frame=window.matchMedia("(prefers-reduced-motion: reduce)").matches?
-      0:Math.floor((Date.now()+trip.id*137)/GAIT_MS)%FRAMES;
+    const canvas=entry.marker.getElement()?.querySelector("canvas");
+    if(!canvas)return;
+    const frame=window.KZWorldRegistry.frameAt("castle",sprite,Date.now(),trip.id);
     const mirror=Math.sin(trip.bearing*RAD)<-.1;
     if(entry.frame===frame&&entry.mirror===mirror)return;
-    const ctx=cv.getContext("2d",{alpha:true});
-    if(!ctx)return;
-    ctx.clearRect(0,0,FRAME_W,FRAME_H);
-    if(mirror){ctx.save();ctx.translate(FRAME_W,0);ctx.scale(-1,1);}
-    ctx.drawImage(sprite,frame*FRAME_W,0,FRAME_W,FRAME_H,0,0,FRAME_W,FRAME_H);
-    if(mirror)ctx.restore();
-    entry.frame=frame;entry.mirror=mirror;
+    if(window.KZWorldRegistry.paint("castle",sprite,canvas,frame,mirror)){
+      entry.frame=frame;entry.mirror=mirror;
+    }
   }
   function setVisible(){
     if(!map||!ready)return;
@@ -175,7 +169,7 @@
     visible.forEach(function(item,id){
       const trip=calculate(id,now);
       // Položaj osvježavamo približno 60 puta u sekundi; animacijski atlas ostaje izvoran.
-      // Animacija: samostalnih 40 kadrova, bez obzira na brzinu putovanja.
+      // Svaka animacija koristi isti renderer iz kataloga (40 ili 80 kadrova).
       if(!item.lastMoved || now-item.lastMoved>=16){
         item.marker.setLatLng([trip.point.lat,trip.point.lng]);
         item.lastMoved=now;
@@ -454,7 +448,7 @@
     }finally{busy=false;eligibility();}
   }
   function mount(m){
-    if(map||!m||!window.L||!window.KZ_ROAMING_CASTLE_WEBP)return;
+    if(map||!m||!window.L||!window.KZWorldRegistry.source('castle'))return;
     map=m;
     pane=map.getPane("kzFleetPane")||map.createPane("kzFleetPane");
     pane.classList.add("kz-fleet-pane");
@@ -463,8 +457,8 @@
     pane.parentNode?.appendChild(pane);
     sprite=new Image();
     sprite.onload=function(){
-      if(sprite.naturalWidth!==FRAME_W*FRAMES||sprite.naturalHeight!==FRAME_H){
-        console.warn("KZ: format devetkadrovnog atlasa dvorca nije valjan");return;
+      if(!window.KZWorldRegistry.layout("castle",sprite)){
+        console.warn("KZ: dvorac treba atlas s 40 ili 80 pravih kadrova");return;
       }
       ready=true;
       const toggle=document.getElementById("map-life-toggle");
@@ -492,7 +486,7 @@
       setInterval(setVisible,7000);
     };
     sprite.onerror=()=>console.warn("KZ: nije dostupan rasterizirani atlas dvorca");
-    sprite.src=window.KZ_ROAMING_CASTLE_WEBP;
+    sprite.src=window.KZWorldRegistry.source('castle');
   }
   window.addEventListener("kz:map-ready",e=>mount(e.detail?.map));
   window.addEventListener("kz:kingdoms",e=>{
