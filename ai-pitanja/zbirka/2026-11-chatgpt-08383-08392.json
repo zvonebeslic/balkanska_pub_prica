@@ -1,0 +1,231 @@
+[
+  {
+    "id": "chatgpt10000-8383-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Glazba",
+    "focus": "Nirvana Nevermind omot",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je američki rock-sastav 1991. objavio album 'Nevermind', poznat po omotu s bebom koja pliva prema novčanici?",
+    "answers": [
+      "Nirvana"
+    ],
+    "explanation": "Album 'Nevermind' objavila je Nirvana 1991.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nevermind"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8384-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Povijest",
+    "focus": "Berlinski zid pad 1989",
+    "difficulty": 1,
+    "styleId": 2,
+    "styleDescription": "Kreni od povijesne godine i završi identifikacijom događaja",
+    "question": "Koji je zid, simbol podjele Njemačke tijekom Hladnog rata, otvoren 9. studenoga 1989.?",
+    "answers": [
+      "Berlinski zid",
+      "Berlin Wall"
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989., što je označilo prekretnicu u njemačkom ujedinjenju.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8385-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Svakodnevica",
+    "focus": "termos boca vakuum",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Između dviju stijenki ove posude nalazi se izolacijski prostor koji usporava prijenos topline. Kako se zove posuda u kojoj kava satima ostaje topla?",
+    "answers": [
+      "Termos boca",
+      "Termosica",
+      "Termos"
+    ],
+    "explanation": "Termos boca toplinski izolira sadržaj, često vakuumom između stijenki.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vacuum_flask"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8386-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Zemljopis",
+    "focus": "Reykjavik Island glavni grad",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Grad na obali Atlantskog oceana, nedaleko od geotermalnih izvora i na otoku poznatom po vulkanima: kako se zove glavni grad Islanda?",
+    "answers": [
+      "Reykjavík",
+      "Reykjavik"
+    ],
+    "explanation": "Reykjavík je glavni i najveći grad Islanda.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Reykjav%C3%ADk"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8387-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "Zvjezdana noć Van Gogh",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Koji je nizozemski slikar 1889. naslikao 'Zvjezdanu noć', s vrtložnim noćnim nebom nad naseljem?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh",
+      "Vincent Van Gogh"
+    ],
+    "explanation": "Vincent van Gogh naslikao je 'Zvjezdanu noć' 1889.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8388-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Tehnologija",
+    "focus": "USB univerzalna serijska sabirnica",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Kratica za priključak kojim punimo mobitele i spajamo periferne uređaje potječe od engleskog 'Universal Serial Bus'. Koja je to kratica?",
+    "answers": [
+      "USB"
+    ],
+    "explanation": "USB je kratica za Universal Serial Bus, standard povezivanja uređaja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/USB"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8389-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Gastronomija",
+    "focus": "humus slanutak",
+    "difficulty": 2,
+    "styleId": 15,
+    "styleDescription": "Složi kratku minipriču iz kuhinje i traži namirnicu",
+    "question": "U zdjelici je namaz s tahinijem, limunom i maslinovim uljem. Koja je mahunarka njegov glavni sastojak ako pripremamo humus?",
+    "answers": [
+      "Slanutak",
+      "Leblebija"
+    ],
+    "explanation": "Humus se najčešće priprema od kuhanog slanutka i tahinija.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hummus"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8390-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Životinje",
+    "focus": "koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Ovaj australski tobolčar većinu vremena provodi na drveću i hrani se ponajprije listovima eukaliptusa. Kako se zove?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koala je australski tobolčar specijaliziran za prehranu listovima eukaliptusa.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8391-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Film",
+    "focus": "Marty McFly Povratak u budućnost",
+    "difficulty": 2,
+    "styleId": 21,
+    "styleDescription": "Postavi trag preko starog i modernog naziva iste pojave",
+    "question": "U filmskom serijalu iz 1980-ih mladi Marty McFly putuje kroz vrijeme u automobilu DeLorean. Kako se serijal zove na hrvatskom?",
+    "answers": [
+      "Povratak u budućnost",
+      "Back to the Future"
+    ],
+    "explanation": "Marty McFly protagonist je filmskog serijala 'Povratak u budućnost'.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Back_to_the_Future_(franchise)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8392-20261123",
+    "createdAt": "2026-11-23T07:45:00+01:00",
+    "updatedAt": "2026-11-23T07:45:00+01:00",
+    "topic": "Sport",
+    "focus": "Usain Bolt Jamajka",
+    "difficulty": 1,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je jamajčanski sprinter osvojio olimpijska zlata na 100 i 200 metara u Pekingu 2008., Londonu 2012. i Riju 2016.?",
+    "answers": [
+      "Usain Bolt",
+      "Bolt"
+    ],
+    "explanation": "Usain Bolt osvojio je obje pojedinačne sprinterske discipline na trima uzastopnim Olimpijskim igrama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Usain_Bolt"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
