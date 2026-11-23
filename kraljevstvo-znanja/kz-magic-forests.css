@@ -39,7 +39,7 @@
 #kingdom-map .kz-forest-pane video,
 #kingdom-map .kz-forest-pane img{
   background:transparent!important;pointer-events:none;
-  image-rendering:auto;
+  image-rendering:auto;object-fit:contain;
 }
 .map-actions .kz-world-locate{white-space:nowrap}
 @media(max-width:620px){
