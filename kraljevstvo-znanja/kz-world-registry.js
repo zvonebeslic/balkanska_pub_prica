@@ -217,6 +217,11 @@
     const yy=Math.floor(R/K*Math.sin(lat*Math.PI/180));
     return {x:Math.floor(xx/WORLD.width),y:Math.floor(yy/WORLD.height)};
   }
+  function worldGridCorner(x,y){
+    const xx=x*WORLD.width,yy=y*WORLD.height;
+    return {lat:Math.asin(Math.max(-1,Math.min(1,yy*K/R)))*180/Math.PI,
+      lng:xx/(R*K)*180/Math.PI};
+  }
   function pointFromBlock(block){
     const xx=block.x*WORLD.width+WORLD.width/2;
     const yy=block.y*WORLD.height+WORLD.height/2;
@@ -386,7 +391,8 @@
   }
   window.KZWorldRegistry=Object.freeze({
     types:TYPES,svgSprites:lifeSprites,info:info,source:source,pointFor:pointFor,
-    blockFor:blockFor,pointFromBlock:pointFromBlock,regionFor:regionFor,
+    blockFor:blockFor,pointFromBlock:pointFromBlock,worldGridCorner:worldGridCorner,
+    belongs:belongs,regionFor:regionFor,
     regionName:regionName,regionQuotas:quotas,regionNames:REGION_NAMES,
     isLand:isLand,prepare:prepare,layout:layout,frameAt:frameAt,paint:paint,
     actualFrames:(id,img)=>layout(id,img)?.total||0
