@@ -93,6 +93,19 @@
   };
 
 
+  // JEDNA službena mreža svijeta za teritorije i ilustrirane likove:
+  // ekvivalentna sferna projekcija, x/y indeks ćelije veličine 5 × 4 m.
+  const R=6371007.181,K=Math.sqrt(3)/2;
+  const WORLD=Object.freeze({width:5,height:4});
+  const REGION_NAMES=Object.freeze([
+    "Balkan","Ostatak Europe","Sjeverna Amerika","Južna Amerika",
+    "Afrika","Azija","Australija i Oceanija","Antarktika"
+  ]);
+  const QUOTAS=Object.freeze([5000,2000,700,700,700,700,700,700]);
+  // Jedan početni dvorac za svaki od prvih 201 ID-ova: 100 + 41 + 6 × 10.
+  const STARTER_CASTLES=Object.freeze([100,41,10,10,10,10,10,10]);
+  // Regionalne granice služe za nasumičan odabir NA KOPNU, ne kao
+  // detaljne obalne linije; kartografska mreža blokova ostaje precizna.
   const LAND=[
     [[-168,69],[-155,60],[-137,59],[-130,49],[-124,40],[-117,32],[-110,31],
      [-105,24],[-97,16],[-88,16],[-86,11],[-82,9],[-78,9],[-77,20],
@@ -126,6 +139,19 @@
     [[-10,50],[-5,50],[-1,55],[-4,60],[-9,59]],
     [[-9,51],[-6,51],[-6,55],[-10,55]]
   ];
+  const BALKAN=[
+    [13.4,45.7],[15.0,46.9],[18.7,46.8],[21.5,46.0],
+    [23.5,44.7],[28.7,43.9],[29.0,41.4],[26.0,40.1],
+    [25.5,38.4],[23.0,36.2],[20.0,35.1],[18.8,39.0],
+    [16.0,40.0],[13.4,42.5]
+  ];
+  const BOUNDS=[
+    [12,30,35,48],[ -13,49,35,72],[-169,-52,8,83],
+    [-82,-34,-56,14],[-18,52,-36,38],[26,147,-13,77],
+    [110,180,-48,-10],[-180,180,-82,-75]
+  ];
+  const GAP_KM=[6,22,65,60,60,75,55,65];
+
   function inside(lon,lat,poly){
     let hit=false;
     for(let i=0,j=poly.length-1;i<poly.length;j=i++){
@@ -135,62 +161,157 @@
     }
     return hit;
   }
+  function isLand(lon,lat){
+    if(lat<=-75&&lat>=-82)return true; // južni antarktički kontinentalni sektor
+    for(const poly of LAND)if(inside(lon,lat,poly))return true;
+    return false;
+  }
+  function belongs(region,lon,lat){
+    if(region===7)return lat>=-82&&lat<=-75;
+    if(!isLand(lon,lat))return false;
+    if(region===0)return inside(lon,lat,BALKAN)&&inside(lon,lat,LAND[2]);
+    if(region===1)return !inside(lon,lat,BALKAN) &&
+      (inside(lon,lat,LAND[2])||inside(lon,lat,LAND[11])||inside(lon,lat,LAND[12]));
+    if(region===2)return inside(lon,lat,LAND[0])||inside(lon,lat,LAND[7]);
+    if(region===3)return inside(lon,lat,LAND[1]);
+    if(region===4)return inside(lon,lat,LAND[3])||inside(lon,lat,LAND[8]);
+    if(region===5)return inside(lon,lat,LAND[4])||inside(lon,lat,LAND[5])||inside(lon,lat,LAND[10]);
+    if(region===6)return inside(lon,lat,LAND[6])||inside(lon,lat,LAND[9]);
+    return false;
+  }
   function hash(a,b){
     let x=(Math.imul((a|0)+0x9e3779b9,1664525)^Math.imul((b|0)+17,1013904223))|0;
     x=Math.imul(x^(x>>>16),0x7feb352d);
     x=Math.imul(x^(x>>>15),0x846ca68b);
     return ((x^(x>>>16))>>>0)/4294967296;
   }
-  function isLand(lon,lat){
-    for(const poly of LAND)if(inside(lon,lat,poly))return true;
-    return false;
+  function randomStream(seed){
+    let state=seed|0;
+    return ()=>{
+      state^=state<<13;state^=state>>>17;state^=state<<5;
+      return (state>>>0)/4294967296;
+    };
   }
-  // Jednako velika područja površine: latitude se uzorkuje po sin(lat).
-  // Fisher–Yates miješanje: nasumičan izbor ćelija bez ponavljanja.
-  // Ograničeni jitter čuva razmak, a početna distribucija ostaje stabilna.
-  let sites=null;
-  function prepare(){
-    if(sites)return sites;
-    const rows=200,cols=540,edge=Math.sin(78*Math.PI/180),items=[];
-    for(let r=0;r<rows;r++){
-      const s=-edge+(r+.5)*2*edge/rows;
-      const lat=Math.asin(s)*180/Math.PI;
-      for(let c=0;c<cols;c++){
-        const lon=-180+(c+.5)*360/cols;
-        if(isLand(lon,lat))items.push([r,c]);
+  function blockFor(lat,lng){
+    const xx=Math.floor(R*K*lng*Math.PI/180);
+    const yy=Math.floor(R/K*Math.sin(lat*Math.PI/180));
+    return {x:Math.floor(xx/WORLD.width),y:Math.floor(yy/WORLD.height)};
+  }
+  function pointFromBlock(block){
+    const xx=block.x*WORLD.width+WORLD.width/2;
+    const yy=block.y*WORLD.height+WORLD.height/2;
+    return {lat:Math.asin(Math.max(-1,Math.min(1,yy*K/R)))*180/Math.PI,
+      lng:xx/(R*K)*180/Math.PI};
+  }
+  function snap(lat,lng){
+    return pointFromBlock(blockFor(lat,lng));
+  }
+  const ironOffsets=(()=>{const arr=[];let start=2000;
+    for(let region=0;region<QUOTAS.length;region++){
+      arr.push(start);start+=QUOTAS[region];
+    }
+    return arr;
+  })();
+  const castleSlots=[];
+  const castleCounts=REGION_NAMES.map(()=>0);
+  // Castle IDs 0–200 preserve the original Balkan-heavy footprint.
+  for(let id=0;id<=1200;id++){
+    let region=0;
+    if(id<201){
+      let slot=id;
+      for(let r=0;r<STARTER_CASTLES.length;r++){
+        if(slot<STARTER_CASTLES[r]){region=r;break;}
+        slot-=STARTER_CASTLES[r];
+      }
+    }else{
+      const dice=hash(id,63031)*11200;
+      let threshold=0;
+      for(let r=0;r<QUOTAS.length;r++){
+        threshold+=QUOTAS[r];
+        if(dice<threshold){region=r;break;}
       }
     }
-    // Dovoljno ćelija da svi čuvari dobiju jedinstven početni sektor.
-    if(items.length<13200)throw Error("KZ: premalo kopnenih sektora ("+items.length+")");
-    let seed=0x385a77b1;
-    const next=()=>{
-      seed^=seed<<13;seed^=seed>>>17;seed^=seed<<5;
-      return (seed>>>0)/4294967296;
-    };
-    for(let i=items.length-1;i>0;i--){
-      const j=Math.floor(next()*(i+1)),tmp=items[i];
-      items[i]=items[j];items[j]=tmp;
+    castleSlots[id]={region:region,slot:QUOTAS[region]+castleCounts[region]};
+    castleCounts[region]++;
+  }
+  let pools=null;
+  function regionPool(region){
+    const target=QUOTAS[region]+castleCounts[region];
+    const bounds=BOUNDS[region],minKm=GAP_KM[region];
+    const rand=randomStream(0x53a5c7e1^(region*0x9e3779b9));
+    const west=bounds[0],east=bounds[1],south=bounds[2],north=bounds[3];
+    const sinLo=Math.sin(south*Math.PI/180),sinHi=Math.sin(north*Math.PI/180);
+    const midLat=(north+south)/2*Math.PI/180;
+    const degLat=Math.max(.02,minKm/111.2);
+    const degLon=Math.max(.02,minKm/(111.2*Math.max(.12,Math.cos(midLat))));
+    const buckets=new Map(),occupied=new Set(),result=[];
+    const key=(x,y)=>x+":"+y;
+    let trials=0,accepted=0;
+    // Poisson-like sampled blocks with a minimum distance and
+    // geographically uniform randomized distribution inside each region.
+    while(result.length<target&&trials<target*320){
+      trials++;
+      const lon=west+(east-west)*rand();
+      const lat=Math.asin(sinLo+(sinHi-sinLo)*rand())*180/Math.PI;
+      if(!belongs(region,lon,lat))continue;
+      const block=blockFor(lat,lon),id=key(block.x,block.y);
+      if(occupied.has(id))continue;
+      const at=pointFromBlock(block);
+      const ix=Math.floor((at.lng-west)/degLon),iy=Math.floor((at.lat-south)/degLat);
+      let good=true;
+      for(let dx=-2;dx<=2&&good;dx++)for(let dy=-2;dy<=2&&good;dy++){
+        const neighbors=buckets.get(key(ix+dx,iy+dy))||[];
+        for(const prev of neighbors){
+          const kmLat=(at.lat-prev.lat)*111.2;
+          let delta=Math.abs(at.lng-prev.lng);
+          delta=Math.min(delta,360-delta);
+          const kmLon=delta*111.2*Math.cos((at.lat+prev.lat)*Math.PI/360);
+          if(kmLat*kmLat+kmLon*kmLon<minKm*minKm){good=false;break;}
+        }
+      }
+      if(!good)continue;
+      result.push(at);occupied.add(id);accepted++;
+      const bucketKey=key(ix,iy);
+      if(!buckets.has(bucketKey))buckets.set(bucketKey,[]);
+      buckets.get(bucketKey).push(at);
     }
-    sites=items;return items;
+    if(result.length!==target){
+      throw Error("KZ: nema dovoljno kvadrata za "+REGION_NAMES[region]+
+        ": "+result.length+"/"+target+" pokušaja "+trials);
+    }
+    return result;
+  }
+  function prepare(){
+    if(!pools)pools=REGION_NAMES.map((_,index)=>regionPool(index));
+    return pools;
+  }
+  function indexForIron(id){
+    for(let r=QUOTAS.length-1;r>=0;r--){
+      if(id>=ironOffsets[r])return {region:r,slot:id-ironOffsets[r]};
+    }
+    return null;
+  }
+  function regionFor(id){
+    if(id>=2000&&id<13200)return indexForIron(id)?.region??0;
+    if(id>=0&&id<=1200)return castleSlots[id].region;
+    return null;
   }
   function pointFor(id,generation){
-    const a=prepare();
-    const g=Math.max(0,Number(generation)||0);
-    // Rezervirano 0..1200 za dvorce, 1201..12400 za Željeznike.
-    const index=id>=2000?1201+id-2000:id;
-    const slot=g===0?index%a.length:Math.floor(hash(id,g*7919+101)*a.length);
-    const cell=a[slot], rows=200,cols=540,edge=Math.sin(78*Math.PI/180);
-    const jitterLon=(hash(id,g+311)-.5)*.65;
-    const jitterLat=(hash(id,g+717)-.5)*.65;
-    const sinLat=-edge+(cell[0]+.5+jitterLat)*2*edge/rows;
-    const point={lat:Math.asin(sinLat)*180/Math.PI,
-      lng:-180+(cell[1]+.5+jitterLon)*360/cols};
-    // Jitter ne smije gurnuti kopnenu ikonu preko ruba konture.
-    if(!isLand(point.lng,point.lat)){
-      return {lat:Math.asin(-edge+(cell[0]+.5)*2*edge/rows)*180/Math.PI,
-        lng:-180+(cell[1]+.5)*360/cols};
-    }
-    return point;
+    const prepared=prepare(),g=Math.max(0,Number(generation)||0);
+    const details=id>=2000?indexForIron(id):castleSlots[id];
+    if(!details)throw Error("KZ: nepoznati čuvar "+id);
+    const points=prepared[details.region];
+    if(g===0)return points[details.slot];
+    // Rezervni zajednički položaj ako stanje s poslužitelja još nije stiglo.
+    const extra=1+Math.floor(hash(id,g*7919+101)*(points.length-1));
+    return points[(details.slot+extra)%points.length];
+  }
+  function quotas(){
+    return Object.fromEntries(REGION_NAMES.map((name,i)=>[name,QUOTAS[i]]));
+  }
+  function regionName(id){
+    const region=regionFor(id);
+    return region===null?"Nepoznato":REGION_NAMES[region];
   }
   function info(id){return TYPES[id]||null;}
   function source(id){
@@ -241,6 +362,8 @@
   }
   window.KZWorldRegistry=Object.freeze({
     types:TYPES,svgSprites:lifeSprites,info:info,source:source,pointFor:pointFor,
+    blockFor:blockFor,pointFromBlock:pointFromBlock,regionFor:regionFor,
+    regionName:regionName,regionQuotas:quotas,regionNames:REGION_NAMES,
     isLand:isLand,prepare:prepare,layout:layout,frameAt:frameAt,paint:paint,
     actualFrames:(id,img)=>layout(id,img)?.total||info(id)?.sourceFrames||0
   });
