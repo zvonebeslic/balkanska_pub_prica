@@ -1,0 +1,224 @@
+[
+  {
+    "id": "chatgpt10000-8503-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Rolling in the Deep izvođačica",
+    "difficulty": "Britanska pjevačica Adele objavila je pjesmu na albumu 21.",
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Tko je otpjevao hit 'Rolling in the Deep' s albuma '21'?",
+    "answers": [
+      "Adele"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Adele"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8504-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Nogomet",
+    "focus": "Euro 2004 pobjednik",
+    "difficulty": "Grčka je u finalu pobijedila Portugal.",
+    "styleId": 4,
+    "styleDescription": "Kreni od zanimljive zablude i traži stvarnu činjenicu",
+    "question": "Koja je reprezentacija iznenadila Europu osvajanjem nogometnog Eura 2004. u Portugalu?",
+    "answers": [
+      "Grčka"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/UEFA_Euro_2004"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8505-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Film",
+    "focus": "Titanic Rose glumica",
+    "difficulty": "Kate Winslet glumila je Rose DeWitt Bukater.",
+    "styleId": 7,
+    "styleDescription": "Kreni od poznate osobe i traži njezin manje poznat izum",
+    "question": "Koja je glumica utjelovila Rose u Cameronovu filmu 'Titanic' iz 1997.?",
+    "answers": [
+      "Kate Winslet"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Titanic_(1997_film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8506-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Književnost",
+    "focus": "Zločin i kazna Raskoljnikov",
+    "difficulty": "Dostojevski je autor romana Zločin i kazna.",
+    "styleId": 10,
+    "styleDescription": "Usporedi dvije epohe u jednom kratkom pitanju",
+    "question": "Koji je ruski pisac stvorio lik Rodiona Raskoljnikova u romanu 'Zločin i kazna'?",
+    "answers": [
+      "Fjodor Dostojevski",
+      "Fjodor Mihajlovič Dostojevski"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8507-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Mongolije",
+    "difficulty": "Ulaanbaatar je glavni i najveći grad Mongolije.",
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je glavni grad Mongolije, poznat i pod nazivom Ulaanbaatar?",
+    "answers": [
+      "Ulan Bator",
+      "Ulaanbaatar"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ulaanbaatar"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8508-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Životinje",
+    "focus": "panda prehrana bambus",
+    "difficulty": "Velika panda uglavnom se hrani bambusom.",
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koja biljka čini najveći dio prehrane velike pande?",
+    "answers": [
+      "Bambus"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Giant_panda"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8509-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Kemija",
+    "focus": "natrij simbol",
+    "difficulty": "Simbol Na potječe od latinskog natrium.",
+    "styleId": 19,
+    "styleDescription": "Kreni od filmske scene bez naslova i traži stvarni predmet",
+    "question": "Koji kemijski element nosi oznaku Na u periodnom sustavu?",
+    "answers": [
+      "Natrij"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sodium"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8510-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Povijest",
+    "focus": "pad Carigrada 1453",
+    "difficulty": "Carigrad je osvojen 29. svibnja 1453.",
+    "styleId": 22,
+    "styleDescription": "Pitaj što je prvo u nizu povijesnih događaja",
+    "question": "Koje je godine osmanska vojska osvojila Carigrad?",
+    "answers": [
+      "1453"
+    ],
+    "explanation": 2,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8511-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Tehnologija",
+    "focus": "HTML značenje",
+    "difficulty": "HTML je HyperText Markup Language.",
+    "styleId": 25,
+    "styleDescription": "Ispričaj otkriće nastalo slučajno i pitaj za izum",
+    "question": "Koji se jezik za označavanje koristi za strukturu internetskih stranica, a kratica mu počinje slovima HT?",
+    "answers": [
+      "HTML"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/HTML"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8512-20261123",
+    "createdAt": "2026-11-23T15:36:51+01:00",
+    "updatedAt": "2026-11-23T15:36:51+01:00",
+    "topic": "Gastronomija",
+    "focus": "tiramisù država",
+    "difficulty": "Tiramisu je talijanski desert.",
+    "styleId": 28,
+    "styleDescription": "Kreni od nadimka osobe i traži njezino pravo ime",
+    "question": "Iz koje zemlje potječe desert tiramisu, pripremljen s kavom i mascarponeom?",
+    "answers": [
+      "Italija"
+    ],
+    "explanation": 1,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tiramisu"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
