@@ -1,0 +1,230 @@
+[
+  {
+    "id": "chatgpt10000-8643-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Glazba",
+    "focus": "pjesma Take On Me a-ha",
+    "difficulty": 2,
+    "styleId": 16,
+    "styleDescription": "Opiši glazbeno djelo po neobičnom detalju snimanja",
+    "question": "Koji je norveški sastav snimio hit 'Take On Me', poznat i po spotu koji spaja crtež i stvarne snimke?",
+    "answers": [
+      "a-ha",
+      "A-ha",
+      "aha"
+    ],
+    "explanation": "Pjesma Take On Me međunarodni je hit norveškog sastava a-ha.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Take_On_Me"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8644-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Sport",
+    "focus": "tenis Wimbledon trava",
+    "difficulty": 1,
+    "styleId": 35,
+    "styleDescription": "Opiši opremu ne spominjući sport kojem služi",
+    "question": "Na kakvoj se podlozi tradicionalno igra teniski turnir Wimbledon?",
+    "answers": [
+      "Trava",
+      "Travnat teren",
+      "Na travi"
+    ],
+    "explanation": "Wimbledon je jedini Grand Slam turnir koji se igra na travi.",
+    "sources": [
+      "https://www.wimbledon.com/en_GB/about_wimbledon/index.html"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8645-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Film",
+    "focus": "film Jurski park Spielberg",
+    "difficulty": 2,
+    "styleId": 31,
+    "styleDescription": "Kreni od zapaženog književnog lika i traži autora",
+    "question": "Tko je režirao film 'Jurski park' iz 1993. godine, u kojem se dinosauri vraćaju na veliki ekran?",
+    "answers": [
+      "Steven Spielberg",
+      "Spielberg"
+    ],
+    "explanation": "Steven Spielberg režirao je film Jurassic Park iz 1993.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8646-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Književnost",
+    "focus": "Hobit Bilbo Baggins",
+    "difficulty": 2,
+    "styleId": 32,
+    "styleDescription": "Kreni od sporednog lika i traži naslov knjige",
+    "question": "U kojem Tolkienovu romanu Bilbo Baggins napušta udobnost svojega doma i kreće na put s patuljcima?",
+    "answers": [
+      "Hobit",
+      "The Hobbit"
+    ],
+    "explanation": "Bilbo Baggins glavni je junak Tolkienova Hobita.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Hobbit"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8647-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Zemljopis",
+    "focus": "glavni grad Slovenije Ljubljana",
+    "difficulty": 1,
+    "styleId": 8,
+    "styleDescription": "Predstavi mjesto preko tri neizravna zemljopisna traga",
+    "question": "Koji glavni grad leži na rijeci Ljubljanici, a iznad njegove stare jezgre uzdiže se dvorac?",
+    "answers": [
+      "Ljubljana"
+    ],
+    "explanation": "Ljubljana je glavni grad Slovenije, smješten na Ljubljanici.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ljubljana"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8648-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Kemija",
+    "focus": "bakar električni vodiči",
+    "difficulty": 2,
+    "styleId": 36,
+    "styleDescription": "Kreni od primjene elementa i traži kemijski element",
+    "question": "Koji se crvenkasti metal zbog dobre električne vodljivosti često koristi za izradu električnih žica?",
+    "answers": [
+      "Bakar",
+      "Cu"
+    ],
+    "explanation": "Bakar se često koristi u električnim vodičima zbog visoke vodljivosti.",
+    "sources": [
+      "https://www.rsc.org/periodic-table/element/29/copper"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8649-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Životinje",
+    "focus": "koala eukaliptus",
+    "difficulty": 1,
+    "styleId": 17,
+    "styleDescription": "Opisi životinju ne navodeći njezin najpoznatiji znak",
+    "question": "Koji australski tobolčar većinu dana provodi na drveću i hrani se uglavnom lišćem eukaliptusa?",
+    "answers": [
+      "Koala"
+    ],
+    "explanation": "Koala je australski tobolčar čija prehrana uglavnom uključuje eukaliptus.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Koala"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8650-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Tehnologija",
+    "focus": "Bluetooth kralj Harald",
+    "difficulty": 3,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv koje bežične tehnologije potječe od nadimka danskog kralja Haralda Plavozubog?",
+    "answers": [
+      "Bluetooth"
+    ],
+    "explanation": "Bluetooth je dobio ime po kralju Haraldu Bluetoothu.",
+    "sources": [
+      "https://www.bluetooth.com/about-us/bluetooth-origin/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8651-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Povijest",
+    "focus": "pad Berlinskog zida 1989",
+    "difficulty": 2,
+    "styleId": 11,
+    "styleDescription": "Ispričaj kronološki trag i završi traženjem godine",
+    "question": "Koje je godine otvorena granica na Berlinskom zidu, što je postalo simbol kraja podjele Njemačke?",
+    "answers": [
+      "1989",
+      "1989."
+    ],
+    "explanation": "Berlinski zid otvoren je 9. studenoga 1989.",
+    "sources": [
+      "https://www.britannica.com/topic/Berlin-Wall"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8652-20261123",
+    "createdAt": "2026-11-23T22:44:24+01:00",
+    "updatedAt": "2026-11-23T22:44:24+01:00",
+    "topic": "Astronomija",
+    "focus": "Saturn prstenovi",
+    "difficulty": 1,
+    "styleId": 66,
+    "styleDescription": "Opiši planet ili mjesec putem neobične karakteristike",
+    "question": "Koji je planet Sunčeva sustava osobito prepoznatljiv po velikom sustavu prstenova od leda i kamenih čestica?",
+    "answers": [
+      "Saturn"
+    ],
+    "explanation": "Saturn ima upečatljiv sustav prstenova sastavljen pretežno od ledenih čestica.",
+    "sources": [
+      "https://science.nasa.gov/saturn/"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
