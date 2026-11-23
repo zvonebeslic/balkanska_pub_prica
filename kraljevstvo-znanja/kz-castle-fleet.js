@@ -166,11 +166,14 @@
   function tick(){
     if(!ready||document.hidden||!enabled||map.getZoom()<MIN_ZOOM)return;
     const now=realClock();
+    const z=map.getZoom();
+    // Pri dalekom zumu subpikselni pomaci ne znače ništa, a troše CPU.
+    // Pri bliskom zumu osvježava se dovoljno često za tečan hod.
+    const moveEveryMs=z>=21?32:z>=19?80:z>=17?250:900;
     visible.forEach(function(item,id){
       const trip=calculate(id,now);
-      // Položaj osvježavamo približno 60 puta u sekundi; animacijski atlas ostaje izvoran.
-      // Svaka animacija koristi isti renderer iz kataloga (40 ili 80 kadrova).
-      if(!item.lastMoved || now-item.lastMoved>=16){
+      // WebP animaciju crta katalog, kretanje markera ima adaptivni interval.
+      if(!item.lastMoved || now-item.lastMoved>=moveEveryMs){
         item.marker.setLatLng([trip.point.lat,trip.point.lng]);
         item.lastMoved=now;
       }
