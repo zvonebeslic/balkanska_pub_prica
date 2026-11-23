@@ -1,0 +1,229 @@
+[
+  {
+    "id": "chatgpt10000-8303-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Astronomija",
+    "focus": "planet velika crvena pjega",
+    "difficulty": 1,
+    "styleId": 1,
+    "styleDescription": "Opis predmeta kroz njegovu neobičnu osobinu, pa traži naziv",
+    "question": "Na kojem se planetu nalazi Velika crvena pjega, golema oluja promatrana stoljećima?",
+    "answers": [
+      "Jupiter",
+      "Jupiteru"
+    ],
+    "explanation": "Velika crvena pjega atmosferska je oluja na Jupiteru.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Great_Red_Spot"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8304-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Sport",
+    "focus": "Michael Phelps olimpijske medalje",
+    "difficulty": 2,
+    "styleId": 13,
+    "styleDescription": "Opiši jedinstven sportski rekord bez otkrivanja sportaša",
+    "question": "Koji je američki plivač osvojio rekordne 23 olimpijske zlatne medalje?",
+    "answers": [
+      "Michael Phelps",
+      "Phelps"
+    ],
+    "explanation": "Michael Phelps osvojio je 23 olimpijska zlata.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Michael_Phelps"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8305-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Televizija",
+    "focus": "serija Central Perk šest prijatelja",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Rachel, Monica i Phoebe često sjede u kafiću Central Perk. Kako se zove serija u kojoj se pojavljuju?",
+    "answers": [
+      "Prijatelji",
+      "Friends"
+    ],
+    "explanation": "Central Perk poznati je kafić iz serije Prijatelji.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Friends"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8306-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Likovna umjetnost",
+    "focus": "slika Zvjezdana noć autor",
+    "difficulty": 2,
+    "styleId": 9,
+    "styleDescription": "Kreni od umjetničkog djela pa pitaj o njegovu nastanku",
+    "question": "Tko je 1889. naslikao 'Zvjezdanu noć', danas jedno od najpoznatijih djela postimpresionizma?",
+    "answers": [
+      "Vincent van Gogh",
+      "Van Gogh"
+    ],
+    "explanation": "Vincent van Gogh autor je Zvjezdane noći.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Starry_Night"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8307-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Medicina",
+    "focus": "anemija nedostatak hemoglobina",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Koji medicinski naziv označava stanje u kojem krv nema dovoljno zdravih eritrocita ili hemoglobina za prijenos kisika?",
+    "answers": [
+      "Anemija",
+      "Slabokrvnost"
+    ],
+    "explanation": "Anemija je slabokrvnost.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anemia"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8308-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Biologija",
+    "focus": "fotosinteza organel kloroplast",
+    "difficulty": 2,
+    "styleId": 34,
+    "styleDescription": "Poveži prirodni proces i predmet koji ga imitira",
+    "question": "Kako se zove stanična struktura biljaka u kojoj se odvija fotosinteza?",
+    "answers": [
+      "Kloroplast",
+      "Kloroplasti"
+    ],
+    "explanation": "Kloroplasti sadrže fotosintetske pigmente i omogućuju fotosintezu.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chloroplast"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8309-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Jezik",
+    "focus": "znanost o podrijetlu riječi",
+    "difficulty": 2,
+    "styleId": 26,
+    "styleDescription": "Pitaj o stvarnom značenju riječi koja zvuči varljivo",
+    "question": "Kako se zove jezikoslovna disciplina koja istražuje podrijetlo i povijesni razvoj riječi?",
+    "answers": [
+      "Etimologija"
+    ],
+    "explanation": "Etimologija proučava podrijetlo riječi.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Etymology"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8310-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Videoigre",
+    "focus": "Mario brat zeleno odijelo",
+    "difficulty": 1,
+    "styleId": 18,
+    "styleDescription": "Ugradi dvije točne činjenice i traži treću poveznicu",
+    "question": "Mario nosi crvenu kapu, a njegov brat najčešće zelenu. Kako se brat zove?",
+    "answers": [
+      "Luigi"
+    ],
+    "explanation": "Luigi je Mariov brat u Nintendovim igrama.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Luigi"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8311-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Brendovi",
+    "focus": "LEGO naziv leg godt",
+    "difficulty": 2,
+    "styleId": 14,
+    "styleDescription": "Kreni od podrijetla naziva, ali traži predmet ili mjesto",
+    "question": "Naziv kojeg proizvođača kockica potječe od danskih riječi 'leg godt', odnosno 'igraj se dobro'?",
+    "answers": [
+      "LEGO"
+    ],
+    "explanation": "LEGO je ime izvedeno iz danskog izraza leg godt.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lego"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  },
+  {
+    "id": "chatgpt10000-8312-20261123",
+    "createdAt": "2026-11-23T02:43:02+01:00",
+    "updatedAt": "2026-11-23T02:43:02+01:00",
+    "topic": "Fizika",
+    "focus": "Newton drugi zakon sila",
+    "difficulty": 2,
+    "styleId": 6,
+    "styleDescription": "Opiši predmet iz svakodnevnog života kroz skriveni princip",
+    "question": "Koja fizikalna veličina, izražena u njutnima, prema drugom Newtonovu zakonu jednaka je umnošku mase i ubrzanja?",
+    "answers": [
+      "Sila",
+      "Sile"
+    ],
+    "explanation": "Drugi Newtonov zakon opisuje silu kao umnožak mase i ubrzanja.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion"
+    ],
+    "image": null,
+    "type": "blitz",
+    "status": "novo",
+    "origin": "chatgpt-serija-10000"
+  }
+]
