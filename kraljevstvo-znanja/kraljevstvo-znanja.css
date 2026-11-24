@@ -488,3 +488,21 @@ body{background:
   white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.45);user-select:none}
 #kingdom-map .kz-grid-xy-label span{display:block}
 
+
+
+/* Full-spectrum kingdom colour selection, scoped to the creation panel. */
+#realm-color-picker{display:grid;gap:.7rem;min-width:0;border:1px solid #64748b77;border-radius:13px;padding:.8rem;background:#0d1b2d;align-self:start;margin:0}
+#realm-color-picker legend{padding:0 .3rem;color:#b8c7df;font-size:.75rem;font-weight:800}
+#realm-color-picker label{display:grid;gap:.25rem;min-width:0}
+#realm-color-picker .realm-color-selection{display:grid;grid-template-columns:64px minmax(0,1fr);gap:.7rem;align-items:center}
+#realm-color-preview{width:64px;height:64px;border-radius:11px;border:2px solid #dce6f4;box-shadow:0 2px 9px #0005;box-sizing:border-box}
+#realm-color-picker #realm-hex{min-height:36px;margin:0;padding:.4rem .55rem;font-family:monospace;text-transform:uppercase;box-sizing:border-box}
+#realm-color-picker #realm-hex[aria-invalid=true]{border-color:#f47f7f}
+#realm-color-picker input[type=range]{appearance:none;-webkit-appearance:none;box-sizing:border-box;width:100%;height:30px;min-height:30px;padding:0;margin:0;background:transparent;border:0;cursor:pointer;touch-action:pan-y;--realm-track:linear-gradient(to right,#000,#fff);--realm-thumb:#fff}
+#realm-color-picker #realm-hue{--realm-track:linear-gradient(to right,#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00)}
+#realm-color-picker input[type=range]::-webkit-slider-runnable-track{height:16px;border-radius:10px;background:var(--realm-track);box-shadow:inset 0 0 0 1px #fff4}
+#realm-color-picker input[type=range]::-moz-range-track{height:16px;border-radius:10px;background:var(--realm-track);box-shadow:inset 0 0 0 1px #fff4}
+#realm-color-picker input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:24px;height:24px;border:3px solid #fff;border-radius:50%;background:var(--realm-thumb);margin-top:-4px;box-shadow:0 0 0 1px #152238,0 2px 5px #0008}
+#realm-color-picker input[type=range]::-moz-range-thumb{width:18px;height:18px;border:3px solid #fff;border-radius:50%;background:var(--realm-thumb);box-shadow:0 0 0 1px #152238,0 2px 5px #0008}
+#realm-color-picker input:focus-visible{outline:2px solid #9ec5ff;outline-offset:3px}
+#realm-color-picker .realm-color-note{font-size:.68rem;color:var(--muted);line-height:1.4}
