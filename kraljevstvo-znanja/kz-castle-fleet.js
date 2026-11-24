@@ -195,7 +195,7 @@
   }
   function updateButton(){
     if(!button)return;
-    button.textContent="🏰 Dvorci ("+total()+")";
+    button.textContent="🏰 Dvorci";
     button.title="Pronađi hodajući dvorac; "+visible.size+" vidljivo na karti. Borba je moguća tek iz blizine.";
   }
   function nearestToCenter(){
