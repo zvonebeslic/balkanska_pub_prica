@@ -9,7 +9,7 @@
   const client = window.supabase?.createClient(API_URL, API_KEY);
   let identity = null, current = null, kingdoms = [], cells = [], map = null, tilesLayer, borderLayer, labelsLayer, lifeLayer;
   let lifeEnabled = true;
-  try { lifeEnabled = localStorage.getItem("kz_animated_world_v1") !== "off"; } catch (_) {}
+  // The map toolbar no longer exposes the world toggle; keep characters visible for everyone.
   let mapLoading = false, mapRevision = 0, dialogQuiz = false;
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
   let firstGpsFix = null, firstGpsBusy = false;
