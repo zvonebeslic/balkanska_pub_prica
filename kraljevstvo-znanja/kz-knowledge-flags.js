@@ -2,7 +2,7 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.webm?v=1",corner:"./media/korner-henry.webm?v=1"};
+const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.webm?v=2",corner:"./media/korner-henry.webm?v=2"};
 const videos={},ready={};let lastPaint=0;
 const el=(tag,txt,cls)=>{const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n;};
 const rpc=()=>window.KZFlagRPC;
@@ -10,7 +10,7 @@ function makeIcon(f){
  const lat=f.lat,kind=f.kind==='corner'?'corner':'golf',videoReady=!!ready[kind];
  const root=el("div",null,"kz-flag-art");
  const fallback=el("span",kind==="corner"?"⚽":"🚩","kz-flag-fallback");
- const c=el("canvas",null,"kz-flag-canvas");c.width=128;c.height=118;c.hidden=!videoReady;
+ const c=el("canvas",null,"kz-flag-canvas");c.width=320;c.height=320;c.hidden=!videoReady;
  fallback.hidden=videoReady;root.append(fallback,c);
  const z=map.getZoom(),mpp=156543.033928*Math.max(.05,Math.cos(lat*Math.PI/180))/Math.pow(2,z);
  const w=Math.max(z<12?12:z<19?16:1,Math.round(7.5/mpp));
