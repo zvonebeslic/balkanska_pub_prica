@@ -2,7 +2,7 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.mp4?v=1",corner:"./media/korner-henry.webm?v=3"};
+const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.webm?v=4",corner:"./media/korner-henry.webm?v=4"};
 const videos={},ready={};let lastPaint=0;
 const el=(tag,txt,cls)=>{const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n;};
 const rpc=()=>window.KZFlagRPC;
