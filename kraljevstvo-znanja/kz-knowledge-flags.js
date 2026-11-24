@@ -2,7 +2,7 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry.webm?v=4"};
+const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry.mp4?v=1"};
 const videos={},ready={};let lastPaint=0;
 const el=(tag,txt,cls)=>{const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n;};
 const rpc=()=>window.KZFlagRPC;
@@ -10,7 +10,7 @@ function makeIcon(f){
  const lat=f.lat,kind=f.kind==='corner'?'corner':'golf',videoReady=!!ready[kind];
  const root=el("div",null,"kz-flag-art");
  const fallback=el("span",kind==="corner"?"⚽":"🚩","kz-flag-fallback");
- const c=el("canvas",null,"kz-flag-canvas");c.width=kind==="golf"?416:320;c.height=kind==="golf"?384:320;c.hidden=!videoReady;
+ const c=el("canvas",null,"kz-flag-canvas");c.width=kind==="golf"?416:448;c.height=kind==="golf"?384:448;c.hidden=!videoReady;
  fallback.hidden=videoReady;root.append(fallback,c);
  const z=map.getZoom(),mpp=156543.033928*Math.max(.05,Math.cos(lat*Math.PI/180))/Math.pow(2,z);
  const w=Math.max(z<12?12:z<19?16:1,Math.round(7.5/mpp));
@@ -18,10 +18,11 @@ function makeIcon(f){
  return L.divIcon({className:"kz-flag-marker",html:root,iconSize:[w,w],iconAnchor:[w/2,w*.83]});
 }
 // Original golf MP4; key its black background once per decoded frame.
-// The corner video is intentionally unaffected.
+// Both original MP4s use independent key buffers; legacy corner WebM is a fallback.
 const golfKey={canvas:null,ctx:null,token:null,peak:null,outside:null,queue:null};
-function golfFrame(video,token){
- const w=video.videoWidth,h=video.videoHeight,n=w*h,k=golfKey;
+const cornerKey={canvas:null,ctx:null,token:null,peak:null,outside:null,queue:null};
+function golfFrame(video,token,kind="golf"){
+ const w=video.videoWidth,h=video.videoHeight,n=w*h,k=kind==="corner"?cornerKey:golfKey;
  if(!w||!h)return null;
  if(!k.canvas||k.canvas.width!==w||k.canvas.height!==h){
   k.canvas=document.createElement("canvas");k.canvas.width=w;k.canvas.height=h;
@@ -32,9 +33,14 @@ function golfFrame(video,token){
  const ctx=k.ctx,p=k.peak,o=k.outside,q=k.queue;
  ctx.clearRect(0,0,w,h);ctx.drawImage(video,0,0,w,h);
  // Mask the fixed PopVid overlay in the top right, in source coordinates.
- ctx.save();ctx.scale(w/416,h/384);ctx.fillStyle="#000";
- ctx.beginPath();ctx.moveTo(278,16);ctx.lineTo(320,2);ctx.lineTo(325,23);ctx.lineTo(298,32);ctx.lineTo(294,38);ctx.lineTo(280,38);ctx.lineTo(277,26);ctx.closePath();ctx.fill();
- ctx.fillRect(323,11,84,20);ctx.restore();
+ ctx.save();ctx.fillStyle="#000";
+ if(kind==="corner"){ctx.scale(w/448,h/448);ctx.fillRect(294,0,154,47);}
+ else{
+  ctx.scale(w/416,h/384);
+  ctx.beginPath();ctx.moveTo(278,16);ctx.lineTo(320,2);ctx.lineTo(325,23);ctx.lineTo(298,32);ctx.lineTo(294,38);ctx.lineTo(280,38);ctx.lineTo(277,26);ctx.closePath();ctx.fill();
+  ctx.fillRect(323,11,84,20);
+ }
+ ctx.restore();
  const image=ctx.getImageData(0,0,w,h),d=image.data;
  o.fill(0);
  for(let i=0,j=0;i<n;i++,j+=4)p[i]=Math.max(d[j],d[j+1],d[j+2]);
@@ -66,7 +72,13 @@ function initVideo(){
   video.style.cssText="position:fixed;left:-9999px;top:0;width:1px;height:1px;pointer-events:none";
   video.setAttribute("aria-hidden","true");document.body.append(video);
   video.addEventListener("loadeddata",()=>{ready[kind]=true;video.play().catch(()=>{});});
-  video.addEventListener("error",()=>{ready[kind]=false;console.warn("KZ zastavica: video nije dostupan",kind);});
+  video.addEventListener("error",()=>{
+   ready[kind]=false;
+   if(kind==="corner"&&!video.dataset.cornerFallback){
+    video.dataset.cornerFallback="1";video.src="./media/korner-henry.webm?v=4";video.load();return;
+   }
+   console.warn("KZ zastavica: video nije dostupan",kind);
+  });
  }
  function paint(t){
   requestAnimationFrame(paint);
@@ -75,14 +87,14 @@ function initVideo(){
   if(paintCorner)lastPaint=t;
   for(const item of markers.values()){
    const kind=item.f.kind==='corner'?'corner':'golf',video=videos[kind];
-   if(!ready[kind]||!video||video.readyState<2||(kind==="corner"&&!paintCorner))continue;
+   if(!ready[kind]||!video||video.readyState<2||(kind==="corner"&&video.dataset.cornerFallback&&!paintCorner))continue;
    const node=item.marker.getElement(),c=node?.querySelector("canvas");
    if(!c)continue;
    let source=video;
-   if(kind==="golf"){
+   if(kind==="golf"||(kind==="corner"&&!video.dataset.cornerFallback)){
     const frame=String(Math.floor(video.currentTime*24)) + ":" + String(video.getVideoPlaybackQuality?.().totalVideoFrames ?? 0);
     if(!c.hidden&&c.dataset.frameToken===frame)continue;
-    source=golfFrame(video,frame);
+    source=golfFrame(video,frame,kind);
     if(!source)continue;
     c.dataset.frameToken=frame;
    }
