@@ -539,3 +539,12 @@ body{background:
  .map-top>div:first-child{grid-column:1;grid-row:1;text-align:center}
  .map-top>.map-actions{grid-column:1;grid-row:2;justify-self:end}
 }
+
+
+/* Original KvizToGo wordmark colors; kingdom heading in the existing fantasy palette. */
+.site-header .brand-logo{filter:none;text-transform:none;text-shadow:none}
+.site-header .brand-logo .logo-kviz{color:#ffffff;text-shadow:none}
+.site-header .brand-logo .logo-to{color:#2f80ff;text-shadow:none}
+.site-header .brand-logo .logo-go{color:#22c55e;text-shadow:none}
+.intro h1{color:var(--royal-light);text-shadow:0 2px 3px #03131d,0 4px 16px #0007}
+.intro h1 span{color:var(--royal-emerald);text-shadow:0 2px 3px #03131d,0 4px 16px #0007}
