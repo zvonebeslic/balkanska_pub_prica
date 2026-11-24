@@ -57,6 +57,12 @@
     }))
   };
 
+  window.KZFlagRPC = {
+    map: (params) => rpc("kz_flag_map", params),
+    challenge: (id,generation) => rpc("kz_flag_challenge", args({p_flag_id:id,p_generation:generation})),
+    answer: (id,choice) => rpc("kz_flag_answer", args({p_challenge_id:id,p_choice:choice}))
+  };
+
   // Samo koordinatne RPC operacije; postojeći identitet ostaje privatno u ovoj skripti.
   window.KZCoordinateRPC = (name, extra = {}) => {
     if (!["kz_coord_list","kz_coord_save","kz_coord_delete"].includes(name)) {
