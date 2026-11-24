@@ -195,7 +195,7 @@
   function setupButton(){
     const button=document.getElementById("kz-iron-button");
     if(!button)return;
-    button.textContent="⚙️ Sir Željeznik ("+guards.length.toLocaleString("hr-HR")+")";
+    button.textContent="⚙️ Sir Željeznik";
     button.title="Pronađi najbližeg Sir Željeznog; na udaljenom zumu vidljive su minijature";
     button.addEventListener("click",focusNearest);
   }
