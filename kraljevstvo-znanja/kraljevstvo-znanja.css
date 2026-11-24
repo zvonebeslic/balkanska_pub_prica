@@ -506,3 +506,19 @@ body{background:
 #realm-color-picker input[type=range]::-moz-range-thumb{width:18px;height:18px;border:3px solid #fff;border-radius:50%;background:var(--realm-thumb);box-shadow:0 0 0 1px #152238,0 2px 5px #0008}
 #realm-color-picker input:focus-visible{outline:2px solid #9ec5ff;outline-offset:3px}
 #realm-color-picker .realm-color-note{font-size:.68rem;color:var(--muted);line-height:1.4}
+
+
+/* Compact bottom-centred map joystick; keep POSTAVI inside the central button. */
+#joystick-panel{left:50%;right:auto;bottom:12px;transform:translateX(-50%);align-items:center;gap:4px;padding:5px;max-width:156px;box-sizing:border-box}
+#joystick-panel .joystick-dpad{width:118px;height:118px;box-sizing:border-box;padding:4px;gap:2px;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr)}
+#joystick-panel .joystick-dpad button{box-sizing:border-box;min-height:0;min-width:0;font-size:16px}
+#joystick-panel #claim-block.joy-place{display:flex;align-items:center;justify-content:center;min-height:0;min-width:0;width:100%;height:100%;box-sizing:border-box;padding:0 1px;white-space:nowrap;overflow:hidden;font-family:Arial,sans-serif;font-size:7.5px;font-weight:800;letter-spacing:-.35px;line-height:1;text-align:center}
+#joystick-panel .joystick-meta{max-width:144px;text-align:center;gap:3px}
+#joystick-panel .joystick-meta #cursor-status{font-size:9px;line-height:1.25}
+#joystick-panel .joystick-meta .joy-gps{font-size:10px;min-height:25px;padding:3px 5px}
+@media(max-width:620px){
+ #joystick-panel{bottom:9px;padding:4px;max-width:140px}
+ #joystick-panel .joystick-dpad{width:100px;height:100px;padding:3px}
+ #joystick-panel .joystick-dpad button{font-size:13px}
+ #joystick-panel #claim-block.joy-place{font-size:6.5px;letter-spacing:-.25px}
+}
