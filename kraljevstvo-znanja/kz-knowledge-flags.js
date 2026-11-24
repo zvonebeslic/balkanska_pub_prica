@@ -2,7 +2,7 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=25200, MIN_ZOOM=8, MEDIA="./media/zastavica-1.webm?v=1";
+const TOTAL=40200, MIN_ZOOM=8, MEDIA="./media/zastavica-1.webm?v=1";
 let video=null,videoReady=false,lastPaint=0;
 const el=(tag,txt,cls)=>{const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n;};
 const rpc=()=>window.KZFlagRPC;
@@ -117,7 +117,7 @@ function mount(m){
  document.head.append(style);
  const toggle=document.getElementById("map-life-toggle");enabled=toggle?.getAttribute("aria-pressed")!=="false";toggle?.addEventListener("click",()=>{enabled=toggle.getAttribute("aria-pressed")!=="false";refresh();});
  const actions=document.querySelector(".map-top .map-actions");
- if(actions){button=el("button","🚩 Zastavice (25.200)","minor kz-world-locate");button.type="button";button.id="kz-flag-button";
+ if(actions){button=el("button","🚩 Zastavice (40.200)","minor kz-world-locate");button.type="button";button.id="kz-flag-button";
  button.onclick=async()=>{try{if(!enabled)toggle?.click();const rows=await rpc().map(boundsArgs(true));if(rows?.length)map.flyTo([rows[0].lat,rows[0].lng],Math.max(15,map.getZoom()));}catch(e){console.warn(e);}};
  actions.insertBefore(button,document.getElementById("kz-iron-button")||actions.firstChild);}
  initVideo();map.on("moveend zoomend",schedule);refresh();poll=setInterval(()=>{if(!document.hidden)refresh();},10000);
