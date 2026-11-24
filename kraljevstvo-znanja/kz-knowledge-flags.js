@@ -2,7 +2,7 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.webm?v=2",corner:"./media/korner-henry.webm?v=3"};
+const TOTAL=68340, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.mp4?v=1",corner:"./media/korner-henry.webm?v=3"};
 const videos={},ready={};let lastPaint=0;
 const el=(tag,txt,cls)=>{const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n;};
 const rpc=()=>window.KZFlagRPC;
@@ -10,7 +10,7 @@ function makeIcon(f){
  const lat=f.lat,kind=f.kind==='corner'?'corner':'golf',videoReady=!!ready[kind];
  const root=el("div",null,"kz-flag-art");
  const fallback=el("span",kind==="corner"?"⚽":"🚩","kz-flag-fallback");
- const c=el("canvas",null,"kz-flag-canvas");c.width=320;c.height=320;c.hidden=!videoReady;
+ const c=el("canvas",null,"kz-flag-canvas");c.width=kind==="golf"?416:320;c.height=kind==="golf"?384:320;c.hidden=!videoReady;
  fallback.hidden=videoReady;root.append(fallback,c);
  const z=map.getZoom(),mpp=156543.033928*Math.max(.05,Math.cos(lat*Math.PI/180))/Math.pow(2,z);
  const w=Math.max(z<12?12:z<19?16:1,Math.round(7.5/mpp));
@@ -25,17 +25,23 @@ function initVideo(){
   video.style.cssText="position:fixed;left:-9999px;top:0;width:1px;height:1px;pointer-events:none";
   video.setAttribute("aria-hidden","true");document.body.append(video);
   video.addEventListener("loadeddata",()=>{ready[kind]=true;video.play().catch(()=>{});});
-  video.addEventListener("error",()=>{ready[kind]=false;console.warn("KZ zastavica: WebM nije dostupan",kind);});
+  video.addEventListener("error",()=>{ready[kind]=false;console.warn("KZ zastavica: video nije dostupan",kind);});
  }
  function paint(t){
   requestAnimationFrame(paint);
-  if(document.hidden||!enabled||t-lastPaint<55)return;
-  lastPaint=t;
+  if(document.hidden||!enabled)return;
+  const paintCorner=t-lastPaint>=55;
+  if(paintCorner)lastPaint=t;
   for(const item of markers.values()){
    const kind=item.f.kind==='corner'?'corner':'golf',video=videos[kind];
-   if(!ready[kind]||!video||video.readyState<2)continue;
+   if(!ready[kind]||!video||video.readyState<2||(kind==="corner"&&!paintCorner))continue;
    const node=item.marker.getElement(),c=node?.querySelector("canvas");
    if(!c)continue;
+   if(kind==="golf"){
+    const frame=String(video.getVideoPlaybackQuality?.().totalVideoFrames ?? Math.floor(video.currentTime*24));
+    if(!c.hidden&&c.dataset.frameToken===frame)continue;
+    c.dataset.frameToken=frame;
+   }
    if(c.hidden){c.hidden=false;node.querySelector(".kz-flag-fallback").hidden=true;}
    const ctx=c.getContext("2d");ctx.clearRect(0,0,c.width,c.height);
    const w=c.width,h=c.height,scale=Math.min(w/video.videoWidth,h/video.videoHeight),vw=video.videoWidth*scale,vh=video.videoHeight*scale;
