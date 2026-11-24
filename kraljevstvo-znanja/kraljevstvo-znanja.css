@@ -528,3 +528,14 @@ body{background:
 .map-top #map-hint{display:none!important}
 .map-top .map-actions > button:not(#kz-coordinate-bookmarks):not(#refresh-btn){display:none!important}
 #joystick-panel #choose-map-center{width:100%;min-height:25px;padding:3px 5px;font-size:10px;border-radius:9px;box-sizing:border-box;white-space:normal}
+
+
+/* Centre the map title independently of the toolbar buttons. */
+.map-top{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center}
+.map-top>div:first-child{grid-column:2;grid-row:1;text-align:center;min-width:0}
+.map-top>.map-actions{grid-column:3;grid-row:1;justify-self:end;justify-content:flex-end}
+@media(max-width:620px){
+ .map-top{grid-template-columns:minmax(0,1fr);row-gap:6px}
+ .map-top>div:first-child{grid-column:1;grid-row:1;text-align:center}
+ .map-top>.map-actions{grid-column:1;grid-row:2;justify-self:end}
+}
