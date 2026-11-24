@@ -522,3 +522,9 @@ body{background:
  #joystick-panel .joystick-dpad button{font-size:13px}
  #joystick-panel #claim-block.joy-place{font-size:6.5px;letter-spacing:-.25px}
 }
+
+
+/* Minimal map toolbar: only coordinates and refresh; preserve internal world hooks. */
+.map-top #map-hint{display:none!important}
+.map-top .map-actions > button:not(#kz-coordinate-bookmarks):not(#refresh-btn){display:none!important}
+#joystick-panel #choose-map-center{width:100%;min-height:25px;padding:3px 5px;font-size:10px;border-radius:9px;box-sizing:border-box;white-space:normal}
