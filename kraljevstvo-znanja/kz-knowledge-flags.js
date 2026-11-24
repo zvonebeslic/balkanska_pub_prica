@@ -156,46 +156,85 @@ function gpsFix(f){
   },e=>reject(Error("GPS: "+e.message)),{enableHighAccuracy:true,maximumAge:0,timeout:16000});
  });
 }
+const FLAG_NAMES={golf:"Golf zastavica znanja",corner:"Korner znanja · Henry 14",iwo:"Iwo Jima · zastava znanja",astronaut:"Astronaut znanja"};
 async function openFlag(f,marker){
  if(active)return;
- const count=maxQuestions(f),multi=count>1;
- const box=el("div",null,"kz-flag-popup");box.append(el("strong",f.kind==="astronaut"?"🧑‍🚀 Astronaut znanja":f.kind==="iwo"?"🇺🇸 Iwo Jima · zastava znanja":f.kind==="corner"?"⚽ Korner znanja · Henry 14":"🚩 Golf zastavica znanja"),el("p",multi?"Preostalo pitanja: "+(f.remaining??count)+" / "+count+" · +20 m² za točan odgovor.":"Jedno pitanje · +20 m² za točan odgovor."),el("p","Provjeravam GPS · najviše 2 km…"));
- const popup=L.popup({maxWidth:330,minWidth:220,autoClose:true,closeOnClick:true}).setLatLng(marker.getLatLng()).setContent(box).openOn(map);
+ const count=maxQuestions(f);
+ const box=el("div",null,"kz-flag-popup");
+ const header=el("div",null,"kz-flag-header");
+ const title=el("strong",FLAG_NAMES[kindOf(f)],"kz-flag-title");
+ const info=el("div",null,"kz-flag-info");
+ const counter=el("span",null,"kz-flag-counter"),reward=el("span","+20 m² / točan odgovor","kz-flag-reward");
+ const setRemaining=n=>{counter.textContent="Preostalo pitanja: "+Math.max(0,Math.min(count,Number(n??count)||0))+" / "+count;};
+ setRemaining(f.remaining??count);info.append(counter,reward);header.append(title,info);
+ const question=el("p",null,"kz-flag-question");question.hidden=true;
+ const media=el("div",null,"kz-flag-question-media");media.hidden=true;
+ const buttons=el("div",null,"kz-flag-options");buttons.hidden=true;
+ const result=el("p","Provjeravam GPS · najviše 2 km…","kz-flag-result");
+ result.setAttribute("role","status");result.setAttribute("aria-live","polite");
+ const footer=el("div",null,"kz-flag-footer");footer.hidden=true;
+ const next=el("button","Sljedeće pitanje","kz-flag-next");next.type="button";footer.append(next);
+ box.append(header,question,media,buttons,result,footer);
+ const popup=L.popup({maxWidth:340,minWidth:220,autoClose:true,closeOnClick:true,className:"kz-flag-quiz-popup"}).setLatLng(marker.getLatLng()).setContent(box).openOn(map);
  const token={};active=token;
+ const isOpen=()=>map.hasLayer(popup);
+ const closeButton=()=>{next.textContent="Zatvori";next.onclick=()=>map.closePopup(popup);footer.hidden=false;};
+ popup.on("remove",()=>{if(active===token)active=null;});
  let q;
- try{const fix=await gpsFix(f);box.lastChild.textContent='Učitavam pitanje…';q=await rpc().challenge(f.id,f.generation,fix);}
- catch(e){box.lastChild.textContent=e.message;active=null;schedule();return;}
- if(active!==token)return;
- active=null;
- if(!map.hasLayer(popup))return;
- box.lastChild.remove();
- if(multi)box.children[1].textContent="Preostalo pitanja: "+(q.remaining??f.remaining??count)+" / "+count+" · +20 m² za točan odgovor.";
- box.append(el("p",q.prompt,"kz-flag-question"));
- if(q.image&&/^https?:\/\//i.test(q.image)){const img=el("img");img.src=q.image;img.alt="Slika uz pitanje";img.style.maxWidth="100%";box.append(img);}
- const buttons=el("div",null,"kz-flag-options"),result=el("p",null,"kz-flag-result");
+ try{
+  const fix=await gpsFix(f);if(!isOpen())return;
+  result.textContent="Učitavam pitanje…";q=await rpc().challenge(f.id,f.generation,fix);
+ }catch(e){
+  if(isOpen()){result.textContent=e.message;result.dataset.state="error";closeButton();}
+  schedule();return;
+ }finally{if(active===token)active=null;}
+ if(!isOpen())return;
+ setRemaining(q.remaining??f.remaining??count);
+ result.textContent="";
+ question.textContent=q.prompt;question.hidden=false;
+ if(q.image&&/^https?:\/\//i.test(q.image)){
+  const img=el("img");img.src=q.image;img.alt="Slika uz pitanje";media.append(img);media.hidden=false;
+  img.addEventListener("error",()=>{media.hidden=true;});
+ }
  let busy=false,done=false;
  for(const key of ["A","B","C"]){
-  const b=el("button",key+") "+String(q.options?.[key]??""),"kz-flag-answer");b.type="button";
+  const b=el("button",null,"kz-flag-answer");b.type="button";b.dataset.key=key;
+  b.append(el("span",key,"kz-flag-letter"),el("span",String(q.options?.[key]??""),"kz-flag-answer-text"));
   b.onclick=async()=>{
    if(busy||done)return;
    busy=true;for(const n of buttons.children)n.disabled=true;
+   delete result.dataset.state;
    try{
-    result.textContent='Ponovno provjeravam GPS…';const fix=await gpsFix(f);const r=await rpc().answer(q.challenge_id,key,fix);done=true;
-    result.textContent=(r.correct?"✓ Točno! +20 m².":"✗ Netočno. Točan odgovor: "+r.correct_key+") "+(q.options?.[r.correct_key]??"")+".")+(r.moved?" Zastavica je premještena.":" Preostalo pitanja: "+r.remaining+".");
-    const item=markers.get(f.id);if(r.moved&&item){map.removeLayer(item.marker);markers.delete(f.id);}else if(item){item.f={...item.f,remaining:r.remaining};const next=el("button","Sljedeće pitanje →","kz-flag-answer");next.type="button";next.onclick=()=>openFlag(item.f,item.marker);box.append(next);}
+    result.textContent="Ponovno provjeravam GPS…";const fix=await gpsFix(f);
+    if(!isOpen())return;
+    const r=await rpc().answer(q.challenge_id,key,fix);done=true;
+    setRemaining(r.remaining??0);
+    for(const n of buttons.children){
+     if(n.dataset.key===r.correct_key)n.dataset.state="correct";
+     else if(n.dataset.key===key)n.dataset.state="wrong";
+    }
+    result.dataset.state=r.correct?"correct":"wrong";
+    result.textContent=(r.correct?"✓ Točno! +20 m².":"✗ Netočno. Točan odgovor: "+r.correct_key+") "+(q.options?.[r.correct_key]??"")+".")+(r.moved?" Zastavica je premještena.":"");
+    const item=markers.get(f.id);
+    if(r.moved){if(item){map.removeLayer(item.marker);markers.delete(f.id);}closeButton();}
+    else {
+     const updated={...(item?.f||f),remaining:r.remaining};
+     if(item)item.f=updated;
+     next.textContent="Sljedeće pitanje";next.onclick=()=>openFlag(updated,item?.marker||marker);footer.hidden=false;
+    }
     if(r.reward_m2>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",{detail:{reward_m2:r.reward_m2}}));
     refresh();
-   }catch(e){result.textContent=e.message;for(const n of buttons.children)n.disabled=false;refresh();}
+   }catch(e){result.textContent=e.message;result.dataset.state="error";for(const n of buttons.children)n.disabled=false;refresh();}
    finally{busy=false;}
   };
   buttons.append(b);
  }
- box.append(buttons,result);
+ buttons.hidden=false;
 }
 function mount(m){
  if(map||!m||!rpc())return;map=m;
  const pane=map.getPane("kzFlagPane")||map.createPane("kzFlagPane");pane.style.zIndex="1500";pane.style.pointerEvents="auto";
- const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:inherit}.kz-flag-art [hidden]{display:none!important}.kz-flag-popup{font-size:13px}.kz-flag-question{font-weight:700;font-size:15px}.kz-flag-options{display:grid;gap:5px}.kz-flag-answer{padding:8px;text-align:left;border:1px solid #aaa;border-radius:8px;background:#f4f5f7;color:#152238;cursor:pointer}.kz-flag-answer:disabled{opacity:.65}.kz-flag-result{font-weight:700}";
+ const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:inherit}.kz-flag-art [hidden]{display:none!important}.kz-flag-popup{width:280px;max-width:calc(100vw - 95px);font-size:13px;display:grid;gap:12px;color:#152238}.kz-flag-popup [hidden]{display:none!important}.kz-flag-header{display:grid;gap:7px;padding-bottom:10px;border-bottom:1px solid #dbe1e8}.kz-flag-title{font-size:16px;line-height:1.25}.kz-flag-info{display:grid;gap:3px;font-size:12px;font-weight:600;color:#526175}.kz-flag-counter{font-variant-numeric:tabular-nums}.kz-flag-question{margin:0!important;font-weight:700;font-size:15px;line-height:1.45;overflow-wrap:anywhere}.kz-flag-question-media img{display:block;width:auto;max-width:100%;max-height:150px;margin:auto;border-radius:8px;object-fit:contain}.kz-flag-options{display:grid;gap:7px}.kz-flag-answer{display:flex;align-items:center;gap:9px;min-height:44px;width:100%;padding:8px;text-align:left;border:1px solid #c5cfdb;border-radius:9px;background:#f4f5f7;color:#152238;cursor:pointer;font:inherit;line-height:1.35;box-sizing:border-box}.kz-flag-letter{flex:0 0 24px;height:24px;display:grid;place-items:center;border-radius:5px;background:#e2e8f0;font-weight:700}.kz-flag-answer-text{min-width:0;overflow-wrap:anywhere}.kz-flag-answer:disabled{cursor:default;opacity:.65}.kz-flag-answer[data-state=correct]{background:#e5f7e9;border-color:#4c9762;color:#14532d;opacity:1}.kz-flag-answer[data-state=wrong]{background:#fde8e8;border-color:#cd6969;color:#8b2020;opacity:1}.kz-flag-result{margin:0!important;min-height:18px;font-weight:600;line-height:1.4;overflow-wrap:anywhere}.kz-flag-result[data-state=correct]{color:#166534}.kz-flag-result[data-state=wrong],.kz-flag-result[data-state=error]{color:#a32727}.kz-flag-footer{display:grid}.kz-flag-next{width:100%;min-height:42px;border:0;border-radius:9px;background:#24354d;color:#fff;font:inherit;font-weight:700;cursor:pointer}";
  document.head.append(style);
  const toggle=document.getElementById("map-life-toggle");enabled=toggle?.getAttribute("aria-pressed")!=="false";toggle?.addEventListener("click",()=>{enabled=toggle.getAttribute("aria-pressed")!=="false";refresh();});
  const actions=document.querySelector(".map-top .map-actions");
