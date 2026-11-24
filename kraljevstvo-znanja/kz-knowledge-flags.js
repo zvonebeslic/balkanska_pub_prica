@@ -6,12 +6,14 @@ const TOTAL=25200, MIN_ZOOM=8, MEDIA="./media/zastavica-1.webm?v=1";
 let video=null,videoReady=false,lastPaint=0;
 const el=(tag,txt,cls)=>{const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n;};
 const rpc=()=>window.KZFlagRPC;
-function makeIcon(){
+function makeIcon(lat){
  const root=el("div",null,"kz-flag-art");
  const fallback=el("span","🚩","kz-flag-fallback");
  const c=el("canvas",null,"kz-flag-canvas");c.width=128;c.height=118;c.hidden=!videoReady;
  fallback.hidden=videoReady;root.append(fallback,c);
- const w=map.getZoom()>=16?72:map.getZoom()>=12?56:40;
+ const z=map.getZoom(),mpp=156543.033928*Math.max(.05,Math.cos(lat*Math.PI/180))/Math.pow(2,z);
+ const w=Math.max(z<12?12:z<19?16:1,Math.round(7.5/mpp));
+ root.style.fontSize=Math.max(9,w*.72)+'px';
  return L.divIcon({className:"kz-flag-marker",html:root,iconSize:[w,w],iconAnchor:[w/2,w*.83]});
 }
 function initVideo(){
@@ -45,10 +47,10 @@ function draw(rows){
   keep.add(f.id);let x=markers.get(f.id);
   if(x&&x.f.generation!==f.generation){map.removeLayer(x.marker);markers.delete(f.id);x=null;}
   if(!x){
-   const marker=L.marker([f.lat,f.lng],{icon:makeIcon(),pane:"kzFlagPane",keyboard:true,title:"Zastavica znanja · 1 pitanje",bubblingMouseEvents:false}).addTo(map);
+   const marker=L.marker([f.lat,f.lng],{icon:makeIcon(f.lat),pane:"kzFlagPane",keyboard:true,title:"Zastavica znanja · 1 pitanje",bubblingMouseEvents:false}).addTo(map);
    marker.on("click",e=>{L.DomEvent.stopPropagation(e);openFlag(f,marker);});
    x={marker,f,zoom};markers.set(f.id,x);
-  }else if(x.zoom!==zoom){x.marker.setIcon(makeIcon());x.zoom=zoom;}
+  }else if(x.zoom!==zoom){x.marker.setIcon(makeIcon(f.lat));x.zoom=zoom;}
  }
  for(const [id,x] of markers)if(!keep.has(id)){map.removeLayer(x.marker);markers.delete(id);}
  if(video&&markers.size&&video.paused)video.play().catch(()=>{});
@@ -62,13 +64,25 @@ async function refresh(){
  catch(e){console.warn("KZ zastavice",e);}
 }
 function schedule(){clearTimeout(timer);timer=setTimeout(refresh,160);}
+function gpsFix(f){
+ return new Promise((resolve,reject)=>{
+  if(!window.isSecureContext||!navigator.geolocation){reject(Error("GPS zahtijeva HTTPS i uređaj s lokacijom."));return;}
+  navigator.geolocation.getCurrentPosition(p=>{
+   const c=p.coords;
+   if(Date.now()-p.timestamp>25000||!Number.isFinite(c.accuracy)||c.accuracy>150||c.accuracy<0){reject(Error("GPS nije dovoljno precizan (do 150 m). Pokušaj ponovno."));return;}
+   const km=map.distance([c.latitude,c.longitude],[f.lat,f.lng])/1000;
+   if(km>2){reject(Error("Zastavica je udaljena "+km.toFixed(2)+" km. Priđi na najviše 2 km."));return;}
+   resolve({lat:c.latitude,lng:c.longitude,accuracy:c.accuracy});
+  },e=>reject(Error("GPS: "+e.message)),{enableHighAccuracy:true,maximumAge:0,timeout:16000});
+ });
+}
 async function openFlag(f,marker){
  if(active)return;
- const box=el("div",null,"kz-flag-popup");box.append(el("strong","🚩 Zastavica znanja"),el("p","Jedno pitanje · 20 blokova (400 m²) za točan odgovor."),el("p","Učitavam pitanje…"));
+ const box=el("div",null,"kz-flag-popup");box.append(el("strong","🚩 Zastavica znanja"),el("p","Jedno pitanje · 20 blokova (400 m²) za točan odgovor."),el("p","Provjeravam GPS · najviše 2 km…"));
  const popup=L.popup({maxWidth:330,minWidth:220,autoClose:true,closeOnClick:true}).setLatLng(marker.getLatLng()).setContent(box).openOn(map);
  const token={};active=token;
  let q;
- try{q=await rpc().challenge(f.id,f.generation);}
+ try{const fix=await gpsFix(f);box.lastChild.textContent='Učitavam pitanje…';q=await rpc().challenge(f.id,f.generation,fix);}
  catch(e){box.lastChild.textContent=e.message;active=null;schedule();return;}
  if(active!==token)return;
  active=null;
@@ -84,12 +98,12 @@ async function openFlag(f,marker){
    if(busy||done)return;
    busy=true;for(const n of buttons.children)n.disabled=true;
    try{
-    const r=await rpc().answer(q.challenge_id,key);done=true;
+    result.textContent='Ponovno provjeravam GPS…';const fix=await gpsFix(f);const r=await rpc().answer(q.challenge_id,key,fix);done=true;
     result.textContent=r.correct?"✓ Točno! +20 blokova (400 m²). Zastavica je premještena.":"✗ Netočno. Točan odgovor: "+r.correct_key+") "+(q.options?.[r.correct_key]??"")+". Zastavica je premještena.";
     const item=markers.get(f.id);if(item){map.removeLayer(item.marker);markers.delete(f.id);}
     if(r.reward_m2>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",{detail:{reward_m2:r.reward_m2}}));
     refresh();
-   }catch(e){result.textContent=e.message;done=true;refresh();}
+   }catch(e){result.textContent=e.message;for(const n of buttons.children)n.disabled=false;refresh();}
    finally{busy=false;}
   };
   buttons.append(b);
@@ -99,7 +113,7 @@ async function openFlag(f,marker){
 function mount(m){
  if(map||!m||!rpc())return;map=m;
  const pane=map.getPane("kzFlagPane")||map.createPane("kzFlagPane");pane.style.zIndex="1500";pane.style.pointerEvents="auto";
- const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:24px}.kz-flag-art [hidden]{display:none!important}.kz-flag-popup{font-size:13px}.kz-flag-question{font-weight:700;font-size:15px}.kz-flag-options{display:grid;gap:5px}.kz-flag-answer{padding:8px;text-align:left;border:1px solid #aaa;border-radius:8px;background:#f4f5f7;color:#152238;cursor:pointer}.kz-flag-answer:disabled{opacity:.65}.kz-flag-result{font-weight:700}";
+ const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:inherit}.kz-flag-art [hidden]{display:none!important}.kz-flag-popup{font-size:13px}.kz-flag-question{font-weight:700;font-size:15px}.kz-flag-options{display:grid;gap:5px}.kz-flag-answer{padding:8px;text-align:left;border:1px solid #aaa;border-radius:8px;background:#f4f5f7;color:#152238;cursor:pointer}.kz-flag-answer:disabled{opacity:.65}.kz-flag-result{font-weight:700}";
  document.head.append(style);
  const toggle=document.getElementById("map-life-toggle");enabled=toggle?.getAttribute("aria-pressed")!=="false";toggle?.addEventListener("click",()=>{enabled=toggle.getAttribute("aria-pressed")!=="false";refresh();});
  const actions=document.querySelector(".map-top .map-actions");

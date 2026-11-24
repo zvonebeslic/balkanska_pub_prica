@@ -59,8 +59,8 @@
 
   window.KZFlagRPC = {
     map: (params) => rpc("kz_flag_map", params),
-    challenge: (id,generation) => rpc("kz_flag_challenge", args({p_flag_id:id,p_generation:generation})),
-    answer: (id,choice) => rpc("kz_flag_answer", args({p_challenge_id:id,p_choice:choice}))
+    challenge: (id,generation,fix) => rpc("kz_flag_challenge", args({p_flag_id:id,p_generation:generation,p_lat:fix.lat,p_lng:fix.lng,p_accuracy:fix.accuracy})),
+    answer: (id,choice,fix) => rpc("kz_flag_answer", args({p_challenge_id:id,p_choice:choice,p_lat:fix.lat,p_lng:fix.lng,p_accuracy:fix.accuracy}))
   };
 
   // Samo koordinatne RPC operacije; postojeći identitet ostaje privatno u ovoj skripti.
