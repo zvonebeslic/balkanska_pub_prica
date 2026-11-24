@@ -1,0 +1,32 @@
+name: KZ Henry clean transparent video
+on:
+  push:
+    branches: [main]
+    paths:
+      - "kraljevstvo-znanja/scripts/clean-henry-video.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install renderer
+        run: python3 -m pip install --disable-pip-version-check numpy opencv-python-headless
+      - name: Render and verify source video
+        run: |
+          python3 kraljevstvo-znanja/scripts/clean-henry-video.py
+          node --check kraljevstvo-znanja/kz-knowledge-flags.js
+      - name: Publish verified corner only
+        run: |
+          git config user.name "KZ media builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add kraljevstvo-znanja/media/korner-henry-clean.webm kraljevstvo-znanja/kz-knowledge-flags.js kraljevstvo-znanja/index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "KZ: publish cleaned transparent Henry corner video"
+          git pull --rebase origin main
+          git push origin HEAD:main
