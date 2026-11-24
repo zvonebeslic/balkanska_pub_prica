@@ -2,20 +2,21 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=84420, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry-clean.webm?v=1",iwo:"./media/Iwo_Jima_popravljena.webm?v=1"};
+const TOTAL=84420, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry-clean.webm?v=1",iwo:"./media/Iwo_Jima_popravljena.webm?v=1",astronaut:"./media/astronaut-nepal.webm?v=1"};
 const videos={},ready={};let lastPaint=0,paintStarted=false;
-const kindOf=f=>f.kind==="iwo"?"iwo":f.kind==="corner"?"corner":"golf";
-const maxQuestions=f=>kindOf(f)==="iwo"?3:kindOf(f)==="corner"?2:1;
+const kindOf=f=>f.kind==="astronaut"?"astronaut":f.kind==="iwo"?"iwo":f.kind==="corner"?"corner":"golf";
+const maxQuestions=f=>kindOf(f)==="astronaut"?4:kindOf(f)==="iwo"?3:kindOf(f)==="corner"?2:1;
 const el=(tag,txt,cls)=>{const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;return n;};
 const rpc=()=>window.KZFlagRPC;
 function makeIcon(f){
  const lat=f.lat,kind=kindOf(f),videoReady=!!ready[kind];
  const root=el("div",null,"kz-flag-art");
- const fallback=el("span",kind==="corner"?"⚽":kind==="iwo"?"🇺🇸":"🚩","kz-flag-fallback");
- const c=el("canvas",null,"kz-flag-canvas");c.width=kind==="corner"?896:416;c.height=kind==="corner"?896:384;c.hidden=!videoReady;
+ const fallback=el("span",kind==="astronaut"?"🧑‍🚀":kind==="corner"?"⚽":kind==="iwo"?"🇺🇸":"🚩","kz-flag-fallback");
+ const c=el("canvas",null,"kz-flag-canvas");c.width=kind==="astronaut"?420:kind==="corner"?896:416;c.height=kind==="astronaut"?416:kind==="corner"?896:384;c.hidden=!videoReady;
  fallback.hidden=videoReady;root.append(fallback,c);
  const z=map.getZoom(),mpp=156543.033928*Math.max(.05,Math.cos(lat*Math.PI/180))/Math.pow(2,z);
- const w=Math.max(z<12?12:z<19?16:1,Math.round(7.5/mpp));
+ const baseW=Math.max(z<12?12:z<19?16:1,Math.round(7.5/mpp));
+ const w=kind==="astronaut"?Math.max(1,Math.round(baseW*.8)):baseW;
  root.style.fontSize=Math.max(9,w*.72)+'px';
  return L.divIcon({className:"kz-flag-marker",html:root,iconSize:[w,w],iconAnchor:[w/2,w*.83]});
 }
@@ -68,7 +69,7 @@ function golfFrame(video,token,kind="golf"){
 }
 function initVideo(){
  for(const [kind,src] of Object.entries(MEDIA)){
-  if(videos[kind]||(kind==="iwo"&&![...markers.values()].some(x=>kindOf(x.f)==="iwo")))continue;
+  if(videos[kind]||((kind==="iwo"||kind==="astronaut")&&![...markers.values()].some(x=>kindOf(x.f)===kind)))continue;
   const video=document.createElement("video");videos[kind]=video;
   video.src=src;video.muted=true;video.loop=true;video.playsInline=true;video.autoplay=true;video.preload="auto";
   video.style.cssText="position:fixed;left:-9999px;top:0;width:1px;height:1px;pointer-events:none";
@@ -127,7 +128,7 @@ function draw(rows){
   keep.add(f.id);let x=markers.get(f.id);
   if(x&&x.f.generation!==f.generation){map.removeLayer(x.marker);markers.delete(f.id);x=null;}
   if(!x){
-   const marker=L.marker([f.lat,f.lng],{icon:makeIcon(f),pane:"kzFlagPane",keyboard:true,title:f.kind==="iwo"?"Iwo Jima · do 3 pitanja":f.kind==="corner"?"Korner znanja · do 2 pitanja":"Golf zastavica · 1 pitanje",bubblingMouseEvents:false}).addTo(map);
+   const marker=L.marker([f.lat,f.lng],{icon:makeIcon(f),pane:"kzFlagPane",keyboard:true,title:f.kind==="astronaut"?"Astronaut znanja · do 4 pitanja":f.kind==="iwo"?"Iwo Jima · do 3 pitanja":f.kind==="corner"?"Korner znanja · do 2 pitanja":"Golf zastavica · 1 pitanje",bubblingMouseEvents:false}).addTo(map);
    marker.on("click",e=>{L.DomEvent.stopPropagation(e);openFlag(markers.get(f.id)?.f||f,marker);});
    x={marker,f,zoom};markers.set(f.id,x);
   }else{ x.f=f; if(x.zoom!==zoom){x.marker.setIcon(makeIcon(f));x.zoom=zoom;} }
@@ -158,7 +159,7 @@ function gpsFix(f){
 async function openFlag(f,marker){
  if(active)return;
  const count=maxQuestions(f),multi=count>1;
- const box=el("div",null,"kz-flag-popup");box.append(el("strong",f.kind==="iwo"?"🇺🇸 Iwo Jima · zastava znanja":f.kind==="corner"?"⚽ Korner znanja · Henry 14":"🚩 Golf zastavica znanja"),el("p",multi?"Preostalo pitanja: "+(f.remaining??count)+" / "+count+" · +20 m² za točan odgovor.":"Jedno pitanje · +20 m² za točan odgovor."),el("p","Provjeravam GPS · najviše 2 km…"));
+ const box=el("div",null,"kz-flag-popup");box.append(el("strong",f.kind==="astronaut"?"🧑‍🚀 Astronaut znanja":f.kind==="iwo"?"🇺🇸 Iwo Jima · zastava znanja":f.kind==="corner"?"⚽ Korner znanja · Henry 14":"🚩 Golf zastavica znanja"),el("p",multi?"Preostalo pitanja: "+(f.remaining??count)+" / "+count+" · +20 m² za točan odgovor.":"Jedno pitanje · +20 m² za točan odgovor."),el("p","Provjeravam GPS · najviše 2 km…"));
  const popup=L.popup({maxWidth:330,minWidth:220,autoClose:true,closeOnClick:true}).setLatLng(marker.getLatLng()).setContent(box).openOn(map);
  const token={};active=token;
  let q;
