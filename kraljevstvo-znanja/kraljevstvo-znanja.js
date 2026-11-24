@@ -930,6 +930,52 @@
       catch(e){toast(e.message);}
     }));
   }
+  function initRealmColorPicker() {
+    const color=$("realm-color"), hue=$("realm-hue"), saturation=$("realm-saturation"), brightness=$("realm-brightness"), hex=$("realm-hex"), preview=$("realm-color-preview");
+    if(!color||!hue||!saturation||!brightness||!hex||!preview)return;
+    const hsvToHex=(h,s,v)=>{
+      s/=100;v/=100;
+      const c=v*s,x=c*(1-Math.abs((h/60)%2-1)),m=v-c;
+      const rgb=h<60?[c,x,0]:h<120?[x,c,0]:h<180?[0,c,x]:h<240?[0,x,c]:h<300?[x,0,c]:[c,0,x];
+      return "#"+rgb.map(n=>Math.round((n+m)*255).toString(16).padStart(2,"0")).join("");
+    };
+    const hexToHsv=value=>{
+      const [r,g,b]=[1,3,5].map(i=>parseInt(value.slice(i,i+2),16)/255);
+      const max=Math.max(r,g,b),min=Math.min(r,g,b),d=max-min;
+      let h=0;
+      if(d)h=60*(max===r?((g-b)/d+6)%6:max===g?(b-r)/d+2:(r-g)/d+4);
+      return [h,max?d/max*100:0,max*100];
+    };
+    const paint=(value,writeHex=true)=>{
+      color.value=value.toLowerCase();
+      if(writeHex)hex.value=value.toUpperCase();
+      preview.style.backgroundColor=value;
+      preview.setAttribute("aria-label","Odabrana boja "+value.toUpperCase());
+      const h=Number(hue.value),s=Number(saturation.value),v=Number(brightness.value);
+      saturation.style.setProperty("--realm-track","linear-gradient(to right,"+hsvToHex(h,0,v)+","+hsvToHex(h,100,v)+")");
+      brightness.style.setProperty("--realm-track","linear-gradient(to right,#000,"+hsvToHex(h,s,100)+")");
+      hue.style.setProperty("--realm-thumb",hsvToHex(h,100,100));
+      saturation.style.setProperty("--realm-thumb",value);
+      brightness.style.setProperty("--realm-thumb",value);
+    };
+    const fromHex=value=>{
+      const [h,s,v]=hexToHsv(value);
+      hue.value=String(h);saturation.value=String(s);brightness.value=String(v);
+      paint(value);
+    };
+    for(const input of [hue,saturation,brightness]){
+      input.addEventListener("input",()=>paint(hsvToHex(Number(hue.value),Number(saturation.value),Number(brightness.value))));
+    }
+    hex.addEventListener("input",()=>{
+      const value=hex.value.trim();
+      if(/^#?[0-9a-f]{6}$/i.test(value)){
+        fromHex(value.startsWith("#")?value:"#"+value);
+        hex.removeAttribute("aria-invalid");
+      }else hex.setAttribute("aria-invalid","true");
+    });
+    hex.addEventListener("blur",()=>{hex.value=color.value.toUpperCase();hex.removeAttribute("aria-invalid");});
+    fromHex(color.value);
+  }
   async function createKingdom() {
     const name=$("realm-choice").value, color=$("realm-color").value;
     if (!name) return toast("Odaberi ime kraljevstva s popisa.");
@@ -971,6 +1017,7 @@
     $("play-btn").addEventListener("click",play);
     $("history-open").addEventListener("click",showFullHistory);
     $("create-btn").addEventListener("click",createKingdom);
+    initRealmColorPicker();
     $("realm-search").addEventListener("input",filterRealmCatalog);
     $("spawn-btn").addEventListener("click",placeSpawn);
     $("claim-block").addEventListener("click",saveBlock);
