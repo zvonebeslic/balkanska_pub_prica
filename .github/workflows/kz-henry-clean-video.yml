@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - "kraljevstvo-znanja/scripts/clean-henry-video.py"
+      - ".github/workflows/kz-henry-clean-video.yml"
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,7 +17,10 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install renderer
-        run: python3 -m pip install --disable-pip-version-check numpy opencv-python-headless
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python3 -m pip install --disable-pip-version-check numpy opencv-python-headless
       - name: Render and verify source video
         run: |
           python3 kraljevstvo-znanja/scripts/clean-henry-video.py
