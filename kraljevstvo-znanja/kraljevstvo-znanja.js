@@ -12,6 +12,8 @@
   try { lifeEnabled = localStorage.getItem("kz_animated_world_v1") !== "off"; } catch (_) {}
   let mapLoading = false, mapRevision = 0, dialogQuiz = false;
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
+  let firstGpsFix = null, firstGpsBusy = false;
+  const needsFirstGps = () => current?.kingdom?.role === 'kralj' && Number(current.kingdom.area||0)===0;
   const alignBlock = (x,y) => ({x: Math.floor(x/5)*5, y: Math.floor(y/4)*4});
   const previewCentre = b => ll(b.x+2.5,b.y+2);
   const BLOCK_AREA = 20;
@@ -173,21 +175,26 @@
     $("create-panel").classList.toggle("hidden", !!k);
     $("spawn-btn").classList.toggle("hidden", !isKing);
     $("joystick-panel").classList.toggle("hidden", !isKing);
-    $("spawn-btn").textContent = (Number(k?.area) || 0) === 0 ? "♜ Prvi blok" : "♜ Novo uporište";
+    $("spawn-btn").textContent = needsFirstGps() ? "⌖ Prvi blok · GPS" : "♜ Novo uporište";
     $("spawn-btn").title = (Number(k?.area) || 0) === 0 ?
-      "Odaberi početni blok u središtu karte" : "Odaberi novo udaljeno uporište u središtu karte";
+      "Pronađi prvi blok na trenutnoj GPS lokaciji" : "Odaberi novo udaljeno uporište u središtu karte";
     $("spawn-btn").disabled = !isKing;
-    $("choose-map-center").disabled = !isKing;
-    if (isKing && !cursor && k.anchor_x != null) {
+    $("choose-map-center").disabled = !isKing || firstGpsBusy;
+    $("choose-map-center").textContent=needsFirstGps()?"⌖ Moja GPS lokacija":"✥ Odaberi mjesto";
+    document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!isKing||needsFirstGps());
+    $("gps-status").textContent=needsFirstGps()?"Prvi blok isključivo na tvojoj GPS lokaciji":"Pomakni kartu i odaberi mjesto";
+    if(needsFirstGps()&&!firstGpsFix){cursor=null;cursorSpawnMode=false;}
+    if(!needsFirstGps())firstGpsFix=null;
+    if (isKing && !needsFirstGps() && !cursor && k.anchor_x != null) {
       const point = alignBlock(Number(k.anchor_x),Number(k.anchor_y));
       cursor = {x:point.x+5,y:point.y};
     }
-    if (!isKing) { cursor = null; cursorSpawnMode = false; }
+    if (!isKing) { cursor = null; cursorSpawnMode = false; firstGpsFix=null; }
     if (isKing) updateCursorPreview();
     $("leave-btn").classList.toggle("hidden", !k);
     $("leave-btn").textContent = isKing ? "Predaj krunu / Zatvori kraljevstvo" : "Napusti kraljevstvo";
     $("action-help").textContent = isKing ?
-      "Pomakni stvarnu kartu gdje želiš, klikni „Odaberi mjesto” i joystickom postavi blok od 20 m²." :
+      (needsFirstGps()?"Prvi blok postavi isključivo na trenutnoj GPS lokaciji.":"Pomakni stvarnu kartu gdje želiš, klikni „Odaberi mjesto” i joystickom postavi blok od 20 m².") :
       k ? "Prikupljaš kvadrate znanja za zajednički konto. Kralj raspoređuje teritorij." :
       "Osnuj kraljevstvo ili dodirni drugo kraljevstvo na karti i zatraži članstvo.";
     renderRequests();
@@ -413,9 +420,9 @@
     if(detailed)drawBlockGrid();
     updateCursorPreview();
     paintLivingWorld();
-    $("map-hint").textContent = detailed
+    $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi svoju lokaciju." : detailed
       ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
-      : "Pomakni kartu na željeno područje i klikni „Odaberi mjesto”. GPS nije potreban.";
+      : "Pomakni kartu na željeno područje i klikni „Odaberi mjesto”.";
     $("map-count").textContent = kingdoms.length + " kraljevstava · " +
       (detailed ? cells.length + " m² u prikazu · bijelo obrubljeni rubovi su granice" :
       "obojene oznake prikazuju položaj; uvećaj na 18+ za stvarne granice");
@@ -481,9 +488,37 @@
     });
   }
 
-  // Zemljopisni položaj određuje se na vidljivoj karti (bez GPS dozvole).
+  // Prvi blok određuje GPS; naknadna uporišta zadržavaju odabir na karti.
+  function readFirstGps(){
+    return new Promise((resolve,reject)=>{
+      if(!window.isSecureContext||!navigator.geolocation)return reject(Error("Za prvi blok potreban je GPS na sigurnoj HTTPS vezi."));
+      navigator.geolocation.getCurrentPosition(p=>{
+        const c=p.coords;
+        if(!Number.isFinite(c.latitude)||!Number.isFinite(c.longitude)||Math.abs(c.latitude)>85||Math.abs(c.longitude)>180||!Number.isFinite(c.accuracy)||c.accuracy<0||c.accuracy>100||Date.now()-p.timestamp>15000)return reject(Error("GPS nije dovoljno precizan ili svjež. Pokušaj ponovno (do 100 m)."));
+        resolve({lat:c.latitude,lon:c.longitude,accuracy:c.accuracy});
+      },e=>reject(Error("GPS je obvezan za prvi blok. "+e.message)),{enableHighAccuracy:true,maximumAge:0,timeout:20000});
+    });
+  }
+  function showFirstGps(fix){
+    firstGpsFix=fix;
+    const point=xy(fix.lat,fix.lon);
+    cursor=alignBlock(point.x,point.y);cursorSpawnMode=true;
+    map.setView(previewCentre(cursor),Math.max(map.getZoom(),20));
+    updateCursorPreview();
+    $("gps-status").textContent="GPS pronađen · preciznost "+Math.round(fix.accuracy)+" m";
+  }
+  async function chooseFirstGps(){
+    if(firstGpsBusy||previewBusy||!needsFirstGps())return;
+    firstGpsBusy=true;firstGpsFix=null;cursor=null;updateCursorPreview();
+    $("choose-map-center").disabled=true;$("spawn-btn").disabled=true;
+    $("gps-status").textContent="Tražim GPS lokaciju…";
+    try{const fix=await readFirstGps();if(needsFirstGps()){showFirstGps(fix);toast("Pronađena GPS lokacija. Pritisni POSTAVI za prvi blok.");}}
+    catch(e){$("gps-status").textContent="GPS nije dostupan";toast(e.message);}
+    finally{firstGpsBusy=false;$("choose-map-center").disabled=current?.kingdom?.role!=="kralj";$("spawn-btn").disabled=current?.kingdom?.role!=="kralj";updateCursorPreview();}
+  }
   function chooseMapCentre(remote=false) {
     if (current?.kingdom?.role !== "kralj") return toast("Samo kralj može postavljati blokove.");
+    if(needsFirstGps()){chooseFirstGps();return;}
     const centre=map.getCenter();
     const projected=xy(centre.lat,centre.lng);
     cursor=alignBlock(projected.x,projected.y);
@@ -558,14 +593,14 @@
     const label=$("cursor-status");
     const isKing=current?.kingdom?.role==="kralj";
     if(!isKing || !cursor) {
-      if(label)label.textContent=isKing?"Odaberi mjesto na karti.":"";
+      if(label)label.textContent=isKing?(needsFirstGps()?"Pronađi svoju GPS lokaciju.":"Odaberi mjesto na karti."):"";
       if(btn)btn.disabled=true;
       return;
     }
     const status=blockStatus(cursor);
     const bank=Number(current?.kingdom?.bank||0);
     const cost=status.kind==="attack"?40:20;
-    const valid=["free","attack"].includes(status.kind)&&bank>=cost;
+    const valid=["free","attack"].includes(status.kind)&&bank>=cost&&(!needsFirstGps()||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 40 m²":
       status.kind==="free"?"Slobodan blok · 20 m²":
       status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":"Blok je zauzet";
@@ -590,6 +625,7 @@
 
   function moveCursor(direction) {
     if(current?.kingdom?.role!=="kralj")return;
+    if(needsFirstGps())return toast("Prvi blok ne možeš pomicati. Određuje ga GPS.");
     if(!cursor){ chooseMapCentre(false);if(!cursor)return; }
     const dir={N:[0,4],S:[0,-4],E:[5,0],W:[-5,0]}[direction];
     if(!dir)return;
@@ -606,12 +642,20 @@
       return toast("Odabrani blok nije moguće zauzeti.");
     const question=status.kind==="attack"?"Napasti i preuzeti cijeli suparnički blok od 20 m² za 40 m² s konta?":
       "Zauzeti odabrani blok od 20 m² za 20 m² s konta?";
-    if(!confirm(question))return;
+    if(!confirm(needsFirstGps()?"Postaviti prvi blok od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
     try{
-      const params={p_x:cursor.x,p_y:cursor.y,p_spawn:cursorSpawnMode||Number(current.kingdom.area||0)===0};
+      let gpsParams={};
+      if(needsFirstGps()){
+        const fix=await readFirstGps();
+        if(!needsFirstGps())throw Error("Stanje kraljevstva se promijenilo. Pokušaj ponovno.");
+        showFirstGps(fix);
+        if(blockStatus(cursor).kind!=="free")throw Error("Blok na tvojoj GPS lokaciji nije slobodan.");
+        gpsParams={p_lat:fix.lat,p_lon:fix.lon,p_accuracy:fix.accuracy};
+      }
+      const params={p_x:cursor.x,p_y:cursor.y,p_spawn:cursorSpawnMode||Number(current.kingdom.area||0)===0,...gpsParams};
       const result=await rpc("kz_place_block",args(params));
-      cursorSpawnMode=false;
+      cursorSpawnMode=false;firstGpsFix=null;
       cursor={x:cursor.x+5,y:cursor.y};
       toast((result.attack?"⚔ Osvojen tuđi blok! ":"✓ Osvojen novi blok! ")+
         formatArea(result.added)+" · trošak "+formatArea(result.spent));
