@@ -157,84 +157,103 @@ function gpsFix(f){
  });
 }
 const FLAG_NAMES={golf:"Golf zastavica znanja",corner:"Korner znanja · Henry 14",iwo:"Iwo Jima · zastava znanja",astronaut:"Astronaut znanja"};
-async function openFlag(f,marker){
- if(active)return;
+let flagDialog=null,flagSession=null;
+function closeFlag(){
+ if(flagDialog)flagDialog.hidden=true;
+ flagSession=null;active=null;
+}
+function ensureFlagDialog(){
+ if(flagDialog)return flagDialog;
+ flagDialog=el("div");flagDialog.id="kz-flag-battle";flagDialog.hidden=true;
+ const card=el("div",null,"kz-fleet-card");card.setAttribute("role","dialog");card.setAttribute("aria-modal","true");card.setAttribute("aria-labelledby","kz-flag-battle-title");
+ const close=el("button","×","kz-fleet-close");close.type="button";close.setAttribute("aria-label","Zatvori");close.onclick=closeFlag;
+ card.append(close);flagDialog.append(card);document.body.append(flagDialog);
+ flagDialog.addEventListener("click",e=>{if(e.target===flagDialog)closeFlag();});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!flagDialog.hidden)closeFlag();});
+ return flagDialog;
+}
+function openFlag(f,marker){
+ const dialog=ensureFlagDialog(),card=dialog.querySelector(".kz-fleet-card");
+ const close=card.querySelector(".kz-fleet-close");card.replaceChildren(close);
+ const session={};flagSession=session;active=null;dialog.hidden=false;
+ const isOpen=()=>flagSession===session&&!dialog.hidden;
  const count=maxQuestions(f);
- const box=el("div",null,"kz-flag-popup");
- const header=el("div",null,"kz-flag-header");
- const title=el("strong",FLAG_NAMES[kindOf(f)],"kz-flag-title");
- const info=el("div",null,"kz-flag-info");
- const counter=el("span",null,"kz-flag-counter"),reward=el("span","+20 m² / točan odgovor","kz-flag-reward");
- const setRemaining=n=>{counter.textContent="Preostalo pitanja: "+Math.max(0,Math.min(count,Number(n??count)||0))+" / "+count;};
- setRemaining(f.remaining??count);info.append(counter,reward);header.append(title,info);
- const question=el("p",null,"kz-flag-question");question.hidden=true;
- const media=el("div",null,"kz-flag-question-media");media.hidden=true;
- const buttons=el("div",null,"kz-flag-options");buttons.hidden=true;
- const result=el("p","Provjeravam GPS · najviše 2 km…","kz-flag-result");
- result.setAttribute("role","status");result.setAttribute("aria-live","polite");
- const footer=el("div",null,"kz-flag-footer");footer.hidden=true;
- const next=el("button","Sljedeće pitanje","kz-flag-next");next.type="button";footer.append(next);
- box.append(header,question,media,buttons,result,footer);
- const popup=L.popup({maxWidth:340,minWidth:220,autoClose:true,closeOnClick:true,className:"kz-flag-quiz-popup"}).setLatLng(marker.getLatLng()).setContent(box).openOn(map);
- const token={};active=token;
- const isOpen=()=>map.hasLayer(popup);
- const closeButton=()=>{next.textContent="Zatvori";next.onclick=()=>map.closePopup(popup);footer.hidden=false;};
- popup.on("remove",()=>{if(active===token)active=null;});
- let q;
- try{
-  const fix=await gpsFix(f);if(!isOpen())return;
-  result.textContent="Učitavam pitanje…";q=await rpc().challenge(f.id,f.generation,fix);
- }catch(e){
-  if(isOpen()){result.textContent=e.message;result.dataset.state="error";closeButton();}
-  schedule();return;
- }finally{if(active===token)active=null;}
- if(!isOpen())return;
- setRemaining(q.remaining??f.remaining??count);
- result.textContent="";
- question.textContent=q.prompt;question.hidden=false;
- if(q.image&&/^https?:\/\//i.test(q.image)){
-  const img=el("img");img.src=q.image;img.alt="Slika uz pitanje";media.append(img);media.hidden=false;
-  img.addEventListener("error",()=>{media.hidden=true;});
- }
- let busy=false,done=false;
- for(const key of ["A","B","C"]){
-  const b=el("button",null,"kz-flag-answer");b.type="button";b.dataset.key=key;
-  b.append(el("span",key,"kz-flag-letter"),el("span",String(q.options?.[key]??""),"kz-flag-answer-text"));
-  b.onclick=async()=>{
-   if(busy||done)return;
-   busy=true;for(const n of buttons.children)n.disabled=true;
-   delete result.dataset.state;
-   try{
-    result.textContent="Ponovno provjeravam GPS…";const fix=await gpsFix(f);
-    if(!isOpen())return;
-    const r=await rpc().answer(q.challenge_id,key,fix);done=true;
-    setRemaining(r.remaining??0);
-    for(const n of buttons.children){
-     if(n.dataset.key===r.correct_key)n.dataset.state="correct";
-     else if(n.dataset.key===key)n.dataset.state="wrong";
-    }
-    result.dataset.state=r.correct?"correct":"wrong";
-    result.textContent=(r.correct?"✓ Točno! +20 m².":"✗ Netočno. Točan odgovor: "+r.correct_key+") "+(q.options?.[r.correct_key]??"")+".")+(r.moved?" Zastavica je premještena.":"");
-    const item=markers.get(f.id);
-    if(r.moved){if(item){map.removeLayer(item.marker);markers.delete(f.id);}closeButton();}
-    else {
-     const updated={...(item?.f||f),remaining:r.remaining};
-     if(item)item.f=updated;
-     next.textContent="Sljedeće pitanje";next.onclick=()=>openFlag(updated,item?.marker||marker);footer.hidden=false;
-    }
-    if(r.reward_m2>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",{detail:{reward_m2:r.reward_m2}}));
-    refresh();
-   }catch(e){result.textContent=e.message;result.dataset.state="error";for(const n of buttons.children)n.disabled=false;refresh();}
-   finally{busy=false;}
-  };
-  buttons.append(b);
- }
- buttons.hidden=false;
+ const title=el("h2",FLAG_NAMES[kindOf(f)]);title.id="kz-flag-battle-title";
+ const desc=el("p","Nagrada: 20 m² na konto kraljevstva za svaki točan odgovor.","kz-fleet-description");
+ const quota=el("p",null,"kz-fleet-quota");
+ const setRemaining=n=>{quota.textContent="Preostalo pitanja: "+Math.max(0,Math.min(count,Number(n??count)||0))+" / "+count;};
+ setRemaining(f.remaining??count);
+ const gps=el("p","GPS nije uključen.","kz-fleet-gps-status");gps.setAttribute("aria-live","polite");
+ const gpsButton=el("button","📍 Uključi GPS","kz-fleet-gps-enable");gpsButton.type="button";
+ const play=el("button","Pokreni pitanje","kz-fleet-attack");play.type="button";play.disabled=true;
+ const message=el("p","Uključi GPS i priđi na najviše 2 km od zastavice. Pitanja dolaze iz zajedničke baze.","kz-fleet-message");message.setAttribute("aria-live","polite");
+ const box=el("div",null,"kz-fleet-question");
+ card.append(title,desc,quota,gps,gpsButton,play,message,box);
+ let busy=false,gpsReady=false,completed=false;
+ const say=t=>{message.textContent=t;};
+ const checkGps=async()=>{
+  gps.textContent="Tražim preciznu GPS lokaciju…";
+  try{
+   const fix=await gpsFix(f);
+   if(!isOpen())return null;
+   gpsReady=true;gps.textContent="✅ U krugu si za igranje: "+Math.round(map.distance([fix.lat,fix.lng],[f.lat,f.lng]))+" m od zastavice.";
+   return fix;
+  }catch(e){if(isOpen()){gpsReady=false;gps.textContent=e.message;}return null;}
+ };
+ const update=()=>{gpsButton.disabled=busy||completed;play.disabled=busy||!gpsReady||completed||box.childElementCount>0;};
+ gpsButton.onclick=async()=>{
+  if(busy||completed)return;busy=true;update();await checkGps();
+  if(!isOpen())return;busy=false;update();
+ };
+ const load=async()=>{
+  if(busy||completed||!isOpen())return;
+  busy=true;box.replaceChildren();update();say("Učitavam pitanje iz zajedničke baze…");
+  try{
+   const fix=await checkGps();if(!isOpen())return;
+   if(!fix){say("Za igranje je potreban GPS unutar 2 km.");return;}
+   const q=await rpc().challenge(f.id,f.generation,fix);if(!isOpen())return;
+   setRemaining(q.remaining??f.remaining??count);
+   box.append(el("p",q.prompt||"Pitanje nije dostupno.","kz-fleet-prompt"));
+   if(q.image&&/^https?:\/\//i.test(q.image)){
+    const img=el("img");img.src=q.image;img.alt="Slika uz pitanje";img.className="kz-flag-battle-image";img.addEventListener("error",()=>img.remove());box.append(img);
+   }
+   const choices=[];
+   for(const key of ["A","B","C"]){
+    const b=el("button",key+") "+String(q.options?.[key]??""),"kz-fleet-choice");b.type="button";b.dataset.key=key;choices.push(b);
+    b.onclick=async()=>{
+     if(busy||completed||!isOpen())return;
+     busy=true;choices.forEach(n=>n.disabled=true);update();say("Provjeravam odgovor i GPS…");
+     try{
+      const fix=await checkGps();if(!isOpen())return;
+      if(!fix){say("GPS nije unutar 2 km. Pokušaj ponovno.");choices.forEach(n=>n.disabled=false);return;}
+      const result=await rpc().answer(q.challenge_id,key,fix);
+      if(result.reward_m2>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",{detail:{reward_m2:result.reward_m2}}));
+      const item=markers.get(f.id);
+      if(result.moved){if(item){map.removeLayer(item.marker);markers.delete(f.id);}}
+      else{f={...(item?.f||f),remaining:result.remaining};if(item)item.f=f;}
+      refresh();
+      if(!isOpen())return;
+      setRemaining(result.remaining??0);
+      choices.forEach(n=>{if(n.dataset.key===result.correct_key)n.dataset.state="correct";else if(n.dataset.key===key)n.dataset.state="wrong";});
+      say((result.correct?"✅ Točno! +20 m².":"❌ Netočno. Točan odgovor: "+result.correct_key+") "+(q.options?.[result.correct_key]??"")+".")+(result.moved?" Zastavica je premještena.":""));
+      completed=true;
+      const next=el("button",result.moved?"Zatvori":"Sljedeće pitanje","kz-fleet-next");next.type="button";
+      next.onclick=()=>{if(result.moved){closeFlag();return;}completed=false;load();};box.append(next);
+     }catch(e){if(isOpen()){say(e.message);choices.forEach(n=>n.disabled=false);}refresh();}
+     finally{if(isOpen()){busy=false;update();}}
+    };
+    box.append(b);
+   }
+   say("Odgovori dok si unutar 2 km od zastavice.");
+  }catch(e){if(isOpen())say(e.message);schedule();}
+  finally{if(isOpen()){busy=false;update();}}
+ };
+ play.onclick=load;close.focus();
 }
 function mount(m){
  if(map||!m||!rpc())return;map=m;
  const pane=map.getPane("kzFlagPane")||map.createPane("kzFlagPane");pane.style.zIndex="1500";pane.style.pointerEvents="auto";
- const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:inherit}.kz-flag-art [hidden]{display:none!important}.kz-flag-popup{width:280px;max-width:calc(100vw - 95px);font-size:13px;display:grid;gap:12px;color:#152238}.kz-flag-popup [hidden]{display:none!important}.kz-flag-header{display:grid;gap:7px;padding-bottom:10px;border-bottom:1px solid #dbe1e8}.kz-flag-title{font-size:16px;line-height:1.25}.kz-flag-info{display:grid;gap:3px;font-size:12px;font-weight:600;color:#526175}.kz-flag-counter{font-variant-numeric:tabular-nums}.kz-flag-question{margin:0!important;font-weight:700;font-size:15px;line-height:1.45;overflow-wrap:anywhere}.kz-flag-question-media img{display:block;width:auto;max-width:100%;max-height:150px;margin:auto;border-radius:8px;object-fit:contain}.kz-flag-options{display:grid;gap:7px}.kz-flag-answer{display:flex;align-items:center;gap:9px;min-height:44px;width:100%;padding:8px;text-align:left;border:1px solid #c5cfdb;border-radius:9px;background:#f4f5f7;color:#152238;cursor:pointer;font:inherit;line-height:1.35;box-sizing:border-box}.kz-flag-letter{flex:0 0 24px;height:24px;display:grid;place-items:center;border-radius:5px;background:#e2e8f0;font-weight:700}.kz-flag-answer-text{min-width:0;overflow-wrap:anywhere}.kz-flag-answer:disabled{cursor:default;opacity:.65}.kz-flag-answer[data-state=correct]{background:#e5f7e9;border-color:#4c9762;color:#14532d;opacity:1}.kz-flag-answer[data-state=wrong]{background:#fde8e8;border-color:#cd6969;color:#8b2020;opacity:1}.kz-flag-result{margin:0!important;min-height:18px;font-weight:600;line-height:1.4;overflow-wrap:anywhere}.kz-flag-result[data-state=correct]{color:#166534}.kz-flag-result[data-state=wrong],.kz-flag-result[data-state=error]{color:#a32727}.kz-flag-footer{display:grid}.kz-flag-next{width:100%;min-height:42px;border:0;border-radius:9px;background:#24354d;color:#fff;font:inherit;font-weight:700;cursor:pointer}";
+ const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:inherit}.kz-flag-art [hidden]{display:none!important}#kz-flag-battle[hidden]{display:none!important}#kz-flag-battle{position:fixed;z-index:220000;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(3,9,21,.83);color:#f4f4f7;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}#kz-flag-battle .kz-fleet-choice[data-state=correct]{background:#215c40;border-color:#72d59d;opacity:1}#kz-flag-battle .kz-fleet-choice[data-state=wrong]{background:#76363c;border-color:#e48b8b;opacity:1}.kz-flag-battle-image{display:block;max-width:100%;max-height:170px;object-fit:contain;margin:8px auto;border-radius:8px}";
  document.head.append(style);
  const toggle=document.getElementById("map-life-toggle");enabled=toggle?.getAttribute("aria-pressed")!=="false";toggle?.addEventListener("click",()=>{enabled=toggle.getAttribute("aria-pressed")!=="false";refresh();});
  const actions=document.querySelector(".map-top .map-actions");
