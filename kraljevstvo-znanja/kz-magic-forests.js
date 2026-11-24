@@ -299,7 +299,7 @@
     });
     const button=document.getElementById("kz-forest-button");
     if(button){
-      button.textContent="🌲 Šume ("+all().length+")";
+      button.textContent="🌲 Šume";
       button.title="Pronađi čarobnu šumu s originalnim videom, 300 m²";
       button.addEventListener("click",focusNearest);
     }
