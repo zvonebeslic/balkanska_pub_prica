@@ -53,9 +53,15 @@ function position(v,now){
  return {point,direction,sector:Math.round(direction/45)%8,cycle};
 }
 function icon(sector){
- // Nije zamjena za 8 ilustriranih animacija: privremeni simbol jasno oznacava smjer.
+ // Osam zasebnih, ne-rotiranih WebP animacija. Bez zrcaljenja i bez SVG-a.
+ // Nazivi odgovaraju redoslijedu DIRECTIONS: N, NE, E, SE, S, SW, W, NW.
+ const direction=DIRECTIONS[sector],file="./media/ministarska-limuzina-"+direction.toLowerCase()+"-80.webp?v=1";
  const arrows=["↑","↗","→","↘","↓","↙","←","↖"];
- return L.divIcon({className:"kz-minister-marker",html:'<span style="display:block;background:#101b30;border:2px solid #f5ce62;border-radius:12px;padding:3px 5px;color:white;white-space:nowrap;box-shadow:0 2px 9px #0009;font-size:16px">🚘 '+arrows[sector]+'</span>',iconSize:[55,30],iconAnchor:[27,15]});
+ const html='<span class="kz-minister-art" style="display:block;width:100%;height:100%;position:relative">'+
+   '<img src="'+file+'" alt="" style="width:100%;height:100%;object-fit:contain" '+
+   'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'block\'">'+
+   '<span style="display:none;background:#101b30;border:2px solid #f5ce62;border-radius:12px;padding:3px 5px;color:white;white-space:nowrap;font-size:16px">🚘 '+arrows[sector]+'</span></span>';
+ return L.divIcon({className:"kz-minister-marker",html,iconSize:[88,88],iconAnchor:[44,44]});
 }
 function refresh(){
  if(!map)return;
