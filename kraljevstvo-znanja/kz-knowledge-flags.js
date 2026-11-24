@@ -189,29 +189,28 @@ function openFlag(f,marker){
  const message=el("p","Uključi GPS i priđi na najviše 2 km od zastavice. Pitanja dolaze iz zajedničke baze.","kz-fleet-message");message.setAttribute("aria-live","polite");
  const box=el("div",null,"kz-fleet-question");
  card.append(title,desc,quota,gps,gpsButton,play,message,box);
- let busy=false,gpsReady=false,completed=false;
+ let busy=false,gpsReady=false,completed=false,entryFix=null;
  const say=t=>{message.textContent=t;};
  const checkGps=async()=>{
   gps.textContent="Tražim preciznu GPS lokaciju…";
   try{
    const fix=await gpsFix(f);
    if(!isOpen())return null;
-   gpsReady=true;gps.textContent="✅ U krugu si za igranje: "+Math.round(map.distance([fix.lat,fix.lng],[f.lat,f.lng]))+" m od zastavice.";
+   entryFix=fix;gpsReady=true;gps.textContent="✅ GPS potvrđen · "+Math.round(map.distance([fix.lat,fix.lng],[f.lat,f.lng]))+" m od zastavice.";
    return fix;
-  }catch(e){if(isOpen()){gpsReady=false;gps.textContent=e.message;}return null;}
+  }catch(e){if(isOpen()){entryFix=null;gpsReady=false;gps.textContent=e.message;}return null;}
  };
- const update=()=>{gpsButton.disabled=busy||completed;play.disabled=busy||!gpsReady||completed||box.childElementCount>0;};
+ const update=()=>{gpsButton.hidden=gpsReady;gpsButton.disabled=busy||completed;play.disabled=busy||!gpsReady||completed||box.childElementCount>0;};
  gpsButton.onclick=async()=>{
-  if(busy||completed)return;busy=true;update();await checkGps();
-  if(!isOpen())return;busy=false;update();
+  if(busy||completed||gpsReady)return;busy=true;update();await checkGps();
+  if(!isOpen())return;busy=false;update();if(gpsReady)say("GPS potvrđen. Pokreni pitanje.");
  };
  const load=async()=>{
   if(busy||completed||!isOpen())return;
   busy=true;box.replaceChildren();update();say("Učitavam pitanje iz zajedničke baze…");
   try{
-   const fix=await checkGps();if(!isOpen())return;
-   if(!fix){say("Za igranje je potreban GPS unutar 2 km.");return;}
-   const q=await rpc().challenge(f.id,f.generation,fix);if(!isOpen())return;
+   if(!entryFix){say("Za igranje je potreban GPS unutar 2 km.");return;}
+   const q=await rpc().challenge(f.id,f.generation,entryFix);if(!isOpen())return;
    setRemaining(q.remaining??f.remaining??count);
    box.append(el("p",q.prompt||"Pitanje nije dostupno.","kz-fleet-prompt"));
    if(q.image&&/^https?:\/\//i.test(q.image)){
@@ -222,11 +221,9 @@ function openFlag(f,marker){
     const b=el("button",key+") "+String(q.options?.[key]??""),"kz-fleet-choice");b.type="button";b.dataset.key=key;choices.push(b);
     b.onclick=async()=>{
      if(busy||completed||!isOpen())return;
-     busy=true;choices.forEach(n=>n.disabled=true);update();say("Provjeravam odgovor i GPS…");
+     busy=true;choices.forEach(n=>n.disabled=true);update();say("Provjeravam odgovor…");
      try{
-      const fix=await checkGps();if(!isOpen())return;
-      if(!fix){say("GPS nije unutar 2 km. Pokušaj ponovno.");choices.forEach(n=>n.disabled=false);return;}
-      const result=await rpc().answer(q.challenge_id,key,fix);
+      const result=await rpc().answer(q.challenge_id,key,entryFix);
       if(result.reward_m2>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",{detail:{reward_m2:result.reward_m2}}));
       const item=markers.get(f.id);
       if(result.moved){if(item){map.removeLayer(item.marker);markers.delete(f.id);}}
@@ -244,7 +241,7 @@ function openFlag(f,marker){
     };
     box.append(b);
    }
-   say("Odgovori dok si unutar 2 km od zastavice.");
+   say("Odaberi točan odgovor.");
   }catch(e){if(isOpen())say(e.message);schedule();}
   finally{if(isOpen()){busy=false;update();}}
  };
@@ -253,7 +250,7 @@ function openFlag(f,marker){
 function mount(m){
  if(map||!m||!rpc())return;map=m;
  const pane=map.getPane("kzFlagPane")||map.createPane("kzFlagPane");pane.style.zIndex="1500";pane.style.pointerEvents="auto";
- const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:inherit}.kz-flag-art [hidden]{display:none!important}#kz-flag-battle[hidden]{display:none!important}#kz-flag-battle{position:fixed;z-index:220000;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(3,9,21,.83);color:#f4f4f7;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}#kz-flag-battle .kz-fleet-choice[data-state=correct]{background:#215c40;border-color:#72d59d;opacity:1}#kz-flag-battle .kz-fleet-choice[data-state=wrong]{background:#76363c;border-color:#e48b8b;opacity:1}.kz-flag-battle-image{display:block;max-width:100%;max-height:170px;object-fit:contain;margin:8px auto;border-radius:8px}";
+ const style=el("style");style.textContent=".kz-flag-art{width:100%;height:100%;display:grid;place-items:center}.kz-flag-canvas{width:100%;height:100%;object-fit:contain}.kz-flag-fallback{font-size:inherit}.kz-flag-art [hidden]{display:none!important}#kz-flag-battle[hidden],#kz-flag-battle [hidden]{display:none!important}#kz-flag-battle{position:fixed;z-index:220000;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(3,9,21,.83);color:#f4f4f7;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}#kz-flag-battle .kz-fleet-choice[data-state=correct]{background:#215c40;border-color:#72d59d;opacity:1}#kz-flag-battle .kz-fleet-choice[data-state=wrong]{background:#76363c;border-color:#e48b8b;opacity:1}.kz-flag-battle-image{display:block;max-width:100%;max-height:170px;object-fit:contain;margin:8px auto;border-radius:8px}";
  document.head.append(style);
  const toggle=document.getElementById("map-life-toggle");enabled=toggle?.getAttribute("aria-pressed")!=="false";toggle?.addEventListener("click",()=>{enabled=toggle.getAttribute("aria-pressed")!=="false";refresh();});
  const actions=document.querySelector(".map-top .map-actions");
