@@ -8,7 +8,7 @@
   const FW=ICON.frameWidth,FH=ICON.frameHeight,D2R=Math.PI/180;
   const MAX_MOBILE=ICON.mobileLimit,MAX_DESKTOP=ICON.desktopLimit;
   // Raspored slijedi globalne 5 × 4 m kvadrate i regionalne kvote.
-  const RENDER_TOTAL=22400;
+  const RENDER_TOTAL=44800;
   // Za sve čuvare vrijedi ista globalna raspršena mreža iz kataloga.
   // Stable ids 2000..13199. All clients calculate the same 11200 positions.
   const guards=[],byId=new Map(),cells=new Map(),states=new Map();
@@ -20,7 +20,7 @@
     if(!cells.has(key))cells.set(key,[]);
     cells.get(key).push(g.id);
   }
-  for(let id=2000;id<24400;id++){
+  for(const id of [...Array.from({length:22400},(_,i)=>2000+i),...Array.from({length:22400},(_,i)=>25601+i)]){
     const p=window.KZWorldRegistry.pointFor(id,0);
     const guard={id:id,group:window.KZWorldRegistry.regionName(id),hub:"",point:p};
     guards.push(guard);byId.set(id,guard);addToIndex(guard);

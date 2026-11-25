@@ -51,8 +51,8 @@
   let refreshTimer=0,statusTimer=0,frameTimer=0,fetching=false,button=null,dialog=null;
   let statusError=false,cache=new Map(),baseRouteCache=new Map();
   const baseTotal=()=>201+Math.min(MAX_EXTRA,kingdomCount);
-  const total=()=>2*baseTotal();
-  function activeCastleIds(){return Array.from({length:total()},(_,i)=>i<baseTotal()?i:24400+i-baseTotal());}
+  const total=()=>4*baseTotal();
+  function activeCastleIds(){const n=baseTotal(),starts=[0,24400,48001,49202];return Array.from({length:total()},(_,i)=>starts[Math.floor(i/n)]+i%n);}
   function spawn(c,gen){
     return window.KZWorldRegistry.pointFor(c.id,gen);
   }
@@ -234,7 +234,7 @@
       statusError=false;
       const next=new Map();
       data.states.forEach(function(x){
-        if(Number.isInteger(x.id)&&x.id>=0&&x.id<=25600)next.set(x.id,x);
+        if(Number.isInteger(x.id)&&x.id>=0&&x.id<=50402)next.set(x.id,x);
       });
       state=next;
       kingdomCount=Math.max(0,Math.floor(Number(data.kingdoms)||0));

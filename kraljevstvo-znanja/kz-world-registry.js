@@ -226,9 +226,9 @@
     }
     return result;
   }
-  function extendPool(region,old){
-    const [west,east,south,north]=BOUNDS[region],gap=GAP_KM[region]*.48;
-    const rand=randomStream(0x1d4928c3^(region*0x9e3779b9));
+  function extendPool(region,old,second=false){
+    const [west,east,south,north]=BOUNDS[region],gap=GAP_KM[region]*(second?.25:.48);
+    const rand=randomStream((second?0x3e782a19:0x1d4928c3)^(region*0x9e3779b9));
     const sinLo=Math.sin(south*Math.PI/180),sinHi=Math.sin(north*Math.PI/180);
     const dy=gap/111.2,dx=gap/(111.2*Math.max(.12,Math.cos((north+south)*Math.PI/360)));
     const buckets=new Map(),out=old.slice();
@@ -253,15 +253,22 @@
     return out;
   }
   function prepare(){
-    if(!pools)pools=REGION_NAMES.map((_,index)=>extendPool(index,regionPool(index)));
+    if(!pools)pools=REGION_NAMES.map((_,index)=>extendPool(index,extendPool(index,regionPool(index)),true));
     return pools;
   }
   function originalId(id){
+    if(id>=49202&&id<=50402)return id-49202;
+    if(id>=48001&&id<=49201)return id-48001;
+    if(id>=36801&&id<=48000)return id-36801+2000;
+    if(id>=25601&&id<=36800)return id-25601+2000;
     if(id>=24400&&id<=25600)return id-24400;
     if(id>=13200&&id<24400)return id-11200;
     return id;
   }
-  function isIron(id){return id>=2000&&id<24400;}
+  function cohort(id){
+    return id>=49202||(id>=36801&&id<=48000)?3:id>=25601?2:id>=13200?1:0;
+  }
+  function isIron(id){return (id>=2000&&id<24400)||(id>=25601&&id<=48000);}
   function indexForIron(id){
     for(let r=QUOTAS.length-1;r>=0;r--){
       if(id>=ironOffsets[r])return {region:r,slot:id-ironOffsets[r]};
@@ -279,14 +286,14 @@
     const original=originalId(id),details=original>=2000?indexForIron(original):castleSlots[original];
     if(!details)throw Error("KZ: nepoznati čuvar "+id);
     const points=prepared[details.region];
-    const half=points.length/2,slot=details.slot+(id===original?0:half);
+    const slot=details.slot+cohort(id)*points.length/4;
     if(g===0)return points[slot];
     // Rezervni zajednički položaj ako stanje s poslužitelja još nije stiglo.
     const extra=1+Math.floor(hash(id,g*7919+101)*(points.length-1));
     return points[(slot+extra)%points.length];
   }
   function quotas(){
-    return Object.fromEntries(REGION_NAMES.map((name,i)=>[name,QUOTAS[i]*2]));
+    return Object.fromEntries(REGION_NAMES.map((name,i)=>[name,QUOTAS[i]*4]));
   }
   function regionName(id){
     const region=regionFor(id);
