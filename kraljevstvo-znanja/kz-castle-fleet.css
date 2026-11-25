@@ -55,3 +55,7 @@
 .kz-fleet-attack:focus-visible,.kz-fleet-gps-enable:focus-visible{
   outline:3px solid #baf5e4;outline-offset:2px;
 }
+
+/* Same visible countdown for guardian and flag questions. */
+.kz-question-clock{font:800 19px/1.2 system-ui,sans-serif;text-align:center;color:#ffe5a3;background:#0b1a2b;border:1px solid #a9905b;border-radius:10px;padding:8px;margin:8px 0 12px;font-variant-numeric:tabular-nums}
+.kz-question-clock.urgent{color:#ff9b9b;border-color:#d66d70}
