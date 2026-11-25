@@ -81,8 +81,8 @@
   function all(){
     if(forests)return forests;
     const created=[];
-    let nextId=1,extraId=342,newId=683;
-    const additions=[],newAdditions=[];
+    let nextId=1,extraId=342,newId=683,largeId=1365;
+    const additions=[],newAdditions=[],largeAdditions=[];
     REGIONS.forEach((region,regionIndex)=>{
       const [west,east,south,north]=region.box;
       const sinLo=Math.sin(south*Math.PI/180),sinHi=Math.sin(north*Math.PI/180);
@@ -90,7 +90,7 @@
       const existing=[];
       const used=new Set();
       let attempts=0;
-      while(existing.length<region.count*4 && attempts<400000){
+      while(existing.length<region.count*24 && attempts<2000000){
         attempts++;
         const lon=west+(east-west)*random();
         const lat=Math.asin(sinLo+(sinHi-sinLo)*random())*180/Math.PI;
@@ -104,10 +104,11 @@
         ))continue;
         const plot=plotFromPoint(lat,lon),key=plot.x+":"+plot.y;
         if(used.has(key))continue;
-        const extra=existing.length>=region.count,more=existing.length>=region.count*2;
-        if(existing.some(v=>distanceKm(v,plot.point)<region.spacingKm*(more?.28:extra?.55:1)))continue;
+        const extra=existing.length>=region.count,more=existing.length>=region.count*2,large=existing.length>=region.count*4;
+        const gap=region.spacingKm*(large?.09:more?.28:extra?.55:1);
+        if(existing.some(v=>Math.abs(v.lat-plot.point.lat)*111.195<gap&&distanceKm(v,plot.point)<gap))continue;
         const forest=Object.freeze({
-          id:more?newId++:extra?extraId++:nextId++,region:region.name,areaM2:PLOT.areaM2,
+          id:large?largeId++:more?newId++:extra?extraId++:nextId++,region:region.name,areaM2:PLOT.areaM2,
           blockX:plot.x,blockY:plot.y,
           blocks:PLOT.columns*PLOT.rows,
           lat:plot.point.lat,lng:plot.point.lng,
@@ -115,15 +116,16 @@
         });
         used.add(key);existing.push(forest);
       }
-      if(existing.length!==region.count*4){
+      if(existing.length!==region.count*24){
         throw Error("KZ Čarobne šume: premalo lokacija za "+
           region.name+" ("+existing.length+"/"+region.count+")");
       }
       created.push(...existing.slice(0,region.count));
       additions.push(...existing.slice(region.count,region.count*2));
-      newAdditions.push(...existing.slice(region.count*2));
+      newAdditions.push(...existing.slice(region.count*2,region.count*4));
+      largeAdditions.push(...existing.slice(region.count*4));
     });
-    forests=Object.freeze(created.concat(additions,newAdditions));
+    forests=Object.freeze(created.concat(additions,newAdditions,largeAdditions));
     return forests;
   }
 
@@ -316,7 +318,7 @@
   }
   const API=Object.freeze({
     count:()=>all().length,
-    counts:()=>Object.fromEntries(REGIONS.map(r=>[r.name,r.count*4])),
+    counts:()=>Object.fromEntries(REGIONS.map(r=>[r.name,r.count*24])),
     positions:()=>all(),
     areaM2:PLOT.areaM2,
     blocks:PLOT.columns*PLOT.rows,

@@ -50,6 +50,8 @@
   // Pitanja i nagrade: provjera GPS-a i 50 pokušaja po danu na poslužitelju.
   window.KZCastleRPC = {
     status: () => rpc("kz_castle_status"),
+    catalog: () => rpc("kz_castle_active_catalog"),
+    ironMap: (params) => rpc("kz_iron_map",params),
     quota: () => rpc("kz_guardian_quota", args()),
     challenge: (guardianId, fix) => rpc("kz_guardian_challenge", args({
       p_guardian_id:guardianId,p_lat:fix.lat,p_lng:fix.lng,p_accuracy:fix.accuracy

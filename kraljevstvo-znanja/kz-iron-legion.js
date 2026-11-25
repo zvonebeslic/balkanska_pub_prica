@@ -8,36 +8,16 @@
   const FW=ICON.frameWidth,FH=ICON.frameHeight,D2R=Math.PI/180;
   const MAX_MOBILE=ICON.mobileLimit,MAX_DESKTOP=ICON.desktopLimit;
   // Raspored slijedi globalne 5 × 4 m kvadrate i regionalne kvote.
-  const RENDER_TOTAL=44800;
+  const RENDER_TOTAL=268800;
   // Za sve čuvare vrijedi ista globalna raspršena mreža iz kataloga.
   // Stable ids 2000..13199. All clients calculate the same 11200 positions.
-  const guards=[],byId=new Map(),cells=new Map(),states=new Map();
-  function cellKey(p){
-    return Math.floor((p.lat+90)*2)+":"+Math.floor((p.lng+180)*2);
-  }
-  function addToIndex(g){
-    const key=cellKey(g.point);
-    if(!cells.has(key))cells.set(key,[]);
-    cells.get(key).push(g.id);
-  }
-  for(const id of [...Array.from({length:22400},(_,i)=>2000+i),...Array.from({length:22400},(_,i)=>25601+i)]){
-    const p=window.KZWorldRegistry.pointFor(id,0);
-    const guard={id:id,group:window.KZWorldRegistry.regionName(id),hub:"",point:p};
-    guards.push(guard);byId.set(id,guard);addToIndex(guard);
-  }
-  if(guards.length!==RENDER_TOTAL)throw Error("Sir Željeznik: pogrešan broj čuvara");
+  // Server spatial lookup: only guardians in the current viewport are loaded.
+  const byId=new Map(),states=new Map();
+  let requestSerial=0;
   function posFor(id,gen){
-    const base=byId.get(id)?.point;
-    if(!base)return null;
-    // Poslužitelj određuje novu točku nakon poraza: svi igrači
-    // vide istog čuvara na istim koordinatama.
-    const server=states.get(id);
-    if(server?.start_lat!=null && server?.start_lng!=null &&
-       Number.isFinite(Number(server.start_lat)) &&
-       Number.isFinite(Number(server.start_lng)))
-      return {lat:Number(server.start_lat),lng:Number(server.start_lng)};
-    if(!gen)return base;
-    return window.KZWorldRegistry.pointFor(id,gen);
+    const state=states.get(id);
+    if(state?.start_lat!=null&&state?.start_lng!=null)return {lat:Number(state.start_lat),lng:Number(state.start_lng)};
+    return byId.get(id)?.point||null;
   }
   let map=null,pane=null,sprite=null,ready=false,visible=new Map(),enabled=true;
   let pendingRefresh=0,clock=0;
@@ -58,34 +38,16 @@
       html:'<canvas class="kz-iron-canvas" width="'+FW+'" height="'+FH+'" aria-hidden="true"></canvas>',
       iconSize:[w,w],iconAnchor:[w/2,w*.90]});
   }
-  function generation(id){return Number(states.get(id)?.generation)||0;}
-  function visibleCandidates(){
-    if(!map||map.getZoom()<OVERVIEW_ZOOM)return [];
-    const b=map.getBounds().pad(.18);
-    const sw=b.getSouthWest(),ne=b.getNorthEast();
-    const south=Math.floor((sw.lat+90)*2),north=Math.floor((ne.lat+90)*2);
-    const west=Math.floor((sw.lng+180)*2),east=Math.floor((ne.lng+180)*2);
-    const result=[],center=map.getCenter();
-    const scan=function(ids){
-      for(const id of ids){
-        const p=posFor(id,generation(id));
-        if(!p||!b.contains([p.lat,p.lng]))continue;
-        const dx=(p.lng-center.lng)*Math.cos(center.lat*D2R),dy=p.lat-center.lat;
-        result.push({id:id,point:p,d2:dx*dx+dy*dy});
-      }
-    };
-    // A small spatial index avoids scanning every guard on every pan/zoom.
-    const seen=new Set();
-    for(let a=Math.max(0,south-1);a<=Math.min(359,north+1);a++){
-      for(let b=west-1;b<=east+1;b++){
-        const norm=(b%720+720)%720;
-        const key=a+":"+norm;
-        if(seen.has(key))continue;seen.add(key);
-        scan(cells.get(key)||[]);
-      }
-    }
-    result.sort((a,b)=>a.d2-b.d2);
-    return result;
+  function generation(id){return Number(states.get(id)?.generation??byId.get(id)?.generation)||0;}
+  function mapParams(nearest=false){
+    const b=map.getBounds().pad(.18),c=map.getCenter();
+    return {p_south:b.getSouth(),p_north:b.getNorth(),p_west:b.getWest(),p_east:b.getEast(),p_lat:c.lat,p_lng:c.lng,p_nearest:nearest};
+  }
+  function register(row){
+    const id=Number(row.id),point={lat:Number(row.lat),lng:Number(row.lng)};
+    if(byId.size>=1500){for(const k of byId.keys()){if(!visible.has(k)){byId.delete(k);break;}}}
+    byId.set(id,{id,group:window.KZWorldRegistry.regionNames[row.region]||"Svijet",point,generation:Number(row.generation)||0});
+    return {id,point};
   }
   function frameDraw(entry,time){
     const canvas=entry.marker.getElement()?.querySelector("canvas");
@@ -96,8 +58,9 @@
       entry.frame=frame;
     }
   }
-  function refresh(){
+  async function refresh(){
     if(!map||!ready)return;
+    const serial=++requestSerial;
     const toggle=document.getElementById("map-life-toggle");
     enabled=!toggle||toggle.getAttribute("aria-pressed")!=="false";
     if(!enabled||map.getZoom()<OVERVIEW_ZOOM){
@@ -107,7 +70,10 @@
     const overview=map.getZoom()<MIN_ZOOM;
     const mobile=map.getSize().x<550;
     const cap=overview?(mobile?14:24):(mobile?MAX_MOBILE:MAX_DESKTOP);
-    const matches=visibleCandidates().slice(0,cap),keep=new Set();
+    let rows;
+    try{rows=await window.KZCastleRPC.ironMap(mapParams());}catch(error){console.warn("KZ Željeznici:",error);return;}
+    if(serial!==requestSerial||!enabled||map.getZoom()<OVERVIEW_ZOOM)return;
+    const matches=(Array.isArray(rows)?rows:[]).slice(0,cap).map(register),keep=new Set();
     const now=Date.now();
     matches.forEach(match=>{
       keep.add(match.id);
@@ -130,7 +96,7 @@
         }).addTo(map);
         entry={id:match.id,marker:marker,frame:-1,width:width,generation:gen,overview:overview};
         visible.set(match.id,entry);
-      }else if(entry.generation!==gen){
+      }else{
         entry.marker.setLatLng([match.point.lat,match.point.lng]);
         entry.generation=gen;
       }
@@ -146,51 +112,25 @@
       }
     }
   }
-  function rebuildSpatialIndex(){
-    // Nakon globalnog respawna indeks mora koristiti NOVE koordinate,
-    // inače bi premješteni čuvar ostao nevidljiv u novoj regiji.
-    cells.clear();
-    for(const guard of guards){
-      const point=posFor(guard.id,generation(guard.id));
-      addToIndex({id:guard.id,point:point});
-    }
-  }
   function onStatus(list){
     if(!Array.isArray(list))return;
-    const next=new Map();
-    for(const row of list){
-      if(!Number.isInteger(row?.id)||!byId.has(row.id))continue;
-      next.set(row.id,row);
-    }
     states.clear();
-    next.forEach((value,key)=>states.set(key,value));
-    rebuildSpatialIndex();
-    refresh();
+    for(const row of list)if(window.KZWorldRegistry.isIron(Number(row?.id)))states.set(Number(row.id),row);
+    if(map?.getZoom()>=OVERVIEW_ZOOM)refresh();
   }
   function onChange(record){
-    if(!record||!byId.has(Number(record.id)))return;
+    if(!record||!window.KZWorldRegistry.isIron(Number(record.id)))return;
     states.set(Number(record.id),record);
-    rebuildSpatialIndex();
     refresh();
   }
-  function focusNearest(){
+  async function focusNearest(){
     if(!map)return;
     const toggle=document.getElementById("map-life-toggle");
     if(toggle?.getAttribute("aria-pressed")==="false")toggle.click();
-    const center=map.getCenter();
-    let nearest=null,best=Infinity;
-    for(const guard of guards){
-      const point=posFor(guard.id,generation(guard.id));
-      if(!point)continue;
-      const lat=(point.lat-center.lat)*111.195;
-      const delta=Math.abs(point.lng-center.lng);
-      const lon=Math.min(delta,360-delta)*111.195*
-        Math.cos((point.lat+center.lat)*D2R/2);
-      const distance=lat*lat+lon*lon;
-      if(distance<best){best=distance;nearest=point;}
-    }
-    if(nearest)map.flyTo([nearest.lat,nearest.lng],
-      Math.max(MIN_ZOOM+1,map.getZoom()),{duration:1.15});
+    try{
+      const rows=await window.KZCastleRPC.ironMap(mapParams(true));
+      if(rows?.length){const {point}=register(rows[0]);map.flyTo([point.lat,point.lng],Math.max(MIN_ZOOM+1,map.getZoom()),{duration:1.15});}
+    }catch(error){console.warn("KZ Željeznici:",error);}
   }
   function setupButton(){
     const button=document.getElementById("kz-iron-button");
@@ -241,7 +181,7 @@
   window.addEventListener("kz:guardian-status",e=>onStatus(e.detail?.states));
   window.addEventListener("kz:guardian-state",e=>onChange(e.detail?.state));
   window.KZIronLegion={
-    count:()=>guards.length,
+    count:()=>RENDER_TOTAL,
     regions:()=>({...COUNT_BY_REGION}),
     visibleCount:()=>visible.size,
     info:info,

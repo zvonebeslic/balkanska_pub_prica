@@ -2,7 +2,7 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=389136, MIN_ZOOM=19, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry-clean.webm?v=1",iwo:"./media/Iwo_Jima_popravljena.webm?v=1",astronaut:"./media/astronaut-nepal.webm?v=1"};
+const TOTAL=2334816, MIN_ZOOM=19, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry-clean.webm?v=1",iwo:"./media/Iwo_Jima_popravljena.webm?v=1",astronaut:"./media/astronaut-nepal.webm?v=1"};
 const videos={},ready={};let lastPaint=0,paintStarted=false;
 const kindOf=f=>f.kind==="astronaut"?"astronaut":f.kind==="iwo"?"iwo":f.kind==="corner"?"corner":"golf";
 const maxQuestions=f=>kindOf(f)==="astronaut"?4:kindOf(f)==="iwo"?3:kindOf(f)==="corner"?2:1;

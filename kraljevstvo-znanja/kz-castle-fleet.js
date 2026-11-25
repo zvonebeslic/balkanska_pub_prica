@@ -42,19 +42,21 @@
     if(window.KZWorldRegistry.isIron(id)){
       return window.KZIronLegion?.info(id)||{id:id,name:"Sir Željeznik",region:"Svijet"};
     }
+    const entry=castleCatalog.get(id);
+    if(entry)return {id,name:"Hodajući dvorac",region:window.KZWorldRegistry.regionNames[entry.region]||"Svijet",lat:entry.lat,lng:entry.lng,bearing:entry.bearing};
     const p=window.KZWorldRegistry.pointFor(id,0);
     return {id:id,name:"Hodajući dvorac",region:window.KZWorldRegistry.regionName(id),lat:p.lat,lng:p.lng};
   }
   let map=null,sprite=null,pane=null,enabled=true,ready=false,selected=null;
   let gps=null,gpsWatch=null,activeChallenge=null,gpsStatus="GPS nije uključen.";
-  let state=new Map(),kingdomCount=0,timeOffset=0,visible=new Map();
+  let state=new Map(),kingdomCount=0,timeOffset=0,visible=new Map(),castleCatalog=new Map(),catalogForCount=-1;
   let refreshTimer=0,statusTimer=0,frameTimer=0,fetching=false,button=null,dialog=null;
   let statusError=false,cache=new Map(),baseRouteCache=new Map();
   const baseTotal=()=>201+Math.min(MAX_EXTRA,kingdomCount);
-  const total=()=>4*baseTotal();
-  function activeCastleIds(){const n=baseTotal(),starts=[0,24400,48001,49202];return Array.from({length:total()},(_,i)=>starts[Math.floor(i/n)]+i%n);}
+  const total=()=>24*baseTotal();
+  function activeCastleIds(){return castleCatalog.keys();}
   function spawn(c,gen){
-    return window.KZWorldRegistry.pointFor(c.id,gen);
+    return Number.isFinite(c.lat)&&Number.isFinite(c.lng)?{lat:c.lat,lng:c.lng}:window.KZWorldRegistry.pointFor(c.id,gen);
   }
   function makeRoute(c,gen,cycle){
     const key=c.id+":"+gen+":"+cycle;
@@ -67,7 +69,7 @@
       ? Number(server.route_bearing) : hash(c.id+1,gen*479+1)*360;
     // Na polovima uglavnom idi prema ekvatoru kako Web Mercator
     // ne bi sakrio dvorce iza granice prikaza karte (oko ±85°).
-    const baseBearing=server?.route_bearing!=null ? initial :
+    const baseBearing=server?.route_bearing!=null ? initial : Number.isFinite(c.bearing)?c.bearing:
       Math.abs(start.lat)>70
         ? (start.lat>0?180:0)+(hash(c.id,gen+429)-.5)*92
         : initial;
@@ -83,7 +85,7 @@
       return acc+len;
     },0);
     const res={segments:segments,total:kmTotal,bearing:b,start:start};
-    if(cache.size>3500)cache.clear();
+    if(cache.size>32000)cache.clear();
     cache.set(key,res);return res;
   }
   function calculate(id,now){
@@ -234,10 +236,15 @@
       statusError=false;
       const next=new Map();
       data.states.forEach(function(x){
-        if(Number.isInteger(x.id)&&x.id>=0&&x.id<=50402)next.set(x.id,x);
+        if(Number.isInteger(x.id)&&x.id>=0&&x.id<=390402)next.set(x.id,x);
       });
       state=next;
       kingdomCount=Math.max(0,Math.floor(Number(data.kingdoms)||0));
+      if(catalogForCount!==baseTotal()||!castleCatalog.size){
+        const rows=await window.KZCastleRPC.catalog();
+        if(!Array.isArray(rows)||!rows.length)throw Error("Katalog dvoraca nije dostupan");
+        castleCatalog=new Map(rows.map(r=>[Number(r.id),r]));catalogForCount=baseTotal();cache.clear();
+      }
       if(Number.isFinite(Number(data.now)))timeOffset=Number(data.now)-Date.now();
       window.dispatchEvent(new CustomEvent("kz:guardian-status",
         {detail:{states:data.states}}));

@@ -268,7 +268,7 @@
   function cohort(id){
     return id>=49202||(id>=36801&&id<=48000)?3:id>=25601?2:id>=13200?1:0;
   }
-  function isIron(id){return (id>=2000&&id<24400)||(id>=25601&&id<=48000);}
+  function isIron(id){if(id>=100000)id=(id-100000)%60000;return (id>=2000&&id<24400)||(id>=25601&&id<=48000);}
   function indexForIron(id){
     for(let r=QUOTAS.length-1;r>=0;r--){
       if(id>=ironOffsets[r])return {region:r,slot:id-ironOffsets[r]};
@@ -293,7 +293,7 @@
     return points[(slot+extra)%points.length];
   }
   function quotas(){
-    return Object.fromEntries(REGION_NAMES.map((name,i)=>[name,QUOTAS[i]*4]));
+    return Object.fromEntries(REGION_NAMES.map((name,i)=>[name,QUOTAS[i]*24]));
   }
   function regionName(id){
     const region=regionFor(id);
