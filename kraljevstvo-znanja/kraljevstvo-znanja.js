@@ -336,9 +336,33 @@
     S:"./media/wall-south.webp?v=1",W:"./media/wall-west.webp?v=1"
   });
   let dryWallReady=false;
+  const dryWallSprites={...DRY_WALL_URLS};
+  // Remove the perspective lean in the two vertical textures, not in the map
+  // geometry. The measured stone centreline is aligned at both endpoints.
+  function straightenDryWall(img,side){
+    const w=img.naturalWidth,h=img.naturalHeight;
+    // Normalized centreline measured from the original transparent artwork.
+    const [top,delta]=side==="W"?[.5953,-.2206]:[.6735,-.2749];
+    const canvas=document.createElement("canvas");
+    canvas.width=Math.ceil(w*1.38);canvas.height=h;
+    const ctx=canvas.getContext("2d");
+    if(!ctx)return DRY_WALL_URLS[side];
+    ctx.imageSmoothingEnabled=true;
+    ctx.imageSmoothingQuality="high";
+    ctx.setTransform(1,0,-delta*w/h,1,canvas.width/2-top*w,0);
+    ctx.drawImage(img,0,0);
+    return canvas.toDataURL("image/png");
+  }
   function prepareDryWalls(){
-    Promise.all(Object.values(DRY_WALL_URLS).map(url=>new Promise((resolve,reject)=>{
-      const img=new Image();img.onload=resolve;img.onerror=reject;img.src=url;
+    Promise.all(Object.entries(DRY_WALL_URLS).map(([side,url])=>new Promise((resolve,reject)=>{
+      const img=new Image();
+      img.onload=()=>{
+        try{
+          if(side==="W"||side==="E")dryWallSprites[side]=straightenDryWall(img,side);
+          resolve();
+        }catch(error){reject(error);}
+      };
+      img.onerror=reject;img.src=url;
     }))).then(()=>{dryWallReady=true;if(map&&tilesLayer&&borderLayer)drawMap();})
       .catch(()=>{dryWallReady=false;});
   }
@@ -369,7 +393,7 @@
         top=Math.min(a.y,b.y)-overlap;bottom=Math.max(a.y,b.y)+overlap;
       }
       const bounds=L.latLngBounds(map.unproject(L.point(left,bottom),zoom),map.unproject(L.point(right,top),zoom));
-      L.imageOverlay(DRY_WALL_URLS[side],bounds,{
+      L.imageOverlay(dryWallSprites[side],bounds,{
         pane:"kz-dry-wall-pane",interactive:false,opacity:1,alt:"",className:"kz-dry-wall",
         zIndex:horizontal?(side==="S"?3:1):2
       }).addTo(borderLayer);
