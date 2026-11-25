@@ -159,8 +159,8 @@ function gpsFix(f){
 const FLAG_NAMES={golf:"Golf zastavica znanja",corner:"Korner znanja · Henry 14",iwo:"Iwo Jima · zastava znanja",astronaut:"Astronaut znanja"};
 let flagDialog=null,flagSession=null;
 function closeFlag(){
- if(flagDialog)flagDialog.hidden=true;
- flagSession=null;active=null;
+ const previous=flagSession;flagSession=null;active=null;if(flagDialog)flagDialog.hidden=true;
+ previous?.abandon?.();
 }
 function ensureFlagDialog(){
  if(flagDialog)return flagDialog;
@@ -175,7 +175,7 @@ function ensureFlagDialog(){
 function openFlag(f,marker){
  const dialog=ensureFlagDialog(),card=dialog.querySelector(".kz-fleet-card");
  const close=card.querySelector(".kz-fleet-close");card.replaceChildren(close);
- const session={};flagSession=session;active=null;dialog.hidden=false;
+ flagSession?.abandon?.();const session={};flagSession=session;active=null;dialog.hidden=false;
  const isOpen=()=>flagSession===session&&!dialog.hidden;
  const count=maxQuestions(f);
  const title=el("h2",FLAG_NAMES[kindOf(f)]);title.id="kz-flag-battle-title";
@@ -210,20 +210,26 @@ function openFlag(f,marker){
   busy=true;box.replaceChildren();update();say("Učitavam pitanje iz zajedničke baze…");
   try{
    if(!entryFix){say("Za igranje je potreban GPS unutar 2 km.");return;}
-   const q=await rpc().challenge(f.id,f.generation,entryFix);if(!isOpen())return;
+   const q=await rpc().challenge(f.id,f.generation,entryFix);
+   if(!isOpen()){if(q.challenge_id)rpc().answer(q.challenge_id,'SKIP',entryFix).then(refresh).catch(()=>{});return;}
    setRemaining(q.remaining??f.remaining??count);
+   if(q.moved){completed=true;refresh();say('Prethodno pitanje je iskorišteno. Zastavica je premještena.');const end=el('button','Zatvori','kz-fleet-next');end.onclick=closeFlag;box.append(end);return;}
+   const clock=el('p','','kz-question-clock');clock.setAttribute('role','timer');box.append(clock);
    box.append(el("p",q.prompt||"Pitanje nije dostupno.","kz-fleet-prompt"));
    if(q.image&&/^https?:\/\//i.test(q.image)){
     const img=el("img");img.src=q.image;img.alt="Slika uz pitanje";img.className="kz-flag-battle-image";img.addEventListener("error",()=>img.remove());box.append(img);
    }
-   const choices=[];
-   for(const key of ["A","B","C"]){
-    const b=el("button",key+") "+String(q.options?.[key]??""),"kz-fleet-choice");b.type="button";b.dataset.key=key;choices.push(b);
-    b.onclick=async()=>{
-     if(busy||completed||!isOpen())return;
-     busy=true;choices.forEach(n=>n.disabled=true);update();say("Provjeravam odgovor…");
+   const choices=[];let timer=null,settled=false;
+   const seconds=Number(q.time_seconds)||6+Math.max(0,Math.ceil((Array.from(String(q.prompt||"")).length-70)/20));
+   const deadline=Date.now()+seconds*1000;
+   const stop=()=>{clearInterval(timer);timer=null;};
+   const finish=async key=>{
+     if(settled||busy||completed||!isOpen())return;
+     if(Date.now()>=deadline)key="SKIP";
+     busy=true;stop();choices.forEach(n=>n.disabled=true);update();say(key==="SKIP"?"Vrijeme je isteklo.":"Provjeravam odgovor…");
      try{
       const result=await rpc().answer(q.challenge_id,key,entryFix);
+      settled=true;session.abandon=null;
       if(result.reward_m2>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",{detail:{reward_m2:result.reward_m2}}));
       const item=markers.get(f.id);
       if(result.moved){if(item){map.removeLayer(item.marker);markers.delete(f.id);}}
@@ -232,16 +238,21 @@ function openFlag(f,marker){
       if(!isOpen())return;
       setRemaining(result.remaining??0);
       choices.forEach(n=>{if(n.dataset.key===result.correct_key)n.dataset.state="correct";else if(n.dataset.key===key)n.dataset.state="wrong";});
-      say((result.correct?"✅ Točno! +20 m².":"❌ Netočno. Točan odgovor: "+result.correct_key+") "+(q.options?.[result.correct_key]??"")+".")+(result.moved?" Zastavica je premještena.":""));
+      say((result.timed_out?"⏱ Vrijeme je isteklo. Pitanje je iskorišteno.":result.correct?"✅ Točno! +20 m².":"❌ Netočno. Točan odgovor: "+result.correct_key+") "+(q.options?.[result.correct_key]??"")+".")+(result.moved?" Zastavica je premještena.":""));
       completed=true;
       const next=el("button",result.moved?"Zatvori":"Sljedeće pitanje","kz-fleet-next");next.type="button";
       next.onclick=()=>{if(result.moved){closeFlag();return;}completed=false;load();};box.append(next);
-     }catch(e){if(isOpen()){say(e.message);choices.forEach(n=>n.disabled=false);}refresh();}
+     }catch(e){if(isOpen()){say(e.message);if(Date.now()<deadline){choices.forEach(n=>n.disabled=false);timer=setInterval(draw,100);}else{completed=true;const end=el("button","Zatvori","kz-fleet-next");end.onclick=closeFlag;box.append(end);}}refresh();}
      finally{if(isOpen()){busy=false;update();}}
-    };
+   };
+   const draw=()=>{const left=Math.max(0,Math.ceil((deadline-Date.now())/1000));clock.textContent="⏱ "+left+" s";clock.classList.toggle("urgent",left<=3);if(left===0&&!busy)void finish("SKIP");};
+   session.abandon=()=>{stop();if(!settled)rpc().answer(q.challenge_id,"SKIP",entryFix).then(refresh).catch(()=>{});};
+   for(const key of ["A","B","C"]){
+    const b=el("button",key+") "+String(q.options?.[key]??""),"kz-fleet-choice");b.type="button";b.dataset.key=key;choices.push(b);
+    b.onclick=()=>finish(key);
     box.append(b);
    }
-   say("Odaberi točan odgovor.");
+   draw();timer=setInterval(draw,100);say("Odaberi točan odgovor.");
   }catch(e){if(isOpen())say(e.message);schedule();}
   finally{if(isOpen()){busy=false;update();}}
  };
