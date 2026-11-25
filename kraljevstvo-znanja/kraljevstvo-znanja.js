@@ -417,8 +417,7 @@
       ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
       : "Dodirni mjesto na karti i postavi blok joystickom.";
     $("map-count").textContent = kingdoms.length + " kraljevstava · " +
-      (detailed ? cells.length + " m² u prikazu · bijelo obrubljeni rubovi su granice" :
-      "obojene oznake prikazuju položaj; uvećaj na 18+ za stvarne granice");
+      (detailed ? cells.length + " m² u prikazu" : kingdoms.reduce((sum,k)=>sum+(Number(k.area)||0),0) + " m² ukupno");
   }
   function updateMapXY() {
     if(!map)return;
