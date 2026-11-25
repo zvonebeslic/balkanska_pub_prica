@@ -174,7 +174,7 @@
     $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
     $("boost-caption").textContent = k?.area >= 500 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje na 500 m²";
     $("create-panel").classList.toggle("hidden", !!k);
-    $("joystick-panel").classList.toggle("hidden", !isKing);
+    $("joystick-panel").classList.toggle("hidden", !isKing || !map || map.getZoom()<18);
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!isKing||needsFirstGps());
     $("gps-status").textContent=needsFirstGps()?"Prvi blok isključivo na tvojoj GPS lokaciji":"Dodirni slobodno mjesto na karti ili koristi strelice";
     if(needsFirstGps()&&!firstGpsFix){cursor=null;cursorSpawnMode=false;}
@@ -501,13 +501,6 @@
           radius: 8.5, stroke:false, fillColor: k.color,
           fillOpacity: 0.96, renderer: map._kzCanvasRenderer
         }).on("click", () => showKingdom(k)).addTo(labelsLayer);
-        L.marker([center.lat, center.lng], {
-          icon: L.divIcon({
-            className: "realm-map-pin",
-            html: '<span style="--realm-color:' + safe(k.color) + '">♛ '+ safe(k.name) + '</span>',
-            iconSize: [1,1], iconAnchor: [0,0]
-          })
-        }).on("click", () => showKingdom(k)).addTo(labelsLayer);
       }
     }
 
@@ -551,7 +544,7 @@
           if (grid.get(x+":"+(y+1)) !== c.k) edge(c.k,"H",y+1,x);
         }
       }
-      drawTerritoryLabels(grid, byId);
+      if(showWalls)drawTerritoryLabels(grid, byId);
       for (const [key, offsets] of outline) {
         const [id, axis, fixedStr] = key.split("|");
         const k = byId.get(id);
@@ -663,6 +656,7 @@
     let timer;
     map.on("moveend zoomend", () => {
       refreshBlockGrid();
+      updateCursorPreview();
       clearTimeout(timer);
       if(initialMapReady)timer=setTimeout(reloadMap,180);
     });
@@ -673,7 +667,7 @@
       xyFrame=requestAnimationFrame(()=>{xyFrame=0;updateMapXY();});
     });
     map.on("click",e=>{
-      if(current?.kingdom?.role!=="kralj"||needsFirstGps()||previewBusy||firstGpsBusy)return;
+      if(map.getZoom()<18||current?.kingdom?.role!=="kralj"||needsFirstGps()||previewBusy||firstGpsBusy)return;
       chooseMapCentre(false,e.latlng);
     });
   }
@@ -823,7 +817,10 @@
     const btn=$("claim-block");
     const label=$("cursor-status");
     const isKing=current?.kingdom?.role==="kralj";
-    if(!isKing || !cursor) {
+    const showPlacement=isKing&&map.getZoom()>=18;
+    $("joystick-panel")?.classList.toggle("hidden",!showPlacement);
+    if(!showPlacement){if(btn)btn.disabled=true;return;}
+    if(!cursor) {
       if(label)label.textContent=isKing?(needsFirstGps()?"Pritisni POSTAVI za GPS.":"Dodirni mjesto na karti."):"";
       if(btn){btn.textContent="POSTAVI";btn.disabled=!(isKing&&needsFirstGps()&&!firstGpsBusy&&!previewBusy);btn.title=needsFirstGps()?"Pronađi svoju GPS lokaciju":"Postavi blok";btn.setAttribute("aria-label",btn.title);}
       return;
@@ -855,7 +852,7 @@
   }
 
   function moveCursor(direction) {
-    if(current?.kingdom?.role!=="kralj")return;
+    if(!map||map.getZoom()<18||current?.kingdom?.role!=="kralj")return;
     if(needsFirstGps())return toast("Prvi blok ne možeš pomicati. Određuje ga GPS.");
     if(!cursor){ chooseMapCentre(false);if(!cursor)return; }
     const dir={N:[0,4],S:[0,-4],E:[5,0],W:[-5,0]}[direction];
@@ -865,7 +862,7 @@
     updateCursorPreview();
   }
   async function saveBlock() {
-    if(previewBusy||firstGpsBusy||current?.kingdom?.role!=="kralj")return;
+    if(!map||map.getZoom()<18||previewBusy||firstGpsBusy||current?.kingdom?.role!=="kralj")return;
     if(needsFirstGps()&&!firstGpsFix){await chooseFirstGps();return;}
     if(!cursor)return;
     const status=blockStatus(cursor);
