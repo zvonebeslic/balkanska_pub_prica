@@ -39,7 +39,7 @@
       Math.cos(x)*Math.sin(y)-Math.sin(x)*Math.cos(y)*Math.cos(z))/RAD);
   }
   function castle(id){
-    if(id>=2000&&id<13200){
+    if(window.KZWorldRegistry.isIron(id)){
       return window.KZIronLegion?.info(id)||{id:id,name:"Sir Željeznik",region:"Svijet"};
     }
     const p=window.KZWorldRegistry.pointFor(id,0);
@@ -50,7 +50,9 @@
   let state=new Map(),kingdomCount=0,timeOffset=0,visible=new Map();
   let refreshTimer=0,statusTimer=0,frameTimer=0,fetching=false,button=null,dialog=null;
   let statusError=false,cache=new Map(),baseRouteCache=new Map();
-  const total=()=>201+Math.min(MAX_EXTRA,kingdomCount);
+  const baseTotal=()=>201+Math.min(MAX_EXTRA,kingdomCount);
+  const total=()=>2*baseTotal();
+  function activeCastleIds(){return Array.from({length:total()},(_,i)=>i<baseTotal()?i:24400+i-baseTotal());}
   function spawn(c,gen){
     return window.KZWorldRegistry.pointFor(c.id,gen);
   }
@@ -130,7 +132,7 @@
     const now=realClock();
     const bounds=map.getBounds().pad(.22);
     const center=map.getCenter(),matches=[];
-    for(let id=0;id<total();id++){
+    for(const id of activeCastleIds()){
       const v=calculate(id,now);
       if(bounds.contains([v.point.lat,v.point.lng])){
         const dx=dist(center,v.point);
@@ -201,7 +203,7 @@
   function nearestToCenter(){
     const c=map.getCenter(),now=realClock();
     let pick=null,best=Infinity;
-    for(let id=0;id<total();id++){
+    for(const id of activeCastleIds()){
       const trip=calculate(id,now),distance=dist(c,trip.point);
       if(distance<best){best=distance;pick=trip;}
     }
@@ -232,7 +234,7 @@
       statusError=false;
       const next=new Map();
       data.states.forEach(function(x){
-        if(Number.isInteger(x.id)&&x.id>=0&&x.id<13200)next.set(x.id,x);
+        if(Number.isInteger(x.id)&&x.id>=0&&x.id<=25600)next.set(x.id,x);
       });
       state=next;
       kingdomCount=Math.max(0,Math.floor(Number(data.kingdoms)||0));
@@ -266,7 +268,7 @@
       start_lng:result.start_lng??prev.start_lng??null,
       route_bearing:result.route_bearing??prev.route_bearing??null});
     if(result.defeated)cache.clear();
-    if(id>=2000&&id<13200){
+    if(window.KZWorldRegistry.isIron(id)){
       window.dispatchEvent(new CustomEvent("kz:guardian-state",
         {detail:{state:{id:id,generation:Number(result.generation)||0,
           hp:Number(result.hp)||100,born_at:Number(result.born_at)||realClock(),
@@ -279,7 +281,7 @@
   // koordinatama čuvara iz klijenta i ponovno izračunava njihov položaj.
   let quotaLeft=null,busy=false,quotaResetAt=0;
   function monsterPosition(id){
-    if(id>=2000&&id<13200)return window.KZIronLegion?.location(id)||null;
+    if(window.KZWorldRegistry.isIron(id))return window.KZIronLegion?.location(id)||null;
     return calculate(id,realClock()).point;
   }
   function currentFix(){
@@ -371,7 +373,7 @@
   }
   function renderHP(id,hp){
     if(!dialog)return;
-    const c=castle(id),reward=id>=2000?20:80;
+    const c=castle(id),reward=window.KZWorldRegistry.isIron(id)?20:80;
     dialog.querySelector(".kz-fleet-description").textContent=
       c.name+" · "+c.region+" · HP "+hp+"/100 · nagrada "+
       (reward/20)+" kvadrat"+(reward===20?"":"a")+" ("+reward+
@@ -383,7 +385,7 @@
     if(!ready)return;
     ensureDialog();stopGPS();
     selected=id;activeChallenge=null;busy=false;quotaLeft=null;dialog.hidden=false;
-    dialog.querySelector("#kz-fleet-title").textContent=id>=2000
+    dialog.querySelector("#kz-fleet-title").textContent=window.KZWorldRegistry.isIron(id)
       ?"⚔️ Sir Željeznik":"⚔️ Hodajući dvorac";
     dialog.querySelector(".kz-fleet-question").replaceChildren();
     renderHP(id,state.get(id)?.hp??100);
@@ -514,7 +516,7 @@
     count:()=>total(),regions:()=>["Globalni raspored"],
     visibleCount:()=>visible.size,
     locate:(id,t)=>calculate(id,t||realClock()),
-    openFight:(id)=>{if(Number.isInteger(id)&&id>=2000&&id<13200)openFight(id);},
+    openFight:(id)=>{if(Number.isInteger(id)&&window.KZWorldRegistry.isIron(id))openFight(id);},
     refresh:()=>{loadStatus();setVisible();}
   };
 })();

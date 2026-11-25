@@ -226,10 +226,42 @@
     }
     return result;
   }
+  function extendPool(region,old){
+    const [west,east,south,north]=BOUNDS[region],gap=GAP_KM[region]*.48;
+    const rand=randomStream(0x1d4928c3^(region*0x9e3779b9));
+    const sinLo=Math.sin(south*Math.PI/180),sinHi=Math.sin(north*Math.PI/180);
+    const dy=gap/111.2,dx=gap/(111.2*Math.max(.12,Math.cos((north+south)*Math.PI/360)));
+    const buckets=new Map(),out=old.slice();
+    const bucket=p=>[Math.floor((p.lng-west)/dx),Math.floor((p.lat-south)/dy)];
+    const add=p=>{const key=bucket(p).join(":");if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(p);};
+    old.forEach(add);
+    let tries=0;
+    while(out.length<old.length*2&&tries++<old.length*400){
+      const lon=west+(east-west)*rand(),lat=Math.asin(sinLo+(sinHi-sinLo)*rand())*180/Math.PI;
+      if(!belongs(region,lon,lat))continue;
+      const at=snap(lat,lon),[x,y]=bucket(at);
+      let ok=true;
+      for(let i=-2;i<=2&&ok;i++)for(let j=-2;j<=2&&ok;j++){
+        for(const prev of buckets.get((x+i)+":"+(y+j))||[]){
+          const a=(at.lat-prev.lat)*111.2,b=Math.min(Math.abs(at.lng-prev.lng),360-Math.abs(at.lng-prev.lng))*111.2*Math.cos((at.lat+prev.lat)*Math.PI/360);
+          if(a*a+b*b<gap*gap){ok=false;break;}
+        }
+      }
+      if(ok){out.push(at);add(at);}
+    }
+    if(out.length!==old.length*2)throw Error("KZ: proširenje regije "+region);
+    return out;
+  }
   function prepare(){
-    if(!pools)pools=REGION_NAMES.map((_,index)=>regionPool(index));
+    if(!pools)pools=REGION_NAMES.map((_,index)=>extendPool(index,regionPool(index)));
     return pools;
   }
+  function originalId(id){
+    if(id>=24400&&id<=25600)return id-24400;
+    if(id>=13200&&id<24400)return id-11200;
+    return id;
+  }
+  function isIron(id){return id>=2000&&id<24400;}
   function indexForIron(id){
     for(let r=QUOTAS.length-1;r>=0;r--){
       if(id>=ironOffsets[r])return {region:r,slot:id-ironOffsets[r]};
@@ -237,22 +269,24 @@
     return null;
   }
   function regionFor(id){
+    id=originalId(id);
     if(id>=2000&&id<13200)return indexForIron(id)?.region??0;
     if(id>=0&&id<=1200)return castleSlots[id].region;
     return null;
   }
   function pointFor(id,generation){
     const prepared=prepare(),g=Math.max(0,Number(generation)||0);
-    const details=id>=2000?indexForIron(id):castleSlots[id];
+    const original=originalId(id),details=original>=2000?indexForIron(original):castleSlots[original];
     if(!details)throw Error("KZ: nepoznati čuvar "+id);
     const points=prepared[details.region];
-    if(g===0)return points[details.slot];
+    const half=points.length/2,slot=details.slot+(id===original?0:half);
+    if(g===0)return points[slot];
     // Rezervni zajednički položaj ako stanje s poslužitelja još nije stiglo.
     const extra=1+Math.floor(hash(id,g*7919+101)*(points.length-1));
-    return points[(details.slot+extra)%points.length];
+    return points[(slot+extra)%points.length];
   }
   function quotas(){
-    return Object.fromEntries(REGION_NAMES.map((name,i)=>[name,QUOTAS[i]]));
+    return Object.fromEntries(REGION_NAMES.map((name,i)=>[name,QUOTAS[i]*2]));
   }
   function regionName(id){
     const region=regionFor(id);
@@ -311,7 +345,7 @@
   window.KZWorldRegistry=Object.freeze({
     types:TYPES,info:info,source:source,pointFor:pointFor,
     blockFor:blockFor,pointFromBlock:pointFromBlock,worldGridCorner:worldGridCorner,gridYFromLatitude,latitudeFromGridY,
-    belongs:belongs,regionFor:regionFor,
+    belongs:belongs,regionFor:regionFor,isIron:isIron,
     regionName:regionName,regionQuotas:quotas,regionNames:REGION_NAMES,
     isLand:isLand,prepare:prepare,layout:layout,frameAt:frameAt,paint:paint,
     actualFrames:(id,img)=>layout(id,img)?.total||0

@@ -81,7 +81,8 @@
   function all(){
     if(forests)return forests;
     const created=[];
-    let nextId=1;
+    let nextId=1,extraId=342;
+    const additions=[];
     REGIONS.forEach((region,regionIndex)=>{
       const [west,east,south,north]=region.box;
       const sinLo=Math.sin(south*Math.PI/180),sinHi=Math.sin(north*Math.PI/180);
@@ -89,7 +90,7 @@
       const existing=[];
       const used=new Set();
       let attempts=0;
-      while(existing.length<region.count && attempts<100000){
+      while(existing.length<region.count*2 && attempts<200000){
         attempts++;
         const lon=west+(east-west)*random();
         const lat=Math.asin(sinLo+(sinHi-sinLo)*random())*180/Math.PI;
@@ -103,9 +104,10 @@
         ))continue;
         const plot=plotFromPoint(lat,lon),key=plot.x+":"+plot.y;
         if(used.has(key))continue;
-        if(existing.some(v=>distanceKm(v,plot.point)<region.spacingKm))continue;
+        const extra=existing.length>=region.count;
+        if(existing.some(v=>distanceKm(v,plot.point)<region.spacingKm*(extra?.55:1)))continue;
         const forest=Object.freeze({
-          id:nextId++,region:region.name,areaM2:PLOT.areaM2,
+          id:extra?extraId++:nextId++,region:region.name,areaM2:PLOT.areaM2,
           blockX:plot.x,blockY:plot.y,
           blocks:PLOT.columns*PLOT.rows,
           lat:plot.point.lat,lng:plot.point.lng,
@@ -113,13 +115,14 @@
         });
         used.add(key);existing.push(forest);
       }
-      if(existing.length!==region.count){
+      if(existing.length!==region.count*2){
         throw Error("KZ Čarobne šume: premalo lokacija za "+
           region.name+" ("+existing.length+"/"+region.count+")");
       }
-      created.push(...existing);
+      created.push(...existing.slice(0,region.count));
+      additions.push(...existing.slice(region.count));
     });
-    forests=Object.freeze(created);
+    forests=Object.freeze(created.concat(additions));
     return forests;
   }
 
@@ -312,7 +315,7 @@
   }
   const API=Object.freeze({
     count:()=>all().length,
-    counts:()=>Object.fromEntries(REGIONS.map(r=>[r.name,r.count])),
+    counts:()=>Object.fromEntries(REGIONS.map(r=>[r.name,r.count*2])),
     positions:()=>all(),
     areaM2:PLOT.areaM2,
     blocks:PLOT.columns*PLOT.rows,
