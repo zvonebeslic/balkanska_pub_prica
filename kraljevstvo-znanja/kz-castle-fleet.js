@@ -295,7 +295,7 @@
     if(selected===null||!gps||Date.now()-gps.at>25000||
       gps.accuracy>150||gps.accuracy<0)return null;
     const pos=monsterPosition(selected);
-    if(!pos||dist(pos,gps)>1)return null;
+    if(!pos||dist(pos,gps)>2)return null;
     return {lat:gps.lat,lng:gps.lng,accuracy:gps.accuracy};
   }
   function eligibility(){
@@ -307,9 +307,9 @@
     if(gps&&Date.now()-gps.at>25000)status="GPS je zastario. Čekam novo očitanje.";
     else if(gps&&gps.accuracy>150)status="GPS je neprecizan ("+Math.round(gps.accuracy)+" m).";
     else if(gps&&target!==null)
-      status=target<=1000
+      status=target<=2000
         ?"✅ U krugu si za napad: "+target+" m od čuvara."
-        :"🔒 Udaljenost "+target+" m. Priđi na 1 km ili manje.";
+        :"🔒 Udaljenost "+target+" m. Priđi na 2 km ili manje.";
     gpsLine.textContent=status;
     const good=!!currentFix();
     const attack=dialog.querySelector(".kz-fleet-attack");
@@ -397,7 +397,7 @@
     dialog.querySelector(".kz-fleet-question").replaceChildren();
     renderHP(id,state.get(id)?.hp??100);
     quotaMessage();
-    message("Za napad uključi GPS i priđi na najviše 1 km od čuvara. Pitanja dolaze iz zajedničke baze.");
+    message("Za napad uključi GPS i priđi na najviše 2 km od čuvara. Pitanja dolaze iz zajedničke baze.");
     eligibility();
     window.KZCastleRPC?.quota?.().then(q=>{
       if(selected!==id)return;
@@ -437,7 +437,7 @@
         button.addEventListener("click",()=>answer(id,q.challenge_id,choice));
         box.appendChild(button);
       });
-      message("Odgovori dok si unutar 1 km. Svaki točan pogodak oduzima 20 HP.");
+      message("Odgovori dok si unutar 2 km. Svaki točan pogodak oduzima 20 HP.");
     }catch(e){if(selected===id)message(e.message||"Ne mogu učitati pitanje.");}
     finally{busy=false;eligibility();}
   }
@@ -445,7 +445,7 @@
     if(selected!==id||activeChallenge!==cid||busy)return;
     const fix=currentFix();
     if(!fix){
-      eligibility();message("GPS više nije unutar 1 km. Napad je prekinut.");return;
+      eligibility();message("GPS više nije unutar 2 km. Napad je prekinut.");return;
     }
     busy=true;dialog.querySelectorAll(".kz-fleet-choice").forEach(b=>b.disabled=true);
     message("Provjeravam odgovor i GPS…");
