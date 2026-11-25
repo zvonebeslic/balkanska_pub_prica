@@ -31,10 +31,10 @@
   };
   const xy = (lat, lon) => ({
     x: Math.floor(R * K * lon * Math.PI / 180),
-    y: Math.floor(R / K * Math.sin(lat * Math.PI / 180))
+    y: Math.floor(window.KZWorldRegistry.gridYFromLatitude(lat))
   });
   const ll = (x, y) => ({
-    lat: Math.asin(Math.max(-1, Math.min(1, y * K / R))) * 180 / Math.PI,
+    lat: window.KZWorldRegistry.latitudeFromGridY(y),
     lng: x / (R * K) * 180 / Math.PI
   });
   const args = (extra = {}) => ({ p_guest_id: identity.id, p_guest_secret: identity.secret, ...extra });
@@ -433,20 +433,28 @@
     // The projection's original bounds remain unchanged for the real OSM tile grid.
     const earthlyProjection=L.Projection.SphericalMercator;
     const extendedProjection=Object.create(earthlyProjection);
+    const edgeLat=earthlyProjection.MAX_LATITUDE;
+    const edgePoint=earthlyProjection.project(L.latLng(edgeLat,0)).y;
+    const edgeScale=earthlyProjection.R*Math.PI/180/Math.cos(edgeLat*Math.PI/180);
     extendedProjection.project=function(latlng){
-      if(Math.abs(latlng.lat)<=earthlyProjection.MAX_LATITUDE)return earthlyProjection.project(latlng);
-      const lat=Math.max(-89.999999,Math.min(89.999999,latlng.lat))*Math.PI/180;
-      return L.point(this.R*latlng.lng*Math.PI/180,this.R*Math.log(Math.tan(Math.PI/4+lat/2)));
+      if(Math.abs(latlng.lat)<=edgeLat)return earthlyProjection.project(latlng);
+      return L.point(this.R*latlng.lng*Math.PI/180,
+        Math.sign(latlng.lat)*(edgePoint+(Math.abs(latlng.lat)-edgeLat)*edgeScale));
+    };
+    extendedProjection.unproject=function(point){
+      if(Math.abs(point.y)<=edgePoint)return earthlyProjection.unproject(point);
+      return L.latLng(Math.sign(point.y)*(edgeLat+(Math.abs(point.y)-edgePoint)/edgeScale),
+        point.x/this.R*180/Math.PI);
     };
     const fantasyCRS=L.extend({},L.CRS.EPSG3857,{projection:extendedProjection});
     map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false}).setView([43.5,17.3],7);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      minZoom:2,maxZoom:22,maxNativeZoom:19,attribution:'&copy; OpenStreetMap'
+      minZoom:2,maxZoom:22,maxNativeZoom:19,noWrap:true,attribution:'&copy; OpenStreetMap'
     }).addTo(map);
     // Secret island: use the same X/Y block indices as the visible coordinate counter.
     const lotarCentre=ll(600652*5+2.5,1832429*4+2);
     const lotarPoint=extendedProjection.project(L.latLng(lotarCentre.lat,lotarCentre.lng));
-    const halfWidth=250/Math.cos(lotarCentre.lat*Math.PI/180);
+    const halfWidth=250/Math.cos(Math.min(edgeLat,Math.abs(lotarCentre.lat))*Math.PI/180);
     const halfHeight=halfWidth*2/3;
     const lotarBounds=L.latLngBounds(
       extendedProjection.unproject(L.point(lotarPoint.x-halfWidth,lotarPoint.y-halfHeight)),
