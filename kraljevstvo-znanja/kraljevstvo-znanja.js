@@ -335,7 +335,47 @@
     N:"./media/wall-north.webp?v=1",E:"./media/wall-east.webp?v=1",
     S:"./media/wall-south.webp?v=1",W:"./media/wall-west.webp?v=1"
   });
-  let dryWallReady=false;
+  let dryWallReady=false, towerReady=false;
+  const TOWER_URL="./media/kz-tower.webp?v=1";
+  function prepareTowers(){
+    const image=new Image();
+    image.onload=()=>{towerReady=true;if(dryWallReady&&map&&borderLayer)drawMap();};
+    image.src=TOWER_URL;
+  }
+  // A corner is a change in the local boundary direction for any kingdom.
+  // Examine the four unit cells surrounding each vertex, including old partial blocks.
+  function collectTowerCorners(grid){
+    const vertices=new Set(), towers=new Set();
+    for(const key of grid.keys()){
+      const [x,y]=key.split(":").map(Number);
+      for(const dx of [0,1])for(const dy of [0,1])vertices.add((x+dx)+":"+(y+dy));
+    }
+    for(const key of vertices){
+      const [x,y]=key.split(":").map(Number);
+      const owners=[grid.get((x-1)+":"+(y-1)),grid.get(x+":"+(y-1)),grid.get(x+":"+y),grid.get((x-1)+":"+y)];
+      for(const owner of new Set(owners.filter(v=>v!=null))){
+        const a=owners.map(v=>v===owner),n=a.filter(Boolean).length;
+        if(n===1||n===3||(n===2&&a[0]===a[2]&&a[1]===a[3])){towers.add(key);break;}
+      }
+    }
+    return towers;
+  }
+  // Fixed grid phase keeps every fifth block joint stable even during panning.
+  function addStraightTowerJoints(towers,side,fixed,from,to){
+    const horizontal=side==="N"||side==="S",step=horizontal?25:20;
+    for(let v=(Math.floor(from/step)+1)*step;v<to;v+=step){
+      towers.add(horizontal?v+":"+fixed:fixed+":"+v);
+    }
+  }
+  function paintTower(key){
+    const [x,y]=key.split(":").map(Number),zoom=map.getZoom();
+    const p=map.project(ll(x,y),zoom),e=map.project(ll(x+5,y),zoom),n=map.project(ll(x,y+4),zoom);
+    const w=Math.max(8,Math.max(Math.abs(e.x-p.x),Math.abs(n.y-p.y)*.85)*.43);
+    const h=w*92/40;
+    // Base overlaps the corner; the tower rises above the masonry without hiding the block.
+    const bounds=L.latLngBounds(map.unproject(L.point(p.x-w/2,p.y+h*.15),zoom),map.unproject(L.point(p.x+w/2,p.y-h*.85),zoom));
+    L.imageOverlay(TOWER_URL,bounds,{pane:"kz-tower-pane",interactive:false,alt:"",opacity:1}).addTo(borderLayer);
+  }
   const dryWallSprites={...DRY_WALL_URLS};
   // Remove the perspective lean in the two vertical textures, not in the map
   // geometry. The measured stone centreline is aligned at both endpoints.
@@ -434,6 +474,7 @@
       // Obrisi se skupljaju u duge, spojene odsječke; nema debelih unutarnjih crta.
       const outline = new Map();
       const useDryWalls=dryWallReady&&map.getZoom()>=20;
+      const towers=useDryWalls&&towerReady?collectTowerCorners(grid):null;
       const edge = (owner, axis, fixed, variable) => {
         const key = owner + "|" + axis + "|" + fixed;
         if (!outline.has(key)) outline.set(key, []);
@@ -473,7 +514,7 @@
         if (!sorted.length) continue;
         let begin = sorted[0], last = begin;
         const paint = (a,b) => {
-          if(useDryWalls){paintDryWall(axis,fixed,a,b+1);return;}
+          if(useDryWalls){paintDryWall(axis,fixed,a,b+1);if(towers)addStraightTowerJoints(towers,axis,fixed,a,b+1);return;}
           const points = axis === "H"
             ? [ll(a,fixed),ll(b+1,fixed)]
             : [ll(fixed,a),ll(fixed,b+1)];
@@ -489,6 +530,7 @@
         }
         paint(begin,last);
       }
+      if(towers)for(const key of towers)paintTower(key);
     }
     if(detailed)drawBlockGrid();
     updateCursorPreview();
@@ -561,7 +603,10 @@
     borderLayer = L.layerGroup().addTo(map);
     map.createPane("kz-dry-wall-pane").style.zIndex="430";
     map.getPane("kz-dry-wall-pane").style.pointerEvents="none";
+    map.createPane("kz-tower-pane").style.zIndex="440";
+    map.getPane("kz-tower-pane").style.pointerEvents="none";
     prepareDryWalls();
+    prepareTowers();
     labelsLayer = L.layerGroup().addTo(map);
     previewLayer = L.layerGroup().addTo(map);
     lifeLayer = L.layerGroup().addTo(map);
