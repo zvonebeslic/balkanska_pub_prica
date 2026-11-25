@@ -11,6 +11,7 @@
   let lifeEnabled = true;
   // The map toolbar no longer exposes the world toggle; keep characters visible for everyone.
   let mapLoading = false, mapRevision = 0, dialogQuiz = false;
+  let territoryPaintKey=null, blockGridPaintKey=null, initialMapReady=false;
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
   let firstGpsFix = null, firstGpsBusy = false;
   const needsFirstGps = () => current?.kingdom?.role === 'kralj' && Number(current.kingdom.area||0)===0;
@@ -447,10 +448,44 @@
       start=end;
     }
   }
+  // Merge same-owner unit cells into rectangular strips. Every occupied square
+  // is preserved, including holes, old partial blocks and irregular edges.
+  function mergeTerritoryCells(cells){
+    const rows=new Map(),out=[];
+    for(const c of cells){
+      const x=Number(c.x),y=Number(c.y);
+      if(!rows.has(y))rows.set(y,[]);
+      rows.get(y).push({x,k:c.k});
+    }
+    let active=new Map();
+    for(const y of [...rows.keys()].sort((a,b)=>a-b)){
+      const row=rows.get(y).sort((a,b)=>a.x-b.x),next=new Map();
+      for(let i=0;i<row.length;){
+        const k=row[i].k,x0=row[i].x;
+        let x1=x0+1;i++;
+        while(i<row.length&&row[i].k===k&&row[i].x===x1){x1++;i++;}
+        const key=JSON.stringify([k,x0,x1]);
+        let rect=active.get(key);
+        if(rect&&rect.y1===y)rect.y1=y+1;
+        else{rect={k,x0,x1,y0:y,y1:y+1};out.push(rect);}
+        next.set(key,rect);
+      }
+      active=next;
+    }
+    return out;
+  }
+  function currentTerritoryPaintKey(){
+    const z=map.getZoom(),ks=kingdoms.map(k=>JSON.stringify(k)).sort();
+    const cs=z>=18?cells.map(c=>c.x+":"+c.y+":"+c.k).sort():[];
+    return JSON.stringify([z,dryWallReady,towerReady,ks,cs]);
+  }
   function drawMap() {
+    const nextPaintKey=currentTerritoryPaintKey();
+    if(nextPaintKey===territoryPaintKey){
+      refreshBlockGrid();updateCursorPreview();return;
+    }
     labelsLayer.clearLayers();
     borderLayer.clearLayers();
-    if (blockGridLayer) blockGridLayer.clearLayers();
     tilesLayer.clearLayers();
     const own = current?.kingdom?.id;
     const detailed = map.getZoom() >= 18;
@@ -482,6 +517,18 @@
       const outline = new Map();
       const useDryWalls=dryWallReady&&map.getZoom()>=20;
       const towers=useDryWalls&&towerReady?collectTowerCorners(grid):null;
+      for(const rect of mergeTerritoryCells(cells)){
+        const k=byId.get(rect.k);
+        if(!k)continue;
+        const sw=ll(rect.x0,rect.y0),ne=ll(rect.x1,rect.y1);
+        L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
+          stroke:false,fillColor:k.color,fillOpacity:0.58,
+          interactive:true,renderer:map._kzCanvasRenderer
+        }).on("click",event=>{
+          L.DomEvent.stopPropagation(event);
+          showKingdom(k);
+        }).addTo(tilesLayer);
+      }
       const edge = (owner, axis, fixed, variable) => {
         const key = owner + "|" + axis + "|" + fixed;
         if (!outline.has(key)) outline.set(key, []);
@@ -490,15 +537,6 @@
       for (const c of cells) {
         const x = Number(c.x), y = Number(c.y), k = byId.get(c.k);
         if (!k) continue;
-        const sw = ll(x,y), ne = ll(x+1,y+1);
-        L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]], {
-          stroke: false, fillColor: k.color, fillOpacity: 0.58,
-          interactive: true, renderer: map._kzCanvasRenderer
-        }).on("click", event => {
-          L.DomEvent.stopPropagation(event);
-          showKingdom(k); // Karta služi samo za pregled; pomicanje i osvajanje su na joysticku.
-        }).addTo(tilesLayer);
-
         if (useDryWalls) {
           if(isDryWallSide(c.k,grid.get((x-1)+":"+y),"W"))edge(c.k,"W",x,y);
           if(isDryWallSide(c.k,grid.get((x+1)+":"+y),"E"))edge(c.k,"E",x+1,y);
@@ -539,7 +577,8 @@
       }
       if(towers)for(const key of towers)paintTower(key);
     }
-    if(detailed)drawBlockGrid();
+    refreshBlockGrid(true);
+    territoryPaintKey=nextPaintKey;
     updateCursorPreview();
     paintLivingWorld();
     $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi svoju lokaciju." : detailed
@@ -621,8 +660,9 @@
     window.dispatchEvent(new CustomEvent("kz:map-ready", {detail:{map}}));
     let timer;
     map.on("moveend zoomend", () => {
+      refreshBlockGrid();
       clearTimeout(timer);
-      timer=setTimeout(reloadMap,240);
+      if(initialMapReady)timer=setTimeout(reloadMap,180);
     });
     // Oznaka slijedi kartu dok je korisnik povlači, bez ažuriranja DOM-a 60x/s.
     let xyFrame=0;
@@ -634,7 +674,6 @@
       if(current?.kingdom?.role!=="kralj"||needsFirstGps()||previewBusy||firstGpsBusy)return;
       chooseMapCentre(false,e.latlng);
     });
-    reloadMap();
   }
   function showKingdom(k) {
     const mine = current?.kingdom?.id === k.id;
@@ -705,23 +744,38 @@
       "Odabrano središte karte. Novi blok mora dodirivati tvoju granicu.");
   }
   // Mreža je globalno poravnata: svaka pločica uvijek zauzima 5 × 4 = 20 m².
-  function drawBlockGrid(grid) {
-    if (!blockGridLayer || map.getZoom()<19) return;
+  function refreshBlockGrid(force=false) {
+    if(!map||!blockGridLayer)return;
+    const zoom=map.getZoom();
+    if(zoom<19){
+      if(blockGridPaintKey!==null){blockGridLayer.clearLayers();blockGridPaintKey=null;}
+      return;
+    }
     const bounds=map.getBounds();
     const sw=xy(bounds.getSouth(),bounds.getWest()),ne=xy(bounds.getNorth(),bounds.getEast());
     const left=Math.floor(Math.min(sw.x,ne.x)/5)*5;
     const right=Math.floor(Math.max(sw.x,ne.x)/5)*5;
     const bottom=Math.floor(Math.min(sw.y,ne.y)/4)*4;
     const top=Math.floor(Math.max(sw.y,ne.y)/4)*4;
+    const key=[zoom,left,right,bottom,top].join(":");
+    if(!force&&key===blockGridPaintKey)return;
+    blockGridPaintKey=key;
+    blockGridLayer.clearLayers();
     const estimated=(Math.floor((right-left)/5)+1)*(Math.floor((top-bottom)/4)+1);
-    // Ne stvaraj tisuće DOM/Canvas elemenata pri malom zumiranju.
     if(estimated>950)return;
+    // Draw each grid line just once rather than four edges for every square.
+    // Interior lines retain the effective opacity of the original doubled edges.
+    const outer=[],inner=[];
+    for(let x=left;x<=right+5;x+=5)
+      (x===left||x===right+5?outer:inner).push([ll(x,bottom),ll(x,top+4)]);
+    for(let y=bottom;y<=top+4;y+=4)
+      (y===bottom||y===top+4?outer:inner).push([ll(left,y),ll(right+5,y)]);
+    for(const [lines,opacity] of [[outer,.45],[inner,.6975]]){
+      if(lines.length)L.polyline(lines,{color:"#e8d29c",weight:.85,opacity,interactive:false,
+        renderer:map._kzCanvasRenderer}).addTo(blockGridLayer);
+    }
+    if(zoom>=21&&estimated<=175)
     for(let x=left;x<=right;x+=5)for(let y=bottom;y<=top;y+=4) {
-      const corner=ll(x,y),other=ll(x+5,y+4);
-      L.rectangle([[corner.lat,corner.lng],[other.lat,other.lng]],{
-        color:"#e8d29c",weight:.85,opacity:.45,fill:false,interactive:false,
-        renderer:map._kzCanvasRenderer
-      }).addTo(blockGridLayer);
       // Pri izrazito bliskom zumu svaki pojedini kvadrat diskretno nosi X/Y.
       // Pri daljem zumu ostaje samo mala oznaka središta karte.
       if(map.getZoom()>=21 && estimated<=175){
@@ -1263,12 +1317,16 @@
     if (!client) throw Error("Supabase nije učitan. Provjeri vezu.");
     await prepareIdentity();
     initMap();
-    await Promise.all([reloadState(),reloadCatalog()]);
-    await reloadMap();
+    const catalogPromise=reloadCatalog().then(()=>null,error=>error);
+    await reloadState();
     if (current?.kingdom?.anchor_x != null) {
       const p=ll(Number(current.kingdom.anchor_x),Number(current.kingdom.anchor_y));
       map.setView([p.lat,p.lng],20);
     }
+    initialMapReady=true;
+    await reloadMap();
+    const catalogError=await catalogPromise;
+    if(catalogError)console.warn("Katalog kraljevstava:",catalogError.message);
     setInterval(tick,1000);
     refreshTimer=setInterval(async()=>{
       if(document.visibilityState==="visible"){try{await reloadState();await reloadMap();}catch(_){}}
