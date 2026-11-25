@@ -122,21 +122,31 @@
       return (state>>>0)/4294967296;
     };
   }
+  // Continuous virtual latitude outside the Mercator tile edge.
+  // Existing real-world coordinates retain their original equal-area formula.
+  const EDGE_LAT=85.0511287798066, EDGE_RAD=EDGE_LAT*Math.PI/180;
+  const EDGE_Y=R/K*Math.sin(EDGE_RAD), Y_PER_DEG=R/K*Math.cos(EDGE_RAD)*Math.PI/180;
+  function gridYFromLatitude(lat){
+    return Math.abs(lat)<=EDGE_LAT?R/K*Math.sin(lat*Math.PI/180):
+      Math.sign(lat)*(EDGE_Y+(Math.abs(lat)-EDGE_LAT)*Y_PER_DEG);
+  }
+  function latitudeFromGridY(y){
+    return Math.abs(y)<=EDGE_Y?Math.asin(y*K/R)*180/Math.PI:
+      Math.sign(y)*(EDGE_LAT+(Math.abs(y)-EDGE_Y)/Y_PER_DEG);
+  }
   function blockFor(lat,lng){
     const xx=Math.floor(R*K*lng*Math.PI/180);
-    const yy=Math.floor(R/K*Math.sin(lat*Math.PI/180));
+    const yy=Math.floor(gridYFromLatitude(lat));
     return {x:Math.floor(xx/WORLD.width),y:Math.floor(yy/WORLD.height)};
   }
   function worldGridCorner(x,y){
     const xx=x*WORLD.width,yy=y*WORLD.height;
-    return {lat:Math.asin(Math.max(-1,Math.min(1,yy*K/R)))*180/Math.PI,
-      lng:xx/(R*K)*180/Math.PI};
+    return {lat:latitudeFromGridY(yy),lng:xx/(R*K)*180/Math.PI};
   }
   function pointFromBlock(block){
     const xx=block.x*WORLD.width+WORLD.width/2;
     const yy=block.y*WORLD.height+WORLD.height/2;
-    return {lat:Math.asin(Math.max(-1,Math.min(1,yy*K/R)))*180/Math.PI,
-      lng:xx/(R*K)*180/Math.PI};
+    return {lat:latitudeFromGridY(yy),lng:xx/(R*K)*180/Math.PI};
   }
   function snap(lat,lng){
     return pointFromBlock(blockFor(lat,lng));
@@ -300,7 +310,7 @@
   }
   window.KZWorldRegistry=Object.freeze({
     types:TYPES,info:info,source:source,pointFor:pointFor,
-    blockFor:blockFor,pointFromBlock:pointFromBlock,worldGridCorner:worldGridCorner,
+    blockFor:blockFor,pointFromBlock:pointFromBlock,worldGridCorner:worldGridCorner,gridYFromLatitude,latitudeFromGridY,
     belongs:belongs,regionFor:regionFor,
     regionName:regionName,regionQuotas:quotas,regionNames:REGION_NAMES,
     isLand:isLand,prepare:prepare,layout:layout,frameAt:frameAt,paint:paint,
