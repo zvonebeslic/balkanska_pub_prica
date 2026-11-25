@@ -64,8 +64,18 @@
     return {x,y};
   }
   function focusLocation(x,y) {
-    map.setView(pointAt(x,y),Math.max(12,map.getZoom()),{animate:false});
-    // Obnovljeni broj X/Y na dnu i križić odnose se na isto središte.
+    const target=pointAt(x,y);
+    const beyondEarth=Math.abs(target.lat)>85.0511287798066||Math.abs(target.lng)>180;
+    // A direct coordinate jump must reset the pixel origin, not reuse an animated pan.
+    // A fixed overview zoom keeps small discoveries such as Lotar visible in full.
+    map.stop();
+    map.setView([target.lat,target.lng],beyondEarth?13:Math.max(18,map.getZoom()),{animate:false,reset:true});
+    const actual=currentXY();
+    if(actual.x!==x||actual.y!==y){
+      map.setView([target.lat,target.lng],20,{animate:false,reset:true});
+      const retry=currentXY();
+      if(retry.x!==x||retry.y!==y)throw Error("Karta nije dosegla unesene koordinate. Osvježi stranicu.");
+    }
   }
   function renderList() {
     const box = $("kz-note-list");
@@ -106,7 +116,7 @@
       $("kz-note-x").value = c.x; $("kz-note-y").value = c.y;
     };
     $("kz-note-goto").onclick = () => {
-      try { const {x,y} = xyFromInputs(); focusLocation(x,y); close(); notify("Karta je pomaknuta na unesene koordinate."); }
+      try { const {x,y} = xyFromInputs(); focusLocation(x,y); close(); notify("X "+x+" · Y "+y); }
       catch (error) { notify(error.message); }
     };
     $("kz-note-refresh").onclick = () => loadNotes();
