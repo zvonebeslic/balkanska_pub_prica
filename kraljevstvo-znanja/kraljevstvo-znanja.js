@@ -429,10 +429,32 @@
   }
   function initMap() {
     if (!window.L) throw Error("Karta Leaflet nije učitana");
-    map = L.map("kingdom-map",{zoomControl:true,worldCopyJump:false}).setView([43.5,17.3],7);
+    // Preserve the normal Web Mercator map, but allow fictional discoveries beyond its tile edge.
+    // The projection's original bounds remain unchanged for the real OSM tile grid.
+    const earthlyProjection=L.Projection.SphericalMercator;
+    const extendedProjection=Object.create(earthlyProjection);
+    extendedProjection.project=function(latlng){
+      if(Math.abs(latlng.lat)<=earthlyProjection.MAX_LATITUDE)return earthlyProjection.project(latlng);
+      const lat=Math.max(-89.999999,Math.min(89.999999,latlng.lat))*Math.PI/180;
+      return L.point(this.R*latlng.lng*Math.PI/180,this.R*Math.log(Math.tan(Math.PI/4+lat/2)));
+    };
+    const fantasyCRS=L.extend({},L.CRS.EPSG3857,{projection:extendedProjection});
+    map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false}).setView([43.5,17.3],7);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       minZoom:2,maxZoom:22,maxNativeZoom:19,attribution:'&copy; OpenStreetMap'
     }).addTo(map);
+    // Secret island: use the same X/Y block indices as the visible coordinate counter.
+    const lotarCentre=ll(600652*5+2.5,1832429*4+2);
+    const lotarPoint=extendedProjection.project(L.latLng(lotarCentre.lat,lotarCentre.lng));
+    const halfWidth=250/Math.cos(lotarCentre.lat*Math.PI/180);
+    const halfHeight=halfWidth*2/3;
+    const lotarBounds=L.latLngBounds(
+      extendedProjection.unproject(L.point(lotarPoint.x-halfWidth,lotarPoint.y-halfHeight)),
+      extendedProjection.unproject(L.point(lotarPoint.x+halfWidth,lotarPoint.y+halfHeight))
+    );
+    map.createPane("kz-lotar-pane").style.zIndex="250";
+    map.getPane("kz-lotar-pane").style.pointerEvents="none";
+    L.imageOverlay("./media/lotar.webp",lotarBounds,{pane:"kz-lotar-pane",interactive:false,opacity:1,alt:"Kraljevstvo Lotar"}).addTo(map);
     map._kzCanvasRenderer = L.canvas({ padding: .1 });
     tilesLayer = L.layerGroup().addTo(map);
     blockGridLayer = L.layerGroup().addTo(map);
