@@ -224,8 +224,9 @@
     if (map.getZoom() >= 18) {
       const lo = xy(bounds.getSouth(), bounds.getWest());
       const hi = xy(bounds.getNorth(), bounds.getEast());
-      params = { p_min_x: Math.min(lo.x,hi.x), p_max_x: Math.max(lo.x,hi.x),
-        p_min_y: Math.min(lo.y,hi.y), p_max_y: Math.max(lo.y,hi.y) };
+      const pad=map.getZoom()>=20?5:0; // Neighbor cells just beyond the screen prevent false border walls.
+      params = { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
+        p_min_y: Math.min(lo.y,hi.y)-pad, p_max_y: Math.max(lo.y,hi.y)+pad };
     }
     try {
       const data = await rpc("kz_map", params);
@@ -329,6 +330,52 @@
     paintLivingWorld();
   }
 
+  // Four transparent directional sprites, anchored to the existing territorial grid.
+  const DRY_WALL_URLS=Object.freeze({
+    N:"./media/wall-north.webp?v=1",E:"./media/wall-east.webp?v=1",
+    S:"./media/wall-south.webp?v=1",W:"./media/wall-west.webp?v=1"
+  });
+  let dryWallReady=false;
+  function prepareDryWalls(){
+    Promise.all(Object.values(DRY_WALL_URLS).map(url=>new Promise((resolve,reject)=>{
+      const img=new Image();img.onload=resolve;img.onerror=reject;img.src=url;
+    }))).then(()=>{dryWallReady=true;if(map&&tilesLayer&&borderLayer)drawMap();})
+      .catch(()=>{dryWallReady=false;});
+  }
+  function isDryWallSide(owner,neighbor,side){
+    // Between different realms there is exactly one physical wall; between
+    // cells of the same realm there is no wall at all.
+    return neighbor!==owner&&(neighbor==null||side==="N"||side==="E");
+  }
+  function paintDryWall(side,fixed,from,to){
+    const horizontal=side==="N"||side==="S";
+    const zoom=map.getZoom(),step=horizontal?5:4;
+    // Split merged edges at the original 5 x 4 m block boundaries.
+    // Partial historic cells still receive an accurate, shorter segment.
+    for(let start=from;start<to;){
+      const end=Math.min(to,(Math.floor(start/step)+1)*step);
+      const a=map.project(horizontal?ll(start,fixed):ll(fixed,start),zoom);
+      const b=map.project(horizontal?ll(end,fixed):ll(fixed,end),zoom);
+      const full=map.project(horizontal?ll(start+step,fixed):ll(fixed,start+step),zoom);
+      const length=Math.abs(horizontal?full.x-a.x:full.y-a.y);
+      const thick=Math.max(3,length*(horizontal?.36:.29));
+      const overlap=Math.max(.35,thick*.10);
+      let left,top,right,bottom;
+      if(horizontal){
+        left=Math.min(a.x,b.x)-overlap;right=Math.max(a.x,b.x)+overlap;
+        top=a.y-thick*.78;bottom=a.y+thick*.22;
+      }else{
+        left=a.x-thick*.5;right=a.x+thick*.5;
+        top=Math.min(a.y,b.y)-overlap;bottom=Math.max(a.y,b.y)+overlap;
+      }
+      const bounds=L.latLngBounds(map.unproject(L.point(left,bottom),zoom),map.unproject(L.point(right,top),zoom));
+      L.imageOverlay(DRY_WALL_URLS[side],bounds,{
+        pane:"kz-dry-wall-pane",interactive:false,opacity:1,alt:"",className:"kz-dry-wall",
+        zIndex:horizontal?(side==="S"?3:1):2
+      }).addTo(borderLayer);
+      start=end;
+    }
+  }
   function drawMap() {
     labelsLayer.clearLayers();
     borderLayer.clearLayers();
@@ -362,6 +409,7 @@
       const grid = new Map(cells.map(c => [Number(c.x)+":"+Number(c.y), c.k]));
       // Obrisi se skupljaju u duge, spojene odsječke; nema debelih unutarnjih crta.
       const outline = new Map();
+      const useDryWalls=dryWallReady&&map.getZoom()>=20;
       const edge = (owner, axis, fixed, variable) => {
         const key = owner + "|" + axis + "|" + fixed;
         if (!outline.has(key)) outline.set(key, []);
@@ -379,10 +427,17 @@
           showKingdom(k); // Karta služi samo za pregled; pomicanje i osvajanje su na joysticku.
         }).addTo(tilesLayer);
 
-        if (grid.get((x-1)+":"+y) !== c.k) edge(c.k,"V",x,y);
-        if (grid.get((x+1)+":"+y) !== c.k) edge(c.k,"V",x+1,y);
-        if (grid.get(x+":"+(y-1)) !== c.k) edge(c.k,"H",y,x);
-        if (grid.get(x+":"+(y+1)) !== c.k) edge(c.k,"H",y+1,x);
+        if (useDryWalls) {
+          if(isDryWallSide(c.k,grid.get((x-1)+":"+y),"W"))edge(c.k,"W",x,y);
+          if(isDryWallSide(c.k,grid.get((x+1)+":"+y),"E"))edge(c.k,"E",x+1,y);
+          if(isDryWallSide(c.k,grid.get(x+":"+(y-1)),"S"))edge(c.k,"S",y,x);
+          if(isDryWallSide(c.k,grid.get(x+":"+(y+1)),"N"))edge(c.k,"N",y+1,x);
+        } else {
+          if (grid.get((x-1)+":"+y) !== c.k) edge(c.k,"V",x,y);
+          if (grid.get((x+1)+":"+y) !== c.k) edge(c.k,"V",x+1,y);
+          if (grid.get(x+":"+(y-1)) !== c.k) edge(c.k,"H",y,x);
+          if (grid.get(x+":"+(y+1)) !== c.k) edge(c.k,"H",y+1,x);
+        }
       }
       drawTerritoryLabels(grid, byId);
       for (const [key, offsets] of outline) {
@@ -394,6 +449,7 @@
         if (!sorted.length) continue;
         let begin = sorted[0], last = begin;
         const paint = (a,b) => {
+          if(useDryWalls){paintDryWall(axis,fixed,a,b+1);return;}
           const points = axis === "H"
             ? [ll(a,fixed),ll(b+1,fixed)]
             : [ll(fixed,a),ll(fixed,b+1)];
@@ -479,6 +535,9 @@
     tilesLayer = L.layerGroup().addTo(map);
     blockGridLayer = L.layerGroup().addTo(map);
     borderLayer = L.layerGroup().addTo(map);
+    map.createPane("kz-dry-wall-pane").style.zIndex="430";
+    map.getPane("kz-dry-wall-pane").style.pointerEvents="none";
+    prepareDryWalls();
     labelsLayer = L.layerGroup().addTo(map);
     previewLayer = L.layerGroup().addTo(map);
     lifeLayer = L.layerGroup().addTo(map);
