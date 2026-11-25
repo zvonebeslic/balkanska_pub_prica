@@ -446,7 +446,19 @@
       return L.latLng(Math.sign(point.y)*(edgeLat+(Math.abs(point.y)-edgePoint)/edgeScale),
         point.x/this.R*180/Math.PI);
     };
-    const fantasyCRS=L.extend({},L.CRS.EPSG3857,{projection:extendedProjection});
+    // Explicitly use the extended projection for both directions of every pixel conversion.
+    const fantasyCRS=L.extend({},L.CRS.EPSG3857,{
+      projection:extendedProjection,
+      wrapLng:undefined,
+      latLngToPoint(latlng,zoom){
+        return this.transformation.transform(extendedProjection.project(L.latLng(latlng)),this.scale(zoom));
+      },
+      pointToLatLng(point,zoom){
+        return extendedProjection.unproject(this.transformation.untransform(point,this.scale(zoom)));
+      },
+      project(latlng){return extendedProjection.project(L.latLng(latlng));},
+      unproject(point){return extendedProjection.unproject(point);}
+    });
     map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false}).setView([43.5,17.3],7);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       minZoom:2,maxZoom:22,maxNativeZoom:19,noWrap:true,attribution:'&copy; OpenStreetMap'
