@@ -3,8 +3,8 @@
  */
 (function(){
   "use strict";
-  const ICON=window.KZWorldRegistry.info("iron"),MIN_ZOOM=ICON.minZoom;
-  const OVERVIEW_ZOOM=6; // Udaljene minijature poput hodajućih dvoraca.
+  const ICON=window.KZWorldRegistry.info("iron"),MIN_ZOOM=19;
+  const OVERVIEW_ZOOM=19; // Čuvari su vidljivi samo na detaljnom zumu.
   const FW=ICON.frameWidth,FH=ICON.frameHeight,D2R=Math.PI/180;
   const MAX_MOBILE=ICON.mobileLimit,MAX_DESKTOP=ICON.desktopLimit;
   // Raspored slijedi globalne 5 × 4 m kvadrate i regionalne kvote.
@@ -217,6 +217,7 @@
       ready=true;
       map.on("moveend zoomend",()=>{
         clearTimeout(pendingRefresh);
+        if(map.getZoom()<OVERVIEW_ZOOM){refresh();return;}
         pendingRefresh=setTimeout(refresh,90);
       });
       document.getElementById("map-life-toggle")?.addEventListener("click",refresh);

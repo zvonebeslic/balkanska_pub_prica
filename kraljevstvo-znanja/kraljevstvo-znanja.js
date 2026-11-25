@@ -222,10 +222,10 @@
     mapLoading = true;
     const bounds = map.getBounds();
     let params = {};
-    if (map.getZoom() >= 18) {
+    if (map.getZoom() >= 17) {
       const lo = xy(bounds.getSouth(), bounds.getWest());
       const hi = xy(bounds.getNorth(), bounds.getEast());
-      const pad=map.getZoom()>=20?26:0; // Include five wall blocks beyond the visible edge for tower clearance.
+      const pad=map.getZoom()>=18?26:0; // Include five wall blocks beyond the visible edge for tower clearance.
       params = { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
         p_min_y: Math.min(lo.y,hi.y)-pad, p_max_y: Math.max(lo.y,hi.y)+pad };
     }
@@ -476,7 +476,7 @@
   }
   function currentTerritoryPaintKey(){
     const z=map.getZoom(),ks=kingdoms.map(k=>JSON.stringify(k)).sort();
-    const cs=z>=18?cells.map(c=>c.x+":"+c.y+":"+c.k).sort():[];
+    const cs=z>=17?cells.map(c=>c.x+":"+c.y+":"+c.k).sort():[];
     return JSON.stringify([z,dryWallReady,towerReady,ks,cs]);
   }
   function drawMap() {
@@ -488,7 +488,7 @@
     borderLayer.clearLayers();
     tilesLayer.clearLayers();
     const own = current?.kingdom?.id;
-    const detailed = map.getZoom() >= 18;
+    const detailed = map.getZoom() >= 17;
     const byId = new Map(kingdoms.map(k => [k.id,k]));
 
     if (!detailed) {
@@ -498,7 +498,7 @@
         if (k.anchor_x == null || k.anchor_y == null || Number(k.area) < 1) continue;
         const center = ll(Number(k.anchor_x), Number(k.anchor_y));
         L.circleMarker([center.lat, center.lng], {
-          radius: 8.5, color: "#e9c77b", weight: 3.2, fillColor: k.color,
+          radius: 8.5, stroke:false, fillColor: k.color,
           fillOpacity: 0.96, renderer: map._kzCanvasRenderer
         }).on("click", () => showKingdom(k)).addTo(labelsLayer);
         L.marker([center.lat, center.lng], {
@@ -515,7 +515,8 @@
       const grid = new Map(cells.map(c => [Number(c.x)+":"+Number(c.y), c.k]));
       // Obrisi se skupljaju u duge, spojene odsječke; nema debelih unutarnjih crta.
       const outline = new Map();
-      const useDryWalls=dryWallReady&&map.getZoom()>=20;
+      const showWalls=map.getZoom()>=18;
+      const useDryWalls=dryWallReady&&showWalls;
       const towers=useDryWalls&&towerReady?collectTowerCorners(grid):null;
       for(const rect of mergeTerritoryCells(cells)){
         const k=byId.get(rect.k);
@@ -537,6 +538,7 @@
       for (const c of cells) {
         const x = Number(c.x), y = Number(c.y), k = byId.get(c.k);
         if (!k) continue;
+        if (!showWalls) continue;
         if (useDryWalls) {
           if(isDryWallSide(c.k,grid.get((x-1)+":"+y),"W"))edge(c.k,"W",x,y);
           if(isDryWallSide(c.k,grid.get((x+1)+":"+y),"E"))edge(c.k,"E",x+1,y);
@@ -627,9 +629,9 @@
       project(latlng){return extendedProjection.project(L.latLng(latlng));},
       unproject(point){return extendedProjection.unproject(point);}
     });
-    map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false}).setView([43.5,17.3],7);
+    map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false,minZoom:2,maxZoom:21}).setView([43.5,17.3],7);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      minZoom:2,maxZoom:22,maxNativeZoom:19,noWrap:true,attribution:'&copy; OpenStreetMap'
+      minZoom:2,maxZoom:21,maxNativeZoom:19,noWrap:true,attribution:'&copy; OpenStreetMap'
     }).addTo(map);
     // Secret island: use the same X/Y block indices as the visible coordinate counter.
     const lotarCentre=ll(600652*5+2.5,1832429*4+2);

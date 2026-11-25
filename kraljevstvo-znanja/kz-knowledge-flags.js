@@ -2,7 +2,7 @@
 (function(){
 "use strict";
 let map=null,enabled=true,markers=new Map(),serial=0,poll=0,timer=0,button=null,active=null;
-const TOTAL=97284, MIN_ZOOM=8, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry-clean.webm?v=1",iwo:"./media/Iwo_Jima_popravljena.webm?v=1",astronaut:"./media/astronaut-nepal.webm?v=1"};
+const TOTAL=97284, MIN_ZOOM=19, MEDIA={golf:"./media/zastavica-1.mp4?v=5",corner:"./media/korner-henry-clean.webm?v=1",iwo:"./media/Iwo_Jima_popravljena.webm?v=1",astronaut:"./media/astronaut-nepal.webm?v=1"};
 const videos={},ready={};let lastPaint=0,paintStarted=false;
 const kindOf=f=>f.kind==="astronaut"?"astronaut":f.kind==="iwo"?"iwo":f.kind==="corner"?"corner":"golf";
 const maxQuestions=f=>kindOf(f)==="astronaut"?4:kindOf(f)==="iwo"?3:kindOf(f)==="corner"?2:1;
@@ -143,7 +143,7 @@ async function refresh(){
  try{const rows=await rpc().map(boundsArgs());if(request===serial&&enabled&&map.getZoom()>=MIN_ZOOM)draw(Array.isArray(rows)?rows:[]);}
  catch(e){console.warn("KZ zastavice",e);}
 }
-function schedule(){clearTimeout(timer);timer=setTimeout(refresh,160);}
+function schedule(){clearTimeout(timer);if(map.getZoom()<MIN_ZOOM){refresh();return;}timer=setTimeout(refresh,160);}
 function gpsFix(f){
  return new Promise((resolve,reject)=>{
   if(!window.isSecureContext||!navigator.geolocation){reject(Error("GPS zahtijeva HTTPS i uređaj s lokacijom."));return;}
@@ -255,7 +255,7 @@ function mount(m){
  const toggle=document.getElementById("map-life-toggle");enabled=toggle?.getAttribute("aria-pressed")!=="false";toggle?.addEventListener("click",()=>{enabled=toggle.getAttribute("aria-pressed")!=="false";refresh();});
  const actions=document.querySelector(".map-top .map-actions");
  if(actions){button=el("button","🚩 Zastavice","minor kz-world-locate");button.type="button";button.id="kz-flag-button";
- button.onclick=async()=>{try{if(!enabled)toggle?.click();const rows=await rpc().map(boundsArgs(true));if(rows?.length)map.flyTo([rows[0].lat,rows[0].lng],Math.max(15,map.getZoom()));}catch(e){console.warn(e);}};
+ button.onclick=async()=>{try{if(!enabled)toggle?.click();const rows=await rpc().map(boundsArgs(true));if(rows?.length)map.flyTo([rows[0].lat,rows[0].lng],Math.max(MIN_ZOOM,map.getZoom()));}catch(e){console.warn(e);}};
  actions.insertBefore(button,document.getElementById("kz-iron-button")||actions.firstChild);}
  initVideo();map.on("moveend zoomend",schedule);refresh();poll=setInterval(()=>{if(!document.hidden)refresh();},10000);
 }

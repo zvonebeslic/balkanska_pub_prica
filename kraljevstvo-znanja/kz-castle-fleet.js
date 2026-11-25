@@ -7,8 +7,8 @@
   "use strict";
   const SPEED_KM_SEC=1/1800, EARTH_KM=6371.0088, RAD=Math.PI/180;
   const ICON=window.KZWorldRegistry.info("castle");
-  const FRAME_W=ICON.frameWidth, FRAME_H=ICON.frameHeight, MIN_ZOOM=ICON.minZoom;
-  const OVERVIEW_ZOOM=6; // Small animated castles remain visible while browsing regions.
+  const FRAME_W=ICON.frameWidth, FRAME_H=ICON.frameHeight, MIN_ZOOM=19;
+  const OVERVIEW_ZOOM=19; // Creatures appear only at detailed zoom.
   const MAX_RENDER_MOBILE=26, MAX_RENDER_DESKTOP=44;
   const START_EPOCH=Date.UTC(2026,10,22,17,0,0); // ista pocetna vremenska referenca za sve igrace
   const WAYPOINTS=[[0,0],[200,0],[400,0],[500,0],[525,22],[550,-22],
@@ -486,6 +486,7 @@
       });
       map.on("zoomend moveend",function(){
         clearTimeout(refreshTimer);
+        if(map.getZoom()<OVERVIEW_ZOOM){setVisible();return;}
         refreshTimer=setTimeout(setVisible,100);
       });
       setupButton();

@@ -10,13 +10,13 @@
       id:"castle",label:"Hodajući dvorac",atlasPath:"./media/hodajuci-dvorac-80.webp?v=1",
       frameWidth:192,frameHeight:192,targetFrames:80,
       sourceFormat:"webp",periodMs:2667,
-      mobileLimit:26,desktopLimit:44,minZoom:12,moves:true
+      mobileLimit:26,desktopLimit:44,minZoom:19,moves:true
     }),
     iron:Object.freeze({
       id:"iron",label:"Sir Željeznik",atlasPath:"./media/sir-zeljezni-80.webp?v=1",
       frameWidth:224,frameHeight:224,targetFrames:80,
       sourceFormat:"webp",periodMs:2667,
-      mobileLimit:18,desktopLimit:36,minZoom:12,moves:false
+      mobileLimit:18,desktopLimit:36,minZoom:19,moves:false
     })
 
   });

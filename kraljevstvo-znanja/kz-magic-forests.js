@@ -127,7 +127,7 @@
   // Nikada ne zamjenjuj šumu simboličnim stablima, drugom ilustracijom ili
   // posebnim video-slojem koji bi skakao pri promjeni zuma.
   const POSTER_URL="./media/carobna-suma-300m2-poster.webp?v=2";
-  const NAV_ZOOM=6,REAL_SIZE_ZOOM=20;
+  const NAV_ZOOM=19,REAL_SIZE_ZOOM=20;
   const markers=new Map();
   let map=null,layer=null,pane=null,enabled=true,showTimer=0,supportCached=null;
   let mediaOk=true;
@@ -305,6 +305,7 @@
     }
     map.on("moveend zoomend",()=>{
       clearTimeout(showTimer);
+      if(map.getZoom()<NAV_ZOOM){refresh();return;}
       showTimer=setTimeout(refresh,100);
     });
     refresh();
