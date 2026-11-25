@@ -581,7 +581,7 @@
       return {text:"Za napad se mora dodirivati tvoje kraljevstvo.",kind:"unconnected"};
     if(Number(current?.kingdom?.area||0)>0&&!cursorSpawnMode&&!touching)
       return {text:"Dodirni slobodno mjesto na karti za udaljeno područje.",kind:"unconnected"};
-    if(owners.length===1)return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 40 m².",kind:"attack"};
+    if(owners.length===1)return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
     return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
   }
   function updateCursorPreview() {
@@ -597,16 +597,16 @@
     }
     const status=blockStatus(cursor);
     const bank=Number(current?.kingdom?.bank||0);
-    const cost=status.kind==="attack"?40:20;
+    const cost=status.kind==="attack"?100:20;
     const valid=["free","attack"].includes(status.kind)&&bank>=cost&&(!needsFirstGps()||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
-    if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 40 m²":
+    if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
       status.kind==="free"?"Slobodan blok · 20 m²":
       status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":"Blok je zauzet";
     if(label && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
       btn.textContent="POSTAVI";
-      btn.title=status.kind==="attack"?"Napad: potroši 40 m² za suparnički blok od 20 m²":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.title=status.kind==="attack"?"Napad: potroši 100 m² za suparnički blok od 20 m²":"Zauzmi slobodni blok od 20 m² za 20 m²";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
@@ -636,10 +636,10 @@
     if(needsFirstGps()&&!firstGpsFix){await chooseFirstGps();return;}
     if(!cursor)return;
     const status=blockStatus(cursor);
-    const cost=status.kind==="attack"?40:20;
+    const cost=status.kind==="attack"?100:20;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
-    const question=status.kind==="attack"?"Napasti i preuzeti cijeli suparnički blok od 20 m² za 40 m² s konta?":
+    const question=status.kind==="attack"?"Napasti i preuzeti cijeli suparnički blok od 20 m² za 100 m² s konta?":
       (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
     if(!confirm(needsFirstGps()?"Postaviti prvi blok od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
@@ -942,7 +942,7 @@
     modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 500 m².')+'</p>'+
       '<p>Dok kraljevstvo ima najmanje 500 m², svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m², a napad na puni tuđi blok 40 m² za osvajanje 20 m².</p>');
+      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m², a napad na puni tuđi blok 100 m² za osvajanje 20 m².</p>');
   }
   function renderRequests() {
     const list=current?.requests||[];
