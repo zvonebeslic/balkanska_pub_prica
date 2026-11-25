@@ -222,16 +222,21 @@
     mapLoading = true;
     const bounds = map.getBounds();
     let params = {};
-    if (map.getZoom() >= 17) {
+    const cellParams=()=>{
       const lo = xy(bounds.getSouth(), bounds.getWest());
       const hi = xy(bounds.getNorth(), bounds.getEast());
       const pad=map.getZoom()>=18?26:0; // Include five wall blocks beyond the visible edge for tower clearance.
-      params = { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
+      return { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
         p_min_y: Math.min(lo.y,hi.y)-pad, p_max_y: Math.max(lo.y,hi.y)+pad };
-    }
+    };
+    if(map.getZoom()>=17||overviewNeedsCells(kingdoms))params=cellParams();
     try {
-      const data = await rpc("kz_map", params);
+      let data = await rpc("kz_map", params);
       if (rev !== mapRevision) return;
+      if(params.p_min_x==null&&overviewNeedsCells(data.kingdoms||[])){
+        data=await rpc("kz_map",cellParams());
+        if(rev!==mapRevision)return;
+      }
       kingdoms = data.kingdoms || [];
       window.dispatchEvent(new CustomEvent("kz:kingdoms", {detail:{kingdoms}}));
       cells = data.cells || [];
@@ -244,72 +249,94 @@
     return cells.find(c => Number(c.x) === x && Number(c.y) === y)?.k || null;
   }
 
-  // Položaj naziva određuje se IZ STVARNIH ćelija teritorija, a ne iz osnivačke GPS točke.
-  // Za svako kraljevstvo pronalazi se najdulji vodoravni pojas sa sigurnom marginom
-  // iznad i ispod slova. Time ime ostaje unutar zemlje i pri nepravilnim oblicima.
-  function drawTerritoryLabels(grid, byId) {
-    const zoom = map.getZoom();
-    const pxPerMetre = 256 * Math.pow(2,zoom) / (2*Math.PI*R);
-    const owners = new Map();
-    for (const c of cells) {
-      if (!owners.has(c.k)) owners.set(c.k, []);
+  // Largest fitting horizontal rectangle of actual owned cells, never a bounding box across holes.
+  function labelRectangles(positions,visit){
+    const rows=new Map();
+    for(const [x,y] of positions){
+      if(!rows.has(y))rows.set(y,[]);
+      rows.get(y).push(x);
+    }
+    let previous=new Map(),lastY=null;
+    for(const y of [...rows.keys()].sort((a,b)=>a-b)){
+      const row=rows.get(y).sort((a,b)=>a-b),heights=new Map(),stack=[];
+      if(lastY!==y-1)previous=new Map();
+      let lastX=null;
+      const flush=(x,h)=>{
+        let start=x;
+        while(stack.length&&stack[stack.length-1].h>h){
+          const item=stack.pop();start=item.x;
+          visit({x0:start,x1:x,y0:y+1-item.h,y1:y+1});
+        }
+        if(h&&(!stack.length||stack[stack.length-1].h<h))stack.push({x:start,h});
+      };
+      for(const x of row){
+        if(lastX!==null&&x!==lastX+1)flush(lastX+1,0);
+        const h=(previous.get(x)||0)+1;
+        heights.set(x,h);flush(x,h);lastX=x;
+      }
+      if(lastX!==null)flush(lastX+1,0);
+      previous=heights;lastY=y;
+    }
+  }
+  const labelMeasure=document.createElement("canvas").getContext("2d");
+  const LABEL_FONT="600 100px Arial, sans-serif";
+  function nameWidthRatio(name){
+    if(!labelMeasure)return [...name].length*.65;
+    labelMeasure.font=LABEL_FONT;
+    const m=labelMeasure.measureText(name);
+    return Math.max(m.width,(m.actualBoundingBoxLeft||0)+(m.actualBoundingBoxRight||0))/100;
+  }
+  function labelInk(color){
+    const h=/^#[0-9a-f]{6}$/i.test(color||"")?color:"#808080";
+    const rgb=[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
+    const lum=rgb.map(v=>v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4));
+    return lum[0]*.2126+lum[1]*.7152+lum[2]*.0722>.36?"#111827":"#ffffff";
+  }
+  function drawTerritoryLabels(grid,byId){
+    const zoom=map.getZoom(),owners=new Map();
+    for(const c of cells){
+      if(!owners.has(c.k))owners.set(c.k,[]);
       owners.get(c.k).push([Number(c.x),Number(c.y)]);
     }
-    for (const [id, positions] of owners) {
-      const kingdom = byId.get(id);
-      if (!kingdom || !positions.length) continue;
-      const total = Math.max(1, Number(kingdom.area) || positions.length);
-      // Stvarna površina određuje stil; vidljiva geometrija ograničava širinu.
-      const size = Math.min(34, Math.max(8, 7 + 4.1*Math.log10(total)));
-      const letter = Math.min(7, Math.max(.3, .5 + 1.4*Math.log10(total)));
-      const lines = new Map();
-      for (const [x,y] of positions) {
-        if (!lines.has(y)) lines.set(y, []);
-        lines.get(y).push(x);
-      }
-      let best = null;
-      for (const [y,row] of lines) {
-        row.sort((a,b)=>a-b);
-        let start = row[0], end = row[0];
-        const evaluate = (a,b) => {
-          const width = b-a+1;
-          if (width<2) return;
-          const cx = Math.floor((a+b)/2);
-          // Vertikalni prostor za dvosmjerno iscrtavanje slova.
-          let top = 0, bottom = 0;
-          while (top<24 && grid.get(cx+":"+(y+top+1)) === id) top++;
-          while (bottom<24 && grid.get(cx+":"+(y-bottom-1)) === id) bottom++;
-          const room = Math.min(top,bottom);
-          const score = width * Math.min(1,(room+1)/2) + Math.min(top,bottom)*1.8;
-          if (!best || score>best.score) best={x:cx,y,width,room,score};
-        };
-        for (let i=1;i<row.length;i++) {
-          if (row[i]===end+1) end=row[i];
-          else {evaluate(start,end);start=end=row[i];}
-        }
-        evaluate(start,end);
-      }
-      if (!best) continue;
-      const widthPx = Math.max(0,(best.width-1.4)*pxPerMetre);
-      const heightPx = Math.max(0,(best.room*2+1)*pxPerMetre);
-      const actualFont = Math.min(size, Math.max(7,heightPx*.56));
-      // Tekst se samostalno sužava, ali ga nikad ne širimo izvan granica.
-      const length = [...kingdom.name].length;
-      const measured = length*(actualFont*.63+letter);
-      const scale = Math.min(1.35, widthPx / Math.max(1,measured));
-      if (actualFont < 7 || scale < .36 || widthPx < 22 || heightPx < 9) continue;
-      const center = ll(best.x+.5,best.y+.5);
-      const label = '<div class="territory-ink" style="--kingdom-ink:' + safe(kingdom.color) +
-        ';--ink-size:' + actualFont.toFixed(2) + 'px;--ink-space:' + letter.toFixed(2) +
-        'px;--ink-scale:' + scale.toFixed(3) + ';max-width:' + Math.floor(widthPx) +
-        'px" title="' + safe(kingdom.name) + '"><span>' + safe(kingdom.name) + '</span></div>';
+    for(const [id,positions] of owners){
+      const k=byId.get(id);
+      if(!k||!k.name||!positions.length)continue;
+      const ratio=Math.max(.5,nameWidthRatio(k.name));
+      const cx=positions.reduce((n,p)=>n+p[0]+.5,0)/positions.length;
+      const cy=positions.reduce((n,p)=>n+p[1]+.5,0)/positions.length;
+      let best=null;
+      labelRectangles(positions,r=>{
+        const a=map.project(ll(r.x0,r.y0),zoom),b=map.project(ll(r.x1,r.y1),zoom);
+        const width=Math.abs(b.x-a.x),height=Math.abs(b.y-a.y);
+        const font=Math.min(96,(width-2)*.88/ratio,(height-2)*.72/1.15);
+        if(font<7)return;
+        const x=(r.x0+r.x1)/2,y=(r.y0+r.y1)/2;
+        const distance=(x-cx)**2+(y-cy)**2;
+        if(!best||font>best.font+.01||(Math.abs(font-best.font)<=.01&&distance<best.distance))
+          best={x,y,font,distance};
+      });
+      if(!best)continue;
+      const center=ll(best.x,best.y);
+      const label='<div class="kz-realm-name" style="font-size:'+Math.floor(best.font*10)/10+'px;color:'+labelInk(k.color)+'">'+safe(k.name)+'</div>';
       L.marker([center.lat,center.lng],{
-        icon:L.divIcon({className:"territory-ink-holder",html:label,iconSize:[1,1],iconAnchor:[0,0]}),
-        keyboard:false,zIndexOffset:700
-      }).on("click",()=>showKingdom(kingdom)).addTo(labelsLayer);
+        icon:L.divIcon({className:"territory-ink-holder",html:label,iconSize:[0,0],iconAnchor:[0,0]}),
+        interactive:false,keyboard:false,zIndexOffset:700
+      }).addTo(labelsLayer);
     }
   }
 
+  // At overview zooms only request real geometry when some kingdom could fit a legible name.
+  function overviewNeedsCells(list){
+    const zoom=map.getZoom(),bounds=map.getBounds();
+    return list.some(k=>{
+      if(k.anchor_x==null||k.anchor_y==null||!k.name||!k.area)return false;
+      const p=ll(Number(k.anchor_x),Number(k.anchor_y));
+      if(!bounds.pad(.5).contains(p))return false;
+      const a=map.project(p,zoom),b=map.project(ll(Number(k.anchor_x)+1,Number(k.anchor_y)+1),zoom);
+      const pixelArea=Math.abs((b.x-a.x)*(b.y-a.y))*Number(k.area);
+      return pixelArea>=7*7*1.15*Math.max(.5,nameWidthRatio(k.name));
+    });
+  }
 
   // Ručno crtani, originalni SVG likovi, bez vanjskih animacijskih biblioteka.
   // Ovaj sloj je samo dekoracija i ne sudjeluje u osvajanjima ili GPS-u.
@@ -476,7 +503,7 @@
   }
   function currentTerritoryPaintKey(){
     const z=map.getZoom(),ks=kingdoms.map(k=>JSON.stringify(k)).sort();
-    const cs=z>=17?cells.map(c=>c.x+":"+c.y+":"+c.k).sort():[];
+    const cs=cells.map(c=>c.x+":"+c.y+":"+c.k).sort();
     return JSON.stringify([z,dryWallReady,towerReady,ks,cs]);
   }
   function drawMap() {
@@ -492,10 +519,11 @@
     const byId = new Map(kingdoms.map(k => [k.id,k]));
 
     if (!detailed) {
+      const represented=new Set(cells.map(c=>c.k));
       // Na regionalnom prikazu stvarni kvadrat od 1 m² ne može biti čitljiv:
       // čuva se precizna oznaka položaja bez glumljenja većeg teritorija.
       for (const k of kingdoms) {
-        if (k.anchor_x == null || k.anchor_y == null || Number(k.area) < 1) continue;
+        if (represented.has(k.id)||k.anchor_x == null || k.anchor_y == null || Number(k.area) < 1) continue;
         const center = ll(Number(k.anchor_x), Number(k.anchor_y));
         L.circleMarker([center.lat, center.lng], {
           radius: 8.5, stroke:false, fillColor: k.color,
@@ -504,7 +532,7 @@
       }
     }
 
-    if (detailed) {
+    if (detailed||cells.length) {
       const grid = new Map(cells.map(c => [Number(c.x)+":"+Number(c.y), c.k]));
       // Obrisi se skupljaju u duge, spojene odsječke; nema debelih unutarnjih crta.
       const outline = new Map();
@@ -544,7 +572,7 @@
           if (grid.get(x+":"+(y+1)) !== c.k) edge(c.k,"H",y+1,x);
         }
       }
-      if(showWalls)drawTerritoryLabels(grid, byId);
+      drawTerritoryLabels(grid, byId);
       for (const [key, offsets] of outline) {
         const [id, axis, fixedStr] = key.split("|");
         const k = byId.get(id);

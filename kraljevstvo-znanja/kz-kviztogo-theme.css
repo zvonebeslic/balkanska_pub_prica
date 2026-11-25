@@ -83,3 +83,6 @@ body{background:var(--bg)!important;color:var(--white)}
 .kz-saved-coord-glyph{background:var(--kz-blue-dark);border-color:#9ec5ff;color:#fff}
 .kz-note-popup,.kz-note-popup small{color:var(--white)}
 .kz-note-popup small{color:var(--muted)}
+
+/* Plain map labels: no shadow, outline, stretching, badge or uppercase transform. */
+.kz-realm-name{position:absolute;left:0;top:0;transform:translate(-50%,-50%);width:max-content;white-space:nowrap;font-family:Arial,sans-serif;font-weight:600;line-height:1.15;letter-spacing:0;text-align:center;text-transform:none;text-shadow:none;filter:none;-webkit-text-stroke:0;pointer-events:none;background:none;border:0;padding:0;box-shadow:none}
