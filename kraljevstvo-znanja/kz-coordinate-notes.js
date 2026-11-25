@@ -58,8 +58,8 @@
     }
     const x = Number(xValue), y = Number(yValue);
     if (!Number.isSafeInteger(x) || !Number.isSafeInteger(y) ||
-      x < -3500000 || x > 3500000 || y < -1800000 || y > 1800000) {
-      throw Error("Koordinate su izvan dopuštenog raspona karte.");
+      Math.abs(x) > 10000000000 || Math.abs(y) > 10000000000) {
+      throw Error("Broj je prevelik za precizan prikaz karte.");
     }
     return {x,y};
   }
@@ -106,7 +106,7 @@
       $("kz-note-x").value = c.x; $("kz-note-y").value = c.y;
     };
     $("kz-note-goto").onclick = () => {
-      try { const {x,y} = xyFromInputs(); focusLocation(x,y); notify("Karta je pomaknuta na unesene koordinate."); }
+      try { const {x,y} = xyFromInputs(); focusLocation(x,y); close(); notify("Karta je pomaknuta na unesene koordinate."); }
       catch (error) { notify(error.message); }
     };
     $("kz-note-refresh").onclick = () => loadNotes();
