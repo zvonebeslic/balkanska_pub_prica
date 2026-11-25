@@ -510,7 +510,7 @@ body{background:
 
 /* Compact bottom-centred map joystick; keep POSTAVI inside the central button. */
 #joystick-panel{left:50%;right:auto;bottom:12px;transform:translateX(-50%);align-items:center;gap:4px;padding:5px;max-width:156px;box-sizing:border-box}
-#joystick-panel .joystick-dpad{width:118px;height:118px;box-sizing:border-box;padding:4px;gap:2px;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1fr)}
+#joystick-panel .joystick-dpad{width:118px;height:118px;box-sizing:border-box;padding:4px;gap:2px;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr))}
 #joystick-panel .joystick-dpad button{box-sizing:border-box;min-height:0;min-width:0;font-size:16px}
 #joystick-panel #claim-block.joy-place{display:flex;align-items:center;justify-content:center;min-height:0;min-width:0;width:100%;height:100%;box-sizing:border-box;padding:0 1px;white-space:nowrap;overflow:hidden;font-family:Arial,sans-serif;font-size:7.5px;font-weight:800;letter-spacing:-.35px;line-height:1;text-align:center}
 #joystick-panel .joystick-meta{max-width:144px;text-align:center;gap:3px}
@@ -548,3 +548,8 @@ body{background:
 .site-header .brand-logo .logo-go{color:#22c55e;text-shadow:none}
 .intro h1{color:#ffffff;text-shadow:0 2px 3px #03131d,0 4px 16px #0007}
 .intro h1 span{color:#ffffff;text-shadow:0 2px 3px #03131d,0 4px 16px #0007}
+
+/* Four equally sized joystick direction buttons. */
+#joystick-panel .joystick-dpad button[data-joy]{width:100%;height:100%;border-radius:50% 50% 12px 12px}
+#joystick-panel #claim-block.joy-place{padding:0;letter-spacing:-.35px;font-size:7px}
+@media(max-width:620px){#joystick-panel #claim-block.joy-place{font-size:6px}}
