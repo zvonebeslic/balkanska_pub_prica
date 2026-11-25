@@ -1,0 +1,85 @@
+/* KvizToGo palette preview. Remove this stylesheet link to restore the fantasy colors.
+   Colors match the home page. Layout, user territory colors and game logic are untouched. */
+:root{
+ --bg:#0b1220;--card:#162235;--soft:#101b2d;--blue:#2f80ff;--green:#22c55e;
+ --muted:#a8b3c7;--border:rgba(148,163,184,.22);--white:#f5f7fb;
+ --kz-blue-dark:#1d5fd6;--kz-blue-soft:rgba(47,128,255,.18);--kz-green-soft:rgba(34,197,94,.16);
+ --kz-red:#ef4444;--kz-yellow:#facc15;
+}
+body{background:var(--bg)!important;color:var(--white)}
+.site-header{background:#000;border-color:var(--border);box-shadow:0 10px 26px #0004}
+.header-circle{background:var(--soft);border-color:var(--border);box-shadow:none;color:var(--white)}
+.header-circle:hover{border-color:var(--blue);box-shadow:0 0 12px #2f80ff33}
+.intro:before{background:radial-gradient(ellipse at 50% 0%,#2f80ff18,transparent 70%)}
+.intro h1,.intro h1 span{color:#fff;text-shadow:0 3px 12px #0007}
+.eyebrow{background:var(--kz-blue-soft);border-color:#2f80ff66;color:var(--white)}
+.intro p{color:var(--muted)}
+.battle-motto{color:#9ec5ff}
+.map-panel{background:var(--card);border-color:#2f80ff66;box-shadow:0 18px 45px #0006,0 0 0 1px #2f80ff18}
+.map-panel:before,.map-top:after{color:#9ec5ff;text-shadow:none}
+.map-top,.map-bottom{background:var(--card);border-color:var(--border);color:var(--muted)}
+.map-top strong,.map-top small{color:var(--white);text-shadow:none}
+.map-actions .minor,.minor,.secondary{background:var(--kz-blue-soft);border-color:#2f80ff66;color:var(--white);box-shadow:none}
+.map-actions .minor:not(:disabled):hover,.minor:hover,.secondary:hover{background:#2f80ff35;border-color:var(--blue)}
+.map-stage,#kingdom-map{background:var(--soft)}
+.map-stage:after{box-shadow:inset 0 0 0 1px #2f80ff33,inset 0 0 30px #0b122077;background:linear-gradient(to bottom,#0b122033,transparent 20%,transparent 80%,#0b122033)}
+#kingdom-map .leaflet-control-zoom{border-color:#2f80ff66}
+#kingdom-map .leaflet-control-zoom a{background:var(--card);color:var(--white);border-color:var(--border)}
+#kingdom-map .leaflet-control-zoom a:hover{background:var(--kz-blue-dark);color:white}
+#kingdom-map .leaflet-control-attribution{background:#0b1220db;color:var(--muted)}
+#kingdom-map .leaflet-control-attribution a{color:#9ec5ff}
+.fantasy-map-crest,.fantasy-map-compass{border-color:#2f80ff88;background:linear-gradient(145deg,#162235f5,#101b2de6);box-shadow:0 4px 17px #0008;color:var(--white)}
+.fantasy-map-crest strong{color:var(--white)}
+.fantasy-map-crest small{color:#7af1a5}
+.compass-rose{color:#9ec5ff;text-shadow:0 0 10px #2f80ff88}
+.kz-map-xy{background:#0b1220d9;color:var(--white)}
+.realm-map-pin span{background:#101b2df2;color:var(--white);border-color:var(--border);border-left-color:var(--realm-color);box-shadow:0 4px 13px #0009}
+.territory-ink{color:white}
+.territory-ink span{-webkit-text-stroke:.7px #0b1220;text-shadow:0 2px 4px #000,0 0 10px var(--kingdom-ink)}
+.cursor-badge b{border-color:#22c55e;color:white;background:#14532d;box-shadow:0 0 12px #22c55e66;text-shadow:none}
+#joystick-panel{background:linear-gradient(145deg,#162235f5,#101b2df5);border-color:#2f80ff99;box-shadow:0 8px 24px #0009}
+#joystick-panel .joystick-dpad{background:radial-gradient(circle,#1e3a5f,#101b2d 72%);border-color:#2f80ff66;box-shadow:inset 0 0 12px #0006}
+#joystick-panel .joystick-dpad button[data-joy]{background:linear-gradient(150deg,#244778,#162235);border-color:#2f80ff88;color:white;text-shadow:none;box-shadow:0 2px 5px #0006}
+#joystick-panel .joystick-dpad button[data-joy]:active{background:var(--blue);box-shadow:0 0 10px #2f80ff66}
+#joystick-panel #claim-block.joy-place{background:radial-gradient(circle at 35% 25%,#22c55e,#15803d 70%);border-color:#86efac;color:white;box-shadow:0 0 9px #22c55e66;text-shadow:0 1px 2px #14532d}
+#joystick-panel #claim-block.joy-place:disabled{background:#334155;border-color:#64748b;box-shadow:none;color:var(--muted)}
+#joystick-panel .joystick-meta #cursor-status{color:var(--white)}
+.stat-card,.realm-identity,.play-card,.create-panel,.actions-card,.notifications,.tips,.shape-tool{background:var(--card);border-color:var(--border);box-shadow:0 10px 26px #0004}
+.stat-card::before{background:linear-gradient(90deg,transparent,#2f80ff99,transparent)}
+.realm-identity::before{background:linear-gradient(90deg,transparent,#22c55e99,transparent)}
+.realm-identity{border-color:#22c55e66}
+.realm-identity strong,.play-card h2,.create-panel h2,.actions-card h2,.notifications h2{color:var(--white)}
+.realm-identity b{color:#7af1a5;text-shadow:none}
+.stat-card span,.realm-identity span{color:var(--muted)}
+.stat-card:hover{background:#1e3049}
+.primary,.play-card .primary,.play-card .primary:not(:disabled){background:var(--blue);border-color:var(--blue);color:white;box-shadow:0 6px 22px #2f80ff33}
+.primary:hover:not(:disabled),.play-card .primary:not(:disabled):hover{background:var(--kz-blue-dark);border-color:var(--blue);box-shadow:0 7px 22px #2f80ff55}
+.ready{background:#facc151a;border-color:#facc1580;color:var(--kz-yellow)}
+.ready.on{background:var(--kz-green-soft);border-color:#22c55e99;color:#7af1a5;box-shadow:none}
+.dialog,.kz-fleet-card{background:var(--card);border-color:#2f80ff88;box-shadow:0 18px 45px #0009;color:var(--white)}
+.dialog-top{border-color:var(--border)}
+.dialog-top h2,.kz-fleet-card h2,.kz-fleet-close{color:var(--white)}
+.dialog p,.kz-fleet-description,.kz-fleet-quota,.kz-fleet-message{color:var(--muted)}
+.kz-fleet-gps-status{color:#86efac}
+.kz-fleet-gps-enable,.kz-fleet-attack,.kz-fleet-next{background:var(--blue);border-color:var(--blue);color:#fff}
+.kz-fleet-gps-enable:hover:not(:disabled),.kz-fleet-attack:hover:not(:disabled),.kz-fleet-next:hover{background:var(--kz-blue-dark)}
+.kz-fleet-choice,.option,.kz-answer-list .option{background:var(--soft);border-color:var(--border);color:var(--white)}
+.kz-fleet-choice:hover:not(:disabled),.option:hover{background:#2f80ff24;border-color:var(--blue)}
+.option.correct,.kz-answer-list .option.correct,#kz-flag-battle .kz-fleet-choice[data-state=correct]{background:#22c55e26;border-color:var(--green);color:#bbf7d0}
+.option.wrong,.kz-answer-list .option.wrong,#kz-flag-battle .kz-fleet-choice[data-state=wrong]{background:#ef444426;border-color:var(--kz-red);color:#fecaca}
+.kz-fleet-health{background:#ef444420;border-color:#ef444477}
+.kz-fleet-health span{background:linear-gradient(90deg,#ef4444,#facc15)}
+.kz-question-area,.kz-history,.kz-history-item,.kz-history-game,.kz-feedback-box,.member,.notifications #mail-list>div,.notifications #requests-list>div,.outcome{background:var(--soft);border-color:var(--border)}
+.kz-history-item.correct{border-left-color:var(--green)}
+.kz-history-item.incorrect{border-left-color:var(--kz-red)}
+.kz-final-score{background:var(--kz-green-soft);border-color:#22c55e66}
+.kz-current-score{background:var(--kz-green-soft);color:#bbf7d0}
+.kz-note-panel .kz-note-muted,#kz-note-form label,.kz-note-item-text small{color:var(--muted)}
+#kz-note-form input,#kz-note-form textarea,.kz-note-item,#realm-color-picker{background:var(--soft);border-color:var(--border);color:var(--white)}
+.kz-note-shortcuts button,.kz-note-item-actions button,.kz-note-heading button{background:var(--kz-blue-soft);border-color:#2f80ff66;color:var(--white)}
+.kz-note-heading{border-color:var(--border)}
+.kz-note-heading h3,.kz-note-item-text b{color:var(--white)}
+.kz-note-item-actions .kz-note-delete{background:#ef444426;border-color:#ef444477;color:#fecaca}
+.kz-saved-coord-glyph{background:var(--kz-blue-dark);border-color:#9ec5ff;color:#fff}
+.kz-note-popup,.kz-note-popup small{color:var(--white)}
+.kz-note-popup small{color:var(--muted)}
