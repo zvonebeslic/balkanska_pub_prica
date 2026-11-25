@@ -224,7 +224,7 @@
     if (map.getZoom() >= 18) {
       const lo = xy(bounds.getSouth(), bounds.getWest());
       const hi = xy(bounds.getNorth(), bounds.getEast());
-      const pad=map.getZoom()>=20?5:0; // Neighbor cells just beyond the screen prevent false border walls.
+      const pad=map.getZoom()>=20?26:0; // Include five wall blocks beyond the visible edge for tower clearance.
       params = { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
         p_min_y: Math.min(lo.y,hi.y)-pad, p_max_y: Math.max(lo.y,hi.y)+pad };
     }
@@ -360,11 +360,18 @@
     }
     return towers;
   }
-  // Fixed grid phase keeps every fifth block joint stable even during panning.
+  // A straight tower requires five complete wall blocks in BOTH directions.
+  // Existing corner towers and previously placed straight towers are mandatory clearance points.
   function addStraightTowerJoints(towers,side,fixed,from,to){
-    const horizontal=side==="N"||side==="S",step=horizontal?25:20;
-    for(let v=(Math.floor(from/step)+1)*step;v<to;v+=step){
-      towers.add(horizontal?v+":"+fixed:fixed+":"+v);
+    const horizontal=side==="N"||side==="S",block=horizontal?5:4,clearance=block*5;
+    const keyAt=v=>horizontal?v+":"+fixed:fixed+":"+v;
+    if(to-from<2*clearance)return;
+    for(let v=Math.ceil((from+clearance)/block)*block;v<=to-clearance;v+=block){
+      let clear=true;
+      for(let d=1-clearance;d<clearance;d++){
+        if(towers.has(keyAt(v+d))){clear=false;break;}
+      }
+      if(clear)towers.add(keyAt(v));
     }
   }
   function paintTower(key){
