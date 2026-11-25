@@ -557,3 +557,11 @@ body{background:
 /* Center the kingdom and territory counters below the map. */
 .map-bottom{justify-content:center;text-align:center}
 .map-bottom #map-count{width:100%;text-align:center}
+
+/* Keep the small introductory KvizToGo wordmark in the original brand palette. */
+.intro .eyebrow{align-items:baseline}
+.intro .eyebrow .eyebrow-brand{text-transform:none;letter-spacing:-.025em;font-weight:900;white-space:nowrap}
+.intro .eyebrow .logo-kviz{color:#ffffff}
+.intro .eyebrow .logo-to{color:#2f80ff}
+.intro .eyebrow .logo-go{color:#22c55e}
+.intro .eyebrow .eyebrow-caption{margin-left:.45em}
