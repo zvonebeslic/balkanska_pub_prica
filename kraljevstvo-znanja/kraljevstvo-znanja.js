@@ -1005,7 +1005,7 @@
     if(btn) {
       btn.disabled=!valid;
       btn.textContent=status.kind==="attack"?"NAPADNI":"POSTAVI";
-      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 3 točna od najviše 8 pitanja":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 1 točan ako je protivničko konto prazno, inače 3":"Zauzmi slobodni blok od 20 m² za 20 m²";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
@@ -1039,7 +1039,7 @@
     const cost=status.kind==="attack"?100:20;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
-    const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Osvoji blok s 3 točna odgovora od najviše 8 pitanja. Točan odgovor: protivnik gubi 20 m². Pogrešan ili istek: tvoje kraljevstvo gubi 20 m². Pobjeda vraća 100 m².":
+    const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Osvoji blok s 1 točnim odgovorom ako je protivničko konto prazno na početku napada, inače s 3 točna. Najviše 8 pitanja. Točan odgovor: protivnik gubi 20 m². Pogrešan ili istek: tvoje kraljevstvo gubi 20 m². Pobjeda vraća 100 m².":
       (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
     if(!confirm(needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
@@ -1085,7 +1085,7 @@
   }
   function duelSummary(q){
     const dots=Array.from({length:8},(_,i)=>i<q.hits?"✓":i<q.hits+q.misses?"✗":"·");
-    return '<div class="kz-current-score">Točni '+q.hits+' / 3 · Netočni '+q.misses+
+    return '<div class="kz-current-score">Točni '+q.hits+' / '+(q.required_hits||3)+' · Netočni '+q.misses+
       '</div><p class="quiz-progress">'+dots.join(" &nbsp; ")+'</p>'+
       '<p>Tvoje konto: −'+formatArea(100+Number(q.attack_loss||0))+
       ' (s ulogom)<br>Protivničko konto: −'+formatArea(q.defense_loss)+'</p>';
@@ -1096,7 +1096,7 @@
       territoryDuel=null;setDuelResume(false);
       const won=q.status==="won";
       modal(won?"⚔ Blok osvojen!":q.status==="invalid"?"Okršaj prekinut":"Napad odbijen",
-        '<div class="kz-final-score"><strong>'+q.hits+' / 3</strong><span>točnih odgovora</span>'+
+        '<div class="kz-final-score"><strong>'+q.hits+' / '+(q.required_hits||3)+'</strong><span>točnih odgovora</span>'+
         (won?'<b>+100 m² na konto · +20 m² teritorija</b>':q.status==="invalid"?'<b>Ulog 100 m² vraćen</b>':'<b>Ulog 100 m² izgubljen</b>')+
         '</div>'+duelSummary(q)+'<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
       $("kz-duel-close").onclick=closeModal;
@@ -1105,7 +1105,7 @@
     const session={q,busy:false,done:false,timer:null,deadline:Date.now()+Math.max(0,Number(q.remaining_ms)||0)};
     territoryDuel=session;setDuelResume(true);
     modal("⚔ Okršaj znanja",'<div class="quiz-progress">PITANJE '+q.position+' / 8 · ULOG 100 m²</div>'+
-      duelSummary(q)+'<p id="kz-duel-clock" class="kz-question-clock" role="timer"></p>'+
+      (q.required_hits===1?'<p class="member-meta">Protivničko konto je prazno na početku napada. Dovoljan je 1 točan odgovor.</p>':'')+duelSummary(q)+'<p id="kz-duel-clock" class="kz-question-clock" role="timer"></p>'+
       '<p class="quiz-question">'+safe(q.prompt)+'</p>'+
       (q.image?'<img class="question-image" src="'+safe(q.image)+'" alt="Slika uz pitanje">':'')+
       '<div class="kz-answer-list">'+["A","B","C"].map(key=>'<button class="option" data-duel-answer="'+key+'">'+key+') '+safe(q.options?.[key]||"")+'</button>').join("")+'</div>'+
@@ -1434,7 +1434,7 @@
     modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 500 m².')+'</p>'+
       '<p>Dok kraljevstvo ima najmanje 500 m², svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m². Okršaj za tuđi blok ima ulog 100 m² i najviše 8 pitanja. Treći točan odgovor osvaja blok i vraća 100 m²; svaki odgovor skida do 20 m² s konta odgovarajućeg kraljevstva.</p>');
+      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m². Okršaj za tuđi blok ima ulog 100 m² i najviše 8 pitanja. Ako je protivničko konto na početku napada prazno, dovoljan je jedan točan odgovor; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m²; svaki odgovor skida do 20 m² s konta odgovarajućeg kraljevstva.</p>');
   }
   function renderRequests() {
     const list=current?.requests||[];
