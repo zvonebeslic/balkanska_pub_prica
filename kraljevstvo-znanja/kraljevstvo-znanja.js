@@ -662,7 +662,7 @@
       arrow.style.transform=`translate(-50%,-50%) rotate(${heading}deg)`;
       arrow.setAttribute("aria-pressed",String(running));
       const names=["sjever","sjeveroistok","istok","jugoistok","jug","jugozapad","zapad","sjeverozapad"];
-      const label=(running?"Zaustavi putovanje":"Pokreni putovanje")+" · "+names[Math.round(heading/45)%8]+" · povuci za promjenu smjera";
+      const label="Drži za putovanje · "+names[Math.round(heading/45)%8]+" · povuci za smjer, pusti za zaustavljanje";
       arrow.setAttribute("aria-label",label);arrow.title=label;
     }
     function stopTravel(){
@@ -702,6 +702,7 @@
       e.preventDefault();e.stopPropagation();
       gesture={id:e.pointerId,x:e.clientX,y:e.clientY,dragged:false};
       arrow.setPointerCapture(e.pointerId);
+      startTravel();
     });
     arrow.addEventListener("pointermove",e=>{
       if(!gesture||gesture.id!==e.pointerId)return;
@@ -710,27 +711,27 @@
       const r=compass.getBoundingClientRect(),dx=e.clientX-r.left-r.width/2,dy=e.clientY-r.top-r.height/2;
       if(Math.hypot(dx,dy)<8)return;
       steer(Math.atan2(dx,-dy)*180/Math.PI);
-      if(!running)startTravel();
     });
     arrow.addEventListener("pointerup",e=>{
       if(!gesture||gesture.id!==e.pointerId)return;
       e.preventDefault();e.stopPropagation();
-      const dragged=gesture.dragged;gesture=null;
-      if(!dragged){if(running)stopTravel();else startTravel();}
+      gesture=null;stopTravel();
     });
     const cancelGesture=()=>{gesture=null;stopTravel();};
     arrow.addEventListener("pointercancel",cancelGesture);
     arrow.addEventListener("lostpointercapture",()=>{if(gesture)cancelGesture();});
-    arrow.addEventListener("click",e=>{
-      e.stopPropagation();
-      // Keyboard and assistive-technology activation has no pointer click count.
-      if(e.detail===0){if(running)stopTravel();else startTravel();}
-    });
+    arrow.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();});
     arrow.addEventListener("keydown",e=>{
       if(e.key==="Escape"){e.preventDefault();stopTravel();return;}
+      if(e.key===" "||e.key==="Enter"){e.preventDefault();if(!e.repeat)startTravel();return;}
       const turns={ArrowUp:0,ArrowRight:90,ArrowDown:180,ArrowLeft:270};
       if(Object.prototype.hasOwnProperty.call(turns,e.key)){e.preventDefault();steer(turns[e.key]);}
     });
+    arrow.addEventListener("keyup",e=>{
+      if(e.key===" "||e.key==="Enter"){e.preventDefault();stopTravel();}
+    });
+    arrow.addEventListener("blur",stopTravel);
+    window.addEventListener("blur",cancelGesture);
     map.getContainer().addEventListener("pointerdown",stopTravel,{capture:true});
     map.getContainer().addEventListener("wheel",stopTravel,{capture:true,passive:true});
     map.on("zoomstart dragstart",stopTravel);
