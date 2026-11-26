@@ -139,7 +139,7 @@ begin
          or (c.y=p_y-1 and c.x between p_x and p_x+9)
          or (c.y=p_y+8 and c.x between p_x and p_x+9))
    ) then raise exception 'Napad mora dodirivati tvoju granicu'; end if;
-   if v_enemy_count<>80 then raise exception 'Za napad izaberi cijeli suparnički blok od 80 m²'; end if;
+   if v_enemy_count<>80 then raise exception 'Za napad izaberi cijeli suparnički blok od 20 m²'; end if;
    select kingdom_id into v_enemy from public.kz_cells
      where x between p_x and p_x+9 and y between p_y and p_y+7 limit 1;
    if (select count(distinct kingdom_id) from public.kz_cells
@@ -204,7 +204,7 @@ begin
    if exists(select 1 from kz_private.territory_duels x where x.x=p_x and x.y=p_y and x.status='active') then raise exception 'Na tom bloku već traje okršaj';end if;
    select c.kingdom_id,count(*) into enemy,enemy_count from public.kz_cells c
     where c.x between p_x and p_x+9 and c.y between p_y and p_y+7 group by c.kingdom_id order by count(*) desc limit 1;
-   if enemy is null or enemy=realm or enemy_count<>80 then raise exception 'Odaberi cijeli protivnički blok od 80 m²';end if;
+   if enemy is null or enemy=realm or enemy_count<>80 then raise exception 'Odaberi cijeli protivnički blok od 20 m²';end if;
    if not exists(select 1 from public.kz_cells c where c.kingdom_id=realm and
       ((c.x in(p_x-1,p_x+10) and c.y between p_y and p_y+7) or (c.y in(p_y-1,p_y+8) and c.x between p_x and p_x+9))) then raise exception 'Napad mora dodirivati tvoju granicu';end if;
    perform 1 from public.kz_kingdoms where id in(realm,enemy) order by id for update;
