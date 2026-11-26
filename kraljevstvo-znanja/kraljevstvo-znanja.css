@@ -574,3 +574,14 @@ body{background:
 #joystick-panel .joystick-dpad .joy-down{--joy-angle:180deg}
 #joystick-panel .joystick-dpad .joy-left{--joy-angle:270deg}
 @media(max-width:620px){#joystick-panel .joystick-dpad button[data-joy]::before{width:18px;height:18px}}
+
+/* Compass autopan: the small arrow orbits a stationary compass rose. */
+#kz-travel-compass{top:24px;right:24px;overflow:visible}
+#kz-travel-compass .kz-compass-arrow{position:absolute;left:50%;top:-5px;transform:translate(-50%,-50%);width:34px;height:34px;display:grid;place-items:center;pointer-events:auto;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:grab;background:transparent;border:0;padding:0;box-shadow:none;border-radius:50%;z-index:1;}
+.kz-compass-arrow svg{width:15px;height:19px;overflow:visible;pointer-events:none;filter:drop-shadow(0 1px 2px #000a)}
+.kz-compass-arrow svg path{fill:#f76c38;stroke:#ffc28a;stroke-width:1.2;stroke-linejoin:round}
+.kz-compass-arrow[aria-pressed="true"] svg{filter:drop-shadow(0 0 5px #ff743c) drop-shadow(0 1px 2px #000a)}
+.kz-compass-arrow[aria-pressed="true"] svg path{fill:#ff8b45;stroke:#ffe0ad}
+.kz-compass-arrow:active{cursor:grabbing}
+.kz-compass-arrow:focus-visible{outline:2px solid #ff985e;outline-offset:-4px}
+@media(max-width:600px){#kz-travel-compass{top:21px;right:21px}}

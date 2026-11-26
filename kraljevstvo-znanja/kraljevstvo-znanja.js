@@ -650,6 +650,99 @@
     const element=$("kz-map-xy");
     if(element)element.textContent="X "+gridX+" · Y "+gridY;
   }
+  function setupCompassTravel(){
+    const compass=$("kz-travel-compass"),arrow=$("kz-compass-arrow");
+    if(!compass||!arrow)return;
+    let heading=0,running=false,timer=null,gesture=null,lastSteer=0;
+    const radians=()=>heading*Math.PI/180;
+    function positionArrow(){
+      const radius=compass.clientWidth/2+5;
+      arrow.style.left=`calc(50% + ${Math.sin(radians())*radius}px)`;
+      arrow.style.top=`calc(50% + ${-Math.cos(radians())*radius}px)`;
+      arrow.style.transform=`translate(-50%,-50%) rotate(${heading}deg)`;
+      arrow.setAttribute("aria-pressed",String(running));
+      const names=["sjever","sjeveroistok","istok","jugoistok","jug","jugozapad","zapad","sjeverozapad"];
+      const label=(running?"Zaustavi putovanje":"Pokreni putovanje")+" · "+names[Math.round(heading/45)%8]+" · povuci za promjenu smjera";
+      arrow.setAttribute("aria-label",label);arrow.title=label;
+    }
+    function stopTravel(){
+      if(!running)return;
+      running=false;clearTimeout(timer);timer=null;map.stop();positionArrow();
+    }
+    function travelStep(){
+      if(!running)return;
+      if(document.hidden){stopTravel();return;}
+      const zoom=map.getZoom(),center=map.project(map.getCenter(),zoom);
+      const speed=Math.max(350,Math.min(850,Math.max(map.getSize().x,map.getSize().y)*1.15));
+      const distance=speed*.75;
+      const target=L.point(center.x+Math.sin(radians())*distance,center.y-Math.cos(radians())*distance);
+      // Keep the traveller within the extended fantasy world's geographic extent.
+      const nw=map.project([90,-180],zoom),se=map.project([-90,180],zoom);
+      target.x=Math.max(nw.x,Math.min(se.x,target.x));
+      target.y=Math.max(nw.y,Math.min(se.y,target.y));
+      const offset=target.subtract(center).round();
+      if(!offset.x&&!offset.y){stopTravel();return;}
+      map.panBy(offset,{animate:true,duration:.75,easeLinearity:1});
+      timer=setTimeout(travelStep,790);
+    }
+    function startTravel(){
+      if(running)return;
+      running=true;positionArrow();lastSteer=performance.now();travelStep();
+    }
+    function steer(angle){
+      const next=(angle%360+360)%360;
+      const change=Math.abs((next-heading+540)%360-180);
+      heading=next;positionArrow();
+      if(running&&change>=8&&performance.now()-lastSteer>=150){
+        lastSteer=performance.now();clearTimeout(timer);map.stop();travelStep();
+      }
+    }
+    arrow.addEventListener("pointerdown",e=>{
+      if(!e.isPrimary||e.button!==0)return;
+      e.preventDefault();e.stopPropagation();
+      gesture={id:e.pointerId,x:e.clientX,y:e.clientY,dragged:false};
+      arrow.setPointerCapture(e.pointerId);
+    });
+    arrow.addEventListener("pointermove",e=>{
+      if(!gesture||gesture.id!==e.pointerId)return;
+      if(!gesture.dragged&&Math.hypot(e.clientX-gesture.x,e.clientY-gesture.y)<5)return;
+      gesture.dragged=true;e.preventDefault();
+      const r=compass.getBoundingClientRect(),dx=e.clientX-r.left-r.width/2,dy=e.clientY-r.top-r.height/2;
+      if(Math.hypot(dx,dy)<8)return;
+      steer(Math.atan2(dx,-dy)*180/Math.PI);
+      if(!running)startTravel();
+    });
+    arrow.addEventListener("pointerup",e=>{
+      if(!gesture||gesture.id!==e.pointerId)return;
+      e.preventDefault();e.stopPropagation();
+      const dragged=gesture.dragged;gesture=null;
+      if(!dragged){if(running)stopTravel();else startTravel();}
+    });
+    const cancelGesture=()=>{gesture=null;stopTravel();};
+    arrow.addEventListener("pointercancel",cancelGesture);
+    arrow.addEventListener("lostpointercapture",()=>{if(gesture)cancelGesture();});
+    arrow.addEventListener("click",e=>{
+      e.stopPropagation();
+      // Keyboard and assistive-technology activation has no pointer click count.
+      if(e.detail===0){if(running)stopTravel();else startTravel();}
+    });
+    arrow.addEventListener("keydown",e=>{
+      if(e.key==="Escape"){e.preventDefault();stopTravel();return;}
+      const turns={ArrowUp:0,ArrowRight:90,ArrowDown:180,ArrowLeft:270};
+      if(Object.prototype.hasOwnProperty.call(turns,e.key)){e.preventDefault();steer(turns[e.key]);}
+    });
+    map.getContainer().addEventListener("pointerdown",stopTravel,{capture:true});
+    map.getContainer().addEventListener("wheel",stopTravel,{capture:true,passive:true});
+    map.on("zoomstart dragstart",stopTravel);
+    // The existing joystick and explicit map actions take priority over travel.
+    document.querySelector(".map-panel")?.addEventListener("pointerdown",e=>{
+      if(!compass.contains(e.target)&&e.target.closest("button"))stopTravel();
+    },true);
+    document.addEventListener("visibilitychange",()=>{if(document.hidden)stopTravel();});
+    window.addEventListener("pagehide",stopTravel);
+    window.addEventListener("resize",positionArrow);
+    positionArrow();
+}
   function initMap() {
     if (!window.L) throw Error("Karta Leaflet nije učitana");
     // Preserve the normal Web Mercator map, but allow fictional discoveries beyond its tile edge.
@@ -713,6 +806,7 @@
     previewLayer = L.layerGroup().addTo(map);
     lifeLayer = L.layerGroup().addTo(map);
     updateMapXY();
+    setupCompassTravel();
     window.dispatchEvent(new CustomEvent("kz:map-ready", {detail:{map}}));
     let timer;
     map.on("moveend zoomend", () => {
