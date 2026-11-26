@@ -328,7 +328,7 @@
   function battleIconSize(b){
     const z=map.getZoom();
     const sw=map.project(ll(Number(b.x),Number(b.y)),z);
-    const ne=map.project(ll(Number(b.x)+5,Number(b.y)+4),z);
+    const ne=map.project(ll(Number(b.x)+10,Number(b.y)+8),z);
     const w=Math.abs(ne.x-sw.x),h=Math.abs(ne.y-sw.y);
     return Math.min(w,h)>=15?[w,h]:[15,15];
   }
