@@ -203,6 +203,7 @@
     current = await rpc("kz_state", args());
     window.dispatchEvent(new CustomEvent("kz:state", {detail:{state:current}}));
     renderDashboard();
+    syncSiegeWarning();
     return current;
   }
   function filterRealmCatalog() {
@@ -313,6 +314,17 @@
   // Independent, lightweight world-wide active battle layer.
   let battleLayer=null,battleBusy=false,battleQueued=false;
   const battleMarkers=new Map();
+  // Warn every member of the defending kingdom, regardless of map position.
+  function syncSiegeWarning(){
+    const mine=current?.kingdom?.id;
+    const now=Date.now();
+    const underSiege=!!mine&&[...battleMarkers.values()].some(entry=>
+      entry.battle.defender_id===mine&&entry.expiresAt>now);
+    document.body.classList.toggle("kz-under-siege",underSiege);
+    const status=$("kz-siege-status");
+    const message=underSiege?"Tvoje kraljevstvo je pod opsadom.":"";
+    if(status&&status.textContent!==message)status.textContent=message;
+  }
   function battleIconSize(b){
     const z=map.getZoom();
     const sw=map.project(ll(Number(b.x),Number(b.y)),z);
@@ -333,6 +345,7 @@
     for(const [id,entry] of battleMarkers){
       if(entry.expiresAt<=Date.now()){battleLayer.removeLayer(entry.marker);battleMarkers.delete(id);}
     }
+    syncSiegeWarning();
   }
   function syncBattleMarkers(rows){
     const seen=new Set();
@@ -369,6 +382,7 @@
     for(const [id,entry] of battleMarkers){
       if(!seen.has(id)){battleLayer.removeLayer(entry.marker);battleMarkers.delete(id);}
     }
+    syncSiegeWarning();
   }
   async function refreshBattleMarkers(){
     if(!battleLayer||document.visibilityState==="hidden")return;
