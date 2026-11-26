@@ -49,6 +49,7 @@
     if (!client) throw Error("Supabase nije učitan. Osvježi stranicu.");
     const { data, error } = await client.rpc(name, params);
     if (error) throw Error(error.message || "Pogreška poslužitelja");
+    if(name==="kz_territory_duel")void refreshBattleMarkers();
     return data;
   }
   // Zajednički RPC za napade na putujuće dvorce; koristi postojeći
@@ -259,6 +260,70 @@
     } catch (error) {
       if (rev === mapRevision) toast(error.message);
     } finally { if (rev === mapRevision) mapLoading = false; }
+  }
+  // Independent, lightweight world-wide active battle layer.
+  let battleLayer=null,battleBusy=false,battleQueued=false;
+  const battleMarkers=new Map();
+  function battleIconSize(b){
+    const z=map.getZoom();
+    const sw=map.project(ll(Number(b.x),Number(b.y)),z);
+    const ne=map.project(ll(Number(b.x)+5,Number(b.y)+4),z);
+    const w=Math.abs(ne.x-sw.x),h=Math.abs(ne.y-sw.y);
+    return Math.min(w,h)>=15?[w,h]:[15,15];
+  }
+  function resizeBattleMarker(entry){
+    const size=battleIconSize(entry.battle),key=size.map(v=>v.toFixed(2)).join(":");
+    if(entry.sizeKey===key)return;
+    entry.sizeKey=key;
+    entry.marker.setIcon(L.divIcon({
+      className:"kz-active-battle-marker",iconSize:size,iconAnchor:[size[0]/2,size[1]/2],
+      html:'<img src="./media/active-battle.webp" alt="" draggable="false">'
+    }));
+  }
+  function pruneBattleMarkers(){
+    for(const [id,entry] of battleMarkers){
+      if(entry.expiresAt<=Date.now()){battleLayer.removeLayer(entry.marker);battleMarkers.delete(id);}
+    }
+  }
+  function syncBattleMarkers(rows){
+    const seen=new Set();
+    for(const b of rows){
+      if(!b.id||!Number.isFinite(Number(b.x))||!Number.isFinite(Number(b.y))||!(Number(b.remaining_ms)>0))continue;
+      seen.add(b.id);
+      let entry=battleMarkers.get(b.id);
+      const text='<strong>⚔ Bitka u tijeku</strong><br>'+safe(b.attacker)+' → '+safe(b.defender);
+      if(!entry){
+        const marker=L.marker(ll(Number(b.x)+2.5,Number(b.y)+2),{
+          pane:"kz-active-battle-pane",bubblingMouseEvents:false,keyboard:true,title:"Bitka u tijeku",
+          icon:L.divIcon({className:"kz-active-battle-marker",iconSize:[15,15]})
+        });
+        entry={marker,battle:b,sizeKey:null,expiresAt:0};battleMarkers.set(b.id,entry);
+        resizeBattleMarker(entry);marker.bindPopup(text).addTo(battleLayer);
+      }else{
+        entry.battle=b;entry.marker.setPopupContent(text);resizeBattleMarker(entry);
+      }
+      entry.expiresAt=Date.now()+Number(b.remaining_ms);
+    }
+    for(const [id,entry] of battleMarkers){
+      if(!seen.has(id)){battleLayer.removeLayer(entry.marker);battleMarkers.delete(id);}
+    }
+  }
+  async function refreshBattleMarkers(){
+    if(!battleLayer||document.visibilityState==="hidden")return;
+    if(battleBusy){battleQueued=true;return;}
+    battleBusy=true;
+    try{const rows=await rpc("kz_active_battles");if(Array.isArray(rows))syncBattleMarkers(rows);}
+    catch(e){pruneBattleMarkers();console.warn("KZ active battles:",e.message);}
+    finally{battleBusy=false;if(battleQueued){battleQueued=false;void refreshBattleMarkers();}}
+  }
+  function initBattleMarkers(){
+    const pane=map.createPane("kz-active-battle-pane");
+    pane.style.zIndex="1600";
+    battleLayer=L.layerGroup().addTo(map);
+    map.on("zoomend",()=>{for(const entry of battleMarkers.values())resizeBattleMarker(entry);});
+    document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")void refreshBattleMarkers();});
+    void refreshBattleMarkers();
+    setInterval(()=>{if(document.visibilityState==="visible"){pruneBattleMarkers();void refreshBattleMarkers();}},5000);
   }
   function cellOwner(x,y) {
     return cells.find(c => Number(c.x) === x && Number(c.y) === y)?.k || null;
@@ -1607,6 +1672,7 @@
     if (!client) throw Error("Supabase nije učitan. Provjeri vezu.");
     await prepareIdentity();
     initMap();
+    initBattleMarkers();
     const catalogPromise=reloadCatalog().then(()=>null,error=>error);
     await reloadState();
     if (current?.kingdom?.anchor_x != null) {
