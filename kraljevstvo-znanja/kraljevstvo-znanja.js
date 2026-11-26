@@ -11,7 +11,7 @@
   let lifeEnabled = true;
   // The map toolbar no longer exposes the world toggle; keep characters visible for everyone.
   let mapLoading = false, mapRevision = 0, dialogQuiz = false;
-  let mainQuizSession=null;
+  let mainQuizSession=null, territoryDuel=null, duelResumeButton=null, duelLoading=false;
   function stopMainTimer(){if(mainQuizSession){clearInterval(mainQuizSession.timer);mainQuizSession.timer=null;}}
   let territoryPaintKey=null, blockGridPaintKey=null, initialMapReady=false;
   let territoryCellBounds=null;
@@ -100,6 +100,13 @@
     $("dialog").classList.remove("kz-quiz-dialog");
     const abandoned=mainQuizSession;stopMainTimer();mainQuizSession=null;
     if(abandoned&&!abandoned.done&&!abandoned.busy&&abandoned.position){rpc("kz_answer",args({p_game_id:abandoned.gameId,p_number:abandoned.position,p_choice:"SKIP"})).then(()=>reloadState()).catch(()=>{});}
+    const duel=territoryDuel;
+    if(duel){clearInterval(duel.timer);territoryDuel=null;
+      if(!duel.done&&!duel.busy&&duel.q.status==="active"){
+        rpc("kz_territory_duel",args({p_action:"answer",p_id:duel.q.id,p_number:duel.q.position,p_choice:"SKIP"}))
+          .then(out=>{setDuelResume(out.status==="active");return reloadState();}).catch(e=>toast(e.message));
+      }
+    }
     dialogQuiz = false;
     $("dialog-backdrop").classList.add("hidden");
     $("dialog-body").replaceChildren();
@@ -997,8 +1004,8 @@
     if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
-      btn.textContent="POSTAVI";
-      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Napad: potroši 100 m² za suparnički blok od 20 m²":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.textContent=status.kind==="attack"?"NAPADNI":"POSTAVI";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 3 točna od najviše 8 pitanja":"Zauzmi slobodni blok od 20 m² za 20 m²";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
@@ -1032,7 +1039,7 @@
     const cost=status.kind==="attack"?100:20;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
-    const question=status.kind==="attack"?"Napasti i preuzeti cijeli suparnički blok od 20 m² za 100 m² s konta?":
+    const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Osvoji blok s 3 točna odgovora od najviše 8 pitanja. Točan odgovor: protivnik gubi 20 m². Pogrešan ili istek: tvoje kraljevstvo gubi 20 m². Pobjeda vraća 100 m².":
       (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
     if(!confirm(needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
@@ -1047,6 +1054,11 @@
         gpsParams={p_lat:fix.lat,p_lon:fix.lon,p_accuracy:fix.accuracy};
       }
       const params={p_x:cursor.x,p_y:cursor.y,p_spawn:cursorSpawnMode||Number(current.kingdom.area||0)===0,...gpsParams};
+      if(status.kind==="attack"){
+        const out=await rpc("kz_territory_duel",args({p_action:"start",p_x:params.p_x,p_y:params.p_y}));
+        if(out){setDuelResume(out.status==="active");renderTerritoryDuel(out);}
+        await reloadState();return;
+      }
       const result=await rpc("kz_place_block",args(params));
       cursorSpawnMode=false;firstGpsFix=null;
       cursor={x:cursor.x+5,y:cursor.y};
@@ -1055,6 +1067,80 @@
       await reloadState();await reloadMap();
     }catch(e){toast(e.message);}
     finally{previewBusy=false;updateCursorPreview();}
+  }
+
+  // Territory duels are separate from the regular ten-question game.
+  function setDuelResume(active){
+    if(duelResumeButton)duelResumeButton.hidden=!active;
+  }
+  async function resumeTerritoryDuel(){
+    if(duelLoading)return;
+    duelLoading=true;
+    try{
+      const out=await rpc("kz_territory_duel",args({p_action:"resume"}));
+      setDuelResume(out?.status==="active");
+      if(out)renderTerritoryDuel(out);
+    }catch(e){toast(e.message);}
+    finally{duelLoading=false;}
+  }
+  function duelSummary(q){
+    const dots=Array.from({length:8},(_,i)=>i<q.hits?"✓":i<q.hits+q.misses?"✗":"·");
+    return '<div class="kz-current-score">Točni '+q.hits+' / 3 · Netočni '+q.misses+
+      '</div><p class="quiz-progress">'+dots.join(" &nbsp; ")+'</p>'+
+      '<p>Tvoje konto: −'+formatArea(100+Number(q.attack_loss||0))+
+      ' (s ulogom)<br>Protivničko konto: −'+formatArea(q.defense_loss)+'</p>';
+  }
+  function renderTerritoryDuel(q){
+    if(territoryDuel)clearInterval(territoryDuel.timer);
+    if(q.status!=="active"){
+      territoryDuel=null;setDuelResume(false);
+      const won=q.status==="won";
+      modal(won?"⚔ Blok osvojen!":q.status==="invalid"?"Okršaj prekinut":"Napad odbijen",
+        '<div class="kz-final-score"><strong>'+q.hits+' / 3</strong><span>točnih odgovora</span>'+
+        (won?'<b>+100 m² na konto · +20 m² teritorija</b>':q.status==="invalid"?'<b>Ulog 100 m² vraćen</b>':'<b>Ulog 100 m² izgubljen</b>')+
+        '</div>'+duelSummary(q)+'<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
+      $("kz-duel-close").onclick=closeModal;
+      void reloadState().then(reloadMap).catch(e=>toast(e.message));return;
+    }
+    const session={q,busy:false,done:false,timer:null,deadline:Date.now()+Math.max(0,Number(q.remaining_ms)||0)};
+    territoryDuel=session;setDuelResume(true);
+    modal("⚔ Okršaj znanja",'<div class="quiz-progress">PITANJE '+q.position+' / 8 · ULOG 100 m²</div>'+
+      duelSummary(q)+'<p id="kz-duel-clock" class="kz-question-clock" role="timer"></p>'+
+      '<p class="quiz-question">'+safe(q.prompt)+'</p>'+
+      (q.image?'<img class="question-image" src="'+safe(q.image)+'" alt="Slika uz pitanje">':'')+
+      '<div class="kz-answer-list">'+["A","B","C"].map(key=>'<button class="option" data-duel-answer="'+key+'">'+key+') '+safe(q.options?.[key]||"")+'</button>').join("")+'</div>'+
+      '<div id="kz-duel-result" aria-live="polite"></div>');
+    $("dialog").classList.add("kz-quiz-dialog");
+    const buttons=[...document.querySelectorAll("[data-duel-answer]")];
+    async function submit(key){
+      if(territoryDuel!==session||session.busy||session.done)return;
+      session.busy=true;clearInterval(session.timer);
+      buttons.forEach(b=>b.disabled=true);
+      try{
+        const out=await rpc("kz_territory_duel",args({p_action:"answer",p_id:q.id,p_number:q.position,p_choice:key}));
+        session.done=true;setDuelResume(out.status==="active");
+        if(territoryDuel!==session){void reloadState().then(reloadMap).catch(console.warn);return;}
+        if(out.status!=="active"){renderTerritoryDuel(out);return;}
+        buttons.forEach(b=>{if(b.dataset.duelAnswer===out.correct_key)b.classList.add("correct");else if(b.dataset.duelAnswer===key)b.classList.add("wrong");});
+        $("kz-duel-result").innerHTML='<div class="outcome '+(out.correct?"kz-outcome-good":"kz-outcome-bad")+'">'+
+          safe((out.timed_out?"Vrijeme je isteklo. ":out.correct?"Točno! ":"Netočno. ")+(out.correct?"Protivnik":"Tvoje kraljevstvo")+" gubi "+formatArea(out.loss)+".")+
+          '</div><button class="primary" id="kz-duel-next">Sljedeće pitanje →</button>';
+        $("kz-duel-next").onclick=resumeTerritoryDuel;
+        void reloadState().catch(console.warn);
+      }catch(e){
+        toast(e.message);
+        if(territoryDuel===session){session.done=true;$("kz-duel-result").innerHTML='<button class="primary" id="kz-duel-retry">Nastavi okršaj</button>';$("kz-duel-retry").onclick=resumeTerritoryDuel;}
+      }finally{session.busy=false;}
+    }
+    buttons.forEach(b=>b.onclick=()=>submit(b.dataset.duelAnswer));
+    const tick=()=>{
+      if(territoryDuel!==session)return;
+      const clock=$("kz-duel-clock");if(!clock){clearInterval(session.timer);return;}
+      const seconds=Math.max(0,Math.ceil((session.deadline-Date.now())/1000));
+      clock.textContent="⏱ "+seconds+" s";clock.classList.toggle("urgent",seconds<=3);
+      if(seconds===0)void submit("SKIP");
+    };
+    session.timer=setInterval(tick,100);tick();
   }
 
   // Isti obrasci povijesti, reakcija i primjedbi kao u glavnom Online kvizu.
@@ -1348,7 +1434,7 @@
     modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 500 m².')+'</p>'+
       '<p>Dok kraljevstvo ima najmanje 500 m², svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m², a napad na puni tuđi blok 100 m² za osvajanje 20 m².</p>');
+      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m². Okršaj za tuđi blok ima ulog 100 m² i najviše 8 pitanja. Treći točan odgovor osvaja blok i vraća 100 m²; svaki odgovor skida do 20 m² s konta odgovarajućeg kraljevstva.</p>');
   }
   function renderRequests() {
     const list=current?.requests||[];
@@ -1468,6 +1554,10 @@
     initRealmColorPicker();
     $("realm-search").addEventListener("input",filterRealmCatalog);
     $("claim-block").addEventListener("click",saveBlock);
+    duelResumeButton=document.createElement("button");duelResumeButton.type="button";
+    duelResumeButton.className="minor";duelResumeButton.textContent="⚔ Nastavi okršaj";
+    duelResumeButton.hidden=true;duelResumeButton.onclick=resumeTerritoryDuel;
+    document.querySelector(".map-top .map-actions")?.append(duelResumeButton);
     $("gps-outpost-btn").addEventListener("click",()=>{
       if(current?.kingdom?.role!=="kralj"||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy)return;
       chooseFirstGps();
@@ -1504,6 +1594,7 @@
     }
     initialMapReady=true;
     await reloadMap();
+    if(current?.kingdom?.role==="kralj")void resumeTerritoryDuel();
     const catalogError=await catalogPromise;
     if(catalogError)console.warn("Katalog kraljevstava:",catalogError.message);
     setInterval(tick,1000);
