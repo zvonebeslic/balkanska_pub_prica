@@ -183,7 +183,7 @@
     $("realm-name").textContent = k?.name || "Još nemaš kraljevstvo";
     $("realm-area").textContent = formatArea(k?.area);
     $("realm-role").textContent = k ? roleName(k.role) : "Osnuj svoje ili zatraži pristup na karti";
-    $("members-total").textContent = (current?.members?.length || 0) + " / 5";
+    $("members-total").textContent = (current?.members?.length || 0) + " / 10";
     $("bank-count").textContent = formatArea(k?.bank);
     $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
     $("boost-caption").textContent = k?.area >= 500 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje na 500 m²";
@@ -846,7 +846,7 @@
     const mine = current?.kingdom?.id === k.id;
     const request = !current?.kingdom && !mine;
     modal(k.name, '<p><b style="color:' + safe(k.color) + '">●</b> ' +
-      formatArea(k.area) + ' · ' + Number(k.members) + '/5 članova</p>' +
+      formatArea(k.area) + ' · ' + Number(k.members) + '/10 članova</p>' +
       '<p>Svaki član doprinosi znanjem, a kralj kvizaš određuje gdje će se kraljevstvo širiti.</p>' +
       (request ? '<button id="request-join" class="primary">Zatraži učlanjenje</button>' :
       mine ? '<button id="zoom-realm" class="primary">Prikaži moje granice</button>' : '<p>Već si član drugog kraljevstva.</p>'));
