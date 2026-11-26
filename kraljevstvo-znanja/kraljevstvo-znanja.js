@@ -1198,20 +1198,23 @@
     return key==="SKIP"?"Bez odgovora":key && q?.options ? (q.options[key] || key) : "—";
   }
   function completedPart(questions,game) {
-    const correct=questions.filter(q=>q.correct).length;
-    const earned=questions.reduce((sum,q)=>sum+Number(q.earned||0),0);
-    modal("Rezultati & povijest",'<div class="kz-final-score"><strong>'+correct+' / '+questions.length+
+    const correct=Number(game?.correct??questions.filter(q=>q.correct).length);
+    const wrong=Number(game?.wrong??(questions.length-correct));
+    const earned=Number(game?.earned??questions.reduce((sum,q)=>sum+Number(q.earned||0),0));
+    const total=correct+wrong;
+    modal("Rezultat kviza",'<div class="kz-final-score"><strong>'+correct+' / '+total+
       '</strong><span>točnih odgovora</span><b>+'+formatArea(earned)+'</b></div>'+
+      '<p>Točni: '+correct+' · Netočni: '+wrong+'</p>'+
       '<p>Sljedećih 10 pitanja dostupno je četiri sata nakon završetka ove partije.</p>'+
       '<div class="kz-quiz-actions"><button class="secondary" id="kz-share-result">📤 Podijeli rezultat</button>'+
-      '<button class="secondary" id="kz-download-history">📥 Preuzmi povijest PNG</button></div>'+
-      '<section class="kz-history"><h3>Odigrana povijest</h3><div id="kz-history-list"></div></section>'+
+      '<button class="secondary" id="kz-download-history">📥 Preuzmi rezultat PNG</button></div>'+
       '<button id="quiz-finish" class="primary">Povratak kraljevstvu</button>');
     $("dialog").classList.add("kz-quiz-dialog");
     $("quiz-finish").onclick=closeModal;
-    $("kz-share-result").onclick=()=>sharePlayed(questions,correct);
-    $("kz-download-history").onclick=()=>downloadPlayed(questions,correct);
-    renderHistory(questions,game?.id);
+    // Share only numeric scores, never old questions or answer keys.
+    const summary=Array.from({length:total},()=>({}));
+    $("kz-share-result").onclick=()=>sharePlayed(summary,correct);
+    $("kz-download-history").onclick=()=>downloadPlayed(summary,correct);
   }
   function historyRow(q,gameId) {
     const correctKey=q.correct_key;
@@ -1302,7 +1305,7 @@
     let pending;
     try{pending=await rpc("kz_issue_question",args({p_game_id:game.id}));}catch(e){if(mainQuizSession===session){closeModal();toast(e.message);}return;}
     if(mainQuizSession!==session)return;
-    if(pending.finished){const games=await rpc("kz_history",args());const finished=games.find(g=>g.id===game.id);await reloadState();if(mainQuizSession===session&&finished)completedPart(finished.questions,finished);return;}
+    if(pending.finished){const games=await rpc("kz_history",args());const finished=games.find(g=>g.id===game.id);await reloadState();if(mainQuizSession===session&&finished)completedPart([],finished);return;}
     if(pending.skipped){const row=game.questions.find(q=>q.position===pending.skipped.position);if(row)Object.assign(row,pending.skipped);}
     const row=game.questions.find(q=>q.position===pending.position);if(row)Object.assign(row,pending);
     session.position=pending.position;session.game=game;session.question=pending;session.deadline=Date.now()+Math.max(0,Number(pending.remaining_ms));
@@ -1346,7 +1349,7 @@
       });
       renderHistory(session.game.questions,gameId);
       const next=document.createElement("button");
-      next.className="primary";next.textContent=out.finished?"Pogledaj rezultat i povijest":"Sljedeće pitanje →";
+      next.className="primary";next.textContent=out.finished?"Pogledaj rezultat":"Sljedeće pitanje →";
       next.onclick=async()=>{
         if(out.finished){
           const snapshot=session.game.questions.map(q=>({...q}));
@@ -1360,30 +1363,7 @@
     }catch(e){if(mainQuizSession===session){toast(e.message);if(Date.now()<session.deadline){buttons.forEach(b=>b.disabled=false);session.timer=setInterval(session.draw,100);}else{session.done=true;const next=document.createElement("button");next.className="primary";next.textContent="Nastavi";next.onclick=async()=>{await reloadState();await renderQuiz();};$("answer-result")?.append(next);}}}
     finally{session.busy=false;}
   }
-  async function showFullHistory(){
-    try{
-      const games=await rpc("kz_history",args());
-      modal("Odigrana povijest",'<p>Posljednjih 12 partija · pohvale, primjedbe i 👍 👎 kao na Online kvizu.</p>'+
-        '<div id="kz-all-history"></div><button class="secondary" id="kz-history-close">Zatvori</button>');
-      $("dialog").classList.add("kz-quiz-dialog");
-      $("kz-history-close").onclick=closeModal;
-      const wrapper=$("kz-all-history");
-      if(!games?.length){wrapper.innerHTML='<p>Još nema završenih partija.</p>';return;}
-      games.forEach((g,i)=>{
-        const section=document.createElement("section");
-        section.className="kz-history-game";
-        section.innerHTML='<details '+(i===0?"open":"")+'><summary>'+
-          safe(dateTime(g.at))+' · '+g.correct+'/'+(g.questions?.length||10)+
-          ' točnih · +'+safe(formatArea(g.earned))+'</summary>'+
-          '<div class="kz-history-list"></div></details>';
-        wrapper.append(section);
-        const list=section.querySelector(".kz-history-list");
-        const answered=(g.questions||[]).filter(q=>q.choice!=null);
-        list.innerHTML=answered.map(q=>historyRow(q,g.id)).join("");
-        bindHistory(list,answered,g.id);
-      });
-    }catch(e){toast(e.message);}
-  }
+  async function showFullHistory(){await renderMembers();}
   function paintWrapped(ctx,text,x,y,maxWidth,lineHeight){
     const words=String(text||"").split(/\s+/);let line="";
     for(const word of words){
@@ -1396,32 +1376,13 @@
     return y;
   }
   async function makeHistoryImage(questions,correct){
-    // PNG kao na Online kvizu, bez ovisnosti o vanjskim servisima.
-    const canvas=document.createElement("canvas");
-    canvas.width=900;canvas.height=Math.max(600,170+questions.length*270);
-    const ctx=canvas.getContext("2d");
-    ctx.fillStyle="#0b1527";ctx.fillRect(0,0,canvas.width,canvas.height);
-    ctx.fillStyle="#68e8b1";ctx.font="bold 33px system-ui";
-    ctx.fillText("KRALJEVSTVO ZNANJA",42,62);
-    ctx.fillStyle="#e7f3ff";ctx.font="23px system-ui";
-    ctx.fillText("Rezultat: "+correct+"/"+questions.length+" točnih",42,107);
-    let y=159;
-    for(const q of questions){
-      ctx.fillStyle="#d7e8f8";ctx.font="bold 19px system-ui";
-      y=paintWrapped(ctx,q.position+". "+q.prompt,42,y,810,28)+5;
-      ctx.font="16px system-ui";
-      for(const key of ["A","B","C"]){
-        ctx.fillStyle=key===q.correct_key?"#78ecaf":key===q.choice&&!q.correct?"#ff9f9f":"#adc5dd";
-        y=paintWrapped(ctx,key+") "+answerLabel(q,key),65,y,790,23)+3;
-      }
-      y+=18;
-    }
-    // Prilagodi visinu u novom canvasu bez gubitka već iscrtanog sadržaja.
-    const trimmed=document.createElement("canvas");trimmed.width=canvas.width;
-    trimmed.height=Math.min(canvas.height,Math.max(240,Math.ceil(y+35)));
-    trimmed.getContext("2d").drawImage(canvas,0,0);
-    return await new Promise((resolve,reject)=>
-      trimmed.toBlob(blob=>blob?resolve(blob):reject(Error("PNG nije moguće izraditi")),"image/png"));
+    const canvas=document.createElement("canvas");canvas.width=900;canvas.height=340;
+    const ctx=canvas.getContext("2d");ctx.fillStyle="#0b1527";ctx.fillRect(0,0,900,340);
+    ctx.fillStyle="#68e8b1";ctx.font="bold 33px system-ui";ctx.fillText("KRALJEVSTVO ZNANJA",42,62);
+    ctx.fillStyle="#e7f3ff";ctx.font="bold 60px system-ui";ctx.fillText(correct+" / "+questions.length,42,160);
+    ctx.font="24px system-ui";ctx.fillText("Točni: "+correct+"  ·  Netočni: "+(questions.length-correct),42,225);
+    ctx.fillText("Uspješnost: "+(questions.length?Math.round(correct/questions.length*100):0)+"%",42,275);
+    return await new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(Error("PNG nije moguće izraditi")),"image/png"));
   }
   async function downloadPlayed(questions,correct){
     try{
@@ -1449,35 +1410,45 @@
     }catch(e){toast(e.message);}
     finally{tick();}
   }
-  function renderMembers() {
-    if (!current?.kingdom) return modal("Članovi","<p>Još nemaš kraljevstvo.</p>");
-    const king=current.kingdom.role==="kralj";
-    const html=(current.members||[]).map(m => {
-      const end=new Date(m.cooldown_until||0).getTime();
-      const ready=end<=Date.now();
-      const record=(m.last10||[]).map(g=>'<li>'+dateTime(g.at)+': '+g.correct+' točnih / '+
-        g.wrong+' netočnih · '+formatArea(g.earned)+' · '+Number(g.seconds||0)+' s</li>').join("");
-      const n=m.total_correct+m.total_wrong;
-      return '<article class="member"><b>'+safe(m.name)+'</b> · '+roleName(m.role)+
-        '<div class="member-meta">'+(ready?"Pitanja spremna":"Cooldown do "+dateTime(m.cooldown_until))+
-        '</div><div class="member-meta">Sva vremena: '+m.total_correct+' točnih / '+m.total_wrong+
-        ' netočnih · '+(n?Math.round(m.total_correct*100/n):0)+'% · '+formatArea(m.total_earned)+'</div>'+
-        '<details><summary>Zadnjih 10 partija ('+(m.last10||[]).length+')</summary><ol>'+
-        (record||'<li>Još nije igrao</li>')+'</ol></details>'+
-        (king && m.id!==current.player.id ?
-          '<div><button class="secondary" data-manage="duke" data-member="'+m.id+'">Postavi vojvodu</button>'+
-          '<button class="secondary" data-manage="crown" data-member="'+m.id+'">Predaj krunu</button>'+
-          '<button class="secondary" data-manage="kick" data-member="'+m.id+'">Isključi</button></div>':'')+
-        '</article>';
-    }).join("");
-    modal("Članovi kraljevstva · "+current.kingdom.name,html);
-    document.querySelectorAll("[data-manage]").forEach(b=>b.addEventListener("click",async()=>{
-      if (!confirm("Potvrđuješ radnju za ovog člana?")) return;
-      try {
-        await rpc("kz_membership",args({p_action:b.dataset.manage,p_target:b.dataset.member}));
-        closeModal();await reloadState();toast("Promjena članstva je spremljena.");
-      }catch(e){toast(e.message);}
-    }));
+  async function renderMembers() {
+    const kingdomId=current?.kingdom?.id||null;
+    modal("Doprinos članova","<p>Učitavam zajedničku statistiku…</p>");
+    const body=$("dialog-body");
+    const loading=body.firstElementChild;
+    try{
+      const members=await rpc("kz_member_statistics",args());
+      if(body.firstElementChild!==loading||$("dialog-backdrop").classList.contains("hidden")||(current?.kingdom?.id||null)!==kingdomId)return;
+      const king=current?.kingdom?.role==="kralj";
+      const categories=[["quiz","Redovni kviz (svaka 4 h)"],["guardian","Čudovišta i čuvari"],["flag","Zastavice"],["territory","Okršaji za teritorij"]];
+      const score=(c,w)=>{const n=c+w;return n?Math.round(c*100/n)+"%":"—";};
+      const html=(members||[]).map(m=>{
+        const c=Number(m.total_correct)||0,w=Number(m.total_wrong)||0,n=c+w;
+        const breakdown=categories.map(([key,label])=>{
+          const row=m.sources?.[key]||{},rc=Number(row.correct)||0,rw=Number(row.wrong)||0;
+          return '<div class="member-meta"><b>'+label+'</b> · '+score(rc,rw)+' · '+(rc+rw)+' pitanja · ✓ '+rc+' · ✕ '+rw+'</div>';
+        }).join("");
+        return '<article class="member"><details><summary><b>'+safe(m.name)+'</b> · '+score(c,w)+' · '+n+' odigranih · ✓ '+c+' · ✕ '+w+'</summary>'+
+          '<div class="member-meta">'+(m.role?roleName(m.role):"Igrač")+' · Točni '+score(c,w)+' · Netočni '+score(w,c)+'</div>'+
+          '<div style="display:flex;height:8px;border-radius:8px;overflow:hidden;background:#334155;margin:8px 0" aria-hidden="true">'+
+          (n?'<span style="width:'+(c/n*100)+'%;background:#60c78a"></span><span style="flex:1;background:#c85d5d"></span>':'')+'</div>'+
+          '<div class="member-meta">Ukupno zarađeno: <b>'+formatArea(m.total_earned)+'</b> · Osvojeno od protivnika: <b>'+formatArea(m.captured_m2)+'</b></div>'+
+          breakdown+'</details>'+
+          (king&&m.id!==current.player.id?'<div><button class="secondary" data-manage="duke" data-member="'+safe(m.id)+'">Postavi vojvodu</button>'+
+          '<button class="secondary" data-manage="crown" data-member="'+safe(m.id)+'">Predaj krunu</button>'+
+          '<button class="secondary" data-manage="kick" data-member="'+safe(m.id)+'">Isključi</button></div>':'')+'</article>';
+      }).join("");
+      modal(kingdomId?"Doprinos članova · "+current.kingdom.name:"Moja statistika",
+        '<p class="member-meta">Sva odigrana pitanja u Kraljevstvu znanja, uključujući istek vremena. Dodirni ime za statistiku po vrsti izazova.</p>'+
+        (html||'<p>Još nema statistike.</p>')+'<button class="secondary" id="kz-stats-close">Zatvori</button>');
+      $("kz-stats-close").onclick=closeModal;
+      document.querySelectorAll("[data-manage]").forEach(b=>b.addEventListener("click",async()=>{
+        if(!confirm("Potvrđuješ radnju za ovog člana?"))return;
+        try{
+          await rpc("kz_membership",args({p_action:b.dataset.manage,p_target:b.dataset.member}));
+          closeModal();await reloadState();toast("Promjena članstva je spremljena.");
+        }catch(e){toast(e.message);}
+      }));
+    }catch(e){if(body.firstElementChild===loading){closeModal();toast(e.message);}}
   }
   function boostInfo() {
     const enabled=(current?.kingdom?.area||0)>=500;
