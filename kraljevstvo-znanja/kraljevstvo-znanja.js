@@ -1879,6 +1879,20 @@
     $("leave-btn").addEventListener("click",leaveKingdom);
     $("members-box").addEventListener("click",renderMembers);
     $("bank-box").addEventListener("click",boostInfo);
+    $("kz-rules-open").addEventListener("click",()=>{
+      if(territoryDuel||mainQuizSession){toast("Prvo zatvori trenutni okršaj ili kviz.");return;}
+      const template=$("kz-rules-template");
+      modal("Pravila igre",template.innerHTML);
+      $("dialog").scrollTop=0;
+      const toggle=$("dialog-body").querySelector(".kz-rules-expand");
+      toggle.addEventListener("click",()=>{
+        const sections=[...$("dialog-body").querySelectorAll(".kz-rule-section")];
+        const open=!sections.every(section=>section.open);
+        sections.forEach(section=>section.open=open);
+        toggle.textContent=open?"Zatvori sve stavke":"Otvori sve stavke";
+        toggle.setAttribute("aria-expanded",String(open));
+      });
+    });
 
 
 
