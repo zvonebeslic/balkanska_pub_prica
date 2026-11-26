@@ -593,3 +593,16 @@ body{background:
 @media(prefers-reduced-motion:reduce){.kz-active-battle-marker img{animation:none}}
 
 .kz-battle-score{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.kz-battle-score>div{display:flex;flex-direction:column;text-align:center;padding:8px;background:#142337;border:1px solid #536678;border-radius:8px}.kz-battle-score b{font-size:24px;color:#fff}.kz-live-defense{color:#f7d184;font-weight:700;text-align:center}.kz-battle-rounds{margin:12px 0}.kz-battle-table{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));text-align:center;gap:4px;font-size:12px}.kz-battle-table span{padding:5px 1px;border-bottom:1px solid #42546a}.kz-battle-good{color:#74eca6;font-weight:700}.kz-battle-bad{color:#ff8d8d;font-weight:700}.kz-defend-battle{background:#ad2631;color:white;border:0;border-radius:5px;padding:7px;font-weight:700;cursor:pointer}
+
+/* Shared, read-only kingdom notifications; newest event at the bottom. */
+.kz-realm-event-list{display:flex;flex-direction:column;gap:10px;max-height:420px;overflow-y:auto;overscroll-behavior:contain;padding:12px 5px;scrollbar-width:thin}
+.kz-event-date{align-self:center;border:1px solid #526176;border-radius:20px;padding:3px 12px;color:#aebbd0;font-size:11px;line-height:1.4}
+.kz-realm-event{display:flex;gap:8px;align-items:flex-start;min-width:0}
+.kz-event-icon{flex:0 0 32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#25364b;border:1px solid #64748b;font-size:16px}
+.kz-event-bubble{flex:1;min-width:0;background:#192b40;border:1px solid #3e536d;border-radius:3px 12px 12px 12px;padding:8px 10px;color:#f4f7fb}
+.kz-event-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:12px;color:#e9c985}
+.kz-event-heading time{font-size:11px;color:#aebbd0;white-space:nowrap}
+.kz-event-bubble p{margin:5px 0 0;line-height:1.45;font-size:13px;overflow-wrap:anywhere}
+.kz-realm-event.is-victory .kz-event-bubble{border-color:#4a936d;background:#173a30}
+.kz-realm-event.is-defeat .kz-event-bubble{border-color:#ad6267;background:#42262d}
+#realm-event-more{width:100%;margin-top:8px}#realm-event-more[hidden]{display:none}

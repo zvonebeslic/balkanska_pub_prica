@@ -208,6 +208,7 @@
       "Osnuj kraljevstvo ili dodirni drugo kraljevstvo na karti i zatraži članstvo.";
     renderRequests();
     renderMail();
+    void refreshRealmEvents();
     tick();
   }
   function roleName(role) {
@@ -1606,6 +1607,55 @@
       }catch(e){toast(e.message);b.disabled=false;}
     }));
   }
+  let realmFeedId=null,realmFeedRows=[],realmFeedMore=false,realmFeedBusy=false,realmFeedGeneration=0;
+  const realmEventTypes={found:["👑","Osnivanje"],join:["👋","Novi član"],leave:["🚪","Odlazak"],kick:["🚪","Isključenje"],promotion:["⬆","Promaknuće"],demotion:["⬇","Degradiranje"],battle_start:["⚔","Napad"],battle_defense:["🛡","Obrana"],victory:["🏆","Pobjeda"],defeat:["⚔","Poraz"],battle_end:["🏳","Prekinuti okršaj"],guardian:["🏆","Pobijeđen čuvar"]};
+  function paintRealmFeed({older=false,reset=false}={}){
+    const list=$("realm-event-list"),more=$("realm-event-more");
+    const atEnd=list.scrollHeight-list.clientHeight-list.scrollTop<60;
+    const oldHeight=list.scrollHeight,oldTop=list.scrollTop;
+    if(!realmFeedId){
+      list.innerHTML='<p class="member-meta">Pridruži se kraljevstvu za zajedničke obavijesti.</p>';more.hidden=true;return;
+    }
+    let day="";
+    list.innerHTML=realmFeedRows.length?realmFeedRows.map(e=>{
+      const stamp=new Date(e.at),date=stamp.toLocaleDateString("hr-HR",{day:"numeric",month:"long",year:"numeric"});
+      const [icon,label]=realmEventTypes[e.kind]||["✦","Događaj"];
+      const divider=date!==day?'<div class="kz-event-date">'+safe(date)+'</div>':"";day=date;
+      return divider+'<article class="kz-realm-event '+(e.kind==="victory"?"is-victory":e.kind==="defeat"?"is-defeat":"")+'"><span class="kz-event-icon" aria-hidden="true">'+icon+'</span>'+
+        '<div class="kz-event-bubble"><div class="kz-event-heading"><b>'+label+'</b><time datetime="'+safe(e.at)+'">'+safe(stamp.toLocaleTimeString("hr-HR",{hour:"2-digit",minute:"2-digit"}))+'</time></div>'+
+        '<p>'+safe(e.body)+'</p></div></article>';
+    }).join(""):'<p class="member-meta">Još nema događaja u kraljevstvu.</p>';
+    more.hidden=!realmFeedMore;more.disabled=false;
+    if(older)list.scrollTop=oldTop+list.scrollHeight-oldHeight;
+    else if(atEnd||reset)list.scrollTop=list.scrollHeight;
+  }
+  async function refreshRealmEvents(older=false){
+    const realm=current?.kingdom?.id||null;
+    if(realm!==realmFeedId){
+      realmFeedGeneration++;realmFeedBusy=false;realmFeedId=realm;realmFeedRows=[];realmFeedMore=false;
+      paintRealmFeed({reset:true});
+    }
+    if(!realm||realmFeedBusy||!identity||(older&&!realmFeedMore))return;
+    const generation=realmFeedGeneration,first=realmFeedRows[0]?.id;
+    realmFeedBusy=true;
+    if(older)$("realm-event-more").disabled=true;
+    try{
+      const result=await rpc("kz_realm_notifications",args(older&&first?{p_before:first}:{}));
+      if(generation!==realmFeedGeneration||current?.kingdom?.id!==realm||result?.kingdom_id!==realm)return;
+      const next=Array.isArray(result.events)?result.events:[];
+      const previousFirst=realmFeedRows[0]?.id;
+      const oldMore=realmFeedMore;
+      const merged=new Map(realmFeedRows.map(e=>[String(e.id),e]));
+      for(const e of next)merged.set(String(e.id),e);
+      realmFeedRows=[...merged.values()].sort((a,b)=>new Date(a.at)-new Date(b.at)||Number(a.id)-Number(b.id));
+      realmFeedMore=older||!previousFirst||realmFeedRows[0]?.id!==previousFirst?!!result.has_more:(oldMore||!!result.has_more);
+      if(!older&&previousFirst&&next.some(e=>String(e.id)===String(previousFirst)))realmFeedMore=oldMore||!!result.has_more;
+      paintRealmFeed({older,reset:!previousFirst});
+    }catch(e){
+      if(generation===realmFeedGeneration&&!realmFeedRows.length)$("realm-event-list").textContent="Obavijesti trenutačno nisu dostupne.";
+      console.warn("KZ realm events:",e.message);
+    }finally{if(generation===realmFeedGeneration){realmFeedBusy=false;$("realm-event-more").disabled=false;}}
+  }
   function renderMail() {
     const msgs=current?.mail||[];
     $("mail-list").innerHTML = msgs.length ? msgs.map(m=>'<div><b>'+dateTime(m.at)+'</b>'+
@@ -1703,6 +1753,8 @@
     $("play-btn").addEventListener("click",play);
     $("history-open").addEventListener("click",showFullHistory);
     $("battle-history-open").addEventListener("click",showBattleHistory);
+    $("realm-event-more").addEventListener("click",()=>refreshRealmEvents(true));
+    setInterval(()=>{if(document.visibilityState==="visible")void refreshRealmEvents();},10000);
     $("create-btn").addEventListener("click",createKingdom);
     initRealmColorPicker();
     $("realm-search").addEventListener("input",filterRealmCatalog);
