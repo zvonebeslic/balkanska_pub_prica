@@ -15,7 +15,7 @@
   function stopMainTimer(){if(mainQuizSession){clearInterval(mainQuizSession.timer);mainQuizSession.timer=null;}}
   let territoryPaintKey=null, blockGridPaintKey=null, initialMapReady=false;
   let territoryCellBounds=null, territoryBuffered=false, territoryRefreshTimer=null;
-  const TERRITORY_BUFFER_M=5000, TERRITORY_REFILL_M=4000;
+  const TERRITORY_BUFFER_M=1000, TERRITORY_REFILL_M=800;
   const territoryFills=new Map();
   let lastTerritoryPaintZoom=null;
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
