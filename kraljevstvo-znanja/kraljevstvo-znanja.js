@@ -825,7 +825,12 @@
       unproject(point){return extendedProjection.unproject(point);}
     });
     // Keep pinch zoom within the actual map limits, including during the gesture.
-    map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false,minZoom:2,maxZoom:21,bounceAtZoomLimits:false}).setView([43.5,17.3],7);
+    // Game-like flick scrolling: slow drags stay precise, quick swipes coast and ease out.
+    // Leaflet stops inertia on the next touch; compass and joystick keep their own controls.
+    map = L.map("kingdom-map",{
+      crs:fantasyCRS,zoomControl:true,worldCopyJump:false,minZoom:2,maxZoom:21,bounceAtZoomLimits:false,
+      inertia:true,inertiaDeceleration:1700,inertiaMaxSpeed:1100,easeLinearity:.25
+    }).setView([43.5,17.3],7);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       minZoom:2,maxZoom:21,maxNativeZoom:19,noWrap:true,attribution:'&copy; OpenStreetMap'
     }).addTo(map);
