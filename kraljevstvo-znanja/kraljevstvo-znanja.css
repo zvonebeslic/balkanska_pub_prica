@@ -630,3 +630,7 @@ body.kz-under-siege #kz-siege-glow{visibility:visible;animation:kz-siege-pulse 2
 @keyframes kz-siege-pulse{0%,100%{opacity:0}50%{opacity:.92}}
 #kz-siege-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 @media(prefers-reduced-motion:reduce){body.kz-under-siege #kz-siege-glow{animation:none;opacity:.65}}
+
+/* Natural terrain colors must not inherit the previous street-map filter. */
+#kingdom-map .leaflet-tile-pane{filter:none}
+#kingdom-map{background:#528fae}
