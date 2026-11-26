@@ -119,7 +119,7 @@ function syncVideos(){
 }
 function removeAll(){for(const x of markers.values())map.removeLayer(x.marker);markers.clear();}
 function boundsArgs(all=false){
- const b=map._kzPrefetchBounds?.(.15)||map.getBounds().pad(.15),c=map.getCenter();
+ const b=map.getBounds().pad(.15),c=map.getCenter();
  return {p_south:all?-85:b.getSouth(),p_north:all?85:b.getNorth(),p_west:all?-180:b.getWest(),p_east:all?180:b.getEast(),p_lat:c.lat,p_lng:c.lng};
 }
 function draw(rows){
@@ -268,7 +268,7 @@ function mount(m){
  if(actions){button=el("button","🚩 Zastavice","minor kz-world-locate");button.type="button";button.id="kz-flag-button";
  button.onclick=async()=>{try{if(!enabled)toggle?.click();const rows=await rpc().map(boundsArgs(true));if(rows?.length)map.flyTo([rows[0].lat,rows[0].lng],Math.max(MIN_ZOOM,map.getZoom()));}catch(e){console.warn(e);}};
  actions.insertBefore(button,document.getElementById("kz-iron-button")||actions.firstChild);}
- initVideo();map.on("kzprefetch zoomend",schedule);refresh();poll=setInterval(()=>{if(!document.hidden)refresh();},10000);
+ initVideo();map.on("moveend zoomend",schedule);refresh();poll=setInterval(()=>{if(!document.hidden)refresh();},10000);
 }
 window.KZKnowledgeFlags={count:()=>TOTAL,refresh,mount};
 window.addEventListener("kz:map-ready",e=>mount(e.detail?.map));

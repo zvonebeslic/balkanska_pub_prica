@@ -252,7 +252,7 @@
     if(!map||!layer)return;
     if(typeof on==="boolean")enabled=on;
     if(!enabled||map.getZoom()<NAV_ZOOM){removeAll();return;}
-    const viewport=map._kzPrefetchBounds?.(.16)||map.getBounds().pad(.16);
+    const viewport=map.getBounds().pad(.16);
     const center=map.getCenter(),mobile=map.getSize().x<560;
     const hits=all().filter(f=>viewport.contains([f.lat,f.lng]));
     hits.sort((a,b)=>distanceKm(a,center)-distanceKm(b,center));
@@ -309,10 +309,10 @@
       button.title="Pronađi čarobnu šumu s originalnim videom, 300 m²";
       button.addEventListener("click",focusNearest);
     }
-    map.on("kzprefetch zoomend",()=>{
+    map.on("moveend zoomend",()=>{
       clearTimeout(showTimer);
       if(map.getZoom()<NAV_ZOOM){refresh();return;}
-      showTimer=setTimeout(refresh,50);
+      showTimer=setTimeout(refresh,100);
     });
     refresh();
   }

@@ -132,7 +132,7 @@
     const z=map.getZoom();
     if(!enabled||z<OVERVIEW_ZOOM){visible.forEach(v=>map.removeLayer(v.marker));visible.clear();updateButton();return;}
     const now=realClock();
-    const bounds=map._kzPrefetchBounds?.(.22)||map.getBounds().pad(.22);
+    const bounds=map.getBounds().pad(.22);
     const center=map.getCenter(),matches=[];
     for(const id of activeCastleIds()){
       const v=calculate(id,now);
@@ -502,10 +502,10 @@
         enabled=toggle.getAttribute("aria-pressed")!=="false";
         setVisible();
       });
-      map.on("zoomend kzprefetch",function(){
+      map.on("zoomend moveend",function(){
         clearTimeout(refreshTimer);
         if(map.getZoom()<OVERVIEW_ZOOM){setVisible();return;}
-        refreshTimer=setTimeout(setVisible,50);
+        refreshTimer=setTimeout(setVisible,100);
       });
       setupButton();
       loadStatus();
