@@ -23,7 +23,7 @@
   const gpsAllows=b=>!firstGpsFlexible()||map.distance([firstGpsFix.lat,firstGpsFix.lon],previewCentre(b))<=firstGpsFix.radius;
   const alignBlock = (x,y) => ({x: Math.floor(x/10)*10, y: Math.floor(y/8)*8});
   const previewCentre = b => ll(b.x+5,b.y+4);
-  const BLOCK_AREA = 80;
+  const BLOCK_AREA = 20;
   let realmCatalog = [];
   let toastTimer, refreshTimer;
 
@@ -235,7 +235,7 @@
     $("realm-role").textContent = k ? roleName(k.role) : "Osnuj svoje ili zatraži pristup na karti";
     $("members-total").textContent = (current?.members?.length || 0) + " / 10";
     $("bank-count").textContent = formatArea(k?.bank);
-    $("bank-count").style.color = k?.bank >= 80 ? "#91f0ad" : "";
+    $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
     $("boost-caption").textContent = k?.area >= 1000 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje od 1.000 m²";
     $("create-panel").classList.toggle("hidden", !!k);
     $("joystick-panel").classList.toggle("hidden", !k || !map || map.getZoom()<18);
@@ -841,7 +841,7 @@
     updateCursorPreview();
     paintLivingWorld();
     $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi slobodno mjesto unutar 5 km." : detailed
-      ? "Fantasy granice na pravoj karti · 80 m² po bloku · POSTAVI u joysticku."
+      ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
       : "Dodirni mjesto na karti i postavi blok joystickom.";
 
   }
@@ -1106,7 +1106,7 @@
     updateCursorPreview();
 
   }
-  // Mreža je globalno poravnata: svaka pločica uvijek zauzima 10 × 8 = 80 m².
+  // Mreža je globalno poravnata: svaka pločica uvijek zauzima 10 × 8 na karti = 20 virtualnih m².
   function refreshBlockGrid(force=false) {
     if(!map||!blockGridLayer)return;
     const zoom=map.getZoom();
@@ -1180,10 +1180,10 @@
     if(owners.length===1){
       if([...battleMarkers.values()].some(e=>Number(e.battle.x)===b.x&&Number(e.battle.y)===b.y))
         return {text:"Na tom bloku već traje okršaj.",kind:"battle_busy"};
-      return {text:"⚔ NAPAD: suparnički blok 80 m², cijena 100 m².",kind:"attack"};
+      return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
     }
     if(current?.kingdom?.role!=="kralj")return {text:"Slobodne blokove može postavljati samo kralj kvizaš.",kind:"king_only"};
-    return {text:"Slobodan blok 80 m², cijena 80 m².",kind:"free"};
+    return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
   }
   function updateCursorPreview() {
     if (!map || !previewLayer) return;
@@ -1195,7 +1195,7 @@
     const gpsButton=$("gps-outpost-btn");
     if(gpsButton){
       gpsButton.classList.toggle("hidden",!isKing||needsFirstGps());
-      gpsButton.disabled=!isKing||needsFirstGps()||Number(current?.kingdom?.bank||0)<80||firstGpsBusy||previewBusy;
+      gpsButton.disabled=!isKing||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy;
     }
     const showPlacement=!!current?.kingdom&&(map.getZoom()>=18||(needsFirstGps()&&!firstGpsFix));
     $("joystick-panel")?.classList.toggle("hidden",!showPlacement);
@@ -1207,17 +1207,17 @@
     }
     const status=blockStatus(cursor);
     const bank=Number(current?.kingdom?.bank||0);
-    const cost=status.kind==="attack"?100:80;
+    const cost=status.kind==="attack"?100:20;
     const valid=["free","attack"].includes(status.kind)&&!(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden))&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=gpsLocked()||firstGpsBusy||previewBusy);
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
-      status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 80 m²":"Nadogradnja · 80 m²"):
+      status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
       status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj kvizaš":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
     if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
       btn.textContent=status.kind==="attack"?"NAPADNI":"POSTAVI";
-      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 1 točan ako je protivničko konto prazno, inače 3":"Zauzmi slobodni blok od 80 m² za 80 m²";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 1 točan ako je protivničko konto prazno, inače 3":"Zauzmi slobodni blok od 20 m² za 20 m²";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+10,cursor.y+8);
@@ -1227,7 +1227,7 @@
       dashArray:valid?"8 4":"4 6",interactive:false
     }).addTo(previewLayer);
     L.marker(previewCentre(cursor),{interactive:false,
-      icon:L.divIcon({className:"cursor-badge",html:"<b>♜ 80 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
+      icon:L.divIcon({className:"cursor-badge",html:"<b>♜ 20 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
     }).addTo(previewLayer);
     $("cursor-coords").textContent=cursor.x+" · "+cursor.y;
   }
@@ -1251,12 +1251,12 @@
     const status=blockStatus(cursor);
     if(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden)){toast("Prvo završi svoj trenutni okršaj.");return;}
     if(status.kind==="unconnected"){updateCursorPreview();return;}
-    const cost=status.kind==="attack"?100:80;
+    const cost=status.kind==="attack"?100:20;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
     const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Osvoji blok s 1 točnim odgovorom ako je protivničko konto prazno na početku napada, inače s 3 točna. Najviše 8 pitanja. Točan odgovor: protivnik gubi 20 m². Pogrešan ili istek: tvoje kraljevstvo gubi 20 m². Pobjeda vraća 100 m².":
-      (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 80 m² za 80 m² s konta?":"Zauzeti odabrani blok od 80 m² za 80 m² s konta?");
-    if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 80 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 80 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
+      (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
+    if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 20 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
     try{
       let gpsParams={};
@@ -1327,7 +1327,7 @@
     const won=q.status==="won", defender=q.side==="defender";
     const title=q.status==="invalid"?"Okršaj prekinut":q.insufficient_bank?"Nema dovoljno m²":won?"⚔ Blok osvojen!":"🛡 Teritorij obranjen!";
     modal(title,duelSummary(q)+battleRounds(q)+
-      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 80 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
+      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 20 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
       '<section id="kz-duel-review"><p>Učitavam završni pregled…</p></section>'+
       '<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
     $("dialog").classList.add("kz-quiz-dialog");
@@ -1680,7 +1680,7 @@
     modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 1.000 m².')+'</p>'+
       '<p>Dok kraljevstvo ima 1.000 m² ili više, svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok ima 80 m². Slobodan blok košta 80 m².</p>'+
+      '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok vrijedi 20 virtualnih m². Slobodan blok košta 20 m².</p>'+
       '<p>Okršaj za tuđi blok ima ulog 100 m² i set od 8 pitanja. Ako je protivnički konto na početku napada prazan, dovoljan je jedan točan odgovor za osvajanje; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m² napadaču. Svaki netočan odgovor napadača skida 20 m² s konta njegova kraljevstva, dok svaki njegov točan odgovor skida 20 m² s konta protivničkog kraljevstva (odnosno preostali iznos ako je na kontu manje od 20 m²).</p>');
   }
   async function showApplicantStatistics(requestId){
@@ -1887,7 +1887,7 @@
     duelResumeButton.hidden=true;duelResumeButton.onclick=resumeTerritoryDuel;
     document.querySelector(".map-top .map-actions")?.append(duelResumeButton);
     $("gps-outpost-btn").addEventListener("click",()=>{
-      if(current?.kingdom?.role!=="kralj"||needsFirstGps()||Number(current?.kingdom?.bank||0)<80||firstGpsBusy||previewBusy)return;
+      if(current?.kingdom?.role!=="kralj"||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy)return;
       chooseFirstGps();
     });
     document.querySelectorAll("[data-joy]").forEach(b=>b.addEventListener("click",()=>moveCursor(b.dataset.joy)));
