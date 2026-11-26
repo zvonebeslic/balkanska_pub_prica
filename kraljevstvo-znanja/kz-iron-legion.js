@@ -40,7 +40,7 @@
   }
   function generation(id){return Number(states.get(id)?.generation??byId.get(id)?.generation)||0;}
   function mapParams(nearest=false){
-    const b=map.getBounds().pad(.18),c=map.getCenter();
+    const b=map._kzPrefetchBounds?.(.18)||map.getBounds().pad(.18),c=map.getCenter();
     return {p_south:b.getSouth(),p_north:b.getNorth(),p_west:b.getWest(),p_east:b.getEast(),p_lat:c.lat,p_lng:c.lng,p_nearest:nearest};
   }
   function register(row){
@@ -155,10 +155,10 @@
       }
       sprite=img;
       ready=true;
-      map.on("moveend zoomend",()=>{
+      map.on("kzprefetch zoomend",()=>{
         clearTimeout(pendingRefresh);
         if(map.getZoom()<OVERVIEW_ZOOM){refresh();return;}
-        pendingRefresh=setTimeout(refresh,90);
+        pendingRefresh=setTimeout(refresh,50);
       });
       document.getElementById("map-life-toggle")?.addEventListener("click",refresh);
       refresh();

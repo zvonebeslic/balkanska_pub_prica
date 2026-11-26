@@ -15,7 +15,9 @@
   function stopMainTimer(){if(mainQuizSession){clearInterval(mainQuizSession.timer);mainQuizSession.timer=null;}}
   let territoryPaintKey=null, blockGridPaintKey=null, initialMapReady=false;
   let territoryCellBounds=null, territoryBuffered=false, territoryRefreshTimer=null;
-  const TERRITORY_BUFFER_M=1000, TERRITORY_REFILL_M=250;
+  const TERRITORY_BUFFER_M=5000, TERRITORY_REFILL_M=4000;
+  const territoryFills=new Map();
+  let lastTerritoryPaintZoom=null;
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
   let firstGpsFix = null, firstGpsBusy = false;
   const needsFirstGps = () => current?.kingdom?.role === 'kralj' && Number(current.kingdom.area||0)===0;
@@ -222,13 +224,17 @@
       "Pitanja su spremna. Novo odbrojavanje počinje tek nakon svih 10 odgovora.";
   }
   // Expand the visible geographic bounds in metres, not in screen pixels or grid cells.
-  function territoryParams(bounds, metres=0){
+  function expandedBounds(bounds, metres=0){
     const degrees=metres/R*180/Math.PI;
     const south=Math.max(-90,bounds.getSouth()-degrees);
     const north=Math.min(90,bounds.getNorth()+degrees);
     const maxLat=Math.max(Math.abs(south),Math.abs(north));
     const lonPad=metres?Math.min(180,degrees/Math.max(1e-6,Math.cos(maxLat*Math.PI/180))):0;
-    const lo=xy(south,bounds.getWest()-lonPad),hi=xy(north,bounds.getEast()+lonPad);
+    return L.latLngBounds([south,bounds.getWest()-lonPad],[north,bounds.getEast()+lonPad]);
+  }
+  function territoryParams(bounds, metres=0){
+    const b=expandedBounds(bounds,metres);
+    const lo=xy(b.getSouth(),b.getWest()),hi=xy(b.getNorth(),b.getEast());
     return {p_min_x:Math.min(lo.x,hi.x)-1,p_max_x:Math.max(lo.x,hi.x)+1,
       p_min_y:Math.min(lo.y,hi.y)-1,p_max_y:Math.max(lo.y,hi.y)+1};
   }
@@ -243,7 +249,7 @@
     territoryRefreshTimer=setTimeout(()=>{
       territoryRefreshTimer=null;
       if(initialMapReady&&!mapLoading&&map.getZoom()>=17&&!territoryCovered())void reloadMap();
-    },150);
+    },100);
   }
   // The RPC caps a response at 8,000 cells. Split saturated requests so the
   // extra buffer never hides nearer cells as kingdoms grow.
@@ -592,7 +598,8 @@
     }
     labelsLayer.clearLayers();
     borderLayer.clearLayers();
-    tilesLayer.clearLayers();
+    // Retain unchanged fill paths when the moving window acquires or drops cells.
+    const nextFills=new Set();
     const own = current?.kingdom?.id;
     const detailed = map.getZoom() >= 17;
     const byId = new Map(kingdoms.map(k => [k.id,k]));
@@ -623,13 +630,18 @@
         const k=byId.get(rect.k);
         if(!k)continue;
         const sw=ll(rect.x0,rect.y0),ne=ll(rect.x1,rect.y1);
-        L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
-          stroke:false,fillColor:k.color,fillOpacity:0.58,
-          interactive:true,noClip:true,renderer:map._kzTerritoryRenderer
-        }).on("click",event=>{
-          L.DomEvent.stopPropagation(event);
-          showKingdom(k);
-        }).addTo(tilesLayer);
+        const key=JSON.stringify([rect.k,rect.x0,rect.x1,rect.y0,rect.y1,k.color]);
+        nextFills.add(key);
+        if(!territoryFills.has(key)){
+          const layer=new map._kzBufferedRectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
+            stroke:false,fillColor:k.color,fillOpacity:0.58,
+            interactive:true,noClip:true,smoothFactor:0,renderer:map._kzTerritoryRenderer
+          }).on("click",event=>{
+            L.DomEvent.stopPropagation(event);
+            showKingdom(kingdoms.find(realm=>realm.id===rect.k)||k);
+          }).addTo(tilesLayer);
+          territoryFills.set(key,layer);
+        }
       }
       const edge = (owner, axis, fixed, variable) => {
         const key = owner + "|" + axis + "|" + fixed;
@@ -680,8 +692,12 @@
       }
       if(towers)for(const key of towers)paintTower(key);
     }
+    for(const [key,layer] of territoryFills){
+      if(!nextFills.has(key)){tilesLayer.removeLayer(layer);territoryFills.delete(key);}
+    }
     refreshBlockGrid(true);
     territoryPaintKey=nextPaintKey;
+    lastTerritoryPaintZoom=map.getZoom();
     updateCursorPreview();
     paintLivingWorld();
     $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi svoju lokaciju." : detailed
@@ -851,6 +867,22 @@
     map.createPane("kz-territory-fill-pane").style.zIndex="399";
     map._kzTerritoryRenderer=L.svg({pane:"kz-territory-fill-pane",padding:.25}).addTo(map);
     map._kzTerritoryRenderer._container.style.overflow="visible";
+    // Leaflet 1.9.4 culls polygons before checking noClip. Keep their paths
+    // intact outside the SVG viewport so dragging never reveals an empty path.
+    map._kzBufferedRectangle=L.Rectangle.extend({
+      _clipPoints(){this._parts=this._rings||[];}
+    });
+    map._kzPrefetchBounds=(fraction=0)=>expandedBounds(map.getBounds().pad(fraction),TERRITORY_BUFFER_M);
+    let worldPrefetchBounds=null,worldPrefetchZoom=null,lastWorldPrefetch=0;
+    function updateWorldPrefetch(force=false){
+      const z=map.getZoom(),now=performance.now();
+      const inner=expandedBounds(map.getBounds(),TERRITORY_REFILL_M);
+      if(!force&&worldPrefetchZoom===z&&worldPrefetchBounds?.contains(inner))return;
+      if(!force&&now-lastWorldPrefetch<200)return;
+      worldPrefetchBounds=map._kzPrefetchBounds();
+      worldPrefetchZoom=z;lastWorldPrefetch=now;
+      map.fire("kzprefetch");
+    }
     tilesLayer = L.layerGroup().addTo(map);
     blockGridLayer = L.layerGroup().addTo(map);
     borderLayer = L.layerGroup().addTo(map);
@@ -873,15 +905,19 @@
       clearTimeout(timer);
       if(!initialMapReady)return;
       if(map.getZoom()>=17){
-        if(territoryCovered())drawMap();
-        else scheduleTerritoryCheck();
+        if(lastTerritoryPaintZoom!==map.getZoom())drawMap();
+        if(!territoryCovered())scheduleTerritoryCheck();
       }else{
         timer=setTimeout(reloadMap,180);
       }
+      updateWorldPrefetch();
     });
     // Refill during long drags/compass travel rather than waiting for the gesture to end.
     map.on("move",()=>{
-      if(initialMapReady&&map.getZoom()>=17)scheduleTerritoryCheck();
+      if(initialMapReady&&map.getZoom()>=17){
+        scheduleTerritoryCheck();
+        updateWorldPrefetch();
+      }
     });
     // Oznaka slijedi kartu dok je korisnik povlači, bez ažuriranja DOM-a 60x/s.
     let xyFrame=0;
