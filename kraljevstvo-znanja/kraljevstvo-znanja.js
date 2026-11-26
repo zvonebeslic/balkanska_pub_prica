@@ -417,8 +417,9 @@
   function paintTower(key){
     const [x,y]=key.split(":").map(Number),zoom=map.getZoom();
     const p=map.project(ll(x,y),zoom),e=map.project(ll(x+5,y),zoom),n=map.project(ll(x,y+4),zoom);
-    const w=Math.max(8,Math.max(Math.abs(e.x-p.x),Math.abs(n.y-p.y)*.85)*.43);
-    const h=w*92/40;
+    const baseWidth=Math.max(8,Math.max(Math.abs(e.x-p.x),Math.abs(n.y-p.y)*.85)*.43);
+    const w=baseWidth*1.10;
+    const h=baseWidth*92/40;
     // Keep the original bottom/ground anchor and grow only upwards.
     const bottom=p.y+h*.15,top=bottom-h*FORTIFICATION_HEIGHT_SCALE;
     const bounds=L.latLngBounds(map.unproject(L.point(p.x-w/2,bottom),zoom),map.unproject(L.point(p.x+w/2,top),zoom));
