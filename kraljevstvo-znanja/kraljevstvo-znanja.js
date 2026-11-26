@@ -370,6 +370,7 @@
   });
   let dryWallReady=false, towerReady=false;
   const TOWER_URL="./media/kz-tower.webp?v=1";
+  const FORTIFICATION_HEIGHT_SCALE=1.20;
   function prepareTowers(){
     const image=new Image();
     image.onload=()=>{towerReady=true;if(dryWallReady&&map&&borderLayer)drawMap();};
@@ -418,8 +419,9 @@
     const p=map.project(ll(x,y),zoom),e=map.project(ll(x+5,y),zoom),n=map.project(ll(x,y+4),zoom);
     const w=Math.max(8,Math.max(Math.abs(e.x-p.x),Math.abs(n.y-p.y)*.85)*.43);
     const h=w*92/40;
-    // Base overlaps the corner; the tower rises above the masonry without hiding the block.
-    const bounds=L.latLngBounds(map.unproject(L.point(p.x-w/2,p.y+h*.15),zoom),map.unproject(L.point(p.x+w/2,p.y-h*.85),zoom));
+    // Keep the original bottom/ground anchor and grow only upwards.
+    const bottom=p.y+h*.15,top=bottom-h*FORTIFICATION_HEIGHT_SCALE;
+    const bounds=L.latLngBounds(map.unproject(L.point(p.x-w/2,bottom),zoom),map.unproject(L.point(p.x+w/2,top),zoom));
     L.imageOverlay(TOWER_URL,bounds,{pane:"kz-tower-pane",interactive:false,alt:"",opacity:1}).addTo(borderLayer);
   }
   const dryWallSprites={...DRY_WALL_URLS};
@@ -478,6 +480,10 @@
         left=a.x-thick*.5;right=a.x+thick*.5;
         top=Math.min(a.y,b.y)-overlap;bottom=Math.max(a.y,b.y)+overlap;
       }
+      // Horizontal sprites' screen height is the wall thickness; north/south
+      // running segments also contain ground length. Raise only their nominal
+      // wall height so the 4 m grid segments do not grow by 20% in length.
+      top-=(horizontal?bottom-top:thick)*(FORTIFICATION_HEIGHT_SCALE-1);
       const bounds=L.latLngBounds(map.unproject(L.point(left,bottom),zoom),map.unproject(L.point(right,top),zoom));
       L.imageOverlay(dryWallSprites[side],bounds,{
         pane:"kz-dry-wall-pane",interactive:false,opacity:1,alt:"",className:"kz-dry-wall",
