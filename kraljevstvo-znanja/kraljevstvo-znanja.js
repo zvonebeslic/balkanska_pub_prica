@@ -484,7 +484,7 @@
       // Horizontal sprites' screen height is the wall thickness; north/south
       // running segments also contain ground length. Raise only their nominal
       // wall height so the 4 m grid segments do not grow by 20% in length.
-      top-=(horizontal?bottom-top:thick)*(FORTIFICATION_HEIGHT_SCALE-1);
+      top-=(horizontal?bottom-top:thick)*(FORTIFICATION_HEIGHT_SCALE*1.20-1);
       const bounds=L.latLngBounds(map.unproject(L.point(left,bottom),zoom),map.unproject(L.point(right,top),zoom));
       L.imageOverlay(dryWallSprites[side],bounds,{
         pane:"kz-dry-wall-pane",interactive:false,opacity:1,alt:"",className:"kz-dry-wall",
