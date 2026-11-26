@@ -14,7 +14,8 @@
   let mainQuizSession=null;
   function stopMainTimer(){if(mainQuizSession){clearInterval(mainQuizSession.timer);mainQuizSession.timer=null;}}
   let territoryPaintKey=null, blockGridPaintKey=null, initialMapReady=false;
-  let territoryCellBounds=null;
+  let territoryCellBounds=null, territoryBuffered=false, territoryRefreshTimer=null;
+  const TERRITORY_BUFFER_M=1000, TERRITORY_REFILL_M=250;
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
   let firstGpsFix = null, firstGpsBusy = false;
   const needsFirstGps = () => current?.kingdom?.role === 'kralj' && Number(current.kingdom.area||0)===0;
@@ -220,35 +221,82 @@
       wait ? "Nova pitanja za " + hh + ":" + mm + ":" + ss :
       "Pitanja su spremna. Novo odbrojavanje počinje tek nakon svih 10 odgovora.";
   }
+  // Expand the visible geographic bounds in metres, not in screen pixels or grid cells.
+  function territoryParams(bounds, metres=0){
+    const degrees=metres/R*180/Math.PI;
+    const south=Math.max(-90,bounds.getSouth()-degrees);
+    const north=Math.min(90,bounds.getNorth()+degrees);
+    const maxLat=Math.max(Math.abs(south),Math.abs(north));
+    const lonPad=metres?Math.min(180,degrees/Math.max(1e-6,Math.cos(maxLat*Math.PI/180))):0;
+    const lo=xy(south,bounds.getWest()-lonPad),hi=xy(north,bounds.getEast()+lonPad);
+    return {p_min_x:Math.min(lo.x,hi.x)-1,p_max_x:Math.max(lo.x,hi.x)+1,
+      p_min_y:Math.min(lo.y,hi.y)-1,p_max_y:Math.max(lo.y,hi.y)+1};
+  }
+  function territoryCovered(){
+    if(!territoryBuffered||!territoryCellBounds)return false;
+    const a=territoryCellBounds,b=territoryParams(map.getBounds(),TERRITORY_REFILL_M);
+    return a.p_min_x<=b.p_min_x&&a.p_max_x>=b.p_max_x&&
+      a.p_min_y<=b.p_min_y&&a.p_max_y>=b.p_max_y;
+  }
+  function scheduleTerritoryCheck(){
+    if(territoryRefreshTimer!==null)return;
+    territoryRefreshTimer=setTimeout(()=>{
+      territoryRefreshTimer=null;
+      if(initialMapReady&&!mapLoading&&map.getZoom()>=17&&!territoryCovered())void reloadMap();
+    },150);
+  }
+  // The RPC caps a response at 8,000 cells. Split saturated requests so the
+  // extra buffer never hides nearer cells as kingdoms grow.
+  async function completeTerritoryCells(params,data,rev){
+    if(rev!==mapRevision)return [];
+    const found=data.cells||[];
+    if(found.length<8000)return found;
+    const w=params.p_max_x-params.p_min_x,h=params.p_max_y-params.p_min_y;
+    if(w===0&&h===0)return found;
+    const axis=w>=h?"x":"y",min="p_min_"+axis,max="p_max_"+axis;
+    const mid=Math.floor((params[min]+params[max])/2);
+    const left={...params,[max]:mid},right={...params,[min]:mid+1};
+    const a=await rpc("kz_map",left);
+    const ac=await completeTerritoryCells(left,a,rev);
+    if(rev!==mapRevision)return [];
+    const b=await rpc("kz_map",right);
+    const bc=await completeTerritoryCells(right,b,rev);
+    return ac.concat(bc);
+  }
   async function reloadMap() {
     if (!map) return;
     const rev = ++mapRevision;
     mapLoading = true;
-    const bounds = map.getBounds();
+    const bounds = map.getBounds(), buffered=map.getZoom()>=17;
+    const cellParams=()=>territoryParams(bounds,buffered?TERRITORY_BUFFER_M:0);
     let params = {};
-    const cellParams=()=>{
-      const lo = xy(bounds.getSouth(), bounds.getWest());
-      const hi = xy(bounds.getNorth(), bounds.getEast());
-      const pad=map.getZoom()>=18?52:0; // Two tower-clearance halos keep crop edges outside the visible map.
-      return { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
-        p_min_y: Math.min(lo.y,hi.y)-pad, p_max_y: Math.max(lo.y,hi.y)+pad };
-    };
-    if(map.getZoom()>=17||overviewNeedsCells(kingdoms))params=cellParams();
+    let applied=false;
+    if(buffered||overviewNeedsCells(kingdoms))params=cellParams();
     try {
       let data = await rpc("kz_map", params);
       if (rev !== mapRevision) return;
       if(params.p_min_x==null&&overviewNeedsCells(data.kingdoms||[])){
-        data=await rpc("kz_map",cellParams());
+        params=cellParams();
+        data=await rpc("kz_map",params);
         if(rev!==mapRevision)return;
       }
+      const nextCells=buffered?await completeTerritoryCells(params,data,rev):(data.cells||[]);
+      if(rev!==mapRevision)return;
       kingdoms = data.kingdoms || [];
       window.dispatchEvent(new CustomEvent("kz:kingdoms", {detail:{kingdoms}}));
-      cells = data.cells || [];
+      cells = nextCells;
       territoryCellBounds=params.p_min_x==null?null:{...params};
+      territoryBuffered=buffered;
       drawMap();
+      applied=true;
     } catch (error) {
       if (rev === mapRevision) toast(error.message);
-    } finally { if (rev === mapRevision) mapLoading = false; }
+    } finally {
+      if(rev===mapRevision){
+        mapLoading=false;
+        if(applied&&initialMapReady&&map.getZoom()>=17&&!territoryCovered())scheduleTerritoryCheck();
+      }
+    }
   }
   function cellOwner(x,y) {
     return cells.find(c => Number(c.x) === x && Number(c.y) === y)?.k || null;
@@ -577,7 +625,7 @@
         const sw=ll(rect.x0,rect.y0),ne=ll(rect.x1,rect.y1);
         L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
           stroke:false,fillColor:k.color,fillOpacity:0.58,
-          interactive:true,renderer:map._kzCanvasRenderer
+          interactive:true,noClip:true,renderer:map._kzTerritoryRenderer
         }).on("click",event=>{
           L.DomEvent.stopPropagation(event);
           showKingdom(k);
@@ -640,7 +688,7 @@
       ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
       : "Dodirni mjesto na karti i postavi blok joystickom.";
     $("map-count").textContent = kingdoms.length + " kraljevstava · " +
-      (detailed ? cells.length + " m² u prikazu" : kingdoms.reduce((sum,k)=>sum+(Number(k.area)||0),0) + " m² ukupno");
+      (detailed ? cells.length + " m² učitano" : kingdoms.reduce((sum,k)=>sum+(Number(k.area)||0),0) + " m² ukupno");
   }
   function updateMapXY() {
     if(!map)return;
@@ -794,6 +842,10 @@
     map.getPane("kz-lotar-pane").style.pointerEvents="none";
     L.imageOverlay("./media/lotar.webp",lotarBounds,{pane:"kz-lotar-pane",interactive:false,opacity:1,alt:"Kraljevstvo Lotar"}).addTo(map);
     map._kzCanvasRenderer = L.canvas({ padding: .1 });
+    // SVG paths retain the full prefetched territory without allocating a kilometre-sized canvas.
+    map.createPane("kz-territory-fill-pane").style.zIndex="399";
+    map._kzTerritoryRenderer=L.svg({pane:"kz-territory-fill-pane",padding:.25}).addTo(map);
+    map._kzTerritoryRenderer._container.style.overflow="visible";
     tilesLayer = L.layerGroup().addTo(map);
     blockGridLayer = L.layerGroup().addTo(map);
     borderLayer = L.layerGroup().addTo(map);
@@ -814,7 +866,17 @@
       refreshBlockGrid();
       updateCursorPreview();
       clearTimeout(timer);
-      if(initialMapReady)timer=setTimeout(reloadMap,180);
+      if(!initialMapReady)return;
+      if(map.getZoom()>=17){
+        if(territoryCovered())drawMap();
+        else scheduleTerritoryCheck();
+      }else{
+        timer=setTimeout(reloadMap,180);
+      }
+    });
+    // Refill during long drags/compass travel rather than waiting for the gesture to end.
+    map.on("move",()=>{
+      if(initialMapReady&&map.getZoom()>=17)scheduleTerritoryCheck();
     });
     // Oznaka slijedi kartu dok je korisnik povlači, bez ažuriranja DOM-a 60x/s.
     let xyFrame=0;
