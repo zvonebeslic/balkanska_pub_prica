@@ -14,6 +14,7 @@
   let mainQuizSession=null;
   function stopMainTimer(){if(mainQuizSession){clearInterval(mainQuizSession.timer);mainQuizSession.timer=null;}}
   let territoryPaintKey=null, blockGridPaintKey=null, initialMapReady=false;
+  let territoryCellBounds=null;
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
   let firstGpsFix = null, firstGpsBusy = false;
   const needsFirstGps = () => current?.kingdom?.role === 'kralj' && Number(current.kingdom.area||0)===0;
@@ -228,7 +229,7 @@
     const cellParams=()=>{
       const lo = xy(bounds.getSouth(), bounds.getWest());
       const hi = xy(bounds.getNorth(), bounds.getEast());
-      const pad=map.getZoom()>=18?26:0; // Include five wall blocks beyond the visible edge for tower clearance.
+      const pad=map.getZoom()>=18?52:0; // Two tower-clearance halos keep crop edges outside the visible map.
       return { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
         p_min_y: Math.min(lo.y,hi.y)-pad, p_max_y: Math.max(lo.y,hi.y)+pad };
     };
@@ -243,6 +244,7 @@
       kingdoms = data.kingdoms || [];
       window.dispatchEvent(new CustomEvent("kz:kingdoms", {detail:{kingdoms}}));
       cells = data.cells || [];
+      territoryCellBounds=params.p_min_x==null?null:{...params};
       drawMap();
     } catch (error) {
       if (rev === mapRevision) toast(error.message);
@@ -373,9 +375,12 @@
     image.onload=()=>{towerReady=true;if(dryWallReady&&map&&borderLayer)drawMap();};
     image.src=TOWER_URL;
   }
-  // A corner is a change in the local boundary direction for any kingdom.
-  // Examine the four unit cells surrounding each vertex, including old partial blocks.
-  function collectTowerCorners(grid){
+  // Towers use real world coordinates and only inspect known territory cells.
+  function towerContextKnown(bounds,x,y,margin=1){
+    return !!bounds&&x-margin>=bounds.p_min_x&&x+margin-1<=bounds.p_max_x&&
+      y-margin>=bounds.p_min_y&&y+margin-1<=bounds.p_max_y;
+}
+  function collectTowerCorners(grid,bounds){
     const vertices=new Set(), towers=new Set();
     for(const key of grid.keys()){
       const [x,y]=key.split(":").map(Number);
@@ -383,6 +388,8 @@
     }
     for(const key of vertices){
       const [x,y]=key.split(":").map(Number);
+      // Outside a loaded window, absence of a cell does not mean empty territory.
+      if(!towerContextKnown(bounds,x,y))continue;
       const owners=[grid.get((x-1)+":"+(y-1)),grid.get(x+":"+(y-1)),grid.get(x+":"+y),grid.get((x-1)+":"+y)];
       for(const owner of new Set(owners.filter(v=>v!=null))){
         const a=owners.map(v=>v===owner),n=a.filter(Boolean).length;
@@ -390,21 +397,22 @@
       }
     }
     return towers;
-  }
-  // A straight tower requires five complete wall blocks in BOTH directions.
-  // Existing corner towers and previously placed straight towers are mandatory clearance points.
-  function addStraightTowerJoints(towers,side,fixed,from,to){
+}
+  function addStraightTowerJoints(towers,corners,bounds,side,fixed,from,to){
     const horizontal=side==="N"||side==="S",block=horizontal?5:4,clearance=block*5;
     const keyAt=v=>horizontal?v+":"+fixed:fixed+":"+v;
     if(to-from<2*clearance)return;
-    for(let v=Math.ceil((from+clearance)/block)*block;v<=to-clearance;v+=block){
+    // Fixed world-grid phase, never relative to the clipped beginning of a wall.
+    for(let v=Math.ceil((from+clearance)/clearance)*clearance;v<=to-clearance;v+=clearance){
+      const x=horizontal?v:fixed,y=horizontal?fixed:v;
+      if(!towerContextKnown(bounds,x,y,clearance+1))continue;
       let clear=true;
       for(let d=1-clearance;d<clearance;d++){
-        if(towers.has(keyAt(v+d))){clear=false;break;}
+        if(corners.has(keyAt(v+d))){clear=false;break;}
       }
       if(clear)towers.add(keyAt(v));
     }
-  }
+}
   function paintTower(key){
     const [x,y]=key.split(":").map(Number),zoom=map.getZoom();
     const p=map.project(ll(x,y),zoom),e=map.project(ll(x+5,y),zoom),n=map.project(ll(x,y+4),zoom);
@@ -507,7 +515,20 @@
   function currentTerritoryPaintKey(){
     const z=map.getZoom(),ks=kingdoms.map(k=>JSON.stringify(k)).sort();
     const cs=cells.map(c=>c.x+":"+c.y+":"+c.k).sort();
-    return JSON.stringify([z,dryWallReady,towerReady,ks,cs]);
+    // Only invalidate for crop changes near the actual geometry, not ordinary pans.
+    let towerContext=null;
+    if(z>=18&&territoryCellBounds&&cells.length){
+      let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+      for(const c of cells){
+        const x=Number(c.x),y=Number(c.y);
+        minX=Math.min(minX,x);maxX=Math.max(maxX,x);
+        minY=Math.min(minY,y);maxY=Math.max(maxY,y);
+      }
+      const b=territoryCellBounds;
+      towerContext=[Math.max(b.p_min_x,minX-26),Math.min(b.p_max_x,maxX+26),
+        Math.max(b.p_min_y,minY-26),Math.min(b.p_max_y,maxY+26)];
+    }
+    return JSON.stringify([z,dryWallReady,towerReady,ks,cs,towerContext]);
   }
   function drawMap() {
     const nextPaintKey=currentTerritoryPaintKey();
@@ -541,7 +562,8 @@
       const outline = new Map();
       const showWalls=map.getZoom()>=18;
       const useDryWalls=dryWallReady&&showWalls;
-      const towers=useDryWalls&&towerReady?collectTowerCorners(grid):null;
+      const corners=useDryWalls&&towerReady?collectTowerCorners(grid,territoryCellBounds):null;
+      const towers=corners?new Set(corners):null;
       for(const rect of mergeTerritoryCells(cells)){
         const k=byId.get(rect.k);
         if(!k)continue;
@@ -585,7 +607,7 @@
         if (!sorted.length) continue;
         let begin = sorted[0], last = begin;
         const paint = (a,b) => {
-          if(useDryWalls){paintDryWall(axis,fixed,a,b+1);if(towers)addStraightTowerJoints(towers,axis,fixed,a,b+1);return;}
+          if(useDryWalls){paintDryWall(axis,fixed,a,b+1);if(towers)addStraightTowerJoints(towers,corners,territoryCellBounds,axis,fixed,a,b+1);return;}
           const points = axis === "H"
             ? [ll(a,fixed),ll(b+1,fixed)]
             : [ll(fixed,a),ll(fixed,b+1)];
