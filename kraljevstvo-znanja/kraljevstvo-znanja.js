@@ -1622,7 +1622,7 @@
   }
   async function renderMembers() {
     const kingdomId=current?.kingdom?.id||null;
-    modal("Doprinos članova","<p>Učitavam zajedničku statistiku…</p>");
+    modal("Članovi i doprinos","<p>Učitavam zajedničku statistiku…</p>");
     const body=$("dialog-body");
     const loading=body.firstElementChild;
     try{
@@ -1647,7 +1647,7 @@
           '<button class="secondary" data-manage="crown" data-member="'+safe(m.id)+'">Predaj krunu</button>'+
           '<button class="secondary" data-manage="kick" data-member="'+safe(m.id)+'">Isključi</button></div>':'')+'</article>';
       }).join("");
-      modal(kingdomId?"Doprinos članova · "+current.kingdom.name:"Moja statistika",
+      modal(kingdomId?"Članovi i doprinos · "+current.kingdom.name:"Moja statistika",
         '<p class="member-meta">Sva odigrana pitanja u Kraljevstvu znanja, uključujući istek vremena. Dodirni ime za statistiku po vrsti izazova.</p>'+
         (html||'<p>Još nema statistike.</p>')+'<button class="secondary" id="kz-stats-close">Zatvori</button>');
       $("kz-stats-close").onclick=closeModal;
@@ -1667,15 +1667,44 @@
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
       '<p>Do uključivo 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m². Okršaj za tuđi blok ima ulog 100 m² i najviše 8 pitanja. Ako je protivničko konto na početku napada prazno, dovoljan je jedan točan odgovor; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m²; svaki odgovor skida do 20 m² s konta odgovarajućeg kraljevstva.</p>');
   }
+  async function showApplicantStatistics(requestId){
+    const request=(current?.requests||[]).find(r=>r.id===requestId);
+    if(!request||current?.kingdom?.role!=="kralj")return;
+    const realm=current.kingdom.id;
+    modal("Statistika kandidata","<p>Učitavam ukupnu statistiku igrača…</p>");
+    const body=$("dialog-body"),loading=body.firstElementChild;
+    try{
+      const m=await rpc("kz_applicant_statistics",args({p_request:requestId}));
+      if(body.firstElementChild!==loading||$("dialog-backdrop").classList.contains("hidden")||current?.kingdom?.id!==realm||current.kingdom.role!=="kralj")return;
+      const c=Number(m.total_correct)||0,w=Number(m.total_wrong)||0,n=c+w;
+      const score=(a,b)=>a+b?Math.round(a*100/(a+b))+"%":"—";
+      const categories=[["quiz","Redovni kviz (svaka 4 h)"],["guardian","Čudovišta i čuvari"],["flag","Zastavice"],["territory","Okršaji za teritorij"]];
+      modal("Statistika kandidata · "+m.name,
+        '<article class="member"><b>'+safe(m.name)+'</b><p class="member-meta">Ukupna statistika iz svih dosadašnjih kraljevstava</p>'+
+        '<p>Odigrano: <b>'+n+'</b> · Točni: <b>'+c+' ('+score(c,w)+')</b> · Netočni: <b>'+w+' ('+score(w,c)+')</b></p>'+
+        '<p>Ukupno zarađeno: <b>'+formatArea(m.total_earned)+'</b> · Osvojeno od protivnika: <b>'+formatArea(m.captured_m2)+'</b></p>'+
+        categories.map(([key,label])=>{const row=m.sources?.[key]||{},a=Number(row.correct)||0,b=Number(row.wrong)||0;return '<div class="member-meta"><b>'+label+'</b> · '+score(a,b)+' · '+(a+b)+' pitanja · ✓ '+a+' · ✕ '+b+'</div>';}).join("")+
+        '</article><div class="request-controls"><button id="kz-approve-applicant">✓ Prihvati</button><button id="kz-reject-applicant">✕ Odbij</button></div><button id="kz-back-applicant" class="secondary">Zatvori</button>');
+      $("kz-back-applicant").onclick=closeModal;
+      for(const [id,accept] of [["kz-approve-applicant",true],["kz-reject-applicant",false]]){
+        $(id).onclick=async()=>{
+          $("kz-approve-applicant").disabled=true;$("kz-reject-applicant").disabled=true;
+          try{await rpc("kz_review",args({p_request:requestId,p_accept:accept}));closeModal();await reloadState();await reloadMap();toast("Odluka je spremljena.");}
+          catch(e){toast(e.message);if($(id)){$("kz-approve-applicant").disabled=false;$("kz-reject-applicant").disabled=false;}}
+        };
+      }
+    }catch(e){if(body.firstElementChild===loading)body.textContent=e.message;}
+  }
   function renderRequests() {
     const list=current?.requests||[];
     $("requests-panel").classList.toggle("hidden",current?.kingdom?.role!=="kralj");
     $("request-count").textContent=list.length?'('+list.length+')':'';
     $("requests-list").innerHTML=list.length ?
       list.map(r=>'<div><b>'+safe(r.name)+'</b> želi pristup · '+dateTime(r.at)+
-        '<div class="request-controls"><button data-request="'+r.id+'" data-decision="yes">✓ Prihvati</button>'+
+        '<div class="request-controls"><button data-applicant="'+safe(r.id)+'">📊 Statistika igrača</button><button data-request="'+r.id+'" data-decision="yes">✓ Prihvati</button>'+
         '<button data-request="'+r.id+'" data-decision="no">✕ Odbij</button></div></div>').join("") :
       '<div class="empty-note">Nema zahtjeva na čekanju.</div>';
+    document.querySelectorAll("[data-applicant]").forEach(b=>b.onclick=()=>showApplicantStatistics(b.dataset.applicant));
     document.querySelectorAll("[data-request]").forEach(b=>b.addEventListener("click",async()=>{
       try {
         b.disabled=true;
@@ -1829,7 +1858,7 @@
     // Kada je čuvar pobijeđen, osvježi i prikaz zajedničkog konta kraljevstva.
     window.addEventListener("kz:guardian-reward",()=>reloadState().catch(console.warn));
     $("play-btn").addEventListener("click",play);
-    $("history-open").addEventListener("click",showFullHistory);
+
     $("battle-history-open").addEventListener("click",showBattleHistory);
     $("realm-event-more").addEventListener("click",()=>refreshRealmEvents(true));
     setInterval(()=>{if(document.visibilityState==="visible")void refreshRealmEvents();},10000);
