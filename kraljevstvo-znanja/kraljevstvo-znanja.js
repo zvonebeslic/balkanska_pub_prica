@@ -105,8 +105,8 @@
     const abandoned=mainQuizSession;stopMainTimer();mainQuizSession=null;
     if(abandoned&&!abandoned.done&&!abandoned.busy&&abandoned.position){rpc("kz_answer",args({p_game_id:abandoned.gameId,p_number:abandoned.position,p_choice:"SKIP"})).then(()=>reloadState()).catch(()=>{});}
     const duel=territoryDuel;
-    if(duel){clearInterval(duel.timer);territoryDuel=null;
-      if(!duel.done&&!duel.busy&&duel.q.status==="active"){
+    if(duel){clearInterval(duel.timer);clearInterval(duel.poll);territoryDuel=null;
+      if(!duel.done&&!duel.busy&&!duel.q.submitted&&!duel.q.intermission&&duel.q.status==="active"){
         rpc("kz_territory_duel",args({p_action:"answer",p_id:duel.q.id,p_number:duel.q.position,p_choice:"SKIP"}))
           .then(out=>{setDuelResume(out.status==="active");return reloadState();}).catch(e=>toast(e.message));
       }
@@ -291,7 +291,11 @@
       if(!b.id||!Number.isFinite(Number(b.x))||!Number.isFinite(Number(b.y))||!(Number(b.remaining_ms)>0))continue;
       seen.add(b.id);
       let entry=battleMarkers.get(b.id);
-      const text='<strong>⚔ Bitka u tijeku</strong><br>'+safe(b.attacker)+' → '+safe(b.defender);
+      const mine=current?.kingdom?.id;
+      const text='<strong>⚔ Bitka u tijeku</strong><br>'+safe(b.attacker)+' → '+safe(b.defender)+
+        (b.defended?'<br>🛡 Aktivna obrana':'')+
+        (mine===b.defender_id?'<br><button type="button" class="kz-defend-battle">🛡 '+(b.defended?'Uključi se / nastavi obranu':'BRANI TERITORIJ')+'</button>':
+        mine===b.attacker_id?'<br><button type="button" class="kz-defend-battle">⚔ Nastavi okršaj</button>':'');
       if(!entry){
         const marker=L.marker(ll(Number(b.x)+2.5,Number(b.y)+2),{
           pane:"kz-active-battle-pane",bubblingMouseEvents:false,keyboard:true,title:"Bitka u tijeku",
@@ -299,6 +303,9 @@
         });
         entry={marker,battle:b,sizeKey:null,expiresAt:0};battleMarkers.set(b.id,entry);
         resizeBattleMarker(entry);marker.bindPopup(text).addTo(battleLayer);
+        marker.on("popupopen",e=>{const btn=e.popup.getElement()?.querySelector(".kz-defend-battle");if(btn)btn.onclick=()=>{
+          map.closePopup();void openLiveBattle(entry.battle.id,current?.kingdom?.id===entry.battle.defender_id?"join":"state");
+        };});
       }else{
         entry.battle=b;entry.marker.setPopupContent(text);resizeBattleMarker(entry);
       }
@@ -1188,74 +1195,127 @@
   function setDuelResume(active){
     if(duelResumeButton)duelResumeButton.hidden=!active;
   }
-  async function resumeTerritoryDuel(){
-    if(duelLoading)return;
+  async function openLiveBattle(id,action){
+    if(duelLoading||territoryDuel)return;
+    if(mainQuizSession){toast("Prvo završi ili zatvori trenutni kviz.");return;}
     duelLoading=true;
     try{
-      const out=await rpc("kz_territory_duel",args({p_action:"resume"}));
+      const out=await rpc("kz_territory_duel",args({p_action:action,p_id:id}));
       setDuelResume(out?.status==="active");
       if(out)renderTerritoryDuel(out);
     }catch(e){toast(e.message);}
     finally{duelLoading=false;}
   }
+  async function resumeTerritoryDuel(){await openLiveBattle(null,"resume");}
+  function roundMark(v){return v===true?"✓":v===false?"✕":"—";}
+  function battleRounds(q){
+    return '<div class="kz-battle-rounds"><strong>Rezultati po pitanjima</strong><div class="kz-battle-table">'+
+      '<span>Pitanje</span><span>⚔ Napadač</span><span>🛡 Branitelj</span><span>Napredak</span>'+
+      (q.rounds||[]).map(r=>'<span>'+r.position+'.</span><span class="'+(r.attacker_correct?"kz-battle-good":"kz-battle-bad")+'">'+roundMark(r.attacker_correct)+'</span>'+
+        '<span class="'+(r.defender_correct===true?"kz-battle-good":r.defender_correct===false?"kz-battle-bad":"")+'">'+roundMark(r.defender_correct)+'</span><span>'+r.progress+' / '+q.required_hits+'</span>').join("")+'</div></div>';
+  }
   function duelSummary(q){
-    const dots=Array.from({length:8},(_,i)=>i<q.hits?"✓":i<q.hits+q.misses?"✗":"·");
-    return '<div class="kz-current-score">Točni '+q.hits+' / '+(q.required_hits||3)+' · Netočni '+q.misses+
-      '</div><p class="quiz-progress">'+dots.join(" &nbsp; ")+'</p>'+
-      '<p>Tvoje konto: −'+formatArea(100+Number(q.attack_loss||0))+
-      ' (s ulogom)<br>Protivničko konto: −'+formatArea(q.defense_loss)+'</p>';
+    const rows=q.rounds||[], ac=rows.filter(r=>r.attacker_correct===true).length, dc=rows.filter(r=>r.defender_correct===true).length;
+    return '<div class="kz-battle-score"><div><small>⚔ '+safe(q.attacker_realm||"Napadač")+'</small><b>'+q.hits+' / '+q.required_hits+'</b><small>'+safe(q.attacker_name||"")+' · ✓ '+ac+'</small></div>'+
+      '<div><small>🛡 '+safe(q.defender_realm||"Branitelj")+'</small><b>'+dc+'</b><small>'+safe(q.defender_name||"Bez aktivnog branitelja")+'</small></div></div>'+
+      '<p class="member-meta">Napad: −'+formatArea(100+Number(q.attack_loss||0))+' s ulogom · Obrana: −'+formatArea(q.defense_loss)+'</p>';
+  }
+  async function showDuelResult(q){
+    const previous=territoryDuel;
+    if(previous){clearInterval(previous.timer);clearInterval(previous.poll);}
+    territoryDuel=null;setDuelResume(false);
+    const won=q.status==="won", defender=q.side==="defender";
+    const title=q.status==="invalid"?"Okršaj prekinut":q.insufficient_bank?"Nema dovoljno m²":won?"⚔ Blok osvojen!":"🛡 Teritorij obranjen!";
+    modal(title,duelSummary(q)+battleRounds(q)+
+      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 20 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
+      '<section id="kz-duel-review"><p>Učitavam završni pregled…</p></section>'+
+      '<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
+    $("dialog").classList.add("kz-quiz-dialog");
+    $("kz-duel-close").onclick=closeModal;
+    const review=$("kz-duel-review");
+    void reloadState().then(reloadMap).catch(console.warn);
+    try{
+      const rows=await rpc("kz_territory_duel",args({p_action:"review",p_id:q.id}));
+      if($("kz-duel-review")!==review)return;
+      if(!Array.isArray(rows)||!rows.length){review.innerHTML='<p class="member-meta">Završni pregled pitanja više nije dostupan.</p>';return;}
+      review.innerHTML='<button class="secondary" id="kz-duel-pdf">📄 Spremi PDF</button><h3>Pitanja i odgovori</h3>'+
+        rows.map(r=>historyRow(r,q.id).replace('<div class="kz-history-status">','<div class="member-meta">⚔ Napadač: '+safe(r.attacker_choice||"—")+' '+roundMark(r.attacker_correct)+' · 🛡 Branitelj: '+safe(r.defender_choice||"—")+' '+roundMark(r.defender_correct)+'</div><div class="kz-history-status">')).join("");
+      bindHistory(review,rows,q.id);
+      $("kz-duel-pdf").onclick=()=>printDuelReview(q,rows);
+    }catch(e){if($("kz-duel-review")===review)review.textContent=e.message;}
+  }
+  function printDuelReview(q,rows){
+    const frame=document.createElement("iframe");frame.style.cssText="position:fixed;width:0;height:0;border:0;right:0;bottom:0";
+    document.body.append(frame);
+    const doc=frame.contentDocument;
+    const body='<h1>Kraljevstvo znanja – okršaj</h1><p>'+safe(q.attacker_realm)+' protiv '+safe(q.defender_realm)+'</p><p>Napredak: '+q.hits+' / '+q.required_hits+' · '+(q.status==="won"?"Blok osvojen":"Teritorij obranjen")+'</p>'+
+      rows.map(r=>'<section><h3>'+r.position+'. '+safe(r.prompt)+'</h3>'+["A","B","C"].map(k=>'<div style="'+(k===r.correct_key?"color:#176b36;font-weight:bold":"")+'">'+k+') '+safe(r.options?.[k])+(k===r.correct_key?" ✓":"")+'</div>').join("")+
+      '<p>Napadač: '+safe(r.attacker_choice||"—")+' '+roundMark(r.attacker_correct)+' | Branitelj: '+safe(r.defender_choice||"—")+' '+roundMark(r.defender_correct)+'</p></section>').join("");
+    doc.open();doc.write('<!doctype html><html lang="hr"><head><meta charset="utf-8"><title>Okršaj znanja</title><style>body{font:14px/1.45 Arial,sans-serif;margin:24px;color:#222}section{break-inside:avoid;border-top:1px solid #bbb;padding:8px 0}h3{margin:0 0 8px}h1{font-size:22px}</style></head><body>'+body+'</body></html>');doc.close();
+    const win=frame.contentWindow;win.addEventListener("afterprint",()=>frame.remove(),{once:true});
+    win.focus();win.print();
   }
   function renderTerritoryDuel(q){
-    if(territoryDuel)clearInterval(territoryDuel.timer);
-    if(q.status!=="active"){
-      territoryDuel=null;setDuelResume(false);
-      const won=q.status==="won";
-      modal(won?"⚔ Blok osvojen!":q.insufficient_bank?"Nema dovoljno m²":q.status==="invalid"?"Okršaj prekinut":"Napad odbijen",
-        '<div class="kz-final-score"><strong>'+q.hits+' / '+(q.required_hits||3)+'</strong><span>točnih odgovora</span>'+
-        (won?'<b>+100 m² na konto · +20 m² teritorija</b>':q.status==="invalid"?'<b>Ulog 100 m² vraćen</b>':'<b>Ulog 100 m² izgubljen</b>')+
-        '</div>'+(q.insufficient_bank?'<p class="outcome kz-outcome-bad">Nema dovoljno m² na kontu za kaznu od 20 m². Napad je prekinut, a blok nije osvojen.</p>':'')+duelSummary(q)+'<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
-      $("kz-duel-close").onclick=closeModal;
-      void reloadState().then(reloadMap).catch(e=>toast(e.message));return;
+    if(q.status!=="active"){void showDuelResult(q);return;}
+    let session=territoryDuel;
+    if(!session||session.q.id!==q.id){
+      if(session){clearInterval(session.timer);clearInterval(session.poll);}
+      session={q,busy:false,done:false,timer:null,poll:null,signature:"",deadline:0,defenderOnline:q.defender_online};
+      territoryDuel=session;setDuelResume(true);
+      const tick=()=>{
+        if(territoryDuel!==session)return;
+        const clock=$("kz-duel-clock");if(!clock)return;
+        const seconds=Math.max(0,Math.ceil((session.deadline-Date.now())/1000));
+        clock.textContent="⏱ "+seconds+" s";clock.classList.toggle("urgent",seconds<=3);
+      };
+      session.timer=setInterval(tick,150);
+      session.poll=setInterval(()=>updateLiveBattle(session,"state"),1000);
     }
-    const session={q,busy:false,done:false,timer:null,deadline:Date.now()+Math.max(0,Number(q.remaining_ms)||0)};
-    territoryDuel=session;setDuelResume(true);
-    modal("⚔ Okršaj znanja",'<div class="quiz-progress">PITANJE '+q.position+' / 8 · ULOG 100 m²</div>'+
-      (q.required_hits===1?'<p class="member-meta">Protivničko konto je prazno na početku napada. Dovoljan je 1 točan odgovor.</p>':'')+duelSummary(q)+'<p id="kz-duel-clock" class="kz-question-clock" role="timer"></p>'+
+    if(q.side==="attacker"&&q.defender_online&&!session.defenderOnline)toast("🛡 Branitelj je online i brani teritorij!");
+    session.defenderOnline=q.defender_online;
+    session.q=q;session.done=!!q.submitted||!!q.intermission;
+    session.deadline=Date.now()+Math.max(0,Number(q.remaining_ms)||0);
+    const sig=JSON.stringify([q.position,q.submitted,q.opponent_submitted,q.intermission,q.defender_online,q.rounds,q.hits]);
+    if(sig===session.signature)return;
+    session.signature=sig;
+    const defended=q.defender_online;
+    const notice=defended?'<p class="kz-live-defense">🛡 Branitelj je online · '+safe(q.defender_name||"")+'</p>':'<p class="member-meta">Trenutno nema aktivnog branitelja.</p>';
+    const question=q.intermission?'<p class="kz-live-defense">Runda završena · sljedeće pitanje…</p>':
+      '<p id="kz-duel-clock" class="kz-question-clock" role="timer">⏱ '+Math.ceil((q.remaining_ms||0)/1000)+' s</p>'+
       '<p class="quiz-question">'+safe(q.prompt)+'</p>'+
       (q.image?'<img class="question-image" src="'+safe(q.image)+'" alt="Slika uz pitanje">':'')+
-      '<div class="kz-answer-list">'+["A","B","C"].map(key=>'<button class="option" data-duel-answer="'+key+'">'+key+') '+safe(q.options?.[key]||"")+'</button>').join("")+'</div>'+
-      '<div id="kz-duel-result" aria-live="polite"></div>');
+      '<div class="kz-answer-list">'+["A","B","C"].map(key=>'<button class="option" data-duel-answer="'+key+'" '+(q.submitted?"disabled":"")+'>'+key+') '+safe(q.options?.[key]||"")+'</button>').join("")+'</div>'+
+      (q.submitted?'<p class="kz-live-defense">Odgovor je zaključan. Čekam završetak runde…</p>':q.opponent_submitted?'<p class="member-meta">Protivnik je odgovorio.</p>':'');
+    modal(q.side==="defender"?"🛡 Obrana teritorija":"⚔ Okršaj znanja",'<div class="quiz-progress">PITANJE '+q.position+' / 8</div>'+notice+
+      question+duelSummary(q)+battleRounds(q));
     $("dialog").classList.add("kz-quiz-dialog");
-    const buttons=[...document.querySelectorAll("[data-duel-answer]")];
-    async function submit(key){
-      if(territoryDuel!==session||session.busy||session.done)return;
-      session.busy=true;clearInterval(session.timer);
-      buttons.forEach(b=>b.disabled=true);
-      try{
-        const out=await rpc("kz_territory_duel",args({p_action:"answer",p_id:q.id,p_number:q.position,p_choice:key}));
-        session.done=true;setDuelResume(out.status==="active");
-        if(territoryDuel!==session){void reloadState().then(reloadMap).catch(console.warn);return;}
-        if(out.status!=="active"){renderTerritoryDuel(out);return;}
-        buttons.forEach(b=>{if(b.dataset.duelAnswer===out.correct_key)b.classList.add("correct");else if(b.dataset.duelAnswer===key)b.classList.add("wrong");});
-        $("kz-duel-result").innerHTML='<div class="outcome '+(out.correct?"kz-outcome-good":"kz-outcome-bad")+'">'+
-          safe((out.timed_out?"Vrijeme je isteklo. ":out.correct?"Točno! ":"Netočno. ")+(out.correct?"Protivnik":"Tvoje kraljevstvo")+" gubi "+formatArea(out.loss)+".")+
-          '</div><button class="primary" id="kz-duel-next">Sljedeće pitanje →</button>';
-        $("kz-duel-next").onclick=resumeTerritoryDuel;
-        void reloadState().catch(console.warn);
-      }catch(e){
-        toast(e.message);
-        if(territoryDuel===session){session.done=true;$("kz-duel-result").innerHTML='<button class="primary" id="kz-duel-retry">Nastavi okršaj</button>';$("kz-duel-retry").onclick=resumeTerritoryDuel;}
-      }finally{session.busy=false;}
-    }
-    buttons.forEach(b=>b.onclick=()=>submit(b.dataset.duelAnswer));
-    const tick=()=>{
-      if(territoryDuel!==session)return;
-      const clock=$("kz-duel-clock");if(!clock){clearInterval(session.timer);return;}
-      const seconds=Math.max(0,Math.ceil((session.deadline-Date.now())/1000));
-      clock.textContent="⏱ "+seconds+" s";clock.classList.toggle("urgent",seconds<=3);
-      if(seconds===0)void submit("SKIP");
-    };
-    session.timer=setInterval(tick,100);tick();
+    document.querySelectorAll("[data-duel-answer]").forEach(b=>b.onclick=()=>updateLiveBattle(session,"answer",b.dataset.duelAnswer));
+  }
+  async function updateLiveBattle(session,action,key){
+    if(territoryDuel!==session||session.busy)return;
+    if(action==="answer"&&(session.done||session.q.submitted||session.q.intermission))return;
+    session.busy=true;
+    if(action==="answer")document.querySelectorAll("[data-duel-answer]").forEach(b=>b.disabled=true);
+    try{
+      const out=await rpc("kz_territory_duel",args({p_action:action,p_id:session.q.id,
+        ...(action==="answer"?{p_number:session.q.position,p_choice:key}:{})}));
+      if(territoryDuel===session&&out)renderTerritoryDuel(out);
+    }catch(e){
+      if(territoryDuel===session&&action==="answer"){toast(e.message);document.querySelectorAll("[data-duel-answer]").forEach(b=>b.disabled=false);}
+    }finally{session.busy=false;}
+  }
+  async function showBattleHistory(){
+    if(territoryDuel||mainQuizSession){toast("Prvo zatvori trenutni okršaj ili kviz.");return;}
+    modal("Povijest događaja","<p>Učitavam okršaje…</p>");
+    const loading=$("dialog-body").firstElementChild;
+    try{
+      const rows=await rpc("kz_battle_history",args());
+      if($("dialog-body").firstElementChild!==loading)return;
+      modal("Povijest događaja",rows.length?rows.map(q=>'<article class="member"><b>'+dateTime(q.at)+' · '+(q.status==="won"?"⚔ Blok osvojen":q.status==="lost"?"🛡 Blok obranjen":"Okršaj prekinut")+'</b>'+
+        '<p>'+safe(q.attacker)+' → '+safe(q.defender)+'</p><div class="member-meta">Napadač: '+safe(q.attacker_name||"—")+' · ✓ '+q.attacker_correct+' · ✕ '+q.attacker_wrong+'</div>'+
+        '<div class="member-meta">Branitelj: '+safe(q.defender_name||"Bez aktivnog branitelja")+' · ✓ '+q.defender_correct+' · ✕ '+q.defender_wrong+'</div>'+
+        '<div class="member-meta">Napredak '+q.hits+' / '+q.required_hits+' · X '+q.x+' · Y '+q.y+'</div></article>').join(""):'<p>Još nema okršaja.</p>');
+    }catch(e){if($("dialog-body").firstElementChild===loading)toast(e.message);}
   }
 
   // Isti obrasci povijesti, reakcija i primjedbi kao u glavnom Online kvizu.
@@ -1636,6 +1696,7 @@
     window.addEventListener("kz:guardian-reward",()=>reloadState().catch(console.warn));
     $("play-btn").addEventListener("click",play);
     $("history-open").addEventListener("click",showFullHistory);
+    $("battle-history-open").addEventListener("click",showBattleHistory);
     $("create-btn").addEventListener("click",createKingdom);
     initRealmColorPicker();
     $("realm-search").addEventListener("input",filterRealmCatalog);
@@ -1681,7 +1742,7 @@
     }
     initialMapReady=true;
     await reloadMap();
-    if(current?.kingdom?.role==="kralj")void resumeTerritoryDuel();
+    if(current?.kingdom)void resumeTerritoryDuel();
     const catalogError=await catalogPromise;
     if(catalogError)console.warn("Katalog kraljevstava:",catalogError.message);
     setInterval(tick,1000);
