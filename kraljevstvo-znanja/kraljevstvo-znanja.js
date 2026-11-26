@@ -18,7 +18,7 @@
   let cursor = null, cursorSpawnMode = false, previewLayer = null, blockGridLayer = null, previewBusy = false;
   let firstGpsFix = null, firstGpsBusy = false;
   const needsFirstGps = () => current?.kingdom?.role === 'kralj' && Number(current.kingdom.area||0)===0;
-  const firstGpsFlexible=()=>needsFirstGps()&&!!firstGpsFix&&firstGpsFix.radius>0;
+  const firstGpsFlexible=()=>(needsFirstGps()||cursorSpawnMode)&&!!firstGpsFix&&firstGpsFix.radius>0;
   const gpsLocked=()=> (needsFirstGps()||cursorSpawnMode)&&!firstGpsFlexible();
   const gpsAllows=b=>!firstGpsFlexible()||map.distance([firstGpsFix.lat,firstGpsFix.lon],previewCentre(b))<=firstGpsFix.radius;
   const alignBlock = (x,y) => ({x: Math.floor(x/5)*5, y: Math.floor(y/4)*4});
@@ -240,7 +240,7 @@
     $("create-panel").classList.toggle("hidden", !!k);
     $("joystick-panel").classList.toggle("hidden", !k || !map || map.getZoom()<18);
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!k||gpsLocked()||firstGpsBusy||previewBusy);
-    $("gps-status").textContent=firstGpsFlexible()?"Odaberi slobodan prvi blok u krugu od 5 km":needsFirstGps()?"Prvi blok unutar 5 km od GPS lokacije":"Novo uporište isključivo na GPS lokaciji";
+    $("gps-status").textContent=firstGpsFlexible()?"Odaberi slobodan blok u krugu od 5 km":needsFirstGps()?"Prvi blok unutar 5 km od GPS lokacije":"Novo uporište unutar 5 km od GPS lokacije";
     if(needsFirstGps()&&!firstGpsFix){cursor=null;cursorSpawnMode=false;}
     if(!needsFirstGps()&&!cursorSpawnMode)firstGpsFix=null;
     if (isKing && !needsFirstGps() && !cursor && k.anchor_x != null) {
@@ -1071,7 +1071,7 @@
     });
   }
   async function firstGpsZone(fix){
-    if(!needsFirstGps())return {...fix,radius:0};
+    if(!needsFirstGps()){const point=xy(fix.lat,fix.lon);return {...fix,radius:5000,suggested:alignBlock(point.x,point.y)};}
     const zone=await rpc("kz_first_spawn_zone",args({p_lat:fix.lat,p_lon:fix.lon,p_accuracy:fix.accuracy}));
     return {...fix,radius:Number(zone.radius_m),suggested:{x:Number(zone.x),y:Number(zone.y)}};
   }
@@ -1088,7 +1088,7 @@
     if(firstGpsBusy||previewBusy||current?.kingdom?.role!=="kralj")return;
     firstGpsBusy=true;firstGpsFix=null;cursor=null;cursorSpawnMode=false;updateCursorPreview();
     $("gps-status").textContent="Tražim GPS lokaciju…";
-    try{const fix=await firstGpsZone(await readFirstGps());if(current?.kingdom?.role==="kralj"){showFirstGps(fix);await reloadMap();toast(fix.radius>0?"Odaberi slobodan prvi blok unutar 5 km od GPS lokacije.":"Pronađena GPS lokacija. Pritisni POSTAVI za novo uporište.");}}
+    try{const fix=await firstGpsZone(await readFirstGps());if(current?.kingdom?.role==="kralj"){showFirstGps(fix);await reloadMap();toast(fix.radius>0?"Odaberi slobodan blok unutar 5 km od GPS lokacije.":"Pronađena GPS lokacija. Pritisni POSTAVI za novo uporište.");}}
     catch(e){$("gps-status").textContent="GPS nije dostupan";toast(e.message);}
     finally{firstGpsBusy=false;updateCursorPreview();}
   }
@@ -1160,6 +1160,7 @@
     const nearby = cells.filter(c=>Number(c.x)>=b.x&&Number(c.x)<b.x+5&&Number(c.y)>=b.y&&Number(c.y)<b.y+4);
     const owners = [...new Set(nearby.map(c=>c.k))];
     const own = current?.kingdom?.id;
+    if(cursorSpawnMode&&owners.length)return {text:"GPS uporište mora biti na slobodnom bloku.",kind:"blocked"};
     if(owners.includes(own))return {text:"Ovdje već imaš teritorij — pomakni blok.",kind:"own"};
     if(owners.length>1 || (owners.length&&nearby.length<20))
       return {text:"Djelomično zauzet stari blok — nedostupan.",kind:"blocked"};
@@ -1210,7 +1211,7 @@
     const valid=["free","attack"].includes(status.kind)&&!(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden))&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=gpsLocked()||firstGpsBusy||previewBusy);
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
-      status.kind==="free"?(firstGpsFlexible()?"Prvi blok · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
+      status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
       status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj kvizaš":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
     if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
@@ -1233,7 +1234,7 @@
 
   function moveCursor(direction) {
     if(!map||map.getZoom()<18||!current?.kingdom)return;
-    if(gpsLocked())return toast("GPS uporište ne možeš pomicati. Određuje ga GPS.");
+    if(gpsLocked())return toast("Najprije pronađi GPS lokaciju.");
     if(!cursor){ chooseMapCentre(false);if(!cursor)return; }
     const dir={N:[0,4],S:[0,-4],E:[5,0],W:[-5,0]}[direction];
     if(!dir)return;
@@ -1255,7 +1256,7 @@
       return toast("Odabrani blok nije moguće zauzeti.");
     const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Osvoji blok s 1 točnim odgovorom ako je protivničko konto prazno na početku napada, inače s 3 točna. Najviše 8 pitanja. Točan odgovor: protivnik gubi 20 m². Pogrešan ili istek: tvoje kraljevstvo gubi 20 m². Pobjeda vraća 100 m².":
       (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
-    if(!confirm(firstGpsFlexible()?"Postaviti odabrani prvi blok od 20 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
+    if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 20 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
     try{
       let gpsParams={};
