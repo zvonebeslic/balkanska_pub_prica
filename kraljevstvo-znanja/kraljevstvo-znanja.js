@@ -682,7 +682,8 @@
       project(latlng){return extendedProjection.project(L.latLng(latlng));},
       unproject(point){return extendedProjection.unproject(point);}
     });
-    map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false,minZoom:2,maxZoom:21}).setView([43.5,17.3],7);
+    // Keep pinch zoom within the actual map limits, including during the gesture.
+    map = L.map("kingdom-map",{crs:fantasyCRS,zoomControl:true,worldCopyJump:false,minZoom:2,maxZoom:21,bounceAtZoomLimits:false}).setView([43.5,17.3],7);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       minZoom:2,maxZoom:21,maxNativeZoom:19,noWrap:true,attribution:'&copy; OpenStreetMap'
     }).addTo(map);
