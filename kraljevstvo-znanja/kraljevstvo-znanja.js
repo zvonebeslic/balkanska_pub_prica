@@ -1095,10 +1095,10 @@
     if(q.status!=="active"){
       territoryDuel=null;setDuelResume(false);
       const won=q.status==="won";
-      modal(won?"⚔ Blok osvojen!":q.status==="invalid"?"Okršaj prekinut":"Napad odbijen",
+      modal(won?"⚔ Blok osvojen!":q.insufficient_bank?"Nema dovoljno m²":q.status==="invalid"?"Okršaj prekinut":"Napad odbijen",
         '<div class="kz-final-score"><strong>'+q.hits+' / '+(q.required_hits||3)+'</strong><span>točnih odgovora</span>'+
         (won?'<b>+100 m² na konto · +20 m² teritorija</b>':q.status==="invalid"?'<b>Ulog 100 m² vraćen</b>':'<b>Ulog 100 m² izgubljen</b>')+
-        '</div>'+duelSummary(q)+'<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
+        '</div>'+(q.insufficient_bank?'<p class="outcome kz-outcome-bad">Nema dovoljno m² na kontu za kaznu od 20 m². Napad je prekinut, a blok nije osvojen.</p>':'')+duelSummary(q)+'<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
       $("kz-duel-close").onclick=closeModal;
       void reloadState().then(reloadMap).catch(e=>toast(e.message));return;
     }
