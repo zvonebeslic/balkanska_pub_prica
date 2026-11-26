@@ -385,8 +385,7 @@
     const c=castle(id),reward=window.KZWorldRegistry.isIron(id)?20:80;
     dialog.querySelector(".kz-fleet-description").textContent=
       c.name+" · "+c.region+" · HP "+hp+"/100 · nagrada "+
-      (reward/20)+" kvadrat"+(reward===20?"":"a")+" ("+reward+
-      " m²) na konto kraljevstva za završni pogodak.";
+      reward+" m² na konto kraljevstva za završni pogodak.";
     dialog.querySelector(".kz-fleet-health span").style.width=
       Math.max(0,Math.min(100,hp))+"%";
   }

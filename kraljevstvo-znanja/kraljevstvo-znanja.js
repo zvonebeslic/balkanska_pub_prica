@@ -21,9 +21,9 @@
   const firstGpsFlexible=()=>(needsFirstGps()||cursorSpawnMode)&&!!firstGpsFix&&firstGpsFix.radius>0;
   const gpsLocked=()=> (needsFirstGps()||cursorSpawnMode)&&!firstGpsFlexible();
   const gpsAllows=b=>!firstGpsFlexible()||map.distance([firstGpsFix.lat,firstGpsFix.lon],previewCentre(b))<=firstGpsFix.radius;
-  const alignBlock = (x,y) => ({x: Math.floor(x/5)*5, y: Math.floor(y/4)*4});
-  const previewCentre = b => ll(b.x+2.5,b.y+2);
-  const BLOCK_AREA = 20;
+  const alignBlock = (x,y) => ({x: Math.floor(x/10)*10, y: Math.floor(y/8)*8});
+  const previewCentre = b => ll(b.x+5,b.y+4);
+  const BLOCK_AREA = 80;
   let realmCatalog = [];
   let toastTimer, refreshTimer;
 
@@ -235,7 +235,7 @@
     $("realm-role").textContent = k ? roleName(k.role) : "Osnuj svoje ili zatraži pristup na karti";
     $("members-total").textContent = (current?.members?.length || 0) + " / 10";
     $("bank-count").textContent = formatArea(k?.bank);
-    $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
+    $("bank-count").style.color = k?.bank >= 80 ? "#91f0ad" : "";
     $("boost-caption").textContent = k?.area >= 1000 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje od 1.000 m²";
     $("create-panel").classList.toggle("hidden", !!k);
     $("joystick-panel").classList.toggle("hidden", !k || !map || map.getZoom()<18);
@@ -245,7 +245,7 @@
     if(!needsFirstGps()&&!cursorSpawnMode)firstGpsFix=null;
     if (isKing && !needsFirstGps() && !cursor && k.anchor_x != null) {
       const point = alignBlock(Number(k.anchor_x),Number(k.anchor_y));
-      cursor = {x:point.x+5,y:point.y};
+      cursor = {x:point.x+10,y:point.y};
     }
     if (!isKing) { if(!k||cursorSpawnMode)cursor=null; cursorSpawnMode = false; firstGpsFix=null; }
     updateCursorPreview();
@@ -290,7 +290,7 @@
     const cellParams=()=>{
       const lo = xy(bounds.getSouth(), bounds.getWest());
       const hi = xy(bounds.getNorth(), bounds.getEast());
-      const pad=map.getZoom()>=18?52:0; // Two tower-clearance halos keep crop edges outside the visible map.
+      const pad=map.getZoom()>=18?102:0; // Two tower-clearance halos keep crop edges outside the visible map.
       return { p_min_x: Math.min(lo.x,hi.x)-pad, p_max_x: Math.max(lo.x,hi.x)+pad,
         p_min_y: Math.min(lo.y,hi.y)-pad, p_max_y: Math.max(lo.y,hi.y)+pad };
     };
@@ -359,7 +359,7 @@
         (mine===b.defender_id&&!b.defended&&!(duelResumeButton&&!duelResumeButton.hidden)?'<br><button type="button" class="kz-defend-battle">🛡 BRANI TERITORIJ</button>':
         mine===b.defender_id&&b.defended?'<br>Mjesto branitelja je zauzeto.':'');
       if(!entry){
-        const marker=L.marker(ll(Number(b.x)+2.5,Number(b.y)+2),{
+        const marker=L.marker(ll(Number(b.x)+5,Number(b.y)+4),{
           pane:"kz-active-battle-pane",bubblingMouseEvents:false,keyboard:true,title:"Bitka u tijeku",
           icon:L.divIcon({className:"kz-active-battle-marker",iconSize:[15,15]})
         });
@@ -551,7 +551,7 @@
     return towers;
 }
   function addStraightTowerJoints(towers,corners,bounds,side,fixed,from,to){
-    const horizontal=side==="N"||side==="S",block=horizontal?5:4,clearance=block*5;
+    const horizontal=side==="N"||side==="S",block=horizontal?10:8,clearance=block*5;
     const keyAt=v=>horizontal?v+":"+fixed:fixed+":"+v;
     if(to-from<2*clearance)return;
     // Fixed world-grid phase, never relative to the clipped beginning of a wall.
@@ -578,7 +578,7 @@
   }
   function paintTower(key,owner){
     const [x,y]=key.split(":").map(Number),zoom=map.getZoom();
-    const p=map.project(ll(x,y),zoom),e=map.project(ll(x+5,y),zoom),n=map.project(ll(x,y+4),zoom);
+    const p=map.project(ll(x,y),zoom),e=map.project(ll(x+10,y),zoom),n=map.project(ll(x,y+8),zoom);
     const baseWidth=Math.max(8,Math.max(Math.abs(e.x-p.x),Math.abs(n.y-p.y)*.85)*.43);
     const w=baseWidth*1.10;
     const h=baseWidth*92/40;
@@ -629,8 +629,8 @@
   }
   function paintDryWall(side,fixed,from,to){
     const horizontal=side==="N"||side==="S";
-    const zoom=map.getZoom(),step=horizontal?5:4;
-    // Split merged edges at the original 5 x 4 m block boundaries.
+    const zoom=map.getZoom(),step=horizontal?10:8;
+    // Split merged edges at the new 10 x 8 m block boundaries.
     // Partial historic cells still receive an accurate, shorter segment.
     for(let start=from;start<to;){
       const end=Math.min(to,(Math.floor(start/step)+1)*step);
@@ -650,7 +650,7 @@
       }
       // Horizontal sprites' screen height is the wall thickness; north/south
       // running segments also contain ground length. Raise only their nominal
-      // wall height so the 4 m grid segments do not grow by 20% in length.
+      // wall height so the 8 m grid segments do not grow by 20% in length.
       top-=(horizontal?bottom-top:thick)*(FORTIFICATION_HEIGHT_SCALE*1.20-1);
       const bounds=L.latLngBounds(map.unproject(L.point(left,bottom),zoom),map.unproject(L.point(right,top),zoom));
       L.imageOverlay(dryWallSprites[side],bounds,{
@@ -699,8 +699,8 @@
         minY=Math.min(minY,y);maxY=Math.max(maxY,y);
       }
       const b=territoryCellBounds;
-      towerContext=[Math.max(b.p_min_x,minX-26),Math.min(b.p_max_x,maxX+26),
-        Math.max(b.p_min_y,minY-26),Math.min(b.p_max_y,maxY+26)];
+      towerContext=[Math.max(b.p_min_x,minX-51),Math.min(b.p_max_x,maxX+51),
+        Math.max(b.p_min_y,minY-51),Math.min(b.p_max_y,maxY+51)];
     }
     return JSON.stringify([z,dryWallReady,towerReady,ks,cs,towerContext]);
   }
@@ -841,7 +841,7 @@
     updateCursorPreview();
     paintLivingWorld();
     $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi slobodno mjesto unutar 5 km." : detailed
-      ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
+      ? "Fantasy granice na pravoj karti · 80 m² po bloku · POSTAVI u joysticku."
       : "Dodirni mjesto na karti i postavi blok joystickom.";
 
   }
@@ -1106,7 +1106,7 @@
     updateCursorPreview();
 
   }
-  // Mreža je globalno poravnata: svaka pločica uvijek zauzima 5 × 4 = 20 m².
+  // Mreža je globalno poravnata: svaka pločica uvijek zauzima 10 × 8 = 80 m².
   function refreshBlockGrid(force=false) {
     if(!map||!blockGridLayer)return;
     const zoom=map.getZoom();
@@ -1116,33 +1116,33 @@
     }
     const bounds=map.getBounds();
     const sw=xy(bounds.getSouth(),bounds.getWest()),ne=xy(bounds.getNorth(),bounds.getEast());
-    const left=Math.floor(Math.min(sw.x,ne.x)/5)*5;
-    const right=Math.floor(Math.max(sw.x,ne.x)/5)*5;
-    const bottom=Math.floor(Math.min(sw.y,ne.y)/4)*4;
-    const top=Math.floor(Math.max(sw.y,ne.y)/4)*4;
+    const left=Math.floor(Math.min(sw.x,ne.x)/10)*10;
+    const right=Math.floor(Math.max(sw.x,ne.x)/10)*10;
+    const bottom=Math.floor(Math.min(sw.y,ne.y)/8)*8;
+    const top=Math.floor(Math.max(sw.y,ne.y)/8)*8;
     const key=[zoom,left,right,bottom,top].join(":");
     if(!force&&key===blockGridPaintKey)return;
     blockGridPaintKey=key;
     blockGridLayer.clearLayers();
-    const estimated=(Math.floor((right-left)/5)+1)*(Math.floor((top-bottom)/4)+1);
+    const estimated=(Math.floor((right-left)/10)+1)*(Math.floor((top-bottom)/8)+1);
     if(estimated>950)return;
     // Draw each grid line just once rather than four edges for every square.
     // Interior lines retain the effective opacity of the original doubled edges.
     const outer=[],inner=[];
-    for(let x=left;x<=right+5;x+=5)
-      (x===left||x===right+5?outer:inner).push([ll(x,bottom),ll(x,top+4)]);
-    for(let y=bottom;y<=top+4;y+=4)
-      (y===bottom||y===top+4?outer:inner).push([ll(left,y),ll(right+5,y)]);
+    for(let x=left;x<=right+10;x+=10)
+      (x===left||x===right+10?outer:inner).push([ll(x,bottom),ll(x,top+8)]);
+    for(let y=bottom;y<=top+8;y+=8)
+      (y===bottom||y===top+8?outer:inner).push([ll(left,y),ll(right+10,y)]);
     for(const [lines,opacity] of [[outer,.45],[inner,.6975]]){
       if(lines.length)L.polyline(lines,{color:"#e8d29c",weight:.85,opacity,interactive:false,
         renderer:map._kzCanvasRenderer}).addTo(blockGridLayer);
     }
     if(zoom>=21&&estimated<=175)
-    for(let x=left;x<=right;x+=5)for(let y=bottom;y<=top;y+=4) {
+    for(let x=left;x<=right;x+=10)for(let y=bottom;y<=top;y+=8) {
       // Pri izrazito bliskom zumu svaki pojedini kvadrat diskretno nosi X/Y.
       // Pri daljem zumu ostaje samo mala oznaka središta karte.
       if(map.getZoom()>=21 && estimated<=175){
-        const center=ll(x+2.5,y+2);
+        const center=ll(x+5,y+4);
         L.marker([center.lat,center.lng],{
           icon:L.divIcon({
             className:"kz-grid-xy-label",
@@ -1157,20 +1157,20 @@
   function blockStatus(b) {
     if(!b)return {text:"Pomakni kartu i odaberi mjesto.",kind:"unknown"};
     if(!gpsAllows(b))return {text:"Izvan dopuštenog GPS kruga.",kind:"outside"};
-    const nearby = cells.filter(c=>Number(c.x)>=b.x&&Number(c.x)<b.x+5&&Number(c.y)>=b.y&&Number(c.y)<b.y+4);
+    const nearby = cells.filter(c=>Number(c.x)>=b.x&&Number(c.x)<b.x+10&&Number(c.y)>=b.y&&Number(c.y)<b.y+8);
     const owners = [...new Set(nearby.map(c=>c.k))];
     const own = current?.kingdom?.id;
     if(cursorSpawnMode&&owners.length)return {text:"GPS uporište mora biti na slobodnom bloku.",kind:"blocked"};
     if(owners.includes(own))return {text:"Ovdje već imaš teritorij — pomakni blok.",kind:"own"};
-    if(owners.length>1 || (owners.length&&nearby.length<20))
+    if(owners.length>1 || (owners.length&&nearby.length<80))
       return {text:"Djelomično zauzet stari blok — nedostupan.",kind:"blocked"};
     const touching=cells.some(c=>{
       if(c.k!==own)return false;
       const x=Number(c.x),y=Number(c.y);
-      return (x===b.x-1&&y>=b.y&&y<=b.y+3) ||
-        (x===b.x+5&&y>=b.y&&y<=b.y+3) ||
-        (y===b.y-1&&x>=b.x&&x<=b.x+4) ||
-        (y===b.y+4&&x>=b.x&&x<=b.x+4);
+      return (x===b.x-1&&y>=b.y&&y<=b.y+7) ||
+        (x===b.x+10&&y>=b.y&&y<=b.y+7) ||
+        (y===b.y-1&&x>=b.x&&x<=b.x+9) ||
+        (y===b.y+8&&x>=b.x&&x<=b.x+9);
     });
     // Uporišta mogu biti udaljena, napadi ne mogu preskakati obranu.
     if(owners.length===1 && !touching)
@@ -1180,10 +1180,10 @@
     if(owners.length===1){
       if([...battleMarkers.values()].some(e=>Number(e.battle.x)===b.x&&Number(e.battle.y)===b.y))
         return {text:"Na tom bloku već traje okršaj.",kind:"battle_busy"};
-      return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
+      return {text:"⚔ NAPAD: suparnički blok 80 m², cijena 100 m².",kind:"attack"};
     }
     if(current?.kingdom?.role!=="kralj")return {text:"Slobodne blokove može postavljati samo kralj kvizaš.",kind:"king_only"};
-    return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
+    return {text:"Slobodan blok 80 m², cijena 80 m².",kind:"free"};
   }
   function updateCursorPreview() {
     if (!map || !previewLayer) return;
@@ -1195,7 +1195,7 @@
     const gpsButton=$("gps-outpost-btn");
     if(gpsButton){
       gpsButton.classList.toggle("hidden",!isKing||needsFirstGps());
-      gpsButton.disabled=!isKing||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy;
+      gpsButton.disabled=!isKing||needsFirstGps()||Number(current?.kingdom?.bank||0)<80||firstGpsBusy||previewBusy;
     }
     const showPlacement=!!current?.kingdom&&(map.getZoom()>=18||(needsFirstGps()&&!firstGpsFix));
     $("joystick-panel")?.classList.toggle("hidden",!showPlacement);
@@ -1207,27 +1207,27 @@
     }
     const status=blockStatus(cursor);
     const bank=Number(current?.kingdom?.bank||0);
-    const cost=status.kind==="attack"?100:20;
+    const cost=status.kind==="attack"?100:80;
     const valid=["free","attack"].includes(status.kind)&&!(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden))&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=gpsLocked()||firstGpsBusy||previewBusy);
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
-      status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
+      status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 80 m²":"Nadogradnja · 80 m²"):
       status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj kvizaš":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
     if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
       btn.textContent=status.kind==="attack"?"NAPADNI":"POSTAVI";
-      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 1 točan ako je protivničko konto prazno, inače 3":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 1 točan ako je protivničko konto prazno, inače 3":"Zauzmi slobodni blok od 80 m² za 80 m²";
       btn.setAttribute("aria-label",btn.title);
     }
-    const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
+    const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+10,cursor.y+8);
     L.rectangle([[sw.lat,sw.lng],[ne.lat,ne.lng]],{
       color:valid?"#d3ffda":"#ffcf83",weight:4.3,
       fillColor:valid?"#34ed9d":"#ff9e6d",fillOpacity:.44,
       dashArray:valid?"8 4":"4 6",interactive:false
     }).addTo(previewLayer);
     L.marker(previewCentre(cursor),{interactive:false,
-      icon:L.divIcon({className:"cursor-badge",html:"<b>♜ 20 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
+      icon:L.divIcon({className:"cursor-badge",html:"<b>♜ 80 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
     }).addTo(previewLayer);
     $("cursor-coords").textContent=cursor.x+" · "+cursor.y;
   }
@@ -1236,7 +1236,7 @@
     if(!map||map.getZoom()<18||!current?.kingdom)return;
     if(gpsLocked())return toast("Najprije pronađi GPS lokaciju.");
     if(!cursor){ chooseMapCentre(false);if(!cursor)return; }
-    const dir={N:[0,4],S:[0,-4],E:[5,0],W:[-5,0]}[direction];
+    const dir={N:[0,8],S:[0,-8],E:[10,0],W:[-10,0]}[direction];
     if(!dir)return;
     const candidate={x:cursor.x+dir[0],y:cursor.y+dir[1]};
     if(!gpsAllows(candidate))return toast("Dosegnut je rub dopuštenog GPS kruga.");
@@ -1251,12 +1251,12 @@
     const status=blockStatus(cursor);
     if(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden)){toast("Prvo završi svoj trenutni okršaj.");return;}
     if(status.kind==="unconnected"){updateCursorPreview();return;}
-    const cost=status.kind==="attack"?100:20;
+    const cost=status.kind==="attack"?100:80;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
     const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Osvoji blok s 1 točnim odgovorom ako je protivničko konto prazno na početku napada, inače s 3 točna. Najviše 8 pitanja. Točan odgovor: protivnik gubi 20 m². Pogrešan ili istek: tvoje kraljevstvo gubi 20 m². Pobjeda vraća 100 m².":
-      (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
-    if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 20 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
+      (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 80 m² za 80 m² s konta?":"Zauzeti odabrani blok od 80 m² za 80 m² s konta?");
+    if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 80 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 80 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
     try{
       let gpsParams={};
@@ -1282,7 +1282,7 @@
       }
       const result=await rpc("kz_place_block",args(params));
       cursorSpawnMode=false;firstGpsFix=null;
-      cursor={x:cursor.x+5,y:cursor.y};
+      cursor={x:cursor.x+10,y:cursor.y};
       toast((result.attack?"⚔ Osvojen tuđi blok! ":"✓ Osvojen novi blok! ")+
         formatArea(result.added)+" · trošak "+formatArea(result.spent));
       await reloadState();await reloadMap();
@@ -1327,7 +1327,7 @@
     const won=q.status==="won", defender=q.side==="defender";
     const title=q.status==="invalid"?"Okršaj prekinut":q.insufficient_bank?"Nema dovoljno m²":won?"⚔ Blok osvojen!":"🛡 Teritorij obranjen!";
     modal(title,duelSummary(q)+battleRounds(q)+
-      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 20 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
+      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 80 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
       '<section id="kz-duel-review"><p>Učitavam završni pregled…</p></section>'+
       '<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
     $("dialog").classList.add("kz-quiz-dialog");
@@ -1680,7 +1680,7 @@
     modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 1.000 m².')+'</p>'+
       '<p>Dok kraljevstvo ima 1.000 m² ili više, svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m².</p>'+
+      '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok ima 80 m². Slobodan blok košta 80 m².</p>'+
       '<p>Okršaj za tuđi blok ima ulog 100 m² i set od 8 pitanja. Ako je protivnički konto na početku napada prazan, dovoljan je jedan točan odgovor za osvajanje; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m² napadaču. Svaki netočan odgovor napadača skida 20 m² s konta njegova kraljevstva, dok svaki njegov točan odgovor skida 20 m² s konta protivničkog kraljevstva (odnosno preostali iznos ako je na kontu manje od 20 m²).</p>');
   }
   async function showApplicantStatistics(requestId){
@@ -1887,7 +1887,7 @@
     duelResumeButton.hidden=true;duelResumeButton.onclick=resumeTerritoryDuel;
     document.querySelector(".map-top .map-actions")?.append(duelResumeButton);
     $("gps-outpost-btn").addEventListener("click",()=>{
-      if(current?.kingdom?.role!=="kralj"||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy)return;
+      if(current?.kingdom?.role!=="kralj"||needsFirstGps()||Number(current?.kingdom?.bank||0)<80||firstGpsBusy||previewBusy)return;
       chooseFirstGps();
     });
     document.querySelectorAll("[data-joy]").forEach(b=>b.addEventListener("click",()=>moveCursor(b.dataset.joy)));
