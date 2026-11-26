@@ -188,7 +188,7 @@
       cursor = {x:point.x+5,y:point.y};
     }
     if (!isKing) { cursor = null; cursorSpawnMode = false; firstGpsFix=null; }
-    if (isKing) updateCursorPreview();
+    updateCursorPreview();
     $("leave-btn").classList.toggle("hidden", !k);
     $("leave-btn").textContent = isKing ? "Predaj krunu / Zatvori kraljevstvo" : "Napusti kraljevstvo";
     $("action-help").textContent = isKing ?
@@ -793,7 +793,7 @@
     if (map.getZoom()<19) map.setView(previewCentre(cursor),20);
     else map.panTo(previewCentre(cursor));
     updateCursorPreview();
-    if(blockStatus(cursor).gpsAllowed)toast("Blok nije uz granicu. POSTAVI traži tvoju GPS lokaciju za novo uporište.");
+
   }
   // Mreža je globalno poravnata: svaka pločica uvijek zauzima 5 × 4 = 20 m².
   function refreshBlockGrid(force=false) {
@@ -863,7 +863,7 @@
     if(owners.length===1 && !touching)
       return {text:"Za napad se mora dodirivati tvoje kraljevstvo.",kind:"unconnected"};
     if(Number(current?.kingdom?.area||0)>0&&!cursorSpawnMode&&!touching)
-      return {text:"Novo uporište moguće je samo na GPS lokaciji.",kind:"unconnected",gpsAllowed:true};
+      return {text:"Blok nije uz granicu.",kind:"unconnected"};
     if(owners.length===1)return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
     return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
   }
@@ -873,6 +873,11 @@
     const btn=$("claim-block");
     const label=$("cursor-status");
     const isKing=current?.kingdom?.role==="kralj";
+    const gpsButton=$("gps-outpost-btn");
+    if(gpsButton){
+      gpsButton.classList.toggle("hidden",!isKing||needsFirstGps());
+      gpsButton.disabled=!isKing||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy;
+    }
     const showPlacement=isKing&&map.getZoom()>=18;
     $("joystick-panel")?.classList.toggle("hidden",!showPlacement);
     if(!showPlacement){if(btn)btn.disabled=true;return;}
@@ -885,16 +890,15 @@
     const bank=Number(current?.kingdom?.bank||0);
     const cost=status.kind==="attack"?100:20;
     const valid=["free","attack"].includes(status.kind)&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
-    const canLocate=!!status.gpsAllowed&&bank>=20&&!firstGpsBusy&&!previewBusy;
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=needsFirstGps()||cursorSpawnMode||firstGpsBusy||previewBusy);
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
       status.kind==="free"?(cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
-      status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?(status.gpsAllowed?"⚠ Nije uz granicu · GPS":"⚠ Nije uz granicu"):"Blok je zauzet";
-    if(label && bank<cost)label.textContent="Nedovoljno m² na kontu";
+      status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":"Blok je zauzet";
+    if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
-      btn.disabled=!(valid||canLocate);
+      btn.disabled=!valid;
       btn.textContent="POSTAVI";
-      btn.title=canLocate?"Pronađi GPS lokaciju za novo uporište":status.kind==="attack"?"Napad: potroši 100 m² za suparnički blok od 20 m²":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Napad: potroši 100 m² za suparnički blok od 20 m²":"Zauzmi slobodni blok od 20 m² za 20 m²";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+5,cursor.y+4);
@@ -924,7 +928,7 @@
     if(needsFirstGps()&&!firstGpsFix){await chooseFirstGps();return;}
     if(!cursor)return;
     const status=blockStatus(cursor);
-    if(status.gpsAllowed){if(Number(current.kingdom.bank)<20)return toast("Nedovoljno m² na kontu.");await chooseFirstGps();return;}
+    if(status.kind==="unconnected"){updateCursorPreview();return;}
     const cost=status.kind==="attack"?100:20;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
@@ -1364,6 +1368,10 @@
     initRealmColorPicker();
     $("realm-search").addEventListener("input",filterRealmCatalog);
     $("claim-block").addEventListener("click",saveBlock);
+    $("gps-outpost-btn").addEventListener("click",()=>{
+      if(current?.kingdom?.role!=="kralj"||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy)return;
+      chooseFirstGps();
+    });
     document.querySelectorAll("[data-joy]").forEach(b=>b.addEventListener("click",()=>moveCursor(b.dataset.joy)));
     $("leave-btn").addEventListener("click",leaveKingdom);
     $("members-box").addEventListener("click",renderMembers);
