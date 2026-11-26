@@ -25,7 +25,7 @@ begin
  if v_correct then
    select area_m2 into v_area from public.kz_kingdoms where id=v_game.kingdom_id for update;
    select role into v_role from public.kz_members where player_id=v_player;
-   v_earned:=case when v_area<=1000 then 40 when v_role='kralj' then 60
+   v_earned:=case when v_area<1000 then 40 when v_role='kralj' then 60
        when v_role='vojvoda' then 50 else 44 end;
    update public.kz_kingdoms set bank_m2=bank_m2+v_earned where id=v_game.kingdom_id;
  end if;
