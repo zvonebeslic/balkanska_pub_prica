@@ -235,7 +235,7 @@
     $("members-total").textContent = (current?.members?.length || 0) + " / 10";
     $("bank-count").textContent = formatArea(k?.bank);
     $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
-    $("boost-caption").textContent = k?.area >= 500 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje na 500 m²";
+    $("boost-caption").textContent = k?.area > 1000 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje iznad 1.000 m²";
     $("create-panel").classList.toggle("hidden", !!k);
     $("joystick-panel").classList.toggle("hidden", !k || !map || map.getZoom()<18);
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!k||gpsLocked()||firstGpsBusy||previewBusy);
@@ -1529,7 +1529,7 @@
       '<div class="kz-answer-list">'+["A","B","C"].map(key=>
         '<button class="option" data-answer="'+key+'">'+key+') '+safe(pending.options?.[key]||"")+'</button>').join("")+'</div>'+
       '<p class="member-meta">Točan odgovor vrijedi +'+
-      (current?.kingdom?.area>=500?(current.kingdom.role==="kralj"?60:current.kingdom.role==="vojvoda"?50:44):40)+
+      (current?.kingdom?.area>1000?(current.kingdom.role==="kralj"?60:current.kingdom.role==="vojvoda"?50:44):40)+
       ' m².</p><div id="answer-result" aria-live="polite"></div></section>'+
       '<aside class="kz-history"><h3>Rezultati & povijest</h3>'+
       '<div class="kz-current-score">✓ '+game.questions.filter(q=>q.correct).length+
@@ -1661,11 +1661,11 @@
     }catch(e){if(body.firstElementChild===loading){closeModal();toast(e.message);}}
   }
   function boostInfo() {
-    const enabled=(current?.kingdom?.area||0)>=500;
-    modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 500 m².')+'</p>'+
-      '<p>Dok kraljevstvo ima najmanje 500 m², svaki točan odgovor donosi:</p>'+
+    const enabled=(current?.kingdom?.area||0)>1000;
+    modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo prijeđe 1.000 m².')+'</p>'+
+      '<p>Dok kraljevstvo ima više od 1.000 m², svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Ispod 500 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m². Okršaj za tuđi blok ima ulog 100 m² i najviše 8 pitanja. Ako je protivničko konto na početku napada prazno, dovoljan je jedan točan odgovor; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m²; svaki odgovor skida do 20 m² s konta odgovarajućeg kraljevstva.</p>');
+      '<p>Do uključivo 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m². Okršaj za tuđi blok ima ulog 100 m² i najviše 8 pitanja. Ako je protivničko konto na početku napada prazno, dovoljan je jedan točan odgovor; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m²; svaki odgovor skida do 20 m² s konta odgovarajućeg kraljevstva.</p>');
   }
   function renderRequests() {
     const list=current?.requests||[];
