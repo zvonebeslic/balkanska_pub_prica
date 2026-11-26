@@ -1607,7 +1607,7 @@
       }catch(e){toast(e.message);b.disabled=false;}
     }));
   }
-  let realmFeedId=null,realmFeedRows=[],realmFeedMore=false,realmFeedBusy=false,realmFeedGeneration=0;
+  let realmFeedId=undefined,realmFeedRows=[],realmFeedMore=false,realmFeedBusy=false,realmFeedGeneration=0;
   const realmEventTypes={found:["👑","Osnivanje"],join:["👋","Novi član"],leave:["🚪","Odlazak"],kick:["🚪","Isključenje"],promotion:["⬆","Promaknuće"],demotion:["⬇","Degradiranje"],battle_start:["⚔","Napad"],battle_defense:["🛡","Obrana"],victory:["🏆","Pobjeda"],defeat:["⚔","Poraz"],battle_end:["🏳","Prekinuti okršaj"],guardian:["🏆","Pobijeđen čuvar"]};
   function paintRealmFeed({older=false,reset=false}={}){
     const list=$("realm-event-list"),more=$("realm-event-more");
@@ -1645,11 +1645,11 @@
       const next=Array.isArray(result.events)?result.events:[];
       const previousFirst=realmFeedRows[0]?.id;
       const oldMore=realmFeedMore;
+      if(!older&&previousFirst&&next.every(e=>realmFeedRows.some(x=>String(x.id)===String(e.id))))return;
       const merged=new Map(realmFeedRows.map(e=>[String(e.id),e]));
       for(const e of next)merged.set(String(e.id),e);
       realmFeedRows=[...merged.values()].sort((a,b)=>new Date(a.at)-new Date(b.at)||Number(a.id)-Number(b.id));
-      realmFeedMore=older||!previousFirst||realmFeedRows[0]?.id!==previousFirst?!!result.has_more:(oldMore||!!result.has_more);
-      if(!older&&previousFirst&&next.some(e=>String(e.id)===String(previousFirst)))realmFeedMore=oldMore||!!result.has_more;
+      realmFeedMore=older||!previousFirst||realmFeedRows[0]?.id!==previousFirst?!!result.has_more:oldMore;
       paintRealmFeed({older,reset:!previousFirst});
     }catch(e){
       if(generation===realmFeedGeneration&&!realmFeedRows.length)$("realm-event-list").textContent="Obavijesti trenutačno nisu dostupne.";
