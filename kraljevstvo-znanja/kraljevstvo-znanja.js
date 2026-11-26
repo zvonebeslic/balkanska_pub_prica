@@ -252,7 +252,7 @@
     $("leave-btn").textContent = isKing ? "Predaj krunu / Zatvori kraljevstvo" : "Napusti kraljevstvo";
     $("action-help").textContent = isKing ?
       (needsFirstGps()?"Prvi blok postavi na GPS lokaciji; ako je zauzeta, odaberi slobodan blok unutar dopuštenog kruga.":"Dodirni mjesto na karti, prilagodi blok strelicama i pritisni POSTAVI.") :
-      k ? "Možeš napadati protivničke blokove uz granicu i braniti svoje kraljevstvo. Slobodne blokove postavlja kralj." :
+      k ? "Možeš napadati protivničke blokove uz granicu i braniti svoje kraljevstvo. Slobodne blokove postavlja kralj kvizaš." :
       "Osnuj kraljevstvo ili dodirni drugo kraljevstvo na karti i zatraži članstvo.";
     renderRequests();
     renderMail();
@@ -1167,7 +1167,7 @@
         return {text:"Na tom bloku već traje okršaj.",kind:"battle_busy"};
       return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
     }
-    if(current?.kingdom?.role!=="kralj")return {text:"Slobodne blokove može postavljati samo kralj.",kind:"king_only"};
+    if(current?.kingdom?.role!=="kralj")return {text:"Slobodne blokove može postavljati samo kralj kvizaš.",kind:"king_only"};
     return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
   }
   function updateCursorPreview() {
@@ -1197,7 +1197,7 @@
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=gpsLocked()||firstGpsBusy||previewBusy);
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
       status.kind==="free"?(firstGpsFlexible()?"Prvi blok · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
-      status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
+      status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj kvizaš":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
     if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
@@ -1643,7 +1643,7 @@
           (n?'<span style="width:'+(c/n*100)+'%;background:#60c78a"></span><span style="flex:1;background:#c85d5d"></span>':'')+'</div>'+
           '<div class="member-meta">Ukupno zarađeno: <b>'+formatArea(m.total_earned)+'</b> · Osvojeno od protivnika: <b>'+formatArea(m.captured_m2)+'</b></div>'+
           breakdown+'</details>'+
-          (king&&m.id!==current.player.id?'<div><button class="secondary" data-manage="duke" data-member="'+safe(m.id)+'">Postavi vojvodu</button>'+
+          (king&&m.id!==current.player.id?'<div><button class="secondary" data-manage="duke" data-member="'+safe(m.id)+'">Postavi vojvodu kvizaša</button>'+
           '<button class="secondary" data-manage="crown" data-member="'+safe(m.id)+'">Predaj krunu</button>'+
           '<button class="secondary" data-manage="kick" data-member="'+safe(m.id)+'">Isključi</button></div>':'')+'</article>';
       }).join("");
