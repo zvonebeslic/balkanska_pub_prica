@@ -49,7 +49,7 @@
     if (!client) throw Error("Supabase nije učitan. Osvježi stranicu.");
     const { data, error } = await client.rpc(name, params);
     if (error) throw Error(error.message || "Pogreška poslužitelja");
-    if(name==="kz_territory_duel")void refreshBattleMarkers();
+    if(name==="kz_territory_duel"&&(["start","join","answer"].includes(params.p_action)||(params.p_action==="state"&&data?.status!=="active")))void refreshBattleMarkers();
     return data;
   }
   // Zajednički RPC za napade na putujuće dvorce; koristi postojeći
@@ -307,7 +307,13 @@
           map.closePopup();void openLiveBattle(entry.battle.id,current?.kingdom?.id===entry.battle.defender_id?"join":"state");
         };});
       }else{
-        entry.battle=b;entry.marker.setPopupContent(text);resizeBattleMarker(entry);
+        entry.battle=b;
+        if(entry.marker.getPopup().getContent()!==text){
+          entry.marker.setPopupContent(text);
+          const btn=entry.marker.getPopup().getElement()?.querySelector(".kz-defend-battle");
+          if(btn)btn.onclick=()=>{map.closePopup();void openLiveBattle(entry.battle.id,current?.kingdom?.id===entry.battle.defender_id?"join":"state");};
+        }
+        resizeBattleMarker(entry);
       }
       entry.expiresAt=Date.now()+Number(b.remaining_ms);
     }
@@ -1279,7 +1285,7 @@
     if(sig===session.signature)return;
     session.signature=sig;
     const defended=q.defender_online;
-    const notice=defended?'<p class="kz-live-defense">🛡 Branitelj je online · '+safe(q.defender_name||"")+'</p>':'<p class="member-meta">Trenutno nema aktivnog branitelja.</p>';
+    const notice=defended?'<p class="kz-live-defense">🛡 Branitelj se uključio · '+safe(q.defender_name||"")+'</p>':'<p class="member-meta">Trenutno nema aktivnog branitelja.</p>';
     const question=q.intermission?'<p class="kz-live-defense">Runda završena · sljedeće pitanje…</p>':
       '<p id="kz-duel-clock" class="kz-question-clock" role="timer">⏱ '+Math.ceil((q.remaining_ms||0)/1000)+' s</p>'+
       '<p class="quiz-question">'+safe(q.prompt)+'</p>'+
