@@ -1663,9 +1663,10 @@
   function boostInfo() {
     const enabled=(current?.kingdom?.area||0)>=1000;
     modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 1.000 m².')+'</p>'+
-      '<p>Od 1.000 m² nadalje, svaki točan odgovor donosi:</p>'+
+      '<p>Dok kraljevstvo ima 1.000 m² ili više, svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Dok kraljevstvo ima manje od 1.000 m², svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m². Okršaj za tuđi blok ima ulog 100 m² i najviše 8 pitanja. Ako je protivničko konto na početku napada prazno, dovoljan je jedan točan odgovor; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m²; svaki odgovor skida do 20 m² s konta odgovarajućeg kraljevstva.</p>');
+      '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok ima 20 m². Slobodan blok košta 20 m².</p>'+
+      '<p>Okršaj za tuđi blok ima ulog 100 m² i set od 8 pitanja. Ako je protivnički konto na početku napada prazan, dovoljan je jedan točan odgovor za osvajanje; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m² napadaču. Svaki netočan odgovor napadača skida 20 m² s konta njegova kraljevstva, dok svaki njegov točan odgovor skida 20 m² s konta protivničkog kraljevstva (odnosno preostali iznos ako je na kontu manje od 20 m²).</p>');
   }
   async function showApplicantStatistics(requestId){
     const request=(current?.requests||[]).find(r=>r.id===requestId);
