@@ -137,19 +137,67 @@
     }
     return { id: raw.id, secret: cred.secret, name: raw.displayName || "" };
   }
+  function realPlayerName(value){
+    const name=String(value||"").trim();
+    return name&&!/^(?:kvizaš|kvizas|gost|guest|kviztogo korisnik|kvizoman|tvoj rezultat|your score|kvizaš\d{3})$/iu.test(name)?name:"";
+  }
+  function saveSharedGuestName(guest,name){
+    const raw=JSON.parse(localStorage.getItem("kviztogo_guest_identity_v1")||"null");
+    if(!raw||raw.id!==guest.id)throw Error("Gostujući identitet je promijenjen. Osvježi stranicu.");
+    raw.displayName=name;
+    localStorage.setItem("kviztogo_guest_identity_v1",JSON.stringify(raw));
+    localStorage.removeItem("kviztogo_multiplayer_guest_alias_v1");
+    guest.name=name;
+  }
+  function requestPlayerName(guest,user){
+    const gate=$("kz-name-gate"),form=$("kz-name-form"),input=$("kz-name-input"),message=$("kz-name-message"),button=$("kz-name-save");
+    const main=document.querySelector("main.page");
+    gate.classList.remove("hidden");main.inert=true;main.setAttribute("aria-hidden","true");
+    return new Promise(resolve=>{
+      form.onsubmit=async event=>{
+        event.preventDefault();
+        const name=realPlayerName(input.value);
+        if(!name||!/^[\p{L}\p{N}]{3,20}$/u.test(name)){
+          message.textContent="Upiši 3–20 slova ili brojeva. Zadano ime nije dopušteno.";return;
+        }
+        button.disabled=true;message.textContent="Provjeravam ime…";
+        try{
+          if(user){
+            const available=await rpc("username_available",{candidate:name});
+            if(available!==true)throw Error("To korisničko ime već je zauzeto ili nije dopušteno.");
+            const result=await client.from("profiles").update({username:name}).eq("id",user.id).select("username").single();
+            if(result.error)throw result.error;
+            const meta=await client.auth.updateUser({data:{username:name}});
+            if(meta.error)throw meta.error;
+            localStorage.setItem("kviztogo_username",name);
+          }
+          const result=await rpc("kz_identity",{p_guest_id:guest.id,p_guest_secret:guest.secret,p_name:name});
+          if(!user)saveSharedGuestName(guest,result.name||name);
+          gate.classList.add("hidden");main.inert=false;main.removeAttribute("aria-hidden");
+          form.onsubmit=null;resolve(result);
+        }catch(e){message.textContent=e.message||"Ime nije spremljeno. Pokušaj ponovno.";}
+        finally{button.disabled=false;}
+      };
+      input.focus();
+    });
+  }
   async function prepareIdentity() {
-    const guest = getGuestIdentity();
-    const auth = await client.auth.getUser();
-    let name = guest.name || "Kvizaš";
-    if (auth.data?.user) {
-      const u = auth.data.user;
-      const profile = await client.from("profiles").select("username,full_name").eq("id", u.id).maybeSingle();
-      name = profile?.data?.username || profile?.data?.full_name || u.user_metadata?.full_name ||
-        u.user_metadata?.name || name;
-      $("account-warning").classList.add("hidden");
+    const guest=getGuestIdentity();
+    const auth=await client.auth.getSession();
+    if(auth.error)throw auth.error;
+    const user=auth.data?.session?.user||null;
+    const credentials={p_guest_id:guest.id,p_guest_secret:guest.secret};
+    let name=realPlayerName(await rpc("kz_saved_name",credentials));
+    if(user)$("account-warning").classList.add("hidden");
+    else if(!name)name=realPlayerName(guest.name);
+    let result=null;
+    if(name){
+      try{result=await rpc("kz_identity",{...credentials,p_name:name});}
+      catch(e){if(user)throw e;console.warn("Zajedničko ime nije potvrđeno:",e.message);}
     }
-    await rpc("kz_identity", { p_guest_id: guest.id, p_guest_secret: guest.secret, p_name: name });
-    identity = guest;
+    if(!result)result=await requestPlayerName(guest,user);
+    else if(!user)saveSharedGuestName(guest,result.name||name);
+    identity=guest;
   }
   async function reloadState() {
     current = await rpc("kz_state", args());

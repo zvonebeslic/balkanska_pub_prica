@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://kviztogo.com/kraljevstvo-znanja/">
   <link rel="icon" href="../Images/KvizToGo-online-kviz-pitanja.png">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-  <link rel="stylesheet" href="./kraljevstvo-znanja.css?v=97">
+  <link rel="stylesheet" href="./kraljevstvo-znanja.css?v=98">
   <link rel="stylesheet" href="./kz-castle-fleet.css?v=3">
   <link rel="stylesheet" href="./kz-iron-legion.css?v=4">
   <link rel="stylesheet" href="./kz-magic-forests.css?v=7">
@@ -94,6 +94,19 @@
     <section class="notifications"><h2>✉ Osobne obavijesti</h2><div id="mail-list" class="empty-note">Nema novih obavijesti.</div></section>
   <section class="tips"><strong>Kralj kvizaš</strong> raspoređuje osvojene kvadrate; <strong>vojvoda kvizaš</strong> i <strong>tri vojnika kvizaša</strong> sudjeluju u prikupljanju. Najviše pet igrača po kraljevstvu. Za strategiju se dogovorite u vlastitoj WhatsApp, Signal ili drugoj grupi — dopisivanja unutar igre nema.</section>
 </main>
+<div id="kz-name-gate" class="dialog-backdrop kz-name-gate hidden">
+  <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="kz-name-title">
+    <div class="dialog-top"><h2 id="kz-name-title">Odaberi korisničko ime</h2></div>
+    <form id="kz-name-form" class="kz-name-form">
+      <p>Za ulazak u Kraljevstvo znanja trebaš korisničko ime. Isto ime koristiš u Multiplayeru i Dnevnih 30.</p>
+      <label for="kz-name-input">Korisničko ime</label>
+      <input id="kz-name-input" type="text" maxlength="20" autocomplete="nickname" placeholder="npr. Mozgalo" required>
+      <small>3–20 znakova, samo slova i brojevi.</small>
+      <p id="kz-name-message" role="alert"></p>
+      <button id="kz-name-save" class="primary" type="submit">Spremi i uđi</button>
+    </form>
+  </section>
+</div>
 <div id="dialog-backdrop" class="dialog-backdrop hidden" role="presentation">
   <section id="dialog" class="dialog" role="dialog" aria-modal="true" aria-label="Kraljevstvo Znanja">
     <div class="dialog-top"><h2 id="dialog-title">Kraljevstvo Znanja</h2><button id="dialog-close" class="mini-close" aria-label="Zatvori">×</button></div>
@@ -110,6 +123,6 @@
 <script src="./kz-iron-legion.js?v=88" defer></script>
 <script src="./kz-coordinate-notes.js?v=3" defer></script>
 <script src="./kz-knowledge-flags.js?v=28" defer></script>
-<script src="./kraljevstvo-znanja.js?v=56" defer></script>
+<script src="./kraljevstvo-znanja.js?v=57" defer></script>
 </body>
 </html>
