@@ -503,7 +503,18 @@
       if(clear)towers.add(keyAt(v));
     }
 }
-  function paintTower(key){
+  // One owner per existing tower. Same rule as kz_private.tower_owner.
+  // Capture priority beats peaceful occupation; ties are deterministic.
+  const towerOwners=new Map();
+  function resolveTowerOwner(key,cellMetadata){
+    const [x,y]=key.split(":").map(Number);
+    const adjacent=[cellMetadata.get((x-1)+":"+(y-1)),cellMetadata.get(x+":"+(y-1)),
+      cellMetadata.get(x+":"+y),cellMetadata.get((x-1)+":"+y)].filter(Boolean);
+    adjacent.sort((a,b)=>(Number(b.a)||0)-(Number(a.a)||0)||
+      (Number(a.t)||0)-(Number(b.t)||0)||(a.k<b.k?-1:a.k>b.k?1:0));
+    return adjacent[0]?.k||null;
+  }
+  function paintTower(key,owner){
     const [x,y]=key.split(":").map(Number),zoom=map.getZoom();
     const p=map.project(ll(x,y),zoom),e=map.project(ll(x+5,y),zoom),n=map.project(ll(x,y+4),zoom);
     const baseWidth=Math.max(8,Math.max(Math.abs(e.x-p.x),Math.abs(n.y-p.y)*.85)*.43);
@@ -512,7 +523,12 @@
     // Keep the original bottom/ground anchor and grow only upwards.
     const bottom=p.y+h*.15,top=bottom-h*FORTIFICATION_HEIGHT_SCALE;
     const bounds=L.latLngBounds(map.unproject(L.point(p.x-w/2,bottom),zoom),map.unproject(L.point(p.x+w/2,top),zoom));
-    L.imageOverlay(TOWER_URL,bounds,{pane:"kz-tower-pane",interactive:false,alt:"",opacity:1}).addTo(borderLayer);
+    const tower=L.imageOverlay(TOWER_URL,bounds,{pane:"kz-tower-pane",interactive:false,alt:"",opacity:1}).addTo(borderLayer);
+    if(owner){
+      towerOwners.set(key,owner);
+      const node=tower.getElement();
+      if(node){node.dataset.kingdomId=owner;node.dataset.towerKey=key;}
+    }
   }
   const dryWallSprites={...DRY_WALL_URLS};
   // Remove the perspective lean in the two vertical textures, not in the map
@@ -610,7 +626,7 @@
   }
   function currentTerritoryPaintKey(){
     const z=map.getZoom(),ks=kingdoms.map(k=>JSON.stringify(k)).sort();
-    const cs=cells.map(c=>c.x+":"+c.y+":"+c.k).sort();
+    const cs=cells.map(c=>c.x+":"+c.y+":"+c.k+(z>=18?":"+c.t+":"+(c.a??""):"")).sort();
     // Only invalidate for crop changes near the actual geometry, not ordinary pans.
     let towerContext=null;
     if(z>=18&&territoryCellBounds&&cells.length){
@@ -663,6 +679,7 @@
     }
     labelsLayer.clearLayers();
     borderLayer.clearLayers();
+    towerOwners.clear();
     tilesLayer.clearLayers();
     const own = current?.kingdom?.id;
     const detailed = map.getZoom() >= 17;
@@ -749,7 +766,10 @@
         }
         paint(begin,last);
       }
-      if(towers)for(const key of towers)paintTower(key);
+      if(towers){
+        const metadata=new Map(cells.map(c=>[Number(c.x)+":"+Number(c.y),c]));
+        for(const key of towers)paintTower(key,resolveTowerOwner(key,metadata));
+      }
     }
     refreshBlockGrid(true);
     territoryPaintKey=nextPaintKey;
