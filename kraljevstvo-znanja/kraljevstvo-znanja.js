@@ -547,7 +547,37 @@
     }
     return JSON.stringify([z,dryWallReady,towerReady,ks,cs,towerContext]);
   }
+  // Count distinct kingdoms actually represented inside the current viewport, not the global catalog.
+  function countVisibleKingdoms(){
+    const bounds=map.getBounds(), detailed=map.getZoom()>=17;
+    const lo=xy(bounds.getSouth(),bounds.getWest()),hi=xy(bounds.getNorth(),bounds.getEast());
+    const minX=Math.min(lo.x,hi.x),maxX=Math.max(lo.x,hi.x);
+    const minY=Math.min(lo.y,hi.y),maxY=Math.max(lo.y,hi.y);
+    const known=new Set(kingdoms.map(k=>k.id)), visible=new Set(),represented=new Set();
+    for(const c of cells){
+      if(!known.has(c.k))continue;
+      represented.add(c.k);
+      const x=Number(c.x),y=Number(c.y);
+      if(x>=minX&&x<=maxX&&y>=minY&&y<=maxY)visible.add(c.k);
+    }
+    if(!detailed){
+      const size=map.getSize(), radius=8.5;
+      for(const k of kingdoms){
+        if(represented.has(k.id)||k.anchor_x==null||k.anchor_y==null||Number(k.area)<1)continue;
+        const p=map.latLngToContainerPoint(ll(Number(k.anchor_x),Number(k.anchor_y)));
+        if(p.x>=-radius&&p.x<=size.x+radius&&p.y>=-radius&&p.y<=size.y+radius)visible.add(k.id);
+      }
+    }
+    return visible.size;
+  }
+  function updateMapCount(){
+    if(!map)return;
+    const detailed=map.getZoom()>=17;
+    $("map-count").textContent=countVisibleKingdoms()+" kraljevstava · "+
+      (detailed?cells.length+" m² u prikazu":kingdoms.reduce((sum,k)=>sum+(Number(k.area)||0),0)+" m² ukupno");
+  }
   function drawMap() {
+    updateMapCount();
     const nextPaintKey=currentTerritoryPaintKey();
     if(nextPaintKey===territoryPaintKey){
       refreshBlockGrid();updateCursorPreview();return;
@@ -649,8 +679,7 @@
     $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi svoju lokaciju." : detailed
       ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
       : "Dodirni mjesto na karti i postavi blok joystickom.";
-    $("map-count").textContent = kingdoms.length + " kraljevstava · " +
-      (detailed ? cells.length + " m² u prikazu" : kingdoms.reduce((sum,k)=>sum+(Number(k.area)||0),0) + " m² ukupno");
+
   }
   function updateMapXY() {
     if(!map)return;
@@ -826,6 +855,7 @@
     window.dispatchEvent(new CustomEvent("kz:map-ready", {detail:{map}}));
     let timer;
     map.on("moveend zoomend", () => {
+      updateMapCount();
       refreshBlockGrid();
       updateCursorPreview();
       clearTimeout(timer);
