@@ -608,3 +608,16 @@ body{background:
 #realm-event-more{width:100%;margin-top:8px}#realm-event-more[hidden]{display:none}
 
 .kz-name-gate{z-index:10000!important}.kz-name-gate.hidden{display:none!important}.kz-name-form{display:grid;gap:10px;padding:16px}.kz-name-form input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #7b8799;border-radius:8px;background:#162335;color:#fff;font-size:16px}.kz-name-form label{font-weight:700}.kz-name-form small{color:#abb9cb}#kz-name-message{color:#ffd08b;margin:0;min-height:1em}
+
+/* Compact footer and accessible, scrollable game rules. */
+.kz-rules-footer{display:flex;justify-content:center;padding:.65rem 0 1rem}
+.kz-rules-footer .minor{font-size:.75rem;padding:.45rem .8rem;color:var(--muted);min-height:36px}
+.kz-rules-content{font-size:.88rem;line-height:1.65}
+.kz-rules-intro{color:var(--muted);margin:.5rem 0 .8rem}
+.kz-rules-expand{display:block;margin:0 0 .65rem;min-height:36px}
+.kz-rule-section{border:1px solid #7695bc40;border-radius:12px;margin:.5rem 0;background:#ffffff06}
+.kz-rule-section summary{cursor:pointer;padding:.7rem .8rem;font-weight:700;color:#edf4ff;line-height:1.4}
+.kz-rule-section[open] summary{border-bottom:1px solid #7695bc30}
+.kz-rule-section ul{margin:.65rem .75rem .8rem;padding-left:1.15rem;color:#c1d0e3}
+.kz-rule-section li+li{margin-top:.55rem}
+.kz-rule-section summary:focus-visible,.kz-rules-footer button:focus-visible,.kz-rules-expand:focus-visible{outline:2px solid #91caff;outline-offset:2px}
