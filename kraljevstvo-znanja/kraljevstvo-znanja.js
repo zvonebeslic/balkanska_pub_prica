@@ -986,9 +986,8 @@
       crs:fantasyCRS,zoomControl:true,worldCopyJump:false,minZoom:2,maxZoom:21,bounceAtZoomLimits:false,
       inertia:true,inertiaDeceleration:1700,inertiaMaxSpeed:1100,easeLinearity:.25
     }).setView([43.5,17.3],7);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      minZoom:2,maxZoom:21,maxNativeZoom:19,noWrap:true,attribution:'&copy; OpenStreetMap'
-    }).addTo(map);
+    // Only replace the visible base layer; the real-coordinate CRS remains unchanged.
+    window.KZFantasyTerrain.create().addTo(map);
     // Secret island: use the same X/Y block indices as the visible coordinate counter.
     const lotarCentre=ll(600652*5+2.5,1832429*4+2);
     const lotarPoint=extendedProjection.project(L.latLng(lotarCentre.lat,lotarCentre.lng));
