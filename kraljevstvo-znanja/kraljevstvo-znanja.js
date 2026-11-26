@@ -237,8 +237,8 @@
     $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
     $("boost-caption").textContent = k?.area >= 500 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje na 500 m²";
     $("create-panel").classList.toggle("hidden", !!k);
-    $("joystick-panel").classList.toggle("hidden", !isKing || !map || map.getZoom()<18);
-    document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!isKing||gpsLocked()||firstGpsBusy||previewBusy);
+    $("joystick-panel").classList.toggle("hidden", !k || !map || map.getZoom()<18);
+    document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!k||gpsLocked()||firstGpsBusy||previewBusy);
     $("gps-status").textContent=firstGpsFlexible()?"GPS blok zauzet · odaberi slobodan blok do "+firstGpsFix.radius+" m":needsFirstGps()?"Prvi blok na GPS lokaciji ili najbližem slobodnom području":"Novo uporište isključivo na GPS lokaciji";
     if(needsFirstGps()&&!firstGpsFix){cursor=null;cursorSpawnMode=false;}
     if(!needsFirstGps()&&!cursorSpawnMode)firstGpsFix=null;
@@ -246,13 +246,13 @@
       const point = alignBlock(Number(k.anchor_x),Number(k.anchor_y));
       cursor = {x:point.x+5,y:point.y};
     }
-    if (!isKing) { cursor = null; cursorSpawnMode = false; firstGpsFix=null; }
+    if (!isKing) { if(!k||cursorSpawnMode)cursor=null; cursorSpawnMode = false; firstGpsFix=null; }
     updateCursorPreview();
     $("leave-btn").classList.toggle("hidden", !k);
     $("leave-btn").textContent = isKing ? "Predaj krunu / Zatvori kraljevstvo" : "Napusti kraljevstvo";
     $("action-help").textContent = isKing ?
       (needsFirstGps()?"Prvi blok postavi na GPS lokaciji; ako je zauzeta, odaberi slobodan blok unutar dopuštenog kruga.":"Dodirni mjesto na karti, prilagodi blok strelicama i pritisni POSTAVI.") :
-      k ? "Prikupljaš kvadrate znanja za zajednički konto. Kralj raspoređuje teritorij." :
+      k ? "Možeš napadati protivničke blokove uz granicu i braniti svoje kraljevstvo. Slobodne blokove postavlja kralj." :
       "Osnuj kraljevstvo ili dodirni drugo kraljevstvo na karti i zatraži članstvo.";
     renderRequests();
     renderMail();
@@ -343,8 +343,8 @@
       const mine=current?.kingdom?.id;
       const text='<strong>⚔ Bitka u tijeku</strong><br>'+safe(b.attacker)+' → '+safe(b.defender)+
         (b.defended?'<br>🛡 Aktivna obrana':'')+
-        (mine===b.defender_id?'<br><button type="button" class="kz-defend-battle">🛡 '+(b.defended?'Uključi se / nastavi obranu':'BRANI TERITORIJ')+'</button>':
-        mine===b.attacker_id?'<br><button type="button" class="kz-defend-battle">⚔ Nastavi okršaj</button>':'');
+        (mine===b.defender_id&&!b.defended&&!(duelResumeButton&&!duelResumeButton.hidden)?'<br><button type="button" class="kz-defend-battle">🛡 BRANI TERITORIJ</button>':
+        mine===b.defender_id&&b.defended?'<br>Mjesto branitelja je zauzeto.':'');
       if(!entry){
         const marker=L.marker(ll(Number(b.x)+2.5,Number(b.y)+2),{
           pane:"kz-active-battle-pane",bubblingMouseEvents:false,keyboard:true,title:"Bitka u tijeku",
@@ -764,6 +764,9 @@
           interactive:true,renderer:map._kzCanvasRenderer
         }).on("click",event=>{
           L.DomEvent.stopPropagation(event);
+          if(map.getZoom()>=18&&current?.kingdom&&current.kingdom.role!=="kralj"&&current.kingdom.id!==k.id&&!previewBusy&&!firstGpsBusy){
+            chooseMapCentre(false,event.latlng);return;
+          }
           showKingdom(k);
         }).addTo(tilesLayer);
       }
@@ -1015,7 +1018,7 @@
       xyFrame=requestAnimationFrame(()=>{xyFrame=0;updateMapXY();});
     });
     map.on("click",e=>{
-      if(map.getZoom()<18||current?.kingdom?.role!=="kralj"||(needsFirstGps()&&!firstGpsFlexible())||cursorSpawnMode&&!firstGpsFlexible()||previewBusy||firstGpsBusy)return;
+      if(map.getZoom()<18||!current?.kingdom||(needsFirstGps()&&!firstGpsFlexible())||cursorSpawnMode&&!firstGpsFlexible()||previewBusy||firstGpsBusy)return;
       chooseMapCentre(false,e.latlng);
     });
   }
@@ -1076,7 +1079,7 @@
     finally{firstGpsBusy=false;updateCursorPreview();}
   }
   function chooseMapCentre(remote=false,position=null) {
-    if (current?.kingdom?.role !== "kralj") return toast("Samo kralj može postavljati blokove.");
+    if (!current?.kingdom) return toast("Prvo se pridruži kraljevstvu.");
     if(needsFirstGps()&&!firstGpsFlexible()){chooseFirstGps();return;}
     const centre=position||map.getCenter();
     const projected=xy(centre.lat,centre.lng);
@@ -1159,7 +1162,12 @@
       return {text:"Za napad se mora dodirivati tvoje kraljevstvo.",kind:"unconnected"};
     if(Number(current?.kingdom?.area||0)>0&&!cursorSpawnMode&&!touching)
       return {text:"Blok nije uz granicu.",kind:"unconnected"};
-    if(owners.length===1)return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
+    if(owners.length===1){
+      if([...battleMarkers.values()].some(e=>Number(e.battle.x)===b.x&&Number(e.battle.y)===b.y))
+        return {text:"Na tom bloku već traje okršaj.",kind:"battle_busy"};
+      return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
+    }
+    if(current?.kingdom?.role!=="kralj")return {text:"Slobodne blokove može postavljati samo kralj.",kind:"king_only"};
     return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
   }
   function updateCursorPreview() {
@@ -1174,22 +1182,22 @@
       gpsButton.classList.toggle("hidden",!isKing||needsFirstGps());
       gpsButton.disabled=!isKing||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy;
     }
-    const showPlacement=isKing&&map.getZoom()>=18;
+    const showPlacement=!!current?.kingdom&&map.getZoom()>=18;
     $("joystick-panel")?.classList.toggle("hidden",!showPlacement);
     if(!showPlacement){if(btn)btn.disabled=true;return;}
     if(!cursor) {
-      if(label)label.textContent=isKing?(needsFirstGps()?"Pritisni POSTAVI za GPS.":"Dodirni mjesto na karti."):"";
+      if(label)label.textContent=needsFirstGps()?"Pritisni POSTAVI za GPS.":isKing?"Dodirni mjesto na karti.":"Odaberi protivnički blok uz granicu.";
       if(btn){btn.textContent="POSTAVI";btn.disabled=!(isKing&&needsFirstGps()&&!firstGpsBusy&&!previewBusy);btn.title=needsFirstGps()?"Pronađi svoju GPS lokaciju":"Postavi blok";btn.setAttribute("aria-label",btn.title);}
       return;
     }
     const status=blockStatus(cursor);
     const bank=Number(current?.kingdom?.bank||0);
     const cost=status.kind==="attack"?100:20;
-    const valid=["free","attack"].includes(status.kind)&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
+    const valid=["free","attack"].includes(status.kind)&&!(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden))&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=gpsLocked()||firstGpsBusy||previewBusy);
     if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
       status.kind==="free"?(firstGpsFlexible()?"Prvi blok · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
-      status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":"Blok je zauzet";
+      status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
     if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
@@ -1210,7 +1218,7 @@
   }
 
   function moveCursor(direction) {
-    if(!map||map.getZoom()<18||current?.kingdom?.role!=="kralj")return;
+    if(!map||map.getZoom()<18||!current?.kingdom)return;
     if(gpsLocked())return toast("GPS uporište ne možeš pomicati. Određuje ga GPS.");
     if(!cursor){ chooseMapCentre(false);if(!cursor)return; }
     const dir={N:[0,4],S:[0,-4],E:[5,0],W:[-5,0]}[direction];
@@ -1222,10 +1230,11 @@
     updateCursorPreview();
   }
   async function saveBlock() {
-    if(!map||map.getZoom()<18||previewBusy||firstGpsBusy||current?.kingdom?.role!=="kralj")return;
+    if(!map||map.getZoom()<18||previewBusy||firstGpsBusy||!current?.kingdom)return;
     if(needsFirstGps()&&!firstGpsFix){await chooseFirstGps();return;}
     if(!cursor)return;
     const status=blockStatus(cursor);
+    if(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden)){toast("Prvo završi svoj trenutni okršaj.");return;}
     if(status.kind==="unconnected"){updateCursorPreview();return;}
     const cost=status.kind==="attack"?100:20;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank)<cost)
@@ -1269,6 +1278,7 @@
   // Territory duels are separate from the regular ten-question game.
   function setDuelResume(active){
     if(duelResumeButton)duelResumeButton.hidden=!active;
+    if(map)updateCursorPreview();
   }
   async function openLiveBattle(id,action){
     if(duelLoading||territoryDuel)return;
