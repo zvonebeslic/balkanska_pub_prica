@@ -151,7 +151,7 @@ function gpsFix(f){
    const c=p.coords;
    if(Date.now()-p.timestamp>25000||!Number.isFinite(c.accuracy)||c.accuracy>150||c.accuracy<0){reject(Error("GPS nije dovoljno precizan (do 150 m). Pokušaj ponovno."));return;}
    const km=map.distance([c.latitude,c.longitude],[f.lat,f.lng])/1000;
-   if(km>2){reject(Error("Zastavica je udaljena "+km.toFixed(2)+" km. Priđi na najviše 2 km."));return;}
+   if(km>5){reject(Error("Zastavica je udaljena "+km.toFixed(2)+" km. Priđi na najviše 5 km."));return;}
    resolve({lat:c.latitude,lng:c.longitude,accuracy:c.accuracy});
   },e=>reject(Error("GPS: "+e.message)),{enableHighAccuracy:true,maximumAge:0,timeout:16000});
  });
@@ -186,7 +186,7 @@ function openFlag(f,marker){
  const gps=el("p","GPS nije uključen.","kz-fleet-gps-status");gps.setAttribute("aria-live","polite");
  const gpsButton=el("button","📍 Uključi GPS","kz-fleet-gps-enable");gpsButton.type="button";
  const play=el("button","Pokreni pitanje","kz-fleet-attack");play.type="button";play.disabled=true;
- const message=el("p","Uključi GPS i priđi na najviše 2 km od zastavice. Pitanja dolaze iz zajedničke baze.","kz-fleet-message");message.setAttribute("aria-live","polite");
+ const message=el("p","Uključi GPS i priđi na najviše 5 km od zastavice. Pitanja dolaze iz zajedničke baze.","kz-fleet-message");message.setAttribute("aria-live","polite");
  const box=el("div",null,"kz-fleet-question");
  card.append(title,desc,quota,gps,gpsButton,play,message,box);
  let busy=false,gpsReady=false,completed=false,entryFix=null;
@@ -209,7 +209,7 @@ function openFlag(f,marker){
   if(busy||completed||!isOpen())return;
   busy=true;box.replaceChildren();update();say("Učitavam pitanje iz zajedničke baze…");
   try{
-   if(!entryFix){say("Za igranje je potreban GPS unutar 2 km.");return;}
+   if(!entryFix){say("Za igranje je potreban GPS unutar 5 km.");return;}
    const q=await rpc().challenge(f.id,f.generation,entryFix);
    if(!isOpen()){if(q.challenge_id)rpc().answer(q.challenge_id,'SKIP',entryFix).then(refresh).catch(()=>{});return;}
    setRemaining(q.remaining??f.remaining??count);

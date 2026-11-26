@@ -297,7 +297,7 @@
     if(selected===null||!gps||Date.now()-gps.at>25000||
       gps.accuracy>150||gps.accuracy<0)return null;
     const pos=monsterPosition(selected);
-    if(!pos||dist(pos,gps)>2)return null;
+    if(!pos||dist(pos,gps)>5)return null;
     return {lat:gps.lat,lng:gps.lng,accuracy:gps.accuracy};
   }
   function eligibility(){
@@ -309,9 +309,9 @@
     if(gps&&Date.now()-gps.at>25000)status="GPS je zastario. Čekam novo očitanje.";
     else if(gps&&gps.accuracy>150)status="GPS je neprecizan ("+Math.round(gps.accuracy)+" m).";
     else if(gps&&target!==null)
-      status=target<=2000
+      status=target<=5000
         ?"✅ U krugu si za napad: "+target+" m od čuvara."
-        :"🔒 Udaljenost "+target+" m. Priđi na 2 km ili manje.";
+        :"🔒 Udaljenost "+target+" m. Priđi na 5 km ili manje.";
     gpsLine.textContent=status;
     const good=!!currentFix();
     const attack=dialog.querySelector(".kz-fleet-attack");
@@ -399,7 +399,7 @@
     dialog.querySelector(".kz-fleet-question").replaceChildren();
     renderHP(id,state.get(id)?.hp??100);
     quotaMessage();
-    message("Za napad uključi GPS i priđi na najviše 2 km od čuvara. Pitanja dolaze iz zajedničke baze.");
+    message("Za napad uključi GPS i priđi na najviše 5 km od čuvara. Pitanja dolaze iz zajedničke baze.");
     eligibility();
     window.KZCastleRPC?.quota?.().then(q=>{
       if(selected!==id)return;
@@ -453,7 +453,7 @@
     const session=fightSession;
     const fix=currentFix();
     if(!fix){
-      eligibility();message("GPS više nije unutar 2 km. Napad je prekinut.");return;
+      eligibility();message("GPS više nije unutar 5 km. Napad je prekinut.");return;
     }
     busy=true;dialog.querySelectorAll(".kz-fleet-choice").forEach(b=>b.disabled=true);
     message("Provjeravam odgovor i GPS…");

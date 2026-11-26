@@ -240,7 +240,7 @@
     $("create-panel").classList.toggle("hidden", !!k);
     $("joystick-panel").classList.toggle("hidden", !k || !map || map.getZoom()<18);
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!k||gpsLocked()||firstGpsBusy||previewBusy);
-    $("gps-status").textContent=firstGpsFlexible()?"GPS blok zauzet · odaberi slobodan blok do "+firstGpsFix.radius+" m":needsFirstGps()?"Prvi blok na GPS lokaciji ili najbližem slobodnom području":"Novo uporište isključivo na GPS lokaciji";
+    $("gps-status").textContent=firstGpsFlexible()?"Odaberi slobodan prvi blok u krugu od 5 km":needsFirstGps()?"Prvi blok unutar 5 km od GPS lokacije":"Novo uporište isključivo na GPS lokaciji";
     if(needsFirstGps()&&!firstGpsFix){cursor=null;cursorSpawnMode=false;}
     if(!needsFirstGps()&&!cursorSpawnMode)firstGpsFix=null;
     if (isKing && !needsFirstGps() && !cursor && k.anchor_x != null) {
@@ -252,7 +252,7 @@
     $("leave-btn").classList.toggle("hidden", !k);
     $("leave-btn").textContent = isKing ? "Predaj krunu / Zatvori kraljevstvo" : "Napusti kraljevstvo";
     $("action-help").textContent = isKing ?
-      (needsFirstGps()?"Prvi blok postavi na GPS lokaciji; ako je zauzeta, odaberi slobodan blok unutar dopuštenog kruga.":"Dodirni mjesto na karti, prilagodi blok strelicama i pritisni POSTAVI.") :
+      (needsFirstGps()?"Prvi blok postavi na bilo koji slobodan blok unutar 5 km od GPS lokacije.":"Dodirni mjesto na karti, prilagodi blok strelicama i pritisni POSTAVI.") :
       k ? "Možeš napadati protivničke blokove uz granicu i braniti svoje kraljevstvo. Slobodne blokove postavlja kralj kvizaš." :
       "Osnuj kraljevstvo ili dodirni drugo kraljevstvo na karti i zatraži članstvo.";
     renderRequests();
@@ -840,7 +840,7 @@
     territoryPaintKey=nextPaintKey;
     updateCursorPreview();
     paintLivingWorld();
-    $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi svoju lokaciju." : detailed
+    $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi slobodno mjesto unutar 5 km." : detailed
       ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
       : "Dodirni mjesto na karti i postavi blok joystickom.";
 
@@ -1031,7 +1031,7 @@
       xyFrame=requestAnimationFrame(()=>{xyFrame=0;updateMapXY();});
     });
     map.on("click",e=>{
-      if(map.getZoom()<18||!current?.kingdom||(needsFirstGps()&&!firstGpsFlexible())||cursorSpawnMode&&!firstGpsFlexible()||previewBusy||firstGpsBusy)return;
+      if((map.getZoom()<18&&!firstGpsFlexible())||!current?.kingdom||(needsFirstGps()&&!firstGpsFlexible())||cursorSpawnMode&&!firstGpsFlexible()||previewBusy||firstGpsBusy)return;
       chooseMapCentre(false,e.latlng);
     });
   }
@@ -1079,15 +1079,16 @@
     firstGpsFix=fix;
     const point=xy(fix.lat,fix.lon);
     cursor=fix.suggested||alignBlock(point.x,point.y);cursorSpawnMode=true;
-    map.setView(previewCentre(cursor),Math.max(map.getZoom(),20));
+    if(firstGpsFlexible())map.fitBounds(L.latLng(fix.lat,fix.lon).toBounds(2*fix.radius),{padding:[18,18],maxZoom:15});
+    else map.setView(previewCentre(cursor),Math.max(map.getZoom(),20));
     updateCursorPreview();
-    $("gps-status").textContent=firstGpsFlexible()?"GPS blok zauzet · odaberi slobodan blok do "+fix.radius+" m":"GPS pronađen · preciznost "+Math.round(fix.accuracy)+" m";
+    $("gps-status").textContent=firstGpsFlexible()?"GPS pronađen · odaberi slobodan blok unutar 5 km":"GPS pronađen · preciznost "+Math.round(fix.accuracy)+" m";
   }
   async function chooseFirstGps(){
     if(firstGpsBusy||previewBusy||current?.kingdom?.role!=="kralj")return;
     firstGpsBusy=true;firstGpsFix=null;cursor=null;cursorSpawnMode=false;updateCursorPreview();
     $("gps-status").textContent="Tražim GPS lokaciju…";
-    try{const fix=await firstGpsZone(await readFirstGps());if(current?.kingdom?.role==="kralj"){showFirstGps(fix);await reloadMap();toast(fix.radius>0?"GPS blok je zauzet. Odaberi slobodan blok unutar "+fix.radius+" m.":"Pronađena GPS lokacija. Pritisni POSTAVI za novo uporište.");}}
+    try{const fix=await firstGpsZone(await readFirstGps());if(current?.kingdom?.role==="kralj"){showFirstGps(fix);await reloadMap();toast(fix.radius>0?"Odaberi slobodan prvi blok unutar 5 km od GPS lokacije.":"Pronađena GPS lokacija. Pritisni POSTAVI za novo uporište.");}}
     catch(e){$("gps-status").textContent="GPS nije dostupan";toast(e.message);}
     finally{firstGpsBusy=false;updateCursorPreview();}
   }
@@ -1195,7 +1196,7 @@
       gpsButton.classList.toggle("hidden",!isKing||needsFirstGps());
       gpsButton.disabled=!isKing||needsFirstGps()||Number(current?.kingdom?.bank||0)<20||firstGpsBusy||previewBusy;
     }
-    const showPlacement=!!current?.kingdom&&map.getZoom()>=18;
+    const showPlacement=!!current?.kingdom&&(map.getZoom()>=18||(needsFirstGps()&&!firstGpsFix));
     $("joystick-panel")?.classList.toggle("hidden",!showPlacement);
     if(!showPlacement){if(btn)btn.disabled=true;return;}
     if(!cursor) {
@@ -1243,7 +1244,7 @@
     updateCursorPreview();
   }
   async function saveBlock() {
-    if(!map||map.getZoom()<18||previewBusy||firstGpsBusy||!current?.kingdom)return;
+    if(!map||(map.getZoom()<18&&!(needsFirstGps()&&!firstGpsFix))||previewBusy||firstGpsBusy||!current?.kingdom)return;
     if(needsFirstGps()&&!firstGpsFix){await chooseFirstGps();return;}
     if(!cursor)return;
     const status=blockStatus(cursor);
