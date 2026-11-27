@@ -11,7 +11,7 @@
   let lifeEnabled = true;
   // The map toolbar no longer exposes the world toggle; keep characters visible for everyone.
   let mapLoading = false, mapRevision = 0, dialogQuiz = false;
-  let mainQuizSession=null, territoryDuel=null, duelResumeButton=null, duelLoading=false;
+  let mainQuizSession=null, territoryDuel=null, duelResumeButton=null, duelLoading=false, duelResumeId=null;
   function stopMainTimer(){if(mainQuizSession){clearInterval(mainQuizSession.timer);mainQuizSession.timer=null;}}
   let territoryPaintKey=null, blockGridPaintKey=null, initialMapReady=false;
   let territoryCellBounds=null;
@@ -105,11 +105,11 @@
     const abandoned=mainQuizSession;stopMainTimer();mainQuizSession=null;
     if(abandoned&&!abandoned.done&&!abandoned.busy&&abandoned.position){rpc("kz_answer",args({p_game_id:abandoned.gameId,p_number:abandoned.position,p_choice:"SKIP"})).then(()=>reloadState()).catch(()=>{});}
     const duel=territoryDuel;
-    if(duel){clearInterval(duel.timer);clearInterval(duel.poll);territoryDuel=null;
-      if(!duel.done&&!duel.busy&&!duel.q.submitted&&!duel.q.intermission&&duel.q.status==="active"){
-        rpc("kz_territory_duel",args({p_action:"answer",p_id:duel.q.id,p_number:duel.q.position,p_choice:"SKIP"}))
-          .then(out=>{setDuelResume(out.status==="active");return reloadState();}).catch(e=>toast(e.message));
-      }
+    if(duel){
+      clearInterval(duel.timer);clearInterval(duel.poll);territoryDuel=null;
+      // Closing the view is not an answer or a surrender. The server deadline remains unchanged.
+      duelResumeId=duel.q.id;setDuelResume(true);
+      void refreshBattleMarkers();
     }
     dialogQuiz = false;
     $("dialog-backdrop").classList.add("hidden");
@@ -356,7 +356,8 @@
       const mine=current?.kingdom?.id;
       const text='<strong>⚔ Bitka u tijeku</strong><br>'+safe(b.attacker)+' → '+safe(b.defender)+
         (b.defended?'<br>🛡 Aktivna obrana':'')+
-        (mine===b.defender_id&&!b.defended&&!(duelResumeButton&&!duelResumeButton.hidden)?'<br><button type="button" class="kz-defend-battle">🛡 BRANI TERITORIJ</button>':
+        (duelResumeId===b.id&&(mine===b.defender_id||mine===b.attacker_id)?'<br><button type="button" class="kz-defend-battle">⚔ NASTAVI OKRŠAJ</button>':
+        mine===b.defender_id&&!b.defended&&!(duelResumeButton&&!duelResumeButton.hidden)?'<br><button type="button" class="kz-defend-battle">🛡 BRANI TERITORIJ</button>':
         mine===b.defender_id&&b.defended?'<br>Mjesto branitelja je zauzeto.':'');
       if(!entry){
         const marker=L.marker(ll(Number(b.x)+5,Number(b.y)+4),{
@@ -366,14 +367,14 @@
         entry={marker,battle:b,sizeKey:null,expiresAt:0};battleMarkers.set(b.id,entry);
         resizeBattleMarker(entry);marker.bindPopup(text).addTo(battleLayer);
         marker.on("popupopen",e=>{const btn=e.popup.getElement()?.querySelector(".kz-defend-battle");if(btn)btn.onclick=()=>{
-          map.closePopup();void openLiveBattle(entry.battle.id,current?.kingdom?.id===entry.battle.defender_id?"join":"state");
+          map.closePopup();void openLiveBattle(entry.battle.id,duelResumeId===entry.battle.id?"state":current?.kingdom?.id===entry.battle.defender_id?"join":"state");
         };});
       }else{
         entry.battle=b;
         if(entry.marker.getPopup().getContent()!==text){
           entry.marker.setPopupContent(text);
           const btn=entry.marker.getPopup().getElement()?.querySelector(".kz-defend-battle");
-          if(btn)btn.onclick=()=>{map.closePopup();void openLiveBattle(entry.battle.id,current?.kingdom?.id===entry.battle.defender_id?"join":"state");};
+          if(btn)btn.onclick=()=>{map.closePopup();void openLiveBattle(entry.battle.id,duelResumeId===entry.battle.id?"state":current?.kingdom?.id===entry.battle.defender_id?"join":"state");};
         }
         resizeBattleMarker(entry);
       }
@@ -1292,6 +1293,7 @@
 
   // Territory duels are separate from the regular ten-question game.
   function setDuelResume(active){
+    if(!active)duelResumeId=null;
     if(duelResumeButton)duelResumeButton.hidden=!active;
     if(map)updateCursorPreview();
   }
@@ -1301,12 +1303,13 @@
     duelLoading=true;
     try{
       const out=await rpc("kz_territory_duel",args({p_action:action,p_id:id}));
+      if(out?.status==="active")duelResumeId=out.id;
       setDuelResume(out?.status==="active");
       if(out)renderTerritoryDuel(out);
     }catch(e){toast(e.message);}
     finally{duelLoading=false;}
   }
-  async function resumeTerritoryDuel(){await openLiveBattle(null,"resume");}
+  async function resumeTerritoryDuel(){await openLiveBattle(duelResumeId,duelResumeId?"state":"resume");}
   function roundMark(v){return v===true?"✓":v===false?"✕":"—";}
   function battleRounds(q){
     return '<div class="kz-battle-rounds"><strong>Rezultati po pitanjima</strong><div class="kz-battle-table">'+
@@ -1360,8 +1363,9 @@
     let session=territoryDuel;
     if(!session||session.q.id!==q.id){
       if(session){clearInterval(session.timer);clearInterval(session.poll);}
-      session={q,busy:false,done:false,timer:null,poll:null,signature:"",deadline:0,defenderOnline:q.defender_online};
-      territoryDuel=session;setDuelResume(true);
+      session={q,busy:false,pollBusy:false,answerVersion:0,done:false,timer:null,poll:null,signature:"",deadline:0,defenderOnline:q.defender_online};
+      territoryDuel=session;duelResumeId=q.id;setDuelResume(true);
+      void refreshBattleMarkers();
       const tick=()=>{
         if(territoryDuel!==session)return;
         const clock=$("kz-duel-clock");if(!clock)return;
@@ -1392,17 +1396,34 @@
     document.querySelectorAll("[data-duel-answer]").forEach(b=>b.onclick=()=>updateLiveBattle(session,"answer",b.dataset.duelAnswer));
   }
   async function updateLiveBattle(session,action,key){
-    if(territoryDuel!==session||session.busy)return;
-    if(action==="answer"&&(session.done||session.q.submitted||session.q.intermission))return;
-    session.busy=true;
-    if(action==="answer")document.querySelectorAll("[data-duel-answer]").forEach(b=>b.disabled=true);
+    if(territoryDuel!==session)return;
+    const answering=action==="answer";
+    if(answering){
+      if(session.busy||session.done||session.q.submitted||session.q.intermission)return;
+      session.busy=true;session.answerVersion++;
+      document.querySelectorAll("[data-duel-answer]").forEach(b=>b.disabled=true);
+    }else{
+      if(session.busy||session.pollBusy)return;
+      session.pollBusy=true;
+    }
+    // Answer clicks must never be dropped by a background state request.
+    // Ignore older poll responses after a newer answer has been dispatched.
+    const version=session.answerVersion, position=session.q.position, id=session.q.id;
     try{
-      const out=await rpc("kz_territory_duel",args({p_action:action,p_id:session.q.id,
-        ...(action==="answer"?{p_number:session.q.position,p_choice:key}:{})}));
-      if(territoryDuel===session&&out)renderTerritoryDuel(out);
+      const out=await rpc("kz_territory_duel",args({p_action:action,p_id:id,
+        ...(answering?{p_number:position,p_choice:key}:{})}));
+      if(territoryDuel!==session||!out)return;
+      if(!answering&&(session.busy||version!==session.answerVersion))return;
+      renderTerritoryDuel(out);
     }catch(e){
-      if(territoryDuel===session&&action==="answer"){toast(e.message);document.querySelectorAll("[data-duel-answer]").forEach(b=>b.disabled=false);}
-    }finally{session.busy=false;}
+      if(territoryDuel===session&&answering)toast(e.message);
+    }finally{
+      if(answering){
+        session.busy=false;
+        if(territoryDuel===session&&!session.done&&!session.q.submitted&&!session.q.intermission)
+          document.querySelectorAll("[data-duel-answer]").forEach(b=>b.disabled=false);
+      }else session.pollBusy=false;
+    }
   }
   async function showBattleHistory(){
     if(territoryDuel||mainQuizSession){toast("Prvo zatvori trenutni okršaj ili kviz.");return;}
@@ -1883,7 +1904,7 @@
     $("realm-search").addEventListener("input",filterRealmCatalog);
     $("claim-block").addEventListener("click",saveBlock);
     duelResumeButton=document.createElement("button");duelResumeButton.type="button";
-    duelResumeButton.className="minor";duelResumeButton.textContent="⚔ Nastavi okršaj";
+    duelResumeButton.id="kz-duel-resume";duelResumeButton.className="minor";duelResumeButton.textContent="⚔ Nastavi okršaj";
     duelResumeButton.hidden=true;duelResumeButton.onclick=resumeTerritoryDuel;
     document.querySelector(".map-top .map-actions")?.append(duelResumeButton);
     $("gps-outpost-btn").addEventListener("click",()=>{
