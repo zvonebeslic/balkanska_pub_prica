@@ -1317,10 +1317,26 @@
       (q.rounds||[]).map(r=>'<span>'+r.position+'.</span><span class="'+(r.attacker_correct?"kz-battle-good":"kz-battle-bad")+'">'+roundMark(r.attacker_correct)+'</span>'+
         '<span class="'+(r.defender_correct===true?"kz-battle-good":r.defender_correct===false?"kz-battle-bad":"")+'">'+roundMark(r.defender_correct)+'</span><span>'+r.progress+' / '+q.required_hits+'</span>').join("")+'</div></div>';
   }
+  function duelBoard(q){
+    const target=Math.max(1,Number(q.required_hits)||3);
+    const hits=Math.max(0,Math.min(target,Number(q.hits)||0));
+    const filled=target===1?(hits>=1?3:0):Math.min(3,hits);
+    const defender=q.defender_name||"Nitko nije aktivan";
+    const side=(role,realm,name,icon)=>'<div class="kz-duel-side kz-duel-'+role+'">'+
+      '<small>'+icon+' '+(role==="attack"?"Napadač":"Branitelj")+'</small>'+
+      '<strong>'+safe(realm)+'</strong><span>'+safe(name)+'</span></div>';
+    const steps=[1,2,3].map(i=>'<div class="kz-duel-step'+(i<=filled?' is-filled':'')+(i===3?' is-goal':'')+'">'+
+      '<span class="kz-duel-step-number">'+(i<=filled?'✓':i)+'</span>'+
+      '<span class="kz-duel-step-label">'+(i===3?'Napadač<br>osvaja<br>teritorij':'Branitelj<br>obranjuje<br>teritorij')+'</span></div>').join("");
+    return '<section class="kz-duel-board" aria-label="Ploča okršaja">'+
+      '<div class="kz-duel-board-grid">'+side("attack",q.attacker_realm||"Napadač",q.attacker_name||"—","⚔")+
+      '<div class="kz-duel-track" role="img" aria-label="Napredak napadača: '+hits+' od '+target+'">'+steps+'</div>'+
+      side("defend",q.defender_realm||"Branitelj",defender,"🛡")+'</div>'+
+      '<div class="kz-duel-board-progress">'+hits+' / '+target+' '+(target===1?'potreban točan odgovor · prazno konto obrane':'napredak napadača')+'</div></section>';
+  }
   function duelSummary(q){
     const rows=q.rounds||[], ac=rows.filter(r=>r.attacker_correct===true).length, dc=rows.filter(r=>r.defender_correct===true).length;
-    return '<div class="kz-battle-score"><div><small>⚔ '+safe(q.attacker_realm||"Napadač")+'</small><b>'+q.hits+' / '+q.required_hits+'</b><small>'+safe(q.attacker_name||"")+' · ✓ '+ac+'</small></div>'+
-      '<div><small>🛡 '+safe(q.defender_realm||"Branitelj")+'</small><b>'+dc+'</b><small>'+safe(q.defender_name||"Bez aktivnog branitelja")+'</small></div></div>'+
+    return '<div class="kz-duel-stats"><span>⚔ Napadač: <b>'+ac+'</b> točnih</span><span>🛡 Branitelj: <b>'+dc+'</b> točnih</span></div>'+
       '<p class="member-meta">Napad: −'+formatArea(100+Number(q.attack_loss||0))+' s ulogom · Obrana: −'+formatArea(q.defense_loss)+'</p>';
   }
   async function showDuelResult(q){
@@ -1329,7 +1345,7 @@
     territoryDuel=null;setDuelResume(false);
     const won=q.status==="won", defender=q.side==="defender";
     const title=q.status==="invalid"?"Okršaj prekinut":q.insufficient_bank?"Nema dovoljno m²":won?"⚔ Blok osvojen!":"🛡 Teritorij obranjen!";
-    modal(title,duelSummary(q)+battleRounds(q)+
+    modal(title,duelBoard(q)+duelSummary(q)+battleRounds(q)+
       '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 20 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
       '<section id="kz-duel-review"><p>Učitavam završni pregled…</p></section>'+
       '<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
@@ -1379,18 +1395,16 @@
     session.defenderOnline=q.defender_online;
     session.q=q;session.done=!!q.submitted||!!q.intermission;
     session.deadline=Date.now()+Math.max(0,Number(q.remaining_ms)||0);
-    const sig=JSON.stringify([q.position,q.submitted,q.opponent_submitted,q.intermission,q.defender_online,q.rounds,q.hits]);
+    const sig=JSON.stringify([q.position,q.submitted,q.opponent_submitted,q.intermission,q.defender_online,q.defender_name,q.attacker_name,q.rounds,q.hits,q.required_hits,q.attack_loss,q.defense_loss]);
     if(sig===session.signature)return;
     session.signature=sig;
-    const defended=q.defender_online;
-    const notice=defended?'<p class="kz-live-defense">🛡 Branitelj se uključio · '+safe(q.defender_name||"")+'</p>':'<p class="member-meta">Trenutno nema aktivnog branitelja.</p>';
     const question=q.intermission?'<p class="kz-live-defense">Runda završena · sljedeće pitanje…</p>':
       '<p id="kz-duel-clock" class="kz-question-clock" role="timer">⏱ '+Math.ceil((q.remaining_ms||0)/1000)+' s</p>'+
       '<p class="quiz-question">'+safe(q.prompt)+'</p>'+
       (q.image?'<img class="question-image" src="'+safe(q.image)+'" alt="Slika uz pitanje">':'')+
       '<div class="kz-answer-list">'+["A","B","C"].map(key=>'<button class="option" data-duel-answer="'+key+'" '+(q.submitted?"disabled":"")+'>'+key+') '+safe(q.options?.[key]||"")+'</button>').join("")+'</div>'+
       (q.submitted?'<p class="kz-live-defense">Odgovor je zaključan. Čekam završetak runde…</p>':q.opponent_submitted?'<p class="member-meta">Protivnik je odgovorio.</p>':'');
-    modal(q.side==="defender"?"🛡 Obrana teritorija":"⚔ Okršaj znanja",'<div class="quiz-progress">PITANJE '+q.position+' / 8</div>'+notice+
+    modal(q.side==="defender"?"🛡 Obrana teritorija":"⚔ Okršaj znanja",duelBoard(q)+'<div class="quiz-progress">PITANJE '+q.position+' / 8</div>'+
       question+duelSummary(q)+battleRounds(q));
     $("dialog").classList.add("kz-quiz-dialog");
     document.querySelectorAll("[data-duel-answer]").forEach(b=>b.onclick=()=>updateLiveBattle(session,"answer",b.dataset.duelAnswer));
