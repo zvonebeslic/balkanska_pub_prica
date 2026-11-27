@@ -235,7 +235,6 @@
     $("realm-role").textContent = k ? roleName(k.role) : "Osnuj svoje ili zatraži pristup na karti";
     $("members-total").textContent = (current?.members?.length || 0) + " / 10";
     $("bank-count").textContent = formatArea(k?.bank);
-    if($("coin-count")) $("coin-count").textContent=Number(k?.coins||0).toLocaleString("hr-HR");
     $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
     $("boost-caption").textContent = k?.area >= 1000 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje od 1.000 m²";
     $("create-panel").classList.toggle("hidden", !!k);
@@ -1184,7 +1183,7 @@
     if(owners.length===1){
       if([...battleMarkers.values()].some(e=>Number(e.battle.x)===b.x&&Number(e.battle.y)===b.y))
         return {text:"Na tom bloku već traje okršaj.",kind:"battle_busy"};
-      return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 kovanica.",kind:"attack"};
+      return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
     }
     if(current?.kingdom?.role!=="kralj")return {text:"Slobodne blokove može postavljati samo kralj kvizaš.",kind:"king_only"};
     return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
@@ -1210,18 +1209,18 @@
       return;
     }
     const status=blockStatus(cursor);
-    const bank=Number((status.kind==="attack"?current?.kingdom?.coins:current?.kingdom?.bank)||0);
+    const bank=Number(current?.kingdom?.bank||0);
     const cost=status.kind==="attack"?100:20;
     const valid=["free","attack"].includes(status.kind)&&!(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden))&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=gpsLocked()||firstGpsBusy||previewBusy);
-    if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 kovanica":
+    if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
       status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
       status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj kvizaš":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
     if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
     if(btn) {
       btn.disabled=!valid;
       btn.textContent=status.kind==="attack"?"NAPADNI":"POSTAVI";
-      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 kovanica, uvijek 3 koraka do osvajanja":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², uvijek 3 koraka do osvajanja":"Zauzmi slobodni blok od 20 m² za 20 m²";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+10,cursor.y+8);
@@ -1256,9 +1255,9 @@
     if(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden)){toast("Prvo završi svoj trenutni okršaj.");return;}
     if(status.kind==="unconnected"){updateCursorPreview();return;}
     const cost=status.kind==="attack"?100:20;
-    if(!["free","attack"].includes(status.kind)||Number((status.kind==="attack"?current.kingdom.coins:current.kingdom.bank)||0)<cost)
+    if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank||0)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
-    const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 kovanica? Za osvajanje su potrebna tri koraka. Najviše 8 pitanja. Pogrešan odgovor ili istek: gubiš 20 kovanica. Pobjeda vraća 100 kovanica.":
+    const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Za osvajanje su potrebna tri koraka. Najviše 8 pitanja. Pogrešan odgovor ili istek: gubiš 20 m². Pobjeda vraća 100 m².":
       (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
     if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 20 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
@@ -1340,7 +1339,7 @@
   function duelSummary(q){
     const rows=q.rounds||[], ac=rows.filter(r=>r.attacker_correct===true).length, dc=rows.filter(r=>r.defender_correct===true).length;
     return '<div class="kz-duel-stats"><span>⚔ Napadač: <b>'+ac+'</b> točnih</span><span>🛡 Branitelj: <b>'+dc+'</b> točnih</span></div>'+
-      '<p class="member-meta">Napad: −'+(q.currency==='m2'?formatArea(100+Number(q.attack_loss||0)):(100+Number(q.attack_loss||0))+' kovanica')+' s ulogom · Obrana: −'+(q.currency==='m2'?formatArea(q.defense_loss):Number(q.defense_loss||0)+' kovanica')+'</p>';
+      '<p class="member-meta">Napad: −'+formatArea(100+Number(q.attack_loss||0))+' s ulogom · Obrana: −'+formatArea(q.defense_loss)+'</p>';
   }
   async function showDuelResult(q){
     const previous=territoryDuel;
@@ -1349,7 +1348,7 @@
     const won=q.status==="won", defender=q.side==="defender";
     const title=q.status==="invalid"?"Okršaj prekinut":q.insufficient_bank?"Nema dovoljno m²":won?"⚔ Blok osvojen!":"🛡 Teritorij obranjen!";
     modal(title,duelBoard(q)+duelSummary(q)+battleRounds(q)+
-      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 kovanica i osvaja blok od 20 m².":"Napadač gubi početni ulog od 100 kovanica.")+'</p>'+
+      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 20 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
       '<section id="kz-duel-review"><p>Učitavam završni pregled…</p></section>'+
       '<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
     $("dialog").classList.add("kz-quiz-dialog");
@@ -1719,7 +1718,7 @@
       '<p>Dok kraljevstvo ima 1.000 m² ili više, svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
       '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok vrijedi 20 virtualnih m². Slobodan blok košta 20 m².</p>'+
-      '<p>Okršaj za tuđi blok ima ulog 100 kovanica i set od 8 pitanja. Za osvajanje su uvijek potrebna tri koraka, neovisno o stanju protivničkog konta. Pobjeda osvaja blok i vraća 100 kovanica napadaču. Svaki netočan odgovor napadača skida 20 kovanica s konta njegova kraljevstva. Branitelju se ne oduzimaju m² s konta tijekom okršaja. U slučaju poraza napadač gubi ulog.</p>');
+      '<p>Okršaj za tuđi blok ima ulog 100 m² i set od 8 pitanja. Za osvajanje su uvijek potrebna tri koraka, neovisno o stanju protivničkog konta. Pobjeda osvaja blok i vraća 100 m² napadaču. Svaki netočan odgovor napadača skida 20 m² s konta njegova kraljevstva. Branitelju se ne oduzimaju m² s konta tijekom okršaja. U slučaju poraza napadač gubi ulog.</p>');
   }
   async function showApplicantStatistics(requestId){
     const request=(current?.requests||[]).find(r=>r.id===requestId);
