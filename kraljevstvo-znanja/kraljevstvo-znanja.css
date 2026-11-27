@@ -646,7 +646,6 @@ body.kz-under-siege #kz-siege-glow{visibility:visible;animation:kz-siege-pulse 2
 .kz-duel-side>span{font-size:clamp(10px,1.65vw,14px);line-height:1.2;color:#d1ddeb}
 .kz-duel-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;min-width:0}
 .kz-duel-step{min-width:0;min-height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:6px 1px;text-align:center;border:1px solid #526c8b;border-radius:6px;background:linear-gradient(180deg,#28445e,#1b2e45);color:#e2eafa;transition:background .25s,border-color .25s,box-shadow .25s}
-.kz-duel-step.is-goal{border-color:#e2b55f;background:linear-gradient(180deg,#624b26,#392b20);color:#ffe5ab}
 .kz-duel-step.is-filled{background:linear-gradient(180deg,#218747,#14592e);border-color:#69e99a;color:#fff;box-shadow:inset 0 0 12px #72ffaa30}
 .kz-duel-step-number{font-size:clamp(19px,3.5vw,32px);line-height:1;font-weight:900}
 .kz-duel-step-label{font-size:clamp(8px,1.4vw,12px);line-height:1.18;font-weight:700;overflow-wrap:anywhere}
