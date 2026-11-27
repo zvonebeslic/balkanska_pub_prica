@@ -31,10 +31,7 @@
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const formatArea = n => {
     n = Number(n) || 0;
-    if (n < 1000000) return n.toLocaleString("hr-HR") + " m²";
-    const whole = Math.floor(n / 1000000);
-    const rest = n % 1000000;
-    return whole.toLocaleString("hr-HR") + " km²" + (rest ? " i " + rest.toLocaleString("hr-HR") + " m²" : "");
+    return n.toLocaleString("hr-HR") + " KvizToGo kovanica";
   };
   const xy = (lat, lon) => ({
     x: Math.floor(R * K * lon * Math.PI / 180),
@@ -236,7 +233,7 @@
     $("members-total").textContent = (current?.members?.length || 0) + " / 10";
     $("bank-count").textContent = formatArea(k?.bank);
     $("bank-count").style.color = k?.bank >= 20 ? "#91f0ad" : "";
-    $("boost-caption").textContent = k?.area >= 1000 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje od 1.000 m²";
+    $("boost-caption").textContent = k?.area >= 1000 ? "⚡ BOOST UKLJUČEN · Pravila" : "Boost se uključuje od 1.000 KvizToGo kovanica";
     $("create-panel").classList.toggle("hidden", !!k);
     $("joystick-panel").classList.toggle("hidden", !k || !map || map.getZoom()<18);
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=!k||gpsLocked()||firstGpsBusy||previewBusy);
@@ -732,7 +729,7 @@
     if(!map)return;
     const detailed=map.getZoom()>=17;
     $("map-count").textContent=countVisibleKingdoms()+" kraljevstava · "+
-      (detailed?cells.length+" m² u prikazu":kingdoms.reduce((sum,k)=>sum+(Number(k.area)||0),0)+" m² ukupno");
+      (detailed?cells.length+" ćelija u prikazu":kingdoms.reduce((sum,k)=>sum+(Number(k.area)||0),0)+" KvizToGo kovanica ukupno");
   }
   function drawMap() {
     updateMapCount();
@@ -842,7 +839,7 @@
     updateCursorPreview();
     paintLivingWorld();
     $("map-hint").textContent = needsFirstGps() ? "Prvi blok: uključi GPS i odaberi slobodno mjesto unutar 5 km." : detailed
-      ? "Fantasy granice na pravoj karti · 20 m² po bloku · POSTAVI u joysticku."
+      ? "Fantasy granice na pravoj karti · 20 KvizToGo kovanica po bloku · POSTAVI u joysticku."
       : "Dodirni mjesto na karti i postavi blok joystickom.";
 
   }
@@ -1109,7 +1106,7 @@
     updateCursorPreview();
 
   }
-  // Mreža je globalno poravnata: svaka pločica uvijek zauzima 10 × 8 na karti = 20 virtualnih m².
+  // Mreža je globalno poravnata: svaka pločica uvijek zauzima 10 × 8 na karti = 20 KvizToGo kovanica.
   function refreshBlockGrid(force=false) {
     if(!map||!blockGridLayer)return;
     const zoom=map.getZoom();
@@ -1183,10 +1180,10 @@
     if(owners.length===1){
       if([...battleMarkers.values()].some(e=>Number(e.battle.x)===b.x&&Number(e.battle.y)===b.y))
         return {text:"Na tom bloku već traje okršaj.",kind:"battle_busy"};
-      return {text:"⚔ NAPAD: suparnički blok 20 m², cijena 100 m².",kind:"attack"};
+      return {text:"⚔ NAPAD: suparnički blok 20 KvizToGo kovanica, cijena 100 KvizToGo kovanica.",kind:"attack"};
     }
     if(current?.kingdom?.role!=="kralj")return {text:"Slobodne blokove može postavljati samo kralj kvizaš.",kind:"king_only"};
-    return {text:"Slobodan blok 20 m², cijena 20 m².",kind:"free"};
+    return {text:"Slobodan blok 20 KvizToGo kovanica, cijena 20 KvizToGo kovanica.",kind:"free"};
   }
   function updateCursorPreview() {
     if (!map || !previewLayer) return;
@@ -1213,14 +1210,14 @@
     const cost=status.kind==="attack"?100:20;
     const valid=["free","attack"].includes(status.kind)&&!(status.kind==="attack"&&(territoryDuel||duelResumeButton&&!duelResumeButton.hidden))&&bank>=cost&&(!(needsFirstGps()||cursorSpawnMode)||!!firstGpsFix)&&!firstGpsBusy&&!previewBusy;
     document.querySelectorAll("[data-joy]").forEach(b=>b.disabled=gpsLocked()||firstGpsBusy||previewBusy);
-    if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 m²":
-      status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 m²":"Nadogradnja · 20 m²"):
+    if(label)label.textContent=status.kind==="attack"?"⚔ Napad · 100 KvizToGo kovanica":
+      status.kind==="free"?(firstGpsFlexible()?(needsFirstGps()?"Prvi blok":"GPS uporište")+" · unutar "+firstGpsFix.radius+" m":cursorSpawnMode?"GPS uporište · 20 KvizToGo kovanica":"Nadogradnja · 20 KvizToGo kovanica"):
       status.kind==="outside"?"⚠ Izvan GPS kruga":status.kind==="own"?"Već osvojeno":status.kind==="unconnected"?"⚠ Nije uz granicu":status.kind==="king_only"?"Slobodne blokove postavlja kralj kvizaš":status.kind==="battle_busy"?"Okršaj je već u tijeku":"Blok je zauzet";
-    if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno m² na kontu";
+    if(label && ["free","attack"].includes(status.kind) && bank<cost)label.textContent="Nedovoljno KvizToGo kovanica na kontu";
     if(btn) {
       btn.disabled=!valid;
       btn.textContent=status.kind==="attack"?"NAPADNI":"POSTAVI";
-      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², uvijek 3 koraka do osvajanja":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 KvizToGo kovanica, uvijek 3 koraka do osvajanja":"Zauzmi slobodni blok od 20 KvizToGo kovanica za 20 KvizToGo kovanica";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+10,cursor.y+8);
@@ -1230,7 +1227,7 @@
       dashArray:valid?"8 4":"4 6",interactive:false
     }).addTo(previewLayer);
     L.marker(previewCentre(cursor),{interactive:false,
-      icon:L.divIcon({className:"cursor-badge",html:"<b>♜ 20 m²</b>",iconSize:[70,26],iconAnchor:[35,13]})
+      icon:L.divIcon({className:"cursor-badge",html:"<b>♜ 20 🪙</b>",iconSize:[70,26],iconAnchor:[35,13]})
     }).addTo(previewLayer);
     $("cursor-coords").textContent=cursor.x+" · "+cursor.y;
   }
@@ -1257,9 +1254,9 @@
     const cost=status.kind==="attack"?100:20;
     if(!["free","attack"].includes(status.kind)||Number(current.kingdom.bank||0)<cost)
       return toast("Odabrani blok nije moguće zauzeti.");
-    const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 m²? Za osvajanje su potrebna tri koraka. Najviše 8 pitanja. Pogrešan odgovor ili istek: gubiš 20 m². Pobjeda vraća 100 m².":
-      (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 m² za 20 m² s konta?":"Zauzeti odabrani blok od 20 m² za 20 m² s konta?");
-    if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 20 m² unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 m² na tvojoj trenutnoj GPS lokaciji?":question))return;
+    const question=status.kind==="attack"?"Pokrenuti Okršaj znanja za 100 KvizToGo kovanica? Za osvajanje su potrebna tri koraka. Najviše 8 pitanja. Pogrešan odgovor ili istek: gubiš 20 KvizToGo kovanica. Pobjeda vraća 100 KvizToGo kovanica.":
+      (cursorSpawnMode&&!needsFirstGps()?"Postaviti udaljeno uporište od 20 KvizToGo kovanica za 20 KvizToGo kovanica s konta?":"Zauzeti odabrani blok od 20 KvizToGo kovanica za 20 KvizToGo kovanica s konta?");
+    if(!confirm(firstGpsFlexible()?"Postaviti odabrani "+(needsFirstGps()?"prvi blok":"novo uporište")+" od 20 KvizToGo kovanica unutar "+firstGpsFix.radius+" m od GPS lokacije?":needsFirstGps()||cursorSpawnMode?"Postaviti uporište od 20 KvizToGo kovanica na tvojoj trenutnoj GPS lokaciji?":question))return;
     previewBusy=true;$("claim-block").disabled=true;
     try{
       let gpsParams={};
@@ -1346,9 +1343,9 @@
     if(previous){clearInterval(previous.timer);clearInterval(previous.poll);}
     territoryDuel=null;setDuelResume(false);
     const won=q.status==="won", defender=q.side==="defender";
-    const title=q.status==="invalid"?"Okršaj prekinut":q.insufficient_bank?"Nema dovoljno m²":won?"⚔ Blok osvojen!":"🛡 Teritorij obranjen!";
+    const title=q.status==="invalid"?"Okršaj prekinut":q.insufficient_bank?"Nema dovoljno KvizToGo kovanica":won?"⚔ Blok osvojen!":"🛡 Teritorij obranjen!";
     modal(title,duelBoard(q)+duelSummary(q)+battleRounds(q)+
-      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 m² i osvaja blok od 20 m².":"Napadač gubi početni ulog od 100 m².")+'</p>'+
+      '<p>'+(q.status==="invalid"?"Ulog vraćen.":won?"Napadač dobiva 100 KvizToGo kovanica i osvaja blok od 20 KvizToGo kovanica.":"Napadač gubi početni ulog od 100 KvizToGo kovanica.")+'</p>'+
       '<section id="kz-duel-review"><p>Učitavam završni pregled…</p></section>'+
       '<button class="primary" id="kz-duel-close">Povratak kraljevstvu</button>');
     $("dialog").classList.add("kz-quiz-dialog");
@@ -1582,7 +1579,7 @@
         '<button class="option" data-answer="'+key+'">'+key+') '+safe(pending.options?.[key]||"")+'</button>').join("")+'</div>'+
       '<p class="member-meta">Točan odgovor vrijedi +'+
       (current?.kingdom?.area>=1000?(current.kingdom.role==="kralj"?60:current.kingdom.role==="vojvoda"?50:44):40)+
-      ' m².</p><div id="answer-result" aria-live="polite"></div></section>'+
+      ' KvizToGo kovanica.</p><div id="answer-result" aria-live="polite"></div></section>'+
       '<aside class="kz-history"><h3>Rezultati & povijest</h3>'+
       '<div class="kz-current-score">✓ '+game.questions.filter(q=>q.correct).length+
       ' / '+answered+' točnih</div><div id="kz-history-list"></div></aside></div>');
@@ -1714,11 +1711,11 @@
   }
   function boostInfo() {
     const enabled=(current?.kingdom?.area||0)>=1000;
-    modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 1.000 m².')+'</p>'+
-      '<p>Dok kraljevstvo ima 1.000 m² ili više, svaki točan odgovor donosi:</p>'+
-      '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
-      '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok vrijedi 20 virtualnih m². Slobodan blok košta 20 m².</p>'+
-      '<p>Okršaj za tuđi blok ima ulog 100 m² i set od 8 pitanja. Za osvajanje su uvijek potrebna tri koraka, neovisno o stanju protivničkog konta. Pobjeda osvaja blok i vraća 100 m² napadaču. Svaki netočan odgovor napadača skida 20 m² s konta njegova kraljevstva. Branitelju se ne oduzimaju m² s konta tijekom okršaja. U slučaju poraza napadač gubi ulog.</p>');
+    modal("Boost kraljevstva",'<p>'+ (enabled?'⚡ Boost je uključen.':'Boost se uključuje čim kraljevstvo dosegne 1.000 KvizToGo kovanica.')+'</p>'+
+      '<p>Dok kraljevstvo ima 1.000 KvizToGo kovanica ili više, svaki točan odgovor donosi:</p>'+
+      '<p><b>Kralj kvizaš: 60 KvizToGo kovanica</b><br><b>Vojvoda kvizaš: 50 KvizToGo kovanica</b><br><b>Vojnik kvizaš: 44 KvizToGo kovanica</b></p>'+
+      '<p>Kraljevstvima ispod 1.000 KvizToGo kovanica svaki točan odgovor donosi 40 KvizToGo kovanica. Jedan blok vrijedi 20 KvizToGo kovanica. Slobodan blok košta 20 KvizToGo kovanica.</p>'+
+      '<p>Okršaj za tuđi blok ima ulog 100 KvizToGo kovanica i set od 8 pitanja. Za osvajanje su uvijek potrebna tri koraka, neovisno o stanju protivničkog konta. Pobjeda osvaja blok i vraća 100 KvizToGo kovanica napadaču. Svaki netočan odgovor napadača skida 20 KvizToGo kovanica s konta njegova kraljevstva. Branitelju se ne oduzimaju KvizToGo kovanica s konta tijekom okršaja. U slučaju poraza napadač gubi ulog.</p>');
   }
   async function showApplicantStatistics(requestId){
     const request=(current?.requests||[]).find(r=>r.id===requestId);
