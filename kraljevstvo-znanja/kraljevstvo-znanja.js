@@ -990,6 +990,8 @@
     }).setView([43.5,17.3],7);
     // Natural relief and water only. All existing game coordinates stay unchanged.
     window.KZNaturalMap.addTo(map);
+    const credits=map.attributionControl?.getContainer();
+    if(credits) document.getElementById('kz-map-footer')?.appendChild(credits);
     // Secret island: use the same X/Y block indices as the visible coordinate counter.
     const lotarCentre=ll(600652*5+2.5,1832429*4+2);
     const lotarPoint=extendedProjection.project(L.latLng(lotarCentre.lat,lotarCentre.lng));
