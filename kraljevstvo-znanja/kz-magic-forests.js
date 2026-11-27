@@ -1,4 +1,4 @@
-/* Kraljevstvo znanja — Čarobne šume (500 KvizToGo kovanica = 25 blokova po 5 x 4 m).
+/* Kraljevstvo znanja — Čarobne šume (500 m² = 25 blokova po 5 x 4 m).
  * 200 Balkan, 20 Njemačka, 20 ostatak Europe, 20 na svakom od ostalih
  * pet naseljenih kontinenata te jedna Antarktika = 341 trajna lokacija.
  *
@@ -165,7 +165,7 @@
       html:'<span class="kz-forest-mini-frame">'+
         '<img class="kz-forest-mini-image" src="'+POSTER_URL+
         '" alt="" loading="lazy" decoding="async"></span>'+
-        '<span class="kz-forest-map-name">Čarobna šuma · 500 KvizToGo kovanica</span>',
+        '<span class="kz-forest-map-name">Čarobna šuma · 500 m²</span>',
       iconSize:[size.width,size.height],
       iconAnchor:[size.width/2,size.height/2]
     });
@@ -269,7 +269,7 @@
         const marker=L.marker([forest.lat,forest.lng],{
           icon:originalForestIcon(size),
           pane:"kzForestPane",keyboard:false,interactive:true,
-          bubblingMouseEvents:false,title:"Čarobna šuma · 500 KvizToGo kovanica"
+          bubblingMouseEvents:false,title:"Čarobna šuma · 500 m²"
         }).on("click",event=>{
           L.DomEvent.stopPropagation(event);
           flyTo(forest);
@@ -306,7 +306,7 @@
     const button=document.getElementById("kz-forest-button");
     if(button){
       button.textContent="🌲 Šume";
-      button.title="Pronađi čarobnu šumu s originalnim videom, 300 KvizToGo kovanica";
+      button.title="Pronađi čarobnu šumu s originalnim videom, 300 m²";
       button.addEventListener("click",focusNearest);
     }
     map.on("moveend zoomend",()=>{
