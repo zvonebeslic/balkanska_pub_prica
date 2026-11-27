@@ -179,7 +179,7 @@ function openFlag(f,marker){
  const isOpen=()=>flagSession===session&&!dialog.hidden;
  const count=maxQuestions(f);
  const title=el("h2",FLAG_NAMES[kindOf(f)]);title.id="kz-flag-battle-title";
- const desc=el("p","Nagrada: 20 KvizToGo kovanica na konto kraljevstva za svaki točan odgovor.","kz-fleet-description");
+ const desc=el("p","Nagrada: 20 m² na konto kraljevstva za svaki točan odgovor.","kz-fleet-description");
  const quota=el("p",null,"kz-fleet-quota");
  const setRemaining=n=>{quota.textContent="Preostalo pitanja: "+Math.max(0,Math.min(count,Number(n??count)||0))+" / "+count;};
  setRemaining(f.remaining??count);
@@ -238,7 +238,7 @@ function openFlag(f,marker){
       if(!isOpen())return;
       setRemaining(result.remaining??0);
       choices.forEach(n=>{if(n.dataset.key===result.correct_key)n.dataset.state="correct";else if(n.dataset.key===key)n.dataset.state="wrong";});
-      say((result.timed_out?"⏱ Vrijeme je isteklo. Pitanje je iskorišteno.":result.correct?"✅ Točno! +20 KvizToGo kovanica.":"❌ Netočno. Točan odgovor: "+result.correct_key+") "+(q.options?.[result.correct_key]??"")+".")+(result.moved?" Zastavica je premještena.":""));
+      say((result.timed_out?"⏱ Vrijeme je isteklo. Pitanje je iskorišteno.":result.correct?"✅ Točno! +20 m².":"❌ Netočno. Točan odgovor: "+result.correct_key+") "+(q.options?.[result.correct_key]??"")+".")+(result.moved?" Zastavica je premještena.":""));
       completed=true;
       const next=el("button",result.moved?"Zatvori":"Sljedeće pitanje","kz-fleet-next");next.type="button";
       next.onclick=()=>{if(result.moved){closeFlag();return;}completed=false;load();};box.append(next);

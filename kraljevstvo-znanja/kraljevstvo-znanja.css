@@ -652,9 +652,3 @@ body.kz-under-siege #kz-siege-glow{visibility:visible;animation:kz-siege-pulse 2
 .kz-duel-board-progress{text-align:center;color:#c7d5e6;font-size:11px;margin-top:8px;font-weight:700}
 .kz-duel-stats{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;font-size:12px;color:#d4e1f4;margin-top:12px}
 @media(max-width:480px){.kz-duel-board{padding:7px 4px}.kz-duel-board-grid{gap:3px;grid-template-columns:minmax(0,1fr) minmax(0,2.8fr) minmax(0,1fr)}.kz-duel-track{gap:2px}.kz-duel-step{min-height:91px;gap:5px}.kz-duel-side{gap:4px}.kz-duel-step-label{font-size:9px}}
-
-/* Map footer: coordinates and provider credits never overlap map controls. */
-.kz-map-footer{display:flex;flex-direction:column;align-items:stretch;gap:3px;padding:5px 8px;background:#041421;color:#d3dfeb;font-size:11px;line-height:1.4;overflow-wrap:anywhere}
-.kz-map-footer .kz-map-xy{position:static;pointer-events:none;opacity:1;align-self:flex-start;margin:0}
-.kz-map-footer .leaflet-control-attribution{position:static;float:none;margin:0;background:transparent;color:#d3dfeb;font-size:10px;text-align:right;white-space:normal}
-.kz-map-footer .leaflet-control-attribution a{color:#f1d69b}
