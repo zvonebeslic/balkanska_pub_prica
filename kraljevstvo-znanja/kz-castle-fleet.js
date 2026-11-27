@@ -385,7 +385,7 @@
     const c=castle(id),reward=window.KZWorldRegistry.isIron(id)?20:80;
     dialog.querySelector(".kz-fleet-description").textContent=
       c.name+" · "+c.region+" · HP "+hp+"/100 · nagrada "+
-      reward+" m² na konto kraljevstva za završni pogodak.";
+      reward+" KvizToGo kovanica na konto kraljevstva za završni pogodak.";
     dialog.querySelector(".kz-fleet-health span").style.width=
       Math.max(0,Math.min(100,hp))+"%";
   }
@@ -467,7 +467,7 @@
       else if(res.defeated){
         const amt=Number(res.reward_m2)||0;
         message("🏆 Zadnji točan pogodak! Tvoje kraljevstvo dobiva "+amt+
-          " m² na konto. Odmah se pojavio novi čuvar.");
+          " KvizToGo kovanica na konto. Odmah se pojavio novi čuvar.");
         if(amt>0)window.dispatchEvent(new CustomEvent("kz:guardian-reward",
           {detail:{reward_m2:amt,guardian_id:id}}));
       }else message(res.correct?"✅ Točno! Čuvar je izgubio 20 HP.":"❌ Netočno. Nema oduzimanja HP-a.");
