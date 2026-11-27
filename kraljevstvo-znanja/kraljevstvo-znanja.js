@@ -1218,7 +1218,7 @@
     if(btn) {
       btn.disabled=!valid;
       btn.textContent=status.kind==="attack"?"NAPADNI":"POSTAVI";
-      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², 1 točan ako je protivničko konto prazno, inače 3":"Zauzmi slobodni blok od 20 m² za 20 m²";
+      btn.title=status.kind==="unconnected"?"Blok nije uz granicu":status.kind==="attack"?"Okršaj znanja: ulog 100 m², uvijek 3 koraka do osvajanja":"Zauzmi slobodni blok od 20 m² za 20 m²";
       btn.setAttribute("aria-label",btn.title);
     }
     const sw=ll(cursor.x,cursor.y),ne=ll(cursor.x+10,cursor.y+8);
@@ -1716,7 +1716,7 @@
       '<p>Dok kraljevstvo ima 1.000 m² ili više, svaki točan odgovor donosi:</p>'+
       '<p><b>Kralj kvizaš: 60 m²</b><br><b>Vojvoda kvizaš: 50 m²</b><br><b>Vojnik kvizaš: 44 m²</b></p>'+
       '<p>Kraljevstvima ispod 1.000 m² svaki točan odgovor donosi 40 m². Jedan blok vrijedi 20 virtualnih m². Slobodan blok košta 20 m².</p>'+
-      '<p>Okršaj za tuđi blok ima ulog 100 m² i set od 8 pitanja. Ako je protivnički konto na početku napada prazan, dovoljan je jedan točan odgovor za osvajanje; inače su potrebna tri. Pobjeda osvaja blok i vraća 100 m² napadaču. Svaki netočan odgovor napadača skida 20 m² s konta njegova kraljevstva, dok svaki njegov točan odgovor skida 20 m² s konta protivničkog kraljevstva (odnosno preostali iznos ako je na kontu manje od 20 m²).</p>');
+      '<p>Okršaj za tuđi blok ima ulog 100 m² i set od 8 pitanja. Za osvajanje su uvijek potrebna tri koraka, neovisno o stanju protivničkog konta. Pobjeda osvaja blok i vraća 100 m² napadaču. Svaki netočan odgovor napadača skida 20 m² s konta njegova kraljevstva. Branitelju se ne oduzimaju m² s konta tijekom okršaja. U slučaju poraza napadač gubi ulog.</p>');
   }
   async function showApplicantStatistics(requestId){
     const request=(current?.requests||[]).find(r=>r.id===requestId);
