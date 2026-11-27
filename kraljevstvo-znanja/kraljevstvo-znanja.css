@@ -636,3 +636,20 @@ body.kz-under-siege #kz-siege-glow{visibility:visible;animation:kz-siege-pulse 2
 /* Natural terrain colors must not inherit the previous street-map filter. */
 #kingdom-map .leaflet-tile-pane{filter:none}
 #kingdom-map{background:#528fae}
+
+/* Territory duel: shared chase-style progress board, above the question. */
+.kz-duel-board{margin:0 0 14px;padding:10px 8px 8px;border:1px solid #7089aa66;border-radius:12px;background:linear-gradient(150deg,#152a43,#101b2d);color:#f1f5ff}
+.kz-duel-board-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.6fr) minmax(0,1fr);gap:7px;align-items:stretch}
+.kz-duel-side{min-width:0;display:flex;flex-direction:column;justify-content:center;gap:5px;text-align:center;padding:4px 1px;overflow-wrap:anywhere}
+.kz-duel-side small{font-size:clamp(9px,1.45vw,12px);font-weight:800;color:#c5d2e3}
+.kz-duel-side strong{font-size:clamp(11px,2vw,17px);line-height:1.15;color:#fff}
+.kz-duel-side>span{font-size:clamp(10px,1.65vw,14px);line-height:1.2;color:#d1ddeb}
+.kz-duel-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;min-width:0}
+.kz-duel-step{min-width:0;min-height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:6px 1px;text-align:center;border:1px solid #526c8b;border-radius:6px;background:linear-gradient(180deg,#28445e,#1b2e45);color:#e2eafa;transition:background .25s,border-color .25s,box-shadow .25s}
+.kz-duel-step.is-goal{border-color:#e2b55f;background:linear-gradient(180deg,#624b26,#392b20);color:#ffe5ab}
+.kz-duel-step.is-filled{background:linear-gradient(180deg,#218747,#14592e);border-color:#69e99a;color:#fff;box-shadow:inset 0 0 12px #72ffaa30}
+.kz-duel-step-number{font-size:clamp(19px,3.5vw,32px);line-height:1;font-weight:900}
+.kz-duel-step-label{font-size:clamp(8px,1.4vw,12px);line-height:1.18;font-weight:700;overflow-wrap:anywhere}
+.kz-duel-board-progress{text-align:center;color:#c7d5e6;font-size:11px;margin-top:8px;font-weight:700}
+.kz-duel-stats{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;font-size:12px;color:#d4e1f4;margin-top:12px}
+@media(max-width:480px){.kz-duel-board{padding:7px 4px}.kz-duel-board-grid{gap:3px;grid-template-columns:minmax(0,1fr) minmax(0,2.8fr) minmax(0,1fr)}.kz-duel-track{gap:2px}.kz-duel-step{min-height:91px;gap:5px}.kz-duel-side{gap:4px}.kz-duel-step-label{font-size:9px}}
